@@ -1,0 +1,172 @@
+import net.fabricmc.loom.task.RemapJarTask
+
+import java.time.Year
+
+plugins {
+	id 'fabric-loom' version '0.10-SNAPSHOT'
+	id 'io.github.juuxel.loom-quiltflower-mini' version "1.2.1"
+	id 'org.cadixdev.licenser' version '0.6.1'
+	id 'com.matthewprenger.cursegradle' version '1.4.0'
+	id 'com.jfrog.artifactory' version '4.21.0'
+	id 'org.ajoberstar.grgit' version '3.1.1'
+	id 'com.github.breadmoirai.github-release' version '2.2.12'
+	id 'maven-publish'
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+archivesBaseName = project.archives_base_name
+version = project.mod_version
+group = project.maven_group
+
+sourceSets {
+	testmod {
+		compileClasspath += main.compileClasspath
+		runtimeClasspath += main.runtimeClasspath
+	}
+}
+
+loom {
+	runs {
+		testmodClient {
+			client()
+			name = "Testmod Client"
+			source sourceSets.testmod
+		}
+		testmodServer {
+			server()
+			name = "Testmod Server"
+			source sourceSets.testmod
+		}
+		gametest {
+			inherit testmodServer
+
+			name "Game Test"
+
+			// Enable the gametest runner
+			vmArg "-Dfabric-api.gametest"
+			vmArg "-Dfabric-api.gametest.report-file=${project.buildDir}/junit.xml"
+			runDir "build/gametest"
+		}
+		autoTestServer {
+			inherit testmodServer
+
+			name "Auto Test Server"
+
+			vmArg "-Dfabric.autoTest"
+		}
+	}
+}
+check.dependsOn runGametest
+
+repositories {
+	maven {
+		name = 'Ladysnake Mods'
+		url = 'https://ladysnake.jfrog.io/artifactory/mods'
+		content {
+			includeGroup 'io.github.ladysnake'
+			includeGroupByRegex 'io\\.github\\.onyxstudios.*'
+		}
+	}
+	maven {
+		url = 'https://oss.sonatype.org/content/repositories/snapshots'
+		content {
+			includeGroup 'me.lucko'
+		}
+	}
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/releases"
+		content {
+			includeGroup 'com.terraformersmc'
+		}
+	}
+	maven {
+		url "https://cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
+	maven {
+		name = 'JitPack'
+		url = 'https://jitpack.io'
+		content {
+			includeGroupByRegex '(io|com)\\.github\\..*'
+		}
+	}
+}
+
+dependencies {
+	// To change the versions see the gradle.properties file
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	modImplementation include("io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${cca_version}")
+	modImplementation include("io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:${cca_version}")
+	modImplementation include("me.lucko:fabric-permissions-api:${fpa_version}")
+
+	compileOnly "com.demonwav.mcdev:annotations:1.0"
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
+	it.options.release = 17
+}
+
+java {
+	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+	// if it is present.
+	// If you remove this line, sources will not be generated.
+	withSourcesJar()
+}
+
+jar {
+	from("COPYING.LESSER") {
+		rename { "LICENSE_${project.archivesBaseName}"}
+	}
+}
+
+task remapLibJar(type: RemapJarTask, dependsOn: project.jar) {
+	archiveClassifier.set('lib')
+	input.set(jar.archiveFile)
+	addNestedDependencies.set(false)
+}
+
+build.dependsOn(remapLibJar)
+
+license {
+	header = rootProject.file("code_quality/${project.license_header}_HEADER.txt")
+
+	include "**/*.java"
+
+	newLine.set(false) // Disables the empty line between the header and package name
+	//ignoreFailures = true //Ignore failures and only print a warning on license violations
+
+	//export variables
+	ext {
+		year = Year.now()
+		projectDisplayName = project.display_name
+		projectOwners = rootProject.owners
+		if (project.license_header.contains('GPL')) {
+			if (!project.hasProperty("gpl_version")) {
+				throw new RuntimeException("GPL version needs to be specified through the 'gpl_version' property")
+			}
+			gplVersion = project.gpl_version
+		}
+	}
+}
+
+apply from: 'release.gradle'

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.ladysnake.blabber.impl.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "DynamicRegistryManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "blabber",
+  "version": "${version}",
+
+  "name": "Blabber",
+  "description": "An extensible data-driven Dialogue API",
+  "authors": [
+    "Pyrofab"
+  ],
+  "contact": {
+    "homepage": "https://ladysnake.github.io",
+    "sources": "https://github.com/Ladysnake/Blabber"
+  },
+
+  "license": "LGPL-3.0-or-later",
+  "icon": "assets/blabber/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.ladysnake.blabber.Blabber"
+    ],
+    "cardinal-components": [
+      "io.github.ladysnake.blabber.impl.common.BlabberRegistrar"
+    ]
+  },
+  "mixins": [
+    "blabber.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17",
+    "cardinal-components-entity": ">=3.0.0"
+  },
+  "custom": {
+    "cardinal-components": [
+      "blabber:dialogue_tracker"
+    ]
+  }
+}
