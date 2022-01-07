@@ -17,10 +17,7 @@
  */
 package io.github.ladysnake.blabber.impl.common;
 
-import com.google.common.collect.BiMap;
-import com.google.common.collect.HashBiMap;
 import com.google.common.collect.ImmutableList;
-import io.github.ladysnake.blabber.Blabber;
 import io.github.ladysnake.blabber.DialogueAction;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.text.Text;
@@ -28,15 +25,16 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Map;
 import java.util.Objects;
 import java.util.function.Consumer;
 
 public final class DialogueStateMachine {
 
-    private final BiMap<String, DialogueState> states;
+    private final Map<String, DialogueState> states;
     private final Identifier id;
     private final boolean unskippable;
-    private @Nullable DialogueState currentState;
+    private @Nullable String currentStateKey;
     private ImmutableList<Text> currentChoices = ImmutableList.of();
 
     public DialogueStateMachine(DialogueTemplate template, Identifier id) {
@@ -44,7 +42,7 @@ public final class DialogueStateMachine {
     }
 
     private DialogueStateMachine(DialogueTemplate template, Identifier id, String start) {
-        this.states = HashBiMap.create(template.states());
+        this.states = template.states();
         this.id = id;
         this.unskippable = template.unskippable();
         this.selectState(start);
@@ -54,13 +52,13 @@ public final class DialogueStateMachine {
         Identifier id = buf.readIdentifier();
         String currentState = buf.readString();
 
-        DialogueStateMachine dialogue = DialogueRegistryImpl.INSTANCE.startDialogue(world, id);
+        DialogueStateMachine dialogue = BlabberRegistrar.startDialogue(world, id);
         dialogue.selectState(currentState);
         return dialogue;
     }
 
     private DialogueState getCurrentState() {
-        return Objects.requireNonNull(this.currentState, () -> this + " has not been initialized !");
+        return this.states.get(this.getCurrentStateKey());
     }
 
     public Identifier getId() {
@@ -77,7 +75,7 @@ public final class DialogueStateMachine {
 
     public ChoiceResult choose(int choice, Consumer<DialogueAction> actionRunner) {
         DialogueState nextState = this.selectState(this.getCurrentState().getNextState(choice));
-        nextState.action().map(Blabber::getAction).ifPresent(actionRunner);
+        nextState.action().ifPresent(actionRunner);
         return nextState.type();
     }
 
@@ -85,13 +83,14 @@ public final class DialogueStateMachine {
         if (!this.states.containsKey(state)) {
             throw new IllegalArgumentException(state + " is not an available dialogue state");
         }
-        this.currentState = this.states.get(state);
-        this.currentChoices = this.currentState.getAvailableChoices();
-        return this.currentState;
+        this.currentStateKey = state;
+        DialogueState currentState = this.states.get(state);
+        this.currentChoices = currentState.getAvailableChoices();
+        return currentState;
     }
 
     public String getCurrentStateKey() {
-        return this.states.inverse().get(this.getCurrentState());
+        return Objects.requireNonNull(this.currentStateKey, () -> this + " has not been initialized !");
     }
 
     public boolean isUnskippable() {

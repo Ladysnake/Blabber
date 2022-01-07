@@ -30,7 +30,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public final class PlayerDialogueTracker implements ServerTickingComponent {
-    public static final ComponentKey<PlayerDialogueTracker> KEY = ComponentRegistry.getOrCreate(new Identifier("requiem", "dialogue_tracker"), PlayerDialogueTracker.class);
+    public static final ComponentKey<PlayerDialogueTracker> KEY = ComponentRegistry.getOrCreate(Blabber.id("dialogue_tracker"), PlayerDialogueTracker.class);
 
     private final PlayerEntity player;
     private DialogueStateMachine currentDialogue;
@@ -49,7 +49,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     private DialogueStateMachine startDialogue0(Identifier id) {
-        this.currentDialogue = DialogueRegistryImpl.INSTANCE.startDialogue(this.player.world, id);
+        this.currentDialogue = BlabberRegistrar.startDialogue(this.player.world, id);
         return this.currentDialogue;
     }
 

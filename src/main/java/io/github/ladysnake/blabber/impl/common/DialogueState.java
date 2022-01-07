@@ -20,10 +20,13 @@ package io.github.ladysnake.blabber.impl.common;
 import com.google.common.collect.ImmutableList;
 import com.google.gson.JsonElement;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import io.github.ladysnake.blabber.DialogueAction;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 import java.util.Locale;
@@ -32,7 +35,7 @@ import java.util.Optional;
 public record DialogueState(
     Text text,
     List<Choice> choices,
-    Optional<Identifier> action,
+    Optional<DialogueAction> action,
     ChoiceResult type
 ) {
     static Codec<DialogueState> codec(Codec<JsonElement> jsonCodec) {
@@ -41,7 +44,17 @@ public record DialogueState(
         return RecordCodecBuilder.create(instance -> instance.group(
             textCodec.optionalFieldOf("text", LiteralText.EMPTY).forGetter(DialogueState::text),
             Codec.list(Choice.codec(textCodec)).optionalFieldOf("choices", List.of()).forGetter(DialogueState::choices),
-            Identifier.CODEC.optionalFieldOf("action").forGetter(DialogueState::action),
+            // Kinda optional, but we still want errors if you didn't register your thing >:(
+            Identifier.CODEC.optionalFieldOf("action").<Optional<DialogueAction>>flatXmap(
+                    opt -> {
+                        if (opt.isEmpty()) return DataResult.success(Optional.empty());
+                        return BlabberRegistrar.ACTION_REGISTRY.getOrEmpty(opt.get()).map(Optional::of).map(DataResult::success)
+                                .orElseGet(() -> DataResult.error("Unknown dialogue action: " + opt.get()));
+                    }, opt -> {
+                        if (opt.isEmpty()) return DataResult.success(Optional.empty());
+                        return Optional.ofNullable(BlabberRegistrar.ACTION_REGISTRY.getId(opt.get())).map(Optional::of).map(DataResult::success)
+                                .orElseGet(() -> DataResult.error("Unregistered dialogue action: " + opt.get()));
+                    }).forGetter(DialogueState::action),
             Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name).optionalFieldOf("type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
         ).apply(instance, DialogueState::new));
     }
@@ -61,11 +74,11 @@ public record DialogueState(
     @Override
     public String toString() {
         String representation = "DialogueState{" +
-            "text='" + text + '\'' +
+            "text='" + StringUtils.abbreviate(text.asString(), 20) + '\'' +
             ", choices=" + choices +
             ", type=" + type;
         if (this.action.isPresent()) {
-            representation += ", action=" + action.get();
+            representation += ", action=" + BlabberRegistrar.ACTION_REGISTRY.getId(action.get());
         }
         return representation + '}';
     }
@@ -76,6 +89,11 @@ public record DialogueState(
                 textCodec.fieldOf("text").forGetter(Choice::text),
                 Codec.STRING.fieldOf("next").forGetter(Choice::next)
             ).apply(instance, Choice::new));
+        }
+
+        @Override
+        public String toString() {
+            return "%s -> %s".formatted(StringUtils.abbreviate(this.text.getString(), 20), this.next);
         }
     }
 }

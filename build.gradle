@@ -111,6 +111,10 @@ dependencies {
 	modImplementation include("me.lucko:fabric-permissions-api:${fpa_version}")
 
 	compileOnly "com.demonwav.mcdev:annotations:1.0"
+
+	modLocalRuntime "com.terraformersmc:modmenu:${modmenu_version}"
+
+	testmodImplementation sourceSets.main.output
 }
 
 processResources {

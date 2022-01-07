@@ -15,16 +15,15 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package io.github.ladysnake.blabber;
+package io.github.ladysnake.babblings.tests;
 
-import net.minecraft.server.network.ServerPlayerEntity;
+import net.fabricmc.fabric.api.gametest.v1.FabricGameTest;
+import net.minecraft.test.GameTest;
+import net.minecraft.test.TestContext;
 
-@FunctionalInterface
-public interface DialogueAction {
-    /**
-     * Handles a dialogue action triggered by the given player.
-     *
-     * @param player the player executing the action
-     */
-    void handle(ServerPlayerEntity player);
+public final class BlabberTestSuite implements FabricGameTest {
+    @GameTest(structureName = EMPTY_STRUCTURE)
+    public void complete(TestContext ctx) {
+        ctx.complete();
+    }
 }

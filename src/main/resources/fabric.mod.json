@@ -21,6 +21,9 @@
     "main": [
       "io.github.ladysnake.blabber.Blabber"
     ],
+    "client": [
+      "io.github.ladysnake.blabber.impl.client.BlabberClient"
+    ],
     "cardinal-components": [
       "io.github.ladysnake.blabber.impl.common.BlabberRegistrar"
     ]

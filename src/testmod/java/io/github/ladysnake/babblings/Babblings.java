@@ -15,16 +15,13 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package io.github.ladysnake.blabber;
+package io.github.ladysnake.babblings;
 
-import net.minecraft.server.network.ServerPlayerEntity;
+import net.fabricmc.api.ModInitializer;
 
-@FunctionalInterface
-public interface DialogueAction {
-    /**
-     * Handles a dialogue action triggered by the given player.
-     *
-     * @param player the player executing the action
-     */
-    void handle(ServerPlayerEntity player);
+public final class Babblings implements ModInitializer {
+    @Override
+    public void onInitialize() {
+
+    }
 }

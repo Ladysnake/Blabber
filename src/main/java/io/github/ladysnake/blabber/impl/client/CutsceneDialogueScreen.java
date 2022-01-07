@@ -156,7 +156,7 @@ public class CutsceneDialogueScreen extends HandledScreen<DialogueScreenHandler>
             y += strHeight + CHOICE_GAP;
         }
 
-        Text tip = new TranslatableText("requiem:dialogue.instructions", client.options.keyForward.getBoundKeyLocalizedText(), client.options.keyBack.getBoundKeyLocalizedText(), client.options.keyInventory.getBoundKeyLocalizedText());
+        Text tip = new TranslatableText("blabber:dialogue.instructions", client.options.keyForward.getBoundKeyLocalizedText(), client.options.keyBack.getBoundKeyLocalizedText(), client.options.keyInventory.getBoundKeyLocalizedText());
         this.textRenderer.draw(matrices, tip, (this.width - this.textRenderer.getWidth(tip)) * 0.5f, this.height - 30, 0x808080);
         super.render(matrices, mouseX, mouseY, tickDelta);
     }

@@ -19,14 +19,16 @@ package io.github.ladysnake.blabber;
 
 import io.github.ladysnake.blabber.impl.common.BlabberCommand;
 import io.github.ladysnake.blabber.impl.common.BlabberRegistrar;
-import io.github.ladysnake.blabber.impl.common.DialogueRegistryImpl;
 import io.github.ladysnake.blabber.impl.common.PlayerDialogueTracker;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Optional;
 
 public final class Blabber implements ModInitializer {
 	public static final String MOD_ID = "blabber";
@@ -45,11 +47,11 @@ public final class Blabber implements ModInitializer {
 	}
 
 	public static void registerAction(Identifier actionId, DialogueAction action) {
-		DialogueRegistryImpl.INSTANCE.registerAction(actionId, action);
+		Registry.register(BlabberRegistrar.ACTION_REGISTRY, actionId, action);
 	}
 
-	public static DialogueAction getAction(Identifier actionId) {
-		return DialogueRegistryImpl.INSTANCE.getAction(actionId);
+	public static Optional<DialogueAction> getAction(Identifier actionId) {
+		return BlabberRegistrar.ACTION_REGISTRY.getOrEmpty(actionId);
 	}
 
 	@Override

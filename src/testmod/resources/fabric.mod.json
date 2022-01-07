@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "babblings",
+  "version": "${version}",
+  "name": "Blabber Test Mod",
+  "description": "It's just a test... Or is it ?",
+  "license": "LGPL-3.0-or-later",
+  "icon": "assets/babblings/icon.png",
+  "authors": [
+    "Pyrofab"
+  ],
+  "contact": {
+    "sources": "https://github.com/Ladysnake/Blabber",
+    "issues": "https://github.com/Ladysnake/Blabber/issues",
+    "discord": "ladysnake.glitch.me/discord"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.ladysnake.babblings.Babblings"
+    ],
+    "fabric-gametest": [
+      "io.github.ladysnake.babblings.tests.BlabberTestSuite"
+    ]
+  },
+  "depends": {
+    "fabric": "*"
+  }
+}

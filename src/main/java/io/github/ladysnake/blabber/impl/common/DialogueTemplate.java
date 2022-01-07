@@ -40,12 +40,12 @@ public final class DialogueTemplate {
 
     private static final Gson GSON = new Gson();
 
-    public static final Codec<DialogueTemplate> CODEC = codec(Codec.STRING.xmap(
+    public static final Codec<DialogueTemplate> NETWORK_CODEC = codec(Codec.STRING.xmap(
             str -> GSON.fromJson(str, JsonElement.class),
             GSON::toJson
     ));
 
-    public static final Codec<DialogueTemplate> NETWORK_CODEC = codec(Codec.PASSTHROUGH.comapFlatMap(
+    public static final Codec<DialogueTemplate> CODEC = codec(Codec.PASSTHROUGH.comapFlatMap(
             dynamic -> DataResult.success(dynamic.convert(JsonOps.INSTANCE).getValue()),
             json -> new Dynamic<>(JsonOps.INSTANCE, json)
     ));

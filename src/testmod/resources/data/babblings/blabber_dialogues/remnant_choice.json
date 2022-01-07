@@ -1,0 +1,129 @@
+{
+  "$schema": "https://ladysnake.github.io/wiki/blabber/dialogue.schema.json",
+  "start_at": "introduction",
+  "unskippable": true,
+  "states": {
+    "introduction": {
+      "text": {
+        "translate": "requiem:dialogue.first_contact.introduction.text"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.introduction.explain"
+          },
+          "next": "explanation"
+        },
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.introduction.yes"
+          },
+          "next": "interested"
+        },
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.introduction.no"
+          },
+          "next": "disinterested"
+        }
+      ]
+    },
+    "explanation": {
+      "text": {
+        "translate": "requiem:dialogue.first_contact.explanation.text"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.explanation.ok"
+          },
+          "next": "introduction"
+        }
+      ]
+    },
+    "interested": {
+      "text": {
+        "translate": "requiem:dialogue.first_contact.interested.text"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.doubt"
+          },
+          "next": "introduction"
+        },
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.confirm"
+          },
+          "next": "very_interested"
+        }
+      ]
+    },
+    "disinterested": {
+      "text": {
+        "translate": "requiem:dialogue.first_contact.disinterested.text"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.doubt"
+          },
+          "next": "introduction"
+        },
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.confirm"
+          },
+          "next": "very_disinterested"
+        }
+      ]
+    },
+    "very_interested": {
+      "type": "ask_confirmation",
+      "text": {
+        "translate": "requiem:dialogue.first_contact.very_interested.text"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.final_doubt"
+          },
+          "next": "interested"
+        },
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.final_confirm"
+          },
+          "next": "accept"
+        }
+      ]
+    },
+    "very_disinterested": {
+      "type": "ask_confirmation",
+      "text": {
+        "translate": "requiem:dialogue.first_contact.very_disinterested.text"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.final_doubt"
+          },
+          "next": "disinterested"
+        },
+        {
+          "text": {
+            "translate": "requiem:dialogue.first_contact.final_confirm"
+          },
+          "next": "refuse"
+        }
+      ]
+    },
+    "accept": {
+      "type": "end_dialogue"
+    },
+    "refuse": {
+      "type": "end_dialogue"
+    }
+  }
+}

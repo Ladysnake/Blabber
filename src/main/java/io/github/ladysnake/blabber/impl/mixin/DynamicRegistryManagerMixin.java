@@ -40,6 +40,6 @@ public abstract class DynamicRegistryManagerMixin {
     @Dynamic("Lambda for INFOS initialization through Util#make")
     @Inject(method = "method_30531", at = @At(value = "INVOKE", target = "Lcom/google/common/collect/ImmutableMap$Builder;build()Lcom/google/common/collect/ImmutableMap;"), locals = LocalCapture.CAPTURE_FAILHARD)
     private static void buildDynamicRegistries(CallbackInfoReturnable<ImmutableMap<RegistryKey<? extends Registry<?>>, ?>> cir, ImmutableMap.Builder<RegistryKey<? extends Registry<?>>, ?> builder) {
-        register(builder, BlabberRegistrar.DIALOGUE_REGISTRY, DialogueTemplate.CODEC, DialogueTemplate.NETWORK_CODEC);
+        register(builder, BlabberRegistrar.DIALOGUE_REGISTRY_KEY, DialogueTemplate.CODEC, DialogueTemplate.NETWORK_CODEC);
     }
 }
