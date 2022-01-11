@@ -17,8 +17,10 @@
  */
 package io.github.ladysnake.blabber;
 
+import com.mojang.serialization.Codec;
 import io.github.ladysnake.blabber.impl.common.BlabberCommand;
 import io.github.ladysnake.blabber.impl.common.BlabberRegistrar;
+import io.github.ladysnake.blabber.impl.common.CommandDialogueAction;
 import io.github.ladysnake.blabber.impl.common.PlayerDialogueTracker;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
@@ -27,8 +29,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.Optional;
 
 public final class Blabber implements ModInitializer {
 	public static final String MOD_ID = "blabber";
@@ -47,16 +47,17 @@ public final class Blabber implements ModInitializer {
 	}
 
 	public static void registerAction(Identifier actionId, DialogueAction action) {
-		Registry.register(BlabberRegistrar.ACTION_REGISTRY, actionId, action);
+		registerAction(actionId, Codec.unit(action));
 	}
 
-	public static Optional<DialogueAction> getAction(Identifier actionId) {
-		return BlabberRegistrar.ACTION_REGISTRY.getOrEmpty(actionId);
+	public static void registerAction(Identifier actionId, Codec<? extends DialogueAction> codec) {
+		Registry.register(BlabberRegistrar.ACTION_REGISTRY, actionId, codec);
 	}
 
 	@Override
 	public void onInitialize() {
 		BlabberRegistrar.init();
 		CommandRegistrationCallback.EVENT.register((dispatcher, dedicated) -> BlabberCommand.register(dispatcher));
+		registerAction(id("command"), CommandDialogueAction.CODEC);
 	}
 }

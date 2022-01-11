@@ -75,7 +75,7 @@ public final class DialogueStateMachine {
 
     public ChoiceResult choose(int choice, Consumer<DialogueAction> actionRunner) {
         DialogueState nextState = this.selectState(this.getCurrentState().getNextState(choice));
-        nextState.action().ifPresent(actionRunner);
+        nextState.action().map(InstancedDialogueAction::action).ifPresent(actionRunner);
         return nextState.type();
     }
 

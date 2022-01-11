@@ -120,10 +120,18 @@
       ]
     },
     "accept": {
-      "type": "end_dialogue"
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/say I am now a demon !"
+      }
     },
     "refuse": {
-      "type": "end_dialogue"
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/say I am now a mortal !"
+      }
     }
   }
 }

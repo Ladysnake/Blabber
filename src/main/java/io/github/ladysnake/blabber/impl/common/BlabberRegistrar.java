@@ -17,16 +17,21 @@
  */
 package io.github.ladysnake.blabber.impl.common;
 
+import com.mojang.brigadier.suggestion.SuggestionProvider;
+import com.mojang.serialization.Codec;
 import com.mojang.serialization.Lifecycle;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
 import io.github.ladysnake.blabber.Blabber;
 import io.github.ladysnake.blabber.DialogueAction;
+import io.github.ladysnake.blabber.impl.mixin.SuggestionProvidersAccessor;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
+import net.minecraft.command.CommandSource;
 import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.MutableRegistry;
@@ -43,7 +48,9 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
     public static final RegistryKey<Registry<DialogueTemplate>> DIALOGUE_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("blabber_dialogues"));
     public static final SimpleRegistry<DialogueTemplate> BUILTIN_DIALOGUES = new SimpleRegistry<>(DIALOGUE_REGISTRY_KEY, Lifecycle.stable());
-    public static final Registry<DialogueAction> ACTION_REGISTRY = FabricRegistryBuilder.createSimple(DialogueAction.class, Blabber.id("dialogue_actions")).buildAndRegister();
+    @SuppressWarnings("unchecked")
+    public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = (Registry<Codec<? extends DialogueAction>>) (Registry<?>) FabricRegistryBuilder.createSimple(Codec.class, Blabber.id("dialogue_actions")).buildAndRegister();
+    public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProvidersAccessor.blabber$register(Blabber.id("available_dialogues"), (context, builder) -> CommandSource.suggestIdentifiers(context.getSource().getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds(), builder));
 
     public static void init() {
         registerBuiltins();

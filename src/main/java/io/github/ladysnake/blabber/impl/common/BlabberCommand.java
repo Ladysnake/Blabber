@@ -42,7 +42,7 @@ public final class BlabberCommand {
             // blabber dialogue start <dialogue> [players]
             .then(literal("start")
                 .requires(Permissions.require("dialogue.start", 2))
-                .then(argument("dialogue", IdentifierArgumentType.identifier())
+                .then(argument("dialogue", IdentifierArgumentType.identifier()).suggests(BlabberRegistrar.ALL_DIALOGUES)
                     .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), List.of(context.getSource().getPlayer())))
                     .then(argument("players", EntityArgumentType.players())
                         .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), EntityArgumentType.getPlayers(context, "players")))
