@@ -29,6 +29,8 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import java.util.Optional;
+
 public final class PlayerDialogueTracker implements ServerTickingComponent {
     public static final ComponentKey<PlayerDialogueTracker> KEY = ComponentRegistry.getOrCreate(Blabber.id("dialogue_tracker"), PlayerDialogueTracker.class);
 
@@ -61,8 +63,8 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
     }
 
-    public DialogueStateMachine getCurrentDialogue() {
-        return this.currentDialogue;
+    public Optional<DialogueStateMachine> getCurrentDialogue() {
+        return Optional.ofNullable(this.currentDialogue);
     }
 
     @Override

@@ -28,7 +28,7 @@ import static io.netty.buffer.Unpooled.buffer;
 public final class BlabberClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        ScreenRegistry.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, CutsceneDialogueScreen::new);
+        ScreenRegistry.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, BlabberDialogueScreen::new);
     }
 
     public static void sendDialogueActionMessage(int choice) {

@@ -33,7 +33,7 @@ import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
 
-public class CutsceneDialogueScreen extends HandledScreen<DialogueScreenHandler> {
+public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> {
     public static final int MIN_RENDER_Y = 40;
     public static final int TITLE_GAP = 20;
     public static final int CHOICE_GAP = 5;
@@ -42,7 +42,7 @@ public class CutsceneDialogueScreen extends HandledScreen<DialogueScreenHandler>
     private int selectedChoice;
     private boolean hoveringChoice;
 
-    public CutsceneDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
+    public BlabberDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 
