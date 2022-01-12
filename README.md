@@ -4,6 +4,8 @@ A library adding dialogues to Minecraft. Can also be used as a standalone mod, t
 
 This mod must be installed on both server and client to work properly.
 
+For more information, check out [the full description on the Ladysnake website](https://ladysnake.github.io/wiki/blabber).
+
 ## Adding Blabber to your project
 
 You can add the library by inserting the following in your `build.gradle` :
