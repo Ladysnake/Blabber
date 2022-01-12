@@ -112,7 +112,9 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     }
 
     private void scrollDialogueChoice(double scrollAmount) {
-        this.selectedChoice = Math.floorMod((int) (this.selectedChoice - scrollAmount), this.handler.getCurrentChoices().size());
+        if (!this.handler.getCurrentChoices().isEmpty()) {
+            this.selectedChoice = Math.floorMod((int) (this.selectedChoice - scrollAmount), this.handler.getCurrentChoices().size());
+        }
     }
 
     @Override

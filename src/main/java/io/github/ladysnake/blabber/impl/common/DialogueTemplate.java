@@ -63,7 +63,7 @@ public final class DialogueTemplate {
     private static Codec<DialogueTemplate> codec(Codec<JsonElement> jsonCodec) {
         return RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
-            Codec.BOOL.fieldOf("unskippable").forGetter(DialogueTemplate::unskippable),
+            Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
             Codec.unboundedMap(Codec.STRING, DialogueState.codec(jsonCodec)).fieldOf("states").forGetter(DialogueTemplate::states)
         ).apply(instance, DialogueTemplate::new));
     }

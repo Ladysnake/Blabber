@@ -1,4 +1,10 @@
 ------------------------------------------------------
+Version 0.1.2
+------------------------------------------------------
+- Fixed `unskippable` not being actually optional
+- Made more errors appear when loading an invalid dialogue definition file
+
+------------------------------------------------------
 Version 0.1.1
 ------------------------------------------------------
 - Add localization for dialogue instructions (thanks cominixo01, Tijmen, BingQI, and AwsAlex!)

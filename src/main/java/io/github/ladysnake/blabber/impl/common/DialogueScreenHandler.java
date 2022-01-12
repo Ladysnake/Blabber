@@ -17,7 +17,10 @@
  */
 package io.github.ladysnake.blabber.impl.common;
 
+import com.demonwav.mcdev.annotations.CheckEnv;
+import com.demonwav.mcdev.annotations.Env;
 import com.google.common.collect.ImmutableList;
+import io.github.ladysnake.blabber.Blabber;
 import io.github.ladysnake.blabber.impl.client.BlabberClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.ScreenHandler;
@@ -55,15 +58,24 @@ public class DialogueScreenHandler extends ScreenHandler {
         return true;
     }
 
+    @CheckEnv(Env.CLIENT)
     public ChoiceResult makeChoice(int choice) {
+        if (this.getCurrentChoices().size() <= choice) {
+            throw new IllegalArgumentException("Only choices 0 to %d available but chose %d".formatted(this.getCurrentChoices().size() - 1, choice));
+        }
         BlabberClient.sendDialogueActionMessage(choice);
         return this.dialogue.choose(choice, action -> {});
     }
 
     public void makeChoice(ServerPlayerEntity player, int choice) {
-        ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player));
-        if (result == ChoiceResult.END_DIALOGUE) {
-            PlayerDialogueTracker.get(player).endDialogue();
+        // Can't throw here, could cause trouble with a bad packet
+        if (this.getCurrentChoices().size() > choice) {
+            ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player));
+            if (result == ChoiceResult.END_DIALOGUE) {
+                PlayerDialogueTracker.get(player).endDialogue();
+            }
+        } else {
+            Blabber.LOGGER.error("{} had only choices 0 to {} available but chose {}", player.getEntityName(), this.getCurrentChoices().size() - 1, choice);
         }
     }
 }

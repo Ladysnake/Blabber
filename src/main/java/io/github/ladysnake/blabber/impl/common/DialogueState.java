@@ -39,11 +39,11 @@ public record DialogueState(
         Codec<Text> textCodec = jsonCodec.xmap(Text.Serializer::fromJson, Text.Serializer::toJsonTree);
 
         return RecordCodecBuilder.create(instance -> instance.group(
-            textCodec.optionalFieldOf("text", LiteralText.EMPTY).forGetter(DialogueState::text),
-            Codec.list(Choice.codec(textCodec)).optionalFieldOf("choices", List.of()).forGetter(DialogueState::choices),
-            // Kinda optional, but we still want errors if you didn't register your thing >:(
-            new FailingOptionalFieldCodec<>("action", InstancedDialogueAction.CODEC).forGetter(DialogueState::action),
-            Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name).optionalFieldOf("type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
+            // Kinda optional, but we still want errors if you got it wrong >:(
+            FailingOptionalFieldCodec.of("text", textCodec, LiteralText.EMPTY).forGetter(DialogueState::text),
+            FailingOptionalFieldCodec.of("choices", Codec.list(Choice.codec(textCodec)), List.of()).forGetter(DialogueState::choices),
+            FailingOptionalFieldCodec.of("action", InstancedDialogueAction.CODEC).forGetter(DialogueState::action),
+            FailingOptionalFieldCodec.of("type", Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), ChoiceResult.DEFAULT).forGetter(DialogueState::type)
         ).apply(instance, DialogueState::new));
     }
 

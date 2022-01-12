@@ -22,17 +22,30 @@ package io.github.ladysnake.blabber.impl.common;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.DynamicOps;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.MapLike;
 import com.mojang.serialization.codecs.OptionalFieldCodec;
 
+import java.util.Objects;
 import java.util.Optional;
 
 /** Just like {@link com.mojang.serialization.codecs.OptionalFieldCodec}, except it errors if you got invalid input */
 public class FailingOptionalFieldCodec<A> extends OptionalFieldCodec<A> {
+    public static <A> MapCodec<Optional<A>> of(String name, Codec<A> elementCodec) {
+        return new FailingOptionalFieldCodec<>(name, elementCodec);
+    }
+
+    public static <A> MapCodec<A> of(String name, Codec<A> elementCodec, A defaultValue) {
+        return of(name, elementCodec).xmap(
+                o -> o.orElse(defaultValue),
+                a -> Objects.equals(a, defaultValue) ? Optional.empty() : Optional.of(a)
+        );
+    }
+
     private final String name;
     private final Codec<A> elementCodec;
 
-    public FailingOptionalFieldCodec(String name, Codec<A> elementCodec) {
+    private FailingOptionalFieldCodec(String name, Codec<A> elementCodec) {
         super(name, elementCodec);
         this.name = name;
         this.elementCodec = elementCodec;

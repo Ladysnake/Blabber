@@ -1,5 +1,5 @@
 {
   "blabber:commands.dialogue.start.invalid": "Il n'y a pas de dialogue \"%s\"",
   "blabber:commands.dialogue.start.success": "Le dialogue \"%s\" a été initié pour %s",
-  "blabber:dialogue.instructions": "Survolez ou utilisez [%s]/[%s] pour sélectionner un choix, puis clickez ou utilisez [%s] pour confirmer"
+  "blabber:dialogue.instructions": "Survolez ou pressez [%s]/[%s] pour faire votre choix, puis clickez ou pressez [%s] pour confirmer"
 }
