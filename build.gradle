@@ -114,6 +114,9 @@ dependencies {
 
 	modLocalRuntime "com.terraformersmc:modmenu:${modmenu_version}"
 
+	// Test dependencies
+	modCompileOnly "io.github.ladysnake:elmendorf:${elmendorf_version}"
+	modLocalRuntime "io.github.ladysnake:elmendorf:${elmendorf_version}"
 	testmodImplementation sourceSets.main.output
 }
 
