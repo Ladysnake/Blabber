@@ -1,0 +1,4 @@
+{
+  "blabber:commands.dialogue.start.invalid": "There is no dialogue with type \"%s\"",
+  "blabber:dialogue.instructions": "Hover or press [%s]/[%s] to select a choice, then click or press [%s] to confirm it"
+}

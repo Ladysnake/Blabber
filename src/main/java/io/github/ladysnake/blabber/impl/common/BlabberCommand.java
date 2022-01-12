@@ -18,12 +18,15 @@
 package io.github.ladysnake.blabber.impl.common;
 
 import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import com.mojang.brigadier.exceptions.DynamicCommandExceptionType;
 import io.github.ladysnake.blabber.Blabber;
 import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.command.argument.IdentifierArgumentType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 
 import java.util.Collection;
@@ -33,6 +36,8 @@ import static net.minecraft.server.command.CommandManager.argument;
 import static net.minecraft.server.command.CommandManager.literal;
 
 public final class BlabberCommand {
+    public static final DynamicCommandExceptionType INVALID_EXCEPTION = new DynamicCommandExceptionType(id -> new TranslatableText("blabber:commands.dialogue.start.invalid", id));
+
     public static final String DIALOGUE_SUBCOMMAND = "dialogue";
 
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
@@ -51,7 +56,11 @@ public final class BlabberCommand {
             )));
     }
 
-    private static int startDialogue(ServerCommandSource source, Identifier dialogue, Collection<ServerPlayerEntity> players) {
+    private static int startDialogue(ServerCommandSource source, Identifier dialogue, Collection<ServerPlayerEntity> players) throws CommandSyntaxException {
+        if (!source.getServer().getRegistryManager().get(BlabberRegistrar.DIALOGUE_REGISTRY_KEY).containsId(dialogue)) {
+            throw INVALID_EXCEPTION.create(dialogue);
+        }
+
         int count = 0;
         for (ServerPlayerEntity player : players) {
             PlayerDialogueTracker.get(player).startDialogue(dialogue);

@@ -49,6 +49,7 @@ public final class Blabber implements ModInitializer {
 	 *
 	 * @param player the player for whom to initiate a dialogue
 	 * @param id the identifier for the dialogue
+	 * @throws IllegalArgumentException if {@code id} is not a valid dialogue in this game instance
 	 */
 	public static void startDialogue(ServerPlayerEntity player, Identifier id) {
 		PlayerDialogueTracker.get(player).startDialogue(id);
