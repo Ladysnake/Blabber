@@ -64,8 +64,10 @@ public final class BlabberCommand {
         int count = 0;
         for (ServerPlayerEntity player : players) {
             PlayerDialogueTracker.get(player).startDialogue(dialogue);
+            source.sendFeedback(new TranslatableText("blabber:commands.dialogue.start.success", dialogue, player.getDisplayName()), true);
             count++;
         }
+
         return count;
     }
 }
