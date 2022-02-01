@@ -3,8 +3,8 @@ import net.fabricmc.loom.task.RemapJarTask
 import java.time.Year
 
 plugins {
-	id 'fabric-loom' version '0.10-SNAPSHOT'
-	id 'io.github.juuxel.loom-quiltflower-mini' version "1.2.1"
+	id 'fabric-loom' version '0.11-SNAPSHOT'
+	id 'io.github.juuxel.loom-quiltflower' version "1.6.0"
 	id 'org.cadixdev.licenser' version '0.6.1'
 	id 'com.matthewprenger.cursegradle' version '1.4.0'
 	id 'com.jfrog.artifactory' version '4.21.0'
@@ -66,7 +66,7 @@ repositories {
 		url = 'https://ladysnake.jfrog.io/artifactory/mods'
 		content {
 			includeGroup 'io.github.ladysnake'
-			includeGroupByRegex 'io\\.github\\.onyxstudios.*'
+			includeGroupByRegex '(dev|io\\.github)\\.onyxstudios.*'
 		}
 	}
 	maven {
@@ -106,8 +106,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation include("io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${cca_version}")
-	modImplementation include("io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:${cca_version}")
+	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cca_version}")
+	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${cca_version}")
 	modImplementation include("me.lucko:fabric-permissions-api:${fpa_version}")
 
 	compileOnly "com.demonwav.mcdev:annotations:1.0"
@@ -148,7 +148,7 @@ jar {
 
 task remapLibJar(type: RemapJarTask, dependsOn: project.jar) {
 	archiveClassifier.set('lib')
-	input.set(jar.archiveFile)
+	inputFile.set(jar.archiveFile)
 	addNestedDependencies.set(false)
 }
 

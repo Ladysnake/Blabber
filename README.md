@@ -17,7 +17,7 @@ repositories {
         url = "https://ladysnake.jfrog.io/artifactory/mods"
         content {
             includeGroup 'io.github.ladysnake'
-            includeGroupByRegex 'io\\.github\\.onyxstudios.*'
+            includeGroupByRegex '(dev|io\\.github)\\.onyxstudios.*'
         }
     }
     maven {
@@ -31,8 +31,8 @@ dependencies {
     include "io.github.ladysnake:blabber:${blabber_version}"
     // Blabber dependencies
     include "me.lucko:fabric-permissions-api:${fpa_version}"
-    include "com.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${cca_version}"
-    include "com.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:${cca_version}"
+    include "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cca_version}"
+    include "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${cca_version}"
 }
 ```
 
@@ -44,7 +44,7 @@ blabber_version = 0.x.y
 # Fabric Permissions API
 fpa_version = 0.1-SNAPSHOT
 # Cardinal Components
-cca_version = 2.x.y
+cca_version = 4.x.y
 ```
 
 You can find the current version of Blabber in the [releases](https://github.com/Ladysnake/Blabber/releases) tab of the repository on Github,

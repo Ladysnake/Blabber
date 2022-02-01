@@ -1,4 +1,9 @@
 ------------------------------------------------------
+Version 0.1.3
+------------------------------------------------------
+- Updated CCA dependency => **Update your dependencies: `io.github.onyxstudios.Cardinal-Components-API` -> `dev.onyxstudios.cardinal-components-api`
+
+------------------------------------------------------
 Version 0.1.2
 ------------------------------------------------------
 - Fixed `unskippable` not being actually optional
