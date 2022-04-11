@@ -1,0 +1,14 @@
+[versions]
+cca = "4.1.4"
+elmendorf = "0.4.0"
+fpa = "0.1-SNAPSHOT"
+mcAnnotations = "1.0"
+modmenu = "3.0.1"
+
+[libraries]
+cca-base = { module = "dev.onyxstudios.cardinal-components-api:cardinal-components-base", version.ref = "cca" }
+cca-entity = { module = "dev.onyxstudios.cardinal-components-api:cardinal-components-entity", version.ref = "cca" }
+elmendorf = { module = "io.github.ladysnake:elmendorf", version.ref = "elmendorf" }
+mcAnnotations = { module = "com.demonwav.mcdev:annotations", version.ref = "mcAnnotations" }
+modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu"}
+permissionsApi = { module = "me.lucko:fabric-permissions-api", version.ref = "fpa" }

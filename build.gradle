@@ -1,100 +1,26 @@
 import net.fabricmc.loom.task.RemapJarTask
 
-import java.time.Year
-
 plugins {
-	id 'fabric-loom' version '0.11-SNAPSHOT'
+	id 'io.github.ladysnake.chenille' version '0.7.0-SNAPSHOT'
 	id 'io.github.juuxel.loom-quiltflower' version "1.6.0"
-	id 'org.cadixdev.licenser' version '0.6.1'
-	id 'com.matthewprenger.cursegradle' version '1.4.0'
-	id 'com.jfrog.artifactory' version '4.21.0'
-	id 'org.ajoberstar.grgit' version '3.1.1'
-	id 'com.github.breadmoirai.github-release' version '2.2.12'
-	id 'maven-publish'
 }
-
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
-sourceSets {
-	testmod {
-		compileClasspath += main.compileClasspath
-		runtimeClasspath += main.runtimeClasspath
+chenille {
+	configureTestmod {
+		withBaseTestRuns()
+		withDependencyConfiguration()
 	}
+
+	license = project.license_header
+	javaVersion = project.java_version.toInteger()
 }
-
-loom {
-	runs {
-		testmodClient {
-			client()
-			name = "Testmod Client"
-			source sourceSets.testmod
-		}
-		testmodServer {
-			server()
-			name = "Testmod Server"
-			source sourceSets.testmod
-		}
-		gametest {
-			inherit testmodServer
-
-			name "Game Test"
-
-			// Enable the gametest runner
-			vmArg "-Dfabric-api.gametest"
-			vmArg "-Dfabric-api.gametest.report-file=${project.buildDir}/junit.xml"
-			runDir "build/gametest"
-		}
-		autoTestServer {
-			inherit testmodServer
-
-			name "Auto Test Server"
-
-			vmArg "-Dfabric.autoTest"
-		}
-	}
-}
-check.dependsOn runGametest
 
 repositories {
-	maven {
-		name = 'Ladysnake Mods'
-		url = 'https://ladysnake.jfrog.io/artifactory/mods'
-		content {
-			includeGroup 'io.github.ladysnake'
-			includeGroupByRegex '(dev|io\\.github)\\.onyxstudios.*'
-		}
-	}
-	maven {
-		url = 'https://oss.sonatype.org/content/repositories/snapshots'
-		content {
-			includeGroup 'me.lucko'
-		}
-	}
-	maven {
-		name = "TerraformersMC"
-		url = "https://maven.terraformersmc.com/releases"
-		content {
-			includeGroup 'com.terraformersmc'
-		}
-	}
-	maven {
-		url "https://cursemaven.com"
-		content {
-			includeGroup "curse.maven"
-		}
-	}
-	maven {
-		name = 'JitPack'
-		url = 'https://jitpack.io'
-		content {
-			includeGroupByRegex '(io|com)\\.github\\..*'
-		}
-	}
+	chenille.repositories.allCommonRepositories()
 }
 
 dependencies {
@@ -106,18 +32,16 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cca_version}")
-	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${cca_version}")
-	modImplementation include("me.lucko:fabric-permissions-api:${fpa_version}")
+	modIncludeImplementation(libs.cca.base)
+	modIncludeImplementation(libs.cca.entity)
+	modIncludeImplementation(libs.permissionsApi)
 
-	compileOnly "com.demonwav.mcdev:annotations:1.0"
+	compileOnly(libs.mcAnnotations)
 
-	modLocalRuntime "com.terraformersmc:modmenu:${modmenu_version}"
+	modLocalRuntime(libs.modmenu)
 
 	// Test dependencies
-	modCompileOnly "io.github.ladysnake:elmendorf:${elmendorf_version}"
-	modLocalRuntime "io.github.ladysnake:elmendorf:${elmendorf_version}"
-	testmodImplementation sourceSets.main.output
+	modTestImplementation(libs.elmendorf)
 }
 
 processResources {
@@ -128,15 +52,7 @@ processResources {
 	}
 }
 
-tasks.withType(JavaCompile).configureEach {
-	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
-	it.options.release = 17
-}
-
 java {
-	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-	// if it is present.
-	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 }
 
@@ -146,34 +62,28 @@ jar {
 	}
 }
 
-task remapLibJar(type: RemapJarTask, dependsOn: project.jar) {
-	archiveClassifier.set('lib')
-	inputFile.set(jar.archiveFile)
+remapJar {
 	addNestedDependencies.set(false)
 }
 
-build.dependsOn(remapLibJar)
-
-license {
-	header = rootProject.file("code_quality/${project.license_header}_HEADER.txt")
-
-	include "**/*.java"
-
-	newLine.set(false) // Disables the empty line between the header and package name
-	//ignoreFailures = true //Ignore failures and only print a warning on license violations
-
-	//export variables
-	ext {
-		year = Year.now()
-		projectDisplayName = project.display_name
-		projectOwners = rootProject.owners
-		if (project.license_header.contains('GPL')) {
-			if (!project.hasProperty("gpl_version")) {
-				throw new RuntimeException("GPL version needs to be specified through the 'gpl_version' property")
-			}
-			gplVersion = project.gpl_version
-		}
-	}
+task standaloneJar(type: Jar, dependsOn: project.classes) {
+	from sourceSets.main.output
+	archiveClassifier.set('standalone-dev')
 }
 
-apply from: 'release.gradle'
+task remapStandaloneJar(type: RemapJarTask, dependsOn: project.standaloneJar) {
+	archiveClassifier.set('standalone')
+	inputFile.set(standaloneJar.archiveFile)
+	addNestedDependencies.set(true)
+}
+
+assemble.dependsOn(remapStandaloneJar)
+
+chenille {
+	configurePublishing {
+		mainArtifact = remapStandaloneJar
+		withArtifactory()
+		withCurseforgeRelease()
+		withGithubRelease()
+	}
+}
