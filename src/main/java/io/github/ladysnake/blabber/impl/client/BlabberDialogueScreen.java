@@ -62,14 +62,14 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     @Override
     public boolean keyPressed(int key, int scancode, int modifiers) {
         GameOptions options = MinecraftClient.getInstance().options;
-        if (key == GLFW.GLFW_KEY_ENTER || options.keyInventory.matchesKey(key, scancode)) {
+        if (key == GLFW.GLFW_KEY_ENTER || options.inventoryKey.matchesKey(key, scancode)) {
             this.confirmChoice(this.selectedChoice);
             return true;
         }
         boolean tab = GLFW.GLFW_KEY_TAB == key;
-        boolean down = options.keyBack.matchesKey(key, scancode);
+        boolean down = options.backKey.matchesKey(key, scancode);
         boolean shift = (GLFW.GLFW_MOD_SHIFT & modifiers) != 0;
-        if (tab || down || options.keyForward.matchesKey(key, scancode)) {
+        if (tab || down || options.forwardKey.matchesKey(key, scancode)) {
             scrollDialogueChoice(tab && !shift || down ? -1 : 1);
             return true;
         }
@@ -158,7 +158,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             y += strHeight + CHOICE_GAP;
         }
 
-        Text tip = new TranslatableText("blabber:dialogue.instructions", client.options.keyForward.getBoundKeyLocalizedText(), client.options.keyBack.getBoundKeyLocalizedText(), client.options.keyInventory.getBoundKeyLocalizedText());
+        Text tip = new TranslatableText("blabber:dialogue.instructions", client.options.forwardKey.getBoundKeyLocalizedText(), client.options.backKey.getBoundKeyLocalizedText(), client.options.inventoryKey.getBoundKeyLocalizedText());
         this.textRenderer.draw(matrices, tip, (this.width - this.textRenderer.getWidth(tip)) * 0.5f, this.height - 30, 0x808080);
         super.render(matrices, mouseX, mouseY, tickDelta);
     }

@@ -28,7 +28,7 @@ import io.github.ladysnake.blabber.DialogueAction;
 import io.github.ladysnake.blabber.impl.mixin.SuggestionProvidersAccessor;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.command.CommandSource;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.server.command.ServerCommandSource;
@@ -41,13 +41,13 @@ import net.minecraft.util.registry.SimpleRegistry;
 import net.minecraft.world.World;
 
 public final class BlabberRegistrar implements EntityComponentInitializer {
-    public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = ScreenHandlerRegistry.registerExtended(Blabber.id("dialogue"), (syncId, inventory, buf) -> {
+    public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registry.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, buf) -> {
         DialogueStateMachine dialogue = DialogueStateMachine.fromPacket(inventory.player.world, buf);
         return new DialogueScreenHandler(syncId, dialogue);
-    });
+    }));
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
     public static final RegistryKey<Registry<DialogueTemplate>> DIALOGUE_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("blabber_dialogues"));
-    public static final SimpleRegistry<DialogueTemplate> BUILTIN_DIALOGUES = new SimpleRegistry<>(DIALOGUE_REGISTRY_KEY, Lifecycle.stable());
+    public static final SimpleRegistry<DialogueTemplate> BUILTIN_DIALOGUES = new SimpleRegistry<>(DIALOGUE_REGISTRY_KEY, Lifecycle.stable(), null);
     @SuppressWarnings("unchecked")
     public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = (Registry<Codec<? extends DialogueAction>>) (Registry<?>) FabricRegistryBuilder.createSimple(Codec.class, Blabber.id("dialogue_actions")).buildAndRegister();
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProvidersAccessor.blabber$register(Blabber.id("available_dialogues"), (context, builder) -> CommandSource.suggestIdentifiers(context.getSource().getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds(), builder));
