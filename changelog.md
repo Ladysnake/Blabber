@@ -1,4 +1,9 @@
 ------------------------------------------------------
+Version 0.2.0
+------------------------------------------------------
+- Updated to 1.18.2
+
+------------------------------------------------------
 Version 0.1.3
 ------------------------------------------------------
 - Updated CCA dependency => **Update your dependencies: `io.github.onyxstudios.Cardinal-Components-API` -> `dev.onyxstudios.cardinal-components-api`
