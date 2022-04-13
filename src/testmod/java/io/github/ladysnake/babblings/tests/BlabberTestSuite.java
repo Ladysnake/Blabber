@@ -30,7 +30,7 @@ public final class BlabberTestSuite implements FabricGameTest {
     @GameTest(structureName = EMPTY_STRUCTURE)
     public void complete(TestContext ctx) {
         ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
-        Blabber.startDialogue(player, new Identifier("babblings:remnant_choice"));
+        Blabber.startDialogue(player, new Identifier("babblings:remnant_choice_builtin"));
         GameTestUtil.assertTrue("startDialogue did not work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentChoices().size() == 3);
         ctx.complete();
     }

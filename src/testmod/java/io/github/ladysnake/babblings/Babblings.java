@@ -17,11 +17,30 @@
  */
 package io.github.ladysnake.babblings;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.mojang.serialization.JsonOps;
+import io.github.ladysnake.blabber.impl.common.BlabberRegistrar;
+import io.github.ladysnake.blabber.impl.common.DialogueTemplate;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+import java.io.InputStreamReader;
+import java.util.Objects;
 
 public final class Babblings implements ModInitializer {
     @Override
     public void onInitialize() {
-
+        // The uuh testing server does not load dynamic registries so yes
+        RegistryEntryAddedCallback.event(BlabberRegistrar.ACTION_REGISTRY).register((rawId, id, object) -> {
+            if (id.equals(new Identifier("blabber:command"))) {
+                Gson gson = new Gson();
+                JsonElement remnantChoice = gson.fromJson(new InputStreamReader(Objects.requireNonNull(Babblings.class.getResourceAsStream("/data/babblings/blabber_dialogues/remnant_choice.json"))), JsonObject.class);
+                Registry.register(BlabberRegistrar.BUILTIN_DIALOGUES, new Identifier("babblings:remnant_choice_builtin"), DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, remnantChoice).result().orElseThrow());
+            }
+        });
     }
 }
