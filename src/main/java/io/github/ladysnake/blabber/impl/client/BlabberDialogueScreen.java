@@ -26,9 +26,7 @@ import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
@@ -87,7 +85,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
                 this.client.setScreen(new ConfirmScreen(
                     this::onBigChoiceMade,
                     this.handler.getCurrentText(),
-                    new LiteralText(""),
+                    Text.empty(),
                     choices.get(0),
                     choices.get(1)
                 ));
@@ -158,7 +156,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             y += strHeight + CHOICE_GAP;
         }
 
-        Text tip = new TranslatableText("blabber:dialogue.instructions", client.options.forwardKey.getBoundKeyLocalizedText(), client.options.backKey.getBoundKeyLocalizedText(), client.options.inventoryKey.getBoundKeyLocalizedText());
+        Text tip = Text.translatable("blabber:dialogue.instructions", client.options.forwardKey.getBoundKeyLocalizedText(), client.options.backKey.getBoundKeyLocalizedText(), client.options.inventoryKey.getBoundKeyLocalizedText());
         this.textRenderer.draw(matrices, tip, (this.width - this.textRenderer.getWidth(tip)) * 0.5f, this.height - 30, 0x808080);
         super.render(matrices, mouseX, mouseY, tickDelta);
     }

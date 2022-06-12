@@ -1,4 +1,14 @@
 ------------------------------------------------------
+Version 0.3.0
+------------------------------------------------------
+Updated to MC 1.19
+
+Additions
+- Dialogues now get validated upon world loading - the following issues will cause failures :
+  - Infinite loops preventing users from reaching a dialogue state with type `dialogue_end`
+  - Dialogue states that are not endings but offer no choice either (unless it is guaranteed that players cannot reach them)
+
+------------------------------------------------------
 Version 0.2.0
 ------------------------------------------------------
 - Updated to 1.18.2

@@ -6,22 +6,17 @@
         {
           "text": "I want to challenge you!",
           "next": "a"
-        },
-        {
-          "text": "I came here to demand a favour.",
-          "next": "b"
         }
       ]
     },
     "a": {
       "text": "",
-      "choices": [],
-      "type": "end_dialogue"
-    },
-    "b": {
-      "text": "",
-      "choices": [],
-      "type": "end_dialogue"
+      "choices": [
+        {
+          "text": "Fuck go back",
+          "next": "start"
+        }
+      ]
     }
   },
   "start_at": "start"

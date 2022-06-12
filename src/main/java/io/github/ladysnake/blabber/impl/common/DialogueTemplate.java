@@ -19,13 +19,24 @@ package io.github.ladysnake.blabber.impl.common;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.Dynamic;
+import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.JsonOps;
+import com.mojang.serialization.Lifecycle;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import io.github.ladysnake.blabber.Blabber;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
 
 public final class DialogueTemplate {
     // SO
@@ -61,11 +72,65 @@ public final class DialogueTemplate {
     }
 
     private static Codec<DialogueTemplate> codec(Codec<JsonElement> jsonCodec) {
-        return RecordCodecBuilder.create(instance -> instance.group(
+        return RecordCodecBuilder.<DialogueTemplate>create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
             Codec.unboundedMap(Codec.STRING, DialogueState.codec(jsonCodec)).fieldOf("states").forGetter(DialogueTemplate::states)
-        ).apply(instance, DialogueTemplate::new));
+        ).apply(instance, DialogueTemplate::new)).mapResult(new Codec.ResultFunction<>() {
+            @Override
+            public <T> DataResult<Pair<DialogueTemplate, T>> apply(DynamicOps<T> ops, T input, DataResult<Pair<DialogueTemplate, T>> a) {
+                return a.flatMap(p -> validateStructure(p.getFirst()).map(t -> Pair.of(t, p.getSecond())));
+            }
+
+            @Override
+            public <T> DataResult<T> coApply(DynamicOps<T> ops, DialogueTemplate input, DataResult<T> t) {
+                return t;
+            }
+        });
+    }
+
+    private static DataResult<DialogueTemplate> validateStructure(DialogueTemplate dialogue) {
+        Map<String, Set<String>> ancestors = new HashMap<>();
+        Deque<String> waitList = new ArrayDeque<>();
+        Set<String> unvalidated = new HashSet<>();
+
+        for (Map.Entry<String, DialogueState> state : dialogue.states().entrySet()) {
+            if (state.getValue().type().equals(ChoiceResult.END_DIALOGUE)) {
+                waitList.add(state.getKey());
+            } else if (dialogue.states().get(state.getKey()).choices().isEmpty()) {
+                return DataResult.error("(Blabber) %s has no available choices but is not an end state".formatted(state.getKey()));
+            } else {
+                unvalidated.add(state.getKey());
+                for (DialogueState.Choice choice : state.getValue().choices()) {
+                    ancestors.computeIfAbsent(choice.next(), n -> new HashSet<>()).add(state.getKey());
+                }
+            }
+        }
+
+        while (!waitList.isEmpty()) {
+            String state = waitList.pop();
+
+            if (ancestors.containsKey(state)) {
+                for (var ancestor : ancestors.get(state)) {
+                    if (unvalidated.remove(ancestor)) {
+                        waitList.add(ancestor);
+                    }
+                }
+            } else if (!state.equals(dialogue.start())) {
+                Blabber.LOGGER.warn("{} is unreachable", state);
+            }
+        }
+
+        for (String bad : unvalidated) {
+            if (!Objects.equals(bad, dialogue.start()) && !ancestors.containsKey(bad)) {
+                // Unreachable states do not cause infinite loops, but we still want to be aware of them
+                Blabber.LOGGER.warn("{} is unreachable", bad);
+            } else {
+                return DataResult.error("(Blabber) %s does not have any path to the end of the dialogue".formatted(bad));
+            }
+        }
+
+        return DataResult.success(dialogue, Lifecycle.stable());
     }
 
     public boolean unskippable() {

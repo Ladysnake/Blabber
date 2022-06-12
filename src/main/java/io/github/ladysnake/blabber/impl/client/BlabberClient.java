@@ -20,7 +20,7 @@ package io.github.ladysnake.blabber.impl.client;
 import io.github.ladysnake.blabber.impl.common.BlabberRegistrar;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.network.PacketByteBuf;
 
 import static io.netty.buffer.Unpooled.buffer;
@@ -28,7 +28,7 @@ import static io.netty.buffer.Unpooled.buffer;
 public final class BlabberClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        ScreenRegistry.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, BlabberDialogueScreen::new);
+        HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, BlabberDialogueScreen::new);
     }
 
     public static void sendDialogueActionMessage(int choice) {

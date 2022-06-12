@@ -23,6 +23,7 @@ import com.google.common.collect.ImmutableList;
 import io.github.ladysnake.blabber.Blabber;
 import io.github.ladysnake.blabber.impl.client.BlabberClient;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -51,6 +52,11 @@ public class DialogueScreenHandler extends ScreenHandler {
 
     public ImmutableList<Text> getCurrentChoices() {
         return this.dialogue.getCurrentChoices();
+    }
+
+    @Override
+    public ItemStack transferSlot(PlayerEntity player, int index) {
+        return ItemStack.EMPTY;
     }
 
     @Override

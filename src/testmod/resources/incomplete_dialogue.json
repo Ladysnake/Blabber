@@ -15,8 +15,7 @@
     },
     "a": {
       "text": "",
-      "choices": [],
-      "type": "end_dialogue"
+      "choices": []
     },
     "b": {
       "text": "",

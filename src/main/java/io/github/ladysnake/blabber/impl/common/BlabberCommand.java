@@ -26,7 +26,7 @@ import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.command.argument.IdentifierArgumentType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import java.util.Collection;
@@ -36,7 +36,7 @@ import static net.minecraft.server.command.CommandManager.argument;
 import static net.minecraft.server.command.CommandManager.literal;
 
 public final class BlabberCommand {
-    public static final DynamicCommandExceptionType INVALID_EXCEPTION = new DynamicCommandExceptionType(id -> new TranslatableText("blabber:commands.dialogue.start.invalid", id));
+    public static final DynamicCommandExceptionType INVALID_EXCEPTION = new DynamicCommandExceptionType(id -> Text.translatable("blabber:commands.dialogue.start.invalid", id));
 
     public static final String DIALOGUE_SUBCOMMAND = "dialogue";
 
@@ -64,7 +64,7 @@ public final class BlabberCommand {
         int count = 0;
         for (ServerPlayerEntity player : players) {
             PlayerDialogueTracker.get(player).startDialogue(dialogue);
-            source.sendFeedback(new TranslatableText("blabber:commands.dialogue.start.success", dialogue, player.getDisplayName()), true);
+            source.sendFeedback(Text.translatable("blabber:commands.dialogue.start.success", dialogue, player.getDisplayName()), true);
             count++;
         }
 

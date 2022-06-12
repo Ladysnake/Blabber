@@ -1,7 +1,7 @@
 import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
-	id 'io.github.ladysnake.chenille' version '0.7.0'
+	id 'io.github.ladysnake.chenille' version '0.8.0'
 	id 'io.github.juuxel.loom-quiltflower' version "1.6.0"
 }
 
@@ -12,7 +12,6 @@ group = project.maven_group
 chenille {
 	configureTestmod {
 		withBaseTestRuns()
-		withDependencyConfiguration()
 	}
 
 	license = project.license_header
@@ -41,7 +40,7 @@ dependencies {
 	modLocalRuntime(libs.modmenu)
 
 	// Test dependencies
-	modTestImplementation(libs.elmendorf)
+	modImplementation(libs.elmendorf)
 }
 
 processResources {
@@ -81,7 +80,7 @@ assemble.dependsOn(remapStandaloneJar)
 
 chenille {
 	configurePublishing {
-		mainArtifact = remapStandaloneJar
+		mainArtifact = remapStandaloneJar.archiveFile
 		withArtifactory()
 		withCurseforgeRelease()
 		withGithubRelease()

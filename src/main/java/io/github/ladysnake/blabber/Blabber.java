@@ -24,7 +24,7 @@ import io.github.ladysnake.blabber.impl.common.CommandDialogueAction;
 import io.github.ladysnake.blabber.impl.common.DialogueStateMachine;
 import io.github.ladysnake.blabber.impl.common.PlayerDialogueTracker;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
@@ -96,7 +96,7 @@ public final class Blabber implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		BlabberRegistrar.init();
-		CommandRegistrationCallback.EVENT.register((dispatcher, dedicated) -> BlabberCommand.register(dispatcher));
+		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> BlabberCommand.register(dispatcher));
 		registerAction(id("command"), CommandDialogueAction.CODEC);
 	}
 }

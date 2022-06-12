@@ -21,7 +21,6 @@ import com.google.common.collect.ImmutableList;
 import com.google.gson.JsonElement;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import org.apache.commons.lang3.StringUtils;
 
@@ -40,7 +39,7 @@ public record DialogueState(
 
         return RecordCodecBuilder.create(instance -> instance.group(
             // Kinda optional, but we still want errors if you got it wrong >:(
-            FailingOptionalFieldCodec.of("text", textCodec, LiteralText.EMPTY).forGetter(DialogueState::text),
+            FailingOptionalFieldCodec.of("text", textCodec, Text.empty()).forGetter(DialogueState::text),
             FailingOptionalFieldCodec.of("choices", Codec.list(Choice.codec(textCodec)), List.of()).forGetter(DialogueState::choices),
             FailingOptionalFieldCodec.of("action", InstancedDialogueAction.CODEC).forGetter(DialogueState::action),
             FailingOptionalFieldCodec.of("type", Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), ChoiceResult.DEFAULT).forGetter(DialogueState::type)
@@ -62,7 +61,7 @@ public record DialogueState(
     @Override
     public String toString() {
         return "DialogueState{" +
-                "text='" + StringUtils.abbreviate(text.asString(), 20) + '\'' +
+                "text='" + StringUtils.abbreviate(text.getString(), 20) + '\'' +
                 ", choices=" + choices +
                 ", type=" + type
                 + this.action().map(InstancedDialogueAction::toString).map(s -> ", action=" + s).orElse("")
