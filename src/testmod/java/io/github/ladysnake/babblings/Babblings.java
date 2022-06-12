@@ -34,13 +34,21 @@ import java.util.Objects;
 public final class Babblings implements ModInitializer {
     @Override
     public void onInitialize() {
-        // The uuh testing server does not load dynamic registries so yes
-        RegistryEntryAddedCallback.event(BlabberRegistrar.ACTION_REGISTRY).register((rawId, id, object) -> {
-            if (id.equals(new Identifier("blabber:command"))) {
-                Gson gson = new Gson();
-                JsonElement remnantChoice = gson.fromJson(new InputStreamReader(Objects.requireNonNull(Babblings.class.getResourceAsStream("/data/babblings/blabber_dialogues/remnant_choice.json"))), JsonObject.class);
-                Registry.register(BlabberRegistrar.BUILTIN_DIALOGUES, new Identifier("babblings:remnant_choice_builtin"), DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, remnantChoice).result().orElseThrow());
-            }
-        });
+        Identifier commandId = new Identifier("blabber:command");
+        if (BlabberRegistrar.ACTION_REGISTRY.containsId(commandId)) {
+            registerBuiltinDialogue();
+        } else {
+            RegistryEntryAddedCallback.event(BlabberRegistrar.ACTION_REGISTRY).register((rawId, id, object) -> {
+                if (id.equals(commandId)) {
+                    registerBuiltinDialogue();
+                }
+            });
+        }
+    }
+
+    private void registerBuiltinDialogue() {
+        Gson gson = new Gson();
+        JsonElement remnantChoice = gson.fromJson(new InputStreamReader(Objects.requireNonNull(Babblings.class.getResourceAsStream("/data/babblings/blabber_dialogues/remnant_choice.json"))), JsonObject.class);
+        Registry.register(BlabberRegistrar.BUILTIN_DIALOGUES, new Identifier("babblings:remnant_choice_builtin"), DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, remnantChoice).result().orElseThrow());
     }
 }
