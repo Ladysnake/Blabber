@@ -43,23 +43,23 @@ public final class BlabberTestSuite implements FabricGameTest {
     public void nominal(TestContext ctx) {
         ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
         Blabber.startDialogue(player, new Identifier("babblings:remnant_choice_builtin"));
-        GameTestUtil.assertTrue("startDialogue did not work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentChoices().size() == 3);
+        GameTestUtil.assertTrue("startDialogue should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentChoices().size() == 3);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        GameTestUtil.assertTrue("choice 0 did not work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 1);
+        GameTestUtil.assertTrue("choice 0 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 420);
-        GameTestUtil.assertTrue("choice 420 was not ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 1);
+        GameTestUtil.assertTrue("choice 420 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        GameTestUtil.assertTrue("choice 1 did not work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 2);
+        GameTestUtil.assertTrue("choice 1 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 2);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        GameTestUtil.assertTrue("dialogue did not end", player.currentScreenHandler == player.playerScreenHandler);
+        GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
         ctx.complete();
     }
 
     @GameTest(templateName = EMPTY_STRUCTURE)
     public void registryGetsPopulated(TestContext ctx) {
-        GameTestUtil.assertTrue("dialogue registry does not match expected state",
+        GameTestUtil.assertTrue("dialogue registry should match expected state",
                 ctx.getWorld().getRegistryManager().get(BlabberRegistrar.DIALOGUE_REGISTRY_KEY).streamEntries().map(RegistryEntry.Reference::getKey).map(k -> k.orElseThrow().getValue()).sorted().toList().equals(List.of(
                         new Identifier("babblings:mountain_king"),
                         new Identifier("babblings:remnant_choice"),
@@ -72,14 +72,14 @@ public final class BlabberTestSuite implements FabricGameTest {
     @GameTest(templateName = EMPTY_STRUCTURE)
     public void validationFailsOnIncompleteDialogue(TestContext ctx) {
         DataResult<Pair<DialogueTemplate, JsonElement>> result = DialogueTemplate.CODEC.decode(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(BlabberTestSuite.class.getResourceAsStream("/incomplete_dialogue.json"))), JsonElement.class));
-        GameTestUtil.assertTrue("Dialogue validation does not detect incomplete dialogues", result.error().filter(it -> it.message().equals("(Blabber) a has no available choices but is not an end state")).isPresent());
+        GameTestUtil.assertTrue("Dialogue validation should detect incomplete dialogues", result.error().filter(it -> it.message().equals("(Blabber) a has no available choices but is not an end state")).isPresent());
         ctx.complete();
     }
 
     @GameTest(templateName = EMPTY_STRUCTURE)
     public void validationFailsOnLoopingDialogue(TestContext ctx) {
         DataResult<Pair<DialogueTemplate, JsonElement>> result = DialogueTemplate.CODEC.decode(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(BlabberTestSuite.class.getResourceAsStream("/looping_dialogue.json"))), JsonElement.class));
-        GameTestUtil.assertTrue("Dialogue validation does not detect looping dialogues", result.error().filter(it -> it.message().equals("(Blabber) a does not have any path to the end of the dialogue")).isPresent());
+        GameTestUtil.assertTrue("Dialogue validation should detect looping dialogues", result.error().filter(it -> it.message().equals("(Blabber) a does not have any path to the end of the dialogue")).isPresent());
         ctx.complete();
     }
 }

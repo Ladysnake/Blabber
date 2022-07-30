@@ -26,6 +26,6 @@ public record CommandDialogueAction(String command) implements DialogueAction {
 
     @Override
     public void handle(ServerPlayerEntity player) {
-        player.server.getCommandManager().execute(player.getCommandSource().withLevel(2), this.command());
+        player.server.getCommandManager().executeWithPrefix(player.getCommandSource().withLevel(2), this.command());
     }
 }

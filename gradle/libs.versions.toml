@@ -1,6 +1,6 @@
 [versions]
-cca = "5.0.0-beta.1"
-elmendorf = "0.6.0"
+cca = "5.0.1"
+elmendorf = "0.7.0"
 fpa = "0.1-SNAPSHOT"
 mcAnnotations = "1.0"
 modmenu = "4.0.0"
