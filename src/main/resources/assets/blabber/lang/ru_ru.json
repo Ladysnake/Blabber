@@ -1,0 +1,5 @@
+{
+  "blabber:commands.dialogue.start.invalid": "Не найдено диалога с типом \"%s\"",
+  "blabber:commands.dialogue.start.success": "Начат диалог \"%s\" для %s",
+  "blabber:dialogue.instructions": "Наведитесь или нажмите [%s]/[%s] для выбора, затем кликните или нажмите [%s] для подтверждения"
+}
