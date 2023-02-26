@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022 Ladysnake
+ * Copyright (C) 2022-2023 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -30,7 +30,6 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.github.ladysnake.blabber.Blabber;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
