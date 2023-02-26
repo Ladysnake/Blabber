@@ -19,6 +19,7 @@ package io.github.ladysnake.blabber.impl.common;
 
 import com.mojang.brigadier.suggestion.SuggestionProvider;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.Lifecycle;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
@@ -32,6 +33,7 @@ import net.minecraft.command.CommandSource;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.SimpleRegistry;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.Identifier;
@@ -45,7 +47,9 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
     public static final RegistryKey<Registry<DialogueTemplate>> DIALOGUE_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("blabber_dialogues"));
     public static final RegistryKey<Registry<Codec<? extends DialogueAction>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
-    public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = FabricRegistryBuilder.createSimple(ACTION_REGISTRY_KEY).buildAndRegister();
+    public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = FabricRegistryBuilder.from(
+            new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
+    ).buildAndRegister();
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProvidersAccessor.blabber$register(Blabber.id("available_dialogues"), (context, builder) -> CommandSource.suggestIdentifiers(context.getSource().getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds(), builder));
 
     public static void init() {
