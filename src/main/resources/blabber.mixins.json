@@ -4,8 +4,10 @@
   "package": "io.github.ladysnake.blabber.impl.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "DynamicRegistryManagerMixin",
-    "SuggestionProvidersAccessor"
+    "SuggestionProvidersAccessor",
+    "dynamic.DynamicRegistrySyncAccessor",
+    "dynamic.DynamicRegistrySyncMixin",
+    "dynamic.RegistryLoaderMixin"
   ],
   "injectors": {
     "defaultRequire": 1

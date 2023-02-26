@@ -24,9 +24,9 @@ import com.mojang.serialization.JsonOps;
 import io.github.ladysnake.blabber.impl.common.BlabberRegistrar;
 import io.github.ladysnake.blabber.impl.common.DialogueTemplate;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
+import net.fabricmc.fabric.api.event.registry.DynamicRegistrySetupCallback;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 import java.io.InputStreamReader;
 import java.util.Objects;
@@ -34,21 +34,10 @@ import java.util.Objects;
 public final class Babblings implements ModInitializer {
     @Override
     public void onInitialize() {
-        Identifier commandId = new Identifier("blabber:command");
-        if (BlabberRegistrar.ACTION_REGISTRY.containsId(commandId)) {
-            registerBuiltinDialogue();
-        } else {
-            RegistryEntryAddedCallback.event(BlabberRegistrar.ACTION_REGISTRY).register((rawId, id, object) -> {
-                if (id.equals(commandId)) {
-                    registerBuiltinDialogue();
-                }
-            });
-        }
-    }
-
-    private void registerBuiltinDialogue() {
-        Gson gson = new Gson();
-        JsonElement remnantChoice = gson.fromJson(new InputStreamReader(Objects.requireNonNull(Babblings.class.getResourceAsStream("/data/babblings/blabber_dialogues/remnant_choice.json"))), JsonObject.class);
-        Registry.register(BlabberRegistrar.BUILTIN_DIALOGUES, new Identifier("babblings:remnant_choice_builtin"), DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, remnantChoice).result().orElseThrow());
+        DynamicRegistrySetupCallback.EVENT.register(registryView -> registryView.getOptional(BlabberRegistrar.DIALOGUE_REGISTRY_KEY).ifPresent(dialogueRegistry -> {
+            Gson gson = new Gson();
+            JsonElement remnantChoice = gson.fromJson(new InputStreamReader(Objects.requireNonNull(Babblings.class.getResourceAsStream("/data/babblings/blabber_dialogues/remnant_choice.json"))), JsonObject.class);
+            Registry.register(dialogueRegistry, new Identifier("babblings:remnant_choice_builtin"), DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, remnantChoice).result().orElseThrow());
+        }));
     }
 }

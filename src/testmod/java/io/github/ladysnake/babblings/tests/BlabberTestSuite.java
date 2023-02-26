@@ -28,11 +28,11 @@ import io.github.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import io.github.ladysnake.blabber.impl.common.DialogueTemplate;
 import io.github.ladysnake.elmendorf.GameTestUtil;
 import net.fabricmc.fabric.api.gametest.v1.FabricGameTest;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.test.GameTest;
 import net.minecraft.test.TestContext;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.RegistryEntry;
 
 import java.io.InputStreamReader;
 import java.util.List;
