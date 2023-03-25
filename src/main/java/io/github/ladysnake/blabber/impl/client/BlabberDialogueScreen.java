@@ -145,14 +145,14 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         this.renderBackground(matrices);
         int y = MIN_RENDER_Y;
         Text title = this.handler.getCurrentText();
-        this.textRenderer.drawTrimmed(title, 10, y, MAX_TEXT_WIDTH, 0xFFFFFF);
+        this.textRenderer.drawTrimmed(matrices, title, 10, y, MAX_TEXT_WIDTH, 0xFFFFFF);
         y += this.getTextBoundedHeight(title, MAX_TEXT_WIDTH) + TITLE_GAP;
         List<Text> choices = this.handler.getCurrentChoices();
 
         for (int i = 0; i < choices.size(); i++) {
             Text choice = choices.get(i);
             int strHeight = this.getTextBoundedHeight(choice, MAX_TEXT_WIDTH);
-            this.textRenderer.drawTrimmed(choice, 10, y, MAX_TEXT_WIDTH, i == this.selectedChoice ? 0xE0E044 : 0xA0A0A0);
+            this.textRenderer.drawTrimmed(matrices, choice, 10, y, MAX_TEXT_WIDTH, i == this.selectedChoice ? 0xE0E044 : 0xA0A0A0);
             y += strHeight + CHOICE_GAP;
         }
 

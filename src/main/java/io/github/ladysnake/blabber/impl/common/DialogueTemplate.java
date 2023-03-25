@@ -97,7 +97,7 @@ public final class DialogueTemplate {
             if (state.getValue().type().equals(ChoiceResult.END_DIALOGUE)) {
                 waitList.add(state.getKey());
             } else if (dialogue.states().get(state.getKey()).choices().isEmpty()) {
-                return DataResult.error("(Blabber) %s has no available choices but is not an end state".formatted(state.getKey()));
+                return DataResult.error(() -> "(Blabber) %s has no available choices but is not an end state".formatted(state.getKey()));
             } else {
                 unvalidated.add(state.getKey());
                 for (DialogueState.Choice choice : state.getValue().choices()) {
@@ -125,7 +125,7 @@ public final class DialogueTemplate {
                 // Unreachable states do not cause infinite loops, but we still want to be aware of them
                 Blabber.LOGGER.warn("{} is unreachable", bad);
             } else {
-                return DataResult.error("(Blabber) %s does not have any path to the end of the dialogue".formatted(bad));
+                return DataResult.error(() -> "(Blabber) %s does not have any path to the end of the dialogue".formatted(bad));
             }
         }
 

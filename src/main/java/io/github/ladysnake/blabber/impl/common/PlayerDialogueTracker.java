@@ -28,6 +28,7 @@ import net.minecraft.nbt.NbtElement;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
@@ -35,7 +36,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     public static final ComponentKey<PlayerDialogueTracker> KEY = ComponentRegistry.getOrCreate(Blabber.id("dialogue_tracker"), PlayerDialogueTracker.class);
 
     private final PlayerEntity player;
-    private DialogueStateMachine currentDialogue;
+    private @Nullable DialogueStateMachine currentDialogue;
 
     public PlayerDialogueTracker(PlayerEntity player) {
         this.player = player;
@@ -59,7 +60,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         this.currentDialogue = null;
 
         if (this.player instanceof ServerPlayerEntity sp && this.player.currentScreenHandler instanceof DialogueScreenHandler) {
-            sp.closeScreenHandler();
+            sp.closeHandledScreen();
         }
     }
 

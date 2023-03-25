@@ -2,7 +2,7 @@ import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
 	id 'fabric-loom' version "1.0.+"
-	id 'io.github.ladysnake.chenille' version '0.9.0'
+	id 'io.github.ladysnake.chenille' version '0.10.1'
 	id 'io.github.juuxel.loom-quiltflower' version "1.6.0"
 }
 
@@ -66,15 +66,17 @@ remapJar {
 	addNestedDependencies.set(false)
 }
 
-task standaloneJar(type: Jar, dependsOn: project.classes) {
+tasks.register("standaloneJar", Jar) {
 	from sourceSets.main.output
 	archiveClassifier.set('standalone-dev')
+	dependsOn project.classes
 }
 
-task remapStandaloneJar(type: RemapJarTask, dependsOn: project.standaloneJar) {
+tasks.register("remapStandaloneJar", RemapJarTask) {
 	archiveClassifier.set('standalone')
 	inputFile.set(standaloneJar.archiveFile)
 	addNestedDependencies.set(true)
+	dependsOn project.standaloneJar
 }
 
 assemble.dependsOn(remapStandaloneJar)
