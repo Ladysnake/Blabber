@@ -87,6 +87,7 @@ chenille {
 		withLadysnakeMaven()
 		withCurseforgeRelease()
 		withGithubRelease()
+		withModrinthRelease()
 	}
 }
 
