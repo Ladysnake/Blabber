@@ -9,7 +9,7 @@
     "Pyrofab"
   ],
   "contact": {
-    "homepage": "https://ladysnake.github.io/wiki/blabber",
+    "homepage": "https://ladysnake.org/wiki/blabber",
     "sources": "https://github.com/Ladysnake/Blabber"
   },
 
@@ -19,13 +19,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.ladysnake.blabber.Blabber"
+      "org.ladysnake.blabber.Blabber"
     ],
     "client": [
-      "io.github.ladysnake.blabber.impl.client.BlabberClient"
+      "org.ladysnake.blabber.impl.client.BlabberClient"
     ],
     "cardinal-components": [
-      "io.github.ladysnake.blabber.impl.common.BlabberRegistrar"
+      "org.ladysnake.blabber.impl.common.BlabberRegistrar"
     ]
   },
   "mixins": [

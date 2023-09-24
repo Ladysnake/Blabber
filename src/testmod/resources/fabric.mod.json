@@ -17,10 +17,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.ladysnake.babblings.Babblings"
+      "org.ladysnake.babblings.Babblings"
     ],
     "fabric-gametest": [
-      "io.github.ladysnake.babblings.tests.BlabberTestSuite"
+      "org.ladysnake.babblings.tests.BlabberTestSuite"
     ]
   },
   "depends": {

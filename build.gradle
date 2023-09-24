@@ -89,3 +89,22 @@ chenille {
 		withGithubRelease()
 	}
 }
+
+publishing {
+	publications {
+		create("relocation", MavenPublication) {
+			pom {
+				// Old artifact coordinates
+				groupId = "io.github.ladysnake"
+
+				distributionManagement {
+					relocation {
+						// New artifact coordinates
+						groupId = "org.ladysnake"
+						message = "groupId has been changed"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ladysnake.github.io/wiki/blabber/dialogue.schema.json",
+  "$id": "https://ladysnake.org/wiki/blabber/dialogue.schema.json",
   "title": "Dialogue",
   "description": "A dialogue to be given to a player",
   "type": "object",
