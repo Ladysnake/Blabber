@@ -52,7 +52,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     private DialogueStateMachine startDialogue0(Identifier id) {
-        this.currentDialogue = BlabberRegistrar.startDialogue(this.player.world, id);
+        this.currentDialogue = BlabberRegistrar.startDialogue(this.player.getWorld(), id);
         return this.currentDialogue;
     }
 

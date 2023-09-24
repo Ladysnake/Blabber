@@ -21,10 +21,10 @@ import com.google.common.collect.ImmutableList;
 import io.github.ladysnake.blabber.impl.common.ChoiceResult;
 import io.github.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ConfirmScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.option.GameOptions;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
@@ -104,8 +104,8 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     }
 
     @Override
-    public boolean mouseScrolled(double mouseX, double mouseY, double scrollAmount) {
-        this.scrollDialogueChoice(scrollAmount);
+    public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
+        this.scrollDialogueChoice(verticalAmount);
         return true;
     }
 
@@ -139,35 +139,36 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     }
 
     @Override
-    public void render(MatrixStack matrices, int mouseX, int mouseY, float tickDelta) {
+    public void render(DrawContext context, int mouseX, int mouseY, float tickDelta) {
+        super.render(context, mouseX, mouseY, tickDelta);
+
         assert client != null;
 
-        this.renderBackground(matrices);
         int y = MIN_RENDER_Y;
         Text title = this.handler.getCurrentText();
-        this.textRenderer.drawTrimmed(matrices, title, 10, y, MAX_TEXT_WIDTH, 0xFFFFFF);
+
+        context.drawTextWrapped(this.textRenderer, title, 10, y, MAX_TEXT_WIDTH, 0xFFFFFF);
         y += this.getTextBoundedHeight(title, MAX_TEXT_WIDTH) + TITLE_GAP;
         List<Text> choices = this.handler.getCurrentChoices();
 
         for (int i = 0; i < choices.size(); i++) {
             Text choice = choices.get(i);
             int strHeight = this.getTextBoundedHeight(choice, MAX_TEXT_WIDTH);
-            this.textRenderer.drawTrimmed(matrices, choice, 10, y, MAX_TEXT_WIDTH, i == this.selectedChoice ? 0xE0E044 : 0xA0A0A0);
+            context.drawTextWrapped(this.textRenderer, choice, 10, y, MAX_TEXT_WIDTH, i == this.selectedChoice ? 0xE0E044 : 0xA0A0A0);
             y += strHeight + CHOICE_GAP;
         }
 
         Text tip = Text.translatable("blabber:dialogue.instructions", client.options.forwardKey.getBoundKeyLocalizedText(), client.options.backKey.getBoundKeyLocalizedText(), client.options.inventoryKey.getBoundKeyLocalizedText());
-        this.textRenderer.draw(matrices, tip, (this.width - this.textRenderer.getWidth(tip)) * 0.5f, this.height - 30, 0x808080);
-        super.render(matrices, mouseX, mouseY, tickDelta);
+        context.drawText(this.textRenderer, tip, (this.width - this.textRenderer.getWidth(tip)) / 2, this.height - 30, 0x808080, false);
     }
 
     @Override
-    protected void drawBackground(MatrixStack matrices, float delta, int mouseX, int mouseY) {
+    protected void drawBackground(DrawContext matrices, float delta, int mouseX, int mouseY) {
         // NO-OP
     }
 
     @Override
-    protected void drawForeground(MatrixStack matrices, int mouseX, int mouseY) {
+    protected void drawForeground(DrawContext matrices, int mouseX, int mouseY) {
         // NO-OP
     }
 }

@@ -41,7 +41,7 @@ import net.minecraft.world.World;
 
 public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, buf) -> {
-        DialogueStateMachine dialogue = DialogueStateMachine.fromPacket(inventory.player.world, buf);
+        DialogueStateMachine dialogue = DialogueStateMachine.fromPacket(inventory.player.getWorld(), buf);
         return new DialogueScreenHandler(syncId, dialogue);
     }));
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
