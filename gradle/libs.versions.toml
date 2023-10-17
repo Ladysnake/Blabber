@@ -1,7 +1,7 @@
 [versions]
 cca = "5.3.0"
 elmendorf = "0.12.0"
-fpa = "0.1-SNAPSHOT"
+fpa = "0.2-SNAPSHOT"
 mcAnnotations = "1.0"
 modmenu = "8.0.0-beta.2"
 

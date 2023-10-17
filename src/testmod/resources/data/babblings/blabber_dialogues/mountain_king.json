@@ -5,23 +5,48 @@
       "choices": [
         {
           "text": "I want to challenge you!",
-          "next": "a"
+          "next": "end"
         },
         {
           "text": "I came here to demand a favour.",
-          "next": "b"
+          "next": "bargain"
         }
       ]
     },
-    "a": {
+    "end": {
       "text": "",
       "choices": [],
       "type": "end_dialogue"
     },
-    "b": {
-      "text": "",
-      "choices": [],
-      "type": "end_dialogue"
+    "bargain": {
+      "text": "Tell me.",
+      "choices": [
+        {
+          "text": "I want life.",
+          "next": "end",
+          "only_if": {
+            "predicate": "babblings:full_health",
+            "when_unavailable": {
+              "display": "grayed_out",
+              "message": "You need all 10 hearts to pick this option."
+            }
+          }
+        },
+        {
+          "text": "I want wealth.",
+          "next": "end",
+          "only_if": {
+            "predicate": "babblings:holding_emerald",
+            "when_unavailable": {
+              "display": "hidden"
+            }
+          }
+        },
+        {
+          "text": "I want a friend.",
+          "next": "end"
+        }
+      ]
     }
   },
   "start_at": "start"

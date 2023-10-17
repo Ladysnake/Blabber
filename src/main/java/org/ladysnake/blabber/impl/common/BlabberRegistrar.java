@@ -37,6 +37,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.DialogueAction;
+import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
+import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
+import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
 import org.ladysnake.blabber.impl.mixin.SuggestionProvidersAccessor;
 
 public final class BlabberRegistrar implements EntityComponentInitializer {
@@ -58,7 +61,9 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
             int choice = buf.readByte();
             server.execute(() -> {
                 if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueHandler) {
-                    dialogueHandler.makeChoice(player, choice);
+                    if (!dialogueHandler.makeChoice(player, choice)) {
+                        responseSender.sendPacket(new SelectedDialogueStatePacket(dialogueHandler.getCurrentStateKey()));
+                    }
                 }
             });
         });

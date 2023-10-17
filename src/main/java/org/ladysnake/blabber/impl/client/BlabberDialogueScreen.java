@@ -25,11 +25,11 @@ import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
-import org.ladysnake.blabber.impl.common.ChoiceResult;
+import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
+import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
+import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.lwjgl.glfw.GLFW;
-
-import java.util.List;
 
 public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> {
     public static final int MIN_RENDER_Y = 40;
@@ -39,9 +39,12 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
 
     private int selectedChoice;
     private boolean hoveringChoice;
+    private final Text instructions;
 
     public BlabberDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
+        GameOptions options = MinecraftClient.getInstance().options;
+        this.instructions = Text.translatable("blabber:dialogue.instructions", options.forwardKey.getBoundKeyLocalizedText(), options.backKey.getBoundKeyLocalizedText(), options.inventoryKey.getBoundKeyLocalizedText());
     }
 
     @Override
@@ -74,20 +77,24 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         return super.keyPressed(key, scancode, modifiers);
     }
 
-    private ChoiceResult confirmChoice(int selectedChoice) {
+    private @Nullable ChoiceResult confirmChoice(int selectedChoice) {
         assert this.client != null;
+        if (this.handler.getAvailableChoices().get(selectedChoice).unavailabilityMessage().isPresent()) {
+            return null;
+        }
+
         ChoiceResult result = this.handler.makeChoice(selectedChoice);
 
         switch (result) {
             case END_DIALOGUE -> this.client.setScreen(null);
             case ASK_CONFIRMATION -> {
-                ImmutableList<Text> choices = this.handler.getCurrentChoices();
+                ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
                 this.client.setScreen(new ConfirmScreen(
                     this::onBigChoiceMade,
                     this.handler.getCurrentText(),
                     Text.empty(),
-                    choices.get(0),
-                    choices.get(1)
+                    choices.get(0).text(),
+                    choices.get(1).text()
                 ));
             }
             default -> this.selectedChoice = 0;
@@ -110,18 +117,19 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     }
 
     private void scrollDialogueChoice(double scrollAmount) {
-        if (!this.handler.getCurrentChoices().isEmpty()) {
-            this.selectedChoice = Math.floorMod((int) (this.selectedChoice - scrollAmount), this.handler.getCurrentChoices().size());
+        ImmutableList<AvailableChoice> availableChoices = this.handler.getAvailableChoices();
+        if (!availableChoices.isEmpty()) {
+            this.selectedChoice = Math.floorMod((int) (this.selectedChoice - scrollAmount), availableChoices.size());
         }
     }
 
     @Override
     public void mouseMoved(double mouseX, double mouseY) {
-        List<Text> choices = this.handler.getCurrentChoices();
+        ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
         Text title = this.handler.getCurrentText();
         int y = MIN_RENDER_Y + this.getTextBoundedHeight(title, MAX_TEXT_WIDTH) + TITLE_GAP;
         for (int i = 0; i < choices.size(); i++) {
-            Text choice = choices.get(i);
+            Text choice = choices.get(i).text();
             int strHeight = this.getTextBoundedHeight(choice, width);
             int strWidth = strHeight == 9 ? this.textRenderer.getWidth(choice) : width;
             if (mouseX < strWidth && mouseY > y && mouseY < y + strHeight) {
@@ -149,17 +157,20 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
 
         context.drawTextWrapped(this.textRenderer, title, 10, y, MAX_TEXT_WIDTH, 0xFFFFFF);
         y += this.getTextBoundedHeight(title, MAX_TEXT_WIDTH) + TITLE_GAP;
-        List<Text> choices = this.handler.getCurrentChoices();
+        ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
 
         for (int i = 0; i < choices.size(); i++) {
-            Text choice = choices.get(i);
-            int strHeight = this.getTextBoundedHeight(choice, MAX_TEXT_WIDTH);
-            context.drawTextWrapped(this.textRenderer, choice, 10, y, MAX_TEXT_WIDTH, i == this.selectedChoice ? 0xE0E044 : 0xA0A0A0);
+            AvailableChoice choice = choices.get(i);
+            int strHeight = this.getTextBoundedHeight(choice.text(), MAX_TEXT_WIDTH);
+            boolean selected = i == this.selectedChoice;
+            context.drawTextWrapped(this.textRenderer, choice.text(), 10, y, MAX_TEXT_WIDTH, choice.unavailabilityMessage().isPresent() ? 0x808080 : selected ? 0xE0E044 : 0xA0A0A0);
+            if (selected && choice.unavailabilityMessage().isPresent()) {
+                context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : MAX_TEXT_WIDTH, this.hoveringChoice ? mouseY : y);
+            }
             y += strHeight + CHOICE_GAP;
         }
 
-        Text tip = Text.translatable("blabber:dialogue.instructions", client.options.forwardKey.getBoundKeyLocalizedText(), client.options.backKey.getBoundKeyLocalizedText(), client.options.inventoryKey.getBoundKeyLocalizedText());
-        context.drawText(this.textRenderer, tip, (this.width - this.textRenderer.getWidth(tip)) / 2, this.height - 30, 0x808080, false);
+        context.drawText(this.textRenderer, instructions, (this.width - this.textRenderer.getWidth(instructions)) / 2, this.height - 30, 0x808080, false);
     }
 
     @Override

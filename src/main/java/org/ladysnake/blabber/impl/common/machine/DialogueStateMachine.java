@@ -1,0 +1,226 @@
+/*
+ * Blabber
+ * Copyright (C) 2022-2023 Ladysnake
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 3 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; If not, see <https://www.gnu.org/licenses>.
+ */
+package org.ladysnake.blabber.impl.common.machine;
+
+import com.google.common.collect.ImmutableList;
+import it.unimi.dsi.fastutil.ints.Int2BooleanMap;
+import it.unimi.dsi.fastutil.ints.Int2BooleanMaps;
+import it.unimi.dsi.fastutil.ints.Int2BooleanOpenHashMap;
+import net.minecraft.loot.LootDataType;
+import net.minecraft.loot.condition.LootCondition;
+import net.minecraft.loot.context.LootContext;
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.DialogueAction;
+import org.ladysnake.blabber.impl.common.BlabberRegistrar;
+import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
+import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.DialogueChoiceCondition;
+import org.ladysnake.blabber.impl.common.model.DialogueState;
+import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
+import org.ladysnake.blabber.impl.common.model.UnavailableAction;
+import org.ladysnake.blabber.impl.common.model.UnavailableDisplay;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.function.Consumer;
+
+public final class DialogueStateMachine {
+
+    private final Map<String, DialogueState> states;
+    private final Identifier id;
+    private final boolean unskippable;
+    private final Map<String, Int2BooleanMap> conditionalChoices;
+    private @Nullable String currentStateKey;
+    private ImmutableList<AvailableChoice> availableChoices = ImmutableList.of();
+
+    public DialogueStateMachine(DialogueTemplate template, Identifier id) {
+        this(template, id, template.start());
+    }
+
+    private DialogueStateMachine(DialogueTemplate template, Identifier id, String start) {
+        this.states = template.states();
+        this.id = id;
+        this.unskippable = template.unskippable();
+        this.conditionalChoices = gatherConditionalChoices(template);
+        this.selectState(start);
+    }
+
+    private static Map<String, Int2BooleanMap> gatherConditionalChoices(DialogueTemplate template) {
+        Map<String, Int2BooleanMap> conditionalChoices = new HashMap<>();
+        for (Map.Entry<String, DialogueState> entry : template.states().entrySet()) {
+            List<DialogueState.Choice> choices = entry.getValue().choices();
+            Int2BooleanMap m = new Int2BooleanOpenHashMap();
+            for (int i = 0; i < choices.size(); i++) {
+                DialogueState.Choice choice = choices.get(i);
+                if (choice.condition().isPresent()) {
+                    m.put(i, false);
+                }
+            }
+            if (!m.isEmpty()) {
+                conditionalChoices.put(entry.getKey(), m);
+            }
+        }
+        return conditionalChoices;
+    }
+
+    public static DialogueStateMachine fromPacket(World world, PacketByteBuf buf) {
+        Identifier id = buf.readIdentifier();
+        String currentState = buf.readString();
+        ChoiceAvailabilityPacket choicesAvailability = new ChoiceAvailabilityPacket(buf);
+
+        DialogueStateMachine dialogue = BlabberRegistrar.startDialogue(world, id);
+        dialogue.selectState(currentState);
+        dialogue.applyAvailabilityUpdate(choicesAvailability);
+        return dialogue;
+    }
+
+    private DialogueState getCurrentState() {
+        return this.states.get(this.getCurrentStateKey());
+    }
+
+    public Identifier getId() {
+        return this.id;
+    }
+
+    public Text getCurrentText() {
+        return this.getCurrentState().text();
+    }
+
+    public ImmutableList<AvailableChoice> getAvailableChoices() {
+        return this.availableChoices;
+    }
+
+    public boolean hasConditions() {
+        return !this.conditionalChoices.isEmpty();
+    }
+
+    public @Nullable ChoiceAvailabilityPacket updateConditions(LootContext context) {
+        ChoiceAvailabilityPacket ret = null;
+        for (Map.Entry<String, Int2BooleanMap> conditionalState : this.conditionalChoices.entrySet()) {
+            List<DialogueState.Choice> availableChoices = this.states.get(conditionalState.getKey()).choices();
+            for (Int2BooleanMap.Entry conditionalChoice : conditionalState.getValue().int2BooleanEntrySet()) {
+                LootCondition condition = context.getWorld().getServer().getLootManager().getElement(
+                        LootDataType.PREDICATES, availableChoices.get(conditionalChoice.getIntKey()).condition().orElseThrow().predicate()
+                );
+                boolean testResult = runTest(condition, context);
+                if (testResult != conditionalChoice.setValue(testResult)) {
+                    if (ret == null) ret = new ChoiceAvailabilityPacket();
+                    ret.markUpdated(conditionalState.getKey(), conditionalChoice.getIntKey(), testResult);
+                }
+            }
+        }
+        return ret;
+    }
+
+    public ChoiceAvailabilityPacket createFullAvailabilityUpdatePacket() {
+        return new ChoiceAvailabilityPacket(this.conditionalChoices);
+    }
+
+    private static boolean runTest(LootCondition condition, LootContext context) {
+        LootContext.Entry<LootCondition> lootEntry = LootContext.predicate(condition);
+        context.markActive(lootEntry);
+        boolean testResult = condition.test(context);
+        context.markInactive(lootEntry);
+        return testResult;
+    }
+
+    public void applyAvailabilityUpdate(ChoiceAvailabilityPacket payload) {
+        payload.updatedChoices().forEach((stateKey, choiceIndices) -> {
+            Int2BooleanMap conditionalState = this.conditionalChoices.get(stateKey);
+            for (Int2BooleanMap.Entry updatedChoice : choiceIndices.int2BooleanEntrySet()) {
+                conditionalState.put(updatedChoice.getIntKey(), updatedChoice.getBooleanValue());
+            }
+            this.availableChoices = this.rebuildAvailableChoices();
+        });
+    }
+
+    public boolean isAvailable(int choice) {
+        return this.conditionalChoices.getOrDefault(this.currentStateKey, Int2BooleanMaps.EMPTY_MAP).getOrDefault(choice, true);
+    }
+
+    /**
+     * @throws IllegalStateException if making an invalid choice
+     */
+    public ChoiceResult choose(int choice, Consumer<DialogueAction> actionRunner) {
+        this.validateChoice(choice);
+        DialogueState nextState = this.selectState(this.getCurrentState().getNextState(choice));
+        nextState.action().map(InstancedDialogueAction::action).ifPresent(actionRunner);
+        return nextState.type();
+    }
+
+    private void validateChoice(int choice) {
+        if (this.getCurrentState().choices().size() <= choice) {
+            throw new IllegalStateException("only choices 0 to %d available".formatted(this.getCurrentState().choices().size() - 1));
+        } else if (!this.isAvailable(choice)) {
+            throw new IllegalStateException("condition %s is not fulfilled".formatted(this.getCurrentState().choices().get(choice).condition()));
+        }
+    }
+
+    public DialogueState selectState(String state) {
+        if (!this.states.containsKey(state)) {
+            throw new IllegalArgumentException(state + " is not an available dialogue state");
+        }
+        this.currentStateKey = state;
+        DialogueState currentState = this.states.get(state);
+        this.availableChoices = rebuildAvailableChoices();
+        return currentState;
+    }
+
+    private ImmutableList<AvailableChoice> rebuildAvailableChoices() {
+        ImmutableList.Builder<AvailableChoice> newChoices = ImmutableList.builder();
+        List<DialogueState.Choice> availableChoices = this.getCurrentState().choices();
+        for (int i = 0; i < availableChoices.size(); i++) {
+            DialogueState.Choice c = availableChoices.get(i);
+            boolean available = conditionalChoices.getOrDefault(this.currentStateKey, Int2BooleanMaps.EMPTY_MAP).getOrDefault(i, true);
+            Optional<UnavailableAction> whenUnavailable = c.condition().map(DialogueChoiceCondition::whenUnavailable);
+            if (available || (whenUnavailable.filter(t -> t.display() == UnavailableDisplay.GRAYED_OUT).isPresent())) {
+                newChoices.add(new AvailableChoice(
+                        i,
+                        c.text(),
+                        whenUnavailable.filter(t -> !available).flatMap(a -> a.message().or(DialogueStateMachine::defaultLockedMessage))
+                ));
+            }
+        }
+        return newChoices.build();
+    }
+
+    private static Optional<Text> defaultLockedMessage() {
+        return Optional.of(Text.translatable("blabber:dialogue.locked_choice"));
+    }
+
+    public String getCurrentStateKey() {
+        return Objects.requireNonNull(this.currentStateKey, () -> this + " has not been initialized !");
+    }
+
+    public boolean isUnskippable() {
+        return this.unskippable;
+    }
+
+    @Override
+    public String toString() {
+        return "DialogueStateMachine" + this.states;
+    }
+}

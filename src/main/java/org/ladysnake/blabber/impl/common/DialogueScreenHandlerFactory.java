@@ -25,6 +25,7 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 
 public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory {
     private final DialogueStateMachine dialogue;
@@ -39,6 +40,7 @@ public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactor
     public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
         buf.writeIdentifier(this.dialogue.getId());
         buf.writeString(this.dialogue.getCurrentStateKey());
+        this.dialogue.createFullAvailabilityUpdatePacket().write(buf);
     }
 
     @Override

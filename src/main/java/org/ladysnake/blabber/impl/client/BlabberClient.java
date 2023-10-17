@@ -22,6 +22,9 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.network.PacketByteBuf;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
+import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
+import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
 
 import static io.netty.buffer.Unpooled.buffer;
 
@@ -29,6 +32,16 @@ public final class BlabberClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, BlabberDialogueScreen::new);
+        ClientPlayNetworking.registerGlobalReceiver(ChoiceAvailabilityPacket.TYPE, (packet, player, responseSender) -> {
+            if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
+                dialogueScreenHandler.handleAvailabilityUpdate(packet);
+            }
+        });
+        ClientPlayNetworking.registerGlobalReceiver(SelectedDialogueStatePacket.TYPE, (packet, player, responseSender) -> {
+            if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
+                dialogueScreenHandler.setCurrentState(packet.stateKey());
+            }
+        });
     }
 
     public static void sendDialogueActionMessage(int choice) {

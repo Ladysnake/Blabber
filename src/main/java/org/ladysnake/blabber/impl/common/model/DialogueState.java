@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common;
+package org.ladysnake.blabber.impl.common.model;
 
-import com.google.common.collect.ImmutableList;
-import com.google.gson.JsonElement;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.text.Text;
 import org.apache.commons.lang3.StringUtils;
+import org.ladysnake.blabber.impl.common.FailingOptionalFieldCodec;
+import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 
 import java.util.List;
 import java.util.Locale;
@@ -34,9 +34,7 @@ public record DialogueState(
     Optional<InstancedDialogueAction<?>> action,
     ChoiceResult type
 ) {
-    static Codec<DialogueState> codec(Codec<JsonElement> jsonCodec) {
-        Codec<Text> textCodec = jsonCodec.xmap(Text.Serializer::fromJson, Text.Serializer::toJsonTree);
-
+    static Codec<DialogueState> codec(Codec<Text> textCodec) {
         return RecordCodecBuilder.create(instance -> instance.group(
             // Kinda optional, but we still want errors if you got it wrong >:(
             FailingOptionalFieldCodec.of("text", textCodec, Text.empty()).forGetter(DialogueState::text),
@@ -46,13 +44,6 @@ public record DialogueState(
         ).apply(instance, DialogueState::new));
     }
 
-    public ImmutableList<Text> getAvailableChoices() {
-        ImmutableList.Builder<Text> builder = ImmutableList.builder();
-        for (Choice choice : this.choices) {
-            builder.add(choice.text());
-        }
-        return builder.build();
-    }
 
     public String getNextState(int choice) {
         return this.choices.get(choice).next();
@@ -68,11 +59,12 @@ public record DialogueState(
                 + '}';
     }
 
-    public record Choice(Text text, String next) {
+    public record Choice(Text text, String next, Optional<DialogueChoiceCondition> condition) {
         static Codec<Choice> codec(Codec<Text> textCodec) {
             return RecordCodecBuilder.create(instance -> instance.group(
                 textCodec.fieldOf("text").forGetter(Choice::text),
-                Codec.STRING.fieldOf("next").forGetter(Choice::next)
+                Codec.STRING.fieldOf("next").forGetter(Choice::next),
+                FailingOptionalFieldCodec.of("only_if", DialogueChoiceCondition.codec(textCodec)).forGetter(Choice::condition)
             ).apply(instance, Choice::new));
         }
 

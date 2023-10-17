@@ -15,8 +15,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common;
+/**
+ * Definitions of the dialogue system
+ */
+@FieldsAreNonnullByDefault
+@MethodsReturnNonnullByDefault
+@ApiStatus.Internal
+package org.ladysnake.blabber.impl.common.machine;
 
-public enum ChoiceResult {
-    DEFAULT, END_DIALOGUE, ASK_CONFIRMATION
-}
+import net.minecraft.util.annotation.FieldsAreNonnullByDefault;
+import net.minecraft.util.annotation.MethodsReturnNonnullByDefault;
+import org.jetbrains.annotations.ApiStatus;

@@ -26,7 +26,7 @@ import net.fabricmc.fabric.api.event.registry.DynamicRegistrySetupCallback;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
-import org.ladysnake.blabber.impl.common.DialogueTemplate;
+import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 
 import java.io.InputStreamReader;
 import java.util.Objects;

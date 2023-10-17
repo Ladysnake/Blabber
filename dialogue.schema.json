@@ -44,6 +44,28 @@
                 "next": {
                   "description": "The id of the state to switch to when selecting this choice",
                   "type": "string"
+                },
+                "only_if": {
+                  "type": "object",
+                  "description": "Make this choice available only if a predicate is fulfilled",
+                  "properties": {
+                    "predicate": {
+                      "description": "The identifier of a datapack predicate",
+                      "type": "string"
+                    },
+                    "when_unavailable": {
+                      "type": "object",
+                      "properties": {
+                        "action": {
+                          "enum": ["gray_out", "hide"]
+                        },
+                        "message": {
+                          "description": "The message to display for why the choice is unavailable. Only applicable if the action is gray_out.",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }

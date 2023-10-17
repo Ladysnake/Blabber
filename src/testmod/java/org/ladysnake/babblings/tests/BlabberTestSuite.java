@@ -31,7 +31,7 @@ import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
-import org.ladysnake.blabber.impl.common.DialogueTemplate;
+import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.elmendorf.GameTestUtil;
 
 import java.io.InputStreamReader;
@@ -43,14 +43,14 @@ public final class BlabberTestSuite implements FabricGameTest {
     public void nominal(TestContext ctx) {
         ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
         Blabber.startDialogue(player, new Identifier("babblings:remnant_choice_builtin"));
-        GameTestUtil.assertTrue("startDialogue should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentChoices().size() == 3);
+        GameTestUtil.assertTrue("startDialogue should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentStateKey().equals("introduction") && handler.getAvailableChoices().size() == 3);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        GameTestUtil.assertTrue("choice 0 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 1);
+        GameTestUtil.assertTrue("choice 0 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 420);
-        GameTestUtil.assertTrue("choice 420 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 1);
+        GameTestUtil.assertTrue("choice 420 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        GameTestUtil.assertTrue("choice 1 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentChoices().size() == 2);
+        GameTestUtil.assertTrue("choice 1 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("interested") && handler.getAvailableChoices().size() == 2);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
         GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
@@ -80,6 +80,29 @@ public final class BlabberTestSuite implements FabricGameTest {
     public void validationFailsOnLoopingDialogue(TestContext ctx) {
         DataResult<Pair<DialogueTemplate, JsonElement>> result = DialogueTemplate.CODEC.decode(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(BlabberTestSuite.class.getResourceAsStream("/looping_dialogue.json"))), JsonElement.class));
         GameTestUtil.assertTrue("Dialogue validation should detect looping dialogues", result.error().filter(it -> it.message().equals("(Blabber) a does not have any path to the end of the dialogue")).isPresent());
+        ctx.complete();
+    }
+
+    @GameTest(templateName = EMPTY_STRUCTURE)
+    public void availableChoicesCanGetSelected(TestContext ctx) {
+        ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
+        Blabber.startDialogue(player, new Identifier("babblings:mountain_king"));
+        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
+        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
+        GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
+        ctx.complete();
+    }
+
+    @GameTest(templateName = EMPTY_STRUCTURE)
+    public void unavailableChoicesCannotGetSelected(TestContext ctx) {
+        ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
+        player.setHealth(10f);
+        Blabber.startDialogue(player, new Identifier("babblings:mountain_king"));
+        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
+        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
+        GameTestUtil.assertTrue("unavailable choice 0 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
+        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
+        GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
         ctx.complete();
     }
 }

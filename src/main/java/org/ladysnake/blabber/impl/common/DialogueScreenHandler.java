@@ -29,6 +29,10 @@ import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.client.BlabberClient;
+import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
+import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
+import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 public class DialogueScreenHandler extends ScreenHandler {
     private final DialogueStateMachine dialogue;
@@ -50,8 +54,16 @@ public class DialogueScreenHandler extends ScreenHandler {
         return this.dialogue.getCurrentText();
     }
 
-    public ImmutableList<Text> getCurrentChoices() {
-        return this.dialogue.getCurrentChoices();
+    public ImmutableList<AvailableChoice> getAvailableChoices() {
+        return this.dialogue.getAvailableChoices();
+    }
+
+    public String getCurrentStateKey() {
+        return this.dialogue.getCurrentStateKey();
+    }
+
+    public void setCurrentState(String key) {
+        this.dialogue.selectState(key);
     }
 
     @Override
@@ -64,24 +76,29 @@ public class DialogueScreenHandler extends ScreenHandler {
         return true;
     }
 
-    @CheckEnv(Env.CLIENT)
-    public ChoiceResult makeChoice(int choice) {
-        if (this.getCurrentChoices().size() <= choice) {
-            throw new IllegalArgumentException("Only choices 0 to %d available but chose %d".formatted(this.getCurrentChoices().size() - 1, choice));
-        }
-        BlabberClient.sendDialogueActionMessage(choice);
-        return this.dialogue.choose(choice, action -> {});
+    public void handleAvailabilityUpdate(ChoiceAvailabilityPacket packet) {
+        this.dialogue.applyAvailabilityUpdate(packet);
     }
 
-    public void makeChoice(ServerPlayerEntity player, int choice) {
-        // Can't throw here, could cause trouble with a bad packet
-        if (this.getCurrentChoices().size() > choice) {
+    @CheckEnv(Env.CLIENT)
+    public ChoiceResult makeChoice(int choice) {
+        int originalChoiceIndex = this.getAvailableChoices().get(choice).originalChoiceIndex();
+        ChoiceResult result = this.dialogue.choose(originalChoiceIndex, action -> {});
+        BlabberClient.sendDialogueActionMessage(originalChoiceIndex);
+        return result;
+    }
+
+    public boolean makeChoice(ServerPlayerEntity player, int choice) {
+        try {  // Can't throw here, could cause trouble with a bad packet
             ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player));
             if (result == ChoiceResult.END_DIALOGUE) {
                 PlayerDialogueTracker.get(player).endDialogue();
             }
-        } else {
-            Blabber.LOGGER.error("{} had only choices 0 to {} available but chose {}", player.getEntityName(), this.getCurrentChoices().size() - 1, choice);
+
+            return true;
+        } catch (IllegalStateException e) {
+            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getEntityName(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
+            return false;
         }
     }
 }

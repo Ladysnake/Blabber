@@ -21,7 +21,12 @@ import com.google.common.base.Preconditions;
 import dev.onyxstudios.cca.api.v3.component.ComponentKey;
 import dev.onyxstudios.cca.api.v3.component.ComponentRegistry;
 import dev.onyxstudios.cca.api.v3.component.tick.ServerTickingComponent;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.loot.context.LootContext;
+import net.minecraft.loot.context.LootContextParameterSet;
+import net.minecraft.loot.context.LootContextParameters;
+import net.minecraft.loot.context.LootContextTypes;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -29,6 +34,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
+import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 import java.util.Optional;
 
@@ -53,6 +60,9 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
 
     private DialogueStateMachine startDialogue0(Identifier id) {
         this.currentDialogue = BlabberRegistrar.startDialogue(this.player.getWorld(), id);
+        if (this.player instanceof ServerPlayerEntity serverPlayer) {
+            updateConditions(serverPlayer, this.currentDialogue);
+        }
         return this.currentDialogue;
     }
 
@@ -95,13 +105,33 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
 
     @Override
     public void serverTick() {
-        if (this.currentDialogue != null && this.currentDialogue.isUnskippable() && this.player.currentScreenHandler == this.player.playerScreenHandler) {
-            this.openDialogueScreen();
+        if (this.currentDialogue != null) {
+            if (this.currentDialogue.isUnskippable() && this.player.currentScreenHandler == this.player.playerScreenHandler) {
+                this.openDialogueScreen();
+            }
+
+            ChoiceAvailabilityPacket update = this.updateConditions((ServerPlayerEntity) this.player, this.currentDialogue);
+
+            if (update != null) {
+                ServerPlayNetworking.send((ServerPlayerEntity) player, update);
+            }
         }
+    }
+
+    private @Nullable ChoiceAvailabilityPacket updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) {
+        if (currentDialogue.hasConditions()) {
+            return currentDialogue.updateConditions(new LootContext.Builder(
+                    new LootContextParameterSet.Builder(player.getServerWorld())
+                            .add(LootContextParameters.ORIGIN, player.getPos())
+                            .addOptional(LootContextParameters.THIS_ENTITY, player)
+                            .build(LootContextTypes.COMMAND)
+            ).build(Optional.empty()));
+        }
+        return null;
     }
 
     private void openDialogueScreen() {
         Preconditions.checkState(this.currentDialogue != null);
-        this.player.openHandledScreen(new DialogueScreenHandlerFactory(this.currentDialogue, Text.of("Requiem Dialogue Screen")));
+        this.player.openHandledScreen(new DialogueScreenHandlerFactory(this.currentDialogue, Text.of("Blabber Dialogue Screen")));
     }
 }

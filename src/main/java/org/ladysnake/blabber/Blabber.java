@@ -30,8 +30,8 @@ import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.BlabberCommand;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.CommandDialogueAction;
-import org.ladysnake.blabber.impl.common.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.PlayerDialogueTracker;
+import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 
 public final class Blabber implements ModInitializer {
 	public static final String MOD_ID = "blabber";

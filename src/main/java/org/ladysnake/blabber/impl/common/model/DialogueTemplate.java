@@ -15,18 +15,16 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common;
+package org.ladysnake.blabber.impl.common.model;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
-import com.mojang.serialization.Dynamic;
 import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.JsonOps;
 import com.mojang.serialization.Lifecycle;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.text.Text;
+import net.minecraft.util.dynamic.Codecs;
 import org.ladysnake.blabber.Blabber;
 
 import java.util.ArrayDeque;
@@ -48,17 +46,9 @@ public final class DialogueTemplate {
     // this was hell to debug and I hate mojang but here we are
     // so what does all this mean ? It means no using record instead of class lol (or having to break Record's contract)
 
-    private static final Gson GSON = new Gson();
+    public static final Codec<DialogueTemplate> NETWORK_CODEC = codec(Codecs.STRINGIFIED_TEXT);
 
-    public static final Codec<DialogueTemplate> NETWORK_CODEC = codec(Codec.STRING.xmap(
-            str -> GSON.fromJson(str, JsonElement.class),
-            GSON::toJson
-    ));
-
-    public static final Codec<DialogueTemplate> CODEC = codec(Codec.PASSTHROUGH.comapFlatMap(
-            dynamic -> DataResult.success(dynamic.convert(JsonOps.INSTANCE).getValue()),
-            json -> new Dynamic<>(JsonOps.INSTANCE, json)
-    ));
+    public static final Codec<DialogueTemplate> CODEC = codec(Codecs.TEXT);
 
     private final String start;
     private final boolean unskippable;
@@ -70,11 +60,11 @@ public final class DialogueTemplate {
         this.states = Map.copyOf(states);
     }
 
-    private static Codec<DialogueTemplate> codec(Codec<JsonElement> jsonCodec) {
+    private static Codec<DialogueTemplate> codec(Codec<Text> textCodec) {
         return RecordCodecBuilder.<DialogueTemplate>create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
-            Codec.unboundedMap(Codec.STRING, DialogueState.codec(jsonCodec)).fieldOf("states").forGetter(DialogueTemplate::states)
+            Codec.unboundedMap(Codec.STRING, DialogueState.codec(textCodec)).fieldOf("states").forGetter(DialogueTemplate::states)
         ).apply(instance, DialogueTemplate::new)).mapResult(new Codec.ResultFunction<>() {
             @Override
             public <T> DataResult<Pair<DialogueTemplate, T>> apply(DynamicOps<T> ops, T input, DataResult<Pair<DialogueTemplate, T>> a) {
