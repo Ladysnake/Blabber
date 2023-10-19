@@ -77,6 +77,12 @@ public final class BlabberTestSuite implements FabricGameTest {
     }
 
     @GameTest(templateName = EMPTY_STRUCTURE)
+    public void validationLogsConditionalDialogues(TestContext ctx) {
+        DialogueTemplate.CODEC.decode(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(BlabberTestSuite.class.getResourceAsStream("/conditional_dialogue.json"))), JsonElement.class));
+        ctx.complete();
+    }
+
+    @GameTest(templateName = EMPTY_STRUCTURE)
     public void validationFailsOnLoopingDialogue(TestContext ctx) {
         DataResult<Pair<DialogueTemplate, JsonElement>> result = DialogueTemplate.CODEC.decode(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(BlabberTestSuite.class.getResourceAsStream("/looping_dialogue.json"))), JsonElement.class));
         GameTestUtil.assertTrue("Dialogue validation should detect looping dialogues", result.error().filter(it -> it.message().equals("(Blabber) a does not have any path to the end of the dialogue")).isPresent());
@@ -101,7 +107,7 @@ public final class BlabberTestSuite implements FabricGameTest {
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
         GameTestUtil.assertTrue("unavailable choice 0 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
+        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 2);
         GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
         ctx.complete();
     }

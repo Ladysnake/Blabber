@@ -56,7 +56,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProvidersAccessor.blabber$register(Blabber.id("available_dialogues"), (context, builder) -> CommandSource.suggestIdentifiers(context.getSource().getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds(), builder));
 
     public static void init() {
-        BlabberDynamicMetaregistry.registerSynced(DIALOGUE_REGISTRY_KEY, DialogueTemplate.CODEC, DialogueTemplate.NETWORK_CODEC);
+        BlabberDynamicMetaregistry.registerSynced(DIALOGUE_REGISTRY_KEY, DialogueTemplate.CODEC, DialogueTemplate.CODEC);
         ServerPlayNetworking.registerGlobalReceiver(DIALOGUE_ACTION, (server, player, handler, buf, responseSender) -> {
             int choice = buf.readByte();
             server.execute(() -> {

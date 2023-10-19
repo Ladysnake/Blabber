@@ -20,8 +20,8 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.text.Text;
+import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
-import org.ladysnake.blabber.impl.common.FailingOptionalFieldCodec;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 
 import java.util.List;
@@ -29,20 +29,18 @@ import java.util.Locale;
 import java.util.Optional;
 
 public record DialogueState(
-    Text text,
-    List<Choice> choices,
-    Optional<InstancedDialogueAction<?>> action,
-    ChoiceResult type
+        Text text,
+        List<Choice> choices,
+        Optional<InstancedDialogueAction<?>> action,
+        ChoiceResult type
 ) {
-    static Codec<DialogueState> codec(Codec<Text> textCodec) {
-        return RecordCodecBuilder.create(instance -> instance.group(
+    public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             // Kinda optional, but we still want errors if you got it wrong >:(
-            FailingOptionalFieldCodec.of("text", textCodec, Text.empty()).forGetter(DialogueState::text),
-            FailingOptionalFieldCodec.of("choices", Codec.list(Choice.codec(textCodec)), List.of()).forGetter(DialogueState::choices),
-            FailingOptionalFieldCodec.of("action", InstancedDialogueAction.CODEC).forGetter(DialogueState::action),
-            FailingOptionalFieldCodec.of("type", Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), ChoiceResult.DEFAULT).forGetter(DialogueState::type)
-        ).apply(instance, DialogueState::new));
-    }
+            Codecs.createStrictOptionalFieldCodec(Codecs.TEXT, "text", Text.empty()).forGetter(DialogueState::text),
+            Codecs.createStrictOptionalFieldCodec(Codec.list(Choice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
+            Codecs.createStrictOptionalFieldCodec(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
+            Codecs.createStrictOptionalFieldCodec(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
+    ).apply(instance, DialogueState::new));
 
 
     public String getNextState(int choice) {
@@ -60,13 +58,11 @@ public record DialogueState(
     }
 
     public record Choice(Text text, String next, Optional<DialogueChoiceCondition> condition) {
-        static Codec<Choice> codec(Codec<Text> textCodec) {
-            return RecordCodecBuilder.create(instance -> instance.group(
-                textCodec.fieldOf("text").forGetter(Choice::text),
+        public static final Codec<Choice> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+                Codecs.TEXT.fieldOf("text").forGetter(Choice::text),
                 Codec.STRING.fieldOf("next").forGetter(Choice::next),
-                FailingOptionalFieldCodec.of("only_if", DialogueChoiceCondition.codec(textCodec)).forGetter(Choice::condition)
-            ).apply(instance, Choice::new));
-        }
+                Codecs.createStrictOptionalFieldCodec(DialogueChoiceCondition.CODEC, "only_if").forGetter(Choice::condition)
+        ).apply(instance, Choice::new));
 
         @Override
         public String toString() {
