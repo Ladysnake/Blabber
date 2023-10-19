@@ -25,17 +25,29 @@ import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.lwjgl.glfw.GLFW;
 
+import java.util.List;
+import java.util.stream.IntStream;
+
 public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> {
+    public static final List<Identifier> DIALOGUE_ARROWS = IntStream.range(1, 6).mapToObj(i -> Blabber.id("container/dialogue/dialogue_arrow_" + i)).toList();
+    public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("container/dialogue/dialogue_lock_" + i)).toList();
+
     public static final int MIN_RENDER_Y = 40;
     public static final int TITLE_GAP = 20;
-    public static final int CHOICE_GAP = 5;
+    public static final int CHOICE_GAP = 8;
     public static final int MAX_TEXT_WIDTH = 300;
+    public static final int CHOICE_LEFT_MARGIN = 25;
+    public static final int LOCKED_CHOICE_COLOR = 0x808080;
+    public static final int SELECTED_CHOICE_COLOR = 0xE0E044;
+    public static final int CHOICE_COLOR = 0xA0A0A0;
 
     private int selectedChoice;
     private boolean hoveringChoice;
@@ -97,7 +109,10 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
                     choices.get(1).text()
                 ));
             }
-            default -> this.selectedChoice = 0;
+            default -> {
+                this.selectedChoice = 0;
+                this.hoveringChoice = false;
+            }
         }
 
         return result;
@@ -132,7 +147,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             Text choice = choices.get(i).text();
             int strHeight = this.getTextBoundedHeight(choice, width);
             int strWidth = strHeight == 9 ? this.textRenderer.getWidth(choice) : width;
-            if (mouseX < strWidth && mouseY > y && mouseY < y + strHeight) {
+            if (mouseX < (CHOICE_LEFT_MARGIN + strWidth) && mouseY > y && mouseY < y + strHeight) {
                 this.selectedChoice = i;
                 this.hoveringChoice = true;
                 return;
@@ -163,9 +178,16 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             AvailableChoice choice = choices.get(i);
             int strHeight = this.getTextBoundedHeight(choice.text(), MAX_TEXT_WIDTH);
             boolean selected = i == this.selectedChoice;
-            context.drawTextWrapped(this.textRenderer, choice.text(), 10, y, MAX_TEXT_WIDTH, choice.unavailabilityMessage().isPresent() ? 0x808080 : selected ? 0xE0E044 : 0xA0A0A0);
-            if (selected && choice.unavailabilityMessage().isPresent()) {
-                context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : MAX_TEXT_WIDTH, this.hoveringChoice ? mouseY : y);
+            int choiceColor = choice.unavailabilityMessage().isPresent() ? LOCKED_CHOICE_COLOR : selected ? SELECTED_CHOICE_COLOR : CHOICE_COLOR;
+            context.drawTextWrapped(this.textRenderer, choice.text(), CHOICE_LEFT_MARGIN, y, MAX_TEXT_WIDTH, choiceColor);
+            if (selected) {
+                int choiceIconSize = 16;
+                if (choice.unavailabilityMessage().isPresent()) {
+                    context.drawGuiTexture(DIALOGUE_LOCKS.get(0), 4, y - 4, choiceIconSize, choiceIconSize);
+                    context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : MAX_TEXT_WIDTH, this.hoveringChoice ? mouseY : y);
+                } else {
+                    context.drawGuiTexture(DIALOGUE_ARROWS.get(0), 4, y - 4, choiceIconSize, choiceIconSize);
+                }
             }
             y += strHeight + CHOICE_GAP;
         }
