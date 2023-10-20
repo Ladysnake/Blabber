@@ -36,7 +36,7 @@ public final class Babblings implements ModInitializer {
     public void onInitialize() {
         DynamicRegistrySetupCallback.EVENT.register(registryView -> registryView.getOptional(BlabberRegistrar.DIALOGUE_REGISTRY_KEY).ifPresent(dialogueRegistry -> {
             Gson gson = new Gson();
-            JsonElement remnantChoice = gson.fromJson(new InputStreamReader(Objects.requireNonNull(Babblings.class.getResourceAsStream("/data/babblings/blabber_dialogues/remnant_choice.json"))), JsonObject.class);
+            JsonElement remnantChoice = gson.fromJson(new InputStreamReader(Objects.requireNonNull(Babblings.class.getResourceAsStream("/data/babblings/blabber/dialogues/remnant_choice.json"))), JsonObject.class);
             Registry.register(dialogueRegistry, new Identifier("babblings:remnant_choice_builtin"), DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, remnantChoice).result().orElseThrow());
         }));
     }

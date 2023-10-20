@@ -49,7 +49,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
         return new DialogueScreenHandler(syncId, dialogue);
     }));
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
-    public static final RegistryKey<Registry<DialogueTemplate>> DIALOGUE_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("blabber_dialogues"));
+    public static final RegistryKey<Registry<DialogueTemplate>> DIALOGUE_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogues"));
     public static final RegistryKey<Registry<Codec<? extends DialogueAction>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
     public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
