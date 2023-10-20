@@ -1,4 +1,24 @@
 ------------------------------------------------------
+Version 1.0.0
+------------------------------------------------------
+- Updated to MC 1.20.2
+- First version available on Modrinth
+
+**Additions**
+- _Conditional choices !_
+  - A dialogue choice can require an arbitrary condition in the form of a JSON predicate
+  - You can make it so that, when a choice is unavailable, it displays as either grayed out or hidden entirely
+  - Grayed out choices display a customizable explanation when hovered
+  - Conditions are refreshed every tick while a dialogue is active
+  - Blabber will warn you in the logs at initialization if a dialogue has a risk of leaving a player without choices
+- You can now see a little arrow icon next to the currently selected choice
+  - This icon gets replaced with a lock when the choice is unavailable
+- If despite all validation a player ends up on a dialogue screen with no choice available, they will now see an "escape hatch" choice suggesting they report the issue
+
+**Changes**
+- **BREAKING :** Dialogues are now loaded from `data/<namespace>/blabber/dialogues/` instead of `data/<namespace>/blabber_dialogues/`
+
+------------------------------------------------------
 Version 0.6.0
 ------------------------------------------------------
 Updated to MC 1.19.4
