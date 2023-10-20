@@ -29,6 +29,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.DialogueAction;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
@@ -46,6 +47,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Consumer;
+import java.util.stream.IntStream;
 
 public final class DialogueStateMachine {
 
@@ -165,6 +167,11 @@ public final class DialogueStateMachine {
      * @throws IllegalStateException if making an invalid choice
      */
     public ChoiceResult choose(int choice, Consumer<DialogueAction> actionRunner) {
+        if (choice == AvailableChoice.ESCAPE_HATCH.originalChoiceIndex() && IntStream.range(0, this.getCurrentState().choices().size()).noneMatch(this::isAvailable)) {
+            Blabber.LOGGER.warn("(Blabber) Escape hatch used on {}#{}", this.getId(), this.currentStateKey);
+            return ChoiceResult.END_DIALOGUE;
+        }
+
         this.validateChoice(choice);
         DialogueState nextState = this.selectState(this.getCurrentState().getNextState(choice));
         nextState.action().map(InstancedDialogueAction::action).ifPresent(actionRunner);
@@ -172,7 +179,7 @@ public final class DialogueStateMachine {
     }
 
     private void validateChoice(int choice) {
-        if (this.getCurrentState().choices().size() <= choice) {
+        if (choice < 0 || choice >= this.getCurrentState().choices().size()) {
             throw new IllegalStateException("only choices 0 to %d available".formatted(this.getCurrentState().choices().size() - 1));
         } else if (!this.isAvailable(choice)) {
             throw new IllegalStateException("condition %s is not fulfilled".formatted(this.getCurrentState().choices().get(choice).condition()));
@@ -192,10 +199,12 @@ public final class DialogueStateMachine {
     private ImmutableList<AvailableChoice> rebuildAvailableChoices() {
         ImmutableList.Builder<AvailableChoice> newChoices = ImmutableList.builder();
         List<DialogueState.Choice> availableChoices = this.getCurrentState().choices();
+        boolean allUnavailable = true;
         for (int i = 0; i < availableChoices.size(); i++) {
             DialogueState.Choice c = availableChoices.get(i);
             boolean available = conditionalChoices.getOrDefault(this.currentStateKey, Int2BooleanMaps.EMPTY_MAP).getOrDefault(i, true);
             Optional<UnavailableAction> whenUnavailable = c.condition().map(DialogueChoiceCondition::whenUnavailable);
+            allUnavailable &= !available;
             if (available || (whenUnavailable.filter(t -> t.display() == UnavailableDisplay.GRAYED_OUT).isPresent())) {
                 newChoices.add(new AvailableChoice(
                         i,
@@ -203,6 +212,9 @@ public final class DialogueStateMachine {
                         whenUnavailable.filter(t -> !available).flatMap(a -> a.message().or(DialogueStateMachine::defaultLockedMessage))
                 ));
             }
+        }
+        if (allUnavailable) {
+            newChoices.add(AvailableChoice.ESCAPE_HATCH);
         }
         return newChoices.build();
     }

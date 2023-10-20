@@ -5,7 +5,7 @@
       "choices": [
         {
           "text": "I want to challenge you!",
-          "next": "end"
+          "next": "challenge"
         },
         {
           "text": "I came here to demand a favour.",
@@ -17,6 +17,21 @@
       "text": "",
       "choices": [],
       "type": "end_dialogue"
+    },
+    "challenge": {
+      "text": "No.",
+      "choices": [
+        {
+          "text": "I have money.",
+          "next": "end",
+          "only_if": {
+            "predicate": "babblings:holding_emerald",
+            "when_unavailable": {
+              "display": "hidden"
+            }
+          }
+        }
+      ]
     },
     "bargain": {
       "text": "Tell me.",

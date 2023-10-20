@@ -89,15 +89,13 @@ public final class DialogueTemplate {
                         }
                     }
                 }
-            } else if (!state.equals(dialogue.start())) {
-                Blabber.LOGGER.warn("{} is unreachable", state);
-            }
+            }   // else, state is unreachable - we log that in the next part
         }
 
         for (var bad : unvalidated.entrySet()) {
             if (!Objects.equals(bad.getKey(), dialogue.start()) && !parents.containsKey(bad.getKey())) {
                 // Unreachable states do not cause infinite loops, but we still want to be aware of them
-                Blabber.LOGGER.warn("{} is unreachable", bad);
+                Blabber.LOGGER.warn("{} is unreachable", bad.getKey());
             } else if (bad.getValue() == Reachability.CONDITIONAL) {
                 Blabber.LOGGER.warn("(Blabber) {} only has conditional paths to the end of the dialogue", bad.getKey());
             } else {
