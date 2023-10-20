@@ -23,10 +23,12 @@ import com.mojang.serialization.Lifecycle;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
+import net.fabricmc.fabric.api.event.registry.DynamicRegistries;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.command.CommandSource;
+import net.minecraft.command.suggestion.SuggestionProviders;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -40,7 +42,6 @@ import org.ladysnake.blabber.DialogueAction;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
-import org.ladysnake.blabber.impl.mixin.SuggestionProvidersAccessor;
 
 public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, buf) -> {
@@ -53,10 +54,10 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
     ).buildAndRegister();
-    public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProvidersAccessor.blabber$register(Blabber.id("available_dialogues"), (context, builder) -> CommandSource.suggestIdentifiers(context.getSource().getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds(), builder));
+    public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(Blabber.id("available_dialogues"), (context, builder) -> CommandSource.suggestIdentifiers(context.getSource().getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds(), builder));
 
     public static void init() {
-        BlabberDynamicMetaregistry.registerSynced(DIALOGUE_REGISTRY_KEY, DialogueTemplate.CODEC, DialogueTemplate.CODEC);
+        DynamicRegistries.registerSynced(DIALOGUE_REGISTRY_KEY, DialogueTemplate.CODEC);
         ServerPlayNetworking.registerGlobalReceiver(DIALOGUE_ACTION, (server, player, handler, buf, responseSender) -> {
             int choice = buf.readByte();
             server.execute(() -> {

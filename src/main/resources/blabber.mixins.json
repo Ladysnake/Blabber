@@ -3,12 +3,7 @@
   "minVersion": "0.8",
   "package": "org.ladysnake.blabber.impl.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-    "SuggestionProvidersAccessor",
-    "dynamic.DynamicRegistrySyncAccessor",
-    "dynamic.DynamicRegistrySyncMixin",
-    "dynamic.RegistryLoaderMixin"
-  ],
+  "mixins": [],
   "injectors": {
     "defaultRequire": 1
   }
