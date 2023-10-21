@@ -16,7 +16,7 @@ repositories {
         name = "Ladysnake Mods"
         url = "https://maven.ladysnake.org/releases"
         content {
-            includeGroup 'org.ladysnake'
+            includeGroupByRegex '(org|io\\.github).ladysnake.*'
             includeGroupByRegex '(dev|io\\.github)\\.onyxstudios.*'
         }
     }
@@ -27,8 +27,7 @@ repositories {
 }
 
 dependencies {
-    modImplementation "org.ladysnake:blabber:${blabber_version}"
-    include "org.ladysnake:blabber:${blabber_version}"
+    modImplementation include("org.ladysnake:blabber:${blabber_version}")
     // Blabber dependencies
     include "me.lucko:fabric-permissions-api:${fpa_version}"
     include "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cca_version}"
@@ -40,7 +39,7 @@ You can then add the library version to your `gradle.properties`file:
 
 ```properties
 # Blabber
-blabber_version = 0.x.y
+blabber_version = 1.x.y
 # Fabric Permissions API
 fpa_version = 0.1-SNAPSHOT
 # Cardinal Components

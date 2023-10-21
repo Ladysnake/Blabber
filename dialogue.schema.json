@@ -21,11 +21,23 @@
         "properties": {
           "type": {
             "description": "The type of the current state",
-            "type": "string"
+            "type": "string",
+            "enum": ["default", "ask_confirmation", "end_dialogue"]
           },
           "action": {
             "description": "The action to run when arriving to this state",
-            "type": "string"
+            "type": "object",
+            "properties": {
+              "type": {
+                "description": "The type of action to run",
+                "type": "string",
+                "pattern": "^[a-z0-9_-]+:[a-z0-9/_-]+$"
+              },
+              "value": {
+                "description": "Optional value used to configure the action; depends on the type of action"
+              }
+            },
+            "required": ["type"]
           },
           "text": {
             "description": "The heading text to be displayed before the choices",
@@ -70,8 +82,10 @@
               }
             }
           }
-        }
+        },
+        "required": []
       }
     }
-  }
+  },
+  "required": [ "start_at", "states" ]
 }

@@ -17,6 +17,7 @@ Version 1.0.0
 
 **Changes**
 - **BREAKING :** Dialogues are now loaded from `data/<namespace>/blabber/dialogues/` instead of `data/<namespace>/blabber_dialogues/`
+- **BREAKING (for modders) :** The maven group and package are now `org.ladysnake` instead of `io.github.ladysnake`
 
 ------------------------------------------------------
 Version 0.6.0
