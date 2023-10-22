@@ -19,6 +19,9 @@ Version 1.0.0
 - **BREAKING :** Dialogues are now loaded from `data/<namespace>/blabber/dialogues/` instead of `data/<namespace>/blabber_dialogues/`
 - **BREAKING (for modders) :** The maven group and package are now `org.ladysnake` instead of `io.github.ladysnake`
 
+**Mod Interactions**
+- REI and EMI no longer appear on the dialogue screen
+
 ------------------------------------------------------
 Version 0.6.0
 ------------------------------------------------------
