@@ -42,7 +42,8 @@ dependencies {
 	modIncludeImplementation(libs.cca.base)
 	modIncludeImplementation(libs.cca.entity)
 	modIncludeImplementation(libs.permissionsApi)
-	modLocalImplementation(libs.rei)
+	modLocalImplementation(libs.rei.api)
+	modLocalImplementation(libs.emi)
 
 	compileOnly(libs.mcAnnotations)
 
