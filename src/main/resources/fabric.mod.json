@@ -26,6 +26,9 @@
     ],
     "cardinal-components": [
       "org.ladysnake.blabber.impl.common.BlabberRegistrar"
+    ],
+    "rei_client": [
+      "org.ladysnake.blabber.impl.compat.BlabberReiClientPlugin"
     ]
   },
   "mixins": [

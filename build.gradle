@@ -21,6 +21,13 @@ chenille {
 
 repositories {
 	chenille.repositories.allCommonRepositories()
+	maven {
+		url "https://maven.shedaniel.me"
+		content {
+			includeGroup("me.shedaniel")
+			includeGroup("dev.architectury")
+		}
+	}
 }
 
 dependencies {
@@ -35,6 +42,7 @@ dependencies {
 	modIncludeImplementation(libs.cca.base)
 	modIncludeImplementation(libs.cca.entity)
 	modIncludeImplementation(libs.permissionsApi)
+	modLocalImplementation(libs.rei)
 
 	compileOnly(libs.mcAnnotations)
 
