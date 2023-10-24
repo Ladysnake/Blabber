@@ -22,6 +22,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.text.Text;
 import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
+import org.ladysnake.blabber.impl.common.FailingOptionalFieldCodec;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 
 import java.util.List;
@@ -36,10 +37,10 @@ public record DialogueState(
 ) {
     public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             // Kinda optional, but we still want errors if you got it wrong >:(
-            Codecs.createStrictOptionalFieldCodec(Codecs.TEXT, "text", Text.empty()).forGetter(DialogueState::text),
-            Codecs.createStrictOptionalFieldCodec(Codec.list(Choice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
-            Codecs.createStrictOptionalFieldCodec(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
-            Codecs.createStrictOptionalFieldCodec(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
+            FailingOptionalFieldCodec.of(Codecs.TEXT, "text", Text.empty()).forGetter(DialogueState::text),
+            FailingOptionalFieldCodec.of(Codec.list(Choice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
+            FailingOptionalFieldCodec.of(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
+            FailingOptionalFieldCodec.of(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
     ).apply(instance, DialogueState::new));
 
 
@@ -61,7 +62,7 @@ public record DialogueState(
         public static final Codec<Choice> CODEC = RecordCodecBuilder.create(instance -> instance.group(
                 Codecs.TEXT.fieldOf("text").forGetter(Choice::text),
                 Codec.STRING.fieldOf("next").forGetter(Choice::next),
-                Codecs.createStrictOptionalFieldCodec(DialogueChoiceCondition.CODEC, "only_if").forGetter(Choice::condition)
+                FailingOptionalFieldCodec.of(DialogueChoiceCondition.CODEC, "only_if").forGetter(Choice::condition)
         ).apply(instance, Choice::new));
 
         @Override

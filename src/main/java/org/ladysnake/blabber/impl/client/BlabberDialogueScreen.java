@@ -37,8 +37,8 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> {
-    public static final List<Identifier> DIALOGUE_ARROWS = IntStream.range(1, 6).mapToObj(i -> Blabber.id("container/dialogue/dialogue_arrow_" + i)).toList();
-    public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("container/dialogue/dialogue_lock_" + i)).toList();
+    public static final List<Identifier> DIALOGUE_ARROWS = IntStream.range(1, 6).mapToObj(i -> Blabber.id("textures/gui/sprites/container/dialogue/dialogue_arrow_" + i + ".png")).toList();
+    public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("textures/gui/sprites/container/dialogue/dialogue_lock_" + i + ".png")).toList();
 
     public static final int MIN_RENDER_Y = 40;
     public static final int TITLE_GAP = 20;
@@ -126,7 +126,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     }
 
     @Override
-    public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
+    public boolean mouseScrolled(double mouseX, double mouseY, double verticalAmount) {
         this.scrollDialogueChoice(verticalAmount);
         return true;
     }
@@ -163,7 +163,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float tickDelta) {
-        super.render(context, mouseX, mouseY, tickDelta);
+        this.renderBackground(context);
 
         assert client != null;
 
@@ -183,16 +183,18 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             if (selected) {
                 int choiceIconSize = 16;
                 if (choice.unavailabilityMessage().isPresent()) {
-                    context.drawGuiTexture(DIALOGUE_LOCKS.get(0), 4, y - 4, choiceIconSize, choiceIconSize);
+                    context.drawTexture(DIALOGUE_LOCKS.get(0), 4, y - 4, 0, 0, choiceIconSize, choiceIconSize, choiceIconSize, choiceIconSize);
                     context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : MAX_TEXT_WIDTH, this.hoveringChoice ? mouseY : y);
                 } else {
-                    context.drawGuiTexture(DIALOGUE_ARROWS.get(0), 4, y - 4, choiceIconSize, choiceIconSize);
+                    context.drawTexture(DIALOGUE_ARROWS.get(0), 4, y - 4, 0, 0, choiceIconSize, choiceIconSize, choiceIconSize, choiceIconSize);
                 }
             }
             y += strHeight + CHOICE_GAP;
         }
 
         context.drawText(this.textRenderer, instructions, (this.width - this.textRenderer.getWidth(instructions)) / 2, this.height - 30, 0x808080, false);
+
+        super.render(context, mouseX, mouseY, tickDelta);
     }
 
     @Override

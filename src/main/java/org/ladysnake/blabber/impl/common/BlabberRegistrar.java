@@ -63,7 +63,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
             server.execute(() -> {
                 if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueHandler) {
                     if (!dialogueHandler.makeChoice(player, choice)) {
-                        responseSender.sendPacket(new SelectedDialogueStatePacket(dialogueHandler.getCurrentStateKey()));
+                        ServerPlayNetworking.send(player, new SelectedDialogueStatePacket(dialogueHandler.getCurrentStateKey()));
                     }
                 }
             });

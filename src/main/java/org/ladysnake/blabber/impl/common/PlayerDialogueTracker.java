@@ -125,7 +125,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
                             .add(LootContextParameters.ORIGIN, player.getPos())
                             .addOptional(LootContextParameters.THIS_ENTITY, player)
                             .build(LootContextTypes.COMMAND)
-            ).build(Optional.empty()));
+            ).build(null));
         }
         return null;
     }
