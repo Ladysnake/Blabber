@@ -21,6 +21,7 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
         with:
+          depth: 0
           filter: tree:0
       - name: validate gradle wrapper
         uses: gradle/wrapper-validation-action@v1
