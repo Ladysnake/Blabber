@@ -1,8 +1,7 @@
 ------------------------------------------------------
-Version 1.0.0
+Version 1.0.0-mc1.20.1
 ------------------------------------------------------
-- Updated to MC 1.20.2
-- First version available on Modrinth
+- Updated to MC 1.20.1
 
 **Additions**
 - _Conditional choices !_
