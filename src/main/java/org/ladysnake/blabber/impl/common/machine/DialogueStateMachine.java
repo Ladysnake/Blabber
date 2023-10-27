@@ -35,6 +35,7 @@ import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.DialogueChoiceCondition;
+import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.model.DialogueState;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.model.UnavailableAction;
@@ -53,6 +54,7 @@ public final class DialogueStateMachine {
 
     private final Map<String, DialogueState> states;
     private final Identifier id;
+    private final DialogueLayout layout;
     private final boolean unskippable;
     private final Map<String, Int2BooleanMap> conditionalChoices;
     private @Nullable String currentStateKey;
@@ -63,6 +65,7 @@ public final class DialogueStateMachine {
     }
 
     private DialogueStateMachine(DialogueTemplate template, Identifier id, String start) {
+        this.layout = template.layout();
         this.states = template.states();
         this.id = id;
         this.unskippable = template.unskippable();
@@ -105,6 +108,10 @@ public final class DialogueStateMachine {
 
     public Identifier getId() {
         return this.id;
+    }
+
+    public DialogueLayout getLayout() {
+        return this.layout;
     }
 
     public Text getCurrentText() {

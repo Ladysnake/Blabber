@@ -19,7 +19,7 @@ package org.ladysnake.blabber.impl.mixin.compat.emi;
 
 import dev.emi.emi.screen.EmiScreenManager;
 import net.minecraft.client.MinecraftClient;
-import org.ladysnake.blabber.impl.client.BlabberDialogueScreen;
+import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
