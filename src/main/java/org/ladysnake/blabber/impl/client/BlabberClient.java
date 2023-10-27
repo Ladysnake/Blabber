@@ -20,7 +20,9 @@ package org.ladysnake.blabber.impl.client;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
+import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.text.Text;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
@@ -29,9 +31,11 @@ import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
 import static io.netty.buffer.Unpooled.buffer;
 
 public final class BlabberClient implements ClientModInitializer {
+    private static final boolean ENABLE_RPG_SCREEN = false;
+
     @Override
     public void onInitializeClient() {
-        HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, BlabberDialogueScreen::new);
+        HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, BlabberClient::getBlabberRpgDialogueScreen);
         ClientPlayNetworking.registerGlobalReceiver(ChoiceAvailabilityPacket.TYPE, (packet, player, responseSender) -> {
             if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
                 dialogueScreenHandler.handleAvailabilityUpdate(packet);
@@ -42,6 +46,13 @@ public final class BlabberClient implements ClientModInitializer {
                 dialogueScreenHandler.setCurrentState(packet.stateKey());
             }
         });
+    }
+
+    private static BlabberDialogueScreen getBlabberRpgDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
+        if (ENABLE_RPG_SCREEN) {
+            return new BlabberRpgDialogueScreen(handler, inventory, title);
+        }
+        return new BlabberDialogueScreen(handler, inventory, title);
     }
 
     public static void sendDialogueActionMessage(int choice) {
