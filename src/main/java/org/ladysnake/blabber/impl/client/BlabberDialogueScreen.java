@@ -205,7 +205,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     }
 
     protected boolean shouldSelectChoice(double mouseX, double mouseY, int choiceY, int choiceHeight, int choiceWidth) {
-        return mouseX < (choiceListMinX + choiceWidth) && mouseY > choiceY && mouseY < choiceY + choiceHeight;
+        return mouseX >= 0 && mouseX < (choiceListMinX + choiceWidth) && mouseY > choiceY && mouseY < choiceY + choiceHeight;
     }
 
     @Override

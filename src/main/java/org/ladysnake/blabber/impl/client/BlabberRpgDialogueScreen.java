@@ -60,7 +60,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
 
     @Override
     protected boolean shouldSelectChoice(double mouseX, double mouseY, int choiceY, int choiceHeight, int choiceWidth) {
-        return mouseX > choiceListMinX - 4 && mouseY > choiceY && mouseY < choiceY + choiceHeight;
+        return mouseX > choiceListMinX - 4 && mouseX <= width && mouseY > choiceY && mouseY < choiceY + choiceHeight;
     }
 
     @Override
@@ -72,7 +72,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
             AvailableChoice choice = availableChoices.get(i);
             int strHeight = this.textRenderer.getWrappedLinesHeight(choice.text(), choiceListMaxWidth);
             fillHorizontalGradient(context, this.choiceListMinX - 2, y, this.width, y + strHeight, 0xc0101010, 0x80101010);
-            if (i == selectedChoice) selectionIconMarginTop = ((strHeight - 9) / 2) - 4;
+            if (i == selectedChoice) this.selectionIconMarginTop = ((strHeight - 9) / 2) - 4;
             y += strHeight + choiceGap;
         }
         // Bottom background
