@@ -30,7 +30,7 @@ import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 
 public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
-    public static final int INSTRUCTIONS_BOTTOM_MARGIN = 15;
+    public static final int INSTRUCTIONS_BOTTOM_MARGIN = 6;
     protected int choiceListMaxY;
 
     public BlabberRpgDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
@@ -47,7 +47,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
         super.computeMargins();
         this.choiceListMaxWidth = 150;
         this.mainTextMaxWidth = 400;
-        this.instructionsMinY = this.height - INSTRUCTIONS_BOTTOM_MARGIN;
+        this.instructionsMinY = this.height - INSTRUCTIONS_BOTTOM_MARGIN - this.textRenderer.getWrappedLinesHeight(instructions, this.width - 5);
         this.mainTextMinY = this.height - 60;
         this.mainTextMinX = (this.width / 2) - (Math.min(textRenderer.getWidth(handler.getCurrentText()), mainTextMaxWidth) / 2);
         this.choiceListMaxY = mainTextMinY - 25;

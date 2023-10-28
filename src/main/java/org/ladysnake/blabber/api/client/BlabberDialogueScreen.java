@@ -240,7 +240,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             y += strHeight + choiceGap;
         }
 
-        context.drawText(this.textRenderer, instructions, (this.width - this.textRenderer.getWidth(instructions)) / 2, instructionsMinY, 0x808080, false);
+        context.drawTextWrapped(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0x808080);
     }
 
     @Override
