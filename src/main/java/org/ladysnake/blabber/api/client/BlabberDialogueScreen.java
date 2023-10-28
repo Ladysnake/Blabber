@@ -26,6 +26,7 @@ import net.minecraft.client.option.GameOptions;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.MathHelper;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
@@ -177,11 +178,11 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
 
     @Override
     public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
-        this.scrollDialogueChoice(verticalAmount);
+        this.scrollDialogueChoice(MathHelper.clamp(verticalAmount, -1.0, 1.0));
         return true;
     }
 
-    private void scrollDialogueChoice(double scrollAmount) {
+    protected void scrollDialogueChoice(double scrollAmount) {
         ImmutableList<AvailableChoice> availableChoices = this.handler.getAvailableChoices();
         if (!availableChoices.isEmpty()) {
             this.selectedChoice = Math.floorMod((int) (this.selectedChoice - scrollAmount), availableChoices.size());
