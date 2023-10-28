@@ -44,7 +44,8 @@ public final class DialogueTemplate {
     public static final Codec<DialogueTemplate> CODEC = Codecs.validate(RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
-            Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states)
+            Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states),
+            DialogueLayout.CODEC.optionalFieldOf("layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
     ).apply(instance, DialogueTemplate::new)), DialogueTemplate::validateStructure);
 
     private static DataResult<DialogueTemplate> validateStructure(DialogueTemplate dialogue) {
@@ -109,11 +110,13 @@ public final class DialogueTemplate {
     private final String start;
     private final boolean unskippable;
     private final Map<String, DialogueState> states;
+    private final DialogueLayout layout;
 
-    private DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states) {
+    private DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, DialogueLayout layout) {
         this.start = start;
         this.unskippable = unskippable;
         this.states = Map.copyOf(states);
+        this.layout = layout;
     }
 
     public boolean unskippable() {
@@ -126,6 +129,10 @@ public final class DialogueTemplate {
 
     public Map<String, DialogueState> states() {
         return states;
+    }
+
+    public DialogueLayout layout() {
+        return this.layout;
     }
 
     @Override

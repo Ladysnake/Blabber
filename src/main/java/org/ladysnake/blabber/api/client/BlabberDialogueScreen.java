@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.client;
+package org.ladysnake.blabber.api.client;
 
 import com.google.common.collect.ImmutableList;
 import net.minecraft.client.MinecraftClient;
@@ -26,6 +26,7 @@ import net.minecraft.client.option.GameOptions;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
@@ -36,27 +37,75 @@ import org.lwjgl.glfw.GLFW;
 import java.util.List;
 import java.util.stream.IntStream;
 
+@ApiStatus.Experimental // half internal, expect some things to change
 public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> {
     public static final List<Identifier> DIALOGUE_ARROWS = IntStream.range(1, 6).mapToObj(i -> Blabber.id("container/dialogue/dialogue_arrow_" + i)).toList();
     public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("container/dialogue/dialogue_lock_" + i)).toList();
+    public static final int DEFAULT_TITLE_GAP = 20;
+    public static final int DEFAULT_TEXT_MAX_WIDTH = 300;
+    public static final int DEFAULT_INSTRUCTIONS_BOTTOM_MARGIN = 30;
 
-    public static final int MIN_RENDER_Y = 40;
-    public static final int TITLE_GAP = 20;
-    public static final int CHOICE_GAP = 8;
-    public static final int MAX_TEXT_WIDTH = 300;
-    public static final int CHOICE_LEFT_MARGIN = 25;
-    public static final int LOCKED_CHOICE_COLOR = 0x808080;
-    public static final int SELECTED_CHOICE_COLOR = 0xE0E044;
-    public static final int CHOICE_COLOR = 0xA0A0A0;
+    protected final Text instructions;
 
-    private int selectedChoice;
-    private boolean hoveringChoice;
-    private final Text instructions;
+    // Things that could be constants but may be mutated by subclasses
+    protected Identifier selectionIconTexture = DIALOGUE_ARROWS.get(0);
+    protected Identifier lockIconTexture = DIALOGUE_LOCKS.get(0);
+    /**
+     * Margin from the top of the screen to the dialogue's main text
+     */
+    protected int mainTextMinY = 40;
+    /**
+     * Gap between each choice in the list
+     */
+    protected int choiceGap = 8;
+    protected int mainTextMinX = 10;
+    protected int instructionsMinY;
+    protected int mainTextMaxWidth = DEFAULT_TEXT_MAX_WIDTH;
+    /**
+     * Max width for the choice texts
+     */
+    protected int choiceListMaxWidth = DEFAULT_TEXT_MAX_WIDTH;
+    /**
+     * Margin from the left of the screen to the choice list (includes the space for the selection icon)
+     */
+    protected int choiceListMinX = 25;
+    /**
+     * Margin from the left of the screen to the choice selection icon
+     */
+    protected int selectionIconMinX = 4;
+    /**
+     * Vertical offset for the selection/lock icon, based on the individual choice's Y
+     */
+    protected int selectionIconMarginTop = -4;
+    protected int selectionIconSize = 16;
+    protected int mainTextColor = 0xFFFFFF;
+    protected int lockedChoiceColor = 0x808080;
+    protected int selectedChoiceColor = 0xE0E044;
+    protected int choiceColor = 0xA0A0A0;
+
+    // Things that are mutated during state changes
+    protected int choiceListMinY;
+
+    // Screen state
+    protected int selectedChoice;
+    protected boolean hoveringChoice;
 
     public BlabberDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
         GameOptions options = MinecraftClient.getInstance().options;
         this.instructions = Text.translatable("blabber:dialogue.instructions", options.forwardKey.getBoundKeyLocalizedText(), options.backKey.getBoundKeyLocalizedText(), options.inventoryKey.getBoundKeyLocalizedText());
+    }
+
+    @Override
+    protected void init() {
+        super.init();
+        this.computeMargins();
+    }
+
+    protected void computeMargins() {
+        this.instructionsMinY = this.height - DEFAULT_INSTRUCTIONS_BOTTOM_MARGIN;
+        Text text = this.handler.getCurrentText();
+        this.choiceListMinY = mainTextMinY + this.textRenderer.getWrappedLinesHeight(text, mainTextMaxWidth) + DEFAULT_TITLE_GAP;
     }
 
     @Override
@@ -112,6 +161,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             default -> {
                 this.selectedChoice = 0;
                 this.hoveringChoice = false;
+                this.computeMargins();
             }
         }
 
@@ -141,24 +191,23 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     @Override
     public void mouseMoved(double mouseX, double mouseY) {
         ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
-        Text title = this.handler.getCurrentText();
-        int y = MIN_RENDER_Y + this.getTextBoundedHeight(title, MAX_TEXT_WIDTH) + TITLE_GAP;
+        int y = this.choiceListMinY;
         for (int i = 0; i < choices.size(); i++) {
             Text choice = choices.get(i).text();
-            int strHeight = this.getTextBoundedHeight(choice, width);
-            int strWidth = strHeight == 9 ? this.textRenderer.getWidth(choice) : width;
-            if (mouseX < (CHOICE_LEFT_MARGIN + strWidth) && mouseY > y && mouseY < y + strHeight) {
+            int strHeight = this.textRenderer.getWrappedLinesHeight(choice, choiceListMaxWidth);
+            int strWidth = strHeight == 9 ? this.textRenderer.getWidth(choice) : choiceListMaxWidth;
+            if (this.shouldSelectChoice(mouseX, mouseY, y, strHeight, strWidth)) {
                 this.selectedChoice = i;
                 this.hoveringChoice = true;
                 return;
             }
-            y += strHeight + CHOICE_GAP;
+            y += strHeight + choiceGap;
             this.hoveringChoice = false;
         }
     }
 
-    private int getTextBoundedHeight(Text text, int maxWidth) {
-        return 9 * this.textRenderer.wrapLines(text, maxWidth).size();
+    protected boolean shouldSelectChoice(double mouseX, double mouseY, int choiceY, int choiceHeight, int choiceWidth) {
+        return mouseX >= 0 && mouseX < (choiceListMinX + choiceWidth) && mouseY > choiceY && mouseY < choiceY + choiceHeight;
     }
 
     @Override
@@ -167,32 +216,31 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
 
         assert client != null;
 
-        int y = MIN_RENDER_Y;
-        Text title = this.handler.getCurrentText();
+        int y = mainTextMinY;
+        Text mainText = this.handler.getCurrentText();
 
-        context.drawTextWrapped(this.textRenderer, title, 10, y, MAX_TEXT_WIDTH, 0xFFFFFF);
-        y += this.getTextBoundedHeight(title, MAX_TEXT_WIDTH) + TITLE_GAP;
+        context.drawTextWrapped(this.textRenderer, mainText, mainTextMinX, y, mainTextMaxWidth, mainTextColor);
+        y = this.choiceListMinY;
         ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
 
         for (int i = 0; i < choices.size(); i++) {
             AvailableChoice choice = choices.get(i);
-            int strHeight = this.getTextBoundedHeight(choice.text(), MAX_TEXT_WIDTH);
+            int strHeight = this.textRenderer.getWrappedLinesHeight(choice.text(), choiceListMaxWidth);
             boolean selected = i == this.selectedChoice;
-            int choiceColor = choice.unavailabilityMessage().isPresent() ? LOCKED_CHOICE_COLOR : selected ? SELECTED_CHOICE_COLOR : CHOICE_COLOR;
-            context.drawTextWrapped(this.textRenderer, choice.text(), CHOICE_LEFT_MARGIN, y, MAX_TEXT_WIDTH, choiceColor);
+            int choiceColor = choice.unavailabilityMessage().isPresent() ? lockedChoiceColor : selected ? selectedChoiceColor : this.choiceColor;
+            context.drawTextWrapped(this.textRenderer, choice.text(), choiceListMinX, y, choiceListMaxWidth, choiceColor);
             if (selected) {
-                int choiceIconSize = 16;
                 if (choice.unavailabilityMessage().isPresent()) {
-                    context.drawGuiTexture(DIALOGUE_LOCKS.get(0), 4, y - 4, choiceIconSize, choiceIconSize);
-                    context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : MAX_TEXT_WIDTH, this.hoveringChoice ? mouseY : y);
+                    context.drawGuiTexture(lockIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
+                    context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : choiceListMaxWidth, this.hoveringChoice ? mouseY : y);
                 } else {
-                    context.drawGuiTexture(DIALOGUE_ARROWS.get(0), 4, y - 4, choiceIconSize, choiceIconSize);
+                    context.drawGuiTexture(selectionIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
                 }
             }
-            y += strHeight + CHOICE_GAP;
+            y += strHeight + choiceGap;
         }
 
-        context.drawText(this.textRenderer, instructions, (this.width - this.textRenderer.getWidth(instructions)) / 2, this.height - 30, 0x808080, false);
+        context.drawText(this.textRenderer, instructions, (this.width - this.textRenderer.getWidth(instructions)) / 2, instructionsMinY, 0x808080, false);
     }
 
     @Override
