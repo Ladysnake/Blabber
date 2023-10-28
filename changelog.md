@@ -1,4 +1,17 @@
 ------------------------------------------------------
+Version 1.1.0
+------------------------------------------------------
+**Additions**
+- A new dialogue screen you can use : the RPG layout, ideal for dynamic NPC dialogues with short choices
+  - This new layout can be chosen on a per-dialogue basis - look at [the documentation](https://ladysnake.org/wiki/blabber#layout) for details
+
+**Changes**
+- Updated the French localization
+
+**Fixes**
+- Fixed scrolling in the dialogue screen behaving erratically
+
+------------------------------------------------------
 Version 1.0.0
 ------------------------------------------------------
 - Updated to MC 1.20.2
