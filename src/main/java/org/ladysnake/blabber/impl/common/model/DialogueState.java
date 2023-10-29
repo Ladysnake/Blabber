@@ -17,13 +17,19 @@
  */
 package org.ladysnake.blabber.impl.common.model;
 
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.entity.Entity;
+import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
+import net.minecraft.text.Texts;
 import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
+import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
@@ -47,6 +53,19 @@ public record DialogueState(
         return this.choices.get(choice).next();
     }
 
+    public DialogueState parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+        List<Choice> parsedChoices = new ArrayList<>();
+        for (Choice choice : choices()) {
+            parsedChoices.add(choice.parseText(source, sender));
+        }
+        return new DialogueState(
+                Texts.parse(source, text(), sender, 0),
+                parsedChoices,
+                action(),
+                type()
+        );
+    }
+
     @Override
     public String toString() {
         return "DialogueState{" +
@@ -63,6 +82,11 @@ public record DialogueState(
                 Codec.STRING.fieldOf("next").forGetter(Choice::next),
                 Codecs.createStrictOptionalFieldCodec(DialogueChoiceCondition.CODEC, "only_if").forGetter(Choice::condition)
         ).apply(instance, Choice::new));
+
+        public Choice parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+            Optional<DialogueChoiceCondition> parsedCondition = condition().isEmpty() ? Optional.empty() : Optional.of(condition().get().parseText(source, sender));
+            return new Choice(Texts.parse(source, text(), sender, 0), next(), parsedCondition);
+        }
 
         @Override
         public String toString() {

@@ -18,6 +18,7 @@
 package org.ladysnake.blabber.impl.common;
 
 import com.google.common.base.Preconditions;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import dev.onyxstudios.cca.api.v3.component.ComponentKey;
 import dev.onyxstudios.cca.api.v3.component.ComponentRegistry;
 import dev.onyxstudios.cca.api.v3.component.tick.ServerTickingComponent;
@@ -59,21 +60,28 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         return KEY.get(player);
     }
 
-    public void startDialogue(Identifier id) {
-        this.startDialogue(id, null);
+    public void startDialogue(Identifier id, @Nullable Entity interlocutor) throws CommandSyntaxException {
+        DialogueTemplate template = BlabberRegistrar.getDialogueTemplate(this.player.getWorld(), id)
+                .orElseThrow(() -> new IllegalArgumentException("Unknown dialogue " + id));
+        this.startDialogue0(
+                id,
+                template,
+                template.start(),
+                interlocutor
+        );
     }
 
-    public void startDialogue(Identifier id, @Nullable Entity interlocutor) {
-        DialogueTemplate template = BlabberRegistrar.getDialogueTemplate(this.player.getWorld(), id).orElseThrow(() -> new IllegalArgumentException("Unknown dialogue " + id));
-        this.startDialogue0(id, template, interlocutor);
-    }
-
-    private void startDialogue0(Identifier id, DialogueTemplate template, @Nullable Entity interlocutor) {
+    private void startDialogue0(Identifier id, DialogueTemplate template, @Nullable String start, @Nullable Entity interlocutor) throws CommandSyntaxException {
+        ServerPlayerEntity serverPlayer = ((ServerPlayerEntity) this.player);
         this.interlocutor = interlocutor;
-        this.currentDialogue = new DialogueStateMachine(template, id);
-        if (this.player instanceof ServerPlayerEntity serverPlayer) {
-            updateConditions(serverPlayer, this.currentDialogue);
+        try {
+            DialogueTemplate parsedTemplate = template.parseText(CommandDialogueAction.getSource(serverPlayer), serverPlayer);
+            this.currentDialogue = new DialogueStateMachine(parsedTemplate, id, start);
+            this.updateConditions(serverPlayer, this.currentDialogue);
             this.openDialogueScreen();
+        } catch (CommandSyntaxException e) {
+            this.interlocutor = null;
+            throw e;
         }
     }
 
@@ -123,16 +131,21 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     @Override
     public void serverTick() {
         DeserializedState saved = this.deserializedState;
+        ServerPlayerEntity serverPlayer = (ServerPlayerEntity) this.player;
         if (saved != null) {
             if (resumptionAttempts++ < 200) {   // only try for like, 10 seconds after joining the world
                 Entity interlocutor;
                 if (saved.interlocutorUuid() != null) {
-                    interlocutor = ((ServerPlayerEntity) this.player).getServerWorld().getEntity(saved.interlocutorUuid());
+                    interlocutor = serverPlayer.getServerWorld().getEntity(saved.interlocutorUuid());
                     if (interlocutor == null) return;    // no one to talk to
                 } else {
                     interlocutor = null;
                 }
-                this.startDialogue0(saved.dialogueId(), saved.template(), interlocutor);
+                try {
+                    this.startDialogue0(saved.dialogueId(), saved.template(), saved.selectedState(), interlocutor);
+                } catch (CommandSyntaxException e) {
+                    Blabber.LOGGER.error("(Blabber) Failed to load dialogue template " + saved.dialogueId(), e);
+                }
             }
             this.resumptionAttempts = 0;
             this.deserializedState = null;
@@ -148,10 +161,10 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
                 }
             }
 
-            ChoiceAvailabilityPacket update = this.updateConditions((ServerPlayerEntity) this.player, this.currentDialogue);
+            ChoiceAvailabilityPacket update = this.updateConditions(serverPlayer, this.currentDialogue);
 
             if (update != null) {
-                ServerPlayNetworking.send((ServerPlayerEntity) player, update);
+                ServerPlayNetworking.send(serverPlayer, update);
             }
         }
     }

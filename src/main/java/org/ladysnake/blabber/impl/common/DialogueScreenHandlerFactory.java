@@ -41,8 +41,7 @@ public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactor
 
     @Override
     public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
-        buf.writeIdentifier(this.dialogue.getId());
-        buf.writeString(this.dialogue.getCurrentStateKey());
+        this.dialogue.toPacket(buf);
         this.dialogue.createFullAvailabilityUpdatePacket().write(buf);
     }
 

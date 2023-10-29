@@ -41,13 +41,16 @@ import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.DialogueAction;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
 
 import java.util.Optional;
 
 public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, buf) -> {
-        DialogueStateMachine dialogue = DialogueStateMachine.fromPacket(inventory.player.getWorld(), buf);
+        DialogueStateMachine dialogue = DialogueStateMachine.fromPacket(buf);
+        ChoiceAvailabilityPacket choicesAvailability = new ChoiceAvailabilityPacket(buf);
+        dialogue.applyAvailabilityUpdate(choicesAvailability);
         return new DialogueScreenHandler(syncId, dialogue);
     }));
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
@@ -56,7 +59,10 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
     ).buildAndRegister();
-    public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(Blabber.id("available_dialogues"), (context, builder) -> CommandSource.suggestIdentifiers(context.getSource().getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds(), builder));
+    public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(
+            Blabber.id("available_dialogues"),
+            (context, builder) -> CommandSource.suggestIdentifiers(context.getSource().getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds(), builder)
+    );
 
     public static void init() {
         DynamicRegistries.registerSynced(DIALOGUE_REGISTRY_KEY, DialogueTemplate.CODEC);
@@ -70,13 +76,6 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
                 }
             });
         });
-    }
-
-    public static DialogueStateMachine startDialogue(World world, Identifier id) {
-        return new DialogueStateMachine(
-            getDialogueTemplate(world, id).orElseThrow(() -> new IllegalArgumentException("Unknown dialogue " + id)),
-            id
-        );
     }
 
     public static Optional<DialogueTemplate> getDialogueTemplate(World world, Identifier id) {

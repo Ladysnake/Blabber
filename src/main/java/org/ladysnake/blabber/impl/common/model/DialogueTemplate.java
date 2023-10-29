@@ -17,11 +17,15 @@
  */
 package org.ladysnake.blabber.impl.common.model;
 
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.Lifecycle;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.entity.Entity;
+import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.dynamic.Codecs;
+import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 
 import java.util.ArrayDeque;
@@ -133,6 +137,21 @@ public final class DialogueTemplate {
 
     public DialogueLayout layout() {
         return this.layout;
+    }
+
+    public DialogueTemplate parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+        Map<String, DialogueState> parsedStates = new HashMap<>();
+
+        for (Map.Entry<String, DialogueState> state : states().entrySet()) {
+            parsedStates.put(state.getKey(), state.getValue().parseText(source, sender));
+        }
+
+        return new DialogueTemplate(
+                start(),
+                unskippable(),
+                parsedStates,
+                layout()
+        );
     }
 
     @Override
