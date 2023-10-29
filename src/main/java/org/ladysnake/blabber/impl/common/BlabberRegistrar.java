@@ -17,14 +17,12 @@
  */
 package org.ladysnake.blabber.impl.common;
 
-import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.suggestion.SuggestionProvider;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.Lifecycle;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
-import net.fabricmc.fabric.api.event.registry.DynamicRegistries;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationNetworking;
@@ -66,23 +64,11 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     ).buildAndRegister();
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(
             Blabber.id("available_dialogues"),
-            (context, builder) -> CommandSource.suggestIdentifiers(getDialogueIds(context), builder)
+            (context, builder) -> CommandSource.suggestIdentifiers(DialogueRegistry.getIds(), builder)
     );
-    private static Set<Identifier> cachedDialogueIds = Set.of();
-
-    private static Set<Identifier> getDialogueIds(CommandContext<CommandSource> context) {
-        CommandSource contextSource = context.getSource();
-        return contextSource instanceof ServerCommandSource
-                ? contextSource.getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds()
-                : cachedDialogueIds;
-    }
-
-    public static void setCachedDialogueIds(Set<Identifier> dialogueIds) {
-        cachedDialogueIds = dialogueIds;
-    }
 
     public static void init() {
-        DynamicRegistries.register(DIALOGUE_REGISTRY_KEY, DialogueTemplate.CODEC);
+        DialogueLoader.init();
         ServerPlayNetworking.registerGlobalReceiver(DIALOGUE_ACTION, (server, player, handler, buf, responseSender) -> {
             int choice = buf.readByte();
             server.execute(() -> {
@@ -95,7 +81,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
         });
         ServerConfigurationConnectionEvents.CONFIGURE.register((handler, server) -> {
             if (ServerConfigurationNetworking.canSend(handler, DialogueListPacket.TYPE)) {
-                Set<Identifier> dialogueIds = server.getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getIds();
+                Set<Identifier> dialogueIds = DialogueRegistry.getIds();
                 ServerConfigurationNetworking.send(handler, new DialogueListPacket(dialogueIds));
             }
         });

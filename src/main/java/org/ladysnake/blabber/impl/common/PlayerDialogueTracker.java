@@ -61,7 +61,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     public void startDialogue(Identifier id, @Nullable Entity interlocutor) throws CommandSyntaxException {
-        DialogueTemplate template = BlabberRegistrar.getDialogueTemplate(this.player.getWorld(), id)
+        DialogueTemplate template = DialogueRegistry.getOrEmpty(id)
                 .orElseThrow(() -> new IllegalArgumentException("Unknown dialogue " + id));
         this.startDialogue0(
                 id,
@@ -100,6 +100,22 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
 
     public Optional<Entity> getInterlocutor() {
         return Optional.ofNullable(this.interlocutor);
+    }
+
+    public void updateDialogue() {
+        DialogueStateMachine oldDialogue = this.currentDialogue;
+        Entity oldInterlocutor = this.interlocutor;
+        if (oldDialogue != null) {
+            this.endDialogue();
+
+            DialogueRegistry.getOrEmpty(oldDialogue.getId())
+                    .ifPresent(template -> this.tryStartDialogue(
+                            oldDialogue.getId(),
+                            template,
+                            oldDialogue.getCurrentStateKey(),
+                            oldInterlocutor
+                    ));
+        }
     }
 
     @Override
@@ -141,11 +157,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
                 } else {
                     interlocutor = null;
                 }
-                try {
-                    this.startDialogue0(saved.dialogueId(), saved.template(), saved.selectedState(), interlocutor);
-                } catch (CommandSyntaxException e) {
-                    Blabber.LOGGER.error("(Blabber) Failed to load dialogue template " + saved.dialogueId(), e);
-                }
+                tryStartDialogue(saved.dialogueId(), saved.template(), saved.selectedState(), interlocutor);
             }
             this.resumptionAttempts = 0;
             this.deserializedState = null;
@@ -166,6 +178,14 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
             if (update != null) {
                 ServerPlayNetworking.send(serverPlayer, update);
             }
+        }
+    }
+
+    private void tryStartDialogue(Identifier id, DialogueTemplate template, String selectedState, Entity interlocutor) {
+        try {
+            this.startDialogue0(id, template, selectedState, interlocutor);
+        } catch (CommandSyntaxException e) {
+            Blabber.LOGGER.error("(Blabber) Failed to load dialogue template " + id, e);
         }
     }
 

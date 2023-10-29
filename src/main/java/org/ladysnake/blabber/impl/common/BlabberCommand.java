@@ -62,7 +62,7 @@ public final class BlabberCommand {
     }
 
     private static int startDialogue(ServerCommandSource source, Identifier dialogue, Collection<ServerPlayerEntity> players, @Nullable Entity interlocutor) throws CommandSyntaxException {
-        if (!source.getServer().getRegistryManager().get(BlabberRegistrar.DIALOGUE_REGISTRY_KEY).containsId(dialogue)) {
+        if (!DialogueRegistry.containsId(dialogue)) {
             throw INVALID_EXCEPTION.create(dialogue);
         }
 

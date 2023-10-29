@@ -34,17 +34,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public final class DialogueTemplate {
-    // SO
-    // Mojang just decided to use the identity hash strategy for SimpleRegistry#entryToRawId
-    // but not for anything else
-    // and the fastutil maps do not update a mapping if Objects.equals(oldValue, newValue)
-    // and dynamic registries use Registry#replace every time they are reloaded
-    // so with a proper equals and hashcode implementation, we end up with a stupid identity mismatch
-    // and this identity mismatch snowballs into an error if a third reload happens (which always happens with datapacks on)
-    // this was hell to debug and I hate mojang but here we are
-    // so what does all this mean ? It means no using record instead of class lol (or having to break Record's contract)
-
+public record DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, DialogueLayout layout) {
     public static final Codec<DialogueTemplate> CODEC = Codecs.validate(RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
@@ -109,34 +99,6 @@ public final class DialogueTemplate {
         }
 
         return DataResult.success(dialogue, Lifecycle.stable());
-    }
-
-    private final String start;
-    private final boolean unskippable;
-    private final Map<String, DialogueState> states;
-    private final DialogueLayout layout;
-
-    private DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, DialogueLayout layout) {
-        this.start = start;
-        this.unskippable = unskippable;
-        this.states = Map.copyOf(states);
-        this.layout = layout;
-    }
-
-    public boolean unskippable() {
-        return this.unskippable;
-    }
-
-    public String start() {
-        return start;
-    }
-
-    public Map<String, DialogueState> states() {
-        return states;
-    }
-
-    public DialogueLayout layout() {
-        return this.layout;
     }
 
     public DialogueTemplate parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
