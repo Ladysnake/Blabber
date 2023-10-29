@@ -20,6 +20,7 @@ package org.ladysnake.blabber;
 import com.mojang.serialization.Codec;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.Registry;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -53,6 +54,21 @@ public final class Blabber implements ModInitializer {
 	 */
 	public static void startDialogue(ServerPlayerEntity player, Identifier id) {
 		PlayerDialogueTracker.get(player).startDialogue(id);
+	}
+
+	/**
+	 * Starts a dialogue
+	 *
+	 * <p>This operation closes the player's {@linkplain  PlayerEntity#currentScreenHandler current screen handler},
+	 * if any, and opens a new dialogue screen instead.
+	 *
+	 * @param player the player for whom to initiate a dialogue
+	 * @param id the identifier for the dialogue
+	 * @param interlocutor the entity with which the player is conversing
+	 * @throws IllegalArgumentException if {@code id} is not a valid dialogue in this game instance
+	 */
+	public static void startDialogue(ServerPlayerEntity player, Identifier id, @Nullable Entity interlocutor) {
+		PlayerDialogueTracker.get(player).startDialogue(id, interlocutor);
 	}
 
 	/**

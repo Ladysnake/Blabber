@@ -43,6 +43,8 @@ import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
 
+import java.util.Optional;
+
 public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, buf) -> {
         DialogueStateMachine dialogue = DialogueStateMachine.fromPacket(inventory.player.getWorld(), buf);
@@ -72,10 +74,13 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
 
     public static DialogueStateMachine startDialogue(World world, Identifier id) {
         return new DialogueStateMachine(
-            world.getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getOrEmpty(id)
-                .orElseThrow(() -> new IllegalArgumentException("Unknown dialogue " + id)),
+            getDialogueTemplate(world, id).orElseThrow(() -> new IllegalArgumentException("Unknown dialogue " + id)),
             id
         );
+    }
+
+    public static Optional<DialogueTemplate> getDialogueTemplate(World world, Identifier id) {
+        return world.getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getOrEmpty(id);
     }
 
     @Override

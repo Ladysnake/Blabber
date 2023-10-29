@@ -18,6 +18,7 @@
 package org.ladysnake.blabber.impl.common;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.network.PacketByteBuf;
@@ -30,10 +31,12 @@ import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory {
     private final DialogueStateMachine dialogue;
     private final Text displayName;
+    private final @Nullable Entity speaker; // TODO make available on the client
 
-    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, Text displayName) {
+    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, Text displayName, @Nullable Entity speaker) {
         this.dialogue = dialogue;
         this.displayName = displayName;
+        this.speaker = speaker;
     }
 
     @Override
