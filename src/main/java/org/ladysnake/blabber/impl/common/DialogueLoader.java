@@ -35,6 +35,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.DialogueChoice;
 import org.ladysnake.blabber.impl.common.model.DialogueState;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 
@@ -99,7 +100,7 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
             } else {
                 unvalidated.put(state.getKey(), Reachability.NONE);
 
-                for (DialogueState.Choice choice : state.getValue().choices()) {
+                for (DialogueChoice choice : state.getValue().choices()) {
                     parents.computeIfAbsent(choice.next(), n -> new HashMap<>()).put(
                             state.getKey(),
                             choice.condition().isPresent() ? Reachability.CONDITIONAL : Reachability.PROVEN

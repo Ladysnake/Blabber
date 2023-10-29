@@ -21,6 +21,7 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 import net.minecraft.text.Texts;
@@ -34,6 +35,15 @@ public record UnavailableAction(UnavailableDisplay display, Optional<Text> messa
             UnavailableDisplay.CODEC.fieldOf("display").forGetter(UnavailableAction::display),
             Codecs.createStrictOptionalFieldCodec(Codecs.TEXT, "message").forGetter(UnavailableAction::message)
     ).apply(instance, UnavailableAction::new));
+
+    public UnavailableAction(PacketByteBuf buf) {
+        this(buf.readEnumConstant(UnavailableDisplay.class), buf.readOptional(PacketByteBuf::readText));
+    }
+
+    public static void writeToPacket(PacketByteBuf buf, UnavailableAction action) {
+        buf.writeEnumConstant(action.display());
+        buf.writeOptional(action.message(), PacketByteBuf::writeText);
+    }
 
     public UnavailableAction parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         Optional<Text> parsedMessage = message().isEmpty() ? Optional.empty() : Optional.of(Texts.parse(source, message().get(), sender, 0));

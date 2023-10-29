@@ -21,6 +21,7 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import org.jetbrains.annotations.Nullable;
 
@@ -34,6 +35,17 @@ public record DialogueTemplate(String start, boolean unskippable, Map<String, Di
             Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states),
             DialogueLayout.CODEC.optionalFieldOf("layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
     ).apply(instance, DialogueTemplate::new));
+
+    public static void writeToPacket(PacketByteBuf buf, DialogueTemplate dialogue) {
+        buf.writeString(dialogue.start());
+        buf.writeBoolean(dialogue.unskippable());
+        buf.writeMap(dialogue.states(), PacketByteBuf::writeString, DialogueState::writeToPacket);
+        DialogueLayout.writeToPacket(buf, dialogue.layout());
+    }
+
+    public DialogueTemplate(PacketByteBuf buf) {
+        this(buf.readString(), buf.readBoolean(), buf.readMap(PacketByteBuf::readString, DialogueState::new), new DialogueLayout(buf));
+    }
 
     public DialogueTemplate parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         Map<String, DialogueState> parsedStates = new HashMap<>();

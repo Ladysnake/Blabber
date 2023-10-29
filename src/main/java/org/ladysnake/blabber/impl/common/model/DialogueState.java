@@ -21,6 +21,7 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 import net.minecraft.text.Texts;
@@ -36,26 +37,36 @@ import java.util.Optional;
 
 public record DialogueState(
         Text text,
-        List<Choice> choices,
+        List<DialogueChoice> choices,
         Optional<InstancedDialogueAction<?>> action,
         ChoiceResult type
 ) {
     public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             // Kinda optional, but we still want errors if you got it wrong >:(
             Codecs.createStrictOptionalFieldCodec(Codecs.TEXT, "text", Text.empty()).forGetter(DialogueState::text),
-            Codecs.createStrictOptionalFieldCodec(Codec.list(Choice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
+            Codecs.createStrictOptionalFieldCodec(Codec.list(DialogueChoice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
             Codecs.createStrictOptionalFieldCodec(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
             Codecs.createStrictOptionalFieldCodec(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
     ).apply(instance, DialogueState::new));
 
+    public static void writeToPacket(PacketByteBuf buf, DialogueState state) {
+        buf.writeText(state.text());
+        buf.writeCollection(state.choices(), DialogueChoice::writeToPacket);
+        buf.writeEnumConstant(state.type());
+        // not writing the action, the client most likely does not need to know about it
+    }
+
+    public DialogueState(PacketByteBuf buf) {
+        this(buf.readText(), buf.readList(DialogueChoice::new), Optional.empty(), buf.readEnumConstant(ChoiceResult.class));
+    }
 
     public String getNextState(int choice) {
         return this.choices.get(choice).next();
     }
 
     public DialogueState parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
-        List<Choice> parsedChoices = new ArrayList<>();
-        for (Choice choice : choices()) {
+        List<DialogueChoice> parsedChoices = new ArrayList<>();
+        for (DialogueChoice choice : choices()) {
             parsedChoices.add(choice.parseText(source, sender));
         }
         return new DialogueState(
@@ -74,23 +85,5 @@ public record DialogueState(
                 ", type=" + type
                 + this.action().map(InstancedDialogueAction::toString).map(s -> ", action=" + s).orElse("")
                 + '}';
-    }
-
-    public record Choice(Text text, String next, Optional<DialogueChoiceCondition> condition) {
-        public static final Codec<Choice> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-                Codecs.TEXT.fieldOf("text").forGetter(Choice::text),
-                Codec.STRING.fieldOf("next").forGetter(Choice::next),
-                Codecs.createStrictOptionalFieldCodec(DialogueChoiceCondition.CODEC, "only_if").forGetter(Choice::condition)
-        ).apply(instance, Choice::new));
-
-        public Choice parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
-            Optional<DialogueChoiceCondition> parsedCondition = condition().isEmpty() ? Optional.empty() : Optional.of(condition().get().parseText(source, sender));
-            return new Choice(Texts.parse(source, text(), sender, 0), next(), parsedCondition);
-        }
-
-        @Override
-        public String toString() {
-            return "%s -> %s".formatted(StringUtils.abbreviate(this.text.getString(), 20), this.next);
-        }
     }
 }

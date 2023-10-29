@@ -32,6 +32,7 @@ import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.DialogueAction;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.DialogueChoice;
 import org.ladysnake.blabber.impl.common.model.DialogueChoiceCondition;
 import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.model.DialogueState;
@@ -66,10 +67,10 @@ public final class DialogueStateMachine {
     private static Map<String, Int2BooleanMap> gatherConditionalChoices(DialogueTemplate template) {
         Map<String, Int2BooleanMap> conditionalChoices = new HashMap<>();
         for (Map.Entry<String, DialogueState> entry : template.states().entrySet()) {
-            List<DialogueState.Choice> choices = entry.getValue().choices();
+            List<DialogueChoice> choices = entry.getValue().choices();
             Int2BooleanMap m = new Int2BooleanOpenHashMap();
             for (int i = 0; i < choices.size(); i++) {
-                DialogueState.Choice choice = choices.get(i);
+                DialogueChoice choice = choices.get(i);
                 if (choice.condition().isPresent()) {
                     m.put(i, false);
                 }
@@ -84,7 +85,7 @@ public final class DialogueStateMachine {
     public static DialogueStateMachine fromPacket(PacketByteBuf buf) {
         Identifier id = buf.readIdentifier();
         String currentState = buf.readString();
-        DialogueTemplate template = buf.decodeAsJson(DialogueTemplate.CODEC);
+        DialogueTemplate template = new DialogueTemplate(buf);
 
         return new DialogueStateMachine(
                 template,
@@ -96,7 +97,7 @@ public final class DialogueStateMachine {
     public void toPacket(PacketByteBuf buf) {
         buf.writeIdentifier(this.getId());
         buf.writeString(this.getCurrentStateKey());
-        buf.encodeAsJson(DialogueTemplate.CODEC, this.template);
+        DialogueTemplate.writeToPacket(buf, this.template);
     }
 
     private Map<String, DialogueState> getStates() {
@@ -130,7 +131,7 @@ public final class DialogueStateMachine {
     public @Nullable ChoiceAvailabilityPacket updateConditions(LootContext context) {
         ChoiceAvailabilityPacket ret = null;
         for (Map.Entry<String, Int2BooleanMap> conditionalState : this.conditionalChoices.entrySet()) {
-            List<DialogueState.Choice> availableChoices = getStates().get(conditionalState.getKey()).choices();
+            List<DialogueChoice> availableChoices = getStates().get(conditionalState.getKey()).choices();
             for (Int2BooleanMap.Entry conditionalChoice : conditionalState.getValue().int2BooleanEntrySet()) {
                 LootCondition condition = context.getWorld().getServer().getLootManager().getElement(
                         LootDataType.PREDICATES, availableChoices.get(conditionalChoice.getIntKey()).condition().orElseThrow().predicate()
@@ -206,10 +207,10 @@ public final class DialogueStateMachine {
 
     private ImmutableList<AvailableChoice> rebuildAvailableChoices() {
         ImmutableList.Builder<AvailableChoice> newChoices = ImmutableList.builder();
-        List<DialogueState.Choice> availableChoices = this.getCurrentState().choices();
+        List<DialogueChoice> availableChoices = this.getCurrentState().choices();
         boolean allUnavailable = true;
         for (int i = 0; i < availableChoices.size(); i++) {
-            DialogueState.Choice c = availableChoices.get(i);
+            DialogueChoice c = availableChoices.get(i);
             boolean available = conditionalChoices.getOrDefault(this.currentStateKey, Int2BooleanMaps.EMPTY_MAP).getOrDefault(i, true);
             Optional<UnavailableAction> whenUnavailable = c.condition().map(DialogueChoiceCondition::whenUnavailable);
             allUnavailable &= !available;
