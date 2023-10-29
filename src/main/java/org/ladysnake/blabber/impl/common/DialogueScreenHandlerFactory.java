@@ -28,20 +28,23 @@ import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 
+import java.util.Optional;
+
 public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory {
     private final DialogueStateMachine dialogue;
     private final Text displayName;
-    private final @Nullable Entity speaker; // TODO make available on the client
+    private final @Nullable Entity interlocutor;
 
-    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, Text displayName, @Nullable Entity speaker) {
+    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, Text displayName, @Nullable Entity interlocutor) {
         this.dialogue = dialogue;
         this.displayName = displayName;
-        this.speaker = speaker;
+        this.interlocutor = interlocutor;
     }
 
     @Override
     public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
-        this.dialogue.toPacket(buf);
+        DialogueStateMachine.writeToPacket(buf, this.dialogue);
+        buf.writeOptional(Optional.ofNullable(interlocutor), (b, e) -> b.writeVarInt(e.getId()));
         this.dialogue.createFullAvailabilityUpdatePacket().write(buf);
     }
 
@@ -53,6 +56,6 @@ public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactor
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
-        return new DialogueScreenHandler(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, this.dialogue);
+        return new DialogueScreenHandler(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, this.dialogue, this.interlocutor);
     }
 }

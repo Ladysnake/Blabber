@@ -76,7 +76,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         this.interlocutor = interlocutor;
         try {
             DialogueTemplate parsedTemplate = template.parseText(CommandDialogueAction.getSource(serverPlayer), serverPlayer);
-            this.currentDialogue = new DialogueStateMachine(parsedTemplate, id, start);
+            this.currentDialogue = new DialogueStateMachine(id, parsedTemplate, start);
             this.updateConditions(serverPlayer, this.currentDialogue);
             this.openDialogueScreen();
         } catch (CommandSyntaxException e) {

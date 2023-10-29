@@ -30,6 +30,8 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.command.CommandSource;
 import net.minecraft.command.suggestion.SuggestionProviders;
+import net.minecraft.entity.Entity;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -51,10 +53,11 @@ import java.util.Set;
 
 public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, buf) -> {
-        DialogueStateMachine dialogue = DialogueStateMachine.fromPacket(buf);
+        DialogueStateMachine dialogue = new DialogueStateMachine(buf);
+        Optional<Entity> interlocutor = buf.readOptional(PacketByteBuf::readVarInt).map(inventory.player.getWorld()::getEntityById);
         ChoiceAvailabilityPacket choicesAvailability = new ChoiceAvailabilityPacket(buf);
         dialogue.applyAvailabilityUpdate(choicesAvailability);
-        return new DialogueScreenHandler(syncId, dialogue);
+        return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
     }));
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
     public static final RegistryKey<Registry<DialogueTemplate>> DIALOGUE_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogues"));

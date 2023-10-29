@@ -57,7 +57,7 @@ public final class DialogueStateMachine {
     private @Nullable String currentStateKey;
     private ImmutableList<AvailableChoice> availableChoices = ImmutableList.of();
 
-    public DialogueStateMachine(DialogueTemplate template, Identifier id, @Nullable String start) {
+    public DialogueStateMachine(Identifier id, DialogueTemplate template, @Nullable String start) {
         this.template = template;
         this.id = id;
         this.conditionalChoices = gatherConditionalChoices(template);
@@ -82,22 +82,14 @@ public final class DialogueStateMachine {
         return conditionalChoices;
     }
 
-    public static DialogueStateMachine fromPacket(PacketByteBuf buf) {
-        Identifier id = buf.readIdentifier();
-        String currentState = buf.readString();
-        DialogueTemplate template = new DialogueTemplate(buf);
-
-        return new DialogueStateMachine(
-                template,
-                id,
-                currentState
-        );
+    public static void writeToPacket(PacketByteBuf buf, DialogueStateMachine dialogue) {
+        buf.writeIdentifier(dialogue.getId());
+        DialogueTemplate.writeToPacket(buf, dialogue.template);
+        buf.writeString(dialogue.getCurrentStateKey());
     }
 
-    public void toPacket(PacketByteBuf buf) {
-        buf.writeIdentifier(this.getId());
-        buf.writeString(this.getCurrentStateKey());
-        DialogueTemplate.writeToPacket(buf, this.template);
+    public DialogueStateMachine(PacketByteBuf buf) {
+        this(buf.readIdentifier(), new DialogueTemplate(buf), buf.readString());
     }
 
     private Map<String, DialogueState> getStates() {
