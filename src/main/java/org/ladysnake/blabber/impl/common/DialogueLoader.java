@@ -34,14 +34,19 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 import org.ladysnake.blabber.Blabber;
+import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.DialogueState;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.ArrayDeque;
 import java.util.Collection;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
@@ -66,7 +71,11 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
                 try (Reader in = new InputStreamReader(resource.getInputStream())) {
                     JsonObject jsonObject = GSON.fromJson(in, JsonObject.class);
                     Identifier id = new Identifier(location.getNamespace(), location.getPath().substring(BLABBER_DIALOGUES_PATH.length() + 1));
-                    data.put(id, DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, jsonObject).getOrThrow(false, message -> Blabber.LOGGER.error("(Blabber) Could not parse dialogue file from {}: {}", location, message)));
+                    DialogueTemplate dialogue = DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, jsonObject).getOrThrow(false, message -> Blabber.LOGGER.error("(Blabber) Could not parse dialogue file from {}: {}", location, message));
+
+                    if (validateStructure(id, dialogue)) {
+                        data.put(id, dialogue);
+                    }
                 } catch (IOException | JsonParseException e) {
                     Blabber.LOGGER.error("(Blabber) Could not read dialogue file from {}", location, e);
                     throw new IllegalStateException(e);
@@ -74,6 +83,67 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
             });
             return data;
         }, executor);
+    }
+
+    private static boolean validateStructure(Identifier id, DialogueTemplate dialogue) {
+        Map<String, Map<String, Reachability>> parents = new HashMap<>();
+        Deque<String> waitList = new ArrayDeque<>();
+        Map<String, Reachability> unvalidated = new HashMap<>();
+
+        for (Map.Entry<String, DialogueState> state : dialogue.states().entrySet()) {
+            if (state.getValue().type().equals(ChoiceResult.END_DIALOGUE)) {
+                waitList.add(state.getKey());
+            } else if (dialogue.states().get(state.getKey()).choices().isEmpty()) {
+                Blabber.LOGGER.error("(Blabber) {}#{} has no available choices but is not an end state", id, state.getKey());
+                return false;
+            } else {
+                unvalidated.put(state.getKey(), Reachability.NONE);
+
+                for (DialogueState.Choice choice : state.getValue().choices()) {
+                    parents.computeIfAbsent(choice.next(), n -> new HashMap<>()).put(
+                            state.getKey(),
+                            choice.condition().isPresent() ? Reachability.CONDITIONAL : Reachability.PROVEN
+                    );
+                }
+            }
+        }
+
+        while (!waitList.isEmpty()) {
+            String state = waitList.pop();
+            Map<String, Reachability> stateParents = parents.get(state);
+
+            if (stateParents != null) {
+                for (var parent : stateParents.entrySet()) {
+                    Reachability reachability = unvalidated.get(parent.getKey());
+
+                    if (reachability != null) { // leave it alone if it was already validated through another branch
+                        if (reachability == Reachability.NONE) {    // only check once
+                            waitList.add(parent.getKey());
+                        }
+
+                        switch (parent.getValue()) {
+                            case PROVEN -> unvalidated.remove(parent.getKey());
+                            case CONDITIONAL -> unvalidated.put(parent.getKey(), Reachability.CONDITIONAL);
+                            default -> throw new IllegalStateException("Unexpected parent-child reachability " + parent.getValue());
+                        }
+                    }
+                }
+            }   // else, state is unreachable - we log that in the next part
+        }
+
+        for (var bad : unvalidated.entrySet()) {
+            if (!Objects.equals(bad.getKey(), dialogue.start()) && !parents.containsKey(bad.getKey())) {
+                // Unreachable states do not cause infinite loops, but we still want to be aware of them
+                Blabber.LOGGER.warn("(Blabber) {}#{} is unreachable", id, bad.getKey());
+            } else if (bad.getValue() == Reachability.CONDITIONAL) {
+                Blabber.LOGGER.warn("(Blabber) {}#{} only has conditional paths to the end of the dialogue", id, bad.getKey());
+            } else {
+                Blabber.LOGGER.error("(Blabber) {}#{} does not have any path to the end of the dialogue", id, bad.getKey());
+                return false;
+            }
+        }
+
+        return true;
     }
 
     @Override
@@ -101,4 +171,10 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
     }
 
     private DialogueLoader() {}
+
+    private enum Reachability {
+        NONE,
+        CONDITIONAL,
+        PROVEN,
+    }
 }
