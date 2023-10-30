@@ -76,10 +76,11 @@ public final class BlabberTestSuite implements FabricGameTest {
         player.setHealth(10f);
         Blabber.startDialogue(player, new Identifier("babblings:mountain_king"));
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
+        GameTestUtil.assertTrue("dialogue should be at state bargain", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
         GameTestUtil.assertTrue("unavailable choice 0 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 2);
-        GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
+        GameTestUtil.assertTrue("dialogue should be at state friendship", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("friendship"));
         ctx.complete();
     }
 }
