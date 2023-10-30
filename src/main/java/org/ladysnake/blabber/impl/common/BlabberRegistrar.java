@@ -71,6 +71,8 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     );
 
     public static void init() {
+        Registry.register(Registries.LOOT_CONDITION_TYPE, Blabber.id("interlocutor_properties"), InterlocutorPropertiesLootCondition.TYPE);
+
         DialogueLoader.init();
         ServerPlayNetworking.registerGlobalReceiver(DIALOGUE_ACTION, (server, player, handler, buf, responseSender) -> {
             int choice = buf.readByte();
