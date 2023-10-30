@@ -85,6 +85,8 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
             if (ServerConfigurationNetworking.canSend(handler, DialogueListPacket.TYPE)) {
                 Set<Identifier> dialogueIds = DialogueRegistry.getIds();
                 ServerConfigurationNetworking.send(handler, new DialogueListPacket(dialogueIds));
+            } else {
+                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getDebugProfile().getName());
             }
         });
     }

@@ -33,6 +33,7 @@ import java.util.Set;
  3) codecs give terrible error messages,
  and 4) codecs are inefficient in networking,
  going back to old-time stuff seemed best.
+ (still using codecs to a degree, but validation is done separately now)
  */
 
 public final class DialogueRegistry {
