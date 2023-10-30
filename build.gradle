@@ -59,7 +59,7 @@ dependencies {
 test {
 	useJUnitPlatform()
 	maxHeapSize = '1G'
-	workingDir('run')
+	workingDir(project.layout.buildDirectory)
 	testLogging {
 		events("passed", "skipped", "failed")
 	}
