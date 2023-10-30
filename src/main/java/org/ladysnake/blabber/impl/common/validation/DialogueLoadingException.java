@@ -15,11 +15,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.babblings;
+package org.ladysnake.blabber.impl.common.validation;
 
-import net.fabricmc.api.ModInitializer;
+public class DialogueLoadingException extends RuntimeException {
+    public DialogueLoadingException(String message) {
+        super(message);
+    }
 
-public final class Babblings implements ModInitializer {
-    @Override
-    public void onInitialize() {}
+    public DialogueLoadingException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }

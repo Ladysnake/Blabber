@@ -39,11 +39,9 @@ import net.minecraft.registry.SimpleRegistry;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.DialogueAction;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
-import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 import org.ladysnake.blabber.impl.common.packets.DialogueListPacket;
 import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
@@ -60,7 +58,6 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
         return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
     }));
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
-    public static final RegistryKey<Registry<DialogueTemplate>> DIALOGUE_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogues"));
     public static final RegistryKey<Registry<Codec<? extends DialogueAction>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
     public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
@@ -90,10 +87,6 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
                 ServerConfigurationNetworking.send(handler, new DialogueListPacket(dialogueIds));
             }
         });
-    }
-
-    public static Optional<DialogueTemplate> getDialogueTemplate(World world, Identifier id) {
-        return world.getRegistryManager().get(DIALOGUE_REGISTRY_KEY).getOrEmpty(id);
     }
 
     @Override

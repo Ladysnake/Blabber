@@ -123,7 +123,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         if (tag.contains("current_dialogue_id", NbtElement.STRING_TYPE)) {
             Identifier dialogueId = Identifier.tryParse(tag.getString("current_dialogue_id"));
             if (dialogueId != null) {
-                Optional<DialogueTemplate> dialogueTemplate = BlabberRegistrar.getDialogueTemplate(this.player.getWorld(), dialogueId);
+                Optional<DialogueTemplate> dialogueTemplate = DialogueRegistry.getOrEmpty(dialogueId);
                 if (dialogueTemplate.isPresent()) {
                     UUID interlocutorUuid = tag.containsUuid("interlocutor") ? tag.getUuid("interlocutor") : null;
                     String selectedState = tag.contains("current_dialogue_state", NbtElement.STRING_TYPE) ? tag.getString("current_dialogue_state") : null;
