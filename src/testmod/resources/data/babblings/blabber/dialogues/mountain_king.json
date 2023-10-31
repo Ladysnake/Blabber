@@ -1,4 +1,7 @@
 {
+  "layout": {
+    "type": "blabber:rpg"
+  },
   "states": {
     "start": {
       "text": "It takes determination to ascend to the top of this world, mortal. What do you want?",
@@ -59,6 +62,19 @@
         },
         {
           "text": "I want a friend.",
+          "next": "friendship"
+        }
+      ]
+    },
+    "friendship": {
+      "text": [
+        {"text":"I am "},
+        {"selector":"@interlocutor"},
+        {"text":". Pleased to make your acquaintance..."}
+      ],
+      "choices": [
+        {
+          "text": [{"text":"My name is "},{"selector":"@s"}],
           "next": "end"
         }
       ]

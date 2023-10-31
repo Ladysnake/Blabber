@@ -17,12 +17,16 @@
  */
 package org.ladysnake.blabber;
 
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.Registry;
+import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -30,6 +34,7 @@ import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.BlabberCommand;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.CommandDialogueAction;
+import org.ladysnake.blabber.impl.common.DialogueInitializationException;
 import org.ladysnake.blabber.impl.common.PlayerDialogueTracker;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 
@@ -47,12 +52,39 @@ public final class Blabber implements ModInitializer {
 	 * <p>This operation closes the player's {@linkplain  PlayerEntity#currentScreenHandler current screen handler},
 	 * if any, and opens a new dialogue screen instead.
 	 *
+	 * <p>A dialogue may fail to start if it contains malformed texts as per {@link net.minecraft.text.Texts#parse(ServerCommandSource, Text, Entity, int)}.
+	 * In that case, this method will throw a {@link DialogueInitializationException}.
+	 *
 	 * @param player the player for whom to initiate a dialogue
 	 * @param id the identifier for the dialogue
 	 * @throws IllegalArgumentException if {@code id} is not a valid dialogue in this game instance
+	 * @throws DialogueInitializationException if the dialogue failed to initialize
 	 */
 	public static void startDialogue(ServerPlayerEntity player, Identifier id) {
-		PlayerDialogueTracker.get(player).startDialogue(id);
+		startDialogue(player, id, null);
+	}
+
+	/**
+	 * Starts a dialogue
+	 *
+	 * <p>This operation closes the player's {@linkplain  PlayerEntity#currentScreenHandler current screen handler},
+	 * if any, and opens a new dialogue screen instead.
+	 *
+	 * <p>A dialogue may fail to start if it contains malformed texts as per {@link net.minecraft.text.Texts#parse(ServerCommandSource, Text, Entity, int)}.
+	 * In that case, this method will throw a {@link DialogueInitializationException}.
+	 *
+	 * @param player the player for whom to initiate a dialogue
+	 * @param id the identifier for the dialogue
+	 * @param interlocutor the entity with which the player is conversing
+	 * @throws IllegalArgumentException if {@code id} is not a valid dialogue in this game instance
+	 * @throws DialogueInitializationException if the dialogue failed to initialize
+	 */
+	public static void startDialogue(ServerPlayerEntity player, Identifier id, @Nullable Entity interlocutor) {
+		try {
+			PlayerDialogueTracker.get(player).startDialogue(id, interlocutor);
+		} catch (CommandSyntaxException e) {
+			throw new DialogueInitializationException("Failed to parse texts in dialogue template " + id, e);
+		}
 	}
 
 	/**

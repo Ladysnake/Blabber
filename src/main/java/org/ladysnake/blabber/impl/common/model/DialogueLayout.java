@@ -19,6 +19,7 @@ package org.ladysnake.blabber.impl.common.model;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
 
@@ -30,4 +31,12 @@ public record DialogueLayout(Identifier type) {
     public static final Identifier CLASSIC_LAYOUT_ID = Blabber.id("classic");
     public static final Identifier RPG_LAYOUT_ID = Blabber.id("rpg");
     public static final DialogueLayout DEFAULT = new DialogueLayout(CLASSIC_LAYOUT_ID);
+
+    public static void writeToPacket(PacketByteBuf buf, DialogueLayout layout) {
+        buf.writeIdentifier(layout.type());
+    }
+
+    public DialogueLayout(PacketByteBuf buf) {
+        this(buf.readIdentifier());
+    }
 }

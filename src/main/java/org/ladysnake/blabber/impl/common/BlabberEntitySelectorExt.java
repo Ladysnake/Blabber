@@ -15,11 +15,8 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.babblings;
+package org.ladysnake.blabber.impl.common;
 
-import net.fabricmc.api.ModInitializer;
-
-public final class Babblings implements ModInitializer {
-    @Override
-    public void onInitialize() {}
+public interface BlabberEntitySelectorExt {
+    void blabber$setInterlocutorSelector(boolean selectInterlocutor);
 }

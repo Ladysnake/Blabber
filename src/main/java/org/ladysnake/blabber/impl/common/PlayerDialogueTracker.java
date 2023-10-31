@@ -18,10 +18,12 @@
 package org.ladysnake.blabber.impl.common;
 
 import com.google.common.base.Preconditions;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import dev.onyxstudios.cca.api.v3.component.ComponentKey;
 import dev.onyxstudios.cca.api.v3.component.ComponentRegistry;
 import dev.onyxstudios.cca.api.v3.component.tick.ServerTickingComponent;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.context.LootContextParameterSet;
@@ -35,15 +37,20 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
+import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 import java.util.Optional;
+import java.util.UUID;
 
 public final class PlayerDialogueTracker implements ServerTickingComponent {
     public static final ComponentKey<PlayerDialogueTracker> KEY = ComponentRegistry.getOrCreate(Blabber.id("dialogue_tracker"), PlayerDialogueTracker.class);
 
     private final PlayerEntity player;
     private @Nullable DialogueStateMachine currentDialogue;
+    private @Nullable Entity interlocutor;
+    private @Nullable DeserializedState deserializedState;
+    private int resumptionAttempts = 0;
 
     public PlayerDialogueTracker(PlayerEntity player) {
         this.player = player;
@@ -53,21 +60,34 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         return KEY.get(player);
     }
 
-    public void startDialogue(Identifier id) {
-        this.startDialogue0(id);
-        this.openDialogueScreen();
+    public void startDialogue(Identifier id, @Nullable Entity interlocutor) throws CommandSyntaxException {
+        DialogueTemplate template = DialogueRegistry.getOrEmpty(id)
+                .orElseThrow(() -> new IllegalArgumentException("Unknown dialogue " + id));
+        this.startDialogue0(
+                id,
+                template,
+                template.start(),
+                interlocutor
+        );
     }
 
-    private DialogueStateMachine startDialogue0(Identifier id) {
-        this.currentDialogue = BlabberRegistrar.startDialogue(this.player.getWorld(), id);
-        if (this.player instanceof ServerPlayerEntity serverPlayer) {
-            updateConditions(serverPlayer, this.currentDialogue);
+    private void startDialogue0(Identifier id, DialogueTemplate template, @Nullable String start, @Nullable Entity interlocutor) throws CommandSyntaxException {
+        ServerPlayerEntity serverPlayer = ((ServerPlayerEntity) this.player);
+        this.interlocutor = interlocutor;
+        try {
+            DialogueTemplate parsedTemplate = template.parseText(CommandDialogueAction.getSource(serverPlayer), serverPlayer);
+            this.currentDialogue = new DialogueStateMachine(id, parsedTemplate, start);
+            this.updateConditions(serverPlayer, this.currentDialogue);
+            this.openDialogueScreen();
+        } catch (CommandSyntaxException e) {
+            this.interlocutor = null;
+            throw e;
         }
-        return this.currentDialogue;
     }
 
     public void endDialogue() {
         this.currentDialogue = null;
+        this.interlocutor = null;
 
         if (this.player instanceof ServerPlayerEntity sp && this.player.currentScreenHandler instanceof DialogueScreenHandler) {
             sp.closeHandledScreen();
@@ -78,18 +98,36 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         return Optional.ofNullable(this.currentDialogue);
     }
 
+    public Optional<Entity> getInterlocutor() {
+        return Optional.ofNullable(this.interlocutor);
+    }
+
+    public void updateDialogue() {
+        DialogueStateMachine oldDialogue = this.currentDialogue;
+        Entity oldInterlocutor = this.interlocutor;
+        if (oldDialogue != null) {
+            this.endDialogue();
+
+            DialogueRegistry.getOrEmpty(oldDialogue.getId())
+                    .ifPresent(template -> this.tryStartDialogue(
+                            oldDialogue.getId(),
+                            template,
+                            oldDialogue.getCurrentStateKey(),
+                            oldInterlocutor
+                    ));
+        }
+    }
+
     @Override
     public void readFromNbt(NbtCompound tag) {
         if (tag.contains("current_dialogue_id", NbtElement.STRING_TYPE)) {
             Identifier dialogueId = Identifier.tryParse(tag.getString("current_dialogue_id"));
             if (dialogueId != null) {
-                try {
-                    DialogueStateMachine d = this.startDialogue0(dialogueId);
-                    if (tag.contains("current_dialogue_state", NbtElement.STRING_TYPE)) {
-                        d.selectState(tag.getString("current_dialogue_state"));
-                    }
-                } catch (IllegalArgumentException e) {
-                    Blabber.LOGGER.warn("[Blabber] Unknown dialogue {}", dialogueId);
+                Optional<DialogueTemplate> dialogueTemplate = DialogueRegistry.getOrEmpty(dialogueId);
+                if (dialogueTemplate.isPresent()) {
+                    UUID interlocutorUuid = tag.containsUuid("interlocutor") ? tag.getUuid("interlocutor") : null;
+                    String selectedState = tag.contains("current_dialogue_state", NbtElement.STRING_TYPE) ? tag.getString("current_dialogue_state") : null;
+                    this.deserializedState = new DeserializedState(dialogueId, dialogueTemplate.get(), selectedState, interlocutorUuid);
                 }
             }
         }
@@ -100,21 +138,54 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         if (this.currentDialogue != null) {
             tag.putString("current_dialogue_id", this.currentDialogue.getId().toString());
             tag.putString("current_dialogue_state", this.currentDialogue.getCurrentStateKey());
+            if (this.interlocutor != null) {
+                tag.putUuid("interlocutor", this.interlocutor.getUuid());
+            }
         }
     }
 
     @Override
     public void serverTick() {
+        DeserializedState saved = this.deserializedState;
+        ServerPlayerEntity serverPlayer = (ServerPlayerEntity) this.player;
+        if (saved != null) {
+            if (resumptionAttempts++ < 200) {   // only try for like, 10 seconds after joining the world
+                Entity interlocutor;
+                if (saved.interlocutorUuid() != null) {
+                    interlocutor = serverPlayer.getServerWorld().getEntity(saved.interlocutorUuid());
+                    if (interlocutor == null) return;    // no one to talk to
+                } else {
+                    interlocutor = null;
+                }
+                tryStartDialogue(saved.dialogueId(), saved.template(), saved.selectedState(), interlocutor);
+            }
+            this.resumptionAttempts = 0;
+            this.deserializedState = null;
+        }
+
         if (this.currentDialogue != null) {
-            if (this.currentDialogue.isUnskippable() && this.player.currentScreenHandler == this.player.playerScreenHandler) {
-                this.openDialogueScreen();
+            if (this.player.currentScreenHandler == this.player.playerScreenHandler) {
+                if (this.currentDialogue.isUnskippable()) {
+                    this.openDialogueScreen();
+                } else {
+                    this.endDialogue();
+                    return;
+                }
             }
 
-            ChoiceAvailabilityPacket update = this.updateConditions((ServerPlayerEntity) this.player, this.currentDialogue);
+            ChoiceAvailabilityPacket update = this.updateConditions(serverPlayer, this.currentDialogue);
 
             if (update != null) {
-                ServerPlayNetworking.send((ServerPlayerEntity) player, update);
+                ServerPlayNetworking.send(serverPlayer, update);
             }
+        }
+    }
+
+    private void tryStartDialogue(Identifier id, DialogueTemplate template, String selectedState, Entity interlocutor) {
+        try {
+            this.startDialogue0(id, template, selectedState, interlocutor);
+        } catch (CommandSyntaxException e) {
+            Blabber.LOGGER.error("(Blabber) Failed to load dialogue template " + id, e);
         }
     }
 
@@ -132,6 +203,8 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
 
     private void openDialogueScreen() {
         Preconditions.checkState(this.currentDialogue != null);
-        this.player.openHandledScreen(new DialogueScreenHandlerFactory(this.currentDialogue, Text.of("Blabber Dialogue Screen")));
+        this.player.openHandledScreen(new DialogueScreenHandlerFactory(this.currentDialogue, Text.of("Blabber Dialogue Screen"), this.interlocutor));
     }
+
+    private record DeserializedState(Identifier dialogueId, DialogueTemplate template, String selectedState, @Nullable UUID interlocutorUuid) { }
 }
