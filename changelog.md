@@ -1,4 +1,16 @@
 ------------------------------------------------------
+Version 1.2.0
+------------------------------------------------------
+**Additions**
+- Dialogues now support advanced text components, like entity selectors and scores
+- You can now specify an *interlocutor* when starting a dialogue
+- The interlocutor entity can be referred to in commands and texts using a new entity selector, `@interlocutor`
+- It can also be referred to using a new loot condition, `blabber:interlocutor_properties`
+
+**Changes**
+- Dialogues can now be reloaded using the `/reload` command
+
+------------------------------------------------------
 Version 1.1.0
 ------------------------------------------------------
 **Additions**
