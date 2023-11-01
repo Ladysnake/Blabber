@@ -103,7 +103,7 @@ public class DialogueScreenHandler extends ScreenHandler {
 
     public boolean makeChoice(ServerPlayerEntity player, int choice) {
         try {  // Can't throw here, could cause trouble with a bad packet
-            ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player));
+            ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player, this.interlocutor));
             if (result == ChoiceResult.END_DIALOGUE) {
                 PlayerDialogueTracker.get(player).endDialogue();
             }

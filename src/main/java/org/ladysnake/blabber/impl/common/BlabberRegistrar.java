@@ -40,7 +40,7 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
-import org.ladysnake.blabber.DialogueAction;
+import org.ladysnake.blabber.api.DialogueActionV2;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 import org.ladysnake.blabber.impl.common.packets.DialogueListPacket;
@@ -58,8 +58,8 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
         return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
     }));
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
-    public static final RegistryKey<Registry<Codec<? extends DialogueAction>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
-    public static final Registry<Codec<? extends DialogueAction>> ACTION_REGISTRY = FabricRegistryBuilder.from(
+    public static final RegistryKey<Registry<Codec<? extends DialogueActionV2>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
+    public static final Registry<Codec<? extends DialogueActionV2>> ACTION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
     ).buildAndRegister();
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(

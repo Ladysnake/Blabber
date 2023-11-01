@@ -15,29 +15,26 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber;
+package org.ladysnake.blabber.api;
 
+import com.mojang.serialization.Codec;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.api.DialogueActionV2;
 
 /**
- * @see DialogueActionV2
- * @see Blabber#registerAction(Identifier, DialogueAction)
+ * @see org.ladysnake.blabber.Blabber#registerAction(Identifier, DialogueActionV2)
+ * @see org.ladysnake.blabber.Blabber#registerAction(Identifier, Codec)
  */
 @FunctionalInterface
-public interface DialogueAction extends DialogueActionV2 {
+public interface DialogueActionV2 {
     /**
      * Handles a dialogue action triggered by the given player.
      *
      * @param player the player executing the action
+     * @param interlocutor the entity with which the player is conversing, if any
+     * @see org.ladysnake.blabber.Blabber#startDialogue(ServerPlayerEntity, Identifier, Entity)
      */
-    void handle(ServerPlayerEntity player);
-
-    @Override
-    default void handle(ServerPlayerEntity player, @Nullable Entity interlocutor) {
-        this.handle(player);
-    }
+    void handle(ServerPlayerEntity player, @Nullable Entity interlocutor);
 }
