@@ -24,6 +24,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
+import net.minecraft.text.TextCodecs;
 import net.minecraft.text.Texts;
 import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
@@ -33,7 +34,7 @@ import java.util.Optional;
 
 public record DialogueChoice(Text text, String next, Optional<DialogueChoiceCondition> condition) {
     public static final Codec<DialogueChoice> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codecs.TEXT.fieldOf("text").forGetter(DialogueChoice::text),
+            TextCodecs.CODEC.fieldOf("text").forGetter(DialogueChoice::text),
             Codec.STRING.fieldOf("next").forGetter(DialogueChoice::next),
             Codecs.createStrictOptionalFieldCodec(DialogueChoiceCondition.CODEC, "only_if").forGetter(DialogueChoice::condition)
     ).apply(instance, DialogueChoice::new));

@@ -24,6 +24,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
+import net.minecraft.text.TextCodecs;
 import net.minecraft.text.Texts;
 import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
@@ -43,7 +44,7 @@ public record DialogueState(
 ) {
     public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             // Kinda optional, but we still want errors if you got it wrong >:(
-            Codecs.createStrictOptionalFieldCodec(Codecs.TEXT, "text", Text.empty()).forGetter(DialogueState::text),
+            Codecs.createStrictOptionalFieldCodec(TextCodecs.CODEC, "text", Text.empty()).forGetter(DialogueState::text),
             Codecs.createStrictOptionalFieldCodec(Codec.list(DialogueChoice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
             Codecs.createStrictOptionalFieldCodec(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
             Codecs.createStrictOptionalFieldCodec(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)

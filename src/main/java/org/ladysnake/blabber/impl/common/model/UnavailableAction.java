@@ -24,6 +24,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
+import net.minecraft.text.TextCodecs;
 import net.minecraft.text.Texts;
 import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.Nullable;
@@ -33,7 +34,7 @@ import java.util.Optional;
 public record UnavailableAction(UnavailableDisplay display, Optional<Text> message) {
     public static final Codec<UnavailableAction> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             UnavailableDisplay.CODEC.fieldOf("display").forGetter(UnavailableAction::display),
-            Codecs.createStrictOptionalFieldCodec(Codecs.TEXT, "message").forGetter(UnavailableAction::message)
+            Codecs.createStrictOptionalFieldCodec(TextCodecs.CODEC, "message").forGetter(UnavailableAction::message)
     ).apply(instance, UnavailableAction::new));
 
     public UnavailableAction(PacketByteBuf buf) {

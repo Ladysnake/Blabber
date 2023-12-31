@@ -110,7 +110,7 @@ public class DialogueScreenHandler extends ScreenHandler {
 
             return true;
         } catch (IllegalStateException e) {
-            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getEntityName(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
+            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getNameForScoreboard(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
             return false;
         }
     }
