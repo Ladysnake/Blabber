@@ -2,23 +2,25 @@
 Version 1.4.0-mc1.20.1
 ------------------------------------------------------
 
+Backported changes to MC 1.20.1 (thanks SettingDust !)
+
 **Mod Interactions**
 - REI no longer appears on the RPG dialogue screen variant
 
 ------------------------------------------------------
-Version 1.3.1-mc1.20.1
+Version 1.3.1
 ------------------------------------------------------
 **Fixes**
 - Fixed the `/blabber` command failing to find dialogues added through regular datapacks
 
 ------------------------------------------------------
-Version 1.3.0-mc1.20.1
+Version 1.3.0
 ------------------------------------------------------
 **Additions**
 - Added a new `DialogueActionV2` interface that lets mods act upon the interlocutor in a dialogue
 
 ------------------------------------------------------
-Version 1.2.0-mc1.20.1
+Version 1.2.0
 ------------------------------------------------------
 **Additions**
 - Dialogues now support advanced text components, like entity selectors and scores
@@ -30,7 +32,7 @@ Version 1.2.0-mc1.20.1
 - Dialogues can now be reloaded using the `/reload` command
 
 ------------------------------------------------------
-Version 1.1.0-mc1.20.1
+Version 1.1.0
 ------------------------------------------------------
 **Additions**
 - A new dialogue screen you can use : the RPG layout, ideal for dynamic NPC dialogues with short choices
