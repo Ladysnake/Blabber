@@ -62,6 +62,7 @@ public final class BlabberTestSuite implements FabricGameTest {
         GameTestUtil.assertTrue("dialogue registry should match expected state",
                 ctx.getWorld().getRegistryManager().get(BlabberRegistrar.DIALOGUE_REGISTRY_KEY).streamEntries().map(RegistryEntry.Reference::getKey).map(k -> k.orElseThrow().getValue()).sorted().toList().equals(List.of(
                         new Identifier("babblings:mountain_king"),
+                        new Identifier("babblings:perception_check"),
                         new Identifier("babblings:remnant_choice"),
                         new Identifier("babblings:remnant_choice_builtin")
                     )

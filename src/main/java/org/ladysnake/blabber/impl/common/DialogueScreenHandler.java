@@ -32,6 +32,7 @@ import org.ladysnake.blabber.impl.client.BlabberClient;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 public class DialogueScreenHandler extends ScreenHandler {
@@ -44,6 +45,10 @@ public class DialogueScreenHandler extends ScreenHandler {
     public DialogueScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId, DialogueStateMachine dialogue) {
         super(type, syncId);
         this.dialogue = dialogue;
+    }
+
+    public DialogueLayout getLayout() {
+        return this.dialogue.getLayout();
     }
 
     public boolean isUnskippable() {
