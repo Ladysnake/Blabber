@@ -18,7 +18,6 @@
 package org.ladysnake.blabber.impl.client;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.networking.v1.ClientConfigurationNetworking;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.entity.player.PlayerInventory;
@@ -49,7 +48,10 @@ public final class BlabberClient implements ClientModInitializer {
         BlabberScreenRegistry.register(DialogueLayout.CLASSIC_LAYOUT_ID, BlabberDialogueScreen::new);
         BlabberScreenRegistry.register(DialogueLayout.RPG_LAYOUT_ID, BlabberRpgDialogueScreen::new);
         HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, BlabberClient::createDialogueScreen);
-        ClientConfigurationNetworking.registerGlobalReceiver(DialogueListPacket.TYPE, (packet, responseSender) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
+        ClientPlayNetworking.registerGlobalReceiver(
+            DialogueListPacket.TYPE,
+            (packet, player, responseSender) -> DialogueRegistry.setClientIds(packet.dialogueIds())
+        );
         ClientPlayNetworking.registerGlobalReceiver(ChoiceAvailabilityPacket.TYPE, (packet, player, responseSender) -> {
             if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
                 dialogueScreenHandler.handleAvailabilityUpdate(packet);

@@ -24,10 +24,10 @@ import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
-import net.fabricmc.fabric.api.networking.v1.ServerConfigurationConnectionEvents;
-import net.fabricmc.fabric.api.networking.v1.ServerConfigurationNetworking;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
+import net.fabricmc.fabric.impl.networking.server.ServerNetworkingImpl;
 import net.minecraft.command.CommandSource;
 import net.minecraft.command.suggestion.SuggestionProviders;
 import net.minecraft.entity.Entity;
@@ -81,12 +81,13 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
                 }
             });
         });
-        ServerConfigurationConnectionEvents.CONFIGURE.register((handler, server) -> {
-            if (ServerConfigurationNetworking.canSend(handler, DialogueListPacket.TYPE)) {
+
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
+            if (ServerNetworkingImpl.getAddon(handler).getSendableChannels().contains(DialogueListPacket.TYPE)) {
                 Set<Identifier> dialogueIds = DialogueRegistry.getIds();
-                ServerConfigurationNetworking.send(handler, new DialogueListPacket(dialogueIds));
+                sender.sendPacket(new DialogueListPacket(dialogueIds));
             } else {
-                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getDebugProfile().getName());
+                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getPlayer().getName());
             }
         });
     }

@@ -65,7 +65,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
     }
 
     @Override
-    public void renderInGameBackground(DrawContext context) {
+    public void renderBackground(DrawContext context) {
         // Side background
         int y = this.choiceListMinY;
         ImmutableList<AvailableChoice> availableChoices = handler.getAvailableChoices();

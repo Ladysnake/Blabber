@@ -44,10 +44,10 @@ public record DialogueState(
 ) {
     public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             // Kinda optional, but we still want errors if you got it wrong >:(
-            Codecs.createStrictOptionalFieldCodec(Codecs.TEXT, "text", Text.empty()).forGetter(DialogueState::text),
-            Codecs.createStrictOptionalFieldCodec(Codec.list(DialogueChoice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
-            Codecs.createStrictOptionalFieldCodec(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
-            Codecs.createStrictOptionalFieldCodec(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
+            FailingOptionalFieldCodec.of(Codecs.TEXT, "text", Text.empty()).forGetter(DialogueState::text),
+            FailingOptionalFieldCodec.of(Codec.list(DialogueChoice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
+            FailingOptionalFieldCodec.of(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
+            FailingOptionalFieldCodec.of(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
     ).apply(instance, DialogueState::new));
 
     public static void writeToPacket(PacketByteBuf buf, DialogueState state) {

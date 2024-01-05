@@ -27,13 +27,14 @@ import net.minecraft.text.Text;
 import net.minecraft.text.Texts;
 import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.impl.common.FailingOptionalFieldCodec;
 
 import java.util.Optional;
 
 public record UnavailableAction(UnavailableDisplay display, Optional<Text> message) {
     public static final Codec<UnavailableAction> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             UnavailableDisplay.CODEC.fieldOf("display").forGetter(UnavailableAction::display),
-            Codecs.createStrictOptionalFieldCodec(Codecs.TEXT, "message").forGetter(UnavailableAction::message)
+            FailingOptionalFieldCodec.of(Codecs.TEXT, "message").forGetter(UnavailableAction::message)
     ).apply(instance, UnavailableAction::new));
 
     public UnavailableAction(PacketByteBuf buf) {

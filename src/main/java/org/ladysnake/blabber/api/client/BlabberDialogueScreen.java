@@ -232,10 +232,31 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             context.drawTextWrapped(this.textRenderer, choice.text(), choiceListMinX, y, choiceListMaxWidth, choiceColor);
             if (selected) {
                 if (choice.unavailabilityMessage().isPresent()) {
-                    context.drawTexture(DIALOGUE_LOCKS.get(0), 4, y - 4, 0, 0, choiceIconSize, choiceIconSize, choiceIconSize, choiceIconSize);
-                    context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : MAX_TEXT_WIDTH, this.hoveringChoice ? mouseY : y);
+                    context.drawTexture(
+                        lockIconTexture,
+                        selectionIconMinX,
+                        y + selectionIconMarginTop,
+                        0,
+                        0,
+                        selectionIconSize,
+                        selectionIconSize
+                    );
+                    context.drawTooltip(
+                        this.textRenderer,
+                        choice.unavailabilityMessage().get(),
+                        this.hoveringChoice ? mouseX : choiceListMaxWidth,
+                        this.hoveringChoice ? mouseY : y
+                    );
                 } else {
-                    context.drawTexture(DIALOGUE_ARROWS.get(0), 4, y - 4, 0, 0, choiceIconSize, choiceIconSize, choiceIconSize, choiceIconSize);
+                    context.drawTexture(
+                        selectionIconTexture,
+                        selectionIconMinX,
+                        y + selectionIconMarginTop,
+                        0,
+                        0,
+                        selectionIconSize,
+                        selectionIconSize
+                    );
                 }
             }
             y += strHeight + choiceGap;

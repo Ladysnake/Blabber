@@ -28,6 +28,7 @@ import net.minecraft.text.Texts;
 import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.impl.common.FailingOptionalFieldCodec;
 
 import java.util.Optional;
 
@@ -35,7 +36,7 @@ public record DialogueChoice(Text text, String next, Optional<DialogueChoiceCond
     public static final Codec<DialogueChoice> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codecs.TEXT.fieldOf("text").forGetter(DialogueChoice::text),
             Codec.STRING.fieldOf("next").forGetter(DialogueChoice::next),
-            Codecs.createStrictOptionalFieldCodec(DialogueChoiceCondition.CODEC, "only_if").forGetter(DialogueChoice::condition)
+            FailingOptionalFieldCodec.of(DialogueChoiceCondition.CODEC, "only_if").forGetter(DialogueChoice::condition)
     ).apply(instance, DialogueChoice::new));
 
     public static void writeToPacket(PacketByteBuf buf, DialogueChoice choice) {
