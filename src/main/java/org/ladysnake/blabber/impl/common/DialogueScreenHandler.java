@@ -20,6 +20,7 @@ package org.ladysnake.blabber.impl.common;
 import com.demonwav.mcdev.annotations.CheckEnv;
 import com.demonwav.mcdev.annotations.Env;
 import com.google.common.collect.ImmutableList;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
@@ -37,14 +38,21 @@ import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 public class DialogueScreenHandler extends ScreenHandler {
     private final DialogueStateMachine dialogue;
+    private final @Nullable Entity interlocutor;
 
-    public DialogueScreenHandler(int syncId, DialogueStateMachine dialogue) {
-        this(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, dialogue);
+    public DialogueScreenHandler(int syncId, DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
+        this(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, dialogue, interlocutor);
     }
 
-    public DialogueScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId, DialogueStateMachine dialogue) {
+    public DialogueScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId, DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
         super(type, syncId);
         this.dialogue = dialogue;
+        this.interlocutor = interlocutor;
+    }
+
+    @SuppressWarnings("unused") // may be useful for custom layouts one day
+    public @Nullable Entity getInterlocutor() {
+        return interlocutor;
     }
 
     public DialogueLayout getLayout() {

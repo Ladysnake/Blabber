@@ -77,11 +77,11 @@
       "choices": [
         {
           "text": "Bring them to their parents.",
-          "next": "end_sucess"
+          "next": "end_success"
         }
       ]
     },
-    "end_sucess": {
+    "end_success": {
       "text": "",
       "choices": [],
       "action": {

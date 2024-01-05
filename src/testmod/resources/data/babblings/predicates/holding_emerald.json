@@ -1,11 +1,21 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "mainhand": {
-        "items": [ "minecraft:emerald" ]
+[
+  {
+    "condition": "blabber:interlocutor_properties",
+    "predicate": {
+      "type": "minecraft:villager"
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "items": [
+            "minecraft:emerald"
+          ]
+        }
       }
     }
   }
-}
+]
