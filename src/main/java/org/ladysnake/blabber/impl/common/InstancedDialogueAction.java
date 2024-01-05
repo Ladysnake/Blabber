@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -19,14 +19,14 @@ package org.ladysnake.blabber.impl.common;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.util.Identifier;
-import org.ladysnake.blabber.DialogueAction;
+import org.ladysnake.blabber.api.DialogueActionV2;
 
-public record InstancedDialogueAction<A extends DialogueAction>(A action,
-                                      Codec<A> codec) {
+public record InstancedDialogueAction<A extends DialogueActionV2>(A action,
+                                                                  Codec<A> codec) {
     public static final Codec<InstancedDialogueAction<?>> CODEC = BlabberRegistrar.ACTION_REGISTRY.getCodec()
             .dispatch("type", InstancedDialogueAction::codec, InstancedDialogueAction::xmap);
 
-    private static <A extends DialogueAction> Codec<InstancedDialogueAction<A>> xmap(Codec<A> c) {
+    private static <A extends DialogueActionV2> Codec<InstancedDialogueAction<A>> xmap(Codec<A> c) {
         return c.xmap(a -> new InstancedDialogueAction<>(a, c), InstancedDialogueAction::action);
     }
 

@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,6 +20,7 @@ package org.ladysnake.blabber.impl.common;
 import com.demonwav.mcdev.annotations.CheckEnv;
 import com.demonwav.mcdev.annotations.Env;
 import com.google.common.collect.ImmutableList;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
@@ -32,18 +33,30 @@ import org.ladysnake.blabber.impl.client.BlabberClient;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 public class DialogueScreenHandler extends ScreenHandler {
     private final DialogueStateMachine dialogue;
+    private final @Nullable Entity interlocutor;
 
-    public DialogueScreenHandler(int syncId, DialogueStateMachine dialogue) {
-        this(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, dialogue);
+    public DialogueScreenHandler(int syncId, DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
+        this(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, dialogue, interlocutor);
     }
 
-    public DialogueScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId, DialogueStateMachine dialogue) {
+    public DialogueScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId, DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
         super(type, syncId);
         this.dialogue = dialogue;
+        this.interlocutor = interlocutor;
+    }
+
+    @SuppressWarnings("unused") // may be useful for custom layouts one day
+    public @Nullable Entity getInterlocutor() {
+        return interlocutor;
+    }
+
+    public DialogueLayout getLayout() {
+        return this.dialogue.getLayout();
     }
 
     public boolean isUnskippable() {
@@ -90,14 +103,14 @@ public class DialogueScreenHandler extends ScreenHandler {
 
     public boolean makeChoice(ServerPlayerEntity player, int choice) {
         try {  // Can't throw here, could cause trouble with a bad packet
-            ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player));
+            ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player, this.interlocutor));
             if (result == ChoiceResult.END_DIALOGUE) {
                 PlayerDialogueTracker.get(player).endDialogue();
             }
 
             return true;
         } catch (IllegalStateException e) {
-            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getEntityName(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
+            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getDisplayName(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
             return false;
         }
     }

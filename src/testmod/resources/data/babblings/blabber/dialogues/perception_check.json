@@ -1,0 +1,139 @@
+{
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "start_at": "start",
+  "states": {
+    "start": {
+      "choices": [
+        {
+          "text": "Brace your greathammer",
+          "next": "critical_fail"
+        },
+        {
+          "text": "Hide behind a tree",
+          "next": "critical_fail"
+        },
+        {
+          "text": "Active perception check",
+          "next": "perception_check_1"
+        }
+      ],
+      "text": "On the horizon of this forest path you see a group of dark cloaked figures slowly trudging towards you. What do you do ?"
+    },
+    "end": {
+      "type": "end_dialogue"
+    },
+    "critical_fail": {
+      "text": "That's a critical fail.",
+      "choices": [
+        {
+          "text": "...",
+          "next": "end"
+        }
+      ]
+    },
+    "perception_check_1": {
+      "text": "Natural 20.",
+      "choices": [
+        {
+          "text": "Don't wait, make the boys mess them up.",
+          "next": "team_down"
+        },
+        {
+          "text": "Don't wait, bring it all yourself.",
+          "next": "attack"
+        },
+        {
+          "text": "Wait.",
+          "next": "wait"
+        }
+      ]
+    },
+    "team_down": {
+      "text": "Both rolled a 1.",
+      "choices": [
+        {
+          "text": "Fuck.",
+          "next": "perception_check_1"
+        }
+      ]
+    },
+    "attack": {
+      "text": "You notice one of the hooded figures is a little shorter.",
+      "choices": [
+        {
+          "text": "Cast vicious mockery.",
+          "next": "vicious_mockery"
+        },
+        {
+          "text": "Wait.",
+          "next": "wait"
+        }
+      ]
+    },
+    "wait": {
+      "text": "You perceive one of the hooded figures to be the child that you have been looking for all week !",
+      "choices": [
+        {
+          "text": "Bring them to their parents.",
+          "next": "end_success"
+        }
+      ]
+    },
+    "end_success": {
+      "text": "",
+      "choices": [],
+      "action": {
+        "type": "blabber:command",
+        "value": "/give @s gold_nugget 15"
+      },
+      "type": "end_dialogue"
+    },
+    "vicious_mockery": {
+      "text": "You attack lands and absolutely shatters the mind of the cloaked figure.",
+      "choices": [
+        {
+          "text": "Roll another perception check.",
+          "next": "perception_check_2"
+        }
+      ]
+    },
+    "perception_check_2": {
+      "text": "You perceive the figure was so short because it was A CHILD. Specifically the child you have been looking for the last 15 DAYS.",
+      "choices": [
+        {
+          "text": "His body is just lying there right ?",
+          "next": "looting"
+        },
+        {
+          "text": "Oh, sorry...",
+          "next": "end"
+        }
+      ]
+    },
+    "looting": {
+      "text": "Don't.",
+      "choices": [
+        {
+          "text": "Loot that body now !",
+          "next": "end_looting"
+        },
+        {
+          "text": "Reconsider.",
+          "next": "perception_check_2"
+        }
+      ],
+      "type": "ask_confirmation"
+    },
+    "end_looting": {
+      "text": "",
+      "choices": [],
+      "action": {
+        "type": "blabber:command",
+        "value": "/give @s dirt"
+      },
+      "type": "end_dialogue"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,125 +17,53 @@
  */
 package org.ladysnake.blabber.impl.common.model;
 
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.Lifecycle;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.util.dynamic.Codecs;
-import org.ladysnake.blabber.Blabber;
+import net.minecraft.entity.Entity;
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.server.command.ServerCommandSource;
+import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
-public final class DialogueTemplate {
-    // SO
-    // Mojang just decided to use the identity hash strategy for SimpleRegistry#entryToRawId
-    // but not for anything else
-    // and the fastutil maps do not update a mapping if Objects.equals(oldValue, newValue)
-    // and dynamic registries use Registry#replace every time they are reloaded
-    // so with a proper equals and hashcode implementation, we end up with a stupid identity mismatch
-    // and this identity mismatch snowballs into an error if a third reload happens (which always happens with datapacks on)
-    // this was hell to debug and I hate mojang but here we are
-    // so what does all this mean ? It means no using record instead of class lol (or having to break Record's contract)
-
-    public static final Codec<DialogueTemplate> CODEC = Codecs.validate(RecordCodecBuilder.create(instance -> instance.group(
+public record DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, DialogueLayout layout) {
+    public static final Codec<DialogueTemplate> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
-            Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states)
-    ).apply(instance, DialogueTemplate::new)), DialogueTemplate::validateStructure);
+            Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states),
+            DialogueLayout.CODEC.optionalFieldOf("layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
+    ).apply(instance, DialogueTemplate::new));
 
-    private static DataResult<DialogueTemplate> validateStructure(DialogueTemplate dialogue) {
-        Map<String, Map<String, Reachability>> parents = new HashMap<>();
-        Deque<String> waitList = new ArrayDeque<>();
-        Map<String, Reachability> unvalidated = new HashMap<>();
+    public static void writeToPacket(PacketByteBuf buf, DialogueTemplate dialogue) {
+        buf.writeString(dialogue.start());
+        buf.writeBoolean(dialogue.unskippable());
+        buf.writeMap(dialogue.states(), PacketByteBuf::writeString, DialogueState::writeToPacket);
+        DialogueLayout.writeToPacket(buf, dialogue.layout());
+    }
 
-        for (Map.Entry<String, DialogueState> state : dialogue.states().entrySet()) {
-            if (state.getValue().type().equals(ChoiceResult.END_DIALOGUE)) {
-                waitList.add(state.getKey());
-            } else if (dialogue.states().get(state.getKey()).choices().isEmpty()) {
-                return DataResult.error(() -> "(Blabber) %s has no available choices but is not an end state".formatted(state.getKey()));
-            } else {
-                unvalidated.put(state.getKey(), Reachability.NONE);
+    public DialogueTemplate(PacketByteBuf buf) {
+        this(buf.readString(), buf.readBoolean(), buf.readMap(PacketByteBuf::readString, DialogueState::new), new DialogueLayout(buf));
+    }
 
-                for (DialogueState.Choice choice : state.getValue().choices()) {
-                    parents.computeIfAbsent(choice.next(), n -> new HashMap<>()).put(
-                            state.getKey(),
-                            choice.condition().isPresent() ? Reachability.CONDITIONAL : Reachability.PROVEN
-                    );
-                }
-            }
+    public DialogueTemplate parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+        Map<String, DialogueState> parsedStates = new HashMap<>();
+
+        for (Map.Entry<String, DialogueState> state : states().entrySet()) {
+            parsedStates.put(state.getKey(), state.getValue().parseText(source, sender));
         }
 
-        while (!waitList.isEmpty()) {
-            String state = waitList.pop();
-            Map<String, Reachability> stateParents = parents.get(state);
-
-            if (stateParents != null) {
-                for (var parent : stateParents.entrySet()) {
-                    Reachability reachability = unvalidated.get(parent.getKey());
-
-                    if (reachability != null) { // leave it alone if it was already validated through another branch
-                        if (reachability == Reachability.NONE) {    // only check once
-                            waitList.add(parent.getKey());
-                        }
-
-                        switch (parent.getValue()) {
-                            case PROVEN -> unvalidated.remove(parent.getKey());
-                            case CONDITIONAL -> unvalidated.put(parent.getKey(), Reachability.CONDITIONAL);
-                            default -> throw new IllegalStateException("Unexpected parent-child reachability " + parent.getValue());
-                        }
-                    }
-                }
-            }   // else, state is unreachable - we log that in the next part
-        }
-
-        for (var bad : unvalidated.entrySet()) {
-            if (!Objects.equals(bad.getKey(), dialogue.start()) && !parents.containsKey(bad.getKey())) {
-                // Unreachable states do not cause infinite loops, but we still want to be aware of them
-                Blabber.LOGGER.warn("{} is unreachable", bad.getKey());
-            } else if (bad.getValue() == Reachability.CONDITIONAL) {
-                Blabber.LOGGER.warn("(Blabber) {} only has conditional paths to the end of the dialogue", bad.getKey());
-            } else {
-                return DataResult.error(() -> "(Blabber) %s does not have any path to the end of the dialogue".formatted(bad.getKey()));
-            }
-        }
-
-        return DataResult.success(dialogue, Lifecycle.stable());
-    }
-
-    private final String start;
-    private final boolean unskippable;
-    private final Map<String, DialogueState> states;
-
-    private DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states) {
-        this.start = start;
-        this.unskippable = unskippable;
-        this.states = Map.copyOf(states);
-    }
-
-    public boolean unskippable() {
-        return this.unskippable;
-    }
-
-    public String start() {
-        return start;
-    }
-
-    public Map<String, DialogueState> states() {
-        return states;
+        return new DialogueTemplate(
+                start(),
+                unskippable(),
+                parsedStates,
+                layout()
+        );
     }
 
     @Override
     public String toString() {
         return "DialogueTemplate[start=%s, states=%s%s]".formatted(start, states, unskippable ? " (unskippable)" : "");
-    }
-
-    private enum Reachability {
-        NONE,
-        CONDITIONAL,
-        PROVEN,
     }
 }

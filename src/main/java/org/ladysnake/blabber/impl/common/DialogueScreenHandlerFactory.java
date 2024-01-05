@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,6 +18,7 @@
 package org.ladysnake.blabber.impl.common;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.network.PacketByteBuf;
@@ -27,19 +28,23 @@ import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 
+import java.util.Optional;
+
 public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory {
     private final DialogueStateMachine dialogue;
     private final Text displayName;
+    private final @Nullable Entity interlocutor;
 
-    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, Text displayName) {
+    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, Text displayName, @Nullable Entity interlocutor) {
         this.dialogue = dialogue;
         this.displayName = displayName;
+        this.interlocutor = interlocutor;
     }
 
     @Override
     public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
-        buf.writeIdentifier(this.dialogue.getId());
-        buf.writeString(this.dialogue.getCurrentStateKey());
+        DialogueStateMachine.writeToPacket(buf, this.dialogue);
+        buf.writeOptional(Optional.ofNullable(interlocutor), (b, e) -> b.writeVarInt(e.getId()));
         this.dialogue.createFullAvailabilityUpdatePacket().write(buf);
     }
 
@@ -51,6 +56,6 @@ public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactor
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
-        return new DialogueScreenHandler(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, this.dialogue);
+        return new DialogueScreenHandler(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, this.dialogue, this.interlocutor);
     }
 }

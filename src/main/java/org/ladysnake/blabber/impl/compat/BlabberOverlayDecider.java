@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,12 +20,12 @@ package org.ladysnake.blabber.impl.compat;
 import me.shedaniel.rei.api.client.registry.screen.OverlayDecider;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.util.ActionResult;
-import org.ladysnake.blabber.impl.client.BlabberDialogueScreen;
+import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 
 public class BlabberOverlayDecider implements OverlayDecider {
     @Override
     public <R extends Screen> boolean isHandingScreen(Class<R> screen) {
-        return screen == BlabberDialogueScreen.class;
+        return BlabberDialogueScreen.class.isAssignableFrom(screen);
     }
 
     @Override

@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -23,10 +23,12 @@ import com.mojang.brigadier.exceptions.DynamicCommandExceptionType;
 import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.command.argument.IdentifierArgumentType;
+import net.minecraft.entity.Entity;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 
 import java.util.Collection;
@@ -44,26 +46,29 @@ public final class BlabberCommand {
         dispatcher.register(literal(Blabber.MOD_ID)
             .requires(Permissions.require("dialogue.start", 2))
             .then(literal(DIALOGUE_SUBCOMMAND)
-            // blabber dialogue start <dialogue> [players]
+            // blabber dialogue start <dialogue> [players] [interlocutor]
             .then(literal("start")
                 .requires(Permissions.require("dialogue.start", 2))
                 .then(argument("dialogue", IdentifierArgumentType.identifier()).suggests(BlabberRegistrar.ALL_DIALOGUES)
-                    .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), List.of(context.getSource().getPlayer())))
+                    .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), List.of(context.getSource().getPlayerOrThrow()), null))
                     .then(argument("players", EntityArgumentType.players())
-                        .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), EntityArgumentType.getPlayers(context, "players")))
+                        .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), EntityArgumentType.getPlayers(context, "players"), null))
+                        .then(argument("interlocutor", EntityArgumentType.entity())
+                                .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), EntityArgumentType.getPlayers(context, "players"), EntityArgumentType.getEntity(context, "interlocutor")))
+                        )
                     )
                 )
             )));
     }
 
-    private static int startDialogue(ServerCommandSource source, Identifier dialogue, Collection<ServerPlayerEntity> players) throws CommandSyntaxException {
-        if (!source.getServer().getRegistryManager().get(BlabberRegistrar.DIALOGUE_REGISTRY_KEY).containsId(dialogue)) {
+    private static int startDialogue(ServerCommandSource source, Identifier dialogue, Collection<ServerPlayerEntity> players, @Nullable Entity interlocutor) throws CommandSyntaxException {
+        if (!DialogueRegistry.containsId(dialogue)) {
             throw INVALID_EXCEPTION.create(dialogue);
         }
 
         int count = 0;
         for (ServerPlayerEntity player : players) {
-            PlayerDialogueTracker.get(player).startDialogue(dialogue);
+            PlayerDialogueTracker.get(player).startDialogue(dialogue, interlocutor);
             source.sendFeedback(() -> Text.translatable("blabber:commands.dialogue.start.success", dialogue, player.getDisplayName()), true);
             count++;
         }

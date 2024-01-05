@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,14 +17,27 @@
  */
 package org.ladysnake.blabber;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.api.DialogueActionV2;
 
+/**
+ * @see DialogueActionV2
+ * @see Blabber#registerAction(Identifier, DialogueAction)
+ */
 @FunctionalInterface
-public interface DialogueAction {
+public interface DialogueAction extends DialogueActionV2 {
     /**
      * Handles a dialogue action triggered by the given player.
      *
      * @param player the player executing the action
      */
     void handle(ServerPlayerEntity player);
+
+    @Override
+    default void handle(ServerPlayerEntity player, @Nullable Entity interlocutor) {
+        this.handle(player);
+    }
 }

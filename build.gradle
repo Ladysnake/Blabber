@@ -1,9 +1,8 @@
 import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
-	id 'fabric-loom' version "1.0.+"
+	id 'fabric-loom' version "1.4.+"
 	id 'io.github.ladysnake.chenille' version '0.11.3'
-	id 'io.github.juuxel.loom-quiltflower' version "1.6.0"
 }
 
 archivesBaseName = project.archives_base_name
@@ -51,6 +50,18 @@ dependencies {
 
 	// Test dependencies
 	modImplementation(libs.elmendorf)
+
+	testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
+	testImplementation "net.fabricmc:fabric-loader-junit:${project.loader_version}"
+}
+
+test {
+	useJUnitPlatform()
+	maxHeapSize = '1G'
+	workingDir(project.layout.buildDirectory)
+	testLogging {
+		events("passed", "skipped", "failed")
+	}
 }
 
 processResources {
