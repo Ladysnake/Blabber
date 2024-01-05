@@ -25,7 +25,7 @@ import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 public class BlabberOverlayDecider implements OverlayDecider {
     @Override
     public <R extends Screen> boolean isHandingScreen(Class<R> screen) {
-        return screen == BlabberDialogueScreen.class;
+        return BlabberDialogueScreen.class.isAssignableFrom(screen);
     }
 
     @Override

@@ -31,6 +31,7 @@ import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.api.DialogueActionV2;
 import org.ladysnake.blabber.impl.common.BlabberCommand;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.CommandDialogueAction;
@@ -115,13 +116,24 @@ public final class Blabber implements ModInitializer {
 	}
 
 	/**
+	 * Register a basic {@link DialogueAction} to handle dialogue choices.
+	 *
+	 * @param actionId the identifier used to reference the action in dialogue definition files
+	 * @param action   the action to run when triggered by a player
+	 * @see #registerAction(Identifier, Codec)
+	 */
+	public static void registerAction(Identifier actionId, DialogueActionV2 action) {
+		registerAction(actionId, Codec.unit(action));
+	}
+
+	/**
 	 * Register a configurable {@link DialogueAction} to handle dialogue choices.
 	 *
 	 * @param actionId the identifier used to reference the action in dialogue definition files
 	 * @param codec    a codec for deserializing dialogue actions using the given value
 	 * @see #registerAction(Identifier, DialogueAction)
 	 */
-	public static void registerAction(Identifier actionId, Codec<? extends DialogueAction> codec) {
+	public static void registerAction(Identifier actionId, Codec<? extends DialogueActionV2> codec) {
 		Registry.register(BlabberRegistrar.ACTION_REGISTRY, actionId, codec);
 	}
 

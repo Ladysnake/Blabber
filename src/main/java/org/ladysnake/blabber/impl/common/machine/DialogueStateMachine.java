@@ -29,7 +29,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
-import org.ladysnake.blabber.DialogueAction;
+import org.ladysnake.blabber.api.DialogueActionV2;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.DialogueChoice;
@@ -167,7 +167,7 @@ public final class DialogueStateMachine {
     /**
      * @throws IllegalStateException if making an invalid choice
      */
-    public ChoiceResult choose(int choice, Consumer<DialogueAction> actionRunner) {
+    public ChoiceResult choose(int choice, Consumer<DialogueActionV2> actionRunner) {
         if (choice == AvailableChoice.ESCAPE_HATCH.originalChoiceIndex() && IntStream.range(0, this.getCurrentState().choices().size()).noneMatch(this::isAvailable)) {
             Blabber.LOGGER.warn("(Blabber) Escape hatch used on {}#{}", this.getId(), this.currentStateKey);
             return ChoiceResult.END_DIALOGUE;

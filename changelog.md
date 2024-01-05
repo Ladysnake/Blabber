@@ -1,4 +1,35 @@
 ------------------------------------------------------
+Version 1.4.0-mc1.20.1
+------------------------------------------------------
+
+**Mod Interactions**
+- REI no longer appears on the RPG dialogue screen variant
+
+------------------------------------------------------
+Version 1.3.1-mc1.20.1
+------------------------------------------------------
+**Fixes**
+- Fixed the `/blabber` command failing to find dialogues added through regular datapacks
+
+------------------------------------------------------
+Version 1.3.0-mc1.20.1
+------------------------------------------------------
+**Additions**
+- Added a new `DialogueActionV2` interface that lets mods act upon the interlocutor in a dialogue
+
+------------------------------------------------------
+Version 1.2.0-mc1.20.1
+------------------------------------------------------
+**Additions**
+- Dialogues now support advanced text components, like entity selectors and scores
+- You can now specify an *interlocutor* when starting a dialogue
+- The interlocutor entity can be referred to in commands and texts using a new entity selector, `@interlocutor`
+- It can also be referred to using a new loot condition, `blabber:interlocutor_properties`
+
+**Changes**
+- Dialogues can now be reloaded using the `/reload` command
+
+------------------------------------------------------
 Version 1.1.0-mc1.20.1
 ------------------------------------------------------
 **Additions**

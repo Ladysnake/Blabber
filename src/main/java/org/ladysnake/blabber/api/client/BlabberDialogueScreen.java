@@ -40,8 +40,8 @@ import java.util.stream.IntStream;
 
 @ApiStatus.Experimental // half internal, expect some things to change
 public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> {
-    public static final List<Identifier> DIALOGUE_ARROWS = IntStream.range(1, 6).mapToObj(i -> Blabber.id("container/dialogue/dialogue_arrow_" + i)).toList();
-    public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("container/dialogue/dialogue_lock_" + i)).toList();
+    public static final List<Identifier> DIALOGUE_ARROWS = IntStream.range(1, 6).mapToObj(i -> Blabber.id("textures/gui/sprites/container/dialogue/dialogue_arrow_" + i + ".png")).toList();
+    public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("textures/gui/sprites/container/dialogue/dialogue_lock_" + i + ".png")).toList();
     public static final int DEFAULT_TITLE_GAP = 20;
     public static final int DEFAULT_TEXT_MAX_WIDTH = 300;
     public static final int DEFAULT_INSTRUCTIONS_BOTTOM_MARGIN = 30;
