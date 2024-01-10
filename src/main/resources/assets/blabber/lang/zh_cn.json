@@ -1,5 +1,5 @@
 {
-  "blabber:commands.dialogue.start.invalid": "没有类型为\"%s\"的对话",
+  "blabber:commands.dialogue.start.invalid": "没有类型为“%s”的对话",
   "blabber:commands.dialogue.start.success": "成功发起对话\"%s\"到%s",
   "blabber:dialogue.instructions": "悬停或点击[%s]/[%s]选择选项，然后点击[%s]确认",
   "blabber:dialogue.locked_choice": "该选项有未满足的先决条件",
