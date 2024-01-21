@@ -27,7 +27,6 @@ import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
-import net.fabricmc.fabric.impl.networking.server.ServerNetworkingImpl;
 import net.minecraft.command.CommandSource;
 import net.minecraft.command.suggestion.SuggestionProviders;
 import net.minecraft.entity.Entity;
@@ -83,11 +82,11 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
         });
 
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
-            if (ServerNetworkingImpl.getAddon(handler).getSendableChannels().contains(DialogueListPacket.TYPE)) {
+            if (ServerPlayNetworking.canSend(handler, DialogueListPacket.TYPE)) {
                 Set<Identifier> dialogueIds = DialogueRegistry.getIds();
                 sender.sendPacket(new DialogueListPacket(dialogueIds));
             } else {
-                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getPlayer().getName());
+                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getPlayer().getEntityName());
             }
         });
     }
