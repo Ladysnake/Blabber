@@ -63,7 +63,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     ).buildAndRegister();
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(
             Blabber.id("available_dialogues"),
-            (context, builder) -> CommandSource.suggestIdentifiers(DialogueRegistry.getIds(), builder)
+            (context, builder) -> CommandSource.suggestIdentifiers(context.getSource() instanceof ServerCommandSource ? DialogueRegistry.getIds() : DialogueRegistry.getClientIds(), builder)
     );
 
     public static void init() {
