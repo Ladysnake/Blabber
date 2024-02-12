@@ -1,13 +1,19 @@
 ------------------------------------------------------
+Version 1.5.0
+------------------------------------------------------
+
+**Additions**
+- Dialogues can now contain *illustrations*, extra visual content that can be positioned anywhere on the screen *(thanks Sekoia !)*
+  - Added 3 default illustration types : in-world entities, fake entities, and items
+  - Illustrations can also be added to individual choices, in which case they are positioned relative to the corresponding choice
+
+------------------------------------------------------
 Version 1.4.0
 ------------------------------------------------------
 Updated to 1.20.4
 
 **Mod Interactions**
 - REI no longer appears on the RPG dialogue screen variant
-
-**Additions**
-- Dialogues can now render extra features, such as entities (either non-existent, or via a selector), or items.
 
 ------------------------------------------------------
 Version 1.3.1

@@ -6,7 +6,8 @@
   "name": "Blabber",
   "description": "An extensible data-driven Dialogue API",
   "authors": [
-    "Pyrofab"
+    "Pyrofab",
+    "Sekoia"
   ],
   "contact": {
     "homepage": "https://ladysnake.org/wiki/blabber",
