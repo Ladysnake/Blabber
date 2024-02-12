@@ -19,7 +19,6 @@ package org.ladysnake.blabber.impl.common;
 
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.ApiStatus;
-import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 
 import java.util.Map;
@@ -37,11 +36,15 @@ import java.util.Set;
  */
 
 public final class DialogueRegistry {
-    private static @Nullable Set<Identifier> clientDialogueIds = null;
+    private static Set<Identifier> clientDialogueIds = Set.of();
     private static Map<Identifier, DialogueTemplate> entries = Map.of();
 
+    public static Set<Identifier> getClientIds() {
+        return clientDialogueIds;
+    }
+
     public static Set<Identifier> getIds() {
-        return clientDialogueIds == null ? entries.keySet() : clientDialogueIds;
+        return entries.keySet();
     }
 
     public static Optional<DialogueTemplate> getOrEmpty(Identifier id) {
@@ -57,7 +60,7 @@ public final class DialogueRegistry {
     }
 
     @ApiStatus.Internal // highly internal
-    public static void setClientIds(@Nullable Set<Identifier> dialogueIds) {
+    public static void setClientIds(Set<Identifier> dialogueIds) {
         clientDialogueIds = dialogueIds;
     }
 }
