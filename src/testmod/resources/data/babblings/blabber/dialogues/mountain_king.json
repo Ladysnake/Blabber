@@ -14,7 +14,8 @@
           "text": "I came here to demand a favour.",
           "next": "bargain"
         }
-      ]
+      ],
+      "illustrations": ["discussion"]
     },
     "end": {
       "text": "",
@@ -34,7 +35,8 @@
             }
           }
         }
-      ]
+      ],
+      "illustrations": ["discussion"]
     },
     "bargain": {
       "text": "Tell me.",
@@ -64,7 +66,8 @@
           "text": "I want a friend.",
           "next": "friendship"
         }
-      ]
+      ],
+      "illustrations": ["discussion"]
     },
     "friendship": {
       "text": [
@@ -77,8 +80,37 @@
           "text": [{"text":"My name is "},{"selector":"@s"}],
           "next": "end"
         }
-      ]
+      ],
+      "illustrations": ["discussion"]
     }
+  },
+  "illustrations": {
+    "discussion": [
+      {
+        "type": "blabber:entity",
+        "entity": "@interlocutor",
+        "x1": 0,
+        "y1": 80,
+        "x2": 100,
+        "y2": 180,
+        "size": 100,
+        "y_offset": 0.5,
+        "stare_at_x": 50,
+        "stare_at_y": 0
+      },
+      {
+        "type": "blabber:entity",
+        "entity": "@s",
+        "x1": 100,
+        "y1": 80,
+        "x2": 200,
+        "y2": 180,
+        "size": 100,
+        "y_offset": 0.5,
+        "stare_at_x": -50,
+        "stare_at_y": 0
+      }
+    ]
   },
   "start_at": "start"
 }

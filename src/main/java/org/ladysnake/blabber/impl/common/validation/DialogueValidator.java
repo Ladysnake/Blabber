@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -85,6 +85,16 @@ public final class DialogueValidator {
                 warnings.add(new ValidationResult.Warning.ConditionalSoftLock(bad.getKey()));
             } else {
                 return new ValidationResult.Error.SoftLock(bad.getKey());
+            }
+        }
+
+        // Verify that all illustrations are real. We're doing this here because this is a class and not a record
+        // So we have our own constructor.
+        for (Map.Entry<String, DialogueState> state : dialogue.states().entrySet()) {
+            for (String illustration : state.getValue().illustrations()) {
+                if (!dialogue.illustrations().containsKey(illustration)) {
+                    return new ValidationResult.Error.NonexistentIllustration(state.getKey(), illustration);
+                }
             }
         }
 

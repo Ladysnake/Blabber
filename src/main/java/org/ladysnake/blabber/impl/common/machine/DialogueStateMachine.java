@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -30,6 +30,7 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueActionV2;
+import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.DialogueChoice;
@@ -110,6 +111,15 @@ public final class DialogueStateMachine {
 
     public Text getCurrentText() {
         return this.getCurrentState().text();
+    }
+
+    public List<String> getCurrentIllustrations() {
+        return this.getCurrentState().illustrations();
+    }
+
+    @Nullable
+    public DialogueIllustration getIllustration(String name) {
+        return this.template.illustrations().get(name);
     }
 
     public ImmutableList<AvailableChoice> getAvailableChoices() {
@@ -210,6 +220,7 @@ public final class DialogueStateMachine {
                 newChoices.add(new AvailableChoice(
                         i,
                         c.text(),
+                        c.illustrations(),
                         whenUnavailable.filter(t -> !available).flatMap(a -> a.message().or(DialogueStateMachine::defaultLockedMessage))
                 ));
             }

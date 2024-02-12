@@ -15,13 +15,10 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-/**
- * Definitions of the dialogue system
- */
 @FieldsAreNonnullByDefault
 @MethodsReturnNonnullByDefault
 @ApiStatus.Internal
-package org.ladysnake.blabber.impl.compat;
+package org.ladysnake.blabber.impl.common.illustrations;
 
 import net.minecraft.util.annotation.FieldsAreNonnullByDefault;
 import net.minecraft.util.annotation.MethodsReturnNonnullByDefault;

@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -19,8 +19,10 @@ package org.ladysnake.blabber.impl.common.machine;
 
 import net.minecraft.text.Text;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
-public record AvailableChoice(int originalChoiceIndex, Text text, Optional<Text> unavailabilityMessage) {
-    public static final AvailableChoice ESCAPE_HATCH = new AvailableChoice(-1, Text.translatable("blabber:dialogue.escape_hatch"), Optional.empty());
+public record AvailableChoice(int originalChoiceIndex, Text text, List<String> illustrations, Optional<Text> unavailabilityMessage) {
+    public static final AvailableChoice ESCAPE_HATCH = new AvailableChoice(-1, Text.translatable("blabber:dialogue.escape_hatch"), Collections.emptyList(), Optional.empty());
 }

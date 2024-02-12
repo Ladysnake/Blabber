@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -30,28 +30,33 @@ import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
-public record DialogueChoice(Text text, String next, Optional<DialogueChoiceCondition> condition) {
+public record DialogueChoice(Text text, List<String> illustrations, String next, Optional<DialogueChoiceCondition> condition) {
     public static final Codec<DialogueChoice> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             TextCodecs.CODEC.fieldOf("text").forGetter(DialogueChoice::text),
+            Codecs.createStrictOptionalFieldCodec(Codec.list(Codec.STRING), "illustrations", Collections.emptyList()).forGetter(DialogueChoice::illustrations),
             Codec.STRING.fieldOf("next").forGetter(DialogueChoice::next),
             Codecs.createStrictOptionalFieldCodec(DialogueChoiceCondition.CODEC, "only_if").forGetter(DialogueChoice::condition)
     ).apply(instance, DialogueChoice::new));
 
     public static void writeToPacket(PacketByteBuf buf, DialogueChoice choice) {
         buf.writeText(choice.text());
+        buf.writeCollection(choice.illustrations(), PacketByteBuf::writeString);
         buf.writeString(choice.next());
         buf.writeOptional(choice.condition(), DialogueChoiceCondition::writeToPacket);
     }
 
     public DialogueChoice(PacketByteBuf buf) {
-        this(buf.readText(), buf.readString(), buf.readOptional(DialogueChoiceCondition::new));
+        this(buf.readText(), buf.readCollection(ArrayList::new, PacketByteBuf::readString), buf.readString(), buf.readOptional(DialogueChoiceCondition::new));
     }
 
     public DialogueChoice parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         Optional<DialogueChoiceCondition> parsedCondition = condition().isEmpty() ? Optional.empty() : Optional.of(condition().get().parseText(source, sender));
-        return new DialogueChoice(Texts.parse(source, text(), sender, 0), next(), parsedCondition);
+        return new DialogueChoice(Texts.parse(source, text(), sender, 0), illustrations(), next(), parsedCondition);
     }
 
     @Override

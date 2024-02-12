@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -61,6 +61,12 @@ public class DialogueValidatorTest {
     public void validationFailsOnLoopingDialogue() {
         DialogueTemplate dialogue = loadDialogue("/looping_dialogue.json");
         Assertions.assertTrue(DialogueValidator.validateStructure(dialogue) instanceof ValidationResult.Error.SoftLock, "Dialogue validation should detect looping dialogues");
+    }
+
+    @Test
+    public void validationFailsOnInvalidReference() {
+        DialogueTemplate dialogue = loadDialogue("/invalid_reference.json");
+        Assertions.assertTrue(DialogueValidator.validateStructure(dialogue) instanceof ValidationResult.Error.NonexistentIllustration, "Dialogue validation should detect invalid illustration reference");
     }
 
     private static DialogueTemplate loadDialogue(String name) {

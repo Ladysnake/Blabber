@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -29,12 +29,16 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
+import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.impl.client.BlabberClient;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
+
+import java.util.List;
+import java.util.Map;
 
 public class DialogueScreenHandler extends ScreenHandler {
     private final DialogueStateMachine dialogue;
@@ -65,6 +69,15 @@ public class DialogueScreenHandler extends ScreenHandler {
 
     public Text getCurrentText() {
         return this.dialogue.getCurrentText();
+    }
+
+    public List<String> getCurrentIllustrations() {
+        return this.dialogue.getCurrentIllustrations();
+    }
+
+    @Nullable
+    public DialogueIllustration getIllustration(String name) {
+        return this.dialogue.getIllustration(name);
     }
 
     public ImmutableList<AvailableChoice> getAvailableChoices() {

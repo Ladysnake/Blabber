@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -24,15 +24,18 @@ import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.api.DialogueIllustration;
+import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
-public record DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, DialogueLayout layout) {
+public record DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, Map<String, DialogueIllustration> illustrations, DialogueLayout layout) {
     public static final Codec<DialogueTemplate> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
             Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states),
+            Codec.unboundedMap(Codec.STRING, DialogueIllustrationType.CODEC).optionalFieldOf("illustrations", Collections.emptyMap()).forGetter(DialogueTemplate::illustrations),
             DialogueLayout.CODEC.optionalFieldOf("layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
     ).apply(instance, DialogueTemplate::new));
 
@@ -40,30 +43,45 @@ public record DialogueTemplate(String start, boolean unskippable, Map<String, Di
         buf.writeString(dialogue.start());
         buf.writeBoolean(dialogue.unskippable());
         buf.writeMap(dialogue.states(), PacketByteBuf::writeString, DialogueState::writeToPacket);
+        buf.writeMap(dialogue.illustrations(), PacketByteBuf::writeString, (b, i) -> {
+            // Write the type, then the packet itself.
+            b.writeRegistryValue(BlabberRegistrar.ILLUSTRATION_REGISTRY, i.getType());
+            i.getType().writeToPacketUnsafe(b, i);
+        });
         DialogueLayout.writeToPacket(buf, dialogue.layout());
     }
 
     public DialogueTemplate(PacketByteBuf buf) {
-        this(buf.readString(), buf.readBoolean(), buf.readMap(PacketByteBuf::readString, DialogueState::new), new DialogueLayout(buf));
+        this(buf.readString(), buf.readBoolean(), buf.readMap(PacketByteBuf::readString, DialogueState::new), buf.readMap(PacketByteBuf::readString, b -> {
+            DialogueIllustrationType<?> type = b.readRegistryValue(BlabberRegistrar.ILLUSTRATION_REGISTRY);
+            assert type != null;
+            return type.readFromPacket(b);
+        }), new DialogueLayout(buf));
     }
 
     public DialogueTemplate parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
-        Map<String, DialogueState> parsedStates = new HashMap<>();
+        Map<String, DialogueState> parsedStates = new HashMap<>(states().size());
 
         for (Map.Entry<String, DialogueState> state : states().entrySet()) {
             parsedStates.put(state.getKey(), state.getValue().parseText(source, sender));
+        }
+
+        Map<String, DialogueIllustration> parsedIllustrations = new HashMap<>(illustrations().size());
+        for (Map.Entry<String, DialogueIllustration> illustration : illustrations().entrySet()) {
+            parsedIllustrations.put(illustration.getKey(), illustration.getValue().parseText(source, sender));
         }
 
         return new DialogueTemplate(
                 start(),
                 unskippable(),
                 parsedStates,
+                parsedIllustrations,
                 layout()
         );
     }
 
     @Override
     public String toString() {
-        return "DialogueTemplate[start=%s, states=%s%s]".formatted(start, states, unskippable ? " (unskippable)" : "");
+        return "DialogueTemplate[start=%s, states=%s, illustrations=%s%s]".formatted(start, states, illustrations, unskippable ? " (unskippable)" : "");
     }
 }

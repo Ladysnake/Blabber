@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -30,6 +30,7 @@ import net.minecraft.util.math.MathHelper;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
+import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
@@ -218,6 +219,14 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         assert client != null;
 
         int y = mainTextMinY;
+
+        for (String illustrationName : this.handler.getCurrentIllustrations()) {
+            DialogueIllustration illustration = this.handler.getIllustration(illustrationName);
+            if (illustration != null) {
+                illustration.render(context, this.textRenderer, 0, 0, mouseX, mouseY, tickDelta);
+            }
+        }
+
         Text mainText = this.handler.getCurrentText();
 
         context.drawTextWrapped(this.textRenderer, mainText, mainTextMinX, y, mainTextMaxWidth, mainTextColor);
@@ -230,6 +239,14 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             boolean selected = i == this.selectedChoice;
             int choiceColor = choice.unavailabilityMessage().isPresent() ? lockedChoiceColor : selected ? selectedChoiceColor : this.choiceColor;
             context.drawTextWrapped(this.textRenderer, choice.text(), choiceListMinX, y, choiceListMaxWidth, choiceColor);
+
+            for (String illustrationName : choice.illustrations()) {
+                DialogueIllustration illustration = this.handler.getIllustration(illustrationName);
+                if (illustration != null) {
+                    illustration.render(context, this.textRenderer, choiceListMinX, y, mouseX, mouseY, tickDelta);
+                }
+            }
+
             if (selected) {
                 if (choice.unavailabilityMessage().isPresent()) {
                     context.drawGuiTexture(lockIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);

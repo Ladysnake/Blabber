@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2023 Ladysnake
+ * Copyright (C) 2022-2024 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -41,6 +41,7 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueActionV2;
+import org.ladysnake.blabber.api.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 import org.ladysnake.blabber.impl.common.packets.DialogueListPacket;
@@ -62,6 +63,12 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final Registry<Codec<? extends DialogueActionV2>> ACTION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
     ).buildAndRegister();
+
+    public static final RegistryKey<Registry<DialogueIllustrationType<?>>> ILLUSTRATION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_illustrations"));
+    public static final Registry<DialogueIllustrationType<?>> ILLUSTRATION_REGISTRY = FabricRegistryBuilder.from(
+            new SimpleRegistry<>(ILLUSTRATION_REGISTRY_KEY, Lifecycle.stable(), false)
+    ).buildAndRegister();
+
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(
             Blabber.id("available_dialogues"),
             (context, builder) -> CommandSource.suggestIdentifiers(DialogueRegistry.getIds(), builder)
