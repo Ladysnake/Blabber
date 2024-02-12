@@ -6,6 +6,9 @@ Updated to 1.20.4
 **Mod Interactions**
 - REI no longer appears on the RPG dialogue screen variant
 
+**Additions**
+- Dialogues can now render extra features, such as entities (either non-existent, or via a selector), or items.
+
 ------------------------------------------------------
 Version 1.3.1
 ------------------------------------------------------

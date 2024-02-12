@@ -88,6 +88,16 @@ public final class DialogueValidator {
             }
         }
 
+        // Verify that all illustrations are real. We're doing this here because this is a class and not a record
+        // So we have our own constructor.
+        for (Map.Entry<String, DialogueState> state : dialogue.states().entrySet()) {
+            for (String illustration : state.getValue().illustrations()) {
+                if (!dialogue.illustrations().containsKey(illustration)) {
+                    return new ValidationResult.Error.NonexistentIllustration(state.getKey(), illustration);
+                }
+            }
+        }
+
         return warnings.isEmpty() ? ValidationResult.success() : new ValidationResult.Warnings(warnings);
     }
 

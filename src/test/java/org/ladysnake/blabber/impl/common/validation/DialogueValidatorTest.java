@@ -63,6 +63,12 @@ public class DialogueValidatorTest {
         Assertions.assertTrue(DialogueValidator.validateStructure(dialogue) instanceof ValidationResult.Error.SoftLock, "Dialogue validation should detect looping dialogues");
     }
 
+    @Test
+    public void validationFailsOnInvalidReference() {
+        DialogueTemplate dialogue = loadDialogue("/invalid_reference.json");
+        Assertions.assertTrue(DialogueValidator.validateStructure(dialogue) instanceof ValidationResult.Error.NonexistentIllustration, "Dialogue validation should detect invalid illustration reference");
+    }
+
     private static DialogueTemplate loadDialogue(String name) {
         return Util.getResult(DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name))), JsonElement.class)), s -> {
             throw new GameTestException(s);

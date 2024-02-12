@@ -32,11 +32,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueActionV2;
-import org.ladysnake.blabber.impl.common.BlabberCommand;
-import org.ladysnake.blabber.impl.common.BlabberRegistrar;
-import org.ladysnake.blabber.impl.common.CommandDialogueAction;
-import org.ladysnake.blabber.impl.common.DialogueInitializationException;
-import org.ladysnake.blabber.impl.common.PlayerDialogueTracker;
+import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.impl.common.*;
+import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationCollection;
+import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationItem;
+import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationNbtEntity;
+import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationSelectorEntity;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 
 public final class Blabber implements ModInitializer {
@@ -137,10 +138,24 @@ public final class Blabber implements ModInitializer {
 		Registry.register(BlabberRegistrar.ACTION_REGISTRY, actionId, codec);
 	}
 
+	/**
+	 * Register a configurable {@link DialogueIllustrationType} to draw extra features in dialogues.
+	 *
+	 * @param illustrationId the identifier used to reference the illustration type in dialogue definition files
+	 * @param type           the dialogue illustration type
+	 */
+	public static void registerIllustration(Identifier illustrationId, DialogueIllustrationType<?> type) {
+		Registry.register(BlabberRegistrar.ILLUSTRATION_REGISTRY, illustrationId, type);
+	}
+
 	@Override
 	public void onInitialize() {
 		BlabberRegistrar.init();
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> BlabberCommand.register(dispatcher));
 		registerAction(id("command"), CommandDialogueAction.CODEC);
+		registerIllustration(id("group"), DialogueIllustrationCollection.TYPE);
+		registerIllustration(id("item"), DialogueIllustrationItem.TYPE);
+		registerIllustration(id("fake_entity"), DialogueIllustrationNbtEntity.TYPE);
+		registerIllustration(id("entity"), DialogueIllustrationSelectorEntity.TYPE);
 	}
 }

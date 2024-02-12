@@ -31,7 +31,7 @@ public sealed interface ValidationResult {
 
     record Warnings(List<Warning> warnings) implements ValidationResult {
         public String message() {
-            return warnings().stream().map(Warning::message).collect(Collectors.joining());
+            return warnings().stream().map(Warning::message).collect(Collectors.joining(", "));
         }
     }
 
@@ -71,6 +71,13 @@ public sealed interface ValidationResult {
             @Override
             public String message() {
                 return state() + " does not have any path to the end of the dialogue";
+            }
+        }
+
+        record NonexistentIllustration(String state, String illustration) implements Error {
+            @Override
+            public String message() {
+                return state() + " references non-existent illustration " + illustration();
             }
         }
     }

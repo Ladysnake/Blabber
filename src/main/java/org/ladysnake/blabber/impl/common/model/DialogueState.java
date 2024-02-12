@@ -31,13 +31,11 @@ import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Optional;
+import java.util.*;
 
 public record DialogueState(
         Text text,
+        List<String> illustrations,
         List<DialogueChoice> choices,
         Optional<InstancedDialogueAction<?>> action,
         ChoiceResult type
@@ -45,6 +43,7 @@ public record DialogueState(
     public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             // Kinda optional, but we still want errors if you got it wrong >:(
             Codecs.createStrictOptionalFieldCodec(TextCodecs.CODEC, "text", Text.empty()).forGetter(DialogueState::text),
+            Codecs.createStrictOptionalFieldCodec(Codec.list(Codec.STRING), "illustrations", Collections.emptyList()).forGetter(DialogueState::illustrations),
             Codecs.createStrictOptionalFieldCodec(Codec.list(DialogueChoice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
             Codecs.createStrictOptionalFieldCodec(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
             Codecs.createStrictOptionalFieldCodec(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
@@ -52,13 +51,14 @@ public record DialogueState(
 
     public static void writeToPacket(PacketByteBuf buf, DialogueState state) {
         buf.writeText(state.text());
+        buf.writeCollection(state.illustrations(), PacketByteBuf::writeString);
         buf.writeCollection(state.choices(), DialogueChoice::writeToPacket);
         buf.writeEnumConstant(state.type());
         // not writing the action, the client most likely does not need to know about it
     }
 
     public DialogueState(PacketByteBuf buf) {
-        this(buf.readText(), buf.readList(DialogueChoice::new), Optional.empty(), buf.readEnumConstant(ChoiceResult.class));
+        this(buf.readText(), buf.readCollection(ArrayList::new, PacketByteBuf::readString), buf.readList(DialogueChoice::new), Optional.empty(), buf.readEnumConstant(ChoiceResult.class));
     }
 
     public String getNextState(int choice) {
@@ -66,12 +66,14 @@ public record DialogueState(
     }
 
     public DialogueState parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
-        List<DialogueChoice> parsedChoices = new ArrayList<>();
+        List<DialogueChoice> parsedChoices = new ArrayList<>(choices().size());
         for (DialogueChoice choice : choices()) {
             parsedChoices.add(choice.parseText(source, sender));
         }
+
         return new DialogueState(
                 Texts.parse(source, text(), sender, 0),
+                illustrations(),
                 parsedChoices,
                 action(),
                 type()
@@ -82,6 +84,7 @@ public record DialogueState(
     public String toString() {
         return "DialogueState{" +
                 "text='" + StringUtils.abbreviate(text.getString(), 20) + '\'' +
+                ", illustrations=" + illustrations +
                 ", choices=" + choices +
                 ", type=" + type
                 + this.action().map(InstancedDialogueAction::toString).map(s -> ", action=" + s).orElse("")
