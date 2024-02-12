@@ -15,14 +15,11 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common.machine;
+@FieldsAreNonnullByDefault
+@MethodsReturnNonnullByDefault
+@ApiStatus.Internal
+package org.ladysnake.blabber.impl.common.illustrations;
 
-import net.minecraft.text.Text;
-
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
-
-public record AvailableChoice(int originalChoiceIndex, Text text, List<String> illustrations, Optional<Text> unavailabilityMessage) {
-    public static final AvailableChoice ESCAPE_HATCH = new AvailableChoice(-1, Text.translatable("blabber:dialogue.escape_hatch"), Collections.emptyList(), Optional.empty());
-}
+import net.minecraft.util.annotation.FieldsAreNonnullByDefault;
+import net.minecraft.util.annotation.MethodsReturnNonnullByDefault;
+import org.jetbrains.annotations.ApiStatus;

@@ -1,0 +1,20 @@
+{
+  "states": {
+    "start": {
+      "text": "It takes determination to ascend to the top of this world, mortal. What do you want?",
+      "choices": [
+        {
+          "text": "I came here to demand a favour.",
+          "next": "b"
+        }
+      ],
+      "illustrations": ["nonexistent"]
+    },
+    "b": {
+      "text": "",
+      "choices": [],
+      "type": "end_dialogue"
+    }
+  },
+  "start_at": "start"
+}

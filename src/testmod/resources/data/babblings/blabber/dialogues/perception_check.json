@@ -76,7 +76,8 @@
       "text": "You perceive one of the hooded figures to be the child that you have been looking for all week !",
       "choices": [
         {
-          "text": "Bring them to their parents.",
+          "text": "      Bring them to their parents.",
+          "illustrations": ["reward"],
           "next": "end_success"
         }
       ]
@@ -135,5 +136,16 @@
       },
       "type": "end_dialogue"
     }
+  },
+  "illustrations": {
+    "reward": [{
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:gold_nugget",
+        "Count": 15
+      },
+      "x": 0,
+      "y": -4
+    }]
   }
 }
