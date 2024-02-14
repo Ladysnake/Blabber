@@ -52,6 +52,10 @@ public final class DialogueValidator {
                     );
                 }
             }
+            // TODO Java 21 replace with pattern matching switch to handle all possible results
+            if (validateIllustrations(dialogue, state) instanceof ValidationResult.Error error) {
+                return error;
+            }
         }
 
         while (!waitList.isEmpty()) {
@@ -91,14 +95,29 @@ public final class DialogueValidator {
         // Verify that all illustrations are real. We're doing this here because this is a class and not a record
         // So we have our own constructor.
         for (Map.Entry<String, DialogueState> state : dialogue.states().entrySet()) {
-            for (String illustration : state.getValue().illustrations()) {
-                if (!dialogue.illustrations().containsKey(illustration)) {
-                    return new ValidationResult.Error.NonexistentIllustration(state.getKey(), illustration);
-                }
-            }
         }
 
         return warnings.isEmpty() ? ValidationResult.success() : new ValidationResult.Warnings(warnings);
+    }
+
+    private static ValidationResult validateIllustrations(DialogueTemplate dialogue, Map.Entry<String, DialogueState> state) {
+        List<String> illustrations = new ArrayList<>(state.getValue().illustrations());
+
+        for (DialogueChoice c : state.getValue().choices()) {
+            illustrations.addAll(c.illustrations());
+        }
+
+        if (!illustrations.isEmpty() && !state.getValue().type().allowsIllustrations()) {
+            return new ValidationResult.Error.InvalidIllustratedState(state.getKey(), state.getValue().type(), illustrations);
+        }
+
+        for (String illustration : illustrations) {
+            if (!dialogue.illustrations().containsKey(illustration)) {
+                return new ValidationResult.Error.NonexistentIllustration(state.getKey(), illustration);
+            }
+        }
+
+        return ValidationResult.success();
     }
 
     private enum Reachability {

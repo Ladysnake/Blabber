@@ -18,5 +18,15 @@
 package org.ladysnake.blabber.impl.common.model;
 
 public enum ChoiceResult {
-    DEFAULT, END_DIALOGUE, ASK_CONFIRMATION
+    DEFAULT(true), END_DIALOGUE(false), ASK_CONFIRMATION(false);
+
+    private final boolean allowsIllustrations;
+
+    ChoiceResult(boolean allowsIllustrations) {
+        this.allowsIllustrations = allowsIllustrations;
+    }
+
+    public boolean allowsIllustrations() {
+        return this.allowsIllustrations;
+    }
 }
