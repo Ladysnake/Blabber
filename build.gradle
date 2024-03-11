@@ -18,6 +18,10 @@ chenille {
 	javaVersion = project.java_version.toInteger()
 }
 
+sourceSets {
+	reiDummy
+}
+
 repositories {
 	chenille.repositories.allCommonRepositories()
 	maven {
@@ -41,8 +45,9 @@ dependencies {
 	modIncludeImplementation(libs.cca.base)
 	modIncludeImplementation(libs.cca.entity)
 	modIncludeImplementation(libs.permissionsApi)
-	modCompileOnly(libs.rei.api)
-	modCompileOnly(libs.emi)
+	modLocalImplementation(libs.rei.api)
+	compileOnly(sourceSets.reiDummy.output)
+    modCompileOnly(libs.emi)
 
 	compileOnly(libs.mcAnnotations)
 
@@ -62,6 +67,10 @@ test {
 	testLogging {
 		events("passed", "skipped", "failed")
 	}
+}
+
+license {
+	exclude 'me/shedaniel/**/*'
 }
 
 processResources {

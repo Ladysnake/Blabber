@@ -1,4 +1,9 @@
 ------------------------------------------------------
+Version 1.4.3-mc1.20.1
+------------------------------------------------------
+- Fixed compatibility with REI when loaded through Sinytra Connector
+
+------------------------------------------------------
 Version 1.4.2-mc1.20.1
 ------------------------------------------------------
 - Fixed `/reload` not working when adding or removing dialogues
