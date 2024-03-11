@@ -7,6 +7,9 @@ Version 1.5.0
   - Added 3 default illustration types : in-world entities, fake entities, and items
   - Illustrations can also be added to individual choices, in which case they are positioned relative to the corresponding choice
 
+**Mod Interactions**
+- Fixed compatibility with REI when loaded through Sinytra Connector
+
 ------------------------------------------------------
 Version 1.4.0
 ------------------------------------------------------

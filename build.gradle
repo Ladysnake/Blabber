@@ -3,7 +3,6 @@ import net.fabricmc.loom.task.RemapJarTask
 plugins {
 	id 'fabric-loom' version "1.4.+"
 	id 'io.github.ladysnake.chenille' version '0.12.0'
-	id 'io.github.juuxel.loom-quiltflower' version "1.6.0"
 }
 
 archivesBaseName = project.archives_base_name
@@ -17,6 +16,10 @@ chenille {
 
 	license = project.license_header
 	javaVersion = project.java_version.toInteger()
+}
+
+sourceSets {
+	reiDummy
 }
 
 repositories {
@@ -43,7 +46,8 @@ dependencies {
 	modIncludeImplementation(libs.cca.entity)
 	modIncludeImplementation(libs.permissionsApi)
 	modLocalImplementation(libs.rei.api)
-	modLocalImplementation(libs.emi)
+	compileOnly(sourceSets.reiDummy.output)
+    modLocalImplementation(libs.emi)
 
 	compileOnly(libs.mcAnnotations)
 
@@ -63,6 +67,10 @@ test {
 	testLogging {
 		events("passed", "skipped", "failed")
 	}
+}
+
+license {
+	exclude 'me/shedaniel/**/*'
 }
 
 processResources {
