@@ -92,11 +92,6 @@ public final class DialogueValidator {
             }
         }
 
-        // Verify that all illustrations are real. We're doing this here because this is a class and not a record
-        // So we have our own constructor.
-        for (Map.Entry<String, DialogueState> state : dialogue.states().entrySet()) {
-        }
-
         return warnings.isEmpty() ? ValidationResult.success() : new ValidationResult.Warnings(warnings);
     }
 

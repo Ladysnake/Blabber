@@ -135,9 +135,11 @@ public final class DialogueStateMachine {
         for (Map.Entry<String, Int2BooleanMap> conditionalState : this.conditionalChoices.entrySet()) {
             List<DialogueChoice> availableChoices = getStates().get(conditionalState.getKey()).choices();
             for (Int2BooleanMap.Entry conditionalChoice : conditionalState.getValue().int2BooleanEntrySet()) {
+                Identifier predicateId = availableChoices.get(conditionalChoice.getIntKey()).condition().orElseThrow().predicate();
                 LootCondition condition = context.getWorld().getServer().getLootManager().getElement(
-                        LootDataType.PREDICATES, availableChoices.get(conditionalChoice.getIntKey()).condition().orElseThrow().predicate()
+                        LootDataType.PREDICATES, predicateId
                 );
+                if (condition == null) throw new IllegalStateException("Could not find predicate " + predicateId);
                 boolean testResult = runTest(condition, context);
                 if (testResult != conditionalChoice.setValue(testResult)) {
                     if (ret == null) ret = new ChoiceAvailabilityPacket();
