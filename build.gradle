@@ -111,6 +111,31 @@ tasks.register("remapStandaloneJar", RemapJarTask) {
 
 assemble.dependsOn(remapStandaloneJar)
 
+
+var testmodJar = tasks.register('testmodJar', Jar) {
+	dependsOn testmodClasses
+
+	archiveBaseName.set('Babblings')
+	archiveClassifier.set('dev')
+	from(sourceSets.testmod.output) {
+		include 'fabric.mod.json'
+		expand 'version': project.version
+	}
+	from(sourceSets.testmod.output) {
+		exclude 'fabric.mod.json'
+	}
+}
+
+var remapTestmodJar = tasks.register('remapTestmodJar', RemapJarTask) {
+	dependsOn project.testmodJar
+
+	archiveBaseName.set('Babblings')
+	inputFile.set(testmodJar.get().archiveFile)
+	addNestedDependencies = false
+}
+
+build.dependsOn(remapTestmodJar)
+
 chenille {
 	configurePublishing {
 		mainArtifact = remapStandaloneJar.archiveFile
