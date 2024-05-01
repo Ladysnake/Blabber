@@ -173,10 +173,14 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
                 }
             }
 
-            ChoiceAvailabilityPacket update = this.updateConditions(serverPlayer, this.currentDialogue);
+            try {
+                ChoiceAvailabilityPacket update = this.updateConditions(serverPlayer, this.currentDialogue);
 
-            if (update != null) {
-                ServerPlayNetworking.send(serverPlayer, update);
+                if (update != null) {
+                    ServerPlayNetworking.send(serverPlayer, update);
+                }
+            } catch (CommandSyntaxException e) {
+                throw new IllegalStateException("Error while updating dialogue conditions", e);
             }
         }
     }
@@ -189,7 +193,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
     }
 
-    private @Nullable ChoiceAvailabilityPacket updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) {
+    private @Nullable ChoiceAvailabilityPacket updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) throws CommandSyntaxException {
         if (currentDialogue.hasConditions()) {
             return currentDialogue.updateConditions(new LootContext.Builder(
                     new LootContextParameterSet.Builder(player.getServerWorld())
