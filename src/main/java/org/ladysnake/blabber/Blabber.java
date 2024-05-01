@@ -43,6 +43,7 @@ import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationFakeP
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationItem;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationNbtEntity;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationSelectorEntity;
+import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationTexture;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 
 public final class Blabber implements ModInitializer {
@@ -163,5 +164,6 @@ public final class Blabber implements ModInitializer {
 		registerIllustration(id("fake_entity"), DialogueIllustrationNbtEntity.TYPE);
 		registerIllustration(id("fake_player"), DialogueIllustrationFakePlayer.TYPE);
 		registerIllustration(id("entity"), DialogueIllustrationSelectorEntity.TYPE);
+		registerIllustration(id("texture"), DialogueIllustrationTexture.TYPE);
 	}
 }

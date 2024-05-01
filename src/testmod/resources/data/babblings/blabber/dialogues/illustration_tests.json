@@ -23,6 +23,10 @@
           "next": "diamond"
         },
         {
+          "text": "Texture: Blabber Icon",
+          "next": "blabber"
+        },
+        {
           "text": "Exit",
           "next": "end"
         }
@@ -101,6 +105,20 @@
         }
       ],
       "illustrations": ["diamond"]
+    },
+    "blabber": {
+      "text": "Texture: blabber:icon",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["blabber"]
     },
     "end": {
       "text": "",
@@ -227,7 +245,16 @@
       "y": 150,
       "scale": 1,
       "show_tooltip": false
-    }]
+    }],
+    "blabber": {
+      "type": "blabber:texture",
+      "texture": "blabber:icon.png",
+      "anchor": "slot_2",
+      "x1": -24,
+      "y1": -24,
+      "x2": 24,
+      "y2": 24
+    }
   },
   "start_at": "start"
 }
