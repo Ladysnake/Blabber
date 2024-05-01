@@ -63,15 +63,16 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     public void startDialogue(Identifier id, @Nullable Entity interlocutor) throws CommandSyntaxException {
         DialogueTemplate template = DialogueRegistry.getOrEmpty(id)
                 .orElseThrow(() -> new IllegalArgumentException("Unknown dialogue " + id));
-        this.startDialogue0(
+        DialogueStateMachine currentDialogue = this.startDialogue0(
                 id,
                 template,
                 template.start(),
                 interlocutor
         );
+        currentDialogue.getStartAction().ifPresent(a -> a.action().handle((ServerPlayerEntity) this.player, interlocutor));
     }
 
-    private void startDialogue0(Identifier id, DialogueTemplate template, @Nullable String start, @Nullable Entity interlocutor) throws CommandSyntaxException {
+    private DialogueStateMachine startDialogue0(Identifier id, DialogueTemplate template, @Nullable String start, @Nullable Entity interlocutor) throws CommandSyntaxException {
         ServerPlayerEntity serverPlayer = ((ServerPlayerEntity) this.player);
         this.interlocutor = interlocutor;
         try {
@@ -79,6 +80,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
             this.currentDialogue = new DialogueStateMachine(id, parsedTemplate, start);
             this.updateConditions(serverPlayer, this.currentDialogue);
             this.openDialogueScreen();
+            return this.currentDialogue;
         } catch (CommandSyntaxException e) {
             this.interlocutor = null;
             throw e;
@@ -109,7 +111,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
             this.endDialogue();
 
             DialogueRegistry.getOrEmpty(oldDialogue.getId())
-                    .ifPresent(template -> this.tryStartDialogue(
+                    .ifPresent(template -> this.tryResumeDialogue(
                             oldDialogue.getId(),
                             template,
                             oldDialogue.getCurrentStateKey(),
@@ -157,7 +159,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
                 } else {
                     interlocutor = null;
                 }
-                tryStartDialogue(saved.dialogueId(), saved.template(), saved.selectedState(), interlocutor);
+                tryResumeDialogue(saved.dialogueId(), saved.template(), saved.selectedState(), interlocutor);
             }
             this.resumptionAttempts = 0;
             this.deserializedState = null;
@@ -181,11 +183,11 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
     }
 
-    private void tryStartDialogue(Identifier id, DialogueTemplate template, String selectedState, Entity interlocutor) {
+    private void tryResumeDialogue(Identifier id, DialogueTemplate template, String selectedState, Entity interlocutor) {
         try {
             this.startDialogue0(id, template, selectedState, interlocutor);
         } catch (CommandSyntaxException e) {
-            Blabber.LOGGER.error("(Blabber) Failed to load dialogue template " + id, e);
+            Blabber.LOGGER.error("(Blabber) Failed to load dialogue template {}", id, e);
         }
     }
 
