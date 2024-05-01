@@ -179,6 +179,10 @@ public final class DialogueStateMachine {
         return this.conditionalChoices.getOrDefault(this.currentStateKey, Int2BooleanMaps.EMPTY_MAP).getOrDefault(choice, true);
     }
 
+    public Optional<InstancedDialogueAction<?>> getStartAction() {
+        return this.getStates().get(this.template.start()).action();
+    }
+
     /**
      * @throws IllegalStateException if making an invalid choice
      */
