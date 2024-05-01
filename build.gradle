@@ -2,7 +2,7 @@ import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
 	id 'fabric-loom' version "1.4.+"
-	id 'io.github.ladysnake.chenille' version '0.12.0'
+	id 'io.github.ladysnake.chenille' version '0.12.1'
 }
 
 archivesBaseName = project.archives_base_name
@@ -12,6 +12,7 @@ group = project.maven_group
 chenille {
 	configureTestmod {
 		withBaseTestRuns()
+        withDependencyConfiguration()
 	}
 
 	license = project.license_header
@@ -54,7 +55,7 @@ dependencies {
 	modLocalRuntime(libs.modmenu)
 
 	// Test dependencies
-	modImplementation(libs.elmendorf)
+	modTestmodImplementation(libs.elmendorf)
 
 	testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
 	testImplementation "net.fabricmc:fabric-loader-junit:${project.loader_version}"
