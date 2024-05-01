@@ -1,4 +1,15 @@
 ------------------------------------------------------
+Version 1.5.0-mc1.20.1
+------------------------------------------------------
+
+**Additions**
+- Dialogues can now contain *illustrations*, extra visual content that can be positioned anywhere on the screen *(thanks Sekoia !)*
+  - Added 3 default illustration types : in-world entities, fake entities, and items
+  - Illustrations can also be added to individual choices, in which case they are positioned relative to the corresponding choice
+  - This feature should be considered experimental on 1.20.1, the entity illustrations in particular do not render as well as they do in later versions
+- Added Chinese localization (thanks SettingDust and nageih !)
+
+------------------------------------------------------
 Version 1.4.3-mc1.20.1
 ------------------------------------------------------
 - Fixed compatibility with REI when loaded through Sinytra Connector
