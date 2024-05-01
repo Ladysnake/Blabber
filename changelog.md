@@ -6,6 +6,7 @@ Version 1.5.0
 - Dialogues can now contain *illustrations*, extra visual content that can be positioned anywhere on the screen *(thanks Sekoia !)*
   - Added 3 default illustration types : in-world entities, fake entities, and items
   - Illustrations can also be added to individual choices, in which case they are positioned relative to the corresponding choice
+- Added Chinese localization (thanks SettingDust and nageih !)
 
 **Mod Interactions**
 - Fixed compatibility with REI when loaded through Sinytra Connector
