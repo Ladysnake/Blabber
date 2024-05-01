@@ -18,6 +18,8 @@
 package org.ladysnake.blabber.impl.common.machine;
 
 import com.google.common.collect.ImmutableList;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import com.mojang.brigadier.exceptions.DynamicCommandExceptionType;
 import it.unimi.dsi.fastutil.ints.Int2BooleanMap;
 import it.unimi.dsi.fastutil.ints.Int2BooleanMaps;
 import it.unimi.dsi.fastutil.ints.Int2BooleanOpenHashMap;
@@ -51,6 +53,7 @@ import java.util.function.Consumer;
 import java.util.stream.IntStream;
 
 public final class DialogueStateMachine {
+    private static final DynamicCommandExceptionType INVALID_PREDICATE_EXCEPTION = new DynamicCommandExceptionType(id -> Text.translatable("blabber:commands.dialogue.start.predicate.invalid", String.valueOf(id)));
 
     private final Identifier id;
     private final DialogueTemplate template;
@@ -130,7 +133,7 @@ public final class DialogueStateMachine {
         return !this.conditionalChoices.isEmpty();
     }
 
-    public @Nullable ChoiceAvailabilityPacket updateConditions(LootContext context) {
+    public @Nullable ChoiceAvailabilityPacket updateConditions(LootContext context) throws CommandSyntaxException {
         ChoiceAvailabilityPacket ret = null;
         for (Map.Entry<String, Int2BooleanMap> conditionalState : this.conditionalChoices.entrySet()) {
             List<DialogueChoice> availableChoices = getStates().get(conditionalState.getKey()).choices();
@@ -139,7 +142,7 @@ public final class DialogueStateMachine {
                 LootCondition condition = context.getWorld().getServer().getLootManager().getElement(
                         LootDataType.PREDICATES, predicateId
                 );
-                if (condition == null) throw new IllegalStateException("Could not find predicate " + predicateId);
+                if (condition == null) throw INVALID_PREDICATE_EXCEPTION.create(predicateId);
                 boolean testResult = runTest(condition, context);
                 if (testResult != conditionalChoice.setValue(testResult)) {
                     if (ret == null) ret = new ChoiceAvailabilityPacket();
