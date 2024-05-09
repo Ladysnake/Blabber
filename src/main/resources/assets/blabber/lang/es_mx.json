@@ -1,0 +1,8 @@
+{
+  "blabber:commands.dialogue.start.invalid": "No hay un diálogo con el tipo \"%s\"",
+  "blabber:commands.dialogue.start.predicate.invalid": "No hay un predicado con el tipo \"%s\"",
+  "blabber:commands.dialogue.start.success": "Se inició el diálogo \"%s\" para %s",
+  "blabber:dialogue.instructions": "Pase el cursor o presione [%s]/[%s] para seleccionar una opción, luego haga clic o presione [%s] para confirmarla",
+  "blabber:dialogue.locked_choice": "Esta opción tiene requisitos previos no cumplidos",
+  "blabber:dialogue.escape_hatch": "[Blabber] §5Parece que alguien cometió un error y ahora no tienes ninguna opción disponible. §e§lDeberías reportarlo,§r§5 pero mientras tanto, aquí tienes una salida de emergencia."
+}
