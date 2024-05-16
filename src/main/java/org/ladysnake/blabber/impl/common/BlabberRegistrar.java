@@ -101,5 +101,6 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     @Override
     public void registerEntityComponentFactories(EntityComponentFactoryRegistry registry) {
         registry.registerForPlayers(PlayerDialogueTracker.KEY, PlayerDialogueTracker::new, RespawnCopyStrategy.ALWAYS_COPY);
+        registry.registerForPlayers(BlabberDebugComponent.KEY, BlabberDebugComponent::new, RespawnCopyStrategy.ALWAYS_COPY);
     }
 }

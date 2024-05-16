@@ -7,6 +7,7 @@
   "mixins": [
     "EntitySelectorMixin",
     "EntitySelectorReaderMixin",
+    "PlayerManagerMixin",
     "compat.emi.EmiScreenManagerMixin"
   ],
   "injectors": {

@@ -31,6 +31,7 @@ import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueIllustration;
+import org.ladysnake.blabber.impl.common.BlabberDebugComponent;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
@@ -217,6 +218,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         super.render(context, mouseX, mouseY, tickDelta);
 
         assert client != null;
+        assert client.player != null;
 
         int y = mainTextMinY;
 
@@ -259,6 +261,14 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         }
 
         context.drawTextWrapped(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0x808080);
+
+        if (BlabberDebugComponent.get(client.player).debugEnabled()) {
+            renderDebugInfo(context, mouseX, mouseY);
+        }
+    }
+
+    protected void renderDebugInfo(DrawContext context, int mouseX, int mouseY) {
+        context.drawTooltip(this.textRenderer, Text.literal("X: " + mouseX + ", Y: " + mouseY), MathHelper.clamp(mouseX, -10, this.width + 10), MathHelper.clamp(mouseY, 15, this.height + 15));
     }
 
     @Override

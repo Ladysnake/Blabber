@@ -45,7 +45,8 @@
   },
   "custom": {
     "cardinal-components": [
-      "blabber:dialogue_tracker"
+      "blabber:dialogue_tracker",
+      "blabber:debug"
     ]
   }
 }
