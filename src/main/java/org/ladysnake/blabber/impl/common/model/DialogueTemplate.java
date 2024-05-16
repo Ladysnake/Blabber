@@ -23,20 +23,23 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public record DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, Map<String, DialogueIllustration> illustrations, DialogueLayout layout) {
     public static final Codec<DialogueTemplate> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
             Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states),
-            Codec.unboundedMap(Codec.STRING, DialogueIllustrationType.CODEC).optionalFieldOf("illustrations", Collections.emptyMap()).forGetter(DialogueTemplate::illustrations),
-            DialogueLayout.CODEC.optionalFieldOf("layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
+            Codecs.createStrictOptionalFieldCodec(Codec.unboundedMap(Codec.STRING, DialogueIllustrationType.CODEC), "illustrations", Collections.emptyMap()).forGetter(DialogueTemplate::illustrations),
+            Codecs.createStrictOptionalFieldCodec(DialogueLayout.CODEC, "layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
     ).apply(instance, DialogueTemplate::new));
 
     public static void writeToPacket(PacketByteBuf buf, DialogueTemplate dialogue) {

@@ -72,6 +72,7 @@ test {
 
 license {
 	exclude 'me/shedaniel/**/*'
+	exclude 'org/ladysnake/blabber/impl/common/validation/EitherCodecButGood.java'
 }
 
 processResources {

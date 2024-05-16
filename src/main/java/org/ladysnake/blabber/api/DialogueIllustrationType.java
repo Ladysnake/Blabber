@@ -23,6 +23,7 @@ import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.ApiStatus;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationCollection;
+import org.ladysnake.blabber.impl.common.validation.EitherCodecButGood;
 
 import java.util.function.BiConsumer;
 import java.util.function.Function;
@@ -33,7 +34,7 @@ import java.util.function.Function;
  */
 public final class DialogueIllustrationType<T extends DialogueIllustration> {
     public static final Codec<DialogueIllustration> CODEC = Codecs.createRecursive("illustration_type", self ->
-            Codecs.alternatively(
+            EitherCodecButGood.alternatively(
                     BlabberRegistrar.ILLUSTRATION_REGISTRY.getCodec()
                             .dispatch("type", DialogueIllustration::getType, DialogueIllustrationType::getCodec),
                     Codec.list(self).xmap(DialogueIllustrationCollection::new, DialogueIllustrationCollection::elements)
