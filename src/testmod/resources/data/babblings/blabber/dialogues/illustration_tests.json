@@ -19,6 +19,10 @@
           "next": "pyrofab"
         },
         {
+          "text": "Item: Diamond",
+          "next": "diamond"
+        },
+        {
           "text": "Exit",
           "next": "end"
         }
@@ -83,6 +87,20 @@
         }
       ],
       "illustrations": ["doctor4t"]
+    },
+    "diamond": {
+      "text": "Item: minecraft:diamond",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["diamond"]
     },
     "end": {
       "text": "",
@@ -163,7 +181,51 @@
         } ],
         "profileActions" : [ ]
       }
-    }
+    },
+    "diamond": [{
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "Count": 1
+      },
+      "x": 300,
+      "y": 100,
+      "scale": 5.0,
+      "show_tooltip": true
+    }, {
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:diamond_pickaxe",
+        "Count": 1,
+        "tag": {
+          "Damage": 16
+        }
+      },
+      "x": 100,
+      "y": 140,
+      "scale": 1,
+      "show_tooltip": true
+    }, {
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:diamond_hoe",
+        "Count": 1
+      },
+      "x": 140,
+      "y": 110,
+      "scale": 1.5,
+      "show_tooltip": false
+    }, {
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:diamond_block",
+        "Count": 33
+      },
+      "x": 105,
+      "y": 150,
+      "scale": 1,
+      "show_tooltip": false
+    }]
   },
   "start_at": "start"
 }
