@@ -63,7 +63,7 @@ public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationE
         int fakedMouseY = spec.stareAtY().map(s -> s + y + (spec().y1() + spec().y2()) / 2).orElse(mouseY);
         InventoryScreen.drawEntity(context,
                 x + spec().x1(),
-                y + spec().y2(),
+                y + spec().y1(),
                 x + spec().x2(),
                 y + spec().y2(),
                 spec().size(),
