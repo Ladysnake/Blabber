@@ -235,6 +235,7 @@ public final class DialogueStateMachine {
             }
         }
         if (allUnavailable) {
+            Blabber.LOGGER.warn("[Blabber] No choice available in state '{}' of {} ({} were all unavailable)", this.currentStateKey, this.id, availableChoices);
             newChoices.add(AvailableChoice.ESCAPE_HATCH);
         }
         return newChoices.build();
