@@ -17,15 +17,17 @@
  */
 package org.ladysnake.blabber.impl.common.illustrations;
 
+import com.mojang.authlib.GameProfile;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.EntityType;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.minecraft.client.network.OtherClientPlayerEntity;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
-import net.minecraft.registry.Registries;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -33,25 +35,21 @@ import org.ladysnake.blabber.api.DialogueIllustrationType;
 
 import java.util.Optional;
 
-public class DialogueIllustrationNbtEntity extends DialogueIllustrationEntity<DialogueIllustrationNbtEntity.Spec> {
+public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<DialogueIllustrationFakePlayer.Spec> {
     // Need to have a MapCodecCodec here, otherwise it will deserialize differently
-    private static final Codec<DialogueIllustrationNbtEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationNbtEntity::new, DialogueIllustrationNbtEntity::spec).codec();
-    public static final DialogueIllustrationType<DialogueIllustrationNbtEntity> TYPE = new DialogueIllustrationType<>(
+    private static final Codec<DialogueIllustrationFakePlayer> CODEC = Spec.CODEC.xmap(DialogueIllustrationFakePlayer::new, DialogueIllustrationFakePlayer::spec).codec();
+    public static final DialogueIllustrationType<DialogueIllustrationFakePlayer> TYPE = new DialogueIllustrationType<>(
             CODEC,
-            buf -> new DialogueIllustrationNbtEntity(new Spec(
-                    buf.readIdentifier(),
-                    buf.readInt(),
-                    buf.readInt(),
-                    buf.readInt(),
-                    buf.readInt(),
-                    buf.readInt(),
+            buf -> new DialogueIllustrationFakePlayer(new Spec(
+                    buf.readGameProfile(),
+                    buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(),
                     buf.readFloat(),
                     buf.readOptional(PacketByteBuf::readInt),
                     buf.readOptional(PacketByteBuf::readInt),
                     buf.readOptional(PacketByteBuf::readNbt)
             )),
             (buf, i) -> {
-                buf.writeIdentifier(i.spec().id());
+                buf.writeGameProfile(i.spec().profile());
                 buf.writeInt(i.spec().x1());
                 buf.writeInt(i.spec().y1());
                 buf.writeInt(i.spec().x2());
@@ -64,21 +62,8 @@ public class DialogueIllustrationNbtEntity extends DialogueIllustrationEntity<Di
             }
     );
 
-    public DialogueIllustrationNbtEntity(Spec spec) {
+    public DialogueIllustrationFakePlayer(Spec spec) {
         super(spec);
-    }
-
-    @Override
-    protected @Nullable LivingEntity getRenderedEntity(World world) {
-        EntityType<?> entityType = Registries.ENTITY_TYPE.getOrEmpty(spec().id()).orElse(null);
-        if (entityType == null) return null;
-
-        if (entityType.create(world) instanceof LivingEntity living) {
-            spec().data().ifPresent(living::readNbt);
-            return living;
-        }
-
-        return null;
     }
 
     @Override
@@ -86,10 +71,21 @@ public class DialogueIllustrationNbtEntity extends DialogueIllustrationEntity<Di
         return TYPE;
     }
 
-    public record Spec(Identifier id, int x1, int y1, int x2, int y2, int size, float yOff, Optional<Integer> stareAtX,
+    @Environment(EnvType.CLIENT)
+    @Override
+    protected @Nullable LivingEntity getRenderedEntity(World world) {
+        OtherClientPlayerEntity fakePlayer = new OtherClientPlayerEntity(
+                (ClientWorld) world,
+                this.spec().profile()
+        );
+        spec().data().ifPresent(fakePlayer::readNbt);
+        return fakePlayer;
+    }
+
+    public record Spec(GameProfile profile, int x1, int y1, int x2, int y2, int size, float yOff, Optional<Integer> stareAtX,
                        Optional<Integer> stareAtY, Optional<NbtCompound> data) implements DialogueIllustrationEntity.Spec {
         private static final MapCodec<Spec> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-                Identifier.CODEC.fieldOf("id").forGetter(Spec::id),
+                Codecs.GAME_PROFILE_WITH_PROPERTIES.fieldOf("profile").forGetter(Spec::profile),
                 Codec.INT.fieldOf("x1").forGetter(Spec::x1),
                 Codec.INT.fieldOf("y1").forGetter(Spec::y1),
                 Codec.INT.fieldOf("x2").forGetter(Spec::x2),

@@ -20,11 +20,8 @@ package org.ladysnake.blabber.impl.common.illustrations;
 import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.ingame.InventoryScreen;
 import net.minecraft.command.EntitySelector;
 import net.minecraft.command.EntitySelectorReader;
 import net.minecraft.entity.Entity;
@@ -32,14 +29,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.dynamic.Codecs;
+import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
 
 import java.util.Optional;
 
-public class DialogueIllustrationSelectorEntity implements DialogueIllustration {
-    public static final Codec<DialogueIllustrationSelectorEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec);
+public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEntity<DialogueIllustrationSelectorEntity.Spec> {
+    // Need to have a MapCodecCodec here, otherwise it will deserialize differently
+    public static final Codec<DialogueIllustrationSelectorEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec).codec();
 
     public static final DialogueIllustrationType<DialogueIllustrationSelectorEntity> TYPE = new DialogueIllustrationType<>(
             CODEC,
@@ -49,53 +47,28 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustration 
             ),
             (buf, i) -> {
                 i.spec().writeToBuffer(buf);
-                buf.writeInt(i.selectedEntityId);
+                buf.writeVarInt(i.selectedEntityId);
             }
     );
-    public static final int NO_ENTITY_FOUND = -1;
 
-    private final Spec spec;
+    private static final int NO_ENTITY_FOUND = -1;
+
     private int selectedEntityId;
-    private transient @Nullable LivingEntity selectedEntity;
 
     public DialogueIllustrationSelectorEntity(Spec spec) {
         this(spec, NO_ENTITY_FOUND);
     }
 
     private DialogueIllustrationSelectorEntity(Spec spec, int selectedEntityId) {
-        this.spec = spec;
+        super(spec);
         this.selectedEntityId = selectedEntityId;
     }
 
-    public Spec spec() {
-        return spec;
-    }
-
-    private @Nullable LivingEntity findEntity() {
-        if (this.selectedEntityId == -1) return null; // shortcut
-        assert MinecraftClient.getInstance().world != null;
-        Entity e = MinecraftClient.getInstance().world.getEntityById(this.selectedEntityId);
-        return e instanceof LivingEntity living ? living : null;
-    }
-
     @Override
-    public void render(DrawContext context, TextRenderer textRenderer, int x, int y, int mouseX, int mouseY, float tickDelta) {
-        LivingEntity e = this.selectedEntity == null && this.selectedEntityId != NO_ENTITY_FOUND ? this.selectedEntity = this.findEntity() : this.selectedEntity;
-
-        if (this.selectedEntity != null) {
-            int fakedMouseX = spec().stareAtX().map(s -> s + x + (spec().x1() + spec().x2())/2).orElse(mouseX);
-            int fakedMouseY = spec().stareAtY().map(s -> s + y + (spec().y1() + spec().y2())/2).orElse(mouseY);
-            InventoryScreen.drawEntity(context,
-                    x + spec().x1(),
-                    y + spec().y1(),
-                    x + spec().x2(),
-                    y + spec().y2(),
-                    spec().size(),
-                    spec().yOff(),
-                    fakedMouseX,
-                    fakedMouseY,
-                    this.selectedEntity);
-        }
+    protected @Nullable LivingEntity getRenderedEntity(World world) {
+        if (this.selectedEntityId == -1) return null; // shortcut
+        Entity e = world.getEntityById(this.selectedEntityId);
+        return e instanceof LivingEntity living ? living : null;
     }
 
     @Override
@@ -109,7 +82,6 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustration 
             EntitySelector entitySelector = new EntitySelectorReader(new StringReader(spec().selector())).read();
             Entity e = entitySelector.getEntity(source);
             if (e instanceof LivingEntity living) {
-                this.selectedEntity = living;
                 this.selectedEntityId = living.getId();
             }
         }
@@ -118,8 +90,8 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustration 
 
     public record Spec(String selector, int x1, int y1, int x2, int y2,
                        int size, float yOff,
-                       Optional<Integer> stareAtX, Optional<Integer> stareAtY) {
-        private static final Codec<Spec> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+                       Optional<Integer> stareAtX, Optional<Integer> stareAtY) implements DialogueIllustrationEntity.Spec {
+        private static final MapCodec<Spec> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Codec.STRING.fieldOf("entity").forGetter(Spec::selector),
                 Codec.INT.fieldOf("x1").forGetter(Spec::x1),
                 Codec.INT.fieldOf("y1").forGetter(Spec::y1),

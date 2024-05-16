@@ -39,6 +39,7 @@ import org.ladysnake.blabber.impl.common.DialogueInitializationException;
 import org.ladysnake.blabber.impl.common.PlayerDialogueTracker;
 import org.ladysnake.blabber.impl.common.commands.BlabberCommand;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationCollection;
+import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationFakePlayer;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationItem;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationNbtEntity;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationSelectorEntity;
@@ -160,6 +161,7 @@ public final class Blabber implements ModInitializer {
 		registerIllustration(id("group"), DialogueIllustrationCollection.TYPE);
 		registerIllustration(id("item"), DialogueIllustrationItem.TYPE);
 		registerIllustration(id("fake_entity"), DialogueIllustrationNbtEntity.TYPE);
+		registerIllustration(id("fake_player"), DialogueIllustrationFakePlayer.TYPE);
 		registerIllustration(id("entity"), DialogueIllustrationSelectorEntity.TYPE);
 	}
 }
