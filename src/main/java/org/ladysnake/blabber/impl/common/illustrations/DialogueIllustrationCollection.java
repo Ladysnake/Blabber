@@ -17,6 +17,7 @@
  */
 package org.ladysnake.blabber.impl.common.illustrations;
 
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.client.font.TextRenderer;
@@ -64,7 +65,7 @@ public record DialogueIllustrationCollection(List<DialogueIllustration> elements
     }
 
     @Override
-    public DialogueIllustration parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) {
+    public DialogueIllustration parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         List<DialogueIllustration> parsedSub = new ArrayList<>(elements.size());
         for (DialogueIllustration illustration : elements) {
             parsedSub.add(illustration.parseText(source, sender));

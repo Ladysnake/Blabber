@@ -19,7 +19,6 @@ package org.ladysnake.blabber.impl.common.illustrations;
 
 import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.mojang.datafixers.util.Either;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.client.MinecraftClient;
@@ -39,59 +38,64 @@ import org.ladysnake.blabber.api.DialogueIllustrationType;
 
 import java.util.Optional;
 
-public record DialogueIllustrationSelectorEntity(Either<String, LivingEntity> selector, int x1, int y1, int x2, int y2,
-                                                 int size, float yOff,
-                                                 Optional<Integer> stareAtX, Optional<Integer> stareAtY) implements DialogueIllustration {
-    private static final Codec<DialogueIllustrationSelectorEntity> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.STRING.fieldOf("entity")
-                    .xmap(Either::<String, LivingEntity>left, e -> e.map(s -> s, Entity::getUuidAsString))
-                    .forGetter(DialogueIllustrationSelectorEntity::selector),
-            Codec.INT.fieldOf("x1").forGetter(DialogueIllustrationSelectorEntity::x1),
-            Codec.INT.fieldOf("y1").forGetter(DialogueIllustrationSelectorEntity::y1),
-            Codec.INT.fieldOf("x2").forGetter(DialogueIllustrationSelectorEntity::x2),
-            Codec.INT.fieldOf("y2").forGetter(DialogueIllustrationSelectorEntity::y2),
-            Codec.INT.fieldOf("size").forGetter(DialogueIllustrationSelectorEntity::size),
-            Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(DialogueIllustrationSelectorEntity::yOff),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_x").forGetter(DialogueIllustrationSelectorEntity::stareAtX),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_y").forGetter(DialogueIllustrationSelectorEntity::stareAtY)
-    ).apply(instance, DialogueIllustrationSelectorEntity::new));
+public class DialogueIllustrationSelectorEntity implements DialogueIllustration {
+    public static final Codec<DialogueIllustrationSelectorEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec);
 
     public static final DialogueIllustrationType<DialogueIllustrationSelectorEntity> TYPE = new DialogueIllustrationType<>(
             CODEC,
-            buf -> {
-                Either<String, Integer> either = buf.readEither(PacketByteBuf::readString, PacketByteBuf::readInt);
-
-                return new DialogueIllustrationSelectorEntity(
-                        either.map(Either::left, id -> {
-                            assert MinecraftClient.getInstance().world != null;
-                            Entity e = MinecraftClient.getInstance().world.getEntityById(id);
-                            return e != null && e.isLiving() ? Either.right(((LivingEntity) e)) : Either.left(id.toString());
-                        }),
-                        buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(), buf.readFloat(),
-                        buf.readOptional(PacketByteBuf::readInt),
-                        buf.readOptional(PacketByteBuf::readInt)
-                );
-            },
+            buf -> new DialogueIllustrationSelectorEntity(
+                    new Spec(buf),
+                    buf.readVarInt()
+            ),
             (buf, i) -> {
-                buf.writeEither(i.selector(), PacketByteBuf::writeString, (b, e) -> b.writeInt(e.getId()));
-                buf.writeInt(i.x1());
-                buf.writeInt(i.y1());
-                buf.writeInt(i.x2());
-                buf.writeInt(i.y2());
-                buf.writeInt(i.size());
-                buf.writeFloat(i.yOff());
-                buf.writeOptional(i.stareAtX(), PacketByteBuf::writeInt);
-                buf.writeOptional(i.stareAtY(), PacketByteBuf::writeInt);
+                i.spec().writeToBuffer(buf);
+                buf.writeInt(i.selectedEntityId);
             }
     );
+    public static final int NO_ENTITY_FOUND = -1;
+
+    private final Spec spec;
+    private int selectedEntityId;
+    private transient @Nullable LivingEntity selectedEntity;
+
+    public DialogueIllustrationSelectorEntity(Spec spec) {
+        this(spec, NO_ENTITY_FOUND);
+    }
+
+    private DialogueIllustrationSelectorEntity(Spec spec, int selectedEntityId) {
+        this.spec = spec;
+        this.selectedEntityId = selectedEntityId;
+    }
+
+    public Spec spec() {
+        return spec;
+    }
+
+    private @Nullable LivingEntity findEntity() {
+        if (this.selectedEntityId == -1) return null; // shortcut
+        assert MinecraftClient.getInstance().world != null;
+        Entity e = MinecraftClient.getInstance().world.getEntityById(this.selectedEntityId);
+        return e instanceof LivingEntity living ? living : null;
+    }
 
     @Override
     public void render(DrawContext context, TextRenderer textRenderer, int x, int y, int mouseX, int mouseY, float tickDelta) {
-        selector.ifRight(e -> {
-            int fakedMouseX = stareAtX.map(s -> s + x + (x1 + x2)/2).orElse(mouseX);
-            int fakedMouseY = stareAtY.map(s -> s + y + (y1 + y2)/2).orElse(mouseY);
-            InventoryScreen.drawEntity(context, x + x1, y + y1, x + x2, y + y2, size, yOff, fakedMouseX, fakedMouseY, e);
-        });
+        LivingEntity e = this.selectedEntity == null && this.selectedEntityId != NO_ENTITY_FOUND ? this.selectedEntity = this.findEntity() : this.selectedEntity;
+
+        if (this.selectedEntity != null) {
+            int fakedMouseX = spec().stareAtX().map(s -> s + x + (spec().x1() + spec().x2())/2).orElse(mouseX);
+            int fakedMouseY = spec().stareAtY().map(s -> s + y + (spec().y1() + spec().y2())/2).orElse(mouseY);
+            InventoryScreen.drawEntity(context,
+                    x + spec().x1(),
+                    y + spec().y1(),
+                    x + spec().x2(),
+                    y + spec().y2(),
+                    spec().size(),
+                    spec().yOff(),
+                    fakedMouseX,
+                    fakedMouseY,
+                    this.selectedEntity);
+        }
     }
 
     @Override
@@ -100,30 +104,57 @@ public record DialogueIllustrationSelectorEntity(Either<String, LivingEntity> se
     }
 
     @Override
-    public DialogueIllustrationSelectorEntity parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) {
-        if (source == null) {
-            return this;
+    public DialogueIllustrationSelectorEntity parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+        if (source != null) {
+            EntitySelector entitySelector = new EntitySelectorReader(new StringReader(spec().selector())).read();
+            Entity e = entitySelector.getEntity(source);
+            if (e instanceof LivingEntity living) {
+                this.selectedEntity = living;
+                this.selectedEntityId = living.getId();
+            }
+        }
+        return this;
+    }
+
+    public record Spec(String selector, int x1, int y1, int x2, int y2,
+                       int size, float yOff,
+                       Optional<Integer> stareAtX, Optional<Integer> stareAtY) {
+        private static final Codec<Spec> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+                Codec.STRING.fieldOf("entity").forGetter(Spec::selector),
+                Codec.INT.fieldOf("x1").forGetter(Spec::x1),
+                Codec.INT.fieldOf("y1").forGetter(Spec::y1),
+                Codec.INT.fieldOf("x2").forGetter(Spec::x2),
+                Codec.INT.fieldOf("y2").forGetter(Spec::y2),
+                Codec.INT.fieldOf("size").forGetter(Spec::size),
+                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOff),
+                Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_x").forGetter(Spec::stareAtX),
+                Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_y").forGetter(Spec::stareAtY)
+        ).apply(instance, Spec::new));
+
+        public Spec(PacketByteBuf buf) {
+            this(
+                    buf.readString(),
+                    buf.readInt(),
+                    buf.readInt(),
+                    buf.readInt(),
+                    buf.readInt(),
+                    buf.readInt(),
+                    buf.readFloat(),
+                    buf.readOptional(PacketByteBuf::readInt),
+                    buf.readOptional(PacketByteBuf::readInt)
+            );
         }
 
-        Optional<String> selector = this.selector.left();
-        if (selector.isPresent()) {
-            try {
-                EntitySelector entitySelector = new EntitySelectorReader(new StringReader(selector.get())).read();
-                Entity e = entitySelector.getEntity(source);
-                if (!e.isLiving()) {
-                    return this;
-                } else {
-                    return new DialogueIllustrationSelectorEntity(
-                            Either.right((LivingEntity) e),
-                            this.x1, this.y1, this.x2, this.y2, this.size, this.yOff, this.stareAtX, this.stareAtY
-                    );
-                }
-            } catch (CommandSyntaxException e) {
-                // Stuff went bad, cancel. This can happen if there's no interlocutor or something.
-                return this;
-            }
-        } else {
-            return this;
+        public void writeToBuffer(PacketByteBuf buf) {
+            buf.writeString(selector());
+            buf.writeInt(x1());
+            buf.writeInt(y1());
+            buf.writeInt(x2());
+            buf.writeInt(y2());
+            buf.writeInt(size());
+            buf.writeFloat(yOff());
+            buf.writeOptional(stareAtX(), PacketByteBuf::writeInt);
+            buf.writeOptional(stareAtY(), PacketByteBuf::writeInt);
         }
     }
 }

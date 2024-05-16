@@ -25,59 +25,62 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.dynamic.Codecs;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
 
 import java.util.Optional;
 
-public record DialogueIllustrationNbtEntity(Identifier id, int x1, int y1, int x2, int y2, int size, float yOff, Optional<Integer> stareAtX, Optional<Integer> stareAtY, Optional<NbtCompound> data) implements DialogueIllustration {
-    private static final Codec<DialogueIllustrationNbtEntity> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Identifier.CODEC.fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
-            Codec.INT.fieldOf("x1").forGetter(DialogueIllustrationNbtEntity::x1),
-            Codec.INT.fieldOf("y1").forGetter(DialogueIllustrationNbtEntity::y1),
-            Codec.INT.fieldOf("x2").forGetter(DialogueIllustrationNbtEntity::x2),
-            Codec.INT.fieldOf("y2").forGetter(DialogueIllustrationNbtEntity::y2),
-            Codec.INT.fieldOf("size").forGetter(DialogueIllustrationNbtEntity::size),
-            Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(DialogueIllustrationNbtEntity::yOff),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_x").forGetter(DialogueIllustrationNbtEntity::stareAtX),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_y").forGetter(DialogueIllustrationNbtEntity::stareAtY),
-            Codecs.createStrictOptionalFieldCodec(NbtCompound.CODEC, "data").forGetter(DialogueIllustrationNbtEntity::data)
-    ).apply(instance, DialogueIllustrationNbtEntity::new));
-
+public class DialogueIllustrationNbtEntity implements DialogueIllustration {
+    private static final Codec<DialogueIllustrationNbtEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationNbtEntity::new, DialogueIllustrationNbtEntity::spec);
     public static final DialogueIllustrationType<DialogueIllustrationNbtEntity> TYPE = new DialogueIllustrationType<>(
             CODEC,
-            buf -> new DialogueIllustrationNbtEntity(
+            buf -> new DialogueIllustrationNbtEntity(new Spec(
                     buf.readIdentifier(),
                     buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(),
                     buf.readFloat(),
                     buf.readOptional(PacketByteBuf::readInt),
                     buf.readOptional(PacketByteBuf::readInt),
                     buf.readOptional(PacketByteBuf::readNbt)
-            ),
+            )),
             (buf, i) -> {
-                buf.writeIdentifier(i.id());
-                buf.writeInt(i.x1());
-                buf.writeInt(i.y1());
-                buf.writeInt(i.x2());
-                buf.writeInt(i.y2());
-                buf.writeInt(i.size());
-                buf.writeFloat(i.yOff());
-                buf.writeOptional(i.stareAtX(), PacketByteBuf::writeInt);
-                buf.writeOptional(i.stareAtY(), PacketByteBuf::writeInt);
-                buf.writeOptional(i.data(), PacketByteBuf::writeNbt);
+                buf.writeIdentifier(i.spec().id());
+                buf.writeInt(i.spec().x1());
+                buf.writeInt(i.spec().y1());
+                buf.writeInt(i.spec().x2());
+                buf.writeInt(i.spec().y2());
+                buf.writeInt(i.spec().size());
+                buf.writeFloat(i.spec().yOff());
+                buf.writeOptional(i.spec().stareAtX(), PacketByteBuf::writeInt);
+                buf.writeOptional(i.spec().stareAtY(), PacketByteBuf::writeInt);
+                buf.writeOptional(i.spec().data(), PacketByteBuf::writeNbt);
             }
     );
+    private final Spec spec;
+    private transient @Nullable LivingEntity renderedEntity;
+
+    public DialogueIllustrationNbtEntity(Spec spec) {
+        this.spec = spec;
+    }
+
+    public Spec spec() {
+        return spec;
+    }
 
     @Override
     @Environment(EnvType.CLIENT)
     public void render(DrawContext context, TextRenderer textRenderer, int x, int y, int mouseX, int mouseY, float tickDelta) {
-        LivingEntity e = (LivingEntity) Registries.ENTITY_TYPE.get(id).create(MinecraftClient.getInstance().world);
+        LivingEntity e = this.renderedEntity == null
+                ? this.renderedEntity = this.spec().createEntity(MinecraftClient.getInstance().world)
+                : this.renderedEntity;
 
         if (e == null) return; // Something went wrong creating the entity, so don't render.
 
@@ -86,15 +89,51 @@ public record DialogueIllustrationNbtEntity(Identifier id, int x1, int y1, int x
 
         e.prevBodyYaw = e.bodyYaw;
         e.prevHeadYaw = e.headYaw;
-        data.ifPresent(e::readNbt);
 
-        int fakedMouseX = stareAtX.map(s -> s + x + (x1 + x2)/2).orElse(mouseX);
-        int fakedMouseY = stareAtY.map(s -> s + y + (y1 + y2)/2).orElse(mouseY);
-        InventoryScreen.drawEntity(context, x + x1, y + y2, x + x2, y + y2, size, yOff, fakedMouseX, fakedMouseY, e);
+        int fakedMouseX = spec.stareAtX.map(s -> s + x + (spec().x1() + spec().x2()) / 2).orElse(mouseX);
+        int fakedMouseY = spec.stareAtY.map(s -> s + y + (spec().y1() + spec().y2()) / 2).orElse(mouseY);
+        InventoryScreen.drawEntity(context,
+                x + spec().x1(),
+                y + spec().y2(),
+                x + spec().x2(),
+                y + spec().y2(),
+                spec().size(),
+                spec().yOff(),
+                fakedMouseX,
+                fakedMouseY,
+                e);
     }
 
     @Override
     public DialogueIllustrationType<?> getType() {
         return TYPE;
+    }
+
+    public record Spec(Identifier id, int x1, int y1, int x2, int y2, int size, float yOff, Optional<Integer> stareAtX,
+                       Optional<Integer> stareAtY, Optional<NbtCompound> data) {
+        private static final Codec<Spec> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+                Identifier.CODEC.fieldOf("id").forGetter(Spec::id),
+                Codec.INT.fieldOf("x1").forGetter(Spec::x1),
+                Codec.INT.fieldOf("y1").forGetter(Spec::y1),
+                Codec.INT.fieldOf("x2").forGetter(Spec::x2),
+                Codec.INT.fieldOf("y2").forGetter(Spec::y2),
+                Codec.INT.fieldOf("size").forGetter(Spec::size),
+                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOff),
+                Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_x").forGetter(Spec::stareAtX),
+                Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_y").forGetter(Spec::stareAtY),
+                Codecs.createStrictOptionalFieldCodec(NbtCompound.CODEC, "data").forGetter(Spec::data)
+        ).apply(instance, Spec::new));
+
+        public @Nullable LivingEntity createEntity(World world) {
+            EntityType<?> entityType = Registries.ENTITY_TYPE.getOrEmpty(id).orElse(null);
+            if (entityType == null) return null;
+
+            if (entityType.create(world) instanceof LivingEntity living) {
+                data.ifPresent(living::readNbt);
+                return living;
+            }
+
+            return null;
+        }
     }
 }

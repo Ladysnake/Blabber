@@ -4,6 +4,9 @@ Version 1.6.0
 **Additions**
 - New *debug mode* : use the `/blabber debug enable` command to enter debug mode. Currently, this displays the pointer's coordinates when in a dialogue - useful for positioning illustrations.
 
+**Changes**
+- API change: `DialogueIllustration#parseText` can now throw `CommandSyntaxException`
+
 ------------------------------------------------------
 Version 1.5.1
 ------------------------------------------------------
