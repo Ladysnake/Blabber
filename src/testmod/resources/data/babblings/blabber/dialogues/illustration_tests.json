@@ -1,0 +1,169 @@
+{
+  "layout": {
+    "type": "blabber:classic"
+  },
+  "states": {
+    "start": {
+      "text": "Illustration Tests",
+      "choices": [
+        {
+          "text": "Entity: @interlocutor",
+          "next": "interlocutor"
+        },
+        {
+          "text": "Fake Entity: Allay",
+          "next": "allay"
+        },
+        {
+          "text": "Fake Player: Pyrofab",
+          "next": "pyrofab"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ]
+    },
+    "interlocutor": {
+      "text": "Entity: @interlocutor",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["interlocutor"]
+    },
+    "allay": {
+      "text": "Fake Entity: Allay",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["allay"]
+    },
+    "pyrofab": {
+      "text": "Fake Player: Pyrofab",
+      "choices": [
+        {
+          "text": "Fake Player: doctor4t",
+          "next": "doctor4t"
+        },
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["pyrofab"]
+    },
+    "doctor4t": {
+      "text": "Fake Player: doctor4t",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "pyrofab"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["doctor4t"]
+    },
+    "end": {
+      "text": "",
+      "choices": [],
+      "type": "end_dialogue"
+    }
+  },
+  "illustrations": {
+    "interlocutor": {
+      "type": "blabber:entity",
+      "entity": "@interlocutor",
+      "x1": 0,
+      "y1": 80,
+      "x2": 100,
+      "y2": 180,
+      "size": 100,
+      "y_offset": 0.5,
+      "stare_at_x": 50,
+      "stare_at_y": 0
+    },
+    "allay": {
+      "type": "blabber:fake_entity",
+      "id": "minecraft:allay",
+      "x1": 100,
+      "y1": 80,
+      "x2": 200,
+      "y2": 180,
+      "size": 100,
+      "y_offset": 0.5,
+      "stare_at_x": -50,
+      "stare_at_y": 0
+    },
+    "pyrofab": {
+      "type": "blabber:fake_player",
+      "x1": 280,
+      "y1": 40,
+      "x2": 400,
+      "y2": 180,
+      "size": 70,
+      "profile": {
+        "id" : "577a28bd0fcf49bbb406407f8041872b",
+        "name" : "Pyrofab",
+        "properties" : [ {
+          "name" : "textures",
+          "value" : "ewogICJ0aW1lc3RhbXAiIDogMTcxNTg4NTI3MzE3MywKICAicHJvZmlsZUlkIiA6ICI1NzdhMjhiZDBmY2Y0OWJiYjQwNjQwN2Y4MDQxODcyYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJQeXJvZmFiIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NjY2M2ZjUwMjc1Njk2YmRlNDllODg3NGVhYTY5ZDRhN2U3MTM2ZDg5Yjg1MDllOWU0OTdiYmQwMzI1ZDcwYmMiCiAgICB9CiAgfQp9",
+          "signature" : "ZFaKnp5ET+oqR1MyB4oJPkvr5JMwPFnMVS68Uktd661QgNLfoqy62LZFUoOuVI5ZQAHvRQkpo2vrrlaLGO8ubcsbHbAv8o29/8+KYjNOR04tWFBQBycfIWPEtCcW5cuWeNKvQau23UAdyPTfJoMSVNldD+ZQHU0ZOdWVIsfIus+k5pBIGsVVIso1rFlGLpRl9OnG3ENMgeuARQD7l+/bFE/Oj1O2FhFWguTfVEEvB/xvt/6aCVs441MYAxLriP4a7oDKxGppBZqGqj9HKvL2IKnraiRD6koRoRlA4sDgbJSiwzX8SaswH7qs66YkxJphjW+EbtbG+9JVNhfUovdCNH/g8Q8SgT8c5Tw/ylvcFolkMfZyAgMiKsMrwpNrDROEs4CRg1VcV/rCOwYvQoocQWT65ErYmgog+ZtvXYJAMd8dwkQtXLKTd9GoyWMVzoO41iuUVMy2iX7D+rLITJVdac//FmMaTp1GYl9EX2TV0Ll3HmeStnscmX/+QfoDUEkhLKxC14kRZxsRLrk1icZmMlyp8JY9NlcWPPpwqspyW3zttOkxFiZt0yCqTyCqZi906LM7iTMfdD4KRFpCTrDe8lxddWp0C77HkQlesyhRgr6lPGOaIZKEryJWpt8RkJXT6Q37zYFnt6FzozaiC0FKUTPW08Hu9suhU2o7XeGwrTo="
+        } ],
+        "profileActions" : [ ]
+      },
+      "model_customization": {
+        "visible_parts": ["jacket", "left_sleeve", "right_sleeve", "left_pants_leg", "right_pants_leg"],
+        "main_hand": "left"
+      },
+      "data": {
+        "Inventory": [
+          {
+            "Slot": 0,
+            "id": "minecraft:redstone",
+            "Count": 1
+          }
+        ]
+      }
+    },
+    "doctor4t": {
+      "type": "blabber:fake_player",
+      "x1": 280,
+      "y1": 40,
+      "x2": 400,
+      "y2": 180,
+      "size": 70,
+      "profile": {
+        "id" : "1b44461af6054b29a7a904e649d1981c",
+        "name" : "doctor4t",
+        "properties" : [ {
+          "name" : "textures",
+          "value" : "ewogICJ0aW1lc3RhbXAiIDogMTcxNTg4NTUzNTE0MywKICAicHJvZmlsZUlkIiA6ICIxYjQ0NDYxYWY2MDU0YjI5YTdhOTA0ZTY0OWQxOTgxYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJkb2N0b3I0dCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kYjA5OTEyMGViZjMxMDVjM2RmZjYxMGMzNzliMGNkM2Y5ODEwZWEwYzRhYjRmMjQ3YWQ0ZjRkZTVmNDE4MGMyIgogICAgfQogIH0KfQ==",
+          "signature" : "K77D67h6drMk4SgctfM1F34UAVuQXSDLTTcvs/G3cqjTSbGTRrstzFmul4JzffYjOO1nijghFq5i+hghBNMTnSY1Nk8yZCF/TNe/bodA0gnCcXHA0iAMbrs91O/WXPXzXN7nA/wUivY4UdBLVaQXWT5AM/XScovLr2+sK5DSylzbgn2O3HXmz9zeWNUuppDq5JnFWfklG3hepK4NjEd+deT9NuIctwNr6aj0Y3S9ySLiM1qIDOUpksFr0Vo2gXLkoz/kRxyFE1e5e0LK/ymLuvzcDAtIyx5+IzybVEdkQ5YGIzyMeHeCPEJ0Qs2WkJKhI83Nb9vw9EzVDbFp3ygGbQ8ZPvd0t0hEusa9lDzcIjfpRn/0VMwb0D2vJ3/b6aINkBafXyL/GNBD2Lso/JxeHAyQXlYEr7XCFf7/04hz5GiKpcVGNPiBIawH04idU6qty+8QiwrT484/VrQoG6oMspF9WbeviBNY2iNkFz+EN5lP/R4Gl2Vqm29xI77hyUD4AptVgKmYTJv88r1s9x2tceCTs8KYja3e5FYNf9K2e1BFvT1FrKzby+54747eZAhrqO13T4Q9T5FA1y4R47nnSDsf8ESrqil43mLASEjxOmlfBdkt07OyTTu/un0CLEgoFSNHutPKIcvnkRNlXQV9WByxEYREBa1jVT4w13gQ0c8="
+        } ],
+        "profileActions" : [ ]
+      }
+    }
+  },
+  "start_at": "start"
+}
