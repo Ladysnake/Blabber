@@ -53,12 +53,6 @@ public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationE
 
         if (e == null) return; // Something went wrong creating the entity, so don't render.
 
-        e.bodyYaw = 0.0f;
-        e.headYaw = 0.0f;
-
-        e.prevBodyYaw = e.bodyYaw;
-        e.prevHeadYaw = e.headYaw;
-
         int fakedMouseX = spec.stareAtX().map(s -> s + x + (spec().x1() + spec().x2()) / 2).orElse(mouseX);
         int fakedMouseY = spec.stareAtY().map(s -> s + y + (spec().y1() + spec().y2()) / 2).orElse(mouseY);
         InventoryScreen.drawEntity(context,

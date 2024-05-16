@@ -74,7 +74,9 @@ public class DialogueIllustrationNbtEntity extends DialogueIllustrationEntity<Di
         if (entityType == null) return null;
 
         if (entityType.create(world) instanceof LivingEntity living) {
-            spec().data().ifPresent(living::readNbt);
+            this.spec().data().ifPresent(living::readNbt);
+            living.prevBodyYaw = living.bodyYaw = 0.0f;
+            living.prevHeadYaw = living.headYaw = 0.0f;
             return living;
         }
 

@@ -78,7 +78,9 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
                 (ClientWorld) world,
                 this.spec().profile()
         );
-        spec().data().ifPresent(fakePlayer::readNbt);
+        this.spec().data().ifPresent(fakePlayer::readNbt);
+        fakePlayer.prevBodyYaw = fakePlayer.bodyYaw = 0.0f;
+        fakePlayer.prevHeadYaw = fakePlayer.headYaw = 0.0f;
         return fakePlayer;
     }
 
