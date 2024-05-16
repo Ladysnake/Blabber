@@ -42,8 +42,9 @@ public final class SettingsSubCommand {
                 .requires(ALLOW_DEBUG)
                 .then(literal(SETTINGS_SET_SUBCOMMAND).then(
                         literal(DEBUG_SUBCOMMAND)
-                                .then(argument("value", BoolArgumentType.bool()))
-                                .executes(context -> setDebugEnabled(context.getSource(), context.getSource().getPlayerOrThrow(), BoolArgumentType.getBool(context, "value")))
+                                .then(argument("value", BoolArgumentType.bool())
+                                        .executes(context -> setDebugEnabled(context.getSource(), context.getSource().getPlayerOrThrow(), BoolArgumentType.getBool(context, "value")))
+                                )
                 ));
     }
 
