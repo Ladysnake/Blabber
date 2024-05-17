@@ -41,7 +41,7 @@ public class BlabberDebugComponent implements AutoSyncedComponent {
         this.player = player;
     }
 
-    public boolean debugEnabled() {
+    public boolean isDebugEnabled() {
         return debugEnabled;
     }
 
@@ -57,7 +57,7 @@ public class BlabberDebugComponent implements AutoSyncedComponent {
 
     @Override
     public void writeSyncPacket(PacketByteBuf buf, ServerPlayerEntity recipient) {
-        buf.writeBoolean(this.debugEnabled() && SettingsSubCommand.ALLOW_DEBUG.test(recipient.getCommandSource()));
+        buf.writeBoolean(this.isDebugEnabled() && SettingsSubCommand.ALLOW_DEBUG.test(recipient.getCommandSource()));
     }
 
     @Override

@@ -24,17 +24,22 @@ import net.minecraft.client.gui.screen.ConfirmScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import org.jetbrains.annotations.ApiStatus;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.joml.Vector2i;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.impl.common.BlabberDebugComponent;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
+import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
@@ -47,6 +52,16 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     public static final int DEFAULT_TITLE_GAP = 20;
     public static final int DEFAULT_TEXT_MAX_WIDTH = 300;
     public static final int DEFAULT_INSTRUCTIONS_BOTTOM_MARGIN = 30;
+    public static final int[] DEBUG_COLORS = new int[] {
+            0x42b862,
+            0xb84242,
+            0xb86a42,
+            0x42b87d,
+            0x42b8b8,
+            0x426ab8,
+            0x6a42b8,
+            0xb842b8,
+    };
 
     protected final Text instructions;
 
@@ -81,6 +96,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
      */
     protected int selectionIconMarginTop = -4;
     protected int selectionIconSize = 16;
+    protected Vector2i[] illustrationSlots;
     protected int mainTextColor = 0xFFFFFF;
     protected int lockedChoiceColor = 0x808080;
     protected int selectedChoiceColor = 0xE0E044;
@@ -97,18 +113,29 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         super(handler, inventory, title);
         GameOptions options = MinecraftClient.getInstance().options;
         this.instructions = Text.translatable("blabber:dialogue.instructions", options.forwardKey.getBoundKeyLocalizedText(), options.backKey.getBoundKeyLocalizedText(), options.inventoryKey.getBoundKeyLocalizedText());
+        this.illustrationSlots = new Vector2i[] { new Vector2i(), new Vector2i() };
     }
 
     @Override
     protected void init() {
         super.init();
+        this.layout();
+    }
+
+    protected void layout() {
         this.computeMargins();
+        this.layoutIllustrationSlots();
     }
 
     protected void computeMargins() {
         this.instructionsMinY = this.height - DEFAULT_INSTRUCTIONS_BOTTOM_MARGIN;
         Text text = this.handler.getCurrentText();
         this.choiceListMinY = mainTextMinY + this.textRenderer.getWrappedLinesHeight(text, mainTextMaxWidth) + DEFAULT_TITLE_GAP;
+    }
+
+    protected void layoutIllustrationSlots() {
+        this.illustrationSlots[0].set(this.width * 3/4, this.choiceListMinY);
+        this.illustrationSlots[1].set(this.width * 2/5, this.height * 2/3);
     }
 
     @Override
@@ -154,17 +181,17 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             case ASK_CONFIRMATION -> {
                 ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
                 this.client.setScreen(new ConfirmScreen(
-                    this::onBigChoiceMade,
-                    this.handler.getCurrentText(),
-                    Text.empty(),
-                    choices.get(0).text(),
-                    choices.get(1).text()
+                        this::onBigChoiceMade,
+                        this.handler.getCurrentText(),
+                        Text.empty(),
+                        choices.get(0).text(),
+                        choices.get(1).text()
                 ));
             }
             default -> {
                 this.selectedChoice = 0;
                 this.hoveringChoice = false;
-                this.computeMargins();
+                this.layout();
             }
         }
 
@@ -220,12 +247,15 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         assert client != null;
         assert client.player != null;
 
+        PositionTransform positionTransform = this.createPositionTransform();
+        positionTransform.setControlPoints(0, 0, this.width, this.height);
+
         int y = mainTextMinY;
 
         for (String illustrationName : this.handler.getCurrentIllustrations()) {
             DialogueIllustration illustration = this.handler.getIllustration(illustrationName);
             if (illustration != null) {
-                illustration.render(context, this.textRenderer, 0, 0, mouseX, mouseY, tickDelta);
+                illustration.render(context, this.textRenderer, positionTransform, mouseX, mouseY, tickDelta);
             }
         }
 
@@ -242,10 +272,12 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             int choiceColor = choice.unavailabilityMessage().isPresent() ? lockedChoiceColor : selected ? selectedChoiceColor : this.choiceColor;
             context.drawTextWrapped(this.textRenderer, choice.text(), choiceListMinX, y, choiceListMaxWidth, choiceColor);
 
+            positionTransform.setControlPoints(choiceListMinX, y, choiceListMinX + choiceListMaxWidth, y + strHeight);
+
             for (String illustrationName : choice.illustrations()) {
                 DialogueIllustration illustration = this.handler.getIllustration(illustrationName);
                 if (illustration != null) {
-                    illustration.render(context, this.textRenderer, choiceListMinX, y, mouseX, mouseY, tickDelta);
+                    illustration.render(context, this.textRenderer, positionTransform, mouseX, mouseY, tickDelta);
                 }
             }
 
@@ -262,13 +294,58 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
 
         context.drawTextWrapped(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0x808080);
 
-        if (BlabberDebugComponent.get(client.player).debugEnabled()) {
-            renderDebugInfo(context, mouseX, mouseY);
+        if (BlabberDebugComponent.get(client.player).isDebugEnabled()) {
+            positionTransform.setControlPoints(0, 0, this.width, this.height);
+            renderDebugInfo(context, positionTransform, mouseX, mouseY);
         }
     }
 
-    protected void renderDebugInfo(DrawContext context, int mouseX, int mouseY) {
-        context.drawTooltip(this.textRenderer, Text.literal("X: " + mouseX + ", Y: " + mouseY), MathHelper.clamp(mouseX, -10, this.width + 10), MathHelper.clamp(mouseY, 15, this.height + 15));
+    protected @NotNull PositionTransform createPositionTransform() {
+        return new PositionTransform(this.illustrationSlots);
+    }
+
+    protected void renderDebugInfo(DrawContext context, PositionTransform positionTransform, int mouseX, int mouseY) {
+        for (IllustrationAnchor anchor : IllustrationAnchor.values()) {
+            int color = DEBUG_COLORS[anchor.ordinal() % DEBUG_COLORS.length];
+            context.drawText(this.textRenderer, "x", positionTransform.transformX(anchor, -3), positionTransform.transformY(anchor, -5), color, true);
+            MutableText text = Text.empty().append(Text.literal(anchor.asString()).styled(s -> s.withColor(color))).append(" > X: " + positionTransform.inverseTransformX(anchor, mouseX) + ", Y: " + positionTransform.inverseTransformY(anchor, mouseY));
+            switch (anchor) {
+                case TOP_LEFT, TOP_RIGHT -> {
+                    context.drawTooltip(
+                            this.textRenderer,
+                            text,
+                            positionTransform.transformX(anchor, 0),
+                            15
+                    );
+                }
+
+                case CENTER -> context.drawTooltip(
+                        this.textRenderer,
+                        text,
+                        positionTransform.transformX(anchor, 0),
+                        positionTransform.transformY(anchor, 0)
+                );
+
+                case BOTTOM_LEFT, BOTTOM_RIGHT -> {
+                    context.drawTooltip(
+                            this.textRenderer,
+                            text,
+                            positionTransform.transformX(anchor, 0),
+                            positionTransform.transformY(anchor, 0)
+                    );
+                }
+                case SLOT_1, SLOT_2 -> {
+                    if (anchor.slotId() < this.illustrationSlots.length) {
+                        context.drawTooltip(
+                                this.textRenderer,
+                                text,
+                                positionTransform.transformX(anchor, 0),
+                                positionTransform.transformY(anchor, 0)
+                        );
+                    }
+                }
+            }
+        }
     }
 
     @Override

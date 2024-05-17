@@ -124,21 +124,22 @@
     "allay": {
       "type": "blabber:fake_entity",
       "id": "minecraft:allay",
-      "x1": 100,
-      "y1": 80,
-      "x2": 200,
-      "y2": 180,
+      "anchor": "slot_2",
+      "x1": -40,
+      "y1": -40,
+      "x2": 40,
+      "y2": 40,
       "size": 100,
-      "y_offset": 0.5,
       "stare_at_x": -50,
       "stare_at_y": 0
     },
     "pyrofab": {
       "type": "blabber:fake_player",
-      "x1": 280,
-      "y1": 40,
-      "x2": 400,
-      "y2": 180,
+      "anchor": "slot_1",
+      "x1": -20,
+      "y1": -30,
+      "x2": 80,
+      "y2": 115,
       "size": 70,
       "profile": {
         "id" : "577a28bd0fcf49bbb406407f8041872b",
@@ -188,8 +189,9 @@
         "id": "minecraft:diamond",
         "Count": 1
       },
-      "x": 300,
-      "y": 100,
+      "anchor": "center",
+      "x": 100,
+      "y": -20,
       "scale": 5.0,
       "show_tooltip": true
     }, {

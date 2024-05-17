@@ -53,9 +53,9 @@ public record DialogueIllustrationCollection(List<DialogueIllustration> elements
     );
 
     @Override
-    public void render(DrawContext context, TextRenderer textRenderer, int x, int y, int mouseX, int mouseY, float tickDelta) {
+    public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         for (DialogueIllustration i : elements) {
-            i.render(context, textRenderer, x, y, mouseX, mouseY, tickDelta);
+            i.render(context, textRenderer, positionTransform, mouseX, mouseY, tickDelta);
         }
     }
 

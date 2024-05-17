@@ -30,6 +30,7 @@ import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
 import java.util.Optional;
 
@@ -40,6 +41,7 @@ public class DialogueIllustrationNbtEntity extends DialogueIllustrationEntity<Di
             CODEC,
             buf -> new DialogueIllustrationNbtEntity(new Spec(
                     buf.readIdentifier(),
+                    buf.readEnumConstant(IllustrationAnchor.class),
                     buf.readInt(),
                     buf.readInt(),
                     buf.readInt(),
@@ -52,6 +54,7 @@ public class DialogueIllustrationNbtEntity extends DialogueIllustrationEntity<Di
             )),
             (buf, i) -> {
                 buf.writeIdentifier(i.spec().id());
+                buf.writeEnumConstant(i.spec().anchor());
                 buf.writeInt(i.spec().x1());
                 buf.writeInt(i.spec().y1());
                 buf.writeInt(i.spec().x2());
@@ -88,10 +91,11 @@ public class DialogueIllustrationNbtEntity extends DialogueIllustrationEntity<Di
         return TYPE;
     }
 
-    public record Spec(Identifier id, int x1, int y1, int x2, int y2, int size, float yOff, Optional<Integer> stareAtX,
+    public record Spec(Identifier id, IllustrationAnchor anchor, int x1, int y1, int x2, int y2, int size, float yOff, Optional<Integer> stareAtX,
                        Optional<Integer> stareAtY, Optional<NbtCompound> data) implements DialogueIllustrationEntity.Spec {
         private static final MapCodec<Spec> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Identifier.CODEC.fieldOf("id").forGetter(Spec::id),
+                Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
                 Codec.INT.fieldOf("x1").forGetter(Spec::x1),
                 Codec.INT.fieldOf("y1").forGetter(Spec::y1),
                 Codec.INT.fieldOf("x2").forGetter(Spec::x2),

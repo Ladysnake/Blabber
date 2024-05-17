@@ -25,12 +25,14 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.ColorHelper;
 import org.joml.Matrix4f;
+import org.joml.Vector2i;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 
 public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
     public static final int INSTRUCTIONS_BOTTOM_MARGIN = 6;
+    public static final int TEXT_TOP_MARGIN = 12;
     protected int choiceListMaxY;
 
     public BlabberRpgDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
@@ -40,6 +42,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
         this.choiceColor = 0xD0D0D0;
         this.lockedChoiceColor = 0xA0A0A0;
         this.selectedChoiceColor = 0xF0F066;
+        this.illustrationSlots = new Vector2i[] { new Vector2i(), new Vector2i() };
     }
 
     @Override
@@ -60,6 +63,18 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
     }
 
     @Override
+    protected void layoutIllustrationSlots() {
+        this.illustrationSlots[0].set(
+                this.width / 4,
+                this.mainTextMinY - TEXT_TOP_MARGIN
+        );
+        this.illustrationSlots[1].set(
+                (this.choiceListMinX + this.width) / 2,
+                this.choiceListMinY * 3/4
+        );
+    }
+
+    @Override
     protected boolean shouldSelectChoice(double mouseX, double mouseY, int choiceY, int choiceHeight, int choiceWidth) {
         return mouseX > choiceListMinX - 4 && mouseX <= width && mouseY > choiceY && mouseY < choiceY + choiceHeight;
     }
@@ -77,8 +92,8 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
             y += strHeight + choiceGap;
         }
         // Bottom background
-        context.fillGradient(0, this.mainTextMinY - 20, this.width, this.mainTextMinY - 12, 0x00101010, 0xc0101010);
-        context.fillGradient(0, this.mainTextMinY - 12, this.width, this.height, 0xc0101010, 0xd0101010);
+        context.fillGradient(0, this.mainTextMinY - 20, this.width, this.mainTextMinY - TEXT_TOP_MARGIN, 0x00101010, 0xc0101010);
+        context.fillGradient(0, this.mainTextMinY - TEXT_TOP_MARGIN, this.width, this.height, 0xc0101010, 0xd0101010);
     }
 
     public static void fillHorizontalGradient(DrawContext context, int startX, int startY, int endX, int endY, int colorStart, int colorEnd) {

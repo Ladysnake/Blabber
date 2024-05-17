@@ -27,6 +27,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueIllustration;
+import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
 import java.util.Optional;
 
@@ -46,20 +47,25 @@ public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationE
 
     @Override
     @Environment(EnvType.CLIENT)
-    public void render(DrawContext context, TextRenderer textRenderer, int x, int y, int mouseX, int mouseY, float tickDelta) {
+    public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         LivingEntity e = this.renderedEntity == null
                 ? this.renderedEntity = this.getRenderedEntity(MinecraftClient.getInstance().world)
                 : this.renderedEntity;
 
         if (e == null) return; // Something went wrong creating the entity, so don't render.
 
-        int fakedMouseX = spec.stareAtX().map(s -> s + x + (spec().x1() + spec().x2()) / 2).orElse(mouseX);
-        int fakedMouseY = spec.stareAtY().map(s -> s + y + (spec().y1() + spec().y2()) / 2).orElse(mouseY);
+        int x1 = positionTransform.transformX(this.spec().anchor(), this.spec().x1());
+        int y1 = positionTransform.transformY(this.spec().anchor(), this.spec().y1());
+        int x2 = positionTransform.transformX(this.spec().anchor(), this.spec().x2());
+        int y2 = positionTransform.transformY(this.spec().anchor(), this.spec().y2());
+
+        int fakedMouseX = spec.stareAtX().map(s -> s + (x1 + x2) / 2).orElse(mouseX);
+        int fakedMouseY = spec.stareAtY().map(s -> s + (y1 + y2) / 2).orElse(mouseY);
         InventoryScreen.drawEntity(context,
-                x + spec().x1(),
-                y + spec().y1(),
-                x + spec().x2(),
-                y + spec().y2(),
+                x1,
+                y1,
+                x2,
+                y2,
                 spec().size(),
                 spec().yOff(),
                 fakedMouseX,
@@ -68,6 +74,7 @@ public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationE
     }
 
     public interface Spec {
+        IllustrationAnchor anchor();
         Optional<Integer> stareAtX();
         Optional<Integer> stareAtY();
         int x1();

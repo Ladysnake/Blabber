@@ -26,11 +26,13 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.dynamic.Codecs;
 import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
-public record DialogueIllustrationItem(ItemStack stack, int x, int y, float scale,
+public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor anchor, int x, int y, float scale,
                                        boolean showTooltip) implements DialogueIllustration {
     private static final Codec<DialogueIllustrationItem> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             ItemStack.CODEC.fieldOf("item").forGetter(DialogueIllustrationItem::stack),
+            Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationItem::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationItem::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationItem::y),
             Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "scale", 1f).forGetter(DialogueIllustrationItem::scale),
@@ -39,9 +41,10 @@ public record DialogueIllustrationItem(ItemStack stack, int x, int y, float scal
 
     public static final DialogueIllustrationType<DialogueIllustrationItem> TYPE = new DialogueIllustrationType<>(
             CODEC,
-            buf -> new DialogueIllustrationItem(ItemStack.fromNbt(buf.readNbt()), buf.readInt(), buf.readInt(), buf.readFloat(), buf.readBoolean()),
+            buf -> new DialogueIllustrationItem(ItemStack.fromNbt(buf.readNbt()), buf.readEnumConstant(IllustrationAnchor.class), buf.readInt(), buf.readInt(), buf.readFloat(), buf.readBoolean()),
             (buf, item) -> {
                 buf.writeNbt(item.stack().writeNbt(new NbtCompound()));
+                buf.writeEnumConstant(item.anchor());
                 buf.writeInt(item.x());
                 buf.writeInt(item.y());
                 buf.writeFloat(item.scale());
@@ -50,17 +53,19 @@ public record DialogueIllustrationItem(ItemStack stack, int x, int y, float scal
     );
 
     @Override
-    public void render(DrawContext context, TextRenderer textRenderer, int x, int y, int mouseX, int mouseY, float tickDelta) {
+    public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         // We draw the actual item, then the count and bar and such.
         try {
             ((DrawContextHooks) context).blabber$setItemScale(scale);
-            context.drawItem(stack, this.x + x, this.y + y);
+            int originX = positionTransform.transformX(this.anchor, this.x);
+            int originY = positionTransform.transformY(this.anchor, this.y);
+            context.drawItem(stack, originX, originY);
             if (scale() == 1) {  // Not supporting rescaled stack decorations right now
-                context.drawItemInSlot(textRenderer, stack, this.x + x, this.y + y);
+                context.drawItemInSlot(textRenderer, stack, originX, originY);
             }
             if (showTooltip &&
-                    this.x + x - (8 * (this.scale - 1)) <= mouseX && this.x + x + (8 * (this.scale + 1)) + 4 > mouseX &&
-                    this.y + y - (8 * (this.scale - 1)) <= mouseY && this.y + y + (8 * (this.scale + 1)) + 4 > mouseY) {
+                    originX - (8 * (this.scale - 1)) <= mouseX && originX + (8 * (this.scale + 1)) + 4 > mouseX &&
+                    originY - (8 * (this.scale - 1)) <= mouseY && originY + (8 * (this.scale + 1)) + 4 > mouseY) {
                 context.drawItemTooltip(textRenderer, stack, mouseX, mouseY);
             }
         } finally {

@@ -32,6 +32,7 @@ import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
 import java.util.Optional;
 
@@ -88,11 +89,12 @@ public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEnti
         return this;
     }
 
-    public record Spec(String selector, int x1, int y1, int x2, int y2,
+    public record Spec(String selector, IllustrationAnchor anchor, int x1, int y1, int x2, int y2,
                        int size, float yOff,
                        Optional<Integer> stareAtX, Optional<Integer> stareAtY) implements DialogueIllustrationEntity.Spec {
         private static final MapCodec<Spec> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Codec.STRING.fieldOf("entity").forGetter(Spec::selector),
+                Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
                 Codec.INT.fieldOf("x1").forGetter(Spec::x1),
                 Codec.INT.fieldOf("y1").forGetter(Spec::y1),
                 Codec.INT.fieldOf("x2").forGetter(Spec::x2),
@@ -106,6 +108,7 @@ public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEnti
         public Spec(PacketByteBuf buf) {
             this(
                     buf.readString(),
+                    buf.readEnumConstant(IllustrationAnchor.class),
                     buf.readInt(),
                     buf.readInt(),
                     buf.readInt(),
@@ -119,6 +122,7 @@ public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEnti
 
         public void writeToBuffer(PacketByteBuf buf) {
             buf.writeString(selector());
+            buf.writeEnumConstant(anchor());
             buf.writeInt(x1());
             buf.writeInt(y1());
             buf.writeInt(x2());

@@ -37,6 +37,7 @@ import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.ladysnake.blabber.impl.mixin.PlayerEntityAccessor;
 import org.ladysnake.blabber.impl.mixin.client.AbstractClientPlayerEntityAccessor;
 
@@ -53,6 +54,7 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
             CODEC,
             buf -> new DialogueIllustrationFakePlayer(new Spec(
                     buf.readGameProfile(),
+                    buf.readEnumConstant(IllustrationAnchor.class),
                     buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(),
                     buf.readFloat(),
                     buf.readOptional(PacketByteBuf::readInt),
@@ -62,6 +64,7 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
             )),
             (buf, i) -> {
                 buf.writeGameProfile(i.spec().profile());
+                buf.writeEnumConstant(i.spec().anchor());
                 buf.writeInt(i.spec().x1());
                 buf.writeInt(i.spec().y1());
                 buf.writeInt(i.spec().x2());
@@ -151,6 +154,7 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
     }
 
     public record Spec(GameProfile profile,
+                       IllustrationAnchor anchor,
                        int x1,
                        int y1,
                        int x2,
@@ -163,6 +167,7 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
                        Optional<NbtCompound> data) implements DialogueIllustrationEntity.Spec {
         private static final MapCodec<Spec> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Codecs.GAME_PROFILE_WITH_PROPERTIES.fieldOf("profile").forGetter(Spec::profile),
+                Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
                 Codec.INT.fieldOf("x1").forGetter(Spec::x1),
                 Codec.INT.fieldOf("y1").forGetter(Spec::y1),
                 Codec.INT.fieldOf("x2").forGetter(Spec::x2),
