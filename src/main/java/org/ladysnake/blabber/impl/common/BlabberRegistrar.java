@@ -23,12 +23,14 @@ import com.mojang.serialization.Lifecycle;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
+import net.fabricmc.fabric.api.command.v2.ArgumentTypeRegistry;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationNetworking;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.command.CommandSource;
+import net.minecraft.command.argument.serialize.ConstantArgumentSerializer;
 import net.minecraft.command.suggestion.SuggestionProviders;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
@@ -42,10 +44,12 @@ import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueActionV2;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.impl.common.commands.SettingArgumentType;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 import org.ladysnake.blabber.impl.common.packets.DialogueListPacket;
 import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
+import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 
 import java.util.Optional;
 import java.util.Set;
@@ -76,6 +80,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
 
     public static void init() {
         Registry.register(Registries.LOOT_CONDITION_TYPE, Blabber.id("interlocutor_properties"), InterlocutorPropertiesLootCondition.TYPE);
+        ArgumentTypeRegistry.registerArgumentType(Blabber.id("setting"), SettingArgumentType.class, ConstantArgumentSerializer.of(SettingArgumentType::setting));
 
         DialogueLoader.init();
         ServerPlayNetworking.registerGlobalReceiver(DIALOGUE_ACTION, (server, player, handler, buf, responseSender) -> {
@@ -101,6 +106,6 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     @Override
     public void registerEntityComponentFactories(EntityComponentFactoryRegistry registry) {
         registry.registerForPlayers(PlayerDialogueTracker.KEY, PlayerDialogueTracker::new, RespawnCopyStrategy.ALWAYS_COPY);
-        registry.registerForPlayers(BlabberDebugComponent.KEY, BlabberDebugComponent::new, RespawnCopyStrategy.ALWAYS_COPY);
+        registry.registerForPlayers(BlabberSettingsComponent.KEY, BlabberSettingsComponent::new, RespawnCopyStrategy.ALWAYS_COPY);
     }
 }

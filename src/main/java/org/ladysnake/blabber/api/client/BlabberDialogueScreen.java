@@ -34,12 +34,13 @@ import org.jetbrains.annotations.Nullable;
 import org.joml.Vector2i;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueIllustration;
-import org.ladysnake.blabber.impl.common.BlabberDebugComponent;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.common.settings.BlabberSetting;
+import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
@@ -294,9 +295,10 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
 
         context.drawTextWrapped(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0x808080);
 
-        if (BlabberDebugComponent.get(client.player).isDebugEnabled()) {
+        BlabberSettingsComponent settings = BlabberSettingsComponent.get(client.player);
+        if (settings.isDebugEnabled()) {
             positionTransform.setControlPoints(0, 0, this.width, this.height);
-            renderDebugInfo(context, positionTransform, mouseX, mouseY);
+            renderDebugInfo(settings, context, positionTransform, mouseX, mouseY);
         }
     }
 
@@ -304,7 +306,13 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         return new PositionTransform(this.illustrationSlots);
     }
 
-    protected void renderDebugInfo(DrawContext context, PositionTransform positionTransform, int mouseX, int mouseY) {
+    protected void renderDebugInfo(BlabberSettingsComponent settings, DrawContext context, PositionTransform positionTransform, int mouseX, int mouseY) {
+        if (settings.isEnabled(BlabberSetting.DEBUG_ANCHORS)) {
+            this.renderAnchorDebugInfo(context, positionTransform, mouseX, mouseY);
+        }
+    }
+
+    protected void renderAnchorDebugInfo(DrawContext context, PositionTransform positionTransform, int mouseX, int mouseY) {
         for (IllustrationAnchor anchor : IllustrationAnchor.values()) {
             int color = DEBUG_COLORS[anchor.ordinal() % DEBUG_COLORS.length];
             context.drawText(this.textRenderer, "x", positionTransform.transformX(anchor, -3), positionTransform.transformY(anchor, -5), color, true);

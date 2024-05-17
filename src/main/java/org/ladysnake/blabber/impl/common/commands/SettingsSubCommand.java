@@ -24,7 +24,8 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.NotNull;
-import org.ladysnake.blabber.impl.common.BlabberDebugComponent;
+import org.ladysnake.blabber.impl.common.settings.BlabberSetting;
+import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 
 import java.util.function.Predicate;
 
@@ -34,23 +35,22 @@ import static net.minecraft.server.command.CommandManager.literal;
 public final class SettingsSubCommand {
     public static final String SETTINGS_SUBCOMMAND = "settings";
     public static final String SETTINGS_SET_SUBCOMMAND = "set";
-    public static final String DEBUG_SUBCOMMAND = "debug";
     public static final @NotNull Predicate<ServerCommandSource> ALLOW_DEBUG = Permissions.require("dialogue.debug", 2);
 
     static LiteralArgumentBuilder<ServerCommandSource> settingsSubtree() {
         return literal(SETTINGS_SUBCOMMAND)
                 .requires(ALLOW_DEBUG)
                 .then(literal(SETTINGS_SET_SUBCOMMAND).then(
-                        literal(DEBUG_SUBCOMMAND)
+                        argument("setting", SettingArgumentType.setting())
                                 .then(argument("value", BoolArgumentType.bool())
-                                        .executes(context -> setDebugEnabled(context.getSource(), context.getSource().getPlayerOrThrow(), BoolArgumentType.getBool(context, "value")))
+                                        .executes(context -> setEnabled(context.getSource(), context.getSource().getPlayerOrThrow(), SettingArgumentType.getSetting(context, "setting"), BoolArgumentType.getBool(context, "value")))
                                 )
                 ));
     }
 
-    private static int setDebugEnabled(ServerCommandSource source, ServerPlayerEntity player, boolean debug) {
-        BlabberDebugComponent.get(player).setDebugEnabled(debug);
-        source.sendFeedback(() -> Text.translatable(debug ? "blabber:commands.debug.enabled" : "blabber:commands.debug.disabled"), false);
+    private static int setEnabled(ServerCommandSource source, ServerPlayerEntity player, BlabberSetting setting, boolean enabled) {
+        BlabberSettingsComponent.get(player).setEnabled(setting, enabled);
+        source.sendFeedback(() -> Text.translatable(enabled ? "blabber:commands.setting.enabled" : "blabber:commands.setting.disabled", setting.id()), false);
         return 1;
     }
 }

@@ -46,7 +46,7 @@
   "custom": {
     "cardinal-components": [
       "blabber:dialogue_tracker",
-      "blabber:debug"
+      "blabber:settings"
     ]
   }
 }
