@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common.illustrations;
+package org.ladysnake.blabber.impl.common.illustrations.entity;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.serialization.Codec;
@@ -55,24 +55,26 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
             buf -> new DialogueIllustrationFakePlayer(new Spec(
                     buf.readGameProfile(),
                     buf.readEnumConstant(IllustrationAnchor.class),
-                    buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt(),
+                    buf.readVarInt(),
+                    buf.readVarInt(),
+                    buf.readVarInt(),
+                    buf.readVarInt(),
+                    buf.readVarInt(),
                     buf.readFloat(),
-                    buf.readOptional(PacketByteBuf::readInt),
-                    buf.readOptional(PacketByteBuf::readInt),
+                    new StareTarget(buf),
                     buf.readOptional(PlayerModelOptions::new),
                     buf.readOptional(PacketByteBuf::readNbt)
             )),
             (buf, i) -> {
                 buf.writeGameProfile(i.spec().profile());
                 buf.writeEnumConstant(i.spec().anchor());
-                buf.writeInt(i.spec().x1());
-                buf.writeInt(i.spec().y1());
-                buf.writeInt(i.spec().x2());
-                buf.writeInt(i.spec().y2());
-                buf.writeInt(i.spec().size());
-                buf.writeFloat(i.spec().yOff());
-                buf.writeOptional(i.spec().stareAtX(), PacketByteBuf::writeInt);
-                buf.writeOptional(i.spec().stareAtY(), PacketByteBuf::writeInt);
+                buf.writeVarInt(i.spec().x());
+                buf.writeVarInt(i.spec().y());
+                buf.writeVarInt(i.spec().width());
+                buf.writeVarInt(i.spec().height());
+                buf.writeVarInt(i.spec().entitySize());
+                buf.writeFloat(i.spec().yOffset());
+                StareTarget.writeToPacket(buf, i.spec().stareAt());
                 buf.writeOptional(i.spec().modelOptions(), (b, opts) -> opts.writeToBuffer(b));
                 buf.writeOptional(i.spec().data(), PacketByteBuf::writeNbt);
             }
@@ -155,27 +157,25 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
 
     public record Spec(GameProfile profile,
                        IllustrationAnchor anchor,
-                       int x1,
-                       int y1,
-                       int x2,
-                       int y2,
-                       int size,
-                       float yOff,
-                       Optional<Integer> stareAtX,
-                       Optional<Integer> stareAtY,
+                       int x,
+                       int y,
+                       int width,
+                       int height,
+                       int entitySize,
+                       float yOffset,
+                       StareTarget stareAt,
                        Optional<PlayerModelOptions> modelOptions,
                        Optional<NbtCompound> data) implements DialogueIllustrationEntity.Spec {
         private static final MapCodec<Spec> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Codecs.GAME_PROFILE_WITH_PROPERTIES.fieldOf("profile").forGetter(Spec::profile),
                 Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
-                Codec.INT.fieldOf("x1").forGetter(Spec::x1),
-                Codec.INT.fieldOf("y1").forGetter(Spec::y1),
-                Codec.INT.fieldOf("x2").forGetter(Spec::x2),
-                Codec.INT.fieldOf("y2").forGetter(Spec::y2),
-                Codec.INT.fieldOf("size").forGetter(Spec::size),
-                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOff),
-                Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_x").forGetter(Spec::stareAtX),
-                Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_y").forGetter(Spec::stareAtY),
+                Codec.INT.fieldOf("x").forGetter(Spec::x),
+                Codec.INT.fieldOf("y").forGetter(Spec::y),
+                Codec.INT.fieldOf("width").forGetter(Spec::width),
+                Codec.INT.fieldOf("height").forGetter(Spec::height),
+                Codec.INT.fieldOf("entity_size").forGetter(Spec::entitySize),
+                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOffset),
+                Codecs.createStrictOptionalFieldCodec(StareTarget.CODEC, "stare_at", StareTarget.FOLLOW_MOUSE).forGetter(Spec::stareAt),
                 Codecs.createStrictOptionalFieldCodec(PlayerModelOptions.CODEC, "model_customization").forGetter(Spec::modelOptions),
                 Codecs.createStrictOptionalFieldCodec(NbtCompound.CODEC, "data").forGetter(Spec::data)
         ).apply(instance, Spec::new));

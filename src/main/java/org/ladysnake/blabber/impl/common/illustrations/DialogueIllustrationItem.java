@@ -24,12 +24,11 @@ import net.minecraft.client.gui.DrawContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.dynamic.Codecs;
-import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
 public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor anchor, int x, int y, float scale,
-                                       boolean showTooltip) implements DialogueIllustration {
+                                       boolean showTooltip) implements SizedDialogueIllustration {
     private static final Codec<DialogueIllustrationItem> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             ItemStack.CODEC.fieldOf("item").forGetter(DialogueIllustrationItem::stack),
             Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationItem::anchor),
@@ -53,19 +52,29 @@ public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor ancho
     );
 
     @Override
+    public int width() {
+        return Math.round(16 * (this.scale)) + 4;
+    }
+
+    @Override
+    public int height() {
+        return Math.round(16 * (this.scale)) + 4;
+    }
+
+    @Override
     public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         // We draw the actual item, then the count and bar and such.
         try {
             ((DrawContextHooks) context).blabber$setItemScale(scale);
             int originX = positionTransform.transformX(this.anchor, this.x);
             int originY = positionTransform.transformY(this.anchor, this.y);
-            context.drawItem(stack, originX, originY);
+            context.drawItem(stack, originX + Math.round(8 * (this.scale - 1)), originY + Math.round(8 * (this.scale - 1)));
             if (scale() == 1) {  // Not supporting rescaled stack decorations right now
                 context.drawItemInSlot(textRenderer, stack, originX, originY);
             }
             if (showTooltip &&
-                    originX - (8 * (this.scale - 1)) <= mouseX && originX + (8 * (this.scale + 1)) + 4 > mouseX &&
-                    originY - (8 * (this.scale - 1)) <= mouseY && originY + (8 * (this.scale + 1)) + 4 > mouseY) {
+                    originX <= mouseX && originX + (16 * this.scale) + 4 > mouseX &&
+                    originY <= mouseY && originY + (16 * this.scale) + 4 > mouseY) {
                 context.drawItemTooltip(textRenderer, stack, mouseX, mouseY);
             }
         } finally {

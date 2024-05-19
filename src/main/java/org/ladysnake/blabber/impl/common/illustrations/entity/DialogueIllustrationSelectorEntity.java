@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common.illustrations;
+package org.ladysnake.blabber.impl.common.illustrations.entity;
 
 import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
@@ -33,6 +33,8 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.common.serialization.EitherMapCodec;
+import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
 
 import java.util.Optional;
 
@@ -89,21 +91,39 @@ public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEnti
         return this;
     }
 
-    public record Spec(String selector, IllustrationAnchor anchor, int x1, int y1, int x2, int y2,
-                       int size, float yOff,
-                       Optional<Integer> stareAtX, Optional<Integer> stareAtY) implements DialogueIllustrationEntity.Spec {
-        private static final MapCodec<Spec> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
+    public record Spec(String selector, IllustrationAnchor anchor, int x, int y, int width, int height,
+                       int entitySize, float yOffset,
+                       StareTarget stareAt) implements DialogueIllustrationEntity.Spec {
+        private static final MapCodec<Spec> CODEC_V0 = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Codec.STRING.fieldOf("entity").forGetter(Spec::selector),
                 Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
-                Codec.INT.fieldOf("x1").forGetter(Spec::x1),
-                Codec.INT.fieldOf("y1").forGetter(Spec::y1),
-                Codec.INT.fieldOf("x2").forGetter(Spec::x2),
-                Codec.INT.fieldOf("y2").forGetter(Spec::y2),
-                Codec.INT.fieldOf("size").forGetter(Spec::size),
-                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOff),
-                Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_x").forGetter(Spec::stareAtX),
-                Codecs.createStrictOptionalFieldCodec(Codec.INT, "stare_at_y").forGetter(Spec::stareAtY)
+                Codec.INT.fieldOf("x1").forGetter(Spec::x),
+                Codec.INT.fieldOf("y1").forGetter(Spec::y),
+                Codec.INT.fieldOf("x2").forGetter(s -> s.x() + s.width()),
+                Codec.INT.fieldOf("y2").forGetter(s -> s.y() + s.height()),
+                Codec.INT.fieldOf("size").forGetter(Spec::entitySize),
+                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOffset),
+                OptionalSerialization.optionalIntField("stare_at_x").forGetter(s -> s.stareAt().x()),
+                OptionalSerialization.optionalIntField("stare_at_y").forGetter(s -> s.stareAt().y())
+        ).apply(instance, (id, anchor, x1, y1, x2, y2, size, yOff, stareAtX, stareAtY) -> {
+            int minX = Math.min(x1, x2);
+            int minY = Math.min(y1, y2);
+            int maxX = Math.max(x1, x2);
+            int maxY = Math.max(y1, y2);
+            return new Spec(id, anchor, minX, minY, maxX - minX, maxY - minY, size, yOff, new StareTarget(Optional.empty(), stareAtX, stareAtY));
+        }));
+        private static final MapCodec<Spec> CODEC_V1 = RecordCodecBuilder.mapCodec(instance -> instance.group(
+                Codec.STRING.fieldOf("entity").forGetter(Spec::selector),
+                Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
+                Codec.INT.fieldOf("x").forGetter(Spec::x),
+                Codec.INT.fieldOf("y").forGetter(Spec::y),
+                Codec.INT.fieldOf("width").forGetter(Spec::width),
+                Codec.INT.fieldOf("height").forGetter(Spec::height),
+                Codec.INT.fieldOf("entity_size").forGetter(Spec::entitySize),
+                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOffset),
+                Codecs.createStrictOptionalFieldCodec(StareTarget.CODEC, "stare_at", StareTarget.FOLLOW_MOUSE).forGetter(Spec::stareAt)
         ).apply(instance, Spec::new));
+        public static final MapCodec<Spec> CODEC = EitherMapCodec.alternatively(CODEC_V0, CODEC_V1);
 
         public Spec(PacketByteBuf buf) {
             this(
@@ -115,22 +135,20 @@ public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEnti
                     buf.readInt(),
                     buf.readInt(),
                     buf.readFloat(),
-                    buf.readOptional(PacketByteBuf::readInt),
-                    buf.readOptional(PacketByteBuf::readInt)
+                    new StareTarget(buf)
             );
         }
 
         public void writeToBuffer(PacketByteBuf buf) {
             buf.writeString(selector());
             buf.writeEnumConstant(anchor());
-            buf.writeInt(x1());
-            buf.writeInt(y1());
-            buf.writeInt(x2());
-            buf.writeInt(y2());
-            buf.writeInt(size());
-            buf.writeFloat(yOff());
-            buf.writeOptional(stareAtX(), PacketByteBuf::writeInt);
-            buf.writeOptional(stareAtY(), PacketByteBuf::writeInt);
+            buf.writeInt(x());
+            buf.writeInt(y());
+            buf.writeInt(width());
+            buf.writeInt(height());
+            buf.writeInt(entitySize());
+            buf.writeFloat(yOffset());
+            StareTarget.writeToPacket(buf, stareAt());
         }
     }
 }

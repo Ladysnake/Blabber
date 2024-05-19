@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common.illustrations;
+package org.ladysnake.blabber.impl.common.illustrations.entity;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -26,12 +26,11 @@ import net.minecraft.client.gui.screen.ingame.InventoryScreen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.api.DialogueIllustration;
+import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
+import org.ladysnake.blabber.impl.common.illustrations.SizedDialogueIllustration;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
-import java.util.Optional;
-
-public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationEntity.Spec> implements DialogueIllustration {
+public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationEntity.Spec> implements SizedDialogueIllustration {
     private final S spec;
     private transient @Nullable LivingEntity renderedEntity;
 
@@ -46,6 +45,31 @@ public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationE
     protected abstract @Nullable LivingEntity getRenderedEntity(World world);
 
     @Override
+    public IllustrationAnchor anchor() {
+        return spec().anchor();
+    }
+
+    @Override
+    public int x() {
+        return spec().x();
+    }
+
+    @Override
+    public int y() {
+        return spec().y();
+    }
+
+    @Override
+    public int width() {
+        return spec().width();
+    }
+
+    @Override
+    public int height() {
+        return spec().height();
+    }
+
+    @Override
     @Environment(EnvType.CLIENT)
     public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         LivingEntity e = this.renderedEntity == null
@@ -54,20 +78,22 @@ public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationE
 
         if (e == null) return; // Something went wrong creating the entity, so don't render.
 
-        int x1 = positionTransform.transformX(this.spec().anchor(), this.spec().x1());
-        int y1 = positionTransform.transformY(this.spec().anchor(), this.spec().y1());
-        int x2 = positionTransform.transformX(this.spec().anchor(), this.spec().x2());
-        int y2 = positionTransform.transformY(this.spec().anchor(), this.spec().y2());
+        int x1 = minX(positionTransform);
+        int y1 = minY(positionTransform);
+        int x2 = maxX(positionTransform);
+        int y2 = maxY(positionTransform);
 
-        int fakedMouseX = spec.stareAtX().map(s -> s + (x1 + x2) / 2).orElse(mouseX);
-        int fakedMouseY = spec.stareAtY().map(s -> s + (y1 + y2) / 2).orElse(mouseY);
+        StareTarget stareTarget = spec().stareAt();
+        int fakedMouseX = stareTarget.x().isPresent() ? stareTarget.anchor().isPresent() ? positionTransform.transformX(stareTarget.anchor().get(), stareTarget.x().getAsInt()) : stareTarget.x().getAsInt() + (x1 + x2) / 2 : mouseX;
+        int fakedMouseY = stareTarget.y().isPresent() ? stareTarget.anchor().isPresent() ? positionTransform.transformY(stareTarget.anchor().get(), stareTarget.y().getAsInt()) : stareTarget.y().getAsInt() + (y1 + y2) / 2 : mouseY;
+
         InventoryScreen.drawEntity(context,
                 x1,
                 y1,
                 x2,
                 y2,
-                spec().size(),
-                spec().yOff(),
+                spec().entitySize(),
+                spec().yOffset(),
                 fakedMouseX,
                 fakedMouseY,
                 e);
@@ -75,13 +101,12 @@ public abstract class DialogueIllustrationEntity<S extends DialogueIllustrationE
 
     public interface Spec {
         IllustrationAnchor anchor();
-        Optional<Integer> stareAtX();
-        Optional<Integer> stareAtY();
-        int x1();
-        int y1();
-        int x2();
-        int y2();
-        float yOff();
-        int size();
+        StareTarget stareAt();
+        int x();
+        int y();
+        int width();
+        int height();
+        float yOffset();
+        int entitySize();
     }
 }

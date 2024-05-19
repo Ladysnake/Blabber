@@ -43,6 +43,7 @@ import org.ladysnake.blabber.impl.common.settings.BlabberSetting;
 import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 import org.lwjgl.glfw.GLFW;
 
+import java.util.EnumMap;
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -97,7 +98,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
      */
     protected int selectionIconMarginTop = -4;
     protected int selectionIconSize = 16;
-    protected Vector2i[] illustrationSlots;
+    protected EnumMap<IllustrationAnchor, Vector2i> illustrationSlots;
     protected int mainTextColor = 0xFFFFFF;
     protected int lockedChoiceColor = 0x808080;
     protected int selectedChoiceColor = 0xE0E044;
@@ -114,7 +115,10 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         super(handler, inventory, title);
         GameOptions options = MinecraftClient.getInstance().options;
         this.instructions = Text.translatable("blabber:dialogue.instructions", options.forwardKey.getBoundKeyLocalizedText(), options.backKey.getBoundKeyLocalizedText(), options.inventoryKey.getBoundKeyLocalizedText());
-        this.illustrationSlots = new Vector2i[] { new Vector2i(), new Vector2i() };
+        this.illustrationSlots = new EnumMap<>(IllustrationAnchor.class);
+        for (IllustrationAnchor anchor : IllustrationAnchor.values()) {
+            this.illustrationSlots.put(anchor, new Vector2i(-999, -999));
+        }
     }
 
     @Override
@@ -135,8 +139,8 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
     }
 
     protected void layoutIllustrationSlots() {
-        this.illustrationSlots[0].set(this.width * 3/4, this.choiceListMinY);
-        this.illustrationSlots[1].set(this.width * 2/5, this.height * 2/3);
+        this.illustrationSlots.get(IllustrationAnchor.SLOT_1).set(this.width * 3/4, this.choiceListMinY);
+        this.illustrationSlots.get(IllustrationAnchor.SLOT_2).set(this.width * 2/5, this.height * 2/3);
     }
 
     @Override
@@ -318,40 +322,19 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
             context.drawText(this.textRenderer, "x", positionTransform.transformX(anchor, -3), positionTransform.transformY(anchor, -5), color, true);
             MutableText text = Text.empty().append(Text.literal(anchor.asString()).styled(s -> s.withColor(color))).append(" > X: " + positionTransform.inverseTransformX(anchor, mouseX) + ", Y: " + positionTransform.inverseTransformY(anchor, mouseY));
             switch (anchor) {
-                case TOP_LEFT, TOP_RIGHT -> {
-                    context.drawTooltip(
-                            this.textRenderer,
-                            text,
-                            positionTransform.transformX(anchor, 0),
-                            15
-                    );
-                }
+                case TOP_LEFT, TOP_RIGHT -> context.drawTooltip(
+                        this.textRenderer,
+                        text,
+                        positionTransform.transformX(anchor, 0),
+                        15
+                );
 
-                case CENTER -> context.drawTooltip(
+                default -> context.drawTooltip(
                         this.textRenderer,
                         text,
                         positionTransform.transformX(anchor, 0),
                         positionTransform.transformY(anchor, 0)
                 );
-
-                case BOTTOM_LEFT, BOTTOM_RIGHT -> {
-                    context.drawTooltip(
-                            this.textRenderer,
-                            text,
-                            positionTransform.transformX(anchor, 0),
-                            positionTransform.transformY(anchor, 0)
-                    );
-                }
-                case SLOT_1, SLOT_2 -> {
-                    if (anchor.slotId() < this.illustrationSlots.length) {
-                        context.drawTooltip(
-                                this.textRenderer,
-                                text,
-                                positionTransform.transformX(anchor, 0),
-                                positionTransform.transformY(anchor, 0)
-                        );
-                    }
-                }
             }
         }
     }

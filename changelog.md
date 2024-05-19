@@ -2,9 +2,17 @@
 Version 1.6.0
 ------------------------------------------------------
 **Additions**
-- New *debug mode* : use the `/blabber debug enable` command to enter debug mode. Currently, this displays the pointer's coordinates when in a dialogue - useful for positioning illustrations.
+- New illustration types:
+  - `blabber:fake_player` draws a (potentially offline) player with custom data
+  - `blabber:texture` draws a 2D texture from a resourcepack
+- New anchor system for illustrations: you do not have to draw everything relative to the top-left corner anymore, you can pick any corner plus a couple predefined "good spots" for illustrations
+  - use the `/blabber settings set debug.anchors <true|false>` command to toggle the illustration anchor debug mode, which displays the coordinates of the cursor relative to every available anchor
+- Added the `scale` property for item illustrations (defaults to `1.0`)
+  - Limitation: durability bars and stack count indicators do not render when a custom scale is set
 
 **Changes**
+- Illustration deserialization error messages have been improved slightly
+- Blabber will now log a warning with some additional details when it detects that a player gets stuck without available choices
 - API change: `DialogueIllustration#parseText` can now throw `CommandSyntaxException`
 
 ------------------------------------------------------

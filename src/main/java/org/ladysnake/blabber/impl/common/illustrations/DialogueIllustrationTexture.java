@@ -17,51 +17,48 @@
  */
 package org.ladysnake.blabber.impl.common.illustrations;
 
-import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.render.BufferBuilder;
-import net.minecraft.client.render.BufferRenderer;
-import net.minecraft.client.render.GameRenderer;
-import net.minecraft.client.render.Tessellator;
-import net.minecraft.client.render.VertexFormat;
-import net.minecraft.client.render.VertexFormats;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.dynamic.Codecs;
-import org.joml.Matrix4f;
 import org.ladysnake.blabber.api.DialogueIllustration;
 import org.ladysnake.blabber.api.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
+
+import java.util.OptionalInt;
 
 public record DialogueIllustrationTexture(
         Identifier texture,
         IllustrationAnchor anchor,
-        int x1,
-        int y1,
-        int x2,
-        int y2,
-        int z,
-        float u1,
-        float v1,
-        float u2,
-        float v2
-) implements DialogueIllustration {
+        int x,
+        int y,
+        int width,
+        int height,
+        OptionalInt u,
+        OptionalInt v,
+        OptionalInt textureWidth,
+        OptionalInt textureHeight,
+        OptionalInt regionWidth,
+        OptionalInt regionHeight
+) implements SizedDialogueIllustration {
     public static final Codec<DialogueIllustrationTexture> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Identifier.CODEC.fieldOf("texture").forGetter(DialogueIllustrationTexture::texture),
             Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationTexture::anchor),
-            Codec.INT.fieldOf("x1").forGetter(DialogueIllustrationTexture::x1),
-            Codec.INT.fieldOf("y1").forGetter(DialogueIllustrationTexture::y1),
-            Codec.INT.fieldOf("x2").forGetter(DialogueIllustrationTexture::x2),
-            Codec.INT.fieldOf("y2").forGetter(DialogueIllustrationTexture::y2),
-            Codec.INT.optionalFieldOf("z", 0).forGetter(DialogueIllustrationTexture::z),
-            Codec.FLOAT.optionalFieldOf("u1", 0f).forGetter(DialogueIllustrationTexture::u1),
-            Codec.FLOAT.optionalFieldOf("v1", 0f).forGetter(DialogueIllustrationTexture::v1),
-            Codec.FLOAT.optionalFieldOf("u2", 1f).forGetter(DialogueIllustrationTexture::u2),
-            Codec.FLOAT.optionalFieldOf("v2", 1f).forGetter(DialogueIllustrationTexture::v2)
+            Codec.INT.fieldOf("x").forGetter(DialogueIllustrationTexture::x),
+            Codec.INT.fieldOf("y").forGetter(DialogueIllustrationTexture::y),
+            Codec.INT.fieldOf("width").forGetter(DialogueIllustrationTexture::width),
+            Codec.INT.fieldOf("height").forGetter(DialogueIllustrationTexture::height),
+            OptionalSerialization.optionalIntField("u").forGetter(DialogueIllustrationTexture::u),
+            OptionalSerialization.optionalIntField("v").forGetter(DialogueIllustrationTexture::v),
+            OptionalSerialization.optionalIntField("texture_width").forGetter(DialogueIllustrationTexture::textureWidth),
+            OptionalSerialization.optionalIntField("texture_height").forGetter(DialogueIllustrationTexture::textureHeight),
+            OptionalSerialization.optionalIntField("region_width").forGetter(DialogueIllustrationTexture::regionWidth),
+            OptionalSerialization.optionalIntField("region_height").forGetter(DialogueIllustrationTexture::regionHeight)
     ).apply(instance, DialogueIllustrationTexture::new));
+
     public static final DialogueIllustrationType<DialogueIllustrationTexture> TYPE = new DialogueIllustrationType<>(CODEC,
             buf -> new DialogueIllustrationTexture(
                     buf.readIdentifier(),
@@ -70,55 +67,44 @@ public record DialogueIllustrationTexture(
                     buf.readVarInt(),
                     buf.readVarInt(),
                     buf.readVarInt(),
-                    buf.readVarInt(),
-                    buf.readFloat(),
-                    buf.readFloat(),
-                    buf.readFloat(),
-                    buf.readFloat()
+                    OptionalSerialization.readOptionalInt(buf),
+                    OptionalSerialization.readOptionalInt(buf),
+                    OptionalSerialization.readOptionalInt(buf),
+                    OptionalSerialization.readOptionalInt(buf),
+                    OptionalSerialization.readOptionalInt(buf),
+                    OptionalSerialization.readOptionalInt(buf)
             ),
             (buf, image) -> {
                 buf.writeIdentifier(image.texture());
                 buf.writeEnumConstant(image.anchor());
-                buf.writeVarInt(image.x1());
-                buf.writeVarInt(image.y1());
-                buf.writeVarInt(image.x2());
-                buf.writeVarInt(image.y2());
-                buf.writeVarInt(image.z());
-                buf.writeFloat(image.u1());
-                buf.writeFloat(image.v1());
-                buf.writeFloat(image.u2());
-                buf.writeFloat(image.v2());
+                buf.writeVarInt(image.x());
+                buf.writeVarInt(image.y());
+                buf.writeVarInt(image.width());
+                buf.writeVarInt(image.height());
+                OptionalSerialization.writeOptionalInt(buf, image.u());
+                OptionalSerialization.writeOptionalInt(buf, image.v());
+                OptionalSerialization.writeOptionalInt(buf, image.textureWidth());
+                OptionalSerialization.writeOptionalInt(buf, image.textureHeight());
+                OptionalSerialization.writeOptionalInt(buf, image.regionWidth());
+                OptionalSerialization.writeOptionalInt(buf, image.regionHeight());
             }
     );
 
     @Override
     public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
-        drawTexturedQuad(
-                context.getMatrices(),
+        context.drawTexture(
                 texture(),
-                positionTransform.transformX(anchor(), x1()),
-                positionTransform.transformX(anchor(), x2()),
-                positionTransform.transformY(anchor(), y1()),
-                positionTransform.transformY(anchor(), y2()),
-                z(),
-                u1(),
-                u2(),
-                v1(),
-                v2()
+                minX(positionTransform),
+                minY(positionTransform),
+                width(),
+                height(),
+                0,
+                0,
+                regionWidth().orElse(width()),
+                regionHeight().orElse(height()),
+                textureWidth().orElse(width()),
+                textureHeight().orElse(height())
         );
-    }
-
-    private void drawTexturedQuad(MatrixStack matrices, Identifier texture, int x1, int x2, int y1, int y2, int z, float u1, float u2, float v1, float v2) {
-        RenderSystem.setShaderTexture(0, texture);
-        RenderSystem.setShader(GameRenderer::getPositionTexProgram);
-        Matrix4f matrix4f = matrices.peek().getPositionMatrix();
-        BufferBuilder bufferBuilder = Tessellator.getInstance().getBuffer();
-        bufferBuilder.begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION_TEXTURE);
-        bufferBuilder.vertex(matrix4f, x1, y1, z).texture(u1, v1).next();
-        bufferBuilder.vertex(matrix4f, x1, y2, z).texture(u1, v2).next();
-        bufferBuilder.vertex(matrix4f, x2, y2, z).texture(u2, v2).next();
-        bufferBuilder.vertex(matrix4f, x2, y1, z).texture(u2, v1).next();
-        BufferRenderer.drawWithGlobalProgram(bufferBuilder.end());
     }
 
     @Override

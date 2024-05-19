@@ -25,10 +25,10 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.ColorHelper;
 import org.joml.Matrix4f;
-import org.joml.Vector2i;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
+import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
 public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
     public static final int INSTRUCTIONS_BOTTOM_MARGIN = 6;
@@ -42,7 +42,6 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
         this.choiceColor = 0xD0D0D0;
         this.lockedChoiceColor = 0xA0A0A0;
         this.selectedChoiceColor = 0xF0F066;
-        this.illustrationSlots = new Vector2i[] { new Vector2i(), new Vector2i() };
     }
 
     @Override
@@ -64,11 +63,11 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen {
 
     @Override
     protected void layoutIllustrationSlots() {
-        this.illustrationSlots[0].set(
+        this.illustrationSlots.get(IllustrationAnchor.SLOT_1).set(
                 this.width / 4,
                 this.mainTextMinY - TEXT_TOP_MARGIN
         );
-        this.illustrationSlots[1].set(
+        this.illustrationSlots.get(IllustrationAnchor.SLOT_2).set(
                 (this.choiceListMinX + this.width) / 2,
                 this.choiceListMinY * 3/4
         );

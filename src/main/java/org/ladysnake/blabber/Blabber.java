@@ -39,11 +39,11 @@ import org.ladysnake.blabber.impl.common.DialogueInitializationException;
 import org.ladysnake.blabber.impl.common.PlayerDialogueTracker;
 import org.ladysnake.blabber.impl.common.commands.BlabberCommand;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationCollection;
-import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationFakePlayer;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationItem;
-import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationNbtEntity;
-import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationSelectorEntity;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationTexture;
+import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationFakePlayer;
+import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationNbtEntity;
+import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationSelectorEntity;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 
 public final class Blabber implements ModInitializer {
