@@ -1,4 +1,26 @@
 ------------------------------------------------------
+Version 1.6.0-mc1.20.1
+------------------------------------------------------
+*Barring serious bugs, this is the last backport for MC 1.20.1.*
+
+**Additions**
+- New illustration types:
+  - `blabber:fake_player` draws a (potentially offline) player with custom data
+  - `blabber:texture` draws a 2D texture from a resourcepack
+- New anchor system for illustrations: you do not have to draw everything relative to the top-left corner anymore, you can pick any corner plus a couple predefined "good spots" for illustrations
+  - use the `/blabber settings set debug.anchors <true|false>` command to toggle the illustration anchor debug mode, which displays the coordinates of the cursor relative to every available anchor
+- Added the `scale` property for item illustrations (defaults to `1.0`)
+  - Limitation: durability bars and stack count indicators do not render when a custom scale is set
+- API: Added an experimental API for custom parameterized dialogue layouts
+
+**Changes**
+- Illustration deserialization error messages have been improved slightly
+- Blabber will now log a warning with some additional details when it detects that a player gets stuck without available choices
+- API: `DialogueIllustration#parseText` can now throw `CommandSyntaxException`
+- API: the mod is now compatible with split sourceset environments
+  - The experimental illustration API has been consequently reworked
+
+------------------------------------------------------
 Version 1.5.1-mc1.20.1
 ------------------------------------------------------
 **Fixes**
