@@ -165,7 +165,7 @@
       "type": "blabber:texture",
       "texture": "babblings:textures/dialogues/dummy_blabber.png",
       "anchor": "before_text",
-      "x": -36,
+      "x": -56,
       "y": -12,
       "width": 54,
       "height": 54
@@ -174,7 +174,7 @@
       "type": "blabber:texture",
       "texture": "babblings:textures/dialogues/dummy_blabber_browsdown.png",
       "anchor": "before_text",
-      "x": -36,
+      "x": -56,
       "y": -12,
       "width": 54,
       "height": 54
@@ -183,7 +183,7 @@
       "type": "blabber:texture",
       "texture": "babblings:textures/dialogues/dummy_blabber_exclaim.png",
       "anchor": "before_text",
-      "x": -36,
+      "x": -56,
       "y": -12,
       "width": 54,
       "height": 54
@@ -192,7 +192,7 @@
       "type": "blabber:texture",
       "texture": "babblings:textures/dialogues/dummy_blabber_question.png",
       "anchor": "before_text",
-      "x": -36,
+      "x": -56,
       "y": -12,
       "width": 54,
       "height": 54
