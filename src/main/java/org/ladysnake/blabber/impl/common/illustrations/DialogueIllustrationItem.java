@@ -19,42 +19,44 @@ package org.ladysnake.blabber.impl.common.illustrations;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
-import org.ladysnake.blabber.api.DialogueIllustration;
-import org.ladysnake.blabber.api.DialogueIllustrationType;
-import org.ladysnake.blabber.impl.common.FailingOptionalFieldCodec;
+import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
+import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.common.serialization.FailingOptionalFieldCodec;
 
-public record DialogueIllustrationItem(ItemStack stack, int x, int y, boolean showTooltip) implements DialogueIllustration {
+public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor anchor, int x, int y, float scale,
+                                       boolean showTooltip) implements SizedDialogueIllustration {
     private static final Codec<DialogueIllustrationItem> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             ItemStack.CODEC.fieldOf("item").forGetter(DialogueIllustrationItem::stack),
+            FailingOptionalFieldCodec.of(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationItem::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationItem::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationItem::y),
+            FailingOptionalFieldCodec.of(Codec.FLOAT, "scale", 1f).forGetter(DialogueIllustrationItem::scale),
             FailingOptionalFieldCodec.of(Codec.BOOL, "show_tooltip", true).forGetter(DialogueIllustrationItem::showTooltip)
     ).apply(instance, DialogueIllustrationItem::new));
 
     public static final DialogueIllustrationType<DialogueIllustrationItem> TYPE = new DialogueIllustrationType<>(
             CODEC,
-            buf -> new DialogueIllustrationItem(ItemStack.fromNbt(buf.readNbt()), buf.readInt(), buf.readInt(), buf.readBoolean()),
+            buf -> new DialogueIllustrationItem(ItemStack.fromNbt(buf.readNbt()), buf.readEnumConstant(IllustrationAnchor.class), buf.readInt(), buf.readInt(), buf.readFloat(), buf.readBoolean()),
             (buf, item) -> {
                 buf.writeNbt(item.stack().writeNbt(new NbtCompound()));
+                buf.writeEnumConstant(item.anchor());
                 buf.writeInt(item.x());
                 buf.writeInt(item.y());
+                buf.writeFloat(item.scale());
                 buf.writeBoolean(item.showTooltip());
             }
     );
 
     @Override
-    public void render(DrawContext context, TextRenderer textRenderer, int x, int y, int mouseX, int mouseY, float tickDelta) {
-        // We draw the actual item, then the count and bar and such.
-        context.drawItem(stack, this.x + x, this.y + y);
-        context.drawItemInSlot(textRenderer, stack, this.x + x, this.y + y);
-        if (showTooltip &&
-                this.x + x <= mouseX && this.x + x + 20 > mouseX &&
-                this.y + y <= mouseY && this.y + y + 20 > mouseY)
-            context.drawItemTooltip(textRenderer, stack, mouseX, mouseY);
+    public int width() {
+        return Math.round(16 * (this.scale)) + 4;
+    }
+
+    @Override
+    public int height() {
+        return Math.round(16 * (this.scale)) + 4;
     }
 
     @Override

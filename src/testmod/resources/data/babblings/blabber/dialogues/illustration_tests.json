@@ -1,0 +1,277 @@
+{
+  "layout": {
+    "type": "blabber:classic"
+  },
+  "states": {
+    "start": {
+      "text": "Illustration Tests",
+      "choices": [
+        {
+          "text": "Entity: @interlocutor",
+          "next": "interlocutor"
+        },
+        {
+          "text": "Fake Entity: Allay",
+          "next": "allay"
+        },
+        {
+          "text": "Fake Player: Pyrofab",
+          "next": "pyrofab"
+        },
+        {
+          "text": "Item: Diamond",
+          "next": "diamond"
+        },
+        {
+          "text": "Texture: Blabber Icon",
+          "next": "blabber"
+        },
+        {
+          "text": "Lorem Ipsum",
+          "next": "lorem_ipsum"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ]
+    },
+    "interlocutor": {
+      "text": "Entity: @interlocutor",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["interlocutor"]
+    },
+    "allay": {
+      "text": "Fake Entity: Allay",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["allay"]
+    },
+    "pyrofab": {
+      "text": "Fake Player: Pyrofab",
+      "choices": [
+        {
+          "text": "Fake Player: doctor4t",
+          "next": "doctor4t"
+        },
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["pyrofab"]
+    },
+    "doctor4t": {
+      "text": "Fake Player: doctor4t",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "pyrofab"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["doctor4t"]
+    },
+    "diamond": {
+      "text": "Item: minecraft:diamond",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["diamond"]
+    },
+    "blabber": {
+      "text": "Texture: blabber:icon",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["blabber"]
+    },
+    "lorem_ipsum": {
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+      "choices": [
+        {
+          "text": "Go Back",
+          "next": "start"
+        },
+        {
+          "text": "Exit",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "text": "",
+      "choices": [],
+      "type": "end_dialogue"
+    }
+  },
+  "illustrations": {
+    "interlocutor": {
+      "type": "blabber:entity",
+      "entity": "@interlocutor",
+      "x1": 0,
+      "y1": 80,
+      "x2": 100,
+      "y2": 180,
+      "size": 100,
+      "y_offset": 0.5,
+      "stare_at_x": 50,
+      "stare_at_y": 0
+    },
+    "allay": {
+      "type": "blabber:fake_entity",
+      "id": "minecraft:allay",
+      "anchor": "slot_2",
+      "x1": -40,
+      "y1": -40,
+      "x2": 40,
+      "y2": 40,
+      "size": 100,
+      "stare_at_x": -50,
+      "stare_at_y": 0
+    },
+    "pyrofab": {
+      "type": "blabber:fake_player",
+      "anchor": "slot_1",
+      "x": -20,
+      "y": -30,
+      "width": 100,
+      "height": 145,
+      "entity_size": 70,
+      "profile": {
+        "id" : "577a28bd0fcf49bbb406407f8041872b",
+        "name" : "Pyrofab",
+        "properties" : [ {
+          "name" : "textures",
+          "value" : "ewogICJ0aW1lc3RhbXAiIDogMTcxNTg4NTI3MzE3MywKICAicHJvZmlsZUlkIiA6ICI1NzdhMjhiZDBmY2Y0OWJiYjQwNjQwN2Y4MDQxODcyYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJQeXJvZmFiIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NjY2M2ZjUwMjc1Njk2YmRlNDllODg3NGVhYTY5ZDRhN2U3MTM2ZDg5Yjg1MDllOWU0OTdiYmQwMzI1ZDcwYmMiCiAgICB9CiAgfQp9",
+          "signature" : "ZFaKnp5ET+oqR1MyB4oJPkvr5JMwPFnMVS68Uktd661QgNLfoqy62LZFUoOuVI5ZQAHvRQkpo2vrrlaLGO8ubcsbHbAv8o29/8+KYjNOR04tWFBQBycfIWPEtCcW5cuWeNKvQau23UAdyPTfJoMSVNldD+ZQHU0ZOdWVIsfIus+k5pBIGsVVIso1rFlGLpRl9OnG3ENMgeuARQD7l+/bFE/Oj1O2FhFWguTfVEEvB/xvt/6aCVs441MYAxLriP4a7oDKxGppBZqGqj9HKvL2IKnraiRD6koRoRlA4sDgbJSiwzX8SaswH7qs66YkxJphjW+EbtbG+9JVNhfUovdCNH/g8Q8SgT8c5Tw/ylvcFolkMfZyAgMiKsMrwpNrDROEs4CRg1VcV/rCOwYvQoocQWT65ErYmgog+ZtvXYJAMd8dwkQtXLKTd9GoyWMVzoO41iuUVMy2iX7D+rLITJVdac//FmMaTp1GYl9EX2TV0Ll3HmeStnscmX/+QfoDUEkhLKxC14kRZxsRLrk1icZmMlyp8JY9NlcWPPpwqspyW3zttOkxFiZt0yCqTyCqZi906LM7iTMfdD4KRFpCTrDe8lxddWp0C77HkQlesyhRgr6lPGOaIZKEryJWpt8RkJXT6Q37zYFnt6FzozaiC0FKUTPW08Hu9suhU2o7XeGwrTo="
+        } ],
+        "profileActions" : [ ]
+      },
+      "model_customization": {
+        "visible_parts": ["jacket", "left_sleeve", "right_sleeve", "left_pants_leg", "right_pants_leg"],
+        "main_hand": "left"
+      },
+      "data": {
+        "Inventory": [
+          {
+            "Slot": 0,
+            "id": "minecraft:redstone",
+            "Count": 1
+          }
+        ]
+      }
+    },
+    "doctor4t": {
+      "type": "blabber:fake_player",
+      "x": 280,
+      "y": 40,
+      "width": 120,
+      "height": 140,
+      "entity_size": 70,
+      "profile": {
+        "id" : "1b44461af6054b29a7a904e649d1981c",
+        "name" : "doctor4t",
+        "properties" : [ {
+          "name" : "textures",
+          "value" : "ewogICJ0aW1lc3RhbXAiIDogMTcxNTg4NTUzNTE0MywKICAicHJvZmlsZUlkIiA6ICIxYjQ0NDYxYWY2MDU0YjI5YTdhOTA0ZTY0OWQxOTgxYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJkb2N0b3I0dCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kYjA5OTEyMGViZjMxMDVjM2RmZjYxMGMzNzliMGNkM2Y5ODEwZWEwYzRhYjRmMjQ3YWQ0ZjRkZTVmNDE4MGMyIgogICAgfQogIH0KfQ==",
+          "signature" : "K77D67h6drMk4SgctfM1F34UAVuQXSDLTTcvs/G3cqjTSbGTRrstzFmul4JzffYjOO1nijghFq5i+hghBNMTnSY1Nk8yZCF/TNe/bodA0gnCcXHA0iAMbrs91O/WXPXzXN7nA/wUivY4UdBLVaQXWT5AM/XScovLr2+sK5DSylzbgn2O3HXmz9zeWNUuppDq5JnFWfklG3hepK4NjEd+deT9NuIctwNr6aj0Y3S9ySLiM1qIDOUpksFr0Vo2gXLkoz/kRxyFE1e5e0LK/ymLuvzcDAtIyx5+IzybVEdkQ5YGIzyMeHeCPEJ0Qs2WkJKhI83Nb9vw9EzVDbFp3ygGbQ8ZPvd0t0hEusa9lDzcIjfpRn/0VMwb0D2vJ3/b6aINkBafXyL/GNBD2Lso/JxeHAyQXlYEr7XCFf7/04hz5GiKpcVGNPiBIawH04idU6qty+8QiwrT484/VrQoG6oMspF9WbeviBNY2iNkFz+EN5lP/R4Gl2Vqm29xI77hyUD4AptVgKmYTJv88r1s9x2tceCTs8KYja3e5FYNf9K2e1BFvT1FrKzby+54747eZAhrqO13T4Q9T5FA1y4R47nnSDsf8ESrqil43mLASEjxOmlfBdkt07OyTTu/un0CLEgoFSNHutPKIcvnkRNlXQV9WByxEYREBa1jVT4w13gQ0c8="
+        } ],
+        "profileActions" : [ ]
+      }
+    },
+    "diamond": [{
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "Count": 1
+      },
+      "anchor": "center",
+      "x": 100,
+      "y": -20,
+      "scale": 5.0,
+      "show_tooltip": true
+    }, {
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:diamond_pickaxe",
+        "Count": 1,
+        "tag": {
+          "Damage": 16
+        }
+      },
+      "x": 100,
+      "y": 140,
+      "scale": 1,
+      "show_tooltip": true
+    }, {
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:diamond_hoe",
+        "Count": 1
+      },
+      "x": 140,
+      "y": 110,
+      "scale": 1.5,
+      "show_tooltip": false
+    }, {
+      "type": "blabber:item",
+      "item": {
+        "id": "minecraft:diamond_block",
+        "Count": 33
+      },
+      "x": 105,
+      "y": 150,
+      "scale": 1,
+      "show_tooltip": false
+    }],
+    "blabber": {
+      "type": "blabber:texture",
+      "texture": "blabber:icon.png",
+      "anchor": "slot_2",
+      "x": -24,
+      "y": -24,
+      "width": 48,
+      "height": 48
+    }
+  },
+  "start_at": "start"
+}

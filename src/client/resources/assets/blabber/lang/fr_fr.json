@@ -1,0 +1,10 @@
+{
+  "blabber:commands.dialogue.start.invalid": "Il n'y a pas de dialogue \"%s\"",
+  "blabber:commands.dialogue.start.predicate.invalid": "Il n'y a pas de prédicat de type \"%s\"",
+  "blabber:commands.dialogue.start.success": "Le dialogue \"%s\" a été initié pour %s",
+  "blabber:commands.setting.disabled": "Réglage '%s' désactivé",
+  "blabber:commands.setting.enabled": "Réglage '%s' activé",
+  "blabber:dialogue.escape_hatch": "[Blabber] §5On dirait que quelqu'un a fait une bêtise et là vous n'avez plus de choix disponible. §e§lVous devriez le signaler,§r§5 mais en attendant, voici une porte de sortie.",
+  "blabber:dialogue.instructions": "Choisissez avec la souris ou [%s] & [%s], puis confirmez avec un clic ou [%s]",
+  "blabber:dialogue.locked_choice": "Ce choix a des prérequis non atteints"
+}

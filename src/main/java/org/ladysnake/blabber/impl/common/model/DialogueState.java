@@ -28,8 +28,8 @@ import net.minecraft.text.Texts;
 import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.impl.common.FailingOptionalFieldCodec;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
+import org.ladysnake.blabber.impl.common.serialization.FailingOptionalFieldCodec;
 
 import java.util.ArrayList;
 import java.util.Collections;

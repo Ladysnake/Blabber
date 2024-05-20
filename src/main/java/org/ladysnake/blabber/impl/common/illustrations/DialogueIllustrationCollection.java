@@ -17,15 +17,14 @@
  */
 package org.ladysnake.blabber.impl.common.illustrations;
 
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.command.ServerCommandSource;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.api.DialogueIllustration;
-import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.api.illustration.DialogueIllustration;
+import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
 import java.util.ArrayList;
@@ -52,19 +51,12 @@ public record DialogueIllustrationCollection(List<DialogueIllustration> elements
     );
 
     @Override
-    public void render(DrawContext context, TextRenderer textRenderer, int x, int y, int mouseX, int mouseY, float tickDelta) {
-        for (DialogueIllustration i : elements) {
-            i.render(context, textRenderer, x, y, mouseX, mouseY, tickDelta);
-        }
-    }
-
-    @Override
     public DialogueIllustrationType<? extends DialogueIllustration> getType() {
         return TYPE;
     }
 
     @Override
-    public DialogueIllustration parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) {
+    public DialogueIllustration parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         List<DialogueIllustration> parsedSub = new ArrayList<>(elements.size());
         for (DialogueIllustration illustration : elements) {
             parsedSub.add(illustration.parseText(source, sender));

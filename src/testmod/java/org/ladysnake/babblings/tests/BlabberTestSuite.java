@@ -17,7 +17,6 @@
  */
 package org.ladysnake.babblings.tests;
 
-import io.github.ladysnake.elmendorf.ElmendorfTestContext;
 import io.github.ladysnake.elmendorf.GameTestUtil;
 import net.fabricmc.fabric.api.gametest.v1.FabricGameTest;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -33,7 +32,7 @@ import java.util.Set;
 public final class BlabberTestSuite implements FabricGameTest {
     @GameTest(templateName = EMPTY_STRUCTURE)
     public void nominal(TestContext ctx) {
-        ServerPlayerEntity player = ((ElmendorfTestContext)ctx).spawnServerPlayer(2, 2, 2);
+        ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
         Blabber.startDialogue(player, new Identifier("babblings:remnant_choice"));
         GameTestUtil.assertTrue("startDialogue should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentStateKey().equals("introduction") && handler.getAvailableChoices().size() == 3);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
@@ -51,8 +50,9 @@ public final class BlabberTestSuite implements FabricGameTest {
 
     @GameTest(templateName = EMPTY_STRUCTURE)
     public void registryGetsPopulated(TestContext ctx) {
-        GameTestUtil.assertTrue("dialogue registry should match expected state",
+        GameTestUtil.assertTrue("dialogue registry should match expected state (was " + DialogueRegistry.getIds() + ")",
                 DialogueRegistry.getIds().equals(Set.of(
+                        new Identifier("babblings:illustration_tests"),
                         new Identifier("babblings:mountain_king"),
                         new Identifier("babblings:perception_check"),
                         new Identifier("babblings:remnant_choice")
@@ -63,8 +63,8 @@ public final class BlabberTestSuite implements FabricGameTest {
 
     @GameTest(templateName = EMPTY_STRUCTURE)
     public void availableChoicesCanGetSelected(TestContext ctx) {
-        ServerPlayerEntity player = ((ElmendorfTestContext) ctx).spawnServerPlayer(2, 2, 2);
-        Blabber.startDialogue(player, new Identifier("babblings:mountain_king"));
+        ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
+        Blabber.startDialogue(player, new Identifier("babblings:mountain_king"), player);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
         GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
@@ -73,9 +73,9 @@ public final class BlabberTestSuite implements FabricGameTest {
 
     @GameTest(templateName = EMPTY_STRUCTURE)
     public void unavailableChoicesCannotGetSelected(TestContext ctx) {
-        ServerPlayerEntity player = ((ElmendorfTestContext) ctx).spawnServerPlayer(2, 2, 2);
+        ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
         player.setHealth(10f);
-        Blabber.startDialogue(player, new Identifier("babblings:mountain_king"));
+        Blabber.startDialogue(player, new Identifier("babblings:mountain_king"), player);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
         GameTestUtil.assertTrue("dialogue should be at state bargain", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);

@@ -27,7 +27,7 @@ import net.minecraft.text.Text;
 import net.minecraft.text.Texts;
 import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.impl.common.FailingOptionalFieldCodec;
+import org.ladysnake.blabber.impl.common.serialization.FailingOptionalFieldCodec;
 
 import java.util.Optional;
 

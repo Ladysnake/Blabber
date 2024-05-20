@@ -1,5 +1,5 @@
 {
-  "$schema": "https://ladysnake.org/wiki/blabber/dialogue.schema.json",
+  "$schema": "https://ladysnake.org/schemas/blabber/dialogue.schema.json",
   "start_at": "introduction",
   "unskippable": true,
   "states": {

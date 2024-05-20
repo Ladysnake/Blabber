@@ -29,15 +29,15 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
-import org.ladysnake.blabber.api.DialogueIllustration;
-import org.ladysnake.blabber.impl.client.BlabberClient;
+import org.ladysnake.blabber.api.illustration.DialogueIllustration;
+import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
-import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 import java.util.List;
+import java.util.Map;
 
 public class DialogueScreenHandler extends ScreenHandler {
     private final DialogueStateMachine dialogue;
@@ -58,8 +58,9 @@ public class DialogueScreenHandler extends ScreenHandler {
         return interlocutor;
     }
 
-    public DialogueLayout getLayout() {
-        return this.dialogue.getLayout();
+    @SuppressWarnings("unchecked")
+    public DialogueLayout<DialogueLayout.Params> getLayout() {
+        return (DialogueLayout<DialogueLayout.Params>) this.dialogue.getLayout();
     }
 
     public boolean isUnskippable() {
@@ -74,9 +75,8 @@ public class DialogueScreenHandler extends ScreenHandler {
         return this.dialogue.getCurrentIllustrations();
     }
 
-    @Nullable
-    public DialogueIllustration getIllustration(String name) {
-        return this.dialogue.getIllustration(name);
+    public Map<String, DialogueIllustration> getIllustrations() {
+        return this.dialogue.getIllustrations();
     }
 
     public ImmutableList<AvailableChoice> getAvailableChoices() {
@@ -107,10 +107,7 @@ public class DialogueScreenHandler extends ScreenHandler {
 
     @CheckEnv(Env.CLIENT)
     public ChoiceResult makeChoice(int choice) {
-        int originalChoiceIndex = this.getAvailableChoices().get(choice).originalChoiceIndex();
-        ChoiceResult result = this.dialogue.choose(originalChoiceIndex, action -> {});
-        BlabberClient.sendDialogueActionMessage(originalChoiceIndex);
-        return result;
+        return this.dialogue.choose(choice, action -> {});
     }
 
     public boolean makeChoice(ServerPlayerEntity player, int choice) {
@@ -122,7 +119,7 @@ public class DialogueScreenHandler extends ScreenHandler {
 
             return true;
         } catch (IllegalStateException e) {
-            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getDisplayName(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
+            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getEntityName(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
             return false;
         }
     }

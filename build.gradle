@@ -2,12 +2,15 @@ import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
 	id 'fabric-loom' version "1.6-SNAPSHOT"
-	id 'io.github.ladysnake.chenille' version '0.12.1'
+	id 'io.github.ladysnake.chenille' version '0.12.2'
 }
 
-archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
 
 chenille {
 	configureTestmod {
@@ -19,8 +22,30 @@ chenille {
 	javaVersion = project.java_version.toInteger()
 }
 
+java {
+	withSourcesJar()
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"blabber" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+		"babblings" {
+			sourceSet sourceSets.testmod
+		}
+	}
+}
+
 sourceSets {
 	reiDummy
+	testmod {
+		compileClasspath += client.compileClasspath
+		runtimeClasspath += client.runtimeClasspath
+	}
 }
 
 repositories {
@@ -35,6 +60,8 @@ repositories {
 }
 
 dependencies {
+	testmodImplementation(sourceSets.client.output)
+
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
@@ -48,14 +75,14 @@ dependencies {
 	modIncludeImplementation(libs.permissionsApi)
 	modLocalImplementation(libs.rei.api)
 	compileOnly(sourceSets.reiDummy.output)
-    modCompileOnly(libs.emi)
+    modLocalImplementation(libs.emi)
 
 	compileOnly(libs.mcAnnotations)
 
 	modLocalRuntime(libs.modmenu)
 
 	// Test dependencies
-	modTestmodImplementation(libs.elmendorf)
+	modLocalImplementation(libs.elmendorf)
 
 	testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
 	testImplementation "net.fabricmc:fabric-loader-junit:${project.loader_version}"
@@ -72,6 +99,7 @@ test {
 
 license {
 	exclude 'me/shedaniel/**/*'
+	exclude 'org/ladysnake/blabber/impl/common/validation/EitherCodecButGood.java'
 }
 
 processResources {
@@ -80,10 +108,6 @@ processResources {
 	filesMatching("fabric.mod.json") {
 		expand "version": project.version
 	}
-}
-
-java {
-	withSourcesJar()
 }
 
 jar {
