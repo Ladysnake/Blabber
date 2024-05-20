@@ -15,24 +15,22 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.api.client;
+package org.ladysnake.blabber.api.layout;
 
-import net.minecraft.client.gui.screen.ingame.HandledScreens;
+import com.mojang.serialization.Codec;
+import net.minecraft.network.PacketByteBuf;
 import org.jetbrains.annotations.ApiStatus;
-import org.ladysnake.blabber.api.layout.DialogueLayout;
-import org.ladysnake.blabber.api.layout.DialogueLayoutType;
-import org.ladysnake.blabber.impl.client.BlabberClient;
-import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 
 @ApiStatus.Experimental
-public final class BlabberScreenRegistry {
-    /**
-     * Registers a custom screen provider for a {@link org.ladysnake.blabber.api.layout.DialogueLayoutType}.
-     */
-    public static <P extends DialogueLayout.Params> void register(
-            DialogueLayoutType<P> layoutType,
-            HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<P>> screenProvider
-    ) {
-        BlabberClient.registerLayoutScreen(layoutType, screenProvider);
+public record DefaultLayoutParams() implements DialogueLayout.Params {
+    public static final DefaultLayoutParams DEFAULT = new DefaultLayoutParams();
+    public static final Codec<DefaultLayoutParams> CODEC = Codec.unit(() -> DefaultLayoutParams.DEFAULT);
+
+    public DefaultLayoutParams(PacketByteBuf buf) {
+        this();
+    }
+
+    public static void writeToPacket(PacketByteBuf buf, DefaultLayoutParams params) {
+        // NO-OP
     }
 }

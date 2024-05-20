@@ -29,16 +29,15 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
-import org.ladysnake.blabber.api.DialogueIllustration;
+import org.ladysnake.blabber.api.illustration.DialogueIllustration;
+import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.client.BlabberClient;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
-import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 import java.util.List;
-import java.util.Map;
 
 public class DialogueScreenHandler extends ScreenHandler {
     private final DialogueStateMachine dialogue;
@@ -59,8 +58,9 @@ public class DialogueScreenHandler extends ScreenHandler {
         return interlocutor;
     }
 
-    public DialogueLayout getLayout() {
-        return this.dialogue.getLayout();
+    @SuppressWarnings("unchecked")
+    public DialogueLayout<DialogueLayout.Params> getLayout() {
+        return (DialogueLayout<DialogueLayout.Params>) this.dialogue.getLayout();
     }
 
     public boolean isUnskippable() {

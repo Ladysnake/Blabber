@@ -25,21 +25,23 @@ import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.api.DialogueIllustration;
-import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.api.illustration.DialogueIllustration;
+import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
+import org.ladysnake.blabber.api.layout.DialogueLayout;
+import org.ladysnake.blabber.api.layout.DialogueLayoutType;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public record DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, Map<String, DialogueIllustration> illustrations, DialogueLayout layout) {
+public record DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, Map<String, DialogueIllustration> illustrations, DialogueLayout<?> layout) {
     public static final Codec<DialogueTemplate> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
             Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states),
             Codecs.createStrictOptionalFieldCodec(Codec.unboundedMap(Codec.STRING, DialogueIllustrationType.CODEC), "illustrations", Collections.emptyMap()).forGetter(DialogueTemplate::illustrations),
-            Codecs.createStrictOptionalFieldCodec(DialogueLayout.CODEC, "layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
+            Codecs.createStrictOptionalFieldCodec(DialogueLayoutType.CODEC, "layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
     ).apply(instance, DialogueTemplate::new));
 
     public static void writeToPacket(PacketByteBuf buf, DialogueTemplate dialogue) {
@@ -51,7 +53,7 @@ public record DialogueTemplate(String start, boolean unskippable, Map<String, Di
             b.writeRegistryValue(BlabberRegistrar.ILLUSTRATION_REGISTRY, i.getType());
             i.getType().writeToPacketUnsafe(b, i);
         });
-        DialogueLayout.writeToPacket(buf, dialogue.layout());
+        DialogueLayoutType.writeToPacket(buf, dialogue.layout());
     }
 
     public DialogueTemplate(PacketByteBuf buf) {
@@ -59,7 +61,7 @@ public record DialogueTemplate(String start, boolean unskippable, Map<String, Di
             DialogueIllustrationType<?> type = b.readRegistryValue(BlabberRegistrar.ILLUSTRATION_REGISTRY);
             assert type != null;
             return type.readFromPacket(b);
-        }), new DialogueLayout(buf));
+        }), DialogueLayoutType.readFromPacket(buf));
     }
 
     public DialogueTemplate parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {

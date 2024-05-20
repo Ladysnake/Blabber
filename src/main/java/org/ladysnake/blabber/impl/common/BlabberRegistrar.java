@@ -43,7 +43,9 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueActionV2;
-import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
+import org.ladysnake.blabber.api.layout.DefaultLayoutParams;
+import org.ladysnake.blabber.api.layout.DialogueLayoutType;
 import org.ladysnake.blabber.impl.common.commands.SettingArgumentType;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
@@ -72,6 +74,13 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final Registry<DialogueIllustrationType<?>> ILLUSTRATION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ILLUSTRATION_REGISTRY_KEY, Lifecycle.stable(), false)
     ).buildAndRegister();
+
+    public static final RegistryKey<Registry<DialogueLayoutType<?>>> LAYOUT_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_layouts"));
+    public static final Registry<DialogueLayoutType<?>> LAYOUT_REGISTRY = FabricRegistryBuilder.from(
+            new SimpleRegistry<>(LAYOUT_REGISTRY_KEY, Lifecycle.stable(), false)
+    ).buildAndRegister();
+    public static final DialogueLayoutType<DefaultLayoutParams> CLASSIC_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.DEFAULT, DefaultLayoutParams::new, DefaultLayoutParams::writeToPacket);
+    public static final DialogueLayoutType<DefaultLayoutParams> RPG_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.DEFAULT, DefaultLayoutParams::new, DefaultLayoutParams::writeToPacket);
 
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(
             Blabber.id("available_dialogues"),

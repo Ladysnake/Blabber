@@ -29,7 +29,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.ladysnake.blabber.impl.common.serialization.EitherMapCodec;
 import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;

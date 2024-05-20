@@ -24,14 +24,14 @@ import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.api.client.BlabberScreenRegistry;
+import org.ladysnake.blabber.api.layout.DialogueLayout;
+import org.ladysnake.blabber.api.layout.DialogueLayoutType;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.DialogueRegistry;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
-import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 import org.ladysnake.blabber.impl.common.packets.DialogueListPacket;
 import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
@@ -42,13 +42,13 @@ import java.util.Map;
 import static io.netty.buffer.Unpooled.buffer;
 
 public final class BlabberClient implements ClientModInitializer {
-    private static final Map<Identifier, HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen>> screenRegistry = new HashMap<>();
+    private static final Map<DialogueLayoutType<?>, HandledScreens.Provider<?, ?>> screenRegistry = new HashMap<>();
 
     @Override
     public void onInitializeClient() {
-        BlabberScreenRegistry.register(DialogueLayout.CLASSIC_LAYOUT_ID, BlabberDialogueScreen::new);
-        BlabberScreenRegistry.register(DialogueLayout.RPG_LAYOUT_ID, BlabberRpgDialogueScreen::new);
-        HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, BlabberClient::createDialogueScreen);
+        BlabberScreenRegistry.register(BlabberRegistrar.CLASSIC_LAYOUT, BlabberDialogueScreen::new);
+        BlabberScreenRegistry.register(BlabberRegistrar.RPG_LAYOUT, BlabberRpgDialogueScreen::new);
+        HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, (HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<?>>) BlabberClient::createDialogueScreen);
         ClientConfigurationNetworking.registerGlobalReceiver(DialogueListPacket.TYPE, (packet, responseSender) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
         ClientPlayNetworking.registerGlobalReceiver(DialogueListPacket.TYPE, (packet, player, responseSender) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
         ClientPlayNetworking.registerGlobalReceiver(ChoiceAvailabilityPacket.TYPE, (packet, player, responseSender) -> {
@@ -63,21 +63,24 @@ public final class BlabberClient implements ClientModInitializer {
         });
     }
 
-    public static void registerLayoutScreen(
-            Identifier layoutId,
-            HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen> screenProvider
+    public static <P extends DialogueLayout.Params> void registerLayoutScreen(
+            DialogueLayoutType<P> layoutId,
+            HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<P>> screenProvider
     ) {
         screenRegistry.put(layoutId, screenProvider);
     }
 
-    private static BlabberDialogueScreen createDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
-        Identifier layoutType = handler.getLayout().type();
-        var provider = screenRegistry.get(layoutType);
+    private static <P extends DialogueLayout.Params> BlabberDialogueScreen<P> createDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
+        @SuppressWarnings("unchecked") DialogueLayoutType<P> layoutType = (DialogueLayoutType<P>) handler.getLayout().type();
+        @SuppressWarnings("unchecked") HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<P>> provider =
+                (HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<P>>) screenRegistry.get(layoutType);
+
         if (provider != null) {
             return provider.create(handler, inventory, title);
         }
+
         Blabber.LOGGER.error("(Blabber) No screen provider found for {}", layoutType);
-        return new BlabberDialogueScreen(handler, inventory, title);
+        return new BlabberDialogueScreen<>(handler, inventory, title);
     }
 
     public static void sendDialogueActionMessage(int choice) {

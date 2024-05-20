@@ -17,7 +17,7 @@
  */
 package org.ladysnake.blabber.impl.common.illustrations;
 
-import org.ladysnake.blabber.api.DialogueIllustration;
+import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
 public interface SizedDialogueIllustration extends DialogueIllustration {

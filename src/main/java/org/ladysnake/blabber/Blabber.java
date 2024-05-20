@@ -30,9 +30,11 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueActionV2;
-import org.ladysnake.blabber.api.DialogueIllustrationType;
+import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
+import org.ladysnake.blabber.api.layout.DialogueLayoutType;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.CommandDialogueAction;
 import org.ladysnake.blabber.impl.common.DialogueInitializationException;
@@ -154,11 +156,24 @@ public final class Blabber implements ModInitializer {
 		Registry.register(BlabberRegistrar.ILLUSTRATION_REGISTRY, illustrationId, type);
 	}
 
+	/**
+	 * Register a configurable {@link DialogueLayoutType} to handle the general look of a dialogue.
+	 *
+	 * @param layoutId the identifier used to reference the layout type in dialogue definition files
+	 * @param type           the dialogue layout type
+	 */
+	@ApiStatus.Experimental
+	public static void registerLayout(Identifier layoutId, DialogueLayoutType<?> type) {
+		Registry.register(BlabberRegistrar.LAYOUT_REGISTRY, layoutId, type);
+	}
+
 	@Override
 	public void onInitialize() {
 		BlabberRegistrar.init();
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> BlabberCommand.register(dispatcher));
 		registerAction(id("command"), CommandDialogueAction.CODEC);
+		registerLayout(id("classic"), BlabberRegistrar.CLASSIC_LAYOUT);
+		registerLayout(id("rpg"), BlabberRegistrar.RPG_LAYOUT);
 		registerIllustration(id("group"), DialogueIllustrationCollection.TYPE);
 		registerIllustration(id("item"), DialogueIllustrationItem.TYPE);
 		registerIllustration(id("fake_entity"), DialogueIllustrationNbtEntity.TYPE);

@@ -32,12 +32,12 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueActionV2;
-import org.ladysnake.blabber.api.DialogueIllustration;
+import org.ladysnake.blabber.api.illustration.DialogueIllustration;
+import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.DialogueChoice;
 import org.ladysnake.blabber.impl.common.model.DialogueChoiceCondition;
-import org.ladysnake.blabber.impl.common.model.DialogueLayout;
 import org.ladysnake.blabber.impl.common.model.DialogueState;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.model.UnavailableAction;
@@ -108,7 +108,7 @@ public final class DialogueStateMachine {
         return this.id;
     }
 
-    public DialogueLayout getLayout() {
+    public DialogueLayout<?> getLayout() {
         return this.template.layout();
     }
 

@@ -19,7 +19,8 @@
           "next": "perception_check_1"
         }
       ],
-      "text": "On the horizon of this forest path you see a group of dark cloaked figures slowly trudging towards you. What do you do ?"
+      "text": "On the horizon of this forest path you see a group of dark cloaked figures slowly trudging towards you. What do you do ?",
+      "illustrations": ["dummy"]
     },
     "end": {
       "type": "end_dialogue"
@@ -31,7 +32,8 @@
           "text": "...",
           "next": "end"
         }
-      ]
+      ],
+      "illustrations": ["dummy"]
     },
     "perception_check_1": {
       "text": "Natural 20.",
@@ -48,7 +50,8 @@
           "text": "Wait.",
           "next": "wait"
         }
-      ]
+      ],
+      "illustrations": ["dummy"]
     },
     "team_down": {
       "text": "Both rolled a 1.",
@@ -57,7 +60,8 @@
           "text": "Fuck.",
           "next": "perception_check_1"
         }
-      ]
+      ],
+      "illustrations": ["dummy"]
     },
     "attack": {
       "text": "You notice one of the hooded figures is a little shorter.",
@@ -70,7 +74,8 @@
           "text": "Wait.",
           "next": "wait"
         }
-      ]
+      ],
+      "illustrations": ["dummy"]
     },
     "wait": {
       "text": "You perceive one of the hooded figures to be the child that you have been looking for all week !",
@@ -80,7 +85,8 @@
           "illustrations": ["reward"],
           "next": "end_success"
         }
-      ]
+      ],
+      "illustrations": ["dummy"]
     },
     "end_success": {
       "text": "",
@@ -98,7 +104,8 @@
           "text": "Roll another perception check.",
           "next": "perception_check_2"
         }
-      ]
+      ],
+      "illustrations": ["dummy"]
     },
     "perception_check_2": {
       "text": "You perceive the figure was so short because it was A CHILD. Specifically the child you have been looking for the last 15 DAYS.",
@@ -111,7 +118,8 @@
           "text": "Oh, sorry...",
           "next": "end"
         }
-      ]
+      ],
+      "illustrations": ["dummy"]
     },
     "looting": {
       "text": "Don't.",
@@ -146,6 +154,15 @@
       },
       "x": 0,
       "y": -4
-    }]
+    }],
+    "dummy": {
+      "type": "blabber:texture",
+      "texture": "babblings:textures/dialogues/dummy_blabber.png",
+      "anchor": "slot_1",
+      "x": -124,
+      "y": 4,
+      "width": 54,
+      "height": 54
+    }
   }
 }

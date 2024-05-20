@@ -33,7 +33,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector2i;
 import org.ladysnake.blabber.Blabber;
-import org.ladysnake.blabber.api.DialogueIllustration;
+import org.ladysnake.blabber.api.illustration.DialogueIllustration;
+import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
@@ -48,7 +49,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @ApiStatus.Experimental // half internal, expect some things to change
-public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> {
+public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends HandledScreen<DialogueScreenHandler> {
     public static final List<Identifier> DIALOGUE_ARROWS = IntStream.range(1, 6).mapToObj(i -> Blabber.id("container/dialogue/dialogue_arrow_" + i)).toList();
     public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("container/dialogue/dialogue_lock_" + i)).toList();
     public static final int DEFAULT_TITLE_GAP = 20;
@@ -121,6 +122,11 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         }
     }
 
+    @SuppressWarnings("unchecked")
+    protected P params() {
+        return (P) this.handler.getLayout().params();
+    }
+
     @Override
     protected void init() {
         super.init();
@@ -129,7 +135,7 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
 
     protected void layout() {
         this.computeMargins();
-        this.layoutIllustrationSlots();
+        this.layoutIllustrationAnchors();
     }
 
     protected void computeMargins() {
@@ -138,7 +144,8 @@ public class BlabberDialogueScreen extends HandledScreen<DialogueScreenHandler> 
         this.choiceListMinY = mainTextMinY + this.textRenderer.getWrappedLinesHeight(text, mainTextMaxWidth) + DEFAULT_TITLE_GAP;
     }
 
-    protected void layoutIllustrationSlots() {
+    protected void layoutIllustrationAnchors() {
+        this.illustrationSlots.get(IllustrationAnchor.TEXT_START).set(this.mainTextMinX, this.mainTextMinY);
         this.illustrationSlots.get(IllustrationAnchor.SLOT_1).set(this.width * 3/4, this.choiceListMinY);
         this.illustrationSlots.get(IllustrationAnchor.SLOT_2).set(this.width * 2/5, this.height * 2/3);
     }

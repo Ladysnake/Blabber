@@ -24,38 +24,36 @@ public enum IllustrationAnchor implements StringIdentifiable {
     /**
      * Starting at top-left, increasing towards bottom-right
      */
-    TOP_LEFT("top_left", -1),
+    TOP_LEFT("top_left"),
     /**
      * Starting at top-right, increasing towards bottom-left
      */
-    TOP_RIGHT("top_right", -1),
+    TOP_RIGHT("top_right"),
     /**
      * Starting at bottom-left, increasing towards top-right
      */
-    BOTTOM_LEFT("bottom_left", -1),
+    BOTTOM_LEFT("bottom_left"),
     /**
      * Starting at bottom-right, increasing towards top-left
      */
-    BOTTOM_RIGHT("bottom_right", -1),
+    BOTTOM_RIGHT("bottom_right"),
     /**
      * Starting at center, increasing towards bottom-right
      */
-    CENTER("center", -1),
-    SLOT_1("slot_1", 0),
-    SLOT_2("slot_2", 1);
+    CENTER("center"),
+    /**
+     * Right before the main text starts
+     */
+    TEXT_START("text_start"),
+    SLOT_1("slot_1"),
+    SLOT_2("slot_2");
 
     public static final Codec<IllustrationAnchor> CODEC = StringIdentifiable.createBasicCodec(IllustrationAnchor::values);
 
     private final String id;
-    private final int slotId;
 
-    IllustrationAnchor(String id, int slotId) {
+    IllustrationAnchor(String id) {
         this.id = id;
-        this.slotId = slotId;
-    }
-
-    public int slotId() {
-        return slotId;
     }
 
     @Override
