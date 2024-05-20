@@ -33,8 +33,9 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector2i;
 import org.ladysnake.blabber.Blabber;
-import org.ladysnake.blabber.api.illustration.DialogueIllustration;
+import org.ladysnake.blabber.api.client.illustration.DialogueIllustrationRenderer;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
+import org.ladysnake.blabber.impl.client.BlabberClient;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
@@ -45,7 +46,9 @@ import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.EnumMap;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.IntStream;
 
 @ApiStatus.Experimental // half internal, expect some things to change
@@ -112,6 +115,8 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     protected int selectedChoice;
     protected boolean hoveringChoice;
 
+    protected Map<String, DialogueIllustrationRenderer<?>> illustrations = new HashMap<>();
+
     public BlabberDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
         GameOptions options = MinecraftClient.getInstance().options;
@@ -130,10 +135,12 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     @Override
     protected void init() {
         super.init();
-        this.layout();
+        this.prepareLayout();
+        this.illustrations.clear();
+        this.handler.getIllustrations().forEach((key, illustration) -> this.illustrations.put(key, BlabberClient.createRenderer(illustration)));
     }
 
-    protected void layout() {
+    protected void prepareLayout() {
         this.computeMargins();
         this.layoutIllustrationAnchors();
     }
@@ -186,7 +193,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             return null;
         }
 
-        ChoiceResult result = this.handler.makeChoice(selectedChoice);
+        ChoiceResult result = this.makeChoice(selectedChoice);
 
         switch (result) {
             case END_DIALOGUE -> this.client.setScreen(null);
@@ -203,7 +210,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             default -> {
                 this.selectedChoice = 0;
                 this.hoveringChoice = false;
-                this.layout();
+                this.prepareLayout();
             }
         }
 
@@ -265,10 +272,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
         int y = mainTextMinY;
 
         for (String illustrationName : this.handler.getCurrentIllustrations()) {
-            DialogueIllustration illustration = this.handler.getIllustration(illustrationName);
-            if (illustration != null) {
-                illustration.render(context, this.textRenderer, positionTransform, mouseX, mouseY, tickDelta);
-            }
+            this.getIllustrationRenderer(illustrationName).render(context, this.textRenderer, positionTransform, mouseX, mouseY, tickDelta);
         }
 
         Text mainText = this.handler.getCurrentText();
@@ -287,10 +291,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             positionTransform.setControlPoints(choiceListMinX, y, choiceListMinX + choiceListMaxWidth, y + strHeight);
 
             for (String illustrationName : choice.illustrations()) {
-                DialogueIllustration illustration = this.handler.getIllustration(illustrationName);
-                if (illustration != null) {
-                    illustration.render(context, this.textRenderer, positionTransform, mouseX, mouseY, tickDelta);
-                }
+                this.getIllustrationRenderer(illustrationName).render(context, this.textRenderer, positionTransform, mouseX, mouseY, tickDelta);
             }
 
             if (selected) {
@@ -311,6 +312,12 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             positionTransform.setControlPoints(0, 0, this.width, this.height);
             renderDebugInfo(settings, context, positionTransform, mouseX, mouseY);
         }
+    }
+
+    private DialogueIllustrationRenderer<?> getIllustrationRenderer(String illustrationName) {
+        DialogueIllustrationRenderer<?> renderer = this.illustrations.get(illustrationName);
+        if (renderer == null) throw new IllegalArgumentException("Unknown illustration " + illustrationName);
+        return renderer;
     }
 
     protected @NotNull PositionTransform createPositionTransform() {
@@ -354,5 +361,12 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     @Override
     protected void drawForeground(DrawContext matrices, int mouseX, int mouseY) {
         // NO-OP
+    }
+
+    public ChoiceResult makeChoice(int choice) {
+        int originalChoiceIndex = this.handler.getAvailableChoices().get(choice).originalChoiceIndex();
+        ChoiceResult result = this.handler.makeChoice(originalChoiceIndex);
+        BlabberClient.sendDialogueActionMessage(originalChoiceIndex);
+        return result;
     }
 }

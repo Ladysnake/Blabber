@@ -19,8 +19,6 @@ package org.ladysnake.blabber.impl.common.illustrations;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.dynamic.Codecs;
@@ -62,32 +60,7 @@ public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor ancho
     }
 
     @Override
-    public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
-        // We draw the actual item, then the count and bar and such.
-        try {
-            ((DrawContextHooks) context).blabber$setItemScale(scale);
-            int originX = positionTransform.transformX(this.anchor, this.x);
-            int originY = positionTransform.transformY(this.anchor, this.y);
-            context.drawItem(stack, originX + Math.round(8 * (this.scale - 1)), originY + Math.round(8 * (this.scale - 1)));
-            if (scale() == 1) {  // Not supporting rescaled stack decorations right now
-                context.drawItemInSlot(textRenderer, stack, originX, originY);
-            }
-            if (showTooltip &&
-                    originX <= mouseX && originX + (16 * this.scale) + 4 > mouseX &&
-                    originY <= mouseY && originY + (16 * this.scale) + 4 > mouseY) {
-                context.drawItemTooltip(textRenderer, stack, mouseX, mouseY);
-            }
-        } finally {
-            ((DrawContextHooks) context).blabber$setItemScale(1f);
-        }
-    }
-
-    @Override
     public DialogueIllustrationType<?> getType() {
         return TYPE;
-    }
-
-    public interface DrawContextHooks {
-        void blabber$setItemScale(float itemScale);
     }
 }

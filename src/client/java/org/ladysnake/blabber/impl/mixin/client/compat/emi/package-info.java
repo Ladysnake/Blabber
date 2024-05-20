@@ -15,21 +15,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.compat;
+/**
+ * Definitions of the dialogue system
+ */
+@FieldsAreNonnullByDefault
+@MethodsReturnNonnullByDefault
+@ApiStatus.Internal
+package org.ladysnake.blabber.impl.mixin.client.compat.emi;
 
-import me.shedaniel.rei.api.client.registry.screen.OverlayDecider;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.util.ActionResult;
-import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
-
-public class BlabberOverlayDecider implements OverlayDecider {
-    @Override
-    public <R extends Screen> boolean isHandingScreen(Class<R> screen) {
-        return BlabberDialogueScreen.class.isAssignableFrom(screen);
-    }
-
-    @Override
-    public <R extends Screen> ActionResult shouldScreenBeOverlaid(R screen) {
-        return ActionResult.FAIL;
-    }
-}
+import net.minecraft.util.annotation.FieldsAreNonnullByDefault;
+import net.minecraft.util.annotation.MethodsReturnNonnullByDefault;
+import org.jetbrains.annotations.ApiStatus;

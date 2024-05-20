@@ -38,7 +38,7 @@ import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
 
 import java.util.Optional;
 
-public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEntity<DialogueIllustrationSelectorEntity.Spec> {
+public class DialogueIllustrationSelectorEntity implements DialogueIllustrationEntity {
     // Need to have a MapCodecCodec here, otherwise it will deserialize differently
     public static final Codec<DialogueIllustrationSelectorEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec).codec();
 
@@ -56,6 +56,7 @@ public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEnti
 
     private static final int NO_ENTITY_FOUND = -1;
 
+    private final Spec spec;
     private int selectedEntityId;
 
     public DialogueIllustrationSelectorEntity(Spec spec) {
@@ -63,15 +64,58 @@ public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEnti
     }
 
     private DialogueIllustrationSelectorEntity(Spec spec, int selectedEntityId) {
-        super(spec);
+        this.spec = spec;
         this.selectedEntityId = selectedEntityId;
     }
 
-    @Override
-    protected @Nullable LivingEntity getRenderedEntity(World world) {
+    public LivingEntity getSelectedEntity(World world) {
         if (this.selectedEntityId == -1) return null; // shortcut
         Entity e = world.getEntityById(this.selectedEntityId);
         return e instanceof LivingEntity living ? living : null;
+    }
+
+    public Spec spec() {
+        return spec;
+    }
+
+    @Override
+    public StareTarget stareAt() {
+        return this.spec.stareAt();
+    }
+
+    @Override
+    public float yOffset() {
+        return this.spec.yOffset();
+    }
+
+    @Override
+    public int entitySize() {
+        return this.spec.entitySize();
+    }
+
+    @Override
+    public IllustrationAnchor anchor() {
+        return this.spec.anchor();
+    }
+
+    @Override
+    public int x() {
+        return this.spec.x();
+    }
+
+    @Override
+    public int y() {
+        return this.spec.y();
+    }
+
+    @Override
+    public int width() {
+        return this.spec.width();
+    }
+
+    @Override
+    public int height() {
+        return this.spec.height();
     }
 
     @Override
@@ -93,7 +137,7 @@ public class DialogueIllustrationSelectorEntity extends DialogueIllustrationEnti
 
     public record Spec(String selector, IllustrationAnchor anchor, int x, int y, int width, int height,
                        int entitySize, float yOffset,
-                       StareTarget stareAt) implements DialogueIllustrationEntity.Spec {
+                       StareTarget stareAt) {
         private static final MapCodec<Spec> CODEC_V0 = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Codec.STRING.fieldOf("entity").forGetter(Spec::selector),
                 Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),

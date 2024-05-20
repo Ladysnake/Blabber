@@ -34,7 +34,6 @@ import java.util.EnumSet;
 
 public class BlabberSettingsComponent implements AutoSyncedComponent {
     public static final ComponentKey<BlabberSettingsComponent> KEY = ComponentRegistry.getOrCreate(Blabber.id("settings"), BlabberSettingsComponent.class);
-    private static final EnumSet<BlabberSetting> NO_SETTING = EnumSet.noneOf(BlabberSetting.class);
 
     public static BlabberSettingsComponent get(PlayerEntity player) {
         return player.getComponent(KEY);

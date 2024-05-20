@@ -18,13 +18,10 @@
 package org.ladysnake.blabber.api.illustration;
 
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.command.ServerCommandSource;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
-import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 
 /**
  * An illustration that can be rendered in dialogues, such as entities or items.
@@ -33,18 +30,6 @@ import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
  */
 @ApiStatus.Experimental
 public interface DialogueIllustration {
-    /**
-     * Draw this illustration to the screen.
-     *
-     * @param context          a context to draw in
-     * @param textRenderer     a text renderer
-     * @param positionTransform an object that gives you real coordinates from illustration-local ones
-     * @param mouseX           the current x mouse position
-     * @param mouseY           the current y mouse position
-     * @param tickDelta        how much time has passed since last frame
-     */
-    void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta);
-
     /**
      * @return the DialogueIllustrationType that corresponds to this illustration
      */

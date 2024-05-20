@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.compat;
+package org.ladysnake.blabber.impl.client.compat;
 
 import net.fabricmc.loader.api.FabricLoader;
 import org.jetbrains.annotations.Nullable;
@@ -28,8 +28,8 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class BlabberMixinPlugin implements IMixinConfigPlugin {
-    private static final String COMPAT_PREFIX = "org.ladysnake.blabber.mixin.compat.";
+public class BlabberClientMixinPlugin implements IMixinConfigPlugin {
+    private static final String COMPAT_PREFIX = "org.ladysnake.blabber.mixin.client.compat.";
     private static final Pattern COMPAT_MIXIN_PATTERN = Pattern.compile(Pattern.quote(COMPAT_PREFIX) + "(?<modid>[a-z_]+?)\\..*");
     private final FabricLoader loader = FabricLoader.getInstance();
 

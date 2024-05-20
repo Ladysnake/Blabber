@@ -120,9 +120,8 @@ public final class DialogueStateMachine {
         return this.getCurrentState().illustrations();
     }
 
-    @Nullable
-    public DialogueIllustration getIllustration(String name) {
-        return this.template.illustrations().get(name);
+    public Map<String, DialogueIllustration> getIllustrations() {
+        return this.template.illustrations();
     }
 
     public ImmutableList<AvailableChoice> getAvailableChoices() {

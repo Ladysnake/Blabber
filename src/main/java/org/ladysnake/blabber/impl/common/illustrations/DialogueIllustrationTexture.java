@@ -19,8 +19,6 @@ package org.ladysnake.blabber.impl.common.illustrations;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.dynamic.Codecs;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
@@ -89,23 +87,6 @@ public record DialogueIllustrationTexture(
                 OptionalSerialization.writeOptionalInt(buf, image.regionHeight());
             }
     );
-
-    @Override
-    public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
-        context.drawTexture(
-                texture(),
-                minX(positionTransform),
-                minY(positionTransform),
-                width(),
-                height(),
-                0,
-                0,
-                regionWidth().orElse(width()),
-                regionHeight().orElse(height()),
-                textureWidth().orElse(width()),
-                textureHeight().orElse(height())
-        );
-    }
 
     @Override
     public DialogueIllustrationType<? extends DialogueIllustration> getType() {

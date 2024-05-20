@@ -19,14 +19,14 @@ package org.ladysnake.blabber.impl.mixin.client;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.client.gui.DrawContext;
-import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationItem;
+import org.ladysnake.blabber.impl.client.illustrations.ItemIllustrationRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Slice;
 
 @Mixin(DrawContext.class)
-public abstract class DrawContextMixin implements DialogueIllustrationItem.DrawContextHooks {
+public abstract class DrawContextMixin implements ItemIllustrationRenderer.DrawContextHooks {
     @Unique
     private float blabber$itemScale = 1;
 

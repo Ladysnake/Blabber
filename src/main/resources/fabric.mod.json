@@ -29,11 +29,15 @@
       "org.ladysnake.blabber.impl.common.BlabberRegistrar"
     ],
     "rei_client": [
-      "org.ladysnake.blabber.impl.compat.BlabberReiClientPlugin"
+      "org.ladysnake.blabber.impl.client.compat.BlabberReiClientPlugin"
     ]
   },
   "mixins": [
-    "blabber.mixins.json"
+    "blabber.mixins.json",
+    {
+      "config": "blabber.client.mixins.json",
+      "environment": "client"
+    }
   ],
 
   "depends": {

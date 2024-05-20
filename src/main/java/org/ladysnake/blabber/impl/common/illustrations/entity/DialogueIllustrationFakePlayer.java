@@ -20,26 +20,15 @@ package org.ladysnake.blabber.impl.common.illustrations.entity;
 import com.mojang.authlib.GameProfile;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
-import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import net.minecraft.client.network.OtherClientPlayerEntity;
-import net.minecraft.client.network.PlayerListEntry;
 import net.minecraft.client.render.entity.PlayerModelPart;
-import net.minecraft.client.world.ClientWorld;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.util.Arm;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.dynamic.Codecs;
-import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
-import org.ladysnake.blabber.impl.mixin.PlayerEntityAccessor;
-import org.ladysnake.blabber.impl.mixin.client.AbstractClientPlayerEntityAccessor;
 
 import java.util.EnumSet;
 import java.util.HashMap;
@@ -47,12 +36,34 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<DialogueIllustrationFakePlayer.Spec> {
+public record DialogueIllustrationFakePlayer(GameProfile profile,
+                                             IllustrationAnchor anchor,
+                                             int x,
+                                             int y,
+                                             int width,
+                                             int height,
+                                             int entitySize,
+                                             float yOffset,
+                                             StareTarget stareAt,
+                                             Optional<PlayerModelOptions> modelOptions,
+                                             Optional<NbtCompound> data) implements DialogueIllustrationEntity {
+    private static final Codec<DialogueIllustrationFakePlayer> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+            Codecs.GAME_PROFILE_WITH_PROPERTIES.fieldOf("profile").forGetter(DialogueIllustrationFakePlayer::profile),
+            Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationFakePlayer::anchor),
+            Codec.INT.fieldOf("x").forGetter(DialogueIllustrationFakePlayer::x),
+            Codec.INT.fieldOf("y").forGetter(DialogueIllustrationFakePlayer::y),
+            Codec.INT.fieldOf("width").forGetter(DialogueIllustrationFakePlayer::width),
+            Codec.INT.fieldOf("height").forGetter(DialogueIllustrationFakePlayer::height),
+            Codec.INT.fieldOf("entity_size").forGetter(DialogueIllustrationFakePlayer::entitySize),
+            Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(DialogueIllustrationFakePlayer::yOffset),
+            Codecs.createStrictOptionalFieldCodec(StareTarget.CODEC, "stare_at", StareTarget.FOLLOW_MOUSE).forGetter(DialogueIllustrationFakePlayer::stareAt),
+            Codecs.createStrictOptionalFieldCodec(PlayerModelOptions.CODEC, "model_customization").forGetter(DialogueIllustrationFakePlayer::modelOptions),
+            Codecs.createStrictOptionalFieldCodec(NbtCompound.CODEC, "data").forGetter(DialogueIllustrationFakePlayer::data)
+    ).apply(instance, DialogueIllustrationFakePlayer::new));
     // Need to have a MapCodecCodec here, otherwise it will deserialize differently
-    private static final Codec<DialogueIllustrationFakePlayer> CODEC = Spec.CODEC.xmap(DialogueIllustrationFakePlayer::new, DialogueIllustrationFakePlayer::spec).codec();
     public static final DialogueIllustrationType<DialogueIllustrationFakePlayer> TYPE = new DialogueIllustrationType<>(
             CODEC,
-            buf -> new DialogueIllustrationFakePlayer(new Spec(
+            buf -> new DialogueIllustrationFakePlayer(
                     buf.readGameProfile(),
                     buf.readEnumConstant(IllustrationAnchor.class),
                     buf.readVarInt(),
@@ -64,45 +75,29 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
                     new StareTarget(buf),
                     buf.readOptional(PlayerModelOptions::new),
                     buf.readOptional(PacketByteBuf::readNbt)
-            )),
+            ),
             (buf, i) -> {
-                buf.writeGameProfile(i.spec().profile());
-                buf.writeEnumConstant(i.spec().anchor());
-                buf.writeVarInt(i.spec().x());
-                buf.writeVarInt(i.spec().y());
-                buf.writeVarInt(i.spec().width());
-                buf.writeVarInt(i.spec().height());
-                buf.writeVarInt(i.spec().entitySize());
-                buf.writeFloat(i.spec().yOffset());
-                StareTarget.writeToPacket(buf, i.spec().stareAt());
-                buf.writeOptional(i.spec().modelOptions(), (b, opts) -> opts.writeToBuffer(b));
-                buf.writeOptional(i.spec().data(), PacketByteBuf::writeNbt);
+                buf.writeGameProfile(i.profile());
+                buf.writeEnumConstant(i.anchor());
+                buf.writeVarInt(i.x());
+                buf.writeVarInt(i.y());
+                buf.writeVarInt(i.width());
+                buf.writeVarInt(i.height());
+                buf.writeVarInt(i.entitySize());
+                buf.writeFloat(i.yOffset());
+                StareTarget.writeToPacket(buf, i.stareAt());
+                buf.writeOptional(i.modelOptions(), (b, opts) -> opts.writeToBuffer(b));
+                buf.writeOptional(i.data(), PacketByteBuf::writeNbt);
             }
     );
-
-    public DialogueIllustrationFakePlayer(Spec spec) {
-        super(spec);
-    }
 
     @Override
     public DialogueIllustrationType<?> getType() {
         return TYPE;
     }
 
-    @SuppressWarnings("UnreachableCode")
-    @Environment(EnvType.CLIENT)
-    @Override
-    protected @Nullable LivingEntity getRenderedEntity(World world) {
-        GameProfile profile = this.spec().profile();
-        OtherClientPlayerEntity fakePlayer = new OtherClientPlayerEntity((ClientWorld) world, profile);
-        this.spec().data().ifPresent(fakePlayer::readNbt);
-        ((AbstractClientPlayerEntityAccessor) fakePlayer).setPlayerListEntry(new PlayerListEntry(profile, false));
-        fakePlayer.prevBodyYaw = fakePlayer.bodyYaw = 0.0f;
-        fakePlayer.prevHeadYaw = fakePlayer.headYaw = 0.0f;
-        PlayerModelOptions playerModelOptions = this.spec().modelOptionsOrDefault();
-        fakePlayer.getDataTracker().set(PlayerEntityAccessor.getPlayerModelParts(), playerModelOptions.packVisibleParts());
-        fakePlayer.setMainArm(playerModelOptions.mainHand());
-        return fakePlayer;
+    public PlayerModelOptions modelOptionsOrDefault() {
+        return this.modelOptions().orElse(PlayerModelOptions.DEFAULT);
     }
 
     public record PlayerModelOptions(Arm mainHand, EnumSet<PlayerModelPart> visibleParts) {
@@ -152,36 +147,6 @@ public class DialogueIllustrationFakePlayer extends DialogueIllustrationEntity<D
                 packed |= (byte) playerModelPart.getBitFlag();
             }
             return packed;
-        }
-    }
-
-    public record Spec(GameProfile profile,
-                       IllustrationAnchor anchor,
-                       int x,
-                       int y,
-                       int width,
-                       int height,
-                       int entitySize,
-                       float yOffset,
-                       StareTarget stareAt,
-                       Optional<PlayerModelOptions> modelOptions,
-                       Optional<NbtCompound> data) implements DialogueIllustrationEntity.Spec {
-        private static final MapCodec<Spec> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-                Codecs.GAME_PROFILE_WITH_PROPERTIES.fieldOf("profile").forGetter(Spec::profile),
-                Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
-                Codec.INT.fieldOf("x").forGetter(Spec::x),
-                Codec.INT.fieldOf("y").forGetter(Spec::y),
-                Codec.INT.fieldOf("width").forGetter(Spec::width),
-                Codec.INT.fieldOf("height").forGetter(Spec::height),
-                Codec.INT.fieldOf("entity_size").forGetter(Spec::entitySize),
-                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOffset),
-                Codecs.createStrictOptionalFieldCodec(StareTarget.CODEC, "stare_at", StareTarget.FOLLOW_MOUSE).forGetter(Spec::stareAt),
-                Codecs.createStrictOptionalFieldCodec(PlayerModelOptions.CODEC, "model_customization").forGetter(Spec::modelOptions),
-                Codecs.createStrictOptionalFieldCodec(NbtCompound.CODEC, "data").forGetter(Spec::data)
-        ).apply(instance, Spec::new));
-
-        public PlayerModelOptions modelOptionsOrDefault() {
-            return this.modelOptions().orElse(PlayerModelOptions.DEFAULT);
         }
     }
 }

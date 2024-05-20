@@ -20,8 +20,6 @@ package org.ladysnake.blabber.impl.common.illustrations;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.command.ServerCommandSource;
 import org.jetbrains.annotations.Nullable;
@@ -51,13 +49,6 @@ public record DialogueIllustrationCollection(List<DialogueIllustration> elements
                     i.getType().writeToPacketUnsafe(b, i);
                 })
     );
-
-    @Override
-    public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
-        for (DialogueIllustration i : elements) {
-            i.render(context, textRenderer, positionTransform, mouseX, mouseY, tickDelta);
-        }
-    }
 
     @Override
     public DialogueIllustrationType<? extends DialogueIllustration> getType() {

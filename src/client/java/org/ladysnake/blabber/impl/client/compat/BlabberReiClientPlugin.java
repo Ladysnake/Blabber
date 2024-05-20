@@ -15,12 +15,16 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common.illustrations.entity;
+package org.ladysnake.blabber.impl.client.compat;
 
-import org.ladysnake.blabber.impl.common.illustrations.SizedDialogueIllustration;
+import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
+import me.shedaniel.rei.api.client.registry.screen.ScreenRegistry;
+import me.shedaniel.rei.forge.REIPluginClient;
 
-public interface DialogueIllustrationEntity extends SizedDialogueIllustration {
-    StareTarget stareAt();
-    float yOffset();
-    int entitySize();
+@REIPluginClient
+public class BlabberReiClientPlugin implements REIClientPlugin {
+    @Override
+    public void registerScreens(ScreenRegistry registry) {
+        registry.registerDecider(new BlabberOverlayDecider());
+    }
 }

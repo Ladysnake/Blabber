@@ -31,13 +31,13 @@ import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
-import org.ladysnake.blabber.impl.client.BlabberClient;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 
 import java.util.List;
+import java.util.Map;
 
 public class DialogueScreenHandler extends ScreenHandler {
     private final DialogueStateMachine dialogue;
@@ -75,9 +75,8 @@ public class DialogueScreenHandler extends ScreenHandler {
         return this.dialogue.getCurrentIllustrations();
     }
 
-    @Nullable
-    public DialogueIllustration getIllustration(String name) {
-        return this.dialogue.getIllustration(name);
+    public Map<String, DialogueIllustration> getIllustrations() {
+        return this.dialogue.getIllustrations();
     }
 
     public ImmutableList<AvailableChoice> getAvailableChoices() {
@@ -108,10 +107,7 @@ public class DialogueScreenHandler extends ScreenHandler {
 
     @CheckEnv(Env.CLIENT)
     public ChoiceResult makeChoice(int choice) {
-        int originalChoiceIndex = this.getAvailableChoices().get(choice).originalChoiceIndex();
-        ChoiceResult result = this.dialogue.choose(originalChoiceIndex, action -> {});
-        BlabberClient.sendDialogueActionMessage(originalChoiceIndex);
-        return result;
+        return this.dialogue.choose(choice, action -> {});
     }
 
     public boolean makeChoice(ServerPlayerEntity player, int choice) {
