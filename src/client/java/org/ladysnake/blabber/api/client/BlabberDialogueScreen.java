@@ -302,6 +302,9 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
                             y + selectionIconMarginTop,
                             0,
                             0,
+                            0,
+                            selectionIconSize,
+                            selectionIconSize,
                             selectionIconSize,
                             selectionIconSize
                     );
@@ -318,6 +321,9 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
                             y + selectionIconMarginTop,
                             0,
                             0,
+                            0,
+                            selectionIconSize,
+                            selectionIconSize,
                             selectionIconSize,
                             selectionIconSize
                     );
