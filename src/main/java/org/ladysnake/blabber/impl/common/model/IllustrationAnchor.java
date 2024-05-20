@@ -42,9 +42,9 @@ public enum IllustrationAnchor implements StringIdentifiable {
      */
     CENTER("center"),
     /**
-     * Right before the main text starts
+     * Right before the main text starts - not accounting for user-set margins
      */
-    TEXT_START("text_start"),
+    BEFORE_TEXT("before_text"),
     SLOT_1("slot_1"),
     SLOT_2("slot_2");
 

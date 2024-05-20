@@ -152,7 +152,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     }
 
     protected void layoutIllustrationAnchors() {
-        this.illustrationSlots.get(IllustrationAnchor.TEXT_START).set(this.mainTextMinX, this.mainTextMinY);
+        this.illustrationSlots.get(IllustrationAnchor.BEFORE_TEXT).set(this.mainTextMinX, this.mainTextMinY);
         this.illustrationSlots.get(IllustrationAnchor.SLOT_1).set(this.width * 3/4, this.choiceListMinY);
         this.illustrationSlots.get(IllustrationAnchor.SLOT_2).set(this.width * 2/5, this.height * 2/3);
     }
