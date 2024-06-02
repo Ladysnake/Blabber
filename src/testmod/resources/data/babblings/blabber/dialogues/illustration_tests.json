@@ -159,7 +159,7 @@
     "allay": {
       "type": "blabber:fake_entity",
       "id": "minecraft:allay",
-      "anchor": "slot_2",
+      "anchor": "spot_2",
       "x1": -40,
       "y1": -40,
       "x2": 40,
@@ -170,7 +170,7 @@
     },
     "pyrofab": {
       "type": "blabber:fake_player",
-      "anchor": "slot_1",
+      "anchor": "spot_1",
       "x": -20,
       "y": -30,
       "width": 100,
@@ -266,7 +266,7 @@
     "blabber": {
       "type": "blabber:texture",
       "texture": "blabber:icon.png",
-      "anchor": "slot_2",
+      "anchor": "spot_2",
       "x": -24,
       "y": -24,
       "width": 48,

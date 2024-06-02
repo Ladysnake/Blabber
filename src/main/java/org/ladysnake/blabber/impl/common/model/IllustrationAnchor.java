@@ -42,11 +42,11 @@ public enum IllustrationAnchor implements StringIdentifiable {
      */
     CENTER("center"),
     /**
-     * Right before the main text starts - not accounting for user-set margins
+     * Right before the main text area starts
      */
-    BEFORE_TEXT("before_text"),
-    SLOT_1("slot_1"),
-    SLOT_2("slot_2");
+    BEFORE_MAIN_TEXT("before_main_text"),
+    SPOT_1("spot_1"),
+    SPOT_2("spot_2");
 
     public static final Codec<IllustrationAnchor> CODEC = StringIdentifiable.createBasicCodec(IllustrationAnchor::values);
 
