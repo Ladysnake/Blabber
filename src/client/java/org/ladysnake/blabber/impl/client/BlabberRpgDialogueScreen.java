@@ -55,7 +55,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
         this.instructionsMinY = this.height - INSTRUCTIONS_BOTTOM_MARGIN - this.textRenderer.getWrappedLinesHeight(instructions, this.width - 5);
         this.mainTextMinY = this.height - 60 - mainTextMargins.bottom();
         this.mainTextMinX = Math.max(mainTextMargins.left(), (this.width / 2) - (Math.min(textRenderer.getWidth(handler.getCurrentText()), mainTextMaxWidth) / 2));
-        this.illustrationSlots.get(IllustrationAnchor.BEFORE_TEXT).set(
+        this.illustrationSlots.get(IllustrationAnchor.BEFORE_MAIN_TEXT).set(
                 Math.max(mainTextMargins.left(), (this.width / 2) - (mainTextMaxWidth / 2)),
                 this.height - 60
         );
@@ -71,11 +71,11 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
     @Override
     protected void layoutIllustrationAnchors() {
         // No super call, we redefine every illustration slot either here or in the previous method
-        this.illustrationSlots.get(IllustrationAnchor.SLOT_1).set(
+        this.illustrationSlots.get(IllustrationAnchor.SPOT_1).set(
                 this.width / 4,
                 this.mainTextMinY - TEXT_TOP_MARGIN
         );
-        this.illustrationSlots.get(IllustrationAnchor.SLOT_2).set(
+        this.illustrationSlots.get(IllustrationAnchor.SPOT_2).set(
                 (this.choiceListMinX + this.width) / 2,
                 this.choiceListMinY * 3/4
         );
