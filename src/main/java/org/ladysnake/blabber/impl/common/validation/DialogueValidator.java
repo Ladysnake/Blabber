@@ -52,9 +52,13 @@ public final class DialogueValidator {
                     );
                 }
             }
-            // TODO Java 21 replace with pattern matching switch to handle all possible results
-            if (validateIllustrations(dialogue, state) instanceof ValidationResult.Error error) {
-                return error;
+
+            switch (validateIllustrations(dialogue, state)) {
+                case ValidationResult.Error error -> {
+                    return error;
+                }
+                case ValidationResult.Success ignored -> {}
+                case ValidationResult.Warnings ignored -> {}
             }
         }
 
