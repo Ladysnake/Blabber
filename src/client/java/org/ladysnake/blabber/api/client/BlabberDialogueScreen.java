@@ -18,6 +18,7 @@
 package org.ladysnake.blabber.api.client;
 
 import com.google.common.collect.ImmutableList;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ConfirmScreen;
@@ -41,6 +42,7 @@ import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.common.packets.ChoiceSelectionPayload;
 import org.ladysnake.blabber.impl.common.settings.BlabberSetting;
 import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 import org.lwjgl.glfw.GLFW;
@@ -366,7 +368,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     public ChoiceResult makeChoice(int choice) {
         int originalChoiceIndex = this.handler.getAvailableChoices().get(choice).originalChoiceIndex();
         ChoiceResult result = this.handler.makeChoice(originalChoiceIndex);
-        BlabberClient.sendDialogueActionMessage(originalChoiceIndex);
+        ClientPlayNetworking.send(new ChoiceSelectionPayload((byte) choice));
         return result;
     }
 }

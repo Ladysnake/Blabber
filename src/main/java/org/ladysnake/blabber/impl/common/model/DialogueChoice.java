@@ -22,11 +22,12 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 import net.minecraft.text.TextCodecs;
 import net.minecraft.text.Texts;
-import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 
@@ -38,21 +39,17 @@ import java.util.Optional;
 public record DialogueChoice(Text text, List<String> illustrations, String next, Optional<DialogueChoiceCondition> condition) {
     public static final Codec<DialogueChoice> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             TextCodecs.CODEC.fieldOf("text").forGetter(DialogueChoice::text),
-            Codecs.createStrictOptionalFieldCodec(Codec.list(Codec.STRING), "illustrations", Collections.emptyList()).forGetter(DialogueChoice::illustrations),
+            Codec.list(Codec.STRING).optionalFieldOf("illustrations", Collections.emptyList()).forGetter(DialogueChoice::illustrations),
             Codec.STRING.fieldOf("next").forGetter(DialogueChoice::next),
-            Codecs.createStrictOptionalFieldCodec(DialogueChoiceCondition.CODEC, "only_if").forGetter(DialogueChoice::condition)
+            DialogueChoiceCondition.CODEC.optionalFieldOf("only_if").forGetter(DialogueChoice::condition)
     ).apply(instance, DialogueChoice::new));
-
-    public static void writeToPacket(PacketByteBuf buf, DialogueChoice choice) {
-        buf.writeText(choice.text());
-        buf.writeCollection(choice.illustrations(), PacketByteBuf::writeString);
-        buf.writeString(choice.next());
-        buf.writeOptional(choice.condition(), DialogueChoiceCondition::writeToPacket);
-    }
-
-    public DialogueChoice(PacketByteBuf buf) {
-        this(buf.readText(), buf.readCollection(ArrayList::new, PacketByteBuf::readString), buf.readString(), buf.readOptional(DialogueChoiceCondition::new));
-    }
+    public static final PacketCodec<PacketByteBuf, DialogueChoice> PACKET_CODEC = PacketCodec.tuple(
+            TextCodecs.PACKET_CODEC, DialogueChoice::text,
+            PacketCodecs.collection(ArrayList::new, PacketCodecs.STRING), DialogueChoice::illustrations,
+            PacketCodecs.STRING, DialogueChoice::next,
+            PacketCodecs.optional(DialogueChoiceCondition.PACKET_CODEC), DialogueChoice::condition,
+            DialogueChoice::new
+    );
 
     public DialogueChoice parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         Optional<DialogueChoiceCondition> parsedCondition = condition().isEmpty() ? Optional.empty() : Optional.of(condition().get().parseText(source, sender));

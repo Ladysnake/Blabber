@@ -19,26 +19,23 @@ package org.ladysnake.blabber.api.layout;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.util.dynamic.Codecs;
+import io.netty.buffer.ByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 
 public record Margins(int top, int right, int bottom, int left) {
     public static final Codec<Margins> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "top", 0).forGetter(Margins::top),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "right", 0).forGetter(Margins::right),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "bottom", 0).forGetter(Margins::bottom),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "left", 0).forGetter(Margins::left)
+            Codec.INT.optionalFieldOf("top", 0).forGetter(Margins::top),
+            Codec.INT.optionalFieldOf("right", 0).forGetter(Margins::right),
+            Codec.INT.optionalFieldOf("bottom", 0).forGetter(Margins::bottom),
+            Codec.INT.optionalFieldOf("left", 0).forGetter(Margins::left)
     ).apply(instance, Margins::new));
+    public static final PacketCodec<ByteBuf, Margins> PACKET_CODEC = PacketCodec.tuple(
+            PacketCodecs.VAR_INT, Margins::top,
+            PacketCodecs.VAR_INT, Margins::right,
+            PacketCodecs.VAR_INT, Margins::bottom,
+            PacketCodecs.VAR_INT, Margins::left,
+            Margins::new
+    );
     public static final Margins NONE = new Margins(0, 0, 0, 0);
-
-    public static void writeToPacket(PacketByteBuf buf, Margins margins) {
-        buf.writeVarInt(margins.top());
-        buf.writeVarInt(margins.right());
-        buf.writeVarInt(margins.bottom());
-        buf.writeVarInt(margins.left());
-    }
-
-    public Margins(PacketByteBuf buf) {
-        this(buf.readVarInt(), buf.readVarInt(), buf.readVarInt(), buf.readVarInt());
-    }
 }

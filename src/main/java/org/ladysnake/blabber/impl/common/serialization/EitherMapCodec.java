@@ -23,11 +23,12 @@ import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.MapLike;
 import com.mojang.serialization.RecordBuilder;
+import com.mojang.serialization.codecs.EitherCodec;
 
 import java.util.stream.Stream;
 
 /**
- * Adapted from {@link EitherCodecButGood}
+ * Adapted from {@link EitherCodec}, with a decoding fix
  */
 public class EitherMapCodec<F, S> extends MapCodec<Either<F, S>> {
     private final MapCodec<F> first;

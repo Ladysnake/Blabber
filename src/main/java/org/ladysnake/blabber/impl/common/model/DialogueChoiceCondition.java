@@ -21,26 +21,27 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
+import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 
-public record DialogueChoiceCondition(Identifier predicate, UnavailableAction whenUnavailable) {
+public record DialogueChoiceCondition(RegistryKey<LootCondition> predicate, UnavailableAction whenUnavailable) {
+    public static final RegistryKey<LootCondition> DUMMY_CONDITION = RegistryKey.of(RegistryKeys.PREDICATE, Blabber.id("client_dummy"));
     public static final Codec<DialogueChoiceCondition> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Identifier.CODEC.fieldOf("predicate").forGetter(DialogueChoiceCondition::predicate),
+            RegistryKey.createCodec(RegistryKeys.PREDICATE).fieldOf("predicate").forGetter(DialogueChoiceCondition::predicate),
             UnavailableAction.CODEC.fieldOf("when_unavailable").forGetter(DialogueChoiceCondition::whenUnavailable)
     ).apply(instance, DialogueChoiceCondition::new));
-    public static final Identifier DUMMY_CONDITION = Blabber.id("client_dummy");
-
-    public static void writeToPacket(PacketByteBuf buf, DialogueChoiceCondition condition) {
-        UnavailableAction.writeToPacket(buf, condition.whenUnavailable());
-    }
-
-    public DialogueChoiceCondition(PacketByteBuf buf) {
-        this(DUMMY_CONDITION, new UnavailableAction(buf));
-    }
+    public static final PacketCodec<PacketByteBuf, DialogueChoiceCondition> PACKET_CODEC = PacketCodec.tuple(
+            // Not writing the condition, it is handled serverside
+            PacketCodec.of((value, buf) -> {}, buf -> DUMMY_CONDITION), DialogueChoiceCondition::predicate,
+            UnavailableAction.PACKET_CODEC, DialogueChoiceCondition::whenUnavailable,
+            DialogueChoiceCondition::new
+    );
 
     public DialogueChoiceCondition parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         return new DialogueChoiceCondition(

@@ -21,16 +21,19 @@ import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.RegistryByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 
 import java.util.Optional;
 
-public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory {
+public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory<DialogueScreenHandlerFactory.DialogueOpeningData> {
     private final DialogueStateMachine dialogue;
     private final Text displayName;
     private final @Nullable Entity interlocutor;
@@ -42,13 +45,6 @@ public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactor
     }
 
     @Override
-    public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
-        DialogueStateMachine.writeToPacket(buf, this.dialogue);
-        buf.writeOptional(Optional.ofNullable(interlocutor), (b, e) -> b.writeVarInt(e.getId()));
-        this.dialogue.createFullAvailabilityUpdatePacket().write(buf);
-    }
-
-    @Override
     public Text getDisplayName() {
         return this.displayName;
     }
@@ -57,5 +53,24 @@ public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactor
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
         return new DialogueScreenHandler(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, this.dialogue, this.interlocutor);
+    }
+
+    @Override
+    public DialogueOpeningData getScreenOpeningData(ServerPlayerEntity player) {
+        return new DialogueOpeningData(
+                this.dialogue,
+                Optional.ofNullable(this.interlocutor).map(Entity::getId),
+                this.dialogue.createFullAvailabilityUpdatePacket()
+        );
+    }
+
+    public record DialogueOpeningData(DialogueStateMachine dialogue, Optional<Integer> interlocutorId,
+                                      ChoiceAvailabilityPayload availableChoices) {
+        public static final PacketCodec<RegistryByteBuf, DialogueOpeningData> PACKET_CODEC = PacketCodec.tuple(
+                DialogueStateMachine.PACKET_CODEC, DialogueOpeningData::dialogue,
+                PacketCodecs.VAR_INT.collect(PacketCodecs::optional), DialogueOpeningData::interlocutorId,
+                ChoiceAvailabilityPayload.PACKET_CODEC, DialogueOpeningData::availableChoices,
+                DialogueOpeningData::new
+        );
     }
 }

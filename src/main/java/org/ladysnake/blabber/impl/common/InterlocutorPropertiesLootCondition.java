@@ -17,7 +17,7 @@
  */
 package org.ladysnake.blabber.impl.common;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
 import net.minecraft.loot.condition.LootCondition;
@@ -32,7 +32,7 @@ import java.util.Optional;
 import java.util.Set;
 
 public record InterlocutorPropertiesLootCondition(EntityPredicate predicate) implements LootCondition {
-    public static final Codec<InterlocutorPropertiesLootCondition> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+    public static final MapCodec<InterlocutorPropertiesLootCondition> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
             EntityPredicate.CODEC.fieldOf("predicate").forGetter(InterlocutorPropertiesLootCondition::predicate)
     ).apply(instance, InterlocutorPropertiesLootCondition::new));
     public static final LootConditionType TYPE = new LootConditionType(CODEC);

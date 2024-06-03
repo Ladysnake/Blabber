@@ -17,25 +17,18 @@
  */
 package org.ladysnake.blabber.impl.common.packets;
 
-import net.fabricmc.fabric.api.networking.v1.FabricPacket;
-import net.fabricmc.fabric.api.networking.v1.PacketType;
-import net.minecraft.network.PacketByteBuf;
-import org.ladysnake.blabber.Blabber;
+import io.netty.buffer.ByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.packet.CustomPayload;
+import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
-public record SelectedDialogueStatePacket(String stateKey) implements FabricPacket {
-    public static final PacketType<SelectedDialogueStatePacket> TYPE = PacketType.create(Blabber.id("selected_dialogue_state"), SelectedDialogueStatePacket::new);
-
-    public SelectedDialogueStatePacket(PacketByteBuf buf) {
-        this(buf.readString());
-    }
+public record SelectedDialogueStatePayload(String stateKey) implements CustomPayload {
+    public static final CustomPayload.Id<SelectedDialogueStatePayload> ID = BlabberRegistrar.payloadId("selected_dialogue_state");
+    public static final PacketCodec<ByteBuf, SelectedDialogueStatePayload> PACKET_CODEC = PacketCodecs.STRING.xmap(SelectedDialogueStatePayload::new, SelectedDialogueStatePayload::stateKey);
 
     @Override
-    public void write(PacketByteBuf buf) {
-        buf.writeString(this.stateKey);
-    }
-
-    @Override
-    public PacketType<?> getType() {
-        return TYPE;
+    public Id<? extends CustomPayload> getId() {
+        return ID;
     }
 }

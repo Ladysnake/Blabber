@@ -23,7 +23,6 @@ import com.mojang.serialization.JsonOps;
 import net.minecraft.Bootstrap;
 import net.minecraft.SharedConstants;
 import net.minecraft.test.GameTestException;
-import net.minecraft.util.Util;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -70,8 +69,6 @@ public class DialogueValidatorTest {
     }
 
     private static DialogueTemplate loadDialogue(String name) {
-        return Util.getResult(DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name))), JsonElement.class)), s -> {
-            throw new GameTestException(s);
-        });
+        return DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name))), JsonElement.class)).getOrThrow(GameTestException::new);
     }
 }

@@ -18,12 +18,13 @@
 package org.ladysnake.blabber.impl.common;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.ladysnake.blabber.DialogueAction;
 
 public record CommandDialogueAction(String command) implements DialogueAction {
-    public static final Codec<CommandDialogueAction> CODEC = Codec.STRING.xmap(CommandDialogueAction::new, CommandDialogueAction::command);
+    public static final MapCodec<CommandDialogueAction> CODEC = Codec.STRING.xmap(CommandDialogueAction::new, CommandDialogueAction::command).fieldOf("value");
 
     @Override
     public void handle(ServerPlayerEntity player) {

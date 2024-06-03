@@ -18,6 +18,8 @@
 package org.ladysnake.blabber.impl.common.model;
 
 import com.mojang.serialization.Codec;
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.util.StringIdentifiable;
 
 public enum IllustrationAnchor implements StringIdentifiable {
@@ -49,6 +51,10 @@ public enum IllustrationAnchor implements StringIdentifiable {
     SPOT_2("spot_2");
 
     public static final Codec<IllustrationAnchor> CODEC = StringIdentifiable.createBasicCodec(IllustrationAnchor::values);
+    public static final PacketCodec<PacketByteBuf, IllustrationAnchor> PACKET_CODEC = PacketCodec.ofStatic(
+            PacketByteBuf::writeEnumConstant,
+            buf -> buf.readEnumConstant(IllustrationAnchor.class)
+    );
 
     private final String id;
 

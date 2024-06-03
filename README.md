@@ -30,8 +30,8 @@ dependencies {
     modImplementation include("org.ladysnake:blabber:${blabber_version}")
     // Blabber dependencies
     include "me.lucko:fabric-permissions-api:${fpa_version}"
-    include "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cca_version}"
-    include "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${cca_version}"
+    include "org.ladysnake.cardinal-components-api:cardinal-components-base:${cca_version}"
+    include "org.ladysnake.cardinal-components-api:cardinal-components-entity:${cca_version}"
 }
 ```
 

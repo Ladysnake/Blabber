@@ -18,12 +18,16 @@
 package org.ladysnake.blabber.impl.common.illustrations;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.dynamic.Codecs;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.common.serialization.MorePacketCodecs;
 import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
 
 import java.util.OptionalInt;
@@ -42,9 +46,9 @@ public record DialogueIllustrationTexture(
         OptionalInt regionWidth,
         OptionalInt regionHeight
 ) implements SizedDialogueIllustration {
-    public static final Codec<DialogueIllustrationTexture> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+    public static final MapCodec<DialogueIllustrationTexture> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
             Identifier.CODEC.fieldOf("texture").forGetter(DialogueIllustrationTexture::texture),
-            Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationTexture::anchor),
+            IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationTexture::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationTexture::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationTexture::y),
             Codec.INT.fieldOf("width").forGetter(DialogueIllustrationTexture::width),
@@ -56,37 +60,23 @@ public record DialogueIllustrationTexture(
             OptionalSerialization.optionalIntField("region_width").forGetter(DialogueIllustrationTexture::regionWidth),
             OptionalSerialization.optionalIntField("region_height").forGetter(DialogueIllustrationTexture::regionHeight)
     ).apply(instance, DialogueIllustrationTexture::new));
-
-    public static final DialogueIllustrationType<DialogueIllustrationTexture> TYPE = new DialogueIllustrationType<>(CODEC,
-            buf -> new DialogueIllustrationTexture(
-                    buf.readIdentifier(),
-                    buf.readEnumConstant(IllustrationAnchor.class),
-                    buf.readVarInt(),
-                    buf.readVarInt(),
-                    buf.readVarInt(),
-                    buf.readVarInt(),
-                    OptionalSerialization.readOptionalInt(buf),
-                    OptionalSerialization.readOptionalInt(buf),
-                    OptionalSerialization.readOptionalInt(buf),
-                    OptionalSerialization.readOptionalInt(buf),
-                    OptionalSerialization.readOptionalInt(buf),
-                    OptionalSerialization.readOptionalInt(buf)
-            ),
-            (buf, image) -> {
-                buf.writeIdentifier(image.texture());
-                buf.writeEnumConstant(image.anchor());
-                buf.writeVarInt(image.x());
-                buf.writeVarInt(image.y());
-                buf.writeVarInt(image.width());
-                buf.writeVarInt(image.height());
-                OptionalSerialization.writeOptionalInt(buf, image.u());
-                OptionalSerialization.writeOptionalInt(buf, image.v());
-                OptionalSerialization.writeOptionalInt(buf, image.textureWidth());
-                OptionalSerialization.writeOptionalInt(buf, image.textureHeight());
-                OptionalSerialization.writeOptionalInt(buf, image.regionWidth());
-                OptionalSerialization.writeOptionalInt(buf, image.regionHeight());
-            }
+    public static final PacketCodec<PacketByteBuf, DialogueIllustrationTexture> PACKET_CODEC = MorePacketCodecs.tuple(
+            Identifier.PACKET_CODEC, DialogueIllustrationTexture::texture,
+            IllustrationAnchor.PACKET_CODEC, DialogueIllustrationTexture::anchor,
+            PacketCodecs.VAR_INT, DialogueIllustrationTexture::x,
+            PacketCodecs.VAR_INT, DialogueIllustrationTexture::y,
+            PacketCodecs.VAR_INT, DialogueIllustrationTexture::width,
+            PacketCodecs.VAR_INT, DialogueIllustrationTexture::height,
+            MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::u,
+            MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::v,
+            MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::textureWidth,
+            MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::textureHeight,
+            MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::regionWidth,
+            MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::regionHeight,
+            DialogueIllustrationTexture::new
     );
+
+    public static final DialogueIllustrationType<DialogueIllustrationTexture> TYPE = new DialogueIllustrationType<>(CODEC, PACKET_CODEC);
 
     @Override
     public DialogueIllustrationType<? extends DialogueIllustration> getType() {

@@ -20,8 +20,10 @@ package org.ladysnake.blabber.impl.common.illustrations.entity;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.network.PacketByteBuf;
-import net.minecraft.util.dynamic.Codecs;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.common.serialization.MorePacketCodecs;
 import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
 
 import java.util.Optional;
@@ -30,10 +32,16 @@ import java.util.OptionalInt;
 public record StareTarget(Optional<IllustrationAnchor> anchor, OptionalInt x,
                           OptionalInt y) {
     public static final Codec<StareTarget> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor").forGetter(StareTarget::anchor),
+            IllustrationAnchor.CODEC.optionalFieldOf("anchor").forGetter(StareTarget::anchor),
             OptionalSerialization.optionalIntField("x").forGetter(StareTarget::x),
             OptionalSerialization.optionalIntField("y").forGetter(StareTarget::y)
     ).apply(instance, StareTarget::new));
+    public static final PacketCodec<PacketByteBuf, StareTarget> PACKET_CODEC = PacketCodec.tuple(
+            IllustrationAnchor.PACKET_CODEC.collect(PacketCodecs::optional), StareTarget::anchor,
+            MorePacketCodecs.OPTIONAL_INT, StareTarget::x,
+            MorePacketCodecs.OPTIONAL_INT, StareTarget::y,
+            StareTarget::new
+    );
     public static final StareTarget FOLLOW_MOUSE = new StareTarget(Optional.empty(), OptionalInt.empty(), OptionalInt.empty());
 
     public StareTarget(PacketByteBuf buf) {
