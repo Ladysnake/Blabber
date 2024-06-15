@@ -28,6 +28,10 @@ Version 1.6.0-mc1.20.1
 - API: the mod is now compatible with split sourceset environments
   - The experimental illustration API has been consequently reworked
 
+**Fixes**
+- Entity dialogue illustrations have been fixed and now have feature parity with the version for MC 1.20.4
+  - This is likely to move around existing entity illustrations on this version
+
 **Mod Interactions**
 - JEI no longer appears on the dialogue screen
 
