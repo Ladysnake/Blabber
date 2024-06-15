@@ -17,7 +17,7 @@
  */
 package org.ladysnake.blabber.impl.common.validation;
 
-import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.StateType;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -83,7 +83,7 @@ public sealed interface ValidationResult {
             }
         }
 
-        record InvalidIllustratedState(String state, ChoiceResult type, List<String> illustrations) implements Error {
+        record InvalidIllustratedState(String state, StateType type, List<String> illustrations) implements Error {
             @Override
             public String message() {
                 return state() + " of type " + type + " is not allowed to use illustrations " + illustrations();

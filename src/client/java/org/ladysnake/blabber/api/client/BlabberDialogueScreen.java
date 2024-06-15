@@ -40,8 +40,8 @@ import org.ladysnake.blabber.impl.client.BlabberClient;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
-import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.common.model.StateType;
 import org.ladysnake.blabber.impl.common.packets.ChoiceSelectionPayload;
 import org.ladysnake.blabber.impl.common.settings.BlabberSetting;
 import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
@@ -189,13 +189,13 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
         return super.keyPressed(key, scancode, modifiers);
     }
 
-    private @Nullable ChoiceResult confirmChoice(int selectedChoice) {
+    private @Nullable StateType confirmChoice(int selectedChoice) {
         assert this.client != null;
         if (this.handler.getAvailableChoices().get(selectedChoice).unavailabilityMessage().isPresent()) {
             return null;
         }
 
-        ChoiceResult result = this.makeChoice(selectedChoice);
+        StateType result = this.makeChoice(selectedChoice);
 
         switch (result) {
             case END_DIALOGUE -> this.client.setScreen(null);
@@ -221,7 +221,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
     private void onBigChoiceMade(boolean yes) {
         assert client != null;
-        if (this.confirmChoice(yes ? 0 : 1) == ChoiceResult.DEFAULT) {
+        if (this.confirmChoice(yes ? 0 : 1) == StateType.DEFAULT) {
             this.client.setScreen(this);
         }
     }
@@ -365,9 +365,9 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
         // NO-OP
     }
 
-    public ChoiceResult makeChoice(int choice) {
+    public StateType makeChoice(int choice) {
         int originalChoiceIndex = this.handler.getAvailableChoices().get(choice).originalChoiceIndex();
-        ChoiceResult result = this.handler.makeChoice(originalChoiceIndex);
+        StateType result = this.handler.makeChoice(originalChoiceIndex);
         ClientPlayNetworking.send(new ChoiceSelectionPayload((byte) originalChoiceIndex));
         return result;
     }

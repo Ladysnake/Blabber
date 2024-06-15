@@ -15,26 +15,18 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common.model;
+package org.ladysnake.blabber.impl.common.machine;
 
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
+import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
+import org.ladysnake.blabber.impl.common.model.StateType;
 
-public enum ChoiceResult {
-    DEFAULT(true), END_DIALOGUE(false), ASK_CONFIRMATION(false);
+import java.util.Optional;
 
-    public static final PacketCodec<PacketByteBuf, ChoiceResult> PACKET_CODEC = PacketCodec.ofStatic(
-            PacketByteBuf::writeEnumConstant,
-            buf -> buf.readEnumConstant(ChoiceResult.class)
-    );
+public interface ChoiceResult {
+    StateType type();
+    Optional<InstancedDialogueAction<?>> action();
 
-    private final boolean allowsIllustrations;
+    ChoiceResult DEFAULT_END = new Basic(StateType.END_DIALOGUE, Optional.empty());
 
-    ChoiceResult(boolean allowsIllustrations) {
-        this.allowsIllustrations = allowsIllustrations;
-    }
-
-    public boolean allowsIllustrations() {
-        return this.allowsIllustrations;
-    }
+    record Basic(StateType type, Optional<InstancedDialogueAction<?>> action) implements ChoiceResult {}
 }

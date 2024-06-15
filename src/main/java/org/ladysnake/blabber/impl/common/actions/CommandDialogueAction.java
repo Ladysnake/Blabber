@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common;
+package org.ladysnake.blabber.impl.common.actions;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;

@@ -31,6 +31,7 @@ import net.minecraft.text.Texts;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
+import org.ladysnake.blabber.impl.common.machine.ChoiceResult;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -43,14 +44,14 @@ public record DialogueState(
         List<String> illustrations,
         List<DialogueChoice> choices,
         Optional<InstancedDialogueAction<?>> action,
-        ChoiceResult type
-) {
+        StateType type
+) implements ChoiceResult {
     public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             TextCodecs.CODEC.optionalFieldOf("text", Text.empty()).forGetter(DialogueState::text),
             Codec.list(Codec.STRING).optionalFieldOf("illustrations", Collections.emptyList()).forGetter(DialogueState::illustrations),
             Codec.list(DialogueChoice.CODEC).optionalFieldOf("choices", List.of()).forGetter(DialogueState::choices),
             InstancedDialogueAction.CODEC.optionalFieldOf("action").forGetter(DialogueState::action),
-            Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name).optionalFieldOf("type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
+            Codec.STRING.xmap(s -> Enum.valueOf(StateType.class, s.toUpperCase(Locale.ROOT)), Enum::name).optionalFieldOf("type", StateType.DEFAULT).forGetter(DialogueState::type)
     ).apply(instance, DialogueState::new));
     public static final PacketCodec<PacketByteBuf, DialogueState> PACKET_CODEC = PacketCodec.tuple(
             TextCodecs.PACKET_CODEC, DialogueState::text,
@@ -58,7 +59,7 @@ public record DialogueState(
             PacketCodecs.collection(ArrayList::new, DialogueChoice.PACKET_CODEC), DialogueState::choices,
             // not writing the action, the client most likely does not need to know about it
             PacketCodec.of((value, buf) -> {}, buf -> Optional.empty()), DialogueState::action,
-            ChoiceResult.PACKET_CODEC, DialogueState::type,
+            StateType.PACKET_CODEC, DialogueState::type,
             DialogueState::new
     );
 

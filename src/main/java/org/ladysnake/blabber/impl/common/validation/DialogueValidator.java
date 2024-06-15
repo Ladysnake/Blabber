@@ -17,10 +17,10 @@
  */
 package org.ladysnake.blabber.impl.common.validation;
 
-import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.DialogueChoice;
 import org.ladysnake.blabber.impl.common.model.DialogueState;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
+import org.ladysnake.blabber.impl.common.model.StateType;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -38,7 +38,7 @@ public final class DialogueValidator {
         List<ValidationResult.Warning> warnings = new ArrayList<>();
 
         for (Map.Entry<String, DialogueState> state : dialogue.states().entrySet()) {
-            if (state.getValue().type().equals(ChoiceResult.END_DIALOGUE)) {
+            if (state.getValue().type().equals(StateType.END_DIALOGUE)) {
                 waitList.add(state.getKey());
             } else if (dialogue.states().get(state.getKey()).choices().isEmpty()) {
                 return new ValidationResult.Error.NoChoice(state.getKey());

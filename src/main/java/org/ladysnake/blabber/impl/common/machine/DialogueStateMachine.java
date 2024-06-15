@@ -35,11 +35,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
-import org.ladysnake.blabber.api.DialogueActionV2;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
-import org.ladysnake.blabber.impl.common.model.ChoiceResult;
 import org.ladysnake.blabber.impl.common.model.DialogueChoice;
 import org.ladysnake.blabber.impl.common.model.DialogueChoiceCondition;
 import org.ladysnake.blabber.impl.common.model.DialogueState;
@@ -53,7 +51,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
-import java.util.function.Consumer;
 import java.util.stream.IntStream;
 
 public final class DialogueStateMachine {
@@ -188,16 +185,14 @@ public final class DialogueStateMachine {
     /**
      * @throws IllegalStateException if making an invalid choice
      */
-    public ChoiceResult choose(int choice, Consumer<DialogueActionV2> actionRunner) {
+    public ChoiceResult choose(int choice) {
         if (choice == AvailableChoice.ESCAPE_HATCH.originalChoiceIndex() && IntStream.range(0, this.getCurrentState().choices().size()).noneMatch(this::isAvailable)) {
             Blabber.LOGGER.warn("(Blabber) Escape hatch used on {}#{}", this.getId(), this.currentStateKey);
-            return ChoiceResult.END_DIALOGUE;
+            return ChoiceResult.DEFAULT_END;
         }
 
         this.validateChoice(choice);
-        DialogueState nextState = this.selectState(this.getCurrentState().getNextState(choice));
-        nextState.action().map(InstancedDialogueAction::action).ifPresent(actionRunner);
-        return nextState.type();
+        return this.selectState(this.getCurrentState().getNextState(choice));
     }
 
     private void validateChoice(int choice) {

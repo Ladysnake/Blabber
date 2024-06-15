@@ -32,8 +32,9 @@ import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
+import org.ladysnake.blabber.impl.common.machine.ChoiceResult;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
-import org.ladysnake.blabber.impl.common.model.ChoiceResult;
+import org.ladysnake.blabber.impl.common.model.StateType;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 
 import java.util.List;
@@ -106,14 +107,18 @@ public class DialogueScreenHandler extends ScreenHandler {
     }
 
     @CheckEnv(Env.CLIENT)
-    public ChoiceResult makeChoice(int choice) {
-        return this.dialogue.choose(choice, action -> {});
+    public StateType makeChoice(int choice) {
+        return this.dialogue.choose(choice).type();
     }
 
     public boolean makeChoice(ServerPlayerEntity player, int choice) {
         try {  // Can't throw here, could cause trouble with a bad packet
-            ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player, this.interlocutor));
-            if (result == ChoiceResult.END_DIALOGUE) {
+            ChoiceResult result = this.dialogue.choose(choice);
+
+            result.action().map(InstancedDialogueAction::action).ifPresent(action -> action.handle(player, this.interlocutor));
+
+            // The action itself can close the dialogue or switch to a different one, so we need to check this one is still open
+            if (result.type() == StateType.END_DIALOGUE && player.currentScreenHandler == this) {
                 PlayerDialogueTracker.get(player).endDialogue();
             }
 

@@ -79,9 +79,22 @@
         {
           "text": [{"text":"My name is "},{"selector":"@s"}],
           "next": "end"
+        },
+        {
+          "text": "Let's play DnD",
+          "next": "end_dnd"
         }
       ],
       "illustrations": ["discussion"]
+    },
+    "end_dnd": {
+      "text": "",
+      "choices": [],
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "blabber dialogue start babblings:perception_check"
+      }
     }
   },
   "illustrations": {
