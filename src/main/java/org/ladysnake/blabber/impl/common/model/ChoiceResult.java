@@ -17,8 +17,16 @@
  */
 package org.ladysnake.blabber.impl.common.model;
 
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+
 public enum ChoiceResult {
     DEFAULT(true), END_DIALOGUE(false), ASK_CONFIRMATION(false);
+
+    public static final PacketCodec<PacketByteBuf, ChoiceResult> PACKET_CODEC = PacketCodec.ofStatic(
+            PacketByteBuf::writeEnumConstant,
+            buf -> buf.readEnumConstant(ChoiceResult.class)
+    );
 
     private final boolean allowsIllustrations;
 

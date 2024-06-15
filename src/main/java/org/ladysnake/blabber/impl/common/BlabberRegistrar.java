@@ -18,13 +18,11 @@
 package org.ladysnake.blabber.impl.common;
 
 import com.mojang.brigadier.suggestion.SuggestionProvider;
-import com.mojang.serialization.Codec;
 import com.mojang.serialization.Lifecycle;
-import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
-import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
-import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
+import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.command.v2.ArgumentTypeRegistry;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
+import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationNetworking;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
@@ -33,7 +31,7 @@ import net.minecraft.command.CommandSource;
 import net.minecraft.command.argument.serialize.ConstantArgumentSerializer;
 import net.minecraft.command.suggestion.SuggestionProviders;
 import net.minecraft.entity.Entity;
-import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.packet.CustomPayload;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -48,25 +46,21 @@ import org.ladysnake.blabber.api.layout.DefaultLayoutParams;
 import org.ladysnake.blabber.api.layout.DialogueLayoutType;
 import org.ladysnake.blabber.impl.common.commands.SettingArgumentType;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
-import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
-import org.ladysnake.blabber.impl.common.packets.DialogueListPacket;
-import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
+import org.ladysnake.blabber.impl.common.packets.ChoiceSelectionPayload;
+import org.ladysnake.blabber.impl.common.packets.DialogueListPayload;
+import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePayload;
 import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
+import org.ladysnake.cca.api.v3.entity.EntityComponentFactoryRegistry;
+import org.ladysnake.cca.api.v3.entity.EntityComponentInitializer;
+import org.ladysnake.cca.api.v3.entity.RespawnCopyStrategy;
 
 import java.util.Optional;
 import java.util.Set;
 
 public final class BlabberRegistrar implements EntityComponentInitializer {
-    public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, buf) -> {
-        DialogueStateMachine dialogue = new DialogueStateMachine(buf);
-        Optional<Entity> interlocutor = buf.readOptional(PacketByteBuf::readVarInt).map(inventory.player.getWorld()::getEntityById);
-        ChoiceAvailabilityPacket choicesAvailability = new ChoiceAvailabilityPacket(buf);
-        dialogue.applyAvailabilityUpdate(choicesAvailability);
-        return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
-    }));
-    public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
-    public static final RegistryKey<Registry<Codec<? extends DialogueActionV2>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
-    public static final Registry<Codec<? extends DialogueActionV2>> ACTION_REGISTRY = FabricRegistryBuilder.from(
+    public static final RegistryKey<Registry<MapCodec<? extends DialogueActionV2>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
+    public static final Registry<MapCodec<? extends DialogueActionV2>> ACTION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
     ).buildAndRegister();
 
@@ -79,8 +73,14 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final Registry<DialogueLayoutType<?>> LAYOUT_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(LAYOUT_REGISTRY_KEY, Lifecycle.stable(), false)
     ).buildAndRegister();
-    public static final DialogueLayoutType<DefaultLayoutParams> CLASSIC_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.DEFAULT, DefaultLayoutParams::new, DefaultLayoutParams::writeToPacket);
-    public static final DialogueLayoutType<DefaultLayoutParams> RPG_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.DEFAULT, DefaultLayoutParams::new, DefaultLayoutParams::writeToPacket);
+    public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, data) -> {
+        DialogueStateMachine dialogue = data.dialogue();
+        dialogue.applyAvailabilityUpdate(data.availableChoices());
+        Optional<Entity> interlocutor = data.interlocutorId().map(inventory.player.getWorld()::getEntityById);
+        return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
+    }, DialogueScreenHandlerFactory.DialogueOpeningData.PACKET_CODEC));
+    public static final DialogueLayoutType<DefaultLayoutParams> CLASSIC_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.PACKET_CODEC, DefaultLayoutParams.DEFAULT);
+    public static final DialogueLayoutType<DefaultLayoutParams> RPG_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.PACKET_CODEC, DefaultLayoutParams.DEFAULT);
 
     public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(
             Blabber.id("available_dialogues"),
@@ -92,24 +92,34 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
         ArgumentTypeRegistry.registerArgumentType(Blabber.id("setting"), SettingArgumentType.class, ConstantArgumentSerializer.of(SettingArgumentType::setting));
 
         DialogueLoader.init();
-        ServerPlayNetworking.registerGlobalReceiver(DIALOGUE_ACTION, (server, player, handler, buf, responseSender) -> {
-            int choice = buf.readByte();
-            server.execute(() -> {
-                if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueHandler) {
-                    if (!dialogueHandler.makeChoice(player, choice)) {
-                        responseSender.sendPacket(new SelectedDialogueStatePacket(dialogueHandler.getCurrentStateKey()));
-                    }
+
+        PayloadTypeRegistry.configurationS2C().register(DialogueListPayload.ID, DialogueListPayload.PACKET_CODEC);
+
+        PayloadTypeRegistry.playS2C().register(DialogueListPayload.ID, DialogueListPayload.PACKET_CODEC);
+        PayloadTypeRegistry.playS2C().register(ChoiceAvailabilityPayload.ID, ChoiceAvailabilityPayload.PACKET_CODEC);
+        PayloadTypeRegistry.playS2C().register(SelectedDialogueStatePayload.ID, SelectedDialogueStatePayload.PACKET_CODEC);
+
+        PayloadTypeRegistry.playC2S().register(ChoiceSelectionPayload.ID, ChoiceSelectionPayload.PACKET_CODEC);
+
+        ServerPlayNetworking.registerGlobalReceiver(ChoiceSelectionPayload.ID, (payload, ctx) -> {
+            if (ctx.player().currentScreenHandler instanceof DialogueScreenHandler dialogueHandler) {
+                if (!dialogueHandler.makeChoice(ctx.player(), payload.selectedChoice())) {
+                    ctx.responseSender().sendPacket(new SelectedDialogueStatePayload(dialogueHandler.getCurrentStateKey()));
                 }
-            });
+            }
         });
         ServerConfigurationConnectionEvents.CONFIGURE.register((handler, server) -> {
-            if (ServerConfigurationNetworking.canSend(handler, DialogueListPacket.TYPE)) {
+            if (ServerConfigurationNetworking.canSend(handler, DialogueListPayload.ID)) {
                 Set<Identifier> dialogueIds = DialogueRegistry.getIds();
-                ServerConfigurationNetworking.send(handler, new DialogueListPacket(dialogueIds));
+                ServerConfigurationNetworking.send(handler, new DialogueListPayload(dialogueIds));
             } else {
                 Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getDebugProfile().getName());
             }
         });
+    }
+
+    public static <T extends CustomPayload> CustomPayload.Id<T> payloadId(String name) {
+        return CustomPayload.id(Blabber.MOD_ID + ":" + name);
     }
 
     @Override

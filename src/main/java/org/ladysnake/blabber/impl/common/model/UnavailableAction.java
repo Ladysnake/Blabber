@@ -22,11 +22,12 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 import net.minecraft.text.TextCodecs;
 import net.minecraft.text.Texts;
-import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
@@ -34,17 +35,13 @@ import java.util.Optional;
 public record UnavailableAction(UnavailableDisplay display, Optional<Text> message) {
     public static final Codec<UnavailableAction> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             UnavailableDisplay.CODEC.fieldOf("display").forGetter(UnavailableAction::display),
-            Codecs.createStrictOptionalFieldCodec(TextCodecs.CODEC, "message").forGetter(UnavailableAction::message)
+            TextCodecs.CODEC.optionalFieldOf("message").forGetter(UnavailableAction::message)
     ).apply(instance, UnavailableAction::new));
-
-    public UnavailableAction(PacketByteBuf buf) {
-        this(buf.readEnumConstant(UnavailableDisplay.class), buf.readOptional(PacketByteBuf::readText));
-    }
-
-    public static void writeToPacket(PacketByteBuf buf, UnavailableAction action) {
-        buf.writeEnumConstant(action.display());
-        buf.writeOptional(action.message(), PacketByteBuf::writeText);
-    }
+    public static final PacketCodec<PacketByteBuf, UnavailableAction> PACKET_CODEC = PacketCodec.tuple(
+            UnavailableDisplay.PACKET_CODEC, UnavailableAction::display,
+            PacketCodecs.optional(TextCodecs.PACKET_CODEC), UnavailableAction::message,
+            UnavailableAction::new
+    );
 
     public UnavailableAction parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         Optional<Text> parsedMessage = message().isEmpty() ? Optional.empty() : Optional.of(Texts.parse(source, message().get(), sender, 0));

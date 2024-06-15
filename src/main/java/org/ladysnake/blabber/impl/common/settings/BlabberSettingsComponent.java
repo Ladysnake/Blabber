@@ -17,18 +17,19 @@
  */
 package org.ladysnake.blabber.impl.common.settings;
 
-import dev.onyxstudios.cca.api.v3.component.ComponentKey;
-import dev.onyxstudios.cca.api.v3.component.ComponentRegistry;
-import dev.onyxstudios.cca.api.v3.component.sync.AutoSyncedComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.nbt.NbtString;
-import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.RegistryByteBuf;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.commands.SettingsSubCommand;
+import org.ladysnake.cca.api.v3.component.ComponentKey;
+import org.ladysnake.cca.api.v3.component.ComponentRegistry;
+import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 
 import java.util.EnumSet;
 
@@ -72,7 +73,7 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     @Override
-    public void writeSyncPacket(PacketByteBuf buf, ServerPlayerEntity recipient) {
+    public void writeSyncPacket(RegistryByteBuf buf, ServerPlayerEntity recipient) {
         boolean enabled = this.isDebugEnabled();
         buf.writeBoolean(enabled);
         if (enabled) {
@@ -81,7 +82,7 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     @Override
-    public void applySyncPacket(PacketByteBuf buf) {
+    public void applySyncPacket(RegistryByteBuf buf) {
         boolean debugEnabled = buf.readBoolean();
         if (debugEnabled) {
             this.enabledSettings = buf.readEnumSet(BlabberSetting.class);
@@ -91,7 +92,7 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     @Override
-    public void readFromNbt(NbtCompound tag) {
+    public void readFromNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
         this.enabledSettings = EnumSet.noneOf(BlabberSetting.class);
         for (NbtElement featureId : tag.getList("enabled_features", NbtElement.STRING_TYPE)) {
             BlabberSetting feature = BlabberSetting.getById(featureId.asString());
@@ -102,7 +103,7 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     @Override
-    public void writeToNbt(NbtCompound tag) {
+    public void writeToNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
         NbtList list = new NbtList();
         for (BlabberSetting feature : this.enabledSettings) {
             list.add(NbtString.of(feature.id()));

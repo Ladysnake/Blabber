@@ -18,7 +18,7 @@
 package org.ladysnake.blabber;
 
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.entity.Entity;
@@ -118,10 +118,10 @@ public final class Blabber implements ModInitializer {
 	 *
 	 * @param actionId the identifier used to reference the action in dialogue definition files
 	 * @param action   the action to run when triggered by a player
-	 * @see #registerAction(Identifier, Codec)
+	 * @see #registerAction(Identifier, MapCodec)
 	 */
 	public static void registerAction(Identifier actionId, DialogueAction action) {
-		registerAction(actionId, Codec.unit(action));
+		registerAction(actionId, MapCodec.unit(action));
 	}
 
 	/**
@@ -129,10 +129,10 @@ public final class Blabber implements ModInitializer {
 	 *
 	 * @param actionId the identifier used to reference the action in dialogue definition files
 	 * @param action   the action to run when triggered by a player
-	 * @see #registerAction(Identifier, Codec)
+	 * @see #registerAction(Identifier, MapCodec)
 	 */
 	public static void registerAction(Identifier actionId, DialogueActionV2 action) {
-		registerAction(actionId, Codec.unit(action));
+		registerAction(actionId, MapCodec.unit(action));
 	}
 
 	/**
@@ -142,7 +142,7 @@ public final class Blabber implements ModInitializer {
 	 * @param codec    a codec for deserializing dialogue actions using the given value
 	 * @see #registerAction(Identifier, DialogueAction)
 	 */
-	public static void registerAction(Identifier actionId, Codec<? extends DialogueActionV2> codec) {
+	public static void registerAction(Identifier actionId, MapCodec<? extends DialogueActionV2> codec) {
 		Registry.register(BlabberRegistrar.ACTION_REGISTRY, actionId, codec);
 	}
 

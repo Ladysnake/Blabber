@@ -22,7 +22,6 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientConfigurationNetworkin
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.network.PacketByteBuf;
 import net.minecraft.text.Text;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
@@ -47,14 +46,12 @@ import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationTextu
 import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationFakePlayer;
 import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationNbtEntity;
 import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationSelectorEntity;
-import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
-import org.ladysnake.blabber.impl.common.packets.DialogueListPacket;
-import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePacket;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
+import org.ladysnake.blabber.impl.common.packets.DialogueListPayload;
+import org.ladysnake.blabber.impl.common.packets.SelectedDialogueStatePayload;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-
-import static io.netty.buffer.Unpooled.buffer;
 
 public final class BlabberClient implements ClientModInitializer {
     private static final Map<DialogueLayoutType<?>, HandledScreens.Provider<?, ?>> screenRegistry = new LinkedHashMap<>();
@@ -71,15 +68,15 @@ public final class BlabberClient implements ClientModInitializer {
         BlabberScreenRegistry.register(BlabberRegistrar.CLASSIC_LAYOUT, BlabberDialogueScreen::new);
         BlabberScreenRegistry.register(BlabberRegistrar.RPG_LAYOUT, BlabberRpgDialogueScreen::new);
         HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, (HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<?>>) BlabberClient::createDialogueScreen);
-        ClientConfigurationNetworking.registerGlobalReceiver(DialogueListPacket.TYPE, (packet, responseSender) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
-        ClientPlayNetworking.registerGlobalReceiver(DialogueListPacket.TYPE, (packet, player, responseSender) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
-        ClientPlayNetworking.registerGlobalReceiver(ChoiceAvailabilityPacket.TYPE, (packet, player, responseSender) -> {
-            if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
+        ClientConfigurationNetworking.registerGlobalReceiver(DialogueListPayload.ID, (packet, ctx) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
+        ClientPlayNetworking.registerGlobalReceiver(DialogueListPayload.ID, (packet, ctx) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
+        ClientPlayNetworking.registerGlobalReceiver(ChoiceAvailabilityPayload.ID, (packet, ctx) -> {
+            if (ctx.player().currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
                 dialogueScreenHandler.handleAvailabilityUpdate(packet);
             }
         });
-        ClientPlayNetworking.registerGlobalReceiver(SelectedDialogueStatePacket.TYPE, (packet, player, responseSender) -> {
-            if (player.currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
+        ClientPlayNetworking.registerGlobalReceiver(SelectedDialogueStatePayload.ID, (packet, ctx) -> {
+            if (ctx.player().currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
                 dialogueScreenHandler.setCurrentState(packet.stateKey());
             }
         });
@@ -112,11 +109,5 @@ public final class BlabberClient implements ClientModInitializer {
 
         Blabber.LOGGER.error("(Blabber) No screen provider found for {}", layoutType);
         return new BlabberDialogueScreen<>(handler, inventory, title);
-    }
-
-    public static void sendDialogueActionMessage(int choice) {
-        PacketByteBuf buf = new PacketByteBuf(buffer());
-        buf.writeByte(choice);
-        ClientPlayNetworking.send(BlabberRegistrar.DIALOGUE_ACTION, buf);
     }
 }

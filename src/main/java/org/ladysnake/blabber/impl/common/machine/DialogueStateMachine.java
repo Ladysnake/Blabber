@@ -23,10 +23,14 @@ import com.mojang.brigadier.exceptions.DynamicCommandExceptionType;
 import it.unimi.dsi.fastutil.ints.Int2BooleanMap;
 import it.unimi.dsi.fastutil.ints.Int2BooleanMaps;
 import it.unimi.dsi.fastutil.ints.Int2BooleanOpenHashMap;
-import net.minecraft.loot.LootDataType;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.context.LootContext;
-import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.RegistryByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
@@ -42,7 +46,7 @@ import org.ladysnake.blabber.impl.common.model.DialogueState;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.model.UnavailableAction;
 import org.ladysnake.blabber.impl.common.model.UnavailableDisplay;
-import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 
 import java.util.HashMap;
 import java.util.List;
@@ -86,15 +90,12 @@ public final class DialogueStateMachine {
         return conditionalChoices;
     }
 
-    public static void writeToPacket(PacketByteBuf buf, DialogueStateMachine dialogue) {
-        buf.writeIdentifier(dialogue.getId());
-        DialogueTemplate.writeToPacket(buf, dialogue.template);
-        buf.writeString(dialogue.getCurrentStateKey());
-    }
-
-    public DialogueStateMachine(PacketByteBuf buf) {
-        this(buf.readIdentifier(), new DialogueTemplate(buf), buf.readString());
-    }
+    public static final PacketCodec<RegistryByteBuf, DialogueStateMachine> PACKET_CODEC = PacketCodec.tuple(
+            Identifier.PACKET_CODEC, DialogueStateMachine::getId,
+            DialogueTemplate.PACKET_CODEC, m -> m.template,
+            PacketCodecs.STRING, DialogueStateMachine::getCurrentStateKey,
+            DialogueStateMachine::new
+    );
 
     private Map<String, DialogueState> getStates() {
         return this.template.states();
@@ -132,19 +133,21 @@ public final class DialogueStateMachine {
         return !this.conditionalChoices.isEmpty();
     }
 
-    public @Nullable ChoiceAvailabilityPacket updateConditions(LootContext context) throws CommandSyntaxException {
-        ChoiceAvailabilityPacket ret = null;
+    public @Nullable ChoiceAvailabilityPayload updateConditions(LootContext context) throws CommandSyntaxException {
+        ChoiceAvailabilityPayload ret = null;
         for (Map.Entry<String, Int2BooleanMap> conditionalState : this.conditionalChoices.entrySet()) {
             List<DialogueChoice> availableChoices = getStates().get(conditionalState.getKey()).choices();
             for (Int2BooleanMap.Entry conditionalChoice : conditionalState.getValue().int2BooleanEntrySet()) {
-                Identifier predicateId = availableChoices.get(conditionalChoice.getIntKey()).condition().orElseThrow().predicate();
-                LootCondition condition = context.getWorld().getServer().getLootManager().getElement(
-                        LootDataType.PREDICATES, predicateId
-                );
-                if (condition == null) throw INVALID_PREDICATE_EXCEPTION.create(predicateId);
-                boolean testResult = runTest(condition, context);
+                RegistryKey<LootCondition> predicateId = availableChoices.get(conditionalChoice.getIntKey()).condition().orElseThrow().predicate();
+                Optional<LootCondition> condition = context.getWorld().getServer()
+                        .getReloadableRegistries()
+                        .createRegistryLookup()
+                        .getOptionalEntry(RegistryKeys.PREDICATE, predicateId)
+                        .map(RegistryEntry::value);
+                if (condition.isEmpty()) throw INVALID_PREDICATE_EXCEPTION.create(predicateId);
+                boolean testResult = runTest(condition.get(), context);
                 if (testResult != conditionalChoice.setValue(testResult)) {
-                    if (ret == null) ret = new ChoiceAvailabilityPacket();
+                    if (ret == null) ret = new ChoiceAvailabilityPayload();
                     ret.markUpdated(conditionalState.getKey(), conditionalChoice.getIntKey(), testResult);
                 }
             }
@@ -152,8 +155,8 @@ public final class DialogueStateMachine {
         return ret;
     }
 
-    public ChoiceAvailabilityPacket createFullAvailabilityUpdatePacket() {
-        return new ChoiceAvailabilityPacket(this.conditionalChoices);
+    public ChoiceAvailabilityPayload createFullAvailabilityUpdatePacket() {
+        return new ChoiceAvailabilityPayload(this.conditionalChoices);
     }
 
     private static boolean runTest(LootCondition condition, LootContext context) {
@@ -164,7 +167,7 @@ public final class DialogueStateMachine {
         return testResult;
     }
 
-    public void applyAvailabilityUpdate(ChoiceAvailabilityPacket payload) {
+    public void applyAvailabilityUpdate(ChoiceAvailabilityPayload payload) {
         payload.updatedChoices().forEach((stateKey, choiceIndices) -> {
             Int2BooleanMap conditionalState = this.conditionalChoices.get(stateKey);
             for (Int2BooleanMap.Entry updatedChoice : choiceIndices.int2BooleanEntrySet()) {

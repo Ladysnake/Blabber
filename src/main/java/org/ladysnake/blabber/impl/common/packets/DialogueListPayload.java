@@ -17,29 +17,23 @@
  */
 package org.ladysnake.blabber.impl.common.packets;
 
-import net.fabricmc.fabric.api.networking.v1.FabricPacket;
-import net.fabricmc.fabric.api.networking.v1.PacketType;
-import net.minecraft.network.PacketByteBuf;
+import io.netty.buffer.ByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.packet.CustomPayload;
 import net.minecraft.util.Identifier;
-import org.ladysnake.blabber.Blabber;
+import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.function.IntFunction;
 
-public record DialogueListPacket(Set<Identifier> dialogueIds) implements FabricPacket {
-    public static final PacketType<DialogueListPacket> TYPE = PacketType.create(Blabber.id("dialogue_list"), DialogueListPacket::new);
-
-    public DialogueListPacket(PacketByteBuf buf) {
-        this(buf.<Identifier, Set<Identifier>>readCollection(HashSet::new, PacketByteBuf::readIdentifier));
-    }
+public record DialogueListPayload(Set<Identifier> dialogueIds) implements CustomPayload {
+    public static final CustomPayload.Id<DialogueListPayload> ID = BlabberRegistrar.payloadId("dialogue_list");
+    public static final PacketCodec<ByteBuf, DialogueListPayload> PACKET_CODEC = Identifier.PACKET_CODEC.collect(PacketCodecs.toCollection((IntFunction<Set<Identifier>>) HashSet::new)).xmap(DialogueListPayload::new, DialogueListPayload::dialogueIds);
 
     @Override
-    public void write(PacketByteBuf buf) {
-        buf.writeCollection(dialogueIds(), PacketByteBuf::writeIdentifier);
-    }
-
-    @Override
-    public PacketType<?> getType() {
-        return TYPE;
+    public Id<? extends CustomPayload> getId() {
+        return ID;
     }
 }

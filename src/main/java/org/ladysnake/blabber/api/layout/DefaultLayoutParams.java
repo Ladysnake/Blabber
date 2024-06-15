@@ -19,8 +19,9 @@ package org.ladysnake.blabber.api.layout;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.util.dynamic.Codecs;
+import io.netty.buffer.ByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import org.jetbrains.annotations.ApiStatus;
 
 import java.util.Optional;
@@ -29,18 +30,11 @@ import java.util.Optional;
 public record DefaultLayoutParams(Optional<Margins> mainTextMargins) implements DialogueLayout.Params {
     public static final DefaultLayoutParams DEFAULT = new DefaultLayoutParams(Optional.empty());
     public static final Codec<DefaultLayoutParams> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codecs.createStrictOptionalFieldCodec(Margins.CODEC, "main_text_margins").forGetter(DefaultLayoutParams::mainTextMargins)
+            Margins.CODEC.optionalFieldOf("main_text_margins").forGetter(DefaultLayoutParams::mainTextMargins)
     ).apply(instance, DefaultLayoutParams::new));
-
-    public DefaultLayoutParams(PacketByteBuf buf) {
-        this(buf.readOptional(Margins::new));
-    }
+    public static final PacketCodec<ByteBuf, DefaultLayoutParams> PACKET_CODEC = Margins.PACKET_CODEC.collect(PacketCodecs::optional).xmap(DefaultLayoutParams::new, DefaultLayoutParams::mainTextMargins);
 
     public Margins getMainTextMargins() {
         return this.mainTextMargins.orElse(Margins.NONE);
-    }
-
-    public static void writeToPacket(PacketByteBuf buf, DefaultLayoutParams params) {
-        buf.writeOptional(params.mainTextMargins(), Margins::writeToPacket);
     }
 }

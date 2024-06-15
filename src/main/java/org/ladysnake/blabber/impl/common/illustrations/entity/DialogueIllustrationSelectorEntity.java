@@ -27,31 +27,26 @@ import net.minecraft.command.EntitySelectorReader;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.ladysnake.blabber.impl.common.serialization.EitherMapCodec;
+import org.ladysnake.blabber.impl.common.serialization.MorePacketCodecs;
 import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
 
 import java.util.Optional;
 
 public class DialogueIllustrationSelectorEntity implements DialogueIllustrationEntity {
-    // Need to have a MapCodecCodec here, otherwise it will deserialize differently
-    public static final Codec<DialogueIllustrationSelectorEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec).codec();
+    public static final MapCodec<DialogueIllustrationSelectorEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec);
+    public static final PacketCodec<PacketByteBuf, DialogueIllustrationSelectorEntity> PACKET_CODEC = Spec.PACKET_CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec);
 
     public static final DialogueIllustrationType<DialogueIllustrationSelectorEntity> TYPE = new DialogueIllustrationType<>(
             CODEC,
-            buf -> new DialogueIllustrationSelectorEntity(
-                    new Spec(buf),
-                    buf.readVarInt()
-            ),
-            (buf, i) -> {
-                i.spec().writeToBuffer(buf);
-                buf.writeVarInt(i.selectedEntityId);
-            }
+            PACKET_CODEC
     );
 
     private static final int NO_ENTITY_FOUND = -1;
@@ -140,13 +135,13 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustrationE
                        StareTarget stareAt) {
         private static final MapCodec<Spec> CODEC_V0 = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Codec.STRING.fieldOf("entity").forGetter(Spec::selector),
-                Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
+                IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
                 Codec.INT.fieldOf("x1").forGetter(Spec::x),
                 Codec.INT.fieldOf("y1").forGetter(Spec::y),
                 Codec.INT.fieldOf("x2").forGetter(s -> s.x() + s.width()),
                 Codec.INT.fieldOf("y2").forGetter(s -> s.y() + s.height()),
                 Codec.INT.fieldOf("size").forGetter(Spec::entitySize),
-                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOffset),
+                Codec.FLOAT.optionalFieldOf("y_offset", 0.0f).forGetter(Spec::yOffset),
                 OptionalSerialization.optionalIntField("stare_at_x").forGetter(s -> s.stareAt().x()),
                 OptionalSerialization.optionalIntField("stare_at_y").forGetter(s -> s.stareAt().y())
         ).apply(instance, (id, anchor, x1, y1, x2, y2, size, yOff, stareAtX, stareAtY) -> {
@@ -158,41 +153,27 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustrationE
         }));
         private static final MapCodec<Spec> CODEC_V1 = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Codec.STRING.fieldOf("entity").forGetter(Spec::selector),
-                Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
+                IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(Spec::anchor),
                 Codec.INT.fieldOf("x").forGetter(Spec::x),
                 Codec.INT.fieldOf("y").forGetter(Spec::y),
                 Codec.INT.fieldOf("width").forGetter(Spec::width),
                 Codec.INT.fieldOf("height").forGetter(Spec::height),
                 Codec.INT.fieldOf("entity_size").forGetter(Spec::entitySize),
-                Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "y_offset", 0.0f).forGetter(Spec::yOffset),
-                Codecs.createStrictOptionalFieldCodec(StareTarget.CODEC, "stare_at", StareTarget.FOLLOW_MOUSE).forGetter(Spec::stareAt)
+                Codec.FLOAT.optionalFieldOf("y_offset", 0.0f).forGetter(Spec::yOffset),
+                StareTarget.CODEC.optionalFieldOf("stare_at", StareTarget.FOLLOW_MOUSE).forGetter(Spec::stareAt)
         ).apply(instance, Spec::new));
         public static final MapCodec<Spec> CODEC = EitherMapCodec.alternatively(CODEC_V0, CODEC_V1);
-
-        public Spec(PacketByteBuf buf) {
-            this(
-                    buf.readString(),
-                    buf.readEnumConstant(IllustrationAnchor.class),
-                    buf.readInt(),
-                    buf.readInt(),
-                    buf.readInt(),
-                    buf.readInt(),
-                    buf.readInt(),
-                    buf.readFloat(),
-                    new StareTarget(buf)
-            );
-        }
-
-        public void writeToBuffer(PacketByteBuf buf) {
-            buf.writeString(selector());
-            buf.writeEnumConstant(anchor());
-            buf.writeInt(x());
-            buf.writeInt(y());
-            buf.writeInt(width());
-            buf.writeInt(height());
-            buf.writeInt(entitySize());
-            buf.writeFloat(yOffset());
-            StareTarget.writeToPacket(buf, stareAt());
-        }
+        public static final PacketCodec<PacketByteBuf, Spec> PACKET_CODEC = MorePacketCodecs.tuple(
+                PacketCodecs.STRING, Spec::selector,
+                IllustrationAnchor.PACKET_CODEC, Spec::anchor,
+                PacketCodecs.VAR_INT, Spec::x,
+                PacketCodecs.VAR_INT, Spec::y,
+                PacketCodecs.VAR_INT, Spec::width,
+                PacketCodecs.VAR_INT, Spec::height,
+                PacketCodecs.VAR_INT, Spec::entitySize,
+                PacketCodecs.FLOAT, Spec::yOffset,
+                StareTarget.PACKET_CODEC, Spec::stareAt,
+                Spec::new
+        );
     }
 }

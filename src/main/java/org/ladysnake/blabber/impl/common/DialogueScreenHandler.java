@@ -34,7 +34,7 @@ import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.ChoiceResult;
-import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 
 import java.util.List;
 import java.util.Map;
@@ -101,7 +101,7 @@ public class DialogueScreenHandler extends ScreenHandler {
         return true;
     }
 
-    public void handleAvailabilityUpdate(ChoiceAvailabilityPacket packet) {
+    public void handleAvailabilityUpdate(ChoiceAvailabilityPayload packet) {
         this.dialogue.applyAvailabilityUpdate(packet);
     }
 

@@ -19,9 +19,6 @@ package org.ladysnake.blabber.impl.common;
 
 import com.google.common.base.Preconditions;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import dev.onyxstudios.cca.api.v3.component.ComponentKey;
-import dev.onyxstudios.cca.api.v3.component.ComponentRegistry;
-import dev.onyxstudios.cca.api.v3.component.tick.ServerTickingComponent;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -31,6 +28,7 @@ import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.loot.context.LootContextTypes;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -38,7 +36,10 @@ import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
-import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
+import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
+import org.ladysnake.cca.api.v3.component.ComponentKey;
+import org.ladysnake.cca.api.v3.component.ComponentRegistry;
+import org.ladysnake.cca.api.v3.component.tick.ServerTickingComponent;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -121,7 +122,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     @Override
-    public void readFromNbt(NbtCompound tag) {
+    public void readFromNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
         if (tag.contains("current_dialogue_id", NbtElement.STRING_TYPE)) {
             Identifier dialogueId = Identifier.tryParse(tag.getString("current_dialogue_id"));
             if (dialogueId != null) {
@@ -136,7 +137,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     @Override
-    public void writeToNbt(NbtCompound tag) {
+    public void writeToNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
         if (this.currentDialogue != null) {
             tag.putString("current_dialogue_id", this.currentDialogue.getId().toString());
             tag.putString("current_dialogue_state", this.currentDialogue.getCurrentStateKey());
@@ -176,7 +177,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
             }
 
             try {
-                ChoiceAvailabilityPacket update = this.updateConditions(serverPlayer, this.currentDialogue);
+                ChoiceAvailabilityPayload update = this.updateConditions(serverPlayer, this.currentDialogue);
 
                 if (update != null) {
                     ServerPlayNetworking.send(serverPlayer, update);
@@ -195,7 +196,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
     }
 
-    private @Nullable ChoiceAvailabilityPacket updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) throws CommandSyntaxException {
+    private @Nullable ChoiceAvailabilityPayload updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) throws CommandSyntaxException {
         if (currentDialogue.hasConditions()) {
             return currentDialogue.updateConditions(new LootContext.Builder(
                     new LootContextParameterSet.Builder(player.getServerWorld())

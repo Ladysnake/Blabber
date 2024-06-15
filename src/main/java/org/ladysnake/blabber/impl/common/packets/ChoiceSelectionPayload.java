@@ -15,30 +15,20 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.common.model;
+package org.ladysnake.blabber.impl.common.packets;
 
-import com.mojang.serialization.Codec;
-import net.minecraft.network.PacketByteBuf;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.util.StringIdentifiable;
+import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.packet.CustomPayload;
+import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
-public enum UnavailableDisplay implements StringIdentifiable {
-    GRAYED_OUT("grayed_out"), HIDDEN("hidden");
-
-    public static final Codec<UnavailableDisplay> CODEC = StringIdentifiable.createCodec(UnavailableDisplay::values);
-    public static final PacketCodec<PacketByteBuf, UnavailableDisplay> PACKET_CODEC = PacketCodec.ofStatic(
-            PacketByteBuf::writeEnumConstant,
-            buf -> buf.readEnumConstant(UnavailableDisplay.class)
-    );
-
-    private final String id;
-
-    UnavailableDisplay(String id) {
-        this.id = id;
-    }
+public record ChoiceSelectionPayload(byte selectedChoice) implements CustomPayload {
+    public static final CustomPayload.Id<ChoiceSelectionPayload> ID = BlabberRegistrar.payloadId("choice_selection");
+    public static final PacketCodec<ByteBuf, ChoiceSelectionPayload> PACKET_CODEC = PacketCodecs.BYTE.xmap(ChoiceSelectionPayload::new, ChoiceSelectionPayload::selectedChoice);
 
     @Override
-    public String asString() {
-        return this.id;
+    public Id<? extends CustomPayload> getId() {
+        return ID;
     }
 }

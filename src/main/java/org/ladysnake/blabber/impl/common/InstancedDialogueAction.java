@@ -18,15 +18,16 @@
 package org.ladysnake.blabber.impl.common;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.api.DialogueActionV2;
 
 public record InstancedDialogueAction<A extends DialogueActionV2>(A action,
-                                                                  Codec<A> codec) {
+                                                                  MapCodec<A> codec) {
     public static final Codec<InstancedDialogueAction<?>> CODEC = BlabberRegistrar.ACTION_REGISTRY.getCodec()
             .dispatch("type", InstancedDialogueAction::codec, InstancedDialogueAction::xmap);
 
-    private static <A extends DialogueActionV2> Codec<InstancedDialogueAction<A>> xmap(Codec<A> c) {
+    private static <A extends DialogueActionV2> MapCodec<InstancedDialogueAction<A>> xmap(MapCodec<A> c) {
         return c.xmap(a -> new InstancedDialogueAction<>(a, c), InstancedDialogueAction::action);
     }
 

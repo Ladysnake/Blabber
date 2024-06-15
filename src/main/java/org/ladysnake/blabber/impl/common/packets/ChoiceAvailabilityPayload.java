@@ -17,45 +17,36 @@
  */
 package org.ladysnake.blabber.impl.common.packets;
 
+import io.netty.buffer.ByteBuf;
 import it.unimi.dsi.fastutil.ints.Int2BooleanMap;
 import it.unimi.dsi.fastutil.ints.Int2BooleanOpenHashMap;
-import net.fabricmc.fabric.api.networking.v1.FabricPacket;
-import net.fabricmc.fabric.api.networking.v1.PacketType;
-import net.minecraft.network.PacketByteBuf;
-import org.ladysnake.blabber.Blabber;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.packet.CustomPayload;
+import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.IntFunction;
 
 /**
  * Represents a list of dialogue choices which availability has changed
  */
-public record ChoiceAvailabilityPacket(Map<String, Int2BooleanMap> updatedChoices) implements FabricPacket {
-    public static final PacketType<ChoiceAvailabilityPacket> TYPE = PacketType.create(Blabber.id("choice_availability"), ChoiceAvailabilityPacket::new);
+public record ChoiceAvailabilityPayload(Map<String, Int2BooleanMap> updatedChoices) implements CustomPayload {
+    public static final CustomPayload.Id<ChoiceAvailabilityPayload> ID = BlabberRegistrar.payloadId("choice_availability");
+    public static final PacketCodec<ByteBuf, ChoiceAvailabilityPayload> PACKET_CODEC = PacketCodecs.map(
+            (IntFunction<Map<String, Int2BooleanMap>>) HashMap::new,
+            PacketCodecs.STRING,
+            PacketCodecs.map(Int2BooleanOpenHashMap::new, PacketCodecs.VAR_INT, PacketCodecs.BOOL)
+    ).xmap(ChoiceAvailabilityPayload::new, ChoiceAvailabilityPayload::updatedChoices);
 
-    public ChoiceAvailabilityPacket() {
+    public ChoiceAvailabilityPayload() {
         this(new HashMap<>());
     }
 
-    public ChoiceAvailabilityPacket(PacketByteBuf buf) {
-        this(buf.readMap(
-                PacketByteBuf::readString,
-                b -> b.readMap(Int2BooleanOpenHashMap::new, PacketByteBuf::readVarInt, PacketByteBuf::readBoolean)
-        ));
-    }
-
     @Override
-    public void write(PacketByteBuf buf) {
-        buf.writeMap(
-                this.updatedChoices(),
-                PacketByteBuf::writeString,
-                (b, updatedChoices) -> b.writeMap(updatedChoices, PacketByteBuf::writeVarInt, PacketByteBuf::writeBoolean)
-        );
-    }
-
-    @Override
-    public PacketType<?> getType() {
-        return TYPE;
+    public Id<? extends CustomPayload> getId() {
+        return ID;
     }
 
     public void markUpdated(String stateKey, int choiceIndex, boolean newValue) {

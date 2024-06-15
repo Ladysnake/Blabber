@@ -22,16 +22,21 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 import net.minecraft.text.TextCodecs;
 import net.minecraft.text.Texts;
-import net.minecraft.util.dynamic.Codecs;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Locale;
+import java.util.Optional;
 
 public record DialogueState(
         Text text,
@@ -41,25 +46,21 @@ public record DialogueState(
         ChoiceResult type
 ) {
     public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            // Kinda optional, but we still want errors if you got it wrong >:(
-            Codecs.createStrictOptionalFieldCodec(TextCodecs.CODEC, "text", Text.empty()).forGetter(DialogueState::text),
-            Codecs.createStrictOptionalFieldCodec(Codec.list(Codec.STRING), "illustrations", Collections.emptyList()).forGetter(DialogueState::illustrations),
-            Codecs.createStrictOptionalFieldCodec(Codec.list(DialogueChoice.CODEC), "choices", List.of()).forGetter(DialogueState::choices),
-            Codecs.createStrictOptionalFieldCodec(InstancedDialogueAction.CODEC, "action").forGetter(DialogueState::action),
-            Codecs.createStrictOptionalFieldCodec(Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name), "type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
+            TextCodecs.CODEC.optionalFieldOf("text", Text.empty()).forGetter(DialogueState::text),
+            Codec.list(Codec.STRING).optionalFieldOf("illustrations", Collections.emptyList()).forGetter(DialogueState::illustrations),
+            Codec.list(DialogueChoice.CODEC).optionalFieldOf("choices", List.of()).forGetter(DialogueState::choices),
+            InstancedDialogueAction.CODEC.optionalFieldOf("action").forGetter(DialogueState::action),
+            Codec.STRING.xmap(s -> Enum.valueOf(ChoiceResult.class, s.toUpperCase(Locale.ROOT)), Enum::name).optionalFieldOf("type", ChoiceResult.DEFAULT).forGetter(DialogueState::type)
     ).apply(instance, DialogueState::new));
-
-    public static void writeToPacket(PacketByteBuf buf, DialogueState state) {
-        buf.writeText(state.text());
-        buf.writeCollection(state.illustrations(), PacketByteBuf::writeString);
-        buf.writeCollection(state.choices(), DialogueChoice::writeToPacket);
-        buf.writeEnumConstant(state.type());
-        // not writing the action, the client most likely does not need to know about it
-    }
-
-    public DialogueState(PacketByteBuf buf) {
-        this(buf.readText(), buf.readCollection(ArrayList::new, PacketByteBuf::readString), buf.readList(DialogueChoice::new), Optional.empty(), buf.readEnumConstant(ChoiceResult.class));
-    }
+    public static final PacketCodec<PacketByteBuf, DialogueState> PACKET_CODEC = PacketCodec.tuple(
+            TextCodecs.PACKET_CODEC, DialogueState::text,
+            PacketCodecs.collection(ArrayList::new, PacketCodecs.STRING), DialogueState::illustrations,
+            PacketCodecs.collection(ArrayList::new, DialogueChoice.PACKET_CODEC), DialogueState::choices,
+            // not writing the action, the client most likely does not need to know about it
+            PacketCodec.of((value, buf) -> {}, buf -> Optional.empty()), DialogueState::action,
+            ChoiceResult.PACKET_CODEC, DialogueState::type,
+            DialogueState::new
+    );
 
     public String getNextState(int choice) {
         return this.choices.get(choice).next();

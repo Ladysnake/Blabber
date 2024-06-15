@@ -74,7 +74,7 @@ public final class DialogueSubCommand {
         int count = 0;
         for (ServerPlayerEntity player : players) {
             PlayerDialogueTracker.get(player).startDialogue(dialogue, interlocutor);
-            source.sendFeedback(() -> Text.translatable("blabber:commands.dialogue.start.success", dialogue, player.getDisplayName()), true);
+            source.sendFeedback(() -> Text.translatable("blabber:commands.dialogue.start.success", dialogue.toString(), player.getDisplayName()), true);
             count++;
         }
 

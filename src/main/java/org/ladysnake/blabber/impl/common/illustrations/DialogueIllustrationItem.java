@@ -18,35 +18,38 @@
 package org.ladysnake.blabber.impl.common.illustrations;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.util.dynamic.Codecs;
+import net.minecraft.network.RegistryByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
 public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor anchor, int x, int y, float scale,
                                        boolean showTooltip) implements SizedDialogueIllustration {
-    private static final Codec<DialogueIllustrationItem> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+    private static final MapCodec<DialogueIllustrationItem> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
             ItemStack.CODEC.fieldOf("item").forGetter(DialogueIllustrationItem::stack),
-            Codecs.createStrictOptionalFieldCodec(IllustrationAnchor.CODEC, "anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationItem::anchor),
+            IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationItem::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationItem::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationItem::y),
-            Codecs.createStrictOptionalFieldCodec(Codec.FLOAT, "scale", 1f).forGetter(DialogueIllustrationItem::scale),
-            Codecs.createStrictOptionalFieldCodec(Codec.BOOL, "show_tooltip", true).forGetter(DialogueIllustrationItem::showTooltip)
+            Codec.FLOAT.optionalFieldOf("scale", 1f).forGetter(DialogueIllustrationItem::scale),
+            Codec.BOOL.optionalFieldOf("show_tooltip", true).forGetter(DialogueIllustrationItem::showTooltip)
     ).apply(instance, DialogueIllustrationItem::new));
+    public static final PacketCodec<RegistryByteBuf, DialogueIllustrationItem> PACKET_CODEC = PacketCodec.tuple(
+            ItemStack.PACKET_CODEC, DialogueIllustrationItem::stack,
+            IllustrationAnchor.PACKET_CODEC, DialogueIllustrationItem::anchor,
+            PacketCodecs.VAR_INT, DialogueIllustrationItem::x,
+            PacketCodecs.VAR_INT, DialogueIllustrationItem::y,
+            PacketCodecs.FLOAT, DialogueIllustrationItem::scale,
+            PacketCodecs.BOOL, DialogueIllustrationItem::showTooltip,
+            DialogueIllustrationItem::new
+    );
 
     public static final DialogueIllustrationType<DialogueIllustrationItem> TYPE = new DialogueIllustrationType<>(
             CODEC,
-            buf -> new DialogueIllustrationItem(ItemStack.fromNbt(buf.readNbt()), buf.readEnumConstant(IllustrationAnchor.class), buf.readInt(), buf.readInt(), buf.readFloat(), buf.readBoolean()),
-            (buf, item) -> {
-                buf.writeNbt(item.stack().writeNbt(new NbtCompound()));
-                buf.writeEnumConstant(item.anchor());
-                buf.writeInt(item.x());
-                buf.writeInt(item.y());
-                buf.writeFloat(item.scale());
-                buf.writeBoolean(item.showTooltip());
-            }
+            PACKET_CODEC
     );
 
     @Override
