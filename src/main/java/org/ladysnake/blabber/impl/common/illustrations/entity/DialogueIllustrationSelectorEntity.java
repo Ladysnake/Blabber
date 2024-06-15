@@ -42,7 +42,11 @@ import java.util.Optional;
 
 public class DialogueIllustrationSelectorEntity implements DialogueIllustrationEntity {
     public static final MapCodec<DialogueIllustrationSelectorEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec);
-    public static final PacketCodec<PacketByteBuf, DialogueIllustrationSelectorEntity> PACKET_CODEC = Spec.PACKET_CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec);
+    public static final PacketCodec<PacketByteBuf, DialogueIllustrationSelectorEntity> PACKET_CODEC = PacketCodec.tuple(
+            Spec.PACKET_CODEC, DialogueIllustrationSelectorEntity::spec,
+            PacketCodecs.VAR_INT, i -> i.selectedEntityId,
+            DialogueIllustrationSelectorEntity::new
+    );
 
     public static final DialogueIllustrationType<DialogueIllustrationSelectorEntity> TYPE = new DialogueIllustrationType<>(
             CODEC,

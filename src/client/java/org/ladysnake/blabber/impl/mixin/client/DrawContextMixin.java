@@ -38,10 +38,10 @@ public abstract class DrawContextMixin implements ItemIllustrationRenderer.DrawC
     @ModifyExpressionValue(
             method = "drawItem(Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/world/World;Lnet/minecraft/item/ItemStack;IIII)V",
             slice = @Slice(
-                    from = @At(value = "INVOKE", target = "Lnet/minecraft/client/util/math/MatrixStack;multiplyPositionMatrix(Lorg/joml/Matrix4f;)V"),
+                    from = @At(value = "INVOKE", target = "Lnet/minecraft/client/util/math/MatrixStack;translate(FFF)V"),
                     to = @At(value = "INVOKE", target = "Lnet/minecraft/client/util/math/MatrixStack;scale(FFF)V")
             ),
-            at = @At(value = "CONSTANT", args = "floatValue=16.0")
+            at = {@At(value = "CONSTANT", args = "floatValue=16.0"), @At(value = "CONSTANT", args = "floatValue=-16.0")}
     )
     private float scaleItem(float original) {
         return original * blabber$itemScale;

@@ -6,7 +6,7 @@ fpa = "0.2-SNAPSHOT"
 mcAnnotations = "1.0"
 modmenu = "10.0.0-beta.1"
 rei = "14.0.688"
-jei = "xGApC30U" # 17.3.0.52
+jei = "GE5LkM6l" # 18.0.0.62
 
 [libraries]
 cca-base = { module = "org.ladysnake.cardinal-components-api:cardinal-components-base", version.ref = "cca" }
