@@ -128,6 +128,7 @@ remapJar {
 
 tasks.register("standaloneJar", Jar) {
 	from sourceSets.main.output
+	from sourceSets.client.output
 	archiveClassifier.set('standalone-dev')
 	dependsOn project.classes
 }
