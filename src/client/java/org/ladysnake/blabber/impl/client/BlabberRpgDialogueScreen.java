@@ -27,6 +27,7 @@ import net.minecraft.util.math.ColorHelper;
 import org.joml.Matrix4f;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.api.layout.DefaultLayoutParams;
+import org.ladysnake.blabber.api.layout.Margins;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
@@ -48,12 +49,17 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
     @Override
     protected void computeMargins() {
         super.computeMargins();
+        Margins mainTextMargins = this.params().getMainTextMargins();
         this.choiceListMaxWidth = 150;
-        this.mainTextMaxWidth = Math.min(400, this.width);
+        this.mainTextMaxWidth = Math.min(400, this.width) - mainTextMargins.left() - mainTextMargins.right();
         this.instructionsMinY = this.height - INSTRUCTIONS_BOTTOM_MARGIN - this.textRenderer.getWrappedLinesHeight(instructions, this.width - 5);
-        this.mainTextMinY = this.height - 60;
-        this.mainTextMinX = (this.width / 2) - (Math.min(textRenderer.getWidth(handler.getCurrentText()), mainTextMaxWidth) / 2);
-        this.choiceListMaxY = mainTextMinY - 25;
+        this.mainTextMinY = this.height - 60 - mainTextMargins.bottom();
+        this.mainTextMinX = Math.max(mainTextMargins.left(), (this.width / 2) - (Math.min(textRenderer.getWidth(handler.getCurrentText()), mainTextMaxWidth) / 2));
+        this.illustrationSlots.get(IllustrationAnchor.BEFORE_MAIN_TEXT).set(
+                Math.max(mainTextMargins.left(), (this.width / 2) - (mainTextMaxWidth / 2)),
+                this.height - 60
+        );
+        this.choiceListMaxY = mainTextMinY - 25 - mainTextMargins.top();
         this.choiceListMinY = choiceListMaxY;
         for (AvailableChoice choice : handler.getAvailableChoices()) {
             this.choiceListMinY -= textRenderer.getWrappedLinesHeight(choice.text(), choiceListMaxWidth) + choiceGap;
@@ -64,12 +70,12 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
 
     @Override
     protected void layoutIllustrationAnchors() {
-        super.layoutIllustrationAnchors();
-        this.illustrationSlots.get(IllustrationAnchor.SLOT_1).set(
+        // No super call, we redefine every illustration slot either here or in the previous method
+        this.illustrationSlots.get(IllustrationAnchor.SPOT_1).set(
                 this.width / 4,
                 this.mainTextMinY - TEXT_TOP_MARGIN
         );
-        this.illustrationSlots.get(IllustrationAnchor.SLOT_2).set(
+        this.illustrationSlots.get(IllustrationAnchor.SPOT_2).set(
                 (this.choiceListMinX + this.width) / 2,
                 this.choiceListMinY * 3/4
         );

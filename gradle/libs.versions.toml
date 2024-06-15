@@ -6,6 +6,7 @@ fpa = "0.2-SNAPSHOT"
 mcAnnotations = "1.0"
 modmenu = "7.2.2"
 rei = "12.0.684"
+jei = "xGApC30U" # 17.3.0.52
 
 [libraries]
 cca-base = { module = "dev.onyxstudios.cardinal-components-api:cardinal-components-base", version.ref = "cca" }
@@ -16,3 +17,5 @@ mcAnnotations = { module = "com.demonwav.mcdev:annotations", version.ref = "mcAn
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu"}
 permissionsApi = { module = "me.lucko:fabric-permissions-api", version.ref = "fpa" }
 rei-api = { module = "me.shedaniel:RoughlyEnoughItems-api-fabric", version.ref = "rei" }
+# We cannot use the nice API jar because it is not getting remapped correctly
+jei = { module = "maven.modrinth:jei", version.ref = "jei" }

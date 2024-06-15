@@ -12,13 +12,24 @@ Version 1.6.0-mc1.20.1
 - Added the `scale` property for item illustrations (defaults to `1.0`)
   - Limitation: durability bars and stack count indicators do not render when a custom scale is set
 - API: Added an experimental API for custom parameterized dialogue layouts
+- Added customization options for dialogue layouts
+  - Currently, the only configuration available is `main_text_margins` on the RPG layout
+- Added Mexican Spanish localization (thanks TheLegendofSaram !)
 
 **Changes**
+- The format of entity illustrations has changed
+  - They now use `x`/`y`/`width`/`height` properties instead of `x1`/`y1`/`x2`/`y2` to bring them in line with other illustrations
+  - `size` has been renamed to `entity_size`
+  - `stare_at_x`/`stare_at_y` properties have been moved to a `stare_at` object, which can optionally take an `anchor`
+  - Illustrations in the old format should keep working, but only the new format will be actively supported going forward
 - Illustration deserialization error messages have been improved slightly
 - Blabber will now log a warning with some additional details when it detects that a player gets stuck without available choices
 - API: `DialogueIllustration#parseText` can now throw `CommandSyntaxException`
 - API: the mod is now compatible with split sourceset environments
   - The experimental illustration API has been consequently reworked
+
+**Mod Interactions**
+- JEI no longer appears on the dialogue screen
 
 ------------------------------------------------------
 Version 1.5.1-mc1.20.1

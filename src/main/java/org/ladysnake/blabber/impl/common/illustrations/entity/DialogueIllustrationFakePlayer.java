@@ -125,7 +125,7 @@ public record DialogueIllustrationFakePlayer(GameProfile profile,
             ret.addAll(l);
             return ret;
         }, List::copyOf);
-        public static final EnumSet<PlayerModelPart> NO_VISIBLE_PARTS = EnumSet.allOf(PlayerModelPart.class);
+        public static final EnumSet<PlayerModelPart> DEFAULT_VISIBLE_PARTS = EnumSet.allOf(PlayerModelPart.class);
 
         public static final Codec<PlayerModelOptions> CODEC = RecordCodecBuilder.create(instance -> instance.group(
                 FailingOptionalFieldCodec.of(Codec.STRING.xmap(s -> switch (s) {
@@ -137,7 +137,7 @@ public record DialogueIllustrationFakePlayer(GameProfile profile,
                     case RIGHT -> "right";
                     default -> throw new IllegalStateException("Unexpected third arm " + arm);
                 }), "main_hand", Arm.RIGHT).forGetter(PlayerModelOptions::mainHand),
-                FailingOptionalFieldCodec.of(PLAYER_MODEL_PARTS_CODEC, "visible_parts", NO_VISIBLE_PARTS).forGetter(PlayerModelOptions::visibleParts)
+                FailingOptionalFieldCodec.of(PLAYER_MODEL_PARTS_CODEC, "visible_parts", DEFAULT_VISIBLE_PARTS).forGetter(PlayerModelOptions::visibleParts)
         ).apply(instance, PlayerModelOptions::new));
 
         public PlayerModelOptions(PacketByteBuf buf) {

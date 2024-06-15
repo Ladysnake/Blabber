@@ -41,11 +41,11 @@ public enum IllustrationAnchor implements StringIdentifiable {
      */
     CENTER("center"),
     /**
-     * Right before the main text starts
+     * Right before the main text area starts
      */
-    TEXT_START("text_start"),
-    SLOT_1("slot_1"),
-    SLOT_2("slot_2");
+    BEFORE_MAIN_TEXT("before_main_text"),
+    SPOT_1("spot_1"),
+    SPOT_2("spot_2");
 
     public static final com.mojang.serialization.Codec<IllustrationAnchor> CODEC = StringIdentifiable.createCodec(IllustrationAnchor::values);
 
