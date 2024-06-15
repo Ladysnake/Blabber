@@ -6,7 +6,7 @@ fpa = "0.2-SNAPSHOT"
 mcAnnotations = "1.0"
 modmenu = "7.2.2"
 rei = "12.0.684"
-jei = "xGApC30U" # 17.3.0.52
+jei = "YJUbK8W6" # 15.3.0.6
 
 [libraries]
 cca-base = { module = "dev.onyxstudios.cardinal-components-api:cardinal-components-base", version.ref = "cca" }

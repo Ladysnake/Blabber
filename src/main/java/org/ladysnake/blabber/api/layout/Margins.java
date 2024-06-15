@@ -20,14 +20,14 @@ package org.ladysnake.blabber.api.layout;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.network.PacketByteBuf;
-import net.minecraft.util.dynamic.Codecs;
+import org.ladysnake.blabber.impl.common.serialization.FailingOptionalFieldCodec;
 
 public record Margins(int top, int right, int bottom, int left) {
     public static final Codec<Margins> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "top", 0).forGetter(Margins::top),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "right", 0).forGetter(Margins::right),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "bottom", 0).forGetter(Margins::bottom),
-            Codecs.createStrictOptionalFieldCodec(Codec.INT, "left", 0).forGetter(Margins::left)
+            FailingOptionalFieldCodec.of(Codec.INT, "top", 0).forGetter(Margins::top),
+            FailingOptionalFieldCodec.of(Codec.INT, "right", 0).forGetter(Margins::right),
+            FailingOptionalFieldCodec.of(Codec.INT, "bottom", 0).forGetter(Margins::bottom),
+            FailingOptionalFieldCodec.of(Codec.INT, "left", 0).forGetter(Margins::left)
     ).apply(instance, Margins::new));
     public static final Margins NONE = new Margins(0, 0, 0, 0);
 

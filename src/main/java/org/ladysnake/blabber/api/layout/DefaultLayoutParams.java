@@ -20,8 +20,8 @@ package org.ladysnake.blabber.api.layout;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.network.PacketByteBuf;
-import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.ApiStatus;
+import org.ladysnake.blabber.impl.common.serialization.FailingOptionalFieldCodec;
 
 import java.util.Optional;
 
@@ -29,7 +29,7 @@ import java.util.Optional;
 public record DefaultLayoutParams(Optional<Margins> mainTextMargins) implements DialogueLayout.Params {
     public static final DefaultLayoutParams DEFAULT = new DefaultLayoutParams(Optional.empty());
     public static final Codec<DefaultLayoutParams> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codecs.createStrictOptionalFieldCodec(Margins.CODEC, "main_text_margins").forGetter(DefaultLayoutParams::mainTextMargins)
+            FailingOptionalFieldCodec.of(Margins.CODEC, "main_text_margins").forGetter(DefaultLayoutParams::mainTextMargins)
     ).apply(instance, DefaultLayoutParams::new));
 
     public DefaultLayoutParams(PacketByteBuf buf) {

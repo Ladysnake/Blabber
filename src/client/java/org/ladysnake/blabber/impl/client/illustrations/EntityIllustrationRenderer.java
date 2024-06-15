@@ -28,6 +28,7 @@ import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import org.joml.Matrix4f;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
 import org.ladysnake.blabber.api.client.illustration.DialogueIllustrationRenderer;
@@ -79,8 +80,8 @@ public abstract class EntityIllustrationRenderer<I extends DialogueIllustrationE
         float g = (float)(x1 + x2) / 2.0F;
         float h = (float)(y1 + y2) / 2.0F;
         context.enableScissor(x1, y1, x2, y2);
-        float i = (float)Math.atan((double)((g - mouseX) / 40.0F));
-        float j = (float)Math.atan((double)((h - mouseY) / 40.0F));
+        float i = (float)Math.atan((g - mouseX) / 40.0F);
+        float j = (float)Math.atan((h - mouseY) / 40.0F);
         Quaternionf quaternionf = (new Quaternionf()).rotateZ(3.1415927F);
         Quaternionf quaternionf2 = (new Quaternionf()).rotateX(j * 20.0F * 0.017453292F);
         quaternionf.mul(quaternionf2);
@@ -108,8 +109,8 @@ public abstract class EntityIllustrationRenderer<I extends DialogueIllustrationE
 
     public static void drawEntity(DrawContext context, float x, float y, float size, Vector3f vector3f, Quaternionf quaternionf, @Nullable Quaternionf quaternionf2, LivingEntity entity) {
         context.getMatrices().push();
-        context.getMatrices().translate((double)x, (double)y, 50.0);
-        context.getMatrices().scale(size, size, -size);
+        context.getMatrices().translate(x, y, 50.0);
+        context.getMatrices().multiplyPositionMatrix((new Matrix4f()).scaling(size, size, -size));
         context.getMatrices().translate(vector3f.x, vector3f.y, vector3f.z);
         context.getMatrices().multiply(quaternionf);
         DiffuseLighting.method_34742();
