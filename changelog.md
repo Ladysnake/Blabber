@@ -1,4 +1,11 @@
 ------------------------------------------------------
+Version 1.6.1-mc1.20.1
+------------------------------------------------------
+**Fixes**
+- Fixed `blabber dialogue start` not working when used as a command action on a dialogue end state
+- Fixed JEI still appearing on dialogue screens with RPG layout
+
+------------------------------------------------------
 Version 1.6.0-mc1.20.1
 ------------------------------------------------------
 *Barring serious bugs, this is the last backport for MC 1.20.1.*

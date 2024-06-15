@@ -113,7 +113,8 @@ public class DialogueScreenHandler extends ScreenHandler {
     public boolean makeChoice(ServerPlayerEntity player, int choice) {
         try {  // Can't throw here, could cause trouble with a bad packet
             ChoiceResult result = this.dialogue.choose(choice, action -> action.handle(player, this.interlocutor));
-            if (result == ChoiceResult.END_DIALOGUE) {
+            // The action itself can close the dialogue or switch to a different one, so we need to check this one is still open
+            if (result == ChoiceResult.END_DIALOGUE && player.currentScreenHandler == this) {
                 PlayerDialogueTracker.get(player).endDialogue();
             }
 
