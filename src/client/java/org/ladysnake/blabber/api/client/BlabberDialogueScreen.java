@@ -368,7 +368,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     public ChoiceResult makeChoice(int choice) {
         int originalChoiceIndex = this.handler.getAvailableChoices().get(choice).originalChoiceIndex();
         ChoiceResult result = this.handler.makeChoice(originalChoiceIndex);
-        ClientPlayNetworking.send(new ChoiceSelectionPayload((byte) choice));
+        ClientPlayNetworking.send(new ChoiceSelectionPayload((byte) originalChoiceIndex));
         return result;
     }
 }
