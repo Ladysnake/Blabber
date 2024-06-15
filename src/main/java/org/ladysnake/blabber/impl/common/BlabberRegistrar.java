@@ -119,7 +119,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     }
 
     public static <T extends CustomPayload> CustomPayload.Id<T> payloadId(String name) {
-        return CustomPayload.id(Blabber.MOD_ID + ":" + name);
+        return new CustomPayload.Id<>(Blabber.id(name));
     }
 
     @Override

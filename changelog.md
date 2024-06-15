@@ -1,7 +1,7 @@
 ------------------------------------------------------
-Version 1.7.0-mc1.20.6
+Version 1.7.0
 ------------------------------------------------------
-Updated to MC 1.20.6
+Updated to MC 1.21
 
 **Mod Interactions**
 - JEI no longer appears on the dialogue screen with the RPG layout

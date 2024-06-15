@@ -80,7 +80,7 @@ dependencies {
 	modLocalImplementation(libs.rei.api)
 	compileOnly(sourceSets.reiDummy.output)
     modCompileOnly(libs.emi)
-	modLocalImplementation(libs.jei)
+	modCompileOnly(libs.jei)
 
 	compileOnly(libs.mcAnnotations)
 

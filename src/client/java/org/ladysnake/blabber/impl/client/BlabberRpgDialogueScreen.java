@@ -98,6 +98,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
             if (i == selectedChoice) this.selectionIconMarginTop = ((strHeight - 9) / 2) - 4;
             y += strHeight + choiceGap;
         }
+        context.draw();
         // Bottom background
         context.fillGradient(0, this.mainTextMinY - 20, this.width, this.mainTextMinY - TEXT_TOP_MARGIN, 0x00101010, 0xc0101010);
         context.fillGradient(0, this.mainTextMinY - TEXT_TOP_MARGIN, this.width, this.height, 0xc0101010, 0xd0101010);
@@ -116,19 +117,19 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
         float g1 = (float) ColorHelper.Argb.getGreen(colorEnd) / 255.0F;
         float b1 = (float) ColorHelper.Argb.getBlue(colorEnd) / 255.0F;
         Matrix4f matrix4f = context.getMatrices().peek().getPositionMatrix();
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY - verticalPadding, (float)z).color(r1, g1, b1, a1).next();
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(r0, g0, b0, a0).next();
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(r1, g1, b1, a1).next();
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY - verticalPadding, (float)z).color(r1, g1, b1, a1).next();
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY - verticalPadding, (float)z).color(r1, g1, b1, a1);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(r0, g0, b0, a0);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(r1, g1, b1, a1);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY - verticalPadding, (float)z).color(r1, g1, b1, a1);
 
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(r0, g0, b0, a0).next();
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(r0, g0, b0, a0).next();
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(r1, g1, b1, a1).next();
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(r1, g1, b1, a1).next();
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(r0, g0, b0, a0);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(r0, g0, b0, a0);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(r1, g1, b1, a1);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(r1, g1, b1, a1);
 
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(r0, g0, b0, a0).next();
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY + verticalPadding, (float)z).color(r1, g1, b1, a1).next();
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY + verticalPadding, (float)z).color(r1, g1, b1, a1).next();
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(r1, g1, b1, a1).next();
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(r0, g0, b0, a0);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY + verticalPadding, (float)z).color(r1, g1, b1, a1);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY + verticalPadding, (float)z).color(r1, g1, b1, a1);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(r1, g1, b1, a1);
     }
 }

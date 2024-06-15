@@ -69,7 +69,7 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
             manager.findResources(BLABBER_DIALOGUES_PATH, (res) -> res.getPath().endsWith(".json")).forEach((location, resource) -> {
                 try (Reader in = new InputStreamReader(resource.getInputStream())) {
                     JsonObject jsonObject = GSON.fromJson(in, JsonObject.class);
-                    Identifier id = new Identifier(location.getNamespace(), location.getPath().substring(BLABBER_DIALOGUES_PATH.length() + 1, location.getPath().length() - 5));
+                    Identifier id = Identifier.of(location.getNamespace(), location.getPath().substring(BLABBER_DIALOGUES_PATH.length() + 1, location.getPath().length() - 5));
                     DialogueTemplate dialogue = DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, jsonObject).getOrThrow(message -> {
                         Blabber.LOGGER.error("(Blabber) Could not parse dialogue file from {}: {}", location, message);
                         return new RuntimeException(message);
