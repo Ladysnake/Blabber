@@ -23,6 +23,9 @@ Version 1.6.0
 - Blabber will now log a warning with some additional details when it detects that a player gets stuck without available choices
 - API change: `DialogueIllustration#parseText` can now throw `CommandSyntaxException`
 
+**Mod Interactions**
+- JEI no longer appears on the dialogue screen
+
 ------------------------------------------------------
 Version 1.5.1
 ------------------------------------------------------

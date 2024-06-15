@@ -75,7 +75,8 @@ dependencies {
 	modIncludeImplementation(libs.permissionsApi)
 	modLocalImplementation(libs.rei.api)
 	compileOnly(sourceSets.reiDummy.output)
-    modLocalImplementation(libs.emi)
+    modCompileOnly(libs.emi)
+	modLocalImplementation(libs.jei)
 
 	compileOnly(libs.mcAnnotations)
 
