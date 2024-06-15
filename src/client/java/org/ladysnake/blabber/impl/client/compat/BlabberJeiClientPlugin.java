@@ -23,6 +23,7 @@ import mezz.jei.api.registration.IGuiHandlerRegistration;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
+import org.ladysnake.blabber.impl.client.BlabberRpgDialogueScreen;
 
 @JeiPlugin
 public class BlabberJeiClientPlugin implements IModPlugin {
@@ -34,5 +35,6 @@ public class BlabberJeiClientPlugin implements IModPlugin {
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
         registration.addGuiScreenHandler(BlabberDialogueScreen.class, s -> null);
+        registration.addGuiScreenHandler(BlabberRpgDialogueScreen.class, s -> null);
     }
 }
