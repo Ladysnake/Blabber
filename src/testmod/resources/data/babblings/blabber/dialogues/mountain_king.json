@@ -93,7 +93,7 @@
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
-        "value": "blabber dialogue start babblings:perception_check"
+        "value": "blabber dialogue start babblings:illustration_tests @s @interlocutor"
       }
     }
   },

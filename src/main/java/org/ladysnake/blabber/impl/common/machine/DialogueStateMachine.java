@@ -216,8 +216,11 @@ public final class DialogueStateMachine {
     }
 
     private ImmutableList<AvailableChoice> rebuildAvailableChoices() {
+        DialogueState currentState = this.getCurrentState();
+        if (!currentState.type().hasChoices()) return ImmutableList.of();
+
         ImmutableList.Builder<AvailableChoice> newChoices = ImmutableList.builder();
-        List<DialogueChoice> availableChoices = this.getCurrentState().choices();
+        List<DialogueChoice> availableChoices = currentState.choices();
         boolean allUnavailable = true;
         for (int i = 0; i < availableChoices.size(); i++) {
             DialogueChoice c = availableChoices.get(i);
