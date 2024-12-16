@@ -18,8 +18,8 @@
 package org.ladysnake.blabber.impl.client.illustrations;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
@@ -46,7 +46,7 @@ public abstract class EntityIllustrationRenderer<I extends DialogueIllustrationE
     protected abstract @Nullable LivingEntity getRenderedEntity(World world);
 
     @Override
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         LivingEntity e = this.renderedEntity == null
                 ? this.renderedEntity = this.getRenderedEntity(MinecraftClient.getInstance().world)
