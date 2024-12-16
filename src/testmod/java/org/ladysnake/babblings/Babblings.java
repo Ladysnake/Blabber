@@ -17,9 +17,11 @@
  */
 package org.ladysnake.babblings;
 
-import net.fabricmc.api.ModInitializer;
+import net.minecraftforge.fml.common.Mod;
 
-public final class Babblings implements ModInitializer {
-    @Override
-    public void onInitialize() {}
+@Mod("babblings")
+public final class Babblings {
+    public Babblings() {
+        // Initialization code here
+    }
 }
