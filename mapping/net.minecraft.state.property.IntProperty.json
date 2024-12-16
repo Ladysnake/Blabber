@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.IntegerProperty",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.IntegerProperty",
+			"fabric": "net.minecraft.state.property.IntProperty"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "min",
+			"fabric": "min"
+		},
+		{
+			"forge": "max",
+			"fabric": "max"
+		},
+		{
+			"forge": "getPossibleValues()",
+			"fabric": "getValues()"
+		},
+		{
+			"forge": "getPossibleValues()",
+			"fabric": "getValues()"
+		},
+		{
+			"forge": "generateHashCode()",
+			"fabric": "computeHashCode()"
+		},
+		{
+			"forge": "create(String arg0, int arg1, int arg2)",
+			"fabric": "of(String name, int min, int max)"
+		},
+		{
+			"forge": "getValue(String arg0)",
+			"fabric": "parse(String arg0)"
+		},
+		{
+			"forge": "getName(Integer arg0)",
+			"fabric": "name(Integer arg0)"
+		}
+	]
+}

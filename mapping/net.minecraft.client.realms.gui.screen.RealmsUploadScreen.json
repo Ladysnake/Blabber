@@ -1,0 +1,197 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsUploadScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsUploadScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsUploadScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "UPLOAD_LOCK",
+			"fabric": "UPLOAD_LOCK"
+		},
+		{
+			"forge": "BAR_WIDTH",
+			"fabric": "field_41776"
+		},
+		{
+			"forge": "BAR_TOP",
+			"fabric": "field_41773"
+		},
+		{
+			"forge": "BAR_BOTTOM",
+			"fabric": "field_41774"
+		},
+		{
+			"forge": "BAR_BORDER",
+			"fabric": "field_41775"
+		},
+		{
+			"forge": "DOTS",
+			"fabric": "DOTS"
+		},
+		{
+			"forge": "VERIFYING_TEXT",
+			"fabric": "VERIFYING_TEXT"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "selectedLevel",
+			"fabric": "selectedLevel"
+		},
+		{
+			"forge": "worldId",
+			"fabric": "worldId"
+		},
+		{
+			"forge": "slotId",
+			"fabric": "slotId"
+		},
+		{
+			"forge": "uploadStatus",
+			"fabric": "uploadStatus"
+		},
+		{
+			"forge": "narrationRateLimiter",
+			"fabric": "narrationRateLimiter"
+		},
+		{
+			"forge": "errorMessage",
+			"fabric": "statusTexts"
+		},
+		{
+			"forge": "status",
+			"fabric": "status"
+		},
+		{
+			"forge": "progress",
+			"fabric": "progress"
+		},
+		{
+			"forge": "cancelled",
+			"fabric": "cancelled"
+		},
+		{
+			"forge": "uploadFinished",
+			"fabric": "uploadFinished"
+		},
+		{
+			"forge": "showDots",
+			"fabric": "showDots"
+		},
+		{
+			"forge": "uploadStarted",
+			"fabric": "uploadStarted"
+		},
+		{
+			"forge": "backButton",
+			"fabric": "backButton"
+		},
+		{
+			"forge": "cancelButton",
+			"fabric": "cancelButton"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "animTick"
+		},
+		{
+			"forge": "previousWrittenBytes",
+			"fabric": "previousWrittenBytes"
+		},
+		{
+			"forge": "previousTimeSnapshot",
+			"fabric": "previousTimeSnapshot"
+		},
+		{
+			"forge": "bytesPersSecond",
+			"fabric": "bytesPerSecond"
+		},
+		{
+			"forge": "callback",
+			"fabric": "onBack"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "onBack()",
+			"fabric": "onBack()"
+		},
+		{
+			"forge": "onCancel()",
+			"fabric": "onCancel()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "drawDots(GuiGraphics arg0)",
+			"fabric": "drawDots(DrawContext context)"
+		},
+		{
+			"forge": "drawProgressBar(GuiGraphics arg0)",
+			"fabric": "drawProgressBar(DrawContext context)"
+		},
+		{
+			"forge": "drawUploadSpeed(GuiGraphics arg0)",
+			"fabric": "drawUploadSpeed(DrawContext context)"
+		},
+		{
+			"forge": "drawUploadSpeed0(GuiGraphics arg0, long arg1)",
+			"fabric": "drawUploadSpeed0(DrawContext context, long bytesPerSecond)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "createProgressNarrationMessage()",
+			"fabric": "getNarration()"
+		},
+		{
+			"forge": "upload()",
+			"fabric": "upload()"
+		},
+		{
+			"forge": "setErrorMessage(Component... arg0)",
+			"fabric": "setStatusTexts(Text... statusTexts)"
+		},
+		{
+			"forge": "uploadCancelled()",
+			"fabric": "uploadCancelled()"
+		},
+		{
+			"forge": "verify(File arg0)",
+			"fabric": "verify(File archive)"
+		},
+		{
+			"forge": "tarGzipArchive(File arg0)",
+			"fabric": "tarGzipArchive(File pathToDirectoryFile)"
+		},
+		{
+			"forge": "addFileToTarGz(org.apache.commons.compress.archivers.tar.TarArchiveOutputStream arg0, String arg1, String arg2, boolean arg3)",
+			"fabric": "addFileToTarGz(org.apache.commons.compress.archivers.tar.TarArchiveOutputStream tOut, String path, String base, boolean root)"
+		}
+	]
+}

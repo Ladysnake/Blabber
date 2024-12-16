@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.attributes.AttributeSupplier$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.attributes.AttributeSupplier$Builder",
+			"fabric": "net.minecraft.entity.attribute.DefaultAttributeContainer$Builder"
+		},
+		{
+			"forge": "builder",
+			"fabric": "instances"
+		},
+		{
+			"forge": "builder",
+			"fabric": "instances"
+		},
+		{
+			"forge": "instanceFrozen",
+			"fabric": "unmodifiable"
+		},
+		{
+			"forge": "create(Attribute arg0)",
+			"fabric": "checkedAdd(EntityAttribute attribute)"
+		},
+		{
+			"forge": "create(Attribute arg0)",
+			"fabric": "checkedAdd(EntityAttribute attribute)"
+		},
+		{
+			"forge": "add(Attribute arg0)",
+			"fabric": "add(EntityAttribute attribute)"
+		},
+		{
+			"forge": "add(Attribute arg0, double arg1)",
+			"fabric": "add(EntityAttribute attribute, double baseValue)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

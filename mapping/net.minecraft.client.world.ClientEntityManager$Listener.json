@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.entity.TransientEntitySectionManager$Callback",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.entity.TransientEntitySectionManager$Callback",
+			"fabric": "net.minecraft.client.world.ClientEntityManager$Listener"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "currentSectionKey",
+			"fabric": "lastSectionPos"
+		},
+		{
+			"forge": "currentSection",
+			"fabric": "section"
+		},
+		{
+			"forge": "onMove()",
+			"fabric": "updateEntityPosition()"
+		},
+		{
+			"forge": "onMove()",
+			"fabric": "updateEntityPosition()"
+		},
+		{
+			"forge": "onRemove(Entity$RemovalReason arg0)",
+			"fabric": "remove(Entity$RemovalReason arg0)"
+		}
+	]
+}

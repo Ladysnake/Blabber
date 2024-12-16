@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.raid.Raider$ObtainRaidLeaderBannerGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.raid.Raider$ObtainRaidLeaderBannerGoal",
+			"fabric": "net.minecraft.entity.raid.RaiderEntity$PickupBannerAsLeaderGoal"
+		},
+		{
+			"forge": "mob",
+			"fabric": "actor"
+		},
+		{
+			"forge": "mob",
+			"fabric": "actor"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.AllOfCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.AllOfCondition",
+			"fabric": "net.minecraft.loot.condition.AllOfLootCondition"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "allOf(LootItemCondition$Builder... arg0)",
+			"fabric": "builder(LootCondition$Builder... terms)"
+		}
+	]
+}

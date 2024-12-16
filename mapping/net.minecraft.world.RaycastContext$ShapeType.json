@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.ClipContext$Block",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.ClipContext$Block",
+			"fabric": "net.minecraft.world.RaycastContext$ShapeType"
+		},
+		{
+			"forge": "COLLIDER",
+			"fabric": "COLLIDER"
+		},
+		{
+			"forge": "COLLIDER",
+			"fabric": "COLLIDER"
+		},
+		{
+			"forge": "OUTLINE",
+			"fabric": "OUTLINE"
+		},
+		{
+			"forge": "VISUAL",
+			"fabric": "VISUAL"
+		},
+		{
+			"forge": "FALLDAMAGE_RESETTING",
+			"fabric": "FALLDAMAGE_RESETTING"
+		},
+		{
+			"forge": "shapeGetter",
+			"fabric": "provider"
+		},
+		{
+			"forge": "shapeGetter",
+			"fabric": "provider"
+		},
+		{
+			"forge": "get(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "get(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "get(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "get(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		}
+	]
+}

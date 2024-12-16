@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.commands.synchronization.SingletonArgumentInfo$Template",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.synchronization.SingletonArgumentInfo$Template",
+			"fabric": "net.minecraft.command.argument.serialize.ConstantArgumentSerializer$Properties"
+		},
+		{
+			"forge": "constructor",
+			"fabric": "typeSupplier"
+		},
+		{
+			"forge": "constructor",
+			"fabric": "typeSupplier"
+		},
+		{
+			"forge": "instantiate(CommandBuildContext arg0)",
+			"fabric": "createType(CommandRegistryAccess arg0)"
+		},
+		{
+			"forge": "instantiate(CommandBuildContext arg0)",
+			"fabric": "createType(CommandRegistryAccess arg0)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getSerializer()"
+		}
+	]
+}

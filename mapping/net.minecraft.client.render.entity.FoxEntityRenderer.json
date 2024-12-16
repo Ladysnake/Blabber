@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.entity.FoxRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.FoxRenderer",
+			"fabric": "net.minecraft.client.render.entity.FoxEntityRenderer"
+		},
+		{
+			"forge": "RED_FOX_TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "RED_FOX_TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "RED_FOX_SLEEP_TEXTURE",
+			"fabric": "SLEEPING_TEXTURE"
+		},
+		{
+			"forge": "SNOW_FOX_TEXTURE",
+			"fabric": "SNOW_TEXTURE"
+		},
+		{
+			"forge": "SNOW_FOX_SLEEP_TEXTURE",
+			"fabric": "SLEEPING_SNOW_TEXTURE"
+		},
+		{
+			"forge": "setupRotations(Fox arg0, PoseStack arg1, float arg2, float arg3, float arg4)",
+			"fabric": "setupTransforms(FoxEntity arg0, MatrixStack arg1, float arg2, float arg3, float arg4)"
+		},
+		{
+			"forge": "setupRotations(Fox arg0, PoseStack arg1, float arg2, float arg3, float arg4)",
+			"fabric": "setupTransforms(FoxEntity arg0, MatrixStack arg1, float arg2, float arg3, float arg4)"
+		},
+		{
+			"forge": "getTextureLocation(Fox arg0)",
+			"fabric": "getTexture(FoxEntity arg0)"
+		}
+	]
+}

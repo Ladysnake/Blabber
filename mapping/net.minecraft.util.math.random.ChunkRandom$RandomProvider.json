@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.WorldgenRandom$Algorithm",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.WorldgenRandom$Algorithm",
+			"fabric": "net.minecraft.util.math.random.ChunkRandom$RandomProvider"
+		},
+		{
+			"forge": "LEGACY",
+			"fabric": "LEGACY"
+		},
+		{
+			"forge": "LEGACY",
+			"fabric": "LEGACY"
+		},
+		{
+			"forge": "XOROSHIRO",
+			"fabric": "XOROSHIRO"
+		},
+		{
+			"forge": "constructor",
+			"fabric": "provider"
+		},
+		{
+			"forge": "constructor",
+			"fabric": "provider"
+		},
+		{
+			"forge": "newInstance(long arg0)",
+			"fabric": "create(long seed)"
+		},
+		{
+			"forge": "newInstance(long arg0)",
+			"fabric": "create(long seed)"
+		}
+	]
+}

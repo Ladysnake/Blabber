@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.AppendLoot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.AppendLoot",
+			"fabric": "net.minecraft.structure.rule.blockentity.AppendLootRuleBlockEntityModifier"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "lootTable",
+			"fabric": "lootTable"
+		},
+		{
+			"forge": "apply(RandomSource arg0, CompoundTag arg1)",
+			"fabric": "modifyBlockEntityNbt(Random arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "apply(RandomSource arg0, CompoundTag arg1)",
+			"fabric": "modifyBlockEntityNbt(Random arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "com.mojang.realmsclient.dto.WorldTemplate",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.WorldTemplate",
+			"fabric": "net.minecraft.client.realms.dto.WorldTemplate"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "version",
+			"fabric": "version"
+		},
+		{
+			"forge": "author",
+			"fabric": "author"
+		},
+		{
+			"forge": "link",
+			"fabric": "link"
+		},
+		{
+			"forge": "image",
+			"fabric": "image"
+		},
+		{
+			"forge": "trailer",
+			"fabric": "trailer"
+		},
+		{
+			"forge": "recommendedPlayers",
+			"fabric": "recommendedPlayers"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "parse(com.google.gson.JsonObject arg0)",
+			"fabric": "parse(com.google.gson.JsonObject node)"
+		},
+		{
+			"forge": "parse(com.google.gson.JsonObject arg0)",
+			"fabric": "parse(com.google.gson.JsonObject node)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$GameTab",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$GameTab",
+			"fabric": "net.minecraft.client.gui.screen.world.CreateWorldScreen$GameTab"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "GAME_TAB_TITLE_TEXT"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "GAME_TAB_TITLE_TEXT"
+		},
+		{
+			"forge": "ALLOW_CHEATS",
+			"fabric": "ALLOW_COMMANDS_TEXT"
+		},
+		{
+			"forge": "nameEdit",
+			"fabric": "worldNameField"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

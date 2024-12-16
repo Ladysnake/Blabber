@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.StrollThroughVillageGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.StrollThroughVillageGoal",
+			"fabric": "net.minecraft.entity.ai.goal.GoToVillageGoal"
+		},
+		{
+			"forge": "DISTANCE_THRESHOLD",
+			"fabric": "field_30228"
+		},
+		{
+			"forge": "DISTANCE_THRESHOLD",
+			"fabric": "field_30228"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "interval",
+			"fabric": "searchRange"
+		},
+		{
+			"forge": "wantedPos",
+			"fabric": "targetPosition"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "moveRandomly()",
+			"fabric": "findOtherWaypoint()"
+		}
+	]
+}

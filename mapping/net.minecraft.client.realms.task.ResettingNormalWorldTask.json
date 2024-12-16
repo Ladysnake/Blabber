@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.realmsclient.util.task.ResettingGeneratedWorldTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.ResettingGeneratedWorldTask",
+			"fabric": "net.minecraft.client.realms.task.ResettingNormalWorldTask"
+		},
+		{
+			"forge": "generationInfo",
+			"fabric": "info"
+		},
+		{
+			"forge": "generationInfo",
+			"fabric": "info"
+		},
+		{
+			"forge": "sendResetRequest(RealmsClient arg0, long arg1)",
+			"fabric": "resetWorld(RealmsClient arg0, long arg1)"
+		},
+		{
+			"forge": "sendResetRequest(RealmsClient arg0, long arg1)",
+			"fabric": "resetWorld(RealmsClient arg0, long arg1)"
+		}
+	]
+}

@@ -1,0 +1,521 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.BlockStateProperties",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.BlockStateProperties",
+			"fabric": "net.minecraft.state.property.Properties"
+		},
+		{
+			"forge": "ATTACHED",
+			"fabric": "ATTACHED"
+		},
+		{
+			"forge": "ATTACHED",
+			"fabric": "ATTACHED"
+		},
+		{
+			"forge": "BOTTOM",
+			"fabric": "BOTTOM"
+		},
+		{
+			"forge": "CONDITIONAL",
+			"fabric": "CONDITIONAL"
+		},
+		{
+			"forge": "DISARMED",
+			"fabric": "DISARMED"
+		},
+		{
+			"forge": "DRAG",
+			"fabric": "DRAG"
+		},
+		{
+			"forge": "ENABLED",
+			"fabric": "ENABLED"
+		},
+		{
+			"forge": "EXTENDED",
+			"fabric": "EXTENDED"
+		},
+		{
+			"forge": "EYE",
+			"fabric": "EYE"
+		},
+		{
+			"forge": "FALLING",
+			"fabric": "FALLING"
+		},
+		{
+			"forge": "HANGING",
+			"fabric": "HANGING"
+		},
+		{
+			"forge": "HAS_BOTTLE_0",
+			"fabric": "HAS_BOTTLE_0"
+		},
+		{
+			"forge": "HAS_BOTTLE_1",
+			"fabric": "HAS_BOTTLE_1"
+		},
+		{
+			"forge": "HAS_BOTTLE_2",
+			"fabric": "HAS_BOTTLE_2"
+		},
+		{
+			"forge": "HAS_RECORD",
+			"fabric": "HAS_RECORD"
+		},
+		{
+			"forge": "HAS_BOOK",
+			"fabric": "HAS_BOOK"
+		},
+		{
+			"forge": "INVERTED",
+			"fabric": "INVERTED"
+		},
+		{
+			"forge": "IN_WALL",
+			"fabric": "IN_WALL"
+		},
+		{
+			"forge": "LIT",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "LOCKED",
+			"fabric": "LOCKED"
+		},
+		{
+			"forge": "OCCUPIED",
+			"fabric": "OCCUPIED"
+		},
+		{
+			"forge": "OPEN",
+			"fabric": "OPEN"
+		},
+		{
+			"forge": "PERSISTENT",
+			"fabric": "PERSISTENT"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "SHORT",
+			"fabric": "SHORT"
+		},
+		{
+			"forge": "SIGNAL_FIRE",
+			"fabric": "SIGNAL_FIRE"
+		},
+		{
+			"forge": "SNOWY",
+			"fabric": "SNOWY"
+		},
+		{
+			"forge": "TRIGGERED",
+			"fabric": "TRIGGERED"
+		},
+		{
+			"forge": "UNSTABLE",
+			"fabric": "UNSTABLE"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "BERRIES",
+			"fabric": "BERRIES"
+		},
+		{
+			"forge": "BLOOM",
+			"fabric": "BLOOM"
+		},
+		{
+			"forge": "SHRIEKING",
+			"fabric": "SHRIEKING"
+		},
+		{
+			"forge": "CAN_SUMMON",
+			"fabric": "CAN_SUMMON"
+		},
+		{
+			"forge": "HORIZONTAL_AXIS",
+			"fabric": "HORIZONTAL_AXIS"
+		},
+		{
+			"forge": "AXIS",
+			"fabric": "AXIS"
+		},
+		{
+			"forge": "UP",
+			"fabric": "UP"
+		},
+		{
+			"forge": "DOWN",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "FACING_HOPPER",
+			"fabric": "HOPPER_FACING"
+		},
+		{
+			"forge": "HORIZONTAL_FACING",
+			"fabric": "HORIZONTAL_FACING"
+		},
+		{
+			"forge": "FLOWER_AMOUNT",
+			"fabric": "FLOWER_AMOUNT"
+		},
+		{
+			"forge": "ORIENTATION",
+			"fabric": "ORIENTATION"
+		},
+		{
+			"forge": "ATTACH_FACE",
+			"fabric": "WALL_MOUNT_LOCATION"
+		},
+		{
+			"forge": "BELL_ATTACHMENT",
+			"fabric": "ATTACHMENT"
+		},
+		{
+			"forge": "EAST_WALL",
+			"fabric": "EAST_WALL_SHAPE"
+		},
+		{
+			"forge": "NORTH_WALL",
+			"fabric": "NORTH_WALL_SHAPE"
+		},
+		{
+			"forge": "SOUTH_WALL",
+			"fabric": "SOUTH_WALL_SHAPE"
+		},
+		{
+			"forge": "WEST_WALL",
+			"fabric": "WEST_WALL_SHAPE"
+		},
+		{
+			"forge": "EAST_REDSTONE",
+			"fabric": "EAST_WIRE_CONNECTION"
+		},
+		{
+			"forge": "NORTH_REDSTONE",
+			"fabric": "NORTH_WIRE_CONNECTION"
+		},
+		{
+			"forge": "SOUTH_REDSTONE",
+			"fabric": "SOUTH_WIRE_CONNECTION"
+		},
+		{
+			"forge": "WEST_REDSTONE",
+			"fabric": "WEST_WIRE_CONNECTION"
+		},
+		{
+			"forge": "DOUBLE_BLOCK_HALF",
+			"fabric": "DOUBLE_BLOCK_HALF"
+		},
+		{
+			"forge": "HALF",
+			"fabric": "BLOCK_HALF"
+		},
+		{
+			"forge": "RAIL_SHAPE",
+			"fabric": "RAIL_SHAPE"
+		},
+		{
+			"forge": "RAIL_SHAPE_STRAIGHT",
+			"fabric": "STRAIGHT_RAIL_SHAPE"
+		},
+		{
+			"forge": "MAX_AGE_1",
+			"fabric": "AGE_1_MAX"
+		},
+		{
+			"forge": "MAX_AGE_2",
+			"fabric": "AGE_2_MAX"
+		},
+		{
+			"forge": "MAX_AGE_3",
+			"fabric": "AGE_3_MAX"
+		},
+		{
+			"forge": "MAX_AGE_4",
+			"fabric": "AGE_4_MAX"
+		},
+		{
+			"forge": "MAX_AGE_5",
+			"fabric": "AGE_5_MAX"
+		},
+		{
+			"forge": "MAX_AGE_7",
+			"fabric": "AGE_7_MAX"
+		},
+		{
+			"forge": "MAX_AGE_15",
+			"fabric": "AGE_15_MAX"
+		},
+		{
+			"forge": "MAX_AGE_25",
+			"fabric": "AGE_25_MAX"
+		},
+		{
+			"forge": "AGE_1",
+			"fabric": "AGE_1"
+		},
+		{
+			"forge": "AGE_2",
+			"fabric": "AGE_2"
+		},
+		{
+			"forge": "AGE_3",
+			"fabric": "AGE_3"
+		},
+		{
+			"forge": "AGE_4",
+			"fabric": "AGE_4"
+		},
+		{
+			"forge": "AGE_5",
+			"fabric": "AGE_5"
+		},
+		{
+			"forge": "AGE_7",
+			"fabric": "AGE_7"
+		},
+		{
+			"forge": "AGE_15",
+			"fabric": "AGE_15"
+		},
+		{
+			"forge": "AGE_25",
+			"fabric": "AGE_25"
+		},
+		{
+			"forge": "BITES",
+			"fabric": "BITES"
+		},
+		{
+			"forge": "CANDLES",
+			"fabric": "CANDLES"
+		},
+		{
+			"forge": "DELAY",
+			"fabric": "DELAY"
+		},
+		{
+			"forge": "MAX_DISTANCE",
+			"fabric": "DISTANCE_1_7_MAX"
+		},
+		{
+			"forge": "DISTANCE",
+			"fabric": "DISTANCE_1_7"
+		},
+		{
+			"forge": "EGGS",
+			"fabric": "EGGS"
+		},
+		{
+			"forge": "HATCH",
+			"fabric": "HATCH"
+		},
+		{
+			"forge": "LAYERS",
+			"fabric": "LAYERS"
+		},
+		{
+			"forge": "MIN_LEVEL",
+			"fabric": "LEVEL_3_MIN"
+		},
+		{
+			"forge": "MIN_LEVEL_CAULDRON",
+			"fabric": "LEVEL_1_8_MIN"
+		},
+		{
+			"forge": "MAX_LEVEL_3",
+			"fabric": "LEVEL_3_MAX"
+		},
+		{
+			"forge": "MAX_LEVEL_8",
+			"fabric": "LEVEL_1_8_MAX"
+		},
+		{
+			"forge": "LEVEL_CAULDRON",
+			"fabric": "LEVEL_3"
+		},
+		{
+			"forge": "LEVEL_COMPOSTER",
+			"fabric": "LEVEL_8"
+		},
+		{
+			"forge": "LEVEL_FLOWING",
+			"fabric": "LEVEL_1_8"
+		},
+		{
+			"forge": "LEVEL_HONEY",
+			"fabric": "HONEY_LEVEL"
+		},
+		{
+			"forge": "MAX_LEVEL_15",
+			"fabric": "LEVEL_15_MAX"
+		},
+		{
+			"forge": "LEVEL",
+			"fabric": "LEVEL_15"
+		},
+		{
+			"forge": "MOISTURE",
+			"fabric": "MOISTURE"
+		},
+		{
+			"forge": "NOTE",
+			"fabric": "NOTE"
+		},
+		{
+			"forge": "PICKLES",
+			"fabric": "PICKLES"
+		},
+		{
+			"forge": "POWER",
+			"fabric": "POWER"
+		},
+		{
+			"forge": "STAGE",
+			"fabric": "STAGE"
+		},
+		{
+			"forge": "STABILITY_MAX_DISTANCE",
+			"fabric": "DISTANCE_0_7_MAX"
+		},
+		{
+			"forge": "STABILITY_DISTANCE",
+			"fabric": "DISTANCE_0_7"
+		},
+		{
+			"forge": "MIN_RESPAWN_ANCHOR_CHARGES",
+			"fabric": "CHARGES_MIN"
+		},
+		{
+			"forge": "MAX_RESPAWN_ANCHOR_CHARGES",
+			"fabric": "CHARGES_MAX"
+		},
+		{
+			"forge": "RESPAWN_ANCHOR_CHARGES",
+			"fabric": "CHARGES"
+		},
+		{
+			"forge": "ROTATION_16",
+			"fabric": "ROTATION"
+		},
+		{
+			"forge": "BED_PART",
+			"fabric": "BED_PART"
+		},
+		{
+			"forge": "CHEST_TYPE",
+			"fabric": "CHEST_TYPE"
+		},
+		{
+			"forge": "MODE_COMPARATOR",
+			"fabric": "COMPARATOR_MODE"
+		},
+		{
+			"forge": "DOOR_HINGE",
+			"fabric": "DOOR_HINGE"
+		},
+		{
+			"forge": "NOTEBLOCK_INSTRUMENT",
+			"fabric": "INSTRUMENT"
+		},
+		{
+			"forge": "PISTON_TYPE",
+			"fabric": "PISTON_TYPE"
+		},
+		{
+			"forge": "SLAB_TYPE",
+			"fabric": "SLAB_TYPE"
+		},
+		{
+			"forge": "STAIRS_SHAPE",
+			"fabric": "STAIR_SHAPE"
+		},
+		{
+			"forge": "STRUCTUREBLOCK_MODE",
+			"fabric": "STRUCTURE_BLOCK_MODE"
+		},
+		{
+			"forge": "BAMBOO_LEAVES",
+			"fabric": "BAMBOO_LEAVES"
+		},
+		{
+			"forge": "TILT",
+			"fabric": "TILT"
+		},
+		{
+			"forge": "VERTICAL_DIRECTION",
+			"fabric": "VERTICAL_DIRECTION"
+		},
+		{
+			"forge": "DRIPSTONE_THICKNESS",
+			"fabric": "THICKNESS"
+		},
+		{
+			"forge": "SCULK_SENSOR_PHASE",
+			"fabric": "SCULK_SENSOR_PHASE"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF_SLOT_0_OCCUPIED",
+			"fabric": "SLOT_0_OCCUPIED"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF_SLOT_1_OCCUPIED",
+			"fabric": "SLOT_1_OCCUPIED"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF_SLOT_2_OCCUPIED",
+			"fabric": "SLOT_2_OCCUPIED"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF_SLOT_3_OCCUPIED",
+			"fabric": "SLOT_3_OCCUPIED"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF_SLOT_4_OCCUPIED",
+			"fabric": "SLOT_4_OCCUPIED"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF_SLOT_5_OCCUPIED",
+			"fabric": "SLOT_5_OCCUPIED"
+		},
+		{
+			"forge": "DUSTED",
+			"fabric": "DUSTED"
+		},
+		{
+			"forge": "CRACKED",
+			"fabric": "CRACKED"
+		}
+	]
+}

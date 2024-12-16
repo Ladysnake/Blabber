@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.SwitchGrid$InfoUnderneathSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.SwitchGrid$InfoUnderneathSettings",
+			"fabric": "net.minecraft.client.gui.screen.world.WorldScreenOptionGrid$TooltipBoxDisplay"
+		},
+		{
+			"forge": "maxInfoRows",
+			"fabric": "maxInfoRows"
+		},
+		{
+			"forge": "maxInfoRows",
+			"fabric": "maxInfoRows"
+		},
+		{
+			"forge": "alwaysMaxHeight",
+			"fabric": "alwaysMaxHeight"
+		},
+		{
+			"forge": "maxInfoRows()",
+			"fabric": "maxInfoRows()"
+		},
+		{
+			"forge": "maxInfoRows()",
+			"fabric": "maxInfoRows()"
+		},
+		{
+			"forge": "alwaysMaxHeight()",
+			"fabric": "alwaysMaxHeight()"
+		}
+	]
+}

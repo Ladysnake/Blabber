@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BannerBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BannerBlockEntity",
+			"fabric": "net.minecraft.block.entity.BannerBlockEntity"
+		},
+		{
+			"forge": "MAX_PATTERNS",
+			"fabric": "MAX_PATTERN_COUNT"
+		},
+		{
+			"forge": "MAX_PATTERNS",
+			"fabric": "MAX_PATTERN_COUNT"
+		},
+		{
+			"forge": "TAG_PATTERNS",
+			"fabric": "PATTERNS_KEY"
+		},
+		{
+			"forge": "TAG_PATTERN",
+			"fabric": "PATTERN_KEY"
+		},
+		{
+			"forge": "TAG_COLOR",
+			"fabric": "COLOR_KEY"
+		},
+		{
+			"forge": "name",
+			"fabric": "customName"
+		},
+		{
+			"forge": "baseColor",
+			"fabric": "baseColor"
+		},
+		{
+			"forge": "itemPatterns",
+			"fabric": "patternListNbt"
+		},
+		{
+			"forge": "patterns",
+			"fabric": "patterns"
+		},
+		{
+			"forge": "getItemPatterns(ItemStack arg0)",
+			"fabric": "getPatternListNbt(ItemStack stack)"
+		},
+		{
+			"forge": "getItemPatterns(ItemStack arg0)",
+			"fabric": "getPatternListNbt(ItemStack stack)"
+		},
+		{
+			"forge": "fromItem(ItemStack arg0, DyeColor arg1)",
+			"fabric": "readFrom(ItemStack stack, DyeColor baseColor)"
+		},
+		{
+			"forge": "fromItem(ItemStack arg0)",
+			"fabric": "readFrom(ItemStack stack)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getCustomName()",
+			"fabric": "getCustomName()"
+		},
+		{
+			"forge": "setCustomName(Component arg0)",
+			"fabric": "setCustomName(Text customName)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getUpdatePacket()",
+			"fabric": "toUpdatePacket()"
+		},
+		{
+			"forge": "getUpdateTag()",
+			"fabric": "toInitialChunkDataNbt()"
+		},
+		{
+			"forge": "getPatternCount(ItemStack arg0)",
+			"fabric": "getPatternCount(ItemStack stack)"
+		},
+		{
+			"forge": "getPatterns()",
+			"fabric": "getPatterns()"
+		},
+		{
+			"forge": "createPatterns(DyeColor arg0, ListTag arg1)",
+			"fabric": "getPatternsFromNbt(DyeColor baseColor, NbtList patternListNbt)"
+		},
+		{
+			"forge": "removeLastPattern(ItemStack arg0)",
+			"fabric": "loadFromItemStack(ItemStack stack)"
+		},
+		{
+			"forge": "getItem()",
+			"fabric": "getPickStack()"
+		},
+		{
+			"forge": "getBaseColor()",
+			"fabric": "getColorForState()"
+		}
+	]
+}

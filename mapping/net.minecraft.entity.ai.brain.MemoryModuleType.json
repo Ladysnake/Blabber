@@ -1,0 +1,421 @@
+{
+	"title": "net.minecraft.world.entity.ai.memory.MemoryModuleType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.memory.MemoryModuleType",
+			"fabric": "net.minecraft.entity.ai.brain.MemoryModuleType"
+		},
+		{
+			"forge": "DUMMY",
+			"fabric": "DUMMY"
+		},
+		{
+			"forge": "DUMMY",
+			"fabric": "DUMMY"
+		},
+		{
+			"forge": "HOME",
+			"fabric": "HOME"
+		},
+		{
+			"forge": "JOB_SITE",
+			"fabric": "JOB_SITE"
+		},
+		{
+			"forge": "POTENTIAL_JOB_SITE",
+			"fabric": "POTENTIAL_JOB_SITE"
+		},
+		{
+			"forge": "MEETING_POINT",
+			"fabric": "MEETING_POINT"
+		},
+		{
+			"forge": "SECONDARY_JOB_SITE",
+			"fabric": "SECONDARY_JOB_SITE"
+		},
+		{
+			"forge": "NEAREST_LIVING_ENTITIES",
+			"fabric": "MOBS"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_LIVING_ENTITIES",
+			"fabric": "VISIBLE_MOBS"
+		},
+		{
+			"forge": "VISIBLE_VILLAGER_BABIES",
+			"fabric": "VISIBLE_VILLAGER_BABIES"
+		},
+		{
+			"forge": "NEAREST_PLAYERS",
+			"fabric": "NEAREST_PLAYERS"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_PLAYER",
+			"fabric": "NEAREST_VISIBLE_PLAYER"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_ATTACKABLE_PLAYER",
+			"fabric": "NEAREST_VISIBLE_TARGETABLE_PLAYER"
+		},
+		{
+			"forge": "WALK_TARGET",
+			"fabric": "WALK_TARGET"
+		},
+		{
+			"forge": "LOOK_TARGET",
+			"fabric": "LOOK_TARGET"
+		},
+		{
+			"forge": "ATTACK_TARGET",
+			"fabric": "ATTACK_TARGET"
+		},
+		{
+			"forge": "ATTACK_COOLING_DOWN",
+			"fabric": "ATTACK_COOLING_DOWN"
+		},
+		{
+			"forge": "INTERACTION_TARGET",
+			"fabric": "INTERACTION_TARGET"
+		},
+		{
+			"forge": "BREED_TARGET",
+			"fabric": "BREED_TARGET"
+		},
+		{
+			"forge": "RIDE_TARGET",
+			"fabric": "RIDE_TARGET"
+		},
+		{
+			"forge": "PATH",
+			"fabric": "PATH"
+		},
+		{
+			"forge": "INTERACTABLE_DOORS",
+			"fabric": "INTERACTABLE_DOORS"
+		},
+		{
+			"forge": "DOORS_TO_CLOSE",
+			"fabric": "DOORS_TO_CLOSE"
+		},
+		{
+			"forge": "NEAREST_BED",
+			"fabric": "NEAREST_BED"
+		},
+		{
+			"forge": "HURT_BY",
+			"fabric": "HURT_BY"
+		},
+		{
+			"forge": "HURT_BY_ENTITY",
+			"fabric": "HURT_BY_ENTITY"
+		},
+		{
+			"forge": "AVOID_TARGET",
+			"fabric": "AVOID_TARGET"
+		},
+		{
+			"forge": "NEAREST_HOSTILE",
+			"fabric": "NEAREST_HOSTILE"
+		},
+		{
+			"forge": "NEAREST_ATTACKABLE",
+			"fabric": "NEAREST_ATTACKABLE"
+		},
+		{
+			"forge": "HIDING_PLACE",
+			"fabric": "HIDING_PLACE"
+		},
+		{
+			"forge": "HEARD_BELL_TIME",
+			"fabric": "HEARD_BELL_TIME"
+		},
+		{
+			"forge": "CANT_REACH_WALK_TARGET_SINCE",
+			"fabric": "CANT_REACH_WALK_TARGET_SINCE"
+		},
+		{
+			"forge": "GOLEM_DETECTED_RECENTLY",
+			"fabric": "GOLEM_DETECTED_RECENTLY"
+		},
+		{
+			"forge": "LAST_SLEPT",
+			"fabric": "LAST_SLEPT"
+		},
+		{
+			"forge": "LAST_WOKEN",
+			"fabric": "LAST_WOKEN"
+		},
+		{
+			"forge": "LAST_WORKED_AT_POI",
+			"fabric": "LAST_WORKED_AT_POI"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_ADULT",
+			"fabric": "NEAREST_VISIBLE_ADULT"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_WANTED_ITEM",
+			"fabric": "NEAREST_VISIBLE_WANTED_ITEM"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_NEMESIS",
+			"fabric": "NEAREST_VISIBLE_NEMESIS"
+		},
+		{
+			"forge": "PLAY_DEAD_TICKS",
+			"fabric": "PLAY_DEAD_TICKS"
+		},
+		{
+			"forge": "TEMPTING_PLAYER",
+			"fabric": "TEMPTING_PLAYER"
+		},
+		{
+			"forge": "TEMPTATION_COOLDOWN_TICKS",
+			"fabric": "TEMPTATION_COOLDOWN_TICKS"
+		},
+		{
+			"forge": "GAZE_COOLDOWN_TICKS",
+			"fabric": "GAZE_COOLDOWN_TICKS"
+		},
+		{
+			"forge": "IS_TEMPTED",
+			"fabric": "IS_TEMPTED"
+		},
+		{
+			"forge": "LONG_JUMP_COOLDOWN_TICKS",
+			"fabric": "LONG_JUMP_COOLING_DOWN"
+		},
+		{
+			"forge": "LONG_JUMP_MID_JUMP",
+			"fabric": "LONG_JUMP_MID_JUMP"
+		},
+		{
+			"forge": "HAS_HUNTING_COOLDOWN",
+			"fabric": "HAS_HUNTING_COOLDOWN"
+		},
+		{
+			"forge": "RAM_COOLDOWN_TICKS",
+			"fabric": "RAM_COOLDOWN_TICKS"
+		},
+		{
+			"forge": "RAM_TARGET",
+			"fabric": "RAM_TARGET"
+		},
+		{
+			"forge": "IS_IN_WATER",
+			"fabric": "IS_IN_WATER"
+		},
+		{
+			"forge": "IS_PREGNANT",
+			"fabric": "IS_PREGNANT"
+		},
+		{
+			"forge": "IS_PANICKING",
+			"fabric": "IS_PANICKING"
+		},
+		{
+			"forge": "UNREACHABLE_TONGUE_TARGETS",
+			"fabric": "UNREACHABLE_TONGUE_TARGETS"
+		},
+		{
+			"forge": "ANGRY_AT",
+			"fabric": "ANGRY_AT"
+		},
+		{
+			"forge": "UNIVERSAL_ANGER",
+			"fabric": "UNIVERSAL_ANGER"
+		},
+		{
+			"forge": "ADMIRING_ITEM",
+			"fabric": "ADMIRING_ITEM"
+		},
+		{
+			"forge": "TIME_TRYING_TO_REACH_ADMIRE_ITEM",
+			"fabric": "TIME_TRYING_TO_REACH_ADMIRE_ITEM"
+		},
+		{
+			"forge": "DISABLE_WALK_TO_ADMIRE_ITEM",
+			"fabric": "DISABLE_WALK_TO_ADMIRE_ITEM"
+		},
+		{
+			"forge": "ADMIRING_DISABLED",
+			"fabric": "ADMIRING_DISABLED"
+		},
+		{
+			"forge": "HUNTED_RECENTLY",
+			"fabric": "HUNTED_RECENTLY"
+		},
+		{
+			"forge": "CELEBRATE_LOCATION",
+			"fabric": "CELEBRATE_LOCATION"
+		},
+		{
+			"forge": "DANCING",
+			"fabric": "DANCING"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_HUNTABLE_HOGLIN",
+			"fabric": "NEAREST_VISIBLE_HUNTABLE_HOGLIN"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_BABY_HOGLIN",
+			"fabric": "NEAREST_VISIBLE_BABY_HOGLIN"
+		},
+		{
+			"forge": "NEAREST_TARGETABLE_PLAYER_NOT_WEARING_GOLD",
+			"fabric": "NEAREST_TARGETABLE_PLAYER_NOT_WEARING_GOLD"
+		},
+		{
+			"forge": "NEARBY_ADULT_PIGLINS",
+			"fabric": "NEARBY_ADULT_PIGLINS"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_ADULT_PIGLINS",
+			"fabric": "NEAREST_VISIBLE_ADULT_PIGLINS"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_ADULT_HOGLINS",
+			"fabric": "NEAREST_VISIBLE_ADULT_HOGLINS"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_ADULT_PIGLIN",
+			"fabric": "NEAREST_VISIBLE_ADULT_PIGLIN"
+		},
+		{
+			"forge": "NEAREST_VISIBLE_ZOMBIFIED",
+			"fabric": "NEAREST_VISIBLE_ZOMBIFIED"
+		},
+		{
+			"forge": "VISIBLE_ADULT_PIGLIN_COUNT",
+			"fabric": "VISIBLE_ADULT_PIGLIN_COUNT"
+		},
+		{
+			"forge": "VISIBLE_ADULT_HOGLIN_COUNT",
+			"fabric": "VISIBLE_ADULT_HOGLIN_COUNT"
+		},
+		{
+			"forge": "NEAREST_PLAYER_HOLDING_WANTED_ITEM",
+			"fabric": "NEAREST_PLAYER_HOLDING_WANTED_ITEM"
+		},
+		{
+			"forge": "ATE_RECENTLY",
+			"fabric": "ATE_RECENTLY"
+		},
+		{
+			"forge": "NEAREST_REPELLENT",
+			"fabric": "NEAREST_REPELLENT"
+		},
+		{
+			"forge": "PACIFIED",
+			"fabric": "PACIFIED"
+		},
+		{
+			"forge": "ROAR_TARGET",
+			"fabric": "ROAR_TARGET"
+		},
+		{
+			"forge": "DISTURBANCE_LOCATION",
+			"fabric": "DISTURBANCE_LOCATION"
+		},
+		{
+			"forge": "RECENT_PROJECTILE",
+			"fabric": "RECENT_PROJECTILE"
+		},
+		{
+			"forge": "IS_SNIFFING",
+			"fabric": "IS_SNIFFING"
+		},
+		{
+			"forge": "IS_EMERGING",
+			"fabric": "IS_EMERGING"
+		},
+		{
+			"forge": "ROAR_SOUND_DELAY",
+			"fabric": "ROAR_SOUND_DELAY"
+		},
+		{
+			"forge": "DIG_COOLDOWN",
+			"fabric": "DIG_COOLDOWN"
+		},
+		{
+			"forge": "ROAR_SOUND_COOLDOWN",
+			"fabric": "ROAR_SOUND_COOLDOWN"
+		},
+		{
+			"forge": "SNIFF_COOLDOWN",
+			"fabric": "SNIFF_COOLDOWN"
+		},
+		{
+			"forge": "TOUCH_COOLDOWN",
+			"fabric": "TOUCH_COOLDOWN"
+		},
+		{
+			"forge": "VIBRATION_COOLDOWN",
+			"fabric": "VIBRATION_COOLDOWN"
+		},
+		{
+			"forge": "SONIC_BOOM_COOLDOWN",
+			"fabric": "SONIC_BOOM_COOLDOWN"
+		},
+		{
+			"forge": "SONIC_BOOM_SOUND_COOLDOWN",
+			"fabric": "SONIC_BOOM_SOUND_COOLDOWN"
+		},
+		{
+			"forge": "SONIC_BOOM_SOUND_DELAY",
+			"fabric": "SONIC_BOOM_SOUND_DELAY"
+		},
+		{
+			"forge": "LIKED_PLAYER",
+			"fabric": "LIKED_PLAYER"
+		},
+		{
+			"forge": "LIKED_NOTEBLOCK_POSITION",
+			"fabric": "LIKED_NOTEBLOCK"
+		},
+		{
+			"forge": "LIKED_NOTEBLOCK_COOLDOWN_TICKS",
+			"fabric": "LIKED_NOTEBLOCK_COOLDOWN_TICKS"
+		},
+		{
+			"forge": "ITEM_PICKUP_COOLDOWN_TICKS",
+			"fabric": "ITEM_PICKUP_COOLDOWN_TICKS"
+		},
+		{
+			"forge": "SNIFFER_EXPLORED_POSITIONS",
+			"fabric": "SNIFFER_EXPLORED_POSITIONS"
+		},
+		{
+			"forge": "SNIFFER_SNIFFING_TARGET",
+			"fabric": "SNIFFER_SNIFFING_TARGET"
+		},
+		{
+			"forge": "SNIFFER_DIGGING",
+			"fabric": "SNIFFER_DIGGING"
+		},
+		{
+			"forge": "SNIFFER_HAPPY",
+			"fabric": "SNIFFER_HAPPY"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "getCodec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "getCodec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<U> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<U> codec)"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "register(String id)"
+		}
+	]
+}

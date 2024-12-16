@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.state.BlockBehaviour$OffsetType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.BlockBehaviour$OffsetType",
+			"fabric": "net.minecraft.block.AbstractBlock$OffsetType"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "XZ",
+			"fabric": "XZ"
+		},
+		{
+			"forge": "XYZ",
+			"fabric": "XYZ"
+		}
+	]
+}

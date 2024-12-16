@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.protocol.Packet",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.Packet",
+			"fabric": "net.minecraft.network.packet.Packet"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf buf)"
+		},
+		{
+			"forge": "handle(T arg0)",
+			"fabric": "apply(T listener)"
+		},
+		{
+			"forge": "isSkippable()",
+			"fabric": "isWritingErrorSkippable()"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.gui.screens.telemetry.TelemetryEventWidget$ContentBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.telemetry.TelemetryEventWidget$ContentBuilder",
+			"fabric": "net.minecraft.client.gui.screen.option.TelemetryEventWidget$ContentsBuilder"
+		},
+		{
+			"forge": "width",
+			"fabric": "gridWidth"
+		},
+		{
+			"forge": "width",
+			"fabric": "gridWidth"
+		},
+		{
+			"forge": "grid",
+			"fabric": "grid"
+		},
+		{
+			"forge": "helper",
+			"fabric": "widgetAdder"
+		},
+		{
+			"forge": "alignHeader",
+			"fabric": "positioner"
+		},
+		{
+			"forge": "narration",
+			"fabric": "narration"
+		},
+		{
+			"forge": "addLine(Font arg0, Component arg1)",
+			"fabric": "appendTitle(TextRenderer textRenderer, Text title)"
+		},
+		{
+			"forge": "addLine(Font arg0, Component arg1)",
+			"fabric": "appendTitle(TextRenderer textRenderer, Text title)"
+		},
+		{
+			"forge": "addLine(Font arg0, Component arg1, int arg2)",
+			"fabric": "appendTitle(TextRenderer textRenderer, Text title, int marginBottom)"
+		},
+		{
+			"forge": "addHeader(Font arg0, Component arg1)",
+			"fabric": "appendText(TextRenderer textRenderer, Text text)"
+		},
+		{
+			"forge": "addSpacer(int arg0)",
+			"fabric": "appendSpace(int height)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

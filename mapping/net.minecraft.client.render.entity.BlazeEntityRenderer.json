@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.BlazeRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.BlazeRenderer",
+			"fabric": "net.minecraft.client.render.entity.BlazeEntityRenderer"
+		},
+		{
+			"forge": "BLAZE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "BLAZE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getBlockLightLevel(Blaze arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(BlazeEntity arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "getBlockLightLevel(Blaze arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(BlazeEntity arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "getTextureLocation(Blaze arg0)",
+			"fabric": "getTexture(BlazeEntity arg0)"
+		}
+	]
+}

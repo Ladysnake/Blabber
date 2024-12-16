@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.StructurePiece$BlockSelector",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.StructurePiece$BlockSelector",
+			"fabric": "net.minecraft.structure.StructurePiece$BlockRandomizer"
+		},
+		{
+			"forge": "next",
+			"fabric": "block"
+		},
+		{
+			"forge": "next",
+			"fabric": "block"
+		},
+		{
+			"forge": "next(RandomSource arg0, int arg1, int arg2, int arg3, boolean arg4)",
+			"fabric": "setBlock(Random random, int x, int y, int z, boolean placeBlock)"
+		},
+		{
+			"forge": "next(RandomSource arg0, int arg1, int arg2, int arg3, boolean arg4)",
+			"fabric": "setBlock(Random random, int x, int y, int z, boolean placeBlock)"
+		},
+		{
+			"forge": "getNext()",
+			"fabric": "getBlock()"
+		}
+	]
+}

@@ -1,0 +1,173 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundLoginPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundLoginPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.GameJoinS2CPacket"
+		},
+		{
+			"forge": "playerId",
+			"fabric": "playerEntityId"
+		},
+		{
+			"forge": "playerId",
+			"fabric": "playerEntityId"
+		},
+		{
+			"forge": "hardcore",
+			"fabric": "hardcore"
+		},
+		{
+			"forge": "gameType",
+			"fabric": "gameMode"
+		},
+		{
+			"forge": "previousGameType",
+			"fabric": "previousGameMode"
+		},
+		{
+			"forge": "levels",
+			"fabric": "dimensionIds"
+		},
+		{
+			"forge": "registryHolder",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "dimensionType",
+			"fabric": "dimensionType"
+		},
+		{
+			"forge": "dimension",
+			"fabric": "dimensionId"
+		},
+		{
+			"forge": "seed",
+			"fabric": "sha256Seed"
+		},
+		{
+			"forge": "maxPlayers",
+			"fabric": "maxPlayers"
+		},
+		{
+			"forge": "chunkRadius",
+			"fabric": "viewDistance"
+		},
+		{
+			"forge": "simulationDistance",
+			"fabric": "simulationDistance"
+		},
+		{
+			"forge": "reducedDebugInfo",
+			"fabric": "reducedDebugInfo"
+		},
+		{
+			"forge": "showDeathScreen",
+			"fabric": "showDeathScreen"
+		},
+		{
+			"forge": "isDebug",
+			"fabric": "debugWorld"
+		},
+		{
+			"forge": "isFlat",
+			"fabric": "flatWorld"
+		},
+		{
+			"forge": "lastDeathLocation",
+			"fabric": "lastDeathLocation"
+		},
+		{
+			"forge": "portalCooldown",
+			"fabric": "portalCooldown"
+		},
+		{
+			"forge": "BUILTIN_CONTEXT_OPS",
+			"fabric": "REGISTRY_OPS"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "playerId()",
+			"fabric": "playerEntityId()"
+		},
+		{
+			"forge": "hardcore()",
+			"fabric": "hardcore()"
+		},
+		{
+			"forge": "gameType()",
+			"fabric": "gameMode()"
+		},
+		{
+			"forge": "previousGameType()",
+			"fabric": "previousGameMode()"
+		},
+		{
+			"forge": "levels()",
+			"fabric": "dimensionIds()"
+		},
+		{
+			"forge": "registryHolder()",
+			"fabric": "registryManager()"
+		},
+		{
+			"forge": "dimensionType()",
+			"fabric": "dimensionType()"
+		},
+		{
+			"forge": "dimension()",
+			"fabric": "dimensionId()"
+		},
+		{
+			"forge": "seed()",
+			"fabric": "sha256Seed()"
+		},
+		{
+			"forge": "maxPlayers()",
+			"fabric": "maxPlayers()"
+		},
+		{
+			"forge": "chunkRadius()",
+			"fabric": "viewDistance()"
+		},
+		{
+			"forge": "simulationDistance()",
+			"fabric": "simulationDistance()"
+		},
+		{
+			"forge": "reducedDebugInfo()",
+			"fabric": "reducedDebugInfo()"
+		},
+		{
+			"forge": "showDeathScreen()",
+			"fabric": "showDeathScreen()"
+		},
+		{
+			"forge": "isDebug()",
+			"fabric": "debugWorld()"
+		},
+		{
+			"forge": "isFlat()",
+			"fabric": "flatWorld()"
+		},
+		{
+			"forge": "lastDeathLocation()",
+			"fabric": "lastDeathLocation()"
+		},
+		{
+			"forge": "portalCooldown()",
+			"fabric": "portalCooldown()"
+		}
+	]
+}

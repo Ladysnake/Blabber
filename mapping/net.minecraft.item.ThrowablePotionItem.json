@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.ThrowablePotionItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ThrowablePotionItem",
+			"fabric": "net.minecraft.item.ThrowablePotionItem"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		}
+	]
+}

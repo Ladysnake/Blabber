@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.timers.FunctionTagCallback",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.timers.FunctionTagCallback",
+			"fabric": "net.minecraft.world.timer.FunctionTagTimerCallback"
+		},
+		{
+			"forge": "tagId",
+			"fabric": "name"
+		},
+		{
+			"forge": "tagId",
+			"fabric": "name"
+		},
+		{
+			"forge": "handle(MinecraftServer arg0, TimerQueue<MinecraftServer> arg1, long arg2)",
+			"fabric": "call(MinecraftServer arg0, Timer<MinecraftServer> arg1, long arg2)"
+		},
+		{
+			"forge": "handle(MinecraftServer arg0, TimerQueue<MinecraftServer> arg1, long arg2)",
+			"fabric": "call(MinecraftServer arg0, Timer<MinecraftServer> arg1, long arg2)"
+		}
+	]
+}

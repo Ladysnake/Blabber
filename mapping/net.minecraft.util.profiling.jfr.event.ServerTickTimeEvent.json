@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent",
+			"fabric": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent"
+		}
+	]
+}

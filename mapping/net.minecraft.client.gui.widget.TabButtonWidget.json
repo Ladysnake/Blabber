@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.gui.components.TabButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.TabButton",
+			"fabric": "net.minecraft.client.gui.widget.TabButtonWidget"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE_WIDTH",
+			"fabric": "field_43059"
+		},
+		{
+			"forge": "TEXTURE_HEIGHT",
+			"fabric": "field_43060"
+		},
+		{
+			"forge": "TEXTURE_BORDER",
+			"fabric": "field_43061"
+		},
+		{
+			"forge": "TEXTURE_BORDER_BOTTOM",
+			"fabric": "field_43062"
+		},
+		{
+			"forge": "SELECTED_OFFSET",
+			"fabric": "field_43063"
+		},
+		{
+			"forge": "TEXT_MARGIN",
+			"fabric": "field_43064"
+		},
+		{
+			"forge": "UNDERLINE_HEIGHT",
+			"fabric": "field_43065"
+		},
+		{
+			"forge": "UNDERLINE_MARGIN_X",
+			"fabric": "field_43066"
+		},
+		{
+			"forge": "UNDERLINE_MARGIN_BOTTOM",
+			"fabric": "field_43067"
+		},
+		{
+			"forge": "tabManager",
+			"fabric": "tabManager"
+		},
+		{
+			"forge": "tab",
+			"fabric": "tab"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderString(GuiGraphics arg0, Font arg1, int arg2)",
+			"fabric": "drawMessage(DrawContext context, TextRenderer textRenderer, int color)"
+		},
+		{
+			"forge": "renderFocusUnderline(GuiGraphics arg0, Font arg1, int arg2)",
+			"fabric": "drawCurrentTabLine(DrawContext context, TextRenderer textRenderer, int color)"
+		},
+		{
+			"forge": "getTextureY()",
+			"fabric": "getTextureV()"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "playDownSound(SoundManager arg0)",
+			"fabric": "playDownSound(SoundManager arg0)"
+		},
+		{
+			"forge": "tab()",
+			"fabric": "getTab()"
+		},
+		{
+			"forge": "isSelected()",
+			"fabric": "isCurrentTab()"
+		}
+	]
+}

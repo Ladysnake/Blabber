@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces$BuriedTreasurePiece",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces$BuriedTreasurePiece",
+			"fabric": "net.minecraft.structure.BuriedTreasureGenerator$Piece"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "postProcess(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, ChunkPos arg5, BlockPos arg6)",
+			"fabric": "generate(StructureWorldAccess arg0, StructureAccessor arg1, ChunkGenerator arg2, Random arg3, BlockBox arg4, ChunkPos arg5, BlockPos arg6)"
+		},
+		{
+			"forge": "isLiquid(BlockState arg0)",
+			"fabric": "isLiquid(BlockState state)"
+		}
+	]
+}

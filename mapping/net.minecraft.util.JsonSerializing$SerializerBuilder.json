@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.GsonAdapterFactory$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.GsonAdapterFactory$Builder",
+			"fabric": "net.minecraft.util.JsonSerializing$SerializerBuilder"
+		},
+		{
+			"forge": "registry",
+			"fabric": "registry"
+		},
+		{
+			"forge": "registry",
+			"fabric": "registry"
+		},
+		{
+			"forge": "elementName",
+			"fabric": "rootFieldName"
+		},
+		{
+			"forge": "typeKey",
+			"fabric": "idFieldName"
+		},
+		{
+			"forge": "typeGetter",
+			"fabric": "typeGetter"
+		},
+		{
+			"forge": "inlineType",
+			"fabric": "elementSerializer"
+		},
+		{
+			"forge": "defaultType",
+			"fabric": "defaultType"
+		},
+		{
+			"forge": "withInlineSerializer(T arg0, GsonAdapterFactory$InlineSerializer<? extends E> arg1)",
+			"fabric": "elementSerializer(T type, JsonSerializing$ElementSerializer<? extends E> serializer)"
+		},
+		{
+			"forge": "withInlineSerializer(T arg0, GsonAdapterFactory$InlineSerializer<? extends E> arg1)",
+			"fabric": "elementSerializer(T type, JsonSerializing$ElementSerializer<? extends E> serializer)"
+		},
+		{
+			"forge": "withDefaultType(T arg0)",
+			"fabric": "defaultType(T defaultType)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

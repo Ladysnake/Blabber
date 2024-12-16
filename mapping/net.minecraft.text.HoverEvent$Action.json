@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.network.chat.HoverEvent$Action",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.HoverEvent$Action",
+			"fabric": "net.minecraft.text.HoverEvent$Action"
+		},
+		{
+			"forge": "SHOW_TEXT",
+			"fabric": "SHOW_TEXT"
+		},
+		{
+			"forge": "SHOW_TEXT",
+			"fabric": "SHOW_TEXT"
+		},
+		{
+			"forge": "SHOW_ITEM",
+			"fabric": "SHOW_ITEM"
+		},
+		{
+			"forge": "SHOW_ENTITY",
+			"fabric": "SHOW_ENTITY"
+		},
+		{
+			"forge": "LOOKUP",
+			"fabric": "BY_NAME"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "allowFromServer",
+			"fabric": "parsable"
+		},
+		{
+			"forge": "argDeserializer",
+			"fabric": "deserializer"
+		},
+		{
+			"forge": "argSerializer",
+			"fabric": "serializer"
+		},
+		{
+			"forge": "legacyArgDeserializer",
+			"fabric": "legacyDeserializer"
+		},
+		{
+			"forge": "isAllowedFromServer()",
+			"fabric": "isParsable()"
+		},
+		{
+			"forge": "isAllowedFromServer()",
+			"fabric": "isParsable()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getByName(String arg0)",
+			"fabric": "byName(String name)"
+		},
+		{
+			"forge": "cast(Object arg0)",
+			"fabric": "cast(Object o)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0)",
+			"fabric": "buildHoverEvent(com.google.gson.JsonElement contents)"
+		},
+		{
+			"forge": "deserializeFromLegacy(Component arg0)",
+			"fabric": "buildHoverEvent(Text value)"
+		},
+		{
+			"forge": "serializeArg(Object arg0)",
+			"fabric": "contentsToJson(Object contents)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "com.mojang.blaze3d.vertex.BufferBuilder$RenderedBuffer",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.BufferBuilder$RenderedBuffer",
+			"fabric": "net.minecraft.client.render.BufferBuilder$BuiltBuffer"
+		},
+		{
+			"forge": "pointer",
+			"fabric": "batchOffset"
+		},
+		{
+			"forge": "pointer",
+			"fabric": "batchOffset"
+		},
+		{
+			"forge": "drawState",
+			"fabric": "parameters"
+		},
+		{
+			"forge": "released",
+			"fabric": "released"
+		},
+		{
+			"forge": "vertexBuffer()",
+			"fabric": "getVertexBuffer()"
+		},
+		{
+			"forge": "vertexBuffer()",
+			"fabric": "getVertexBuffer()"
+		},
+		{
+			"forge": "indexBuffer()",
+			"fabric": "getIndexBuffer()"
+		},
+		{
+			"forge": "drawState()",
+			"fabric": "getParameters()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "release()",
+			"fabric": "release()"
+		}
+	]
+}

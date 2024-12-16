@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.commands.GameModeCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.GameModeCommand",
+			"fabric": "net.minecraft.server.command.GameModeCommand"
+		},
+		{
+			"forge": "PERMISSION_LEVEL",
+			"fabric": "REQUIRED_PERMISSION_LEVEL"
+		},
+		{
+			"forge": "PERMISSION_LEVEL",
+			"fabric": "REQUIRED_PERMISSION_LEVEL"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "logGamemodeChange(CommandSourceStack arg0, ServerPlayer arg1, GameType arg2)",
+			"fabric": "sendFeedback(ServerCommandSource source, ServerPlayerEntity player, GameMode gameMode)"
+		},
+		{
+			"forge": "setMode(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, Collection<ServerPlayer> arg1, GameType arg2)",
+			"fabric": "execute(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, Collection<ServerPlayerEntity> targets, GameMode gameMode)"
+		}
+	]
+}

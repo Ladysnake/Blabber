@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.server.commands.FillCommand$Mode",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.FillCommand$Mode",
+			"fabric": "net.minecraft.server.command.FillCommand$Mode"
+		},
+		{
+			"forge": "REPLACE",
+			"fabric": "REPLACE"
+		},
+		{
+			"forge": "REPLACE",
+			"fabric": "REPLACE"
+		},
+		{
+			"forge": "OUTLINE",
+			"fabric": "OUTLINE"
+		},
+		{
+			"forge": "HOLLOW",
+			"fabric": "HOLLOW"
+		},
+		{
+			"forge": "DESTROY",
+			"fabric": "DESTROY"
+		},
+		{
+			"forge": "filter",
+			"fabric": "filter"
+		},
+		{
+			"forge": "filter",
+			"fabric": "filter"
+		}
+	]
+}

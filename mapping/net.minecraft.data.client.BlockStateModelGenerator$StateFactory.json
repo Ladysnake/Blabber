@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.data.models.BlockModelGenerators$BlockStateGeneratorSupplier",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.BlockModelGenerators$BlockStateGeneratorSupplier",
+			"fabric": "net.minecraft.data.client.BlockStateModelGenerator$StateFactory"
+		},
+		{
+			"forge": "create(Block arg0, ResourceLocation arg1, TextureMapping arg2, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg3)",
+			"fabric": "create(Block block, Identifier modelId, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "create(Block arg0, ResourceLocation arg1, TextureMapping arg2, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg3)",
+			"fabric": "create(Block block, Identifier modelId, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		}
+	]
+}

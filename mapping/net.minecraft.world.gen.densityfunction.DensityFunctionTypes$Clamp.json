@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$Clamp",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$Clamp",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$Clamp"
+		},
+		{
+			"forge": "input",
+			"fabric": "input"
+		},
+		{
+			"forge": "input",
+			"fabric": "input"
+		},
+		{
+			"forge": "minValue",
+			"fabric": "minValue"
+		},
+		{
+			"forge": "maxValue",
+			"fabric": "maxValue"
+		},
+		{
+			"forge": "DATA_CODEC",
+			"fabric": "CLAMP_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC_HOLDER"
+		},
+		{
+			"forge": "transform(double arg0)",
+			"fabric": "apply(double arg0)"
+		},
+		{
+			"forge": "transform(double arg0)",
+			"fabric": "apply(double arg0)"
+		},
+		{
+			"forge": "mapAll(DensityFunction$Visitor arg0)",
+			"fabric": "apply(DensityFunction$DensityFunctionVisitor arg0)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodecHolder()"
+		},
+		{
+			"forge": "input()",
+			"fabric": "input()"
+		},
+		{
+			"forge": "minValue()",
+			"fabric": "minValue()"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "maxValue()"
+		}
+	]
+}

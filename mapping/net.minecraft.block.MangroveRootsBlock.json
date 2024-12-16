@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.MangroveRootsBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.MangroveRootsBlock",
+			"fabric": "net.minecraft.block.MangroveRootsBlock"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "skipRendering(BlockState arg0, BlockState arg1, Direction arg2)",
+			"fabric": "isSideInvisible(BlockState arg0, BlockState arg1, Direction arg2)"
+		},
+		{
+			"forge": "skipRendering(BlockState arg0, BlockState arg1, Direction arg2)",
+			"fabric": "isSideInvisible(BlockState arg0, BlockState arg1, Direction arg2)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

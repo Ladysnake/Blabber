@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.damagesource.CombatEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.world.damagesource.CombatEntry",
+			"fabric": "net.minecraft.entity.damage.DamageRecord"
+		},
+		{
+			"forge": "source",
+			"fabric": "damageSource"
+		},
+		{
+			"forge": "source",
+			"fabric": "damageSource"
+		},
+		{
+			"forge": "damage",
+			"fabric": "damage"
+		},
+		{
+			"forge": "fallLocation",
+			"fabric": "fallLocation"
+		},
+		{
+			"forge": "fallDistance",
+			"fabric": "fallDistance"
+		},
+		{
+			"forge": "source()",
+			"fabric": "damageSource()"
+		},
+		{
+			"forge": "source()",
+			"fabric": "damageSource()"
+		},
+		{
+			"forge": "damage()",
+			"fabric": "damage()"
+		},
+		{
+			"forge": "fallLocation()",
+			"fabric": "fallLocation()"
+		},
+		{
+			"forge": "fallDistance()",
+			"fabric": "fallDistance()"
+		}
+	]
+}

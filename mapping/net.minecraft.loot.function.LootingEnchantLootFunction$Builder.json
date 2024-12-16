@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.LootingEnchantFunction$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.LootingEnchantFunction$Builder",
+			"fabric": "net.minecraft.loot.function.LootingEnchantLootFunction$Builder"
+		},
+		{
+			"forge": "count",
+			"fabric": "countRange"
+		},
+		{
+			"forge": "count",
+			"fabric": "countRange"
+		},
+		{
+			"forge": "limit",
+			"fabric": "limit"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "setLimit(int arg0)",
+			"fabric": "withLimit(int limit)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

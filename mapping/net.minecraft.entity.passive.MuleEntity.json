@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.Mule",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.Mule",
+			"fabric": "net.minecraft.entity.passive.MuleEntity"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getAngrySound()",
+			"fabric": "getAngrySound()"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getEatingSound()",
+			"fabric": "getEatSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "playChestEquipsSound()",
+			"fabric": "playAddChestSound()"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		}
+	]
+}

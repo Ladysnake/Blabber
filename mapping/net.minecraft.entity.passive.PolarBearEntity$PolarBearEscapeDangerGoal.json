@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.PolarBear$PolarBearPanicGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.PolarBear$PolarBearPanicGoal",
+			"fabric": "net.minecraft.entity.passive.PolarBearEntity$PolarBearEscapeDangerGoal"
+		},
+		{
+			"forge": "shouldPanic()",
+			"fabric": "isInDanger()"
+		},
+		{
+			"forge": "shouldPanic()",
+			"fabric": "isInDanger()"
+		}
+	]
+}

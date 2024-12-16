@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.world.level.lighting.DynamicGraphMinFixedPoint",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.DynamicGraphMinFixedPoint",
+			"fabric": "net.minecraft.world.chunk.light.LevelPropagator"
+		},
+		{
+			"forge": "SOURCE",
+			"fabric": "field_43397"
+		},
+		{
+			"forge": "SOURCE",
+			"fabric": "field_43397"
+		},
+		{
+			"forge": "NO_COMPUTED_LEVEL",
+			"fabric": "MAX_LEVEL"
+		},
+		{
+			"forge": "levelCount",
+			"fabric": "levelCount"
+		},
+		{
+			"forge": "priorityQueue",
+			"fabric": "pendingUpdateQueue"
+		},
+		{
+			"forge": "computedLevels",
+			"fabric": "pendingUpdates"
+		},
+		{
+			"forge": "hasWork",
+			"fabric": "hasPendingUpdates"
+		},
+		{
+			"forge": "removeFromQueue(long arg0)",
+			"fabric": "removePendingUpdate(long id)"
+		},
+		{
+			"forge": "removeFromQueue(long arg0)",
+			"fabric": "removePendingUpdate(long id)"
+		},
+		{
+			"forge": "removeIf(LongPredicate arg0)",
+			"fabric": "removePendingUpdateIf(LongPredicate predicate)"
+		},
+		{
+			"forge": "calculatePriority(int arg0, int arg1)",
+			"fabric": "calculateLevel(int a, int b)"
+		},
+		{
+			"forge": "checkNode(long arg0)",
+			"fabric": "resetLevel(long id)"
+		},
+		{
+			"forge": "checkEdge(long arg0, long arg1, int arg2, boolean arg3)",
+			"fabric": "updateLevel(long sourceId, long id, int level, boolean decrease)"
+		},
+		{
+			"forge": "checkEdge(long arg0, long arg1, int arg2, int arg3, int arg4, boolean arg5)",
+			"fabric": "updateLevel(long sourceId, long id, int level, int currentLevel, int arg4, boolean decrease)"
+		},
+		{
+			"forge": "checkNeighbor(long arg0, long arg1, int arg2, boolean arg3)",
+			"fabric": "propagateLevel(long sourceId, long targetId, int level, boolean decrease)"
+		},
+		{
+			"forge": "hasWork()",
+			"fabric": "hasPendingUpdates()"
+		},
+		{
+			"forge": "runUpdates(int arg0)",
+			"fabric": "applyPendingUpdates(int maxSteps)"
+		},
+		{
+			"forge": "getQueueSize()",
+			"fabric": "getPendingUpdateCount()"
+		},
+		{
+			"forge": "isSource(long arg0)",
+			"fabric": "isMarker(long id)"
+		},
+		{
+			"forge": "getComputedLevel(long arg0, long arg1, int arg2)",
+			"fabric": "recalculateLevel(long id, long excludedId, int maxLevel)"
+		},
+		{
+			"forge": "checkNeighborsAfterUpdate(long arg0, int arg1, boolean arg2)",
+			"fabric": "propagateLevel(long id, int level, boolean decrease)"
+		},
+		{
+			"forge": "getLevel(long arg0)",
+			"fabric": "getLevel(long id)"
+		},
+		{
+			"forge": "setLevel(long arg0, int arg1)",
+			"fabric": "setLevel(long id, int level)"
+		},
+		{
+			"forge": "computeLevelFromNeighbor(long arg0, long arg1, int arg2)",
+			"fabric": "getPropagatedLevel(long sourceId, long targetId, int level)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.sources.LazyLoadedImage",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.sources.LazyLoadedImage",
+			"fabric": "net.minecraft.client.texture.atlas.Sprite"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "resource",
+			"fabric": "resource"
+		},
+		{
+			"forge": "image",
+			"fabric": "image"
+		},
+		{
+			"forge": "referenceCount",
+			"fabric": "regionCount"
+		},
+		{
+			"forge": "get()",
+			"fabric": "read()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "read()"
+		},
+		{
+			"forge": "release()",
+			"fabric": "close()"
+		}
+	]
+}

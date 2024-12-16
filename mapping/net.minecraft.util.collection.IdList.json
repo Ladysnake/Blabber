@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.core.IdMapper",
+	"items": [
+		{
+			"forge": "net.minecraft.core.IdMapper",
+			"fabric": "net.minecraft.util.collection.IdList"
+		},
+		{
+			"forge": "nextId",
+			"fabric": "nextId"
+		},
+		{
+			"forge": "nextId",
+			"fabric": "nextId"
+		},
+		{
+			"forge": "tToId",
+			"fabric": "idMap"
+		},
+		{
+			"forge": "idToT",
+			"fabric": "list"
+		},
+		{
+			"forge": "addMapping(T arg0, int arg1)",
+			"fabric": "set(T value, int id)"
+		},
+		{
+			"forge": "addMapping(T arg0, int arg1)",
+			"fabric": "set(T value, int id)"
+		},
+		{
+			"forge": "add(T arg0)",
+			"fabric": "add(T value)"
+		},
+		{
+			"forge": "getId(T arg0)",
+			"fabric": "getRawId(T arg0)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "contains(int arg0)",
+			"fabric": "containsKey(int index)"
+		},
+		{
+			"forge": "size()",
+			"fabric": "size()"
+		}
+	]
+}

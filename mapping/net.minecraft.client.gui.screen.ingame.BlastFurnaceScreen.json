@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.BlastFurnaceScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.BlastFurnaceScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.BlastFurnaceScreen"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		}
+	]
+}

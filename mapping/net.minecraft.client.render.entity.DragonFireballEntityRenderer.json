@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.entity.DragonFireballRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.DragonFireballRenderer",
+			"fabric": "net.minecraft.client.render.entity.DragonFireballEntityRenderer"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "RENDER_TYPE",
+			"fabric": "LAYER"
+		},
+		{
+			"forge": "getBlockLightLevel(DragonFireball arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(DragonFireballEntity arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "getBlockLightLevel(DragonFireball arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(DragonFireballEntity arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "render(DragonFireball arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(DragonFireballEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "vertex(VertexConsumer arg0, org.joml.Matrix4f arg1, org.joml.Matrix3f arg2, int arg3, float arg4, int arg5, int arg6, int arg7)",
+			"fabric": "produceVertex(VertexConsumer vertexConsumer, org.joml.Matrix4f positionMatrix, org.joml.Matrix3f normalMatrix, int light, float x, int y, int textureU, int textureV)"
+		},
+		{
+			"forge": "getTextureLocation(DragonFireball arg0)",
+			"fabric": "getTexture(DragonFireballEntity arg0)"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer",
+			"fabric": "net.minecraft.client.render.item.BuiltinModelItemRenderer"
+		},
+		{
+			"forge": "SHULKER_BOXES",
+			"fabric": "RENDER_SHULKER_BOX_DYED"
+		},
+		{
+			"forge": "SHULKER_BOXES",
+			"fabric": "RENDER_SHULKER_BOX_DYED"
+		},
+		{
+			"forge": "DEFAULT_SHULKER_BOX",
+			"fabric": "RENDER_SHULKER_BOX"
+		},
+		{
+			"forge": "chest",
+			"fabric": "renderChestNormal"
+		},
+		{
+			"forge": "trappedChest",
+			"fabric": "renderChestTrapped"
+		},
+		{
+			"forge": "enderChest",
+			"fabric": "renderChestEnder"
+		},
+		{
+			"forge": "banner",
+			"fabric": "renderBanner"
+		},
+		{
+			"forge": "bed",
+			"fabric": "renderBed"
+		},
+		{
+			"forge": "conduit",
+			"fabric": "renderConduit"
+		},
+		{
+			"forge": "decoratedPot",
+			"fabric": "renderDecoratedPot"
+		},
+		{
+			"forge": "shieldModel",
+			"fabric": "modelShield"
+		},
+		{
+			"forge": "tridentModel",
+			"fabric": "modelTrident"
+		},
+		{
+			"forge": "skullModels",
+			"fabric": "skullModels"
+		},
+		{
+			"forge": "blockEntityRenderDispatcher",
+			"fabric": "blockEntityRenderDispatcher"
+		},
+		{
+			"forge": "entityModelSet",
+			"fabric": "entityModelLoader"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		},
+		{
+			"forge": "renderByItem(ItemStack arg0, ItemDisplayContext arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(ItemStack stack, ModelTransformationMode mode, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay)"
+		}
+	]
+}

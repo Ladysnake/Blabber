@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.RenderStateShard$MultiTextureStateShard",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderStateShard$MultiTextureStateShard",
+			"fabric": "net.minecraft.client.render.RenderPhase$Textures"
+		},
+		{
+			"forge": "cutoutTexture",
+			"fabric": "id"
+		},
+		{
+			"forge": "cutoutTexture",
+			"fabric": "id"
+		},
+		{
+			"forge": "cutoutTexture()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "cutoutTexture()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "builder()",
+			"fabric": "create()"
+		}
+	]
+}

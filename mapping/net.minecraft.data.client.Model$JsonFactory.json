@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.data.models.model.ModelTemplate$JsonFactory",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.model.ModelTemplate$JsonFactory",
+			"fabric": "net.minecraft.data.client.Model$JsonFactory"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, Map<TextureSlot, ResourceLocation> arg1)",
+			"fabric": "create(Identifier id, Map<TextureKey, Identifier> textures)"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, Map<TextureSlot, ResourceLocation> arg1)",
+			"fabric": "create(Identifier id, Map<TextureKey, Identifier> textures)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.data.recipes.SpecialRecipeBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.SpecialRecipeBuilder",
+			"fabric": "net.minecraft.data.server.recipe.ComplexRecipeJsonBuilder"
+		},
+		{
+			"forge": "serializer",
+			"fabric": "serializer"
+		},
+		{
+			"forge": "serializer",
+			"fabric": "serializer"
+		},
+		{
+			"forge": "special(RecipeSerializer<? extends CraftingRecipe> arg0)",
+			"fabric": "create(RecipeSerializer<? extends CraftingRecipe> serializer)"
+		},
+		{
+			"forge": "special(RecipeSerializer<? extends CraftingRecipe> arg0)",
+			"fabric": "create(RecipeSerializer<? extends CraftingRecipe> serializer)"
+		},
+		{
+			"forge": "save(Consumer<FinishedRecipe> arg0, String arg1)",
+			"fabric": "offerTo(Consumer<RecipeJsonProvider> exporter, String recipeId)"
+		}
+	]
+}

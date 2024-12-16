@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.blaze3d.shaders.EffectProgram",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.shaders.EffectProgram",
+			"fabric": "net.minecraft.client.gl.EffectShaderStage"
+		},
+		{
+			"forge": "PREPROCESSOR",
+			"fabric": "LOADER"
+		},
+		{
+			"forge": "PREPROCESSOR",
+			"fabric": "LOADER"
+		},
+		{
+			"forge": "references",
+			"fabric": "refCount"
+		},
+		{
+			"forge": "attachToEffect(Effect arg0)",
+			"fabric": "attachTo(EffectShaderProgram program)"
+		},
+		{
+			"forge": "attachToEffect(Effect arg0)",
+			"fabric": "attachTo(EffectShaderProgram program)"
+		},
+		{
+			"forge": "close()",
+			"fabric": "release()"
+		},
+		{
+			"forge": "compileShader(Program$Type arg0, String arg1, InputStream arg2, String arg3)",
+			"fabric": "createFromResource(ShaderStage$Type type, String name, InputStream stream, String domain)"
+		}
+	]
+}

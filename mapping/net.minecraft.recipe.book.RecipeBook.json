@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.stats.RecipeBook",
+	"items": [
+		{
+			"forge": "net.minecraft.stats.RecipeBook",
+			"fabric": "net.minecraft.recipe.book.RecipeBook"
+		},
+		{
+			"forge": "known",
+			"fabric": "recipes"
+		},
+		{
+			"forge": "known",
+			"fabric": "recipes"
+		},
+		{
+			"forge": "highlight",
+			"fabric": "toBeDisplayed"
+		},
+		{
+			"forge": "bookSettings",
+			"fabric": "options"
+		},
+		{
+			"forge": "copyOverData(RecipeBook arg0)",
+			"fabric": "copyFrom(RecipeBook book)"
+		},
+		{
+			"forge": "copyOverData(RecipeBook arg0)",
+			"fabric": "copyFrom(RecipeBook book)"
+		},
+		{
+			"forge": "add(Recipe<?> arg0)",
+			"fabric": "add(Recipe<?> recipe)"
+		},
+		{
+			"forge": "add(ResourceLocation arg0)",
+			"fabric": "add(Identifier id)"
+		},
+		{
+			"forge": "contains(Recipe<?> arg0)",
+			"fabric": "contains(Recipe<?> recipe)"
+		},
+		{
+			"forge": "contains(ResourceLocation arg0)",
+			"fabric": "contains(Identifier id)"
+		},
+		{
+			"forge": "remove(Recipe<?> arg0)",
+			"fabric": "remove(Recipe<?> recipe)"
+		},
+		{
+			"forge": "remove(ResourceLocation arg0)",
+			"fabric": "remove(Identifier id)"
+		},
+		{
+			"forge": "willHighlight(Recipe<?> arg0)",
+			"fabric": "shouldDisplay(Recipe<?> recipe)"
+		},
+		{
+			"forge": "removeHighlight(Recipe<?> arg0)",
+			"fabric": "onRecipeDisplayed(Recipe<?> recipe)"
+		},
+		{
+			"forge": "addHighlight(Recipe<?> arg0)",
+			"fabric": "display(Recipe<?> recipe)"
+		},
+		{
+			"forge": "addHighlight(ResourceLocation arg0)",
+			"fabric": "display(Identifier id)"
+		},
+		{
+			"forge": "isOpen(RecipeBookType arg0)",
+			"fabric": "isGuiOpen(RecipeBookCategory category)"
+		},
+		{
+			"forge": "setOpen(RecipeBookType arg0, boolean arg1)",
+			"fabric": "setGuiOpen(RecipeBookCategory category, boolean open)"
+		},
+		{
+			"forge": "isFiltering(RecipeBookMenu<?> arg0)",
+			"fabric": "isFilteringCraftable(AbstractRecipeScreenHandler<?> handler)"
+		},
+		{
+			"forge": "isFiltering(RecipeBookType arg0)",
+			"fabric": "isFilteringCraftable(RecipeBookCategory category)"
+		},
+		{
+			"forge": "setFiltering(RecipeBookType arg0, boolean arg1)",
+			"fabric": "setFilteringCraftable(RecipeBookCategory category, boolean filteringCraftable)"
+		},
+		{
+			"forge": "setBookSettings(RecipeBookSettings arg0)",
+			"fabric": "setOptions(RecipeBookOptions options)"
+		},
+		{
+			"forge": "getBookSettings()",
+			"fabric": "getOptions()"
+		},
+		{
+			"forge": "setBookSetting(RecipeBookType arg0, boolean arg1, boolean arg2)",
+			"fabric": "setCategoryOptions(RecipeBookCategory category, boolean guiOpen, boolean filteringCraftable)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.font.FontSet$GlyphInfoFilter",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.FontSet$GlyphInfoFilter",
+			"fabric": "net.minecraft.client.font.FontStorage$GlyphPair"
+		},
+		{
+			"forge": "glyphInfo",
+			"fabric": "glyph"
+		},
+		{
+			"forge": "glyphInfo",
+			"fabric": "glyph"
+		},
+		{
+			"forge": "glyphInfoNotFishy",
+			"fabric": "advanceValidatedGlyph"
+		},
+		{
+			"forge": "MISSING",
+			"fabric": "MISSING"
+		},
+		{
+			"forge": "select(boolean arg0)",
+			"fabric": "getGlyph(boolean validateAdvance)"
+		},
+		{
+			"forge": "select(boolean arg0)",
+			"fabric": "getGlyph(boolean validateAdvance)"
+		},
+		{
+			"forge": "glyphInfo()",
+			"fabric": "glyph()"
+		},
+		{
+			"forge": "glyphInfoNotFishy()",
+			"fabric": "advanceValidatedGlyph()"
+		}
+	]
+}

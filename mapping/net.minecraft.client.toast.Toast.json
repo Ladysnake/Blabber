@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.components.toasts.Toast",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.toasts.Toast",
+			"fabric": "net.minecraft.client.toast.Toast"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "NO_TOKEN",
+			"fabric": "TYPE"
+		},
+		{
+			"forge": "SLOT_HEIGHT",
+			"fabric": "BASE_HEIGHT"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, ToastComponent arg1, long arg2)",
+			"fabric": "draw(DrawContext context, ToastManager manager, long startTime)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, ToastComponent arg1, long arg2)",
+			"fabric": "draw(DrawContext context, ToastManager manager, long startTime)"
+		},
+		{
+			"forge": "getToken()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "width()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "slotCount()",
+			"fabric": "getRequiredSpaceCount()"
+		}
+	]
+}

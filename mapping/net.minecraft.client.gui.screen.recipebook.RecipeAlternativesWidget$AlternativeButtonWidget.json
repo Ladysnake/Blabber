@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.screens.recipebook.OverlayRecipeComponent$OverlayRecipeButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.recipebook.OverlayRecipeComponent$OverlayRecipeButton",
+			"fabric": "net.minecraft.client.gui.screen.recipebook.RecipeAlternativesWidget$AlternativeButtonWidget"
+		},
+		{
+			"forge": "recipe",
+			"fabric": "recipe"
+		},
+		{
+			"forge": "recipe",
+			"fabric": "recipe"
+		},
+		{
+			"forge": "isCraftable",
+			"fabric": "craftable"
+		},
+		{
+			"forge": "ingredientPos",
+			"fabric": "slots"
+		},
+		{
+			"forge": "calculateIngredientsPositions(Recipe<?> arg0)",
+			"fabric": "alignRecipe(Recipe<?> recipe)"
+		},
+		{
+			"forge": "calculateIngredientsPositions(Recipe<?> arg0)",
+			"fabric": "alignRecipe(Recipe<?> recipe)"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "addItemToSlot(Iterator<Ingredient> arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "acceptAlignedInput(Iterator<Ingredient> arg0, int arg1, int arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

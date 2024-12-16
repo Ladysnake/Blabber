@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.RandomBlockMatchTest",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.RandomBlockMatchTest",
+			"fabric": "net.minecraft.structure.rule.RandomBlockMatchRuleTest"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "probability",
+			"fabric": "probability"
+		},
+		{
+			"forge": "test(BlockState arg0, RandomSource arg1)",
+			"fabric": "test(BlockState arg0, Random arg1)"
+		},
+		{
+			"forge": "test(BlockState arg0, RandomSource arg1)",
+			"fabric": "test(BlockState arg0, Random arg1)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

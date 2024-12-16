@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.RotatedPillarBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.RotatedPillarBlock",
+			"fabric": "net.minecraft.block.PillarBlock"
+		},
+		{
+			"forge": "AXIS",
+			"fabric": "AXIS"
+		},
+		{
+			"forge": "AXIS",
+			"fabric": "AXIS"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "rotatePillar(BlockState arg0, Rotation arg1)",
+			"fabric": "changeRotation(BlockState state, BlockRotation rotation)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		}
+	]
+}

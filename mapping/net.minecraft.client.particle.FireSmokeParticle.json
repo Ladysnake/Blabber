@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.particle.SmokeParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.SmokeParticle",
+			"fabric": "net.minecraft.client.particle.FireSmokeParticle"
+		}
+	]
+}

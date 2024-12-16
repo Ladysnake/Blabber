@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.item.crafting.Recipe",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.Recipe",
+			"fabric": "net.minecraft.recipe.Recipe"
+		},
+		{
+			"forge": "matches(C arg0, Level arg1)",
+			"fabric": "matches(C inventory, World world)"
+		},
+		{
+			"forge": "matches(C arg0, Level arg1)",
+			"fabric": "matches(C inventory, World world)"
+		},
+		{
+			"forge": "assemble(C arg0, RegistryAccess arg1)",
+			"fabric": "craft(C inventory, DynamicRegistryManager registryManager)"
+		},
+		{
+			"forge": "canCraftInDimensions(int arg0, int arg1)",
+			"fabric": "fits(int width, int height)"
+		},
+		{
+			"forge": "getResultItem(RegistryAccess arg0)",
+			"fabric": "getOutput(DynamicRegistryManager registryManager)"
+		},
+		{
+			"forge": "getRemainingItems(C arg0)",
+			"fabric": "getRemainder(C inventory)"
+		},
+		{
+			"forge": "getIngredients()",
+			"fabric": "getIngredients()"
+		},
+		{
+			"forge": "isSpecial()",
+			"fabric": "isIgnoredInRecipeBook()"
+		},
+		{
+			"forge": "showNotification()",
+			"fabric": "showNotification()"
+		},
+		{
+			"forge": "getGroup()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "getToastSymbol()",
+			"fabric": "createIcon()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getSerializer()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "isIncomplete()",
+			"fabric": "isEmpty()"
+		}
+	]
+}

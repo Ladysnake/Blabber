@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.nbt.StreamTagVisitor",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.StreamTagVisitor",
+			"fabric": "net.minecraft.nbt.scanner.NbtScanner"
+		},
+		{
+			"forge": "visitEnd()",
+			"fabric": "visitEnd()"
+		},
+		{
+			"forge": "visitEnd()",
+			"fabric": "visitEnd()"
+		},
+		{
+			"forge": "visit(String arg0)",
+			"fabric": "visitString(String value)"
+		},
+		{
+			"forge": "visit(byte arg0)",
+			"fabric": "visitByte(byte value)"
+		},
+		{
+			"forge": "visit(short arg0)",
+			"fabric": "visitShort(short value)"
+		},
+		{
+			"forge": "visit(int arg0)",
+			"fabric": "visitInt(int value)"
+		},
+		{
+			"forge": "visit(long arg0)",
+			"fabric": "visitLong(long value)"
+		},
+		{
+			"forge": "visit(float arg0)",
+			"fabric": "visitFloat(float value)"
+		},
+		{
+			"forge": "visit(double arg0)",
+			"fabric": "visitDouble(double value)"
+		},
+		{
+			"forge": "visit(byte[] arg0)",
+			"fabric": "visitByteArray(byte[] value)"
+		},
+		{
+			"forge": "visit(int[] arg0)",
+			"fabric": "visitIntArray(int[] value)"
+		},
+		{
+			"forge": "visit(long[] arg0)",
+			"fabric": "visitLongArray(long[] value)"
+		},
+		{
+			"forge": "visitList(TagType<?> arg0, int arg1)",
+			"fabric": "visitListMeta(NbtType<?> entryType, int length)"
+		},
+		{
+			"forge": "visitEntry(TagType<?> arg0)",
+			"fabric": "visitSubNbtType(NbtType<?> type)"
+		},
+		{
+			"forge": "visitEntry(TagType<?> arg0, String arg1)",
+			"fabric": "startSubNbt(NbtType<?> type, String key)"
+		},
+		{
+			"forge": "visitElement(TagType<?> arg0, int arg1)",
+			"fabric": "startListItem(NbtType<?> type, int index)"
+		},
+		{
+			"forge": "visitContainerEnd()",
+			"fabric": "endNested()"
+		},
+		{
+			"forge": "visitRootEntry(TagType<?> arg0)",
+			"fabric": "start(NbtType<?> rootType)"
+		}
+	]
+}

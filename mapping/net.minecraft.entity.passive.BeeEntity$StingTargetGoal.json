@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.Bee$BeeBecomeAngryTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Bee$BeeBecomeAngryTargetGoal",
+			"fabric": "net.minecraft.entity.passive.BeeEntity$StingTargetGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "beeCanTarget()",
+			"fabric": "canSting()"
+		}
+	]
+}

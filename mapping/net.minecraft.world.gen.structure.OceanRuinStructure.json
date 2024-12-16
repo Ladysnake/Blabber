@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure",
+			"fabric": "net.minecraft.world.gen.structure.OceanRuinStructure"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "biomeTemp",
+			"fabric": "biomeTemperature"
+		},
+		{
+			"forge": "largeProbability",
+			"fabric": "largeProbability"
+		},
+		{
+			"forge": "clusterProbability",
+			"fabric": "clusterProbability"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "generatePieces(StructurePiecesBuilder arg0, Structure$GenerationContext arg1)",
+			"fabric": "addPieces(StructurePiecesCollector collector, Structure$Context context)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

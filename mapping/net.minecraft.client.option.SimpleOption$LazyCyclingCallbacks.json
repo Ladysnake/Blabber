@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.OptionInstance$LazyEnum",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$LazyEnum",
+			"fabric": "net.minecraft.client.option.SimpleOption$LazyCyclingCallbacks"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "validateValue",
+			"fabric": "validateValue"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "validateValue(T arg0)",
+			"fabric": "validate(T arg0)"
+		},
+		{
+			"forge": "validateValue(T arg0)",
+			"fabric": "validate(T arg0)"
+		},
+		{
+			"forge": "valueListSupplier()",
+			"fabric": "getValues()"
+		},
+		{
+			"forge": "values()",
+			"fabric": "values()"
+		},
+		{
+			"forge": "validateValue()",
+			"fabric": "validateValue()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		}
+	]
+}

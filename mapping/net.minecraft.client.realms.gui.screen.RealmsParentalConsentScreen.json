@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsParentalConsentScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsParentalConsentScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsParentalConsentScreen"
+		},
+		{
+			"forge": "MESSAGE",
+			"fabric": "PRIVACY_INFO_TEXT"
+		},
+		{
+			"forge": "MESSAGE",
+			"fabric": "PRIVACY_INFO_TEXT"
+		},
+		{
+			"forge": "nextScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "messageLines",
+			"fabric": "privacyInfoText"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

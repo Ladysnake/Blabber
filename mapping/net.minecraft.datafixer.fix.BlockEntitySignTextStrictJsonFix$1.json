@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlockEntitySignTextStrictJsonFix$1",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlockEntitySignTextStrictJsonFix$1",
+			"fabric": "net.minecraft.datafixer.fix.BlockEntitySignTextStrictJsonFix$1"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		}
+	]
+}

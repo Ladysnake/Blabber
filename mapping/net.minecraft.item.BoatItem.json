@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.item.BoatItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.BoatItem",
+			"fabric": "net.minecraft.item.BoatItem"
+		},
+		{
+			"forge": "ENTITY_PREDICATE",
+			"fabric": "RIDERS"
+		},
+		{
+			"forge": "ENTITY_PREDICATE",
+			"fabric": "RIDERS"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "hasChest",
+			"fabric": "chest"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "getBoat(Level arg0, HitResult arg1)",
+			"fabric": "createEntity(World world, HitResult hitResult)"
+		}
+	]
+}

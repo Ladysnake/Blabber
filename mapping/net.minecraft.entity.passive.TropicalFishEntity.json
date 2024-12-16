@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.world.entity.animal.TropicalFish",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.TropicalFish",
+			"fabric": "net.minecraft.entity.passive.TropicalFishEntity"
+		},
+		{
+			"forge": "BUCKET_VARIANT_TAG",
+			"fabric": "BUCKET_VARIANT_TAG_KEY"
+		},
+		{
+			"forge": "BUCKET_VARIANT_TAG",
+			"fabric": "BUCKET_VARIANT_TAG_KEY"
+		},
+		{
+			"forge": "DATA_ID_TYPE_VARIANT",
+			"fabric": "VARIANT"
+		},
+		{
+			"forge": "COMMON_VARIANTS",
+			"fabric": "COMMON_VARIANTS"
+		},
+		{
+			"forge": "isSchool",
+			"fabric": "commonSpawn"
+		},
+		{
+			"forge": "getPredefinedName(int arg0)",
+			"fabric": "getToolTipForVariant(int variant)"
+		},
+		{
+			"forge": "getPredefinedName(int arg0)",
+			"fabric": "getToolTipForVariant(int variant)"
+		},
+		{
+			"forge": "packVariant(TropicalFish$Pattern arg0, DyeColor arg1, DyeColor arg2)",
+			"fabric": "getVariantId(TropicalFishEntity$Variety variety, DyeColor baseColor, DyeColor patternColor)"
+		},
+		{
+			"forge": "getBaseColor(int arg0)",
+			"fabric": "getBaseDyeColor(int variant)"
+		},
+		{
+			"forge": "getPatternColor(int arg0)",
+			"fabric": "getPatternDyeColor(int variant)"
+		},
+		{
+			"forge": "getPattern(int arg0)",
+			"fabric": "getVariety(int variant)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "setPackedVariant(int arg0)",
+			"fabric": "setTropicalFishVariant(int variant)"
+		},
+		{
+			"forge": "isMaxGroupSizeReached(int arg0)",
+			"fabric": "spawnsTooManyForEachTry(int arg0)"
+		},
+		{
+			"forge": "getPackedVariant()",
+			"fabric": "getTropicalFishVariant()"
+		},
+		{
+			"forge": "getBaseColor()",
+			"fabric": "getBaseColorComponents()"
+		},
+		{
+			"forge": "getPatternColor()",
+			"fabric": "getPatternColorComponents()"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "setVariant(TropicalFish$Pattern arg0)",
+			"fabric": "setVariant(TropicalFishEntity$Variety arg0)"
+		},
+		{
+			"forge": "saveToBucketTag(ItemStack arg0)",
+			"fabric": "copyDataToStack(ItemStack arg0)"
+		},
+		{
+			"forge": "getBucketItemStack()",
+			"fabric": "getBucketItem()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getFlopSound()",
+			"fabric": "getFlopSound()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "checkTropicalFishSpawnRules(EntityType<TropicalFish> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canTropicalFishSpawn(EntityType<TropicalFishEntity> type, WorldAccess world, SpawnReason reason, BlockPos pos, Random random)"
+		}
+	]
+}

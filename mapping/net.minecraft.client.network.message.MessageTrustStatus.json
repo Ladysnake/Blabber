@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.ChatTrustLevel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.ChatTrustLevel",
+			"fabric": "net.minecraft.client.network.message.MessageTrustStatus"
+		},
+		{
+			"forge": "SECURE",
+			"fabric": "SECURE"
+		},
+		{
+			"forge": "SECURE",
+			"fabric": "SECURE"
+		},
+		{
+			"forge": "MODIFIED",
+			"fabric": "MODIFIED"
+		},
+		{
+			"forge": "NOT_SECURE",
+			"fabric": "NOT_SECURE"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "serializedName",
+			"fabric": "id"
+		},
+		{
+			"forge": "evaluate(PlayerChatMessage arg0, Component arg1, Instant arg2)",
+			"fabric": "getStatus(SignedMessage message, Text decorated, Instant receptionTimestamp)"
+		},
+		{
+			"forge": "evaluate(PlayerChatMessage arg0, Component arg1, Instant arg2)",
+			"fabric": "getStatus(SignedMessage message, Text decorated, Instant receptionTimestamp)"
+		},
+		{
+			"forge": "isModified(PlayerChatMessage arg0, Component arg1)",
+			"fabric": "isModified(SignedMessage message, Text decorated)"
+		},
+		{
+			"forge": "containsModifiedStyle(Component arg0)",
+			"fabric": "isNotInDefaultFont(Text content)"
+		},
+		{
+			"forge": "isModifiedStyle(Style arg0)",
+			"fabric": "isNotInDefaultFont(Style style)"
+		},
+		{
+			"forge": "isNotSecure()",
+			"fabric": "isInsecure()"
+		},
+		{
+			"forge": "createTag(PlayerChatMessage arg0)",
+			"fabric": "createIndicator(SignedMessage message)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

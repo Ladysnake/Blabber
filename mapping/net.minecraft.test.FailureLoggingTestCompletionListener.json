@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.gametest.framework.LogTestReporter",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.LogTestReporter",
+			"fabric": "net.minecraft.test.FailureLoggingTestCompletionListener"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "onTestFailed(GameTestInfo arg0)",
+			"fabric": "onTestFailed(GameTestState arg0)"
+		},
+		{
+			"forge": "onTestFailed(GameTestInfo arg0)",
+			"fabric": "onTestFailed(GameTestState arg0)"
+		},
+		{
+			"forge": "onTestSuccess(GameTestInfo arg0)",
+			"fabric": "onTestPassed(GameTestState arg0)"
+		}
+	]
+}

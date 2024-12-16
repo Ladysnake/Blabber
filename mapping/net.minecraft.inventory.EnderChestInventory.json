@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.inventory.PlayerEnderChestContainer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.PlayerEnderChestContainer",
+			"fabric": "net.minecraft.inventory.EnderChestInventory"
+		},
+		{
+			"forge": "activeChest",
+			"fabric": "activeBlockEntity"
+		},
+		{
+			"forge": "activeChest",
+			"fabric": "activeBlockEntity"
+		},
+		{
+			"forge": "setActiveChest(EnderChestBlockEntity arg0)",
+			"fabric": "setActiveBlockEntity(EnderChestBlockEntity blockEntity)"
+		},
+		{
+			"forge": "setActiveChest(EnderChestBlockEntity arg0)",
+			"fabric": "setActiveBlockEntity(EnderChestBlockEntity blockEntity)"
+		},
+		{
+			"forge": "isActiveChest(EnderChestBlockEntity arg0)",
+			"fabric": "isActiveBlockEntity(EnderChestBlockEntity blockEntity)"
+		},
+		{
+			"forge": "fromTag(ListTag arg0)",
+			"fabric": "readNbtList(NbtList arg0)"
+		},
+		{
+			"forge": "createTag()",
+			"fabric": "toNbtList()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "startOpen(Player arg0)",
+			"fabric": "onOpen(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stopOpen(Player arg0)",
+			"fabric": "onClose(PlayerEntity arg0)"
+		}
+	]
+}

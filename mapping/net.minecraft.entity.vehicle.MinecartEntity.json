@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.Minecart",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.Minecart",
+			"fabric": "net.minecraft.entity.vehicle.MinecartEntity"
+		},
+		{
+			"forge": "interact(Player arg0, InteractionHand arg1)",
+			"fabric": "interact(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "interact(Player arg0, InteractionHand arg1)",
+			"fabric": "interact(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "getDropItem()",
+			"fabric": "getItem()"
+		},
+		{
+			"forge": "activateMinecart(int arg0, int arg1, int arg2, boolean arg3)",
+			"fabric": "onActivatorRail(int arg0, int arg1, int arg2, boolean arg3)"
+		},
+		{
+			"forge": "getMinecartType()",
+			"fabric": "getMinecartType()"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.Display$BlockDisplay",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Display$BlockDisplay",
+			"fabric": "net.minecraft.entity.decoration.DisplayEntity$BlockDisplayEntity"
+		},
+		{
+			"forge": "TAG_BLOCK_STATE",
+			"fabric": "BLOCK_STATE_NBT_KEY"
+		},
+		{
+			"forge": "TAG_BLOCK_STATE",
+			"fabric": "BLOCK_STATE_NBT_KEY"
+		},
+		{
+			"forge": "DATA_BLOCK_STATE_ID",
+			"fabric": "BLOCK_STATE"
+		},
+		{
+			"forge": "blockRenderState",
+			"fabric": "data"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "onSyncedDataUpdated(EntityDataAccessor<?> arg0)",
+			"fabric": "onTrackedDataSet(TrackedData<?> arg0)"
+		},
+		{
+			"forge": "getBlockState()",
+			"fabric": "getBlockState()"
+		},
+		{
+			"forge": "setBlockState(BlockState arg0)",
+			"fabric": "setBlockState(BlockState state)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "blockRenderState()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "updateRenderSubState(boolean arg0, float arg1)",
+			"fabric": "refreshData(boolean arg0, float arg1)"
+		}
+	]
+}

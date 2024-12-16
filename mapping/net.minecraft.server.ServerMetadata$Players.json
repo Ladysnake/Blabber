@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.protocol.status.ServerStatus$Players",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.status.ServerStatus$Players",
+			"fabric": "net.minecraft.server.ServerMetadata$Players"
+		},
+		{
+			"forge": "max",
+			"fabric": "max"
+		},
+		{
+			"forge": "max",
+			"fabric": "max"
+		},
+		{
+			"forge": "online",
+			"fabric": "online"
+		},
+		{
+			"forge": "sample",
+			"fabric": "sample"
+		},
+		{
+			"forge": "PROFILE_CODEC",
+			"fabric": "GAME_PROFILE_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "max()",
+			"fabric": "max()"
+		},
+		{
+			"forge": "max()",
+			"fabric": "max()"
+		},
+		{
+			"forge": "online()",
+			"fabric": "online()"
+		},
+		{
+			"forge": "sample()",
+			"fabric": "sample()"
+		}
+	]
+}

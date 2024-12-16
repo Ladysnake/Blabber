@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$Palette",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$Palette",
+			"fabric": "net.minecraft.structure.StructureTemplate$PalettedBlockInfoList"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "infos"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "infos"
+		},
+		{
+			"forge": "cache",
+			"fabric": "blockToInfos"
+		},
+		{
+			"forge": "blocks()",
+			"fabric": "getAll()"
+		},
+		{
+			"forge": "blocks()",
+			"fabric": "getAll()"
+		},
+		{
+			"forge": "blocks(Block arg0)",
+			"fabric": "getAllOf(Block block)"
+		}
+	]
+}

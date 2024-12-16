@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.advancements.critereon.EntityHurtPlayerTrigger",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.EntityHurtPlayerTrigger",
+			"fabric": "net.minecraft.advancement.criterion.EntityHurtPlayerCriterion"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "createInstance(com.google.gson.JsonObject arg0, ContextAwarePredicate arg1, DeserializationContext arg2)",
+			"fabric": "conditionsFromJson(com.google.gson.JsonObject arg0, LootContextPredicate arg1, AdvancementEntityPredicateDeserializer arg2)"
+		},
+		{
+			"forge": "trigger(ServerPlayer arg0, DamageSource arg1, float arg2, float arg3, boolean arg4)",
+			"fabric": "trigger(ServerPlayerEntity player, DamageSource source, float dealt, float taken, boolean blocked)"
+		}
+	]
+}

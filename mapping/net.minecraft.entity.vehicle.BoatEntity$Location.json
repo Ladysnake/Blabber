@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.Boat$Status",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.Boat$Status",
+			"fabric": "net.minecraft.entity.vehicle.BoatEntity$Location"
+		},
+		{
+			"forge": "IN_WATER",
+			"fabric": "IN_WATER"
+		},
+		{
+			"forge": "IN_WATER",
+			"fabric": "IN_WATER"
+		},
+		{
+			"forge": "UNDER_WATER",
+			"fabric": "UNDER_WATER"
+		},
+		{
+			"forge": "UNDER_FLOWING_WATER",
+			"fabric": "UNDER_FLOWING_WATER"
+		},
+		{
+			"forge": "ON_LAND",
+			"fabric": "ON_LAND"
+		},
+		{
+			"forge": "IN_AIR",
+			"fabric": "IN_AIR"
+		}
+	]
+}

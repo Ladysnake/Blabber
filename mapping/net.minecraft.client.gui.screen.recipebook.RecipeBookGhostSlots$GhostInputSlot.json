@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.screens.recipebook.GhostRecipe$GhostIngredient",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.recipebook.GhostRecipe$GhostIngredient",
+			"fabric": "net.minecraft.client.gui.screen.recipebook.RecipeBookGhostSlots$GhostInputSlot"
+		},
+		{
+			"forge": "ingredient",
+			"fabric": "ingredient"
+		},
+		{
+			"forge": "ingredient",
+			"fabric": "ingredient"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "getItem()",
+			"fabric": "getCurrentItemStack()"
+		}
+	]
+}

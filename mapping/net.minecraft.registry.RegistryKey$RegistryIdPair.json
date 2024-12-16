@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.resources.ResourceKey$InternKey",
+	"items": [
+		{
+			"forge": "net.minecraft.resources.ResourceKey$InternKey",
+			"fabric": "net.minecraft.registry.RegistryKey$RegistryIdPair"
+		},
+		{
+			"forge": "registry",
+			"fabric": "registry"
+		},
+		{
+			"forge": "registry",
+			"fabric": "registry"
+		},
+		{
+			"forge": "location",
+			"fabric": "id"
+		},
+		{
+			"forge": "registry()",
+			"fabric": "registry()"
+		},
+		{
+			"forge": "registry()",
+			"fabric": "registry()"
+		},
+		{
+			"forge": "location()",
+			"fabric": "id()"
+		}
+	]
+}

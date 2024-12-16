@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.resources.sounds.MinecartSoundInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.MinecartSoundInstance",
+			"fabric": "net.minecraft.client.sound.MovingMinecartSoundInstance"
+		},
+		{
+			"forge": "VOLUME_MIN",
+			"fabric": "field_33001"
+		},
+		{
+			"forge": "VOLUME_MIN",
+			"fabric": "field_33001"
+		},
+		{
+			"forge": "VOLUME_MAX",
+			"fabric": "field_33002"
+		},
+		{
+			"forge": "PITCH_MIN",
+			"fabric": "field_33003"
+		},
+		{
+			"forge": "PITCH_MAX",
+			"fabric": "field_33004"
+		},
+		{
+			"forge": "PITCH_DELTA",
+			"fabric": "field_33005"
+		},
+		{
+			"forge": "minecart",
+			"fabric": "minecart"
+		},
+		{
+			"forge": "pitch",
+			"fabric": "distance"
+		},
+		{
+			"forge": "canPlaySound()",
+			"fabric": "canPlay()"
+		},
+		{
+			"forge": "canPlaySound()",
+			"fabric": "canPlay()"
+		},
+		{
+			"forge": "canStartSilent()",
+			"fabric": "shouldAlwaysPlay()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

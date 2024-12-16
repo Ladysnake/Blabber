@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.nbt.FloatTag",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.FloatTag",
+			"fabric": "net.minecraft.nbt.NbtFloat"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "ZERO",
+			"fabric": "ZERO"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "TYPE"
+		},
+		{
+			"forge": "data",
+			"fabric": "value"
+		},
+		{
+			"forge": "valueOf(float arg0)",
+			"fabric": "of(float value)"
+		},
+		{
+			"forge": "valueOf(float arg0)",
+			"fabric": "of(float value)"
+		},
+		{
+			"forge": "write(DataOutput arg0)",
+			"fabric": "write(DataOutput arg0)"
+		},
+		{
+			"forge": "sizeInBytes()",
+			"fabric": "getSizeInBytes()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getNbtType()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "accept(TagVisitor arg0)",
+			"fabric": "accept(NbtElementVisitor arg0)"
+		},
+		{
+			"forge": "getAsLong()",
+			"fabric": "longValue()"
+		},
+		{
+			"forge": "getAsInt()",
+			"fabric": "intValue()"
+		},
+		{
+			"forge": "getAsShort()",
+			"fabric": "shortValue()"
+		},
+		{
+			"forge": "getAsByte()",
+			"fabric": "byteValue()"
+		},
+		{
+			"forge": "getAsDouble()",
+			"fabric": "doubleValue()"
+		},
+		{
+			"forge": "getAsFloat()",
+			"fabric": "floatValue()"
+		},
+		{
+			"forge": "getAsNumber()",
+			"fabric": "numberValue()"
+		},
+		{
+			"forge": "accept(StreamTagVisitor arg0)",
+			"fabric": "doAccept(NbtScanner arg0)"
+		}
+	]
+}

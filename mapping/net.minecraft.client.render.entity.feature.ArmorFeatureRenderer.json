@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.ArmorFeatureRenderer"
+		},
+		{
+			"forge": "ARMOR_LOCATION_CACHE",
+			"fabric": "ARMOR_TEXTURE_CACHE"
+		},
+		{
+			"forge": "ARMOR_LOCATION_CACHE",
+			"fabric": "ARMOR_TEXTURE_CACHE"
+		},
+		{
+			"forge": "innerModel",
+			"fabric": "innerModel"
+		},
+		{
+			"forge": "outerModel",
+			"fabric": "outerModel"
+		},
+		{
+			"forge": "armorTrimAtlas",
+			"fabric": "armorTrimsAtlas"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		},
+		{
+			"forge": "renderArmorPiece(PoseStack arg0, MultiBufferSource arg1, T arg2, EquipmentSlot arg3, int arg4, A arg5)",
+			"fabric": "renderArmor(MatrixStack matrices, VertexConsumerProvider vertexConsumers, T entity, EquipmentSlot armorSlot, int light, A model)"
+		},
+		{
+			"forge": "setPartVisibility(A arg0, EquipmentSlot arg1)",
+			"fabric": "setVisible(A bipedModel, EquipmentSlot slot)"
+		},
+		{
+			"forge": "renderModel(PoseStack arg0, MultiBufferSource arg1, int arg2, ArmorItem arg3, A arg4, boolean arg5, float arg6, float arg7, float arg8, String arg9)",
+			"fabric": "renderArmorParts(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, ArmorItem item, A model, boolean secondTextureLayer, float red, float green, float blue, String overlay)"
+		},
+		{
+			"forge": "renderTrim(ArmorMaterial arg0, PoseStack arg1, MultiBufferSource arg2, int arg3, ArmorTrim arg4, A arg5, boolean arg6)",
+			"fabric": "renderTrim(ArmorMaterial material, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, ArmorTrim trim, A model, boolean leggings)"
+		},
+		{
+			"forge": "renderGlint(PoseStack arg0, MultiBufferSource arg1, int arg2, A arg3)",
+			"fabric": "renderGlint(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, A model)"
+		},
+		{
+			"forge": "getArmorModel(EquipmentSlot arg0)",
+			"fabric": "getModel(EquipmentSlot slot)"
+		},
+		{
+			"forge": "usesInnerModel(EquipmentSlot arg0)",
+			"fabric": "usesInnerModel(EquipmentSlot slot)"
+		},
+		{
+			"forge": "getArmorLocation(ArmorItem arg0, boolean arg1, String arg2)",
+			"fabric": "getArmorTexture(ArmorItem item, boolean secondLayer, String overlay)"
+		}
+	]
+}

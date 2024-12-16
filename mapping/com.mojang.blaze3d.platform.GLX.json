@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.blaze3d.platform.GLX",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GLX",
+			"fabric": "com.mojang.blaze3d.platform.GLX"
+		},
+		{
+			"forge": "getOpenGLVersionString()",
+			"fabric": "_getRefreshRate(Window window)"
+		},
+		{
+			"forge": "_getRefreshRate(Window arg0)",
+			"fabric": "_getRefreshRate(Window window)"
+		},
+		{
+			"forge": "_setGlfwErrorCallback(org.lwjgl.glfw.GLFWErrorCallbackI arg0)",
+			"fabric": "_setGlfwErrorCallback(org.lwjgl.glfw.GLFWErrorCallbackI callback)"
+		},
+		{
+			"forge": "_shouldClose(Window arg0)",
+			"fabric": "_shouldClose(Window window)"
+		},
+		{
+			"forge": "_init(int arg0, boolean arg1)",
+			"fabric": "_init(int debugVerbosity, boolean debugSync)"
+		},
+		{
+			"forge": "_renderCrosshair(int arg0, boolean arg1, boolean arg2, boolean arg3)",
+			"fabric": "_renderCrosshair(int size, boolean drawX, boolean drawY, boolean drawZ)"
+		},
+		{
+			"forge": "make(Supplier<T> arg0)",
+			"fabric": "make(Supplier<T> factory)"
+		},
+		{
+			"forge": "make(T arg0, Consumer<T> arg1)",
+			"fabric": "make(T object, Consumer<T> initializer)"
+		}
+	]
+}

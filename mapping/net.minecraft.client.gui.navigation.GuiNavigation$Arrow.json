@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.navigation.FocusNavigationEvent$ArrowNavigation",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.navigation.FocusNavigationEvent$ArrowNavigation",
+			"fabric": "net.minecraft.client.gui.navigation.GuiNavigation$Arrow"
+		},
+		{
+			"forge": "direction",
+			"fabric": "direction"
+		},
+		{
+			"forge": "direction",
+			"fabric": "direction"
+		},
+		{
+			"forge": "getVerticalDirectionForInitialFocus()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "getVerticalDirectionForInitialFocus()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "direction()",
+			"fabric": "direction()"
+		}
+	]
+}

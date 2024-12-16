@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.AnyOfCondition$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.AnyOfCondition$Serializer",
+			"fabric": "net.minecraft.loot.condition.AnyOfLootCondition$Serializer"
+		},
+		{
+			"forge": "create(LootItemCondition[] arg0)",
+			"fabric": "fromTerms(LootCondition[] arg0)"
+		},
+		{
+			"forge": "create(LootItemCondition[] arg0)",
+			"fabric": "fromTerms(LootCondition[] arg0)"
+		}
+	]
+}

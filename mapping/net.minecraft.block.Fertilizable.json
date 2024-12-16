@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.BonemealableBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BonemealableBlock",
+			"fabric": "net.minecraft.block.Fertilizable"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World world, Random random, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld world, Random random, BlockPos pos, BlockState state)"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.saveddata.maps.MapItemSavedData$HoldingPlayer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.saveddata.maps.MapItemSavedData$HoldingPlayer",
+			"fabric": "net.minecraft.item.map.MapState$PlayerUpdateTracker"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "dirtyData",
+			"fabric": "dirty"
+		},
+		{
+			"forge": "minDirtyX",
+			"fabric": "startX"
+		},
+		{
+			"forge": "minDirtyY",
+			"fabric": "startZ"
+		},
+		{
+			"forge": "maxDirtyX",
+			"fabric": "endX"
+		},
+		{
+			"forge": "maxDirtyY",
+			"fabric": "endZ"
+		},
+		{
+			"forge": "dirtyDecorations",
+			"fabric": "iconsDirty"
+		},
+		{
+			"forge": "tick",
+			"fabric": "emptyPacketsRequested"
+		},
+		{
+			"forge": "step",
+			"fabric": "field_131"
+		},
+		{
+			"forge": "createPatch()",
+			"fabric": "getMapUpdateData()"
+		},
+		{
+			"forge": "createPatch()",
+			"fabric": "getMapUpdateData()"
+		},
+		{
+			"forge": "nextUpdatePacket(int arg0)",
+			"fabric": "getPacket(int mapId)"
+		},
+		{
+			"forge": "markColorsDirty(int arg0, int arg1)",
+			"fabric": "markDirty(int startX, int startZ)"
+		},
+		{
+			"forge": "markDecorationsDirty()",
+			"fabric": "markIconsDirty()"
+		}
+	]
+}

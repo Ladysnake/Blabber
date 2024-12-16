@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$ResortTransparencyTask",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$ResortTransparencyTask",
+			"fabric": "net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk$SortTask"
+		},
+		{
+			"forge": "compiledChunk",
+			"fabric": "data"
+		},
+		{
+			"forge": "compiledChunk",
+			"fabric": "data"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "doTask(ChunkBufferBuilderPack arg0)",
+			"fabric": "run(BlockBufferBuilderStorage arg0)"
+		},
+		{
+			"forge": "cancel()",
+			"fabric": "cancel()"
+		}
+	]
+}

@@ -1,0 +1,105 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsPendingInvitesScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsPendingInvitesScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsPendingInvitesScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ACCEPT_ICON_LOCATION",
+			"fabric": "ACCEPT_ICON"
+		},
+		{
+			"forge": "REJECT_ICON_LOCATION",
+			"fabric": "REJECT_ICON"
+		},
+		{
+			"forge": "NO_PENDING_INVITES_TEXT",
+			"fabric": "NO_PENDING_TEXT"
+		},
+		{
+			"forge": "ACCEPT_INVITE_TOOLTIP",
+			"fabric": "ACCEPT_TEXT"
+		},
+		{
+			"forge": "REJECT_INVITE_TOOLTIP",
+			"fabric": "REJECT_TEXT"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "toolTip",
+			"fabric": "tooltip"
+		},
+		{
+			"forge": "loaded",
+			"fabric": "loaded"
+		},
+		{
+			"forge": "pendingInvitationSelectionList",
+			"fabric": "pendingInvitationSelectionList"
+		},
+		{
+			"forge": "selectedInvite",
+			"fabric": "selectedInvite"
+		},
+		{
+			"forge": "acceptButton",
+			"fabric": "acceptButton"
+		},
+		{
+			"forge": "rejectButton",
+			"fabric": "rejectButton"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "updateList(int arg0)",
+			"fabric": "updateList(int slot)"
+		},
+		{
+			"forge": "reject(int arg0)",
+			"fabric": "reject(int slot)"
+		},
+		{
+			"forge": "accept(int arg0)",
+			"fabric": "accept(int slot)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderMousehoverTooltip(GuiGraphics arg0, Component arg1, int arg2, int arg3)",
+			"fabric": "renderMousehoverTooltip(DrawContext context, Text tooltip, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "updateButtonStates()",
+			"fabric": "updateButtonStates()"
+		},
+		{
+			"forge": "shouldAcceptAndRejectButtonBeVisible(int arg0)",
+			"fabric": "shouldAcceptAndRejectButtonBeVisible(int invite)"
+		}
+	]
+}

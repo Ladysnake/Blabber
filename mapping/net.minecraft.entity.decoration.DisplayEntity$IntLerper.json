@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.Display$IntInterpolator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Display$IntInterpolator",
+			"fabric": "net.minecraft.entity.decoration.DisplayEntity$IntLerper"
+		},
+		{
+			"forge": "constant(int arg0)",
+			"fabric": "constant(int value)"
+		},
+		{
+			"forge": "constant(int arg0)",
+			"fabric": "constant(int value)"
+		},
+		{
+			"forge": "get(float arg0)",
+			"fabric": "lerp(float delta)"
+		}
+	]
+}

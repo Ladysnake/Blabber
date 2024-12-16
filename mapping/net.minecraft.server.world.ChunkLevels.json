@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.server.level.ChunkLevel",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ChunkLevel",
+			"fabric": "net.minecraft.server.world.ChunkLevels"
+		},
+		{
+			"forge": "FULL_CHUNK_LEVEL",
+			"fabric": "FULL"
+		},
+		{
+			"forge": "FULL_CHUNK_LEVEL",
+			"fabric": "FULL"
+		},
+		{
+			"forge": "BLOCK_TICKING_LEVEL",
+			"fabric": "BLOCK_TICKING"
+		},
+		{
+			"forge": "ENTITY_TICKING_LEVEL",
+			"fabric": "ENTITY_TICKING"
+		},
+		{
+			"forge": "MAX_LEVEL",
+			"fabric": "INACCESSIBLE"
+		},
+		{
+			"forge": "generationStatus(int arg0)",
+			"fabric": "getStatus(int level)"
+		},
+		{
+			"forge": "generationStatus(int arg0)",
+			"fabric": "getStatus(int level)"
+		},
+		{
+			"forge": "byStatus(ChunkStatus arg0)",
+			"fabric": "getLevelFromStatus(ChunkStatus status)"
+		},
+		{
+			"forge": "fullStatus(int arg0)",
+			"fabric": "getType(int level)"
+		},
+		{
+			"forge": "byStatus(FullChunkStatus arg0)",
+			"fabric": "getLevelFromType(ChunkLevelType type)"
+		},
+		{
+			"forge": "isEntityTicking(int arg0)",
+			"fabric": "shouldTickEntities(int level)"
+		},
+		{
+			"forge": "isBlockTicking(int arg0)",
+			"fabric": "shouldTickBlocks(int level)"
+		},
+		{
+			"forge": "isLoaded(int arg0)",
+			"fabric": "isAccessible(int level)"
+		}
+	]
+}

@@ -1,0 +1,241 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen"
+		},
+		{
+			"forge": "CREATIVE_TABS_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "CREATIVE_TABS_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "GUI_CREATIVE_TAB_PREFIX",
+			"fabric": "TAB_TEXTURE_PREFIX"
+		},
+		{
+			"forge": "CUSTOM_SLOT_LOCK",
+			"fabric": "CUSTOM_CREATIVE_LOCK_KEY"
+		},
+		{
+			"forge": "NUM_ROWS",
+			"fabric": "ROWS_COUNT"
+		},
+		{
+			"forge": "NUM_COLS",
+			"fabric": "COLUMNS_COUNT"
+		},
+		{
+			"forge": "TAB_WIDTH",
+			"fabric": "TAB_WIDTH"
+		},
+		{
+			"forge": "TAB_HEIGHT",
+			"fabric": "TAB_HEIGHT"
+		},
+		{
+			"forge": "SCROLLER_WIDTH",
+			"fabric": "SCROLLBAR_WIDTH"
+		},
+		{
+			"forge": "SCROLLER_HEIGHT",
+			"fabric": "SCROLLBAR_HEIGHT"
+		},
+		{
+			"forge": "CONTAINER",
+			"fabric": "INVENTORY"
+		},
+		{
+			"forge": "TRASH_SLOT_TOOLTIP",
+			"fabric": "DELETE_ITEM_SLOT_TEXT"
+		},
+		{
+			"forge": "TEXT_COLOR",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "selectedTab",
+			"fabric": "selectedTab"
+		},
+		{
+			"forge": "scrollOffs",
+			"fabric": "scrollPosition"
+		},
+		{
+			"forge": "scrolling",
+			"fabric": "scrolling"
+		},
+		{
+			"forge": "searchBox",
+			"fabric": "searchBox"
+		},
+		{
+			"forge": "originalSlots",
+			"fabric": "slots"
+		},
+		{
+			"forge": "destroyItemSlot",
+			"fabric": "deleteItemSlot"
+		},
+		{
+			"forge": "listener",
+			"fabric": "listener"
+		},
+		{
+			"forge": "ignoreTextInput",
+			"fabric": "ignoreTypedCharacter"
+		},
+		{
+			"forge": "hasClickedOutside",
+			"fabric": "lastClickOutsideBounds"
+		},
+		{
+			"forge": "visibleTags",
+			"fabric": "searchResultTags"
+		},
+		{
+			"forge": "displayOperatorCreativeTab",
+			"fabric": "operatorTabEnabled"
+		},
+		{
+			"forge": "hasPermissions(Player arg0)",
+			"fabric": "shouldShowOperatorTab(PlayerEntity player)"
+		},
+		{
+			"forge": "hasPermissions(Player arg0)",
+			"fabric": "shouldShowOperatorTab(PlayerEntity player)"
+		},
+		{
+			"forge": "tryRefreshInvalidatedTabs(FeatureFlagSet arg0, boolean arg1, HolderLookup$Provider arg2)",
+			"fabric": "updateDisplayParameters(FeatureSet enabledFeatures, boolean showOperatorTab, RegistryWrapper$WrapperLookup lookup)"
+		},
+		{
+			"forge": "refreshCurrentTabContents(Collection<ItemStack> arg0)",
+			"fabric": "refreshSelectedTab(Collection<ItemStack> displayStacks)"
+		},
+		{
+			"forge": "containerTick()",
+			"fabric": "handledScreenTick()"
+		},
+		{
+			"forge": "slotClicked(Slot arg0, int arg1, int arg2, ClickType arg3)",
+			"fabric": "onMouseClick(Slot arg0, int arg1, int arg2, SlotActionType arg3)"
+		},
+		{
+			"forge": "isCreativeSlot(Slot arg0)",
+			"fabric": "isCreativeInventorySlot(Slot slot)"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "resize(Minecraft arg0, int arg1, int arg2)",
+			"fabric": "resize(MinecraftClient arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "removed()",
+			"fabric": "removed()"
+		},
+		{
+			"forge": "charTyped(char arg0, int arg1)",
+			"fabric": "charTyped(char arg0, int arg1)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "keyReleased(int arg0, int arg1, int arg2)",
+			"fabric": "keyReleased(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "refreshSearchResults()",
+			"fabric": "search()"
+		},
+		{
+			"forge": "updateVisibleTags(String arg0)",
+			"fabric": "searchForTags(String id)"
+		},
+		{
+			"forge": "renderLabels(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawForeground(DrawContext arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseReleased(double arg0, double arg1, int arg2)",
+			"fabric": "mouseReleased(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "canScroll()",
+			"fabric": "hasScrollbar()"
+		},
+		{
+			"forge": "selectTab(CreativeModeTab arg0)",
+			"fabric": "setSelectedTab(ItemGroup group)"
+		},
+		{
+			"forge": "mouseScrolled(double arg0, double arg1, double arg2)",
+			"fabric": "mouseScrolled(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "hasClickedOutside(double arg0, double arg1, int arg2, int arg3, int arg4)",
+			"fabric": "isClickOutsideBounds(double arg0, double arg1, int arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "insideScrollbar(double arg0, double arg1)",
+			"fabric": "isClickInScrollbar(double mouseX, double mouseY)"
+		},
+		{
+			"forge": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)",
+			"fabric": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "getTooltipFromContainerItem(ItemStack arg0)",
+			"fabric": "getTooltipFromItem(ItemStack arg0)"
+		},
+		{
+			"forge": "renderBg(GuiGraphics arg0, float arg1, int arg2, int arg3)",
+			"fabric": "drawBackground(DrawContext arg0, float arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "getTabX(CreativeModeTab arg0)",
+			"fabric": "getTabX(ItemGroup group)"
+		},
+		{
+			"forge": "getTabY(CreativeModeTab arg0)",
+			"fabric": "getTabY(ItemGroup group)"
+		},
+		{
+			"forge": "checkTabClicked(CreativeModeTab arg0, double arg1, double arg2)",
+			"fabric": "isClickInTab(ItemGroup group, double mouseX, double mouseY)"
+		},
+		{
+			"forge": "checkTabHovering(GuiGraphics arg0, CreativeModeTab arg1, int arg2, int arg3)",
+			"fabric": "renderTabTooltipIfHovered(DrawContext context, ItemGroup group, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "renderTabButton(GuiGraphics arg0, CreativeModeTab arg1)",
+			"fabric": "renderTabIcon(DrawContext context, ItemGroup group)"
+		},
+		{
+			"forge": "isInventoryOpen()",
+			"fabric": "isInventoryTabSelected()"
+		},
+		{
+			"forge": "handleHotbarLoadOrSave(Minecraft arg0, int arg1, boolean arg2, boolean arg3)",
+			"fabric": "onHotbarKeyPress(MinecraftClient client, int index, boolean restore, boolean save)"
+		}
+	]
+}

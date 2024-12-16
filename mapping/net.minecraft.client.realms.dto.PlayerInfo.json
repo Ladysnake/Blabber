@@ -1,0 +1,77 @@
+{
+	"title": "com.mojang.realmsclient.dto.PlayerInfo",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.PlayerInfo",
+			"fabric": "net.minecraft.client.realms.dto.PlayerInfo"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "uuid",
+			"fabric": "uuid"
+		},
+		{
+			"forge": "operator",
+			"fabric": "operator"
+		},
+		{
+			"forge": "accepted",
+			"fabric": "accepted"
+		},
+		{
+			"forge": "online",
+			"fabric": "online"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "setName(String arg0)",
+			"fabric": "setName(String name)"
+		},
+		{
+			"forge": "getUuid()",
+			"fabric": "getUuid()"
+		},
+		{
+			"forge": "setUuid(String arg0)",
+			"fabric": "setUuid(String uuid)"
+		},
+		{
+			"forge": "isOperator()",
+			"fabric": "isOperator()"
+		},
+		{
+			"forge": "setOperator(boolean arg0)",
+			"fabric": "setOperator(boolean operator)"
+		},
+		{
+			"forge": "getAccepted()",
+			"fabric": "isAccepted()"
+		},
+		{
+			"forge": "setAccepted(boolean arg0)",
+			"fabric": "setAccepted(boolean accepted)"
+		},
+		{
+			"forge": "getOnline()",
+			"fabric": "isOnline()"
+		},
+		{
+			"forge": "setOnline(boolean arg0)",
+			"fabric": "setOnline(boolean online)"
+		}
+	]
+}

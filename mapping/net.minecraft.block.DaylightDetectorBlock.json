@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.block.DaylightDetectorBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.DaylightDetectorBlock",
+			"fabric": "net.minecraft.block.DaylightDetectorBlock"
+		},
+		{
+			"forge": "POWER",
+			"fabric": "POWER"
+		},
+		{
+			"forge": "POWER",
+			"fabric": "POWER"
+		},
+		{
+			"forge": "INVERTED",
+			"fabric": "INVERTED"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "useShapeForLightOcclusion(BlockState arg0)",
+			"fabric": "hasSidedTransparency(BlockState arg0)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "updateSignalStrength(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "updateState(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getTicker(Level arg0, BlockState arg1, BlockEntityType<T> arg2)",
+			"fabric": "getTicker(World arg0, BlockState arg1, BlockEntityType<T> arg2)"
+		},
+		{
+			"forge": "tickEntity(Level arg0, BlockPos arg1, BlockState arg2, DaylightDetectorBlockEntity arg3)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, DaylightDetectorBlockEntity blockEntity)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

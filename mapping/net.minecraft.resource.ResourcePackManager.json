@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.server.packs.repository.PackRepository",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.repository.PackRepository",
+			"fabric": "net.minecraft.resource.ResourcePackManager"
+		},
+		{
+			"forge": "sources",
+			"fabric": "providers"
+		},
+		{
+			"forge": "sources",
+			"fabric": "providers"
+		},
+		{
+			"forge": "available",
+			"fabric": "profiles"
+		},
+		{
+			"forge": "selected",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "reload()",
+			"fabric": "scanPacks()"
+		},
+		{
+			"forge": "reload()",
+			"fabric": "scanPacks()"
+		},
+		{
+			"forge": "discoverAvailable()",
+			"fabric": "providePackProfiles()"
+		},
+		{
+			"forge": "setSelected(Collection<String> arg0)",
+			"fabric": "setEnabledProfiles(Collection<String> enabled)"
+		},
+		{
+			"forge": "addPack(String arg0)",
+			"fabric": "enable(String profile)"
+		},
+		{
+			"forge": "removePack(String arg0)",
+			"fabric": "disable(String profile)"
+		},
+		{
+			"forge": "rebuildSelected(Collection<String> arg0)",
+			"fabric": "buildEnabledProfiles(Collection<String> enabledNames)"
+		},
+		{
+			"forge": "getAvailablePacks(Collection<String> arg0)",
+			"fabric": "streamProfilesByName(Collection<String> names)"
+		},
+		{
+			"forge": "getAvailableIds()",
+			"fabric": "getNames()"
+		},
+		{
+			"forge": "getAvailablePacks()",
+			"fabric": "getProfiles()"
+		},
+		{
+			"forge": "getSelectedIds()",
+			"fabric": "getEnabledNames()"
+		},
+		{
+			"forge": "getRequestedFeatureFlags()",
+			"fabric": "getRequestedFeatures()"
+		},
+		{
+			"forge": "getSelectedPacks()",
+			"fabric": "getEnabledProfiles()"
+		},
+		{
+			"forge": "getPack(String arg0)",
+			"fabric": "getProfile(String name)"
+		},
+		{
+			"forge": "isAvailable(String arg0)",
+			"fabric": "hasProfile(String name)"
+		},
+		{
+			"forge": "openAllSelected()",
+			"fabric": "createResourcePacks()"
+		}
+	]
+}

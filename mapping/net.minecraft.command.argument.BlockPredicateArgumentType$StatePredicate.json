@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.commands.arguments.blocks.BlockPredicateArgument$BlockPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.blocks.BlockPredicateArgument$BlockPredicate",
+			"fabric": "net.minecraft.command.argument.BlockPredicateArgumentType$StatePredicate"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "properties",
+			"fabric": "properties"
+		},
+		{
+			"forge": "nbt",
+			"fabric": "nbt"
+		},
+		{
+			"forge": "test(BlockInWorld arg0)",
+			"fabric": "test(CachedBlockPosition arg0)"
+		},
+		{
+			"forge": "test(BlockInWorld arg0)",
+			"fabric": "test(CachedBlockPosition arg0)"
+		},
+		{
+			"forge": "requiresNbt()",
+			"fabric": "hasNbt()"
+		}
+	]
+}

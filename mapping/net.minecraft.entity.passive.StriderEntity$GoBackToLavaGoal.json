@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.monster.Strider$StriderGoToLavaGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Strider$StriderGoToLavaGoal",
+			"fabric": "net.minecraft.entity.passive.StriderEntity$GoBackToLavaGoal"
+		},
+		{
+			"forge": "strider",
+			"fabric": "strider"
+		},
+		{
+			"forge": "strider",
+			"fabric": "strider"
+		},
+		{
+			"forge": "getMoveToTarget()",
+			"fabric": "getTargetPos()"
+		},
+		{
+			"forge": "getMoveToTarget()",
+			"fabric": "getTargetPos()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "shouldRecalculatePath()",
+			"fabric": "shouldResetPath()"
+		},
+		{
+			"forge": "isValidTarget(LevelReader arg0, BlockPos arg1)",
+			"fabric": "isTargetPos(WorldView arg0, BlockPos arg1)"
+		}
+	]
+}

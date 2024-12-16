@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.heightproviders.HeightProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.heightproviders.HeightProvider",
+			"fabric": "net.minecraft.world.gen.heightprovider.HeightProvider"
+		},
+		{
+			"forge": "CONSTANT_OR_DISPATCH_CODEC",
+			"fabric": "OFFSET_OR_HEIGHT_CODEC"
+		},
+		{
+			"forge": "CONSTANT_OR_DISPATCH_CODEC",
+			"fabric": "OFFSET_OR_HEIGHT_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "sample(RandomSource arg0, WorldGenerationContext arg1)",
+			"fabric": "get(Random random, HeightContext context)"
+		},
+		{
+			"forge": "sample(RandomSource arg0, WorldGenerationContext arg1)",
+			"fabric": "get(Random random, HeightContext context)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

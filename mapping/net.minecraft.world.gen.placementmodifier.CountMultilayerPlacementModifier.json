@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.CountOnEveryLayerPlacement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.CountOnEveryLayerPlacement",
+			"fabric": "net.minecraft.world.gen.placementmodifier.CountMultilayerPlacementModifier"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "MODIFIER_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "MODIFIER_CODEC"
+		},
+		{
+			"forge": "count",
+			"fabric": "count"
+		},
+		{
+			"forge": "of(IntProvider arg0)",
+			"fabric": "of(IntProvider count)"
+		},
+		{
+			"forge": "of(IntProvider arg0)",
+			"fabric": "of(IntProvider count)"
+		},
+		{
+			"forge": "of(int arg0)",
+			"fabric": "of(int count)"
+		},
+		{
+			"forge": "getPositions(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "getPositions(FeaturePlacementContext arg0, Random arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "findOnGroundYPosition(PlacementContext arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "findPos(FeaturePlacementContext context, int x, int y, int z, int targetY)"
+		},
+		{
+			"forge": "isEmpty(BlockState arg0)",
+			"fabric": "blocksSpawn(BlockState state)"
+		}
+	]
+}

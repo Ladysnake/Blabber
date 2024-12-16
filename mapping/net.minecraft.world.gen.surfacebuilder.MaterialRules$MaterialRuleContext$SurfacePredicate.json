@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$Context$AbovePreliminarySurfaceCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$Context$AbovePreliminarySurfaceCondition",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$MaterialRuleContext$SurfacePredicate"
+		},
+		{
+			"forge": "test()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "test()",
+			"fabric": "get()"
+		}
+	]
+}

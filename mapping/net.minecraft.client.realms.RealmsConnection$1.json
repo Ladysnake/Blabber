@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.realms.RealmsConnect$1",
+	"items": [
+		{
+			"forge": "net.minecraft.realms.RealmsConnect$1",
+			"fabric": "net.minecraft.client.realms.RealmsConnection$1"
+		}
+	]
+}

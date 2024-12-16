@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.level.block.FrogspawnBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.FrogspawnBlock",
+			"fabric": "net.minecraft.block.FrogspawnBlock"
+		},
+		{
+			"forge": "MIN_TADPOLES_SPAWN",
+			"fabric": "MIN_TADPOLES"
+		},
+		{
+			"forge": "MIN_TADPOLES_SPAWN",
+			"fabric": "MIN_TADPOLES"
+		},
+		{
+			"forge": "MAX_TADPOLES_SPAWN",
+			"fabric": "MAX_TADPOLES"
+		},
+		{
+			"forge": "DEFAULT_MIN_HATCH_TICK_DELAY",
+			"fabric": "MIN_HATCH_TIME"
+		},
+		{
+			"forge": "DEFAULT_MAX_HATCH_TICK_DELAY",
+			"fabric": "MAX_HATCH_TIME"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "minHatchTickDelay",
+			"fabric": "minHatchTime"
+		},
+		{
+			"forge": "maxHatchTickDelay",
+			"fabric": "maxHatchTime"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "getFrogspawnHatchDelay(RandomSource arg0)",
+			"fabric": "getHatchTime(Random random)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "mayPlaceOn(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "canLayAt(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "hatchFrogspawn(ServerLevel arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "hatch(ServerWorld world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "destroyBlock(Level arg0, BlockPos arg1)",
+			"fabric": "breakWithoutDrop(World world, BlockPos pos)"
+		},
+		{
+			"forge": "spawnTadpoles(ServerLevel arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "spawnTadpoles(ServerWorld world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "getRandomTadpolePositionOffset(RandomSource arg0)",
+			"fabric": "getSpawnOffset(Random random)"
+		},
+		{
+			"forge": "setHatchDelay(int arg0, int arg1)",
+			"fabric": "setHatchTimeRange(int min, int max)"
+		},
+		{
+			"forge": "setDefaultHatchDelay()",
+			"fabric": "resetHatchTimeRange()"
+		}
+	]
+}

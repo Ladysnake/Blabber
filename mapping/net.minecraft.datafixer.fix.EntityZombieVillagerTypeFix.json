@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityZombieVillagerTypeFix"
+		},
+		{
+			"forge": "PROFESSION_MAX",
+			"fabric": "field_29883"
+		},
+		{
+			"forge": "PROFESSION_MAX",
+			"fabric": "field_29883"
+		},
+		{
+			"forge": "RANDOM",
+			"fabric": "RANDOM"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixZombieType(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixZombieType(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "getVillagerProfession(int arg0)",
+			"fabric": "clampType(int type)"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> arg0)"
+		}
+	]
+}

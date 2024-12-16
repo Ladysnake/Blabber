@@ -1,0 +1,169 @@
+{
+	"title": "net.minecraft.world.entity.npc.AbstractVillager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.AbstractVillager",
+			"fabric": "net.minecraft.entity.passive.MerchantEntity"
+		},
+		{
+			"forge": "DATA_UNHAPPY_COUNTER",
+			"fabric": "HEAD_ROLLING_TIME_LEFT"
+		},
+		{
+			"forge": "DATA_UNHAPPY_COUNTER",
+			"fabric": "HEAD_ROLLING_TIME_LEFT"
+		},
+		{
+			"forge": "VILLAGER_SLOT_OFFSET",
+			"fabric": "field_30599"
+		},
+		{
+			"forge": "VILLAGER_INVENTORY_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "tradingPlayer",
+			"fabric": "customer"
+		},
+		{
+			"forge": "offers",
+			"fabric": "offers"
+		},
+		{
+			"forge": "inventory",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "getUnhappyCounter()",
+			"fabric": "getHeadRollingTimeLeft()"
+		},
+		{
+			"forge": "setUnhappyCounter(int arg0)",
+			"fabric": "setHeadRollingTimeLeft(int ticks)"
+		},
+		{
+			"forge": "getVillagerXp()",
+			"fabric": "getExperience()"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "setTradingPlayer(Player arg0)",
+			"fabric": "setCustomer(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getTradingPlayer()",
+			"fabric": "getCustomer()"
+		},
+		{
+			"forge": "isTrading()",
+			"fabric": "hasCustomer()"
+		},
+		{
+			"forge": "getOffers()",
+			"fabric": "getOffers()"
+		},
+		{
+			"forge": "overrideOffers(MerchantOffers arg0)",
+			"fabric": "setOffersFromServer(TradeOfferList arg0)"
+		},
+		{
+			"forge": "overrideXp(int arg0)",
+			"fabric": "setExperienceFromServer(int arg0)"
+		},
+		{
+			"forge": "notifyTrade(MerchantOffer arg0)",
+			"fabric": "trade(TradeOffer arg0)"
+		},
+		{
+			"forge": "rewardTradeXp(MerchantOffer arg0)",
+			"fabric": "afterUsing(TradeOffer offer)"
+		},
+		{
+			"forge": "showProgressBar()",
+			"fabric": "isLeveledMerchant()"
+		},
+		{
+			"forge": "notifyTradeUpdated(ItemStack arg0)",
+			"fabric": "onSellingItem(ItemStack arg0)"
+		},
+		{
+			"forge": "getNotifyTradeSound()",
+			"fabric": "getYesSound()"
+		},
+		{
+			"forge": "getTradeUpdatedSound(boolean arg0)",
+			"fabric": "getTradingSound(boolean sold)"
+		},
+		{
+			"forge": "playCelebrateSound()",
+			"fabric": "playCelebrateSound()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "changeDimension(ServerLevel arg0)",
+			"fabric": "moveToWorld(ServerWorld arg0)"
+		},
+		{
+			"forge": "stopTrading()",
+			"fabric": "resetCustomer()"
+		},
+		{
+			"forge": "die(DamageSource arg0)",
+			"fabric": "onDeath(DamageSource arg0)"
+		},
+		{
+			"forge": "addParticlesAroundSelf(ParticleOptions arg0)",
+			"fabric": "produceParticles(ParticleEffect parameters)"
+		},
+		{
+			"forge": "canBeLeashed(Player arg0)",
+			"fabric": "canBeLeashedBy(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getInventory()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "getSlot(int arg0)",
+			"fabric": "getStackReference(int arg0)"
+		},
+		{
+			"forge": "updateTrades()",
+			"fabric": "fillRecipes()"
+		},
+		{
+			"forge": "addOffersFromItemListings(MerchantOffers arg0, VillagerTrades$ItemListing[] arg1, int arg2)",
+			"fabric": "fillRecipesFromPool(TradeOfferList recipeList, TradeOffers$Factory[] pool, int count)"
+		},
+		{
+			"forge": "getRopeHoldPosition(float arg0)",
+			"fabric": "getLeashPos(float arg0)"
+		},
+		{
+			"forge": "isClientSide()",
+			"fabric": "isClient()"
+		}
+	]
+}

@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap",
+	"items": [
+		{
+			"forge": "net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap",
+			"fabric": "net.minecraft.util.collection.Int2ObjectBiMap"
+		},
+		{
+			"forge": "NOT_FOUND",
+			"fabric": "ABSENT"
+		},
+		{
+			"forge": "NOT_FOUND",
+			"fabric": "ABSENT"
+		},
+		{
+			"forge": "EMPTY_SLOT",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "LOADFACTOR",
+			"fabric": "LOAD_FACTOR"
+		},
+		{
+			"forge": "keys",
+			"fabric": "values"
+		},
+		{
+			"forge": "values",
+			"fabric": "ids"
+		},
+		{
+			"forge": "byId",
+			"fabric": "idToValues"
+		},
+		{
+			"forge": "nextId",
+			"fabric": "nextId"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "create(int arg0)",
+			"fabric": "create(int expectedSize)"
+		},
+		{
+			"forge": "create(int arg0)",
+			"fabric": "create(int expectedSize)"
+		},
+		{
+			"forge": "getId(K arg0)",
+			"fabric": "getRawId(K arg0)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "getValue(int arg0)",
+			"fabric": "getIdFromIndex(int index)"
+		},
+		{
+			"forge": "contains(K arg0)",
+			"fabric": "contains(K value)"
+		},
+		{
+			"forge": "contains(int arg0)",
+			"fabric": "containsKey(int index)"
+		},
+		{
+			"forge": "add(K arg0)",
+			"fabric": "add(K value)"
+		},
+		{
+			"forge": "nextId()",
+			"fabric": "nextId()"
+		},
+		{
+			"forge": "grow(int arg0)",
+			"fabric": "resize(int newSize)"
+		},
+		{
+			"forge": "addMapping(K arg0, int arg1)",
+			"fabric": "put(K value, int id)"
+		},
+		{
+			"forge": "hash(K arg0)",
+			"fabric": "getIdealIndex(K value)"
+		},
+		{
+			"forge": "indexOf(K arg0, int arg1)",
+			"fabric": "findIndex(K value, int id)"
+		},
+		{
+			"forge": "findEmpty(int arg0)",
+			"fabric": "findFree(int size)"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "size()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.model.AnimationUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.AnimationUtils",
+			"fabric": "net.minecraft.client.render.entity.model.CrossbowPosing"
+		},
+		{
+			"forge": "animateCrossbowHold(ModelPart arg0, ModelPart arg1, ModelPart arg2, boolean arg3)",
+			"fabric": "hold(ModelPart holdingArm, ModelPart otherArm, ModelPart head, boolean rightArmed)"
+		},
+		{
+			"forge": "animateCrossbowHold(ModelPart arg0, ModelPart arg1, ModelPart arg2, boolean arg3)",
+			"fabric": "hold(ModelPart holdingArm, ModelPart otherArm, ModelPart head, boolean rightArmed)"
+		},
+		{
+			"forge": "animateCrossbowCharge(ModelPart arg0, ModelPart arg1, LivingEntity arg2, boolean arg3)",
+			"fabric": "charge(ModelPart holdingArm, ModelPart pullingArm, LivingEntity actor, boolean rightArmed)"
+		},
+		{
+			"forge": "swingWeaponDown(ModelPart arg0, ModelPart arg1, T arg2, float arg3, float arg4)",
+			"fabric": "meleeAttack(ModelPart leftArm, ModelPart rightArm, T actor, float swingProgress, float animationProgress)"
+		},
+		{
+			"forge": "bobModelPart(ModelPart arg0, float arg1, float arg2)",
+			"fabric": "swingArm(ModelPart arm, float animationProgress, float sigma)"
+		},
+		{
+			"forge": "bobArms(ModelPart arg0, ModelPart arg1, float arg2)",
+			"fabric": "swingArms(ModelPart leftArm, ModelPart rightArm, float animationProgress)"
+		},
+		{
+			"forge": "animateZombieArms(ModelPart arg0, ModelPart arg1, boolean arg2, float arg3, float arg4)",
+			"fabric": "meleeAttack(ModelPart leftArm, ModelPart rightArm, boolean attacking, float swingProgress, float animationProgress)"
+		}
+	]
+}

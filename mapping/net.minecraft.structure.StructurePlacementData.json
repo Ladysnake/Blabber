@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings",
+			"fabric": "net.minecraft.structure.StructurePlacementData"
+		},
+		{
+			"forge": "mirror",
+			"fabric": "mirror"
+		},
+		{
+			"forge": "mirror",
+			"fabric": "mirror"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "rotationPivot",
+			"fabric": "position"
+		},
+		{
+			"forge": "ignoreEntities",
+			"fabric": "ignoreEntities"
+		},
+		{
+			"forge": "boundingBox",
+			"fabric": "boundingBox"
+		},
+		{
+			"forge": "keepLiquids",
+			"fabric": "placeFluids"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "palette",
+			"fabric": "field_15575"
+		},
+		{
+			"forge": "processors",
+			"fabric": "processors"
+		},
+		{
+			"forge": "knownShape",
+			"fabric": "updateNeighbors"
+		},
+		{
+			"forge": "finalizeEntities",
+			"fabric": "initializeMobs"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "setMirror(Mirror arg0)",
+			"fabric": "setMirror(BlockMirror mirror)"
+		},
+		{
+			"forge": "setRotation(Rotation arg0)",
+			"fabric": "setRotation(BlockRotation rotation)"
+		},
+		{
+			"forge": "setRotationPivot(BlockPos arg0)",
+			"fabric": "setPosition(BlockPos position)"
+		},
+		{
+			"forge": "setIgnoreEntities(boolean arg0)",
+			"fabric": "setIgnoreEntities(boolean ignoreEntities)"
+		},
+		{
+			"forge": "setBoundingBox(BoundingBox arg0)",
+			"fabric": "setBoundingBox(BlockBox boundingBox)"
+		},
+		{
+			"forge": "setRandom(RandomSource arg0)",
+			"fabric": "setRandom(Random random)"
+		},
+		{
+			"forge": "setKeepLiquids(boolean arg0)",
+			"fabric": "setPlaceFluids(boolean placeFluids)"
+		},
+		{
+			"forge": "setKnownShape(boolean arg0)",
+			"fabric": "setUpdateNeighbors(boolean updateNeighbors)"
+		},
+		{
+			"forge": "clearProcessors()",
+			"fabric": "clearProcessors()"
+		},
+		{
+			"forge": "addProcessor(StructureProcessor arg0)",
+			"fabric": "addProcessor(StructureProcessor processor)"
+		},
+		{
+			"forge": "popProcessor(StructureProcessor arg0)",
+			"fabric": "removeProcessor(StructureProcessor processor)"
+		},
+		{
+			"forge": "getMirror()",
+			"fabric": "getMirror()"
+		},
+		{
+			"forge": "getRotation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "getRotationPivot()",
+			"fabric": "getPosition()"
+		},
+		{
+			"forge": "getRandom(BlockPos arg0)",
+			"fabric": "getRandom(BlockPos pos)"
+		},
+		{
+			"forge": "isIgnoreEntities()",
+			"fabric": "shouldIgnoreEntities()"
+		},
+		{
+			"forge": "getBoundingBox()",
+			"fabric": "getBoundingBox()"
+		},
+		{
+			"forge": "getKnownShape()",
+			"fabric": "shouldUpdateNeighbors()"
+		},
+		{
+			"forge": "getProcessors()",
+			"fabric": "getProcessors()"
+		},
+		{
+			"forge": "shouldKeepLiquids()",
+			"fabric": "shouldPlaceFluids()"
+		},
+		{
+			"forge": "getRandomPalette(List<StructureTemplate$Palette> arg0, BlockPos arg1)",
+			"fabric": "getRandomBlockInfos(List<StructureTemplate$PalettedBlockInfoList> infoLists, BlockPos pos)"
+		},
+		{
+			"forge": "setFinalizeEntities(boolean arg0)",
+			"fabric": "setInitializeMobs(boolean initializeMobs)"
+		},
+		{
+			"forge": "shouldFinalizeEntities()",
+			"fabric": "shouldInitializeMobs()"
+		}
+	]
+}

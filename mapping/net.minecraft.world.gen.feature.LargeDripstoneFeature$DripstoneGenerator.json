@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature$LargeDripstone",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature$LargeDripstone",
+			"fabric": "net.minecraft.world.gen.feature.LargeDripstoneFeature$DripstoneGenerator"
+		},
+		{
+			"forge": "root",
+			"fabric": "pos"
+		},
+		{
+			"forge": "root",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pointingUp",
+			"fabric": "isStalagmite"
+		},
+		{
+			"forge": "radius",
+			"fabric": "scale"
+		},
+		{
+			"forge": "bluntness",
+			"fabric": "bluntness"
+		},
+		{
+			"forge": "scale",
+			"fabric": "heightScale"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getBaseScale()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getBaseScale()"
+		},
+		{
+			"forge": "getMinY()",
+			"fabric": "getBottomY()"
+		},
+		{
+			"forge": "getMaxY()",
+			"fabric": "getTopY()"
+		},
+		{
+			"forge": "moveBackUntilBaseIsInsideStoneAndShrinkRadiusIfNecessary(WorldGenLevel arg0, LargeDripstoneFeature$WindOffsetter arg1)",
+			"fabric": "canGenerate(StructureWorldAccess world, LargeDripstoneFeature$WindModifier wind)"
+		},
+		{
+			"forge": "getHeightAtRadius(float arg0)",
+			"fabric": "scale(float height)"
+		},
+		{
+			"forge": "placeBlocks(WorldGenLevel arg0, RandomSource arg1, LargeDripstoneFeature$WindOffsetter arg2)",
+			"fabric": "generate(StructureWorldAccess world, Random arg1, LargeDripstoneFeature$WindModifier wind)"
+		},
+		{
+			"forge": "isSuitableForWind(LargeDripstoneConfiguration arg0)",
+			"fabric": "generateWind(LargeDripstoneFeatureConfig config)"
+		}
+	]
+}

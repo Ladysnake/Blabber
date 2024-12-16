@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.UpdateStructureBlockC2SPacket"
+		},
+		{
+			"forge": "FLAG_IGNORE_ENTITIES",
+			"fabric": "IGNORE_ENTITIES_MASK"
+		},
+		{
+			"forge": "FLAG_IGNORE_ENTITIES",
+			"fabric": "IGNORE_ENTITIES_MASK"
+		},
+		{
+			"forge": "FLAG_SHOW_AIR",
+			"fabric": "SHOW_AIR_MASK"
+		},
+		{
+			"forge": "FLAG_SHOW_BOUNDING_BOX",
+			"fabric": "SHOW_BOUNDING_BOX_MASK"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "updateType",
+			"fabric": "action"
+		},
+		{
+			"forge": "mode",
+			"fabric": "mode"
+		},
+		{
+			"forge": "name",
+			"fabric": "templateName"
+		},
+		{
+			"forge": "offset",
+			"fabric": "offset"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "mirror",
+			"fabric": "mirror"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "data",
+			"fabric": "metadata"
+		},
+		{
+			"forge": "ignoreEntities",
+			"fabric": "ignoreEntities"
+		},
+		{
+			"forge": "showAir",
+			"fabric": "showAir"
+		},
+		{
+			"forge": "showBoundingBox",
+			"fabric": "showBoundingBox"
+		},
+		{
+			"forge": "integrity",
+			"fabric": "integrity"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getUpdateType()",
+			"fabric": "getAction()"
+		},
+		{
+			"forge": "getMode()",
+			"fabric": "getMode()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getTemplateName()"
+		},
+		{
+			"forge": "getOffset()",
+			"fabric": "getOffset()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getMirror()",
+			"fabric": "getMirror()"
+		},
+		{
+			"forge": "getRotation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getMetadata()"
+		},
+		{
+			"forge": "isIgnoreEntities()",
+			"fabric": "shouldIgnoreEntities()"
+		},
+		{
+			"forge": "isShowAir()",
+			"fabric": "shouldShowAir()"
+		},
+		{
+			"forge": "isShowBoundingBox()",
+			"fabric": "shouldShowBoundingBox()"
+		},
+		{
+			"forge": "getIntegrity()",
+			"fabric": "getIntegrity()"
+		},
+		{
+			"forge": "getSeed()",
+			"fabric": "getSeed()"
+		}
+	]
+}

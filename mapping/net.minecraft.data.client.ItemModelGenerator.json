@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.data.models.ItemModelGenerators",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.ItemModelGenerators",
+			"fabric": "net.minecraft.data.client.ItemModelGenerator"
+		},
+		{
+			"forge": "TRIM_TYPE_PREDICATE_ID",
+			"fabric": "TRIM_TYPE"
+		},
+		{
+			"forge": "TRIM_TYPE_PREDICATE_ID",
+			"fabric": "TRIM_TYPE"
+		},
+		{
+			"forge": "GENERATED_TRIM_MODELS",
+			"fabric": "TRIM_MATERIALS"
+		},
+		{
+			"forge": "output",
+			"fabric": "writer"
+		},
+		{
+			"forge": "generateFlatItem(Item arg0, ModelTemplate arg1)",
+			"fabric": "register(Item item, Model model)"
+		},
+		{
+			"forge": "generateFlatItem(Item arg0, ModelTemplate arg1)",
+			"fabric": "register(Item item, Model model)"
+		},
+		{
+			"forge": "generateFlatItem(Item arg0, String arg1, ModelTemplate arg2)",
+			"fabric": "register(Item item, String suffix, Model model)"
+		},
+		{
+			"forge": "generateFlatItem(Item arg0, Item arg1, ModelTemplate arg2)",
+			"fabric": "register(Item item, Item texture, Model model)"
+		},
+		{
+			"forge": "generateCompassItem(Item arg0)",
+			"fabric": "registerCompass(Item compass)"
+		},
+		{
+			"forge": "generateClockItem(Item arg0)",
+			"fabric": "registerClock(Item clock)"
+		},
+		{
+			"forge": "generateLayeredItem(ResourceLocation arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "uploadArmor(Identifier id, Identifier layer0, Identifier layer1)"
+		},
+		{
+			"forge": "generateLayeredItem(ResourceLocation arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3)",
+			"fabric": "uploadArmor(Identifier id, Identifier layer0, Identifier layer1, Identifier layer2)"
+		},
+		{
+			"forge": "getItemModelForTrimMaterial(ResourceLocation arg0, String arg1)",
+			"fabric": "suffixTrim(Identifier id, String trimMaterialName)"
+		},
+		{
+			"forge": "generateBaseArmorTrimTemplate(ResourceLocation arg0, Map<TextureSlot, ResourceLocation> arg1, ArmorMaterial arg2)",
+			"fabric": "createArmorJson(Identifier id, Map<TextureKey, Identifier> textures, ArmorMaterial armorMaterial)"
+		},
+		{
+			"forge": "generateArmorTrims(ArmorItem arg0)",
+			"fabric": "registerArmor(ArmorItem armor)"
+		},
+		{
+			"forge": "run()",
+			"fabric": "register()"
+		}
+	]
+}

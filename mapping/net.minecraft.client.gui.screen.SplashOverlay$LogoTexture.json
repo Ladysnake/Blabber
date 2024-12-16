@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.LoadingOverlay$LogoTexture",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.LoadingOverlay$LogoTexture",
+			"fabric": "net.minecraft.client.gui.screen.SplashOverlay$LogoTexture"
+		},
+		{
+			"forge": "getTextureImage(ResourceManager arg0)",
+			"fabric": "loadTextureData(ResourceManager arg0)"
+		},
+		{
+			"forge": "getTextureImage(ResourceManager arg0)",
+			"fabric": "loadTextureData(ResourceManager arg0)"
+		}
+	]
+}

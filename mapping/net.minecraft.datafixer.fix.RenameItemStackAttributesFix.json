@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.AttributesRename",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.AttributesRename",
+			"fabric": "net.minecraft.datafixer.fix.RenameItemStackAttributesFix"
+		},
+		{
+			"forge": "RENAMES",
+			"fabric": "RENAMES"
+		},
+		{
+			"forge": "RENAMES",
+			"fabric": "RENAMES"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "updateAttributeName(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixName(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateAttributeName(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixItemStackTag(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "updateAttributeModifiers(com.mojang.datafixers.Typed<?> typed)"
+		},
+		{
+			"forge": "fixEntity(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "updatePlayerAttributes(com.mojang.datafixers.Typed<?> typed)"
+		}
+	]
+}

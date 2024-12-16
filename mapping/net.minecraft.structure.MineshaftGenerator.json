@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces",
+			"fabric": "net.minecraft.structure.MineshaftGenerator"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DEFAULT_SHAFT_WIDTH",
+			"fabric": "field_31551"
+		},
+		{
+			"forge": "DEFAULT_SHAFT_HEIGHT",
+			"fabric": "field_31552"
+		},
+		{
+			"forge": "DEFAULT_SHAFT_LENGTH",
+			"fabric": "field_31553"
+		},
+		{
+			"forge": "MAX_PILLAR_HEIGHT",
+			"fabric": "field_31554"
+		},
+		{
+			"forge": "MAX_CHAIN_HEIGHT",
+			"fabric": "field_31555"
+		},
+		{
+			"forge": "MAX_DEPTH",
+			"fabric": "field_31556"
+		},
+		{
+			"forge": "MAGIC_START_Y",
+			"fabric": "field_34729"
+		},
+		{
+			"forge": "createRandomShaftPiece(StructurePieceAccessor arg0, RandomSource arg1, int arg2, int arg3, int arg4, Direction arg5, int arg6, MineshaftStructure$Type arg7)",
+			"fabric": "pickPiece(StructurePiecesHolder holder, Random random, int x, int y, int z, Direction orientation, int chainLength, MineshaftStructure$Type type)"
+		},
+		{
+			"forge": "createRandomShaftPiece(StructurePieceAccessor arg0, RandomSource arg1, int arg2, int arg3, int arg4, Direction arg5, int arg6, MineshaftStructure$Type arg7)",
+			"fabric": "pickPiece(StructurePiecesHolder holder, Random random, int x, int y, int z, Direction orientation, int chainLength, MineshaftStructure$Type type)"
+		},
+		{
+			"forge": "generateAndAddPiece(StructurePiece arg0, StructurePieceAccessor arg1, RandomSource arg2, int arg3, int arg4, int arg5, Direction arg6, int arg7)",
+			"fabric": "pieceGenerator(StructurePiece start, StructurePiecesHolder holder, Random random, int x, int y, int z, Direction orientation, int chainLength)"
+		}
+	]
+}

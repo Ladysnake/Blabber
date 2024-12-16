@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.entity.ai.control.Control",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.control.Control",
+			"fabric": "net.minecraft.entity.ai.control.Control"
+		}
+	]
+}

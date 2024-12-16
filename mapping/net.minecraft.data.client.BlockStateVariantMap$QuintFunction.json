@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.data.models.blockstates.PropertyDispatch$PentaFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.blockstates.PropertyDispatch$PentaFunction",
+			"fabric": "net.minecraft.data.client.BlockStateVariantMap$QuintFunction"
+		},
+		{
+			"forge": "apply(P1 arg0, P2 arg1, P3 arg2, P4 arg3, P5 arg4)",
+			"fabric": "apply(P1 one, P2 two, P3 three, P4 four, P5 five)"
+		},
+		{
+			"forge": "apply(P1 arg0, P2 arg1, P3 arg2, P4 arg3, P5 arg4)",
+			"fabric": "apply(P1 one, P2 two, P3 three, P4 four, P5 five)"
+		}
+	]
+}

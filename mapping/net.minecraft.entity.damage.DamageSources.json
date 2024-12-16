@@ -1,0 +1,297 @@
+{
+	"title": "net.minecraft.world.damagesource.DamageSources",
+	"items": [
+		{
+			"forge": "net.minecraft.world.damagesource.DamageSources",
+			"fabric": "net.minecraft.entity.damage.DamageSources"
+		},
+		{
+			"forge": "damageTypes",
+			"fabric": "registry"
+		},
+		{
+			"forge": "damageTypes",
+			"fabric": "registry"
+		},
+		{
+			"forge": "inFire",
+			"fabric": "inFire"
+		},
+		{
+			"forge": "lightningBolt",
+			"fabric": "lightningBolt"
+		},
+		{
+			"forge": "onFire",
+			"fabric": "onFire"
+		},
+		{
+			"forge": "lava",
+			"fabric": "lava"
+		},
+		{
+			"forge": "hotFloor",
+			"fabric": "hotFloor"
+		},
+		{
+			"forge": "inWall",
+			"fabric": "inWall"
+		},
+		{
+			"forge": "cramming",
+			"fabric": "cramming"
+		},
+		{
+			"forge": "drown",
+			"fabric": "drown"
+		},
+		{
+			"forge": "starve",
+			"fabric": "starve"
+		},
+		{
+			"forge": "cactus",
+			"fabric": "cactus"
+		},
+		{
+			"forge": "fall",
+			"fabric": "fall"
+		},
+		{
+			"forge": "flyIntoWall",
+			"fabric": "flyIntoWall"
+		},
+		{
+			"forge": "fellOutOfWorld",
+			"fabric": "outOfWorld"
+		},
+		{
+			"forge": "generic",
+			"fabric": "generic"
+		},
+		{
+			"forge": "magic",
+			"fabric": "magic"
+		},
+		{
+			"forge": "wither",
+			"fabric": "wither"
+		},
+		{
+			"forge": "dragonBreath",
+			"fabric": "dragonBreath"
+		},
+		{
+			"forge": "dryOut",
+			"fabric": "dryOut"
+		},
+		{
+			"forge": "sweetBerryBush",
+			"fabric": "sweetBerryBush"
+		},
+		{
+			"forge": "freeze",
+			"fabric": "freeze"
+		},
+		{
+			"forge": "stalagmite",
+			"fabric": "stalagmite"
+		},
+		{
+			"forge": "outsideBorder",
+			"fabric": "outsideBorder"
+		},
+		{
+			"forge": "genericKill",
+			"fabric": "genericKill"
+		},
+		{
+			"forge": "source(ResourceKey<DamageType> arg0)",
+			"fabric": "create(RegistryKey<DamageType> key)"
+		},
+		{
+			"forge": "source(ResourceKey<DamageType> arg0)",
+			"fabric": "create(RegistryKey<DamageType> key)"
+		},
+		{
+			"forge": "source(ResourceKey<DamageType> arg0, Entity arg1)",
+			"fabric": "create(RegistryKey<DamageType> key, Entity attacker)"
+		},
+		{
+			"forge": "source(ResourceKey<DamageType> arg0, Entity arg1, Entity arg2)",
+			"fabric": "create(RegistryKey<DamageType> key, Entity source, Entity attacker)"
+		},
+		{
+			"forge": "inFire()",
+			"fabric": "inFire()"
+		},
+		{
+			"forge": "lightningBolt()",
+			"fabric": "lightningBolt()"
+		},
+		{
+			"forge": "onFire()",
+			"fabric": "onFire()"
+		},
+		{
+			"forge": "lava()",
+			"fabric": "lava()"
+		},
+		{
+			"forge": "hotFloor()",
+			"fabric": "hotFloor()"
+		},
+		{
+			"forge": "inWall()",
+			"fabric": "inWall()"
+		},
+		{
+			"forge": "cramming()",
+			"fabric": "cramming()"
+		},
+		{
+			"forge": "drown()",
+			"fabric": "drown()"
+		},
+		{
+			"forge": "starve()",
+			"fabric": "starve()"
+		},
+		{
+			"forge": "cactus()",
+			"fabric": "cactus()"
+		},
+		{
+			"forge": "fall()",
+			"fabric": "fall()"
+		},
+		{
+			"forge": "flyIntoWall()",
+			"fabric": "flyIntoWall()"
+		},
+		{
+			"forge": "fellOutOfWorld()",
+			"fabric": "outOfWorld()"
+		},
+		{
+			"forge": "generic()",
+			"fabric": "generic()"
+		},
+		{
+			"forge": "magic()",
+			"fabric": "magic()"
+		},
+		{
+			"forge": "wither()",
+			"fabric": "wither()"
+		},
+		{
+			"forge": "dragonBreath()",
+			"fabric": "dragonBreath()"
+		},
+		{
+			"forge": "dryOut()",
+			"fabric": "dryOut()"
+		},
+		{
+			"forge": "sweetBerryBush()",
+			"fabric": "sweetBerryBush()"
+		},
+		{
+			"forge": "freeze()",
+			"fabric": "freeze()"
+		},
+		{
+			"forge": "stalagmite()",
+			"fabric": "stalagmite()"
+		},
+		{
+			"forge": "fallingBlock(Entity arg0)",
+			"fabric": "fallingBlock(Entity attacker)"
+		},
+		{
+			"forge": "anvil(Entity arg0)",
+			"fabric": "fallingAnvil(Entity attacker)"
+		},
+		{
+			"forge": "fallingStalactite(Entity arg0)",
+			"fabric": "fallingStalactite(Entity attacker)"
+		},
+		{
+			"forge": "sting(LivingEntity arg0)",
+			"fabric": "sting(LivingEntity attacker)"
+		},
+		{
+			"forge": "mobAttack(LivingEntity arg0)",
+			"fabric": "mobAttack(LivingEntity attacker)"
+		},
+		{
+			"forge": "noAggroMobAttack(LivingEntity arg0)",
+			"fabric": "mobAttackNoAggro(LivingEntity attacker)"
+		},
+		{
+			"forge": "playerAttack(Player arg0)",
+			"fabric": "playerAttack(PlayerEntity attacker)"
+		},
+		{
+			"forge": "arrow(AbstractArrow arg0, Entity arg1)",
+			"fabric": "arrow(PersistentProjectileEntity source, Entity attacker)"
+		},
+		{
+			"forge": "trident(Entity arg0, Entity arg1)",
+			"fabric": "trident(Entity source, Entity attacker)"
+		},
+		{
+			"forge": "mobProjectile(Entity arg0, LivingEntity arg1)",
+			"fabric": "mobProjectile(Entity source, LivingEntity attacker)"
+		},
+		{
+			"forge": "fireworks(FireworkRocketEntity arg0, Entity arg1)",
+			"fabric": "fireworks(FireworkRocketEntity source, Entity attacker)"
+		},
+		{
+			"forge": "fireball(Fireball arg0, Entity arg1)",
+			"fabric": "fireball(AbstractFireballEntity source, Entity attacker)"
+		},
+		{
+			"forge": "witherSkull(WitherSkull arg0, Entity arg1)",
+			"fabric": "witherSkull(WitherSkullEntity source, Entity attacker)"
+		},
+		{
+			"forge": "thrown(Entity arg0, Entity arg1)",
+			"fabric": "thrown(Entity source, Entity attacker)"
+		},
+		{
+			"forge": "indirectMagic(Entity arg0, Entity arg1)",
+			"fabric": "indirectMagic(Entity source, Entity attacker)"
+		},
+		{
+			"forge": "thorns(Entity arg0)",
+			"fabric": "thorns(Entity attacker)"
+		},
+		{
+			"forge": "explosion(Explosion arg0)",
+			"fabric": "explosion(Explosion explosion)"
+		},
+		{
+			"forge": "explosion(Entity arg0, Entity arg1)",
+			"fabric": "explosion(Entity source, Entity attacker)"
+		},
+		{
+			"forge": "sonicBoom(Entity arg0)",
+			"fabric": "sonicBoom(Entity attacker)"
+		},
+		{
+			"forge": "badRespawnPointExplosion(Vec3 arg0)",
+			"fabric": "badRespawnPoint(Vec3d position)"
+		},
+		{
+			"forge": "outOfBorder()",
+			"fabric": "outsideBorder()"
+		},
+		{
+			"forge": "genericKill()",
+			"fabric": "genericKill()"
+		}
+	]
+}

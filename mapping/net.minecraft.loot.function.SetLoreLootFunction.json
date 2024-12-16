@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetLoreFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetLoreFunction",
+			"fabric": "net.minecraft.loot.function.SetLoreLootFunction"
+		},
+		{
+			"forge": "replace",
+			"fabric": "replace"
+		},
+		{
+			"forge": "replace",
+			"fabric": "replace"
+		},
+		{
+			"forge": "lore",
+			"fabric": "lore"
+		},
+		{
+			"forge": "resolutionContext",
+			"fabric": "entity"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "getLoreTag(ItemStack arg0, boolean arg1)",
+			"fabric": "getLoreForMerge(ItemStack stack, boolean otherLoreExists)"
+		},
+		{
+			"forge": "setLore()",
+			"fabric": "builder()"
+		}
+	]
+}

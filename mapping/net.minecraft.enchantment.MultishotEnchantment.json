@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.item.enchantment.MultiShotEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.MultiShotEnchantment",
+			"fabric": "net.minecraft.enchantment.MultishotEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "checkCompatibility(Enchantment arg0)",
+			"fabric": "canAccept(Enchantment arg0)"
+		}
+	]
+}

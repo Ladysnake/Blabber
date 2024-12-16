@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.CommandBlockEditScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.CommandBlockEditScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.CommandBlockScreen"
+		},
+		{
+			"forge": "autoCommandBlock",
+			"fabric": "blockEntity"
+		},
+		{
+			"forge": "autoCommandBlock",
+			"fabric": "blockEntity"
+		},
+		{
+			"forge": "modeButton",
+			"fabric": "modeButton"
+		},
+		{
+			"forge": "conditionalButton",
+			"fabric": "conditionalModeButton"
+		},
+		{
+			"forge": "autoexecButton",
+			"fabric": "redstoneTriggerButton"
+		},
+		{
+			"forge": "mode",
+			"fabric": "mode"
+		},
+		{
+			"forge": "conditional",
+			"fabric": "conditional"
+		},
+		{
+			"forge": "autoexec",
+			"fabric": "autoActivate"
+		},
+		{
+			"forge": "getCommandBlock()",
+			"fabric": "getCommandExecutor()"
+		},
+		{
+			"forge": "getCommandBlock()",
+			"fabric": "getCommandExecutor()"
+		},
+		{
+			"forge": "getPreviousY()",
+			"fabric": "getTrackOutputButtonHeight()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "enableControls(boolean arg0)",
+			"fabric": "setButtonsActive(boolean active)"
+		},
+		{
+			"forge": "updateGui()",
+			"fabric": "updateCommandBlock()"
+		},
+		{
+			"forge": "resize(Minecraft arg0, int arg1, int arg2)",
+			"fabric": "resize(MinecraftClient arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "populateAndSendPacket(BaseCommandBlock arg0)",
+			"fabric": "syncSettingsToServer(CommandBlockExecutor arg0)"
+		}
+	]
+}

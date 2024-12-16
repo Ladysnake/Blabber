@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityVariantFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityVariantFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityVariantTypeFix"
+		},
+		{
+			"forge": "fieldName",
+			"fabric": "variantKey"
+		},
+		{
+			"forge": "fieldName",
+			"fabric": "variantKey"
+		},
+		{
+			"forge": "idConversions",
+			"fabric": "variantIntToId"
+		},
+		{
+			"forge": "updateAndRename(com.mojang.serialization.Dynamic<T> arg0, String arg1, String arg2, Function<com.mojang.serialization.Dynamic<T>, com.mojang.serialization.Dynamic<T>> arg3)",
+			"fabric": "method_43072(com.mojang.serialization.Dynamic<T> arg0, String arg1, String arg2, Function<com.mojang.serialization.Dynamic<T>, com.mojang.serialization.Dynamic<T>> arg3)"
+		},
+		{
+			"forge": "updateAndRename(com.mojang.serialization.Dynamic<T> arg0, String arg1, String arg2, Function<com.mojang.serialization.Dynamic<T>, com.mojang.serialization.Dynamic<T>> arg3)",
+			"fabric": "method_43072(com.mojang.serialization.Dynamic<T> arg0, String arg1, String arg2, Function<com.mojang.serialization.Dynamic<T>, com.mojang.serialization.Dynamic<T>> arg3)"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> arg0)"
+		}
+	]
+}

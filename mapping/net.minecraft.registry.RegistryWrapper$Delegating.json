@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.core.HolderLookup$Delegate",
+	"items": [
+		{
+			"forge": "net.minecraft.core.HolderLookup$Delegate",
+			"fabric": "net.minecraft.registry.RegistryWrapper$Delegating"
+		},
+		{
+			"forge": "parent",
+			"fabric": "baseWrapper"
+		},
+		{
+			"forge": "parent",
+			"fabric": "baseWrapper"
+		},
+		{
+			"forge": "get(ResourceKey<T> arg0)",
+			"fabric": "getOptional(RegistryKey<T> arg0)"
+		},
+		{
+			"forge": "get(ResourceKey<T> arg0)",
+			"fabric": "getOptional(RegistryKey<T> arg0)"
+		},
+		{
+			"forge": "listElements()",
+			"fabric": "streamEntries()"
+		},
+		{
+			"forge": "get(TagKey<T> arg0)",
+			"fabric": "getOptional(TagKey<T> arg0)"
+		},
+		{
+			"forge": "listTags()",
+			"fabric": "streamTags()"
+		}
+	]
+}

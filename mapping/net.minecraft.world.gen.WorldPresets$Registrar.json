@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.level.levelgen.presets.WorldPresets$Bootstrap",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.presets.WorldPresets$Bootstrap",
+			"fabric": "net.minecraft.world.gen.WorldPresets$Registrar"
+		},
+		{
+			"forge": "context",
+			"fabric": "presetRegisterable"
+		},
+		{
+			"forge": "context",
+			"fabric": "presetRegisterable"
+		},
+		{
+			"forge": "noiseSettings",
+			"fabric": "chunkGeneratorSettingsLookup"
+		},
+		{
+			"forge": "biomes",
+			"fabric": "biomeLookup"
+		},
+		{
+			"forge": "placedFeatures",
+			"fabric": "featureLookup"
+		},
+		{
+			"forge": "structureSets",
+			"fabric": "structureSetLookup"
+		},
+		{
+			"forge": "multiNoiseBiomeSourceParameterLists",
+			"fabric": "multiNoisePresetLookup"
+		},
+		{
+			"forge": "overworldDimensionType",
+			"fabric": "overworldDimensionType"
+		},
+		{
+			"forge": "netherStem",
+			"fabric": "netherDimensionOptions"
+		},
+		{
+			"forge": "endStem",
+			"fabric": "endDimensionOptions"
+		},
+		{
+			"forge": "makeOverworld(ChunkGenerator arg0)",
+			"fabric": "createOverworldOptions(ChunkGenerator chunkGenerator)"
+		},
+		{
+			"forge": "makeOverworld(ChunkGenerator arg0)",
+			"fabric": "createOverworldOptions(ChunkGenerator chunkGenerator)"
+		},
+		{
+			"forge": "makeNoiseBasedOverworld(BiomeSource arg0, Holder<NoiseGeneratorSettings> arg1)",
+			"fabric": "createOverworldOptions(BiomeSource biomeSource, RegistryEntry<ChunkGeneratorSettings> chunkGeneratorSettings)"
+		},
+		{
+			"forge": "createPresetWithCustomOverworld(LevelStem arg0)",
+			"fabric": "createPreset(DimensionOptions dimensionOptions)"
+		},
+		{
+			"forge": "registerCustomOverworldPreset(ResourceKey<WorldPreset> arg0, LevelStem arg1)",
+			"fabric": "register(RegistryKey<WorldPreset> key, DimensionOptions dimensionOptions)"
+		},
+		{
+			"forge": "registerOverworlds(BiomeSource arg0)",
+			"fabric": "bootstrap(BiomeSource biomeSource)"
+		},
+		{
+			"forge": "bootstrap()",
+			"fabric": "bootstrap()"
+		}
+	]
+}

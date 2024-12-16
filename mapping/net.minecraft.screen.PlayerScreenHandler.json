@@ -1,0 +1,177 @@
+{
+	"title": "net.minecraft.world.inventory.InventoryMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.InventoryMenu",
+			"fabric": "net.minecraft.screen.PlayerScreenHandler"
+		},
+		{
+			"forge": "CONTAINER_ID",
+			"fabric": "field_30802"
+		},
+		{
+			"forge": "CONTAINER_ID",
+			"fabric": "field_30802"
+		},
+		{
+			"forge": "RESULT_SLOT",
+			"fabric": "CRAFTING_RESULT_ID"
+		},
+		{
+			"forge": "CRAFT_SLOT_START",
+			"fabric": "CRAFTING_INPUT_START"
+		},
+		{
+			"forge": "CRAFT_SLOT_END",
+			"fabric": "CRAFTING_INPUT_END"
+		},
+		{
+			"forge": "ARMOR_SLOT_START",
+			"fabric": "EQUIPMENT_START"
+		},
+		{
+			"forge": "ARMOR_SLOT_END",
+			"fabric": "EQUIPMENT_END"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "INVENTORY_START"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "INVENTORY_END"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "HOTBAR_START"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "HOTBAR_END"
+		},
+		{
+			"forge": "SHIELD_SLOT",
+			"fabric": "OFFHAND_ID"
+		},
+		{
+			"forge": "BLOCK_ATLAS",
+			"fabric": "BLOCK_ATLAS_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_ARMOR_SLOT_HELMET",
+			"fabric": "EMPTY_HELMET_SLOT_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_ARMOR_SLOT_CHESTPLATE",
+			"fabric": "EMPTY_CHESTPLATE_SLOT_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_ARMOR_SLOT_LEGGINGS",
+			"fabric": "EMPTY_LEGGINGS_SLOT_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_ARMOR_SLOT_BOOTS",
+			"fabric": "EMPTY_BOOTS_SLOT_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_ARMOR_SLOT_SHIELD",
+			"fabric": "EMPTY_OFFHAND_ARMOR_SLOT"
+		},
+		{
+			"forge": "TEXTURE_EMPTY_SLOTS",
+			"fabric": "EMPTY_ARMOR_SLOT_TEXTURES"
+		},
+		{
+			"forge": "SLOT_IDS",
+			"fabric": "EQUIPMENT_SLOT_ORDER"
+		},
+		{
+			"forge": "craftSlots",
+			"fabric": "craftingInput"
+		},
+		{
+			"forge": "resultSlots",
+			"fabric": "craftingResult"
+		},
+		{
+			"forge": "active",
+			"fabric": "onServer"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "onEquipItem(Player arg0, EquipmentSlot arg1, ItemStack arg2, ItemStack arg3)",
+			"fabric": "onEquipStack(PlayerEntity player, EquipmentSlot slot, ItemStack newStack, ItemStack currentStack)"
+		},
+		{
+			"forge": "onEquipItem(Player arg0, EquipmentSlot arg1, ItemStack arg2, ItemStack arg3)",
+			"fabric": "onEquipStack(PlayerEntity player, EquipmentSlot slot, ItemStack newStack, ItemStack currentStack)"
+		},
+		{
+			"forge": "isHotbarSlot(int arg0)",
+			"fabric": "isInHotbar(int slot)"
+		},
+		{
+			"forge": "fillCraftSlotsStackedContents(StackedContents arg0)",
+			"fabric": "populateRecipeFinder(RecipeMatcher arg0)"
+		},
+		{
+			"forge": "clearCraftingContent()",
+			"fabric": "clearCraftingSlots()"
+		},
+		{
+			"forge": "recipeMatches(Recipe<? super CraftingContainer> arg0)",
+			"fabric": "matches(Recipe<? super RecipeInputInventory> arg0)"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "canTakeItemForPickAll(ItemStack arg0, Slot arg1)",
+			"fabric": "canInsertIntoSlot(ItemStack arg0, Slot arg1)"
+		},
+		{
+			"forge": "getResultSlotIndex()",
+			"fabric": "getCraftingResultSlotIndex()"
+		},
+		{
+			"forge": "getGridWidth()",
+			"fabric": "getCraftingWidth()"
+		},
+		{
+			"forge": "getGridHeight()",
+			"fabric": "getCraftingHeight()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getCraftingSlotCount()"
+		},
+		{
+			"forge": "getCraftSlots()",
+			"fabric": "getCraftingInput()"
+		},
+		{
+			"forge": "getRecipeBookType()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "shouldMoveToInventory(int arg0)",
+			"fabric": "canInsertIntoSlot(int arg0)"
+		}
+	]
+}

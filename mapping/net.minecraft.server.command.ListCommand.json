@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.commands.ListPlayersCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.ListPlayersCommand",
+			"fabric": "net.minecraft.server.command.ListCommand"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "listPlayers(CommandSourceStack arg0)",
+			"fabric": "executeNames(ServerCommandSource source)"
+		},
+		{
+			"forge": "listPlayersWithUuids(CommandSourceStack arg0)",
+			"fabric": "executeUuids(ServerCommandSource source)"
+		},
+		{
+			"forge": "format(CommandSourceStack arg0, Function<ServerPlayer, Component> arg1)",
+			"fabric": "execute(ServerCommandSource source, Function<ServerPlayerEntity, Text> nameProvider)"
+		}
+	]
+}

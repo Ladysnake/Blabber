@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.ExtraCodecs$3",
+	"items": [
+		{
+			"forge": "net.minecraft.util.ExtraCodecs$3",
+			"fabric": "net.minecraft.util.dynamic.Codecs$3"
+		},
+		{
+			"forge": "apply(com.mojang.serialization.DynamicOps<T> arg0, T arg1, com.mojang.serialization.DataResult<com.mojang.datafixers.util.Pair<E, T>> arg2)",
+			"fabric": "apply(com.mojang.serialization.DynamicOps<T> ops, T input, com.mojang.serialization.DataResult<com.mojang.datafixers.util.Pair<E, T>> result)"
+		},
+		{
+			"forge": "apply(com.mojang.serialization.DynamicOps<T> arg0, T arg1, com.mojang.serialization.DataResult<com.mojang.datafixers.util.Pair<E, T>> arg2)",
+			"fabric": "apply(com.mojang.serialization.DynamicOps<T> ops, T input, com.mojang.serialization.DataResult<com.mojang.datafixers.util.Pair<E, T>> result)"
+		},
+		{
+			"forge": "coApply(com.mojang.serialization.DynamicOps<T> arg0, E arg1, com.mojang.serialization.DataResult<T> arg2)",
+			"fabric": "coApply(com.mojang.serialization.DynamicOps<T> ops, E input, com.mojang.serialization.DataResult<T> result)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.FogRenderer$DarknessFogFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.FogRenderer$DarknessFogFunction",
+			"fabric": "net.minecraft.client.render.BackgroundRenderer$DarknessFogModifier"
+		},
+		{
+			"forge": "getMobEffect()",
+			"fabric": "getStatusEffect()"
+		},
+		{
+			"forge": "getMobEffect()",
+			"fabric": "getStatusEffect()"
+		},
+		{
+			"forge": "setupFog(FogRenderer$FogData arg0, LivingEntity arg1, MobEffectInstance arg2, float arg3, float arg4)",
+			"fabric": "applyStartEndModifier(BackgroundRenderer$FogData arg0, LivingEntity arg1, StatusEffectInstance arg2, float arg3, float arg4)"
+		},
+		{
+			"forge": "getModifiedVoidDarkness(LivingEntity arg0, MobEffectInstance arg1, float arg2, float arg3)",
+			"fabric": "applyColorModifier(LivingEntity arg0, StatusEffectInstance arg1, float arg2, float arg3)"
+		}
+	]
+}

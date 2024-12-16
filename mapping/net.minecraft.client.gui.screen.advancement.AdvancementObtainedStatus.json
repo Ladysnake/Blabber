@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.screens.advancements.AdvancementWidgetType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.advancements.AdvancementWidgetType",
+			"fabric": "net.minecraft.client.gui.screen.advancement.AdvancementObtainedStatus"
+		},
+		{
+			"forge": "OBTAINED",
+			"fabric": "OBTAINED"
+		},
+		{
+			"forge": "OBTAINED",
+			"fabric": "OBTAINED"
+		},
+		{
+			"forge": "UNOBTAINED",
+			"fabric": "UNOBTAINED"
+		},
+		{
+			"forge": "y",
+			"fabric": "spriteIndex"
+		},
+		{
+			"forge": "y",
+			"fabric": "spriteIndex"
+		},
+		{
+			"forge": "getIndex()",
+			"fabric": "getSpriteIndex()"
+		},
+		{
+			"forge": "getIndex()",
+			"fabric": "getSpriteIndex()"
+		}
+	]
+}

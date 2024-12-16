@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.NameTagItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.NameTagItem",
+			"fabric": "net.minecraft.item.NameTagItem"
+		},
+		{
+			"forge": "interactLivingEntity(ItemStack arg0, Player arg1, LivingEntity arg2, InteractionHand arg3)",
+			"fabric": "useOnEntity(ItemStack arg0, PlayerEntity arg1, LivingEntity arg2, Hand arg3)"
+		},
+		{
+			"forge": "interactLivingEntity(ItemStack arg0, Player arg1, LivingEntity arg2, InteractionHand arg3)",
+			"fabric": "useOnEntity(ItemStack arg0, PlayerEntity arg1, LivingEntity arg2, Hand arg3)"
+		}
+	]
+}

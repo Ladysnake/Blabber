@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundSetObjectivePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundSetObjectivePacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.ScoreboardObjectiveUpdateS2CPacket"
+		},
+		{
+			"forge": "METHOD_ADD",
+			"fabric": "ADD_MODE"
+		},
+		{
+			"forge": "METHOD_ADD",
+			"fabric": "ADD_MODE"
+		},
+		{
+			"forge": "METHOD_REMOVE",
+			"fabric": "REMOVE_MODE"
+		},
+		{
+			"forge": "METHOD_CHANGE",
+			"fabric": "UPDATE_MODE"
+		},
+		{
+			"forge": "objectiveName",
+			"fabric": "name"
+		},
+		{
+			"forge": "displayName",
+			"fabric": "displayName"
+		},
+		{
+			"forge": "renderType",
+			"fabric": "type"
+		},
+		{
+			"forge": "method",
+			"fabric": "mode"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getObjectiveName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getMethod()",
+			"fabric": "getMode()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		}
+	]
+}

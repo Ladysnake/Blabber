@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.UnihexProvider$LineData",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.UnihexProvider$LineData",
+			"fabric": "net.minecraft.client.font.UnihexFont$BitmapGlyph"
+		},
+		{
+			"forge": "line(int arg0)",
+			"fabric": "getPixels(int y)"
+		},
+		{
+			"forge": "line(int arg0)",
+			"fabric": "getPixels(int y)"
+		},
+		{
+			"forge": "bitWidth()",
+			"fabric": "bitWidth()"
+		},
+		{
+			"forge": "mask()",
+			"fabric": "getNonemptyColumnBitmask()"
+		},
+		{
+			"forge": "calculateWidth()",
+			"fabric": "getPackedDimensions()"
+		}
+	]
+}

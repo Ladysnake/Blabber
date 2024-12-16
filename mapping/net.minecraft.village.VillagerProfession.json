@@ -1,0 +1,145 @@
+{
+	"title": "net.minecraft.world.entity.npc.VillagerProfession",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.VillagerProfession",
+			"fabric": "net.minecraft.village.VillagerProfession"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "heldJobSite",
+			"fabric": "heldWorkstation"
+		},
+		{
+			"forge": "acquirableJobSite",
+			"fabric": "acquirableWorkstation"
+		},
+		{
+			"forge": "requestedItems",
+			"fabric": "gatherableItems"
+		},
+		{
+			"forge": "secondaryPoi",
+			"fabric": "secondaryJobSites"
+		},
+		{
+			"forge": "workSound",
+			"fabric": "workSound"
+		},
+		{
+			"forge": "ALL_ACQUIRABLE_JOBS",
+			"fabric": "IS_ACQUIRABLE_JOB_SITE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "ARMORER",
+			"fabric": "ARMORER"
+		},
+		{
+			"forge": "BUTCHER",
+			"fabric": "BUTCHER"
+		},
+		{
+			"forge": "CARTOGRAPHER",
+			"fabric": "CARTOGRAPHER"
+		},
+		{
+			"forge": "CLERIC",
+			"fabric": "CLERIC"
+		},
+		{
+			"forge": "FARMER",
+			"fabric": "FARMER"
+		},
+		{
+			"forge": "FISHERMAN",
+			"fabric": "FISHERMAN"
+		},
+		{
+			"forge": "FLETCHER",
+			"fabric": "FLETCHER"
+		},
+		{
+			"forge": "LEATHERWORKER",
+			"fabric": "LEATHERWORKER"
+		},
+		{
+			"forge": "LIBRARIAN",
+			"fabric": "LIBRARIAN"
+		},
+		{
+			"forge": "MASON",
+			"fabric": "MASON"
+		},
+		{
+			"forge": "NITWIT",
+			"fabric": "NITWIT"
+		},
+		{
+			"forge": "SHEPHERD",
+			"fabric": "SHEPHERD"
+		},
+		{
+			"forge": "TOOLSMITH",
+			"fabric": "TOOLSMITH"
+		},
+		{
+			"forge": "WEAPONSMITH",
+			"fabric": "WEAPONSMITH"
+		},
+		{
+			"forge": "register(String arg0, ResourceKey<PoiType> arg1, SoundEvent arg2)",
+			"fabric": "register(String id, RegistryKey<PointOfInterestType> heldWorkstation, SoundEvent workSound)"
+		},
+		{
+			"forge": "register(String arg0, ResourceKey<PoiType> arg1, SoundEvent arg2)",
+			"fabric": "register(String id, RegistryKey<PointOfInterestType> heldWorkstation, SoundEvent workSound)"
+		},
+		{
+			"forge": "register(String arg0, Predicate<Holder<PoiType>> arg1, Predicate<Holder<PoiType>> arg2, SoundEvent arg3)",
+			"fabric": "register(String id, Predicate<RegistryEntry<PointOfInterestType>> heldWorkstation, Predicate<RegistryEntry<PointOfInterestType>> acquirableWorkstation, SoundEvent workSound)"
+		},
+		{
+			"forge": "register(String arg0, ResourceKey<PoiType> arg1, com.google.common.collect.ImmutableSet<Item> arg2, com.google.common.collect.ImmutableSet<Block> arg3, SoundEvent arg4)",
+			"fabric": "register(String id, RegistryKey<PointOfInterestType> heldWorkstation, com.google.common.collect.ImmutableSet<Item> gatherableItems, com.google.common.collect.ImmutableSet<Block> secondaryJobSites, SoundEvent workSound)"
+		},
+		{
+			"forge": "register(String arg0, Predicate<Holder<PoiType>> arg1, Predicate<Holder<PoiType>> arg2, com.google.common.collect.ImmutableSet<Item> arg3, com.google.common.collect.ImmutableSet<Block> arg4, SoundEvent arg5)",
+			"fabric": "register(String id, Predicate<RegistryEntry<PointOfInterestType>> heldWorkstation, Predicate<RegistryEntry<PointOfInterestType>> acquirableWorkstation, com.google.common.collect.ImmutableSet<Item> gatherableItems, com.google.common.collect.ImmutableSet<Block> secondaryJobSites, SoundEvent workSound)"
+		},
+		{
+			"forge": "name()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "heldJobSite()",
+			"fabric": "heldWorkstation()"
+		},
+		{
+			"forge": "acquirableJobSite()",
+			"fabric": "acquirableWorkstation()"
+		},
+		{
+			"forge": "requestedItems()",
+			"fabric": "gatherableItems()"
+		},
+		{
+			"forge": "secondaryPoi()",
+			"fabric": "secondaryJobSites()"
+		},
+		{
+			"forge": "workSound()",
+			"fabric": "workSound()"
+		}
+	]
+}

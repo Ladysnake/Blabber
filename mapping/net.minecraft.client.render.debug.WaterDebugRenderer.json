@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.debug.WaterDebugRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.WaterDebugRenderer",
+			"fabric": "net.minecraft.client.render.debug.WaterDebugRenderer"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, double arg2, double arg3, double arg4)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, double arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, double arg2, double arg3, double arg4)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, double arg2, double arg3, double arg4)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.realmsclient.util.task.RestoreTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.RestoreTask",
+			"fabric": "net.minecraft.client.realms.task.RestoreTask"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "backup",
+			"fabric": "backup"
+		},
+		{
+			"forge": "worldId",
+			"fabric": "worldId"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "lastScreen"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.EndRodBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.EndRodBlock",
+			"fabric": "net.minecraft.block.EndRodBlock"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

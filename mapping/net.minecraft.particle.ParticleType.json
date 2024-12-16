@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.core.particles.ParticleType",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.ParticleType",
+			"fabric": "net.minecraft.particle.ParticleType"
+		},
+		{
+			"forge": "overrideLimiter",
+			"fabric": "alwaysShow"
+		},
+		{
+			"forge": "overrideLimiter",
+			"fabric": "alwaysShow"
+		},
+		{
+			"forge": "deserializer",
+			"fabric": "parametersFactory"
+		},
+		{
+			"forge": "getOverrideLimiter()",
+			"fabric": "shouldAlwaysSpawn()"
+		},
+		{
+			"forge": "getOverrideLimiter()",
+			"fabric": "shouldAlwaysSpawn()"
+		},
+		{
+			"forge": "getDeserializer()",
+			"fabric": "getParametersFactory()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		}
+	]
+}

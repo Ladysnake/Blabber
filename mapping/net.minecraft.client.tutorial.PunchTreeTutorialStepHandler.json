@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.tutorial.PunchTreeTutorialStepInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.tutorial.PunchTreeTutorialStepInstance",
+			"fabric": "net.minecraft.client.tutorial.PunchTreeTutorialStepHandler"
+		},
+		{
+			"forge": "HINT_DELAY",
+			"fabric": "DELAY"
+		},
+		{
+			"forge": "HINT_DELAY",
+			"fabric": "DELAY"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "DESCRIPTION",
+			"fabric": "DESCRIPTION"
+		},
+		{
+			"forge": "tutorial",
+			"fabric": "manager"
+		},
+		{
+			"forge": "toast",
+			"fabric": "toast"
+		},
+		{
+			"forge": "timeWaiting",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "resetCount",
+			"fabric": "punches"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "destroy()"
+		},
+		{
+			"forge": "onDestroyBlock(ClientLevel arg0, BlockPos arg1, BlockState arg2, float arg3)",
+			"fabric": "onBlockBreaking(ClientWorld arg0, BlockPos arg1, BlockState arg2, float arg3)"
+		},
+		{
+			"forge": "onGetItem(ItemStack arg0)",
+			"fabric": "onSlotUpdate(ItemStack arg0)"
+		}
+	]
+}

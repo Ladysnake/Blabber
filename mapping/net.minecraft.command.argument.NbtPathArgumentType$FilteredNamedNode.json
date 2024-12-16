@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.commands.arguments.NbtPathArgument$MatchObjectNode",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.NbtPathArgument$MatchObjectNode",
+			"fabric": "net.minecraft.command.argument.NbtPathArgumentType$FilteredNamedNode"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "pattern",
+			"fabric": "filter"
+		},
+		{
+			"forge": "predicate",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "getTag(Tag arg0, List<Tag> arg1)",
+			"fabric": "get(NbtElement arg0, List<NbtElement> arg1)"
+		},
+		{
+			"forge": "getTag(Tag arg0, List<Tag> arg1)",
+			"fabric": "get(NbtElement arg0, List<NbtElement> arg1)"
+		},
+		{
+			"forge": "getOrCreateTag(Tag arg0, Supplier<Tag> arg1, List<Tag> arg2)",
+			"fabric": "getOrInit(NbtElement arg0, Supplier<NbtElement> arg1, List<NbtElement> arg2)"
+		},
+		{
+			"forge": "createPreferredParentTag()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "setTag(Tag arg0, Supplier<Tag> arg1)",
+			"fabric": "set(NbtElement arg0, Supplier<NbtElement> arg1)"
+		},
+		{
+			"forge": "removeTag(Tag arg0)",
+			"fabric": "clear(NbtElement arg0)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.nbt.visitors.FieldTree",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.visitors.FieldTree",
+			"fabric": "net.minecraft.nbt.scanner.NbtTreeNode"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "selectedFields",
+			"fabric": "selectedFields"
+		},
+		{
+			"forge": "fieldsToRecurse",
+			"fabric": "fieldsToRecurse"
+		},
+		{
+			"forge": "createRoot()",
+			"fabric": "createRoot()"
+		},
+		{
+			"forge": "createRoot()",
+			"fabric": "createRoot()"
+		},
+		{
+			"forge": "addEntry(FieldSelector arg0)",
+			"fabric": "add(NbtScanQuery query)"
+		},
+		{
+			"forge": "isSelected(TagType<?> arg0, String arg1)",
+			"fabric": "isTypeEqual(NbtType<?> type, String key)"
+		},
+		{
+			"forge": "depth()",
+			"fabric": "depth()"
+		},
+		{
+			"forge": "selectedFields()",
+			"fabric": "selectedFields()"
+		},
+		{
+			"forge": "fieldsToRecurse()",
+			"fabric": "fieldsToRecurse()"
+		}
+	]
+}

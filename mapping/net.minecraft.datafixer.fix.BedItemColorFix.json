@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BedItemColorFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BedItemColorFix",
+			"fabric": "net.minecraft.datafixer.fix.BedItemColorFix"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.schemas.NamespacedSchema",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.schemas.NamespacedSchema",
+			"fabric": "net.minecraft.datafixer.schema.IdentifierNormalizingSchema"
+		},
+		{
+			"forge": "NAMESPACED_STRING_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "NAMESPACED_STRING_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "NAMESPACED_STRING",
+			"fabric": "IDENTIFIER_TYPE"
+		},
+		{
+			"forge": "ensureNamespaced(String arg0)",
+			"fabric": "normalize(String id)"
+		},
+		{
+			"forge": "ensureNamespaced(String arg0)",
+			"fabric": "normalize(String id)"
+		},
+		{
+			"forge": "namespacedString()",
+			"fabric": "getIdentifierType()"
+		},
+		{
+			"forge": "getChoiceType(com.mojang.datafixers.DSL$TypeReference arg0, String arg1)",
+			"fabric": "getChoiceType(com.mojang.datafixers.DSL$TypeReference type, String choiceName)"
+		}
+	]
+}

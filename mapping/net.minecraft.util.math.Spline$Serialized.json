@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.util.CubicSpline$1Point",
+	"items": [
+		{
+			"forge": "net.minecraft.util.CubicSpline$1Point",
+			"fabric": "net.minecraft.util.math.Spline$Serialized"
+		},
+		{
+			"forge": "location",
+			"fabric": "location"
+		},
+		{
+			"forge": "location",
+			"fabric": "location"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "derivative",
+			"fabric": "derivative"
+		},
+		{
+			"forge": "location()",
+			"fabric": "location()"
+		},
+		{
+			"forge": "location()",
+			"fabric": "location()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		},
+		{
+			"forge": "derivative()",
+			"fabric": "derivative()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.LevelRenderer$RenderChunkStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.LevelRenderer$RenderChunkStorage",
+			"fabric": "net.minecraft.client.render.WorldRenderer$RenderableChunks"
+		},
+		{
+			"forge": "renderInfoMap",
+			"fabric": "chunkInfoList"
+		},
+		{
+			"forge": "renderInfoMap",
+			"fabric": "chunkInfoList"
+		},
+		{
+			"forge": "renderChunks",
+			"fabric": "chunks"
+		}
+	]
+}

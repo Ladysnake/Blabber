@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.DamageSourceCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.DamageSourceCondition",
+			"fabric": "net.minecraft.loot.condition.DamageSourcePropertiesLootCondition"
+		},
+		{
+			"forge": "predicate",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "predicate",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "test(LootContext arg0)",
+			"fabric": "test(LootContext arg0)"
+		},
+		{
+			"forge": "hasDamageSource(DamageSourcePredicate$Builder arg0)",
+			"fabric": "builder(DamageSourcePredicate$Builder builder)"
+		}
+	]
+}

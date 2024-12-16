@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.BoundingBox",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.BoundingBox",
+			"fabric": "net.minecraft.util.math.BlockBox"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "minX",
+			"fabric": "minX"
+		},
+		{
+			"forge": "minY",
+			"fabric": "minY"
+		},
+		{
+			"forge": "minZ",
+			"fabric": "minZ"
+		},
+		{
+			"forge": "maxX",
+			"fabric": "maxX"
+		},
+		{
+			"forge": "maxY",
+			"fabric": "maxY"
+		},
+		{
+			"forge": "maxZ",
+			"fabric": "maxZ"
+		},
+		{
+			"forge": "fromCorners(Vec3i arg0, Vec3i arg1)",
+			"fabric": "create(Vec3i first, Vec3i second)"
+		},
+		{
+			"forge": "fromCorners(Vec3i arg0, Vec3i arg1)",
+			"fabric": "create(Vec3i first, Vec3i second)"
+		},
+		{
+			"forge": "infinite()",
+			"fabric": "infinite()"
+		},
+		{
+			"forge": "orientBox(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, Direction arg9)",
+			"fabric": "rotated(int x, int y, int z, int offsetX, int offsetY, int offsetZ, int sizeX, int sizeY, int sizeZ, Direction facing)"
+		},
+		{
+			"forge": "intersects(BoundingBox arg0)",
+			"fabric": "intersects(BlockBox other)"
+		},
+		{
+			"forge": "intersects(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "intersectsXZ(int minX, int minZ, int maxX, int maxZ)"
+		},
+		{
+			"forge": "encapsulatingPositions(Iterable<BlockPos> arg0)",
+			"fabric": "encompassPositions(Iterable<BlockPos> positions)"
+		},
+		{
+			"forge": "encapsulatingBoxes(Iterable<BoundingBox> arg0)",
+			"fabric": "encompass(Iterable<BlockBox> boxes)"
+		},
+		{
+			"forge": "encapsulate(BoundingBox arg0)",
+			"fabric": "encompass(BlockBox box)"
+		},
+		{
+			"forge": "encapsulate(BlockPos arg0)",
+			"fabric": "encompass(BlockPos pos)"
+		},
+		{
+			"forge": "move(int arg0, int arg1, int arg2)",
+			"fabric": "move(int dx, int dy, int dz)"
+		},
+		{
+			"forge": "move(Vec3i arg0)",
+			"fabric": "move(Vec3i vec)"
+		},
+		{
+			"forge": "moved(int arg0, int arg1, int arg2)",
+			"fabric": "offset(int x, int y, int z)"
+		},
+		{
+			"forge": "inflatedBy(int arg0)",
+			"fabric": "expand(int offset)"
+		},
+		{
+			"forge": "isInside(Vec3i arg0)",
+			"fabric": "contains(Vec3i pos)"
+		},
+		{
+			"forge": "isInside(int arg0, int arg1, int arg2)",
+			"fabric": "contains(int x, int y, int z)"
+		},
+		{
+			"forge": "getLength()",
+			"fabric": "getDimensions()"
+		},
+		{
+			"forge": "getXSpan()",
+			"fabric": "getBlockCountX()"
+		},
+		{
+			"forge": "getYSpan()",
+			"fabric": "getBlockCountY()"
+		},
+		{
+			"forge": "getZSpan()",
+			"fabric": "getBlockCountZ()"
+		},
+		{
+			"forge": "getCenter()",
+			"fabric": "getCenter()"
+		},
+		{
+			"forge": "forAllCorners(Consumer<BlockPos> arg0)",
+			"fabric": "forEachVertex(Consumer<BlockPos> consumer)"
+		},
+		{
+			"forge": "minX()",
+			"fabric": "getMinX()"
+		},
+		{
+			"forge": "minY()",
+			"fabric": "getMinY()"
+		},
+		{
+			"forge": "minZ()",
+			"fabric": "getMinZ()"
+		},
+		{
+			"forge": "maxX()",
+			"fabric": "getMaxX()"
+		},
+		{
+			"forge": "maxY()",
+			"fabric": "getMaxY()"
+		},
+		{
+			"forge": "maxZ()",
+			"fabric": "getMaxZ()"
+		}
+	]
+}

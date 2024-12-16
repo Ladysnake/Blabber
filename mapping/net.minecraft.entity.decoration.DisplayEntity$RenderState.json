@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.Display$RenderState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Display$RenderState",
+			"fabric": "net.minecraft.entity.decoration.DisplayEntity$RenderState"
+		},
+		{
+			"forge": "transformation",
+			"fabric": "transformation"
+		},
+		{
+			"forge": "transformation",
+			"fabric": "transformation"
+		},
+		{
+			"forge": "billboardConstraints",
+			"fabric": "billboardConstraints"
+		},
+		{
+			"forge": "brightnessOverride",
+			"fabric": "brightnessOverride"
+		},
+		{
+			"forge": "shadowRadius",
+			"fabric": "shadowRadius"
+		},
+		{
+			"forge": "shadowStrength",
+			"fabric": "shadowStrength"
+		},
+		{
+			"forge": "glowColorOverride",
+			"fabric": "glowColorOverride"
+		},
+		{
+			"forge": "transformation()",
+			"fabric": "transformation()"
+		},
+		{
+			"forge": "transformation()",
+			"fabric": "transformation()"
+		},
+		{
+			"forge": "billboardConstraints()",
+			"fabric": "billboardConstraints()"
+		},
+		{
+			"forge": "brightnessOverride()",
+			"fabric": "brightnessOverride()"
+		},
+		{
+			"forge": "shadowRadius()",
+			"fabric": "shadowRadius()"
+		},
+		{
+			"forge": "shadowStrength()",
+			"fabric": "shadowStrength()"
+		},
+		{
+			"forge": "glowColorOverride()",
+			"fabric": "glowColorOverride()"
+		}
+	]
+}

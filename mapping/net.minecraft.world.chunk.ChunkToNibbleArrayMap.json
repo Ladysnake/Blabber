@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.lighting.DataLayerStorageMap",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.DataLayerStorageMap",
+			"fabric": "net.minecraft.world.chunk.ChunkToNibbleArrayMap"
+		},
+		{
+			"forge": "CACHE_SIZE",
+			"fabric": "field_31705"
+		},
+		{
+			"forge": "CACHE_SIZE",
+			"fabric": "field_31705"
+		},
+		{
+			"forge": "lastSectionKeys",
+			"fabric": "cachePositions"
+		},
+		{
+			"forge": "lastSections",
+			"fabric": "cacheArrays"
+		},
+		{
+			"forge": "cacheEnabled",
+			"fabric": "cacheEnabled"
+		},
+		{
+			"forge": "map",
+			"fabric": "arrays"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "copyDataLayer(long arg0)",
+			"fabric": "replaceWithCopy(long pos)"
+		},
+		{
+			"forge": "hasLayer(long arg0)",
+			"fabric": "containsKey(long chunkPos)"
+		},
+		{
+			"forge": "getLayer(long arg0)",
+			"fabric": "get(long chunkPos)"
+		},
+		{
+			"forge": "removeLayer(long arg0)",
+			"fabric": "removeChunk(long chunkPos)"
+		},
+		{
+			"forge": "setLayer(long arg0, DataLayer arg1)",
+			"fabric": "put(long pos, ChunkNibbleArray data)"
+		},
+		{
+			"forge": "clearCache()",
+			"fabric": "clearCache()"
+		},
+		{
+			"forge": "disableCache()",
+			"fabric": "disableCache()"
+		}
+	]
+}

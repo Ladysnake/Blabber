@@ -1,0 +1,181 @@
+{
+	"title": "net.minecraft.world.item.enchantment.Enchantments",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.Enchantments",
+			"fabric": "net.minecraft.enchantment.Enchantments"
+		},
+		{
+			"forge": "ARMOR_SLOTS",
+			"fabric": "ALL_ARMOR"
+		},
+		{
+			"forge": "ARMOR_SLOTS",
+			"fabric": "ALL_ARMOR"
+		},
+		{
+			"forge": "ALL_DAMAGE_PROTECTION",
+			"fabric": "PROTECTION"
+		},
+		{
+			"forge": "FIRE_PROTECTION",
+			"fabric": "FIRE_PROTECTION"
+		},
+		{
+			"forge": "FALL_PROTECTION",
+			"fabric": "FEATHER_FALLING"
+		},
+		{
+			"forge": "BLAST_PROTECTION",
+			"fabric": "BLAST_PROTECTION"
+		},
+		{
+			"forge": "PROJECTILE_PROTECTION",
+			"fabric": "PROJECTILE_PROTECTION"
+		},
+		{
+			"forge": "RESPIRATION",
+			"fabric": "RESPIRATION"
+		},
+		{
+			"forge": "AQUA_AFFINITY",
+			"fabric": "AQUA_AFFINITY"
+		},
+		{
+			"forge": "THORNS",
+			"fabric": "THORNS"
+		},
+		{
+			"forge": "DEPTH_STRIDER",
+			"fabric": "DEPTH_STRIDER"
+		},
+		{
+			"forge": "FROST_WALKER",
+			"fabric": "FROST_WALKER"
+		},
+		{
+			"forge": "BINDING_CURSE",
+			"fabric": "BINDING_CURSE"
+		},
+		{
+			"forge": "SOUL_SPEED",
+			"fabric": "SOUL_SPEED"
+		},
+		{
+			"forge": "SWIFT_SNEAK",
+			"fabric": "SWIFT_SNEAK"
+		},
+		{
+			"forge": "SHARPNESS",
+			"fabric": "SHARPNESS"
+		},
+		{
+			"forge": "SMITE",
+			"fabric": "SMITE"
+		},
+		{
+			"forge": "BANE_OF_ARTHROPODS",
+			"fabric": "BANE_OF_ARTHROPODS"
+		},
+		{
+			"forge": "KNOCKBACK",
+			"fabric": "KNOCKBACK"
+		},
+		{
+			"forge": "FIRE_ASPECT",
+			"fabric": "FIRE_ASPECT"
+		},
+		{
+			"forge": "MOB_LOOTING",
+			"fabric": "LOOTING"
+		},
+		{
+			"forge": "SWEEPING_EDGE",
+			"fabric": "SWEEPING"
+		},
+		{
+			"forge": "BLOCK_EFFICIENCY",
+			"fabric": "EFFICIENCY"
+		},
+		{
+			"forge": "SILK_TOUCH",
+			"fabric": "SILK_TOUCH"
+		},
+		{
+			"forge": "UNBREAKING",
+			"fabric": "UNBREAKING"
+		},
+		{
+			"forge": "BLOCK_FORTUNE",
+			"fabric": "FORTUNE"
+		},
+		{
+			"forge": "POWER_ARROWS",
+			"fabric": "POWER"
+		},
+		{
+			"forge": "PUNCH_ARROWS",
+			"fabric": "PUNCH"
+		},
+		{
+			"forge": "FLAMING_ARROWS",
+			"fabric": "FLAME"
+		},
+		{
+			"forge": "INFINITY_ARROWS",
+			"fabric": "INFINITY"
+		},
+		{
+			"forge": "FISHING_LUCK",
+			"fabric": "LUCK_OF_THE_SEA"
+		},
+		{
+			"forge": "FISHING_SPEED",
+			"fabric": "LURE"
+		},
+		{
+			"forge": "LOYALTY",
+			"fabric": "LOYALTY"
+		},
+		{
+			"forge": "IMPALING",
+			"fabric": "IMPALING"
+		},
+		{
+			"forge": "RIPTIDE",
+			"fabric": "RIPTIDE"
+		},
+		{
+			"forge": "CHANNELING",
+			"fabric": "CHANNELING"
+		},
+		{
+			"forge": "MULTISHOT",
+			"fabric": "MULTISHOT"
+		},
+		{
+			"forge": "QUICK_CHARGE",
+			"fabric": "QUICK_CHARGE"
+		},
+		{
+			"forge": "PIERCING",
+			"fabric": "PIERCING"
+		},
+		{
+			"forge": "MENDING",
+			"fabric": "MENDING"
+		},
+		{
+			"forge": "VANISHING_CURSE",
+			"fabric": "VANISHING_CURSE"
+		},
+		{
+			"forge": "register(String arg0, Enchantment arg1)",
+			"fabric": "register(String name, Enchantment enchantment)"
+		},
+		{
+			"forge": "register(String arg0, Enchantment arg1)",
+			"fabric": "register(String name, Enchantment enchantment)"
+		}
+	]
+}

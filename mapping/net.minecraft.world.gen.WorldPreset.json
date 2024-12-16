@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.presets.WorldPreset",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.presets.WorldPreset",
+			"fabric": "net.minecraft.world.gen.WorldPreset"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "ENTRY_CODEC"
+		},
+		{
+			"forge": "dimensions",
+			"fabric": "dimensions"
+		},
+		{
+			"forge": "createRegistry()",
+			"fabric": "createDimensionOptionsRegistry()"
+		},
+		{
+			"forge": "createRegistry()",
+			"fabric": "createDimensionOptionsRegistry()"
+		},
+		{
+			"forge": "createWorldDimensions()",
+			"fabric": "createDimensionsRegistryHolder()"
+		},
+		{
+			"forge": "overworld()",
+			"fabric": "getOverworld()"
+		},
+		{
+			"forge": "requireOverworld(WorldPreset arg0)",
+			"fabric": "validate(WorldPreset preset)"
+		}
+	]
+}

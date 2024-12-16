@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.chunk.BulkSectionAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.BulkSectionAccess",
+			"fabric": "net.minecraft.world.ChunkSectionCache"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "acquiredSections",
+			"fabric": "cache"
+		},
+		{
+			"forge": "lastSection",
+			"fabric": "cachedSection"
+		},
+		{
+			"forge": "lastSectionKey",
+			"fabric": "sectionPos"
+		},
+		{
+			"forge": "getSection(BlockPos arg0)",
+			"fabric": "getSection(BlockPos pos)"
+		},
+		{
+			"forge": "getSection(BlockPos arg0)",
+			"fabric": "getSection(BlockPos pos)"
+		},
+		{
+			"forge": "getBlockState(BlockPos arg0)",
+			"fabric": "getBlockState(BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.Containers",
+	"items": [
+		{
+			"forge": "net.minecraft.world.Containers",
+			"fabric": "net.minecraft.util.ItemScatterer"
+		},
+		{
+			"forge": "dropContents(Level arg0, BlockPos arg1, Container arg2)",
+			"fabric": "spawn(World world, BlockPos pos, Inventory inventory)"
+		},
+		{
+			"forge": "dropContents(Level arg0, BlockPos arg1, Container arg2)",
+			"fabric": "spawn(World world, BlockPos pos, Inventory inventory)"
+		},
+		{
+			"forge": "dropContents(Level arg0, Entity arg1, Container arg2)",
+			"fabric": "spawn(World world, Entity entity, Inventory inventory)"
+		},
+		{
+			"forge": "dropContents(Level arg0, double arg1, double arg2, double arg3, Container arg4)",
+			"fabric": "spawn(World world, double x, double y, double z, Inventory inventory)"
+		},
+		{
+			"forge": "dropContents(Level arg0, BlockPos arg1, NonNullList<ItemStack> arg2)",
+			"fabric": "spawn(World world, BlockPos pos, DefaultedList<ItemStack> stacks)"
+		},
+		{
+			"forge": "dropItemStack(Level arg0, double arg1, double arg2, double arg3, ItemStack arg4)",
+			"fabric": "spawn(World world, double x, double y, double z, ItemStack stack)"
+		}
+	]
+}

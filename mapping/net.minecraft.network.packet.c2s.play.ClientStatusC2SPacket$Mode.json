@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundClientCommandPacket$Action",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundClientCommandPacket$Action",
+			"fabric": "net.minecraft.network.packet.c2s.play.ClientStatusC2SPacket$Mode"
+		},
+		{
+			"forge": "PERFORM_RESPAWN",
+			"fabric": "PERFORM_RESPAWN"
+		},
+		{
+			"forge": "PERFORM_RESPAWN",
+			"fabric": "PERFORM_RESPAWN"
+		},
+		{
+			"forge": "REQUEST_STATS",
+			"fabric": "REQUEST_STATS"
+		}
+	]
+}

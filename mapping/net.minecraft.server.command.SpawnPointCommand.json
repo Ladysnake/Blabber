@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.commands.SetSpawnCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.SetSpawnCommand",
+			"fabric": "net.minecraft.server.command.SpawnPointCommand"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "setSpawn(CommandSourceStack arg0, Collection<ServerPlayer> arg1, BlockPos arg2, float arg3)",
+			"fabric": "execute(ServerCommandSource source, Collection<ServerPlayerEntity> targets, BlockPos pos, float angle)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.target.NonTameRandomTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.target.NonTameRandomTargetGoal",
+			"fabric": "net.minecraft.entity.ai.goal.UntamedActiveTargetGoal"
+		},
+		{
+			"forge": "tamableMob",
+			"fabric": "tameable"
+		},
+		{
+			"forge": "tamableMob",
+			"fabric": "tameable"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		}
+	]
+}

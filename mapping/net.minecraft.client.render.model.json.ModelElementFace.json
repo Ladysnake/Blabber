@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.BlockElementFace",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.BlockElementFace",
+			"fabric": "net.minecraft.client.render.model.json.ModelElementFace"
+		},
+		{
+			"forge": "NO_TINT",
+			"fabric": "field_32789"
+		},
+		{
+			"forge": "NO_TINT",
+			"fabric": "field_32789"
+		},
+		{
+			"forge": "cullForDirection",
+			"fabric": "cullFace"
+		},
+		{
+			"forge": "tintIndex",
+			"fabric": "tintIndex"
+		},
+		{
+			"forge": "texture",
+			"fabric": "textureId"
+		},
+		{
+			"forge": "uv",
+			"fabric": "textureData"
+		}
+	]
+}

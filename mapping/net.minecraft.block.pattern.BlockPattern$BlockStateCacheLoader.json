@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.state.pattern.BlockPattern$BlockCacheLoader",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.pattern.BlockPattern$BlockCacheLoader",
+			"fabric": "net.minecraft.block.pattern.BlockPattern$BlockStateCacheLoader"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "loadChunks",
+			"fabric": "forceLoad"
+		},
+		{
+			"forge": "load(BlockPos arg0)",
+			"fabric": "load(BlockPos arg0)"
+		},
+		{
+			"forge": "load(BlockPos arg0)",
+			"fabric": "load(BlockPos arg0)"
+		}
+	]
+}

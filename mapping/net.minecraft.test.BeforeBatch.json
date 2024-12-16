@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.gametest.framework.BeforeBatch",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.BeforeBatch",
+			"fabric": "net.minecraft.test.BeforeBatch"
+		},
+		{
+			"forge": "batch()",
+			"fabric": "batchId()"
+		},
+		{
+			"forge": "batch()",
+			"fabric": "batchId()"
+		}
+	]
+}

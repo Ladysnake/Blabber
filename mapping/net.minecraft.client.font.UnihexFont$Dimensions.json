@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.UnihexProvider$Dimensions",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.UnihexProvider$Dimensions",
+			"fabric": "net.minecraft.client.font.UnihexFont$Dimensions"
+		},
+		{
+			"forge": "left",
+			"fabric": "left"
+		},
+		{
+			"forge": "left",
+			"fabric": "left"
+		},
+		{
+			"forge": "right",
+			"fabric": "right"
+		},
+		{
+			"forge": "MAP_CODEC",
+			"fabric": "MAP_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "pack()",
+			"fabric": "packedValue()"
+		},
+		{
+			"forge": "pack()",
+			"fabric": "packedValue()"
+		},
+		{
+			"forge": "pack(int arg0, int arg1)",
+			"fabric": "pack(int left, int right)"
+		},
+		{
+			"forge": "left(int arg0)",
+			"fabric": "getLeft(int packed)"
+		},
+		{
+			"forge": "right(int arg0)",
+			"fabric": "getRight(int packed)"
+		},
+		{
+			"forge": "left()",
+			"fabric": "left()"
+		},
+		{
+			"forge": "right()",
+			"fabric": "right()"
+		}
+	]
+}

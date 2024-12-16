@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.commands.ReloadCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.ReloadCommand",
+			"fabric": "net.minecraft.server.command.ReloadCommand"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "reloadPacks(Collection<String> arg0, CommandSourceStack arg1)",
+			"fabric": "tryReloadDataPacks(Collection<String> dataPacks, ServerCommandSource source)"
+		},
+		{
+			"forge": "reloadPacks(Collection<String> arg0, CommandSourceStack arg1)",
+			"fabric": "tryReloadDataPacks(Collection<String> dataPacks, ServerCommandSource source)"
+		},
+		{
+			"forge": "discoverNewPacks(PackRepository arg0, WorldData arg1, Collection<String> arg2)",
+			"fabric": "findNewDataPacks(ResourcePackManager dataPackManager, SaveProperties saveProperties, Collection<String> enabledDataPacks)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		}
+	]
+}

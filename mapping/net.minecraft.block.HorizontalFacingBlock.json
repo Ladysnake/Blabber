@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.HorizontalDirectionalBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.HorizontalDirectionalBlock",
+			"fabric": "net.minecraft.block.HorizontalFacingBlock"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		}
+	]
+}

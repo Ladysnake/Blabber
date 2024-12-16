@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces$WoodlandMansionPiece",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces$WoodlandMansionPiece",
+			"fabric": "net.minecraft.structure.WoodlandMansionGenerator$Piece"
+		},
+		{
+			"forge": "makeTemplateLocation()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "makeTemplateLocation()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "makeLocation(String arg0)",
+			"fabric": "getId(String identifier)"
+		},
+		{
+			"forge": "makeSettings(Mirror arg0, Rotation arg1)",
+			"fabric": "createPlacementData(BlockMirror mirror, BlockRotation rotation)"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "handleDataMarker(String arg0, BlockPos arg1, ServerLevelAccessor arg2, RandomSource arg3, BoundingBox arg4)",
+			"fabric": "handleMetadata(String arg0, BlockPos arg1, ServerWorldAccess arg2, Random arg3, BlockBox arg4)"
+		}
+	]
+}

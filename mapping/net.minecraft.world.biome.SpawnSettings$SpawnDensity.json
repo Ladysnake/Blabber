@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.biome.MobSpawnSettings$MobSpawnCost",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.MobSpawnSettings$MobSpawnCost",
+			"fabric": "net.minecraft.world.biome.SpawnSettings$SpawnDensity"
+		},
+		{
+			"forge": "energyBudget",
+			"fabric": "gravityLimit"
+		},
+		{
+			"forge": "energyBudget",
+			"fabric": "gravityLimit"
+		},
+		{
+			"forge": "charge",
+			"fabric": "mass"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "energyBudget()",
+			"fabric": "gravityLimit()"
+		},
+		{
+			"forge": "energyBudget()",
+			"fabric": "gravityLimit()"
+		},
+		{
+			"forge": "charge()",
+			"fabric": "mass()"
+		}
+	]
+}

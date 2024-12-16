@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.network.chat.SignedMessageChain",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.SignedMessageChain",
+			"fabric": "net.minecraft.network.message.MessageChain"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "nextLink",
+			"fabric": "link"
+		},
+		{
+			"forge": "encoder(Signer arg0)",
+			"fabric": "getPacker(Signer signer)"
+		},
+		{
+			"forge": "encoder(Signer arg0)",
+			"fabric": "getPacker(Signer signer)"
+		},
+		{
+			"forge": "decoder(ProfilePublicKey arg0)",
+			"fabric": "getUnpacker(PlayerPublicKey playerPublicKey)"
+		},
+		{
+			"forge": "advanceLink()",
+			"fabric": "nextLink()"
+		}
+	]
+}

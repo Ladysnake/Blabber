@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.player.RemotePlayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.player.RemotePlayer",
+			"fabric": "net.minecraft.client.network.OtherClientPlayerEntity"
+		},
+		{
+			"forge": "lerpDeltaMovement",
+			"fabric": "clientVelocity"
+		},
+		{
+			"forge": "lerpDeltaMovement",
+			"fabric": "clientVelocity"
+		},
+		{
+			"forge": "lerpDeltaMovementSteps",
+			"fabric": "velocityLerpDivisor"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "lerpMotion(double arg0, double arg1, double arg2)",
+			"fabric": "setVelocityClient(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "updatePlayerPose()",
+			"fabric": "updatePose()"
+		},
+		{
+			"forge": "sendSystemMessage(Component arg0)",
+			"fabric": "sendMessage(Text arg0)"
+		}
+	]
+}

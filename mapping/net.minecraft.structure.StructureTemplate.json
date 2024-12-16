@@ -1,0 +1,193 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate",
+			"fabric": "net.minecraft.structure.StructureTemplate"
+		},
+		{
+			"forge": "PALETTE_TAG",
+			"fabric": "PALETTE_KEY"
+		},
+		{
+			"forge": "PALETTE_TAG",
+			"fabric": "PALETTE_KEY"
+		},
+		{
+			"forge": "PALETTE_LIST_TAG",
+			"fabric": "PALETTES_KEY"
+		},
+		{
+			"forge": "ENTITIES_TAG",
+			"fabric": "ENTITIES_KEY"
+		},
+		{
+			"forge": "BLOCKS_TAG",
+			"fabric": "BLOCKS_KEY"
+		},
+		{
+			"forge": "BLOCK_TAG_POS",
+			"fabric": "BLOCKS_POS_KEY"
+		},
+		{
+			"forge": "BLOCK_TAG_STATE",
+			"fabric": "BLOCKS_STATE_KEY"
+		},
+		{
+			"forge": "BLOCK_TAG_NBT",
+			"fabric": "BLOCKS_NBT_KEY"
+		},
+		{
+			"forge": "ENTITY_TAG_POS",
+			"fabric": "ENTITIES_POS_KEY"
+		},
+		{
+			"forge": "ENTITY_TAG_BLOCKPOS",
+			"fabric": "ENTITIES_BLOCK_POS_KEY"
+		},
+		{
+			"forge": "ENTITY_TAG_NBT",
+			"fabric": "ENTITIES_NBT_KEY"
+		},
+		{
+			"forge": "SIZE_TAG",
+			"fabric": "SIZE_KEY"
+		},
+		{
+			"forge": "palettes",
+			"fabric": "blockInfoLists"
+		},
+		{
+			"forge": "entityInfoList",
+			"fabric": "entities"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "author",
+			"fabric": "author"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "setAuthor(String arg0)",
+			"fabric": "setAuthor(String author)"
+		},
+		{
+			"forge": "getAuthor()",
+			"fabric": "getAuthor()"
+		},
+		{
+			"forge": "fillFromWorld(Level arg0, BlockPos arg1, Vec3i arg2, boolean arg3, Block arg4)",
+			"fabric": "saveFromWorld(World world, BlockPos start, Vec3i dimensions, boolean includeEntities, Block ignoredBlock)"
+		},
+		{
+			"forge": "addToLists(StructureTemplate$StructureBlockInfo arg0, List<StructureTemplate$StructureBlockInfo> arg1, List<StructureTemplate$StructureBlockInfo> arg2, List<StructureTemplate$StructureBlockInfo> arg3)",
+			"fabric": "categorize(StructureTemplate$StructureBlockInfo blockInfo, List<StructureTemplate$StructureBlockInfo> fullBlocks, List<StructureTemplate$StructureBlockInfo> blocksWithNbt, List<StructureTemplate$StructureBlockInfo> otherBlocks)"
+		},
+		{
+			"forge": "buildInfoList(List<StructureTemplate$StructureBlockInfo> arg0, List<StructureTemplate$StructureBlockInfo> arg1, List<StructureTemplate$StructureBlockInfo> arg2)",
+			"fabric": "combineSorted(List<StructureTemplate$StructureBlockInfo> fullBlocks, List<StructureTemplate$StructureBlockInfo> blocksWithNbt, List<StructureTemplate$StructureBlockInfo> otherBlocks)"
+		},
+		{
+			"forge": "fillEntityList(Level arg0, BlockPos arg1, BlockPos arg2)",
+			"fabric": "addEntitiesFromWorld(World world, BlockPos firstCorner, BlockPos secondCorner)"
+		},
+		{
+			"forge": "filterBlocks(BlockPos arg0, StructurePlaceSettings arg1, Block arg2)",
+			"fabric": "getInfosForBlock(BlockPos pos, StructurePlacementData placementData, Block block)"
+		},
+		{
+			"forge": "filterBlocks(BlockPos arg0, StructurePlaceSettings arg1, Block arg2, boolean arg3)",
+			"fabric": "getInfosForBlock(BlockPos pos, StructurePlacementData placementData, Block block, boolean transformed)"
+		},
+		{
+			"forge": "calculateConnectedPosition(StructurePlaceSettings arg0, BlockPos arg1, StructurePlaceSettings arg2, BlockPos arg3)",
+			"fabric": "transformBox(StructurePlacementData placementData1, BlockPos pos1, StructurePlacementData placementData2, BlockPos pos2)"
+		},
+		{
+			"forge": "calculateRelativePosition(StructurePlaceSettings arg0, BlockPos arg1)",
+			"fabric": "transform(StructurePlacementData placementData, BlockPos pos)"
+		},
+		{
+			"forge": "placeInWorld(ServerLevelAccessor arg0, BlockPos arg1, BlockPos arg2, StructurePlaceSettings arg3, RandomSource arg4, int arg5)",
+			"fabric": "place(ServerWorldAccess world, BlockPos pos, BlockPos pivot, StructurePlacementData placementData, Random random, int flags)"
+		},
+		{
+			"forge": "updateShapeAtEdge(LevelAccessor arg0, int arg1, DiscreteVoxelShape arg2, int arg3, int arg4, int arg5)",
+			"fabric": "updateCorner(WorldAccess world, int flags, VoxelSet set, int startX, int startY, int startZ)"
+		},
+		{
+			"forge": "processBlockInfos(ServerLevelAccessor arg0, BlockPos arg1, BlockPos arg2, StructurePlaceSettings arg3, List<StructureTemplate$StructureBlockInfo> arg4)",
+			"fabric": "process(ServerWorldAccess world, BlockPos pos, BlockPos pivot, StructurePlacementData placementData, List<StructureTemplate$StructureBlockInfo> infos)"
+		},
+		{
+			"forge": "placeEntities(ServerLevelAccessor arg0, BlockPos arg1, Mirror arg2, Rotation arg3, BlockPos arg4, BoundingBox arg5, boolean arg6)",
+			"fabric": "spawnEntities(ServerWorldAccess world, BlockPos pos, BlockMirror mirror, BlockRotation rotation, BlockPos pivot, BlockBox area, boolean initializeMobs)"
+		},
+		{
+			"forge": "createEntityIgnoreException(ServerLevelAccessor arg0, CompoundTag arg1)",
+			"fabric": "getEntity(ServerWorldAccess world, NbtCompound nbt)"
+		},
+		{
+			"forge": "getSize(Rotation arg0)",
+			"fabric": "getRotatedSize(BlockRotation rotation)"
+		},
+		{
+			"forge": "transform(BlockPos arg0, Mirror arg1, Rotation arg2, BlockPos arg3)",
+			"fabric": "transformAround(BlockPos pos, BlockMirror mirror, BlockRotation rotation, BlockPos pivot)"
+		},
+		{
+			"forge": "transform(Vec3 arg0, Mirror arg1, Rotation arg2, BlockPos arg3)",
+			"fabric": "transformAround(Vec3d point, BlockMirror mirror, BlockRotation rotation, BlockPos pivot)"
+		},
+		{
+			"forge": "getZeroPositionWithTransform(BlockPos arg0, Mirror arg1, Rotation arg2)",
+			"fabric": "offsetByTransformedSize(BlockPos pos, BlockMirror mirror, BlockRotation rotation)"
+		},
+		{
+			"forge": "getZeroPositionWithTransform(BlockPos arg0, Mirror arg1, Rotation arg2, int arg3, int arg4)",
+			"fabric": "applyTransformedOffset(BlockPos pos, BlockMirror mirror, BlockRotation rotation, int offsetX, int offsetZ)"
+		},
+		{
+			"forge": "getBoundingBox(StructurePlaceSettings arg0, BlockPos arg1)",
+			"fabric": "calculateBoundingBox(StructurePlacementData placementData, BlockPos pos)"
+		},
+		{
+			"forge": "getBoundingBox(BlockPos arg0, Rotation arg1, BlockPos arg2, Mirror arg3)",
+			"fabric": "calculateBoundingBox(BlockPos pos, BlockRotation rotation, BlockPos pivot, BlockMirror mirror)"
+		},
+		{
+			"forge": "getBoundingBox(BlockPos arg0, Rotation arg1, BlockPos arg2, Mirror arg3, Vec3i arg4)",
+			"fabric": "createBox(BlockPos pos, BlockRotation rotation, BlockPos pivot, BlockMirror mirror, Vec3i dimensions)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "load(HolderGetter<Block> arg0, CompoundTag arg1)",
+			"fabric": "readNbt(RegistryEntryLookup<Block> blockLookup, NbtCompound nbt)"
+		},
+		{
+			"forge": "loadPalette(HolderGetter<Block> arg0, ListTag arg1, ListTag arg2)",
+			"fabric": "loadPalettedBlockInfo(RegistryEntryLookup<Block> blockLookup, NbtList palette, NbtList blocks)"
+		},
+		{
+			"forge": "newIntegerList(int... arg0)",
+			"fabric": "createNbtIntList(int... ints)"
+		},
+		{
+			"forge": "newDoubleList(double... arg0)",
+			"fabric": "createNbtDoubleList(double... doubles)"
+		}
+	]
+}

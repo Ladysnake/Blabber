@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundInteractPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundInteractPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket"
+		},
+		{
+			"forge": "entityId",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "entityId",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "action",
+			"fabric": "type"
+		},
+		{
+			"forge": "usingSecondaryAction",
+			"fabric": "playerSneaking"
+		},
+		{
+			"forge": "ATTACK_ACTION",
+			"fabric": "ATTACK"
+		},
+		{
+			"forge": "createAttackPacket(Entity arg0, boolean arg1)",
+			"fabric": "attack(Entity entity, boolean playerSneaking)"
+		},
+		{
+			"forge": "createAttackPacket(Entity arg0, boolean arg1)",
+			"fabric": "attack(Entity entity, boolean playerSneaking)"
+		},
+		{
+			"forge": "createInteractionPacket(Entity arg0, boolean arg1, InteractionHand arg2)",
+			"fabric": "interact(Entity entity, boolean playerSneaking, Hand hand)"
+		},
+		{
+			"forge": "createInteractionPacket(Entity arg0, boolean arg1, InteractionHand arg2, Vec3 arg3)",
+			"fabric": "interactAt(Entity entity, boolean playerSneaking, Hand hand, Vec3d pos)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getTarget(ServerLevel arg0)",
+			"fabric": "getEntity(ServerWorld world)"
+		},
+		{
+			"forge": "isUsingSecondaryAction()",
+			"fabric": "isPlayerSneaking()"
+		},
+		{
+			"forge": "dispatch(ServerboundInteractPacket$Handler arg0)",
+			"fabric": "handle(PlayerInteractEntityC2SPacket$Handler handler)"
+		}
+	]
+}

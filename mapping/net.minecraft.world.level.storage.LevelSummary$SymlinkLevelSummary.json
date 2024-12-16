@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.storage.LevelSummary$SymlinkLevelSummary",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.LevelSummary$SymlinkLevelSummary",
+			"fabric": "net.minecraft.world.level.storage.LevelSummary$SymlinkLevelSummary"
+		},
+		{
+			"forge": "getLevelName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getLevelName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getInfo()",
+			"fabric": "getDetails()"
+		},
+		{
+			"forge": "getLastPlayed()",
+			"fabric": "getLastPlayed()"
+		},
+		{
+			"forge": "isDisabled()",
+			"fabric": "isUnavailable()"
+		}
+	]
+}

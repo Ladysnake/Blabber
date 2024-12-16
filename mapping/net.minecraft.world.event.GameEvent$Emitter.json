@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.gameevent.GameEvent$Context",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.GameEvent$Context",
+			"fabric": "net.minecraft.world.event.GameEvent$Emitter"
+		},
+		{
+			"forge": "sourceEntity",
+			"fabric": "sourceEntity"
+		},
+		{
+			"forge": "sourceEntity",
+			"fabric": "sourceEntity"
+		},
+		{
+			"forge": "affectedState",
+			"fabric": "affectedState"
+		},
+		{
+			"forge": "of(Entity arg0)",
+			"fabric": "of(Entity sourceEntity)"
+		},
+		{
+			"forge": "of(Entity arg0)",
+			"fabric": "of(Entity sourceEntity)"
+		},
+		{
+			"forge": "of(BlockState arg0)",
+			"fabric": "of(BlockState affectedState)"
+		},
+		{
+			"forge": "of(Entity arg0, BlockState arg1)",
+			"fabric": "of(Entity sourceEntity, BlockState affectedState)"
+		},
+		{
+			"forge": "sourceEntity()",
+			"fabric": "sourceEntity()"
+		},
+		{
+			"forge": "affectedState()",
+			"fabric": "affectedState()"
+		}
+	]
+}

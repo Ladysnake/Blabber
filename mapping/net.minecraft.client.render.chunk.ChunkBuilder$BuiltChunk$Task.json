@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$ChunkCompileTask",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$ChunkCompileTask",
+			"fabric": "net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk$Task"
+		},
+		{
+			"forge": "distAtCreation",
+			"fabric": "distance"
+		},
+		{
+			"forge": "distAtCreation",
+			"fabric": "distance"
+		},
+		{
+			"forge": "isCancelled",
+			"fabric": "cancelled"
+		},
+		{
+			"forge": "isHighPriority",
+			"fabric": "prioritized"
+		},
+		{
+			"forge": "doTask(ChunkBufferBuilderPack arg0)",
+			"fabric": "run(BlockBufferBuilderStorage buffers)"
+		},
+		{
+			"forge": "doTask(ChunkBufferBuilderPack arg0)",
+			"fabric": "run(BlockBufferBuilderStorage buffers)"
+		},
+		{
+			"forge": "cancel()",
+			"fabric": "cancel()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "compareTo(ChunkRenderDispatcher$RenderChunk$ChunkCompileTask arg0)",
+			"fabric": "compareTo(ChunkBuilder$BuiltChunk$Task arg0)"
+		}
+	]
+}

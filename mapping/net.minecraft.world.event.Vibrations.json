@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.gameevent.vibrations.VibrationSystem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.vibrations.VibrationSystem",
+			"fabric": "net.minecraft.world.event.Vibrations"
+		},
+		{
+			"forge": "RESONANCE_EVENTS",
+			"fabric": "RESONATIONS"
+		},
+		{
+			"forge": "RESONANCE_EVENTS",
+			"fabric": "RESONATIONS"
+		},
+		{
+			"forge": "VIBRATION_FREQUENCY_FOR_EVENT",
+			"fabric": "FREQUENCIES"
+		},
+		{
+			"forge": "getVibrationData()",
+			"fabric": "getVibrationListenerData()"
+		},
+		{
+			"forge": "getVibrationData()",
+			"fabric": "getVibrationListenerData()"
+		},
+		{
+			"forge": "getVibrationUser()",
+			"fabric": "getVibrationCallback()"
+		},
+		{
+			"forge": "getGameEventFrequency(GameEvent arg0)",
+			"fabric": "getFrequency(GameEvent event)"
+		},
+		{
+			"forge": "getResonanceEventByFrequency(int arg0)",
+			"fabric": "getResonation(int frequency)"
+		},
+		{
+			"forge": "getRedstoneStrengthForDistance(float arg0, int arg1)",
+			"fabric": "getSignalStrength(float distance, int range)"
+		}
+	]
+}

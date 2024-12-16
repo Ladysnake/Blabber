@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkStatusFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkStatusFix",
+			"fabric": "net.minecraft.datafixer.fix.ChunkStatusFix"
+		}
+	]
+}

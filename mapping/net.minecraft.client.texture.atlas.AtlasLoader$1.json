@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.SpriteResourceLoader$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.SpriteResourceLoader$1",
+			"fabric": "net.minecraft.client.texture.atlas.AtlasLoader$1"
+		},
+		{
+			"forge": "add(ResourceLocation arg0, SpriteSource$SpriteSupplier arg1)",
+			"fabric": "add(Identifier arg0, AtlasSource$SpriteRegion arg1)"
+		},
+		{
+			"forge": "add(ResourceLocation arg0, SpriteSource$SpriteSupplier arg1)",
+			"fabric": "add(Identifier arg0, AtlasSource$SpriteRegion arg1)"
+		},
+		{
+			"forge": "removeAll(Predicate<ResourceLocation> arg0)",
+			"fabric": "removeIf(Predicate<Identifier> arg0)"
+		}
+	]
+}

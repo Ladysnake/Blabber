@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.CopyNbtFunction$MergeStrategy$3",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.CopyNbtFunction$MergeStrategy$3",
+			"fabric": "net.minecraft.loot.function.CopyNbtLootFunction$Operator$3"
+		},
+		{
+			"forge": "merge(Tag arg0, NbtPathArgument$NbtPath arg1, List<Tag> arg2)",
+			"fabric": "merge(NbtElement arg0, NbtPathArgumentType$NbtPath arg1, List<NbtElement> arg2)"
+		},
+		{
+			"forge": "merge(Tag arg0, NbtPathArgument$NbtPath arg1, List<Tag> arg2)",
+			"fabric": "merge(NbtElement arg0, NbtPathArgumentType$NbtPath arg1, List<NbtElement> arg2)"
+		}
+	]
+}

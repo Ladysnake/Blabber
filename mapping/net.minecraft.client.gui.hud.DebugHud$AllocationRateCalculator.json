@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.components.DebugScreenOverlay$AllocationRateCalculator",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.DebugScreenOverlay$AllocationRateCalculator",
+			"fabric": "net.minecraft.client.gui.hud.DebugHud$AllocationRateCalculator"
+		},
+		{
+			"forge": "UPDATE_INTERVAL_MS",
+			"fabric": "INTERVAL"
+		},
+		{
+			"forge": "UPDATE_INTERVAL_MS",
+			"fabric": "INTERVAL"
+		},
+		{
+			"forge": "GC_MBEANS",
+			"fabric": "GARBAGE_COLLECTORS"
+		},
+		{
+			"forge": "lastTime",
+			"fabric": "lastCalculated"
+		},
+		{
+			"forge": "lastHeapUsage",
+			"fabric": "allocatedBytes"
+		},
+		{
+			"forge": "lastGcCounts",
+			"fabric": "collectionCount"
+		},
+		{
+			"forge": "lastRate",
+			"fabric": "allocationRate"
+		},
+		{
+			"forge": "bytesAllocatedPerSecond(long arg0)",
+			"fabric": "get(long allocatedBytes)"
+		},
+		{
+			"forge": "bytesAllocatedPerSecond(long arg0)",
+			"fabric": "get(long allocatedBytes)"
+		},
+		{
+			"forge": "gcCounts()",
+			"fabric": "getCollectionCount()"
+		}
+	]
+}

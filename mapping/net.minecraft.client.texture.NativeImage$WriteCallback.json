@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.blaze3d.platform.NativeImage$WriteCallback",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.NativeImage$WriteCallback",
+			"fabric": "net.minecraft.client.texture.NativeImage$WriteCallback"
+		},
+		{
+			"forge": "output",
+			"fabric": "channel"
+		},
+		{
+			"forge": "output",
+			"fabric": "channel"
+		},
+		{
+			"forge": "exception",
+			"fabric": "exception"
+		},
+		{
+			"forge": "invoke(long arg0, long arg1, int arg2)",
+			"fabric": "invoke(long context, long data, int size)"
+		},
+		{
+			"forge": "invoke(long arg0, long arg1, int arg2)",
+			"fabric": "invoke(long context, long data, int size)"
+		},
+		{
+			"forge": "throwIfException()",
+			"fabric": "throwStoredException()"
+		}
+	]
+}

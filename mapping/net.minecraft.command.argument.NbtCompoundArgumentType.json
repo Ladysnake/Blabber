@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.commands.arguments.CompoundTagArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.CompoundTagArgument",
+			"fabric": "net.minecraft.command.argument.NbtCompoundArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "compoundTag()",
+			"fabric": "nbtCompound()"
+		},
+		{
+			"forge": "compoundTag()",
+			"fabric": "nbtCompound()"
+		},
+		{
+			"forge": "getCompoundTag(com.mojang.brigadier.context.CommandContext<S> arg0, String arg1)",
+			"fabric": "getNbtCompound(com.mojang.brigadier.context.CommandContext<S> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		}
+	]
+}

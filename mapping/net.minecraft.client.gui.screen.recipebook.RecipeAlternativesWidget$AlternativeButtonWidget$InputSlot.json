@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.gui.screens.recipebook.OverlayRecipeComponent$OverlayRecipeButton$Pos",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.recipebook.OverlayRecipeComponent$OverlayRecipeButton$Pos",
+			"fabric": "net.minecraft.client.gui.screen.recipebook.RecipeAlternativesWidget$AlternativeButtonWidget$InputSlot"
+		},
+		{
+			"forge": "ingredients",
+			"fabric": "stacks"
+		},
+		{
+			"forge": "ingredients",
+			"fabric": "stacks"
+		},
+		{
+			"forge": "x",
+			"fabric": "y"
+		},
+		{
+			"forge": "y",
+			"fabric": "x"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.packs.FeatureFlagsMetadataSection",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.FeatureFlagsMetadataSection",
+			"fabric": "net.minecraft.resource.metadata.PackFeatureSetMetadata"
+		},
+		{
+			"forge": "flags",
+			"fabric": "flags"
+		},
+		{
+			"forge": "flags",
+			"fabric": "flags"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "SERIALIZER"
+		},
+		{
+			"forge": "flags()",
+			"fabric": "flags()"
+		},
+		{
+			"forge": "flags()",
+			"fabric": "flags()"
+		}
+	]
+}

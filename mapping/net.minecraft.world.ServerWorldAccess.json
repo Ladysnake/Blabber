@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.ServerLevelAccessor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.ServerLevelAccessor",
+			"fabric": "net.minecraft.world.ServerWorldAccess"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "toServerWorld()"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "toServerWorld()"
+		},
+		{
+			"forge": "addFreshEntityWithPassengers(Entity arg0)",
+			"fabric": "spawnEntityAndPassengers(Entity entity)"
+		}
+	]
+}

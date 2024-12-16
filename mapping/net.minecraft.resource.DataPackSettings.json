@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.DataPackConfig",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.DataPackConfig",
+			"fabric": "net.minecraft.resource.DataPackSettings"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "SAFE_MODE"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "SAFE_MODE"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "enabled",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "disabled",
+			"fabric": "disabled"
+		},
+		{
+			"forge": "getEnabled()",
+			"fabric": "getEnabled()"
+		},
+		{
+			"forge": "getEnabled()",
+			"fabric": "getEnabled()"
+		},
+		{
+			"forge": "getDisabled()",
+			"fabric": "getDisabled()"
+		}
+	]
+}

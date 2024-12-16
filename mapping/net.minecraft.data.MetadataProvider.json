@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.data.metadata.PackMetadataGenerator",
+	"items": [
+		{
+			"forge": "net.minecraft.data.metadata.PackMetadataGenerator",
+			"fabric": "net.minecraft.data.MetadataProvider"
+		},
+		{
+			"forge": "output",
+			"fabric": "output"
+		},
+		{
+			"forge": "output",
+			"fabric": "output"
+		},
+		{
+			"forge": "elements",
+			"fabric": "metadata"
+		},
+		{
+			"forge": "add(MetadataSectionType<T> arg0, T arg1)",
+			"fabric": "add(ResourceMetadataSerializer<T> serializer, T metadata)"
+		},
+		{
+			"forge": "add(MetadataSectionType<T> arg0, T arg1)",
+			"fabric": "add(ResourceMetadataSerializer<T> serializer, T metadata)"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "forFeaturePack(PackOutput arg0, Component arg1)",
+			"fabric": "create(DataOutput output, Text description)"
+		},
+		{
+			"forge": "forFeaturePack(PackOutput arg0, Component arg1, FeatureFlagSet arg2)",
+			"fabric": "create(DataOutput output, Text description, FeatureSet requiredFeatures)"
+		}
+	]
+}

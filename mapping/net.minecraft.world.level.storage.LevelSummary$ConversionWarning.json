@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.storage.LevelSummary$BackupStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.LevelSummary$BackupStatus",
+			"fabric": "net.minecraft.world.level.storage.LevelSummary$ConversionWarning"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "DOWNGRADE",
+			"fabric": "DOWNGRADE"
+		},
+		{
+			"forge": "UPGRADE_TO_SNAPSHOT",
+			"fabric": "UPGRADE_TO_SNAPSHOT"
+		},
+		{
+			"forge": "shouldBackup",
+			"fabric": "backup"
+		},
+		{
+			"forge": "shouldBackup",
+			"fabric": "backup"
+		},
+		{
+			"forge": "severe",
+			"fabric": "boldRedFormatting"
+		},
+		{
+			"forge": "translationKey",
+			"fabric": "translationKeySuffix"
+		},
+		{
+			"forge": "shouldBackup()",
+			"fabric": "promptsBackup()"
+		},
+		{
+			"forge": "shouldBackup()",
+			"fabric": "promptsBackup()"
+		},
+		{
+			"forge": "isSevere()",
+			"fabric": "needsBoldRedFormatting()"
+		},
+		{
+			"forge": "getTranslationKey()",
+			"fabric": "getTranslationKeySuffix()"
+		}
+	]
+}

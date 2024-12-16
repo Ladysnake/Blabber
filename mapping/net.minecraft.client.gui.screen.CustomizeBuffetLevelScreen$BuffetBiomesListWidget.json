@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.CreateBuffetWorldScreen$BiomeList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.CreateBuffetWorldScreen$BiomeList",
+			"fabric": "net.minecraft.client.gui.screen.CustomizeBuffetLevelScreen$BuffetBiomesListWidget"
+		},
+		{
+			"forge": "setSelected(CreateBuffetWorldScreen$BiomeList$Entry arg0)",
+			"fabric": "setSelected(CustomizeBuffetLevelScreen$BuffetBiomesListWidget$BuffetBiomeItem arg0)"
+		},
+		{
+			"forge": "setSelected(CreateBuffetWorldScreen$BiomeList$Entry arg0)",
+			"fabric": "setSelected(CustomizeBuffetLevelScreen$BuffetBiomesListWidget$BuffetBiomeItem arg0)"
+		}
+	]
+}

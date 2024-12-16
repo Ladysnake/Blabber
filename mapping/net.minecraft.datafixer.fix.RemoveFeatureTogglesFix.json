@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.FeatureFlagRemoveFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.FeatureFlagRemoveFix",
+			"fabric": "net.minecraft.datafixer.fix.RemoveFeatureTogglesFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "flagsToRemove",
+			"fabric": "featureToggleIds"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "removeFeatureToggles(com.mojang.serialization.Dynamic<T> dynamic)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "removeFeatureToggles(com.mojang.serialization.Dynamic<T> dynamic)"
+		}
+	]
+}

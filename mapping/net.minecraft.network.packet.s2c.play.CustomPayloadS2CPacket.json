@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundCustomPayloadPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundCustomPayloadPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.CustomPayloadS2CPacket"
+		},
+		{
+			"forge": "MAX_PAYLOAD_SIZE",
+			"fabric": "MAX_PAYLOAD_SIZE"
+		},
+		{
+			"forge": "MAX_PAYLOAD_SIZE",
+			"fabric": "MAX_PAYLOAD_SIZE"
+		},
+		{
+			"forge": "BRAND",
+			"fabric": "BRAND"
+		},
+		{
+			"forge": "DEBUG_PATHFINDING_PACKET",
+			"fabric": "DEBUG_PATH"
+		},
+		{
+			"forge": "DEBUG_NEIGHBORSUPDATE_PACKET",
+			"fabric": "DEBUG_NEIGHBORS_UPDATE"
+		},
+		{
+			"forge": "DEBUG_STRUCTURES_PACKET",
+			"fabric": "DEBUG_STRUCTURES"
+		},
+		{
+			"forge": "DEBUG_WORLDGENATTEMPT_PACKET",
+			"fabric": "DEBUG_WORLDGEN_ATTEMPT"
+		},
+		{
+			"forge": "DEBUG_POI_TICKET_COUNT_PACKET",
+			"fabric": "DEBUG_POI_TICKET_COUNT"
+		},
+		{
+			"forge": "DEBUG_POI_ADDED_PACKET",
+			"fabric": "DEBUG_POI_ADDED"
+		},
+		{
+			"forge": "DEBUG_POI_REMOVED_PACKET",
+			"fabric": "DEBUG_POI_REMOVED"
+		},
+		{
+			"forge": "DEBUG_VILLAGE_SECTIONS",
+			"fabric": "DEBUG_VILLAGE_SECTIONS"
+		},
+		{
+			"forge": "DEBUG_GOAL_SELECTOR",
+			"fabric": "DEBUG_GOAL_SELECTOR"
+		},
+		{
+			"forge": "DEBUG_BRAIN",
+			"fabric": "DEBUG_BRAIN"
+		},
+		{
+			"forge": "DEBUG_BEE",
+			"fabric": "DEBUG_BEE"
+		},
+		{
+			"forge": "DEBUG_HIVE",
+			"fabric": "DEBUG_HIVE"
+		},
+		{
+			"forge": "DEBUG_GAME_TEST_ADD_MARKER",
+			"fabric": "DEBUG_GAME_TEST_ADD_MARKER"
+		},
+		{
+			"forge": "DEBUG_GAME_TEST_CLEAR",
+			"fabric": "DEBUG_GAME_TEST_CLEAR"
+		},
+		{
+			"forge": "DEBUG_RAIDS",
+			"fabric": "DEBUG_RAIDS"
+		},
+		{
+			"forge": "DEBUG_GAME_EVENT",
+			"fabric": "DEBUG_GAME_EVENT"
+		},
+		{
+			"forge": "DEBUG_GAME_EVENT_LISTENER",
+			"fabric": "DEBUG_GAME_EVENT_LISTENERS"
+		},
+		{
+			"forge": "identifier",
+			"fabric": "channel"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getIdentifier()",
+			"fabric": "getChannel()"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getData()"
+		}
+	]
+}

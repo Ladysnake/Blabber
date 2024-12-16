@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.inventory.DataSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.DataSlot",
+			"fabric": "net.minecraft.screen.Property"
+		},
+		{
+			"forge": "prevValue",
+			"fabric": "oldValue"
+		},
+		{
+			"forge": "prevValue",
+			"fabric": "oldValue"
+		},
+		{
+			"forge": "forContainer(ContainerData arg0, int arg1)",
+			"fabric": "create(PropertyDelegate delegate, int index)"
+		},
+		{
+			"forge": "forContainer(ContainerData arg0, int arg1)",
+			"fabric": "create(PropertyDelegate delegate, int index)"
+		},
+		{
+			"forge": "shared(int[] arg0, int arg1)",
+			"fabric": "create(int[] array, int index)"
+		},
+		{
+			"forge": "standalone()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "set(int arg0)",
+			"fabric": "set(int value)"
+		},
+		{
+			"forge": "checkAndClearUpdateFlag()",
+			"fabric": "hasChanged()"
+		}
+	]
+}

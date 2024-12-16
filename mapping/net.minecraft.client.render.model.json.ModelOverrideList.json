@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemOverrides",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemOverrides",
+			"fabric": "net.minecraft.client.render.model.json.ModelOverrideList"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "NO_OVERRIDE",
+			"fabric": "field_42072"
+		},
+		{
+			"forge": "overrides",
+			"fabric": "overrides"
+		},
+		{
+			"forge": "properties",
+			"fabric": "conditionTypes"
+		},
+		{
+			"forge": "bakeModel(ModelBaker arg0, BlockModel arg1, ItemOverride arg2)",
+			"fabric": "bakeOverridingModel(Baker baker, JsonUnbakedModel parent, ModelOverride override)"
+		},
+		{
+			"forge": "bakeModel(ModelBaker arg0, BlockModel arg1, ItemOverride arg2)",
+			"fabric": "bakeOverridingModel(Baker baker, JsonUnbakedModel parent, ModelOverride override)"
+		},
+		{
+			"forge": "resolve(BakedModel arg0, ItemStack arg1, ClientLevel arg2, LivingEntity arg3, int arg4)",
+			"fabric": "apply(BakedModel model, ItemStack stack, ClientWorld world, LivingEntity entity, int seed)"
+		}
+	]
+}

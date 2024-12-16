@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.GameRules$VisitorCaller",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.GameRules$VisitorCaller",
+			"fabric": "net.minecraft.world.GameRules$Acceptor"
+		},
+		{
+			"forge": "call(GameRules$GameRuleTypeVisitor arg0, GameRules$Key<T> arg1, GameRules$Type<T> arg2)",
+			"fabric": "call(GameRules$Visitor consumer, GameRules$Key<T> key, GameRules$Type<T> type)"
+		},
+		{
+			"forge": "call(GameRules$GameRuleTypeVisitor arg0, GameRules$Key<T> arg1, GameRules$Type<T> arg2)",
+			"fabric": "call(GameRules$Visitor consumer, GameRules$Key<T> key, GameRules$Type<T> type)"
+		}
+	]
+}

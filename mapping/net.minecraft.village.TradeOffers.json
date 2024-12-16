@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.entity.npc.VillagerTrades",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.VillagerTrades",
+			"fabric": "net.minecraft.village.TradeOffers"
+		},
+		{
+			"forge": "DEFAULT_SUPPLY",
+			"fabric": "DEFAULT_MAX_USES"
+		},
+		{
+			"forge": "DEFAULT_SUPPLY",
+			"fabric": "DEFAULT_MAX_USES"
+		},
+		{
+			"forge": "COMMON_ITEMS_SUPPLY",
+			"fabric": "COMMON_MAX_USES"
+		},
+		{
+			"forge": "UNCOMMON_ITEMS_SUPPLY",
+			"fabric": "RARE_MAX_USES"
+		},
+		{
+			"forge": "XP_LEVEL_1_SELL",
+			"fabric": "NOVICE_SELL_XP"
+		},
+		{
+			"forge": "XP_LEVEL_1_BUY",
+			"fabric": "NOVICE_BUY_XP"
+		},
+		{
+			"forge": "XP_LEVEL_2_SELL",
+			"fabric": "APPRENTICE_SELL_XP"
+		},
+		{
+			"forge": "XP_LEVEL_2_BUY",
+			"fabric": "APPRENTICE_BUY_XP"
+		},
+		{
+			"forge": "XP_LEVEL_3_SELL",
+			"fabric": "JOURNEYMAN_SELL_XP"
+		},
+		{
+			"forge": "XP_LEVEL_3_BUY",
+			"fabric": "JOURNEYMAN_BUY_XP"
+		},
+		{
+			"forge": "XP_LEVEL_4_SELL",
+			"fabric": "EXPERT_SELL_XP"
+		},
+		{
+			"forge": "XP_LEVEL_4_BUY",
+			"fabric": "EXPERT_BUY_XP"
+		},
+		{
+			"forge": "XP_LEVEL_5_TRADE",
+			"fabric": "MASTER_TRADE_XP"
+		},
+		{
+			"forge": "LOW_TIER_PRICE_MULTIPLIER",
+			"fabric": "LOW_PRICE_MULTIPLIER"
+		},
+		{
+			"forge": "HIGH_TIER_PRICE_MULTIPLIER",
+			"fabric": "HIGH_PRICE_MULTIPLIER"
+		},
+		{
+			"forge": "TRADES",
+			"fabric": "PROFESSION_TO_LEVELED_TRADE"
+		},
+		{
+			"forge": "WANDERING_TRADER_TRADES",
+			"fabric": "WANDERING_TRADER_TRADES"
+		},
+		{
+			"forge": "toIntMap(com.google.common.collect.ImmutableMap<Integer, VillagerTrades$ItemListing[]> arg0)",
+			"fabric": "copyToFastUtilMap(com.google.common.collect.ImmutableMap<Integer, TradeOffers$Factory[]> map)"
+		},
+		{
+			"forge": "toIntMap(com.google.common.collect.ImmutableMap<Integer, VillagerTrades$ItemListing[]> arg0)",
+			"fabric": "copyToFastUtilMap(com.google.common.collect.ImmutableMap<Integer, TradeOffers$Factory[]> map)"
+		}
+	]
+}

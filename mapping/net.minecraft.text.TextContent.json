@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.chat.ComponentContents",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.ComponentContents",
+			"fabric": "net.minecraft.text.TextContent"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "visit(FormattedText$StyledContentConsumer<T> arg0, Style arg1)",
+			"fabric": "visit(StringVisitable$StyledVisitor<T> visitor, Style style)"
+		},
+		{
+			"forge": "visit(FormattedText$StyledContentConsumer<T> arg0, Style arg1)",
+			"fabric": "visit(StringVisitable$StyledVisitor<T> visitor, Style style)"
+		},
+		{
+			"forge": "visit(FormattedText$ContentConsumer<T> arg0)",
+			"fabric": "visit(StringVisitable$Visitor<T> visitor)"
+		},
+		{
+			"forge": "resolve(CommandSourceStack arg0, Entity arg1, int arg2)",
+			"fabric": "parse(ServerCommandSource source, Entity sender, int depth)"
+		}
+	]
+}

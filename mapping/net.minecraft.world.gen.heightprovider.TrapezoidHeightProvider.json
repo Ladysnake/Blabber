@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.heightproviders.TrapezoidHeight",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.heightproviders.TrapezoidHeight",
+			"fabric": "net.minecraft.world.gen.heightprovider.TrapezoidHeightProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "minInclusive",
+			"fabric": "minOffset"
+		},
+		{
+			"forge": "maxInclusive",
+			"fabric": "maxOffset"
+		},
+		{
+			"forge": "plateau",
+			"fabric": "plateau"
+		},
+		{
+			"forge": "of(VerticalAnchor arg0, VerticalAnchor arg1, int arg2)",
+			"fabric": "create(YOffset minOffset, YOffset maxOffset, int plateau)"
+		},
+		{
+			"forge": "of(VerticalAnchor arg0, VerticalAnchor arg1, int arg2)",
+			"fabric": "create(YOffset minOffset, YOffset maxOffset, int plateau)"
+		},
+		{
+			"forge": "of(VerticalAnchor arg0, VerticalAnchor arg1)",
+			"fabric": "create(YOffset minOffset, YOffset maxOffset)"
+		},
+		{
+			"forge": "sample(RandomSource arg0, WorldGenerationContext arg1)",
+			"fabric": "get(Random arg0, HeightContext arg1)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

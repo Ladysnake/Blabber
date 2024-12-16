@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue$Serializer",
+			"fabric": "net.minecraft.loot.provider.number.ScoreLootNumberProvider$Serializer"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1)"
+		},
+		{
+			"forge": "serialize(com.google.gson.JsonObject arg0, ScoreboardValue arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "toJson(com.google.gson.JsonObject arg0, ScoreLootNumberProvider arg1, com.google.gson.JsonSerializationContext arg2)"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.client.renderer.RenderType$CompositeState",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderType$CompositeState",
+			"fabric": "net.minecraft.client.render.RenderLayer$MultiPhaseParameters"
+		},
+		{
+			"forge": "textureState",
+			"fabric": "texture"
+		},
+		{
+			"forge": "textureState",
+			"fabric": "texture"
+		},
+		{
+			"forge": "shaderState",
+			"fabric": "program"
+		},
+		{
+			"forge": "transparencyState",
+			"fabric": "transparency"
+		},
+		{
+			"forge": "depthTestState",
+			"fabric": "depthTest"
+		},
+		{
+			"forge": "cullState",
+			"fabric": "cull"
+		},
+		{
+			"forge": "lightmapState",
+			"fabric": "lightmap"
+		},
+		{
+			"forge": "overlayState",
+			"fabric": "overlay"
+		},
+		{
+			"forge": "layeringState",
+			"fabric": "layering"
+		},
+		{
+			"forge": "outputState",
+			"fabric": "target"
+		},
+		{
+			"forge": "texturingState",
+			"fabric": "texturing"
+		},
+		{
+			"forge": "writeMaskState",
+			"fabric": "writeMaskState"
+		},
+		{
+			"forge": "lineState",
+			"fabric": "lineWidth"
+		},
+		{
+			"forge": "colorLogicState",
+			"fabric": "colorLogic"
+		},
+		{
+			"forge": "outlineProperty",
+			"fabric": "outlineMode"
+		},
+		{
+			"forge": "states",
+			"fabric": "phases"
+		},
+		{
+			"forge": "builder()",
+			"fabric": "builder()"
+		},
+		{
+			"forge": "builder()",
+			"fabric": "builder()"
+		}
+	]
+}

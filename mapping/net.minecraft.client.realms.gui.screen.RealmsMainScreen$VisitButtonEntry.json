@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.RealmsMainScreen$ButtonEntry",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.RealmsMainScreen$ButtonEntry",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsMainScreen$VisitButtonEntry"
+		},
+		{
+			"forge": "button",
+			"fabric": "button"
+		},
+		{
+			"forge": "button",
+			"fabric": "button"
+		},
+		{
+			"forge": "xPos",
+			"fabric": "x"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "getNarration()",
+			"fabric": "getNarration()"
+		}
+	]
+}

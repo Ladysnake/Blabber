@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.FeatureCountTracker$LevelData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.FeatureCountTracker$LevelData",
+			"fabric": "net.minecraft.world.gen.feature.util.FeatureDebugLogger$Features"
+		},
+		{
+			"forge": "featureData",
+			"fabric": "featureData"
+		},
+		{
+			"forge": "featureData",
+			"fabric": "featureData"
+		},
+		{
+			"forge": "chunksWithFeatures",
+			"fabric": "chunksWithFeatures"
+		},
+		{
+			"forge": "featureData()",
+			"fabric": "featureData()"
+		},
+		{
+			"forge": "featureData()",
+			"fabric": "featureData()"
+		},
+		{
+			"forge": "chunksWithFeatures()",
+			"fabric": "chunksWithFeatures()"
+		}
+	]
+}

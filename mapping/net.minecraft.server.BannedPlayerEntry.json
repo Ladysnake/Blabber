@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.players.UserBanListEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.UserBanListEntry",
+			"fabric": "net.minecraft.server.BannedPlayerEntry"
+		},
+		{
+			"forge": "serialize(com.google.gson.JsonObject arg0)",
+			"fabric": "write(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "serialize(com.google.gson.JsonObject arg0)",
+			"fabric": "write(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "toText()"
+		},
+		{
+			"forge": "createGameProfile(com.google.gson.JsonObject arg0)",
+			"fabric": "profileFromJson(com.google.gson.JsonObject json)"
+		}
+	]
+}

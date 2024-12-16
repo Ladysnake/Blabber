@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.axolotl.Axolotl$AxolotlLookControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.axolotl.Axolotl$AxolotlLookControl",
+			"fabric": "net.minecraft.entity.passive.AxolotlEntity$AxolotlLookControl"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundContainerSetContentPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundContainerSetContentPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.InventoryS2CPacket"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "stateId",
+			"fabric": "revision"
+		},
+		{
+			"forge": "items",
+			"fabric": "contents"
+		},
+		{
+			"forge": "carriedItem",
+			"fabric": "cursorStack"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getContainerId()",
+			"fabric": "getSyncId()"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getContents()"
+		},
+		{
+			"forge": "getCarriedItem()",
+			"fabric": "getCursorStack()"
+		},
+		{
+			"forge": "getStateId()",
+			"fabric": "getRevision()"
+		}
+	]
+}

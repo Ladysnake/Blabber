@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.commands.DifficultyCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.DifficultyCommand",
+			"fabric": "net.minecraft.server.command.DifficultyCommand"
+		},
+		{
+			"forge": "ERROR_ALREADY_DIFFICULT",
+			"fabric": "FAILURE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_ALREADY_DIFFICULT",
+			"fabric": "FAILURE_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "setDifficulty(CommandSourceStack arg0, Difficulty arg1)",
+			"fabric": "execute(ServerCommandSource source, Difficulty difficulty)"
+		}
+	]
+}

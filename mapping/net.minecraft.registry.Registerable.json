@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.data.worldgen.BootstapContext",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.BootstapContext",
+			"fabric": "net.minecraft.registry.Registerable"
+		},
+		{
+			"forge": "register(ResourceKey<T> arg0, T arg1, com.mojang.serialization.Lifecycle arg2)",
+			"fabric": "register(RegistryKey<T> key, T value, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "register(ResourceKey<T> arg0, T arg1, com.mojang.serialization.Lifecycle arg2)",
+			"fabric": "register(RegistryKey<T> key, T value, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "register(ResourceKey<T> arg0, T arg1)",
+			"fabric": "register(RegistryKey<T> key, T value)"
+		},
+		{
+			"forge": "lookup(ResourceKey<? extends Registry<? extends S>> arg0)",
+			"fabric": "getRegistryLookup(RegistryKey<? extends Registry<? extends S>> registryRef)"
+		}
+	]
+}

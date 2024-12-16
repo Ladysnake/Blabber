@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.SignatureUpdater$Output",
+	"items": [
+		{
+			"forge": "net.minecraft.util.SignatureUpdater$Output",
+			"fabric": "net.minecraft.network.encryption.SignatureUpdatable$SignatureUpdater"
+		},
+		{
+			"forge": "update(byte[] arg0)",
+			"fabric": "update(byte[] data)"
+		},
+		{
+			"forge": "update(byte[] arg0)",
+			"fabric": "update(byte[] data)"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootPool",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootPool",
+			"fabric": "net.minecraft.loot.LootPool"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "conditions",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "compositeCondition",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "functions",
+			"fabric": "functions"
+		},
+		{
+			"forge": "compositeFunction",
+			"fabric": "javaFunctions"
+		},
+		{
+			"forge": "rolls",
+			"fabric": "rolls"
+		},
+		{
+			"forge": "bonusRolls",
+			"fabric": "bonusRolls"
+		},
+		{
+			"forge": "addRandomItem(Consumer<ItemStack> arg0, LootContext arg1)",
+			"fabric": "supplyOnce(Consumer<ItemStack> lootConsumer, LootContext context)"
+		},
+		{
+			"forge": "addRandomItem(Consumer<ItemStack> arg0, LootContext arg1)",
+			"fabric": "supplyOnce(Consumer<ItemStack> lootConsumer, LootContext context)"
+		},
+		{
+			"forge": "addRandomItems(Consumer<ItemStack> arg0, LootContext arg1)",
+			"fabric": "addGeneratedLoot(Consumer<ItemStack> lootConsumer, LootContext context)"
+		},
+		{
+			"forge": "validate(ValidationContext arg0)",
+			"fabric": "validate(LootTableReporter reporter)"
+		},
+		{
+			"forge": "lootPool()",
+			"fabric": "builder()"
+		}
+	]
+}

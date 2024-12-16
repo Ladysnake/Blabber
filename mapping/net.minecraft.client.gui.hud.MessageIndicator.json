@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.client.GuiMessageTag",
+	"items": [
+		{
+			"forge": "net.minecraft.client.GuiMessageTag",
+			"fabric": "net.minecraft.client.gui.hud.MessageIndicator"
+		},
+		{
+			"forge": "indicatorColor",
+			"fabric": "indicatorColor"
+		},
+		{
+			"forge": "indicatorColor",
+			"fabric": "indicatorColor"
+		},
+		{
+			"forge": "icon",
+			"fabric": "icon"
+		},
+		{
+			"forge": "text",
+			"fabric": "text"
+		},
+		{
+			"forge": "logTag",
+			"fabric": "loggedName"
+		},
+		{
+			"forge": "SYSTEM_TEXT",
+			"fabric": "SYSTEM_TEXT"
+		},
+		{
+			"forge": "SYSTEM_TEXT_SINGLE_PLAYER",
+			"fabric": "SINGLE_PLAYER_TEXT"
+		},
+		{
+			"forge": "CHAT_NOT_SECURE_TEXT",
+			"fabric": "NOT_SECURE_TEXT"
+		},
+		{
+			"forge": "CHAT_MODIFIED_TEXT",
+			"fabric": "MODIFIED_TEXT"
+		},
+		{
+			"forge": "CHAT_NOT_SECURE_INDICATOR_COLOR",
+			"fabric": "NOT_SECURE_COLOR"
+		},
+		{
+			"forge": "CHAT_MODIFIED_INDICATOR_COLOR",
+			"fabric": "MODIFIED_COLOR"
+		},
+		{
+			"forge": "SYSTEM",
+			"fabric": "SYSTEM"
+		},
+		{
+			"forge": "SYSTEM_SINGLE_PLAYER",
+			"fabric": "SINGLE_PLAYER"
+		},
+		{
+			"forge": "CHAT_NOT_SECURE",
+			"fabric": "NOT_SECURE"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "CHAT_TAGS_TEXTURE"
+		},
+		{
+			"forge": "system()",
+			"fabric": "system()"
+		},
+		{
+			"forge": "system()",
+			"fabric": "system()"
+		},
+		{
+			"forge": "systemSinglePlayer()",
+			"fabric": "singlePlayer()"
+		},
+		{
+			"forge": "chatNotSecure()",
+			"fabric": "notSecure()"
+		},
+		{
+			"forge": "chatModified(String arg0)",
+			"fabric": "modified(String originalText)"
+		},
+		{
+			"forge": "indicatorColor()",
+			"fabric": "indicatorColor()"
+		},
+		{
+			"forge": "icon()",
+			"fabric": "icon()"
+		},
+		{
+			"forge": "text()",
+			"fabric": "text()"
+		},
+		{
+			"forge": "logTag()",
+			"fabric": "loggedName()"
+		}
+	]
+}

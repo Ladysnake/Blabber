@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.RandomStroll",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.RandomStroll",
+			"fabric": "net.minecraft.entity.ai.brain.task.StrollTask"
+		},
+		{
+			"forge": "MAX_XZ_DIST",
+			"fabric": "DEFAULT_HORIZONTAL_RADIUS"
+		},
+		{
+			"forge": "MAX_XZ_DIST",
+			"fabric": "DEFAULT_HORIZONTAL_RADIUS"
+		},
+		{
+			"forge": "MAX_Y_DIST",
+			"fabric": "DEFAULT_VERTICAL_RADIUS"
+		},
+		{
+			"forge": "SWIM_XY_DISTANCE_TIERS",
+			"fabric": "RADII"
+		},
+		{
+			"forge": "stroll(float arg0)",
+			"fabric": "create(float speed)"
+		},
+		{
+			"forge": "stroll(float arg0)",
+			"fabric": "create(float speed)"
+		},
+		{
+			"forge": "stroll(float arg0, boolean arg1)",
+			"fabric": "create(float speed, boolean strollInsideWater)"
+		},
+		{
+			"forge": "stroll(float arg0, int arg1, int arg2)",
+			"fabric": "create(float speed, int horizontalRadius, int verticalRadius)"
+		},
+		{
+			"forge": "fly(float arg0)",
+			"fabric": "createSolidTargeting(float speed)"
+		},
+		{
+			"forge": "swim(float arg0)",
+			"fabric": "createDynamicRadius(float speed)"
+		},
+		{
+			"forge": "strollFlyOrSwim(float arg0, Function<PathfinderMob, Vec3> arg1, Predicate<PathfinderMob> arg2)",
+			"fabric": "create(float speed, Function<PathAwareEntity, Vec3d> targetGetter, Predicate<PathAwareEntity> shouldRun)"
+		},
+		{
+			"forge": "getTargetSwimPos(PathfinderMob arg0)",
+			"fabric": "findTargetPos(PathAwareEntity entity)"
+		},
+		{
+			"forge": "getTargetFlyPos(PathfinderMob arg0, int arg1, int arg2)",
+			"fabric": "findTargetPos(PathAwareEntity entity, int horizontalRadius, int verticalRadius)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.parameters.LootContextParam",
+			"fabric": "net.minecraft.loot.context.LootContextParameter"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getId()"
+		}
+	]
+}

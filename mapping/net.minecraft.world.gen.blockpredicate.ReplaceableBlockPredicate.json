@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blockpredicates.ReplaceablePredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blockpredicates.ReplaceablePredicate",
+			"fabric": "net.minecraft.world.gen.blockpredicate.ReplaceableBlockPredicate"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "test(BlockState arg0)",
+			"fabric": "test(BlockState arg0)"
+		},
+		{
+			"forge": "test(BlockState arg0)",
+			"fabric": "test(BlockState arg0)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

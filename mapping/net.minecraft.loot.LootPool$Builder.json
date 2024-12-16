@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootPool$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootPool$Builder",
+			"fabric": "net.minecraft.loot.LootPool$Builder"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "conditions",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "functions",
+			"fabric": "functions"
+		},
+		{
+			"forge": "rolls",
+			"fabric": "rolls"
+		},
+		{
+			"forge": "bonusRolls",
+			"fabric": "bonusRollsRange"
+		},
+		{
+			"forge": "setRolls(NumberProvider arg0)",
+			"fabric": "rolls(LootNumberProvider rolls)"
+		},
+		{
+			"forge": "setRolls(NumberProvider arg0)",
+			"fabric": "rolls(LootNumberProvider rolls)"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getThisFunctionConsumingBuilder()"
+		},
+		{
+			"forge": "setBonusRolls(NumberProvider arg0)",
+			"fabric": "bonusRolls(LootNumberProvider bonusRolls)"
+		},
+		{
+			"forge": "add(LootPoolEntryContainer$Builder<?> arg0)",
+			"fabric": "with(LootPoolEntry$Builder<?> entry)"
+		},
+		{
+			"forge": "when(LootItemCondition$Builder arg0)",
+			"fabric": "conditionally(LootCondition$Builder arg0)"
+		},
+		{
+			"forge": "apply(LootItemFunction$Builder arg0)",
+			"fabric": "apply(LootFunction$Builder arg0)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

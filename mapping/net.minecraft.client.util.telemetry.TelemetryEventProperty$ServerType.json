@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.telemetry.TelemetryProperty$ServerType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.TelemetryProperty$ServerType",
+			"fabric": "net.minecraft.client.util.telemetry.TelemetryEventProperty$ServerType"
+		},
+		{
+			"forge": "REALM",
+			"fabric": "REALM"
+		},
+		{
+			"forge": "REALM",
+			"fabric": "REALM"
+		},
+		{
+			"forge": "LOCAL",
+			"fabric": "LOCAL"
+		},
+		{
+			"forge": "OTHER",
+			"fabric": "OTHER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "key",
+			"fabric": "id"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

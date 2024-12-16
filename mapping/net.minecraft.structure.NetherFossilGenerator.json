@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.NetherFossilPieces",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.NetherFossilPieces",
+			"fabric": "net.minecraft.structure.NetherFossilGenerator"
+		},
+		{
+			"forge": "FOSSILS",
+			"fabric": "FOSSILS"
+		},
+		{
+			"forge": "FOSSILS",
+			"fabric": "FOSSILS"
+		},
+		{
+			"forge": "addPieces(StructureTemplateManager arg0, StructurePieceAccessor arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "addPieces(StructureTemplateManager manager, StructurePiecesHolder holder, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "addPieces(StructureTemplateManager arg0, StructurePieceAccessor arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "addPieces(StructureTemplateManager manager, StructurePiecesHolder holder, Random random, BlockPos pos)"
+		}
+	]
+}

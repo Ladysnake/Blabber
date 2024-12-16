@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.components.OptionsList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.OptionsList",
+			"fabric": "net.minecraft.client.gui.widget.OptionListWidget"
+		},
+		{
+			"forge": "addBig(OptionInstance<?> arg0)",
+			"fabric": "addSingleOptionEntry(SimpleOption<?> option)"
+		},
+		{
+			"forge": "addBig(OptionInstance<?> arg0)",
+			"fabric": "addSingleOptionEntry(SimpleOption<?> option)"
+		},
+		{
+			"forge": "addSmall(OptionInstance<?> arg0, OptionInstance<?> arg1)",
+			"fabric": "addOptionEntry(SimpleOption<?> firstOption, SimpleOption<?> secondOption)"
+		},
+		{
+			"forge": "addSmall(OptionInstance<?>[] arg0)",
+			"fabric": "addAll(SimpleOption<?>[] options)"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		},
+		{
+			"forge": "getScrollbarPosition()",
+			"fabric": "getScrollbarPositionX()"
+		},
+		{
+			"forge": "findOption(OptionInstance<?> arg0)",
+			"fabric": "getWidgetFor(SimpleOption<?> option)"
+		},
+		{
+			"forge": "getMouseOver(double arg0, double arg1)",
+			"fabric": "getHoveredWidget(double mouseX, double mouseY)"
+		}
+	]
+}

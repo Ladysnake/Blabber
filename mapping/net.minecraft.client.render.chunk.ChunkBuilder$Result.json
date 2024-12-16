@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$ChunkTaskResult",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$ChunkTaskResult",
+			"fabric": "net.minecraft.client.render.chunk.ChunkBuilder$Result"
+		},
+		{
+			"forge": "SUCCESSFUL",
+			"fabric": "SUCCESSFUL"
+		},
+		{
+			"forge": "SUCCESSFUL",
+			"fabric": "SUCCESSFUL"
+		},
+		{
+			"forge": "CANCELLED",
+			"fabric": "CANCELLED"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.SculkSensorPhase",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.SculkSensorPhase",
+			"fabric": "net.minecraft.block.enums.SculkSensorPhase"
+		},
+		{
+			"forge": "INACTIVE",
+			"fabric": "INACTIVE"
+		},
+		{
+			"forge": "INACTIVE",
+			"fabric": "INACTIVE"
+		},
+		{
+			"forge": "ACTIVE",
+			"fabric": "ACTIVE"
+		},
+		{
+			"forge": "COOLDOWN",
+			"fabric": "COOLDOWN"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

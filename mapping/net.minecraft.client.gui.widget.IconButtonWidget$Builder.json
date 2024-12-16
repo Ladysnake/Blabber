@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.client.gui.components.TextAndImageButton$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.TextAndImageButton$Builder",
+			"fabric": "net.minecraft.client.gui.widget.IconButtonWidget$Builder"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "resourceLocation",
+			"fabric": "texture"
+		},
+		{
+			"forge": "onPress",
+			"fabric": "pressAction"
+		},
+		{
+			"forge": "xTexStart",
+			"fabric": "u"
+		},
+		{
+			"forge": "yTexStart",
+			"fabric": "v"
+		},
+		{
+			"forge": "yDiffTex",
+			"fabric": "hoveredVOffset"
+		},
+		{
+			"forge": "usedTextureWidth",
+			"fabric": "iconWidth"
+		},
+		{
+			"forge": "usedTextureHeight",
+			"fabric": "iconHeight"
+		},
+		{
+			"forge": "textureWidth",
+			"fabric": "textureWidth"
+		},
+		{
+			"forge": "textureHeight",
+			"fabric": "textureHeight"
+		},
+		{
+			"forge": "xOffset",
+			"fabric": "xOffset"
+		},
+		{
+			"forge": "yOffset",
+			"fabric": "yOffset"
+		},
+		{
+			"forge": "texStart(int arg0, int arg1)",
+			"fabric": "uv(int u, int v)"
+		},
+		{
+			"forge": "texStart(int arg0, int arg1)",
+			"fabric": "uv(int u, int v)"
+		},
+		{
+			"forge": "offset(int arg0, int arg1)",
+			"fabric": "xyOffset(int xOffset, int yOffset)"
+		},
+		{
+			"forge": "yDiffTex(int arg0)",
+			"fabric": "hoveredVOffset(int hoveredVOffset)"
+		},
+		{
+			"forge": "usedTextureSize(int arg0, int arg1)",
+			"fabric": "iconSize(int iconWidth, int iconHeight)"
+		},
+		{
+			"forge": "textureSize(int arg0, int arg1)",
+			"fabric": "textureSize(int textureWidth, int textureHeight)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

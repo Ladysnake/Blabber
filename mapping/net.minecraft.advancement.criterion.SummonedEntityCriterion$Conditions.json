@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.advancements.critereon.SummonedEntityTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.SummonedEntityTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.SummonedEntityCriterion$Conditions"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "summonedEntity(EntityPredicate$Builder arg0)",
+			"fabric": "create(EntityPredicate$Builder summonedEntityPredicateBuilder)"
+		},
+		{
+			"forge": "summonedEntity(EntityPredicate$Builder arg0)",
+			"fabric": "create(EntityPredicate$Builder summonedEntityPredicateBuilder)"
+		},
+		{
+			"forge": "matches(LootContext arg0)",
+			"fabric": "matches(LootContext summonedEntityContext)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

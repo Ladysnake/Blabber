@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.searchtree.IntersectionIterator",
+	"items": [
+		{
+			"forge": "net.minecraft.client.searchtree.IntersectionIterator",
+			"fabric": "net.minecraft.client.search.IdentifierSearchableIterator"
+		},
+		{
+			"forge": "firstIterator",
+			"fabric": "namespacesIterator"
+		},
+		{
+			"forge": "firstIterator",
+			"fabric": "namespacesIterator"
+		},
+		{
+			"forge": "secondIterator",
+			"fabric": "pathsIterator"
+		},
+		{
+			"forge": "comparator",
+			"fabric": "lastIndexComparator"
+		}
+	]
+}

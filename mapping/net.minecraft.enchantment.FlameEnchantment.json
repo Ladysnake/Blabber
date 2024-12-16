@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.enchantment.ArrowFireEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.ArrowFireEnchantment",
+			"fabric": "net.minecraft.enchantment.FlameEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		}
+	]
+}

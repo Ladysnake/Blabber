@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.CubicSpline$CoordinateVisitor",
+	"items": [
+		{
+			"forge": "net.minecraft.util.CubicSpline$CoordinateVisitor",
+			"fabric": "net.minecraft.util.math.Spline$Visitor"
+		},
+		{
+			"forge": "visit(I arg0)",
+			"fabric": "visit(I value)"
+		},
+		{
+			"forge": "visit(I arg0)",
+			"fabric": "visit(I value)"
+		}
+	]
+}

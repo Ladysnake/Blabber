@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition",
+			"fabric": "net.minecraft.loot.condition.TableBonusLootCondition"
+		},
+		{
+			"forge": "enchantment",
+			"fabric": "enchantment"
+		},
+		{
+			"forge": "enchantment",
+			"fabric": "enchantment"
+		},
+		{
+			"forge": "values",
+			"fabric": "chances"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "test(LootContext arg0)",
+			"fabric": "test(LootContext arg0)"
+		},
+		{
+			"forge": "bonusLevelFlatChance(Enchantment arg0, float... arg1)",
+			"fabric": "builder(Enchantment enchantment, float... chances)"
+		}
+	]
+}

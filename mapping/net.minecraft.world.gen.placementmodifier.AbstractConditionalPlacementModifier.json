@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.PlacementFilter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.PlacementFilter",
+			"fabric": "net.minecraft.world.gen.placementmodifier.AbstractConditionalPlacementModifier"
+		},
+		{
+			"forge": "getPositions(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "getPositions(FeaturePlacementContext arg0, Random arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getPositions(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "getPositions(FeaturePlacementContext arg0, Random arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "shouldPlace(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "shouldPlace(FeaturePlacementContext context, Random random, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.DoubleBlockCombiner",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.DoubleBlockCombiner",
+			"fabric": "net.minecraft.block.DoubleBlockProperties"
+		},
+		{
+			"forge": "combineWithNeigbour(BlockEntityType<S> arg0, Function<BlockState, DoubleBlockCombiner$BlockType> arg1, Function<BlockState, Direction> arg2, DirectionProperty arg3, BlockState arg4, LevelAccessor arg5, BlockPos arg6, BiPredicate<LevelAccessor, BlockPos> arg7)",
+			"fabric": "toPropertySource(BlockEntityType<S> blockEntityType, Function<BlockState, DoubleBlockProperties$Type> typeMapper, Function<BlockState, Direction> arg2, DirectionProperty arg3, BlockState state, WorldAccess world, BlockPos pos, BiPredicate<WorldAccess, BlockPos> fallbackTester)"
+		},
+		{
+			"forge": "combineWithNeigbour(BlockEntityType<S> arg0, Function<BlockState, DoubleBlockCombiner$BlockType> arg1, Function<BlockState, Direction> arg2, DirectionProperty arg3, BlockState arg4, LevelAccessor arg5, BlockPos arg6, BiPredicate<LevelAccessor, BlockPos> arg7)",
+			"fabric": "toPropertySource(BlockEntityType<S> blockEntityType, Function<BlockState, DoubleBlockProperties$Type> typeMapper, Function<BlockState, Direction> arg2, DirectionProperty arg3, BlockState state, WorldAccess world, BlockPos pos, BiPredicate<WorldAccess, BlockPos> fallbackTester)"
+		}
+	]
+}

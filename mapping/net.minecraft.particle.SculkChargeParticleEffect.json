@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.core.particles.SculkChargeParticleOptions",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.SculkChargeParticleOptions",
+			"fabric": "net.minecraft.particle.SculkChargeParticleEffect"
+		},
+		{
+			"forge": "roll",
+			"fabric": "roll"
+		},
+		{
+			"forge": "roll",
+			"fabric": "roll"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "DESERIALIZER",
+			"fabric": "FACTORY"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "writeToNetwork(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "writeToString()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "roll()",
+			"fabric": "roll()"
+		}
+	]
+}

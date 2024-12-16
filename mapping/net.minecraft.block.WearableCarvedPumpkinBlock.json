@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.EquipableCarvedPumpkinBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.EquipableCarvedPumpkinBlock",
+			"fabric": "net.minecraft.block.WearableCarvedPumpkinBlock"
+		},
+		{
+			"forge": "getEquipmentSlot()",
+			"fabric": "getSlotType()"
+		},
+		{
+			"forge": "getEquipmentSlot()",
+			"fabric": "getSlotType()"
+		}
+	]
+}

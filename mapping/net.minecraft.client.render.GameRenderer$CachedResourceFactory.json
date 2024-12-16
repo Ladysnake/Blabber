@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.GameRenderer$ResourceCache",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.GameRenderer$ResourceCache",
+			"fabric": "net.minecraft.client.render.GameRenderer$CachedResourceFactory"
+		},
+		{
+			"forge": "original",
+			"fabric": "original"
+		},
+		{
+			"forge": "original",
+			"fabric": "original"
+		},
+		{
+			"forge": "cache",
+			"fabric": "cache"
+		},
+		{
+			"forge": "getResource(ResourceLocation arg0)",
+			"fabric": "getResource(Identifier arg0)"
+		},
+		{
+			"forge": "getResource(ResourceLocation arg0)",
+			"fabric": "getResource(Identifier arg0)"
+		},
+		{
+			"forge": "original()",
+			"fabric": "original()"
+		},
+		{
+			"forge": "cache()",
+			"fabric": "cache()"
+		}
+	]
+}

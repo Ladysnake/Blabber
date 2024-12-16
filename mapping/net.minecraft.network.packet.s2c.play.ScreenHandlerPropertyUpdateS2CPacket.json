@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundContainerSetDataPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundContainerSetDataPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.ScreenHandlerPropertyUpdateS2CPacket"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "id",
+			"fabric": "propertyId"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getContainerId()",
+			"fabric": "getSyncId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getPropertyId()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getValue()"
+		}
+	]
+}

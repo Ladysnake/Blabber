@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.eventlog.EventLogDirectory$File",
+	"items": [
+		{
+			"forge": "net.minecraft.util.eventlog.EventLogDirectory$File",
+			"fabric": "net.minecraft.util.logging.LogFileCompressor$LogFile"
+		},
+		{
+			"forge": "path()",
+			"fabric": "path()"
+		},
+		{
+			"forge": "path()",
+			"fabric": "path()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "openReader()",
+			"fabric": "getReader()"
+		},
+		{
+			"forge": "compress()",
+			"fabric": "compress()"
+		}
+	]
+}

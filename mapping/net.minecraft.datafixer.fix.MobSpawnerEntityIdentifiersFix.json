@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.MobSpawnerEntityIdentifiersFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.MobSpawnerEntityIdentifiersFix",
+			"fabric": "net.minecraft.datafixer.fix.MobSpawnerEntityIdentifiersFix"
+		},
+		{
+			"forge": "fix(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixSpawner(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fix(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixSpawner(com.mojang.serialization.Dynamic<?> arg0)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.realmsclient.exception.RealmsDefaultUncaughtExceptionHandler",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.exception.RealmsDefaultUncaughtExceptionHandler",
+			"fabric": "net.minecraft.client.realms.exception.RealmsDefaultUncaughtExceptionHandler"
+		},
+		{
+			"forge": "logger",
+			"fabric": "logger"
+		},
+		{
+			"forge": "logger",
+			"fabric": "logger"
+		},
+		{
+			"forge": "uncaughtException(Thread arg0, Throwable arg1)",
+			"fabric": "uncaughtException(Thread t, Throwable e)"
+		},
+		{
+			"forge": "uncaughtException(Thread arg0, Throwable arg1)",
+			"fabric": "uncaughtException(Thread t, Throwable e)"
+		}
+	]
+}

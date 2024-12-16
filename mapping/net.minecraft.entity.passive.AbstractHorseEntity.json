@@ -1,0 +1,613 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.AbstractHorse",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.AbstractHorse",
+			"fabric": "net.minecraft.entity.passive.AbstractHorseEntity"
+		},
+		{
+			"forge": "EQUIPMENT_SLOT_OFFSET",
+			"fabric": "field_30413"
+		},
+		{
+			"forge": "EQUIPMENT_SLOT_OFFSET",
+			"fabric": "field_30413"
+		},
+		{
+			"forge": "CHEST_SLOT_OFFSET",
+			"fabric": "field_30414"
+		},
+		{
+			"forge": "INVENTORY_SLOT_OFFSET",
+			"fabric": "field_30415"
+		},
+		{
+			"forge": "BREEDING_CROSS_FACTOR",
+			"fabric": "field_42647"
+		},
+		{
+			"forge": "MIN_MOVEMENT_SPEED",
+			"fabric": "MIN_MOVEMENT_SPEED_BONUS"
+		},
+		{
+			"forge": "MAX_MOVEMENT_SPEED",
+			"fabric": "MAX_MOVEMENT_SPEED_BONUS"
+		},
+		{
+			"forge": "MIN_JUMP_STRENGTH",
+			"fabric": "MIN_JUMP_STRENGTH_BONUS"
+		},
+		{
+			"forge": "MAX_JUMP_STRENGTH",
+			"fabric": "MAX_JUMP_STRENGTH_BONUS"
+		},
+		{
+			"forge": "MIN_HEALTH",
+			"fabric": "MIN_HEALTH_BONUS"
+		},
+		{
+			"forge": "MAX_HEALTH",
+			"fabric": "MAX_HEALTH_BONUS"
+		},
+		{
+			"forge": "BACKWARDS_MOVE_SPEED_FACTOR",
+			"fabric": "field_42979"
+		},
+		{
+			"forge": "SIDEWAYS_MOVE_SPEED_FACTOR",
+			"fabric": "field_42980"
+		},
+		{
+			"forge": "PARENT_HORSE_SELECTOR",
+			"fabric": "IS_BRED_HORSE"
+		},
+		{
+			"forge": "MOMMY_TARGETING",
+			"fabric": "PARENT_HORSE_PREDICATE"
+		},
+		{
+			"forge": "FOOD_ITEMS",
+			"fabric": "BREEDING_INGREDIENT"
+		},
+		{
+			"forge": "DATA_ID_FLAGS",
+			"fabric": "HORSE_FLAGS"
+		},
+		{
+			"forge": "FLAG_TAME",
+			"fabric": "TAMED_FLAG"
+		},
+		{
+			"forge": "FLAG_SADDLE",
+			"fabric": "SADDLED_FLAG"
+		},
+		{
+			"forge": "FLAG_BRED",
+			"fabric": "BRED_FLAG"
+		},
+		{
+			"forge": "FLAG_EATING",
+			"fabric": "EATING_GRASS_FLAG"
+		},
+		{
+			"forge": "FLAG_STANDING",
+			"fabric": "ANGRY_FLAG"
+		},
+		{
+			"forge": "FLAG_OPEN_MOUTH",
+			"fabric": "EATING_FLAG"
+		},
+		{
+			"forge": "INV_SLOT_SADDLE",
+			"fabric": "field_30416"
+		},
+		{
+			"forge": "INV_SLOT_ARMOR",
+			"fabric": "field_30417"
+		},
+		{
+			"forge": "INV_BASE_COUNT",
+			"fabric": "field_30418"
+		},
+		{
+			"forge": "eatingCounter",
+			"fabric": "eatingGrassTicks"
+		},
+		{
+			"forge": "mouthCounter",
+			"fabric": "eatingTicks"
+		},
+		{
+			"forge": "standCounter",
+			"fabric": "angryTicks"
+		},
+		{
+			"forge": "tailCounter",
+			"fabric": "tailWagTicks"
+		},
+		{
+			"forge": "sprintCounter",
+			"fabric": "field_6958"
+		},
+		{
+			"forge": "isJumping",
+			"fabric": "inAir"
+		},
+		{
+			"forge": "inventory",
+			"fabric": "items"
+		},
+		{
+			"forge": "temper",
+			"fabric": "temper"
+		},
+		{
+			"forge": "playerJumpPendingScale",
+			"fabric": "jumpStrength"
+		},
+		{
+			"forge": "allowStandSliding",
+			"fabric": "jumping"
+		},
+		{
+			"forge": "eatAnim",
+			"fabric": "eatingGrassAnimationProgress"
+		},
+		{
+			"forge": "eatAnimO",
+			"fabric": "lastEatingGrassAnimationProgress"
+		},
+		{
+			"forge": "standAnim",
+			"fabric": "angryAnimationProgress"
+		},
+		{
+			"forge": "standAnimO",
+			"fabric": "lastAngryAnimationProgress"
+		},
+		{
+			"forge": "mouthAnim",
+			"fabric": "eatingAnimationProgress"
+		},
+		{
+			"forge": "mouthAnimO",
+			"fabric": "lastEatingAnimationProgress"
+		},
+		{
+			"forge": "canGallop",
+			"fabric": "playExtraHorseSounds"
+		},
+		{
+			"forge": "gallopSoundCounter",
+			"fabric": "soundTicks"
+		},
+		{
+			"forge": "owner",
+			"fabric": "ownerUuid"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "addBehaviourGoals()",
+			"fabric": "initCustomGoals()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "getFlag(int arg0)",
+			"fabric": "getHorseFlag(int bitmask)"
+		},
+		{
+			"forge": "setFlag(int arg0, boolean arg1)",
+			"fabric": "setHorseFlag(int bitmask, boolean flag)"
+		},
+		{
+			"forge": "isTamed()",
+			"fabric": "isTame()"
+		},
+		{
+			"forge": "getOwnerUUID()",
+			"fabric": "getOwnerUuid()"
+		},
+		{
+			"forge": "setOwnerUUID(UUID arg0)",
+			"fabric": "setOwnerUuid(UUID ownerUuid)"
+		},
+		{
+			"forge": "isJumping()",
+			"fabric": "isInAir()"
+		},
+		{
+			"forge": "setTamed(boolean arg0)",
+			"fabric": "setTame(boolean tame)"
+		},
+		{
+			"forge": "setIsJumping(boolean arg0)",
+			"fabric": "setInAir(boolean inAir)"
+		},
+		{
+			"forge": "onLeashDistance(float arg0)",
+			"fabric": "updateForLeashLength(float arg0)"
+		},
+		{
+			"forge": "isEating()",
+			"fabric": "isEatingGrass()"
+		},
+		{
+			"forge": "isStanding()",
+			"fabric": "isAngry()"
+		},
+		{
+			"forge": "isBred()",
+			"fabric": "isBred()"
+		},
+		{
+			"forge": "setBred(boolean arg0)",
+			"fabric": "setBred(boolean bred)"
+		},
+		{
+			"forge": "isSaddleable()",
+			"fabric": "canBeSaddled()"
+		},
+		{
+			"forge": "equipSaddle(SoundSource arg0)",
+			"fabric": "saddle(SoundCategory arg0)"
+		},
+		{
+			"forge": "equipArmor(Player arg0, ItemStack arg1)",
+			"fabric": "equipHorseArmor(PlayerEntity player, ItemStack stack)"
+		},
+		{
+			"forge": "isSaddled()",
+			"fabric": "isSaddled()"
+		},
+		{
+			"forge": "getTemper()",
+			"fabric": "getTemper()"
+		},
+		{
+			"forge": "setTemper(int arg0)",
+			"fabric": "setTemper(int temper)"
+		},
+		{
+			"forge": "modifyTemper(int arg0)",
+			"fabric": "addTemper(int difference)"
+		},
+		{
+			"forge": "isPushable()",
+			"fabric": "isPushable()"
+		},
+		{
+			"forge": "eating()",
+			"fabric": "playEatingAnimation()"
+		},
+		{
+			"forge": "causeFallDamage(float arg0, float arg1, DamageSource arg2)",
+			"fabric": "handleFallDamage(float arg0, float arg1, DamageSource arg2)"
+		},
+		{
+			"forge": "calculateFallDamage(float arg0, float arg1)",
+			"fabric": "computeFallDamage(float arg0, float arg1)"
+		},
+		{
+			"forge": "getInventorySize()",
+			"fabric": "getInventorySize()"
+		},
+		{
+			"forge": "createInventory()",
+			"fabric": "onChestedStatusChanged()"
+		},
+		{
+			"forge": "updateContainerEquipment()",
+			"fabric": "updateSaddle()"
+		},
+		{
+			"forge": "containerChanged(Container arg0)",
+			"fabric": "onInventoryChanged(Inventory arg0)"
+		},
+		{
+			"forge": "getCustomJump()",
+			"fabric": "getJumpStrength()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "canPerformRearing()",
+			"fabric": "shouldAmbientStand()"
+		},
+		{
+			"forge": "getEatingSound()",
+			"fabric": "getEatSound()"
+		},
+		{
+			"forge": "getAngrySound()",
+			"fabric": "getAngrySound()"
+		},
+		{
+			"forge": "playStepSound(BlockPos arg0, BlockState arg1)",
+			"fabric": "playStepSound(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "isWoodSoundType(SoundType arg0)",
+			"fabric": "isWooden(BlockSoundGroup soundGroup)"
+		},
+		{
+			"forge": "playGallopSound(SoundType arg0)",
+			"fabric": "playWalkSound(BlockSoundGroup group)"
+		},
+		{
+			"forge": "createBaseHorseAttributes()",
+			"fabric": "createBaseHorseAttributes()"
+		},
+		{
+			"forge": "getMaxSpawnClusterSize()",
+			"fabric": "getLimitPerChunk()"
+		},
+		{
+			"forge": "getMaxTemper()",
+			"fabric": "getMaxTemper()"
+		},
+		{
+			"forge": "getSoundVolume()",
+			"fabric": "getSoundVolume()"
+		},
+		{
+			"forge": "getAmbientSoundInterval()",
+			"fabric": "getMinAmbientSoundDelay()"
+		},
+		{
+			"forge": "openCustomInventoryScreen(Player arg0)",
+			"fabric": "openInventory(PlayerEntity arg0)"
+		},
+		{
+			"forge": "fedFood(Player arg0, ItemStack arg1)",
+			"fabric": "interactHorse(PlayerEntity player, ItemStack stack)"
+		},
+		{
+			"forge": "handleEating(Player arg0, ItemStack arg1)",
+			"fabric": "receiveFood(PlayerEntity player, ItemStack item)"
+		},
+		{
+			"forge": "doPlayerRide(Player arg0)",
+			"fabric": "putPlayerOnBack(PlayerEntity player)"
+		},
+		{
+			"forge": "isImmobile()",
+			"fabric": "isImmobile()"
+		},
+		{
+			"forge": "isFood(ItemStack arg0)",
+			"fabric": "isBreedingItem(ItemStack arg0)"
+		},
+		{
+			"forge": "moveTail()",
+			"fabric": "wagTail()"
+		},
+		{
+			"forge": "dropEquipment()",
+			"fabric": "dropInventory()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "followMommy()",
+			"fabric": "walkToParent()"
+		},
+		{
+			"forge": "canEatGrass()",
+			"fabric": "eatsGrass()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "openMouth()",
+			"fabric": "setEating()"
+		},
+		{
+			"forge": "setEating(boolean arg0)",
+			"fabric": "setEatingGrass(boolean eatingGrass)"
+		},
+		{
+			"forge": "setStanding(boolean arg0)",
+			"fabric": "setAngry(boolean angry)"
+		},
+		{
+			"forge": "getAmbientStandSound()",
+			"fabric": "getAmbientStandSound()"
+		},
+		{
+			"forge": "standIfPossible()",
+			"fabric": "updateAnger()"
+		},
+		{
+			"forge": "makeMad()",
+			"fabric": "playAngrySound()"
+		},
+		{
+			"forge": "tameWithName(Player arg0)",
+			"fabric": "bondWithPlayer(PlayerEntity player)"
+		},
+		{
+			"forge": "tickRidden(Player arg0, Vec3 arg1)",
+			"fabric": "tickControlled(PlayerEntity arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "getRiddenRotation(LivingEntity arg0)",
+			"fabric": "getControlledRotation(LivingEntity controllingPassenger)"
+		},
+		{
+			"forge": "getRiddenInput(Player arg0, Vec3 arg1)",
+			"fabric": "getControlledMovementInput(PlayerEntity arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "getRiddenSpeed(Player arg0)",
+			"fabric": "getSaddledSpeed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "executeRidersJump(float arg0, Vec3 arg1)",
+			"fabric": "jump(float strength, Vec3d movementInput)"
+		},
+		{
+			"forge": "playJumpSound()",
+			"fabric": "playJumpSound()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "canMate(Animal arg0)",
+			"fabric": "canBreedWith(AnimalEntity arg0)"
+		},
+		{
+			"forge": "canParent()",
+			"fabric": "canBreed()"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "setOffspringAttributes(AgeableMob arg0, AbstractHorse arg1)",
+			"fabric": "setChildAttributes(PassiveEntity other, AbstractHorseEntity child)"
+		},
+		{
+			"forge": "setOffspringAttribute(AgeableMob arg0, AbstractHorse arg1, Attribute arg2, double arg3, double arg4)",
+			"fabric": "setChildAttribute(PassiveEntity other, AbstractHorseEntity child, EntityAttribute attribute, double min, double max)"
+		},
+		{
+			"forge": "createOffspringAttribute(double arg0, double arg1, double arg2, double arg3, RandomSource arg4)",
+			"fabric": "calculateAttributeBaseValue(double parentBase, double otherParentBase, double min, double max, Random random)"
+		},
+		{
+			"forge": "getEatAnim(float arg0)",
+			"fabric": "getEatingGrassAnimationProgress(float tickDelta)"
+		},
+		{
+			"forge": "getStandAnim(float arg0)",
+			"fabric": "getAngryAnimationProgress(float tickDelta)"
+		},
+		{
+			"forge": "getMouthAnim(float arg0)",
+			"fabric": "getEatingAnimationProgress(float tickDelta)"
+		},
+		{
+			"forge": "onPlayerJump(int arg0)",
+			"fabric": "setJumpStrength(int arg0)"
+		},
+		{
+			"forge": "canJump()",
+			"fabric": "canJump()"
+		},
+		{
+			"forge": "handleStartJump(int arg0)",
+			"fabric": "startJumping(int arg0)"
+		},
+		{
+			"forge": "handleStopJump()",
+			"fabric": "stopJumping()"
+		},
+		{
+			"forge": "spawnTamingParticles(boolean arg0)",
+			"fabric": "spawnPlayerReactionParticles(boolean positive)"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "positionRider(Entity arg0, Entity$MoveFunction arg1)",
+			"fabric": "updatePassengerPosition(Entity arg0, Entity$PositionUpdater arg1)"
+		},
+		{
+			"forge": "generateMaxHealth(IntUnaryOperator arg0)",
+			"fabric": "getChildHealthBonus(IntUnaryOperator randomIntGetter)"
+		},
+		{
+			"forge": "generateJumpStrength(DoubleSupplier arg0)",
+			"fabric": "getChildJumpStrengthBonus(DoubleSupplier randomDoubleGetter)"
+		},
+		{
+			"forge": "generateSpeed(DoubleSupplier arg0)",
+			"fabric": "getChildMovementSpeedBonus(DoubleSupplier randomDoubleGetter)"
+		},
+		{
+			"forge": "onClimbable()",
+			"fabric": "isClimbing()"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "canWearArmor()",
+			"fabric": "hasArmorSlot()"
+		},
+		{
+			"forge": "isWearingArmor()",
+			"fabric": "hasArmorInSlot()"
+		},
+		{
+			"forge": "isArmor(ItemStack arg0)",
+			"fabric": "isHorseArmor(ItemStack item)"
+		},
+		{
+			"forge": "createEquipmentSlotAccess(int arg0, Predicate<ItemStack> arg1)",
+			"fabric": "createInventoryStackReference(int slot, Predicate<ItemStack> predicate)"
+		},
+		{
+			"forge": "getSlot(int arg0)",
+			"fabric": "getStackReference(int arg0)"
+		},
+		{
+			"forge": "getControllingPassenger()",
+			"fabric": "getControllingPassenger()"
+		},
+		{
+			"forge": "getDismountLocationInDirection(Vec3 arg0, LivingEntity arg1)",
+			"fabric": "locateSafeDismountingPos(Vec3d offset, LivingEntity passenger)"
+		},
+		{
+			"forge": "getDismountLocationForPassenger(LivingEntity arg0)",
+			"fabric": "updatePassengerForDismount(LivingEntity arg0)"
+		},
+		{
+			"forge": "randomizeAttributes(RandomSource arg0)",
+			"fabric": "initAttributes(Random random)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "hasInventoryChanged(Container arg0)",
+			"fabric": "areInventoriesDifferent(Inventory inventory)"
+		},
+		{
+			"forge": "getAmbientStandInterval()",
+			"fabric": "getMinAmbientStandDelay()"
+		}
+	]
+}

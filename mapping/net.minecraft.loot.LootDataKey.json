@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootDataId",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootDataId",
+			"fabric": "net.minecraft.loot.LootDataKey"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "location",
+			"fabric": "id"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "location()",
+			"fabric": "id()"
+		}
+	]
+}

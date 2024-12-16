@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$Ap2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$Ap2",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$BinaryOperation"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "argument1",
+			"fabric": "argument1"
+		},
+		{
+			"forge": "argument2",
+			"fabric": "argument2"
+		},
+		{
+			"forge": "minValue",
+			"fabric": "minValue"
+		},
+		{
+			"forge": "maxValue",
+			"fabric": "maxValue"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "fillArray(double[] arg0, DensityFunction$ContextProvider arg1)",
+			"fabric": "fill(double[] arg0, DensityFunction$EachApplier arg1)"
+		},
+		{
+			"forge": "mapAll(DensityFunction$Visitor arg0)",
+			"fabric": "apply(DensityFunction$DensityFunctionVisitor arg0)"
+		},
+		{
+			"forge": "minValue()",
+			"fabric": "minValue()"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "maxValue()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "argument1()",
+			"fabric": "argument1()"
+		},
+		{
+			"forge": "argument2()",
+			"fabric": "argument2()"
+		}
+	]
+}

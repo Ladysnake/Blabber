@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.particle.SculkChargeParticle$Provider",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.SculkChargeParticle$Provider",
+			"fabric": "net.minecraft.client.particle.SculkChargeParticle$Factory"
+		},
+		{
+			"forge": "sprite",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "sprite",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "createParticle(SculkChargeParticleOptions arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createParticle(SculkChargeParticleEffect arg0, ClientWorld arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)"
+		},
+		{
+			"forge": "createParticle(SculkChargeParticleOptions arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createParticle(SculkChargeParticleEffect arg0, ClientWorld arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)"
+		},
+		{
+			"forge": "sprite()",
+			"fabric": "spriteProvider()"
+		}
+	]
+}

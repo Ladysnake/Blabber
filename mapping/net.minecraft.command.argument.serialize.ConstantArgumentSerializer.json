@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.commands.synchronization.SingletonArgumentInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.synchronization.SingletonArgumentInfo",
+			"fabric": "net.minecraft.command.argument.serialize.ConstantArgumentSerializer"
+		},
+		{
+			"forge": "template",
+			"fabric": "properties"
+		},
+		{
+			"forge": "template",
+			"fabric": "properties"
+		},
+		{
+			"forge": "contextFree(Supplier<T> arg0)",
+			"fabric": "of(Supplier<T> typeSupplier)"
+		},
+		{
+			"forge": "contextFree(Supplier<T> arg0)",
+			"fabric": "of(Supplier<T> typeSupplier)"
+		},
+		{
+			"forge": "contextAware(Function<CommandBuildContext, T> arg0)",
+			"fabric": "of(Function<CommandRegistryAccess, T> typeSupplier)"
+		},
+		{
+			"forge": "serializeToNetwork(SingletonArgumentInfo<A>.Template arg0, FriendlyByteBuf arg1)",
+			"fabric": "writePacket(ConstantArgumentSerializer<A>.Properties arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "serializeToJson(SingletonArgumentInfo<A>.Template arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "writeJson(ConstantArgumentSerializer<A>.Properties arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "deserializeFromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "unpack(A arg0)",
+			"fabric": "getArgumentTypeProperties(A arg0)"
+		}
+	]
+}

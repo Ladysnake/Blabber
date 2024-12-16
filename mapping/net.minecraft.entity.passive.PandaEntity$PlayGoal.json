@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.animal.Panda$PandaRollGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Panda$PandaRollGoal",
+			"fabric": "net.minecraft.entity.passive.PandaEntity$PlayGoal"
+		},
+		{
+			"forge": "panda",
+			"fabric": "panda"
+		},
+		{
+			"forge": "panda",
+			"fabric": "panda"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "isInterruptable()",
+			"fabric": "canStop()"
+		}
+	]
+}

@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.world.entity.ambient.Bat",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ambient.Bat",
+			"fabric": "net.minecraft.entity.passive.BatEntity"
+		},
+		{
+			"forge": "FLAP_DEGREES_PER_TICK",
+			"fabric": "field_30268"
+		},
+		{
+			"forge": "FLAP_DEGREES_PER_TICK",
+			"fabric": "field_30268"
+		},
+		{
+			"forge": "TICKS_PER_FLAP",
+			"fabric": "field_28637"
+		},
+		{
+			"forge": "DATA_ID_FLAGS",
+			"fabric": "BAT_FLAGS"
+		},
+		{
+			"forge": "FLAG_RESTING",
+			"fabric": "ROOSTING_FLAG"
+		},
+		{
+			"forge": "BAT_RESTING_TARGETING",
+			"fabric": "CLOSE_PLAYER_PREDICATE"
+		},
+		{
+			"forge": "targetPosition",
+			"fabric": "hangingPosition"
+		},
+		{
+			"forge": "isFlapping()",
+			"fabric": "isFlappingWings()"
+		},
+		{
+			"forge": "isFlapping()",
+			"fabric": "isFlappingWings()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "getSoundVolume()",
+			"fabric": "getSoundVolume()"
+		},
+		{
+			"forge": "getVoicePitch()",
+			"fabric": "getSoundPitch()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "isPushable()",
+			"fabric": "isPushable()"
+		},
+		{
+			"forge": "doPush(Entity arg0)",
+			"fabric": "pushAway(Entity arg0)"
+		},
+		{
+			"forge": "pushEntities()",
+			"fabric": "tickCramming()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createBatAttributes()"
+		},
+		{
+			"forge": "isResting()",
+			"fabric": "isRoosting()"
+		},
+		{
+			"forge": "setResting(boolean arg0)",
+			"fabric": "setRoosting(boolean roosting)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "checkFallDamage(double arg0, boolean arg1, BlockState arg2, BlockPos arg3)",
+			"fabric": "fall(double arg0, boolean arg1, BlockState arg2, BlockPos arg3)"
+		},
+		{
+			"forge": "isIgnoringBlockTriggers()",
+			"fabric": "canAvoidTraps()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "checkBatSpawnRules(EntityType<Bat> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<BatEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "isHalloween()",
+			"fabric": "isTodayAroundHalloween()"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		}
+	]
+}

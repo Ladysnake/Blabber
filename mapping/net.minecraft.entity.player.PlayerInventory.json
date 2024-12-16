@@ -1,0 +1,245 @@
+{
+	"title": "net.minecraft.world.entity.player.Inventory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.player.Inventory",
+			"fabric": "net.minecraft.entity.player.PlayerInventory"
+		},
+		{
+			"forge": "POP_TIME_DURATION",
+			"fabric": "ITEM_USAGE_COOLDOWN"
+		},
+		{
+			"forge": "POP_TIME_DURATION",
+			"fabric": "ITEM_USAGE_COOLDOWN"
+		},
+		{
+			"forge": "INVENTORY_SIZE",
+			"fabric": "MAIN_SIZE"
+		},
+		{
+			"forge": "SELECTION_SIZE",
+			"fabric": "HOTBAR_SIZE"
+		},
+		{
+			"forge": "SLOT_OFFHAND",
+			"fabric": "OFF_HAND_SLOT"
+		},
+		{
+			"forge": "NOT_FOUND_INDEX",
+			"fabric": "NOT_FOUND"
+		},
+		{
+			"forge": "ALL_ARMOR_SLOTS",
+			"fabric": "ARMOR_SLOTS"
+		},
+		{
+			"forge": "HELMET_SLOT_ONLY",
+			"fabric": "HELMET_SLOTS"
+		},
+		{
+			"forge": "items",
+			"fabric": "main"
+		},
+		{
+			"forge": "armor",
+			"fabric": "armor"
+		},
+		{
+			"forge": "offhand",
+			"fabric": "offHand"
+		},
+		{
+			"forge": "compartments",
+			"fabric": "combinedInventory"
+		},
+		{
+			"forge": "selected",
+			"fabric": "selectedSlot"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "timesChanged",
+			"fabric": "changeCount"
+		},
+		{
+			"forge": "getSelected()",
+			"fabric": "getMainHandStack()"
+		},
+		{
+			"forge": "getSelected()",
+			"fabric": "getMainHandStack()"
+		},
+		{
+			"forge": "getSelectionSize()",
+			"fabric": "getHotbarSize()"
+		},
+		{
+			"forge": "hasRemainingSpaceForItem(ItemStack arg0, ItemStack arg1)",
+			"fabric": "canStackAddMore(ItemStack existingStack, ItemStack stack)"
+		},
+		{
+			"forge": "getFreeSlot()",
+			"fabric": "getEmptySlot()"
+		},
+		{
+			"forge": "setPickedItem(ItemStack arg0)",
+			"fabric": "addPickBlock(ItemStack stack)"
+		},
+		{
+			"forge": "pickSlot(int arg0)",
+			"fabric": "swapSlotWithHotbar(int slot)"
+		},
+		{
+			"forge": "isHotbarSlot(int arg0)",
+			"fabric": "isValidHotbarIndex(int slot)"
+		},
+		{
+			"forge": "findSlotMatchingItem(ItemStack arg0)",
+			"fabric": "getSlotWithStack(ItemStack stack)"
+		},
+		{
+			"forge": "findSlotMatchingUnusedItem(ItemStack arg0)",
+			"fabric": "indexOf(ItemStack stack)"
+		},
+		{
+			"forge": "getSuitableHotbarSlot()",
+			"fabric": "getSwappableHotbarSlot()"
+		},
+		{
+			"forge": "swapPaint(double arg0)",
+			"fabric": "scrollInHotbar(double scrollAmount)"
+		},
+		{
+			"forge": "clearOrCountMatchingItems(Predicate<ItemStack> arg0, int arg1, Container arg2)",
+			"fabric": "remove(Predicate<ItemStack> shouldRemove, int maxCount, Inventory craftingInventory)"
+		},
+		{
+			"forge": "addResource(ItemStack arg0)",
+			"fabric": "addStack(ItemStack stack)"
+		},
+		{
+			"forge": "addResource(int arg0, ItemStack arg1)",
+			"fabric": "addStack(int slot, ItemStack stack)"
+		},
+		{
+			"forge": "getSlotWithRemainingSpace(ItemStack arg0)",
+			"fabric": "getOccupiedSlotWithRoomForStack(ItemStack stack)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "updateItems()"
+		},
+		{
+			"forge": "add(ItemStack arg0)",
+			"fabric": "insertStack(ItemStack stack)"
+		},
+		{
+			"forge": "add(int arg0, ItemStack arg1)",
+			"fabric": "insertStack(int slot, ItemStack stack)"
+		},
+		{
+			"forge": "placeItemBackInInventory(ItemStack arg0)",
+			"fabric": "offerOrDrop(ItemStack stack)"
+		},
+		{
+			"forge": "placeItemBackInInventory(ItemStack arg0, boolean arg1)",
+			"fabric": "offer(ItemStack stack, boolean notifiesClient)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "removeItem(ItemStack arg0)",
+			"fabric": "removeOne(ItemStack stack)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "getDestroySpeed(BlockState arg0)",
+			"fabric": "getBlockBreakingSpeed(BlockState block)"
+		},
+		{
+			"forge": "save(ListTag arg0)",
+			"fabric": "writeNbt(NbtList nbtList)"
+		},
+		{
+			"forge": "load(ListTag arg0)",
+			"fabric": "readNbt(NbtList nbtList)"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getArmor(int arg0)",
+			"fabric": "getArmorStack(int slot)"
+		},
+		{
+			"forge": "hurtArmor(DamageSource arg0, float arg1, int[] arg2)",
+			"fabric": "damageArmor(DamageSource damageSource, float amount, int[] slots)"
+		},
+		{
+			"forge": "dropAll()",
+			"fabric": "dropAll()"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "getTimesChanged()",
+			"fabric": "getChangeCount()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "contains(ItemStack arg0)",
+			"fabric": "contains(ItemStack stack)"
+		},
+		{
+			"forge": "contains(TagKey<Item> arg0)",
+			"fabric": "contains(TagKey<Item> tag)"
+		},
+		{
+			"forge": "replaceWith(Inventory arg0)",
+			"fabric": "clone(PlayerInventory other)"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "fillStackedContents(StackedContents arg0)",
+			"fabric": "populateRecipeFinder(RecipeMatcher finder)"
+		},
+		{
+			"forge": "removeFromSelected(boolean arg0)",
+			"fabric": "dropSelectedItem(boolean entireStack)"
+		}
+	]
+}

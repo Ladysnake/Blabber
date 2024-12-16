@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.client.gui.screens.recipebook.RecipeButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.recipebook.RecipeButton",
+			"fabric": "net.minecraft.client.gui.screen.recipebook.AnimatedResultButton"
+		},
+		{
+			"forge": "RECIPE_BOOK_LOCATION",
+			"fabric": "BACKGROUND_TEXTURE"
+		},
+		{
+			"forge": "RECIPE_BOOK_LOCATION",
+			"fabric": "BACKGROUND_TEXTURE"
+		},
+		{
+			"forge": "ANIMATION_TIME",
+			"fabric": "field_32414"
+		},
+		{
+			"forge": "BACKGROUND_SIZE",
+			"fabric": "field_32415"
+		},
+		{
+			"forge": "TICKS_TO_SWAP",
+			"fabric": "field_32413"
+		},
+		{
+			"forge": "MORE_RECIPES_TOOLTIP",
+			"fabric": "MORE_RECIPES_TEXT"
+		},
+		{
+			"forge": "menu",
+			"fabric": "craftingScreenHandler"
+		},
+		{
+			"forge": "book",
+			"fabric": "recipeBook"
+		},
+		{
+			"forge": "collection",
+			"fabric": "resultCollection"
+		},
+		{
+			"forge": "time",
+			"fabric": "time"
+		},
+		{
+			"forge": "animationTime",
+			"fabric": "bounce"
+		},
+		{
+			"forge": "currentIndex",
+			"fabric": "currentResultIndex"
+		},
+		{
+			"forge": "init(RecipeCollection arg0, RecipeBookPage arg1)",
+			"fabric": "showResultCollection(RecipeResultCollection resultCollection, RecipeBookResults results)"
+		},
+		{
+			"forge": "init(RecipeCollection arg0, RecipeBookPage arg1)",
+			"fabric": "showResultCollection(RecipeResultCollection resultCollection, RecipeBookResults results)"
+		},
+		{
+			"forge": "getCollection()",
+			"fabric": "getResultCollection()"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "getOrderedRecipes()",
+			"fabric": "getResults()"
+		},
+		{
+			"forge": "isOnlyOption()",
+			"fabric": "hasResults()"
+		},
+		{
+			"forge": "getRecipe()",
+			"fabric": "currentRecipe()"
+		},
+		{
+			"forge": "getTooltipText()",
+			"fabric": "getTooltip()"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "isValidClickButton(int arg0)",
+			"fabric": "isValidClickButton(int arg0)"
+		}
+	]
+}

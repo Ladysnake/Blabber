@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.multiplayer.resolver.AddressCheck$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.resolver.AddressCheck$1",
+			"fabric": "net.minecraft.client.network.BlockListChecker$1"
+		},
+		{
+			"forge": "isAllowed(ResolvedServerAddress arg0)",
+			"fabric": "isAllowed(Address arg0)"
+		},
+		{
+			"forge": "isAllowed(ResolvedServerAddress arg0)",
+			"fabric": "isAllowed(Address arg0)"
+		},
+		{
+			"forge": "isAllowed(ServerAddress arg0)",
+			"fabric": "isAllowed(ServerAddress arg0)"
+		}
+	]
+}

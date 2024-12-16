@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.boss.enderdragon.phases.AbstractDragonSittingPhase",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.enderdragon.phases.AbstractDragonSittingPhase",
+			"fabric": "net.minecraft.entity.boss.dragon.phase.AbstractSittingPhase"
+		},
+		{
+			"forge": "isSitting()",
+			"fabric": "isSittingOrHovering()"
+		},
+		{
+			"forge": "isSitting()",
+			"fabric": "isSittingOrHovering()"
+		},
+		{
+			"forge": "onHurt(DamageSource arg0, float arg1)",
+			"fabric": "modifyDamageTaken(DamageSource arg0, float arg1)"
+		}
+	]
+}

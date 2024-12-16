@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundBossEventPacket$Handler",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundBossEventPacket$Handler",
+			"fabric": "net.minecraft.network.packet.s2c.play.BossBarS2CPacket$Consumer"
+		},
+		{
+			"forge": "add(UUID arg0, Component arg1, float arg2, BossEvent$BossBarColor arg3, BossEvent$BossBarOverlay arg4, boolean arg5, boolean arg6, boolean arg7)",
+			"fabric": "add(UUID uuid, Text name, float percent, BossBar$Color color, BossBar$Style style, boolean darkenSky, boolean dragonMusic, boolean thickenFog)"
+		},
+		{
+			"forge": "add(UUID arg0, Component arg1, float arg2, BossEvent$BossBarColor arg3, BossEvent$BossBarOverlay arg4, boolean arg5, boolean arg6, boolean arg7)",
+			"fabric": "add(UUID uuid, Text name, float percent, BossBar$Color color, BossBar$Style style, boolean darkenSky, boolean dragonMusic, boolean thickenFog)"
+		},
+		{
+			"forge": "remove(UUID arg0)",
+			"fabric": "remove(UUID uuid)"
+		},
+		{
+			"forge": "updateProgress(UUID arg0, float arg1)",
+			"fabric": "updateProgress(UUID uuid, float percent)"
+		},
+		{
+			"forge": "updateName(UUID arg0, Component arg1)",
+			"fabric": "updateName(UUID uuid, Text name)"
+		},
+		{
+			"forge": "updateStyle(UUID arg0, BossEvent$BossBarColor arg1, BossEvent$BossBarOverlay arg2)",
+			"fabric": "updateStyle(UUID id, BossBar$Color color, BossBar$Style style)"
+		},
+		{
+			"forge": "updateProperties(UUID arg0, boolean arg1, boolean arg2, boolean arg3)",
+			"fabric": "updateProperties(UUID uuid, boolean darkenSky, boolean dragonMusic, boolean thickenFog)"
+		}
+	]
+}

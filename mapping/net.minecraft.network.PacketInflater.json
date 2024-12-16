@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.network.CompressionDecoder",
+	"items": [
+		{
+			"forge": "net.minecraft.network.CompressionDecoder",
+			"fabric": "net.minecraft.network.PacketInflater"
+		},
+		{
+			"forge": "MAXIMUM_COMPRESSED_LENGTH",
+			"fabric": "field_34057"
+		},
+		{
+			"forge": "MAXIMUM_COMPRESSED_LENGTH",
+			"fabric": "field_34057"
+		},
+		{
+			"forge": "MAXIMUM_UNCOMPRESSED_LENGTH",
+			"fabric": "MAXIMUM_PACKET_SIZE"
+		},
+		{
+			"forge": "inflater",
+			"fabric": "inflater"
+		},
+		{
+			"forge": "threshold",
+			"fabric": "compressionThreshold"
+		},
+		{
+			"forge": "validateDecompressed",
+			"fabric": "rejectsBadPackets"
+		},
+		{
+			"forge": "decode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, List<Object> arg2)",
+			"fabric": "decode(io.netty.channel.ChannelHandlerContext ctx, io.netty.buffer.ByteBuf buf, List<Object> objects)"
+		},
+		{
+			"forge": "decode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, List<Object> arg2)",
+			"fabric": "decode(io.netty.channel.ChannelHandlerContext ctx, io.netty.buffer.ByteBuf buf, List<Object> objects)"
+		},
+		{
+			"forge": "setThreshold(int arg0, boolean arg1)",
+			"fabric": "setCompressionThreshold(int compressionThreshold, boolean rejectsBadPackets)"
+		}
+	]
+}

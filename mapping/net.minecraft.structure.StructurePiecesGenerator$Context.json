@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator$Context",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator$Context",
+			"fabric": "net.minecraft.structure.StructurePiecesGenerator$Context"
+		},
+		{
+			"forge": "config",
+			"fabric": "config"
+		},
+		{
+			"forge": "config",
+			"fabric": "config"
+		},
+		{
+			"forge": "chunkGenerator",
+			"fabric": "chunkGenerator"
+		},
+		{
+			"forge": "structureTemplateManager",
+			"fabric": "structureTemplateManager"
+		},
+		{
+			"forge": "chunkPos",
+			"fabric": "chunkPos"
+		},
+		{
+			"forge": "heightAccessor",
+			"fabric": "world"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "config()",
+			"fabric": "config()"
+		},
+		{
+			"forge": "config()",
+			"fabric": "config()"
+		},
+		{
+			"forge": "chunkGenerator()",
+			"fabric": "chunkGenerator()"
+		},
+		{
+			"forge": "structureTemplateManager()",
+			"fabric": "structureTemplateManager()"
+		},
+		{
+			"forge": "chunkPos()",
+			"fabric": "chunkPos()"
+		},
+		{
+			"forge": "heightAccessor()",
+			"fabric": "world()"
+		},
+		{
+			"forge": "random()",
+			"fabric": "random()"
+		},
+		{
+			"forge": "seed()",
+			"fabric": "seed()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.SingleStateFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		}
+	]
+}

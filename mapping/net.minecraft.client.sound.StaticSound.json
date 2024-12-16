@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.blaze3d.audio.SoundBuffer",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.audio.SoundBuffer",
+			"fabric": "net.minecraft.client.sound.StaticSound"
+		},
+		{
+			"forge": "data",
+			"fabric": "sample"
+		},
+		{
+			"forge": "data",
+			"fabric": "sample"
+		},
+		{
+			"forge": "format",
+			"fabric": "format"
+		},
+		{
+			"forge": "hasAlBuffer",
+			"fabric": "hasBuffer"
+		},
+		{
+			"forge": "alBuffer",
+			"fabric": "streamBufferPointer"
+		},
+		{
+			"forge": "getAlBuffer()",
+			"fabric": "getStreamBufferPointer()"
+		},
+		{
+			"forge": "getAlBuffer()",
+			"fabric": "getStreamBufferPointer()"
+		},
+		{
+			"forge": "discardAlBuffer()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "releaseAlBuffer()",
+			"fabric": "takeStreamBufferPointer()"
+		}
+	]
+}

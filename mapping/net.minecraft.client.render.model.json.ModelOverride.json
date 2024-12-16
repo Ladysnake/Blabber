@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemOverride",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemOverride",
+			"fabric": "net.minecraft.client.render.model.json.ModelOverride"
+		},
+		{
+			"forge": "model",
+			"fabric": "modelId"
+		},
+		{
+			"forge": "model",
+			"fabric": "modelId"
+		},
+		{
+			"forge": "predicates",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "getModel()",
+			"fabric": "getModelId()"
+		},
+		{
+			"forge": "getModel()",
+			"fabric": "getModelId()"
+		},
+		{
+			"forge": "getPredicates()",
+			"fabric": "streamConditions()"
+		}
+	]
+}

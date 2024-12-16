@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.item.CompassItemPropertyFunction$CompassWobble",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.item.CompassItemPropertyFunction$CompassWobble",
+			"fabric": "net.minecraft.client.item.CompassAnglePredicateProvider$AngleInterpolator"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "value"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "value"
+		},
+		{
+			"forge": "deltaRotation",
+			"fabric": "speed"
+		},
+		{
+			"forge": "lastUpdateTick",
+			"fabric": "lastUpdateTime"
+		},
+		{
+			"forge": "shouldUpdate(long arg0)",
+			"fabric": "shouldUpdate(long time)"
+		},
+		{
+			"forge": "shouldUpdate(long arg0)",
+			"fabric": "shouldUpdate(long time)"
+		},
+		{
+			"forge": "update(long arg0, double arg1)",
+			"fabric": "update(long time, double target)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.renderer.ItemModelShaper",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.ItemModelShaper",
+			"fabric": "net.minecraft.client.render.item.ItemModels"
+		},
+		{
+			"forge": "shapes",
+			"fabric": "modelIds"
+		},
+		{
+			"forge": "shapes",
+			"fabric": "modelIds"
+		},
+		{
+			"forge": "shapesCache",
+			"fabric": "models"
+		},
+		{
+			"forge": "modelManager",
+			"fabric": "modelManager"
+		},
+		{
+			"forge": "getItemModel(ItemStack arg0)",
+			"fabric": "getModel(ItemStack stack)"
+		},
+		{
+			"forge": "getItemModel(ItemStack arg0)",
+			"fabric": "getModel(ItemStack stack)"
+		},
+		{
+			"forge": "getItemModel(Item arg0)",
+			"fabric": "getModel(Item item)"
+		},
+		{
+			"forge": "getIndex(Item arg0)",
+			"fabric": "getModelId(Item item)"
+		},
+		{
+			"forge": "register(Item arg0, ModelResourceLocation arg1)",
+			"fabric": "putModel(Item item, ModelIdentifier modelId)"
+		},
+		{
+			"forge": "getModelManager()",
+			"fabric": "getModelManager()"
+		},
+		{
+			"forge": "rebuildCache()",
+			"fabric": "reloadModels()"
+		}
+	]
+}

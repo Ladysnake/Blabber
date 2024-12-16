@@ -1,0 +1,169 @@
+{
+	"title": "net.minecraft.world.level.block.ButtonBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.ButtonBlock",
+			"fabric": "net.minecraft.block.ButtonBlock"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "PRESSED_DEPTH",
+			"fabric": "field_31040"
+		},
+		{
+			"forge": "UNPRESSED_DEPTH",
+			"fabric": "field_31041"
+		},
+		{
+			"forge": "HALF_AABB_HEIGHT",
+			"fabric": "field_31042"
+		},
+		{
+			"forge": "HALF_AABB_WIDTH",
+			"fabric": "field_31043"
+		},
+		{
+			"forge": "CEILING_AABB_X",
+			"fabric": "CEILING_X_SHAPE"
+		},
+		{
+			"forge": "CEILING_AABB_Z",
+			"fabric": "CEILING_Z_SHAPE"
+		},
+		{
+			"forge": "FLOOR_AABB_X",
+			"fabric": "FLOOR_X_SHAPE"
+		},
+		{
+			"forge": "FLOOR_AABB_Z",
+			"fabric": "FLOOR_Z_SHAPE"
+		},
+		{
+			"forge": "NORTH_AABB",
+			"fabric": "NORTH_SHAPE"
+		},
+		{
+			"forge": "SOUTH_AABB",
+			"fabric": "SOUTH_SHAPE"
+		},
+		{
+			"forge": "WEST_AABB",
+			"fabric": "WEST_SHAPE"
+		},
+		{
+			"forge": "EAST_AABB",
+			"fabric": "EAST_SHAPE"
+		},
+		{
+			"forge": "PRESSED_CEILING_AABB_X",
+			"fabric": "CEILING_X_PRESSED_SHAPE"
+		},
+		{
+			"forge": "PRESSED_CEILING_AABB_Z",
+			"fabric": "CEILING_Z_PRESSED_SHAPE"
+		},
+		{
+			"forge": "PRESSED_FLOOR_AABB_X",
+			"fabric": "FLOOR_X_PRESSED_SHAPE"
+		},
+		{
+			"forge": "PRESSED_FLOOR_AABB_Z",
+			"fabric": "FLOOR_Z_PRESSED_SHAPE"
+		},
+		{
+			"forge": "PRESSED_NORTH_AABB",
+			"fabric": "NORTH_PRESSED_SHAPE"
+		},
+		{
+			"forge": "PRESSED_SOUTH_AABB",
+			"fabric": "SOUTH_PRESSED_SHAPE"
+		},
+		{
+			"forge": "PRESSED_WEST_AABB",
+			"fabric": "WEST_PRESSED_SHAPE"
+		},
+		{
+			"forge": "PRESSED_EAST_AABB",
+			"fabric": "EAST_PRESSED_SHAPE"
+		},
+		{
+			"forge": "type",
+			"fabric": "blockSetType"
+		},
+		{
+			"forge": "ticksToStayPressed",
+			"fabric": "pressTicks"
+		},
+		{
+			"forge": "arrowsCanPress",
+			"fabric": "wooden"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "press(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "powerOn(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "playSound(Player arg0, LevelAccessor arg1, BlockPos arg2, boolean arg3)",
+			"fabric": "playClickSound(PlayerEntity player, WorldAccess world, BlockPos pos, boolean powered)"
+		},
+		{
+			"forge": "getSound(boolean arg0)",
+			"fabric": "getClickSound(boolean powered)"
+		},
+		{
+			"forge": "onRemove(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onStateReplaced(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "getDirectSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStrongRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "checkPressed(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "tryPowerWithProjectiles(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "updateNeighbours(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "updateNeighbors(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

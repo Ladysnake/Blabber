@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.network.ServerPlayerConnection",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.ServerPlayerConnection",
+			"fabric": "net.minecraft.server.world.EntityTrackingListener"
+		},
+		{
+			"forge": "getPlayer()",
+			"fabric": "getPlayer()"
+		},
+		{
+			"forge": "getPlayer()",
+			"fabric": "getPlayer()"
+		},
+		{
+			"forge": "send(Packet<?> arg0)",
+			"fabric": "sendPacket(Packet<?> packet)"
+		}
+	]
+}

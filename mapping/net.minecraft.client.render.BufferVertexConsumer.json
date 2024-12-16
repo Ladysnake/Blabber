@@ -1,0 +1,65 @@
+{
+	"title": "com.mojang.blaze3d.vertex.BufferVertexConsumer",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.BufferVertexConsumer",
+			"fabric": "net.minecraft.client.render.BufferVertexConsumer"
+		},
+		{
+			"forge": "currentElement()",
+			"fabric": "getCurrentElement()"
+		},
+		{
+			"forge": "currentElement()",
+			"fabric": "getCurrentElement()"
+		},
+		{
+			"forge": "nextElement()",
+			"fabric": "nextElement()"
+		},
+		{
+			"forge": "putByte(int arg0, byte arg1)",
+			"fabric": "putByte(int index, byte value)"
+		},
+		{
+			"forge": "putShort(int arg0, short arg1)",
+			"fabric": "putShort(int index, short value)"
+		},
+		{
+			"forge": "putFloat(int arg0, float arg1)",
+			"fabric": "putFloat(int index, float value)"
+		},
+		{
+			"forge": "vertex(double arg0, double arg1, double arg2)",
+			"fabric": "vertex(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "color(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "color(int arg0, int arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "uv(float arg0, float arg1)",
+			"fabric": "texture(float arg0, float arg1)"
+		},
+		{
+			"forge": "overlayCoords(int arg0, int arg1)",
+			"fabric": "overlay(int arg0, int arg1)"
+		},
+		{
+			"forge": "uv2(int arg0, int arg1)",
+			"fabric": "light(int arg0, int arg1)"
+		},
+		{
+			"forge": "uvShort(short arg0, short arg1, int arg2)",
+			"fabric": "uv(short u, short v, int index)"
+		},
+		{
+			"forge": "normal(float arg0, float arg1, float arg2)",
+			"fabric": "normal(float arg0, float arg1, float arg2)"
+		},
+		{
+			"forge": "normalIntValue(float arg0)",
+			"fabric": "packByte(float f)"
+		}
+	]
+}

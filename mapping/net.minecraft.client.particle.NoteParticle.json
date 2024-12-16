@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.particle.NoteParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.NoteParticle",
+			"fabric": "net.minecraft.client.particle.NoteParticle"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getQuadSize(float arg0)",
+			"fabric": "getSize(float arg0)"
+		}
+	]
+}

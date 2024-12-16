@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.projectile.ThrowableProjectile",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.ThrowableProjectile",
+			"fabric": "net.minecraft.entity.projectile.thrown.ThrownEntity"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getGravity()",
+			"fabric": "getGravity()"
+		}
+	]
+}

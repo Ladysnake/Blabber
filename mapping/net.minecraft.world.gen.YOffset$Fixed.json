@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.VerticalAnchor$Absolute",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.VerticalAnchor$Absolute",
+			"fabric": "net.minecraft.world.gen.YOffset$Fixed"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "resolveY(WorldGenerationContext arg0)",
+			"fabric": "getY(HeightContext arg0)"
+		},
+		{
+			"forge": "resolveY(WorldGenerationContext arg0)",
+			"fabric": "getY(HeightContext arg0)"
+		},
+		{
+			"forge": "y()",
+			"fabric": "y()"
+		}
+	]
+}

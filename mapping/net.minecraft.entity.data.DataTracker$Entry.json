@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.network.syncher.SynchedEntityData$DataItem",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.SynchedEntityData$DataItem",
+			"fabric": "net.minecraft.entity.data.DataTracker$Entry"
+		},
+		{
+			"forge": "accessor",
+			"fabric": "data"
+		},
+		{
+			"forge": "accessor",
+			"fabric": "data"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "initialValue",
+			"fabric": "initialValue"
+		},
+		{
+			"forge": "dirty",
+			"fabric": "dirty"
+		},
+		{
+			"forge": "getAccessor()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "getAccessor()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "setValue(T arg0)",
+			"fabric": "set(T value)"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "isDirty()",
+			"fabric": "isDirty()"
+		},
+		{
+			"forge": "setDirty(boolean arg0)",
+			"fabric": "setDirty(boolean dirty)"
+		},
+		{
+			"forge": "isSetToDefault()",
+			"fabric": "isUnchanged()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "toSerialized()"
+		}
+	]
+}

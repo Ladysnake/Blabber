@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.reporting.ChatSelectionScreen$ChatSelectionList$PaddingEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.reporting.ChatSelectionScreen$ChatSelectionList$PaddingEntry",
+			"fabric": "net.minecraft.client.gui.screen.report.ChatSelectionScreen$SelectionListWidget$SeparatorEntry"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		}
+	]
+}

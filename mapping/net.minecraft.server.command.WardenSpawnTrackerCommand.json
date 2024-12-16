@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.commands.WardenSpawnTrackerCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.WardenSpawnTrackerCommand",
+			"fabric": "net.minecraft.server.command.WardenSpawnTrackerCommand"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "setWarningLevel(CommandSourceStack arg0, Collection<? extends Player> arg1, int arg2)",
+			"fabric": "setWarningLevel(ServerCommandSource source, Collection<? extends PlayerEntity> players, int warningCount)"
+		},
+		{
+			"forge": "resetTracker(CommandSourceStack arg0, Collection<? extends Player> arg1)",
+			"fabric": "clearTracker(ServerCommandSource source, Collection<? extends PlayerEntity> players)"
+		}
+	]
+}

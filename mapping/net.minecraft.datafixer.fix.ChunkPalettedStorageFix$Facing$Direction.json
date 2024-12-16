@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix$Direction$AxisDirection",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix$Direction$AxisDirection",
+			"fabric": "net.minecraft.datafixer.fix.ChunkPalettedStorageFix$Facing$Direction"
+		},
+		{
+			"forge": "POSITIVE",
+			"fabric": "POSITIVE"
+		},
+		{
+			"forge": "POSITIVE",
+			"fabric": "POSITIVE"
+		},
+		{
+			"forge": "NEGATIVE",
+			"fabric": "NEGATIVE"
+		},
+		{
+			"forge": "step",
+			"fabric": "offset"
+		},
+		{
+			"forge": "step",
+			"fabric": "offset"
+		},
+		{
+			"forge": "getStep()",
+			"fabric": "getOffset()"
+		},
+		{
+			"forge": "getStep()",
+			"fabric": "getOffset()"
+		}
+	]
+}

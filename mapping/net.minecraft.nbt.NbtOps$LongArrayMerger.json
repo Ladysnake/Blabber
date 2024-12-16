@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.nbt.NbtOps$LongListCollector",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.NbtOps$LongListCollector",
+			"fabric": "net.minecraft.nbt.NbtOps$LongArrayMerger"
+		},
+		{
+			"forge": "values",
+			"fabric": "list"
+		},
+		{
+			"forge": "values",
+			"fabric": "list"
+		},
+		{
+			"forge": "accept(Tag arg0)",
+			"fabric": "merge(NbtElement arg0)"
+		},
+		{
+			"forge": "accept(Tag arg0)",
+			"fabric": "merge(NbtElement arg0)"
+		},
+		{
+			"forge": "result()",
+			"fabric": "getResult()"
+		}
+	]
+}

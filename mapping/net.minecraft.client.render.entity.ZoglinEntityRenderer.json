@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.ZoglinRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.ZoglinRenderer",
+			"fabric": "net.minecraft.client.render.entity.ZoglinEntityRenderer"
+		},
+		{
+			"forge": "ZOGLIN_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "ZOGLIN_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Zoglin arg0)",
+			"fabric": "getTexture(ZoglinEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Zoglin arg0)",
+			"fabric": "getTexture(ZoglinEntity arg0)"
+		}
+	]
+}

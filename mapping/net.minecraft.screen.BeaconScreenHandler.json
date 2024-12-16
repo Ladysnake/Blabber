@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.inventory.BeaconMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.BeaconMenu",
+			"fabric": "net.minecraft.screen.BeaconScreenHandler"
+		},
+		{
+			"forge": "PAYMENT_SLOT",
+			"fabric": "PAYMENT_SLOT_ID"
+		},
+		{
+			"forge": "PAYMENT_SLOT",
+			"fabric": "PAYMENT_SLOT_ID"
+		},
+		{
+			"forge": "SLOT_COUNT",
+			"fabric": "BEACON_INVENTORY_SIZE"
+		},
+		{
+			"forge": "DATA_COUNT",
+			"fabric": "PROPERTY_COUNT"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "INVENTORY_START"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "INVENTORY_END"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "HOTBAR_START"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "HOTBAR_END"
+		},
+		{
+			"forge": "beacon",
+			"fabric": "payment"
+		},
+		{
+			"forge": "paymentSlot",
+			"fabric": "paymentSlot"
+		},
+		{
+			"forge": "access",
+			"fabric": "context"
+		},
+		{
+			"forge": "beaconData",
+			"fabric": "propertyDelegate"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "setData(int arg0, int arg1)",
+			"fabric": "setProperty(int arg0, int arg1)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "getLevels()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "getPrimaryEffect()",
+			"fabric": "getPrimaryEffect()"
+		},
+		{
+			"forge": "getSecondaryEffect()",
+			"fabric": "getSecondaryEffect()"
+		},
+		{
+			"forge": "updateEffects(Optional<MobEffect> arg0, Optional<MobEffect> arg1)",
+			"fabric": "setEffects(Optional<StatusEffect> primary, Optional<StatusEffect> secondary)"
+		},
+		{
+			"forge": "hasPayment()",
+			"fabric": "hasPayment()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageSetter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageSetter",
+			"fabric": "net.minecraft.world.gen.foliage.FoliagePlacer$BlockPlacer"
+		},
+		{
+			"forge": "set(BlockPos arg0, BlockState arg1)",
+			"fabric": "placeBlock(BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "set(BlockPos arg0, BlockState arg1)",
+			"fabric": "placeBlock(BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "isSet(BlockPos arg0)",
+			"fabric": "hasPlacedBlock(BlockPos pos)"
+		}
+	]
+}

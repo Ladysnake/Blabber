@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.model.SilverfishModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.SilverfishModel",
+			"fabric": "net.minecraft.client.render.entity.model.SilverfishEntityModel"
+		},
+		{
+			"forge": "BODY_COUNT",
+			"fabric": "BODY_PARTS_COUNT"
+		},
+		{
+			"forge": "BODY_COUNT",
+			"fabric": "BODY_PARTS_COUNT"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "bodyParts",
+			"fabric": "body"
+		},
+		{
+			"forge": "bodyLayers",
+			"fabric": "scales"
+		},
+		{
+			"forge": "BODY_SIZES",
+			"fabric": "SEGMENT_LOCATIONS"
+		},
+		{
+			"forge": "BODY_TEXS",
+			"fabric": "SEGMENT_SIZES"
+		},
+		{
+			"forge": "getLayerName(int arg0)",
+			"fabric": "getLayerName(int index)"
+		},
+		{
+			"forge": "getLayerName(int arg0)",
+			"fabric": "getLayerName(int index)"
+		},
+		{
+			"forge": "getSegmentName(int arg0)",
+			"fabric": "getSegmentName(int index)"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

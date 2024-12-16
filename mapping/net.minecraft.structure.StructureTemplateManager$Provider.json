@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager$Source",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager$Source",
+			"fabric": "net.minecraft.structure.StructureTemplateManager$Provider"
+		},
+		{
+			"forge": "loader",
+			"fabric": "loader"
+		},
+		{
+			"forge": "loader",
+			"fabric": "loader"
+		},
+		{
+			"forge": "lister",
+			"fabric": "lister"
+		},
+		{
+			"forge": "loader()",
+			"fabric": "loader()"
+		},
+		{
+			"forge": "loader()",
+			"fabric": "loader()"
+		},
+		{
+			"forge": "lister()",
+			"fabric": "lister()"
+		}
+	]
+}

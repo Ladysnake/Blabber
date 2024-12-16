@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.monster.Blaze$BlazeAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Blaze$BlazeAttackGoal",
+			"fabric": "net.minecraft.entity.mob.BlazeEntity$ShootFireballGoal"
+		},
+		{
+			"forge": "blaze",
+			"fabric": "blaze"
+		},
+		{
+			"forge": "blaze",
+			"fabric": "blaze"
+		},
+		{
+			"forge": "attackStep",
+			"fabric": "fireballsFired"
+		},
+		{
+			"forge": "attackTime",
+			"fabric": "fireballCooldown"
+		},
+		{
+			"forge": "lastSeen",
+			"fabric": "targetNotVisibleTicks"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "requiresUpdateEveryTick()",
+			"fabric": "shouldRunEveryTick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getFollowDistance()",
+			"fabric": "getFollowRange()"
+		}
+	]
+}

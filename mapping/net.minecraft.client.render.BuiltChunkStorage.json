@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.renderer.ViewArea",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.ViewArea",
+			"fabric": "net.minecraft.client.render.BuiltChunkStorage"
+		},
+		{
+			"forge": "levelRenderer",
+			"fabric": "worldRenderer"
+		},
+		{
+			"forge": "levelRenderer",
+			"fabric": "worldRenderer"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "chunkGridSizeY",
+			"fabric": "sizeY"
+		},
+		{
+			"forge": "chunkGridSizeX",
+			"fabric": "sizeX"
+		},
+		{
+			"forge": "chunkGridSizeZ",
+			"fabric": "sizeZ"
+		},
+		{
+			"forge": "chunks",
+			"fabric": "chunks"
+		},
+		{
+			"forge": "createChunks(ChunkRenderDispatcher arg0)",
+			"fabric": "createChunks(ChunkBuilder chunkBuilder)"
+		},
+		{
+			"forge": "createChunks(ChunkRenderDispatcher arg0)",
+			"fabric": "createChunks(ChunkBuilder chunkBuilder)"
+		},
+		{
+			"forge": "releaseAllBuffers()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getChunkIndex(int arg0, int arg1, int arg2)",
+			"fabric": "getChunkIndex(int x, int y, int z)"
+		},
+		{
+			"forge": "setViewDistance(int arg0)",
+			"fabric": "setViewDistance(int viewDistance)"
+		},
+		{
+			"forge": "repositionCamera(double arg0, double arg1)",
+			"fabric": "updateCameraPosition(double x, double z)"
+		},
+		{
+			"forge": "setDirty(int arg0, int arg1, int arg2, boolean arg3)",
+			"fabric": "scheduleRebuild(int x, int y, int z, boolean important)"
+		},
+		{
+			"forge": "getRenderChunkAt(BlockPos arg0)",
+			"fabric": "getRenderedChunk(BlockPos pos)"
+		}
+	]
+}

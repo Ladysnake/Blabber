@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.ReportingContext",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.ReportingContext",
+			"fabric": "net.minecraft.client.report.AbuseReportContext"
+		},
+		{
+			"forge": "LOG_CAPACITY",
+			"fabric": "MAX_LOGS"
+		},
+		{
+			"forge": "LOG_CAPACITY",
+			"fabric": "MAX_LOGS"
+		},
+		{
+			"forge": "sender",
+			"fabric": "sender"
+		},
+		{
+			"forge": "environment",
+			"fabric": "environment"
+		},
+		{
+			"forge": "chatLog",
+			"fabric": "chatLog"
+		},
+		{
+			"forge": "chatReportDraft",
+			"fabric": "draft"
+		},
+		{
+			"forge": "create(ReportEnvironment arg0, com.mojang.authlib.minecraft.UserApiService arg1)",
+			"fabric": "create(ReporterEnvironment environment, com.mojang.authlib.minecraft.UserApiService userApiService)"
+		},
+		{
+			"forge": "create(ReportEnvironment arg0, com.mojang.authlib.minecraft.UserApiService arg1)",
+			"fabric": "create(ReporterEnvironment environment, com.mojang.authlib.minecraft.UserApiService userApiService)"
+		},
+		{
+			"forge": "draftReportHandled(Minecraft arg0, Screen arg1, Runnable arg2, boolean arg3)",
+			"fabric": "tryShowDraftScreen(MinecraftClient client, Screen parent, Runnable callback, boolean quit)"
+		},
+		{
+			"forge": "sender()",
+			"fabric": "getSender()"
+		},
+		{
+			"forge": "chatLog()",
+			"fabric": "getChatLog()"
+		},
+		{
+			"forge": "matches(ReportEnvironment arg0)",
+			"fabric": "environmentEquals(ReporterEnvironment environment)"
+		},
+		{
+			"forge": "setChatReportDraft(ChatReportBuilder$ChatReport arg0)",
+			"fabric": "setDraft(ChatAbuseReport$Draft draft)"
+		},
+		{
+			"forge": "hasDraftReport()",
+			"fabric": "hasDraft()"
+		},
+		{
+			"forge": "hasDraftReportFor(UUID arg0)",
+			"fabric": "draftPlayerUuidEquals(UUID uuid)"
+		}
+	]
+}

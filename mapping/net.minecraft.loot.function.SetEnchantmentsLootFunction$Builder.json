@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetEnchantmentsFunction$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetEnchantmentsFunction$Builder",
+			"fabric": "net.minecraft.loot.function.SetEnchantmentsLootFunction$Builder"
+		},
+		{
+			"forge": "enchantments",
+			"fabric": "enchantments"
+		},
+		{
+			"forge": "enchantments",
+			"fabric": "enchantments"
+		},
+		{
+			"forge": "add",
+			"fabric": "add"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "withEnchantment(Enchantment arg0, NumberProvider arg1)",
+			"fabric": "enchantment(Enchantment enchantment, LootNumberProvider level)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

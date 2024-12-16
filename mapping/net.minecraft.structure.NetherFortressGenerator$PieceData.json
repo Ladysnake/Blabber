@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.NetherFortressPieces$PieceWeight",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.NetherFortressPieces$PieceWeight",
+			"fabric": "net.minecraft.structure.NetherFortressGenerator$PieceData"
+		},
+		{
+			"forge": "pieceClass",
+			"fabric": "pieceType"
+		},
+		{
+			"forge": "pieceClass",
+			"fabric": "pieceType"
+		},
+		{
+			"forge": "weight",
+			"fabric": "weight"
+		},
+		{
+			"forge": "placeCount",
+			"fabric": "generatedCount"
+		},
+		{
+			"forge": "maxPlaceCount",
+			"fabric": "limit"
+		},
+		{
+			"forge": "allowInRow",
+			"fabric": "repeatable"
+		},
+		{
+			"forge": "doPlace(int arg0)",
+			"fabric": "canGenerate(int chainLength)"
+		},
+		{
+			"forge": "doPlace(int arg0)",
+			"fabric": "canGenerate(int chainLength)"
+		},
+		{
+			"forge": "isValid()",
+			"fabric": "canGenerate()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.animal.Turtle$TurtleGoToWaterGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Turtle$TurtleGoToWaterGoal",
+			"fabric": "net.minecraft.entity.passive.TurtleEntity$WanderInWaterGoal"
+		},
+		{
+			"forge": "GIVE_UP_TICKS",
+			"fabric": "field_30385"
+		},
+		{
+			"forge": "GIVE_UP_TICKS",
+			"fabric": "field_30385"
+		},
+		{
+			"forge": "turtle",
+			"fabric": "turtle"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "shouldRecalculatePath()",
+			"fabric": "shouldResetPath()"
+		},
+		{
+			"forge": "isValidTarget(LevelReader arg0, BlockPos arg1)",
+			"fabric": "isTargetPos(WorldView arg0, BlockPos arg1)"
+		}
+	]
+}

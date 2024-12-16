@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.block.SculkCatalystBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SculkCatalystBlock",
+			"fabric": "net.minecraft.block.SculkCatalystBlock"
+		},
+		{
+			"forge": "PULSE",
+			"fabric": "BLOOM"
+		},
+		{
+			"forge": "PULSE",
+			"fabric": "BLOOM"
+		},
+		{
+			"forge": "xpRange",
+			"fabric": "experience"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getTicker(Level arg0, BlockState arg1, BlockEntityType<T> arg2)",
+			"fabric": "getTicker(World arg0, BlockState arg1, BlockEntityType<T> arg2)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "spawnAfterBreak(BlockState arg0, ServerLevel arg1, BlockPos arg2, ItemStack arg3, boolean arg4)",
+			"fabric": "onStacksDropped(BlockState arg0, ServerWorld arg1, BlockPos arg2, ItemStack arg3, boolean arg4)"
+		}
+	]
+}

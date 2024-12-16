@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction",
+			"fabric": "net.minecraft.loot.function.ConditionalLootFunction"
+		},
+		{
+			"forge": "predicates",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "predicates",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "compositePredicates",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "apply(ItemStack arg0, LootContext arg1)",
+			"fabric": "apply(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "apply(ItemStack arg0, LootContext arg1)",
+			"fabric": "apply(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack stack, LootContext context)"
+		},
+		{
+			"forge": "validate(ValidationContext arg0)",
+			"fabric": "validate(LootTableReporter arg0)"
+		},
+		{
+			"forge": "simpleBuilder(Function<LootItemCondition[], LootItemFunction> arg0)",
+			"fabric": "builder(Function<LootCondition[], LootFunction> joiner)"
+		}
+	]
+}

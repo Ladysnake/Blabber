@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.CommandBuildContext$2$1",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandBuildContext$2$1",
+			"fabric": "net.minecraft.command.CommandRegistryAccess$2$1"
+		},
+		{
+			"forge": "parent()",
+			"fabric": "getBase()"
+		},
+		{
+			"forge": "parent()",
+			"fabric": "getBase()"
+		}
+	]
+}

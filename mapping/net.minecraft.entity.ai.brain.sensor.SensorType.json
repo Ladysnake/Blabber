@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.world.entity.ai.sensing.SensorType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.sensing.SensorType",
+			"fabric": "net.minecraft.entity.ai.brain.sensor.SensorType"
+		},
+		{
+			"forge": "DUMMY",
+			"fabric": "DUMMY"
+		},
+		{
+			"forge": "DUMMY",
+			"fabric": "DUMMY"
+		},
+		{
+			"forge": "NEAREST_ITEMS",
+			"fabric": "NEAREST_ITEMS"
+		},
+		{
+			"forge": "NEAREST_LIVING_ENTITIES",
+			"fabric": "NEAREST_LIVING_ENTITIES"
+		},
+		{
+			"forge": "NEAREST_PLAYERS",
+			"fabric": "NEAREST_PLAYERS"
+		},
+		{
+			"forge": "NEAREST_BED",
+			"fabric": "NEAREST_BED"
+		},
+		{
+			"forge": "HURT_BY",
+			"fabric": "HURT_BY"
+		},
+		{
+			"forge": "VILLAGER_HOSTILES",
+			"fabric": "VILLAGER_HOSTILES"
+		},
+		{
+			"forge": "VILLAGER_BABIES",
+			"fabric": "VILLAGER_BABIES"
+		},
+		{
+			"forge": "SECONDARY_POIS",
+			"fabric": "SECONDARY_POIS"
+		},
+		{
+			"forge": "GOLEM_DETECTED",
+			"fabric": "GOLEM_DETECTED"
+		},
+		{
+			"forge": "PIGLIN_SPECIFIC_SENSOR",
+			"fabric": "PIGLIN_SPECIFIC_SENSOR"
+		},
+		{
+			"forge": "PIGLIN_BRUTE_SPECIFIC_SENSOR",
+			"fabric": "PIGLIN_BRUTE_SPECIFIC_SENSOR"
+		},
+		{
+			"forge": "HOGLIN_SPECIFIC_SENSOR",
+			"fabric": "HOGLIN_SPECIFIC_SENSOR"
+		},
+		{
+			"forge": "NEAREST_ADULT",
+			"fabric": "NEAREST_ADULT"
+		},
+		{
+			"forge": "AXOLOTL_ATTACKABLES",
+			"fabric": "AXOLOTL_ATTACKABLES"
+		},
+		{
+			"forge": "AXOLOTL_TEMPTATIONS",
+			"fabric": "AXOLOTL_TEMPTATIONS"
+		},
+		{
+			"forge": "GOAT_TEMPTATIONS",
+			"fabric": "GOAT_TEMPTATIONS"
+		},
+		{
+			"forge": "FROG_TEMPTATIONS",
+			"fabric": "FROG_TEMPTATIONS"
+		},
+		{
+			"forge": "CAMEL_TEMPTATIONS",
+			"fabric": "CAMEL_TEMPTATIONS"
+		},
+		{
+			"forge": "FROG_ATTACKABLES",
+			"fabric": "FROG_ATTACKABLES"
+		},
+		{
+			"forge": "IS_IN_WATER",
+			"fabric": "IS_IN_WATER"
+		},
+		{
+			"forge": "WARDEN_ENTITY_SENSOR",
+			"fabric": "WARDEN_ENTITY_SENSOR"
+		},
+		{
+			"forge": "SNIFFER_TEMPTATIONS",
+			"fabric": "SNIFFER_TEMPTATIONS"
+		},
+		{
+			"forge": "factory",
+			"fabric": "factory"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "register(String arg0, Supplier<U> arg1)",
+			"fabric": "register(String id, Supplier<U> factory)"
+		}
+	]
+}

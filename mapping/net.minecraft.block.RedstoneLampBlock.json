@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.RedstoneLampBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.RedstoneLampBlock",
+			"fabric": "net.minecraft.block.RedstoneLampBlock"
+		},
+		{
+			"forge": "LIT",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "LIT",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

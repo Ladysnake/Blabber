@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.core.dispenser.DispenseItemBehavior$25",
+	"items": [
+		{
+			"forge": "net.minecraft.core.dispenser.DispenseItemBehavior$25",
+			"fabric": "net.minecraft.block.dispenser.DispenserBehavior$18"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		}
+	]
+}

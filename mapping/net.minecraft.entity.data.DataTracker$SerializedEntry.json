@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.network.syncher.SynchedEntityData$DataValue",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.SynchedEntityData$DataValue",
+			"fabric": "net.minecraft.entity.data.DataTracker$SerializedEntry"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "serializer",
+			"fabric": "handler"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "create(EntityDataAccessor<T> arg0, T arg1)",
+			"fabric": "of(TrackedData<T> data, T value)"
+		},
+		{
+			"forge": "create(EntityDataAccessor<T> arg0, T arg1)",
+			"fabric": "of(TrackedData<T> data, T value)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf buf)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0, int arg1)",
+			"fabric": "fromBuf(PacketByteBuf buf, int id)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0, int arg1, EntityDataSerializer<T> arg2)",
+			"fabric": "fromBuf(PacketByteBuf buf, int id, TrackedDataHandler<T> handler)"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "serializer()",
+			"fabric": "handler()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		}
+	]
+}

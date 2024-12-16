@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.CopyNbtFunction$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.CopyNbtFunction$Serializer",
+			"fabric": "net.minecraft.loot.function.CopyNbtLootFunction$Serializer"
+		},
+		{
+			"forge": "serialize(com.google.gson.JsonObject arg0, CopyNbtFunction arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "toJson(com.google.gson.JsonObject arg0, CopyNbtLootFunction arg1, com.google.gson.JsonSerializationContext arg2)"
+		},
+		{
+			"forge": "serialize(com.google.gson.JsonObject arg0, CopyNbtFunction arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "toJson(com.google.gson.JsonObject arg0, CopyNbtLootFunction arg1, com.google.gson.JsonSerializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1, LootItemCondition[] arg2)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1, LootCondition[] arg2)"
+		}
+	]
+}

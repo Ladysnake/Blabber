@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.OminousBannerRenameFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.OminousBannerRenameFix",
+			"fabric": "net.minecraft.datafixer.fix.OminousBannerItemRenameFix"
+		},
+		{
+			"forge": "fixItemStackTag(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixNbt(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "fixItemStackTag(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixNbt(com.mojang.serialization.Dynamic<T> arg0)"
+		}
+	]
+}

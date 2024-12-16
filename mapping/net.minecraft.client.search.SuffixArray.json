@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.searchtree.SuffixArray",
+	"items": [
+		{
+			"forge": "net.minecraft.client.searchtree.SuffixArray",
+			"fabric": "net.minecraft.client.search.SuffixArray"
+		},
+		{
+			"forge": "DEBUG_COMPARISONS",
+			"fabric": "PRINT_COMPARISONS"
+		},
+		{
+			"forge": "DEBUG_COMPARISONS",
+			"fabric": "PRINT_COMPARISONS"
+		},
+		{
+			"forge": "DEBUG_ARRAY",
+			"fabric": "PRINT_ARRAY"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "END_OF_TEXT_MARKER",
+			"fabric": "field_33013"
+		},
+		{
+			"forge": "END_OF_DATA",
+			"fabric": "field_33014"
+		},
+		{
+			"forge": "list",
+			"fabric": "objects"
+		},
+		{
+			"forge": "chars",
+			"fabric": "characters"
+		},
+		{
+			"forge": "wordStarts",
+			"fabric": "textStarts"
+		},
+		{
+			"forge": "suffixToT",
+			"fabric": "suffixIndexToObjectIndex"
+		},
+		{
+			"forge": "offsets",
+			"fabric": "offsetInText"
+		},
+		{
+			"forge": "maxStringLength",
+			"fabric": "maxTextLength"
+		},
+		{
+			"forge": "add(T arg0, String arg1)",
+			"fabric": "add(T object, String text)"
+		},
+		{
+			"forge": "add(T arg0, String arg1)",
+			"fabric": "add(T object, String text)"
+		},
+		{
+			"forge": "generate()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "print()",
+			"fabric": "printArray()"
+		},
+		{
+			"forge": "getString(int arg0)",
+			"fabric": "getDebugString(int suffixIndex)"
+		},
+		{
+			"forge": "compare(String arg0, int arg1)",
+			"fabric": "compare(String string, int suffixIndex)"
+		},
+		{
+			"forge": "search(String arg0)",
+			"fabric": "findAll(String text)"
+		}
+	]
+}

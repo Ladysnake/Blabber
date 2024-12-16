@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.CommandSigningContext$1",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandSigningContext$1",
+			"fabric": "net.minecraft.network.message.SignedCommandArguments$1"
+		},
+		{
+			"forge": "getArgument(String arg0)",
+			"fabric": "getMessage(String arg0)"
+		},
+		{
+			"forge": "getArgument(String arg0)",
+			"fabric": "getMessage(String arg0)"
+		}
+	]
+}

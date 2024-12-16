@@ -1,0 +1,197 @@
+{
+	"title": "net.minecraft.world.entity.Display$TextDisplay",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Display$TextDisplay",
+			"fabric": "net.minecraft.entity.decoration.DisplayEntity$TextDisplayEntity"
+		},
+		{
+			"forge": "TAG_TEXT",
+			"fabric": "TEXT_NBT_KEY"
+		},
+		{
+			"forge": "TAG_TEXT",
+			"fabric": "TEXT_NBT_KEY"
+		},
+		{
+			"forge": "TAG_LINE_WIDTH",
+			"fabric": "LINE_WIDTH_NBT_KEY"
+		},
+		{
+			"forge": "TAG_TEXT_OPACITY",
+			"fabric": "TEXT_OPACITY_NBT_KEY"
+		},
+		{
+			"forge": "TAG_BACKGROUND_COLOR",
+			"fabric": "BACKGROUND_NBT_KEY"
+		},
+		{
+			"forge": "TAG_SHADOW",
+			"fabric": "SHADOW_NBT_KEY"
+		},
+		{
+			"forge": "TAG_SEE_THROUGH",
+			"fabric": "SEE_THROUGH_NBT_KEY"
+		},
+		{
+			"forge": "TAG_USE_DEFAULT_BACKGROUND",
+			"fabric": "DEFAULT_BACKGROUND_NBT_KEY"
+		},
+		{
+			"forge": "TAG_ALIGNMENT",
+			"fabric": "ALIGNMENT_NBT_KEY"
+		},
+		{
+			"forge": "FLAG_SHADOW",
+			"fabric": "SHADOW_FLAG"
+		},
+		{
+			"forge": "FLAG_SEE_THROUGH",
+			"fabric": "SEE_THROUGH_FLAG"
+		},
+		{
+			"forge": "FLAG_USE_DEFAULT_BACKGROUND",
+			"fabric": "DEFAULT_BACKGROUND_FLAG"
+		},
+		{
+			"forge": "FLAG_ALIGN_LEFT",
+			"fabric": "LEFT_ALIGNMENT_FLAG"
+		},
+		{
+			"forge": "FLAG_ALIGN_RIGHT",
+			"fabric": "RIGHT_ALIGNMENT_FLAG"
+		},
+		{
+			"forge": "INITIAL_TEXT_OPACITY",
+			"fabric": "INITIAL_TEXT_OPACITY"
+		},
+		{
+			"forge": "INITIAL_BACKGROUND",
+			"fabric": "INITIAL_BACKGROUND"
+		},
+		{
+			"forge": "DATA_TEXT_ID",
+			"fabric": "TEXT"
+		},
+		{
+			"forge": "DATA_LINE_WIDTH_ID",
+			"fabric": "LINE_WIDTH"
+		},
+		{
+			"forge": "DATA_BACKGROUND_COLOR_ID",
+			"fabric": "BACKGROUND"
+		},
+		{
+			"forge": "DATA_TEXT_OPACITY_ID",
+			"fabric": "TEXT_OPACITY"
+		},
+		{
+			"forge": "DATA_STYLE_FLAGS_ID",
+			"fabric": "TEXT_DISPLAY_FLAGS"
+		},
+		{
+			"forge": "TEXT_RENDER_STATE_IDS",
+			"fabric": "TEXT_RENDERING_DATA_IDS"
+		},
+		{
+			"forge": "clientDisplayCache",
+			"fabric": "textLines"
+		},
+		{
+			"forge": "textRenderState",
+			"fabric": "data"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "onSyncedDataUpdated(EntityDataAccessor<?> arg0)",
+			"fabric": "onTrackedDataSet(TrackedData<?> arg0)"
+		},
+		{
+			"forge": "getText()",
+			"fabric": "getText()"
+		},
+		{
+			"forge": "setText(Component arg0)",
+			"fabric": "setText(Text text)"
+		},
+		{
+			"forge": "getLineWidth()",
+			"fabric": "getLineWidth()"
+		},
+		{
+			"forge": "setLineWidth(int arg0)",
+			"fabric": "setLineWidth(int lineWidth)"
+		},
+		{
+			"forge": "getTextOpacity()",
+			"fabric": "getTextOpacity()"
+		},
+		{
+			"forge": "setTextOpacity(byte arg0)",
+			"fabric": "setTextOpacity(byte textOpacity)"
+		},
+		{
+			"forge": "getBackgroundColor()",
+			"fabric": "getBackground()"
+		},
+		{
+			"forge": "setBackgroundColor(int arg0)",
+			"fabric": "setBackground(int background)"
+		},
+		{
+			"forge": "getFlags()",
+			"fabric": "getDisplayFlags()"
+		},
+		{
+			"forge": "setFlags(byte arg0)",
+			"fabric": "setDisplayFlags(byte flags)"
+		},
+		{
+			"forge": "loadFlag(byte arg0, CompoundTag arg1, String arg2, byte arg3)",
+			"fabric": "readFlag(byte flags, NbtCompound nbt, String nbtKey, byte flag)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "storeFlag(byte arg0, CompoundTag arg1, String arg2, byte arg3)",
+			"fabric": "writeFlag(byte flags, NbtCompound nbt, String nbtKey, byte flag)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "updateRenderSubState(boolean arg0, float arg1)",
+			"fabric": "refreshData(boolean arg0, float arg1)"
+		},
+		{
+			"forge": "textRenderState()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "createFreshTextRenderState()",
+			"fabric": "copyData()"
+		},
+		{
+			"forge": "createInterpolatedTextRenderState(Display$TextDisplay$TextRenderState arg0, float arg1)",
+			"fabric": "getLerpedRenderState(DisplayEntity$TextDisplayEntity$Data data, float lerpProgress)"
+		},
+		{
+			"forge": "cacheDisplay(Display$TextDisplay$LineSplitter arg0)",
+			"fabric": "splitLines(DisplayEntity$TextDisplayEntity$LineSplitter splitter)"
+		},
+		{
+			"forge": "getAlign(byte arg0)",
+			"fabric": "getAlignment(byte flags)"
+		}
+	]
+}

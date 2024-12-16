@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.item.crafting.RecipeManager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.RecipeManager",
+			"fabric": "net.minecraft.recipe.RecipeManager"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "recipes",
+			"fabric": "recipes"
+		},
+		{
+			"forge": "byName",
+			"fabric": "recipesById"
+		},
+		{
+			"forge": "hasErrors",
+			"fabric": "errored"
+		},
+		{
+			"forge": "apply(Map<ResourceLocation, com.google.gson.JsonElement> arg0, ResourceManager arg1, ProfilerFiller arg2)",
+			"fabric": "apply(Map<Identifier, com.google.gson.JsonElement> arg0, ResourceManager arg1, Profiler arg2)"
+		},
+		{
+			"forge": "apply(Map<ResourceLocation, com.google.gson.JsonElement> arg0, ResourceManager arg1, ProfilerFiller arg2)",
+			"fabric": "apply(Map<Identifier, com.google.gson.JsonElement> arg0, ResourceManager arg1, Profiler arg2)"
+		},
+		{
+			"forge": "hadErrorsLoading()",
+			"fabric": "isErrored()"
+		},
+		{
+			"forge": "getRecipeFor(RecipeType<T> arg0, C arg1, Level arg2)",
+			"fabric": "getFirstMatch(RecipeType<T> type, C inventory, World world)"
+		},
+		{
+			"forge": "getRecipeFor(RecipeType<T> arg0, C arg1, Level arg2, ResourceLocation arg3)",
+			"fabric": "getFirstMatch(RecipeType<T> type, C inventory, World world, Identifier id)"
+		},
+		{
+			"forge": "getAllRecipesFor(RecipeType<T> arg0)",
+			"fabric": "listAllOfType(RecipeType<T> type)"
+		},
+		{
+			"forge": "getRecipesFor(RecipeType<T> arg0, C arg1, Level arg2)",
+			"fabric": "getAllMatches(RecipeType<T> type, C inventory, World world)"
+		},
+		{
+			"forge": "byType(RecipeType<T> arg0)",
+			"fabric": "getAllOfType(RecipeType<T> type)"
+		},
+		{
+			"forge": "getRemainingItemsFor(RecipeType<T> arg0, C arg1, Level arg2)",
+			"fabric": "getRemainingStacks(RecipeType<T> type, C inventory, World world)"
+		},
+		{
+			"forge": "byKey(ResourceLocation arg0)",
+			"fabric": "get(Identifier id)"
+		},
+		{
+			"forge": "getRecipes()",
+			"fabric": "values()"
+		},
+		{
+			"forge": "getRecipeIds()",
+			"fabric": "keys()"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "deserialize(Identifier id, com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "replaceRecipes(Iterable<Recipe<?>> arg0)",
+			"fabric": "setRecipes(Iterable<Recipe<?>> recipes)"
+		},
+		{
+			"forge": "createCheck(RecipeType<T> arg0)",
+			"fabric": "createCachedMatchGetter(RecipeType<T> type)"
+		}
+	]
+}

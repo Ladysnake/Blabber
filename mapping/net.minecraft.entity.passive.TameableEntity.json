@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.world.entity.TamableAnimal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.TamableAnimal",
+			"fabric": "net.minecraft.entity.passive.TameableEntity"
+		},
+		{
+			"forge": "DATA_FLAGS_ID",
+			"fabric": "TAMEABLE_FLAGS"
+		},
+		{
+			"forge": "DATA_FLAGS_ID",
+			"fabric": "TAMEABLE_FLAGS"
+		},
+		{
+			"forge": "DATA_OWNERUUID_ID",
+			"fabric": "OWNER_UUID"
+		},
+		{
+			"forge": "orderedToSit",
+			"fabric": "sitting"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "canBeLeashed(Player arg0)",
+			"fabric": "canBeLeashedBy(PlayerEntity arg0)"
+		},
+		{
+			"forge": "spawnTamingParticles(boolean arg0)",
+			"fabric": "showEmoteParticle(boolean positive)"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "isTame()",
+			"fabric": "isTamed()"
+		},
+		{
+			"forge": "setTame(boolean arg0)",
+			"fabric": "setTamed(boolean tamed)"
+		},
+		{
+			"forge": "reassessTameGoals()",
+			"fabric": "onTamedChanged()"
+		},
+		{
+			"forge": "isInSittingPose()",
+			"fabric": "isInSittingPose()"
+		},
+		{
+			"forge": "setInSittingPose(boolean arg0)",
+			"fabric": "setInSittingPose(boolean inSittingPose)"
+		},
+		{
+			"forge": "getOwnerUUID()",
+			"fabric": "getOwnerUuid()"
+		},
+		{
+			"forge": "setOwnerUUID(UUID arg0)",
+			"fabric": "setOwnerUuid(UUID uuid)"
+		},
+		{
+			"forge": "tame(Player arg0)",
+			"fabric": "setOwner(PlayerEntity player)"
+		},
+		{
+			"forge": "canAttack(LivingEntity arg0)",
+			"fabric": "canTarget(LivingEntity arg0)"
+		},
+		{
+			"forge": "isOwnedBy(LivingEntity arg0)",
+			"fabric": "isOwner(LivingEntity entity)"
+		},
+		{
+			"forge": "wantsToAttack(LivingEntity arg0, LivingEntity arg1)",
+			"fabric": "canAttackWithOwner(LivingEntity target, LivingEntity owner)"
+		},
+		{
+			"forge": "getTeam()",
+			"fabric": "getScoreboardTeam()"
+		},
+		{
+			"forge": "isAlliedTo(Entity arg0)",
+			"fabric": "isTeammate(Entity arg0)"
+		},
+		{
+			"forge": "die(DamageSource arg0)",
+			"fabric": "onDeath(DamageSource arg0)"
+		},
+		{
+			"forge": "isOrderedToSit()",
+			"fabric": "isSitting()"
+		},
+		{
+			"forge": "setOrderedToSit(boolean arg0)",
+			"fabric": "setSitting(boolean sitting)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder",
+			"fabric": "net.minecraft.util.profiler.DummyRecorder"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "end()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "end()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "cancel()",
+			"fabric": "forceStop()"
+		},
+		{
+			"forge": "startTick()",
+			"fabric": "startTick()"
+		},
+		{
+			"forge": "isRecording()",
+			"fabric": "isActive()"
+		},
+		{
+			"forge": "getProfiler()",
+			"fabric": "getProfiler()"
+		},
+		{
+			"forge": "endTick()",
+			"fabric": "endTick()"
+		}
+	]
+}

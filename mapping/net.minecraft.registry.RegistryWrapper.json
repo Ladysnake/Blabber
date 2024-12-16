@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.core.HolderLookup",
+	"items": [
+		{
+			"forge": "net.minecraft.core.HolderLookup",
+			"fabric": "net.minecraft.registry.RegistryWrapper"
+		},
+		{
+			"forge": "listElements()",
+			"fabric": "streamEntries()"
+		},
+		{
+			"forge": "listElements()",
+			"fabric": "streamEntries()"
+		},
+		{
+			"forge": "listElementIds()",
+			"fabric": "streamKeys()"
+		},
+		{
+			"forge": "listTags()",
+			"fabric": "streamTags()"
+		},
+		{
+			"forge": "listTagIds()",
+			"fabric": "streamTagKeys()"
+		},
+		{
+			"forge": "filterElements(Predicate<T> arg0)",
+			"fabric": "filter(Predicate<T> filter)"
+		}
+	]
+}

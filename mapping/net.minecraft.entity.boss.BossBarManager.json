@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.bossevents.CustomBossEvents",
+	"items": [
+		{
+			"forge": "net.minecraft.server.bossevents.CustomBossEvents",
+			"fabric": "net.minecraft.entity.boss.BossBarManager"
+		},
+		{
+			"forge": "events",
+			"fabric": "commandBossBars"
+		},
+		{
+			"forge": "events",
+			"fabric": "commandBossBars"
+		},
+		{
+			"forge": "get(ResourceLocation arg0)",
+			"fabric": "get(Identifier id)"
+		},
+		{
+			"forge": "get(ResourceLocation arg0)",
+			"fabric": "get(Identifier id)"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, Component arg1)",
+			"fabric": "add(Identifier id, Text displayName)"
+		},
+		{
+			"forge": "remove(CustomBossEvent arg0)",
+			"fabric": "remove(CommandBossBar bossBar)"
+		},
+		{
+			"forge": "getIds()",
+			"fabric": "getIds()"
+		},
+		{
+			"forge": "getEvents()",
+			"fabric": "getAll()"
+		},
+		{
+			"forge": "save()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "onPlayerConnect(ServerPlayer arg0)",
+			"fabric": "onPlayerConnect(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "onPlayerDisconnect(ServerPlayer arg0)",
+			"fabric": "onPlayerDisconnect(ServerPlayerEntity player)"
+		}
+	]
+}

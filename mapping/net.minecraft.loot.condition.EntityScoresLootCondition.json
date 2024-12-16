@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.EntityHasScoreCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.EntityHasScoreCondition",
+			"fabric": "net.minecraft.loot.condition.EntityScoresLootCondition"
+		},
+		{
+			"forge": "scores",
+			"fabric": "scores"
+		},
+		{
+			"forge": "scores",
+			"fabric": "scores"
+		},
+		{
+			"forge": "entityTarget",
+			"fabric": "target"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "test(LootContext arg0)",
+			"fabric": "test(LootContext arg0)"
+		},
+		{
+			"forge": "hasScore(LootContext arg0, Entity arg1, Scoreboard arg2, String arg3, IntRange arg4)",
+			"fabric": "entityScoreIsInRange(LootContext context, Entity entity, Scoreboard scoreboard, String objectiveName, BoundedIntUnaryOperator range)"
+		},
+		{
+			"forge": "hasScores(LootContext$EntityTarget arg0)",
+			"fabric": "create(LootContext$EntityTarget target)"
+		}
+	]
+}

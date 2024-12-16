@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.core.RegistrySetBuilder$RegistryStub",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistrySetBuilder$RegistryStub",
+			"fabric": "net.minecraft.registry.RegistryBuilder$RegistryInfo"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "lifecycle",
+			"fabric": "lifecycle"
+		},
+		{
+			"forge": "bootstrap",
+			"fabric": "bootstrap"
+		},
+		{
+			"forge": "apply(RegistrySetBuilder$BuildState arg0)",
+			"fabric": "runBootstrap(RegistryBuilder$Registries registries)"
+		},
+		{
+			"forge": "apply(RegistrySetBuilder$BuildState arg0)",
+			"fabric": "runBootstrap(RegistryBuilder$Registries registries)"
+		},
+		{
+			"forge": "collectChanges(RegistrySetBuilder$BuildState arg0)",
+			"fabric": "init(RegistryBuilder$Registries registries)"
+		},
+		{
+			"forge": "key()",
+			"fabric": "key()"
+		},
+		{
+			"forge": "lifecycle()",
+			"fabric": "lifecycle()"
+		},
+		{
+			"forge": "bootstrap()",
+			"fabric": "bootstrap()"
+		}
+	]
+}

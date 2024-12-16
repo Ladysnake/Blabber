@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.level.block.CrossCollisionBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.CrossCollisionBlock",
+			"fabric": "net.minecraft.block.HorizontalConnectingBlock"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "PROPERTY_BY_DIRECTION",
+			"fabric": "FACING_PROPERTIES"
+		},
+		{
+			"forge": "collisionShapeByIndex",
+			"fabric": "collisionShapes"
+		},
+		{
+			"forge": "shapeByIndex",
+			"fabric": "boundingShapes"
+		},
+		{
+			"forge": "stateToIndex",
+			"fabric": "SHAPE_INDEX_CACHE"
+		},
+		{
+			"forge": "makeShapes(float arg0, float arg1, float arg2, float arg3, float arg4)",
+			"fabric": "createShapes(float radius1, float radius2, float height1, float offset2, float height2)"
+		},
+		{
+			"forge": "makeShapes(float arg0, float arg1, float arg2, float arg3, float arg4)",
+			"fabric": "createShapes(float radius1, float radius2, float height1, float offset2, float height2)"
+		},
+		{
+			"forge": "propagatesSkylightDown(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "isTransparent(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "indexFor(Direction arg0)",
+			"fabric": "getDirectionMask(Direction dir)"
+		},
+		{
+			"forge": "getAABBIndex(BlockState arg0)",
+			"fabric": "getShapeIndex(BlockState state)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.inventory.LoomMenu$5",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.LoomMenu$5",
+			"fabric": "net.minecraft.screen.LoomScreenHandler$5"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		}
+	]
+}

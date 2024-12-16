@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent",
+			"fabric": "net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent"
+		}
+	]
+}

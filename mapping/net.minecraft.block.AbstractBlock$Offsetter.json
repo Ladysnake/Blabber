@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.state.BlockBehaviour$OffsetFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.BlockBehaviour$OffsetFunction",
+			"fabric": "net.minecraft.block.AbstractBlock$Offsetter"
+		},
+		{
+			"forge": "evaluate(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "evaluate(BlockState state, BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "evaluate(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "evaluate(BlockState state, BlockView world, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.block.FrostedIceBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.FrostedIceBlock",
+			"fabric": "net.minecraft.block.FrostedIceBlock"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "MAX_AGE"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "MAX_AGE"
+		},
+		{
+			"forge": "AGE",
+			"fabric": "AGE"
+		},
+		{
+			"forge": "NEIGHBORS_TO_AGE",
+			"fabric": "NEIGHBORS_CHECKED_ON_SCHEDULED_TICK"
+		},
+		{
+			"forge": "NEIGHBORS_TO_MELT",
+			"fabric": "NEIGHBORS_CHECKED_ON_NEIGHBOR_UPDATE"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "slightlyMelt(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "increaseAge(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "fewerNeigboursThan(BlockGetter arg0, BlockPos arg1, int arg2)",
+			"fabric": "canMelt(BlockView world, BlockPos pos, int maxNeighbors)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getCloneItemStack(BlockGetter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getPickStack(BlockView arg0, BlockPos arg1, BlockState arg2)"
+		}
+	]
+}

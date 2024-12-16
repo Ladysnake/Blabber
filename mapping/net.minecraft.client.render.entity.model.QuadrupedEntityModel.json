@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.model.QuadrupedModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.QuadrupedModel",
+			"fabric": "net.minecraft.client.render.entity.model.QuadrupedEntityModel"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "body",
+			"fabric": "body"
+		},
+		{
+			"forge": "rightHindLeg",
+			"fabric": "rightHindLeg"
+		},
+		{
+			"forge": "leftHindLeg",
+			"fabric": "leftHindLeg"
+		},
+		{
+			"forge": "rightFrontLeg",
+			"fabric": "rightFrontLeg"
+		},
+		{
+			"forge": "leftFrontLeg",
+			"fabric": "leftFrontLeg"
+		},
+		{
+			"forge": "createBodyMesh(int arg0, CubeDeformation arg1)",
+			"fabric": "getModelData(int stanceWidth, Dilation dilation)"
+		},
+		{
+			"forge": "createBodyMesh(int arg0, CubeDeformation arg1)",
+			"fabric": "getModelData(int stanceWidth, Dilation dilation)"
+		},
+		{
+			"forge": "headParts()",
+			"fabric": "getHeadParts()"
+		},
+		{
+			"forge": "bodyParts()",
+			"fabric": "getBodyParts()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.phys.shapes.DiscreteCubeMerger",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.DiscreteCubeMerger",
+			"fabric": "net.minecraft.util.shape.FractionalPairList"
+		},
+		{
+			"forge": "result",
+			"fabric": "mergedList"
+		},
+		{
+			"forge": "result",
+			"fabric": "mergedList"
+		},
+		{
+			"forge": "firstDiv",
+			"fabric": "firstSectionCount"
+		},
+		{
+			"forge": "secondDiv",
+			"fabric": "gcd"
+		},
+		{
+			"forge": "forMergedIndexes(IndexMerger$IndexConsumer arg0)",
+			"fabric": "forEachPair(PairList$Consumer arg0)"
+		},
+		{
+			"forge": "forMergedIndexes(IndexMerger$IndexConsumer arg0)",
+			"fabric": "forEachPair(PairList$Consumer arg0)"
+		},
+		{
+			"forge": "getList()",
+			"fabric": "getPairs()"
+		}
+	]
+}

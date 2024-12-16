@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.monster.Drowned$DrownedMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Drowned$DrownedMoveControl",
+			"fabric": "net.minecraft.entity.mob.DrownedEntity$DrownedMoveControl"
+		},
+		{
+			"forge": "drowned",
+			"fabric": "drowned"
+		},
+		{
+			"forge": "drowned",
+			"fabric": "drowned"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

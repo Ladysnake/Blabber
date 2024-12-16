@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.client.server.LanServerPinger",
+	"items": [
+		{
+			"forge": "net.minecraft.client.server.LanServerPinger",
+			"fabric": "net.minecraft.client.network.LanServerPinger"
+		},
+		{
+			"forge": "UNIQUE_THREAD_ID",
+			"fabric": "THREAD_ID"
+		},
+		{
+			"forge": "UNIQUE_THREAD_ID",
+			"fabric": "THREAD_ID"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MULTICAST_GROUP",
+			"fabric": "PING_ADDRESS"
+		},
+		{
+			"forge": "PING_PORT",
+			"fabric": "PING_PORT"
+		},
+		{
+			"forge": "PING_INTERVAL",
+			"fabric": "PING_INTERVAL"
+		},
+		{
+			"forge": "motd",
+			"fabric": "motd"
+		},
+		{
+			"forge": "socket",
+			"fabric": "socket"
+		},
+		{
+			"forge": "isRunning",
+			"fabric": "running"
+		},
+		{
+			"forge": "serverAddress",
+			"fabric": "addressPort"
+		},
+		{
+			"forge": "run()",
+			"fabric": "createAnnouncement(String motd, String addressPort)"
+		},
+		{
+			"forge": "createPingString(String arg0, String arg1)",
+			"fabric": "createAnnouncement(String motd, String addressPort)"
+		},
+		{
+			"forge": "parseMotd(String arg0)",
+			"fabric": "parseAnnouncementMotd(String announcement)"
+		},
+		{
+			"forge": "parseAddress(String arg0)",
+			"fabric": "parseAnnouncementAddressPort(String announcement)"
+		}
+	]
+}

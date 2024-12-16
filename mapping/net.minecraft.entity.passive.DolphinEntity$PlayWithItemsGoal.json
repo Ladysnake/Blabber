@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.animal.Dolphin$PlayWithItemsGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Dolphin$PlayWithItemsGoal",
+			"fabric": "net.minecraft.entity.passive.DolphinEntity$PlayWithItemsGoal"
+		},
+		{
+			"forge": "cooldown",
+			"fabric": "nextPlayingTime"
+		},
+		{
+			"forge": "cooldown",
+			"fabric": "nextPlayingTime"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "drop(ItemStack arg0)",
+			"fabric": "spitOutItem(ItemStack stack)"
+		}
+	]
+}

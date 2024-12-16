@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.core.Direction$AxisDirection",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Direction$AxisDirection",
+			"fabric": "net.minecraft.util.math.Direction$AxisDirection"
+		},
+		{
+			"forge": "POSITIVE",
+			"fabric": "POSITIVE"
+		},
+		{
+			"forge": "POSITIVE",
+			"fabric": "POSITIVE"
+		},
+		{
+			"forge": "NEGATIVE",
+			"fabric": "NEGATIVE"
+		},
+		{
+			"forge": "step",
+			"fabric": "offset"
+		},
+		{
+			"forge": "step",
+			"fabric": "offset"
+		},
+		{
+			"forge": "name",
+			"fabric": "description"
+		},
+		{
+			"forge": "getStep()",
+			"fabric": "offset()"
+		},
+		{
+			"forge": "getStep()",
+			"fabric": "offset()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getDescription()"
+		},
+		{
+			"forge": "opposite()",
+			"fabric": "getOpposite()"
+		}
+	]
+}

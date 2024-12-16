@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.server.gui.MinecraftServerGui",
+	"items": [
+		{
+			"forge": "net.minecraft.server.gui.MinecraftServerGui",
+			"fabric": "net.minecraft.server.dedicated.gui.DedicatedServerGui"
+		},
+		{
+			"forge": "MONOSPACED",
+			"fabric": "FONT_MONOSPACE"
+		},
+		{
+			"forge": "MONOSPACED",
+			"fabric": "FONT_MONOSPACE"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "SHUTDOWN_TITLE",
+			"fabric": "SHUTTING_DOWN_TITLE"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "logAppenderThread",
+			"fabric": "consoleUpdateThread"
+		},
+		{
+			"forge": "finalizers",
+			"fabric": "stopTasks"
+		},
+		{
+			"forge": "isClosing",
+			"fabric": "stopped"
+		},
+		{
+			"forge": "showFrameFor(DedicatedServer arg0)",
+			"fabric": "create(MinecraftDedicatedServer server)"
+		},
+		{
+			"forge": "showFrameFor(DedicatedServer arg0)",
+			"fabric": "create(MinecraftDedicatedServer server)"
+		},
+		{
+			"forge": "addFinalizer(Runnable arg0)",
+			"fabric": "addStopTask(Runnable task)"
+		},
+		{
+			"forge": "buildInfoPanel()",
+			"fabric": "createStatsPanel()"
+		},
+		{
+			"forge": "buildPlayerPanel()",
+			"fabric": "createPlaysPanel()"
+		},
+		{
+			"forge": "buildChatPanel()",
+			"fabric": "createLogPanel()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "close()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "runFinalizers()",
+			"fabric": "runStopTasks()"
+		},
+		{
+			"forge": "print(JTextArea arg0, JScrollPane arg1, String arg2)",
+			"fabric": "appendToConsole(JTextArea textArea, JScrollPane scrollPane, String message)"
+		}
+	]
+}

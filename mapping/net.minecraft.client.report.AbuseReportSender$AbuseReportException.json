@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.AbuseReportSender$SendException",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.AbuseReportSender$SendException",
+			"fabric": "net.minecraft.client.report.AbuseReportSender$AbuseReportException"
+		}
+	]
+}

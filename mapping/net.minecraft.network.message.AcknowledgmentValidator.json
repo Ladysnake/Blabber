@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.network.chat.LastSeenMessagesValidator",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.LastSeenMessagesValidator",
+			"fabric": "net.minecraft.network.message.AcknowledgmentValidator"
+		},
+		{
+			"forge": "lastSeenCount",
+			"fabric": "size"
+		},
+		{
+			"forge": "lastSeenCount",
+			"fabric": "size"
+		},
+		{
+			"forge": "trackedMessages",
+			"fabric": "messages"
+		},
+		{
+			"forge": "lastPendingMessage",
+			"fabric": "lastSignature"
+		},
+		{
+			"forge": "addPending(MessageSignature arg0)",
+			"fabric": "addPending(MessageSignatureData signature)"
+		},
+		{
+			"forge": "addPending(MessageSignature arg0)",
+			"fabric": "addPending(MessageSignatureData signature)"
+		},
+		{
+			"forge": "trackedMessagesCount()",
+			"fabric": "getMessageCount()"
+		},
+		{
+			"forge": "applyOffset(int arg0)",
+			"fabric": "removeUntil(int index)"
+		},
+		{
+			"forge": "applyUpdate(LastSeenMessages$Update arg0)",
+			"fabric": "validate(LastSeenMessageList$Acknowledgment acknowledgment)"
+		}
+	]
+}

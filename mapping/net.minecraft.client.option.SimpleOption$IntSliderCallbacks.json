@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.OptionInstance$IntRangeBase",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$IntRangeBase",
+			"fabric": "net.minecraft.client.option.SimpleOption$IntSliderCallbacks"
+		},
+		{
+			"forge": "minInclusive()",
+			"fabric": "minInclusive()"
+		},
+		{
+			"forge": "minInclusive()",
+			"fabric": "minInclusive()"
+		},
+		{
+			"forge": "maxInclusive()",
+			"fabric": "maxInclusive()"
+		},
+		{
+			"forge": "toSliderValue(Integer arg0)",
+			"fabric": "toSliderProgress(Integer arg0)"
+		},
+		{
+			"forge": "fromSliderValue(double arg0)",
+			"fabric": "toValue(double arg0)"
+		},
+		{
+			"forge": "xmap(IntFunction<? extends R> arg0, ToIntFunction<? super R> arg1)",
+			"fabric": "withModifier(IntFunction<? extends R> sliderProgressValueToValue, ToIntFunction<? super R> valueToSliderProgressValue)"
+		}
+	]
+}

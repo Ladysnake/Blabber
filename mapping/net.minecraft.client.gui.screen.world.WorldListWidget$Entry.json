@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.WorldSelectionList$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.WorldSelectionList$Entry",
+			"fabric": "net.minecraft.client.gui.screen.world.WorldListWidget$Entry"
+		},
+		{
+			"forge": "isSelectable()",
+			"fabric": "isAvailable()"
+		},
+		{
+			"forge": "isSelectable()",
+			"fabric": "isAvailable()"
+		}
+	]
+}

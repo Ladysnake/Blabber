@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.data.models.blockstates.VariantProperty$Value",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.blockstates.VariantProperty$Value",
+			"fabric": "net.minecraft.data.client.VariantSetting$Value"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "getKey()",
+			"fabric": "getParent()"
+		},
+		{
+			"forge": "getKey()",
+			"fabric": "getParent()"
+		},
+		{
+			"forge": "addToVariant(com.google.gson.JsonObject arg0)",
+			"fabric": "writeTo(com.google.gson.JsonObject json)"
+		}
+	]
+}

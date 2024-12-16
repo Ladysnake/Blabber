@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundSetDefaultSpawnPositionPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundSetDefaultSpawnPositionPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.PlayerSpawnPositionS2CPacket"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "angle",
+			"fabric": "angle"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getAngle()",
+			"fabric": "getAngle()"
+		}
+	]
+}

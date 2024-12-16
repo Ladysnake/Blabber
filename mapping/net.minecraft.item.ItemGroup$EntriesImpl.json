@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.item.CreativeModeTab$ItemDisplayBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.CreativeModeTab$ItemDisplayBuilder",
+			"fabric": "net.minecraft.item.ItemGroup$EntriesImpl"
+		},
+		{
+			"forge": "tabContents",
+			"fabric": "parentTabStacks"
+		},
+		{
+			"forge": "tabContents",
+			"fabric": "parentTabStacks"
+		},
+		{
+			"forge": "searchTabContents",
+			"fabric": "searchTabStacks"
+		},
+		{
+			"forge": "tab",
+			"fabric": "group"
+		},
+		{
+			"forge": "featureFlagSet",
+			"fabric": "enabledFeatures"
+		},
+		{
+			"forge": "accept(ItemStack arg0, CreativeModeTab$TabVisibility arg1)",
+			"fabric": "add(ItemStack arg0, ItemGroup$StackVisibility arg1)"
+		},
+		{
+			"forge": "accept(ItemStack arg0, CreativeModeTab$TabVisibility arg1)",
+			"fabric": "add(ItemStack arg0, ItemGroup$StackVisibility arg1)"
+		}
+	]
+}

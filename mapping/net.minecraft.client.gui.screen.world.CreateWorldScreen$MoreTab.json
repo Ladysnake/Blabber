@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$MoreTab",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$MoreTab",
+			"fabric": "net.minecraft.client.gui.screen.world.CreateWorldScreen$MoreTab"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "MORE_TAB_TITLE_TEXT"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "MORE_TAB_TITLE_TEXT"
+		},
+		{
+			"forge": "GAME_RULES_LABEL",
+			"fabric": "GAME_RULES_TEXT"
+		},
+		{
+			"forge": "DATA_PACKS_LABEL",
+			"fabric": "DATA_PACKS_TEXT"
+		},
+		{
+			"forge": "openGameRulesScreen()",
+			"fabric": "openGameRulesScreen()"
+		},
+		{
+			"forge": "openGameRulesScreen()",
+			"fabric": "openGameRulesScreen()"
+		}
+	]
+}

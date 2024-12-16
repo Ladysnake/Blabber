@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.ExplosionDamageCalculator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.ExplosionDamageCalculator",
+			"fabric": "net.minecraft.world.explosion.ExplosionBehavior"
+		},
+		{
+			"forge": "getBlockExplosionResistance(Explosion arg0, BlockGetter arg1, BlockPos arg2, BlockState arg3, FluidState arg4)",
+			"fabric": "getBlastResistance(Explosion explosion, BlockView world, BlockPos pos, BlockState blockState, FluidState fluidState)"
+		},
+		{
+			"forge": "getBlockExplosionResistance(Explosion arg0, BlockGetter arg1, BlockPos arg2, BlockState arg3, FluidState arg4)",
+			"fabric": "getBlastResistance(Explosion explosion, BlockView world, BlockPos pos, BlockState blockState, FluidState fluidState)"
+		},
+		{
+			"forge": "shouldBlockExplode(Explosion arg0, BlockGetter arg1, BlockPos arg2, BlockState arg3, float arg4)",
+			"fabric": "canDestroyBlock(Explosion explosion, BlockView world, BlockPos pos, BlockState state, float power)"
+		}
+	]
+}

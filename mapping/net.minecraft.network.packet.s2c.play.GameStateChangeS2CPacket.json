@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundGameEventPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundGameEventPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.GameStateChangeS2CPacket"
+		},
+		{
+			"forge": "NO_RESPAWN_BLOCK_AVAILABLE",
+			"fabric": "NO_RESPAWN_BLOCK"
+		},
+		{
+			"forge": "NO_RESPAWN_BLOCK_AVAILABLE",
+			"fabric": "NO_RESPAWN_BLOCK"
+		},
+		{
+			"forge": "START_RAINING",
+			"fabric": "RAIN_STARTED"
+		},
+		{
+			"forge": "STOP_RAINING",
+			"fabric": "RAIN_STOPPED"
+		},
+		{
+			"forge": "CHANGE_GAME_MODE",
+			"fabric": "GAME_MODE_CHANGED"
+		},
+		{
+			"forge": "WIN_GAME",
+			"fabric": "GAME_WON"
+		},
+		{
+			"forge": "DEMO_EVENT",
+			"fabric": "DEMO_MESSAGE_SHOWN"
+		},
+		{
+			"forge": "ARROW_HIT_PLAYER",
+			"fabric": "PROJECTILE_HIT_PLAYER"
+		},
+		{
+			"forge": "RAIN_LEVEL_CHANGE",
+			"fabric": "RAIN_GRADIENT_CHANGED"
+		},
+		{
+			"forge": "THUNDER_LEVEL_CHANGE",
+			"fabric": "THUNDER_GRADIENT_CHANGED"
+		},
+		{
+			"forge": "PUFFER_FISH_STING",
+			"fabric": "PUFFERFISH_STING"
+		},
+		{
+			"forge": "GUARDIAN_ELDER_EFFECT",
+			"fabric": "ELDER_GUARDIAN_EFFECT"
+		},
+		{
+			"forge": "IMMEDIATE_RESPAWN",
+			"fabric": "IMMEDIATE_RESPAWN"
+		},
+		{
+			"forge": "DEMO_PARAM_INTRO",
+			"fabric": "DEMO_OPEN_SCREEN"
+		},
+		{
+			"forge": "DEMO_PARAM_HINT_1",
+			"fabric": "DEMO_MOVEMENT_HELP"
+		},
+		{
+			"forge": "DEMO_PARAM_HINT_2",
+			"fabric": "DEMO_JUMP_HELP"
+		},
+		{
+			"forge": "DEMO_PARAM_HINT_3",
+			"fabric": "DEMO_INVENTORY_HELP"
+		},
+		{
+			"forge": "DEMO_PARAM_HINT_4",
+			"fabric": "DEMO_EXPIRY_NOTICE"
+		},
+		{
+			"forge": "event",
+			"fabric": "reason"
+		},
+		{
+			"forge": "param",
+			"fabric": "value"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getEvent()",
+			"fabric": "getReason()"
+		},
+		{
+			"forge": "getParam()",
+			"fabric": "getValue()"
+		}
+	]
+}

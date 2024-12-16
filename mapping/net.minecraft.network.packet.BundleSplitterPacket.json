@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.network.protocol.BundleDelimiterPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.BundleDelimiterPacket",
+			"fabric": "net.minecraft.network.packet.BundleSplitterPacket"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(T arg0)",
+			"fabric": "apply(T arg0)"
+		}
+	]
+}

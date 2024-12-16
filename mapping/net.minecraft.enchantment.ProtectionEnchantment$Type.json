@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.item.enchantment.ProtectionEnchantment$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.ProtectionEnchantment$Type",
+			"fabric": "net.minecraft.enchantment.ProtectionEnchantment$Type"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "FIRE",
+			"fabric": "FIRE"
+		},
+		{
+			"forge": "FALL",
+			"fabric": "FALL"
+		},
+		{
+			"forge": "EXPLOSION",
+			"fabric": "EXPLOSION"
+		},
+		{
+			"forge": "PROJECTILE",
+			"fabric": "PROJECTILE"
+		},
+		{
+			"forge": "minCost",
+			"fabric": "basePower"
+		},
+		{
+			"forge": "minCost",
+			"fabric": "basePower"
+		},
+		{
+			"forge": "levelCost",
+			"fabric": "powerPerLevel"
+		},
+		{
+			"forge": "getMinCost()",
+			"fabric": "getBasePower()"
+		},
+		{
+			"forge": "getMinCost()",
+			"fabric": "getBasePower()"
+		},
+		{
+			"forge": "getLevelCost()",
+			"fabric": "getPowerPerLevel()"
+		}
+	]
+}

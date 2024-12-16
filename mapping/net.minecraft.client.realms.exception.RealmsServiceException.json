@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.realmsclient.exception.RealmsServiceException",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.exception.RealmsServiceException",
+			"fabric": "net.minecraft.client.realms.exception.RealmsServiceException"
+		},
+		{
+			"forge": "httpResultCode",
+			"fabric": "httpResultCode"
+		},
+		{
+			"forge": "httpResultCode",
+			"fabric": "httpResultCode"
+		},
+		{
+			"forge": "rawResponse",
+			"fabric": "httpResponseText"
+		},
+		{
+			"forge": "realmsError",
+			"fabric": "error"
+		},
+		{
+			"forge": "getMessage()",
+			"fabric": "getErrorCode(int fallback)"
+		},
+		{
+			"forge": "realmsErrorCodeOrDefault(int arg0)",
+			"fabric": "getErrorCode(int fallback)"
+		}
+	]
+}

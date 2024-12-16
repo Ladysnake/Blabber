@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.chase.ChaseClient$TeleportTarget",
+	"items": [
+		{
+			"forge": "net.minecraft.server.chase.ChaseClient$TeleportTarget",
+			"fabric": "net.minecraft.server.chase.ChaseClient$TeleportPos"
+		},
+		{
+			"forge": "level",
+			"fabric": "dimension"
+		},
+		{
+			"forge": "level",
+			"fabric": "dimension"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "rot",
+			"fabric": "rot"
+		},
+		{
+			"forge": "level()",
+			"fabric": "dimension()"
+		},
+		{
+			"forge": "level()",
+			"fabric": "dimension()"
+		},
+		{
+			"forge": "pos()",
+			"fabric": "pos()"
+		},
+		{
+			"forge": "rot()",
+			"fabric": "rot()"
+		}
+	]
+}

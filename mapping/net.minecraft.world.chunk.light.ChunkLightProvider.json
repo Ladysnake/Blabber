@@ -1,0 +1,185 @@
+{
+	"title": "net.minecraft.world.level.lighting.LightEngine",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.LightEngine",
+			"fabric": "net.minecraft.world.chunk.light.ChunkLightProvider"
+		},
+		{
+			"forge": "MAX_LEVEL",
+			"fabric": "field_44729"
+		},
+		{
+			"forge": "MAX_LEVEL",
+			"fabric": "field_44729"
+		},
+		{
+			"forge": "MIN_OPACITY",
+			"fabric": "field_44730"
+		},
+		{
+			"forge": "PULL_LIGHT_IN_ENTRY",
+			"fabric": "field_44731"
+		},
+		{
+			"forge": "MIN_QUEUE_SIZE",
+			"fabric": "field_44732"
+		},
+		{
+			"forge": "PROPAGATION_DIRECTIONS",
+			"fabric": "DIRECTIONS"
+		},
+		{
+			"forge": "chunkSource",
+			"fabric": "chunkProvider"
+		},
+		{
+			"forge": "storage",
+			"fabric": "lightStorage"
+		},
+		{
+			"forge": "blockNodesToCheck",
+			"fabric": "blockPositionsToCheck"
+		},
+		{
+			"forge": "decreaseQueue",
+			"fabric": "field_44734"
+		},
+		{
+			"forge": "increaseQueue",
+			"fabric": "field_44735"
+		},
+		{
+			"forge": "mutablePos",
+			"fabric": "reusableBlockPos"
+		},
+		{
+			"forge": "CACHE_SIZE",
+			"fabric": "field_31709"
+		},
+		{
+			"forge": "lastChunkPos",
+			"fabric": "cachedChunkPositions"
+		},
+		{
+			"forge": "lastChunk",
+			"fabric": "cachedChunks"
+		},
+		{
+			"forge": "hasDifferentLightProperties(BlockGetter arg0, BlockPos arg1, BlockState arg2, BlockState arg3)",
+			"fabric": "needsLightUpdate(BlockView blockView, BlockPos pos, BlockState oldState, BlockState newState)"
+		},
+		{
+			"forge": "hasDifferentLightProperties(BlockGetter arg0, BlockPos arg1, BlockState arg2, BlockState arg3)",
+			"fabric": "needsLightUpdate(BlockView blockView, BlockPos pos, BlockState oldState, BlockState newState)"
+		},
+		{
+			"forge": "getLightBlockInto(BlockGetter arg0, BlockState arg1, BlockPos arg2, BlockState arg3, BlockPos arg4, Direction arg5, int arg6)",
+			"fabric": "getRealisticOpacity(BlockView world, BlockState state1, BlockPos pos1, BlockState state2, BlockPos pos2, Direction direction, int opacity2)"
+		},
+		{
+			"forge": "getOcclusionShape(BlockGetter arg0, BlockPos arg1, BlockState arg2, Direction arg3)",
+			"fabric": "getOpaqueShape(BlockView blockView, BlockPos pos, BlockState blockState, Direction direction)"
+		},
+		{
+			"forge": "isEmptyShape(BlockState arg0)",
+			"fabric": "isTrivialForLighting(BlockState blockState)"
+		},
+		{
+			"forge": "getState(BlockPos arg0)",
+			"fabric": "getStateForLighting(BlockPos pos)"
+		},
+		{
+			"forge": "getOpacity(BlockState arg0, BlockPos arg1)",
+			"fabric": "getOpacity(BlockState state, BlockPos pos)"
+		},
+		{
+			"forge": "shapeOccludes(long arg0, BlockState arg1, long arg2, BlockState arg3, Direction arg4)",
+			"fabric": "shapesCoverFullCube(long sourceId, BlockState sourceState, long targetId, BlockState targetState, Direction direction)"
+		},
+		{
+			"forge": "getOcclusionShape(BlockState arg0, long arg1, Direction arg2)",
+			"fabric": "getOpaqueShape(BlockState blockState, long pos, Direction direction)"
+		},
+		{
+			"forge": "getChunk(int arg0, int arg1)",
+			"fabric": "getChunk(int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "clearChunkCache()",
+			"fabric": "clearChunkCache()"
+		},
+		{
+			"forge": "checkBlock(BlockPos arg0)",
+			"fabric": "checkBlock(BlockPos arg0)"
+		},
+		{
+			"forge": "queueSectionData(long arg0, DataLayer arg1)",
+			"fabric": "enqueueSectionData(long sectionPos, ChunkNibbleArray lightArray)"
+		},
+		{
+			"forge": "retainData(ChunkPos arg0, boolean arg1)",
+			"fabric": "setRetainColumn(ChunkPos pos, boolean retainData)"
+		},
+		{
+			"forge": "updateSectionStatus(SectionPos arg0, boolean arg1)",
+			"fabric": "setSectionStatus(ChunkSectionPos arg0, boolean arg1)"
+		},
+		{
+			"forge": "setLightEnabled(ChunkPos arg0, boolean arg1)",
+			"fabric": "setColumnEnabled(ChunkPos arg0, boolean arg1)"
+		},
+		{
+			"forge": "runLightUpdates()",
+			"fabric": "doLightUpdates()"
+		},
+		{
+			"forge": "propagateIncreases()",
+			"fabric": "method_51567()"
+		},
+		{
+			"forge": "propagateDecreases()",
+			"fabric": "method_51570()"
+		},
+		{
+			"forge": "enqueueDecrease(long arg0, long arg1)",
+			"fabric": "method_51565(long blockPos, long flags)"
+		},
+		{
+			"forge": "enqueueIncrease(long arg0, long arg1)",
+			"fabric": "method_51566(long blockPos, long flags)"
+		},
+		{
+			"forge": "hasLightWork()",
+			"fabric": "hasUpdates()"
+		},
+		{
+			"forge": "getDataLayerData(SectionPos arg0)",
+			"fabric": "getLightSection(ChunkSectionPos arg0)"
+		},
+		{
+			"forge": "getLightValue(BlockPos arg0)",
+			"fabric": "getLightLevel(BlockPos arg0)"
+		},
+		{
+			"forge": "getDebugData(long arg0)",
+			"fabric": "displaySectionLevel(long sectionPos)"
+		},
+		{
+			"forge": "getDebugSectionType(long arg0)",
+			"fabric": "getStatus(long sectionPos)"
+		},
+		{
+			"forge": "checkNode(long arg0)",
+			"fabric": "method_51529(long blockPos)"
+		},
+		{
+			"forge": "propagateIncrease(long arg0, long arg1, int arg2)",
+			"fabric": "method_51531(long blockPos, long arg1, int lightLevel)"
+		},
+		{
+			"forge": "propagateDecrease(long arg0, long arg1)",
+			"fabric": "method_51530(long blockPos, long arg1)"
+		}
+	]
+}

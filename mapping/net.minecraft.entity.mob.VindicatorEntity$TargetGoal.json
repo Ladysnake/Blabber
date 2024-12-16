@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.monster.Vindicator$VindicatorJohnnyAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Vindicator$VindicatorJohnnyAttackGoal",
+			"fabric": "net.minecraft.entity.mob.VindicatorEntity$TargetGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		}
+	]
+}

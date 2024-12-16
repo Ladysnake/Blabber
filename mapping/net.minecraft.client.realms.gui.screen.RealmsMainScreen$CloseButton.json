@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.realmsclient.RealmsMainScreen$CloseButton",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.RealmsMainScreen$CloseButton",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsMainScreen$CloseButton"
+		}
+	]
+}

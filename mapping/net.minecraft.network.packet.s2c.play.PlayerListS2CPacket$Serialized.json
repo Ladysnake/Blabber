@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket$EntryBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket$EntryBuilder",
+			"fabric": "net.minecraft.network.packet.s2c.play.PlayerListS2CPacket$Serialized"
+		},
+		{
+			"forge": "profileId",
+			"fabric": "profileId"
+		},
+		{
+			"forge": "profileId",
+			"fabric": "profileId"
+		},
+		{
+			"forge": "profile",
+			"fabric": "gameProfile"
+		},
+		{
+			"forge": "listed",
+			"fabric": "listed"
+		},
+		{
+			"forge": "latency",
+			"fabric": "latency"
+		},
+		{
+			"forge": "gameMode",
+			"fabric": "gameMode"
+		},
+		{
+			"forge": "displayName",
+			"fabric": "displayName"
+		},
+		{
+			"forge": "chatSession",
+			"fabric": "session"
+		},
+		{
+			"forge": "build()",
+			"fabric": "toEntry()"
+		},
+		{
+			"forge": "build()",
+			"fabric": "toEntry()"
+		}
+	]
+}

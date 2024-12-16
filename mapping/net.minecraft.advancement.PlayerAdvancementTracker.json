@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.server.PlayerAdvancements",
+	"items": [
+		{
+			"forge": "net.minecraft.server.PlayerAdvancements",
+			"fabric": "net.minecraft.advancement.PlayerAdvancementTracker"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "TYPE_TOKEN",
+			"fabric": "JSON_TYPE"
+		},
+		{
+			"forge": "dataFixer",
+			"fabric": "dataFixer"
+		},
+		{
+			"forge": "playerList",
+			"fabric": "playerManager"
+		},
+		{
+			"forge": "playerSavePath",
+			"fabric": "filePath"
+		},
+		{
+			"forge": "progress",
+			"fabric": "progress"
+		},
+		{
+			"forge": "visible",
+			"fabric": "visibleAdvancements"
+		},
+		{
+			"forge": "progressChanged",
+			"fabric": "progressUpdates"
+		},
+		{
+			"forge": "rootsToUpdate",
+			"fabric": "updatedRoots"
+		},
+		{
+			"forge": "player",
+			"fabric": "owner"
+		},
+		{
+			"forge": "lastSelectedTab",
+			"fabric": "currentDisplayTab"
+		},
+		{
+			"forge": "isFirstPacket",
+			"fabric": "dirty"
+		},
+		{
+			"forge": "setPlayer(ServerPlayer arg0)",
+			"fabric": "setOwner(ServerPlayerEntity owner)"
+		},
+		{
+			"forge": "setPlayer(ServerPlayer arg0)",
+			"fabric": "setOwner(ServerPlayerEntity owner)"
+		},
+		{
+			"forge": "stopListening()",
+			"fabric": "clearCriteria()"
+		},
+		{
+			"forge": "reload(ServerAdvancementManager arg0)",
+			"fabric": "reload(ServerAdvancementLoader advancementLoader)"
+		},
+		{
+			"forge": "registerListeners(ServerAdvancementManager arg0)",
+			"fabric": "beginTrackingAllAdvancements(ServerAdvancementLoader advancementLoader)"
+		},
+		{
+			"forge": "checkForAutomaticTriggers(ServerAdvancementManager arg0)",
+			"fabric": "rewardEmptyAdvancements(ServerAdvancementLoader advancementLoader)"
+		},
+		{
+			"forge": "load(ServerAdvancementManager arg0)",
+			"fabric": "load(ServerAdvancementLoader advancementLoader)"
+		},
+		{
+			"forge": "save()",
+			"fabric": "save()"
+		},
+		{
+			"forge": "award(Advancement arg0, String arg1)",
+			"fabric": "grantCriterion(Advancement advancement, String criterionName)"
+		},
+		{
+			"forge": "revoke(Advancement arg0, String arg1)",
+			"fabric": "revokeCriterion(Advancement advancement, String criterionName)"
+		},
+		{
+			"forge": "markForVisibilityUpdate(Advancement arg0)",
+			"fabric": "onStatusUpdate(Advancement advancement)"
+		},
+		{
+			"forge": "registerListeners(Advancement arg0)",
+			"fabric": "beginTracking(Advancement advancement)"
+		},
+		{
+			"forge": "unregisterListeners(Advancement arg0)",
+			"fabric": "endTrackingCompleted(Advancement advancement)"
+		},
+		{
+			"forge": "flushDirty(ServerPlayer arg0)",
+			"fabric": "sendUpdate(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "setSelectedTab(Advancement arg0)",
+			"fabric": "setDisplayTab(Advancement advancement)"
+		},
+		{
+			"forge": "getOrStartProgress(Advancement arg0)",
+			"fabric": "getProgress(Advancement advancement)"
+		},
+		{
+			"forge": "startProgress(Advancement arg0, AdvancementProgress arg1)",
+			"fabric": "initProgress(Advancement advancement, AdvancementProgress progress)"
+		},
+		{
+			"forge": "updateTreeVisibility(Advancement arg0, Set<Advancement> arg1, Set<ResourceLocation> arg2)",
+			"fabric": "calculateDisplay(Advancement root, Set<Advancement> added, Set<Identifier> removed)"
+		}
+	]
+}

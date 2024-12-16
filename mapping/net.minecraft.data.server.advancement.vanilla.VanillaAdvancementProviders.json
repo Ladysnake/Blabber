@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.data.advancements.packs.VanillaAdvancementProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.advancements.packs.VanillaAdvancementProvider",
+			"fabric": "net.minecraft.data.server.advancement.vanilla.VanillaAdvancementProviders"
+		},
+		{
+			"forge": "create(PackOutput arg0, CompletableFuture<HolderLookup$Provider> arg1)",
+			"fabric": "createVanillaProvider(DataOutput output, CompletableFuture<RegistryWrapper$WrapperLookup> registryLookupFuture)"
+		},
+		{
+			"forge": "create(PackOutput arg0, CompletableFuture<HolderLookup$Provider> arg1)",
+			"fabric": "createVanillaProvider(DataOutput output, CompletableFuture<RegistryWrapper$WrapperLookup> registryLookupFuture)"
+		}
+	]
+}

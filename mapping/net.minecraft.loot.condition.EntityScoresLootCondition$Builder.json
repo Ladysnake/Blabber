@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.EntityHasScoreCondition$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.EntityHasScoreCondition$Builder",
+			"fabric": "net.minecraft.loot.condition.EntityScoresLootCondition$Builder"
+		},
+		{
+			"forge": "scores",
+			"fabric": "scores"
+		},
+		{
+			"forge": "scores",
+			"fabric": "scores"
+		},
+		{
+			"forge": "entityTarget",
+			"fabric": "target"
+		},
+		{
+			"forge": "withScore(String arg0, IntRange arg1)",
+			"fabric": "score(String name, BoundedIntUnaryOperator value)"
+		},
+		{
+			"forge": "withScore(String arg0, IntRange arg1)",
+			"fabric": "score(String name, BoundedIntUnaryOperator value)"
+		}
+	]
+}

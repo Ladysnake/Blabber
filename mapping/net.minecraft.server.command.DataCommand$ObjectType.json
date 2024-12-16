@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.commands.data.DataCommands$DataProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.data.DataCommands$DataProvider",
+			"fabric": "net.minecraft.server.command.DataCommand$ObjectType"
+		},
+		{
+			"forge": "access(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0)",
+			"fabric": "getObject(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context)"
+		},
+		{
+			"forge": "access(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0)",
+			"fabric": "getObject(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context)"
+		},
+		{
+			"forge": "wrap(com.mojang.brigadier.builder.ArgumentBuilder<CommandSourceStack, ?> arg0, Function<com.mojang.brigadier.builder.ArgumentBuilder<CommandSourceStack, ?>, com.mojang.brigadier.builder.ArgumentBuilder<CommandSourceStack, ?>> arg1)",
+			"fabric": "addArgumentsToBuilder(com.mojang.brigadier.builder.ArgumentBuilder<ServerCommandSource, ?> argument, Function<com.mojang.brigadier.builder.ArgumentBuilder<ServerCommandSource, ?>, com.mojang.brigadier.builder.ArgumentBuilder<ServerCommandSource, ?>> argumentAdder)"
+		}
+	]
+}

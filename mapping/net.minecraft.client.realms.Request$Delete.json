@@ -1,0 +1,17 @@
+{
+	"title": "com.mojang.realmsclient.client.Request$Delete",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.client.Request$Delete",
+			"fabric": "net.minecraft.client.realms.Request$Delete"
+		},
+		{
+			"forge": "doConnect()",
+			"fabric": "doConnect()"
+		},
+		{
+			"forge": "doConnect()",
+			"fabric": "doConnect()"
+		}
+	]
+}

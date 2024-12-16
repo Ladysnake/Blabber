@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.TimeCheck$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.TimeCheck$Builder",
+			"fabric": "net.minecraft.loot.condition.TimeCheckLootCondition$Builder"
+		},
+		{
+			"forge": "period",
+			"fabric": "period"
+		},
+		{
+			"forge": "period",
+			"fabric": "period"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "setPeriod(long arg0)",
+			"fabric": "period(long period)"
+		},
+		{
+			"forge": "setPeriod(long arg0)",
+			"fabric": "period(long period)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

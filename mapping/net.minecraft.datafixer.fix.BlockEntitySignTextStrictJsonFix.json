@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlockEntitySignTextStrictJsonFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlockEntitySignTextStrictJsonFix",
+			"fabric": "net.minecraft.datafixer.fix.BlockEntitySignTextStrictJsonFix"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "updateLine(com.mojang.serialization.Dynamic<?> arg0, String arg1)",
+			"fabric": "fix(com.mojang.serialization.Dynamic<?> arg0, String lineName)"
+		},
+		{
+			"forge": "updateLine(com.mojang.serialization.Dynamic<?> arg0, String arg1)",
+			"fabric": "fix(com.mojang.serialization.Dynamic<?> arg0, String lineName)"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> arg0)"
+		}
+	]
+}

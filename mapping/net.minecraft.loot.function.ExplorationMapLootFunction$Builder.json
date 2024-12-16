@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.ExplorationMapFunction$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.ExplorationMapFunction$Builder",
+			"fabric": "net.minecraft.loot.function.ExplorationMapLootFunction$Builder"
+		},
+		{
+			"forge": "destination",
+			"fabric": "destination"
+		},
+		{
+			"forge": "destination",
+			"fabric": "destination"
+		},
+		{
+			"forge": "mapDecoration",
+			"fabric": "decoration"
+		},
+		{
+			"forge": "zoom",
+			"fabric": "zoom"
+		},
+		{
+			"forge": "searchRadius",
+			"fabric": "searchRadius"
+		},
+		{
+			"forge": "skipKnownStructures",
+			"fabric": "skipExistingChunks"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "setDestination(TagKey<Structure> arg0)",
+			"fabric": "withDestination(TagKey<Structure> destination)"
+		},
+		{
+			"forge": "setMapDecoration(MapDecoration$Type arg0)",
+			"fabric": "withDecoration(MapIcon$Type decoration)"
+		},
+		{
+			"forge": "setZoom(byte arg0)",
+			"fabric": "withZoom(byte zoom)"
+		},
+		{
+			"forge": "setSearchRadius(int arg0)",
+			"fabric": "searchRadius(int searchRadius)"
+		},
+		{
+			"forge": "setSkipKnownStructures(boolean arg0)",
+			"fabric": "withSkipExistingChunks(boolean skipExistingChunks)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

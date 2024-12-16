@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment",
+			"fabric": "net.minecraft.world.gen.foliage.FoliagePlacer$TreeNode"
+		},
+		{
+			"forge": "pos",
+			"fabric": "center"
+		},
+		{
+			"forge": "pos",
+			"fabric": "center"
+		},
+		{
+			"forge": "radiusOffset",
+			"fabric": "foliageRadius"
+		},
+		{
+			"forge": "doubleTrunk",
+			"fabric": "giantTrunk"
+		},
+		{
+			"forge": "pos()",
+			"fabric": "getCenter()"
+		},
+		{
+			"forge": "pos()",
+			"fabric": "getCenter()"
+		},
+		{
+			"forge": "radiusOffset()",
+			"fabric": "getFoliageRadius()"
+		},
+		{
+			"forge": "doubleTrunk()",
+			"fabric": "isGiantTrunk()"
+		}
+	]
+}

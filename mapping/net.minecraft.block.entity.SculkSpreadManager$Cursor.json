@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.level.block.SculkSpreader$ChargeCursor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SculkSpreader$ChargeCursor",
+			"fabric": "net.minecraft.block.entity.SculkSpreadManager$Cursor"
+		},
+		{
+			"forge": "NON_CORNER_NEIGHBOURS",
+			"fabric": "OFFSETS"
+		},
+		{
+			"forge": "NON_CORNER_NEIGHBOURS",
+			"fabric": "OFFSETS"
+		},
+		{
+			"forge": "MAX_CURSOR_DECAY_DELAY",
+			"fabric": "field_37622"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "charge",
+			"fabric": "charge"
+		},
+		{
+			"forge": "updateDelay",
+			"fabric": "update"
+		},
+		{
+			"forge": "decayDelay",
+			"fabric": "decay"
+		},
+		{
+			"forge": "facings",
+			"fabric": "faces"
+		},
+		{
+			"forge": "DIRECTION_SET",
+			"fabric": "DIRECTION_SET_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getCharge()",
+			"fabric": "getCharge()"
+		},
+		{
+			"forge": "getDecayDelay()",
+			"fabric": "getDecay()"
+		},
+		{
+			"forge": "getFacingData()",
+			"fabric": "getFaces()"
+		},
+		{
+			"forge": "shouldUpdate(LevelAccessor arg0, BlockPos arg1, boolean arg2)",
+			"fabric": "canSpread(WorldAccess world, BlockPos pos, boolean worldGen)"
+		},
+		{
+			"forge": "update(LevelAccessor arg0, BlockPos arg1, RandomSource arg2, SculkSpreader arg3, boolean arg4)",
+			"fabric": "spread(WorldAccess world, BlockPos pos, Random random, SculkSpreadManager spreadManager, boolean shouldConvertToBlock)"
+		},
+		{
+			"forge": "mergeWith(SculkSpreader$ChargeCursor arg0)",
+			"fabric": "merge(SculkSpreadManager$Cursor cursor)"
+		},
+		{
+			"forge": "getBlockBehaviour(BlockState arg0)",
+			"fabric": "getSpreadable(BlockState state)"
+		},
+		{
+			"forge": "getRandomizedNonCornerNeighbourOffsets(RandomSource arg0)",
+			"fabric": "shuffleOffsets(Random random)"
+		},
+		{
+			"forge": "getValidMovementPos(LevelAccessor arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "getSpreadPos(WorldAccess world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "isMovementUnobstructed(LevelAccessor arg0, BlockPos arg1, BlockPos arg2)",
+			"fabric": "canSpread(WorldAccess world, BlockPos sourcePos, BlockPos targetPos)"
+		},
+		{
+			"forge": "isUnobstructed(LevelAccessor arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "canSpread(WorldAccess world, BlockPos pos, Direction direction)"
+		}
+	]
+}

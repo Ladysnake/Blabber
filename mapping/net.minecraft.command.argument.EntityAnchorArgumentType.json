@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.arguments.EntityAnchorArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.EntityAnchorArgument",
+			"fabric": "net.minecraft.command.argument.EntityAnchorArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_INVALID",
+			"fabric": "INVALID_ANCHOR_EXCEPTION"
+		},
+		{
+			"forge": "getAnchor(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getEntityAnchor(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getAnchor(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getEntityAnchor(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "anchor()",
+			"fabric": "entityAnchor()"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		}
+	]
+}

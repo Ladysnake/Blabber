@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.monster.Shulker$ShulkerAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Shulker$ShulkerAttackGoal",
+			"fabric": "net.minecraft.entity.mob.ShulkerEntity$ShootBulletGoal"
+		},
+		{
+			"forge": "attackTime",
+			"fabric": "counter"
+		},
+		{
+			"forge": "attackTime",
+			"fabric": "counter"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "requiresUpdateEveryTick()",
+			"fabric": "shouldRunEveryTick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

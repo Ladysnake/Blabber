@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.StriderGravityFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.StriderGravityFix",
+			"fabric": "net.minecraft.datafixer.fix.StriderGravityFix"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateNoGravityNbt(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateNoGravityNbt(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> arg0)"
+		}
+	]
+}

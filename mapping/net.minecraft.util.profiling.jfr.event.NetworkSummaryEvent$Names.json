@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent$Fields",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent$Fields",
+			"fabric": "net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent$Names"
+		},
+		{
+			"forge": "REMOTE_ADDRESS",
+			"fabric": "REMOTE_ADDRESS"
+		},
+		{
+			"forge": "REMOTE_ADDRESS",
+			"fabric": "REMOTE_ADDRESS"
+		},
+		{
+			"forge": "SENT_BYTES",
+			"fabric": "SENT_BYTES"
+		},
+		{
+			"forge": "SENT_PACKETS",
+			"fabric": "SENT_PACKETS"
+		},
+		{
+			"forge": "RECEIVED_BYTES",
+			"fabric": "RECEIVED_BYTES"
+		},
+		{
+			"forge": "RECEIVED_PACKETS",
+			"fabric": "RECEIVED_PACKETS"
+		}
+	]
+}

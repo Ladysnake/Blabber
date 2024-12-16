@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.particle.MobAppearanceParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.MobAppearanceParticle",
+			"fabric": "net.minecraft.client.particle.ElderGuardianAppearanceParticle"
+		},
+		{
+			"forge": "model",
+			"fabric": "model"
+		},
+		{
+			"forge": "model",
+			"fabric": "model"
+		},
+		{
+			"forge": "renderType",
+			"fabric": "layer"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		}
+	]
+}

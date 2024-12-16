@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.CryingObsidianBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.CryingObsidianBlock",
+			"fabric": "net.minecraft.block.CryingObsidianBlock"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		}
+	]
+}

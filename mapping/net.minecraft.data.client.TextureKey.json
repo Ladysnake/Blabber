@@ -1,0 +1,209 @@
+{
+	"title": "net.minecraft.data.models.model.TextureSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.model.TextureSlot",
+			"fabric": "net.minecraft.data.client.TextureKey"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "PARTICLE",
+			"fabric": "PARTICLE"
+		},
+		{
+			"forge": "END",
+			"fabric": "END"
+		},
+		{
+			"forge": "BOTTOM",
+			"fabric": "BOTTOM"
+		},
+		{
+			"forge": "TOP",
+			"fabric": "TOP"
+		},
+		{
+			"forge": "FRONT",
+			"fabric": "FRONT"
+		},
+		{
+			"forge": "BACK",
+			"fabric": "BACK"
+		},
+		{
+			"forge": "SIDE",
+			"fabric": "SIDE"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "UP",
+			"fabric": "UP"
+		},
+		{
+			"forge": "DOWN",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "CROSS",
+			"fabric": "CROSS"
+		},
+		{
+			"forge": "PLANT",
+			"fabric": "PLANT"
+		},
+		{
+			"forge": "WALL",
+			"fabric": "WALL"
+		},
+		{
+			"forge": "RAIL",
+			"fabric": "RAIL"
+		},
+		{
+			"forge": "WOOL",
+			"fabric": "WOOL"
+		},
+		{
+			"forge": "PATTERN",
+			"fabric": "PATTERN"
+		},
+		{
+			"forge": "PANE",
+			"fabric": "PANE"
+		},
+		{
+			"forge": "EDGE",
+			"fabric": "EDGE"
+		},
+		{
+			"forge": "FAN",
+			"fabric": "FAN"
+		},
+		{
+			"forge": "STEM",
+			"fabric": "STEM"
+		},
+		{
+			"forge": "UPPER_STEM",
+			"fabric": "UPPERSTEM"
+		},
+		{
+			"forge": "CROP",
+			"fabric": "CROP"
+		},
+		{
+			"forge": "DIRT",
+			"fabric": "DIRT"
+		},
+		{
+			"forge": "FIRE",
+			"fabric": "FIRE"
+		},
+		{
+			"forge": "LANTERN",
+			"fabric": "LANTERN"
+		},
+		{
+			"forge": "PLATFORM",
+			"fabric": "PLATFORM"
+		},
+		{
+			"forge": "UNSTICKY",
+			"fabric": "UNSTICKY"
+		},
+		{
+			"forge": "TORCH",
+			"fabric": "TORCH"
+		},
+		{
+			"forge": "LAYER0",
+			"fabric": "LAYER0"
+		},
+		{
+			"forge": "LAYER1",
+			"fabric": "LAYER1"
+		},
+		{
+			"forge": "LAYER2",
+			"fabric": "LAYER2"
+		},
+		{
+			"forge": "LIT_LOG",
+			"fabric": "LIT_LOG"
+		},
+		{
+			"forge": "CANDLE",
+			"fabric": "CANDLE"
+		},
+		{
+			"forge": "INSIDE",
+			"fabric": "INSIDE"
+		},
+		{
+			"forge": "CONTENT",
+			"fabric": "CONTENT"
+		},
+		{
+			"forge": "INNER_TOP",
+			"fabric": "INNER_TOP"
+		},
+		{
+			"forge": "FLOWERBED",
+			"fabric": "FLOWERBED"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String name)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String name)"
+		},
+		{
+			"forge": "create(String arg0, TextureSlot arg1)",
+			"fabric": "of(String name, TextureKey parent)"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getParent()",
+			"fabric": "getParent()"
+		}
+	]
+}

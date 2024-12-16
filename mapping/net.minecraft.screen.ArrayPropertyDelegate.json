@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.inventory.SimpleContainerData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.SimpleContainerData",
+			"fabric": "net.minecraft.screen.ArrayPropertyDelegate"
+		},
+		{
+			"forge": "ints",
+			"fabric": "data"
+		},
+		{
+			"forge": "ints",
+			"fabric": "data"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "set(int arg0, int arg1)",
+			"fabric": "set(int arg0, int arg1)"
+		},
+		{
+			"forge": "getCount()",
+			"fabric": "size()"
+		}
+	]
+}

@@ -1,0 +1,157 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSlotOptionsScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSlotOptionsScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSlotOptionsScreen"
+		},
+		{
+			"forge": "DEFAULT_DIFFICULTY",
+			"fabric": "field_32125"
+		},
+		{
+			"forge": "DEFAULT_DIFFICULTY",
+			"fabric": "field_32125"
+		},
+		{
+			"forge": "DIFFICULTIES",
+			"fabric": "DIFFICULTIES"
+		},
+		{
+			"forge": "DEFAULT_GAME_MODE",
+			"fabric": "field_32126"
+		},
+		{
+			"forge": "GAME_MODES",
+			"fabric": "GAME_MODES"
+		},
+		{
+			"forge": "NAME_LABEL",
+			"fabric": "EDIT_SLOT_NAME"
+		},
+		{
+			"forge": "SPAWN_PROTECTION_TEXT",
+			"fabric": "SPAWN_PROTECTION"
+		},
+		{
+			"forge": "SPAWN_WARNING_TITLE",
+			"fabric": "SPAWN_TOGGLE_TITLE"
+		},
+		{
+			"forge": "nameEdit",
+			"fabric": "nameEdit"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "column1X",
+			"fabric": "column1_x"
+		},
+		{
+			"forge": "columnWidth",
+			"fabric": "column2_x"
+		},
+		{
+			"forge": "options",
+			"fabric": "options"
+		},
+		{
+			"forge": "worldType",
+			"fabric": "worldType"
+		},
+		{
+			"forge": "difficulty",
+			"fabric": "difficulty"
+		},
+		{
+			"forge": "gameMode",
+			"fabric": "gameMode"
+		},
+		{
+			"forge": "defaultSlotName",
+			"fabric": "defaultSlotName"
+		},
+		{
+			"forge": "worldName",
+			"fabric": "slotName"
+		},
+		{
+			"forge": "pvp",
+			"fabric": "pvp"
+		},
+		{
+			"forge": "spawnNPCs",
+			"fabric": "spawnNpcs"
+		},
+		{
+			"forge": "spawnAnimals",
+			"fabric": "spawnAnimals"
+		},
+		{
+			"forge": "spawnMonsters",
+			"fabric": "spawnMonsters"
+		},
+		{
+			"forge": "spawnProtection",
+			"fabric": "spawnProtection"
+		},
+		{
+			"forge": "commandBlocks",
+			"fabric": "commandBlocks"
+		},
+		{
+			"forge": "forceGameMode",
+			"fabric": "forceGameMode"
+		},
+		{
+			"forge": "spawnProtectionButton",
+			"fabric": "spawnProtectionButton"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "findByIndex(List<T> arg0, int arg1, int arg2)",
+			"fabric": "get(List<T> list, int index, int fallbackIndex)"
+		},
+		{
+			"forge": "findIndex(List<T> arg0, T arg1, int arg2)",
+			"fabric": "indexOf(List<T> list, T value, int fallbackIndex)"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "confirmDangerousOption(Component arg0, Consumer<Boolean> arg1)",
+			"fabric": "getSpawnToggleButtonCallback(Text text, Consumer<Boolean> valueSetter)"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "setWorldName(String arg0)",
+			"fabric": "setSlotName(String slotName)"
+		},
+		{
+			"forge": "saveSettings()",
+			"fabric": "saveSettings()"
+		}
+	]
+}

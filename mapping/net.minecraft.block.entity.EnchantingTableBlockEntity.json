@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.level.block.entity.EnchantmentTableBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.EnchantmentTableBlockEntity",
+			"fabric": "net.minecraft.block.entity.EnchantingTableBlockEntity"
+		},
+		{
+			"forge": "time",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "time",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "flip",
+			"fabric": "nextPageAngle"
+		},
+		{
+			"forge": "oFlip",
+			"fabric": "pageAngle"
+		},
+		{
+			"forge": "flipT",
+			"fabric": "flipRandom"
+		},
+		{
+			"forge": "flipA",
+			"fabric": "flipTurn"
+		},
+		{
+			"forge": "open",
+			"fabric": "nextPageTurningSpeed"
+		},
+		{
+			"forge": "oOpen",
+			"fabric": "pageTurningSpeed"
+		},
+		{
+			"forge": "rot",
+			"fabric": "bookRotation"
+		},
+		{
+			"forge": "oRot",
+			"fabric": "lastBookRotation"
+		},
+		{
+			"forge": "tRot",
+			"fabric": "targetBookRotation"
+		},
+		{
+			"forge": "RANDOM",
+			"fabric": "RANDOM"
+		},
+		{
+			"forge": "name",
+			"fabric": "customName"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "bookAnimationTick(Level arg0, BlockPos arg1, BlockState arg2, EnchantmentTableBlockEntity arg3)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, EnchantingTableBlockEntity blockEntity)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "setCustomName(Component arg0)",
+			"fabric": "setCustomName(Text customName)"
+		},
+		{
+			"forge": "getCustomName()",
+			"fabric": "getCustomName()"
+		}
+	]
+}

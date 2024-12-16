@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.world.effect.MobEffect",
+	"items": [
+		{
+			"forge": "net.minecraft.world.effect.MobEffect",
+			"fabric": "net.minecraft.entity.effect.StatusEffect"
+		},
+		{
+			"forge": "attributeModifiers",
+			"fabric": "attributeModifiers"
+		},
+		{
+			"forge": "attributeModifiers",
+			"fabric": "attributeModifiers"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "descriptionId",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "factorDataFactory",
+			"fabric": "factorCalculationDataSupplier"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byRawId(int rawId)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byRawId(int rawId)"
+		},
+		{
+			"forge": "getId(MobEffect arg0)",
+			"fabric": "getRawId(StatusEffect type)"
+		},
+		{
+			"forge": "getIdFromNullable(MobEffect arg0)",
+			"fabric": "getRawIdNullable(StatusEffect type)"
+		},
+		{
+			"forge": "createFactorData()",
+			"fabric": "getFactorCalculationDataSupplier()"
+		},
+		{
+			"forge": "applyEffectTick(LivingEntity arg0, int arg1)",
+			"fabric": "applyUpdateEffect(LivingEntity entity, int amplifier)"
+		},
+		{
+			"forge": "applyInstantenousEffect(Entity arg0, Entity arg1, LivingEntity arg2, int arg3, double arg4)",
+			"fabric": "applyInstantEffect(Entity source, Entity attacker, LivingEntity target, int amplifier, double proximity)"
+		},
+		{
+			"forge": "isDurationEffectTick(int arg0, int arg1)",
+			"fabric": "canApplyUpdateEffect(int duration, int amplifier)"
+		},
+		{
+			"forge": "isInstantenous()",
+			"fabric": "isInstant()"
+		},
+		{
+			"forge": "getOrCreateDescriptionId()",
+			"fabric": "loadTranslationKey()"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getCategory()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "addAttributeModifier(Attribute arg0, String arg1, double arg2, AttributeModifier$Operation arg3)",
+			"fabric": "addAttributeModifier(EntityAttribute attribute, String uuid, double amount, EntityAttributeModifier$Operation operation)"
+		},
+		{
+			"forge": "setFactorDataFactory(Supplier<MobEffectInstance$FactorData> arg0)",
+			"fabric": "setFactorCalculationDataSupplier(Supplier<StatusEffectInstance$FactorCalculationData> factorCalculationDataSupplier)"
+		},
+		{
+			"forge": "getAttributeModifiers()",
+			"fabric": "getAttributeModifiers()"
+		},
+		{
+			"forge": "removeAttributeModifiers(LivingEntity arg0, AttributeMap arg1, int arg2)",
+			"fabric": "onRemoved(LivingEntity entity, AttributeContainer attributes, int amplifier)"
+		},
+		{
+			"forge": "addAttributeModifiers(LivingEntity arg0, AttributeMap arg1, int arg2)",
+			"fabric": "onApplied(LivingEntity entity, AttributeContainer attributes, int amplifier)"
+		},
+		{
+			"forge": "getAttributeModifierValue(int arg0, AttributeModifier arg1)",
+			"fabric": "adjustModifierAmount(int amplifier, EntityAttributeModifier modifier)"
+		},
+		{
+			"forge": "isBeneficial()",
+			"fabric": "isBeneficial()"
+		}
+	]
+}

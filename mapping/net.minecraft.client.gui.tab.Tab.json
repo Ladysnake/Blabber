@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.components.tabs.Tab",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.tabs.Tab",
+			"fabric": "net.minecraft.client.gui.tab.Tab"
+		},
+		{
+			"forge": "getTabTitle()",
+			"fabric": "getTitle()"
+		},
+		{
+			"forge": "getTabTitle()",
+			"fabric": "getTitle()"
+		},
+		{
+			"forge": "visitChildren(Consumer<AbstractWidget> arg0)",
+			"fabric": "forEachChild(Consumer<ClickableWidget> consumer)"
+		},
+		{
+			"forge": "doLayout(ScreenRectangle arg0)",
+			"fabric": "refreshGrid(ScreenRect tabArea)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

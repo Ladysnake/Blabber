@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlDebug$LogEntry",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlDebug$LogEntry",
+			"fabric": "net.minecraft.client.gl.GlDebug$DebugMessage"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "source",
+			"fabric": "source"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "severity",
+			"fabric": "severity"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "count",
+			"fabric": "count"
+		},
+		{
+			"forge": "isSame(int arg0, int arg1, int arg2, int arg3, String arg4)",
+			"fabric": "equals(int source, int type, int id, int severity, String message)"
+		},
+		{
+			"forge": "isSame(int arg0, int arg1, int arg2, int arg3, String arg4)",
+			"fabric": "equals(int source, int type, int id, int severity, String message)"
+		}
+	]
+}

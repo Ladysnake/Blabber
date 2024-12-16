@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.phys.shapes.Shapes$DoubleLineConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.Shapes$DoubleLineConsumer",
+			"fabric": "net.minecraft.util.shape.VoxelShapes$BoxConsumer"
+		},
+		{
+			"forge": "consume(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)",
+			"fabric": "consume(double minX, double minY, double minZ, double maxX, double maxY, double maxZ)"
+		},
+		{
+			"forge": "consume(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)",
+			"fabric": "consume(double minX, double minY, double minZ, double maxX, double maxY, double maxZ)"
+		}
+	]
+}

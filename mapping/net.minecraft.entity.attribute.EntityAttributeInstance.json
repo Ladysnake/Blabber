@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.world.entity.ai.attributes.AttributeInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.attributes.AttributeInstance",
+			"fabric": "net.minecraft.entity.attribute.EntityAttributeInstance"
+		},
+		{
+			"forge": "attribute",
+			"fabric": "type"
+		},
+		{
+			"forge": "attribute",
+			"fabric": "type"
+		},
+		{
+			"forge": "modifiersByOperation",
+			"fabric": "operationToModifiers"
+		},
+		{
+			"forge": "modifierById",
+			"fabric": "idToModifiers"
+		},
+		{
+			"forge": "permanentModifiers",
+			"fabric": "persistentModifiers"
+		},
+		{
+			"forge": "baseValue",
+			"fabric": "baseValue"
+		},
+		{
+			"forge": "dirty",
+			"fabric": "dirty"
+		},
+		{
+			"forge": "cachedValue",
+			"fabric": "value"
+		},
+		{
+			"forge": "onDirty",
+			"fabric": "updateCallback"
+		},
+		{
+			"forge": "getAttribute()",
+			"fabric": "getAttribute()"
+		},
+		{
+			"forge": "getAttribute()",
+			"fabric": "getAttribute()"
+		},
+		{
+			"forge": "getBaseValue()",
+			"fabric": "getBaseValue()"
+		},
+		{
+			"forge": "setBaseValue(double arg0)",
+			"fabric": "setBaseValue(double baseValue)"
+		},
+		{
+			"forge": "getModifiers(AttributeModifier$Operation arg0)",
+			"fabric": "getModifiers(EntityAttributeModifier$Operation operation)"
+		},
+		{
+			"forge": "getModifiers()",
+			"fabric": "getModifiers()"
+		},
+		{
+			"forge": "getModifier(UUID arg0)",
+			"fabric": "getModifier(UUID uuid)"
+		},
+		{
+			"forge": "hasModifier(AttributeModifier arg0)",
+			"fabric": "hasModifier(EntityAttributeModifier modifier)"
+		},
+		{
+			"forge": "addModifier(AttributeModifier arg0)",
+			"fabric": "addModifier(EntityAttributeModifier modifier)"
+		},
+		{
+			"forge": "addTransientModifier(AttributeModifier arg0)",
+			"fabric": "addTemporaryModifier(EntityAttributeModifier modifier)"
+		},
+		{
+			"forge": "addPermanentModifier(AttributeModifier arg0)",
+			"fabric": "addPersistentModifier(EntityAttributeModifier modifier)"
+		},
+		{
+			"forge": "setDirty()",
+			"fabric": "onUpdate()"
+		},
+		{
+			"forge": "removeModifier(AttributeModifier arg0)",
+			"fabric": "removeModifier(EntityAttributeModifier modifier)"
+		},
+		{
+			"forge": "removeModifier(UUID arg0)",
+			"fabric": "removeModifier(UUID uuid)"
+		},
+		{
+			"forge": "removePermanentModifier(UUID arg0)",
+			"fabric": "tryRemoveModifier(UUID uuid)"
+		},
+		{
+			"forge": "removeModifiers()",
+			"fabric": "clearModifiers()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "calculateValue()",
+			"fabric": "computeValue()"
+		},
+		{
+			"forge": "getModifiersOrEmpty(AttributeModifier$Operation arg0)",
+			"fabric": "getModifiersByOperation(EntityAttributeModifier$Operation operation)"
+		},
+		{
+			"forge": "replaceFrom(AttributeInstance arg0)",
+			"fabric": "setFrom(EntityAttributeInstance other)"
+		},
+		{
+			"forge": "save()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound nbt)"
+		}
+	]
+}

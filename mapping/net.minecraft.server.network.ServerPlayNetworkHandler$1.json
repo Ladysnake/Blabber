@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.network.ServerGamePacketListenerImpl$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.ServerGamePacketListenerImpl$1",
+			"fabric": "net.minecraft.server.network.ServerPlayNetworkHandler$1"
+		},
+		{
+			"forge": "performInteraction(InteractionHand arg0, ServerGamePacketListenerImpl$EntityInteraction arg1)",
+			"fabric": "processInteract(Hand hand, ServerPlayNetworkHandler$Interaction action)"
+		},
+		{
+			"forge": "performInteraction(InteractionHand arg0, ServerGamePacketListenerImpl$EntityInteraction arg1)",
+			"fabric": "processInteract(Hand hand, ServerPlayNetworkHandler$Interaction action)"
+		},
+		{
+			"forge": "onInteraction(InteractionHand arg0)",
+			"fabric": "interact(Hand arg0)"
+		},
+		{
+			"forge": "onInteraction(InteractionHand arg0, Vec3 arg1)",
+			"fabric": "interactAt(Hand arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "onAttack()",
+			"fabric": "attack()"
+		}
+	]
+}

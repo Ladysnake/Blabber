@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.realmsclient.exception.RealmsHttpException",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.exception.RealmsHttpException",
+			"fabric": "net.minecraft.client.realms.exception.RealmsHttpException"
+		}
+	]
+}

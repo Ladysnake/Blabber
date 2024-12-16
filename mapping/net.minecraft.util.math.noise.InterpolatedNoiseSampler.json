@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.level.levelgen.synth.BlendedNoise",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.synth.BlendedNoise",
+			"fabric": "net.minecraft.util.math.noise.InterpolatedNoiseSampler"
+		},
+		{
+			"forge": "SCALE_RANGE",
+			"fabric": "SCALE_AND_FACTOR_RANGE"
+		},
+		{
+			"forge": "SCALE_RANGE",
+			"fabric": "SCALE_AND_FACTOR_RANGE"
+		},
+		{
+			"forge": "DATA_CODEC",
+			"fabric": "MAP_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "minLimitNoise",
+			"fabric": "lowerInterpolatedNoise"
+		},
+		{
+			"forge": "maxLimitNoise",
+			"fabric": "upperInterpolatedNoise"
+		},
+		{
+			"forge": "mainNoise",
+			"fabric": "interpolationNoise"
+		},
+		{
+			"forge": "xzMultiplier",
+			"fabric": "scaledXzScale"
+		},
+		{
+			"forge": "yMultiplier",
+			"fabric": "scaledYScale"
+		},
+		{
+			"forge": "xzFactor",
+			"fabric": "xzFactor"
+		},
+		{
+			"forge": "yFactor",
+			"fabric": "yFactor"
+		},
+		{
+			"forge": "smearScaleMultiplier",
+			"fabric": "smearScaleMultiplier"
+		},
+		{
+			"forge": "maxValue",
+			"fabric": "maxValue"
+		},
+		{
+			"forge": "xzScale",
+			"fabric": "xzScale"
+		},
+		{
+			"forge": "yScale",
+			"fabric": "yScale"
+		},
+		{
+			"forge": "createUnseeded(double arg0, double arg1, double arg2, double arg3, double arg4)",
+			"fabric": "createBase3dNoiseFunction(double xzScale, double yScale, double xzFactor, double yFactor, double smearScaleMultiplier)"
+		},
+		{
+			"forge": "createUnseeded(double arg0, double arg1, double arg2, double arg3, double arg4)",
+			"fabric": "createBase3dNoiseFunction(double xzScale, double yScale, double xzFactor, double yFactor, double smearScaleMultiplier)"
+		},
+		{
+			"forge": "withNewRandom(RandomSource arg0)",
+			"fabric": "copyWithRandom(Random random)"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "minValue()",
+			"fabric": "minValue()"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "maxValue()"
+		},
+		{
+			"forge": "parityConfigString(StringBuilder arg0)",
+			"fabric": "addDebugInfo(StringBuilder info)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodecHolder()"
+		}
+	]
+}

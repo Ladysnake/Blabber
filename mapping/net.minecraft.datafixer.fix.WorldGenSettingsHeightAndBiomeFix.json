@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
+			"fabric": "net.minecraft.datafixer.fix.WorldGenSettingsHeightAndBiomeFix"
+		},
+		{
+			"forge": "NAME",
+			"fabric": "NAME"
+		},
+		{
+			"forge": "NAME",
+			"fabric": "NAME"
+		},
+		{
+			"forge": "WAS_PREVIOUSLY_INCREASED_KEY",
+			"fabric": "HAS_INCREASED_HEIGHT_ALREADY_KEY"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fillWithAir(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateLayers(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fillWithAir(com.mojang.serialization.Dynamic<?> arg0)"
+		}
+	]
+}

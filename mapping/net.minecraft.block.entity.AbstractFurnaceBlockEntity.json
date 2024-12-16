@@ -1,0 +1,229 @@
+{
+	"title": "net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity",
+			"fabric": "net.minecraft.block.entity.AbstractFurnaceBlockEntity"
+		},
+		{
+			"forge": "SLOT_INPUT",
+			"fabric": "INPUT_SLOT_INDEX"
+		},
+		{
+			"forge": "SLOT_INPUT",
+			"fabric": "INPUT_SLOT_INDEX"
+		},
+		{
+			"forge": "SLOT_FUEL",
+			"fabric": "FUEL_SLOT_INDEX"
+		},
+		{
+			"forge": "SLOT_RESULT",
+			"fabric": "OUTPUT_SLOT_INDEX"
+		},
+		{
+			"forge": "DATA_LIT_TIME",
+			"fabric": "BURN_TIME_PROPERTY_INDEX"
+		},
+		{
+			"forge": "SLOTS_FOR_UP",
+			"fabric": "TOP_SLOTS"
+		},
+		{
+			"forge": "SLOTS_FOR_DOWN",
+			"fabric": "BOTTOM_SLOTS"
+		},
+		{
+			"forge": "SLOTS_FOR_SIDES",
+			"fabric": "SIDE_SLOTS"
+		},
+		{
+			"forge": "DATA_LIT_DURATION",
+			"fabric": "FUEL_TIME_PROPERTY_INDEX"
+		},
+		{
+			"forge": "DATA_COOKING_PROGRESS",
+			"fabric": "COOK_TIME_PROPERTY_INDEX"
+		},
+		{
+			"forge": "DATA_COOKING_TOTAL_TIME",
+			"fabric": "COOK_TIME_TOTAL_PROPERTY_INDEX"
+		},
+		{
+			"forge": "NUM_DATA_VALUES",
+			"fabric": "PROPERTY_COUNT"
+		},
+		{
+			"forge": "BURN_TIME_STANDARD",
+			"fabric": "DEFAULT_COOK_TIME"
+		},
+		{
+			"forge": "BURN_COOL_SPEED",
+			"fabric": "field_31295"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "litTime",
+			"fabric": "burnTime"
+		},
+		{
+			"forge": "litDuration",
+			"fabric": "fuelTime"
+		},
+		{
+			"forge": "cookingProgress",
+			"fabric": "cookTime"
+		},
+		{
+			"forge": "cookingTotalTime",
+			"fabric": "cookTimeTotal"
+		},
+		{
+			"forge": "dataAccess",
+			"fabric": "propertyDelegate"
+		},
+		{
+			"forge": "recipesUsed",
+			"fabric": "recipesUsed"
+		},
+		{
+			"forge": "quickCheck",
+			"fabric": "matchGetter"
+		},
+		{
+			"forge": "getFuel()",
+			"fabric": "createFuelTimeMap()"
+		},
+		{
+			"forge": "getFuel()",
+			"fabric": "createFuelTimeMap()"
+		},
+		{
+			"forge": "isNeverAFurnaceFuel(Item arg0)",
+			"fabric": "isNonFlammableWood(Item item)"
+		},
+		{
+			"forge": "add(Map<Item, Integer> arg0, TagKey<Item> arg1, int arg2)",
+			"fabric": "addFuel(Map<Item, Integer> fuelTimes, TagKey<Item> tag, int fuelTime)"
+		},
+		{
+			"forge": "add(Map<Item, Integer> arg0, ItemLike arg1, int arg2)",
+			"fabric": "addFuel(Map<Item, Integer> fuelTimes, ItemConvertible item, int fuelTime)"
+		},
+		{
+			"forge": "isLit()",
+			"fabric": "isBurning()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "serverTick(Level arg0, BlockPos arg1, BlockState arg2, AbstractFurnaceBlockEntity arg3)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, AbstractFurnaceBlockEntity blockEntity)"
+		},
+		{
+			"forge": "canBurn(RegistryAccess arg0, Recipe<?> arg1, NonNullList<ItemStack> arg2, int arg3)",
+			"fabric": "canAcceptRecipeOutput(DynamicRegistryManager registryManager, Recipe<?> recipe, DefaultedList<ItemStack> slots, int count)"
+		},
+		{
+			"forge": "burn(RegistryAccess arg0, Recipe<?> arg1, NonNullList<ItemStack> arg2, int arg3)",
+			"fabric": "craftRecipe(DynamicRegistryManager registryManager, Recipe<?> recipe, DefaultedList<ItemStack> slots, int count)"
+		},
+		{
+			"forge": "getBurnDuration(ItemStack arg0)",
+			"fabric": "getFuelTime(ItemStack fuel)"
+		},
+		{
+			"forge": "getTotalCookTime(Level arg0, AbstractFurnaceBlockEntity arg1)",
+			"fabric": "getCookTime(World world, AbstractFurnaceBlockEntity furnace)"
+		},
+		{
+			"forge": "isFuel(ItemStack arg0)",
+			"fabric": "canUseAsFuel(ItemStack stack)"
+		},
+		{
+			"forge": "getSlotsForFace(Direction arg0)",
+			"fabric": "getAvailableSlots(Direction arg0)"
+		},
+		{
+			"forge": "canPlaceItemThroughFace(int arg0, ItemStack arg1, Direction arg2)",
+			"fabric": "canInsert(int arg0, ItemStack arg1, Direction arg2)"
+		},
+		{
+			"forge": "canTakeItemThroughFace(int arg0, ItemStack arg1, Direction arg2)",
+			"fabric": "canExtract(int arg0, ItemStack arg1, Direction arg2)"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "canPlaceItem(int arg0, ItemStack arg1)",
+			"fabric": "isValid(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "setRecipeUsed(Recipe<?> arg0)",
+			"fabric": "setLastRecipe(Recipe<?> arg0)"
+		},
+		{
+			"forge": "getRecipeUsed()",
+			"fabric": "getLastRecipe()"
+		},
+		{
+			"forge": "awardUsedRecipes(Player arg0, List<ItemStack> arg1)",
+			"fabric": "unlockLastRecipe(PlayerEntity arg0, List<ItemStack> arg1)"
+		},
+		{
+			"forge": "awardUsedRecipesAndPopExperience(ServerPlayer arg0)",
+			"fabric": "dropExperienceForRecipesUsed(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "getRecipesToAwardAndPopExperience(ServerLevel arg0, Vec3 arg1)",
+			"fabric": "getRecipesUsedAndDropExperience(ServerWorld world, Vec3d pos)"
+		},
+		{
+			"forge": "createExperience(ServerLevel arg0, Vec3 arg1, int arg2, float arg3)",
+			"fabric": "dropExperience(ServerWorld world, Vec3d pos, int multiplier, float experience)"
+		},
+		{
+			"forge": "fillStackedContents(StackedContents arg0)",
+			"fabric": "provideRecipeInputs(RecipeMatcher arg0)"
+		}
+	]
+}

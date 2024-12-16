@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.network.protocol.BundlerInfo$1",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.BundlerInfo$1",
+			"fabric": "net.minecraft.network.PacketBundleHandler$1"
+		},
+		{
+			"forge": "unbundlePacket(Packet<?> arg0, Consumer<Packet<?>> arg1)",
+			"fabric": "forEachPacket(Packet<?> arg0, Consumer<Packet<?>> arg1)"
+		},
+		{
+			"forge": "unbundlePacket(Packet<?> arg0, Consumer<Packet<?>> arg1)",
+			"fabric": "forEachPacket(Packet<?> arg0, Consumer<Packet<?>> arg1)"
+		},
+		{
+			"forge": "startPacketBundling(Packet<?> arg0)",
+			"fabric": "createBundler(Packet<?> arg0)"
+		}
+	]
+}

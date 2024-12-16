@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientAdvancements$Listener",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientAdvancements$Listener",
+			"fabric": "net.minecraft.client.network.ClientAdvancementManager$Listener"
+		},
+		{
+			"forge": "onUpdateAdvancementProgress(Advancement arg0, AdvancementProgress arg1)",
+			"fabric": "setProgress(Advancement advancement, AdvancementProgress progress)"
+		},
+		{
+			"forge": "onUpdateAdvancementProgress(Advancement arg0, AdvancementProgress arg1)",
+			"fabric": "setProgress(Advancement advancement, AdvancementProgress progress)"
+		},
+		{
+			"forge": "onSelectedTabChanged(Advancement arg0)",
+			"fabric": "selectTab(Advancement advancement)"
+		}
+	]
+}

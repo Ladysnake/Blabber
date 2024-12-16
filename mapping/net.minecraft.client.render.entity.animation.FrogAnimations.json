@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.animation.definitions.FrogAnimation",
+	"items": [
+		{
+			"forge": "net.minecraft.client.animation.definitions.FrogAnimation",
+			"fabric": "net.minecraft.client.render.entity.animation.FrogAnimations"
+		},
+		{
+			"forge": "FROG_CROAK",
+			"fabric": "CROAKING"
+		},
+		{
+			"forge": "FROG_CROAK",
+			"fabric": "CROAKING"
+		},
+		{
+			"forge": "FROG_WALK",
+			"fabric": "WALKING"
+		},
+		{
+			"forge": "FROG_JUMP",
+			"fabric": "LONG_JUMPING"
+		},
+		{
+			"forge": "FROG_TONGUE",
+			"fabric": "USING_TONGUE"
+		},
+		{
+			"forge": "FROG_SWIM",
+			"fabric": "SWIMMING"
+		},
+		{
+			"forge": "FROG_IDLE_WATER",
+			"fabric": "IDLING_IN_WATER"
+		}
+	]
+}

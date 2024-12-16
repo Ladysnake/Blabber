@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.TreeFeature$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.TreeFeature$1",
+			"fabric": "net.minecraft.world.gen.feature.TreeFeature$1"
+		},
+		{
+			"forge": "set(BlockPos arg0, BlockState arg1)",
+			"fabric": "placeBlock(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "set(BlockPos arg0, BlockState arg1)",
+			"fabric": "placeBlock(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "isSet(BlockPos arg0)",
+			"fabric": "hasPlacedBlock(BlockPos arg0)"
+		}
+	]
+}

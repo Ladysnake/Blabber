@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.players.OldUsersConverter$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.OldUsersConverter$1",
+			"fabric": "net.minecraft.server.ServerConfigHandler$1"
+		},
+		{
+			"forge": "onProfileLookupSucceeded(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "onProfileLookupSucceeded(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "onProfileLookupSucceeded(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "onProfileLookupSucceeded(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "onProfileLookupFailed(com.mojang.authlib.GameProfile arg0, Exception arg1)",
+			"fabric": "onProfileLookupFailed(com.mojang.authlib.GameProfile profile, Exception exception)"
+		}
+	]
+}

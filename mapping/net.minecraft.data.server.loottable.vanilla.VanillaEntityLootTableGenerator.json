@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.data.loot.packs.VanillaEntityLoot",
+	"items": [
+		{
+			"forge": "net.minecraft.data.loot.packs.VanillaEntityLoot",
+			"fabric": "net.minecraft.data.server.loottable.vanilla.VanillaEntityLootTableGenerator"
+		},
+		{
+			"forge": "generate()",
+			"fabric": "generate()"
+		},
+		{
+			"forge": "generate()",
+			"fabric": "generate()"
+		},
+		{
+			"forge": "elderGuardianLootTable()",
+			"fabric": "createElderGuardianTableBuilder()"
+		}
+	]
+}

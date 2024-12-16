@@ -1,0 +1,53 @@
+{
+	"title": "com.mojang.realmsclient.util.task.GetServerDetailsTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.GetServerDetailsTask",
+			"fabric": "net.minecraft.client.realms.task.RealmsGetServerDetailsTask"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "lastScreen"
+		},
+		{
+			"forge": "mainScreen",
+			"fabric": "mainScreen"
+		},
+		{
+			"forge": "connectLock",
+			"fabric": "connectLock"
+		},
+		{
+			"forge": "run()",
+			"fabric": "join()"
+		},
+		{
+			"forge": "fetchServerAddress()",
+			"fabric": "join()"
+		},
+		{
+			"forge": "connectScreen(RealmsServerAddress arg0)",
+			"fabric": "createConnectingScreen(RealmsServerAddress address)"
+		},
+		{
+			"forge": "resourcePackDownloadConfirmationScreen(RealmsServerAddress arg0, Function<RealmsServerAddress, Screen> arg1)",
+			"fabric": "createResourcePackConfirmationScreen(RealmsServerAddress address, Function<RealmsServerAddress, Screen> connectingScreenCreator)"
+		},
+		{
+			"forge": "scheduleResourcePackDownload(RealmsServerAddress arg0)",
+			"fabric": "downloadResourcePack(RealmsServerAddress address)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.commands.arguments.ScoreHolderArgument$Info",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.ScoreHolderArgument$Info",
+			"fabric": "net.minecraft.command.argument.ScoreHolderArgumentType$Serializer"
+		},
+		{
+			"forge": "FLAG_MULTIPLE",
+			"fabric": "MULTIPLE_FLAG"
+		},
+		{
+			"forge": "FLAG_MULTIPLE",
+			"fabric": "MULTIPLE_FLAG"
+		},
+		{
+			"forge": "serializeToNetwork(ScoreHolderArgument$Info$Template arg0, FriendlyByteBuf arg1)",
+			"fabric": "writePacket(ScoreHolderArgumentType$Serializer$Properties arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "serializeToNetwork(ScoreHolderArgument$Info$Template arg0, FriendlyByteBuf arg1)",
+			"fabric": "writePacket(ScoreHolderArgumentType$Serializer$Properties arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "deserializeFromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "serializeToJson(ScoreHolderArgument$Info$Template arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "writeJson(ScoreHolderArgumentType$Serializer$Properties arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "unpack(ScoreHolderArgument arg0)",
+			"fabric": "getArgumentTypeProperties(ScoreHolderArgumentType arg0)"
+		}
+	]
+}

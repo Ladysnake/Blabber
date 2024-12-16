@@ -1,0 +1,201 @@
+{
+	"title": "net.minecraft.world.item.alchemy.Potions",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.alchemy.Potions",
+			"fabric": "net.minecraft.potion.Potions"
+		},
+		{
+			"forge": "EMPTY_ID",
+			"fabric": "EMPTY_KEY"
+		},
+		{
+			"forge": "EMPTY_ID",
+			"fabric": "EMPTY_KEY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "WATER",
+			"fabric": "WATER"
+		},
+		{
+			"forge": "MUNDANE",
+			"fabric": "MUNDANE"
+		},
+		{
+			"forge": "THICK",
+			"fabric": "THICK"
+		},
+		{
+			"forge": "AWKWARD",
+			"fabric": "AWKWARD"
+		},
+		{
+			"forge": "NIGHT_VISION",
+			"fabric": "NIGHT_VISION"
+		},
+		{
+			"forge": "LONG_NIGHT_VISION",
+			"fabric": "LONG_NIGHT_VISION"
+		},
+		{
+			"forge": "INVISIBILITY",
+			"fabric": "INVISIBILITY"
+		},
+		{
+			"forge": "LONG_INVISIBILITY",
+			"fabric": "LONG_INVISIBILITY"
+		},
+		{
+			"forge": "LEAPING",
+			"fabric": "LEAPING"
+		},
+		{
+			"forge": "LONG_LEAPING",
+			"fabric": "LONG_LEAPING"
+		},
+		{
+			"forge": "STRONG_LEAPING",
+			"fabric": "STRONG_LEAPING"
+		},
+		{
+			"forge": "FIRE_RESISTANCE",
+			"fabric": "FIRE_RESISTANCE"
+		},
+		{
+			"forge": "LONG_FIRE_RESISTANCE",
+			"fabric": "LONG_FIRE_RESISTANCE"
+		},
+		{
+			"forge": "SWIFTNESS",
+			"fabric": "SWIFTNESS"
+		},
+		{
+			"forge": "LONG_SWIFTNESS",
+			"fabric": "LONG_SWIFTNESS"
+		},
+		{
+			"forge": "STRONG_SWIFTNESS",
+			"fabric": "STRONG_SWIFTNESS"
+		},
+		{
+			"forge": "SLOWNESS",
+			"fabric": "SLOWNESS"
+		},
+		{
+			"forge": "LONG_SLOWNESS",
+			"fabric": "LONG_SLOWNESS"
+		},
+		{
+			"forge": "STRONG_SLOWNESS",
+			"fabric": "STRONG_SLOWNESS"
+		},
+		{
+			"forge": "TURTLE_MASTER",
+			"fabric": "TURTLE_MASTER"
+		},
+		{
+			"forge": "LONG_TURTLE_MASTER",
+			"fabric": "LONG_TURTLE_MASTER"
+		},
+		{
+			"forge": "STRONG_TURTLE_MASTER",
+			"fabric": "STRONG_TURTLE_MASTER"
+		},
+		{
+			"forge": "WATER_BREATHING",
+			"fabric": "WATER_BREATHING"
+		},
+		{
+			"forge": "LONG_WATER_BREATHING",
+			"fabric": "LONG_WATER_BREATHING"
+		},
+		{
+			"forge": "HEALING",
+			"fabric": "HEALING"
+		},
+		{
+			"forge": "STRONG_HEALING",
+			"fabric": "STRONG_HEALING"
+		},
+		{
+			"forge": "HARMING",
+			"fabric": "HARMING"
+		},
+		{
+			"forge": "STRONG_HARMING",
+			"fabric": "STRONG_HARMING"
+		},
+		{
+			"forge": "POISON",
+			"fabric": "POISON"
+		},
+		{
+			"forge": "LONG_POISON",
+			"fabric": "LONG_POISON"
+		},
+		{
+			"forge": "STRONG_POISON",
+			"fabric": "STRONG_POISON"
+		},
+		{
+			"forge": "REGENERATION",
+			"fabric": "REGENERATION"
+		},
+		{
+			"forge": "LONG_REGENERATION",
+			"fabric": "LONG_REGENERATION"
+		},
+		{
+			"forge": "STRONG_REGENERATION",
+			"fabric": "STRONG_REGENERATION"
+		},
+		{
+			"forge": "STRENGTH",
+			"fabric": "STRENGTH"
+		},
+		{
+			"forge": "LONG_STRENGTH",
+			"fabric": "LONG_STRENGTH"
+		},
+		{
+			"forge": "STRONG_STRENGTH",
+			"fabric": "STRONG_STRENGTH"
+		},
+		{
+			"forge": "WEAKNESS",
+			"fabric": "WEAKNESS"
+		},
+		{
+			"forge": "LONG_WEAKNESS",
+			"fabric": "LONG_WEAKNESS"
+		},
+		{
+			"forge": "LUCK",
+			"fabric": "LUCK"
+		},
+		{
+			"forge": "SLOW_FALLING",
+			"fabric": "SLOW_FALLING"
+		},
+		{
+			"forge": "LONG_SLOW_FALLING",
+			"fabric": "LONG_SLOW_FALLING"
+		},
+		{
+			"forge": "register(String arg0, Potion arg1)",
+			"fabric": "register(String name, Potion potion)"
+		},
+		{
+			"forge": "register(String arg0, Potion arg1)",
+			"fabric": "register(String name, Potion potion)"
+		},
+		{
+			"forge": "register(ResourceKey<Potion> arg0, Potion arg1)",
+			"fabric": "register(RegistryKey<Potion> key, Potion potion)"
+		}
+	]
+}

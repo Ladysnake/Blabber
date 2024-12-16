@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.CatSitOnBlockGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.CatSitOnBlockGoal",
+			"fabric": "net.minecraft.entity.ai.goal.CatSitOnBlockGoal"
+		},
+		{
+			"forge": "cat",
+			"fabric": "cat"
+		},
+		{
+			"forge": "cat",
+			"fabric": "cat"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isValidTarget(LevelReader arg0, BlockPos arg1)",
+			"fabric": "isTargetPos(WorldView arg0, BlockPos arg1)"
+		}
+	]
+}

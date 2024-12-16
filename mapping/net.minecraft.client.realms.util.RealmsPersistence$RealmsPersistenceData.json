@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.util.RealmsPersistence$RealmsPersistenceData",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.RealmsPersistence$RealmsPersistenceData",
+			"fabric": "net.minecraft.client.realms.util.RealmsPersistence$RealmsPersistenceData"
+		},
+		{
+			"forge": "newsLink",
+			"fabric": "newsLink"
+		},
+		{
+			"forge": "newsLink",
+			"fabric": "newsLink"
+		},
+		{
+			"forge": "hasUnreadNews",
+			"fabric": "hasUnreadNews"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix$Direction",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix$Direction",
+			"fabric": "net.minecraft.datafixer.fix.ChunkPalettedStorageFix$Facing"
+		},
+		{
+			"forge": "DOWN",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "DOWN",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "UP",
+			"fabric": "UP"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "axis",
+			"fabric": "axis"
+		},
+		{
+			"forge": "axis",
+			"fabric": "axis"
+		},
+		{
+			"forge": "axisDirection",
+			"fabric": "direction"
+		},
+		{
+			"forge": "getAxisDirection()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "getAxisDirection()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "getAxis()",
+			"fabric": "getAxis()"
+		}
+	]
+}

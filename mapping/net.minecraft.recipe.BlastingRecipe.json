@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.crafting.BlastingRecipe",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.BlastingRecipe",
+			"fabric": "net.minecraft.recipe.BlastingRecipe"
+		},
+		{
+			"forge": "getToastSymbol()",
+			"fabric": "createIcon()"
+		},
+		{
+			"forge": "getToastSymbol()",
+			"fabric": "createIcon()"
+		},
+		{
+			"forge": "getSerializer()",
+			"fabric": "getSerializer()"
+		}
+	]
+}

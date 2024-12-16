@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.gametest.framework.GameTestEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.GameTestEvent",
+			"fabric": "net.minecraft.test.TimedTask"
+		},
+		{
+			"forge": "expectedDelay",
+			"fabric": "duration"
+		},
+		{
+			"forge": "expectedDelay",
+			"fabric": "duration"
+		},
+		{
+			"forge": "assertion",
+			"fabric": "task"
+		},
+		{
+			"forge": "create(Runnable arg0)",
+			"fabric": "create(Runnable task)"
+		},
+		{
+			"forge": "create(Runnable arg0)",
+			"fabric": "create(Runnable task)"
+		},
+		{
+			"forge": "create(long arg0, Runnable arg1)",
+			"fabric": "create(long duration, Runnable task)"
+		}
+	]
+}

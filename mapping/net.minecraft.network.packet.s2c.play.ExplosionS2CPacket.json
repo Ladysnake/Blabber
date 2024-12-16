@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundExplodePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundExplodePacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.ExplosionS2CPacket"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "power",
+			"fabric": "radius"
+		},
+		{
+			"forge": "toBlow",
+			"fabric": "affectedBlocks"
+		},
+		{
+			"forge": "knockbackX",
+			"fabric": "playerVelocityX"
+		},
+		{
+			"forge": "knockbackY",
+			"fabric": "playerVelocityY"
+		},
+		{
+			"forge": "knockbackZ",
+			"fabric": "playerVelocityZ"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getKnockbackX()",
+			"fabric": "getPlayerVelocityX()"
+		},
+		{
+			"forge": "getKnockbackY()",
+			"fabric": "getPlayerVelocityY()"
+		},
+		{
+			"forge": "getKnockbackZ()",
+			"fabric": "getPlayerVelocityZ()"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "getZ()",
+			"fabric": "getZ()"
+		},
+		{
+			"forge": "getPower()",
+			"fabric": "getRadius()"
+		},
+		{
+			"forge": "getToBlow()",
+			"fabric": "getAffectedBlocks()"
+		}
+	]
+}

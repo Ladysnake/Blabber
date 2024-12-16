@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.particle.CampfireSmokeParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.CampfireSmokeParticle",
+			"fabric": "net.minecraft.client.particle.CampfireSmokeParticle"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		}
+	]
+}

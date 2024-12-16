@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.tags.EntityTypeTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.EntityTypeTags",
+			"fabric": "net.minecraft.registry.tag.EntityTypeTags"
+		},
+		{
+			"forge": "SKELETONS",
+			"fabric": "SKELETONS"
+		},
+		{
+			"forge": "SKELETONS",
+			"fabric": "SKELETONS"
+		},
+		{
+			"forge": "RAIDERS",
+			"fabric": "RAIDERS"
+		},
+		{
+			"forge": "BEEHIVE_INHABITORS",
+			"fabric": "BEEHIVE_INHABITORS"
+		},
+		{
+			"forge": "ARROWS",
+			"fabric": "ARROWS"
+		},
+		{
+			"forge": "IMPACT_PROJECTILES",
+			"fabric": "IMPACT_PROJECTILES"
+		},
+		{
+			"forge": "POWDER_SNOW_WALKABLE_MOBS",
+			"fabric": "POWDER_SNOW_WALKABLE_MOBS"
+		},
+		{
+			"forge": "AXOLOTL_ALWAYS_HOSTILES",
+			"fabric": "AXOLOTL_ALWAYS_HOSTILES"
+		},
+		{
+			"forge": "AXOLOTL_HUNT_TARGETS",
+			"fabric": "AXOLOTL_HUNT_TARGETS"
+		},
+		{
+			"forge": "FREEZE_IMMUNE_ENTITY_TYPES",
+			"fabric": "FREEZE_IMMUNE_ENTITY_TYPES"
+		},
+		{
+			"forge": "FREEZE_HURTS_EXTRA_TYPES",
+			"fabric": "FREEZE_HURTS_EXTRA_TYPES"
+		},
+		{
+			"forge": "FROG_FOOD",
+			"fabric": "FROG_FOOD"
+		},
+		{
+			"forge": "FALL_DAMAGE_IMMUNE",
+			"fabric": "FALL_DAMAGE_IMMUNE"
+		},
+		{
+			"forge": "DISMOUNTS_UNDERWATER",
+			"fabric": "DISMOUNTS_UNDERWATER"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.core.BlockPos$2",
+	"items": [
+		{
+			"forge": "net.minecraft.core.BlockPos$2",
+			"fabric": "net.minecraft.util.math.BlockPos$2"
+		},
+		{
+			"forge": "cursor",
+			"fabric": "pos"
+		},
+		{
+			"forge": "cursor",
+			"fabric": "pos"
+		},
+		{
+			"forge": "currentDepth",
+			"fabric": "manhattanDistance"
+		},
+		{
+			"forge": "maxX",
+			"fabric": "limitX"
+		},
+		{
+			"forge": "maxY",
+			"fabric": "limitY"
+		},
+		{
+			"forge": "x",
+			"fabric": "dx"
+		},
+		{
+			"forge": "y",
+			"fabric": "dy"
+		},
+		{
+			"forge": "zMirror",
+			"fabric": "swapZ"
+		},
+		{
+			"forge": "computeNext()",
+			"fabric": "computeNext()"
+		},
+		{
+			"forge": "computeNext()",
+			"fabric": "computeNext()"
+		}
+	]
+}

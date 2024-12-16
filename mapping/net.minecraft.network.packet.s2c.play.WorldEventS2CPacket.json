@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundLevelEventPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundLevelEventPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.WorldEventS2CPacket"
+		},
+		{
+			"forge": "type",
+			"fabric": "eventId"
+		},
+		{
+			"forge": "type",
+			"fabric": "eventId"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "globalEvent",
+			"fabric": "global"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "isGlobalEvent()",
+			"fabric": "isGlobal()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getEventId()"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.PumpkinBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.PumpkinBlock",
+			"fabric": "net.minecraft.block.PumpkinBlock"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "getStem()",
+			"fabric": "getStem()"
+		},
+		{
+			"forge": "getAttachedStem()",
+			"fabric": "getAttachedStem()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.WorldDimensions$1Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.WorldDimensions$1Entry",
+			"fabric": "net.minecraft.world.dimension.DimensionOptionsRegistryHolder$Entry"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "lifecycle()",
+			"fabric": "getLifecycle()"
+		},
+		{
+			"forge": "lifecycle()",
+			"fabric": "getLifecycle()"
+		},
+		{
+			"forge": "key()",
+			"fabric": "key()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		}
+	]
+}

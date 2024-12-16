@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.TraderLlama",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.TraderLlama",
+			"fabric": "net.minecraft.entity.passive.TraderLlamaEntity"
+		},
+		{
+			"forge": "despawnDelay",
+			"fabric": "despawnDelay"
+		},
+		{
+			"forge": "despawnDelay",
+			"fabric": "despawnDelay"
+		},
+		{
+			"forge": "isTraderLlama()",
+			"fabric": "isTrader()"
+		},
+		{
+			"forge": "isTraderLlama()",
+			"fabric": "isTrader()"
+		},
+		{
+			"forge": "makeNewLlama()",
+			"fabric": "createChild()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "setDespawnDelay(int arg0)",
+			"fabric": "setDespawnDelay(int despawnDelay)"
+		},
+		{
+			"forge": "doPlayerRide(Player arg0)",
+			"fabric": "putPlayerOnBack(PlayerEntity arg0)"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "maybeDespawn()",
+			"fabric": "tryDespawn()"
+		},
+		{
+			"forge": "canDespawn()",
+			"fabric": "canDespawn()"
+		},
+		{
+			"forge": "isLeashedToWanderingTrader()",
+			"fabric": "heldByTrader()"
+		},
+		{
+			"forge": "isLeashedToSomethingOtherThanTheWanderingTrader()",
+			"fabric": "leashedByPlayer()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		}
+	]
+}

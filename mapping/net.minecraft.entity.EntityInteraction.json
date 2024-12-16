@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.village.ReputationEventType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.village.ReputationEventType",
+			"fabric": "net.minecraft.entity.EntityInteraction"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER_CURED",
+			"fabric": "ZOMBIE_VILLAGER_CURED"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER_CURED",
+			"fabric": "ZOMBIE_VILLAGER_CURED"
+		},
+		{
+			"forge": "GOLEM_KILLED",
+			"fabric": "GOLEM_KILLED"
+		},
+		{
+			"forge": "VILLAGER_HURT",
+			"fabric": "VILLAGER_HURT"
+		},
+		{
+			"forge": "VILLAGER_KILLED",
+			"fabric": "VILLAGER_KILLED"
+		},
+		{
+			"forge": "TRADE",
+			"fabric": "TRADE"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "create(String key)"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "create(String key)"
+		}
+	]
+}

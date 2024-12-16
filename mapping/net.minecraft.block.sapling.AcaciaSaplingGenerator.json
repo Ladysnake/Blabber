@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.grower.AcaciaTreeGrower",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.grower.AcaciaTreeGrower",
+			"fabric": "net.minecraft.block.sapling.AcaciaSaplingGenerator"
+		},
+		{
+			"forge": "getConfiguredFeature(RandomSource arg0, boolean arg1)",
+			"fabric": "getTreeFeature(Random arg0, boolean arg1)"
+		},
+		{
+			"forge": "getConfiguredFeature(RandomSource arg0, boolean arg1)",
+			"fabric": "getTreeFeature(Random arg0, boolean arg1)"
+		}
+	]
+}

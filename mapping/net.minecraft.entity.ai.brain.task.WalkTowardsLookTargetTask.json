@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.StayCloseToTarget",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.StayCloseToTarget",
+			"fabric": "net.minecraft.entity.ai.brain.task.WalkTowardsLookTargetTask"
+		},
+		{
+			"forge": "create(Function<LivingEntity, Optional<PositionTracker>> arg0, Predicate<LivingEntity> arg1, int arg2, int arg3, float arg4)",
+			"fabric": "create(Function<LivingEntity, Optional<LookTarget>> lookTargetFunction, Predicate<LivingEntity> predicate, int completionRange, int searchRange, float speed)"
+		},
+		{
+			"forge": "create(Function<LivingEntity, Optional<PositionTracker>> arg0, Predicate<LivingEntity> arg1, int arg2, int arg3, float arg4)",
+			"fabric": "create(Function<LivingEntity, Optional<LookTarget>> lookTargetFunction, Predicate<LivingEntity> predicate, int completionRange, int searchRange, float speed)"
+		}
+	]
+}

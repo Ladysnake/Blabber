@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.data.models.blockstates.Condition$CompositeCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.blockstates.Condition$CompositeCondition",
+			"fabric": "net.minecraft.data.client.When$LogicalCondition"
+		},
+		{
+			"forge": "operation",
+			"fabric": "operator"
+		},
+		{
+			"forge": "operation",
+			"fabric": "operator"
+		},
+		{
+			"forge": "subconditions",
+			"fabric": "components"
+		},
+		{
+			"forge": "validate(StateDefinition<?, ?> arg0)",
+			"fabric": "validate(StateManager<?, ?> arg0)"
+		},
+		{
+			"forge": "validate(StateDefinition<?, ?> arg0)",
+			"fabric": "validate(StateManager<?, ?> arg0)"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		}
+	]
+}

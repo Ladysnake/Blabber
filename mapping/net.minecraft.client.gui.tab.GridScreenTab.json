@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.components.tabs.GridLayoutTab",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.tabs.GridLayoutTab",
+			"fabric": "net.minecraft.client.gui.tab.GridScreenTab"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "layout",
+			"fabric": "grid"
+		},
+		{
+			"forge": "getTabTitle()",
+			"fabric": "getTitle()"
+		},
+		{
+			"forge": "getTabTitle()",
+			"fabric": "getTitle()"
+		},
+		{
+			"forge": "visitChildren(Consumer<AbstractWidget> arg0)",
+			"fabric": "forEachChild(Consumer<ClickableWidget> arg0)"
+		},
+		{
+			"forge": "doLayout(ScreenRectangle arg0)",
+			"fabric": "refreshGrid(ScreenRect arg0)"
+		}
+	]
+}

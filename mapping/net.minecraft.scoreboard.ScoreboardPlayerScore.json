@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.scores.Score",
+	"items": [
+		{
+			"forge": "net.minecraft.world.scores.Score",
+			"fabric": "net.minecraft.scoreboard.ScoreboardPlayerScore"
+		},
+		{
+			"forge": "SCORE_COMPARATOR",
+			"fabric": "COMPARATOR"
+		},
+		{
+			"forge": "SCORE_COMPARATOR",
+			"fabric": "COMPARATOR"
+		},
+		{
+			"forge": "scoreboard",
+			"fabric": "scoreboard"
+		},
+		{
+			"forge": "objective",
+			"fabric": "objective"
+		},
+		{
+			"forge": "owner",
+			"fabric": "playerName"
+		},
+		{
+			"forge": "count",
+			"fabric": "score"
+		},
+		{
+			"forge": "locked",
+			"fabric": "locked"
+		},
+		{
+			"forge": "forceUpdate",
+			"fabric": "forceUpdate"
+		},
+		{
+			"forge": "add(int arg0)",
+			"fabric": "incrementScore(int amount)"
+		},
+		{
+			"forge": "add(int arg0)",
+			"fabric": "incrementScore(int amount)"
+		},
+		{
+			"forge": "increment()",
+			"fabric": "incrementScore()"
+		},
+		{
+			"forge": "getScore()",
+			"fabric": "getScore()"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "clearScore()"
+		},
+		{
+			"forge": "setScore(int arg0)",
+			"fabric": "setScore(int score)"
+		},
+		{
+			"forge": "getObjective()",
+			"fabric": "getObjective()"
+		},
+		{
+			"forge": "getOwner()",
+			"fabric": "getPlayerName()"
+		},
+		{
+			"forge": "getScoreboard()",
+			"fabric": "getScoreboard()"
+		},
+		{
+			"forge": "isLocked()",
+			"fabric": "isLocked()"
+		},
+		{
+			"forge": "setLocked(boolean arg0)",
+			"fabric": "setLocked(boolean locked)"
+		}
+	]
+}

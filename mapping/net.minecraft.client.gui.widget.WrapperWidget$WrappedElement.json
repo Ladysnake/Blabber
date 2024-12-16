@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.layouts.AbstractLayout$AbstractChildWrapper",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.layouts.AbstractLayout$AbstractChildWrapper",
+			"fabric": "net.minecraft.client.gui.widget.WrapperWidget$WrappedElement"
+		},
+		{
+			"forge": "child",
+			"fabric": "widget"
+		},
+		{
+			"forge": "child",
+			"fabric": "widget"
+		},
+		{
+			"forge": "layoutSettings",
+			"fabric": "positioner"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "setX(int arg0, int arg1)",
+			"fabric": "setX(int left, int right)"
+		},
+		{
+			"forge": "setY(int arg0, int arg1)",
+			"fabric": "setY(int top, int bottom)"
+		}
+	]
+}

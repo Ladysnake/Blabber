@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
+			"fabric": "net.minecraft.world.gen.feature.DesertWellFeature"
+		},
+		{
+			"forge": "IS_SAND",
+			"fabric": "CAN_GENERATE"
+		},
+		{
+			"forge": "IS_SAND",
+			"fabric": "CAN_GENERATE"
+		},
+		{
+			"forge": "sand",
+			"fabric": "sand"
+		},
+		{
+			"forge": "sandSlab",
+			"fabric": "slab"
+		},
+		{
+			"forge": "sandstone",
+			"fabric": "wall"
+		},
+		{
+			"forge": "water",
+			"fabric": "fluidInside"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "placeSusSand(WorldGenLevel arg0, BlockPos arg1)",
+			"fabric": "generateSuspiciousSand(StructureWorldAccess world, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.TerrainAdjustment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.TerrainAdjustment",
+			"fabric": "net.minecraft.world.gen.StructureTerrainAdaptation"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "BURY",
+			"fabric": "BURY"
+		},
+		{
+			"forge": "BEARD_THIN",
+			"fabric": "BEARD_THIN"
+		},
+		{
+			"forge": "BEARD_BOX",
+			"fabric": "BEARD_BOX"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.warden.Sniffing",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.warden.Sniffing",
+			"fabric": "net.minecraft.entity.ai.brain.task.SniffTask"
+		},
+		{
+			"forge": "ANGER_FROM_SNIFFING_MAX_DISTANCE_XZ",
+			"fabric": "HORIZONTAL_RADIUS"
+		},
+		{
+			"forge": "ANGER_FROM_SNIFFING_MAX_DISTANCE_XZ",
+			"fabric": "HORIZONTAL_RADIUS"
+		},
+		{
+			"forge": "ANGER_FROM_SNIFFING_MAX_DISTANCE_Y",
+			"fabric": "VERTICAL_RADIUS"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, E arg1, long arg2)"
+		}
+	]
+}

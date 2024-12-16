@@ -1,0 +1,153 @@
+{
+	"title": "net.minecraft.client.MouseHandler",
+	"items": [
+		{
+			"forge": "net.minecraft.client.MouseHandler",
+			"fabric": "net.minecraft.client.Mouse"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "isLeftPressed",
+			"fabric": "leftButtonClicked"
+		},
+		{
+			"forge": "isMiddlePressed",
+			"fabric": "middleButtonClicked"
+		},
+		{
+			"forge": "isRightPressed",
+			"fabric": "rightButtonClicked"
+		},
+		{
+			"forge": "xpos",
+			"fabric": "x"
+		},
+		{
+			"forge": "ypos",
+			"fabric": "y"
+		},
+		{
+			"forge": "fakeRightMouse",
+			"fabric": "controlLeftTicks"
+		},
+		{
+			"forge": "activeButton",
+			"fabric": "activeButton"
+		},
+		{
+			"forge": "ignoreFirstMove",
+			"fabric": "hasResolutionChanged"
+		},
+		{
+			"forge": "clickDepth",
+			"fabric": "field_1796"
+		},
+		{
+			"forge": "mousePressedTime",
+			"fabric": "glfwTime"
+		},
+		{
+			"forge": "smoothTurnX",
+			"fabric": "cursorXSmoother"
+		},
+		{
+			"forge": "smoothTurnY",
+			"fabric": "cursorYSmoother"
+		},
+		{
+			"forge": "accumulatedDX",
+			"fabric": "cursorDeltaX"
+		},
+		{
+			"forge": "accumulatedDY",
+			"fabric": "cursorDeltaY"
+		},
+		{
+			"forge": "accumulatedScroll",
+			"fabric": "eventDeltaWheel"
+		},
+		{
+			"forge": "lastMouseEventTime",
+			"fabric": "lastMouseUpdateTime"
+		},
+		{
+			"forge": "mouseGrabbed",
+			"fabric": "cursorLocked"
+		},
+		{
+			"forge": "onPress(long arg0, int arg1, int arg2, int arg3)",
+			"fabric": "onMouseButton(long window, int button, int action, int mods)"
+		},
+		{
+			"forge": "onPress(long arg0, int arg1, int arg2, int arg3)",
+			"fabric": "onMouseButton(long window, int button, int action, int mods)"
+		},
+		{
+			"forge": "onScroll(long arg0, double arg1, double arg2)",
+			"fabric": "onMouseScroll(long window, double horizontal, double vertical)"
+		},
+		{
+			"forge": "onDrop(long arg0, List<Path> arg1)",
+			"fabric": "onFilesDropped(long window, List<Path> paths)"
+		},
+		{
+			"forge": "setup(long arg0)",
+			"fabric": "setup(long window)"
+		},
+		{
+			"forge": "onMove(long arg0, double arg1, double arg2)",
+			"fabric": "onCursorPos(long window, double x, double y)"
+		},
+		{
+			"forge": "turnPlayer()",
+			"fabric": "updateMouse()"
+		},
+		{
+			"forge": "isLeftPressed()",
+			"fabric": "wasLeftButtonClicked()"
+		},
+		{
+			"forge": "isMiddlePressed()",
+			"fabric": "wasMiddleButtonClicked()"
+		},
+		{
+			"forge": "isRightPressed()",
+			"fabric": "wasRightButtonClicked()"
+		},
+		{
+			"forge": "xpos()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "ypos()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "setIgnoreFirstMove()",
+			"fabric": "onResolutionChanged()"
+		},
+		{
+			"forge": "isMouseGrabbed()",
+			"fabric": "isCursorLocked()"
+		},
+		{
+			"forge": "grabMouse()",
+			"fabric": "lockCursor()"
+		},
+		{
+			"forge": "releaseMouse()",
+			"fabric": "unlockCursor()"
+		},
+		{
+			"forge": "cursorEntered()",
+			"fabric": "setResolutionChanged()"
+		}
+	]
+}

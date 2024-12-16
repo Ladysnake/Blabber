@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.item.crafting.SmithingRecipe",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.SmithingRecipe",
+			"fabric": "net.minecraft.recipe.SmithingRecipe"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "canCraftInDimensions(int arg0, int arg1)",
+			"fabric": "fits(int arg0, int arg1)"
+		},
+		{
+			"forge": "getToastSymbol()",
+			"fabric": "createIcon()"
+		},
+		{
+			"forge": "isTemplateIngredient(ItemStack arg0)",
+			"fabric": "testTemplate(ItemStack stack)"
+		},
+		{
+			"forge": "isBaseIngredient(ItemStack arg0)",
+			"fabric": "testBase(ItemStack stack)"
+		},
+		{
+			"forge": "isAdditionIngredient(ItemStack arg0)",
+			"fabric": "testAddition(ItemStack stack)"
+		}
+	]
+}

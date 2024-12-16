@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.LevelDataGeneratorOptionsFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.LevelDataGeneratorOptionsFix",
+			"fabric": "net.minecraft.datafixer.fix.LevelDataGeneratorOptionsFix"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "NUMERICAL_IDS_TO_BIOME_IDS"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "NUMERICAL_IDS_TO_BIOME_IDS"
+		},
+		{
+			"forge": "GENERATOR_OPTIONS",
+			"fabric": "GENERATOR_OPTIONS_KEY"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixGeneratorOptions(String generatorOptions, com.mojang.serialization.DynamicOps<T> arg1)"
+		},
+		{
+			"forge": "convert(String arg0, com.mojang.serialization.DynamicOps<T> arg1)",
+			"fabric": "fixGeneratorOptions(String generatorOptions, com.mojang.serialization.DynamicOps<T> arg1)"
+		},
+		{
+			"forge": "getLayerInfoFromString(String arg0)",
+			"fabric": "parseFlatLayer(String layer)"
+		},
+		{
+			"forge": "getLayersInfoFromString(String arg0)",
+			"fabric": "parseFlatLayers(String layers)"
+		}
+	]
+}

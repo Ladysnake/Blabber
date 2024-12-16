@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.telemetry.TelemetryPropertyMap",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.TelemetryPropertyMap",
+			"fabric": "net.minecraft.client.util.telemetry.PropertyMap"
+		},
+		{
+			"forge": "entries",
+			"fabric": "backingMap"
+		},
+		{
+			"forge": "entries",
+			"fabric": "backingMap"
+		},
+		{
+			"forge": "builder()",
+			"fabric": "builder()"
+		},
+		{
+			"forge": "builder()",
+			"fabric": "builder()"
+		},
+		{
+			"forge": "createCodec(List<TelemetryProperty<?>> arg0)",
+			"fabric": "createCodec(List<TelemetryEventProperty<?>> properties)"
+		},
+		{
+			"forge": "get(TelemetryProperty<T> arg0)",
+			"fabric": "get(TelemetryEventProperty<T> property)"
+		},
+		{
+			"forge": "propertySet()",
+			"fabric": "keySet()"
+		}
+	]
+}

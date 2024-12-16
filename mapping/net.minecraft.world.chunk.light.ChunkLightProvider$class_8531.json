@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.level.lighting.LightEngine$QueueEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.LightEngine$QueueEntry",
+			"fabric": "net.minecraft.world.chunk.light.ChunkLightProvider$class_8531"
+		},
+		{
+			"forge": "FROM_LEVEL_BITS",
+			"fabric": "DIRECTION_BIT_OFFSET"
+		},
+		{
+			"forge": "FROM_LEVEL_BITS",
+			"fabric": "DIRECTION_BIT_OFFSET"
+		},
+		{
+			"forge": "DIRECTION_BITS",
+			"fabric": "field_44738"
+		},
+		{
+			"forge": "LEVEL_MASK",
+			"fabric": "field_44739"
+		},
+		{
+			"forge": "DIRECTIONS_MASK",
+			"fabric": "DIRECTION_BIT_MASK"
+		},
+		{
+			"forge": "FLAG_FROM_EMPTY_SHAPE",
+			"fabric": "field_44741"
+		},
+		{
+			"forge": "FLAG_INCREASE_FROM_EMISSION",
+			"fabric": "field_44742"
+		},
+		{
+			"forge": "decreaseSkipOneDirection(int arg0, Direction arg1)",
+			"fabric": "packWithOneDirectionCleared(int lightLevel, Direction direction)"
+		},
+		{
+			"forge": "decreaseSkipOneDirection(int arg0, Direction arg1)",
+			"fabric": "packWithOneDirectionCleared(int lightLevel, Direction direction)"
+		},
+		{
+			"forge": "decreaseAllDirections(int arg0)",
+			"fabric": "packWithAllDirectionsSet(int lightLevel)"
+		},
+		{
+			"forge": "increaseLightFromEmission(int arg0, boolean arg1)",
+			"fabric": "method_51573(int lightLevel, boolean trivial)"
+		},
+		{
+			"forge": "increaseSkipOneDirection(int arg0, boolean arg1, Direction arg2)",
+			"fabric": "method_51574(int lightLevel, boolean trivial, Direction direction)"
+		},
+		{
+			"forge": "increaseOnlyOneDirection(int arg0, boolean arg1, Direction arg2)",
+			"fabric": "method_51579(int lightLevel, boolean trivial, Direction direction)"
+		},
+		{
+			"forge": "increaseSkySourceInDirections(boolean arg0, boolean arg1, boolean arg2, boolean arg3, boolean arg4)",
+			"fabric": "method_51578(boolean down, boolean north, boolean south, boolean west, boolean east)"
+		},
+		{
+			"forge": "getFromLevel(long arg0)",
+			"fabric": "getLightLevel(long packed)"
+		},
+		{
+			"forge": "isFromEmptyShape(long arg0)",
+			"fabric": "isTrivial(long packed)"
+		},
+		{
+			"forge": "isIncreaseFromEmission(long arg0)",
+			"fabric": "method_51582(long packed)"
+		},
+		{
+			"forge": "shouldPropagateInDirection(long arg0, Direction arg1)",
+			"fabric": "isDirectionBitSet(long packed, Direction direction)"
+		},
+		{
+			"forge": "withLevel(long arg0, int arg1)",
+			"fabric": "withLightLevel(long packed, int lightLevel)"
+		},
+		{
+			"forge": "withDirection(long arg0, Direction arg1)",
+			"fabric": "setDirectionBit(long packed, Direction direction)"
+		},
+		{
+			"forge": "withoutDirection(long arg0, Direction arg1)",
+			"fabric": "clearDirectionBit(long packed, Direction direction)"
+		}
+	]
+}

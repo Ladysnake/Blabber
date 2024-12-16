@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.core.particles.DustParticleOptionsBase",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.DustParticleOptionsBase",
+			"fabric": "net.minecraft.particle.AbstractDustParticleEffect"
+		},
+		{
+			"forge": "MIN_SCALE",
+			"fabric": "MIN_SCALE"
+		},
+		{
+			"forge": "MIN_SCALE",
+			"fabric": "MIN_SCALE"
+		},
+		{
+			"forge": "MAX_SCALE",
+			"fabric": "MAX_SCALE"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "scale",
+			"fabric": "scale"
+		},
+		{
+			"forge": "readVector3f(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "readColor(com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "readVector3f(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "readColor(com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "readVector3f(FriendlyByteBuf arg0)",
+			"fabric": "readColor(PacketByteBuf buf)"
+		},
+		{
+			"forge": "writeToNetwork(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "writeToString()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "getScale()",
+			"fabric": "getScale()"
+		}
+	]
+}

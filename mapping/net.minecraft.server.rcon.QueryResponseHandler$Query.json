@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.rcon.thread.QueryThreadGs4$RequestChallenge",
+	"items": [
+		{
+			"forge": "net.minecraft.server.rcon.thread.QueryThreadGs4$RequestChallenge",
+			"fabric": "net.minecraft.server.rcon.QueryResponseHandler$Query"
+		},
+		{
+			"forge": "time",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "time",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "challenge",
+			"fabric": "id"
+		},
+		{
+			"forge": "identBytes",
+			"fabric": "messageBytes"
+		},
+		{
+			"forge": "challengeBytes",
+			"fabric": "replyBuf"
+		},
+		{
+			"forge": "ident",
+			"fabric": "message"
+		},
+		{
+			"forge": "before(long arg0)",
+			"fabric": "startedBefore(long lastQueryTime)"
+		},
+		{
+			"forge": "before(long arg0)",
+			"fabric": "startedBefore(long lastQueryTime)"
+		},
+		{
+			"forge": "getChallenge()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getChallengeBytes()",
+			"fabric": "getReplyBuf()"
+		},
+		{
+			"forge": "getIdentBytes()",
+			"fabric": "getMessageBytes()"
+		},
+		{
+			"forge": "getIdent()",
+			"fabric": "getMessage()"
+		}
+	]
+}

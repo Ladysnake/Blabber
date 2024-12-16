@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.client.renderer.texture.SpriteContents",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.SpriteContents",
+			"fabric": "net.minecraft.client.texture.SpriteContents"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "originalImage",
+			"fabric": "image"
+		},
+		{
+			"forge": "byMipLevel",
+			"fabric": "mipmapLevelsImages"
+		},
+		{
+			"forge": "animatedTexture",
+			"fabric": "animation"
+		},
+		{
+			"forge": "increaseMipLevel(int arg0)",
+			"fabric": "generateMipmaps(int mipmapLevels)"
+		},
+		{
+			"forge": "increaseMipLevel(int arg0)",
+			"fabric": "generateMipmaps(int mipmapLevels)"
+		},
+		{
+			"forge": "getFrameCount()",
+			"fabric": "getFrameCount()"
+		},
+		{
+			"forge": "createAnimatedTexture(FrameSize arg0, int arg1, int arg2, AnimationMetadataSection arg3)",
+			"fabric": "createAnimation(SpriteDimensions dimensions, int imageWidth, int imageHeight, AnimationResourceMetadata metadata)"
+		},
+		{
+			"forge": "upload(int arg0, int arg1, int arg2, int arg3, NativeImage[] arg4)",
+			"fabric": "upload(int x, int y, int unpackSkipPixels, int unpackSkipRows, NativeImage[] images)"
+		},
+		{
+			"forge": "width()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getUniqueFrames()",
+			"fabric": "getDistinctFrameCount()"
+		},
+		{
+			"forge": "createTicker()",
+			"fabric": "createAnimator()"
+		},
+		{
+			"forge": "isTransparent(int arg0, int arg1, int arg2)",
+			"fabric": "isPixelTransparent(int frame, int x, int y)"
+		},
+		{
+			"forge": "uploadFirstFrame(int arg0, int arg1)",
+			"fabric": "upload(int x, int y)"
+		}
+	]
+}

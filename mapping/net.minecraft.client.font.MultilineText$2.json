@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.components.MultiLineLabel$2",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.MultiLineLabel$2",
+			"fabric": "net.minecraft.client.font.MultilineText$2"
+		},
+		{
+			"forge": "width",
+			"fabric": "maxWidth"
+		},
+		{
+			"forge": "width",
+			"fabric": "maxWidth"
+		},
+		{
+			"forge": "renderCentered(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawCenterWithShadow(DrawContext arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "renderCentered(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawCenterWithShadow(DrawContext arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "renderCentered(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawCenterWithShadow(DrawContext arg0, int arg1, int arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "renderLeftAligned(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawWithShadow(DrawContext arg0, int arg1, int arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "renderLeftAlignedNoShadow(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "draw(DrawContext arg0, int arg1, int arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "renderBackgroundCentered(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "fillBackground(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "getLineCount()",
+			"fabric": "count()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getMaxWidth()"
+		}
+	]
+}

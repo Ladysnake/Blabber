@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.components.Button$OnPress",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.Button$OnPress",
+			"fabric": "net.minecraft.client.gui.widget.ButtonWidget$PressAction"
+		},
+		{
+			"forge": "onPress(Button arg0)",
+			"fabric": "onPress(ButtonWidget button)"
+		},
+		{
+			"forge": "onPress(Button arg0)",
+			"fabric": "onPress(ButtonWidget button)"
+		}
+	]
+}

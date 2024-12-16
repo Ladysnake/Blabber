@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.animal.Rabbit$RabbitMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Rabbit$RabbitMoveControl",
+			"fabric": "net.minecraft.entity.passive.RabbitEntity$RabbitMoveControl"
+		},
+		{
+			"forge": "rabbit",
+			"fabric": "rabbit"
+		},
+		{
+			"forge": "rabbit",
+			"fabric": "rabbit"
+		},
+		{
+			"forge": "nextJumpSpeed",
+			"fabric": "rabbitSpeed"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "setWantedPosition(double arg0, double arg1, double arg2, double arg3)",
+			"fabric": "moveTo(double arg0, double arg1, double arg2, double arg3)"
+		}
+	]
+}

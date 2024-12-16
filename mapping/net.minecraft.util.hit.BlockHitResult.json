@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.phys.BlockHitResult",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.BlockHitResult",
+			"fabric": "net.minecraft.util.hit.BlockHitResult"
+		},
+		{
+			"forge": "direction",
+			"fabric": "side"
+		},
+		{
+			"forge": "direction",
+			"fabric": "side"
+		},
+		{
+			"forge": "blockPos",
+			"fabric": "blockPos"
+		},
+		{
+			"forge": "miss",
+			"fabric": "missed"
+		},
+		{
+			"forge": "inside",
+			"fabric": "insideBlock"
+		},
+		{
+			"forge": "miss(Vec3 arg0, Direction arg1, BlockPos arg2)",
+			"fabric": "createMissed(Vec3d pos, Direction side, BlockPos blockPos)"
+		},
+		{
+			"forge": "miss(Vec3 arg0, Direction arg1, BlockPos arg2)",
+			"fabric": "createMissed(Vec3d pos, Direction side, BlockPos blockPos)"
+		},
+		{
+			"forge": "withDirection(Direction arg0)",
+			"fabric": "withSide(Direction side)"
+		},
+		{
+			"forge": "withPosition(BlockPos arg0)",
+			"fabric": "withBlockPos(BlockPos blockPos)"
+		},
+		{
+			"forge": "getBlockPos()",
+			"fabric": "getBlockPos()"
+		},
+		{
+			"forge": "getDirection()",
+			"fabric": "getSide()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "isInside()",
+			"fabric": "isInsideBlock()"
+		}
+	]
+}

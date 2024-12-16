@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.thread.ProcessorHandle",
+	"items": [
+		{
+			"forge": "net.minecraft.util.thread.ProcessorHandle",
+			"fabric": "net.minecraft.util.thread.MessageListener"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "tell(Msg arg0)",
+			"fabric": "send(Msg message)"
+		},
+		{
+			"forge": "ask(Function<? super ProcessorHandle<Source>, ? extends Msg> arg0)",
+			"fabric": "ask(Function<? super MessageListener<Source>, ? extends Msg> messageProvider)"
+		},
+		{
+			"forge": "askEither(Function<? super ProcessorHandle<com.mojang.datafixers.util.Either<Source, Exception>>, ? extends Msg> arg0)",
+			"fabric": "askFallible(Function<? super MessageListener<com.mojang.datafixers.util.Either<Source, Exception>>, ? extends Msg> messageProvider)"
+		},
+		{
+			"forge": "of(String arg0, Consumer<Msg> arg1)",
+			"fabric": "create(String name, Consumer<Msg> action)"
+		}
+	]
+}

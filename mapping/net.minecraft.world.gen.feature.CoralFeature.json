@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.CoralFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.CoralFeature",
+			"fabric": "net.minecraft.world.gen.feature.CoralFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "placeFeature(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "generateCoral(WorldAccess world, Random random, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "placeCoralBlock(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "generateCoralPiece(WorldAccess world, Random random, BlockPos pos, BlockState state)"
+		}
+	]
+}

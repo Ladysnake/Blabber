@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.advancements.critereon.ItemDurabilityTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.ItemDurabilityTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.ItemDurabilityChangedCriterion$Conditions"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "durability",
+			"fabric": "durability"
+		},
+		{
+			"forge": "delta",
+			"fabric": "delta"
+		},
+		{
+			"forge": "changedDurability(ItemPredicate arg0, MinMaxBounds$Ints arg1)",
+			"fabric": "create(ItemPredicate item, NumberRange$IntRange durability)"
+		},
+		{
+			"forge": "changedDurability(ItemPredicate arg0, MinMaxBounds$Ints arg1)",
+			"fabric": "create(ItemPredicate item, NumberRange$IntRange durability)"
+		},
+		{
+			"forge": "changedDurability(ContextAwarePredicate arg0, ItemPredicate arg1, MinMaxBounds$Ints arg2)",
+			"fabric": "create(LootContextPredicate player, ItemPredicate item, NumberRange$IntRange durability)"
+		},
+		{
+			"forge": "matches(ItemStack arg0, int arg1)",
+			"fabric": "matches(ItemStack stack, int durability)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

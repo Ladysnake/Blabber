@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.MinecartCommandBlockEditScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.MinecartCommandBlockEditScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.MinecartCommandBlockScreen"
+		},
+		{
+			"forge": "commandBlock",
+			"fabric": "commandExecutor"
+		},
+		{
+			"forge": "commandBlock",
+			"fabric": "commandExecutor"
+		},
+		{
+			"forge": "getCommandBlock()",
+			"fabric": "getCommandExecutor()"
+		},
+		{
+			"forge": "getCommandBlock()",
+			"fabric": "getCommandExecutor()"
+		},
+		{
+			"forge": "getPreviousY()",
+			"fabric": "getTrackOutputButtonHeight()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "populateAndSendPacket(BaseCommandBlock arg0)",
+			"fabric": "syncSettingsToServer(CommandBlockExecutor arg0)"
+		}
+	]
+}

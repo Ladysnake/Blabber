@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundChatSessionUpdatePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundChatSessionUpdatePacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.PlayerSessionC2SPacket"
+		},
+		{
+			"forge": "chatSession",
+			"fabric": "chatSession"
+		},
+		{
+			"forge": "chatSession",
+			"fabric": "chatSession"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "chatSession()",
+			"fabric": "chatSession()"
+		}
+	]
+}

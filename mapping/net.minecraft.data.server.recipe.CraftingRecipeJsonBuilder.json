@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.data.recipes.RecipeBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.RecipeBuilder",
+			"fabric": "net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder"
+		},
+		{
+			"forge": "ROOT_RECIPE_ADVANCEMENT",
+			"fabric": "ROOT"
+		},
+		{
+			"forge": "ROOT_RECIPE_ADVANCEMENT",
+			"fabric": "ROOT"
+		},
+		{
+			"forge": "unlockedBy(String arg0, CriterionTriggerInstance arg1)",
+			"fabric": "criterion(String name, CriterionConditions conditions)"
+		},
+		{
+			"forge": "unlockedBy(String arg0, CriterionTriggerInstance arg1)",
+			"fabric": "criterion(String name, CriterionConditions conditions)"
+		},
+		{
+			"forge": "group(String arg0)",
+			"fabric": "group(String group)"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getOutputItem()"
+		},
+		{
+			"forge": "save(Consumer<FinishedRecipe> arg0, ResourceLocation arg1)",
+			"fabric": "offerTo(Consumer<RecipeJsonProvider> exporter, Identifier recipeId)"
+		},
+		{
+			"forge": "save(Consumer<FinishedRecipe> arg0)",
+			"fabric": "offerTo(Consumer<RecipeJsonProvider> exporter)"
+		},
+		{
+			"forge": "save(Consumer<FinishedRecipe> arg0, String arg1)",
+			"fabric": "offerTo(Consumer<RecipeJsonProvider> exporter, String recipePath)"
+		},
+		{
+			"forge": "getDefaultRecipeId(ItemLike arg0)",
+			"fabric": "getItemId(ItemConvertible item)"
+		}
+	]
+}

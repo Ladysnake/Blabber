@@ -1,0 +1,833 @@
+{
+	"title": "net.minecraft.client.renderer.GameRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.GameRenderer",
+			"fabric": "net.minecraft.client.render.GameRenderer"
+		},
+		{
+			"forge": "NAUSEA_LOCATION",
+			"fabric": "NAUSEA_OVERLAY"
+		},
+		{
+			"forge": "NAUSEA_LOCATION",
+			"fabric": "NAUSEA_OVERLAY"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DEPTH_BUFFER_DEBUG",
+			"fabric": "field_32688"
+		},
+		{
+			"forge": "PROJECTION_Z_NEAR",
+			"fabric": "CAMERA_DEPTH"
+		},
+		{
+			"forge": "GUI_Z_NEAR",
+			"fabric": "field_44940"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "resourceManager",
+			"fabric": "resourceManager"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "renderDistance",
+			"fabric": "viewDistance"
+		},
+		{
+			"forge": "itemInHandRenderer",
+			"fabric": "firstPersonRenderer"
+		},
+		{
+			"forge": "mapRenderer",
+			"fabric": "mapRenderer"
+		},
+		{
+			"forge": "renderBuffers",
+			"fabric": "buffers"
+		},
+		{
+			"forge": "tick",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "fov",
+			"fabric": "fovMultiplier"
+		},
+		{
+			"forge": "oldFov",
+			"fabric": "lastFovMultiplier"
+		},
+		{
+			"forge": "darkenWorldAmount",
+			"fabric": "skyDarkness"
+		},
+		{
+			"forge": "darkenWorldAmountO",
+			"fabric": "lastSkyDarkness"
+		},
+		{
+			"forge": "renderHand",
+			"fabric": "renderHand"
+		},
+		{
+			"forge": "renderBlockOutline",
+			"fabric": "blockOutlineEnabled"
+		},
+		{
+			"forge": "lastScreenshotAttempt",
+			"fabric": "lastWorldIconUpdate"
+		},
+		{
+			"forge": "hasWorldScreenshot",
+			"fabric": "hasWorldIcon"
+		},
+		{
+			"forge": "lastActiveTime",
+			"fabric": "lastWindowFocusedTime"
+		},
+		{
+			"forge": "lightTexture",
+			"fabric": "lightmapTextureManager"
+		},
+		{
+			"forge": "overlayTexture",
+			"fabric": "overlayTexture"
+		},
+		{
+			"forge": "panoramicMode",
+			"fabric": "renderingPanorama"
+		},
+		{
+			"forge": "zoom",
+			"fabric": "zoom"
+		},
+		{
+			"forge": "zoomX",
+			"fabric": "zoomX"
+		},
+		{
+			"forge": "zoomY",
+			"fabric": "zoomY"
+		},
+		{
+			"forge": "ITEM_ACTIVATION_ANIMATION_LENGTH",
+			"fabric": "field_32687"
+		},
+		{
+			"forge": "itemActivationItem",
+			"fabric": "floatingItem"
+		},
+		{
+			"forge": "itemActivationTicks",
+			"fabric": "floatingItemTimeLeft"
+		},
+		{
+			"forge": "itemActivationOffX",
+			"fabric": "floatingItemWidth"
+		},
+		{
+			"forge": "itemActivationOffY",
+			"fabric": "floatingItemHeight"
+		},
+		{
+			"forge": "postEffect",
+			"fabric": "postProcessor"
+		},
+		{
+			"forge": "EFFECTS",
+			"fabric": "SUPER_SECRET_SETTING_PROGRAMS"
+		},
+		{
+			"forge": "EFFECT_NONE",
+			"fabric": "SUPER_SECRET_SETTING_COUNT"
+		},
+		{
+			"forge": "effectIndex",
+			"fabric": "superSecretSettingIndex"
+		},
+		{
+			"forge": "effectActive",
+			"fabric": "postProcessorEnabled"
+		},
+		{
+			"forge": "mainCamera",
+			"fabric": "camera"
+		},
+		{
+			"forge": "blitShader",
+			"fabric": "blitScreenProgram"
+		},
+		{
+			"forge": "shaders",
+			"fabric": "programs"
+		},
+		{
+			"forge": "positionShader",
+			"fabric": "positionProgram"
+		},
+		{
+			"forge": "positionColorShader",
+			"fabric": "positionColorProgram"
+		},
+		{
+			"forge": "positionColorTexShader",
+			"fabric": "positionColorTexProgram"
+		},
+		{
+			"forge": "positionTexShader",
+			"fabric": "positionTexProgram"
+		},
+		{
+			"forge": "positionTexColorShader",
+			"fabric": "positionTexColorProgram"
+		},
+		{
+			"forge": "particleShader",
+			"fabric": "particleProgram"
+		},
+		{
+			"forge": "positionColorLightmapShader",
+			"fabric": "positionColorLightmapProgram"
+		},
+		{
+			"forge": "positionColorTexLightmapShader",
+			"fabric": "positionColorTexLightmapProgram"
+		},
+		{
+			"forge": "positionTexColorNormalShader",
+			"fabric": "positionTexColorNormalProgram"
+		},
+		{
+			"forge": "positionTexLightmapColorShader",
+			"fabric": "positionTexLightmapColorProgram"
+		},
+		{
+			"forge": "rendertypeSolidShader",
+			"fabric": "renderTypeSolidProgram"
+		},
+		{
+			"forge": "rendertypeCutoutMippedShader",
+			"fabric": "renderTypeCutoutMippedProgram"
+		},
+		{
+			"forge": "rendertypeCutoutShader",
+			"fabric": "renderTypeCutoutProgram"
+		},
+		{
+			"forge": "rendertypeTranslucentShader",
+			"fabric": "renderTypeTranslucentProgram"
+		},
+		{
+			"forge": "rendertypeTranslucentMovingBlockShader",
+			"fabric": "renderTypeTranslucentMovingBlockProgram"
+		},
+		{
+			"forge": "rendertypeTranslucentNoCrumblingShader",
+			"fabric": "renderTypeTranslucentNoCrumblingProgram"
+		},
+		{
+			"forge": "rendertypeArmorCutoutNoCullShader",
+			"fabric": "renderTypeArmorCutoutNoCullProgram"
+		},
+		{
+			"forge": "rendertypeEntitySolidShader",
+			"fabric": "renderTypeEntitySolidProgram"
+		},
+		{
+			"forge": "rendertypeEntityCutoutShader",
+			"fabric": "renderTypeEntityCutoutProgram"
+		},
+		{
+			"forge": "rendertypeEntityCutoutNoCullShader",
+			"fabric": "renderTypeEntityCutoutNoNullProgram"
+		},
+		{
+			"forge": "rendertypeEntityCutoutNoCullZOffsetShader",
+			"fabric": "renderTypeEntityCutoutNoNullZOffsetProgram"
+		},
+		{
+			"forge": "rendertypeItemEntityTranslucentCullShader",
+			"fabric": "renderTypeItemEntityTranslucentCullProgram"
+		},
+		{
+			"forge": "rendertypeEntityTranslucentCullShader",
+			"fabric": "renderTypeEntityTranslucentCullProgram"
+		},
+		{
+			"forge": "rendertypeEntityTranslucentShader",
+			"fabric": "renderTypeEntityTranslucentProgram"
+		},
+		{
+			"forge": "rendertypeEntityTranslucentEmissiveShader",
+			"fabric": "renderTypeEntityTranslucentEmissiveProgram"
+		},
+		{
+			"forge": "rendertypeEntitySmoothCutoutShader",
+			"fabric": "renderTypeEntitySmoothCutoutProgram"
+		},
+		{
+			"forge": "rendertypeBeaconBeamShader",
+			"fabric": "renderTypeBeaconBeamProgram"
+		},
+		{
+			"forge": "rendertypeEntityDecalShader",
+			"fabric": "renderTypeEntityDecalProgram"
+		},
+		{
+			"forge": "rendertypeEntityNoOutlineShader",
+			"fabric": "renderTypeEntityNoOutlineProgram"
+		},
+		{
+			"forge": "rendertypeEntityShadowShader",
+			"fabric": "renderTypeEntityShadowProgram"
+		},
+		{
+			"forge": "rendertypeEntityAlphaShader",
+			"fabric": "renderTypeEntityAlphaProgram"
+		},
+		{
+			"forge": "rendertypeEyesShader",
+			"fabric": "renderTypeEyesProgram"
+		},
+		{
+			"forge": "rendertypeEnergySwirlShader",
+			"fabric": "renderTypeEnergySwirlProgram"
+		},
+		{
+			"forge": "rendertypeLeashShader",
+			"fabric": "renderTypeLeashProgram"
+		},
+		{
+			"forge": "rendertypeWaterMaskShader",
+			"fabric": "renderTypeWaterMaskProgram"
+		},
+		{
+			"forge": "rendertypeOutlineShader",
+			"fabric": "renderTypeOutlineProgram"
+		},
+		{
+			"forge": "rendertypeArmorGlintShader",
+			"fabric": "renderTypeArmorGlintProgram"
+		},
+		{
+			"forge": "rendertypeArmorEntityGlintShader",
+			"fabric": "renderTypeArmorEntityGlintProgram"
+		},
+		{
+			"forge": "rendertypeGlintTranslucentShader",
+			"fabric": "renderTypeGlintTranslucentProgram"
+		},
+		{
+			"forge": "rendertypeGlintShader",
+			"fabric": "renderTypeGlintProgram"
+		},
+		{
+			"forge": "rendertypeGlintDirectShader",
+			"fabric": "renderTypeGlintDirectProgram"
+		},
+		{
+			"forge": "rendertypeEntityGlintShader",
+			"fabric": "renderTypeEntityGlintProgram"
+		},
+		{
+			"forge": "rendertypeEntityGlintDirectShader",
+			"fabric": "renderTypeEntityGlintDirectProgram"
+		},
+		{
+			"forge": "rendertypeTextShader",
+			"fabric": "renderTypeTextProgram"
+		},
+		{
+			"forge": "rendertypeTextBackgroundShader",
+			"fabric": "renderTypeTextBackgroundProgram"
+		},
+		{
+			"forge": "rendertypeTextIntensityShader",
+			"fabric": "renderTypeTextIntensityProgram"
+		},
+		{
+			"forge": "rendertypeTextSeeThroughShader",
+			"fabric": "renderTypeTextSeeThroughProgram"
+		},
+		{
+			"forge": "rendertypeTextBackgroundSeeThroughShader",
+			"fabric": "renderTypeTextBackgroundSeeThroughProgram"
+		},
+		{
+			"forge": "rendertypeTextIntensitySeeThroughShader",
+			"fabric": "renderTypeTextIntensitySeeThroughProgram"
+		},
+		{
+			"forge": "rendertypeLightningShader",
+			"fabric": "renderTypeLightningProgram"
+		},
+		{
+			"forge": "rendertypeTripwireShader",
+			"fabric": "renderTypeTripwireProgram"
+		},
+		{
+			"forge": "rendertypeEndPortalShader",
+			"fabric": "renderTypeEndPortalProgram"
+		},
+		{
+			"forge": "rendertypeEndGatewayShader",
+			"fabric": "renderTypeEndGatewayProgram"
+		},
+		{
+			"forge": "rendertypeLinesShader",
+			"fabric": "renderTypeLinesProgram"
+		},
+		{
+			"forge": "rendertypeCrumblingShader",
+			"fabric": "renderTypeCrumblingProgram"
+		},
+		{
+			"forge": "rendertypeGuiShader",
+			"fabric": "renderTypeGuiProgram"
+		},
+		{
+			"forge": "rendertypeGuiOverlayShader",
+			"fabric": "renderTypeGuiOverlayProgram"
+		},
+		{
+			"forge": "rendertypeGuiTextHighlightShader",
+			"fabric": "renderTypeGuiTextHighlightProgram"
+		},
+		{
+			"forge": "rendertypeGuiGhostRecipeOverlayShader",
+			"fabric": "renderTypeGuiGhostRecipeOverlayProgram"
+		},
+		{
+			"forge": "close()",
+			"fabric": "setRenderHand(boolean renderHand)"
+		},
+		{
+			"forge": "setRenderHand(boolean arg0)",
+			"fabric": "setRenderHand(boolean renderHand)"
+		},
+		{
+			"forge": "setRenderBlockOutline(boolean arg0)",
+			"fabric": "setBlockOutlineEnabled(boolean blockOutlineEnabled)"
+		},
+		{
+			"forge": "setPanoramicMode(boolean arg0)",
+			"fabric": "setRenderingPanorama(boolean renderingPanorama)"
+		},
+		{
+			"forge": "isPanoramicMode()",
+			"fabric": "isRenderingPanorama()"
+		},
+		{
+			"forge": "shutdownEffect()",
+			"fabric": "disablePostProcessor()"
+		},
+		{
+			"forge": "togglePostEffect()",
+			"fabric": "togglePostProcessorEnabled()"
+		},
+		{
+			"forge": "checkEntityPostEffect(Entity arg0)",
+			"fabric": "onCameraEntitySet(Entity entity)"
+		},
+		{
+			"forge": "cycleEffect()",
+			"fabric": "cycleSuperSecretSetting()"
+		},
+		{
+			"forge": "loadEffect(ResourceLocation arg0)",
+			"fabric": "loadPostProcessor(Identifier id)"
+		},
+		{
+			"forge": "createReloadListener()",
+			"fabric": "createProgramReloader()"
+		},
+		{
+			"forge": "preloadUiShader(ResourceProvider arg0)",
+			"fabric": "preloadPrograms(ResourceFactory factory)"
+		},
+		{
+			"forge": "preloadShader(ResourceProvider arg0, String arg1, VertexFormat arg2)",
+			"fabric": "preloadProgram(ResourceFactory factory, String name, VertexFormat format)"
+		},
+		{
+			"forge": "reloadShaders(ResourceProvider arg0)",
+			"fabric": "loadPrograms(ResourceFactory factory)"
+		},
+		{
+			"forge": "shutdownShaders()",
+			"fabric": "clearPrograms()"
+		},
+		{
+			"forge": "getShader(String arg0)",
+			"fabric": "getProgram(String name)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "currentEffect()",
+			"fabric": "getPostProcessor()"
+		},
+		{
+			"forge": "resize(int arg0, int arg1)",
+			"fabric": "onResized(int width, int height)"
+		},
+		{
+			"forge": "pick(float arg0)",
+			"fabric": "updateTargetedEntity(float tickDelta)"
+		},
+		{
+			"forge": "tickFov()",
+			"fabric": "updateFovMultiplier()"
+		},
+		{
+			"forge": "getFov(Camera arg0, float arg1, boolean arg2)",
+			"fabric": "getFov(Camera camera, float tickDelta, boolean changingFov)"
+		},
+		{
+			"forge": "bobHurt(PoseStack arg0, float arg1)",
+			"fabric": "tiltViewWhenHurt(MatrixStack matrices, float tickDelta)"
+		},
+		{
+			"forge": "bobView(PoseStack arg0, float arg1)",
+			"fabric": "bobView(MatrixStack matrices, float tickDelta)"
+		},
+		{
+			"forge": "renderZoomed(float arg0, float arg1, float arg2)",
+			"fabric": "renderWithZoom(float zoom, float zoomX, float zoomY)"
+		},
+		{
+			"forge": "renderItemInHand(PoseStack arg0, Camera arg1, float arg2)",
+			"fabric": "renderHand(MatrixStack matrices, Camera camera, float tickDelta)"
+		},
+		{
+			"forge": "resetProjectionMatrix(org.joml.Matrix4f arg0)",
+			"fabric": "loadProjectionMatrix(org.joml.Matrix4f projectionMatrix)"
+		},
+		{
+			"forge": "getProjectionMatrix(double arg0)",
+			"fabric": "getBasicProjectionMatrix(double fov)"
+		},
+		{
+			"forge": "getDepthFar()",
+			"fabric": "getFarPlaneDistance()"
+		},
+		{
+			"forge": "getNightVisionScale(LivingEntity arg0, float arg1)",
+			"fabric": "getNightVisionStrength(LivingEntity entity, float tickDelta)"
+		},
+		{
+			"forge": "render(float arg0, long arg1, boolean arg2)",
+			"fabric": "render(float tickDelta, long startTime, boolean tick)"
+		},
+		{
+			"forge": "tryTakeScreenshotIfNeeded()",
+			"fabric": "updateWorldIcon()"
+		},
+		{
+			"forge": "takeAutoScreenshot(Path arg0)",
+			"fabric": "updateWorldIcon(Path path)"
+		},
+		{
+			"forge": "shouldRenderBlockOutline()",
+			"fabric": "shouldRenderBlockOutline()"
+		},
+		{
+			"forge": "renderLevel(float arg0, long arg1, PoseStack arg2)",
+			"fabric": "renderWorld(float tickDelta, long limitTime, MatrixStack matrices)"
+		},
+		{
+			"forge": "resetData()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "getMapRenderer()",
+			"fabric": "getMapRenderer()"
+		},
+		{
+			"forge": "displayItemActivation(ItemStack arg0)",
+			"fabric": "showFloatingItem(ItemStack floatingItem)"
+		},
+		{
+			"forge": "renderItemActivationAnimation(int arg0, int arg1, float arg2)",
+			"fabric": "renderFloatingItem(int scaledWidth, int scaledHeight, float tickDelta)"
+		},
+		{
+			"forge": "renderConfusionOverlay(GuiGraphics arg0, float arg1)",
+			"fabric": "renderNausea(DrawContext context, float distortionStrength)"
+		},
+		{
+			"forge": "getMinecraft()",
+			"fabric": "getClient()"
+		},
+		{
+			"forge": "getDarkenWorldAmount(float arg0)",
+			"fabric": "getSkyDarkness(float tickDelta)"
+		},
+		{
+			"forge": "getRenderDistance()",
+			"fabric": "getViewDistance()"
+		},
+		{
+			"forge": "getMainCamera()",
+			"fabric": "getCamera()"
+		},
+		{
+			"forge": "lightTexture()",
+			"fabric": "getLightmapTextureManager()"
+		},
+		{
+			"forge": "overlayTexture()",
+			"fabric": "getOverlayTexture()"
+		},
+		{
+			"forge": "getPositionShader()",
+			"fabric": "getPositionProgram()"
+		},
+		{
+			"forge": "getPositionColorShader()",
+			"fabric": "getPositionColorProgram()"
+		},
+		{
+			"forge": "getPositionColorTexShader()",
+			"fabric": "getPositionColorTexProgram()"
+		},
+		{
+			"forge": "getPositionTexShader()",
+			"fabric": "getPositionTexProgram()"
+		},
+		{
+			"forge": "getPositionTexColorShader()",
+			"fabric": "getPositionTexColorProgram()"
+		},
+		{
+			"forge": "getParticleShader()",
+			"fabric": "getParticleProgram()"
+		},
+		{
+			"forge": "getPositionColorLightmapShader()",
+			"fabric": "getPositionColorLightmapProgram()"
+		},
+		{
+			"forge": "getPositionColorTexLightmapShader()",
+			"fabric": "getPositionColorTexLightmapProgram()"
+		},
+		{
+			"forge": "getPositionTexColorNormalShader()",
+			"fabric": "getPositionTexColorNormalProgram()"
+		},
+		{
+			"forge": "getPositionTexLightmapColorShader()",
+			"fabric": "getPositionTexLightmapColorProgram()"
+		},
+		{
+			"forge": "getRendertypeSolidShader()",
+			"fabric": "getRenderTypeSolidProgram()"
+		},
+		{
+			"forge": "getRendertypeCutoutMippedShader()",
+			"fabric": "getRenderTypeCutoutMippedProgram()"
+		},
+		{
+			"forge": "getRendertypeCutoutShader()",
+			"fabric": "getRenderTypeCutoutProgram()"
+		},
+		{
+			"forge": "getRendertypeTranslucentShader()",
+			"fabric": "getRenderTypeTranslucentProgram()"
+		},
+		{
+			"forge": "getRendertypeTranslucentMovingBlockShader()",
+			"fabric": "getRenderTypeTranslucentMovingBlockProgram()"
+		},
+		{
+			"forge": "getRendertypeTranslucentNoCrumblingShader()",
+			"fabric": "getRenderTypeTranslucentNoCrumblingProgram()"
+		},
+		{
+			"forge": "getRendertypeArmorCutoutNoCullShader()",
+			"fabric": "getRenderTypeArmorCutoutNoCullProgram()"
+		},
+		{
+			"forge": "getRendertypeEntitySolidShader()",
+			"fabric": "getRenderTypeEntitySolidProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityCutoutShader()",
+			"fabric": "getRenderTypeEntityCutoutProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityCutoutNoCullShader()",
+			"fabric": "getRenderTypeEntityCutoutNoNullProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityCutoutNoCullZOffsetShader()",
+			"fabric": "getRenderTypeEntityCutoutNoNullZOffsetProgram()"
+		},
+		{
+			"forge": "getRendertypeItemEntityTranslucentCullShader()",
+			"fabric": "getRenderTypeItemEntityTranslucentCullProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityTranslucentCullShader()",
+			"fabric": "getRenderTypeEntityTranslucentCullProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityTranslucentShader()",
+			"fabric": "getRenderTypeEntityTranslucentProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityTranslucentEmissiveShader()",
+			"fabric": "getRenderTypeEntityTranslucentEmissiveProgram()"
+		},
+		{
+			"forge": "getRendertypeEntitySmoothCutoutShader()",
+			"fabric": "getRenderTypeEntitySmoothCutoutProgram()"
+		},
+		{
+			"forge": "getRendertypeBeaconBeamShader()",
+			"fabric": "getRenderTypeBeaconBeamProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityDecalShader()",
+			"fabric": "getRenderTypeEntityDecalProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityNoOutlineShader()",
+			"fabric": "getRenderTypeEntityNoOutlineProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityShadowShader()",
+			"fabric": "getRenderTypeEntityShadowProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityAlphaShader()",
+			"fabric": "getRenderTypeEntityAlphaProgram()"
+		},
+		{
+			"forge": "getRendertypeEyesShader()",
+			"fabric": "getRenderTypeEyesProgram()"
+		},
+		{
+			"forge": "getRendertypeEnergySwirlShader()",
+			"fabric": "getRenderTypeEnergySwirlProgram()"
+		},
+		{
+			"forge": "getRendertypeLeashShader()",
+			"fabric": "getRenderTypeLeashProgram()"
+		},
+		{
+			"forge": "getRendertypeWaterMaskShader()",
+			"fabric": "getRenderTypeWaterMaskProgram()"
+		},
+		{
+			"forge": "getRendertypeOutlineShader()",
+			"fabric": "getRenderTypeOutlineProgram()"
+		},
+		{
+			"forge": "getRendertypeArmorGlintShader()",
+			"fabric": "getRenderTypeArmorGlintProgram()"
+		},
+		{
+			"forge": "getRendertypeArmorEntityGlintShader()",
+			"fabric": "getRenderTypeArmorEntityGlintProgram()"
+		},
+		{
+			"forge": "getRendertypeGlintTranslucentShader()",
+			"fabric": "getRenderTypeGlintTranslucentProgram()"
+		},
+		{
+			"forge": "getRendertypeGlintShader()",
+			"fabric": "getRenderTypeGlintProgram()"
+		},
+		{
+			"forge": "getRendertypeGlintDirectShader()",
+			"fabric": "getRenderTypeGlintDirectProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityGlintShader()",
+			"fabric": "getRenderTypeEntityGlintProgram()"
+		},
+		{
+			"forge": "getRendertypeEntityGlintDirectShader()",
+			"fabric": "getRenderTypeEntityGlintDirectProgram()"
+		},
+		{
+			"forge": "getRendertypeTextShader()",
+			"fabric": "getRenderTypeTextProgram()"
+		},
+		{
+			"forge": "getRendertypeTextBackgroundShader()",
+			"fabric": "getRenderTypeTextBackgroundProgram()"
+		},
+		{
+			"forge": "getRendertypeTextIntensityShader()",
+			"fabric": "getRenderTypeTextIntensityProgram()"
+		},
+		{
+			"forge": "getRendertypeTextSeeThroughShader()",
+			"fabric": "getRenderTypeTextSeeThroughProgram()"
+		},
+		{
+			"forge": "getRendertypeTextBackgroundSeeThroughShader()",
+			"fabric": "getRenderTypeTextBackgroundSeeThroughProgram()"
+		},
+		{
+			"forge": "getRendertypeTextIntensitySeeThroughShader()",
+			"fabric": "getRenderTypeTextIntensitySeeThroughProgram()"
+		},
+		{
+			"forge": "getRendertypeLightningShader()",
+			"fabric": "getRenderTypeLightningProgram()"
+		},
+		{
+			"forge": "getRendertypeTripwireShader()",
+			"fabric": "getRenderTypeTripwireProgram()"
+		},
+		{
+			"forge": "getRendertypeEndPortalShader()",
+			"fabric": "getRenderTypeEndPortalProgram()"
+		},
+		{
+			"forge": "getRendertypeEndGatewayShader()",
+			"fabric": "getRenderTypeEndGatewayProgram()"
+		},
+		{
+			"forge": "getRendertypeLinesShader()",
+			"fabric": "getRenderTypeLinesProgram()"
+		},
+		{
+			"forge": "getRendertypeCrumblingShader()",
+			"fabric": "getRenderTypeCrumblingProgram()"
+		},
+		{
+			"forge": "getRendertypeGuiShader()",
+			"fabric": "getRenderTypeGuiProgram()"
+		},
+		{
+			"forge": "getRendertypeGuiOverlayShader()",
+			"fabric": "getRenderTypeGuiOverlayProgram()"
+		},
+		{
+			"forge": "getRendertypeGuiTextHighlightShader()",
+			"fabric": "getRenderTypeGuiTextHighlightProgram()"
+		},
+		{
+			"forge": "getRendertypeGuiGhostRecipeOverlayShader()",
+			"fabric": "getRenderTypeGuiGhostRecipeOverlayProgram()"
+		}
+	]
+}

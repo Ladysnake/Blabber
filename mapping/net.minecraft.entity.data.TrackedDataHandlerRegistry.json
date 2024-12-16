@@ -1,0 +1,145 @@
+{
+	"title": "net.minecraft.network.syncher.EntityDataSerializers",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.EntityDataSerializers",
+			"fabric": "net.minecraft.entity.data.TrackedDataHandlerRegistry"
+		},
+		{
+			"forge": "SERIALIZERS",
+			"fabric": "DATA_HANDLERS"
+		},
+		{
+			"forge": "SERIALIZERS",
+			"fabric": "DATA_HANDLERS"
+		},
+		{
+			"forge": "BYTE",
+			"fabric": "BYTE"
+		},
+		{
+			"forge": "INT",
+			"fabric": "INTEGER"
+		},
+		{
+			"forge": "LONG",
+			"fabric": "LONG"
+		},
+		{
+			"forge": "FLOAT",
+			"fabric": "FLOAT"
+		},
+		{
+			"forge": "STRING",
+			"fabric": "STRING"
+		},
+		{
+			"forge": "COMPONENT",
+			"fabric": "TEXT_COMPONENT"
+		},
+		{
+			"forge": "OPTIONAL_COMPONENT",
+			"fabric": "OPTIONAL_TEXT_COMPONENT"
+		},
+		{
+			"forge": "ITEM_STACK",
+			"fabric": "ITEM_STACK"
+		},
+		{
+			"forge": "BLOCK_STATE",
+			"fabric": "BLOCK_STATE"
+		},
+		{
+			"forge": "OPTIONAL_BLOCK_STATE",
+			"fabric": "OPTIONAL_BLOCK_STATE"
+		},
+		{
+			"forge": "BOOLEAN",
+			"fabric": "BOOLEAN"
+		},
+		{
+			"forge": "PARTICLE",
+			"fabric": "PARTICLE"
+		},
+		{
+			"forge": "ROTATIONS",
+			"fabric": "ROTATION"
+		},
+		{
+			"forge": "BLOCK_POS",
+			"fabric": "BLOCK_POS"
+		},
+		{
+			"forge": "OPTIONAL_BLOCK_POS",
+			"fabric": "OPTIONAL_BLOCK_POS"
+		},
+		{
+			"forge": "DIRECTION",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "OPTIONAL_UUID",
+			"fabric": "OPTIONAL_UUID"
+		},
+		{
+			"forge": "OPTIONAL_GLOBAL_POS",
+			"fabric": "OPTIONAL_GLOBAL_POS"
+		},
+		{
+			"forge": "COMPOUND_TAG",
+			"fabric": "NBT_COMPOUND"
+		},
+		{
+			"forge": "VILLAGER_DATA",
+			"fabric": "VILLAGER_DATA"
+		},
+		{
+			"forge": "OPTIONAL_UNSIGNED_INT",
+			"fabric": "OPTIONAL_INT"
+		},
+		{
+			"forge": "POSE",
+			"fabric": "ENTITY_POSE"
+		},
+		{
+			"forge": "CAT_VARIANT",
+			"fabric": "CAT_VARIANT"
+		},
+		{
+			"forge": "FROG_VARIANT",
+			"fabric": "FROG_VARIANT"
+		},
+		{
+			"forge": "PAINTING_VARIANT",
+			"fabric": "PAINTING_VARIANT"
+		},
+		{
+			"forge": "SNIFFER_STATE",
+			"fabric": "SNIFFER_STATE"
+		},
+		{
+			"forge": "VECTOR3",
+			"fabric": "VECTOR3F"
+		},
+		{
+			"forge": "QUATERNION",
+			"fabric": "QUATERNIONF"
+		},
+		{
+			"forge": "registerSerializer(EntityDataSerializer<?> arg0)",
+			"fabric": "register(TrackedDataHandler<?> handler)"
+		},
+		{
+			"forge": "registerSerializer(EntityDataSerializer<?> arg0)",
+			"fabric": "register(TrackedDataHandler<?> handler)"
+		},
+		{
+			"forge": "getSerializer(int arg0)",
+			"fabric": "get(int id)"
+		},
+		{
+			"forge": "getSerializedId(EntityDataSerializer<?> arg0)",
+			"fabric": "getId(TrackedDataHandler<?> handler)"
+		}
+	]
+}

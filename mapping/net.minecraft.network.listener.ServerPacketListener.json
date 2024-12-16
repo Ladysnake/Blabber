@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerPacketListener",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerPacketListener",
+			"fabric": "net.minecraft.network.listener.ServerPacketListener"
+		},
+		{
+			"forge": "shouldPropagateHandlingExceptions()",
+			"fabric": "shouldCrashOnException()"
+		},
+		{
+			"forge": "shouldPropagateHandlingExceptions()",
+			"fabric": "shouldCrashOnException()"
+		}
+	]
+}

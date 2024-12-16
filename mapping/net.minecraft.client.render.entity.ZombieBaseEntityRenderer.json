@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.AbstractZombieRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.AbstractZombieRenderer",
+			"fabric": "net.minecraft.client.render.entity.ZombieBaseEntityRenderer"
+		},
+		{
+			"forge": "ZOMBIE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "ZOMBIE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Zombie arg0)",
+			"fabric": "getTexture(ZombieEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Zombie arg0)",
+			"fabric": "getTexture(ZombieEntity arg0)"
+		},
+		{
+			"forge": "isShaking(T arg0)",
+			"fabric": "isShaking(T arg0)"
+		}
+	]
+}

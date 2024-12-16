@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.biome.BiomeSources",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.BiomeSources",
+			"fabric": "net.minecraft.world.biome.source.BiomeSources"
+		},
+		{
+			"forge": "bootstrap(Registry<com.mojang.serialization.Codec<? extends BiomeSource>> arg0)",
+			"fabric": "registerAndGetDefault(Registry<com.mojang.serialization.Codec<? extends BiomeSource>> registry)"
+		},
+		{
+			"forge": "bootstrap(Registry<com.mojang.serialization.Codec<? extends BiomeSource>> arg0)",
+			"fabric": "registerAndGetDefault(Registry<com.mojang.serialization.Codec<? extends BiomeSource>> registry)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.CubeMap",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.CubeMap",
+			"fabric": "net.minecraft.client.gui.CubeMapRenderer"
+		},
+		{
+			"forge": "SIDES",
+			"fabric": "FACES_COUNT"
+		},
+		{
+			"forge": "SIDES",
+			"fabric": "FACES_COUNT"
+		},
+		{
+			"forge": "images",
+			"fabric": "faces"
+		},
+		{
+			"forge": "render(Minecraft arg0, float arg1, float arg2, float arg3)",
+			"fabric": "draw(MinecraftClient client, float x, float y, float alpha)"
+		},
+		{
+			"forge": "render(Minecraft arg0, float arg1, float arg2, float arg3)",
+			"fabric": "draw(MinecraftClient client, float x, float y, float alpha)"
+		},
+		{
+			"forge": "preload(TextureManager arg0, Executor arg1)",
+			"fabric": "loadTexturesAsync(TextureManager textureManager, Executor executor)"
+		}
+	]
+}

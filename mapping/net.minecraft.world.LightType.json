@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.LightLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.LightLayer",
+			"fabric": "net.minecraft.world.LightType"
+		},
+		{
+			"forge": "SKY",
+			"fabric": "SKY"
+		},
+		{
+			"forge": "SKY",
+			"fabric": "SKY"
+		},
+		{
+			"forge": "BLOCK",
+			"fabric": "BLOCK"
+		}
+	]
+}

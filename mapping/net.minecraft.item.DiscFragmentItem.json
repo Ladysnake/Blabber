@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.DiscFragmentItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.DiscFragmentItem",
+			"fabric": "net.minecraft.item.DiscFragmentItem"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDescription()"
+		}
+	]
+}

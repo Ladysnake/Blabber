@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.renderer.debug.GameEventListenerRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.GameEventListenerRenderer",
+			"fabric": "net.minecraft.client.render.debug.GameEventDebugRenderer"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "LISTENER_RENDER_DIST",
+			"fabric": "field_32899"
+		},
+		{
+			"forge": "BOX_HEIGHT",
+			"fabric": "field_32900"
+		},
+		{
+			"forge": "trackedGameEvents",
+			"fabric": "entries"
+		},
+		{
+			"forge": "trackedListeners",
+			"fabric": "listeners"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, double arg2, double arg3, double arg4)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, double arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, double arg2, double arg3, double arg4)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, double arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "renderFilledBox(PoseStack arg0, MultiBufferSource arg1, AABB arg2, float arg3, float arg4, float arg5, float arg6)",
+			"fabric": "drawBoxIfCameraReady(MatrixStack matrices, VertexConsumerProvider vertexConsumers, Box box, float red, float green, float blue, float alpha)"
+		},
+		{
+			"forge": "trackGameEvent(GameEvent arg0, Vec3 arg1)",
+			"fabric": "addEvent(GameEvent event, Vec3d pos)"
+		},
+		{
+			"forge": "trackListener(PositionSource arg0, int arg1)",
+			"fabric": "addListener(PositionSource positionSource, int range)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.gui.screens.reporting.ChatSelectionLogFiller",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.reporting.ChatSelectionLogFiller",
+			"fabric": "net.minecraft.client.report.MessagesListAdder"
+		},
+		{
+			"forge": "log",
+			"fabric": "log"
+		},
+		{
+			"forge": "log",
+			"fabric": "log"
+		},
+		{
+			"forge": "contextBuilder",
+			"fabric": "contextMessageCollector"
+		},
+		{
+			"forge": "canReport",
+			"fabric": "reportablePredicate"
+		},
+		{
+			"forge": "previousLink",
+			"fabric": "link"
+		},
+		{
+			"forge": "eventId",
+			"fabric": "maxLogIndex"
+		},
+		{
+			"forge": "missedCount",
+			"fabric": "foldedMessageCount"
+		},
+		{
+			"forge": "lastMessage",
+			"fabric": "lastMessage"
+		},
+		{
+			"forge": "fillNextPage(int arg0, ChatSelectionLogFiller$Output arg1)",
+			"fabric": "add(int minAmount, MessagesListAdder$MessagesList messages)"
+		},
+		{
+			"forge": "fillNextPage(int arg0, ChatSelectionLogFiller$Output arg1)",
+			"fabric": "add(int minAmount, MessagesListAdder$MessagesList messages)"
+		},
+		{
+			"forge": "acceptMessage(ChatSelectionLogFiller$Output arg0, LoggedChatMessage$Player arg1)",
+			"fabric": "tryAdd(MessagesListAdder$MessagesList messages, ReceivedMessage$ChatMessage message)"
+		}
+	]
+}

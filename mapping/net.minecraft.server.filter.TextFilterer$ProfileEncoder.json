@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.network.TextFilterClient$JoinOrLeaveEncoder",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.TextFilterClient$JoinOrLeaveEncoder",
+			"fabric": "net.minecraft.server.filter.TextFilterer$ProfileEncoder"
+		},
+		{
+			"forge": "encode(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "encode(com.mojang.authlib.GameProfile gameProfile)"
+		},
+		{
+			"forge": "encode(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "encode(com.mojang.authlib.GameProfile gameProfile)"
+		}
+	]
+}

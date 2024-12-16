@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.data.worldgen.placement.PlacementUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.placement.PlacementUtils",
+			"fabric": "net.minecraft.world.gen.feature.PlacedFeatures"
+		},
+		{
+			"forge": "HEIGHTMAP",
+			"fabric": "MOTION_BLOCKING_HEIGHTMAP"
+		},
+		{
+			"forge": "HEIGHTMAP",
+			"fabric": "MOTION_BLOCKING_HEIGHTMAP"
+		},
+		{
+			"forge": "HEIGHTMAP_TOP_SOLID",
+			"fabric": "OCEAN_FLOOR_WG_HEIGHTMAP"
+		},
+		{
+			"forge": "HEIGHTMAP_WORLD_SURFACE",
+			"fabric": "WORLD_SURFACE_WG_HEIGHTMAP"
+		},
+		{
+			"forge": "HEIGHTMAP_OCEAN_FLOOR",
+			"fabric": "OCEAN_FLOOR_HEIGHTMAP"
+		},
+		{
+			"forge": "FULL_RANGE",
+			"fabric": "BOTTOM_TO_TOP_RANGE"
+		},
+		{
+			"forge": "RANGE_10_10",
+			"fabric": "TEN_ABOVE_AND_BELOW_RANGE"
+		},
+		{
+			"forge": "RANGE_8_8",
+			"fabric": "EIGHT_ABOVE_AND_BELOW_RANGE"
+		},
+		{
+			"forge": "RANGE_4_4",
+			"fabric": "FOUR_ABOVE_AND_BELOW_RANGE"
+		},
+		{
+			"forge": "RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT",
+			"fabric": "BOTTOM_TO_120_RANGE"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "register(BootstapContext<PlacedFeature> arg0, ResourceKey<PlacedFeature> arg1, Holder<ConfiguredFeature<?, ?>> arg2, List<PlacementModifier> arg3)",
+			"fabric": "register(Registerable<PlacedFeature> featureRegisterable, RegistryKey<PlacedFeature> key, RegistryEntry<ConfiguredFeature<?, ?>> feature, List<PlacementModifier> modifiers)"
+		},
+		{
+			"forge": "register(BootstapContext<PlacedFeature> arg0, ResourceKey<PlacedFeature> arg1, Holder<ConfiguredFeature<?, ?>> arg2, PlacementModifier... arg3)",
+			"fabric": "register(Registerable<PlacedFeature> featureRegisterable, RegistryKey<PlacedFeature> key, RegistryEntry<ConfiguredFeature<?, ?>> feature, PlacementModifier... modifiers)"
+		},
+		{
+			"forge": "countExtra(int arg0, float arg1, int arg2)",
+			"fabric": "createCountExtraModifier(int count, float extraChance, int extraCount)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isAir()"
+		},
+		{
+			"forge": "filteredByBlockSurvival(Block arg0)",
+			"fabric": "wouldSurvive(Block block)"
+		},
+		{
+			"forge": "inlinePlaced(Holder<ConfiguredFeature<?, ?>> arg0, PlacementModifier... arg1)",
+			"fabric": "createEntry(RegistryEntry<ConfiguredFeature<?, ?>> feature, PlacementModifier... modifiers)"
+		},
+		{
+			"forge": "inlinePlaced(F arg0, FC arg1, PlacementModifier... arg2)",
+			"fabric": "createEntry(F feature, FC featureConfig, PlacementModifier... modifiers)"
+		},
+		{
+			"forge": "onlyWhenEmpty(F arg0, FC arg1)",
+			"fabric": "createEntry(F feature, FC featureConfig)"
+		},
+		{
+			"forge": "filtered(F arg0, FC arg1, BlockPredicate arg2)",
+			"fabric": "createEntry(F feature, FC featureConfig, BlockPredicate predicate)"
+		}
+	]
+}

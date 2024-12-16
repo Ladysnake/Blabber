@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.LockCode",
+	"items": [
+		{
+			"forge": "net.minecraft.world.LockCode",
+			"fabric": "net.minecraft.inventory.ContainerLock"
+		},
+		{
+			"forge": "NO_LOCK",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "NO_LOCK",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "TAG_LOCK",
+			"fabric": "LOCK_KEY"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "unlocksWith(ItemStack arg0)",
+			"fabric": "canOpen(ItemStack stack)"
+		},
+		{
+			"forge": "unlocksWith(ItemStack arg0)",
+			"fabric": "canOpen(ItemStack stack)"
+		},
+		{
+			"forge": "addToTag(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "fromTag(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		}
+	]
+}

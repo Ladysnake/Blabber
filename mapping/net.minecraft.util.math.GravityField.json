@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.PotentialCalculator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.PotentialCalculator",
+			"fabric": "net.minecraft.util.math.GravityField"
+		},
+		{
+			"forge": "charges",
+			"fabric": "points"
+		},
+		{
+			"forge": "charges",
+			"fabric": "points"
+		},
+		{
+			"forge": "addCharge(BlockPos arg0, double arg1)",
+			"fabric": "addPoint(BlockPos pos, double mass)"
+		},
+		{
+			"forge": "addCharge(BlockPos arg0, double arg1)",
+			"fabric": "addPoint(BlockPos pos, double mass)"
+		},
+		{
+			"forge": "getPotentialEnergyChange(BlockPos arg0, double arg1)",
+			"fabric": "calculate(BlockPos pos, double mass)"
+		}
+	]
+}

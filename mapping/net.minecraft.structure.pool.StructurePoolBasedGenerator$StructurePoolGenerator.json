@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement$Placer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement$Placer",
+			"fabric": "net.minecraft.structure.pool.StructurePoolBasedGenerator$StructurePoolGenerator"
+		},
+		{
+			"forge": "pools",
+			"fabric": "registry"
+		},
+		{
+			"forge": "pools",
+			"fabric": "registry"
+		},
+		{
+			"forge": "maxDepth",
+			"fabric": "maxSize"
+		},
+		{
+			"forge": "chunkGenerator",
+			"fabric": "chunkGenerator"
+		},
+		{
+			"forge": "structureTemplateManager",
+			"fabric": "structureTemplateManager"
+		},
+		{
+			"forge": "pieces",
+			"fabric": "children"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "placing",
+			"fabric": "structurePieces"
+		},
+		{
+			"forge": "tryPlacingChildren(PoolElementStructurePiece arg0, org.apache.commons.lang3.mutable.MutableObject<VoxelShape> arg1, int arg2, boolean arg3, LevelHeightAccessor arg4, RandomState arg5)",
+			"fabric": "generatePiece(PoolStructurePiece piece, org.apache.commons.lang3.mutable.MutableObject<VoxelShape> pieceShape, int minY, boolean modifyBoundingBox, HeightLimitView world, NoiseConfig noiseConfig)"
+		},
+		{
+			"forge": "tryPlacingChildren(PoolElementStructurePiece arg0, org.apache.commons.lang3.mutable.MutableObject<VoxelShape> arg1, int arg2, boolean arg3, LevelHeightAccessor arg4, RandomState arg5)",
+			"fabric": "generatePiece(PoolStructurePiece piece, org.apache.commons.lang3.mutable.MutableObject<VoxelShape> pieceShape, int minY, boolean modifyBoundingBox, HeightLimitView world, NoiseConfig noiseConfig)"
+		},
+		{
+			"forge": "readPoolName(StructureTemplate$StructureBlockInfo arg0)",
+			"fabric": "getPoolKey(StructureTemplate$StructureBlockInfo blockInfo)"
+		}
+	]
+}

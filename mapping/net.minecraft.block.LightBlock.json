@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.block.LightBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.LightBlock",
+			"fabric": "net.minecraft.block.LightBlock"
+		},
+		{
+			"forge": "MAX_LEVEL",
+			"fabric": "field_33722"
+		},
+		{
+			"forge": "MAX_LEVEL",
+			"fabric": "field_33722"
+		},
+		{
+			"forge": "LEVEL",
+			"fabric": "LEVEL_15"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "LIGHT_EMISSION",
+			"fabric": "STATE_TO_LUMINANCE"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "propagatesSkylightDown(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "isTransparent(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "getShadeBrightness(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getAmbientOcclusionLightLevel(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "getCloneItemStack(BlockGetter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getPickStack(BlockView arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "setLightOnStack(ItemStack arg0, int arg1)",
+			"fabric": "addNbtForLevel(ItemStack stack, int level)"
+		}
+	]
+}

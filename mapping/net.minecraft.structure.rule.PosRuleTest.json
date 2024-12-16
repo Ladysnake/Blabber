@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTest",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTest",
+			"fabric": "net.minecraft.structure.rule.PosRuleTest"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "BASE_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "BASE_CODEC"
+		},
+		{
+			"forge": "test(BlockPos arg0, BlockPos arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "test(BlockPos originalPos, BlockPos currentPos, BlockPos pivot, Random random)"
+		},
+		{
+			"forge": "test(BlockPos arg0, BlockPos arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "test(BlockPos originalPos, BlockPos currentPos, BlockPos pivot, Random random)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.ChickenRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.ChickenRenderer",
+			"fabric": "net.minecraft.client.render.entity.ChickenEntityRenderer"
+		},
+		{
+			"forge": "CHICKEN_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "CHICKEN_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Chicken arg0)",
+			"fabric": "getTexture(ChickenEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Chicken arg0)",
+			"fabric": "getTexture(ChickenEntity arg0)"
+		},
+		{
+			"forge": "getBob(Chicken arg0, float arg1)",
+			"fabric": "getAnimationProgress(ChickenEntity arg0, float arg1)"
+		}
+	]
+}

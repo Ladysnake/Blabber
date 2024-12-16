@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.model.ElytraModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.ElytraModel",
+			"fabric": "net.minecraft.client.render.entity.model.ElytraEntityModel"
+		},
+		{
+			"forge": "rightWing",
+			"fabric": "rightWing"
+		},
+		{
+			"forge": "rightWing",
+			"fabric": "rightWing"
+		},
+		{
+			"forge": "leftWing",
+			"fabric": "leftWing"
+		},
+		{
+			"forge": "createLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "headParts()",
+			"fabric": "getHeadParts()"
+		},
+		{
+			"forge": "bodyParts()",
+			"fabric": "getBodyParts()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

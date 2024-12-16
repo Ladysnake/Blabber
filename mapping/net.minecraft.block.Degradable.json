@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.ChangeOverTimeBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.ChangeOverTimeBlock",
+			"fabric": "net.minecraft.block.Degradable"
+		},
+		{
+			"forge": "SCAN_DISTANCE",
+			"fabric": "DEGRADING_RANGE"
+		},
+		{
+			"forge": "SCAN_DISTANCE",
+			"fabric": "DEGRADING_RANGE"
+		},
+		{
+			"forge": "getNext(BlockState arg0)",
+			"fabric": "getDegradationResult(BlockState state)"
+		},
+		{
+			"forge": "getNext(BlockState arg0)",
+			"fabric": "getDegradationResult(BlockState state)"
+		},
+		{
+			"forge": "getChanceModifier()",
+			"fabric": "getDegradationChanceMultiplier()"
+		},
+		{
+			"forge": "onRandomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "tickDegradation(BlockState state, ServerWorld world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "getAge()",
+			"fabric": "getDegradationLevel()"
+		},
+		{
+			"forge": "applyChangeOverTime(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "tryDegrade(BlockState state, ServerWorld world, BlockPos pos, Random random)"
+		}
+	]
+}

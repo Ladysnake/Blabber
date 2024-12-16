@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.util.ResourceLocationPattern",
+	"items": [
+		{
+			"forge": "net.minecraft.util.ResourceLocationPattern",
+			"fabric": "net.minecraft.resource.metadata.BlockEntry"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "namespacePattern",
+			"fabric": "namespace"
+		},
+		{
+			"forge": "namespacePredicate",
+			"fabric": "namespacePredicate"
+		},
+		{
+			"forge": "pathPattern",
+			"fabric": "path"
+		},
+		{
+			"forge": "pathPredicate",
+			"fabric": "pathPredicate"
+		},
+		{
+			"forge": "locationPredicate",
+			"fabric": "identifierPredicate"
+		},
+		{
+			"forge": "namespacePredicate()",
+			"fabric": "getNamespacePredicate()"
+		},
+		{
+			"forge": "namespacePredicate()",
+			"fabric": "getNamespacePredicate()"
+		},
+		{
+			"forge": "pathPredicate()",
+			"fabric": "getPathPredicate()"
+		},
+		{
+			"forge": "locationPredicate()",
+			"fabric": "getIdentifierPredicate()"
+		}
+	]
+}

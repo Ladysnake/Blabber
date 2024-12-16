@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.core.Cursor3D",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Cursor3D",
+			"fabric": "net.minecraft.util.CuboidBlockIterator"
+		},
+		{
+			"forge": "TYPE_INSIDE",
+			"fabric": "field_33084"
+		},
+		{
+			"forge": "TYPE_INSIDE",
+			"fabric": "field_33084"
+		},
+		{
+			"forge": "TYPE_FACE",
+			"fabric": "field_33085"
+		},
+		{
+			"forge": "TYPE_EDGE",
+			"fabric": "field_33086"
+		},
+		{
+			"forge": "TYPE_CORNER",
+			"fabric": "field_33087"
+		},
+		{
+			"forge": "originX",
+			"fabric": "startX"
+		},
+		{
+			"forge": "originY",
+			"fabric": "startY"
+		},
+		{
+			"forge": "originZ",
+			"fabric": "startZ"
+		},
+		{
+			"forge": "width",
+			"fabric": "sizeX"
+		},
+		{
+			"forge": "height",
+			"fabric": "sizeY"
+		},
+		{
+			"forge": "depth",
+			"fabric": "sizeZ"
+		},
+		{
+			"forge": "end",
+			"fabric": "totalSize"
+		},
+		{
+			"forge": "index",
+			"fabric": "blocksIterated"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "advance()",
+			"fabric": "step()"
+		},
+		{
+			"forge": "advance()",
+			"fabric": "step()"
+		},
+		{
+			"forge": "nextX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "nextY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "nextZ()",
+			"fabric": "getZ()"
+		},
+		{
+			"forge": "getNextType()",
+			"fabric": "getEdgeCoordinatesCount()"
+		}
+	]
+}

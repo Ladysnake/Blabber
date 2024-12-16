@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal",
+			"fabric": "net.minecraft.entity.ai.goal.WanderAroundFarGoal"
+		},
+		{
+			"forge": "PROBABILITY",
+			"fabric": "CHANCE"
+		},
+		{
+			"forge": "PROBABILITY",
+			"fabric": "CHANCE"
+		},
+		{
+			"forge": "probability",
+			"fabric": "probability"
+		},
+		{
+			"forge": "getPosition()",
+			"fabric": "getWanderTarget()"
+		},
+		{
+			"forge": "getPosition()",
+			"fabric": "getWanderTarget()"
+		}
+	]
+}

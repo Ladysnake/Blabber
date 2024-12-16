@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.flat.FlatLayerInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.flat.FlatLayerInfo",
+			"fabric": "net.minecraft.world.gen.chunk.FlatChunkGeneratorLayer"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "height",
+			"fabric": "thickness"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getThickness()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getThickness()"
+		},
+		{
+			"forge": "getBlockState()",
+			"fabric": "getBlockState()"
+		}
+	]
+}

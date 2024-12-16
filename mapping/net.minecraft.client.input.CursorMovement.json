@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.gui.components.Whence",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.Whence",
+			"fabric": "net.minecraft.client.input.CursorMovement"
+		},
+		{
+			"forge": "ABSOLUTE",
+			"fabric": "ABSOLUTE"
+		},
+		{
+			"forge": "ABSOLUTE",
+			"fabric": "ABSOLUTE"
+		},
+		{
+			"forge": "RELATIVE",
+			"fabric": "RELATIVE"
+		},
+		{
+			"forge": "END",
+			"fabric": "END"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhaseManager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhaseManager",
+			"fabric": "net.minecraft.entity.boss.dragon.phase.PhaseManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "dragon",
+			"fabric": "dragon"
+		},
+		{
+			"forge": "phases",
+			"fabric": "phases"
+		},
+		{
+			"forge": "currentPhase",
+			"fabric": "current"
+		},
+		{
+			"forge": "setPhase(EnderDragonPhase<?> arg0)",
+			"fabric": "setPhase(PhaseType<?> type)"
+		},
+		{
+			"forge": "setPhase(EnderDragonPhase<?> arg0)",
+			"fabric": "setPhase(PhaseType<?> type)"
+		},
+		{
+			"forge": "getCurrentPhase()",
+			"fabric": "getCurrent()"
+		},
+		{
+			"forge": "getPhase(EnderDragonPhase<T> arg0)",
+			"fabric": "create(PhaseType<T> type)"
+		}
+	]
+}

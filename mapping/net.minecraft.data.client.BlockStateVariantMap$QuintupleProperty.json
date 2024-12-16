@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.data.models.blockstates.PropertyDispatch$C5",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.blockstates.PropertyDispatch$C5",
+			"fabric": "net.minecraft.data.client.BlockStateVariantMap$QuintupleProperty"
+		},
+		{
+			"forge": "property1",
+			"fabric": "first"
+		},
+		{
+			"forge": "property1",
+			"fabric": "first"
+		},
+		{
+			"forge": "property2",
+			"fabric": "second"
+		},
+		{
+			"forge": "property3",
+			"fabric": "third"
+		},
+		{
+			"forge": "property4",
+			"fabric": "fourth"
+		},
+		{
+			"forge": "property5",
+			"fabric": "fifth"
+		},
+		{
+			"forge": "getDefinedProperties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "getDefinedProperties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "select(T1 arg0, T2 arg1, T3 arg2, T4 arg3, T5 arg4, List<Variant> arg5)",
+			"fabric": "register(T1 firstValue, T2 secondValue, T3 thirdValue, T4 fourthValue, T5 fifthValue, List<BlockStateVariant> variants)"
+		},
+		{
+			"forge": "select(T1 arg0, T2 arg1, T3 arg2, T4 arg3, T5 arg4, Variant arg5)",
+			"fabric": "register(T1 firstValue, T2 secondValue, T3 thirdValue, T4 fourthValue, T5 fifthValue, BlockStateVariant variant)"
+		},
+		{
+			"forge": "generate(PropertyDispatch$PentaFunction<T1, T2, T3, T4, T5, Variant> arg0)",
+			"fabric": "register(BlockStateVariantMap$QuintFunction<T1, T2, T3, T4, T5, BlockStateVariant> variantFactory)"
+		},
+		{
+			"forge": "generateList(PropertyDispatch$PentaFunction<T1, T2, T3, T4, T5, List<Variant>> arg0)",
+			"fabric": "registerVariants(BlockStateVariantMap$QuintFunction<T1, T2, T3, T4, T5, List<BlockStateVariant>> variantFactory)"
+		}
+	]
+}

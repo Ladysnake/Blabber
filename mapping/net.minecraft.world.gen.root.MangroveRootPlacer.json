@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
+			"fabric": "net.minecraft.world.gen.root.MangroveRootPlacer"
+		},
+		{
+			"forge": "ROOT_WIDTH_LIMIT",
+			"fabric": "field_38769"
+		},
+		{
+			"forge": "ROOT_WIDTH_LIMIT",
+			"fabric": "field_38769"
+		},
+		{
+			"forge": "ROOT_LENGTH_LIMIT",
+			"fabric": "field_38770"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "mangroveRootPlacement",
+			"fabric": "mangroveRootPlacement"
+		},
+		{
+			"forge": "placeRoots(LevelSimulatedReader arg0, BiConsumer<BlockPos, BlockState> arg1, RandomSource arg2, BlockPos arg3, BlockPos arg4, TreeConfiguration arg5)",
+			"fabric": "generate(TestableWorld arg0, BiConsumer<BlockPos, BlockState> arg1, Random arg2, BlockPos arg3, BlockPos arg4, TreeFeatureConfig arg5)"
+		},
+		{
+			"forge": "placeRoots(LevelSimulatedReader arg0, BiConsumer<BlockPos, BlockState> arg1, RandomSource arg2, BlockPos arg3, BlockPos arg4, TreeConfiguration arg5)",
+			"fabric": "generate(TestableWorld arg0, BiConsumer<BlockPos, BlockState> arg1, Random arg2, BlockPos arg3, BlockPos arg4, TreeFeatureConfig arg5)"
+		},
+		{
+			"forge": "simulateRoots(LevelSimulatedReader arg0, RandomSource arg1, BlockPos arg2, Direction arg3, BlockPos arg4, List<BlockPos> arg5, int arg6)",
+			"fabric": "canGrow(TestableWorld world, Random random, BlockPos pos, Direction direction, BlockPos origin, List<BlockPos> offshootPositions, int rootLength)"
+		},
+		{
+			"forge": "potentialRootPositions(BlockPos arg0, Direction arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "getOffshootPositions(BlockPos pos, Direction direction, Random random, BlockPos origin)"
+		},
+		{
+			"forge": "canPlaceRoot(LevelSimulatedReader arg0, BlockPos arg1)",
+			"fabric": "canGrowThrough(TestableWorld arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "placeRoot(LevelSimulatedReader arg0, BiConsumer<BlockPos, BlockState> arg1, RandomSource arg2, BlockPos arg3, TreeConfiguration arg4)",
+			"fabric": "placeRoots(TestableWorld arg0, BiConsumer<BlockPos, BlockState> arg1, Random arg2, BlockPos arg3, TreeFeatureConfig arg4)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

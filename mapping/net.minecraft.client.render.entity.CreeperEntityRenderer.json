@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.entity.CreeperRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.CreeperRenderer",
+			"fabric": "net.minecraft.client.render.entity.CreeperEntityRenderer"
+		},
+		{
+			"forge": "CREEPER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "CREEPER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "scale(Creeper arg0, PoseStack arg1, float arg2)",
+			"fabric": "scale(CreeperEntity arg0, MatrixStack arg1, float arg2)"
+		},
+		{
+			"forge": "scale(Creeper arg0, PoseStack arg1, float arg2)",
+			"fabric": "scale(CreeperEntity arg0, MatrixStack arg1, float arg2)"
+		},
+		{
+			"forge": "getWhiteOverlayProgress(Creeper arg0, float arg1)",
+			"fabric": "getAnimationCounter(CreeperEntity arg0, float arg1)"
+		},
+		{
+			"forge": "getTextureLocation(Creeper arg0)",
+			"fabric": "getTexture(CreeperEntity arg0)"
+		}
+	]
+}

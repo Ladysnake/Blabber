@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure",
+			"fabric": "net.minecraft.world.gen.structure.NetherFossilStructure"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

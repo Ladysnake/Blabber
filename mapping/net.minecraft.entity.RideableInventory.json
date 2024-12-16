@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.HasCustomInventoryScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.HasCustomInventoryScreen",
+			"fabric": "net.minecraft.entity.RideableInventory"
+		},
+		{
+			"forge": "openCustomInventoryScreen(Player arg0)",
+			"fabric": "openInventory(PlayerEntity player)"
+		},
+		{
+			"forge": "openCustomInventoryScreen(Player arg0)",
+			"fabric": "openInventory(PlayerEntity player)"
+		}
+	]
+}

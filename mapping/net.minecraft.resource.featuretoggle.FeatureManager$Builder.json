@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.flag.FeatureFlagRegistry$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.flag.FeatureFlagRegistry$Builder",
+			"fabric": "net.minecraft.resource.featuretoggle.FeatureManager$Builder"
+		},
+		{
+			"forge": "universe",
+			"fabric": "universe"
+		},
+		{
+			"forge": "universe",
+			"fabric": "universe"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "flags",
+			"fabric": "featureFlags"
+		},
+		{
+			"forge": "createVanilla(String arg0)",
+			"fabric": "addVanillaFlag(String feature)"
+		},
+		{
+			"forge": "createVanilla(String arg0)",
+			"fabric": "addVanillaFlag(String feature)"
+		},
+		{
+			"forge": "create(ResourceLocation arg0)",
+			"fabric": "addFlag(Identifier feature)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

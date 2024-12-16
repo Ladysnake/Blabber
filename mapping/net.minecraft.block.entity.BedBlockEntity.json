@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BedBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BedBlockEntity",
+			"fabric": "net.minecraft.block.entity.BedBlockEntity"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "getUpdatePacket()",
+			"fabric": "toUpdatePacket()"
+		},
+		{
+			"forge": "getUpdatePacket()",
+			"fabric": "toUpdatePacket()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "setColor(DyeColor arg0)",
+			"fabric": "setColor(DyeColor color)"
+		}
+	]
+}

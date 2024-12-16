@@ -1,0 +1,73 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$SourceFactor",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$SourceFactor",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$SrcFactor"
+		},
+		{
+			"forge": "CONSTANT_ALPHA",
+			"fabric": "CONSTANT_ALPHA"
+		},
+		{
+			"forge": "CONSTANT_ALPHA",
+			"fabric": "CONSTANT_ALPHA"
+		},
+		{
+			"forge": "CONSTANT_COLOR",
+			"fabric": "CONSTANT_COLOR"
+		},
+		{
+			"forge": "DST_ALPHA",
+			"fabric": "DST_ALPHA"
+		},
+		{
+			"forge": "DST_COLOR",
+			"fabric": "DST_COLOR"
+		},
+		{
+			"forge": "ONE",
+			"fabric": "ONE"
+		},
+		{
+			"forge": "ONE_MINUS_CONSTANT_ALPHA",
+			"fabric": "ONE_MINUS_CONSTANT_ALPHA"
+		},
+		{
+			"forge": "ONE_MINUS_CONSTANT_COLOR",
+			"fabric": "ONE_MINUS_CONSTANT_COLOR"
+		},
+		{
+			"forge": "ONE_MINUS_DST_ALPHA",
+			"fabric": "ONE_MINUS_DST_ALPHA"
+		},
+		{
+			"forge": "ONE_MINUS_DST_COLOR",
+			"fabric": "ONE_MINUS_DST_COLOR"
+		},
+		{
+			"forge": "ONE_MINUS_SRC_ALPHA",
+			"fabric": "ONE_MINUS_SRC_ALPHA"
+		},
+		{
+			"forge": "ONE_MINUS_SRC_COLOR",
+			"fabric": "ONE_MINUS_SRC_COLOR"
+		},
+		{
+			"forge": "SRC_ALPHA",
+			"fabric": "SRC_ALPHA"
+		},
+		{
+			"forge": "SRC_ALPHA_SATURATE",
+			"fabric": "SRC_ALPHA_SATURATE"
+		},
+		{
+			"forge": "SRC_COLOR",
+			"fabric": "SRC_COLOR"
+		},
+		{
+			"forge": "ZERO",
+			"fabric": "ZERO"
+		}
+	]
+}

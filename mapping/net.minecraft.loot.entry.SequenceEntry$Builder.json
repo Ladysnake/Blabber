@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.entries.SequentialEntry$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.entries.SequentialEntry$Builder",
+			"fabric": "net.minecraft.loot.entry.SequenceEntry$Builder"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "then(LootPoolEntryContainer$Builder<?> arg0)",
+			"fabric": "groupEntry(LootPoolEntry$Builder<?> arg0)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.tags.TagManager$LoadResult",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.TagManager$LoadResult",
+			"fabric": "net.minecraft.registry.tag.TagManagerLoader$RegistryTags"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "tags",
+			"fabric": "tags"
+		},
+		{
+			"forge": "key()",
+			"fabric": "key()"
+		},
+		{
+			"forge": "key()",
+			"fabric": "key()"
+		},
+		{
+			"forge": "tags()",
+			"fabric": "tags()"
+		}
+	]
+}

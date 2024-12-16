@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.particle.HugeExplosionSeedParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.HugeExplosionSeedParticle",
+			"fabric": "net.minecraft.client.particle.ExplosionEmitterParticle"
+		},
+		{
+			"forge": "life",
+			"fabric": "age_"
+		},
+		{
+			"forge": "life",
+			"fabric": "age_"
+		},
+		{
+			"forge": "lifeTime",
+			"fabric": "maxAge_"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

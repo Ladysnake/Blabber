@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.network.SkipPacketException",
+	"items": [
+		{
+			"forge": "net.minecraft.network.SkipPacketException",
+			"fabric": "net.minecraft.network.PacketEncoderException"
+		}
+	]
+}

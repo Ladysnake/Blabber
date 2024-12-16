@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.dimension.LevelStem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.dimension.LevelStem",
+			"fabric": "net.minecraft.world.dimension.DimensionOptions"
+		},
+		{
+			"forge": "type",
+			"fabric": "dimensionTypeEntry"
+		},
+		{
+			"forge": "type",
+			"fabric": "dimensionTypeEntry"
+		},
+		{
+			"forge": "generator",
+			"fabric": "chunkGenerator"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "OVERWORLD",
+			"fabric": "OVERWORLD"
+		},
+		{
+			"forge": "NETHER",
+			"fabric": "NETHER"
+		},
+		{
+			"forge": "END",
+			"fabric": "END"
+		},
+		{
+			"forge": "type()",
+			"fabric": "dimensionTypeEntry()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "dimensionTypeEntry()"
+		},
+		{
+			"forge": "generator()",
+			"fabric": "chunkGenerator()"
+		}
+	]
+}

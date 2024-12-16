@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.nbt.TagTypes",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.TagTypes",
+			"fabric": "net.minecraft.nbt.NbtTypes"
+		},
+		{
+			"forge": "TYPES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "TYPES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "getType(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "getType(int arg0)",
+			"fabric": "byId(int id)"
+		}
+	]
+}

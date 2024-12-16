@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.item.alchemy.PotionBrewing$Mix",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.alchemy.PotionBrewing$Mix",
+			"fabric": "net.minecraft.recipe.BrewingRecipeRegistry$Recipe"
+		},
+		{
+			"forge": "from",
+			"fabric": "input"
+		},
+		{
+			"forge": "from",
+			"fabric": "input"
+		},
+		{
+			"forge": "ingredient",
+			"fabric": "ingredient"
+		},
+		{
+			"forge": "to",
+			"fabric": "output"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.ShowTradesToPlayer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.ShowTradesToPlayer",
+			"fabric": "net.minecraft.entity.ai.brain.task.HoldTradeOffersTask"
+		},
+		{
+			"forge": "MAX_LOOK_TIME",
+			"fabric": "RUN_INTERVAL"
+		},
+		{
+			"forge": "MAX_LOOK_TIME",
+			"fabric": "RUN_INTERVAL"
+		},
+		{
+			"forge": "STARTING_LOOK_TIME",
+			"fabric": "OFFER_SHOWING_INTERVAL"
+		},
+		{
+			"forge": "playerItemStack",
+			"fabric": "customerHeldStack"
+		},
+		{
+			"forge": "displayItems",
+			"fabric": "offers"
+		},
+		{
+			"forge": "cycleCounter",
+			"fabric": "offerShownTicks"
+		},
+		{
+			"forge": "displayIndex",
+			"fabric": "offerIndex"
+		},
+		{
+			"forge": "lookTime",
+			"fabric": "ticksLeft"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "findItemsToDisplay(LivingEntity arg0, Villager arg1)",
+			"fabric": "setupOffers(LivingEntity customer, VillagerEntity villager)"
+		},
+		{
+			"forge": "displayFirstItem(Villager arg0)",
+			"fabric": "holdOffer(VillagerEntity villager)"
+		},
+		{
+			"forge": "updateDisplayItems(Villager arg0)",
+			"fabric": "loadPossibleOffers(VillagerEntity villager)"
+		},
+		{
+			"forge": "playerItemStackMatchesCostOfOffer(MerchantOffer arg0)",
+			"fabric": "isPossible(TradeOffer offer)"
+		},
+		{
+			"forge": "clearHeldItem(Villager arg0)",
+			"fabric": "holdNothing(VillagerEntity villager)"
+		},
+		{
+			"forge": "displayAsHeldItem(Villager arg0, ItemStack arg1)",
+			"fabric": "holdOffer(VillagerEntity villager, ItemStack stack)"
+		},
+		{
+			"forge": "lookAtTarget(Villager arg0)",
+			"fabric": "findPotentialCustomer(VillagerEntity villager)"
+		},
+		{
+			"forge": "displayCyclingItems(Villager arg0)",
+			"fabric": "refreshShownOffer(VillagerEntity villager)"
+		}
+	]
+}

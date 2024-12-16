@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.levelgen.GenerationStep$Decoration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.GenerationStep$Decoration",
+			"fabric": "net.minecraft.world.gen.GenerationStep$Feature"
+		},
+		{
+			"forge": "RAW_GENERATION",
+			"fabric": "RAW_GENERATION"
+		},
+		{
+			"forge": "RAW_GENERATION",
+			"fabric": "RAW_GENERATION"
+		},
+		{
+			"forge": "LAKES",
+			"fabric": "LAKES"
+		},
+		{
+			"forge": "LOCAL_MODIFICATIONS",
+			"fabric": "LOCAL_MODIFICATIONS"
+		},
+		{
+			"forge": "UNDERGROUND_STRUCTURES",
+			"fabric": "UNDERGROUND_STRUCTURES"
+		},
+		{
+			"forge": "SURFACE_STRUCTURES",
+			"fabric": "SURFACE_STRUCTURES"
+		},
+		{
+			"forge": "STRONGHOLDS",
+			"fabric": "STRONGHOLDS"
+		},
+		{
+			"forge": "UNDERGROUND_ORES",
+			"fabric": "UNDERGROUND_ORES"
+		},
+		{
+			"forge": "UNDERGROUND_DECORATION",
+			"fabric": "UNDERGROUND_DECORATION"
+		},
+		{
+			"forge": "FLUID_SPRINGS",
+			"fabric": "FLUID_SPRINGS"
+		},
+		{
+			"forge": "VEGETAL_DECORATION",
+			"fabric": "VEGETAL_DECORATION"
+		},
+		{
+			"forge": "TOP_LAYER_MODIFICATION",
+			"fabric": "TOP_LAYER_MODIFICATION"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

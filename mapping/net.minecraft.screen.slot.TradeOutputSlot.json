@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.inventory.MerchantResultSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.MerchantResultSlot",
+			"fabric": "net.minecraft.screen.slot.TradeOutputSlot"
+		},
+		{
+			"forge": "slots",
+			"fabric": "merchantInventory"
+		},
+		{
+			"forge": "slots",
+			"fabric": "merchantInventory"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "removeCount",
+			"fabric": "amount"
+		},
+		{
+			"forge": "merchant",
+			"fabric": "merchant"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "remove(int arg0)",
+			"fabric": "takeStack(int arg0)"
+		},
+		{
+			"forge": "onQuickCraft(ItemStack arg0, int arg1)",
+			"fabric": "onCrafted(ItemStack arg0, int arg1)"
+		},
+		{
+			"forge": "checkTakeAchievements(ItemStack arg0)",
+			"fabric": "onCrafted(ItemStack arg0)"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeItem(PlayerEntity arg0, ItemStack arg1)"
+		}
+	]
+}

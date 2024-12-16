@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.packs.resources.SimpleReloadInstance$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.SimpleReloadInstance$1",
+			"fabric": "net.minecraft.resource.SimpleResourceReload$1"
+		},
+		{
+			"forge": "wait(T arg0)",
+			"fabric": "whenPrepared(T arg0)"
+		},
+		{
+			"forge": "wait(T arg0)",
+			"fabric": "whenPrepared(T arg0)"
+		}
+	]
+}

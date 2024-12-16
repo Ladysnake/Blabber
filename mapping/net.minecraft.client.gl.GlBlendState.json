@@ -1,0 +1,65 @@
+{
+	"title": "com.mojang.blaze3d.shaders.BlendMode",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.shaders.BlendMode",
+			"fabric": "net.minecraft.client.gl.GlBlendState"
+		},
+		{
+			"forge": "lastApplied",
+			"fabric": "activeBlendState"
+		},
+		{
+			"forge": "lastApplied",
+			"fabric": "activeBlendState"
+		},
+		{
+			"forge": "srcColorFactor",
+			"fabric": "srcRgb"
+		},
+		{
+			"forge": "srcAlphaFactor",
+			"fabric": "srcAlpha"
+		},
+		{
+			"forge": "dstColorFactor",
+			"fabric": "dstRgb"
+		},
+		{
+			"forge": "dstAlphaFactor",
+			"fabric": "dstAlpha"
+		},
+		{
+			"forge": "blendFunc",
+			"fabric": "mode"
+		},
+		{
+			"forge": "separateBlend",
+			"fabric": "separateBlend"
+		},
+		{
+			"forge": "opaque",
+			"fabric": "blendDisabled"
+		},
+		{
+			"forge": "apply()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "apply()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "isOpaque()",
+			"fabric": "isBlendDisabled()"
+		},
+		{
+			"forge": "stringToBlendFunc(String arg0)",
+			"fabric": "getModeFromString(String name)"
+		},
+		{
+			"forge": "stringToBlendFactor(String arg0)",
+			"fabric": "getFactorFromString(String expression)"
+		}
+	]
+}

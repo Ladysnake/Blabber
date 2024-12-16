@@ -1,0 +1,257 @@
+{
+	"title": "net.minecraft.world.entity.projectile.AbstractArrow",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.AbstractArrow",
+			"fabric": "net.minecraft.entity.projectile.PersistentProjectileEntity"
+		},
+		{
+			"forge": "ARROW_BASE_DAMAGE",
+			"fabric": "field_30657"
+		},
+		{
+			"forge": "ARROW_BASE_DAMAGE",
+			"fabric": "field_30657"
+		},
+		{
+			"forge": "ID_FLAGS",
+			"fabric": "PROJECTILE_FLAGS"
+		},
+		{
+			"forge": "PIERCE_LEVEL",
+			"fabric": "PIERCE_LEVEL"
+		},
+		{
+			"forge": "FLAG_CRIT",
+			"fabric": "CRITICAL_FLAG"
+		},
+		{
+			"forge": "FLAG_NOPHYSICS",
+			"fabric": "NO_CLIP_FLAG"
+		},
+		{
+			"forge": "FLAG_CROSSBOW",
+			"fabric": "SHOT_FROM_CROSSBOW_FLAG"
+		},
+		{
+			"forge": "lastState",
+			"fabric": "inBlockState"
+		},
+		{
+			"forge": "inGround",
+			"fabric": "inGround"
+		},
+		{
+			"forge": "inGroundTime",
+			"fabric": "inGroundTime"
+		},
+		{
+			"forge": "pickup",
+			"fabric": "pickupType"
+		},
+		{
+			"forge": "shakeTime",
+			"fabric": "shake"
+		},
+		{
+			"forge": "life",
+			"fabric": "life"
+		},
+		{
+			"forge": "baseDamage",
+			"fabric": "damage"
+		},
+		{
+			"forge": "knockback",
+			"fabric": "punch"
+		},
+		{
+			"forge": "soundEvent",
+			"fabric": "sound"
+		},
+		{
+			"forge": "piercingIgnoreEntityIds",
+			"fabric": "piercedEntities"
+		},
+		{
+			"forge": "piercedAndKilledEntities",
+			"fabric": "piercingKilledEntities"
+		},
+		{
+			"forge": "setSoundEvent(SoundEvent arg0)",
+			"fabric": "setSound(SoundEvent sound)"
+		},
+		{
+			"forge": "setSoundEvent(SoundEvent arg0)",
+			"fabric": "setSound(SoundEvent sound)"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "shoot(double arg0, double arg1, double arg2, float arg3, float arg4)",
+			"fabric": "setVelocity(double arg0, double arg1, double arg2, float arg3, float arg4)"
+		},
+		{
+			"forge": "lerpTo(double arg0, double arg1, double arg2, float arg3, float arg4, int arg5, boolean arg6)",
+			"fabric": "updateTrackedPositionAndAngles(double arg0, double arg1, double arg2, float arg3, float arg4, int arg5, boolean arg6)"
+		},
+		{
+			"forge": "lerpMotion(double arg0, double arg1, double arg2)",
+			"fabric": "setVelocityClient(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "shouldFall()",
+			"fabric": "shouldFall()"
+		},
+		{
+			"forge": "startFalling()",
+			"fabric": "fall()"
+		},
+		{
+			"forge": "move(MoverType arg0, Vec3 arg1)",
+			"fabric": "move(MovementType arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "tickDespawn()",
+			"fabric": "age()"
+		},
+		{
+			"forge": "resetPiercedEntities()",
+			"fabric": "clearPiercingStatus()"
+		},
+		{
+			"forge": "onHitEntity(EntityHitResult arg0)",
+			"fabric": "onEntityHit(EntityHitResult arg0)"
+		},
+		{
+			"forge": "onHitBlock(BlockHitResult arg0)",
+			"fabric": "onBlockHit(BlockHitResult arg0)"
+		},
+		{
+			"forge": "getDefaultHitGroundSoundEvent()",
+			"fabric": "getHitSound()"
+		},
+		{
+			"forge": "getHitGroundSoundEvent()",
+			"fabric": "getSound()"
+		},
+		{
+			"forge": "doPostHurtEffects(LivingEntity arg0)",
+			"fabric": "onHit(LivingEntity target)"
+		},
+		{
+			"forge": "findHitEntity(Vec3 arg0, Vec3 arg1)",
+			"fabric": "getEntityCollision(Vec3d currentPosition, Vec3d nextPosition)"
+		},
+		{
+			"forge": "canHitEntity(Entity arg0)",
+			"fabric": "canHit(Entity arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "setOwner(Entity arg0)",
+			"fabric": "setOwner(Entity arg0)"
+		},
+		{
+			"forge": "playerTouch(Player arg0)",
+			"fabric": "onPlayerCollision(PlayerEntity arg0)"
+		},
+		{
+			"forge": "tryPickup(Player arg0)",
+			"fabric": "tryPickup(PlayerEntity player)"
+		},
+		{
+			"forge": "getPickupItem()",
+			"fabric": "asItemStack()"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "setBaseDamage(double arg0)",
+			"fabric": "setDamage(double damage)"
+		},
+		{
+			"forge": "getBaseDamage()",
+			"fabric": "getDamage()"
+		},
+		{
+			"forge": "setKnockback(int arg0)",
+			"fabric": "setPunch(int punch)"
+		},
+		{
+			"forge": "getKnockback()",
+			"fabric": "getPunch()"
+		},
+		{
+			"forge": "isAttackable()",
+			"fabric": "isAttackable()"
+		},
+		{
+			"forge": "getEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "setCritArrow(boolean arg0)",
+			"fabric": "setCritical(boolean critical)"
+		},
+		{
+			"forge": "setPierceLevel(byte arg0)",
+			"fabric": "setPierceLevel(byte level)"
+		},
+		{
+			"forge": "setFlag(int arg0, boolean arg1)",
+			"fabric": "setProjectileFlag(int index, boolean flag)"
+		},
+		{
+			"forge": "isCritArrow()",
+			"fabric": "isCritical()"
+		},
+		{
+			"forge": "shotFromCrossbow()",
+			"fabric": "isShotFromCrossbow()"
+		},
+		{
+			"forge": "getPierceLevel()",
+			"fabric": "getPierceLevel()"
+		},
+		{
+			"forge": "setEnchantmentEffectsFromEntity(LivingEntity arg0, float arg1)",
+			"fabric": "applyEnchantmentEffects(LivingEntity entity, float damageModifier)"
+		},
+		{
+			"forge": "getWaterInertia()",
+			"fabric": "getDragInWater()"
+		},
+		{
+			"forge": "setNoPhysics(boolean arg0)",
+			"fabric": "setNoClip(boolean noClip)"
+		},
+		{
+			"forge": "isNoPhysics()",
+			"fabric": "isNoClip()"
+		},
+		{
+			"forge": "setShotFromCrossbow(boolean arg0)",
+			"fabric": "setShotFromCrossbow(boolean shotFromCrossbow)"
+		}
+	]
+}

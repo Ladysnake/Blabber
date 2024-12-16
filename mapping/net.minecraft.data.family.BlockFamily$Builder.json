@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.data.BlockFamily$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.data.BlockFamily$Builder",
+			"fabric": "net.minecraft.data.family.BlockFamily$Builder"
+		},
+		{
+			"forge": "family",
+			"fabric": "family"
+		},
+		{
+			"forge": "family",
+			"fabric": "family"
+		},
+		{
+			"forge": "getFamily()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "getFamily()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "button(Block arg0)",
+			"fabric": "button(Block block)"
+		},
+		{
+			"forge": "chiseled(Block arg0)",
+			"fabric": "chiseled(Block block)"
+		},
+		{
+			"forge": "mosaic(Block arg0)",
+			"fabric": "mosaic(Block block)"
+		},
+		{
+			"forge": "cracked(Block arg0)",
+			"fabric": "cracked(Block block)"
+		},
+		{
+			"forge": "cut(Block arg0)",
+			"fabric": "cut(Block block)"
+		},
+		{
+			"forge": "door(Block arg0)",
+			"fabric": "door(Block block)"
+		},
+		{
+			"forge": "customFence(Block arg0)",
+			"fabric": "customFence(Block block)"
+		},
+		{
+			"forge": "fence(Block arg0)",
+			"fabric": "fence(Block block)"
+		},
+		{
+			"forge": "customFenceGate(Block arg0)",
+			"fabric": "customFenceGate(Block block)"
+		},
+		{
+			"forge": "fenceGate(Block arg0)",
+			"fabric": "fenceGate(Block block)"
+		},
+		{
+			"forge": "sign(Block arg0, Block arg1)",
+			"fabric": "sign(Block block, Block wallBlock)"
+		},
+		{
+			"forge": "slab(Block arg0)",
+			"fabric": "slab(Block block)"
+		},
+		{
+			"forge": "stairs(Block arg0)",
+			"fabric": "stairs(Block block)"
+		},
+		{
+			"forge": "pressurePlate(Block arg0)",
+			"fabric": "pressurePlate(Block block)"
+		},
+		{
+			"forge": "polished(Block arg0)",
+			"fabric": "polished(Block block)"
+		},
+		{
+			"forge": "trapdoor(Block arg0)",
+			"fabric": "trapdoor(Block block)"
+		},
+		{
+			"forge": "wall(Block arg0)",
+			"fabric": "wall(Block block)"
+		},
+		{
+			"forge": "dontGenerateModel()",
+			"fabric": "noGenerateModels()"
+		},
+		{
+			"forge": "dontGenerateRecipe()",
+			"fabric": "noGenerateRecipes()"
+		},
+		{
+			"forge": "featureLockedBehind(FeatureFlag... arg0)",
+			"fabric": "requires(FeatureFlag... features)"
+		},
+		{
+			"forge": "recipeGroupPrefix(String arg0)",
+			"fabric": "group(String group)"
+		},
+		{
+			"forge": "recipeUnlockedBy(String arg0)",
+			"fabric": "unlockCriterionName(String unlockCriterionName)"
+		}
+	]
+}

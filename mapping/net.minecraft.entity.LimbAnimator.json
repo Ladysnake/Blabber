@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.WalkAnimationState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.WalkAnimationState",
+			"fabric": "net.minecraft.entity.LimbAnimator"
+		},
+		{
+			"forge": "speedOld",
+			"fabric": "prevSpeed"
+		},
+		{
+			"forge": "speedOld",
+			"fabric": "prevSpeed"
+		},
+		{
+			"forge": "speed",
+			"fabric": "speed"
+		},
+		{
+			"forge": "position",
+			"fabric": "pos"
+		},
+		{
+			"forge": "setSpeed(float arg0)",
+			"fabric": "setSpeed(float speed)"
+		},
+		{
+			"forge": "setSpeed(float arg0)",
+			"fabric": "setSpeed(float speed)"
+		},
+		{
+			"forge": "update(float arg0, float arg1)",
+			"fabric": "updateLimbs(float speed, float multiplier)"
+		},
+		{
+			"forge": "speed()",
+			"fabric": "getSpeed()"
+		},
+		{
+			"forge": "speed(float arg0)",
+			"fabric": "getSpeed(float tickDelta)"
+		},
+		{
+			"forge": "position()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "position(float arg0)",
+			"fabric": "getPos(float tickDelta)"
+		},
+		{
+			"forge": "isMoving()",
+			"fabric": "isLimbMoving()"
+		}
+	]
+}

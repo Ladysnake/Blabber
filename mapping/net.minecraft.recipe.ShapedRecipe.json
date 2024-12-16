@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.world.item.crafting.ShapedRecipe",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.ShapedRecipe",
+			"fabric": "net.minecraft.recipe.ShapedRecipe"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "recipeItems",
+			"fabric": "input"
+		},
+		{
+			"forge": "result",
+			"fabric": "output"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "group",
+			"fabric": "group"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "showNotification",
+			"fabric": "showNotification"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getSerializer()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "getGroup()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "category()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "getResultItem(RegistryAccess arg0)",
+			"fabric": "getOutput(DynamicRegistryManager arg0)"
+		},
+		{
+			"forge": "getIngredients()",
+			"fabric": "getIngredients()"
+		},
+		{
+			"forge": "showNotification()",
+			"fabric": "showNotification()"
+		},
+		{
+			"forge": "canCraftInDimensions(int arg0, int arg1)",
+			"fabric": "fits(int arg0, int arg1)"
+		},
+		{
+			"forge": "matches(CraftingContainer arg0, Level arg1)",
+			"fabric": "matches(RecipeInputInventory arg0, World arg1)"
+		},
+		{
+			"forge": "matches(CraftingContainer arg0, int arg1, int arg2, boolean arg3)",
+			"fabric": "matchesPattern(RecipeInputInventory inv, int offsetX, int offsetY, boolean flipped)"
+		},
+		{
+			"forge": "assemble(CraftingContainer arg0, RegistryAccess arg1)",
+			"fabric": "craft(RecipeInputInventory arg0, DynamicRegistryManager arg1)"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "dissolvePattern(String[] arg0, Map<String, Ingredient> arg1, int arg2, int arg3)",
+			"fabric": "createPatternMatrix(String[] pattern, Map<String, Ingredient> symbols, int width, int height)"
+		},
+		{
+			"forge": "shrink(String... arg0)",
+			"fabric": "removePadding(String... pattern)"
+		},
+		{
+			"forge": "isIncomplete()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "firstNonSpace(String arg0)",
+			"fabric": "findFirstSymbol(String line)"
+		},
+		{
+			"forge": "lastNonSpace(String arg0)",
+			"fabric": "findLastSymbol(String pattern)"
+		},
+		{
+			"forge": "patternFromJson(com.google.gson.JsonArray arg0)",
+			"fabric": "getPattern(com.google.gson.JsonArray json)"
+		},
+		{
+			"forge": "keyFromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "readSymbols(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "itemStackFromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "outputFromJson(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "itemFromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "getItem(com.google.gson.JsonObject json)"
+		}
+	]
+}

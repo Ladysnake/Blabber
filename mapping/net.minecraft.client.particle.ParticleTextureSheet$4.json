@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.particle.ParticleRenderType$4",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.ParticleRenderType$4",
+			"fabric": "net.minecraft.client.particle.ParticleTextureSheet$4"
+		},
+		{
+			"forge": "begin(BufferBuilder arg0, TextureManager arg1)",
+			"fabric": "begin(BufferBuilder arg0, TextureManager arg1)"
+		},
+		{
+			"forge": "begin(BufferBuilder arg0, TextureManager arg1)",
+			"fabric": "begin(BufferBuilder arg0, TextureManager arg1)"
+		},
+		{
+			"forge": "end(Tesselator arg0)",
+			"fabric": "draw(Tessellator arg0)"
+		}
+	]
+}

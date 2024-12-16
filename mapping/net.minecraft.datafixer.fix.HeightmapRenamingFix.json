@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.HeightmapRenamingFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.HeightmapRenamingFix",
+			"fabric": "net.minecraft.datafixer.fix.HeightmapRenamingFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "renameHeightmapTags(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fix(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "renameHeightmapTags(com.mojang.serialization.Dynamic<?> arg0)"
+		}
+	]
+}

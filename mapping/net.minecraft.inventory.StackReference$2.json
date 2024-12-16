@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.SlotAccess$2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.SlotAccess$2",
+			"fabric": "net.minecraft.inventory.StackReference$2"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "set(ItemStack arg0)",
+			"fabric": "set(ItemStack arg0)"
+		}
+	]
+}

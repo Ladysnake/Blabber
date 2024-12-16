@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.monster.Illusioner$IllusionerBlindnessSpellGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Illusioner$IllusionerBlindnessSpellGoal",
+			"fabric": "net.minecraft.entity.mob.IllusionerEntity$BlindTargetGoal"
+		},
+		{
+			"forge": "lastTargetId",
+			"fabric": "targetId"
+		},
+		{
+			"forge": "lastTargetId",
+			"fabric": "targetId"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "getCastingTime()",
+			"fabric": "getSpellTicks()"
+		},
+		{
+			"forge": "getCastingInterval()",
+			"fabric": "startTimeDelay()"
+		},
+		{
+			"forge": "performSpellCasting()",
+			"fabric": "castSpell()"
+		},
+		{
+			"forge": "getSpellPrepareSound()",
+			"fabric": "getSoundPrepare()"
+		},
+		{
+			"forge": "getSpell()",
+			"fabric": "getSpell()"
+		}
+	]
+}

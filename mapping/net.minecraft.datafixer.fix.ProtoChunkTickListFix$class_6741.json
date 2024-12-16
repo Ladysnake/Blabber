@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkProtoTickListFix$PoorMansPalettedContainer",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkProtoTickListFix$PoorMansPalettedContainer",
+			"fabric": "net.minecraft.datafixer.fix.ProtoChunkTickListFix$class_6741"
+		},
+		{
+			"forge": "SIZE_BITS",
+			"fabric": "field_35448"
+		},
+		{
+			"forge": "SIZE_BITS",
+			"fabric": "field_35448"
+		},
+		{
+			"forge": "palette",
+			"fabric": "field_35449"
+		},
+		{
+			"forge": "data",
+			"fabric": "field_35450"
+		},
+		{
+			"forge": "bits",
+			"fabric": "field_35451"
+		},
+		{
+			"forge": "mask",
+			"fabric": "field_35452"
+		},
+		{
+			"forge": "valuesPerLong",
+			"fabric": "field_35453"
+		},
+		{
+			"forge": "get(int arg0, int arg1, int arg2)",
+			"fabric": "method_39265(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "get(int arg0, int arg1, int arg2)",
+			"fabric": "method_39265(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "getIndex(int arg0, int arg1, int arg2)",
+			"fabric": "method_39267(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "palette()",
+			"fabric": "method_39264()"
+		},
+		{
+			"forge": "data()",
+			"fabric": "method_39266()"
+		}
+	]
+}

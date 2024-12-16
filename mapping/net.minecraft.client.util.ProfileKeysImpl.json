@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.client.multiplayer.AccountProfileKeyPairManager",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.AccountProfileKeyPairManager",
+			"fabric": "net.minecraft.client.util.ProfileKeysImpl"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MINIMUM_PROFILE_KEY_REFRESH_INTERVAL",
+			"fabric": "TIME_UNTIL_FIRST_EXPIRY_CHECK"
+		},
+		{
+			"forge": "PROFILE_KEY_PAIR_DIR",
+			"fabric": "PROFILE_KEYS_PATH"
+		},
+		{
+			"forge": "userApiService",
+			"fabric": "userApiService"
+		},
+		{
+			"forge": "profileKeyPairPath",
+			"fabric": "jsonPath"
+		},
+		{
+			"forge": "keyPair",
+			"fabric": "keyFuture"
+		},
+		{
+			"forge": "nextProfileKeyRefreshTime",
+			"fabric": "expiryCheckTime"
+		},
+		{
+			"forge": "prepareKeyPair()",
+			"fabric": "fetchKeyPair()"
+		},
+		{
+			"forge": "prepareKeyPair()",
+			"fabric": "fetchKeyPair()"
+		},
+		{
+			"forge": "shouldRefreshKeyPair()",
+			"fabric": "isExpired()"
+		},
+		{
+			"forge": "readOrFetchProfileKeyPair(Optional<ProfileKeyPair> arg0)",
+			"fabric": "getKeyPair(Optional<PlayerKeyPair> currentKey)"
+		},
+		{
+			"forge": "readProfileKeyPair()",
+			"fabric": "loadKeyPairFromFile()"
+		},
+		{
+			"forge": "writeProfileKeyPair(ProfileKeyPair arg0)",
+			"fabric": "saveKeyPairToFile(PlayerKeyPair keyPair)"
+		},
+		{
+			"forge": "fetchProfileKeyPair(com.mojang.authlib.minecraft.UserApiService arg0)",
+			"fabric": "fetchKeyPair(com.mojang.authlib.minecraft.UserApiService userApiService)"
+		},
+		{
+			"forge": "parsePublicKey(com.mojang.authlib.yggdrasil.response.KeyPairResponse arg0)",
+			"fabric": "decodeKeyPairResponse(com.mojang.authlib.yggdrasil.response.KeyPairResponse keyPairResponse)"
+		}
+	]
+}

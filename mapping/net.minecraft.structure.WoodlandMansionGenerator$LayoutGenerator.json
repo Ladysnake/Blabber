@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces$MansionPiecePlacer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces$MansionPiecePlacer",
+			"fabric": "net.minecraft.structure.WoodlandMansionGenerator$LayoutGenerator"
+		},
+		{
+			"forge": "structureTemplateManager",
+			"fabric": "manager"
+		},
+		{
+			"forge": "structureTemplateManager",
+			"fabric": "manager"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "startX",
+			"fabric": "entranceI"
+		},
+		{
+			"forge": "startY",
+			"fabric": "entranceJ"
+		},
+		{
+			"forge": "createMansion(BlockPos arg0, Rotation arg1, List<WoodlandMansionPieces$WoodlandMansionPiece> arg2, WoodlandMansionPieces$MansionGrid arg3)",
+			"fabric": "generate(BlockPos pos, BlockRotation rotation, List<WoodlandMansionGenerator$Piece> pieces, WoodlandMansionGenerator$MansionParameters parameters)"
+		},
+		{
+			"forge": "createMansion(BlockPos arg0, Rotation arg1, List<WoodlandMansionPieces$WoodlandMansionPiece> arg2, WoodlandMansionPieces$MansionGrid arg3)",
+			"fabric": "generate(BlockPos pos, BlockRotation rotation, List<WoodlandMansionGenerator$Piece> pieces, WoodlandMansionGenerator$MansionParameters parameters)"
+		},
+		{
+			"forge": "traverseOuterWalls(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, WoodlandMansionPieces$PlacementData arg1, WoodlandMansionPieces$SimpleGrid arg2, Direction arg3, int arg4, int arg5, int arg6, int arg7)",
+			"fabric": "addOuterWall(List<WoodlandMansionGenerator$Piece> pieces, WoodlandMansionGenerator$GenerationPiece wallPiece, WoodlandMansionGenerator$FlagMatrix layout, Direction direction, int startI, int startJ, int endI, int endJ)"
+		},
+		{
+			"forge": "createRoof(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, BlockPos arg1, Rotation arg2, WoodlandMansionPieces$SimpleGrid arg3, WoodlandMansionPieces$SimpleGrid arg4)",
+			"fabric": "addRoof(List<WoodlandMansionGenerator$Piece> pieces, BlockPos pos, BlockRotation rotation, WoodlandMansionGenerator$FlagMatrix layout, WoodlandMansionGenerator$FlagMatrix nextFloorLayout)"
+		},
+		{
+			"forge": "entrance(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, WoodlandMansionPieces$PlacementData arg1)",
+			"fabric": "addEntrance(List<WoodlandMansionGenerator$Piece> pieces, WoodlandMansionGenerator$GenerationPiece wallPiece)"
+		},
+		{
+			"forge": "traverseWallPiece(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, WoodlandMansionPieces$PlacementData arg1)",
+			"fabric": "addWallPiece(List<WoodlandMansionGenerator$Piece> pieces, WoodlandMansionGenerator$GenerationPiece wallPiece)"
+		},
+		{
+			"forge": "traverseTurn(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, WoodlandMansionPieces$PlacementData arg1)",
+			"fabric": "turnLeft(List<WoodlandMansionGenerator$Piece> pieces, WoodlandMansionGenerator$GenerationPiece wallPiece)"
+		},
+		{
+			"forge": "traverseInnerTurn(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, WoodlandMansionPieces$PlacementData arg1)",
+			"fabric": "turnRight(List<WoodlandMansionGenerator$Piece> pieces, WoodlandMansionGenerator$GenerationPiece wallPiece)"
+		},
+		{
+			"forge": "addRoom1x1(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, BlockPos arg1, Rotation arg2, Direction arg3, WoodlandMansionPieces$FloorRoomCollection arg4)",
+			"fabric": "addSmallRoom(List<WoodlandMansionGenerator$Piece> pieces, BlockPos pos, BlockRotation rotation, Direction direction, WoodlandMansionGenerator$RoomPool pool)"
+		},
+		{
+			"forge": "addRoom1x2(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, BlockPos arg1, Rotation arg2, Direction arg3, Direction arg4, WoodlandMansionPieces$FloorRoomCollection arg5, boolean arg6)",
+			"fabric": "addMediumRoom(List<WoodlandMansionGenerator$Piece> pieces, BlockPos pos, BlockRotation rotation, Direction connectedRoomDirection, Direction entranceDirection, WoodlandMansionGenerator$RoomPool pool, boolean staircase)"
+		},
+		{
+			"forge": "addRoom2x2(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, BlockPos arg1, Rotation arg2, Direction arg3, Direction arg4, WoodlandMansionPieces$FloorRoomCollection arg5)",
+			"fabric": "addBigRoom(List<WoodlandMansionGenerator$Piece> pieces, BlockPos pos, BlockRotation rotation, Direction connectedRoomDirection, Direction entranceDirection, WoodlandMansionGenerator$RoomPool pool)"
+		},
+		{
+			"forge": "addRoom2x2Secret(List<WoodlandMansionPieces$WoodlandMansionPiece> arg0, BlockPos arg1, Rotation arg2, WoodlandMansionPieces$FloorRoomCollection arg3)",
+			"fabric": "addBigSecretRoom(List<WoodlandMansionGenerator$Piece> pieces, BlockPos pos, BlockRotation rotation, WoodlandMansionGenerator$RoomPool pool)"
+		}
+	]
+}

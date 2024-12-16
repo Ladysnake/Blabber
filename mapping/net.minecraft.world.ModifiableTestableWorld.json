@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.level.LevelSimulatedRW",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.LevelSimulatedRW",
+			"fabric": "net.minecraft.world.ModifiableTestableWorld"
+		}
+	]
+}

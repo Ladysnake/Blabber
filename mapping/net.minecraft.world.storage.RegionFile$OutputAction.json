@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.RegionFile$CommitOp",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.RegionFile$CommitOp",
+			"fabric": "net.minecraft.world.storage.RegionFile$OutputAction"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.entity.IllusionerRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.IllusionerRenderer",
+			"fabric": "net.minecraft.client.render.entity.IllusionerEntityRenderer"
+		},
+		{
+			"forge": "ILLUSIONER",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "ILLUSIONER",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Illusioner arg0)",
+			"fabric": "getTexture(IllusionerEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Illusioner arg0)",
+			"fabric": "getTexture(IllusionerEntity arg0)"
+		},
+		{
+			"forge": "render(Illusioner arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(IllusionerEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "isBodyVisible(Illusioner arg0)",
+			"fabric": "isVisible(IllusionerEntity arg0)"
+		}
+	]
+}

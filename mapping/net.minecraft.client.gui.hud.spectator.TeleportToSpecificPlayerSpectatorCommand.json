@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.spectator.PlayerMenuItem",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.spectator.PlayerMenuItem",
+			"fabric": "net.minecraft.client.gui.hud.spectator.TeleportToSpecificPlayerSpectatorCommand"
+		},
+		{
+			"forge": "profile",
+			"fabric": "gameProfile"
+		},
+		{
+			"forge": "profile",
+			"fabric": "gameProfile"
+		},
+		{
+			"forge": "location",
+			"fabric": "skinId"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "selectItem(SpectatorMenu arg0)",
+			"fabric": "use(SpectatorMenu arg0)"
+		},
+		{
+			"forge": "selectItem(SpectatorMenu arg0)",
+			"fabric": "use(SpectatorMenu arg0)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "renderIcon(GuiGraphics arg0, float arg1, int arg2)",
+			"fabric": "renderIcon(DrawContext arg0, float arg1, int arg2)"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "isEnabled()"
+		}
+	]
+}

@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.client.gui.screens.achievement.StatsScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.achievement.StatsScreen",
+			"fabric": "net.minecraft.client.gui.screen.StatsScreen"
+		},
+		{
+			"forge": "PENDING_TEXT",
+			"fabric": "DOWNLOADING_STATS_TEXT"
+		},
+		{
+			"forge": "PENDING_TEXT",
+			"fabric": "DOWNLOADING_STATS_TEXT"
+		},
+		{
+			"forge": "STATS_ICON_LOCATION",
+			"fabric": "STATS_ICONS_TEXTURE"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "statsList",
+			"fabric": "generalStats"
+		},
+		{
+			"forge": "itemStatsList",
+			"fabric": "itemStats"
+		},
+		{
+			"forge": "mobsStatsList",
+			"fabric": "mobStats"
+		},
+		{
+			"forge": "stats",
+			"fabric": "statHandler"
+		},
+		{
+			"forge": "activeList",
+			"fabric": "selectedList"
+		},
+		{
+			"forge": "isLoading",
+			"fabric": "downloadingStats"
+		},
+		{
+			"forge": "SLOT_TEX_SIZE",
+			"fabric": "field_32281"
+		},
+		{
+			"forge": "SLOT_BG_SIZE",
+			"fabric": "field_32282"
+		},
+		{
+			"forge": "SLOT_STAT_HEIGHT",
+			"fabric": "field_32283"
+		},
+		{
+			"forge": "SLOT_BG_X",
+			"fabric": "field_32284"
+		},
+		{
+			"forge": "SLOT_BG_Y",
+			"fabric": "field_32285"
+		},
+		{
+			"forge": "SLOT_FG_X",
+			"fabric": "field_32274"
+		},
+		{
+			"forge": "SLOT_FG_Y",
+			"fabric": "field_32275"
+		},
+		{
+			"forge": "SLOT_LEFT_INSERT",
+			"fabric": "field_32276"
+		},
+		{
+			"forge": "SLOT_TEXT_OFFSET",
+			"fabric": "field_32277"
+		},
+		{
+			"forge": "SORT_NONE",
+			"fabric": "field_32278"
+		},
+		{
+			"forge": "SORT_DOWN",
+			"fabric": "field_32279"
+		},
+		{
+			"forge": "SORT_UP",
+			"fabric": "field_32280"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "initLists()",
+			"fabric": "createLists()"
+		},
+		{
+			"forge": "initButtons()",
+			"fabric": "createButtons()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "onStatsUpdated()",
+			"fabric": "onStatsReady()"
+		},
+		{
+			"forge": "isPauseScreen()",
+			"fabric": "shouldPause()"
+		},
+		{
+			"forge": "getActiveList()",
+			"fabric": "getSelectedStatList()"
+		},
+		{
+			"forge": "setActiveList(ObjectSelectionList<?> arg0)",
+			"fabric": "selectStatList(AlwaysSelectedEntryListWidget<?> list)"
+		},
+		{
+			"forge": "getTranslationKey(Stat<ResourceLocation> arg0)",
+			"fabric": "getStatTranslationKey(Stat<Identifier> stat)"
+		},
+		{
+			"forge": "getColumnX(int arg0)",
+			"fabric": "getColumnX(int index)"
+		},
+		{
+			"forge": "blitSlot(GuiGraphics arg0, int arg1, int arg2, Item arg3)",
+			"fabric": "renderStatItem(DrawContext context, int x, int y, Item item)"
+		},
+		{
+			"forge": "blitSlotIcon(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "renderIcon(DrawContext context, int x, int y, int u, int v)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.Goal$Flag",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.Goal$Flag",
+			"fabric": "net.minecraft.entity.ai.goal.Goal$Control"
+		},
+		{
+			"forge": "MOVE",
+			"fabric": "MOVE"
+		},
+		{
+			"forge": "MOVE",
+			"fabric": "MOVE"
+		},
+		{
+			"forge": "LOOK",
+			"fabric": "LOOK"
+		},
+		{
+			"forge": "JUMP",
+			"fabric": "JUMP"
+		},
+		{
+			"forge": "TARGET",
+			"fabric": "TARGET"
+		}
+	]
+}

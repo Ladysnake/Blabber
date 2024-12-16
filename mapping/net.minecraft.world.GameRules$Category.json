@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.GameRules$Category",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.GameRules$Category",
+			"fabric": "net.minecraft.world.GameRules$Category"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "MOBS",
+			"fabric": "MOBS"
+		},
+		{
+			"forge": "SPAWNING",
+			"fabric": "SPAWNING"
+		},
+		{
+			"forge": "DROPS",
+			"fabric": "DROPS"
+		},
+		{
+			"forge": "UPDATES",
+			"fabric": "UPDATES"
+		},
+		{
+			"forge": "CHAT",
+			"fabric": "CHAT"
+		},
+		{
+			"forge": "MISC",
+			"fabric": "MISC"
+		},
+		{
+			"forge": "descriptionId",
+			"fabric": "category"
+		},
+		{
+			"forge": "descriptionId",
+			"fabric": "category"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getCategory()"
+		}
+	]
+}

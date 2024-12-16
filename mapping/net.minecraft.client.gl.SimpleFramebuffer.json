@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.blaze3d.pipeline.TextureTarget",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.pipeline.TextureTarget",
+			"fabric": "net.minecraft.client.gl.SimpleFramebuffer"
+		}
+	]
+}

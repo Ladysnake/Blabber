@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.network.chat.ClickEvent$Action",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.ClickEvent$Action",
+			"fabric": "net.minecraft.text.ClickEvent$Action"
+		},
+		{
+			"forge": "OPEN_URL",
+			"fabric": "OPEN_URL"
+		},
+		{
+			"forge": "OPEN_URL",
+			"fabric": "OPEN_URL"
+		},
+		{
+			"forge": "OPEN_FILE",
+			"fabric": "OPEN_FILE"
+		},
+		{
+			"forge": "RUN_COMMAND",
+			"fabric": "RUN_COMMAND"
+		},
+		{
+			"forge": "SUGGEST_COMMAND",
+			"fabric": "SUGGEST_COMMAND"
+		},
+		{
+			"forge": "CHANGE_PAGE",
+			"fabric": "CHANGE_PAGE"
+		},
+		{
+			"forge": "COPY_TO_CLIPBOARD",
+			"fabric": "COPY_TO_CLIPBOARD"
+		},
+		{
+			"forge": "LOOKUP",
+			"fabric": "BY_NAME"
+		},
+		{
+			"forge": "LOOKUP",
+			"fabric": "BY_NAME"
+		},
+		{
+			"forge": "allowFromServer",
+			"fabric": "userDefinable"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "isAllowedFromServer()",
+			"fabric": "isUserDefinable()"
+		},
+		{
+			"forge": "isAllowedFromServer()",
+			"fabric": "isUserDefinable()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getByName(String arg0)",
+			"fabric": "byName(String name)"
+		}
+	]
+}

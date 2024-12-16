@@ -1,0 +1,185 @@
+{
+	"title": "net.minecraft.world.level.block.BedBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BedBlock",
+			"fabric": "net.minecraft.block.BedBlock"
+		},
+		{
+			"forge": "PART",
+			"fabric": "PART"
+		},
+		{
+			"forge": "PART",
+			"fabric": "PART"
+		},
+		{
+			"forge": "OCCUPIED",
+			"fabric": "OCCUPIED"
+		},
+		{
+			"forge": "HEIGHT",
+			"fabric": "field_31009"
+		},
+		{
+			"forge": "BASE",
+			"fabric": "TOP_SHAPE"
+		},
+		{
+			"forge": "LEG_WIDTH",
+			"fabric": "field_31010"
+		},
+		{
+			"forge": "LEG_NORTH_WEST",
+			"fabric": "LEG_1_SHAPE"
+		},
+		{
+			"forge": "LEG_SOUTH_WEST",
+			"fabric": "LEG_2_SHAPE"
+		},
+		{
+			"forge": "LEG_NORTH_EAST",
+			"fabric": "LEG_3_SHAPE"
+		},
+		{
+			"forge": "LEG_SOUTH_EAST",
+			"fabric": "LEG_4_SHAPE"
+		},
+		{
+			"forge": "NORTH_SHAPE",
+			"fabric": "NORTH_SHAPE"
+		},
+		{
+			"forge": "SOUTH_SHAPE",
+			"fabric": "SOUTH_SHAPE"
+		},
+		{
+			"forge": "WEST_SHAPE",
+			"fabric": "WEST_SHAPE"
+		},
+		{
+			"forge": "EAST_SHAPE",
+			"fabric": "EAST_SHAPE"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "getBedOrientation(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getDirection(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getBedOrientation(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getDirection(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "canSetSpawn(Level arg0)",
+			"fabric": "isBedWorking(World world)"
+		},
+		{
+			"forge": "kickVillagerOutOfBed(Level arg0, BlockPos arg1)",
+			"fabric": "wakeVillager(World world, BlockPos pos)"
+		},
+		{
+			"forge": "fallOn(Level arg0, BlockState arg1, BlockPos arg2, Entity arg3, float arg4)",
+			"fabric": "onLandedUpon(World arg0, BlockState arg1, BlockPos arg2, Entity arg3, float arg4)"
+		},
+		{
+			"forge": "updateEntityAfterFallOn(BlockGetter arg0, Entity arg1)",
+			"fabric": "onEntityLand(BlockView arg0, Entity arg1)"
+		},
+		{
+			"forge": "bounceUp(Entity arg0)",
+			"fabric": "bounceEntity(Entity entity)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getNeighbourDirection(BedPart arg0, Direction arg1)",
+			"fabric": "getDirectionTowardsOtherPart(BedPart part, Direction direction)"
+		},
+		{
+			"forge": "playerWillDestroy(Level arg0, BlockPos arg1, BlockState arg2, Player arg3)",
+			"fabric": "onBreak(World arg0, BlockPos arg1, BlockState arg2, PlayerEntity arg3)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getConnectedDirection(BlockState arg0)",
+			"fabric": "getOppositePartDirection(BlockState state)"
+		},
+		{
+			"forge": "getBlockType(BlockState arg0)",
+			"fabric": "getBedPart(BlockState state)"
+		},
+		{
+			"forge": "isBunkBed(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "isBedBelow(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "findStandUpPosition(EntityType<?> arg0, CollisionGetter arg1, BlockPos arg2, Direction arg3, float arg4)",
+			"fabric": "findWakeUpPosition(EntityType<?> type, CollisionView world, BlockPos pos, Direction bedDirection, float spawnAngle)"
+		},
+		{
+			"forge": "findBunkBedStandUpPosition(EntityType<?> arg0, CollisionGetter arg1, BlockPos arg2, Direction arg3, Direction arg4)",
+			"fabric": "findWakeUpPosition(EntityType<?> type, CollisionView world, BlockPos pos, Direction bedDirection, Direction respawnDirection)"
+		},
+		{
+			"forge": "findStandUpPositionAtOffset(EntityType<?> arg0, CollisionGetter arg1, BlockPos arg2, int[][] arg3, boolean arg4)",
+			"fabric": "findWakeUpPosition(EntityType<?> type, CollisionView world, BlockPos pos, int[][] possibleOffsets, boolean ignoreInvalidPos)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "setPlacedBy(Level arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)",
+			"fabric": "onPlaced(World arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "getSeed(BlockState arg0, BlockPos arg1)",
+			"fabric": "getRenderingSeed(BlockState arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "bedStandUpOffsets(Direction arg0, Direction arg1)",
+			"fabric": "getAroundAndOnBedOffsets(Direction bedDirection, Direction respawnDirection)"
+		},
+		{
+			"forge": "bedSurroundStandUpOffsets(Direction arg0, Direction arg1)",
+			"fabric": "getAroundBedOffsets(Direction bedDirection, Direction respawnDirection)"
+		},
+		{
+			"forge": "bedAboveStandUpOffsets(Direction arg0)",
+			"fabric": "getOnBedOffsets(Direction bedDirection)"
+		}
+	]
+}

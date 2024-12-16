@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.InteractWith",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.InteractWith",
+			"fabric": "net.minecraft.entity.ai.brain.task.FindEntityTask"
+		},
+		{
+			"forge": "of(EntityType<? extends T> arg0, int arg1, MemoryModuleType<T> arg2, float arg3, int arg4)",
+			"fabric": "create(EntityType<? extends T> type, int maxDistance, MemoryModuleType<T> targetModule, float speed, int completionRange)"
+		},
+		{
+			"forge": "of(EntityType<? extends T> arg0, int arg1, MemoryModuleType<T> arg2, float arg3, int arg4)",
+			"fabric": "create(EntityType<? extends T> type, int maxDistance, MemoryModuleType<T> targetModule, float speed, int completionRange)"
+		},
+		{
+			"forge": "of(EntityType<? extends T> arg0, int arg1, Predicate<E> arg2, Predicate<T> arg3, MemoryModuleType<T> arg4, float arg5, int arg6)",
+			"fabric": "create(EntityType<? extends T> type, int maxDistance, Predicate<E> entityPredicate, Predicate<T> targetPredicate, MemoryModuleType<T> targetModule, float speed, int completionRange)"
+		}
+	]
+}

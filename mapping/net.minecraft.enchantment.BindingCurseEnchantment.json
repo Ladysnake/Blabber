@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.item.enchantment.BindingCurseEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.BindingCurseEnchantment",
+			"fabric": "net.minecraft.enchantment.BindingCurseEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "isTreasureOnly()",
+			"fabric": "isTreasure()"
+		},
+		{
+			"forge": "isCurse()",
+			"fabric": "isCursed()"
+		},
+		{
+			"forge": "canEnchant(ItemStack arg0)",
+			"fabric": "isAcceptableItem(ItemStack arg0)"
+		}
+	]
+}

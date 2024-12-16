@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.renderer.RenderBuffers",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderBuffers",
+			"fabric": "net.minecraft.client.render.BufferBuilderStorage"
+		},
+		{
+			"forge": "fixedBufferPack",
+			"fabric": "blockBuilders"
+		},
+		{
+			"forge": "fixedBufferPack",
+			"fabric": "blockBuilders"
+		},
+		{
+			"forge": "fixedBuffers",
+			"fabric": "entityBuilders"
+		},
+		{
+			"forge": "bufferSource",
+			"fabric": "entityVertexConsumers"
+		},
+		{
+			"forge": "crumblingBufferSource",
+			"fabric": "effectVertexConsumers"
+		},
+		{
+			"forge": "outlineBufferSource",
+			"fabric": "outlineVertexConsumers"
+		},
+		{
+			"forge": "put(it.unimi.dsi.fastutil.objects.Object2ObjectLinkedOpenHashMap<RenderType, BufferBuilder> arg0, RenderType arg1)",
+			"fabric": "assignBufferBuilder(it.unimi.dsi.fastutil.objects.Object2ObjectLinkedOpenHashMap<RenderLayer, BufferBuilder> builderStorage, RenderLayer layer)"
+		},
+		{
+			"forge": "put(it.unimi.dsi.fastutil.objects.Object2ObjectLinkedOpenHashMap<RenderType, BufferBuilder> arg0, RenderType arg1)",
+			"fabric": "assignBufferBuilder(it.unimi.dsi.fastutil.objects.Object2ObjectLinkedOpenHashMap<RenderLayer, BufferBuilder> builderStorage, RenderLayer layer)"
+		},
+		{
+			"forge": "fixedBufferPack()",
+			"fabric": "getBlockBufferBuilders()"
+		},
+		{
+			"forge": "bufferSource()",
+			"fabric": "getEntityVertexConsumers()"
+		},
+		{
+			"forge": "crumblingBufferSource()",
+			"fabric": "getEffectVertexConsumers()"
+		},
+		{
+			"forge": "outlineBufferSource()",
+			"fabric": "getOutlineVertexConsumers()"
+		}
+	]
+}

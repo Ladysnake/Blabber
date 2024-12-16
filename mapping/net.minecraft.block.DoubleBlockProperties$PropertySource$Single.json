@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.DoubleBlockCombiner$NeighborCombineResult$Single",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.DoubleBlockCombiner$NeighborCombineResult$Single",
+			"fabric": "net.minecraft.block.DoubleBlockProperties$PropertySource$Single"
+		},
+		{
+			"forge": "single",
+			"fabric": "single"
+		},
+		{
+			"forge": "single",
+			"fabric": "single"
+		},
+		{
+			"forge": "apply(DoubleBlockCombiner$Combiner<? super S, T> arg0)",
+			"fabric": "apply(DoubleBlockProperties$PropertyRetriever<? super S, T> arg0)"
+		},
+		{
+			"forge": "apply(DoubleBlockCombiner$Combiner<? super S, T> arg0)",
+			"fabric": "apply(DoubleBlockProperties$PropertyRetriever<? super S, T> arg0)"
+		}
+	]
+}

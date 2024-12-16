@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.screens.LanguageSelectScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.LanguageSelectScreen",
+			"fabric": "net.minecraft.client.gui.screen.option.LanguageOptionsScreen"
+		},
+		{
+			"forge": "WARNING_LABEL",
+			"fabric": "LANGUAGE_WARNING_TEXT"
+		},
+		{
+			"forge": "WARNING_LABEL",
+			"fabric": "LANGUAGE_WARNING_TEXT"
+		},
+		{
+			"forge": "packSelectionList",
+			"fabric": "languageSelectionList"
+		},
+		{
+			"forge": "languageManager",
+			"fabric": "languageManager"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "onDone()",
+			"fabric": "onDone()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.stats.RecipeBookSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.stats.RecipeBookSettings",
+			"fabric": "net.minecraft.recipe.book.RecipeBookOptions"
+		},
+		{
+			"forge": "TAG_FIELDS",
+			"fabric": "CATEGORY_OPTION_NAMES"
+		},
+		{
+			"forge": "TAG_FIELDS",
+			"fabric": "CATEGORY_OPTION_NAMES"
+		},
+		{
+			"forge": "states",
+			"fabric": "categoryOptions"
+		},
+		{
+			"forge": "isOpen(RecipeBookType arg0)",
+			"fabric": "isGuiOpen(RecipeBookCategory category)"
+		},
+		{
+			"forge": "isOpen(RecipeBookType arg0)",
+			"fabric": "isGuiOpen(RecipeBookCategory category)"
+		},
+		{
+			"forge": "setOpen(RecipeBookType arg0, boolean arg1)",
+			"fabric": "setGuiOpen(RecipeBookCategory category, boolean open)"
+		},
+		{
+			"forge": "isFiltering(RecipeBookType arg0)",
+			"fabric": "isFilteringCraftable(RecipeBookCategory category)"
+		},
+		{
+			"forge": "setFiltering(RecipeBookType arg0, boolean arg1)",
+			"fabric": "setFilteringCraftable(RecipeBookCategory category, boolean filtering)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "toPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "read(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "write(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "replaceFrom(RecipeBookSettings arg0)",
+			"fabric": "copyFrom(RecipeBookOptions other)"
+		}
+	]
+}

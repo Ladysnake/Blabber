@@ -1,0 +1,189 @@
+{
+	"title": "net.minecraft.client.gui.components.MultilineTextField",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.MultilineTextField",
+			"fabric": "net.minecraft.client.gui.EditBox"
+		},
+		{
+			"forge": "NO_CHARACTER_LIMIT",
+			"fabric": "UNLIMITED_LENGTH"
+		},
+		{
+			"forge": "NO_CHARACTER_LIMIT",
+			"fabric": "UNLIMITED_LENGTH"
+		},
+		{
+			"forge": "LINE_SEEK_PIXEL_BIAS",
+			"fabric": "CURSOR_WIDTH"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "displayLines",
+			"fabric": "lines"
+		},
+		{
+			"forge": "value",
+			"fabric": "text"
+		},
+		{
+			"forge": "cursor",
+			"fabric": "cursor"
+		},
+		{
+			"forge": "selectCursor",
+			"fabric": "selectionEnd"
+		},
+		{
+			"forge": "selecting",
+			"fabric": "selecting"
+		},
+		{
+			"forge": "characterLimit",
+			"fabric": "maxLength"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "valueListener",
+			"fabric": "changeListener"
+		},
+		{
+			"forge": "cursorListener",
+			"fabric": "cursorChangeListener"
+		},
+		{
+			"forge": "characterLimit()",
+			"fabric": "getMaxLength()"
+		},
+		{
+			"forge": "characterLimit()",
+			"fabric": "getMaxLength()"
+		},
+		{
+			"forge": "setCharacterLimit(int arg0)",
+			"fabric": "setMaxLength(int maxLength)"
+		},
+		{
+			"forge": "hasCharacterLimit()",
+			"fabric": "hasMaxLength()"
+		},
+		{
+			"forge": "setValueListener(Consumer<String> arg0)",
+			"fabric": "setChangeListener(Consumer<String> changeListener)"
+		},
+		{
+			"forge": "setCursorListener(Runnable arg0)",
+			"fabric": "setCursorChangeListener(Runnable cursorChangeListener)"
+		},
+		{
+			"forge": "setValue(String arg0)",
+			"fabric": "setText(String text)"
+		},
+		{
+			"forge": "value()",
+			"fabric": "getText()"
+		},
+		{
+			"forge": "insertText(String arg0)",
+			"fabric": "replaceSelection(String string)"
+		},
+		{
+			"forge": "deleteText(int arg0)",
+			"fabric": "delete(int offset)"
+		},
+		{
+			"forge": "cursor()",
+			"fabric": "getCursor()"
+		},
+		{
+			"forge": "setSelecting(boolean arg0)",
+			"fabric": "setSelecting(boolean selecting)"
+		},
+		{
+			"forge": "getSelected()",
+			"fabric": "getSelection()"
+		},
+		{
+			"forge": "getLineCount()",
+			"fabric": "getLineCount()"
+		},
+		{
+			"forge": "getLineAtCursor()",
+			"fabric": "getCurrentLineIndex()"
+		},
+		{
+			"forge": "getLineView(int arg0)",
+			"fabric": "getLine(int index)"
+		},
+		{
+			"forge": "seekCursor(Whence arg0, int arg1)",
+			"fabric": "moveCursor(CursorMovement movement, int amount)"
+		},
+		{
+			"forge": "seekCursorLine(int arg0)",
+			"fabric": "moveCursorLine(int offset)"
+		},
+		{
+			"forge": "seekCursorToPoint(double arg0, double arg1)",
+			"fabric": "moveCursor(double x, double y)"
+		},
+		{
+			"forge": "keyPressed(int arg0)",
+			"fabric": "handleSpecialKey(int keyCode)"
+		},
+		{
+			"forge": "iterateLines()",
+			"fabric": "getLines()"
+		},
+		{
+			"forge": "hasSelection()",
+			"fabric": "hasSelection()"
+		},
+		{
+			"forge": "getSelectedText()",
+			"fabric": "getSelectedText()"
+		},
+		{
+			"forge": "getCursorLineView()",
+			"fabric": "getCurrentLine()"
+		},
+		{
+			"forge": "getCursorLineView(int arg0)",
+			"fabric": "getOffsetLine(int offsetFromCurrent)"
+		},
+		{
+			"forge": "getPreviousWord()",
+			"fabric": "getPreviousWordAtCursor()"
+		},
+		{
+			"forge": "getNextWord()",
+			"fabric": "getNextWordAtCursor()"
+		},
+		{
+			"forge": "getWordEndPosition(int arg0)",
+			"fabric": "getWordEndIndex(int startIndex)"
+		},
+		{
+			"forge": "onValueChange()",
+			"fabric": "onChange()"
+		},
+		{
+			"forge": "reflowDisplayLines()",
+			"fabric": "rewrap()"
+		},
+		{
+			"forge": "truncateFullText(String arg0)",
+			"fabric": "truncateForReplacement(String value)"
+		},
+		{
+			"forge": "truncateInsertionText(String arg0)",
+			"fabric": "truncate(String value)"
+		}
+	]
+}

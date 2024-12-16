@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.biome.FeatureSorter$1FeatureData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.FeatureSorter$1FeatureData",
+			"fabric": "net.minecraft.world.gen.feature.util.PlacedFeatureIndexer$IndexedFeature"
+		},
+		{
+			"forge": "featureIndex",
+			"fabric": "featureIndex"
+		},
+		{
+			"forge": "featureIndex",
+			"fabric": "featureIndex"
+		},
+		{
+			"forge": "step",
+			"fabric": "step"
+		},
+		{
+			"forge": "feature",
+			"fabric": "feature"
+		},
+		{
+			"forge": "featureIndex()",
+			"fabric": "featureIndex()"
+		},
+		{
+			"forge": "featureIndex()",
+			"fabric": "featureIndex()"
+		},
+		{
+			"forge": "step()",
+			"fabric": "step()"
+		},
+		{
+			"forge": "feature()",
+			"fabric": "feature()"
+		}
+	]
+}

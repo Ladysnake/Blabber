@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.RuleBlockEntityModifier",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.RuleBlockEntityModifier",
+			"fabric": "net.minecraft.structure.rule.blockentity.RuleBlockEntityModifier"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "TYPE_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "TYPE_CODEC"
+		},
+		{
+			"forge": "apply(RandomSource arg0, CompoundTag arg1)",
+			"fabric": "modifyBlockEntityNbt(Random random, NbtCompound nbt)"
+		},
+		{
+			"forge": "apply(RandomSource arg0, CompoundTag arg1)",
+			"fabric": "modifyBlockEntityNbt(Random random, NbtCompound nbt)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

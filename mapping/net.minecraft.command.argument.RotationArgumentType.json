@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.commands.arguments.coordinates.RotationArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.coordinates.RotationArgument",
+			"fabric": "net.minecraft.command.argument.RotationArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_NOT_COMPLETE",
+			"fabric": "INCOMPLETE_ROTATION_EXCEPTION"
+		},
+		{
+			"forge": "rotation()",
+			"fabric": "rotation()"
+		},
+		{
+			"forge": "rotation()",
+			"fabric": "rotation()"
+		},
+		{
+			"forge": "getRotation(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getRotation(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		}
+	]
+}

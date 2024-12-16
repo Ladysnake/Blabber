@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.resources.sounds.AmbientSoundHandler",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.AmbientSoundHandler",
+			"fabric": "net.minecraft.client.util.ClientPlayerTickable"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootContext",
+			"fabric": "net.minecraft.loot.context.LootContext"
+		},
+		{
+			"forge": "params",
+			"fabric": "parameters"
+		},
+		{
+			"forge": "params",
+			"fabric": "parameters"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "lootDataResolver",
+			"fabric": "dataLookup"
+		},
+		{
+			"forge": "visitedElements",
+			"fabric": "activeEntries"
+		},
+		{
+			"forge": "hasParam(LootContextParam<?> arg0)",
+			"fabric": "hasParameter(LootContextParameter<?> parameter)"
+		},
+		{
+			"forge": "hasParam(LootContextParam<?> arg0)",
+			"fabric": "hasParameter(LootContextParameter<?> parameter)"
+		},
+		{
+			"forge": "getParam(LootContextParam<T> arg0)",
+			"fabric": "requireParameter(LootContextParameter<T> parameter)"
+		},
+		{
+			"forge": "addDynamicDrops(ResourceLocation arg0, Consumer<ItemStack> arg1)",
+			"fabric": "drop(Identifier id, Consumer<ItemStack> lootConsumer)"
+		},
+		{
+			"forge": "getParamOrNull(LootContextParam<T> arg0)",
+			"fabric": "get(LootContextParameter<T> parameter)"
+		},
+		{
+			"forge": "hasVisitedElement(LootContext$VisitedEntry<?> arg0)",
+			"fabric": "isActive(LootContext$Entry<?> entry)"
+		},
+		{
+			"forge": "pushVisitedElement(LootContext$VisitedEntry<?> arg0)",
+			"fabric": "markActive(LootContext$Entry<?> entry)"
+		},
+		{
+			"forge": "popVisitedElement(LootContext$VisitedEntry<?> arg0)",
+			"fabric": "markInactive(LootContext$Entry<?> entry)"
+		},
+		{
+			"forge": "getResolver()",
+			"fabric": "getDataLookup()"
+		},
+		{
+			"forge": "getRandom()",
+			"fabric": "getRandom()"
+		},
+		{
+			"forge": "getLuck()",
+			"fabric": "getLuck()"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "createVisitedEntry(LootTable arg0)",
+			"fabric": "table(LootTable table)"
+		},
+		{
+			"forge": "createVisitedEntry(LootItemCondition arg0)",
+			"fabric": "predicate(LootCondition predicate)"
+		},
+		{
+			"forge": "createVisitedEntry(LootItemFunction arg0)",
+			"fabric": "itemModifier(LootFunction itemModifier)"
+		}
+	]
+}

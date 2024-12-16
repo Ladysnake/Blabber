@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$BiomeConditionSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$BiomeConditionSource",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$BiomeMaterialCondition"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "biomes",
+			"fabric": "biomes"
+		},
+		{
+			"forge": "biomeNameTest",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		},
+		{
+			"forge": "apply(SurfaceRules$Context arg0)",
+			"fabric": "apply(MaterialRules$MaterialRuleContext arg0)"
+		}
+	]
+}

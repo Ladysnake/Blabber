@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure",
+			"fabric": "net.minecraft.world.gen.structure.RuinedPortalStructure"
+		},
+		{
+			"forge": "STRUCTURE_LOCATION_PORTALS",
+			"fabric": "COMMON_PORTAL_STRUCTURE_IDS"
+		},
+		{
+			"forge": "STRUCTURE_LOCATION_PORTALS",
+			"fabric": "COMMON_PORTAL_STRUCTURE_IDS"
+		},
+		{
+			"forge": "STRUCTURE_LOCATION_GIANT_PORTALS",
+			"fabric": "RARE_PORTAL_STRUCTURE_IDS"
+		},
+		{
+			"forge": "PROBABILITY_OF_GIANT_PORTAL",
+			"fabric": "RARE_PORTAL_CHANCE"
+		},
+		{
+			"forge": "MIN_Y_INDEX",
+			"fabric": "MIN_BLOCKS_ABOVE_WORLD_BOTTOM"
+		},
+		{
+			"forge": "setups",
+			"fabric": "setups"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "sample(WorldgenRandom arg0, float arg1)",
+			"fabric": "shouldPlaceAirPocket(ChunkRandom random, float probability)"
+		},
+		{
+			"forge": "isCold(BlockPos arg0, Holder<Biome> arg1)",
+			"fabric": "isColdAt(BlockPos pos, RegistryEntry<Biome> biome)"
+		},
+		{
+			"forge": "findSuitableY(RandomSource arg0, ChunkGenerator arg1, RuinedPortalPiece$VerticalPlacement arg2, boolean arg3, int arg4, int arg5, BoundingBox arg6, LevelHeightAccessor arg7, RandomState arg8)",
+			"fabric": "getFloorHeight(Random random, ChunkGenerator chunkGenerator, RuinedPortalStructurePiece$VerticalPlacement verticalPlacement, boolean airPocket, int height, int blockCountY, BlockBox box, HeightLimitView world, NoiseConfig noiseConfig)"
+		},
+		{
+			"forge": "getRandomWithinInterval(RandomSource arg0, int arg1, int arg2)",
+			"fabric": "choosePlacementHeight(Random random, int min, int max)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

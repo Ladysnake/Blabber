@@ -1,0 +1,69 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSettingsScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSettingsScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSettingsScreen"
+		},
+		{
+			"forge": "COMPONENT_WIDTH",
+			"fabric": "TEXT_FIELD_WIDTH"
+		},
+		{
+			"forge": "COMPONENT_WIDTH",
+			"fabric": "TEXT_FIELD_WIDTH"
+		},
+		{
+			"forge": "NAME_LABEL",
+			"fabric": "WORLD_NAME_TEXT"
+		},
+		{
+			"forge": "DESCRIPTION_LABEL",
+			"fabric": "WORLD_DESCRIPTION_TEXT"
+		},
+		{
+			"forge": "configureWorldScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "serverData"
+		},
+		{
+			"forge": "doneButton",
+			"fabric": "doneButton"
+		},
+		{
+			"forge": "descEdit",
+			"fabric": "descEdit"
+		},
+		{
+			"forge": "nameEdit",
+			"fabric": "nameEdit"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "save()",
+			"fabric": "save()"
+		}
+	]
+}

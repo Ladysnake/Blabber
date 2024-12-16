@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.item.Instruments",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.Instruments",
+			"fabric": "net.minecraft.item.Instruments"
+		},
+		{
+			"forge": "GOAT_HORN_RANGE_BLOCKS",
+			"fabric": "GOAT_HORN_RANGE"
+		},
+		{
+			"forge": "GOAT_HORN_RANGE_BLOCKS",
+			"fabric": "GOAT_HORN_RANGE"
+		},
+		{
+			"forge": "GOAT_HORN_DURATION",
+			"fabric": "GOAT_HORN_USE_DURATION"
+		},
+		{
+			"forge": "PONDER_GOAT_HORN",
+			"fabric": "PONDER_GOAT_HORN"
+		},
+		{
+			"forge": "SING_GOAT_HORN",
+			"fabric": "SING_GOAT_HORN"
+		},
+		{
+			"forge": "SEEK_GOAT_HORN",
+			"fabric": "SEEK_GOAT_HORN"
+		},
+		{
+			"forge": "FEEL_GOAT_HORN",
+			"fabric": "FEEL_GOAT_HORN"
+		},
+		{
+			"forge": "ADMIRE_GOAT_HORN",
+			"fabric": "ADMIRE_GOAT_HORN"
+		},
+		{
+			"forge": "CALL_GOAT_HORN",
+			"fabric": "CALL_GOAT_HORN"
+		},
+		{
+			"forge": "YEARN_GOAT_HORN",
+			"fabric": "YEARN_GOAT_HORN"
+		},
+		{
+			"forge": "DREAM_GOAT_HORN",
+			"fabric": "DREAM_GOAT_HORN"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "bootstrap(Registry<Instrument> arg0)",
+			"fabric": "registerAndGetDefault(Registry<Instrument> registry)"
+		}
+	]
+}

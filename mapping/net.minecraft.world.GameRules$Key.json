@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.GameRules$Key",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.GameRules$Key",
+			"fabric": "net.minecraft.world.GameRules$Key"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "getCategory()",
+			"fabric": "getCategory()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature",
+			"fabric": "net.minecraft.world.gen.feature.MultifaceGrowthFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<MultifaceGrowthConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<MultifaceGrowthFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<MultifaceGrowthConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<MultifaceGrowthFeatureConfig> arg0)"
+		},
+		{
+			"forge": "placeGrowthIfPossible(WorldGenLevel arg0, BlockPos arg1, BlockState arg2, MultifaceGrowthConfiguration arg3, RandomSource arg4, List<Direction> arg5)",
+			"fabric": "generate(StructureWorldAccess world, BlockPos pos, BlockState state, MultifaceGrowthFeatureConfig config, Random random, List<Direction> directions)"
+		},
+		{
+			"forge": "isAirOrWater(BlockState arg0)",
+			"fabric": "isAirOrWater(BlockState state)"
+		}
+	]
+}

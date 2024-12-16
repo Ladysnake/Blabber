@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces",
+			"fabric": "net.minecraft.structure.BuriedTreasureGenerator"
+		}
+	]
+}

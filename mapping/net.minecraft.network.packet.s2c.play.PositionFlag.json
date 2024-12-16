@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.RelativeMovement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.RelativeMovement",
+			"fabric": "net.minecraft.network.packet.s2c.play.PositionFlag"
+		},
+		{
+			"forge": "X",
+			"fabric": "X"
+		},
+		{
+			"forge": "X",
+			"fabric": "X"
+		},
+		{
+			"forge": "Y",
+			"fabric": "Y"
+		},
+		{
+			"forge": "Z",
+			"fabric": "Z"
+		},
+		{
+			"forge": "Y_ROT",
+			"fabric": "Y_ROT"
+		},
+		{
+			"forge": "X_ROT",
+			"fabric": "X_ROT"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "ROTATION",
+			"fabric": "ROT"
+		},
+		{
+			"forge": "bit",
+			"fabric": "shift"
+		},
+		{
+			"forge": "getMask()",
+			"fabric": "getMask()"
+		},
+		{
+			"forge": "getMask()",
+			"fabric": "getMask()"
+		},
+		{
+			"forge": "isSet(int arg0)",
+			"fabric": "isSet(int mask)"
+		},
+		{
+			"forge": "unpack(int arg0)",
+			"fabric": "getFlags(int mask)"
+		},
+		{
+			"forge": "pack(Set<RelativeMovement> arg0)",
+			"fabric": "getBitfield(Set<PositionFlag> flags)"
+		}
+	]
+}

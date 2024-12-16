@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.item.FoodOnAStickItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.FoodOnAStickItem",
+			"fabric": "net.minecraft.item.OnAStickItem"
+		},
+		{
+			"forge": "canInteractWith",
+			"fabric": "target"
+		},
+		{
+			"forge": "canInteractWith",
+			"fabric": "target"
+		},
+		{
+			"forge": "consumeItemDamage",
+			"fabric": "damagePerUse"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		}
+	]
+}

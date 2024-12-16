@@ -1,0 +1,297 @@
+{
+	"title": "net.minecraft.data.models.model.TextureMapping",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.model.TextureMapping",
+			"fabric": "net.minecraft.data.client.TextureMap"
+		},
+		{
+			"forge": "slots",
+			"fabric": "entries"
+		},
+		{
+			"forge": "slots",
+			"fabric": "entries"
+		},
+		{
+			"forge": "forcedSlots",
+			"fabric": "inherited"
+		},
+		{
+			"forge": "put(TextureSlot arg0, ResourceLocation arg1)",
+			"fabric": "put(TextureKey key, Identifier id)"
+		},
+		{
+			"forge": "put(TextureSlot arg0, ResourceLocation arg1)",
+			"fabric": "put(TextureKey key, Identifier id)"
+		},
+		{
+			"forge": "putForced(TextureSlot arg0, ResourceLocation arg1)",
+			"fabric": "register(TextureKey key, Identifier id)"
+		},
+		{
+			"forge": "getForced()",
+			"fabric": "getInherited()"
+		},
+		{
+			"forge": "copySlot(TextureSlot arg0, TextureSlot arg1)",
+			"fabric": "copy(TextureKey parent, TextureKey child)"
+		},
+		{
+			"forge": "copyForced(TextureSlot arg0, TextureSlot arg1)",
+			"fabric": "inherit(TextureKey parent, TextureKey child)"
+		},
+		{
+			"forge": "get(TextureSlot arg0)",
+			"fabric": "getTexture(TextureKey key)"
+		},
+		{
+			"forge": "copyAndUpdate(TextureSlot arg0, ResourceLocation arg1)",
+			"fabric": "copyAndAdd(TextureKey key, Identifier id)"
+		},
+		{
+			"forge": "cube(Block arg0)",
+			"fabric": "all(Block block)"
+		},
+		{
+			"forge": "defaultTexture(Block arg0)",
+			"fabric": "texture(Block block)"
+		},
+		{
+			"forge": "defaultTexture(ResourceLocation arg0)",
+			"fabric": "texture(Identifier id)"
+		},
+		{
+			"forge": "cube(ResourceLocation arg0)",
+			"fabric": "all(Identifier id)"
+		},
+		{
+			"forge": "cross(Block arg0)",
+			"fabric": "cross(Block block)"
+		},
+		{
+			"forge": "cross(ResourceLocation arg0)",
+			"fabric": "cross(Identifier id)"
+		},
+		{
+			"forge": "plant(Block arg0)",
+			"fabric": "plant(Block block)"
+		},
+		{
+			"forge": "plant(ResourceLocation arg0)",
+			"fabric": "plant(Identifier id)"
+		},
+		{
+			"forge": "rail(Block arg0)",
+			"fabric": "rail(Block block)"
+		},
+		{
+			"forge": "rail(ResourceLocation arg0)",
+			"fabric": "rail(Identifier id)"
+		},
+		{
+			"forge": "wool(Block arg0)",
+			"fabric": "wool(Block block)"
+		},
+		{
+			"forge": "flowerbed(Block arg0)",
+			"fabric": "flowerbed(Block block)"
+		},
+		{
+			"forge": "wool(ResourceLocation arg0)",
+			"fabric": "wool(Identifier id)"
+		},
+		{
+			"forge": "stem(Block arg0)",
+			"fabric": "stem(Block block)"
+		},
+		{
+			"forge": "attachedStem(Block arg0, Block arg1)",
+			"fabric": "stemAndUpper(Block stem, Block upper)"
+		},
+		{
+			"forge": "pattern(Block arg0)",
+			"fabric": "pattern(Block block)"
+		},
+		{
+			"forge": "fan(Block arg0)",
+			"fabric": "fan(Block block)"
+		},
+		{
+			"forge": "crop(ResourceLocation arg0)",
+			"fabric": "crop(Identifier id)"
+		},
+		{
+			"forge": "pane(Block arg0, Block arg1)",
+			"fabric": "paneAndTopForEdge(Block block, Block top)"
+		},
+		{
+			"forge": "singleSlot(TextureSlot arg0, ResourceLocation arg1)",
+			"fabric": "of(TextureKey key, Identifier id)"
+		},
+		{
+			"forge": "column(Block arg0)",
+			"fabric": "sideEnd(Block block)"
+		},
+		{
+			"forge": "cubeTop(Block arg0)",
+			"fabric": "sideAndTop(Block block)"
+		},
+		{
+			"forge": "pottedAzalea(Block arg0)",
+			"fabric": "pottedAzaleaBush(Block block)"
+		},
+		{
+			"forge": "logColumn(Block arg0)",
+			"fabric": "sideAndEndForTop(Block block)"
+		},
+		{
+			"forge": "column(ResourceLocation arg0, ResourceLocation arg1)",
+			"fabric": "sideEnd(Identifier side, Identifier end)"
+		},
+		{
+			"forge": "fence(Block arg0)",
+			"fabric": "textureSideTop(Block block)"
+		},
+		{
+			"forge": "customParticle(Block arg0)",
+			"fabric": "textureParticle(Block block)"
+		},
+		{
+			"forge": "cubeBottomTop(Block arg0)",
+			"fabric": "sideTopBottom(Block block)"
+		},
+		{
+			"forge": "cubeBottomTopWithWall(Block arg0)",
+			"fabric": "wallSideTopBottom(Block block)"
+		},
+		{
+			"forge": "columnWithWall(Block arg0)",
+			"fabric": "wallSideEnd(Block block)"
+		},
+		{
+			"forge": "door(ResourceLocation arg0, ResourceLocation arg1)",
+			"fabric": "topBottom(Identifier top, Identifier bottom)"
+		},
+		{
+			"forge": "door(Block arg0)",
+			"fabric": "topBottom(Block block)"
+		},
+		{
+			"forge": "particle(Block arg0)",
+			"fabric": "particle(Block block)"
+		},
+		{
+			"forge": "particle(ResourceLocation arg0)",
+			"fabric": "particle(Identifier id)"
+		},
+		{
+			"forge": "fire0(Block arg0)",
+			"fabric": "fire0(Block block)"
+		},
+		{
+			"forge": "fire1(Block arg0)",
+			"fabric": "fire1(Block block)"
+		},
+		{
+			"forge": "lantern(Block arg0)",
+			"fabric": "lantern(Block block)"
+		},
+		{
+			"forge": "torch(Block arg0)",
+			"fabric": "torch(Block block)"
+		},
+		{
+			"forge": "torch(ResourceLocation arg0)",
+			"fabric": "torch(Identifier id)"
+		},
+		{
+			"forge": "particleFromItem(Item arg0)",
+			"fabric": "particle(Item item)"
+		},
+		{
+			"forge": "commandBlock(Block arg0)",
+			"fabric": "sideFrontBack(Block block)"
+		},
+		{
+			"forge": "orientableCube(Block arg0)",
+			"fabric": "sideFrontTopBottom(Block block)"
+		},
+		{
+			"forge": "orientableCubeOnlyTop(Block arg0)",
+			"fabric": "sideFrontTop(Block block)"
+		},
+		{
+			"forge": "orientableCubeSameEnds(Block arg0)",
+			"fabric": "sideFrontEnd(Block block)"
+		},
+		{
+			"forge": "top(Block arg0)",
+			"fabric": "top(Block top)"
+		},
+		{
+			"forge": "craftingTable(Block arg0, Block arg1)",
+			"fabric": "frontSideWithCustomBottom(Block block, Block bottom)"
+		},
+		{
+			"forge": "fletchingTable(Block arg0, Block arg1)",
+			"fabric": "frontTopSide(Block frontTopSideBlock, Block downBlock)"
+		},
+		{
+			"forge": "snifferEgg(String arg0)",
+			"fabric": "snifferEgg(String age)"
+		},
+		{
+			"forge": "campfire(Block arg0)",
+			"fabric": "campfire(Block block)"
+		},
+		{
+			"forge": "candleCake(Block arg0, boolean arg1)",
+			"fabric": "candleCake(Block block, boolean lit)"
+		},
+		{
+			"forge": "cauldron(ResourceLocation arg0)",
+			"fabric": "cauldron(Identifier content)"
+		},
+		{
+			"forge": "sculkShrieker(boolean arg0)",
+			"fabric": "sculkShrieker(boolean canSummon)"
+		},
+		{
+			"forge": "layer0(Item arg0)",
+			"fabric": "layer0(Item item)"
+		},
+		{
+			"forge": "layer0(Block arg0)",
+			"fabric": "layer0(Block block)"
+		},
+		{
+			"forge": "layer0(ResourceLocation arg0)",
+			"fabric": "layer0(Identifier id)"
+		},
+		{
+			"forge": "layered(ResourceLocation arg0, ResourceLocation arg1)",
+			"fabric": "layered(Identifier layer0, Identifier layer1)"
+		},
+		{
+			"forge": "layered(ResourceLocation arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "layered(Identifier layer0, Identifier layer1, Identifier layer2)"
+		},
+		{
+			"forge": "getBlockTexture(Block arg0)",
+			"fabric": "getId(Block block)"
+		},
+		{
+			"forge": "getBlockTexture(Block arg0, String arg1)",
+			"fabric": "getSubId(Block block, String suffix)"
+		},
+		{
+			"forge": "getItemTexture(Item arg0)",
+			"fabric": "getId(Item item)"
+		},
+		{
+			"forge": "getItemTexture(Item arg0, String arg1)",
+			"fabric": "getSubId(Item item, String suffix)"
+		}
+	]
+}

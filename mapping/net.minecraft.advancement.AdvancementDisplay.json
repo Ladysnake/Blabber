@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.advancements.DisplayInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.DisplayInfo",
+			"fabric": "net.minecraft.advancement.AdvancementDisplay"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "description",
+			"fabric": "description"
+		},
+		{
+			"forge": "icon",
+			"fabric": "icon"
+		},
+		{
+			"forge": "background",
+			"fabric": "background"
+		},
+		{
+			"forge": "frame",
+			"fabric": "frame"
+		},
+		{
+			"forge": "showToast",
+			"fabric": "showToast"
+		},
+		{
+			"forge": "announceChat",
+			"fabric": "announceToChat"
+		},
+		{
+			"forge": "hidden",
+			"fabric": "hidden"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "setLocation(float arg0, float arg1)",
+			"fabric": "setPos(float x, float y)"
+		},
+		{
+			"forge": "setLocation(float arg0, float arg1)",
+			"fabric": "setPos(float x, float y)"
+		},
+		{
+			"forge": "getTitle()",
+			"fabric": "getTitle()"
+		},
+		{
+			"forge": "getDescription()",
+			"fabric": "getDescription()"
+		},
+		{
+			"forge": "getIcon()",
+			"fabric": "getIcon()"
+		},
+		{
+			"forge": "getBackground()",
+			"fabric": "getBackground()"
+		},
+		{
+			"forge": "getFrame()",
+			"fabric": "getFrame()"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "shouldShowToast()",
+			"fabric": "shouldShowToast()"
+		},
+		{
+			"forge": "shouldAnnounceChat()",
+			"fabric": "shouldAnnounceToChat()"
+		},
+		{
+			"forge": "isHidden()",
+			"fabric": "isHidden()"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject obj)"
+		},
+		{
+			"forge": "getIcon(com.google.gson.JsonObject arg0)",
+			"fabric": "iconFromJson(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "serializeToNetwork(FriendlyByteBuf arg0)",
+			"fabric": "toPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "fromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "serializeToJson()",
+			"fabric": "toJson()"
+		},
+		{
+			"forge": "serializeIcon()",
+			"fabric": "iconToJson()"
+		}
+	]
+}

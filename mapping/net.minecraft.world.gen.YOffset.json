@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.levelgen.VerticalAnchor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.VerticalAnchor",
+			"fabric": "net.minecraft.world.gen.YOffset"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "OFFSET_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "OFFSET_CODEC"
+		},
+		{
+			"forge": "BOTTOM",
+			"fabric": "BOTTOM"
+		},
+		{
+			"forge": "TOP",
+			"fabric": "TOP"
+		},
+		{
+			"forge": "absolute(int arg0)",
+			"fabric": "fixed(int offset)"
+		},
+		{
+			"forge": "absolute(int arg0)",
+			"fabric": "fixed(int offset)"
+		},
+		{
+			"forge": "aboveBottom(int arg0)",
+			"fabric": "aboveBottom(int offset)"
+		},
+		{
+			"forge": "belowTop(int arg0)",
+			"fabric": "belowTop(int offset)"
+		},
+		{
+			"forge": "bottom()",
+			"fabric": "getBottom()"
+		},
+		{
+			"forge": "top()",
+			"fabric": "getTop()"
+		},
+		{
+			"forge": "merge(com.mojang.datafixers.util.Either<VerticalAnchor$Absolute, com.mojang.datafixers.util.Either<VerticalAnchor$AboveBottom, VerticalAnchor$BelowTop>> arg0)",
+			"fabric": "fromEither(com.mojang.datafixers.util.Either<YOffset$Fixed, com.mojang.datafixers.util.Either<YOffset$AboveBottom, YOffset$BelowTop>> either)"
+		},
+		{
+			"forge": "split(VerticalAnchor arg0)",
+			"fabric": "map(YOffset yOffset)"
+		},
+		{
+			"forge": "resolveY(WorldGenerationContext arg0)",
+			"fabric": "getY(HeightContext context)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+			"fabric": "net.minecraft.loot.context.LootContextType"
+		},
+		{
+			"forge": "required",
+			"fabric": "required"
+		},
+		{
+			"forge": "required",
+			"fabric": "required"
+		},
+		{
+			"forge": "all",
+			"fabric": "allowed"
+		},
+		{
+			"forge": "isAllowed(LootContextParam<?> arg0)",
+			"fabric": "isAllowed(LootContextParameter<?> parameter)"
+		},
+		{
+			"forge": "isAllowed(LootContextParam<?> arg0)",
+			"fabric": "isAllowed(LootContextParameter<?> parameter)"
+		},
+		{
+			"forge": "getRequired()",
+			"fabric": "getRequired()"
+		},
+		{
+			"forge": "getAllowed()",
+			"fabric": "getAllowed()"
+		},
+		{
+			"forge": "validateUser(ValidationContext arg0, LootContextUser arg1)",
+			"fabric": "validate(LootTableReporter reporter, LootContextAware parameterConsumer)"
+		},
+		{
+			"forge": "builder()",
+			"fabric": "create()"
+		}
+	]
+}

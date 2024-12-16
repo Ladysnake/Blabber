@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$TestRule",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$TestRule",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$ConditionalBlockStateRule"
+		},
+		{
+			"forge": "condition",
+			"fabric": "condition"
+		},
+		{
+			"forge": "condition",
+			"fabric": "condition"
+		},
+		{
+			"forge": "followup",
+			"fabric": "followup"
+		},
+		{
+			"forge": "tryApply(int arg0, int arg1, int arg2)",
+			"fabric": "tryApply(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "tryApply(int arg0, int arg1, int arg2)",
+			"fabric": "tryApply(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "condition()",
+			"fabric": "condition()"
+		},
+		{
+			"forge": "followup()",
+			"fabric": "followup()"
+		}
+	]
+}

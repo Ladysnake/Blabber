@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.resources.metadata.animation.AnimationMetadataSectionSerializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.metadata.animation.AnimationMetadataSectionSerializer",
+			"fabric": "net.minecraft.client.resource.metadata.AnimationResourceMetadataReader"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "getFrame(int arg0, com.google.gson.JsonElement arg1)",
+			"fabric": "readFrameMetadata(int frame, com.google.gson.JsonElement json)"
+		},
+		{
+			"forge": "getMetadataSectionName()",
+			"fabric": "getKey()"
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.entity.EquipmentSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.EquipmentSlot",
+			"fabric": "net.minecraft.entity.EquipmentSlot"
+		},
+		{
+			"forge": "MAINHAND",
+			"fabric": "MAINHAND"
+		},
+		{
+			"forge": "MAINHAND",
+			"fabric": "MAINHAND"
+		},
+		{
+			"forge": "OFFHAND",
+			"fabric": "OFFHAND"
+		},
+		{
+			"forge": "FEET",
+			"fabric": "FEET"
+		},
+		{
+			"forge": "LEGS",
+			"fabric": "LEGS"
+		},
+		{
+			"forge": "CHEST",
+			"fabric": "CHEST"
+		},
+		{
+			"forge": "HEAD",
+			"fabric": "HEAD"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "index",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "filterFlag",
+			"fabric": "armorStandId"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getIndex()",
+			"fabric": "getEntitySlotId()"
+		},
+		{
+			"forge": "getIndex(int arg0)",
+			"fabric": "getOffsetEntitySlotId(int offset)"
+		},
+		{
+			"forge": "getFilterFlag()",
+			"fabric": "getArmorStandSlotId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "isArmor()",
+			"fabric": "isArmorSlot()"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "byName(String name)"
+		},
+		{
+			"forge": "byTypeAndIndex(EquipmentSlot$Type arg0, int arg1)",
+			"fabric": "fromTypeIndex(EquipmentSlot$Type type, int index)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.entity.CaveSpiderRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.CaveSpiderRenderer",
+			"fabric": "net.minecraft.client.render.entity.CaveSpiderEntityRenderer"
+		},
+		{
+			"forge": "CAVE_SPIDER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "CAVE_SPIDER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SCALE",
+			"fabric": "SCALE"
+		},
+		{
+			"forge": "scale(CaveSpider arg0, PoseStack arg1, float arg2)",
+			"fabric": "scale(CaveSpiderEntity arg0, MatrixStack arg1, float arg2)"
+		},
+		{
+			"forge": "scale(CaveSpider arg0, PoseStack arg1, float arg2)",
+			"fabric": "scale(CaveSpiderEntity arg0, MatrixStack arg1, float arg2)"
+		},
+		{
+			"forge": "getTextureLocation(CaveSpider arg0)",
+			"fabric": "getTexture(CaveSpiderEntity arg0)"
+		}
+	]
+}

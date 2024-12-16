@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.VisGraph",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.VisGraph",
+			"fabric": "net.minecraft.client.render.chunk.ChunkOcclusionDataBuilder"
+		},
+		{
+			"forge": "SIZE_IN_BITS",
+			"fabric": "field_32833"
+		},
+		{
+			"forge": "SIZE_IN_BITS",
+			"fabric": "field_32833"
+		},
+		{
+			"forge": "LEN",
+			"fabric": "field_32834"
+		},
+		{
+			"forge": "MASK",
+			"fabric": "field_32835"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "field_32836"
+		},
+		{
+			"forge": "X_SHIFT",
+			"fabric": "field_32837"
+		},
+		{
+			"forge": "Z_SHIFT",
+			"fabric": "field_32838"
+		},
+		{
+			"forge": "Y_SHIFT",
+			"fabric": "field_32839"
+		},
+		{
+			"forge": "DX",
+			"fabric": "STEP_X"
+		},
+		{
+			"forge": "DZ",
+			"fabric": "STEP_Z"
+		},
+		{
+			"forge": "DY",
+			"fabric": "STEP_Y"
+		},
+		{
+			"forge": "INVALID_INDEX",
+			"fabric": "field_32840"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "DIRECTIONS"
+		},
+		{
+			"forge": "bitSet",
+			"fabric": "closed"
+		},
+		{
+			"forge": "INDEX_OF_EDGES",
+			"fabric": "EDGE_POINTS"
+		},
+		{
+			"forge": "empty",
+			"fabric": "openCount"
+		},
+		{
+			"forge": "setOpaque(BlockPos arg0)",
+			"fabric": "markClosed(BlockPos pos)"
+		},
+		{
+			"forge": "setOpaque(BlockPos arg0)",
+			"fabric": "markClosed(BlockPos pos)"
+		},
+		{
+			"forge": "getIndex(BlockPos arg0)",
+			"fabric": "pack(BlockPos pos)"
+		},
+		{
+			"forge": "getIndex(int arg0, int arg1, int arg2)",
+			"fabric": "pack(int x, int y, int z)"
+		},
+		{
+			"forge": "resolve()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "floodFill(int arg0)",
+			"fabric": "getOpenFaces(int pos)"
+		},
+		{
+			"forge": "addEdges(int arg0, Set<Direction> arg1)",
+			"fabric": "addEdgeFaces(int pos, Set<Direction> openFaces)"
+		},
+		{
+			"forge": "getNeighborIndexAtFace(int arg0, Direction arg1)",
+			"fabric": "offset(int pos, Direction direction)"
+		}
+	]
+}

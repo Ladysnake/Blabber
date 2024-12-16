@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.item.alchemy.PotionUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.alchemy.PotionUtils",
+			"fabric": "net.minecraft.potion.PotionUtil"
+		},
+		{
+			"forge": "TAG_CUSTOM_POTION_EFFECTS",
+			"fabric": "CUSTOM_POTION_EFFECTS_KEY"
+		},
+		{
+			"forge": "TAG_CUSTOM_POTION_EFFECTS",
+			"fabric": "CUSTOM_POTION_EFFECTS_KEY"
+		},
+		{
+			"forge": "TAG_CUSTOM_POTION_COLOR",
+			"fabric": "CUSTOM_POTION_COLOR_KEY"
+		},
+		{
+			"forge": "TAG_POTION",
+			"fabric": "POTION_KEY"
+		},
+		{
+			"forge": "EMPTY_COLOR",
+			"fabric": "DEFAULT_COLOR"
+		},
+		{
+			"forge": "NO_EFFECT",
+			"fabric": "NONE_TEXT"
+		},
+		{
+			"forge": "getMobEffects(ItemStack arg0)",
+			"fabric": "getPotionEffects(ItemStack stack)"
+		},
+		{
+			"forge": "getMobEffects(ItemStack arg0)",
+			"fabric": "getPotionEffects(ItemStack stack)"
+		},
+		{
+			"forge": "getAllEffects(Potion arg0, Collection<MobEffectInstance> arg1)",
+			"fabric": "getPotionEffects(Potion potion, Collection<StatusEffectInstance> custom)"
+		},
+		{
+			"forge": "getAllEffects(CompoundTag arg0)",
+			"fabric": "getPotionEffects(NbtCompound nbt)"
+		},
+		{
+			"forge": "getCustomEffects(ItemStack arg0)",
+			"fabric": "getCustomPotionEffects(ItemStack stack)"
+		},
+		{
+			"forge": "getCustomEffects(CompoundTag arg0)",
+			"fabric": "getCustomPotionEffects(NbtCompound nbt)"
+		},
+		{
+			"forge": "getCustomEffects(CompoundTag arg0, List<MobEffectInstance> arg1)",
+			"fabric": "getCustomPotionEffects(NbtCompound nbt, List<StatusEffectInstance> list)"
+		},
+		{
+			"forge": "getColor(ItemStack arg0)",
+			"fabric": "getColor(ItemStack stack)"
+		},
+		{
+			"forge": "getColor(Potion arg0)",
+			"fabric": "getColor(Potion potion)"
+		},
+		{
+			"forge": "getColor(Collection<MobEffectInstance> arg0)",
+			"fabric": "getColor(Collection<StatusEffectInstance> effects)"
+		},
+		{
+			"forge": "getPotion(ItemStack arg0)",
+			"fabric": "getPotion(ItemStack stack)"
+		},
+		{
+			"forge": "getPotion(CompoundTag arg0)",
+			"fabric": "getPotion(NbtCompound compound)"
+		},
+		{
+			"forge": "setPotion(ItemStack arg0, Potion arg1)",
+			"fabric": "setPotion(ItemStack stack, Potion potion)"
+		},
+		{
+			"forge": "setCustomEffects(ItemStack arg0, Collection<MobEffectInstance> arg1)",
+			"fabric": "setCustomPotionEffects(ItemStack stack, Collection<StatusEffectInstance> effects)"
+		},
+		{
+			"forge": "addPotionTooltip(ItemStack arg0, List<Component> arg1, float arg2)",
+			"fabric": "buildTooltip(ItemStack stack, List<Text> list, float durationMultiplier)"
+		},
+		{
+			"forge": "addPotionTooltip(List<MobEffectInstance> arg0, List<Component> arg1, float arg2)",
+			"fabric": "buildTooltip(List<StatusEffectInstance> statusEffects, List<Text> list, float durationMultiplier)"
+		}
+	]
+}

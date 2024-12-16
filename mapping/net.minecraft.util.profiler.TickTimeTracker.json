@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.util.profiling.ContinuousProfiler",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.ContinuousProfiler",
+			"fabric": "net.minecraft.util.profiler.TickTimeTracker"
+		},
+		{
+			"forge": "realTime",
+			"fabric": "timeGetter"
+		},
+		{
+			"forge": "realTime",
+			"fabric": "timeGetter"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "tickGetter"
+		},
+		{
+			"forge": "profiler",
+			"fabric": "profiler"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "isActive()"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "isActive()"
+		},
+		{
+			"forge": "disable()",
+			"fabric": "disable()"
+		},
+		{
+			"forge": "enable()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "getFiller()",
+			"fabric": "getProfiler()"
+		},
+		{
+			"forge": "getResults()",
+			"fabric": "getResult()"
+		}
+	]
+}

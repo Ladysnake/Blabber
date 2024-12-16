@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.core.RegistryAccess$ImmutableRegistryAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistryAccess$ImmutableRegistryAccess",
+			"fabric": "net.minecraft.registry.DynamicRegistryManager$ImmutableImpl"
+		},
+		{
+			"forge": "registries",
+			"fabric": "registries"
+		},
+		{
+			"forge": "registries",
+			"fabric": "registries"
+		},
+		{
+			"forge": "registry(ResourceKey<? extends Registry<? extends E>> arg0)",
+			"fabric": "getOptional(RegistryKey<? extends Registry<? extends E>> arg0)"
+		},
+		{
+			"forge": "registry(ResourceKey<? extends Registry<? extends E>> arg0)",
+			"fabric": "getOptional(RegistryKey<? extends Registry<? extends E>> arg0)"
+		},
+		{
+			"forge": "registries()",
+			"fabric": "streamAllRegistries()"
+		}
+	]
+}

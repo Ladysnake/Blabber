@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.client.gui.screens.multiplayer.ServerSelectionList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.multiplayer.ServerSelectionList",
+			"fabric": "net.minecraft.client.gui.screen.multiplayer.MultiplayerServerListWidget"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "THREAD_POOL",
+			"fabric": "SERVER_PINGER_THREAD_POOL"
+		},
+		{
+			"forge": "ICON_MISSING",
+			"fabric": "UNKNOWN_SERVER_TEXTURE"
+		},
+		{
+			"forge": "ICON_OVERLAY_LOCATION",
+			"fabric": "SERVER_SELECTION_TEXTURE"
+		},
+		{
+			"forge": "GUI_ICONS_LOCATION",
+			"fabric": "ICONS_TEXTURE"
+		},
+		{
+			"forge": "SCANNING_LABEL",
+			"fabric": "LAN_SCANNING_TEXT"
+		},
+		{
+			"forge": "CANT_RESOLVE_TEXT",
+			"fabric": "CANNOT_RESOLVE_TEXT"
+		},
+		{
+			"forge": "CANT_CONNECT_TEXT",
+			"fabric": "CANNOT_CONNECT_TEXT"
+		},
+		{
+			"forge": "INCOMPATIBLE_STATUS",
+			"fabric": "INCOMPATIBLE_TEXT"
+		},
+		{
+			"forge": "NO_CONNECTION_STATUS",
+			"fabric": "NO_CONNECTION_TEXT"
+		},
+		{
+			"forge": "PINGING_STATUS",
+			"fabric": "PINGING_TEXT"
+		},
+		{
+			"forge": "ONLINE_STATUS",
+			"fabric": "ONLINE_TEXT"
+		},
+		{
+			"forge": "screen",
+			"fabric": "screen"
+		},
+		{
+			"forge": "onlineServers",
+			"fabric": "servers"
+		},
+		{
+			"forge": "lanHeader",
+			"fabric": "scanningEntry"
+		},
+		{
+			"forge": "networkServers",
+			"fabric": "lanServers"
+		},
+		{
+			"forge": "refreshEntries()",
+			"fabric": "updateEntries()"
+		},
+		{
+			"forge": "refreshEntries()",
+			"fabric": "updateEntries()"
+		},
+		{
+			"forge": "setSelected(ServerSelectionList$Entry arg0)",
+			"fabric": "setSelected(MultiplayerServerListWidget$Entry arg0)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "updateOnlineServers(ServerList arg0)",
+			"fabric": "setServers(ServerList servers)"
+		},
+		{
+			"forge": "updateNetworkServers(List<LanServer> arg0)",
+			"fabric": "setLanServers(List<LanServerInfo> lanServers)"
+		},
+		{
+			"forge": "getScrollbarPosition()",
+			"fabric": "getScrollbarPositionX()"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		},
+		{
+			"forge": "removed()",
+			"fabric": "onRemoved()"
+		}
+	]
+}

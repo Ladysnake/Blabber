@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.level.ChunkTaskPriorityQueueSorter$Release",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ChunkTaskPriorityQueueSorter$Release",
+			"fabric": "net.minecraft.server.world.ChunkTaskPrioritySystem$UnblockingMessage"
+		},
+		{
+			"forge": "task",
+			"fabric": "callback"
+		},
+		{
+			"forge": "task",
+			"fabric": "callback"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "clearQueue",
+			"fabric": "removeTask"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.multipart.Selector",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.multipart.Selector",
+			"fabric": "net.minecraft.client.render.model.json.MultipartModelComponent"
+		},
+		{
+			"forge": "condition",
+			"fabric": "selector"
+		},
+		{
+			"forge": "condition",
+			"fabric": "selector"
+		},
+		{
+			"forge": "variant",
+			"fabric": "model"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getModel()"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getModel()"
+		},
+		{
+			"forge": "getPredicate(StateDefinition<Block, BlockState> arg0)",
+			"fabric": "getPredicate(StateManager<Block, BlockState> stateFactory)"
+		}
+	]
+}

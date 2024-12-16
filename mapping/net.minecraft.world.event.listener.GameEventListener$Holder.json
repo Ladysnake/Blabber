@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.gameevent.GameEventListener$Holder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.GameEventListener$Holder",
+			"fabric": "net.minecraft.world.event.listener.GameEventListener$Holder"
+		},
+		{
+			"forge": "getListener()",
+			"fabric": "getEventListener()"
+		},
+		{
+			"forge": "getListener()",
+			"fabric": "getEventListener()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$Wrapper"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "wrapped()",
+			"fabric": "wrapped()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodecHolder()"
+		},
+		{
+			"forge": "mapAll(DensityFunction$Visitor arg0)",
+			"fabric": "apply(DensityFunction$DensityFunctionVisitor arg0)"
+		}
+	]
+}

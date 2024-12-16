@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.packs.repository.RepositorySource",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.repository.RepositorySource",
+			"fabric": "net.minecraft.resource.ResourcePackProvider"
+		},
+		{
+			"forge": "loadPacks(Consumer<Pack> arg0)",
+			"fabric": "register(Consumer<ResourcePackProfile> profileAdder)"
+		},
+		{
+			"forge": "loadPacks(Consumer<Pack> arg0)",
+			"fabric": "register(Consumer<ResourcePackProfile> profileAdder)"
+		}
+	]
+}

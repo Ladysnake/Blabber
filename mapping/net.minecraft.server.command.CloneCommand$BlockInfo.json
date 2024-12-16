@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.commands.CloneCommands$CloneBlockInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.CloneCommands$CloneBlockInfo",
+			"fabric": "net.minecraft.server.command.CloneCommand$BlockInfo"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "tag",
+			"fabric": "blockEntityNbt"
+		}
+	]
+}

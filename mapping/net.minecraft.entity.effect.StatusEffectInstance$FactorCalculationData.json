@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.effect.MobEffectInstance$FactorData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.effect.MobEffectInstance$FactorData",
+			"fabric": "net.minecraft.entity.effect.StatusEffectInstance$FactorCalculationData"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "paddingDuration",
+			"fabric": "paddingDuration"
+		},
+		{
+			"forge": "factorStart",
+			"fabric": "factorStart"
+		},
+		{
+			"forge": "factorTarget",
+			"fabric": "factorTarget"
+		},
+		{
+			"forge": "factorCurrent",
+			"fabric": "factorCurrent"
+		},
+		{
+			"forge": "ticksActive",
+			"fabric": "effectChangedTimestamp"
+		},
+		{
+			"forge": "factorPreviousFrame",
+			"fabric": "factorPreviousFrame"
+		},
+		{
+			"forge": "hadEffectLastTick",
+			"fabric": "hadEffectLastTick"
+		},
+		{
+			"forge": "tick(MobEffectInstance arg0)",
+			"fabric": "update(StatusEffectInstance effect)"
+		},
+		{
+			"forge": "tick(MobEffectInstance arg0)",
+			"fabric": "update(StatusEffectInstance effect)"
+		},
+		{
+			"forge": "getFactor(LivingEntity arg0, float arg1)",
+			"fabric": "lerp(LivingEntity entity, float tickDelta)"
+		}
+	]
+}

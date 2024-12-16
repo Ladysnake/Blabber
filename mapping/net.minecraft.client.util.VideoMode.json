@@ -1,0 +1,77 @@
+{
+	"title": "com.mojang.blaze3d.platform.VideoMode",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.VideoMode",
+			"fabric": "net.minecraft.client.util.VideoMode"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "redBits",
+			"fabric": "redBits"
+		},
+		{
+			"forge": "greenBits",
+			"fabric": "greenBits"
+		},
+		{
+			"forge": "blueBits",
+			"fabric": "blueBits"
+		},
+		{
+			"forge": "refreshRate",
+			"fabric": "refreshRate"
+		},
+		{
+			"forge": "PATTERN",
+			"fabric": "PATTERN"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getRedBits()",
+			"fabric": "getRedBits()"
+		},
+		{
+			"forge": "getGreenBits()",
+			"fabric": "getGreenBits()"
+		},
+		{
+			"forge": "getBlueBits()",
+			"fabric": "getBlueBits()"
+		},
+		{
+			"forge": "getRefreshRate()",
+			"fabric": "getRefreshRate()"
+		},
+		{
+			"forge": "read(String arg0)",
+			"fabric": "fromString(String string)"
+		},
+		{
+			"forge": "write()",
+			"fabric": "asString()"
+		}
+	]
+}

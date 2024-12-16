@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.chunk.Palette",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.Palette",
+			"fabric": "net.minecraft.world.chunk.Palette"
+		},
+		{
+			"forge": "idFor(T arg0)",
+			"fabric": "index(T object)"
+		},
+		{
+			"forge": "idFor(T arg0)",
+			"fabric": "index(T object)"
+		},
+		{
+			"forge": "maybeHas(Predicate<T> arg0)",
+			"fabric": "hasAny(Predicate<T> predicate)"
+		},
+		{
+			"forge": "valueFor(int arg0)",
+			"fabric": "get(int id)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "readPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "writePacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "getSerializedSize()",
+			"fabric": "getPacketSize()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blockpredicates.MatchingFluidsPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blockpredicates.MatchingFluidsPredicate",
+			"fabric": "net.minecraft.world.gen.blockpredicate.MatchingFluidsBlockPredicate"
+		},
+		{
+			"forge": "fluids",
+			"fabric": "fluids"
+		},
+		{
+			"forge": "fluids",
+			"fabric": "fluids"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "test(BlockState arg0)",
+			"fabric": "test(BlockState arg0)"
+		},
+		{
+			"forge": "test(BlockState arg0)",
+			"fabric": "test(BlockState arg0)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

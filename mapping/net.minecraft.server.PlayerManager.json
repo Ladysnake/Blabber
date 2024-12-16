@@ -1,0 +1,361 @@
+{
+	"title": "net.minecraft.server.players.PlayerList",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.PlayerList",
+			"fabric": "net.minecraft.server.PlayerManager"
+		},
+		{
+			"forge": "USERBANLIST_FILE",
+			"fabric": "BANNED_PLAYERS_FILE"
+		},
+		{
+			"forge": "USERBANLIST_FILE",
+			"fabric": "BANNED_PLAYERS_FILE"
+		},
+		{
+			"forge": "IPBANLIST_FILE",
+			"fabric": "BANNED_IPS_FILE"
+		},
+		{
+			"forge": "OPLIST_FILE",
+			"fabric": "OPERATORS_FILE"
+		},
+		{
+			"forge": "WHITELIST_FILE",
+			"fabric": "WHITELIST_FILE"
+		},
+		{
+			"forge": "CHAT_FILTERED_FULL",
+			"fabric": "FILTERED_FULL_TEXT"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SEND_PLAYER_INFO_INTERVAL",
+			"fabric": "LATENCY_UPDATE_INTERVAL"
+		},
+		{
+			"forge": "BAN_DATE_FORMAT",
+			"fabric": "DATE_FORMATTER"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "players",
+			"fabric": "players"
+		},
+		{
+			"forge": "playersByUUID",
+			"fabric": "playerMap"
+		},
+		{
+			"forge": "bans",
+			"fabric": "bannedProfiles"
+		},
+		{
+			"forge": "ipBans",
+			"fabric": "bannedIps"
+		},
+		{
+			"forge": "ops",
+			"fabric": "ops"
+		},
+		{
+			"forge": "whitelist",
+			"fabric": "whitelist"
+		},
+		{
+			"forge": "stats",
+			"fabric": "statisticsMap"
+		},
+		{
+			"forge": "advancements",
+			"fabric": "advancementTrackers"
+		},
+		{
+			"forge": "playerIo",
+			"fabric": "saveHandler"
+		},
+		{
+			"forge": "doWhiteList",
+			"fabric": "whitelistEnabled"
+		},
+		{
+			"forge": "registries",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "synchronizedRegistries",
+			"fabric": "syncedRegistryManager"
+		},
+		{
+			"forge": "maxPlayers",
+			"fabric": "maxPlayers"
+		},
+		{
+			"forge": "viewDistance",
+			"fabric": "viewDistance"
+		},
+		{
+			"forge": "simulationDistance",
+			"fabric": "simulationDistance"
+		},
+		{
+			"forge": "allowCheatsForAllPlayers",
+			"fabric": "cheatsAllowed"
+		},
+		{
+			"forge": "ALLOW_LOGOUTIVATOR",
+			"fabric": "field_29791"
+		},
+		{
+			"forge": "sendAllPlayerInfoIn",
+			"fabric": "latencyUpdateTimer"
+		},
+		{
+			"forge": "placeNewPlayer(Connection arg0, ServerPlayer arg1)",
+			"fabric": "onPlayerConnect(ClientConnection connection, ServerPlayerEntity player)"
+		},
+		{
+			"forge": "placeNewPlayer(Connection arg0, ServerPlayer arg1)",
+			"fabric": "onPlayerConnect(ClientConnection connection, ServerPlayerEntity player)"
+		},
+		{
+			"forge": "updateEntireScoreboard(ServerScoreboard arg0, ServerPlayer arg1)",
+			"fabric": "sendScoreboard(ServerScoreboard scoreboard, ServerPlayerEntity player)"
+		},
+		{
+			"forge": "addWorldborderListener(ServerLevel arg0)",
+			"fabric": "setMainWorld(ServerWorld world)"
+		},
+		{
+			"forge": "load(ServerPlayer arg0)",
+			"fabric": "loadPlayerData(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "save(ServerPlayer arg0)",
+			"fabric": "savePlayerData(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "remove(ServerPlayer arg0)",
+			"fabric": "remove(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "canPlayerLogin(SocketAddress arg0, com.mojang.authlib.GameProfile arg1)",
+			"fabric": "checkCanJoin(SocketAddress address, com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "getPlayerForLogin(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "createPlayer(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "respawn(ServerPlayer arg0, boolean arg1)",
+			"fabric": "respawnPlayer(ServerPlayerEntity player, boolean alive)"
+		},
+		{
+			"forge": "sendPlayerPermissionLevel(ServerPlayer arg0)",
+			"fabric": "sendCommandTree(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "updatePlayerLatency()"
+		},
+		{
+			"forge": "broadcastAll(Packet<?> arg0)",
+			"fabric": "sendToAll(Packet<?> packet)"
+		},
+		{
+			"forge": "broadcastAll(Packet<?> arg0, ResourceKey<Level> arg1)",
+			"fabric": "sendToDimension(Packet<?> packet, RegistryKey<World> dimension)"
+		},
+		{
+			"forge": "broadcastSystemToTeam(Player arg0, Component arg1)",
+			"fabric": "sendToTeam(PlayerEntity source, Text message)"
+		},
+		{
+			"forge": "broadcastSystemToAllExceptTeam(Player arg0, Component arg1)",
+			"fabric": "sendToOtherTeams(PlayerEntity source, Text message)"
+		},
+		{
+			"forge": "getPlayerNamesArray()",
+			"fabric": "getPlayerNames()"
+		},
+		{
+			"forge": "getBans()",
+			"fabric": "getUserBanList()"
+		},
+		{
+			"forge": "getIpBans()",
+			"fabric": "getIpBanList()"
+		},
+		{
+			"forge": "op(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "addToOperators(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "deop(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "removeFromOperators(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "sendPlayerPermissionLevel(ServerPlayer arg0, int arg1)",
+			"fabric": "sendCommandTree(ServerPlayerEntity player, int permissionLevel)"
+		},
+		{
+			"forge": "isWhiteListed(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "isWhitelisted(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "isOp(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "isOperator(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "getPlayerByName(String arg0)",
+			"fabric": "getPlayer(String name)"
+		},
+		{
+			"forge": "broadcast(Player arg0, double arg1, double arg2, double arg3, double arg4, ResourceKey<Level> arg5, Packet<?> arg6)",
+			"fabric": "sendToAround(PlayerEntity player, double x, double y, double z, double distance, RegistryKey<World> worldKey, Packet<?> packet)"
+		},
+		{
+			"forge": "saveAll()",
+			"fabric": "saveAllPlayerData()"
+		},
+		{
+			"forge": "getWhiteList()",
+			"fabric": "getWhitelist()"
+		},
+		{
+			"forge": "getWhiteListNames()",
+			"fabric": "getWhitelistedNames()"
+		},
+		{
+			"forge": "getOps()",
+			"fabric": "getOpList()"
+		},
+		{
+			"forge": "getOpNames()",
+			"fabric": "getOpNames()"
+		},
+		{
+			"forge": "reloadWhiteList()",
+			"fabric": "reloadWhitelist()"
+		},
+		{
+			"forge": "sendLevelInfo(ServerPlayer arg0, ServerLevel arg1)",
+			"fabric": "sendWorldInfo(ServerPlayerEntity player, ServerWorld world)"
+		},
+		{
+			"forge": "sendAllPlayerInfo(ServerPlayer arg0)",
+			"fabric": "sendPlayerStatus(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "getPlayerCount()",
+			"fabric": "getCurrentPlayerCount()"
+		},
+		{
+			"forge": "getMaxPlayers()",
+			"fabric": "getMaxPlayerCount()"
+		},
+		{
+			"forge": "isUsingWhitelist()",
+			"fabric": "isWhitelistEnabled()"
+		},
+		{
+			"forge": "setUsingWhiteList(boolean arg0)",
+			"fabric": "setWhitelistEnabled(boolean whitelistEnabled)"
+		},
+		{
+			"forge": "getPlayersWithAddress(String arg0)",
+			"fabric": "getPlayersByIp(String ip)"
+		},
+		{
+			"forge": "getViewDistance()",
+			"fabric": "getViewDistance()"
+		},
+		{
+			"forge": "getSimulationDistance()",
+			"fabric": "getSimulationDistance()"
+		},
+		{
+			"forge": "getServer()",
+			"fabric": "getServer()"
+		},
+		{
+			"forge": "getSingleplayerData()",
+			"fabric": "getUserData()"
+		},
+		{
+			"forge": "setAllowCheatsForAllPlayers(boolean arg0)",
+			"fabric": "setCheatsAllowed(boolean cheatsAllowed)"
+		},
+		{
+			"forge": "removeAll()",
+			"fabric": "disconnectAllPlayers()"
+		},
+		{
+			"forge": "broadcastSystemMessage(Component arg0, boolean arg1)",
+			"fabric": "broadcast(Text message, boolean overlay)"
+		},
+		{
+			"forge": "broadcastSystemMessage(Component arg0, Function<ServerPlayer, Component> arg1, boolean arg2)",
+			"fabric": "broadcast(Text message, Function<ServerPlayerEntity, Text> playerMessageFactory, boolean overlay)"
+		},
+		{
+			"forge": "broadcastChatMessage(PlayerChatMessage arg0, CommandSourceStack arg1, ChatType$Bound arg2)",
+			"fabric": "broadcast(SignedMessage message, ServerCommandSource source, MessageType$Parameters params)"
+		},
+		{
+			"forge": "broadcastChatMessage(PlayerChatMessage arg0, ServerPlayer arg1, ChatType$Bound arg2)",
+			"fabric": "broadcast(SignedMessage message, ServerPlayerEntity sender, MessageType$Parameters params)"
+		},
+		{
+			"forge": "broadcastChatMessage(PlayerChatMessage arg0, Predicate<ServerPlayer> arg1, ServerPlayer arg2, ChatType$Bound arg3)",
+			"fabric": "broadcast(SignedMessage message, Predicate<ServerPlayerEntity> shouldSendFiltered, ServerPlayerEntity sender, MessageType$Parameters params)"
+		},
+		{
+			"forge": "verifyChatTrusted(PlayerChatMessage arg0)",
+			"fabric": "verify(SignedMessage message)"
+		},
+		{
+			"forge": "getPlayerStats(Player arg0)",
+			"fabric": "createStatHandler(PlayerEntity player)"
+		},
+		{
+			"forge": "getPlayerAdvancements(ServerPlayer arg0)",
+			"fabric": "getAdvancementTracker(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "setViewDistance(int arg0)",
+			"fabric": "setViewDistance(int viewDistance)"
+		},
+		{
+			"forge": "setSimulationDistance(int arg0)",
+			"fabric": "setSimulationDistance(int simulationDistance)"
+		},
+		{
+			"forge": "getPlayers()",
+			"fabric": "getPlayerList()"
+		},
+		{
+			"forge": "getPlayer(UUID arg0)",
+			"fabric": "getPlayer(UUID uuid)"
+		},
+		{
+			"forge": "canBypassPlayerLimit(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "canBypassPlayerLimit(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "reloadResources()",
+			"fabric": "onDataPacksReloaded()"
+		},
+		{
+			"forge": "isAllowCheatsForAllPlayers()",
+			"fabric": "areCheatsAllowed()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.CamelRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.CamelRenderer",
+			"fabric": "net.minecraft.client.render.entity.CamelEntityRenderer"
+		},
+		{
+			"forge": "CAMEL_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "CAMEL_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Camel arg0)",
+			"fabric": "getTexture(CamelEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Camel arg0)",
+			"fabric": "getTexture(CamelEntity arg0)"
+		}
+	]
+}

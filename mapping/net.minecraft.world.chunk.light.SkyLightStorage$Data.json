@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.lighting.SkyLightSectionStorage$SkyDataLayerStorageMap",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.SkyLightSectionStorage$SkyDataLayerStorageMap",
+			"fabric": "net.minecraft.world.chunk.light.SkyLightStorage$Data"
+		},
+		{
+			"forge": "currentLowestY",
+			"fabric": "minSectionY"
+		},
+		{
+			"forge": "currentLowestY",
+			"fabric": "minSectionY"
+		},
+		{
+			"forge": "topSections",
+			"fabric": "columnToTopSection"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		}
+	]
+}

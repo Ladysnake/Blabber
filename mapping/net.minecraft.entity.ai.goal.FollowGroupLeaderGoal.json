@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.FollowFlockLeaderGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.FollowFlockLeaderGoal",
+			"fabric": "net.minecraft.entity.ai.goal.FollowGroupLeaderGoal"
+		},
+		{
+			"forge": "INTERVAL_TICKS",
+			"fabric": "MIN_SEARCH_DELAY"
+		},
+		{
+			"forge": "INTERVAL_TICKS",
+			"fabric": "MIN_SEARCH_DELAY"
+		},
+		{
+			"forge": "mob",
+			"fabric": "fish"
+		},
+		{
+			"forge": "timeToRecalcPath",
+			"fabric": "moveDelay"
+		},
+		{
+			"forge": "nextStartTick",
+			"fabric": "checkSurroundingDelay"
+		},
+		{
+			"forge": "nextStartTick(AbstractSchoolingFish arg0)",
+			"fabric": "getSurroundingSearchDelay(SchoolingFishEntity fish)"
+		},
+		{
+			"forge": "nextStartTick(AbstractSchoolingFish arg0)",
+			"fabric": "getSurroundingSearchDelay(SchoolingFishEntity fish)"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

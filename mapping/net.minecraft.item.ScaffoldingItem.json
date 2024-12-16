@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.ScaffoldingBlockItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ScaffoldingBlockItem",
+			"fabric": "net.minecraft.item.ScaffoldingItem"
+		},
+		{
+			"forge": "updatePlacementContext(BlockPlaceContext arg0)",
+			"fabric": "getPlacementContext(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updatePlacementContext(BlockPlaceContext arg0)",
+			"fabric": "getPlacementContext(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "mustSurvive()",
+			"fabric": "checkStatePlacement()"
+		}
+	]
+}

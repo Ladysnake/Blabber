@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.storage.CommandStorage$Container",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.CommandStorage$Container",
+			"fabric": "net.minecraft.command.DataCommandStorage$PersistentState"
+		},
+		{
+			"forge": "TAG_CONTENTS",
+			"fabric": "CONTENTS_KEY"
+		},
+		{
+			"forge": "TAG_CONTENTS",
+			"fabric": "CONTENTS_KEY"
+		},
+		{
+			"forge": "storage",
+			"fabric": "map"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "get(String arg0)",
+			"fabric": "get(String name)"
+		},
+		{
+			"forge": "put(String arg0, CompoundTag arg1)",
+			"fabric": "set(String name, NbtCompound nbt)"
+		},
+		{
+			"forge": "getKeys(String arg0)",
+			"fabric": "getIds(String namespace)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$RebuildTask",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$RebuildTask",
+			"fabric": "net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk$RebuildTask"
+		},
+		{
+			"forge": "region",
+			"fabric": "region"
+		},
+		{
+			"forge": "region",
+			"fabric": "region"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "doTask(ChunkBufferBuilderPack arg0)",
+			"fabric": "run(BlockBufferBuilderStorage arg0)"
+		},
+		{
+			"forge": "compile(float arg0, float arg1, float arg2, ChunkBufferBuilderPack arg3)",
+			"fabric": "render(float cameraX, float cameraY, float cameraZ, BlockBufferBuilderStorage storage)"
+		},
+		{
+			"forge": "handleBlockEntity(ChunkRenderDispatcher$RenderChunk$RebuildTask$CompileResults arg0, E arg1)",
+			"fabric": "addBlockEntity(ChunkBuilder$BuiltChunk$RebuildTask$RenderData renderData, E blockEntity)"
+		},
+		{
+			"forge": "cancel()",
+			"fabric": "cancel()"
+		}
+	]
+}

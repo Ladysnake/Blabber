@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.advancements.critereon.LighthingBoltPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.LighthingBoltPredicate",
+			"fabric": "net.minecraft.predicate.entity.LightningBoltPredicate"
+		},
+		{
+			"forge": "BLOCKS_SET_ON_FIRE_KEY",
+			"fabric": "BLOCKS_SET_ON_FIRE_KEY"
+		},
+		{
+			"forge": "BLOCKS_SET_ON_FIRE_KEY",
+			"fabric": "BLOCKS_SET_ON_FIRE_KEY"
+		},
+		{
+			"forge": "ENTITY_STRUCK_KEY",
+			"fabric": "ENTITY_STRUCK_KEY"
+		},
+		{
+			"forge": "blocksSetOnFire",
+			"fabric": "blocksSetOnFire"
+		},
+		{
+			"forge": "entityStruck",
+			"fabric": "entityStruck"
+		},
+		{
+			"forge": "blockSetOnFire(MinMaxBounds$Ints arg0)",
+			"fabric": "of(NumberRange$IntRange blocksSetOnFire)"
+		},
+		{
+			"forge": "blockSetOnFire(MinMaxBounds$Ints arg0)",
+			"fabric": "of(NumberRange$IntRange blocksSetOnFire)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "serializeCustomData()",
+			"fabric": "typeSpecificToJson()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getDeserializer()"
+		},
+		{
+			"forge": "matches(Entity arg0, ServerLevel arg1, Vec3 arg2)",
+			"fabric": "test(Entity arg0, ServerWorld arg1, Vec3d arg2)"
+		}
+	]
+}

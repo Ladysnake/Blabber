@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$ShiftedNoise",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$ShiftedNoise",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$ShiftedNoise"
+		},
+		{
+			"forge": "shiftX",
+			"fabric": "shiftX"
+		},
+		{
+			"forge": "shiftX",
+			"fabric": "shiftX"
+		},
+		{
+			"forge": "shiftY",
+			"fabric": "shiftY"
+		},
+		{
+			"forge": "shiftZ",
+			"fabric": "shiftZ"
+		},
+		{
+			"forge": "xzScale",
+			"fabric": "xzScale"
+		},
+		{
+			"forge": "yScale",
+			"fabric": "yScale"
+		},
+		{
+			"forge": "noise",
+			"fabric": "noise"
+		},
+		{
+			"forge": "DATA_CODEC",
+			"fabric": "SHIFTED_NOISE_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC_HOLDER"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "fillArray(double[] arg0, DensityFunction$ContextProvider arg1)",
+			"fabric": "fill(double[] arg0, DensityFunction$EachApplier arg1)"
+		},
+		{
+			"forge": "mapAll(DensityFunction$Visitor arg0)",
+			"fabric": "apply(DensityFunction$DensityFunctionVisitor arg0)"
+		},
+		{
+			"forge": "minValue()",
+			"fabric": "minValue()"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "maxValue()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodecHolder()"
+		},
+		{
+			"forge": "shiftX()",
+			"fabric": "shiftX()"
+		},
+		{
+			"forge": "shiftY()",
+			"fabric": "shiftY()"
+		},
+		{
+			"forge": "shiftZ()",
+			"fabric": "shiftZ()"
+		},
+		{
+			"forge": "xzScale()",
+			"fabric": "xzScale()"
+		},
+		{
+			"forge": "yScale()",
+			"fabric": "yScale()"
+		},
+		{
+			"forge": "noise()",
+			"fabric": "noise()"
+		}
+	]
+}

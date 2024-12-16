@@ -1,0 +1,345 @@
+{
+	"title": "net.minecraft.core.registries.BuiltInRegistries",
+	"items": [
+		{
+			"forge": "net.minecraft.core.registries.BuiltInRegistries",
+			"fabric": "net.minecraft.registry.Registries"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOADERS",
+			"fabric": "DEFAULT_ENTRIES"
+		},
+		{
+			"forge": "ROOT_REGISTRY_NAME",
+			"fabric": "ROOT_KEY"
+		},
+		{
+			"forge": "WRITABLE_REGISTRY",
+			"fabric": "ROOT"
+		},
+		{
+			"forge": "GAME_EVENT",
+			"fabric": "GAME_EVENT"
+		},
+		{
+			"forge": "SOUND_EVENT",
+			"fabric": "SOUND_EVENT"
+		},
+		{
+			"forge": "FLUID",
+			"fabric": "FLUID"
+		},
+		{
+			"forge": "MOB_EFFECT",
+			"fabric": "STATUS_EFFECT"
+		},
+		{
+			"forge": "BLOCK",
+			"fabric": "BLOCK"
+		},
+		{
+			"forge": "ENCHANTMENT",
+			"fabric": "ENCHANTMENT"
+		},
+		{
+			"forge": "ENTITY_TYPE",
+			"fabric": "ENTITY_TYPE"
+		},
+		{
+			"forge": "ITEM",
+			"fabric": "ITEM"
+		},
+		{
+			"forge": "POTION",
+			"fabric": "POTION"
+		},
+		{
+			"forge": "PARTICLE_TYPE",
+			"fabric": "PARTICLE_TYPE"
+		},
+		{
+			"forge": "BLOCK_ENTITY_TYPE",
+			"fabric": "BLOCK_ENTITY_TYPE"
+		},
+		{
+			"forge": "PAINTING_VARIANT",
+			"fabric": "PAINTING_VARIANT"
+		},
+		{
+			"forge": "CUSTOM_STAT",
+			"fabric": "CUSTOM_STAT"
+		},
+		{
+			"forge": "CHUNK_STATUS",
+			"fabric": "CHUNK_STATUS"
+		},
+		{
+			"forge": "RULE_TEST",
+			"fabric": "RULE_TEST"
+		},
+		{
+			"forge": "RULE_BLOCK_ENTITY_MODIFIER",
+			"fabric": "RULE_BLOCK_ENTITY_MODIFIER"
+		},
+		{
+			"forge": "POS_RULE_TEST",
+			"fabric": "POS_RULE_TEST"
+		},
+		{
+			"forge": "MENU",
+			"fabric": "SCREEN_HANDLER"
+		},
+		{
+			"forge": "RECIPE_TYPE",
+			"fabric": "RECIPE_TYPE"
+		},
+		{
+			"forge": "RECIPE_SERIALIZER",
+			"fabric": "RECIPE_SERIALIZER"
+		},
+		{
+			"forge": "ATTRIBUTE",
+			"fabric": "ATTRIBUTE"
+		},
+		{
+			"forge": "POSITION_SOURCE_TYPE",
+			"fabric": "POSITION_SOURCE_TYPE"
+		},
+		{
+			"forge": "COMMAND_ARGUMENT_TYPE",
+			"fabric": "COMMAND_ARGUMENT_TYPE"
+		},
+		{
+			"forge": "STAT_TYPE",
+			"fabric": "STAT_TYPE"
+		},
+		{
+			"forge": "VILLAGER_TYPE",
+			"fabric": "VILLAGER_TYPE"
+		},
+		{
+			"forge": "VILLAGER_PROFESSION",
+			"fabric": "VILLAGER_PROFESSION"
+		},
+		{
+			"forge": "POINT_OF_INTEREST_TYPE",
+			"fabric": "POINT_OF_INTEREST_TYPE"
+		},
+		{
+			"forge": "MEMORY_MODULE_TYPE",
+			"fabric": "MEMORY_MODULE_TYPE"
+		},
+		{
+			"forge": "SENSOR_TYPE",
+			"fabric": "SENSOR_TYPE"
+		},
+		{
+			"forge": "SCHEDULE",
+			"fabric": "SCHEDULE"
+		},
+		{
+			"forge": "ACTIVITY",
+			"fabric": "ACTIVITY"
+		},
+		{
+			"forge": "LOOT_POOL_ENTRY_TYPE",
+			"fabric": "LOOT_POOL_ENTRY_TYPE"
+		},
+		{
+			"forge": "LOOT_FUNCTION_TYPE",
+			"fabric": "LOOT_FUNCTION_TYPE"
+		},
+		{
+			"forge": "LOOT_CONDITION_TYPE",
+			"fabric": "LOOT_CONDITION_TYPE"
+		},
+		{
+			"forge": "LOOT_NUMBER_PROVIDER_TYPE",
+			"fabric": "LOOT_NUMBER_PROVIDER_TYPE"
+		},
+		{
+			"forge": "LOOT_NBT_PROVIDER_TYPE",
+			"fabric": "LOOT_NBT_PROVIDER_TYPE"
+		},
+		{
+			"forge": "LOOT_SCORE_PROVIDER_TYPE",
+			"fabric": "LOOT_SCORE_PROVIDER_TYPE"
+		},
+		{
+			"forge": "FLOAT_PROVIDER_TYPE",
+			"fabric": "FLOAT_PROVIDER_TYPE"
+		},
+		{
+			"forge": "INT_PROVIDER_TYPE",
+			"fabric": "INT_PROVIDER_TYPE"
+		},
+		{
+			"forge": "HEIGHT_PROVIDER_TYPE",
+			"fabric": "HEIGHT_PROVIDER_TYPE"
+		},
+		{
+			"forge": "BLOCK_PREDICATE_TYPE",
+			"fabric": "BLOCK_PREDICATE_TYPE"
+		},
+		{
+			"forge": "CARVER",
+			"fabric": "CARVER"
+		},
+		{
+			"forge": "FEATURE",
+			"fabric": "FEATURE"
+		},
+		{
+			"forge": "STRUCTURE_PLACEMENT",
+			"fabric": "STRUCTURE_PLACEMENT"
+		},
+		{
+			"forge": "STRUCTURE_PIECE",
+			"fabric": "STRUCTURE_PIECE"
+		},
+		{
+			"forge": "STRUCTURE_TYPE",
+			"fabric": "STRUCTURE_TYPE"
+		},
+		{
+			"forge": "PLACEMENT_MODIFIER_TYPE",
+			"fabric": "PLACEMENT_MODIFIER_TYPE"
+		},
+		{
+			"forge": "BLOCKSTATE_PROVIDER_TYPE",
+			"fabric": "BLOCK_STATE_PROVIDER_TYPE"
+		},
+		{
+			"forge": "FOLIAGE_PLACER_TYPE",
+			"fabric": "FOLIAGE_PLACER_TYPE"
+		},
+		{
+			"forge": "TRUNK_PLACER_TYPE",
+			"fabric": "TRUNK_PLACER_TYPE"
+		},
+		{
+			"forge": "ROOT_PLACER_TYPE",
+			"fabric": "ROOT_PLACER_TYPE"
+		},
+		{
+			"forge": "TREE_DECORATOR_TYPE",
+			"fabric": "TREE_DECORATOR_TYPE"
+		},
+		{
+			"forge": "FEATURE_SIZE_TYPE",
+			"fabric": "FEATURE_SIZE_TYPE"
+		},
+		{
+			"forge": "BIOME_SOURCE",
+			"fabric": "BIOME_SOURCE"
+		},
+		{
+			"forge": "CHUNK_GENERATOR",
+			"fabric": "CHUNK_GENERATOR"
+		},
+		{
+			"forge": "MATERIAL_CONDITION",
+			"fabric": "MATERIAL_CONDITION"
+		},
+		{
+			"forge": "MATERIAL_RULE",
+			"fabric": "MATERIAL_RULE"
+		},
+		{
+			"forge": "DENSITY_FUNCTION_TYPE",
+			"fabric": "DENSITY_FUNCTION_TYPE"
+		},
+		{
+			"forge": "STRUCTURE_PROCESSOR",
+			"fabric": "STRUCTURE_PROCESSOR"
+		},
+		{
+			"forge": "STRUCTURE_POOL_ELEMENT",
+			"fabric": "STRUCTURE_POOL_ELEMENT"
+		},
+		{
+			"forge": "CAT_VARIANT",
+			"fabric": "CAT_VARIANT"
+		},
+		{
+			"forge": "FROG_VARIANT",
+			"fabric": "FROG_VARIANT"
+		},
+		{
+			"forge": "BANNER_PATTERN",
+			"fabric": "BANNER_PATTERN"
+		},
+		{
+			"forge": "INSTRUMENT",
+			"fabric": "INSTRUMENT"
+		},
+		{
+			"forge": "DECORATED_POT_PATTERNS",
+			"fabric": "DECORATED_POT_PATTERN"
+		},
+		{
+			"forge": "CREATIVE_MODE_TAB",
+			"fabric": "ITEM_GROUP"
+		},
+		{
+			"forge": "REGISTRY",
+			"fabric": "REGISTRIES"
+		},
+		{
+			"forge": "registerSimple(ResourceKey<? extends Registry<T>> arg0, BuiltInRegistries$RegistryBootstrap<T> arg1)",
+			"fabric": "create(RegistryKey<? extends Registry<T>> key, Registries$Initializer<T> initializer)"
+		},
+		{
+			"forge": "registerSimple(ResourceKey<? extends Registry<T>> arg0, BuiltInRegistries$RegistryBootstrap<T> arg1)",
+			"fabric": "create(RegistryKey<? extends Registry<T>> key, Registries$Initializer<T> initializer)"
+		},
+		{
+			"forge": "registerDefaulted(ResourceKey<? extends Registry<T>> arg0, String arg1, BuiltInRegistries$RegistryBootstrap<T> arg2)",
+			"fabric": "create(RegistryKey<? extends Registry<T>> key, String defaultId, Registries$Initializer<T> initializer)"
+		},
+		{
+			"forge": "registerDefaultedWithIntrusiveHolders(ResourceKey<? extends Registry<T>> arg0, String arg1, BuiltInRegistries$RegistryBootstrap<T> arg2)",
+			"fabric": "createIntrusive(RegistryKey<? extends Registry<T>> key, String defaultId, Registries$Initializer<T> initializer)"
+		},
+		{
+			"forge": "registerSimple(ResourceKey<? extends Registry<T>> arg0, com.mojang.serialization.Lifecycle arg1, BuiltInRegistries$RegistryBootstrap<T> arg2)",
+			"fabric": "create(RegistryKey<? extends Registry<T>> key, com.mojang.serialization.Lifecycle lifecycle, Registries$Initializer<T> initializer)"
+		},
+		{
+			"forge": "registerDefaulted(ResourceKey<? extends Registry<T>> arg0, String arg1, com.mojang.serialization.Lifecycle arg2, BuiltInRegistries$RegistryBootstrap<T> arg3)",
+			"fabric": "create(RegistryKey<? extends Registry<T>> key, String defaultId, com.mojang.serialization.Lifecycle lifecycle, Registries$Initializer<T> initializer)"
+		},
+		{
+			"forge": "registerDefaultedWithIntrusiveHolders(ResourceKey<? extends Registry<T>> arg0, String arg1, com.mojang.serialization.Lifecycle arg2, BuiltInRegistries$RegistryBootstrap<T> arg3)",
+			"fabric": "createIntrusive(RegistryKey<? extends Registry<T>> key, String defaultId, com.mojang.serialization.Lifecycle lifecycle, Registries$Initializer<T> initializer)"
+		},
+		{
+			"forge": "internalRegister(ResourceKey<? extends Registry<T>> arg0, R arg1, BuiltInRegistries$RegistryBootstrap<T> arg2, com.mojang.serialization.Lifecycle arg3)",
+			"fabric": "create(RegistryKey<? extends Registry<T>> key, R registry, Registries$Initializer<T> initializer, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "bootStrap()",
+			"fabric": "bootstrap()"
+		},
+		{
+			"forge": "createContents()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "freeze()",
+			"fabric": "freezeRegistries()"
+		},
+		{
+			"forge": "validate(Registry<T> arg0)",
+			"fabric": "validate(Registry<T> registries)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.entries.LootItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.entries.LootItem",
+			"fabric": "net.minecraft.loot.entry.ItemEntry"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "createItemStack(Consumer<ItemStack> arg0, LootContext arg1)",
+			"fabric": "generateLoot(Consumer<ItemStack> arg0, LootContext arg1)"
+		},
+		{
+			"forge": "lootTableItem(ItemLike arg0)",
+			"fabric": "builder(ItemConvertible drop)"
+		}
+	]
+}

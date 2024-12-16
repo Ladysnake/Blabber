@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Column$Ray",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Column$Ray",
+			"fabric": "net.minecraft.world.gen.feature.util.CaveSurface$Half"
+		},
+		{
+			"forge": "edge",
+			"fabric": "height"
+		},
+		{
+			"forge": "edge",
+			"fabric": "height"
+		},
+		{
+			"forge": "pointingUp",
+			"fabric": "floor"
+		},
+		{
+			"forge": "getCeiling()",
+			"fabric": "getCeilingHeight()"
+		},
+		{
+			"forge": "getCeiling()",
+			"fabric": "getCeilingHeight()"
+		},
+		{
+			"forge": "getFloor()",
+			"fabric": "getFloorHeight()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getOptionalHeight()"
+		}
+	]
+}

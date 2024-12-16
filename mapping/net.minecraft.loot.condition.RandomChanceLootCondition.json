@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition",
+			"fabric": "net.minecraft.loot.condition.RandomChanceLootCondition"
+		},
+		{
+			"forge": "probability",
+			"fabric": "chance"
+		},
+		{
+			"forge": "probability",
+			"fabric": "chance"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "test(LootContext arg0)",
+			"fabric": "test(LootContext arg0)"
+		},
+		{
+			"forge": "randomChance(float arg0)",
+			"fabric": "builder(float chance)"
+		}
+	]
+}

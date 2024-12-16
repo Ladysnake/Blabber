@@ -1,0 +1,265 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.Llama",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.Llama",
+			"fabric": "net.minecraft.entity.passive.LlamaEntity"
+		},
+		{
+			"forge": "MAX_STRENGTH",
+			"fabric": "MAX_STRENGTH"
+		},
+		{
+			"forge": "MAX_STRENGTH",
+			"fabric": "MAX_STRENGTH"
+		},
+		{
+			"forge": "FOOD_ITEMS",
+			"fabric": "TAMING_INGREDIENT"
+		},
+		{
+			"forge": "DATA_STRENGTH_ID",
+			"fabric": "STRENGTH"
+		},
+		{
+			"forge": "DATA_SWAG_ID",
+			"fabric": "CARPET_COLOR"
+		},
+		{
+			"forge": "DATA_VARIANT_ID",
+			"fabric": "VARIANT"
+		},
+		{
+			"forge": "didSpit",
+			"fabric": "spit"
+		},
+		{
+			"forge": "caravanHead",
+			"fabric": "following"
+		},
+		{
+			"forge": "caravanTail",
+			"fabric": "follower"
+		},
+		{
+			"forge": "isTraderLlama()",
+			"fabric": "isTrader()"
+		},
+		{
+			"forge": "isTraderLlama()",
+			"fabric": "isTrader()"
+		},
+		{
+			"forge": "setStrength(int arg0)",
+			"fabric": "setStrength(int strength)"
+		},
+		{
+			"forge": "setRandomStrength(RandomSource arg0)",
+			"fabric": "initializeStrength(Random random)"
+		},
+		{
+			"forge": "getStrength()",
+			"fabric": "getStrength()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createLlamaAttributes()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "setVariant(Llama$Variant arg0)",
+			"fabric": "setVariant(LlamaEntity$Variant arg0)"
+		},
+		{
+			"forge": "getInventorySize()",
+			"fabric": "getInventorySize()"
+		},
+		{
+			"forge": "positionRider(Entity arg0, Entity$MoveFunction arg1)",
+			"fabric": "updatePassengerPosition(Entity arg0, Entity$PositionUpdater arg1)"
+		},
+		{
+			"forge": "getPassengersRidingOffset()",
+			"fabric": "getMountedHeightOffset()"
+		},
+		{
+			"forge": "getControllingPassenger()",
+			"fabric": "getControllingPassenger()"
+		},
+		{
+			"forge": "isFood(ItemStack arg0)",
+			"fabric": "isBreedingItem(ItemStack arg0)"
+		},
+		{
+			"forge": "handleEating(Player arg0, ItemStack arg1)",
+			"fabric": "receiveFood(PlayerEntity arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "isImmobile()",
+			"fabric": "isImmobile()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "canPerformRearing()",
+			"fabric": "shouldAmbientStand()"
+		},
+		{
+			"forge": "getAngrySound()",
+			"fabric": "getAngrySound()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getEatingSound()",
+			"fabric": "getEatSound()"
+		},
+		{
+			"forge": "playStepSound(BlockPos arg0, BlockState arg1)",
+			"fabric": "playStepSound(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "playChestEquipsSound()",
+			"fabric": "playAddChestSound()"
+		},
+		{
+			"forge": "getInventoryColumns()",
+			"fabric": "getInventoryColumns()"
+		},
+		{
+			"forge": "canWearArmor()",
+			"fabric": "hasArmorSlot()"
+		},
+		{
+			"forge": "isWearingArmor()",
+			"fabric": "hasArmorInSlot()"
+		},
+		{
+			"forge": "isArmor(ItemStack arg0)",
+			"fabric": "isHorseArmor(ItemStack arg0)"
+		},
+		{
+			"forge": "isSaddleable()",
+			"fabric": "canBeSaddled()"
+		},
+		{
+			"forge": "containerChanged(Container arg0)",
+			"fabric": "onInventoryChanged(Inventory arg0)"
+		},
+		{
+			"forge": "updateContainerEquipment()",
+			"fabric": "updateSaddle()"
+		},
+		{
+			"forge": "setSwag(DyeColor arg0)",
+			"fabric": "setCarpetColor(DyeColor color)"
+		},
+		{
+			"forge": "getDyeColor(ItemStack arg0)",
+			"fabric": "getColorFromCarpet(ItemStack color)"
+		},
+		{
+			"forge": "getSwag()",
+			"fabric": "getCarpetColor()"
+		},
+		{
+			"forge": "getMaxTemper()",
+			"fabric": "getMaxTemper()"
+		},
+		{
+			"forge": "canMate(Animal arg0)",
+			"fabric": "canBreedWith(AnimalEntity arg0)"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "makeNewLlama()",
+			"fabric": "createChild()"
+		},
+		{
+			"forge": "spit(LivingEntity arg0)",
+			"fabric": "spitAt(LivingEntity target)"
+		},
+		{
+			"forge": "setDidSpit(boolean arg0)",
+			"fabric": "setSpit(boolean spit)"
+		},
+		{
+			"forge": "causeFallDamage(float arg0, float arg1, DamageSource arg2)",
+			"fabric": "handleFallDamage(float arg0, float arg1, DamageSource arg2)"
+		},
+		{
+			"forge": "leaveCaravan()",
+			"fabric": "stopFollowing()"
+		},
+		{
+			"forge": "joinCaravan(Llama arg0)",
+			"fabric": "follow(LlamaEntity llama)"
+		},
+		{
+			"forge": "hasCaravanTail()",
+			"fabric": "hasFollower()"
+		},
+		{
+			"forge": "inCaravan()",
+			"fabric": "isFollowing()"
+		},
+		{
+			"forge": "getCaravanHead()",
+			"fabric": "getFollowing()"
+		},
+		{
+			"forge": "followLeashSpeed()",
+			"fabric": "getFollowLeashSpeed()"
+		},
+		{
+			"forge": "followMommy()",
+			"fabric": "walkToParent()"
+		},
+		{
+			"forge": "canEatGrass()",
+			"fabric": "eatsGrass()"
+		},
+		{
+			"forge": "performRangedAttack(LivingEntity arg0, float arg1)",
+			"fabric": "attack(LivingEntity arg0, float arg1)"
+		},
+		{
+			"forge": "getLeashOffset()",
+			"fabric": "getLeashOffset()"
+		}
+	]
+}

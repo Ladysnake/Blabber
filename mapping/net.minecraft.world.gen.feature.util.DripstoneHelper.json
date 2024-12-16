@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.DripstoneUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.DripstoneUtils",
+			"fabric": "net.minecraft.world.gen.feature.util.DripstoneHelper"
+		},
+		{
+			"forge": "getDripstoneHeight(double arg0, double arg1, double arg2, double arg3)",
+			"fabric": "scaleHeightFromRadius(double radius, double scale, double heightScale, double bluntness)"
+		},
+		{
+			"forge": "getDripstoneHeight(double arg0, double arg1, double arg2, double arg3)",
+			"fabric": "scaleHeightFromRadius(double radius, double scale, double heightScale, double bluntness)"
+		},
+		{
+			"forge": "isCircleMostlyEmbeddedInStone(WorldGenLevel arg0, BlockPos arg1, int arg2)",
+			"fabric": "canGenerateBase(StructureWorldAccess world, BlockPos pos, int height)"
+		},
+		{
+			"forge": "isEmptyOrWater(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "canGenerate(WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "isEmptyOrWaterOrLava(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "canGenerateOrLava(WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "buildBaseToTipColumn(Direction arg0, int arg1, boolean arg2, Consumer<BlockState> arg3)",
+			"fabric": "getDripstoneThickness(Direction direction, int height, boolean merge, Consumer<BlockState> callback)"
+		},
+		{
+			"forge": "growPointedDripstone(LevelAccessor arg0, BlockPos arg1, Direction arg2, int arg3, boolean arg4)",
+			"fabric": "generatePointedDripstone(WorldAccess world, BlockPos pos, Direction direction, int height, boolean merge)"
+		},
+		{
+			"forge": "placeDripstoneBlockIfPossible(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "generateDripstoneBlock(WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "createPointedDripstone(Direction arg0, DripstoneThickness arg1)",
+			"fabric": "getState(Direction direction, Thickness thickness)"
+		},
+		{
+			"forge": "isDripstoneBaseOrLava(BlockState arg0)",
+			"fabric": "canReplaceOrLava(BlockState state)"
+		},
+		{
+			"forge": "isDripstoneBase(BlockState arg0)",
+			"fabric": "canReplace(BlockState state)"
+		},
+		{
+			"forge": "isEmptyOrWater(BlockState arg0)",
+			"fabric": "canGenerate(BlockState state)"
+		},
+		{
+			"forge": "isNeitherEmptyNorWater(BlockState arg0)",
+			"fabric": "cannotGenerate(BlockState state)"
+		},
+		{
+			"forge": "isEmptyOrWaterOrLava(BlockState arg0)",
+			"fabric": "canGenerateOrLava(BlockState state)"
+		}
+	]
+}

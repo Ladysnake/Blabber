@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.animation.AnimationChannel$Targets",
+	"items": [
+		{
+			"forge": "net.minecraft.client.animation.AnimationChannel$Targets",
+			"fabric": "net.minecraft.client.render.entity.animation.Transformation$Targets"
+		},
+		{
+			"forge": "POSITION",
+			"fabric": "TRANSLATE"
+		},
+		{
+			"forge": "POSITION",
+			"fabric": "TRANSLATE"
+		},
+		{
+			"forge": "ROTATION",
+			"fabric": "ROTATE"
+		},
+		{
+			"forge": "SCALE",
+			"fabric": "SCALE"
+		}
+	]
+}

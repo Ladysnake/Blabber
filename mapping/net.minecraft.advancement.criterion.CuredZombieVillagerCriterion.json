@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.advancements.critereon.CuredZombieVillagerTrigger",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.CuredZombieVillagerTrigger",
+			"fabric": "net.minecraft.advancement.criterion.CuredZombieVillagerCriterion"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "createInstance(com.google.gson.JsonObject arg0, ContextAwarePredicate arg1, DeserializationContext arg2)",
+			"fabric": "conditionsFromJson(com.google.gson.JsonObject arg0, LootContextPredicate arg1, AdvancementEntityPredicateDeserializer arg2)"
+		},
+		{
+			"forge": "trigger(ServerPlayer arg0, Zombie arg1, Villager arg2)",
+			"fabric": "trigger(ServerPlayerEntity player, ZombieEntity zombie, VillagerEntity villager)"
+		}
+	]
+}

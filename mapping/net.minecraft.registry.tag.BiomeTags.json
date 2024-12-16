@@ -1,0 +1,297 @@
+{
+	"title": "net.minecraft.tags.BiomeTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.BiomeTags",
+			"fabric": "net.minecraft.registry.tag.BiomeTags"
+		},
+		{
+			"forge": "IS_DEEP_OCEAN",
+			"fabric": "IS_DEEP_OCEAN"
+		},
+		{
+			"forge": "IS_DEEP_OCEAN",
+			"fabric": "IS_DEEP_OCEAN"
+		},
+		{
+			"forge": "IS_OCEAN",
+			"fabric": "IS_OCEAN"
+		},
+		{
+			"forge": "IS_BEACH",
+			"fabric": "IS_BEACH"
+		},
+		{
+			"forge": "IS_RIVER",
+			"fabric": "IS_RIVER"
+		},
+		{
+			"forge": "IS_MOUNTAIN",
+			"fabric": "IS_MOUNTAIN"
+		},
+		{
+			"forge": "IS_BADLANDS",
+			"fabric": "IS_BADLANDS"
+		},
+		{
+			"forge": "IS_HILL",
+			"fabric": "IS_HILL"
+		},
+		{
+			"forge": "IS_TAIGA",
+			"fabric": "IS_TAIGA"
+		},
+		{
+			"forge": "IS_JUNGLE",
+			"fabric": "IS_JUNGLE"
+		},
+		{
+			"forge": "IS_FOREST",
+			"fabric": "IS_FOREST"
+		},
+		{
+			"forge": "IS_SAVANNA",
+			"fabric": "IS_SAVANNA"
+		},
+		{
+			"forge": "IS_OVERWORLD",
+			"fabric": "IS_OVERWORLD"
+		},
+		{
+			"forge": "IS_NETHER",
+			"fabric": "IS_NETHER"
+		},
+		{
+			"forge": "IS_END",
+			"fabric": "IS_END"
+		},
+		{
+			"forge": "STRONGHOLD_BIASED_TO",
+			"fabric": "STRONGHOLD_BIASED_TO"
+		},
+		{
+			"forge": "HAS_BURIED_TREASURE",
+			"fabric": "BURIED_TREASURE_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_DESERT_PYRAMID",
+			"fabric": "DESERT_PYRAMID_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_IGLOO",
+			"fabric": "IGLOO_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_JUNGLE_TEMPLE",
+			"fabric": "JUNGLE_TEMPLE_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_MINESHAFT",
+			"fabric": "MINESHAFT_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_MINESHAFT_MESA",
+			"fabric": "MINESHAFT_MESA_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_OCEAN_MONUMENT",
+			"fabric": "OCEAN_MONUMENT_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_OCEAN_RUIN_COLD",
+			"fabric": "OCEAN_RUIN_COLD_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_OCEAN_RUIN_WARM",
+			"fabric": "OCEAN_RUIN_WARM_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_PILLAGER_OUTPOST",
+			"fabric": "PILLAGER_OUTPOST_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_RUINED_PORTAL_DESERT",
+			"fabric": "RUINED_PORTAL_DESERT_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_RUINED_PORTAL_JUNGLE",
+			"fabric": "RUINED_PORTAL_JUNGLE_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_RUINED_PORTAL_OCEAN",
+			"fabric": "RUINED_PORTAL_OCEAN_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_RUINED_PORTAL_SWAMP",
+			"fabric": "RUINED_PORTAL_SWAMP_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_RUINED_PORTAL_MOUNTAIN",
+			"fabric": "RUINED_PORTAL_MOUNTAIN_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_RUINED_PORTAL_STANDARD",
+			"fabric": "RUINED_PORTAL_STANDARD_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_SHIPWRECK_BEACHED",
+			"fabric": "SHIPWRECK_BEACHED_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_SHIPWRECK",
+			"fabric": "SHIPWRECK_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_STRONGHOLD",
+			"fabric": "STRONGHOLD_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_SWAMP_HUT",
+			"fabric": "SWAMP_HUT_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_VILLAGE_DESERT",
+			"fabric": "VILLAGE_DESERT_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_VILLAGE_PLAINS",
+			"fabric": "VILLAGE_PLAINS_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_VILLAGE_SAVANNA",
+			"fabric": "VILLAGE_SAVANNA_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_VILLAGE_SNOWY",
+			"fabric": "VILLAGE_SNOWY_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_VILLAGE_TAIGA",
+			"fabric": "VILLAGE_TAIGA_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_TRAIL_RUINS",
+			"fabric": "TRAIL_RUINS_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_WOODLAND_MANSION",
+			"fabric": "WOODLAND_MANSION_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_NETHER_FORTRESS",
+			"fabric": "NETHER_FORTRESS_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_NETHER_FOSSIL",
+			"fabric": "NETHER_FOSSIL_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_BASTION_REMNANT",
+			"fabric": "BASTION_REMNANT_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_ANCIENT_CITY",
+			"fabric": "ANCIENT_CITY_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_RUINED_PORTAL_NETHER",
+			"fabric": "RUINED_PORTAL_NETHER_HAS_STRUCTURE"
+		},
+		{
+			"forge": "HAS_END_CITY",
+			"fabric": "END_CITY_HAS_STRUCTURE"
+		},
+		{
+			"forge": "REQUIRED_OCEAN_MONUMENT_SURROUNDING",
+			"fabric": "REQUIRED_OCEAN_MONUMENT_SURROUNDING"
+		},
+		{
+			"forge": "MINESHAFT_BLOCKING",
+			"fabric": "MINESHAFT_BLOCKING"
+		},
+		{
+			"forge": "PLAYS_UNDERWATER_MUSIC",
+			"fabric": "PLAYS_UNDERWATER_MUSIC"
+		},
+		{
+			"forge": "HAS_CLOSER_WATER_FOG",
+			"fabric": "HAS_CLOSER_WATER_FOG"
+		},
+		{
+			"forge": "WATER_ON_MAP_OUTLINES",
+			"fabric": "WATER_ON_MAP_OUTLINES"
+		},
+		{
+			"forge": "PRODUCES_CORALS_FROM_BONEMEAL",
+			"fabric": "PRODUCES_CORALS_FROM_BONEMEAL"
+		},
+		{
+			"forge": "INCREASED_FIRE_BURNOUT",
+			"fabric": "INCREASED_FIRE_BURNOUT"
+		},
+		{
+			"forge": "SNOW_GOLEM_MELTS",
+			"fabric": "SNOW_GOLEM_MELTS"
+		},
+		{
+			"forge": "WITHOUT_ZOMBIE_SIEGES",
+			"fabric": "WITHOUT_ZOMBIE_SIEGES"
+		},
+		{
+			"forge": "WITHOUT_PATROL_SPAWNS",
+			"fabric": "WITHOUT_PATROL_SPAWNS"
+		},
+		{
+			"forge": "WITHOUT_WANDERING_TRADER_SPAWNS",
+			"fabric": "WITHOUT_WANDERING_TRADER_SPAWNS"
+		},
+		{
+			"forge": "SPAWNS_COLD_VARIANT_FROGS",
+			"fabric": "SPAWNS_COLD_VARIANT_FROGS"
+		},
+		{
+			"forge": "SPAWNS_WARM_VARIANT_FROGS",
+			"fabric": "SPAWNS_WARM_VARIANT_FROGS"
+		},
+		{
+			"forge": "SPAWNS_GOLD_RABBITS",
+			"fabric": "SPAWNS_GOLD_RABBITS"
+		},
+		{
+			"forge": "SPAWNS_WHITE_RABBITS",
+			"fabric": "SPAWNS_WHITE_RABBITS"
+		},
+		{
+			"forge": "REDUCED_WATER_AMBIENT_SPAWNS",
+			"fabric": "REDUCE_WATER_AMBIENT_SPAWNS"
+		},
+		{
+			"forge": "ALLOWS_TROPICAL_FISH_SPAWNS_AT_ANY_HEIGHT",
+			"fabric": "ALLOWS_TROPICAL_FISH_SPAWNS_AT_ANY_HEIGHT"
+		},
+		{
+			"forge": "POLAR_BEARS_SPAWN_ON_ALTERNATE_BLOCKS",
+			"fabric": "POLAR_BEARS_SPAWN_ON_ALTERNATE_BLOCKS"
+		},
+		{
+			"forge": "MORE_FREQUENT_DROWNED_SPAWNS",
+			"fabric": "MORE_FREQUENT_DROWNED_SPAWNS"
+		},
+		{
+			"forge": "ALLOWS_SURFACE_SLIME_SPAWNS",
+			"fabric": "ALLOWS_SURFACE_SLIME_SPAWNS"
+		},
+		{
+			"forge": "SPAWNS_SNOW_FOXES",
+			"fabric": "SPAWNS_SNOW_FOXES"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

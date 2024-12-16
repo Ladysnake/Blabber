@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.packs.resources.PreparableReloadListener",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.PreparableReloadListener",
+			"fabric": "net.minecraft.resource.ResourceReloader"
+		},
+		{
+			"forge": "reload(PreparableReloadListener$PreparationBarrier arg0, ResourceManager arg1, ProfilerFiller arg2, ProfilerFiller arg3, Executor arg4, Executor arg5)",
+			"fabric": "reload(ResourceReloader$Synchronizer synchronizer, ResourceManager manager, Profiler prepareProfiler, Profiler applyProfiler, Executor prepareExecutor, Executor applyExecutor)"
+		},
+		{
+			"forge": "reload(PreparableReloadListener$PreparationBarrier arg0, ResourceManager arg1, ProfilerFiller arg2, ProfilerFiller arg3, Executor arg4, Executor arg5)",
+			"fabric": "reload(ResourceReloader$Synchronizer synchronizer, ResourceManager manager, Profiler prepareProfiler, Profiler applyProfiler, Executor prepareExecutor, Executor applyExecutor)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		}
+	]
+}

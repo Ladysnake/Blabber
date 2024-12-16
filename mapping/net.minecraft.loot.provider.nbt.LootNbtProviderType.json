@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType",
+			"fabric": "net.minecraft.loot.provider.nbt.LootNbtProviderType"
+		}
+	]
+}

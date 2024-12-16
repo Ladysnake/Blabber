@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.blaze3d.platform.Window$WindowInitFailed",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.Window$WindowInitFailed",
+			"fabric": "net.minecraft.client.util.Window$GlErroredException"
+		}
+	]
+}

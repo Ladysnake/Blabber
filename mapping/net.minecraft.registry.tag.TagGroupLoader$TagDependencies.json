@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.tags.TagLoader$SortingEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.TagLoader$SortingEntry",
+			"fabric": "net.minecraft.registry.tag.TagGroupLoader$TagDependencies"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "visitRequiredDependencies(Consumer<ResourceLocation> arg0)",
+			"fabric": "forDependencies(Consumer<Identifier> arg0)"
+		},
+		{
+			"forge": "visitRequiredDependencies(Consumer<ResourceLocation> arg0)",
+			"fabric": "forDependencies(Consumer<Identifier> arg0)"
+		},
+		{
+			"forge": "visitOptionalDependencies(Consumer<ResourceLocation> arg0)",
+			"fabric": "forOptionalDependencies(Consumer<Identifier> arg0)"
+		},
+		{
+			"forge": "entries()",
+			"fabric": "entries()"
+		}
+	]
+}

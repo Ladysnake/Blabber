@@ -1,0 +1,817 @@
+{
+	"title": "net.minecraft.data.models.BlockModelGenerators",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.BlockModelGenerators",
+			"fabric": "net.minecraft.data.client.BlockStateModelGenerator"
+		},
+		{
+			"forge": "blockStateOutput",
+			"fabric": "blockStateCollector"
+		},
+		{
+			"forge": "blockStateOutput",
+			"fabric": "blockStateCollector"
+		},
+		{
+			"forge": "modelOutput",
+			"fabric": "modelCollector"
+		},
+		{
+			"forge": "skippedAutoModelsOutput",
+			"fabric": "simpleItemModelExemptionCollector"
+		},
+		{
+			"forge": "nonOrientableTrapdoor",
+			"fabric": "nonOrientableTrapdoors"
+		},
+		{
+			"forge": "fullBlockModelCustomGenerators",
+			"fabric": "stoneStateFactories"
+		},
+		{
+			"forge": "texturedModels",
+			"fabric": "texturedModels"
+		},
+		{
+			"forge": "SHAPE_CONSUMERS",
+			"fabric": "VARIANT_POOL_FUNCTIONS"
+		},
+		{
+			"forge": "MULTIFACE_GENERATOR",
+			"fabric": "CONNECTION_VARIANT_FUNCTIONS"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF_SLOT_MODEL_CACHE",
+			"fabric": "CHISELED_BOOKSHELF_MODEL_CACHE"
+		},
+		{
+			"forge": "createMirroredCubeGenerator(Block arg0, ResourceLocation arg1, TextureMapping arg2, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg3)",
+			"fabric": "createStoneState(Block block, Identifier modelId, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "createMirroredCubeGenerator(Block arg0, ResourceLocation arg1, TextureMapping arg2, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg3)",
+			"fabric": "createStoneState(Block block, Identifier modelId, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "createNorthWestMirroredCubeGenerator(Block arg0, ResourceLocation arg1, TextureMapping arg2, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg3)",
+			"fabric": "createMudBrickState(Block block, Identifier modelId, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "createMirroredColumnGenerator(Block arg0, ResourceLocation arg1, TextureMapping arg2, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg3)",
+			"fabric": "createDeepslateState(Block block, Identifier modelId, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "skipAutoItemBlock(Block arg0)",
+			"fabric": "excludeFromSimpleItemModelGeneration(Block block)"
+		},
+		{
+			"forge": "delegateItemModel(Block arg0, ResourceLocation arg1)",
+			"fabric": "registerParentedItemModel(Block block, Identifier parentModelId)"
+		},
+		{
+			"forge": "delegateItemModel(Item arg0, ResourceLocation arg1)",
+			"fabric": "registerParentedItemModel(Item item, Identifier parentModelId)"
+		},
+		{
+			"forge": "createSimpleFlatItemModel(Item arg0)",
+			"fabric": "registerItemModel(Item item)"
+		},
+		{
+			"forge": "createSimpleFlatItemModel(Block arg0)",
+			"fabric": "registerItemModel(Block block)"
+		},
+		{
+			"forge": "createSimpleFlatItemModel(Block arg0, String arg1)",
+			"fabric": "registerItemModel(Block block, String textureSuffix)"
+		},
+		{
+			"forge": "createHorizontalFacingDispatch()",
+			"fabric": "createNorthDefaultHorizontalRotationStates()"
+		},
+		{
+			"forge": "createHorizontalFacingDispatchAlt()",
+			"fabric": "createSouthDefaultHorizontalRotationStates()"
+		},
+		{
+			"forge": "createTorchHorizontalDispatch()",
+			"fabric": "createEastDefaultHorizontalRotationStates()"
+		},
+		{
+			"forge": "createFacingDispatch()",
+			"fabric": "createNorthDefaultRotationStates()"
+		},
+		{
+			"forge": "createRotatedVariant(Block arg0, ResourceLocation arg1)",
+			"fabric": "createBlockStateWithRandomHorizontalRotations(Block block, Identifier modelId)"
+		},
+		{
+			"forge": "createRotatedVariants(ResourceLocation arg0)",
+			"fabric": "createModelVariantWithRandomHorizontalRotations(Identifier modelId)"
+		},
+		{
+			"forge": "createRotatedVariant(Block arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "createBlockStateWithTwoModelAndRandomInversion(Block block, Identifier firstModelId, Identifier secondModelId)"
+		},
+		{
+			"forge": "createBooleanModelDispatch(BooleanProperty arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "createBooleanModelMap(BooleanProperty property, Identifier trueModel, Identifier falseModel)"
+		},
+		{
+			"forge": "createRotatedMirroredVariantBlock(Block arg0)",
+			"fabric": "registerMirrorable(Block block)"
+		},
+		{
+			"forge": "createRotatedVariantBlock(Block arg0)",
+			"fabric": "registerRotatable(Block block)"
+		},
+		{
+			"forge": "createBrushableBlock(Block arg0)",
+			"fabric": "registerBrushableBlock(Block block)"
+		},
+		{
+			"forge": "createButton(Block arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "createButtonBlockState(Block buttonBlock, Identifier regularModelId, Identifier pressedModelId)"
+		},
+		{
+			"forge": "configureDoorHalf(PropertyDispatch$C4<Direction, DoubleBlockHalf, DoorHingeSide, Boolean> arg0, DoubleBlockHalf arg1, ResourceLocation arg2, ResourceLocation arg3, ResourceLocation arg4, ResourceLocation arg5)",
+			"fabric": "fillDoorVariantMap(BlockStateVariantMap$QuadrupleProperty<Direction, DoubleBlockHalf, DoorHinge, Boolean> variantMap, DoubleBlockHalf targetHalf, Identifier leftHingeClosedModelId, Identifier leftHingeOpenModelId, Identifier rightHingeClosedModelId, Identifier rightHingeOpenModelId)"
+		},
+		{
+			"forge": "createDoor(Block arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3, ResourceLocation arg4, ResourceLocation arg5, ResourceLocation arg6, ResourceLocation arg7, ResourceLocation arg8)",
+			"fabric": "createDoorBlockState(Block doorBlock, Identifier bottomLeftHingeClosedModelId, Identifier bottomLeftHingeOpenModelId, Identifier bottomRightHingeClosedModelId, Identifier bottomRightHingeOpenModelId, Identifier topLeftHingeClosedModelId, Identifier topLeftHingeOpenModelId, Identifier topRightHingeClosedModelId, Identifier topRightHingeOpenModelId)"
+		},
+		{
+			"forge": "createCustomFence(Block arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3, ResourceLocation arg4, ResourceLocation arg5)",
+			"fabric": "createCustomFenceBlockState(Block customFenceBlock, Identifier postModelId, Identifier northModelId, Identifier eastModelId, Identifier southModelId, Identifier westModelId)"
+		},
+		{
+			"forge": "createFence(Block arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "createFenceBlockState(Block fenceBlock, Identifier postModelId, Identifier sideModelId)"
+		},
+		{
+			"forge": "createWall(Block arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3)",
+			"fabric": "createWallBlockState(Block wallBlock, Identifier postModelId, Identifier lowSideModelId, Identifier tallSideModelId)"
+		},
+		{
+			"forge": "createFenceGate(Block arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3, ResourceLocation arg4, boolean arg5)",
+			"fabric": "createFenceGateBlockState(Block fenceGateBlock, Identifier openModelId, Identifier closedModelId, Identifier openWallModelId, Identifier closedWallModelId, boolean uvlock)"
+		},
+		{
+			"forge": "createStairs(Block arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3)",
+			"fabric": "createStairsBlockState(Block stairsBlock, Identifier innerModelId, Identifier regularModelId, Identifier outerModelId)"
+		},
+		{
+			"forge": "createOrientableTrapdoor(Block arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3)",
+			"fabric": "createOrientableTrapdoorBlockState(Block trapdoorBlock, Identifier topModelId, Identifier bottomModelId, Identifier openModelId)"
+		},
+		{
+			"forge": "createTrapdoor(Block arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3)",
+			"fabric": "createTrapdoorBlockState(Block trapdoorBlock, Identifier topModelId, Identifier bottomModelId, Identifier openModelId)"
+		},
+		{
+			"forge": "createSimpleBlock(Block arg0, ResourceLocation arg1)",
+			"fabric": "createSingletonBlockState(Block block, Identifier modelId)"
+		},
+		{
+			"forge": "createRotatedPillar()",
+			"fabric": "createAxisRotatedVariantMap()"
+		},
+		{
+			"forge": "createPillarBlockUVLocked(Block arg0, TextureMapping arg1, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg2)",
+			"fabric": "createUvLockedColumnBlockState(Block block, TextureMap textureMap, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "createAxisAlignedPillarBlock(Block arg0, ResourceLocation arg1)",
+			"fabric": "createAxisRotatedBlockState(Block block, Identifier modelId)"
+		},
+		{
+			"forge": "createAxisAlignedPillarBlockCustomModel(Block arg0, ResourceLocation arg1)",
+			"fabric": "registerAxisRotated(Block block, Identifier modelId)"
+		},
+		{
+			"forge": "createAxisAlignedPillarBlock(Block arg0, TexturedModel$Provider arg1)",
+			"fabric": "registerAxisRotated(Block block, TexturedModel$Factory modelFactory)"
+		},
+		{
+			"forge": "createHorizontallyRotatedBlock(Block arg0, TexturedModel$Provider arg1)",
+			"fabric": "registerNorthDefaultHorizontalRotated(Block block, TexturedModel$Factory modelFactory)"
+		},
+		{
+			"forge": "createRotatedPillarWithHorizontalVariant(Block arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "createAxisRotatedBlockState(Block block, Identifier verticalModelId, Identifier horizontalModelId)"
+		},
+		{
+			"forge": "createRotatedPillarWithHorizontalVariant(Block arg0, TexturedModel$Provider arg1, TexturedModel$Provider arg2)",
+			"fabric": "registerAxisRotated(Block block, TexturedModel$Factory verticalModelFactory, TexturedModel$Factory horizontalModelFactory)"
+		},
+		{
+			"forge": "createSuffixedVariant(Block arg0, String arg1, ModelTemplate arg2, Function<ResourceLocation, TextureMapping> arg3)",
+			"fabric": "createSubModel(Block block, String suffix, Model model, Function<Identifier, TextureMap> texturesFactory)"
+		},
+		{
+			"forge": "createPressurePlate(Block arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "createPressurePlateBlockState(Block pressurePlateBlock, Identifier upModelId, Identifier downModelId)"
+		},
+		{
+			"forge": "createSlab(Block arg0, ResourceLocation arg1, ResourceLocation arg2, ResourceLocation arg3)",
+			"fabric": "createSlabBlockState(Block slabBlock, Identifier bottomModelId, Identifier topModelId, Identifier fullModelId)"
+		},
+		{
+			"forge": "createTrivialCube(Block arg0)",
+			"fabric": "registerSimpleCubeAll(Block block)"
+		},
+		{
+			"forge": "createTrivialBlock(Block arg0, TexturedModel$Provider arg1)",
+			"fabric": "registerSingleton(Block block, TexturedModel$Factory modelFactory)"
+		},
+		{
+			"forge": "createTrivialBlock(Block arg0, TextureMapping arg1, ModelTemplate arg2)",
+			"fabric": "registerSingleton(Block block, TextureMap textures, Model model)"
+		},
+		{
+			"forge": "family(Block arg0)",
+			"fabric": "registerCubeAllModelTexturePool(Block block)"
+		},
+		{
+			"forge": "createHangingSign(Block arg0, Block arg1, Block arg2)",
+			"fabric": "registerHangingSign(Block strippedLog, Block hangingSign, Block wallHangingSign)"
+		},
+		{
+			"forge": "createDoor(Block arg0)",
+			"fabric": "registerDoor(Block doorBlock)"
+		},
+		{
+			"forge": "createOrientableTrapdoor(Block arg0)",
+			"fabric": "registerOrientableTrapdoor(Block trapdoorBlock)"
+		},
+		{
+			"forge": "createTrapdoor(Block arg0)",
+			"fabric": "registerTrapdoor(Block trapdoorBlock)"
+		},
+		{
+			"forge": "createBigDripLeafBlock()",
+			"fabric": "registerBigDripleaf()"
+		},
+		{
+			"forge": "woodProvider(Block arg0)",
+			"fabric": "registerLog(Block logBlock)"
+		},
+		{
+			"forge": "createNonTemplateModelBlock(Block arg0)",
+			"fabric": "registerSimpleState(Block block)"
+		},
+		{
+			"forge": "createNonTemplateModelBlock(Block arg0, Block arg1)",
+			"fabric": "registerStateWithModelReference(Block block, Block modelReference)"
+		},
+		{
+			"forge": "createCrossBlockWithDefaultItem(Block arg0, BlockModelGenerators$TintState arg1)",
+			"fabric": "registerTintableCross(Block block, BlockStateModelGenerator$TintType tintType)"
+		},
+		{
+			"forge": "createCrossBlockWithDefaultItem(Block arg0, BlockModelGenerators$TintState arg1, TextureMapping arg2)",
+			"fabric": "registerTintableCross(Block block, BlockStateModelGenerator$TintType tintType, TextureMap texture)"
+		},
+		{
+			"forge": "createCrossBlock(Block arg0, BlockModelGenerators$TintState arg1)",
+			"fabric": "registerTintableCrossBlockState(Block block, BlockStateModelGenerator$TintType tintType)"
+		},
+		{
+			"forge": "createCrossBlock(Block arg0, BlockModelGenerators$TintState arg1, TextureMapping arg2)",
+			"fabric": "registerTintableCrossBlockState(Block block, BlockStateModelGenerator$TintType tintType, TextureMap crossTexture)"
+		},
+		{
+			"forge": "createCrossBlock(Block arg0, BlockModelGenerators$TintState arg1, Property<Integer> arg2, int... arg3)",
+			"fabric": "registerTintableCrossBlockStateWithStages(Block block, BlockStateModelGenerator$TintType tintType, Property<Integer> stageProperty, int... stages)"
+		},
+		{
+			"forge": "createPlant(Block arg0, Block arg1, BlockModelGenerators$TintState arg2)",
+			"fabric": "registerFlowerPotPlant(Block plantBlock, Block flowerPotBlock, BlockStateModelGenerator$TintType tintType)"
+		},
+		{
+			"forge": "createCoralFans(Block arg0, Block arg1)",
+			"fabric": "registerCoralFan(Block coralFanBlock, Block coralWallFanBlock)"
+		},
+		{
+			"forge": "createStems(Block arg0, Block arg1)",
+			"fabric": "registerGourd(Block stemBlock, Block attachedStemBlock)"
+		},
+		{
+			"forge": "createPitcherPlant()",
+			"fabric": "registerPitcherPlant()"
+		},
+		{
+			"forge": "createPitcherCrop()",
+			"fabric": "registerPitcherCrop()"
+		},
+		{
+			"forge": "createCoral(Block arg0, Block arg1, Block arg2, Block arg3, Block arg4, Block arg5, Block arg6, Block arg7)",
+			"fabric": "registerCoral(Block coral, Block deadCoral, Block coralBlock, Block deadCoralBlock, Block coralFan, Block deadCoralFan, Block coralWallFan, Block deadCoralWallFan)"
+		},
+		{
+			"forge": "createDoublePlant(Block arg0, BlockModelGenerators$TintState arg1)",
+			"fabric": "registerDoubleBlock(Block doubleBlock, BlockStateModelGenerator$TintType tintType)"
+		},
+		{
+			"forge": "createSunflower()",
+			"fabric": "registerSunflower()"
+		},
+		{
+			"forge": "createTallSeagrass()",
+			"fabric": "registerTallSeagrass()"
+		},
+		{
+			"forge": "createSmallDripleaf()",
+			"fabric": "registerSmallDripleaf()"
+		},
+		{
+			"forge": "createDoubleBlock(Block arg0, ResourceLocation arg1, ResourceLocation arg2)",
+			"fabric": "registerDoubleBlock(Block block, Identifier upperHalfModelId, Identifier lowerHalfModelId)"
+		},
+		{
+			"forge": "createPassiveRail(Block arg0)",
+			"fabric": "registerTurnableRail(Block rail)"
+		},
+		{
+			"forge": "createActiveRail(Block arg0)",
+			"fabric": "registerStraightRail(Block rail)"
+		},
+		{
+			"forge": "blockEntityModels(ResourceLocation arg0, Block arg1)",
+			"fabric": "registerBuiltin(Identifier modelId, Block particleBlock)"
+		},
+		{
+			"forge": "blockEntityModels(Block arg0, Block arg1)",
+			"fabric": "registerBuiltin(Block block, Block particleBlock)"
+		},
+		{
+			"forge": "createAirLikeBlock(Block arg0, Item arg1)",
+			"fabric": "registerBuiltinWithParticle(Block block, Item particleSource)"
+		},
+		{
+			"forge": "createAirLikeBlock(Block arg0, ResourceLocation arg1)",
+			"fabric": "registerBuiltinWithParticle(Block block, Identifier particleSource)"
+		},
+		{
+			"forge": "createFullAndCarpetBlocks(Block arg0, Block arg1)",
+			"fabric": "registerWoolAndCarpet(Block wool, Block carpet)"
+		},
+		{
+			"forge": "createFlowerBed(Block arg0)",
+			"fabric": "registerFlowerbed(Block flowerbed)"
+		},
+		{
+			"forge": "createColoredBlockWithRandomRotations(TexturedModel$Provider arg0, Block... arg1)",
+			"fabric": "registerRandomHorizontalRotations(TexturedModel$Factory modelFactory, Block... blocks)"
+		},
+		{
+			"forge": "createColoredBlockWithStateRotations(TexturedModel$Provider arg0, Block... arg1)",
+			"fabric": "registerSouthDefaultHorizontalFacing(TexturedModel$Factory modelFactory, Block... blocks)"
+		},
+		{
+			"forge": "createGlassBlocks(Block arg0, Block arg1)",
+			"fabric": "registerGlassPane(Block glass, Block glassPane)"
+		},
+		{
+			"forge": "createCommandBlock(Block arg0)",
+			"fabric": "registerCommandBlock(Block commandBlock)"
+		},
+		{
+			"forge": "createAnvil(Block arg0)",
+			"fabric": "registerAnvil(Block anvil)"
+		},
+		{
+			"forge": "createBambooModels(int arg0)",
+			"fabric": "getBambooBlockStateVariants(int age)"
+		},
+		{
+			"forge": "createBamboo()",
+			"fabric": "registerBamboo()"
+		},
+		{
+			"forge": "createColumnWithFacing()",
+			"fabric": "createUpDefaultFacingVariantMap()"
+		},
+		{
+			"forge": "createBarrel()",
+			"fabric": "registerBarrel()"
+		},
+		{
+			"forge": "createEmptyOrFullDispatch(Property<T> arg0, T arg1, ResourceLocation arg2, ResourceLocation arg3)",
+			"fabric": "createValueFencedModelMap(Property<T> property, T fence, Identifier higherOrEqualModelId, Identifier lowerModelId)"
+		},
+		{
+			"forge": "createBeeNest(Block arg0, Function<Block, TextureMapping> arg1)",
+			"fabric": "registerBeehive(Block beehive, Function<Block, TextureMap> texturesFactory)"
+		},
+		{
+			"forge": "createCropBlock(Block arg0, Property<Integer> arg1, int... arg2)",
+			"fabric": "registerCrop(Block crop, Property<Integer> ageProperty, int... ageTextureIndices)"
+		},
+		{
+			"forge": "createBell()",
+			"fabric": "registerBell()"
+		},
+		{
+			"forge": "createGrindstone()",
+			"fabric": "registerGrindstone()"
+		},
+		{
+			"forge": "createFurnace(Block arg0, TexturedModel$Provider arg1)",
+			"fabric": "registerCooker(Block cooker, TexturedModel$Factory modelFactory)"
+		},
+		{
+			"forge": "createCampfires(Block... arg0)",
+			"fabric": "registerCampfire(Block... blocks)"
+		},
+		{
+			"forge": "createAzalea(Block arg0)",
+			"fabric": "registerAzalea(Block block)"
+		},
+		{
+			"forge": "createPottedAzalea(Block arg0)",
+			"fabric": "registerPottedAzaleaBush(Block block)"
+		},
+		{
+			"forge": "createBookshelf()",
+			"fabric": "registerBookshelf()"
+		},
+		{
+			"forge": "createRedstoneWire()",
+			"fabric": "registerRedstone()"
+		},
+		{
+			"forge": "createComparator()",
+			"fabric": "registerComparator()"
+		},
+		{
+			"forge": "createSmoothStoneSlab()",
+			"fabric": "registerSmoothStone()"
+		},
+		{
+			"forge": "createBrewingStand()",
+			"fabric": "registerBrewingStand()"
+		},
+		{
+			"forge": "createMushroomBlock(Block arg0)",
+			"fabric": "registerMushroomBlock(Block mushroomBlock)"
+		},
+		{
+			"forge": "createCakeBlock()",
+			"fabric": "registerCake()"
+		},
+		{
+			"forge": "createCartographyTable()",
+			"fabric": "registerCartographyTable()"
+		},
+		{
+			"forge": "createSmithingTable()",
+			"fabric": "registerSmithingTable()"
+		},
+		{
+			"forge": "createCraftingTableLike(Block arg0, Block arg1, BiFunction<Block, Block, TextureMapping> arg2)",
+			"fabric": "registerCubeWithCustomTextures(Block block, Block otherTextureSource, BiFunction<Block, Block, TextureMap> texturesFactory)"
+		},
+		{
+			"forge": "createGenericCube(Block arg0)",
+			"fabric": "method_51463(Block arg0)"
+		},
+		{
+			"forge": "createPumpkins()",
+			"fabric": "registerPumpkins()"
+		},
+		{
+			"forge": "createPumpkinVariant(Block arg0, TextureMapping arg1)",
+			"fabric": "registerNorthDefaultHorizontalRotatable(Block block, TextureMap texture)"
+		},
+		{
+			"forge": "createCauldrons()",
+			"fabric": "registerCauldrons()"
+		},
+		{
+			"forge": "createChorusFlower()",
+			"fabric": "registerChorusFlower()"
+		},
+		{
+			"forge": "createDispenserBlock(Block arg0)",
+			"fabric": "registerDispenserLikeOrientable(Block block)"
+		},
+		{
+			"forge": "createEndPortalFrame()",
+			"fabric": "registerEndPortalFrame()"
+		},
+		{
+			"forge": "createChorusPlant()",
+			"fabric": "registerChorusPlant()"
+		},
+		{
+			"forge": "createComposter()",
+			"fabric": "registerComposter()"
+		},
+		{
+			"forge": "createAmethystCluster(Block arg0)",
+			"fabric": "registerAmethyst(Block block)"
+		},
+		{
+			"forge": "createAmethystClusters()",
+			"fabric": "registerAmethysts()"
+		},
+		{
+			"forge": "createPointedDripstone()",
+			"fabric": "registerPointedDripstone()"
+		},
+		{
+			"forge": "createPointedDripstoneVariant(Direction arg0, DripstoneThickness arg1)",
+			"fabric": "getDripstoneVariant(Direction direction, Thickness thickness)"
+		},
+		{
+			"forge": "createNyliumBlock(Block arg0)",
+			"fabric": "registerNetherrackBottomCustomTop(Block block)"
+		},
+		{
+			"forge": "createDaylightDetector()",
+			"fabric": "registerDaylightDetector()"
+		},
+		{
+			"forge": "createRotatableColumn(Block arg0)",
+			"fabric": "registerRod(Block block)"
+		},
+		{
+			"forge": "createLightningRod()",
+			"fabric": "registerLightningRod()"
+		},
+		{
+			"forge": "createFarmland()",
+			"fabric": "registerFarmland()"
+		},
+		{
+			"forge": "createFloorFireModels(Block arg0)",
+			"fabric": "getFireFloorModels(Block texture)"
+		},
+		{
+			"forge": "createSideFireModels(Block arg0)",
+			"fabric": "getFireSideModels(Block texture)"
+		},
+		{
+			"forge": "createTopFireModels(Block arg0)",
+			"fabric": "getFireUpModels(Block texture)"
+		},
+		{
+			"forge": "wrapModels(List<ResourceLocation> arg0, UnaryOperator<Variant> arg1)",
+			"fabric": "buildBlockStateVariants(List<Identifier> modelIds, UnaryOperator<BlockStateVariant> processor)"
+		},
+		{
+			"forge": "createFire()",
+			"fabric": "registerFire()"
+		},
+		{
+			"forge": "createSoulFire()",
+			"fabric": "registerSoulFire()"
+		},
+		{
+			"forge": "createLantern(Block arg0)",
+			"fabric": "registerLantern(Block lantern)"
+		},
+		{
+			"forge": "createMuddyMangroveRoots()",
+			"fabric": "registerMuddyMangroveRoots()"
+		},
+		{
+			"forge": "createMangrovePropagule()",
+			"fabric": "registerMangrovePropagule()"
+		},
+		{
+			"forge": "createFrostedIce()",
+			"fabric": "registerFrostedIce()"
+		},
+		{
+			"forge": "createGrassBlocks()",
+			"fabric": "registerTopSoils()"
+		},
+		{
+			"forge": "createGrassLikeBlock(Block arg0, ResourceLocation arg1, Variant arg2)",
+			"fabric": "registerTopSoil(Block topSoil, Identifier modelId, BlockStateVariant snowyVariant)"
+		},
+		{
+			"forge": "createCocoa()",
+			"fabric": "registerCocoa()"
+		},
+		{
+			"forge": "createDirtPath()",
+			"fabric": "registerGrassPath()"
+		},
+		{
+			"forge": "createWeightedPressurePlate(Block arg0, Block arg1)",
+			"fabric": "registerWeightedPressurePlate(Block weightedPressurePlate, Block textureSource)"
+		},
+		{
+			"forge": "createHopper()",
+			"fabric": "registerHopper()"
+		},
+		{
+			"forge": "copyModel(Block arg0, Block arg1)",
+			"fabric": "registerParented(Block modelSource, Block child)"
+		},
+		{
+			"forge": "createIronBars()",
+			"fabric": "registerIronBars()"
+		},
+		{
+			"forge": "createNonTemplateHorizontalBlock(Block arg0)",
+			"fabric": "registerNorthDefaultHorizontalRotation(Block block)"
+		},
+		{
+			"forge": "createLever()",
+			"fabric": "registerLever()"
+		},
+		{
+			"forge": "createLilyPad()",
+			"fabric": "registerLilyPad()"
+		},
+		{
+			"forge": "createFrogspawnBlock()",
+			"fabric": "registerFrogspawn()"
+		},
+		{
+			"forge": "createNetherPortalBlock()",
+			"fabric": "registerNetherPortal()"
+		},
+		{
+			"forge": "createNetherrack()",
+			"fabric": "registerNetherrack()"
+		},
+		{
+			"forge": "createObserver()",
+			"fabric": "registerObserver()"
+		},
+		{
+			"forge": "createPistons()",
+			"fabric": "registerPistons()"
+		},
+		{
+			"forge": "createPistonVariant(Block arg0, ResourceLocation arg1, TextureMapping arg2)",
+			"fabric": "registerPiston(Block piston, Identifier extendedModelId, TextureMap textures)"
+		},
+		{
+			"forge": "createPistonHeads()",
+			"fabric": "registerPistonHead()"
+		},
+		{
+			"forge": "createSculkSensor()",
+			"fabric": "registerSculkSensor()"
+		},
+		{
+			"forge": "createCalibratedSculkSensor()",
+			"fabric": "registerCalibratedSculkSensor()"
+		},
+		{
+			"forge": "createSculkShrieker()",
+			"fabric": "registerSculkShrieker()"
+		},
+		{
+			"forge": "createScaffolding()",
+			"fabric": "registerScaffolding()"
+		},
+		{
+			"forge": "createCaveVines()",
+			"fabric": "registerCaveVines()"
+		},
+		{
+			"forge": "createRedstoneLamp()",
+			"fabric": "registerRedstoneLamp()"
+		},
+		{
+			"forge": "createNormalTorch(Block arg0, Block arg1)",
+			"fabric": "registerTorch(Block torch, Block wallTorch)"
+		},
+		{
+			"forge": "createRedstoneTorch()",
+			"fabric": "registerRedstoneTorch()"
+		},
+		{
+			"forge": "createRepeater()",
+			"fabric": "registerRepeater()"
+		},
+		{
+			"forge": "createSeaPickle()",
+			"fabric": "registerSeaPickle()"
+		},
+		{
+			"forge": "createSnowBlocks()",
+			"fabric": "registerSnows()"
+		},
+		{
+			"forge": "createStonecutter()",
+			"fabric": "registerStonecutter()"
+		},
+		{
+			"forge": "createStructureBlock()",
+			"fabric": "registerStructureBlock()"
+		},
+		{
+			"forge": "createSweetBerryBush()",
+			"fabric": "registerSweetBerryBush()"
+		},
+		{
+			"forge": "createTripwire()",
+			"fabric": "registerTripwire()"
+		},
+		{
+			"forge": "createTripwireHook()",
+			"fabric": "registerTripwireHook()"
+		},
+		{
+			"forge": "createTurtleEggModel(int arg0, String arg1, TextureMapping arg2)",
+			"fabric": "getTurtleEggModel(int eggs, String prefix, TextureMap textures)"
+		},
+		{
+			"forge": "createTurtleEggModel(Integer arg0, Integer arg1)",
+			"fabric": "getTurtleEggModel(Integer eggs, Integer hatch)"
+		},
+		{
+			"forge": "createTurtleEgg()",
+			"fabric": "registerTurtleEgg()"
+		},
+		{
+			"forge": "createSnifferEgg()",
+			"fabric": "registerSnifferEgg()"
+		},
+		{
+			"forge": "createMultiface(Block arg0)",
+			"fabric": "registerWallPlant(Block block)"
+		},
+		{
+			"forge": "createSculkCatalyst()",
+			"fabric": "registerSculkCatalyst()"
+		},
+		{
+			"forge": "createChiseledBookshelf()",
+			"fabric": "registerChiseledBookshelf()"
+		},
+		{
+			"forge": "addSlotStateAndRotationVariants(MultiPartGenerator arg0, Condition$TerminalCondition arg1, VariantProperties$Rotation arg2)",
+			"fabric": "supplyChiseledBookshelfModels(MultipartBlockStateSupplier blockStateSupplier, When$PropertyCondition facingCondition, VariantSettings$Rotation rotation)"
+		},
+		{
+			"forge": "addBookSlotModel(MultiPartGenerator arg0, Condition$TerminalCondition arg1, VariantProperties$Rotation arg2, BooleanProperty arg3, ModelTemplate arg4, boolean arg5)",
+			"fabric": "supplyChiseledBookshelfModel(MultipartBlockStateSupplier blockStateSupplier, When$PropertyCondition facingCondition, VariantSettings$Rotation rotation, BooleanProperty property, Model model, boolean occupied)"
+		},
+		{
+			"forge": "createMagmaBlock()",
+			"fabric": "registerMagmaBlock()"
+		},
+		{
+			"forge": "createShulkerBox(Block arg0)",
+			"fabric": "registerShulkerBox(Block shulkerBox)"
+		},
+		{
+			"forge": "createGrowingPlant(Block arg0, Block arg1, BlockModelGenerators$TintState arg2)",
+			"fabric": "registerPlantPart(Block plant, Block plantStem, BlockStateModelGenerator$TintType tintType)"
+		},
+		{
+			"forge": "createBedItem(Block arg0, Block arg1)",
+			"fabric": "registerBed(Block bed, Block particleSource)"
+		},
+		{
+			"forge": "createInfestedStone()",
+			"fabric": "registerInfestedStone()"
+		},
+		{
+			"forge": "createInfestedDeepslate()",
+			"fabric": "registerInfestedDeepslate()"
+		},
+		{
+			"forge": "createNetherRoots(Block arg0, Block arg1)",
+			"fabric": "registerRoots(Block root, Block pottedRoot)"
+		},
+		{
+			"forge": "createRespawnAnchor()",
+			"fabric": "registerRespawnAnchor()"
+		},
+		{
+			"forge": "applyRotation(FrontAndTop arg0, Variant arg1)",
+			"fabric": "addJigsawOrientationToVariant(JigsawOrientation orientation, BlockStateVariant variant)"
+		},
+		{
+			"forge": "createJigsaw()",
+			"fabric": "registerJigsaw()"
+		},
+		{
+			"forge": "createPetrifiedOakSlab()",
+			"fabric": "registerPetrifiedOakSlab()"
+		},
+		{
+			"forge": "run()",
+			"fabric": "register()"
+		},
+		{
+			"forge": "createLightBlock()",
+			"fabric": "registerLightBlock()"
+		},
+		{
+			"forge": "createCandleAndCandleCake(Block arg0, Block arg1)",
+			"fabric": "registerCandle(Block candle, Block cake)"
+		}
+	]
+}

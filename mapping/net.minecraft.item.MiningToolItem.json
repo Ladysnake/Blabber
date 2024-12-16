@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.item.DiggerItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.DiggerItem",
+			"fabric": "net.minecraft.item.MiningToolItem"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "effectiveBlocks"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "effectiveBlocks"
+		},
+		{
+			"forge": "speed",
+			"fabric": "miningSpeed"
+		},
+		{
+			"forge": "attackDamageBaseline",
+			"fabric": "attackDamage"
+		},
+		{
+			"forge": "defaultModifiers",
+			"fabric": "attributeModifiers"
+		},
+		{
+			"forge": "getDestroySpeed(ItemStack arg0, BlockState arg1)",
+			"fabric": "getMiningSpeedMultiplier(ItemStack arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getDestroySpeed(ItemStack arg0, BlockState arg1)",
+			"fabric": "getMiningSpeedMultiplier(ItemStack arg0, BlockState arg1)"
+		},
+		{
+			"forge": "hurtEnemy(ItemStack arg0, LivingEntity arg1, LivingEntity arg2)",
+			"fabric": "postHit(ItemStack arg0, LivingEntity arg1, LivingEntity arg2)"
+		},
+		{
+			"forge": "mineBlock(ItemStack arg0, Level arg1, BlockState arg2, BlockPos arg3, LivingEntity arg4)",
+			"fabric": "postMine(ItemStack arg0, World arg1, BlockState arg2, BlockPos arg3, LivingEntity arg4)"
+		},
+		{
+			"forge": "getDefaultAttributeModifiers(EquipmentSlot arg0)",
+			"fabric": "getAttributeModifiers(EquipmentSlot arg0)"
+		},
+		{
+			"forge": "getAttackDamage()",
+			"fabric": "getAttackDamage()"
+		},
+		{
+			"forge": "isCorrectToolForDrops(BlockState arg0)",
+			"fabric": "isSuitableFor(BlockState arg0)"
+		}
+	]
+}

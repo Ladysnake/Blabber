@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundCommandsPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundCommandsPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.CommandTreeS2CPacket"
+		},
+		{
+			"forge": "MASK_TYPE",
+			"fabric": "field_33317"
+		},
+		{
+			"forge": "MASK_TYPE",
+			"fabric": "field_33317"
+		},
+		{
+			"forge": "FLAG_EXECUTABLE",
+			"fabric": "field_33318"
+		},
+		{
+			"forge": "FLAG_REDIRECT",
+			"fabric": "field_33319"
+		},
+		{
+			"forge": "FLAG_CUSTOM_SUGGESTIONS",
+			"fabric": "field_33320"
+		},
+		{
+			"forge": "TYPE_ROOT",
+			"fabric": "field_33321"
+		},
+		{
+			"forge": "TYPE_LITERAL",
+			"fabric": "field_33322"
+		},
+		{
+			"forge": "TYPE_ARGUMENT",
+			"fabric": "field_33323"
+		},
+		{
+			"forge": "rootIndex",
+			"fabric": "rootSize"
+		},
+		{
+			"forge": "entries",
+			"fabric": "nodes"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "validateEntries(List<ClientboundCommandsPacket$Entry> arg0, BiPredicate<ClientboundCommandsPacket$Entry, it.unimi.dsi.fastutil.ints.IntSet> arg1)",
+			"fabric": "validate(List<CommandTreeS2CPacket$CommandNodeData> nodeDatas, BiPredicate<CommandTreeS2CPacket$CommandNodeData, it.unimi.dsi.fastutil.ints.IntSet> validator)"
+		},
+		{
+			"forge": "validateEntries(List<ClientboundCommandsPacket$Entry> arg0)",
+			"fabric": "validate(List<CommandTreeS2CPacket$CommandNodeData> nodeDatas)"
+		},
+		{
+			"forge": "enumerateNodes(com.mojang.brigadier.tree.RootCommandNode<SharedSuggestionProvider> arg0)",
+			"fabric": "traverse(com.mojang.brigadier.tree.RootCommandNode<CommandSource> commandTree)"
+		},
+		{
+			"forge": "createEntries(it.unimi.dsi.fastutil.objects.Object2IntMap<com.mojang.brigadier.tree.CommandNode<SharedSuggestionProvider>> arg0)",
+			"fabric": "collectNodes(it.unimi.dsi.fastutil.objects.Object2IntMap<com.mojang.brigadier.tree.CommandNode<CommandSource>> nodes)"
+		},
+		{
+			"forge": "readNode(FriendlyByteBuf arg0)",
+			"fabric": "readCommandNode(PacketByteBuf buf)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0, byte arg1)",
+			"fabric": "readArgumentBuilder(PacketByteBuf buf, byte flags)"
+		},
+		{
+			"forge": "createEntry(com.mojang.brigadier.tree.CommandNode<SharedSuggestionProvider> arg0, it.unimi.dsi.fastutil.objects.Object2IntMap<com.mojang.brigadier.tree.CommandNode<SharedSuggestionProvider>> arg1)",
+			"fabric": "createNodeData(com.mojang.brigadier.tree.CommandNode<CommandSource> node, it.unimi.dsi.fastutil.objects.Object2IntMap<com.mojang.brigadier.tree.CommandNode<CommandSource>> nodes)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getRoot(CommandBuildContext arg0)",
+			"fabric": "getCommandTree(CommandRegistryAccess commandRegistryAccess)"
+		}
+	]
+}

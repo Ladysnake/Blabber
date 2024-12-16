@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.resources.sounds.EntityBoundSoundInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.EntityBoundSoundInstance",
+			"fabric": "net.minecraft.client.sound.EntityTrackingSoundInstance"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "canPlaySound()",
+			"fabric": "canPlay()"
+		},
+		{
+			"forge": "canPlaySound()",
+			"fabric": "canPlay()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

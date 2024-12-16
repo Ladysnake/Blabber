@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.material.MapColor$Brightness",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.material.MapColor$Brightness",
+			"fabric": "net.minecraft.block.MapColor$Brightness"
+		},
+		{
+			"forge": "LOW",
+			"fabric": "LOW"
+		},
+		{
+			"forge": "LOW",
+			"fabric": "LOW"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "HIGH",
+			"fabric": "HIGH"
+		},
+		{
+			"forge": "LOWEST",
+			"fabric": "LOWEST"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "modifier",
+			"fabric": "brightness"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "validateAndGet(int id)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "validateAndGet(int id)"
+		},
+		{
+			"forge": "byIdUnsafe(int arg0)",
+			"fabric": "get(int id)"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunction",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunction"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "REGISTRY_ENTRY_CODEC"
+		},
+		{
+			"forge": "HOLDER_HELPER_CODEC",
+			"fabric": "FUNCTION_CODEC"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos pos)"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos pos)"
+		},
+		{
+			"forge": "fillArray(double[] arg0, DensityFunction$ContextProvider arg1)",
+			"fabric": "fill(double[] densities, DensityFunction$EachApplier applier)"
+		},
+		{
+			"forge": "mapAll(DensityFunction$Visitor arg0)",
+			"fabric": "apply(DensityFunction$DensityFunctionVisitor visitor)"
+		},
+		{
+			"forge": "minValue()",
+			"fabric": "minValue()"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "maxValue()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodecHolder()"
+		},
+		{
+			"forge": "clamp(double arg0, double arg1)",
+			"fabric": "clamp(double min, double max)"
+		},
+		{
+			"forge": "abs()",
+			"fabric": "abs()"
+		},
+		{
+			"forge": "square()",
+			"fabric": "square()"
+		},
+		{
+			"forge": "cube()",
+			"fabric": "cube()"
+		},
+		{
+			"forge": "halfNegative()",
+			"fabric": "halfNegative()"
+		},
+		{
+			"forge": "quarterNegative()",
+			"fabric": "quarterNegative()"
+		},
+		{
+			"forge": "squeeze()",
+			"fabric": "squeeze()"
+		}
+	]
+}

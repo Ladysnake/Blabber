@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.components.ChatComponent$DelayedMessageDeletion",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.ChatComponent$DelayedMessageDeletion",
+			"fabric": "net.minecraft.client.gui.hud.ChatHud$RemovalQueuedMessage"
+		},
+		{
+			"forge": "signature",
+			"fabric": "signature"
+		},
+		{
+			"forge": "signature",
+			"fabric": "signature"
+		},
+		{
+			"forge": "deletableAfter",
+			"fabric": "deletableAfter"
+		},
+		{
+			"forge": "signature()",
+			"fabric": "signature()"
+		},
+		{
+			"forge": "signature()",
+			"fabric": "signature()"
+		},
+		{
+			"forge": "deletableAfter()",
+			"fabric": "deletableAfter()"
+		}
+	]
+}

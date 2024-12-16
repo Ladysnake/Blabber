@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.FeatureCountTracker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.FeatureCountTracker",
+			"fabric": "net.minecraft.world.gen.feature.util.FeatureDebugLogger"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "data",
+			"fabric": "FEATURES"
+		},
+		{
+			"forge": "chunkDecorated(ServerLevel arg0)",
+			"fabric": "incrementTotalChunksCount(ServerWorld world)"
+		},
+		{
+			"forge": "chunkDecorated(ServerLevel arg0)",
+			"fabric": "incrementTotalChunksCount(ServerWorld world)"
+		},
+		{
+			"forge": "featurePlaced(ServerLevel arg0, ConfiguredFeature<?, ?> arg1, Optional<PlacedFeature> arg2)",
+			"fabric": "incrementFeatureCount(ServerWorld world, ConfiguredFeature<?, ?> configuredFeature, Optional<PlacedFeature> placedFeature)"
+		},
+		{
+			"forge": "clearCounts()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "logCounts()",
+			"fabric": "dump()"
+		}
+	]
+}

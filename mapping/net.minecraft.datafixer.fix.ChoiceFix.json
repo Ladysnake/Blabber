@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.NamedEntityFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.NamedEntityFix",
+			"fabric": "net.minecraft.datafixer.fix.ChoiceFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "entityName",
+			"fabric": "choiceName"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> inputType)"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> inputType)"
+		}
+	]
+}

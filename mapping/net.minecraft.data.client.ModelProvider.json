@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.data.models.ModelProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.ModelProvider",
+			"fabric": "net.minecraft.data.client.ModelProvider"
+		},
+		{
+			"forge": "blockStatePathProvider",
+			"fabric": "blockstatesPathResolver"
+		},
+		{
+			"forge": "blockStatePathProvider",
+			"fabric": "blockstatesPathResolver"
+		},
+		{
+			"forge": "modelPathProvider",
+			"fabric": "modelsPathResolver"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "saveCollection(CachedOutput arg0, Map<T, ? extends Supplier<com.google.gson.JsonElement>> arg1, Function<T, Path> arg2)",
+			"fabric": "writeJsons(DataWriter cache, Map<T, ? extends Supplier<com.google.gson.JsonElement>> models, Function<T, Path> pathGetter)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		}
+	]
+}

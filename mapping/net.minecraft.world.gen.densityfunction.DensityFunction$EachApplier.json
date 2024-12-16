@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunction$ContextProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunction$ContextProvider",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunction$EachApplier"
+		},
+		{
+			"forge": "forIndex(int arg0)",
+			"fabric": "at(int index)"
+		},
+		{
+			"forge": "forIndex(int arg0)",
+			"fabric": "at(int index)"
+		},
+		{
+			"forge": "fillAllDirectly(double[] arg0, DensityFunction arg1)",
+			"fabric": "fill(double[] densities, DensityFunction densityFunction)"
+		}
+	]
+}

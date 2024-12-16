@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.FollowMobGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.FollowMobGoal",
+			"fabric": "net.minecraft.entity.ai.goal.FollowMobGoal"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "followPredicate",
+			"fabric": "targetPredicate"
+		},
+		{
+			"forge": "followingMob",
+			"fabric": "target"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "navigation",
+			"fabric": "navigation"
+		},
+		{
+			"forge": "timeToRecalcPath",
+			"fabric": "updateCountdownTicks"
+		},
+		{
+			"forge": "stopDistance",
+			"fabric": "minDistance"
+		},
+		{
+			"forge": "oldWaterCost",
+			"fabric": "oldWaterPathFindingPenalty"
+		},
+		{
+			"forge": "areaSize",
+			"fabric": "maxDistance"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

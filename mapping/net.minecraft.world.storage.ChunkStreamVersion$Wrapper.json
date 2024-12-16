@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.RegionFileVersion$StreamWrapper",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.RegionFileVersion$StreamWrapper",
+			"fabric": "net.minecraft.world.storage.ChunkStreamVersion$Wrapper"
+		},
+		{
+			"forge": "wrap(O arg0)",
+			"fabric": "wrap(O object)"
+		},
+		{
+			"forge": "wrap(O arg0)",
+			"fabric": "wrap(O object)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.advancements.AdvancementRewards",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.AdvancementRewards",
+			"fabric": "net.minecraft.advancement.AdvancementRewards"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "experience",
+			"fabric": "experience"
+		},
+		{
+			"forge": "loot",
+			"fabric": "loot"
+		},
+		{
+			"forge": "recipes",
+			"fabric": "recipes"
+		},
+		{
+			"forge": "function",
+			"fabric": "function"
+		},
+		{
+			"forge": "getRecipes()",
+			"fabric": "getRecipes()"
+		},
+		{
+			"forge": "getRecipes()",
+			"fabric": "getRecipes()"
+		},
+		{
+			"forge": "grant(ServerPlayer arg0)",
+			"fabric": "apply(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "serializeToJson()",
+			"fabric": "toJson()"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject json)"
+		}
+	]
+}

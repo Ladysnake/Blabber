@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.packs.linkfs.PathContents$DirectoryContents",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.linkfs.PathContents$DirectoryContents",
+			"fabric": "net.minecraft.resource.fs.ResourceFile$Directory"
+		},
+		{
+			"forge": "children",
+			"fabric": "children"
+		},
+		{
+			"forge": "children",
+			"fabric": "children"
+		},
+		{
+			"forge": "children()",
+			"fabric": "children()"
+		},
+		{
+			"forge": "children()",
+			"fabric": "children()"
+		}
+	]
+}

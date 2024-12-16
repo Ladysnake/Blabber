@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.animal.axolotl.AxolotlAi",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.axolotl.AxolotlAi",
+			"fabric": "net.minecraft.entity.passive.AxolotlBrain"
+		},
+		{
+			"forge": "ADULT_FOLLOW_RANGE",
+			"fabric": "WALK_TOWARD_ADULT_RANGE"
+		},
+		{
+			"forge": "ADULT_FOLLOW_RANGE",
+			"fabric": "WALK_TOWARD_ADULT_RANGE"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_MAKING_LOVE",
+			"fabric": "BREEDING_SPEED"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_ON_LAND",
+			"fabric": "ON_LAND_SPEED"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_IDLING_IN_WATER",
+			"fabric": "IDLE_SPEED"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_CHASING_IN_WATER",
+			"fabric": "TARGET_APPROACHING_SPEED"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_FOLLOWING_ADULT_IN_WATER",
+			"fabric": "ADULT_FOLLOWING_SPEED"
+		},
+		{
+			"forge": "makeBrain(Brain<Axolotl> arg0)",
+			"fabric": "create(Brain<AxolotlEntity> brain)"
+		},
+		{
+			"forge": "makeBrain(Brain<Axolotl> arg0)",
+			"fabric": "create(Brain<AxolotlEntity> brain)"
+		},
+		{
+			"forge": "initPlayDeadActivity(Brain<Axolotl> arg0)",
+			"fabric": "addPlayDeadActivities(Brain<AxolotlEntity> brain)"
+		},
+		{
+			"forge": "initFightActivity(Brain<Axolotl> arg0)",
+			"fabric": "addFightActivities(Brain<AxolotlEntity> brain)"
+		},
+		{
+			"forge": "initCoreActivity(Brain<Axolotl> arg0)",
+			"fabric": "addCoreActivities(Brain<AxolotlEntity> brain)"
+		},
+		{
+			"forge": "initIdleActivity(Brain<Axolotl> arg0)",
+			"fabric": "addIdleActivities(Brain<AxolotlEntity> brain)"
+		},
+		{
+			"forge": "canSetWalkTargetFromLookTarget(LivingEntity arg0)",
+			"fabric": "canGoToLookTarget(LivingEntity entity)"
+		},
+		{
+			"forge": "updateActivity(Axolotl arg0)",
+			"fabric": "updateActivities(AxolotlEntity axolotl)"
+		},
+		{
+			"forge": "getSpeedModifierChasing(LivingEntity arg0)",
+			"fabric": "getTargetApproachingSpeed(LivingEntity entity)"
+		},
+		{
+			"forge": "getSpeedModifierFollowingAdult(LivingEntity arg0)",
+			"fabric": "getAdultFollowingSpeed(LivingEntity entity)"
+		},
+		{
+			"forge": "getSpeedModifier(LivingEntity arg0)",
+			"fabric": "getTemptedSpeed(LivingEntity entity)"
+		},
+		{
+			"forge": "findNearestValidAttackTarget(Axolotl arg0)",
+			"fabric": "getAttackTarget(AxolotlEntity axolotl)"
+		},
+		{
+			"forge": "getTemptations()",
+			"fabric": "getTemptItems()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.BlockModelDefinition$Deserializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.BlockModelDefinition$Deserializer",
+			"fabric": "net.minecraft.client.render.model.json.ModelVariantMap$Deserializer"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "getVariants(com.google.gson.JsonDeserializationContext arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "variantsFromJson(com.google.gson.JsonDeserializationContext context, com.google.gson.JsonObject object)"
+		},
+		{
+			"forge": "getMultiPart(com.google.gson.JsonDeserializationContext arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "multipartFromJson(com.google.gson.JsonDeserializationContext context, com.google.gson.JsonObject object)"
+		}
+	]
+}

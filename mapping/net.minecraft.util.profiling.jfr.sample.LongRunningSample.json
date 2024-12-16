@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.stats.TimedStat",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.stats.TimedStat",
+			"fabric": "net.minecraft.util.profiling.jfr.sample.LongRunningSample"
+		},
+		{
+			"forge": "duration()",
+			"fabric": "duration()"
+		},
+		{
+			"forge": "duration()",
+			"fabric": "duration()"
+		}
+	]
+}

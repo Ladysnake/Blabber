@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.blaze3d.platform.DisplayData",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.DisplayData",
+			"fabric": "net.minecraft.client.WindowSettings"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "fullscreenWidth",
+			"fabric": "fullscreenWidth"
+		},
+		{
+			"forge": "fullscreenHeight",
+			"fabric": "fullscreenHeight"
+		},
+		{
+			"forge": "isFullscreen",
+			"fabric": "fullscreen"
+		}
+	]
+}

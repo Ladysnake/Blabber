@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.core.RegistrySetBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistrySetBuilder",
+			"fabric": "net.minecraft.registry.RegistryBuilder"
+		},
+		{
+			"forge": "entries",
+			"fabric": "registries"
+		},
+		{
+			"forge": "entries",
+			"fabric": "registries"
+		},
+		{
+			"forge": "wrapContextLookup(HolderLookup$RegistryLookup<T> arg0)",
+			"fabric": "toLookup(RegistryWrapper$Impl<T> wrapper)"
+		},
+		{
+			"forge": "wrapContextLookup(HolderLookup$RegistryLookup<T> arg0)",
+			"fabric": "toLookup(RegistryWrapper$Impl<T> wrapper)"
+		},
+		{
+			"forge": "add(ResourceKey<? extends Registry<T>> arg0, com.mojang.serialization.Lifecycle arg1, RegistrySetBuilder$RegistryBootstrap<T> arg2)",
+			"fabric": "addRegistry(RegistryKey<? extends Registry<T>> registryRef, com.mojang.serialization.Lifecycle lifecycle, RegistryBuilder$BootstrapFunction<T> bootstrapFunction)"
+		},
+		{
+			"forge": "add(ResourceKey<? extends Registry<T>> arg0, RegistrySetBuilder$RegistryBootstrap<T> arg1)",
+			"fabric": "addRegistry(RegistryKey<? extends Registry<T>> registryRef, RegistryBuilder$BootstrapFunction<T> bootstrapFunction)"
+		},
+		{
+			"forge": "createState(RegistryAccess arg0)",
+			"fabric": "createBootstrappedRegistries(DynamicRegistryManager registryManager)"
+		},
+		{
+			"forge": "build(RegistryAccess arg0)",
+			"fabric": "createWrapperLookup(DynamicRegistryManager baseRegistryManager)"
+		},
+		{
+			"forge": "buildPatch(RegistryAccess arg0, HolderLookup$Provider arg1)",
+			"fabric": "createWrapperLookup(DynamicRegistryManager baseRegistryManager, RegistryWrapper$WrapperLookup wrapperLookup)"
+		}
+	]
+}

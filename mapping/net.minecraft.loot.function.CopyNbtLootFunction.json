@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.CopyNbtFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.CopyNbtFunction",
+			"fabric": "net.minecraft.loot.function.CopyNbtLootFunction"
+		},
+		{
+			"forge": "source",
+			"fabric": "source"
+		},
+		{
+			"forge": "source",
+			"fabric": "source"
+		},
+		{
+			"forge": "operations",
+			"fabric": "operations"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "compileNbtPath(String arg0)",
+			"fabric": "parseNbtPath(String nbtPath)"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "copyData(NbtProvider arg0)",
+			"fabric": "builder(LootNbtProvider source)"
+		},
+		{
+			"forge": "copyData(LootContext$EntityTarget arg0)",
+			"fabric": "builder(LootContext$EntityTarget target)"
+		}
+	]
+}

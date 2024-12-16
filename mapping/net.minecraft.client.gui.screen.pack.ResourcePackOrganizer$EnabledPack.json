@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.screens.packs.PackSelectionModel$SelectedPackEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.packs.PackSelectionModel$SelectedPackEntry",
+			"fabric": "net.minecraft.client.gui.screen.pack.ResourcePackOrganizer$EnabledPack"
+		},
+		{
+			"forge": "getSelfList()",
+			"fabric": "getCurrentList()"
+		},
+		{
+			"forge": "getSelfList()",
+			"fabric": "getCurrentList()"
+		},
+		{
+			"forge": "getOtherList()",
+			"fabric": "getOppositeList()"
+		},
+		{
+			"forge": "isSelected()",
+			"fabric": "isEnabled()"
+		},
+		{
+			"forge": "select()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "unselect()",
+			"fabric": "disable()"
+		}
+	]
+}

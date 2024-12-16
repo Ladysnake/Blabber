@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.server.network.ServerStatusPacketListenerImpl",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.ServerStatusPacketListenerImpl",
+			"fabric": "net.minecraft.server.network.ServerQueryNetworkHandler"
+		},
+		{
+			"forge": "DISCONNECT_REASON",
+			"fabric": "REQUEST_HANDLED"
+		},
+		{
+			"forge": "DISCONNECT_REASON",
+			"fabric": "REQUEST_HANDLED"
+		},
+		{
+			"forge": "status",
+			"fabric": "metadata"
+		},
+		{
+			"forge": "connection",
+			"fabric": "connection"
+		},
+		{
+			"forge": "hasRequestedStatus",
+			"fabric": "responseSent"
+		},
+		{
+			"forge": "onDisconnect(Component arg0)",
+			"fabric": "onDisconnected(Text arg0)"
+		},
+		{
+			"forge": "onDisconnect(Component arg0)",
+			"fabric": "onDisconnected(Text arg0)"
+		},
+		{
+			"forge": "isAcceptingMessages()",
+			"fabric": "isConnectionOpen()"
+		},
+		{
+			"forge": "handleStatusRequest(ServerboundStatusRequestPacket arg0)",
+			"fabric": "onRequest(QueryRequestC2SPacket arg0)"
+		},
+		{
+			"forge": "handlePingRequest(ServerboundPingRequestPacket arg0)",
+			"fabric": "onPing(QueryPingC2SPacket arg0)"
+		}
+	]
+}

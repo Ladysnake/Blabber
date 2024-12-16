@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.entries.TagEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.entries.TagEntry",
+			"fabric": "net.minecraft.loot.entry.TagEntry"
+		},
+		{
+			"forge": "tag",
+			"fabric": "name"
+		},
+		{
+			"forge": "tag",
+			"fabric": "name"
+		},
+		{
+			"forge": "expand",
+			"fabric": "expand"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "createItemStack(Consumer<ItemStack> arg0, LootContext arg1)",
+			"fabric": "generateLoot(Consumer<ItemStack> arg0, LootContext arg1)"
+		},
+		{
+			"forge": "expandTag(LootContext arg0, Consumer<LootPoolEntry> arg1)",
+			"fabric": "grow(LootContext context, Consumer<LootChoice> lootChoiceExpander)"
+		},
+		{
+			"forge": "expand(LootContext arg0, Consumer<LootPoolEntry> arg1)",
+			"fabric": "expand(LootContext arg0, Consumer<LootChoice> arg1)"
+		},
+		{
+			"forge": "tagContents(TagKey<Item> arg0)",
+			"fabric": "builder(TagKey<Item> name)"
+		},
+		{
+			"forge": "expandTag(TagKey<Item> arg0)",
+			"fabric": "expandBuilder(TagKey<Item> name)"
+		}
+	]
+}

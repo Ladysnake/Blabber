@@ -1,0 +1,17 @@
+{
+	"title": "com.mojang.blaze3d.vertex.VertexFormatElement$Usage$ClearState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.VertexFormatElement$Usage$ClearState",
+			"fabric": "net.minecraft.client.render.VertexFormatElement$Type$ClearTask"
+		},
+		{
+			"forge": "clearBufferState(int arg0, int arg1)",
+			"fabric": "clearBufferState(int uvIndex, int elementIndex)"
+		},
+		{
+			"forge": "clearBufferState(int arg0, int arg1)",
+			"fabric": "clearBufferState(int uvIndex, int elementIndex)"
+		}
+	]
+}

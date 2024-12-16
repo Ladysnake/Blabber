@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.Attackable",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Attackable",
+			"fabric": "net.minecraft.entity.Attackable"
+		},
+		{
+			"forge": "getLastAttacker()",
+			"fabric": "getLastAttacker()"
+		},
+		{
+			"forge": "getLastAttacker()",
+			"fabric": "getLastAttacker()"
+		}
+	]
+}

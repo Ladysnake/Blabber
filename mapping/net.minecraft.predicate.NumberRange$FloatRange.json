@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.advancements.critereon.MinMaxBounds$Doubles",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.MinMaxBounds$Doubles",
+			"fabric": "net.minecraft.predicate.NumberRange$FloatRange"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "ANY"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "ANY"
+		},
+		{
+			"forge": "minSq",
+			"fabric": "squaredMin"
+		},
+		{
+			"forge": "maxSq",
+			"fabric": "squaredMax"
+		},
+		{
+			"forge": "create(com.mojang.brigadier.StringReader arg0, Double arg1, Double arg2)",
+			"fabric": "create(com.mojang.brigadier.StringReader reader, Double min, Double max)"
+		},
+		{
+			"forge": "create(com.mojang.brigadier.StringReader arg0, Double arg1, Double arg2)",
+			"fabric": "create(com.mojang.brigadier.StringReader reader, Double min, Double max)"
+		},
+		{
+			"forge": "squareOpt(Double arg0)",
+			"fabric": "square(Double value)"
+		},
+		{
+			"forge": "exactly(double arg0)",
+			"fabric": "exactly(double value)"
+		},
+		{
+			"forge": "between(double arg0, double arg1)",
+			"fabric": "between(double min, double max)"
+		},
+		{
+			"forge": "atLeast(double arg0)",
+			"fabric": "atLeast(double value)"
+		},
+		{
+			"forge": "atMost(double arg0)",
+			"fabric": "atMost(double value)"
+		},
+		{
+			"forge": "matches(double arg0)",
+			"fabric": "test(double value)"
+		},
+		{
+			"forge": "matchesSqr(double arg0)",
+			"fabric": "testSqrt(double value)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonElement arg0)",
+			"fabric": "fromJson(com.google.gson.JsonElement element)"
+		},
+		{
+			"forge": "fromReader(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "fromReader(com.mojang.brigadier.StringReader arg0, Function<Double, Double> arg1)",
+			"fabric": "parse(com.mojang.brigadier.StringReader reader, Function<Double, Double> mapper)"
+		}
+	]
+}

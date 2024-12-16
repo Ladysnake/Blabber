@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.network.chat.FormattedText$ContentConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.FormattedText$ContentConsumer",
+			"fabric": "net.minecraft.text.StringVisitable$Visitor"
+		},
+		{
+			"forge": "accept(String arg0)",
+			"fabric": "accept(String asString)"
+		},
+		{
+			"forge": "accept(String arg0)",
+			"fabric": "accept(String asString)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen$RuleList$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen$RuleList$1",
+			"fabric": "net.minecraft.client.gui.screen.world.EditGameRulesScreen$RuleListWidget$1"
+		},
+		{
+			"forge": "visitBoolean(GameRules$Key<GameRules$BooleanValue> arg0, GameRules$Type<GameRules$BooleanValue> arg1)",
+			"fabric": "visitBoolean(GameRules$Key<GameRules$BooleanRule> arg0, GameRules$Type<GameRules$BooleanRule> arg1)"
+		},
+		{
+			"forge": "visitBoolean(GameRules$Key<GameRules$BooleanValue> arg0, GameRules$Type<GameRules$BooleanValue> arg1)",
+			"fabric": "visitBoolean(GameRules$Key<GameRules$BooleanRule> arg0, GameRules$Type<GameRules$BooleanRule> arg1)"
+		},
+		{
+			"forge": "visitInteger(GameRules$Key<GameRules$IntegerValue> arg0, GameRules$Type<GameRules$IntegerValue> arg1)",
+			"fabric": "visitInt(GameRules$Key<GameRules$IntRule> arg0, GameRules$Type<GameRules$IntRule> arg1)"
+		},
+		{
+			"forge": "addEntry(GameRules$Key<T> arg0, EditGameRulesScreen$EntryFactory<T> arg1)",
+			"fabric": "createRuleWidget(GameRules$Key<T> key, EditGameRulesScreen$RuleWidgetFactory<T> widgetFactory)"
+		}
+	]
+}

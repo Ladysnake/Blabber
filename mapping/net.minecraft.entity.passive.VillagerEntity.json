@@ -1,0 +1,453 @@
+{
+	"title": "net.minecraft.world.entity.npc.Villager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.Villager",
+			"fabric": "net.minecraft.entity.passive.VillagerEntity"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DATA_VILLAGER_DATA",
+			"fabric": "VILLAGER_DATA"
+		},
+		{
+			"forge": "BREEDING_FOOD_THRESHOLD",
+			"fabric": "field_30602"
+		},
+		{
+			"forge": "FOOD_POINTS",
+			"fabric": "ITEM_FOOD_VALUES"
+		},
+		{
+			"forge": "TRADES_PER_LEVEL",
+			"fabric": "field_30604"
+		},
+		{
+			"forge": "WANTED_ITEMS",
+			"fabric": "GATHERABLE_ITEMS"
+		},
+		{
+			"forge": "MAX_GOSSIP_TOPICS",
+			"fabric": "field_30605"
+		},
+		{
+			"forge": "GOSSIP_COOLDOWN",
+			"fabric": "field_30606"
+		},
+		{
+			"forge": "GOSSIP_DECAY_INTERVAL",
+			"fabric": "field_30607"
+		},
+		{
+			"forge": "REPUTATION_CHANGE_PER_EVENT",
+			"fabric": "field_30608"
+		},
+		{
+			"forge": "HOW_FAR_AWAY_TO_TALK_TO_OTHER_VILLAGERS_ABOUT_GOLEMS",
+			"fabric": "field_30609"
+		},
+		{
+			"forge": "HOW_MANY_VILLAGERS_NEED_TO_AGREE_TO_SPAWN_A_GOLEM",
+			"fabric": "field_30610"
+		},
+		{
+			"forge": "TIME_SINCE_SLEEPING_FOR_GOLEM_SPAWNING",
+			"fabric": "field_30611"
+		},
+		{
+			"forge": "SPEED_MODIFIER",
+			"fabric": "field_30603"
+		},
+		{
+			"forge": "updateMerchantTimer",
+			"fabric": "levelUpTimer"
+		},
+		{
+			"forge": "increaseProfessionLevelOnUpdate",
+			"fabric": "levelingUp"
+		},
+		{
+			"forge": "lastTradedPlayer",
+			"fabric": "lastCustomer"
+		},
+		{
+			"forge": "chasing",
+			"fabric": "field_30612"
+		},
+		{
+			"forge": "foodLevel",
+			"fabric": "foodLevel"
+		},
+		{
+			"forge": "gossips",
+			"fabric": "gossip"
+		},
+		{
+			"forge": "lastGossipTime",
+			"fabric": "gossipStartTime"
+		},
+		{
+			"forge": "lastGossipDecayTime",
+			"fabric": "lastGossipDecayTime"
+		},
+		{
+			"forge": "villagerXp",
+			"fabric": "experience"
+		},
+		{
+			"forge": "lastRestockGameTime",
+			"fabric": "lastRestockTime"
+		},
+		{
+			"forge": "numberOfRestocksToday",
+			"fabric": "restocksToday"
+		},
+		{
+			"forge": "lastRestockCheckDayTime",
+			"fabric": "lastRestockCheckTime"
+		},
+		{
+			"forge": "assignProfessionWhenSpawned",
+			"fabric": "natural"
+		},
+		{
+			"forge": "MEMORY_TYPES",
+			"fabric": "MEMORY_MODULES"
+		},
+		{
+			"forge": "SENSOR_TYPES",
+			"fabric": "SENSORS"
+		},
+		{
+			"forge": "POI_MEMORIES",
+			"fabric": "POINTS_OF_INTEREST"
+		},
+		{
+			"forge": "getBrain()",
+			"fabric": "getBrain()"
+		},
+		{
+			"forge": "getBrain()",
+			"fabric": "getBrain()"
+		},
+		{
+			"forge": "brainProvider()",
+			"fabric": "createBrainProfile()"
+		},
+		{
+			"forge": "makeBrain(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "deserializeBrain(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "refreshBrain(ServerLevel arg0)",
+			"fabric": "reinitializeBrain(ServerWorld world)"
+		},
+		{
+			"forge": "registerBrainGoals(Brain<Villager> arg0)",
+			"fabric": "initBrain(Brain<VillagerEntity> brain)"
+		},
+		{
+			"forge": "ageBoundaryReached()",
+			"fabric": "onGrowUp()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createVillagerAttributes()"
+		},
+		{
+			"forge": "assignProfessionWhenSpawned()",
+			"fabric": "isNatural()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "setUnhappy()",
+			"fabric": "sayNo()"
+		},
+		{
+			"forge": "startTrading(Player arg0)",
+			"fabric": "beginTradeWith(PlayerEntity customer)"
+		},
+		{
+			"forge": "setTradingPlayer(Player arg0)",
+			"fabric": "setCustomer(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stopTrading()",
+			"fabric": "resetCustomer()"
+		},
+		{
+			"forge": "resetSpecialPrices()",
+			"fabric": "clearSpecialPrices()"
+		},
+		{
+			"forge": "canRestock()",
+			"fabric": "canRefreshTrades()"
+		},
+		{
+			"forge": "isClientSide()",
+			"fabric": "isClient()"
+		},
+		{
+			"forge": "restock()",
+			"fabric": "restock()"
+		},
+		{
+			"forge": "resendOffersToTradingPlayer()",
+			"fabric": "sendOffersToCustomer()"
+		},
+		{
+			"forge": "needsToRestock()",
+			"fabric": "needsRestock()"
+		},
+		{
+			"forge": "allowedToRestock()",
+			"fabric": "canRestock()"
+		},
+		{
+			"forge": "shouldRestock()",
+			"fabric": "shouldRestock()"
+		},
+		{
+			"forge": "catchUpDemand()",
+			"fabric": "restockAndUpdateDemandBonus()"
+		},
+		{
+			"forge": "updateDemand()",
+			"fabric": "updateDemandBonus()"
+		},
+		{
+			"forge": "updateSpecialPrices(Player arg0)",
+			"fabric": "prepareOffersFor(PlayerEntity player)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "removeWhenFarAway(double arg0)",
+			"fabric": "canImmediatelyDespawn(double arg0)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "playWorkSound()",
+			"fabric": "playWorkSound()"
+		},
+		{
+			"forge": "setVillagerData(VillagerData arg0)",
+			"fabric": "setVillagerData(VillagerData arg0)"
+		},
+		{
+			"forge": "getVillagerData()",
+			"fabric": "getVillagerData()"
+		},
+		{
+			"forge": "rewardTradeXp(MerchantOffer arg0)",
+			"fabric": "afterUsing(TradeOffer arg0)"
+		},
+		{
+			"forge": "setChasing(boolean arg0)",
+			"fabric": "method_35201(boolean arg0)"
+		},
+		{
+			"forge": "isChasing()",
+			"fabric": "method_35200()"
+		},
+		{
+			"forge": "setLastHurtByMob(LivingEntity arg0)",
+			"fabric": "setAttacker(LivingEntity arg0)"
+		},
+		{
+			"forge": "die(DamageSource arg0)",
+			"fabric": "onDeath(DamageSource arg0)"
+		},
+		{
+			"forge": "releaseAllPois()",
+			"fabric": "releaseAllTickets()"
+		},
+		{
+			"forge": "tellWitnessesThatIWasMurdered(Entity arg0)",
+			"fabric": "notifyDeath(Entity killer)"
+		},
+		{
+			"forge": "releasePoi(MemoryModuleType<GlobalPos> arg0)",
+			"fabric": "releaseTicketFor(MemoryModuleType<GlobalPos> pos)"
+		},
+		{
+			"forge": "canBreed()",
+			"fabric": "isReadyToBreed()"
+		},
+		{
+			"forge": "hungry()",
+			"fabric": "lacksFood()"
+		},
+		{
+			"forge": "eatUntilFull()",
+			"fabric": "consumeAvailableFood()"
+		},
+		{
+			"forge": "getPlayerReputation(Player arg0)",
+			"fabric": "getReputation(PlayerEntity player)"
+		},
+		{
+			"forge": "digestFood(int arg0)",
+			"fabric": "depleteFood(int amount)"
+		},
+		{
+			"forge": "eatAndDigestFood()",
+			"fabric": "eatForBreeding()"
+		},
+		{
+			"forge": "setOffers(MerchantOffers arg0)",
+			"fabric": "setOffers(TradeOfferList offers)"
+		},
+		{
+			"forge": "shouldIncreaseLevel()",
+			"fabric": "canLevelUp()"
+		},
+		{
+			"forge": "increaseMerchantCareer()",
+			"fabric": "levelUp()"
+		},
+		{
+			"forge": "getTypeName()",
+			"fabric": "getDefaultName()"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "thunderHit(ServerLevel arg0, LightningBolt arg1)",
+			"fabric": "onStruckByLightning(ServerWorld arg0, LightningEntity arg1)"
+		},
+		{
+			"forge": "pickUpItem(ItemEntity arg0)",
+			"fabric": "loot(ItemEntity arg0)"
+		},
+		{
+			"forge": "wantsToPickUp(ItemStack arg0)",
+			"fabric": "canGather(ItemStack arg0)"
+		},
+		{
+			"forge": "hasExcessFood()",
+			"fabric": "wantsToStartBreeding()"
+		},
+		{
+			"forge": "wantsMoreFood()",
+			"fabric": "canBreed()"
+		},
+		{
+			"forge": "countFoodPointsInInventory()",
+			"fabric": "getAvailableFood()"
+		},
+		{
+			"forge": "hasFarmSeeds()",
+			"fabric": "hasSeedToPlant()"
+		},
+		{
+			"forge": "updateTrades()",
+			"fabric": "fillRecipes()"
+		},
+		{
+			"forge": "gossip(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "talkWithVillager(ServerWorld world, VillagerEntity villager, long time)"
+		},
+		{
+			"forge": "maybeDecayGossip()",
+			"fabric": "decayGossip()"
+		},
+		{
+			"forge": "spawnGolemIfNeeded(ServerLevel arg0, long arg1, int arg2)",
+			"fabric": "summonGolem(ServerWorld world, long time, int requiredCount)"
+		},
+		{
+			"forge": "wantsToSpawnGolem(long arg0)",
+			"fabric": "canSummonGolem(long time)"
+		},
+		{
+			"forge": "onReputationEventFrom(ReputationEventType arg0, Entity arg1)",
+			"fabric": "onInteractionWith(EntityInteraction arg0, Entity arg1)"
+		},
+		{
+			"forge": "getVillagerXp()",
+			"fabric": "getExperience()"
+		},
+		{
+			"forge": "setVillagerXp(int arg0)",
+			"fabric": "setExperience(int experience)"
+		},
+		{
+			"forge": "resetNumberOfRestocks()",
+			"fabric": "clearDailyRestockCount()"
+		},
+		{
+			"forge": "getGossips()",
+			"fabric": "getGossip()"
+		},
+		{
+			"forge": "setGossips(Tag arg0)",
+			"fabric": "readGossipDataNbt(NbtElement nbt)"
+		},
+		{
+			"forge": "sendDebugPackets()",
+			"fabric": "sendAiDebugData()"
+		},
+		{
+			"forge": "startSleeping(BlockPos arg0)",
+			"fabric": "sleep(BlockPos arg0)"
+		},
+		{
+			"forge": "stopSleeping()",
+			"fabric": "wakeUp()"
+		},
+		{
+			"forge": "golemSpawnConditionsMet(long arg0)",
+			"fabric": "hasRecentlySlept(long worldTime)"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider",
+			"fabric": "net.minecraft.loot.provider.nbt.ContextLootNbtProvider"
+		},
+		{
+			"forge": "BLOCK_ENTITY_ID",
+			"fabric": "BLOCK_ENTITY_TARGET_NAME"
+		},
+		{
+			"forge": "BLOCK_ENTITY_ID",
+			"fabric": "BLOCK_ENTITY_TARGET_NAME"
+		},
+		{
+			"forge": "BLOCK_ENTITY_PROVIDER",
+			"fabric": "BLOCK_ENTITY_TARGET"
+		},
+		{
+			"forge": "BLOCK_ENTITY",
+			"fabric": "BLOCK_ENTITY"
+		},
+		{
+			"forge": "getter",
+			"fabric": "target"
+		},
+		{
+			"forge": "forEntity(LootContext$EntityTarget arg0)",
+			"fabric": "getTarget(LootContext$EntityTarget entityTarget)"
+		},
+		{
+			"forge": "forEntity(LootContext$EntityTarget arg0)",
+			"fabric": "getTarget(LootContext$EntityTarget entityTarget)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "get(LootContext arg0)",
+			"fabric": "getNbt(LootContext arg0)"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "forContextEntity(LootContext$EntityTarget arg0)",
+			"fabric": "fromTarget(LootContext$EntityTarget target)"
+		},
+		{
+			"forge": "createFromContext(String arg0)",
+			"fabric": "fromTarget(String target)"
+		}
+	]
+}

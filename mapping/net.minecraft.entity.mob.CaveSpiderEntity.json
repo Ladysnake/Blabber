@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.monster.CaveSpider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.CaveSpider",
+			"fabric": "net.minecraft.entity.mob.CaveSpiderEntity"
+		},
+		{
+			"forge": "createCaveSpider()",
+			"fabric": "createCaveSpiderAttributes()"
+		},
+		{
+			"forge": "createCaveSpider()",
+			"fabric": "createCaveSpiderAttributes()"
+		},
+		{
+			"forge": "doHurtTarget(Entity arg0)",
+			"fabric": "tryAttack(Entity arg0)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		}
+	]
+}

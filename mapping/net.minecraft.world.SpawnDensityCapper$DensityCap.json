@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.LocalMobCapCalculator$MobCounts",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.LocalMobCapCalculator$MobCounts",
+			"fabric": "net.minecraft.world.SpawnDensityCapper$DensityCap"
+		},
+		{
+			"forge": "counts",
+			"fabric": "spawnGroupsToDensity"
+		},
+		{
+			"forge": "counts",
+			"fabric": "spawnGroupsToDensity"
+		},
+		{
+			"forge": "add(MobCategory arg0)",
+			"fabric": "increaseDensity(SpawnGroup spawnGroup)"
+		},
+		{
+			"forge": "add(MobCategory arg0)",
+			"fabric": "increaseDensity(SpawnGroup spawnGroup)"
+		},
+		{
+			"forge": "canSpawn(MobCategory arg0)",
+			"fabric": "canSpawn(SpawnGroup spawnGroup)"
+		}
+	]
+}

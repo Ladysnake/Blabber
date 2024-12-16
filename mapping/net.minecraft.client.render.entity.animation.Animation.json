@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.animation.AnimationDefinition",
+	"items": [
+		{
+			"forge": "net.minecraft.client.animation.AnimationDefinition",
+			"fabric": "net.minecraft.client.render.entity.animation.Animation"
+		},
+		{
+			"forge": "lengthInSeconds",
+			"fabric": "lengthInSeconds"
+		},
+		{
+			"forge": "lengthInSeconds",
+			"fabric": "lengthInSeconds"
+		},
+		{
+			"forge": "looping",
+			"fabric": "looping"
+		},
+		{
+			"forge": "boneAnimations",
+			"fabric": "boneAnimations"
+		},
+		{
+			"forge": "lengthInSeconds()",
+			"fabric": "lengthInSeconds()"
+		},
+		{
+			"forge": "lengthInSeconds()",
+			"fabric": "lengthInSeconds()"
+		},
+		{
+			"forge": "looping()",
+			"fabric": "looping()"
+		},
+		{
+			"forge": "boneAnimations()",
+			"fabric": "boneAnimations()"
+		}
+	]
+}

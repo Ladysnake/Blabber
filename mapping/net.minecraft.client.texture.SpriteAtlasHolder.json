@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.resources.TextureAtlasHolder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.TextureAtlasHolder",
+			"fabric": "net.minecraft.client.texture.SpriteAtlasHolder"
+		},
+		{
+			"forge": "textureAtlas",
+			"fabric": "atlas"
+		},
+		{
+			"forge": "textureAtlas",
+			"fabric": "atlas"
+		},
+		{
+			"forge": "atlasInfoLocation",
+			"fabric": "sourcePath"
+		},
+		{
+			"forge": "getSprite(ResourceLocation arg0)",
+			"fabric": "getSprite(Identifier objectId)"
+		},
+		{
+			"forge": "getSprite(ResourceLocation arg0)",
+			"fabric": "getSprite(Identifier objectId)"
+		},
+		{
+			"forge": "reload(PreparableReloadListener$PreparationBarrier arg0, ResourceManager arg1, ProfilerFiller arg2, ProfilerFiller arg3, Executor arg4, Executor arg5)",
+			"fabric": "reload(ResourceReloader$Synchronizer arg0, ResourceManager arg1, Profiler arg2, Profiler arg3, Executor arg4, Executor arg5)"
+		},
+		{
+			"forge": "apply(SpriteLoader$Preparations arg0, ProfilerFiller arg1)",
+			"fabric": "afterReload(SpriteLoader$StitchResult stitchResult, Profiler profiler)"
+		}
+	]
+}

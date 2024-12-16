@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.color.item.ItemColors",
+	"items": [
+		{
+			"forge": "net.minecraft.client.color.item.ItemColors",
+			"fabric": "net.minecraft.client.color.item.ItemColors"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "NO_COLOR"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "NO_COLOR"
+		},
+		{
+			"forge": "itemColors",
+			"fabric": "providers"
+		},
+		{
+			"forge": "createDefault(BlockColors arg0)",
+			"fabric": "create(BlockColors blockColors)"
+		},
+		{
+			"forge": "createDefault(BlockColors arg0)",
+			"fabric": "create(BlockColors blockColors)"
+		},
+		{
+			"forge": "getColor(ItemStack arg0, int arg1)",
+			"fabric": "getColor(ItemStack item, int tintIndex)"
+		},
+		{
+			"forge": "register(ItemColor arg0, ItemLike... arg1)",
+			"fabric": "register(ItemColorProvider provider, ItemConvertible... items)"
+		}
+	]
+}

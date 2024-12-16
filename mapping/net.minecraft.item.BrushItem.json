@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.item.BrushItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.BrushItem",
+			"fabric": "net.minecraft.item.BrushItem"
+		},
+		{
+			"forge": "ANIMATION_DURATION",
+			"fabric": "field_43390"
+		},
+		{
+			"forge": "ANIMATION_DURATION",
+			"fabric": "field_43390"
+		},
+		{
+			"forge": "USE_DURATION",
+			"fabric": "MAX_BRUSH_TIME"
+		},
+		{
+			"forge": "MAX_BRUSH_DISTANCE",
+			"fabric": "MAX_BRUSH_DISTANCE"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "getUseAnimation(ItemStack arg0)",
+			"fabric": "getUseAction(ItemStack arg0)"
+		},
+		{
+			"forge": "getUseDuration(ItemStack arg0)",
+			"fabric": "getMaxUseTime(ItemStack arg0)"
+		},
+		{
+			"forge": "onUseTick(Level arg0, LivingEntity arg1, ItemStack arg2, int arg3)",
+			"fabric": "usageTick(World arg0, LivingEntity arg1, ItemStack arg2, int arg3)"
+		},
+		{
+			"forge": "calculateHitResult(LivingEntity arg0)",
+			"fabric": "getHitResult(LivingEntity user)"
+		},
+		{
+			"forge": "spawnDustParticles(Level arg0, BlockHitResult arg1, BlockState arg2, Vec3 arg3, HumanoidArm arg4)",
+			"fabric": "addDustParticles(World world, BlockHitResult hitResult, BlockState state, Vec3d userRotation, Arm arm)"
+		}
+	]
+}

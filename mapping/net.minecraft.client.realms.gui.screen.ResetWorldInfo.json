@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.util.WorldGenerationInfo",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.WorldGenerationInfo",
+			"fabric": "net.minecraft.client.realms.gui.screen.ResetWorldInfo"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "levelType",
+			"fabric": "levelType"
+		},
+		{
+			"forge": "generateStructures",
+			"fabric": "generateStructures"
+		},
+		{
+			"forge": "getSeed()",
+			"fabric": "getSeed()"
+		},
+		{
+			"forge": "getSeed()",
+			"fabric": "getSeed()"
+		},
+		{
+			"forge": "getLevelType()",
+			"fabric": "getLevelType()"
+		},
+		{
+			"forge": "shouldGenerateStructures()",
+			"fabric": "shouldGenerateStructures()"
+		}
+	]
+}

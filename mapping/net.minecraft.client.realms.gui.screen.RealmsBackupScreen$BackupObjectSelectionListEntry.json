@@ -1,0 +1,73 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsBackupScreen$Entry",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsBackupScreen$Entry",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsBackupScreen$BackupObjectSelectionListEntry"
+		},
+		{
+			"forge": "Y_PADDING",
+			"fabric": "field_44525"
+		},
+		{
+			"forge": "Y_PADDING",
+			"fabric": "field_44525"
+		},
+		{
+			"forge": "X_PADDING",
+			"fabric": "field_44526"
+		},
+		{
+			"forge": "backup",
+			"fabric": "mBackup"
+		},
+		{
+			"forge": "children",
+			"fabric": "buttons"
+		},
+		{
+			"forge": "restoreButton",
+			"fabric": "restoreButton"
+		},
+		{
+			"forge": "changesButton",
+			"fabric": "infoButton"
+		},
+		{
+			"forge": "populateChangeList(Backup arg0)",
+			"fabric": "updateChangeList(Backup backup)"
+		},
+		{
+			"forge": "populateChangeList(Backup arg0)",
+			"fabric": "updateChangeList(Backup backup)"
+		},
+		{
+			"forge": "addToChangeList(String arg0)",
+			"fabric": "addChange(String metadataKey)"
+		},
+		{
+			"forge": "addChangesButton()",
+			"fabric": "addInfoButton()"
+		},
+		{
+			"forge": "addRestoreButton()",
+			"fabric": "addRestoreButton()"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "getMediumDatePresentation(Date arg0)",
+			"fabric": "getMediumDatePresentation(Date lastModifiedDate)"
+		},
+		{
+			"forge": "getNarration()",
+			"fabric": "getNarration()"
+		}
+	]
+}

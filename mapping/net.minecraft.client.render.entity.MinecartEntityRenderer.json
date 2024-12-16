@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.entity.MinecartRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.MinecartRenderer",
+			"fabric": "net.minecraft.client.render.entity.MinecartEntityRenderer"
+		},
+		{
+			"forge": "MINECART_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "MINECART_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "model",
+			"fabric": "model"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "blockRenderManager"
+		},
+		{
+			"forge": "render(T arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(T arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "render(T arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(T arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "getTextureLocation(T arg0)",
+			"fabric": "getTexture(T arg0)"
+		},
+		{
+			"forge": "renderMinecartContents(T arg0, float arg1, BlockState arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "renderBlock(T entity, float delta, BlockState state, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light)"
+		}
+	]
+}

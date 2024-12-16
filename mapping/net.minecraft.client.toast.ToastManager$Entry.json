@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.gui.components.toasts.ToastComponent$ToastInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.toasts.ToastComponent$ToastInstance",
+			"fabric": "net.minecraft.client.toast.ToastManager$Entry"
+		},
+		{
+			"forge": "ANIMATION_TIME",
+			"fabric": "DISAPPEAR_TIME"
+		},
+		{
+			"forge": "ANIMATION_TIME",
+			"fabric": "DISAPPEAR_TIME"
+		},
+		{
+			"forge": "toast",
+			"fabric": "instance"
+		},
+		{
+			"forge": "index",
+			"fabric": "topIndex"
+		},
+		{
+			"forge": "slotCount",
+			"fabric": "requiredSpaceCount"
+		},
+		{
+			"forge": "animationTime",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "visibleTime",
+			"fabric": "showTime"
+		},
+		{
+			"forge": "visibility",
+			"fabric": "visibility"
+		},
+		{
+			"forge": "getToast()",
+			"fabric": "getInstance()"
+		},
+		{
+			"forge": "getToast()",
+			"fabric": "getInstance()"
+		},
+		{
+			"forge": "getVisibility(long arg0)",
+			"fabric": "getDisappearProgress(long time)"
+		},
+		{
+			"forge": "render(int arg0, GuiGraphics arg1)",
+			"fabric": "draw(int x, DrawContext context)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.block.StandingSignBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.StandingSignBlock",
+			"fabric": "net.minecraft.block.SignBlock"
+		},
+		{
+			"forge": "ROTATION",
+			"fabric": "ROTATION"
+		},
+		{
+			"forge": "ROTATION",
+			"fabric": "ROTATION"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getYRotationDegrees(BlockState arg0)",
+			"fabric": "getRotationDegrees(BlockState arg0)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

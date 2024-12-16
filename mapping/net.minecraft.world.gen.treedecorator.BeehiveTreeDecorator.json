@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
+			"fabric": "net.minecraft.world.gen.treedecorator.BeehiveTreeDecorator"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "WORLDGEN_FACING",
+			"fabric": "BEE_NEST_FACE"
+		},
+		{
+			"forge": "SPAWN_DIRECTIONS",
+			"fabric": "GENERATE_DIRECTIONS"
+		},
+		{
+			"forge": "probability",
+			"fabric": "probability"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "place(TreeDecorator$Context arg0)",
+			"fabric": "generate(TreeDecorator$Generator arg0)"
+		}
+	]
+}

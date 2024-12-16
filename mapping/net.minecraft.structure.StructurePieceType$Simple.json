@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType$ContextlessType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType$ContextlessType",
+			"fabric": "net.minecraft.structure.StructurePieceType$Simple"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "load(NbtCompound nbt)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "load(NbtCompound nbt)"
+		},
+		{
+			"forge": "load(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "load(StructureContext arg0, NbtCompound arg1)"
+		}
+	]
+}

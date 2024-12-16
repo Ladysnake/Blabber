@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.resources.metadata.animation.AnimationFrame",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.metadata.animation.AnimationFrame",
+			"fabric": "net.minecraft.client.resource.metadata.AnimationFrameResourceMetadata"
+		},
+		{
+			"forge": "UNKNOWN_FRAME_TIME",
+			"fabric": "UNDEFINED_TIME"
+		},
+		{
+			"forge": "UNKNOWN_FRAME_TIME",
+			"fabric": "UNDEFINED_TIME"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "time",
+			"fabric": "time"
+		},
+		{
+			"forge": "getTime(int arg0)",
+			"fabric": "getTime(int defaultTime)"
+		},
+		{
+			"forge": "getTime(int arg0)",
+			"fabric": "getTime(int defaultTime)"
+		},
+		{
+			"forge": "getIndex()",
+			"fabric": "getIndex()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.SkeletonRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.SkeletonRenderer",
+			"fabric": "net.minecraft.client.render.entity.SkeletonEntityRenderer"
+		},
+		{
+			"forge": "SKELETON_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SKELETON_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(AbstractSkeleton arg0)",
+			"fabric": "getTexture(AbstractSkeletonEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(AbstractSkeleton arg0)",
+			"fabric": "getTexture(AbstractSkeletonEntity arg0)"
+		},
+		{
+			"forge": "isShaking(AbstractSkeleton arg0)",
+			"fabric": "isShaking(AbstractSkeletonEntity arg0)"
+		}
+	]
+}

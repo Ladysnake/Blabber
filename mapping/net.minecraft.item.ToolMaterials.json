@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.item.Tiers",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.Tiers",
+			"fabric": "net.minecraft.item.ToolMaterials"
+		},
+		{
+			"forge": "WOOD",
+			"fabric": "WOOD"
+		},
+		{
+			"forge": "WOOD",
+			"fabric": "WOOD"
+		},
+		{
+			"forge": "STONE",
+			"fabric": "STONE"
+		},
+		{
+			"forge": "IRON",
+			"fabric": "IRON"
+		},
+		{
+			"forge": "DIAMOND",
+			"fabric": "DIAMOND"
+		},
+		{
+			"forge": "GOLD",
+			"fabric": "GOLD"
+		},
+		{
+			"forge": "NETHERITE",
+			"fabric": "NETHERITE"
+		},
+		{
+			"forge": "level",
+			"fabric": "miningLevel"
+		},
+		{
+			"forge": "level",
+			"fabric": "miningLevel"
+		},
+		{
+			"forge": "uses",
+			"fabric": "itemDurability"
+		},
+		{
+			"forge": "speed",
+			"fabric": "miningSpeed"
+		},
+		{
+			"forge": "damage",
+			"fabric": "attackDamage"
+		},
+		{
+			"forge": "enchantmentValue",
+			"fabric": "enchantability"
+		},
+		{
+			"forge": "repairIngredient",
+			"fabric": "repairIngredient"
+		},
+		{
+			"forge": "getUses()",
+			"fabric": "getDurability()"
+		},
+		{
+			"forge": "getUses()",
+			"fabric": "getDurability()"
+		},
+		{
+			"forge": "getSpeed()",
+			"fabric": "getMiningSpeedMultiplier()"
+		},
+		{
+			"forge": "getAttackDamageBonus()",
+			"fabric": "getAttackDamage()"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getMiningLevel()"
+		},
+		{
+			"forge": "getEnchantmentValue()",
+			"fabric": "getEnchantability()"
+		},
+		{
+			"forge": "getRepairIngredient()",
+			"fabric": "getRepairIngredient()"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.BlockElement",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.BlockElement",
+			"fabric": "net.minecraft.client.render.model.json.ModelElement"
+		},
+		{
+			"forge": "DEFAULT_RESCALE",
+			"fabric": "field_32785"
+		},
+		{
+			"forge": "DEFAULT_RESCALE",
+			"fabric": "field_32785"
+		},
+		{
+			"forge": "MIN_EXTENT",
+			"fabric": "field_32786"
+		},
+		{
+			"forge": "MAX_EXTENT",
+			"fabric": "field_32787"
+		},
+		{
+			"forge": "from",
+			"fabric": "from"
+		},
+		{
+			"forge": "to",
+			"fabric": "to"
+		},
+		{
+			"forge": "faces",
+			"fabric": "faces"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "shade",
+			"fabric": "shade"
+		},
+		{
+			"forge": "fillUvs()",
+			"fabric": "initTextures()"
+		},
+		{
+			"forge": "fillUvs()",
+			"fabric": "initTextures()"
+		},
+		{
+			"forge": "uvsByFace(Direction arg0)",
+			"fabric": "getRotatedMatrix(Direction direction)"
+		}
+	]
+}

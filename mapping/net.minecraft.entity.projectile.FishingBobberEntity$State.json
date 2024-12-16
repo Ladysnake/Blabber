@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.projectile.FishingHook$FishHookState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.FishingHook$FishHookState",
+			"fabric": "net.minecraft.entity.projectile.FishingBobberEntity$State"
+		},
+		{
+			"forge": "FLYING",
+			"fabric": "FLYING"
+		},
+		{
+			"forge": "FLYING",
+			"fabric": "FLYING"
+		},
+		{
+			"forge": "HOOKED_IN_ENTITY",
+			"fabric": "HOOKED_IN_ENTITY"
+		},
+		{
+			"forge": "BOBBING",
+			"fabric": "BOBBING"
+		}
+	]
+}

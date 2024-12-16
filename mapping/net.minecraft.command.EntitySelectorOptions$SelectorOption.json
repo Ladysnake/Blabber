@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.arguments.selector.options.EntitySelectorOptions$Option",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.selector.options.EntitySelectorOptions$Option",
+			"fabric": "net.minecraft.command.EntitySelectorOptions$SelectorOption"
+		},
+		{
+			"forge": "modifier",
+			"fabric": "handler"
+		},
+		{
+			"forge": "modifier",
+			"fabric": "handler"
+		},
+		{
+			"forge": "canUse",
+			"fabric": "condition"
+		},
+		{
+			"forge": "description",
+			"fabric": "description"
+		},
+		{
+			"forge": "modifier()",
+			"fabric": "handler()"
+		},
+		{
+			"forge": "modifier()",
+			"fabric": "handler()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "condition()"
+		},
+		{
+			"forge": "description()",
+			"fabric": "description()"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket$Action",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket$Action",
+			"fabric": "net.minecraft.network.packet.s2c.play.PlayerListS2CPacket$Action"
+		},
+		{
+			"forge": "ADD_PLAYER",
+			"fabric": "ADD_PLAYER"
+		},
+		{
+			"forge": "ADD_PLAYER",
+			"fabric": "ADD_PLAYER"
+		},
+		{
+			"forge": "INITIALIZE_CHAT",
+			"fabric": "INITIALIZE_CHAT"
+		},
+		{
+			"forge": "UPDATE_GAME_MODE",
+			"fabric": "UPDATE_GAME_MODE"
+		},
+		{
+			"forge": "UPDATE_LISTED",
+			"fabric": "UPDATE_LISTED"
+		},
+		{
+			"forge": "UPDATE_LATENCY",
+			"fabric": "UPDATE_LATENCY"
+		},
+		{
+			"forge": "UPDATE_DISPLAY_NAME",
+			"fabric": "UPDATE_DISPLAY_NAME"
+		},
+		{
+			"forge": "reader",
+			"fabric": "reader"
+		},
+		{
+			"forge": "reader",
+			"fabric": "reader"
+		},
+		{
+			"forge": "writer",
+			"fabric": "writer"
+		}
+	]
+}

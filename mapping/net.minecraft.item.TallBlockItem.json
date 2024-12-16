@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.DoubleHighBlockItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.DoubleHighBlockItem",
+			"fabric": "net.minecraft.item.TallBlockItem"
+		},
+		{
+			"forge": "placeBlock(BlockPlaceContext arg0, BlockState arg1)",
+			"fabric": "place(ItemPlacementContext arg0, BlockState arg1)"
+		},
+		{
+			"forge": "placeBlock(BlockPlaceContext arg0, BlockState arg1)",
+			"fabric": "place(ItemPlacementContext arg0, BlockState arg1)"
+		}
+	]
+}

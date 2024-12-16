@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.entity.npc.ClientSideMerchant",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.ClientSideMerchant",
+			"fabric": "net.minecraft.village.SimpleMerchant"
+		},
+		{
+			"forge": "source",
+			"fabric": "player"
+		},
+		{
+			"forge": "source",
+			"fabric": "player"
+		},
+		{
+			"forge": "offers",
+			"fabric": "offers"
+		},
+		{
+			"forge": "xp",
+			"fabric": "experience"
+		},
+		{
+			"forge": "getTradingPlayer()",
+			"fabric": "getCustomer()"
+		},
+		{
+			"forge": "getTradingPlayer()",
+			"fabric": "getCustomer()"
+		},
+		{
+			"forge": "setTradingPlayer(Player arg0)",
+			"fabric": "setCustomer(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getOffers()",
+			"fabric": "getOffers()"
+		},
+		{
+			"forge": "overrideOffers(MerchantOffers arg0)",
+			"fabric": "setOffersFromServer(TradeOfferList arg0)"
+		},
+		{
+			"forge": "notifyTrade(MerchantOffer arg0)",
+			"fabric": "trade(TradeOffer arg0)"
+		},
+		{
+			"forge": "notifyTradeUpdated(ItemStack arg0)",
+			"fabric": "onSellingItem(ItemStack arg0)"
+		},
+		{
+			"forge": "isClientSide()",
+			"fabric": "isClient()"
+		},
+		{
+			"forge": "getVillagerXp()",
+			"fabric": "getExperience()"
+		},
+		{
+			"forge": "overrideXp(int arg0)",
+			"fabric": "setExperienceFromServer(int arg0)"
+		},
+		{
+			"forge": "showProgressBar()",
+			"fabric": "isLeveledMerchant()"
+		},
+		{
+			"forge": "getNotifyTradeSound()",
+			"fabric": "getYesSound()"
+		}
+	]
+}

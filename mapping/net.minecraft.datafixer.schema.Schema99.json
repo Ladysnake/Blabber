@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.util.datafix.schemas.V99",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.schemas.V99",
+			"fabric": "net.minecraft.datafixer.schema.Schema99"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ITEM_TO_BLOCKENTITY",
+			"fabric": "BLOCKS_TO_BLOCK_ENTITIES"
+		},
+		{
+			"forge": "ADD_NAMES",
+			"fabric": "field_5747"
+		},
+		{
+			"forge": "equipment(com.mojang.datafixers.schemas.Schema arg0)",
+			"fabric": "targetEquipment(com.mojang.datafixers.schemas.Schema schema)"
+		},
+		{
+			"forge": "equipment(com.mojang.datafixers.schemas.Schema arg0)",
+			"fabric": "targetEquipment(com.mojang.datafixers.schemas.Schema schema)"
+		},
+		{
+			"forge": "registerMob(com.mojang.datafixers.schemas.Schema arg0, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg1, String arg2)",
+			"fabric": "targetEquipment(com.mojang.datafixers.schemas.Schema schema, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> map, String entityId)"
+		},
+		{
+			"forge": "registerThrowableProjectile(com.mojang.datafixers.schemas.Schema arg0, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg1, String arg2)",
+			"fabric": "targetInTile(com.mojang.datafixers.schemas.Schema schema, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> map, String entityId)"
+		},
+		{
+			"forge": "registerMinecart(com.mojang.datafixers.schemas.Schema arg0, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg1, String arg2)",
+			"fabric": "targetDisplayTile(com.mojang.datafixers.schemas.Schema schema, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> map, String entityId)"
+		},
+		{
+			"forge": "registerInventory(com.mojang.datafixers.schemas.Schema arg0, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg1, String arg2)",
+			"fabric": "targetItems(com.mojang.datafixers.schemas.Schema schema, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> map, String entityId)"
+		},
+		{
+			"forge": "registerEntities(com.mojang.datafixers.schemas.Schema arg0)",
+			"fabric": "registerEntities(com.mojang.datafixers.schemas.Schema schema)"
+		},
+		{
+			"forge": "registerBlockEntities(com.mojang.datafixers.schemas.Schema arg0)",
+			"fabric": "registerBlockEntities(com.mojang.datafixers.schemas.Schema schema)"
+		},
+		{
+			"forge": "registerTypes(com.mojang.datafixers.schemas.Schema arg0, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg1, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg2)",
+			"fabric": "registerTypes(com.mojang.datafixers.schemas.Schema schema, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> entityTypes, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> blockEntityTypes)"
+		},
+		{
+			"forge": "addNames(com.mojang.serialization.Dynamic<T> arg0, Map<String, String> arg1, String arg2)",
+			"fabric": "updateBlockEntityTags(com.mojang.serialization.Dynamic<T> stack, Map<String, String> renames, String newArmorStandId)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.network.LegacyQueryHandler",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.LegacyQueryHandler",
+			"fabric": "net.minecraft.network.LegacyQueryHandler"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "FAKE_PROTOCOL_VERSION",
+			"fabric": "field_29771"
+		},
+		{
+			"forge": "serverConnectionListener",
+			"fabric": "networkIo"
+		},
+		{
+			"forge": "channelRead(io.netty.channel.ChannelHandlerContext arg0, Object arg1)",
+			"fabric": "channelRead(io.netty.channel.ChannelHandlerContext ctx, Object msg)"
+		},
+		{
+			"forge": "channelRead(io.netty.channel.ChannelHandlerContext arg0, Object arg1)",
+			"fabric": "channelRead(io.netty.channel.ChannelHandlerContext ctx, Object msg)"
+		},
+		{
+			"forge": "sendFlushAndClose(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1)",
+			"fabric": "reply(io.netty.channel.ChannelHandlerContext ctx, io.netty.buffer.ByteBuf buf)"
+		},
+		{
+			"forge": "createReply(String arg0)",
+			"fabric": "toBuffer(String s)"
+		}
+	]
+}

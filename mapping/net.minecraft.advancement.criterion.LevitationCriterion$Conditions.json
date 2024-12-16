@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.advancements.critereon.LevitationTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.LevitationTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.LevitationCriterion$Conditions"
+		},
+		{
+			"forge": "distance",
+			"fabric": "distance"
+		},
+		{
+			"forge": "distance",
+			"fabric": "distance"
+		},
+		{
+			"forge": "duration",
+			"fabric": "duration"
+		},
+		{
+			"forge": "levitated(DistancePredicate arg0)",
+			"fabric": "create(DistancePredicate distance)"
+		},
+		{
+			"forge": "levitated(DistancePredicate arg0)",
+			"fabric": "create(DistancePredicate distance)"
+		},
+		{
+			"forge": "matches(ServerPlayer arg0, Vec3 arg1, int arg2)",
+			"fabric": "matches(ServerPlayerEntity player, Vec3d startPos, int duration)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.monster.Phantom$PhantomMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Phantom$PhantomMoveControl",
+			"fabric": "net.minecraft.entity.mob.PhantomEntity$PhantomMoveControl"
+		},
+		{
+			"forge": "speed",
+			"fabric": "targetSpeed"
+		},
+		{
+			"forge": "speed",
+			"fabric": "targetSpeed"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

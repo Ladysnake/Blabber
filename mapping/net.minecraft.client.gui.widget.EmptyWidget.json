@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.gui.layouts.SpacerElement",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.layouts.SpacerElement",
+			"fabric": "net.minecraft.client.gui.widget.EmptyWidget"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "width(int arg0)",
+			"fabric": "ofWidth(int width)"
+		},
+		{
+			"forge": "width(int arg0)",
+			"fabric": "ofWidth(int width)"
+		},
+		{
+			"forge": "height(int arg0)",
+			"fabric": "ofHeight(int height)"
+		},
+		{
+			"forge": "setX(int arg0)",
+			"fabric": "setX(int arg0)"
+		},
+		{
+			"forge": "setY(int arg0)",
+			"fabric": "setY(int arg0)"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "visitWidgets(Consumer<AbstractWidget> arg0)",
+			"fabric": "forEachChild(Consumer<ClickableWidget> arg0)"
+		}
+	]
+}

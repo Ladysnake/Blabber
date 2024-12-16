@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.OptionInstance$UnitDouble$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$UnitDouble$1",
+			"fabric": "net.minecraft.client.option.SimpleOption$DoubleSliderCallbacks$1"
+		},
+		{
+			"forge": "validateValue(R arg0)",
+			"fabric": "validate(R arg0)"
+		},
+		{
+			"forge": "validateValue(R arg0)",
+			"fabric": "validate(R arg0)"
+		},
+		{
+			"forge": "toSliderValue(R arg0)",
+			"fabric": "toSliderProgress(R arg0)"
+		},
+		{
+			"forge": "fromSliderValue(double arg0)",
+			"fabric": "toValue(double arg0)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		}
+	]
+}

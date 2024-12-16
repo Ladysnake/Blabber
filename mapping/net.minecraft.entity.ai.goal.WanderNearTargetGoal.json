@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.MoveTowardsTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.MoveTowardsTargetGoal",
+			"fabric": "net.minecraft.entity.ai.goal.WanderNearTargetGoal"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "wantedX",
+			"fabric": "x"
+		},
+		{
+			"forge": "wantedY",
+			"fabric": "y"
+		},
+		{
+			"forge": "wantedZ",
+			"fabric": "z"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "within",
+			"fabric": "maxDistance"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		}
+	]
+}

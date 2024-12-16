@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$Instance",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$Instance",
+			"fabric": "net.minecraft.entity.ai.brain.task.TaskTriggerer$TaskContext"
+		},
+		{
+			"forge": "tryGet(MemoryAccessor<com.mojang.datafixers.kinds.OptionalBox$Mu, Value> arg0)",
+			"fabric": "getOptionalValue(MemoryQueryResult<com.mojang.datafixers.kinds.OptionalBox$Mu, Value> result)"
+		},
+		{
+			"forge": "tryGet(MemoryAccessor<com.mojang.datafixers.kinds.OptionalBox$Mu, Value> arg0)",
+			"fabric": "getOptionalValue(MemoryQueryResult<com.mojang.datafixers.kinds.OptionalBox$Mu, Value> result)"
+		},
+		{
+			"forge": "get(MemoryAccessor<com.mojang.datafixers.kinds.IdF$Mu, Value> arg0)",
+			"fabric": "getValue(MemoryQueryResult<com.mojang.datafixers.kinds.IdF$Mu, Value> result)"
+		},
+		{
+			"forge": "registered(MemoryModuleType<Value> arg0)",
+			"fabric": "queryMemoryOptional(MemoryModuleType<Value> type)"
+		},
+		{
+			"forge": "present(MemoryModuleType<Value> arg0)",
+			"fabric": "queryMemoryValue(MemoryModuleType<Value> type)"
+		},
+		{
+			"forge": "absent(MemoryModuleType<Value> arg0)",
+			"fabric": "queryMemoryAbsent(MemoryModuleType<Value> type)"
+		},
+		{
+			"forge": "ifTriggered(Trigger<? super E> arg0)",
+			"fabric": "trigger(TaskRunnable<? super E> runnable)"
+		},
+		{
+			"forge": "point(A arg0)",
+			"fabric": "point(A arg0)"
+		},
+		{
+			"forge": "point(Supplier<String> arg0, A arg1)",
+			"fabric": "supply(Supplier<String> nameSupplier, A value)"
+		},
+		{
+			"forge": "lift1(com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, Function<A, R>> arg0)",
+			"fabric": "lift1(com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, Function<A, R>> app)"
+		},
+		{
+			"forge": "map(Function<? super T, ? extends R> arg0, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, T> arg1)",
+			"fabric": "map(Function<? super T, ? extends R> arg0, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, T> arg1)"
+		},
+		{
+			"forge": "ap2(com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, BiFunction<A, B, R>> arg0, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, A> arg1, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, B> arg2)",
+			"fabric": "ap2(com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, BiFunction<A, B, R>> arg0, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, A> arg1, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, B> arg2)"
+		},
+		{
+			"forge": "ap3(com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, com.mojang.datafixers.util.Function3<T1, T2, T3, R>> arg0, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, T1> arg1, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, T2> arg2, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, T3> arg3)",
+			"fabric": "ap3(com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, com.mojang.datafixers.util.Function3<T1, T2, T3, R>> arg0, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, T1> arg1, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, T2> arg2, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, T3> arg3)"
+		},
+		{
+			"forge": "ap4(com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, com.mojang.datafixers.util.Function4<T1, T2, T3, T4, R>> arg0, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, T1> arg1, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, T2> arg2, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, T3> arg3, com.mojang.datafixers.kinds.App<BehaviorBuilder$Mu<E>, T4> arg4)",
+			"fabric": "ap4(com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, com.mojang.datafixers.util.Function4<T1, T2, T3, T4, R>> arg0, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, T1> arg1, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, T2> arg2, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, T3> arg3, com.mojang.datafixers.kinds.App<TaskTriggerer$K1<E>, T4> arg4)"
+		}
+	]
+}

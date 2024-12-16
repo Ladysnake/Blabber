@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.dto.ValueObject",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.ValueObject",
+			"fabric": "net.minecraft.client.realms.dto.ValueObject"
+		},
+		{
+			"forge": "getName(Field arg0)",
+			"fabric": "getName(Field f)"
+		},
+		{
+			"forge": "getName(Field arg0)",
+			"fabric": "getName(Field f)"
+		},
+		{
+			"forge": "isStatic(Field arg0)",
+			"fabric": "isStatic(Field f)"
+		}
+	]
+}

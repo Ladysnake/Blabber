@@ -1,0 +1,73 @@
+{
+	"title": "com.mojang.math.SymmetricGroup3",
+	"items": [
+		{
+			"forge": "com.mojang.math.SymmetricGroup3",
+			"fabric": "net.minecraft.util.math.AxisTransformation"
+		},
+		{
+			"forge": "P123",
+			"fabric": "P123"
+		},
+		{
+			"forge": "P123",
+			"fabric": "P123"
+		},
+		{
+			"forge": "P213",
+			"fabric": "P213"
+		},
+		{
+			"forge": "P132",
+			"fabric": "P132"
+		},
+		{
+			"forge": "P231",
+			"fabric": "P231"
+		},
+		{
+			"forge": "P312",
+			"fabric": "P312"
+		},
+		{
+			"forge": "P321",
+			"fabric": "P321"
+		},
+		{
+			"forge": "permutation",
+			"fabric": "mappings"
+		},
+		{
+			"forge": "permutation",
+			"fabric": "mappings"
+		},
+		{
+			"forge": "transformation",
+			"fabric": "matrix"
+		},
+		{
+			"forge": "ORDER",
+			"fabric": "NUM_AXES"
+		},
+		{
+			"forge": "cayleyTable",
+			"fabric": "COMBINATIONS"
+		},
+		{
+			"forge": "compose(SymmetricGroup3 arg0)",
+			"fabric": "prepend(AxisTransformation transformation)"
+		},
+		{
+			"forge": "compose(SymmetricGroup3 arg0)",
+			"fabric": "prepend(AxisTransformation transformation)"
+		},
+		{
+			"forge": "permutation(int arg0)",
+			"fabric": "map(int oldAxis)"
+		},
+		{
+			"forge": "transformation()",
+			"fabric": "getMatrix()"
+		}
+	]
+}

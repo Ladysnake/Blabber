@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.Variant$Deserializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.Variant$Deserializer",
+			"fabric": "net.minecraft.client.render.model.json.ModelVariant$Deserializer"
+		},
+		{
+			"forge": "DEFAULT_UVLOCK",
+			"fabric": "DEFAULT_UV_LOCK"
+		},
+		{
+			"forge": "DEFAULT_UVLOCK",
+			"fabric": "DEFAULT_UV_LOCK"
+		},
+		{
+			"forge": "DEFAULT_WEIGHT",
+			"fabric": "DEFAULT_WEIGHT"
+		},
+		{
+			"forge": "DEFAULT_X_ROTATION",
+			"fabric": "DEFAULT_X_ROTATION"
+		},
+		{
+			"forge": "DEFAULT_Y_ROTATION",
+			"fabric": "DEFAULT_Y_ROTATION"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "getUvLock(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeUvLock(com.google.gson.JsonObject object)"
+		},
+		{
+			"forge": "getBlockRotation(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeRotation(com.google.gson.JsonObject object)"
+		},
+		{
+			"forge": "getModel(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeModel(com.google.gson.JsonObject object)"
+		},
+		{
+			"forge": "getWeight(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeWeight(com.google.gson.JsonObject object)"
+		}
+	]
+}

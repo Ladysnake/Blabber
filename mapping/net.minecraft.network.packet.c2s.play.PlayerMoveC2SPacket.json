@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundMovePlayerPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundMovePlayerPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "yRot",
+			"fabric": "yaw"
+		},
+		{
+			"forge": "xRot",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "onGround",
+			"fabric": "onGround"
+		},
+		{
+			"forge": "hasPos",
+			"fabric": "changePosition"
+		},
+		{
+			"forge": "hasRot",
+			"fabric": "changeLook"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getX(double arg0)",
+			"fabric": "getX(double currentX)"
+		},
+		{
+			"forge": "getY(double arg0)",
+			"fabric": "getY(double currentY)"
+		},
+		{
+			"forge": "getZ(double arg0)",
+			"fabric": "getZ(double currentZ)"
+		},
+		{
+			"forge": "getYRot(float arg0)",
+			"fabric": "getYaw(float currentYaw)"
+		},
+		{
+			"forge": "getXRot(float arg0)",
+			"fabric": "getPitch(float currentPitch)"
+		},
+		{
+			"forge": "isOnGround()",
+			"fabric": "isOnGround()"
+		},
+		{
+			"forge": "hasPosition()",
+			"fabric": "changesPosition()"
+		},
+		{
+			"forge": "hasRotation()",
+			"fabric": "changesLook()"
+		}
+	]
+}

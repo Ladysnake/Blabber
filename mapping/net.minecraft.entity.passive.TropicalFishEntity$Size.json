@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.animal.TropicalFish$Base",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.TropicalFish$Base",
+			"fabric": "net.minecraft.entity.passive.TropicalFishEntity$Size"
+		},
+		{
+			"forge": "SMALL",
+			"fabric": "SMALL"
+		},
+		{
+			"forge": "SMALL",
+			"fabric": "SMALL"
+		},
+		{
+			"forge": "LARGE",
+			"fabric": "LARGE"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		}
+	]
+}

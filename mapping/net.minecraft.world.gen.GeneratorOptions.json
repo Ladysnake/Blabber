@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.levelgen.WorldOptions",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.WorldOptions",
+			"fabric": "net.minecraft.world.gen.GeneratorOptions"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "DEMO_OPTIONS",
+			"fabric": "DEMO_OPTIONS"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "generateStructures",
+			"fabric": "generateStructures"
+		},
+		{
+			"forge": "generateBonusChest",
+			"fabric": "bonusChest"
+		},
+		{
+			"forge": "legacyCustomOptions",
+			"fabric": "legacyCustomOptions"
+		},
+		{
+			"forge": "defaultWithRandomSeed()",
+			"fabric": "createRandom()"
+		},
+		{
+			"forge": "defaultWithRandomSeed()",
+			"fabric": "createRandom()"
+		},
+		{
+			"forge": "seed()",
+			"fabric": "getSeed()"
+		},
+		{
+			"forge": "generateStructures()",
+			"fabric": "shouldGenerateStructures()"
+		},
+		{
+			"forge": "generateBonusChest()",
+			"fabric": "hasBonusChest()"
+		},
+		{
+			"forge": "isOldCustomizedWorld()",
+			"fabric": "isLegacyCustomizedType()"
+		},
+		{
+			"forge": "withBonusChest(boolean arg0)",
+			"fabric": "withBonusChest(boolean bonusChest)"
+		},
+		{
+			"forge": "withStructures(boolean arg0)",
+			"fabric": "withStructures(boolean structures)"
+		},
+		{
+			"forge": "withSeed(OptionalLong arg0)",
+			"fabric": "withSeed(OptionalLong seed)"
+		},
+		{
+			"forge": "parseSeed(String arg0)",
+			"fabric": "parseSeed(String seed)"
+		},
+		{
+			"forge": "randomSeed()",
+			"fabric": "getRandomSeed()"
+		}
+	]
+}

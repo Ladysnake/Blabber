@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.FollowOwnerGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.FollowOwnerGoal",
+			"fabric": "net.minecraft.entity.ai.goal.FollowOwnerGoal"
+		},
+		{
+			"forge": "TELEPORT_WHEN_DISTANCE_IS",
+			"fabric": "TELEPORT_DISTANCE"
+		},
+		{
+			"forge": "TELEPORT_WHEN_DISTANCE_IS",
+			"fabric": "TELEPORT_DISTANCE"
+		},
+		{
+			"forge": "MIN_HORIZONTAL_DISTANCE_FROM_PLAYER_WHEN_TELEPORTING",
+			"fabric": "HORIZONTAL_RANGE"
+		},
+		{
+			"forge": "MAX_HORIZONTAL_DISTANCE_FROM_PLAYER_WHEN_TELEPORTING",
+			"fabric": "HORIZONTAL_VARIATION"
+		},
+		{
+			"forge": "MAX_VERTICAL_DISTANCE_FROM_PLAYER_WHEN_TELEPORTING",
+			"fabric": "VERTICAL_VARIATION"
+		},
+		{
+			"forge": "tamable",
+			"fabric": "tameable"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "navigation",
+			"fabric": "navigation"
+		},
+		{
+			"forge": "timeToRecalcPath",
+			"fabric": "updateCountdownTicks"
+		},
+		{
+			"forge": "stopDistance",
+			"fabric": "maxDistance"
+		},
+		{
+			"forge": "startDistance",
+			"fabric": "minDistance"
+		},
+		{
+			"forge": "oldWaterCost",
+			"fabric": "oldWaterPathfindingPenalty"
+		},
+		{
+			"forge": "canFly",
+			"fabric": "leavesAllowed"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "unableToMove()",
+			"fabric": "cannotFollow()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "teleportToOwner()",
+			"fabric": "tryTeleport()"
+		},
+		{
+			"forge": "maybeTeleportTo(int arg0, int arg1, int arg2)",
+			"fabric": "tryTeleportTo(int x, int y, int z)"
+		},
+		{
+			"forge": "canTeleportTo(BlockPos arg0)",
+			"fabric": "canTeleportTo(BlockPos pos)"
+		},
+		{
+			"forge": "randomIntInclusive(int arg0, int arg1)",
+			"fabric": "getRandomInt(int min, int max)"
+		}
+	]
+}

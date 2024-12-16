@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.timers.TimerQueue$Event",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.timers.TimerQueue$Event",
+			"fabric": "net.minecraft.world.timer.Timer$Event"
+		},
+		{
+			"forge": "triggerTime",
+			"fabric": "triggerTime"
+		},
+		{
+			"forge": "triggerTime",
+			"fabric": "triggerTime"
+		},
+		{
+			"forge": "sequentialId",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "callback",
+			"fabric": "callback"
+		}
+	]
+}

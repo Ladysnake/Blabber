@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.MarsagliaPolarGaussian",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.MarsagliaPolarGaussian",
+			"fabric": "net.minecraft.util.math.random.GaussianGenerator"
+		},
+		{
+			"forge": "randomSource",
+			"fabric": "baseRandom"
+		},
+		{
+			"forge": "randomSource",
+			"fabric": "baseRandom"
+		},
+		{
+			"forge": "nextNextGaussian",
+			"fabric": "nextNextGaussian"
+		},
+		{
+			"forge": "haveNextNextGaussian",
+			"fabric": "hasNextGaussian"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "nextGaussian()",
+			"fabric": "next()"
+		}
+	]
+}

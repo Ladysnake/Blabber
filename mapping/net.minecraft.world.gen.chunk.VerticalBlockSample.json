@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.NoiseColumn",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.NoiseColumn",
+			"fabric": "net.minecraft.world.gen.chunk.VerticalBlockSample"
+		},
+		{
+			"forge": "minY",
+			"fabric": "startY"
+		},
+		{
+			"forge": "minY",
+			"fabric": "startY"
+		},
+		{
+			"forge": "column",
+			"fabric": "states"
+		},
+		{
+			"forge": "getBlock(int arg0)",
+			"fabric": "getState(int arg0)"
+		},
+		{
+			"forge": "getBlock(int arg0)",
+			"fabric": "getState(int arg0)"
+		},
+		{
+			"forge": "setBlock(int arg0, BlockState arg1)",
+			"fabric": "setState(int arg0, BlockState arg1)"
+		}
+	]
+}

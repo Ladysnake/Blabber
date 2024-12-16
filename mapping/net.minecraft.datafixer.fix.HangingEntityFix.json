@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix",
+			"fabric": "net.minecraft.datafixer.fix.HangingEntityFix"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "OFFSETS"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "OFFSETS"
+		},
+		{
+			"forge": "doFix(com.mojang.serialization.Dynamic<?> arg0, boolean arg1, boolean arg2)",
+			"fabric": "fixDecorationPosition(com.mojang.serialization.Dynamic<?> arg0, boolean isPainting, boolean isItemFrame)"
+		},
+		{
+			"forge": "doFix(com.mojang.serialization.Dynamic<?> arg0, boolean arg1, boolean arg2)",
+			"fabric": "fixDecorationPosition(com.mojang.serialization.Dynamic<?> arg0, boolean isPainting, boolean isItemFrame)"
+		}
+	]
+}

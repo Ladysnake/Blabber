@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.particle.ParticleDescription",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.ParticleDescription",
+			"fabric": "net.minecraft.client.particle.ParticleTextureData"
+		},
+		{
+			"forge": "textures",
+			"fabric": "textureList"
+		},
+		{
+			"forge": "textures",
+			"fabric": "textureList"
+		},
+		{
+			"forge": "getTextures()",
+			"fabric": "getTextureList()"
+		},
+		{
+			"forge": "getTextures()",
+			"fabric": "getTextureList()"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "load(com.google.gson.JsonObject json)"
+		}
+	]
+}

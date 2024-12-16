@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.monster.Shulker$ShulkerPeekGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Shulker$ShulkerPeekGoal",
+			"fabric": "net.minecraft.entity.mob.ShulkerEntity$PeekGoal"
+		},
+		{
+			"forge": "peekTime",
+			"fabric": "counter"
+		},
+		{
+			"forge": "peekTime",
+			"fabric": "counter"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

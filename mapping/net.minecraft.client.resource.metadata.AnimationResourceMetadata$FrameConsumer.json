@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.resources.metadata.animation.AnimationMetadataSection$FrameOutput",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.metadata.animation.AnimationMetadataSection$FrameOutput",
+			"fabric": "net.minecraft.client.resource.metadata.AnimationResourceMetadata$FrameConsumer"
+		},
+		{
+			"forge": "accept(int arg0, int arg1)",
+			"fabric": "accept(int index, int frameTime)"
+		},
+		{
+			"forge": "accept(int arg0, int arg1)",
+			"fabric": "accept(int index, int frameTime)"
+		}
+	]
+}

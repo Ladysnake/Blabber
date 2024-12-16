@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.item.BannerItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.BannerItem",
+			"fabric": "net.minecraft.item.BannerItem"
+		},
+		{
+			"forge": "PATTERN_PREFIX",
+			"fabric": "TRANSLATION_KEY_PREFIX"
+		},
+		{
+			"forge": "PATTERN_PREFIX",
+			"fabric": "TRANSLATION_KEY_PREFIX"
+		},
+		{
+			"forge": "appendHoverTextFromBannerBlockEntityTag(ItemStack arg0, List<Component> arg1)",
+			"fabric": "appendBannerTooltip(ItemStack stack, List<Text> tooltip)"
+		},
+		{
+			"forge": "appendHoverTextFromBannerBlockEntityTag(ItemStack arg0, List<Component> arg1)",
+			"fabric": "appendBannerTooltip(ItemStack stack, List<Text> tooltip)"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.commands.CommandBuildContext$2",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandBuildContext$2",
+			"fabric": "net.minecraft.command.CommandRegistryAccess$2"
+		},
+		{
+			"forge": "missingTagAccessPolicy",
+			"fabric": "entryListCreationPolicy"
+		},
+		{
+			"forge": "missingTagAccessPolicy",
+			"fabric": "entryListCreationPolicy"
+		},
+		{
+			"forge": "missingTagAccessPolicy(CommandBuildContext$MissingTagAccessPolicy arg0)",
+			"fabric": "setEntryListCreationPolicy(CommandRegistryAccess$EntryListCreationPolicy arg0)"
+		},
+		{
+			"forge": "missingTagAccessPolicy(CommandBuildContext$MissingTagAccessPolicy arg0)",
+			"fabric": "setEntryListCreationPolicy(CommandRegistryAccess$EntryListCreationPolicy arg0)"
+		},
+		{
+			"forge": "holderLookup(ResourceKey<? extends Registry<T>> arg0)",
+			"fabric": "createWrapper(RegistryKey<? extends Registry<T>> arg0)"
+		}
+	]
+}

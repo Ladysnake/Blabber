@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.stateproviders.RotatedBlockProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.stateproviders.RotatedBlockProvider",
+			"fabric": "net.minecraft.world.gen.stateprovider.PillarBlockStateProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getState(RandomSource arg0, BlockPos arg1)",
+			"fabric": "get(Random arg0, BlockPos arg1)"
+		}
+	]
+}

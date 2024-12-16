@@ -1,0 +1,53 @@
+{
+	"title": "com.mojang.realmsclient.gui.task.DataFetcher$Task",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.task.DataFetcher$Task",
+			"fabric": "net.minecraft.client.realms.util.PeriodicRunnerFactory$PeriodicRunner"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "updater",
+			"fabric": "task"
+		},
+		{
+			"forge": "period",
+			"fabric": "unitDuration"
+		},
+		{
+			"forge": "repeatStrategy",
+			"fabric": "backoff"
+		},
+		{
+			"forge": "pendingTask",
+			"fabric": "resultFuture"
+		},
+		{
+			"forge": "lastResult",
+			"fabric": "lastResult"
+		},
+		{
+			"forge": "nextUpdate",
+			"fabric": "nextTime"
+		},
+		{
+			"forge": "updateIfNeeded(long arg0)",
+			"fabric": "run(long currentTime)"
+		},
+		{
+			"forge": "updateIfNeeded(long arg0)",
+			"fabric": "run(long currentTime)"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		}
+	]
+}

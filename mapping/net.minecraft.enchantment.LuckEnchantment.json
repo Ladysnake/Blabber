@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.item.enchantment.LootBonusEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.LootBonusEnchantment",
+			"fabric": "net.minecraft.enchantment.LuckEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "getMaxLevel()",
+			"fabric": "getMaxLevel()"
+		},
+		{
+			"forge": "checkCompatibility(Enchantment arg0)",
+			"fabric": "canAccept(Enchantment arg0)"
+		}
+	]
+}

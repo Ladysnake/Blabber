@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.advancements.critereon.ImpossibleTrigger",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.ImpossibleTrigger",
+			"fabric": "net.minecraft.advancement.criterion.ImpossibleCriterion"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "addPlayerListener(PlayerAdvancements arg0, CriterionTrigger$Listener<ImpossibleTrigger$TriggerInstance> arg1)",
+			"fabric": "beginTrackingCondition(PlayerAdvancementTracker arg0, Criterion$ConditionsContainer<ImpossibleCriterion$Conditions> arg1)"
+		},
+		{
+			"forge": "removePlayerListener(PlayerAdvancements arg0, CriterionTrigger$Listener<ImpossibleTrigger$TriggerInstance> arg1)",
+			"fabric": "endTrackingCondition(PlayerAdvancementTracker arg0, Criterion$ConditionsContainer<ImpossibleCriterion$Conditions> arg1)"
+		},
+		{
+			"forge": "removePlayerListeners(PlayerAdvancements arg0)",
+			"fabric": "endTracking(PlayerAdvancementTracker arg0)"
+		},
+		{
+			"forge": "createInstance(com.google.gson.JsonObject arg0, DeserializationContext arg1)",
+			"fabric": "conditionsFromJson(com.google.gson.JsonObject arg0, AdvancementEntityPredicateDeserializer arg1)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider",
+			"fabric": "net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "weightedList",
+			"fabric": "states"
+		},
+		{
+			"forge": "create(SimpleWeightedRandomList<BlockState> arg0)",
+			"fabric": "wrap(DataPool<BlockState> states)"
+		},
+		{
+			"forge": "create(SimpleWeightedRandomList<BlockState> arg0)",
+			"fabric": "wrap(DataPool<BlockState> states)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getState(RandomSource arg0, BlockPos arg1)",
+			"fabric": "get(Random arg0, BlockPos arg1)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.gameevent.vibrations.VibrationSystem$Ticker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.vibrations.VibrationSystem$Ticker",
+			"fabric": "net.minecraft.world.event.Vibrations$Ticker"
+		},
+		{
+			"forge": "tick(Level arg0, VibrationSystem$Data arg1, VibrationSystem$User arg2)",
+			"fabric": "tick(World world, Vibrations$ListenerData listenerData, Vibrations$Callback callback)"
+		},
+		{
+			"forge": "tick(Level arg0, VibrationSystem$Data arg1, VibrationSystem$User arg2)",
+			"fabric": "tick(World world, Vibrations$ListenerData listenerData, Vibrations$Callback callback)"
+		},
+		{
+			"forge": "trySelectAndScheduleVibration(ServerLevel arg0, VibrationSystem$Data arg1, VibrationSystem$User arg2)",
+			"fabric": "tryListen(ServerWorld world, Vibrations$ListenerData listenerData, Vibrations$Callback callback)"
+		},
+		{
+			"forge": "tryReloadVibrationParticle(ServerLevel arg0, VibrationSystem$Data arg1, VibrationSystem$User arg2)",
+			"fabric": "spawnVibrationParticle(ServerWorld world, Vibrations$ListenerData listenerData, Vibrations$Callback callback)"
+		},
+		{
+			"forge": "receiveVibration(ServerLevel arg0, VibrationSystem$Data arg1, VibrationSystem$User arg2, VibrationInfo arg3)",
+			"fabric": "accept(ServerWorld world, Vibrations$ListenerData listenerData, Vibrations$Callback callback, Vibration vibration)"
+		},
+		{
+			"forge": "areAdjacentChunksTicking(Level arg0, BlockPos arg1)",
+			"fabric": "areChunksTickingAround(World world, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.HarvestFarmland",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.HarvestFarmland",
+			"fabric": "net.minecraft.entity.ai.brain.task.FarmerVillagerTask"
+		},
+		{
+			"forge": "HARVEST_DURATION",
+			"fabric": "MAX_RUN_TIME"
+		},
+		{
+			"forge": "HARVEST_DURATION",
+			"fabric": "MAX_RUN_TIME"
+		},
+		{
+			"forge": "SPEED_MODIFIER",
+			"fabric": "WALK_SPEED"
+		},
+		{
+			"forge": "aboveFarmlandPos",
+			"fabric": "currentTarget"
+		},
+		{
+			"forge": "nextOkStartTime",
+			"fabric": "nextResponseTime"
+		},
+		{
+			"forge": "timeWorkedSoFar",
+			"fabric": "ticksRan"
+		},
+		{
+			"forge": "validFarmlandAroundVillager",
+			"fabric": "targetPositions"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "getValidFarmland(ServerLevel arg0)",
+			"fabric": "chooseRandomTarget(ServerWorld world)"
+		},
+		{
+			"forge": "validPos(BlockPos arg0, ServerLevel arg1)",
+			"fabric": "isSuitableTarget(BlockPos pos, ServerWorld world)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.players.IpBanListEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.IpBanListEntry",
+			"fabric": "net.minecraft.server.BannedIpEntry"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "toText()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "toText()"
+		},
+		{
+			"forge": "createIpInfo(com.google.gson.JsonObject arg0)",
+			"fabric": "getIp(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "serialize(com.google.gson.JsonObject arg0)",
+			"fabric": "write(com.google.gson.JsonObject arg0)"
+		}
+	]
+}

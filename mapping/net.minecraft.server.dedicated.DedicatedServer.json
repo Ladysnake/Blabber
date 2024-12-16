@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.ServerInterface",
+	"items": [
+		{
+			"forge": "net.minecraft.server.ServerInterface",
+			"fabric": "net.minecraft.server.dedicated.DedicatedServer"
+		},
+		{
+			"forge": "getProperties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "getProperties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "getServerIp()",
+			"fabric": "getHostname()"
+		},
+		{
+			"forge": "getServerPort()",
+			"fabric": "getPort()"
+		},
+		{
+			"forge": "getServerName()",
+			"fabric": "getMotd()"
+		},
+		{
+			"forge": "getServerVersion()",
+			"fabric": "getVersion()"
+		},
+		{
+			"forge": "getPlayerCount()",
+			"fabric": "getCurrentPlayerCount()"
+		},
+		{
+			"forge": "getMaxPlayers()",
+			"fabric": "getMaxPlayerCount()"
+		},
+		{
+			"forge": "getPlayerNames()",
+			"fabric": "getPlayerNames()"
+		},
+		{
+			"forge": "getLevelIdName()",
+			"fabric": "getLevelName()"
+		},
+		{
+			"forge": "getPluginNames()",
+			"fabric": "getPlugins()"
+		},
+		{
+			"forge": "runCommand(String arg0)",
+			"fabric": "executeRconCommand(String command)"
+		}
+	]
+}

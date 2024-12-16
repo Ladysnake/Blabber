@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.renderer.entity.ItemEntityRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.ItemEntityRenderer",
+			"fabric": "net.minecraft.client.render.entity.ItemEntityRenderer"
+		},
+		{
+			"forge": "ITEM_BUNDLE_OFFSET_SCALE",
+			"fabric": "field_32924"
+		},
+		{
+			"forge": "ITEM_BUNDLE_OFFSET_SCALE",
+			"fabric": "field_32924"
+		},
+		{
+			"forge": "ITEM_COUNT_FOR_5_BUNDLE",
+			"fabric": "MAX_COUNT_FOR_4_ITEMS_RENDERED"
+		},
+		{
+			"forge": "ITEM_COUNT_FOR_4_BUNDLE",
+			"fabric": "MAX_COUNT_FOR_3_ITEMS_RENDERED"
+		},
+		{
+			"forge": "ITEM_COUNT_FOR_3_BUNDLE",
+			"fabric": "MAX_COUNT_FOR_2_ITEMS_RENDERED"
+		},
+		{
+			"forge": "ITEM_COUNT_FOR_2_BUNDLE",
+			"fabric": "MAX_COUNT_FOR_1_ITEM_RENDERED"
+		},
+		{
+			"forge": "FLAT_ITEM_BUNDLE_OFFSET_X",
+			"fabric": "field_32929"
+		},
+		{
+			"forge": "FLAT_ITEM_BUNDLE_OFFSET_Y",
+			"fabric": "field_32930"
+		},
+		{
+			"forge": "FLAT_ITEM_BUNDLE_OFFSET_Z",
+			"fabric": "field_32931"
+		},
+		{
+			"forge": "itemRenderer",
+			"fabric": "itemRenderer"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "getRenderAmount(ItemStack arg0)",
+			"fabric": "getRenderedAmount(ItemStack stack)"
+		},
+		{
+			"forge": "getRenderAmount(ItemStack arg0)",
+			"fabric": "getRenderedAmount(ItemStack stack)"
+		},
+		{
+			"forge": "render(ItemEntity arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(ItemEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "getTextureLocation(ItemEntity arg0)",
+			"fabric": "getTexture(ItemEntity arg0)"
+		}
+	]
+}

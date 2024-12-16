@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.sounds.SoundManager$Preparations",
+	"items": [
+		{
+			"forge": "net.minecraft.client.sounds.SoundManager$Preparations",
+			"fabric": "net.minecraft.client.sound.SoundManager$SoundList"
+		},
+		{
+			"forge": "registry",
+			"fabric": "loadedSounds"
+		},
+		{
+			"forge": "registry",
+			"fabric": "loadedSounds"
+		},
+		{
+			"forge": "soundCache",
+			"fabric": "foundSounds"
+		},
+		{
+			"forge": "listResources(ResourceManager arg0)",
+			"fabric": "findSounds(ResourceManager resourceManager)"
+		},
+		{
+			"forge": "listResources(ResourceManager arg0)",
+			"fabric": "findSounds(ResourceManager resourceManager)"
+		},
+		{
+			"forge": "handleRegistration(ResourceLocation arg0, SoundEventRegistration arg1)",
+			"fabric": "register(Identifier id, SoundEntry entry)"
+		},
+		{
+			"forge": "apply(Map<ResourceLocation, WeighedSoundEvents> arg0, Map<ResourceLocation, Resource> arg1, SoundEngine arg2)",
+			"fabric": "reload(Map<Identifier, WeightedSoundSet> sounds, Map<Identifier, Resource> soundResources, SoundSystem system)"
+		}
+	]
+}

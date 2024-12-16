@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlendingDataFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlendingDataFix",
+			"fabric": "net.minecraft.datafixer.fix.BlendingDataFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "STATUSES_TO_SKIP_BLENDING",
+			"fabric": "SKIP_BLENDING_STATUSES"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "update(com.mojang.serialization.Dynamic<?> chunk, com.mojang.serialization.OptionalDynamic<?> context)"
+		},
+		{
+			"forge": "updateChunkTag(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.OptionalDynamic<?> arg1)",
+			"fabric": "update(com.mojang.serialization.Dynamic<?> chunk, com.mojang.serialization.OptionalDynamic<?> context)"
+		},
+		{
+			"forge": "updateBlendingData(com.mojang.serialization.Dynamic<?> arg0, int arg1, int arg2)",
+			"fabric": "setSections(com.mojang.serialization.Dynamic<?> dynamic, int height, int minY)"
+		}
+	]
+}

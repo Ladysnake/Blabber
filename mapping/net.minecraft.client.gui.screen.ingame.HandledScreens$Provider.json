@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.screens.MenuScreens$ScreenConstructor",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.MenuScreens$ScreenConstructor",
+			"fabric": "net.minecraft.client.gui.screen.ingame.HandledScreens$Provider"
+		},
+		{
+			"forge": "fromPacket(Component arg0, MenuType<T> arg1, Minecraft arg2, int arg3)",
+			"fabric": "open(Text name, ScreenHandlerType<T> type, MinecraftClient client, int id)"
+		},
+		{
+			"forge": "fromPacket(Component arg0, MenuType<T> arg1, Minecraft arg2, int arg3)",
+			"fabric": "open(Text name, ScreenHandlerType<T> type, MinecraftClient client, int id)"
+		},
+		{
+			"forge": "create(T arg0, Inventory arg1, Component arg2)",
+			"fabric": "create(T handler, PlayerInventory playerInventory, Text title)"
+		}
+	]
+}

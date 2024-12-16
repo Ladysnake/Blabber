@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$BooleanState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$BooleanState",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$CapabilityTracker"
+		},
+		{
+			"forge": "state",
+			"fabric": "cap"
+		},
+		{
+			"forge": "state",
+			"fabric": "cap"
+		},
+		{
+			"forge": "enabled",
+			"fabric": "state"
+		},
+		{
+			"forge": "disable()",
+			"fabric": "disable()"
+		},
+		{
+			"forge": "disable()",
+			"fabric": "disable()"
+		},
+		{
+			"forge": "enable()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "setEnabled(boolean arg0)",
+			"fabric": "setState(boolean state)"
+		}
+	]
+}

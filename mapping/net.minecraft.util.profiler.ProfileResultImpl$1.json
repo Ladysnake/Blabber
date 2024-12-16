@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.profiling.FilledProfileResults$1",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.FilledProfileResults$1",
+			"fabric": "net.minecraft.util.profiler.ProfileResultImpl$1"
+		},
+		{
+			"forge": "getDuration()",
+			"fabric": "getTotalTime()"
+		},
+		{
+			"forge": "getDuration()",
+			"fabric": "getTotalTime()"
+		},
+		{
+			"forge": "getMaxDuration()",
+			"fabric": "getMaxTime()"
+		},
+		{
+			"forge": "getCount()",
+			"fabric": "getVisitCount()"
+		},
+		{
+			"forge": "getCounters()",
+			"fabric": "getCounts()"
+		}
+	]
+}

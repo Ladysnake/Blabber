@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen$SlotWrapper",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen$SlotWrapper",
+			"fabric": "net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen$CreativeSlot"
+		},
+		{
+			"forge": "target",
+			"fabric": "slot"
+		},
+		{
+			"forge": "target",
+			"fabric": "slot"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeItem(PlayerEntity arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeItem(PlayerEntity arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "getItem()",
+			"fabric": "getStack()"
+		},
+		{
+			"forge": "hasItem()",
+			"fabric": "hasStack()"
+		},
+		{
+			"forge": "setByPlayer(ItemStack arg0)",
+			"fabric": "setStack(ItemStack arg0)"
+		},
+		{
+			"forge": "set(ItemStack arg0)",
+			"fabric": "setStackNoCallbacks(ItemStack arg0)"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxItemCount()"
+		},
+		{
+			"forge": "getMaxStackSize(ItemStack arg0)",
+			"fabric": "getMaxItemCount(ItemStack arg0)"
+		},
+		{
+			"forge": "getNoItemIcon()",
+			"fabric": "getBackgroundSprite()"
+		},
+		{
+			"forge": "remove(int arg0)",
+			"fabric": "takeStack(int arg0)"
+		},
+		{
+			"forge": "isActive()",
+			"fabric": "isEnabled()"
+		},
+		{
+			"forge": "mayPickup(Player arg0)",
+			"fabric": "canTakeItems(PlayerEntity arg0)"
+		}
+	]
+}

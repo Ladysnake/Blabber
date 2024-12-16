@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.inventory.SmokerMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.SmokerMenu",
+			"fabric": "net.minecraft.screen.SmokerScreenHandler"
+		}
+	]
+}

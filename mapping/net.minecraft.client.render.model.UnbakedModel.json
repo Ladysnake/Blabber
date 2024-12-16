@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.resources.model.UnbakedModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.UnbakedModel",
+			"fabric": "net.minecraft.client.render.model.UnbakedModel"
+		},
+		{
+			"forge": "getDependencies()",
+			"fabric": "getModelDependencies()"
+		},
+		{
+			"forge": "getDependencies()",
+			"fabric": "getModelDependencies()"
+		},
+		{
+			"forge": "resolveParents(Function<ResourceLocation, UnbakedModel> arg0)",
+			"fabric": "setParents(Function<Identifier, UnbakedModel> modelLoader)"
+		},
+		{
+			"forge": "bake(ModelBaker arg0, Function<Material, TextureAtlasSprite> arg1, ModelState arg2, ResourceLocation arg3)",
+			"fabric": "bake(Baker baker, Function<SpriteIdentifier, Sprite> textureGetter, ModelBakeSettings rotationContainer, Identifier modelId)"
+		}
+	]
+}

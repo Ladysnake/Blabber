@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.LeavesFix$Section",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.LeavesFix$Section",
+			"fabric": "net.minecraft.datafixer.fix.LeavesFix$ListFixer"
+		},
+		{
+			"forge": "BLOCK_STATES_TAG",
+			"fabric": "BLOCK_STATES_KEY"
+		},
+		{
+			"forge": "BLOCK_STATES_TAG",
+			"fabric": "BLOCK_STATES_KEY"
+		},
+		{
+			"forge": "NAME_TAG",
+			"fabric": "NAME_KEY"
+		},
+		{
+			"forge": "PROPERTIES_TAG",
+			"fabric": "PROPERTIES_KEY"
+		},
+		{
+			"forge": "blockStateType",
+			"fabric": "blockStateType"
+		},
+		{
+			"forge": "paletteFinder",
+			"fabric": "paletteFinder"
+		},
+		{
+			"forge": "palette",
+			"fabric": "properties"
+		},
+		{
+			"forge": "index",
+			"fabric": "y"
+		},
+		{
+			"forge": "storage",
+			"fabric": "blockStateMap"
+		},
+		{
+			"forge": "readStorage(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "computeFixableBlockStates(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "readStorage(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "computeFixableBlockStates(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "write(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "method_5083(com.mojang.datafixers.Typed<?> arg0)"
+		},
+		{
+			"forge": "isSkippable()",
+			"fabric": "isFixed()"
+		},
+		{
+			"forge": "getBlock(int arg0)",
+			"fabric": "needsFix(int index)"
+		},
+		{
+			"forge": "getStateId(String arg0, boolean arg1, int arg2)",
+			"fabric": "computeFlags(String leafBlockName, boolean persistent, int distance)"
+		},
+		{
+			"forge": "getIndex()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "skippable()",
+			"fabric": "needsFix()"
+		}
+	]
+}

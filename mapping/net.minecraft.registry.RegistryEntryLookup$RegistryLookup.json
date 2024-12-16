@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.core.HolderGetter$Provider",
+	"items": [
+		{
+			"forge": "net.minecraft.core.HolderGetter$Provider",
+			"fabric": "net.minecraft.registry.RegistryEntryLookup$RegistryLookup"
+		},
+		{
+			"forge": "lookup(ResourceKey<? extends Registry<? extends T>> arg0)",
+			"fabric": "getOptional(RegistryKey<? extends Registry<? extends T>> registryRef)"
+		},
+		{
+			"forge": "lookup(ResourceKey<? extends Registry<? extends T>> arg0)",
+			"fabric": "getOptional(RegistryKey<? extends Registry<? extends T>> registryRef)"
+		},
+		{
+			"forge": "lookupOrThrow(ResourceKey<? extends Registry<? extends T>> arg0)",
+			"fabric": "getOrThrow(RegistryKey<? extends Registry<? extends T>> registryRef)"
+		}
+	]
+}

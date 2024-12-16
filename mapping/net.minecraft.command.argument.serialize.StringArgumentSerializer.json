@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.commands.synchronization.brigadier.StringArgumentSerializer",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.synchronization.brigadier.StringArgumentSerializer",
+			"fabric": "net.minecraft.command.argument.serialize.StringArgumentSerializer"
+		},
+		{
+			"forge": "serializeToNetwork(StringArgumentSerializer$Template arg0, FriendlyByteBuf arg1)",
+			"fabric": "writePacket(StringArgumentSerializer$Properties arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "serializeToNetwork(StringArgumentSerializer$Template arg0, FriendlyByteBuf arg1)",
+			"fabric": "writePacket(StringArgumentSerializer$Properties arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "deserializeFromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "serializeToJson(StringArgumentSerializer$Template arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "writeJson(StringArgumentSerializer$Properties arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "unpack(com.mojang.brigadier.arguments.StringArgumentType arg0)",
+			"fabric": "getArgumentTypeProperties(com.mojang.brigadier.arguments.StringArgumentType arg0)"
+		}
+	]
+}

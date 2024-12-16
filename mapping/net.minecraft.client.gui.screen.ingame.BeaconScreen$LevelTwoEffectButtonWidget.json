@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.BeaconScreen$BeaconUpgradePowerButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.BeaconScreen$BeaconUpgradePowerButton",
+			"fabric": "net.minecraft.client.gui.screen.ingame.BeaconScreen$LevelTwoEffectButtonWidget"
+		},
+		{
+			"forge": "createEffectDescription(MobEffect arg0)",
+			"fabric": "getEffectName(StatusEffect arg0)"
+		},
+		{
+			"forge": "createEffectDescription(MobEffect arg0)",
+			"fabric": "getEffectName(StatusEffect arg0)"
+		},
+		{
+			"forge": "updateStatus(int arg0)",
+			"fabric": "tick(int arg0)"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.renderer.texture.SpriteLoader",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.SpriteLoader",
+			"fabric": "net.minecraft.client.texture.SpriteLoader"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "location",
+			"fabric": "id"
+		},
+		{
+			"forge": "maxSupportedTextureSize",
+			"fabric": "maxTextureSize"
+		},
+		{
+			"forge": "minWidth",
+			"fabric": "width"
+		},
+		{
+			"forge": "minHeight",
+			"fabric": "height"
+		},
+		{
+			"forge": "create(TextureAtlas arg0)",
+			"fabric": "fromAtlas(SpriteAtlasTexture atlasTexture)"
+		},
+		{
+			"forge": "create(TextureAtlas arg0)",
+			"fabric": "fromAtlas(SpriteAtlasTexture atlasTexture)"
+		},
+		{
+			"forge": "stitch(List<SpriteContents> arg0, int arg1, Executor arg2)",
+			"fabric": "stitch(List<SpriteContents> sprites, int mipLevel, Executor executor)"
+		},
+		{
+			"forge": "runSpriteSuppliers(List<Supplier<SpriteContents>> arg0, Executor arg1)",
+			"fabric": "loadAll(List<Supplier<SpriteContents>> sources, Executor executor)"
+		},
+		{
+			"forge": "loadAndStitch(ResourceManager arg0, ResourceLocation arg1, int arg2, Executor arg3)",
+			"fabric": "load(ResourceManager resourceManager, Identifier path, int mipLevel, Executor executor)"
+		},
+		{
+			"forge": "loadSprite(ResourceLocation arg0, Resource arg1)",
+			"fabric": "load(Identifier id, Resource resource)"
+		},
+		{
+			"forge": "getStitchedSprites(Stitcher<SpriteContents> arg0, int arg1, int arg2)",
+			"fabric": "collectStitchedSprites(TextureStitcher<SpriteContents> stitcher, int atlasWidth, int atlasHeight)"
+		}
+	]
+}

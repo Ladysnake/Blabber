@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.commands.HelpCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.HelpCommand",
+			"fabric": "net.minecraft.server.command.HelpCommand"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsServer$McoServerComparator",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsServer$McoServerComparator",
+			"fabric": "net.minecraft.client.realms.dto.RealmsServer$McoServerComparator"
+		},
+		{
+			"forge": "refOwner",
+			"fabric": "refOwner"
+		},
+		{
+			"forge": "refOwner",
+			"fabric": "refOwner"
+		},
+		{
+			"forge": "compare(RealmsServer arg0, RealmsServer arg1)",
+			"fabric": "compare(RealmsServer arg0, RealmsServer arg1)"
+		},
+		{
+			"forge": "compare(RealmsServer arg0, RealmsServer arg1)",
+			"fabric": "compare(RealmsServer arg0, RealmsServer arg1)"
+		}
+	]
+}

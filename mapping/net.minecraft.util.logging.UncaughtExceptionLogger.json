@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.DefaultUncaughtExceptionHandler",
+	"items": [
+		{
+			"forge": "net.minecraft.DefaultUncaughtExceptionHandler",
+			"fabric": "net.minecraft.util.logging.UncaughtExceptionLogger"
+		},
+		{
+			"forge": "logger",
+			"fabric": "logger"
+		},
+		{
+			"forge": "logger",
+			"fabric": "logger"
+		},
+		{
+			"forge": "uncaughtException(Thread arg0, Throwable arg1)",
+			"fabric": "uncaughtException(Thread thread, Throwable throwable)"
+		},
+		{
+			"forge": "uncaughtException(Thread arg0, Throwable arg1)",
+			"fabric": "uncaughtException(Thread thread, Throwable throwable)"
+		}
+	]
+}

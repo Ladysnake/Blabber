@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.biome.FixedBiomeSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.FixedBiomeSource",
+			"fabric": "net.minecraft.world.biome.source.FixedBiomeSource"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "biome",
+			"fabric": "biome"
+		},
+		{
+			"forge": "collectPossibleBiomes()",
+			"fabric": "biomeStream()"
+		},
+		{
+			"forge": "collectPossibleBiomes()",
+			"fabric": "biomeStream()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2, Climate$Sampler arg3)",
+			"fabric": "getBiome(int arg0, int arg1, int arg2, MultiNoiseUtil$MultiNoiseSampler arg3)"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2)",
+			"fabric": "getBiomeForNoiseGen(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "findBiomeHorizontal(int arg0, int arg1, int arg2, int arg3, int arg4, Predicate<Holder<Biome>> arg5, RandomSource arg6, boolean arg7, Climate$Sampler arg8)",
+			"fabric": "locateBiome(int arg0, int arg1, int arg2, int arg3, int arg4, Predicate<RegistryEntry<Biome>> arg5, Random arg6, boolean arg7, MultiNoiseUtil$MultiNoiseSampler arg8)"
+		},
+		{
+			"forge": "findClosestBiome3d(BlockPos arg0, int arg1, int arg2, int arg3, Predicate<Holder<Biome>> arg4, Climate$Sampler arg5, LevelReader arg6)",
+			"fabric": "locateBiome(BlockPos arg0, int arg1, int arg2, int arg3, Predicate<RegistryEntry<Biome>> arg4, MultiNoiseUtil$MultiNoiseSampler arg5, WorldView arg6)"
+		},
+		{
+			"forge": "getBiomesWithin(int arg0, int arg1, int arg2, int arg3, Climate$Sampler arg4)",
+			"fabric": "getBiomesInArea(int arg0, int arg1, int arg2, int arg3, MultiNoiseUtil$MultiNoiseSampler arg4)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.nbt.NbtOps$NbtRecordBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.NbtOps$NbtRecordBuilder",
+			"fabric": "net.minecraft.nbt.NbtOps$MapBuilder"
+		},
+		{
+			"forge": "initBuilder()",
+			"fabric": "initBuilder()"
+		},
+		{
+			"forge": "initBuilder()",
+			"fabric": "initBuilder()"
+		},
+		{
+			"forge": "append(String arg0, Tag arg1, CompoundTag arg2)",
+			"fabric": "append(String arg0, NbtElement arg1, NbtCompound arg2)"
+		},
+		{
+			"forge": "build(CompoundTag arg0, Tag arg1)",
+			"fabric": "build(NbtCompound arg0, NbtElement arg1)"
+		}
+	]
+}

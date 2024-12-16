@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.Eula",
+	"items": [
+		{
+			"forge": "net.minecraft.server.Eula",
+			"fabric": "net.minecraft.server.dedicated.EulaReader"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "file",
+			"fabric": "eulaFile"
+		},
+		{
+			"forge": "agreed",
+			"fabric": "eulaAgreedTo"
+		},
+		{
+			"forge": "readFile()",
+			"fabric": "checkEulaAgreement()"
+		},
+		{
+			"forge": "readFile()",
+			"fabric": "checkEulaAgreement()"
+		},
+		{
+			"forge": "hasAgreedToEULA()",
+			"fabric": "isEulaAgreedTo()"
+		},
+		{
+			"forge": "saveDefaults()",
+			"fabric": "createEulaFile()"
+		}
+	]
+}

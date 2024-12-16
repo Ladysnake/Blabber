@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.server.level.ChunkTaskPriorityQueueSorter",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ChunkTaskPriorityQueueSorter",
+			"fabric": "net.minecraft.server.world.ChunkTaskPrioritySystem"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "queues",
+			"fabric": "queues"
+		},
+		{
+			"forge": "sleeping",
+			"fabric": "idleActors"
+		},
+		{
+			"forge": "mailbox",
+			"fabric": "controlActor"
+		},
+		{
+			"forge": "hasWork()",
+			"fabric": "shouldDelayShutdown()"
+		},
+		{
+			"forge": "hasWork()",
+			"fabric": "shouldDelayShutdown()"
+		},
+		{
+			"forge": "message(Function<ProcessorHandle<Unit>, T> arg0, long arg1, IntSupplier arg2)",
+			"fabric": "createTask(Function<MessageListener<Unit>, T> taskFunction, long pos, IntSupplier lastLevelUpdatedToProvider)"
+		},
+		{
+			"forge": "message(Runnable arg0, long arg1, IntSupplier arg2)",
+			"fabric": "createMessage(Runnable task, long pos, IntSupplier lastLevelUpdatedToProvider)"
+		},
+		{
+			"forge": "message(ChunkHolder arg0, Runnable arg1)",
+			"fabric": "createMessage(ChunkHolder holder, Runnable task)"
+		},
+		{
+			"forge": "message(ChunkHolder arg0, Function<ProcessorHandle<Unit>, T> arg1)",
+			"fabric": "createTask(ChunkHolder holder, Function<MessageListener<Unit>, T> taskFunction)"
+		},
+		{
+			"forge": "release(Runnable arg0, long arg1, boolean arg2)",
+			"fabric": "createUnblockingMessage(Runnable task, long pos, boolean removeTask)"
+		},
+		{
+			"forge": "getProcessor(ProcessorHandle<T> arg0, boolean arg1)",
+			"fabric": "createExecutor(MessageListener<T> executor, boolean addBlocker)"
+		},
+		{
+			"forge": "getReleaseProcessor(ProcessorHandle<Runnable> arg0)",
+			"fabric": "createUnblockingExecutor(MessageListener<Runnable> executor)"
+		},
+		{
+			"forge": "onLevelChange(ChunkPos arg0, IntSupplier arg1, int arg2, IntConsumer arg3)",
+			"fabric": "updateLevel(ChunkPos arg0, IntSupplier arg1, int arg2, IntConsumer arg3)"
+		},
+		{
+			"forge": "release(ProcessorHandle<T> arg0, long arg1, Runnable arg2, boolean arg3)",
+			"fabric": "removeChunk(MessageListener<T> actor, long chunkPos, Runnable callback, boolean clearTask)"
+		},
+		{
+			"forge": "submit(ProcessorHandle<T> arg0, Function<ProcessorHandle<Unit>, T> arg1, long arg2, IntSupplier arg3, boolean arg4)",
+			"fabric": "enqueueChunk(MessageListener<T> actor, Function<MessageListener<Unit>, T> task, long chunkPos, IntSupplier lastLevelUpdatedToProvider, boolean addBlocker)"
+		},
+		{
+			"forge": "pollTask(ChunkTaskPriorityQueue<Function<ProcessorHandle<Unit>, T>> arg0, ProcessorHandle<T> arg1)",
+			"fabric": "enqueueExecution(LevelPrioritizedQueue<Function<MessageListener<Unit>, T>> queue, MessageListener<T> actor)"
+		},
+		{
+			"forge": "getQueue(ProcessorHandle<T> arg0)",
+			"fabric": "getQueue(MessageListener<T> actor)"
+		},
+		{
+			"forge": "getDebugStatus()",
+			"fabric": "getDebugString()"
+		}
+	]
+}

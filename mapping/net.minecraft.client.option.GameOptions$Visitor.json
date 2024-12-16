@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.Options$FieldAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.client.Options$FieldAccess",
+			"fabric": "net.minecraft.client.option.GameOptions$Visitor"
+		},
+		{
+			"forge": "process(String arg0, OptionInstance<T> arg1)",
+			"fabric": "accept(String key, SimpleOption<T> option)"
+		},
+		{
+			"forge": "process(String arg0, OptionInstance<T> arg1)",
+			"fabric": "accept(String key, SimpleOption<T> option)"
+		},
+		{
+			"forge": "process(String arg0, int arg1)",
+			"fabric": "visitInt(String key, int current)"
+		},
+		{
+			"forge": "process(String arg0, boolean arg1)",
+			"fabric": "visitBoolean(String key, boolean current)"
+		},
+		{
+			"forge": "process(String arg0, String arg1)",
+			"fabric": "visitString(String key, String current)"
+		},
+		{
+			"forge": "process(String arg0, float arg1)",
+			"fabric": "visitFloat(String key, float current)"
+		},
+		{
+			"forge": "process(String arg0, T arg1, Function<String, T> arg2, Function<T, String> arg3)",
+			"fabric": "visitObject(String key, T current, Function<String, T> decoder, Function<T, String> encoder)"
+		}
+	]
+}

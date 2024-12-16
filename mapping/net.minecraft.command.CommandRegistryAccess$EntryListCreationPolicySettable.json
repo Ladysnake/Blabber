@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.CommandBuildContext$Configurable",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandBuildContext$Configurable",
+			"fabric": "net.minecraft.command.CommandRegistryAccess$EntryListCreationPolicySettable"
+		},
+		{
+			"forge": "missingTagAccessPolicy(CommandBuildContext$MissingTagAccessPolicy arg0)",
+			"fabric": "setEntryListCreationPolicy(CommandRegistryAccess$EntryListCreationPolicy entryListCreationPolicy)"
+		},
+		{
+			"forge": "missingTagAccessPolicy(CommandBuildContext$MissingTagAccessPolicy arg0)",
+			"fabric": "setEntryListCreationPolicy(CommandRegistryAccess$EntryListCreationPolicy entryListCreationPolicy)"
+		}
+	]
+}

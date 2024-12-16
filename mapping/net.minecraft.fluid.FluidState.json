@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.world.level.material.FluidState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.material.FluidState",
+			"fabric": "net.minecraft.fluid.FluidState"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "AMOUNT_MAX",
+			"fabric": "field_31727"
+		},
+		{
+			"forge": "AMOUNT_FULL",
+			"fabric": "field_31728"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getFluid()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getFluid()"
+		},
+		{
+			"forge": "isSource()",
+			"fabric": "isStill()"
+		},
+		{
+			"forge": "isSourceOfType(Fluid arg0)",
+			"fabric": "isEqualAndStill(Fluid fluid)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getHeight(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getHeight(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getOwnHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getAmount()",
+			"fabric": "getLevel()"
+		},
+		{
+			"forge": "shouldRenderBackwardUpFace(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "canFlowTo(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "tick(Level arg0, BlockPos arg1)",
+			"fabric": "onScheduledTick(World world, BlockPos pos)"
+		},
+		{
+			"forge": "animateTick(Level arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "randomDisplayTick(World world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "isRandomlyTicking()",
+			"fabric": "hasRandomTicks()"
+		},
+		{
+			"forge": "randomTick(Level arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "onRandomTick(World world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "getFlow(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getVelocity(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "createLegacyBlock()",
+			"fabric": "getBlockState()"
+		},
+		{
+			"forge": "getDripParticle()",
+			"fabric": "getParticle()"
+		},
+		{
+			"forge": "is(TagKey<Fluid> arg0)",
+			"fabric": "isIn(TagKey<Fluid> tag)"
+		},
+		{
+			"forge": "is(HolderSet<Fluid> arg0)",
+			"fabric": "isIn(RegistryEntryList<Fluid> fluids)"
+		},
+		{
+			"forge": "is(Fluid arg0)",
+			"fabric": "isOf(Fluid fluid)"
+		},
+		{
+			"forge": "getExplosionResistance()",
+			"fabric": "getBlastResistance()"
+		},
+		{
+			"forge": "canBeReplacedWith(BlockGetter arg0, BlockPos arg1, Fluid arg2, Direction arg3)",
+			"fabric": "canBeReplacedWith(BlockView world, BlockPos pos, Fluid fluid, Direction direction)"
+		},
+		{
+			"forge": "getShape(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getShape(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "holder()",
+			"fabric": "getRegistryEntry()"
+		},
+		{
+			"forge": "getTags()",
+			"fabric": "streamTags()"
+		}
+	]
+}

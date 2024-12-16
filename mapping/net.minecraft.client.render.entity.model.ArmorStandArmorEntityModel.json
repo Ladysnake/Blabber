@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.model.ArmorStandArmorModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.ArmorStandArmorModel",
+			"fabric": "net.minecraft.client.render.entity.model.ArmorStandArmorEntityModel"
+		},
+		{
+			"forge": "createBodyLayer(CubeDeformation arg0)",
+			"fabric": "getTexturedModelData(Dilation dilation)"
+		},
+		{
+			"forge": "createBodyLayer(CubeDeformation arg0)",
+			"fabric": "getTexturedModelData(Dilation dilation)"
+		},
+		{
+			"forge": "setupAnim(ArmorStand arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(ArmorStandEntity arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

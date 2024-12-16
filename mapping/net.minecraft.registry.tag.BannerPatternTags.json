@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.tags.BannerPatternTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.BannerPatternTags",
+			"fabric": "net.minecraft.registry.tag.BannerPatternTags"
+		},
+		{
+			"forge": "NO_ITEM_REQUIRED",
+			"fabric": "NO_ITEM_REQUIRED"
+		},
+		{
+			"forge": "NO_ITEM_REQUIRED",
+			"fabric": "NO_ITEM_REQUIRED"
+		},
+		{
+			"forge": "PATTERN_ITEM_FLOWER",
+			"fabric": "FLOWER_PATTERN_ITEM"
+		},
+		{
+			"forge": "PATTERN_ITEM_CREEPER",
+			"fabric": "CREEPER_PATTERN_ITEM"
+		},
+		{
+			"forge": "PATTERN_ITEM_SKULL",
+			"fabric": "SKULL_PATTERN_ITEM"
+		},
+		{
+			"forge": "PATTERN_ITEM_MOJANG",
+			"fabric": "MOJANG_PATTERN_ITEM"
+		},
+		{
+			"forge": "PATTERN_ITEM_GLOBE",
+			"fabric": "GLOBE_PATTERN_ITEM"
+		},
+		{
+			"forge": "PATTERN_ITEM_PIGLIN",
+			"fabric": "PIGLIN_PATTERN_ITEM"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

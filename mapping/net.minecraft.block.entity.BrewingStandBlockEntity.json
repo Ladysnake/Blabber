@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BrewingStandBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BrewingStandBlockEntity",
+			"fabric": "net.minecraft.block.entity.BrewingStandBlockEntity"
+		},
+		{
+			"forge": "INGREDIENT_SLOT",
+			"fabric": "INPUT_SLOT_INDEX"
+		},
+		{
+			"forge": "INGREDIENT_SLOT",
+			"fabric": "INPUT_SLOT_INDEX"
+		},
+		{
+			"forge": "FUEL_SLOT",
+			"fabric": "FUEL_SLOT_INDEX"
+		},
+		{
+			"forge": "SLOTS_FOR_UP",
+			"fabric": "TOP_SLOTS"
+		},
+		{
+			"forge": "SLOTS_FOR_DOWN",
+			"fabric": "BOTTOM_SLOTS"
+		},
+		{
+			"forge": "SLOTS_FOR_SIDES",
+			"fabric": "SIDE_SLOTS"
+		},
+		{
+			"forge": "FUEL_USES",
+			"fabric": "MAX_FUEL_USES"
+		},
+		{
+			"forge": "DATA_BREW_TIME",
+			"fabric": "BREW_TIME_PROPERTY_INDEX"
+		},
+		{
+			"forge": "DATA_FUEL_USES",
+			"fabric": "FUEL_PROPERTY_INDEX"
+		},
+		{
+			"forge": "NUM_DATA_VALUES",
+			"fabric": "PROPERTY_COUNT"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "brewTime",
+			"fabric": "brewTime"
+		},
+		{
+			"forge": "lastPotionCount",
+			"fabric": "slotsEmptyLastTick"
+		},
+		{
+			"forge": "ingredient",
+			"fabric": "itemBrewing"
+		},
+		{
+			"forge": "fuel",
+			"fabric": "fuel"
+		},
+		{
+			"forge": "dataAccess",
+			"fabric": "propertyDelegate"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "serverTick(Level arg0, BlockPos arg1, BlockState arg2, BrewingStandBlockEntity arg3)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, BrewingStandBlockEntity blockEntity)"
+		},
+		{
+			"forge": "getPotionBits()",
+			"fabric": "getSlotsEmpty()"
+		},
+		{
+			"forge": "isBrewable(NonNullList<ItemStack> arg0)",
+			"fabric": "canCraft(DefaultedList<ItemStack> slots)"
+		},
+		{
+			"forge": "doBrew(Level arg0, BlockPos arg1, NonNullList<ItemStack> arg2)",
+			"fabric": "craft(World world, BlockPos pos, DefaultedList<ItemStack> slots)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "canPlaceItem(int arg0, ItemStack arg1)",
+			"fabric": "isValid(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "getSlotsForFace(Direction arg0)",
+			"fabric": "getAvailableSlots(Direction arg0)"
+		},
+		{
+			"forge": "canPlaceItemThroughFace(int arg0, ItemStack arg1, Direction arg2)",
+			"fabric": "canInsert(int arg0, ItemStack arg1, Direction arg2)"
+		},
+		{
+			"forge": "canTakeItemThroughFace(int arg0, ItemStack arg1, Direction arg2)",
+			"fabric": "canExtract(int arg0, ItemStack arg1, Direction arg2)"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1)",
+			"fabric": "createScreenHandler(int arg0, PlayerInventory arg1)"
+		}
+	]
+}

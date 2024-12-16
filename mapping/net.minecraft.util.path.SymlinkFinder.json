@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.validation.DirectoryValidator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.validation.DirectoryValidator",
+			"fabric": "net.minecraft.util.path.SymlinkFinder"
+		},
+		{
+			"forge": "symlinkTargetAllowList",
+			"fabric": "matcher"
+		},
+		{
+			"forge": "symlinkTargetAllowList",
+			"fabric": "matcher"
+		},
+		{
+			"forge": "validateSymlink(Path arg0, List<ForbiddenSymlinkInfo> arg1)",
+			"fabric": "validate(Path path, List<SymlinkEntry> results)"
+		},
+		{
+			"forge": "validateSymlink(Path arg0, List<ForbiddenSymlinkInfo> arg1)",
+			"fabric": "validate(Path path, List<SymlinkEntry> results)"
+		},
+		{
+			"forge": "validateSave(Path arg0, boolean arg1)",
+			"fabric": "collect(Path path, boolean resolveSymlink)"
+		}
+	]
+}

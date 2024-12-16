@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.item.EnchantedBookItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.EnchantedBookItem",
+			"fabric": "net.minecraft.item.EnchantedBookItem"
+		},
+		{
+			"forge": "TAG_STORED_ENCHANTMENTS",
+			"fabric": "STORED_ENCHANTMENTS_KEY"
+		},
+		{
+			"forge": "TAG_STORED_ENCHANTMENTS",
+			"fabric": "STORED_ENCHANTMENTS_KEY"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack arg0)"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack arg0)"
+		},
+		{
+			"forge": "isEnchantable(ItemStack arg0)",
+			"fabric": "isEnchantable(ItemStack arg0)"
+		},
+		{
+			"forge": "getEnchantments(ItemStack arg0)",
+			"fabric": "getEnchantmentNbt(ItemStack stack)"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		},
+		{
+			"forge": "addEnchantment(ItemStack arg0, EnchantmentInstance arg1)",
+			"fabric": "addEnchantment(ItemStack stack, EnchantmentLevelEntry entry)"
+		},
+		{
+			"forge": "createForEnchantment(EnchantmentInstance arg0)",
+			"fabric": "forEnchantment(EnchantmentLevelEntry info)"
+		}
+	]
+}

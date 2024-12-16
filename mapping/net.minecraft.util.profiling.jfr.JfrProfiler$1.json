@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.JfrProfiler$1",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.JfrProfiler$1",
+			"fabric": "net.minecraft.util.profiling.jfr.JfrProfiler$1"
+		},
+		{
+			"forge": "summaryReporter",
+			"fabric": "innerListener"
+		},
+		{
+			"forge": "summaryReporter",
+			"fabric": "innerListener"
+		},
+		{
+			"forge": "recordingStateChanged(Recording arg0)",
+			"fabric": "recordingStateChanged(Recording recording)"
+		},
+		{
+			"forge": "recordingStateChanged(Recording arg0)",
+			"fabric": "recordingStateChanged(Recording recording)"
+		}
+	]
+}

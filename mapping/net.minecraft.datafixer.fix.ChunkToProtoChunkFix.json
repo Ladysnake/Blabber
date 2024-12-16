@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkToProtochunkFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkToProtochunkFix",
+			"fabric": "net.minecraft.datafixer.fix.ChunkToProtoChunkFix"
+		},
+		{
+			"forge": "NUM_SECTIONS",
+			"fabric": "field_29881"
+		},
+		{
+			"forge": "NUM_SECTIONS",
+			"fabric": "field_29881"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixLevel(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "fixChunkData(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixLevel(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "repackBiomes(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixBiomes(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "repackTicks(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixTileTicks(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "packOffsetCoordinates(int arg0, int arg1, int arg2)",
+			"fabric": "packChunkSectionPos(int x, int y, int z)"
+		}
+	]
+}

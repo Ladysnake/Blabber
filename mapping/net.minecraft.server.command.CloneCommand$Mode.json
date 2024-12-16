@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.commands.CloneCommands$Mode",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.CloneCommands$Mode",
+			"fabric": "net.minecraft.server.command.CloneCommand$Mode"
+		},
+		{
+			"forge": "FORCE",
+			"fabric": "FORCE"
+		},
+		{
+			"forge": "FORCE",
+			"fabric": "FORCE"
+		},
+		{
+			"forge": "MOVE",
+			"fabric": "MOVE"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "canOverlap",
+			"fabric": "allowsOverlap"
+		},
+		{
+			"forge": "canOverlap",
+			"fabric": "allowsOverlap"
+		},
+		{
+			"forge": "canOverlap()",
+			"fabric": "allowsOverlap()"
+		},
+		{
+			"forge": "canOverlap()",
+			"fabric": "allowsOverlap()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.advancements.critereon.RecipeUnlockedTrigger",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.RecipeUnlockedTrigger",
+			"fabric": "net.minecraft.advancement.criterion.RecipeUnlockedCriterion"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "createInstance(com.google.gson.JsonObject arg0, ContextAwarePredicate arg1, DeserializationContext arg2)",
+			"fabric": "conditionsFromJson(com.google.gson.JsonObject arg0, LootContextPredicate arg1, AdvancementEntityPredicateDeserializer arg2)"
+		},
+		{
+			"forge": "trigger(ServerPlayer arg0, Recipe<?> arg1)",
+			"fabric": "trigger(ServerPlayerEntity player, Recipe<?> recipe)"
+		},
+		{
+			"forge": "unlocked(ResourceLocation arg0)",
+			"fabric": "create(Identifier id)"
+		}
+	]
+}

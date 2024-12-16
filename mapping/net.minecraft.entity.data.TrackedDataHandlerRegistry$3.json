@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.syncher.EntityDataSerializers$3",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.EntityDataSerializers$3",
+			"fabric": "net.minecraft.entity.data.TrackedDataHandlerRegistry$3"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0, ParticleOptions arg1)",
+			"fabric": "write(PacketByteBuf arg0, ParticleEffect arg1)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0, ParticleOptions arg1)",
+			"fabric": "write(PacketByteBuf arg0, ParticleEffect arg1)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "read(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "readParticle(FriendlyByteBuf arg0, ParticleType<T> arg1)",
+			"fabric": "read(PacketByteBuf buf, ParticleType<T> type)"
+		}
+	]
+}

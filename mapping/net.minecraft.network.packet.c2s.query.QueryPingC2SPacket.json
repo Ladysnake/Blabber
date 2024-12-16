@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.status.ServerboundPingRequestPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.status.ServerboundPingRequestPacket",
+			"fabric": "net.minecraft.network.packet.c2s.query.QueryPingC2SPacket"
+		},
+		{
+			"forge": "time",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "time",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerStatusPacketListener arg0)",
+			"fabric": "apply(ServerQueryPacketListener arg0)"
+		},
+		{
+			"forge": "getTime()",
+			"fabric": "getStartTime()"
+		}
+	]
+}

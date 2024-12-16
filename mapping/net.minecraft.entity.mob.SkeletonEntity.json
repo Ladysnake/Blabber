@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.entity.monster.Skeleton",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Skeleton",
+			"fabric": "net.minecraft.entity.mob.SkeletonEntity"
+		},
+		{
+			"forge": "TOTAL_CONVERSION_TIME",
+			"fabric": "TOTAL_CONVERSION_TIME"
+		},
+		{
+			"forge": "TOTAL_CONVERSION_TIME",
+			"fabric": "TOTAL_CONVERSION_TIME"
+		},
+		{
+			"forge": "DATA_STRAY_CONVERSION_ID",
+			"fabric": "CONVERTING"
+		},
+		{
+			"forge": "CONVERSION_TAG",
+			"fabric": "STRAY_CONVERSION_TIME_KEY"
+		},
+		{
+			"forge": "inPowderSnowTime",
+			"fabric": "inPowderSnowTime"
+		},
+		{
+			"forge": "conversionTime",
+			"fabric": "conversionTime"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "isFreezeConverting()",
+			"fabric": "isConverting()"
+		},
+		{
+			"forge": "setFreezeConverting(boolean arg0)",
+			"fabric": "setConverting(boolean converting)"
+		},
+		{
+			"forge": "isShaking()",
+			"fabric": "isShaking()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "startFreezeConversion(int arg0)",
+			"fabric": "setConversionTime(int time)"
+		},
+		{
+			"forge": "doFreezeConversion()",
+			"fabric": "convertToStray()"
+		},
+		{
+			"forge": "canFreeze()",
+			"fabric": "canFreeze()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getStepSound()",
+			"fabric": "getStepSound()"
+		},
+		{
+			"forge": "dropCustomDeathLoot(DamageSource arg0, int arg1, boolean arg2)",
+			"fabric": "dropEquipment(DamageSource arg0, int arg1, boolean arg2)"
+		}
+	]
+}

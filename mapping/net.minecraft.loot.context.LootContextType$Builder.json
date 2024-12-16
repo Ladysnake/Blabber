@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet$Builder",
+			"fabric": "net.minecraft.loot.context.LootContextType$Builder"
+		},
+		{
+			"forge": "required",
+			"fabric": "required"
+		},
+		{
+			"forge": "required",
+			"fabric": "required"
+		},
+		{
+			"forge": "optional",
+			"fabric": "allowed"
+		},
+		{
+			"forge": "required(LootContextParam<?> arg0)",
+			"fabric": "require(LootContextParameter<?> parameter)"
+		},
+		{
+			"forge": "required(LootContextParam<?> arg0)",
+			"fabric": "require(LootContextParameter<?> parameter)"
+		},
+		{
+			"forge": "optional(LootContextParam<?> arg0)",
+			"fabric": "allow(LootContextParameter<?> parameter)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.nbt.visitors.CollectToTag",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.visitors.CollectToTag",
+			"fabric": "net.minecraft.nbt.scanner.NbtCollector"
+		},
+		{
+			"forge": "lastId",
+			"fabric": "currentKey"
+		},
+		{
+			"forge": "lastId",
+			"fabric": "currentKey"
+		},
+		{
+			"forge": "rootTag",
+			"fabric": "root"
+		},
+		{
+			"forge": "consumerStack",
+			"fabric": "stack"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getRoot()"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getRoot()"
+		},
+		{
+			"forge": "depth()",
+			"fabric": "getDepth()"
+		},
+		{
+			"forge": "appendEntry(Tag arg0)",
+			"fabric": "append(NbtElement nbt)"
+		},
+		{
+			"forge": "visitEnd()",
+			"fabric": "visitEnd()"
+		},
+		{
+			"forge": "visit(String arg0)",
+			"fabric": "visitString(String arg0)"
+		},
+		{
+			"forge": "visit(byte arg0)",
+			"fabric": "visitByte(byte arg0)"
+		},
+		{
+			"forge": "visit(short arg0)",
+			"fabric": "visitShort(short arg0)"
+		},
+		{
+			"forge": "visit(int arg0)",
+			"fabric": "visitInt(int arg0)"
+		},
+		{
+			"forge": "visit(long arg0)",
+			"fabric": "visitLong(long arg0)"
+		},
+		{
+			"forge": "visit(float arg0)",
+			"fabric": "visitFloat(float arg0)"
+		},
+		{
+			"forge": "visit(double arg0)",
+			"fabric": "visitDouble(double arg0)"
+		},
+		{
+			"forge": "visit(byte[] arg0)",
+			"fabric": "visitByteArray(byte[] arg0)"
+		},
+		{
+			"forge": "visit(int[] arg0)",
+			"fabric": "visitIntArray(int[] arg0)"
+		},
+		{
+			"forge": "visit(long[] arg0)",
+			"fabric": "visitLongArray(long[] arg0)"
+		},
+		{
+			"forge": "visitList(TagType<?> arg0, int arg1)",
+			"fabric": "visitListMeta(NbtType<?> arg0, int arg1)"
+		},
+		{
+			"forge": "visitElement(TagType<?> arg0, int arg1)",
+			"fabric": "startListItem(NbtType<?> arg0, int arg1)"
+		},
+		{
+			"forge": "visitEntry(TagType<?> arg0)",
+			"fabric": "visitSubNbtType(NbtType<?> arg0)"
+		},
+		{
+			"forge": "visitEntry(TagType<?> arg0, String arg1)",
+			"fabric": "startSubNbt(NbtType<?> arg0, String arg1)"
+		},
+		{
+			"forge": "enterContainerIfNeeded(TagType<?> arg0)",
+			"fabric": "pushStack(NbtType<?> type)"
+		},
+		{
+			"forge": "visitContainerEnd()",
+			"fabric": "endNested()"
+		},
+		{
+			"forge": "visitRootEntry(TagType<?> arg0)",
+			"fabric": "start(NbtType<?> arg0)"
+		}
+	]
+}

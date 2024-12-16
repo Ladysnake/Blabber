@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.SignRenderer$SignModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.SignRenderer$SignModel",
+			"fabric": "net.minecraft.client.render.block.entity.SignBlockEntityRenderer$SignModel"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "stick",
+			"fabric": "stick"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.RunningOnDifferentThreadException",
+	"items": [
+		{
+			"forge": "net.minecraft.server.RunningOnDifferentThreadException",
+			"fabric": "net.minecraft.network.OffThreadException"
+		},
+		{
+			"forge": "RUNNING_ON_DIFFERENT_THREAD",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "RUNNING_ON_DIFFERENT_THREAD",
+			"fabric": "INSTANCE"
+		}
+	]
+}

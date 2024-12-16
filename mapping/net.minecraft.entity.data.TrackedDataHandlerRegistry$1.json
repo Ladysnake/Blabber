@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.syncher.EntityDataSerializers$1",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.EntityDataSerializers$1",
+			"fabric": "net.minecraft.entity.data.TrackedDataHandlerRegistry$1"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0, ItemStack arg1)",
+			"fabric": "write(PacketByteBuf arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0, ItemStack arg1)",
+			"fabric": "write(PacketByteBuf arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "read(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "copy(ItemStack arg0)",
+			"fabric": "copy(ItemStack arg0)"
+		}
+	]
+}

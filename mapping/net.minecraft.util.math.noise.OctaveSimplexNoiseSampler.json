@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.synth.PerlinSimplexNoise",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.synth.PerlinSimplexNoise",
+			"fabric": "net.minecraft.util.math.noise.OctaveSimplexNoiseSampler"
+		},
+		{
+			"forge": "noiseLevels",
+			"fabric": "octaveSamplers"
+		},
+		{
+			"forge": "noiseLevels",
+			"fabric": "octaveSamplers"
+		},
+		{
+			"forge": "highestFreqValueFactor",
+			"fabric": "persistence"
+		},
+		{
+			"forge": "highestFreqInputFactor",
+			"fabric": "lacunarity"
+		},
+		{
+			"forge": "getValue(double arg0, double arg1, boolean arg2)",
+			"fabric": "sample(double x, double y, boolean useOrigin)"
+		},
+		{
+			"forge": "getValue(double arg0, double arg1, boolean arg2)",
+			"fabric": "sample(double x, double y, boolean useOrigin)"
+		}
+	]
+}

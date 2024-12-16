@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ItemStackSpawnEggFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ItemStackSpawnEggFix",
+			"fabric": "net.minecraft.datafixer.fix.ItemInstanceSpawnEggFix"
+		},
+		{
+			"forge": "itemType",
+			"fabric": "spawnEggId"
+		},
+		{
+			"forge": "itemType",
+			"fabric": "spawnEggId"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "ENTITY_SPAWN_EGGS"
+		}
+	]
+}

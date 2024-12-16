@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsGenericErrorScreen$ErrorMessage",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsGenericErrorScreen$ErrorMessage",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsGenericErrorScreen$ErrorMessages"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "detail",
+			"fabric": "detail"
+		},
+		{
+			"forge": "title()",
+			"fabric": "title()"
+		},
+		{
+			"forge": "title()",
+			"fabric": "title()"
+		},
+		{
+			"forge": "detail()",
+			"fabric": "detail()"
+		}
+	]
+}

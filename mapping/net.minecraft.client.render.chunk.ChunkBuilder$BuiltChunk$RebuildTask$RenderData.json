@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$RebuildTask$CompileResults",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$RebuildTask$CompileResults",
+			"fabric": "net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk$RebuildTask$RenderData"
+		},
+		{
+			"forge": "globalBlockEntities",
+			"fabric": "noCullingBlockEntities"
+		},
+		{
+			"forge": "globalBlockEntities",
+			"fabric": "noCullingBlockEntities"
+		},
+		{
+			"forge": "blockEntities",
+			"fabric": "blockEntities"
+		},
+		{
+			"forge": "renderedLayers",
+			"fabric": "buffers"
+		},
+		{
+			"forge": "visibilitySet",
+			"fabric": "chunkOcclusionData"
+		},
+		{
+			"forge": "transparencyState",
+			"fabric": "translucencySortingData"
+		}
+	]
+}

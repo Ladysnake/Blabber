@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.entity.monster.PatrollingMonster",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.PatrollingMonster",
+			"fabric": "net.minecraft.entity.mob.PatrolEntity"
+		},
+		{
+			"forge": "patrolTarget",
+			"fabric": "patrolTarget"
+		},
+		{
+			"forge": "patrolTarget",
+			"fabric": "patrolTarget"
+		},
+		{
+			"forge": "patrolLeader",
+			"fabric": "patrolLeader"
+		},
+		{
+			"forge": "patrolling",
+			"fabric": "patrolling"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getMyRidingOffset()",
+			"fabric": "getHeightOffset()"
+		},
+		{
+			"forge": "canBeLeader()",
+			"fabric": "canLead()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "checkPatrollingMonsterSpawnRules(EntityType<? extends PatrollingMonster> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<? extends PatrolEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "removeWhenFarAway(double arg0)",
+			"fabric": "canImmediatelyDespawn(double arg0)"
+		},
+		{
+			"forge": "setPatrolTarget(BlockPos arg0)",
+			"fabric": "setPatrolTarget(BlockPos targetPos)"
+		},
+		{
+			"forge": "getPatrolTarget()",
+			"fabric": "getPatrolTarget()"
+		},
+		{
+			"forge": "hasPatrolTarget()",
+			"fabric": "hasPatrolTarget()"
+		},
+		{
+			"forge": "setPatrolLeader(boolean arg0)",
+			"fabric": "setPatrolLeader(boolean patrolLeader)"
+		},
+		{
+			"forge": "isPatrolLeader()",
+			"fabric": "isPatrolLeader()"
+		},
+		{
+			"forge": "canJoinPatrol()",
+			"fabric": "hasNoRaid()"
+		},
+		{
+			"forge": "findPatrolTarget()",
+			"fabric": "setRandomPatrolTarget()"
+		},
+		{
+			"forge": "isPatrolling()",
+			"fabric": "isRaidCenterSet()"
+		},
+		{
+			"forge": "setPatrolling(boolean arg0)",
+			"fabric": "setPatrolling(boolean patrolling)"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.core.RegistryAccess$1FrozenAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistryAccess$1FrozenAccess",
+			"fabric": "net.minecraft.registry.DynamicRegistryManager$Immutablized"
+		}
+	]
+}

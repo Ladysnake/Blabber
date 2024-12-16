@@ -1,0 +1,49 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSelectWorldTemplateScreen$WorldTemplateObjectSelectionList",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSelectWorldTemplateScreen$WorldTemplateObjectSelectionList",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSelectWorldTemplateScreen$WorldTemplateObjectSelectionList"
+		},
+		{
+			"forge": "addEntry(WorldTemplate arg0)",
+			"fabric": "addEntry(WorldTemplate template)"
+		},
+		{
+			"forge": "addEntry(WorldTemplate arg0)",
+			"fabric": "addEntry(WorldTemplate template)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "setSelected(RealmsSelectWorldTemplateScreen$Entry arg0)",
+			"fabric": "setSelected(RealmsSelectWorldTemplateScreen$WorldTemplateObjectSelectionListEntry arg0)"
+		},
+		{
+			"forge": "getMaxPosition()",
+			"fabric": "getMaxPosition()"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext arg0)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "getItem(int index)"
+		},
+		{
+			"forge": "getTemplates()",
+			"fabric": "getValues()"
+		}
+	]
+}

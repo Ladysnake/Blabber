@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.item.SpawnEggItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.SpawnEggItem",
+			"fabric": "net.minecraft.item.SpawnEggItem"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "SPAWN_EGGS"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "SPAWN_EGGS"
+		},
+		{
+			"forge": "backgroundColor",
+			"fabric": "primaryColor"
+		},
+		{
+			"forge": "highlightColor",
+			"fabric": "secondaryColor"
+		},
+		{
+			"forge": "defaultType",
+			"fabric": "type"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "spawnsEntity(CompoundTag arg0, EntityType<?> arg1)",
+			"fabric": "isOfSameEntityType(NbtCompound nbt, EntityType<?> type)"
+		},
+		{
+			"forge": "getColor(int arg0)",
+			"fabric": "getColor(int tintIndex)"
+		},
+		{
+			"forge": "byId(EntityType<?> arg0)",
+			"fabric": "forEntity(EntityType<?> type)"
+		},
+		{
+			"forge": "eggs()",
+			"fabric": "getAll()"
+		},
+		{
+			"forge": "getType(CompoundTag arg0)",
+			"fabric": "getEntityType(NbtCompound nbt)"
+		},
+		{
+			"forge": "requiredFeatures()",
+			"fabric": "getRequiredFeatures()"
+		},
+		{
+			"forge": "spawnOffspringFromSpawnEgg(Player arg0, Mob arg1, EntityType<? extends Mob> arg2, ServerLevel arg3, Vec3 arg4, ItemStack arg5)",
+			"fabric": "spawnBaby(PlayerEntity user, MobEntity entity, EntityType<? extends MobEntity> entityType, ServerWorld world, Vec3d pos, ItemStack stack)"
+		}
+	]
+}

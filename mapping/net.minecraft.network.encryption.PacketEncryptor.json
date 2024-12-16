@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.CipherEncoder",
+	"items": [
+		{
+			"forge": "net.minecraft.network.CipherEncoder",
+			"fabric": "net.minecraft.network.encryption.PacketEncryptor"
+		},
+		{
+			"forge": "cipher",
+			"fabric": "manager"
+		},
+		{
+			"forge": "cipher",
+			"fabric": "manager"
+		},
+		{
+			"forge": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)",
+			"fabric": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)"
+		},
+		{
+			"forge": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)",
+			"fabric": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)"
+		}
+	]
+}

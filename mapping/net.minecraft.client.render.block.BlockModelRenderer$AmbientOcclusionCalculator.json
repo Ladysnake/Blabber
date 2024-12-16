@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.block.ModelBlockRenderer$AmbientOcclusionFace",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.ModelBlockRenderer$AmbientOcclusionFace",
+			"fabric": "net.minecraft.client.render.block.BlockModelRenderer$AmbientOcclusionCalculator"
+		},
+		{
+			"forge": "brightness",
+			"fabric": "brightness"
+		},
+		{
+			"forge": "brightness",
+			"fabric": "brightness"
+		},
+		{
+			"forge": "lightmap",
+			"fabric": "light"
+		},
+		{
+			"forge": "calculate(BlockAndTintGetter arg0, BlockState arg1, BlockPos arg2, Direction arg3, float[] arg4, BitSet arg5, boolean arg6)",
+			"fabric": "apply(BlockRenderView world, BlockState state, BlockPos pos, Direction direction, float[] box, BitSet flags, boolean shaded)"
+		},
+		{
+			"forge": "calculate(BlockAndTintGetter arg0, BlockState arg1, BlockPos arg2, Direction arg3, float[] arg4, BitSet arg5, boolean arg6)",
+			"fabric": "apply(BlockRenderView world, BlockState state, BlockPos pos, Direction direction, float[] box, BitSet flags, boolean shaded)"
+		},
+		{
+			"forge": "blend(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getAmbientOcclusionBrightness(int arg0, int arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "blend(int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "getBrightness(int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		}
+	]
+}

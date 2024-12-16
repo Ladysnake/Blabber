@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.server.LanServerDetection",
+	"items": [
+		{
+			"forge": "net.minecraft.client.server.LanServerDetection",
+			"fabric": "net.minecraft.client.network.LanServerQueryManager"
+		},
+		{
+			"forge": "UNIQUE_THREAD_ID",
+			"fabric": "THREAD_ID"
+		},
+		{
+			"forge": "UNIQUE_THREAD_ID",
+			"fabric": "THREAD_ID"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		}
+	]
+}

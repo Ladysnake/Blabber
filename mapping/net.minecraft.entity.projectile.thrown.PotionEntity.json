@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.projectile.ThrownPotion",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.ThrownPotion",
+			"fabric": "net.minecraft.entity.projectile.thrown.PotionEntity"
+		},
+		{
+			"forge": "SPLASH_RANGE",
+			"fabric": "field_30667"
+		},
+		{
+			"forge": "SPLASH_RANGE",
+			"fabric": "field_30667"
+		},
+		{
+			"forge": "SPLASH_RANGE_SQ",
+			"fabric": "field_30668"
+		},
+		{
+			"forge": "WATER_SENSITIVE_OR_ON_FIRE",
+			"fabric": "AFFECTED_BY_WATER"
+		},
+		{
+			"forge": "getDefaultItem()",
+			"fabric": "getDefaultItem()"
+		},
+		{
+			"forge": "getDefaultItem()",
+			"fabric": "getDefaultItem()"
+		},
+		{
+			"forge": "getGravity()",
+			"fabric": "getGravity()"
+		},
+		{
+			"forge": "onHitBlock(BlockHitResult arg0)",
+			"fabric": "onBlockHit(BlockHitResult arg0)"
+		},
+		{
+			"forge": "onHit(HitResult arg0)",
+			"fabric": "onCollision(HitResult arg0)"
+		},
+		{
+			"forge": "applyWater()",
+			"fabric": "applyWater()"
+		},
+		{
+			"forge": "applySplash(List<MobEffectInstance> arg0, Entity arg1)",
+			"fabric": "applySplashPotion(List<StatusEffectInstance> statusEffects, Entity entity)"
+		},
+		{
+			"forge": "makeAreaOfEffectCloud(ItemStack arg0, Potion arg1)",
+			"fabric": "applyLingeringPotion(ItemStack stack, Potion potion)"
+		},
+		{
+			"forge": "isLingering()",
+			"fabric": "isLingering()"
+		},
+		{
+			"forge": "dowseFire(BlockPos arg0)",
+			"fabric": "extinguishFire(BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket$Action$Reader",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket$Action$Reader",
+			"fabric": "net.minecraft.network.packet.s2c.play.PlayerListS2CPacket$Action$Reader"
+		},
+		{
+			"forge": "read(ClientboundPlayerInfoUpdatePacket$EntryBuilder arg0, FriendlyByteBuf arg1)",
+			"fabric": "read(PlayerListS2CPacket$Serialized serialized, PacketByteBuf buf)"
+		},
+		{
+			"forge": "read(ClientboundPlayerInfoUpdatePacket$EntryBuilder arg0, FriendlyByteBuf arg1)",
+			"fabric": "read(PlayerListS2CPacket$Serialized serialized, PacketByteBuf buf)"
+		}
+	]
+}

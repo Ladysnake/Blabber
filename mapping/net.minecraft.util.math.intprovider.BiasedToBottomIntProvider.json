@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.util.valueproviders.BiasedToBottomInt",
+	"items": [
+		{
+			"forge": "net.minecraft.util.valueproviders.BiasedToBottomInt",
+			"fabric": "net.minecraft.util.math.intprovider.BiasedToBottomIntProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "minInclusive",
+			"fabric": "min"
+		},
+		{
+			"forge": "maxInclusive",
+			"fabric": "max"
+		},
+		{
+			"forge": "of(int arg0, int arg1)",
+			"fabric": "create(int min, int max)"
+		},
+		{
+			"forge": "of(int arg0, int arg1)",
+			"fabric": "create(int min, int max)"
+		},
+		{
+			"forge": "sample(RandomSource arg0)",
+			"fabric": "get(Random arg0)"
+		},
+		{
+			"forge": "getMinValue()",
+			"fabric": "getMin()"
+		},
+		{
+			"forge": "getMaxValue()",
+			"fabric": "getMax()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

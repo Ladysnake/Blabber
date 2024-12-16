@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.resources.model.ModelBakery$ModelBakerImpl",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.ModelBakery$ModelBakerImpl",
+			"fabric": "net.minecraft.client.render.model.ModelLoader$BakerImpl"
+		},
+		{
+			"forge": "modelTextureGetter",
+			"fabric": "textureGetter"
+		},
+		{
+			"forge": "modelTextureGetter",
+			"fabric": "textureGetter"
+		},
+		{
+			"forge": "getModel(ResourceLocation arg0)",
+			"fabric": "getOrLoadModel(Identifier arg0)"
+		},
+		{
+			"forge": "getModel(ResourceLocation arg0)",
+			"fabric": "getOrLoadModel(Identifier arg0)"
+		},
+		{
+			"forge": "bake(ResourceLocation arg0, ModelState arg1)",
+			"fabric": "bake(Identifier arg0, ModelBakeSettings arg1)"
+		}
+	]
+}

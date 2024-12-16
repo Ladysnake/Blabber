@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.ProcessorRule",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.ProcessorRule",
+			"fabric": "net.minecraft.structure.processor.StructureProcessorRule"
+		},
+		{
+			"forge": "DEFAULT_BLOCK_ENTITY_MODIFIER",
+			"fabric": "DEFAULT_BLOCK_ENTITY_MODIFIER"
+		},
+		{
+			"forge": "DEFAULT_BLOCK_ENTITY_MODIFIER",
+			"fabric": "DEFAULT_BLOCK_ENTITY_MODIFIER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "inputPredicate",
+			"fabric": "inputPredicate"
+		},
+		{
+			"forge": "locPredicate",
+			"fabric": "locationPredicate"
+		},
+		{
+			"forge": "posPredicate",
+			"fabric": "positionPredicate"
+		},
+		{
+			"forge": "outputState",
+			"fabric": "outputState"
+		},
+		{
+			"forge": "blockEntityModifier",
+			"fabric": "blockEntityModifier"
+		},
+		{
+			"forge": "test(BlockState arg0, BlockState arg1, BlockPos arg2, BlockPos arg3, BlockPos arg4, RandomSource arg5)",
+			"fabric": "test(BlockState input, BlockState currentState, BlockPos originalPos, BlockPos currentPos, BlockPos pivot, Random random)"
+		},
+		{
+			"forge": "test(BlockState arg0, BlockState arg1, BlockPos arg2, BlockPos arg3, BlockPos arg4, RandomSource arg5)",
+			"fabric": "test(BlockState input, BlockState currentState, BlockPos originalPos, BlockPos currentPos, BlockPos pivot, Random random)"
+		},
+		{
+			"forge": "getOutputState()",
+			"fabric": "getOutputState()"
+		},
+		{
+			"forge": "getOutputTag(RandomSource arg0, CompoundTag arg1)",
+			"fabric": "getOutputNbt(Random random, NbtCompound nbt)"
+		}
+	]
+}

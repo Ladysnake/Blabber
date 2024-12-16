@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.BasaltPillarFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.BasaltPillarFeature",
+			"fabric": "net.minecraft.world.gen.feature.BasaltPillarFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "placeBaseHangOff(LevelAccessor arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "tryPlaceBasalt(WorldAccess world, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "placeHangOff(LevelAccessor arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "stopOrPlaceBasalt(WorldAccess world, Random random, BlockPos pos)"
+		}
+	]
+}

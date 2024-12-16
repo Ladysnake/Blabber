@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.StructureType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.StructureType",
+			"fabric": "net.minecraft.world.gen.structure.StructureType"
+		},
+		{
+			"forge": "BURIED_TREASURE",
+			"fabric": "BURIED_TREASURE"
+		},
+		{
+			"forge": "BURIED_TREASURE",
+			"fabric": "BURIED_TREASURE"
+		},
+		{
+			"forge": "DESERT_PYRAMID",
+			"fabric": "DESERT_PYRAMID"
+		},
+		{
+			"forge": "END_CITY",
+			"fabric": "END_CITY"
+		},
+		{
+			"forge": "FORTRESS",
+			"fabric": "FORTRESS"
+		},
+		{
+			"forge": "IGLOO",
+			"fabric": "IGLOO"
+		},
+		{
+			"forge": "JIGSAW",
+			"fabric": "JIGSAW"
+		},
+		{
+			"forge": "JUNGLE_TEMPLE",
+			"fabric": "JUNGLE_TEMPLE"
+		},
+		{
+			"forge": "MINESHAFT",
+			"fabric": "MINESHAFT"
+		},
+		{
+			"forge": "NETHER_FOSSIL",
+			"fabric": "NETHER_FOSSIL"
+		},
+		{
+			"forge": "OCEAN_MONUMENT",
+			"fabric": "OCEAN_MONUMENT"
+		},
+		{
+			"forge": "OCEAN_RUIN",
+			"fabric": "OCEAN_RUIN"
+		},
+		{
+			"forge": "RUINED_PORTAL",
+			"fabric": "RUINED_PORTAL"
+		},
+		{
+			"forge": "SHIPWRECK",
+			"fabric": "SHIPWRECK"
+		},
+		{
+			"forge": "STRONGHOLD",
+			"fabric": "STRONGHOLD"
+		},
+		{
+			"forge": "SWAMP_HUT",
+			"fabric": "SWAMP_HUT"
+		},
+		{
+			"forge": "WOODLAND_MANSION",
+			"fabric": "WOODLAND_MANSION"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "register(String id, com.mojang.serialization.Codec<S> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<S> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<S> codec)"
+		}
+	]
+}

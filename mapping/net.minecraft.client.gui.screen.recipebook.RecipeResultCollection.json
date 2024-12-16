@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.client.gui.screens.recipebook.RecipeCollection",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.recipebook.RecipeCollection",
+			"fabric": "net.minecraft.client.gui.screen.recipebook.RecipeResultCollection"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "recipes",
+			"fabric": "recipes"
+		},
+		{
+			"forge": "singleResultItem",
+			"fabric": "singleOutput"
+		},
+		{
+			"forge": "craftable",
+			"fabric": "craftableRecipes"
+		},
+		{
+			"forge": "fitsDimensions",
+			"fabric": "fittingRecipes"
+		},
+		{
+			"forge": "known",
+			"fabric": "unlockedRecipes"
+		},
+		{
+			"forge": "allRecipesHaveSameResult(RegistryAccess arg0, List<Recipe<?>> arg1)",
+			"fabric": "shouldHaveSingleOutput(DynamicRegistryManager registryManager, List<Recipe<?>> recipes)"
+		},
+		{
+			"forge": "allRecipesHaveSameResult(RegistryAccess arg0, List<Recipe<?>> arg1)",
+			"fabric": "shouldHaveSingleOutput(DynamicRegistryManager registryManager, List<Recipe<?>> recipes)"
+		},
+		{
+			"forge": "registryAccess()",
+			"fabric": "getRegistryManager()"
+		},
+		{
+			"forge": "hasKnownRecipes()",
+			"fabric": "isInitialized()"
+		},
+		{
+			"forge": "updateKnownRecipes(RecipeBook arg0)",
+			"fabric": "initialize(RecipeBook recipeBook)"
+		},
+		{
+			"forge": "canCraft(StackedContents arg0, int arg1, int arg2, RecipeBook arg3)",
+			"fabric": "computeCraftables(RecipeMatcher recipeFinder, int gridWidth, int gridHeight, RecipeBook recipeBook)"
+		},
+		{
+			"forge": "isCraftable(Recipe<?> arg0)",
+			"fabric": "isCraftable(Recipe<?> recipe)"
+		},
+		{
+			"forge": "hasCraftable()",
+			"fabric": "hasCraftableRecipes()"
+		},
+		{
+			"forge": "hasFitting()",
+			"fabric": "hasFittingRecipes()"
+		},
+		{
+			"forge": "getRecipes()",
+			"fabric": "getAllRecipes()"
+		},
+		{
+			"forge": "getRecipes(boolean arg0)",
+			"fabric": "getResults(boolean craftableOnly)"
+		},
+		{
+			"forge": "getDisplayRecipes(boolean arg0)",
+			"fabric": "getRecipes(boolean craftable)"
+		},
+		{
+			"forge": "hasSingleResultItem()",
+			"fabric": "hasSingleOutput()"
+		}
+	]
+}

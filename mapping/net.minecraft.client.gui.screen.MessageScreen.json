@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.screens.GenericDirtMessageScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.GenericDirtMessageScreen",
+			"fabric": "net.minecraft.client.gui.screen.MessageScreen"
+		},
+		{
+			"forge": "shouldCloseOnEsc()",
+			"fabric": "shouldCloseOnEsc()"
+		},
+		{
+			"forge": "shouldCloseOnEsc()",
+			"fabric": "shouldCloseOnEsc()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

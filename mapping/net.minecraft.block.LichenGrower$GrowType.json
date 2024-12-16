@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.MultifaceSpreader$SpreadType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.MultifaceSpreader$SpreadType",
+			"fabric": "net.minecraft.block.LichenGrower$GrowType"
+		},
+		{
+			"forge": "SAME_POSITION",
+			"fabric": "SAME_POSITION"
+		},
+		{
+			"forge": "SAME_POSITION",
+			"fabric": "SAME_POSITION"
+		},
+		{
+			"forge": "SAME_PLANE",
+			"fabric": "SAME_PLANE"
+		},
+		{
+			"forge": "WRAP_AROUND",
+			"fabric": "WRAP_AROUND"
+		},
+		{
+			"forge": "getSpreadPos(BlockPos arg0, Direction arg1, Direction arg2)",
+			"fabric": "getGrowPos(BlockPos pos, Direction newDirection, Direction oldDirection)"
+		},
+		{
+			"forge": "getSpreadPos(BlockPos arg0, Direction arg1, Direction arg2)",
+			"fabric": "getGrowPos(BlockPos pos, Direction newDirection, Direction oldDirection)"
+		}
+	]
+}

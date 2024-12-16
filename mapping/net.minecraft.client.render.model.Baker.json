@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.resources.model.ModelBaker",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.ModelBaker",
+			"fabric": "net.minecraft.client.render.model.Baker"
+		},
+		{
+			"forge": "getModel(ResourceLocation arg0)",
+			"fabric": "getOrLoadModel(Identifier id)"
+		},
+		{
+			"forge": "getModel(ResourceLocation arg0)",
+			"fabric": "getOrLoadModel(Identifier id)"
+		},
+		{
+			"forge": "bake(ResourceLocation arg0, ModelState arg1)",
+			"fabric": "bake(Identifier id, ModelBakeSettings settings)"
+		}
+	]
+}

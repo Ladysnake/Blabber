@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.util.profiling.EmptyProfileResults",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.EmptyProfileResults",
+			"fabric": "net.minecraft.util.profiler.EmptyProfileResult"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "getTimes(String arg0)",
+			"fabric": "getTimings(String arg0)"
+		},
+		{
+			"forge": "getTimes(String arg0)",
+			"fabric": "getTimings(String arg0)"
+		},
+		{
+			"forge": "saveResults(Path arg0)",
+			"fabric": "save(Path arg0)"
+		},
+		{
+			"forge": "getStartTimeNano()",
+			"fabric": "getStartTime()"
+		},
+		{
+			"forge": "getStartTimeTicks()",
+			"fabric": "getStartTick()"
+		},
+		{
+			"forge": "getEndTimeNano()",
+			"fabric": "getEndTime()"
+		},
+		{
+			"forge": "getEndTimeTicks()",
+			"fabric": "getEndTick()"
+		},
+		{
+			"forge": "getProfilerResults()",
+			"fabric": "getRootTimings()"
+		}
+	]
+}

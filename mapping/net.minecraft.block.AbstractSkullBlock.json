@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.AbstractSkullBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.AbstractSkullBlock",
+			"fabric": "net.minecraft.block.AbstractSkullBlock"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getTicker(Level arg0, BlockState arg1, BlockEntityType<T> arg2)",
+			"fabric": "getTicker(World arg0, BlockState arg1, BlockEntityType<T> arg2)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getSkullType()"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "getEquipmentSlot()",
+			"fabric": "getSlotType()"
+		}
+	]
+}

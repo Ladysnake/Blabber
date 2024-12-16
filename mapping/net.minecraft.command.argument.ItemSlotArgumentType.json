@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.commands.arguments.SlotArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.SlotArgument",
+			"fabric": "net.minecraft.command.argument.ItemSlotArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_UNKNOWN_SLOT",
+			"fabric": "UNKNOWN_SLOT_EXCEPTION"
+		},
+		{
+			"forge": "SLOTS",
+			"fabric": "SLOT_NAMES_TO_SLOT_COMMAND_ID"
+		},
+		{
+			"forge": "slot()",
+			"fabric": "itemSlot()"
+		},
+		{
+			"forge": "slot()",
+			"fabric": "itemSlot()"
+		},
+		{
+			"forge": "getSlot(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getItemSlot(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.block.LanternBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.LanternBlock",
+			"fabric": "net.minecraft.block.LanternBlock"
+		},
+		{
+			"forge": "HANGING",
+			"fabric": "HANGING"
+		},
+		{
+			"forge": "HANGING",
+			"fabric": "HANGING"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "AABB",
+			"fabric": "STANDING_SHAPE"
+		},
+		{
+			"forge": "HANGING_AABB",
+			"fabric": "HANGING_SHAPE"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getConnectedDirection(BlockState arg0)",
+			"fabric": "attachedDirection(BlockState state)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		}
+	]
+}

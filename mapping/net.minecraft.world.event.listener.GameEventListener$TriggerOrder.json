@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.gameevent.GameEventListener$DeliveryMode",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.GameEventListener$DeliveryMode",
+			"fabric": "net.minecraft.world.event.listener.GameEventListener$TriggerOrder"
+		},
+		{
+			"forge": "UNSPECIFIED",
+			"fabric": "UNSPECIFIED"
+		},
+		{
+			"forge": "UNSPECIFIED",
+			"fabric": "UNSPECIFIED"
+		},
+		{
+			"forge": "BY_DISTANCE",
+			"fabric": "BY_DISTANCE"
+		}
+	]
+}

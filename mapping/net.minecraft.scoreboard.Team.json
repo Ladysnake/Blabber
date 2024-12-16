@@ -1,0 +1,181 @@
+{
+	"title": "net.minecraft.world.scores.PlayerTeam",
+	"items": [
+		{
+			"forge": "net.minecraft.world.scores.PlayerTeam",
+			"fabric": "net.minecraft.scoreboard.Team"
+		},
+		{
+			"forge": "BIT_FRIENDLY_FIRE",
+			"fabric": "field_31884"
+		},
+		{
+			"forge": "BIT_FRIENDLY_FIRE",
+			"fabric": "field_31884"
+		},
+		{
+			"forge": "BIT_SEE_INVISIBLES",
+			"fabric": "field_31885"
+		},
+		{
+			"forge": "scoreboard",
+			"fabric": "scoreboard"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "players",
+			"fabric": "playerList"
+		},
+		{
+			"forge": "displayName",
+			"fabric": "displayName"
+		},
+		{
+			"forge": "playerPrefix",
+			"fabric": "prefix"
+		},
+		{
+			"forge": "playerSuffix",
+			"fabric": "suffix"
+		},
+		{
+			"forge": "allowFriendlyFire",
+			"fabric": "friendlyFire"
+		},
+		{
+			"forge": "seeFriendlyInvisibles",
+			"fabric": "showFriendlyInvisibles"
+		},
+		{
+			"forge": "nameTagVisibility",
+			"fabric": "nameTagVisibilityRule"
+		},
+		{
+			"forge": "deathMessageVisibility",
+			"fabric": "deathMessageVisibilityRule"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "collisionRule",
+			"fabric": "collisionRule"
+		},
+		{
+			"forge": "displayNameStyle",
+			"fabric": "nameStyle"
+		},
+		{
+			"forge": "getScoreboard()",
+			"fabric": "getScoreboard()"
+		},
+		{
+			"forge": "getScoreboard()",
+			"fabric": "getScoreboard()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getFormattedDisplayName()",
+			"fabric": "getFormattedName()"
+		},
+		{
+			"forge": "setDisplayName(Component arg0)",
+			"fabric": "setDisplayName(Text displayName)"
+		},
+		{
+			"forge": "setPlayerPrefix(Component arg0)",
+			"fabric": "setPrefix(Text prefix)"
+		},
+		{
+			"forge": "getPlayerPrefix()",
+			"fabric": "getPrefix()"
+		},
+		{
+			"forge": "setPlayerSuffix(Component arg0)",
+			"fabric": "setSuffix(Text suffix)"
+		},
+		{
+			"forge": "getPlayerSuffix()",
+			"fabric": "getSuffix()"
+		},
+		{
+			"forge": "getPlayers()",
+			"fabric": "getPlayerList()"
+		},
+		{
+			"forge": "getFormattedName(Component arg0)",
+			"fabric": "decorateName(Text arg0)"
+		},
+		{
+			"forge": "formatNameForTeam(Team arg0, Component arg1)",
+			"fabric": "decorateName(AbstractTeam team, Text name)"
+		},
+		{
+			"forge": "isAllowFriendlyFire()",
+			"fabric": "isFriendlyFireAllowed()"
+		},
+		{
+			"forge": "setAllowFriendlyFire(boolean arg0)",
+			"fabric": "setFriendlyFireAllowed(boolean friendlyFire)"
+		},
+		{
+			"forge": "canSeeFriendlyInvisibles()",
+			"fabric": "shouldShowFriendlyInvisibles()"
+		},
+		{
+			"forge": "setSeeFriendlyInvisibles(boolean arg0)",
+			"fabric": "setShowFriendlyInvisibles(boolean showFriendlyInvisible)"
+		},
+		{
+			"forge": "getNameTagVisibility()",
+			"fabric": "getNameTagVisibilityRule()"
+		},
+		{
+			"forge": "getDeathMessageVisibility()",
+			"fabric": "getDeathMessageVisibilityRule()"
+		},
+		{
+			"forge": "setNameTagVisibility(Team$Visibility arg0)",
+			"fabric": "setNameTagVisibilityRule(AbstractTeam$VisibilityRule nameTagVisibilityRule)"
+		},
+		{
+			"forge": "setDeathMessageVisibility(Team$Visibility arg0)",
+			"fabric": "setDeathMessageVisibilityRule(AbstractTeam$VisibilityRule deathMessageVisibilityRule)"
+		},
+		{
+			"forge": "getCollisionRule()",
+			"fabric": "getCollisionRule()"
+		},
+		{
+			"forge": "setCollisionRule(Team$CollisionRule arg0)",
+			"fabric": "setCollisionRule(AbstractTeam$CollisionRule collisionRule)"
+		},
+		{
+			"forge": "packOptions()",
+			"fabric": "getFriendlyFlagsBitwise()"
+		},
+		{
+			"forge": "unpackOptions(int arg0)",
+			"fabric": "setFriendlyFlagsBitwise(int flags)"
+		},
+		{
+			"forge": "setColor(ChatFormatting arg0)",
+			"fabric": "setColor(Formatting color)"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		}
+	]
+}

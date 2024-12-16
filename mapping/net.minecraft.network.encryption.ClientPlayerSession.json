@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.network.chat.LocalChatSession",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.LocalChatSession",
+			"fabric": "net.minecraft.network.encryption.ClientPlayerSession"
+		},
+		{
+			"forge": "sessionId",
+			"fabric": "sessionId"
+		},
+		{
+			"forge": "sessionId",
+			"fabric": "sessionId"
+		},
+		{
+			"forge": "keyPair",
+			"fabric": "keyPair"
+		},
+		{
+			"forge": "create(ProfileKeyPair arg0)",
+			"fabric": "create(PlayerKeyPair keyPair)"
+		},
+		{
+			"forge": "create(ProfileKeyPair arg0)",
+			"fabric": "create(PlayerKeyPair keyPair)"
+		},
+		{
+			"forge": "createMessageEncoder(UUID arg0)",
+			"fabric": "createPacker(UUID sender)"
+		},
+		{
+			"forge": "asRemote()",
+			"fabric": "toPublicSession()"
+		},
+		{
+			"forge": "sessionId()",
+			"fabric": "sessionId()"
+		},
+		{
+			"forge": "keyPair()",
+			"fabric": "keyPair()"
+		}
+	]
+}

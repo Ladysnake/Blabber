@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.damagesource.DamageEffects",
+	"items": [
+		{
+			"forge": "net.minecraft.world.damagesource.DamageEffects",
+			"fabric": "net.minecraft.entity.damage.DamageEffects"
+		},
+		{
+			"forge": "HURT",
+			"fabric": "HURT"
+		},
+		{
+			"forge": "HURT",
+			"fabric": "HURT"
+		},
+		{
+			"forge": "THORNS",
+			"fabric": "THORNS"
+		},
+		{
+			"forge": "DROWNING",
+			"fabric": "DROWNING"
+		},
+		{
+			"forge": "BURNING",
+			"fabric": "BURNING"
+		},
+		{
+			"forge": "POKING",
+			"fabric": "POKING"
+		},
+		{
+			"forge": "FREEZING",
+			"fabric": "FREEZING"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "sound",
+			"fabric": "sound"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "sound()",
+			"fabric": "getSound()"
+		}
+	]
+}

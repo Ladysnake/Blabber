@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal",
+			"fabric": "net.minecraft.entity.ai.goal.UniversalAngerGoal"
+		},
+		{
+			"forge": "ALERT_RANGE_Y",
+			"fabric": "BOX_VERTICAL_EXPANSION"
+		},
+		{
+			"forge": "ALERT_RANGE_Y",
+			"fabric": "BOX_VERTICAL_EXPANSION"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "alertOthersOfSameType",
+			"fabric": "triggerOthers"
+		},
+		{
+			"forge": "lastHurtByPlayerTimestamp",
+			"fabric": "lastAttackedTime"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "wasHurtByPlayer()",
+			"fabric": "canStartUniversalAnger()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "getNearbyMobsOfSameType()",
+			"fabric": "getOthersInRange()"
+		}
+	]
+}

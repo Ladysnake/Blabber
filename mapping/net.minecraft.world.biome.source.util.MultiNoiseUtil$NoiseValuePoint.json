@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.biome.Climate$TargetPoint",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.Climate$TargetPoint",
+			"fabric": "net.minecraft.world.biome.source.util.MultiNoiseUtil$NoiseValuePoint"
+		},
+		{
+			"forge": "temperature",
+			"fabric": "temperatureNoise"
+		},
+		{
+			"forge": "temperature",
+			"fabric": "temperatureNoise"
+		},
+		{
+			"forge": "humidity",
+			"fabric": "humidityNoise"
+		},
+		{
+			"forge": "continentalness",
+			"fabric": "continentalnessNoise"
+		},
+		{
+			"forge": "erosion",
+			"fabric": "erosionNoise"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "weirdness",
+			"fabric": "weirdnessNoise"
+		},
+		{
+			"forge": "toParameterArray()",
+			"fabric": "getNoiseValueList()"
+		},
+		{
+			"forge": "toParameterArray()",
+			"fabric": "getNoiseValueList()"
+		},
+		{
+			"forge": "temperature()",
+			"fabric": "temperatureNoise()"
+		},
+		{
+			"forge": "humidity()",
+			"fabric": "humidityNoise()"
+		},
+		{
+			"forge": "continentalness()",
+			"fabric": "continentalnessNoise()"
+		},
+		{
+			"forge": "erosion()",
+			"fabric": "erosionNoise()"
+		},
+		{
+			"forge": "depth()",
+			"fabric": "depth()"
+		},
+		{
+			"forge": "weirdness()",
+			"fabric": "weirdnessNoise()"
+		}
+	]
+}

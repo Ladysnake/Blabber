@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.Fox$FoxSearchForItemsGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Fox$FoxSearchForItemsGoal",
+			"fabric": "net.minecraft.entity.passive.FoxEntity$PickupItemGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		}
+	]
+}

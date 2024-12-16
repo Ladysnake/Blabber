@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.core.RegistrySetBuilder$BuildState",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistrySetBuilder$BuildState",
+			"fabric": "net.minecraft.registry.RegistryBuilder$Registries"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "lookup",
+			"fabric": "lookup"
+		},
+		{
+			"forge": "registries",
+			"fabric": "registries"
+		},
+		{
+			"forge": "registeredValues",
+			"fabric": "registeredValues"
+		},
+		{
+			"forge": "errors",
+			"fabric": "errors"
+		},
+		{
+			"forge": "create(RegistryAccess arg0, Stream<ResourceKey<? extends Registry<?>>> arg1)",
+			"fabric": "of(DynamicRegistryManager dynamicRegistryManager, Stream<RegistryKey<? extends Registry<?>>> registryRefs)"
+		},
+		{
+			"forge": "create(RegistryAccess arg0, Stream<ResourceKey<? extends Registry<?>>> arg1)",
+			"fabric": "of(DynamicRegistryManager dynamicRegistryManager, Stream<RegistryKey<? extends Registry<?>>> registryRefs)"
+		},
+		{
+			"forge": "bootstapContext()",
+			"fabric": "createRegisterable()"
+		},
+		{
+			"forge": "reportRemainingUnreferencedValues()",
+			"fabric": "validateReferences()"
+		},
+		{
+			"forge": "throwOnError()",
+			"fabric": "throwErrors()"
+		},
+		{
+			"forge": "addOwner(HolderOwner<?> arg0)",
+			"fabric": "addOwner(RegistryEntryOwner<?> owner)"
+		},
+		{
+			"forge": "fillMissingHolders(HolderLookup$Provider arg0)",
+			"fabric": "setReferenceEntryValues(RegistryWrapper$WrapperLookup lookup)"
+		},
+		{
+			"forge": "collectReferencedRegistries()",
+			"fabric": "streamRegistries()"
+		},
+		{
+			"forge": "owner()",
+			"fabric": "owner()"
+		},
+		{
+			"forge": "lookup()",
+			"fabric": "lookup()"
+		},
+		{
+			"forge": "registries()",
+			"fabric": "registries()"
+		},
+		{
+			"forge": "registeredValues()",
+			"fabric": "registeredValues()"
+		},
+		{
+			"forge": "errors()",
+			"fabric": "errors()"
+		}
+	]
+}

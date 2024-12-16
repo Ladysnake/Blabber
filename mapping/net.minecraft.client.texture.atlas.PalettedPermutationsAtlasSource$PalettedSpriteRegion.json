@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.sources.PalettedPermutations$PalettedSpriteSupplier",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.sources.PalettedPermutations$PalettedSpriteSupplier",
+			"fabric": "net.minecraft.client.texture.atlas.PalettedPermutationsAtlasSource$PalettedSpriteRegion"
+		},
+		{
+			"forge": "baseImage",
+			"fabric": "baseImage"
+		},
+		{
+			"forge": "baseImage",
+			"fabric": "baseImage"
+		},
+		{
+			"forge": "palette",
+			"fabric": "palette"
+		},
+		{
+			"forge": "permutationLocation",
+			"fabric": "permutationLocation"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "discard()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "baseImage()",
+			"fabric": "baseImage()"
+		},
+		{
+			"forge": "palette()",
+			"fabric": "palette()"
+		},
+		{
+			"forge": "permutationLocation()",
+			"fabric": "permutationLocation()"
+		}
+	]
+}

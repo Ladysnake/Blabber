@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.components.ContainerObjectSelectionList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.ContainerObjectSelectionList",
+			"fabric": "net.minecraft.client.gui.widget.ElementListWidget"
+		},
+		{
+			"forge": "nextFocusPath(FocusNavigationEvent arg0)",
+			"fabric": "getNavigationPath(GuiNavigation arg0)"
+		},
+		{
+			"forge": "nextFocusPath(FocusNavigationEvent arg0)",
+			"fabric": "getNavigationPath(GuiNavigation arg0)"
+		},
+		{
+			"forge": "setFocused(GuiEventListener arg0)",
+			"fabric": "setFocused(Element arg0)"
+		},
+		{
+			"forge": "narrationPriority()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "isSelectedItem(int arg0)",
+			"fabric": "isSelectedEntry(int arg0)"
+		},
+		{
+			"forge": "updateNarration(NarrationElementOutput arg0)",
+			"fabric": "appendNarrations(NarrationMessageBuilder arg0)"
+		}
+	]
+}

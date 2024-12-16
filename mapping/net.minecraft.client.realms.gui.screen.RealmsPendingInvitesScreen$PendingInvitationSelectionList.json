@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsPendingInvitesScreen$PendingInvitationSelectionList",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsPendingInvitesScreen$PendingInvitationSelectionList",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsPendingInvitesScreen$PendingInvitationSelectionList"
+		},
+		{
+			"forge": "removeAtIndex(int arg0)",
+			"fabric": "removeAtIndex(int index)"
+		},
+		{
+			"forge": "removeAtIndex(int arg0)",
+			"fabric": "removeAtIndex(int index)"
+		},
+		{
+			"forge": "getMaxPosition()",
+			"fabric": "getMaxPosition()"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext arg0)"
+		},
+		{
+			"forge": "selectItem(int arg0)",
+			"fabric": "setSelected(int arg0)"
+		},
+		{
+			"forge": "selectInviteListItem(int arg0)",
+			"fabric": "selectInviteListItem(int item)"
+		},
+		{
+			"forge": "setSelected(RealmsPendingInvitesScreen$Entry arg0)",
+			"fabric": "setSelected(RealmsPendingInvitesScreen$PendingInvitationSelectionListEntry arg0)"
+		}
+	]
+}

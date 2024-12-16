@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.item.enchantment.DigDurabilityEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.DigDurabilityEnchantment",
+			"fabric": "net.minecraft.enchantment.UnbreakingEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "getMaxLevel()",
+			"fabric": "getMaxLevel()"
+		},
+		{
+			"forge": "canEnchant(ItemStack arg0)",
+			"fabric": "isAcceptableItem(ItemStack arg0)"
+		},
+		{
+			"forge": "shouldIgnoreDurabilityDrop(ItemStack arg0, int arg1, RandomSource arg2)",
+			"fabric": "shouldPreventDamage(ItemStack item, int level, Random random)"
+		}
+	]
+}

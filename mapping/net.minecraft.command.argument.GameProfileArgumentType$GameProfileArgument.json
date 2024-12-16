@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.arguments.GameProfileArgument$Result",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.GameProfileArgument$Result",
+			"fabric": "net.minecraft.command.argument.GameProfileArgumentType$GameProfileArgument"
+		},
+		{
+			"forge": "getNames(CommandSourceStack arg0)",
+			"fabric": "getNames(ServerCommandSource source)"
+		},
+		{
+			"forge": "getNames(CommandSourceStack arg0)",
+			"fabric": "getNames(ServerCommandSource source)"
+		}
+	]
+}

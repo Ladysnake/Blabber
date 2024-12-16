@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.components.toasts.AdvancementToast",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.toasts.AdvancementToast",
+			"fabric": "net.minecraft.client.toast.AdvancementToast"
+		},
+		{
+			"forge": "DISPLAY_TIME",
+			"fabric": "DEFAULT_DURATION_MS"
+		},
+		{
+			"forge": "DISPLAY_TIME",
+			"fabric": "DEFAULT_DURATION_MS"
+		},
+		{
+			"forge": "advancement",
+			"fabric": "advancement"
+		},
+		{
+			"forge": "playedSound",
+			"fabric": "soundPlayed"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, ToastComponent arg1, long arg2)",
+			"fabric": "draw(DrawContext arg0, ToastManager arg1, long arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, ToastComponent arg1, long arg2)",
+			"fabric": "draw(DrawContext arg0, ToastManager arg1, long arg2)"
+		}
+	]
+}

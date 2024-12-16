@@ -1,0 +1,257 @@
+{
+	"title": "net.minecraft.client.sounds.SoundEngine",
+	"items": [
+		{
+			"forge": "net.minecraft.client.sounds.SoundEngine",
+			"fabric": "net.minecraft.client.sound.SoundSystem"
+		},
+		{
+			"forge": "MARKER",
+			"fabric": "MARKER"
+		},
+		{
+			"forge": "MARKER",
+			"fabric": "MARKER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "PITCH_MIN",
+			"fabric": "MIN_PITCH"
+		},
+		{
+			"forge": "PITCH_MAX",
+			"fabric": "MAX_PITCH"
+		},
+		{
+			"forge": "VOLUME_MIN",
+			"fabric": "MIN_VOLUME"
+		},
+		{
+			"forge": "VOLUME_MAX",
+			"fabric": "MAX_VOLUME"
+		},
+		{
+			"forge": "MIN_SOURCE_LIFETIME",
+			"fabric": "field_33025"
+		},
+		{
+			"forge": "ONLY_WARN_ONCE",
+			"fabric": "UNKNOWN_SOUNDS"
+		},
+		{
+			"forge": "DEFAULT_DEVICE_CHECK_INTERVAL_MS",
+			"fabric": "MIN_TIME_INTERVAL_TO_RELOAD_SOUNDS"
+		},
+		{
+			"forge": "MISSING_SOUND",
+			"fabric": "FOR_THE_DEBUG"
+		},
+		{
+			"forge": "OPEN_AL_SOFT_PREFIX",
+			"fabric": "OPENAL_SOFT_ON"
+		},
+		{
+			"forge": "OPEN_AL_SOFT_PREFIX_LENGTH",
+			"fabric": "OPENAL_SOFT_ON_LENGTH"
+		},
+		{
+			"forge": "soundManager",
+			"fabric": "loader"
+		},
+		{
+			"forge": "options",
+			"fabric": "settings"
+		},
+		{
+			"forge": "loaded",
+			"fabric": "started"
+		},
+		{
+			"forge": "library",
+			"fabric": "soundEngine"
+		},
+		{
+			"forge": "listener",
+			"fabric": "listener"
+		},
+		{
+			"forge": "soundBuffers",
+			"fabric": "soundLoader"
+		},
+		{
+			"forge": "executor",
+			"fabric": "taskQueue"
+		},
+		{
+			"forge": "channelAccess",
+			"fabric": "channel"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "lastDeviceCheckTime",
+			"fabric": "lastSoundDeviceCheckTime"
+		},
+		{
+			"forge": "devicePoolState",
+			"fabric": "deviceChangeStatus"
+		},
+		{
+			"forge": "instanceToChannel",
+			"fabric": "sources"
+		},
+		{
+			"forge": "instanceBySource",
+			"fabric": "sounds"
+		},
+		{
+			"forge": "tickingSounds",
+			"fabric": "tickingSounds"
+		},
+		{
+			"forge": "queuedSounds",
+			"fabric": "startTicks"
+		},
+		{
+			"forge": "soundDeleteTime",
+			"fabric": "soundEndTicks"
+		},
+		{
+			"forge": "listeners",
+			"fabric": "listeners"
+		},
+		{
+			"forge": "queuedTickableSounds",
+			"fabric": "soundsToPlayNextTick"
+		},
+		{
+			"forge": "preloadQueue",
+			"fabric": "preloadedSounds"
+		},
+		{
+			"forge": "reload()",
+			"fabric": "reloadSounds()"
+		},
+		{
+			"forge": "reload()",
+			"fabric": "reloadSounds()"
+		},
+		{
+			"forge": "loadLibrary()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "getVolume(SoundSource arg0)",
+			"fabric": "getSoundVolume(SoundCategory category)"
+		},
+		{
+			"forge": "updateCategoryVolume(SoundSource arg0, float arg1)",
+			"fabric": "updateSoundVolume(SoundCategory category, float volume)"
+		},
+		{
+			"forge": "destroy()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "stop(SoundInstance arg0)",
+			"fabric": "stop(SoundInstance sound)"
+		},
+		{
+			"forge": "stopAll()",
+			"fabric": "stopAll()"
+		},
+		{
+			"forge": "addEventListener(SoundEventListener arg0)",
+			"fabric": "registerListener(SoundInstanceListener listener)"
+		},
+		{
+			"forge": "removeEventListener(SoundEventListener arg0)",
+			"fabric": "unregisterListener(SoundInstanceListener listener)"
+		},
+		{
+			"forge": "shouldChangeDevice()",
+			"fabric": "shouldReloadSounds()"
+		},
+		{
+			"forge": "tick(boolean arg0)",
+			"fabric": "tick(boolean paused)"
+		},
+		{
+			"forge": "tickNonPaused()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "requiresManualLooping(SoundInstance arg0)",
+			"fabric": "canRepeatInstantly(SoundInstance sound)"
+		},
+		{
+			"forge": "shouldLoopManually(SoundInstance arg0)",
+			"fabric": "isRepeatDelayed(SoundInstance sound)"
+		},
+		{
+			"forge": "shouldLoopAutomatically(SoundInstance arg0)",
+			"fabric": "shouldRepeatInstantly(SoundInstance sound)"
+		},
+		{
+			"forge": "isActive(SoundInstance arg0)",
+			"fabric": "isPlaying(SoundInstance sound)"
+		},
+		{
+			"forge": "play(SoundInstance arg0)",
+			"fabric": "play(SoundInstance sound)"
+		},
+		{
+			"forge": "queueTickingSound(TickableSoundInstance arg0)",
+			"fabric": "playNextTick(TickableSoundInstance sound)"
+		},
+		{
+			"forge": "requestPreload(Sound arg0)",
+			"fabric": "addPreloadedSound(Sound sound)"
+		},
+		{
+			"forge": "calculatePitch(SoundInstance arg0)",
+			"fabric": "getAdjustedPitch(SoundInstance sound)"
+		},
+		{
+			"forge": "calculateVolume(SoundInstance arg0)",
+			"fabric": "getAdjustedVolume(SoundInstance sound)"
+		},
+		{
+			"forge": "calculateVolume(float arg0, SoundSource arg1)",
+			"fabric": "getAdjustedVolume(float volume, SoundCategory category)"
+		},
+		{
+			"forge": "pause()",
+			"fabric": "pauseAll()"
+		},
+		{
+			"forge": "resume()",
+			"fabric": "resumeAll()"
+		},
+		{
+			"forge": "playDelayed(SoundInstance arg0, int arg1)",
+			"fabric": "play(SoundInstance sound, int delay)"
+		},
+		{
+			"forge": "updateSource(Camera arg0)",
+			"fabric": "updateListenerPosition(Camera camera)"
+		},
+		{
+			"forge": "stop(ResourceLocation arg0, SoundSource arg1)",
+			"fabric": "stopSounds(Identifier id, SoundCategory category)"
+		},
+		{
+			"forge": "getDebugString()",
+			"fabric": "getDebugString()"
+		},
+		{
+			"forge": "getAvailableSoundDevices()",
+			"fabric": "getSoundDevices()"
+		}
+	]
+}

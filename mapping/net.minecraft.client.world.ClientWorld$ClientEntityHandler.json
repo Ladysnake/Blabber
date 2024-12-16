@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientLevel$EntityCallbacks",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientLevel$EntityCallbacks",
+			"fabric": "net.minecraft.client.world.ClientWorld$ClientEntityHandler"
+		},
+		{
+			"forge": "onCreated(Entity arg0)",
+			"fabric": "create(Entity arg0)"
+		},
+		{
+			"forge": "onCreated(Entity arg0)",
+			"fabric": "create(Entity arg0)"
+		},
+		{
+			"forge": "onDestroyed(Entity arg0)",
+			"fabric": "destroy(Entity arg0)"
+		},
+		{
+			"forge": "onTickingStart(Entity arg0)",
+			"fabric": "startTicking(Entity arg0)"
+		},
+		{
+			"forge": "onTickingEnd(Entity arg0)",
+			"fabric": "stopTicking(Entity arg0)"
+		},
+		{
+			"forge": "onTrackingStart(Entity arg0)",
+			"fabric": "startTracking(Entity arg0)"
+		},
+		{
+			"forge": "onTrackingEnd(Entity arg0)",
+			"fabric": "stopTracking(Entity arg0)"
+		},
+		{
+			"forge": "onSectionChange(Entity arg0)",
+			"fabric": "updateLoadStatus(Entity arg0)"
+		}
+	]
+}

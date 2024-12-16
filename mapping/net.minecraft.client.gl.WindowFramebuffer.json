@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.blaze3d.pipeline.MainTarget",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.pipeline.MainTarget",
+			"fabric": "net.minecraft.client.gl.WindowFramebuffer"
+		},
+		{
+			"forge": "DEFAULT_WIDTH",
+			"fabric": "DEFAULT_WIDTH"
+		},
+		{
+			"forge": "DEFAULT_WIDTH",
+			"fabric": "DEFAULT_WIDTH"
+		},
+		{
+			"forge": "DEFAULT_HEIGHT",
+			"fabric": "DEFAULT_HEIGHT"
+		},
+		{
+			"forge": "DEFAULT_DIMENSIONS",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "createFrameBuffer(int arg0, int arg1)",
+			"fabric": "init(int width, int height)"
+		},
+		{
+			"forge": "createFrameBuffer(int arg0, int arg1)",
+			"fabric": "init(int width, int height)"
+		},
+		{
+			"forge": "allocateAttachments(int arg0, int arg1)",
+			"fabric": "findSuitableSize(int width, int height)"
+		},
+		{
+			"forge": "allocateColorAttachment(MainTarget$Dimension arg0)",
+			"fabric": "supportsColor(WindowFramebuffer$Size size)"
+		},
+		{
+			"forge": "allocateDepthAttachment(MainTarget$Dimension arg0)",
+			"fabric": "supportsDepth(WindowFramebuffer$Size size)"
+		}
+	]
+}

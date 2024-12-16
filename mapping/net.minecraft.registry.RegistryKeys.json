@@ -1,0 +1,377 @@
+{
+	"title": "net.minecraft.core.registries.Registries",
+	"items": [
+		{
+			"forge": "net.minecraft.core.registries.Registries",
+			"fabric": "net.minecraft.registry.RegistryKeys"
+		},
+		{
+			"forge": "ACTIVITY",
+			"fabric": "ACTIVITY"
+		},
+		{
+			"forge": "ACTIVITY",
+			"fabric": "ACTIVITY"
+		},
+		{
+			"forge": "ATTRIBUTE",
+			"fabric": "ATTRIBUTE"
+		},
+		{
+			"forge": "BANNER_PATTERN",
+			"fabric": "BANNER_PATTERN"
+		},
+		{
+			"forge": "BIOME_SOURCE",
+			"fabric": "BIOME_SOURCE"
+		},
+		{
+			"forge": "BLOCK",
+			"fabric": "BLOCK"
+		},
+		{
+			"forge": "BLOCK_ENTITY_TYPE",
+			"fabric": "BLOCK_ENTITY_TYPE"
+		},
+		{
+			"forge": "BLOCK_PREDICATE_TYPE",
+			"fabric": "BLOCK_PREDICATE_TYPE"
+		},
+		{
+			"forge": "BLOCK_STATE_PROVIDER_TYPE",
+			"fabric": "BLOCK_STATE_PROVIDER_TYPE"
+		},
+		{
+			"forge": "CARVER",
+			"fabric": "CARVER"
+		},
+		{
+			"forge": "CAT_VARIANT",
+			"fabric": "CAT_VARIANT"
+		},
+		{
+			"forge": "CHUNK_GENERATOR",
+			"fabric": "CHUNK_GENERATOR"
+		},
+		{
+			"forge": "CHUNK_STATUS",
+			"fabric": "CHUNK_STATUS"
+		},
+		{
+			"forge": "COMMAND_ARGUMENT_TYPE",
+			"fabric": "COMMAND_ARGUMENT_TYPE"
+		},
+		{
+			"forge": "CREATIVE_MODE_TAB",
+			"fabric": "ITEM_GROUP"
+		},
+		{
+			"forge": "CUSTOM_STAT",
+			"fabric": "CUSTOM_STAT"
+		},
+		{
+			"forge": "DAMAGE_TYPE",
+			"fabric": "DAMAGE_TYPE"
+		},
+		{
+			"forge": "DENSITY_FUNCTION_TYPE",
+			"fabric": "DENSITY_FUNCTION_TYPE"
+		},
+		{
+			"forge": "ENCHANTMENT",
+			"fabric": "ENCHANTMENT"
+		},
+		{
+			"forge": "ENTITY_TYPE",
+			"fabric": "ENTITY_TYPE"
+		},
+		{
+			"forge": "FEATURE",
+			"fabric": "FEATURE"
+		},
+		{
+			"forge": "FEATURE_SIZE_TYPE",
+			"fabric": "FEATURE_SIZE_TYPE"
+		},
+		{
+			"forge": "FLOAT_PROVIDER_TYPE",
+			"fabric": "FLOAT_PROVIDER_TYPE"
+		},
+		{
+			"forge": "FLUID",
+			"fabric": "FLUID"
+		},
+		{
+			"forge": "FOLIAGE_PLACER_TYPE",
+			"fabric": "FOLIAGE_PLACER_TYPE"
+		},
+		{
+			"forge": "FROG_VARIANT",
+			"fabric": "FROG_VARIANT"
+		},
+		{
+			"forge": "GAME_EVENT",
+			"fabric": "GAME_EVENT"
+		},
+		{
+			"forge": "HEIGHT_PROVIDER_TYPE",
+			"fabric": "HEIGHT_PROVIDER_TYPE"
+		},
+		{
+			"forge": "INSTRUMENT",
+			"fabric": "INSTRUMENT"
+		},
+		{
+			"forge": "INT_PROVIDER_TYPE",
+			"fabric": "INT_PROVIDER_TYPE"
+		},
+		{
+			"forge": "ITEM",
+			"fabric": "ITEM"
+		},
+		{
+			"forge": "LOOT_CONDITION_TYPE",
+			"fabric": "LOOT_CONDITION_TYPE"
+		},
+		{
+			"forge": "LOOT_FUNCTION_TYPE",
+			"fabric": "LOOT_FUNCTION_TYPE"
+		},
+		{
+			"forge": "LOOT_NBT_PROVIDER_TYPE",
+			"fabric": "LOOT_NBT_PROVIDER_TYPE"
+		},
+		{
+			"forge": "LOOT_NUMBER_PROVIDER_TYPE",
+			"fabric": "LOOT_NUMBER_PROVIDER_TYPE"
+		},
+		{
+			"forge": "LOOT_POOL_ENTRY_TYPE",
+			"fabric": "LOOT_POOL_ENTRY_TYPE"
+		},
+		{
+			"forge": "LOOT_SCORE_PROVIDER_TYPE",
+			"fabric": "LOOT_SCORE_PROVIDER_TYPE"
+		},
+		{
+			"forge": "MATERIAL_CONDITION",
+			"fabric": "MATERIAL_CONDITION"
+		},
+		{
+			"forge": "MATERIAL_RULE",
+			"fabric": "MATERIAL_RULE"
+		},
+		{
+			"forge": "MEMORY_MODULE_TYPE",
+			"fabric": "MEMORY_MODULE_TYPE"
+		},
+		{
+			"forge": "MENU",
+			"fabric": "SCREEN_HANDLER"
+		},
+		{
+			"forge": "MOB_EFFECT",
+			"fabric": "STATUS_EFFECT"
+		},
+		{
+			"forge": "PAINTING_VARIANT",
+			"fabric": "PAINTING_VARIANT"
+		},
+		{
+			"forge": "PARTICLE_TYPE",
+			"fabric": "PARTICLE_TYPE"
+		},
+		{
+			"forge": "PLACEMENT_MODIFIER_TYPE",
+			"fabric": "PLACEMENT_MODIFIER_TYPE"
+		},
+		{
+			"forge": "POINT_OF_INTEREST_TYPE",
+			"fabric": "POINT_OF_INTEREST_TYPE"
+		},
+		{
+			"forge": "POSITION_SOURCE_TYPE",
+			"fabric": "POSITION_SOURCE_TYPE"
+		},
+		{
+			"forge": "POS_RULE_TEST",
+			"fabric": "POS_RULE_TEST"
+		},
+		{
+			"forge": "POTION",
+			"fabric": "POTION"
+		},
+		{
+			"forge": "RECIPE_SERIALIZER",
+			"fabric": "RECIPE_SERIALIZER"
+		},
+		{
+			"forge": "RECIPE_TYPE",
+			"fabric": "RECIPE_TYPE"
+		},
+		{
+			"forge": "ROOT_PLACER_TYPE",
+			"fabric": "ROOT_PLACER_TYPE"
+		},
+		{
+			"forge": "RULE_TEST",
+			"fabric": "RULE_TEST"
+		},
+		{
+			"forge": "RULE_BLOCK_ENTITY_MODIFIER",
+			"fabric": "RULE_BLOCK_ENTITY_MODIFIER"
+		},
+		{
+			"forge": "SCHEDULE",
+			"fabric": "SCHEDULE"
+		},
+		{
+			"forge": "SENSOR_TYPE",
+			"fabric": "SENSOR_TYPE"
+		},
+		{
+			"forge": "SOUND_EVENT",
+			"fabric": "SOUND_EVENT"
+		},
+		{
+			"forge": "STAT_TYPE",
+			"fabric": "STAT_TYPE"
+		},
+		{
+			"forge": "STRUCTURE_PIECE",
+			"fabric": "STRUCTURE_PIECE"
+		},
+		{
+			"forge": "STRUCTURE_PLACEMENT",
+			"fabric": "STRUCTURE_PLACEMENT"
+		},
+		{
+			"forge": "STRUCTURE_POOL_ELEMENT",
+			"fabric": "STRUCTURE_POOL_ELEMENT"
+		},
+		{
+			"forge": "STRUCTURE_PROCESSOR",
+			"fabric": "STRUCTURE_PROCESSOR"
+		},
+		{
+			"forge": "STRUCTURE_TYPE",
+			"fabric": "STRUCTURE_TYPE"
+		},
+		{
+			"forge": "TREE_DECORATOR_TYPE",
+			"fabric": "TREE_DECORATOR_TYPE"
+		},
+		{
+			"forge": "TRUNK_PLACER_TYPE",
+			"fabric": "TRUNK_PLACER_TYPE"
+		},
+		{
+			"forge": "VILLAGER_PROFESSION",
+			"fabric": "VILLAGER_PROFESSION"
+		},
+		{
+			"forge": "VILLAGER_TYPE",
+			"fabric": "VILLAGER_TYPE"
+		},
+		{
+			"forge": "DECORATED_POT_PATTERNS",
+			"fabric": "DECORATED_POT_PATTERN"
+		},
+		{
+			"forge": "BIOME",
+			"fabric": "BIOME"
+		},
+		{
+			"forge": "CHAT_TYPE",
+			"fabric": "MESSAGE_TYPE"
+		},
+		{
+			"forge": "CONFIGURED_CARVER",
+			"fabric": "CONFIGURED_CARVER"
+		},
+		{
+			"forge": "CONFIGURED_FEATURE",
+			"fabric": "CONFIGURED_FEATURE"
+		},
+		{
+			"forge": "DENSITY_FUNCTION",
+			"fabric": "DENSITY_FUNCTION"
+		},
+		{
+			"forge": "DIMENSION_TYPE",
+			"fabric": "DIMENSION_TYPE"
+		},
+		{
+			"forge": "FLAT_LEVEL_GENERATOR_PRESET",
+			"fabric": "FLAT_LEVEL_GENERATOR_PRESET"
+		},
+		{
+			"forge": "NOISE_SETTINGS",
+			"fabric": "CHUNK_GENERATOR_SETTINGS"
+		},
+		{
+			"forge": "NOISE",
+			"fabric": "NOISE_PARAMETERS"
+		},
+		{
+			"forge": "PLACED_FEATURE",
+			"fabric": "PLACED_FEATURE"
+		},
+		{
+			"forge": "STRUCTURE",
+			"fabric": "STRUCTURE"
+		},
+		{
+			"forge": "PROCESSOR_LIST",
+			"fabric": "PROCESSOR_LIST"
+		},
+		{
+			"forge": "STRUCTURE_SET",
+			"fabric": "STRUCTURE_SET"
+		},
+		{
+			"forge": "TEMPLATE_POOL",
+			"fabric": "TEMPLATE_POOL"
+		},
+		{
+			"forge": "TRIM_MATERIAL",
+			"fabric": "TRIM_MATERIAL"
+		},
+		{
+			"forge": "TRIM_PATTERN",
+			"fabric": "TRIM_PATTERN"
+		},
+		{
+			"forge": "WORLD_PRESET",
+			"fabric": "WORLD_PRESET"
+		},
+		{
+			"forge": "MULTI_NOISE_BIOME_SOURCE_PARAMETER_LIST",
+			"fabric": "MULTI_NOISE_BIOME_SOURCE_PARAMETER_LIST"
+		},
+		{
+			"forge": "DIMENSION",
+			"fabric": "WORLD"
+		},
+		{
+			"forge": "LEVEL_STEM",
+			"fabric": "DIMENSION"
+		},
+		{
+			"forge": "levelStemToLevel(ResourceKey<LevelStem> arg0)",
+			"fabric": "toWorldKey(RegistryKey<DimensionOptions> key)"
+		},
+		{
+			"forge": "levelStemToLevel(ResourceKey<LevelStem> arg0)",
+			"fabric": "toWorldKey(RegistryKey<DimensionOptions> key)"
+		},
+		{
+			"forge": "levelToLevelStem(ResourceKey<Level> arg0)",
+			"fabric": "toDimensionKey(RegistryKey<World> key)"
+		},
+		{
+			"forge": "createRegistryKey(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

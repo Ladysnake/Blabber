@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.core.BlockSourceImpl",
+	"items": [
+		{
+			"forge": "net.minecraft.core.BlockSourceImpl",
+			"fabric": "net.minecraft.util.math.BlockPointerImpl"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "y()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "z()",
+			"fabric": "getZ()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getBlockState()",
+			"fabric": "getBlockState()"
+		},
+		{
+			"forge": "getEntity()",
+			"fabric": "getBlockEntity()"
+		}
+	]
+}

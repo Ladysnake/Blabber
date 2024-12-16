@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.level.block.BaseRailBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BaseRailBlock",
+			"fabric": "net.minecraft.block.AbstractRailBlock"
+		},
+		{
+			"forge": "FLAT_AABB",
+			"fabric": "STRAIGHT_SHAPE"
+		},
+		{
+			"forge": "FLAT_AABB",
+			"fabric": "STRAIGHT_SHAPE"
+		},
+		{
+			"forge": "HALF_BLOCK_AABB",
+			"fabric": "ASCENDING_SHAPE"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "isStraight",
+			"fabric": "forbidCurves"
+		},
+		{
+			"forge": "isRail(Level arg0, BlockPos arg1)",
+			"fabric": "isRail(World world, BlockPos pos)"
+		},
+		{
+			"forge": "isRail(Level arg0, BlockPos arg1)",
+			"fabric": "isRail(World world, BlockPos pos)"
+		},
+		{
+			"forge": "isRail(BlockState arg0)",
+			"fabric": "isRail(BlockState state)"
+		},
+		{
+			"forge": "isStraight()",
+			"fabric": "cannotMakeCurves()"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "updateState(BlockState arg0, Level arg1, BlockPos arg2, boolean arg3)",
+			"fabric": "updateCurves(BlockState state, World world, BlockPos pos, boolean notify)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "shouldBeRemoved(BlockPos arg0, Level arg1, RailShape arg2)",
+			"fabric": "shouldDropRail(BlockPos pos, World world, RailShape shape)"
+		},
+		{
+			"forge": "updateState(BlockState arg0, Level arg1, BlockPos arg2, Block arg3)",
+			"fabric": "updateBlockState(BlockState state, World world, BlockPos pos, Block neighbor)"
+		},
+		{
+			"forge": "updateDir(Level arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "updateBlockState(World world, BlockPos pos, BlockState state, boolean forceUpdate)"
+		},
+		{
+			"forge": "onRemove(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onStateReplaced(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getShapeProperty()",
+			"fabric": "getShapeProperty()"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		}
+	]
+}

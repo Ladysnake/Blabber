@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.controls.KeyBindsList$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.controls.KeyBindsList$Entry",
+			"fabric": "net.minecraft.client.gui.screen.option.ControlsListWidget$Entry"
+		},
+		{
+			"forge": "refreshEntry()",
+			"fabric": "update()"
+		},
+		{
+			"forge": "refreshEntry()",
+			"fabric": "update()"
+		}
+	]
+}

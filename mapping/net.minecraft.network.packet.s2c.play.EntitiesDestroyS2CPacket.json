@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundRemoveEntitiesPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundRemoveEntitiesPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.EntitiesDestroyS2CPacket"
+		},
+		{
+			"forge": "entityIds",
+			"fabric": "entityIds"
+		},
+		{
+			"forge": "entityIds",
+			"fabric": "entityIds"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getEntityIds()",
+			"fabric": "getEntityIds()"
+		}
+	]
+}

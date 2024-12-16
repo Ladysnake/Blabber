@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.realmsclient.client.Ping",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.client.Ping",
+			"fabric": "net.minecraft.client.realms.Ping"
+		},
+		{
+			"forge": "ping(Ping$Region... arg0)",
+			"fabric": "ping(Ping$Region... regions)"
+		},
+		{
+			"forge": "ping(Ping$Region... arg0)",
+			"fabric": "ping(Ping$Region... regions)"
+		},
+		{
+			"forge": "ping(String arg0)",
+			"fabric": "ping(String host)"
+		},
+		{
+			"forge": "now()",
+			"fabric": "now()"
+		},
+		{
+			"forge": "pingAllRegions()",
+			"fabric": "pingAllRegions()"
+		}
+	]
+}

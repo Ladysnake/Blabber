@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.texture.StitcherException",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.StitcherException",
+			"fabric": "net.minecraft.client.texture.TextureStitcherCannotFitException"
+		},
+		{
+			"forge": "allSprites",
+			"fabric": "sprites"
+		},
+		{
+			"forge": "allSprites",
+			"fabric": "sprites"
+		},
+		{
+			"forge": "getAllSprites()",
+			"fabric": "getSprites()"
+		},
+		{
+			"forge": "getAllSprites()",
+			"fabric": "getSprites()"
+		}
+	]
+}

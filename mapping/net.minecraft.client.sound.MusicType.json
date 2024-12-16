@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.sounds.Musics",
+	"items": [
+		{
+			"forge": "net.minecraft.sounds.Musics",
+			"fabric": "net.minecraft.client.sound.MusicType"
+		},
+		{
+			"forge": "ONE_SECOND",
+			"fabric": "MENU_MIN_DELAY"
+		},
+		{
+			"forge": "ONE_SECOND",
+			"fabric": "MENU_MIN_DELAY"
+		},
+		{
+			"forge": "THIRTY_SECONDS",
+			"fabric": "MENU_MAX_DELAY"
+		},
+		{
+			"forge": "TEN_MINUTES",
+			"fabric": "GAME_MIN_DELAY"
+		},
+		{
+			"forge": "TWENTY_MINUTES",
+			"fabric": "GAME_MAX_DELAY"
+		},
+		{
+			"forge": "FIVE_MINUTES",
+			"fabric": "END_MIN_DELAY"
+		},
+		{
+			"forge": "MENU",
+			"fabric": "MENU"
+		},
+		{
+			"forge": "CREATIVE",
+			"fabric": "CREATIVE"
+		},
+		{
+			"forge": "CREDITS",
+			"fabric": "CREDITS"
+		},
+		{
+			"forge": "END_BOSS",
+			"fabric": "DRAGON"
+		},
+		{
+			"forge": "END",
+			"fabric": "END"
+		},
+		{
+			"forge": "UNDER_WATER",
+			"fabric": "UNDERWATER"
+		},
+		{
+			"forge": "GAME",
+			"fabric": "GAME"
+		},
+		{
+			"forge": "createGameMusic(Holder<SoundEvent> arg0)",
+			"fabric": "createIngameMusic(RegistryEntry<SoundEvent> sound)"
+		},
+		{
+			"forge": "createGameMusic(Holder<SoundEvent> arg0)",
+			"fabric": "createIngameMusic(RegistryEntry<SoundEvent> sound)"
+		}
+	]
+}

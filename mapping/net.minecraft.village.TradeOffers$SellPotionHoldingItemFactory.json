@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.entity.npc.VillagerTrades$TippedArrowForItemsAndEmeralds",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.VillagerTrades$TippedArrowForItemsAndEmeralds",
+			"fabric": "net.minecraft.village.TradeOffers$SellPotionHoldingItemFactory"
+		},
+		{
+			"forge": "toItem",
+			"fabric": "sell"
+		},
+		{
+			"forge": "toItem",
+			"fabric": "sell"
+		},
+		{
+			"forge": "toCount",
+			"fabric": "sellCount"
+		},
+		{
+			"forge": "emeraldCost",
+			"fabric": "price"
+		},
+		{
+			"forge": "maxUses",
+			"fabric": "maxUses"
+		},
+		{
+			"forge": "villagerXp",
+			"fabric": "experience"
+		},
+		{
+			"forge": "fromItem",
+			"fabric": "secondBuy"
+		},
+		{
+			"forge": "fromCount",
+			"fabric": "secondCount"
+		},
+		{
+			"forge": "priceMultiplier",
+			"fabric": "priceMultiplier"
+		},
+		{
+			"forge": "getOffer(Entity arg0, RandomSource arg1)",
+			"fabric": "create(Entity arg0, Random arg1)"
+		},
+		{
+			"forge": "getOffer(Entity arg0, RandomSource arg1)",
+			"fabric": "create(Entity arg0, Random arg1)"
+		}
+	]
+}

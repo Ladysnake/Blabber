@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.biome.MobSpawnSettings$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.MobSpawnSettings$Builder",
+			"fabric": "net.minecraft.world.biome.SpawnSettings$Builder"
+		},
+		{
+			"forge": "spawners",
+			"fabric": "spawners"
+		},
+		{
+			"forge": "spawners",
+			"fabric": "spawners"
+		},
+		{
+			"forge": "mobSpawnCosts",
+			"fabric": "spawnCosts"
+		},
+		{
+			"forge": "creatureGenerationProbability",
+			"fabric": "creatureSpawnProbability"
+		},
+		{
+			"forge": "addSpawn(MobCategory arg0, MobSpawnSettings$SpawnerData arg1)",
+			"fabric": "spawn(SpawnGroup spawnGroup, SpawnSettings$SpawnEntry spawnEntry)"
+		},
+		{
+			"forge": "addSpawn(MobCategory arg0, MobSpawnSettings$SpawnerData arg1)",
+			"fabric": "spawn(SpawnGroup spawnGroup, SpawnSettings$SpawnEntry spawnEntry)"
+		},
+		{
+			"forge": "addMobCharge(EntityType<?> arg0, double arg1, double arg2)",
+			"fabric": "spawnCost(EntityType<?> entityType, double mass, double gravityLimit)"
+		},
+		{
+			"forge": "creatureGenerationProbability(float arg0)",
+			"fabric": "creatureSpawnProbability(float probability)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

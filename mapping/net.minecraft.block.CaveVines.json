@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.CaveVines",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.CaveVines",
+			"fabric": "net.minecraft.block.CaveVines"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "BERRIES",
+			"fabric": "BERRIES"
+		},
+		{
+			"forge": "use(Entity arg0, BlockState arg1, Level arg2, BlockPos arg3)",
+			"fabric": "pickBerries(Entity picker, BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "use(Entity arg0, BlockState arg1, Level arg2, BlockPos arg3)",
+			"fabric": "pickBerries(Entity picker, BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "hasGlowBerries(BlockState arg0)",
+			"fabric": "hasBerries(BlockState state)"
+		},
+		{
+			"forge": "emission(int arg0)",
+			"fabric": "getLuminanceSupplier(int luminance)"
+		}
+	]
+}

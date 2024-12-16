@@ -1,0 +1,73 @@
+{
+	"title": "com.mojang.blaze3d.vertex.VertexFormatElement",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.VertexFormatElement",
+			"fabric": "net.minecraft.client.render.VertexFormatElement"
+		},
+		{
+			"forge": "type",
+			"fabric": "componentType"
+		},
+		{
+			"forge": "type",
+			"fabric": "componentType"
+		},
+		{
+			"forge": "usage",
+			"fabric": "type"
+		},
+		{
+			"forge": "index",
+			"fabric": "uvIndex"
+		},
+		{
+			"forge": "count",
+			"fabric": "componentCount"
+		},
+		{
+			"forge": "byteSize",
+			"fabric": "byteLength"
+		},
+		{
+			"forge": "supportsUsage(int arg0, VertexFormatElement$Usage arg1)",
+			"fabric": "isValidType(int uvIndex, VertexFormatElement$Type type)"
+		},
+		{
+			"forge": "supportsUsage(int arg0, VertexFormatElement$Usage arg1)",
+			"fabric": "isValidType(int uvIndex, VertexFormatElement$Type type)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getComponentType()"
+		},
+		{
+			"forge": "getUsage()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getCount()",
+			"fabric": "getComponentCount()"
+		},
+		{
+			"forge": "getIndex()",
+			"fabric": "getUvIndex()"
+		},
+		{
+			"forge": "getByteSize()",
+			"fabric": "getByteLength()"
+		},
+		{
+			"forge": "isPosition()",
+			"fabric": "isPosition()"
+		},
+		{
+			"forge": "setupBufferState(int arg0, long arg1, int arg2)",
+			"fabric": "setupState(int elementIndex, long offset, int stride)"
+		},
+		{
+			"forge": "clearBufferState(int arg0)",
+			"fabric": "clearState(int elementIndex)"
+		}
+	]
+}

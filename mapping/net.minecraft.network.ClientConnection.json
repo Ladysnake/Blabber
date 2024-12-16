@@ -1,0 +1,257 @@
+{
+	"title": "net.minecraft.network.Connection",
+	"items": [
+		{
+			"forge": "net.minecraft.network.Connection",
+			"fabric": "net.minecraft.network.ClientConnection"
+		},
+		{
+			"forge": "AVERAGE_PACKETS_SMOOTHING",
+			"fabric": "CURRENT_PACKET_COUNTER_WEIGHT"
+		},
+		{
+			"forge": "AVERAGE_PACKETS_SMOOTHING",
+			"fabric": "CURRENT_PACKET_COUNTER_WEIGHT"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ROOT_MARKER",
+			"fabric": "NETWORK_MARKER"
+		},
+		{
+			"forge": "PACKET_MARKER",
+			"fabric": "NETWORK_PACKETS_MARKER"
+		},
+		{
+			"forge": "PACKET_RECEIVED_MARKER",
+			"fabric": "PACKET_RECEIVED_MARKER"
+		},
+		{
+			"forge": "PACKET_SENT_MARKER",
+			"fabric": "PACKET_SENT_MARKER"
+		},
+		{
+			"forge": "ATTRIBUTE_PROTOCOL",
+			"fabric": "PROTOCOL_ATTRIBUTE_KEY"
+		},
+		{
+			"forge": "NETWORK_WORKER_GROUP",
+			"fabric": "CLIENT_IO_GROUP"
+		},
+		{
+			"forge": "NETWORK_EPOLL_WORKER_GROUP",
+			"fabric": "EPOLL_CLIENT_IO_GROUP"
+		},
+		{
+			"forge": "LOCAL_WORKER_GROUP",
+			"fabric": "LOCAL_CLIENT_IO_GROUP"
+		},
+		{
+			"forge": "receiving",
+			"fabric": "side"
+		},
+		{
+			"forge": "queue",
+			"fabric": "packetQueue"
+		},
+		{
+			"forge": "channel",
+			"fabric": "channel"
+		},
+		{
+			"forge": "address",
+			"fabric": "address"
+		},
+		{
+			"forge": "packetListener",
+			"fabric": "packetListener"
+		},
+		{
+			"forge": "disconnectedReason",
+			"fabric": "disconnectReason"
+		},
+		{
+			"forge": "encrypted",
+			"fabric": "encrypted"
+		},
+		{
+			"forge": "disconnectionHandled",
+			"fabric": "disconnected"
+		},
+		{
+			"forge": "receivedPackets",
+			"fabric": "packetsReceivedCounter"
+		},
+		{
+			"forge": "sentPackets",
+			"fabric": "packetsSentCounter"
+		},
+		{
+			"forge": "averageReceivedPackets",
+			"fabric": "averagePacketsReceived"
+		},
+		{
+			"forge": "averageSentPackets",
+			"fabric": "averagePacketsSent"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "handlingFault",
+			"fabric": "errored"
+		},
+		{
+			"forge": "delayedDisconnect",
+			"fabric": "pendingDisconnectionReason"
+		},
+		{
+			"forge": "channelActive(io.netty.channel.ChannelHandlerContext arg0)",
+			"fabric": "channelActive(io.netty.channel.ChannelHandlerContext context)"
+		},
+		{
+			"forge": "channelActive(io.netty.channel.ChannelHandlerContext arg0)",
+			"fabric": "channelActive(io.netty.channel.ChannelHandlerContext context)"
+		},
+		{
+			"forge": "setProtocol(ConnectionProtocol arg0)",
+			"fabric": "setState(NetworkState state)"
+		},
+		{
+			"forge": "channelInactive(io.netty.channel.ChannelHandlerContext arg0)",
+			"fabric": "channelInactive(io.netty.channel.ChannelHandlerContext context)"
+		},
+		{
+			"forge": "exceptionCaught(io.netty.channel.ChannelHandlerContext arg0, Throwable arg1)",
+			"fabric": "exceptionCaught(io.netty.channel.ChannelHandlerContext context, Throwable ex)"
+		},
+		{
+			"forge": "channelRead0(io.netty.channel.ChannelHandlerContext arg0, Packet<?> arg1)",
+			"fabric": "channelRead0(io.netty.channel.ChannelHandlerContext arg0, Packet<?> arg1)"
+		},
+		{
+			"forge": "genericsFtw(Packet<T> arg0, PacketListener arg1)",
+			"fabric": "handlePacket(Packet<T> packet, PacketListener listener)"
+		},
+		{
+			"forge": "setListener(PacketListener arg0)",
+			"fabric": "setPacketListener(PacketListener listener)"
+		},
+		{
+			"forge": "send(Packet<?> arg0)",
+			"fabric": "send(Packet<?> packet)"
+		},
+		{
+			"forge": "send(Packet<?> arg0, PacketSendListener arg1)",
+			"fabric": "send(Packet<?> packet, PacketCallbacks callbacks)"
+		},
+		{
+			"forge": "sendPacket(Packet<?> arg0, PacketSendListener arg1)",
+			"fabric": "sendImmediately(Packet<?> packet, PacketCallbacks callbacks)"
+		},
+		{
+			"forge": "doSendPacket(Packet<?> arg0, PacketSendListener arg1, ConnectionProtocol arg2, ConnectionProtocol arg3)",
+			"fabric": "sendInternal(Packet<?> packet, PacketCallbacks callbacks, NetworkState packetState, NetworkState currentState)"
+		},
+		{
+			"forge": "getCurrentProtocol()",
+			"fabric": "getState()"
+		},
+		{
+			"forge": "flushQueue()",
+			"fabric": "sendQueuedPackets()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tickSecond()",
+			"fabric": "updateStats()"
+		},
+		{
+			"forge": "getRemoteAddress()",
+			"fabric": "getAddress()"
+		},
+		{
+			"forge": "disconnect(Component arg0)",
+			"fabric": "disconnect(Text disconnectReason)"
+		},
+		{
+			"forge": "isMemoryConnection()",
+			"fabric": "isLocal()"
+		},
+		{
+			"forge": "getReceiving()",
+			"fabric": "getSide()"
+		},
+		{
+			"forge": "getSending()",
+			"fabric": "getOppositeSide()"
+		},
+		{
+			"forge": "connectToServer(InetSocketAddress arg0, boolean arg1)",
+			"fabric": "connect(InetSocketAddress address, boolean useEpoll)"
+		},
+		{
+			"forge": "connect(InetSocketAddress arg0, boolean arg1, Connection arg2)",
+			"fabric": "connect(InetSocketAddress address, boolean useEpoll, ClientConnection connection)"
+		},
+		{
+			"forge": "configureSerialization(io.netty.channel.ChannelPipeline arg0, PacketFlow arg1)",
+			"fabric": "addHandlers(io.netty.channel.ChannelPipeline pipeline, NetworkSide side)"
+		},
+		{
+			"forge": "connectToLocalServer(SocketAddress arg0)",
+			"fabric": "connectLocal(SocketAddress address)"
+		},
+		{
+			"forge": "setEncryptionKey(Cipher arg0, Cipher arg1)",
+			"fabric": "setupEncryption(Cipher decryptionCipher, Cipher encryptionCipher)"
+		},
+		{
+			"forge": "isEncrypted()",
+			"fabric": "isEncrypted()"
+		},
+		{
+			"forge": "isConnected()",
+			"fabric": "isOpen()"
+		},
+		{
+			"forge": "isConnecting()",
+			"fabric": "isChannelAbsent()"
+		},
+		{
+			"forge": "getPacketListener()",
+			"fabric": "getPacketListener()"
+		},
+		{
+			"forge": "getDisconnectedReason()",
+			"fabric": "getDisconnectReason()"
+		},
+		{
+			"forge": "setReadOnly()",
+			"fabric": "disableAutoRead()"
+		},
+		{
+			"forge": "setupCompression(int arg0, boolean arg1)",
+			"fabric": "setCompressionThreshold(int compressionThreshold, boolean rejectsBadPackets)"
+		},
+		{
+			"forge": "handleDisconnection()",
+			"fabric": "handleDisconnection()"
+		},
+		{
+			"forge": "getAverageReceivedPackets()",
+			"fabric": "getAveragePacketsReceived()"
+		},
+		{
+			"forge": "getAverageSentPackets()",
+			"fabric": "getAveragePacketsSent()"
+		}
+	]
+}

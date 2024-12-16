@@ -1,0 +1,141 @@
+{
+	"title": "net.minecraft.world.inventory.LoomMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.LoomMenu",
+			"fabric": "net.minecraft.screen.LoomScreenHandler"
+		},
+		{
+			"forge": "PATTERN_NOT_SET",
+			"fabric": "NO_PATTERN"
+		},
+		{
+			"forge": "PATTERN_NOT_SET",
+			"fabric": "NO_PATTERN"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "INVENTORY_START"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "INVENTORY_END"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "HOTBAR_START"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "HOTBAR_END"
+		},
+		{
+			"forge": "access",
+			"fabric": "context"
+		},
+		{
+			"forge": "selectedBannerPatternIndex",
+			"fabric": "selectedPattern"
+		},
+		{
+			"forge": "selectablePatterns",
+			"fabric": "bannerPatterns"
+		},
+		{
+			"forge": "slotUpdateListener",
+			"fabric": "inventoryChangeListener"
+		},
+		{
+			"forge": "bannerSlot",
+			"fabric": "bannerSlot"
+		},
+		{
+			"forge": "dyeSlot",
+			"fabric": "dyeSlot"
+		},
+		{
+			"forge": "patternSlot",
+			"fabric": "patternSlot"
+		},
+		{
+			"forge": "resultSlot",
+			"fabric": "outputSlot"
+		},
+		{
+			"forge": "lastSoundTime",
+			"fabric": "lastTakeResultTime"
+		},
+		{
+			"forge": "inputContainer",
+			"fabric": "input"
+		},
+		{
+			"forge": "outputContainer",
+			"fabric": "output"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "clickMenuButton(Player arg0, int arg1)",
+			"fabric": "onButtonClick(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "getSelectablePatterns(ItemStack arg0)",
+			"fabric": "getPatternsFor(ItemStack stack)"
+		},
+		{
+			"forge": "isValidPatternIndex(int arg0)",
+			"fabric": "isPatternIndexValid(int index)"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "getSelectablePatterns()",
+			"fabric": "getBannerPatterns()"
+		},
+		{
+			"forge": "getSelectedBannerPatternIndex()",
+			"fabric": "getSelectedPattern()"
+		},
+		{
+			"forge": "registerUpdateListener(Runnable arg0)",
+			"fabric": "setInventoryChangeListener(Runnable inventoryChangeListener)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "setupResultSlot(Holder<BannerPattern> arg0)",
+			"fabric": "updateOutputSlot(RegistryEntry<BannerPattern> pattern)"
+		},
+		{
+			"forge": "getBannerSlot()",
+			"fabric": "getBannerSlot()"
+		},
+		{
+			"forge": "getDyeSlot()",
+			"fabric": "getDyeSlot()"
+		},
+		{
+			"forge": "getPatternSlot()",
+			"fabric": "getPatternSlot()"
+		},
+		{
+			"forge": "getResultSlot()",
+			"fabric": "getOutputSlot()"
+		}
+	]
+}

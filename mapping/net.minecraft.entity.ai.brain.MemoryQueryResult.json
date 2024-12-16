@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor",
+			"fabric": "net.minecraft.entity.ai.brain.MemoryQueryResult"
+		},
+		{
+			"forge": "brain",
+			"fabric": "brain"
+		},
+		{
+			"forge": "brain",
+			"fabric": "brain"
+		},
+		{
+			"forge": "memoryType",
+			"fabric": "memory"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "value()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "set(Value arg0)",
+			"fabric": "remember(Value value)"
+		},
+		{
+			"forge": "setOrErase(Optional<Value> arg0)",
+			"fabric": "remember(Optional<Value> value)"
+		},
+		{
+			"forge": "setWithExpiry(Value arg0, long arg1)",
+			"fabric": "remember(Value value, long expiry)"
+		},
+		{
+			"forge": "erase()",
+			"fabric": "forget()"
+		}
+	]
+}

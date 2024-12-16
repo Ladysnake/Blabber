@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.DispensibleContainerItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.DispensibleContainerItem",
+			"fabric": "net.minecraft.item.FluidModificationItem"
+		},
+		{
+			"forge": "checkExtraContent(Player arg0, Level arg1, ItemStack arg2, BlockPos arg3)",
+			"fabric": "onEmptied(PlayerEntity player, World world, ItemStack stack, BlockPos pos)"
+		},
+		{
+			"forge": "checkExtraContent(Player arg0, Level arg1, ItemStack arg2, BlockPos arg3)",
+			"fabric": "onEmptied(PlayerEntity player, World world, ItemStack stack, BlockPos pos)"
+		},
+		{
+			"forge": "emptyContents(Player arg0, Level arg1, BlockPos arg2, BlockHitResult arg3)",
+			"fabric": "placeFluid(PlayerEntity player, World world, BlockPos pos, BlockHitResult hitResult)"
+		}
+	]
+}

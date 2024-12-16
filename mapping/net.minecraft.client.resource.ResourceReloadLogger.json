@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.ResourceLoadStateTracker",
+	"items": [
+		{
+			"forge": "net.minecraft.client.ResourceLoadStateTracker",
+			"fabric": "net.minecraft.client.resource.ResourceReloadLogger"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "reloadState",
+			"fabric": "reloadState"
+		},
+		{
+			"forge": "reloadCount",
+			"fabric": "reloadCount"
+		},
+		{
+			"forge": "startReload(ResourceLoadStateTracker$ReloadReason arg0, List<PackResources> arg1)",
+			"fabric": "reload(ResourceReloadLogger$ReloadReason reason, List<ResourcePack> packs)"
+		},
+		{
+			"forge": "startReload(ResourceLoadStateTracker$ReloadReason arg0, List<PackResources> arg1)",
+			"fabric": "reload(ResourceReloadLogger$ReloadReason reason, List<ResourcePack> packs)"
+		},
+		{
+			"forge": "startRecovery(Throwable arg0)",
+			"fabric": "recover(Throwable throwable)"
+		},
+		{
+			"forge": "finishReload()",
+			"fabric": "finish()"
+		},
+		{
+			"forge": "fillCrashReport(CrashReport arg0)",
+			"fabric": "addReloadSection(CrashReport report)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemModelGenerator$Span",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemModelGenerator$Span",
+			"fabric": "net.minecraft.client.render.model.json.ItemModelGenerator$Frame"
+		},
+		{
+			"forge": "facing",
+			"fabric": "side"
+		},
+		{
+			"forge": "facing",
+			"fabric": "side"
+		},
+		{
+			"forge": "min",
+			"fabric": "min"
+		},
+		{
+			"forge": "max",
+			"fabric": "max"
+		},
+		{
+			"forge": "anchor",
+			"fabric": "level"
+		},
+		{
+			"forge": "expand(int arg0)",
+			"fabric": "expand(int newValue)"
+		},
+		{
+			"forge": "expand(int arg0)",
+			"fabric": "expand(int newValue)"
+		},
+		{
+			"forge": "getFacing()",
+			"fabric": "getSide()"
+		},
+		{
+			"forge": "getMin()",
+			"fabric": "getMin()"
+		},
+		{
+			"forge": "getMax()",
+			"fabric": "getMax()"
+		},
+		{
+			"forge": "getAnchor()",
+			"fabric": "getLevel()"
+		}
+	]
+}

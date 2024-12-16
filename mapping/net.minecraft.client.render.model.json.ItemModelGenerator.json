@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemModelGenerator",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemModelGenerator",
+			"fabric": "net.minecraft.client.render.model.json.ItemModelGenerator"
+		},
+		{
+			"forge": "LAYERS",
+			"fabric": "LAYERS"
+		},
+		{
+			"forge": "LAYERS",
+			"fabric": "LAYERS"
+		},
+		{
+			"forge": "MIN_Z",
+			"fabric": "field_32806"
+		},
+		{
+			"forge": "MAX_Z",
+			"fabric": "field_32807"
+		},
+		{
+			"forge": "generateBlockModel(Function<Material, TextureAtlasSprite> arg0, BlockModel arg1)",
+			"fabric": "create(Function<SpriteIdentifier, Sprite> textureGetter, JsonUnbakedModel blockModel)"
+		},
+		{
+			"forge": "generateBlockModel(Function<Material, TextureAtlasSprite> arg0, BlockModel arg1)",
+			"fabric": "create(Function<SpriteIdentifier, Sprite> textureGetter, JsonUnbakedModel blockModel)"
+		},
+		{
+			"forge": "processFrames(int arg0, String arg1, SpriteContents arg2)",
+			"fabric": "addLayerElements(int layer, String key, SpriteContents sprite)"
+		},
+		{
+			"forge": "createSideElements(SpriteContents arg0, String arg1, int arg2)",
+			"fabric": "addSubComponents(SpriteContents sprite, String key, int layer)"
+		},
+		{
+			"forge": "getSpans(SpriteContents arg0)",
+			"fabric": "getFrames(SpriteContents sprite)"
+		},
+		{
+			"forge": "checkTransition(ItemModelGenerator$SpanFacing arg0, List<ItemModelGenerator$Span> arg1, SpriteContents arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8)",
+			"fabric": "buildCube(ItemModelGenerator$Side side, List<ItemModelGenerator$Frame> cubes, SpriteContents sprite, int frame, int x, int y, int width, int height, boolean arg8)"
+		},
+		{
+			"forge": "createOrExpandSpan(List<ItemModelGenerator$Span> arg0, ItemModelGenerator$SpanFacing arg1, int arg2, int arg3)",
+			"fabric": "buildCube(List<ItemModelGenerator$Frame> cubes, ItemModelGenerator$Side side, int x, int y)"
+		},
+		{
+			"forge": "isTransparent(SpriteContents arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "isPixelTransparent(SpriteContents sprite, int frame, int x, int y, int width, int height)"
+		}
+	]
+}

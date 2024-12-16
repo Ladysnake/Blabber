@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.Container",
+	"items": [
+		{
+			"forge": "net.minecraft.world.Container",
+			"fabric": "net.minecraft.inventory.Inventory"
+		},
+		{
+			"forge": "LARGE_MAX_STACK_SIZE",
+			"fabric": "MAX_COUNT_PER_STACK"
+		},
+		{
+			"forge": "LARGE_MAX_STACK_SIZE",
+			"fabric": "MAX_COUNT_PER_STACK"
+		},
+		{
+			"forge": "DEFAULT_DISTANCE_LIMIT",
+			"fabric": "field_42619"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int slot)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int slot, int amount)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int slot)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int slot, ItemStack stack)"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxCountPerStack()"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity player)"
+		},
+		{
+			"forge": "startOpen(Player arg0)",
+			"fabric": "onOpen(PlayerEntity player)"
+		},
+		{
+			"forge": "stopOpen(Player arg0)",
+			"fabric": "onClose(PlayerEntity player)"
+		},
+		{
+			"forge": "canPlaceItem(int arg0, ItemStack arg1)",
+			"fabric": "isValid(int slot, ItemStack stack)"
+		},
+		{
+			"forge": "canTakeItem(Container arg0, int arg1, ItemStack arg2)",
+			"fabric": "canTransferTo(Inventory hopperInventory, int slot, ItemStack stack)"
+		},
+		{
+			"forge": "countItem(Item arg0)",
+			"fabric": "count(Item item)"
+		},
+		{
+			"forge": "hasAnyOf(Set<Item> arg0)",
+			"fabric": "containsAny(Set<Item> items)"
+		},
+		{
+			"forge": "hasAnyMatching(Predicate<ItemStack> arg0)",
+			"fabric": "containsAny(Predicate<ItemStack> predicate)"
+		},
+		{
+			"forge": "stillValidBlockEntity(BlockEntity arg0, Player arg1)",
+			"fabric": "canPlayerUse(BlockEntity blockEntity, PlayerEntity player)"
+		},
+		{
+			"forge": "stillValidBlockEntity(BlockEntity arg0, Player arg1, int arg2)",
+			"fabric": "canPlayerUse(BlockEntity blockEntity, PlayerEntity player, int range)"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.advancements.critereon.PlayerHurtEntityTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.PlayerHurtEntityTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.PlayerHurtEntityCriterion$Conditions"
+		},
+		{
+			"forge": "damage",
+			"fabric": "damage"
+		},
+		{
+			"forge": "damage",
+			"fabric": "damage"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "playerHurtEntity()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "playerHurtEntity()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "playerHurtEntity(DamagePredicate arg0)",
+			"fabric": "create(DamagePredicate damagePredicate)"
+		},
+		{
+			"forge": "playerHurtEntity(DamagePredicate$Builder arg0)",
+			"fabric": "create(DamagePredicate$Builder damagePredicateBuilder)"
+		},
+		{
+			"forge": "playerHurtEntity(EntityPredicate arg0)",
+			"fabric": "create(EntityPredicate hurtEntityPredicate)"
+		},
+		{
+			"forge": "playerHurtEntity(DamagePredicate arg0, EntityPredicate arg1)",
+			"fabric": "create(DamagePredicate damagePredicate, EntityPredicate hurtEntityPredicate)"
+		},
+		{
+			"forge": "playerHurtEntity(DamagePredicate$Builder arg0, EntityPredicate arg1)",
+			"fabric": "create(DamagePredicate$Builder damagePredicateBuilder, EntityPredicate hurtEntityPredicate)"
+		},
+		{
+			"forge": "matches(ServerPlayer arg0, LootContext arg1, DamageSource arg2, float arg3, float arg4, boolean arg5)",
+			"fabric": "matches(ServerPlayerEntity player, LootContext entityContext, DamageSource source, float dealt, float taken, boolean blocked)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

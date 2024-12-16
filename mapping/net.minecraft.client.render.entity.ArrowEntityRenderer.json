@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.TippableArrowRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.TippableArrowRenderer",
+			"fabric": "net.minecraft.client.render.entity.ArrowEntityRenderer"
+		},
+		{
+			"forge": "NORMAL_ARROW_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "NORMAL_ARROW_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TIPPED_ARROW_LOCATION",
+			"fabric": "TIPPED_TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Arrow arg0)",
+			"fabric": "getTexture(ArrowEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Arrow arg0)",
+			"fabric": "getTexture(ArrowEntity arg0)"
+		}
+	]
+}

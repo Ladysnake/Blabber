@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.components.PlainTextButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.PlainTextButton",
+			"fabric": "net.minecraft.client.gui.widget.PressableTextWidget"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "message",
+			"fabric": "text"
+		},
+		{
+			"forge": "underlinedMessage",
+			"fabric": "hoverText"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

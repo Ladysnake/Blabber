@@ -1,0 +1,265 @@
+{
+	"title": "net.minecraft.server.dedicated.DedicatedServer",
+	"items": [
+		{
+			"forge": "net.minecraft.server.dedicated.DedicatedServer",
+			"fabric": "net.minecraft.server.dedicated.MinecraftDedicatedServer"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "CONVERSION_RETRY_DELAY_MS",
+			"fabric": "field_29662"
+		},
+		{
+			"forge": "CONVERSION_RETRIES",
+			"fabric": "field_29663"
+		},
+		{
+			"forge": "consoleInput",
+			"fabric": "commandQueue"
+		},
+		{
+			"forge": "queryThreadGs4",
+			"fabric": "queryResponseHandler"
+		},
+		{
+			"forge": "rconConsoleSource",
+			"fabric": "rconCommandOutput"
+		},
+		{
+			"forge": "rconThread",
+			"fabric": "rconServer"
+		},
+		{
+			"forge": "settings",
+			"fabric": "propertiesLoader"
+		},
+		{
+			"forge": "gui",
+			"fabric": "gui"
+		},
+		{
+			"forge": "textFilterClient",
+			"fabric": "filterer"
+		},
+		{
+			"forge": "initServer()",
+			"fabric": "setupServer()"
+		},
+		{
+			"forge": "initServer()",
+			"fabric": "setupServer()"
+		},
+		{
+			"forge": "isSpawningAnimals()",
+			"fabric": "shouldSpawnAnimals()"
+		},
+		{
+			"forge": "isSpawningMonsters()",
+			"fabric": "isMonsterSpawningEnabled()"
+		},
+		{
+			"forge": "areNpcsEnabled()",
+			"fabric": "shouldSpawnNpcs()"
+		},
+		{
+			"forge": "getProperties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "forceDifficulty()",
+			"fabric": "updateDifficulty()"
+		},
+		{
+			"forge": "isHardcore()",
+			"fabric": "isHardcore()"
+		},
+		{
+			"forge": "fillServerSystemReport(SystemReport arg0)",
+			"fabric": "addExtraSystemDetails(SystemDetails arg0)"
+		},
+		{
+			"forge": "dumpServerProperties(Path arg0)",
+			"fabric": "dumpProperties(Path arg0)"
+		},
+		{
+			"forge": "onServerExit()",
+			"fabric": "exit()"
+		},
+		{
+			"forge": "tickChildren(BooleanSupplier arg0)",
+			"fabric": "tickWorlds(BooleanSupplier arg0)"
+		},
+		{
+			"forge": "isNetherEnabled()",
+			"fabric": "isNetherAllowed()"
+		},
+		{
+			"forge": "handleConsoleInput(String arg0, CommandSourceStack arg1)",
+			"fabric": "enqueueCommand(String command, ServerCommandSource commandSource)"
+		},
+		{
+			"forge": "handleConsoleInputs()",
+			"fabric": "executeQueuedCommands()"
+		},
+		{
+			"forge": "isDedicatedServer()",
+			"fabric": "isDedicated()"
+		},
+		{
+			"forge": "getRateLimitPacketsPerSecond()",
+			"fabric": "getRateLimit()"
+		},
+		{
+			"forge": "isEpollEnabled()",
+			"fabric": "isUsingNativeTransport()"
+		},
+		{
+			"forge": "getPlayerList()",
+			"fabric": "getPlayerManager()"
+		},
+		{
+			"forge": "isPublished()",
+			"fabric": "isRemote()"
+		},
+		{
+			"forge": "getServerIp()",
+			"fabric": "getHostname()"
+		},
+		{
+			"forge": "getServerPort()",
+			"fabric": "getPort()"
+		},
+		{
+			"forge": "getServerName()",
+			"fabric": "getMotd()"
+		},
+		{
+			"forge": "showGui()",
+			"fabric": "createGui()"
+		},
+		{
+			"forge": "hasGui()",
+			"fabric": "hasGui()"
+		},
+		{
+			"forge": "isCommandBlockEnabled()",
+			"fabric": "areCommandBlocksEnabled()"
+		},
+		{
+			"forge": "getSpawnProtectionRadius()",
+			"fabric": "getSpawnProtectionRadius()"
+		},
+		{
+			"forge": "isUnderSpawnProtection(ServerLevel arg0, BlockPos arg1, Player arg2)",
+			"fabric": "isSpawnProtected(ServerWorld arg0, BlockPos arg1, PlayerEntity arg2)"
+		},
+		{
+			"forge": "repliesToStatus()",
+			"fabric": "acceptsStatusQuery()"
+		},
+		{
+			"forge": "hidesOnlinePlayers()",
+			"fabric": "hideOnlinePlayers()"
+		},
+		{
+			"forge": "getOperatorUserPermissionLevel()",
+			"fabric": "getOpPermissionLevel()"
+		},
+		{
+			"forge": "getFunctionCompilationLevel()",
+			"fabric": "getFunctionPermissionLevel()"
+		},
+		{
+			"forge": "setPlayerIdleTimeout(int arg0)",
+			"fabric": "setPlayerIdleTimeout(int arg0)"
+		},
+		{
+			"forge": "shouldRconBroadcast()",
+			"fabric": "shouldBroadcastRconToOps()"
+		},
+		{
+			"forge": "shouldInformAdmins()",
+			"fabric": "shouldBroadcastConsoleToOps()"
+		},
+		{
+			"forge": "getAbsoluteMaxWorldSize()",
+			"fabric": "getMaxWorldBorderRadius()"
+		},
+		{
+			"forge": "getCompressionThreshold()",
+			"fabric": "getNetworkCompressionThreshold()"
+		},
+		{
+			"forge": "enforceSecureProfile()",
+			"fabric": "shouldEnforceSecureProfile()"
+		},
+		{
+			"forge": "convertOldUsers()",
+			"fabric": "convertData()"
+		},
+		{
+			"forge": "waitForRetry()",
+			"fabric": "sleepFiveSeconds()"
+		},
+		{
+			"forge": "getMaxTickLength()",
+			"fabric": "getMaxTickTime()"
+		},
+		{
+			"forge": "getMaxChainedNeighborUpdates()",
+			"fabric": "getMaxChainedNeighborUpdates()"
+		},
+		{
+			"forge": "getPluginNames()",
+			"fabric": "getPlugins()"
+		},
+		{
+			"forge": "runCommand(String arg0)",
+			"fabric": "executeRconCommand(String arg0)"
+		},
+		{
+			"forge": "storeUsingWhiteList(boolean arg0)",
+			"fabric": "setUseWhitelist(boolean useWhitelist)"
+		},
+		{
+			"forge": "stopServer()",
+			"fabric": "shutdown()"
+		},
+		{
+			"forge": "isSingleplayerOwner(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "isHost(com.mojang.authlib.GameProfile arg0)"
+		},
+		{
+			"forge": "getScaledTrackingDistance(int arg0)",
+			"fabric": "adjustTrackingDistance(int arg0)"
+		},
+		{
+			"forge": "getLevelIdName()",
+			"fabric": "getLevelName()"
+		},
+		{
+			"forge": "forceSynchronousWrites()",
+			"fabric": "syncChunkWrites()"
+		},
+		{
+			"forge": "createTextFilterForPlayer(ServerPlayer arg0)",
+			"fabric": "createFilterer(ServerPlayerEntity arg0)"
+		},
+		{
+			"forge": "getForcedGameType()",
+			"fabric": "getForcedGameMode()"
+		},
+		{
+			"forge": "getServerResourcePack()",
+			"fabric": "getResourcePackProperties()"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$WeirdScaledSampler"
+		},
+		{
+			"forge": "input",
+			"fabric": "input"
+		},
+		{
+			"forge": "input",
+			"fabric": "input"
+		},
+		{
+			"forge": "noise",
+			"fabric": "noise"
+		},
+		{
+			"forge": "rarityValueMapper",
+			"fabric": "rarityValueMapper"
+		},
+		{
+			"forge": "DATA_CODEC",
+			"fabric": "WEIRD_SCALED_SAMPLER_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC_HOLDER"
+		},
+		{
+			"forge": "transform(DensityFunction$FunctionContext arg0, double arg1)",
+			"fabric": "apply(DensityFunction$NoisePos arg0, double arg1)"
+		},
+		{
+			"forge": "transform(DensityFunction$FunctionContext arg0, double arg1)",
+			"fabric": "apply(DensityFunction$NoisePos arg0, double arg1)"
+		},
+		{
+			"forge": "mapAll(DensityFunction$Visitor arg0)",
+			"fabric": "apply(DensityFunction$DensityFunctionVisitor arg0)"
+		},
+		{
+			"forge": "minValue()",
+			"fabric": "minValue()"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "maxValue()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodecHolder()"
+		},
+		{
+			"forge": "input()",
+			"fabric": "input()"
+		},
+		{
+			"forge": "noise()",
+			"fabric": "noise()"
+		},
+		{
+			"forge": "rarityValueMapper()",
+			"fabric": "rarityValueMapper()"
+		}
+	]
+}

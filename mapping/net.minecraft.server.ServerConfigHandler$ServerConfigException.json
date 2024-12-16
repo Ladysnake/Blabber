@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.server.players.OldUsersConverter$ConversionError",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.OldUsersConverter$ConversionError",
+			"fabric": "net.minecraft.server.ServerConfigHandler$ServerConfigException"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.FaceInfo$Constants",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.FaceInfo$Constants",
+			"fabric": "net.minecraft.client.render.model.CubeFace$DirectionIds"
+		},
+		{
+			"forge": "MAX_Z",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "MAX_Z",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "MAX_Y",
+			"fabric": "UP"
+		},
+		{
+			"forge": "MAX_X",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "MIN_Z",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "MIN_Y",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "MIN_X",
+			"fabric": "WEST"
+		}
+	]
+}

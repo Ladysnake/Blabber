@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.RenderStateShard$BooleanStateShard",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderStateShard$BooleanStateShard",
+			"fabric": "net.minecraft.client.render.RenderPhase$Toggleable"
+		},
+		{
+			"forge": "enabled",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "enabled",
+			"fabric": "enabled"
+		}
+	]
+}

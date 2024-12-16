@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.client.particle.DripParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.DripParticle",
+			"fabric": "net.minecraft.client.particle.BlockLeakParticle"
+		},
+		{
+			"forge": "type",
+			"fabric": "fluid"
+		},
+		{
+			"forge": "type",
+			"fabric": "fluid"
+		},
+		{
+			"forge": "isGlowing",
+			"fabric": "obsidianTear"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getFluid()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getFluid()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getLightColor(float arg0)",
+			"fabric": "getBrightness(float arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "preMoveUpdate()",
+			"fabric": "updateAge()"
+		},
+		{
+			"forge": "postMoveUpdate()",
+			"fabric": "updateVelocity()"
+		},
+		{
+			"forge": "createWaterHangParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createDrippingWater(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createWaterFallParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createFallingWater(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createLavaHangParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createDrippingLava(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createLavaFallParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createFallingLava(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createLavaLandParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createLandingLava(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createHoneyHangParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createDrippingHoney(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createHoneyFallParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createFallingHoney(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createHoneyLandParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createLandingHoney(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createDripstoneWaterHangParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createDrippingDripstoneWater(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createDripstoneWaterFallParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createFallingDripstoneWater(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createDripstoneLavaHangParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createDrippingDripstoneLava(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createDripstoneLavaFallParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createFallingDripstoneLava(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createNectarFallParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createFallingNectar(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createSporeBlossomFallParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createFallingSporeBlossom(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createObsidianTearHangParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createDrippingObsidianTear(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createObsidianTearFallParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createFallingObsidianTear(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createObsidianTearLandParticle(SimpleParticleType arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createLandingObsidianTear(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		}
+	]
+}

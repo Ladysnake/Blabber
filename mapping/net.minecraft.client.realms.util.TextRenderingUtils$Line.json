@@ -1,0 +1,17 @@
+{
+	"title": "com.mojang.realmsclient.util.TextRenderingUtils$Line",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.TextRenderingUtils$Line",
+			"fabric": "net.minecraft.client.realms.util.TextRenderingUtils$Line"
+		},
+		{
+			"forge": "segments",
+			"fabric": "segments"
+		},
+		{
+			"forge": "segments",
+			"fabric": "segments"
+		}
+	]
+}

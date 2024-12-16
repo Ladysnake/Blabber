@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.NetherFortressPieces",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.NetherFortressPieces",
+			"fabric": "net.minecraft.structure.NetherFortressGenerator"
+		},
+		{
+			"forge": "MAX_DEPTH",
+			"fabric": "field_31557"
+		},
+		{
+			"forge": "MAX_DEPTH",
+			"fabric": "field_31557"
+		},
+		{
+			"forge": "LOWEST_Y_POSITION",
+			"fabric": "field_31558"
+		},
+		{
+			"forge": "MAGIC_START_Y",
+			"fabric": "field_34730"
+		},
+		{
+			"forge": "BRIDGE_PIECE_WEIGHTS",
+			"fabric": "ALL_BRIDGE_PIECES"
+		},
+		{
+			"forge": "CASTLE_PIECE_WEIGHTS",
+			"fabric": "ALL_CORRIDOR_PIECES"
+		},
+		{
+			"forge": "findAndCreateBridgePieceFactory(NetherFortressPieces$PieceWeight arg0, StructurePieceAccessor arg1, RandomSource arg2, int arg3, int arg4, int arg5, Direction arg6, int arg7)",
+			"fabric": "createPiece(NetherFortressGenerator$PieceData pieceData, StructurePiecesHolder holder, Random random, int x, int y, int z, Direction orientation, int chainLength)"
+		},
+		{
+			"forge": "findAndCreateBridgePieceFactory(NetherFortressPieces$PieceWeight arg0, StructurePieceAccessor arg1, RandomSource arg2, int arg3, int arg4, int arg5, Direction arg6, int arg7)",
+			"fabric": "createPiece(NetherFortressGenerator$PieceData pieceData, StructurePiecesHolder holder, Random random, int x, int y, int z, Direction orientation, int chainLength)"
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.entity.animal.MushroomCow",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.MushroomCow",
+			"fabric": "net.minecraft.entity.passive.MooshroomEntity"
+		},
+		{
+			"forge": "DATA_TYPE",
+			"fabric": "TYPE"
+		},
+		{
+			"forge": "DATA_TYPE",
+			"fabric": "TYPE"
+		},
+		{
+			"forge": "MUTATE_CHANCE",
+			"fabric": "MUTATION_CHANCE"
+		},
+		{
+			"forge": "effect",
+			"fabric": "stewEffect"
+		},
+		{
+			"forge": "effectDuration",
+			"fabric": "stewEffectDuration"
+		},
+		{
+			"forge": "lastLightningBoltUUID",
+			"fabric": "lightningId"
+		},
+		{
+			"forge": "getWalkTargetValue(BlockPos arg0, LevelReader arg1)",
+			"fabric": "getPathfindingFavor(BlockPos arg0, WorldView arg1)"
+		},
+		{
+			"forge": "getWalkTargetValue(BlockPos arg0, LevelReader arg1)",
+			"fabric": "getPathfindingFavor(BlockPos arg0, WorldView arg1)"
+		},
+		{
+			"forge": "checkMushroomSpawnRules(EntityType<MushroomCow> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<MooshroomEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "thunderHit(ServerLevel arg0, LightningBolt arg1)",
+			"fabric": "onStruckByLightning(ServerWorld arg0, LightningEntity arg1)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "shear(SoundSource arg0)",
+			"fabric": "sheared(SoundCategory arg0)"
+		},
+		{
+			"forge": "readyForShearing()",
+			"fabric": "isShearable()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getEffectFromItemStack(ItemStack arg0)",
+			"fabric": "getStewEffectFrom(ItemStack flower)"
+		},
+		{
+			"forge": "setVariant(MushroomCow$MushroomType arg0)",
+			"fabric": "setVariant(MooshroomEntity$Type arg0)"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "getOffspringType(MushroomCow arg0)",
+			"fabric": "chooseBabyType(MooshroomEntity mooshroom)"
+		}
+	]
+}

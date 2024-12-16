@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.item.TippedArrowItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.TippedArrowItem",
+			"fabric": "net.minecraft.item.TippedArrowItem"
+		},
+		{
+			"forge": "getDefaultInstance()",
+			"fabric": "getDefaultStack()"
+		},
+		{
+			"forge": "getDefaultInstance()",
+			"fabric": "getDefaultStack()"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		},
+		{
+			"forge": "getDescriptionId(ItemStack arg0)",
+			"fabric": "getTranslationKey(ItemStack arg0)"
+		}
+	]
+}

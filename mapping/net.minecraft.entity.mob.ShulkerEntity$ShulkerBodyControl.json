@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.Shulker$ShulkerBodyRotationControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Shulker$ShulkerBodyRotationControl",
+			"fabric": "net.minecraft.entity.mob.ShulkerEntity$ShulkerBodyControl"
+		},
+		{
+			"forge": "clientTick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "clientTick()",
+			"fabric": "tick()"
+		}
+	]
+}

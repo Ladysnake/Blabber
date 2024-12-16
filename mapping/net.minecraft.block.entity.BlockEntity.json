@@ -1,0 +1,153 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BlockEntity",
+			"fabric": "net.minecraft.block.entity.BlockEntity"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "worldPosition",
+			"fabric": "pos"
+		},
+		{
+			"forge": "remove",
+			"fabric": "removed"
+		},
+		{
+			"forge": "blockState",
+			"fabric": "cachedState"
+		},
+		{
+			"forge": "getPosFromTag(CompoundTag arg0)",
+			"fabric": "posFromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "getPosFromTag(CompoundTag arg0)",
+			"fabric": "posFromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "setLevel(Level arg0)",
+			"fabric": "setWorld(World world)"
+		},
+		{
+			"forge": "hasLevel()",
+			"fabric": "hasWorld()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "saveWithFullMetadata()",
+			"fabric": "createNbtWithIdentifyingData()"
+		},
+		{
+			"forge": "saveWithId()",
+			"fabric": "createNbtWithId()"
+		},
+		{
+			"forge": "saveWithoutMetadata()",
+			"fabric": "createNbt()"
+		},
+		{
+			"forge": "saveId(CompoundTag arg0)",
+			"fabric": "writeIdToNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "addEntityType(CompoundTag arg0, BlockEntityType<?> arg1)",
+			"fabric": "writeIdToNbt(NbtCompound nbt, BlockEntityType<?> type)"
+		},
+		{
+			"forge": "saveToItem(ItemStack arg0)",
+			"fabric": "setStackNbt(ItemStack stack)"
+		},
+		{
+			"forge": "saveMetadata(CompoundTag arg0)",
+			"fabric": "writeIdentifyingData(NbtCompound nbt)"
+		},
+		{
+			"forge": "loadStatic(BlockPos arg0, BlockState arg1, CompoundTag arg2)",
+			"fabric": "createFromNbt(BlockPos pos, BlockState state, NbtCompound nbt)"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "setChanged(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "markDirty(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "getBlockPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getBlockState()",
+			"fabric": "getCachedState()"
+		},
+		{
+			"forge": "getUpdatePacket()",
+			"fabric": "toUpdatePacket()"
+		},
+		{
+			"forge": "getUpdateTag()",
+			"fabric": "toInitialChunkDataNbt()"
+		},
+		{
+			"forge": "isRemoved()",
+			"fabric": "isRemoved()"
+		},
+		{
+			"forge": "setRemoved()",
+			"fabric": "markRemoved()"
+		},
+		{
+			"forge": "clearRemoved()",
+			"fabric": "cancelRemoval()"
+		},
+		{
+			"forge": "triggerEvent(int arg0, int arg1)",
+			"fabric": "onSyncedBlockEvent(int type, int data)"
+		},
+		{
+			"forge": "fillCrashReportCategory(CrashReportCategory arg0)",
+			"fabric": "populateCrashReport(CrashReportSection crashReportSection)"
+		},
+		{
+			"forge": "onlyOpCanSetNbt()",
+			"fabric": "copyItemDataRequiresOperator()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "setBlockState(BlockState arg0)",
+			"fabric": "setCachedState(BlockState state)"
+		}
+	]
+}

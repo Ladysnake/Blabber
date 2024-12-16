@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.BlockUtil",
+	"items": [
+		{
+			"forge": "net.minecraft.BlockUtil",
+			"fabric": "net.minecraft.world.BlockLocating"
+		},
+		{
+			"forge": "getLargestRectangleAround(BlockPos arg0, Direction$Axis arg1, int arg2, Direction$Axis arg3, int arg4, Predicate<BlockPos> arg5)",
+			"fabric": "getLargestRectangle(BlockPos center, Direction$Axis primaryAxis, int primaryMaxBlocks, Direction$Axis secondaryAxis, int secondaryMaxBlocks, Predicate<BlockPos> predicate)"
+		},
+		{
+			"forge": "getLargestRectangleAround(BlockPos arg0, Direction$Axis arg1, int arg2, Direction$Axis arg3, int arg4, Predicate<BlockPos> arg5)",
+			"fabric": "getLargestRectangle(BlockPos center, Direction$Axis primaryAxis, int primaryMaxBlocks, Direction$Axis secondaryAxis, int secondaryMaxBlocks, Predicate<BlockPos> predicate)"
+		},
+		{
+			"forge": "getLimit(Predicate<BlockPos> arg0, BlockPos$MutableBlockPos arg1, Direction arg2, int arg3)",
+			"fabric": "moveWhile(Predicate<BlockPos> predicate, BlockPos$Mutable pos, Direction direction, int max)"
+		},
+		{
+			"forge": "getMaxRectangleLocation(int[] arg0)",
+			"fabric": "findLargestRectangle(int[] heights)"
+		},
+		{
+			"forge": "getTopConnectedBlock(BlockGetter arg0, BlockPos arg1, Block arg2, Direction arg3, Block arg4)",
+			"fabric": "findColumnEnd(BlockView world, BlockPos pos, Block intermediateBlock, Direction direction, Block endBlock)"
+		}
+	]
+}

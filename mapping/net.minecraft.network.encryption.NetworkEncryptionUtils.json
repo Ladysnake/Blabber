@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.util.Crypt",
+	"items": [
+		{
+			"forge": "net.minecraft.util.Crypt",
+			"fabric": "net.minecraft.network.encryption.NetworkEncryptionUtils"
+		},
+		{
+			"forge": "SYMMETRIC_ALGORITHM",
+			"fabric": "AES"
+		},
+		{
+			"forge": "SYMMETRIC_ALGORITHM",
+			"fabric": "AES"
+		},
+		{
+			"forge": "SYMMETRIC_BITS",
+			"fabric": "AES_KEY_LENGTH"
+		},
+		{
+			"forge": "ASYMMETRIC_ALGORITHM",
+			"fabric": "RSA"
+		},
+		{
+			"forge": "ASYMMETRIC_BITS",
+			"fabric": "RSA_KEY_LENGTH"
+		},
+		{
+			"forge": "BYTE_ENCODING",
+			"fabric": "ISO_8859_1"
+		},
+		{
+			"forge": "HASH_ALGORITHM",
+			"fabric": "SHA1"
+		},
+		{
+			"forge": "SIGNING_ALGORITHM",
+			"fabric": "SHA256_WITH_RSA"
+		},
+		{
+			"forge": "SIGNATURE_BYTES",
+			"fabric": "SHA256_BITS"
+		},
+		{
+			"forge": "PEM_RSA_PRIVATE_KEY_HEADER",
+			"fabric": "RSA_PRIVATE_KEY_PREFIX"
+		},
+		{
+			"forge": "PEM_RSA_PRIVATE_KEY_FOOTER",
+			"fabric": "RSA_PRIVATE_KEY_SUFFIX"
+		},
+		{
+			"forge": "RSA_PUBLIC_KEY_HEADER",
+			"fabric": "RSA_PUBLIC_KEY_PREFIX"
+		},
+		{
+			"forge": "RSA_PUBLIC_KEY_FOOTER",
+			"fabric": "RSA_PUBLIC_KEY_SUFFIX"
+		},
+		{
+			"forge": "MIME_LINE_SEPARATOR",
+			"fabric": "LINEBREAK"
+		},
+		{
+			"forge": "MIME_ENCODER",
+			"fabric": "BASE64_ENCODER"
+		},
+		{
+			"forge": "PUBLIC_KEY_CODEC",
+			"fabric": "RSA_PUBLIC_KEY_CODEC"
+		},
+		{
+			"forge": "PRIVATE_KEY_CODEC",
+			"fabric": "RSA_PRIVATE_KEY_CODEC"
+		},
+		{
+			"forge": "generateSecretKey()",
+			"fabric": "generateSecretKey()"
+		},
+		{
+			"forge": "generateSecretKey()",
+			"fabric": "generateSecretKey()"
+		},
+		{
+			"forge": "generateKeyPair()",
+			"fabric": "generateServerKeyPair()"
+		},
+		{
+			"forge": "digestData(String arg0, PublicKey arg1, SecretKey arg2)",
+			"fabric": "computeServerId(String baseServerId, PublicKey publicKey, SecretKey secretKey)"
+		},
+		{
+			"forge": "digestData(byte[]... arg0)",
+			"fabric": "hash(byte[]... bytes)"
+		},
+		{
+			"forge": "rsaStringToKey(String arg0, String arg1, String arg2, Crypt$ByteArrayToKeyFunction<T> arg3)",
+			"fabric": "decodePem(String key, String prefix, String suffix, NetworkEncryptionUtils$KeyDecoder<T> decoder)"
+		},
+		{
+			"forge": "stringToPemRsaPrivateKey(String arg0)",
+			"fabric": "decodeRsaPrivateKeyPem(String key)"
+		},
+		{
+			"forge": "stringToRsaPublicKey(String arg0)",
+			"fabric": "decodeRsaPublicKeyPem(String key)"
+		},
+		{
+			"forge": "rsaPublicKeyToString(PublicKey arg0)",
+			"fabric": "encodeRsaPublicKey(PublicKey key)"
+		},
+		{
+			"forge": "pemRsaPrivateKeyToString(PrivateKey arg0)",
+			"fabric": "encodeRsaPrivateKey(PrivateKey key)"
+		},
+		{
+			"forge": "byteToPrivateKey(byte[] arg0)",
+			"fabric": "decodeEncodedRsaPrivateKey(byte[] key)"
+		},
+		{
+			"forge": "byteToPublicKey(byte[] arg0)",
+			"fabric": "decodeEncodedRsaPublicKey(byte[] key)"
+		},
+		{
+			"forge": "decryptByteToSecretKey(PrivateKey arg0, byte[] arg1)",
+			"fabric": "decryptSecretKey(PrivateKey privateKey, byte[] encryptedSecretKey)"
+		},
+		{
+			"forge": "encryptUsingKey(Key arg0, byte[] arg1)",
+			"fabric": "encrypt(Key key, byte[] data)"
+		},
+		{
+			"forge": "decryptUsingKey(Key arg0, byte[] arg1)",
+			"fabric": "decrypt(Key key, byte[] data)"
+		},
+		{
+			"forge": "cipherData(int arg0, Key arg1, byte[] arg2)",
+			"fabric": "crypt(int opMode, Key key, byte[] data)"
+		},
+		{
+			"forge": "setupCipher(int arg0, String arg1, Key arg2)",
+			"fabric": "createCipher(int opMode, String algorithm, Key key)"
+		},
+		{
+			"forge": "getCipher(int arg0, Key arg1)",
+			"fabric": "cipherFromKey(int opMode, Key key)"
+		}
+	]
+}

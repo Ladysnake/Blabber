@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.inventory.RecipeBookMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.RecipeBookMenu",
+			"fabric": "net.minecraft.screen.AbstractRecipeScreenHandler"
+		},
+		{
+			"forge": "handlePlacement(boolean arg0, Recipe<?> arg1, ServerPlayer arg2)",
+			"fabric": "fillInputSlots(boolean craftAll, Recipe<?> recipe, ServerPlayerEntity player)"
+		},
+		{
+			"forge": "handlePlacement(boolean arg0, Recipe<?> arg1, ServerPlayer arg2)",
+			"fabric": "fillInputSlots(boolean craftAll, Recipe<?> recipe, ServerPlayerEntity player)"
+		},
+		{
+			"forge": "fillCraftSlotsStackedContents(StackedContents arg0)",
+			"fabric": "populateRecipeFinder(RecipeMatcher finder)"
+		},
+		{
+			"forge": "clearCraftingContent()",
+			"fabric": "clearCraftingSlots()"
+		},
+		{
+			"forge": "recipeMatches(Recipe<? super C> arg0)",
+			"fabric": "matches(Recipe<? super C> recipe)"
+		},
+		{
+			"forge": "getResultSlotIndex()",
+			"fabric": "getCraftingResultSlotIndex()"
+		},
+		{
+			"forge": "getGridWidth()",
+			"fabric": "getCraftingWidth()"
+		},
+		{
+			"forge": "getGridHeight()",
+			"fabric": "getCraftingHeight()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getCraftingSlotCount()"
+		},
+		{
+			"forge": "getRecipeBookType()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "shouldMoveToInventory(int arg0)",
+			"fabric": "canInsertIntoSlot(int index)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootDataManager$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootDataManager$1",
+			"fabric": "net.minecraft.loot.LootManager$1"
+		},
+		{
+			"forge": "getElement(LootDataId<T> arg0)",
+			"fabric": "getElement(LootDataKey<T> arg0)"
+		},
+		{
+			"forge": "getElement(LootDataId<T> arg0)",
+			"fabric": "getElement(LootDataKey<T> arg0)"
+		}
+	]
+}

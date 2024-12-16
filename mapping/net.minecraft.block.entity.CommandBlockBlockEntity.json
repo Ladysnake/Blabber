@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.level.block.entity.CommandBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.CommandBlockEntity",
+			"fabric": "net.minecraft.block.entity.CommandBlockBlockEntity"
+		},
+		{
+			"forge": "powered",
+			"fabric": "powered"
+		},
+		{
+			"forge": "powered",
+			"fabric": "powered"
+		},
+		{
+			"forge": "auto",
+			"fabric": "auto"
+		},
+		{
+			"forge": "conditionMet",
+			"fabric": "conditionMet"
+		},
+		{
+			"forge": "commandBlock",
+			"fabric": "commandExecutor"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "onlyOpCanSetNbt()",
+			"fabric": "copyItemDataRequiresOperator()"
+		},
+		{
+			"forge": "getCommandBlock()",
+			"fabric": "getCommandExecutor()"
+		},
+		{
+			"forge": "setPowered(boolean arg0)",
+			"fabric": "setPowered(boolean powered)"
+		},
+		{
+			"forge": "isPowered()",
+			"fabric": "isPowered()"
+		},
+		{
+			"forge": "isAutomatic()",
+			"fabric": "isAuto()"
+		},
+		{
+			"forge": "setAutomatic(boolean arg0)",
+			"fabric": "setAuto(boolean auto)"
+		},
+		{
+			"forge": "onModeSwitch()",
+			"fabric": "updateCommandBlock()"
+		},
+		{
+			"forge": "scheduleTick()",
+			"fabric": "scheduleAutoTick()"
+		},
+		{
+			"forge": "wasConditionMet()",
+			"fabric": "isConditionMet()"
+		},
+		{
+			"forge": "markConditionMet()",
+			"fabric": "updateConditionMet()"
+		},
+		{
+			"forge": "getMode()",
+			"fabric": "getCommandBlockType()"
+		},
+		{
+			"forge": "isConditional()",
+			"fabric": "isConditionalCommandBlock()"
+		}
+	]
+}

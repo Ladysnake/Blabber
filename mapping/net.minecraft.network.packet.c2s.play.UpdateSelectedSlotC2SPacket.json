@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket"
+		},
+		{
+			"forge": "slot",
+			"fabric": "selectedSlot"
+		},
+		{
+			"forge": "slot",
+			"fabric": "selectedSlot"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getSlot()",
+			"fabric": "getSelectedSlot()"
+		}
+	]
+}

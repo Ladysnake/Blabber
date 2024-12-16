@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.phys.shapes.CollisionContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.CollisionContext",
+			"fabric": "net.minecraft.block.ShapeContext"
+		},
+		{
+			"forge": "empty()",
+			"fabric": "absent()"
+		},
+		{
+			"forge": "empty()",
+			"fabric": "absent()"
+		},
+		{
+			"forge": "of(Entity arg0)",
+			"fabric": "of(Entity entity)"
+		},
+		{
+			"forge": "isDescending()",
+			"fabric": "isDescending()"
+		},
+		{
+			"forge": "isAbove(VoxelShape arg0, BlockPos arg1, boolean arg2)",
+			"fabric": "isAbove(VoxelShape shape, BlockPos pos, boolean defaultValue)"
+		},
+		{
+			"forge": "isHoldingItem(Item arg0)",
+			"fabric": "isHolding(Item item)"
+		},
+		{
+			"forge": "canStandOnFluid(FluidState arg0, FluidState arg1)",
+			"fabric": "canWalkOnFluid(FluidState stateAbove, FluidState state)"
+		}
+	]
+}

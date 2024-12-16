@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.entity.monster.Illusioner",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Illusioner",
+			"fabric": "net.minecraft.entity.mob.IllusionerEntity"
+		},
+		{
+			"forge": "NUM_ILLUSIONS",
+			"fabric": "field_30473"
+		},
+		{
+			"forge": "NUM_ILLUSIONS",
+			"fabric": "field_30473"
+		},
+		{
+			"forge": "ILLUSION_TRANSITION_TICKS",
+			"fabric": "field_30471"
+		},
+		{
+			"forge": "ILLUSION_SPREAD",
+			"fabric": "field_30472"
+		},
+		{
+			"forge": "clientSideIllusionTicks",
+			"fabric": "mirrorSpellTimer"
+		},
+		{
+			"forge": "clientSideIllusionOffsets",
+			"fabric": "mirrorCopyOffsets"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createIllusionerAttributes()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "getBoundingBoxForCulling()",
+			"fabric": "getVisibilityBoundingBox()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "getCelebrateSound()",
+			"fabric": "getCelebratingSound()"
+		},
+		{
+			"forge": "getIllusionOffsets(float arg0)",
+			"fabric": "getMirrorCopyOffsets(float tickDelta)"
+		},
+		{
+			"forge": "isAlliedTo(Entity arg0)",
+			"fabric": "isTeammate(Entity arg0)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getCastingSoundEvent()",
+			"fabric": "getCastSpellSound()"
+		},
+		{
+			"forge": "applyRaidBuffs(int arg0, boolean arg1)",
+			"fabric": "addBonusForWave(int arg0, boolean arg1)"
+		},
+		{
+			"forge": "performRangedAttack(LivingEntity arg0, float arg1)",
+			"fabric": "attack(LivingEntity arg0, float arg1)"
+		},
+		{
+			"forge": "getArmPose()",
+			"fabric": "getState()"
+		}
+	]
+}

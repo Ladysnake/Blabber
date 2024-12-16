@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent$Fields",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent$Fields",
+			"fabric": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent$Names"
+		},
+		{
+			"forge": "AVERAGE_TICK_DURATION",
+			"fabric": "AVERAGE_TICK_DURATION"
+		},
+		{
+			"forge": "AVERAGE_TICK_DURATION",
+			"fabric": "AVERAGE_TICK_DURATION"
+		}
+	]
+}

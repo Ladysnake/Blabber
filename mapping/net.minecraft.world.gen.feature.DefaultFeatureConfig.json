@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.DefaultFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		}
+	]
+}

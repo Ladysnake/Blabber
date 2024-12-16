@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.world.inventory.AnvilMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.AnvilMenu",
+			"fabric": "net.minecraft.screen.AnvilScreenHandler"
+		},
+		{
+			"forge": "INPUT_SLOT",
+			"fabric": "INPUT_1_ID"
+		},
+		{
+			"forge": "INPUT_SLOT",
+			"fabric": "INPUT_1_ID"
+		},
+		{
+			"forge": "ADDITIONAL_SLOT",
+			"fabric": "INPUT_2_ID"
+		},
+		{
+			"forge": "RESULT_SLOT",
+			"fabric": "OUTPUT_ID"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DEBUG_COST",
+			"fabric": "field_30752"
+		},
+		{
+			"forge": "MAX_NAME_LENGTH",
+			"fabric": "MAX_NAME_LENGTH"
+		},
+		{
+			"forge": "repairItemCountCost",
+			"fabric": "repairItemUsage"
+		},
+		{
+			"forge": "itemName",
+			"fabric": "newItemName"
+		},
+		{
+			"forge": "cost",
+			"fabric": "levelCost"
+		},
+		{
+			"forge": "COST_FAIL",
+			"fabric": "field_30753"
+		},
+		{
+			"forge": "COST_BASE",
+			"fabric": "field_30754"
+		},
+		{
+			"forge": "COST_ADDED_BASE",
+			"fabric": "field_30755"
+		},
+		{
+			"forge": "COST_REPAIR_MATERIAL",
+			"fabric": "field_30747"
+		},
+		{
+			"forge": "COST_REPAIR_SACRIFICE",
+			"fabric": "field_30748"
+		},
+		{
+			"forge": "COST_INCOMPATIBLE_PENALTY",
+			"fabric": "field_30749"
+		},
+		{
+			"forge": "COST_RENAME",
+			"fabric": "field_30750"
+		},
+		{
+			"forge": "INPUT_SLOT_X_PLACEMENT",
+			"fabric": "INPUT_1_X"
+		},
+		{
+			"forge": "ADDITIONAL_SLOT_X_PLACEMENT",
+			"fabric": "INPUT_2_X"
+		},
+		{
+			"forge": "RESULT_SLOT_X_PLACEMENT",
+			"fabric": "OUTPUT_X"
+		},
+		{
+			"forge": "SLOT_Y_PLACEMENT",
+			"fabric": "SLOT_Y"
+		},
+		{
+			"forge": "createInputSlotDefinitions()",
+			"fabric": "getForgingSlotsManager()"
+		},
+		{
+			"forge": "createInputSlotDefinitions()",
+			"fabric": "getForgingSlotsManager()"
+		},
+		{
+			"forge": "isValidBlock(BlockState arg0)",
+			"fabric": "canUse(BlockState arg0)"
+		},
+		{
+			"forge": "mayPickup(Player arg0, boolean arg1)",
+			"fabric": "canTakeOutput(PlayerEntity arg0, boolean arg1)"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeOutput(PlayerEntity arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "createResult()",
+			"fabric": "updateResult()"
+		},
+		{
+			"forge": "calculateIncreasedRepairCost(int arg0)",
+			"fabric": "getNextCost(int cost)"
+		},
+		{
+			"forge": "setItemName(String arg0)",
+			"fabric": "setNewItemName(String newItemName)"
+		},
+		{
+			"forge": "validateName(String arg0)",
+			"fabric": "sanitize(String name)"
+		},
+		{
+			"forge": "getCost()",
+			"fabric": "getLevelCost()"
+		}
+	]
+}

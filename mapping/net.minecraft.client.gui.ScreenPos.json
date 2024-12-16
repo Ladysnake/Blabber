@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.navigation.ScreenPosition",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.navigation.ScreenPosition",
+			"fabric": "net.minecraft.client.gui.ScreenPos"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "of(ScreenAxis arg0, int arg1, int arg2)",
+			"fabric": "of(NavigationAxis axis, int sameAxis, int otherAxis)"
+		},
+		{
+			"forge": "of(ScreenAxis arg0, int arg1, int arg2)",
+			"fabric": "of(NavigationAxis axis, int sameAxis, int otherAxis)"
+		},
+		{
+			"forge": "step(ScreenDirection arg0)",
+			"fabric": "add(NavigationDirection direction)"
+		},
+		{
+			"forge": "getCoordinate(ScreenAxis arg0)",
+			"fabric": "getComponent(NavigationAxis axis)"
+		},
+		{
+			"forge": "x()",
+			"fabric": "x()"
+		},
+		{
+			"forge": "y()",
+			"fabric": "y()"
+		}
+	]
+}

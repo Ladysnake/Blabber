@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BitStorageAlignFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BitStorageAlignFix",
+			"fabric": "net.minecraft.datafixer.fix.BitStorageAlignFix"
+		},
+		{
+			"forge": "BIT_TO_LONG_SHIFT",
+			"fabric": "ELEMENT_BIT_SHIFT"
+		},
+		{
+			"forge": "BIT_TO_LONG_SHIFT",
+			"fabric": "ELEMENT_BIT_SHIFT"
+		},
+		{
+			"forge": "SECTION_WIDTH",
+			"fabric": "CHUNK_WIDTH"
+		},
+		{
+			"forge": "SECTION_HEIGHT",
+			"fabric": "CHUNK_LENGTH"
+		},
+		{
+			"forge": "SECTION_SIZE",
+			"fabric": "MAX_BLOCK_STATE_ID"
+		},
+		{
+			"forge": "HEIGHTMAP_BITS",
+			"fabric": "HEIGHT_VALUE_BITS"
+		},
+		{
+			"forge": "HEIGHTMAP_SIZE",
+			"fabric": "MAX_HEIGHT_VALUE"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixHeightmaps(com.mojang.datafixers.Typed<?> fixedLevel)"
+		},
+		{
+			"forge": "updateHeightmaps(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "fixHeightmaps(com.mojang.datafixers.Typed<?> fixedLevel)"
+		},
+		{
+			"forge": "updateSections(com.mojang.datafixers.OpticFinder<?> arg0, com.mojang.datafixers.OpticFinder<?> arg1, com.mojang.datafixers.OpticFinder<List<com.mojang.datafixers.util.Pair<String, com.mojang.serialization.Dynamic<?>>>> arg2, com.mojang.datafixers.Typed<?> arg3)",
+			"fabric": "fixLevel(com.mojang.datafixers.OpticFinder<?> levelSectionsFinder, com.mojang.datafixers.OpticFinder<?> sectionFinder, com.mojang.datafixers.OpticFinder<List<com.mojang.datafixers.util.Pair<String, com.mojang.serialization.Dynamic<?>>>> paletteFinder, com.mojang.datafixers.Typed<?> level)"
+		},
+		{
+			"forge": "updateBitStorage(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.Dynamic<?> arg1, int arg2, int arg3)",
+			"fabric": "fixBitStorageArray(com.mojang.serialization.Dynamic<?> sectionDynamic, com.mojang.serialization.Dynamic<?> statesDynamic, int maxValue, int elementBits)"
+		},
+		{
+			"forge": "addPadding(int arg0, int arg1, long[] arg2)",
+			"fabric": "resizePackedIntArray(int maxValue, int elementBits, long[] elements)"
+		}
+	]
+}

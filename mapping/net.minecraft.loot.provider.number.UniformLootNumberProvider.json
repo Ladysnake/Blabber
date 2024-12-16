@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.providers.number.UniformGenerator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.providers.number.UniformGenerator",
+			"fabric": "net.minecraft.loot.provider.number.UniformLootNumberProvider"
+		},
+		{
+			"forge": "min",
+			"fabric": "min"
+		},
+		{
+			"forge": "min",
+			"fabric": "min"
+		},
+		{
+			"forge": "max",
+			"fabric": "max"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "between(float arg0, float arg1)",
+			"fabric": "create(float min, float max)"
+		},
+		{
+			"forge": "getInt(LootContext arg0)",
+			"fabric": "nextInt(LootContext arg0)"
+		},
+		{
+			"forge": "getFloat(LootContext arg0)",
+			"fabric": "nextFloat(LootContext arg0)"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		}
+	]
+}

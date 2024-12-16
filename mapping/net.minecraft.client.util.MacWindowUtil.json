@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.blaze3d.platform.MacosUtil",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.MacosUtil",
+			"fabric": "net.minecraft.client.util.MacWindowUtil"
+		},
+		{
+			"forge": "NS_FULL_SCREEN_WINDOW_MASK",
+			"fabric": "FULLSCREEN_MASK"
+		},
+		{
+			"forge": "NS_FULL_SCREEN_WINDOW_MASK",
+			"fabric": "FULLSCREEN_MASK"
+		},
+		{
+			"forge": "toggleFullscreen(long arg0)",
+			"fabric": "toggleFullscreen(long handle)"
+		},
+		{
+			"forge": "toggleFullscreen(long arg0)",
+			"fabric": "toggleFullscreen(long handle)"
+		},
+		{
+			"forge": "getNsWindow(long arg0)",
+			"fabric": "getCocoaWindow(long handle)"
+		},
+		{
+			"forge": "isInKioskMode(ca.weblite.objc.NSObject arg0)",
+			"fabric": "isFullscreen(ca.weblite.objc.NSObject handle)"
+		},
+		{
+			"forge": "toggleFullscreen(ca.weblite.objc.NSObject arg0)",
+			"fabric": "toggleFullscreen(ca.weblite.objc.NSObject handle)"
+		},
+		{
+			"forge": "loadIcon(IoSupplier<InputStream> arg0)",
+			"fabric": "setApplicationIconImage(InputSupplier<InputStream> iconSupplier)"
+		}
+	]
+}

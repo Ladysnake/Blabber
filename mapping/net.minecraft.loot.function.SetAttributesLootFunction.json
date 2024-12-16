@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetAttributesFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetAttributesFunction",
+			"fabric": "net.minecraft.loot.function.SetAttributesLootFunction"
+		},
+		{
+			"forge": "modifiers",
+			"fabric": "attributes"
+		},
+		{
+			"forge": "modifiers",
+			"fabric": "attributes"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "modifier(String arg0, Attribute arg1, AttributeModifier$Operation arg2, NumberProvider arg3)",
+			"fabric": "attributeBuilder(String name, EntityAttribute attribute, EntityAttributeModifier$Operation operation, LootNumberProvider amountRange)"
+		},
+		{
+			"forge": "setAttributes()",
+			"fabric": "builder()"
+		}
+	]
+}

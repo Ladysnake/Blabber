@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.biome.AmbientAdditionsSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.AmbientAdditionsSettings",
+			"fabric": "net.minecraft.sound.BiomeAdditionsSound"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "soundEvent",
+			"fabric": "sound"
+		},
+		{
+			"forge": "tickChance",
+			"fabric": "chance"
+		},
+		{
+			"forge": "getSoundEvent()",
+			"fabric": "getSound()"
+		},
+		{
+			"forge": "getSoundEvent()",
+			"fabric": "getSound()"
+		},
+		{
+			"forge": "getTickChance()",
+			"fabric": "getChance()"
+		}
+	]
+}

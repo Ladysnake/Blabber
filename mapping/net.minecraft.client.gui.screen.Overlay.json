@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.Overlay",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.Overlay",
+			"fabric": "net.minecraft.client.gui.screen.Overlay"
+		},
+		{
+			"forge": "isPauseScreen()",
+			"fabric": "pausesGame()"
+		},
+		{
+			"forge": "isPauseScreen()",
+			"fabric": "pausesGame()"
+		}
+	]
+}

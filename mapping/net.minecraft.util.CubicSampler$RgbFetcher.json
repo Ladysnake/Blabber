@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.CubicSampler$Vec3Fetcher",
+	"items": [
+		{
+			"forge": "net.minecraft.util.CubicSampler$Vec3Fetcher",
+			"fabric": "net.minecraft.util.CubicSampler$RgbFetcher"
+		},
+		{
+			"forge": "fetch(int arg0, int arg1, int arg2)",
+			"fabric": "fetch(int x, int y, int z)"
+		},
+		{
+			"forge": "fetch(int arg0, int arg1, int arg2)",
+			"fabric": "fetch(int x, int y, int z)"
+		}
+	]
+}

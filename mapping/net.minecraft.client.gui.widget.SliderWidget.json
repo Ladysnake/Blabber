@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.client.gui.components.AbstractSliderButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.AbstractSliderButton",
+			"fabric": "net.minecraft.client.gui.widget.SliderWidget"
+		},
+		{
+			"forge": "SLIDER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SLIDER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE_WIDTH",
+			"fabric": "field_43051"
+		},
+		{
+			"forge": "TEXTURE_HEIGHT",
+			"fabric": "field_43052"
+		},
+		{
+			"forge": "TEXTURE_BORDER_X",
+			"fabric": "field_43102"
+		},
+		{
+			"forge": "TEXTURE_BORDER_Y",
+			"fabric": "field_43103"
+		},
+		{
+			"forge": "TEXT_MARGIN",
+			"fabric": "field_43054"
+		},
+		{
+			"forge": "HEIGHT",
+			"fabric": "field_41788"
+		},
+		{
+			"forge": "HANDLE_HALF_WIDTH",
+			"fabric": "field_41789"
+		},
+		{
+			"forge": "HANDLE_WIDTH",
+			"fabric": "field_41790"
+		},
+		{
+			"forge": "BACKGROUND",
+			"fabric": "field_41792"
+		},
+		{
+			"forge": "BACKGROUND_FOCUSED",
+			"fabric": "field_41793"
+		},
+		{
+			"forge": "HANDLE",
+			"fabric": "field_41794"
+		},
+		{
+			"forge": "HANDLE_FOCUSED",
+			"fabric": "field_41795"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "canChangeValue",
+			"fabric": "sliderFocused"
+		},
+		{
+			"forge": "getTextureY()",
+			"fabric": "getYImage()"
+		},
+		{
+			"forge": "getTextureY()",
+			"fabric": "getYImage()"
+		},
+		{
+			"forge": "getHandleTextureY()",
+			"fabric": "getTextureV()"
+		},
+		{
+			"forge": "createNarrationMessage()",
+			"fabric": "getNarrationMessage()"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "onClick(double arg0, double arg1)",
+			"fabric": "onClick(double arg0, double arg1)"
+		},
+		{
+			"forge": "setFocused(boolean arg0)",
+			"fabric": "setFocused(boolean arg0)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "setValueFromMouse(double arg0)",
+			"fabric": "setValueFromMouse(double mouseX)"
+		},
+		{
+			"forge": "setValue(double arg0)",
+			"fabric": "setValue(double value)"
+		},
+		{
+			"forge": "onDrag(double arg0, double arg1, double arg2, double arg3)",
+			"fabric": "onDrag(double arg0, double arg1, double arg2, double arg3)"
+		},
+		{
+			"forge": "playDownSound(SoundManager arg0)",
+			"fabric": "playDownSound(SoundManager arg0)"
+		},
+		{
+			"forge": "onRelease(double arg0, double arg1)",
+			"fabric": "onRelease(double arg0, double arg1)"
+		},
+		{
+			"forge": "updateMessage()",
+			"fabric": "updateMessage()"
+		},
+		{
+			"forge": "applyValue()",
+			"fabric": "applyValue()"
+		}
+	]
+}

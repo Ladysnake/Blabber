@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.carver.CanyonCarverConfiguration$CanyonShapeConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.carver.CanyonCarverConfiguration$CanyonShapeConfiguration",
+			"fabric": "net.minecraft.world.gen.carver.RavineCarverConfig$Shape"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "distanceFactor",
+			"fabric": "distanceFactor"
+		},
+		{
+			"forge": "thickness",
+			"fabric": "thickness"
+		},
+		{
+			"forge": "widthSmoothness",
+			"fabric": "widthSmoothness"
+		},
+		{
+			"forge": "horizontalRadiusFactor",
+			"fabric": "horizontalRadiusFactor"
+		},
+		{
+			"forge": "verticalRadiusDefaultFactor",
+			"fabric": "verticalRadiusDefaultFactor"
+		},
+		{
+			"forge": "verticalRadiusCenterFactor",
+			"fabric": "verticalRadiusCenterFactor"
+		}
+	]
+}

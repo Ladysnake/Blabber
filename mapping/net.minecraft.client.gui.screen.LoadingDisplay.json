@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.screens.LoadingDotsText",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.LoadingDotsText",
+			"fabric": "net.minecraft.client.gui.screen.LoadingDisplay"
+		},
+		{
+			"forge": "FRAMES",
+			"fabric": "TEXTS"
+		},
+		{
+			"forge": "FRAMES",
+			"fabric": "TEXTS"
+		},
+		{
+			"forge": "INTERVAL_MS",
+			"fabric": "INTERVAL"
+		},
+		{
+			"forge": "get(long arg0)",
+			"fabric": "get(long tick)"
+		},
+		{
+			"forge": "get(long arg0)",
+			"fabric": "get(long tick)"
+		}
+	]
+}

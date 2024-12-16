@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.particle.WaterCurrentDownParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.WaterCurrentDownParticle",
+			"fabric": "net.minecraft.client.particle.CurrentDownParticle"
+		},
+		{
+			"forge": "angle",
+			"fabric": "accelerationAngle"
+		},
+		{
+			"forge": "angle",
+			"fabric": "accelerationAngle"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

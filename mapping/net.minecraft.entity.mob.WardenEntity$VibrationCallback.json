@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.monster.warden.Warden$VibrationUser",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.warden.Warden$VibrationUser",
+			"fabric": "net.minecraft.entity.mob.WardenEntity$VibrationCallback"
+		},
+		{
+			"forge": "GAME_EVENT_LISTENER_RANGE",
+			"fabric": "RANGE"
+		},
+		{
+			"forge": "GAME_EVENT_LISTENER_RANGE",
+			"fabric": "RANGE"
+		},
+		{
+			"forge": "positionSource",
+			"fabric": "positionSource"
+		},
+		{
+			"forge": "getListenerRadius()",
+			"fabric": "getRange()"
+		},
+		{
+			"forge": "getListenerRadius()",
+			"fabric": "getRange()"
+		},
+		{
+			"forge": "getPositionSource()",
+			"fabric": "getPositionSource()"
+		},
+		{
+			"forge": "getListenableEvents()",
+			"fabric": "getTag()"
+		},
+		{
+			"forge": "canTriggerAvoidVibration()",
+			"fabric": "triggersAvoidCriterion()"
+		},
+		{
+			"forge": "canReceiveVibration(ServerLevel arg0, BlockPos arg1, GameEvent arg2, GameEvent$Context arg3)",
+			"fabric": "accepts(ServerWorld arg0, BlockPos arg1, GameEvent arg2, GameEvent$Emitter arg3)"
+		},
+		{
+			"forge": "onReceiveVibration(ServerLevel arg0, BlockPos arg1, GameEvent arg2, Entity arg3, Entity arg4, float arg5)",
+			"fabric": "accept(ServerWorld arg0, BlockPos arg1, GameEvent arg2, Entity arg3, Entity arg4, float arg5)"
+		}
+	]
+}

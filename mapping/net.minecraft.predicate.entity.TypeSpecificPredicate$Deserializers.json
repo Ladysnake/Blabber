@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.advancements.critereon.EntitySubPredicate$Types",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.EntitySubPredicate$Types",
+			"fabric": "net.minecraft.predicate.entity.TypeSpecificPredicate$Deserializers"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "ANY"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "ANY"
+		},
+		{
+			"forge": "LIGHTNING",
+			"fabric": "LIGHTNING"
+		},
+		{
+			"forge": "FISHING_HOOK",
+			"fabric": "FISHING_HOOK"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "SLIME",
+			"fabric": "SLIME"
+		},
+		{
+			"forge": "CAT",
+			"fabric": "CAT"
+		},
+		{
+			"forge": "FROG",
+			"fabric": "FROG"
+		},
+		{
+			"forge": "AXOLOTL",
+			"fabric": "AXOLOTL"
+		},
+		{
+			"forge": "BOAT",
+			"fabric": "BOAT"
+		},
+		{
+			"forge": "FOX",
+			"fabric": "FOX"
+		},
+		{
+			"forge": "MOOSHROOM",
+			"fabric": "MOOSHROOM"
+		},
+		{
+			"forge": "PAINTING",
+			"fabric": "PAINTING"
+		},
+		{
+			"forge": "RABBIT",
+			"fabric": "RABBIT"
+		},
+		{
+			"forge": "HORSE",
+			"fabric": "HORSE"
+		},
+		{
+			"forge": "LLAMA",
+			"fabric": "LLAMA"
+		},
+		{
+			"forge": "VILLAGER",
+			"fabric": "VILLAGER"
+		},
+		{
+			"forge": "PARROT",
+			"fabric": "PARROT"
+		},
+		{
+			"forge": "TROPICAL_FISH",
+			"fabric": "TROPICAL_FISH"
+		},
+		{
+			"forge": "TYPES",
+			"fabric": "TYPES"
+		}
+	]
+}

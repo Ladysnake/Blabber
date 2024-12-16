@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.item.enchantment.ArrowKnockbackEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.ArrowKnockbackEnchantment",
+			"fabric": "net.minecraft.enchantment.PunchEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "getMaxLevel()",
+			"fabric": "getMaxLevel()"
+		}
+	]
+}

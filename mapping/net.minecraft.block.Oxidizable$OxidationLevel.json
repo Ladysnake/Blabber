@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.WeatheringCopper$WeatherState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.WeatheringCopper$WeatherState",
+			"fabric": "net.minecraft.block.Oxidizable$OxidationLevel"
+		},
+		{
+			"forge": "UNAFFECTED",
+			"fabric": "UNAFFECTED"
+		},
+		{
+			"forge": "UNAFFECTED",
+			"fabric": "UNAFFECTED"
+		},
+		{
+			"forge": "EXPOSED",
+			"fabric": "EXPOSED"
+		},
+		{
+			"forge": "WEATHERED",
+			"fabric": "WEATHERED"
+		},
+		{
+			"forge": "OXIDIZED",
+			"fabric": "OXIDIZED"
+		}
+	]
+}

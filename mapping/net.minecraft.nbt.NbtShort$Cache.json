@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.nbt.ShortTag$Cache",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.ShortTag$Cache",
+			"fabric": "net.minecraft.nbt.NbtShort$Cache"
+		},
+		{
+			"forge": "HIGH",
+			"fabric": "MAX"
+		},
+		{
+			"forge": "HIGH",
+			"fabric": "MAX"
+		},
+		{
+			"forge": "LOW",
+			"fabric": "MIN"
+		},
+		{
+			"forge": "cache",
+			"fabric": "VALUES"
+		}
+	]
+}

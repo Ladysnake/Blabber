@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.world.item.enchantment.Enchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.Enchantment",
+			"fabric": "net.minecraft.enchantment.Enchantment"
+		},
+		{
+			"forge": "slots",
+			"fabric": "slotTypes"
+		},
+		{
+			"forge": "slots",
+			"fabric": "slotTypes"
+		},
+		{
+			"forge": "rarity",
+			"fabric": "rarity"
+		},
+		{
+			"forge": "category",
+			"fabric": "target"
+		},
+		{
+			"forge": "descriptionId",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byRawId(int id)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byRawId(int id)"
+		},
+		{
+			"forge": "getSlotItems(LivingEntity arg0)",
+			"fabric": "getEquipment(LivingEntity entity)"
+		},
+		{
+			"forge": "getRarity()",
+			"fabric": "getRarity()"
+		},
+		{
+			"forge": "getMinLevel()",
+			"fabric": "getMinLevel()"
+		},
+		{
+			"forge": "getMaxLevel()",
+			"fabric": "getMaxLevel()"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int level)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int level)"
+		},
+		{
+			"forge": "getDamageProtection(int arg0, DamageSource arg1)",
+			"fabric": "getProtectionAmount(int level, DamageSource source)"
+		},
+		{
+			"forge": "getDamageBonus(int arg0, MobType arg1)",
+			"fabric": "getAttackDamage(int level, EntityGroup group)"
+		},
+		{
+			"forge": "isCompatibleWith(Enchantment arg0)",
+			"fabric": "canCombine(Enchantment other)"
+		},
+		{
+			"forge": "checkCompatibility(Enchantment arg0)",
+			"fabric": "canAccept(Enchantment other)"
+		},
+		{
+			"forge": "getOrCreateDescriptionId()",
+			"fabric": "getOrCreateTranslationKey()"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "getFullname(int arg0)",
+			"fabric": "getName(int level)"
+		},
+		{
+			"forge": "canEnchant(ItemStack arg0)",
+			"fabric": "isAcceptableItem(ItemStack stack)"
+		},
+		{
+			"forge": "doPostAttack(LivingEntity arg0, Entity arg1, int arg2)",
+			"fabric": "onTargetDamaged(LivingEntity user, Entity target, int level)"
+		},
+		{
+			"forge": "doPostHurt(LivingEntity arg0, Entity arg1, int arg2)",
+			"fabric": "onUserDamaged(LivingEntity user, Entity attacker, int level)"
+		},
+		{
+			"forge": "isTreasureOnly()",
+			"fabric": "isTreasure()"
+		},
+		{
+			"forge": "isCurse()",
+			"fabric": "isCursed()"
+		},
+		{
+			"forge": "isTradeable()",
+			"fabric": "isAvailableForEnchantedBookOffer()"
+		},
+		{
+			"forge": "isDiscoverable()",
+			"fabric": "isAvailableForRandomSelection()"
+		}
+	]
+}

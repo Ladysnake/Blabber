@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.font.CodepointMap$Output",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.CodepointMap$Output",
+			"fabric": "net.minecraft.client.font.GlyphContainer$GlyphConsumer"
+		},
+		{
+			"forge": "accept(int arg0, T arg1)",
+			"fabric": "accept(int codePoint, T glyph)"
+		},
+		{
+			"forge": "accept(int arg0, T arg1)",
+			"fabric": "accept(int codePoint, T glyph)"
+		}
+	]
+}

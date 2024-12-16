@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.entity.ai.gossip.GossipType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.gossip.GossipType",
+			"fabric": "net.minecraft.village.VillageGossipType"
+		},
+		{
+			"forge": "MAJOR_NEGATIVE",
+			"fabric": "MAJOR_NEGATIVE"
+		},
+		{
+			"forge": "MAJOR_NEGATIVE",
+			"fabric": "MAJOR_NEGATIVE"
+		},
+		{
+			"forge": "MINOR_NEGATIVE",
+			"fabric": "MINOR_NEGATIVE"
+		},
+		{
+			"forge": "MINOR_POSITIVE",
+			"fabric": "MINOR_POSITIVE"
+		},
+		{
+			"forge": "MAJOR_POSITIVE",
+			"fabric": "MAJOR_POSITIVE"
+		},
+		{
+			"forge": "TRADING",
+			"fabric": "TRADING"
+		},
+		{
+			"forge": "REPUTATION_CHANGE_PER_EVENT",
+			"fabric": "MAX_TRADING_REPUTATION"
+		},
+		{
+			"forge": "REPUTATION_CHANGE_PER_EVENT",
+			"fabric": "MAX_TRADING_REPUTATION"
+		},
+		{
+			"forge": "REPUTATION_CHANGE_PER_EVERLASTING_MEMORY",
+			"fabric": "TRADING_GOSSIP_SHARE_DECREMENT"
+		},
+		{
+			"forge": "REPUTATION_CHANGE_PER_TRADE",
+			"fabric": "TRADING_GOSSIP_DECAY"
+		},
+		{
+			"forge": "id",
+			"fabric": "key"
+		},
+		{
+			"forge": "weight",
+			"fabric": "multiplier"
+		},
+		{
+			"forge": "max",
+			"fabric": "maxValue"
+		},
+		{
+			"forge": "decayPerDay",
+			"fabric": "decay"
+		},
+		{
+			"forge": "decayPerTransfer",
+			"fabric": "shareDecrement"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

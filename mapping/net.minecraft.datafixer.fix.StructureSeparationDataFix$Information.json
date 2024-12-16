@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.WorldGenSettingsFix$StructureFeatureConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.WorldGenSettingsFix$StructureFeatureConfiguration",
+			"fabric": "net.minecraft.datafixer.fix.StructureSeparationDataFix$Information"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "spacing",
+			"fabric": "spacing"
+		},
+		{
+			"forge": "separation",
+			"fabric": "separation"
+		},
+		{
+			"forge": "salt",
+			"fabric": "salt"
+		},
+		{
+			"forge": "serialize(com.mojang.serialization.DynamicOps<T> arg0)",
+			"fabric": "method_28288(com.mojang.serialization.DynamicOps<T> arg0)"
+		},
+		{
+			"forge": "serialize(com.mojang.serialization.DynamicOps<T> arg0)",
+			"fabric": "method_28288(com.mojang.serialization.DynamicOps<T> arg0)"
+		}
+	]
+}

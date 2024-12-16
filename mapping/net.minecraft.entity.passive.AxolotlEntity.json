@@ -1,0 +1,297 @@
+{
+	"title": "net.minecraft.world.entity.animal.axolotl.Axolotl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.axolotl.Axolotl",
+			"fabric": "net.minecraft.entity.passive.AxolotlEntity"
+		},
+		{
+			"forge": "TOTAL_PLAYDEAD_TIME",
+			"fabric": "PLAY_DEAD_TICKS"
+		},
+		{
+			"forge": "TOTAL_PLAYDEAD_TIME",
+			"fabric": "PLAY_DEAD_TICKS"
+		},
+		{
+			"forge": "SENSOR_TYPES",
+			"fabric": "SENSORS"
+		},
+		{
+			"forge": "MEMORY_TYPES",
+			"fabric": "MEMORY_MODULES"
+		},
+		{
+			"forge": "DATA_VARIANT",
+			"fabric": "VARIANT"
+		},
+		{
+			"forge": "DATA_PLAYING_DEAD",
+			"fabric": "PLAYING_DEAD"
+		},
+		{
+			"forge": "FROM_BUCKET",
+			"fabric": "FROM_BUCKET"
+		},
+		{
+			"forge": "PLAYER_REGEN_DETECTION_RANGE",
+			"fabric": "BUFF_RANGE"
+		},
+		{
+			"forge": "RARE_VARIANT_CHANCE",
+			"fabric": "BLUE_BABY_CHANCE"
+		},
+		{
+			"forge": "AXOLOTL_TOTAL_AIR_SUPPLY",
+			"fabric": "MAX_AIR"
+		},
+		{
+			"forge": "VARIANT_TAG",
+			"fabric": "VARIANT_KEY"
+		},
+		{
+			"forge": "REHYDRATE_AIR_SUPPLY",
+			"fabric": "HYDRATION_BY_POTION"
+		},
+		{
+			"forge": "REGEN_BUFF_MAX_DURATION",
+			"fabric": "MAX_REGENERATION_BUFF_DURATION"
+		},
+		{
+			"forge": "modelRotationValues",
+			"fabric": "modelAngles"
+		},
+		{
+			"forge": "REGEN_BUFF_BASE_DURATION",
+			"fabric": "BUFF_DURATION"
+		},
+		{
+			"forge": "getModelRotationValues()",
+			"fabric": "getModelAngles()"
+		},
+		{
+			"forge": "getModelRotationValues()",
+			"fabric": "getModelAngles()"
+		},
+		{
+			"forge": "getWalkTargetValue(BlockPos arg0, LevelReader arg1)",
+			"fabric": "getPathfindingFavor(BlockPos arg0, WorldView arg1)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "playAmbientSound()",
+			"fabric": "playAmbientSound()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "baseTick()",
+			"fabric": "baseTick()"
+		},
+		{
+			"forge": "handleAirSupply(int arg0)",
+			"fabric": "tickAir(int air)"
+		},
+		{
+			"forge": "rehydrate()",
+			"fabric": "hydrateFromPotion()"
+		},
+		{
+			"forge": "getMaxAirSupply()",
+			"fabric": "getMaxAir()"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "setVariant(Axolotl$Variant arg0)",
+			"fabric": "setVariant(AxolotlEntity$Variant variant)"
+		},
+		{
+			"forge": "useRareVariant(RandomSource arg0)",
+			"fabric": "shouldBabyBeDifferent(Random random)"
+		},
+		{
+			"forge": "checkSpawnObstruction(LevelReader arg0)",
+			"fabric": "canSpawn(WorldView arg0)"
+		},
+		{
+			"forge": "canBreatheUnderwater()",
+			"fabric": "canBreatheInWater()"
+		},
+		{
+			"forge": "isPushedByFluid()",
+			"fabric": "isPushedByFluids()"
+		},
+		{
+			"forge": "getMobType()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "setPlayingDead(boolean arg0)",
+			"fabric": "setPlayingDead(boolean playingDead)"
+		},
+		{
+			"forge": "isPlayingDead()",
+			"fabric": "isPlayingDead()"
+		},
+		{
+			"forge": "fromBucket()",
+			"fabric": "isFromBucket()"
+		},
+		{
+			"forge": "setFromBucket(boolean arg0)",
+			"fabric": "setFromBucket(boolean arg0)"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "getMeleeAttackRangeSqr(LivingEntity arg0)",
+			"fabric": "squaredAttackRange(LivingEntity arg0)"
+		},
+		{
+			"forge": "isFood(ItemStack arg0)",
+			"fabric": "isBreedingItem(ItemStack arg0)"
+		},
+		{
+			"forge": "canBeLeashed(Player arg0)",
+			"fabric": "canBeLeashedBy(PlayerEntity arg0)"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createAxolotlAttributes()"
+		},
+		{
+			"forge": "createNavigation(Level arg0)",
+			"fabric": "createNavigation(World arg0)"
+		},
+		{
+			"forge": "doHurtTarget(Entity arg0)",
+			"fabric": "tryAttack(Entity arg0)"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "getMaxHeadXRot()",
+			"fabric": "getMaxLookPitchChange()"
+		},
+		{
+			"forge": "getMaxHeadYRot()",
+			"fabric": "getMaxHeadRotation()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "saveToBucketTag(ItemStack arg0)",
+			"fabric": "copyDataToStack(ItemStack arg0)"
+		},
+		{
+			"forge": "loadFromBucketTag(CompoundTag arg0)",
+			"fabric": "copyDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getBucketItemStack()",
+			"fabric": "getBucketItem()"
+		},
+		{
+			"forge": "getPickupSound()",
+			"fabric": "getBucketFillSound()"
+		},
+		{
+			"forge": "canBeSeenAsEnemy()",
+			"fabric": "canTakeDamage()"
+		},
+		{
+			"forge": "onStopAttacking(Axolotl arg0, LivingEntity arg1)",
+			"fabric": "appreciatePlayer(AxolotlEntity axolotl, LivingEntity entity)"
+		},
+		{
+			"forge": "applySupportingEffects(Player arg0)",
+			"fabric": "buffPlayer(PlayerEntity player)"
+		},
+		{
+			"forge": "requiresCustomPersistence()",
+			"fabric": "cannotDespawn()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getSwimSplashSound()",
+			"fabric": "getSplashSound()"
+		},
+		{
+			"forge": "getSwimSound()",
+			"fabric": "getSwimSound()"
+		},
+		{
+			"forge": "brainProvider()",
+			"fabric": "createBrainProfile()"
+		},
+		{
+			"forge": "makeBrain(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "deserializeBrain(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "getBrain()",
+			"fabric": "getBrain()"
+		},
+		{
+			"forge": "sendDebugPackets()",
+			"fabric": "sendAiDebugData()"
+		},
+		{
+			"forge": "travel(Vec3 arg0)",
+			"fabric": "travel(Vec3d arg0)"
+		},
+		{
+			"forge": "usePlayerItem(Player arg0, InteractionHand arg1, ItemStack arg2)",
+			"fabric": "eat(PlayerEntity arg0, Hand arg1, ItemStack arg2)"
+		},
+		{
+			"forge": "removeWhenFarAway(double arg0)",
+			"fabric": "canImmediatelyDespawn(double arg0)"
+		},
+		{
+			"forge": "checkAxolotlSpawnRules(EntityType<? extends LivingEntity> arg0, ServerLevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<? extends LivingEntity> type, ServerWorldAccess world, SpawnReason reason, BlockPos pos, Random random)"
+		}
+	]
+}

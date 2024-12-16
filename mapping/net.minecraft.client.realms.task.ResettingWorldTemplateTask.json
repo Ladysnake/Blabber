@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.realmsclient.util.task.ResettingTemplateWorldTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.ResettingTemplateWorldTask",
+			"fabric": "net.minecraft.client.realms.task.ResettingWorldTemplateTask"
+		},
+		{
+			"forge": "template",
+			"fabric": "template"
+		},
+		{
+			"forge": "template",
+			"fabric": "template"
+		},
+		{
+			"forge": "sendResetRequest(RealmsClient arg0, long arg1)",
+			"fabric": "resetWorld(RealmsClient arg0, long arg1)"
+		},
+		{
+			"forge": "sendResetRequest(RealmsClient arg0, long arg1)",
+			"fabric": "resetWorld(RealmsClient arg0, long arg1)"
+		}
+	]
+}

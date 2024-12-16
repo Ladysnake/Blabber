@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.LevelWriter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.LevelWriter",
+			"fabric": "net.minecraft.world.ModifiableWorld"
+		},
+		{
+			"forge": "setBlock(BlockPos arg0, BlockState arg1, int arg2, int arg3)",
+			"fabric": "setBlockState(BlockPos pos, BlockState state, int flags, int maxUpdateDepth)"
+		},
+		{
+			"forge": "setBlock(BlockPos arg0, BlockState arg1, int arg2, int arg3)",
+			"fabric": "setBlockState(BlockPos pos, BlockState state, int flags, int maxUpdateDepth)"
+		},
+		{
+			"forge": "setBlock(BlockPos arg0, BlockState arg1, int arg2)",
+			"fabric": "setBlockState(BlockPos pos, BlockState state, int flags)"
+		},
+		{
+			"forge": "removeBlock(BlockPos arg0, boolean arg1)",
+			"fabric": "removeBlock(BlockPos pos, boolean move)"
+		},
+		{
+			"forge": "destroyBlock(BlockPos arg0, boolean arg1)",
+			"fabric": "breakBlock(BlockPos pos, boolean drop)"
+		},
+		{
+			"forge": "destroyBlock(BlockPos arg0, boolean arg1, Entity arg2)",
+			"fabric": "breakBlock(BlockPos pos, boolean drop, Entity breakingEntity)"
+		},
+		{
+			"forge": "destroyBlock(BlockPos arg0, boolean arg1, Entity arg2, int arg3)",
+			"fabric": "breakBlock(BlockPos pos, boolean drop, Entity breakingEntity, int maxUpdateDepth)"
+		},
+		{
+			"forge": "addFreshEntity(Entity arg0)",
+			"fabric": "spawnEntity(Entity entity)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.data.worldgen.features.FeatureUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.features.FeatureUtils",
+			"fabric": "net.minecraft.world.gen.feature.ConfiguredFeatures"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		},
+		{
+			"forge": "simplePatchPredicate(List<Block> arg0)",
+			"fabric": "createBlockPredicate(List<Block> validGround)"
+		},
+		{
+			"forge": "simpleRandomPatchConfiguration(int arg0, Holder<PlacedFeature> arg1)",
+			"fabric": "createRandomPatchFeatureConfig(int tries, RegistryEntry<PlacedFeature> feature)"
+		},
+		{
+			"forge": "simplePatchConfiguration(F arg0, FC arg1, List<Block> arg2, int arg3)",
+			"fabric": "createRandomPatchFeatureConfig(F feature, FC config, List<Block> predicateBlocks, int tries)"
+		},
+		{
+			"forge": "simplePatchConfiguration(F arg0, FC arg1, List<Block> arg2)",
+			"fabric": "createRandomPatchFeatureConfig(F feature, FC config, List<Block> predicateBlocks)"
+		},
+		{
+			"forge": "simplePatchConfiguration(F arg0, FC arg1)",
+			"fabric": "createRandomPatchFeatureConfig(F feature, FC config)"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "register(BootstapContext<ConfiguredFeature<?, ?>> arg0, ResourceKey<ConfiguredFeature<?, ?>> arg1, Feature<NoneFeatureConfiguration> arg2)",
+			"fabric": "register(Registerable<ConfiguredFeature<?, ?>> registerable, RegistryKey<ConfiguredFeature<?, ?>> key, Feature<DefaultFeatureConfig> feature)"
+		},
+		{
+			"forge": "register(BootstapContext<ConfiguredFeature<?, ?>> arg0, ResourceKey<ConfiguredFeature<?, ?>> arg1, F arg2, FC arg3)",
+			"fabric": "register(Registerable<ConfiguredFeature<?, ?>> registerable, RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC config)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityRedundantChanceTagsFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityRedundantChanceTagsFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityRedundantChanceTagsFix"
+		},
+		{
+			"forge": "FLOAT_LIST_CODEC",
+			"fabric": "FLOAT_LIST_CODEC"
+		},
+		{
+			"forge": "FLOAT_LIST_CODEC",
+			"fabric": "FLOAT_LIST_CODEC"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "hasZeroDropChance(com.mojang.serialization.OptionalDynamic<?> listTag, int expectedLength)"
+		},
+		{
+			"forge": "isZeroList(com.mojang.serialization.OptionalDynamic<?> arg0, int arg1)",
+			"fabric": "hasZeroDropChance(com.mojang.serialization.OptionalDynamic<?> listTag, int expectedLength)"
+		}
+	]
+}

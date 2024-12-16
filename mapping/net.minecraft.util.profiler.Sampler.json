@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.MetricSampler",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.MetricSampler",
+			"fabric": "net.minecraft.util.profiler.Sampler"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "category",
+			"fabric": "type"
+		},
+		{
+			"forge": "sampler",
+			"fabric": "retriever"
+		},
+		{
+			"forge": "ticks",
+			"fabric": "ticksBuffer"
+		},
+		{
+			"forge": "values",
+			"fabric": "valueBuffer"
+		},
+		{
+			"forge": "isRunning",
+			"fabric": "active"
+		},
+		{
+			"forge": "beforeTick",
+			"fabric": "startAction"
+		},
+		{
+			"forge": "thresholdTest",
+			"fabric": "deviationChecker"
+		},
+		{
+			"forge": "currentValue",
+			"fabric": "currentSample"
+		},
+		{
+			"forge": "create(String arg0, MetricCategory arg1, DoubleSupplier arg2)",
+			"fabric": "create(String name, SampleType type, DoubleSupplier retriever)"
+		},
+		{
+			"forge": "create(String arg0, MetricCategory arg1, DoubleSupplier arg2)",
+			"fabric": "create(String name, SampleType type, DoubleSupplier retriever)"
+		},
+		{
+			"forge": "create(String arg0, MetricCategory arg1, T arg2, ToDoubleFunction<T> arg3)",
+			"fabric": "create(String name, SampleType type, T context, ToDoubleFunction<T> retriever)"
+		},
+		{
+			"forge": "builder(String arg0, MetricCategory arg1, ToDoubleFunction<T> arg2, T arg3)",
+			"fabric": "builder(String name, SampleType type, ToDoubleFunction<T> retriever, T context)"
+		},
+		{
+			"forge": "onStartTick()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "onEndTick(int arg0)",
+			"fabric": "sample(int tick)"
+		},
+		{
+			"forge": "onFinished()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "verifyRunning()",
+			"fabric": "ensureActive()"
+		},
+		{
+			"forge": "getSampler()",
+			"fabric": "getRetriever()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getCategory()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "result()",
+			"fabric": "collectData()"
+		},
+		{
+			"forge": "triggersThreshold()",
+			"fabric": "hasDeviated()"
+		}
+	]
+}

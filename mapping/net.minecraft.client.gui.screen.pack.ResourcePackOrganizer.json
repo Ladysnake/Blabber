@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.gui.screens.packs.PackSelectionModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.packs.PackSelectionModel",
+			"fabric": "net.minecraft.client.gui.screen.pack.ResourcePackOrganizer"
+		},
+		{
+			"forge": "repository",
+			"fabric": "resourcePackManager"
+		},
+		{
+			"forge": "repository",
+			"fabric": "resourcePackManager"
+		},
+		{
+			"forge": "selected",
+			"fabric": "enabledPacks"
+		},
+		{
+			"forge": "unselected",
+			"fabric": "disabledPacks"
+		},
+		{
+			"forge": "iconGetter",
+			"fabric": "iconIdSupplier"
+		},
+		{
+			"forge": "onListChanged",
+			"fabric": "updateCallback"
+		},
+		{
+			"forge": "output",
+			"fabric": "applier"
+		},
+		{
+			"forge": "getUnselected()",
+			"fabric": "getDisabledPacks()"
+		},
+		{
+			"forge": "getUnselected()",
+			"fabric": "getDisabledPacks()"
+		},
+		{
+			"forge": "getSelected()",
+			"fabric": "getEnabledPacks()"
+		},
+		{
+			"forge": "updateRepoSelectedList()",
+			"fabric": "refreshEnabledProfiles()"
+		},
+		{
+			"forge": "commit()",
+			"fabric": "apply()"
+		},
+		{
+			"forge": "findNewPacks()",
+			"fabric": "refresh()"
+		}
+	]
+}

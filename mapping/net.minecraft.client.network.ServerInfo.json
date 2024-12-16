@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.client.multiplayer.ServerData",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ServerData",
+			"fabric": "net.minecraft.client.network.ServerInfo"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "ip",
+			"fabric": "address"
+		},
+		{
+			"forge": "status",
+			"fabric": "playerCountLabel"
+		},
+		{
+			"forge": "motd",
+			"fabric": "label"
+		},
+		{
+			"forge": "players",
+			"fabric": "players"
+		},
+		{
+			"forge": "ping",
+			"fabric": "ping"
+		},
+		{
+			"forge": "protocol",
+			"fabric": "protocolVersion"
+		},
+		{
+			"forge": "version",
+			"fabric": "version"
+		},
+		{
+			"forge": "pinged",
+			"fabric": "online"
+		},
+		{
+			"forge": "playerList",
+			"fabric": "playerListSummary"
+		},
+		{
+			"forge": "packStatus",
+			"fabric": "resourcePackPolicy"
+		},
+		{
+			"forge": "iconBytes",
+			"fabric": "favicon"
+		},
+		{
+			"forge": "lan",
+			"fabric": "local"
+		},
+		{
+			"forge": "enforcesSecureChat",
+			"fabric": "secureChatEnforced"
+		},
+		{
+			"forge": "write()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "write()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "getResourcePackStatus()",
+			"fabric": "getResourcePackPolicy()"
+		},
+		{
+			"forge": "setResourcePackStatus(ServerData$ServerPackStatus arg0)",
+			"fabric": "setResourcePackPolicy(ServerInfo$ResourcePackPolicy resourcePackPolicy)"
+		},
+		{
+			"forge": "read(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound root)"
+		},
+		{
+			"forge": "getIconBytes()",
+			"fabric": "getFavicon()"
+		},
+		{
+			"forge": "setIconBytes(byte[] arg0)",
+			"fabric": "setFavicon(byte[] favicon)"
+		},
+		{
+			"forge": "isLan()",
+			"fabric": "isLocal()"
+		},
+		{
+			"forge": "setEnforcesSecureChat(boolean arg0)",
+			"fabric": "setSecureChatEnforced(boolean secureChatEnforced)"
+		},
+		{
+			"forge": "enforcesSecureChat()",
+			"fabric": "isSecureChatEnforced()"
+		},
+		{
+			"forge": "copyNameIconFrom(ServerData arg0)",
+			"fabric": "copyFrom(ServerInfo serverInfo)"
+		},
+		{
+			"forge": "copyFrom(ServerData arg0)",
+			"fabric": "copyWithSettingsFrom(ServerInfo serverInfo)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
+			"fabric": "net.minecraft.datafixer.fix.StructureSettingsFlattenFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "method_40116(com.mojang.datafixers.util.Pair<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> arg0)"
+		},
+		{
+			"forge": "fixDimension(com.mojang.datafixers.util.Pair<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> arg0)",
+			"fabric": "method_40116(com.mojang.datafixers.util.Pair<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> arg0)"
+		},
+		{
+			"forge": "fixStructures(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "method_40117(com.mojang.serialization.Dynamic<?> arg0)"
+		}
+	]
+}

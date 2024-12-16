@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.VisibilitySet",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.VisibilitySet",
+			"fabric": "net.minecraft.client.render.chunk.ChunkOcclusionData"
+		},
+		{
+			"forge": "FACINGS",
+			"fabric": "DIRECTION_COUNT"
+		},
+		{
+			"forge": "FACINGS",
+			"fabric": "DIRECTION_COUNT"
+		},
+		{
+			"forge": "data",
+			"fabric": "visibility"
+		},
+		{
+			"forge": "add(Set<Direction> arg0)",
+			"fabric": "addOpenEdgeFaces(Set<Direction> faces)"
+		},
+		{
+			"forge": "add(Set<Direction> arg0)",
+			"fabric": "addOpenEdgeFaces(Set<Direction> faces)"
+		},
+		{
+			"forge": "set(Direction arg0, Direction arg1, boolean arg2)",
+			"fabric": "setVisibleThrough(Direction from, Direction to, boolean visible)"
+		},
+		{
+			"forge": "setAll(boolean arg0)",
+			"fabric": "fill(boolean visible)"
+		},
+		{
+			"forge": "visibilityBetween(Direction arg0, Direction arg1)",
+			"fabric": "isVisibleThrough(Direction from, Direction to)"
+		}
+	]
+}

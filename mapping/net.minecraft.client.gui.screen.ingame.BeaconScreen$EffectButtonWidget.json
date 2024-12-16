@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.BeaconScreen$BeaconPowerButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.BeaconScreen$BeaconPowerButton",
+			"fabric": "net.minecraft.client.gui.screen.ingame.BeaconScreen$EffectButtonWidget"
+		},
+		{
+			"forge": "isPrimary",
+			"fabric": "primary"
+		},
+		{
+			"forge": "isPrimary",
+			"fabric": "primary"
+		},
+		{
+			"forge": "tier",
+			"fabric": "level"
+		},
+		{
+			"forge": "effect",
+			"fabric": "effect"
+		},
+		{
+			"forge": "sprite",
+			"fabric": "sprite"
+		},
+		{
+			"forge": "setEffect(MobEffect arg0)",
+			"fabric": "init(StatusEffect statusEffect)"
+		},
+		{
+			"forge": "setEffect(MobEffect arg0)",
+			"fabric": "init(StatusEffect statusEffect)"
+		},
+		{
+			"forge": "createEffectDescription(MobEffect arg0)",
+			"fabric": "getEffectName(StatusEffect statusEffect)"
+		},
+		{
+			"forge": "onPress()",
+			"fabric": "onPress()"
+		},
+		{
+			"forge": "renderIcon(GuiGraphics arg0)",
+			"fabric": "renderExtra(DrawContext arg0)"
+		},
+		{
+			"forge": "updateStatus(int arg0)",
+			"fabric": "tick(int arg0)"
+		},
+		{
+			"forge": "createNarrationMessage()",
+			"fabric": "getNarrationMessage()"
+		}
+	]
+}

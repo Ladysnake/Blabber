@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.util.BitStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.util.BitStorage",
+			"fabric": "net.minecraft.util.collection.PaletteStorage"
+		},
+		{
+			"forge": "getAndSet(int arg0, int arg1)",
+			"fabric": "swap(int index, int value)"
+		},
+		{
+			"forge": "getAndSet(int arg0, int arg1)",
+			"fabric": "swap(int index, int value)"
+		},
+		{
+			"forge": "set(int arg0, int arg1)",
+			"fabric": "set(int index, int value)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int index)"
+		},
+		{
+			"forge": "getRaw()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getBits()",
+			"fabric": "getElementBits()"
+		},
+		{
+			"forge": "getAll(IntConsumer arg0)",
+			"fabric": "forEach(IntConsumer action)"
+		},
+		{
+			"forge": "unpack(int[] arg0)",
+			"fabric": "writePaletteIndices(int[] out)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		}
+	]
+}

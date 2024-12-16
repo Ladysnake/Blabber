@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.level.ServerPlayer$2",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ServerPlayer$2",
+			"fabric": "net.minecraft.server.network.ServerPlayerEntity$2"
+		},
+		{
+			"forge": "slotChanged(AbstractContainerMenu arg0, int arg1, ItemStack arg2)",
+			"fabric": "onSlotUpdate(ScreenHandler arg0, int arg1, ItemStack arg2)"
+		},
+		{
+			"forge": "slotChanged(AbstractContainerMenu arg0, int arg1, ItemStack arg2)",
+			"fabric": "onSlotUpdate(ScreenHandler arg0, int arg1, ItemStack arg2)"
+		},
+		{
+			"forge": "dataChanged(AbstractContainerMenu arg0, int arg1, int arg2)",
+			"fabric": "onPropertyUpdate(ScreenHandler arg0, int arg1, int arg2)"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.gui.components.toasts.TutorialToast$Icons",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.toasts.TutorialToast$Icons",
+			"fabric": "net.minecraft.client.toast.TutorialToast$Type"
+		},
+		{
+			"forge": "MOVEMENT_KEYS",
+			"fabric": "MOVEMENT_KEYS"
+		},
+		{
+			"forge": "MOVEMENT_KEYS",
+			"fabric": "MOVEMENT_KEYS"
+		},
+		{
+			"forge": "MOUSE",
+			"fabric": "MOUSE"
+		},
+		{
+			"forge": "TREE",
+			"fabric": "TREE"
+		},
+		{
+			"forge": "RECIPE_BOOK",
+			"fabric": "RECIPE_BOOK"
+		},
+		{
+			"forge": "WOODEN_PLANKS",
+			"fabric": "WOODEN_PLANKS"
+		},
+		{
+			"forge": "SOCIAL_INTERACTIONS",
+			"fabric": "SOCIAL_INTERACTIONS"
+		},
+		{
+			"forge": "RIGHT_CLICK",
+			"fabric": "RIGHT_CLICK"
+		},
+		{
+			"forge": "x",
+			"fabric": "textureSlotX"
+		},
+		{
+			"forge": "x",
+			"fabric": "textureSlotX"
+		},
+		{
+			"forge": "y",
+			"fabric": "textureSlotY"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawIcon(DrawContext context, int x, int y)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawIcon(DrawContext context, int x, int y)"
+		}
+	]
+}

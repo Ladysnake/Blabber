@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.EvokerRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.EvokerRenderer",
+			"fabric": "net.minecraft.client.render.entity.EvokerEntityRenderer"
+		},
+		{
+			"forge": "EVOKER_ILLAGER",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "EVOKER_ILLAGER",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(T arg0)",
+			"fabric": "getTexture(T arg0)"
+		},
+		{
+			"forge": "getTextureLocation(T arg0)",
+			"fabric": "getTexture(T arg0)"
+		}
+	]
+}

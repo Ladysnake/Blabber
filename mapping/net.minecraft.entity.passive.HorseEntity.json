@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.Horse",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.Horse",
+			"fabric": "net.minecraft.entity.passive.HorseEntity"
+		},
+		{
+			"forge": "ARMOR_MODIFIER_UUID",
+			"fabric": "HORSE_ARMOR_BONUS_ID"
+		},
+		{
+			"forge": "ARMOR_MODIFIER_UUID",
+			"fabric": "HORSE_ARMOR_BONUS_ID"
+		},
+		{
+			"forge": "DATA_ID_TYPE_VARIANT",
+			"fabric": "VARIANT"
+		},
+		{
+			"forge": "randomizeAttributes(RandomSource arg0)",
+			"fabric": "initAttributes(Random arg0)"
+		},
+		{
+			"forge": "randomizeAttributes(RandomSource arg0)",
+			"fabric": "initAttributes(Random arg0)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getArmor()",
+			"fabric": "getArmorType()"
+		},
+		{
+			"forge": "setArmor(ItemStack arg0)",
+			"fabric": "equipArmor(ItemStack stack)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "setTypeVariant(int arg0)",
+			"fabric": "setHorseVariant(int variant)"
+		},
+		{
+			"forge": "getTypeVariant()",
+			"fabric": "getHorseVariant()"
+		},
+		{
+			"forge": "setVariantAndMarkings(Variant arg0, Markings arg1)",
+			"fabric": "setHorseVariant(HorseColor color, HorseMarking marking)"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "setVariant(Variant arg0)",
+			"fabric": "setVariant(HorseColor arg0)"
+		},
+		{
+			"forge": "getMarkings()",
+			"fabric": "getMarking()"
+		},
+		{
+			"forge": "updateContainerEquipment()",
+			"fabric": "updateSaddle()"
+		},
+		{
+			"forge": "setArmorEquipment(ItemStack arg0)",
+			"fabric": "setArmorTypeFromStack(ItemStack stack)"
+		},
+		{
+			"forge": "containerChanged(Container arg0)",
+			"fabric": "onInventoryChanged(Inventory arg0)"
+		},
+		{
+			"forge": "playGallopSound(SoundType arg0)",
+			"fabric": "playWalkSound(BlockSoundGroup arg0)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getEatingSound()",
+			"fabric": "getEatSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getAngrySound()",
+			"fabric": "getAngrySound()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "canMate(Animal arg0)",
+			"fabric": "canBreedWith(AnimalEntity arg0)"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "canWearArmor()",
+			"fabric": "hasArmorSlot()"
+		},
+		{
+			"forge": "isArmor(ItemStack arg0)",
+			"fabric": "isHorseArmor(ItemStack arg0)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		}
+	]
+}

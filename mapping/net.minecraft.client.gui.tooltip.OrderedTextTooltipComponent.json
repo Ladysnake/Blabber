@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.tooltip.ClientTextTooltip",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.tooltip.ClientTextTooltip",
+			"fabric": "net.minecraft.client.gui.tooltip.OrderedTextTooltipComponent"
+		},
+		{
+			"forge": "text",
+			"fabric": "text"
+		},
+		{
+			"forge": "text",
+			"fabric": "text"
+		},
+		{
+			"forge": "getWidth(Font arg0)",
+			"fabric": "getWidth(TextRenderer arg0)"
+		},
+		{
+			"forge": "getWidth(Font arg0)",
+			"fabric": "getWidth(TextRenderer arg0)"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "renderText(Font arg0, int arg1, int arg2, org.joml.Matrix4f arg3, MultiBufferSource$BufferSource arg4)",
+			"fabric": "drawText(TextRenderer arg0, int arg1, int arg2, org.joml.Matrix4f arg3, VertexConsumerProvider$Immediate arg4)"
+		}
+	]
+}

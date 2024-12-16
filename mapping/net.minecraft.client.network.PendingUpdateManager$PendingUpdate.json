@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.multiplayer.prediction.BlockStatePredictionHandler$ServerVerifiedState",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.prediction.BlockStatePredictionHandler$ServerVerifiedState",
+			"fabric": "net.minecraft.client.network.PendingUpdateManager$PendingUpdate"
+		},
+		{
+			"forge": "playerPos",
+			"fabric": "playerPos"
+		},
+		{
+			"forge": "playerPos",
+			"fabric": "playerPos"
+		},
+		{
+			"forge": "sequence",
+			"fabric": "sequence"
+		},
+		{
+			"forge": "blockState",
+			"fabric": "blockState"
+		},
+		{
+			"forge": "setSequence(int arg0)",
+			"fabric": "withSequence(int sequence)"
+		},
+		{
+			"forge": "setSequence(int arg0)",
+			"fabric": "withSequence(int sequence)"
+		},
+		{
+			"forge": "setBlockState(BlockState arg0)",
+			"fabric": "setBlockState(BlockState state)"
+		}
+	]
+}

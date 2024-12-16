@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.entity.player.PlayerModelPart",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.player.PlayerModelPart",
+			"fabric": "net.minecraft.client.render.entity.PlayerModelPart"
+		},
+		{
+			"forge": "CAPE",
+			"fabric": "CAPE"
+		},
+		{
+			"forge": "CAPE",
+			"fabric": "CAPE"
+		},
+		{
+			"forge": "JACKET",
+			"fabric": "JACKET"
+		},
+		{
+			"forge": "LEFT_SLEEVE",
+			"fabric": "LEFT_SLEEVE"
+		},
+		{
+			"forge": "RIGHT_SLEEVE",
+			"fabric": "RIGHT_SLEEVE"
+		},
+		{
+			"forge": "LEFT_PANTS_LEG",
+			"fabric": "LEFT_PANTS_LEG"
+		},
+		{
+			"forge": "RIGHT_PANTS_LEG",
+			"fabric": "RIGHT_PANTS_LEG"
+		},
+		{
+			"forge": "HAT",
+			"fabric": "HAT"
+		},
+		{
+			"forge": "bit",
+			"fabric": "id"
+		},
+		{
+			"forge": "bit",
+			"fabric": "id"
+		},
+		{
+			"forge": "mask",
+			"fabric": "bitFlag"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "optionName"
+		},
+		{
+			"forge": "getMask()",
+			"fabric": "getBitFlag()"
+		},
+		{
+			"forge": "getMask()",
+			"fabric": "getBitFlag()"
+		},
+		{
+			"forge": "getBit()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getOptionName()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.status.ClientboundStatusResponsePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.status.ClientboundStatusResponsePacket",
+			"fabric": "net.minecraft.network.packet.s2c.query.QueryResponseS2CPacket"
+		},
+		{
+			"forge": "status",
+			"fabric": "metadata"
+		},
+		{
+			"forge": "status",
+			"fabric": "metadata"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientStatusPacketListener arg0)",
+			"fabric": "apply(ClientQueryPacketListener arg0)"
+		},
+		{
+			"forge": "status()",
+			"fabric": "metadata()"
+		}
+	]
+}

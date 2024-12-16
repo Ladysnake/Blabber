@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.entity.GhastRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.GhastRenderer",
+			"fabric": "net.minecraft.client.render.entity.GhastEntityRenderer"
+		},
+		{
+			"forge": "GHAST_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "GHAST_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "GHAST_SHOOTING_LOCATION",
+			"fabric": "ANGRY_TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Ghast arg0)",
+			"fabric": "getTexture(GhastEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Ghast arg0)",
+			"fabric": "getTexture(GhastEntity arg0)"
+		},
+		{
+			"forge": "scale(Ghast arg0, PoseStack arg1, float arg2)",
+			"fabric": "scale(GhastEntity arg0, MatrixStack arg1, float arg2)"
+		}
+	]
+}

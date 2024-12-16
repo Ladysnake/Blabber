@@ -1,0 +1,205 @@
+{
+	"title": "net.minecraft.client.gui.screens.social.SocialInteractionsScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.social.SocialInteractionsScreen",
+			"fabric": "net.minecraft.client.gui.screen.multiplayer.SocialInteractionsScreen"
+		},
+		{
+			"forge": "SOCIAL_INTERACTIONS_LOCATION",
+			"fabric": "SOCIAL_INTERACTIONS_TEXTURE"
+		},
+		{
+			"forge": "SOCIAL_INTERACTIONS_LOCATION",
+			"fabric": "SOCIAL_INTERACTIONS_TEXTURE"
+		},
+		{
+			"forge": "TAB_ALL",
+			"fabric": "ALL_TAB_TITLE"
+		},
+		{
+			"forge": "TAB_HIDDEN",
+			"fabric": "HIDDEN_TAB_TITLE"
+		},
+		{
+			"forge": "TAB_BLOCKED",
+			"fabric": "BLOCKED_TAB_TITLE"
+		},
+		{
+			"forge": "TAB_ALL_SELECTED",
+			"fabric": "SELECTED_ALL_TAB_TITLE"
+		},
+		{
+			"forge": "TAB_HIDDEN_SELECTED",
+			"fabric": "SELECTED_HIDDEN_TAB_TITLE"
+		},
+		{
+			"forge": "TAB_BLOCKED_SELECTED",
+			"fabric": "SELECTED_BLOCKED_TAB_TITLE"
+		},
+		{
+			"forge": "SEARCH_HINT",
+			"fabric": "SEARCH_TEXT"
+		},
+		{
+			"forge": "EMPTY_SEARCH",
+			"fabric": "EMPTY_SEARCH_TEXT"
+		},
+		{
+			"forge": "EMPTY_HIDDEN",
+			"fabric": "EMPTY_HIDDEN_TEXT"
+		},
+		{
+			"forge": "EMPTY_BLOCKED",
+			"fabric": "EMPTY_BLOCKED_TEXT"
+		},
+		{
+			"forge": "BLOCKING_HINT",
+			"fabric": "BLOCKING_TEXT"
+		},
+		{
+			"forge": "BG_BORDER_SIZE",
+			"fabric": "field_32424"
+		},
+		{
+			"forge": "BG_WIDTH",
+			"fabric": "field_32426"
+		},
+		{
+			"forge": "SEARCH_HEIGHT",
+			"fabric": "field_32427"
+		},
+		{
+			"forge": "MARGIN_Y",
+			"fabric": "field_32428"
+		},
+		{
+			"forge": "SEARCH_START",
+			"fabric": "field_32433"
+		},
+		{
+			"forge": "LIST_START",
+			"fabric": "field_32432"
+		},
+		{
+			"forge": "IMAGE_WIDTH",
+			"fabric": "field_32429"
+		},
+		{
+			"forge": "BUTTON_HEIGHT",
+			"fabric": "field_32430"
+		},
+		{
+			"forge": "ITEM_HEIGHT",
+			"fabric": "field_32431"
+		},
+		{
+			"forge": "socialInteractionsPlayerList",
+			"fabric": "playerList"
+		},
+		{
+			"forge": "searchBox",
+			"fabric": "searchBox"
+		},
+		{
+			"forge": "lastSearch",
+			"fabric": "currentSearch"
+		},
+		{
+			"forge": "page",
+			"fabric": "currentTab"
+		},
+		{
+			"forge": "allButton",
+			"fabric": "allTabButton"
+		},
+		{
+			"forge": "hiddenButton",
+			"fabric": "hiddenTabButton"
+		},
+		{
+			"forge": "blockedButton",
+			"fabric": "blockedTabButton"
+		},
+		{
+			"forge": "blockingHintButton",
+			"fabric": "blockingButton"
+		},
+		{
+			"forge": "serverLabel",
+			"fabric": "serverLabel"
+		},
+		{
+			"forge": "playerCount",
+			"fabric": "playerCount"
+		},
+		{
+			"forge": "initialized",
+			"fabric": "initialized"
+		},
+		{
+			"forge": "windowHeight()",
+			"fabric": "getScreenHeight()"
+		},
+		{
+			"forge": "windowHeight()",
+			"fabric": "getScreenHeight()"
+		},
+		{
+			"forge": "listEnd()",
+			"fabric": "getPlayerListBottom()"
+		},
+		{
+			"forge": "marginX()",
+			"fabric": "getSearchBoxX()"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "showPage(SocialInteractionsScreen$Page arg0)",
+			"fabric": "setCurrentTab(SocialInteractionsScreen$Tab currentTab)"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext arg0)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "isPauseScreen()",
+			"fabric": "shouldPause()"
+		},
+		{
+			"forge": "checkSearchStringUpdate(String arg0)",
+			"fabric": "onSearchChange(String currentSearch)"
+		},
+		{
+			"forge": "updateServerLabel(Minecraft arg0)",
+			"fabric": "updateServerLabel(MinecraftClient client)"
+		},
+		{
+			"forge": "onAddPlayer(PlayerInfo arg0)",
+			"fabric": "setPlayerOnline(PlayerListEntry player)"
+		},
+		{
+			"forge": "onRemovePlayer(UUID arg0)",
+			"fabric": "setPlayerOffline(UUID uuid)"
+		}
+	]
+}

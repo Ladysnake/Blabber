@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.FogRenderer$FogData",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.FogRenderer$FogData",
+			"fabric": "net.minecraft.client.render.BackgroundRenderer$FogData"
+		},
+		{
+			"forge": "mode",
+			"fabric": "fogType"
+		},
+		{
+			"forge": "mode",
+			"fabric": "fogType"
+		},
+		{
+			"forge": "start",
+			"fabric": "fogStart"
+		},
+		{
+			"forge": "end",
+			"fabric": "fogEnd"
+		},
+		{
+			"forge": "shape",
+			"fabric": "fogShape"
+		}
+	]
+}

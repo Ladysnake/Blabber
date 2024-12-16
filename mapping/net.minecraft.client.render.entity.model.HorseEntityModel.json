@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.client.model.HorseModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.HorseModel",
+			"fabric": "net.minecraft.client.render.entity.model.HorseEntityModel"
+		},
+		{
+			"forge": "DEG_125",
+			"fabric": "EATING_GRASS_ANIMATION_HEAD_BASE_PITCH"
+		},
+		{
+			"forge": "DEG_125",
+			"fabric": "EATING_GRASS_ANIMATION_HEAD_BASE_PITCH"
+		},
+		{
+			"forge": "DEG_60",
+			"fabric": "ANGRY_ANIMATION_FRONT_LEG_PITCH_MULTIPLIER"
+		},
+		{
+			"forge": "DEG_45",
+			"fabric": "ANGRY_ANIMATION_BODY_PITCH_MULTIPLIER"
+		},
+		{
+			"forge": "DEG_30",
+			"fabric": "HEAD_TAIL_BASE_PITCH"
+		},
+		{
+			"forge": "DEG_15",
+			"fabric": "ANGRY_ANIMATION_HIND_LEG_PITCH_MULTIPLIER"
+		},
+		{
+			"forge": "HEAD_PARTS",
+			"fabric": "HEAD_PARTS"
+		},
+		{
+			"forge": "LEFT_HIND_BABY_LEG",
+			"fabric": "LEFT_HIND_BABY_LEG"
+		},
+		{
+			"forge": "RIGHT_HIND_BABY_LEG",
+			"fabric": "RIGHT_HIND_BABY_LEG"
+		},
+		{
+			"forge": "LEFT_FRONT_BABY_LEG",
+			"fabric": "LEFT_FRONT_BABY_LEG"
+		},
+		{
+			"forge": "RIGHT_FRONT_BABY_LEG",
+			"fabric": "RIGHT_FRONT_BABY_LEG"
+		},
+		{
+			"forge": "SADDLE",
+			"fabric": "SADDLE"
+		},
+		{
+			"forge": "LEFT_SADDLE_MOUTH",
+			"fabric": "LEFT_SADDLE_MOUTH"
+		},
+		{
+			"forge": "LEFT_SADDLE_LINE",
+			"fabric": "LEFT_SADDLE_LINE"
+		},
+		{
+			"forge": "RIGHT_SADDLE_MOUTH",
+			"fabric": "RIGHT_SADDLE_MOUTH"
+		},
+		{
+			"forge": "RIGHT_SADDLE_LINE",
+			"fabric": "RIGHT_SADDLE_LINE"
+		},
+		{
+			"forge": "HEAD_SADDLE",
+			"fabric": "HEAD_SADDLE"
+		},
+		{
+			"forge": "MOUTH_SADDLE_WRAP",
+			"fabric": "MOUTH_SADDLE_WRAP"
+		},
+		{
+			"forge": "body",
+			"fabric": "body"
+		},
+		{
+			"forge": "headParts",
+			"fabric": "head"
+		},
+		{
+			"forge": "rightHindLeg",
+			"fabric": "rightHindLeg"
+		},
+		{
+			"forge": "leftHindLeg",
+			"fabric": "leftHindLeg"
+		},
+		{
+			"forge": "rightFrontLeg",
+			"fabric": "rightFrontLeg"
+		},
+		{
+			"forge": "leftFrontLeg",
+			"fabric": "leftFrontLeg"
+		},
+		{
+			"forge": "rightHindBabyLeg",
+			"fabric": "rightHindBabyLeg"
+		},
+		{
+			"forge": "leftHindBabyLeg",
+			"fabric": "leftHindBabyLeg"
+		},
+		{
+			"forge": "rightFrontBabyLeg",
+			"fabric": "rightFrontBabyLeg"
+		},
+		{
+			"forge": "leftFrontBabyLeg",
+			"fabric": "leftFrontBabyLeg"
+		},
+		{
+			"forge": "tail",
+			"fabric": "tail"
+		},
+		{
+			"forge": "saddleParts",
+			"fabric": "saddle"
+		},
+		{
+			"forge": "ridingParts",
+			"fabric": "straps"
+		},
+		{
+			"forge": "createBodyMesh(CubeDeformation arg0)",
+			"fabric": "getModelData(Dilation dilation)"
+		},
+		{
+			"forge": "createBodyMesh(CubeDeformation arg0)",
+			"fabric": "getModelData(Dilation dilation)"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		},
+		{
+			"forge": "headParts()",
+			"fabric": "getHeadParts()"
+		},
+		{
+			"forge": "bodyParts()",
+			"fabric": "getBodyParts()"
+		},
+		{
+			"forge": "prepareMobModel(T arg0, float arg1, float arg2, float arg3)",
+			"fabric": "animateModel(T arg0, float arg1, float arg2, float arg3)"
+		}
+	]
+}

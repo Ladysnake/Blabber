@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.raid.Raid$RaidStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.raid.Raid$RaidStatus",
+			"fabric": "net.minecraft.village.raid.Raid$Status"
+		},
+		{
+			"forge": "ONGOING",
+			"fabric": "ONGOING"
+		},
+		{
+			"forge": "ONGOING",
+			"fabric": "ONGOING"
+		},
+		{
+			"forge": "VICTORY",
+			"fabric": "VICTORY"
+		},
+		{
+			"forge": "LOSS",
+			"fabric": "LOSS"
+		},
+		{
+			"forge": "STOPPED",
+			"fabric": "STOPPED"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "getByName(String arg0)",
+			"fabric": "fromName(String name)"
+		},
+		{
+			"forge": "getByName(String arg0)",
+			"fabric": "fromName(String name)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		}
+	]
+}

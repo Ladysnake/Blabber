@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.BitmapProvider$Definition",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.BitmapProvider$Definition",
+			"fabric": "net.minecraft.client.font.BitmapFont$Loader"
+		},
+		{
+			"forge": "file",
+			"fabric": "file"
+		},
+		{
+			"forge": "file",
+			"fabric": "file"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "ascent",
+			"fabric": "ascent"
+		},
+		{
+			"forge": "codepointGrid",
+			"fabric": "codepointGrid"
+		},
+		{
+			"forge": "CODEPOINT_GRID_CODEC",
+			"fabric": "CODE_POINT_GRID_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "validateDimensions(int[][] arg0)",
+			"fabric": "validateCodePointGrid(int[][] codePointGrid)"
+		},
+		{
+			"forge": "validateDimensions(int[][] arg0)",
+			"fabric": "validateCodePointGrid(int[][] codePointGrid)"
+		},
+		{
+			"forge": "validate(BitmapProvider$Definition arg0)",
+			"fabric": "validate(BitmapFont$Loader fontLoader)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "unpack()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager resourceManager)"
+		},
+		{
+			"forge": "getActualGlyphWidth(NativeImage arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "findCharacterStartX(NativeImage image, int characterWidth, int characterHeight, int charPosX, int charPosY)"
+		},
+		{
+			"forge": "file()",
+			"fabric": "file()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "height()"
+		},
+		{
+			"forge": "ascent()",
+			"fabric": "ascent()"
+		},
+		{
+			"forge": "codepointGrid()",
+			"fabric": "codepointGrid()"
+		}
+	]
+}

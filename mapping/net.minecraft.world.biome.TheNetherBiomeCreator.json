@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.data.worldgen.biome.NetherBiomes",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.biome.NetherBiomes",
+			"fabric": "net.minecraft.world.biome.TheNetherBiomeCreator"
+		},
+		{
+			"forge": "netherWastes(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createNetherWastes(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "netherWastes(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createNetherWastes(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "soulSandValley(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createSoulSandValley(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "basaltDeltas(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createBasaltDeltas(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "crimsonForest(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createCrimsonForest(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "warpedForest(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createWarpedForest(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		}
+	]
+}

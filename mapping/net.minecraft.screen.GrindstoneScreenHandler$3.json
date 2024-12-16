@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.inventory.GrindstoneMenu$3",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.GrindstoneMenu$3",
+			"fabric": "net.minecraft.screen.GrindstoneScreenHandler$3"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		}
+	]
+}

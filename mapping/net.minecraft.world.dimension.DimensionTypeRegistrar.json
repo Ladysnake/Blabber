@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.data.worldgen.DimensionTypes",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.DimensionTypes",
+			"fabric": "net.minecraft.world.dimension.DimensionTypeRegistrar"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<DimensionType> arg0)",
+			"fabric": "bootstrap(Registerable<DimensionType> dimensionTypeRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<DimensionType> arg0)",
+			"fabric": "bootstrap(Registerable<DimensionType> dimensionTypeRegisterable)"
+		}
+	]
+}

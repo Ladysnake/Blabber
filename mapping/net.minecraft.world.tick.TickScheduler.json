@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.ticks.TickAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.world.ticks.TickAccess",
+			"fabric": "net.minecraft.world.tick.TickScheduler"
+		},
+		{
+			"forge": "schedule(ScheduledTick<T> arg0)",
+			"fabric": "scheduleTick(OrderedTick<T> orderedTick)"
+		},
+		{
+			"forge": "schedule(ScheduledTick<T> arg0)",
+			"fabric": "scheduleTick(OrderedTick<T> orderedTick)"
+		},
+		{
+			"forge": "hasScheduledTick(BlockPos arg0, T arg1)",
+			"fabric": "isQueued(BlockPos pos, T type)"
+		},
+		{
+			"forge": "count()",
+			"fabric": "getTickCount()"
+		}
+	]
+}

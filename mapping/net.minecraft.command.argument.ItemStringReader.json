@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.commands.arguments.item.ItemParser",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.item.ItemParser",
+			"fabric": "net.minecraft.command.argument.ItemStringReader"
+		},
+		{
+			"forge": "ERROR_NO_TAGS_ALLOWED",
+			"fabric": "TAG_DISALLOWED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_TAGS_ALLOWED",
+			"fabric": "TAG_DISALLOWED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_UNKNOWN_ITEM",
+			"fabric": "ID_INVALID_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_UNKNOWN_TAG",
+			"fabric": "UNKNOWN_TAG_EXCEPTION"
+		},
+		{
+			"forge": "SYNTAX_START_NBT",
+			"fabric": "LEFT_CURLY_BRACKET"
+		},
+		{
+			"forge": "SYNTAX_TAG",
+			"fabric": "HASH_SIGN"
+		},
+		{
+			"forge": "SUGGEST_NOTHING",
+			"fabric": "NBT_SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "items",
+			"fabric": "registryWrapper"
+		},
+		{
+			"forge": "reader",
+			"fabric": "reader"
+		},
+		{
+			"forge": "allowTags",
+			"fabric": "allowTag"
+		},
+		{
+			"forge": "result",
+			"fabric": "result"
+		},
+		{
+			"forge": "nbt",
+			"fabric": "nbt"
+		},
+		{
+			"forge": "suggestions",
+			"fabric": "suggestions"
+		},
+		{
+			"forge": "parseForItem(HolderLookup<Item> arg0, com.mojang.brigadier.StringReader arg1)",
+			"fabric": "item(RegistryWrapper<Item> registryWrapper, com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "parseForItem(HolderLookup<Item> arg0, com.mojang.brigadier.StringReader arg1)",
+			"fabric": "item(RegistryWrapper<Item> registryWrapper, com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "parseForTesting(HolderLookup<Item> arg0, com.mojang.brigadier.StringReader arg1)",
+			"fabric": "itemOrTag(RegistryWrapper<Item> registryWrapper, com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "fillSuggestions(HolderLookup<Item> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1, boolean arg2)",
+			"fabric": "getSuggestions(RegistryWrapper<Item> registryWrapper, com.mojang.brigadier.suggestion.SuggestionsBuilder builder, boolean allowTag)"
+		},
+		{
+			"forge": "readItem()",
+			"fabric": "readItem()"
+		},
+		{
+			"forge": "readTag()",
+			"fabric": "readTag()"
+		},
+		{
+			"forge": "readNbt()",
+			"fabric": "readNbt()"
+		},
+		{
+			"forge": "parse()",
+			"fabric": "consume()"
+		},
+		{
+			"forge": "suggestOpenNbt(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestItem(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestTag(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestTag(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestItem(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestItemId(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestItemIdOrTag(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestItemOrTagId(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		}
+	]
+}

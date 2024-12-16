@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetNameFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetNameFunction",
+			"fabric": "net.minecraft.loot.function.SetNameLootFunction"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "resolutionContext",
+			"fabric": "entity"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "createResolver(LootContext arg0, LootContext$EntityTarget arg1)",
+			"fabric": "applySourceEntity(LootContext context, LootContext$EntityTarget sourceEntity)"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "setName(Component arg0)",
+			"fabric": "builder(Text name)"
+		},
+		{
+			"forge": "setName(Component arg0, LootContext$EntityTarget arg1)",
+			"fabric": "builder(Text name, LootContext$EntityTarget target)"
+		}
+	]
+}

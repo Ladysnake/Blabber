@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.inventory.CartographyTableMenu$5",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.CartographyTableMenu$5",
+			"fabric": "net.minecraft.screen.CartographyTableScreenHandler$5"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeItem(PlayerEntity arg0, ItemStack arg1)"
+		}
+	]
+}

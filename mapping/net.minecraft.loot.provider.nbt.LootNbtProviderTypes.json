@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.providers.nbt.NbtProviders",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.providers.nbt.NbtProviders",
+			"fabric": "net.minecraft.loot.provider.nbt.LootNbtProviderTypes"
+		},
+		{
+			"forge": "STORAGE",
+			"fabric": "STORAGE"
+		},
+		{
+			"forge": "STORAGE",
+			"fabric": "STORAGE"
+		},
+		{
+			"forge": "CONTEXT",
+			"fabric": "CONTEXT"
+		},
+		{
+			"forge": "register(String arg0, Serializer<? extends NbtProvider> arg1)",
+			"fabric": "register(String id, JsonSerializer<? extends LootNbtProvider> jsonSerializer)"
+		},
+		{
+			"forge": "register(String arg0, Serializer<? extends NbtProvider> arg1)",
+			"fabric": "register(String id, JsonSerializer<? extends LootNbtProvider> jsonSerializer)"
+		},
+		{
+			"forge": "createGsonAdapter()",
+			"fabric": "createGsonSerializer()"
+		}
+	]
+}

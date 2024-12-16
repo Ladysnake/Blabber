@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.LoggedChatEvent$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.LoggedChatEvent$Type",
+			"fabric": "net.minecraft.client.report.log.ChatLogEntry$Type"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "SYSTEM",
+			"fabric": "SYSTEM"
+		},
+		{
+			"forge": "serializedName",
+			"fabric": "id"
+		},
+		{
+			"forge": "serializedName",
+			"fabric": "id"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codecSupplier"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

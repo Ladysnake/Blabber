@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.DeltaFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.DeltaFeature",
+			"fabric": "net.minecraft.world.gen.feature.DeltaFeature"
+		},
+		{
+			"forge": "CANNOT_REPLACE",
+			"fabric": "CANNOT_REPLACE_BLOCKS"
+		},
+		{
+			"forge": "CANNOT_REPLACE",
+			"fabric": "CANNOT_REPLACE_BLOCKS"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "DIRECTIONS"
+		},
+		{
+			"forge": "RIM_SPAWN_CHANCE",
+			"fabric": "field_31501"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<DeltaFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DeltaFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<DeltaFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DeltaFeatureConfig> arg0)"
+		},
+		{
+			"forge": "isClear(LevelAccessor arg0, BlockPos arg1, DeltaFeatureConfiguration arg2)",
+			"fabric": "canPlace(WorldAccess world, BlockPos pos, DeltaFeatureConfig config)"
+		}
+	]
+}

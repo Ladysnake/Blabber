@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.SpreadingSnowyDirtBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SpreadingSnowyDirtBlock",
+			"fabric": "net.minecraft.block.SpreadableBlock"
+		},
+		{
+			"forge": "canBeGrass(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canSurvive(BlockState state, WorldView world, BlockPos pos)"
+		},
+		{
+			"forge": "canBeGrass(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canSurvive(BlockState state, WorldView world, BlockPos pos)"
+		},
+		{
+			"forge": "canPropagate(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canSpread(BlockState state, WorldView world, BlockPos pos)"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		}
+	]
+}

@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.gui.components.toasts.TutorialToast",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.toasts.TutorialToast",
+			"fabric": "net.minecraft.client.toast.TutorialToast"
+		},
+		{
+			"forge": "PROGRESS_BAR_WIDTH",
+			"fabric": "PROGRESS_BAR_WIDTH"
+		},
+		{
+			"forge": "PROGRESS_BAR_WIDTH",
+			"fabric": "PROGRESS_BAR_WIDTH"
+		},
+		{
+			"forge": "PROGRESS_BAR_HEIGHT",
+			"fabric": "PROGRESS_BAR_HEIGHT"
+		},
+		{
+			"forge": "PROGRESS_BAR_X",
+			"fabric": "PROGRESS_BAR_X"
+		},
+		{
+			"forge": "PROGRESS_BAR_Y",
+			"fabric": "PROGRESS_BAR_Y"
+		},
+		{
+			"forge": "icon",
+			"fabric": "type"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "message",
+			"fabric": "description"
+		},
+		{
+			"forge": "visibility",
+			"fabric": "visibility"
+		},
+		{
+			"forge": "lastProgressTime",
+			"fabric": "lastTime"
+		},
+		{
+			"forge": "lastProgress",
+			"fabric": "lastProgress"
+		},
+		{
+			"forge": "progress",
+			"fabric": "progress"
+		},
+		{
+			"forge": "progressable",
+			"fabric": "hasProgressBar"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, ToastComponent arg1, long arg2)",
+			"fabric": "draw(DrawContext arg0, ToastManager arg1, long arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, ToastComponent arg1, long arg2)",
+			"fabric": "draw(DrawContext arg0, ToastManager arg1, long arg2)"
+		},
+		{
+			"forge": "hide()",
+			"fabric": "hide()"
+		},
+		{
+			"forge": "updateProgress(float arg0)",
+			"fabric": "setProgress(float progress)"
+		}
+	]
+}

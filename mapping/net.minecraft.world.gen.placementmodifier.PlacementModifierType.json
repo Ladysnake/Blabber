@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.PlacementModifierType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.PlacementModifierType",
+			"fabric": "net.minecraft.world.gen.placementmodifier.PlacementModifierType"
+		},
+		{
+			"forge": "BLOCK_PREDICATE_FILTER",
+			"fabric": "BLOCK_PREDICATE_FILTER"
+		},
+		{
+			"forge": "BLOCK_PREDICATE_FILTER",
+			"fabric": "BLOCK_PREDICATE_FILTER"
+		},
+		{
+			"forge": "RARITY_FILTER",
+			"fabric": "RARITY_FILTER"
+		},
+		{
+			"forge": "SURFACE_RELATIVE_THRESHOLD_FILTER",
+			"fabric": "SURFACE_RELATIVE_THRESHOLD_FILTER"
+		},
+		{
+			"forge": "SURFACE_WATER_DEPTH_FILTER",
+			"fabric": "SURFACE_WATER_DEPTH_FILTER"
+		},
+		{
+			"forge": "BIOME_FILTER",
+			"fabric": "BIOME"
+		},
+		{
+			"forge": "COUNT",
+			"fabric": "COUNT"
+		},
+		{
+			"forge": "NOISE_BASED_COUNT",
+			"fabric": "NOISE_BASED_COUNT"
+		},
+		{
+			"forge": "NOISE_THRESHOLD_COUNT",
+			"fabric": "NOISE_THRESHOLD_COUNT"
+		},
+		{
+			"forge": "COUNT_ON_EVERY_LAYER",
+			"fabric": "COUNT_ON_EVERY_LAYER"
+		},
+		{
+			"forge": "ENVIRONMENT_SCAN",
+			"fabric": "ENVIRONMENT_SCAN"
+		},
+		{
+			"forge": "HEIGHTMAP",
+			"fabric": "HEIGHTMAP"
+		},
+		{
+			"forge": "HEIGHT_RANGE",
+			"fabric": "HEIGHT_RANGE"
+		},
+		{
+			"forge": "IN_SQUARE",
+			"fabric": "IN_SQUARE"
+		},
+		{
+			"forge": "RANDOM_OFFSET",
+			"fabric": "RANDOM_OFFSET"
+		},
+		{
+			"forge": "CARVING_MASK_PLACEMENT",
+			"fabric": "CARVING_MASK"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		}
+	]
+}

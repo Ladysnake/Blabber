@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootTable$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootTable$Builder",
+			"fabric": "net.minecraft.loot.LootTable$Builder"
+		},
+		{
+			"forge": "pools",
+			"fabric": "pools"
+		},
+		{
+			"forge": "pools",
+			"fabric": "pools"
+		},
+		{
+			"forge": "functions",
+			"fabric": "functions"
+		},
+		{
+			"forge": "paramSet",
+			"fabric": "type"
+		},
+		{
+			"forge": "randomSequence",
+			"fabric": "randomSequenceId"
+		},
+		{
+			"forge": "withPool(LootPool$Builder arg0)",
+			"fabric": "pool(LootPool$Builder poolBuilder)"
+		},
+		{
+			"forge": "withPool(LootPool$Builder arg0)",
+			"fabric": "pool(LootPool$Builder poolBuilder)"
+		},
+		{
+			"forge": "setParamSet(LootContextParamSet arg0)",
+			"fabric": "type(LootContextType context)"
+		},
+		{
+			"forge": "setRandomSequence(ResourceLocation arg0)",
+			"fabric": "randomSequenceId(Identifier randomSequenceId)"
+		},
+		{
+			"forge": "apply(LootItemFunction$Builder arg0)",
+			"fabric": "apply(LootFunction$Builder arg0)"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getThisFunctionConsumingBuilder()"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.biome.MultiNoiseBiomeSourceParameterList",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.MultiNoiseBiomeSourceParameterList",
+			"fabric": "net.minecraft.world.biome.source.MultiNoiseBiomeSourceParameterList"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "REGISTRY_CODEC"
+		},
+		{
+			"forge": "preset",
+			"fabric": "preset"
+		},
+		{
+			"forge": "parameters",
+			"fabric": "entries"
+		},
+		{
+			"forge": "parameters()",
+			"fabric": "getEntries()"
+		},
+		{
+			"forge": "parameters()",
+			"fabric": "getEntries()"
+		},
+		{
+			"forge": "knownPresets()",
+			"fabric": "getPresetToEntriesMap()"
+		}
+	]
+}

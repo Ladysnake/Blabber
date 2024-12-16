@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.GlowInkSacItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.GlowInkSacItem",
+			"fabric": "net.minecraft.item.GlowInkSacItem"
+		},
+		{
+			"forge": "tryApplyToSign(Level arg0, SignBlockEntity arg1, boolean arg2, Player arg3)",
+			"fabric": "useOnSign(World arg0, SignBlockEntity arg1, boolean arg2, PlayerEntity arg3)"
+		},
+		{
+			"forge": "tryApplyToSign(Level arg0, SignBlockEntity arg1, boolean arg2, Player arg3)",
+			"fabric": "useOnSign(World arg0, SignBlockEntity arg1, boolean arg2, PlayerEntity arg3)"
+		}
+	]
+}

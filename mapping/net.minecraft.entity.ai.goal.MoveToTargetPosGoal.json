@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.MoveToBlockGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.MoveToBlockGoal",
+			"fabric": "net.minecraft.entity.ai.goal.MoveToTargetPosGoal"
+		},
+		{
+			"forge": "GIVE_UP_TICKS",
+			"fabric": "MIN_WAITING_TIME"
+		},
+		{
+			"forge": "GIVE_UP_TICKS",
+			"fabric": "MIN_WAITING_TIME"
+		},
+		{
+			"forge": "STAY_TICKS",
+			"fabric": "MAX_TRYING_TIME"
+		},
+		{
+			"forge": "INTERVAL_TICKS",
+			"fabric": "MIN_INTERVAL"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "nextStartTick",
+			"fabric": "cooldown"
+		},
+		{
+			"forge": "tryTicks",
+			"fabric": "tryingTime"
+		},
+		{
+			"forge": "maxStayTicks",
+			"fabric": "safeWaitingTime"
+		},
+		{
+			"forge": "blockPos",
+			"fabric": "targetPos"
+		},
+		{
+			"forge": "reachedTarget",
+			"fabric": "reached"
+		},
+		{
+			"forge": "searchRange",
+			"fabric": "range"
+		},
+		{
+			"forge": "verticalSearchRange",
+			"fabric": "maxYDifference"
+		},
+		{
+			"forge": "verticalSearchStart",
+			"fabric": "lowestY"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "nextStartTick(PathfinderMob arg0)",
+			"fabric": "getInterval(PathAwareEntity mob)"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "moveMobToBlock()",
+			"fabric": "startMovingToTarget()"
+		},
+		{
+			"forge": "acceptedDistance()",
+			"fabric": "getDesiredDistanceToTarget()"
+		},
+		{
+			"forge": "getMoveToTarget()",
+			"fabric": "getTargetPos()"
+		},
+		{
+			"forge": "requiresUpdateEveryTick()",
+			"fabric": "shouldRunEveryTick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "shouldRecalculatePath()",
+			"fabric": "shouldResetPath()"
+		},
+		{
+			"forge": "isReachedTarget()",
+			"fabric": "hasReached()"
+		},
+		{
+			"forge": "findNearestBlock()",
+			"fabric": "findTargetPos()"
+		},
+		{
+			"forge": "isValidTarget(LevelReader arg0, BlockPos arg1)",
+			"fabric": "isTargetPos(WorldView world, BlockPos pos)"
+		}
+	]
+}

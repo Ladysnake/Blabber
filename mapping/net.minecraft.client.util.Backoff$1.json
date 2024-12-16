@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.gui.task.RepeatedDelayStrategy$1",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.task.RepeatedDelayStrategy$1",
+			"fabric": "net.minecraft.client.util.Backoff$1"
+		},
+		{
+			"forge": "delayCyclesAfterSuccess()",
+			"fabric": "success()"
+		},
+		{
+			"forge": "delayCyclesAfterSuccess()",
+			"fabric": "success()"
+		},
+		{
+			"forge": "delayCyclesAfterFailure()",
+			"fabric": "fail()"
+		}
+	]
+}

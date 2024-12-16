@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.scores.Objective",
+	"items": [
+		{
+			"forge": "net.minecraft.world.scores.Objective",
+			"fabric": "net.minecraft.scoreboard.ScoreboardObjective"
+		},
+		{
+			"forge": "scoreboard",
+			"fabric": "scoreboard"
+		},
+		{
+			"forge": "scoreboard",
+			"fabric": "scoreboard"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "criteria",
+			"fabric": "criterion"
+		},
+		{
+			"forge": "displayName",
+			"fabric": "displayName"
+		},
+		{
+			"forge": "formattedDisplayName",
+			"fabric": "bracketedDisplayName"
+		},
+		{
+			"forge": "renderType",
+			"fabric": "renderType"
+		},
+		{
+			"forge": "getScoreboard()",
+			"fabric": "getScoreboard()"
+		},
+		{
+			"forge": "getScoreboard()",
+			"fabric": "getScoreboard()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getCriteria()",
+			"fabric": "getCriterion()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "createFormattedDisplayName()",
+			"fabric": "generateBracketedDisplayName()"
+		},
+		{
+			"forge": "getFormattedDisplayName()",
+			"fabric": "toHoverableText()"
+		},
+		{
+			"forge": "setDisplayName(Component arg0)",
+			"fabric": "setDisplayName(Text name)"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getRenderType()"
+		},
+		{
+			"forge": "setRenderType(ObjectiveCriteria$RenderType arg0)",
+			"fabric": "setRenderType(ScoreboardCriterion$RenderType renderType)"
+		}
+	]
+}

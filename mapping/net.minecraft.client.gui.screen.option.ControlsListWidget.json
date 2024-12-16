@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.screens.controls.KeyBindsList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.controls.KeyBindsList",
+			"fabric": "net.minecraft.client.gui.screen.option.ControlsListWidget"
+		},
+		{
+			"forge": "keyBindsScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "keyBindsScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "maxNameWidth",
+			"fabric": "maxKeyNameLength"
+		},
+		{
+			"forge": "resetMappingAndUpdateButtons()",
+			"fabric": "update()"
+		},
+		{
+			"forge": "resetMappingAndUpdateButtons()",
+			"fabric": "update()"
+		},
+		{
+			"forge": "refreshEntries()",
+			"fabric": "updateChildren()"
+		},
+		{
+			"forge": "getScrollbarPosition()",
+			"fabric": "getScrollbarPositionX()"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		}
+	]
+}

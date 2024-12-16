@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.particle.BubblePopParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.BubblePopParticle",
+			"fabric": "net.minecraft.client.particle.BubblePopParticle"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		}
+	]
+}

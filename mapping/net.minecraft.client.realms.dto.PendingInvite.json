@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.realmsclient.dto.PendingInvite",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.PendingInvite",
+			"fabric": "net.minecraft.client.realms.dto.PendingInvite"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "invitationId",
+			"fabric": "invitationId"
+		},
+		{
+			"forge": "worldName",
+			"fabric": "worldName"
+		},
+		{
+			"forge": "worldOwnerName",
+			"fabric": "worldOwnerName"
+		},
+		{
+			"forge": "worldOwnerUuid",
+			"fabric": "worldOwnerUuid"
+		},
+		{
+			"forge": "date",
+			"fabric": "date"
+		},
+		{
+			"forge": "parse(com.google.gson.JsonObject arg0)",
+			"fabric": "parse(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "parse(com.google.gson.JsonObject arg0)",
+			"fabric": "parse(com.google.gson.JsonObject json)"
+		}
+	]
+}

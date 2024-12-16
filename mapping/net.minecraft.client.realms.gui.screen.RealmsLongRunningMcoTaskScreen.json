@@ -1,0 +1,93 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsLongRunningMcoTaskScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsLongRunningMcoTaskScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsLongRunningMcoTaskScreen"
+		},
+		{
+			"forge": "REPEATED_NARRATOR",
+			"fabric": "NARRATOR"
+		},
+		{
+			"forge": "REPEATED_NARRATOR",
+			"fabric": "NARRATOR"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "errorMessage",
+			"fabric": "errorMessage"
+		},
+		{
+			"forge": "aborted",
+			"fabric": "aborted"
+		},
+		{
+			"forge": "animTicks",
+			"fabric": "animTicks"
+		},
+		{
+			"forge": "task",
+			"fabric": "task"
+		},
+		{
+			"forge": "buttonLength",
+			"fabric": "buttonLength"
+		},
+		{
+			"forge": "cancelOrBackButton",
+			"fabric": "cancelButton"
+		},
+		{
+			"forge": "SYMBOLS",
+			"fabric": "SYMBOLS"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "cancelOrBackButtonClicked()",
+			"fabric": "cancelOrBackButtonClicked()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "error(Component arg0)",
+			"fabric": "error(Text arg0)"
+		},
+		{
+			"forge": "setTitle(Component arg0)",
+			"fabric": "setTitle(Text title)"
+		},
+		{
+			"forge": "aborted()",
+			"fabric": "aborted()"
+		}
+	]
+}

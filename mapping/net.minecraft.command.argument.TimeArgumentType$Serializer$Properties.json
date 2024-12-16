@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.commands.arguments.TimeArgument$Info$Template",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.TimeArgument$Info$Template",
+			"fabric": "net.minecraft.command.argument.TimeArgumentType$Serializer$Properties"
+		},
+		{
+			"forge": "min",
+			"fabric": "minimum"
+		},
+		{
+			"forge": "min",
+			"fabric": "minimum"
+		},
+		{
+			"forge": "instantiate(CommandBuildContext arg0)",
+			"fabric": "createType(CommandRegistryAccess arg0)"
+		},
+		{
+			"forge": "instantiate(CommandBuildContext arg0)",
+			"fabric": "createType(CommandRegistryAccess arg0)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getSerializer()"
+		}
+	]
+}

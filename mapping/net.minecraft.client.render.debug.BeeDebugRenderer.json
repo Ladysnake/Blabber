@@ -1,0 +1,245 @@
+{
+	"title": "net.minecraft.client.renderer.debug.BeeDebugRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.BeeDebugRenderer",
+			"fabric": "net.minecraft.client.render.debug.BeeDebugRenderer"
+		},
+		{
+			"forge": "SHOW_GOAL_FOR_ALL_BEES",
+			"fabric": "field_32841"
+		},
+		{
+			"forge": "SHOW_GOAL_FOR_ALL_BEES",
+			"fabric": "field_32841"
+		},
+		{
+			"forge": "SHOW_NAME_FOR_ALL_BEES",
+			"fabric": "field_32842"
+		},
+		{
+			"forge": "SHOW_HIVE_FOR_ALL_BEES",
+			"fabric": "field_32843"
+		},
+		{
+			"forge": "SHOW_FLOWER_POS_FOR_ALL_BEES",
+			"fabric": "field_32844"
+		},
+		{
+			"forge": "SHOW_TRAVEL_TICKS_FOR_ALL_BEES",
+			"fabric": "field_32845"
+		},
+		{
+			"forge": "SHOW_PATH_FOR_ALL_BEES",
+			"fabric": "field_32846"
+		},
+		{
+			"forge": "SHOW_GOAL_FOR_SELECTED_BEE",
+			"fabric": "field_32847"
+		},
+		{
+			"forge": "SHOW_NAME_FOR_SELECTED_BEE",
+			"fabric": "field_32848"
+		},
+		{
+			"forge": "SHOW_HIVE_FOR_SELECTED_BEE",
+			"fabric": "field_32849"
+		},
+		{
+			"forge": "SHOW_FLOWER_POS_FOR_SELECTED_BEE",
+			"fabric": "field_32850"
+		},
+		{
+			"forge": "SHOW_TRAVEL_TICKS_FOR_SELECTED_BEE",
+			"fabric": "field_32851"
+		},
+		{
+			"forge": "SHOW_PATH_FOR_SELECTED_BEE",
+			"fabric": "field_32852"
+		},
+		{
+			"forge": "SHOW_HIVE_MEMBERS",
+			"fabric": "field_32853"
+		},
+		{
+			"forge": "SHOW_BLACKLISTS",
+			"fabric": "field_32854"
+		},
+		{
+			"forge": "MAX_RENDER_DIST_FOR_HIVE_OVERLAY",
+			"fabric": "HIVE_RANGE"
+		},
+		{
+			"forge": "MAX_RENDER_DIST_FOR_BEE_OVERLAY",
+			"fabric": "BEE_RANGE"
+		},
+		{
+			"forge": "MAX_TARGETING_DIST",
+			"fabric": "TARGET_ENTITY_RANGE"
+		},
+		{
+			"forge": "HIVE_TIMEOUT",
+			"fabric": "field_32858"
+		},
+		{
+			"forge": "TEXT_SCALE",
+			"fabric": "DEFAULT_DRAWN_STRING_SIZE"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "YELLOW",
+			"fabric": "YELLOW"
+		},
+		{
+			"forge": "ORANGE",
+			"fabric": "ORANGE"
+		},
+		{
+			"forge": "GREEN",
+			"fabric": "GREEN"
+		},
+		{
+			"forge": "GRAY",
+			"fabric": "GRAY"
+		},
+		{
+			"forge": "PINK",
+			"fabric": "PINK"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "hives",
+			"fabric": "hives"
+		},
+		{
+			"forge": "beeInfosPerEntity",
+			"fabric": "bees"
+		},
+		{
+			"forge": "lastLookedAtUuid",
+			"fabric": "targetedEntity"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "addOrUpdateHiveInfo(BeeDebugRenderer$HiveInfo arg0)",
+			"fabric": "addHive(BeeDebugRenderer$Hive hive)"
+		},
+		{
+			"forge": "addOrUpdateBeeInfo(BeeDebugRenderer$BeeInfo arg0)",
+			"fabric": "addBee(BeeDebugRenderer$Bee bee)"
+		},
+		{
+			"forge": "removeBeeInfo(int arg0)",
+			"fabric": "removeBee(int id)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, double arg2, double arg3, double arg4)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, double arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "clearRemovedBees()",
+			"fabric": "removeInvalidBees()"
+		},
+		{
+			"forge": "clearRemovedHives()",
+			"fabric": "removeOutdatedHives()"
+		},
+		{
+			"forge": "doRender(PoseStack arg0, MultiBufferSource arg1)",
+			"fabric": "render(MatrixStack matrices, VertexConsumerProvider vertexConsumers)"
+		},
+		{
+			"forge": "createHiveBlacklistMap()",
+			"fabric": "getBlacklistingBees()"
+		},
+		{
+			"forge": "renderFlowerInfos(PoseStack arg0, MultiBufferSource arg1)",
+			"fabric": "drawFlowers(MatrixStack matrices, VertexConsumerProvider vertexConsumers)"
+		},
+		{
+			"forge": "getBeeUuidsAsString(Collection<UUID> arg0)",
+			"fabric": "toString(Collection<UUID> bees)"
+		},
+		{
+			"forge": "highlightHive(PoseStack arg0, MultiBufferSource arg1, BlockPos arg2)",
+			"fabric": "drawHive(MatrixStack matrices, VertexConsumerProvider vertexConsumers, BlockPos pos)"
+		},
+		{
+			"forge": "renderGhostHive(PoseStack arg0, MultiBufferSource arg1, BlockPos arg2, List<String> arg3)",
+			"fabric": "drawHiveBees(MatrixStack matrices, VertexConsumerProvider vertexConsumers, BlockPos pos, List<String> bees)"
+		},
+		{
+			"forge": "renderHiveInfo(PoseStack arg0, MultiBufferSource arg1, BeeDebugRenderer$HiveInfo arg2, Collection<UUID> arg3)",
+			"fabric": "drawHiveInfo(MatrixStack matrices, VertexConsumerProvider vertexConsumers, BeeDebugRenderer$Hive hive, Collection<UUID> blacklistingBees)"
+		},
+		{
+			"forge": "renderPath(PoseStack arg0, MultiBufferSource arg1, BeeDebugRenderer$BeeInfo arg2)",
+			"fabric": "drawPath(MatrixStack matrices, VertexConsumerProvider vertexConsumers, BeeDebugRenderer$Bee bee)"
+		},
+		{
+			"forge": "renderBeeInfo(PoseStack arg0, MultiBufferSource arg1, BeeDebugRenderer$BeeInfo arg2)",
+			"fabric": "drawBee(MatrixStack matrices, VertexConsumerProvider vertexConsumers, BeeDebugRenderer$Bee bee)"
+		},
+		{
+			"forge": "renderTextOverHive(PoseStack arg0, MultiBufferSource arg1, String arg2, BeeDebugRenderer$HiveInfo arg3, int arg4, int arg5)",
+			"fabric": "drawString(MatrixStack matrices, VertexConsumerProvider vertexConsumers, String string, BeeDebugRenderer$Hive hive, int line, int color)"
+		},
+		{
+			"forge": "renderTextOverPos(PoseStack arg0, MultiBufferSource arg1, String arg2, BlockPos arg3, int arg4, int arg5)",
+			"fabric": "drawString(MatrixStack matrices, VertexConsumerProvider vertexConsumers, String string, BlockPos pos, int line, int color)"
+		},
+		{
+			"forge": "renderTextOverMob(PoseStack arg0, MultiBufferSource arg1, Position arg2, int arg3, String arg4, int arg5, float arg6)",
+			"fabric": "drawString(MatrixStack matrices, VertexConsumerProvider vertexConsumers, Position pos, int line, String string, int color, float size)"
+		},
+		{
+			"forge": "getCamera()",
+			"fabric": "getCameraPos()"
+		},
+		{
+			"forge": "getHiveMemberNames(BeeDebugRenderer$HiveInfo arg0)",
+			"fabric": "getBeeNamesForHive(BeeDebugRenderer$Hive hive)"
+		},
+		{
+			"forge": "getPosDescription(BeeDebugRenderer$BeeInfo arg0, BlockPos arg1)",
+			"fabric": "getPositionString(BeeDebugRenderer$Bee bee, BlockPos pos)"
+		},
+		{
+			"forge": "isBeeSelected(BeeDebugRenderer$BeeInfo arg0)",
+			"fabric": "isTargeted(BeeDebugRenderer$Bee bee)"
+		},
+		{
+			"forge": "isPlayerCloseEnoughToMob(BeeDebugRenderer$BeeInfo arg0)",
+			"fabric": "isInRange(BeeDebugRenderer$Bee bee)"
+		},
+		{
+			"forge": "getHiveMembers(BlockPos arg0)",
+			"fabric": "getBeesForHive(BlockPos hivePos)"
+		},
+		{
+			"forge": "getGhostHives()",
+			"fabric": "getBeesByHive()"
+		},
+		{
+			"forge": "updateLastLookedAtUuid()",
+			"fabric": "updateTargetedEntity()"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.resources.RegistryDataLoader",
+	"items": [
+		{
+			"forge": "net.minecraft.resources.RegistryDataLoader",
+			"fabric": "net.minecraft.registry.RegistryLoader"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "WORLDGEN_REGISTRIES",
+			"fabric": "DYNAMIC_REGISTRIES"
+		},
+		{
+			"forge": "DIMENSION_REGISTRIES",
+			"fabric": "DIMENSION_REGISTRIES"
+		},
+		{
+			"forge": "load(ResourceManager arg0, RegistryAccess arg1, List<RegistryDataLoader$RegistryData<?>> arg2)",
+			"fabric": "load(ResourceManager resourceManager, DynamicRegistryManager baseRegistryManager, List<RegistryLoader$Entry<?>> entries)"
+		},
+		{
+			"forge": "load(ResourceManager arg0, RegistryAccess arg1, List<RegistryDataLoader$RegistryData<?>> arg2)",
+			"fabric": "load(ResourceManager resourceManager, DynamicRegistryManager baseRegistryManager, List<RegistryLoader$Entry<?>> entries)"
+		},
+		{
+			"forge": "createContext(RegistryAccess arg0, List<com.mojang.datafixers.util.Pair<WritableRegistry<?>, RegistryDataLoader$Loader>> arg1)",
+			"fabric": "createInfoGetter(DynamicRegistryManager baseRegistryManager, List<com.mojang.datafixers.util.Pair<MutableRegistry<?>, RegistryLoader$RegistryLoadable>> additionalRegistries)"
+		},
+		{
+			"forge": "createInfoForNewRegistry(WritableRegistry<T> arg0)",
+			"fabric": "createInfo(MutableRegistry<T> registry)"
+		},
+		{
+			"forge": "createInfoForContextRegistry(Registry<T> arg0)",
+			"fabric": "createInfo(Registry<T> registry)"
+		},
+		{
+			"forge": "logErrors(Map<ResourceKey<?>, Exception> arg0)",
+			"fabric": "writeLoadingError(Map<RegistryKey<?>, Exception> exceptions)"
+		},
+		{
+			"forge": "registryDirPath(ResourceLocation arg0)",
+			"fabric": "getPath(Identifier id)"
+		},
+		{
+			"forge": "loadRegistryContents(RegistryOps$RegistryInfoLookup arg0, ResourceManager arg1, ResourceKey<? extends Registry<E>> arg2, WritableRegistry<E> arg3, com.mojang.serialization.Decoder<E> arg4, Map<ResourceKey<?>, Exception> arg5)",
+			"fabric": "load(RegistryOps$RegistryInfoGetter registryInfoGetter, ResourceManager resourceManager, RegistryKey<? extends Registry<E>> registryRef, MutableRegistry<E> newRegistry, com.mojang.serialization.Decoder<E> decoder, Map<RegistryKey<?>, Exception> exceptions)"
+		}
+	]
+}

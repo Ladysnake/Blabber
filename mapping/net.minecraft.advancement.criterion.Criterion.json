@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.advancements.CriterionTrigger",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.CriterionTrigger",
+			"fabric": "net.minecraft.advancement.criterion.Criterion"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "addPlayerListener(PlayerAdvancements arg0, CriterionTrigger$Listener<T> arg1)",
+			"fabric": "beginTrackingCondition(PlayerAdvancementTracker manager, Criterion$ConditionsContainer<T> conditions)"
+		},
+		{
+			"forge": "removePlayerListener(PlayerAdvancements arg0, CriterionTrigger$Listener<T> arg1)",
+			"fabric": "endTrackingCondition(PlayerAdvancementTracker manager, Criterion$ConditionsContainer<T> conditions)"
+		},
+		{
+			"forge": "removePlayerListeners(PlayerAdvancements arg0)",
+			"fabric": "endTracking(PlayerAdvancementTracker tracker)"
+		},
+		{
+			"forge": "createInstance(com.google.gson.JsonObject arg0, DeserializationContext arg1)",
+			"fabric": "conditionsFromJson(com.google.gson.JsonObject obj, AdvancementEntityPredicateDeserializer predicateDeserializer)"
+		}
+	]
+}

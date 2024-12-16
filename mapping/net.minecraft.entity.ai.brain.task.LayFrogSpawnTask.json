@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.TryLaySpawnOnWaterNearLand",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.TryLaySpawnOnWaterNearLand",
+			"fabric": "net.minecraft.entity.ai.brain.task.LayFrogSpawnTask"
+		},
+		{
+			"forge": "create(Block arg0)",
+			"fabric": "create(Block frogSpawn)"
+		},
+		{
+			"forge": "create(Block arg0)",
+			"fabric": "create(Block frogSpawn)"
+		}
+	]
+}

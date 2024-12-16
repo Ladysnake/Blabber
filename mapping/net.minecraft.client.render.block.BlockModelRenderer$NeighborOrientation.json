@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.renderer.block.ModelBlockRenderer$SizeInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.ModelBlockRenderer$SizeInfo",
+			"fabric": "net.minecraft.client.render.block.BlockModelRenderer$NeighborOrientation"
+		},
+		{
+			"forge": "DOWN",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "DOWN",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "UP",
+			"fabric": "UP"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "FLIP_DOWN",
+			"fabric": "FLIP_DOWN"
+		},
+		{
+			"forge": "FLIP_UP",
+			"fabric": "FLIP_UP"
+		},
+		{
+			"forge": "FLIP_NORTH",
+			"fabric": "FLIP_NORTH"
+		},
+		{
+			"forge": "FLIP_SOUTH",
+			"fabric": "FLIP_SOUTH"
+		},
+		{
+			"forge": "FLIP_WEST",
+			"fabric": "FLIP_WEST"
+		},
+		{
+			"forge": "FLIP_EAST",
+			"fabric": "FLIP_EAST"
+		},
+		{
+			"forge": "shape",
+			"fabric": "shape"
+		},
+		{
+			"forge": "shape",
+			"fabric": "shape"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.redstone.Redstone",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.redstone.Redstone",
+			"fabric": "net.minecraft.class_6148"
+		},
+		{
+			"forge": "SIGNAL_MIN",
+			"fabric": "field_31827"
+		},
+		{
+			"forge": "SIGNAL_MIN",
+			"fabric": "field_31827"
+		},
+		{
+			"forge": "SIGNAL_MAX",
+			"fabric": "field_31828"
+		},
+		{
+			"forge": "SIGNAL_NONE",
+			"fabric": "field_31829"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.BaseCoralFanBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BaseCoralFanBlock",
+			"fabric": "net.minecraft.block.DeadCoralFanBlock"
+		},
+		{
+			"forge": "AABB",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "AABB",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		}
+	]
+}

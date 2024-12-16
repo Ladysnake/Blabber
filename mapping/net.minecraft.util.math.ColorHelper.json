@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.FastColor",
+	"items": [
+		{
+			"forge": "net.minecraft.util.FastColor",
+			"fabric": "net.minecraft.util.math.ColorHelper"
+		}
+	]
+}

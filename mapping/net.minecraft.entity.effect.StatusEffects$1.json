@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.effect.MobEffects$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.effect.MobEffects$1",
+			"fabric": "net.minecraft.entity.effect.StatusEffects$1"
+		},
+		{
+			"forge": "isDurationEffectTick(int arg0, int arg1)",
+			"fabric": "canApplyUpdateEffect(int arg0, int arg1)"
+		},
+		{
+			"forge": "isDurationEffectTick(int arg0, int arg1)",
+			"fabric": "canApplyUpdateEffect(int arg0, int arg1)"
+		},
+		{
+			"forge": "applyEffectTick(LivingEntity arg0, int arg1)",
+			"fabric": "applyUpdateEffect(LivingEntity arg0, int arg1)"
+		}
+	]
+}

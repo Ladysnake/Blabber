@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.StructureMode",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.StructureMode",
+			"fabric": "net.minecraft.block.enums.StructureBlockMode"
+		},
+		{
+			"forge": "SAVE",
+			"fabric": "SAVE"
+		},
+		{
+			"forge": "SAVE",
+			"fabric": "SAVE"
+		},
+		{
+			"forge": "LOAD",
+			"fabric": "LOAD"
+		},
+		{
+			"forge": "CORNER",
+			"fabric": "CORNER"
+		},
+		{
+			"forge": "DATA",
+			"fabric": "DATA"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "displayName",
+			"fabric": "text"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "asText()"
+		}
+	]
+}

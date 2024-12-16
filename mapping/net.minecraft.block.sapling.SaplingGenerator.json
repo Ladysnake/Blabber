@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.grower.AbstractTreeGrower",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.grower.AbstractTreeGrower",
+			"fabric": "net.minecraft.block.sapling.SaplingGenerator"
+		},
+		{
+			"forge": "getConfiguredFeature(RandomSource arg0, boolean arg1)",
+			"fabric": "getTreeFeature(Random random, boolean bees)"
+		},
+		{
+			"forge": "getConfiguredFeature(RandomSource arg0, boolean arg1)",
+			"fabric": "getTreeFeature(Random random, boolean bees)"
+		},
+		{
+			"forge": "growTree(ServerLevel arg0, ChunkGenerator arg1, BlockPos arg2, BlockState arg3, RandomSource arg4)",
+			"fabric": "generate(ServerWorld world, ChunkGenerator chunkGenerator, BlockPos pos, BlockState state, Random random)"
+		},
+		{
+			"forge": "hasFlowers(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "areFlowersNearby(WorldAccess world, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.commands.synchronization.brigadier.StringArgumentSerializer$Template",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.synchronization.brigadier.StringArgumentSerializer$Template",
+			"fabric": "net.minecraft.command.argument.serialize.StringArgumentSerializer$Properties"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "instantiate(CommandBuildContext arg0)",
+			"fabric": "createType(CommandRegistryAccess arg0)"
+		},
+		{
+			"forge": "instantiate(CommandBuildContext arg0)",
+			"fabric": "createType(CommandRegistryAccess arg0)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getSerializer()"
+		}
+	]
+}

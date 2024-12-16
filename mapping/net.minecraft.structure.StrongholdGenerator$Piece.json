@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces$StrongholdPiece",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces$StrongholdPiece",
+			"fabric": "net.minecraft.structure.StrongholdGenerator$Piece"
+		},
+		{
+			"forge": "entryDoor",
+			"fabric": "entryDoor"
+		},
+		{
+			"forge": "entryDoor",
+			"fabric": "entryDoor"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "generateSmallDoor(WorldGenLevel arg0, RandomSource arg1, BoundingBox arg2, StrongholdPieces$StrongholdPiece$SmallDoorType arg3, int arg4, int arg5, int arg6)",
+			"fabric": "generateEntrance(StructureWorldAccess world, Random random, BlockBox boundingBox, StrongholdGenerator$Piece$EntranceType type, int x, int y, int z)"
+		},
+		{
+			"forge": "randomSmallDoor(RandomSource arg0)",
+			"fabric": "getRandomEntrance(Random random)"
+		},
+		{
+			"forge": "generateSmallDoorChildForward(StrongholdPieces$StartPiece arg0, StructurePieceAccessor arg1, RandomSource arg2, int arg3, int arg4)",
+			"fabric": "fillForwardOpening(StrongholdGenerator$Start start, StructurePiecesHolder holder, Random random, int leftRightOffset, int heightOffset)"
+		},
+		{
+			"forge": "generateSmallDoorChildLeft(StrongholdPieces$StartPiece arg0, StructurePieceAccessor arg1, RandomSource arg2, int arg3, int arg4)",
+			"fabric": "fillNWOpening(StrongholdGenerator$Start start, StructurePiecesHolder holder, Random random, int heightOffset, int leftRightOffset)"
+		},
+		{
+			"forge": "generateSmallDoorChildRight(StrongholdPieces$StartPiece arg0, StructurePieceAccessor arg1, RandomSource arg2, int arg3, int arg4)",
+			"fabric": "fillSEOpening(StrongholdGenerator$Start start, StructurePiecesHolder holder, Random random, int heightOffset, int leftRightOffset)"
+		},
+		{
+			"forge": "isOkBox(BoundingBox arg0)",
+			"fabric": "isInBounds(BlockBox boundingBox)"
+		}
+	]
+}

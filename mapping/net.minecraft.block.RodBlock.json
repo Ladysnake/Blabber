@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.block.RodBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.RodBlock",
+			"fabric": "net.minecraft.block.RodBlock"
+		},
+		{
+			"forge": "AABB_MIN",
+			"fabric": "field_31233"
+		},
+		{
+			"forge": "AABB_MIN",
+			"fabric": "field_31233"
+		},
+		{
+			"forge": "AABB_MAX",
+			"fabric": "field_31234"
+		},
+		{
+			"forge": "Y_AXIS_AABB",
+			"fabric": "Y_SHAPE"
+		},
+		{
+			"forge": "Z_AXIS_AABB",
+			"fabric": "Z_SHAPE"
+		},
+		{
+			"forge": "X_AXIS_AABB",
+			"fabric": "X_SHAPE"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		}
+	]
+}

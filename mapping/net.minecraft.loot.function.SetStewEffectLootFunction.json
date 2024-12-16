@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetStewEffectFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetStewEffectFunction",
+			"fabric": "net.minecraft.loot.function.SetStewEffectLootFunction"
+		},
+		{
+			"forge": "effectDurationMap",
+			"fabric": "effects"
+		},
+		{
+			"forge": "effectDurationMap",
+			"fabric": "effects"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "stewEffect()",
+			"fabric": "builder()"
+		}
+	]
+}

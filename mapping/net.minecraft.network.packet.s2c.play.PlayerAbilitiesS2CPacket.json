@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.PlayerAbilitiesS2CPacket"
+		},
+		{
+			"forge": "FLAG_INVULNERABLE",
+			"fabric": "INVULNERABLE_MASK"
+		},
+		{
+			"forge": "FLAG_INVULNERABLE",
+			"fabric": "INVULNERABLE_MASK"
+		},
+		{
+			"forge": "FLAG_FLYING",
+			"fabric": "FLYING_MASK"
+		},
+		{
+			"forge": "FLAG_CAN_FLY",
+			"fabric": "ALLOW_FLYING_MASK"
+		},
+		{
+			"forge": "FLAG_INSTABUILD",
+			"fabric": "CREATIVE_MODE_MASK"
+		},
+		{
+			"forge": "invulnerable",
+			"fabric": "invulnerable"
+		},
+		{
+			"forge": "isFlying",
+			"fabric": "flying"
+		},
+		{
+			"forge": "canFly",
+			"fabric": "allowFlying"
+		},
+		{
+			"forge": "instabuild",
+			"fabric": "creativeMode"
+		},
+		{
+			"forge": "flyingSpeed",
+			"fabric": "flySpeed"
+		},
+		{
+			"forge": "walkingSpeed",
+			"fabric": "walkSpeed"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "isInvulnerable()",
+			"fabric": "isInvulnerable()"
+		},
+		{
+			"forge": "isFlying()",
+			"fabric": "isFlying()"
+		},
+		{
+			"forge": "canFly()",
+			"fabric": "allowFlying()"
+		},
+		{
+			"forge": "canInstabuild()",
+			"fabric": "isCreativeMode()"
+		},
+		{
+			"forge": "getFlyingSpeed()",
+			"fabric": "getFlySpeed()"
+		},
+		{
+			"forge": "getWalkingSpeed()",
+			"fabric": "getWalkSpeed()"
+		}
+	]
+}

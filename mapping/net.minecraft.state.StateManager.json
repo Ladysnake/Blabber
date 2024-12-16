@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.block.state.StateDefinition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.StateDefinition",
+			"fabric": "net.minecraft.state.StateManager"
+		},
+		{
+			"forge": "NAME_PATTERN",
+			"fabric": "VALID_NAME_PATTERN"
+		},
+		{
+			"forge": "NAME_PATTERN",
+			"fabric": "VALID_NAME_PATTERN"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "propertiesByName",
+			"fabric": "properties"
+		},
+		{
+			"forge": "states",
+			"fabric": "states"
+		},
+		{
+			"forge": "appendPropertyCodec(com.mojang.serialization.MapCodec<S> arg0, Supplier<S> arg1, String arg2, Property<T> arg3)",
+			"fabric": "addFieldToMapCodec(com.mojang.serialization.MapCodec<S> mapCodec, Supplier<S> defaultStateGetter, String key, Property<T> property)"
+		},
+		{
+			"forge": "appendPropertyCodec(com.mojang.serialization.MapCodec<S> arg0, Supplier<S> arg1, String arg2, Property<T> arg3)",
+			"fabric": "addFieldToMapCodec(com.mojang.serialization.MapCodec<S> mapCodec, Supplier<S> defaultStateGetter, String key, Property<T> property)"
+		},
+		{
+			"forge": "getPossibleStates()",
+			"fabric": "getStates()"
+		},
+		{
+			"forge": "any()",
+			"fabric": "getDefaultState()"
+		},
+		{
+			"forge": "getOwner()",
+			"fabric": "getOwner()"
+		},
+		{
+			"forge": "getProperties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "getProperty(String arg0)",
+			"fabric": "getProperty(String name)"
+		}
+	]
+}

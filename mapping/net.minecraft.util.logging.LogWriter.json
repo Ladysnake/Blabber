@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.util.eventlog.JsonEventLog",
+	"items": [
+		{
+			"forge": "net.minecraft.util.eventlog.JsonEventLog",
+			"fabric": "net.minecraft.util.logging.LogWriter"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "channel",
+			"fabric": "channel"
+		},
+		{
+			"forge": "referenceCount",
+			"fabric": "refCount"
+		},
+		{
+			"forge": "open(com.mojang.serialization.Codec<T> arg0, Path arg1)",
+			"fabric": "create(com.mojang.serialization.Codec<T> codec, Path path)"
+		},
+		{
+			"forge": "open(com.mojang.serialization.Codec<T> arg0, Path arg1)",
+			"fabric": "create(com.mojang.serialization.Codec<T> codec, Path path)"
+		},
+		{
+			"forge": "write(T arg0)",
+			"fabric": "write(T object)"
+		},
+		{
+			"forge": "openReader()",
+			"fabric": "getReader()"
+		},
+		{
+			"forge": "releaseReference()",
+			"fabric": "closeIfNotReferenced()"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.server.packs.resources.ResourceManager$Empty",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.ResourceManager$Empty",
+			"fabric": "net.minecraft.resource.ResourceManager$Empty"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "getNamespaces()",
+			"fabric": "getAllNamespaces()"
+		},
+		{
+			"forge": "getNamespaces()",
+			"fabric": "getAllNamespaces()"
+		},
+		{
+			"forge": "getResource(ResourceLocation arg0)",
+			"fabric": "getResource(Identifier arg0)"
+		},
+		{
+			"forge": "getResourceStack(ResourceLocation arg0)",
+			"fabric": "getAllResources(Identifier arg0)"
+		},
+		{
+			"forge": "listResources(String arg0, Predicate<ResourceLocation> arg1)",
+			"fabric": "findResources(String arg0, Predicate<Identifier> arg1)"
+		},
+		{
+			"forge": "listResourceStacks(String arg0, Predicate<ResourceLocation> arg1)",
+			"fabric": "findAllResources(String arg0, Predicate<Identifier> arg1)"
+		},
+		{
+			"forge": "listPacks()",
+			"fabric": "streamResourcePacks()"
+		}
+	]
+}

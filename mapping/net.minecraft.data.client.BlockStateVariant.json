@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.data.models.blockstates.Variant",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.blockstates.Variant",
+			"fabric": "net.minecraft.data.client.BlockStateVariant"
+		},
+		{
+			"forge": "values",
+			"fabric": "properties"
+		},
+		{
+			"forge": "values",
+			"fabric": "properties"
+		},
+		{
+			"forge": "with(VariantProperty<T> arg0, T arg1)",
+			"fabric": "put(VariantSetting<T> key, T value)"
+		},
+		{
+			"forge": "with(VariantProperty<T> arg0, T arg1)",
+			"fabric": "put(VariantSetting<T> key, T value)"
+		},
+		{
+			"forge": "variant()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "merge(Variant arg0, Variant arg1)",
+			"fabric": "union(BlockStateVariant first, BlockStateVariant second)"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "convertList(List<Variant> arg0)",
+			"fabric": "toJson(List<BlockStateVariant> variants)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.commands.SetBlockCommand$Filter",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.SetBlockCommand$Filter",
+			"fabric": "net.minecraft.server.command.SetBlockCommand$Filter"
+		},
+		{
+			"forge": "filter(BoundingBox arg0, BlockPos arg1, BlockInput arg2, ServerLevel arg3)",
+			"fabric": "filter(BlockBox box, BlockPos pos, BlockStateArgument block, ServerWorld world)"
+		},
+		{
+			"forge": "filter(BoundingBox arg0, BlockPos arg1, BlockInput arg2, ServerLevel arg3)",
+			"fabric": "filter(BlockBox box, BlockPos pos, BlockStateArgument block, ServerWorld world)"
+		}
+	]
+}

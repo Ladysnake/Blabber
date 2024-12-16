@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.blaze3d.font.GlyphProvider",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.font.GlyphProvider",
+			"fabric": "net.minecraft.client.font.Font"
+		},
+		{
+			"forge": "close()",
+			"fabric": "getGlyph(int codePoint)"
+		},
+		{
+			"forge": "getGlyph(int arg0)",
+			"fabric": "getGlyph(int codePoint)"
+		},
+		{
+			"forge": "getSupportedGlyphs()",
+			"fabric": "getProvidedGlyphs()"
+		}
+	]
+}

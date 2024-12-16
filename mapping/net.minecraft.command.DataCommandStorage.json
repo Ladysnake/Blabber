@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.storage.CommandStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.CommandStorage",
+			"fabric": "net.minecraft.command.DataCommandStorage"
+		},
+		{
+			"forge": "ID_PREFIX",
+			"fabric": "COMMAND_STORAGE_PREFIX"
+		},
+		{
+			"forge": "ID_PREFIX",
+			"fabric": "COMMAND_STORAGE_PREFIX"
+		},
+		{
+			"forge": "namespaces",
+			"fabric": "storages"
+		},
+		{
+			"forge": "storage",
+			"fabric": "stateManager"
+		},
+		{
+			"forge": "newStorage(String arg0)",
+			"fabric": "createStorage(String namespace)"
+		},
+		{
+			"forge": "newStorage(String arg0)",
+			"fabric": "createStorage(String namespace)"
+		},
+		{
+			"forge": "get(ResourceLocation arg0)",
+			"fabric": "get(Identifier id)"
+		},
+		{
+			"forge": "set(ResourceLocation arg0, CompoundTag arg1)",
+			"fabric": "set(Identifier id, NbtCompound nbt)"
+		},
+		{
+			"forge": "keys()",
+			"fabric": "getIds()"
+		},
+		{
+			"forge": "createId(String arg0)",
+			"fabric": "getSaveKey(String namespace)"
+		}
+	]
+}

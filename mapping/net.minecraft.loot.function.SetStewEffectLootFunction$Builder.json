@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetStewEffectFunction$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetStewEffectFunction$Builder",
+			"fabric": "net.minecraft.loot.function.SetStewEffectLootFunction$Builder"
+		},
+		{
+			"forge": "effectDurationMap",
+			"fabric": "map"
+		},
+		{
+			"forge": "effectDurationMap",
+			"fabric": "map"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "withEffect(MobEffect arg0, NumberProvider arg1)",
+			"fabric": "withEffect(StatusEffect effect, LootNumberProvider durationRange)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

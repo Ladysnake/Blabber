@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.sources.Unstitcher$RegionInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.sources.Unstitcher$RegionInstance",
+			"fabric": "net.minecraft.client.texture.atlas.UnstitchAtlasSource$SpriteRegion"
+		},
+		{
+			"forge": "image",
+			"fabric": "sprite"
+		},
+		{
+			"forge": "image",
+			"fabric": "sprite"
+		},
+		{
+			"forge": "region",
+			"fabric": "region"
+		},
+		{
+			"forge": "xDivisor",
+			"fabric": "divisorX"
+		},
+		{
+			"forge": "yDivisor",
+			"fabric": "divisorY"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "discard()",
+			"fabric": "close()"
+		}
+	]
+}

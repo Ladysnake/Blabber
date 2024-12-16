@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.EnchantedGoldenAppleItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.EnchantedGoldenAppleItem",
+			"fabric": "net.minecraft.item.EnchantedGoldenAppleItem"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack arg0)"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack arg0)"
+		}
+	]
+}

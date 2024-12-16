@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.core.particles.ParticleGroup",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.ParticleGroup",
+			"fabric": "net.minecraft.client.particle.ParticleGroup"
+		},
+		{
+			"forge": "limit",
+			"fabric": "maxCount"
+		},
+		{
+			"forge": "limit",
+			"fabric": "maxCount"
+		},
+		{
+			"forge": "SPORE_BLOSSOM",
+			"fabric": "SPORE_BLOSSOM_AIR"
+		},
+		{
+			"forge": "getLimit()",
+			"fabric": "getMaxCount()"
+		},
+		{
+			"forge": "getLimit()",
+			"fabric": "getMaxCount()"
+		}
+	]
+}

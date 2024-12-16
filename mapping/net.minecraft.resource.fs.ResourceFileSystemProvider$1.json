@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.server.packs.linkfs.LinkFSProvider$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.linkfs.LinkFSProvider$1",
+			"fabric": "net.minecraft.resource.fs.ResourceFileSystemProvider$1"
+		}
+	]
+}

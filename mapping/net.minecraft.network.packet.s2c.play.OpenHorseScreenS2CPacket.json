@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundHorseScreenOpenPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundHorseScreenOpenPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.OpenHorseScreenS2CPacket"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "size",
+			"fabric": "slotCount"
+		},
+		{
+			"forge": "entityId",
+			"fabric": "horseId"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getContainerId()",
+			"fabric": "getSyncId()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSlotCount()"
+		},
+		{
+			"forge": "getEntityId()",
+			"fabric": "getHorseId()"
+		}
+	]
+}

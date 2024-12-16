@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.GameRules$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.GameRules$Type",
+			"fabric": "net.minecraft.world.GameRules$Type"
+		},
+		{
+			"forge": "argument",
+			"fabric": "argumentType"
+		},
+		{
+			"forge": "argument",
+			"fabric": "argumentType"
+		},
+		{
+			"forge": "constructor",
+			"fabric": "ruleFactory"
+		},
+		{
+			"forge": "callback",
+			"fabric": "changeCallback"
+		},
+		{
+			"forge": "visitorCaller",
+			"fabric": "ruleAcceptor"
+		},
+		{
+			"forge": "createArgument(String arg0)",
+			"fabric": "argument(String name)"
+		},
+		{
+			"forge": "createArgument(String arg0)",
+			"fabric": "argument(String name)"
+		},
+		{
+			"forge": "createRule()",
+			"fabric": "createRule()"
+		},
+		{
+			"forge": "callVisitor(GameRules$GameRuleTypeVisitor arg0, GameRules$Key<T> arg1)",
+			"fabric": "accept(GameRules$Visitor consumer, GameRules$Key<T> key)"
+		}
+	]
+}

@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.level.pathfinder.WalkNodeEvaluator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.pathfinder.WalkNodeEvaluator",
+			"fabric": "net.minecraft.entity.ai.pathing.LandPathNodeMaker"
+		},
+		{
+			"forge": "SPACE_BETWEEN_WALL_POSTS",
+			"fabric": "Y_OFFSET"
+		},
+		{
+			"forge": "SPACE_BETWEEN_WALL_POSTS",
+			"fabric": "Y_OFFSET"
+		},
+		{
+			"forge": "DEFAULT_MOB_JUMP_HEIGHT",
+			"fabric": "MIN_STEP_HEIGHT"
+		},
+		{
+			"forge": "pathTypesByPosCache",
+			"fabric": "nodeTypes"
+		},
+		{
+			"forge": "collisionCache",
+			"fabric": "collidedBoxes"
+		},
+		{
+			"forge": "prepare(PathNavigationRegion arg0, Mob arg1)",
+			"fabric": "init(ChunkCache arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "prepare(PathNavigationRegion arg0, Mob arg1)",
+			"fabric": "init(ChunkCache arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "done()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getStart()",
+			"fabric": "getStart()"
+		},
+		{
+			"forge": "getStartNode(BlockPos arg0)",
+			"fabric": "getStart(BlockPos pos)"
+		},
+		{
+			"forge": "canStartAt(BlockPos arg0)",
+			"fabric": "canPathThrough(BlockPos pos)"
+		},
+		{
+			"forge": "getGoal(double arg0, double arg1, double arg2)",
+			"fabric": "getNode(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "getNeighbors(Node[] arg0, Node arg1)",
+			"fabric": "getSuccessors(PathNode[] arg0, PathNode arg1)"
+		},
+		{
+			"forge": "isNeighborValid(Node arg0, Node arg1)",
+			"fabric": "isValidAdjacentSuccessor(PathNode node, PathNode successor1)"
+		},
+		{
+			"forge": "isDiagonalValid(Node arg0, Node arg1, Node arg2, Node arg3)",
+			"fabric": "isValidDiagonalSuccessor(PathNode xNode, PathNode zNode, PathNode xDiagNode, PathNode zDiagNode)"
+		},
+		{
+			"forge": "doesBlockHavePartialCollision(BlockPathTypes arg0)",
+			"fabric": "isBlocked(PathNodeType nodeType)"
+		},
+		{
+			"forge": "canReachWithoutCollision(Node arg0)",
+			"fabric": "isBlocked(PathNode node)"
+		},
+		{
+			"forge": "getFloorLevel(BlockPos arg0)",
+			"fabric": "getFeetY(BlockPos pos)"
+		},
+		{
+			"forge": "getFloorLevel(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getFeetY(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "isAmphibious()",
+			"fabric": "isAmphibious()"
+		},
+		{
+			"forge": "findAcceptedNode(int arg0, int arg1, int arg2, int arg3, double arg4, Direction arg5, BlockPathTypes arg6)",
+			"fabric": "getPathNode(int x, int y, int z, int maxYStep, double prevFeetY, Direction direction, PathNodeType nodeType)"
+		},
+		{
+			"forge": "getMobJumpHeight()",
+			"fabric": "getStepHeight()"
+		},
+		{
+			"forge": "getNodeAndUpdateCostToMax(int arg0, int arg1, int arg2, BlockPathTypes arg3, float arg4)",
+			"fabric": "getNodeWith(int x, int y, int z, PathNodeType type, float penalty)"
+		},
+		{
+			"forge": "getBlockedNode(int arg0, int arg1, int arg2)",
+			"fabric": "getBlockedNode(int x, int y, int z)"
+		},
+		{
+			"forge": "hasCollisions(AABB arg0)",
+			"fabric": "checkBoxCollision(Box box)"
+		},
+		{
+			"forge": "getBlockPathType(BlockGetter arg0, int arg1, int arg2, int arg3, Mob arg4)",
+			"fabric": "getNodeType(BlockView arg0, int arg1, int arg2, int arg3, MobEntity arg4)"
+		},
+		{
+			"forge": "getBlockPathTypes(BlockGetter arg0, int arg1, int arg2, int arg3, EnumSet<BlockPathTypes> arg4, BlockPathTypes arg5, BlockPos arg6)",
+			"fabric": "findNearbyNodeTypes(BlockView world, int x, int y, int z, EnumSet<PathNodeType> nearbyTypes, PathNodeType type, BlockPos pos)"
+		},
+		{
+			"forge": "evaluateBlockPathType(BlockGetter arg0, BlockPos arg1, BlockPathTypes arg2)",
+			"fabric": "adjustNodeType(BlockView world, BlockPos pos, PathNodeType type)"
+		},
+		{
+			"forge": "getBlockPathType(Mob arg0, BlockPos arg1)",
+			"fabric": "getNodeType(MobEntity entity, BlockPos pos)"
+		},
+		{
+			"forge": "getCachedBlockType(Mob arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getNodeType(MobEntity entity, int x, int y, int z)"
+		},
+		{
+			"forge": "getBlockPathType(BlockGetter arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getDefaultNodeType(BlockView arg0, int arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "getBlockPathTypeStatic(BlockGetter arg0, BlockPos$MutableBlockPos arg1)",
+			"fabric": "getLandNodeType(BlockView world, BlockPos$Mutable pos)"
+		},
+		{
+			"forge": "checkNeighbourBlocks(BlockGetter arg0, BlockPos$MutableBlockPos arg1, BlockPathTypes arg2)",
+			"fabric": "getNodeTypeFromNeighbors(BlockView world, BlockPos$Mutable pos, PathNodeType nodeType)"
+		},
+		{
+			"forge": "getBlockPathTypeRaw(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getCommonNodeType(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "isBurningBlock(BlockState arg0)",
+			"fabric": "inflictsFireDamage(BlockState state)"
+		}
+	]
+}

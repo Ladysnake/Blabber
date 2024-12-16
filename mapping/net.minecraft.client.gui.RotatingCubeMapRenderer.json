@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.PanoramaRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.PanoramaRenderer",
+			"fabric": "net.minecraft.client.gui.RotatingCubeMapRenderer"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "cubeMap",
+			"fabric": "cubeMap"
+		},
+		{
+			"forge": "spin",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "bob",
+			"fabric": "yaw"
+		},
+		{
+			"forge": "render(float arg0, float arg1)",
+			"fabric": "render(float delta, float alpha)"
+		},
+		{
+			"forge": "render(float arg0, float arg1)",
+			"fabric": "render(float delta, float alpha)"
+		},
+		{
+			"forge": "wrap(float arg0, float arg1)",
+			"fabric": "wrapOnce(float a, float b)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.item.SuspiciousStewItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.SuspiciousStewItem",
+			"fabric": "net.minecraft.item.SuspiciousStewItem"
+		},
+		{
+			"forge": "EFFECTS_TAG",
+			"fabric": "EFFECTS_KEY"
+		},
+		{
+			"forge": "EFFECTS_TAG",
+			"fabric": "EFFECTS_KEY"
+		},
+		{
+			"forge": "EFFECT_ID_TAG",
+			"fabric": "EFFECT_ID_KEY"
+		},
+		{
+			"forge": "EFFECT_DURATION_TAG",
+			"fabric": "EFFECT_DURATION_KEY"
+		},
+		{
+			"forge": "DEFAULT_DURATION",
+			"fabric": "DEFAULT_DURATION"
+		},
+		{
+			"forge": "saveMobEffect(ItemStack arg0, MobEffect arg1, int arg2)",
+			"fabric": "addEffectToStew(ItemStack stew, StatusEffect effect, int duration)"
+		},
+		{
+			"forge": "saveMobEffect(ItemStack arg0, MobEffect arg1, int arg2)",
+			"fabric": "addEffectToStew(ItemStack stew, StatusEffect effect, int duration)"
+		},
+		{
+			"forge": "listPotionEffects(ItemStack arg0, Consumer<MobEffectInstance> arg1)",
+			"fabric": "forEachEffect(ItemStack stew, Consumer<StatusEffectInstance> effectConsumer)"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		},
+		{
+			"forge": "finishUsingItem(ItemStack arg0, Level arg1, LivingEntity arg2)",
+			"fabric": "finishUsing(ItemStack arg0, World arg1, LivingEntity arg2)"
+		}
+	]
+}

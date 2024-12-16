@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.RandomBooleanSelectorFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.RandomBooleanSelectorFeature",
+			"fabric": "net.minecraft.world.gen.feature.RandomBooleanFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<RandomBooleanFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<RandomBooleanFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<RandomBooleanFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<RandomBooleanFeatureConfig> arg0)"
+		}
+	]
+}

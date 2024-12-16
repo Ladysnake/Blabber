@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.tags.TagNetworkSerialization$NetworkPayload",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.TagNetworkSerialization$NetworkPayload",
+			"fabric": "net.minecraft.registry.tag.TagPacketSerializer$Serialized"
+		},
+		{
+			"forge": "tags",
+			"fabric": "contents"
+		},
+		{
+			"forge": "tags",
+			"fabric": "contents"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "writeBuf(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "writeBuf(PacketByteBuf buf)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "fromBuf(PacketByteBuf buf)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		}
+	]
+}

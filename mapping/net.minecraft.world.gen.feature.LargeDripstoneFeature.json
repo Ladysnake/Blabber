@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature",
+			"fabric": "net.minecraft.world.gen.feature.LargeDripstoneFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<LargeDripstoneConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<LargeDripstoneFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<LargeDripstoneConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<LargeDripstoneFeatureConfig> arg0)"
+		},
+		{
+			"forge": "makeDripstone(BlockPos arg0, boolean arg1, RandomSource arg2, int arg3, FloatProvider arg4, FloatProvider arg5)",
+			"fabric": "createGenerator(BlockPos pos, boolean isStalagmite, Random arg2, int scale, FloatProvider bluntness, FloatProvider heightScale)"
+		},
+		{
+			"forge": "placeDebugMarkers(WorldGenLevel arg0, BlockPos arg1, Column$Range arg2, LargeDripstoneFeature$WindOffsetter arg3)",
+			"fabric": "testGeneration(StructureWorldAccess world, BlockPos pos, CaveSurface$Bounded surface, LargeDripstoneFeature$WindModifier wind)"
+		}
+	]
+}

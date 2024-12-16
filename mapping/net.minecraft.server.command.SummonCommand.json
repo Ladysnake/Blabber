@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.commands.SummonCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.SummonCommand",
+			"fabric": "net.minecraft.server.command.SummonCommand"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_DUPLICATE_UUID",
+			"fabric": "FAILED_UUID_EXCEPTION"
+		},
+		{
+			"forge": "INVALID_POSITION",
+			"fabric": "INVALID_POSITION_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess)"
+		},
+		{
+			"forge": "createEntity(CommandSourceStack arg0, Holder$Reference<EntityType<?>> arg1, Vec3 arg2, CompoundTag arg3, boolean arg4)",
+			"fabric": "summon(ServerCommandSource source, RegistryEntry$Reference<EntityType<?>> entityType, Vec3d pos, NbtCompound nbt, boolean initialize)"
+		},
+		{
+			"forge": "spawnEntity(CommandSourceStack arg0, Holder$Reference<EntityType<?>> arg1, Vec3 arg2, CompoundTag arg3, boolean arg4)",
+			"fabric": "execute(ServerCommandSource source, RegistryEntry$Reference<EntityType<?>> entityType, Vec3d pos, NbtCompound nbt, boolean initialize)"
+		}
+	]
+}

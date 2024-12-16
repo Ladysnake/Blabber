@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.renderer.BiomeColors",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.BiomeColors",
+			"fabric": "net.minecraft.client.color.world.BiomeColors"
+		},
+		{
+			"forge": "GRASS_COLOR_RESOLVER",
+			"fabric": "GRASS_COLOR"
+		},
+		{
+			"forge": "GRASS_COLOR_RESOLVER",
+			"fabric": "GRASS_COLOR"
+		},
+		{
+			"forge": "FOLIAGE_COLOR_RESOLVER",
+			"fabric": "FOLIAGE_COLOR"
+		},
+		{
+			"forge": "WATER_COLOR_RESOLVER",
+			"fabric": "WATER_COLOR"
+		},
+		{
+			"forge": "getAverageColor(BlockAndTintGetter arg0, BlockPos arg1, ColorResolver arg2)",
+			"fabric": "getColor(BlockRenderView world, BlockPos pos, ColorResolver resolver)"
+		},
+		{
+			"forge": "getAverageColor(BlockAndTintGetter arg0, BlockPos arg1, ColorResolver arg2)",
+			"fabric": "getColor(BlockRenderView world, BlockPos pos, ColorResolver resolver)"
+		},
+		{
+			"forge": "getAverageGrassColor(BlockAndTintGetter arg0, BlockPos arg1)",
+			"fabric": "getGrassColor(BlockRenderView world, BlockPos pos)"
+		},
+		{
+			"forge": "getAverageFoliageColor(BlockAndTintGetter arg0, BlockPos arg1)",
+			"fabric": "getFoliageColor(BlockRenderView world, BlockPos pos)"
+		},
+		{
+			"forge": "getAverageWaterColor(BlockAndTintGetter arg0, BlockPos arg1)",
+			"fabric": "getWaterColor(BlockRenderView world, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.resources.sounds.Sound",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.Sound",
+			"fabric": "net.minecraft.client.sound.Sound"
+		},
+		{
+			"forge": "SOUND_LISTER",
+			"fabric": "FINDER"
+		},
+		{
+			"forge": "SOUND_LISTER",
+			"fabric": "FINDER"
+		},
+		{
+			"forge": "location",
+			"fabric": "id"
+		},
+		{
+			"forge": "volume",
+			"fabric": "volume"
+		},
+		{
+			"forge": "pitch",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "weight",
+			"fabric": "weight"
+		},
+		{
+			"forge": "type",
+			"fabric": "registrationType"
+		},
+		{
+			"forge": "stream",
+			"fabric": "stream"
+		},
+		{
+			"forge": "preload",
+			"fabric": "preload"
+		},
+		{
+			"forge": "attenuationDistance",
+			"fabric": "attenuation"
+		},
+		{
+			"forge": "getLocation()",
+			"fabric": "getIdentifier()"
+		},
+		{
+			"forge": "getLocation()",
+			"fabric": "getIdentifier()"
+		},
+		{
+			"forge": "getPath()",
+			"fabric": "getLocation()"
+		},
+		{
+			"forge": "getVolume()",
+			"fabric": "getVolume()"
+		},
+		{
+			"forge": "getPitch()",
+			"fabric": "getPitch()"
+		},
+		{
+			"forge": "getWeight()",
+			"fabric": "getWeight()"
+		},
+		{
+			"forge": "getSound(RandomSource arg0)",
+			"fabric": "getSound(Random arg0)"
+		},
+		{
+			"forge": "preloadIfRequired(SoundEngine arg0)",
+			"fabric": "preload(SoundSystem arg0)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getRegistrationType()"
+		},
+		{
+			"forge": "shouldStream()",
+			"fabric": "isStreamed()"
+		},
+		{
+			"forge": "shouldPreload()",
+			"fabric": "isPreloaded()"
+		},
+		{
+			"forge": "getAttenuationDistance()",
+			"fabric": "getAttenuation()"
+		}
+	]
+}

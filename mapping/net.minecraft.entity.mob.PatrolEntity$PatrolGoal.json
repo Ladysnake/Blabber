@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.monster.PatrollingMonster$LongDistancePatrolGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.PatrollingMonster$LongDistancePatrolGoal",
+			"fabric": "net.minecraft.entity.mob.PatrolEntity$PatrolGoal"
+		},
+		{
+			"forge": "NAVIGATION_FAILED_COOLDOWN",
+			"fabric": "field_30474"
+		},
+		{
+			"forge": "NAVIGATION_FAILED_COOLDOWN",
+			"fabric": "field_30474"
+		},
+		{
+			"forge": "mob",
+			"fabric": "entity"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "leaderSpeed"
+		},
+		{
+			"forge": "leaderSpeedModifier",
+			"fabric": "followSpeed"
+		},
+		{
+			"forge": "cooldownUntil",
+			"fabric": "nextPatrolSearchTime"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "findPatrolCompanions()",
+			"fabric": "findPatrolTargets()"
+		},
+		{
+			"forge": "moveRandomly()",
+			"fabric": "wander()"
+		}
+	]
+}

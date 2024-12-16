@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlendingDataRemoveFromNetherEndFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlendingDataRemoveFromNetherEndFix",
+			"fabric": "net.minecraft.datafixer.fix.BlendingDataRemoveFromNetherEndFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "removeInapplicableBlendingData(com.mojang.serialization.Dynamic<?> chunk, com.mojang.serialization.OptionalDynamic<?> context)"
+		},
+		{
+			"forge": "updateChunkTag(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.OptionalDynamic<?> arg1)",
+			"fabric": "removeInapplicableBlendingData(com.mojang.serialization.Dynamic<?> chunk, com.mojang.serialization.OptionalDynamic<?> context)"
+		}
+	]
+}

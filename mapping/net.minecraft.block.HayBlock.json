@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.HayBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.HayBlock",
+			"fabric": "net.minecraft.block.HayBlock"
+		},
+		{
+			"forge": "fallOn(Level arg0, BlockState arg1, BlockPos arg2, Entity arg3, float arg4)",
+			"fabric": "onLandedUpon(World arg0, BlockState arg1, BlockPos arg2, Entity arg3, float arg4)"
+		},
+		{
+			"forge": "fallOn(Level arg0, BlockState arg1, BlockPos arg2, Entity arg3, float arg4)",
+			"fabric": "onLandedUpon(World arg0, BlockState arg1, BlockPos arg2, Entity arg3, float arg4)"
+		}
+	]
+}

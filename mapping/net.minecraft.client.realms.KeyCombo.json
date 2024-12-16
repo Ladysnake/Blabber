@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.realmsclient.KeyCombo",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.KeyCombo",
+			"fabric": "net.minecraft.client.realms.KeyCombo"
+		},
+		{
+			"forge": "chars",
+			"fabric": "chars"
+		},
+		{
+			"forge": "chars",
+			"fabric": "chars"
+		},
+		{
+			"forge": "matchIndex",
+			"fabric": "matchIndex"
+		},
+		{
+			"forge": "onCompletion",
+			"fabric": "onCompletion"
+		},
+		{
+			"forge": "keyPressed(char arg0)",
+			"fabric": "keyPressed(char key)"
+		},
+		{
+			"forge": "keyPressed(char arg0)",
+			"fabric": "keyPressed(char key)"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		}
+	]
+}

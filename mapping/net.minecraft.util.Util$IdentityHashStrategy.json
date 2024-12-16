@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.Util$IdentityStrategy",
+	"items": [
+		{
+			"forge": "net.minecraft.Util$IdentityStrategy",
+			"fabric": "net.minecraft.util.Util$IdentityHashStrategy"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "hashCode(Object arg0)",
+			"fabric": "hashCode(Object o)"
+		},
+		{
+			"forge": "hashCode(Object arg0)",
+			"fabric": "hashCode(Object o)"
+		},
+		{
+			"forge": "equals(Object arg0, Object arg1)",
+			"fabric": "equals(Object o, Object o2)"
+		}
+	]
+}

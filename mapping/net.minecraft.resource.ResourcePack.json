@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.server.packs.PackResources",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.PackResources",
+			"fabric": "net.minecraft.resource.ResourcePack"
+		},
+		{
+			"forge": "METADATA_EXTENSION",
+			"fabric": "METADATA_PATH_SUFFIX"
+		},
+		{
+			"forge": "METADATA_EXTENSION",
+			"fabric": "METADATA_PATH_SUFFIX"
+		},
+		{
+			"forge": "PACK_META",
+			"fabric": "PACK_METADATA_NAME"
+		},
+		{
+			"forge": "getRootResource(String... arg0)",
+			"fabric": "openRoot(String... segments)"
+		},
+		{
+			"forge": "getRootResource(String... arg0)",
+			"fabric": "openRoot(String... segments)"
+		},
+		{
+			"forge": "getResource(PackType arg0, ResourceLocation arg1)",
+			"fabric": "open(ResourceType type, Identifier id)"
+		},
+		{
+			"forge": "listResources(PackType arg0, String arg1, String arg2, PackResources$ResourceOutput arg3)",
+			"fabric": "findResources(ResourceType type, String namespace, String prefix, ResourcePack$ResultConsumer consumer)"
+		},
+		{
+			"forge": "getNamespaces(PackType arg0)",
+			"fabric": "getNamespaces(ResourceType type)"
+		},
+		{
+			"forge": "getMetadataSection(MetadataSectionSerializer<T> arg0)",
+			"fabric": "parseMetadata(ResourceMetadataReader<T> metaReader)"
+		},
+		{
+			"forge": "packId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "isBuiltin()",
+			"fabric": "isAlwaysStable()"
+		}
+	]
+}

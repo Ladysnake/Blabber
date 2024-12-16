@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.biome.AmbientMoodSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.AmbientMoodSettings",
+			"fabric": "net.minecraft.sound.BiomeMoodSound"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "LEGACY_CAVE_SETTINGS",
+			"fabric": "CAVE"
+		},
+		{
+			"forge": "soundEvent",
+			"fabric": "sound"
+		},
+		{
+			"forge": "tickDelay",
+			"fabric": "cultivationTicks"
+		},
+		{
+			"forge": "blockSearchExtent",
+			"fabric": "spawnRange"
+		},
+		{
+			"forge": "soundPositionOffset",
+			"fabric": "extraDistance"
+		},
+		{
+			"forge": "getSoundEvent()",
+			"fabric": "getSound()"
+		},
+		{
+			"forge": "getSoundEvent()",
+			"fabric": "getSound()"
+		},
+		{
+			"forge": "getTickDelay()",
+			"fabric": "getCultivationTicks()"
+		},
+		{
+			"forge": "getBlockSearchExtent()",
+			"fabric": "getSpawnRange()"
+		},
+		{
+			"forge": "getSoundPositionOffset()",
+			"fabric": "getExtraDistance()"
+		}
+	]
+}

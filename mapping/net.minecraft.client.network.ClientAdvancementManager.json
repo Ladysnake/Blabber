@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientAdvancements",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientAdvancements",
+			"fabric": "net.minecraft.client.network.ClientAdvancementManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "telemetryManager",
+			"fabric": "worldSession"
+		},
+		{
+			"forge": "advancements",
+			"fabric": "manager"
+		},
+		{
+			"forge": "progress",
+			"fabric": "advancementProgresses"
+		},
+		{
+			"forge": "listener",
+			"fabric": "listener"
+		},
+		{
+			"forge": "selectedTab",
+			"fabric": "selectedTab"
+		},
+		{
+			"forge": "update(ClientboundUpdateAdvancementsPacket arg0)",
+			"fabric": "onAdvancements(AdvancementUpdateS2CPacket packet)"
+		},
+		{
+			"forge": "update(ClientboundUpdateAdvancementsPacket arg0)",
+			"fabric": "onAdvancements(AdvancementUpdateS2CPacket packet)"
+		},
+		{
+			"forge": "getAdvancements()",
+			"fabric": "getManager()"
+		},
+		{
+			"forge": "setSelectedTab(Advancement arg0, boolean arg1)",
+			"fabric": "selectTab(Advancement tab, boolean local)"
+		},
+		{
+			"forge": "setListener(ClientAdvancements$Listener arg0)",
+			"fabric": "setListener(ClientAdvancementManager$Listener listener)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.monster.Slime$SlimeRandomDirectionGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Slime$SlimeRandomDirectionGoal",
+			"fabric": "net.minecraft.entity.mob.SlimeEntity$RandomLookGoal"
+		},
+		{
+			"forge": "slime",
+			"fabric": "slime"
+		},
+		{
+			"forge": "slime",
+			"fabric": "slime"
+		},
+		{
+			"forge": "chosenDegrees",
+			"fabric": "targetYaw"
+		},
+		{
+			"forge": "nextRandomizeTime",
+			"fabric": "timer"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

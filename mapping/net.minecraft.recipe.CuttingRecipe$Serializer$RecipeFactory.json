@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.crafting.SingleItemRecipe$Serializer$SingleItemMaker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.SingleItemRecipe$Serializer$SingleItemMaker",
+			"fabric": "net.minecraft.recipe.CuttingRecipe$Serializer$RecipeFactory"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, String arg1, Ingredient arg2, ItemStack arg3)",
+			"fabric": "create(Identifier id, String group, Ingredient input, ItemStack output)"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, String arg1, Ingredient arg2, ItemStack arg3)",
+			"fabric": "create(Identifier id, String group, Ingredient input, ItemStack output)"
+		}
+	]
+}

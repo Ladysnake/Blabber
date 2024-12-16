@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.advancements.critereon.PickedUpItemTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.PickedUpItemTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.ThrownItemPickedUpByEntityCriterion$Conditions"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "thrownItemPickedUpByEntity(ContextAwarePredicate arg0, ItemPredicate arg1, ContextAwarePredicate arg2)",
+			"fabric": "createThrownItemPickedUpByEntity(LootContextPredicate player, ItemPredicate item, LootContextPredicate entity)"
+		},
+		{
+			"forge": "thrownItemPickedUpByEntity(ContextAwarePredicate arg0, ItemPredicate arg1, ContextAwarePredicate arg2)",
+			"fabric": "createThrownItemPickedUpByEntity(LootContextPredicate player, ItemPredicate item, LootContextPredicate entity)"
+		},
+		{
+			"forge": "thrownItemPickedUpByPlayer(ContextAwarePredicate arg0, ItemPredicate arg1, ContextAwarePredicate arg2)",
+			"fabric": "createThrownItemPickedUpByPlayer(LootContextPredicate player, ItemPredicate item, LootContextPredicate entity)"
+		},
+		{
+			"forge": "matches(ServerPlayer arg0, ItemStack arg1, LootContext arg2)",
+			"fabric": "test(ServerPlayerEntity player, ItemStack stack, LootContext entityContext)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

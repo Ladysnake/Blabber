@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.core.RegistryAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistryAccess",
+			"fabric": "net.minecraft.registry.DynamicRegistryManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "registry(ResourceKey<? extends Registry<? extends E>> arg0)",
+			"fabric": "getOptional(RegistryKey<? extends Registry<? extends E>> key)"
+		},
+		{
+			"forge": "registry(ResourceKey<? extends Registry<? extends E>> arg0)",
+			"fabric": "getOptional(RegistryKey<? extends Registry<? extends E>> key)"
+		},
+		{
+			"forge": "lookup(ResourceKey<? extends Registry<? extends T>> arg0)",
+			"fabric": "getOptionalWrapper(RegistryKey<? extends Registry<? extends T>> arg0)"
+		},
+		{
+			"forge": "registryOrThrow(ResourceKey<? extends Registry<? extends E>> arg0)",
+			"fabric": "get(RegistryKey<? extends Registry<? extends E>> key)"
+		},
+		{
+			"forge": "registries()",
+			"fabric": "streamAllRegistries()"
+		},
+		{
+			"forge": "fromRegistryOfRegistries(Registry<? extends Registry<?>> arg0)",
+			"fabric": "of(Registry<? extends Registry<?>> registries)"
+		},
+		{
+			"forge": "freeze()",
+			"fabric": "toImmutable()"
+		},
+		{
+			"forge": "allRegistriesLifecycle()",
+			"fabric": "getRegistryLifecycle()"
+		}
+	]
+}

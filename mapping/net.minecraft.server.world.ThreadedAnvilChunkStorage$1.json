@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.server.level.ChunkMap$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ChunkMap$1",
+			"fabric": "net.minecraft.server.world.ThreadedAnvilChunkStorage$1"
+		}
+	]
+}

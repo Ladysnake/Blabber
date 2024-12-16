@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.world.level.block.TripWireHookBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.TripWireHookBlock",
+			"fabric": "net.minecraft.block.TripwireHookBlock"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "ATTACHED",
+			"fabric": "ATTACHED"
+		},
+		{
+			"forge": "WIRE_DIST_MIN",
+			"fabric": "field_31268"
+		},
+		{
+			"forge": "WIRE_DIST_MAX",
+			"fabric": "field_31269"
+		},
+		{
+			"forge": "RECHECK_PERIOD",
+			"fabric": "SCHEDULED_TICK_DELAY"
+		},
+		{
+			"forge": "AABB_OFFSET",
+			"fabric": "field_31270"
+		},
+		{
+			"forge": "NORTH_AABB",
+			"fabric": "SOUTH_SHAPE"
+		},
+		{
+			"forge": "SOUTH_AABB",
+			"fabric": "NORTH_SHAPE"
+		},
+		{
+			"forge": "WEST_AABB",
+			"fabric": "EAST_SHAPE"
+		},
+		{
+			"forge": "EAST_AABB",
+			"fabric": "WEST_SHAPE"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "setPlacedBy(Level arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)",
+			"fabric": "onPlaced(World arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)"
+		},
+		{
+			"forge": "calculateState(Level arg0, BlockPos arg1, BlockState arg2, boolean arg3, boolean arg4, int arg5, BlockState arg6)",
+			"fabric": "update(World world, BlockPos pos, BlockState state, boolean beingRemoved, boolean arg4, int arg5, BlockState arg6)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "emitState(Level arg0, BlockPos arg1, boolean arg2, boolean arg3, boolean arg4, boolean arg5)",
+			"fabric": "playSound(World world, BlockPos pos, boolean attached, boolean on, boolean detached, boolean off)"
+		},
+		{
+			"forge": "notifyNeighbors(Level arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "updateNeighborsOnAxis(World world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "onRemove(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onStateReplaced(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "getDirectSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStrongRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

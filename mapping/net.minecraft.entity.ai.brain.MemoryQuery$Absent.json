@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.declarative.MemoryCondition$Absent",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.declarative.MemoryCondition$Absent",
+			"fabric": "net.minecraft.entity.ai.brain.MemoryQuery$Absent"
+		},
+		{
+			"forge": "memory",
+			"fabric": "memory"
+		},
+		{
+			"forge": "memory",
+			"fabric": "memory"
+		},
+		{
+			"forge": "condition()",
+			"fabric": "getState()"
+		},
+		{
+			"forge": "condition()",
+			"fabric": "getState()"
+		},
+		{
+			"forge": "createAccessor(Brain<?> arg0, Optional<Value> arg1)",
+			"fabric": "toQueryResult(Brain<?> arg0, Optional<Value> arg1)"
+		},
+		{
+			"forge": "memory()",
+			"fabric": "memory()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.GlowSquidRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.GlowSquidRenderer",
+			"fabric": "net.minecraft.client.render.entity.GlowSquidEntityRenderer"
+		},
+		{
+			"forge": "GLOW_SQUID_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "GLOW_SQUID_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(GlowSquid arg0)",
+			"fabric": "getTexture(GlowSquidEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(GlowSquid arg0)",
+			"fabric": "getTexture(GlowSquidEntity arg0)"
+		},
+		{
+			"forge": "getBlockLightLevel(GlowSquid arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(GlowSquidEntity arg0, BlockPos arg1)"
+		}
+	]
+}

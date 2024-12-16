@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.network.chat.ChatType",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.ChatType",
+			"fabric": "net.minecraft.network.message.MessageType"
+		},
+		{
+			"forge": "chat",
+			"fabric": "chat"
+		},
+		{
+			"forge": "chat",
+			"fabric": "chat"
+		},
+		{
+			"forge": "narration",
+			"fabric": "narration"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "DEFAULT_CHAT_DECORATION",
+			"fabric": "CHAT_TEXT_DECORATION"
+		},
+		{
+			"forge": "CHAT",
+			"fabric": "CHAT"
+		},
+		{
+			"forge": "SAY_COMMAND",
+			"fabric": "SAY_COMMAND"
+		},
+		{
+			"forge": "MSG_COMMAND_INCOMING",
+			"fabric": "MSG_COMMAND_INCOMING"
+		},
+		{
+			"forge": "MSG_COMMAND_OUTGOING",
+			"fabric": "MSG_COMMAND_OUTGOING"
+		},
+		{
+			"forge": "TEAM_MSG_COMMAND_INCOMING",
+			"fabric": "TEAM_MSG_COMMAND_INCOMING"
+		},
+		{
+			"forge": "TEAM_MSG_COMMAND_OUTGOING",
+			"fabric": "TEAM_MSG_COMMAND_OUTGOING"
+		},
+		{
+			"forge": "EMOTE_COMMAND",
+			"fabric": "EMOTE_COMMAND"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "register(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "register(String id)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ChatType> arg0)",
+			"fabric": "bootstrap(Registerable<MessageType> messageTypeRegisterable)"
+		},
+		{
+			"forge": "bind(ResourceKey<ChatType> arg0, Entity arg1)",
+			"fabric": "params(RegistryKey<MessageType> typeKey, Entity entity)"
+		},
+		{
+			"forge": "bind(ResourceKey<ChatType> arg0, CommandSourceStack arg1)",
+			"fabric": "params(RegistryKey<MessageType> typeKey, ServerCommandSource source)"
+		},
+		{
+			"forge": "bind(ResourceKey<ChatType> arg0, RegistryAccess arg1, Component arg2)",
+			"fabric": "params(RegistryKey<MessageType> typeKey, DynamicRegistryManager registryManager, Text name)"
+		},
+		{
+			"forge": "bind(Component arg0)",
+			"fabric": "params(Text name)"
+		},
+		{
+			"forge": "chat()",
+			"fabric": "chat()"
+		},
+		{
+			"forge": "narration()",
+			"fabric": "narration()"
+		}
+	]
+}

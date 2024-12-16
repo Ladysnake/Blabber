@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.core.BlockPos$4",
+	"items": [
+		{
+			"forge": "net.minecraft.core.BlockPos$4",
+			"fabric": "net.minecraft.util.math.BlockPos$4"
+		},
+		{
+			"forge": "directions",
+			"fabric": "directions"
+		},
+		{
+			"forge": "directions",
+			"fabric": "directions"
+		},
+		{
+			"forge": "cursor",
+			"fabric": "pos"
+		},
+		{
+			"forge": "legs",
+			"fabric": "maxDirectionChanges"
+		},
+		{
+			"forge": "leg",
+			"fabric": "directionChangeCount"
+		},
+		{
+			"forge": "legSize",
+			"fabric": "maxSteps"
+		},
+		{
+			"forge": "legIndex",
+			"fabric": "steps"
+		},
+		{
+			"forge": "lastX",
+			"fabric": "currentX"
+		},
+		{
+			"forge": "lastY",
+			"fabric": "currentY"
+		},
+		{
+			"forge": "lastZ",
+			"fabric": "currentZ"
+		},
+		{
+			"forge": "computeNext()",
+			"fabric": "computeNext()"
+		},
+		{
+			"forge": "computeNext()",
+			"fabric": "computeNext()"
+		}
+	]
+}

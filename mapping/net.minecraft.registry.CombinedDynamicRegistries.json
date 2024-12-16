@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.core.LayeredRegistryAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.core.LayeredRegistryAccess",
+			"fabric": "net.minecraft.registry.CombinedDynamicRegistries"
+		},
+		{
+			"forge": "keys",
+			"fabric": "types"
+		},
+		{
+			"forge": "keys",
+			"fabric": "types"
+		},
+		{
+			"forge": "values",
+			"fabric": "registryManagers"
+		},
+		{
+			"forge": "composite",
+			"fabric": "combinedRegistryManager"
+		},
+		{
+			"forge": "getLayerIndexOrThrow(T arg0)",
+			"fabric": "getIndex(T type)"
+		},
+		{
+			"forge": "getLayerIndexOrThrow(T arg0)",
+			"fabric": "getIndex(T type)"
+		},
+		{
+			"forge": "getLayer(T arg0)",
+			"fabric": "get(T index)"
+		},
+		{
+			"forge": "getAccessForLoading(T arg0)",
+			"fabric": "getPrecedingRegistryManagers(T type)"
+		},
+		{
+			"forge": "getAccessFrom(T arg0)",
+			"fabric": "getSucceedingRegistryManagers(T type)"
+		},
+		{
+			"forge": "getCompositeAccessForLayers(int arg0, int arg1)",
+			"fabric": "subset(int startIndex, int endIndex)"
+		},
+		{
+			"forge": "replaceFrom(T arg0, RegistryAccess$Frozen... arg1)",
+			"fabric": "with(T type, DynamicRegistryManager$Immutable... registryManagers)"
+		},
+		{
+			"forge": "replaceFrom(T arg0, List<RegistryAccess$Frozen> arg1)",
+			"fabric": "with(T type, List<DynamicRegistryManager$Immutable> registryManagers)"
+		},
+		{
+			"forge": "compositeAccess()",
+			"fabric": "getCombinedRegistryManager()"
+		},
+		{
+			"forge": "collectRegistries(Stream<? extends RegistryAccess> arg0)",
+			"fabric": "toRegistryMap(Stream<? extends DynamicRegistryManager> registryManagers)"
+		}
+	]
+}

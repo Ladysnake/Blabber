@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.dimension.DimensionDefaults",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.dimension.DimensionDefaults",
+			"fabric": "net.minecraft.world.dimension.YLevels"
+		},
+		{
+			"forge": "OVERWORLD_MIN_Y",
+			"fabric": "OVERWORLD_MIN_Y"
+		},
+		{
+			"forge": "OVERWORLD_MIN_Y",
+			"fabric": "OVERWORLD_MIN_Y"
+		},
+		{
+			"forge": "OVERWORLD_LEVEL_HEIGHT",
+			"fabric": "OVERWORLD_HEIGHT"
+		},
+		{
+			"forge": "OVERWORLD_GENERATION_HEIGHT",
+			"fabric": "OVERWORLD_GENERATION_HEIGHT"
+		},
+		{
+			"forge": "OVERWORLD_LOGICAL_HEIGHT",
+			"fabric": "OVERWORLD_LOGICAL_HEIGHT"
+		},
+		{
+			"forge": "NETHER_MIN_Y",
+			"fabric": "NETHER_MIN_Y"
+		},
+		{
+			"forge": "NETHER_LEVEL_HEIGHT",
+			"fabric": "NETHER_HEIGHT"
+		},
+		{
+			"forge": "NETHER_GENERATION_HEIGHT",
+			"fabric": "NETHER_GENERATION_HEIGHT"
+		},
+		{
+			"forge": "NETHER_LOGICAL_HEIGHT",
+			"fabric": "NETHER_LOGICAL_HEIGHT"
+		},
+		{
+			"forge": "END_MIN_Y",
+			"fabric": "END_MIN_Y"
+		},
+		{
+			"forge": "END_LEVEL_HEIGHT",
+			"fabric": "END_HEIGHT"
+		},
+		{
+			"forge": "END_GENERATION_HEIGHT",
+			"fabric": "END_GENERATION_HEIGHT"
+		},
+		{
+			"forge": "END_LOGICAL_HEIGHT",
+			"fabric": "END_LOGICAL_HEIGHT"
+		}
+	]
+}

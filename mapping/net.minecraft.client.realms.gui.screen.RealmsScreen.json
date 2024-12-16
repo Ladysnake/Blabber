@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.realms.RealmsScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.realms.RealmsScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsScreen"
+		},
+		{
+			"forge": "TITLE_HEIGHT",
+			"fabric": "field_33055"
+		},
+		{
+			"forge": "TITLE_HEIGHT",
+			"fabric": "field_33055"
+		},
+		{
+			"forge": "COMPONENT_HEIGHT",
+			"fabric": "field_33056"
+		},
+		{
+			"forge": "EXPIRATION_NOTIFICATION_DAYS",
+			"fabric": "field_33057"
+		},
+		{
+			"forge": "SIZE_LIMIT",
+			"fabric": "MAX_FILE_SIZE"
+		},
+		{
+			"forge": "COLOR_WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "COLOR_GRAY",
+			"fabric": "field_33060"
+		},
+		{
+			"forge": "COLOR_DARK_GRAY",
+			"fabric": "field_33061"
+		},
+		{
+			"forge": "COLOR_MEDIUM_GRAY",
+			"fabric": "field_33062"
+		},
+		{
+			"forge": "COLOR_GREEN",
+			"fabric": "field_33063"
+		},
+		{
+			"forge": "COLOR_DARK_GREEN",
+			"fabric": "field_33064"
+		},
+		{
+			"forge": "COLOR_RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "COLOR_RED_FADE",
+			"fabric": "field_33036"
+		},
+		{
+			"forge": "COLOR_BLACK",
+			"fabric": "field_33037"
+		},
+		{
+			"forge": "COLOR_YELLOW",
+			"fabric": "field_33038"
+		},
+		{
+			"forge": "COLOR_BRIGHT_YELLOW",
+			"fabric": "field_33039"
+		},
+		{
+			"forge": "COLOR_LINK",
+			"fabric": "field_33040"
+		},
+		{
+			"forge": "COLOR_LINK_HOVER",
+			"fabric": "field_33041"
+		},
+		{
+			"forge": "COLOR_INFO",
+			"fabric": "field_33042"
+		},
+		{
+			"forge": "COLOR_BUTTON_YELLOW",
+			"fabric": "field_33043"
+		},
+		{
+			"forge": "UPDATE_BREAKS_ADVENTURE_URL",
+			"fabric": "ADVENTURE_MAPS_IN_1_9_URL"
+		},
+		{
+			"forge": "SKIN_FACE_SIZE",
+			"fabric": "field_39676"
+		},
+		{
+			"forge": "labels",
+			"fabric": "labels"
+		},
+		{
+			"forge": "row(int arg0)",
+			"fabric": "row(int index)"
+		},
+		{
+			"forge": "row(int arg0)",
+			"fabric": "row(int index)"
+		},
+		{
+			"forge": "addLabel(RealmsLabel arg0)",
+			"fabric": "addLabel(RealmsLabel label)"
+		},
+		{
+			"forge": "createLabelNarration()",
+			"fabric": "narrateLabels()"
+		}
+	]
+}

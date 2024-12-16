@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.projectile.EvokerFangs",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.EvokerFangs",
+			"fabric": "net.minecraft.entity.mob.EvokerFangsEntity"
+		},
+		{
+			"forge": "ATTACK_DURATION",
+			"fabric": "field_30662"
+		},
+		{
+			"forge": "ATTACK_DURATION",
+			"fabric": "field_30662"
+		},
+		{
+			"forge": "LIFE_OFFSET",
+			"fabric": "field_30663"
+		},
+		{
+			"forge": "ATTACK_TRIGGER_TICKS",
+			"fabric": "field_30664"
+		},
+		{
+			"forge": "warmupDelayTicks",
+			"fabric": "warmup"
+		},
+		{
+			"forge": "sentSpikeEvent",
+			"fabric": "startedAttack"
+		},
+		{
+			"forge": "lifeTicks",
+			"fabric": "ticksLeft"
+		},
+		{
+			"forge": "clientSideAttackStarted",
+			"fabric": "playingAnimation"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "ownerUUID",
+			"fabric": "ownerUuid"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "setOwner(LivingEntity arg0)",
+			"fabric": "setOwner(LivingEntity owner)"
+		},
+		{
+			"forge": "getOwner()",
+			"fabric": "getOwner()"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "dealDamageTo(LivingEntity arg0)",
+			"fabric": "damage(LivingEntity target)"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "getAnimationProgress(float arg0)",
+			"fabric": "getAnimationProgress(float tickDelta)"
+		}
+	]
+}

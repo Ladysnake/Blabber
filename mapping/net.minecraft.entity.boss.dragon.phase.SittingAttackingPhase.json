@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.boss.enderdragon.phases.DragonSittingAttackingPhase",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.enderdragon.phases.DragonSittingAttackingPhase",
+			"fabric": "net.minecraft.entity.boss.dragon.phase.SittingAttackingPhase"
+		},
+		{
+			"forge": "ROAR_DURATION",
+			"fabric": "DURATION"
+		},
+		{
+			"forge": "ROAR_DURATION",
+			"fabric": "DURATION"
+		},
+		{
+			"forge": "attackingTicks",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "doClientTick()",
+			"fabric": "clientTick()"
+		},
+		{
+			"forge": "doClientTick()",
+			"fabric": "clientTick()"
+		},
+		{
+			"forge": "doServerTick()",
+			"fabric": "serverTick()"
+		},
+		{
+			"forge": "begin()",
+			"fabric": "beginPhase()"
+		},
+		{
+			"forge": "getPhase()",
+			"fabric": "getType()"
+		}
+	]
+}

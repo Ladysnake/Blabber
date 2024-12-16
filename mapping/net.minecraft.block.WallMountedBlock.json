@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock",
+			"fabric": "net.minecraft.block.WallMountedBlock"
+		},
+		{
+			"forge": "FACE",
+			"fabric": "FACE"
+		},
+		{
+			"forge": "FACE",
+			"fabric": "FACE"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "canAttach(LevelReader arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "canPlaceAt(WorldView world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getConnectedDirection(BlockState arg0)",
+			"fabric": "getDirection(BlockState state)"
+		}
+	]
+}

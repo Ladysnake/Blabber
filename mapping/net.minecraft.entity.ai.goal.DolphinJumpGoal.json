@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.DolphinJumpGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.DolphinJumpGoal",
+			"fabric": "net.minecraft.entity.ai.goal.DolphinJumpGoal"
+		},
+		{
+			"forge": "STEPS_TO_CHECK",
+			"fabric": "OFFSET_MULTIPLIERS"
+		},
+		{
+			"forge": "STEPS_TO_CHECK",
+			"fabric": "OFFSET_MULTIPLIERS"
+		},
+		{
+			"forge": "dolphin",
+			"fabric": "dolphin"
+		},
+		{
+			"forge": "interval",
+			"fabric": "chance"
+		},
+		{
+			"forge": "breached",
+			"fabric": "inWater"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "waterIsClear(BlockPos arg0, int arg1, int arg2, int arg3)",
+			"fabric": "isWater(BlockPos pos, int offsetX, int offsetZ, int multiplier)"
+		},
+		{
+			"forge": "surfaceIsClear(BlockPos arg0, int arg1, int arg2, int arg3)",
+			"fabric": "isAirAbove(BlockPos pos, int offsetX, int offsetZ, int multiplier)"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "isInterruptable()",
+			"fabric": "canStop()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.Util$11",
+	"items": [
+		{
+			"forge": "net.minecraft.Util$11",
+			"fabric": "net.minecraft.util.Util$3"
+		},
+		{
+			"forge": "cache",
+			"fabric": "cache"
+		},
+		{
+			"forge": "cache",
+			"fabric": "cache"
+		},
+		{
+			"forge": "apply(T arg0, U arg1)",
+			"fabric": "apply(T a, U b)"
+		},
+		{
+			"forge": "apply(T arg0, U arg1)",
+			"fabric": "apply(T a, U b)"
+		}
+	]
+}

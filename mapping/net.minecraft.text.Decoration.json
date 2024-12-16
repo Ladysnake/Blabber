@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.network.chat.ChatTypeDecoration",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.ChatTypeDecoration",
+			"fabric": "net.minecraft.text.Decoration"
+		},
+		{
+			"forge": "translationKey",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "translationKey",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "parameters",
+			"fabric": "parameters"
+		},
+		{
+			"forge": "style",
+			"fabric": "style"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "withSender(String arg0)",
+			"fabric": "ofChat(String translationKey)"
+		},
+		{
+			"forge": "withSender(String arg0)",
+			"fabric": "ofChat(String translationKey)"
+		},
+		{
+			"forge": "incomingDirectMessage(String arg0)",
+			"fabric": "ofIncomingMessage(String translationKey)"
+		},
+		{
+			"forge": "outgoingDirectMessage(String arg0)",
+			"fabric": "ofOutgoingMessage(String translationKey)"
+		},
+		{
+			"forge": "teamMessage(String arg0)",
+			"fabric": "ofTeamMessage(String translationKey)"
+		},
+		{
+			"forge": "decorate(Component arg0, ChatType$Bound arg1)",
+			"fabric": "apply(Text content, MessageType$Parameters params)"
+		},
+		{
+			"forge": "resolveParameters(Component arg0, ChatType$Bound arg1)",
+			"fabric": "collectArguments(Text content, MessageType$Parameters params)"
+		},
+		{
+			"forge": "translationKey()",
+			"fabric": "translationKey()"
+		},
+		{
+			"forge": "parameters()",
+			"fabric": "parameters()"
+		},
+		{
+			"forge": "style()",
+			"fabric": "style()"
+		}
+	]
+}

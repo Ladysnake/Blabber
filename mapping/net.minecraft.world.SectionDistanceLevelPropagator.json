@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.level.SectionTracker",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.SectionTracker",
+			"fabric": "net.minecraft.world.SectionDistanceLevelPropagator"
+		},
+		{
+			"forge": "checkNeighborsAfterUpdate(long arg0, int arg1, boolean arg2)",
+			"fabric": "propagateLevel(long arg0, int arg1, boolean arg2)"
+		},
+		{
+			"forge": "checkNeighborsAfterUpdate(long arg0, int arg1, boolean arg2)",
+			"fabric": "propagateLevel(long arg0, int arg1, boolean arg2)"
+		},
+		{
+			"forge": "getComputedLevel(long arg0, long arg1, int arg2)",
+			"fabric": "recalculateLevel(long arg0, long arg1, int arg2)"
+		},
+		{
+			"forge": "computeLevelFromNeighbor(long arg0, long arg1, int arg2)",
+			"fabric": "getPropagatedLevel(long arg0, long arg1, int arg2)"
+		},
+		{
+			"forge": "getLevelFromSource(long arg0)",
+			"fabric": "getInitialLevel(long id)"
+		},
+		{
+			"forge": "update(long arg0, int arg1, boolean arg2)",
+			"fabric": "update(long id, int level, boolean decrease)"
+		}
+	]
+}

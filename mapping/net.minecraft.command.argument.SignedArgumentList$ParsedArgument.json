@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.network.chat.SignableCommand$Argument",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.SignableCommand$Argument",
+			"fabric": "net.minecraft.command.argument.SignedArgumentList$ParsedArgument"
+		},
+		{
+			"forge": "node",
+			"fabric": "node"
+		},
+		{
+			"forge": "node",
+			"fabric": "node"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getNodeName()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getNodeName()"
+		},
+		{
+			"forge": "node()",
+			"fabric": "node()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		}
+	]
+}

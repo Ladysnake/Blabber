@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.resources.model.SimpleBakedModel$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.SimpleBakedModel$Builder",
+			"fabric": "net.minecraft.client.render.model.BasicBakedModel$Builder"
+		},
+		{
+			"forge": "unculledFaces",
+			"fabric": "quads"
+		},
+		{
+			"forge": "unculledFaces",
+			"fabric": "quads"
+		},
+		{
+			"forge": "culledFaces",
+			"fabric": "faceQuads"
+		},
+		{
+			"forge": "overrides",
+			"fabric": "itemPropertyOverrides"
+		},
+		{
+			"forge": "hasAmbientOcclusion",
+			"fabric": "usesAo"
+		},
+		{
+			"forge": "particleIcon",
+			"fabric": "particleTexture"
+		},
+		{
+			"forge": "usesBlockLight",
+			"fabric": "isSideLit"
+		},
+		{
+			"forge": "isGui3d",
+			"fabric": "hasDepth"
+		},
+		{
+			"forge": "transforms",
+			"fabric": "transformation"
+		},
+		{
+			"forge": "addCulledFace(Direction arg0, BakedQuad arg1)",
+			"fabric": "addQuad(Direction side, BakedQuad quad)"
+		},
+		{
+			"forge": "addCulledFace(Direction arg0, BakedQuad arg1)",
+			"fabric": "addQuad(Direction side, BakedQuad quad)"
+		},
+		{
+			"forge": "addUnculledFace(BakedQuad arg0)",
+			"fabric": "addQuad(BakedQuad quad)"
+		},
+		{
+			"forge": "particle(TextureAtlasSprite arg0)",
+			"fabric": "setParticle(Sprite sprite)"
+		},
+		{
+			"forge": "item()",
+			"fabric": "method_35809()"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

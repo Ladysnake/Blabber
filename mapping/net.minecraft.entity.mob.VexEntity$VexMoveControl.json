@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.Vex$VexMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Vex$VexMoveControl",
+			"fabric": "net.minecraft.entity.mob.VexEntity$VexMoveControl"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

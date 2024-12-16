@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.data.models.blockstates.Condition$Operation",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.blockstates.Condition$Operation",
+			"fabric": "net.minecraft.data.client.When$LogicalOperator"
+		},
+		{
+			"forge": "AND",
+			"fabric": "AND"
+		},
+		{
+			"forge": "AND",
+			"fabric": "AND"
+		},
+		{
+			"forge": "OR",
+			"fabric": "OR"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		}
+	]
+}

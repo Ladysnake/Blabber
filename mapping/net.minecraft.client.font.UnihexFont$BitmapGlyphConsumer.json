@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.UnihexProvider$ReaderOutput",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.UnihexProvider$ReaderOutput",
+			"fabric": "net.minecraft.client.font.UnihexFont$BitmapGlyphConsumer"
+		},
+		{
+			"forge": "accept(int arg0, UnihexProvider$LineData arg1)",
+			"fabric": "accept(int codePoint, UnihexFont$BitmapGlyph glyph)"
+		},
+		{
+			"forge": "accept(int arg0, UnihexProvider$LineData arg1)",
+			"fabric": "accept(int codePoint, UnihexFont$BitmapGlyph glyph)"
+		}
+	]
+}

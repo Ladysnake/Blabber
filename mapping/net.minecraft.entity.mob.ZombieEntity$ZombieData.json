@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.monster.Zombie$ZombieGroupData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Zombie$ZombieGroupData",
+			"fabric": "net.minecraft.entity.mob.ZombieEntity$ZombieData"
+		},
+		{
+			"forge": "isBaby",
+			"fabric": "baby"
+		},
+		{
+			"forge": "isBaby",
+			"fabric": "baby"
+		},
+		{
+			"forge": "canSpawnJockey",
+			"fabric": "tryChickenJockey"
+		}
+	]
+}

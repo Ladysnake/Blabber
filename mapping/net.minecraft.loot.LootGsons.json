@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.Deserializers",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.Deserializers",
+			"fabric": "net.minecraft.loot.LootGsons"
+		},
+		{
+			"forge": "createConditionSerializer()",
+			"fabric": "getConditionGsonBuilder()"
+		},
+		{
+			"forge": "createConditionSerializer()",
+			"fabric": "getConditionGsonBuilder()"
+		},
+		{
+			"forge": "createFunctionSerializer()",
+			"fabric": "getFunctionGsonBuilder()"
+		},
+		{
+			"forge": "createLootTableSerializer()",
+			"fabric": "getTableGsonBuilder()"
+		}
+	]
+}

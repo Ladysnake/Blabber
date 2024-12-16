@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.biome.MultiNoiseBiomeSourceParameterList$Preset",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.MultiNoiseBiomeSourceParameterList$Preset",
+			"fabric": "net.minecraft.world.biome.source.MultiNoiseBiomeSourceParameterList$Preset"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "provider",
+			"fabric": "biomeSourceFunction"
+		},
+		{
+			"forge": "NETHER",
+			"fabric": "NETHER"
+		},
+		{
+			"forge": "OVERWORLD",
+			"fabric": "OVERWORLD"
+		},
+		{
+			"forge": "BY_NAME",
+			"fabric": "BY_IDENTIFIER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "generateOverworldBiomes(Function<ResourceKey<Biome>, T> arg0)",
+			"fabric": "getOverworldEntries(Function<RegistryKey<Biome>, T> biomeEntryGetter)"
+		},
+		{
+			"forge": "generateOverworldBiomes(Function<ResourceKey<Biome>, T> arg0)",
+			"fabric": "getOverworldEntries(Function<RegistryKey<Biome>, T> biomeEntryGetter)"
+		},
+		{
+			"forge": "usedBiomes()",
+			"fabric": "biomeStream()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "provider()",
+			"fabric": "biomeSourceFunction()"
+		}
+	]
+}

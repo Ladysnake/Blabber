@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.SwitchGrid$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.SwitchGrid$Builder",
+			"fabric": "net.minecraft.client.gui.screen.world.WorldScreenOptionGrid$Builder"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "switchBuilders",
+			"fabric": "options"
+		},
+		{
+			"forge": "paddingLeft",
+			"fabric": "marginLeft"
+		},
+		{
+			"forge": "rowSpacing",
+			"fabric": "rowSpacing"
+		},
+		{
+			"forge": "rowCount",
+			"fabric": "rows"
+		},
+		{
+			"forge": "infoUnderneath",
+			"fabric": "tooltipBoxDisplay"
+		},
+		{
+			"forge": "increaseRow()",
+			"fabric": "incrementRows()"
+		},
+		{
+			"forge": "increaseRow()",
+			"fabric": "incrementRows()"
+		},
+		{
+			"forge": "addSwitch(Component arg0, BooleanSupplier arg1, Consumer<Boolean> arg2)",
+			"fabric": "add(Text text, BooleanSupplier getter, Consumer<Boolean> setter)"
+		},
+		{
+			"forge": "withPaddingLeft(int arg0)",
+			"fabric": "marginLeft(int marginLeft)"
+		},
+		{
+			"forge": "withRowSpacing(int arg0)",
+			"fabric": "setRowSpacing(int rowSpacing)"
+		},
+		{
+			"forge": "build(Consumer<LayoutElement> arg0)",
+			"fabric": "build(Consumer<Widget> widgetConsumer)"
+		},
+		{
+			"forge": "withInfoUnderneath(int arg0, boolean arg1)",
+			"fabric": "withTooltipBox(int maxInfoRows, boolean alwaysMaxHeight)"
+		}
+	]
+}

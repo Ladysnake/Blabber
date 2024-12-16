@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.model.Model",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.Model",
+			"fabric": "net.minecraft.client.model.Model"
+		},
+		{
+			"forge": "renderType",
+			"fabric": "layerFactory"
+		},
+		{
+			"forge": "renderType",
+			"fabric": "layerFactory"
+		},
+		{
+			"forge": "renderType(ResourceLocation arg0)",
+			"fabric": "getLayer(Identifier texture)"
+		},
+		{
+			"forge": "renderType(ResourceLocation arg0)",
+			"fabric": "getLayer(Identifier texture)"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha)"
+		}
+	]
+}

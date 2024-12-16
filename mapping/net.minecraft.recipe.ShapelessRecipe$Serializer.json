@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.item.crafting.ShapelessRecipe$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.ShapelessRecipe$Serializer",
+			"fabric": "net.minecraft.recipe.ShapelessRecipe$Serializer"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "read(Identifier arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "read(Identifier arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "itemsFromJson(com.google.gson.JsonArray arg0)",
+			"fabric": "getIngredients(com.google.gson.JsonArray json)"
+		},
+		{
+			"forge": "fromNetwork(ResourceLocation arg0, FriendlyByteBuf arg1)",
+			"fabric": "read(Identifier arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "toNetwork(FriendlyByteBuf arg0, ShapelessRecipe arg1)",
+			"fabric": "write(PacketByteBuf arg0, ShapelessRecipe arg1)"
+		}
+	]
+}

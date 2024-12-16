@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.item.CreativeModeTab$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.CreativeModeTab$Type",
+			"fabric": "net.minecraft.item.ItemGroup$Type"
+		},
+		{
+			"forge": "CATEGORY",
+			"fabric": "CATEGORY"
+		},
+		{
+			"forge": "CATEGORY",
+			"fabric": "CATEGORY"
+		},
+		{
+			"forge": "INVENTORY",
+			"fabric": "INVENTORY"
+		},
+		{
+			"forge": "HOTBAR",
+			"fabric": "HOTBAR"
+		},
+		{
+			"forge": "SEARCH",
+			"fabric": "SEARCH"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.PlacedFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.PlacedFeature",
+			"fabric": "net.minecraft.world.gen.feature.PlacedFeature"
+		},
+		{
+			"forge": "feature",
+			"fabric": "feature"
+		},
+		{
+			"forge": "feature",
+			"fabric": "feature"
+		},
+		{
+			"forge": "placement",
+			"fabric": "placementModifiers"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "REGISTRY_CODEC"
+		},
+		{
+			"forge": "LIST_CODEC",
+			"fabric": "LIST_CODEC"
+		},
+		{
+			"forge": "LIST_OF_LISTS_CODEC",
+			"fabric": "LISTS_CODEC"
+		},
+		{
+			"forge": "place(WorldGenLevel arg0, ChunkGenerator arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "generateUnregistered(StructureWorldAccess world, ChunkGenerator generator, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "place(WorldGenLevel arg0, ChunkGenerator arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "generateUnregistered(StructureWorldAccess world, ChunkGenerator generator, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "placeWithBiomeCheck(WorldGenLevel arg0, ChunkGenerator arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "generate(StructureWorldAccess world, ChunkGenerator generator, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "placeWithContext(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "generate(FeaturePlacementContext context, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "getFeatures()",
+			"fabric": "getDecoratedFeatures()"
+		},
+		{
+			"forge": "feature()",
+			"fabric": "feature()"
+		},
+		{
+			"forge": "placement()",
+			"fabric": "placementModifiers()"
+		}
+	]
+}

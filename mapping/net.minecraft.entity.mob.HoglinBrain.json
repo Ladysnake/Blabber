@@ -1,0 +1,181 @@
+{
+	"title": "net.minecraft.world.entity.monster.hoglin.HoglinAi",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.hoglin.HoglinAi",
+			"fabric": "net.minecraft.entity.mob.HoglinBrain"
+		},
+		{
+			"forge": "REPELLENT_DETECTION_RANGE_HORIZONTAL",
+			"fabric": "field_30533"
+		},
+		{
+			"forge": "REPELLENT_DETECTION_RANGE_HORIZONTAL",
+			"fabric": "field_30533"
+		},
+		{
+			"forge": "REPELLENT_DETECTION_RANGE_VERTICAL",
+			"fabric": "field_30534"
+		},
+		{
+			"forge": "RETREAT_DURATION",
+			"fabric": "AVOID_MEMORY_DURATION"
+		},
+		{
+			"forge": "ATTACK_DURATION",
+			"fabric": "field_30535"
+		},
+		{
+			"forge": "DESIRED_DISTANCE_FROM_PIGLIN_WHEN_IDLING",
+			"fabric": "field_30536"
+		},
+		{
+			"forge": "DESIRED_DISTANCE_FROM_PIGLIN_WHEN_RETREATING",
+			"fabric": "field_30537"
+		},
+		{
+			"forge": "ATTACK_INTERVAL",
+			"fabric": "ADULT_MELEE_ATTACK_COOLDOWN"
+		},
+		{
+			"forge": "BABY_ATTACK_INTERVAL",
+			"fabric": "BABY_MELEE_ATTACK_COOLDOWN"
+		},
+		{
+			"forge": "REPELLENT_PACIFY_TIME",
+			"fabric": "field_30540"
+		},
+		{
+			"forge": "ADULT_FOLLOW_RANGE",
+			"fabric": "WALK_TOWARD_CLOSEST_ADULT_RANGE"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_AVOIDING_REPELLENT",
+			"fabric": "field_30541"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_RETREATING",
+			"fabric": "AVOID_TARGET_SPEED"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_MAKING_LOVE",
+			"fabric": "field_30543"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_IDLING",
+			"fabric": "field_30544"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_FOLLOWING_ADULT",
+			"fabric": "field_30545"
+		},
+		{
+			"forge": "makeBrain(Brain<Hoglin> arg0)",
+			"fabric": "create(Brain<HoglinEntity> brain)"
+		},
+		{
+			"forge": "makeBrain(Brain<Hoglin> arg0)",
+			"fabric": "create(Brain<HoglinEntity> brain)"
+		},
+		{
+			"forge": "initCoreActivity(Brain<Hoglin> arg0)",
+			"fabric": "addCoreTasks(Brain<HoglinEntity> brain)"
+		},
+		{
+			"forge": "initIdleActivity(Brain<Hoglin> arg0)",
+			"fabric": "addIdleTasks(Brain<HoglinEntity> brain)"
+		},
+		{
+			"forge": "initFightActivity(Brain<Hoglin> arg0)",
+			"fabric": "addFightTasks(Brain<HoglinEntity> brain)"
+		},
+		{
+			"forge": "initRetreatActivity(Brain<Hoglin> arg0)",
+			"fabric": "addAvoidTasks(Brain<HoglinEntity> brain)"
+		},
+		{
+			"forge": "createIdleMovementBehaviors()",
+			"fabric": "makeRandomWalkTask()"
+		},
+		{
+			"forge": "updateActivity(Hoglin arg0)",
+			"fabric": "refreshActivities(HoglinEntity hoglin)"
+		},
+		{
+			"forge": "onHitTarget(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "onAttacking(HoglinEntity hoglin, LivingEntity target)"
+		},
+		{
+			"forge": "broadcastRetreat(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "askAdultsToAvoid(HoglinEntity hoglin, LivingEntity target)"
+		},
+		{
+			"forge": "retreatFromNearestTarget(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "avoidEnemy(HoglinEntity hoglin, LivingEntity target)"
+		},
+		{
+			"forge": "setAvoidTarget(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "avoid(HoglinEntity hoglin, LivingEntity target)"
+		},
+		{
+			"forge": "findNearestValidAttackTarget(Hoglin arg0)",
+			"fabric": "getNearestVisibleTargetablePlayer(HoglinEntity hoglin)"
+		},
+		{
+			"forge": "isPosNearNearestRepellent(Hoglin arg0, BlockPos arg1)",
+			"fabric": "isWarpedFungusAround(HoglinEntity hoglin, BlockPos pos)"
+		},
+		{
+			"forge": "wantsToStopFleeing(Hoglin arg0)",
+			"fabric": "isLoneAdult(HoglinEntity hoglin)"
+		},
+		{
+			"forge": "piglinsOutnumberHoglins(Hoglin arg0)",
+			"fabric": "hasMoreHoglinsAround(HoglinEntity hoglin)"
+		},
+		{
+			"forge": "wasHurtBy(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "onAttacked(HoglinEntity hoglin, LivingEntity attacker)"
+		},
+		{
+			"forge": "maybeRetaliate(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "targetEnemy(HoglinEntity hoglin, LivingEntity target)"
+		},
+		{
+			"forge": "setAttackTarget(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "setAttackTarget(HoglinEntity hoglin, LivingEntity target)"
+		},
+		{
+			"forge": "broadcastAttackTarget(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "askAdultsForHelp(HoglinEntity hoglin, LivingEntity target)"
+		},
+		{
+			"forge": "setAttackTargetIfCloserThanCurrent(Hoglin arg0, LivingEntity arg1)",
+			"fabric": "setAttackTargetIfCloser(HoglinEntity hoglin, LivingEntity targetCandidate)"
+		},
+		{
+			"forge": "getSoundForCurrentActivity(Hoglin arg0)",
+			"fabric": "getSoundEvent(HoglinEntity hoglin)"
+		},
+		{
+			"forge": "getSoundForActivity(Hoglin arg0, Activity arg1)",
+			"fabric": "getSoundEvent(HoglinEntity hoglin, Activity activity)"
+		},
+		{
+			"forge": "getVisibleAdultHoglins(Hoglin arg0)",
+			"fabric": "getAdultHoglinsAround(HoglinEntity hoglin)"
+		},
+		{
+			"forge": "isNearRepellent(Hoglin arg0)",
+			"fabric": "hasNearestRepellent(HoglinEntity hoglin)"
+		},
+		{
+			"forge": "isBreeding(Hoglin arg0)",
+			"fabric": "hasBreedTarget(HoglinEntity hoglin)"
+		},
+		{
+			"forge": "isPacified(Hoglin arg0)",
+			"fabric": "isNearPlayer(HoglinEntity hoglin)"
+		}
+	]
+}

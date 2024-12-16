@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.ColumnFeatureConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.ColumnFeatureConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.BasaltColumnsFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "reach",
+			"fabric": "reach"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "reach()",
+			"fabric": "getReach()"
+		},
+		{
+			"forge": "reach()",
+			"fabric": "getReach()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "getHeight()"
+		}
+	]
+}

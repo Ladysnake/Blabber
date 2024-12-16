@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.client.resources.model.MultiPartBakedModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.MultiPartBakedModel",
+			"fabric": "net.minecraft.client.render.model.MultipartBakedModel"
+		},
+		{
+			"forge": "selectors",
+			"fabric": "components"
+		},
+		{
+			"forge": "selectors",
+			"fabric": "components"
+		},
+		{
+			"forge": "hasAmbientOcclusion",
+			"fabric": "ambientOcclusion"
+		},
+		{
+			"forge": "isGui3d",
+			"fabric": "depthGui"
+		},
+		{
+			"forge": "usesBlockLight",
+			"fabric": "sideLit"
+		},
+		{
+			"forge": "particleIcon",
+			"fabric": "sprite"
+		},
+		{
+			"forge": "transforms",
+			"fabric": "transformations"
+		},
+		{
+			"forge": "overrides",
+			"fabric": "itemPropertyOverrides"
+		},
+		{
+			"forge": "selectorCache",
+			"fabric": "stateCache"
+		},
+		{
+			"forge": "getQuads(BlockState arg0, Direction arg1, RandomSource arg2)",
+			"fabric": "getQuads(BlockState arg0, Direction arg1, Random arg2)"
+		},
+		{
+			"forge": "getQuads(BlockState arg0, Direction arg1, RandomSource arg2)",
+			"fabric": "getQuads(BlockState arg0, Direction arg1, Random arg2)"
+		},
+		{
+			"forge": "useAmbientOcclusion()",
+			"fabric": "useAmbientOcclusion()"
+		},
+		{
+			"forge": "isGui3d()",
+			"fabric": "hasDepth()"
+		},
+		{
+			"forge": "usesBlockLight()",
+			"fabric": "isSideLit()"
+		},
+		{
+			"forge": "isCustomRenderer()",
+			"fabric": "isBuiltin()"
+		},
+		{
+			"forge": "getParticleIcon()",
+			"fabric": "getParticleSprite()"
+		},
+		{
+			"forge": "getTransforms()",
+			"fabric": "getTransformation()"
+		},
+		{
+			"forge": "getOverrides()",
+			"fabric": "getOverrides()"
+		}
+	]
+}

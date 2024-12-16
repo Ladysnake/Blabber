@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.phys.shapes.IdenticalMerger",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.IdenticalMerger",
+			"fabric": "net.minecraft.util.shape.IdentityPairList"
+		},
+		{
+			"forge": "coords",
+			"fabric": "merged"
+		},
+		{
+			"forge": "coords",
+			"fabric": "merged"
+		},
+		{
+			"forge": "forMergedIndexes(IndexMerger$IndexConsumer arg0)",
+			"fabric": "forEachPair(PairList$Consumer arg0)"
+		},
+		{
+			"forge": "forMergedIndexes(IndexMerger$IndexConsumer arg0)",
+			"fabric": "forEachPair(PairList$Consumer arg0)"
+		},
+		{
+			"forge": "getList()",
+			"fabric": "getPairs()"
+		}
+	]
+}

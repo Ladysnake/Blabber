@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.ConsoleInput",
+	"items": [
+		{
+			"forge": "net.minecraft.server.ConsoleInput",
+			"fabric": "net.minecraft.server.dedicated.PendingServerCommand"
+		},
+		{
+			"forge": "msg",
+			"fabric": "command"
+		},
+		{
+			"forge": "msg",
+			"fabric": "command"
+		},
+		{
+			"forge": "source",
+			"fabric": "source"
+		}
+	]
+}

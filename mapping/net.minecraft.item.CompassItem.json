@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.item.CompassItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.CompassItem",
+			"fabric": "net.minecraft.item.CompassItem"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "TAG_LODESTONE_POS",
+			"fabric": "LODESTONE_POS_KEY"
+		},
+		{
+			"forge": "TAG_LODESTONE_DIMENSION",
+			"fabric": "LODESTONE_DIMENSION_KEY"
+		},
+		{
+			"forge": "TAG_LODESTONE_TRACKED",
+			"fabric": "LODESTONE_TRACKED_KEY"
+		},
+		{
+			"forge": "isLodestoneCompass(ItemStack arg0)",
+			"fabric": "hasLodestone(ItemStack stack)"
+		},
+		{
+			"forge": "isLodestoneCompass(ItemStack arg0)",
+			"fabric": "hasLodestone(ItemStack stack)"
+		},
+		{
+			"forge": "getLodestoneDimension(CompoundTag arg0)",
+			"fabric": "getLodestoneDimension(NbtCompound nbt)"
+		},
+		{
+			"forge": "getLodestonePosition(CompoundTag arg0)",
+			"fabric": "createLodestonePos(NbtCompound nbt)"
+		},
+		{
+			"forge": "getSpawnPosition(Level arg0)",
+			"fabric": "createSpawnPos(World world)"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack arg0)"
+		},
+		{
+			"forge": "inventoryTick(ItemStack arg0, Level arg1, Entity arg2, int arg3, boolean arg4)",
+			"fabric": "inventoryTick(ItemStack arg0, World arg1, Entity arg2, int arg3, boolean arg4)"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "addLodestoneTags(ResourceKey<Level> arg0, BlockPos arg1, CompoundTag arg2)",
+			"fabric": "writeNbt(RegistryKey<World> worldKey, BlockPos pos, NbtCompound nbt)"
+		},
+		{
+			"forge": "getDescriptionId(ItemStack arg0)",
+			"fabric": "getTranslationKey(ItemStack arg0)"
+		}
+	]
+}

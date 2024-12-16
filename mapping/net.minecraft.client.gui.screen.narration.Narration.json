@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.narration.NarrationThunk",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.narration.NarrationThunk",
+			"fabric": "net.minecraft.client.gui.screen.narration.Narration"
+		},
+		{
+			"forge": "contents",
+			"fabric": "value"
+		},
+		{
+			"forge": "contents",
+			"fabric": "value"
+		},
+		{
+			"forge": "converter",
+			"fabric": "transformer"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "from(String arg0)",
+			"fabric": "string(String string)"
+		},
+		{
+			"forge": "from(String arg0)",
+			"fabric": "string(String string)"
+		},
+		{
+			"forge": "from(Component arg0)",
+			"fabric": "text(Text text)"
+		},
+		{
+			"forge": "from(List<Component> arg0)",
+			"fabric": "texts(List<Text> texts)"
+		},
+		{
+			"forge": "getText(Consumer<String> arg0)",
+			"fabric": "forEachSentence(Consumer<String> consumer)"
+		}
+	]
+}

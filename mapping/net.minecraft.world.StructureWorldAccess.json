@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.WorldGenLevel",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.WorldGenLevel",
+			"fabric": "net.minecraft.world.StructureWorldAccess"
+		},
+		{
+			"forge": "getSeed()",
+			"fabric": "getSeed()"
+		},
+		{
+			"forge": "getSeed()",
+			"fabric": "getSeed()"
+		},
+		{
+			"forge": "ensureCanWrite(BlockPos arg0)",
+			"fabric": "isValidForSetBlock(BlockPos pos)"
+		},
+		{
+			"forge": "setCurrentlyGenerating(Supplier<String> arg0)",
+			"fabric": "setCurrentlyGeneratingStructureName(Supplier<String> structureName)"
+		}
+	]
+}

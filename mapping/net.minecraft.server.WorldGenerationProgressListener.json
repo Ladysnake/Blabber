@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.level.progress.ChunkProgressListener",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.progress.ChunkProgressListener",
+			"fabric": "net.minecraft.server.WorldGenerationProgressListener"
+		},
+		{
+			"forge": "updateSpawnPos(ChunkPos arg0)",
+			"fabric": "start(ChunkPos spawnPos)"
+		},
+		{
+			"forge": "updateSpawnPos(ChunkPos arg0)",
+			"fabric": "start(ChunkPos spawnPos)"
+		},
+		{
+			"forge": "onStatusChange(ChunkPos arg0, ChunkStatus arg1)",
+			"fabric": "setChunkStatus(ChunkPos pos, ChunkStatus status)"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.ChatReportBuilder$Result",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.ChatReportBuilder$Result",
+			"fabric": "net.minecraft.client.report.ChatAbuseReport$ReportWithId"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "report",
+			"fabric": "report"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "report()",
+			"fabric": "report()"
+		}
+	]
+}

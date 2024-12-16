@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.particle.HeartParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.HeartParticle",
+			"fabric": "net.minecraft.client.particle.EmotionParticle"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getQuadSize(float arg0)",
+			"fabric": "getSize(float arg0)"
+		}
+	]
+}

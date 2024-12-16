@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.pathfinder.FlyNodeEvaluator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.pathfinder.FlyNodeEvaluator",
+			"fabric": "net.minecraft.entity.ai.pathing.BirdPathNodeMaker"
+		},
+		{
+			"forge": "pathTypeByPosCache",
+			"fabric": "pathNodes"
+		},
+		{
+			"forge": "pathTypeByPosCache",
+			"fabric": "pathNodes"
+		},
+		{
+			"forge": "SMALL_MOB_INFLATED_START_NODE_BOUNDING_BOX",
+			"fabric": "field_41681"
+		},
+		{
+			"forge": "MAX_START_NODE_CANDIDATES",
+			"fabric": "field_41682"
+		},
+		{
+			"forge": "prepare(PathNavigationRegion arg0, Mob arg1)",
+			"fabric": "init(ChunkCache arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "prepare(PathNavigationRegion arg0, Mob arg1)",
+			"fabric": "init(ChunkCache arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "done()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getStart()",
+			"fabric": "getStart()"
+		},
+		{
+			"forge": "canStartAt(BlockPos arg0)",
+			"fabric": "canPathThrough(BlockPos arg0)"
+		},
+		{
+			"forge": "getGoal(double arg0, double arg1, double arg2)",
+			"fabric": "getNode(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "getNeighbors(Node[] arg0, Node arg1)",
+			"fabric": "getSuccessors(PathNode[] arg0, PathNode arg1)"
+		},
+		{
+			"forge": "hasMalus(Node arg0)",
+			"fabric": "isPassable(PathNode node)"
+		},
+		{
+			"forge": "isOpen(Node arg0)",
+			"fabric": "unvisited(PathNode node)"
+		},
+		{
+			"forge": "findAcceptedNode(int arg0, int arg1, int arg2)",
+			"fabric": "getPassableNode(int x, int y, int z)"
+		},
+		{
+			"forge": "getCachedBlockPathType(int arg0, int arg1, int arg2)",
+			"fabric": "getNodeType(int x, int y, int z)"
+		},
+		{
+			"forge": "getBlockPathType(BlockGetter arg0, int arg1, int arg2, int arg3, Mob arg4)",
+			"fabric": "getNodeType(BlockView arg0, int arg1, int arg2, int arg3, MobEntity arg4)"
+		},
+		{
+			"forge": "getBlockPathType(BlockGetter arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getDefaultNodeType(BlockView arg0, int arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "iteratePathfindingStartNodeCandidatePositions(Mob arg0)",
+			"fabric": "getPotentialEscapePositions(MobEntity entity)"
+		}
+	]
+}

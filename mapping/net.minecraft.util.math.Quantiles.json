@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.Percentiles",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.Percentiles",
+			"fabric": "net.minecraft.util.math.Quantiles"
+		},
+		{
+			"forge": "DEFAULT_INDEXES",
+			"fabric": "QUANTILE_POINTS"
+		},
+		{
+			"forge": "DEFAULT_INDEXES",
+			"fabric": "QUANTILE_POINTS"
+		},
+		{
+			"forge": "evaluate(long[] arg0)",
+			"fabric": "create(long[] values)"
+		},
+		{
+			"forge": "evaluate(long[] arg0)",
+			"fabric": "create(long[] values)"
+		},
+		{
+			"forge": "evaluate(double[] arg0)",
+			"fabric": "create(double[] values)"
+		},
+		{
+			"forge": "sorted(Map<Integer, Double> arg0)",
+			"fabric": "reverseMap(Map<Integer, Double> map)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
+			"fabric": "net.minecraft.world.gen.trunk.DarkOakTrunkPlacer"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "placeTrunk(LevelSimulatedReader arg0, BiConsumer<BlockPos, BlockState> arg1, RandomSource arg2, int arg3, BlockPos arg4, TreeConfiguration arg5)",
+			"fabric": "generate(TestableWorld arg0, BiConsumer<BlockPos, BlockState> arg1, Random arg2, int arg3, BlockPos arg4, TreeFeatureConfig arg5)"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.TreeFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.TreeFeature",
+			"fabric": "net.minecraft.world.gen.feature.TreeFeature"
+		},
+		{
+			"forge": "BLOCK_UPDATE_FLAGS",
+			"fabric": "FORCE_STATE_AND_NOTIFY_ALL"
+		},
+		{
+			"forge": "BLOCK_UPDATE_FLAGS",
+			"fabric": "FORCE_STATE_AND_NOTIFY_ALL"
+		},
+		{
+			"forge": "isVine(LevelSimulatedReader arg0, BlockPos arg1)",
+			"fabric": "isVine(TestableWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "isVine(LevelSimulatedReader arg0, BlockPos arg1)",
+			"fabric": "isVine(TestableWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "isAirOrLeaves(LevelSimulatedReader arg0, BlockPos arg1)",
+			"fabric": "isAirOrLeaves(TestableWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "setBlockKnownShape(LevelWriter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "setBlockStateWithoutUpdatingNeighbors(ModifiableWorld world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "validTreePos(LevelSimulatedReader arg0, BlockPos arg1)",
+			"fabric": "canReplace(TestableWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "doPlace(WorldGenLevel arg0, RandomSource arg1, BlockPos arg2, BiConsumer<BlockPos, BlockState> arg3, BiConsumer<BlockPos, BlockState> arg4, FoliagePlacer$FoliageSetter arg5, TreeConfiguration arg6)",
+			"fabric": "generate(StructureWorldAccess world, Random random, BlockPos pos, BiConsumer<BlockPos, BlockState> rootPlacerReplacer, BiConsumer<BlockPos, BlockState> trunkPlacerReplacer, FoliagePlacer$BlockPlacer blockPlacer, TreeFeatureConfig config)"
+		},
+		{
+			"forge": "getMaxFreeTreeHeight(LevelSimulatedReader arg0, int arg1, BlockPos arg2, TreeConfiguration arg3)",
+			"fabric": "getTopPosition(TestableWorld world, int height, BlockPos pos, TreeFeatureConfig config)"
+		},
+		{
+			"forge": "setBlock(LevelWriter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "setBlockState(ModifiableWorld arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<TreeConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<TreeFeatureConfig> arg0)"
+		},
+		{
+			"forge": "updateLeaves(LevelAccessor arg0, BoundingBox arg1, Set<BlockPos> arg2, Set<BlockPos> arg3, Set<BlockPos> arg4)",
+			"fabric": "placeLogsAndLeaves(WorldAccess world, BlockBox box, Set<BlockPos> trunkPositions, Set<BlockPos> decorationPositions, Set<BlockPos> rootPositions)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.FillLayerFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.FillLayerFeature",
+			"fabric": "net.minecraft.world.gen.feature.FillLayerFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<LayerConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<FillLayerFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<LayerConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<FillLayerFeatureConfig> arg0)"
+		}
+	]
+}

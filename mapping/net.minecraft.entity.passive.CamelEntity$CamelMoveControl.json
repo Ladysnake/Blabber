@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.camel.Camel$CamelMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.camel.Camel$CamelMoveControl",
+			"fabric": "net.minecraft.entity.passive.CamelEntity$CamelMoveControl"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

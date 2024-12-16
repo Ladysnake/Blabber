@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.packs.resources.ResourceMetadata$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.ResourceMetadata$1",
+			"fabric": "net.minecraft.resource.metadata.ResourceMetadata$1"
+		},
+		{
+			"forge": "getSection(MetadataSectionSerializer<T> arg0)",
+			"fabric": "decode(ResourceMetadataReader<T> arg0)"
+		},
+		{
+			"forge": "getSection(MetadataSectionSerializer<T> arg0)",
+			"fabric": "decode(ResourceMetadataReader<T> arg0)"
+		}
+	]
+}

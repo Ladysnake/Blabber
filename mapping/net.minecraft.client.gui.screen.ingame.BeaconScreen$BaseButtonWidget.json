@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.BeaconScreen$BeaconScreenButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.BeaconScreen$BeaconScreenButton",
+			"fabric": "net.minecraft.client.gui.screen.ingame.BeaconScreen$BaseButtonWidget"
+		},
+		{
+			"forge": "selected",
+			"fabric": "disabled"
+		},
+		{
+			"forge": "selected",
+			"fabric": "disabled"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderIcon(GuiGraphics arg0)",
+			"fabric": "renderExtra(DrawContext context)"
+		},
+		{
+			"forge": "isSelected()",
+			"fabric": "isDisabled()"
+		},
+		{
+			"forge": "setSelected(boolean arg0)",
+			"fabric": "setDisabled(boolean disabled)"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		}
+	]
+}

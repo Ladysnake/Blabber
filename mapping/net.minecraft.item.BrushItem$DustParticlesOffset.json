@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.item.BrushItem$DustParticlesDelta",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.BrushItem$DustParticlesDelta",
+			"fabric": "net.minecraft.item.BrushItem$DustParticlesOffset"
+		},
+		{
+			"forge": "xd",
+			"fabric": "xd"
+		},
+		{
+			"forge": "xd",
+			"fabric": "xd"
+		},
+		{
+			"forge": "yd",
+			"fabric": "yd"
+		},
+		{
+			"forge": "zd",
+			"fabric": "zd"
+		},
+		{
+			"forge": "ALONG_SIDE_DELTA",
+			"fabric": "field_42685"
+		},
+		{
+			"forge": "OUT_FROM_SIDE_DELTA",
+			"fabric": "field_42686"
+		},
+		{
+			"forge": "fromDirection(Vec3 arg0, Direction arg1)",
+			"fabric": "fromSide(Vec3d userRotation, Direction side)"
+		},
+		{
+			"forge": "fromDirection(Vec3 arg0, Direction arg1)",
+			"fabric": "fromSide(Vec3d userRotation, Direction side)"
+		},
+		{
+			"forge": "xd()",
+			"fabric": "xd()"
+		},
+		{
+			"forge": "yd()",
+			"fabric": "yd()"
+		},
+		{
+			"forge": "zd()",
+			"fabric": "zd()"
+		}
+	]
+}

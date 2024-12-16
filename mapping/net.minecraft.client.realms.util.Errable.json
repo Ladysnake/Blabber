@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.gui.ErrorCallback",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.ErrorCallback",
+			"fabric": "net.minecraft.client.realms.util.Errable"
+		},
+		{
+			"forge": "error(Component arg0)",
+			"fabric": "error(Text errorMessage)"
+		},
+		{
+			"forge": "error(Component arg0)",
+			"fabric": "error(Text errorMessage)"
+		},
+		{
+			"forge": "error(String arg0)",
+			"fabric": "error(String errorMessage)"
+		}
+	]
+}

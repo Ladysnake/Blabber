@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.monster.Stray",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Stray",
+			"fabric": "net.minecraft.entity.mob.StrayEntity"
+		},
+		{
+			"forge": "checkStraySpawnRules(EntityType<Stray> arg0, ServerLevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<StrayEntity> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "checkStraySpawnRules(EntityType<Stray> arg0, ServerLevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<StrayEntity> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getStepSound()",
+			"fabric": "getStepSound()"
+		},
+		{
+			"forge": "getArrow(ItemStack arg0, float arg1)",
+			"fabric": "createArrowProjectile(ItemStack arg0, float arg1)"
+		}
+	]
+}

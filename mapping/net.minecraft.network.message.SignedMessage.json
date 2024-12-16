@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.network.chat.PlayerChatMessage",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.PlayerChatMessage",
+			"fabric": "net.minecraft.network.message.SignedMessage"
+		},
+		{
+			"forge": "link",
+			"fabric": "link"
+		},
+		{
+			"forge": "link",
+			"fabric": "link"
+		},
+		{
+			"forge": "signature",
+			"fabric": "signature"
+		},
+		{
+			"forge": "signedBody",
+			"fabric": "signedBody"
+		},
+		{
+			"forge": "unsignedContent",
+			"fabric": "unsignedContent"
+		},
+		{
+			"forge": "filterMask",
+			"fabric": "filterMask"
+		},
+		{
+			"forge": "MAP_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "SYSTEM_SENDER",
+			"fabric": "NIL_UUID"
+		},
+		{
+			"forge": "MESSAGE_EXPIRES_AFTER_SERVER",
+			"fabric": "SERVERBOUND_TIME_TO_LIVE"
+		},
+		{
+			"forge": "MESSAGE_EXPIRES_AFTER_CLIENT",
+			"fabric": "CLIENTBOUND_TIME_TO_LIVE"
+		},
+		{
+			"forge": "system(String arg0)",
+			"fabric": "ofUnsigned(String content)"
+		},
+		{
+			"forge": "system(String arg0)",
+			"fabric": "ofUnsigned(String content)"
+		},
+		{
+			"forge": "unsigned(UUID arg0, String arg1)",
+			"fabric": "ofUnsigned(UUID sender, String content)"
+		},
+		{
+			"forge": "withUnsignedContent(Component arg0)",
+			"fabric": "withUnsignedContent(Text unsignedContent)"
+		},
+		{
+			"forge": "removeUnsignedContent()",
+			"fabric": "withoutUnsigned()"
+		},
+		{
+			"forge": "filter(FilterMask arg0)",
+			"fabric": "withFilterMask(FilterMask filterMask)"
+		},
+		{
+			"forge": "filter(boolean arg0)",
+			"fabric": "withFilterMaskEnabled(boolean enabled)"
+		},
+		{
+			"forge": "updateSignature(SignatureUpdater$Output arg0, SignedMessageLink arg1, SignedMessageBody arg2)",
+			"fabric": "update(SignatureUpdatable$SignatureUpdater updater, MessageLink link, MessageBody body)"
+		},
+		{
+			"forge": "verify(SignatureValidator arg0)",
+			"fabric": "verify(SignatureVerifier verifier)"
+		},
+		{
+			"forge": "signedContent()",
+			"fabric": "getSignedContent()"
+		},
+		{
+			"forge": "decoratedContent()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "timeStamp()",
+			"fabric": "getTimestamp()"
+		},
+		{
+			"forge": "salt()",
+			"fabric": "getSalt()"
+		},
+		{
+			"forge": "hasExpiredServer(Instant arg0)",
+			"fabric": "isExpiredOnServer(Instant currentTime)"
+		},
+		{
+			"forge": "hasExpiredClient(Instant arg0)",
+			"fabric": "isExpiredOnClient(Instant currentTime)"
+		},
+		{
+			"forge": "sender()",
+			"fabric": "getSender()"
+		},
+		{
+			"forge": "isSystem()",
+			"fabric": "isSenderMissing()"
+		},
+		{
+			"forge": "hasSignature()",
+			"fabric": "hasSignature()"
+		},
+		{
+			"forge": "hasSignatureFrom(UUID arg0)",
+			"fabric": "canVerifyFrom(UUID sender)"
+		},
+		{
+			"forge": "isFullyFiltered()",
+			"fabric": "isFullyFiltered()"
+		},
+		{
+			"forge": "link()",
+			"fabric": "link()"
+		},
+		{
+			"forge": "signature()",
+			"fabric": "signature()"
+		},
+		{
+			"forge": "signedBody()",
+			"fabric": "signedBody()"
+		},
+		{
+			"forge": "unsignedContent()",
+			"fabric": "unsignedContent()"
+		},
+		{
+			"forge": "filterMask()",
+			"fabric": "filterMask()"
+		}
+	]
+}

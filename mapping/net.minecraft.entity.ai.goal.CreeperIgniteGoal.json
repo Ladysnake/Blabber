@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.SwellGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.SwellGoal",
+			"fabric": "net.minecraft.entity.ai.goal.CreeperIgniteGoal"
+		},
+		{
+			"forge": "creeper",
+			"fabric": "creeper"
+		},
+		{
+			"forge": "creeper",
+			"fabric": "creeper"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "requiresUpdateEveryTick()",
+			"fabric": "shouldRunEveryTick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

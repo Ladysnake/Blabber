@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.gui.screens.packs.PackSelectionModel$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.packs.PackSelectionModel$Entry",
+			"fabric": "net.minecraft.client.gui.screen.pack.ResourcePackOrganizer$Pack"
+		},
+		{
+			"forge": "getIconTexture()",
+			"fabric": "getIconId()"
+		},
+		{
+			"forge": "getIconTexture()",
+			"fabric": "getIconId()"
+		},
+		{
+			"forge": "getCompatibility()",
+			"fabric": "getCompatibility()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getTitle()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getDescription()",
+			"fabric": "getDescription()"
+		},
+		{
+			"forge": "getPackSource()",
+			"fabric": "getSource()"
+		},
+		{
+			"forge": "getExtendedDescription()",
+			"fabric": "getDecoratedDescription()"
+		},
+		{
+			"forge": "isFixedPosition()",
+			"fabric": "isPinned()"
+		},
+		{
+			"forge": "isRequired()",
+			"fabric": "isAlwaysEnabled()"
+		},
+		{
+			"forge": "select()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "unselect()",
+			"fabric": "disable()"
+		},
+		{
+			"forge": "moveUp()",
+			"fabric": "moveTowardStart()"
+		},
+		{
+			"forge": "moveDown()",
+			"fabric": "moveTowardEnd()"
+		},
+		{
+			"forge": "isSelected()",
+			"fabric": "isEnabled()"
+		},
+		{
+			"forge": "canSelect()",
+			"fabric": "canBeEnabled()"
+		},
+		{
+			"forge": "canUnselect()",
+			"fabric": "canBeDisabled()"
+		},
+		{
+			"forge": "canMoveUp()",
+			"fabric": "canMoveTowardStart()"
+		},
+		{
+			"forge": "canMoveDown()",
+			"fabric": "canMoveTowardEnd()"
+		}
+	]
+}

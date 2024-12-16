@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.OptionInstance$UnitDouble",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$UnitDouble",
+			"fabric": "net.minecraft.client.option.SimpleOption$DoubleSliderCallbacks"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "validateValue(Double arg0)",
+			"fabric": "validate(Double arg0)"
+		},
+		{
+			"forge": "validateValue(Double arg0)",
+			"fabric": "validate(Double arg0)"
+		},
+		{
+			"forge": "toSliderValue(Double arg0)",
+			"fabric": "toSliderProgress(Double arg0)"
+		},
+		{
+			"forge": "fromSliderValue(double arg0)",
+			"fabric": "toValue(double arg0)"
+		},
+		{
+			"forge": "xmap(DoubleFunction<? extends R> arg0, ToDoubleFunction<? super R> arg1)",
+			"fabric": "withModifier(DoubleFunction<? extends R> sliderProgressValueToValue, ToDoubleFunction<? super R> valueToSliderProgressValue)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.util.valueproviders.ClampedNormalInt",
+	"items": [
+		{
+			"forge": "net.minecraft.util.valueproviders.ClampedNormalInt",
+			"fabric": "net.minecraft.util.math.intprovider.ClampedNormalIntProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "mean",
+			"fabric": "mean"
+		},
+		{
+			"forge": "deviation",
+			"fabric": "deviation"
+		},
+		{
+			"forge": "min_inclusive",
+			"fabric": "min"
+		},
+		{
+			"forge": "max_inclusive",
+			"fabric": "max"
+		},
+		{
+			"forge": "of(float arg0, float arg1, int arg2, int arg3)",
+			"fabric": "of(float mean, float deviation, int min, int max)"
+		},
+		{
+			"forge": "of(float arg0, float arg1, int arg2, int arg3)",
+			"fabric": "of(float mean, float deviation, int min, int max)"
+		},
+		{
+			"forge": "sample(RandomSource arg0)",
+			"fabric": "get(Random arg0)"
+		},
+		{
+			"forge": "sample(RandomSource arg0, float arg1, float arg2, float arg3, float arg4)",
+			"fabric": "next(Random random, float mean, float deviation, float min, float max)"
+		},
+		{
+			"forge": "getMinValue()",
+			"fabric": "getMin()"
+		},
+		{
+			"forge": "getMaxValue()",
+			"fabric": "getMax()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

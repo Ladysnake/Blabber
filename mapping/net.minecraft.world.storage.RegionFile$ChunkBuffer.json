@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.RegionFile$ChunkBuffer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.RegionFile$ChunkBuffer",
+			"fabric": "net.minecraft.world.storage.RegionFile$ChunkBuffer"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		}
+	]
+}

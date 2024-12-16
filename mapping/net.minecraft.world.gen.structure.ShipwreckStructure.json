@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure",
+			"fabric": "net.minecraft.world.gen.structure.ShipwreckStructure"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "isBeached",
+			"fabric": "beached"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "generatePieces(StructurePiecesBuilder arg0, Structure$GenerationContext arg1)",
+			"fabric": "addPieces(StructurePiecesCollector collector, Structure$Context context)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

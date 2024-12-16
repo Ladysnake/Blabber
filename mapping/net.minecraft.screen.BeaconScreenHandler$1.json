@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.inventory.BeaconMenu$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.BeaconMenu$1",
+			"fabric": "net.minecraft.screen.BeaconScreenHandler$1"
+		},
+		{
+			"forge": "canPlaceItem(int arg0, ItemStack arg1)",
+			"fabric": "isValid(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "canPlaceItem(int arg0, ItemStack arg1)",
+			"fabric": "isValid(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxCountPerStack()"
+		}
+	]
+}

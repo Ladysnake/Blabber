@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blending.Blender$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blending.Blender$1",
+			"fabric": "net.minecraft.world.gen.chunk.Blender$1"
+		},
+		{
+			"forge": "blendOffsetAndFactor(int arg0, int arg1)",
+			"fabric": "calculate(int arg0, int arg1)"
+		},
+		{
+			"forge": "blendOffsetAndFactor(int arg0, int arg1)",
+			"fabric": "calculate(int arg0, int arg1)"
+		},
+		{
+			"forge": "blendDensity(DensityFunction$FunctionContext arg0, double arg1)",
+			"fabric": "applyBlendDensity(DensityFunction$NoisePos arg0, double arg1)"
+		},
+		{
+			"forge": "getBiomeResolver(BiomeResolver arg0)",
+			"fabric": "getBiomeSupplier(BiomeSupplier arg0)"
+		}
+	]
+}

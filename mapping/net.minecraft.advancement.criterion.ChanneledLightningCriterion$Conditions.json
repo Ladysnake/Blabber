@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.advancements.critereon.ChanneledLightningTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.ChanneledLightningTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.ChanneledLightningCriterion$Conditions"
+		},
+		{
+			"forge": "victims",
+			"fabric": "victims"
+		},
+		{
+			"forge": "victims",
+			"fabric": "victims"
+		},
+		{
+			"forge": "channeledLightning(EntityPredicate... arg0)",
+			"fabric": "create(EntityPredicate... victims)"
+		},
+		{
+			"forge": "channeledLightning(EntityPredicate... arg0)",
+			"fabric": "create(EntityPredicate... victims)"
+		},
+		{
+			"forge": "matches(Collection<? extends LootContext> arg0)",
+			"fabric": "matches(Collection<? extends LootContext> victims)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

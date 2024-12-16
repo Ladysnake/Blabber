@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.InSquarePlacement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.InSquarePlacement",
+			"fabric": "net.minecraft.world.gen.placementmodifier.SquarePlacementModifier"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "MODIFIER_CODEC"
+		},
+		{
+			"forge": "spread()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "spread()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "getPositions(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "getPositions(FeaturePlacementContext arg0, Random arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

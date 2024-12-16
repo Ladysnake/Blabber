@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.chat.RemoteChatSession",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.RemoteChatSession",
+			"fabric": "net.minecraft.network.encryption.PublicPlayerSession"
+		},
+		{
+			"forge": "sessionId",
+			"fabric": "sessionId"
+		},
+		{
+			"forge": "sessionId",
+			"fabric": "sessionId"
+		},
+		{
+			"forge": "profilePublicKey",
+			"fabric": "publicKeyData"
+		},
+		{
+			"forge": "createMessageValidator()",
+			"fabric": "createVerifier()"
+		},
+		{
+			"forge": "createMessageValidator()",
+			"fabric": "createVerifier()"
+		},
+		{
+			"forge": "createMessageDecoder(UUID arg0)",
+			"fabric": "createUnpacker(UUID sender)"
+		},
+		{
+			"forge": "asData()",
+			"fabric": "toSerialized()"
+		},
+		{
+			"forge": "hasExpired()",
+			"fabric": "isKeyExpired()"
+		},
+		{
+			"forge": "sessionId()",
+			"fabric": "sessionId()"
+		},
+		{
+			"forge": "profilePublicKey()",
+			"fabric": "publicKeyData()"
+		}
+	]
+}

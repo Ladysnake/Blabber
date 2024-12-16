@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.redstone.NeighborUpdater",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.redstone.NeighborUpdater",
+			"fabric": "net.minecraft.world.block.NeighborUpdater"
+		},
+		{
+			"forge": "UPDATE_ORDER",
+			"fabric": "UPDATE_ORDER"
+		},
+		{
+			"forge": "UPDATE_ORDER",
+			"fabric": "UPDATE_ORDER"
+		},
+		{
+			"forge": "shapeUpdate(Direction arg0, BlockState arg1, BlockPos arg2, BlockPos arg3, int arg4, int arg5)",
+			"fabric": "replaceWithStateForNeighborUpdate(Direction direction, BlockState neighborState, BlockPos pos, BlockPos neighborPos, int flags, int maxUpdateDepth)"
+		},
+		{
+			"forge": "shapeUpdate(Direction arg0, BlockState arg1, BlockPos arg2, BlockPos arg3, int arg4, int arg5)",
+			"fabric": "replaceWithStateForNeighborUpdate(Direction direction, BlockState neighborState, BlockPos pos, BlockPos neighborPos, int flags, int maxUpdateDepth)"
+		},
+		{
+			"forge": "neighborChanged(BlockPos arg0, Block arg1, BlockPos arg2)",
+			"fabric": "updateNeighbor(BlockPos pos, Block sourceBlock, BlockPos sourcePos)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, BlockPos arg1, Block arg2, BlockPos arg3, boolean arg4)",
+			"fabric": "updateNeighbor(BlockState state, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify)"
+		},
+		{
+			"forge": "updateNeighborsAtExceptFromFacing(BlockPos arg0, Block arg1, Direction arg2)",
+			"fabric": "updateNeighbors(BlockPos pos, Block sourceBlock, Direction except)"
+		},
+		{
+			"forge": "executeShapeUpdate(LevelAccessor arg0, Direction arg1, BlockState arg2, BlockPos arg3, BlockPos arg4, int arg5, int arg6)",
+			"fabric": "replaceWithStateForNeighborUpdate(WorldAccess world, Direction direction, BlockState neighborState, BlockPos pos, BlockPos neighborPos, int flags, int maxUpdateDepth)"
+		},
+		{
+			"forge": "executeUpdate(Level arg0, BlockState arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "tryNeighborUpdate(World world, BlockState state, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify)"
+		}
+	]
+}

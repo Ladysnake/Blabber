@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.BlockEntityRenderers",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.BlockEntityRenderers",
+			"fabric": "net.minecraft.client.render.block.entity.BlockEntityRendererFactories"
+		},
+		{
+			"forge": "PROVIDERS",
+			"fabric": "FACTORIES"
+		},
+		{
+			"forge": "PROVIDERS",
+			"fabric": "FACTORIES"
+		},
+		{
+			"forge": "register(BlockEntityType<? extends T> arg0, BlockEntityRendererProvider<T> arg1)",
+			"fabric": "register(BlockEntityType<? extends T> type, BlockEntityRendererFactory<T> factory)"
+		},
+		{
+			"forge": "register(BlockEntityType<? extends T> arg0, BlockEntityRendererProvider<T> arg1)",
+			"fabric": "register(BlockEntityType<? extends T> type, BlockEntityRendererFactory<T> factory)"
+		},
+		{
+			"forge": "createEntityRenderers(BlockEntityRendererProvider$Context arg0)",
+			"fabric": "reload(BlockEntityRendererFactory$Context args)"
+		}
+	]
+}

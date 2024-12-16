@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.world.entity.monster.Ghast",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Ghast",
+			"fabric": "net.minecraft.entity.mob.GhastEntity"
+		},
+		{
+			"forge": "DATA_IS_CHARGING",
+			"fabric": "SHOOTING"
+		},
+		{
+			"forge": "DATA_IS_CHARGING",
+			"fabric": "SHOOTING"
+		},
+		{
+			"forge": "explosionPower",
+			"fabric": "fireballStrength"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "isCharging()",
+			"fabric": "isShooting()"
+		},
+		{
+			"forge": "setCharging(boolean arg0)",
+			"fabric": "setShooting(boolean shooting)"
+		},
+		{
+			"forge": "getExplosionPower()",
+			"fabric": "getFireballStrength()"
+		},
+		{
+			"forge": "shouldDespawnInPeaceful()",
+			"fabric": "isDisallowedInPeaceful()"
+		},
+		{
+			"forge": "isReflectedFireball(DamageSource arg0)",
+			"fabric": "isFireballFromPlayer(DamageSource damageSource)"
+		},
+		{
+			"forge": "isInvulnerableTo(DamageSource arg0)",
+			"fabric": "isInvulnerableTo(DamageSource arg0)"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createGhastAttributes()"
+		},
+		{
+			"forge": "getSoundSource()",
+			"fabric": "getSoundCategory()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getSoundVolume()",
+			"fabric": "getSoundVolume()"
+		},
+		{
+			"forge": "checkGhastSpawnRules(EntityType<Ghast> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<GhastEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "getMaxSpawnClusterSize()",
+			"fabric": "getLimitPerChunk()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		}
+	]
+}

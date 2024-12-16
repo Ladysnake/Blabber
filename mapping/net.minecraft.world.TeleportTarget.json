@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.portal.PortalInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.portal.PortalInfo",
+			"fabric": "net.minecraft.world.TeleportTarget"
+		},
+		{
+			"forge": "pos",
+			"fabric": "position"
+		},
+		{
+			"forge": "pos",
+			"fabric": "position"
+		},
+		{
+			"forge": "speed",
+			"fabric": "velocity"
+		},
+		{
+			"forge": "yRot",
+			"fabric": "yaw"
+		},
+		{
+			"forge": "xRot",
+			"fabric": "pitch"
+		}
+	]
+}

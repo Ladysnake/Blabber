@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.StuckInBodyLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.StuckInBodyLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.StuckObjectsFeatureRenderer"
+		},
+		{
+			"forge": "numStuck(T arg0)",
+			"fabric": "getObjectCount(T entity)"
+		},
+		{
+			"forge": "numStuck(T arg0)",
+			"fabric": "getObjectCount(T entity)"
+		},
+		{
+			"forge": "renderStuckItem(PoseStack arg0, MultiBufferSource arg1, int arg2, Entity arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "renderObject(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, Entity entity, float directionX, float directionY, float directionZ, float tickDelta)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		}
+	]
+}

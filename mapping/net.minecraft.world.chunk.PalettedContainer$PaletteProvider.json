@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.chunk.PalettedContainer$Strategy",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.PalettedContainer$Strategy",
+			"fabric": "net.minecraft.world.chunk.PalettedContainer$PaletteProvider"
+		},
+		{
+			"forge": "SINGLE_VALUE_PALETTE_FACTORY",
+			"fabric": "SINGULAR"
+		},
+		{
+			"forge": "SINGLE_VALUE_PALETTE_FACTORY",
+			"fabric": "SINGULAR"
+		},
+		{
+			"forge": "LINEAR_PALETTE_FACTORY",
+			"fabric": "ARRAY"
+		},
+		{
+			"forge": "HASHMAP_PALETTE_FACTORY",
+			"fabric": "BI_MAP"
+		},
+		{
+			"forge": "GLOBAL_PALETTE_FACTORY",
+			"fabric": "ID_LIST"
+		},
+		{
+			"forge": "SECTION_STATES",
+			"fabric": "BLOCK_STATE"
+		},
+		{
+			"forge": "SECTION_BIOMES",
+			"fabric": "BIOME"
+		},
+		{
+			"forge": "sizeBits",
+			"fabric": "edgeBits"
+		},
+		{
+			"forge": "size()",
+			"fabric": "getContainerSize()"
+		},
+		{
+			"forge": "size()",
+			"fabric": "getContainerSize()"
+		},
+		{
+			"forge": "getIndex(int arg0, int arg1, int arg2)",
+			"fabric": "computeIndex(int x, int y, int z)"
+		},
+		{
+			"forge": "getConfiguration(IdMap<A> arg0, int arg1)",
+			"fabric": "createDataProvider(IndexedIterable<A> idList, int bits)"
+		},
+		{
+			"forge": "calculateBitsForSerialization(IdMap<A> arg0, int arg1)",
+			"fabric": "getBits(IndexedIterable<A> idList, int size)"
+		}
+	]
+}

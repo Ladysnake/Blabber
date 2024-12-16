@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.core.RegistrySetBuilder$ValueAndHolder",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistrySetBuilder$ValueAndHolder",
+			"fabric": "net.minecraft.registry.RegistryBuilder$EntryAssociatedValue"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "holder",
+			"fabric": "entry"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		},
+		{
+			"forge": "holder()",
+			"fabric": "entry()"
+		}
+	]
+}

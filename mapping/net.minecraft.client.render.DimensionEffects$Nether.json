@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.DimensionSpecialEffects$NetherEffects",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.DimensionSpecialEffects$NetherEffects",
+			"fabric": "net.minecraft.client.render.DimensionEffects$Nether"
+		},
+		{
+			"forge": "getBrightnessDependentFogColor(Vec3 arg0, float arg1)",
+			"fabric": "adjustFogColor(Vec3d arg0, float arg1)"
+		},
+		{
+			"forge": "getBrightnessDependentFogColor(Vec3 arg0, float arg1)",
+			"fabric": "adjustFogColor(Vec3d arg0, float arg1)"
+		},
+		{
+			"forge": "isFoggyAt(int arg0, int arg1)",
+			"fabric": "useThickFog(int arg0, int arg1)"
+		}
+	]
+}

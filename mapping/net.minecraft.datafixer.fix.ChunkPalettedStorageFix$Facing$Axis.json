@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix$Direction$Axis",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix$Direction$Axis",
+			"fabric": "net.minecraft.datafixer.fix.ChunkPalettedStorageFix$Facing$Axis"
+		},
+		{
+			"forge": "X",
+			"fabric": "X"
+		},
+		{
+			"forge": "X",
+			"fabric": "X"
+		},
+		{
+			"forge": "Y",
+			"fabric": "Y"
+		},
+		{
+			"forge": "Z",
+			"fabric": "Z"
+		}
+	]
+}

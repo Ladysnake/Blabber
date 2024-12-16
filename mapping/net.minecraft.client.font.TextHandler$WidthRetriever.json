@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.StringSplitter$WidthProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.client.StringSplitter$WidthProvider",
+			"fabric": "net.minecraft.client.font.TextHandler$WidthRetriever"
+		},
+		{
+			"forge": "getWidth(int arg0, Style arg1)",
+			"fabric": "getWidth(int codePoint, Style style)"
+		},
+		{
+			"forge": "getWidth(int arg0, Style arg1)",
+			"fabric": "getWidth(int codePoint, Style style)"
+		}
+	]
+}

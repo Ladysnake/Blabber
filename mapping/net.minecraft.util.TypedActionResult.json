@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.InteractionResultHolder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.InteractionResultHolder",
+			"fabric": "net.minecraft.util.TypedActionResult"
+		},
+		{
+			"forge": "result",
+			"fabric": "result"
+		},
+		{
+			"forge": "result",
+			"fabric": "result"
+		},
+		{
+			"forge": "object",
+			"fabric": "value"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getResult()"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getResult()"
+		},
+		{
+			"forge": "getObject()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "success(T arg0)",
+			"fabric": "success(T data)"
+		},
+		{
+			"forge": "consume(T arg0)",
+			"fabric": "consume(T data)"
+		},
+		{
+			"forge": "pass(T arg0)",
+			"fabric": "pass(T data)"
+		},
+		{
+			"forge": "fail(T arg0)",
+			"fabric": "fail(T data)"
+		},
+		{
+			"forge": "sidedSuccess(T arg0, boolean arg1)",
+			"fabric": "success(T data, boolean swingHand)"
+		}
+	]
+}

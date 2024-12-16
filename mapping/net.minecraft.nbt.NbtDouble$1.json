@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.nbt.DoubleTag$1",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.DoubleTag$1",
+			"fabric": "net.minecraft.nbt.NbtDouble$1"
+		},
+		{
+			"forge": "load(DataInput arg0, int arg1, NbtAccounter arg2)",
+			"fabric": "read(DataInput arg0, int arg1, NbtTagSizeTracker arg2)"
+		},
+		{
+			"forge": "load(DataInput arg0, int arg1, NbtAccounter arg2)",
+			"fabric": "read(DataInput arg0, int arg1, NbtTagSizeTracker arg2)"
+		},
+		{
+			"forge": "parse(DataInput arg0, StreamTagVisitor arg1)",
+			"fabric": "doAccept(DataInput arg0, NbtScanner arg1)"
+		},
+		{
+			"forge": "size()",
+			"fabric": "getSizeInBytes()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getCrashReportName()"
+		},
+		{
+			"forge": "getPrettyName()",
+			"fabric": "getCommandFeedbackName()"
+		},
+		{
+			"forge": "isValue()",
+			"fabric": "isImmutable()"
+		}
+	]
+}

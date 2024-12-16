@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.animation.AnimationChannel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.animation.AnimationChannel",
+			"fabric": "net.minecraft.client.render.entity.animation.Transformation"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "keyframes",
+			"fabric": "keyframes"
+		},
+		{
+			"forge": "target()",
+			"fabric": "target()"
+		},
+		{
+			"forge": "target()",
+			"fabric": "target()"
+		},
+		{
+			"forge": "keyframes()",
+			"fabric": "keyframes()"
+		}
+	]
+}

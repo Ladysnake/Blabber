@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.ConfiguredFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.ConfiguredFeature",
+			"fabric": "net.minecraft.world.gen.feature.ConfiguredFeature"
+		},
+		{
+			"forge": "feature",
+			"fabric": "feature"
+		},
+		{
+			"forge": "feature",
+			"fabric": "feature"
+		},
+		{
+			"forge": "config",
+			"fabric": "config"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "REGISTRY_CODEC"
+		},
+		{
+			"forge": "LIST_CODEC",
+			"fabric": "LIST_CODEC"
+		},
+		{
+			"forge": "place(WorldGenLevel arg0, ChunkGenerator arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "generate(StructureWorldAccess world, ChunkGenerator chunkGenerator, Random random, BlockPos origin)"
+		},
+		{
+			"forge": "place(WorldGenLevel arg0, ChunkGenerator arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "generate(StructureWorldAccess world, ChunkGenerator chunkGenerator, Random random, BlockPos origin)"
+		},
+		{
+			"forge": "getFeatures()",
+			"fabric": "getDecoratedFeatures()"
+		},
+		{
+			"forge": "feature()",
+			"fabric": "feature()"
+		},
+		{
+			"forge": "config()",
+			"fabric": "config()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.resources.IndexedAssetSource",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.IndexedAssetSource",
+			"fabric": "net.minecraft.client.resource.ResourceIndex"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "PATH_SPLITTER",
+			"fabric": "SEPARATOR_SPLITTER"
+		},
+		{
+			"forge": "createIndexFs(Path arg0, String arg1)",
+			"fabric": "buildFileSystem(Path assetsDir, String indexName)"
+		},
+		{
+			"forge": "createIndexFs(Path arg0, String arg1)",
+			"fabric": "buildFileSystem(Path assetsDir, String indexName)"
+		}
+	]
+}

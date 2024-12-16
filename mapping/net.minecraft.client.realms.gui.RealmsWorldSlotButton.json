@@ -1,0 +1,101 @@
+{
+	"title": "com.mojang.realmsclient.gui.RealmsWorldSlotButton",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.RealmsWorldSlotButton",
+			"fabric": "net.minecraft.client.realms.gui.RealmsWorldSlotButton"
+		},
+		{
+			"forge": "SLOT_FRAME_LOCATION",
+			"fabric": "SLOT_FRAME"
+		},
+		{
+			"forge": "SLOT_FRAME_LOCATION",
+			"fabric": "SLOT_FRAME"
+		},
+		{
+			"forge": "EMPTY_SLOT_LOCATION",
+			"fabric": "EMPTY_FRAME"
+		},
+		{
+			"forge": "CHECK_MARK_LOCATION",
+			"fabric": "CHECKMARK"
+		},
+		{
+			"forge": "DEFAULT_WORLD_SLOT_1",
+			"fabric": "PANORAMA_0"
+		},
+		{
+			"forge": "DEFAULT_WORLD_SLOT_2",
+			"fabric": "PANORAMA_2"
+		},
+		{
+			"forge": "DEFAULT_WORLD_SLOT_3",
+			"fabric": "PANORAMA_3"
+		},
+		{
+			"forge": "SLOT_ACTIVE_TOOLTIP",
+			"fabric": "ACTIVE_TOOLTIP"
+		},
+		{
+			"forge": "SWITCH_TO_MINIGAME_SLOT_TOOLTIP",
+			"fabric": "MINIGAME_TOOLTIP"
+		},
+		{
+			"forge": "SWITCH_TO_WORLD_SLOT_TOOLTIP",
+			"fabric": "TOOLTIP"
+		},
+		{
+			"forge": "MINIGAME",
+			"fabric": "MINIGAME_SLOT_NAME"
+		},
+		{
+			"forge": "serverDataProvider",
+			"fabric": "serverDataProvider"
+		},
+		{
+			"forge": "toolTipSetter",
+			"fabric": "tooltipSetter"
+		},
+		{
+			"forge": "slotIndex",
+			"fabric": "slotIndex"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "getState()",
+			"fabric": "getState()"
+		},
+		{
+			"forge": "getState()",
+			"fabric": "getState()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getAction(RealmsServer arg0, boolean arg1, boolean arg2)",
+			"fabric": "getAction(RealmsServer server, boolean active, boolean minigame)"
+		},
+		{
+			"forge": "getTooltipAndNarration(RealmsServer arg0, String arg1, boolean arg2, boolean arg3, RealmsWorldSlotButton$Action arg4)",
+			"fabric": "getActionPromptAndMessage(RealmsServer server, String text, boolean empty, boolean minigame, RealmsWorldSlotButton$Action action)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "drawSlotFrame(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, boolean arg5, String arg6, int arg7, long arg8, String arg9, boolean arg10, boolean arg11, RealmsWorldSlotButton$Action arg12, Component arg13)",
+			"fabric": "drawSlotFrame(DrawContext context, int x, int y, int mouseX, int mouseY, boolean active, String slotName, int slotIndex, long imageId, String image, boolean empty, boolean minigame, RealmsWorldSlotButton$Action action, Text actionPrompt)"
+		},
+		{
+			"forge": "renderCheckMark(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawCheckmark(DrawContext context, int x, int y)"
+		}
+	]
+}

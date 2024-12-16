@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.tags.PoiTypeTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.PoiTypeTags",
+			"fabric": "net.minecraft.registry.tag.PointOfInterestTypeTags"
+		},
+		{
+			"forge": "ACQUIRABLE_JOB_SITE",
+			"fabric": "ACQUIRABLE_JOB_SITE"
+		},
+		{
+			"forge": "ACQUIRABLE_JOB_SITE",
+			"fabric": "ACQUIRABLE_JOB_SITE"
+		},
+		{
+			"forge": "VILLAGE",
+			"fabric": "VILLAGE"
+		},
+		{
+			"forge": "BEE_HOME",
+			"fabric": "BEE_HOME"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

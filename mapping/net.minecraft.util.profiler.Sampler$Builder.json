@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.MetricSampler$MetricSamplerBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.MetricSampler$MetricSamplerBuilder",
+			"fabric": "net.minecraft.util.profiler.Sampler$Builder"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "category",
+			"fabric": "type"
+		},
+		{
+			"forge": "sampler",
+			"fabric": "timeGetter"
+		},
+		{
+			"forge": "context",
+			"fabric": "context"
+		},
+		{
+			"forge": "beforeTick",
+			"fabric": "startAction"
+		},
+		{
+			"forge": "thresholdTest",
+			"fabric": "deviationChecker"
+		},
+		{
+			"forge": "withBeforeTick(Consumer<T> arg0)",
+			"fabric": "startAction(Consumer<T> action)"
+		},
+		{
+			"forge": "withBeforeTick(Consumer<T> arg0)",
+			"fabric": "startAction(Consumer<T> action)"
+		},
+		{
+			"forge": "withThresholdAlert(MetricSampler$ThresholdTest arg0)",
+			"fabric": "deviationChecker(Sampler$DeviationChecker deviationChecker)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

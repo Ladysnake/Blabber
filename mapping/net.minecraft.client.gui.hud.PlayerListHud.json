@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.client.gui.components.PlayerTabOverlay",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.PlayerTabOverlay",
+			"fabric": "net.minecraft.client.gui.hud.PlayerListHud"
+		},
+		{
+			"forge": "PLAYER_COMPARATOR",
+			"fabric": "ENTRY_ORDERING"
+		},
+		{
+			"forge": "PLAYER_COMPARATOR",
+			"fabric": "ENTRY_ORDERING"
+		},
+		{
+			"forge": "GUI_ICONS_LOCATION",
+			"fabric": "ICONS_TEXTURE"
+		},
+		{
+			"forge": "MAX_ROWS_PER_COL",
+			"fabric": "MAX_ROWS"
+		},
+		{
+			"forge": "HEART_EMPTY_CONTAINER",
+			"fabric": "HEART_OUTLINE_U"
+		},
+		{
+			"forge": "HEART_EMPTY_CONTAINER_BLINKING",
+			"fabric": "BLINKING_HEART_OUTLINE_U"
+		},
+		{
+			"forge": "HEART_FULL",
+			"fabric": "HEART_U"
+		},
+		{
+			"forge": "HEART_HALF_FULL",
+			"fabric": "HALF_HEART_U"
+		},
+		{
+			"forge": "HEART_GOLDEN_FULL",
+			"fabric": "GOLDEN_HEART_U"
+		},
+		{
+			"forge": "HEART_GOLDEN_HALF_FULL",
+			"fabric": "HALF_GOLDEN_HEART_U"
+		},
+		{
+			"forge": "HEART_GHOST_FULL",
+			"fabric": "BLINKING_HEART_U"
+		},
+		{
+			"forge": "HEART_GHOST_HALF_FULL",
+			"fabric": "BLINKING_HALF_HEART_U"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "gui",
+			"fabric": "inGameHud"
+		},
+		{
+			"forge": "footer",
+			"fabric": "footer"
+		},
+		{
+			"forge": "header",
+			"fabric": "header"
+		},
+		{
+			"forge": "visible",
+			"fabric": "visible"
+		},
+		{
+			"forge": "healthStates",
+			"fabric": "hearts"
+		},
+		{
+			"forge": "getNameForDisplay(PlayerInfo arg0)",
+			"fabric": "getPlayerName(PlayerListEntry entry)"
+		},
+		{
+			"forge": "getNameForDisplay(PlayerInfo arg0)",
+			"fabric": "getPlayerName(PlayerListEntry entry)"
+		},
+		{
+			"forge": "decorateName(PlayerInfo arg0, MutableComponent arg1)",
+			"fabric": "applyGameModeFormatting(PlayerListEntry entry, MutableText name)"
+		},
+		{
+			"forge": "setVisible(boolean arg0)",
+			"fabric": "setVisible(boolean visible)"
+		},
+		{
+			"forge": "getPlayerInfos()",
+			"fabric": "collectPlayerEntries()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, Scoreboard arg2, Objective arg3)",
+			"fabric": "render(DrawContext context, int scaledWindowWidth, Scoreboard scoreboard, ScoreboardObjective objective)"
+		},
+		{
+			"forge": "renderPingIcon(GuiGraphics arg0, int arg1, int arg2, int arg3, PlayerInfo arg4)",
+			"fabric": "renderLatencyIcon(DrawContext context, int width, int x, int y, PlayerListEntry entry)"
+		},
+		{
+			"forge": "renderTablistScore(Objective arg0, int arg1, String arg2, int arg3, int arg4, UUID arg5, GuiGraphics arg6)",
+			"fabric": "renderScoreboardObjective(ScoreboardObjective objective, int y, String player, int left, int right, UUID uuid, DrawContext context)"
+		},
+		{
+			"forge": "renderTablistHearts(int arg0, int arg1, int arg2, UUID arg3, GuiGraphics arg4, int arg5)",
+			"fabric": "renderHearts(int y, int left, int right, UUID uuid, DrawContext context, int score)"
+		},
+		{
+			"forge": "setFooter(Component arg0)",
+			"fabric": "setFooter(Text footer)"
+		},
+		{
+			"forge": "setHeader(Component arg0)",
+			"fabric": "setHeader(Text header)"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "clear()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.model.EntityModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.EntityModel",
+			"fabric": "net.minecraft.client.render.entity.model.EntityModel"
+		},
+		{
+			"forge": "attackTime",
+			"fabric": "handSwingProgress"
+		},
+		{
+			"forge": "attackTime",
+			"fabric": "handSwingProgress"
+		},
+		{
+			"forge": "riding",
+			"fabric": "riding"
+		},
+		{
+			"forge": "young",
+			"fabric": "child"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch)"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch)"
+		},
+		{
+			"forge": "prepareMobModel(T arg0, float arg1, float arg2, float arg3)",
+			"fabric": "animateModel(T entity, float limbAngle, float limbDistance, float tickDelta)"
+		},
+		{
+			"forge": "copyPropertiesTo(EntityModel<T> arg0)",
+			"fabric": "copyStateTo(EntityModel<T> copy)"
+		}
+	]
+}

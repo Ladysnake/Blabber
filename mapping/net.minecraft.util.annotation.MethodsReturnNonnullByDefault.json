@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.MethodsReturnNonnullByDefault",
+	"items": [
+		{
+			"forge": "net.minecraft.MethodsReturnNonnullByDefault",
+			"fabric": "net.minecraft.util.annotation.MethodsReturnNonnullByDefault"
+		}
+	]
+}

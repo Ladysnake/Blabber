@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition",
+			"fabric": "net.minecraft.loot.condition.InvertedLootCondition"
+		},
+		{
+			"forge": "term",
+			"fabric": "term"
+		},
+		{
+			"forge": "term",
+			"fabric": "term"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "test(LootContext arg0)",
+			"fabric": "test(LootContext arg0)"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "validate(ValidationContext arg0)",
+			"fabric": "validate(LootTableReporter arg0)"
+		},
+		{
+			"forge": "invert(LootItemCondition$Builder arg0)",
+			"fabric": "builder(LootCondition$Builder term)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.ChatReportBuilder$ChatReport",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.ChatReportBuilder$ChatReport",
+			"fabric": "net.minecraft.client.report.ChatAbuseReport$Draft"
+		},
+		{
+			"forge": "reportId",
+			"fabric": "reportId"
+		},
+		{
+			"forge": "reportId",
+			"fabric": "reportId"
+		},
+		{
+			"forge": "createdAt",
+			"fabric": "currentTime"
+		},
+		{
+			"forge": "reportedProfileId",
+			"fabric": "reportedPlayerUuid"
+		},
+		{
+			"forge": "reportedMessages",
+			"fabric": "selections"
+		},
+		{
+			"forge": "comments",
+			"fabric": "opinionComments"
+		},
+		{
+			"forge": "reason",
+			"fabric": "reason"
+		},
+		{
+			"forge": "toggleReported(int arg0, com.mojang.authlib.minecraft.report.AbuseReportLimits arg1)",
+			"fabric": "toggleMessageSelection(int index, com.mojang.authlib.minecraft.report.AbuseReportLimits limits)"
+		},
+		{
+			"forge": "toggleReported(int arg0, com.mojang.authlib.minecraft.report.AbuseReportLimits arg1)",
+			"fabric": "toggleMessageSelection(int index, com.mojang.authlib.minecraft.report.AbuseReportLimits limits)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "isReportedPlayer(UUID arg0)",
+			"fabric": "playerUuidEquals(UUID uuid)"
+		}
+	]
+}

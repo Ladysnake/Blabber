@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$NoiseThresholdConditionSource$1NoiseThresholdCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$NoiseThresholdConditionSource$1NoiseThresholdCondition",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$NoiseThresholdMaterialCondition$NoiseThresholdPredicate"
+		},
+		{
+			"forge": "compute()",
+			"fabric": "test()"
+		},
+		{
+			"forge": "compute()",
+			"fabric": "test()"
+		}
+	]
+}

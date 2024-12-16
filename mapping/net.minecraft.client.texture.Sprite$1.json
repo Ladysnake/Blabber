@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.texture.TextureAtlasSprite$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.TextureAtlasSprite$1",
+			"fabric": "net.minecraft.client.texture.Sprite$1"
+		},
+		{
+			"forge": "tickAndUpload()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tickAndUpload()",
+			"fabric": "tick()"
+		}
+	]
+}

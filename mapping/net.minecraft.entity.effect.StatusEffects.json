@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.world.effect.MobEffects",
+	"items": [
+		{
+			"forge": "net.minecraft.world.effect.MobEffects",
+			"fabric": "net.minecraft.entity.effect.StatusEffects"
+		},
+		{
+			"forge": "DARKNESS_EFFECT_FACTOR_PADDING_DURATION_TICKS",
+			"fabric": "DARKNESS_PADDING_DURATION"
+		},
+		{
+			"forge": "DARKNESS_EFFECT_FACTOR_PADDING_DURATION_TICKS",
+			"fabric": "DARKNESS_PADDING_DURATION"
+		},
+		{
+			"forge": "MOVEMENT_SPEED",
+			"fabric": "SPEED"
+		},
+		{
+			"forge": "MOVEMENT_SLOWDOWN",
+			"fabric": "SLOWNESS"
+		},
+		{
+			"forge": "DIG_SPEED",
+			"fabric": "HASTE"
+		},
+		{
+			"forge": "DIG_SLOWDOWN",
+			"fabric": "MINING_FATIGUE"
+		},
+		{
+			"forge": "DAMAGE_BOOST",
+			"fabric": "STRENGTH"
+		},
+		{
+			"forge": "HEAL",
+			"fabric": "INSTANT_HEALTH"
+		},
+		{
+			"forge": "HARM",
+			"fabric": "INSTANT_DAMAGE"
+		},
+		{
+			"forge": "JUMP",
+			"fabric": "JUMP_BOOST"
+		},
+		{
+			"forge": "CONFUSION",
+			"fabric": "NAUSEA"
+		},
+		{
+			"forge": "REGENERATION",
+			"fabric": "REGENERATION"
+		},
+		{
+			"forge": "DAMAGE_RESISTANCE",
+			"fabric": "RESISTANCE"
+		},
+		{
+			"forge": "FIRE_RESISTANCE",
+			"fabric": "FIRE_RESISTANCE"
+		},
+		{
+			"forge": "WATER_BREATHING",
+			"fabric": "WATER_BREATHING"
+		},
+		{
+			"forge": "INVISIBILITY",
+			"fabric": "INVISIBILITY"
+		},
+		{
+			"forge": "BLINDNESS",
+			"fabric": "BLINDNESS"
+		},
+		{
+			"forge": "NIGHT_VISION",
+			"fabric": "NIGHT_VISION"
+		},
+		{
+			"forge": "HUNGER",
+			"fabric": "HUNGER"
+		},
+		{
+			"forge": "WEAKNESS",
+			"fabric": "WEAKNESS"
+		},
+		{
+			"forge": "POISON",
+			"fabric": "POISON"
+		},
+		{
+			"forge": "WITHER",
+			"fabric": "WITHER"
+		},
+		{
+			"forge": "HEALTH_BOOST",
+			"fabric": "HEALTH_BOOST"
+		},
+		{
+			"forge": "ABSORPTION",
+			"fabric": "ABSORPTION"
+		},
+		{
+			"forge": "SATURATION",
+			"fabric": "SATURATION"
+		},
+		{
+			"forge": "GLOWING",
+			"fabric": "GLOWING"
+		},
+		{
+			"forge": "LEVITATION",
+			"fabric": "LEVITATION"
+		},
+		{
+			"forge": "LUCK",
+			"fabric": "LUCK"
+		},
+		{
+			"forge": "UNLUCK",
+			"fabric": "UNLUCK"
+		},
+		{
+			"forge": "SLOW_FALLING",
+			"fabric": "SLOW_FALLING"
+		},
+		{
+			"forge": "CONDUIT_POWER",
+			"fabric": "CONDUIT_POWER"
+		},
+		{
+			"forge": "DOLPHINS_GRACE",
+			"fabric": "DOLPHINS_GRACE"
+		},
+		{
+			"forge": "BAD_OMEN",
+			"fabric": "BAD_OMEN"
+		},
+		{
+			"forge": "HERO_OF_THE_VILLAGE",
+			"fabric": "HERO_OF_THE_VILLAGE"
+		},
+		{
+			"forge": "DARKNESS",
+			"fabric": "DARKNESS"
+		},
+		{
+			"forge": "register(int arg0, String arg1, MobEffect arg2)",
+			"fabric": "register(int rawId, String id, StatusEffect entry)"
+		},
+		{
+			"forge": "register(int arg0, String arg1, MobEffect arg2)",
+			"fabric": "register(int rawId, String id, StatusEffect entry)"
+		}
+	]
+}

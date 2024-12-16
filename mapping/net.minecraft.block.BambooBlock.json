@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.level.block.BambooStalkBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BambooStalkBlock",
+			"fabric": "net.minecraft.block.BambooBlock"
+		},
+		{
+			"forge": "SMALL_LEAVES_AABB_OFFSET",
+			"fabric": "field_30997"
+		},
+		{
+			"forge": "SMALL_LEAVES_AABB_OFFSET",
+			"fabric": "field_30997"
+		},
+		{
+			"forge": "LARGE_LEAVES_AABB_OFFSET",
+			"fabric": "field_30998"
+		},
+		{
+			"forge": "COLLISION_AABB_OFFSET",
+			"fabric": "field_30999"
+		},
+		{
+			"forge": "SMALL_SHAPE",
+			"fabric": "SMALL_LEAVES_SHAPE"
+		},
+		{
+			"forge": "LARGE_SHAPE",
+			"fabric": "LARGE_LEAVES_SHAPE"
+		},
+		{
+			"forge": "COLLISION_SHAPE",
+			"fabric": "NO_LEAVES_SHAPE"
+		},
+		{
+			"forge": "AGE",
+			"fabric": "AGE"
+		},
+		{
+			"forge": "LEAVES",
+			"fabric": "LEAVES"
+		},
+		{
+			"forge": "STAGE",
+			"fabric": "STAGE"
+		},
+		{
+			"forge": "MAX_HEIGHT",
+			"fabric": "field_31000"
+		},
+		{
+			"forge": "STAGE_GROWING",
+			"fabric": "field_31001"
+		},
+		{
+			"forge": "STAGE_DONE_GROWING",
+			"fabric": "field_31002"
+		},
+		{
+			"forge": "AGE_THIN_BAMBOO",
+			"fabric": "field_31003"
+		},
+		{
+			"forge": "AGE_THICK_BAMBOO",
+			"fabric": "field_31004"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "propagatesSkylightDown(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "isTransparent(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "isCollisionShapeFullBlock(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "isShapeFullCube(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "isRandomlyTicking(BlockState arg0)",
+			"fabric": "hasRandomTicks(BlockState arg0)"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "getDestroyProgress(BlockState arg0, Player arg1, BlockGetter arg2, BlockPos arg3)",
+			"fabric": "calcBlockBreakingDelta(BlockState arg0, PlayerEntity arg1, BlockView arg2, BlockPos arg3)"
+		},
+		{
+			"forge": "growBamboo(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3, int arg4)",
+			"fabric": "updateLeaves(BlockState state, World world, BlockPos pos, Random random, int height)"
+		},
+		{
+			"forge": "getHeightAboveUpToMax(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "countBambooAbove(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getHeightBelowUpToMax(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "countBambooBelow(BlockView world, BlockPos pos)"
+		}
+	]
+}

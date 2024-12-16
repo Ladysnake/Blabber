@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement",
+			"fabric": "net.minecraft.structure.pool.StructurePoolBasedGenerator"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "addPieces(Structure$GenerationContext arg0, Holder<StructureTemplatePool> arg1, Optional<ResourceLocation> arg2, int arg3, BlockPos arg4, boolean arg5, Optional<Heightmap$Types> arg6, int arg7)",
+			"fabric": "generate(Structure$Context context, RegistryEntry<StructurePool> structurePool, Optional<Identifier> id, int size, BlockPos pos, boolean useExpansionHack, Optional<Heightmap$Type> projectStartToHeightmap, int maxDistanceFromCenter)"
+		},
+		{
+			"forge": "addPieces(Structure$GenerationContext arg0, Holder<StructureTemplatePool> arg1, Optional<ResourceLocation> arg2, int arg3, BlockPos arg4, boolean arg5, Optional<Heightmap$Types> arg6, int arg7)",
+			"fabric": "generate(Structure$Context context, RegistryEntry<StructurePool> structurePool, Optional<Identifier> id, int size, BlockPos pos, boolean useExpansionHack, Optional<Heightmap$Type> projectStartToHeightmap, int maxDistanceFromCenter)"
+		},
+		{
+			"forge": "getRandomNamedJigsaw(StructurePoolElement arg0, ResourceLocation arg1, BlockPos arg2, Rotation arg3, StructureTemplateManager arg4, WorldgenRandom arg5)",
+			"fabric": "findStartingJigsawPos(StructurePoolElement pool, Identifier id, BlockPos pos, BlockRotation rotation, StructureTemplateManager structureManager, ChunkRandom random)"
+		},
+		{
+			"forge": "addPieces(RandomState arg0, int arg1, boolean arg2, ChunkGenerator arg3, StructureTemplateManager arg4, LevelHeightAccessor arg5, RandomSource arg6, Registry<StructureTemplatePool> arg7, PoolElementStructurePiece arg8, List<PoolElementStructurePiece> arg9, VoxelShape arg10)",
+			"fabric": "generate(NoiseConfig noiseConfig, int maxSize, boolean modifyBoundingBox, ChunkGenerator chunkGenerator, StructureTemplateManager structureTemplateManager, HeightLimitView heightLimitView, Random random, Registry<StructurePool> structurePoolRegistry, PoolStructurePiece firstPiece, List<PoolStructurePiece> pieces, VoxelShape pieceShape)"
+		},
+		{
+			"forge": "generateJigsaw(ServerLevel arg0, Holder<StructureTemplatePool> arg1, ResourceLocation arg2, int arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "generate(ServerWorld world, RegistryEntry<StructurePool> structurePool, Identifier id, int size, BlockPos pos, boolean keepJigsaws)"
+		}
+	]
+}

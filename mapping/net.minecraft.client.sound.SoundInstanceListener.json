@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.sounds.SoundEventListener",
+	"items": [
+		{
+			"forge": "net.minecraft.client.sounds.SoundEventListener",
+			"fabric": "net.minecraft.client.sound.SoundInstanceListener"
+		},
+		{
+			"forge": "onPlaySound(SoundInstance arg0, WeighedSoundEvents arg1)",
+			"fabric": "onSoundPlayed(SoundInstance sound, WeightedSoundSet soundSet)"
+		},
+		{
+			"forge": "onPlaySound(SoundInstance arg0, WeighedSoundEvents arg1)",
+			"fabric": "onSoundPlayed(SoundInstance sound, WeightedSoundSet soundSet)"
+		}
+	]
+}

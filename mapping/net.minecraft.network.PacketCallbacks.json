@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.network.PacketSendListener",
+	"items": [
+		{
+			"forge": "net.minecraft.network.PacketSendListener",
+			"fabric": "net.minecraft.network.PacketCallbacks"
+		},
+		{
+			"forge": "thenRun(Runnable arg0)",
+			"fabric": "always(Runnable runnable)"
+		},
+		{
+			"forge": "thenRun(Runnable arg0)",
+			"fabric": "always(Runnable runnable)"
+		},
+		{
+			"forge": "exceptionallySend(Supplier<Packet<?>> arg0)",
+			"fabric": "of(Supplier<Packet<?>> failurePacket)"
+		},
+		{
+			"forge": "onSuccess()",
+			"fabric": "onSuccess()"
+		},
+		{
+			"forge": "onFailure()",
+			"fabric": "getFailurePacket()"
+		}
+	]
+}

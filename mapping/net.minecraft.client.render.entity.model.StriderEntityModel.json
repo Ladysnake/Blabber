@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.client.model.StriderModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.StriderModel",
+			"fabric": "net.minecraft.client.render.entity.model.StriderEntityModel"
+		},
+		{
+			"forge": "RIGHT_BOTTOM_BRISTLE",
+			"fabric": "RIGHT_BOTTOM_BRISTLE"
+		},
+		{
+			"forge": "RIGHT_BOTTOM_BRISTLE",
+			"fabric": "RIGHT_BOTTOM_BRISTLE"
+		},
+		{
+			"forge": "RIGHT_MIDDLE_BRISTLE",
+			"fabric": "RIGHT_MIDDLE_BRISTLE"
+		},
+		{
+			"forge": "RIGHT_TOP_BRISTLE",
+			"fabric": "RIGHT_TOP_BRISTLE"
+		},
+		{
+			"forge": "LEFT_TOP_BRISTLE",
+			"fabric": "LEFT_TOP_BRISTLE"
+		},
+		{
+			"forge": "LEFT_MIDDLE_BRISTLE",
+			"fabric": "LEFT_MIDDLE_BRISTLE"
+		},
+		{
+			"forge": "LEFT_BOTTOM_BRISTLE",
+			"fabric": "LEFT_BOTTOM_BRISTLE"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "rightLeg",
+			"fabric": "rightLeg"
+		},
+		{
+			"forge": "leftLeg",
+			"fabric": "leftLeg"
+		},
+		{
+			"forge": "body",
+			"fabric": "body"
+		},
+		{
+			"forge": "rightBottomBristle",
+			"fabric": "rightBottomBristle"
+		},
+		{
+			"forge": "rightMiddleBristle",
+			"fabric": "rightMiddleBristle"
+		},
+		{
+			"forge": "rightTopBristle",
+			"fabric": "rightTopBristle"
+		},
+		{
+			"forge": "leftTopBristle",
+			"fabric": "leftTopBristle"
+		},
+		{
+			"forge": "leftMiddleBristle",
+			"fabric": "leftMiddleBristle"
+		},
+		{
+			"forge": "leftBottomBristle",
+			"fabric": "leftBottomBristle"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "setupAnim(Strider arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(StriderEntity arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Heightmap$Types",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Heightmap$Types",
+			"fabric": "net.minecraft.world.Heightmap$Type"
+		},
+		{
+			"forge": "WORLD_SURFACE_WG",
+			"fabric": "WORLD_SURFACE_WG"
+		},
+		{
+			"forge": "WORLD_SURFACE_WG",
+			"fabric": "WORLD_SURFACE_WG"
+		},
+		{
+			"forge": "WORLD_SURFACE",
+			"fabric": "WORLD_SURFACE"
+		},
+		{
+			"forge": "OCEAN_FLOOR_WG",
+			"fabric": "OCEAN_FLOOR_WG"
+		},
+		{
+			"forge": "OCEAN_FLOOR",
+			"fabric": "OCEAN_FLOOR"
+		},
+		{
+			"forge": "MOTION_BLOCKING",
+			"fabric": "MOTION_BLOCKING"
+		},
+		{
+			"forge": "MOTION_BLOCKING_NO_LEAVES",
+			"fabric": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "serializationKey",
+			"fabric": "name"
+		},
+		{
+			"forge": "usage",
+			"fabric": "purpose"
+		},
+		{
+			"forge": "isOpaque",
+			"fabric": "blockPredicate"
+		},
+		{
+			"forge": "getSerializationKey()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getSerializationKey()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "sendToClient()",
+			"fabric": "shouldSendToClient()"
+		},
+		{
+			"forge": "keepAfterWorldgen()",
+			"fabric": "isStoredServerSide()"
+		},
+		{
+			"forge": "isOpaque()",
+			"fabric": "getBlockPredicate()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

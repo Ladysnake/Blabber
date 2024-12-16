@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.chunk.ChunkStatus$ChunkType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.ChunkStatus$ChunkType",
+			"fabric": "net.minecraft.world.chunk.ChunkStatus$ChunkType"
+		},
+		{
+			"forge": "PROTOCHUNK",
+			"fabric": "PROTOCHUNK"
+		},
+		{
+			"forge": "PROTOCHUNK",
+			"fabric": "PROTOCHUNK"
+		},
+		{
+			"forge": "LEVELCHUNK",
+			"fabric": "LEVELCHUNK"
+		}
+	]
+}

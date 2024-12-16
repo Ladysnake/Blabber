@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.chunk.ChunkStatus$SimpleGenerationTask",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.ChunkStatus$SimpleGenerationTask",
+			"fabric": "net.minecraft.world.chunk.ChunkStatus$SimpleGenerationTask"
+		},
+		{
+			"forge": "doWork(ChunkStatus arg0, Executor arg1, ServerLevel arg2, ChunkGenerator arg3, StructureTemplateManager arg4, ThreadedLevelLightEngine arg5, Function<ChunkAccess, CompletableFuture<com.mojang.datafixers.util.Either<ChunkAccess, ChunkHolder$ChunkLoadingFailure>>> arg6, List<ChunkAccess> arg7, ChunkAccess arg8)",
+			"fabric": "doWork(ChunkStatus arg0, Executor arg1, ServerWorld arg2, ChunkGenerator arg3, StructureTemplateManager arg4, ServerLightingProvider arg5, Function<Chunk, CompletableFuture<com.mojang.datafixers.util.Either<Chunk, ChunkHolder$Unloaded>>> arg6, List<Chunk> arg7, Chunk arg8)"
+		},
+		{
+			"forge": "doWork(ChunkStatus arg0, Executor arg1, ServerLevel arg2, ChunkGenerator arg3, StructureTemplateManager arg4, ThreadedLevelLightEngine arg5, Function<ChunkAccess, CompletableFuture<com.mojang.datafixers.util.Either<ChunkAccess, ChunkHolder$ChunkLoadingFailure>>> arg6, List<ChunkAccess> arg7, ChunkAccess arg8)",
+			"fabric": "doWork(ChunkStatus arg0, Executor arg1, ServerWorld arg2, ChunkGenerator arg3, StructureTemplateManager arg4, ServerLightingProvider arg5, Function<Chunk, CompletableFuture<com.mojang.datafixers.util.Either<Chunk, ChunkHolder$Unloaded>>> arg6, List<Chunk> arg7, Chunk arg8)"
+		},
+		{
+			"forge": "doWork(ChunkStatus arg0, ServerLevel arg1, ChunkGenerator arg2, List<ChunkAccess> arg3, ChunkAccess arg4)",
+			"fabric": "doWork(ChunkStatus targetStatus, ServerWorld world, ChunkGenerator chunkGenerator, List<Chunk> chunks, Chunk chunk)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsDownloadLatestWorldScreen$DownloadStatus",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsDownloadLatestWorldScreen$DownloadStatus",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsDownloadLatestWorldScreen$DownloadStatus"
+		},
+		{
+			"forge": "bytesWritten",
+			"fabric": "bytesWritten"
+		},
+		{
+			"forge": "bytesWritten",
+			"fabric": "bytesWritten"
+		},
+		{
+			"forge": "totalBytes",
+			"fabric": "totalBytes"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.components.CycleButton$ValueListSupplier$2",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.CycleButton$ValueListSupplier$2",
+			"fabric": "net.minecraft.client.gui.widget.CyclingButtonWidget$Values$2"
+		},
+		{
+			"forge": "getSelectedList()",
+			"fabric": "getCurrent()"
+		},
+		{
+			"forge": "getSelectedList()",
+			"fabric": "getCurrent()"
+		},
+		{
+			"forge": "getDefaultList()",
+			"fabric": "getDefaults()"
+		}
+	]
+}

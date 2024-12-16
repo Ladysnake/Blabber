@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.core.particles.DustColorTransitionOptions$1",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.DustColorTransitionOptions$1",
+			"fabric": "net.minecraft.particle.DustColorTransitionParticleEffect$1"
+		},
+		{
+			"forge": "fromCommand(ParticleType<DustColorTransitionOptions> arg0, com.mojang.brigadier.StringReader arg1)",
+			"fabric": "read(ParticleType<DustColorTransitionParticleEffect> arg0, com.mojang.brigadier.StringReader arg1)"
+		},
+		{
+			"forge": "fromCommand(ParticleType<DustColorTransitionOptions> arg0, com.mojang.brigadier.StringReader arg1)",
+			"fabric": "read(ParticleType<DustColorTransitionParticleEffect> arg0, com.mojang.brigadier.StringReader arg1)"
+		},
+		{
+			"forge": "fromNetwork(ParticleType<DustColorTransitionOptions> arg0, FriendlyByteBuf arg1)",
+			"fabric": "read(ParticleType<DustColorTransitionParticleEffect> arg0, PacketByteBuf arg1)"
+		}
+	]
+}

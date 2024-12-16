@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.util.profiling.InactiveProfiler",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.InactiveProfiler",
+			"fabric": "net.minecraft.util.profiler.DummyProfiler"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "startTick()",
+			"fabric": "startTick()"
+		},
+		{
+			"forge": "startTick()",
+			"fabric": "startTick()"
+		},
+		{
+			"forge": "endTick()",
+			"fabric": "endTick()"
+		},
+		{
+			"forge": "push(String arg0)",
+			"fabric": "push(String arg0)"
+		},
+		{
+			"forge": "push(Supplier<String> arg0)",
+			"fabric": "push(Supplier<String> arg0)"
+		},
+		{
+			"forge": "markForCharting(MetricCategory arg0)",
+			"fabric": "markSampleType(SampleType arg0)"
+		},
+		{
+			"forge": "pop()",
+			"fabric": "pop()"
+		},
+		{
+			"forge": "popPush(String arg0)",
+			"fabric": "swap(String arg0)"
+		},
+		{
+			"forge": "popPush(Supplier<String> arg0)",
+			"fabric": "swap(Supplier<String> arg0)"
+		},
+		{
+			"forge": "incrementCounter(String arg0, int arg1)",
+			"fabric": "visit(String arg0, int arg1)"
+		},
+		{
+			"forge": "incrementCounter(Supplier<String> arg0, int arg1)",
+			"fabric": "visit(Supplier<String> arg0, int arg1)"
+		},
+		{
+			"forge": "getResults()",
+			"fabric": "getResult()"
+		},
+		{
+			"forge": "getEntry(String arg0)",
+			"fabric": "getInfo(String arg0)"
+		},
+		{
+			"forge": "getChartedPaths()",
+			"fabric": "getSampleTargets()"
+		}
+	]
+}

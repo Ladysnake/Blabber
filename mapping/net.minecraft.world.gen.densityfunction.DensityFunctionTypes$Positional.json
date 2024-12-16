@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$TransformerWithContext",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$Positional"
+		},
+		{
+			"forge": "input()",
+			"fabric": "input()"
+		},
+		{
+			"forge": "input()",
+			"fabric": "input()"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "fillArray(double[] arg0, DensityFunction$ContextProvider arg1)",
+			"fabric": "fill(double[] arg0, DensityFunction$EachApplier arg1)"
+		},
+		{
+			"forge": "transform(DensityFunction$FunctionContext arg0, double arg1)",
+			"fabric": "apply(DensityFunction$NoisePos pos, double density)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.ZombieAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.ZombieAttackGoal",
+			"fabric": "net.minecraft.entity.ai.goal.ZombieAttackGoal"
+		},
+		{
+			"forge": "zombie",
+			"fabric": "zombie"
+		},
+		{
+			"forge": "zombie",
+			"fabric": "zombie"
+		},
+		{
+			"forge": "raiseArmTicks",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

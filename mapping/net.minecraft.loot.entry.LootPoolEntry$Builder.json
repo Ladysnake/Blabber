@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Builder",
+			"fabric": "net.minecraft.loot.entry.LootPoolEntry$Builder"
+		},
+		{
+			"forge": "conditions",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "conditions",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "when(LootItemCondition$Builder arg0)",
+			"fabric": "conditionally(LootCondition$Builder arg0)"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getThisConditionConsumingBuilder()"
+		},
+		{
+			"forge": "getConditions()",
+			"fabric": "getConditions()"
+		},
+		{
+			"forge": "otherwise(LootPoolEntryContainer$Builder<?> arg0)",
+			"fabric": "alternatively(LootPoolEntry$Builder<?> builder)"
+		},
+		{
+			"forge": "append(LootPoolEntryContainer$Builder<?> arg0)",
+			"fabric": "sequenceEntry(LootPoolEntry$Builder<?> entry)"
+		},
+		{
+			"forge": "then(LootPoolEntryContainer$Builder<?> arg0)",
+			"fabric": "groupEntry(LootPoolEntry$Builder<?> entry)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

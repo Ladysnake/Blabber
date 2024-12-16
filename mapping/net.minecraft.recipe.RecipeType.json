@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.item.crafting.RecipeType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.RecipeType",
+			"fabric": "net.minecraft.recipe.RecipeType"
+		},
+		{
+			"forge": "CRAFTING",
+			"fabric": "CRAFTING"
+		},
+		{
+			"forge": "CRAFTING",
+			"fabric": "CRAFTING"
+		},
+		{
+			"forge": "SMELTING",
+			"fabric": "SMELTING"
+		},
+		{
+			"forge": "BLASTING",
+			"fabric": "BLASTING"
+		},
+		{
+			"forge": "SMOKING",
+			"fabric": "SMOKING"
+		},
+		{
+			"forge": "CAMPFIRE_COOKING",
+			"fabric": "CAMPFIRE_COOKING"
+		},
+		{
+			"forge": "STONECUTTING",
+			"fabric": "STONECUTTING"
+		},
+		{
+			"forge": "SMITHING",
+			"fabric": "SMITHING"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "register(String id)"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "register(String id)"
+		}
+	]
+}

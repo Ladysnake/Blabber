@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.inventory.ContainerData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ContainerData",
+			"fabric": "net.minecraft.screen.PropertyDelegate"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int index)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int index)"
+		},
+		{
+			"forge": "set(int arg0, int arg1)",
+			"fabric": "set(int index, int value)"
+		},
+		{
+			"forge": "getCount()",
+			"fabric": "size()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.Block$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.Block$1",
+			"fabric": "net.minecraft.block.Block$1"
+		},
+		{
+			"forge": "load(VoxelShape arg0)",
+			"fabric": "load(VoxelShape arg0)"
+		},
+		{
+			"forge": "load(VoxelShape arg0)",
+			"fabric": "load(VoxelShape arg0)"
+		}
+	]
+}

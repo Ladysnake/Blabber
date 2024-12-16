@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.main.GameConfig",
+	"items": [
+		{
+			"forge": "net.minecraft.client.main.GameConfig",
+			"fabric": "net.minecraft.client.RunArgs"
+		},
+		{
+			"forge": "user",
+			"fabric": "network"
+		},
+		{
+			"forge": "user",
+			"fabric": "network"
+		},
+		{
+			"forge": "display",
+			"fabric": "windowSettings"
+		},
+		{
+			"forge": "location",
+			"fabric": "directories"
+		},
+		{
+			"forge": "game",
+			"fabric": "game"
+		},
+		{
+			"forge": "quickPlay",
+			"fabric": "quickPlay"
+		}
+	]
+}

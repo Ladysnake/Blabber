@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.OneShot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.OneShot",
+			"fabric": "net.minecraft.entity.ai.brain.task.SingleTickTask"
+		},
+		{
+			"forge": "status",
+			"fabric": "status"
+		},
+		{
+			"forge": "status",
+			"fabric": "status"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "getStatus()"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "getStatus()"
+		},
+		{
+			"forge": "tryStart(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "tryStarting(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "tickOrStop(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "tick(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "doStop(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "stop(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "debugString()",
+			"fabric": "getName()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.CelebrateVillagersSurvivedRaid",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.CelebrateVillagersSurvivedRaid",
+			"fabric": "net.minecraft.entity.ai.brain.task.CelebrateRaidWinTask"
+		},
+		{
+			"forge": "currentRaid",
+			"fabric": "raid"
+		},
+		{
+			"forge": "currentRaid",
+			"fabric": "raid"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "getFirework(DyeColor arg0, int arg1)",
+			"fabric": "createFirework(DyeColor color, int flight)"
+		}
+	]
+}

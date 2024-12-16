@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.entity.raid.Raids",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.raid.Raids",
+			"fabric": "net.minecraft.village.raid.RaidManager"
+		},
+		{
+			"forge": "RAID_FILE_ID",
+			"fabric": "RAIDS"
+		},
+		{
+			"forge": "RAID_FILE_ID",
+			"fabric": "RAIDS"
+		},
+		{
+			"forge": "raidMap",
+			"fabric": "raids"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "nextAvailableID",
+			"fabric": "nextAvailableId"
+		},
+		{
+			"forge": "tick",
+			"fabric": "currentTime"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "getRaid(int id)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "getRaid(int id)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "canJoinRaid(Raider arg0, Raid arg1)",
+			"fabric": "isValidRaiderFor(RaiderEntity raider, Raid raid)"
+		},
+		{
+			"forge": "createOrExtendRaid(ServerPlayer arg0)",
+			"fabric": "startRaid(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "getOrCreateRaid(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "getOrCreateRaid(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "load(ServerLevel arg0, CompoundTag arg1)",
+			"fabric": "fromNbt(ServerWorld world, NbtCompound nbt)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getFileId(Holder<DimensionType> arg0)",
+			"fabric": "nameFor(RegistryEntry<DimensionType> dimensionTypeEntry)"
+		},
+		{
+			"forge": "getUniqueId()",
+			"fabric": "nextId()"
+		},
+		{
+			"forge": "getNearbyRaid(BlockPos arg0, int arg1)",
+			"fabric": "getRaidAt(BlockPos pos, int searchDistance)"
+		}
+	]
+}

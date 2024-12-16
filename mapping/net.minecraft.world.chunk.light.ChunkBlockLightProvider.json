@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.lighting.BlockLightEngine",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.BlockLightEngine",
+			"fabric": "net.minecraft.world.chunk.light.ChunkBlockLightProvider"
+		},
+		{
+			"forge": "mutablePos",
+			"fabric": "mutablePos"
+		},
+		{
+			"forge": "mutablePos",
+			"fabric": "mutablePos"
+		},
+		{
+			"forge": "checkNode(long arg0)",
+			"fabric": "method_51529(long arg0)"
+		},
+		{
+			"forge": "checkNode(long arg0)",
+			"fabric": "method_51529(long arg0)"
+		},
+		{
+			"forge": "propagateIncrease(long arg0, long arg1, int arg2)",
+			"fabric": "method_51531(long arg0, long arg1, int arg2)"
+		},
+		{
+			"forge": "propagateDecrease(long arg0, long arg1)",
+			"fabric": "method_51530(long arg0, long arg1)"
+		},
+		{
+			"forge": "getEmission(long arg0, BlockState arg1)",
+			"fabric": "getLightSourceLuminance(long blockPos, BlockState blockState)"
+		},
+		{
+			"forge": "propagateLightSources(ChunkPos arg0)",
+			"fabric": "propagateLight(ChunkPos arg0)"
+		}
+	]
+}

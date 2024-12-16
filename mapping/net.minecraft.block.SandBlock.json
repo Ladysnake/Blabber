@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.SandBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SandBlock",
+			"fabric": "net.minecraft.block.SandBlock"
+		},
+		{
+			"forge": "dustColor",
+			"fabric": "color"
+		},
+		{
+			"forge": "dustColor",
+			"fabric": "color"
+		},
+		{
+			"forge": "getDustColor(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getColor(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getDustColor(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getColor(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		}
+	]
+}

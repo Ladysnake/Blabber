@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundPlayerChatPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundPlayerChatPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.ChatMessageS2CPacket"
+		},
+		{
+			"forge": "sender",
+			"fabric": "sender"
+		},
+		{
+			"forge": "sender",
+			"fabric": "sender"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "signature",
+			"fabric": "signature"
+		},
+		{
+			"forge": "body",
+			"fabric": "body"
+		},
+		{
+			"forge": "unsignedContent",
+			"fabric": "unsignedContent"
+		},
+		{
+			"forge": "filterMask",
+			"fabric": "filterMask"
+		},
+		{
+			"forge": "chatType",
+			"fabric": "serializedParameters"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "isSkippable()",
+			"fabric": "isWritingErrorSkippable()"
+		},
+		{
+			"forge": "sender()",
+			"fabric": "sender()"
+		},
+		{
+			"forge": "index()",
+			"fabric": "index()"
+		},
+		{
+			"forge": "signature()",
+			"fabric": "signature()"
+		},
+		{
+			"forge": "body()",
+			"fabric": "body()"
+		},
+		{
+			"forge": "unsignedContent()",
+			"fabric": "unsignedContent()"
+		},
+		{
+			"forge": "filterMask()",
+			"fabric": "filterMask()"
+		},
+		{
+			"forge": "chatType()",
+			"fabric": "serializedParameters()"
+		}
+	]
+}

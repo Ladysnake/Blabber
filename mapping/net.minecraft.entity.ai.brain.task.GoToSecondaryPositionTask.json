@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.StrollToPoiList",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.StrollToPoiList",
+			"fabric": "net.minecraft.entity.ai.brain.task.GoToSecondaryPositionTask"
+		},
+		{
+			"forge": "create(MemoryModuleType<List<GlobalPos>> arg0, float arg1, int arg2, int arg3, MemoryModuleType<GlobalPos> arg4)",
+			"fabric": "create(MemoryModuleType<List<GlobalPos>> secondaryPositions, float speed, int completionRange, int primaryPositionActivationDistance, MemoryModuleType<GlobalPos> primaryPosition)"
+		},
+		{
+			"forge": "create(MemoryModuleType<List<GlobalPos>> arg0, float arg1, int arg2, int arg3, MemoryModuleType<GlobalPos> arg4)",
+			"fabric": "create(MemoryModuleType<List<GlobalPos>> secondaryPositions, float speed, int completionRange, int primaryPositionActivationDistance, MemoryModuleType<GlobalPos> primaryPosition)"
+		}
+	]
+}

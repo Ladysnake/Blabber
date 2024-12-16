@@ -1,0 +1,145 @@
+{
+	"title": "net.minecraft.client.renderer.entity.ItemRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.ItemRenderer",
+			"fabric": "net.minecraft.client.render.item.ItemRenderer"
+		},
+		{
+			"forge": "ENCHANTED_GLINT_ENTITY",
+			"fabric": "ENTITY_ENCHANTMENT_GLINT"
+		},
+		{
+			"forge": "ENCHANTED_GLINT_ENTITY",
+			"fabric": "ENTITY_ENCHANTMENT_GLINT"
+		},
+		{
+			"forge": "ENCHANTED_GLINT_ITEM",
+			"fabric": "ITEM_ENCHANTMENT_GLINT"
+		},
+		{
+			"forge": "IGNORED",
+			"fabric": "WITHOUT_MODELS"
+		},
+		{
+			"forge": "GUI_SLOT_CENTER_X",
+			"fabric": "field_32937"
+		},
+		{
+			"forge": "GUI_SLOT_CENTER_Y",
+			"fabric": "field_32938"
+		},
+		{
+			"forge": "ITEM_COUNT_BLIT_OFFSET",
+			"fabric": "field_32934"
+		},
+		{
+			"forge": "COMPASS_FOIL_UI_SCALE",
+			"fabric": "COMPASS_WITH_GLINT_GUI_MODEL_MULTIPLIER"
+		},
+		{
+			"forge": "COMPASS_FOIL_FIRST_PERSON_SCALE",
+			"fabric": "COMPASS_WITH_GLINT_FIRST_PERSON_MODEL_MULTIPLIER"
+		},
+		{
+			"forge": "COMPASS_FOIL_TEXTURE_SCALE",
+			"fabric": "field_41120"
+		},
+		{
+			"forge": "TRIDENT_MODEL",
+			"fabric": "TRIDENT"
+		},
+		{
+			"forge": "TRIDENT_IN_HAND_MODEL",
+			"fabric": "TRIDENT_IN_HAND"
+		},
+		{
+			"forge": "SPYGLASS_MODEL",
+			"fabric": "SPYGLASS"
+		},
+		{
+			"forge": "SPYGLASS_IN_HAND_MODEL",
+			"fabric": "SPYGLASS_IN_HAND"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "itemModelShaper",
+			"fabric": "models"
+		},
+		{
+			"forge": "textureManager",
+			"fabric": "textureManager"
+		},
+		{
+			"forge": "itemColors",
+			"fabric": "colors"
+		},
+		{
+			"forge": "blockEntityRenderer",
+			"fabric": "builtinModelItemRenderer"
+		},
+		{
+			"forge": "getItemModelShaper()",
+			"fabric": "getModels()"
+		},
+		{
+			"forge": "getItemModelShaper()",
+			"fabric": "getModels()"
+		},
+		{
+			"forge": "renderModelLists(BakedModel arg0, ItemStack arg1, int arg2, int arg3, PoseStack arg4, VertexConsumer arg5)",
+			"fabric": "renderBakedItemModel(BakedModel model, ItemStack stack, int light, int overlay, MatrixStack matrices, VertexConsumer vertices)"
+		},
+		{
+			"forge": "render(ItemStack arg0, ItemDisplayContext arg1, boolean arg2, PoseStack arg3, MultiBufferSource arg4, int arg5, int arg6, BakedModel arg7)",
+			"fabric": "renderItem(ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay, BakedModel model)"
+		},
+		{
+			"forge": "hasAnimatedTexture(ItemStack arg0)",
+			"fabric": "usesDynamicDisplay(ItemStack stack)"
+		},
+		{
+			"forge": "getArmorFoilBuffer(MultiBufferSource arg0, RenderType arg1, boolean arg2, boolean arg3)",
+			"fabric": "getArmorGlintConsumer(VertexConsumerProvider provider, RenderLayer layer, boolean solid, boolean glint)"
+		},
+		{
+			"forge": "getCompassFoilBuffer(MultiBufferSource arg0, RenderType arg1, PoseStack$Pose arg2)",
+			"fabric": "getDynamicDisplayGlintConsumer(VertexConsumerProvider provider, RenderLayer layer, MatrixStack$Entry entry)"
+		},
+		{
+			"forge": "getCompassFoilBufferDirect(MultiBufferSource arg0, RenderType arg1, PoseStack$Pose arg2)",
+			"fabric": "getDirectDynamicDisplayGlintConsumer(VertexConsumerProvider provider, RenderLayer layer, MatrixStack$Entry entry)"
+		},
+		{
+			"forge": "getFoilBuffer(MultiBufferSource arg0, RenderType arg1, boolean arg2, boolean arg3)",
+			"fabric": "getItemGlintConsumer(VertexConsumerProvider vertexConsumers, RenderLayer layer, boolean solid, boolean glint)"
+		},
+		{
+			"forge": "getFoilBufferDirect(MultiBufferSource arg0, RenderType arg1, boolean arg2, boolean arg3)",
+			"fabric": "getDirectItemGlintConsumer(VertexConsumerProvider provider, RenderLayer layer, boolean solid, boolean glint)"
+		},
+		{
+			"forge": "renderQuadList(PoseStack arg0, VertexConsumer arg1, List<BakedQuad> arg2, ItemStack arg3, int arg4, int arg5)",
+			"fabric": "renderBakedItemQuads(MatrixStack matrices, VertexConsumer vertices, List<BakedQuad> quads, ItemStack stack, int light, int overlay)"
+		},
+		{
+			"forge": "getModel(ItemStack arg0, Level arg1, LivingEntity arg2, int arg3)",
+			"fabric": "getModel(ItemStack stack, World world, LivingEntity entity, int seed)"
+		},
+		{
+			"forge": "renderStatic(ItemStack arg0, ItemDisplayContext arg1, int arg2, int arg3, PoseStack arg4, MultiBufferSource arg5, Level arg6, int arg7)",
+			"fabric": "renderItem(ItemStack stack, ModelTransformationMode transformationType, int light, int overlay, MatrixStack matrices, VertexConsumerProvider vertexConsumers, World world, int seed)"
+		},
+		{
+			"forge": "renderStatic(LivingEntity arg0, ItemStack arg1, ItemDisplayContext arg2, boolean arg3, PoseStack arg4, MultiBufferSource arg5, Level arg6, int arg7, int arg8, int arg9)",
+			"fabric": "renderItem(LivingEntity entity, ItemStack item, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, World world, int light, int overlay, int seed)"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		}
+	]
+}

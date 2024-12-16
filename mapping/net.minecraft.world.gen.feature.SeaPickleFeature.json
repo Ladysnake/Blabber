@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
+			"fabric": "net.minecraft.world.gen.feature.SeaPickleFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<CountConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<CountConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<CountConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<CountConfig> arg0)"
+		}
+	]
+}

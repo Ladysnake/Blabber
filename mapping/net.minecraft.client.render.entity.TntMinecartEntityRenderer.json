@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.TntMinecartRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.TntMinecartRenderer",
+			"fabric": "net.minecraft.client.render.entity.TntMinecartEntityRenderer"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "tntBlockRenderManager"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "tntBlockRenderManager"
+		},
+		{
+			"forge": "renderMinecartContents(MinecartTNT arg0, float arg1, BlockState arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "renderBlock(TntMinecartEntity arg0, float arg1, BlockState arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "renderMinecartContents(MinecartTNT arg0, float arg1, BlockState arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "renderBlock(TntMinecartEntity arg0, float arg1, BlockState arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "renderWhiteSolidBlock(BlockRenderDispatcher arg0, BlockState arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, boolean arg5)",
+			"fabric": "renderFlashingBlock(BlockRenderManager blockRenderManager, BlockState state, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, boolean drawFlash)"
+		}
+	]
+}

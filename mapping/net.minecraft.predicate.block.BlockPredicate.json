@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.state.predicate.BlockPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.predicate.BlockPredicate",
+			"fabric": "net.minecraft.predicate.block.BlockPredicate"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "forBlock(Block arg0)",
+			"fabric": "make(Block block)"
+		},
+		{
+			"forge": "forBlock(Block arg0)",
+			"fabric": "make(Block block)"
+		},
+		{
+			"forge": "test(BlockState arg0)",
+			"fabric": "test(BlockState arg0)"
+		}
+	]
+}

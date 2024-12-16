@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.MapRenderer$MapInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.MapRenderer$MapInstance",
+			"fabric": "net.minecraft.client.render.MapRenderer$MapTexture"
+		},
+		{
+			"forge": "data",
+			"fabric": "state"
+		},
+		{
+			"forge": "data",
+			"fabric": "state"
+		},
+		{
+			"forge": "texture",
+			"fabric": "texture"
+		},
+		{
+			"forge": "renderType",
+			"fabric": "renderLayer"
+		},
+		{
+			"forge": "requiresUpload",
+			"fabric": "needsUpdate"
+		},
+		{
+			"forge": "replaceMapData(MapItemSavedData arg0)",
+			"fabric": "setState(MapState state)"
+		},
+		{
+			"forge": "replaceMapData(MapItemSavedData arg0)",
+			"fabric": "setState(MapState state)"
+		},
+		{
+			"forge": "forceUpload()",
+			"fabric": "setNeedsUpdate()"
+		},
+		{
+			"forge": "updateTexture()",
+			"fabric": "updateTexture()"
+		},
+		{
+			"forge": "draw(PoseStack arg0, MultiBufferSource arg1, boolean arg2, int arg3)",
+			"fabric": "draw(MatrixStack matrices, VertexConsumerProvider vertexConsumers, boolean hidePlayerIcons, int light)"
+		}
+	]
+}

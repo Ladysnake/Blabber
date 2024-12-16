@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.gui.MinecraftServerGui$2",
+	"items": [
+		{
+			"forge": "net.minecraft.server.gui.MinecraftServerGui$2",
+			"fabric": "net.minecraft.server.dedicated.gui.DedicatedServerGui$2"
+		},
+		{
+			"forge": "focusGained(FocusEvent arg0)",
+			"fabric": "focusGained(FocusEvent event)"
+		},
+		{
+			"forge": "focusGained(FocusEvent arg0)",
+			"fabric": "focusGained(FocusEvent event)"
+		}
+	]
+}

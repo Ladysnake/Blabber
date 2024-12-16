@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.SetWalkTargetFromLookTarget",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.SetWalkTargetFromLookTarget",
+			"fabric": "net.minecraft.entity.ai.brain.task.GoTowardsLookTargetTask"
+		},
+		{
+			"forge": "create(float arg0, int arg1)",
+			"fabric": "create(float speed, int completionRange)"
+		},
+		{
+			"forge": "create(float arg0, int arg1)",
+			"fabric": "create(float speed, int completionRange)"
+		},
+		{
+			"forge": "create(Predicate<LivingEntity> arg0, Function<LivingEntity, Float> arg1, int arg2)",
+			"fabric": "create(Predicate<LivingEntity> predicate, Function<LivingEntity, Float> speed, int completionRange)"
+		}
+	]
+}

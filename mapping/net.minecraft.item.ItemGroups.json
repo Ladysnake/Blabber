@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.item.CreativeModeTabs",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.CreativeModeTabs",
+			"fabric": "net.minecraft.item.ItemGroups"
+		},
+		{
+			"forge": "BUILDING_BLOCKS",
+			"fabric": "BUILDING_BLOCKS"
+		},
+		{
+			"forge": "BUILDING_BLOCKS",
+			"fabric": "BUILDING_BLOCKS"
+		},
+		{
+			"forge": "COLORED_BLOCKS",
+			"fabric": "COLORED_BLOCKS"
+		},
+		{
+			"forge": "NATURAL_BLOCKS",
+			"fabric": "NATURAL"
+		},
+		{
+			"forge": "FUNCTIONAL_BLOCKS",
+			"fabric": "FUNCTIONAL"
+		},
+		{
+			"forge": "REDSTONE_BLOCKS",
+			"fabric": "REDSTONE"
+		},
+		{
+			"forge": "HOTBAR",
+			"fabric": "HOTBAR"
+		},
+		{
+			"forge": "SEARCH",
+			"fabric": "SEARCH"
+		},
+		{
+			"forge": "TOOLS_AND_UTILITIES",
+			"fabric": "TOOLS"
+		},
+		{
+			"forge": "COMBAT",
+			"fabric": "COMBAT"
+		},
+		{
+			"forge": "FOOD_AND_DRINKS",
+			"fabric": "FOOD_AND_DRINK"
+		},
+		{
+			"forge": "INGREDIENTS",
+			"fabric": "INGREDIENTS"
+		},
+		{
+			"forge": "SPAWN_EGGS",
+			"fabric": "SPAWN_EGGS"
+		},
+		{
+			"forge": "OP_BLOCKS",
+			"fabric": "OPERATOR"
+		},
+		{
+			"forge": "INVENTORY",
+			"fabric": "INVENTORY"
+		},
+		{
+			"forge": "PAINTING_COMPARATOR",
+			"fabric": "PAINTING_VARIANT_COMPARATOR"
+		},
+		{
+			"forge": "CACHED_PARAMETERS",
+			"fabric": "displayContext"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "register(String id)"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "register(String id)"
+		},
+		{
+			"forge": "bootstrap(Registry<CreativeModeTab> arg0)",
+			"fabric": "registerAndGetDefault(Registry<ItemGroup> registry)"
+		},
+		{
+			"forge": "validate()",
+			"fabric": "collect()"
+		},
+		{
+			"forge": "getDefaultTab()",
+			"fabric": "getDefaultTab()"
+		},
+		{
+			"forge": "generatePotionEffectTypes(CreativeModeTab$Output arg0, HolderLookup<Potion> arg1, Item arg2, CreativeModeTab$TabVisibility arg3)",
+			"fabric": "addPotions(ItemGroup$Entries entries, RegistryWrapper<Potion> registryWrapper, Item item, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "generateEnchantmentBookTypesOnlyMaxLevel(CreativeModeTab$Output arg0, HolderLookup<Enchantment> arg1, Set<EnchantmentCategory> arg2, CreativeModeTab$TabVisibility arg3)",
+			"fabric": "addMaxLevelEnchantedBooks(ItemGroup$Entries entries, RegistryWrapper<Enchantment> registryWrapper, Set<EnchantmentTarget> enchantmentTargets, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "generateEnchantmentBookTypesAllLevels(CreativeModeTab$Output arg0, HolderLookup<Enchantment> arg1, Set<EnchantmentCategory> arg2, CreativeModeTab$TabVisibility arg3)",
+			"fabric": "addAllLevelEnchantedBooks(ItemGroup$Entries entries, RegistryWrapper<Enchantment> registryWrapper, Set<EnchantmentTarget> enchantmentTargets, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "generateInstrumentTypes(CreativeModeTab$Output arg0, HolderLookup<Instrument> arg1, Item arg2, TagKey<Instrument> arg3, CreativeModeTab$TabVisibility arg4)",
+			"fabric": "addInstruments(ItemGroup$Entries entries, RegistryWrapper<Instrument> registryWrapper, Item item, TagKey<Instrument> instrumentTag, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "generateSuspiciousStews(CreativeModeTab$Output arg0, CreativeModeTab$TabVisibility arg1)",
+			"fabric": "addSuspiciousStews(ItemGroup$Entries entries, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "generateFireworksAllDurations(CreativeModeTab$Output arg0, CreativeModeTab$TabVisibility arg1)",
+			"fabric": "addFireworkRockets(ItemGroup$Entries entries, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "generatePresetPaintings(CreativeModeTab$Output arg0, HolderLookup$RegistryLookup<PaintingVariant> arg1, Predicate<Holder<PaintingVariant>> arg2, CreativeModeTab$TabVisibility arg3)",
+			"fabric": "addPaintings(ItemGroup$Entries entries, RegistryWrapper$Impl<PaintingVariant> registryWrapper, Predicate<RegistryEntry<PaintingVariant>> predicate, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "tabs()",
+			"fabric": "getGroupsToDisplay()"
+		},
+		{
+			"forge": "allTabs()",
+			"fabric": "getGroups()"
+		},
+		{
+			"forge": "streamAllTabs()",
+			"fabric": "stream()"
+		},
+		{
+			"forge": "searchTab()",
+			"fabric": "getSearchGroup()"
+		},
+		{
+			"forge": "buildAllTabContents(CreativeModeTab$ItemDisplayParameters arg0)",
+			"fabric": "updateEntries(ItemGroup$DisplayContext displayContext)"
+		},
+		{
+			"forge": "tryRebuildTabContents(FeatureFlagSet arg0, boolean arg1, HolderLookup$Provider arg2)",
+			"fabric": "updateDisplayContext(FeatureSet enabledFeatures, boolean operatorEnabled, RegistryWrapper$WrapperLookup lookup)"
+		}
+	]
+}

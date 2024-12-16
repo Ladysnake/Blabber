@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlockEntitySignDoubleSidedEditableTextFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlockEntitySignDoubleSidedEditableTextFix",
+			"fabric": "net.minecraft.datafixer.fix.UpdateSignTextFormatFix"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateSignTextFormat(com.mojang.serialization.Dynamic<?> dynamic)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateSignTextFormat(com.mojang.serialization.Dynamic<?> dynamic)"
+		},
+		{
+			"forge": "getTextList(com.mojang.serialization.Dynamic<T> arg0, String arg1)",
+			"fabric": "updateFrontText(com.mojang.serialization.Dynamic<T> dynamic, String textKey)"
+		},
+		{
+			"forge": "getEmptyTextList(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "updateBackText(com.mojang.serialization.Dynamic<T> dynamic)"
+		},
+		{
+			"forge": "getEmptyComponent()",
+			"fabric": "getEmptyText()"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> arg0)"
+		}
+	]
+}

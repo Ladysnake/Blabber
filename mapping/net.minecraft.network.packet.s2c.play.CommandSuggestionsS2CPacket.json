@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundCommandSuggestionsPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundCommandSuggestionsPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.CommandSuggestionsS2CPacket"
+		},
+		{
+			"forge": "id",
+			"fabric": "completionId"
+		},
+		{
+			"forge": "id",
+			"fabric": "completionId"
+		},
+		{
+			"forge": "suggestions",
+			"fabric": "suggestions"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getCompletionId()"
+		},
+		{
+			"forge": "getSuggestions()",
+			"fabric": "getSuggestions()"
+		}
+	]
+}

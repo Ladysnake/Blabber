@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.searchtree.SearchRegistry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.searchtree.SearchRegistry",
+			"fabric": "net.minecraft.client.search.SearchManager"
+		},
+		{
+			"forge": "CREATIVE_NAMES",
+			"fabric": "ITEM_TOOLTIP"
+		},
+		{
+			"forge": "CREATIVE_NAMES",
+			"fabric": "ITEM_TOOLTIP"
+		},
+		{
+			"forge": "CREATIVE_TAGS",
+			"fabric": "ITEM_TAG"
+		},
+		{
+			"forge": "RECIPE_COLLECTIONS",
+			"fabric": "RECIPE_OUTPUT"
+		},
+		{
+			"forge": "searchTrees",
+			"fabric": "instances"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		},
+		{
+			"forge": "register(SearchRegistry$Key<T> arg0, SearchRegistry$TreeBuilderSupplier<T> arg1)",
+			"fabric": "put(SearchManager$Key<T> key, SearchManager$ProviderGetter<T> providerGetter)"
+		},
+		{
+			"forge": "getSupplier(SearchRegistry$Key<T> arg0)",
+			"fabric": "getInstance(SearchManager$Key<T> key)"
+		},
+		{
+			"forge": "populate(SearchRegistry$Key<T> arg0, List<T> arg1)",
+			"fabric": "reload(SearchManager$Key<T> key, List<T> values)"
+		},
+		{
+			"forge": "getTree(SearchRegistry$Key<T> arg0)",
+			"fabric": "get(SearchManager$Key<T> key)"
+		}
+	]
+}

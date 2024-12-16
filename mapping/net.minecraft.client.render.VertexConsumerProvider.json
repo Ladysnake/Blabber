@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.MultiBufferSource",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.MultiBufferSource",
+			"fabric": "net.minecraft.client.render.VertexConsumerProvider"
+		},
+		{
+			"forge": "immediate(BufferBuilder arg0)",
+			"fabric": "immediate(BufferBuilder buffer)"
+		},
+		{
+			"forge": "immediate(BufferBuilder arg0)",
+			"fabric": "immediate(BufferBuilder buffer)"
+		},
+		{
+			"forge": "immediateWithBuffers(Map<RenderType, BufferBuilder> arg0, BufferBuilder arg1)",
+			"fabric": "immediate(Map<RenderLayer, BufferBuilder> layerBuffers, BufferBuilder fallbackBuffer)"
+		},
+		{
+			"forge": "getBuffer(RenderType arg0)",
+			"fabric": "getBuffer(RenderLayer layer)"
+		}
+	]
+}

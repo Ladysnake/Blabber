@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.SerializerType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.SerializerType",
+			"fabric": "net.minecraft.util.JsonSerializableType"
+		},
+		{
+			"forge": "serializer",
+			"fabric": "jsonSerializer"
+		},
+		{
+			"forge": "serializer",
+			"fabric": "jsonSerializer"
+		},
+		{
+			"forge": "getSerializer()",
+			"fabric": "getJsonSerializer()"
+		},
+		{
+			"forge": "getSerializer()",
+			"fabric": "getJsonSerializer()"
+		}
+	]
+}

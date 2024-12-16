@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.chunk.LightChunkGetter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.LightChunkGetter",
+			"fabric": "net.minecraft.world.chunk.ChunkProvider"
+		},
+		{
+			"forge": "getChunkForLighting(int arg0, int arg1)",
+			"fabric": "getChunk(int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "getChunkForLighting(int arg0, int arg1)",
+			"fabric": "getChunk(int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "onLightUpdate(LightLayer arg0, SectionPos arg1)",
+			"fabric": "onLightUpdate(LightType type, ChunkSectionPos pos)"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		}
+	]
+}

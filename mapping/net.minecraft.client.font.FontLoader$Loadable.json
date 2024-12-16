@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.GlyphProviderDefinition$Loader",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.GlyphProviderDefinition$Loader",
+			"fabric": "net.minecraft.client.font.FontLoader$Loadable"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager resourceManager)"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager resourceManager)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.SwitchGrid$SwitchBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.SwitchGrid$SwitchBuilder",
+			"fabric": "net.minecraft.client.gui.screen.world.WorldScreenOptionGrid$OptionBuilder"
+		},
+		{
+			"forge": "label",
+			"fabric": "text"
+		},
+		{
+			"forge": "label",
+			"fabric": "text"
+		},
+		{
+			"forge": "stateSupplier",
+			"fabric": "getter"
+		},
+		{
+			"forge": "onClicked",
+			"fabric": "setter"
+		},
+		{
+			"forge": "info",
+			"fabric": "tooltip"
+		},
+		{
+			"forge": "isActiveCondition",
+			"fabric": "toggleable"
+		},
+		{
+			"forge": "buttonWidth",
+			"fabric": "buttonWidth"
+		},
+		{
+			"forge": "withIsActiveCondition(BooleanSupplier arg0)",
+			"fabric": "toggleable(BooleanSupplier toggleable)"
+		},
+		{
+			"forge": "withIsActiveCondition(BooleanSupplier arg0)",
+			"fabric": "toggleable(BooleanSupplier toggleable)"
+		},
+		{
+			"forge": "withInfo(Component arg0)",
+			"fabric": "tooltip(Text tooltip)"
+		},
+		{
+			"forge": "build(SwitchGrid$Builder arg0, GridLayout arg1, int arg2)",
+			"fabric": "build(WorldScreenOptionGrid$Builder gridBuilder, GridWidget gridWidget, int row)"
+		}
+	]
+}

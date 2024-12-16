@@ -1,0 +1,65 @@
+{
+	"title": "com.mojang.realmsclient.RealmsMainScreen$PendingInvitesButton",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.RealmsMainScreen$PendingInvitesButton",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsMainScreen$PendingInvitesButton"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "INVITES_TITLE"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "INVITES_TITLE"
+		},
+		{
+			"forge": "NO_PENDING_INVITES",
+			"fabric": "NO_PENDING_TEXT"
+		},
+		{
+			"forge": "PENDING_INVITES",
+			"fabric": "PENDING_TEXT"
+		},
+		{
+			"forge": "WIDTH",
+			"fabric": "field_44519"
+		},
+		{
+			"forge": "HEIGHT",
+			"fabric": "field_44520"
+		},
+		{
+			"forge": "X_OFFSET",
+			"fabric": "field_44521"
+		},
+		{
+			"forge": "INVITES_WIDTH",
+			"fabric": "field_44522"
+		},
+		{
+			"forge": "INVITES_HEIGHT",
+			"fabric": "field_44523"
+		},
+		{
+			"forge": "INVITES_OFFSET",
+			"fabric": "field_44524"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "updatePendingText()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "updatePendingText()"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "drawInvitations(GuiGraphics arg0)",
+			"fabric": "render(DrawContext context)"
+		}
+	]
+}

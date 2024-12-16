@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.monster.piglin.PiglinArmPose",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.piglin.PiglinArmPose",
+			"fabric": "net.minecraft.entity.mob.PiglinActivity"
+		},
+		{
+			"forge": "ATTACKING_WITH_MELEE_WEAPON",
+			"fabric": "ATTACKING_WITH_MELEE_WEAPON"
+		},
+		{
+			"forge": "ATTACKING_WITH_MELEE_WEAPON",
+			"fabric": "ATTACKING_WITH_MELEE_WEAPON"
+		},
+		{
+			"forge": "CROSSBOW_HOLD",
+			"fabric": "CROSSBOW_HOLD"
+		},
+		{
+			"forge": "CROSSBOW_CHARGE",
+			"fabric": "CROSSBOW_CHARGE"
+		},
+		{
+			"forge": "ADMIRING_ITEM",
+			"fabric": "ADMIRING_ITEM"
+		},
+		{
+			"forge": "DANCING",
+			"fabric": "DANCING"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		}
+	]
+}

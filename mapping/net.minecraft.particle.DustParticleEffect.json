@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.core.particles.DustParticleOptions",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.DustParticleOptions",
+			"fabric": "net.minecraft.particle.DustParticleEffect"
+		},
+		{
+			"forge": "REDSTONE_PARTICLE_COLOR",
+			"fabric": "RED"
+		},
+		{
+			"forge": "REDSTONE_PARTICLE_COLOR",
+			"fabric": "RED"
+		},
+		{
+			"forge": "REDSTONE",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "DESERIALIZER",
+			"fabric": "PARAMETERS_FACTORY"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

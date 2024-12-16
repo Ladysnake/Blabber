@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.core.HolderLookup$RegistryLookup",
+	"items": [
+		{
+			"forge": "net.minecraft.core.HolderLookup$RegistryLookup",
+			"fabric": "net.minecraft.registry.RegistryWrapper$Impl"
+		},
+		{
+			"forge": "key()",
+			"fabric": "getRegistryKey()"
+		},
+		{
+			"forge": "key()",
+			"fabric": "getRegistryKey()"
+		},
+		{
+			"forge": "registryLifecycle()",
+			"fabric": "getLifecycle()"
+		},
+		{
+			"forge": "filterFeatures(FeatureFlagSet arg0)",
+			"fabric": "withFeatureFilter(FeatureSet enabledFeatures)"
+		}
+	]
+}

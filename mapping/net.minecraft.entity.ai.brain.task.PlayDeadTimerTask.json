@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.axolotl.ValidatePlayDead",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.axolotl.ValidatePlayDead",
+			"fabric": "net.minecraft.entity.ai.brain.task.PlayDeadTimerTask"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		}
+	]
+}

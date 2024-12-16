@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.util.datafix.DataFixTypes",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.DataFixTypes",
+			"fabric": "net.minecraft.datafixer.DataFixTypes"
+		},
+		{
+			"forge": "LEVEL",
+			"fabric": "LEVEL"
+		},
+		{
+			"forge": "LEVEL",
+			"fabric": "LEVEL"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "CHUNK",
+			"fabric": "CHUNK"
+		},
+		{
+			"forge": "HOTBAR",
+			"fabric": "HOTBAR"
+		},
+		{
+			"forge": "OPTIONS",
+			"fabric": "OPTIONS"
+		},
+		{
+			"forge": "STRUCTURE",
+			"fabric": "STRUCTURE"
+		},
+		{
+			"forge": "STATS",
+			"fabric": "STATS"
+		},
+		{
+			"forge": "SAVED_DATA",
+			"fabric": "SAVED_DATA"
+		},
+		{
+			"forge": "ADVANCEMENTS",
+			"fabric": "ADVANCEMENTS"
+		},
+		{
+			"forge": "POI_CHUNK",
+			"fabric": "POI_CHUNK"
+		},
+		{
+			"forge": "WORLD_GEN_SETTINGS",
+			"fabric": "WORLD_GEN_SETTINGS"
+		},
+		{
+			"forge": "ENTITY_CHUNK",
+			"fabric": "ENTITY_CHUNK"
+		},
+		{
+			"forge": "TYPES_FOR_LEVEL_LIST",
+			"fabric": "REQUIRED_TYPES"
+		},
+		{
+			"forge": "TYPES_FOR_LEVEL_LIST",
+			"fabric": "REQUIRED_TYPES"
+		},
+		{
+			"forge": "type",
+			"fabric": "typeReference"
+		},
+		{
+			"forge": "currentVersion()",
+			"fabric": "getSaveVersionId()"
+		},
+		{
+			"forge": "currentVersion()",
+			"fabric": "getSaveVersionId()"
+		},
+		{
+			"forge": "update(com.mojang.datafixers.DataFixer arg0, com.mojang.serialization.Dynamic<T> arg1, int arg2, int arg3)",
+			"fabric": "update(com.mojang.datafixers.DataFixer dataFixer, com.mojang.serialization.Dynamic<T> dynamic, int oldVersion, int newVersion)"
+		},
+		{
+			"forge": "updateToCurrentVersion(com.mojang.datafixers.DataFixer arg0, com.mojang.serialization.Dynamic<T> arg1, int arg2)",
+			"fabric": "update(com.mojang.datafixers.DataFixer dataFixer, com.mojang.serialization.Dynamic<T> dynamic, int oldVersion)"
+		},
+		{
+			"forge": "update(com.mojang.datafixers.DataFixer arg0, CompoundTag arg1, int arg2, int arg3)",
+			"fabric": "update(com.mojang.datafixers.DataFixer dataFixer, NbtCompound nbt, int oldVersion, int newVersion)"
+		},
+		{
+			"forge": "updateToCurrentVersion(com.mojang.datafixers.DataFixer arg0, CompoundTag arg1, int arg2)",
+			"fabric": "update(com.mojang.datafixers.DataFixer dataFixer, NbtCompound nbt, int oldVersion)"
+		}
+	]
+}

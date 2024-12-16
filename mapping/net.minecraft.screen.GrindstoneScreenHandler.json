@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.inventory.GrindstoneMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.GrindstoneMenu",
+			"fabric": "net.minecraft.screen.GrindstoneScreenHandler"
+		},
+		{
+			"forge": "MAX_NAME_LENGTH",
+			"fabric": "field_30793"
+		},
+		{
+			"forge": "MAX_NAME_LENGTH",
+			"fabric": "field_30793"
+		},
+		{
+			"forge": "INPUT_SLOT",
+			"fabric": "INPUT_1_ID"
+		},
+		{
+			"forge": "ADDITIONAL_SLOT",
+			"fabric": "INPUT_2_ID"
+		},
+		{
+			"forge": "RESULT_SLOT",
+			"fabric": "OUTPUT_ID"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "INVENTORY_START"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "INVENTORY_END"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "HOTBAR_START"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "HOTBAR_END"
+		},
+		{
+			"forge": "resultSlots",
+			"fabric": "result"
+		},
+		{
+			"forge": "repairSlots",
+			"fabric": "input"
+		},
+		{
+			"forge": "access",
+			"fabric": "context"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "createResult()",
+			"fabric": "updateResult()"
+		},
+		{
+			"forge": "mergeEnchants(ItemStack arg0, ItemStack arg1)",
+			"fabric": "transferEnchantments(ItemStack target, ItemStack source)"
+		},
+		{
+			"forge": "removeNonCurses(ItemStack arg0, int arg1, int arg2)",
+			"fabric": "grind(ItemStack item, int damage, int amount)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		}
+	]
+}

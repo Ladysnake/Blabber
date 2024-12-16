@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature",
+			"fabric": "net.minecraft.world.gen.feature.DripstoneClusterFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<DripstoneClusterConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DripstoneClusterFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<DripstoneClusterConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DripstoneClusterFeatureConfig> arg0)"
+		},
+		{
+			"forge": "placeColumn(WorldGenLevel arg0, RandomSource arg1, BlockPos arg2, int arg3, int arg4, float arg5, double arg6, int arg7, float arg8, DripstoneClusterConfiguration arg9)",
+			"fabric": "generate(StructureWorldAccess world, Random random, BlockPos pos, int localX, int localZ, float wetness, double dripstoneChance, int height, float density, DripstoneClusterFeatureConfig config)"
+		},
+		{
+			"forge": "isLava(LevelReader arg0, BlockPos arg1)",
+			"fabric": "isLava(WorldView world, BlockPos pos)"
+		},
+		{
+			"forge": "getDripstoneHeight(RandomSource arg0, int arg1, int arg2, float arg3, int arg4, DripstoneClusterConfiguration arg5)",
+			"fabric": "getHeight(Random random, int localX, int localZ, float density, int height, DripstoneClusterFeatureConfig config)"
+		},
+		{
+			"forge": "canPlacePool(WorldGenLevel arg0, BlockPos arg1)",
+			"fabric": "canWaterSpawn(StructureWorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "canBeAdjacentToWater(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "isStoneOrWater(WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "replaceBlocksWithDripstoneBlocks(WorldGenLevel arg0, BlockPos arg1, int arg2, Direction arg3)",
+			"fabric": "placeDripstoneBlocks(StructureWorldAccess world, BlockPos pos, int height, Direction direction)"
+		},
+		{
+			"forge": "getChanceOfStalagmiteOrStalactite(int arg0, int arg1, int arg2, int arg3, DripstoneClusterConfiguration arg4)",
+			"fabric": "dripstoneChance(int radiusX, int radiusZ, int localX, int localZ, DripstoneClusterFeatureConfig config)"
+		},
+		{
+			"forge": "randomBetweenBiased(RandomSource arg0, float arg1, float arg2, float arg3, float arg4)",
+			"fabric": "clampedGaussian(Random random, float min, float max, float mean, float deviation)"
+		}
+	]
+}

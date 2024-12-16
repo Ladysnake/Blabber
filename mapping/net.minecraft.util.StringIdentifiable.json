@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.StringRepresentable",
+	"items": [
+		{
+			"forge": "net.minecraft.util.StringRepresentable",
+			"fabric": "net.minecraft.util.StringIdentifiable"
+		},
+		{
+			"forge": "PRE_BUILT_MAP_THRESHOLD",
+			"fabric": "field_38377"
+		},
+		{
+			"forge": "PRE_BUILT_MAP_THRESHOLD",
+			"fabric": "field_38377"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "fromEnum(Supplier<E[]> arg0)",
+			"fabric": "createCodec(Supplier<E[]> enumValues)"
+		},
+		{
+			"forge": "fromEnumWithMapping(Supplier<E[]> arg0, Function<String, String> arg1)",
+			"fabric": "createCodec(Supplier<E[]> enumValues, Function<String, String> valueNameTransformer)"
+		},
+		{
+			"forge": "keys(StringRepresentable[] arg0)",
+			"fabric": "toKeyable(StringIdentifiable[] values)"
+		}
+	]
+}

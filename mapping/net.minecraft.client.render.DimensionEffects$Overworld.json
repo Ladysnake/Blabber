@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.DimensionSpecialEffects$OverworldEffects",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.DimensionSpecialEffects$OverworldEffects",
+			"fabric": "net.minecraft.client.render.DimensionEffects$Overworld"
+		},
+		{
+			"forge": "CLOUD_LEVEL",
+			"fabric": "CLOUDS_HEIGHT"
+		},
+		{
+			"forge": "CLOUD_LEVEL",
+			"fabric": "CLOUDS_HEIGHT"
+		},
+		{
+			"forge": "getBrightnessDependentFogColor(Vec3 arg0, float arg1)",
+			"fabric": "adjustFogColor(Vec3d arg0, float arg1)"
+		},
+		{
+			"forge": "getBrightnessDependentFogColor(Vec3 arg0, float arg1)",
+			"fabric": "adjustFogColor(Vec3d arg0, float arg1)"
+		},
+		{
+			"forge": "isFoggyAt(int arg0, int arg1)",
+			"fabric": "useThickFog(int arg0, int arg1)"
+		}
+	]
+}

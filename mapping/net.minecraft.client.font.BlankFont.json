@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.font.AllMissingGlyphProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.AllMissingGlyphProvider",
+			"fabric": "net.minecraft.client.font.BlankFont"
+		},
+		{
+			"forge": "getGlyph(int arg0)",
+			"fabric": "getGlyph(int arg0)"
+		},
+		{
+			"forge": "getGlyph(int arg0)",
+			"fabric": "getGlyph(int arg0)"
+		},
+		{
+			"forge": "getSupportedGlyphs()",
+			"fabric": "getProvidedGlyphs()"
+		}
+	]
+}

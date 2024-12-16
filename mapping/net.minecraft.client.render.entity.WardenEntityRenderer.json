@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.entity.WardenRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.WardenRenderer",
+			"fabric": "net.minecraft.client.render.entity.WardenEntityRenderer"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "BIOLUMINESCENT_LAYER_TEXTURE",
+			"fabric": "BIOLUMINESCENT_LAYER_TEXTURE"
+		},
+		{
+			"forge": "HEART_TEXTURE",
+			"fabric": "HEART_TEXTURE"
+		},
+		{
+			"forge": "PULSATING_SPOTS_TEXTURE_1",
+			"fabric": "PULSATING_SPOTS_1_TEXTURE"
+		},
+		{
+			"forge": "PULSATING_SPOTS_TEXTURE_2",
+			"fabric": "PULSATING_SPOTS_2_TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Warden arg0)",
+			"fabric": "getTexture(WardenEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Warden arg0)",
+			"fabric": "getTexture(WardenEntity arg0)"
+		}
+	]
+}

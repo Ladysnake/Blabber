@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.telemetry.events.WorldLoadEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.events.WorldLoadEvent",
+			"fabric": "net.minecraft.client.util.telemetry.WorldLoadedEvent"
+		},
+		{
+			"forge": "eventSent",
+			"fabric": "sent"
+		},
+		{
+			"forge": "eventSent",
+			"fabric": "sent"
+		},
+		{
+			"forge": "gameMode",
+			"fabric": "gameMode"
+		},
+		{
+			"forge": "serverBrand",
+			"fabric": "brand"
+		},
+		{
+			"forge": "minigameName",
+			"fabric": "minigameName"
+		},
+		{
+			"forge": "addProperties(TelemetryPropertyMap$Builder arg0)",
+			"fabric": "putServerType(PropertyMap$Builder builder)"
+		},
+		{
+			"forge": "addProperties(TelemetryPropertyMap$Builder arg0)",
+			"fabric": "putServerType(PropertyMap$Builder builder)"
+		},
+		{
+			"forge": "getServerType()",
+			"fabric": "getServerType()"
+		},
+		{
+			"forge": "send(TelemetryEventSender arg0)",
+			"fabric": "send(TelemetrySender sender)"
+		},
+		{
+			"forge": "setGameMode(GameType arg0, boolean arg1)",
+			"fabric": "setGameMode(GameMode gameMode, boolean hardcore)"
+		},
+		{
+			"forge": "setServerBrand(String arg0)",
+			"fabric": "setBrand(String brand)"
+		}
+	]
+}

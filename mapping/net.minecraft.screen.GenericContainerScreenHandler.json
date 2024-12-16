@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.inventory.ChestMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ChestMenu",
+			"fabric": "net.minecraft.screen.GenericContainerScreenHandler"
+		},
+		{
+			"forge": "SLOTS_PER_ROW",
+			"fabric": "NUM_COLUMNS"
+		},
+		{
+			"forge": "SLOTS_PER_ROW",
+			"fabric": "NUM_COLUMNS"
+		},
+		{
+			"forge": "container",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "containerRows",
+			"fabric": "rows"
+		},
+		{
+			"forge": "oneRow(int arg0, Inventory arg1)",
+			"fabric": "createGeneric9x1(int syncId, PlayerInventory playerInventory)"
+		},
+		{
+			"forge": "oneRow(int arg0, Inventory arg1)",
+			"fabric": "createGeneric9x1(int syncId, PlayerInventory playerInventory)"
+		},
+		{
+			"forge": "twoRows(int arg0, Inventory arg1)",
+			"fabric": "createGeneric9x2(int syncId, PlayerInventory playerInventory)"
+		},
+		{
+			"forge": "threeRows(int arg0, Inventory arg1)",
+			"fabric": "createGeneric9x3(int syncId, PlayerInventory playerInventory)"
+		},
+		{
+			"forge": "fourRows(int arg0, Inventory arg1)",
+			"fabric": "createGeneric9x4(int syncId, PlayerInventory playerInventory)"
+		},
+		{
+			"forge": "fiveRows(int arg0, Inventory arg1)",
+			"fabric": "createGeneric9x5(int syncId, PlayerInventory playerInventory)"
+		},
+		{
+			"forge": "sixRows(int arg0, Inventory arg1)",
+			"fabric": "createGeneric9x6(int syncId, PlayerInventory playerInventory)"
+		},
+		{
+			"forge": "threeRows(int arg0, Inventory arg1, Container arg2)",
+			"fabric": "createGeneric9x3(int syncId, PlayerInventory playerInventory, Inventory inventory)"
+		},
+		{
+			"forge": "sixRows(int arg0, Inventory arg1, Container arg2)",
+			"fabric": "createGeneric9x6(int syncId, PlayerInventory playerInventory, Inventory inventory)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getContainer()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "getRowCount()",
+			"fabric": "getRows()"
+		}
+	]
+}

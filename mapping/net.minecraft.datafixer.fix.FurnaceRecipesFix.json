@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.FurnaceRecipeFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.FurnaceRecipeFix",
+			"fabric": "net.minecraft.datafixer.fix.FurnaceRecipesFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "updateBlockEntities(com.mojang.datafixers.types.Type<R> arg0)"
+		},
+		{
+			"forge": "cap(com.mojang.datafixers.types.Type<R> arg0)",
+			"fabric": "updateBlockEntities(com.mojang.datafixers.types.Type<R> arg0)"
+		},
+		{
+			"forge": "updateFurnaceContents(com.mojang.datafixers.types.Type<R> arg0, com.mojang.datafixers.types.Type<com.mojang.datafixers.util.Pair<com.mojang.datafixers.util.Either<com.mojang.datafixers.util.Pair<List<com.mojang.datafixers.util.Pair<R, Integer>>, com.mojang.serialization.Dynamic<?>>, com.mojang.datafixers.util.Unit>, com.mojang.serialization.Dynamic<?>>> arg1, com.mojang.datafixers.Typed<?> arg2)",
+			"fabric": "updateBlockEntityData(com.mojang.datafixers.types.Type<R> arg0, com.mojang.datafixers.types.Type<com.mojang.datafixers.util.Pair<com.mojang.datafixers.util.Either<com.mojang.datafixers.util.Pair<List<com.mojang.datafixers.util.Pair<R, Integer>>, com.mojang.serialization.Dynamic<?>>, com.mojang.datafixers.util.Unit>, com.mojang.serialization.Dynamic<?>>> arg1, com.mojang.datafixers.Typed<?> arg2)"
+		}
+	]
+}

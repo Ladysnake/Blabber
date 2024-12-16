@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$ColorLogicState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$ColorLogicState",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$LogicOpState"
+		},
+		{
+			"forge": "enable",
+			"fabric": "capState"
+		},
+		{
+			"forge": "enable",
+			"fabric": "capState"
+		},
+		{
+			"forge": "op",
+			"fabric": "op"
+		}
+	]
+}

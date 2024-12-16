@@ -1,0 +1,173 @@
+{
+	"title": "net.minecraft.world.level.block.piston.PistonMovingBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.piston.PistonMovingBlockEntity",
+			"fabric": "net.minecraft.block.entity.PistonBlockEntity"
+		},
+		{
+			"forge": "TICKS_TO_EXTEND",
+			"fabric": "field_31382"
+		},
+		{
+			"forge": "TICKS_TO_EXTEND",
+			"fabric": "field_31382"
+		},
+		{
+			"forge": "PUSH_OFFSET",
+			"fabric": "field_31383"
+		},
+		{
+			"forge": "TICK_MOVEMENT",
+			"fabric": "field_31381"
+		},
+		{
+			"forge": "movedState",
+			"fabric": "pushedBlock"
+		},
+		{
+			"forge": "direction",
+			"fabric": "facing"
+		},
+		{
+			"forge": "extending",
+			"fabric": "extending"
+		},
+		{
+			"forge": "isSourcePiston",
+			"fabric": "source"
+		},
+		{
+			"forge": "NOCLIP",
+			"fabric": "entityMovementDirection"
+		},
+		{
+			"forge": "progress",
+			"fabric": "progress"
+		},
+		{
+			"forge": "progressO",
+			"fabric": "lastProgress"
+		},
+		{
+			"forge": "lastTicked",
+			"fabric": "savedWorldTime"
+		},
+		{
+			"forge": "deathTicks",
+			"fabric": "field_26705"
+		},
+		{
+			"forge": "getUpdateTag()",
+			"fabric": "toInitialChunkDataNbt()"
+		},
+		{
+			"forge": "getUpdateTag()",
+			"fabric": "toInitialChunkDataNbt()"
+		},
+		{
+			"forge": "isExtending()",
+			"fabric": "isExtending()"
+		},
+		{
+			"forge": "getDirection()",
+			"fabric": "getFacing()"
+		},
+		{
+			"forge": "isSourcePiston()",
+			"fabric": "isSource()"
+		},
+		{
+			"forge": "getProgress(float arg0)",
+			"fabric": "getProgress(float tickDelta)"
+		},
+		{
+			"forge": "getXOff(float arg0)",
+			"fabric": "getRenderOffsetX(float tickDelta)"
+		},
+		{
+			"forge": "getYOff(float arg0)",
+			"fabric": "getRenderOffsetY(float tickDelta)"
+		},
+		{
+			"forge": "getZOff(float arg0)",
+			"fabric": "getRenderOffsetZ(float tickDelta)"
+		},
+		{
+			"forge": "getExtendedProgress(float arg0)",
+			"fabric": "getAmountExtended(float progress)"
+		},
+		{
+			"forge": "getCollisionRelatedBlockState()",
+			"fabric": "getHeadBlockState()"
+		},
+		{
+			"forge": "moveCollidedEntities(Level arg0, BlockPos arg1, float arg2, PistonMovingBlockEntity arg3)",
+			"fabric": "pushEntities(World world, BlockPos pos, float arg2, PistonBlockEntity blockEntity)"
+		},
+		{
+			"forge": "moveEntityByPiston(Direction arg0, Entity arg1, double arg2, Direction arg3)",
+			"fabric": "moveEntity(Direction direction, Entity entity, double distance, Direction movementDirection)"
+		},
+		{
+			"forge": "moveStuckEntities(Level arg0, BlockPos arg1, float arg2, PistonMovingBlockEntity arg3)",
+			"fabric": "moveEntitiesInHoneyBlock(World world, BlockPos pos, float arg2, PistonBlockEntity blockEntity)"
+		},
+		{
+			"forge": "matchesStickyCritera(AABB arg0, Entity arg1, BlockPos arg2)",
+			"fabric": "canMoveEntity(Box box, Entity entity, BlockPos pos)"
+		},
+		{
+			"forge": "isStickyForEntities()",
+			"fabric": "isPushingHoneyBlock()"
+		},
+		{
+			"forge": "getMovementDirection()",
+			"fabric": "getMovementDirection()"
+		},
+		{
+			"forge": "getMovement(AABB arg0, Direction arg1, AABB arg2)",
+			"fabric": "getIntersectionSize(Box arg0, Direction arg1, Box arg2)"
+		},
+		{
+			"forge": "moveByPositionAndProgress(BlockPos arg0, AABB arg1, PistonMovingBlockEntity arg2)",
+			"fabric": "offsetHeadBox(BlockPos pos, Box box, PistonBlockEntity blockEntity)"
+		},
+		{
+			"forge": "fixEntityWithinPistonBase(BlockPos arg0, Entity arg1, Direction arg2, double arg3)",
+			"fabric": "push(BlockPos pos, Entity entity, Direction direction, double amount)"
+		},
+		{
+			"forge": "getMovedState()",
+			"fabric": "getPushedBlock()"
+		},
+		{
+			"forge": "finalTick()",
+			"fabric": "finish()"
+		},
+		{
+			"forge": "tick(Level arg0, BlockPos arg1, BlockState arg2, PistonMovingBlockEntity arg3)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, PistonBlockEntity blockEntity)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getCollisionShape(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getCollisionShape(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getLastTicked()",
+			"fabric": "getSavedWorldTime()"
+		},
+		{
+			"forge": "setLevel(Level arg0)",
+			"fabric": "setWorld(World arg0)"
+		}
+	]
+}

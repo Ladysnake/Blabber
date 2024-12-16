@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.core.MappedRegistry$2",
+	"items": [
+		{
+			"forge": "net.minecraft.core.MappedRegistry$2",
+			"fabric": "net.minecraft.registry.SimpleRegistry$2"
+		},
+		{
+			"forge": "get(ResourceKey<T> arg0)",
+			"fabric": "getOptional(RegistryKey<T> arg0)"
+		},
+		{
+			"forge": "get(ResourceKey<T> arg0)",
+			"fabric": "getOptional(RegistryKey<T> arg0)"
+		},
+		{
+			"forge": "getOrThrow(ResourceKey<T> arg0)",
+			"fabric": "getOrThrow(RegistryKey<T> arg0)"
+		},
+		{
+			"forge": "get(TagKey<T> arg0)",
+			"fabric": "getOptional(TagKey<T> arg0)"
+		},
+		{
+			"forge": "getOrThrow(TagKey<T> arg0)",
+			"fabric": "getOrThrow(TagKey<T> arg0)"
+		}
+	]
+}

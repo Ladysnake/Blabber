@@ -1,0 +1,377 @@
+{
+	"title": "net.minecraft.Util",
+	"items": [
+		{
+			"forge": "net.minecraft.Util",
+			"fabric": "net.minecraft.util.Util"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DEFAULT_MAX_THREADS",
+			"fabric": "MAX_PARALLELISM"
+		},
+		{
+			"forge": "MAX_THREADS_SYSTEM_PROPERTY",
+			"fabric": "MAX_BG_THREADS_PROPERTY"
+		},
+		{
+			"forge": "WORKER_COUNT",
+			"fabric": "NEXT_WORKER_ID"
+		},
+		{
+			"forge": "BACKGROUND_EXECUTOR",
+			"fabric": "MAIN_WORKER_EXECUTOR"
+		},
+		{
+			"forge": "IO_POOL",
+			"fabric": "IO_WORKER_EXECUTOR"
+		},
+		{
+			"forge": "FILENAME_DATE_TIME_FORMATTER",
+			"fabric": "DATE_TIME_FORMATTER"
+		},
+		{
+			"forge": "timeSource",
+			"fabric": "nanoTimeSupplier"
+		},
+		{
+			"forge": "TICKER",
+			"fabric": "TICKER"
+		},
+		{
+			"forge": "NIL_UUID",
+			"fabric": "NIL_UUID"
+		},
+		{
+			"forge": "ZIP_FILE_SYSTEM_PROVIDER",
+			"fabric": "JAR_FILE_SYSTEM_PROVIDER"
+		},
+		{
+			"forge": "thePauser",
+			"fabric": "missingBreakpointHandler"
+		},
+		{
+			"forge": "toMap()",
+			"fabric": "toMap()"
+		},
+		{
+			"forge": "toMap()",
+			"fabric": "toMap()"
+		},
+		{
+			"forge": "getPropertyName(Property<T> arg0, Object arg1)",
+			"fabric": "getValueAsString(Property<T> property, Object value)"
+		},
+		{
+			"forge": "makeDescriptionId(String arg0, ResourceLocation arg1)",
+			"fabric": "createTranslationKey(String type, Identifier id)"
+		},
+		{
+			"forge": "getMillis()",
+			"fabric": "getMeasuringTimeMs()"
+		},
+		{
+			"forge": "getNanos()",
+			"fabric": "getMeasuringTimeNano()"
+		},
+		{
+			"forge": "getEpochMillis()",
+			"fabric": "getEpochTimeMs()"
+		},
+		{
+			"forge": "getFilenameFormattedDateTime()",
+			"fabric": "getFormattedCurrentTime()"
+		},
+		{
+			"forge": "makeExecutor(String arg0)",
+			"fabric": "createWorker(String name)"
+		},
+		{
+			"forge": "getMaxThreads()",
+			"fabric": "getMaxBackgroundThreads()"
+		},
+		{
+			"forge": "backgroundExecutor()",
+			"fabric": "getMainWorkerExecutor()"
+		},
+		{
+			"forge": "ioPool()",
+			"fabric": "getIoWorkerExecutor()"
+		},
+		{
+			"forge": "shutdownExecutors()",
+			"fabric": "shutdownExecutors()"
+		},
+		{
+			"forge": "shutdownExecutor(ExecutorService arg0)",
+			"fabric": "attemptShutdown(ExecutorService service)"
+		},
+		{
+			"forge": "makeIoExecutor()",
+			"fabric": "createIoWorker()"
+		},
+		{
+			"forge": "throwAsRuntime(Throwable arg0)",
+			"fabric": "throwUnchecked(Throwable t)"
+		},
+		{
+			"forge": "onThreadException(Thread arg0, Throwable arg1)",
+			"fabric": "uncaughtExceptionHandler(Thread thread, Throwable t)"
+		},
+		{
+			"forge": "fetchChoiceType(com.mojang.datafixers.DSL$TypeReference arg0, String arg1)",
+			"fabric": "getChoiceType(com.mojang.datafixers.DSL$TypeReference typeReference, String id)"
+		},
+		{
+			"forge": "doFetchChoiceType(com.mojang.datafixers.DSL$TypeReference arg0, String arg1)",
+			"fabric": "getChoiceTypeInternal(com.mojang.datafixers.DSL$TypeReference typeReference, String id)"
+		},
+		{
+			"forge": "wrapThreadWithTaskName(String arg0, Runnable arg1)",
+			"fabric": "debugRunnable(String activeThreadName, Runnable task)"
+		},
+		{
+			"forge": "wrapThreadWithTaskName(String arg0, Supplier<V> arg1)",
+			"fabric": "debugSupplier(String activeThreadName, Supplier<V> supplier)"
+		},
+		{
+			"forge": "getPlatform()",
+			"fabric": "getOperatingSystem()"
+		},
+		{
+			"forge": "getVmArguments()",
+			"fabric": "getJVMFlags()"
+		},
+		{
+			"forge": "lastOf(List<T> arg0)",
+			"fabric": "getLast(List<T> list)"
+		},
+		{
+			"forge": "findNextInIterable(Iterable<T> arg0, T arg1)",
+			"fabric": "next(Iterable<T> iterable, T object)"
+		},
+		{
+			"forge": "findPreviousInIterable(Iterable<T> arg0, T arg1)",
+			"fabric": "previous(Iterable<T> iterable, T object)"
+		},
+		{
+			"forge": "make(Supplier<T> arg0)",
+			"fabric": "make(Supplier<T> factory)"
+		},
+		{
+			"forge": "make(T arg0, Consumer<T> arg1)",
+			"fabric": "make(T object, Consumer<T> initializer)"
+		},
+		{
+			"forge": "identityStrategy()",
+			"fabric": "identityHashStrategy()"
+		},
+		{
+			"forge": "sequence(List<? extends CompletableFuture<V>> arg0)",
+			"fabric": "combineSafe(List<? extends CompletableFuture<V>> futures)"
+		},
+		{
+			"forge": "sequenceFailFast(List<? extends CompletableFuture<? extends V>> arg0)",
+			"fabric": "combine(List<? extends CompletableFuture<? extends V>> futures)"
+		},
+		{
+			"forge": "sequenceFailFastAndCancel(List<? extends CompletableFuture<? extends V>> arg0)",
+			"fabric": "combineCancellable(List<? extends CompletableFuture<? extends V>> futures)"
+		},
+		{
+			"forge": "fallibleSequence(List<? extends CompletableFuture<? extends V>> arg0, Consumer<Throwable> arg1)",
+			"fabric": "combine(List<? extends CompletableFuture<? extends V>> futures, Consumer<Throwable> exceptionHandler)"
+		},
+		{
+			"forge": "ifElse(Optional<T> arg0, Consumer<T> arg1, Runnable arg2)",
+			"fabric": "ifPresentOrElse(Optional<T> optional, Consumer<T> presentAction, Runnable elseAction)"
+		},
+		{
+			"forge": "name(Supplier<T> arg0, Supplier<String> arg1)",
+			"fabric": "debugSupplier(Supplier<T> supplier, Supplier<String> messageSupplier)"
+		},
+		{
+			"forge": "name(Runnable arg0, Supplier<String> arg1)",
+			"fabric": "debugRunnable(Runnable runnable, Supplier<String> messageSupplier)"
+		},
+		{
+			"forge": "logAndPauseIfInIde(String arg0)",
+			"fabric": "error(String message)"
+		},
+		{
+			"forge": "logAndPauseIfInIde(String arg0, Throwable arg1)",
+			"fabric": "error(String message, Throwable throwable)"
+		},
+		{
+			"forge": "pauseInIde(T arg0)",
+			"fabric": "throwOrPause(T t)"
+		},
+		{
+			"forge": "setPause(Consumer<String> arg0)",
+			"fabric": "setMissingBreakpointHandler(Consumer<String> missingBreakpointHandler)"
+		},
+		{
+			"forge": "doPause(String arg0)",
+			"fabric": "pause(String message)"
+		},
+		{
+			"forge": "describeError(Throwable arg0)",
+			"fabric": "getInnermostMessage(Throwable t)"
+		},
+		{
+			"forge": "getRandom(T[] arg0, RandomSource arg1)",
+			"fabric": "getRandom(T[] array, Random random)"
+		},
+		{
+			"forge": "getRandom(int[] arg0, RandomSource arg1)",
+			"fabric": "getRandom(int[] array, Random random)"
+		},
+		{
+			"forge": "getRandom(List<T> arg0, RandomSource arg1)",
+			"fabric": "getRandom(List<T> list, Random random)"
+		},
+		{
+			"forge": "getRandomSafe(List<T> arg0, RandomSource arg1)",
+			"fabric": "getRandomOrEmpty(List<T> list, Random random)"
+		},
+		{
+			"forge": "createRenamer(Path arg0, Path arg1)",
+			"fabric": "renameTask(Path src, Path dest)"
+		},
+		{
+			"forge": "createDeleter(Path arg0)",
+			"fabric": "deleteTask(Path path)"
+		},
+		{
+			"forge": "createFileDeletedCheck(Path arg0)",
+			"fabric": "deletionVerifyTask(Path path)"
+		},
+		{
+			"forge": "createFileCreatedCheck(Path arg0)",
+			"fabric": "existenceCheckTask(Path path)"
+		},
+		{
+			"forge": "executeInSequence(BooleanSupplier... arg0)",
+			"fabric": "attemptTasks(BooleanSupplier... tasks)"
+		},
+		{
+			"forge": "runWithRetries(int arg0, String arg1, BooleanSupplier... arg2)",
+			"fabric": "attemptTasks(int retries, String taskName, BooleanSupplier... tasks)"
+		},
+		{
+			"forge": "safeReplaceFile(File arg0, File arg1, File arg2)",
+			"fabric": "backupAndReplace(File current, File newFile, File backup)"
+		},
+		{
+			"forge": "safeReplaceFile(Path arg0, Path arg1, Path arg2)",
+			"fabric": "backupAndReplace(Path current, Path newPath, Path backup)"
+		},
+		{
+			"forge": "safeReplaceOrMoveFile(File arg0, File arg1, File arg2, boolean arg3)",
+			"fabric": "backupAndReplace(File current, File newPath, File backup, boolean noRestoreOnFail)"
+		},
+		{
+			"forge": "safeReplaceOrMoveFile(Path arg0, Path arg1, Path arg2, boolean arg3)",
+			"fabric": "backupAndReplace(Path current, Path newPath, Path backup, boolean noRestoreOnFail)"
+		},
+		{
+			"forge": "offsetByCodepoints(String arg0, int arg1, int arg2)",
+			"fabric": "moveCursor(String string, int cursor, int delta)"
+		},
+		{
+			"forge": "prefix(String arg0, Consumer<String> arg1)",
+			"fabric": "addPrefix(String prefix, Consumer<String> consumer)"
+		},
+		{
+			"forge": "fixedSize(IntStream arg0, int arg1)",
+			"fabric": "decodeFixedLengthArray(IntStream stream, int length)"
+		},
+		{
+			"forge": "fixedSize(LongStream arg0, int arg1)",
+			"fabric": "decodeFixedLengthArray(LongStream stream, int length)"
+		},
+		{
+			"forge": "fixedSize(List<T> arg0, int arg1)",
+			"fabric": "decodeFixedLengthList(List<T> list, int length)"
+		},
+		{
+			"forge": "startTimerHackThread()",
+			"fabric": "startTimerHack()"
+		},
+		{
+			"forge": "copyBetweenDirs(Path arg0, Path arg1, Path arg2)",
+			"fabric": "relativeCopy(Path src, Path dest, Path toCopy)"
+		},
+		{
+			"forge": "sanitizeName(String arg0, CharPredicate arg1)",
+			"fabric": "replaceInvalidChars(String string, CharPredicate predicate)"
+		},
+		{
+			"forge": "singleKeyCache(Function<K, V> arg0)",
+			"fabric": "cachedMapper(Function<K, V> mapper)"
+		},
+		{
+			"forge": "memoize(Function<T, R> arg0)",
+			"fabric": "memoize(Function<T, R> function)"
+		},
+		{
+			"forge": "memoize(BiFunction<T, U, R> arg0)",
+			"fabric": "memoize(BiFunction<T, U, R> biFunction)"
+		},
+		{
+			"forge": "toShuffledList(Stream<T> arg0, RandomSource arg1)",
+			"fabric": "copyShuffled(Stream<T> stream, Random random)"
+		},
+		{
+			"forge": "toShuffledList(IntStream arg0, RandomSource arg1)",
+			"fabric": "shuffle(IntStream stream, Random random)"
+		},
+		{
+			"forge": "shuffledCopy(T[] arg0, RandomSource arg1)",
+			"fabric": "copyShuffled(T[] array, Random random)"
+		},
+		{
+			"forge": "shuffledCopy(it.unimi.dsi.fastutil.objects.ObjectArrayList<T> arg0, RandomSource arg1)",
+			"fabric": "copyShuffled(it.unimi.dsi.fastutil.objects.ObjectArrayList<T> list, Random random)"
+		},
+		{
+			"forge": "shuffle(it.unimi.dsi.fastutil.objects.ObjectArrayList<T> arg0, RandomSource arg1)",
+			"fabric": "shuffle(it.unimi.dsi.fastutil.objects.ObjectArrayList<T> list, Random random)"
+		},
+		{
+			"forge": "blockUntilDone(Function<Executor, CompletableFuture<T>> arg0)",
+			"fabric": "waitAndApply(Function<Executor, CompletableFuture<T>> resultFactory)"
+		},
+		{
+			"forge": "blockUntilDone(Function<Executor, T> arg0, Predicate<T> arg1)",
+			"fabric": "waitAndApply(Function<Executor, T> resultFactory, Predicate<T> donePredicate)"
+		},
+		{
+			"forge": "createIndexLookup(List<T> arg0)",
+			"fabric": "lastIndexGetter(List<T> values)"
+		},
+		{
+			"forge": "createIndexLookup(List<T> arg0, IntFunction<it.unimi.dsi.fastutil.objects.Object2IntMap<T>> arg1)",
+			"fabric": "lastIndexGetter(List<T> values, IntFunction<it.unimi.dsi.fastutil.objects.Object2IntMap<T>> mapCreator)"
+		},
+		{
+			"forge": "getOrThrow(com.mojang.serialization.DataResult<T> arg0, Function<String, E> arg1) throws E",
+			"fabric": "getResult(com.mojang.serialization.DataResult<T> result, Function<String, E> exceptionGetter) throws E"
+		},
+		{
+			"forge": "isWhitespace(int arg0)",
+			"fabric": "isWhitespace(int c)"
+		},
+		{
+			"forge": "isBlank(String arg0)",
+			"fabric": "isBlank(String string)"
+		}
+	]
+}

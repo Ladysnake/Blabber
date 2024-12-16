@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.ContainerEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.ContainerEntity",
+			"fabric": "net.minecraft.entity.vehicle.VehicleInventory"
+		},
+		{
+			"forge": "position()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "position()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getLootTable()",
+			"fabric": "getLootTableId()"
+		},
+		{
+			"forge": "setLootTable(ResourceLocation arg0)",
+			"fabric": "setLootTableId(Identifier lootTableId)"
+		},
+		{
+			"forge": "getLootTableSeed()",
+			"fabric": "getLootTableSeed()"
+		},
+		{
+			"forge": "setLootTableSeed(long arg0)",
+			"fabric": "setLootTableSeed(long lootTableSeed)"
+		},
+		{
+			"forge": "getItemStacks()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "clearItemStacks()",
+			"fabric": "resetInventory()"
+		},
+		{
+			"forge": "level()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "isRemoved()",
+			"fabric": "isRemoved()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "addChestVehicleSaveData(CompoundTag arg0)",
+			"fabric": "writeInventoryToNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "readChestVehicleSaveData(CompoundTag arg0)",
+			"fabric": "readInventoryFromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "chestVehicleDestroyed(DamageSource arg0, Level arg1, Entity arg2)",
+			"fabric": "onBroken(DamageSource source, World world, Entity vehicle)"
+		},
+		{
+			"forge": "interactWithContainerVehicle(Player arg0)",
+			"fabric": "open(PlayerEntity player)"
+		},
+		{
+			"forge": "unpackChestVehicleLootTable(Player arg0)",
+			"fabric": "generateInventoryLoot(PlayerEntity player)"
+		},
+		{
+			"forge": "clearChestVehicleContent()",
+			"fabric": "clearInventory()"
+		},
+		{
+			"forge": "isChestVehicleEmpty()",
+			"fabric": "isInventoryEmpty()"
+		},
+		{
+			"forge": "removeChestVehicleItemNoUpdate(int arg0)",
+			"fabric": "removeInventoryStack(int slot)"
+		},
+		{
+			"forge": "getChestVehicleItem(int arg0)",
+			"fabric": "getInventoryStack(int slot)"
+		},
+		{
+			"forge": "removeChestVehicleItem(int arg0, int arg1)",
+			"fabric": "removeInventoryStack(int slot, int amount)"
+		},
+		{
+			"forge": "setChestVehicleItem(int arg0, ItemStack arg1)",
+			"fabric": "setInventoryStack(int slot, ItemStack stack)"
+		},
+		{
+			"forge": "getChestVehicleSlot(int arg0)",
+			"fabric": "getInventoryStackReference(int slot)"
+		},
+		{
+			"forge": "isChestVehicleStillValid(Player arg0)",
+			"fabric": "canPlayerAccess(PlayerEntity player)"
+		}
+	]
+}

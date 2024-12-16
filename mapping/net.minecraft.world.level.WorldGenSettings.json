@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.WorldGenSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.WorldGenSettings",
+			"fabric": "net.minecraft.world.level.WorldGenSettings"
+		},
+		{
+			"forge": "options",
+			"fabric": "generatorOptions"
+		},
+		{
+			"forge": "options",
+			"fabric": "generatorOptions"
+		},
+		{
+			"forge": "dimensions",
+			"fabric": "dimensionOptionsRegistryHolder"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "encode(com.mojang.serialization.DynamicOps<T> arg0, WorldOptions arg1, WorldDimensions arg2)",
+			"fabric": "encode(com.mojang.serialization.DynamicOps<T> registryOps, GeneratorOptions generatorOptions, DimensionOptionsRegistryHolder dimensionOptionsRegistryHolder)"
+		},
+		{
+			"forge": "encode(com.mojang.serialization.DynamicOps<T> arg0, WorldOptions arg1, WorldDimensions arg2)",
+			"fabric": "encode(com.mojang.serialization.DynamicOps<T> registryOps, GeneratorOptions generatorOptions, DimensionOptionsRegistryHolder dimensionOptionsRegistryHolder)"
+		},
+		{
+			"forge": "encode(com.mojang.serialization.DynamicOps<T> arg0, WorldOptions arg1, RegistryAccess arg2)",
+			"fabric": "encode(com.mojang.serialization.DynamicOps<T> registryOps, GeneratorOptions generatorOptions, DynamicRegistryManager dynamicRegistryManager)"
+		},
+		{
+			"forge": "options()",
+			"fabric": "generatorOptions()"
+		},
+		{
+			"forge": "dimensions()",
+			"fabric": "dimensionOptionsRegistryHolder()"
+		}
+	]
+}

@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.model.HoglinModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.HoglinModel",
+			"fabric": "net.minecraft.client.render.entity.model.HoglinEntityModel"
+		},
+		{
+			"forge": "DEFAULT_HEAD_X_ROT",
+			"fabric": "HEAD_PITCH_START"
+		},
+		{
+			"forge": "DEFAULT_HEAD_X_ROT",
+			"fabric": "HEAD_PITCH_START"
+		},
+		{
+			"forge": "ATTACK_HEAD_X_ROT_END",
+			"fabric": "HEAD_PITCH_END"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "rightEar",
+			"fabric": "rightEar"
+		},
+		{
+			"forge": "leftEar",
+			"fabric": "leftEar"
+		},
+		{
+			"forge": "body",
+			"fabric": "body"
+		},
+		{
+			"forge": "rightFrontLeg",
+			"fabric": "rightFrontLeg"
+		},
+		{
+			"forge": "leftFrontLeg",
+			"fabric": "leftFrontLeg"
+		},
+		{
+			"forge": "rightHindLeg",
+			"fabric": "rightHindLeg"
+		},
+		{
+			"forge": "leftHindLeg",
+			"fabric": "leftHindLeg"
+		},
+		{
+			"forge": "mane",
+			"fabric": "mane"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "headParts()",
+			"fabric": "getHeadParts()"
+		},
+		{
+			"forge": "bodyParts()",
+			"fabric": "getBodyParts()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

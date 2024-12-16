@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.level.block.state.StateHolder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.StateHolder",
+			"fabric": "net.minecraft.state.State"
+		},
+		{
+			"forge": "NAME_TAG",
+			"fabric": "NAME"
+		},
+		{
+			"forge": "NAME_TAG",
+			"fabric": "NAME"
+		},
+		{
+			"forge": "PROPERTIES_TAG",
+			"fabric": "PROPERTIES"
+		},
+		{
+			"forge": "PROPERTY_ENTRY_TO_STRING_FUNCTION",
+			"fabric": "PROPERTY_MAP_PRINTER"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "values",
+			"fabric": "entries"
+		},
+		{
+			"forge": "neighbours",
+			"fabric": "withTable"
+		},
+		{
+			"forge": "propertiesCodec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "cycle(Property<T> arg0)",
+			"fabric": "cycle(Property<T> property)"
+		},
+		{
+			"forge": "cycle(Property<T> arg0)",
+			"fabric": "cycle(Property<T> property)"
+		},
+		{
+			"forge": "findNextInCollection(Collection<T> arg0, T arg1)",
+			"fabric": "getNext(Collection<T> values, T value)"
+		},
+		{
+			"forge": "getProperties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "hasProperty(Property<T> arg0)",
+			"fabric": "contains(Property<T> property)"
+		},
+		{
+			"forge": "getValue(Property<T> arg0)",
+			"fabric": "get(Property<T> property)"
+		},
+		{
+			"forge": "getOptionalValue(Property<T> arg0)",
+			"fabric": "getOrEmpty(Property<T> property)"
+		},
+		{
+			"forge": "setValue(Property<T> arg0, V arg1)",
+			"fabric": "with(Property<T> property, V value)"
+		},
+		{
+			"forge": "trySetValue(Property<T> arg0, V arg1)",
+			"fabric": "withIfExists(Property<T> property, V value)"
+		},
+		{
+			"forge": "populateNeighbours(Map<Map<Property<?>, Comparable<?>>, S> arg0)",
+			"fabric": "createWithTable(Map<Map<Property<?>, Comparable<?>>, S> states)"
+		},
+		{
+			"forge": "makeNeighbourValues(Property<?> arg0, Comparable<?> arg1)",
+			"fabric": "toMapWith(Property<?> property, Comparable<?> value)"
+		},
+		{
+			"forge": "getValues()",
+			"fabric": "getEntries()"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.Codec<O> arg0, Function<O, S> arg1)",
+			"fabric": "createCodec(com.mojang.serialization.Codec<O> arg0, Function<O, S> ownerToStateFunction)"
+		}
+	]
+}

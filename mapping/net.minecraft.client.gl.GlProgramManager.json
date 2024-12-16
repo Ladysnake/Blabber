@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.blaze3d.shaders.ProgramManager",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.shaders.ProgramManager",
+			"fabric": "net.minecraft.client.gl.GlProgramManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "glUseProgram(int arg0)",
+			"fabric": "useProgram(int program)"
+		},
+		{
+			"forge": "glUseProgram(int arg0)",
+			"fabric": "useProgram(int program)"
+		},
+		{
+			"forge": "releaseProgram(Shader arg0)",
+			"fabric": "deleteProgram(ShaderProgramSetupView program)"
+		},
+		{
+			"forge": "createProgram()",
+			"fabric": "createProgram()"
+		},
+		{
+			"forge": "linkShader(Shader arg0)",
+			"fabric": "linkProgram(ShaderProgramSetupView program)"
+		}
+	]
+}

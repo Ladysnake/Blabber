@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator",
+			"fabric": "net.minecraft.world.gen.treedecorator.TreeDecorator"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "TYPE_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "TYPE_CODEC"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "place(TreeDecorator$Context arg0)",
+			"fabric": "generate(TreeDecorator$Generator generator)"
+		}
+	]
+}

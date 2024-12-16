@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.item.ProjectileWeaponItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ProjectileWeaponItem",
+			"fabric": "net.minecraft.item.RangedWeaponItem"
+		},
+		{
+			"forge": "ARROW_ONLY",
+			"fabric": "BOW_PROJECTILES"
+		},
+		{
+			"forge": "ARROW_ONLY",
+			"fabric": "BOW_PROJECTILES"
+		},
+		{
+			"forge": "ARROW_OR_FIREWORK",
+			"fabric": "CROSSBOW_HELD_PROJECTILES"
+		},
+		{
+			"forge": "getSupportedHeldProjectiles()",
+			"fabric": "getHeldProjectiles()"
+		},
+		{
+			"forge": "getSupportedHeldProjectiles()",
+			"fabric": "getHeldProjectiles()"
+		},
+		{
+			"forge": "getAllSupportedProjectiles()",
+			"fabric": "getProjectiles()"
+		},
+		{
+			"forge": "getHeldProjectile(LivingEntity arg0, Predicate<ItemStack> arg1)",
+			"fabric": "getHeldProjectile(LivingEntity entity, Predicate<ItemStack> predicate)"
+		},
+		{
+			"forge": "getEnchantmentValue()",
+			"fabric": "getEnchantability()"
+		},
+		{
+			"forge": "getDefaultProjectileRange()",
+			"fabric": "getRange()"
+		}
+	]
+}

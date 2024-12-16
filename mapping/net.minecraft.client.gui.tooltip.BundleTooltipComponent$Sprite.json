@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.tooltip.ClientBundleTooltip$Texture",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.tooltip.ClientBundleTooltip$Texture",
+			"fabric": "net.minecraft.client.gui.tooltip.BundleTooltipComponent$Sprite"
+		},
+		{
+			"forge": "SLOT",
+			"fabric": "SLOT"
+		},
+		{
+			"forge": "SLOT",
+			"fabric": "SLOT"
+		},
+		{
+			"forge": "BLOCKED_SLOT",
+			"fabric": "BLOCKED_SLOT"
+		},
+		{
+			"forge": "BORDER_VERTICAL",
+			"fabric": "BORDER_VERTICAL"
+		},
+		{
+			"forge": "BORDER_HORIZONTAL_TOP",
+			"fabric": "BORDER_HORIZONTAL_TOP"
+		},
+		{
+			"forge": "BORDER_HORIZONTAL_BOTTOM",
+			"fabric": "BORDER_HORIZONTAL_BOTTOM"
+		},
+		{
+			"forge": "BORDER_CORNER_TOP",
+			"fabric": "BORDER_CORNER_TOP"
+		},
+		{
+			"forge": "BORDER_CORNER_BOTTOM",
+			"fabric": "BORDER_CORNER_BOTTOM"
+		},
+		{
+			"forge": "x",
+			"fabric": "u"
+		},
+		{
+			"forge": "x",
+			"fabric": "u"
+		},
+		{
+			"forge": "y",
+			"fabric": "v"
+		},
+		{
+			"forge": "w",
+			"fabric": "width"
+		},
+		{
+			"forge": "h",
+			"fabric": "height"
+		}
+	]
+}

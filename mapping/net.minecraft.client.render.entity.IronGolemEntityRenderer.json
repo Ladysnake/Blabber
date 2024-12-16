@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.IronGolemRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.IronGolemRenderer",
+			"fabric": "net.minecraft.client.render.entity.IronGolemEntityRenderer"
+		},
+		{
+			"forge": "GOLEM_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "GOLEM_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(IronGolem arg0)",
+			"fabric": "getTexture(IronGolemEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(IronGolem arg0)",
+			"fabric": "getTexture(IronGolemEntity arg0)"
+		},
+		{
+			"forge": "setupRotations(IronGolem arg0, PoseStack arg1, float arg2, float arg3, float arg4)",
+			"fabric": "setupTransforms(IronGolemEntity arg0, MatrixStack arg1, float arg2, float arg3, float arg4)"
+		}
+	]
+}

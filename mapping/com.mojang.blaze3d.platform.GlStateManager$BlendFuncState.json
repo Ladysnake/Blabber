@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$BlendState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$BlendState",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$BlendFuncState"
+		},
+		{
+			"forge": "mode",
+			"fabric": "capState"
+		},
+		{
+			"forge": "mode",
+			"fabric": "capState"
+		},
+		{
+			"forge": "srcRgb",
+			"fabric": "srcFactorRGB"
+		},
+		{
+			"forge": "dstRgb",
+			"fabric": "dstFactorRGB"
+		},
+		{
+			"forge": "srcAlpha",
+			"fabric": "srcFactorAlpha"
+		},
+		{
+			"forge": "dstAlpha",
+			"fabric": "dstFactorAlpha"
+		}
+	]
+}

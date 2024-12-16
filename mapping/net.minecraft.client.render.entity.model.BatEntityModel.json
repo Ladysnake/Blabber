@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.model.BatModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.BatModel",
+			"fabric": "net.minecraft.client.render.entity.model.BatEntityModel"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "body",
+			"fabric": "body"
+		},
+		{
+			"forge": "rightWing",
+			"fabric": "rightWing"
+		},
+		{
+			"forge": "leftWing",
+			"fabric": "leftWing"
+		},
+		{
+			"forge": "rightWingTip",
+			"fabric": "rightWingTip"
+		},
+		{
+			"forge": "leftWingTip",
+			"fabric": "leftWingTip"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		},
+		{
+			"forge": "setupAnim(Bat arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(BatEntity arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

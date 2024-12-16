@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.util.DefaultRandomPos",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.util.DefaultRandomPos",
+			"fabric": "net.minecraft.entity.ai.NoPenaltyTargeting"
+		},
+		{
+			"forge": "getPos(PathfinderMob arg0, int arg1, int arg2)",
+			"fabric": "find(PathAwareEntity entity, int horizontalRange, int verticalRange)"
+		},
+		{
+			"forge": "getPos(PathfinderMob arg0, int arg1, int arg2)",
+			"fabric": "find(PathAwareEntity entity, int horizontalRange, int verticalRange)"
+		},
+		{
+			"forge": "getPosTowards(PathfinderMob arg0, int arg1, int arg2, Vec3 arg3, double arg4)",
+			"fabric": "findTo(PathAwareEntity entity, int horizontalRange, int verticalRange, Vec3d end, double angleRange)"
+		},
+		{
+			"forge": "getPosAway(PathfinderMob arg0, int arg1, int arg2, Vec3 arg3)",
+			"fabric": "findFrom(PathAwareEntity entity, int horizontalRange, int verticalRange, Vec3d start)"
+		},
+		{
+			"forge": "generateRandomPosTowardDirection(PathfinderMob arg0, int arg1, boolean arg2, BlockPos arg3)",
+			"fabric": "tryMake(PathAwareEntity entity, int horizontalRange, boolean posTargetInRange, BlockPos fuzz)"
+		}
+	]
+}

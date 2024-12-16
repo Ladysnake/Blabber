@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.packs.repository.PackSource$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.repository.PackSource$1",
+			"fabric": "net.minecraft.resource.ResourcePackSource$1"
+		},
+		{
+			"forge": "decorate(Component arg0)",
+			"fabric": "decorate(Text arg0)"
+		},
+		{
+			"forge": "decorate(Component arg0)",
+			"fabric": "decorate(Text arg0)"
+		},
+		{
+			"forge": "shouldAddAutomatically()",
+			"fabric": "canBeEnabledLater()"
+		}
+	]
+}

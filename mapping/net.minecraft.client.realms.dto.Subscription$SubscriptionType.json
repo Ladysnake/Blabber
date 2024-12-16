@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.dto.Subscription$SubscriptionType",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.Subscription$SubscriptionType",
+			"fabric": "net.minecraft.client.realms.dto.Subscription$SubscriptionType"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "RECURRING",
+			"fabric": "RECURRING"
+		}
+	]
+}

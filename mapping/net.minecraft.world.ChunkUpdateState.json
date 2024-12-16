@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData",
+			"fabric": "net.minecraft.world.ChunkUpdateState"
+		},
+		{
+			"forge": "TAG_REMAINING_INDEXES",
+			"fabric": "REMAINING_KEY"
+		},
+		{
+			"forge": "TAG_REMAINING_INDEXES",
+			"fabric": "REMAINING_KEY"
+		},
+		{
+			"forge": "TAG_All_INDEXES",
+			"fabric": "ALL_KEY"
+		},
+		{
+			"forge": "all",
+			"fabric": "all"
+		},
+		{
+			"forge": "remaining",
+			"fabric": "remaining"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addIndex(long arg0)",
+			"fabric": "add(long pos)"
+		},
+		{
+			"forge": "hasStartIndex(long arg0)",
+			"fabric": "contains(long pos)"
+		},
+		{
+			"forge": "hasUnhandledIndex(long arg0)",
+			"fabric": "isRemaining(long pos)"
+		},
+		{
+			"forge": "removeIndex(long arg0)",
+			"fabric": "markResolved(long pos)"
+		},
+		{
+			"forge": "getAll()",
+			"fabric": "getAll()"
+		}
+	]
+}

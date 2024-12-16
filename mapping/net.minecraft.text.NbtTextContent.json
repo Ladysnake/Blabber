@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.chat.contents.NbtContents",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.contents.NbtContents",
+			"fabric": "net.minecraft.text.NbtTextContent"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "interpreting",
+			"fabric": "interpret"
+		},
+		{
+			"forge": "separator",
+			"fabric": "separator"
+		},
+		{
+			"forge": "nbtPathPattern",
+			"fabric": "rawPath"
+		},
+		{
+			"forge": "dataSource",
+			"fabric": "dataSource"
+		},
+		{
+			"forge": "compiledNbtPath",
+			"fabric": "path"
+		},
+		{
+			"forge": "compileNbtPath(String arg0)",
+			"fabric": "parsePath(String rawPath)"
+		},
+		{
+			"forge": "compileNbtPath(String arg0)",
+			"fabric": "parsePath(String rawPath)"
+		},
+		{
+			"forge": "getNbtPath()",
+			"fabric": "getPath()"
+		},
+		{
+			"forge": "isInterpreting()",
+			"fabric": "shouldInterpret()"
+		},
+		{
+			"forge": "getSeparator()",
+			"fabric": "getSeparator()"
+		},
+		{
+			"forge": "getDataSource()",
+			"fabric": "getDataSource()"
+		},
+		{
+			"forge": "resolve(CommandSourceStack arg0, Entity arg1, int arg2)",
+			"fabric": "parse(ServerCommandSource arg0, Entity arg1, int arg2)"
+		}
+	]
+}

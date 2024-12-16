@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.OptionInstance$ClampingLazyMaxIntRange",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$ClampingLazyMaxIntRange",
+			"fabric": "net.minecraft.client.option.SimpleOption$MaxSuppliableIntCallbacks"
+		},
+		{
+			"forge": "minInclusive",
+			"fabric": "minInclusive"
+		},
+		{
+			"forge": "minInclusive",
+			"fabric": "minInclusive"
+		},
+		{
+			"forge": "maxSupplier",
+			"fabric": "maxSupplier"
+		},
+		{
+			"forge": "encodableMaxInclusive",
+			"fabric": "encodableMaxInclusive"
+		},
+		{
+			"forge": "validateValue(Integer arg0)",
+			"fabric": "validate(Integer arg0)"
+		},
+		{
+			"forge": "validateValue(Integer arg0)",
+			"fabric": "validate(Integer arg0)"
+		},
+		{
+			"forge": "maxInclusive()",
+			"fabric": "maxInclusive()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		},
+		{
+			"forge": "createCycleButton()",
+			"fabric": "isCycling()"
+		},
+		{
+			"forge": "valueListSupplier()",
+			"fabric": "getValues()"
+		},
+		{
+			"forge": "minInclusive()",
+			"fabric": "minInclusive()"
+		},
+		{
+			"forge": "maxSupplier()",
+			"fabric": "maxSupplier()"
+		},
+		{
+			"forge": "encodableMaxInclusive()",
+			"fabric": "encodableMaxInclusive()"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.stateproviders.NoiseProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.stateproviders.NoiseProvider",
+			"fabric": "net.minecraft.world.gen.stateprovider.NoiseBlockStateProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "states",
+			"fabric": "states"
+		},
+		{
+			"forge": "noiseProviderCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> arg0)",
+			"fabric": "fillNoiseCodecFields(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> instance)"
+		},
+		{
+			"forge": "noiseProviderCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> arg0)",
+			"fabric": "fillNoiseCodecFields(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> instance)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getState(RandomSource arg0, BlockPos arg1)",
+			"fabric": "get(Random arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "getRandomState(List<BlockState> arg0, BlockPos arg1, double arg2)",
+			"fabric": "getStateFromList(List<BlockState> states, BlockPos pos, double scale)"
+		},
+		{
+			"forge": "getRandomState(List<BlockState> arg0, double arg1)",
+			"fabric": "getStateAtValue(List<BlockState> states, double value)"
+		}
+	]
+}

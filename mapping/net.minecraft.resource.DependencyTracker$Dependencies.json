@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.DependencySorter$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.util.DependencySorter$Entry",
+			"fabric": "net.minecraft.resource.DependencyTracker$Dependencies"
+		},
+		{
+			"forge": "visitRequiredDependencies(Consumer<K> arg0)",
+			"fabric": "forDependencies(Consumer<K> callback)"
+		},
+		{
+			"forge": "visitRequiredDependencies(Consumer<K> arg0)",
+			"fabric": "forDependencies(Consumer<K> callback)"
+		},
+		{
+			"forge": "visitOptionalDependencies(Consumer<K> arg0)",
+			"fabric": "forOptionalDependencies(Consumer<K> callback)"
+		}
+	]
+}

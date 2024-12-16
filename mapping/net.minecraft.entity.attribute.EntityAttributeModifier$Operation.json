@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation",
+			"fabric": "net.minecraft.entity.attribute.EntityAttributeModifier$Operation"
+		},
+		{
+			"forge": "ADDITION",
+			"fabric": "ADDITION"
+		},
+		{
+			"forge": "ADDITION",
+			"fabric": "ADDITION"
+		},
+		{
+			"forge": "MULTIPLY_BASE",
+			"fabric": "MULTIPLY_BASE"
+		},
+		{
+			"forge": "MULTIPLY_TOTAL",
+			"fabric": "MULTIPLY_TOTAL"
+		},
+		{
+			"forge": "OPERATIONS",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "OPERATIONS",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "value",
+			"fabric": "id"
+		},
+		{
+			"forge": "toValue()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "toValue()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "fromValue(int arg0)",
+			"fabric": "fromId(int id)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.server.packs.PackType",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.PackType",
+			"fabric": "net.minecraft.resource.ResourceType"
+		},
+		{
+			"forge": "CLIENT_RESOURCES",
+			"fabric": "CLIENT_RESOURCES"
+		},
+		{
+			"forge": "CLIENT_RESOURCES",
+			"fabric": "CLIENT_RESOURCES"
+		},
+		{
+			"forge": "SERVER_DATA",
+			"fabric": "SERVER_DATA"
+		},
+		{
+			"forge": "directory",
+			"fabric": "directory"
+		},
+		{
+			"forge": "directory",
+			"fabric": "directory"
+		},
+		{
+			"forge": "getDirectory()",
+			"fabric": "getDirectory()"
+		},
+		{
+			"forge": "getDirectory()",
+			"fabric": "getDirectory()"
+		}
+	]
+}

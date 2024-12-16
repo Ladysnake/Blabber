@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.server.dedicated.DedicatedServer$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.dedicated.DedicatedServer$1",
+			"fabric": "net.minecraft.server.dedicated.MinecraftDedicatedServer$1"
+		}
+	]
+}

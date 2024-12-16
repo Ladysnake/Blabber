@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ItemSteerable",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ItemSteerable",
+			"fabric": "net.minecraft.entity.ItemSteerable"
+		},
+		{
+			"forge": "boost()",
+			"fabric": "consumeOnAStickItem()"
+		},
+		{
+			"forge": "boost()",
+			"fabric": "consumeOnAStickItem()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.WardenEmissiveLayer$AlphaFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.WardenEmissiveLayer$AlphaFunction",
+			"fabric": "net.minecraft.client.render.entity.feature.WardenFeatureRenderer$AnimationAngleAdjuster"
+		},
+		{
+			"forge": "apply(T arg0, float arg1, float arg2)",
+			"fabric": "apply(T warden, float tickDelta, float animationProgress)"
+		},
+		{
+			"forge": "apply(T arg0, float arg1, float arg2)",
+			"fabric": "apply(T warden, float tickDelta, float animationProgress)"
+		}
+	]
+}

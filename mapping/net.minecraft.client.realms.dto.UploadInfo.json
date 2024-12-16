@@ -1,0 +1,77 @@
+{
+	"title": "com.mojang.realmsclient.dto.UploadInfo",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.UploadInfo",
+			"fabric": "net.minecraft.client.realms.dto.UploadInfo"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DEFAULT_SCHEMA",
+			"fabric": "HTTP_PROTOCOL"
+		},
+		{
+			"forge": "DEFAULT_PORT",
+			"fabric": "PORT"
+		},
+		{
+			"forge": "URI_SCHEMA_PATTERN",
+			"fabric": "PROTOCOL_PATTERN"
+		},
+		{
+			"forge": "worldClosed",
+			"fabric": "worldClosed"
+		},
+		{
+			"forge": "token",
+			"fabric": "token"
+		},
+		{
+			"forge": "uploadEndpoint",
+			"fabric": "uploadEndpoint"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "assembleUri(String arg0, int arg1)",
+			"fabric": "getUrl(String url, int port)"
+		},
+		{
+			"forge": "selectPortOrDefault(int arg0, int arg1)",
+			"fabric": "getPort(int port, int urlPort)"
+		},
+		{
+			"forge": "ensureEndpointSchema(String arg0, Matcher arg1)",
+			"fabric": "getUrlWithProtocol(String url, Matcher matcher)"
+		},
+		{
+			"forge": "createRequest(String arg0)",
+			"fabric": "createRequestContent(String token)"
+		},
+		{
+			"forge": "getToken()",
+			"fabric": "getToken()"
+		},
+		{
+			"forge": "getUploadEndpoint()",
+			"fabric": "getUploadEndpoint()"
+		},
+		{
+			"forge": "isWorldClosed()",
+			"fabric": "isWorldClosed()"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.ShufflingList$WeightedEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.ShufflingList$WeightedEntry",
+			"fabric": "net.minecraft.util.collection.WeightedList$Entry"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "weight",
+			"fabric": "weight"
+		},
+		{
+			"forge": "randWeight",
+			"fabric": "shuffledOrder"
+		},
+		{
+			"forge": "getRandWeight()",
+			"fabric": "getShuffledOrder()"
+		},
+		{
+			"forge": "getRandWeight()",
+			"fabric": "getShuffledOrder()"
+		},
+		{
+			"forge": "setRandom(float arg0)",
+			"fabric": "setShuffledOrder(float random)"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getElement()"
+		},
+		{
+			"forge": "getWeight()",
+			"fabric": "getWeight()"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.Codec<E> arg0)",
+			"fabric": "createCodec(com.mojang.serialization.Codec<E> codec)"
+		}
+	]
+}

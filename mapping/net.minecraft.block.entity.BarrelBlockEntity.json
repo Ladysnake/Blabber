@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BarrelBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BarrelBlockEntity",
+			"fabric": "net.minecraft.block.entity.BarrelBlockEntity"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "openersCounter",
+			"fabric": "stateManager"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getInvStackList()"
+		},
+		{
+			"forge": "setItems(NonNullList<ItemStack> arg0)",
+			"fabric": "setInvStackList(DefaultedList<ItemStack> arg0)"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1)",
+			"fabric": "createScreenHandler(int arg0, PlayerInventory arg1)"
+		},
+		{
+			"forge": "startOpen(Player arg0)",
+			"fabric": "onOpen(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stopOpen(Player arg0)",
+			"fabric": "onClose(PlayerEntity arg0)"
+		},
+		{
+			"forge": "recheckOpen()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "updateBlockState(BlockState arg0, boolean arg1)",
+			"fabric": "setOpen(BlockState state, boolean open)"
+		},
+		{
+			"forge": "playSound(BlockState arg0, SoundEvent arg1)",
+			"fabric": "playSound(BlockState state, SoundEvent soundEvent)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.chat.LastSeenMessagesTracker$Update",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.LastSeenMessagesTracker$Update",
+			"fabric": "net.minecraft.network.message.LastSeenMessagesCollector$LastSeenMessages"
+		},
+		{
+			"forge": "lastSeen",
+			"fabric": "lastSeen"
+		},
+		{
+			"forge": "lastSeen",
+			"fabric": "lastSeen"
+		},
+		{
+			"forge": "update",
+			"fabric": "update"
+		},
+		{
+			"forge": "lastSeen()",
+			"fabric": "lastSeen()"
+		},
+		{
+			"forge": "lastSeen()",
+			"fabric": "lastSeen()"
+		},
+		{
+			"forge": "update()",
+			"fabric": "update()"
+		}
+	]
+}

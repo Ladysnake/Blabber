@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundEditBookPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundEditBookPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.BookUpdateC2SPacket"
+		},
+		{
+			"forge": "MAX_BYTES_PER_CHAR",
+			"fabric": "field_34038"
+		},
+		{
+			"forge": "MAX_BYTES_PER_CHAR",
+			"fabric": "field_34038"
+		},
+		{
+			"forge": "TITLE_MAX_CHARS",
+			"fabric": "MAX_TITLE_LENGTH"
+		},
+		{
+			"forge": "PAGE_MAX_CHARS",
+			"fabric": "MAX_PAGE_LENGTH"
+		},
+		{
+			"forge": "MAX_PAGES_COUNT",
+			"fabric": "MAX_PAGES"
+		},
+		{
+			"forge": "slot",
+			"fabric": "slot"
+		},
+		{
+			"forge": "pages",
+			"fabric": "pages"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getPages()",
+			"fabric": "getPages()"
+		},
+		{
+			"forge": "getTitle()",
+			"fabric": "getTitle()"
+		},
+		{
+			"forge": "getSlot()",
+			"fabric": "getSlot()"
+		}
+	]
+}

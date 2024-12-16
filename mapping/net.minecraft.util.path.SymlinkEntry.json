@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.validation.ForbiddenSymlinkInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.validation.ForbiddenSymlinkInfo",
+			"fabric": "net.minecraft.util.path.SymlinkEntry"
+		},
+		{
+			"forge": "link",
+			"fabric": "link"
+		},
+		{
+			"forge": "link",
+			"fabric": "link"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "link()",
+			"fabric": "link()"
+		},
+		{
+			"forge": "link()",
+			"fabric": "link()"
+		},
+		{
+			"forge": "target()",
+			"fabric": "target()"
+		}
+	]
+}

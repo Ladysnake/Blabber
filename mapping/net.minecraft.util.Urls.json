@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.util.CommonLinks",
+	"items": [
+		{
+			"forge": "net.minecraft.util.CommonLinks",
+			"fabric": "net.minecraft.util.Urls"
+		},
+		{
+			"forge": "GDPR",
+			"fabric": "GDPR"
+		},
+		{
+			"forge": "GDPR",
+			"fabric": "GDPR"
+		},
+		{
+			"forge": "EULA",
+			"fabric": "EULA"
+		},
+		{
+			"forge": "ATTRIBUTION",
+			"fabric": "JAVA_ATTRIBUTION"
+		},
+		{
+			"forge": "LICENSES",
+			"fabric": "JAVA_LICENSES"
+		},
+		{
+			"forge": "BUY_MINECRAFT_JAVA",
+			"fabric": "BUY_JAVA"
+		},
+		{
+			"forge": "ACCOUNT_SETTINGS",
+			"fabric": "JAVA_ACCOUNT_SETTINGS"
+		},
+		{
+			"forge": "SNAPSHOT_FEEDBACK",
+			"fabric": "SNAPSHOT_FEEDBACK"
+		},
+		{
+			"forge": "RELEASE_FEEDBACK",
+			"fabric": "JAVA_FEEDBACK"
+		},
+		{
+			"forge": "SNAPSHOT_BUGS_FEEDBACK",
+			"fabric": "SNAPSHOT_BUGS"
+		},
+		{
+			"forge": "ACCESSIBILITY_HELP",
+			"fabric": "JAVA_ACCESSIBILITY"
+		},
+		{
+			"forge": "REPORTING_HELP",
+			"fabric": "ABOUT_JAVA_REPORTING"
+		},
+		{
+			"forge": "SUSPENSION_HELP",
+			"fabric": "JAVA_MODERATION"
+		},
+		{
+			"forge": "BLOCKING_HELP",
+			"fabric": "JAVA_BLOCKING"
+		},
+		{
+			"forge": "SYMLINK_HELP",
+			"fabric": "MINECRAFT_SYMLINKS"
+		},
+		{
+			"forge": "START_REALMS_TRIAL",
+			"fabric": "JAVA_REALMS_TRIAL"
+		},
+		{
+			"forge": "BUY_REALMS",
+			"fabric": "BUY_JAVA_REALMS"
+		},
+		{
+			"forge": "REALMS_TERMS",
+			"fabric": "REALMS_TERMS"
+		},
+		{
+			"forge": "REALMS_CONTENT_CREATION",
+			"fabric": "REALMS_CONTENT_CREATOR"
+		},
+		{
+			"forge": "REALMS_UPDATE_MOJANG_ACCOUNT",
+			"fabric": "UPDATE_MOJANG_ACCOUNT"
+		},
+		{
+			"forge": "extendRealms(String arg0, String arg1, boolean arg2)",
+			"fabric": "getExtendJavaRealmsUrl(String subscriptionId, String profileId, boolean trial)"
+		},
+		{
+			"forge": "extendRealms(String arg0, String arg1, boolean arg2)",
+			"fabric": "getExtendJavaRealmsUrl(String subscriptionId, String profileId, boolean trial)"
+		},
+		{
+			"forge": "extendRealms(String arg0, String arg1)",
+			"fabric": "getExtendJavaRealmsUrl(String subscriptionId, String profileId)"
+		}
+	]
+}

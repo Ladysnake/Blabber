@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.DripstoneThickness",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.DripstoneThickness",
+			"fabric": "net.minecraft.block.enums.Thickness"
+		},
+		{
+			"forge": "TIP_MERGE",
+			"fabric": "TIP_MERGE"
+		},
+		{
+			"forge": "TIP_MERGE",
+			"fabric": "TIP_MERGE"
+		},
+		{
+			"forge": "TIP",
+			"fabric": "TIP"
+		},
+		{
+			"forge": "FRUSTUM",
+			"fabric": "FRUSTUM"
+		},
+		{
+			"forge": "MIDDLE",
+			"fabric": "MIDDLE"
+		},
+		{
+			"forge": "BASE",
+			"fabric": "BASE"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.entity.monster.Creeper",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Creeper",
+			"fabric": "net.minecraft.entity.mob.CreeperEntity"
+		},
+		{
+			"forge": "DATA_SWELL_DIR",
+			"fabric": "FUSE_SPEED"
+		},
+		{
+			"forge": "DATA_SWELL_DIR",
+			"fabric": "FUSE_SPEED"
+		},
+		{
+			"forge": "DATA_IS_POWERED",
+			"fabric": "CHARGED"
+		},
+		{
+			"forge": "DATA_IS_IGNITED",
+			"fabric": "IGNITED"
+		},
+		{
+			"forge": "oldSwell",
+			"fabric": "lastFuseTime"
+		},
+		{
+			"forge": "swell",
+			"fabric": "currentFuseTime"
+		},
+		{
+			"forge": "maxSwell",
+			"fabric": "fuseTime"
+		},
+		{
+			"forge": "explosionRadius",
+			"fabric": "explosionRadius"
+		},
+		{
+			"forge": "droppedSkulls",
+			"fabric": "headsDropped"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createCreeperAttributes()"
+		},
+		{
+			"forge": "getMaxFallDistance()",
+			"fabric": "getSafeFallDistance()"
+		},
+		{
+			"forge": "causeFallDamage(float arg0, float arg1, DamageSource arg2)",
+			"fabric": "handleFallDamage(float arg0, float arg1, DamageSource arg2)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "setTarget(LivingEntity arg0)",
+			"fabric": "setTarget(LivingEntity arg0)"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "dropCustomDeathLoot(DamageSource arg0, int arg1, boolean arg2)",
+			"fabric": "dropEquipment(DamageSource arg0, int arg1, boolean arg2)"
+		},
+		{
+			"forge": "doHurtTarget(Entity arg0)",
+			"fabric": "tryAttack(Entity arg0)"
+		},
+		{
+			"forge": "isPowered()",
+			"fabric": "shouldRenderOverlay()"
+		},
+		{
+			"forge": "getSwelling(float arg0)",
+			"fabric": "getClientFuseTime(float timeDelta)"
+		},
+		{
+			"forge": "getSwellDir()",
+			"fabric": "getFuseSpeed()"
+		},
+		{
+			"forge": "setSwellDir(int arg0)",
+			"fabric": "setFuseSpeed(int fuseSpeed)"
+		},
+		{
+			"forge": "thunderHit(ServerLevel arg0, LightningBolt arg1)",
+			"fabric": "onStruckByLightning(ServerWorld arg0, LightningEntity arg1)"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "explodeCreeper()",
+			"fabric": "explode()"
+		},
+		{
+			"forge": "spawnLingeringCloud()",
+			"fabric": "spawnEffectsCloud()"
+		},
+		{
+			"forge": "isIgnited()",
+			"fabric": "isIgnited()"
+		},
+		{
+			"forge": "ignite()",
+			"fabric": "ignite()"
+		},
+		{
+			"forge": "canDropMobsSkull()",
+			"fabric": "shouldDropHead()"
+		},
+		{
+			"forge": "increaseDroppedSkulls()",
+			"fabric": "onHeadDropped()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.dedicated.DedicatedServerProperties$WorldDimensionData",
+	"items": [
+		{
+			"forge": "net.minecraft.server.dedicated.DedicatedServerProperties$WorldDimensionData",
+			"fabric": "net.minecraft.server.dedicated.ServerPropertiesHandler$WorldGenProperties"
+		},
+		{
+			"forge": "generatorSettings",
+			"fabric": "generatorSettings"
+		},
+		{
+			"forge": "generatorSettings",
+			"fabric": "generatorSettings"
+		},
+		{
+			"forge": "levelType",
+			"fabric": "levelType"
+		},
+		{
+			"forge": "LEGACY_PRESET_NAMES",
+			"fabric": "LEVEL_TYPE_TO_PRESET_KEY"
+		},
+		{
+			"forge": "create(RegistryAccess arg0)",
+			"fabric": "createDimensionsRegistryHolder(DynamicRegistryManager dynamicRegistryManager)"
+		},
+		{
+			"forge": "create(RegistryAccess arg0)",
+			"fabric": "createDimensionsRegistryHolder(DynamicRegistryManager dynamicRegistryManager)"
+		},
+		{
+			"forge": "generatorSettings()",
+			"fabric": "generatorSettings()"
+		},
+		{
+			"forge": "levelType()",
+			"fabric": "levelType()"
+		}
+	]
+}

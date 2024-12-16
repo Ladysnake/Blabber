@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.monster.Zombie$ZombieAttackTurtleEggGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Zombie$ZombieAttackTurtleEggGoal",
+			"fabric": "net.minecraft.entity.mob.ZombieEntity$DestroyEggGoal"
+		},
+		{
+			"forge": "playDestroyProgressSound(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "tickStepping(WorldAccess arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "playDestroyProgressSound(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "tickStepping(WorldAccess arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "playBreakSound(Level arg0, BlockPos arg1)",
+			"fabric": "onDestroyBlock(World arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "acceptedDistance()",
+			"fabric": "getDesiredDistanceToTarget()"
+		}
+	]
+}

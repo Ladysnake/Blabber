@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.monster.warden.AngerLevel",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.warden.AngerLevel",
+			"fabric": "net.minecraft.entity.mob.Angriness"
+		},
+		{
+			"forge": "CALM",
+			"fabric": "CALM"
+		},
+		{
+			"forge": "CALM",
+			"fabric": "CALM"
+		},
+		{
+			"forge": "AGITATED",
+			"fabric": "AGITATED"
+		},
+		{
+			"forge": "ANGRY",
+			"fabric": "ANGRY"
+		},
+		{
+			"forge": "SORTED_LEVELS",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "SORTED_LEVELS",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "minimumAnger",
+			"fabric": "threshold"
+		},
+		{
+			"forge": "ambientSound",
+			"fabric": "sound"
+		},
+		{
+			"forge": "listeningSound",
+			"fabric": "listeningSound"
+		},
+		{
+			"forge": "getMinimumAnger()",
+			"fabric": "getThreshold()"
+		},
+		{
+			"forge": "getMinimumAnger()",
+			"fabric": "getThreshold()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getSound()"
+		},
+		{
+			"forge": "getListeningSound()",
+			"fabric": "getListeningSound()"
+		},
+		{
+			"forge": "byAnger(int arg0)",
+			"fabric": "getForAnger(int anger)"
+		},
+		{
+			"forge": "isAngry()",
+			"fabric": "isAngry()"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.blaze3d.vertex.Tesselator",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.Tesselator",
+			"fabric": "net.minecraft.client.render.Tessellator"
+		},
+		{
+			"forge": "MAX_MEMORY_USE",
+			"fabric": "field_32051"
+		},
+		{
+			"forge": "MAX_MEMORY_USE",
+			"fabric": "field_32051"
+		},
+		{
+			"forge": "MAX_FLOATS",
+			"fabric": "DEFAULT_BUFFER_CAPACITY"
+		},
+		{
+			"forge": "builder",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "getInstance()",
+			"fabric": "getInstance()"
+		},
+		{
+			"forge": "getInstance()",
+			"fabric": "getInstance()"
+		},
+		{
+			"forge": "end()",
+			"fabric": "draw()"
+		},
+		{
+			"forge": "getBuilder()",
+			"fabric": "getBuffer()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.WorldLoader",
+	"items": [
+		{
+			"forge": "net.minecraft.server.WorldLoader",
+			"fabric": "net.minecraft.server.SaveLoading"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "load(WorldLoader$InitConfig arg0, WorldLoader$WorldDataSupplier<D> arg1, WorldLoader$ResultFactory<D, R> arg2, Executor arg3, Executor arg4)",
+			"fabric": "load(SaveLoading$ServerConfig serverConfig, SaveLoading$LoadContextSupplier<D> loadContextSupplier, SaveLoading$SaveApplierFactory<D, R> saveApplierFactory, Executor prepareExecutor, Executor applyExecutor)"
+		},
+		{
+			"forge": "load(WorldLoader$InitConfig arg0, WorldLoader$WorldDataSupplier<D> arg1, WorldLoader$ResultFactory<D, R> arg2, Executor arg3, Executor arg4)",
+			"fabric": "load(SaveLoading$ServerConfig serverConfig, SaveLoading$LoadContextSupplier<D> loadContextSupplier, SaveLoading$SaveApplierFactory<D, R> saveApplierFactory, Executor prepareExecutor, Executor applyExecutor)"
+		},
+		{
+			"forge": "loadLayer(ResourceManager arg0, LayeredRegistryAccess<RegistryLayer> arg1, RegistryLayer arg2, List<RegistryDataLoader$RegistryData<?>> arg3)",
+			"fabric": "loadDynamicRegistryManager(ResourceManager resourceManager, CombinedDynamicRegistries<ServerDynamicRegistryType> combinedDynamicRegistries, ServerDynamicRegistryType type, List<RegistryLoader$Entry<?>> entries)"
+		},
+		{
+			"forge": "loadAndReplaceLayer(ResourceManager arg0, LayeredRegistryAccess<RegistryLayer> arg1, RegistryLayer arg2, List<RegistryDataLoader$RegistryData<?>> arg3)",
+			"fabric": "withRegistriesLoaded(ResourceManager resourceManager, CombinedDynamicRegistries<ServerDynamicRegistryType> combinedDynamicRegistries, ServerDynamicRegistryType type, List<RegistryLoader$Entry<?>> entries)"
+		}
+	]
+}

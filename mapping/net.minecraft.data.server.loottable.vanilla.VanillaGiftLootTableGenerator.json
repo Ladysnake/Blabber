@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.data.loot.packs.VanillaGiftLoot",
+	"items": [
+		{
+			"forge": "net.minecraft.data.loot.packs.VanillaGiftLoot",
+			"fabric": "net.minecraft.data.server.loottable.vanilla.VanillaGiftLootTableGenerator"
+		},
+		{
+			"forge": "generate(BiConsumer<ResourceLocation, LootTable$Builder> arg0)",
+			"fabric": "accept(BiConsumer<Identifier, LootTable$Builder> arg0)"
+		},
+		{
+			"forge": "generate(BiConsumer<ResourceLocation, LootTable$Builder> arg0)",
+			"fabric": "accept(BiConsumer<Identifier, LootTable$Builder> arg0)"
+		}
+	]
+}

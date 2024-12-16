@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.player.Input",
+	"items": [
+		{
+			"forge": "net.minecraft.client.player.Input",
+			"fabric": "net.minecraft.client.input.Input"
+		},
+		{
+			"forge": "leftImpulse",
+			"fabric": "movementSideways"
+		},
+		{
+			"forge": "leftImpulse",
+			"fabric": "movementSideways"
+		},
+		{
+			"forge": "forwardImpulse",
+			"fabric": "movementForward"
+		},
+		{
+			"forge": "up",
+			"fabric": "pressingForward"
+		},
+		{
+			"forge": "down",
+			"fabric": "pressingBack"
+		},
+		{
+			"forge": "left",
+			"fabric": "pressingLeft"
+		},
+		{
+			"forge": "right",
+			"fabric": "pressingRight"
+		},
+		{
+			"forge": "jumping",
+			"fabric": "jumping"
+		},
+		{
+			"forge": "shiftKeyDown",
+			"fabric": "sneaking"
+		},
+		{
+			"forge": "tick(boolean arg0, float arg1)",
+			"fabric": "tick(boolean slowDown, float slowDownFactor)"
+		},
+		{
+			"forge": "tick(boolean arg0, float arg1)",
+			"fabric": "tick(boolean slowDown, float slowDownFactor)"
+		},
+		{
+			"forge": "getMoveVector()",
+			"fabric": "getMovementInput()"
+		},
+		{
+			"forge": "hasForwardImpulse()",
+			"fabric": "hasForwardMovement()"
+		}
+	]
+}

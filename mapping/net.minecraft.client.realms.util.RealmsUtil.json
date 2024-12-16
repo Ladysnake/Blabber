@@ -1,0 +1,61 @@
+{
+	"title": "com.mojang.realmsclient.util.RealmsUtil",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.RealmsUtil",
+			"fabric": "net.minecraft.client.realms.util.RealmsUtil"
+		},
+		{
+			"forge": "SESSION_SERVICE",
+			"fabric": "SESSION_SERVICE"
+		},
+		{
+			"forge": "SESSION_SERVICE",
+			"fabric": "SESSION_SERVICE"
+		},
+		{
+			"forge": "RIGHT_NOW",
+			"fabric": "NOW_TEXT"
+		},
+		{
+			"forge": "GAME_PROFILE_CACHE",
+			"fabric": "gameProfileCache"
+		},
+		{
+			"forge": "MINUTES",
+			"fabric": "SECONDS_PER_MINUTE"
+		},
+		{
+			"forge": "HOURS",
+			"fabric": "SECONDS_PER_HOUR"
+		},
+		{
+			"forge": "DAYS",
+			"fabric": "SECONDS_PER_DAY"
+		},
+		{
+			"forge": "uuidToName(String arg0)",
+			"fabric": "uuidToName(String uuid)"
+		},
+		{
+			"forge": "uuidToName(String arg0)",
+			"fabric": "uuidToName(String uuid)"
+		},
+		{
+			"forge": "getGameProfile(String arg0)",
+			"fabric": "uuidToProfile(String uuid)"
+		},
+		{
+			"forge": "convertToAgePresentation(long arg0)",
+			"fabric": "convertToAgePresentation(long milliseconds)"
+		},
+		{
+			"forge": "convertToAgePresentationFromInstant(Date arg0)",
+			"fabric": "convertToAgePresentation(Date date)"
+		},
+		{
+			"forge": "renderPlayerFace(GuiGraphics arg0, int arg1, int arg2, int arg3, String arg4)",
+			"fabric": "drawPlayerHead(DrawContext context, int x, int y, int size, String uuid)"
+		}
+	]
+}

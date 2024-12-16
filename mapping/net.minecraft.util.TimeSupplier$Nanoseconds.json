@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.TimeSource$NanoTimeSource",
+	"items": [
+		{
+			"forge": "net.minecraft.util.TimeSource$NanoTimeSource",
+			"fabric": "net.minecraft.util.TimeSupplier$Nanoseconds"
+		},
+		{
+			"forge": "get(TimeUnit arg0)",
+			"fabric": "get(TimeUnit arg0)"
+		},
+		{
+			"forge": "get(TimeUnit arg0)",
+			"fabric": "get(TimeUnit arg0)"
+		}
+	]
+}

@@ -1,0 +1,161 @@
+{
+	"title": "net.minecraft.client.Camera",
+	"items": [
+		{
+			"forge": "net.minecraft.client.Camera",
+			"fabric": "net.minecraft.client.render.Camera"
+		},
+		{
+			"forge": "initialized",
+			"fabric": "ready"
+		},
+		{
+			"forge": "initialized",
+			"fabric": "ready"
+		},
+		{
+			"forge": "level",
+			"fabric": "area"
+		},
+		{
+			"forge": "entity",
+			"fabric": "focusedEntity"
+		},
+		{
+			"forge": "position",
+			"fabric": "pos"
+		},
+		{
+			"forge": "blockPosition",
+			"fabric": "blockPos"
+		},
+		{
+			"forge": "forwards",
+			"fabric": "horizontalPlane"
+		},
+		{
+			"forge": "up",
+			"fabric": "verticalPlane"
+		},
+		{
+			"forge": "left",
+			"fabric": "diagonalPlane"
+		},
+		{
+			"forge": "xRot",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "yRot",
+			"fabric": "yaw"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "detached",
+			"fabric": "thirdPerson"
+		},
+		{
+			"forge": "eyeHeight",
+			"fabric": "cameraY"
+		},
+		{
+			"forge": "eyeHeightOld",
+			"fabric": "lastCameraY"
+		},
+		{
+			"forge": "FOG_DISTANCE_SCALE",
+			"fabric": "field_32133"
+		},
+		{
+			"forge": "setup(BlockGetter arg0, Entity arg1, boolean arg2, boolean arg3, float arg4)",
+			"fabric": "update(BlockView area, Entity focusedEntity, boolean thirdPerson, boolean inverseView, float tickDelta)"
+		},
+		{
+			"forge": "setup(BlockGetter arg0, Entity arg1, boolean arg2, boolean arg3, float arg4)",
+			"fabric": "update(BlockView area, Entity focusedEntity, boolean thirdPerson, boolean inverseView, float tickDelta)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "updateEyeHeight()"
+		},
+		{
+			"forge": "getMaxZoom(double arg0)",
+			"fabric": "clipToSpace(double desiredCameraDistance)"
+		},
+		{
+			"forge": "move(double arg0, double arg1, double arg2)",
+			"fabric": "moveBy(double x, double y, double z)"
+		},
+		{
+			"forge": "setRotation(float arg0, float arg1)",
+			"fabric": "setRotation(float yaw, float pitch)"
+		},
+		{
+			"forge": "setPosition(double arg0, double arg1, double arg2)",
+			"fabric": "setPos(double x, double y, double z)"
+		},
+		{
+			"forge": "setPosition(Vec3 arg0)",
+			"fabric": "setPos(Vec3d pos)"
+		},
+		{
+			"forge": "getPosition()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getBlockPosition()",
+			"fabric": "getBlockPos()"
+		},
+		{
+			"forge": "getXRot()",
+			"fabric": "getPitch()"
+		},
+		{
+			"forge": "getYRot()",
+			"fabric": "getYaw()"
+		},
+		{
+			"forge": "rotation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "getEntity()",
+			"fabric": "getFocusedEntity()"
+		},
+		{
+			"forge": "isInitialized()",
+			"fabric": "isReady()"
+		},
+		{
+			"forge": "isDetached()",
+			"fabric": "isThirdPerson()"
+		},
+		{
+			"forge": "getNearPlane()",
+			"fabric": "getProjection()"
+		},
+		{
+			"forge": "getFluidInCamera()",
+			"fabric": "getSubmersionType()"
+		},
+		{
+			"forge": "getLookVector()",
+			"fabric": "getHorizontalPlane()"
+		},
+		{
+			"forge": "getUpVector()",
+			"fabric": "getVerticalPlane()"
+		},
+		{
+			"forge": "getLeftVector()",
+			"fabric": "getDiagonalPlane()"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		}
+	]
+}

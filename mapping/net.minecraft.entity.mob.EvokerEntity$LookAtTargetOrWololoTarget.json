@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.Evoker$EvokerCastingSpellGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Evoker$EvokerCastingSpellGoal",
+			"fabric": "net.minecraft.entity.mob.EvokerEntity$LookAtTargetOrWololoTarget"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

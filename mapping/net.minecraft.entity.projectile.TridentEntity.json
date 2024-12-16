@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.entity.projectile.ThrownTrident",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.ThrownTrident",
+			"fabric": "net.minecraft.entity.projectile.TridentEntity"
+		},
+		{
+			"forge": "ID_LOYALTY",
+			"fabric": "LOYALTY"
+		},
+		{
+			"forge": "ID_LOYALTY",
+			"fabric": "LOYALTY"
+		},
+		{
+			"forge": "ID_FOIL",
+			"fabric": "ENCHANTED"
+		},
+		{
+			"forge": "tridentItem",
+			"fabric": "tridentStack"
+		},
+		{
+			"forge": "dealtDamage",
+			"fabric": "dealtDamage"
+		},
+		{
+			"forge": "clientSideReturnTridentTickCount",
+			"fabric": "returnTimer"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isAcceptibleReturnOwner()",
+			"fabric": "isOwnerAlive()"
+		},
+		{
+			"forge": "getPickupItem()",
+			"fabric": "asItemStack()"
+		},
+		{
+			"forge": "isFoil()",
+			"fabric": "isEnchanted()"
+		},
+		{
+			"forge": "findHitEntity(Vec3 arg0, Vec3 arg1)",
+			"fabric": "getEntityCollision(Vec3d arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "onHitEntity(EntityHitResult arg0)",
+			"fabric": "onEntityHit(EntityHitResult arg0)"
+		},
+		{
+			"forge": "isChanneling()",
+			"fabric": "hasChanneling()"
+		},
+		{
+			"forge": "tryPickup(Player arg0)",
+			"fabric": "tryPickup(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getDefaultHitGroundSoundEvent()",
+			"fabric": "getHitSound()"
+		},
+		{
+			"forge": "playerTouch(Player arg0)",
+			"fabric": "onPlayerCollision(PlayerEntity arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "tickDespawn()",
+			"fabric": "age()"
+		},
+		{
+			"forge": "getWaterInertia()",
+			"fabric": "getDragInWater()"
+		},
+		{
+			"forge": "shouldRender(double arg0, double arg1, double arg2)",
+			"fabric": "shouldRender(double arg0, double arg1, double arg2)"
+		}
+	]
+}

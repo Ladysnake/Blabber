@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.GoatRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.GoatRenderer",
+			"fabric": "net.minecraft.client.render.entity.GoatEntityRenderer"
+		},
+		{
+			"forge": "GOAT_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "GOAT_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Goat arg0)",
+			"fabric": "getTexture(GoatEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Goat arg0)",
+			"fabric": "getTexture(GoatEntity arg0)"
+		}
+	]
+}

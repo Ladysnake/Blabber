@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.chunk.PalettedContainerRO",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.PalettedContainerRO",
+			"fabric": "net.minecraft.world.chunk.ReadableContainer"
+		},
+		{
+			"forge": "get(int arg0, int arg1, int arg2)",
+			"fabric": "get(int x, int y, int z)"
+		},
+		{
+			"forge": "get(int arg0, int arg1, int arg2)",
+			"fabric": "get(int x, int y, int z)"
+		},
+		{
+			"forge": "getAll(Consumer<T> arg0)",
+			"fabric": "forEachValue(Consumer<T> action)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "writePacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "getSerializedSize()",
+			"fabric": "getPacketSize()"
+		},
+		{
+			"forge": "maybeHas(Predicate<T> arg0)",
+			"fabric": "hasAny(Predicate<T> predicate)"
+		},
+		{
+			"forge": "count(PalettedContainer$CountConsumer<T> arg0)",
+			"fabric": "count(PalettedContainer$Counter<T> counter)"
+		},
+		{
+			"forge": "recreate()",
+			"fabric": "slice()"
+		},
+		{
+			"forge": "pack(IdMap<T> arg0, PalettedContainer$Strategy arg1)",
+			"fabric": "serialize(IndexedIterable<T> idList, PalettedContainer$PaletteProvider paletteProvider)"
+		}
+	]
+}

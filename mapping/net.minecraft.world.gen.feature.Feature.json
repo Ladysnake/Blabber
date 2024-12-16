@@ -1,0 +1,317 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.Feature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.Feature",
+			"fabric": "net.minecraft.world.gen.feature.Feature"
+		},
+		{
+			"forge": "NO_OP",
+			"fabric": "NO_OP"
+		},
+		{
+			"forge": "NO_OP",
+			"fabric": "NO_OP"
+		},
+		{
+			"forge": "TREE",
+			"fabric": "TREE"
+		},
+		{
+			"forge": "FLOWER",
+			"fabric": "FLOWER"
+		},
+		{
+			"forge": "NO_BONEMEAL_FLOWER",
+			"fabric": "NO_BONEMEAL_FLOWER"
+		},
+		{
+			"forge": "RANDOM_PATCH",
+			"fabric": "RANDOM_PATCH"
+		},
+		{
+			"forge": "BLOCK_PILE",
+			"fabric": "BLOCK_PILE"
+		},
+		{
+			"forge": "SPRING",
+			"fabric": "SPRING_FEATURE"
+		},
+		{
+			"forge": "CHORUS_PLANT",
+			"fabric": "CHORUS_PLANT"
+		},
+		{
+			"forge": "REPLACE_SINGLE_BLOCK",
+			"fabric": "REPLACE_SINGLE_BLOCK"
+		},
+		{
+			"forge": "VOID_START_PLATFORM",
+			"fabric": "VOID_START_PLATFORM"
+		},
+		{
+			"forge": "DESERT_WELL",
+			"fabric": "DESERT_WELL"
+		},
+		{
+			"forge": "FOSSIL",
+			"fabric": "FOSSIL"
+		},
+		{
+			"forge": "HUGE_RED_MUSHROOM",
+			"fabric": "HUGE_RED_MUSHROOM"
+		},
+		{
+			"forge": "HUGE_BROWN_MUSHROOM",
+			"fabric": "HUGE_BROWN_MUSHROOM"
+		},
+		{
+			"forge": "ICE_SPIKE",
+			"fabric": "ICE_SPIKE"
+		},
+		{
+			"forge": "GLOWSTONE_BLOB",
+			"fabric": "GLOWSTONE_BLOB"
+		},
+		{
+			"forge": "FREEZE_TOP_LAYER",
+			"fabric": "FREEZE_TOP_LAYER"
+		},
+		{
+			"forge": "VINES",
+			"fabric": "VINES"
+		},
+		{
+			"forge": "BLOCK_COLUMN",
+			"fabric": "BLOCK_COLUMN"
+		},
+		{
+			"forge": "VEGETATION_PATCH",
+			"fabric": "VEGETATION_PATCH"
+		},
+		{
+			"forge": "WATERLOGGED_VEGETATION_PATCH",
+			"fabric": "WATERLOGGED_VEGETATION_PATCH"
+		},
+		{
+			"forge": "ROOT_SYSTEM",
+			"fabric": "ROOT_SYSTEM"
+		},
+		{
+			"forge": "MULTIFACE_GROWTH",
+			"fabric": "MULTIFACE_GROWTH"
+		},
+		{
+			"forge": "UNDERWATER_MAGMA",
+			"fabric": "UNDERWATER_MAGMA"
+		},
+		{
+			"forge": "MONSTER_ROOM",
+			"fabric": "MONSTER_ROOM"
+		},
+		{
+			"forge": "BLUE_ICE",
+			"fabric": "BLUE_ICE"
+		},
+		{
+			"forge": "ICEBERG",
+			"fabric": "ICEBERG"
+		},
+		{
+			"forge": "FOREST_ROCK",
+			"fabric": "FOREST_ROCK"
+		},
+		{
+			"forge": "DISK",
+			"fabric": "DISK"
+		},
+		{
+			"forge": "LAKE",
+			"fabric": "LAKE"
+		},
+		{
+			"forge": "ORE",
+			"fabric": "ORE"
+		},
+		{
+			"forge": "END_SPIKE",
+			"fabric": "END_SPIKE"
+		},
+		{
+			"forge": "END_ISLAND",
+			"fabric": "END_ISLAND"
+		},
+		{
+			"forge": "END_GATEWAY",
+			"fabric": "END_GATEWAY"
+		},
+		{
+			"forge": "SEAGRASS",
+			"fabric": "SEAGRASS"
+		},
+		{
+			"forge": "KELP",
+			"fabric": "KELP"
+		},
+		{
+			"forge": "CORAL_TREE",
+			"fabric": "CORAL_TREE"
+		},
+		{
+			"forge": "CORAL_MUSHROOM",
+			"fabric": "CORAL_MUSHROOM"
+		},
+		{
+			"forge": "CORAL_CLAW",
+			"fabric": "CORAL_CLAW"
+		},
+		{
+			"forge": "SEA_PICKLE",
+			"fabric": "SEA_PICKLE"
+		},
+		{
+			"forge": "SIMPLE_BLOCK",
+			"fabric": "SIMPLE_BLOCK"
+		},
+		{
+			"forge": "BAMBOO",
+			"fabric": "BAMBOO"
+		},
+		{
+			"forge": "HUGE_FUNGUS",
+			"fabric": "HUGE_FUNGUS"
+		},
+		{
+			"forge": "NETHER_FOREST_VEGETATION",
+			"fabric": "NETHER_FOREST_VEGETATION"
+		},
+		{
+			"forge": "WEEPING_VINES",
+			"fabric": "WEEPING_VINES"
+		},
+		{
+			"forge": "TWISTING_VINES",
+			"fabric": "TWISTING_VINES"
+		},
+		{
+			"forge": "BASALT_COLUMNS",
+			"fabric": "BASALT_COLUMNS"
+		},
+		{
+			"forge": "DELTA_FEATURE",
+			"fabric": "DELTA_FEATURE"
+		},
+		{
+			"forge": "REPLACE_BLOBS",
+			"fabric": "NETHERRACK_REPLACE_BLOBS"
+		},
+		{
+			"forge": "FILL_LAYER",
+			"fabric": "FILL_LAYER"
+		},
+		{
+			"forge": "BONUS_CHEST",
+			"fabric": "BONUS_CHEST"
+		},
+		{
+			"forge": "BASALT_PILLAR",
+			"fabric": "BASALT_PILLAR"
+		},
+		{
+			"forge": "SCATTERED_ORE",
+			"fabric": "SCATTERED_ORE"
+		},
+		{
+			"forge": "RANDOM_SELECTOR",
+			"fabric": "RANDOM_SELECTOR"
+		},
+		{
+			"forge": "SIMPLE_RANDOM_SELECTOR",
+			"fabric": "SIMPLE_RANDOM_SELECTOR"
+		},
+		{
+			"forge": "RANDOM_BOOLEAN_SELECTOR",
+			"fabric": "RANDOM_BOOLEAN_SELECTOR"
+		},
+		{
+			"forge": "GEODE",
+			"fabric": "GEODE"
+		},
+		{
+			"forge": "DRIPSTONE_CLUSTER",
+			"fabric": "DRIPSTONE_CLUSTER"
+		},
+		{
+			"forge": "LARGE_DRIPSTONE",
+			"fabric": "LARGE_DRIPSTONE"
+		},
+		{
+			"forge": "POINTED_DRIPSTONE",
+			"fabric": "POINTED_DRIPSTONE"
+		},
+		{
+			"forge": "SCULK_PATCH",
+			"fabric": "SCULK_PATCH"
+		},
+		{
+			"forge": "configuredCodec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "register(String arg0, F arg1)",
+			"fabric": "register(String name, F feature)"
+		},
+		{
+			"forge": "register(String arg0, F arg1)",
+			"fabric": "register(String name, F feature)"
+		},
+		{
+			"forge": "configuredCodec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "setBlock(LevelWriter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "setBlockState(ModifiableWorld world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "isReplaceable(TagKey<Block> arg0)",
+			"fabric": "notInBlockTagPredicate(TagKey<Block> tag)"
+		},
+		{
+			"forge": "safeSetBlock(WorldGenLevel arg0, BlockPos arg1, BlockState arg2, Predicate<BlockState> arg3)",
+			"fabric": "setBlockStateIf(StructureWorldAccess world, BlockPos pos, BlockState state, Predicate<BlockState> predicate)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<FC> arg0)",
+			"fabric": "generate(FeatureContext<FC> context)"
+		},
+		{
+			"forge": "place(FC arg0, WorldGenLevel arg1, ChunkGenerator arg2, RandomSource arg3, BlockPos arg4)",
+			"fabric": "generateIfValid(FC config, StructureWorldAccess world, ChunkGenerator chunkGenerator, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "isStone(BlockState arg0)",
+			"fabric": "isStone(BlockState state)"
+		},
+		{
+			"forge": "isDirt(BlockState arg0)",
+			"fabric": "isSoil(BlockState state)"
+		},
+		{
+			"forge": "isGrassOrDirt(LevelSimulatedReader arg0, BlockPos arg1)",
+			"fabric": "isSoil(TestableWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "checkNeighbors(Function<BlockPos, BlockState> arg0, BlockPos arg1, Predicate<BlockState> arg2)",
+			"fabric": "testAdjacentStates(Function<BlockPos, BlockState> posToState, BlockPos pos, Predicate<BlockState> predicate)"
+		},
+		{
+			"forge": "isAdjacentToAir(Function<BlockPos, BlockState> arg0, BlockPos arg1)",
+			"fabric": "isExposedToAir(Function<BlockPos, BlockState> posToState, BlockPos pos)"
+		},
+		{
+			"forge": "markAboveForPostProcessing(WorldGenLevel arg0, BlockPos arg1)",
+			"fabric": "markBlocksAboveForPostProcessing(StructureWorldAccess world, BlockPos pos)"
+		}
+	]
+}

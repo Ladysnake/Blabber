@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.resources.sounds.BeeFlyingSoundInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.BeeFlyingSoundInstance",
+			"fabric": "net.minecraft.client.sound.PassiveBeeSoundInstance"
+		},
+		{
+			"forge": "getAlternativeSoundInstance()",
+			"fabric": "getReplacement()"
+		},
+		{
+			"forge": "getAlternativeSoundInstance()",
+			"fabric": "getReplacement()"
+		},
+		{
+			"forge": "shouldSwitchSounds()",
+			"fabric": "shouldReplace()"
+		}
+	]
+}

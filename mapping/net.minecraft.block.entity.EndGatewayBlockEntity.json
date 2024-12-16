@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.world.level.block.entity.TheEndGatewayBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.TheEndGatewayBlockEntity",
+			"fabric": "net.minecraft.block.entity.EndGatewayBlockEntity"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SPAWN_TIME",
+			"fabric": "field_31368"
+		},
+		{
+			"forge": "COOLDOWN_TIME",
+			"fabric": "field_31369"
+		},
+		{
+			"forge": "ATTENTION_INTERVAL",
+			"fabric": "field_31370"
+		},
+		{
+			"forge": "EVENT_COOLDOWN",
+			"fabric": "field_31371"
+		},
+		{
+			"forge": "GATEWAY_HEIGHT_ABOVE_SURFACE",
+			"fabric": "field_31372"
+		},
+		{
+			"forge": "age",
+			"fabric": "age"
+		},
+		{
+			"forge": "teleportCooldown",
+			"fabric": "teleportCooldown"
+		},
+		{
+			"forge": "exitPortal",
+			"fabric": "exitPortalPos"
+		},
+		{
+			"forge": "exactTeleport",
+			"fabric": "exactTeleport"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "beamAnimationTick(Level arg0, BlockPos arg1, BlockState arg2, TheEndGatewayBlockEntity arg3)",
+			"fabric": "clientTick(World world, BlockPos pos, BlockState state, EndGatewayBlockEntity blockEntity)"
+		},
+		{
+			"forge": "teleportTick(Level arg0, BlockPos arg1, BlockState arg2, TheEndGatewayBlockEntity arg3)",
+			"fabric": "serverTick(World world, BlockPos pos, BlockState state, EndGatewayBlockEntity blockEntity)"
+		},
+		{
+			"forge": "canEntityTeleport(Entity arg0)",
+			"fabric": "canTeleport(Entity entity)"
+		},
+		{
+			"forge": "isSpawning()",
+			"fabric": "isRecentlyGenerated()"
+		},
+		{
+			"forge": "isCoolingDown()",
+			"fabric": "needsCooldownBeforeTeleporting()"
+		},
+		{
+			"forge": "getSpawnPercent(float arg0)",
+			"fabric": "getRecentlyGeneratedBeamHeight(float tickDelta)"
+		},
+		{
+			"forge": "getCooldownPercent(float arg0)",
+			"fabric": "getCooldownBeamHeight(float tickDelta)"
+		},
+		{
+			"forge": "getUpdatePacket()",
+			"fabric": "toUpdatePacket()"
+		},
+		{
+			"forge": "getUpdateTag()",
+			"fabric": "toInitialChunkDataNbt()"
+		},
+		{
+			"forge": "triggerCooldown(Level arg0, BlockPos arg1, BlockState arg2, TheEndGatewayBlockEntity arg3)",
+			"fabric": "startTeleportCooldown(World world, BlockPos pos, BlockState state, EndGatewayBlockEntity blockEntity)"
+		},
+		{
+			"forge": "triggerEvent(int arg0, int arg1)",
+			"fabric": "onSyncedBlockEvent(int arg0, int arg1)"
+		},
+		{
+			"forge": "teleportEntity(Level arg0, BlockPos arg1, BlockState arg2, Entity arg3, TheEndGatewayBlockEntity arg4)",
+			"fabric": "tryTeleportingEntity(World world, BlockPos pos, BlockState state, Entity entity, EndGatewayBlockEntity blockEntity)"
+		},
+		{
+			"forge": "findExitPosition(Level arg0, BlockPos arg1)",
+			"fabric": "findBestPortalExitPos(World world, BlockPos pos)"
+		},
+		{
+			"forge": "findOrCreateValidTeleportPos(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "setupExitPortalLocation(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "findExitPortalXZPosTentative(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "findTeleportLocation(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "isChunkEmpty(ServerLevel arg0, Vec3 arg1)",
+			"fabric": "isChunkEmpty(ServerWorld world, Vec3d pos)"
+		},
+		{
+			"forge": "findTallestBlock(BlockGetter arg0, BlockPos arg1, int arg2, boolean arg3)",
+			"fabric": "findExitPortalPos(BlockView world, BlockPos pos, int searchRadius, boolean force)"
+		},
+		{
+			"forge": "getChunk(Level arg0, Vec3 arg1)",
+			"fabric": "getChunk(World world, Vec3d pos)"
+		},
+		{
+			"forge": "findValidSpawnInChunk(LevelChunk arg0)",
+			"fabric": "findPortalPosition(WorldChunk chunk)"
+		},
+		{
+			"forge": "spawnGatewayPortal(ServerLevel arg0, BlockPos arg1, EndGatewayConfiguration arg2)",
+			"fabric": "createPortal(ServerWorld world, BlockPos pos, EndGatewayFeatureConfig config)"
+		},
+		{
+			"forge": "shouldRenderFace(Direction arg0)",
+			"fabric": "shouldDrawSide(Direction arg0)"
+		},
+		{
+			"forge": "getParticleAmount()",
+			"fabric": "getDrawnSidesCount()"
+		},
+		{
+			"forge": "setExitPosition(BlockPos arg0, boolean arg1)",
+			"fabric": "setExitPortalPos(BlockPos pos, boolean exactTeleport)"
+		}
+	]
+}

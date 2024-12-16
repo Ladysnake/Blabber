@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.client.RecipeBookCategories",
+	"items": [
+		{
+			"forge": "net.minecraft.client.RecipeBookCategories",
+			"fabric": "net.minecraft.client.recipebook.RecipeBookGroup"
+		},
+		{
+			"forge": "CRAFTING_SEARCH",
+			"fabric": "CRAFTING_SEARCH"
+		},
+		{
+			"forge": "CRAFTING_SEARCH",
+			"fabric": "CRAFTING_SEARCH"
+		},
+		{
+			"forge": "CRAFTING_BUILDING_BLOCKS",
+			"fabric": "CRAFTING_BUILDING_BLOCKS"
+		},
+		{
+			"forge": "CRAFTING_REDSTONE",
+			"fabric": "CRAFTING_REDSTONE"
+		},
+		{
+			"forge": "CRAFTING_EQUIPMENT",
+			"fabric": "CRAFTING_EQUIPMENT"
+		},
+		{
+			"forge": "CRAFTING_MISC",
+			"fabric": "CRAFTING_MISC"
+		},
+		{
+			"forge": "FURNACE_SEARCH",
+			"fabric": "FURNACE_SEARCH"
+		},
+		{
+			"forge": "FURNACE_FOOD",
+			"fabric": "FURNACE_FOOD"
+		},
+		{
+			"forge": "FURNACE_BLOCKS",
+			"fabric": "FURNACE_BLOCKS"
+		},
+		{
+			"forge": "FURNACE_MISC",
+			"fabric": "FURNACE_MISC"
+		},
+		{
+			"forge": "BLAST_FURNACE_SEARCH",
+			"fabric": "BLAST_FURNACE_SEARCH"
+		},
+		{
+			"forge": "BLAST_FURNACE_BLOCKS",
+			"fabric": "BLAST_FURNACE_BLOCKS"
+		},
+		{
+			"forge": "BLAST_FURNACE_MISC",
+			"fabric": "BLAST_FURNACE_MISC"
+		},
+		{
+			"forge": "SMOKER_SEARCH",
+			"fabric": "SMOKER_SEARCH"
+		},
+		{
+			"forge": "SMOKER_FOOD",
+			"fabric": "SMOKER_FOOD"
+		},
+		{
+			"forge": "STONECUTTER",
+			"fabric": "STONECUTTER"
+		},
+		{
+			"forge": "SMITHING",
+			"fabric": "SMITHING"
+		},
+		{
+			"forge": "CAMPFIRE",
+			"fabric": "CAMPFIRE"
+		},
+		{
+			"forge": "UNKNOWN",
+			"fabric": "UNKNOWN"
+		},
+		{
+			"forge": "SMOKER_CATEGORIES",
+			"fabric": "SMOKER"
+		},
+		{
+			"forge": "SMOKER_CATEGORIES",
+			"fabric": "SMOKER"
+		},
+		{
+			"forge": "BLAST_FURNACE_CATEGORIES",
+			"fabric": "BLAST_FURNACE"
+		},
+		{
+			"forge": "FURNACE_CATEGORIES",
+			"fabric": "FURNACE"
+		},
+		{
+			"forge": "CRAFTING_CATEGORIES",
+			"fabric": "CRAFTING"
+		},
+		{
+			"forge": "AGGREGATE_CATEGORIES",
+			"fabric": "SEARCH_MAP"
+		},
+		{
+			"forge": "itemIcons",
+			"fabric": "icons"
+		},
+		{
+			"forge": "getCategories(RecipeBookType arg0)",
+			"fabric": "getGroups(RecipeBookCategory category)"
+		},
+		{
+			"forge": "getCategories(RecipeBookType arg0)",
+			"fabric": "getGroups(RecipeBookCategory category)"
+		},
+		{
+			"forge": "getIconItems()",
+			"fabric": "getIcons()"
+		}
+	]
+}

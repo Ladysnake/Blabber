@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.gui.screens.reporting.ReportReasonSelectionScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.reporting.ReportReasonSelectionScreen",
+			"fabric": "net.minecraft.client.gui.screen.report.AbuseReportReasonScreen"
+		},
+		{
+			"forge": "REASON_TITLE",
+			"fabric": "TITLE_TEXT"
+		},
+		{
+			"forge": "REASON_TITLE",
+			"fabric": "TITLE_TEXT"
+		},
+		{
+			"forge": "REASON_DESCRIPTION",
+			"fabric": "DESCRIPTION_TEXT"
+		},
+		{
+			"forge": "READ_INFO_LABEL",
+			"fabric": "READ_INFO_TEXT"
+		},
+		{
+			"forge": "FOOTER_HEIGHT",
+			"fabric": "REASON_LIST_BOTTOM_MARGIN"
+		},
+		{
+			"forge": "BUTTON_WIDTH",
+			"fabric": "DONE_BUTTON_WIDTH"
+		},
+		{
+			"forge": "BUTTON_HEIGHT",
+			"fabric": "DONE_BUTTON_HEIGHT"
+		},
+		{
+			"forge": "CONTENT_WIDTH",
+			"fabric": "SCREEN_WIDTH"
+		},
+		{
+			"forge": "PADDING",
+			"fabric": "TOP_MARGIN"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "reasonSelectionList",
+			"fabric": "reasonList"
+		},
+		{
+			"forge": "currentlySelectedReason",
+			"fabric": "reason"
+		},
+		{
+			"forge": "onSelectedReason",
+			"fabric": "reasonConsumer"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "buttonTop()",
+			"fabric": "getDoneButtonY()"
+		},
+		{
+			"forge": "contentLeft()",
+			"fabric": "getLeft()"
+		},
+		{
+			"forge": "contentRight()",
+			"fabric": "getRight()"
+		},
+		{
+			"forge": "descriptionTop()",
+			"fabric": "getTop()"
+		},
+		{
+			"forge": "descriptionBottom()",
+			"fabric": "getBottom()"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		}
+	]
+}

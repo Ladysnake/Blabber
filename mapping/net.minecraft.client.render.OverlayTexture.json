@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.client.renderer.texture.OverlayTexture",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.OverlayTexture",
+			"fabric": "net.minecraft.client.render.OverlayTexture"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "field_32956"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "field_32956"
+		},
+		{
+			"forge": "NO_WHITE_U",
+			"fabric": "field_32953"
+		},
+		{
+			"forge": "RED_OVERLAY_V",
+			"fabric": "field_32954"
+		},
+		{
+			"forge": "WHITE_OVERLAY_V",
+			"fabric": "field_32955"
+		},
+		{
+			"forge": "NO_OVERLAY",
+			"fabric": "DEFAULT_UV"
+		},
+		{
+			"forge": "texture",
+			"fabric": "texture"
+		},
+		{
+			"forge": "close()",
+			"fabric": "setupOverlayColor()"
+		},
+		{
+			"forge": "setupOverlayColor()",
+			"fabric": "setupOverlayColor()"
+		},
+		{
+			"forge": "u(float arg0)",
+			"fabric": "getU(float whiteOverlayProgress)"
+		},
+		{
+			"forge": "v(boolean arg0)",
+			"fabric": "getV(boolean hurt)"
+		},
+		{
+			"forge": "pack(int arg0, int arg1)",
+			"fabric": "packUv(int u, int v)"
+		},
+		{
+			"forge": "pack(float arg0, boolean arg1)",
+			"fabric": "getUv(float whiteOverlayProgress, boolean hurt)"
+		},
+		{
+			"forge": "teardownOverlayColor()",
+			"fabric": "teardownOverlayColor()"
+		}
+	]
+}

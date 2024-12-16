@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.VerticalAnchor$AboveBottom",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.VerticalAnchor$AboveBottom",
+			"fabric": "net.minecraft.world.gen.YOffset$AboveBottom"
+		},
+		{
+			"forge": "offset",
+			"fabric": "offset"
+		},
+		{
+			"forge": "offset",
+			"fabric": "offset"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "resolveY(WorldGenerationContext arg0)",
+			"fabric": "getY(HeightContext arg0)"
+		},
+		{
+			"forge": "resolveY(WorldGenerationContext arg0)",
+			"fabric": "getY(HeightContext arg0)"
+		},
+		{
+			"forge": "offset()",
+			"fabric": "offset()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.SpawnerBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SpawnerBlock",
+			"fabric": "net.minecraft.block.SpawnerBlock"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getTicker(Level arg0, BlockState arg1, BlockEntityType<T> arg2)",
+			"fabric": "getTicker(World arg0, BlockState arg1, BlockEntityType<T> arg2)"
+		},
+		{
+			"forge": "spawnAfterBreak(BlockState arg0, ServerLevel arg1, BlockPos arg2, ItemStack arg3, boolean arg4)",
+			"fabric": "onStacksDropped(BlockState arg0, ServerWorld arg1, BlockPos arg2, ItemStack arg3, boolean arg4)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, BlockGetter arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, BlockView arg1, List<Text> arg2, TooltipContext arg3)"
+		},
+		{
+			"forge": "getSpawnEntityDisplayName(ItemStack arg0)",
+			"fabric": "getEntityNameForTooltip(ItemStack stack)"
+		}
+	]
+}

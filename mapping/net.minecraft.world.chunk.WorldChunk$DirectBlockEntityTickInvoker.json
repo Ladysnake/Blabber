@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity",
+			"fabric": "net.minecraft.world.chunk.WorldChunk$DirectBlockEntityTickInvoker"
+		},
+		{
+			"forge": "blockEntity",
+			"fabric": "blockEntity"
+		},
+		{
+			"forge": "blockEntity",
+			"fabric": "blockEntity"
+		},
+		{
+			"forge": "ticker",
+			"fabric": "ticker"
+		},
+		{
+			"forge": "loggedInvalidBlockState",
+			"fabric": "hasWarned"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isRemoved()",
+			"fabric": "isRemoved()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getName()"
+		}
+	]
+}

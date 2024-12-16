@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
+			"fabric": "net.minecraft.world.gen.feature.GeodeFeature"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "DIRECTIONS"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "DIRECTIONS"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<GeodeConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<GeodeFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<GeodeConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<GeodeFeatureConfig> arg0)"
+		}
+	]
+}

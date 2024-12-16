@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.RenderStateShard$MultiTextureStateShard$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderStateShard$MultiTextureStateShard$Builder",
+			"fabric": "net.minecraft.client.render.RenderPhase$Textures$Builder"
+		},
+		{
+			"forge": "builder",
+			"fabric": "textures"
+		},
+		{
+			"forge": "builder",
+			"fabric": "textures"
+		},
+		{
+			"forge": "add(ResourceLocation arg0, boolean arg1, boolean arg2)",
+			"fabric": "add(Identifier id, boolean blur, boolean mipmap)"
+		},
+		{
+			"forge": "add(ResourceLocation arg0, boolean arg1, boolean arg2)",
+			"fabric": "add(Identifier id, boolean blur, boolean mipmap)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

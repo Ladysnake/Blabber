@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.ItemLike",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.ItemLike",
+			"fabric": "net.minecraft.item.ItemConvertible"
+		},
+		{
+			"forge": "asItem()",
+			"fabric": "asItem()"
+		},
+		{
+			"forge": "asItem()",
+			"fabric": "asItem()"
+		}
+	]
+}

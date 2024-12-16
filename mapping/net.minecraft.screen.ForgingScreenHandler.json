@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.world.inventory.ItemCombinerMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ItemCombinerMenu",
+			"fabric": "net.minecraft.screen.ForgingScreenHandler"
+		},
+		{
+			"forge": "INVENTORY_SLOTS_PER_ROW",
+			"fabric": "field_41901"
+		},
+		{
+			"forge": "INVENTORY_SLOTS_PER_ROW",
+			"fabric": "field_41901"
+		},
+		{
+			"forge": "INVENTORY_SLOTS_PER_COLUMN",
+			"fabric": "field_41902"
+		},
+		{
+			"forge": "access",
+			"fabric": "context"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "inputSlots",
+			"fabric": "input"
+		},
+		{
+			"forge": "inputSlotIndexes",
+			"fabric": "inputSlotIndices"
+		},
+		{
+			"forge": "resultSlots",
+			"fabric": "output"
+		},
+		{
+			"forge": "resultSlotIndex",
+			"fabric": "resultSlotIndex"
+		},
+		{
+			"forge": "mayPickup(Player arg0, boolean arg1)",
+			"fabric": "canTakeOutput(PlayerEntity player, boolean present)"
+		},
+		{
+			"forge": "mayPickup(Player arg0, boolean arg1)",
+			"fabric": "canTakeOutput(PlayerEntity player, boolean present)"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeOutput(PlayerEntity player, ItemStack stack)"
+		},
+		{
+			"forge": "isValidBlock(BlockState arg0)",
+			"fabric": "canUse(BlockState state)"
+		},
+		{
+			"forge": "createInputSlots(ItemCombinerMenuSlotDefinition arg0)",
+			"fabric": "addInputSlots(ForgingSlotsManager forgingSlotsManager)"
+		},
+		{
+			"forge": "createResultSlot(ItemCombinerMenuSlotDefinition arg0)",
+			"fabric": "addResultSlot(ForgingSlotsManager forgingSlotsManager)"
+		},
+		{
+			"forge": "createInventorySlots(Inventory arg0)",
+			"fabric": "addPlayerInventorySlots(PlayerInventory playerInventory)"
+		},
+		{
+			"forge": "createResult()",
+			"fabric": "updateResult()"
+		},
+		{
+			"forge": "createInputSlotDefinitions()",
+			"fabric": "getForgingSlotsManager()"
+		},
+		{
+			"forge": "createContainer(int arg0)",
+			"fabric": "createInputInventory(int size)"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "canMoveIntoInputSlots(ItemStack arg0)",
+			"fabric": "isValidIngredient(ItemStack stack)"
+		},
+		{
+			"forge": "getSlotToQuickMoveTo(ItemStack arg0)",
+			"fabric": "getSlotFor(ItemStack stack)"
+		},
+		{
+			"forge": "getResultSlot()",
+			"fabric": "getResultSlotIndex()"
+		},
+		{
+			"forge": "getInventorySlotStart()",
+			"fabric": "getPlayerInventoryStartIndex()"
+		},
+		{
+			"forge": "getInventorySlotEnd()",
+			"fabric": "getPlayerInventoryEndIndex()"
+		},
+		{
+			"forge": "getUseRowStart()",
+			"fabric": "getPlayerHotbarStartIndex()"
+		},
+		{
+			"forge": "getUseRowEnd()",
+			"fabric": "getPlayerHotbarEndIndex()"
+		}
+	]
+}

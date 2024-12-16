@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.DripstoneClusterConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.DripstoneClusterConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.DripstoneClusterFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "floorToCeilingSearchRange",
+			"fabric": "floorToCeilingSearchRange"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "radius",
+			"fabric": "radius"
+		},
+		{
+			"forge": "maxStalagmiteStalactiteHeightDiff",
+			"fabric": "maxStalagmiteStalactiteHeightDiff"
+		},
+		{
+			"forge": "heightDeviation",
+			"fabric": "heightDeviation"
+		},
+		{
+			"forge": "dripstoneBlockLayerThickness",
+			"fabric": "dripstoneBlockLayerThickness"
+		},
+		{
+			"forge": "density",
+			"fabric": "density"
+		},
+		{
+			"forge": "wetness",
+			"fabric": "wetness"
+		},
+		{
+			"forge": "chanceOfDripstoneColumnAtMaxDistanceFromCenter",
+			"fabric": "chanceOfDripstoneColumnAtMaxDistanceFromCenter"
+		},
+		{
+			"forge": "maxDistanceFromEdgeAffectingChanceOfDripstoneColumn",
+			"fabric": "maxDistanceFromCenterAffectingChanceOfDripstoneColumn"
+		},
+		{
+			"forge": "maxDistanceFromCenterAffectingHeightBias",
+			"fabric": "maxDistanceFromCenterAffectingHeightBias"
+		}
+	]
+}

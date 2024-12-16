@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetEnchantmentsFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetEnchantmentsFunction",
+			"fabric": "net.minecraft.loot.function.SetEnchantmentsLootFunction"
+		},
+		{
+			"forge": "enchantments",
+			"fabric": "enchantments"
+		},
+		{
+			"forge": "enchantments",
+			"fabric": "enchantments"
+		},
+		{
+			"forge": "add",
+			"fabric": "add"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "updateEnchantment(Map<Enchantment, Integer> arg0, Enchantment arg1, int arg2)",
+			"fabric": "addEnchantmentToMap(Map<Enchantment, Integer> map, Enchantment enchantment, int level)"
+		}
+	]
+}

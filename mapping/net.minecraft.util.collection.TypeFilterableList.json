@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.util.ClassInstanceMultiMap",
+	"items": [
+		{
+			"forge": "net.minecraft.util.ClassInstanceMultiMap",
+			"fabric": "net.minecraft.util.collection.TypeFilterableList"
+		},
+		{
+			"forge": "byClass",
+			"fabric": "elementsByType"
+		},
+		{
+			"forge": "byClass",
+			"fabric": "elementsByType"
+		},
+		{
+			"forge": "baseClass",
+			"fabric": "elementType"
+		},
+		{
+			"forge": "allInstances",
+			"fabric": "allElements"
+		},
+		{
+			"forge": "add(T arg0)",
+			"fabric": "add(T e)"
+		},
+		{
+			"forge": "add(T arg0)",
+			"fabric": "add(T e)"
+		},
+		{
+			"forge": "remove(Object arg0)",
+			"fabric": "remove(Object o)"
+		},
+		{
+			"forge": "contains(Object arg0)",
+			"fabric": "contains(Object o)"
+		},
+		{
+			"forge": "find(Class<S> arg0)",
+			"fabric": "getAllOfType(Class<S> type)"
+		},
+		{
+			"forge": "getAllInstances()",
+			"fabric": "copy()"
+		}
+	]
+}

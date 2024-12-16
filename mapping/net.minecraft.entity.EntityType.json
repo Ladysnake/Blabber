@@ -1,0 +1,753 @@
+{
+	"title": "net.minecraft.world.entity.EntityType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.EntityType",
+			"fabric": "net.minecraft.entity.EntityType"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ENTITY_TAG",
+			"fabric": "ENTITY_TAG_KEY"
+		},
+		{
+			"forge": "builtInRegistryHolder",
+			"fabric": "registryEntry"
+		},
+		{
+			"forge": "MAGIC_HORSE_WIDTH",
+			"fabric": "field_30054"
+		},
+		{
+			"forge": "DISPLAY_TRACKING_RANGE",
+			"fabric": "field_42459"
+		},
+		{
+			"forge": "ALLAY",
+			"fabric": "ALLAY"
+		},
+		{
+			"forge": "AREA_EFFECT_CLOUD",
+			"fabric": "AREA_EFFECT_CLOUD"
+		},
+		{
+			"forge": "ARMOR_STAND",
+			"fabric": "ARMOR_STAND"
+		},
+		{
+			"forge": "ARROW",
+			"fabric": "ARROW"
+		},
+		{
+			"forge": "AXOLOTL",
+			"fabric": "AXOLOTL"
+		},
+		{
+			"forge": "BAT",
+			"fabric": "BAT"
+		},
+		{
+			"forge": "BEE",
+			"fabric": "BEE"
+		},
+		{
+			"forge": "BLAZE",
+			"fabric": "BLAZE"
+		},
+		{
+			"forge": "BLOCK_DISPLAY",
+			"fabric": "BLOCK_DISPLAY"
+		},
+		{
+			"forge": "BOAT",
+			"fabric": "BOAT"
+		},
+		{
+			"forge": "CAMEL",
+			"fabric": "CAMEL"
+		},
+		{
+			"forge": "CAT",
+			"fabric": "CAT"
+		},
+		{
+			"forge": "CAVE_SPIDER",
+			"fabric": "CAVE_SPIDER"
+		},
+		{
+			"forge": "CHEST_BOAT",
+			"fabric": "CHEST_BOAT"
+		},
+		{
+			"forge": "CHEST_MINECART",
+			"fabric": "CHEST_MINECART"
+		},
+		{
+			"forge": "CHICKEN",
+			"fabric": "CHICKEN"
+		},
+		{
+			"forge": "COD",
+			"fabric": "COD"
+		},
+		{
+			"forge": "COMMAND_BLOCK_MINECART",
+			"fabric": "COMMAND_BLOCK_MINECART"
+		},
+		{
+			"forge": "COW",
+			"fabric": "COW"
+		},
+		{
+			"forge": "CREEPER",
+			"fabric": "CREEPER"
+		},
+		{
+			"forge": "DOLPHIN",
+			"fabric": "DOLPHIN"
+		},
+		{
+			"forge": "DONKEY",
+			"fabric": "DONKEY"
+		},
+		{
+			"forge": "DRAGON_FIREBALL",
+			"fabric": "DRAGON_FIREBALL"
+		},
+		{
+			"forge": "DROWNED",
+			"fabric": "DROWNED"
+		},
+		{
+			"forge": "EGG",
+			"fabric": "EGG"
+		},
+		{
+			"forge": "ELDER_GUARDIAN",
+			"fabric": "ELDER_GUARDIAN"
+		},
+		{
+			"forge": "END_CRYSTAL",
+			"fabric": "END_CRYSTAL"
+		},
+		{
+			"forge": "ENDER_DRAGON",
+			"fabric": "ENDER_DRAGON"
+		},
+		{
+			"forge": "ENDER_PEARL",
+			"fabric": "ENDER_PEARL"
+		},
+		{
+			"forge": "ENDERMAN",
+			"fabric": "ENDERMAN"
+		},
+		{
+			"forge": "ENDERMITE",
+			"fabric": "ENDERMITE"
+		},
+		{
+			"forge": "EVOKER",
+			"fabric": "EVOKER"
+		},
+		{
+			"forge": "EVOKER_FANGS",
+			"fabric": "EVOKER_FANGS"
+		},
+		{
+			"forge": "EXPERIENCE_BOTTLE",
+			"fabric": "EXPERIENCE_BOTTLE"
+		},
+		{
+			"forge": "EXPERIENCE_ORB",
+			"fabric": "EXPERIENCE_ORB"
+		},
+		{
+			"forge": "EYE_OF_ENDER",
+			"fabric": "EYE_OF_ENDER"
+		},
+		{
+			"forge": "FALLING_BLOCK",
+			"fabric": "FALLING_BLOCK"
+		},
+		{
+			"forge": "FIREWORK_ROCKET",
+			"fabric": "FIREWORK_ROCKET"
+		},
+		{
+			"forge": "FOX",
+			"fabric": "FOX"
+		},
+		{
+			"forge": "FROG",
+			"fabric": "FROG"
+		},
+		{
+			"forge": "FURNACE_MINECART",
+			"fabric": "FURNACE_MINECART"
+		},
+		{
+			"forge": "GHAST",
+			"fabric": "GHAST"
+		},
+		{
+			"forge": "GIANT",
+			"fabric": "GIANT"
+		},
+		{
+			"forge": "GLOW_ITEM_FRAME",
+			"fabric": "GLOW_ITEM_FRAME"
+		},
+		{
+			"forge": "GLOW_SQUID",
+			"fabric": "GLOW_SQUID"
+		},
+		{
+			"forge": "GOAT",
+			"fabric": "GOAT"
+		},
+		{
+			"forge": "GUARDIAN",
+			"fabric": "GUARDIAN"
+		},
+		{
+			"forge": "HOGLIN",
+			"fabric": "HOGLIN"
+		},
+		{
+			"forge": "HOPPER_MINECART",
+			"fabric": "HOPPER_MINECART"
+		},
+		{
+			"forge": "HORSE",
+			"fabric": "HORSE"
+		},
+		{
+			"forge": "HUSK",
+			"fabric": "HUSK"
+		},
+		{
+			"forge": "ILLUSIONER",
+			"fabric": "ILLUSIONER"
+		},
+		{
+			"forge": "INTERACTION",
+			"fabric": "INTERACTION"
+		},
+		{
+			"forge": "IRON_GOLEM",
+			"fabric": "IRON_GOLEM"
+		},
+		{
+			"forge": "ITEM",
+			"fabric": "ITEM"
+		},
+		{
+			"forge": "ITEM_DISPLAY",
+			"fabric": "ITEM_DISPLAY"
+		},
+		{
+			"forge": "ITEM_FRAME",
+			"fabric": "ITEM_FRAME"
+		},
+		{
+			"forge": "FIREBALL",
+			"fabric": "FIREBALL"
+		},
+		{
+			"forge": "LEASH_KNOT",
+			"fabric": "LEASH_KNOT"
+		},
+		{
+			"forge": "LIGHTNING_BOLT",
+			"fabric": "LIGHTNING_BOLT"
+		},
+		{
+			"forge": "LLAMA",
+			"fabric": "LLAMA"
+		},
+		{
+			"forge": "LLAMA_SPIT",
+			"fabric": "LLAMA_SPIT"
+		},
+		{
+			"forge": "MAGMA_CUBE",
+			"fabric": "MAGMA_CUBE"
+		},
+		{
+			"forge": "MARKER",
+			"fabric": "MARKER"
+		},
+		{
+			"forge": "MINECART",
+			"fabric": "MINECART"
+		},
+		{
+			"forge": "MOOSHROOM",
+			"fabric": "MOOSHROOM"
+		},
+		{
+			"forge": "MULE",
+			"fabric": "MULE"
+		},
+		{
+			"forge": "OCELOT",
+			"fabric": "OCELOT"
+		},
+		{
+			"forge": "PAINTING",
+			"fabric": "PAINTING"
+		},
+		{
+			"forge": "PANDA",
+			"fabric": "PANDA"
+		},
+		{
+			"forge": "PARROT",
+			"fabric": "PARROT"
+		},
+		{
+			"forge": "PHANTOM",
+			"fabric": "PHANTOM"
+		},
+		{
+			"forge": "PIG",
+			"fabric": "PIG"
+		},
+		{
+			"forge": "PIGLIN",
+			"fabric": "PIGLIN"
+		},
+		{
+			"forge": "PIGLIN_BRUTE",
+			"fabric": "PIGLIN_BRUTE"
+		},
+		{
+			"forge": "PILLAGER",
+			"fabric": "PILLAGER"
+		},
+		{
+			"forge": "POLAR_BEAR",
+			"fabric": "POLAR_BEAR"
+		},
+		{
+			"forge": "POTION",
+			"fabric": "POTION"
+		},
+		{
+			"forge": "PUFFERFISH",
+			"fabric": "PUFFERFISH"
+		},
+		{
+			"forge": "RABBIT",
+			"fabric": "RABBIT"
+		},
+		{
+			"forge": "RAVAGER",
+			"fabric": "RAVAGER"
+		},
+		{
+			"forge": "SALMON",
+			"fabric": "SALMON"
+		},
+		{
+			"forge": "SHEEP",
+			"fabric": "SHEEP"
+		},
+		{
+			"forge": "SHULKER",
+			"fabric": "SHULKER"
+		},
+		{
+			"forge": "SHULKER_BULLET",
+			"fabric": "SHULKER_BULLET"
+		},
+		{
+			"forge": "SILVERFISH",
+			"fabric": "SILVERFISH"
+		},
+		{
+			"forge": "SKELETON",
+			"fabric": "SKELETON"
+		},
+		{
+			"forge": "SKELETON_HORSE",
+			"fabric": "SKELETON_HORSE"
+		},
+		{
+			"forge": "SLIME",
+			"fabric": "SLIME"
+		},
+		{
+			"forge": "SMALL_FIREBALL",
+			"fabric": "SMALL_FIREBALL"
+		},
+		{
+			"forge": "SNIFFER",
+			"fabric": "SNIFFER"
+		},
+		{
+			"forge": "SNOW_GOLEM",
+			"fabric": "SNOW_GOLEM"
+		},
+		{
+			"forge": "SNOWBALL",
+			"fabric": "SNOWBALL"
+		},
+		{
+			"forge": "SPAWNER_MINECART",
+			"fabric": "SPAWNER_MINECART"
+		},
+		{
+			"forge": "SPECTRAL_ARROW",
+			"fabric": "SPECTRAL_ARROW"
+		},
+		{
+			"forge": "SPIDER",
+			"fabric": "SPIDER"
+		},
+		{
+			"forge": "SQUID",
+			"fabric": "SQUID"
+		},
+		{
+			"forge": "STRAY",
+			"fabric": "STRAY"
+		},
+		{
+			"forge": "STRIDER",
+			"fabric": "STRIDER"
+		},
+		{
+			"forge": "TADPOLE",
+			"fabric": "TADPOLE"
+		},
+		{
+			"forge": "TEXT_DISPLAY",
+			"fabric": "TEXT_DISPLAY"
+		},
+		{
+			"forge": "TNT",
+			"fabric": "TNT"
+		},
+		{
+			"forge": "TNT_MINECART",
+			"fabric": "TNT_MINECART"
+		},
+		{
+			"forge": "TRADER_LLAMA",
+			"fabric": "TRADER_LLAMA"
+		},
+		{
+			"forge": "TRIDENT",
+			"fabric": "TRIDENT"
+		},
+		{
+			"forge": "TROPICAL_FISH",
+			"fabric": "TROPICAL_FISH"
+		},
+		{
+			"forge": "TURTLE",
+			"fabric": "TURTLE"
+		},
+		{
+			"forge": "VEX",
+			"fabric": "VEX"
+		},
+		{
+			"forge": "VILLAGER",
+			"fabric": "VILLAGER"
+		},
+		{
+			"forge": "VINDICATOR",
+			"fabric": "VINDICATOR"
+		},
+		{
+			"forge": "WANDERING_TRADER",
+			"fabric": "WANDERING_TRADER"
+		},
+		{
+			"forge": "WARDEN",
+			"fabric": "WARDEN"
+		},
+		{
+			"forge": "WITCH",
+			"fabric": "WITCH"
+		},
+		{
+			"forge": "WITHER",
+			"fabric": "WITHER"
+		},
+		{
+			"forge": "WITHER_SKELETON",
+			"fabric": "WITHER_SKELETON"
+		},
+		{
+			"forge": "WITHER_SKULL",
+			"fabric": "WITHER_SKULL"
+		},
+		{
+			"forge": "WOLF",
+			"fabric": "WOLF"
+		},
+		{
+			"forge": "ZOGLIN",
+			"fabric": "ZOGLIN"
+		},
+		{
+			"forge": "ZOMBIE",
+			"fabric": "ZOMBIE"
+		},
+		{
+			"forge": "ZOMBIE_HORSE",
+			"fabric": "ZOMBIE_HORSE"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER",
+			"fabric": "ZOMBIE_VILLAGER"
+		},
+		{
+			"forge": "ZOMBIFIED_PIGLIN",
+			"fabric": "ZOMBIFIED_PIGLIN"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "FISHING_BOBBER",
+			"fabric": "FISHING_BOBBER"
+		},
+		{
+			"forge": "factory",
+			"fabric": "factory"
+		},
+		{
+			"forge": "category",
+			"fabric": "spawnGroup"
+		},
+		{
+			"forge": "immuneTo",
+			"fabric": "canSpawnInside"
+		},
+		{
+			"forge": "serialize",
+			"fabric": "saveable"
+		},
+		{
+			"forge": "summon",
+			"fabric": "summonable"
+		},
+		{
+			"forge": "fireImmune",
+			"fabric": "fireImmune"
+		},
+		{
+			"forge": "canSpawnFarFromPlayer",
+			"fabric": "spawnableFarFromPlayer"
+		},
+		{
+			"forge": "clientTrackingRange",
+			"fabric": "maxTrackDistance"
+		},
+		{
+			"forge": "updateInterval",
+			"fabric": "trackTickInterval"
+		},
+		{
+			"forge": "descriptionId",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "description",
+			"fabric": "name"
+		},
+		{
+			"forge": "lootTable",
+			"fabric": "lootTableId"
+		},
+		{
+			"forge": "dimensions",
+			"fabric": "dimensions"
+		},
+		{
+			"forge": "requiredFeatures",
+			"fabric": "requiredFeatures"
+		},
+		{
+			"forge": "register(String arg0, EntityType$Builder<T> arg1)",
+			"fabric": "register(String id, EntityType$Builder<T> type)"
+		},
+		{
+			"forge": "register(String arg0, EntityType$Builder<T> arg1)",
+			"fabric": "register(String id, EntityType$Builder<T> type)"
+		},
+		{
+			"forge": "getKey(EntityType<?> arg0)",
+			"fabric": "getId(EntityType<?> type)"
+		},
+		{
+			"forge": "byString(String arg0)",
+			"fabric": "get(String id)"
+		},
+		{
+			"forge": "spawn(ServerLevel arg0, ItemStack arg1, Player arg2, BlockPos arg3, MobSpawnType arg4, boolean arg5, boolean arg6)",
+			"fabric": "spawnFromItemStack(ServerWorld world, ItemStack stack, PlayerEntity player, BlockPos pos, SpawnReason spawnReason, boolean alignPosition, boolean invertY)"
+		},
+		{
+			"forge": "createDefaultStackConfig(ServerLevel arg0, ItemStack arg1, Player arg2)",
+			"fabric": "copier(ServerWorld world, ItemStack stack, PlayerEntity player)"
+		},
+		{
+			"forge": "appendDefaultStackConfig(Consumer<T> arg0, ServerLevel arg1, ItemStack arg2, Player arg3)",
+			"fabric": "copier(Consumer<T> chained, ServerWorld world, ItemStack stack, PlayerEntity player)"
+		},
+		{
+			"forge": "appendCustomNameConfig(Consumer<T> arg0, ItemStack arg1)",
+			"fabric": "customNameCopier(Consumer<T> chained, ItemStack stack)"
+		},
+		{
+			"forge": "appendCustomEntityStackConfig(Consumer<T> arg0, ServerLevel arg1, ItemStack arg2, Player arg3)",
+			"fabric": "nbtCopier(Consumer<T> chained, ServerWorld world, ItemStack stack, PlayerEntity player)"
+		},
+		{
+			"forge": "spawn(ServerLevel arg0, BlockPos arg1, MobSpawnType arg2)",
+			"fabric": "spawn(ServerWorld world, BlockPos pos, SpawnReason reason)"
+		},
+		{
+			"forge": "spawn(ServerLevel arg0, CompoundTag arg1, Consumer<T> arg2, BlockPos arg3, MobSpawnType arg4, boolean arg5, boolean arg6)",
+			"fabric": "spawn(ServerWorld world, NbtCompound itemNbt, Consumer<T> afterConsumer, BlockPos pos, SpawnReason reason, boolean alignPosition, boolean invertY)"
+		},
+		{
+			"forge": "create(ServerLevel arg0, CompoundTag arg1, Consumer<T> arg2, BlockPos arg3, MobSpawnType arg4, boolean arg5, boolean arg6)",
+			"fabric": "create(ServerWorld world, NbtCompound itemNbt, Consumer<T> afterConsumer, BlockPos pos, SpawnReason reason, boolean alignPosition, boolean invertY)"
+		},
+		{
+			"forge": "getYOffset(LevelReader arg0, BlockPos arg1, boolean arg2, AABB arg3)",
+			"fabric": "getOriginY(WorldView world, BlockPos pos, boolean invertY, Box boundingBox)"
+		},
+		{
+			"forge": "updateCustomEntityTag(Level arg0, Player arg1, Entity arg2, CompoundTag arg3)",
+			"fabric": "loadFromEntityNbt(World world, PlayerEntity player, Entity entity, NbtCompound itemNbt)"
+		},
+		{
+			"forge": "canSerialize()",
+			"fabric": "isSaveable()"
+		},
+		{
+			"forge": "canSummon()",
+			"fabric": "isSummonable()"
+		},
+		{
+			"forge": "fireImmune()",
+			"fabric": "isFireImmune()"
+		},
+		{
+			"forge": "canSpawnFarFromPlayer()",
+			"fabric": "isSpawnableFarFromPlayer()"
+		},
+		{
+			"forge": "getCategory()",
+			"fabric": "getSpawnGroup()"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "getDescription()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "toShortString()",
+			"fabric": "getUntranslatedName()"
+		},
+		{
+			"forge": "getDefaultLootTable()",
+			"fabric": "getLootTableId()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "requiredFeatures()",
+			"fabric": "getRequiredFeatures()"
+		},
+		{
+			"forge": "create(Level arg0)",
+			"fabric": "create(World world)"
+		},
+		{
+			"forge": "create(CompoundTag arg0, Level arg1)",
+			"fabric": "getEntityFromNbt(NbtCompound nbt, World world)"
+		},
+		{
+			"forge": "getAABB(double arg0, double arg1, double arg2)",
+			"fabric": "createSimpleBoundingBox(double feetX, double feetY, double feetZ)"
+		},
+		{
+			"forge": "isBlockDangerous(BlockState arg0)",
+			"fabric": "isInvalidSpawn(BlockState state)"
+		},
+		{
+			"forge": "getDimensions()",
+			"fabric": "getDimensions()"
+		},
+		{
+			"forge": "by(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "loadEntityRecursive(CompoundTag arg0, Level arg1, Function<Entity, Entity> arg2)",
+			"fabric": "loadEntityWithPassengers(NbtCompound nbt, World world, Function<Entity, Entity> entityProcessor)"
+		},
+		{
+			"forge": "loadEntitiesRecursive(List<? extends Tag> arg0, Level arg1)",
+			"fabric": "streamFromNbt(List<? extends NbtElement> entityNbtList, World world)"
+		},
+		{
+			"forge": "loadStaticEntity(CompoundTag arg0, Level arg1)",
+			"fabric": "loadEntityFromNbt(NbtCompound nbt, World world)"
+		},
+		{
+			"forge": "clientTrackingRange()",
+			"fabric": "getMaxTrackDistance()"
+		},
+		{
+			"forge": "updateInterval()",
+			"fabric": "getTrackTickInterval()"
+		},
+		{
+			"forge": "trackDeltas()",
+			"fabric": "alwaysUpdateVelocity()"
+		},
+		{
+			"forge": "is(TagKey<EntityType<?>> arg0)",
+			"fabric": "isIn(TagKey<EntityType<?>> tag)"
+		},
+		{
+			"forge": "tryCast(Entity arg0)",
+			"fabric": "downcast(Entity arg0)"
+		},
+		{
+			"forge": "getBaseClass()",
+			"fabric": "getBaseClass()"
+		},
+		{
+			"forge": "builtInRegistryHolder()",
+			"fabric": "getRegistryEntry()"
+		}
+	]
+}

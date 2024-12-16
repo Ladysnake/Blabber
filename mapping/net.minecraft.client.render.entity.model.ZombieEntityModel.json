@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.model.ZombieModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.ZombieModel",
+			"fabric": "net.minecraft.client.render.entity.model.ZombieEntityModel"
+		},
+		{
+			"forge": "isAggressive(T arg0)",
+			"fabric": "isAttacking(T arg0)"
+		},
+		{
+			"forge": "isAggressive(T arg0)",
+			"fabric": "isAttacking(T arg0)"
+		}
+	]
+}

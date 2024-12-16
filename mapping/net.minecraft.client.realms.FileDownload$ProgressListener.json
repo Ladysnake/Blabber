@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.realmsclient.client.FileDownload$ProgressListener",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.client.FileDownload$ProgressListener",
+			"fabric": "net.minecraft.client.realms.FileDownload$ProgressListener"
+		},
+		{
+			"forge": "worldName",
+			"fabric": "worldName"
+		},
+		{
+			"forge": "worldName",
+			"fabric": "worldName"
+		},
+		{
+			"forge": "tempFile",
+			"fabric": "tempFile"
+		},
+		{
+			"forge": "levelStorageSource",
+			"fabric": "levelStorageSource"
+		},
+		{
+			"forge": "downloadStatus",
+			"fabric": "downloadStatus"
+		},
+		{
+			"forge": "actionPerformed(ActionEvent arg0)",
+			"fabric": "actionPerformed(ActionEvent e)"
+		},
+		{
+			"forge": "actionPerformed(ActionEvent arg0)",
+			"fabric": "actionPerformed(ActionEvent e)"
+		}
+	]
+}

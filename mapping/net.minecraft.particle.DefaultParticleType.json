@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.core.particles.SimpleParticleType",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.SimpleParticleType",
+			"fabric": "net.minecraft.particle.DefaultParticleType"
+		},
+		{
+			"forge": "DESERIALIZER",
+			"fabric": "PARAMETER_FACTORY"
+		},
+		{
+			"forge": "DESERIALIZER",
+			"fabric": "PARAMETER_FACTORY"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "writeToNetwork(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "writeToString()",
+			"fabric": "asString()"
+		}
+	]
+}

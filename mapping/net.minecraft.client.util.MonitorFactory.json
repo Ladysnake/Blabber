@@ -1,0 +1,17 @@
+{
+	"title": "com.mojang.blaze3d.platform.MonitorCreator",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.MonitorCreator",
+			"fabric": "net.minecraft.client.util.MonitorFactory"
+		},
+		{
+			"forge": "createMonitor(long arg0)",
+			"fabric": "createMonitor(long pointer)"
+		},
+		{
+			"forge": "createMonitor(long arg0)",
+			"fabric": "createMonitor(long pointer)"
+		}
+	]
+}

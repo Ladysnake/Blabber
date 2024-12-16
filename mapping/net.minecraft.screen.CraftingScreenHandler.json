@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.world.inventory.CraftingMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.CraftingMenu",
+			"fabric": "net.minecraft.screen.CraftingScreenHandler"
+		},
+		{
+			"forge": "RESULT_SLOT",
+			"fabric": "RESULT_ID"
+		},
+		{
+			"forge": "RESULT_SLOT",
+			"fabric": "RESULT_ID"
+		},
+		{
+			"forge": "CRAFT_SLOT_START",
+			"fabric": "INPUT_START"
+		},
+		{
+			"forge": "CRAFT_SLOT_END",
+			"fabric": "INPUT_END"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "INVENTORY_START"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "INVENTORY_END"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "HOTBAR_START"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "HOTBAR_END"
+		},
+		{
+			"forge": "craftSlots",
+			"fabric": "input"
+		},
+		{
+			"forge": "resultSlots",
+			"fabric": "result"
+		},
+		{
+			"forge": "access",
+			"fabric": "context"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "slotChangedCraftingGrid(AbstractContainerMenu arg0, Level arg1, Player arg2, CraftingContainer arg3, ResultContainer arg4)",
+			"fabric": "updateResult(ScreenHandler handler, World world, PlayerEntity player, RecipeInputInventory craftingInventory, CraftingResultInventory resultInventory)"
+		},
+		{
+			"forge": "slotChangedCraftingGrid(AbstractContainerMenu arg0, Level arg1, Player arg2, CraftingContainer arg3, ResultContainer arg4)",
+			"fabric": "updateResult(ScreenHandler handler, World world, PlayerEntity player, RecipeInputInventory craftingInventory, CraftingResultInventory resultInventory)"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "fillCraftSlotsStackedContents(StackedContents arg0)",
+			"fabric": "populateRecipeFinder(RecipeMatcher arg0)"
+		},
+		{
+			"forge": "clearCraftingContent()",
+			"fabric": "clearCraftingSlots()"
+		},
+		{
+			"forge": "recipeMatches(Recipe<? super CraftingContainer> arg0)",
+			"fabric": "matches(Recipe<? super RecipeInputInventory> arg0)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "canTakeItemForPickAll(ItemStack arg0, Slot arg1)",
+			"fabric": "canInsertIntoSlot(ItemStack arg0, Slot arg1)"
+		},
+		{
+			"forge": "getResultSlotIndex()",
+			"fabric": "getCraftingResultSlotIndex()"
+		},
+		{
+			"forge": "getGridWidth()",
+			"fabric": "getCraftingWidth()"
+		},
+		{
+			"forge": "getGridHeight()",
+			"fabric": "getCraftingHeight()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getCraftingSlotCount()"
+		},
+		{
+			"forge": "getRecipeBookType()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "shouldMoveToInventory(int arg0)",
+			"fabric": "canInsertIntoSlot(int arg0)"
+		}
+	]
+}

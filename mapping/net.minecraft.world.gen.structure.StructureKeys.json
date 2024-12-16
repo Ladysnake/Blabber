@@ -1,0 +1,153 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.BuiltinStructures",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.BuiltinStructures",
+			"fabric": "net.minecraft.world.gen.structure.StructureKeys"
+		},
+		{
+			"forge": "PILLAGER_OUTPOST",
+			"fabric": "PILLAGER_OUTPOST"
+		},
+		{
+			"forge": "PILLAGER_OUTPOST",
+			"fabric": "PILLAGER_OUTPOST"
+		},
+		{
+			"forge": "MINESHAFT",
+			"fabric": "MINESHAFT"
+		},
+		{
+			"forge": "MINESHAFT_MESA",
+			"fabric": "MINESHAFT_MESA"
+		},
+		{
+			"forge": "WOODLAND_MANSION",
+			"fabric": "MANSION"
+		},
+		{
+			"forge": "JUNGLE_TEMPLE",
+			"fabric": "JUNGLE_PYRAMID"
+		},
+		{
+			"forge": "DESERT_PYRAMID",
+			"fabric": "DESERT_PYRAMID"
+		},
+		{
+			"forge": "IGLOO",
+			"fabric": "IGLOO"
+		},
+		{
+			"forge": "SHIPWRECK",
+			"fabric": "SHIPWRECK"
+		},
+		{
+			"forge": "SHIPWRECK_BEACHED",
+			"fabric": "SHIPWRECK_BEACHED"
+		},
+		{
+			"forge": "SWAMP_HUT",
+			"fabric": "SWAMP_HUT"
+		},
+		{
+			"forge": "STRONGHOLD",
+			"fabric": "STRONGHOLD"
+		},
+		{
+			"forge": "OCEAN_MONUMENT",
+			"fabric": "MONUMENT"
+		},
+		{
+			"forge": "OCEAN_RUIN_COLD",
+			"fabric": "OCEAN_RUIN_COLD"
+		},
+		{
+			"forge": "OCEAN_RUIN_WARM",
+			"fabric": "OCEAN_RUIN_WARM"
+		},
+		{
+			"forge": "FORTRESS",
+			"fabric": "FORTRESS"
+		},
+		{
+			"forge": "NETHER_FOSSIL",
+			"fabric": "NETHER_FOSSIL"
+		},
+		{
+			"forge": "END_CITY",
+			"fabric": "END_CITY"
+		},
+		{
+			"forge": "BURIED_TREASURE",
+			"fabric": "BURIED_TREASURE"
+		},
+		{
+			"forge": "BASTION_REMNANT",
+			"fabric": "BASTION_REMNANT"
+		},
+		{
+			"forge": "VILLAGE_PLAINS",
+			"fabric": "VILLAGE_PLAINS"
+		},
+		{
+			"forge": "VILLAGE_DESERT",
+			"fabric": "VILLAGE_DESERT"
+		},
+		{
+			"forge": "VILLAGE_SAVANNA",
+			"fabric": "VILLAGE_SAVANNA"
+		},
+		{
+			"forge": "VILLAGE_SNOWY",
+			"fabric": "VILLAGE_SNOWY"
+		},
+		{
+			"forge": "VILLAGE_TAIGA",
+			"fabric": "VILLAGE_TAIGA"
+		},
+		{
+			"forge": "RUINED_PORTAL_STANDARD",
+			"fabric": "RUINED_PORTAL"
+		},
+		{
+			"forge": "RUINED_PORTAL_DESERT",
+			"fabric": "RUINED_PORTAL_DESERT"
+		},
+		{
+			"forge": "RUINED_PORTAL_JUNGLE",
+			"fabric": "RUINED_PORTAL_JUNGLE"
+		},
+		{
+			"forge": "RUINED_PORTAL_SWAMP",
+			"fabric": "RUINED_PORTAL_SWAMP"
+		},
+		{
+			"forge": "RUINED_PORTAL_MOUNTAIN",
+			"fabric": "RUINED_PORTAL_MOUNTAIN"
+		},
+		{
+			"forge": "RUINED_PORTAL_OCEAN",
+			"fabric": "RUINED_PORTAL_OCEAN"
+		},
+		{
+			"forge": "RUINED_PORTAL_NETHER",
+			"fabric": "RUINED_PORTAL_NETHER"
+		},
+		{
+			"forge": "ANCIENT_CITY",
+			"fabric": "ANCIENT_CITY"
+		},
+		{
+			"forge": "TRAIL_RUINS",
+			"fabric": "TRAIL_RUINS"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

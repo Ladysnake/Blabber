@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.server.packs.resources.FallbackResourceManager$EntryStack",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.FallbackResourceManager$EntryStack",
+			"fabric": "net.minecraft.resource.NamespaceResourceManager$EntryList"
+		},
+		{
+			"forge": "fileLocation",
+			"fabric": "id"
+		},
+		{
+			"forge": "fileLocation",
+			"fabric": "id"
+		},
+		{
+			"forge": "metadataLocation",
+			"fabric": "metadataId"
+		},
+		{
+			"forge": "fileSources",
+			"fabric": "fileSources"
+		},
+		{
+			"forge": "metaSources",
+			"fabric": "metaSources"
+		},
+		{
+			"forge": "fileLocation()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "fileLocation()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "metadataLocation()",
+			"fabric": "metadataId()"
+		},
+		{
+			"forge": "fileSources()",
+			"fabric": "fileSources()"
+		},
+		{
+			"forge": "metaSources()",
+			"fabric": "metaSources()"
+		}
+	]
+}

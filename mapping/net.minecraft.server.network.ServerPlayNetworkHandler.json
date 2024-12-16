@@ -1,0 +1,549 @@
+{
+	"title": "net.minecraft.server.network.ServerGamePacketListenerImpl",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.ServerGamePacketListenerImpl",
+			"fabric": "net.minecraft.server.network.ServerPlayNetworkHandler"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LATENCY_CHECK_INTERVAL",
+			"fabric": "KEEP_ALIVE_INTERVAL"
+		},
+		{
+			"forge": "MAX_INTERACTION_DISTANCE",
+			"fabric": "MAX_BREAK_SQUARED_DISTANCE"
+		},
+		{
+			"forge": "NO_BLOCK_UPDATES_TO_ACK",
+			"fabric": "DEFAULT_SEQUENCE"
+		},
+		{
+			"forge": "TRACKED_MESSAGE_DISCONNECT_THRESHOLD",
+			"fabric": "MAX_PENDING_ACKNOWLEDGMENTS"
+		},
+		{
+			"forge": "CHAT_VALIDATION_FAILED",
+			"fabric": "CHAT_VALIDATION_FAILED_TEXT"
+		},
+		{
+			"forge": "connection",
+			"fabric": "connection"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "ackBlockChangesUpTo",
+			"fabric": "sequence"
+		},
+		{
+			"forge": "keepAliveTime",
+			"fabric": "lastKeepAliveTime"
+		},
+		{
+			"forge": "keepAlivePending",
+			"fabric": "waitingForKeepAlive"
+		},
+		{
+			"forge": "keepAliveChallenge",
+			"fabric": "keepAliveId"
+		},
+		{
+			"forge": "chatSpamTickCount",
+			"fabric": "messageCooldown"
+		},
+		{
+			"forge": "dropSpamTickCount",
+			"fabric": "creativeItemDropThreshold"
+		},
+		{
+			"forge": "firstGoodX",
+			"fabric": "lastTickX"
+		},
+		{
+			"forge": "firstGoodY",
+			"fabric": "lastTickY"
+		},
+		{
+			"forge": "firstGoodZ",
+			"fabric": "lastTickZ"
+		},
+		{
+			"forge": "lastGoodX",
+			"fabric": "updatedX"
+		},
+		{
+			"forge": "lastGoodY",
+			"fabric": "updatedY"
+		},
+		{
+			"forge": "lastGoodZ",
+			"fabric": "updatedZ"
+		},
+		{
+			"forge": "lastVehicle",
+			"fabric": "topmostRiddenEntity"
+		},
+		{
+			"forge": "vehicleFirstGoodX",
+			"fabric": "lastTickRiddenX"
+		},
+		{
+			"forge": "vehicleFirstGoodY",
+			"fabric": "lastTickRiddenY"
+		},
+		{
+			"forge": "vehicleFirstGoodZ",
+			"fabric": "lastTickRiddenZ"
+		},
+		{
+			"forge": "vehicleLastGoodX",
+			"fabric": "updatedRiddenX"
+		},
+		{
+			"forge": "vehicleLastGoodY",
+			"fabric": "updatedRiddenY"
+		},
+		{
+			"forge": "vehicleLastGoodZ",
+			"fabric": "updatedRiddenZ"
+		},
+		{
+			"forge": "awaitingPositionFromClient",
+			"fabric": "requestedTeleportPos"
+		},
+		{
+			"forge": "awaitingTeleport",
+			"fabric": "requestedTeleportId"
+		},
+		{
+			"forge": "awaitingTeleportTime",
+			"fabric": "teleportRequestTick"
+		},
+		{
+			"forge": "clientIsFloating",
+			"fabric": "floating"
+		},
+		{
+			"forge": "aboveGroundTickCount",
+			"fabric": "floatingTicks"
+		},
+		{
+			"forge": "clientVehicleIsFloating",
+			"fabric": "vehicleFloating"
+		},
+		{
+			"forge": "aboveGroundVehicleTickCount",
+			"fabric": "vehicleFloatingTicks"
+		},
+		{
+			"forge": "receivedMovePacketCount",
+			"fabric": "movePacketsCount"
+		},
+		{
+			"forge": "knownMovePacketCount",
+			"fabric": "lastTickMovePacketsCount"
+		},
+		{
+			"forge": "lastChatTimeStamp",
+			"fabric": "lastMessageTimestamp"
+		},
+		{
+			"forge": "chatSession",
+			"fabric": "session"
+		},
+		{
+			"forge": "signedMessageDecoder",
+			"fabric": "messageUnpacker"
+		},
+		{
+			"forge": "lastSeenMessages",
+			"fabric": "acknowledgmentValidator"
+		},
+		{
+			"forge": "messageSignatureCache",
+			"fabric": "signatureStorage"
+		},
+		{
+			"forge": "chatMessageChain",
+			"fabric": "messageChainTaskQueue"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "resetPosition()",
+			"fabric": "syncWithPlayerPosition()"
+		},
+		{
+			"forge": "isAcceptingMessages()",
+			"fabric": "isConnectionOpen()"
+		},
+		{
+			"forge": "isSingleplayerOwner()",
+			"fabric": "isHost()"
+		},
+		{
+			"forge": "disconnect(Component arg0)",
+			"fabric": "disconnect(Text reason)"
+		},
+		{
+			"forge": "filterTextPacket(T arg0, BiFunction<TextFilter, T, CompletableFuture<R>> arg1)",
+			"fabric": "filterText(T text, BiFunction<TextStream, T, CompletableFuture<R>> filterer)"
+		},
+		{
+			"forge": "filterTextPacket(String arg0)",
+			"fabric": "filterText(String text)"
+		},
+		{
+			"forge": "filterTextPacket(List<String> arg0)",
+			"fabric": "filterTexts(List<String> texts)"
+		},
+		{
+			"forge": "handlePlayerInput(ServerboundPlayerInputPacket arg0)",
+			"fabric": "onPlayerInput(PlayerInputC2SPacket arg0)"
+		},
+		{
+			"forge": "containsInvalidValues(double arg0, double arg1, double arg2, float arg3, float arg4)",
+			"fabric": "isMovementInvalid(double x, double y, double z, float yaw, float pitch)"
+		},
+		{
+			"forge": "clampHorizontal(double arg0)",
+			"fabric": "clampHorizontal(double d)"
+		},
+		{
+			"forge": "clampVertical(double arg0)",
+			"fabric": "clampVertical(double d)"
+		},
+		{
+			"forge": "handleMoveVehicle(ServerboundMoveVehiclePacket arg0)",
+			"fabric": "onVehicleMove(VehicleMoveC2SPacket arg0)"
+		},
+		{
+			"forge": "noBlocksAround(Entity arg0)",
+			"fabric": "isEntityOnAir(Entity entity)"
+		},
+		{
+			"forge": "handleAcceptTeleportPacket(ServerboundAcceptTeleportationPacket arg0)",
+			"fabric": "onTeleportConfirm(TeleportConfirmC2SPacket arg0)"
+		},
+		{
+			"forge": "handleRecipeBookSeenRecipePacket(ServerboundRecipeBookSeenRecipePacket arg0)",
+			"fabric": "onRecipeBookData(RecipeBookDataC2SPacket arg0)"
+		},
+		{
+			"forge": "handleRecipeBookChangeSettingsPacket(ServerboundRecipeBookChangeSettingsPacket arg0)",
+			"fabric": "onRecipeCategoryOptions(RecipeCategoryOptionsC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSeenAdvancements(ServerboundSeenAdvancementsPacket arg0)",
+			"fabric": "onAdvancementTab(AdvancementTabC2SPacket arg0)"
+		},
+		{
+			"forge": "handleCustomCommandSuggestions(ServerboundCommandSuggestionPacket arg0)",
+			"fabric": "onRequestCommandCompletions(RequestCommandCompletionsC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSetCommandBlock(ServerboundSetCommandBlockPacket arg0)",
+			"fabric": "onUpdateCommandBlock(UpdateCommandBlockC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSetCommandMinecart(ServerboundSetCommandMinecartPacket arg0)",
+			"fabric": "onUpdateCommandBlockMinecart(UpdateCommandBlockMinecartC2SPacket arg0)"
+		},
+		{
+			"forge": "handlePickItem(ServerboundPickItemPacket arg0)",
+			"fabric": "onPickFromInventory(PickFromInventoryC2SPacket arg0)"
+		},
+		{
+			"forge": "handleRenameItem(ServerboundRenameItemPacket arg0)",
+			"fabric": "onRenameItem(RenameItemC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSetBeaconPacket(ServerboundSetBeaconPacket arg0)",
+			"fabric": "onUpdateBeacon(UpdateBeaconC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSetStructureBlock(ServerboundSetStructureBlockPacket arg0)",
+			"fabric": "onUpdateStructureBlock(UpdateStructureBlockC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSetJigsawBlock(ServerboundSetJigsawBlockPacket arg0)",
+			"fabric": "onUpdateJigsaw(UpdateJigsawC2SPacket arg0)"
+		},
+		{
+			"forge": "handleJigsawGenerate(ServerboundJigsawGeneratePacket arg0)",
+			"fabric": "onJigsawGenerating(JigsawGeneratingC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSelectTrade(ServerboundSelectTradePacket arg0)",
+			"fabric": "onSelectMerchantTrade(SelectMerchantTradeC2SPacket arg0)"
+		},
+		{
+			"forge": "handleEditBook(ServerboundEditBookPacket arg0)",
+			"fabric": "onBookUpdate(BookUpdateC2SPacket arg0)"
+		},
+		{
+			"forge": "updateBookContents(List<FilteredText> arg0, int arg1)",
+			"fabric": "updateBookContent(List<FilteredMessage> pages, int slotId)"
+		},
+		{
+			"forge": "signBook(FilteredText arg0, List<FilteredText> arg1, int arg2)",
+			"fabric": "addBook(FilteredMessage title, List<FilteredMessage> pages, int slotId)"
+		},
+		{
+			"forge": "updateBookPages(List<FilteredText> arg0, UnaryOperator<String> arg1, ItemStack arg2)",
+			"fabric": "setTextToBook(List<FilteredMessage> messages, UnaryOperator<String> postProcessor, ItemStack book)"
+		},
+		{
+			"forge": "handleEntityTagQuery(ServerboundEntityTagQuery arg0)",
+			"fabric": "onQueryEntityNbt(QueryEntityNbtC2SPacket arg0)"
+		},
+		{
+			"forge": "handleBlockEntityTagQuery(ServerboundBlockEntityTagQuery arg0)",
+			"fabric": "onQueryBlockNbt(QueryBlockNbtC2SPacket arg0)"
+		},
+		{
+			"forge": "handleMovePlayer(ServerboundMovePlayerPacket arg0)",
+			"fabric": "onPlayerMove(PlayerMoveC2SPacket arg0)"
+		},
+		{
+			"forge": "isPlayerCollidingWithAnythingNew(LevelReader arg0, AABB arg1, double arg2, double arg3, double arg4)",
+			"fabric": "isPlayerNotCollidingWithBlocks(WorldView world, Box box, double newX, double newY, double newZ)"
+		},
+		{
+			"forge": "teleport(double arg0, double arg1, double arg2, float arg3, float arg4)",
+			"fabric": "requestTeleport(double x, double y, double z, float yaw, float pitch)"
+		},
+		{
+			"forge": "teleport(double arg0, double arg1, double arg2, float arg3, float arg4, Set<RelativeMovement> arg5)",
+			"fabric": "requestTeleport(double x, double y, double z, float yaw, float pitch, Set<PositionFlag> flags)"
+		},
+		{
+			"forge": "handlePlayerAction(ServerboundPlayerActionPacket arg0)",
+			"fabric": "onPlayerAction(PlayerActionC2SPacket arg0)"
+		},
+		{
+			"forge": "wasBlockPlacementAttempt(ServerPlayer arg0, ItemStack arg1)",
+			"fabric": "canPlace(ServerPlayerEntity player, ItemStack stack)"
+		},
+		{
+			"forge": "handleUseItemOn(ServerboundUseItemOnPacket arg0)",
+			"fabric": "onPlayerInteractBlock(PlayerInteractBlockC2SPacket arg0)"
+		},
+		{
+			"forge": "handleUseItem(ServerboundUseItemPacket arg0)",
+			"fabric": "onPlayerInteractItem(PlayerInteractItemC2SPacket arg0)"
+		},
+		{
+			"forge": "handleTeleportToEntityPacket(ServerboundTeleportToEntityPacket arg0)",
+			"fabric": "onSpectatorTeleport(SpectatorTeleportC2SPacket arg0)"
+		},
+		{
+			"forge": "handleResourcePackResponse(ServerboundResourcePackPacket arg0)",
+			"fabric": "onResourcePackStatus(ResourcePackStatusC2SPacket arg0)"
+		},
+		{
+			"forge": "handlePaddleBoat(ServerboundPaddleBoatPacket arg0)",
+			"fabric": "onBoatPaddleState(BoatPaddleStateC2SPacket arg0)"
+		},
+		{
+			"forge": "handlePong(ServerboundPongPacket arg0)",
+			"fabric": "onPong(PlayPongC2SPacket arg0)"
+		},
+		{
+			"forge": "onDisconnect(Component arg0)",
+			"fabric": "onDisconnected(Text arg0)"
+		},
+		{
+			"forge": "ackBlockChangesUpTo(int arg0)",
+			"fabric": "updateSequence(int sequence)"
+		},
+		{
+			"forge": "send(Packet<?> arg0)",
+			"fabric": "sendPacket(Packet<?> arg0)"
+		},
+		{
+			"forge": "send(Packet<?> arg0, PacketSendListener arg1)",
+			"fabric": "sendPacket(Packet<?> packet, PacketCallbacks callbacks)"
+		},
+		{
+			"forge": "handleSetCarriedItem(ServerboundSetCarriedItemPacket arg0)",
+			"fabric": "onUpdateSelectedSlot(UpdateSelectedSlotC2SPacket arg0)"
+		},
+		{
+			"forge": "handleChat(ServerboundChatPacket arg0)",
+			"fabric": "onChatMessage(ChatMessageC2SPacket arg0)"
+		},
+		{
+			"forge": "handleChatCommand(ServerboundChatCommandPacket arg0)",
+			"fabric": "onCommandExecution(CommandExecutionC2SPacket arg0)"
+		},
+		{
+			"forge": "performChatCommand(ServerboundChatCommandPacket arg0, LastSeenMessages arg1)",
+			"fabric": "handleCommandExecution(CommandExecutionC2SPacket packet, LastSeenMessageList lastSeenMessages)"
+		},
+		{
+			"forge": "handleMessageDecodeFailure(SignedMessageChain$DecodeException arg0)",
+			"fabric": "handleMessageChainException(MessageChain$MessageChainException exception)"
+		},
+		{
+			"forge": "collectSignedArguments(ServerboundChatCommandPacket arg0, SignableCommand<?> arg1, LastSeenMessages arg2)",
+			"fabric": "collectArgumentMessages(CommandExecutionC2SPacket packet, SignedArgumentList<?> arguments, LastSeenMessageList lastSeenMessages)"
+		},
+		{
+			"forge": "parseCommand(String arg0)",
+			"fabric": "parse(String command)"
+		},
+		{
+			"forge": "tryHandleChat(String arg0, Instant arg1, LastSeenMessages$Update arg2)",
+			"fabric": "validateMessage(String message, Instant timestamp, LastSeenMessageList$Acknowledgment acknowledgment)"
+		},
+		{
+			"forge": "unpackAndApplyLastSeen(LastSeenMessages$Update arg0)",
+			"fabric": "validateAcknowledgment(LastSeenMessageList$Acknowledgment acknowledgment)"
+		},
+		{
+			"forge": "updateChatOrder(Instant arg0)",
+			"fabric": "isInProperOrder(Instant timestamp)"
+		},
+		{
+			"forge": "isChatMessageIllegal(String arg0)",
+			"fabric": "hasIllegalCharacter(String message)"
+		},
+		{
+			"forge": "getSignedMessage(ServerboundChatPacket arg0, LastSeenMessages arg1)",
+			"fabric": "getSignedMessage(ChatMessageC2SPacket packet, LastSeenMessageList lastSeenMessages)"
+		},
+		{
+			"forge": "broadcastChatMessage(PlayerChatMessage arg0)",
+			"fabric": "handleDecoratedMessage(SignedMessage message)"
+		},
+		{
+			"forge": "detectRateSpam()",
+			"fabric": "checkForSpam()"
+		},
+		{
+			"forge": "handleChatAck(ServerboundChatAckPacket arg0)",
+			"fabric": "onMessageAcknowledgment(MessageAcknowledgmentC2SPacket arg0)"
+		},
+		{
+			"forge": "handleAnimate(ServerboundSwingPacket arg0)",
+			"fabric": "onHandSwing(HandSwingC2SPacket arg0)"
+		},
+		{
+			"forge": "handlePlayerCommand(ServerboundPlayerCommandPacket arg0)",
+			"fabric": "onClientCommand(ClientCommandC2SPacket arg0)"
+		},
+		{
+			"forge": "addPendingMessage(PlayerChatMessage arg0)",
+			"fabric": "addPendingAcknowledgment(SignedMessage message)"
+		},
+		{
+			"forge": "sendPlayerChatMessage(PlayerChatMessage arg0, ChatType$Bound arg1)",
+			"fabric": "sendChatMessage(SignedMessage message, MessageType$Parameters params)"
+		},
+		{
+			"forge": "sendDisguisedChatMessage(Component arg0, ChatType$Bound arg1)",
+			"fabric": "sendProfilelessChatMessage(Text message, MessageType$Parameters params)"
+		},
+		{
+			"forge": "getRemoteAddress()",
+			"fabric": "getConnectionAddress()"
+		},
+		{
+			"forge": "handleInteract(ServerboundInteractPacket arg0)",
+			"fabric": "onPlayerInteractEntity(PlayerInteractEntityC2SPacket arg0)"
+		},
+		{
+			"forge": "handleClientCommand(ServerboundClientCommandPacket arg0)",
+			"fabric": "onClientStatus(ClientStatusC2SPacket arg0)"
+		},
+		{
+			"forge": "handleContainerClose(ServerboundContainerClosePacket arg0)",
+			"fabric": "onCloseHandledScreen(CloseHandledScreenC2SPacket arg0)"
+		},
+		{
+			"forge": "handleContainerClick(ServerboundContainerClickPacket arg0)",
+			"fabric": "onClickSlot(ClickSlotC2SPacket arg0)"
+		},
+		{
+			"forge": "handlePlaceRecipe(ServerboundPlaceRecipePacket arg0)",
+			"fabric": "onCraftRequest(CraftRequestC2SPacket arg0)"
+		},
+		{
+			"forge": "handleContainerButtonClick(ServerboundContainerButtonClickPacket arg0)",
+			"fabric": "onButtonClick(ButtonClickC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSetCreativeModeSlot(ServerboundSetCreativeModeSlotPacket arg0)",
+			"fabric": "onCreativeInventoryAction(CreativeInventoryActionC2SPacket arg0)"
+		},
+		{
+			"forge": "handleSignUpdate(ServerboundSignUpdatePacket arg0)",
+			"fabric": "onUpdateSign(UpdateSignC2SPacket arg0)"
+		},
+		{
+			"forge": "updateSignText(ServerboundSignUpdatePacket arg0, List<FilteredText> arg1)",
+			"fabric": "onSignUpdate(UpdateSignC2SPacket packet, List<FilteredMessage> signText)"
+		},
+		{
+			"forge": "handleKeepAlive(ServerboundKeepAlivePacket arg0)",
+			"fabric": "onKeepAlive(KeepAliveC2SPacket arg0)"
+		},
+		{
+			"forge": "handlePlayerAbilities(ServerboundPlayerAbilitiesPacket arg0)",
+			"fabric": "onUpdatePlayerAbilities(UpdatePlayerAbilitiesC2SPacket arg0)"
+		},
+		{
+			"forge": "handleClientInformation(ServerboundClientInformationPacket arg0)",
+			"fabric": "onClientSettings(ClientSettingsC2SPacket arg0)"
+		},
+		{
+			"forge": "handleCustomPayload(ServerboundCustomPayloadPacket arg0)",
+			"fabric": "onCustomPayload(CustomPayloadC2SPacket arg0)"
+		},
+		{
+			"forge": "handleChangeDifficulty(ServerboundChangeDifficultyPacket arg0)",
+			"fabric": "onUpdateDifficulty(UpdateDifficultyC2SPacket arg0)"
+		},
+		{
+			"forge": "handleLockDifficulty(ServerboundLockDifficultyPacket arg0)",
+			"fabric": "onUpdateDifficultyLock(UpdateDifficultyLockC2SPacket arg0)"
+		},
+		{
+			"forge": "handleChatSessionUpdate(ServerboundChatSessionUpdatePacket arg0)",
+			"fabric": "onPlayerSession(PlayerSessionC2SPacket arg0)"
+		},
+		{
+			"forge": "resetPlayerChatState(RemoteChatSession arg0)",
+			"fabric": "setSession(PublicPlayerSession session)"
+		},
+		{
+			"forge": "getPlayer()",
+			"fabric": "getPlayer()"
+		}
+	]
+}

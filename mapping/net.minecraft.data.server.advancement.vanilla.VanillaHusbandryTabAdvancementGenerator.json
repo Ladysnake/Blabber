@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.data.advancements.packs.VanillaHusbandryAdvancements",
+	"items": [
+		{
+			"forge": "net.minecraft.data.advancements.packs.VanillaHusbandryAdvancements",
+			"fabric": "net.minecraft.data.server.advancement.vanilla.VanillaHusbandryTabAdvancementGenerator"
+		},
+		{
+			"forge": "BREEDABLE_ANIMALS",
+			"fabric": "BREEDABLE_ANIMALS"
+		},
+		{
+			"forge": "BREEDABLE_ANIMALS",
+			"fabric": "BREEDABLE_ANIMALS"
+		},
+		{
+			"forge": "INDIRECTLY_BREEDABLE_ANIMALS",
+			"fabric": "EGG_LAYING_ANIMALS"
+		},
+		{
+			"forge": "FISH",
+			"fabric": "FISH_ITEMS"
+		},
+		{
+			"forge": "FISH_BUCKETS",
+			"fabric": "FISH_BUCKET_ITEMS"
+		},
+		{
+			"forge": "EDIBLE_ITEMS",
+			"fabric": "FOOD_ITEMS"
+		},
+		{
+			"forge": "WAX_SCRAPING_TOOLS",
+			"fabric": "AXE_ITEMS"
+		},
+		{
+			"forge": "generate(HolderLookup$Provider arg0, Consumer<Advancement> arg1)",
+			"fabric": "accept(RegistryWrapper$WrapperLookup arg0, Consumer<Advancement> arg1)"
+		},
+		{
+			"forge": "generate(HolderLookup$Provider arg0, Consumer<Advancement> arg1)",
+			"fabric": "accept(RegistryWrapper$WrapperLookup arg0, Consumer<Advancement> arg1)"
+		},
+		{
+			"forge": "createBreedAllAnimalsAdvancement(Advancement arg0, Consumer<Advancement> arg1, Stream<EntityType<?>> arg2, Stream<EntityType<?>> arg3)",
+			"fabric": "createBreedAllAnimalsAdvancement(Advancement parent, Consumer<Advancement> exporter, Stream<EntityType<?>> breedableAnimals, Stream<EntityType<?>> eggLayingAnimals)"
+		},
+		{
+			"forge": "addLeashedFrogVariants(Advancement$Builder arg0)",
+			"fabric": "requireAllFrogsOnLeads(Advancement$Builder builder)"
+		},
+		{
+			"forge": "addFood(Advancement$Builder arg0)",
+			"fabric": "requireFoodItemsEaten(Advancement$Builder builder)"
+		},
+		{
+			"forge": "addBreedable(Advancement$Builder arg0, Stream<EntityType<?>> arg1, Stream<EntityType<?>> arg2)",
+			"fabric": "requireListedAnimalsBred(Advancement$Builder advancementBuilder, Stream<EntityType<?>> breedableAnimals, Stream<EntityType<?>> eggLayingAnimals)"
+		},
+		{
+			"forge": "addFishBuckets(Advancement$Builder arg0)",
+			"fabric": "requireListedFishBucketsFilled(Advancement$Builder builder)"
+		},
+		{
+			"forge": "addFish(Advancement$Builder arg0)",
+			"fabric": "requireListedFishCaught(Advancement$Builder builder)"
+		},
+		{
+			"forge": "addCatVariants(Advancement$Builder arg0)",
+			"fabric": "requireAllCatsTamed(Advancement$Builder builder)"
+		}
+	]
+}

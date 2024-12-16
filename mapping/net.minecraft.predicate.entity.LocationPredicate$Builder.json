@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.advancements.critereon.LocationPredicate$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.LocationPredicate$Builder",
+			"fabric": "net.minecraft.predicate.entity.LocationPredicate$Builder"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "biome",
+			"fabric": "biome"
+		},
+		{
+			"forge": "structure",
+			"fabric": "feature"
+		},
+		{
+			"forge": "dimension",
+			"fabric": "dimension"
+		},
+		{
+			"forge": "smokey",
+			"fabric": "smokey"
+		},
+		{
+			"forge": "light",
+			"fabric": "light"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "fluid",
+			"fabric": "fluid"
+		},
+		{
+			"forge": "location()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "location()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "setX(MinMaxBounds$Doubles arg0)",
+			"fabric": "x(NumberRange$FloatRange x)"
+		},
+		{
+			"forge": "setY(MinMaxBounds$Doubles arg0)",
+			"fabric": "y(NumberRange$FloatRange y)"
+		},
+		{
+			"forge": "setZ(MinMaxBounds$Doubles arg0)",
+			"fabric": "z(NumberRange$FloatRange z)"
+		},
+		{
+			"forge": "setBiome(ResourceKey<Biome> arg0)",
+			"fabric": "biome(RegistryKey<Biome> biome)"
+		},
+		{
+			"forge": "setStructure(ResourceKey<Structure> arg0)",
+			"fabric": "feature(RegistryKey<Structure> feature)"
+		},
+		{
+			"forge": "setDimension(ResourceKey<Level> arg0)",
+			"fabric": "dimension(RegistryKey<World> dimension)"
+		},
+		{
+			"forge": "setLight(LightPredicate arg0)",
+			"fabric": "light(LightPredicate light)"
+		},
+		{
+			"forge": "setBlock(BlockPredicate arg0)",
+			"fabric": "block(BlockPredicate block)"
+		},
+		{
+			"forge": "setFluid(FluidPredicate arg0)",
+			"fabric": "fluid(FluidPredicate fluid)"
+		},
+		{
+			"forge": "setSmokey(Boolean arg0)",
+			"fabric": "smokey(Boolean smokey)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

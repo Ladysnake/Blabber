@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.block.entity.Hopper",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.Hopper",
+			"fabric": "net.minecraft.block.entity.Hopper"
+		},
+		{
+			"forge": "INSIDE",
+			"fabric": "INSIDE_SHAPE"
+		},
+		{
+			"forge": "INSIDE",
+			"fabric": "INSIDE_SHAPE"
+		},
+		{
+			"forge": "ABOVE",
+			"fabric": "ABOVE_SHAPE"
+		},
+		{
+			"forge": "SUCK",
+			"fabric": "INPUT_AREA_SHAPE"
+		},
+		{
+			"forge": "getSuckShape()",
+			"fabric": "getInputAreaShape()"
+		},
+		{
+			"forge": "getSuckShape()",
+			"fabric": "getInputAreaShape()"
+		},
+		{
+			"forge": "getLevelX()",
+			"fabric": "getHopperX()"
+		},
+		{
+			"forge": "getLevelY()",
+			"fabric": "getHopperY()"
+		},
+		{
+			"forge": "getLevelZ()",
+			"fabric": "getHopperZ()"
+		}
+	]
+}

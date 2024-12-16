@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.animal.Bee$BaseBeeGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Bee$BaseBeeGoal",
+			"fabric": "net.minecraft.entity.passive.BeeEntity$NotAngryGoal"
+		},
+		{
+			"forge": "canBeeUse()",
+			"fabric": "canBeeStart()"
+		},
+		{
+			"forge": "canBeeUse()",
+			"fabric": "canBeeStart()"
+		},
+		{
+			"forge": "canBeeContinueToUse()",
+			"fabric": "canBeeContinue()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		}
+	]
+}

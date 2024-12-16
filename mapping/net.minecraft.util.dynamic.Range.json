@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.util.InclusiveRange",
+	"items": [
+		{
+			"forge": "net.minecraft.util.InclusiveRange",
+			"fabric": "net.minecraft.util.dynamic.Range"
+		},
+		{
+			"forge": "minInclusive",
+			"fabric": "minInclusive"
+		},
+		{
+			"forge": "minInclusive",
+			"fabric": "minInclusive"
+		},
+		{
+			"forge": "maxInclusive",
+			"fabric": "maxInclusive"
+		},
+		{
+			"forge": "INT",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.Codec<T> arg0)",
+			"fabric": "createCodec(com.mojang.serialization.Codec<T> elementCodec)"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.Codec<T> arg0)",
+			"fabric": "createCodec(com.mojang.serialization.Codec<T> elementCodec)"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.Codec<T> arg0, T arg1, T arg2)",
+			"fabric": "createRangedCodec(com.mojang.serialization.Codec<T> codec, T minInclusive, T maxInclusive)"
+		},
+		{
+			"forge": "create(T arg0, T arg1)",
+			"fabric": "validate(T minInclusive, T maxInclusive)"
+		},
+		{
+			"forge": "isValueInRange(T arg0)",
+			"fabric": "contains(T value)"
+		},
+		{
+			"forge": "contains(InclusiveRange<T> arg0)",
+			"fabric": "contains(Range<T> other)"
+		},
+		{
+			"forge": "minInclusive()",
+			"fabric": "minInclusive()"
+		},
+		{
+			"forge": "maxInclusive()",
+			"fabric": "maxInclusive()"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.MoveToTargetSink",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.MoveToTargetSink",
+			"fabric": "net.minecraft.entity.ai.brain.task.WanderAroundTask"
+		},
+		{
+			"forge": "MAX_COOLDOWN_BEFORE_RETRYING",
+			"fabric": "MAX_UPDATE_COUNTDOWN"
+		},
+		{
+			"forge": "MAX_COOLDOWN_BEFORE_RETRYING",
+			"fabric": "MAX_UPDATE_COUNTDOWN"
+		},
+		{
+			"forge": "remainingCooldown",
+			"fabric": "pathUpdateCountdownTicks"
+		},
+		{
+			"forge": "path",
+			"fabric": "path"
+		},
+		{
+			"forge": "lastTargetPos",
+			"fabric": "lookTargetPos"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Mob arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Mob arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Mob arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, MobEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Mob arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, MobEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Mob arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, MobEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Mob arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, MobEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tryComputePath(Mob arg0, WalkTarget arg1, long arg2)",
+			"fabric": "hasFinishedPath(MobEntity entity, WalkTarget walkTarget, long time)"
+		},
+		{
+			"forge": "reachedTarget(Mob arg0, WalkTarget arg1)",
+			"fabric": "hasReached(MobEntity entity, WalkTarget walkTarget)"
+		},
+		{
+			"forge": "isWalkTargetSpectator(WalkTarget arg0)",
+			"fabric": "isTargetSpectator(WalkTarget target)"
+		}
+	]
+}

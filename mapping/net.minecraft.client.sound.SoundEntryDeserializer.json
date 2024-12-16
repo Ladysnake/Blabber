@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.resources.sounds.SoundEventRegistrationSerializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.SoundEventRegistrationSerializer",
+			"fabric": "net.minecraft.client.sound.SoundEntryDeserializer"
+		},
+		{
+			"forge": "DEFAULT_FLOAT",
+			"fabric": "ONE"
+		},
+		{
+			"forge": "DEFAULT_FLOAT",
+			"fabric": "ONE"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "getSounds(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeSounds(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "getSound(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeSound(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "getType(com.google.gson.JsonObject arg0, Sound$Type arg1)",
+			"fabric": "deserializeType(com.google.gson.JsonObject json, Sound$RegistrationType fallback)"
+		}
+	]
+}

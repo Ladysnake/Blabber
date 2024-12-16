@@ -1,0 +1,209 @@
+{
+	"title": "net.minecraft.world.entity.animal.goat.Goat",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.goat.Goat",
+			"fabric": "net.minecraft.entity.passive.GoatEntity"
+		},
+		{
+			"forge": "LONG_JUMPING_DIMENSIONS",
+			"fabric": "LONG_JUMPING_DIMENSIONS"
+		},
+		{
+			"forge": "LONG_JUMPING_DIMENSIONS",
+			"fabric": "LONG_JUMPING_DIMENSIONS"
+		},
+		{
+			"forge": "ADULT_ATTACK_DAMAGE",
+			"fabric": "DEFAULT_ATTACK_DAMAGE"
+		},
+		{
+			"forge": "BABY_ATTACK_DAMAGE",
+			"fabric": "BABY_ATTACK_DAMAGE"
+		},
+		{
+			"forge": "SENSOR_TYPES",
+			"fabric": "SENSORS"
+		},
+		{
+			"forge": "MEMORY_TYPES",
+			"fabric": "MEMORY_MODULES"
+		},
+		{
+			"forge": "GOAT_FALL_DAMAGE_REDUCTION",
+			"fabric": "FALL_DAMAGE_SUBTRACTOR"
+		},
+		{
+			"forge": "GOAT_SCREAMING_CHANCE",
+			"fabric": "SCREAMING_CHANCE"
+		},
+		{
+			"forge": "UNIHORN_CHANCE",
+			"fabric": "field_39046"
+		},
+		{
+			"forge": "DATA_IS_SCREAMING_GOAT",
+			"fabric": "SCREAMING"
+		},
+		{
+			"forge": "DATA_HAS_LEFT_HORN",
+			"fabric": "LEFT_HORN"
+		},
+		{
+			"forge": "DATA_HAS_RIGHT_HORN",
+			"fabric": "RIGHT_HORN"
+		},
+		{
+			"forge": "isLoweringHead",
+			"fabric": "preparingRam"
+		},
+		{
+			"forge": "lowerHeadTick",
+			"fabric": "headPitch"
+		},
+		{
+			"forge": "createHorn()",
+			"fabric": "getGoatHornStack()"
+		},
+		{
+			"forge": "createHorn()",
+			"fabric": "getGoatHornStack()"
+		},
+		{
+			"forge": "brainProvider()",
+			"fabric": "createBrainProfile()"
+		},
+		{
+			"forge": "makeBrain(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "deserializeBrain(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createGoatAttributes()"
+		},
+		{
+			"forge": "ageBoundaryReached()",
+			"fabric": "onGrowUp()"
+		},
+		{
+			"forge": "calculateFallDamage(float arg0, float arg1)",
+			"fabric": "computeFallDamage(float arg0, float arg1)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "playStepSound(BlockPos arg0, BlockState arg1)",
+			"fabric": "playStepSound(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getMilkingSound()",
+			"fabric": "getMilkingSound()"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "getBrain()",
+			"fabric": "getBrain()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "getMaxHeadYRot()",
+			"fabric": "getMaxHeadRotation()"
+		},
+		{
+			"forge": "setYHeadRot(float arg0)",
+			"fabric": "setHeadYaw(float arg0)"
+		},
+		{
+			"forge": "getEatingSound(ItemStack arg0)",
+			"fabric": "getEatSound(ItemStack arg0)"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "sendDebugPackets()",
+			"fabric": "sendAiDebugData()"
+		},
+		{
+			"forge": "getDimensions(Pose arg0)",
+			"fabric": "getDimensions(EntityPose arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "hasLeftHorn()",
+			"fabric": "hasLeftHorn()"
+		},
+		{
+			"forge": "hasRightHorn()",
+			"fabric": "hasRightHorn()"
+		},
+		{
+			"forge": "dropHorn()",
+			"fabric": "dropHorn()"
+		},
+		{
+			"forge": "addHorns()",
+			"fabric": "addHorns()"
+		},
+		{
+			"forge": "removeHorns()",
+			"fabric": "removeHorns()"
+		},
+		{
+			"forge": "isScreamingGoat()",
+			"fabric": "isScreaming()"
+		},
+		{
+			"forge": "setScreamingGoat(boolean arg0)",
+			"fabric": "setScreaming(boolean screaming)"
+		},
+		{
+			"forge": "getRammingXHeadRot()",
+			"fabric": "getHeadPitch()"
+		},
+		{
+			"forge": "checkGoatSpawnRules(EntityType<? extends Animal> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<? extends AnimalEntity> entityType, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		}
+	]
+}

@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.world.level.block.entity.JukeboxBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.JukeboxBlockEntity",
+			"fabric": "net.minecraft.block.entity.JukeboxBlockEntity"
+		},
+		{
+			"forge": "SONG_END_PADDING",
+			"fabric": "SECOND_PER_TICK"
+		},
+		{
+			"forge": "SONG_END_PADDING",
+			"fabric": "SECOND_PER_TICK"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "ticksSinceLastEvent",
+			"fabric": "ticksThisSecond"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "tickCount"
+		},
+		{
+			"forge": "recordStartedTick",
+			"fabric": "recordStartTick"
+		},
+		{
+			"forge": "isPlaying",
+			"fabric": "isPlaying"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "isRecordPlaying()",
+			"fabric": "isPlayingRecord()"
+		},
+		{
+			"forge": "setHasRecordBlockState(Entity arg0, boolean arg1)",
+			"fabric": "updateState(Entity entity, boolean hasRecord)"
+		},
+		{
+			"forge": "startPlaying()",
+			"fabric": "startPlaying()"
+		},
+		{
+			"forge": "stopPlaying()",
+			"fabric": "stopPlaying()"
+		},
+		{
+			"forge": "tick(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "shouldRecordStopPlaying(RecordItem arg0)",
+			"fabric": "isSongFinished(MusicDiscItem musicDisc)"
+		},
+		{
+			"forge": "shouldSendJukeboxPlayingEvent()",
+			"fabric": "hasSecondPassed()"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxCountPerStack()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "canPlaceItem(int arg0, ItemStack arg1)",
+			"fabric": "isValid(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "canTakeItem(Container arg0, int arg1, ItemStack arg2)",
+			"fabric": "canTransferTo(Inventory arg0, int arg1, ItemStack arg2)"
+		},
+		{
+			"forge": "spawnMusicParticles(Level arg0, BlockPos arg1)",
+			"fabric": "spawnNoteParticle(World world, BlockPos pos)"
+		},
+		{
+			"forge": "popOutRecord()",
+			"fabric": "dropRecord()"
+		},
+		{
+			"forge": "playRecordTick(Level arg0, BlockPos arg1, BlockState arg2, JukeboxBlockEntity arg3)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, JukeboxBlockEntity blockEntity)"
+		},
+		{
+			"forge": "setRecordWithoutPlaying(ItemStack arg0)",
+			"fabric": "setDisc(ItemStack stack)"
+		}
+	]
+}

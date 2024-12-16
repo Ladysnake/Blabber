@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.item.DyeableArmorItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.DyeableArmorItem",
+			"fabric": "net.minecraft.item.DyeableArmorItem"
+		}
+	]
+}

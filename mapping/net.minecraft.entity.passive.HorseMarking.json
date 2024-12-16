@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.Markings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.Markings",
+			"fabric": "net.minecraft.entity.passive.HorseMarking"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "WHITE_FIELD",
+			"fabric": "WHITE_FIELD"
+		},
+		{
+			"forge": "WHITE_DOTS",
+			"fabric": "WHITE_DOTS"
+		},
+		{
+			"forge": "BLACK_DOTS",
+			"fabric": "BLACK_DOTS"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byIndex(int index)"
+		}
+	]
+}

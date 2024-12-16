@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.particle.ParticleProvider$Sprite",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.ParticleProvider$Sprite",
+			"fabric": "net.minecraft.client.particle.ParticleFactory$BlockLeakParticleFactory"
+		},
+		{
+			"forge": "createParticle(T arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createParticle(T parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "createParticle(T arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createParticle(T parameters, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		}
+	]
+}

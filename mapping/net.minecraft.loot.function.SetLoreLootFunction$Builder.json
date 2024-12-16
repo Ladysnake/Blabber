@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetLoreFunction$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetLoreFunction$Builder",
+			"fabric": "net.minecraft.loot.function.SetLoreLootFunction$Builder"
+		},
+		{
+			"forge": "replace",
+			"fabric": "replace"
+		},
+		{
+			"forge": "replace",
+			"fabric": "replace"
+		},
+		{
+			"forge": "resolutionContext",
+			"fabric": "target"
+		},
+		{
+			"forge": "lore",
+			"fabric": "lore"
+		},
+		{
+			"forge": "setReplace(boolean arg0)",
+			"fabric": "replace(boolean replace)"
+		},
+		{
+			"forge": "setReplace(boolean arg0)",
+			"fabric": "replace(boolean replace)"
+		},
+		{
+			"forge": "setResolutionContext(LootContext$EntityTarget arg0)",
+			"fabric": "target(LootContext$EntityTarget target)"
+		},
+		{
+			"forge": "addLine(Component arg0)",
+			"fabric": "lore(Text lore)"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

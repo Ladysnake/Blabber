@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.InteractGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.InteractGoal",
+			"fabric": "net.minecraft.entity.ai.goal.StopAndLookAtEntityGoal"
+		}
+	]
+}

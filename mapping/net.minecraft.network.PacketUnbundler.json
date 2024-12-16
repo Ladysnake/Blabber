@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.PacketBundleUnpacker",
+	"items": [
+		{
+			"forge": "net.minecraft.network.PacketBundleUnpacker",
+			"fabric": "net.minecraft.network.PacketUnbundler"
+		},
+		{
+			"forge": "flow",
+			"fabric": "side"
+		},
+		{
+			"forge": "flow",
+			"fabric": "side"
+		},
+		{
+			"forge": "encode(io.netty.channel.ChannelHandlerContext arg0, Packet<?> arg1, List<Object> arg2)",
+			"fabric": "encode(io.netty.channel.ChannelHandlerContext arg0, Packet<?> arg1, List<Object> arg2)"
+		},
+		{
+			"forge": "encode(io.netty.channel.ChannelHandlerContext arg0, Packet<?> arg1, List<Object> arg2)",
+			"fabric": "encode(io.netty.channel.ChannelHandlerContext arg0, Packet<?> arg1, List<Object> arg2)"
+		}
+	]
+}

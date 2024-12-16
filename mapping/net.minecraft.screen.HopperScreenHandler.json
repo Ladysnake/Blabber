@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.inventory.HopperMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.HopperMenu",
+			"fabric": "net.minecraft.screen.HopperScreenHandler"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "SLOT_COUNT"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "SLOT_COUNT"
+		},
+		{
+			"forge": "hopper",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		}
+	]
+}

@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.SimpleContainer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.SimpleContainer",
+			"fabric": "net.minecraft.inventory.SimpleInventory"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "items",
+			"fabric": "stacks"
+		},
+		{
+			"forge": "listeners",
+			"fabric": "listeners"
+		},
+		{
+			"forge": "addListener(ContainerListener arg0)",
+			"fabric": "addListener(InventoryChangedListener listener)"
+		},
+		{
+			"forge": "addListener(ContainerListener arg0)",
+			"fabric": "addListener(InventoryChangedListener listener)"
+		},
+		{
+			"forge": "removeListener(ContainerListener arg0)",
+			"fabric": "removeListener(InventoryChangedListener listener)"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeAllItems()",
+			"fabric": "clearToList()"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "removeItemType(Item arg0, int arg1)",
+			"fabric": "removeItem(Item item, int count)"
+		},
+		{
+			"forge": "addItem(ItemStack arg0)",
+			"fabric": "addStack(ItemStack stack)"
+		},
+		{
+			"forge": "canAddItem(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack stack)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "fillStackedContents(StackedContents arg0)",
+			"fabric": "provideRecipeInputs(RecipeMatcher arg0)"
+		},
+		{
+			"forge": "moveItemToEmptySlots(ItemStack arg0)",
+			"fabric": "addToNewSlot(ItemStack stack)"
+		},
+		{
+			"forge": "moveItemToOccupiedSlotsWithSameType(ItemStack arg0)",
+			"fabric": "addToExistingSlot(ItemStack stack)"
+		},
+		{
+			"forge": "moveItemsBetweenStacks(ItemStack arg0, ItemStack arg1)",
+			"fabric": "transfer(ItemStack source, ItemStack target)"
+		},
+		{
+			"forge": "fromTag(ListTag arg0)",
+			"fabric": "readNbtList(NbtList nbtList)"
+		},
+		{
+			"forge": "createTag()",
+			"fabric": "toNbtList()"
+		}
+	]
+}

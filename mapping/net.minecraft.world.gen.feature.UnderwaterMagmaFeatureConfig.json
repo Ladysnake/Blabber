@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.UnderwaterMagmaConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.UnderwaterMagmaConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.UnderwaterMagmaFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "floorSearchRange",
+			"fabric": "floorSearchRange"
+		},
+		{
+			"forge": "placementRadiusAroundFloor",
+			"fabric": "placementRadiusAroundFloor"
+		},
+		{
+			"forge": "placementProbabilityPerValidPosition",
+			"fabric": "placementProbabilityPerValidPosition"
+		}
+	]
+}

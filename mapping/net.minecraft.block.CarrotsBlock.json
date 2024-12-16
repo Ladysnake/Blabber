@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.CarrotBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.CarrotBlock",
+			"fabric": "net.minecraft.block.CarrotsBlock"
+		},
+		{
+			"forge": "SHAPE_BY_AGE",
+			"fabric": "AGE_TO_SHAPE"
+		},
+		{
+			"forge": "SHAPE_BY_AGE",
+			"fabric": "AGE_TO_SHAPE"
+		},
+		{
+			"forge": "getBaseSeedId()",
+			"fabric": "getSeedsItem()"
+		},
+		{
+			"forge": "getBaseSeedId()",
+			"fabric": "getSeedsItem()"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.renderer.RenderType$CompositeRenderType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderType$CompositeRenderType",
+			"fabric": "net.minecraft.client.render.RenderLayer$MultiPhase"
+		},
+		{
+			"forge": "OUTLINE",
+			"fabric": "CULLING_LAYERS"
+		},
+		{
+			"forge": "OUTLINE",
+			"fabric": "CULLING_LAYERS"
+		},
+		{
+			"forge": "state",
+			"fabric": "phases"
+		},
+		{
+			"forge": "outline",
+			"fabric": "affectedOutline"
+		},
+		{
+			"forge": "isOutline",
+			"fabric": "outline"
+		},
+		{
+			"forge": "outline()",
+			"fabric": "getAffectedOutline()"
+		},
+		{
+			"forge": "outline()",
+			"fabric": "getAffectedOutline()"
+		},
+		{
+			"forge": "isOutline()",
+			"fabric": "isOutline()"
+		},
+		{
+			"forge": "state()",
+			"fabric": "getPhases()"
+		}
+	]
+}

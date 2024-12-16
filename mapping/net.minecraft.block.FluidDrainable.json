@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.block.BucketPickup",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BucketPickup",
+			"fabric": "net.minecraft.block.FluidDrainable"
+		},
+		{
+			"forge": "pickupBlock(LevelAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "tryDrainFluid(WorldAccess world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "pickupBlock(LevelAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "tryDrainFluid(WorldAccess world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "getPickupSound()",
+			"fabric": "getBucketFillSound()"
+		}
+	]
+}

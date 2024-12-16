@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.animal.frog.Frog$FrogPathNavigation",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.frog.Frog$FrogPathNavigation",
+			"fabric": "net.minecraft.entity.passive.FrogEntity$FrogSwimNavigation"
+		},
+		{
+			"forge": "canCutCorner(BlockPathTypes arg0)",
+			"fabric": "canJumpToNext(PathNodeType arg0)"
+		},
+		{
+			"forge": "canCutCorner(BlockPathTypes arg0)",
+			"fabric": "canJumpToNext(PathNodeType arg0)"
+		},
+		{
+			"forge": "createPathFinder(int arg0)",
+			"fabric": "createPathNodeNavigator(int arg0)"
+		}
+	]
+}

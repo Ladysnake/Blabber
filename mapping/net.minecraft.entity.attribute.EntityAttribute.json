@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.entity.ai.attributes.Attribute",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.attributes.Attribute",
+			"fabric": "net.minecraft.entity.attribute.EntityAttribute"
+		},
+		{
+			"forge": "MAX_NAME_LENGTH",
+			"fabric": "field_30097"
+		},
+		{
+			"forge": "MAX_NAME_LENGTH",
+			"fabric": "field_30097"
+		},
+		{
+			"forge": "defaultValue",
+			"fabric": "fallback"
+		},
+		{
+			"forge": "syncable",
+			"fabric": "tracked"
+		},
+		{
+			"forge": "descriptionId",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "getDefaultValue()",
+			"fabric": "getDefaultValue()"
+		},
+		{
+			"forge": "getDefaultValue()",
+			"fabric": "getDefaultValue()"
+		},
+		{
+			"forge": "isClientSyncable()",
+			"fabric": "isTracked()"
+		},
+		{
+			"forge": "setSyncable(boolean arg0)",
+			"fabric": "setTracked(boolean tracked)"
+		},
+		{
+			"forge": "sanitizeValue(double arg0)",
+			"fabric": "clamp(double value)"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getTranslationKey()"
+		}
+	]
+}

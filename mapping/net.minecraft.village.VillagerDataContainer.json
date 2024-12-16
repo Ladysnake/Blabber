@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.npc.VillagerDataHolder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.VillagerDataHolder",
+			"fabric": "net.minecraft.village.VillagerDataContainer"
+		},
+		{
+			"forge": "getVillagerData()",
+			"fabric": "getVillagerData()"
+		},
+		{
+			"forge": "getVillagerData()",
+			"fabric": "getVillagerData()"
+		},
+		{
+			"forge": "setVillagerData(VillagerData arg0)",
+			"fabric": "setVillagerData(VillagerData villagerData)"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "setVariant(VillagerType arg0)",
+			"fabric": "setVariant(VillagerType arg0)"
+		}
+	]
+}

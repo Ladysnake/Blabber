@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.resources.model.Material",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.Material",
+			"fabric": "net.minecraft.client.util.SpriteIdentifier"
+		},
+		{
+			"forge": "COMPARATOR",
+			"fabric": "COMPARATOR"
+		},
+		{
+			"forge": "COMPARATOR",
+			"fabric": "COMPARATOR"
+		},
+		{
+			"forge": "atlasLocation",
+			"fabric": "atlas"
+		},
+		{
+			"forge": "texture",
+			"fabric": "texture"
+		},
+		{
+			"forge": "renderType",
+			"fabric": "layer"
+		},
+		{
+			"forge": "atlasLocation()",
+			"fabric": "getAtlasId()"
+		},
+		{
+			"forge": "atlasLocation()",
+			"fabric": "getAtlasId()"
+		},
+		{
+			"forge": "texture()",
+			"fabric": "getTextureId()"
+		},
+		{
+			"forge": "sprite()",
+			"fabric": "getSprite()"
+		},
+		{
+			"forge": "renderType(Function<ResourceLocation, RenderType> arg0)",
+			"fabric": "getRenderLayer(Function<Identifier, RenderLayer> layerFactory)"
+		},
+		{
+			"forge": "buffer(MultiBufferSource arg0, Function<ResourceLocation, RenderType> arg1)",
+			"fabric": "getVertexConsumer(VertexConsumerProvider vertexConsumers, Function<Identifier, RenderLayer> layerFactory)"
+		},
+		{
+			"forge": "buffer(MultiBufferSource arg0, Function<ResourceLocation, RenderType> arg1, boolean arg2)",
+			"fabric": "getVertexConsumer(VertexConsumerProvider vertexConsumers, Function<Identifier, RenderLayer> layerFactory, boolean arg2)"
+		}
+	]
+}

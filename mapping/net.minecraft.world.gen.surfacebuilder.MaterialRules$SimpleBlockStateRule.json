@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$StateRule",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$StateRule",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$SimpleBlockStateRule"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "tryApply(int arg0, int arg1, int arg2)",
+			"fabric": "tryApply(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "tryApply(int arg0, int arg1, int arg2)",
+			"fabric": "tryApply(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "state()",
+			"fabric": "state()"
+		}
+	]
+}

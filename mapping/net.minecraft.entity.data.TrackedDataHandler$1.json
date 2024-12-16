@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.network.syncher.EntityDataSerializer$1",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.EntityDataSerializer$1",
+			"fabric": "net.minecraft.entity.data.TrackedDataHandler$1"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0, T arg1)",
+			"fabric": "write(PacketByteBuf arg0, T arg1)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0, T arg1)",
+			"fabric": "write(PacketByteBuf arg0, T arg1)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "read(PacketByteBuf arg0)"
+		}
+	]
+}

@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.TeamS2CPacket"
+		},
+		{
+			"forge": "METHOD_ADD",
+			"fabric": "ADD"
+		},
+		{
+			"forge": "METHOD_ADD",
+			"fabric": "ADD"
+		},
+		{
+			"forge": "METHOD_REMOVE",
+			"fabric": "REMOVE"
+		},
+		{
+			"forge": "METHOD_CHANGE",
+			"fabric": "UPDATE"
+		},
+		{
+			"forge": "METHOD_JOIN",
+			"fabric": "ADD_PLAYERS"
+		},
+		{
+			"forge": "METHOD_LEAVE",
+			"fabric": "REMOVE_PLAYERS"
+		},
+		{
+			"forge": "MAX_VISIBILITY_LENGTH",
+			"fabric": "FIRST_MAX_VISIBILITY_OR_COLLISION_RULE_LENGTH"
+		},
+		{
+			"forge": "MAX_COLLISION_LENGTH",
+			"fabric": "SECOND_MAX_VISIBILITY_OR_COLLISION_RULE_LENGTH"
+		},
+		{
+			"forge": "method",
+			"fabric": "packetType"
+		},
+		{
+			"forge": "name",
+			"fabric": "teamName"
+		},
+		{
+			"forge": "players",
+			"fabric": "playerNames"
+		},
+		{
+			"forge": "parameters",
+			"fabric": "team"
+		},
+		{
+			"forge": "createAddOrModifyPacket(PlayerTeam arg0, boolean arg1)",
+			"fabric": "updateTeam(Team team, boolean updatePlayers)"
+		},
+		{
+			"forge": "createAddOrModifyPacket(PlayerTeam arg0, boolean arg1)",
+			"fabric": "updateTeam(Team team, boolean updatePlayers)"
+		},
+		{
+			"forge": "createRemovePacket(PlayerTeam arg0)",
+			"fabric": "updateRemovedTeam(Team team)"
+		},
+		{
+			"forge": "createPlayerPacket(PlayerTeam arg0, String arg1, ClientboundSetPlayerTeamPacket$Action arg2)",
+			"fabric": "changePlayerTeam(Team team, String playerName, TeamS2CPacket$Operation operation)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "shouldHavePlayerList(int arg0)",
+			"fabric": "containsPlayers(int packetType)"
+		},
+		{
+			"forge": "shouldHaveParameters(int arg0)",
+			"fabric": "containsTeamInfo(int packetType)"
+		},
+		{
+			"forge": "getPlayerAction()",
+			"fabric": "getPlayerListOperation()"
+		},
+		{
+			"forge": "getTeamAction()",
+			"fabric": "getTeamOperation()"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getTeamName()"
+		},
+		{
+			"forge": "getPlayers()",
+			"fabric": "getPlayerNames()"
+		},
+		{
+			"forge": "getParameters()",
+			"fabric": "getTeam()"
+		}
+	]
+}

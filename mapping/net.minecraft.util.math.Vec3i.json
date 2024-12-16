@@ -1,0 +1,185 @@
+{
+	"title": "net.minecraft.core.Vec3i",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Vec3i",
+			"fabric": "net.minecraft.util.math.Vec3i"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "ZERO",
+			"fabric": "ZERO"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "offsetCodec(int arg0)",
+			"fabric": "createOffsetCodec(int maxAbsValue)"
+		},
+		{
+			"forge": "offsetCodec(int arg0)",
+			"fabric": "createOffsetCodec(int maxAbsValue)"
+		},
+		{
+			"forge": "compareTo(Vec3i arg0)",
+			"fabric": "compareTo(Vec3i arg0)"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "getZ()",
+			"fabric": "getZ()"
+		},
+		{
+			"forge": "setX(int arg0)",
+			"fabric": "setX(int x)"
+		},
+		{
+			"forge": "setY(int arg0)",
+			"fabric": "setY(int y)"
+		},
+		{
+			"forge": "setZ(int arg0)",
+			"fabric": "setZ(int z)"
+		},
+		{
+			"forge": "offset(int arg0, int arg1, int arg2)",
+			"fabric": "add(int x, int y, int z)"
+		},
+		{
+			"forge": "offset(Vec3i arg0)",
+			"fabric": "add(Vec3i vec)"
+		},
+		{
+			"forge": "subtract(Vec3i arg0)",
+			"fabric": "subtract(Vec3i vec)"
+		},
+		{
+			"forge": "multiply(int arg0)",
+			"fabric": "multiply(int scale)"
+		},
+		{
+			"forge": "above()",
+			"fabric": "up()"
+		},
+		{
+			"forge": "above(int arg0)",
+			"fabric": "up(int distance)"
+		},
+		{
+			"forge": "below()",
+			"fabric": "down()"
+		},
+		{
+			"forge": "below(int arg0)",
+			"fabric": "down(int distance)"
+		},
+		{
+			"forge": "north()",
+			"fabric": "north()"
+		},
+		{
+			"forge": "north(int arg0)",
+			"fabric": "north(int distance)"
+		},
+		{
+			"forge": "south()",
+			"fabric": "south()"
+		},
+		{
+			"forge": "south(int arg0)",
+			"fabric": "south(int distance)"
+		},
+		{
+			"forge": "west()",
+			"fabric": "west()"
+		},
+		{
+			"forge": "west(int arg0)",
+			"fabric": "west(int distance)"
+		},
+		{
+			"forge": "east()",
+			"fabric": "east()"
+		},
+		{
+			"forge": "east(int arg0)",
+			"fabric": "east(int distance)"
+		},
+		{
+			"forge": "relative(Direction arg0)",
+			"fabric": "offset(Direction direction)"
+		},
+		{
+			"forge": "relative(Direction arg0, int arg1)",
+			"fabric": "offset(Direction direction, int distance)"
+		},
+		{
+			"forge": "relative(Direction$Axis arg0, int arg1)",
+			"fabric": "offset(Direction$Axis axis, int distance)"
+		},
+		{
+			"forge": "cross(Vec3i arg0)",
+			"fabric": "crossProduct(Vec3i vec)"
+		},
+		{
+			"forge": "closerThan(Vec3i arg0, double arg1)",
+			"fabric": "isWithinDistance(Vec3i vec, double distance)"
+		},
+		{
+			"forge": "closerToCenterThan(Position arg0, double arg1)",
+			"fabric": "isWithinDistance(Position pos, double distance)"
+		},
+		{
+			"forge": "distSqr(Vec3i arg0)",
+			"fabric": "getSquaredDistance(Vec3i vec)"
+		},
+		{
+			"forge": "distToCenterSqr(Position arg0)",
+			"fabric": "getSquaredDistance(Position pos)"
+		},
+		{
+			"forge": "distToCenterSqr(double arg0, double arg1, double arg2)",
+			"fabric": "getSquaredDistanceFromCenter(double x, double y, double z)"
+		},
+		{
+			"forge": "distToLowCornerSqr(double arg0, double arg1, double arg2)",
+			"fabric": "getSquaredDistance(double x, double y, double z)"
+		},
+		{
+			"forge": "distManhattan(Vec3i arg0)",
+			"fabric": "getManhattanDistance(Vec3i vec)"
+		},
+		{
+			"forge": "get(Direction$Axis arg0)",
+			"fabric": "getComponentAlongAxis(Direction$Axis axis)"
+		},
+		{
+			"forge": "toShortString()",
+			"fabric": "toShortString()"
+		}
+	]
+}

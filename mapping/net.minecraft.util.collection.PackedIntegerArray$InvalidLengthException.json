@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.SimpleBitStorage$InitializationException",
+	"items": [
+		{
+			"forge": "net.minecraft.util.SimpleBitStorage$InitializationException",
+			"fabric": "net.minecraft.util.collection.PackedIntegerArray$InvalidLengthException"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.data.models.model.ModelTemplate",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.model.ModelTemplate",
+			"fabric": "net.minecraft.data.client.Model"
+		},
+		{
+			"forge": "model",
+			"fabric": "parent"
+		},
+		{
+			"forge": "model",
+			"fabric": "parent"
+		},
+		{
+			"forge": "requiredSlots",
+			"fabric": "requiredTextures"
+		},
+		{
+			"forge": "suffix",
+			"fabric": "variant"
+		},
+		{
+			"forge": "create(Block arg0, TextureMapping arg1, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg2)",
+			"fabric": "upload(Block block, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "create(Block arg0, TextureMapping arg1, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg2)",
+			"fabric": "upload(Block block, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "createWithSuffix(Block arg0, String arg1, TextureMapping arg2, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg3)",
+			"fabric": "upload(Block block, String suffix, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "createWithOverride(Block arg0, String arg1, TextureMapping arg2, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg3)",
+			"fabric": "uploadWithoutVariant(Block block, String suffix, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, TextureMapping arg1, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg2)",
+			"fabric": "upload(Identifier id, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector)"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, TextureMapping arg1, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg2, ModelTemplate$JsonFactory arg3)",
+			"fabric": "upload(Identifier id, TextureMap textures, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> modelCollector, Model$JsonFactory jsonFactory)"
+		},
+		{
+			"forge": "createBaseTemplate(ResourceLocation arg0, Map<TextureSlot, ResourceLocation> arg1)",
+			"fabric": "createJson(Identifier id, Map<TextureKey, Identifier> textures)"
+		},
+		{
+			"forge": "createMap(TextureMapping arg0)",
+			"fabric": "createTextureMap(TextureMap textures)"
+		}
+	]
+}

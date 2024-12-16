@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.AbstractFish$FishSwimGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.AbstractFish$FishSwimGoal",
+			"fabric": "net.minecraft.entity.passive.FishEntity$SwimToRandomPlaceGoal"
+		},
+		{
+			"forge": "fish",
+			"fabric": "fish"
+		},
+		{
+			"forge": "fish",
+			"fabric": "fish"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

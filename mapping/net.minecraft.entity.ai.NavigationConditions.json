@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.ai.util.GoalUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.util.GoalUtils",
+			"fabric": "net.minecraft.entity.ai.NavigationConditions"
+		},
+		{
+			"forge": "hasGroundPathNavigation(Mob arg0)",
+			"fabric": "hasMobNavigation(MobEntity entity)"
+		},
+		{
+			"forge": "hasGroundPathNavigation(Mob arg0)",
+			"fabric": "hasMobNavigation(MobEntity entity)"
+		},
+		{
+			"forge": "mobRestricted(PathfinderMob arg0, int arg1)",
+			"fabric": "isPositionTargetInRange(PathAwareEntity entity, int extraDistance)"
+		},
+		{
+			"forge": "isOutsideLimits(BlockPos arg0, PathfinderMob arg1)",
+			"fabric": "isHeightInvalid(BlockPos pos, PathAwareEntity entity)"
+		},
+		{
+			"forge": "isRestricted(boolean arg0, PathfinderMob arg1, BlockPos arg2)",
+			"fabric": "isPositionTargetOutOfWalkRange(boolean posTargetInRange, PathAwareEntity entity, BlockPos pos)"
+		},
+		{
+			"forge": "isNotStable(PathNavigation arg0, BlockPos arg1)",
+			"fabric": "isInvalidPosition(EntityNavigation navigation, BlockPos pos)"
+		},
+		{
+			"forge": "isWater(PathfinderMob arg0, BlockPos arg1)",
+			"fabric": "isWaterAt(PathAwareEntity entity, BlockPos pos)"
+		},
+		{
+			"forge": "hasMalus(PathfinderMob arg0, BlockPos arg1)",
+			"fabric": "hasPathfindingPenalty(PathAwareEntity entity, BlockPos pos)"
+		},
+		{
+			"forge": "isSolid(PathfinderMob arg0, BlockPos arg1)",
+			"fabric": "isSolidAt(PathAwareEntity entity, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.TaskChainer$DelayedTask",
+	"items": [
+		{
+			"forge": "net.minecraft.util.TaskChainer$DelayedTask",
+			"fabric": "net.minecraft.util.thread.FutureQueue$FutureSupplier"
+		},
+		{
+			"forge": "submit(Executor arg0)",
+			"fabric": "submit(Executor executor)"
+		},
+		{
+			"forge": "submit(Executor arg0)",
+			"fabric": "submit(Executor executor)"
+		}
+	]
+}

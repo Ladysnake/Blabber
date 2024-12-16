@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.carver.NetherWorldCarver",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.carver.NetherWorldCarver",
+			"fabric": "net.minecraft.world.gen.carver.NetherCaveCarver"
+		},
+		{
+			"forge": "getCaveBound()",
+			"fabric": "getMaxCaveCount()"
+		},
+		{
+			"forge": "getCaveBound()",
+			"fabric": "getMaxCaveCount()"
+		},
+		{
+			"forge": "getThickness(RandomSource arg0)",
+			"fabric": "getTunnelSystemWidth(Random arg0)"
+		},
+		{
+			"forge": "getYScale()",
+			"fabric": "getTunnelSystemHeightWidthRatio()"
+		},
+		{
+			"forge": "carveBlock(CarvingContext arg0, CaveCarverConfiguration arg1, ChunkAccess arg2, Function<BlockPos, Holder<Biome>> arg3, CarvingMask arg4, BlockPos$MutableBlockPos arg5, BlockPos$MutableBlockPos arg6, Aquifer arg7, org.apache.commons.lang3.mutable.MutableBoolean arg8)",
+			"fabric": "carveAtPoint(CarverContext arg0, CaveCarverConfig arg1, Chunk arg2, Function<BlockPos, RegistryEntry<Biome>> arg3, CarvingMask arg4, BlockPos$Mutable arg5, BlockPos$Mutable arg6, AquiferSampler arg7, org.apache.commons.lang3.mutable.MutableBoolean arg8)"
+		}
+	]
+}

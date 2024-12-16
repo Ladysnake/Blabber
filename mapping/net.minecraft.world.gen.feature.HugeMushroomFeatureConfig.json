@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.HugeMushroomFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "capProvider",
+			"fabric": "capProvider"
+		},
+		{
+			"forge": "stemProvider",
+			"fabric": "stemProvider"
+		},
+		{
+			"forge": "foliageRadius",
+			"fabric": "foliageRadius"
+		}
+	]
+}

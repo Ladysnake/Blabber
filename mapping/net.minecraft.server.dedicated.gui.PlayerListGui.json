@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.gui.PlayerListComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.server.gui.PlayerListComponent",
+			"fabric": "net.minecraft.server.dedicated.gui.PlayerListGui"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "tick"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

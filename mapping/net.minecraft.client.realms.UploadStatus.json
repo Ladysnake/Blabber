@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.client.UploadStatus",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.client.UploadStatus",
+			"fabric": "net.minecraft.client.realms.UploadStatus"
+		},
+		{
+			"forge": "bytesWritten",
+			"fabric": "bytesWritten"
+		},
+		{
+			"forge": "bytesWritten",
+			"fabric": "bytesWritten"
+		},
+		{
+			"forge": "totalBytes",
+			"fabric": "totalBytes"
+		}
+	]
+}

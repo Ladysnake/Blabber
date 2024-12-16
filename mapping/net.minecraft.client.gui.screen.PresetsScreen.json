@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.client.gui.screens.PresetFlatWorldScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.PresetFlatWorldScreen",
+			"fabric": "net.minecraft.client.gui.screen.PresetsScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SLOT_TEX_SIZE",
+			"fabric": "ICON_TEXTURE_SIZE"
+		},
+		{
+			"forge": "SLOT_BG_SIZE",
+			"fabric": "ICON_SIZE"
+		},
+		{
+			"forge": "SLOT_STAT_HEIGHT",
+			"fabric": "BUTTON_HEIGHT"
+		},
+		{
+			"forge": "SLOT_BG_X",
+			"fabric": "ICON_BACKGROUND_OFFSET_X"
+		},
+		{
+			"forge": "SLOT_BG_Y",
+			"fabric": "ICON_BACKGROUND_OFFSET_Y"
+		},
+		{
+			"forge": "SLOT_FG_X",
+			"fabric": "ICON_OFFSET_X"
+		},
+		{
+			"forge": "SLOT_FG_Y",
+			"fabric": "ICON_OFFSET_Y"
+		},
+		{
+			"forge": "DEFAULT_BIOME",
+			"fabric": "BIOME_KEY"
+		},
+		{
+			"forge": "UNKNOWN_PRESET",
+			"fabric": "UNKNOWN_PRESET_TEXT"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "shareText",
+			"fabric": "shareText"
+		},
+		{
+			"forge": "listText",
+			"fabric": "listText"
+		},
+		{
+			"forge": "list",
+			"fabric": "listWidget"
+		},
+		{
+			"forge": "selectButton",
+			"fabric": "selectPresetButton"
+		},
+		{
+			"forge": "export",
+			"fabric": "customPresetField"
+		},
+		{
+			"forge": "settings",
+			"fabric": "config"
+		},
+		{
+			"forge": "getLayerInfoFromString(HolderGetter<Block> arg0, String arg1, int arg2)",
+			"fabric": "parseLayerString(RegistryEntryLookup<Block> blockLookup, String layer, int layerStartHeight)"
+		},
+		{
+			"forge": "getLayerInfoFromString(HolderGetter<Block> arg0, String arg1, int arg2)",
+			"fabric": "parseLayerString(RegistryEntryLookup<Block> blockLookup, String layer, int layerStartHeight)"
+		},
+		{
+			"forge": "getLayersInfoFromString(HolderGetter<Block> arg0, String arg1)",
+			"fabric": "parsePresetLayersString(RegistryEntryLookup<Block> blockLookup, String layers)"
+		},
+		{
+			"forge": "fromString(HolderGetter<Block> arg0, HolderGetter<Biome> arg1, HolderGetter<StructureSet> arg2, HolderGetter<PlacedFeature> arg3, String arg4, FlatLevelGeneratorSettings arg5)",
+			"fabric": "parsePresetString(RegistryEntryLookup<Block> blockLookup, RegistryEntryLookup<Biome> biomeLookup, RegistryEntryLookup<StructureSet> structureSetLookup, RegistryEntryLookup<PlacedFeature> placedFeatureLookup, String preset, FlatChunkGeneratorConfig config)"
+		},
+		{
+			"forge": "save(FlatLevelGeneratorSettings arg0)",
+			"fabric": "getGeneratorConfigString(FlatChunkGeneratorConfig config)"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "mouseScrolled(double arg0, double arg1, double arg2)",
+			"fabric": "mouseScrolled(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "resize(Minecraft arg0, int arg1, int arg2)",
+			"fabric": "resize(MinecraftClient arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "updateButtonValidity(boolean arg0)",
+			"fabric": "updateSelectButton(boolean hasSelected)"
+		}
+	]
+}

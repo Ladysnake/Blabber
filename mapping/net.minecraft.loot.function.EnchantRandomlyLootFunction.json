@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction",
+			"fabric": "net.minecraft.loot.function.EnchantRandomlyLootFunction"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "enchantments",
+			"fabric": "enchantments"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "enchantItem(ItemStack arg0, Enchantment arg1, RandomSource arg2)",
+			"fabric": "addEnchantmentToStack(ItemStack stack, Enchantment enchantment, Random random)"
+		},
+		{
+			"forge": "randomEnchantment()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "randomApplicableEnchantment()",
+			"fabric": "builder()"
+		}
+	]
+}

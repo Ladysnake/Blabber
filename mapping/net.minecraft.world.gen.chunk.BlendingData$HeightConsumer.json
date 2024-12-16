@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blending.BlendingData$HeightConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blending.BlendingData$HeightConsumer",
+			"fabric": "net.minecraft.world.gen.chunk.BlendingData$HeightConsumer"
+		},
+		{
+			"forge": "consume(int arg0, int arg1, double arg2)",
+			"fabric": "consume(int biomeX, int biomeZ, double height)"
+		},
+		{
+			"forge": "consume(int arg0, int arg1, double arg2)",
+			"fabric": "consume(int biomeX, int biomeZ, double height)"
+		}
+	]
+}

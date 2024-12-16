@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.renderer.texture.Stitcher$Holder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.Stitcher$Holder",
+			"fabric": "net.minecraft.client.texture.TextureStitcher$Holder"
+		},
+		{
+			"forge": "entry",
+			"fabric": "sprite"
+		},
+		{
+			"forge": "entry",
+			"fabric": "sprite"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "entry()",
+			"fabric": "sprite()"
+		},
+		{
+			"forge": "entry()",
+			"fabric": "sprite()"
+		},
+		{
+			"forge": "width()",
+			"fabric": "width()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "height()"
+		}
+	]
+}

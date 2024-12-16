@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.MultifaceSpreader$SpreadPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.MultifaceSpreader$SpreadPredicate",
+			"fabric": "net.minecraft.block.LichenGrower$GrowPosPredicate"
+		},
+		{
+			"forge": "test(BlockGetter arg0, BlockPos arg1, MultifaceSpreader$SpreadPos arg2)",
+			"fabric": "test(BlockView world, BlockPos pos, LichenGrower$GrowPos growPos)"
+		},
+		{
+			"forge": "test(BlockGetter arg0, BlockPos arg1, MultifaceSpreader$SpreadPos arg2)",
+			"fabric": "test(BlockView world, BlockPos pos, LichenGrower$GrowPos growPos)"
+		}
+	]
+}

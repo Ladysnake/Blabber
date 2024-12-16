@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.monster.Spider$SpiderAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Spider$SpiderAttackGoal",
+			"fabric": "net.minecraft.entity.mob.SpiderEntity$AttackGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "getAttackReachSqr(LivingEntity arg0)",
+			"fabric": "getSquaredMaxAttackDistance(LivingEntity arg0)"
+		}
+	]
+}

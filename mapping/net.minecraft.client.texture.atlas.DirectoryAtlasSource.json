@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.sources.DirectoryLister",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.sources.DirectoryLister",
+			"fabric": "net.minecraft.client.texture.atlas.DirectoryAtlasSource"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "sourcePath",
+			"fabric": "source"
+		},
+		{
+			"forge": "idPrefix",
+			"fabric": "prefix"
+		},
+		{
+			"forge": "run(ResourceManager arg0, SpriteSource$Output arg1)",
+			"fabric": "load(ResourceManager arg0, AtlasSource$SpriteRegions arg1)"
+		},
+		{
+			"forge": "run(ResourceManager arg0, SpriteSource$Output arg1)",
+			"fabric": "load(ResourceManager arg0, AtlasSource$SpriteRegions arg1)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

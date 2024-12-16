@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen$GameRuleEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen$GameRuleEntry",
+			"fabric": "net.minecraft.client.gui.screen.world.EditGameRulesScreen$NamedRuleWidget"
+		},
+		{
+			"forge": "label",
+			"fabric": "name"
+		},
+		{
+			"forge": "label",
+			"fabric": "name"
+		},
+		{
+			"forge": "children",
+			"fabric": "children"
+		},
+		{
+			"forge": "children()",
+			"fabric": "children()"
+		},
+		{
+			"forge": "children()",
+			"fabric": "children()"
+		},
+		{
+			"forge": "narratables()",
+			"fabric": "selectableChildren()"
+		},
+		{
+			"forge": "renderLabel(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawName(DrawContext context, int x, int y)"
+		}
+	]
+}

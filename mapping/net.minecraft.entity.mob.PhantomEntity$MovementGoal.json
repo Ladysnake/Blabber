@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.Phantom$PhantomMoveTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Phantom$PhantomMoveTargetGoal",
+			"fabric": "net.minecraft.entity.mob.PhantomEntity$MovementGoal"
+		},
+		{
+			"forge": "touchingTarget()",
+			"fabric": "isNearTarget()"
+		},
+		{
+			"forge": "touchingTarget()",
+			"fabric": "isNearTarget()"
+		}
+	]
+}

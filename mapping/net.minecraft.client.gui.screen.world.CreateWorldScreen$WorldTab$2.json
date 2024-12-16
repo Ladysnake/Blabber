@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$WorldTab$2",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$WorldTab$2",
+			"fabric": "net.minecraft.client.gui.screen.world.CreateWorldScreen$WorldTab$2"
+		},
+		{
+			"forge": "getSelectedList()",
+			"fabric": "getCurrent()"
+		},
+		{
+			"forge": "getSelectedList()",
+			"fabric": "getCurrent()"
+		},
+		{
+			"forge": "getDefaultList()",
+			"fabric": "getDefaults()"
+		}
+	]
+}

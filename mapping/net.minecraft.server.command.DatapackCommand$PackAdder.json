@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.commands.DataPackCommand$Inserter",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.DataPackCommand$Inserter",
+			"fabric": "net.minecraft.server.command.DatapackCommand$PackAdder"
+		},
+		{
+			"forge": "apply(List<Pack> arg0, Pack arg1)",
+			"fabric": "apply(List<ResourcePackProfile> profiles, ResourcePackProfile profile)"
+		},
+		{
+			"forge": "apply(List<Pack> arg0, Pack arg1)",
+			"fabric": "apply(List<ResourcePackProfile> profiles, ResourcePackProfile profile)"
+		}
+	]
+}

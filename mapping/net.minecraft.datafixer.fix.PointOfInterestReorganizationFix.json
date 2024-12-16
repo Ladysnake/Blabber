@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ReorganizePoi",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ReorganizePoi",
+			"fabric": "net.minecraft.datafixer.fix.PointOfInterestReorganizationFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "reorganize(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "cap(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "reorganize(com.mojang.serialization.Dynamic<T> arg0)"
+		}
+	]
+}

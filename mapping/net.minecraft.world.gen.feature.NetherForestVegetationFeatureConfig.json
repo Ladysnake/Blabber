@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.NetherForestVegetationConfig",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.NetherForestVegetationConfig",
+			"fabric": "net.minecraft.world.gen.feature.NetherForestVegetationFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "VEGETATION_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "VEGETATION_CODEC"
+		},
+		{
+			"forge": "spreadWidth",
+			"fabric": "spreadWidth"
+		},
+		{
+			"forge": "spreadHeight",
+			"fabric": "spreadHeight"
+		}
+	]
+}

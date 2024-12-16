@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityUUIDFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityUUIDFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityUuidFix"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ABSTRACT_HORSES",
+			"fabric": "RIDEABLE_TAMEABLES"
+		},
+		{
+			"forge": "TAMEABLE_ANIMALS",
+			"fabric": "TAMEABLE_PETS"
+		},
+		{
+			"forge": "ANIMALS",
+			"fabric": "BREEDABLES"
+		},
+		{
+			"forge": "MOBS",
+			"fabric": "LEASHABLES"
+		},
+		{
+			"forge": "LIVING_ENTITIES",
+			"fabric": "OTHER_LIVINGS"
+		},
+		{
+			"forge": "PROJECTILES",
+			"fabric": "PROJECTILES"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "updateAngryAtMemory(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updatePiglin(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateAngryAtMemory(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateEvokerFangs(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateEvokerFangs(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateZombieVillager(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateZombieVillager(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateAreaEffectCloud(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateAreaEffectCloud(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateShulkerBullet(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateShulkerBullet(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateItem(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateItemEntity(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateFox(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateFox(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateHurtBy(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateZombifiedPiglin(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateAnimalOwner(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateTameable(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateAnimal(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateBreedable(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateMob(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateLeashable(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateLivingEntity(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateLiving(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateProjectile(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateProjectile(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateEntityUUID(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "updateSelfUuid(com.mojang.serialization.Dynamic<?> arg0)"
+		}
+	]
+}

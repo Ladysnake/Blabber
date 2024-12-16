@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.random.WeightedEntry$Wrapper",
+	"items": [
+		{
+			"forge": "net.minecraft.util.random.WeightedEntry$Wrapper",
+			"fabric": "net.minecraft.util.collection.Weighted$Present"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "weight",
+			"fabric": "weight"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "getWeight()",
+			"fabric": "getWeight()"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.Codec<E> arg0)",
+			"fabric": "createCodec(com.mojang.serialization.Codec<E> dataCodec)"
+		}
+	]
+}

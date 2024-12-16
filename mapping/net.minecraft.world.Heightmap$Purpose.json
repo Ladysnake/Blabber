@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Heightmap$Usage",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Heightmap$Usage",
+			"fabric": "net.minecraft.world.Heightmap$Purpose"
+		},
+		{
+			"forge": "WORLDGEN",
+			"fabric": "WORLDGEN"
+		},
+		{
+			"forge": "WORLDGEN",
+			"fabric": "WORLDGEN"
+		},
+		{
+			"forge": "LIVE_WORLD",
+			"fabric": "LIVE_WORLD"
+		},
+		{
+			"forge": "CLIENT",
+			"fabric": "CLIENT"
+		}
+	]
+}

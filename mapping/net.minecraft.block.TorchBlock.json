@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.block.TorchBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.TorchBlock",
+			"fabric": "net.minecraft.block.TorchBlock"
+		},
+		{
+			"forge": "AABB_STANDING_OFFSET",
+			"fabric": "field_31265"
+		},
+		{
+			"forge": "AABB_STANDING_OFFSET",
+			"fabric": "field_31265"
+		},
+		{
+			"forge": "AABB",
+			"fabric": "BOUNDING_SHAPE"
+		},
+		{
+			"forge": "flameParticle",
+			"fabric": "particle"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		}
+	]
+}

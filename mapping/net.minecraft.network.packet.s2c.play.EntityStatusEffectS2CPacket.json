@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.EntityStatusEffectS2CPacket"
+		},
+		{
+			"forge": "FLAG_AMBIENT",
+			"fabric": "AMBIENT_MASK"
+		},
+		{
+			"forge": "FLAG_AMBIENT",
+			"fabric": "AMBIENT_MASK"
+		},
+		{
+			"forge": "FLAG_VISIBLE",
+			"fabric": "SHOW_PARTICLES_MASK"
+		},
+		{
+			"forge": "FLAG_SHOW_ICON",
+			"fabric": "SHOW_ICON_MASK"
+		},
+		{
+			"forge": "entityId",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "effect",
+			"fabric": "effectId"
+		},
+		{
+			"forge": "effectAmplifier",
+			"fabric": "amplifier"
+		},
+		{
+			"forge": "effectDurationTicks",
+			"fabric": "duration"
+		},
+		{
+			"forge": "flags",
+			"fabric": "flags"
+		},
+		{
+			"forge": "factorData",
+			"fabric": "factorCalculationData"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getEntityId()",
+			"fabric": "getEntityId()"
+		},
+		{
+			"forge": "getEffect()",
+			"fabric": "getEffectId()"
+		},
+		{
+			"forge": "getEffectAmplifier()",
+			"fabric": "getAmplifier()"
+		},
+		{
+			"forge": "getEffectDurationTicks()",
+			"fabric": "getDuration()"
+		},
+		{
+			"forge": "isEffectVisible()",
+			"fabric": "shouldShowParticles()"
+		},
+		{
+			"forge": "isEffectAmbient()",
+			"fabric": "isAmbient()"
+		},
+		{
+			"forge": "effectShowsIcon()",
+			"fabric": "shouldShowIcon()"
+		},
+		{
+			"forge": "getFactorData()",
+			"fabric": "getFactorCalculationData()"
+		}
+	]
+}

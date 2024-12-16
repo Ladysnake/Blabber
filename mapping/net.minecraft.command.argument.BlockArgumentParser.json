@@ -1,0 +1,241 @@
+{
+	"title": "net.minecraft.commands.arguments.blocks.BlockStateParser",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.blocks.BlockStateParser",
+			"fabric": "net.minecraft.command.argument.BlockArgumentParser"
+		},
+		{
+			"forge": "ERROR_NO_TAGS_ALLOWED",
+			"fabric": "DISALLOWED_TAG_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_TAGS_ALLOWED",
+			"fabric": "DISALLOWED_TAG_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_UNKNOWN_BLOCK",
+			"fabric": "INVALID_BLOCK_ID_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_UNKNOWN_PROPERTY",
+			"fabric": "UNKNOWN_PROPERTY_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_DUPLICATE_PROPERTY",
+			"fabric": "DUPLICATE_PROPERTY_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INVALID_VALUE",
+			"fabric": "INVALID_PROPERTY_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_EXPECTED_VALUE",
+			"fabric": "EMPTY_PROPERTY_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_EXPECTED_END_OF_PROPERTIES",
+			"fabric": "UNCLOSED_PROPERTIES_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_UNKNOWN_TAG",
+			"fabric": "UNKNOWN_BLOCK_TAG_EXCEPTION"
+		},
+		{
+			"forge": "SYNTAX_START_PROPERTIES",
+			"fabric": "PROPERTIES_OPENING"
+		},
+		{
+			"forge": "SYNTAX_START_NBT",
+			"fabric": "NBT_OPENING"
+		},
+		{
+			"forge": "SYNTAX_END_PROPERTIES",
+			"fabric": "PROPERTIES_CLOSING"
+		},
+		{
+			"forge": "SYNTAX_EQUALS",
+			"fabric": "PROPERTY_DEFINER"
+		},
+		{
+			"forge": "SYNTAX_PROPERTY_SEPARATOR",
+			"fabric": "PROPERTY_SEPARATOR"
+		},
+		{
+			"forge": "SYNTAX_TAG",
+			"fabric": "TAG_PREFIX"
+		},
+		{
+			"forge": "SUGGEST_NOTHING",
+			"fabric": "SUGGEST_DEFAULT"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "registryWrapper"
+		},
+		{
+			"forge": "reader",
+			"fabric": "reader"
+		},
+		{
+			"forge": "forTesting",
+			"fabric": "allowTag"
+		},
+		{
+			"forge": "allowNbt",
+			"fabric": "allowSnbt"
+		},
+		{
+			"forge": "properties",
+			"fabric": "blockProperties"
+		},
+		{
+			"forge": "vagueProperties",
+			"fabric": "tagProperties"
+		},
+		{
+			"forge": "id",
+			"fabric": "blockId"
+		},
+		{
+			"forge": "definition",
+			"fabric": "stateFactory"
+		},
+		{
+			"forge": "state",
+			"fabric": "blockState"
+		},
+		{
+			"forge": "nbt",
+			"fabric": "data"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tagId"
+		},
+		{
+			"forge": "suggestions",
+			"fabric": "suggestions"
+		},
+		{
+			"forge": "parseForBlock(HolderLookup<Block> arg0, String arg1, boolean arg2)",
+			"fabric": "block(RegistryWrapper<Block> registryWrapper, String string, boolean allowSnbt)"
+		},
+		{
+			"forge": "parseForBlock(HolderLookup<Block> arg0, String arg1, boolean arg2)",
+			"fabric": "block(RegistryWrapper<Block> registryWrapper, String string, boolean allowSnbt)"
+		},
+		{
+			"forge": "parseForBlock(HolderLookup<Block> arg0, com.mojang.brigadier.StringReader arg1, boolean arg2)",
+			"fabric": "block(RegistryWrapper<Block> registryWrapper, com.mojang.brigadier.StringReader reader, boolean allowSnbt)"
+		},
+		{
+			"forge": "parseForTesting(HolderLookup<Block> arg0, String arg1, boolean arg2)",
+			"fabric": "blockOrTag(RegistryWrapper<Block> registryWrapper, String string, boolean allowSnbt)"
+		},
+		{
+			"forge": "parseForTesting(HolderLookup<Block> arg0, com.mojang.brigadier.StringReader arg1, boolean arg2)",
+			"fabric": "blockOrTag(RegistryWrapper<Block> registryWrapper, com.mojang.brigadier.StringReader reader, boolean allowSnbt)"
+		},
+		{
+			"forge": "fillSuggestions(HolderLookup<Block> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1, boolean arg2, boolean arg3)",
+			"fabric": "getSuggestions(RegistryWrapper<Block> registryWrapper, com.mojang.brigadier.suggestion.SuggestionsBuilder builder, boolean allowTag, boolean allowSnbt)"
+		},
+		{
+			"forge": "parse()",
+			"fabric": "parse()"
+		},
+		{
+			"forge": "suggestPropertyNameOrEnd(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestBlockPropertiesOrEnd(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestVaguePropertyNameOrEnd(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestTagPropertiesOrEnd(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestPropertyName(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestBlockProperties(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestVaguePropertyName(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestTagProperties(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestOpenNbt(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestSnbt(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "hasBlockEntity()",
+			"fabric": "hasBlockEntity()"
+		},
+		{
+			"forge": "suggestEquals(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestEqualsCharacter(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestNextPropertyOrEnd(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestCommaOrEnd(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "addSuggestions(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0, Property<T> arg1)",
+			"fabric": "suggestPropertyValues(com.mojang.brigadier.suggestion.SuggestionsBuilder builder, Property<T> property)"
+		},
+		{
+			"forge": "suggestVaguePropertyValue(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0, String arg1)",
+			"fabric": "suggestTagPropertyValues(com.mojang.brigadier.suggestion.SuggestionsBuilder builder, String name)"
+		},
+		{
+			"forge": "suggestOpenVaguePropertiesOrNbt(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestSnbtOrTagProperties(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestOpenPropertiesOrNbt(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestSnbtOrBlockProperties(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestTag(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestIdentifiers(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestItem(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestBlockId(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "suggestBlockIdOrTag(com.mojang.brigadier.suggestion.SuggestionsBuilder arg0)",
+			"fabric": "suggestBlockOrTagId(com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "readBlock()",
+			"fabric": "parseBlockId()"
+		},
+		{
+			"forge": "readTag()",
+			"fabric": "parseTagId()"
+		},
+		{
+			"forge": "readProperties()",
+			"fabric": "parseBlockProperties()"
+		},
+		{
+			"forge": "readVagueProperties()",
+			"fabric": "parseTagProperties()"
+		},
+		{
+			"forge": "readNbt()",
+			"fabric": "parseSnbt()"
+		},
+		{
+			"forge": "setValue(Property<T> arg0, String arg1, int arg2)",
+			"fabric": "parsePropertyValue(Property<T> property, String value, int cursor)"
+		},
+		{
+			"forge": "serialize(BlockState arg0)",
+			"fabric": "stringifyBlockState(BlockState state)"
+		},
+		{
+			"forge": "appendProperty(StringBuilder arg0, Property<T> arg1, Comparable<?> arg2)",
+			"fabric": "stringifyProperty(StringBuilder builder, Property<T> property, Comparable<?> value)"
+		}
+	]
+}

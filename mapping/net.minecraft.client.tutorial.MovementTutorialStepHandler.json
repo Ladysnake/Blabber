@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.client.tutorial.MovementTutorialStepInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.tutorial.MovementTutorialStepInstance",
+			"fabric": "net.minecraft.client.tutorial.MovementTutorialStepHandler"
+		},
+		{
+			"forge": "MINIMUM_TIME_MOVED",
+			"fabric": "field_33029"
+		},
+		{
+			"forge": "MINIMUM_TIME_MOVED",
+			"fabric": "field_33029"
+		},
+		{
+			"forge": "MINIMUM_TIME_LOOKED",
+			"fabric": "field_33030"
+		},
+		{
+			"forge": "MOVE_HINT_DELAY",
+			"fabric": "field_33031"
+		},
+		{
+			"forge": "LOOK_HINT_DELAY",
+			"fabric": "field_33032"
+		},
+		{
+			"forge": "INCOMPLETE",
+			"fabric": "field_33033"
+		},
+		{
+			"forge": "MOVE_TITLE",
+			"fabric": "MOVE_TITLE"
+		},
+		{
+			"forge": "MOVE_DESCRIPTION",
+			"fabric": "MOVE_DESCRIPTION"
+		},
+		{
+			"forge": "LOOK_TITLE",
+			"fabric": "LOOK_TITLE"
+		},
+		{
+			"forge": "LOOK_DESCRIPTION",
+			"fabric": "LOOK_DESCRIPTION"
+		},
+		{
+			"forge": "tutorial",
+			"fabric": "manager"
+		},
+		{
+			"forge": "moveToast",
+			"fabric": "moveToast"
+		},
+		{
+			"forge": "lookToast",
+			"fabric": "lookAroundToast"
+		},
+		{
+			"forge": "timeWaiting",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "timeMoved",
+			"fabric": "movedTicks"
+		},
+		{
+			"forge": "timeLooked",
+			"fabric": "lookedAroundTicks"
+		},
+		{
+			"forge": "moved",
+			"fabric": "movedLastTick"
+		},
+		{
+			"forge": "turned",
+			"fabric": "lookedAroundLastTick"
+		},
+		{
+			"forge": "moveCompleted",
+			"fabric": "moveAroundCompletionTicks"
+		},
+		{
+			"forge": "lookCompleted",
+			"fabric": "lookAroundCompletionTicks"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "destroy()"
+		},
+		{
+			"forge": "onInput(Input arg0)",
+			"fabric": "onMovement(Input arg0)"
+		},
+		{
+			"forge": "onMouse(double arg0, double arg1)",
+			"fabric": "onMouseUpdate(double arg0, double arg1)"
+		}
+	]
+}

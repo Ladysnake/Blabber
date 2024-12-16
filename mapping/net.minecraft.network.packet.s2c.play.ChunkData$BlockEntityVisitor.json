@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundLevelChunkPacketData$BlockEntityTagOutput",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundLevelChunkPacketData$BlockEntityTagOutput",
+			"fabric": "net.minecraft.network.packet.s2c.play.ChunkData$BlockEntityVisitor"
+		},
+		{
+			"forge": "accept(BlockPos arg0, BlockEntityType<?> arg1, CompoundTag arg2)",
+			"fabric": "accept(BlockPos pos, BlockEntityType<?> type, NbtCompound nbt)"
+		},
+		{
+			"forge": "accept(BlockPos arg0, BlockEntityType<?> arg1, CompoundTag arg2)",
+			"fabric": "accept(BlockPos pos, BlockEntityType<?> type, NbtCompound nbt)"
+		}
+	]
+}

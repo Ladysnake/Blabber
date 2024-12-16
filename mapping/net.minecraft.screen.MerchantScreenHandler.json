@@ -1,0 +1,161 @@
+{
+	"title": "net.minecraft.world.inventory.MerchantMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.MerchantMenu",
+			"fabric": "net.minecraft.screen.MerchantScreenHandler"
+		},
+		{
+			"forge": "PAYMENT1_SLOT",
+			"fabric": "INPUT_1_ID"
+		},
+		{
+			"forge": "PAYMENT1_SLOT",
+			"fabric": "INPUT_1_ID"
+		},
+		{
+			"forge": "PAYMENT2_SLOT",
+			"fabric": "INPUT_2_ID"
+		},
+		{
+			"forge": "RESULT_SLOT",
+			"fabric": "OUTPUT_ID"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "INVENTORY_START"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "INVENTORY_END"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "HOTBAR_START"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "HOTBAR_END"
+		},
+		{
+			"forge": "SELLSLOT1_X",
+			"fabric": "INPUT_1_X"
+		},
+		{
+			"forge": "SELLSLOT2_X",
+			"fabric": "INPUT_2_X"
+		},
+		{
+			"forge": "BUYSLOT_X",
+			"fabric": "OUTPUT_X"
+		},
+		{
+			"forge": "ROW_Y",
+			"fabric": "SLOT_Y"
+		},
+		{
+			"forge": "trader",
+			"fabric": "merchant"
+		},
+		{
+			"forge": "tradeContainer",
+			"fabric": "merchantInventory"
+		},
+		{
+			"forge": "merchantLevel",
+			"fabric": "levelProgress"
+		},
+		{
+			"forge": "showProgressBar",
+			"fabric": "leveled"
+		},
+		{
+			"forge": "canRestock",
+			"fabric": "canRefreshTrades"
+		},
+		{
+			"forge": "setShowProgressBar(boolean arg0)",
+			"fabric": "setLeveled(boolean leveled)"
+		},
+		{
+			"forge": "setShowProgressBar(boolean arg0)",
+			"fabric": "setLeveled(boolean leveled)"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "setSelectionHint(int arg0)",
+			"fabric": "setRecipeIndex(int index)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getTraderXp()",
+			"fabric": "getExperience()"
+		},
+		{
+			"forge": "getFutureTraderXp()",
+			"fabric": "getMerchantRewardedExperience()"
+		},
+		{
+			"forge": "setXp(int arg0)",
+			"fabric": "setExperienceFromServer(int experience)"
+		},
+		{
+			"forge": "getTraderLevel()",
+			"fabric": "getLevelProgress()"
+		},
+		{
+			"forge": "setMerchantLevel(int arg0)",
+			"fabric": "setLevelProgress(int levelProgress)"
+		},
+		{
+			"forge": "setCanRestock(boolean arg0)",
+			"fabric": "setCanRefreshTrades(boolean canRefreshTrades)"
+		},
+		{
+			"forge": "canRestock()",
+			"fabric": "canRefreshTrades()"
+		},
+		{
+			"forge": "canTakeItemForPickAll(ItemStack arg0, Slot arg1)",
+			"fabric": "canInsertIntoSlot(ItemStack arg0, Slot arg1)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "playTradeSound()",
+			"fabric": "playYesSound()"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "tryMoveItems(int arg0)",
+			"fabric": "switchTo(int recipeIndex)"
+		},
+		{
+			"forge": "moveFromInventoryToPaymentSlot(int arg0, ItemStack arg1)",
+			"fabric": "autofill(int slot, ItemStack stack)"
+		},
+		{
+			"forge": "setOffers(MerchantOffers arg0)",
+			"fabric": "setOffers(TradeOfferList offers)"
+		},
+		{
+			"forge": "getOffers()",
+			"fabric": "getRecipes()"
+		},
+		{
+			"forge": "showProgressBar()",
+			"fabric": "isLeveled()"
+		}
+	]
+}

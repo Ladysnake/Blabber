@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.server.dedicated.Settings",
+	"items": [
+		{
+			"forge": "net.minecraft.server.dedicated.Settings",
+			"fabric": "net.minecraft.server.dedicated.AbstractPropertiesHandler"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "properties",
+			"fabric": "properties"
+		},
+		{
+			"forge": "loadFromFile(Path arg0)",
+			"fabric": "loadProperties(Path path)"
+		},
+		{
+			"forge": "loadFromFile(Path arg0)",
+			"fabric": "loadProperties(Path path)"
+		},
+		{
+			"forge": "store(Path arg0)",
+			"fabric": "saveProperties(Path path)"
+		},
+		{
+			"forge": "wrapNumberDeserializer(Function<String, V> arg0)",
+			"fabric": "wrapNumberParser(Function<String, V> parser)"
+		},
+		{
+			"forge": "dispatchNumberOrString(IntFunction<V> arg0, Function<String, V> arg1)",
+			"fabric": "combineParser(IntFunction<V> intParser, Function<String, V> fallbackParser)"
+		},
+		{
+			"forge": "getStringRaw(String arg0)",
+			"fabric": "getStringValue(String key)"
+		},
+		{
+			"forge": "getLegacy(String arg0, Function<String, V> arg1)",
+			"fabric": "getDeprecated(String key, Function<String, V> stringifier)"
+		},
+		{
+			"forge": "get(String arg0, Function<String, V> arg1, Function<V, String> arg2, V arg3)",
+			"fabric": "get(String key, Function<String, V> parser, Function<V, String> stringifier, V fallback)"
+		},
+		{
+			"forge": "getMutable(String arg0, Function<String, V> arg1, Function<V, String> arg2, V arg3)",
+			"fabric": "accessor(String key, Function<String, V> parser, Function<V, String> stringifier, V fallback)"
+		},
+		{
+			"forge": "get(String arg0, Function<String, V> arg1, UnaryOperator<V> arg2, Function<V, String> arg3, V arg4)",
+			"fabric": "get(String key, Function<String, V> parser, UnaryOperator<V> parsedTransformer, Function<V, String> stringifier, V fallback)"
+		},
+		{
+			"forge": "get(String arg0, Function<String, V> arg1, V arg2)",
+			"fabric": "get(String key, Function<String, V> parser, V fallback)"
+		},
+		{
+			"forge": "getMutable(String arg0, Function<String, V> arg1, V arg2)",
+			"fabric": "accessor(String key, Function<String, V> parser, V fallback)"
+		},
+		{
+			"forge": "get(String arg0, String arg1)",
+			"fabric": "getString(String key, String fallback)"
+		},
+		{
+			"forge": "getLegacyString(String arg0)",
+			"fabric": "getDeprecatedString(String key)"
+		},
+		{
+			"forge": "get(String arg0, int arg1)",
+			"fabric": "getInt(String key, int fallback)"
+		},
+		{
+			"forge": "getMutable(String arg0, int arg1)",
+			"fabric": "intAccessor(String key, int fallback)"
+		},
+		{
+			"forge": "get(String arg0, UnaryOperator<Integer> arg1, int arg2)",
+			"fabric": "transformedParseInt(String key, UnaryOperator<Integer> transformer, int fallback)"
+		},
+		{
+			"forge": "get(String arg0, long arg1)",
+			"fabric": "parseLong(String key, long fallback)"
+		},
+		{
+			"forge": "get(String arg0, boolean arg1)",
+			"fabric": "parseBoolean(String key, boolean fallback)"
+		},
+		{
+			"forge": "getMutable(String arg0, boolean arg1)",
+			"fabric": "booleanAccessor(String key, boolean fallback)"
+		},
+		{
+			"forge": "getLegacyBoolean(String arg0)",
+			"fabric": "getDeprecatedBoolean(String key)"
+		},
+		{
+			"forge": "cloneProperties()",
+			"fabric": "copyProperties()"
+		},
+		{
+			"forge": "reload(RegistryAccess arg0, Properties arg1)",
+			"fabric": "create(DynamicRegistryManager registryManager, Properties properties)"
+		}
+	]
+}

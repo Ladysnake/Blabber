@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.LakeFeature$Configuration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.LakeFeature$Configuration",
+			"fabric": "net.minecraft.world.gen.feature.LakeFeature$Config"
+		},
+		{
+			"forge": "fluid",
+			"fabric": "fluid"
+		},
+		{
+			"forge": "fluid",
+			"fabric": "fluid"
+		},
+		{
+			"forge": "barrier",
+			"fabric": "barrier"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "fluid()",
+			"fabric": "fluid()"
+		},
+		{
+			"forge": "fluid()",
+			"fabric": "fluid()"
+		},
+		{
+			"forge": "barrier()",
+			"fabric": "barrier()"
+		}
+	]
+}

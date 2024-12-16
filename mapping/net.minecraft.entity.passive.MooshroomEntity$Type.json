@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.entity.animal.MushroomCow$MushroomType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.MushroomCow$MushroomType",
+			"fabric": "net.minecraft.entity.passive.MooshroomEntity$Type"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "BROWN",
+			"fabric": "BROWN"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "type",
+			"fabric": "name"
+		},
+		{
+			"forge": "blockState",
+			"fabric": "mushroom"
+		},
+		{
+			"forge": "getBlockState()",
+			"fabric": "getMushroomState()"
+		},
+		{
+			"forge": "getBlockState()",
+			"fabric": "getMushroomState()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "byType(String arg0)",
+			"fabric": "fromName(String name)"
+		}
+	]
+}

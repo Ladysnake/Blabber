@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.model.SnifferModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.SnifferModel",
+			"fabric": "net.minecraft.client.render.entity.model.SnifferEntityModel"
+		},
+		{
+			"forge": "WALK_ANIMATION_SPEED_MAX",
+			"fabric": "LIMB_ANGLE_SCALE"
+		},
+		{
+			"forge": "WALK_ANIMATION_SPEED_MAX",
+			"fabric": "LIMB_ANGLE_SCALE"
+		},
+		{
+			"forge": "WALK_ANIMATION_SCALE_FACTOR",
+			"fabric": "LIMB_DISTANCE_SCALE"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		}
+	]
+}

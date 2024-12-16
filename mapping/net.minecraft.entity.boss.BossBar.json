@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.world.BossEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.world.BossEvent",
+			"fabric": "net.minecraft.entity.boss.BossBar"
+		},
+		{
+			"forge": "id",
+			"fabric": "uuid"
+		},
+		{
+			"forge": "id",
+			"fabric": "uuid"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "progress",
+			"fabric": "percent"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "overlay",
+			"fabric": "style"
+		},
+		{
+			"forge": "darkenScreen",
+			"fabric": "darkenSky"
+		},
+		{
+			"forge": "playBossMusic",
+			"fabric": "dragonMusic"
+		},
+		{
+			"forge": "createWorldFog",
+			"fabric": "thickenFog"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getUuid()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getUuid()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "setName(Component arg0)",
+			"fabric": "setName(Text name)"
+		},
+		{
+			"forge": "getProgress()",
+			"fabric": "getPercent()"
+		},
+		{
+			"forge": "setProgress(float arg0)",
+			"fabric": "setPercent(float percent)"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "setColor(BossEvent$BossBarColor arg0)",
+			"fabric": "setColor(BossBar$Color color)"
+		},
+		{
+			"forge": "getOverlay()",
+			"fabric": "getStyle()"
+		},
+		{
+			"forge": "setOverlay(BossEvent$BossBarOverlay arg0)",
+			"fabric": "setStyle(BossBar$Style style)"
+		},
+		{
+			"forge": "shouldDarkenScreen()",
+			"fabric": "shouldDarkenSky()"
+		},
+		{
+			"forge": "setDarkenScreen(boolean arg0)",
+			"fabric": "setDarkenSky(boolean darkenSky)"
+		},
+		{
+			"forge": "shouldPlayBossMusic()",
+			"fabric": "hasDragonMusic()"
+		},
+		{
+			"forge": "setPlayBossMusic(boolean arg0)",
+			"fabric": "setDragonMusic(boolean dragonMusic)"
+		},
+		{
+			"forge": "setCreateWorldFog(boolean arg0)",
+			"fabric": "setThickenFog(boolean thickenFog)"
+		},
+		{
+			"forge": "shouldCreateWorldFog()",
+			"fabric": "shouldThickenFog()"
+		}
+	]
+}

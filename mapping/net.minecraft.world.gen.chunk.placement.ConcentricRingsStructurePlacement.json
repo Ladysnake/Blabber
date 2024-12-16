@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement",
+			"fabric": "net.minecraft.world.gen.chunk.placement.ConcentricRingsStructurePlacement"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "distance",
+			"fabric": "distance"
+		},
+		{
+			"forge": "spread",
+			"fabric": "spread"
+		},
+		{
+			"forge": "count",
+			"fabric": "count"
+		},
+		{
+			"forge": "preferredBiomes",
+			"fabric": "preferredBiomes"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<ConcentricRingsStructurePlacement> arg0)",
+			"fabric": "buildConcentricRingsCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<ConcentricRingsStructurePlacement> instance)"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<ConcentricRingsStructurePlacement> arg0)",
+			"fabric": "buildConcentricRingsCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<ConcentricRingsStructurePlacement> instance)"
+		},
+		{
+			"forge": "distance()",
+			"fabric": "getDistance()"
+		},
+		{
+			"forge": "spread()",
+			"fabric": "getSpread()"
+		},
+		{
+			"forge": "count()",
+			"fabric": "getCount()"
+		},
+		{
+			"forge": "preferredBiomes()",
+			"fabric": "getPreferredBiomes()"
+		},
+		{
+			"forge": "isPlacementChunk(ChunkGeneratorStructureState arg0, int arg1, int arg2)",
+			"fabric": "isStartChunk(StructurePlacementCalculator arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

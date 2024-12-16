@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.commands.SharedSuggestionProvider$ElementSuggestionType",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.SharedSuggestionProvider$ElementSuggestionType",
+			"fabric": "net.minecraft.command.CommandSource$SuggestedIdType"
+		},
+		{
+			"forge": "TAGS",
+			"fabric": "TAGS"
+		},
+		{
+			"forge": "TAGS",
+			"fabric": "TAGS"
+		},
+		{
+			"forge": "ELEMENTS",
+			"fabric": "ELEMENTS"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "shouldSuggestTags()",
+			"fabric": "canSuggestTags()"
+		},
+		{
+			"forge": "shouldSuggestTags()",
+			"fabric": "canSuggestTags()"
+		},
+		{
+			"forge": "shouldSuggestElements()",
+			"fabric": "canSuggestElements()"
+		}
+	]
+}

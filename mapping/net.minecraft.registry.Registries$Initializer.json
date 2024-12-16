@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.core.registries.BuiltInRegistries$RegistryBootstrap",
+	"items": [
+		{
+			"forge": "net.minecraft.core.registries.BuiltInRegistries$RegistryBootstrap",
+			"fabric": "net.minecraft.registry.Registries$Initializer"
+		},
+		{
+			"forge": "run(Registry<T> arg0)",
+			"fabric": "run(Registry<T> registry)"
+		},
+		{
+			"forge": "run(Registry<T> arg0)",
+			"fabric": "run(Registry<T> registry)"
+		}
+	]
+}

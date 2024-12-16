@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.screens.multiplayer.SafetyScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.multiplayer.SafetyScreen",
+			"fabric": "net.minecraft.client.gui.screen.multiplayer.MultiplayerWarningScreen"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "HEADER"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "HEADER"
+		},
+		{
+			"forge": "CONTENT",
+			"fabric": "MESSAGE"
+		},
+		{
+			"forge": "CHECK",
+			"fabric": "CHECK_MESSAGE"
+		},
+		{
+			"forge": "NARRATION",
+			"fabric": "NARRATED_TEXT"
+		},
+		{
+			"forge": "previous",
+			"fabric": "parent"
+		},
+		{
+			"forge": "initButtons(int arg0)",
+			"fabric": "initButtons(int arg0)"
+		},
+		{
+			"forge": "initButtons(int arg0)",
+			"fabric": "initButtons(int arg0)"
+		}
+	]
+}

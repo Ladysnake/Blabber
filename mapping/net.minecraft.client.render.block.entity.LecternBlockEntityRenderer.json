@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.LecternRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.LecternRenderer",
+			"fabric": "net.minecraft.client.render.block.entity.LecternBlockEntityRenderer"
+		},
+		{
+			"forge": "bookModel",
+			"fabric": "book"
+		},
+		{
+			"forge": "bookModel",
+			"fabric": "book"
+		},
+		{
+			"forge": "render(LecternBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(LecternBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "render(LecternBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(LecternBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		}
+	]
+}

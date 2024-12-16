@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.chat.SignedMessageLink",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.SignedMessageLink",
+			"fabric": "net.minecraft.network.message.MessageLink"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "sender",
+			"fabric": "sender"
+		},
+		{
+			"forge": "sessionId",
+			"fabric": "sessionId"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "unsigned(UUID arg0)",
+			"fabric": "of(UUID sender)"
+		},
+		{
+			"forge": "unsigned(UUID arg0)",
+			"fabric": "of(UUID sender)"
+		},
+		{
+			"forge": "root(UUID arg0, UUID arg1)",
+			"fabric": "of(UUID sender, UUID sessionId)"
+		},
+		{
+			"forge": "updateSignature(SignatureUpdater$Output arg0)",
+			"fabric": "update(SignatureUpdatable$SignatureUpdater updater)"
+		},
+		{
+			"forge": "isDescendantOf(SignedMessageLink arg0)",
+			"fabric": "linksTo(MessageLink preceding)"
+		},
+		{
+			"forge": "advance()",
+			"fabric": "next()"
+		},
+		{
+			"forge": "index()",
+			"fabric": "index()"
+		},
+		{
+			"forge": "sender()",
+			"fabric": "sender()"
+		},
+		{
+			"forge": "sessionId()",
+			"fabric": "sessionId()"
+		}
+	]
+}

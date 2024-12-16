@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunction$SinglePointContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunction$SinglePointContext",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunction$UnblendedNoisePos"
+		},
+		{
+			"forge": "blockX",
+			"fabric": "blockX"
+		},
+		{
+			"forge": "blockX",
+			"fabric": "blockX"
+		},
+		{
+			"forge": "blockY",
+			"fabric": "blockY"
+		},
+		{
+			"forge": "blockZ",
+			"fabric": "blockZ"
+		},
+		{
+			"forge": "blockX()",
+			"fabric": "blockX()"
+		},
+		{
+			"forge": "blockX()",
+			"fabric": "blockX()"
+		},
+		{
+			"forge": "blockY()",
+			"fabric": "blockY()"
+		},
+		{
+			"forge": "blockZ()",
+			"fabric": "blockZ()"
+		}
+	]
+}

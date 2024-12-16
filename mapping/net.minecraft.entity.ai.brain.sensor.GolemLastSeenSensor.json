@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.sensing.GolemSensor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.sensing.GolemSensor",
+			"fabric": "net.minecraft.entity.ai.brain.sensor.GolemLastSeenSensor"
+		},
+		{
+			"forge": "GOLEM_SCAN_RATE",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "GOLEM_SCAN_RATE",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "MEMORY_TIME_TO_LIVE",
+			"fabric": "GOLEM_DETECTED_WARMUP"
+		},
+		{
+			"forge": "doTick(ServerLevel arg0, LivingEntity arg1)",
+			"fabric": "sense(ServerWorld arg0, LivingEntity arg1)"
+		},
+		{
+			"forge": "doTick(ServerLevel arg0, LivingEntity arg1)",
+			"fabric": "sense(ServerWorld arg0, LivingEntity arg1)"
+		},
+		{
+			"forge": "requires()",
+			"fabric": "getOutputMemoryModules()"
+		},
+		{
+			"forge": "checkForNearbyGolem(LivingEntity arg0)",
+			"fabric": "senseIronGolem(LivingEntity entity)"
+		},
+		{
+			"forge": "golemDetected(LivingEntity arg0)",
+			"fabric": "rememberIronGolem(LivingEntity entity)"
+		}
+	]
+}

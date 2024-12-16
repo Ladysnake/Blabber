@@ -1,0 +1,301 @@
+{
+	"title": "net.minecraft.world.entity.monster.piglin.Piglin",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.piglin.Piglin",
+			"fabric": "net.minecraft.entity.mob.PiglinEntity"
+		},
+		{
+			"forge": "DATA_BABY_ID",
+			"fabric": "BABY"
+		},
+		{
+			"forge": "DATA_BABY_ID",
+			"fabric": "BABY"
+		},
+		{
+			"forge": "DATA_IS_CHARGING_CROSSBOW",
+			"fabric": "CHARGING"
+		},
+		{
+			"forge": "DATA_IS_DANCING",
+			"fabric": "DANCING"
+		},
+		{
+			"forge": "SPEED_MODIFIER_BABY_UUID",
+			"fabric": "BABY_SPEED_BOOST_ID"
+		},
+		{
+			"forge": "SPEED_MODIFIER_BABY",
+			"fabric": "BABY_SPEED_BOOST"
+		},
+		{
+			"forge": "MAX_HEALTH",
+			"fabric": "field_30548"
+		},
+		{
+			"forge": "MOVEMENT_SPEED_WHEN_FIGHTING",
+			"fabric": "field_30549"
+		},
+		{
+			"forge": "ATTACK_DAMAGE",
+			"fabric": "field_30550"
+		},
+		{
+			"forge": "CROSSBOW_POWER",
+			"fabric": "field_30551"
+		},
+		{
+			"forge": "CHANCE_OF_WEARING_EACH_ARMOUR_ITEM",
+			"fabric": "field_30552"
+		},
+		{
+			"forge": "MAX_PASSENGERS_ON_ONE_HOGLIN",
+			"fabric": "field_30553"
+		},
+		{
+			"forge": "PROBABILITY_OF_SPAWNING_AS_BABY",
+			"fabric": "field_30554"
+		},
+		{
+			"forge": "BABY_EYE_HEIGHT_ADJUSTMENT",
+			"fabric": "field_30555"
+		},
+		{
+			"forge": "PROBABILITY_OF_SPAWNING_WITH_CROSSBOW_INSTEAD_OF_SWORD",
+			"fabric": "field_30556"
+		},
+		{
+			"forge": "inventory",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "cannotHunt",
+			"fabric": "cannotHunt"
+		},
+		{
+			"forge": "SENSOR_TYPES",
+			"fabric": "SENSOR_TYPES"
+		},
+		{
+			"forge": "MEMORY_TYPES",
+			"fabric": "MEMORY_MODULE_TYPES"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getInventory()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "dropCustomDeathLoot(DamageSource arg0, int arg1, boolean arg2)",
+			"fabric": "dropEquipment(DamageSource arg0, int arg1, boolean arg2)"
+		},
+		{
+			"forge": "addToInventory(ItemStack arg0)",
+			"fabric": "addItem(ItemStack stack)"
+		},
+		{
+			"forge": "canAddToInventory(ItemStack arg0)",
+			"fabric": "canInsertIntoInventory(ItemStack stack)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "onSyncedDataUpdated(EntityDataAccessor<?> arg0)",
+			"fabric": "onTrackedDataSet(TrackedData<?> arg0)"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createPiglinAttributes()"
+		},
+		{
+			"forge": "checkPiglinSpawnRules(EntityType<Piglin> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<PiglinEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "shouldDespawnInPeaceful()",
+			"fabric": "isDisallowedInPeaceful()"
+		},
+		{
+			"forge": "removeWhenFarAway(double arg0)",
+			"fabric": "canImmediatelyDespawn(double arg0)"
+		},
+		{
+			"forge": "populateDefaultEquipmentSlots(RandomSource arg0, DifficultyInstance arg1)",
+			"fabric": "initEquipment(Random arg0, LocalDifficulty arg1)"
+		},
+		{
+			"forge": "maybeWearArmor(EquipmentSlot arg0, ItemStack arg1, RandomSource arg2)",
+			"fabric": "equipAtChance(EquipmentSlot slot, ItemStack stack, Random random)"
+		},
+		{
+			"forge": "brainProvider()",
+			"fabric": "createBrainProfile()"
+		},
+		{
+			"forge": "makeBrain(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "deserializeBrain(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "getBrain()",
+			"fabric": "getBrain()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "getPassengersRidingOffset()",
+			"fabric": "getMountedHeightOffset()"
+		},
+		{
+			"forge": "setBaby(boolean arg0)",
+			"fabric": "setBaby(boolean arg0)"
+		},
+		{
+			"forge": "isBaby()",
+			"fabric": "isBaby()"
+		},
+		{
+			"forge": "setCannotHunt(boolean arg0)",
+			"fabric": "setCannotHunt(boolean cannotHunt)"
+		},
+		{
+			"forge": "canHunt()",
+			"fabric": "canHunt()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "getExperienceReward()",
+			"fabric": "getXpToDrop()"
+		},
+		{
+			"forge": "finishConversion(ServerLevel arg0)",
+			"fabric": "zombify(ServerWorld arg0)"
+		},
+		{
+			"forge": "createSpawnWeapon()",
+			"fabric": "makeInitialWeapon()"
+		},
+		{
+			"forge": "isChargingCrossbow()",
+			"fabric": "isCharging()"
+		},
+		{
+			"forge": "setChargingCrossbow(boolean arg0)",
+			"fabric": "setCharging(boolean arg0)"
+		},
+		{
+			"forge": "onCrossbowAttackPerformed()",
+			"fabric": "postShoot()"
+		},
+		{
+			"forge": "getArmPose()",
+			"fabric": "getActivity()"
+		},
+		{
+			"forge": "isDancing()",
+			"fabric": "isDancing()"
+		},
+		{
+			"forge": "setDancing(boolean arg0)",
+			"fabric": "setDancing(boolean dancing)"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "performRangedAttack(LivingEntity arg0, float arg1)",
+			"fabric": "attack(LivingEntity arg0, float arg1)"
+		},
+		{
+			"forge": "shootCrossbowProjectile(LivingEntity arg0, ItemStack arg1, Projectile arg2, float arg3)",
+			"fabric": "shoot(LivingEntity arg0, ItemStack arg1, ProjectileEntity arg2, float arg3)"
+		},
+		{
+			"forge": "canFireProjectileWeapon(ProjectileWeaponItem arg0)",
+			"fabric": "canUseRangedWeapon(RangedWeaponItem arg0)"
+		},
+		{
+			"forge": "holdInMainHand(ItemStack arg0)",
+			"fabric": "equipToMainHand(ItemStack stack)"
+		},
+		{
+			"forge": "holdInOffHand(ItemStack arg0)",
+			"fabric": "equipToOffHand(ItemStack stack)"
+		},
+		{
+			"forge": "wantsToPickUp(ItemStack arg0)",
+			"fabric": "canGather(ItemStack arg0)"
+		},
+		{
+			"forge": "canReplaceCurrentItem(ItemStack arg0)",
+			"fabric": "canEquipStack(ItemStack stack)"
+		},
+		{
+			"forge": "canReplaceCurrentItem(ItemStack arg0, ItemStack arg1)",
+			"fabric": "prefersNewEquipment(ItemStack arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "pickUpItem(ItemEntity arg0)",
+			"fabric": "loot(ItemEntity arg0)"
+		},
+		{
+			"forge": "startRiding(Entity arg0, boolean arg1)",
+			"fabric": "startRiding(Entity arg0, boolean arg1)"
+		},
+		{
+			"forge": "getTopPassenger(Entity arg0, int arg1)",
+			"fabric": "getTopMostPassenger(Entity entity, int maxLevel)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "playStepSound(BlockPos arg0, BlockState arg1)",
+			"fabric": "playStepSound(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "playSoundEvent(SoundEvent arg0)",
+			"fabric": "playSound(SoundEvent sound)"
+		},
+		{
+			"forge": "playConvertedSound()",
+			"fabric": "playZombificationSound()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.commands.CommandRuntimeException",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandRuntimeException",
+			"fabric": "net.minecraft.command.CommandException"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "getComponent()",
+			"fabric": "getTextMessage()"
+		},
+		{
+			"forge": "getComponent()",
+			"fabric": "getTextMessage()"
+		}
+	]
+}

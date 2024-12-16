@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.server.packs.AbstractPackResources",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.AbstractPackResources",
+			"fabric": "net.minecraft.resource.AbstractFileResourcePack"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "isBuiltin",
+			"fabric": "alwaysStable"
+		},
+		{
+			"forge": "getMetadataSection(MetadataSectionSerializer<T> arg0)",
+			"fabric": "parseMetadata(ResourceMetadataReader<T> arg0)"
+		},
+		{
+			"forge": "getMetadataSection(MetadataSectionSerializer<T> arg0)",
+			"fabric": "parseMetadata(ResourceMetadataReader<T> arg0)"
+		},
+		{
+			"forge": "getMetadataFromStream(MetadataSectionSerializer<T> arg0, InputStream arg1)",
+			"fabric": "parseMetadata(ResourceMetadataReader<T> metaReader, InputStream inputStream)"
+		},
+		{
+			"forge": "packId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "isBuiltin()",
+			"fabric": "isAlwaysStable()"
+		}
+	]
+}

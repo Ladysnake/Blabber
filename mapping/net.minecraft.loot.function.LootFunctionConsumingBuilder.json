@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder",
+			"fabric": "net.minecraft.loot.function.LootFunctionConsumingBuilder"
+		},
+		{
+			"forge": "apply(LootItemFunction$Builder arg0)",
+			"fabric": "apply(LootFunction$Builder function)"
+		},
+		{
+			"forge": "apply(LootItemFunction$Builder arg0)",
+			"fabric": "apply(LootFunction$Builder function)"
+		},
+		{
+			"forge": "apply(Iterable<E> arg0, Function<E, LootItemFunction$Builder> arg1)",
+			"fabric": "apply(Iterable<E> functions, Function<E, LootFunction$Builder> toBuilderFunction)"
+		},
+		{
+			"forge": "apply(E[] arg0, Function<E, LootItemFunction$Builder> arg1)",
+			"fabric": "apply(E[] functions, Function<E, LootFunction$Builder> toBuilderFunction)"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getThisFunctionConsumingBuilder()"
+		}
+	]
+}

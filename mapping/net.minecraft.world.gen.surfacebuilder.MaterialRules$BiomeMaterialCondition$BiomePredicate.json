@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$BiomeConditionSource$1BiomeCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$BiomeConditionSource$1BiomeCondition",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$BiomeMaterialCondition$BiomePredicate"
+		},
+		{
+			"forge": "compute()",
+			"fabric": "test()"
+		},
+		{
+			"forge": "compute()",
+			"fabric": "test()"
+		}
+	]
+}

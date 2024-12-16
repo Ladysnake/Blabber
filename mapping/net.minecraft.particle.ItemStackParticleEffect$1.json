@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.core.particles.ItemParticleOption$1",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.ItemParticleOption$1",
+			"fabric": "net.minecraft.particle.ItemStackParticleEffect$1"
+		},
+		{
+			"forge": "fromCommand(ParticleType<ItemParticleOption> arg0, com.mojang.brigadier.StringReader arg1)",
+			"fabric": "read(ParticleType<ItemStackParticleEffect> arg0, com.mojang.brigadier.StringReader arg1)"
+		},
+		{
+			"forge": "fromCommand(ParticleType<ItemParticleOption> arg0, com.mojang.brigadier.StringReader arg1)",
+			"fabric": "read(ParticleType<ItemStackParticleEffect> arg0, com.mojang.brigadier.StringReader arg1)"
+		},
+		{
+			"forge": "fromNetwork(ParticleType<ItemParticleOption> arg0, FriendlyByteBuf arg1)",
+			"fabric": "read(ParticleType<ItemStackParticleEffect> arg0, PacketByteBuf arg1)"
+		}
+	]
+}

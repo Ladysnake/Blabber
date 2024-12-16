@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.entries.LootPoolEntries",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.entries.LootPoolEntries",
+			"fabric": "net.minecraft.loot.entry.LootPoolEntryTypes"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "ITEM",
+			"fabric": "ITEM"
+		},
+		{
+			"forge": "REFERENCE",
+			"fabric": "LOOT_TABLE"
+		},
+		{
+			"forge": "DYNAMIC",
+			"fabric": "DYNAMIC"
+		},
+		{
+			"forge": "TAG",
+			"fabric": "TAG"
+		},
+		{
+			"forge": "ALTERNATIVES",
+			"fabric": "ALTERNATIVES"
+		},
+		{
+			"forge": "SEQUENCE",
+			"fabric": "SEQUENCE"
+		},
+		{
+			"forge": "GROUP",
+			"fabric": "GROUP"
+		},
+		{
+			"forge": "register(String arg0, Serializer<? extends LootPoolEntryContainer> arg1)",
+			"fabric": "register(String id, JsonSerializer<? extends LootPoolEntry> jsonSerializer)"
+		},
+		{
+			"forge": "register(String arg0, Serializer<? extends LootPoolEntryContainer> arg1)",
+			"fabric": "register(String id, JsonSerializer<? extends LootPoolEntry> jsonSerializer)"
+		},
+		{
+			"forge": "createGsonAdapter()",
+			"fabric": "createGsonSerializer()"
+		}
+	]
+}

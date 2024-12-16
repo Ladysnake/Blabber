@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.world.inventory.AbstractFurnaceMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.AbstractFurnaceMenu",
+			"fabric": "net.minecraft.screen.AbstractFurnaceScreenHandler"
+		},
+		{
+			"forge": "INGREDIENT_SLOT",
+			"fabric": "field_30738"
+		},
+		{
+			"forge": "INGREDIENT_SLOT",
+			"fabric": "field_30738"
+		},
+		{
+			"forge": "FUEL_SLOT",
+			"fabric": "field_30739"
+		},
+		{
+			"forge": "RESULT_SLOT",
+			"fabric": "field_30740"
+		},
+		{
+			"forge": "SLOT_COUNT",
+			"fabric": "field_30741"
+		},
+		{
+			"forge": "DATA_COUNT",
+			"fabric": "field_30742"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "field_30743"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "field_30744"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "field_30745"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "field_30746"
+		},
+		{
+			"forge": "container",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "data",
+			"fabric": "propertyDelegate"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "recipeType",
+			"fabric": "recipeType"
+		},
+		{
+			"forge": "recipeBookType",
+			"fabric": "category"
+		},
+		{
+			"forge": "fillCraftSlotsStackedContents(StackedContents arg0)",
+			"fabric": "populateRecipeFinder(RecipeMatcher arg0)"
+		},
+		{
+			"forge": "fillCraftSlotsStackedContents(StackedContents arg0)",
+			"fabric": "populateRecipeFinder(RecipeMatcher arg0)"
+		},
+		{
+			"forge": "clearCraftingContent()",
+			"fabric": "clearCraftingSlots()"
+		},
+		{
+			"forge": "recipeMatches(Recipe<? super Container> arg0)",
+			"fabric": "matches(Recipe<? super Inventory> arg0)"
+		},
+		{
+			"forge": "getResultSlotIndex()",
+			"fabric": "getCraftingResultSlotIndex()"
+		},
+		{
+			"forge": "getGridWidth()",
+			"fabric": "getCraftingWidth()"
+		},
+		{
+			"forge": "getGridHeight()",
+			"fabric": "getCraftingHeight()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getCraftingSlotCount()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "canSmelt(ItemStack arg0)",
+			"fabric": "isSmeltable(ItemStack itemStack)"
+		},
+		{
+			"forge": "isFuel(ItemStack arg0)",
+			"fabric": "isFuel(ItemStack itemStack)"
+		},
+		{
+			"forge": "getBurnProgress()",
+			"fabric": "getCookProgress()"
+		},
+		{
+			"forge": "getLitProgress()",
+			"fabric": "getFuelProgress()"
+		},
+		{
+			"forge": "isLit()",
+			"fabric": "isBurning()"
+		},
+		{
+			"forge": "getRecipeBookType()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "shouldMoveToInventory(int arg0)",
+			"fabric": "canInsertIntoSlot(int arg0)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.particle.SingleQuadParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.SingleQuadParticle",
+			"fabric": "net.minecraft.client.particle.BillboardParticle"
+		},
+		{
+			"forge": "quadSize",
+			"fabric": "scale"
+		},
+		{
+			"forge": "quadSize",
+			"fabric": "scale"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		},
+		{
+			"forge": "getQuadSize(float arg0)",
+			"fabric": "getSize(float tickDelta)"
+		},
+		{
+			"forge": "scale(float arg0)",
+			"fabric": "scale(float arg0)"
+		},
+		{
+			"forge": "getU0()",
+			"fabric": "getMinU()"
+		},
+		{
+			"forge": "getU1()",
+			"fabric": "getMaxU()"
+		},
+		{
+			"forge": "getV0()",
+			"fabric": "getMinV()"
+		},
+		{
+			"forge": "getV1()",
+			"fabric": "getMaxV()"
+		}
+	]
+}

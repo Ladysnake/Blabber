@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.LootItemConditions",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.LootItemConditions",
+			"fabric": "net.minecraft.loot.condition.LootConditionTypes"
+		},
+		{
+			"forge": "INVERTED",
+			"fabric": "INVERTED"
+		},
+		{
+			"forge": "INVERTED",
+			"fabric": "INVERTED"
+		},
+		{
+			"forge": "ANY_OF",
+			"fabric": "ANY_OF"
+		},
+		{
+			"forge": "ALL_OF",
+			"fabric": "ALL_OF"
+		},
+		{
+			"forge": "RANDOM_CHANCE",
+			"fabric": "RANDOM_CHANCE"
+		},
+		{
+			"forge": "RANDOM_CHANCE_WITH_LOOTING",
+			"fabric": "RANDOM_CHANCE_WITH_LOOTING"
+		},
+		{
+			"forge": "ENTITY_PROPERTIES",
+			"fabric": "ENTITY_PROPERTIES"
+		},
+		{
+			"forge": "KILLED_BY_PLAYER",
+			"fabric": "KILLED_BY_PLAYER"
+		},
+		{
+			"forge": "ENTITY_SCORES",
+			"fabric": "ENTITY_SCORES"
+		},
+		{
+			"forge": "BLOCK_STATE_PROPERTY",
+			"fabric": "BLOCK_STATE_PROPERTY"
+		},
+		{
+			"forge": "MATCH_TOOL",
+			"fabric": "MATCH_TOOL"
+		},
+		{
+			"forge": "TABLE_BONUS",
+			"fabric": "TABLE_BONUS"
+		},
+		{
+			"forge": "SURVIVES_EXPLOSION",
+			"fabric": "SURVIVES_EXPLOSION"
+		},
+		{
+			"forge": "DAMAGE_SOURCE_PROPERTIES",
+			"fabric": "DAMAGE_SOURCE_PROPERTIES"
+		},
+		{
+			"forge": "LOCATION_CHECK",
+			"fabric": "LOCATION_CHECK"
+		},
+		{
+			"forge": "WEATHER_CHECK",
+			"fabric": "WEATHER_CHECK"
+		},
+		{
+			"forge": "REFERENCE",
+			"fabric": "REFERENCE"
+		},
+		{
+			"forge": "TIME_CHECK",
+			"fabric": "TIME_CHECK"
+		},
+		{
+			"forge": "VALUE_CHECK",
+			"fabric": "VALUE_CHECK"
+		},
+		{
+			"forge": "register(String arg0, Serializer<? extends LootItemCondition> arg1)",
+			"fabric": "register(String id, JsonSerializer<? extends LootCondition> serializer)"
+		},
+		{
+			"forge": "register(String arg0, Serializer<? extends LootItemCondition> arg1)",
+			"fabric": "register(String id, JsonSerializer<? extends LootCondition> serializer)"
+		},
+		{
+			"forge": "createGsonAdapter()",
+			"fabric": "createGsonSerializer()"
+		},
+		{
+			"forge": "andConditions(Predicate<T>[] arg0)",
+			"fabric": "matchingAll(Predicate<T>[] predicates)"
+		},
+		{
+			"forge": "orConditions(Predicate<T>[] arg0)",
+			"fabric": "matchingAny(Predicate<T>[] predicates)"
+		}
+	]
+}

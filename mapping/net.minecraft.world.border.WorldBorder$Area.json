@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.border.WorldBorder$BorderExtent",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.border.WorldBorder$BorderExtent",
+			"fabric": "net.minecraft.world.border.WorldBorder$Area"
+		},
+		{
+			"forge": "getMinX()",
+			"fabric": "getBoundWest()"
+		},
+		{
+			"forge": "getMinX()",
+			"fabric": "getBoundWest()"
+		},
+		{
+			"forge": "getMaxX()",
+			"fabric": "getBoundEast()"
+		},
+		{
+			"forge": "getMinZ()",
+			"fabric": "getBoundNorth()"
+		},
+		{
+			"forge": "getMaxZ()",
+			"fabric": "getBoundSouth()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getLerpSpeed()",
+			"fabric": "getShrinkingSpeed()"
+		},
+		{
+			"forge": "getLerpRemainingTime()",
+			"fabric": "getSizeLerpTime()"
+		},
+		{
+			"forge": "getLerpTarget()",
+			"fabric": "getSizeLerpTarget()"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "getStage()"
+		},
+		{
+			"forge": "onAbsoluteMaxSizeChange()",
+			"fabric": "onMaxRadiusChanged()"
+		},
+		{
+			"forge": "onCenterChange()",
+			"fabric": "onCenterChanged()"
+		},
+		{
+			"forge": "update()",
+			"fabric": "getAreaInstance()"
+		},
+		{
+			"forge": "getCollisionShape()",
+			"fabric": "asVoxelShape()"
+		}
+	]
+}

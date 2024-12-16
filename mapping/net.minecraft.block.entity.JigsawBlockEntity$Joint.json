@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.block.entity.JigsawBlockEntity$JointType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.JigsawBlockEntity$JointType",
+			"fabric": "net.minecraft.block.entity.JigsawBlockEntity$Joint"
+		},
+		{
+			"forge": "ROLLABLE",
+			"fabric": "ROLLABLE"
+		},
+		{
+			"forge": "ROLLABLE",
+			"fabric": "ROLLABLE"
+		},
+		{
+			"forge": "ALIGNED",
+			"fabric": "ALIGNED"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "byName(String name)"
+		},
+		{
+			"forge": "getTranslatedName()",
+			"fabric": "asText()"
+		}
+	]
+}

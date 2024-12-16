@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.gui.screens.multiplayer.ServerSelectionList$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.multiplayer.ServerSelectionList$Entry",
+			"fabric": "net.minecraft.client.gui.screen.multiplayer.MultiplayerServerListWidget$Entry"
+		}
+	]
+}

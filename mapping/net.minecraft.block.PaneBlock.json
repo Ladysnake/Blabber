@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.IronBarsBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.IronBarsBlock",
+			"fabric": "net.minecraft.block.PaneBlock"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getVisualShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCameraCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "skipRendering(BlockState arg0, BlockState arg1, Direction arg2)",
+			"fabric": "isSideInvisible(BlockState arg0, BlockState arg1, Direction arg2)"
+		},
+		{
+			"forge": "attachsTo(BlockState arg0, boolean arg1)",
+			"fabric": "connectsTo(BlockState state, boolean sideSolidFullSquare)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

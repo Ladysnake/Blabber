@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.lighting.LayerLightSectionStorage$SectionType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.LayerLightSectionStorage$SectionType",
+			"fabric": "net.minecraft.world.chunk.light.LightStorage$Status"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "LIGHT_ONLY",
+			"fabric": "LIGHT_ONLY"
+		},
+		{
+			"forge": "LIGHT_AND_DATA",
+			"fabric": "LIGHT_AND_DATA"
+		},
+		{
+			"forge": "display",
+			"fabric": "sigil"
+		},
+		{
+			"forge": "display",
+			"fabric": "sigil"
+		},
+		{
+			"forge": "display()",
+			"fabric": "getSigil()"
+		},
+		{
+			"forge": "display()",
+			"fabric": "getSigil()"
+		}
+	]
+}

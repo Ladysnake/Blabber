@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.BambooLeaves",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.BambooLeaves",
+			"fabric": "net.minecraft.block.enums.BambooLeaves"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "SMALL",
+			"fabric": "SMALL"
+		},
+		{
+			"forge": "LARGE",
+			"fabric": "LARGE"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

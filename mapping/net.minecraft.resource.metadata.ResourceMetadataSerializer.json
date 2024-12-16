@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.packs.metadata.MetadataSectionType",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.metadata.MetadataSectionType",
+			"fabric": "net.minecraft.resource.metadata.ResourceMetadataSerializer"
+		},
+		{
+			"forge": "toJson(T arg0)",
+			"fabric": "toJson(T metadata)"
+		},
+		{
+			"forge": "toJson(T arg0)",
+			"fabric": "toJson(T metadata)"
+		},
+		{
+			"forge": "fromCodec(String arg0, com.mojang.serialization.Codec<T> arg1)",
+			"fabric": "fromCodec(String key, com.mojang.serialization.Codec<T> codec)"
+		}
+	]
+}

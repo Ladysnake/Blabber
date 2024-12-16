@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.gui.font.CodepointMap",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.CodepointMap",
+			"fabric": "net.minecraft.client.font.GlyphContainer"
+		},
+		{
+			"forge": "BLOCK_BITS",
+			"fabric": "ROW_SHIFT"
+		},
+		{
+			"forge": "BLOCK_BITS",
+			"fabric": "ROW_SHIFT"
+		},
+		{
+			"forge": "BLOCK_SIZE",
+			"fabric": "ENTRIES_PER_ROW"
+		},
+		{
+			"forge": "IN_BLOCK_MASK",
+			"fabric": "LAST_ENTRY_NUM_IN_ROW"
+		},
+		{
+			"forge": "MAX_BLOCK",
+			"fabric": "LAST_ROW_NUM"
+		},
+		{
+			"forge": "BLOCK_COUNT",
+			"fabric": "NUM_ROWS"
+		},
+		{
+			"forge": "empty",
+			"fabric": "defaultRow"
+		},
+		{
+			"forge": "blockMap",
+			"fabric": "rows"
+		},
+		{
+			"forge": "blockConstructor",
+			"fabric": "makeRow"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int codePoint)"
+		},
+		{
+			"forge": "put(int arg0, T arg1)",
+			"fabric": "put(int codePoint, T glyph)"
+		},
+		{
+			"forge": "computeIfAbsent(int arg0, IntFunction<T> arg1)",
+			"fabric": "computeIfAbsent(int codePoint, IntFunction<T> ifAbsent)"
+		},
+		{
+			"forge": "remove(int arg0)",
+			"fabric": "remove(int codePoint)"
+		},
+		{
+			"forge": "forEach(CodepointMap$Output<T> arg0)",
+			"fabric": "forEachGlyph(GlyphContainer$GlyphConsumer<T> glyphConsumer)"
+		},
+		{
+			"forge": "keySet()",
+			"fabric": "getProvidedGlyphs()"
+		}
+	]
+}

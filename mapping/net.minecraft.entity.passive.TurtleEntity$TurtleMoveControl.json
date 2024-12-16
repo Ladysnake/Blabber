@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.animal.Turtle$TurtleMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Turtle$TurtleMoveControl",
+			"fabric": "net.minecraft.entity.passive.TurtleEntity$TurtleMoveControl"
+		},
+		{
+			"forge": "turtle",
+			"fabric": "turtle"
+		},
+		{
+			"forge": "turtle",
+			"fabric": "turtle"
+		},
+		{
+			"forge": "updateSpeed()",
+			"fabric": "updateVelocity()"
+		},
+		{
+			"forge": "updateSpeed()",
+			"fabric": "updateVelocity()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

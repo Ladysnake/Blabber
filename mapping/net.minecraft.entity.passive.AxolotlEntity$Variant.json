@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.animal.axolotl.Axolotl$Variant",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.axolotl.Axolotl$Variant",
+			"fabric": "net.minecraft.entity.passive.AxolotlEntity$Variant"
+		},
+		{
+			"forge": "LUCY",
+			"fabric": "LUCY"
+		},
+		{
+			"forge": "LUCY",
+			"fabric": "LUCY"
+		},
+		{
+			"forge": "WILD",
+			"fabric": "WILD"
+		},
+		{
+			"forge": "GOLD",
+			"fabric": "GOLD"
+		},
+		{
+			"forge": "CYAN",
+			"fabric": "CYAN"
+		},
+		{
+			"forge": "BLUE",
+			"fabric": "BLUE"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "common",
+			"fabric": "natural"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "getCommonSpawnVariant(RandomSource arg0)",
+			"fabric": "getRandomNatural(Random random)"
+		},
+		{
+			"forge": "getRareSpawnVariant(RandomSource arg0)",
+			"fabric": "getRandomUnnatural(Random random)"
+		},
+		{
+			"forge": "getSpawnVariant(RandomSource arg0, boolean arg1)",
+			"fabric": "getRandom(Random random, boolean natural)"
+		}
+	]
+}

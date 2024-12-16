@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.enchantment.WaterWorkerEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.WaterWorkerEnchantment",
+			"fabric": "net.minecraft.enchantment.AquaAffinityEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		}
+	]
+}

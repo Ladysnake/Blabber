@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.components.SplashRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.SplashRenderer",
+			"fabric": "net.minecraft.client.gui.screen.SplashTextRenderer"
+		},
+		{
+			"forge": "CHRISTMAS",
+			"fabric": "MERRY_X_MAS_"
+		},
+		{
+			"forge": "CHRISTMAS",
+			"fabric": "MERRY_X_MAS_"
+		},
+		{
+			"forge": "NEW_YEAR",
+			"fabric": "HAPPY_NEW_YEAR_"
+		},
+		{
+			"forge": "HALLOWEEN",
+			"fabric": "OOOOO_O_O_OOOOO__SPOOKY_"
+		},
+		{
+			"forge": "WIDTH_OFFSET",
+			"fabric": "TEXT_X"
+		},
+		{
+			"forge": "HEIGH_OFFSET",
+			"fabric": "TEXT_Y"
+		},
+		{
+			"forge": "splash",
+			"fabric": "text"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, Font arg2, int arg3)",
+			"fabric": "render(DrawContext context, int screenWidth, TextRenderer textRenderer, int alpha)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, Font arg2, int arg3)",
+			"fabric": "render(DrawContext context, int screenWidth, TextRenderer textRenderer, int alpha)"
+		}
+	]
+}

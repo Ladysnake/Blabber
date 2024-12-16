@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.TrappedChestBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.TrappedChestBlock",
+			"fabric": "net.minecraft.block.TrappedChestBlock"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getOpenChestStat()",
+			"fabric": "getOpenStat()"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "getDirectSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStrongRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		}
+	]
+}

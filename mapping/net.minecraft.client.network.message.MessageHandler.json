@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.ChatListener",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.ChatListener",
+			"fabric": "net.minecraft.client.network.message.MessageHandler"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "delayedMessageQueue",
+			"fabric": "delayedMessages"
+		},
+		{
+			"forge": "messageDelay",
+			"fabric": "chatDelay"
+		},
+		{
+			"forge": "previousMessageTime",
+			"fabric": "lastProcessTime"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "processDelayedMessages()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "processDelayedMessages()"
+		},
+		{
+			"forge": "setMessageDelay(double arg0)",
+			"fabric": "setChatDelay(double chatDelay)"
+		},
+		{
+			"forge": "acceptNextDelayedMessage()",
+			"fabric": "process()"
+		},
+		{
+			"forge": "queueSize()",
+			"fabric": "getUnprocessedMessageCount()"
+		},
+		{
+			"forge": "clearQueue()",
+			"fabric": "processAll()"
+		},
+		{
+			"forge": "removeFromDelayedMessageQueue(MessageSignature arg0)",
+			"fabric": "removeDelayedMessage(MessageSignatureData signature)"
+		},
+		{
+			"forge": "willDelayMessages()",
+			"fabric": "shouldDelay()"
+		},
+		{
+			"forge": "handleMessage(MessageSignature arg0, BooleanSupplier arg1)",
+			"fabric": "process(MessageSignatureData signature, BooleanSupplier processor)"
+		},
+		{
+			"forge": "handlePlayerChatMessage(PlayerChatMessage arg0, com.mojang.authlib.GameProfile arg1, ChatType$Bound arg2)",
+			"fabric": "onChatMessage(SignedMessage message, com.mojang.authlib.GameProfile sender, MessageType$Parameters params)"
+		},
+		{
+			"forge": "handleDisguisedChatMessage(Component arg0, ChatType$Bound arg1)",
+			"fabric": "onProfilelessMessage(Text content, MessageType$Parameters params)"
+		},
+		{
+			"forge": "showMessageToPlayer(ChatType$Bound arg0, PlayerChatMessage arg1, Component arg2, com.mojang.authlib.GameProfile arg3, boolean arg4, Instant arg5)",
+			"fabric": "processChatMessageInternal(MessageType$Parameters params, SignedMessage message, Text decorated, com.mojang.authlib.GameProfile sender, boolean onlyShowSecureChat, Instant receptionTimestamp)"
+		},
+		{
+			"forge": "narrateChatMessage(ChatType$Bound arg0, Component arg1)",
+			"fabric": "narrate(MessageType$Parameters params, Text message)"
+		},
+		{
+			"forge": "evaluateTrustLevel(PlayerChatMessage arg0, Component arg1, Instant arg2)",
+			"fabric": "getStatus(SignedMessage message, Text decorated, Instant receptionTimestamp)"
+		},
+		{
+			"forge": "logPlayerMessage(PlayerChatMessage arg0, ChatType$Bound arg1, com.mojang.authlib.GameProfile arg2, ChatTrustLevel arg3)",
+			"fabric": "addToChatLog(SignedMessage message, MessageType$Parameters params, com.mojang.authlib.GameProfile sender, MessageTrustStatus trustStatus)"
+		},
+		{
+			"forge": "logSystemMessage(Component arg0, Instant arg1)",
+			"fabric": "addToChatLog(Text message, Instant timestamp)"
+		},
+		{
+			"forge": "handleSystemMessage(Component arg0, boolean arg1)",
+			"fabric": "onGameMessage(Text message, boolean overlay)"
+		},
+		{
+			"forge": "guessChatUUID(Component arg0)",
+			"fabric": "extractSender(Text text)"
+		},
+		{
+			"forge": "isSenderLocalPlayer(UUID arg0)",
+			"fabric": "isAlwaysTrusted(UUID sender)"
+		}
+	]
+}

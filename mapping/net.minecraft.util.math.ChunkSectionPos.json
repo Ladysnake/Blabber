@@ -1,0 +1,293 @@
+{
+	"title": "net.minecraft.core.SectionPos",
+	"items": [
+		{
+			"forge": "net.minecraft.core.SectionPos",
+			"fabric": "net.minecraft.util.math.ChunkSectionPos"
+		},
+		{
+			"forge": "SECTION_BITS",
+			"fabric": "field_33096"
+		},
+		{
+			"forge": "SECTION_BITS",
+			"fabric": "field_33096"
+		},
+		{
+			"forge": "SECTION_SIZE",
+			"fabric": "field_33097"
+		},
+		{
+			"forge": "SECTION_MASK",
+			"fabric": "field_33100"
+		},
+		{
+			"forge": "SECTION_HALF_SIZE",
+			"fabric": "field_33098"
+		},
+		{
+			"forge": "SECTION_MAX_INDEX",
+			"fabric": "field_33099"
+		},
+		{
+			"forge": "PACKED_X_LENGTH",
+			"fabric": "field_33101"
+		},
+		{
+			"forge": "PACKED_Y_LENGTH",
+			"fabric": "field_33102"
+		},
+		{
+			"forge": "PACKED_Z_LENGTH",
+			"fabric": "field_33103"
+		},
+		{
+			"forge": "PACKED_X_MASK",
+			"fabric": "field_33104"
+		},
+		{
+			"forge": "PACKED_Y_MASK",
+			"fabric": "field_33105"
+		},
+		{
+			"forge": "PACKED_Z_MASK",
+			"fabric": "field_33106"
+		},
+		{
+			"forge": "Y_OFFSET",
+			"fabric": "field_33107"
+		},
+		{
+			"forge": "Z_OFFSET",
+			"fabric": "field_33108"
+		},
+		{
+			"forge": "X_OFFSET",
+			"fabric": "field_33109"
+		},
+		{
+			"forge": "RELATIVE_X_SHIFT",
+			"fabric": "field_33110"
+		},
+		{
+			"forge": "RELATIVE_Y_SHIFT",
+			"fabric": "field_33111"
+		},
+		{
+			"forge": "RELATIVE_Z_SHIFT",
+			"fabric": "field_33112"
+		},
+		{
+			"forge": "of(int arg0, int arg1, int arg2)",
+			"fabric": "from(int x, int y, int z)"
+		},
+		{
+			"forge": "of(int arg0, int arg1, int arg2)",
+			"fabric": "from(int x, int y, int z)"
+		},
+		{
+			"forge": "of(BlockPos arg0)",
+			"fabric": "from(BlockPos pos)"
+		},
+		{
+			"forge": "of(ChunkPos arg0, int arg1)",
+			"fabric": "from(ChunkPos chunkPos, int y)"
+		},
+		{
+			"forge": "of(EntityAccess arg0)",
+			"fabric": "from(EntityLike entity)"
+		},
+		{
+			"forge": "of(Position arg0)",
+			"fabric": "from(Position pos)"
+		},
+		{
+			"forge": "of(long arg0)",
+			"fabric": "from(long packed)"
+		},
+		{
+			"forge": "bottomOf(ChunkAccess arg0)",
+			"fabric": "from(Chunk chunk)"
+		},
+		{
+			"forge": "offset(long arg0, Direction arg1)",
+			"fabric": "offset(long packed, Direction direction)"
+		},
+		{
+			"forge": "offset(long arg0, int arg1, int arg2, int arg3)",
+			"fabric": "offset(long packed, int x, int y, int z)"
+		},
+		{
+			"forge": "posToSectionCoord(double arg0)",
+			"fabric": "getSectionCoord(double coord)"
+		},
+		{
+			"forge": "blockToSectionCoord(int arg0)",
+			"fabric": "getSectionCoord(int coord)"
+		},
+		{
+			"forge": "blockToSectionCoord(double arg0)",
+			"fabric": "getSectionCoordFloored(double coord)"
+		},
+		{
+			"forge": "sectionRelative(int arg0)",
+			"fabric": "getLocalCoord(int coord)"
+		},
+		{
+			"forge": "sectionRelativePos(BlockPos arg0)",
+			"fabric": "packLocal(BlockPos pos)"
+		},
+		{
+			"forge": "sectionRelativeX(short arg0)",
+			"fabric": "unpackLocalX(short packedLocalPos)"
+		},
+		{
+			"forge": "sectionRelativeY(short arg0)",
+			"fabric": "unpackLocalY(short packedLocalPos)"
+		},
+		{
+			"forge": "sectionRelativeZ(short arg0)",
+			"fabric": "unpackLocalZ(short packedLocalPos)"
+		},
+		{
+			"forge": "relativeToBlockX(short arg0)",
+			"fabric": "unpackBlockX(short packedLocalPos)"
+		},
+		{
+			"forge": "relativeToBlockY(short arg0)",
+			"fabric": "unpackBlockY(short packedLocalPos)"
+		},
+		{
+			"forge": "relativeToBlockZ(short arg0)",
+			"fabric": "unpackBlockZ(short packedLocalPos)"
+		},
+		{
+			"forge": "relativeToBlockPos(short arg0)",
+			"fabric": "unpackBlockPos(short packedLocalPos)"
+		},
+		{
+			"forge": "sectionToBlockCoord(int arg0)",
+			"fabric": "getBlockCoord(int sectionCoord)"
+		},
+		{
+			"forge": "sectionToBlockCoord(int arg0, int arg1)",
+			"fabric": "getOffsetPos(int chunkCoord, int offset)"
+		},
+		{
+			"forge": "x(long arg0)",
+			"fabric": "unpackX(long packed)"
+		},
+		{
+			"forge": "y(long arg0)",
+			"fabric": "unpackY(long packed)"
+		},
+		{
+			"forge": "z(long arg0)",
+			"fabric": "unpackZ(long packed)"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getSectionX()"
+		},
+		{
+			"forge": "y()",
+			"fabric": "getSectionY()"
+		},
+		{
+			"forge": "z()",
+			"fabric": "getSectionZ()"
+		},
+		{
+			"forge": "minBlockX()",
+			"fabric": "getMinX()"
+		},
+		{
+			"forge": "minBlockY()",
+			"fabric": "getMinY()"
+		},
+		{
+			"forge": "minBlockZ()",
+			"fabric": "getMinZ()"
+		},
+		{
+			"forge": "maxBlockX()",
+			"fabric": "getMaxX()"
+		},
+		{
+			"forge": "maxBlockY()",
+			"fabric": "getMaxY()"
+		},
+		{
+			"forge": "maxBlockZ()",
+			"fabric": "getMaxZ()"
+		},
+		{
+			"forge": "blockToSection(long arg0)",
+			"fabric": "fromBlockPos(long blockPos)"
+		},
+		{
+			"forge": "getZeroNode(int arg0, int arg1)",
+			"fabric": "withZeroY(int x, int z)"
+		},
+		{
+			"forge": "getZeroNode(long arg0)",
+			"fabric": "withZeroY(long pos)"
+		},
+		{
+			"forge": "origin()",
+			"fabric": "getMinPos()"
+		},
+		{
+			"forge": "center()",
+			"fabric": "getCenterPos()"
+		},
+		{
+			"forge": "chunk()",
+			"fabric": "toChunkPos()"
+		},
+		{
+			"forge": "asLong(BlockPos arg0)",
+			"fabric": "toLong(BlockPos pos)"
+		},
+		{
+			"forge": "asLong(int arg0, int arg1, int arg2)",
+			"fabric": "asLong(int x, int y, int z)"
+		},
+		{
+			"forge": "asLong()",
+			"fabric": "asLong()"
+		},
+		{
+			"forge": "offset(int arg0, int arg1, int arg2)",
+			"fabric": "add(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "blocksInside()",
+			"fabric": "streamBlocks()"
+		},
+		{
+			"forge": "cube(SectionPos arg0, int arg1)",
+			"fabric": "stream(ChunkSectionPos center, int radius)"
+		},
+		{
+			"forge": "aroundChunk(ChunkPos arg0, int arg1, int arg2, int arg3)",
+			"fabric": "stream(ChunkPos center, int radius, int minY, int maxY)"
+		},
+		{
+			"forge": "betweenClosedStream(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "stream(int minX, int minY, int minZ, int maxX, int maxY, int maxZ)"
+		},
+		{
+			"forge": "aroundAndAtBlockPos(BlockPos arg0, it.unimi.dsi.fastutil.longs.LongConsumer arg1)",
+			"fabric": "forEachChunkSectionAround(BlockPos pos, it.unimi.dsi.fastutil.longs.LongConsumer consumer)"
+		},
+		{
+			"forge": "aroundAndAtBlockPos(long arg0, it.unimi.dsi.fastutil.longs.LongConsumer arg1)",
+			"fabric": "forEachChunkSectionAround(long pos, it.unimi.dsi.fastutil.longs.LongConsumer consumer)"
+		},
+		{
+			"forge": "aroundAndAtBlockPos(int arg0, int arg1, int arg2, it.unimi.dsi.fastutil.longs.LongConsumer arg3)",
+			"fabric": "forEachChunkSectionAround(int x, int y, int z, it.unimi.dsi.fastutil.longs.LongConsumer consumer)"
+		}
+	]
+}

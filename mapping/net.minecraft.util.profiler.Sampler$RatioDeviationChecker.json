@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.MetricSampler$ValueIncreasedByPercentage",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.MetricSampler$ValueIncreasedByPercentage",
+			"fabric": "net.minecraft.util.profiler.Sampler$RatioDeviationChecker"
+		},
+		{
+			"forge": "percentageIncreaseThreshold",
+			"fabric": "threshold"
+		},
+		{
+			"forge": "percentageIncreaseThreshold",
+			"fabric": "threshold"
+		},
+		{
+			"forge": "previousValue",
+			"fabric": "lastValue"
+		},
+		{
+			"forge": "test(double arg0)",
+			"fabric": "check(double arg0)"
+		},
+		{
+			"forge": "test(double arg0)",
+			"fabric": "check(double arg0)"
+		}
+	]
+}

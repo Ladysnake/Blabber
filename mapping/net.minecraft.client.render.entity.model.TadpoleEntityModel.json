@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.model.TadpoleModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.TadpoleModel",
+			"fabric": "net.minecraft.client.render.entity.model.TadpoleEntityModel"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "tail",
+			"fabric": "tail"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "headParts()",
+			"fabric": "getHeadParts()"
+		},
+		{
+			"forge": "bodyParts()",
+			"fabric": "getBodyParts()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

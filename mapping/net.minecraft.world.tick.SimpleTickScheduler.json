@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.ticks.ProtoChunkTicks",
+	"items": [
+		{
+			"forge": "net.minecraft.world.ticks.ProtoChunkTicks",
+			"fabric": "net.minecraft.world.tick.SimpleTickScheduler"
+		},
+		{
+			"forge": "ticks",
+			"fabric": "scheduledTicks"
+		},
+		{
+			"forge": "ticks",
+			"fabric": "scheduledTicks"
+		},
+		{
+			"forge": "ticksPerPosition",
+			"fabric": "scheduledTicksSet"
+		},
+		{
+			"forge": "schedule(ScheduledTick<T> arg0)",
+			"fabric": "scheduleTick(OrderedTick<T> arg0)"
+		},
+		{
+			"forge": "schedule(ScheduledTick<T> arg0)",
+			"fabric": "scheduleTick(OrderedTick<T> arg0)"
+		},
+		{
+			"forge": "schedule(SavedTick<T> arg0)",
+			"fabric": "scheduleTick(Tick<T> tick)"
+		},
+		{
+			"forge": "hasScheduledTick(BlockPos arg0, T arg1)",
+			"fabric": "isQueued(BlockPos arg0, T arg1)"
+		},
+		{
+			"forge": "count()",
+			"fabric": "getTickCount()"
+		},
+		{
+			"forge": "save(long arg0, Function<T, String> arg1)",
+			"fabric": "toNbt(long arg0, Function<T, String> arg1)"
+		},
+		{
+			"forge": "scheduledTicks()",
+			"fabric": "getTicks()"
+		},
+		{
+			"forge": "load(ListTag arg0, Function<String, Optional<T>> arg1, ChunkPos arg2)",
+			"fabric": "tick(NbtList tickList, Function<String, Optional<T>> typeToNameFunction, ChunkPos pos)"
+		}
+	]
+}

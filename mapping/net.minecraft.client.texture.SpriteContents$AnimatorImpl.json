@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.texture.SpriteContents$Ticker",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.SpriteContents$Ticker",
+			"fabric": "net.minecraft.client.texture.SpriteContents$AnimatorImpl"
+		},
+		{
+			"forge": "frame",
+			"fabric": "frame"
+		},
+		{
+			"forge": "frame",
+			"fabric": "frame"
+		},
+		{
+			"forge": "subFrame",
+			"fabric": "currentTime"
+		},
+		{
+			"forge": "animationInfo",
+			"fabric": "animation"
+		},
+		{
+			"forge": "interpolationData",
+			"fabric": "interpolation"
+		},
+		{
+			"forge": "tickAndUpload(int arg0, int arg1)",
+			"fabric": "tick(int arg0, int arg1)"
+		},
+		{
+			"forge": "tickAndUpload(int arg0, int arg1)",
+			"fabric": "tick(int arg0, int arg1)"
+		}
+	]
+}

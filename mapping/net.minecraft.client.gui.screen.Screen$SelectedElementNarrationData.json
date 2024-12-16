@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.gui.screens.Screen$NarratableSearchResult",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.Screen$NarratableSearchResult",
+			"fabric": "net.minecraft.client.gui.screen.Screen$SelectedElementNarrationData"
+		},
+		{
+			"forge": "entry",
+			"fabric": "selectable"
+		},
+		{
+			"forge": "entry",
+			"fabric": "selectable"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "priority",
+			"fabric": "selectType"
+		}
+	]
+}

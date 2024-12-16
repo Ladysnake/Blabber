@@ -1,0 +1,5065 @@
+{
+	"title": "net.minecraft.world.item.Items",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.Items",
+			"fabric": "net.minecraft.item.Items"
+		},
+		{
+			"forge": "AIR",
+			"fabric": "AIR"
+		},
+		{
+			"forge": "AIR",
+			"fabric": "AIR"
+		},
+		{
+			"forge": "STONE",
+			"fabric": "STONE"
+		},
+		{
+			"forge": "GRANITE",
+			"fabric": "GRANITE"
+		},
+		{
+			"forge": "POLISHED_GRANITE",
+			"fabric": "POLISHED_GRANITE"
+		},
+		{
+			"forge": "DIORITE",
+			"fabric": "DIORITE"
+		},
+		{
+			"forge": "POLISHED_DIORITE",
+			"fabric": "POLISHED_DIORITE"
+		},
+		{
+			"forge": "ANDESITE",
+			"fabric": "ANDESITE"
+		},
+		{
+			"forge": "POLISHED_ANDESITE",
+			"fabric": "POLISHED_ANDESITE"
+		},
+		{
+			"forge": "DEEPSLATE",
+			"fabric": "DEEPSLATE"
+		},
+		{
+			"forge": "COBBLED_DEEPSLATE",
+			"fabric": "COBBLED_DEEPSLATE"
+		},
+		{
+			"forge": "POLISHED_DEEPSLATE",
+			"fabric": "POLISHED_DEEPSLATE"
+		},
+		{
+			"forge": "CALCITE",
+			"fabric": "CALCITE"
+		},
+		{
+			"forge": "TUFF",
+			"fabric": "TUFF"
+		},
+		{
+			"forge": "DRIPSTONE_BLOCK",
+			"fabric": "DRIPSTONE_BLOCK"
+		},
+		{
+			"forge": "GRASS_BLOCK",
+			"fabric": "GRASS_BLOCK"
+		},
+		{
+			"forge": "DIRT",
+			"fabric": "DIRT"
+		},
+		{
+			"forge": "COARSE_DIRT",
+			"fabric": "COARSE_DIRT"
+		},
+		{
+			"forge": "PODZOL",
+			"fabric": "PODZOL"
+		},
+		{
+			"forge": "ROOTED_DIRT",
+			"fabric": "ROOTED_DIRT"
+		},
+		{
+			"forge": "MUD",
+			"fabric": "MUD"
+		},
+		{
+			"forge": "CRIMSON_NYLIUM",
+			"fabric": "CRIMSON_NYLIUM"
+		},
+		{
+			"forge": "WARPED_NYLIUM",
+			"fabric": "WARPED_NYLIUM"
+		},
+		{
+			"forge": "COBBLESTONE",
+			"fabric": "COBBLESTONE"
+		},
+		{
+			"forge": "OAK_PLANKS",
+			"fabric": "OAK_PLANKS"
+		},
+		{
+			"forge": "SPRUCE_PLANKS",
+			"fabric": "SPRUCE_PLANKS"
+		},
+		{
+			"forge": "BIRCH_PLANKS",
+			"fabric": "BIRCH_PLANKS"
+		},
+		{
+			"forge": "JUNGLE_PLANKS",
+			"fabric": "JUNGLE_PLANKS"
+		},
+		{
+			"forge": "ACACIA_PLANKS",
+			"fabric": "ACACIA_PLANKS"
+		},
+		{
+			"forge": "CHERRY_PLANKS",
+			"fabric": "CHERRY_PLANKS"
+		},
+		{
+			"forge": "DARK_OAK_PLANKS",
+			"fabric": "DARK_OAK_PLANKS"
+		},
+		{
+			"forge": "MANGROVE_PLANKS",
+			"fabric": "MANGROVE_PLANKS"
+		},
+		{
+			"forge": "BAMBOO_PLANKS",
+			"fabric": "BAMBOO_PLANKS"
+		},
+		{
+			"forge": "CRIMSON_PLANKS",
+			"fabric": "CRIMSON_PLANKS"
+		},
+		{
+			"forge": "WARPED_PLANKS",
+			"fabric": "WARPED_PLANKS"
+		},
+		{
+			"forge": "BAMBOO_MOSAIC",
+			"fabric": "BAMBOO_MOSAIC"
+		},
+		{
+			"forge": "OAK_SAPLING",
+			"fabric": "OAK_SAPLING"
+		},
+		{
+			"forge": "SPRUCE_SAPLING",
+			"fabric": "SPRUCE_SAPLING"
+		},
+		{
+			"forge": "BIRCH_SAPLING",
+			"fabric": "BIRCH_SAPLING"
+		},
+		{
+			"forge": "JUNGLE_SAPLING",
+			"fabric": "JUNGLE_SAPLING"
+		},
+		{
+			"forge": "ACACIA_SAPLING",
+			"fabric": "ACACIA_SAPLING"
+		},
+		{
+			"forge": "CHERRY_SAPLING",
+			"fabric": "CHERRY_SAPLING"
+		},
+		{
+			"forge": "DARK_OAK_SAPLING",
+			"fabric": "DARK_OAK_SAPLING"
+		},
+		{
+			"forge": "MANGROVE_PROPAGULE",
+			"fabric": "MANGROVE_PROPAGULE"
+		},
+		{
+			"forge": "BEDROCK",
+			"fabric": "BEDROCK"
+		},
+		{
+			"forge": "SAND",
+			"fabric": "SAND"
+		},
+		{
+			"forge": "SUSPICIOUS_SAND",
+			"fabric": "SUSPICIOUS_SAND"
+		},
+		{
+			"forge": "SUSPICIOUS_GRAVEL",
+			"fabric": "SUSPICIOUS_GRAVEL"
+		},
+		{
+			"forge": "RED_SAND",
+			"fabric": "RED_SAND"
+		},
+		{
+			"forge": "GRAVEL",
+			"fabric": "GRAVEL"
+		},
+		{
+			"forge": "COAL_ORE",
+			"fabric": "COAL_ORE"
+		},
+		{
+			"forge": "DEEPSLATE_COAL_ORE",
+			"fabric": "DEEPSLATE_COAL_ORE"
+		},
+		{
+			"forge": "IRON_ORE",
+			"fabric": "IRON_ORE"
+		},
+		{
+			"forge": "DEEPSLATE_IRON_ORE",
+			"fabric": "DEEPSLATE_IRON_ORE"
+		},
+		{
+			"forge": "COPPER_ORE",
+			"fabric": "COPPER_ORE"
+		},
+		{
+			"forge": "DEEPSLATE_COPPER_ORE",
+			"fabric": "DEEPSLATE_COPPER_ORE"
+		},
+		{
+			"forge": "GOLD_ORE",
+			"fabric": "GOLD_ORE"
+		},
+		{
+			"forge": "DEEPSLATE_GOLD_ORE",
+			"fabric": "DEEPSLATE_GOLD_ORE"
+		},
+		{
+			"forge": "REDSTONE_ORE",
+			"fabric": "REDSTONE_ORE"
+		},
+		{
+			"forge": "DEEPSLATE_REDSTONE_ORE",
+			"fabric": "DEEPSLATE_REDSTONE_ORE"
+		},
+		{
+			"forge": "EMERALD_ORE",
+			"fabric": "EMERALD_ORE"
+		},
+		{
+			"forge": "DEEPSLATE_EMERALD_ORE",
+			"fabric": "DEEPSLATE_EMERALD_ORE"
+		},
+		{
+			"forge": "LAPIS_ORE",
+			"fabric": "LAPIS_ORE"
+		},
+		{
+			"forge": "DEEPSLATE_LAPIS_ORE",
+			"fabric": "DEEPSLATE_LAPIS_ORE"
+		},
+		{
+			"forge": "DIAMOND_ORE",
+			"fabric": "DIAMOND_ORE"
+		},
+		{
+			"forge": "DEEPSLATE_DIAMOND_ORE",
+			"fabric": "DEEPSLATE_DIAMOND_ORE"
+		},
+		{
+			"forge": "NETHER_GOLD_ORE",
+			"fabric": "NETHER_GOLD_ORE"
+		},
+		{
+			"forge": "NETHER_QUARTZ_ORE",
+			"fabric": "NETHER_QUARTZ_ORE"
+		},
+		{
+			"forge": "ANCIENT_DEBRIS",
+			"fabric": "ANCIENT_DEBRIS"
+		},
+		{
+			"forge": "COAL_BLOCK",
+			"fabric": "COAL_BLOCK"
+		},
+		{
+			"forge": "RAW_IRON_BLOCK",
+			"fabric": "RAW_IRON_BLOCK"
+		},
+		{
+			"forge": "RAW_COPPER_BLOCK",
+			"fabric": "RAW_COPPER_BLOCK"
+		},
+		{
+			"forge": "RAW_GOLD_BLOCK",
+			"fabric": "RAW_GOLD_BLOCK"
+		},
+		{
+			"forge": "AMETHYST_BLOCK",
+			"fabric": "AMETHYST_BLOCK"
+		},
+		{
+			"forge": "BUDDING_AMETHYST",
+			"fabric": "BUDDING_AMETHYST"
+		},
+		{
+			"forge": "IRON_BLOCK",
+			"fabric": "IRON_BLOCK"
+		},
+		{
+			"forge": "COPPER_BLOCK",
+			"fabric": "COPPER_BLOCK"
+		},
+		{
+			"forge": "GOLD_BLOCK",
+			"fabric": "GOLD_BLOCK"
+		},
+		{
+			"forge": "DIAMOND_BLOCK",
+			"fabric": "DIAMOND_BLOCK"
+		},
+		{
+			"forge": "NETHERITE_BLOCK",
+			"fabric": "NETHERITE_BLOCK"
+		},
+		{
+			"forge": "EXPOSED_COPPER",
+			"fabric": "EXPOSED_COPPER"
+		},
+		{
+			"forge": "WEATHERED_COPPER",
+			"fabric": "WEATHERED_COPPER"
+		},
+		{
+			"forge": "OXIDIZED_COPPER",
+			"fabric": "OXIDIZED_COPPER"
+		},
+		{
+			"forge": "CUT_COPPER",
+			"fabric": "CUT_COPPER"
+		},
+		{
+			"forge": "EXPOSED_CUT_COPPER",
+			"fabric": "EXPOSED_CUT_COPPER"
+		},
+		{
+			"forge": "WEATHERED_CUT_COPPER",
+			"fabric": "WEATHERED_CUT_COPPER"
+		},
+		{
+			"forge": "OXIDIZED_CUT_COPPER",
+			"fabric": "OXIDIZED_CUT_COPPER"
+		},
+		{
+			"forge": "CUT_COPPER_STAIRS",
+			"fabric": "CUT_COPPER_STAIRS"
+		},
+		{
+			"forge": "EXPOSED_CUT_COPPER_STAIRS",
+			"fabric": "EXPOSED_CUT_COPPER_STAIRS"
+		},
+		{
+			"forge": "WEATHERED_CUT_COPPER_STAIRS",
+			"fabric": "WEATHERED_CUT_COPPER_STAIRS"
+		},
+		{
+			"forge": "OXIDIZED_CUT_COPPER_STAIRS",
+			"fabric": "OXIDIZED_CUT_COPPER_STAIRS"
+		},
+		{
+			"forge": "CUT_COPPER_SLAB",
+			"fabric": "CUT_COPPER_SLAB"
+		},
+		{
+			"forge": "EXPOSED_CUT_COPPER_SLAB",
+			"fabric": "EXPOSED_CUT_COPPER_SLAB"
+		},
+		{
+			"forge": "WEATHERED_CUT_COPPER_SLAB",
+			"fabric": "WEATHERED_CUT_COPPER_SLAB"
+		},
+		{
+			"forge": "OXIDIZED_CUT_COPPER_SLAB",
+			"fabric": "OXIDIZED_CUT_COPPER_SLAB"
+		},
+		{
+			"forge": "WAXED_COPPER_BLOCK",
+			"fabric": "WAXED_COPPER_BLOCK"
+		},
+		{
+			"forge": "WAXED_EXPOSED_COPPER",
+			"fabric": "WAXED_EXPOSED_COPPER"
+		},
+		{
+			"forge": "WAXED_WEATHERED_COPPER",
+			"fabric": "WAXED_WEATHERED_COPPER"
+		},
+		{
+			"forge": "WAXED_OXIDIZED_COPPER",
+			"fabric": "WAXED_OXIDIZED_COPPER"
+		},
+		{
+			"forge": "WAXED_CUT_COPPER",
+			"fabric": "WAXED_CUT_COPPER"
+		},
+		{
+			"forge": "WAXED_EXPOSED_CUT_COPPER",
+			"fabric": "WAXED_EXPOSED_CUT_COPPER"
+		},
+		{
+			"forge": "WAXED_WEATHERED_CUT_COPPER",
+			"fabric": "WAXED_WEATHERED_CUT_COPPER"
+		},
+		{
+			"forge": "WAXED_OXIDIZED_CUT_COPPER",
+			"fabric": "WAXED_OXIDIZED_CUT_COPPER"
+		},
+		{
+			"forge": "WAXED_CUT_COPPER_STAIRS",
+			"fabric": "WAXED_CUT_COPPER_STAIRS"
+		},
+		{
+			"forge": "WAXED_EXPOSED_CUT_COPPER_STAIRS",
+			"fabric": "WAXED_EXPOSED_CUT_COPPER_STAIRS"
+		},
+		{
+			"forge": "WAXED_WEATHERED_CUT_COPPER_STAIRS",
+			"fabric": "WAXED_WEATHERED_CUT_COPPER_STAIRS"
+		},
+		{
+			"forge": "WAXED_OXIDIZED_CUT_COPPER_STAIRS",
+			"fabric": "WAXED_OXIDIZED_CUT_COPPER_STAIRS"
+		},
+		{
+			"forge": "WAXED_CUT_COPPER_SLAB",
+			"fabric": "WAXED_CUT_COPPER_SLAB"
+		},
+		{
+			"forge": "WAXED_EXPOSED_CUT_COPPER_SLAB",
+			"fabric": "WAXED_EXPOSED_CUT_COPPER_SLAB"
+		},
+		{
+			"forge": "WAXED_WEATHERED_CUT_COPPER_SLAB",
+			"fabric": "WAXED_WEATHERED_CUT_COPPER_SLAB"
+		},
+		{
+			"forge": "WAXED_OXIDIZED_CUT_COPPER_SLAB",
+			"fabric": "WAXED_OXIDIZED_CUT_COPPER_SLAB"
+		},
+		{
+			"forge": "OAK_LOG",
+			"fabric": "OAK_LOG"
+		},
+		{
+			"forge": "SPRUCE_LOG",
+			"fabric": "SPRUCE_LOG"
+		},
+		{
+			"forge": "BIRCH_LOG",
+			"fabric": "BIRCH_LOG"
+		},
+		{
+			"forge": "JUNGLE_LOG",
+			"fabric": "JUNGLE_LOG"
+		},
+		{
+			"forge": "ACACIA_LOG",
+			"fabric": "ACACIA_LOG"
+		},
+		{
+			"forge": "CHERRY_LOG",
+			"fabric": "CHERRY_LOG"
+		},
+		{
+			"forge": "DARK_OAK_LOG",
+			"fabric": "DARK_OAK_LOG"
+		},
+		{
+			"forge": "MANGROVE_LOG",
+			"fabric": "MANGROVE_LOG"
+		},
+		{
+			"forge": "MANGROVE_ROOTS",
+			"fabric": "MANGROVE_ROOTS"
+		},
+		{
+			"forge": "MUDDY_MANGROVE_ROOTS",
+			"fabric": "MUDDY_MANGROVE_ROOTS"
+		},
+		{
+			"forge": "CRIMSON_STEM",
+			"fabric": "CRIMSON_STEM"
+		},
+		{
+			"forge": "WARPED_STEM",
+			"fabric": "WARPED_STEM"
+		},
+		{
+			"forge": "BAMBOO_BLOCK",
+			"fabric": "BAMBOO_BLOCK"
+		},
+		{
+			"forge": "STRIPPED_OAK_LOG",
+			"fabric": "STRIPPED_OAK_LOG"
+		},
+		{
+			"forge": "STRIPPED_SPRUCE_LOG",
+			"fabric": "STRIPPED_SPRUCE_LOG"
+		},
+		{
+			"forge": "STRIPPED_BIRCH_LOG",
+			"fabric": "STRIPPED_BIRCH_LOG"
+		},
+		{
+			"forge": "STRIPPED_JUNGLE_LOG",
+			"fabric": "STRIPPED_JUNGLE_LOG"
+		},
+		{
+			"forge": "STRIPPED_ACACIA_LOG",
+			"fabric": "STRIPPED_ACACIA_LOG"
+		},
+		{
+			"forge": "STRIPPED_CHERRY_LOG",
+			"fabric": "STRIPPED_CHERRY_LOG"
+		},
+		{
+			"forge": "STRIPPED_DARK_OAK_LOG",
+			"fabric": "STRIPPED_DARK_OAK_LOG"
+		},
+		{
+			"forge": "STRIPPED_MANGROVE_LOG",
+			"fabric": "STRIPPED_MANGROVE_LOG"
+		},
+		{
+			"forge": "STRIPPED_CRIMSON_STEM",
+			"fabric": "STRIPPED_CRIMSON_STEM"
+		},
+		{
+			"forge": "STRIPPED_WARPED_STEM",
+			"fabric": "STRIPPED_WARPED_STEM"
+		},
+		{
+			"forge": "STRIPPED_OAK_WOOD",
+			"fabric": "STRIPPED_OAK_WOOD"
+		},
+		{
+			"forge": "STRIPPED_SPRUCE_WOOD",
+			"fabric": "STRIPPED_SPRUCE_WOOD"
+		},
+		{
+			"forge": "STRIPPED_BIRCH_WOOD",
+			"fabric": "STRIPPED_BIRCH_WOOD"
+		},
+		{
+			"forge": "STRIPPED_JUNGLE_WOOD",
+			"fabric": "STRIPPED_JUNGLE_WOOD"
+		},
+		{
+			"forge": "STRIPPED_ACACIA_WOOD",
+			"fabric": "STRIPPED_ACACIA_WOOD"
+		},
+		{
+			"forge": "STRIPPED_CHERRY_WOOD",
+			"fabric": "STRIPPED_CHERRY_WOOD"
+		},
+		{
+			"forge": "STRIPPED_DARK_OAK_WOOD",
+			"fabric": "STRIPPED_DARK_OAK_WOOD"
+		},
+		{
+			"forge": "STRIPPED_MANGROVE_WOOD",
+			"fabric": "STRIPPED_MANGROVE_WOOD"
+		},
+		{
+			"forge": "STRIPPED_CRIMSON_HYPHAE",
+			"fabric": "STRIPPED_CRIMSON_HYPHAE"
+		},
+		{
+			"forge": "STRIPPED_WARPED_HYPHAE",
+			"fabric": "STRIPPED_WARPED_HYPHAE"
+		},
+		{
+			"forge": "STRIPPED_BAMBOO_BLOCK",
+			"fabric": "STRIPPED_BAMBOO_BLOCK"
+		},
+		{
+			"forge": "OAK_WOOD",
+			"fabric": "OAK_WOOD"
+		},
+		{
+			"forge": "SPRUCE_WOOD",
+			"fabric": "SPRUCE_WOOD"
+		},
+		{
+			"forge": "BIRCH_WOOD",
+			"fabric": "BIRCH_WOOD"
+		},
+		{
+			"forge": "JUNGLE_WOOD",
+			"fabric": "JUNGLE_WOOD"
+		},
+		{
+			"forge": "ACACIA_WOOD",
+			"fabric": "ACACIA_WOOD"
+		},
+		{
+			"forge": "CHERRY_WOOD",
+			"fabric": "CHERRY_WOOD"
+		},
+		{
+			"forge": "DARK_OAK_WOOD",
+			"fabric": "DARK_OAK_WOOD"
+		},
+		{
+			"forge": "MANGROVE_WOOD",
+			"fabric": "MANGROVE_WOOD"
+		},
+		{
+			"forge": "CRIMSON_HYPHAE",
+			"fabric": "CRIMSON_HYPHAE"
+		},
+		{
+			"forge": "WARPED_HYPHAE",
+			"fabric": "WARPED_HYPHAE"
+		},
+		{
+			"forge": "OAK_LEAVES",
+			"fabric": "OAK_LEAVES"
+		},
+		{
+			"forge": "SPRUCE_LEAVES",
+			"fabric": "SPRUCE_LEAVES"
+		},
+		{
+			"forge": "BIRCH_LEAVES",
+			"fabric": "BIRCH_LEAVES"
+		},
+		{
+			"forge": "JUNGLE_LEAVES",
+			"fabric": "JUNGLE_LEAVES"
+		},
+		{
+			"forge": "ACACIA_LEAVES",
+			"fabric": "ACACIA_LEAVES"
+		},
+		{
+			"forge": "CHERRY_LEAVES",
+			"fabric": "CHERRY_LEAVES"
+		},
+		{
+			"forge": "DARK_OAK_LEAVES",
+			"fabric": "DARK_OAK_LEAVES"
+		},
+		{
+			"forge": "MANGROVE_LEAVES",
+			"fabric": "MANGROVE_LEAVES"
+		},
+		{
+			"forge": "AZALEA_LEAVES",
+			"fabric": "AZALEA_LEAVES"
+		},
+		{
+			"forge": "FLOWERING_AZALEA_LEAVES",
+			"fabric": "FLOWERING_AZALEA_LEAVES"
+		},
+		{
+			"forge": "SPONGE",
+			"fabric": "SPONGE"
+		},
+		{
+			"forge": "WET_SPONGE",
+			"fabric": "WET_SPONGE"
+		},
+		{
+			"forge": "GLASS",
+			"fabric": "GLASS"
+		},
+		{
+			"forge": "TINTED_GLASS",
+			"fabric": "TINTED_GLASS"
+		},
+		{
+			"forge": "LAPIS_BLOCK",
+			"fabric": "LAPIS_BLOCK"
+		},
+		{
+			"forge": "SANDSTONE",
+			"fabric": "SANDSTONE"
+		},
+		{
+			"forge": "CHISELED_SANDSTONE",
+			"fabric": "CHISELED_SANDSTONE"
+		},
+		{
+			"forge": "CUT_SANDSTONE",
+			"fabric": "CUT_SANDSTONE"
+		},
+		{
+			"forge": "COBWEB",
+			"fabric": "COBWEB"
+		},
+		{
+			"forge": "GRASS",
+			"fabric": "GRASS"
+		},
+		{
+			"forge": "FERN",
+			"fabric": "FERN"
+		},
+		{
+			"forge": "AZALEA",
+			"fabric": "AZALEA"
+		},
+		{
+			"forge": "FLOWERING_AZALEA",
+			"fabric": "FLOWERING_AZALEA"
+		},
+		{
+			"forge": "DEAD_BUSH",
+			"fabric": "DEAD_BUSH"
+		},
+		{
+			"forge": "SEAGRASS",
+			"fabric": "SEAGRASS"
+		},
+		{
+			"forge": "SEA_PICKLE",
+			"fabric": "SEA_PICKLE"
+		},
+		{
+			"forge": "WHITE_WOOL",
+			"fabric": "WHITE_WOOL"
+		},
+		{
+			"forge": "ORANGE_WOOL",
+			"fabric": "ORANGE_WOOL"
+		},
+		{
+			"forge": "MAGENTA_WOOL",
+			"fabric": "MAGENTA_WOOL"
+		},
+		{
+			"forge": "LIGHT_BLUE_WOOL",
+			"fabric": "LIGHT_BLUE_WOOL"
+		},
+		{
+			"forge": "YELLOW_WOOL",
+			"fabric": "YELLOW_WOOL"
+		},
+		{
+			"forge": "LIME_WOOL",
+			"fabric": "LIME_WOOL"
+		},
+		{
+			"forge": "PINK_WOOL",
+			"fabric": "PINK_WOOL"
+		},
+		{
+			"forge": "GRAY_WOOL",
+			"fabric": "GRAY_WOOL"
+		},
+		{
+			"forge": "LIGHT_GRAY_WOOL",
+			"fabric": "LIGHT_GRAY_WOOL"
+		},
+		{
+			"forge": "CYAN_WOOL",
+			"fabric": "CYAN_WOOL"
+		},
+		{
+			"forge": "PURPLE_WOOL",
+			"fabric": "PURPLE_WOOL"
+		},
+		{
+			"forge": "BLUE_WOOL",
+			"fabric": "BLUE_WOOL"
+		},
+		{
+			"forge": "BROWN_WOOL",
+			"fabric": "BROWN_WOOL"
+		},
+		{
+			"forge": "GREEN_WOOL",
+			"fabric": "GREEN_WOOL"
+		},
+		{
+			"forge": "RED_WOOL",
+			"fabric": "RED_WOOL"
+		},
+		{
+			"forge": "BLACK_WOOL",
+			"fabric": "BLACK_WOOL"
+		},
+		{
+			"forge": "DANDELION",
+			"fabric": "DANDELION"
+		},
+		{
+			"forge": "POPPY",
+			"fabric": "POPPY"
+		},
+		{
+			"forge": "BLUE_ORCHID",
+			"fabric": "BLUE_ORCHID"
+		},
+		{
+			"forge": "ALLIUM",
+			"fabric": "ALLIUM"
+		},
+		{
+			"forge": "AZURE_BLUET",
+			"fabric": "AZURE_BLUET"
+		},
+		{
+			"forge": "RED_TULIP",
+			"fabric": "RED_TULIP"
+		},
+		{
+			"forge": "ORANGE_TULIP",
+			"fabric": "ORANGE_TULIP"
+		},
+		{
+			"forge": "WHITE_TULIP",
+			"fabric": "WHITE_TULIP"
+		},
+		{
+			"forge": "PINK_TULIP",
+			"fabric": "PINK_TULIP"
+		},
+		{
+			"forge": "OXEYE_DAISY",
+			"fabric": "OXEYE_DAISY"
+		},
+		{
+			"forge": "CORNFLOWER",
+			"fabric": "CORNFLOWER"
+		},
+		{
+			"forge": "LILY_OF_THE_VALLEY",
+			"fabric": "LILY_OF_THE_VALLEY"
+		},
+		{
+			"forge": "WITHER_ROSE",
+			"fabric": "WITHER_ROSE"
+		},
+		{
+			"forge": "TORCHFLOWER",
+			"fabric": "TORCHFLOWER"
+		},
+		{
+			"forge": "PITCHER_PLANT",
+			"fabric": "PITCHER_PLANT"
+		},
+		{
+			"forge": "SPORE_BLOSSOM",
+			"fabric": "SPORE_BLOSSOM"
+		},
+		{
+			"forge": "BROWN_MUSHROOM",
+			"fabric": "BROWN_MUSHROOM"
+		},
+		{
+			"forge": "RED_MUSHROOM",
+			"fabric": "RED_MUSHROOM"
+		},
+		{
+			"forge": "CRIMSON_FUNGUS",
+			"fabric": "CRIMSON_FUNGUS"
+		},
+		{
+			"forge": "WARPED_FUNGUS",
+			"fabric": "WARPED_FUNGUS"
+		},
+		{
+			"forge": "CRIMSON_ROOTS",
+			"fabric": "CRIMSON_ROOTS"
+		},
+		{
+			"forge": "WARPED_ROOTS",
+			"fabric": "WARPED_ROOTS"
+		},
+		{
+			"forge": "NETHER_SPROUTS",
+			"fabric": "NETHER_SPROUTS"
+		},
+		{
+			"forge": "WEEPING_VINES",
+			"fabric": "WEEPING_VINES"
+		},
+		{
+			"forge": "TWISTING_VINES",
+			"fabric": "TWISTING_VINES"
+		},
+		{
+			"forge": "SUGAR_CANE",
+			"fabric": "SUGAR_CANE"
+		},
+		{
+			"forge": "KELP",
+			"fabric": "KELP"
+		},
+		{
+			"forge": "MOSS_CARPET",
+			"fabric": "MOSS_CARPET"
+		},
+		{
+			"forge": "PINK_PETALS",
+			"fabric": "PINK_PETALS"
+		},
+		{
+			"forge": "MOSS_BLOCK",
+			"fabric": "MOSS_BLOCK"
+		},
+		{
+			"forge": "HANGING_ROOTS",
+			"fabric": "HANGING_ROOTS"
+		},
+		{
+			"forge": "BIG_DRIPLEAF",
+			"fabric": "BIG_DRIPLEAF"
+		},
+		{
+			"forge": "SMALL_DRIPLEAF",
+			"fabric": "SMALL_DRIPLEAF"
+		},
+		{
+			"forge": "BAMBOO",
+			"fabric": "BAMBOO"
+		},
+		{
+			"forge": "OAK_SLAB",
+			"fabric": "OAK_SLAB"
+		},
+		{
+			"forge": "SPRUCE_SLAB",
+			"fabric": "SPRUCE_SLAB"
+		},
+		{
+			"forge": "BIRCH_SLAB",
+			"fabric": "BIRCH_SLAB"
+		},
+		{
+			"forge": "JUNGLE_SLAB",
+			"fabric": "JUNGLE_SLAB"
+		},
+		{
+			"forge": "ACACIA_SLAB",
+			"fabric": "ACACIA_SLAB"
+		},
+		{
+			"forge": "CHERRY_SLAB",
+			"fabric": "CHERRY_SLAB"
+		},
+		{
+			"forge": "DARK_OAK_SLAB",
+			"fabric": "DARK_OAK_SLAB"
+		},
+		{
+			"forge": "MANGROVE_SLAB",
+			"fabric": "MANGROVE_SLAB"
+		},
+		{
+			"forge": "BAMBOO_SLAB",
+			"fabric": "BAMBOO_SLAB"
+		},
+		{
+			"forge": "BAMBOO_MOSAIC_SLAB",
+			"fabric": "BAMBOO_MOSAIC_SLAB"
+		},
+		{
+			"forge": "CRIMSON_SLAB",
+			"fabric": "CRIMSON_SLAB"
+		},
+		{
+			"forge": "WARPED_SLAB",
+			"fabric": "WARPED_SLAB"
+		},
+		{
+			"forge": "STONE_SLAB",
+			"fabric": "STONE_SLAB"
+		},
+		{
+			"forge": "SMOOTH_STONE_SLAB",
+			"fabric": "SMOOTH_STONE_SLAB"
+		},
+		{
+			"forge": "SANDSTONE_SLAB",
+			"fabric": "SANDSTONE_SLAB"
+		},
+		{
+			"forge": "CUT_STANDSTONE_SLAB",
+			"fabric": "CUT_SANDSTONE_SLAB"
+		},
+		{
+			"forge": "PETRIFIED_OAK_SLAB",
+			"fabric": "PETRIFIED_OAK_SLAB"
+		},
+		{
+			"forge": "COBBLESTONE_SLAB",
+			"fabric": "COBBLESTONE_SLAB"
+		},
+		{
+			"forge": "BRICK_SLAB",
+			"fabric": "BRICK_SLAB"
+		},
+		{
+			"forge": "STONE_BRICK_SLAB",
+			"fabric": "STONE_BRICK_SLAB"
+		},
+		{
+			"forge": "MUD_BRICK_SLAB",
+			"fabric": "MUD_BRICK_SLAB"
+		},
+		{
+			"forge": "NETHER_BRICK_SLAB",
+			"fabric": "NETHER_BRICK_SLAB"
+		},
+		{
+			"forge": "QUARTZ_SLAB",
+			"fabric": "QUARTZ_SLAB"
+		},
+		{
+			"forge": "RED_SANDSTONE_SLAB",
+			"fabric": "RED_SANDSTONE_SLAB"
+		},
+		{
+			"forge": "CUT_RED_SANDSTONE_SLAB",
+			"fabric": "CUT_RED_SANDSTONE_SLAB"
+		},
+		{
+			"forge": "PURPUR_SLAB",
+			"fabric": "PURPUR_SLAB"
+		},
+		{
+			"forge": "PRISMARINE_SLAB",
+			"fabric": "PRISMARINE_SLAB"
+		},
+		{
+			"forge": "PRISMARINE_BRICK_SLAB",
+			"fabric": "PRISMARINE_BRICK_SLAB"
+		},
+		{
+			"forge": "DARK_PRISMARINE_SLAB",
+			"fabric": "DARK_PRISMARINE_SLAB"
+		},
+		{
+			"forge": "SMOOTH_QUARTZ",
+			"fabric": "SMOOTH_QUARTZ"
+		},
+		{
+			"forge": "SMOOTH_RED_SANDSTONE",
+			"fabric": "SMOOTH_RED_SANDSTONE"
+		},
+		{
+			"forge": "SMOOTH_SANDSTONE",
+			"fabric": "SMOOTH_SANDSTONE"
+		},
+		{
+			"forge": "SMOOTH_STONE",
+			"fabric": "SMOOTH_STONE"
+		},
+		{
+			"forge": "BRICKS",
+			"fabric": "BRICKS"
+		},
+		{
+			"forge": "BOOKSHELF",
+			"fabric": "BOOKSHELF"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF",
+			"fabric": "CHISELED_BOOKSHELF"
+		},
+		{
+			"forge": "DECORATED_POT",
+			"fabric": "DECORATED_POT"
+		},
+		{
+			"forge": "MOSSY_COBBLESTONE",
+			"fabric": "MOSSY_COBBLESTONE"
+		},
+		{
+			"forge": "OBSIDIAN",
+			"fabric": "OBSIDIAN"
+		},
+		{
+			"forge": "TORCH",
+			"fabric": "TORCH"
+		},
+		{
+			"forge": "END_ROD",
+			"fabric": "END_ROD"
+		},
+		{
+			"forge": "CHORUS_PLANT",
+			"fabric": "CHORUS_PLANT"
+		},
+		{
+			"forge": "CHORUS_FLOWER",
+			"fabric": "CHORUS_FLOWER"
+		},
+		{
+			"forge": "PURPUR_BLOCK",
+			"fabric": "PURPUR_BLOCK"
+		},
+		{
+			"forge": "PURPUR_PILLAR",
+			"fabric": "PURPUR_PILLAR"
+		},
+		{
+			"forge": "PURPUR_STAIRS",
+			"fabric": "PURPUR_STAIRS"
+		},
+		{
+			"forge": "SPAWNER",
+			"fabric": "SPAWNER"
+		},
+		{
+			"forge": "CHEST",
+			"fabric": "CHEST"
+		},
+		{
+			"forge": "CRAFTING_TABLE",
+			"fabric": "CRAFTING_TABLE"
+		},
+		{
+			"forge": "FARMLAND",
+			"fabric": "FARMLAND"
+		},
+		{
+			"forge": "FURNACE",
+			"fabric": "FURNACE"
+		},
+		{
+			"forge": "LADDER",
+			"fabric": "LADDER"
+		},
+		{
+			"forge": "COBBLESTONE_STAIRS",
+			"fabric": "COBBLESTONE_STAIRS"
+		},
+		{
+			"forge": "SNOW",
+			"fabric": "SNOW"
+		},
+		{
+			"forge": "ICE",
+			"fabric": "ICE"
+		},
+		{
+			"forge": "SNOW_BLOCK",
+			"fabric": "SNOW_BLOCK"
+		},
+		{
+			"forge": "CACTUS",
+			"fabric": "CACTUS"
+		},
+		{
+			"forge": "CLAY",
+			"fabric": "CLAY"
+		},
+		{
+			"forge": "JUKEBOX",
+			"fabric": "JUKEBOX"
+		},
+		{
+			"forge": "OAK_FENCE",
+			"fabric": "OAK_FENCE"
+		},
+		{
+			"forge": "SPRUCE_FENCE",
+			"fabric": "SPRUCE_FENCE"
+		},
+		{
+			"forge": "BIRCH_FENCE",
+			"fabric": "BIRCH_FENCE"
+		},
+		{
+			"forge": "JUNGLE_FENCE",
+			"fabric": "JUNGLE_FENCE"
+		},
+		{
+			"forge": "ACACIA_FENCE",
+			"fabric": "ACACIA_FENCE"
+		},
+		{
+			"forge": "CHERRY_FENCE",
+			"fabric": "CHERRY_FENCE"
+		},
+		{
+			"forge": "DARK_OAK_FENCE",
+			"fabric": "DARK_OAK_FENCE"
+		},
+		{
+			"forge": "MANGROVE_FENCE",
+			"fabric": "MANGROVE_FENCE"
+		},
+		{
+			"forge": "BAMBOO_FENCE",
+			"fabric": "BAMBOO_FENCE"
+		},
+		{
+			"forge": "CRIMSON_FENCE",
+			"fabric": "CRIMSON_FENCE"
+		},
+		{
+			"forge": "WARPED_FENCE",
+			"fabric": "WARPED_FENCE"
+		},
+		{
+			"forge": "PUMPKIN",
+			"fabric": "PUMPKIN"
+		},
+		{
+			"forge": "CARVED_PUMPKIN",
+			"fabric": "CARVED_PUMPKIN"
+		},
+		{
+			"forge": "JACK_O_LANTERN",
+			"fabric": "JACK_O_LANTERN"
+		},
+		{
+			"forge": "NETHERRACK",
+			"fabric": "NETHERRACK"
+		},
+		{
+			"forge": "SOUL_SAND",
+			"fabric": "SOUL_SAND"
+		},
+		{
+			"forge": "SOUL_SOIL",
+			"fabric": "SOUL_SOIL"
+		},
+		{
+			"forge": "BASALT",
+			"fabric": "BASALT"
+		},
+		{
+			"forge": "POLISHED_BASALT",
+			"fabric": "POLISHED_BASALT"
+		},
+		{
+			"forge": "SMOOTH_BASALT",
+			"fabric": "SMOOTH_BASALT"
+		},
+		{
+			"forge": "SOUL_TORCH",
+			"fabric": "SOUL_TORCH"
+		},
+		{
+			"forge": "GLOWSTONE",
+			"fabric": "GLOWSTONE"
+		},
+		{
+			"forge": "INFESTED_STONE",
+			"fabric": "INFESTED_STONE"
+		},
+		{
+			"forge": "INFESTED_COBBLESTONE",
+			"fabric": "INFESTED_COBBLESTONE"
+		},
+		{
+			"forge": "INFESTED_STONE_BRICKS",
+			"fabric": "INFESTED_STONE_BRICKS"
+		},
+		{
+			"forge": "INFESTED_MOSSY_STONE_BRICKS",
+			"fabric": "INFESTED_MOSSY_STONE_BRICKS"
+		},
+		{
+			"forge": "INFESTED_CRACKED_STONE_BRICKS",
+			"fabric": "INFESTED_CRACKED_STONE_BRICKS"
+		},
+		{
+			"forge": "INFESTED_CHISELED_STONE_BRICKS",
+			"fabric": "INFESTED_CHISELED_STONE_BRICKS"
+		},
+		{
+			"forge": "INFESTED_DEEPSLATE",
+			"fabric": "INFESTED_DEEPSLATE"
+		},
+		{
+			"forge": "STONE_BRICKS",
+			"fabric": "STONE_BRICKS"
+		},
+		{
+			"forge": "MOSSY_STONE_BRICKS",
+			"fabric": "MOSSY_STONE_BRICKS"
+		},
+		{
+			"forge": "CRACKED_STONE_BRICKS",
+			"fabric": "CRACKED_STONE_BRICKS"
+		},
+		{
+			"forge": "CHISELED_STONE_BRICKS",
+			"fabric": "CHISELED_STONE_BRICKS"
+		},
+		{
+			"forge": "PACKED_MUD",
+			"fabric": "PACKED_MUD"
+		},
+		{
+			"forge": "MUD_BRICKS",
+			"fabric": "MUD_BRICKS"
+		},
+		{
+			"forge": "DEEPSLATE_BRICKS",
+			"fabric": "DEEPSLATE_BRICKS"
+		},
+		{
+			"forge": "CRACKED_DEEPSLATE_BRICKS",
+			"fabric": "CRACKED_DEEPSLATE_BRICKS"
+		},
+		{
+			"forge": "DEEPSLATE_TILES",
+			"fabric": "DEEPSLATE_TILES"
+		},
+		{
+			"forge": "CRACKED_DEEPSLATE_TILES",
+			"fabric": "CRACKED_DEEPSLATE_TILES"
+		},
+		{
+			"forge": "CHISELED_DEEPSLATE",
+			"fabric": "CHISELED_DEEPSLATE"
+		},
+		{
+			"forge": "REINFORCED_DEEPSLATE",
+			"fabric": "REINFORCED_DEEPSLATE"
+		},
+		{
+			"forge": "BROWN_MUSHROOM_BLOCK",
+			"fabric": "BROWN_MUSHROOM_BLOCK"
+		},
+		{
+			"forge": "RED_MUSHROOM_BLOCK",
+			"fabric": "RED_MUSHROOM_BLOCK"
+		},
+		{
+			"forge": "MUSHROOM_STEM",
+			"fabric": "MUSHROOM_STEM"
+		},
+		{
+			"forge": "IRON_BARS",
+			"fabric": "IRON_BARS"
+		},
+		{
+			"forge": "CHAIN",
+			"fabric": "CHAIN"
+		},
+		{
+			"forge": "GLASS_PANE",
+			"fabric": "GLASS_PANE"
+		},
+		{
+			"forge": "MELON",
+			"fabric": "MELON"
+		},
+		{
+			"forge": "VINE",
+			"fabric": "VINE"
+		},
+		{
+			"forge": "GLOW_LICHEN",
+			"fabric": "GLOW_LICHEN"
+		},
+		{
+			"forge": "BRICK_STAIRS",
+			"fabric": "BRICK_STAIRS"
+		},
+		{
+			"forge": "STONE_BRICK_STAIRS",
+			"fabric": "STONE_BRICK_STAIRS"
+		},
+		{
+			"forge": "MUD_BRICK_STAIRS",
+			"fabric": "MUD_BRICK_STAIRS"
+		},
+		{
+			"forge": "MYCELIUM",
+			"fabric": "MYCELIUM"
+		},
+		{
+			"forge": "LILY_PAD",
+			"fabric": "LILY_PAD"
+		},
+		{
+			"forge": "NETHER_BRICKS",
+			"fabric": "NETHER_BRICKS"
+		},
+		{
+			"forge": "CRACKED_NETHER_BRICKS",
+			"fabric": "CRACKED_NETHER_BRICKS"
+		},
+		{
+			"forge": "CHISELED_NETHER_BRICKS",
+			"fabric": "CHISELED_NETHER_BRICKS"
+		},
+		{
+			"forge": "NETHER_BRICK_FENCE",
+			"fabric": "NETHER_BRICK_FENCE"
+		},
+		{
+			"forge": "NETHER_BRICK_STAIRS",
+			"fabric": "NETHER_BRICK_STAIRS"
+		},
+		{
+			"forge": "SCULK",
+			"fabric": "SCULK"
+		},
+		{
+			"forge": "SCULK_VEIN",
+			"fabric": "SCULK_VEIN"
+		},
+		{
+			"forge": "SCULK_CATALYST",
+			"fabric": "SCULK_CATALYST"
+		},
+		{
+			"forge": "SCULK_SHRIEKER",
+			"fabric": "SCULK_SHRIEKER"
+		},
+		{
+			"forge": "ENCHANTING_TABLE",
+			"fabric": "ENCHANTING_TABLE"
+		},
+		{
+			"forge": "END_PORTAL_FRAME",
+			"fabric": "END_PORTAL_FRAME"
+		},
+		{
+			"forge": "END_STONE",
+			"fabric": "END_STONE"
+		},
+		{
+			"forge": "END_STONE_BRICKS",
+			"fabric": "END_STONE_BRICKS"
+		},
+		{
+			"forge": "DRAGON_EGG",
+			"fabric": "DRAGON_EGG"
+		},
+		{
+			"forge": "SANDSTONE_STAIRS",
+			"fabric": "SANDSTONE_STAIRS"
+		},
+		{
+			"forge": "ENDER_CHEST",
+			"fabric": "ENDER_CHEST"
+		},
+		{
+			"forge": "EMERALD_BLOCK",
+			"fabric": "EMERALD_BLOCK"
+		},
+		{
+			"forge": "OAK_STAIRS",
+			"fabric": "OAK_STAIRS"
+		},
+		{
+			"forge": "SPRUCE_STAIRS",
+			"fabric": "SPRUCE_STAIRS"
+		},
+		{
+			"forge": "BIRCH_STAIRS",
+			"fabric": "BIRCH_STAIRS"
+		},
+		{
+			"forge": "JUNGLE_STAIRS",
+			"fabric": "JUNGLE_STAIRS"
+		},
+		{
+			"forge": "ACACIA_STAIRS",
+			"fabric": "ACACIA_STAIRS"
+		},
+		{
+			"forge": "CHERRY_STAIRS",
+			"fabric": "CHERRY_STAIRS"
+		},
+		{
+			"forge": "DARK_OAK_STAIRS",
+			"fabric": "DARK_OAK_STAIRS"
+		},
+		{
+			"forge": "MANGROVE_STAIRS",
+			"fabric": "MANGROVE_STAIRS"
+		},
+		{
+			"forge": "BAMBOO_STAIRS",
+			"fabric": "BAMBOO_STAIRS"
+		},
+		{
+			"forge": "BAMBOO_MOSAIC_STAIRS",
+			"fabric": "BAMBOO_MOSAIC_STAIRS"
+		},
+		{
+			"forge": "CRIMSON_STAIRS",
+			"fabric": "CRIMSON_STAIRS"
+		},
+		{
+			"forge": "WARPED_STAIRS",
+			"fabric": "WARPED_STAIRS"
+		},
+		{
+			"forge": "COMMAND_BLOCK",
+			"fabric": "COMMAND_BLOCK"
+		},
+		{
+			"forge": "BEACON",
+			"fabric": "BEACON"
+		},
+		{
+			"forge": "COBBLESTONE_WALL",
+			"fabric": "COBBLESTONE_WALL"
+		},
+		{
+			"forge": "MOSSY_COBBLESTONE_WALL",
+			"fabric": "MOSSY_COBBLESTONE_WALL"
+		},
+		{
+			"forge": "BRICK_WALL",
+			"fabric": "BRICK_WALL"
+		},
+		{
+			"forge": "PRISMARINE_WALL",
+			"fabric": "PRISMARINE_WALL"
+		},
+		{
+			"forge": "RED_SANDSTONE_WALL",
+			"fabric": "RED_SANDSTONE_WALL"
+		},
+		{
+			"forge": "MOSSY_STONE_BRICK_WALL",
+			"fabric": "MOSSY_STONE_BRICK_WALL"
+		},
+		{
+			"forge": "GRANITE_WALL",
+			"fabric": "GRANITE_WALL"
+		},
+		{
+			"forge": "STONE_BRICK_WALL",
+			"fabric": "STONE_BRICK_WALL"
+		},
+		{
+			"forge": "MUD_BRICK_WALL",
+			"fabric": "MUD_BRICK_WALL"
+		},
+		{
+			"forge": "NETHER_BRICK_WALL",
+			"fabric": "NETHER_BRICK_WALL"
+		},
+		{
+			"forge": "ANDESITE_WALL",
+			"fabric": "ANDESITE_WALL"
+		},
+		{
+			"forge": "RED_NETHER_BRICK_WALL",
+			"fabric": "RED_NETHER_BRICK_WALL"
+		},
+		{
+			"forge": "SANDSTONE_WALL",
+			"fabric": "SANDSTONE_WALL"
+		},
+		{
+			"forge": "END_STONE_BRICK_WALL",
+			"fabric": "END_STONE_BRICK_WALL"
+		},
+		{
+			"forge": "DIORITE_WALL",
+			"fabric": "DIORITE_WALL"
+		},
+		{
+			"forge": "BLACKSTONE_WALL",
+			"fabric": "BLACKSTONE_WALL"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_WALL",
+			"fabric": "POLISHED_BLACKSTONE_WALL"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_BRICK_WALL",
+			"fabric": "POLISHED_BLACKSTONE_BRICK_WALL"
+		},
+		{
+			"forge": "COBBLED_DEEPSLATE_WALL",
+			"fabric": "COBBLED_DEEPSLATE_WALL"
+		},
+		{
+			"forge": "POLISHED_DEEPSLATE_WALL",
+			"fabric": "POLISHED_DEEPSLATE_WALL"
+		},
+		{
+			"forge": "DEEPSLATE_BRICK_WALL",
+			"fabric": "DEEPSLATE_BRICK_WALL"
+		},
+		{
+			"forge": "DEEPSLATE_TILE_WALL",
+			"fabric": "DEEPSLATE_TILE_WALL"
+		},
+		{
+			"forge": "ANVIL",
+			"fabric": "ANVIL"
+		},
+		{
+			"forge": "CHIPPED_ANVIL",
+			"fabric": "CHIPPED_ANVIL"
+		},
+		{
+			"forge": "DAMAGED_ANVIL",
+			"fabric": "DAMAGED_ANVIL"
+		},
+		{
+			"forge": "CHISELED_QUARTZ_BLOCK",
+			"fabric": "CHISELED_QUARTZ_BLOCK"
+		},
+		{
+			"forge": "QUARTZ_BLOCK",
+			"fabric": "QUARTZ_BLOCK"
+		},
+		{
+			"forge": "QUARTZ_BRICKS",
+			"fabric": "QUARTZ_BRICKS"
+		},
+		{
+			"forge": "QUARTZ_PILLAR",
+			"fabric": "QUARTZ_PILLAR"
+		},
+		{
+			"forge": "QUARTZ_STAIRS",
+			"fabric": "QUARTZ_STAIRS"
+		},
+		{
+			"forge": "WHITE_TERRACOTTA",
+			"fabric": "WHITE_TERRACOTTA"
+		},
+		{
+			"forge": "ORANGE_TERRACOTTA",
+			"fabric": "ORANGE_TERRACOTTA"
+		},
+		{
+			"forge": "MAGENTA_TERRACOTTA",
+			"fabric": "MAGENTA_TERRACOTTA"
+		},
+		{
+			"forge": "LIGHT_BLUE_TERRACOTTA",
+			"fabric": "LIGHT_BLUE_TERRACOTTA"
+		},
+		{
+			"forge": "YELLOW_TERRACOTTA",
+			"fabric": "YELLOW_TERRACOTTA"
+		},
+		{
+			"forge": "LIME_TERRACOTTA",
+			"fabric": "LIME_TERRACOTTA"
+		},
+		{
+			"forge": "PINK_TERRACOTTA",
+			"fabric": "PINK_TERRACOTTA"
+		},
+		{
+			"forge": "GRAY_TERRACOTTA",
+			"fabric": "GRAY_TERRACOTTA"
+		},
+		{
+			"forge": "LIGHT_GRAY_TERRACOTTA",
+			"fabric": "LIGHT_GRAY_TERRACOTTA"
+		},
+		{
+			"forge": "CYAN_TERRACOTTA",
+			"fabric": "CYAN_TERRACOTTA"
+		},
+		{
+			"forge": "PURPLE_TERRACOTTA",
+			"fabric": "PURPLE_TERRACOTTA"
+		},
+		{
+			"forge": "BLUE_TERRACOTTA",
+			"fabric": "BLUE_TERRACOTTA"
+		},
+		{
+			"forge": "BROWN_TERRACOTTA",
+			"fabric": "BROWN_TERRACOTTA"
+		},
+		{
+			"forge": "GREEN_TERRACOTTA",
+			"fabric": "GREEN_TERRACOTTA"
+		},
+		{
+			"forge": "RED_TERRACOTTA",
+			"fabric": "RED_TERRACOTTA"
+		},
+		{
+			"forge": "BLACK_TERRACOTTA",
+			"fabric": "BLACK_TERRACOTTA"
+		},
+		{
+			"forge": "BARRIER",
+			"fabric": "BARRIER"
+		},
+		{
+			"forge": "LIGHT",
+			"fabric": "LIGHT"
+		},
+		{
+			"forge": "HAY_BLOCK",
+			"fabric": "HAY_BLOCK"
+		},
+		{
+			"forge": "WHITE_CARPET",
+			"fabric": "WHITE_CARPET"
+		},
+		{
+			"forge": "ORANGE_CARPET",
+			"fabric": "ORANGE_CARPET"
+		},
+		{
+			"forge": "MAGENTA_CARPET",
+			"fabric": "MAGENTA_CARPET"
+		},
+		{
+			"forge": "LIGHT_BLUE_CARPET",
+			"fabric": "LIGHT_BLUE_CARPET"
+		},
+		{
+			"forge": "YELLOW_CARPET",
+			"fabric": "YELLOW_CARPET"
+		},
+		{
+			"forge": "LIME_CARPET",
+			"fabric": "LIME_CARPET"
+		},
+		{
+			"forge": "PINK_CARPET",
+			"fabric": "PINK_CARPET"
+		},
+		{
+			"forge": "GRAY_CARPET",
+			"fabric": "GRAY_CARPET"
+		},
+		{
+			"forge": "LIGHT_GRAY_CARPET",
+			"fabric": "LIGHT_GRAY_CARPET"
+		},
+		{
+			"forge": "CYAN_CARPET",
+			"fabric": "CYAN_CARPET"
+		},
+		{
+			"forge": "PURPLE_CARPET",
+			"fabric": "PURPLE_CARPET"
+		},
+		{
+			"forge": "BLUE_CARPET",
+			"fabric": "BLUE_CARPET"
+		},
+		{
+			"forge": "BROWN_CARPET",
+			"fabric": "BROWN_CARPET"
+		},
+		{
+			"forge": "GREEN_CARPET",
+			"fabric": "GREEN_CARPET"
+		},
+		{
+			"forge": "RED_CARPET",
+			"fabric": "RED_CARPET"
+		},
+		{
+			"forge": "BLACK_CARPET",
+			"fabric": "BLACK_CARPET"
+		},
+		{
+			"forge": "TERRACOTTA",
+			"fabric": "TERRACOTTA"
+		},
+		{
+			"forge": "PACKED_ICE",
+			"fabric": "PACKED_ICE"
+		},
+		{
+			"forge": "DIRT_PATH",
+			"fabric": "DIRT_PATH"
+		},
+		{
+			"forge": "SUNFLOWER",
+			"fabric": "SUNFLOWER"
+		},
+		{
+			"forge": "LILAC",
+			"fabric": "LILAC"
+		},
+		{
+			"forge": "ROSE_BUSH",
+			"fabric": "ROSE_BUSH"
+		},
+		{
+			"forge": "PEONY",
+			"fabric": "PEONY"
+		},
+		{
+			"forge": "TALL_GRASS",
+			"fabric": "TALL_GRASS"
+		},
+		{
+			"forge": "LARGE_FERN",
+			"fabric": "LARGE_FERN"
+		},
+		{
+			"forge": "WHITE_STAINED_GLASS",
+			"fabric": "WHITE_STAINED_GLASS"
+		},
+		{
+			"forge": "ORANGE_STAINED_GLASS",
+			"fabric": "ORANGE_STAINED_GLASS"
+		},
+		{
+			"forge": "MAGENTA_STAINED_GLASS",
+			"fabric": "MAGENTA_STAINED_GLASS"
+		},
+		{
+			"forge": "LIGHT_BLUE_STAINED_GLASS",
+			"fabric": "LIGHT_BLUE_STAINED_GLASS"
+		},
+		{
+			"forge": "YELLOW_STAINED_GLASS",
+			"fabric": "YELLOW_STAINED_GLASS"
+		},
+		{
+			"forge": "LIME_STAINED_GLASS",
+			"fabric": "LIME_STAINED_GLASS"
+		},
+		{
+			"forge": "PINK_STAINED_GLASS",
+			"fabric": "PINK_STAINED_GLASS"
+		},
+		{
+			"forge": "GRAY_STAINED_GLASS",
+			"fabric": "GRAY_STAINED_GLASS"
+		},
+		{
+			"forge": "LIGHT_GRAY_STAINED_GLASS",
+			"fabric": "LIGHT_GRAY_STAINED_GLASS"
+		},
+		{
+			"forge": "CYAN_STAINED_GLASS",
+			"fabric": "CYAN_STAINED_GLASS"
+		},
+		{
+			"forge": "PURPLE_STAINED_GLASS",
+			"fabric": "PURPLE_STAINED_GLASS"
+		},
+		{
+			"forge": "BLUE_STAINED_GLASS",
+			"fabric": "BLUE_STAINED_GLASS"
+		},
+		{
+			"forge": "BROWN_STAINED_GLASS",
+			"fabric": "BROWN_STAINED_GLASS"
+		},
+		{
+			"forge": "GREEN_STAINED_GLASS",
+			"fabric": "GREEN_STAINED_GLASS"
+		},
+		{
+			"forge": "RED_STAINED_GLASS",
+			"fabric": "RED_STAINED_GLASS"
+		},
+		{
+			"forge": "BLACK_STAINED_GLASS",
+			"fabric": "BLACK_STAINED_GLASS"
+		},
+		{
+			"forge": "WHITE_STAINED_GLASS_PANE",
+			"fabric": "WHITE_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "ORANGE_STAINED_GLASS_PANE",
+			"fabric": "ORANGE_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "MAGENTA_STAINED_GLASS_PANE",
+			"fabric": "MAGENTA_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "LIGHT_BLUE_STAINED_GLASS_PANE",
+			"fabric": "LIGHT_BLUE_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "YELLOW_STAINED_GLASS_PANE",
+			"fabric": "YELLOW_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "LIME_STAINED_GLASS_PANE",
+			"fabric": "LIME_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "PINK_STAINED_GLASS_PANE",
+			"fabric": "PINK_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "GRAY_STAINED_GLASS_PANE",
+			"fabric": "GRAY_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "LIGHT_GRAY_STAINED_GLASS_PANE",
+			"fabric": "LIGHT_GRAY_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "CYAN_STAINED_GLASS_PANE",
+			"fabric": "CYAN_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "PURPLE_STAINED_GLASS_PANE",
+			"fabric": "PURPLE_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "BLUE_STAINED_GLASS_PANE",
+			"fabric": "BLUE_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "BROWN_STAINED_GLASS_PANE",
+			"fabric": "BROWN_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "GREEN_STAINED_GLASS_PANE",
+			"fabric": "GREEN_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "RED_STAINED_GLASS_PANE",
+			"fabric": "RED_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "BLACK_STAINED_GLASS_PANE",
+			"fabric": "BLACK_STAINED_GLASS_PANE"
+		},
+		{
+			"forge": "PRISMARINE",
+			"fabric": "PRISMARINE"
+		},
+		{
+			"forge": "PRISMARINE_BRICKS",
+			"fabric": "PRISMARINE_BRICKS"
+		},
+		{
+			"forge": "DARK_PRISMARINE",
+			"fabric": "DARK_PRISMARINE"
+		},
+		{
+			"forge": "PRISMARINE_STAIRS",
+			"fabric": "PRISMARINE_STAIRS"
+		},
+		{
+			"forge": "PRISMARINE_BRICK_STAIRS",
+			"fabric": "PRISMARINE_BRICK_STAIRS"
+		},
+		{
+			"forge": "DARK_PRISMARINE_STAIRS",
+			"fabric": "DARK_PRISMARINE_STAIRS"
+		},
+		{
+			"forge": "SEA_LANTERN",
+			"fabric": "SEA_LANTERN"
+		},
+		{
+			"forge": "RED_SANDSTONE",
+			"fabric": "RED_SANDSTONE"
+		},
+		{
+			"forge": "CHISELED_RED_SANDSTONE",
+			"fabric": "CHISELED_RED_SANDSTONE"
+		},
+		{
+			"forge": "CUT_RED_SANDSTONE",
+			"fabric": "CUT_RED_SANDSTONE"
+		},
+		{
+			"forge": "RED_SANDSTONE_STAIRS",
+			"fabric": "RED_SANDSTONE_STAIRS"
+		},
+		{
+			"forge": "REPEATING_COMMAND_BLOCK",
+			"fabric": "REPEATING_COMMAND_BLOCK"
+		},
+		{
+			"forge": "CHAIN_COMMAND_BLOCK",
+			"fabric": "CHAIN_COMMAND_BLOCK"
+		},
+		{
+			"forge": "MAGMA_BLOCK",
+			"fabric": "MAGMA_BLOCK"
+		},
+		{
+			"forge": "NETHER_WART_BLOCK",
+			"fabric": "NETHER_WART_BLOCK"
+		},
+		{
+			"forge": "WARPED_WART_BLOCK",
+			"fabric": "WARPED_WART_BLOCK"
+		},
+		{
+			"forge": "RED_NETHER_BRICKS",
+			"fabric": "RED_NETHER_BRICKS"
+		},
+		{
+			"forge": "BONE_BLOCK",
+			"fabric": "BONE_BLOCK"
+		},
+		{
+			"forge": "STRUCTURE_VOID",
+			"fabric": "STRUCTURE_VOID"
+		},
+		{
+			"forge": "SHULKER_BOX",
+			"fabric": "SHULKER_BOX"
+		},
+		{
+			"forge": "WHITE_SHULKER_BOX",
+			"fabric": "WHITE_SHULKER_BOX"
+		},
+		{
+			"forge": "ORANGE_SHULKER_BOX",
+			"fabric": "ORANGE_SHULKER_BOX"
+		},
+		{
+			"forge": "MAGENTA_SHULKER_BOX",
+			"fabric": "MAGENTA_SHULKER_BOX"
+		},
+		{
+			"forge": "LIGHT_BLUE_SHULKER_BOX",
+			"fabric": "LIGHT_BLUE_SHULKER_BOX"
+		},
+		{
+			"forge": "YELLOW_SHULKER_BOX",
+			"fabric": "YELLOW_SHULKER_BOX"
+		},
+		{
+			"forge": "LIME_SHULKER_BOX",
+			"fabric": "LIME_SHULKER_BOX"
+		},
+		{
+			"forge": "PINK_SHULKER_BOX",
+			"fabric": "PINK_SHULKER_BOX"
+		},
+		{
+			"forge": "GRAY_SHULKER_BOX",
+			"fabric": "GRAY_SHULKER_BOX"
+		},
+		{
+			"forge": "LIGHT_GRAY_SHULKER_BOX",
+			"fabric": "LIGHT_GRAY_SHULKER_BOX"
+		},
+		{
+			"forge": "CYAN_SHULKER_BOX",
+			"fabric": "CYAN_SHULKER_BOX"
+		},
+		{
+			"forge": "PURPLE_SHULKER_BOX",
+			"fabric": "PURPLE_SHULKER_BOX"
+		},
+		{
+			"forge": "BLUE_SHULKER_BOX",
+			"fabric": "BLUE_SHULKER_BOX"
+		},
+		{
+			"forge": "BROWN_SHULKER_BOX",
+			"fabric": "BROWN_SHULKER_BOX"
+		},
+		{
+			"forge": "GREEN_SHULKER_BOX",
+			"fabric": "GREEN_SHULKER_BOX"
+		},
+		{
+			"forge": "RED_SHULKER_BOX",
+			"fabric": "RED_SHULKER_BOX"
+		},
+		{
+			"forge": "BLACK_SHULKER_BOX",
+			"fabric": "BLACK_SHULKER_BOX"
+		},
+		{
+			"forge": "WHITE_GLAZED_TERRACOTTA",
+			"fabric": "WHITE_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "ORANGE_GLAZED_TERRACOTTA",
+			"fabric": "ORANGE_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "MAGENTA_GLAZED_TERRACOTTA",
+			"fabric": "MAGENTA_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "LIGHT_BLUE_GLAZED_TERRACOTTA",
+			"fabric": "LIGHT_BLUE_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "YELLOW_GLAZED_TERRACOTTA",
+			"fabric": "YELLOW_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "LIME_GLAZED_TERRACOTTA",
+			"fabric": "LIME_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "PINK_GLAZED_TERRACOTTA",
+			"fabric": "PINK_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "GRAY_GLAZED_TERRACOTTA",
+			"fabric": "GRAY_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "LIGHT_GRAY_GLAZED_TERRACOTTA",
+			"fabric": "LIGHT_GRAY_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "CYAN_GLAZED_TERRACOTTA",
+			"fabric": "CYAN_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "PURPLE_GLAZED_TERRACOTTA",
+			"fabric": "PURPLE_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "BLUE_GLAZED_TERRACOTTA",
+			"fabric": "BLUE_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "BROWN_GLAZED_TERRACOTTA",
+			"fabric": "BROWN_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "GREEN_GLAZED_TERRACOTTA",
+			"fabric": "GREEN_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "RED_GLAZED_TERRACOTTA",
+			"fabric": "RED_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "BLACK_GLAZED_TERRACOTTA",
+			"fabric": "BLACK_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "WHITE_CONCRETE",
+			"fabric": "WHITE_CONCRETE"
+		},
+		{
+			"forge": "ORANGE_CONCRETE",
+			"fabric": "ORANGE_CONCRETE"
+		},
+		{
+			"forge": "MAGENTA_CONCRETE",
+			"fabric": "MAGENTA_CONCRETE"
+		},
+		{
+			"forge": "LIGHT_BLUE_CONCRETE",
+			"fabric": "LIGHT_BLUE_CONCRETE"
+		},
+		{
+			"forge": "YELLOW_CONCRETE",
+			"fabric": "YELLOW_CONCRETE"
+		},
+		{
+			"forge": "LIME_CONCRETE",
+			"fabric": "LIME_CONCRETE"
+		},
+		{
+			"forge": "PINK_CONCRETE",
+			"fabric": "PINK_CONCRETE"
+		},
+		{
+			"forge": "GRAY_CONCRETE",
+			"fabric": "GRAY_CONCRETE"
+		},
+		{
+			"forge": "LIGHT_GRAY_CONCRETE",
+			"fabric": "LIGHT_GRAY_CONCRETE"
+		},
+		{
+			"forge": "CYAN_CONCRETE",
+			"fabric": "CYAN_CONCRETE"
+		},
+		{
+			"forge": "PURPLE_CONCRETE",
+			"fabric": "PURPLE_CONCRETE"
+		},
+		{
+			"forge": "BLUE_CONCRETE",
+			"fabric": "BLUE_CONCRETE"
+		},
+		{
+			"forge": "BROWN_CONCRETE",
+			"fabric": "BROWN_CONCRETE"
+		},
+		{
+			"forge": "GREEN_CONCRETE",
+			"fabric": "GREEN_CONCRETE"
+		},
+		{
+			"forge": "RED_CONCRETE",
+			"fabric": "RED_CONCRETE"
+		},
+		{
+			"forge": "BLACK_CONCRETE",
+			"fabric": "BLACK_CONCRETE"
+		},
+		{
+			"forge": "WHITE_CONCRETE_POWDER",
+			"fabric": "WHITE_CONCRETE_POWDER"
+		},
+		{
+			"forge": "ORANGE_CONCRETE_POWDER",
+			"fabric": "ORANGE_CONCRETE_POWDER"
+		},
+		{
+			"forge": "MAGENTA_CONCRETE_POWDER",
+			"fabric": "MAGENTA_CONCRETE_POWDER"
+		},
+		{
+			"forge": "LIGHT_BLUE_CONCRETE_POWDER",
+			"fabric": "LIGHT_BLUE_CONCRETE_POWDER"
+		},
+		{
+			"forge": "YELLOW_CONCRETE_POWDER",
+			"fabric": "YELLOW_CONCRETE_POWDER"
+		},
+		{
+			"forge": "LIME_CONCRETE_POWDER",
+			"fabric": "LIME_CONCRETE_POWDER"
+		},
+		{
+			"forge": "PINK_CONCRETE_POWDER",
+			"fabric": "PINK_CONCRETE_POWDER"
+		},
+		{
+			"forge": "GRAY_CONCRETE_POWDER",
+			"fabric": "GRAY_CONCRETE_POWDER"
+		},
+		{
+			"forge": "LIGHT_GRAY_CONCRETE_POWDER",
+			"fabric": "LIGHT_GRAY_CONCRETE_POWDER"
+		},
+		{
+			"forge": "CYAN_CONCRETE_POWDER",
+			"fabric": "CYAN_CONCRETE_POWDER"
+		},
+		{
+			"forge": "PURPLE_CONCRETE_POWDER",
+			"fabric": "PURPLE_CONCRETE_POWDER"
+		},
+		{
+			"forge": "BLUE_CONCRETE_POWDER",
+			"fabric": "BLUE_CONCRETE_POWDER"
+		},
+		{
+			"forge": "BROWN_CONCRETE_POWDER",
+			"fabric": "BROWN_CONCRETE_POWDER"
+		},
+		{
+			"forge": "GREEN_CONCRETE_POWDER",
+			"fabric": "GREEN_CONCRETE_POWDER"
+		},
+		{
+			"forge": "RED_CONCRETE_POWDER",
+			"fabric": "RED_CONCRETE_POWDER"
+		},
+		{
+			"forge": "BLACK_CONCRETE_POWDER",
+			"fabric": "BLACK_CONCRETE_POWDER"
+		},
+		{
+			"forge": "TURTLE_EGG",
+			"fabric": "TURTLE_EGG"
+		},
+		{
+			"forge": "SNIFFER_EGG",
+			"fabric": "SNIFFER_EGG"
+		},
+		{
+			"forge": "DEAD_TUBE_CORAL_BLOCK",
+			"fabric": "DEAD_TUBE_CORAL_BLOCK"
+		},
+		{
+			"forge": "DEAD_BRAIN_CORAL_BLOCK",
+			"fabric": "DEAD_BRAIN_CORAL_BLOCK"
+		},
+		{
+			"forge": "DEAD_BUBBLE_CORAL_BLOCK",
+			"fabric": "DEAD_BUBBLE_CORAL_BLOCK"
+		},
+		{
+			"forge": "DEAD_FIRE_CORAL_BLOCK",
+			"fabric": "DEAD_FIRE_CORAL_BLOCK"
+		},
+		{
+			"forge": "DEAD_HORN_CORAL_BLOCK",
+			"fabric": "DEAD_HORN_CORAL_BLOCK"
+		},
+		{
+			"forge": "TUBE_CORAL_BLOCK",
+			"fabric": "TUBE_CORAL_BLOCK"
+		},
+		{
+			"forge": "BRAIN_CORAL_BLOCK",
+			"fabric": "BRAIN_CORAL_BLOCK"
+		},
+		{
+			"forge": "BUBBLE_CORAL_BLOCK",
+			"fabric": "BUBBLE_CORAL_BLOCK"
+		},
+		{
+			"forge": "FIRE_CORAL_BLOCK",
+			"fabric": "FIRE_CORAL_BLOCK"
+		},
+		{
+			"forge": "HORN_CORAL_BLOCK",
+			"fabric": "HORN_CORAL_BLOCK"
+		},
+		{
+			"forge": "TUBE_CORAL",
+			"fabric": "TUBE_CORAL"
+		},
+		{
+			"forge": "BRAIN_CORAL",
+			"fabric": "BRAIN_CORAL"
+		},
+		{
+			"forge": "BUBBLE_CORAL",
+			"fabric": "BUBBLE_CORAL"
+		},
+		{
+			"forge": "FIRE_CORAL",
+			"fabric": "FIRE_CORAL"
+		},
+		{
+			"forge": "HORN_CORAL",
+			"fabric": "HORN_CORAL"
+		},
+		{
+			"forge": "DEAD_BRAIN_CORAL",
+			"fabric": "DEAD_BRAIN_CORAL"
+		},
+		{
+			"forge": "DEAD_BUBBLE_CORAL",
+			"fabric": "DEAD_BUBBLE_CORAL"
+		},
+		{
+			"forge": "DEAD_FIRE_CORAL",
+			"fabric": "DEAD_FIRE_CORAL"
+		},
+		{
+			"forge": "DEAD_HORN_CORAL",
+			"fabric": "DEAD_HORN_CORAL"
+		},
+		{
+			"forge": "DEAD_TUBE_CORAL",
+			"fabric": "DEAD_TUBE_CORAL"
+		},
+		{
+			"forge": "TUBE_CORAL_FAN",
+			"fabric": "TUBE_CORAL_FAN"
+		},
+		{
+			"forge": "BRAIN_CORAL_FAN",
+			"fabric": "BRAIN_CORAL_FAN"
+		},
+		{
+			"forge": "BUBBLE_CORAL_FAN",
+			"fabric": "BUBBLE_CORAL_FAN"
+		},
+		{
+			"forge": "FIRE_CORAL_FAN",
+			"fabric": "FIRE_CORAL_FAN"
+		},
+		{
+			"forge": "HORN_CORAL_FAN",
+			"fabric": "HORN_CORAL_FAN"
+		},
+		{
+			"forge": "DEAD_TUBE_CORAL_FAN",
+			"fabric": "DEAD_TUBE_CORAL_FAN"
+		},
+		{
+			"forge": "DEAD_BRAIN_CORAL_FAN",
+			"fabric": "DEAD_BRAIN_CORAL_FAN"
+		},
+		{
+			"forge": "DEAD_BUBBLE_CORAL_FAN",
+			"fabric": "DEAD_BUBBLE_CORAL_FAN"
+		},
+		{
+			"forge": "DEAD_FIRE_CORAL_FAN",
+			"fabric": "DEAD_FIRE_CORAL_FAN"
+		},
+		{
+			"forge": "DEAD_HORN_CORAL_FAN",
+			"fabric": "DEAD_HORN_CORAL_FAN"
+		},
+		{
+			"forge": "BLUE_ICE",
+			"fabric": "BLUE_ICE"
+		},
+		{
+			"forge": "CONDUIT",
+			"fabric": "CONDUIT"
+		},
+		{
+			"forge": "POLISHED_GRANITE_STAIRS",
+			"fabric": "POLISHED_GRANITE_STAIRS"
+		},
+		{
+			"forge": "SMOOTH_RED_SANDSTONE_STAIRS",
+			"fabric": "SMOOTH_RED_SANDSTONE_STAIRS"
+		},
+		{
+			"forge": "MOSSY_STONE_BRICK_STAIRS",
+			"fabric": "MOSSY_STONE_BRICK_STAIRS"
+		},
+		{
+			"forge": "POLISHED_DIORITE_STAIRS",
+			"fabric": "POLISHED_DIORITE_STAIRS"
+		},
+		{
+			"forge": "MOSSY_COBBLESTONE_STAIRS",
+			"fabric": "MOSSY_COBBLESTONE_STAIRS"
+		},
+		{
+			"forge": "END_STONE_BRICK_STAIRS",
+			"fabric": "END_STONE_BRICK_STAIRS"
+		},
+		{
+			"forge": "STONE_STAIRS",
+			"fabric": "STONE_STAIRS"
+		},
+		{
+			"forge": "SMOOTH_SANDSTONE_STAIRS",
+			"fabric": "SMOOTH_SANDSTONE_STAIRS"
+		},
+		{
+			"forge": "SMOOTH_QUARTZ_STAIRS",
+			"fabric": "SMOOTH_QUARTZ_STAIRS"
+		},
+		{
+			"forge": "GRANITE_STAIRS",
+			"fabric": "GRANITE_STAIRS"
+		},
+		{
+			"forge": "ANDESITE_STAIRS",
+			"fabric": "ANDESITE_STAIRS"
+		},
+		{
+			"forge": "RED_NETHER_BRICK_STAIRS",
+			"fabric": "RED_NETHER_BRICK_STAIRS"
+		},
+		{
+			"forge": "POLISHED_ANDESITE_STAIRS",
+			"fabric": "POLISHED_ANDESITE_STAIRS"
+		},
+		{
+			"forge": "DIORITE_STAIRS",
+			"fabric": "DIORITE_STAIRS"
+		},
+		{
+			"forge": "COBBLED_DEEPSLATE_STAIRS",
+			"fabric": "COBBLED_DEEPSLATE_STAIRS"
+		},
+		{
+			"forge": "POLISHED_DEEPSLATE_STAIRS",
+			"fabric": "POLISHED_DEEPSLATE_STAIRS"
+		},
+		{
+			"forge": "DEEPSLATE_BRICK_STAIRS",
+			"fabric": "DEEPSLATE_BRICK_STAIRS"
+		},
+		{
+			"forge": "DEEPSLATE_TILE_STAIRS",
+			"fabric": "DEEPSLATE_TILE_STAIRS"
+		},
+		{
+			"forge": "POLISHED_GRANITE_SLAB",
+			"fabric": "POLISHED_GRANITE_SLAB"
+		},
+		{
+			"forge": "SMOOTH_RED_SANDSTONE_SLAB",
+			"fabric": "SMOOTH_RED_SANDSTONE_SLAB"
+		},
+		{
+			"forge": "MOSSY_STONE_BRICK_SLAB",
+			"fabric": "MOSSY_STONE_BRICK_SLAB"
+		},
+		{
+			"forge": "POLISHED_DIORITE_SLAB",
+			"fabric": "POLISHED_DIORITE_SLAB"
+		},
+		{
+			"forge": "MOSSY_COBBLESTONE_SLAB",
+			"fabric": "MOSSY_COBBLESTONE_SLAB"
+		},
+		{
+			"forge": "END_STONE_BRICK_SLAB",
+			"fabric": "END_STONE_BRICK_SLAB"
+		},
+		{
+			"forge": "SMOOTH_SANDSTONE_SLAB",
+			"fabric": "SMOOTH_SANDSTONE_SLAB"
+		},
+		{
+			"forge": "SMOOTH_QUARTZ_SLAB",
+			"fabric": "SMOOTH_QUARTZ_SLAB"
+		},
+		{
+			"forge": "GRANITE_SLAB",
+			"fabric": "GRANITE_SLAB"
+		},
+		{
+			"forge": "ANDESITE_SLAB",
+			"fabric": "ANDESITE_SLAB"
+		},
+		{
+			"forge": "RED_NETHER_BRICK_SLAB",
+			"fabric": "RED_NETHER_BRICK_SLAB"
+		},
+		{
+			"forge": "POLISHED_ANDESITE_SLAB",
+			"fabric": "POLISHED_ANDESITE_SLAB"
+		},
+		{
+			"forge": "DIORITE_SLAB",
+			"fabric": "DIORITE_SLAB"
+		},
+		{
+			"forge": "COBBLED_DEEPSLATE_SLAB",
+			"fabric": "COBBLED_DEEPSLATE_SLAB"
+		},
+		{
+			"forge": "POLISHED_DEEPSLATE_SLAB",
+			"fabric": "POLISHED_DEEPSLATE_SLAB"
+		},
+		{
+			"forge": "DEEPSLATE_BRICK_SLAB",
+			"fabric": "DEEPSLATE_BRICK_SLAB"
+		},
+		{
+			"forge": "DEEPSLATE_TILE_SLAB",
+			"fabric": "DEEPSLATE_TILE_SLAB"
+		},
+		{
+			"forge": "SCAFFOLDING",
+			"fabric": "SCAFFOLDING"
+		},
+		{
+			"forge": "REDSTONE",
+			"fabric": "REDSTONE"
+		},
+		{
+			"forge": "REDSTONE_TORCH",
+			"fabric": "REDSTONE_TORCH"
+		},
+		{
+			"forge": "REDSTONE_BLOCK",
+			"fabric": "REDSTONE_BLOCK"
+		},
+		{
+			"forge": "REPEATER",
+			"fabric": "REPEATER"
+		},
+		{
+			"forge": "COMPARATOR",
+			"fabric": "COMPARATOR"
+		},
+		{
+			"forge": "PISTON",
+			"fabric": "PISTON"
+		},
+		{
+			"forge": "STICKY_PISTON",
+			"fabric": "STICKY_PISTON"
+		},
+		{
+			"forge": "SLIME_BLOCK",
+			"fabric": "SLIME_BLOCK"
+		},
+		{
+			"forge": "HONEY_BLOCK",
+			"fabric": "HONEY_BLOCK"
+		},
+		{
+			"forge": "OBSERVER",
+			"fabric": "OBSERVER"
+		},
+		{
+			"forge": "HOPPER",
+			"fabric": "HOPPER"
+		},
+		{
+			"forge": "DISPENSER",
+			"fabric": "DISPENSER"
+		},
+		{
+			"forge": "DROPPER",
+			"fabric": "DROPPER"
+		},
+		{
+			"forge": "LECTERN",
+			"fabric": "LECTERN"
+		},
+		{
+			"forge": "TARGET",
+			"fabric": "TARGET"
+		},
+		{
+			"forge": "LEVER",
+			"fabric": "LEVER"
+		},
+		{
+			"forge": "LIGHTNING_ROD",
+			"fabric": "LIGHTNING_ROD"
+		},
+		{
+			"forge": "DAYLIGHT_DETECTOR",
+			"fabric": "DAYLIGHT_DETECTOR"
+		},
+		{
+			"forge": "SCULK_SENSOR",
+			"fabric": "SCULK_SENSOR"
+		},
+		{
+			"forge": "CALIBRATED_SCULK_SENSOR",
+			"fabric": "CALIBRATED_SCULK_SENSOR"
+		},
+		{
+			"forge": "TRIPWIRE_HOOK",
+			"fabric": "TRIPWIRE_HOOK"
+		},
+		{
+			"forge": "TRAPPED_CHEST",
+			"fabric": "TRAPPED_CHEST"
+		},
+		{
+			"forge": "TNT",
+			"fabric": "TNT"
+		},
+		{
+			"forge": "REDSTONE_LAMP",
+			"fabric": "REDSTONE_LAMP"
+		},
+		{
+			"forge": "NOTE_BLOCK",
+			"fabric": "NOTE_BLOCK"
+		},
+		{
+			"forge": "STONE_BUTTON",
+			"fabric": "STONE_BUTTON"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_BUTTON",
+			"fabric": "POLISHED_BLACKSTONE_BUTTON"
+		},
+		{
+			"forge": "OAK_BUTTON",
+			"fabric": "OAK_BUTTON"
+		},
+		{
+			"forge": "SPRUCE_BUTTON",
+			"fabric": "SPRUCE_BUTTON"
+		},
+		{
+			"forge": "BIRCH_BUTTON",
+			"fabric": "BIRCH_BUTTON"
+		},
+		{
+			"forge": "JUNGLE_BUTTON",
+			"fabric": "JUNGLE_BUTTON"
+		},
+		{
+			"forge": "ACACIA_BUTTON",
+			"fabric": "ACACIA_BUTTON"
+		},
+		{
+			"forge": "CHERRY_BUTTON",
+			"fabric": "CHERRY_BUTTON"
+		},
+		{
+			"forge": "DARK_OAK_BUTTON",
+			"fabric": "DARK_OAK_BUTTON"
+		},
+		{
+			"forge": "MANGROVE_BUTTON",
+			"fabric": "MANGROVE_BUTTON"
+		},
+		{
+			"forge": "BAMBOO_BUTTON",
+			"fabric": "BAMBOO_BUTTON"
+		},
+		{
+			"forge": "CRIMSON_BUTTON",
+			"fabric": "CRIMSON_BUTTON"
+		},
+		{
+			"forge": "WARPED_BUTTON",
+			"fabric": "WARPED_BUTTON"
+		},
+		{
+			"forge": "STONE_PRESSURE_PLATE",
+			"fabric": "STONE_PRESSURE_PLATE"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_PRESSURE_PLATE",
+			"fabric": "POLISHED_BLACKSTONE_PRESSURE_PLATE"
+		},
+		{
+			"forge": "LIGHT_WEIGHTED_PRESSURE_PLATE",
+			"fabric": "LIGHT_WEIGHTED_PRESSURE_PLATE"
+		},
+		{
+			"forge": "HEAVY_WEIGHTED_PRESSURE_PLATE",
+			"fabric": "HEAVY_WEIGHTED_PRESSURE_PLATE"
+		},
+		{
+			"forge": "OAK_PRESSURE_PLATE",
+			"fabric": "OAK_PRESSURE_PLATE"
+		},
+		{
+			"forge": "SPRUCE_PRESSURE_PLATE",
+			"fabric": "SPRUCE_PRESSURE_PLATE"
+		},
+		{
+			"forge": "BIRCH_PRESSURE_PLATE",
+			"fabric": "BIRCH_PRESSURE_PLATE"
+		},
+		{
+			"forge": "JUNGLE_PRESSURE_PLATE",
+			"fabric": "JUNGLE_PRESSURE_PLATE"
+		},
+		{
+			"forge": "ACACIA_PRESSURE_PLATE",
+			"fabric": "ACACIA_PRESSURE_PLATE"
+		},
+		{
+			"forge": "CHERRY_PRESSURE_PLATE",
+			"fabric": "CHERRY_PRESSURE_PLATE"
+		},
+		{
+			"forge": "DARK_OAK_PRESSURE_PLATE",
+			"fabric": "DARK_OAK_PRESSURE_PLATE"
+		},
+		{
+			"forge": "MANGROVE_PRESSURE_PLATE",
+			"fabric": "MANGROVE_PRESSURE_PLATE"
+		},
+		{
+			"forge": "BAMBOO_PRESSURE_PLATE",
+			"fabric": "BAMBOO_PRESSURE_PLATE"
+		},
+		{
+			"forge": "CRIMSON_PRESSURE_PLATE",
+			"fabric": "CRIMSON_PRESSURE_PLATE"
+		},
+		{
+			"forge": "WARPED_PRESSURE_PLATE",
+			"fabric": "WARPED_PRESSURE_PLATE"
+		},
+		{
+			"forge": "IRON_DOOR",
+			"fabric": "IRON_DOOR"
+		},
+		{
+			"forge": "OAK_DOOR",
+			"fabric": "OAK_DOOR"
+		},
+		{
+			"forge": "SPRUCE_DOOR",
+			"fabric": "SPRUCE_DOOR"
+		},
+		{
+			"forge": "BIRCH_DOOR",
+			"fabric": "BIRCH_DOOR"
+		},
+		{
+			"forge": "JUNGLE_DOOR",
+			"fabric": "JUNGLE_DOOR"
+		},
+		{
+			"forge": "ACACIA_DOOR",
+			"fabric": "ACACIA_DOOR"
+		},
+		{
+			"forge": "CHERRY_DOOR",
+			"fabric": "CHERRY_DOOR"
+		},
+		{
+			"forge": "DARK_OAK_DOOR",
+			"fabric": "DARK_OAK_DOOR"
+		},
+		{
+			"forge": "MANGROVE_DOOR",
+			"fabric": "MANGROVE_DOOR"
+		},
+		{
+			"forge": "BAMBOO_DOOR",
+			"fabric": "BAMBOO_DOOR"
+		},
+		{
+			"forge": "CRIMSON_DOOR",
+			"fabric": "CRIMSON_DOOR"
+		},
+		{
+			"forge": "WARPED_DOOR",
+			"fabric": "WARPED_DOOR"
+		},
+		{
+			"forge": "IRON_TRAPDOOR",
+			"fabric": "IRON_TRAPDOOR"
+		},
+		{
+			"forge": "OAK_TRAPDOOR",
+			"fabric": "OAK_TRAPDOOR"
+		},
+		{
+			"forge": "SPRUCE_TRAPDOOR",
+			"fabric": "SPRUCE_TRAPDOOR"
+		},
+		{
+			"forge": "BIRCH_TRAPDOOR",
+			"fabric": "BIRCH_TRAPDOOR"
+		},
+		{
+			"forge": "JUNGLE_TRAPDOOR",
+			"fabric": "JUNGLE_TRAPDOOR"
+		},
+		{
+			"forge": "ACACIA_TRAPDOOR",
+			"fabric": "ACACIA_TRAPDOOR"
+		},
+		{
+			"forge": "CHERRY_TRAPDOOR",
+			"fabric": "CHERRY_TRAPDOOR"
+		},
+		{
+			"forge": "DARK_OAK_TRAPDOOR",
+			"fabric": "DARK_OAK_TRAPDOOR"
+		},
+		{
+			"forge": "MANGROVE_TRAPDOOR",
+			"fabric": "MANGROVE_TRAPDOOR"
+		},
+		{
+			"forge": "BAMBOO_TRAPDOOR",
+			"fabric": "BAMBOO_TRAPDOOR"
+		},
+		{
+			"forge": "CRIMSON_TRAPDOOR",
+			"fabric": "CRIMSON_TRAPDOOR"
+		},
+		{
+			"forge": "WARPED_TRAPDOOR",
+			"fabric": "WARPED_TRAPDOOR"
+		},
+		{
+			"forge": "OAK_FENCE_GATE",
+			"fabric": "OAK_FENCE_GATE"
+		},
+		{
+			"forge": "SPRUCE_FENCE_GATE",
+			"fabric": "SPRUCE_FENCE_GATE"
+		},
+		{
+			"forge": "BIRCH_FENCE_GATE",
+			"fabric": "BIRCH_FENCE_GATE"
+		},
+		{
+			"forge": "JUNGLE_FENCE_GATE",
+			"fabric": "JUNGLE_FENCE_GATE"
+		},
+		{
+			"forge": "ACACIA_FENCE_GATE",
+			"fabric": "ACACIA_FENCE_GATE"
+		},
+		{
+			"forge": "CHERRY_FENCE_GATE",
+			"fabric": "CHERRY_FENCE_GATE"
+		},
+		{
+			"forge": "DARK_OAK_FENCE_GATE",
+			"fabric": "DARK_OAK_FENCE_GATE"
+		},
+		{
+			"forge": "MANGROVE_FENCE_GATE",
+			"fabric": "MANGROVE_FENCE_GATE"
+		},
+		{
+			"forge": "BAMBOO_FENCE_GATE",
+			"fabric": "BAMBOO_FENCE_GATE"
+		},
+		{
+			"forge": "CRIMSON_FENCE_GATE",
+			"fabric": "CRIMSON_FENCE_GATE"
+		},
+		{
+			"forge": "WARPED_FENCE_GATE",
+			"fabric": "WARPED_FENCE_GATE"
+		},
+		{
+			"forge": "POWERED_RAIL",
+			"fabric": "POWERED_RAIL"
+		},
+		{
+			"forge": "DETECTOR_RAIL",
+			"fabric": "DETECTOR_RAIL"
+		},
+		{
+			"forge": "RAIL",
+			"fabric": "RAIL"
+		},
+		{
+			"forge": "ACTIVATOR_RAIL",
+			"fabric": "ACTIVATOR_RAIL"
+		},
+		{
+			"forge": "SADDLE",
+			"fabric": "SADDLE"
+		},
+		{
+			"forge": "MINECART",
+			"fabric": "MINECART"
+		},
+		{
+			"forge": "CHEST_MINECART",
+			"fabric": "CHEST_MINECART"
+		},
+		{
+			"forge": "FURNACE_MINECART",
+			"fabric": "FURNACE_MINECART"
+		},
+		{
+			"forge": "TNT_MINECART",
+			"fabric": "TNT_MINECART"
+		},
+		{
+			"forge": "HOPPER_MINECART",
+			"fabric": "HOPPER_MINECART"
+		},
+		{
+			"forge": "CARROT_ON_A_STICK",
+			"fabric": "CARROT_ON_A_STICK"
+		},
+		{
+			"forge": "WARPED_FUNGUS_ON_A_STICK",
+			"fabric": "WARPED_FUNGUS_ON_A_STICK"
+		},
+		{
+			"forge": "ELYTRA",
+			"fabric": "ELYTRA"
+		},
+		{
+			"forge": "OAK_BOAT",
+			"fabric": "OAK_BOAT"
+		},
+		{
+			"forge": "OAK_CHEST_BOAT",
+			"fabric": "OAK_CHEST_BOAT"
+		},
+		{
+			"forge": "SPRUCE_BOAT",
+			"fabric": "SPRUCE_BOAT"
+		},
+		{
+			"forge": "SPRUCE_CHEST_BOAT",
+			"fabric": "SPRUCE_CHEST_BOAT"
+		},
+		{
+			"forge": "BIRCH_BOAT",
+			"fabric": "BIRCH_BOAT"
+		},
+		{
+			"forge": "BIRCH_CHEST_BOAT",
+			"fabric": "BIRCH_CHEST_BOAT"
+		},
+		{
+			"forge": "JUNGLE_BOAT",
+			"fabric": "JUNGLE_BOAT"
+		},
+		{
+			"forge": "JUNGLE_CHEST_BOAT",
+			"fabric": "JUNGLE_CHEST_BOAT"
+		},
+		{
+			"forge": "ACACIA_BOAT",
+			"fabric": "ACACIA_BOAT"
+		},
+		{
+			"forge": "ACACIA_CHEST_BOAT",
+			"fabric": "ACACIA_CHEST_BOAT"
+		},
+		{
+			"forge": "CHERRY_BOAT",
+			"fabric": "CHERRY_BOAT"
+		},
+		{
+			"forge": "CHERRY_CHEST_BOAT",
+			"fabric": "CHERRY_CHEST_BOAT"
+		},
+		{
+			"forge": "DARK_OAK_BOAT",
+			"fabric": "DARK_OAK_BOAT"
+		},
+		{
+			"forge": "DARK_OAK_CHEST_BOAT",
+			"fabric": "DARK_OAK_CHEST_BOAT"
+		},
+		{
+			"forge": "MANGROVE_BOAT",
+			"fabric": "MANGROVE_BOAT"
+		},
+		{
+			"forge": "MANGROVE_CHEST_BOAT",
+			"fabric": "MANGROVE_CHEST_BOAT"
+		},
+		{
+			"forge": "BAMBOO_RAFT",
+			"fabric": "BAMBOO_RAFT"
+		},
+		{
+			"forge": "BAMBOO_CHEST_RAFT",
+			"fabric": "BAMBOO_CHEST_RAFT"
+		},
+		{
+			"forge": "STRUCTURE_BLOCK",
+			"fabric": "STRUCTURE_BLOCK"
+		},
+		{
+			"forge": "JIGSAW",
+			"fabric": "JIGSAW"
+		},
+		{
+			"forge": "TURTLE_HELMET",
+			"fabric": "TURTLE_HELMET"
+		},
+		{
+			"forge": "SCUTE",
+			"fabric": "SCUTE"
+		},
+		{
+			"forge": "FLINT_AND_STEEL",
+			"fabric": "FLINT_AND_STEEL"
+		},
+		{
+			"forge": "APPLE",
+			"fabric": "APPLE"
+		},
+		{
+			"forge": "BOW",
+			"fabric": "BOW"
+		},
+		{
+			"forge": "ARROW",
+			"fabric": "ARROW"
+		},
+		{
+			"forge": "COAL",
+			"fabric": "COAL"
+		},
+		{
+			"forge": "CHARCOAL",
+			"fabric": "CHARCOAL"
+		},
+		{
+			"forge": "DIAMOND",
+			"fabric": "DIAMOND"
+		},
+		{
+			"forge": "EMERALD",
+			"fabric": "EMERALD"
+		},
+		{
+			"forge": "LAPIS_LAZULI",
+			"fabric": "LAPIS_LAZULI"
+		},
+		{
+			"forge": "QUARTZ",
+			"fabric": "QUARTZ"
+		},
+		{
+			"forge": "AMETHYST_SHARD",
+			"fabric": "AMETHYST_SHARD"
+		},
+		{
+			"forge": "RAW_IRON",
+			"fabric": "RAW_IRON"
+		},
+		{
+			"forge": "IRON_INGOT",
+			"fabric": "IRON_INGOT"
+		},
+		{
+			"forge": "RAW_COPPER",
+			"fabric": "RAW_COPPER"
+		},
+		{
+			"forge": "COPPER_INGOT",
+			"fabric": "COPPER_INGOT"
+		},
+		{
+			"forge": "RAW_GOLD",
+			"fabric": "RAW_GOLD"
+		},
+		{
+			"forge": "GOLD_INGOT",
+			"fabric": "GOLD_INGOT"
+		},
+		{
+			"forge": "NETHERITE_INGOT",
+			"fabric": "NETHERITE_INGOT"
+		},
+		{
+			"forge": "NETHERITE_SCRAP",
+			"fabric": "NETHERITE_SCRAP"
+		},
+		{
+			"forge": "WOODEN_SWORD",
+			"fabric": "WOODEN_SWORD"
+		},
+		{
+			"forge": "WOODEN_SHOVEL",
+			"fabric": "WOODEN_SHOVEL"
+		},
+		{
+			"forge": "WOODEN_PICKAXE",
+			"fabric": "WOODEN_PICKAXE"
+		},
+		{
+			"forge": "WOODEN_AXE",
+			"fabric": "WOODEN_AXE"
+		},
+		{
+			"forge": "WOODEN_HOE",
+			"fabric": "WOODEN_HOE"
+		},
+		{
+			"forge": "STONE_SWORD",
+			"fabric": "STONE_SWORD"
+		},
+		{
+			"forge": "STONE_SHOVEL",
+			"fabric": "STONE_SHOVEL"
+		},
+		{
+			"forge": "STONE_PICKAXE",
+			"fabric": "STONE_PICKAXE"
+		},
+		{
+			"forge": "STONE_AXE",
+			"fabric": "STONE_AXE"
+		},
+		{
+			"forge": "STONE_HOE",
+			"fabric": "STONE_HOE"
+		},
+		{
+			"forge": "GOLDEN_SWORD",
+			"fabric": "GOLDEN_SWORD"
+		},
+		{
+			"forge": "GOLDEN_SHOVEL",
+			"fabric": "GOLDEN_SHOVEL"
+		},
+		{
+			"forge": "GOLDEN_PICKAXE",
+			"fabric": "GOLDEN_PICKAXE"
+		},
+		{
+			"forge": "GOLDEN_AXE",
+			"fabric": "GOLDEN_AXE"
+		},
+		{
+			"forge": "GOLDEN_HOE",
+			"fabric": "GOLDEN_HOE"
+		},
+		{
+			"forge": "IRON_SWORD",
+			"fabric": "IRON_SWORD"
+		},
+		{
+			"forge": "IRON_SHOVEL",
+			"fabric": "IRON_SHOVEL"
+		},
+		{
+			"forge": "IRON_PICKAXE",
+			"fabric": "IRON_PICKAXE"
+		},
+		{
+			"forge": "IRON_AXE",
+			"fabric": "IRON_AXE"
+		},
+		{
+			"forge": "IRON_HOE",
+			"fabric": "IRON_HOE"
+		},
+		{
+			"forge": "DIAMOND_SWORD",
+			"fabric": "DIAMOND_SWORD"
+		},
+		{
+			"forge": "DIAMOND_SHOVEL",
+			"fabric": "DIAMOND_SHOVEL"
+		},
+		{
+			"forge": "DIAMOND_PICKAXE",
+			"fabric": "DIAMOND_PICKAXE"
+		},
+		{
+			"forge": "DIAMOND_AXE",
+			"fabric": "DIAMOND_AXE"
+		},
+		{
+			"forge": "DIAMOND_HOE",
+			"fabric": "DIAMOND_HOE"
+		},
+		{
+			"forge": "NETHERITE_SWORD",
+			"fabric": "NETHERITE_SWORD"
+		},
+		{
+			"forge": "NETHERITE_SHOVEL",
+			"fabric": "NETHERITE_SHOVEL"
+		},
+		{
+			"forge": "NETHERITE_PICKAXE",
+			"fabric": "NETHERITE_PICKAXE"
+		},
+		{
+			"forge": "NETHERITE_AXE",
+			"fabric": "NETHERITE_AXE"
+		},
+		{
+			"forge": "NETHERITE_HOE",
+			"fabric": "NETHERITE_HOE"
+		},
+		{
+			"forge": "STICK",
+			"fabric": "STICK"
+		},
+		{
+			"forge": "BOWL",
+			"fabric": "BOWL"
+		},
+		{
+			"forge": "MUSHROOM_STEW",
+			"fabric": "MUSHROOM_STEW"
+		},
+		{
+			"forge": "STRING",
+			"fabric": "STRING"
+		},
+		{
+			"forge": "FEATHER",
+			"fabric": "FEATHER"
+		},
+		{
+			"forge": "GUNPOWDER",
+			"fabric": "GUNPOWDER"
+		},
+		{
+			"forge": "WHEAT_SEEDS",
+			"fabric": "WHEAT_SEEDS"
+		},
+		{
+			"forge": "WHEAT",
+			"fabric": "WHEAT"
+		},
+		{
+			"forge": "BREAD",
+			"fabric": "BREAD"
+		},
+		{
+			"forge": "LEATHER_HELMET",
+			"fabric": "LEATHER_HELMET"
+		},
+		{
+			"forge": "LEATHER_CHESTPLATE",
+			"fabric": "LEATHER_CHESTPLATE"
+		},
+		{
+			"forge": "LEATHER_LEGGINGS",
+			"fabric": "LEATHER_LEGGINGS"
+		},
+		{
+			"forge": "LEATHER_BOOTS",
+			"fabric": "LEATHER_BOOTS"
+		},
+		{
+			"forge": "CHAINMAIL_HELMET",
+			"fabric": "CHAINMAIL_HELMET"
+		},
+		{
+			"forge": "CHAINMAIL_CHESTPLATE",
+			"fabric": "CHAINMAIL_CHESTPLATE"
+		},
+		{
+			"forge": "CHAINMAIL_LEGGINGS",
+			"fabric": "CHAINMAIL_LEGGINGS"
+		},
+		{
+			"forge": "CHAINMAIL_BOOTS",
+			"fabric": "CHAINMAIL_BOOTS"
+		},
+		{
+			"forge": "IRON_HELMET",
+			"fabric": "IRON_HELMET"
+		},
+		{
+			"forge": "IRON_CHESTPLATE",
+			"fabric": "IRON_CHESTPLATE"
+		},
+		{
+			"forge": "IRON_LEGGINGS",
+			"fabric": "IRON_LEGGINGS"
+		},
+		{
+			"forge": "IRON_BOOTS",
+			"fabric": "IRON_BOOTS"
+		},
+		{
+			"forge": "DIAMOND_HELMET",
+			"fabric": "DIAMOND_HELMET"
+		},
+		{
+			"forge": "DIAMOND_CHESTPLATE",
+			"fabric": "DIAMOND_CHESTPLATE"
+		},
+		{
+			"forge": "DIAMOND_LEGGINGS",
+			"fabric": "DIAMOND_LEGGINGS"
+		},
+		{
+			"forge": "DIAMOND_BOOTS",
+			"fabric": "DIAMOND_BOOTS"
+		},
+		{
+			"forge": "GOLDEN_HELMET",
+			"fabric": "GOLDEN_HELMET"
+		},
+		{
+			"forge": "GOLDEN_CHESTPLATE",
+			"fabric": "GOLDEN_CHESTPLATE"
+		},
+		{
+			"forge": "GOLDEN_LEGGINGS",
+			"fabric": "GOLDEN_LEGGINGS"
+		},
+		{
+			"forge": "GOLDEN_BOOTS",
+			"fabric": "GOLDEN_BOOTS"
+		},
+		{
+			"forge": "NETHERITE_HELMET",
+			"fabric": "NETHERITE_HELMET"
+		},
+		{
+			"forge": "NETHERITE_CHESTPLATE",
+			"fabric": "NETHERITE_CHESTPLATE"
+		},
+		{
+			"forge": "NETHERITE_LEGGINGS",
+			"fabric": "NETHERITE_LEGGINGS"
+		},
+		{
+			"forge": "NETHERITE_BOOTS",
+			"fabric": "NETHERITE_BOOTS"
+		},
+		{
+			"forge": "FLINT",
+			"fabric": "FLINT"
+		},
+		{
+			"forge": "PORKCHOP",
+			"fabric": "PORKCHOP"
+		},
+		{
+			"forge": "COOKED_PORKCHOP",
+			"fabric": "COOKED_PORKCHOP"
+		},
+		{
+			"forge": "PAINTING",
+			"fabric": "PAINTING"
+		},
+		{
+			"forge": "GOLDEN_APPLE",
+			"fabric": "GOLDEN_APPLE"
+		},
+		{
+			"forge": "ENCHANTED_GOLDEN_APPLE",
+			"fabric": "ENCHANTED_GOLDEN_APPLE"
+		},
+		{
+			"forge": "OAK_SIGN",
+			"fabric": "OAK_SIGN"
+		},
+		{
+			"forge": "SPRUCE_SIGN",
+			"fabric": "SPRUCE_SIGN"
+		},
+		{
+			"forge": "BIRCH_SIGN",
+			"fabric": "BIRCH_SIGN"
+		},
+		{
+			"forge": "JUNGLE_SIGN",
+			"fabric": "JUNGLE_SIGN"
+		},
+		{
+			"forge": "ACACIA_SIGN",
+			"fabric": "ACACIA_SIGN"
+		},
+		{
+			"forge": "CHERRY_SIGN",
+			"fabric": "CHERRY_SIGN"
+		},
+		{
+			"forge": "DARK_OAK_SIGN",
+			"fabric": "DARK_OAK_SIGN"
+		},
+		{
+			"forge": "MANGROVE_SIGN",
+			"fabric": "MANGROVE_SIGN"
+		},
+		{
+			"forge": "BAMBOO_SIGN",
+			"fabric": "BAMBOO_SIGN"
+		},
+		{
+			"forge": "CRIMSON_SIGN",
+			"fabric": "CRIMSON_SIGN"
+		},
+		{
+			"forge": "WARPED_SIGN",
+			"fabric": "WARPED_SIGN"
+		},
+		{
+			"forge": "OAK_HANGING_SIGN",
+			"fabric": "OAK_HANGING_SIGN"
+		},
+		{
+			"forge": "SPRUCE_HANGING_SIGN",
+			"fabric": "SPRUCE_HANGING_SIGN"
+		},
+		{
+			"forge": "BIRCH_HANGING_SIGN",
+			"fabric": "BIRCH_HANGING_SIGN"
+		},
+		{
+			"forge": "JUNGLE_HANGING_SIGN",
+			"fabric": "JUNGLE_HANGING_SIGN"
+		},
+		{
+			"forge": "ACACIA_HANGING_SIGN",
+			"fabric": "ACACIA_HANGING_SIGN"
+		},
+		{
+			"forge": "CHERRY_HANGING_SIGN",
+			"fabric": "CHERRY_HANGING_SIGN"
+		},
+		{
+			"forge": "DARK_OAK_HANGING_SIGN",
+			"fabric": "DARK_OAK_HANGING_SIGN"
+		},
+		{
+			"forge": "MANGROVE_HANGING_SIGN",
+			"fabric": "MANGROVE_HANGING_SIGN"
+		},
+		{
+			"forge": "BAMBOO_HANGING_SIGN",
+			"fabric": "BAMBOO_HANGING_SIGN"
+		},
+		{
+			"forge": "CRIMSON_HANGING_SIGN",
+			"fabric": "CRIMSON_HANGING_SIGN"
+		},
+		{
+			"forge": "WARPED_HANGING_SIGN",
+			"fabric": "WARPED_HANGING_SIGN"
+		},
+		{
+			"forge": "BUCKET",
+			"fabric": "BUCKET"
+		},
+		{
+			"forge": "WATER_BUCKET",
+			"fabric": "WATER_BUCKET"
+		},
+		{
+			"forge": "LAVA_BUCKET",
+			"fabric": "LAVA_BUCKET"
+		},
+		{
+			"forge": "POWDER_SNOW_BUCKET",
+			"fabric": "POWDER_SNOW_BUCKET"
+		},
+		{
+			"forge": "SNOWBALL",
+			"fabric": "SNOWBALL"
+		},
+		{
+			"forge": "LEATHER",
+			"fabric": "LEATHER"
+		},
+		{
+			"forge": "MILK_BUCKET",
+			"fabric": "MILK_BUCKET"
+		},
+		{
+			"forge": "PUFFERFISH_BUCKET",
+			"fabric": "PUFFERFISH_BUCKET"
+		},
+		{
+			"forge": "SALMON_BUCKET",
+			"fabric": "SALMON_BUCKET"
+		},
+		{
+			"forge": "COD_BUCKET",
+			"fabric": "COD_BUCKET"
+		},
+		{
+			"forge": "TROPICAL_FISH_BUCKET",
+			"fabric": "TROPICAL_FISH_BUCKET"
+		},
+		{
+			"forge": "AXOLOTL_BUCKET",
+			"fabric": "AXOLOTL_BUCKET"
+		},
+		{
+			"forge": "TADPOLE_BUCKET",
+			"fabric": "TADPOLE_BUCKET"
+		},
+		{
+			"forge": "BRICK",
+			"fabric": "BRICK"
+		},
+		{
+			"forge": "CLAY_BALL",
+			"fabric": "CLAY_BALL"
+		},
+		{
+			"forge": "DRIED_KELP_BLOCK",
+			"fabric": "DRIED_KELP_BLOCK"
+		},
+		{
+			"forge": "PAPER",
+			"fabric": "PAPER"
+		},
+		{
+			"forge": "BOOK",
+			"fabric": "BOOK"
+		},
+		{
+			"forge": "SLIME_BALL",
+			"fabric": "SLIME_BALL"
+		},
+		{
+			"forge": "EGG",
+			"fabric": "EGG"
+		},
+		{
+			"forge": "COMPASS",
+			"fabric": "COMPASS"
+		},
+		{
+			"forge": "RECOVERY_COMPASS",
+			"fabric": "RECOVERY_COMPASS"
+		},
+		{
+			"forge": "BUNDLE",
+			"fabric": "BUNDLE"
+		},
+		{
+			"forge": "FISHING_ROD",
+			"fabric": "FISHING_ROD"
+		},
+		{
+			"forge": "CLOCK",
+			"fabric": "CLOCK"
+		},
+		{
+			"forge": "SPYGLASS",
+			"fabric": "SPYGLASS"
+		},
+		{
+			"forge": "GLOWSTONE_DUST",
+			"fabric": "GLOWSTONE_DUST"
+		},
+		{
+			"forge": "COD",
+			"fabric": "COD"
+		},
+		{
+			"forge": "SALMON",
+			"fabric": "SALMON"
+		},
+		{
+			"forge": "TROPICAL_FISH",
+			"fabric": "TROPICAL_FISH"
+		},
+		{
+			"forge": "PUFFERFISH",
+			"fabric": "PUFFERFISH"
+		},
+		{
+			"forge": "COOKED_COD",
+			"fabric": "COOKED_COD"
+		},
+		{
+			"forge": "COOKED_SALMON",
+			"fabric": "COOKED_SALMON"
+		},
+		{
+			"forge": "INK_SAC",
+			"fabric": "INK_SAC"
+		},
+		{
+			"forge": "GLOW_INK_SAC",
+			"fabric": "GLOW_INK_SAC"
+		},
+		{
+			"forge": "COCOA_BEANS",
+			"fabric": "COCOA_BEANS"
+		},
+		{
+			"forge": "WHITE_DYE",
+			"fabric": "WHITE_DYE"
+		},
+		{
+			"forge": "ORANGE_DYE",
+			"fabric": "ORANGE_DYE"
+		},
+		{
+			"forge": "MAGENTA_DYE",
+			"fabric": "MAGENTA_DYE"
+		},
+		{
+			"forge": "LIGHT_BLUE_DYE",
+			"fabric": "LIGHT_BLUE_DYE"
+		},
+		{
+			"forge": "YELLOW_DYE",
+			"fabric": "YELLOW_DYE"
+		},
+		{
+			"forge": "LIME_DYE",
+			"fabric": "LIME_DYE"
+		},
+		{
+			"forge": "PINK_DYE",
+			"fabric": "PINK_DYE"
+		},
+		{
+			"forge": "GRAY_DYE",
+			"fabric": "GRAY_DYE"
+		},
+		{
+			"forge": "LIGHT_GRAY_DYE",
+			"fabric": "LIGHT_GRAY_DYE"
+		},
+		{
+			"forge": "CYAN_DYE",
+			"fabric": "CYAN_DYE"
+		},
+		{
+			"forge": "PURPLE_DYE",
+			"fabric": "PURPLE_DYE"
+		},
+		{
+			"forge": "BLUE_DYE",
+			"fabric": "BLUE_DYE"
+		},
+		{
+			"forge": "BROWN_DYE",
+			"fabric": "BROWN_DYE"
+		},
+		{
+			"forge": "GREEN_DYE",
+			"fabric": "GREEN_DYE"
+		},
+		{
+			"forge": "RED_DYE",
+			"fabric": "RED_DYE"
+		},
+		{
+			"forge": "BLACK_DYE",
+			"fabric": "BLACK_DYE"
+		},
+		{
+			"forge": "BONE_MEAL",
+			"fabric": "BONE_MEAL"
+		},
+		{
+			"forge": "BONE",
+			"fabric": "BONE"
+		},
+		{
+			"forge": "SUGAR",
+			"fabric": "SUGAR"
+		},
+		{
+			"forge": "CAKE",
+			"fabric": "CAKE"
+		},
+		{
+			"forge": "WHITE_BED",
+			"fabric": "WHITE_BED"
+		},
+		{
+			"forge": "ORANGE_BED",
+			"fabric": "ORANGE_BED"
+		},
+		{
+			"forge": "MAGENTA_BED",
+			"fabric": "MAGENTA_BED"
+		},
+		{
+			"forge": "LIGHT_BLUE_BED",
+			"fabric": "LIGHT_BLUE_BED"
+		},
+		{
+			"forge": "YELLOW_BED",
+			"fabric": "YELLOW_BED"
+		},
+		{
+			"forge": "LIME_BED",
+			"fabric": "LIME_BED"
+		},
+		{
+			"forge": "PINK_BED",
+			"fabric": "PINK_BED"
+		},
+		{
+			"forge": "GRAY_BED",
+			"fabric": "GRAY_BED"
+		},
+		{
+			"forge": "LIGHT_GRAY_BED",
+			"fabric": "LIGHT_GRAY_BED"
+		},
+		{
+			"forge": "CYAN_BED",
+			"fabric": "CYAN_BED"
+		},
+		{
+			"forge": "PURPLE_BED",
+			"fabric": "PURPLE_BED"
+		},
+		{
+			"forge": "BLUE_BED",
+			"fabric": "BLUE_BED"
+		},
+		{
+			"forge": "BROWN_BED",
+			"fabric": "BROWN_BED"
+		},
+		{
+			"forge": "GREEN_BED",
+			"fabric": "GREEN_BED"
+		},
+		{
+			"forge": "RED_BED",
+			"fabric": "RED_BED"
+		},
+		{
+			"forge": "BLACK_BED",
+			"fabric": "BLACK_BED"
+		},
+		{
+			"forge": "COOKIE",
+			"fabric": "COOKIE"
+		},
+		{
+			"forge": "FILLED_MAP",
+			"fabric": "FILLED_MAP"
+		},
+		{
+			"forge": "SHEARS",
+			"fabric": "SHEARS"
+		},
+		{
+			"forge": "MELON_SLICE",
+			"fabric": "MELON_SLICE"
+		},
+		{
+			"forge": "DRIED_KELP",
+			"fabric": "DRIED_KELP"
+		},
+		{
+			"forge": "PUMPKIN_SEEDS",
+			"fabric": "PUMPKIN_SEEDS"
+		},
+		{
+			"forge": "MELON_SEEDS",
+			"fabric": "MELON_SEEDS"
+		},
+		{
+			"forge": "BEEF",
+			"fabric": "BEEF"
+		},
+		{
+			"forge": "COOKED_BEEF",
+			"fabric": "COOKED_BEEF"
+		},
+		{
+			"forge": "CHICKEN",
+			"fabric": "CHICKEN"
+		},
+		{
+			"forge": "COOKED_CHICKEN",
+			"fabric": "COOKED_CHICKEN"
+		},
+		{
+			"forge": "ROTTEN_FLESH",
+			"fabric": "ROTTEN_FLESH"
+		},
+		{
+			"forge": "ENDER_PEARL",
+			"fabric": "ENDER_PEARL"
+		},
+		{
+			"forge": "BLAZE_ROD",
+			"fabric": "BLAZE_ROD"
+		},
+		{
+			"forge": "GHAST_TEAR",
+			"fabric": "GHAST_TEAR"
+		},
+		{
+			"forge": "GOLD_NUGGET",
+			"fabric": "GOLD_NUGGET"
+		},
+		{
+			"forge": "NETHER_WART",
+			"fabric": "NETHER_WART"
+		},
+		{
+			"forge": "POTION",
+			"fabric": "POTION"
+		},
+		{
+			"forge": "GLASS_BOTTLE",
+			"fabric": "GLASS_BOTTLE"
+		},
+		{
+			"forge": "SPIDER_EYE",
+			"fabric": "SPIDER_EYE"
+		},
+		{
+			"forge": "FERMENTED_SPIDER_EYE",
+			"fabric": "FERMENTED_SPIDER_EYE"
+		},
+		{
+			"forge": "BLAZE_POWDER",
+			"fabric": "BLAZE_POWDER"
+		},
+		{
+			"forge": "MAGMA_CREAM",
+			"fabric": "MAGMA_CREAM"
+		},
+		{
+			"forge": "BREWING_STAND",
+			"fabric": "BREWING_STAND"
+		},
+		{
+			"forge": "CAULDRON",
+			"fabric": "CAULDRON"
+		},
+		{
+			"forge": "ENDER_EYE",
+			"fabric": "ENDER_EYE"
+		},
+		{
+			"forge": "GLISTERING_MELON_SLICE",
+			"fabric": "GLISTERING_MELON_SLICE"
+		},
+		{
+			"forge": "ALLAY_SPAWN_EGG",
+			"fabric": "ALLAY_SPAWN_EGG"
+		},
+		{
+			"forge": "AXOLOTL_SPAWN_EGG",
+			"fabric": "AXOLOTL_SPAWN_EGG"
+		},
+		{
+			"forge": "BAT_SPAWN_EGG",
+			"fabric": "BAT_SPAWN_EGG"
+		},
+		{
+			"forge": "BEE_SPAWN_EGG",
+			"fabric": "BEE_SPAWN_EGG"
+		},
+		{
+			"forge": "BLAZE_SPAWN_EGG",
+			"fabric": "BLAZE_SPAWN_EGG"
+		},
+		{
+			"forge": "CAT_SPAWN_EGG",
+			"fabric": "CAT_SPAWN_EGG"
+		},
+		{
+			"forge": "CAMEL_SPAWN_EGG",
+			"fabric": "CAMEL_SPAWN_EGG"
+		},
+		{
+			"forge": "CAVE_SPIDER_SPAWN_EGG",
+			"fabric": "CAVE_SPIDER_SPAWN_EGG"
+		},
+		{
+			"forge": "CHICKEN_SPAWN_EGG",
+			"fabric": "CHICKEN_SPAWN_EGG"
+		},
+		{
+			"forge": "COD_SPAWN_EGG",
+			"fabric": "COD_SPAWN_EGG"
+		},
+		{
+			"forge": "COW_SPAWN_EGG",
+			"fabric": "COW_SPAWN_EGG"
+		},
+		{
+			"forge": "CREEPER_SPAWN_EGG",
+			"fabric": "CREEPER_SPAWN_EGG"
+		},
+		{
+			"forge": "DOLPHIN_SPAWN_EGG",
+			"fabric": "DOLPHIN_SPAWN_EGG"
+		},
+		{
+			"forge": "DONKEY_SPAWN_EGG",
+			"fabric": "DONKEY_SPAWN_EGG"
+		},
+		{
+			"forge": "DROWNED_SPAWN_EGG",
+			"fabric": "DROWNED_SPAWN_EGG"
+		},
+		{
+			"forge": "ELDER_GUARDIAN_SPAWN_EGG",
+			"fabric": "ELDER_GUARDIAN_SPAWN_EGG"
+		},
+		{
+			"forge": "ENDER_DRAGON_SPAWN_EGG",
+			"fabric": "ENDER_DRAGON_SPAWN_EGG"
+		},
+		{
+			"forge": "ENDERMAN_SPAWN_EGG",
+			"fabric": "ENDERMAN_SPAWN_EGG"
+		},
+		{
+			"forge": "ENDERMITE_SPAWN_EGG",
+			"fabric": "ENDERMITE_SPAWN_EGG"
+		},
+		{
+			"forge": "EVOKER_SPAWN_EGG",
+			"fabric": "EVOKER_SPAWN_EGG"
+		},
+		{
+			"forge": "FOX_SPAWN_EGG",
+			"fabric": "FOX_SPAWN_EGG"
+		},
+		{
+			"forge": "FROG_SPAWN_EGG",
+			"fabric": "FROG_SPAWN_EGG"
+		},
+		{
+			"forge": "GHAST_SPAWN_EGG",
+			"fabric": "GHAST_SPAWN_EGG"
+		},
+		{
+			"forge": "GLOW_SQUID_SPAWN_EGG",
+			"fabric": "GLOW_SQUID_SPAWN_EGG"
+		},
+		{
+			"forge": "GOAT_SPAWN_EGG",
+			"fabric": "GOAT_SPAWN_EGG"
+		},
+		{
+			"forge": "GUARDIAN_SPAWN_EGG",
+			"fabric": "GUARDIAN_SPAWN_EGG"
+		},
+		{
+			"forge": "HOGLIN_SPAWN_EGG",
+			"fabric": "HOGLIN_SPAWN_EGG"
+		},
+		{
+			"forge": "HORSE_SPAWN_EGG",
+			"fabric": "HORSE_SPAWN_EGG"
+		},
+		{
+			"forge": "HUSK_SPAWN_EGG",
+			"fabric": "HUSK_SPAWN_EGG"
+		},
+		{
+			"forge": "IRON_GOLEM_SPAWN_EGG",
+			"fabric": "IRON_GOLEM_SPAWN_EGG"
+		},
+		{
+			"forge": "LLAMA_SPAWN_EGG",
+			"fabric": "LLAMA_SPAWN_EGG"
+		},
+		{
+			"forge": "MAGMA_CUBE_SPAWN_EGG",
+			"fabric": "MAGMA_CUBE_SPAWN_EGG"
+		},
+		{
+			"forge": "MOOSHROOM_SPAWN_EGG",
+			"fabric": "MOOSHROOM_SPAWN_EGG"
+		},
+		{
+			"forge": "MULE_SPAWN_EGG",
+			"fabric": "MULE_SPAWN_EGG"
+		},
+		{
+			"forge": "OCELOT_SPAWN_EGG",
+			"fabric": "OCELOT_SPAWN_EGG"
+		},
+		{
+			"forge": "PANDA_SPAWN_EGG",
+			"fabric": "PANDA_SPAWN_EGG"
+		},
+		{
+			"forge": "PARROT_SPAWN_EGG",
+			"fabric": "PARROT_SPAWN_EGG"
+		},
+		{
+			"forge": "PHANTOM_SPAWN_EGG",
+			"fabric": "PHANTOM_SPAWN_EGG"
+		},
+		{
+			"forge": "PIG_SPAWN_EGG",
+			"fabric": "PIG_SPAWN_EGG"
+		},
+		{
+			"forge": "PIGLIN_SPAWN_EGG",
+			"fabric": "PIGLIN_SPAWN_EGG"
+		},
+		{
+			"forge": "PIGLIN_BRUTE_SPAWN_EGG",
+			"fabric": "PIGLIN_BRUTE_SPAWN_EGG"
+		},
+		{
+			"forge": "PILLAGER_SPAWN_EGG",
+			"fabric": "PILLAGER_SPAWN_EGG"
+		},
+		{
+			"forge": "POLAR_BEAR_SPAWN_EGG",
+			"fabric": "POLAR_BEAR_SPAWN_EGG"
+		},
+		{
+			"forge": "PUFFERFISH_SPAWN_EGG",
+			"fabric": "PUFFERFISH_SPAWN_EGG"
+		},
+		{
+			"forge": "RABBIT_SPAWN_EGG",
+			"fabric": "RABBIT_SPAWN_EGG"
+		},
+		{
+			"forge": "RAVAGER_SPAWN_EGG",
+			"fabric": "RAVAGER_SPAWN_EGG"
+		},
+		{
+			"forge": "SALMON_SPAWN_EGG",
+			"fabric": "SALMON_SPAWN_EGG"
+		},
+		{
+			"forge": "SHEEP_SPAWN_EGG",
+			"fabric": "SHEEP_SPAWN_EGG"
+		},
+		{
+			"forge": "SHULKER_SPAWN_EGG",
+			"fabric": "SHULKER_SPAWN_EGG"
+		},
+		{
+			"forge": "SILVERFISH_SPAWN_EGG",
+			"fabric": "SILVERFISH_SPAWN_EGG"
+		},
+		{
+			"forge": "SKELETON_SPAWN_EGG",
+			"fabric": "SKELETON_SPAWN_EGG"
+		},
+		{
+			"forge": "SKELETON_HORSE_SPAWN_EGG",
+			"fabric": "SKELETON_HORSE_SPAWN_EGG"
+		},
+		{
+			"forge": "SLIME_SPAWN_EGG",
+			"fabric": "SLIME_SPAWN_EGG"
+		},
+		{
+			"forge": "SNIFFER_SPAWN_EGG",
+			"fabric": "SNIFFER_SPAWN_EGG"
+		},
+		{
+			"forge": "SNOW_GOLEM_SPAWN_EGG",
+			"fabric": "SNOW_GOLEM_SPAWN_EGG"
+		},
+		{
+			"forge": "SPIDER_SPAWN_EGG",
+			"fabric": "SPIDER_SPAWN_EGG"
+		},
+		{
+			"forge": "SQUID_SPAWN_EGG",
+			"fabric": "SQUID_SPAWN_EGG"
+		},
+		{
+			"forge": "STRAY_SPAWN_EGG",
+			"fabric": "STRAY_SPAWN_EGG"
+		},
+		{
+			"forge": "STRIDER_SPAWN_EGG",
+			"fabric": "STRIDER_SPAWN_EGG"
+		},
+		{
+			"forge": "TADPOLE_SPAWN_EGG",
+			"fabric": "TADPOLE_SPAWN_EGG"
+		},
+		{
+			"forge": "TRADER_LLAMA_SPAWN_EGG",
+			"fabric": "TRADER_LLAMA_SPAWN_EGG"
+		},
+		{
+			"forge": "TROPICAL_FISH_SPAWN_EGG",
+			"fabric": "TROPICAL_FISH_SPAWN_EGG"
+		},
+		{
+			"forge": "TURTLE_SPAWN_EGG",
+			"fabric": "TURTLE_SPAWN_EGG"
+		},
+		{
+			"forge": "VEX_SPAWN_EGG",
+			"fabric": "VEX_SPAWN_EGG"
+		},
+		{
+			"forge": "VILLAGER_SPAWN_EGG",
+			"fabric": "VILLAGER_SPAWN_EGG"
+		},
+		{
+			"forge": "VINDICATOR_SPAWN_EGG",
+			"fabric": "VINDICATOR_SPAWN_EGG"
+		},
+		{
+			"forge": "WANDERING_TRADER_SPAWN_EGG",
+			"fabric": "WANDERING_TRADER_SPAWN_EGG"
+		},
+		{
+			"forge": "WARDEN_SPAWN_EGG",
+			"fabric": "WARDEN_SPAWN_EGG"
+		},
+		{
+			"forge": "WITCH_SPAWN_EGG",
+			"fabric": "WITCH_SPAWN_EGG"
+		},
+		{
+			"forge": "WITHER_SPAWN_EGG",
+			"fabric": "WITHER_SPAWN_EGG"
+		},
+		{
+			"forge": "WITHER_SKELETON_SPAWN_EGG",
+			"fabric": "WITHER_SKELETON_SPAWN_EGG"
+		},
+		{
+			"forge": "WOLF_SPAWN_EGG",
+			"fabric": "WOLF_SPAWN_EGG"
+		},
+		{
+			"forge": "ZOGLIN_SPAWN_EGG",
+			"fabric": "ZOGLIN_SPAWN_EGG"
+		},
+		{
+			"forge": "ZOMBIE_SPAWN_EGG",
+			"fabric": "ZOMBIE_SPAWN_EGG"
+		},
+		{
+			"forge": "ZOMBIE_HORSE_SPAWN_EGG",
+			"fabric": "ZOMBIE_HORSE_SPAWN_EGG"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER_SPAWN_EGG",
+			"fabric": "ZOMBIE_VILLAGER_SPAWN_EGG"
+		},
+		{
+			"forge": "ZOMBIFIED_PIGLIN_SPAWN_EGG",
+			"fabric": "ZOMBIFIED_PIGLIN_SPAWN_EGG"
+		},
+		{
+			"forge": "EXPERIENCE_BOTTLE",
+			"fabric": "EXPERIENCE_BOTTLE"
+		},
+		{
+			"forge": "FIRE_CHARGE",
+			"fabric": "FIRE_CHARGE"
+		},
+		{
+			"forge": "WRITABLE_BOOK",
+			"fabric": "WRITABLE_BOOK"
+		},
+		{
+			"forge": "WRITTEN_BOOK",
+			"fabric": "WRITTEN_BOOK"
+		},
+		{
+			"forge": "ITEM_FRAME",
+			"fabric": "ITEM_FRAME"
+		},
+		{
+			"forge": "GLOW_ITEM_FRAME",
+			"fabric": "GLOW_ITEM_FRAME"
+		},
+		{
+			"forge": "FLOWER_POT",
+			"fabric": "FLOWER_POT"
+		},
+		{
+			"forge": "CARROT",
+			"fabric": "CARROT"
+		},
+		{
+			"forge": "POTATO",
+			"fabric": "POTATO"
+		},
+		{
+			"forge": "BAKED_POTATO",
+			"fabric": "BAKED_POTATO"
+		},
+		{
+			"forge": "POISONOUS_POTATO",
+			"fabric": "POISONOUS_POTATO"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "MAP"
+		},
+		{
+			"forge": "GOLDEN_CARROT",
+			"fabric": "GOLDEN_CARROT"
+		},
+		{
+			"forge": "SKELETON_SKULL",
+			"fabric": "SKELETON_SKULL"
+		},
+		{
+			"forge": "WITHER_SKELETON_SKULL",
+			"fabric": "WITHER_SKELETON_SKULL"
+		},
+		{
+			"forge": "PLAYER_HEAD",
+			"fabric": "PLAYER_HEAD"
+		},
+		{
+			"forge": "ZOMBIE_HEAD",
+			"fabric": "ZOMBIE_HEAD"
+		},
+		{
+			"forge": "CREEPER_HEAD",
+			"fabric": "CREEPER_HEAD"
+		},
+		{
+			"forge": "DRAGON_HEAD",
+			"fabric": "DRAGON_HEAD"
+		},
+		{
+			"forge": "PIGLIN_HEAD",
+			"fabric": "PIGLIN_HEAD"
+		},
+		{
+			"forge": "NETHER_STAR",
+			"fabric": "NETHER_STAR"
+		},
+		{
+			"forge": "PUMPKIN_PIE",
+			"fabric": "PUMPKIN_PIE"
+		},
+		{
+			"forge": "FIREWORK_ROCKET",
+			"fabric": "FIREWORK_ROCKET"
+		},
+		{
+			"forge": "FIREWORK_STAR",
+			"fabric": "FIREWORK_STAR"
+		},
+		{
+			"forge": "ENCHANTED_BOOK",
+			"fabric": "ENCHANTED_BOOK"
+		},
+		{
+			"forge": "NETHER_BRICK",
+			"fabric": "NETHER_BRICK"
+		},
+		{
+			"forge": "PRISMARINE_SHARD",
+			"fabric": "PRISMARINE_SHARD"
+		},
+		{
+			"forge": "PRISMARINE_CRYSTALS",
+			"fabric": "PRISMARINE_CRYSTALS"
+		},
+		{
+			"forge": "RABBIT",
+			"fabric": "RABBIT"
+		},
+		{
+			"forge": "COOKED_RABBIT",
+			"fabric": "COOKED_RABBIT"
+		},
+		{
+			"forge": "RABBIT_STEW",
+			"fabric": "RABBIT_STEW"
+		},
+		{
+			"forge": "RABBIT_FOOT",
+			"fabric": "RABBIT_FOOT"
+		},
+		{
+			"forge": "RABBIT_HIDE",
+			"fabric": "RABBIT_HIDE"
+		},
+		{
+			"forge": "ARMOR_STAND",
+			"fabric": "ARMOR_STAND"
+		},
+		{
+			"forge": "IRON_HORSE_ARMOR",
+			"fabric": "IRON_HORSE_ARMOR"
+		},
+		{
+			"forge": "GOLDEN_HORSE_ARMOR",
+			"fabric": "GOLDEN_HORSE_ARMOR"
+		},
+		{
+			"forge": "DIAMOND_HORSE_ARMOR",
+			"fabric": "DIAMOND_HORSE_ARMOR"
+		},
+		{
+			"forge": "LEATHER_HORSE_ARMOR",
+			"fabric": "LEATHER_HORSE_ARMOR"
+		},
+		{
+			"forge": "LEAD",
+			"fabric": "LEAD"
+		},
+		{
+			"forge": "NAME_TAG",
+			"fabric": "NAME_TAG"
+		},
+		{
+			"forge": "COMMAND_BLOCK_MINECART",
+			"fabric": "COMMAND_BLOCK_MINECART"
+		},
+		{
+			"forge": "MUTTON",
+			"fabric": "MUTTON"
+		},
+		{
+			"forge": "COOKED_MUTTON",
+			"fabric": "COOKED_MUTTON"
+		},
+		{
+			"forge": "WHITE_BANNER",
+			"fabric": "WHITE_BANNER"
+		},
+		{
+			"forge": "ORANGE_BANNER",
+			"fabric": "ORANGE_BANNER"
+		},
+		{
+			"forge": "MAGENTA_BANNER",
+			"fabric": "MAGENTA_BANNER"
+		},
+		{
+			"forge": "LIGHT_BLUE_BANNER",
+			"fabric": "LIGHT_BLUE_BANNER"
+		},
+		{
+			"forge": "YELLOW_BANNER",
+			"fabric": "YELLOW_BANNER"
+		},
+		{
+			"forge": "LIME_BANNER",
+			"fabric": "LIME_BANNER"
+		},
+		{
+			"forge": "PINK_BANNER",
+			"fabric": "PINK_BANNER"
+		},
+		{
+			"forge": "GRAY_BANNER",
+			"fabric": "GRAY_BANNER"
+		},
+		{
+			"forge": "LIGHT_GRAY_BANNER",
+			"fabric": "LIGHT_GRAY_BANNER"
+		},
+		{
+			"forge": "CYAN_BANNER",
+			"fabric": "CYAN_BANNER"
+		},
+		{
+			"forge": "PURPLE_BANNER",
+			"fabric": "PURPLE_BANNER"
+		},
+		{
+			"forge": "BLUE_BANNER",
+			"fabric": "BLUE_BANNER"
+		},
+		{
+			"forge": "BROWN_BANNER",
+			"fabric": "BROWN_BANNER"
+		},
+		{
+			"forge": "GREEN_BANNER",
+			"fabric": "GREEN_BANNER"
+		},
+		{
+			"forge": "RED_BANNER",
+			"fabric": "RED_BANNER"
+		},
+		{
+			"forge": "BLACK_BANNER",
+			"fabric": "BLACK_BANNER"
+		},
+		{
+			"forge": "END_CRYSTAL",
+			"fabric": "END_CRYSTAL"
+		},
+		{
+			"forge": "CHORUS_FRUIT",
+			"fabric": "CHORUS_FRUIT"
+		},
+		{
+			"forge": "POPPED_CHORUS_FRUIT",
+			"fabric": "POPPED_CHORUS_FRUIT"
+		},
+		{
+			"forge": "TORCHFLOWER_SEEDS",
+			"fabric": "TORCHFLOWER_SEEDS"
+		},
+		{
+			"forge": "PITCHER_POD",
+			"fabric": "PITCHER_POD"
+		},
+		{
+			"forge": "BEETROOT",
+			"fabric": "BEETROOT"
+		},
+		{
+			"forge": "BEETROOT_SEEDS",
+			"fabric": "BEETROOT_SEEDS"
+		},
+		{
+			"forge": "BEETROOT_SOUP",
+			"fabric": "BEETROOT_SOUP"
+		},
+		{
+			"forge": "DRAGON_BREATH",
+			"fabric": "DRAGON_BREATH"
+		},
+		{
+			"forge": "SPLASH_POTION",
+			"fabric": "SPLASH_POTION"
+		},
+		{
+			"forge": "SPECTRAL_ARROW",
+			"fabric": "SPECTRAL_ARROW"
+		},
+		{
+			"forge": "TIPPED_ARROW",
+			"fabric": "TIPPED_ARROW"
+		},
+		{
+			"forge": "LINGERING_POTION",
+			"fabric": "LINGERING_POTION"
+		},
+		{
+			"forge": "SHIELD",
+			"fabric": "SHIELD"
+		},
+		{
+			"forge": "TOTEM_OF_UNDYING",
+			"fabric": "TOTEM_OF_UNDYING"
+		},
+		{
+			"forge": "SHULKER_SHELL",
+			"fabric": "SHULKER_SHELL"
+		},
+		{
+			"forge": "IRON_NUGGET",
+			"fabric": "IRON_NUGGET"
+		},
+		{
+			"forge": "KNOWLEDGE_BOOK",
+			"fabric": "KNOWLEDGE_BOOK"
+		},
+		{
+			"forge": "DEBUG_STICK",
+			"fabric": "DEBUG_STICK"
+		},
+		{
+			"forge": "MUSIC_DISC_13",
+			"fabric": "MUSIC_DISC_13"
+		},
+		{
+			"forge": "MUSIC_DISC_CAT",
+			"fabric": "MUSIC_DISC_CAT"
+		},
+		{
+			"forge": "MUSIC_DISC_BLOCKS",
+			"fabric": "MUSIC_DISC_BLOCKS"
+		},
+		{
+			"forge": "MUSIC_DISC_CHIRP",
+			"fabric": "MUSIC_DISC_CHIRP"
+		},
+		{
+			"forge": "MUSIC_DISC_FAR",
+			"fabric": "MUSIC_DISC_FAR"
+		},
+		{
+			"forge": "MUSIC_DISC_MALL",
+			"fabric": "MUSIC_DISC_MALL"
+		},
+		{
+			"forge": "MUSIC_DISC_MELLOHI",
+			"fabric": "MUSIC_DISC_MELLOHI"
+		},
+		{
+			"forge": "MUSIC_DISC_STAL",
+			"fabric": "MUSIC_DISC_STAL"
+		},
+		{
+			"forge": "MUSIC_DISC_STRAD",
+			"fabric": "MUSIC_DISC_STRAD"
+		},
+		{
+			"forge": "MUSIC_DISC_WARD",
+			"fabric": "MUSIC_DISC_WARD"
+		},
+		{
+			"forge": "MUSIC_DISC_11",
+			"fabric": "MUSIC_DISC_11"
+		},
+		{
+			"forge": "MUSIC_DISC_WAIT",
+			"fabric": "MUSIC_DISC_WAIT"
+		},
+		{
+			"forge": "MUSIC_DISC_OTHERSIDE",
+			"fabric": "MUSIC_DISC_OTHERSIDE"
+		},
+		{
+			"forge": "MUSIC_DISC_RELIC",
+			"fabric": "MUSIC_DISC_RELIC"
+		},
+		{
+			"forge": "MUSIC_DISC_5",
+			"fabric": "MUSIC_DISC_5"
+		},
+		{
+			"forge": "MUSIC_DISC_PIGSTEP",
+			"fabric": "MUSIC_DISC_PIGSTEP"
+		},
+		{
+			"forge": "DISC_FRAGMENT_5",
+			"fabric": "DISC_FRAGMENT_5"
+		},
+		{
+			"forge": "TRIDENT",
+			"fabric": "TRIDENT"
+		},
+		{
+			"forge": "PHANTOM_MEMBRANE",
+			"fabric": "PHANTOM_MEMBRANE"
+		},
+		{
+			"forge": "NAUTILUS_SHELL",
+			"fabric": "NAUTILUS_SHELL"
+		},
+		{
+			"forge": "HEART_OF_THE_SEA",
+			"fabric": "HEART_OF_THE_SEA"
+		},
+		{
+			"forge": "CROSSBOW",
+			"fabric": "CROSSBOW"
+		},
+		{
+			"forge": "SUSPICIOUS_STEW",
+			"fabric": "SUSPICIOUS_STEW"
+		},
+		{
+			"forge": "LOOM",
+			"fabric": "LOOM"
+		},
+		{
+			"forge": "FLOWER_BANNER_PATTERN",
+			"fabric": "FLOWER_BANNER_PATTERN"
+		},
+		{
+			"forge": "CREEPER_BANNER_PATTERN",
+			"fabric": "CREEPER_BANNER_PATTERN"
+		},
+		{
+			"forge": "SKULL_BANNER_PATTERN",
+			"fabric": "SKULL_BANNER_PATTERN"
+		},
+		{
+			"forge": "MOJANG_BANNER_PATTERN",
+			"fabric": "MOJANG_BANNER_PATTERN"
+		},
+		{
+			"forge": "GLOBE_BANNER_PATTERN",
+			"fabric": "GLOBE_BANNER_PATTERN"
+		},
+		{
+			"forge": "PIGLIN_BANNER_PATTERN",
+			"fabric": "PIGLIN_BANNER_PATTERN"
+		},
+		{
+			"forge": "GOAT_HORN",
+			"fabric": "GOAT_HORN"
+		},
+		{
+			"forge": "COMPOSTER",
+			"fabric": "COMPOSTER"
+		},
+		{
+			"forge": "BARREL",
+			"fabric": "BARREL"
+		},
+		{
+			"forge": "SMOKER",
+			"fabric": "SMOKER"
+		},
+		{
+			"forge": "BLAST_FURNACE",
+			"fabric": "BLAST_FURNACE"
+		},
+		{
+			"forge": "CARTOGRAPHY_TABLE",
+			"fabric": "CARTOGRAPHY_TABLE"
+		},
+		{
+			"forge": "FLETCHING_TABLE",
+			"fabric": "FLETCHING_TABLE"
+		},
+		{
+			"forge": "GRINDSTONE",
+			"fabric": "GRINDSTONE"
+		},
+		{
+			"forge": "SMITHING_TABLE",
+			"fabric": "SMITHING_TABLE"
+		},
+		{
+			"forge": "STONECUTTER",
+			"fabric": "STONECUTTER"
+		},
+		{
+			"forge": "BELL",
+			"fabric": "BELL"
+		},
+		{
+			"forge": "LANTERN",
+			"fabric": "LANTERN"
+		},
+		{
+			"forge": "SOUL_LANTERN",
+			"fabric": "SOUL_LANTERN"
+		},
+		{
+			"forge": "SWEET_BERRIES",
+			"fabric": "SWEET_BERRIES"
+		},
+		{
+			"forge": "GLOW_BERRIES",
+			"fabric": "GLOW_BERRIES"
+		},
+		{
+			"forge": "CAMPFIRE",
+			"fabric": "CAMPFIRE"
+		},
+		{
+			"forge": "SOUL_CAMPFIRE",
+			"fabric": "SOUL_CAMPFIRE"
+		},
+		{
+			"forge": "SHROOMLIGHT",
+			"fabric": "SHROOMLIGHT"
+		},
+		{
+			"forge": "HONEYCOMB",
+			"fabric": "HONEYCOMB"
+		},
+		{
+			"forge": "BEE_NEST",
+			"fabric": "BEE_NEST"
+		},
+		{
+			"forge": "BEEHIVE",
+			"fabric": "BEEHIVE"
+		},
+		{
+			"forge": "HONEY_BOTTLE",
+			"fabric": "HONEY_BOTTLE"
+		},
+		{
+			"forge": "HONEYCOMB_BLOCK",
+			"fabric": "HONEYCOMB_BLOCK"
+		},
+		{
+			"forge": "LODESTONE",
+			"fabric": "LODESTONE"
+		},
+		{
+			"forge": "CRYING_OBSIDIAN",
+			"fabric": "CRYING_OBSIDIAN"
+		},
+		{
+			"forge": "BLACKSTONE",
+			"fabric": "BLACKSTONE"
+		},
+		{
+			"forge": "BLACKSTONE_SLAB",
+			"fabric": "BLACKSTONE_SLAB"
+		},
+		{
+			"forge": "BLACKSTONE_STAIRS",
+			"fabric": "BLACKSTONE_STAIRS"
+		},
+		{
+			"forge": "GILDED_BLACKSTONE",
+			"fabric": "GILDED_BLACKSTONE"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE",
+			"fabric": "POLISHED_BLACKSTONE"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_SLAB",
+			"fabric": "POLISHED_BLACKSTONE_SLAB"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_STAIRS",
+			"fabric": "POLISHED_BLACKSTONE_STAIRS"
+		},
+		{
+			"forge": "CHISELED_POLISHED_BLACKSTONE",
+			"fabric": "CHISELED_POLISHED_BLACKSTONE"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_BRICKS",
+			"fabric": "POLISHED_BLACKSTONE_BRICKS"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_BRICK_SLAB",
+			"fabric": "POLISHED_BLACKSTONE_BRICK_SLAB"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_BRICK_STAIRS",
+			"fabric": "POLISHED_BLACKSTONE_BRICK_STAIRS"
+		},
+		{
+			"forge": "CRACKED_POLISHED_BLACKSTONE_BRICKS",
+			"fabric": "CRACKED_POLISHED_BLACKSTONE_BRICKS"
+		},
+		{
+			"forge": "RESPAWN_ANCHOR",
+			"fabric": "RESPAWN_ANCHOR"
+		},
+		{
+			"forge": "CANDLE",
+			"fabric": "CANDLE"
+		},
+		{
+			"forge": "WHITE_CANDLE",
+			"fabric": "WHITE_CANDLE"
+		},
+		{
+			"forge": "ORANGE_CANDLE",
+			"fabric": "ORANGE_CANDLE"
+		},
+		{
+			"forge": "MAGENTA_CANDLE",
+			"fabric": "MAGENTA_CANDLE"
+		},
+		{
+			"forge": "LIGHT_BLUE_CANDLE",
+			"fabric": "LIGHT_BLUE_CANDLE"
+		},
+		{
+			"forge": "YELLOW_CANDLE",
+			"fabric": "YELLOW_CANDLE"
+		},
+		{
+			"forge": "LIME_CANDLE",
+			"fabric": "LIME_CANDLE"
+		},
+		{
+			"forge": "PINK_CANDLE",
+			"fabric": "PINK_CANDLE"
+		},
+		{
+			"forge": "GRAY_CANDLE",
+			"fabric": "GRAY_CANDLE"
+		},
+		{
+			"forge": "LIGHT_GRAY_CANDLE",
+			"fabric": "LIGHT_GRAY_CANDLE"
+		},
+		{
+			"forge": "CYAN_CANDLE",
+			"fabric": "CYAN_CANDLE"
+		},
+		{
+			"forge": "PURPLE_CANDLE",
+			"fabric": "PURPLE_CANDLE"
+		},
+		{
+			"forge": "BLUE_CANDLE",
+			"fabric": "BLUE_CANDLE"
+		},
+		{
+			"forge": "BROWN_CANDLE",
+			"fabric": "BROWN_CANDLE"
+		},
+		{
+			"forge": "GREEN_CANDLE",
+			"fabric": "GREEN_CANDLE"
+		},
+		{
+			"forge": "RED_CANDLE",
+			"fabric": "RED_CANDLE"
+		},
+		{
+			"forge": "BLACK_CANDLE",
+			"fabric": "BLACK_CANDLE"
+		},
+		{
+			"forge": "SMALL_AMETHYST_BUD",
+			"fabric": "SMALL_AMETHYST_BUD"
+		},
+		{
+			"forge": "MEDIUM_AMETHYST_BUD",
+			"fabric": "MEDIUM_AMETHYST_BUD"
+		},
+		{
+			"forge": "LARGE_AMETHYST_BUD",
+			"fabric": "LARGE_AMETHYST_BUD"
+		},
+		{
+			"forge": "AMETHYST_CLUSTER",
+			"fabric": "AMETHYST_CLUSTER"
+		},
+		{
+			"forge": "POINTED_DRIPSTONE",
+			"fabric": "POINTED_DRIPSTONE"
+		},
+		{
+			"forge": "OCHRE_FROGLIGHT",
+			"fabric": "OCHRE_FROGLIGHT"
+		},
+		{
+			"forge": "VERDANT_FROGLIGHT",
+			"fabric": "VERDANT_FROGLIGHT"
+		},
+		{
+			"forge": "PEARLESCENT_FROGLIGHT",
+			"fabric": "PEARLESCENT_FROGLIGHT"
+		},
+		{
+			"forge": "FROGSPAWN",
+			"fabric": "FROGSPAWN"
+		},
+		{
+			"forge": "ECHO_SHARD",
+			"fabric": "ECHO_SHARD"
+		},
+		{
+			"forge": "BRUSH",
+			"fabric": "BRUSH"
+		},
+		{
+			"forge": "NETHERITE_UPGRADE_SMITHING_TEMPLATE",
+			"fabric": "NETHERITE_UPGRADE_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "DUNE_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "DUNE_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "COAST_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "COAST_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "WILD_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "WILD_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "WARD_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "WARD_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "EYE_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "EYE_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "VEX_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "VEX_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "TIDE_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "TIDE_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "RIB_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "RIB_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "RAISER_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "RAISER_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "HOST_ARMOR_TRIM_SMITHING_TEMPLATE",
+			"fabric": "HOST_ARMOR_TRIM_SMITHING_TEMPLATE"
+		},
+		{
+			"forge": "ANGLER_POTTERY_SHERD",
+			"fabric": "ANGLER_POTTERY_SHERD"
+		},
+		{
+			"forge": "ARCHER_POTTERY_SHERD",
+			"fabric": "ARCHER_POTTERY_SHERD"
+		},
+		{
+			"forge": "ARMS_UP_POTTERY_SHERD",
+			"fabric": "ARMS_UP_POTTERY_SHERD"
+		},
+		{
+			"forge": "BLADE_POTTERY_SHERD",
+			"fabric": "BLADE_POTTERY_SHERD"
+		},
+		{
+			"forge": "BREWER_POTTERY_SHERD",
+			"fabric": "BREWER_POTTERY_SHERD"
+		},
+		{
+			"forge": "BURN_POTTERY_SHERD",
+			"fabric": "BURN_POTTERY_SHERD"
+		},
+		{
+			"forge": "DANGER_POTTERY_SHERD",
+			"fabric": "DANGER_POTTERY_SHERD"
+		},
+		{
+			"forge": "EXPLORER_POTTERY_SHERD",
+			"fabric": "EXPLORER_POTTERY_SHERD"
+		},
+		{
+			"forge": "FRIEND_POTTERY_SHERD",
+			"fabric": "FRIEND_POTTERY_SHERD"
+		},
+		{
+			"forge": "HEART_POTTERY_SHERD",
+			"fabric": "HEART_POTTERY_SHERD"
+		},
+		{
+			"forge": "HEARTBREAK_POTTERY_SHERD",
+			"fabric": "HEARTBREAK_POTTERY_SHERD"
+		},
+		{
+			"forge": "HOWL_POTTERY_SHERD",
+			"fabric": "HOWL_POTTERY_SHERD"
+		},
+		{
+			"forge": "MINER_POTTERY_SHERD",
+			"fabric": "MINER_POTTERY_SHERD"
+		},
+		{
+			"forge": "MOURNER_POTTERY_SHERD",
+			"fabric": "MOURNER_POTTERY_SHERD"
+		},
+		{
+			"forge": "PLENTY_POTTERY_SHERD",
+			"fabric": "PLENTY_POTTERY_SHERD"
+		},
+		{
+			"forge": "PRIZE_POTTERY_SHERD",
+			"fabric": "PRIZE_POTTERY_SHERD"
+		},
+		{
+			"forge": "SHEAF_POTTERY_SHERD",
+			"fabric": "SHEAF_POTTERY_SHERD"
+		},
+		{
+			"forge": "SHELTER_POTTERY_SHERD",
+			"fabric": "SHELTER_POTTERY_SHERD"
+		},
+		{
+			"forge": "SKULL_POTTERY_SHERD",
+			"fabric": "SKULL_POTTERY_SHERD"
+		},
+		{
+			"forge": "SNORT_POTTERY_SHERD",
+			"fabric": "SNORT_POTTERY_SHERD"
+		},
+		{
+			"forge": "registerBlock(Block arg0)",
+			"fabric": "register(Block block)"
+		},
+		{
+			"forge": "registerBlock(Block arg0)",
+			"fabric": "register(Block block)"
+		},
+		{
+			"forge": "registerBlock(Block arg0, Block... arg1)",
+			"fabric": "register(Block block, Block... blocks)"
+		},
+		{
+			"forge": "registerBlock(BlockItem arg0)",
+			"fabric": "register(BlockItem item)"
+		},
+		{
+			"forge": "registerBlock(Block arg0, Item arg1)",
+			"fabric": "register(Block block, Item item)"
+		},
+		{
+			"forge": "registerItem(String arg0, Item arg1)",
+			"fabric": "register(String id, Item item)"
+		},
+		{
+			"forge": "registerItem(ResourceLocation arg0, Item arg1)",
+			"fabric": "register(Identifier id, Item item)"
+		},
+		{
+			"forge": "registerItem(ResourceKey<Item> arg0, Item arg1)",
+			"fabric": "register(RegistryKey<Item> key, Item item)"
+		}
+	]
+}

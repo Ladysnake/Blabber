@@ -1,0 +1,173 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix",
+			"fabric": "net.minecraft.datafixer.fix.ChunkPalettedStorageFix"
+		},
+		{
+			"forge": "NORTH_WEST_MASK",
+			"fabric": "field_29871"
+		},
+		{
+			"forge": "NORTH_WEST_MASK",
+			"fabric": "field_29871"
+		},
+		{
+			"forge": "WEST_MASK",
+			"fabric": "field_29872"
+		},
+		{
+			"forge": "SOUTH_WEST_MASK",
+			"fabric": "field_29873"
+		},
+		{
+			"forge": "SOUTH_MASK",
+			"fabric": "field_29874"
+		},
+		{
+			"forge": "SOUTH_EAST_MASK",
+			"fabric": "field_29875"
+		},
+		{
+			"forge": "EAST_MASK",
+			"fabric": "field_29876"
+		},
+		{
+			"forge": "NORTH_EAST_MASK",
+			"fabric": "field_29877"
+		},
+		{
+			"forge": "NORTH_MASK",
+			"fabric": "field_29878"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "VIRTUAL",
+			"fabric": "BLOCKS_NEEDING_SIDE_UPDATE"
+		},
+		{
+			"forge": "FIX",
+			"fabric": "BLOCKS_NEEDING_IN_PLACE_UPDATE"
+		},
+		{
+			"forge": "PUMPKIN",
+			"fabric": "PUMPKIN"
+		},
+		{
+			"forge": "SNOWY_PODZOL",
+			"fabric": "PODZOL"
+		},
+		{
+			"forge": "SNOWY_GRASS",
+			"fabric": "SNOWY_GRASS"
+		},
+		{
+			"forge": "SNOWY_MYCELIUM",
+			"fabric": "SNOWY_MYCELIUM"
+		},
+		{
+			"forge": "UPPER_SUNFLOWER",
+			"fabric": "SUNFLOWER_UPPER"
+		},
+		{
+			"forge": "UPPER_LILAC",
+			"fabric": "LILAC_UPPER"
+		},
+		{
+			"forge": "UPPER_TALL_GRASS",
+			"fabric": "GRASS_UPPER"
+		},
+		{
+			"forge": "UPPER_LARGE_FERN",
+			"fabric": "FERN_UPPER"
+		},
+		{
+			"forge": "UPPER_ROSE_BUSH",
+			"fabric": "ROSE_UPPER"
+		},
+		{
+			"forge": "UPPER_PEONY",
+			"fabric": "PEONY_UPPER"
+		},
+		{
+			"forge": "FLOWER_POT_MAP",
+			"fabric": "FLOWER_POT"
+		},
+		{
+			"forge": "SKULL_MAP",
+			"fabric": "SKULL"
+		},
+		{
+			"forge": "DOOR_MAP",
+			"fabric": "DOOR"
+		},
+		{
+			"forge": "NOTE_BLOCK_MAP",
+			"fabric": "NOTE_BLOCK"
+		},
+		{
+			"forge": "DYE_COLOR_MAP",
+			"fabric": "COLORS"
+		},
+		{
+			"forge": "BED_BLOCK_MAP",
+			"fabric": "BED"
+		},
+		{
+			"forge": "BANNER_BLOCK_MAP",
+			"fabric": "BANNER"
+		},
+		{
+			"forge": "AIR",
+			"fabric": "AIR"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "field_29870"
+		},
+		{
+			"forge": "mapSkull(Map<String, com.mojang.serialization.Dynamic<?>> arg0, int arg1, String arg2, String arg3)",
+			"fabric": "buildSkull(Map<String, com.mojang.serialization.Dynamic<?>> out, int variant, String mob, String block)"
+		},
+		{
+			"forge": "mapSkull(Map<String, com.mojang.serialization.Dynamic<?>> arg0, int arg1, String arg2, String arg3)",
+			"fabric": "buildSkull(Map<String, com.mojang.serialization.Dynamic<?>> out, int variant, String mob, String block)"
+		},
+		{
+			"forge": "mapDoor(Map<String, com.mojang.serialization.Dynamic<?>> arg0, String arg1, int arg2)",
+			"fabric": "buildDoor(Map<String, com.mojang.serialization.Dynamic<?>> out, String name, int firstStateId)"
+		},
+		{
+			"forge": "addBeds(Map<String, com.mojang.serialization.Dynamic<?>> arg0, int arg1, String arg2)",
+			"fabric": "buildBed(Map<String, com.mojang.serialization.Dynamic<?>> out, int colorId, String color)"
+		},
+		{
+			"forge": "addBanners(Map<String, com.mojang.serialization.Dynamic<?>> arg0, int arg1, String arg2)",
+			"fabric": "buildBanner(Map<String, com.mojang.serialization.Dynamic<?>> out, int colorId, String color)"
+		},
+		{
+			"forge": "getName(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "getName(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "getProperty(com.mojang.serialization.Dynamic<?> arg0, String arg1)",
+			"fabric": "getProperty(com.mojang.serialization.Dynamic<?> arg0, String arg1)"
+		},
+		{
+			"forge": "idFor(CrudeIncrementalIntIdentityHashBiMap<com.mojang.serialization.Dynamic<?>> arg0, com.mojang.serialization.Dynamic<?> arg1)",
+			"fabric": "addTo(Int2ObjectBiMap<com.mojang.serialization.Dynamic<?>> arg0, com.mojang.serialization.Dynamic<?> arg1)"
+		},
+		{
+			"forge": "fix(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixChunk(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "getSideMask(boolean arg0, boolean arg1, boolean arg2, boolean arg3)",
+			"fabric": "getSideToUpgradeFlag(boolean west, boolean east, boolean north, boolean south)"
+		}
+	]
+}

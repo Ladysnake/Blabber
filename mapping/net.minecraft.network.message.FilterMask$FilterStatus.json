@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.chat.FilterMask$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.FilterMask$Type",
+			"fabric": "net.minecraft.network.message.FilterMask$FilterStatus"
+		},
+		{
+			"forge": "PASS_THROUGH",
+			"fabric": "PASS_THROUGH"
+		},
+		{
+			"forge": "PASS_THROUGH",
+			"fabric": "PASS_THROUGH"
+		},
+		{
+			"forge": "FULLY_FILTERED",
+			"fabric": "FULLY_FILTERED"
+		},
+		{
+			"forge": "PARTIALLY_FILTERED",
+			"fabric": "PARTIALLY_FILTERED"
+		},
+		{
+			"forge": "serializedName",
+			"fabric": "id"
+		},
+		{
+			"forge": "serializedName",
+			"fabric": "id"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codecSupplier"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		}
+	]
+}

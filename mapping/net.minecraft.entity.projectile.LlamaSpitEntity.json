@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.projectile.LlamaSpit",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.LlamaSpit",
+			"fabric": "net.minecraft.entity.projectile.LlamaSpitEntity"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "onHitEntity(EntityHitResult arg0)",
+			"fabric": "onEntityHit(EntityHitResult arg0)"
+		},
+		{
+			"forge": "onHitBlock(BlockHitResult arg0)",
+			"fabric": "onBlockHit(BlockHitResult arg0)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "recreateFromPacket(ClientboundAddEntityPacket arg0)",
+			"fabric": "onSpawnPacket(EntitySpawnS2CPacket arg0)"
+		}
+	]
+}

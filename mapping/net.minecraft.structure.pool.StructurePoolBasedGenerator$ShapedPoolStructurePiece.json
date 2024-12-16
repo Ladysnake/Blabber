@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement$PieceState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement$PieceState",
+			"fabric": "net.minecraft.structure.pool.StructurePoolBasedGenerator$ShapedPoolStructurePiece"
+		},
+		{
+			"forge": "piece",
+			"fabric": "piece"
+		},
+		{
+			"forge": "piece",
+			"fabric": "piece"
+		},
+		{
+			"forge": "free",
+			"fabric": "pieceShape"
+		},
+		{
+			"forge": "depth",
+			"fabric": "currentSize"
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.IOWorker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.IOWorker",
+			"fabric": "net.minecraft.world.storage.StorageIoWorker"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "shutdownRequested",
+			"fabric": "closed"
+		},
+		{
+			"forge": "mailbox",
+			"fabric": "executor"
+		},
+		{
+			"forge": "storage",
+			"fabric": "storage"
+		},
+		{
+			"forge": "pendingWrites",
+			"fabric": "results"
+		},
+		{
+			"forge": "regionCacheForBlender",
+			"fabric": "blendingStatusCaches"
+		},
+		{
+			"forge": "REGION_CACHE_SIZE",
+			"fabric": "MAX_CACHE_SIZE"
+		},
+		{
+			"forge": "isOldChunkAround(ChunkPos arg0, int arg1)",
+			"fabric": "needsBlending(ChunkPos chunkPos, int checkRadius)"
+		},
+		{
+			"forge": "isOldChunkAround(ChunkPos arg0, int arg1)",
+			"fabric": "needsBlending(ChunkPos chunkPos, int checkRadius)"
+		},
+		{
+			"forge": "getOrCreateOldDataForRegion(int arg0, int arg1)",
+			"fabric": "getOrComputeBlendingStatus(int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "createOldDataForRegion(int arg0, int arg1)",
+			"fabric": "computeBlendingStatus(int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "isOldChunk(CompoundTag arg0)",
+			"fabric": "needsBlending(NbtCompound nbt)"
+		},
+		{
+			"forge": "store(ChunkPos arg0, CompoundTag arg1)",
+			"fabric": "setResult(ChunkPos pos, NbtCompound nbt)"
+		},
+		{
+			"forge": "loadAsync(ChunkPos arg0)",
+			"fabric": "readChunkData(ChunkPos pos)"
+		},
+		{
+			"forge": "synchronize(boolean arg0)",
+			"fabric": "completeAll(boolean sync)"
+		},
+		{
+			"forge": "scanChunk(ChunkPos arg0, StreamTagVisitor arg1)",
+			"fabric": "scanChunk(ChunkPos arg0, NbtScanner arg1)"
+		},
+		{
+			"forge": "submitTask(Supplier<com.mojang.datafixers.util.Either<T, Exception>> arg0)",
+			"fabric": "run(Supplier<com.mojang.datafixers.util.Either<T, Exception>> task)"
+		},
+		{
+			"forge": "storePendingChunk()",
+			"fabric": "writeResult()"
+		},
+		{
+			"forge": "tellStorePending()",
+			"fabric": "writeRemainingResults()"
+		},
+		{
+			"forge": "runStore(ChunkPos arg0, IOWorker$PendingStore arg1)",
+			"fabric": "write(ChunkPos pos, StorageIoWorker$Result result)"
+		}
+	]
+}

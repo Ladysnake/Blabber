@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.realmsclient.dto.WorldTemplate$WorldTemplateType",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.WorldTemplate$WorldTemplateType",
+			"fabric": "net.minecraft.client.realms.dto.WorldTemplate$WorldTemplateType"
+		},
+		{
+			"forge": "WORLD_TEMPLATE",
+			"fabric": "WORLD_TEMPLATE"
+		},
+		{
+			"forge": "WORLD_TEMPLATE",
+			"fabric": "WORLD_TEMPLATE"
+		},
+		{
+			"forge": "MINIGAME",
+			"fabric": "MINIGAME"
+		},
+		{
+			"forge": "ADVENTUREMAP",
+			"fabric": "ADVENTUREMAP"
+		},
+		{
+			"forge": "EXPERIENCE",
+			"fabric": "EXPERIENCE"
+		},
+		{
+			"forge": "INSPIRATION",
+			"fabric": "INSPIRATION"
+		}
+	]
+}

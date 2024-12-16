@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.nbt.NbtOps$HeterogenousListCollector",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.NbtOps$HeterogenousListCollector",
+			"fabric": "net.minecraft.nbt.NbtOps$CompoundListMerger"
+		},
+		{
+			"forge": "result",
+			"fabric": "list"
+		},
+		{
+			"forge": "result",
+			"fabric": "list"
+		},
+		{
+			"forge": "isWrapper(CompoundTag arg0)",
+			"fabric": "isMarker(NbtCompound nbt)"
+		},
+		{
+			"forge": "isWrapper(CompoundTag arg0)",
+			"fabric": "isMarker(NbtCompound nbt)"
+		},
+		{
+			"forge": "wrapIfNeeded(Tag arg0)",
+			"fabric": "makeMarker(NbtElement value)"
+		},
+		{
+			"forge": "wrapElement(Tag arg0)",
+			"fabric": "createMarkerNbt(NbtElement value)"
+		},
+		{
+			"forge": "accept(Tag arg0)",
+			"fabric": "merge(NbtElement arg0)"
+		},
+		{
+			"forge": "result()",
+			"fabric": "getResult()"
+		}
+	]
+}

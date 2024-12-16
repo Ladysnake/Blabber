@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.animal.Bee$BeeGrowCropGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Bee$BeeGrowCropGoal",
+			"fabric": "net.minecraft.entity.passive.BeeEntity$GrowCropsGoal"
+		},
+		{
+			"forge": "GROW_CHANCE",
+			"fabric": "field_30299"
+		},
+		{
+			"forge": "GROW_CHANCE",
+			"fabric": "field_30299"
+		},
+		{
+			"forge": "canBeeUse()",
+			"fabric": "canBeeStart()"
+		},
+		{
+			"forge": "canBeeUse()",
+			"fabric": "canBeeStart()"
+		},
+		{
+			"forge": "canBeeContinueToUse()",
+			"fabric": "canBeeContinue()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

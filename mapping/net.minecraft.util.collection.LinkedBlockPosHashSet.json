@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.lighting.SpatialLongSet",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.SpatialLongSet",
+			"fabric": "net.minecraft.util.collection.LinkedBlockPosHashSet"
+		},
+		{
+			"forge": "map",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "map",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "add(long arg0)",
+			"fabric": "add(long posLong)"
+		},
+		{
+			"forge": "add(long arg0)",
+			"fabric": "add(long posLong)"
+		},
+		{
+			"forge": "rem(long arg0)",
+			"fabric": "rem(long posLong)"
+		},
+		{
+			"forge": "removeFirstLong()",
+			"fabric": "removeFirstLong()"
+		},
+		{
+			"forge": "size()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		}
+	]
+}

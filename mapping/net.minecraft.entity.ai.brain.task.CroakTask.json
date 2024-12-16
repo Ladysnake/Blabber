@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.Croak",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.Croak",
+			"fabric": "net.minecraft.entity.ai.brain.task.CroakTask"
+		},
+		{
+			"forge": "CROAK_TICKS",
+			"fabric": "MAX_RUN_TICK"
+		},
+		{
+			"forge": "CROAK_TICKS",
+			"fabric": "MAX_RUN_TICK"
+		},
+		{
+			"forge": "TIME_OUT_DURATION",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "croakCounter",
+			"fabric": "runningTicks"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Frog arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, FrogEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Frog arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, FrogEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Frog arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, FrogEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Frog arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, FrogEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Frog arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, FrogEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Frog arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, FrogEntity arg1, long arg2)"
+		}
+	]
+}

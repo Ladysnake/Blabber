@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.monster.Vindicator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Vindicator",
+			"fabric": "net.minecraft.entity.mob.VindicatorEntity"
+		},
+		{
+			"forge": "TAG_JOHNNY",
+			"fabric": "JOHNNY_KEY"
+		},
+		{
+			"forge": "TAG_JOHNNY",
+			"fabric": "JOHNNY_KEY"
+		},
+		{
+			"forge": "DOOR_BREAKING_PREDICATE",
+			"fabric": "DIFFICULTY_ALLOWS_DOOR_BREAKING_PREDICATE"
+		},
+		{
+			"forge": "isJohnny",
+			"fabric": "johnny"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createVindicatorAttributes()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getArmPose()",
+			"fabric": "getState()"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getCelebrateSound()",
+			"fabric": "getCelebratingSound()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "populateDefaultEquipmentSlots(RandomSource arg0, DifficultyInstance arg1)",
+			"fabric": "initEquipment(Random arg0, LocalDifficulty arg1)"
+		},
+		{
+			"forge": "isAlliedTo(Entity arg0)",
+			"fabric": "isTeammate(Entity arg0)"
+		},
+		{
+			"forge": "setCustomName(Component arg0)",
+			"fabric": "setCustomName(Text arg0)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "applyRaidBuffs(int arg0, boolean arg1)",
+			"fabric": "addBonusForWave(int arg0, boolean arg1)"
+		}
+	]
+}

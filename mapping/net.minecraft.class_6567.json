@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Density",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Density",
+			"fabric": "net.minecraft.class_6567"
+		},
+		{
+			"forge": "SURFACE",
+			"fabric": "field_34584"
+		},
+		{
+			"forge": "SURFACE",
+			"fabric": "field_34584"
+		},
+		{
+			"forge": "UNRECOVERABLY_DENSE",
+			"fabric": "field_34585"
+		},
+		{
+			"forge": "UNRECOVERABLY_THIN",
+			"fabric": "field_34586"
+		}
+	]
+}

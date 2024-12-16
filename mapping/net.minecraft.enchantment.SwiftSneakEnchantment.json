@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.item.enchantment.SwiftSneakEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.SwiftSneakEnchantment",
+			"fabric": "net.minecraft.enchantment.SwiftSneakEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "isTreasureOnly()",
+			"fabric": "isTreasure()"
+		},
+		{
+			"forge": "isTradeable()",
+			"fabric": "isAvailableForEnchantedBookOffer()"
+		},
+		{
+			"forge": "isDiscoverable()",
+			"fabric": "isAvailableForRandomSelection()"
+		},
+		{
+			"forge": "getMaxLevel()",
+			"fabric": "getMaxLevel()"
+		}
+	]
+}

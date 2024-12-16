@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.client.gui.spectator.SpectatorMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.spectator.SpectatorMenu",
+			"fabric": "net.minecraft.client.gui.hud.spectator.SpectatorMenu"
+		},
+		{
+			"forge": "CLOSE_ITEM",
+			"fabric": "CLOSE_COMMAND"
+		},
+		{
+			"forge": "CLOSE_ITEM",
+			"fabric": "CLOSE_COMMAND"
+		},
+		{
+			"forge": "SCROLL_LEFT",
+			"fabric": "PREVIOUS_PAGE_COMMAND"
+		},
+		{
+			"forge": "SCROLL_RIGHT_ENABLED",
+			"fabric": "NEXT_PAGE_COMMAND"
+		},
+		{
+			"forge": "SCROLL_RIGHT_DISABLED",
+			"fabric": "DISABLED_NEXT_PAGE_COMMAND"
+		},
+		{
+			"forge": "MAX_PER_PAGE",
+			"fabric": "CLOSE_SLOT"
+		},
+		{
+			"forge": "CLOSE_MENU_TEXT",
+			"fabric": "CLOSE_TEXT"
+		},
+		{
+			"forge": "PREVIOUS_PAGE_TEXT",
+			"fabric": "PREVIOUS_PAGE_TEXT"
+		},
+		{
+			"forge": "NEXT_PAGE_TEXT",
+			"fabric": "NEXT_PAGE_TEXT"
+		},
+		{
+			"forge": "EMPTY_SLOT",
+			"fabric": "BLANK_COMMAND"
+		},
+		{
+			"forge": "listener",
+			"fabric": "closeCallback"
+		},
+		{
+			"forge": "category",
+			"fabric": "currentGroup"
+		},
+		{
+			"forge": "selectedSlot",
+			"fabric": "selectedSlot"
+		},
+		{
+			"forge": "page",
+			"fabric": "page"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getCommand(int slot)"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getCommand(int slot)"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getCommands()"
+		},
+		{
+			"forge": "getSelectedItem()",
+			"fabric": "getSelectedCommand()"
+		},
+		{
+			"forge": "getSelectedCategory()",
+			"fabric": "getCurrentGroup()"
+		},
+		{
+			"forge": "selectSlot(int arg0)",
+			"fabric": "useCommand(int slot)"
+		},
+		{
+			"forge": "exit()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "getSelectedSlot()",
+			"fabric": "getSelectedSlot()"
+		},
+		{
+			"forge": "selectCategory(SpectatorMenuCategory arg0)",
+			"fabric": "selectElement(SpectatorMenuCommandGroup group)"
+		},
+		{
+			"forge": "getCurrentPage()",
+			"fabric": "getCurrentState()"
+		}
+	]
+}

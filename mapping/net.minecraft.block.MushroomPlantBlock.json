@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.block.MushroomBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.MushroomBlock",
+			"fabric": "net.minecraft.block.MushroomPlantBlock"
+		},
+		{
+			"forge": "AABB_OFFSET",
+			"fabric": "field_31195"
+		},
+		{
+			"forge": "AABB_OFFSET",
+			"fabric": "field_31195"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "feature",
+			"fabric": "featureKey"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "mayPlaceOn(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "canPlantOnTop(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "growMushroom(ServerLevel arg0, BlockPos arg1, BlockState arg2, RandomSource arg3)",
+			"fabric": "trySpawningBigMushroom(ServerWorld world, BlockPos pos, BlockState state, Random random)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		}
+	]
+}

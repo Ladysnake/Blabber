@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.BlockEntityRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.BlockEntityRenderer",
+			"fabric": "net.minecraft.client.render.block.entity.BlockEntityRenderer"
+		},
+		{
+			"forge": "render(T arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(T entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay)"
+		},
+		{
+			"forge": "render(T arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(T entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay)"
+		},
+		{
+			"forge": "shouldRenderOffScreen(T arg0)",
+			"fabric": "rendersOutsideBoundingBox(T blockEntity)"
+		},
+		{
+			"forge": "getViewDistance()",
+			"fabric": "getRenderDistance()"
+		},
+		{
+			"forge": "shouldRender(T arg0, Vec3 arg1)",
+			"fabric": "isInRenderDistance(T blockEntity, Vec3d pos)"
+		}
+	]
+}

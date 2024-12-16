@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.item.DyeableLeatherItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.DyeableLeatherItem",
+			"fabric": "net.minecraft.item.DyeableItem"
+		},
+		{
+			"forge": "TAG_COLOR",
+			"fabric": "COLOR_KEY"
+		},
+		{
+			"forge": "TAG_COLOR",
+			"fabric": "COLOR_KEY"
+		},
+		{
+			"forge": "TAG_DISPLAY",
+			"fabric": "DISPLAY_KEY"
+		},
+		{
+			"forge": "DEFAULT_LEATHER_COLOR",
+			"fabric": "DEFAULT_COLOR"
+		},
+		{
+			"forge": "hasCustomColor(ItemStack arg0)",
+			"fabric": "hasColor(ItemStack stack)"
+		},
+		{
+			"forge": "hasCustomColor(ItemStack arg0)",
+			"fabric": "hasColor(ItemStack stack)"
+		},
+		{
+			"forge": "getColor(ItemStack arg0)",
+			"fabric": "getColor(ItemStack stack)"
+		},
+		{
+			"forge": "clearColor(ItemStack arg0)",
+			"fabric": "removeColor(ItemStack stack)"
+		},
+		{
+			"forge": "setColor(ItemStack arg0, int arg1)",
+			"fabric": "setColor(ItemStack stack, int color)"
+		},
+		{
+			"forge": "dyeArmor(ItemStack arg0, List<DyeItem> arg1)",
+			"fabric": "blendAndSetColor(ItemStack stack, List<DyeItem> colors)"
+		}
+	]
+}

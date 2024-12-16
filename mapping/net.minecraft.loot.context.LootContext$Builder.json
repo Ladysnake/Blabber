@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootContext$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootContext$Builder",
+			"fabric": "net.minecraft.loot.context.LootContext$Builder"
+		},
+		{
+			"forge": "params",
+			"fabric": "parameters"
+		},
+		{
+			"forge": "params",
+			"fabric": "parameters"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "withOptionalRandomSeed(long arg0)",
+			"fabric": "random(long seed)"
+		},
+		{
+			"forge": "withOptionalRandomSeed(long arg0)",
+			"fabric": "random(long seed)"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "create(ResourceLocation arg0)",
+			"fabric": "build(Identifier randomSequenceId)"
+		}
+	]
+}

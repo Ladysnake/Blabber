@@ -1,0 +1,153 @@
+{
+	"title": "net.minecraft.data.models.model.TexturedModel",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.model.TexturedModel",
+			"fabric": "net.minecraft.data.client.TexturedModel"
+		},
+		{
+			"forge": "CUBE",
+			"fabric": "CUBE_ALL"
+		},
+		{
+			"forge": "CUBE",
+			"fabric": "CUBE_ALL"
+		},
+		{
+			"forge": "CUBE_MIRRORED",
+			"fabric": "CUBE_MIRRORED_ALL"
+		},
+		{
+			"forge": "COLUMN",
+			"fabric": "CUBE_COLUMN"
+		},
+		{
+			"forge": "COLUMN_HORIZONTAL",
+			"fabric": "CUBE_COLUMN_HORIZONTAL"
+		},
+		{
+			"forge": "CUBE_TOP_BOTTOM",
+			"fabric": "CUBE_BOTTOM_TOP"
+		},
+		{
+			"forge": "CUBE_TOP",
+			"fabric": "CUBE_TOP"
+		},
+		{
+			"forge": "ORIENTABLE_ONLY_TOP",
+			"fabric": "ORIENTABLE"
+		},
+		{
+			"forge": "ORIENTABLE",
+			"fabric": "ORIENTABLE_WITH_BOTTOM"
+		},
+		{
+			"forge": "CARPET",
+			"fabric": "CARPET"
+		},
+		{
+			"forge": "FLOWERBED_1",
+			"fabric": "FLOWERBED_1"
+		},
+		{
+			"forge": "FLOWERBED_2",
+			"fabric": "FLOWERBED_2"
+		},
+		{
+			"forge": "FLOWERBED_3",
+			"fabric": "FLOWERBED_3"
+		},
+		{
+			"forge": "FLOWERBED_4",
+			"fabric": "FLOWERBED_4"
+		},
+		{
+			"forge": "GLAZED_TERRACOTTA",
+			"fabric": "TEMPLATE_GLAZED_TERRACOTTA"
+		},
+		{
+			"forge": "CORAL_FAN",
+			"fabric": "CORAL_FAN"
+		},
+		{
+			"forge": "PARTICLE_ONLY",
+			"fabric": "PARTICLE"
+		},
+		{
+			"forge": "ANVIL",
+			"fabric": "TEMPLATE_ANVIL"
+		},
+		{
+			"forge": "LEAVES",
+			"fabric": "LEAVES"
+		},
+		{
+			"forge": "LANTERN",
+			"fabric": "TEMPLATE_LANTERN"
+		},
+		{
+			"forge": "HANGING_LANTERN",
+			"fabric": "TEMPLATE_HANGING_LANTERN"
+		},
+		{
+			"forge": "SEAGRASS",
+			"fabric": "TEMPLATE_SEAGRASS"
+		},
+		{
+			"forge": "COLUMN_ALT",
+			"fabric": "END_FOR_TOP_CUBE_COLUMN"
+		},
+		{
+			"forge": "COLUMN_HORIZONTAL_ALT",
+			"fabric": "END_FOR_TOP_CUBE_COLUMN_HORIZONTAL"
+		},
+		{
+			"forge": "TOP_BOTTOM_WITH_WALL",
+			"fabric": "SIDE_TOP_BOTTOM_WALL"
+		},
+		{
+			"forge": "COLUMN_WITH_WALL",
+			"fabric": "SIDE_END_WALL"
+		},
+		{
+			"forge": "mapping",
+			"fabric": "textures"
+		},
+		{
+			"forge": "template",
+			"fabric": "model"
+		},
+		{
+			"forge": "getTemplate()",
+			"fabric": "getModel()"
+		},
+		{
+			"forge": "getTemplate()",
+			"fabric": "getModel()"
+		},
+		{
+			"forge": "getMapping()",
+			"fabric": "getTextures()"
+		},
+		{
+			"forge": "updateTextures(Consumer<TextureMapping> arg0)",
+			"fabric": "textures(Consumer<TextureMap> texturesConsumer)"
+		},
+		{
+			"forge": "create(Block arg0, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg1)",
+			"fabric": "upload(Block block, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> writer)"
+		},
+		{
+			"forge": "createWithSuffix(Block arg0, String arg1, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg2)",
+			"fabric": "upload(Block block, String suffix, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> writer)"
+		},
+		{
+			"forge": "createDefault(Function<Block, TextureMapping> arg0, ModelTemplate arg1)",
+			"fabric": "makeFactory(Function<Block, TextureMap> texturesGetter, Model model)"
+		},
+		{
+			"forge": "createAllSame(ResourceLocation arg0)",
+			"fabric": "getCubeAll(Identifier id)"
+		}
+	]
+}

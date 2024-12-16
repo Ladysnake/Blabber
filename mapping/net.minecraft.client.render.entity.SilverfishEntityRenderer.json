@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.SilverfishRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.SilverfishRenderer",
+			"fabric": "net.minecraft.client.render.entity.SilverfishEntityRenderer"
+		},
+		{
+			"forge": "SILVERFISH_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SILVERFISH_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getFlipDegrees(Silverfish arg0)",
+			"fabric": "getLyingAngle(SilverfishEntity arg0)"
+		},
+		{
+			"forge": "getFlipDegrees(Silverfish arg0)",
+			"fabric": "getLyingAngle(SilverfishEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Silverfish arg0)",
+			"fabric": "getTexture(SilverfishEntity arg0)"
+		}
+	]
+}

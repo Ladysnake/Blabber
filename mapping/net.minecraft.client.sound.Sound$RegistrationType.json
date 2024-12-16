@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.resources.sounds.Sound$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.Sound$Type",
+			"fabric": "net.minecraft.client.sound.Sound$RegistrationType"
+		},
+		{
+			"forge": "FILE",
+			"fabric": "FILE"
+		},
+		{
+			"forge": "FILE",
+			"fabric": "FILE"
+		},
+		{
+			"forge": "SOUND_EVENT",
+			"fabric": "SOUND_EVENT"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getByName(String arg0)",
+			"fabric": "getByName(String name)"
+		},
+		{
+			"forge": "getByName(String arg0)",
+			"fabric": "getByName(String name)"
+		}
+	]
+}

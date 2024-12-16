@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.particle.NoRenderParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.NoRenderParticle",
+			"fabric": "net.minecraft.client.particle.NoRenderParticle"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		}
+	]
+}

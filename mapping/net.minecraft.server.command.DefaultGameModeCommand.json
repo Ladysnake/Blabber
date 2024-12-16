@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.commands.DefaultGameModeCommands",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.DefaultGameModeCommands",
+			"fabric": "net.minecraft.server.command.DefaultGameModeCommand"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "setMode(CommandSourceStack arg0, GameType arg1)",
+			"fabric": "execute(ServerCommandSource source, GameMode defaultGameMode)"
+		}
+	]
+}

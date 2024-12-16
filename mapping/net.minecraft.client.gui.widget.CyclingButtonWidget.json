@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.client.gui.components.CycleButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.CycleButton",
+			"fabric": "net.minecraft.client.gui.widget.CyclingButtonWidget"
+		},
+		{
+			"forge": "DEFAULT_ALT_LIST_SELECTOR",
+			"fabric": "HAS_ALT_DOWN"
+		},
+		{
+			"forge": "DEFAULT_ALT_LIST_SELECTOR",
+			"fabric": "HAS_ALT_DOWN"
+		},
+		{
+			"forge": "BOOLEAN_OPTIONS",
+			"fabric": "BOOLEAN_VALUES"
+		},
+		{
+			"forge": "name",
+			"fabric": "optionText"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "valueStringifier",
+			"fabric": "valueToText"
+		},
+		{
+			"forge": "narrationProvider",
+			"fabric": "narrationMessageFactory"
+		},
+		{
+			"forge": "onValueChange",
+			"fabric": "callback"
+		},
+		{
+			"forge": "displayOnlyValue",
+			"fabric": "optionTextOmitted"
+		},
+		{
+			"forge": "tooltipSupplier",
+			"fabric": "tooltipFactory"
+		},
+		{
+			"forge": "updateTooltip()",
+			"fabric": "refreshTooltip()"
+		},
+		{
+			"forge": "updateTooltip()",
+			"fabric": "refreshTooltip()"
+		},
+		{
+			"forge": "onPress()",
+			"fabric": "onPress()"
+		},
+		{
+			"forge": "cycleValue(int arg0)",
+			"fabric": "cycle(int amount)"
+		},
+		{
+			"forge": "getCycledValue(int arg0)",
+			"fabric": "getValue(int offset)"
+		},
+		{
+			"forge": "mouseScrolled(double arg0, double arg1, double arg2)",
+			"fabric": "mouseScrolled(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "setValue(T arg0)",
+			"fabric": "setValue(T value)"
+		},
+		{
+			"forge": "updateValue(T arg0)",
+			"fabric": "internalSetValue(T value)"
+		},
+		{
+			"forge": "createLabelForValue(T arg0)",
+			"fabric": "composeText(T value)"
+		},
+		{
+			"forge": "createFullName(T arg0)",
+			"fabric": "composeGenericOptionText(T value)"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "createNarrationMessage()",
+			"fabric": "getNarrationMessage()"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "createDefaultNarrationMessage()",
+			"fabric": "getGenericNarrationMessage()"
+		},
+		{
+			"forge": "builder(Function<T, Component> arg0)",
+			"fabric": "builder(Function<T, Text> valueToText)"
+		},
+		{
+			"forge": "booleanBuilder(Component arg0, Component arg1)",
+			"fabric": "onOffBuilder(Text on, Text off)"
+		},
+		{
+			"forge": "onOffBuilder()",
+			"fabric": "onOffBuilder()"
+		},
+		{
+			"forge": "onOffBuilder(boolean arg0)",
+			"fabric": "onOffBuilder(boolean initialValue)"
+		}
+	]
+}

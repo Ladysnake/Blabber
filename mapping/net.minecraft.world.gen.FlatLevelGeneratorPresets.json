@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets",
+			"fabric": "net.minecraft.world.gen.FlatLevelGeneratorPresets"
+		},
+		{
+			"forge": "CLASSIC_FLAT",
+			"fabric": "CLASSIC_FLAT"
+		},
+		{
+			"forge": "CLASSIC_FLAT",
+			"fabric": "CLASSIC_FLAT"
+		},
+		{
+			"forge": "TUNNELERS_DREAM",
+			"fabric": "TUNNELERS_DREAM"
+		},
+		{
+			"forge": "WATER_WORLD",
+			"fabric": "WATER_WORLD"
+		},
+		{
+			"forge": "OVERWORLD",
+			"fabric": "OVERWORLD"
+		},
+		{
+			"forge": "SNOWY_KINGDOM",
+			"fabric": "SNOWY_KINGDOM"
+		},
+		{
+			"forge": "BOTTOMLESS_PIT",
+			"fabric": "BOTTOMLESS_PIT"
+		},
+		{
+			"forge": "DESERT",
+			"fabric": "DESERT"
+		},
+		{
+			"forge": "REDSTONE_READY",
+			"fabric": "REDSTONE_READY"
+		},
+		{
+			"forge": "THE_VOID",
+			"fabric": "THE_VOID"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<FlatLevelGeneratorPreset> arg0)",
+			"fabric": "bootstrap(Registerable<FlatLevelGeneratorPreset> presetRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<FlatLevelGeneratorPreset> arg0)",
+			"fabric": "bootstrap(Registerable<FlatLevelGeneratorPreset> presetRegisterable)"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

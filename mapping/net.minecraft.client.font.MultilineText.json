@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.gui.components.MultiLineLabel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.MultiLineLabel",
+			"fabric": "net.minecraft.client.font.MultilineText"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "create(Font arg0, FormattedText arg1, int arg2)",
+			"fabric": "create(TextRenderer renderer, StringVisitable text, int width)"
+		},
+		{
+			"forge": "create(Font arg0, FormattedText arg1, int arg2)",
+			"fabric": "create(TextRenderer renderer, StringVisitable text, int width)"
+		},
+		{
+			"forge": "create(Font arg0, FormattedText arg1, int arg2, int arg3)",
+			"fabric": "create(TextRenderer renderer, StringVisitable text, int width, int maxLines)"
+		},
+		{
+			"forge": "create(Font arg0, Component... arg1)",
+			"fabric": "create(TextRenderer renderer, Text... texts)"
+		},
+		{
+			"forge": "create(Font arg0, List<Component> arg1)",
+			"fabric": "createFromTexts(TextRenderer renderer, List<Text> texts)"
+		},
+		{
+			"forge": "createFixed(Font arg0, List<MultiLineLabel$TextWithWidth> arg1)",
+			"fabric": "create(TextRenderer textRenderer, List<MultilineText$Line> lines)"
+		},
+		{
+			"forge": "renderCentered(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawCenterWithShadow(DrawContext context, int x, int y)"
+		},
+		{
+			"forge": "renderCentered(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawCenterWithShadow(DrawContext context, int x, int y, int lineHeight, int color)"
+		},
+		{
+			"forge": "renderLeftAligned(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawWithShadow(DrawContext context, int x, int y, int lineHeight, int color)"
+		},
+		{
+			"forge": "renderLeftAlignedNoShadow(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "draw(DrawContext context, int x, int y, int lineHeight, int color)"
+		},
+		{
+			"forge": "renderBackgroundCentered(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "fillBackground(DrawContext context, int centerX, int centerY, int lineHeight, int padding, int color)"
+		},
+		{
+			"forge": "getLineCount()",
+			"fabric": "count()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getMaxWidth()"
+		}
+	]
+}

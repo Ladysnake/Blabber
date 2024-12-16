@@ -1,0 +1,269 @@
+{
+	"title": "net.minecraft.client.gui.screens.recipebook.RecipeBookComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.recipebook.RecipeBookComponent",
+			"fabric": "net.minecraft.client.gui.screen.recipebook.RecipeBookWidget"
+		},
+		{
+			"forge": "RECIPE_BOOK_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "RECIPE_BOOK_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SEARCH_HINT",
+			"fabric": "SEARCH_HINT_TEXT"
+		},
+		{
+			"forge": "IMAGE_WIDTH",
+			"fabric": "field_32408"
+		},
+		{
+			"forge": "IMAGE_HEIGHT",
+			"fabric": "field_32409"
+		},
+		{
+			"forge": "OFFSET_X_POSITION",
+			"fabric": "field_32410"
+		},
+		{
+			"forge": "ONLY_CRAFTABLES_TOOLTIP",
+			"fabric": "TOGGLE_CRAFTABLE_RECIPES_TEXT"
+		},
+		{
+			"forge": "ALL_RECIPES_TOOLTIP",
+			"fabric": "TOGGLE_ALL_RECIPES_TEXT"
+		},
+		{
+			"forge": "xOffset",
+			"fabric": "leftOffset"
+		},
+		{
+			"forge": "width",
+			"fabric": "parentWidth"
+		},
+		{
+			"forge": "height",
+			"fabric": "parentHeight"
+		},
+		{
+			"forge": "ghostRecipe",
+			"fabric": "ghostSlots"
+		},
+		{
+			"forge": "tabButtons",
+			"fabric": "tabButtons"
+		},
+		{
+			"forge": "selectedTab",
+			"fabric": "currentTab"
+		},
+		{
+			"forge": "filterButton",
+			"fabric": "toggleCraftableButton"
+		},
+		{
+			"forge": "menu",
+			"fabric": "craftingScreenHandler"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "searchBox",
+			"fabric": "searchField"
+		},
+		{
+			"forge": "lastSearch",
+			"fabric": "searchText"
+		},
+		{
+			"forge": "book",
+			"fabric": "recipeBook"
+		},
+		{
+			"forge": "recipeBookPage",
+			"fabric": "recipesArea"
+		},
+		{
+			"forge": "stackedContents",
+			"fabric": "recipeFinder"
+		},
+		{
+			"forge": "timesInventoryChanged",
+			"fabric": "cachedInvChangeCount"
+		},
+		{
+			"forge": "ignoreTextInput",
+			"fabric": "searching"
+		},
+		{
+			"forge": "visible",
+			"fabric": "open"
+		},
+		{
+			"forge": "widthTooNarrow",
+			"fabric": "narrow"
+		},
+		{
+			"forge": "init(int arg0, int arg1, Minecraft arg2, boolean arg3, RecipeBookMenu<?> arg4)",
+			"fabric": "initialize(int parentWidth, int parentHeight, MinecraftClient client, boolean narrow, AbstractRecipeScreenHandler<?> craftingScreenHandler)"
+		},
+		{
+			"forge": "init(int arg0, int arg1, Minecraft arg2, boolean arg3, RecipeBookMenu<?> arg4)",
+			"fabric": "initialize(int parentWidth, int parentHeight, MinecraftClient client, boolean narrow, AbstractRecipeScreenHandler<?> craftingScreenHandler)"
+		},
+		{
+			"forge": "initVisuals()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "updateFilterButtonTooltip()",
+			"fabric": "updateTooltip()"
+		},
+		{
+			"forge": "initFilterButtonTextures()",
+			"fabric": "setBookButtonTexture()"
+		},
+		{
+			"forge": "updateScreenPosition(int arg0, int arg1)",
+			"fabric": "findLeftEdge(int width, int backgroundWidth)"
+		},
+		{
+			"forge": "toggleVisibility()",
+			"fabric": "toggleOpen()"
+		},
+		{
+			"forge": "isVisible()",
+			"fabric": "isOpen()"
+		},
+		{
+			"forge": "isVisibleAccordingToBookData()",
+			"fabric": "isGuiOpen()"
+		},
+		{
+			"forge": "setVisible(boolean arg0)",
+			"fabric": "setOpen(boolean opened)"
+		},
+		{
+			"forge": "slotClicked(Slot arg0)",
+			"fabric": "slotClicked(Slot slot)"
+		},
+		{
+			"forge": "updateCollections(boolean arg0)",
+			"fabric": "refreshResults(boolean resetCurrentPage)"
+		},
+		{
+			"forge": "updateTabs()",
+			"fabric": "refreshTabButtons()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "update()"
+		},
+		{
+			"forge": "updateStackedContents()",
+			"fabric": "refreshInputs()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderTooltip(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawTooltip(DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "getRecipeFilterName()",
+			"fabric": "getToggleCraftableButtonText()"
+		},
+		{
+			"forge": "renderGhostRecipeTooltip(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawGhostSlotTooltip(DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "renderGhostRecipe(GuiGraphics arg0, int arg1, int arg2, boolean arg3, float arg4)",
+			"fabric": "drawGhostSlots(DrawContext context, int x, int y, boolean notInventory, float delta)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "toggleFiltering()",
+			"fabric": "toggleFilteringCraftable()"
+		},
+		{
+			"forge": "hasClickedOutside(double arg0, double arg1, int arg2, int arg3, int arg4, int arg5, int arg6)",
+			"fabric": "isClickOutsideBounds(double mouseX, double mouseY, int x, int y, int backgroundWidth, int backgroundHeight, int button)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "keyReleased(int arg0, int arg1, int arg2)",
+			"fabric": "keyReleased(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "charTyped(char arg0, int arg1)",
+			"fabric": "charTyped(char arg0, int arg1)"
+		},
+		{
+			"forge": "isMouseOver(double arg0, double arg1)",
+			"fabric": "isMouseOver(double arg0, double arg1)"
+		},
+		{
+			"forge": "setFocused(boolean arg0)",
+			"fabric": "setFocused(boolean arg0)"
+		},
+		{
+			"forge": "isFocused()",
+			"fabric": "isFocused()"
+		},
+		{
+			"forge": "checkSearchStringUpdate()",
+			"fabric": "refreshSearchResults()"
+		},
+		{
+			"forge": "pirateSpeechForThePeople(String arg0)",
+			"fabric": "triggerPirateSpeakEasterEgg(String search)"
+		},
+		{
+			"forge": "isOffsetNextToMainGUI()",
+			"fabric": "isWide()"
+		},
+		{
+			"forge": "recipesUpdated()",
+			"fabric": "refresh()"
+		},
+		{
+			"forge": "recipesShown(List<Recipe<?>> arg0)",
+			"fabric": "onRecipesDisplayed(List<Recipe<?>> arg0)"
+		},
+		{
+			"forge": "setupGhostRecipe(Recipe<?> arg0, List<Slot> arg1)",
+			"fabric": "showGhostRecipe(Recipe<?> recipe, List<Slot> slots)"
+		},
+		{
+			"forge": "addItemToSlot(Iterator<Ingredient> arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "acceptAlignedInput(Iterator<Ingredient> arg0, int arg1, int arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "sendUpdateSettings()",
+			"fabric": "sendBookDataPacket()"
+		},
+		{
+			"forge": "narrationPriority()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "updateNarration(NarrationElementOutput arg0)",
+			"fabric": "appendNarrations(NarrationMessageBuilder arg0)"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.gameevent.GameEvent$ListenerInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.GameEvent$ListenerInfo",
+			"fabric": "net.minecraft.world.event.GameEvent$Message"
+		},
+		{
+			"forge": "gameEvent",
+			"fabric": "event"
+		},
+		{
+			"forge": "gameEvent",
+			"fabric": "event"
+		},
+		{
+			"forge": "source",
+			"fabric": "emitterPos"
+		},
+		{
+			"forge": "context",
+			"fabric": "emitter"
+		},
+		{
+			"forge": "recipient",
+			"fabric": "listener"
+		},
+		{
+			"forge": "distanceToRecipient",
+			"fabric": "distanceTraveled"
+		},
+		{
+			"forge": "compareTo(GameEvent$ListenerInfo arg0)",
+			"fabric": "compareTo(GameEvent$Message arg0)"
+		},
+		{
+			"forge": "compareTo(GameEvent$ListenerInfo arg0)",
+			"fabric": "compareTo(GameEvent$Message arg0)"
+		},
+		{
+			"forge": "gameEvent()",
+			"fabric": "getEvent()"
+		},
+		{
+			"forge": "source()",
+			"fabric": "getEmitterPos()"
+		},
+		{
+			"forge": "context()",
+			"fabric": "getEmitter()"
+		},
+		{
+			"forge": "recipient()",
+			"fabric": "getListener()"
+		}
+	]
+}

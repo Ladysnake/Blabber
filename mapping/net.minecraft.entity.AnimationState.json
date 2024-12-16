@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.AnimationState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.AnimationState",
+			"fabric": "net.minecraft.entity.AnimationState"
+		},
+		{
+			"forge": "STOPPED",
+			"fabric": "STOPPED"
+		},
+		{
+			"forge": "STOPPED",
+			"fabric": "STOPPED"
+		},
+		{
+			"forge": "lastTime",
+			"fabric": "updatedAt"
+		},
+		{
+			"forge": "accumulatedTime",
+			"fabric": "timeRunning"
+		},
+		{
+			"forge": "start(int arg0)",
+			"fabric": "start(int age)"
+		},
+		{
+			"forge": "start(int arg0)",
+			"fabric": "start(int age)"
+		},
+		{
+			"forge": "startIfStopped(int arg0)",
+			"fabric": "startIfNotRunning(int age)"
+		},
+		{
+			"forge": "animateWhen(boolean arg0, int arg1)",
+			"fabric": "setRunning(boolean running, int age)"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "ifStarted(Consumer<AnimationState> arg0)",
+			"fabric": "run(Consumer<AnimationState> consumer)"
+		},
+		{
+			"forge": "updateTime(float arg0, float arg1)",
+			"fabric": "update(float animationProgress, float speedMultiplier)"
+		},
+		{
+			"forge": "getAccumulatedTime()",
+			"fabric": "getTimeRunning()"
+		},
+		{
+			"forge": "isStarted()",
+			"fabric": "isRunning()"
+		}
+	]
+}

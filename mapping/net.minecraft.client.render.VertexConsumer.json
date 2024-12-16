@@ -1,0 +1,85 @@
+{
+	"title": "com.mojang.blaze3d.vertex.VertexConsumer",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.VertexConsumer",
+			"fabric": "net.minecraft.client.render.VertexConsumer"
+		},
+		{
+			"forge": "vertex(double arg0, double arg1, double arg2)",
+			"fabric": "vertex(double x, double y, double z)"
+		},
+		{
+			"forge": "vertex(double arg0, double arg1, double arg2)",
+			"fabric": "vertex(double x, double y, double z)"
+		},
+		{
+			"forge": "color(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "color(int red, int green, int blue, int alpha)"
+		},
+		{
+			"forge": "uv(float arg0, float arg1)",
+			"fabric": "texture(float u, float v)"
+		},
+		{
+			"forge": "overlayCoords(int arg0, int arg1)",
+			"fabric": "overlay(int u, int v)"
+		},
+		{
+			"forge": "uv2(int arg0, int arg1)",
+			"fabric": "light(int u, int v)"
+		},
+		{
+			"forge": "normal(float arg0, float arg1, float arg2)",
+			"fabric": "normal(float x, float y, float z)"
+		},
+		{
+			"forge": "endVertex()",
+			"fabric": "next()"
+		},
+		{
+			"forge": "vertex(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9, int arg10, float arg11, float arg12, float arg13)",
+			"fabric": "vertex(float x, float y, float z, float red, float green, float blue, float alpha, float u, float v, int overlay, int light, float normalX, float normalY, float normalZ)"
+		},
+		{
+			"forge": "defaultColor(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "fixedColor(int red, int green, int blue, int alpha)"
+		},
+		{
+			"forge": "unsetDefaultColor()",
+			"fabric": "unfixColor()"
+		},
+		{
+			"forge": "color(float arg0, float arg1, float arg2, float arg3)",
+			"fabric": "color(float red, float green, float blue, float alpha)"
+		},
+		{
+			"forge": "color(int arg0)",
+			"fabric": "color(int argb)"
+		},
+		{
+			"forge": "uv2(int arg0)",
+			"fabric": "light(int uv)"
+		},
+		{
+			"forge": "overlayCoords(int arg0)",
+			"fabric": "overlay(int uv)"
+		},
+		{
+			"forge": "putBulkData(PoseStack$Pose arg0, BakedQuad arg1, float arg2, float arg3, float arg4, int arg5, int arg6)",
+			"fabric": "quad(MatrixStack$Entry matrixEntry, BakedQuad quad, float red, float green, float blue, int light, int overlay)"
+		},
+		{
+			"forge": "putBulkData(PoseStack$Pose arg0, BakedQuad arg1, float[] arg2, float arg3, float arg4, float arg5, int[] arg6, int arg7, boolean arg8)",
+			"fabric": "quad(MatrixStack$Entry matrixEntry, BakedQuad quad, float[] brightnesses, float red, float green, float blue, int[] lights, int overlay, boolean useQuadColorData)"
+		},
+		{
+			"forge": "vertex(org.joml.Matrix4f arg0, float arg1, float arg2, float arg3)",
+			"fabric": "vertex(org.joml.Matrix4f matrix, float x, float y, float z)"
+		},
+		{
+			"forge": "normal(org.joml.Matrix3f arg0, float arg1, float arg2, float arg3)",
+			"fabric": "normal(org.joml.Matrix3f matrix, float x, float y, float z)"
+		}
+	]
+}

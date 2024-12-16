@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.advancements.critereon.ContextAwarePredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.ContextAwarePredicate",
+			"fabric": "net.minecraft.predicate.entity.LootContextPredicate"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "conditions",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "compositePredicates",
+			"fabric": "combinedCondition"
+		},
+		{
+			"forge": "create(LootItemCondition... arg0)",
+			"fabric": "create(LootCondition... conditions)"
+		},
+		{
+			"forge": "create(LootItemCondition... arg0)",
+			"fabric": "create(LootCondition... conditions)"
+		},
+		{
+			"forge": "fromElement(String arg0, DeserializationContext arg1, com.google.gson.JsonElement arg2, LootContextParamSet arg3)",
+			"fabric": "fromJson(String key, AdvancementEntityPredicateDeserializer predicateDeserializer, com.google.gson.JsonElement json, LootContextType contextType)"
+		},
+		{
+			"forge": "matches(LootContext arg0)",
+			"fabric": "test(LootContext context)"
+		},
+		{
+			"forge": "toJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer predicateSerializer)"
+		},
+		{
+			"forge": "toJson(ContextAwarePredicate[] arg0, SerializationContext arg1)",
+			"fabric": "toPredicatesJsonArray(LootContextPredicate[] predicates, AdvancementEntityPredicateSerializer predicateSerializer)"
+		}
+	]
+}

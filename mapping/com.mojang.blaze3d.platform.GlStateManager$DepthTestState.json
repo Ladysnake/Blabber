@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$DepthState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$DepthState",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$DepthTestState"
+		},
+		{
+			"forge": "mode",
+			"fabric": "capState"
+		},
+		{
+			"forge": "mode",
+			"fabric": "capState"
+		},
+		{
+			"forge": "mask",
+			"fabric": "mask"
+		},
+		{
+			"forge": "func",
+			"fabric": "func"
+		}
+	]
+}

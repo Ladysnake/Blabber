@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.SmokerScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.SmokerScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.SmokerScreen"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		}
+	]
+}

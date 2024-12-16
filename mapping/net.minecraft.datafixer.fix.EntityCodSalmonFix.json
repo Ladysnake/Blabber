@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityCodSalmonFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityCodSalmonFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityCodSalmonFix"
+		},
+		{
+			"forge": "RENAMED_IDS",
+			"fabric": "ENTITIES"
+		},
+		{
+			"forge": "RENAMED_IDS",
+			"fabric": "ENTITIES"
+		},
+		{
+			"forge": "RENAMED_EGG_IDS",
+			"fabric": "SPAWN_EGGS"
+		},
+		{
+			"forge": "rename(String arg0)",
+			"fabric": "rename(String arg0)"
+		},
+		{
+			"forge": "rename(String arg0)",
+			"fabric": "rename(String arg0)"
+		}
+	]
+}

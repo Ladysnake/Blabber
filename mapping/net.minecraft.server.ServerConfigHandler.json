@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.server.players.OldUsersConverter",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.OldUsersConverter",
+			"fabric": "net.minecraft.server.ServerConfigHandler"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "OLD_IPBANLIST",
+			"fabric": "BANNED_IPS_FILE"
+		},
+		{
+			"forge": "OLD_USERBANLIST",
+			"fabric": "BANNED_PLAYERS_FILE"
+		},
+		{
+			"forge": "OLD_OPLIST",
+			"fabric": "OPERATORS_FILE"
+		},
+		{
+			"forge": "OLD_WHITELIST",
+			"fabric": "WHITE_LIST_FILE"
+		},
+		{
+			"forge": "readOldListFormat(File arg0, Map<String, String[]> arg1)",
+			"fabric": "processSimpleListFile(File file, Map<String, String[]> valueMap)"
+		},
+		{
+			"forge": "readOldListFormat(File arg0, Map<String, String[]> arg1)",
+			"fabric": "processSimpleListFile(File file, Map<String, String[]> valueMap)"
+		},
+		{
+			"forge": "lookupPlayers(MinecraftServer arg0, Collection<String> arg1, com.mojang.authlib.ProfileLookupCallback arg2)",
+			"fabric": "lookupProfile(MinecraftServer server, Collection<String> bannedPlayers, com.mojang.authlib.ProfileLookupCallback callback)"
+		},
+		{
+			"forge": "convertUserBanlist(MinecraftServer arg0)",
+			"fabric": "convertBannedPlayers(MinecraftServer server)"
+		},
+		{
+			"forge": "convertIpBanlist(MinecraftServer arg0)",
+			"fabric": "convertBannedIps(MinecraftServer server)"
+		},
+		{
+			"forge": "convertOpsList(MinecraftServer arg0)",
+			"fabric": "convertOperators(MinecraftServer server)"
+		},
+		{
+			"forge": "convertWhiteList(MinecraftServer arg0)",
+			"fabric": "convertWhitelist(MinecraftServer server)"
+		},
+		{
+			"forge": "convertMobOwnerIfNecessary(MinecraftServer arg0, String arg1)",
+			"fabric": "getPlayerUuidByName(MinecraftServer server, String name)"
+		},
+		{
+			"forge": "convertPlayers(DedicatedServer arg0)",
+			"fabric": "convertPlayerFiles(MinecraftDedicatedServer minecraftServer)"
+		},
+		{
+			"forge": "ensureDirectoryExists(File arg0)",
+			"fabric": "createDirectory(File directory)"
+		},
+		{
+			"forge": "serverReadyAfterUserconversion(MinecraftServer arg0)",
+			"fabric": "checkSuccess(MinecraftServer server)"
+		},
+		{
+			"forge": "areOldUserlistsRemoved()",
+			"fabric": "checkListConversionSuccess()"
+		},
+		{
+			"forge": "areOldPlayersConverted(MinecraftServer arg0)",
+			"fabric": "checkPlayerConversionSuccess(MinecraftServer server)"
+		},
+		{
+			"forge": "getWorldPlayersDirectory(MinecraftServer arg0)",
+			"fabric": "getLevelPlayersFolder(MinecraftServer server)"
+		},
+		{
+			"forge": "renameOldFile(File arg0)",
+			"fabric": "markFileConverted(File file)"
+		},
+		{
+			"forge": "parseDate(String arg0, Date arg1)",
+			"fabric": "parseDate(String dateString, Date fallback)"
+		}
+	]
+}

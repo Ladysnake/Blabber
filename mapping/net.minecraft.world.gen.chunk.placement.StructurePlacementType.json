@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType",
+			"fabric": "net.minecraft.world.gen.chunk.placement.StructurePlacementType"
+		},
+		{
+			"forge": "RANDOM_SPREAD",
+			"fabric": "RANDOM_SPREAD"
+		},
+		{
+			"forge": "RANDOM_SPREAD",
+			"fabric": "RANDOM_SPREAD"
+		},
+		{
+			"forge": "CONCENTRIC_RINGS",
+			"fabric": "CONCENTRIC_RINGS"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "register(String id, com.mojang.serialization.Codec<SP> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<SP> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<SP> codec)"
+		}
+	]
+}

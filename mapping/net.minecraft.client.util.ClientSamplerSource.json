@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.profiling.ClientMetricsSamplersProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.client.profiling.ClientMetricsSamplersProvider",
+			"fabric": "net.minecraft.client.util.ClientSamplerSource"
+		},
+		{
+			"forge": "levelRenderer",
+			"fabric": "renderer"
+		},
+		{
+			"forge": "levelRenderer",
+			"fabric": "renderer"
+		},
+		{
+			"forge": "samplers",
+			"fabric": "samplers"
+		},
+		{
+			"forge": "samplerFactory",
+			"fabric": "factory"
+		},
+		{
+			"forge": "registerStaticSamplers()",
+			"fabric": "addInfoSamplers()"
+		},
+		{
+			"forge": "registerStaticSamplers()",
+			"fabric": "addInfoSamplers()"
+		},
+		{
+			"forge": "samplers(Supplier<ProfileCollector> arg0)",
+			"fabric": "getSamplers(Supplier<ReadableProfiler> arg0)"
+		}
+	]
+}

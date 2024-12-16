@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.advancements.critereon.UsedTotemTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.UsedTotemTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.UsedTotemCriterion$Conditions"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "usedTotem(ItemPredicate arg0)",
+			"fabric": "create(ItemPredicate itemPredicate)"
+		},
+		{
+			"forge": "usedTotem(ItemPredicate arg0)",
+			"fabric": "create(ItemPredicate itemPredicate)"
+		},
+		{
+			"forge": "usedTotem(ItemLike arg0)",
+			"fabric": "create(ItemConvertible item)"
+		},
+		{
+			"forge": "matches(ItemStack arg0)",
+			"fabric": "matches(ItemStack stack)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

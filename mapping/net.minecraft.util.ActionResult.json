@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.InteractionResult",
+	"items": [
+		{
+			"forge": "net.minecraft.world.InteractionResult",
+			"fabric": "net.minecraft.util.ActionResult"
+		},
+		{
+			"forge": "SUCCESS",
+			"fabric": "SUCCESS"
+		},
+		{
+			"forge": "SUCCESS",
+			"fabric": "SUCCESS"
+		},
+		{
+			"forge": "CONSUME",
+			"fabric": "CONSUME"
+		},
+		{
+			"forge": "CONSUME_PARTIAL",
+			"fabric": "CONSUME_PARTIAL"
+		},
+		{
+			"forge": "PASS",
+			"fabric": "PASS"
+		},
+		{
+			"forge": "FAIL",
+			"fabric": "FAIL"
+		},
+		{
+			"forge": "consumesAction()",
+			"fabric": "isAccepted()"
+		},
+		{
+			"forge": "consumesAction()",
+			"fabric": "isAccepted()"
+		},
+		{
+			"forge": "shouldSwing()",
+			"fabric": "shouldSwingHand()"
+		},
+		{
+			"forge": "shouldAwardStats()",
+			"fabric": "shouldIncrementStat()"
+		},
+		{
+			"forge": "sidedSuccess(boolean arg0)",
+			"fabric": "success(boolean swingHand)"
+		}
+	]
+}

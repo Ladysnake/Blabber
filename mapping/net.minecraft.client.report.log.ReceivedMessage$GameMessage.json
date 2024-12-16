@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.LoggedChatMessage$System",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.LoggedChatMessage$System",
+			"fabric": "net.minecraft.client.report.log.ReceivedMessage$GameMessage"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "timeStamp",
+			"fabric": "timestamp"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "GAME_MESSAGE_CODEC"
+		},
+		{
+			"forge": "toContentComponent()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "toContentComponent()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "canReport(UUID arg0)",
+			"fabric": "isSentFrom(UUID arg0)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "message()",
+			"fabric": "message()"
+		},
+		{
+			"forge": "timeStamp()",
+			"fabric": "timestamp()"
+		}
+	]
+}

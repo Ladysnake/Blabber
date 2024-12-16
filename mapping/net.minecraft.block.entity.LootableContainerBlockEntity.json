@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity",
+			"fabric": "net.minecraft.block.entity.LootableContainerBlockEntity"
+		},
+		{
+			"forge": "LOOT_TABLE_TAG",
+			"fabric": "LOOT_TABLE_KEY"
+		},
+		{
+			"forge": "LOOT_TABLE_TAG",
+			"fabric": "LOOT_TABLE_KEY"
+		},
+		{
+			"forge": "LOOT_TABLE_SEED_TAG",
+			"fabric": "LOOT_TABLE_SEED_KEY"
+		},
+		{
+			"forge": "lootTable",
+			"fabric": "lootTableId"
+		},
+		{
+			"forge": "lootTableSeed",
+			"fabric": "lootTableSeed"
+		},
+		{
+			"forge": "setLootTable(BlockGetter arg0, RandomSource arg1, BlockPos arg2, ResourceLocation arg3)",
+			"fabric": "setLootTable(BlockView world, Random random, BlockPos pos, Identifier id)"
+		},
+		{
+			"forge": "setLootTable(BlockGetter arg0, RandomSource arg1, BlockPos arg2, ResourceLocation arg3)",
+			"fabric": "setLootTable(BlockView world, Random random, BlockPos pos, Identifier id)"
+		},
+		{
+			"forge": "tryLoadLootTable(CompoundTag arg0)",
+			"fabric": "deserializeLootTable(NbtCompound nbt)"
+		},
+		{
+			"forge": "trySaveLootTable(CompoundTag arg0)",
+			"fabric": "serializeLootTable(NbtCompound nbt)"
+		},
+		{
+			"forge": "unpackLootTable(Player arg0)",
+			"fabric": "checkLootInteraction(PlayerEntity player)"
+		},
+		{
+			"forge": "setLootTable(ResourceLocation arg0, long arg1)",
+			"fabric": "setLootTable(Identifier id, long seed)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getInvStackList()"
+		},
+		{
+			"forge": "setItems(NonNullList<ItemStack> arg0)",
+			"fabric": "setInvStackList(DefaultedList<ItemStack> list)"
+		},
+		{
+			"forge": "canOpen(Player arg0)",
+			"fabric": "checkUnlocked(PlayerEntity arg0)"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1, Player arg2)",
+			"fabric": "createMenu(int arg0, PlayerInventory arg1, PlayerEntity arg2)"
+		}
+	]
+}

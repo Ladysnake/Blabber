@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.LevelHeightAccessor$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.LevelHeightAccessor$1",
+			"fabric": "net.minecraft.world.HeightLimitView$1"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getMinBuildHeight()",
+			"fabric": "getBottomY()"
+		}
+	]
+}

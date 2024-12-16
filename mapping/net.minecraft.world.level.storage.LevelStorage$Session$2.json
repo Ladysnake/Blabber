@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess$2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess$2",
+			"fabric": "net.minecraft.world.level.storage.LevelStorage$Session$2"
+		},
+		{
+			"forge": "visitFile(Path arg0, BasicFileAttributes arg1)",
+			"fabric": "visitFile(Path arg0, BasicFileAttributes arg1)"
+		},
+		{
+			"forge": "visitFile(Path arg0, BasicFileAttributes arg1)",
+			"fabric": "visitFile(Path arg0, BasicFileAttributes arg1)"
+		}
+	]
+}

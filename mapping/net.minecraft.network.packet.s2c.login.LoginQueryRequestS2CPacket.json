@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.network.protocol.login.ClientboundCustomQueryPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.login.ClientboundCustomQueryPacket",
+			"fabric": "net.minecraft.network.packet.s2c.login.LoginQueryRequestS2CPacket"
+		},
+		{
+			"forge": "MAX_PAYLOAD_SIZE",
+			"fabric": "MAX_PAYLOAD_SIZE"
+		},
+		{
+			"forge": "MAX_PAYLOAD_SIZE",
+			"fabric": "MAX_PAYLOAD_SIZE"
+		},
+		{
+			"forge": "transactionId",
+			"fabric": "queryId"
+		},
+		{
+			"forge": "identifier",
+			"fabric": "channel"
+		},
+		{
+			"forge": "data",
+			"fabric": "payload"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientLoginPacketListener arg0)",
+			"fabric": "apply(ClientLoginPacketListener arg0)"
+		},
+		{
+			"forge": "getTransactionId()",
+			"fabric": "getQueryId()"
+		},
+		{
+			"forge": "getIdentifier()",
+			"fabric": "getChannel()"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getPayload()"
+		}
+	]
+}

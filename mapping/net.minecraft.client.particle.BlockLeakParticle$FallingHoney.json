@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.particle.DripParticle$HoneyFallAndLandParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.DripParticle$HoneyFallAndLandParticle",
+			"fabric": "net.minecraft.client.particle.BlockLeakParticle$FallingHoney"
+		},
+		{
+			"forge": "postMoveUpdate()",
+			"fabric": "updateVelocity()"
+		},
+		{
+			"forge": "postMoveUpdate()",
+			"fabric": "updateVelocity()"
+		}
+	]
+}

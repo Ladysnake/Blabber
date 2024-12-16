@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.entity.RenderLayerParent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.RenderLayerParent",
+			"fabric": "net.minecraft.client.render.entity.feature.FeatureRendererContext"
+		},
+		{
+			"forge": "getModel()",
+			"fabric": "getModel()"
+		},
+		{
+			"forge": "getModel()",
+			"fabric": "getModel()"
+		},
+		{
+			"forge": "getTextureLocation(T arg0)",
+			"fabric": "getTexture(T entity)"
+		}
+	]
+}

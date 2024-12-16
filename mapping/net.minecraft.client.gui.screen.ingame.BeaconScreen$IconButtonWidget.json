@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.BeaconScreen$BeaconSpriteScreenButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.BeaconScreen$BeaconSpriteScreenButton",
+			"fabric": "net.minecraft.client.gui.screen.ingame.BeaconScreen$IconButtonWidget"
+		},
+		{
+			"forge": "iconX",
+			"fabric": "u"
+		},
+		{
+			"forge": "iconX",
+			"fabric": "u"
+		},
+		{
+			"forge": "iconY",
+			"fabric": "v"
+		},
+		{
+			"forge": "renderIcon(GuiGraphics arg0)",
+			"fabric": "renderExtra(DrawContext arg0)"
+		},
+		{
+			"forge": "renderIcon(GuiGraphics arg0)",
+			"fabric": "renderExtra(DrawContext arg0)"
+		}
+	]
+}

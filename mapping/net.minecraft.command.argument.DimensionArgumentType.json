@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.arguments.DimensionArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.DimensionArgument",
+			"fabric": "net.minecraft.command.argument.DimensionArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_INVALID_VALUE",
+			"fabric": "INVALID_DIMENSION_EXCEPTION"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "dimension()",
+			"fabric": "dimension()"
+		},
+		{
+			"forge": "getDimension(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getDimensionArgument(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		}
+	]
+}

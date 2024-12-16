@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece",
+			"fabric": "net.minecraft.structure.ShiftableStructurePiece"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "heightPosition",
+			"fabric": "hPos"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "updateAverageGroundHeight(LevelAccessor arg0, BoundingBox arg1, int arg2)",
+			"fabric": "adjustToAverageHeight(WorldAccess world, BlockBox boundingBox, int deltaY)"
+		},
+		{
+			"forge": "updateHeightPositionToLowestGroundHeight(LevelAccessor arg0, int arg1)",
+			"fabric": "adjustToMinHeight(WorldAccess world, int yOffset)"
+		}
+	]
+}

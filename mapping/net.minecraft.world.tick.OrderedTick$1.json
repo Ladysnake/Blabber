@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.ticks.ScheduledTick$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.ticks.ScheduledTick$1",
+			"fabric": "net.minecraft.world.tick.OrderedTick$1"
+		},
+		{
+			"forge": "hashCode(ScheduledTick<?> arg0)",
+			"fabric": "hashCode(OrderedTick<?> arg0)"
+		},
+		{
+			"forge": "hashCode(ScheduledTick<?> arg0)",
+			"fabric": "hashCode(OrderedTick<?> arg0)"
+		},
+		{
+			"forge": "equals(ScheduledTick<?> arg0, ScheduledTick<?> arg1)",
+			"fabric": "equals(OrderedTick<?> arg0, OrderedTick<?> arg1)"
+		}
+	]
+}

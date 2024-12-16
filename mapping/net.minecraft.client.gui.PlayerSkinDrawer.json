@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.gui.components.PlayerFaceRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.PlayerFaceRenderer",
+			"fabric": "net.minecraft.client.gui.PlayerSkinDrawer"
+		},
+		{
+			"forge": "SKIN_HEAD_U",
+			"fabric": "FACE_WIDTH"
+		},
+		{
+			"forge": "SKIN_HEAD_U",
+			"fabric": "FACE_WIDTH"
+		},
+		{
+			"forge": "SKIN_HEAD_V",
+			"fabric": "FACE_HEIGHT"
+		},
+		{
+			"forge": "SKIN_HEAD_WIDTH",
+			"fabric": "FACE_X"
+		},
+		{
+			"forge": "SKIN_HEAD_HEIGHT",
+			"fabric": "FACE_Y"
+		},
+		{
+			"forge": "SKIN_HAT_U",
+			"fabric": "FACE_OVERLAY_X"
+		},
+		{
+			"forge": "SKIN_HAT_V",
+			"fabric": "FACE_OVERLAY_Y"
+		},
+		{
+			"forge": "SKIN_HAT_WIDTH",
+			"fabric": "field_39531"
+		},
+		{
+			"forge": "SKIN_HAT_HEIGHT",
+			"fabric": "field_39532"
+		},
+		{
+			"forge": "SKIN_TEX_WIDTH",
+			"fabric": "SKIN_TEXTURE_WIDTH"
+		},
+		{
+			"forge": "SKIN_TEX_HEIGHT",
+			"fabric": "SKIN_TEXTURE_HEIGHT"
+		},
+		{
+			"forge": "draw(GuiGraphics arg0, ResourceLocation arg1, int arg2, int arg3, int arg4)",
+			"fabric": "draw(DrawContext context, Identifier texture, int x, int y, int size)"
+		},
+		{
+			"forge": "draw(GuiGraphics arg0, ResourceLocation arg1, int arg2, int arg3, int arg4)",
+			"fabric": "draw(DrawContext context, Identifier texture, int x, int y, int size)"
+		},
+		{
+			"forge": "draw(GuiGraphics arg0, ResourceLocation arg1, int arg2, int arg3, int arg4, boolean arg5, boolean arg6)",
+			"fabric": "draw(DrawContext context, Identifier texture, int x, int y, int size, boolean hatVisible, boolean upsideDown)"
+		},
+		{
+			"forge": "drawHat(GuiGraphics arg0, ResourceLocation arg1, int arg2, int arg3, int arg4, boolean arg5)",
+			"fabric": "drawHat(DrawContext context, Identifier texture, int x, int y, int size, boolean upsideDown)"
+		}
+	]
+}

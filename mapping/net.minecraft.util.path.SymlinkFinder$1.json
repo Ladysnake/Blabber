@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.validation.DirectoryValidator$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.validation.DirectoryValidator$1",
+			"fabric": "net.minecraft.util.path.SymlinkFinder$1"
+		},
+		{
+			"forge": "validateSymlink(Path arg0, BasicFileAttributes arg1)",
+			"fabric": "validate(Path path, BasicFileAttributes attributes)"
+		},
+		{
+			"forge": "validateSymlink(Path arg0, BasicFileAttributes arg1)",
+			"fabric": "validate(Path path, BasicFileAttributes attributes)"
+		},
+		{
+			"forge": "preVisitDirectory(Path arg0, BasicFileAttributes arg1)",
+			"fabric": "preVisitDirectory(Path arg0, BasicFileAttributes arg1)"
+		},
+		{
+			"forge": "visitFile(Path arg0, BasicFileAttributes arg1)",
+			"fabric": "visitFile(Path arg0, BasicFileAttributes arg1)"
+		}
+	]
+}

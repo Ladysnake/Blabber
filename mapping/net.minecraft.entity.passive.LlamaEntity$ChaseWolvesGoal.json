@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.Llama$LlamaAttackWolfGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.Llama$LlamaAttackWolfGoal",
+			"fabric": "net.minecraft.entity.passive.LlamaEntity$ChaseWolvesGoal"
+		},
+		{
+			"forge": "getFollowDistance()",
+			"fabric": "getFollowRange()"
+		},
+		{
+			"forge": "getFollowDistance()",
+			"fabric": "getFollowRange()"
+		}
+	]
+}

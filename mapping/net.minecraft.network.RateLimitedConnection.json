@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.RateKickingConnection",
+	"items": [
+		{
+			"forge": "net.minecraft.network.RateKickingConnection",
+			"fabric": "net.minecraft.network.RateLimitedConnection"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "EXCEED_REASON",
+			"fabric": "RATE_LIMIT_EXCEEDED_MESSAGE"
+		},
+		{
+			"forge": "rateLimitPacketsPerSecond",
+			"fabric": "rateLimit"
+		},
+		{
+			"forge": "tickSecond()",
+			"fabric": "updateStats()"
+		},
+		{
+			"forge": "tickSecond()",
+			"fabric": "updateStats()"
+		}
+	]
+}

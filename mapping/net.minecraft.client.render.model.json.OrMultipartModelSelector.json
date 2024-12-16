@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.multipart.OrCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.multipart.OrCondition",
+			"fabric": "net.minecraft.client.render.model.json.OrMultipartModelSelector"
+		},
+		{
+			"forge": "TOKEN",
+			"fabric": "KEY"
+		},
+		{
+			"forge": "TOKEN",
+			"fabric": "KEY"
+		},
+		{
+			"forge": "conditions",
+			"fabric": "selectors"
+		},
+		{
+			"forge": "getPredicate(StateDefinition<Block, BlockState> arg0)",
+			"fabric": "getPredicate(StateManager<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getPredicate(StateDefinition<Block, BlockState> arg0)",
+			"fabric": "getPredicate(StateManager<Block, BlockState> arg0)"
+		}
+	]
+}

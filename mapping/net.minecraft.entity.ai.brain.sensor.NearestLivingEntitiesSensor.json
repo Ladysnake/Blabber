@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.sensing.NearestLivingEntitySensor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.sensing.NearestLivingEntitySensor",
+			"fabric": "net.minecraft.entity.ai.brain.sensor.NearestLivingEntitiesSensor"
+		},
+		{
+			"forge": "doTick(ServerLevel arg0, T arg1)",
+			"fabric": "sense(ServerWorld arg0, T arg1)"
+		},
+		{
+			"forge": "doTick(ServerLevel arg0, T arg1)",
+			"fabric": "sense(ServerWorld arg0, T arg1)"
+		},
+		{
+			"forge": "radiusXZ()",
+			"fabric": "getHorizontalExpansion()"
+		},
+		{
+			"forge": "radiusY()",
+			"fabric": "getHeightExpansion()"
+		},
+		{
+			"forge": "requires()",
+			"fabric": "getOutputMemoryModules()"
+		}
+	]
+}

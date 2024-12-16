@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.network.TextFilterClient$PlayerContext",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.TextFilterClient$PlayerContext",
+			"fabric": "net.minecraft.server.filter.TextFilterer$Impl"
+		},
+		{
+			"forge": "profile",
+			"fabric": "gameProfile"
+		},
+		{
+			"forge": "profile",
+			"fabric": "gameProfile"
+		},
+		{
+			"forge": "streamExecutor",
+			"fabric": "executor"
+		},
+		{
+			"forge": "join()",
+			"fabric": "onConnect()"
+		},
+		{
+			"forge": "join()",
+			"fabric": "onConnect()"
+		},
+		{
+			"forge": "leave()",
+			"fabric": "onDisconnect()"
+		},
+		{
+			"forge": "processMessageBundle(List<String> arg0)",
+			"fabric": "filterTexts(List<String> arg0)"
+		},
+		{
+			"forge": "processStreamMessage(String arg0)",
+			"fabric": "filterText(String arg0)"
+		}
+	]
+}

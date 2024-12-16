@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.core.Direction8",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Direction8",
+			"fabric": "net.minecraft.util.math.EightWayDirection"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "NORTH_EAST",
+			"fabric": "NORTH_EAST"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "SOUTH_EAST",
+			"fabric": "SOUTH_EAST"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "SOUTH_WEST",
+			"fabric": "SOUTH_WEST"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "NORTH_WEST",
+			"fabric": "NORTH_WEST"
+		},
+		{
+			"forge": "directions",
+			"fabric": "directions"
+		},
+		{
+			"forge": "directions",
+			"fabric": "directions"
+		},
+		{
+			"forge": "step",
+			"fabric": "offset"
+		},
+		{
+			"forge": "getDirections()",
+			"fabric": "getDirections()"
+		},
+		{
+			"forge": "getDirections()",
+			"fabric": "getDirections()"
+		},
+		{
+			"forge": "getStepX()",
+			"fabric": "getOffsetX()"
+		},
+		{
+			"forge": "getStepZ()",
+			"fabric": "getOffsetZ()"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.redstone.CollectingNeighborUpdater$SimpleNeighborUpdate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.redstone.CollectingNeighborUpdater$SimpleNeighborUpdate",
+			"fabric": "net.minecraft.world.block.ChainRestrictedNeighborUpdater$SimpleEntry"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "block",
+			"fabric": "sourceBlock"
+		},
+		{
+			"forge": "neighborPos",
+			"fabric": "sourcePos"
+		},
+		{
+			"forge": "runNext(Level arg0)",
+			"fabric": "update(World arg0)"
+		},
+		{
+			"forge": "runNext(Level arg0)",
+			"fabric": "update(World arg0)"
+		},
+		{
+			"forge": "pos()",
+			"fabric": "pos()"
+		},
+		{
+			"forge": "block()",
+			"fabric": "sourceBlock()"
+		},
+		{
+			"forge": "neighborPos()",
+			"fabric": "sourcePos()"
+		}
+	]
+}

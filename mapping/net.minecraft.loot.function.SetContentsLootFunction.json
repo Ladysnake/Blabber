@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetContainerContents",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetContainerContents",
+			"fabric": "net.minecraft.loot.function.SetContentsLootFunction"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "validate(ValidationContext arg0)",
+			"fabric": "validate(LootTableReporter arg0)"
+		},
+		{
+			"forge": "setContents(BlockEntityType<?> arg0)",
+			"fabric": "builder(BlockEntityType<?> type)"
+		}
+	]
+}

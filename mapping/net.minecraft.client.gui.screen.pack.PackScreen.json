@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.client.gui.screens.packs.PackSelectionScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.packs.PackSelectionScreen",
+			"fabric": "net.minecraft.client.gui.screen.pack.PackScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LIST_WIDTH",
+			"fabric": "field_32395"
+		},
+		{
+			"forge": "DRAG_AND_DROP",
+			"fabric": "DROP_INFO"
+		},
+		{
+			"forge": "DIRECTORY_BUTTON_TOOLTIP",
+			"fabric": "FOLDER_INFO"
+		},
+		{
+			"forge": "RELOAD_COOLDOWN",
+			"fabric": "field_32396"
+		},
+		{
+			"forge": "DEFAULT_ICON",
+			"fabric": "UNKNOWN_PACK"
+		},
+		{
+			"forge": "model",
+			"fabric": "organizer"
+		},
+		{
+			"forge": "watcher",
+			"fabric": "directoryWatcher"
+		},
+		{
+			"forge": "ticksToReload",
+			"fabric": "refreshTimeout"
+		},
+		{
+			"forge": "availablePackList",
+			"fabric": "availablePackList"
+		},
+		{
+			"forge": "selectedPackList",
+			"fabric": "selectedPackList"
+		},
+		{
+			"forge": "packDir",
+			"fabric": "file"
+		},
+		{
+			"forge": "doneButton",
+			"fabric": "doneButton"
+		},
+		{
+			"forge": "packIcons",
+			"fabric": "iconTextures"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "closeWatcher()",
+			"fabric": "closeDirectoryWatcher()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "populateLists()",
+			"fabric": "updatePackLists()"
+		},
+		{
+			"forge": "updateList(TransferableSelectionList arg0, Stream<PackSelectionModel$Entry> arg1)",
+			"fabric": "updatePackList(PackListWidget widget, Stream<ResourcePackOrganizer$Pack> packs)"
+		},
+		{
+			"forge": "updateFocus(TransferableSelectionList arg0)",
+			"fabric": "switchFocusedList(PackListWidget listWidget)"
+		},
+		{
+			"forge": "clearSelected()",
+			"fabric": "clearSelection()"
+		},
+		{
+			"forge": "reload()",
+			"fabric": "refresh()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "copyPacks(Minecraft arg0, List<Path> arg1, Path arg2)",
+			"fabric": "copyPacks(MinecraftClient client, List<Path> srcPaths, Path destPath)"
+		},
+		{
+			"forge": "onFilesDrop(List<Path> arg0)",
+			"fabric": "filesDragged(List<Path> arg0)"
+		},
+		{
+			"forge": "loadPackIcon(TextureManager arg0, Pack arg1)",
+			"fabric": "loadPackIcon(TextureManager textureManager, ResourcePackProfile resourcePackProfile)"
+		},
+		{
+			"forge": "getPackIcon(Pack arg0)",
+			"fabric": "getPackIconTexture(ResourcePackProfile resourcePackProfile)"
+		}
+	]
+}

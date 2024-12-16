@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.monster.Shulker$ShulkerDefenseAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Shulker$ShulkerDefenseAttackGoal",
+			"fabric": "net.minecraft.entity.mob.ShulkerEntity$TargetOtherTeamGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "getTargetSearchArea(double arg0)",
+			"fabric": "getSearchBox(double arg0)"
+		}
+	]
+}

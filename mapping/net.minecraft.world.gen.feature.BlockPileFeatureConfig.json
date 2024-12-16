@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.BlockPileFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "stateProvider",
+			"fabric": "stateProvider"
+		}
+	]
+}

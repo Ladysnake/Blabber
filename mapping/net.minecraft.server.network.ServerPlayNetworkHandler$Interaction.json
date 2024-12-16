@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.network.ServerGamePacketListenerImpl$EntityInteraction",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.ServerGamePacketListenerImpl$EntityInteraction",
+			"fabric": "net.minecraft.server.network.ServerPlayNetworkHandler$Interaction"
+		},
+		{
+			"forge": "run(ServerPlayer arg0, Entity arg1, InteractionHand arg2)",
+			"fabric": "run(ServerPlayerEntity player, Entity entity, Hand hand)"
+		},
+		{
+			"forge": "run(ServerPlayer arg0, Entity arg1, InteractionHand arg2)",
+			"fabric": "run(ServerPlayerEntity player, Entity entity, Hand hand)"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.server.packs.VanillaPackResourcesBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.VanillaPackResourcesBuilder",
+			"fabric": "net.minecraft.resource.DefaultResourcePackBuilder"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "developmentConfig",
+			"fabric": "callback"
+		},
+		{
+			"forge": "ROOT_DIR_BY_TYPE",
+			"fabric": "RESOURCE_TYPE_TO_PATH"
+		},
+		{
+			"forge": "rootPaths",
+			"fabric": "rootPaths"
+		},
+		{
+			"forge": "pathsForType",
+			"fabric": "paths"
+		},
+		{
+			"forge": "metadata",
+			"fabric": "metadataMap"
+		},
+		{
+			"forge": "namespaces",
+			"fabric": "namespaces"
+		},
+		{
+			"forge": "safeGetPath(URI arg0)",
+			"fabric": "toPath(URI uri)"
+		},
+		{
+			"forge": "safeGetPath(URI arg0)",
+			"fabric": "toPath(URI uri)"
+		},
+		{
+			"forge": "validateDirPath(Path arg0)",
+			"fabric": "exists(Path path)"
+		},
+		{
+			"forge": "pushRootPath(Path arg0)",
+			"fabric": "addRootPath(Path path)"
+		},
+		{
+			"forge": "pushPathForType(PackType arg0, Path arg1)",
+			"fabric": "addPath(ResourceType type, Path path)"
+		},
+		{
+			"forge": "pushJarResources()",
+			"fabric": "withDefaultPaths()"
+		},
+		{
+			"forge": "pushClasspathResources(PackType arg0, Class<?> arg1)",
+			"fabric": "withPaths(ResourceType type, Class<?> clazz)"
+		},
+		{
+			"forge": "applyDevelopmentConfig()",
+			"fabric": "runCallback()"
+		},
+		{
+			"forge": "pushUniversalPath(Path arg0)",
+			"fabric": "withRoot(Path root)"
+		},
+		{
+			"forge": "pushAssetPath(PackType arg0, Path arg1)",
+			"fabric": "withPath(ResourceType type, Path path)"
+		},
+		{
+			"forge": "setMetadata(BuiltInMetadata arg0)",
+			"fabric": "withMetadataMap(ResourceMetadataMap metadataMap)"
+		},
+		{
+			"forge": "exposeNamespace(String... arg0)",
+			"fabric": "withNamespaces(String... namespaces)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "copyAndReverse(Collection<Path> arg0)",
+			"fabric": "reverse(Collection<Path> paths)"
+		}
+	]
+}

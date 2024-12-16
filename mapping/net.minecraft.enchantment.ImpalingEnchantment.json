@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.item.enchantment.TridentImpalerEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.TridentImpalerEnchantment",
+			"fabric": "net.minecraft.enchantment.ImpalingEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "getMaxLevel()",
+			"fabric": "getMaxLevel()"
+		},
+		{
+			"forge": "getDamageBonus(int arg0, MobType arg1)",
+			"fabric": "getAttackDamage(int arg0, EntityGroup arg1)"
+		}
+	]
+}

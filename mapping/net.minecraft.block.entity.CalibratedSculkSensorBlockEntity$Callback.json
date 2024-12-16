@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.entity.CalibratedSculkSensorBlockEntity$VibrationUser",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.CalibratedSculkSensorBlockEntity$VibrationUser",
+			"fabric": "net.minecraft.block.entity.CalibratedSculkSensorBlockEntity$Callback"
+		},
+		{
+			"forge": "getListenerRadius()",
+			"fabric": "getRange()"
+		},
+		{
+			"forge": "getListenerRadius()",
+			"fabric": "getRange()"
+		},
+		{
+			"forge": "canReceiveVibration(ServerLevel arg0, BlockPos arg1, GameEvent arg2, GameEvent$Context arg3)",
+			"fabric": "accepts(ServerWorld arg0, BlockPos arg1, GameEvent arg2, GameEvent$Emitter arg3)"
+		},
+		{
+			"forge": "getBackSignal(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getCalibrationFrequency(World world, BlockPos pos, BlockState state)"
+		}
+	]
+}

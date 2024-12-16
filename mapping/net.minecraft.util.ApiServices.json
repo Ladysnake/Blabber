@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.server.Services",
+	"items": [
+		{
+			"forge": "net.minecraft.server.Services",
+			"fabric": "net.minecraft.util.ApiServices"
+		},
+		{
+			"forge": "sessionService",
+			"fabric": "sessionService"
+		},
+		{
+			"forge": "sessionService",
+			"fabric": "sessionService"
+		},
+		{
+			"forge": "servicesKeySet",
+			"fabric": "servicesKeySet"
+		},
+		{
+			"forge": "profileRepository",
+			"fabric": "profileRepository"
+		},
+		{
+			"forge": "profileCache",
+			"fabric": "userCache"
+		},
+		{
+			"forge": "USERID_CACHE_FILE",
+			"fabric": "USER_CACHE_FILE_NAME"
+		},
+		{
+			"forge": "create(com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService arg0, File arg1)",
+			"fabric": "create(com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService authenticationService, File rootDirectory)"
+		},
+		{
+			"forge": "create(com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService arg0, File arg1)",
+			"fabric": "create(com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService authenticationService, File rootDirectory)"
+		},
+		{
+			"forge": "profileKeySignatureValidator()",
+			"fabric": "serviceSignatureVerifier()"
+		},
+		{
+			"forge": "sessionService()",
+			"fabric": "sessionService()"
+		},
+		{
+			"forge": "servicesKeySet()",
+			"fabric": "servicesKeySet()"
+		},
+		{
+			"forge": "profileRepository()",
+			"fabric": "profileRepository()"
+		},
+		{
+			"forge": "profileCache()",
+			"fabric": "userCache()"
+		}
+	]
+}

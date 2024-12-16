@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.level.block.CandleCakeBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.CandleCakeBlock",
+			"fabric": "net.minecraft.block.CandleCakeBlock"
+		},
+		{
+			"forge": "LIT",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "LIT",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "AABB_OFFSET",
+			"fabric": "field_31052"
+		},
+		{
+			"forge": "CAKE_SHAPE",
+			"fabric": "CAKE_SHAPE"
+		},
+		{
+			"forge": "CANDLE_SHAPE",
+			"fabric": "CANDLE_SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "BY_CANDLE",
+			"fabric": "CANDLES_TO_CANDLE_CAKES"
+		},
+		{
+			"forge": "PARTICLE_OFFSETS",
+			"fabric": "PARTICLE_OFFSETS"
+		},
+		{
+			"forge": "getParticleOffsets(BlockState arg0)",
+			"fabric": "getParticleOffsets(BlockState arg0)"
+		},
+		{
+			"forge": "getParticleOffsets(BlockState arg0)",
+			"fabric": "getParticleOffsets(BlockState arg0)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "candleHit(BlockHitResult arg0)",
+			"fabric": "isHittingCandle(BlockHitResult hitResult)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getCloneItemStack(BlockGetter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getPickStack(BlockView arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getAnalogOutputSignal(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "getComparatorOutput(BlockState arg0, World arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "hasAnalogOutputSignal(BlockState arg0)",
+			"fabric": "hasComparatorOutput(BlockState arg0)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "byCandle(Block arg0)",
+			"fabric": "getCandleCakeFromCandle(Block candle)"
+		},
+		{
+			"forge": "canLight(BlockState arg0)",
+			"fabric": "canBeLit(BlockState state)"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pools.JigsawJunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pools.JigsawJunction",
+			"fabric": "net.minecraft.structure.JigsawJunction"
+		},
+		{
+			"forge": "sourceX",
+			"fabric": "sourceX"
+		},
+		{
+			"forge": "sourceX",
+			"fabric": "sourceX"
+		},
+		{
+			"forge": "sourceGroundY",
+			"fabric": "sourceGroundY"
+		},
+		{
+			"forge": "sourceZ",
+			"fabric": "sourceZ"
+		},
+		{
+			"forge": "deltaY",
+			"fabric": "deltaY"
+		},
+		{
+			"forge": "destProjection",
+			"fabric": "destProjection"
+		},
+		{
+			"forge": "getSourceX()",
+			"fabric": "getSourceX()"
+		},
+		{
+			"forge": "getSourceX()",
+			"fabric": "getSourceX()"
+		},
+		{
+			"forge": "getSourceGroundY()",
+			"fabric": "getSourceGroundY()"
+		},
+		{
+			"forge": "getSourceZ()",
+			"fabric": "getSourceZ()"
+		},
+		{
+			"forge": "getDeltaY()",
+			"fabric": "getDeltaY()"
+		},
+		{
+			"forge": "getDestProjection()",
+			"fabric": "getDestProjection()"
+		},
+		{
+			"forge": "serialize(com.mojang.serialization.DynamicOps<T> arg0)",
+			"fabric": "serialize(com.mojang.serialization.DynamicOps<T> ops)"
+		},
+		{
+			"forge": "deserialize(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "deserialize(com.mojang.serialization.Dynamic<T> dynamic)"
+		}
+	]
+}

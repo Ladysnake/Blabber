@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.font.FontTexture$Node",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.FontTexture$Node",
+			"fabric": "net.minecraft.client.font.GlyphAtlasTexture$Slot"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "left",
+			"fabric": "subSlot1"
+		},
+		{
+			"forge": "right",
+			"fabric": "subSlot2"
+		},
+		{
+			"forge": "occupied",
+			"fabric": "occupied"
+		},
+		{
+			"forge": "insert(SheetGlyphInfo arg0)",
+			"fabric": "findSlotFor(RenderableGlyph glyph)"
+		},
+		{
+			"forge": "insert(SheetGlyphInfo arg0)",
+			"fabric": "findSlotFor(RenderableGlyph glyph)"
+		}
+	]
+}

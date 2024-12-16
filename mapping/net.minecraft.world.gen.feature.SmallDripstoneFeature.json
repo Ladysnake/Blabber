@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.PointedDripstoneFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.PointedDripstoneFeature",
+			"fabric": "net.minecraft.world.gen.feature.SmallDripstoneFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<PointedDripstoneConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SmallDripstoneFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<PointedDripstoneConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SmallDripstoneFeatureConfig> arg0)"
+		},
+		{
+			"forge": "getTipDirection(LevelAccessor arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "getDirection(WorldAccess world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "createPatchOfDripstoneBlocks(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, PointedDripstoneConfiguration arg3)",
+			"fabric": "generateDripstoneBlocks(WorldAccess world, Random random, BlockPos pos, SmallDripstoneFeatureConfig config)"
+		}
+	]
+}

@@ -1,0 +1,301 @@
+{
+	"title": "net.minecraft.world.entity.monster.Shulker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Shulker",
+			"fabric": "net.minecraft.entity.mob.ShulkerEntity"
+		},
+		{
+			"forge": "COVERED_ARMOR_MODIFIER_UUID",
+			"fabric": "COVERED_ARMOR_BONUS_ID"
+		},
+		{
+			"forge": "COVERED_ARMOR_MODIFIER_UUID",
+			"fabric": "COVERED_ARMOR_BONUS_ID"
+		},
+		{
+			"forge": "COVERED_ARMOR_MODIFIER",
+			"fabric": "COVERED_ARMOR_BONUS"
+		},
+		{
+			"forge": "DATA_ATTACH_FACE_ID",
+			"fabric": "ATTACHED_FACE"
+		},
+		{
+			"forge": "DATA_PEEK_ID",
+			"fabric": "PEEK_AMOUNT"
+		},
+		{
+			"forge": "DATA_COLOR_ID",
+			"fabric": "COLOR"
+		},
+		{
+			"forge": "TELEPORT_STEPS",
+			"fabric": "field_30487"
+		},
+		{
+			"forge": "NO_COLOR",
+			"fabric": "field_30488"
+		},
+		{
+			"forge": "DEFAULT_COLOR",
+			"fabric": "field_30489"
+		},
+		{
+			"forge": "MAX_TELEPORT_DISTANCE",
+			"fabric": "field_30490"
+		},
+		{
+			"forge": "OTHER_SHULKER_SCAN_RADIUS",
+			"fabric": "field_30491"
+		},
+		{
+			"forge": "OTHER_SHULKER_LIMIT",
+			"fabric": "field_30492"
+		},
+		{
+			"forge": "PEEK_PER_TICK",
+			"fabric": "field_30493"
+		},
+		{
+			"forge": "FORWARD",
+			"fabric": "SOUTH_VECTOR"
+		},
+		{
+			"forge": "currentPeekAmountO",
+			"fabric": "prevOpenProgress"
+		},
+		{
+			"forge": "currentPeekAmount",
+			"fabric": "openProgress"
+		},
+		{
+			"forge": "clientOldAttachPosition",
+			"fabric": "prevAttachedBlock"
+		},
+		{
+			"forge": "clientSideTeleportInterpolation",
+			"fabric": "teleportLerpTimer"
+		},
+		{
+			"forge": "MAX_LID_OPEN",
+			"fabric": "field_30494"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "getSoundSource()",
+			"fabric": "getSoundCategory()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "playAmbientSound()",
+			"fabric": "playAmbientSound()"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createShulkerAttributes()"
+		},
+		{
+			"forge": "createBodyControl()",
+			"fabric": "createBodyControl()"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "findNewAttachment()",
+			"fabric": "tryAttachOrTeleport()"
+		},
+		{
+			"forge": "makeBoundingBox()",
+			"fabric": "calculateBoundingBox()"
+		},
+		{
+			"forge": "getPhysicalPeek(float arg0)",
+			"fabric": "getExtraLength(float openProgress)"
+		},
+		{
+			"forge": "updatePeekAmount()",
+			"fabric": "tickOpenProgress()"
+		},
+		{
+			"forge": "onPeekAmountChange()",
+			"fabric": "moveEntities()"
+		},
+		{
+			"forge": "getProgressAabb(Direction arg0, float arg1)",
+			"fabric": "calculateBoundingBox(Direction direction, float extraLength)"
+		},
+		{
+			"forge": "getProgressDeltaAabb(Direction arg0, float arg1, float arg2)",
+			"fabric": "calculateBoundingBox(Direction direction, float prevExtraLength, float extraLength)"
+		},
+		{
+			"forge": "getMyRidingOffset()",
+			"fabric": "getHeightOffset()"
+		},
+		{
+			"forge": "startRiding(Entity arg0, boolean arg1)",
+			"fabric": "startRiding(Entity arg0, boolean arg1)"
+		},
+		{
+			"forge": "stopRiding()",
+			"fabric": "stopRiding()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "move(MoverType arg0, Vec3 arg1)",
+			"fabric": "move(MovementType arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "getDeltaMovement()",
+			"fabric": "getVelocity()"
+		},
+		{
+			"forge": "setDeltaMovement(Vec3 arg0)",
+			"fabric": "setVelocity(Vec3d arg0)"
+		},
+		{
+			"forge": "setPos(double arg0, double arg1, double arg2)",
+			"fabric": "setPosition(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "findAttachableSurface(BlockPos arg0)",
+			"fabric": "findAttachSide(BlockPos pos)"
+		},
+		{
+			"forge": "canStayAt(BlockPos arg0, Direction arg1)",
+			"fabric": "canStay(BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "isPositionBlocked(BlockPos arg0)",
+			"fabric": "isInvalidPosition(BlockPos pos)"
+		},
+		{
+			"forge": "teleportSomewhere()",
+			"fabric": "tryTeleport()"
+		},
+		{
+			"forge": "lerpTo(double arg0, double arg1, double arg2, float arg3, float arg4, int arg5, boolean arg6)",
+			"fabric": "updateTrackedPositionAndAngles(double arg0, double arg1, double arg2, float arg3, float arg4, int arg5, boolean arg6)"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "isClosed()",
+			"fabric": "isClosed()"
+		},
+		{
+			"forge": "hitByShulkerBullet()",
+			"fabric": "spawnNewShulker()"
+		},
+		{
+			"forge": "canBeCollidedWith()",
+			"fabric": "isCollidable()"
+		},
+		{
+			"forge": "getAttachFace()",
+			"fabric": "getAttachedFace()"
+		},
+		{
+			"forge": "setAttachFace(Direction arg0)",
+			"fabric": "setAttachedFace(Direction face)"
+		},
+		{
+			"forge": "onSyncedDataUpdated(EntityDataAccessor<?> arg0)",
+			"fabric": "onTrackedDataSet(TrackedData<?> arg0)"
+		},
+		{
+			"forge": "getRawPeekAmount()",
+			"fabric": "getPeekAmount()"
+		},
+		{
+			"forge": "setRawPeekAmount(int arg0)",
+			"fabric": "setPeekAmount(int peekAmount)"
+		},
+		{
+			"forge": "getClientPeekAmount(float arg0)",
+			"fabric": "getOpenProgress(float delta)"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "recreateFromPacket(ClientboundAddEntityPacket arg0)",
+			"fabric": "onSpawnPacket(EntitySpawnS2CPacket arg0)"
+		},
+		{
+			"forge": "getMaxHeadXRot()",
+			"fabric": "getMaxLookPitchChange()"
+		},
+		{
+			"forge": "getMaxHeadYRot()",
+			"fabric": "getMaxHeadRotation()"
+		},
+		{
+			"forge": "push(Entity arg0)",
+			"fabric": "pushAwayFrom(Entity arg0)"
+		},
+		{
+			"forge": "getPickRadius()",
+			"fabric": "getTargetingMargin()"
+		},
+		{
+			"forge": "getRenderPosition(float arg0)",
+			"fabric": "getRenderPositionOffset(float tickDelta)"
+		},
+		{
+			"forge": "setVariant(Optional<DyeColor> arg0)",
+			"fabric": "setVariant(Optional<DyeColor> arg0)"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		}
+	]
+}

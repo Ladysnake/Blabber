@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.NativeModuleLister$NativeModuleInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.util.NativeModuleLister$NativeModuleInfo",
+			"fabric": "net.minecraft.util.WinNativeModuleUtil$NativeModule"
+		},
+		{
+			"forge": "name",
+			"fabric": "path"
+		},
+		{
+			"forge": "name",
+			"fabric": "path"
+		},
+		{
+			"forge": "version",
+			"fabric": "info"
+		}
+	]
+}

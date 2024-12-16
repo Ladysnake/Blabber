@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.HangingSignItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.HangingSignItem",
+			"fabric": "net.minecraft.item.HangingSignItem"
+		},
+		{
+			"forge": "canPlace(LevelReader arg0, BlockState arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(WorldView arg0, BlockState arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "canPlace(LevelReader arg0, BlockState arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(WorldView arg0, BlockState arg1, BlockPos arg2)"
+		}
+	]
+}

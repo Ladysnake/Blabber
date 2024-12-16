@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.entity.monster.warden.WardenSpawnTracker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.warden.WardenSpawnTracker",
+			"fabric": "net.minecraft.block.entity.SculkShriekerWarningManager"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "MAX_WARNING_LEVEL",
+			"fabric": "MAX_WARNING_LEVEL"
+		},
+		{
+			"forge": "PLAYER_SEARCH_RADIUS",
+			"fabric": "WARN_RANGE"
+		},
+		{
+			"forge": "WARNING_CHECK_DIAMETER",
+			"fabric": "WARN_WARDEN_RANGE"
+		},
+		{
+			"forge": "DECREASE_WARNING_LEVEL_EVERY_INTERVAL",
+			"fabric": "WARN_DECREASE_COOLDOWN"
+		},
+		{
+			"forge": "WARNING_LEVEL_INCREASE_COOLDOWN",
+			"fabric": "WARN_INCREASE_COOLDOWN"
+		},
+		{
+			"forge": "ticksSinceLastWarning",
+			"fabric": "ticksSinceLastWarning"
+		},
+		{
+			"forge": "warningLevel",
+			"fabric": "warningLevel"
+		},
+		{
+			"forge": "cooldownTicks",
+			"fabric": "cooldownTicks"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "tryWarn(ServerLevel arg0, BlockPos arg1, ServerPlayer arg2)",
+			"fabric": "warnNearbyPlayers(ServerWorld world, BlockPos pos, ServerPlayerEntity player)"
+		},
+		{
+			"forge": "onCooldown()",
+			"fabric": "isInCooldown()"
+		},
+		{
+			"forge": "hasNearbyWarden(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "canIncreaseWarningLevel(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "getNearbyPlayers(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "getPlayersInRange(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "increaseWarningLevel()",
+			"fabric": "increaseWarningLevel()"
+		},
+		{
+			"forge": "decreaseWarningLevel()",
+			"fabric": "decreaseWarningLevel()"
+		},
+		{
+			"forge": "setWarningLevel(int arg0)",
+			"fabric": "setWarningLevel(int warningLevel)"
+		},
+		{
+			"forge": "getWarningLevel()",
+			"fabric": "getWarningLevel()"
+		},
+		{
+			"forge": "copyData(WardenSpawnTracker arg0)",
+			"fabric": "copy(SculkShriekerWarningManager other)"
+		}
+	]
+}

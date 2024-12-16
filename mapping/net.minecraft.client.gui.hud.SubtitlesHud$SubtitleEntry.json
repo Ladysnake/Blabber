@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.components.SubtitleOverlay$Subtitle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.SubtitleOverlay$Subtitle",
+			"fabric": "net.minecraft.client.gui.hud.SubtitlesHud$SubtitleEntry"
+		},
+		{
+			"forge": "text",
+			"fabric": "text"
+		},
+		{
+			"forge": "text",
+			"fabric": "text"
+		},
+		{
+			"forge": "time",
+			"fabric": "time"
+		},
+		{
+			"forge": "location",
+			"fabric": "pos"
+		},
+		{
+			"forge": "getText()",
+			"fabric": "getText()"
+		},
+		{
+			"forge": "getText()",
+			"fabric": "getText()"
+		},
+		{
+			"forge": "getTime()",
+			"fabric": "getTime()"
+		},
+		{
+			"forge": "getLocation()",
+			"fabric": "getPosition()"
+		},
+		{
+			"forge": "refresh(Vec3 arg0)",
+			"fabric": "reset(Vec3d pos)"
+		}
+	]
+}

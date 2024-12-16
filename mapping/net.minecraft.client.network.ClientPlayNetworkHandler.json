@@ -1,0 +1,781 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientPacketListener",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientPacketListener",
+			"fabric": "net.minecraft.client.network.ClientPlayNetworkHandler"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GENERIC_DISCONNECT_MESSAGE",
+			"fabric": "DISCONNECT_LOST_TEXT"
+		},
+		{
+			"forge": "UNSECURE_SERVER_TOAST_TITLE",
+			"fabric": "UNSECURE_SERVER_TOAST_TITLE"
+		},
+		{
+			"forge": "UNSERURE_SERVER_TOAST",
+			"fabric": "UNSECURE_SERVER_TOAST_TEXT"
+		},
+		{
+			"forge": "INVALID_PACKET",
+			"fabric": "INVALID_PACKET_TEXT"
+		},
+		{
+			"forge": "CHAT_VALIDATION_FAILED_ERROR",
+			"fabric": "CHAT_VALIDATION_FAILED_TEXT"
+		},
+		{
+			"forge": "PENDING_OFFSET_THRESHOLD",
+			"fabric": "ACKNOWLEDGMENT_BATCH_SIZE"
+		},
+		{
+			"forge": "connection",
+			"fabric": "connection"
+		},
+		{
+			"forge": "deferredPackets",
+			"fabric": "queuedPackets"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "serverInfo"
+		},
+		{
+			"forge": "localGameProfile",
+			"fabric": "profile"
+		},
+		{
+			"forge": "callbackScreen",
+			"fabric": "loginScreen"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "levelData",
+			"fabric": "worldProperties"
+		},
+		{
+			"forge": "playerInfoMap",
+			"fabric": "playerListEntries"
+		},
+		{
+			"forge": "listedPlayers",
+			"fabric": "listedPlayerListEntries"
+		},
+		{
+			"forge": "advancements",
+			"fabric": "advancementHandler"
+		},
+		{
+			"forge": "suggestionsProvider",
+			"fabric": "commandSource"
+		},
+		{
+			"forge": "debugQueryHandler",
+			"fabric": "dataQueryHandler"
+		},
+		{
+			"forge": "serverChunkRadius",
+			"fabric": "chunkLoadDistance"
+		},
+		{
+			"forge": "serverSimulationDistance",
+			"fabric": "simulationDistance"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "commands",
+			"fabric": "commandDispatcher"
+		},
+		{
+			"forge": "recipeManager",
+			"fabric": "recipeManager"
+		},
+		{
+			"forge": "id",
+			"fabric": "sessionId"
+		},
+		{
+			"forge": "levels",
+			"fabric": "worldKeys"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "combinedDynamicRegistries"
+		},
+		{
+			"forge": "enabledFeatures",
+			"fabric": "enabledFeatures"
+		},
+		{
+			"forge": "telemetryManager",
+			"fabric": "worldSession"
+		},
+		{
+			"forge": "chatSession",
+			"fabric": "session"
+		},
+		{
+			"forge": "signedMessageEncoder",
+			"fabric": "messagePacker"
+		},
+		{
+			"forge": "lastSeenMessages",
+			"fabric": "lastSeenMessagesCollector"
+		},
+		{
+			"forge": "messageSignatureCache",
+			"fabric": "signatureStorage"
+		},
+		{
+			"forge": "getSuggestionsProvider()",
+			"fabric": "getCommandSource()"
+		},
+		{
+			"forge": "getSuggestionsProvider()",
+			"fabric": "getCommandSource()"
+		},
+		{
+			"forge": "close()",
+			"fabric": "clearWorld()"
+		},
+		{
+			"forge": "getRecipeManager()",
+			"fabric": "getRecipeManager()"
+		},
+		{
+			"forge": "handleLogin(ClientboundLoginPacket arg0)",
+			"fabric": "onGameJoin(GameJoinS2CPacket arg0)"
+		},
+		{
+			"forge": "handleAddEntity(ClientboundAddEntityPacket arg0)",
+			"fabric": "onEntitySpawn(EntitySpawnS2CPacket arg0)"
+		},
+		{
+			"forge": "postAddEntitySoundInstance(Entity arg0)",
+			"fabric": "playSpawnSound(Entity entity)"
+		},
+		{
+			"forge": "handleAddExperienceOrb(ClientboundAddExperienceOrbPacket arg0)",
+			"fabric": "onExperienceOrbSpawn(ExperienceOrbSpawnS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetEntityMotion(ClientboundSetEntityMotionPacket arg0)",
+			"fabric": "onEntityVelocityUpdate(EntityVelocityUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetEntityData(ClientboundSetEntityDataPacket arg0)",
+			"fabric": "onEntityTrackerUpdate(EntityTrackerUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleAddPlayer(ClientboundAddPlayerPacket arg0)",
+			"fabric": "onPlayerSpawn(PlayerSpawnS2CPacket arg0)"
+		},
+		{
+			"forge": "handleTeleportEntity(ClientboundTeleportEntityPacket arg0)",
+			"fabric": "onEntityPosition(EntityPositionS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetCarriedItem(ClientboundSetCarriedItemPacket arg0)",
+			"fabric": "onUpdateSelectedSlot(UpdateSelectedSlotS2CPacket arg0)"
+		},
+		{
+			"forge": "handleMoveEntity(ClientboundMoveEntityPacket arg0)",
+			"fabric": "onEntity(EntityS2CPacket arg0)"
+		},
+		{
+			"forge": "handleRotateMob(ClientboundRotateHeadPacket arg0)",
+			"fabric": "onEntitySetHeadYaw(EntitySetHeadYawS2CPacket arg0)"
+		},
+		{
+			"forge": "handleRemoveEntities(ClientboundRemoveEntitiesPacket arg0)",
+			"fabric": "onEntitiesDestroy(EntitiesDestroyS2CPacket arg0)"
+		},
+		{
+			"forge": "handleMovePlayer(ClientboundPlayerPositionPacket arg0)",
+			"fabric": "onPlayerPositionLook(PlayerPositionLookS2CPacket arg0)"
+		},
+		{
+			"forge": "handleChunkBlocksUpdate(ClientboundSectionBlocksUpdatePacket arg0)",
+			"fabric": "onChunkDeltaUpdate(ChunkDeltaUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleLevelChunkWithLight(ClientboundLevelChunkWithLightPacket arg0)",
+			"fabric": "onChunkData(ChunkDataS2CPacket arg0)"
+		},
+		{
+			"forge": "handleChunksBiomes(ClientboundChunksBiomesPacket arg0)",
+			"fabric": "onChunkBiomeData(ChunkBiomeDataS2CPacket arg0)"
+		},
+		{
+			"forge": "updateLevelChunk(int arg0, int arg1, ClientboundLevelChunkPacketData arg2)",
+			"fabric": "loadChunk(int x, int z, ChunkData chunkData)"
+		},
+		{
+			"forge": "enableChunkLight(LevelChunk arg0, int arg1, int arg2)",
+			"fabric": "scheduleRenderChunk(WorldChunk chunk, int x, int z)"
+		},
+		{
+			"forge": "handleForgetLevelChunk(ClientboundForgetLevelChunkPacket arg0)",
+			"fabric": "onUnloadChunk(UnloadChunkS2CPacket arg0)"
+		},
+		{
+			"forge": "queueLightRemoval(ClientboundForgetLevelChunkPacket arg0)",
+			"fabric": "unloadChunk(UnloadChunkS2CPacket packet)"
+		},
+		{
+			"forge": "handleBlockUpdate(ClientboundBlockUpdatePacket arg0)",
+			"fabric": "onBlockUpdate(BlockUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleDisconnect(ClientboundDisconnectPacket arg0)",
+			"fabric": "onDisconnect(DisconnectS2CPacket arg0)"
+		},
+		{
+			"forge": "onDisconnect(Component arg0)",
+			"fabric": "onDisconnected(Text arg0)"
+		},
+		{
+			"forge": "send(Packet<?> arg0)",
+			"fabric": "sendPacket(Packet<?> packet)"
+		},
+		{
+			"forge": "handleTakeItemEntity(ClientboundTakeItemEntityPacket arg0)",
+			"fabric": "onItemPickupAnimation(ItemPickupAnimationS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSystemChat(ClientboundSystemChatPacket arg0)",
+			"fabric": "onGameMessage(GameMessageS2CPacket arg0)"
+		},
+		{
+			"forge": "handlePlayerChat(ClientboundPlayerChatPacket arg0)",
+			"fabric": "onChatMessage(ChatMessageS2CPacket arg0)"
+		},
+		{
+			"forge": "handleDisguisedChat(ClientboundDisguisedChatPacket arg0)",
+			"fabric": "onProfilelessChatMessage(ProfilelessChatMessageS2CPacket arg0)"
+		},
+		{
+			"forge": "handleDeleteChat(ClientboundDeleteChatPacket arg0)",
+			"fabric": "onRemoveMessage(RemoveMessageS2CPacket arg0)"
+		},
+		{
+			"forge": "handleAnimate(ClientboundAnimatePacket arg0)",
+			"fabric": "onEntityAnimation(EntityAnimationS2CPacket arg0)"
+		},
+		{
+			"forge": "handleHurtAnimation(ClientboundHurtAnimationPacket arg0)",
+			"fabric": "onDamageTilt(DamageTiltS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetTime(ClientboundSetTimePacket arg0)",
+			"fabric": "onWorldTimeUpdate(WorldTimeUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetSpawn(ClientboundSetDefaultSpawnPositionPacket arg0)",
+			"fabric": "onPlayerSpawnPosition(PlayerSpawnPositionS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetEntityPassengersPacket(ClientboundSetPassengersPacket arg0)",
+			"fabric": "onEntityPassengersSet(EntityPassengersSetS2CPacket arg0)"
+		},
+		{
+			"forge": "handleEntityLinkPacket(ClientboundSetEntityLinkPacket arg0)",
+			"fabric": "onEntityAttach(EntityAttachS2CPacket arg0)"
+		},
+		{
+			"forge": "findTotem(Player arg0)",
+			"fabric": "getActiveTotemOfUndying(PlayerEntity player)"
+		},
+		{
+			"forge": "handleEntityEvent(ClientboundEntityEventPacket arg0)",
+			"fabric": "onEntityStatus(EntityStatusS2CPacket arg0)"
+		},
+		{
+			"forge": "handleDamageEvent(ClientboundDamageEventPacket arg0)",
+			"fabric": "onEntityDamage(EntityDamageS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetHealth(ClientboundSetHealthPacket arg0)",
+			"fabric": "onHealthUpdate(HealthUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetExperience(ClientboundSetExperiencePacket arg0)",
+			"fabric": "onExperienceBarUpdate(ExperienceBarUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleRespawn(ClientboundRespawnPacket arg0)",
+			"fabric": "onPlayerRespawn(PlayerRespawnS2CPacket arg0)"
+		},
+		{
+			"forge": "handleExplosion(ClientboundExplodePacket arg0)",
+			"fabric": "onExplosion(ExplosionS2CPacket arg0)"
+		},
+		{
+			"forge": "handleHorseScreenOpen(ClientboundHorseScreenOpenPacket arg0)",
+			"fabric": "onOpenHorseScreen(OpenHorseScreenS2CPacket arg0)"
+		},
+		{
+			"forge": "handleOpenScreen(ClientboundOpenScreenPacket arg0)",
+			"fabric": "onOpenScreen(OpenScreenS2CPacket arg0)"
+		},
+		{
+			"forge": "handleContainerSetSlot(ClientboundContainerSetSlotPacket arg0)",
+			"fabric": "onScreenHandlerSlotUpdate(ScreenHandlerSlotUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleContainerContent(ClientboundContainerSetContentPacket arg0)",
+			"fabric": "onInventory(InventoryS2CPacket arg0)"
+		},
+		{
+			"forge": "handleOpenSignEditor(ClientboundOpenSignEditorPacket arg0)",
+			"fabric": "onSignEditorOpen(SignEditorOpenS2CPacket arg0)"
+		},
+		{
+			"forge": "handleBlockEntityData(ClientboundBlockEntityDataPacket arg0)",
+			"fabric": "onBlockEntityUpdate(BlockEntityUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleContainerSetData(ClientboundContainerSetDataPacket arg0)",
+			"fabric": "onScreenHandlerPropertyUpdate(ScreenHandlerPropertyUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetEquipment(ClientboundSetEquipmentPacket arg0)",
+			"fabric": "onEntityEquipmentUpdate(EntityEquipmentUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleContainerClose(ClientboundContainerClosePacket arg0)",
+			"fabric": "onCloseScreen(CloseScreenS2CPacket arg0)"
+		},
+		{
+			"forge": "handleBlockEvent(ClientboundBlockEventPacket arg0)",
+			"fabric": "onBlockEvent(BlockEventS2CPacket arg0)"
+		},
+		{
+			"forge": "handleBlockDestruction(ClientboundBlockDestructionPacket arg0)",
+			"fabric": "onBlockBreakingProgress(BlockBreakingProgressS2CPacket arg0)"
+		},
+		{
+			"forge": "handleGameEvent(ClientboundGameEventPacket arg0)",
+			"fabric": "onGameStateChange(GameStateChangeS2CPacket arg0)"
+		},
+		{
+			"forge": "handleMapItemData(ClientboundMapItemDataPacket arg0)",
+			"fabric": "onMapUpdate(MapUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleLevelEvent(ClientboundLevelEventPacket arg0)",
+			"fabric": "onWorldEvent(WorldEventS2CPacket arg0)"
+		},
+		{
+			"forge": "handleUpdateAdvancementsPacket(ClientboundUpdateAdvancementsPacket arg0)",
+			"fabric": "onAdvancements(AdvancementUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSelectAdvancementsTab(ClientboundSelectAdvancementsTabPacket arg0)",
+			"fabric": "onSelectAdvancementTab(SelectAdvancementTabS2CPacket arg0)"
+		},
+		{
+			"forge": "handleCommands(ClientboundCommandsPacket arg0)",
+			"fabric": "onCommandTree(CommandTreeS2CPacket arg0)"
+		},
+		{
+			"forge": "handleStopSoundEvent(ClientboundStopSoundPacket arg0)",
+			"fabric": "onStopSound(StopSoundS2CPacket arg0)"
+		},
+		{
+			"forge": "handleCommandSuggestions(ClientboundCommandSuggestionsPacket arg0)",
+			"fabric": "onCommandSuggestions(CommandSuggestionsS2CPacket arg0)"
+		},
+		{
+			"forge": "handleUpdateRecipes(ClientboundUpdateRecipesPacket arg0)",
+			"fabric": "onSynchronizeRecipes(SynchronizeRecipesS2CPacket arg0)"
+		},
+		{
+			"forge": "handleLookAt(ClientboundPlayerLookAtPacket arg0)",
+			"fabric": "onLookAt(LookAtS2CPacket arg0)"
+		},
+		{
+			"forge": "handleTagQueryPacket(ClientboundTagQueryPacket arg0)",
+			"fabric": "onNbtQueryResponse(NbtQueryResponseS2CPacket arg0)"
+		},
+		{
+			"forge": "handleAwardStats(ClientboundAwardStatsPacket arg0)",
+			"fabric": "onStatistics(StatisticsS2CPacket arg0)"
+		},
+		{
+			"forge": "handleAddOrRemoveRecipes(ClientboundRecipePacket arg0)",
+			"fabric": "onUnlockRecipes(UnlockRecipesS2CPacket arg0)"
+		},
+		{
+			"forge": "handleUpdateMobEffect(ClientboundUpdateMobEffectPacket arg0)",
+			"fabric": "onEntityStatusEffect(EntityStatusEffectS2CPacket arg0)"
+		},
+		{
+			"forge": "handleUpdateTags(ClientboundUpdateTagsPacket arg0)",
+			"fabric": "onSynchronizeTags(SynchronizeTagsS2CPacket arg0)"
+		},
+		{
+			"forge": "handleEnabledFeatures(ClientboundUpdateEnabledFeaturesPacket arg0)",
+			"fabric": "onFeatures(FeaturesS2CPacket arg0)"
+		},
+		{
+			"forge": "updateTagsForRegistry(ResourceKey<? extends Registry<? extends T>> arg0, TagNetworkSerialization$NetworkPayload arg1)",
+			"fabric": "loadTags(RegistryKey<? extends Registry<? extends T>> registryKey, TagPacketSerializer$Serialized serialized)"
+		},
+		{
+			"forge": "handlePlayerCombatEnd(ClientboundPlayerCombatEndPacket arg0)",
+			"fabric": "onEndCombat(EndCombatS2CPacket arg0)"
+		},
+		{
+			"forge": "handlePlayerCombatEnter(ClientboundPlayerCombatEnterPacket arg0)",
+			"fabric": "onEnterCombat(EnterCombatS2CPacket arg0)"
+		},
+		{
+			"forge": "handlePlayerCombatKill(ClientboundPlayerCombatKillPacket arg0)",
+			"fabric": "onDeathMessage(DeathMessageS2CPacket arg0)"
+		},
+		{
+			"forge": "handleChangeDifficulty(ClientboundChangeDifficultyPacket arg0)",
+			"fabric": "onDifficulty(DifficultyS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetCamera(ClientboundSetCameraPacket arg0)",
+			"fabric": "onSetCameraEntity(SetCameraEntityS2CPacket arg0)"
+		},
+		{
+			"forge": "handleInitializeBorder(ClientboundInitializeBorderPacket arg0)",
+			"fabric": "onWorldBorderInitialize(WorldBorderInitializeS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetBorderCenter(ClientboundSetBorderCenterPacket arg0)",
+			"fabric": "onWorldBorderCenterChanged(WorldBorderCenterChangedS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetBorderLerpSize(ClientboundSetBorderLerpSizePacket arg0)",
+			"fabric": "onWorldBorderInterpolateSize(WorldBorderInterpolateSizeS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetBorderSize(ClientboundSetBorderSizePacket arg0)",
+			"fabric": "onWorldBorderSizeChanged(WorldBorderSizeChangedS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetBorderWarningDistance(ClientboundSetBorderWarningDistancePacket arg0)",
+			"fabric": "onWorldBorderWarningBlocksChanged(WorldBorderWarningBlocksChangedS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetBorderWarningDelay(ClientboundSetBorderWarningDelayPacket arg0)",
+			"fabric": "onWorldBorderWarningTimeChanged(WorldBorderWarningTimeChangedS2CPacket arg0)"
+		},
+		{
+			"forge": "handleTitlesClear(ClientboundClearTitlesPacket arg0)",
+			"fabric": "onTitleClear(ClearTitleS2CPacket arg0)"
+		},
+		{
+			"forge": "handleServerData(ClientboundServerDataPacket arg0)",
+			"fabric": "onServerMetadata(ServerMetadataS2CPacket arg0)"
+		},
+		{
+			"forge": "handleCustomChatCompletions(ClientboundCustomChatCompletionsPacket arg0)",
+			"fabric": "onChatSuggestions(ChatSuggestionsS2CPacket arg0)"
+		},
+		{
+			"forge": "setActionBarText(ClientboundSetActionBarTextPacket arg0)",
+			"fabric": "onOverlayMessage(OverlayMessageS2CPacket arg0)"
+		},
+		{
+			"forge": "setTitleText(ClientboundSetTitleTextPacket arg0)",
+			"fabric": "onTitle(TitleS2CPacket arg0)"
+		},
+		{
+			"forge": "setSubtitleText(ClientboundSetSubtitleTextPacket arg0)",
+			"fabric": "onSubtitle(SubtitleS2CPacket arg0)"
+		},
+		{
+			"forge": "setTitlesAnimation(ClientboundSetTitlesAnimationPacket arg0)",
+			"fabric": "onTitleFade(TitleFadeS2CPacket arg0)"
+		},
+		{
+			"forge": "handleTabListCustomisation(ClientboundTabListPacket arg0)",
+			"fabric": "onPlayerListHeader(PlayerListHeaderS2CPacket arg0)"
+		},
+		{
+			"forge": "handleRemoveMobEffect(ClientboundRemoveMobEffectPacket arg0)",
+			"fabric": "onRemoveEntityStatusEffect(RemoveEntityStatusEffectS2CPacket arg0)"
+		},
+		{
+			"forge": "handlePlayerInfoRemove(ClientboundPlayerInfoRemovePacket arg0)",
+			"fabric": "onPlayerRemove(PlayerRemoveS2CPacket arg0)"
+		},
+		{
+			"forge": "handlePlayerInfoUpdate(ClientboundPlayerInfoUpdatePacket arg0)",
+			"fabric": "onPlayerList(PlayerListS2CPacket arg0)"
+		},
+		{
+			"forge": "applyPlayerInfoUpdate(ClientboundPlayerInfoUpdatePacket$Action arg0, ClientboundPlayerInfoUpdatePacket$Entry arg1, PlayerInfo arg2)",
+			"fabric": "handlePlayerListAction(PlayerListS2CPacket$Action action, PlayerListS2CPacket$Entry receivedEntry, PlayerListEntry currentEntry)"
+		},
+		{
+			"forge": "initializeChatSession(ClientboundPlayerInfoUpdatePacket$Entry arg0, PlayerInfo arg1)",
+			"fabric": "setPublicSession(PlayerListS2CPacket$Entry receivedEntry, PlayerListEntry currentEntry)"
+		},
+		{
+			"forge": "enforcesSecureChat()",
+			"fabric": "isSecureChatEnforced()"
+		},
+		{
+			"forge": "handleKeepAlive(ClientboundKeepAlivePacket arg0)",
+			"fabric": "onKeepAlive(KeepAliveS2CPacket arg0)"
+		},
+		{
+			"forge": "sendWhen(Packet<ServerGamePacketListener> arg0, BooleanSupplier arg1, Duration arg2)",
+			"fabric": "sendPacket(Packet<ServerPlayPacketListener> packet, BooleanSupplier sendCondition, Duration expirationTime)"
+		},
+		{
+			"forge": "sendDeferredPackets()",
+			"fabric": "tickQueuedPackets()"
+		},
+		{
+			"forge": "handlePlayerAbilities(ClientboundPlayerAbilitiesPacket arg0)",
+			"fabric": "onPlayerAbilities(PlayerAbilitiesS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSoundEvent(ClientboundSoundPacket arg0)",
+			"fabric": "onPlaySound(PlaySoundS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSoundEntityEvent(ClientboundSoundEntityPacket arg0)",
+			"fabric": "onPlaySoundFromEntity(PlaySoundFromEntityS2CPacket arg0)"
+		},
+		{
+			"forge": "handleResourcePack(ClientboundResourcePackPacket arg0)",
+			"fabric": "onResourcePackSend(ResourcePackSendS2CPacket arg0)"
+		},
+		{
+			"forge": "preparePackPrompt(Component arg0, Component arg1)",
+			"fabric": "getServerResourcePackPrompt(Text defaultPrompt, Text customPrompt)"
+		},
+		{
+			"forge": "parseResourcePackUrl(String arg0)",
+			"fabric": "resolveUrl(String url)"
+		},
+		{
+			"forge": "downloadCallback(CompletableFuture<?> arg0)",
+			"fabric": "feedbackAfterDownload(CompletableFuture<?> downloadFuture)"
+		},
+		{
+			"forge": "send(ServerboundResourcePackPacket$Action arg0)",
+			"fabric": "sendResourcePackStatus(ResourcePackStatusC2SPacket$Status packStatus)"
+		},
+		{
+			"forge": "handleBossUpdate(ClientboundBossEventPacket arg0)",
+			"fabric": "onBossBar(BossBarS2CPacket arg0)"
+		},
+		{
+			"forge": "handleItemCooldown(ClientboundCooldownPacket arg0)",
+			"fabric": "onCooldownUpdate(CooldownUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleMoveVehicle(ClientboundMoveVehiclePacket arg0)",
+			"fabric": "onVehicleMove(VehicleMoveS2CPacket arg0)"
+		},
+		{
+			"forge": "handleOpenBook(ClientboundOpenBookPacket arg0)",
+			"fabric": "onOpenWrittenBook(OpenWrittenBookS2CPacket arg0)"
+		},
+		{
+			"forge": "handleCustomPayload(ClientboundCustomPayloadPacket arg0)",
+			"fabric": "onCustomPayload(CustomPayloadS2CPacket arg0)"
+		},
+		{
+			"forge": "handleAddObjective(ClientboundSetObjectivePacket arg0)",
+			"fabric": "onScoreboardObjectiveUpdate(ScoreboardObjectiveUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetScore(ClientboundSetScorePacket arg0)",
+			"fabric": "onScoreboardPlayerUpdate(ScoreboardPlayerUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetDisplayObjective(ClientboundSetDisplayObjectivePacket arg0)",
+			"fabric": "onScoreboardDisplay(ScoreboardDisplayS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetPlayerTeamPacket(ClientboundSetPlayerTeamPacket arg0)",
+			"fabric": "onTeam(TeamS2CPacket arg0)"
+		},
+		{
+			"forge": "handleParticleEvent(ClientboundLevelParticlesPacket arg0)",
+			"fabric": "onParticle(ParticleS2CPacket arg0)"
+		},
+		{
+			"forge": "handlePing(ClientboundPingPacket arg0)",
+			"fabric": "onPing(PlayPingS2CPacket arg0)"
+		},
+		{
+			"forge": "handleUpdateAttributes(ClientboundUpdateAttributesPacket arg0)",
+			"fabric": "onEntityAttributes(EntityAttributesS2CPacket arg0)"
+		},
+		{
+			"forge": "handlePlaceRecipe(ClientboundPlaceGhostRecipePacket arg0)",
+			"fabric": "onCraftFailedResponse(CraftFailedResponseS2CPacket arg0)"
+		},
+		{
+			"forge": "handleLightUpdatePacket(ClientboundLightUpdatePacket arg0)",
+			"fabric": "onLightUpdate(LightUpdateS2CPacket arg0)"
+		},
+		{
+			"forge": "applyLightData(int arg0, int arg1, ClientboundLightUpdatePacketData arg2)",
+			"fabric": "readLightData(int x, int z, LightData data)"
+		},
+		{
+			"forge": "handleMerchantOffers(ClientboundMerchantOffersPacket arg0)",
+			"fabric": "onSetTradeOffers(SetTradeOffersS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetChunkCacheRadius(ClientboundSetChunkCacheRadiusPacket arg0)",
+			"fabric": "onChunkLoadDistance(ChunkLoadDistanceS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetSimulationDistance(ClientboundSetSimulationDistancePacket arg0)",
+			"fabric": "onSimulationDistance(SimulationDistanceS2CPacket arg0)"
+		},
+		{
+			"forge": "handleSetChunkCacheCenter(ClientboundSetChunkCacheCenterPacket arg0)",
+			"fabric": "onChunkRenderDistanceCenter(ChunkRenderDistanceCenterS2CPacket arg0)"
+		},
+		{
+			"forge": "handleBlockChangedAck(ClientboundBlockChangedAckPacket arg0)",
+			"fabric": "onPlayerActionResponse(PlayerActionResponseS2CPacket arg0)"
+		},
+		{
+			"forge": "handleBundlePacket(ClientboundBundlePacket arg0)",
+			"fabric": "onBundle(BundleS2CPacket arg0)"
+		},
+		{
+			"forge": "readSectionList(int arg0, int arg1, LevelLightEngine arg2, LightLayer arg3, BitSet arg4, BitSet arg5, Iterator<byte[]> arg6)",
+			"fabric": "updateLighting(int chunkX, int chunkZ, LightingProvider provider, LightType type, BitSet inited, BitSet uninited, Iterator<byte[]> nibbles)"
+		},
+		{
+			"forge": "getConnection()",
+			"fabric": "getConnection()"
+		},
+		{
+			"forge": "isAcceptingMessages()",
+			"fabric": "isConnectionOpen()"
+		},
+		{
+			"forge": "getListedOnlinePlayers()",
+			"fabric": "getListedPlayerListEntries()"
+		},
+		{
+			"forge": "getOnlinePlayers()",
+			"fabric": "getPlayerList()"
+		},
+		{
+			"forge": "getOnlinePlayerIds()",
+			"fabric": "getPlayerUuids()"
+		},
+		{
+			"forge": "getPlayerInfo(UUID arg0)",
+			"fabric": "getPlayerListEntry(UUID uuid)"
+		},
+		{
+			"forge": "getPlayerInfo(String arg0)",
+			"fabric": "getPlayerListEntry(String profileName)"
+		},
+		{
+			"forge": "getLocalGameProfile()",
+			"fabric": "getProfile()"
+		},
+		{
+			"forge": "getAdvancements()",
+			"fabric": "getAdvancementHandler()"
+		},
+		{
+			"forge": "getCommands()",
+			"fabric": "getCommandDispatcher()"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "getDebugQueryHandler()",
+			"fabric": "getDataQueryHandler()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getSessionId()"
+		},
+		{
+			"forge": "levels()",
+			"fabric": "getWorldKeys()"
+		},
+		{
+			"forge": "registryAccess()",
+			"fabric": "getRegistryManager()"
+		},
+		{
+			"forge": "markMessageAsProcessed(PlayerChatMessage arg0, boolean arg1)",
+			"fabric": "acknowledge(SignedMessage message, boolean displayed)"
+		},
+		{
+			"forge": "sendChatAcknowledgement()",
+			"fabric": "sendAcknowledgment()"
+		},
+		{
+			"forge": "sendChat(String arg0)",
+			"fabric": "sendChatMessage(String content)"
+		},
+		{
+			"forge": "sendCommand(String arg0)",
+			"fabric": "sendChatCommand(String command)"
+		},
+		{
+			"forge": "sendUnsignedCommand(String arg0)",
+			"fabric": "sendCommand(String command)"
+		},
+		{
+			"forge": "parseCommand(String arg0)",
+			"fabric": "parse(String command)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "setKeyPair(ProfileKeyPair arg0)",
+			"fabric": "updateKeyPair(PlayerKeyPair keyPair)"
+		},
+		{
+			"forge": "getServerData()",
+			"fabric": "getServerInfo()"
+		},
+		{
+			"forge": "enabledFeatures()",
+			"fabric": "getEnabledFeatures()"
+		},
+		{
+			"forge": "isFeatureEnabled(FeatureFlagSet arg0)",
+			"fabric": "hasFeature(FeatureSet feature)"
+		}
+	]
+}

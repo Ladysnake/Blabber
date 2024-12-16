@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.GoToWantedItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.GoToWantedItem",
+			"fabric": "net.minecraft.entity.ai.brain.task.WalkToNearestVisibleWantedItemTask"
+		},
+		{
+			"forge": "create(float arg0, boolean arg1, int arg2)",
+			"fabric": "create(float speed, boolean requiresWalkTarget, int radius)"
+		},
+		{
+			"forge": "create(float arg0, boolean arg1, int arg2)",
+			"fabric": "create(float speed, boolean requiresWalkTarget, int radius)"
+		},
+		{
+			"forge": "create(Predicate<E> arg0, float arg1, boolean arg2, int arg3)",
+			"fabric": "create(Predicate<E> startCondition, float speed, boolean requiresWalkTarget, int radius)"
+		}
+	]
+}

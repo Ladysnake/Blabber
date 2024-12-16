@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher",
+			"fabric": "net.minecraft.client.render.block.entity.BlockEntityRenderDispatcher"
+		},
+		{
+			"forge": "renderers",
+			"fabric": "renderers"
+		},
+		{
+			"forge": "renderers",
+			"fabric": "renderers"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "entityModelSet",
+			"fabric": "entityModelLoader"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "camera",
+			"fabric": "camera"
+		},
+		{
+			"forge": "cameraHitResult",
+			"fabric": "crosshairTarget"
+		},
+		{
+			"forge": "blockRenderDispatcher",
+			"fabric": "blockRenderManager"
+		},
+		{
+			"forge": "itemRenderer",
+			"fabric": "itemRenderer"
+		},
+		{
+			"forge": "entityRenderer",
+			"fabric": "entityRenderDispatcher"
+		},
+		{
+			"forge": "getRenderer(E arg0)",
+			"fabric": "get(E blockEntity)"
+		},
+		{
+			"forge": "getRenderer(E arg0)",
+			"fabric": "get(E blockEntity)"
+		},
+		{
+			"forge": "prepare(Level arg0, Camera arg1, HitResult arg2)",
+			"fabric": "configure(World world, Camera camera, HitResult crosshairTarget)"
+		},
+		{
+			"forge": "render(E arg0, float arg1, PoseStack arg2, MultiBufferSource arg3)",
+			"fabric": "render(E blockEntity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers)"
+		},
+		{
+			"forge": "setupAndRender(BlockEntityRenderer<T> arg0, T arg1, float arg2, PoseStack arg3, MultiBufferSource arg4)",
+			"fabric": "render(BlockEntityRenderer<T> renderer, T blockEntity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers)"
+		},
+		{
+			"forge": "renderItem(E arg0, PoseStack arg1, MultiBufferSource arg2, int arg3, int arg4)",
+			"fabric": "renderEntity(E entity, MatrixStack matrix, VertexConsumerProvider vertexConsumerProvider, int light, int overlay)"
+		},
+		{
+			"forge": "tryRender(BlockEntity arg0, Runnable arg1)",
+			"fabric": "runReported(BlockEntity blockEntity, Runnable runnable)"
+		},
+		{
+			"forge": "setLevel(Level arg0)",
+			"fabric": "setWorld(World world)"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.realmsclient.gui.RealmsNewsManager",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.RealmsNewsManager",
+			"fabric": "net.minecraft.client.realms.RealmsNewsUpdater"
+		},
+		{
+			"forge": "newsLocalStorage",
+			"fabric": "persistence"
+		},
+		{
+			"forge": "newsLocalStorage",
+			"fabric": "persistence"
+		},
+		{
+			"forge": "hasUnreadNews",
+			"fabric": "hasUnreadNews"
+		},
+		{
+			"forge": "newsLink",
+			"fabric": "newsLink"
+		},
+		{
+			"forge": "hasUnreadNews()",
+			"fabric": "hasUnreadNews()"
+		},
+		{
+			"forge": "hasUnreadNews()",
+			"fabric": "hasUnreadNews()"
+		},
+		{
+			"forge": "newsLink()",
+			"fabric": "getNewsLink()"
+		},
+		{
+			"forge": "updateUnreadNews(RealmsNews arg0)",
+			"fabric": "updateNews(RealmsNews news)"
+		},
+		{
+			"forge": "updateNewsStorage(RealmsNews arg0)",
+			"fabric": "checkLinkUpdated(RealmsNews news)"
+		}
+	]
+}

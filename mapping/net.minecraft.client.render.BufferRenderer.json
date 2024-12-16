@@ -1,0 +1,53 @@
+{
+	"title": "com.mojang.blaze3d.vertex.BufferUploader",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.BufferUploader",
+			"fabric": "net.minecraft.client.render.BufferRenderer"
+		},
+		{
+			"forge": "lastImmediateBuffer",
+			"fabric": "currentVertexBuffer"
+		},
+		{
+			"forge": "lastImmediateBuffer",
+			"fabric": "currentVertexBuffer"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "invalidate()",
+			"fabric": "resetCurrentVertexBuffer()"
+		},
+		{
+			"forge": "drawWithShader(BufferBuilder$RenderedBuffer arg0)",
+			"fabric": "drawWithGlobalProgram(BufferBuilder$BuiltBuffer buffer)"
+		},
+		{
+			"forge": "_drawWithShader(BufferBuilder$RenderedBuffer arg0)",
+			"fabric": "drawWithGlobalProgramInternal(BufferBuilder$BuiltBuffer buffer)"
+		},
+		{
+			"forge": "draw(BufferBuilder$RenderedBuffer arg0)",
+			"fabric": "draw(BufferBuilder$BuiltBuffer buffer)"
+		},
+		{
+			"forge": "upload(BufferBuilder$RenderedBuffer arg0)",
+			"fabric": "upload(BufferBuilder$BuiltBuffer buffer)"
+		},
+		{
+			"forge": "bindImmediateBuffer(VertexFormat arg0)",
+			"fabric": "bind(VertexFormat vertexFormat)"
+		},
+		{
+			"forge": "bindImmediateBuffer(VertexBuffer arg0)",
+			"fabric": "bind(VertexBuffer vertexBuffer)"
+		}
+	]
+}

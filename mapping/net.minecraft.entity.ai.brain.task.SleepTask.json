@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.SleepInBed",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.SleepInBed",
+			"fabric": "net.minecraft.entity.ai.brain.task.SleepTask"
+		},
+		{
+			"forge": "COOLDOWN_AFTER_BEING_WOKEN",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "COOLDOWN_AFTER_BEING_WOKEN",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "nextOkStartTime",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, LivingEntity arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, LivingEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, LivingEntity arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, LivingEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, LivingEntity arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, LivingEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, LivingEntity arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, LivingEntity arg1, long arg2)"
+		},
+		{
+			"forge": "timedOut(long arg0)",
+			"fabric": "isTimeLimitExceeded(long arg0)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, LivingEntity arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, LivingEntity arg1, long arg2)"
+		}
+	]
+}

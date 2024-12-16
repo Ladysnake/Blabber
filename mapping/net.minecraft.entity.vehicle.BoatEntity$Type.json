@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.Boat$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.Boat$Type",
+			"fabric": "net.minecraft.entity.vehicle.BoatEntity$Type"
+		},
+		{
+			"forge": "OAK",
+			"fabric": "OAK"
+		},
+		{
+			"forge": "OAK",
+			"fabric": "OAK"
+		},
+		{
+			"forge": "SPRUCE",
+			"fabric": "SPRUCE"
+		},
+		{
+			"forge": "BIRCH",
+			"fabric": "BIRCH"
+		},
+		{
+			"forge": "JUNGLE",
+			"fabric": "JUNGLE"
+		},
+		{
+			"forge": "ACACIA",
+			"fabric": "ACACIA"
+		},
+		{
+			"forge": "CHERRY",
+			"fabric": "CHERRY"
+		},
+		{
+			"forge": "DARK_OAK",
+			"fabric": "DARK_OAK"
+		},
+		{
+			"forge": "MANGROVE",
+			"fabric": "MANGROVE"
+		},
+		{
+			"forge": "BAMBOO",
+			"fabric": "BAMBOO"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "planks",
+			"fabric": "baseBlock"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getPlanks()",
+			"fabric": "getBaseBlock()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "getType(int type)"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "getType(String name)"
+		}
+	]
+}

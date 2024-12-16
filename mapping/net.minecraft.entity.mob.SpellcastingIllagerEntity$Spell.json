@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.monster.SpellcasterIllager$IllagerSpell",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.SpellcasterIllager$IllagerSpell",
+			"fabric": "net.minecraft.entity.mob.SpellcastingIllagerEntity$Spell"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "SUMMON_VEX",
+			"fabric": "SUMMON_VEX"
+		},
+		{
+			"forge": "FANGS",
+			"fabric": "FANGS"
+		},
+		{
+			"forge": "WOLOLO",
+			"fabric": "WOLOLO"
+		},
+		{
+			"forge": "DISAPPEAR",
+			"fabric": "DISAPPEAR"
+		},
+		{
+			"forge": "BLINDNESS",
+			"fabric": "BLINDNESS"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "spellColor",
+			"fabric": "particleVelocity"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		}
+	]
+}

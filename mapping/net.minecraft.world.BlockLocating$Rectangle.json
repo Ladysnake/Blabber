@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.BlockUtil$FoundRectangle",
+	"items": [
+		{
+			"forge": "net.minecraft.BlockUtil$FoundRectangle",
+			"fabric": "net.minecraft.world.BlockLocating$Rectangle"
+		},
+		{
+			"forge": "minCorner",
+			"fabric": "lowerLeft"
+		},
+		{
+			"forge": "minCorner",
+			"fabric": "lowerLeft"
+		},
+		{
+			"forge": "axis1Size",
+			"fabric": "width"
+		},
+		{
+			"forge": "axis2Size",
+			"fabric": "height"
+		}
+	]
+}

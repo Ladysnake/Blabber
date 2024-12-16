@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.entity.TickingBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.TickingBlockEntity",
+			"fabric": "net.minecraft.world.chunk.BlockEntityTickInvoker"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isRemoved()",
+			"fabric": "isRemoved()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getName()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.components.toasts.Toast$Visibility",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.toasts.Toast$Visibility",
+			"fabric": "net.minecraft.client.toast.Toast$Visibility"
+		},
+		{
+			"forge": "SHOW",
+			"fabric": "SHOW"
+		},
+		{
+			"forge": "SHOW",
+			"fabric": "SHOW"
+		},
+		{
+			"forge": "HIDE",
+			"fabric": "HIDE"
+		},
+		{
+			"forge": "soundEvent",
+			"fabric": "sound"
+		},
+		{
+			"forge": "soundEvent",
+			"fabric": "sound"
+		},
+		{
+			"forge": "playSound(SoundManager arg0)",
+			"fabric": "playSound(SoundManager soundManager)"
+		},
+		{
+			"forge": "playSound(SoundManager arg0)",
+			"fabric": "playSound(SoundManager soundManager)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.model.SalmonModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.SalmonModel",
+			"fabric": "net.minecraft.client.render.entity.model.SalmonEntityModel"
+		},
+		{
+			"forge": "BODY_FRONT",
+			"fabric": "BODY_FRONT"
+		},
+		{
+			"forge": "BODY_FRONT",
+			"fabric": "BODY_FRONT"
+		},
+		{
+			"forge": "BODY_BACK",
+			"fabric": "BODY_BACK"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "bodyBack",
+			"fabric": "tail"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

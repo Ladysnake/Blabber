@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.screens.packs.PackSelectionScreen$Watcher",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.packs.PackSelectionScreen$Watcher",
+			"fabric": "net.minecraft.client.gui.screen.pack.PackScreen$DirectoryWatcher"
+		},
+		{
+			"forge": "watcher",
+			"fabric": "watchService"
+		},
+		{
+			"forge": "watcher",
+			"fabric": "watchService"
+		},
+		{
+			"forge": "packPath",
+			"fabric": "path"
+		},
+		{
+			"forge": "create(Path arg0)",
+			"fabric": "create(Path path)"
+		},
+		{
+			"forge": "create(Path arg0)",
+			"fabric": "create(Path path)"
+		},
+		{
+			"forge": "watchDir(Path arg0)",
+			"fabric": "watchDirectory(Path path)"
+		},
+		{
+			"forge": "pollForChanges()",
+			"fabric": "pollForChange()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.RenderStateShard$ShaderStateShard",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderStateShard$ShaderStateShard",
+			"fabric": "net.minecraft.client.render.RenderPhase$ShaderProgram"
+		},
+		{
+			"forge": "shader",
+			"fabric": "supplier"
+		},
+		{
+			"forge": "shader",
+			"fabric": "supplier"
+		}
+	]
+}

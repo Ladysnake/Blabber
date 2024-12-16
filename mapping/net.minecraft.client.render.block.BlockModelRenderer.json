@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.renderer.block.ModelBlockRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.ModelBlockRenderer",
+			"fabric": "net.minecraft.client.render.block.BlockModelRenderer"
+		},
+		{
+			"forge": "FACE_CUBIC",
+			"fabric": "field_32782"
+		},
+		{
+			"forge": "FACE_CUBIC",
+			"fabric": "field_32782"
+		},
+		{
+			"forge": "FACE_PARTIAL",
+			"fabric": "field_32783"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "DIRECTIONS"
+		},
+		{
+			"forge": "blockColors",
+			"fabric": "colors"
+		},
+		{
+			"forge": "CACHE_SIZE",
+			"fabric": "BRIGHTNESS_CACHE_MAX_SIZE"
+		},
+		{
+			"forge": "CACHE",
+			"fabric": "BRIGHTNESS_CACHE"
+		},
+		{
+			"forge": "tesselateBlock(BlockAndTintGetter arg0, BakedModel arg1, BlockState arg2, BlockPos arg3, PoseStack arg4, VertexConsumer arg5, boolean arg6, RandomSource arg7, long arg8, int arg9)",
+			"fabric": "render(BlockRenderView world, BakedModel model, BlockState state, BlockPos pos, MatrixStack matrices, VertexConsumer vertexConsumer, boolean cull, Random random, long seed, int overlay)"
+		},
+		{
+			"forge": "tesselateBlock(BlockAndTintGetter arg0, BakedModel arg1, BlockState arg2, BlockPos arg3, PoseStack arg4, VertexConsumer arg5, boolean arg6, RandomSource arg7, long arg8, int arg9)",
+			"fabric": "render(BlockRenderView world, BakedModel model, BlockState state, BlockPos pos, MatrixStack matrices, VertexConsumer vertexConsumer, boolean cull, Random random, long seed, int overlay)"
+		},
+		{
+			"forge": "tesselateWithAO(BlockAndTintGetter arg0, BakedModel arg1, BlockState arg2, BlockPos arg3, PoseStack arg4, VertexConsumer arg5, boolean arg6, RandomSource arg7, long arg8, int arg9)",
+			"fabric": "renderSmooth(BlockRenderView world, BakedModel model, BlockState state, BlockPos pos, MatrixStack matrices, VertexConsumer vertexConsumer, boolean cull, Random random, long seed, int overlay)"
+		},
+		{
+			"forge": "tesselateWithoutAO(BlockAndTintGetter arg0, BakedModel arg1, BlockState arg2, BlockPos arg3, PoseStack arg4, VertexConsumer arg5, boolean arg6, RandomSource arg7, long arg8, int arg9)",
+			"fabric": "renderFlat(BlockRenderView world, BakedModel model, BlockState state, BlockPos pos, MatrixStack matrices, VertexConsumer vertexConsumer, boolean cull, Random random, long seed, int overlay)"
+		},
+		{
+			"forge": "renderModelFaceAO(BlockAndTintGetter arg0, BlockState arg1, BlockPos arg2, PoseStack arg3, VertexConsumer arg4, List<BakedQuad> arg5, float[] arg6, BitSet arg7, ModelBlockRenderer$AmbientOcclusionFace arg8, int arg9)",
+			"fabric": "renderQuadsSmooth(BlockRenderView world, BlockState state, BlockPos pos, MatrixStack matrices, VertexConsumer vertexConsumer, List<BakedQuad> quads, float[] box, BitSet flags, BlockModelRenderer$AmbientOcclusionCalculator ambientOcclusionCalculator, int overlay)"
+		},
+		{
+			"forge": "putQuadData(BlockAndTintGetter arg0, BlockState arg1, BlockPos arg2, VertexConsumer arg3, PoseStack$Pose arg4, BakedQuad arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13, int arg14)",
+			"fabric": "renderQuad(BlockRenderView world, BlockState state, BlockPos pos, VertexConsumer vertexConsumer, MatrixStack$Entry matrixEntry, BakedQuad quad, float brightness0, float brightness1, float brightness2, float brightness3, int light0, int light1, int light2, int light3, int overlay)"
+		},
+		{
+			"forge": "calculateShape(BlockAndTintGetter arg0, BlockState arg1, BlockPos arg2, int[] arg3, Direction arg4, float[] arg5, BitSet arg6)",
+			"fabric": "getQuadDimensions(BlockRenderView world, BlockState state, BlockPos pos, int[] vertexData, Direction face, float[] box, BitSet flags)"
+		},
+		{
+			"forge": "renderModelFaceFlat(BlockAndTintGetter arg0, BlockState arg1, BlockPos arg2, int arg3, int arg4, boolean arg5, PoseStack arg6, VertexConsumer arg7, List<BakedQuad> arg8, BitSet arg9)",
+			"fabric": "renderQuadsFlat(BlockRenderView world, BlockState state, BlockPos pos, int light, int overlay, boolean useWorldLight, MatrixStack matrices, VertexConsumer vertexConsumer, List<BakedQuad> quads, BitSet flags)"
+		},
+		{
+			"forge": "renderModel(PoseStack$Pose arg0, VertexConsumer arg1, BlockState arg2, BakedModel arg3, float arg4, float arg5, float arg6, int arg7, int arg8)",
+			"fabric": "render(MatrixStack$Entry entry, VertexConsumer vertexConsumer, BlockState state, BakedModel bakedModel, float red, float green, float blue, int light, int overlay)"
+		},
+		{
+			"forge": "renderQuadList(PoseStack$Pose arg0, VertexConsumer arg1, float arg2, float arg3, float arg4, List<BakedQuad> arg5, int arg6, int arg7)",
+			"fabric": "renderQuads(MatrixStack$Entry entry, VertexConsumer vertexConsumer, float red, float green, float blue, List<BakedQuad> quads, int light, int overlay)"
+		},
+		{
+			"forge": "enableCaching()",
+			"fabric": "enableBrightnessCache()"
+		},
+		{
+			"forge": "clearCache()",
+			"fabric": "disableBrightnessCache()"
+		}
+	]
+}

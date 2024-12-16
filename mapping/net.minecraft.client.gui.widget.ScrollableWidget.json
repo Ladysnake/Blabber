@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.client.gui.components.AbstractScrollWidget",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.AbstractScrollWidget",
+			"fabric": "net.minecraft.client.gui.widget.ScrollableWidget"
+		},
+		{
+			"forge": "BORDER_COLOR_FOCUSED",
+			"fabric": "FOCUSED_BORDER_COLOR"
+		},
+		{
+			"forge": "BORDER_COLOR_FOCUSED",
+			"fabric": "FOCUSED_BORDER_COLOR"
+		},
+		{
+			"forge": "BORDER_COLOR",
+			"fabric": "UNFOCUSED_BORDER_COLOR"
+		},
+		{
+			"forge": "BACKGROUND_COLOR",
+			"fabric": "BOX_COLOR"
+		},
+		{
+			"forge": "INNER_PADDING",
+			"fabric": "PADDING"
+		},
+		{
+			"forge": "scrollAmount",
+			"fabric": "scrollY"
+		},
+		{
+			"forge": "scrolling",
+			"fabric": "scrollbarDragged"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseReleased(double arg0, double arg1, int arg2)",
+			"fabric": "mouseReleased(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)",
+			"fabric": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "mouseScrolled(double arg0, double arg1, double arg2)",
+			"fabric": "mouseScrolled(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "getScrollBarHeight()",
+			"fabric": "getScrollbarThumbHeight()"
+		},
+		{
+			"forge": "renderDecorations(GuiGraphics arg0)",
+			"fabric": "renderOverlay(DrawContext context)"
+		},
+		{
+			"forge": "innerPadding()",
+			"fabric": "getPadding()"
+		},
+		{
+			"forge": "totalInnerPadding()",
+			"fabric": "getPaddingDoubled()"
+		},
+		{
+			"forge": "scrollAmount()",
+			"fabric": "getScrollY()"
+		},
+		{
+			"forge": "setScrollAmount(double arg0)",
+			"fabric": "setScrollY(double scrollY)"
+		},
+		{
+			"forge": "getMaxScrollAmount()",
+			"fabric": "getMaxScrollY()"
+		},
+		{
+			"forge": "getContentHeight()",
+			"fabric": "getContentsHeightWithPadding()"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "drawBox(DrawContext context)"
+		},
+		{
+			"forge": "renderBorder(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawBox(DrawContext context, int x, int y, int width, int height)"
+		},
+		{
+			"forge": "renderScrollBar(GuiGraphics arg0)",
+			"fabric": "drawScrollbar(DrawContext context)"
+		},
+		{
+			"forge": "withinContentAreaTopBottom(int arg0, int arg1)",
+			"fabric": "isVisible(int top, int bottom)"
+		},
+		{
+			"forge": "withinContentAreaPoint(double arg0, double arg1)",
+			"fabric": "isWithinBounds(double mouseX, double mouseY)"
+		},
+		{
+			"forge": "scrollbarVisible()",
+			"fabric": "overflows()"
+		},
+		{
+			"forge": "getInnerHeight()",
+			"fabric": "getContentsHeight()"
+		},
+		{
+			"forge": "scrollRate()",
+			"fabric": "getDeltaYPerScroll()"
+		},
+		{
+			"forge": "renderContents(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderContents(DrawContext context, int mouseX, int mouseY, float delta)"
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.server.players.StoredUserList",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.StoredUserList",
+			"fabric": "net.minecraft.server.ServerConfigList"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "file",
+			"fabric": "file"
+		},
+		{
+			"forge": "map",
+			"fabric": "map"
+		},
+		{
+			"forge": "getFile()",
+			"fabric": "getFile()"
+		},
+		{
+			"forge": "getFile()",
+			"fabric": "getFile()"
+		},
+		{
+			"forge": "add(V arg0)",
+			"fabric": "add(V entry)"
+		},
+		{
+			"forge": "get(K arg0)",
+			"fabric": "get(K key)"
+		},
+		{
+			"forge": "remove(K arg0)",
+			"fabric": "remove(K key)"
+		},
+		{
+			"forge": "remove(StoredUserEntry<K> arg0)",
+			"fabric": "remove(ServerConfigEntry<K> entry)"
+		},
+		{
+			"forge": "getUserList()",
+			"fabric": "getNames()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getKeyForUser(K arg0)",
+			"fabric": "toString(K profile)"
+		},
+		{
+			"forge": "contains(K arg0)",
+			"fabric": "contains(K arg0)"
+		},
+		{
+			"forge": "removeExpired()",
+			"fabric": "removeInvalidEntries()"
+		},
+		{
+			"forge": "createEntry(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "getEntries()",
+			"fabric": "values()"
+		},
+		{
+			"forge": "save()",
+			"fabric": "save()"
+		},
+		{
+			"forge": "load()",
+			"fabric": "load()"
+		}
+	]
+}

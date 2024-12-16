@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.network.chat.FormattedText$1",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.FormattedText$1",
+			"fabric": "net.minecraft.text.StringVisitable$1"
+		},
+		{
+			"forge": "visit(FormattedText$ContentConsumer<T> arg0)",
+			"fabric": "visit(StringVisitable$Visitor<T> arg0)"
+		},
+		{
+			"forge": "visit(FormattedText$ContentConsumer<T> arg0)",
+			"fabric": "visit(StringVisitable$Visitor<T> arg0)"
+		},
+		{
+			"forge": "visit(FormattedText$StyledContentConsumer<T> arg0, Style arg1)",
+			"fabric": "visit(StringVisitable$StyledVisitor<T> arg0, Style arg1)"
+		}
+	]
+}

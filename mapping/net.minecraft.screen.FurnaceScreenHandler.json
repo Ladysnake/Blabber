@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.inventory.FurnaceMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.FurnaceMenu",
+			"fabric": "net.minecraft.screen.FurnaceScreenHandler"
+		}
+	]
+}

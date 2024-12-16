@@ -1,0 +1,225 @@
+{
+	"title": "net.minecraft.world.level.border.WorldBorder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.border.WorldBorder",
+			"fabric": "net.minecraft.world.border.WorldBorder"
+		},
+		{
+			"forge": "MAX_SIZE",
+			"fabric": "STATIC_AREA_SIZE"
+		},
+		{
+			"forge": "MAX_SIZE",
+			"fabric": "STATIC_AREA_SIZE"
+		},
+		{
+			"forge": "MAX_CENTER_COORDINATE",
+			"fabric": "MAX_CENTER_COORDINATES"
+		},
+		{
+			"forge": "listeners",
+			"fabric": "listeners"
+		},
+		{
+			"forge": "damagePerBlock",
+			"fabric": "damagePerBlock"
+		},
+		{
+			"forge": "damageSafeZone",
+			"fabric": "safeZone"
+		},
+		{
+			"forge": "warningTime",
+			"fabric": "warningTime"
+		},
+		{
+			"forge": "warningBlocks",
+			"fabric": "warningBlocks"
+		},
+		{
+			"forge": "centerX",
+			"fabric": "centerX"
+		},
+		{
+			"forge": "centerZ",
+			"fabric": "centerZ"
+		},
+		{
+			"forge": "absoluteMaxSize",
+			"fabric": "maxRadius"
+		},
+		{
+			"forge": "extent",
+			"fabric": "area"
+		},
+		{
+			"forge": "DEFAULT_SETTINGS",
+			"fabric": "DEFAULT_BORDER"
+		},
+		{
+			"forge": "isWithinBounds(BlockPos arg0)",
+			"fabric": "contains(BlockPos pos)"
+		},
+		{
+			"forge": "isWithinBounds(BlockPos arg0)",
+			"fabric": "contains(BlockPos pos)"
+		},
+		{
+			"forge": "isWithinBounds(ChunkPos arg0)",
+			"fabric": "contains(ChunkPos pos)"
+		},
+		{
+			"forge": "isWithinBounds(double arg0, double arg1)",
+			"fabric": "contains(double x, double z)"
+		},
+		{
+			"forge": "isWithinBounds(double arg0, double arg1, double arg2)",
+			"fabric": "contains(double x, double z, double margin)"
+		},
+		{
+			"forge": "isWithinBounds(AABB arg0)",
+			"fabric": "contains(Box box)"
+		},
+		{
+			"forge": "clampToBounds(double arg0, double arg1, double arg2)",
+			"fabric": "clamp(double x, double y, double z)"
+		},
+		{
+			"forge": "getDistanceToBorder(Entity arg0)",
+			"fabric": "getDistanceInsideBorder(Entity entity)"
+		},
+		{
+			"forge": "getCollisionShape()",
+			"fabric": "asVoxelShape()"
+		},
+		{
+			"forge": "getDistanceToBorder(double arg0, double arg1)",
+			"fabric": "getDistanceInsideBorder(double x, double z)"
+		},
+		{
+			"forge": "isInsideCloseToBorder(Entity arg0, AABB arg1)",
+			"fabric": "canCollide(Entity entity, Box box)"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "getStage()"
+		},
+		{
+			"forge": "getMinX()",
+			"fabric": "getBoundWest()"
+		},
+		{
+			"forge": "getMinZ()",
+			"fabric": "getBoundNorth()"
+		},
+		{
+			"forge": "getMaxX()",
+			"fabric": "getBoundEast()"
+		},
+		{
+			"forge": "getMaxZ()",
+			"fabric": "getBoundSouth()"
+		},
+		{
+			"forge": "getCenterX()",
+			"fabric": "getCenterX()"
+		},
+		{
+			"forge": "getCenterZ()",
+			"fabric": "getCenterZ()"
+		},
+		{
+			"forge": "setCenter(double arg0, double arg1)",
+			"fabric": "setCenter(double x, double z)"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getLerpRemainingTime()",
+			"fabric": "getSizeLerpTime()"
+		},
+		{
+			"forge": "getLerpTarget()",
+			"fabric": "getSizeLerpTarget()"
+		},
+		{
+			"forge": "setSize(double arg0)",
+			"fabric": "setSize(double size)"
+		},
+		{
+			"forge": "lerpSizeBetween(double arg0, double arg1, long arg2)",
+			"fabric": "interpolateSize(double fromSize, double toSize, long time)"
+		},
+		{
+			"forge": "getListeners()",
+			"fabric": "getListeners()"
+		},
+		{
+			"forge": "addListener(BorderChangeListener arg0)",
+			"fabric": "addListener(WorldBorderListener listener)"
+		},
+		{
+			"forge": "removeListener(BorderChangeListener arg0)",
+			"fabric": "removeListener(WorldBorderListener listener)"
+		},
+		{
+			"forge": "setAbsoluteMaxSize(int arg0)",
+			"fabric": "setMaxRadius(int maxRadius)"
+		},
+		{
+			"forge": "getAbsoluteMaxSize()",
+			"fabric": "getMaxRadius()"
+		},
+		{
+			"forge": "getDamageSafeZone()",
+			"fabric": "getSafeZone()"
+		},
+		{
+			"forge": "setDamageSafeZone(double arg0)",
+			"fabric": "setSafeZone(double safeZone)"
+		},
+		{
+			"forge": "getDamagePerBlock()",
+			"fabric": "getDamagePerBlock()"
+		},
+		{
+			"forge": "setDamagePerBlock(double arg0)",
+			"fabric": "setDamagePerBlock(double damagePerBlock)"
+		},
+		{
+			"forge": "getLerpSpeed()",
+			"fabric": "getShrinkingSpeed()"
+		},
+		{
+			"forge": "getWarningTime()",
+			"fabric": "getWarningTime()"
+		},
+		{
+			"forge": "setWarningTime(int arg0)",
+			"fabric": "setWarningTime(int warningTime)"
+		},
+		{
+			"forge": "getWarningBlocks()",
+			"fabric": "getWarningBlocks()"
+		},
+		{
+			"forge": "setWarningBlocks(int arg0)",
+			"fabric": "setWarningBlocks(int warningBlocks)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "createSettings()",
+			"fabric": "write()"
+		},
+		{
+			"forge": "applySettings(WorldBorder$Settings arg0)",
+			"fabric": "load(WorldBorder$Properties properties)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.level.ChunkMap$DistanceManager",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ChunkMap$DistanceManager",
+			"fabric": "net.minecraft.server.world.ThreadedAnvilChunkStorage$TicketManager"
+		},
+		{
+			"forge": "isChunkToRemove(long arg0)",
+			"fabric": "isUnloaded(long arg0)"
+		},
+		{
+			"forge": "isChunkToRemove(long arg0)",
+			"fabric": "isUnloaded(long arg0)"
+		},
+		{
+			"forge": "getChunk(long arg0)",
+			"fabric": "getChunkHolder(long arg0)"
+		},
+		{
+			"forge": "updateChunkScheduling(long arg0, int arg1, ChunkHolder arg2, int arg3)",
+			"fabric": "setLevel(long arg0, int arg1, ChunkHolder arg2, int arg3)"
+		}
+	]
+}

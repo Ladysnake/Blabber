@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.BlockElementFace$Deserializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.BlockElementFace$Deserializer",
+			"fabric": "net.minecraft.client.render.model.json.ModelElementFace$Deserializer"
+		},
+		{
+			"forge": "DEFAULT_TINT_INDEX",
+			"fabric": "DEFAULT_TINT_INDEX"
+		},
+		{
+			"forge": "DEFAULT_TINT_INDEX",
+			"fabric": "DEFAULT_TINT_INDEX"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "getTintIndex(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeTintIndex(com.google.gson.JsonObject object)"
+		},
+		{
+			"forge": "getTexture(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeTexture(com.google.gson.JsonObject object)"
+		},
+		{
+			"forge": "getCullFacing(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeCullFace(com.google.gson.JsonObject object)"
+		}
+	]
+}

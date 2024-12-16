@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.server.level.progress.StoringChunkProgressListener",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.progress.StoringChunkProgressListener",
+			"fabric": "net.minecraft.client.gui.WorldGenerationProgressTracker"
+		},
+		{
+			"forge": "delegate",
+			"fabric": "progressLogger"
+		},
+		{
+			"forge": "delegate",
+			"fabric": "progressLogger"
+		},
+		{
+			"forge": "statuses",
+			"fabric": "chunkStatuses"
+		},
+		{
+			"forge": "spawnPos",
+			"fabric": "spawnPos"
+		},
+		{
+			"forge": "fullDiameter",
+			"fabric": "centerSize"
+		},
+		{
+			"forge": "radius",
+			"fabric": "radius"
+		},
+		{
+			"forge": "diameter",
+			"fabric": "size"
+		},
+		{
+			"forge": "started",
+			"fabric": "running"
+		},
+		{
+			"forge": "updateSpawnPos(ChunkPos arg0)",
+			"fabric": "start(ChunkPos arg0)"
+		},
+		{
+			"forge": "updateSpawnPos(ChunkPos arg0)",
+			"fabric": "start(ChunkPos arg0)"
+		},
+		{
+			"forge": "onStatusChange(ChunkPos arg0, ChunkStatus arg1)",
+			"fabric": "setChunkStatus(ChunkPos arg0, ChunkStatus arg1)"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "getFullDiameter()",
+			"fabric": "getCenterSize()"
+		},
+		{
+			"forge": "getDiameter()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getProgress()",
+			"fabric": "getProgressPercentage()"
+		},
+		{
+			"forge": "getStatus(int arg0, int arg1)",
+			"fabric": "getChunkStatus(int x, int z)"
+		}
+	]
+}

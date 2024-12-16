@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.item.ArmorItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ArmorItem",
+			"fabric": "net.minecraft.item.ArmorItem"
+		},
+		{
+			"forge": "ARMOR_MODIFIER_UUID_PER_TYPE",
+			"fabric": "MODIFIERS"
+		},
+		{
+			"forge": "ARMOR_MODIFIER_UUID_PER_TYPE",
+			"fabric": "MODIFIERS"
+		},
+		{
+			"forge": "DISPENSE_ITEM_BEHAVIOR",
+			"fabric": "DISPENSER_BEHAVIOR"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "defense",
+			"fabric": "protection"
+		},
+		{
+			"forge": "toughness",
+			"fabric": "toughness"
+		},
+		{
+			"forge": "knockbackResistance",
+			"fabric": "knockbackResistance"
+		},
+		{
+			"forge": "material",
+			"fabric": "material"
+		},
+		{
+			"forge": "defaultModifiers",
+			"fabric": "attributeModifiers"
+		},
+		{
+			"forge": "dispenseArmor(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseArmor(BlockPointer pointer, ItemStack armor)"
+		},
+		{
+			"forge": "dispenseArmor(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseArmor(BlockPointer pointer, ItemStack armor)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getEnchantmentValue()",
+			"fabric": "getEnchantability()"
+		},
+		{
+			"forge": "getMaterial()",
+			"fabric": "getMaterial()"
+		},
+		{
+			"forge": "isValidRepairItem(ItemStack arg0, ItemStack arg1)",
+			"fabric": "canRepair(ItemStack arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "getDefaultAttributeModifiers(EquipmentSlot arg0)",
+			"fabric": "getAttributeModifiers(EquipmentSlot arg0)"
+		},
+		{
+			"forge": "getDefense()",
+			"fabric": "getProtection()"
+		},
+		{
+			"forge": "getToughness()",
+			"fabric": "getToughness()"
+		},
+		{
+			"forge": "getEquipmentSlot()",
+			"fabric": "getSlotType()"
+		},
+		{
+			"forge": "getEquipSound()",
+			"fabric": "getEquipSound()"
+		}
+	]
+}

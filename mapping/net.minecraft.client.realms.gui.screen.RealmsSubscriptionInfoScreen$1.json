@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSubscriptionInfoScreen$1",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSubscriptionInfoScreen$1",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSubscriptionInfoScreen$1"
+		}
+	]
+}

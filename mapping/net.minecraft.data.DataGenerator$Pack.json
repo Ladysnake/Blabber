@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.data.DataGenerator$PackGenerator",
+	"items": [
+		{
+			"forge": "net.minecraft.data.DataGenerator$PackGenerator",
+			"fabric": "net.minecraft.data.DataGenerator$Pack"
+		},
+		{
+			"forge": "toRun",
+			"fabric": "shouldRun"
+		},
+		{
+			"forge": "toRun",
+			"fabric": "shouldRun"
+		},
+		{
+			"forge": "providerPrefix",
+			"fabric": "packName"
+		},
+		{
+			"forge": "output",
+			"fabric": "output"
+		},
+		{
+			"forge": "addProvider(DataProvider$Factory<T> arg0)",
+			"fabric": "addProvider(DataProvider$Factory<T> factory)"
+		},
+		{
+			"forge": "addProvider(DataProvider$Factory<T> arg0)",
+			"fabric": "addProvider(DataProvider$Factory<T> factory)"
+		}
+	]
+}

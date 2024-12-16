@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.renderer.RenderStateShard$OverlayStateShard",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderStateShard$OverlayStateShard",
+			"fabric": "net.minecraft.client.render.RenderPhase$Overlay"
+		}
+	]
+}

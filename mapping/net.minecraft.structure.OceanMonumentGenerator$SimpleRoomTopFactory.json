@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$FitSimpleTopRoom",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$FitSimpleTopRoom",
+			"fabric": "net.minecraft.structure.OceanMonumentGenerator$SimpleRoomTopFactory"
+		},
+		{
+			"forge": "fits(OceanMonumentPieces$RoomDefinition arg0)",
+			"fabric": "canGenerate(OceanMonumentGenerator$PieceSetting arg0)"
+		},
+		{
+			"forge": "fits(OceanMonumentPieces$RoomDefinition arg0)",
+			"fabric": "canGenerate(OceanMonumentGenerator$PieceSetting arg0)"
+		},
+		{
+			"forge": "create(Direction arg0, OceanMonumentPieces$RoomDefinition arg1, RandomSource arg2)",
+			"fabric": "generate(Direction arg0, OceanMonumentGenerator$PieceSetting arg1, Random arg2)"
+		}
+	]
+}

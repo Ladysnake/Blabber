@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$NotCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$NotCondition",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$InvertedBooleanSupplier"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "test()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "test()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "target()",
+			"fabric": "target()"
+		}
+	]
+}

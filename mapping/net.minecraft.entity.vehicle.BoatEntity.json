@@ -1,0 +1,401 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.Boat",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.Boat",
+			"fabric": "net.minecraft.entity.vehicle.BoatEntity"
+		},
+		{
+			"forge": "DATA_ID_HURT",
+			"fabric": "DAMAGE_WOBBLE_TICKS"
+		},
+		{
+			"forge": "DATA_ID_HURT",
+			"fabric": "DAMAGE_WOBBLE_TICKS"
+		},
+		{
+			"forge": "DATA_ID_HURTDIR",
+			"fabric": "DAMAGE_WOBBLE_SIDE"
+		},
+		{
+			"forge": "DATA_ID_DAMAGE",
+			"fabric": "DAMAGE_WOBBLE_STRENGTH"
+		},
+		{
+			"forge": "DATA_ID_TYPE",
+			"fabric": "BOAT_TYPE"
+		},
+		{
+			"forge": "DATA_ID_PADDLE_LEFT",
+			"fabric": "LEFT_PADDLE_MOVING"
+		},
+		{
+			"forge": "DATA_ID_PADDLE_RIGHT",
+			"fabric": "RIGHT_PADDLE_MOVING"
+		},
+		{
+			"forge": "DATA_ID_BUBBLE_TIME",
+			"fabric": "BUBBLE_WOBBLE_TICKS"
+		},
+		{
+			"forge": "PADDLE_LEFT",
+			"fabric": "field_30697"
+		},
+		{
+			"forge": "PADDLE_RIGHT",
+			"fabric": "field_30698"
+		},
+		{
+			"forge": "TIME_TO_EJECT",
+			"fabric": "field_30695"
+		},
+		{
+			"forge": "PADDLE_SPEED",
+			"fabric": "NEXT_PADDLE_PHASE"
+		},
+		{
+			"forge": "PADDLE_SOUND_TIME",
+			"fabric": "EMIT_SOUND_EVENT_PADDLE_ROTATION"
+		},
+		{
+			"forge": "BUBBLE_TIME",
+			"fabric": "field_30700"
+		},
+		{
+			"forge": "paddlePositions",
+			"fabric": "paddlePhases"
+		},
+		{
+			"forge": "invFriction",
+			"fabric": "velocityDecay"
+		},
+		{
+			"forge": "outOfControlTicks",
+			"fabric": "ticksUnderwater"
+		},
+		{
+			"forge": "deltaRotation",
+			"fabric": "yawVelocity"
+		},
+		{
+			"forge": "lerpSteps",
+			"fabric": "field_7708"
+		},
+		{
+			"forge": "lerpX",
+			"fabric": "x"
+		},
+		{
+			"forge": "lerpY",
+			"fabric": "y"
+		},
+		{
+			"forge": "lerpZ",
+			"fabric": "z"
+		},
+		{
+			"forge": "lerpYRot",
+			"fabric": "boatYaw"
+		},
+		{
+			"forge": "lerpXRot",
+			"fabric": "boatPitch"
+		},
+		{
+			"forge": "inputLeft",
+			"fabric": "pressingLeft"
+		},
+		{
+			"forge": "inputRight",
+			"fabric": "pressingRight"
+		},
+		{
+			"forge": "inputUp",
+			"fabric": "pressingForward"
+		},
+		{
+			"forge": "inputDown",
+			"fabric": "pressingBack"
+		},
+		{
+			"forge": "waterLevel",
+			"fabric": "waterLevel"
+		},
+		{
+			"forge": "landFriction",
+			"fabric": "nearbySlipperiness"
+		},
+		{
+			"forge": "status",
+			"fabric": "location"
+		},
+		{
+			"forge": "oldStatus",
+			"fabric": "lastLocation"
+		},
+		{
+			"forge": "lastYd",
+			"fabric": "fallVelocity"
+		},
+		{
+			"forge": "isAboveBubbleColumn",
+			"fabric": "onBubbleColumnSurface"
+		},
+		{
+			"forge": "bubbleColumnDirectionIsDown",
+			"fabric": "bubbleColumnIsDrag"
+		},
+		{
+			"forge": "bubbleMultiplier",
+			"fabric": "bubbleWobbleStrength"
+		},
+		{
+			"forge": "bubbleAngle",
+			"fabric": "bubbleWobble"
+		},
+		{
+			"forge": "bubbleAngleO",
+			"fabric": "lastBubbleWobble"
+		},
+		{
+			"forge": "getEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "getEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "canCollideWith(Entity arg0)",
+			"fabric": "collidesWith(Entity arg0)"
+		},
+		{
+			"forge": "canVehicleCollide(Entity arg0, Entity arg1)",
+			"fabric": "canCollide(Entity entity, Entity other)"
+		},
+		{
+			"forge": "canBeCollidedWith()",
+			"fabric": "isCollidable()"
+		},
+		{
+			"forge": "isPushable()",
+			"fabric": "isPushable()"
+		},
+		{
+			"forge": "getRelativePortalPosition(Direction$Axis arg0, BlockUtil$FoundRectangle arg1)",
+			"fabric": "positionInPortal(Direction$Axis arg0, BlockLocating$Rectangle arg1)"
+		},
+		{
+			"forge": "getPassengersRidingOffset()",
+			"fabric": "getMountedHeightOffset()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "destroy(DamageSource arg0)",
+			"fabric": "dropItems(DamageSource source)"
+		},
+		{
+			"forge": "onAboveBubbleCol(boolean arg0)",
+			"fabric": "onBubbleColumnSurfaceCollision(boolean arg0)"
+		},
+		{
+			"forge": "push(Entity arg0)",
+			"fabric": "pushAwayFrom(Entity arg0)"
+		},
+		{
+			"forge": "getDropItem()",
+			"fabric": "asItem()"
+		},
+		{
+			"forge": "animateHurt(float arg0)",
+			"fabric": "animateDamage(float arg0)"
+		},
+		{
+			"forge": "isPickable()",
+			"fabric": "canHit()"
+		},
+		{
+			"forge": "lerpTo(double arg0, double arg1, double arg2, float arg3, float arg4, int arg5, boolean arg6)",
+			"fabric": "updateTrackedPositionAndAngles(double arg0, double arg1, double arg2, float arg3, float arg4, int arg5, boolean arg6)"
+		},
+		{
+			"forge": "getMotionDirection()",
+			"fabric": "getMovementDirection()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tickBubbleColumn()",
+			"fabric": "handleBubbleColumn()"
+		},
+		{
+			"forge": "getPaddleSound()",
+			"fabric": "getPaddleSoundEvent()"
+		},
+		{
+			"forge": "tickLerp()",
+			"fabric": "updatePositionAndRotation()"
+		},
+		{
+			"forge": "setPaddleState(boolean arg0, boolean arg1)",
+			"fabric": "setPaddleMovings(boolean leftMoving, boolean rightMoving)"
+		},
+		{
+			"forge": "getRowingTime(int arg0, float arg1)",
+			"fabric": "interpolatePaddlePhase(int paddle, float tickDelta)"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "checkLocation()"
+		},
+		{
+			"forge": "getWaterLevelAbove()",
+			"fabric": "getWaterHeightBelow()"
+		},
+		{
+			"forge": "getGroundFriction()",
+			"fabric": "getNearbySlipperiness()"
+		},
+		{
+			"forge": "checkInWater()",
+			"fabric": "checkBoatInWater()"
+		},
+		{
+			"forge": "isUnderwater()",
+			"fabric": "getUnderWaterLocation()"
+		},
+		{
+			"forge": "floatBoat()",
+			"fabric": "updateVelocity()"
+		},
+		{
+			"forge": "controlBoat()",
+			"fabric": "updatePaddles()"
+		},
+		{
+			"forge": "getSinglePassengerXOffset()",
+			"fabric": "getPassengerHorizontalOffset()"
+		},
+		{
+			"forge": "hasEnoughSpaceFor(Entity arg0)",
+			"fabric": "isSmallerThanBoat(Entity entity)"
+		},
+		{
+			"forge": "positionRider(Entity arg0, Entity$MoveFunction arg1)",
+			"fabric": "updatePassengerPosition(Entity arg0, Entity$PositionUpdater arg1)"
+		},
+		{
+			"forge": "getDismountLocationForPassenger(LivingEntity arg0)",
+			"fabric": "updatePassengerForDismount(LivingEntity arg0)"
+		},
+		{
+			"forge": "clampRotation(Entity arg0)",
+			"fabric": "copyEntityData(Entity entity)"
+		},
+		{
+			"forge": "onPassengerTurned(Entity arg0)",
+			"fabric": "onPassengerLookAround(Entity arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "interact(Player arg0, InteractionHand arg1)",
+			"fabric": "interact(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "checkFallDamage(double arg0, boolean arg1, BlockState arg2, BlockPos arg3)",
+			"fabric": "fall(double arg0, boolean arg1, BlockState arg2, BlockPos arg3)"
+		},
+		{
+			"forge": "getPaddleState(int arg0)",
+			"fabric": "isPaddleMoving(int paddle)"
+		},
+		{
+			"forge": "setDamage(float arg0)",
+			"fabric": "setDamageWobbleStrength(float wobbleStrength)"
+		},
+		{
+			"forge": "getDamage()",
+			"fabric": "getDamageWobbleStrength()"
+		},
+		{
+			"forge": "setHurtTime(int arg0)",
+			"fabric": "setDamageWobbleTicks(int wobbleTicks)"
+		},
+		{
+			"forge": "getHurtTime()",
+			"fabric": "getDamageWobbleTicks()"
+		},
+		{
+			"forge": "setBubbleTime(int arg0)",
+			"fabric": "setBubbleWobbleTicks(int wobbleTicks)"
+		},
+		{
+			"forge": "getBubbleTime()",
+			"fabric": "getBubbleWobbleTicks()"
+		},
+		{
+			"forge": "getBubbleAngle(float arg0)",
+			"fabric": "interpolateBubbleWobble(float tickDelta)"
+		},
+		{
+			"forge": "setHurtDir(int arg0)",
+			"fabric": "setDamageWobbleSide(int side)"
+		},
+		{
+			"forge": "getHurtDir()",
+			"fabric": "getDamageWobbleSide()"
+		},
+		{
+			"forge": "setVariant(Boat$Type arg0)",
+			"fabric": "setVariant(BoatEntity$Type arg0)"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "canAddPassenger(Entity arg0)",
+			"fabric": "canAddPassenger(Entity arg0)"
+		},
+		{
+			"forge": "getMaxPassengers()",
+			"fabric": "getMaxPassengers()"
+		},
+		{
+			"forge": "getControllingPassenger()",
+			"fabric": "getControllingPassenger()"
+		},
+		{
+			"forge": "setInput(boolean arg0, boolean arg1, boolean arg2, boolean arg3)",
+			"fabric": "setInputs(boolean pressingLeft, boolean pressingRight, boolean pressingForward, boolean pressingBack)"
+		},
+		{
+			"forge": "isUnderWater()",
+			"fabric": "isSubmergedInWater()"
+		},
+		{
+			"forge": "getPickResult()",
+			"fabric": "getPickBlockStack()"
+		}
+	]
+}

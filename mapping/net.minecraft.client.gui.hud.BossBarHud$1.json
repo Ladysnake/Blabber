@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.components.BossHealthOverlay$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.BossHealthOverlay$1",
+			"fabric": "net.minecraft.client.gui.hud.BossBarHud$1"
+		},
+		{
+			"forge": "add(UUID arg0, Component arg1, float arg2, BossEvent$BossBarColor arg3, BossEvent$BossBarOverlay arg4, boolean arg5, boolean arg6, boolean arg7)",
+			"fabric": "add(UUID arg0, Text arg1, float arg2, BossBar$Color arg3, BossBar$Style arg4, boolean arg5, boolean arg6, boolean arg7)"
+		},
+		{
+			"forge": "add(UUID arg0, Component arg1, float arg2, BossEvent$BossBarColor arg3, BossEvent$BossBarOverlay arg4, boolean arg5, boolean arg6, boolean arg7)",
+			"fabric": "add(UUID arg0, Text arg1, float arg2, BossBar$Color arg3, BossBar$Style arg4, boolean arg5, boolean arg6, boolean arg7)"
+		},
+		{
+			"forge": "remove(UUID arg0)",
+			"fabric": "remove(UUID arg0)"
+		},
+		{
+			"forge": "updateProgress(UUID arg0, float arg1)",
+			"fabric": "updateProgress(UUID arg0, float arg1)"
+		},
+		{
+			"forge": "updateName(UUID arg0, Component arg1)",
+			"fabric": "updateName(UUID arg0, Text arg1)"
+		},
+		{
+			"forge": "updateStyle(UUID arg0, BossEvent$BossBarColor arg1, BossEvent$BossBarOverlay arg2)",
+			"fabric": "updateStyle(UUID arg0, BossBar$Color arg1, BossBar$Style arg2)"
+		},
+		{
+			"forge": "updateProperties(UUID arg0, boolean arg1, boolean arg2, boolean arg3)",
+			"fabric": "updateProperties(UUID arg0, boolean arg1, boolean arg2, boolean arg3)"
+		}
+	]
+}

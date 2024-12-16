@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.RootsBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.RootsBlock",
+			"fabric": "net.minecraft.block.RootsBlock"
+		},
+		{
+			"forge": "AABB_OFFSET",
+			"fabric": "field_31235"
+		},
+		{
+			"forge": "AABB_OFFSET",
+			"fabric": "field_31235"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "mayPlaceOn(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "canPlantOnTop(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		}
+	]
+}

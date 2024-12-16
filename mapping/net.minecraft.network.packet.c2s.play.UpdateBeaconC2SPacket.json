@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundSetBeaconPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundSetBeaconPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.UpdateBeaconC2SPacket"
+		},
+		{
+			"forge": "primary",
+			"fabric": "primaryEffectId"
+		},
+		{
+			"forge": "primary",
+			"fabric": "primaryEffectId"
+		},
+		{
+			"forge": "secondary",
+			"fabric": "secondaryEffectId"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getPrimary()",
+			"fabric": "getPrimaryEffectId()"
+		},
+		{
+			"forge": "getSecondary()",
+			"fabric": "getSecondaryEffectId()"
+		}
+	]
+}

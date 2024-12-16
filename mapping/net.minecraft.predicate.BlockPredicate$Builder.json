@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.advancements.critereon.BlockPredicate$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.BlockPredicate$Builder",
+			"fabric": "net.minecraft.predicate.BlockPredicate$Builder"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tag"
+		},
+		{
+			"forge": "properties",
+			"fabric": "state"
+		},
+		{
+			"forge": "nbt",
+			"fabric": "nbt"
+		},
+		{
+			"forge": "block()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "block()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "of(Block... arg0)",
+			"fabric": "blocks(Block... blocks)"
+		},
+		{
+			"forge": "of(Iterable<Block> arg0)",
+			"fabric": "blocks(Iterable<Block> blocks)"
+		},
+		{
+			"forge": "of(TagKey<Block> arg0)",
+			"fabric": "tag(TagKey<Block> tag)"
+		},
+		{
+			"forge": "hasNbt(CompoundTag arg0)",
+			"fabric": "nbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "setProperties(StatePropertiesPredicate arg0)",
+			"fabric": "state(StatePredicate state)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

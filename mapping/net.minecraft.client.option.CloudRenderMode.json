@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.CloudStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.client.CloudStatus",
+			"fabric": "net.minecraft.client.option.CloudRenderMode"
+		},
+		{
+			"forge": "OFF",
+			"fabric": "OFF"
+		},
+		{
+			"forge": "OFF",
+			"fabric": "OFF"
+		},
+		{
+			"forge": "FAST",
+			"fabric": "FAST"
+		},
+		{
+			"forge": "FANCY",
+			"fabric": "FANCY"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "key",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getKey()",
+			"fabric": "getTranslationKey()"
+		}
+	]
+}

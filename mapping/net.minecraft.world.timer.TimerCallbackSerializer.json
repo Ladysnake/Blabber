@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.timers.TimerCallbacks",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.timers.TimerCallbacks",
+			"fabric": "net.minecraft.world.timer.TimerCallbackSerializer"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SERVER_CALLBACKS",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "idToSerializer",
+			"fabric": "serializersByType"
+		},
+		{
+			"forge": "classToSerializer",
+			"fabric": "serializersByClass"
+		},
+		{
+			"forge": "register(TimerCallback$Serializer<C, ?> arg0)",
+			"fabric": "registerSerializer(TimerCallback$Serializer<C, ?> serializer)"
+		},
+		{
+			"forge": "register(TimerCallback$Serializer<C, ?> arg0)",
+			"fabric": "registerSerializer(TimerCallback$Serializer<C, ?> serializer)"
+		},
+		{
+			"forge": "getSerializer(Class<?> arg0)",
+			"fabric": "getSerializer(Class<?> clazz)"
+		},
+		{
+			"forge": "serialize(T arg0)",
+			"fabric": "serialize(T callback)"
+		},
+		{
+			"forge": "deserialize(CompoundTag arg0)",
+			"fabric": "deserialize(NbtCompound nbt)"
+		}
+	]
+}

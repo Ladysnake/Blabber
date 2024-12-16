@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.block.MelonBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.MelonBlock",
+			"fabric": "net.minecraft.block.MelonBlock"
+		},
+		{
+			"forge": "getStem()",
+			"fabric": "getStem()"
+		},
+		{
+			"forge": "getStem()",
+			"fabric": "getStem()"
+		},
+		{
+			"forge": "getAttachedStem()",
+			"fabric": "getAttachedStem()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.entries.EmptyLootItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.entries.EmptyLootItem",
+			"fabric": "net.minecraft.loot.entry.EmptyEntry"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "createItemStack(Consumer<ItemStack> arg0, LootContext arg1)",
+			"fabric": "generateLoot(Consumer<ItemStack> arg0, LootContext arg1)"
+		},
+		{
+			"forge": "emptyItem()",
+			"fabric": "builder()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.tags.TagFile",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.TagFile",
+			"fabric": "net.minecraft.registry.tag.TagFile"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "entries",
+			"fabric": "entries"
+		},
+		{
+			"forge": "replace",
+			"fabric": "replace"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "entries()",
+			"fabric": "entries()"
+		},
+		{
+			"forge": "entries()",
+			"fabric": "entries()"
+		},
+		{
+			"forge": "replace()",
+			"fabric": "replace()"
+		}
+	]
+}

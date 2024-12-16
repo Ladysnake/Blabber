@@ -1,0 +1,181 @@
+{
+	"title": "net.minecraft.world.level.block.LecternBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.LecternBlock",
+			"fabric": "net.minecraft.block.LecternBlock"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "HAS_BOOK",
+			"fabric": "HAS_BOOK"
+		},
+		{
+			"forge": "SHAPE_BASE",
+			"fabric": "BOTTOM_SHAPE"
+		},
+		{
+			"forge": "SHAPE_POST",
+			"fabric": "MIDDLE_SHAPE"
+		},
+		{
+			"forge": "SHAPE_COMMON",
+			"fabric": "BASE_SHAPE"
+		},
+		{
+			"forge": "SHAPE_TOP_PLATE",
+			"fabric": "COLLISION_SHAPE_TOP"
+		},
+		{
+			"forge": "SHAPE_COLLISION",
+			"fabric": "COLLISION_SHAPE"
+		},
+		{
+			"forge": "SHAPE_WEST",
+			"fabric": "WEST_SHAPE"
+		},
+		{
+			"forge": "SHAPE_NORTH",
+			"fabric": "NORTH_SHAPE"
+		},
+		{
+			"forge": "SHAPE_EAST",
+			"fabric": "EAST_SHAPE"
+		},
+		{
+			"forge": "SHAPE_SOUTH",
+			"fabric": "SOUTH_SHAPE"
+		},
+		{
+			"forge": "PAGE_CHANGE_IMPULSE_TICKS",
+			"fabric": "SCHEDULED_TICK_DELAY"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "getOcclusionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getCullingShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "useShapeForLightOcclusion(BlockState arg0)",
+			"fabric": "hasSidedTransparency(BlockState arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "tryPlaceBook(Entity arg0, Level arg1, BlockPos arg2, BlockState arg3, ItemStack arg4)",
+			"fabric": "putBookIfAbsent(Entity user, World world, BlockPos pos, BlockState state, ItemStack stack)"
+		},
+		{
+			"forge": "placeBook(Entity arg0, Level arg1, BlockPos arg2, BlockState arg3, ItemStack arg4)",
+			"fabric": "putBook(Entity user, World world, BlockPos pos, BlockState state, ItemStack stack)"
+		},
+		{
+			"forge": "resetBookState(Entity arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "setHasBook(Entity user, World world, BlockPos pos, BlockState state, boolean hasBook)"
+		},
+		{
+			"forge": "signalPageChange(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "setPowered(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "changePowered(Level arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "setPowered(World world, BlockPos pos, BlockState state, boolean powered)"
+		},
+		{
+			"forge": "updateBelow(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "updateNeighborAlways(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "onRemove(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onStateReplaced(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "popBook(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "dropBook(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "getDirectSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStrongRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "hasAnalogOutputSignal(BlockState arg0)",
+			"fabric": "hasComparatorOutput(BlockState arg0)"
+		},
+		{
+			"forge": "getAnalogOutputSignal(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "getComparatorOutput(BlockState arg0, World arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "getMenuProvider(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "createScreenHandlerFactory(BlockState arg0, World arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "openScreen(Level arg0, BlockPos arg1, Player arg2)",
+			"fabric": "openScreen(World world, BlockPos pos, PlayerEntity player)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		}
+	]
+}

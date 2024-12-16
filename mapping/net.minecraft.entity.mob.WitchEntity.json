@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.world.entity.monster.Witch",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Witch",
+			"fabric": "net.minecraft.entity.mob.WitchEntity"
+		},
+		{
+			"forge": "SPEED_MODIFIER_DRINKING_UUID",
+			"fabric": "DRINKING_SPEED_PENALTY_MODIFIER_ID"
+		},
+		{
+			"forge": "SPEED_MODIFIER_DRINKING_UUID",
+			"fabric": "DRINKING_SPEED_PENALTY_MODIFIER_ID"
+		},
+		{
+			"forge": "SPEED_MODIFIER_DRINKING",
+			"fabric": "DRINKING_SPEED_PENALTY_MODIFIER"
+		},
+		{
+			"forge": "DATA_USING_ITEM",
+			"fabric": "DRINKING"
+		},
+		{
+			"forge": "usingTime",
+			"fabric": "drinkTimeLeft"
+		},
+		{
+			"forge": "healRaidersGoal",
+			"fabric": "raidGoal"
+		},
+		{
+			"forge": "attackPlayersGoal",
+			"fabric": "attackPlayerGoal"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "setUsingItem(boolean arg0)",
+			"fabric": "setDrinking(boolean drinking)"
+		},
+		{
+			"forge": "isDrinkingPotion()",
+			"fabric": "isDrinking()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createWitchAttributes()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "getCelebrateSound()",
+			"fabric": "getCelebratingSound()"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "getDamageAfterMagicAbsorb(DamageSource arg0, float arg1)",
+			"fabric": "modifyAppliedDamage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "performRangedAttack(LivingEntity arg0, float arg1)",
+			"fabric": "attack(LivingEntity arg0, float arg1)"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "applyRaidBuffs(int arg0, boolean arg1)",
+			"fabric": "addBonusForWave(int arg0, boolean arg1)"
+		},
+		{
+			"forge": "canBeLeader()",
+			"fabric": "canLead()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.FogRenderer$BlindnessFogFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.FogRenderer$BlindnessFogFunction",
+			"fabric": "net.minecraft.client.render.BackgroundRenderer$BlindnessFogModifier"
+		},
+		{
+			"forge": "getMobEffect()",
+			"fabric": "getStatusEffect()"
+		},
+		{
+			"forge": "getMobEffect()",
+			"fabric": "getStatusEffect()"
+		},
+		{
+			"forge": "setupFog(FogRenderer$FogData arg0, LivingEntity arg1, MobEffectInstance arg2, float arg3, float arg4)",
+			"fabric": "applyStartEndModifier(BackgroundRenderer$FogData arg0, LivingEntity arg1, StatusEffectInstance arg2, float arg3, float arg4)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.commands.DebugMobSpawningCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.DebugMobSpawningCommand",
+			"fabric": "net.minecraft.server.command.DebugMobSpawningCommand"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "spawnMobs(CommandSourceStack arg0, MobCategory arg1, BlockPos arg2)",
+			"fabric": "execute(ServerCommandSource source, SpawnGroup group, BlockPos pos)"
+		}
+	]
+}

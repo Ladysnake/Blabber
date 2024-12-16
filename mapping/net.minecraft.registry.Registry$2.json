@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.core.Registry$2",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Registry$2",
+			"fabric": "net.minecraft.registry.Registry$2"
+		},
+		{
+			"forge": "parent()",
+			"fabric": "getBase()"
+		},
+		{
+			"forge": "parent()",
+			"fabric": "getBase()"
+		},
+		{
+			"forge": "get(TagKey<T> arg0)",
+			"fabric": "getOptional(TagKey<T> arg0)"
+		},
+		{
+			"forge": "getOrThrow(TagKey<T> arg0)",
+			"fabric": "getOrThrow(TagKey<T> arg0)"
+		}
+	]
+}

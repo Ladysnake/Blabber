@@ -1,0 +1,729 @@
+{
+	"title": "net.minecraft.client.model.geom.ModelLayers",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.geom.ModelLayers",
+			"fabric": "net.minecraft.client.render.entity.model.EntityModelLayers"
+		},
+		{
+			"forge": "DEFAULT_LAYER",
+			"fabric": "MAIN"
+		},
+		{
+			"forge": "DEFAULT_LAYER",
+			"fabric": "MAIN"
+		},
+		{
+			"forge": "ALL_MODELS",
+			"fabric": "LAYERS"
+		},
+		{
+			"forge": "ALLAY",
+			"fabric": "ALLAY"
+		},
+		{
+			"forge": "ARMOR_STAND",
+			"fabric": "ARMOR_STAND"
+		},
+		{
+			"forge": "ARMOR_STAND_INNER_ARMOR",
+			"fabric": "ARMOR_STAND_INNER_ARMOR"
+		},
+		{
+			"forge": "ARMOR_STAND_OUTER_ARMOR",
+			"fabric": "ARMOR_STAND_OUTER_ARMOR"
+		},
+		{
+			"forge": "AXOLOTL",
+			"fabric": "AXOLOTL"
+		},
+		{
+			"forge": "BANNER",
+			"fabric": "BANNER"
+		},
+		{
+			"forge": "BAT",
+			"fabric": "BAT"
+		},
+		{
+			"forge": "BED_FOOT",
+			"fabric": "BED_FOOT"
+		},
+		{
+			"forge": "BED_HEAD",
+			"fabric": "BED_HEAD"
+		},
+		{
+			"forge": "BEE",
+			"fabric": "BEE"
+		},
+		{
+			"forge": "BELL",
+			"fabric": "BELL"
+		},
+		{
+			"forge": "BLAZE",
+			"fabric": "BLAZE"
+		},
+		{
+			"forge": "BOOK",
+			"fabric": "BOOK"
+		},
+		{
+			"forge": "CAT",
+			"fabric": "CAT"
+		},
+		{
+			"forge": "CAT_COLLAR",
+			"fabric": "CAT_COLLAR"
+		},
+		{
+			"forge": "CAMEL",
+			"fabric": "CAMEL"
+		},
+		{
+			"forge": "CAVE_SPIDER",
+			"fabric": "CAVE_SPIDER"
+		},
+		{
+			"forge": "CHEST",
+			"fabric": "CHEST"
+		},
+		{
+			"forge": "CHEST_MINECART",
+			"fabric": "CHEST_MINECART"
+		},
+		{
+			"forge": "CHICKEN",
+			"fabric": "CHICKEN"
+		},
+		{
+			"forge": "COD",
+			"fabric": "COD"
+		},
+		{
+			"forge": "COMMAND_BLOCK_MINECART",
+			"fabric": "COMMAND_BLOCK_MINECART"
+		},
+		{
+			"forge": "CONDUIT_CAGE",
+			"fabric": "CONDUIT"
+		},
+		{
+			"forge": "CONDUIT_EYE",
+			"fabric": "CONDUIT_EYE"
+		},
+		{
+			"forge": "CONDUIT_SHELL",
+			"fabric": "CONDUIT_SHELL"
+		},
+		{
+			"forge": "CONDUIT_WIND",
+			"fabric": "CONDUIT_WIND"
+		},
+		{
+			"forge": "COW",
+			"fabric": "COW"
+		},
+		{
+			"forge": "CREEPER",
+			"fabric": "CREEPER"
+		},
+		{
+			"forge": "CREEPER_ARMOR",
+			"fabric": "CREEPER_ARMOR"
+		},
+		{
+			"forge": "CREEPER_HEAD",
+			"fabric": "CREEPER_HEAD"
+		},
+		{
+			"forge": "DECORATED_POT_BASE",
+			"fabric": "DECORATED_POT_BASE"
+		},
+		{
+			"forge": "DECORATED_POT_SIDES",
+			"fabric": "DECORATED_POT_SIDES"
+		},
+		{
+			"forge": "DOLPHIN",
+			"fabric": "DOLPHIN"
+		},
+		{
+			"forge": "DONKEY",
+			"fabric": "DONKEY"
+		},
+		{
+			"forge": "DOUBLE_CHEST_LEFT",
+			"fabric": "DOUBLE_CHEST_LEFT"
+		},
+		{
+			"forge": "DOUBLE_CHEST_RIGHT",
+			"fabric": "DOUBLE_CHEST_RIGHT"
+		},
+		{
+			"forge": "DRAGON_SKULL",
+			"fabric": "DRAGON_SKULL"
+		},
+		{
+			"forge": "DROWNED",
+			"fabric": "DROWNED"
+		},
+		{
+			"forge": "DROWNED_INNER_ARMOR",
+			"fabric": "DROWNED_INNER_ARMOR"
+		},
+		{
+			"forge": "DROWNED_OUTER_ARMOR",
+			"fabric": "DROWNED_OUTER_ARMOR"
+		},
+		{
+			"forge": "DROWNED_OUTER_LAYER",
+			"fabric": "DROWNED_OUTER"
+		},
+		{
+			"forge": "ELDER_GUARDIAN",
+			"fabric": "ELDER_GUARDIAN"
+		},
+		{
+			"forge": "ELYTRA",
+			"fabric": "ELYTRA"
+		},
+		{
+			"forge": "ENDERMAN",
+			"fabric": "ENDERMAN"
+		},
+		{
+			"forge": "ENDERMITE",
+			"fabric": "ENDERMITE"
+		},
+		{
+			"forge": "ENDER_DRAGON",
+			"fabric": "ENDER_DRAGON"
+		},
+		{
+			"forge": "END_CRYSTAL",
+			"fabric": "END_CRYSTAL"
+		},
+		{
+			"forge": "EVOKER",
+			"fabric": "EVOKER"
+		},
+		{
+			"forge": "EVOKER_FANGS",
+			"fabric": "EVOKER_FANGS"
+		},
+		{
+			"forge": "FOX",
+			"fabric": "FOX"
+		},
+		{
+			"forge": "FROG",
+			"fabric": "FROG"
+		},
+		{
+			"forge": "FURNACE_MINECART",
+			"fabric": "FURNACE_MINECART"
+		},
+		{
+			"forge": "GHAST",
+			"fabric": "GHAST"
+		},
+		{
+			"forge": "GIANT",
+			"fabric": "GIANT"
+		},
+		{
+			"forge": "GIANT_INNER_ARMOR",
+			"fabric": "GIANT_INNER_ARMOR"
+		},
+		{
+			"forge": "GIANT_OUTER_ARMOR",
+			"fabric": "GIANT_OUTER_ARMOR"
+		},
+		{
+			"forge": "GLOW_SQUID",
+			"fabric": "GLOW_SQUID"
+		},
+		{
+			"forge": "GOAT",
+			"fabric": "GOAT"
+		},
+		{
+			"forge": "GUARDIAN",
+			"fabric": "GUARDIAN"
+		},
+		{
+			"forge": "HOGLIN",
+			"fabric": "HOGLIN"
+		},
+		{
+			"forge": "HOPPER_MINECART",
+			"fabric": "HOPPER_MINECART"
+		},
+		{
+			"forge": "HORSE",
+			"fabric": "HORSE"
+		},
+		{
+			"forge": "HORSE_ARMOR",
+			"fabric": "HORSE_ARMOR"
+		},
+		{
+			"forge": "HUSK",
+			"fabric": "HUSK"
+		},
+		{
+			"forge": "HUSK_INNER_ARMOR",
+			"fabric": "HUSK_INNER_ARMOR"
+		},
+		{
+			"forge": "HUSK_OUTER_ARMOR",
+			"fabric": "HUSK_OUTER_ARMOR"
+		},
+		{
+			"forge": "ILLUSIONER",
+			"fabric": "ILLUSIONER"
+		},
+		{
+			"forge": "IRON_GOLEM",
+			"fabric": "IRON_GOLEM"
+		},
+		{
+			"forge": "LEASH_KNOT",
+			"fabric": "LEASH_KNOT"
+		},
+		{
+			"forge": "LLAMA",
+			"fabric": "LLAMA"
+		},
+		{
+			"forge": "LLAMA_DECOR",
+			"fabric": "LLAMA_DECOR"
+		},
+		{
+			"forge": "LLAMA_SPIT",
+			"fabric": "LLAMA_SPIT"
+		},
+		{
+			"forge": "MAGMA_CUBE",
+			"fabric": "MAGMA_CUBE"
+		},
+		{
+			"forge": "MINECART",
+			"fabric": "MINECART"
+		},
+		{
+			"forge": "MOOSHROOM",
+			"fabric": "MOOSHROOM"
+		},
+		{
+			"forge": "MULE",
+			"fabric": "MULE"
+		},
+		{
+			"forge": "OCELOT",
+			"fabric": "OCELOT"
+		},
+		{
+			"forge": "PANDA",
+			"fabric": "PANDA"
+		},
+		{
+			"forge": "PARROT",
+			"fabric": "PARROT"
+		},
+		{
+			"forge": "PHANTOM",
+			"fabric": "PHANTOM"
+		},
+		{
+			"forge": "PIG",
+			"fabric": "PIG"
+		},
+		{
+			"forge": "PIGLIN",
+			"fabric": "PIGLIN"
+		},
+		{
+			"forge": "PIGLIN_BRUTE",
+			"fabric": "PIGLIN_BRUTE"
+		},
+		{
+			"forge": "PIGLIN_BRUTE_INNER_ARMOR",
+			"fabric": "PIGLIN_BRUTE_INNER_ARMOR"
+		},
+		{
+			"forge": "PIGLIN_BRUTE_OUTER_ARMOR",
+			"fabric": "PIGLIN_BRUTE_OUTER_ARMOR"
+		},
+		{
+			"forge": "PIGLIN_HEAD",
+			"fabric": "PIGLIN_HEAD"
+		},
+		{
+			"forge": "PIGLIN_INNER_ARMOR",
+			"fabric": "PIGLIN_INNER_ARMOR"
+		},
+		{
+			"forge": "PIGLIN_OUTER_ARMOR",
+			"fabric": "PIGLIN_OUTER_ARMOR"
+		},
+		{
+			"forge": "PIG_SADDLE",
+			"fabric": "PIG_SADDLE"
+		},
+		{
+			"forge": "PILLAGER",
+			"fabric": "PILLAGER"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "PLAYER_HEAD",
+			"fabric": "PLAYER_HEAD"
+		},
+		{
+			"forge": "PLAYER_INNER_ARMOR",
+			"fabric": "PLAYER_INNER_ARMOR"
+		},
+		{
+			"forge": "PLAYER_OUTER_ARMOR",
+			"fabric": "PLAYER_OUTER_ARMOR"
+		},
+		{
+			"forge": "PLAYER_SLIM",
+			"fabric": "PLAYER_SLIM"
+		},
+		{
+			"forge": "PLAYER_SLIM_INNER_ARMOR",
+			"fabric": "PLAYER_SLIM_INNER_ARMOR"
+		},
+		{
+			"forge": "PLAYER_SLIM_OUTER_ARMOR",
+			"fabric": "PLAYER_SLIM_OUTER_ARMOR"
+		},
+		{
+			"forge": "PLAYER_SPIN_ATTACK",
+			"fabric": "SPIN_ATTACK"
+		},
+		{
+			"forge": "POLAR_BEAR",
+			"fabric": "POLAR_BEAR"
+		},
+		{
+			"forge": "PUFFERFISH_BIG",
+			"fabric": "PUFFERFISH_BIG"
+		},
+		{
+			"forge": "PUFFERFISH_MEDIUM",
+			"fabric": "PUFFERFISH_MEDIUM"
+		},
+		{
+			"forge": "PUFFERFISH_SMALL",
+			"fabric": "PUFFERFISH_SMALL"
+		},
+		{
+			"forge": "RABBIT",
+			"fabric": "RABBIT"
+		},
+		{
+			"forge": "RAVAGER",
+			"fabric": "RAVAGER"
+		},
+		{
+			"forge": "SALMON",
+			"fabric": "SALMON"
+		},
+		{
+			"forge": "SHEEP",
+			"fabric": "SHEEP"
+		},
+		{
+			"forge": "SHEEP_FUR",
+			"fabric": "SHEEP_FUR"
+		},
+		{
+			"forge": "SHIELD",
+			"fabric": "SHIELD"
+		},
+		{
+			"forge": "SHULKER",
+			"fabric": "SHULKER"
+		},
+		{
+			"forge": "SHULKER_BULLET",
+			"fabric": "SHULKER_BULLET"
+		},
+		{
+			"forge": "SILVERFISH",
+			"fabric": "SILVERFISH"
+		},
+		{
+			"forge": "SKELETON",
+			"fabric": "SKELETON"
+		},
+		{
+			"forge": "SKELETON_HORSE",
+			"fabric": "SKELETON_HORSE"
+		},
+		{
+			"forge": "SKELETON_INNER_ARMOR",
+			"fabric": "SKELETON_INNER_ARMOR"
+		},
+		{
+			"forge": "SKELETON_OUTER_ARMOR",
+			"fabric": "SKELETON_OUTER_ARMOR"
+		},
+		{
+			"forge": "SKELETON_SKULL",
+			"fabric": "SKELETON_SKULL"
+		},
+		{
+			"forge": "SLIME",
+			"fabric": "SLIME"
+		},
+		{
+			"forge": "SLIME_OUTER",
+			"fabric": "SLIME_OUTER"
+		},
+		{
+			"forge": "SNIFFER",
+			"fabric": "SNIFFER"
+		},
+		{
+			"forge": "SNOW_GOLEM",
+			"fabric": "SNOW_GOLEM"
+		},
+		{
+			"forge": "SPAWNER_MINECART",
+			"fabric": "SPAWNER_MINECART"
+		},
+		{
+			"forge": "SPIDER",
+			"fabric": "SPIDER"
+		},
+		{
+			"forge": "SQUID",
+			"fabric": "SQUID"
+		},
+		{
+			"forge": "STRAY",
+			"fabric": "STRAY"
+		},
+		{
+			"forge": "STRAY_INNER_ARMOR",
+			"fabric": "STRAY_INNER_ARMOR"
+		},
+		{
+			"forge": "STRAY_OUTER_ARMOR",
+			"fabric": "STRAY_OUTER_ARMOR"
+		},
+		{
+			"forge": "STRAY_OUTER_LAYER",
+			"fabric": "STRAY_OUTER"
+		},
+		{
+			"forge": "STRIDER",
+			"fabric": "STRIDER"
+		},
+		{
+			"forge": "STRIDER_SADDLE",
+			"fabric": "STRIDER_SADDLE"
+		},
+		{
+			"forge": "TADPOLE",
+			"fabric": "TADPOLE"
+		},
+		{
+			"forge": "TNT_MINECART",
+			"fabric": "TNT_MINECART"
+		},
+		{
+			"forge": "TRADER_LLAMA",
+			"fabric": "TRADER_LLAMA"
+		},
+		{
+			"forge": "TRIDENT",
+			"fabric": "TRIDENT"
+		},
+		{
+			"forge": "TROPICAL_FISH_LARGE",
+			"fabric": "TROPICAL_FISH_LARGE"
+		},
+		{
+			"forge": "TROPICAL_FISH_LARGE_PATTERN",
+			"fabric": "TROPICAL_FISH_LARGE_PATTERN"
+		},
+		{
+			"forge": "TROPICAL_FISH_SMALL",
+			"fabric": "TROPICAL_FISH_SMALL"
+		},
+		{
+			"forge": "TROPICAL_FISH_SMALL_PATTERN",
+			"fabric": "TROPICAL_FISH_SMALL_PATTERN"
+		},
+		{
+			"forge": "TURTLE",
+			"fabric": "TURTLE"
+		},
+		{
+			"forge": "VEX",
+			"fabric": "VEX"
+		},
+		{
+			"forge": "VILLAGER",
+			"fabric": "VILLAGER"
+		},
+		{
+			"forge": "VINDICATOR",
+			"fabric": "VINDICATOR"
+		},
+		{
+			"forge": "WARDEN",
+			"fabric": "WARDEN"
+		},
+		{
+			"forge": "WANDERING_TRADER",
+			"fabric": "WANDERING_TRADER"
+		},
+		{
+			"forge": "WITCH",
+			"fabric": "WITCH"
+		},
+		{
+			"forge": "WITHER",
+			"fabric": "WITHER"
+		},
+		{
+			"forge": "WITHER_ARMOR",
+			"fabric": "WITHER_ARMOR"
+		},
+		{
+			"forge": "WITHER_SKELETON",
+			"fabric": "WITHER_SKELETON"
+		},
+		{
+			"forge": "WITHER_SKELETON_INNER_ARMOR",
+			"fabric": "WITHER_SKELETON_INNER_ARMOR"
+		},
+		{
+			"forge": "WITHER_SKELETON_OUTER_ARMOR",
+			"fabric": "WITHER_SKELETON_OUTER_ARMOR"
+		},
+		{
+			"forge": "WITHER_SKELETON_SKULL",
+			"fabric": "WITHER_SKELETON_SKULL"
+		},
+		{
+			"forge": "WITHER_SKULL",
+			"fabric": "WITHER_SKULL"
+		},
+		{
+			"forge": "WOLF",
+			"fabric": "WOLF"
+		},
+		{
+			"forge": "ZOGLIN",
+			"fabric": "ZOGLIN"
+		},
+		{
+			"forge": "ZOMBIE",
+			"fabric": "ZOMBIE"
+		},
+		{
+			"forge": "ZOMBIE_HEAD",
+			"fabric": "ZOMBIE_HEAD"
+		},
+		{
+			"forge": "ZOMBIE_HORSE",
+			"fabric": "ZOMBIE_HORSE"
+		},
+		{
+			"forge": "ZOMBIE_INNER_ARMOR",
+			"fabric": "ZOMBIE_INNER_ARMOR"
+		},
+		{
+			"forge": "ZOMBIE_OUTER_ARMOR",
+			"fabric": "ZOMBIE_OUTER_ARMOR"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER",
+			"fabric": "ZOMBIE_VILLAGER"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER_INNER_ARMOR",
+			"fabric": "ZOMBIE_VILLAGER_INNER_ARMOR"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER_OUTER_ARMOR",
+			"fabric": "ZOMBIE_VILLAGER_OUTER_ARMOR"
+		},
+		{
+			"forge": "ZOMBIFIED_PIGLIN",
+			"fabric": "ZOMBIFIED_PIGLIN"
+		},
+		{
+			"forge": "ZOMBIFIED_PIGLIN_INNER_ARMOR",
+			"fabric": "ZOMBIFIED_PIGLIN_INNER_ARMOR"
+		},
+		{
+			"forge": "ZOMBIFIED_PIGLIN_OUTER_ARMOR",
+			"fabric": "ZOMBIFIED_PIGLIN_OUTER_ARMOR"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "registerMain(String id)"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "registerMain(String id)"
+		},
+		{
+			"forge": "register(String arg0, String arg1)",
+			"fabric": "register(String id, String layer)"
+		},
+		{
+			"forge": "createLocation(String arg0, String arg1)",
+			"fabric": "create(String id, String layer)"
+		},
+		{
+			"forge": "registerInnerArmor(String arg0)",
+			"fabric": "createInnerArmor(String id)"
+		},
+		{
+			"forge": "registerOuterArmor(String arg0)",
+			"fabric": "createOuterArmor(String id)"
+		},
+		{
+			"forge": "createRaftModelName(Boat$Type arg0)",
+			"fabric": "createRaft(BoatEntity$Type type)"
+		},
+		{
+			"forge": "createChestRaftModelName(Boat$Type arg0)",
+			"fabric": "createChestRaft(BoatEntity$Type type)"
+		},
+		{
+			"forge": "createBoatModelName(Boat$Type arg0)",
+			"fabric": "createBoat(BoatEntity$Type type)"
+		},
+		{
+			"forge": "createChestBoatModelName(Boat$Type arg0)",
+			"fabric": "createChestBoat(BoatEntity$Type type)"
+		},
+		{
+			"forge": "createSignModelName(WoodType arg0)",
+			"fabric": "createSign(WoodType type)"
+		},
+		{
+			"forge": "createHangingSignModelName(WoodType arg0)",
+			"fabric": "createHangingSign(WoodType type)"
+		},
+		{
+			"forge": "getKnownLocations()",
+			"fabric": "getLayers()"
+		}
+	]
+}

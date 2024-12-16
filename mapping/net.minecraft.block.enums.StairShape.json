@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.StairsShape",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.StairsShape",
+			"fabric": "net.minecraft.block.enums.StairShape"
+		},
+		{
+			"forge": "STRAIGHT",
+			"fabric": "STRAIGHT"
+		},
+		{
+			"forge": "STRAIGHT",
+			"fabric": "STRAIGHT"
+		},
+		{
+			"forge": "INNER_LEFT",
+			"fabric": "INNER_LEFT"
+		},
+		{
+			"forge": "INNER_RIGHT",
+			"fabric": "INNER_RIGHT"
+		},
+		{
+			"forge": "OUTER_LEFT",
+			"fabric": "OUTER_LEFT"
+		},
+		{
+			"forge": "OUTER_RIGHT",
+			"fabric": "OUTER_RIGHT"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.chat.OutgoingChatMessage",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.OutgoingChatMessage",
+			"fabric": "net.minecraft.network.message.SentMessage"
+		},
+		{
+			"forge": "content()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "content()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "sendToPlayer(ServerPlayer arg0, boolean arg1, ChatType$Bound arg2)",
+			"fabric": "send(ServerPlayerEntity sender, boolean filterMaskEnabled, MessageType$Parameters params)"
+		},
+		{
+			"forge": "create(PlayerChatMessage arg0)",
+			"fabric": "of(SignedMessage message)"
+		}
+	]
+}

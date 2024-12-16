@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.core.dispenser.DispenseItemBehavior",
+	"items": [
+		{
+			"forge": "net.minecraft.core.dispenser.DispenseItemBehavior",
+			"fabric": "net.minecraft.block.dispenser.DispenserBehavior"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "NOOP",
+			"fabric": "NOOP"
+		},
+		{
+			"forge": "dispense(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispense(BlockPointer pointer, ItemStack stack)"
+		},
+		{
+			"forge": "dispense(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispense(BlockPointer pointer, ItemStack stack)"
+		},
+		{
+			"forge": "bootStrap()",
+			"fabric": "registerDefaults()"
+		},
+		{
+			"forge": "setEntityPokingOutOfBlock(BlockSource arg0, Entity arg1, Direction arg2)",
+			"fabric": "setEntityPosition(BlockPointer pointer, Entity entity, Direction direction)"
+		}
+	]
+}

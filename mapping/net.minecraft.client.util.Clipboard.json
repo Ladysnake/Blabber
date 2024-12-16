@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.blaze3d.platform.ClipboardManager",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.ClipboardManager",
+			"fabric": "net.minecraft.client.util.Clipboard"
+		},
+		{
+			"forge": "FORMAT_UNAVAILABLE",
+			"fabric": "GLFW_FORMAT_UNAVAILABLE"
+		},
+		{
+			"forge": "FORMAT_UNAVAILABLE",
+			"fabric": "GLFW_FORMAT_UNAVAILABLE"
+		},
+		{
+			"forge": "clipboardScratchBuffer",
+			"fabric": "clipboardBuffer"
+		},
+		{
+			"forge": "getClipboard(long arg0, org.lwjgl.glfw.GLFWErrorCallbackI arg1)",
+			"fabric": "getClipboard(long window, org.lwjgl.glfw.GLFWErrorCallbackI errorCallback)"
+		},
+		{
+			"forge": "getClipboard(long arg0, org.lwjgl.glfw.GLFWErrorCallbackI arg1)",
+			"fabric": "getClipboard(long window, org.lwjgl.glfw.GLFWErrorCallbackI errorCallback)"
+		},
+		{
+			"forge": "pushClipboard(long arg0, ByteBuffer arg1, byte[] arg2)",
+			"fabric": "setClipboard(long window, ByteBuffer clipboardBuffer, byte[] content)"
+		},
+		{
+			"forge": "setClipboard(long arg0, String arg1)",
+			"fabric": "setClipboard(long window, String string)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.Turtle$TurtleRandomStrollGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Turtle$TurtleRandomStrollGoal",
+			"fabric": "net.minecraft.entity.passive.TurtleEntity$WanderOnLandGoal"
+		},
+		{
+			"forge": "turtle",
+			"fabric": "turtle"
+		},
+		{
+			"forge": "turtle",
+			"fabric": "turtle"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

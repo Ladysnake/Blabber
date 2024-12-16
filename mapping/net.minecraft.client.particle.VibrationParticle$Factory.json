@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.particle.VibrationSignalParticle$Provider",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.VibrationSignalParticle$Provider",
+			"fabric": "net.minecraft.client.particle.VibrationParticle$Factory"
+		},
+		{
+			"forge": "sprite",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "sprite",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "createParticle(VibrationParticleOption arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createParticle(VibrationParticleEffect arg0, ClientWorld arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)"
+		},
+		{
+			"forge": "createParticle(VibrationParticleOption arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createParticle(VibrationParticleEffect arg0, ClientWorld arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)"
+		}
+	]
+}

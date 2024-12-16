@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.WorldDataConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.WorldDataConfiguration",
+			"fabric": "net.minecraft.resource.DataConfiguration"
+		},
+		{
+			"forge": "dataPacks",
+			"fabric": "dataPacks"
+		},
+		{
+			"forge": "dataPacks",
+			"fabric": "dataPacks"
+		},
+		{
+			"forge": "enabledFeatures",
+			"fabric": "enabledFeatures"
+		},
+		{
+			"forge": "ENABLED_FEATURES_ID",
+			"fabric": "ENABLED_FEATURES_KEY"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "SAFE_MODE"
+		},
+		{
+			"forge": "expandFeatures(FeatureFlagSet arg0)",
+			"fabric": "withFeaturesAdded(FeatureSet features)"
+		},
+		{
+			"forge": "expandFeatures(FeatureFlagSet arg0)",
+			"fabric": "withFeaturesAdded(FeatureSet features)"
+		},
+		{
+			"forge": "dataPacks()",
+			"fabric": "dataPacks()"
+		},
+		{
+			"forge": "enabledFeatures()",
+			"fabric": "enabledFeatures()"
+		}
+	]
+}

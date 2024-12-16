@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.AbstractHugeMushroomFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.AbstractHugeMushroomFeature",
+			"fabric": "net.minecraft.world.gen.feature.HugeMushroomFeature"
+		},
+		{
+			"forge": "placeTrunk(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, HugeMushroomFeatureConfiguration arg3, int arg4, BlockPos$MutableBlockPos arg5)",
+			"fabric": "generateStem(WorldAccess world, Random random, BlockPos pos, HugeMushroomFeatureConfig config, int height, BlockPos$Mutable mutablePos)"
+		},
+		{
+			"forge": "placeTrunk(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, HugeMushroomFeatureConfiguration arg3, int arg4, BlockPos$MutableBlockPos arg5)",
+			"fabric": "generateStem(WorldAccess world, Random random, BlockPos pos, HugeMushroomFeatureConfig config, int height, BlockPos$Mutable mutablePos)"
+		},
+		{
+			"forge": "getTreeHeight(RandomSource arg0)",
+			"fabric": "getHeight(Random random)"
+		},
+		{
+			"forge": "isValidPosition(LevelAccessor arg0, BlockPos arg1, int arg2, BlockPos$MutableBlockPos arg3, HugeMushroomFeatureConfiguration arg4)",
+			"fabric": "canGenerate(WorldAccess world, BlockPos pos, int height, BlockPos$Mutable mutablePos, HugeMushroomFeatureConfig config)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<HugeMushroomFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<HugeMushroomFeatureConfig> arg0)"
+		},
+		{
+			"forge": "getTreeRadiusForHeight(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getCapSize(int arg0, int arg1, int capSize, int y)"
+		},
+		{
+			"forge": "makeCap(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, int arg3, BlockPos$MutableBlockPos arg4, HugeMushroomFeatureConfiguration arg5)",
+			"fabric": "generateCap(WorldAccess world, Random random, BlockPos start, int y, BlockPos$Mutable mutable, HugeMushroomFeatureConfig config)"
+		}
+	]
+}

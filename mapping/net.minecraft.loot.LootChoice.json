@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.entries.LootPoolEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.entries.LootPoolEntry",
+			"fabric": "net.minecraft.loot.LootChoice"
+		},
+		{
+			"forge": "getWeight(float arg0)",
+			"fabric": "getWeight(float luck)"
+		},
+		{
+			"forge": "getWeight(float arg0)",
+			"fabric": "getWeight(float luck)"
+		},
+		{
+			"forge": "createItemStack(Consumer<ItemStack> arg0, LootContext arg1)",
+			"fabric": "generateLoot(Consumer<ItemStack> lootConsumer, LootContext context)"
+		}
+	]
+}

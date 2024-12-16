@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.resources.SkinManager",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.SkinManager",
+			"fabric": "net.minecraft.client.texture.PlayerSkinProvider"
+		},
+		{
+			"forge": "PROPERTY_TEXTURES",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "PROPERTY_TEXTURES",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "textureManager",
+			"fabric": "textureManager"
+		},
+		{
+			"forge": "skinsDirectory",
+			"fabric": "skinCacheDir"
+		},
+		{
+			"forge": "sessionService",
+			"fabric": "sessionService"
+		},
+		{
+			"forge": "insecureSkinCache",
+			"fabric": "skinCache"
+		},
+		{
+			"forge": "registerTexture(com.mojang.authlib.minecraft.MinecraftProfileTexture arg0, com.mojang.authlib.minecraft.MinecraftProfileTexture$Type arg1)",
+			"fabric": "loadSkin(com.mojang.authlib.minecraft.MinecraftProfileTexture profileTexture, com.mojang.authlib.minecraft.MinecraftProfileTexture$Type type)"
+		},
+		{
+			"forge": "registerTexture(com.mojang.authlib.minecraft.MinecraftProfileTexture arg0, com.mojang.authlib.minecraft.MinecraftProfileTexture$Type arg1)",
+			"fabric": "loadSkin(com.mojang.authlib.minecraft.MinecraftProfileTexture profileTexture, com.mojang.authlib.minecraft.MinecraftProfileTexture$Type type)"
+		},
+		{
+			"forge": "registerTexture(com.mojang.authlib.minecraft.MinecraftProfileTexture arg0, com.mojang.authlib.minecraft.MinecraftProfileTexture$Type arg1, SkinManager$SkinTextureCallback arg2)",
+			"fabric": "loadSkin(com.mojang.authlib.minecraft.MinecraftProfileTexture profileTexture, com.mojang.authlib.minecraft.MinecraftProfileTexture$Type type, PlayerSkinProvider$SkinTextureAvailableCallback callback)"
+		},
+		{
+			"forge": "getTextureLocation(com.mojang.authlib.minecraft.MinecraftProfileTexture$Type arg0, String arg1)",
+			"fabric": "getSkinId(com.mojang.authlib.minecraft.MinecraftProfileTexture$Type skinType, String hash)"
+		},
+		{
+			"forge": "registerSkins(com.mojang.authlib.GameProfile arg0, SkinManager$SkinTextureCallback arg1, boolean arg2)",
+			"fabric": "loadSkin(com.mojang.authlib.GameProfile profile, PlayerSkinProvider$SkinTextureAvailableCallback callback, boolean requireSecure)"
+		},
+		{
+			"forge": "getInsecureSkinInformation(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "getTextures(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "getInsecureSkinLocation(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "loadSkin(com.mojang.authlib.GameProfile profile)"
+		}
+	]
+}

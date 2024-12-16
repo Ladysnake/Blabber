@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootTable$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootTable$Serializer",
+			"fabric": "net.minecraft.loot.LootTable$Serializer"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "serialize(LootTable arg0, Type arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "serialize(LootTable arg0, Type arg1, com.google.gson.JsonSerializationContext arg2)"
+		}
+	]
+}

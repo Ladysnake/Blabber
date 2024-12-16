@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.HugeFungusFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.HugeFungusFeature",
+			"fabric": "net.minecraft.world.gen.feature.HugeFungusFeature"
+		},
+		{
+			"forge": "HUGE_PROBABILITY",
+			"fabric": "field_31507"
+		},
+		{
+			"forge": "HUGE_PROBABILITY",
+			"fabric": "field_31507"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<HugeFungusConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<HugeFungusFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<HugeFungusConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<HugeFungusFeatureConfig> arg0)"
+		},
+		{
+			"forge": "isReplaceable(WorldGenLevel arg0, BlockPos arg1, HugeFungusConfiguration arg2, boolean arg3)",
+			"fabric": "isReplaceable(StructureWorldAccess world, BlockPos pos, HugeFungusFeatureConfig config, boolean checkConfig)"
+		},
+		{
+			"forge": "placeStem(WorldGenLevel arg0, RandomSource arg1, HugeFungusConfiguration arg2, BlockPos arg3, int arg4, boolean arg5)",
+			"fabric": "generateStem(StructureWorldAccess world, Random random, HugeFungusFeatureConfig config, BlockPos pos, int stemHeight, boolean thickStem)"
+		},
+		{
+			"forge": "placeHat(WorldGenLevel arg0, RandomSource arg1, HugeFungusConfiguration arg2, BlockPos arg3, int arg4, boolean arg5)",
+			"fabric": "generateHat(StructureWorldAccess world, Random random, HugeFungusFeatureConfig config, BlockPos pos, int hatHeight, boolean thickStem)"
+		},
+		{
+			"forge": "placeHatBlock(LevelAccessor arg0, RandomSource arg1, HugeFungusConfiguration arg2, BlockPos$MutableBlockPos arg3, float arg4, float arg5, float arg6)",
+			"fabric": "placeHatBlock(WorldAccess world, Random random, HugeFungusFeatureConfig config, BlockPos$Mutable pos, float decorationChance, float generationChance, float vineChance)"
+		},
+		{
+			"forge": "placeHatDropBlock(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "placeWithOptionalVines(WorldAccess world, Random random, BlockPos pos, BlockState state, boolean vines)"
+		},
+		{
+			"forge": "tryPlaceWeepingVines(BlockPos arg0, LevelAccessor arg1, RandomSource arg2)",
+			"fabric": "generateVines(BlockPos pos, WorldAccess world, Random random)"
+		}
+	]
+}

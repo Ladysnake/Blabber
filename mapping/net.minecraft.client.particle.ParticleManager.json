@@ -1,0 +1,169 @@
+{
+	"title": "net.minecraft.client.particle.ParticleEngine",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.ParticleEngine",
+			"fabric": "net.minecraft.client.particle.ParticleManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "PARTICLE_LISTER",
+			"fabric": "FINDER"
+		},
+		{
+			"forge": "PARTICLES_ATLAS_INFO",
+			"fabric": "PARTICLES_PATH"
+		},
+		{
+			"forge": "MAX_PARTICLES_PER_LAYER",
+			"fabric": "MAX_PARTICLE_COUNT"
+		},
+		{
+			"forge": "RENDER_ORDER",
+			"fabric": "PARTICLE_TEXTURE_SHEETS"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "particles",
+			"fabric": "particles"
+		},
+		{
+			"forge": "trackingEmitters",
+			"fabric": "newEmitterParticles"
+		},
+		{
+			"forge": "textureManager",
+			"fabric": "textureManager"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "providers",
+			"fabric": "factories"
+		},
+		{
+			"forge": "particlesToAdd",
+			"fabric": "newParticles"
+		},
+		{
+			"forge": "spriteSets",
+			"fabric": "spriteAwareFactories"
+		},
+		{
+			"forge": "textureAtlas",
+			"fabric": "particleAtlasTexture"
+		},
+		{
+			"forge": "trackedParticleCounts",
+			"fabric": "groupCounts"
+		},
+		{
+			"forge": "registerProviders()",
+			"fabric": "registerDefaultFactories()"
+		},
+		{
+			"forge": "registerProviders()",
+			"fabric": "registerDefaultFactories()"
+		},
+		{
+			"forge": "register(ParticleType<T> arg0, ParticleProvider<T> arg1)",
+			"fabric": "registerFactory(ParticleType<T> type, ParticleFactory<T> factory)"
+		},
+		{
+			"forge": "register(ParticleType<T> arg0, ParticleProvider$Sprite<T> arg1)",
+			"fabric": "registerBlockLeakFactory(ParticleType<T> type, ParticleFactory$BlockLeakParticleFactory<T> factory)"
+		},
+		{
+			"forge": "register(ParticleType<T> arg0, ParticleEngine$SpriteParticleRegistration<T> arg1)",
+			"fabric": "registerFactory(ParticleType<T> type, ParticleManager$SpriteAwareFactory<T> factory)"
+		},
+		{
+			"forge": "reload(PreparableReloadListener$PreparationBarrier arg0, ResourceManager arg1, ProfilerFiller arg2, ProfilerFiller arg3, Executor arg4, Executor arg5)",
+			"fabric": "reload(ResourceReloader$Synchronizer arg0, ResourceManager arg1, Profiler arg2, Profiler arg3, Executor arg4, Executor arg5)"
+		},
+		{
+			"forge": "close()",
+			"fabric": "clearAtlas()"
+		},
+		{
+			"forge": "loadParticleDescription(ResourceLocation arg0, Resource arg1)",
+			"fabric": "loadTextureList(Identifier id, Resource resource)"
+		},
+		{
+			"forge": "createTrackingEmitter(Entity arg0, ParticleOptions arg1)",
+			"fabric": "addEmitter(Entity entity, ParticleEffect parameters)"
+		},
+		{
+			"forge": "createTrackingEmitter(Entity arg0, ParticleOptions arg1, int arg2)",
+			"fabric": "addEmitter(Entity entity, ParticleEffect parameters, int maxAge)"
+		},
+		{
+			"forge": "createParticle(ParticleOptions arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6)",
+			"fabric": "addParticle(ParticleEffect parameters, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "makeParticle(T arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6)",
+			"fabric": "createParticle(T parameters, double x, double y, double z, double velocityX, double velocityY, double velocityZ)"
+		},
+		{
+			"forge": "add(Particle arg0)",
+			"fabric": "addParticle(Particle particle)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tickParticleList(Collection<Particle> arg0)",
+			"fabric": "tickParticles(Collection<Particle> particles)"
+		},
+		{
+			"forge": "updateCount(ParticleGroup arg0, int arg1)",
+			"fabric": "addTo(ParticleGroup group, int count)"
+		},
+		{
+			"forge": "tickParticle(Particle arg0)",
+			"fabric": "tickParticle(Particle particle)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource$BufferSource arg1, LightTexture arg2, Camera arg3, float arg4)",
+			"fabric": "renderParticles(MatrixStack matrices, VertexConsumerProvider$Immediate vertexConsumers, LightmapTextureManager lightmapTextureManager, Camera camera, float tickDelta)"
+		},
+		{
+			"forge": "setLevel(ClientLevel arg0)",
+			"fabric": "setWorld(ClientWorld world)"
+		},
+		{
+			"forge": "destroy(BlockPos arg0, BlockState arg1)",
+			"fabric": "addBlockBreakParticles(BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "crack(BlockPos arg0, Direction arg1)",
+			"fabric": "addBlockBreakingParticles(BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "countParticles()",
+			"fabric": "getDebugString()"
+		},
+		{
+			"forge": "hasSpaceInParticleLimit(ParticleGroup arg0)",
+			"fabric": "canAdd(ParticleGroup group)"
+		},
+		{
+			"forge": "clearParticles()",
+			"fabric": "clearParticles()"
+		}
+	]
+}

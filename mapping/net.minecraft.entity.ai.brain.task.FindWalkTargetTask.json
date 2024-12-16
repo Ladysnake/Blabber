@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.VillageBoundRandomStroll",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.VillageBoundRandomStroll",
+			"fabric": "net.minecraft.entity.ai.brain.task.FindWalkTargetTask"
+		},
+		{
+			"forge": "MAX_XZ_DIST",
+			"fabric": "DEFAULT_HORIZONTAL_RANGE"
+		},
+		{
+			"forge": "MAX_XZ_DIST",
+			"fabric": "DEFAULT_HORIZONTAL_RANGE"
+		},
+		{
+			"forge": "MAX_Y_DIST",
+			"fabric": "DEFAULT_VERTICAL_RANGE"
+		},
+		{
+			"forge": "create(float arg0)",
+			"fabric": "create(float walkSpeed)"
+		},
+		{
+			"forge": "create(float arg0)",
+			"fabric": "create(float walkSpeed)"
+		},
+		{
+			"forge": "create(float arg0, int arg1, int arg2)",
+			"fabric": "create(float walkSpeed, int horizontalRange, int verticalRange)"
+		}
+	]
+}

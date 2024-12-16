@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.gametest.framework.TestCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.TestCommand",
+			"fabric": "net.minecraft.server.command.TestCommand"
+		},
+		{
+			"forge": "DEFAULT_CLEAR_RADIUS",
+			"fabric": "field_33178"
+		},
+		{
+			"forge": "DEFAULT_CLEAR_RADIUS",
+			"fabric": "field_33178"
+		},
+		{
+			"forge": "MAX_CLEAR_RADIUS",
+			"fabric": "field_33179"
+		},
+		{
+			"forge": "STRUCTURE_BLOCK_NEARBY_SEARCH_RADIUS",
+			"fabric": "field_33180"
+		},
+		{
+			"forge": "STRUCTURE_BLOCK_FULL_SEARCH_RADIUS",
+			"fabric": "field_33181"
+		},
+		{
+			"forge": "TEST_POS_Z_OFFSET_FROM_PLAYER",
+			"fabric": "field_33182"
+		},
+		{
+			"forge": "SHOW_POS_DURATION_MS",
+			"fabric": "field_33183"
+		},
+		{
+			"forge": "DEFAULT_X_SIZE",
+			"fabric": "field_33184"
+		},
+		{
+			"forge": "DEFAULT_Y_SIZE",
+			"fabric": "field_33185"
+		},
+		{
+			"forge": "DEFAULT_Z_SIZE",
+			"fabric": "field_33186"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "createNewStructure(CommandSourceStack arg0, String arg1, int arg2, int arg3, int arg4)",
+			"fabric": "executeCreate(ServerCommandSource source, String testName, int x, int y, int z)"
+		},
+		{
+			"forge": "showPos(CommandSourceStack arg0, String arg1)",
+			"fabric": "executePos(ServerCommandSource source, String variableName)"
+		},
+		{
+			"forge": "runNearbyTest(CommandSourceStack arg0)",
+			"fabric": "executeRunThis(ServerCommandSource source)"
+		},
+		{
+			"forge": "runAllNearbyTests(CommandSourceStack arg0)",
+			"fabric": "executeRunThese(ServerCommandSource source)"
+		},
+		{
+			"forge": "runTest(ServerLevel arg0, BlockPos arg1, MultipleTestTracker arg2)",
+			"fabric": "run(ServerWorld world, BlockPos pos, TestSet tests)"
+		},
+		{
+			"forge": "showTestSummaryIfAllDone(ServerLevel arg0, MultipleTestTracker arg1)",
+			"fabric": "onCompletion(ServerWorld world, TestSet tests)"
+		},
+		{
+			"forge": "clearAllTests(CommandSourceStack arg0, int arg1)",
+			"fabric": "executeClearAll(ServerCommandSource source, int radius)"
+		},
+		{
+			"forge": "runTest(CommandSourceStack arg0, TestFunction arg1, int arg2)",
+			"fabric": "executeRun(ServerCommandSource source, TestFunction testFunction, int rotationSteps)"
+		},
+		{
+			"forge": "runTestPreparation(TestFunction arg0, ServerLevel arg1)",
+			"fabric": "beforeBatch(TestFunction testFunction, ServerWorld world)"
+		},
+		{
+			"forge": "runAllTests(CommandSourceStack arg0, int arg1, int arg2)",
+			"fabric": "executeRunAll(ServerCommandSource source, int rotationSteps, int sizeZ)"
+		},
+		{
+			"forge": "runAllTestsInClass(CommandSourceStack arg0, String arg1, int arg2, int arg3)",
+			"fabric": "executeRunAll(ServerCommandSource source, String testClass, int rotationSteps, int sizeZ)"
+		},
+		{
+			"forge": "runLastFailedTests(CommandSourceStack arg0, boolean arg1, int arg2, int arg3)",
+			"fabric": "executeRerunFailed(ServerCommandSource source, boolean requiredOnly, int rotationSteps, int sizeZ)"
+		},
+		{
+			"forge": "runTests(CommandSourceStack arg0, Collection<TestFunction> arg1, int arg2, int arg3)",
+			"fabric": "run(ServerCommandSource source, Collection<TestFunction> testFunctions, int rotationSteps, int arg3)"
+		},
+		{
+			"forge": "say(CommandSourceStack arg0, String arg1)",
+			"fabric": "sendMessage(ServerCommandSource source, String message)"
+		},
+		{
+			"forge": "exportNearestTestStructure(CommandSourceStack arg0)",
+			"fabric": "executeExport(ServerCommandSource source)"
+		},
+		{
+			"forge": "exportTestStructure(CommandSourceStack arg0, String arg1)",
+			"fabric": "executeExport(ServerCommandSource source, String testName)"
+		},
+		{
+			"forge": "importTestStructure(CommandSourceStack arg0, String arg1)",
+			"fabric": "executeImport(ServerCommandSource source, String testName)"
+		},
+		{
+			"forge": "say(ServerLevel arg0, String arg1, ChatFormatting arg2)",
+			"fabric": "sendMessage(ServerWorld world, String message, Formatting formatting)"
+		}
+	]
+}

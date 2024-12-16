@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.storage.LevelResource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.LevelResource",
+			"fabric": "net.minecraft.util.WorldSavePath"
+		},
+		{
+			"forge": "PLAYER_ADVANCEMENTS_DIR",
+			"fabric": "ADVANCEMENTS"
+		},
+		{
+			"forge": "PLAYER_ADVANCEMENTS_DIR",
+			"fabric": "ADVANCEMENTS"
+		},
+		{
+			"forge": "PLAYER_STATS_DIR",
+			"fabric": "STATS"
+		},
+		{
+			"forge": "PLAYER_DATA_DIR",
+			"fabric": "PLAYERDATA"
+		},
+		{
+			"forge": "PLAYER_OLD_DATA_DIR",
+			"fabric": "PLAYERS"
+		},
+		{
+			"forge": "LEVEL_DATA_FILE",
+			"fabric": "LEVEL_DAT"
+		},
+		{
+			"forge": "OLD_LEVEL_DATA_FILE",
+			"fabric": "LEVEL_DAT_OLD"
+		},
+		{
+			"forge": "ICON_FILE",
+			"fabric": "ICON_PNG"
+		},
+		{
+			"forge": "LOCK_FILE",
+			"fabric": "SESSION_LOCK"
+		},
+		{
+			"forge": "GENERATED_DIR",
+			"fabric": "GENERATED"
+		},
+		{
+			"forge": "DATAPACK_DIR",
+			"fabric": "DATAPACKS"
+		},
+		{
+			"forge": "MAP_RESOURCE_FILE",
+			"fabric": "RESOURCES_ZIP"
+		},
+		{
+			"forge": "ROOT",
+			"fabric": "ROOT"
+		},
+		{
+			"forge": "id",
+			"fabric": "relativePath"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getRelativePath()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getRelativePath()"
+		}
+	]
+}

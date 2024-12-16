@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.inventory.ResultSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ResultSlot",
+			"fabric": "net.minecraft.screen.slot.CraftingResultSlot"
+		},
+		{
+			"forge": "craftSlots",
+			"fabric": "input"
+		},
+		{
+			"forge": "craftSlots",
+			"fabric": "input"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "removeCount",
+			"fabric": "amount"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "remove(int arg0)",
+			"fabric": "takeStack(int arg0)"
+		},
+		{
+			"forge": "onQuickCraft(ItemStack arg0, int arg1)",
+			"fabric": "onCrafted(ItemStack arg0, int arg1)"
+		},
+		{
+			"forge": "onSwapCraft(int arg0)",
+			"fabric": "onTake(int arg0)"
+		},
+		{
+			"forge": "checkTakeAchievements(ItemStack arg0)",
+			"fabric": "onCrafted(ItemStack arg0)"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeItem(PlayerEntity arg0, ItemStack arg1)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.RenamedCoralFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.RenamedCoralFix",
+			"fabric": "net.minecraft.datafixer.mapping.LegacyCoralBlockMapping"
+		},
+		{
+			"forge": "RENAMED_IDS",
+			"fabric": "MAP"
+		},
+		{
+			"forge": "RENAMED_IDS",
+			"fabric": "MAP"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.util.random.WeightedRandomList",
+	"items": [
+		{
+			"forge": "net.minecraft.util.random.WeightedRandomList",
+			"fabric": "net.minecraft.util.collection.Pool"
+		},
+		{
+			"forge": "totalWeight",
+			"fabric": "totalWeight"
+		},
+		{
+			"forge": "totalWeight",
+			"fabric": "totalWeight"
+		},
+		{
+			"forge": "items",
+			"fabric": "entries"
+		},
+		{
+			"forge": "create()",
+			"fabric": "empty()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "empty()"
+		},
+		{
+			"forge": "create(E... arg0)",
+			"fabric": "of(E... entries)"
+		},
+		{
+			"forge": "create(List<E> arg0)",
+			"fabric": "of(List<E> entries)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getRandom(RandomSource arg0)",
+			"fabric": "getOrEmpty(Random random)"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getEntries()"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.Codec<E> arg0)",
+			"fabric": "createCodec(com.mojang.serialization.Codec<E> entryCodec)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix",
+			"fabric": "net.minecraft.datafixer.fix.ChunkStructuresTemplateRenameFix"
+		},
+		{
+			"forge": "RENAMES",
+			"fabric": "STRUCTURES"
+		},
+		{
+			"forge": "RENAMES",
+			"fabric": "STRUCTURES"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixChildren(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixChildren(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixChildren(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.Dynamic<?> arg1)",
+			"fabric": "fix(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.Dynamic<?> arg1)"
+		}
+	]
+}

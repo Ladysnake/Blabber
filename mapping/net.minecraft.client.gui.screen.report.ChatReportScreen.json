@@ -1,0 +1,205 @@
+{
+	"title": "net.minecraft.client.gui.screens.reporting.ChatReportScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.reporting.ChatReportScreen",
+			"fabric": "net.minecraft.client.gui.screen.report.ChatReportScreen"
+		},
+		{
+			"forge": "BUTTON_WIDTH",
+			"fabric": "BOTTOM_BUTTON_WIDTH"
+		},
+		{
+			"forge": "BUTTON_WIDTH",
+			"fabric": "BOTTOM_BUTTON_WIDTH"
+		},
+		{
+			"forge": "BUTTON_HEIGHT",
+			"fabric": "BUTTON_HEIGHT"
+		},
+		{
+			"forge": "BUTTON_MARGIN",
+			"fabric": "BUTTON_TOP_MARGIN"
+		},
+		{
+			"forge": "BUTTON_MARGIN_HALF",
+			"fabric": "BUTTON_BOTTOM_MARGIN"
+		},
+		{
+			"forge": "LABEL_HEIGHT",
+			"fabric": "REASON_DESCRIPTION_TOP_MARGIN"
+		},
+		{
+			"forge": "SCREEN_WIDTH",
+			"fabric": "REASON_DESCRIPTION_TEXT_WIDTH"
+		},
+		{
+			"forge": "SCREEN_HEIGHT",
+			"fabric": "SCREEN_HEIGHT"
+		},
+		{
+			"forge": "OBSERVED_WHAT_LABEL",
+			"fabric": "OBSERVED_WHAT_TEXT"
+		},
+		{
+			"forge": "SELECT_REASON",
+			"fabric": "SELECT_REASON_TEXT"
+		},
+		{
+			"forge": "MORE_COMMENTS_LABEL",
+			"fabric": "MORE_COMMENTS_TEXT"
+		},
+		{
+			"forge": "DESCRIBE_PLACEHOLDER",
+			"fabric": "DESCRIBE_TEXT"
+		},
+		{
+			"forge": "REPORT_SENT_MESSAGE",
+			"fabric": "REPORT_SENT_MESSAGE_TEXT"
+		},
+		{
+			"forge": "SELECT_CHAT_MESSAGE",
+			"fabric": "SELECT_CHAT_TEXT"
+		},
+		{
+			"forge": "REPORT_SENDING_TITLE",
+			"fabric": "SENDING_TEXT"
+		},
+		{
+			"forge": "REPORT_SENT_TITLE",
+			"fabric": "REPORT_SENT_TITLE"
+		},
+		{
+			"forge": "REPORT_ERROR_TITLE",
+			"fabric": "REPORT_ERROR_TITLE"
+		},
+		{
+			"forge": "REPORT_SEND_GENERIC_ERROR",
+			"fabric": "GENERIC_ERROR_TEXT"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "reportingContext",
+			"fabric": "context"
+		},
+		{
+			"forge": "reasonDescriptionLabel",
+			"fabric": "reasonDescription"
+		},
+		{
+			"forge": "commentBox",
+			"fabric": "editBox"
+		},
+		{
+			"forge": "sendButton",
+			"fabric": "sendButton"
+		},
+		{
+			"forge": "reportBuilder",
+			"fabric": "report"
+		},
+		{
+			"forge": "cannotBuildReason",
+			"fabric": "validationError"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "onReportChanged()",
+			"fabric": "onChange()"
+		},
+		{
+			"forge": "sendReport()",
+			"fabric": "send()"
+		},
+		{
+			"forge": "onReportSendSuccess()",
+			"fabric": "onSubmissionFinished()"
+		},
+		{
+			"forge": "onReportSendError(Throwable arg0)",
+			"fabric": "onSubmissionError(Throwable throwable)"
+		},
+		{
+			"forge": "displayReportSendError(Component arg0)",
+			"fabric": "showErrorScreen(Text message)"
+		},
+		{
+			"forge": "saveDraft()",
+			"fabric": "setDraft()"
+		},
+		{
+			"forge": "clearDraft()",
+			"fabric": "clearDraft()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "removed()",
+			"fabric": "removed()"
+		},
+		{
+			"forge": "mouseReleased(double arg0, double arg1, int arg2)",
+			"fabric": "mouseReleased(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "contentLeft()",
+			"fabric": "getWidgetsLeft()"
+		},
+		{
+			"forge": "contentRight()",
+			"fabric": "getWidgetsRight()"
+		},
+		{
+			"forge": "contentTop()",
+			"fabric": "getTop()"
+		},
+		{
+			"forge": "contentBottom()",
+			"fabric": "getBottom()"
+		},
+		{
+			"forge": "selectChatTop()",
+			"fabric": "getSelectionButtonY()"
+		},
+		{
+			"forge": "selectInfoTop()",
+			"fabric": "getReasonButtonY()"
+		},
+		{
+			"forge": "commentBoxTop()",
+			"fabric": "getEditBoxTop()"
+		},
+		{
+			"forge": "commentBoxBottom()",
+			"fabric": "getEditBoxBottom()"
+		},
+		{
+			"forge": "completeButtonTop()",
+			"fabric": "getBottomButtonsY()"
+		}
+	]
+}

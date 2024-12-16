@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.stats.ServerStatsCounter",
+	"items": [
+		{
+			"forge": "net.minecraft.stats.ServerStatsCounter",
+			"fabric": "net.minecraft.stat.ServerStatHandler"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "file",
+			"fabric": "file"
+		},
+		{
+			"forge": "dirty",
+			"fabric": "pendingStats"
+		},
+		{
+			"forge": "save()",
+			"fabric": "save()"
+		},
+		{
+			"forge": "save()",
+			"fabric": "save()"
+		},
+		{
+			"forge": "setValue(Player arg0, Stat<?> arg1, int arg2)",
+			"fabric": "setStat(PlayerEntity arg0, Stat<?> arg1, int arg2)"
+		},
+		{
+			"forge": "getDirty()",
+			"fabric": "takePendingStats()"
+		},
+		{
+			"forge": "parseLocal(com.mojang.datafixers.DataFixer arg0, String arg1)",
+			"fabric": "parse(com.mojang.datafixers.DataFixer dataFixer, String json)"
+		},
+		{
+			"forge": "getStat(StatType<T> arg0, String arg1)",
+			"fabric": "createStat(StatType<T> type, String id)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "jsonToCompound(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "toJson()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getKey(Stat<T> arg0)",
+			"fabric": "getStatId(Stat<T> stat)"
+		},
+		{
+			"forge": "markAllDirty()",
+			"fabric": "updateStatSet()"
+		},
+		{
+			"forge": "sendStats(ServerPlayer arg0)",
+			"fabric": "sendStats(ServerPlayerEntity player)"
+		}
+	]
+}

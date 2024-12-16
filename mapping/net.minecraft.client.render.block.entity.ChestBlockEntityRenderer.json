@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.ChestRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.ChestRenderer",
+			"fabric": "net.minecraft.client.render.block.entity.ChestBlockEntityRenderer"
+		},
+		{
+			"forge": "BOTTOM",
+			"fabric": "BASE"
+		},
+		{
+			"forge": "BOTTOM",
+			"fabric": "BASE"
+		},
+		{
+			"forge": "LID",
+			"fabric": "LID"
+		},
+		{
+			"forge": "LOCK",
+			"fabric": "LATCH"
+		},
+		{
+			"forge": "lid",
+			"fabric": "singleChestLid"
+		},
+		{
+			"forge": "bottom",
+			"fabric": "singleChestBase"
+		},
+		{
+			"forge": "lock",
+			"fabric": "singleChestLatch"
+		},
+		{
+			"forge": "doubleLeftLid",
+			"fabric": "doubleChestLeftLid"
+		},
+		{
+			"forge": "doubleLeftBottom",
+			"fabric": "doubleChestLeftBase"
+		},
+		{
+			"forge": "doubleLeftLock",
+			"fabric": "doubleChestLeftLatch"
+		},
+		{
+			"forge": "doubleRightLid",
+			"fabric": "doubleChestRightLid"
+		},
+		{
+			"forge": "doubleRightBottom",
+			"fabric": "doubleChestRightBase"
+		},
+		{
+			"forge": "doubleRightLock",
+			"fabric": "doubleChestRightLatch"
+		},
+		{
+			"forge": "xmasTextures",
+			"fabric": "christmas"
+		},
+		{
+			"forge": "createSingleBodyLayer()",
+			"fabric": "getSingleTexturedModelData()"
+		},
+		{
+			"forge": "createSingleBodyLayer()",
+			"fabric": "getSingleTexturedModelData()"
+		},
+		{
+			"forge": "createDoubleBodyRightLayer()",
+			"fabric": "getRightDoubleTexturedModelData()"
+		},
+		{
+			"forge": "createDoubleBodyLeftLayer()",
+			"fabric": "getLeftDoubleTexturedModelData()"
+		},
+		{
+			"forge": "render(T arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(T arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "render(PoseStack arg0, VertexConsumer arg1, ModelPart arg2, ModelPart arg3, ModelPart arg4, float arg5, int arg6, int arg7)",
+			"fabric": "render(MatrixStack matrices, VertexConsumer vertices, ModelPart lid, ModelPart latch, ModelPart base, float openFactor, int light, int overlay)"
+		}
+	]
+}

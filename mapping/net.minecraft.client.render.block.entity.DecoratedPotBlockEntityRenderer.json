@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.DecoratedPotRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.DecoratedPotRenderer",
+			"fabric": "net.minecraft.client.render.block.entity.DecoratedPotBlockEntityRenderer"
+		},
+		{
+			"forge": "NECK",
+			"fabric": "NECK"
+		},
+		{
+			"forge": "NECK",
+			"fabric": "NECK"
+		},
+		{
+			"forge": "FRONT",
+			"fabric": "FRONT"
+		},
+		{
+			"forge": "BACK",
+			"fabric": "BACK"
+		},
+		{
+			"forge": "LEFT",
+			"fabric": "LEFT"
+		},
+		{
+			"forge": "RIGHT",
+			"fabric": "RIGHT"
+		},
+		{
+			"forge": "TOP",
+			"fabric": "TOP"
+		},
+		{
+			"forge": "BOTTOM",
+			"fabric": "BOTTOM"
+		},
+		{
+			"forge": "neck",
+			"fabric": "neck"
+		},
+		{
+			"forge": "frontSide",
+			"fabric": "front"
+		},
+		{
+			"forge": "backSide",
+			"fabric": "back"
+		},
+		{
+			"forge": "leftSide",
+			"fabric": "left"
+		},
+		{
+			"forge": "rightSide",
+			"fabric": "right"
+		},
+		{
+			"forge": "top",
+			"fabric": "top"
+		},
+		{
+			"forge": "bottom",
+			"fabric": "bottom"
+		},
+		{
+			"forge": "baseMaterial",
+			"fabric": "baseTexture"
+		},
+		{
+			"forge": "createBaseLayer()",
+			"fabric": "getTopBottomNeckTexturedModelData()"
+		},
+		{
+			"forge": "createBaseLayer()",
+			"fabric": "getTopBottomNeckTexturedModelData()"
+		},
+		{
+			"forge": "createSidesLayer()",
+			"fabric": "getSidesTexturedModelData()"
+		},
+		{
+			"forge": "getMaterial(Item arg0)",
+			"fabric": "getTextureIdFromSherd(Item item)"
+		},
+		{
+			"forge": "render(DecoratedPotBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(DecoratedPotBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "renderSide(ModelPart arg0, PoseStack arg1, MultiBufferSource arg2, int arg3, int arg4, Material arg5)",
+			"fabric": "renderDecoratedSide(ModelPart part, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay, SpriteIdentifier textureId)"
+		}
+	]
+}

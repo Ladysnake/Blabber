@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.MoveTowardsRestrictionGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.MoveTowardsRestrictionGoal",
+			"fabric": "net.minecraft.entity.ai.goal.GoToWalkTargetGoal"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "wantedX",
+			"fabric": "x"
+		},
+		{
+			"forge": "wantedY",
+			"fabric": "y"
+		},
+		{
+			"forge": "wantedZ",
+			"fabric": "z"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.network.syncher.EntityDataSerializer$ForValueType",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.EntityDataSerializer$ForValueType",
+			"fabric": "net.minecraft.entity.data.TrackedDataHandler$ImmutableHandler"
+		},
+		{
+			"forge": "copy(T arg0)",
+			"fabric": "copy(T arg0)"
+		},
+		{
+			"forge": "copy(T arg0)",
+			"fabric": "copy(T arg0)"
+		}
+	]
+}

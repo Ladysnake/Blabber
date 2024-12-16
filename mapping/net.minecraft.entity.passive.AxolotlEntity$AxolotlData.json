@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.axolotl.Axolotl$AxolotlGroupData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.axolotl.Axolotl$AxolotlGroupData",
+			"fabric": "net.minecraft.entity.passive.AxolotlEntity$AxolotlData"
+		},
+		{
+			"forge": "types",
+			"fabric": "variants"
+		},
+		{
+			"forge": "types",
+			"fabric": "variants"
+		},
+		{
+			"forge": "getVariant(RandomSource arg0)",
+			"fabric": "getRandomVariant(Random random)"
+		},
+		{
+			"forge": "getVariant(RandomSource arg0)",
+			"fabric": "getRandomVariant(Random random)"
+		}
+	]
+}

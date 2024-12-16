@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.commands.OpCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.OpCommand",
+			"fabric": "net.minecraft.server.dedicated.command.OpCommand"
+		},
+		{
+			"forge": "ERROR_ALREADY_OP",
+			"fabric": "ALREADY_OPPED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_ALREADY_OP",
+			"fabric": "ALREADY_OPPED_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "opPlayers(CommandSourceStack arg0, Collection<com.mojang.authlib.GameProfile> arg1)",
+			"fabric": "op(ServerCommandSource source, Collection<com.mojang.authlib.GameProfile> targets)"
+		}
+	]
+}

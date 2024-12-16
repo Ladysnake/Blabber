@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.animal.Bee$BeeLocateHiveGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Bee$BeeLocateHiveGoal",
+			"fabric": "net.minecraft.entity.passive.BeeEntity$FindHiveGoal"
+		},
+		{
+			"forge": "canBeeUse()",
+			"fabric": "canBeeStart()"
+		},
+		{
+			"forge": "canBeeUse()",
+			"fabric": "canBeeStart()"
+		},
+		{
+			"forge": "canBeeContinueToUse()",
+			"fabric": "canBeeContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "findNearbyHivesWithSpace()",
+			"fabric": "getNearbyFreeHives()"
+		}
+	]
+}

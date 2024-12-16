@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.client.resources.sounds.AbstractSoundInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.AbstractSoundInstance",
+			"fabric": "net.minecraft.client.sound.AbstractSoundInstance"
+		},
+		{
+			"forge": "sound",
+			"fabric": "sound"
+		},
+		{
+			"forge": "sound",
+			"fabric": "sound"
+		},
+		{
+			"forge": "source",
+			"fabric": "category"
+		},
+		{
+			"forge": "location",
+			"fabric": "id"
+		},
+		{
+			"forge": "volume",
+			"fabric": "volume"
+		},
+		{
+			"forge": "pitch",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "looping",
+			"fabric": "repeat"
+		},
+		{
+			"forge": "delay",
+			"fabric": "repeatDelay"
+		},
+		{
+			"forge": "attenuation",
+			"fabric": "attenuationType"
+		},
+		{
+			"forge": "relative",
+			"fabric": "relative"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "getLocation()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getLocation()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "resolve(SoundManager arg0)",
+			"fabric": "getSoundSet(SoundManager arg0)"
+		},
+		{
+			"forge": "getSound()",
+			"fabric": "getSound()"
+		},
+		{
+			"forge": "getSource()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "isLooping()",
+			"fabric": "isRepeatable()"
+		},
+		{
+			"forge": "getDelay()",
+			"fabric": "getRepeatDelay()"
+		},
+		{
+			"forge": "getVolume()",
+			"fabric": "getVolume()"
+		},
+		{
+			"forge": "getPitch()",
+			"fabric": "getPitch()"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "getZ()",
+			"fabric": "getZ()"
+		},
+		{
+			"forge": "getAttenuation()",
+			"fabric": "getAttenuationType()"
+		},
+		{
+			"forge": "isRelative()",
+			"fabric": "isRelative()"
+		}
+	]
+}

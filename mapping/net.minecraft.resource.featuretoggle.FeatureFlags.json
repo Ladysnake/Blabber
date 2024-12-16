@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.flag.FeatureFlags",
+	"items": [
+		{
+			"forge": "net.minecraft.world.flag.FeatureFlags",
+			"fabric": "net.minecraft.resource.featuretoggle.FeatureFlags"
+		},
+		{
+			"forge": "VANILLA",
+			"fabric": "VANILLA"
+		},
+		{
+			"forge": "VANILLA",
+			"fabric": "VANILLA"
+		},
+		{
+			"forge": "BUNDLE",
+			"fabric": "BUNDLE"
+		},
+		{
+			"forge": "REGISTRY",
+			"fabric": "FEATURE_MANAGER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "VANILLA_SET",
+			"fabric": "VANILLA_FEATURES"
+		},
+		{
+			"forge": "DEFAULT_FLAGS",
+			"fabric": "DEFAULT_ENABLED_FEATURES"
+		},
+		{
+			"forge": "printMissingFlags(FeatureFlagSet arg0, FeatureFlagSet arg1)",
+			"fabric": "printMissingFlags(FeatureSet featuresToCheck, FeatureSet features)"
+		},
+		{
+			"forge": "printMissingFlags(FeatureFlagSet arg0, FeatureFlagSet arg1)",
+			"fabric": "printMissingFlags(FeatureSet featuresToCheck, FeatureSet features)"
+		},
+		{
+			"forge": "printMissingFlags(FeatureFlagRegistry arg0, FeatureFlagSet arg1, FeatureFlagSet arg2)",
+			"fabric": "printMissingFlags(FeatureManager featureManager, FeatureSet featuresToCheck, FeatureSet features)"
+		},
+		{
+			"forge": "isExperimental(FeatureFlagSet arg0)",
+			"fabric": "isNotVanilla(FeatureSet features)"
+		}
+	]
+}

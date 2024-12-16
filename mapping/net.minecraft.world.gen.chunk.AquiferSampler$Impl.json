@@ -1,0 +1,185 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer",
+			"fabric": "net.minecraft.world.gen.chunk.AquiferSampler$Impl"
+		},
+		{
+			"forge": "X_RANGE",
+			"fabric": "field_31451"
+		},
+		{
+			"forge": "X_RANGE",
+			"fabric": "field_31451"
+		},
+		{
+			"forge": "Y_RANGE",
+			"fabric": "field_31452"
+		},
+		{
+			"forge": "Z_RANGE",
+			"fabric": "field_31453"
+		},
+		{
+			"forge": "X_SEPARATION",
+			"fabric": "field_31454"
+		},
+		{
+			"forge": "Y_SEPARATION",
+			"fabric": "field_31455"
+		},
+		{
+			"forge": "Z_SEPARATION",
+			"fabric": "field_31456"
+		},
+		{
+			"forge": "X_SPACING",
+			"fabric": "field_31457"
+		},
+		{
+			"forge": "Y_SPACING",
+			"fabric": "field_31458"
+		},
+		{
+			"forge": "Z_SPACING",
+			"fabric": "field_31459"
+		},
+		{
+			"forge": "MAX_REASONABLE_DISTANCE_TO_AQUIFER_CENTER",
+			"fabric": "field_36220"
+		},
+		{
+			"forge": "FLOWING_UPDATE_SIMULARITY",
+			"fabric": "NEEDS_FLUID_TICK_DISTANCE_THRESHOLD"
+		},
+		{
+			"forge": "noiseChunk",
+			"fabric": "chunkNoiseSampler"
+		},
+		{
+			"forge": "barrierNoise",
+			"fabric": "barrierNoise"
+		},
+		{
+			"forge": "fluidLevelFloodednessNoise",
+			"fabric": "fluidLevelFloodednessNoise"
+		},
+		{
+			"forge": "fluidLevelSpreadNoise",
+			"fabric": "fluidLevelSpreadNoise"
+		},
+		{
+			"forge": "lavaNoise",
+			"fabric": "fluidTypeNoise"
+		},
+		{
+			"forge": "positionalRandomFactory",
+			"fabric": "randomDeriver"
+		},
+		{
+			"forge": "aquiferCache",
+			"fabric": "waterLevels"
+		},
+		{
+			"forge": "aquiferLocationCache",
+			"fabric": "blockPositions"
+		},
+		{
+			"forge": "globalFluidPicker",
+			"fabric": "fluidLevelSampler"
+		},
+		{
+			"forge": "erosion",
+			"fabric": "erosionDensityFunction"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depthDensityFunction"
+		},
+		{
+			"forge": "shouldScheduleFluidUpdate",
+			"fabric": "needsFluidTick"
+		},
+		{
+			"forge": "minGridX",
+			"fabric": "startX"
+		},
+		{
+			"forge": "minGridY",
+			"fabric": "startY"
+		},
+		{
+			"forge": "minGridZ",
+			"fabric": "startZ"
+		},
+		{
+			"forge": "gridSizeX",
+			"fabric": "sizeX"
+		},
+		{
+			"forge": "gridSizeZ",
+			"fabric": "sizeZ"
+		},
+		{
+			"forge": "SURFACE_SAMPLING_OFFSETS_IN_CHUNKS",
+			"fabric": "CHUNK_POS_OFFSETS"
+		},
+		{
+			"forge": "getIndex(int arg0, int arg1, int arg2)",
+			"fabric": "index(int x, int y, int z)"
+		},
+		{
+			"forge": "getIndex(int arg0, int arg1, int arg2)",
+			"fabric": "index(int x, int y, int z)"
+		},
+		{
+			"forge": "computeSubstance(DensityFunction$FunctionContext arg0, double arg1)",
+			"fabric": "apply(DensityFunction$NoisePos arg0, double arg1)"
+		},
+		{
+			"forge": "shouldScheduleFluidUpdate()",
+			"fabric": "needsFluidTick()"
+		},
+		{
+			"forge": "similarity(int arg0, int arg1)",
+			"fabric": "maxDistance(int arg0, int a)"
+		},
+		{
+			"forge": "calculatePressure(DensityFunction$FunctionContext arg0, org.apache.commons.lang3.mutable.MutableDouble arg1, Aquifer$FluidStatus arg2, Aquifer$FluidStatus arg3)",
+			"fabric": "calculateDensity(DensityFunction$NoisePos pos, org.apache.commons.lang3.mutable.MutableDouble arg1, AquiferSampler$FluidLevel arg2, AquiferSampler$FluidLevel arg3)"
+		},
+		{
+			"forge": "gridX(int arg0)",
+			"fabric": "getLocalX(int x)"
+		},
+		{
+			"forge": "gridY(int arg0)",
+			"fabric": "getLocalY(int y)"
+		},
+		{
+			"forge": "gridZ(int arg0)",
+			"fabric": "getLocalZ(int z)"
+		},
+		{
+			"forge": "getAquiferStatus(long arg0)",
+			"fabric": "getWaterLevel(long pos)"
+		},
+		{
+			"forge": "computeFluid(int arg0, int arg1, int arg2)",
+			"fabric": "getFluidLevel(int blockX, int blockY, int blockZ)"
+		},
+		{
+			"forge": "computeSurfaceLevel(int arg0, int arg1, int arg2, Aquifer$FluidStatus arg3, int arg4, boolean arg5)",
+			"fabric": "getFluidBlockY(int blockX, int blockY, int blockZ, AquiferSampler$FluidLevel defaultFluidLevel, int surfaceHeightEstimate, boolean arg5)"
+		},
+		{
+			"forge": "computeRandomizedFluidSurfaceLevel(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getNoiseBasedFluidLevel(int blockX, int blockY, int blockZ, int surfaceHeightEstimate)"
+		},
+		{
+			"forge": "computeFluidType(int arg0, int arg1, int arg2, Aquifer$FluidStatus arg3, int arg4)",
+			"fabric": "getFluidBlockState(int blockX, int blockY, int blockZ, AquiferSampler$FluidLevel defaultFluidLevel, int fluidLevel)"
+		}
+	]
+}

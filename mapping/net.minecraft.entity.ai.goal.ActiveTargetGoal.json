@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal",
+			"fabric": "net.minecraft.entity.ai.goal.ActiveTargetGoal"
+		},
+		{
+			"forge": "DEFAULT_RANDOM_INTERVAL",
+			"fabric": "DEFAULT_RECIPROCAL_CHANCE"
+		},
+		{
+			"forge": "DEFAULT_RANDOM_INTERVAL",
+			"fabric": "DEFAULT_RECIPROCAL_CHANCE"
+		},
+		{
+			"forge": "targetType",
+			"fabric": "targetClass"
+		},
+		{
+			"forge": "randomInterval",
+			"fabric": "reciprocalChance"
+		},
+		{
+			"forge": "target",
+			"fabric": "targetEntity"
+		},
+		{
+			"forge": "targetConditions",
+			"fabric": "targetPredicate"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "getTargetSearchArea(double arg0)",
+			"fabric": "getSearchBox(double distance)"
+		},
+		{
+			"forge": "findTarget()",
+			"fabric": "findClosestTarget()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "setTarget(LivingEntity arg0)",
+			"fabric": "setTargetEntity(LivingEntity targetEntity)"
+		}
+	]
+}

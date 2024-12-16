@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.client.renderer.texture.TextureAtlas",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.TextureAtlas",
+			"fabric": "net.minecraft.client.texture.SpriteAtlasTexture"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOCATION_BLOCKS",
+			"fabric": "BLOCK_ATLAS_TEXTURE"
+		},
+		{
+			"forge": "LOCATION_PARTICLES",
+			"fabric": "PARTICLE_ATLAS_TEXTURE"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spritesToLoad"
+		},
+		{
+			"forge": "animatedTextures",
+			"fabric": "animatedSprites"
+		},
+		{
+			"forge": "texturesByName",
+			"fabric": "sprites"
+		},
+		{
+			"forge": "location",
+			"fabric": "id"
+		},
+		{
+			"forge": "maxSupportedTextureSize",
+			"fabric": "maxTextureSize"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "mipLevel",
+			"fabric": "mipLevel"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "upload(SpriteLoader$Preparations arg0)",
+			"fabric": "upload(SpriteLoader$StitchResult stitchResult)"
+		},
+		{
+			"forge": "dumpContents(ResourceLocation arg0, Path arg1)",
+			"fabric": "save(Identifier arg0, Path arg1)"
+		},
+		{
+			"forge": "dumpSpriteNames(Path arg0, String arg1, Map<ResourceLocation, TextureAtlasSprite> arg2)",
+			"fabric": "dumpAtlasInfos(Path path, String id, Map<Identifier, Sprite> sprites)"
+		},
+		{
+			"forge": "cycleAnimationFrames()",
+			"fabric": "tickAnimatedSprites()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getSprite(ResourceLocation arg0)",
+			"fabric": "getSprite(Identifier id)"
+		},
+		{
+			"forge": "clearTextureData()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "location()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "maxSupportedTextureSize()",
+			"fabric": "getMaxTextureSize()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "updateFilter(SpriteLoader$Preparations arg0)",
+			"fabric": "applyTextureFilter(SpriteLoader$StitchResult data)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.texture.SimpleTexture",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.SimpleTexture",
+			"fabric": "net.minecraft.client.texture.ResourceTexture"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "location",
+			"fabric": "location"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "doLoad(NativeImage arg0, boolean arg1, boolean arg2)",
+			"fabric": "upload(NativeImage image, boolean blur, boolean clamp)"
+		},
+		{
+			"forge": "getTextureImage(ResourceManager arg0)",
+			"fabric": "loadTextureData(ResourceManager resourceManager)"
+		}
+	]
+}

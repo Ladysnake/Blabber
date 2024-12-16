@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.ChunkStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.ChunkStorage",
+			"fabric": "net.minecraft.world.storage.VersionedChunkStorage"
+		},
+		{
+			"forge": "LAST_MONOLYTH_STRUCTURE_DATA_VERSION",
+			"fabric": "FEATURE_UPDATING_VERSION"
+		},
+		{
+			"forge": "LAST_MONOLYTH_STRUCTURE_DATA_VERSION",
+			"fabric": "FEATURE_UPDATING_VERSION"
+		},
+		{
+			"forge": "worker",
+			"fabric": "worker"
+		},
+		{
+			"forge": "fixerUpper",
+			"fabric": "dataFixer"
+		},
+		{
+			"forge": "legacyStructureHandler",
+			"fabric": "featureUpdater"
+		},
+		{
+			"forge": "isOldChunkAround(ChunkPos arg0, int arg1)",
+			"fabric": "needsBlending(ChunkPos chunkPos, int checkRadius)"
+		},
+		{
+			"forge": "isOldChunkAround(ChunkPos arg0, int arg1)",
+			"fabric": "needsBlending(ChunkPos chunkPos, int checkRadius)"
+		},
+		{
+			"forge": "upgradeChunkTag(ResourceKey<Level> arg0, Supplier<DimensionDataStorage> arg1, CompoundTag arg2, Optional<ResourceKey<com.mojang.serialization.Codec<? extends ChunkGenerator>>> arg3)",
+			"fabric": "updateChunkNbt(RegistryKey<World> worldKey, Supplier<PersistentStateManager> persistentStateManagerFactory, NbtCompound nbt, Optional<RegistryKey<com.mojang.serialization.Codec<? extends ChunkGenerator>>> generatorCodecKey)"
+		},
+		{
+			"forge": "getLegacyStructureHandler(ResourceKey<Level> arg0, Supplier<DimensionDataStorage> arg1)",
+			"fabric": "getFeatureUpdater(RegistryKey<World> worldKey, Supplier<PersistentStateManager> stateManagerGetter)"
+		},
+		{
+			"forge": "injectDatafixingContext(CompoundTag arg0, ResourceKey<Level> arg1, Optional<ResourceKey<com.mojang.serialization.Codec<? extends ChunkGenerator>>> arg2)",
+			"fabric": "saveContextToNbt(NbtCompound nbt, RegistryKey<World> worldKey, Optional<RegistryKey<com.mojang.serialization.Codec<? extends ChunkGenerator>>> generatorCodecKey)"
+		},
+		{
+			"forge": "getVersion(CompoundTag arg0)",
+			"fabric": "getDataVersion(NbtCompound nbt)"
+		},
+		{
+			"forge": "read(ChunkPos arg0)",
+			"fabric": "getNbt(ChunkPos chunkPos)"
+		},
+		{
+			"forge": "write(ChunkPos arg0, CompoundTag arg1)",
+			"fabric": "setNbt(ChunkPos chunkPos, NbtCompound nbt)"
+		},
+		{
+			"forge": "flushWorker()",
+			"fabric": "completeAll()"
+		},
+		{
+			"forge": "chunkScanner()",
+			"fabric": "getWorker()"
+		}
+	]
+}

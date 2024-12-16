@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.item.alchemy.Potion",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.alchemy.Potion",
+			"fabric": "net.minecraft.potion.Potion"
+		},
+		{
+			"forge": "name",
+			"fabric": "baseName"
+		},
+		{
+			"forge": "name",
+			"fabric": "baseName"
+		},
+		{
+			"forge": "effects",
+			"fabric": "effects"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "byId(String id)"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "byId(String id)"
+		},
+		{
+			"forge": "getName(String arg0)",
+			"fabric": "finishTranslationKey(String prefix)"
+		},
+		{
+			"forge": "getEffects()",
+			"fabric": "getEffects()"
+		},
+		{
+			"forge": "hasInstantEffects()",
+			"fabric": "hasInstantEffect()"
+		}
+	]
+}

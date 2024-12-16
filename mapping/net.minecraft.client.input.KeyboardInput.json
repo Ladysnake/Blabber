@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.player.KeyboardInput",
+	"items": [
+		{
+			"forge": "net.minecraft.client.player.KeyboardInput",
+			"fabric": "net.minecraft.client.input.KeyboardInput"
+		},
+		{
+			"forge": "options",
+			"fabric": "settings"
+		},
+		{
+			"forge": "options",
+			"fabric": "settings"
+		},
+		{
+			"forge": "calculateImpulse(boolean arg0, boolean arg1)",
+			"fabric": "getMovementMultiplier(boolean positive, boolean negative)"
+		},
+		{
+			"forge": "calculateImpulse(boolean arg0, boolean arg1)",
+			"fabric": "getMovementMultiplier(boolean positive, boolean negative)"
+		},
+		{
+			"forge": "tick(boolean arg0, float arg1)",
+			"fabric": "tick(boolean arg0, float arg1)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.components.ObjectSelectionList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.ObjectSelectionList",
+			"fabric": "net.minecraft.client.gui.widget.AlwaysSelectedEntryListWidget"
+		},
+		{
+			"forge": "USAGE_NARRATION",
+			"fabric": "SELECTION_USAGE_TEXT"
+		},
+		{
+			"forge": "USAGE_NARRATION",
+			"fabric": "SELECTION_USAGE_TEXT"
+		},
+		{
+			"forge": "nextFocusPath(FocusNavigationEvent arg0)",
+			"fabric": "getNavigationPath(GuiNavigation arg0)"
+		},
+		{
+			"forge": "nextFocusPath(FocusNavigationEvent arg0)",
+			"fabric": "getNavigationPath(GuiNavigation arg0)"
+		},
+		{
+			"forge": "updateNarration(NarrationElementOutput arg0)",
+			"fabric": "appendNarrations(NarrationMessageBuilder arg0)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$SimplePalette",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$SimplePalette",
+			"fabric": "net.minecraft.structure.StructureTemplate$Palette"
+		},
+		{
+			"forge": "DEFAULT_BLOCK_STATE",
+			"fabric": "AIR"
+		},
+		{
+			"forge": "DEFAULT_BLOCK_STATE",
+			"fabric": "AIR"
+		},
+		{
+			"forge": "ids",
+			"fabric": "ids"
+		},
+		{
+			"forge": "lastId",
+			"fabric": "currentIndex"
+		},
+		{
+			"forge": "idFor(BlockState arg0)",
+			"fabric": "getId(BlockState state)"
+		},
+		{
+			"forge": "idFor(BlockState arg0)",
+			"fabric": "getId(BlockState state)"
+		},
+		{
+			"forge": "stateFor(int arg0)",
+			"fabric": "getState(int id)"
+		},
+		{
+			"forge": "addMapping(BlockState arg0, int arg1)",
+			"fabric": "set(BlockState state, int id)"
+		}
+	]
+}

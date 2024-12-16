@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.chunk.LightChunk",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.LightChunk",
+			"fabric": "net.minecraft.world.chunk.light.LightSourceView"
+		},
+		{
+			"forge": "findBlockLightSources(BiConsumer<BlockPos, BlockState> arg0)",
+			"fabric": "forEachLightSource(BiConsumer<BlockPos, BlockState> callback)"
+		},
+		{
+			"forge": "findBlockLightSources(BiConsumer<BlockPos, BlockState> arg0)",
+			"fabric": "forEachLightSource(BiConsumer<BlockPos, BlockState> callback)"
+		},
+		{
+			"forge": "getSkyLightSources()",
+			"fabric": "getChunkSkyLight()"
+		}
+	]
+}

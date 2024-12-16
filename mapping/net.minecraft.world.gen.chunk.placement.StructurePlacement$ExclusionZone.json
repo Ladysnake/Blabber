@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.placement.StructurePlacement$ExclusionZone",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.placement.StructurePlacement$ExclusionZone",
+			"fabric": "net.minecraft.world.gen.chunk.placement.StructurePlacement$ExclusionZone"
+		},
+		{
+			"forge": "otherSet",
+			"fabric": "otherSet"
+		},
+		{
+			"forge": "otherSet",
+			"fabric": "otherSet"
+		},
+		{
+			"forge": "chunkCount",
+			"fabric": "chunkCount"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "isPlacementForbidden(ChunkGeneratorStructureState arg0, int arg1, int arg2)",
+			"fabric": "shouldExclude(StructurePlacementCalculator calculator, int centerChunkX, int centerChunkZ)"
+		},
+		{
+			"forge": "isPlacementForbidden(ChunkGeneratorStructureState arg0, int arg1, int arg2)",
+			"fabric": "shouldExclude(StructurePlacementCalculator calculator, int centerChunkX, int centerChunkZ)"
+		},
+		{
+			"forge": "otherSet()",
+			"fabric": "otherSet()"
+		},
+		{
+			"forge": "chunkCount()",
+			"fabric": "chunkCount()"
+		}
+	]
+}

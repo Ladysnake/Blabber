@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.carver.CarverConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.carver.CarverConfiguration",
+			"fabric": "net.minecraft.world.gen.carver.CarverConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CONFIG_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CONFIG_CODEC"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "yScale",
+			"fabric": "yScale"
+		},
+		{
+			"forge": "lavaLevel",
+			"fabric": "lavaLevel"
+		},
+		{
+			"forge": "debugSettings",
+			"fabric": "debugConfig"
+		},
+		{
+			"forge": "replaceable",
+			"fabric": "replaceable"
+		}
+	]
+}

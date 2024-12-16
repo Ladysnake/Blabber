@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.model.VillagerHeadModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.VillagerHeadModel",
+			"fabric": "net.minecraft.client.render.entity.model.ModelWithHat"
+		},
+		{
+			"forge": "hatVisible(boolean arg0)",
+			"fabric": "setHatVisible(boolean visible)"
+		},
+		{
+			"forge": "hatVisible(boolean arg0)",
+			"fabric": "setHatVisible(boolean visible)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.RedstoneSide",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.RedstoneSide",
+			"fabric": "net.minecraft.block.enums.WireConnection"
+		},
+		{
+			"forge": "UP",
+			"fabric": "UP"
+		},
+		{
+			"forge": "UP",
+			"fabric": "UP"
+		},
+		{
+			"forge": "SIDE",
+			"fabric": "SIDE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "isConnected()",
+			"fabric": "isConnected()"
+		}
+	]
+}

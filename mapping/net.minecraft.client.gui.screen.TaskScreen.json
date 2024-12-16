@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.gui.screens.GenericWaitingScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.GenericWaitingScreen",
+			"fabric": "net.minecraft.client.gui.screen.TaskScreen"
+		},
+		{
+			"forge": "TITLE_Y",
+			"fabric": "TITLE_TEXT_Y"
+		},
+		{
+			"forge": "TITLE_Y",
+			"fabric": "TITLE_TEXT_Y"
+		},
+		{
+			"forge": "MESSAGE_Y",
+			"fabric": "DESCRIPTION_TEXT_Y"
+		},
+		{
+			"forge": "MESSAGE_MAX_WIDTH",
+			"fabric": "DESCRIPTION_TEXT_WIDTH"
+		},
+		{
+			"forge": "messageText",
+			"fabric": "descriptionText"
+		},
+		{
+			"forge": "buttonLabel",
+			"fabric": "closeButtonText"
+		},
+		{
+			"forge": "buttonCallback",
+			"fabric": "closeCallback"
+		},
+		{
+			"forge": "message",
+			"fabric": "description"
+		},
+		{
+			"forge": "button",
+			"fabric": "button"
+		},
+		{
+			"forge": "disableButtonTicks",
+			"fabric": "buttonCooldown"
+		},
+		{
+			"forge": "createWaiting(Component arg0, Component arg1, Runnable arg2)",
+			"fabric": "createRunningScreen(Text title, Text closeButtonText, Runnable closeCallback)"
+		},
+		{
+			"forge": "createWaiting(Component arg0, Component arg1, Runnable arg2)",
+			"fabric": "createRunningScreen(Text title, Text closeButtonText, Runnable closeCallback)"
+		},
+		{
+			"forge": "createCompleted(Component arg0, Component arg1, Component arg2, Runnable arg3)",
+			"fabric": "createResultScreen(Text title, Text descriptionText, Text closeButtonText, Runnable closeCallback)"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "shouldCloseOnEsc()",
+			"fabric": "shouldCloseOnEsc()"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		}
+	]
+}

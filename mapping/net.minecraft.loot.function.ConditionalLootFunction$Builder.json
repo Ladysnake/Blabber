@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$Builder",
+			"fabric": "net.minecraft.loot.function.ConditionalLootFunction$Builder"
+		},
+		{
+			"forge": "conditions",
+			"fabric": "conditionList"
+		},
+		{
+			"forge": "conditions",
+			"fabric": "conditionList"
+		},
+		{
+			"forge": "when(LootItemCondition$Builder arg0)",
+			"fabric": "conditionally(LootCondition$Builder arg0)"
+		},
+		{
+			"forge": "when(LootItemCondition$Builder arg0)",
+			"fabric": "conditionally(LootCondition$Builder arg0)"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getThisConditionConsumingBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getConditions()",
+			"fabric": "getConditions()"
+		}
+	]
+}

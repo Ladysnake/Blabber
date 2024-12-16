@@ -1,0 +1,181 @@
+{
+	"title": "net.minecraft.world.level.block.entity.HopperBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.HopperBlockEntity",
+			"fabric": "net.minecraft.block.entity.HopperBlockEntity"
+		},
+		{
+			"forge": "MOVE_ITEM_SPEED",
+			"fabric": "TRANSFER_COOLDOWN"
+		},
+		{
+			"forge": "MOVE_ITEM_SPEED",
+			"fabric": "TRANSFER_COOLDOWN"
+		},
+		{
+			"forge": "HOPPER_CONTAINER_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "cooldownTime",
+			"fabric": "transferCooldown"
+		},
+		{
+			"forge": "tickedGameTime",
+			"fabric": "lastTickTime"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "pushItemsTick(Level arg0, BlockPos arg1, BlockState arg2, HopperBlockEntity arg3)",
+			"fabric": "serverTick(World world, BlockPos pos, BlockState state, HopperBlockEntity blockEntity)"
+		},
+		{
+			"forge": "tryMoveItems(Level arg0, BlockPos arg1, BlockState arg2, HopperBlockEntity arg3, BooleanSupplier arg4)",
+			"fabric": "insertAndExtract(World world, BlockPos pos, BlockState state, HopperBlockEntity blockEntity, BooleanSupplier arg4)"
+		},
+		{
+			"forge": "inventoryFull()",
+			"fabric": "isFull()"
+		},
+		{
+			"forge": "ejectItems(Level arg0, BlockPos arg1, BlockState arg2, Container arg3)",
+			"fabric": "insert(World world, BlockPos pos, BlockState state, Inventory inventory)"
+		},
+		{
+			"forge": "getSlots(Container arg0, Direction arg1)",
+			"fabric": "getAvailableSlots(Inventory inventory, Direction side)"
+		},
+		{
+			"forge": "isFullContainer(Container arg0, Direction arg1)",
+			"fabric": "isInventoryFull(Inventory inventory, Direction direction)"
+		},
+		{
+			"forge": "isEmptyContainer(Container arg0, Direction arg1)",
+			"fabric": "isInventoryEmpty(Inventory inv, Direction facing)"
+		},
+		{
+			"forge": "suckInItems(Level arg0, Hopper arg1)",
+			"fabric": "extract(World world, Hopper hopper)"
+		},
+		{
+			"forge": "tryTakeInItemFromSlot(Hopper arg0, Container arg1, int arg2, Direction arg3)",
+			"fabric": "extract(Hopper hopper, Inventory inventory, int slot, Direction side)"
+		},
+		{
+			"forge": "addItem(Container arg0, ItemEntity arg1)",
+			"fabric": "extract(Inventory inventory, ItemEntity itemEntity)"
+		},
+		{
+			"forge": "addItem(Container arg0, Container arg1, ItemStack arg2, Direction arg3)",
+			"fabric": "transfer(Inventory from, Inventory to, ItemStack stack, Direction side)"
+		},
+		{
+			"forge": "canPlaceItemInContainer(Container arg0, ItemStack arg1, int arg2, Direction arg3)",
+			"fabric": "canInsert(Inventory inventory, ItemStack stack, int slot, Direction side)"
+		},
+		{
+			"forge": "canTakeItemFromContainer(Container arg0, Container arg1, ItemStack arg2, int arg3, Direction arg4)",
+			"fabric": "canExtract(Inventory hopperInventory, Inventory fromInventory, ItemStack stack, int slot, Direction facing)"
+		},
+		{
+			"forge": "tryMoveInItem(Container arg0, Container arg1, ItemStack arg2, int arg3, Direction arg4)",
+			"fabric": "transfer(Inventory from, Inventory to, ItemStack stack, int slot, Direction side)"
+		},
+		{
+			"forge": "getAttachedContainer(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getOutputInventory(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "getSourceContainer(Level arg0, Hopper arg1)",
+			"fabric": "getInputInventory(World world, Hopper hopper)"
+		},
+		{
+			"forge": "getItemsAtAndAbove(Level arg0, Hopper arg1)",
+			"fabric": "getInputItemEntities(World world, Hopper hopper)"
+		},
+		{
+			"forge": "getContainerAt(Level arg0, BlockPos arg1)",
+			"fabric": "getInventoryAt(World world, BlockPos pos)"
+		},
+		{
+			"forge": "getContainerAt(Level arg0, double arg1, double arg2, double arg3)",
+			"fabric": "getInventoryAt(World world, double x, double y, double z)"
+		},
+		{
+			"forge": "canMergeItems(ItemStack arg0, ItemStack arg1)",
+			"fabric": "canMergeItems(ItemStack first, ItemStack second)"
+		},
+		{
+			"forge": "getLevelX()",
+			"fabric": "getHopperX()"
+		},
+		{
+			"forge": "getLevelY()",
+			"fabric": "getHopperY()"
+		},
+		{
+			"forge": "getLevelZ()",
+			"fabric": "getHopperZ()"
+		},
+		{
+			"forge": "setCooldown(int arg0)",
+			"fabric": "setTransferCooldown(int transferCooldown)"
+		},
+		{
+			"forge": "isOnCooldown()",
+			"fabric": "needsCooldown()"
+		},
+		{
+			"forge": "isOnCustomCooldown()",
+			"fabric": "isDisabled()"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getInvStackList()"
+		},
+		{
+			"forge": "setItems(NonNullList<ItemStack> arg0)",
+			"fabric": "setInvStackList(DefaultedList<ItemStack> arg0)"
+		},
+		{
+			"forge": "entityInside(Level arg0, BlockPos arg1, BlockState arg2, Entity arg3, HopperBlockEntity arg4)",
+			"fabric": "onEntityCollided(World world, BlockPos pos, BlockState state, Entity entity, HopperBlockEntity blockEntity)"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1)",
+			"fabric": "createScreenHandler(int arg0, PlayerInventory arg1)"
+		}
+	]
+}

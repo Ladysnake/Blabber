@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.block.WetSpongeBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.WetSpongeBlock",
+			"fabric": "net.minecraft.block.WetSpongeBlock"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		}
+	]
+}

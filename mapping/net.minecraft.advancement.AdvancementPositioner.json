@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.advancements.TreeNodePosition",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.TreeNodePosition",
+			"fabric": "net.minecraft.advancement.AdvancementPositioner"
+		},
+		{
+			"forge": "advancement",
+			"fabric": "advancement"
+		},
+		{
+			"forge": "advancement",
+			"fabric": "advancement"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "previousSibling",
+			"fabric": "previousSibling"
+		},
+		{
+			"forge": "childIndex",
+			"fabric": "childrenSize"
+		},
+		{
+			"forge": "children",
+			"fabric": "children"
+		},
+		{
+			"forge": "ancestor",
+			"fabric": "optionalLast"
+		},
+		{
+			"forge": "thread",
+			"fabric": "substituteChild"
+		},
+		{
+			"forge": "x",
+			"fabric": "depth"
+		},
+		{
+			"forge": "y",
+			"fabric": "row"
+		},
+		{
+			"forge": "mod",
+			"fabric": "relativeRowInSiblings"
+		},
+		{
+			"forge": "change",
+			"fabric": "field_1266"
+		},
+		{
+			"forge": "shift",
+			"fabric": "field_1265"
+		},
+		{
+			"forge": "addChild(Advancement arg0, TreeNodePosition arg1)",
+			"fabric": "findChildrenRecursively(Advancement advancement, AdvancementPositioner lastChild)"
+		},
+		{
+			"forge": "addChild(Advancement arg0, TreeNodePosition arg1)",
+			"fabric": "findChildrenRecursively(Advancement advancement, AdvancementPositioner lastChild)"
+		},
+		{
+			"forge": "firstWalk()",
+			"fabric": "calculateRecursively()"
+		},
+		{
+			"forge": "secondWalk(float arg0, int arg1, float arg2)",
+			"fabric": "findMinRowRecursively(float deltaRow, int depth, float minRow)"
+		},
+		{
+			"forge": "thirdWalk(float arg0)",
+			"fabric": "increaseRowRecursively(float deltaRow)"
+		},
+		{
+			"forge": "executeShifts()",
+			"fabric": "onFinishChildrenCalculation()"
+		},
+		{
+			"forge": "previousOrThread()",
+			"fabric": "getFirstChild()"
+		},
+		{
+			"forge": "nextOrThread()",
+			"fabric": "getLastChild()"
+		},
+		{
+			"forge": "apportion(TreeNodePosition arg0)",
+			"fabric": "onFinishCalculation(AdvancementPositioner last)"
+		},
+		{
+			"forge": "moveSubtree(TreeNodePosition arg0, float arg1)",
+			"fabric": "pushDown(AdvancementPositioner positioner, float extraRowDistance)"
+		},
+		{
+			"forge": "getAncestor(TreeNodePosition arg0, TreeNodePosition arg1)",
+			"fabric": "getLast(AdvancementPositioner arg0, AdvancementPositioner arg1)"
+		},
+		{
+			"forge": "finalizePosition()",
+			"fabric": "apply()"
+		},
+		{
+			"forge": "run(Advancement arg0)",
+			"fabric": "arrangeForTree(Advancement root)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.components.tabs.TabNavigationBar$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.tabs.TabNavigationBar$Builder",
+			"fabric": "net.minecraft.client.gui.widget.TabNavigationWidget$Builder"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "tabManager",
+			"fabric": "tabManager"
+		},
+		{
+			"forge": "tabs",
+			"fabric": "tabs"
+		},
+		{
+			"forge": "addTabs(Tab... arg0)",
+			"fabric": "tabs(Tab... tabs)"
+		},
+		{
+			"forge": "addTabs(Tab... arg0)",
+			"fabric": "tabs(Tab... tabs)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

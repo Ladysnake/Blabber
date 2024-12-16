@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature",
+			"fabric": "net.minecraft.world.gen.feature.RandomFeatureEntry"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "feature",
+			"fabric": "feature"
+		},
+		{
+			"forge": "chance",
+			"fabric": "chance"
+		},
+		{
+			"forge": "place(WorldGenLevel arg0, ChunkGenerator arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "generate(StructureWorldAccess world, ChunkGenerator chunkGenerator, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "place(WorldGenLevel arg0, ChunkGenerator arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "generate(StructureWorldAccess world, ChunkGenerator chunkGenerator, Random random, BlockPos pos)"
+		}
+	]
+}

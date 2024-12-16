@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.advancements.AdvancementList",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.AdvancementList",
+			"fabric": "net.minecraft.advancement.AdvancementManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "advancements",
+			"fabric": "advancements"
+		},
+		{
+			"forge": "roots",
+			"fabric": "roots"
+		},
+		{
+			"forge": "tasks",
+			"fabric": "dependents"
+		},
+		{
+			"forge": "listener",
+			"fabric": "listener"
+		},
+		{
+			"forge": "remove(Advancement arg0)",
+			"fabric": "remove(Advancement advancement)"
+		},
+		{
+			"forge": "remove(Advancement arg0)",
+			"fabric": "remove(Advancement advancement)"
+		},
+		{
+			"forge": "remove(Set<ResourceLocation> arg0)",
+			"fabric": "removeAll(Set<Identifier> advancements)"
+		},
+		{
+			"forge": "add(Map<ResourceLocation, Advancement$Builder> arg0)",
+			"fabric": "load(Map<Identifier, Advancement$Builder> advancements)"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getRoots()",
+			"fabric": "getRoots()"
+		},
+		{
+			"forge": "getAllAdvancements()",
+			"fabric": "getAdvancements()"
+		},
+		{
+			"forge": "get(ResourceLocation arg0)",
+			"fabric": "get(Identifier id)"
+		},
+		{
+			"forge": "setListener(AdvancementList$Listener arg0)",
+			"fabric": "setListener(AdvancementManager$Listener listener)"
+		}
+	]
+}

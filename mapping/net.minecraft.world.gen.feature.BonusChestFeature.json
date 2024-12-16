@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.BonusChestFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.BonusChestFeature",
+			"fabric": "net.minecraft.world.gen.feature.BonusChestFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.gameevent.PositionSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.PositionSource",
+			"fabric": "net.minecraft.world.event.PositionSource"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "getPosition(Level arg0)",
+			"fabric": "getPos(World world)"
+		},
+		{
+			"forge": "getPosition(Level arg0)",
+			"fabric": "getPos(World world)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

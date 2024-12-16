@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.AbstractBannerBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.AbstractBannerBlock",
+			"fabric": "net.minecraft.block.AbstractBannerBlock"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "isPossibleToRespawnInThis(BlockState arg0)",
+			"fabric": "canMobSpawnInside(BlockState arg0)"
+		},
+		{
+			"forge": "isPossibleToRespawnInThis(BlockState arg0)",
+			"fabric": "canMobSpawnInside(BlockState arg0)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "setPlacedBy(Level arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)",
+			"fabric": "onPlaced(World arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)"
+		},
+		{
+			"forge": "getCloneItemStack(BlockGetter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getPickStack(BlockView arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		}
+	]
+}

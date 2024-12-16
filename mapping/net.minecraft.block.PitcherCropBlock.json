@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.level.block.PitcherCropBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.PitcherCropBlock",
+			"fabric": "net.minecraft.block.PitcherCropBlock"
+		},
+		{
+			"forge": "AGE",
+			"fabric": "AGE"
+		},
+		{
+			"forge": "AGE",
+			"fabric": "AGE"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "field_43240"
+		},
+		{
+			"forge": "DOUBLE_PLANT_AGE_INTERSECTION",
+			"fabric": "field_43241"
+		},
+		{
+			"forge": "BONEMEAL_INCREASE",
+			"fabric": "field_43391"
+		},
+		{
+			"forge": "FULL_UPPER_SHAPE",
+			"fabric": "GROWN_UPPER_OUTLINE_SHAPE"
+		},
+		{
+			"forge": "FULL_LOWER_SHAPE",
+			"fabric": "GROWN_LOWER_OUTLINE_SHAPE"
+		},
+		{
+			"forge": "COLLISION_SHAPE_BULB",
+			"fabric": "AGE_0_SHAPE"
+		},
+		{
+			"forge": "COLLISION_SHAPE_CROP",
+			"fabric": "LOWER_COLLISION_SHAPE"
+		},
+		{
+			"forge": "UPPER_SHAPE_BY_AGE",
+			"fabric": "UPPER_OUTLINE_SHAPES"
+		},
+		{
+			"forge": "LOWER_SHAPE_BY_AGE",
+			"fabric": "LOWER_OUTLINE_SHAPES"
+		},
+		{
+			"forge": "isMaxAge(BlockState arg0)",
+			"fabric": "isFullyGrown(BlockState state)"
+		},
+		{
+			"forge": "isMaxAge(BlockState arg0)",
+			"fabric": "isFullyGrown(BlockState state)"
+		},
+		{
+			"forge": "isRandomlyTicking(BlockState arg0)",
+			"fabric": "hasRandomTicks(BlockState arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "mayPlaceOn(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "canPlantOnTop(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "canBeReplaced(BlockState arg0, BlockPlaceContext arg1)",
+			"fabric": "canReplace(BlockState arg0, ItemPlacementContext arg1)"
+		},
+		{
+			"forge": "setPlacedBy(Level arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)",
+			"fabric": "onPlaced(World arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "grow(ServerLevel arg0, BlockState arg1, BlockPos arg2, int arg3)",
+			"fabric": "tryGrow(ServerWorld world, BlockState state, BlockPos pos, int amount)"
+		},
+		{
+			"forge": "canGrowInto(LevelReader arg0, BlockPos arg1)",
+			"fabric": "canGrowAt(WorldView world, BlockPos pos)"
+		},
+		{
+			"forge": "sufficientLight(LevelReader arg0, BlockPos arg1)",
+			"fabric": "canPlaceAt(WorldView world, BlockPos pos)"
+		},
+		{
+			"forge": "isLower(BlockState arg0)",
+			"fabric": "isLowerHalf(BlockState state)"
+		},
+		{
+			"forge": "isUpper(BlockState arg0)",
+			"fabric": "isUpperHalf(BlockState state)"
+		},
+		{
+			"forge": "canGrow(LevelReader arg0, BlockPos arg1, BlockState arg2, int arg3)",
+			"fabric": "canGrow(WorldView world, BlockPos pos, BlockState state, int age)"
+		},
+		{
+			"forge": "getLowerHalf(LevelReader arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getLowerHalfContext(WorldView world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		}
+	]
+}

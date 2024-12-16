@@ -1,0 +1,345 @@
+{
+	"title": "net.minecraft.data.worldgen.placement.VegetationPlacements",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.placement.VegetationPlacements",
+			"fabric": "net.minecraft.world.gen.feature.VegetationPlacedFeatures"
+		},
+		{
+			"forge": "BAMBOO_LIGHT",
+			"fabric": "BAMBOO_LIGHT"
+		},
+		{
+			"forge": "BAMBOO_LIGHT",
+			"fabric": "BAMBOO_LIGHT"
+		},
+		{
+			"forge": "BAMBOO",
+			"fabric": "BAMBOO"
+		},
+		{
+			"forge": "VINES",
+			"fabric": "VINES"
+		},
+		{
+			"forge": "PATCH_SUNFLOWER",
+			"fabric": "PATCH_SUNFLOWER"
+		},
+		{
+			"forge": "PATCH_PUMPKIN",
+			"fabric": "PATCH_PUMPKIN"
+		},
+		{
+			"forge": "PATCH_GRASS_PLAIN",
+			"fabric": "PATCH_GRASS_PLAIN"
+		},
+		{
+			"forge": "PATCH_GRASS_FOREST",
+			"fabric": "PATCH_GRASS_FOREST"
+		},
+		{
+			"forge": "PATCH_GRASS_BADLANDS",
+			"fabric": "PATCH_GRASS_BADLANDS"
+		},
+		{
+			"forge": "PATCH_GRASS_SAVANNA",
+			"fabric": "PATCH_GRASS_SAVANNA"
+		},
+		{
+			"forge": "PATCH_GRASS_NORMAL",
+			"fabric": "PATCH_GRASS_NORMAL"
+		},
+		{
+			"forge": "PATCH_GRASS_TAIGA_2",
+			"fabric": "PATCH_GRASS_TAIGA_2"
+		},
+		{
+			"forge": "PATCH_GRASS_TAIGA",
+			"fabric": "PATCH_GRASS_TAIGA"
+		},
+		{
+			"forge": "PATCH_GRASS_JUNGLE",
+			"fabric": "PATCH_GRASS_JUNGLE"
+		},
+		{
+			"forge": "GRASS_BONEMEAL",
+			"fabric": "GRASS_BONEMEAL"
+		},
+		{
+			"forge": "PATCH_DEAD_BUSH_2",
+			"fabric": "PATCH_DEAD_BUSH_2"
+		},
+		{
+			"forge": "PATCH_DEAD_BUSH",
+			"fabric": "PATCH_DEAD_BUSH"
+		},
+		{
+			"forge": "PATCH_DEAD_BUSH_BADLANDS",
+			"fabric": "PATCH_DEAD_BUSH_BADLANDS"
+		},
+		{
+			"forge": "PATCH_MELON",
+			"fabric": "PATCH_MELON"
+		},
+		{
+			"forge": "PATCH_MELON_SPARSE",
+			"fabric": "PATCH_MELON_SPARSE"
+		},
+		{
+			"forge": "PATCH_BERRY_COMMON",
+			"fabric": "PATCH_BERRY_COMMON"
+		},
+		{
+			"forge": "PATCH_BERRY_RARE",
+			"fabric": "PATCH_BERRY_RARE"
+		},
+		{
+			"forge": "PATCH_WATERLILY",
+			"fabric": "PATCH_WATERLILY"
+		},
+		{
+			"forge": "PATCH_TALL_GRASS_2",
+			"fabric": "PATCH_TALL_GRASS_2"
+		},
+		{
+			"forge": "PATCH_TALL_GRASS",
+			"fabric": "PATCH_TALL_GRASS"
+		},
+		{
+			"forge": "PATCH_LARGE_FERN",
+			"fabric": "PATCH_LARGE_FERN"
+		},
+		{
+			"forge": "PATCH_CACTUS_DESERT",
+			"fabric": "PATCH_CACTUS_DESERT"
+		},
+		{
+			"forge": "PATCH_CACTUS_DECORATED",
+			"fabric": "PATCH_CACTUS_DECORATED"
+		},
+		{
+			"forge": "PATCH_SUGAR_CANE_SWAMP",
+			"fabric": "PATCH_SUGAR_CANE_SWAMP"
+		},
+		{
+			"forge": "PATCH_SUGAR_CANE_DESERT",
+			"fabric": "PATCH_SUGAR_CANE_DESERT"
+		},
+		{
+			"forge": "PATCH_SUGAR_CANE_BADLANDS",
+			"fabric": "PATCH_SUGAR_CANE_BADLANDS"
+		},
+		{
+			"forge": "PATCH_SUGAR_CANE",
+			"fabric": "PATCH_SUGAR_CANE"
+		},
+		{
+			"forge": "BROWN_MUSHROOM_NETHER",
+			"fabric": "BROWN_MUSHROOM_NETHER"
+		},
+		{
+			"forge": "RED_MUSHROOM_NETHER",
+			"fabric": "RED_MUSHROOM_NETHER"
+		},
+		{
+			"forge": "BROWN_MUSHROOM_NORMAL",
+			"fabric": "BROWN_MUSHROOM_NORMAL"
+		},
+		{
+			"forge": "RED_MUSHROOM_NORMAL",
+			"fabric": "RED_MUSHROOM_NORMAL"
+		},
+		{
+			"forge": "BROWN_MUSHROOM_TAIGA",
+			"fabric": "BROWN_MUSHROOM_TAIGA"
+		},
+		{
+			"forge": "RED_MUSHROOM_TAIGA",
+			"fabric": "RED_MUSHROOM_TAIGA"
+		},
+		{
+			"forge": "BROWN_MUSHROOM_OLD_GROWTH",
+			"fabric": "BROWN_MUSHROOM_OLD_GROWTH"
+		},
+		{
+			"forge": "RED_MUSHROOM_OLD_GROWTH",
+			"fabric": "RED_MUSHROOM_OLD_GROWTH"
+		},
+		{
+			"forge": "BROWN_MUSHROOM_SWAMP",
+			"fabric": "BROWN_MUSHROOM_SWAMP"
+		},
+		{
+			"forge": "RED_MUSHROOM_SWAMP",
+			"fabric": "RED_MUSHROOM_SWAMP"
+		},
+		{
+			"forge": "FLOWER_WARM",
+			"fabric": "FLOWER_WARM"
+		},
+		{
+			"forge": "FLOWER_DEFAULT",
+			"fabric": "FLOWER_DEFAULT"
+		},
+		{
+			"forge": "FLOWER_FLOWER_FOREST",
+			"fabric": "FLOWER_FLOWER_FOREST"
+		},
+		{
+			"forge": "FLOWER_SWAMP",
+			"fabric": "FLOWER_SWAMP"
+		},
+		{
+			"forge": "FLOWER_PLAINS",
+			"fabric": "FLOWER_PLAIN"
+		},
+		{
+			"forge": "FLOWER_MEADOW",
+			"fabric": "FLOWER_MEADOW"
+		},
+		{
+			"forge": "FLOWER_CHERRY",
+			"fabric": "FLOWER_CHERRY"
+		},
+		{
+			"forge": "TREES_PLAINS",
+			"fabric": "TREES_PLAINS"
+		},
+		{
+			"forge": "DARK_FOREST_VEGETATION",
+			"fabric": "DARK_FOREST_VEGETATION"
+		},
+		{
+			"forge": "FLOWER_FOREST_FLOWERS",
+			"fabric": "FLOWER_FOREST_FLOWERS"
+		},
+		{
+			"forge": "FOREST_FLOWERS",
+			"fabric": "FOREST_FLOWERS"
+		},
+		{
+			"forge": "TREES_FLOWER_FOREST",
+			"fabric": "TREES_FLOWER_FOREST"
+		},
+		{
+			"forge": "TREES_MEADOW",
+			"fabric": "TREES_MEADOW"
+		},
+		{
+			"forge": "TREES_CHERRY",
+			"fabric": "TREES_CHERRY"
+		},
+		{
+			"forge": "TREES_TAIGA",
+			"fabric": "TREES_TAIGA"
+		},
+		{
+			"forge": "TREES_GROVE",
+			"fabric": "TREES_GROVE"
+		},
+		{
+			"forge": "TREES_BADLANDS",
+			"fabric": "TREES_BADLANDS"
+		},
+		{
+			"forge": "TREES_SNOWY",
+			"fabric": "TREES_SNOWY"
+		},
+		{
+			"forge": "TREES_SWAMP",
+			"fabric": "TREES_SWAMP"
+		},
+		{
+			"forge": "TREES_WINDSWEPT_SAVANNA",
+			"fabric": "TREES_WINDSWEPT_SAVANNA"
+		},
+		{
+			"forge": "TREES_SAVANNA",
+			"fabric": "TREES_SAVANNA"
+		},
+		{
+			"forge": "BIRCH_TALL",
+			"fabric": "BIRCH_TALL"
+		},
+		{
+			"forge": "TREES_BIRCH",
+			"fabric": "TREES_BIRCH"
+		},
+		{
+			"forge": "TREES_WINDSWEPT_FOREST",
+			"fabric": "TREES_WINDSWEPT_FOREST"
+		},
+		{
+			"forge": "TREES_WINDSWEPT_HILLS",
+			"fabric": "TREES_WINDSWEPT_HILLS"
+		},
+		{
+			"forge": "TREES_WATER",
+			"fabric": "TREES_WATER"
+		},
+		{
+			"forge": "TREES_BIRCH_AND_OAK",
+			"fabric": "TREES_BIRCH_AND_OAK"
+		},
+		{
+			"forge": "TREES_SPARSE_JUNGLE",
+			"fabric": "TREES_SPARSE_JUNGLE"
+		},
+		{
+			"forge": "TREES_OLD_GROWTH_SPRUCE_TAIGA",
+			"fabric": "TREES_OLD_GROWTH_SPRUCE_TAIGA"
+		},
+		{
+			"forge": "TREES_OLD_GROWTH_PINE_TAIGA",
+			"fabric": "TREES_OLD_GROWTH_PINE_TAIGA"
+		},
+		{
+			"forge": "TREES_JUNGLE",
+			"fabric": "TREES_JUNGLE"
+		},
+		{
+			"forge": "BAMBOO_VEGETATION",
+			"fabric": "BAMBOO_VEGETATION"
+		},
+		{
+			"forge": "MUSHROOM_ISLAND_VEGETATION",
+			"fabric": "MUSHROOM_ISLAND_VEGETATION"
+		},
+		{
+			"forge": "TREES_MANGROVE",
+			"fabric": "TREES_MANGROVE"
+		},
+		{
+			"forge": "TREE_THRESHOLD",
+			"fabric": "NOT_IN_SURFACE_WATER_MODIFIER"
+		},
+		{
+			"forge": "worldSurfaceSquaredWithCount(int arg0)",
+			"fabric": "modifiers(int count)"
+		},
+		{
+			"forge": "worldSurfaceSquaredWithCount(int arg0)",
+			"fabric": "modifiers(int count)"
+		},
+		{
+			"forge": "getMushroomPlacement(int arg0, PlacementModifier arg1)",
+			"fabric": "mushroomModifiers(int chance, PlacementModifier modifier)"
+		},
+		{
+			"forge": "treePlacementBase(PlacementModifier arg0)",
+			"fabric": "treeModifiersBuilder(PlacementModifier countModifier)"
+		},
+		{
+			"forge": "treePlacement(PlacementModifier arg0)",
+			"fabric": "treeModifiers(PlacementModifier modifier)"
+		},
+		{
+			"forge": "treePlacement(PlacementModifier arg0, Block arg1)",
+			"fabric": "treeModifiersWithWouldSurvive(PlacementModifier modifier, Block block)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		}
+	]
+}

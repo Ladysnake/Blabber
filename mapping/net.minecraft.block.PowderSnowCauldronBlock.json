@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.PowderSnowCauldronBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.PowderSnowCauldronBlock",
+			"fabric": "net.minecraft.block.PowderSnowCauldronBlock"
+		},
+		{
+			"forge": "handleEntityOnFireInside(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "onFireCollision(BlockState arg0, World arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "handleEntityOnFireInside(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "onFireCollision(BlockState arg0, World arg1, BlockPos arg2)"
+		}
+	]
+}

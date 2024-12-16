@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.packs.repository.PackSource",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.repository.PackSource",
+			"fabric": "net.minecraft.resource.ResourcePackSource"
+		},
+		{
+			"forge": "NO_DECORATION",
+			"fabric": "NONE_SOURCE_TEXT_SUPPLIER"
+		},
+		{
+			"forge": "NO_DECORATION",
+			"fabric": "NONE_SOURCE_TEXT_SUPPLIER"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "BUILT_IN",
+			"fabric": "BUILTIN"
+		},
+		{
+			"forge": "FEATURE",
+			"fabric": "FEATURE"
+		},
+		{
+			"forge": "WORLD",
+			"fabric": "WORLD"
+		},
+		{
+			"forge": "SERVER",
+			"fabric": "SERVER"
+		},
+		{
+			"forge": "decorate(Component arg0)",
+			"fabric": "decorate(Text packName)"
+		},
+		{
+			"forge": "decorate(Component arg0)",
+			"fabric": "decorate(Text packName)"
+		},
+		{
+			"forge": "shouldAddAutomatically()",
+			"fabric": "canBeEnabledLater()"
+		},
+		{
+			"forge": "create(UnaryOperator<Component> arg0, boolean arg1)",
+			"fabric": "create(UnaryOperator<Text> sourceTextSupplier, boolean canBeEnabledLater)"
+		},
+		{
+			"forge": "decorateWithSource(String arg0)",
+			"fabric": "getSourceTextSupplier(String translationKey)"
+		}
+	]
+}

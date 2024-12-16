@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.DeltaFeatureConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.DeltaFeatureConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.DeltaFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "contents",
+			"fabric": "contents"
+		},
+		{
+			"forge": "rim",
+			"fabric": "rim"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "rimSize",
+			"fabric": "rimSize"
+		},
+		{
+			"forge": "contents()",
+			"fabric": "getContents()"
+		},
+		{
+			"forge": "contents()",
+			"fabric": "getContents()"
+		},
+		{
+			"forge": "rim()",
+			"fabric": "getRim()"
+		},
+		{
+			"forge": "size()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "rimSize()",
+			"fabric": "getRimSize()"
+		}
+	]
+}

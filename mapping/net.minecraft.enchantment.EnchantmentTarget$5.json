@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.enchantment.EnchantmentCategory$13",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.EnchantmentCategory$13",
+			"fabric": "net.minecraft.enchantment.EnchantmentTarget$5"
+		},
+		{
+			"forge": "canEnchant(Item arg0)",
+			"fabric": "isAcceptableItem(Item arg0)"
+		},
+		{
+			"forge": "canEnchant(Item arg0)",
+			"fabric": "isAcceptableItem(Item arg0)"
+		}
+	]
+}

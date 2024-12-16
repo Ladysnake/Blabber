@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer",
+			"fabric": "net.minecraft.world.gen.trunk.LargeOakTrunkPlacer"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "TRUNK_HEIGHT_SCALE",
+			"fabric": "field_31524"
+		},
+		{
+			"forge": "CLUSTER_DENSITY_MAGIC",
+			"fabric": "field_31525"
+		},
+		{
+			"forge": "BRANCH_SLOPE",
+			"fabric": "field_31526"
+		},
+		{
+			"forge": "BRANCH_LENGTH_MAGIC",
+			"fabric": "field_31527"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "placeTrunk(LevelSimulatedReader arg0, BiConsumer<BlockPos, BlockState> arg1, RandomSource arg2, int arg3, BlockPos arg4, TreeConfiguration arg5)",
+			"fabric": "generate(TestableWorld arg0, BiConsumer<BlockPos, BlockState> arg1, Random arg2, int arg3, BlockPos arg4, TreeFeatureConfig arg5)"
+		},
+		{
+			"forge": "makeLimb(LevelSimulatedReader arg0, BiConsumer<BlockPos, BlockState> arg1, RandomSource arg2, BlockPos arg3, BlockPos arg4, boolean arg5, TreeConfiguration arg6)",
+			"fabric": "makeOrCheckBranch(TestableWorld world, BiConsumer<BlockPos, BlockState> replacer, Random random, BlockPos startPos, BlockPos branchPos, boolean make, TreeFeatureConfig config)"
+		},
+		{
+			"forge": "getSteps(BlockPos arg0)",
+			"fabric": "getLongestSide(BlockPos offset)"
+		},
+		{
+			"forge": "getLogAxis(BlockPos arg0, BlockPos arg1)",
+			"fabric": "getLogAxis(BlockPos branchStart, BlockPos branchEnd)"
+		},
+		{
+			"forge": "trimBranches(int arg0, int arg1)",
+			"fabric": "isHighEnough(int treeHeight, int height)"
+		},
+		{
+			"forge": "makeBranches(LevelSimulatedReader arg0, BiConsumer<BlockPos, BlockState> arg1, RandomSource arg2, int arg3, BlockPos arg4, List<FancyTrunkPlacer$FoliageCoords> arg5, TreeConfiguration arg6)",
+			"fabric": "makeBranches(TestableWorld world, BiConsumer<BlockPos, BlockState> replacer, Random random, int treeHeight, BlockPos startPos, List<LargeOakTrunkPlacer$BranchPosition> branchPositions, TreeFeatureConfig config)"
+		},
+		{
+			"forge": "treeShape(int arg0, int arg1)",
+			"fabric": "shouldGenerateBranch(int treeHeight, int height)"
+		}
+	]
+}

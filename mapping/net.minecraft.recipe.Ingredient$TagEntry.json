@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.item.crafting.Ingredient$TagValue",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.Ingredient$TagValue",
+			"fabric": "net.minecraft.recipe.Ingredient$TagEntry"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tag"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tag"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getStacks()"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getStacks()"
+		},
+		{
+			"forge": "serialize()",
+			"fabric": "toJson()"
+		}
+	]
+}

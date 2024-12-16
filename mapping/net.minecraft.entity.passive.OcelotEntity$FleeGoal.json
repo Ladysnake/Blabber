@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.animal.Ocelot$OcelotAvoidEntityGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Ocelot$OcelotAvoidEntityGoal",
+			"fabric": "net.minecraft.entity.passive.OcelotEntity$FleeGoal"
+		},
+		{
+			"forge": "ocelot",
+			"fabric": "ocelot"
+		},
+		{
+			"forge": "ocelot",
+			"fabric": "ocelot"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		}
+	]
+}

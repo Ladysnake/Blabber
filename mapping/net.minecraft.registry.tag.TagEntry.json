@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.tags.TagEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.TagEntry",
+			"fabric": "net.minecraft.registry.tag.TagEntry"
+		},
+		{
+			"forge": "FULL_CODEC",
+			"fabric": "ENTRY_CODEC"
+		},
+		{
+			"forge": "FULL_CODEC",
+			"fabric": "ENTRY_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tag"
+		},
+		{
+			"forge": "required",
+			"fabric": "required"
+		},
+		{
+			"forge": "elementOrTag()",
+			"fabric": "getIdForCodec()"
+		},
+		{
+			"forge": "elementOrTag()",
+			"fabric": "getIdForCodec()"
+		},
+		{
+			"forge": "element(ResourceLocation arg0)",
+			"fabric": "create(Identifier id)"
+		},
+		{
+			"forge": "optionalElement(ResourceLocation arg0)",
+			"fabric": "createOptional(Identifier id)"
+		},
+		{
+			"forge": "tag(ResourceLocation arg0)",
+			"fabric": "createTag(Identifier id)"
+		},
+		{
+			"forge": "optionalTag(ResourceLocation arg0)",
+			"fabric": "createOptionalTag(Identifier id)"
+		},
+		{
+			"forge": "build(TagEntry$Lookup<T> arg0, Consumer<T> arg1)",
+			"fabric": "resolve(TagEntry$ValueGetter<T> valueGetter, Consumer<T> idConsumer)"
+		},
+		{
+			"forge": "visitRequiredDependencies(Consumer<ResourceLocation> arg0)",
+			"fabric": "forEachRequiredTagId(Consumer<Identifier> idConsumer)"
+		},
+		{
+			"forge": "visitOptionalDependencies(Consumer<ResourceLocation> arg0)",
+			"fabric": "forEachOptionalTagId(Consumer<Identifier> idConsumer)"
+		},
+		{
+			"forge": "verifyIfPresent(Predicate<ResourceLocation> arg0, Predicate<ResourceLocation> arg1)",
+			"fabric": "canAdd(Predicate<Identifier> directEntryPredicate, Predicate<Identifier> tagEntryPredicate)"
+		}
+	]
+}

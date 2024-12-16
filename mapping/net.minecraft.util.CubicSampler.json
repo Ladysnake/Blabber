@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.CubicSampler",
+	"items": [
+		{
+			"forge": "net.minecraft.util.CubicSampler",
+			"fabric": "net.minecraft.util.CubicSampler"
+		},
+		{
+			"forge": "GAUSSIAN_SAMPLE_RADIUS",
+			"fabric": "FIRST_SEGMENT_OFFSET"
+		},
+		{
+			"forge": "GAUSSIAN_SAMPLE_RADIUS",
+			"fabric": "FIRST_SEGMENT_OFFSET"
+		},
+		{
+			"forge": "GAUSSIAN_SAMPLE_BREADTH",
+			"fabric": "NUM_SEGMENTS"
+		},
+		{
+			"forge": "GAUSSIAN_SAMPLE_KERNEL",
+			"fabric": "DENSITY_CURVE"
+		},
+		{
+			"forge": "gaussianSampleVec3(Vec3 arg0, CubicSampler$Vec3Fetcher arg1)",
+			"fabric": "sampleColor(Vec3d pos, CubicSampler$RgbFetcher rgbFetcher)"
+		},
+		{
+			"forge": "gaussianSampleVec3(Vec3 arg0, CubicSampler$Vec3Fetcher arg1)",
+			"fabric": "sampleColor(Vec3d pos, CubicSampler$RgbFetcher rgbFetcher)"
+		}
+	]
+}

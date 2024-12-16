@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSlotOptionsScreen$SettingsSlider",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSlotOptionsScreen$SettingsSlider",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSlotOptionsScreen$SettingsSlider"
+		},
+		{
+			"forge": "minValue",
+			"fabric": "min"
+		},
+		{
+			"forge": "minValue",
+			"fabric": "min"
+		},
+		{
+			"forge": "maxValue",
+			"fabric": "max"
+		},
+		{
+			"forge": "applyValue()",
+			"fabric": "applyValue()"
+		},
+		{
+			"forge": "applyValue()",
+			"fabric": "applyValue()"
+		},
+		{
+			"forge": "updateMessage()",
+			"fabric": "updateMessage()"
+		},
+		{
+			"forge": "onClick(double arg0, double arg1)",
+			"fabric": "onClick(double arg0, double arg1)"
+		},
+		{
+			"forge": "onRelease(double arg0, double arg1)",
+			"fabric": "onRelease(double arg0, double arg1)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.data.worldgen.features.AquaticFeatures",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.features.AquaticFeatures",
+			"fabric": "net.minecraft.world.gen.feature.OceanConfiguredFeatures"
+		},
+		{
+			"forge": "SEAGRASS_SHORT",
+			"fabric": "SEAGRASS_SHORT"
+		},
+		{
+			"forge": "SEAGRASS_SHORT",
+			"fabric": "SEAGRASS_SHORT"
+		},
+		{
+			"forge": "SEAGRASS_SLIGHTLY_LESS_SHORT",
+			"fabric": "SEAGRASS_SLIGHTLY_LESS_SHORT"
+		},
+		{
+			"forge": "SEAGRASS_MID",
+			"fabric": "SEAGRASS_MID"
+		},
+		{
+			"forge": "SEAGRASS_TALL",
+			"fabric": "SEAGRASS_TALL"
+		},
+		{
+			"forge": "SEA_PICKLE",
+			"fabric": "SEA_PICKLE"
+		},
+		{
+			"forge": "SEAGRASS_SIMPLE",
+			"fabric": "SEAGRASS_SIMPLE"
+		},
+		{
+			"forge": "KELP",
+			"fabric": "KELP"
+		},
+		{
+			"forge": "WARM_OCEAN_VEGETATION",
+			"fabric": "WARM_OCEAN_VEGETATION"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		}
+	]
+}

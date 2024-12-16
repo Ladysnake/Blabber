@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.quickplay.QuickPlayLog$QuickPlayWorld",
+	"items": [
+		{
+			"forge": "net.minecraft.client.quickplay.QuickPlayLog$QuickPlayWorld",
+			"fabric": "net.minecraft.client.QuickPlayLogger$QuickPlayWorld"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "MAP_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "name()"
+		}
+	]
+}

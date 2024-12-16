@@ -1,0 +1,201 @@
+{
+	"title": "net.minecraft.ChatFormatting",
+	"items": [
+		{
+			"forge": "net.minecraft.ChatFormatting",
+			"fabric": "net.minecraft.util.Formatting"
+		},
+		{
+			"forge": "BLACK",
+			"fabric": "BLACK"
+		},
+		{
+			"forge": "BLACK",
+			"fabric": "BLACK"
+		},
+		{
+			"forge": "DARK_BLUE",
+			"fabric": "DARK_BLUE"
+		},
+		{
+			"forge": "DARK_GREEN",
+			"fabric": "DARK_GREEN"
+		},
+		{
+			"forge": "DARK_AQUA",
+			"fabric": "DARK_AQUA"
+		},
+		{
+			"forge": "DARK_RED",
+			"fabric": "DARK_RED"
+		},
+		{
+			"forge": "DARK_PURPLE",
+			"fabric": "DARK_PURPLE"
+		},
+		{
+			"forge": "GOLD",
+			"fabric": "GOLD"
+		},
+		{
+			"forge": "GRAY",
+			"fabric": "GRAY"
+		},
+		{
+			"forge": "DARK_GRAY",
+			"fabric": "DARK_GRAY"
+		},
+		{
+			"forge": "BLUE",
+			"fabric": "BLUE"
+		},
+		{
+			"forge": "GREEN",
+			"fabric": "GREEN"
+		},
+		{
+			"forge": "AQUA",
+			"fabric": "AQUA"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "LIGHT_PURPLE",
+			"fabric": "LIGHT_PURPLE"
+		},
+		{
+			"forge": "YELLOW",
+			"fabric": "YELLOW"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "OBFUSCATED",
+			"fabric": "OBFUSCATED"
+		},
+		{
+			"forge": "BOLD",
+			"fabric": "BOLD"
+		},
+		{
+			"forge": "STRIKETHROUGH",
+			"fabric": "STRIKETHROUGH"
+		},
+		{
+			"forge": "UNDERLINE",
+			"fabric": "UNDERLINE"
+		},
+		{
+			"forge": "ITALIC",
+			"fabric": "ITALIC"
+		},
+		{
+			"forge": "RESET",
+			"fabric": "RESET"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "PREFIX_CODE",
+			"fabric": "FORMATTING_CODE_PREFIX"
+		},
+		{
+			"forge": "FORMATTING_BY_NAME",
+			"fabric": "BY_NAME"
+		},
+		{
+			"forge": "STRIP_FORMATTING_PATTERN",
+			"fabric": "FORMATTING_CODE_PATTERN"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "code",
+			"fabric": "code"
+		},
+		{
+			"forge": "isFormat",
+			"fabric": "modifier"
+		},
+		{
+			"forge": "toString",
+			"fabric": "stringValue"
+		},
+		{
+			"forge": "id",
+			"fabric": "colorIndex"
+		},
+		{
+			"forge": "color",
+			"fabric": "colorValue"
+		},
+		{
+			"forge": "cleanName(String arg0)",
+			"fabric": "sanitize(String name)"
+		},
+		{
+			"forge": "cleanName(String arg0)",
+			"fabric": "sanitize(String name)"
+		},
+		{
+			"forge": "getChar()",
+			"fabric": "getCode()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getColorIndex()"
+		},
+		{
+			"forge": "isFormat()",
+			"fabric": "isModifier()"
+		},
+		{
+			"forge": "isColor()",
+			"fabric": "isColor()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColorValue()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "stripFormatting(String arg0)",
+			"fabric": "strip(String string)"
+		},
+		{
+			"forge": "getByName(String arg0)",
+			"fabric": "byName(String name)"
+		},
+		{
+			"forge": "getById(int arg0)",
+			"fabric": "byColorIndex(int colorIndex)"
+		},
+		{
+			"forge": "getByCode(char arg0)",
+			"fabric": "byCode(char code)"
+		},
+		{
+			"forge": "getNames(boolean arg0, boolean arg1)",
+			"fabric": "getNames(boolean colors, boolean modifiers)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

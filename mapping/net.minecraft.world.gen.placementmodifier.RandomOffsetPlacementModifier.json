@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.RandomOffsetPlacement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.RandomOffsetPlacement",
+			"fabric": "net.minecraft.world.gen.placementmodifier.RandomOffsetPlacementModifier"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "MODIFIER_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "MODIFIER_CODEC"
+		},
+		{
+			"forge": "xzSpread",
+			"fabric": "spreadXz"
+		},
+		{
+			"forge": "ySpread",
+			"fabric": "spreadY"
+		},
+		{
+			"forge": "of(IntProvider arg0, IntProvider arg1)",
+			"fabric": "of(IntProvider spreadXz, IntProvider spreadY)"
+		},
+		{
+			"forge": "of(IntProvider arg0, IntProvider arg1)",
+			"fabric": "of(IntProvider spreadXz, IntProvider spreadY)"
+		},
+		{
+			"forge": "vertical(IntProvider arg0)",
+			"fabric": "vertically(IntProvider spreadY)"
+		},
+		{
+			"forge": "horizontal(IntProvider arg0)",
+			"fabric": "horizontally(IntProvider spreadXz)"
+		},
+		{
+			"forge": "getPositions(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "getPositions(FeaturePlacementContext arg0, Random arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

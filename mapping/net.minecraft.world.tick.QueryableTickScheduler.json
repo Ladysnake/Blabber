@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.ticks.LevelTickAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.world.ticks.LevelTickAccess",
+			"fabric": "net.minecraft.world.tick.QueryableTickScheduler"
+		},
+		{
+			"forge": "willTickThisTick(BlockPos arg0, T arg1)",
+			"fabric": "isTicking(BlockPos pos, T type)"
+		},
+		{
+			"forge": "willTickThisTick(BlockPos arg0, T arg1)",
+			"fabric": "isTicking(BlockPos pos, T type)"
+		}
+	]
+}

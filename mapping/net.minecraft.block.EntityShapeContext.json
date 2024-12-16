@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.phys.shapes.EntityCollisionContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.EntityCollisionContext",
+			"fabric": "net.minecraft.block.EntityShapeContext"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "ABSENT"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "ABSENT"
+		},
+		{
+			"forge": "descending",
+			"fabric": "descending"
+		},
+		{
+			"forge": "entityBottom",
+			"fabric": "minY"
+		},
+		{
+			"forge": "heldItem",
+			"fabric": "heldItem"
+		},
+		{
+			"forge": "canStandOnFluid",
+			"fabric": "walkOnFluidPredicate"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "isHoldingItem(Item arg0)",
+			"fabric": "isHolding(Item arg0)"
+		},
+		{
+			"forge": "isHoldingItem(Item arg0)",
+			"fabric": "isHolding(Item arg0)"
+		},
+		{
+			"forge": "canStandOnFluid(FluidState arg0, FluidState arg1)",
+			"fabric": "canWalkOnFluid(FluidState arg0, FluidState arg1)"
+		},
+		{
+			"forge": "isDescending()",
+			"fabric": "isDescending()"
+		},
+		{
+			"forge": "isAbove(VoxelShape arg0, BlockPos arg1, boolean arg2)",
+			"fabric": "isAbove(VoxelShape arg0, BlockPos arg1, boolean arg2)"
+		},
+		{
+			"forge": "getEntity()",
+			"fabric": "getEntity()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.data.worldgen.Pools",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.Pools",
+			"fabric": "net.minecraft.structure.pool.StructurePools"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "register(BootstapContext<StructureTemplatePool> arg0, String arg1, StructureTemplatePool arg2)",
+			"fabric": "register(Registerable<StructurePool> structurePoolsRegisterable, String id, StructurePool pool)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<StructureTemplatePool> arg0)",
+			"fabric": "bootstrap(Registerable<StructurePool> structurePoolsRegisterable)"
+		}
+	]
+}

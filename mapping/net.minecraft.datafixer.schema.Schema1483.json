@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.schemas.V1483",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.schemas.V1483",
+			"fabric": "net.minecraft.datafixer.schema.Schema1483"
+		},
+		{
+			"forge": "registerEntities(com.mojang.datafixers.schemas.Schema arg0)",
+			"fabric": "registerEntities(com.mojang.datafixers.schemas.Schema schema)"
+		},
+		{
+			"forge": "registerEntities(com.mojang.datafixers.schemas.Schema arg0)",
+			"fabric": "registerEntities(com.mojang.datafixers.schemas.Schema schema)"
+		}
+	]
+}

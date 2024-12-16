@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.realmsclient.dto.PendingInvitesList",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.PendingInvitesList",
+			"fabric": "net.minecraft.client.realms.dto.PendingInvitesList"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "pendingInvites",
+			"fabric": "pendingInvites"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		}
+	]
+}

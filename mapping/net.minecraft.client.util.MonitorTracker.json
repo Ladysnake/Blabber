@@ -1,0 +1,49 @@
+{
+	"title": "com.mojang.blaze3d.platform.ScreenManager",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.ScreenManager",
+			"fabric": "net.minecraft.client.util.MonitorTracker"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "monitors",
+			"fabric": "pointerToMonitorMap"
+		},
+		{
+			"forge": "monitorCreator",
+			"fabric": "monitorFactory"
+		},
+		{
+			"forge": "onMonitorChange(long arg0, int arg1)",
+			"fabric": "handleMonitorEvent(long monitor, int event)"
+		},
+		{
+			"forge": "onMonitorChange(long arg0, int arg1)",
+			"fabric": "handleMonitorEvent(long monitor, int event)"
+		},
+		{
+			"forge": "getMonitor(long arg0)",
+			"fabric": "getMonitor(long pointer)"
+		},
+		{
+			"forge": "findBestMonitor(Window arg0)",
+			"fabric": "getMonitor(Window window)"
+		},
+		{
+			"forge": "clamp(int arg0, int arg1, int arg2)",
+			"fabric": "clamp(int value, int min, int max)"
+		},
+		{
+			"forge": "shutdown()",
+			"fabric": "stop()"
+		}
+	]
+}

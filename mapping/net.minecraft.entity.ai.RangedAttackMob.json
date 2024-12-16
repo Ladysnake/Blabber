@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.RangedAttackMob",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.RangedAttackMob",
+			"fabric": "net.minecraft.entity.ai.RangedAttackMob"
+		},
+		{
+			"forge": "performRangedAttack(LivingEntity arg0, float arg1)",
+			"fabric": "attack(LivingEntity target, float pullProgress)"
+		},
+		{
+			"forge": "performRangedAttack(LivingEntity arg0, float arg1)",
+			"fabric": "attack(LivingEntity target, float pullProgress)"
+		}
+	]
+}

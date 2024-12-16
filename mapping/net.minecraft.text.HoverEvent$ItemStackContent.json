@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.chat.HoverEvent$ItemStackInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.HoverEvent$ItemStackInfo",
+			"fabric": "net.minecraft.text.HoverEvent$ItemStackContent"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "count",
+			"fabric": "count"
+		},
+		{
+			"forge": "tag",
+			"fabric": "nbt"
+		},
+		{
+			"forge": "itemStack",
+			"fabric": "stack"
+		},
+		{
+			"forge": "getItemStack()",
+			"fabric": "asStack()"
+		},
+		{
+			"forge": "getItemStack()",
+			"fabric": "asStack()"
+		},
+		{
+			"forge": "create(com.google.gson.JsonElement arg0)",
+			"fabric": "parse(com.google.gson.JsonElement json)"
+		},
+		{
+			"forge": "create(Component arg0)",
+			"fabric": "parse(Text text)"
+		},
+		{
+			"forge": "serialize()",
+			"fabric": "toJson()"
+		}
+	]
+}

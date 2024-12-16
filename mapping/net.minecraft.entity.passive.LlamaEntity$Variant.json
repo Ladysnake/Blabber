@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.Llama$Variant",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.Llama$Variant",
+			"fabric": "net.minecraft.entity.passive.LlamaEntity$Variant"
+		},
+		{
+			"forge": "CREAMY",
+			"fabric": "CREAMY"
+		},
+		{
+			"forge": "CREAMY",
+			"fabric": "CREAMY"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "BROWN",
+			"fabric": "BROWN"
+		},
+		{
+			"forge": "GRAY",
+			"fabric": "GRAY"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getIndex()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getIndex()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.validation.PathAllowList",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.validation.PathAllowList",
+			"fabric": "net.minecraft.util.path.AllowedSymlinkPathMatcher"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "COMMENT_PREFIX",
+			"fabric": "COMMENT_LINE_PREFIX"
+		},
+		{
+			"forge": "entries",
+			"fabric": "allowedEntries"
+		},
+		{
+			"forge": "compiledPaths",
+			"fabric": "matcherCache"
+		},
+		{
+			"forge": "getForFileSystem(FileSystem arg0)",
+			"fabric": "get(FileSystem fileSystem)"
+		},
+		{
+			"forge": "getForFileSystem(FileSystem arg0)",
+			"fabric": "get(FileSystem fileSystem)"
+		},
+		{
+			"forge": "matches(Path arg0)",
+			"fabric": "matches(Path path)"
+		},
+		{
+			"forge": "readPlain(BufferedReader arg0)",
+			"fabric": "fromReader(BufferedReader reader)"
+		}
+	]
+}

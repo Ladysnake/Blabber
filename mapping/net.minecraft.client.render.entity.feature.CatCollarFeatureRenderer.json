@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.CatCollarLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.CatCollarLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.CatCollarFeatureRenderer"
+		},
+		{
+			"forge": "CAT_COLLAR_LOCATION",
+			"fabric": "SKIN"
+		},
+		{
+			"forge": "CAT_COLLAR_LOCATION",
+			"fabric": "SKIN"
+		},
+		{
+			"forge": "catModel",
+			"fabric": "model"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, Cat arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, CatEntity arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, Cat arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, CatEntity arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		}
+	]
+}

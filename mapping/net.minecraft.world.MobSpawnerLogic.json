@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.world.level.BaseSpawner",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.BaseSpawner",
+			"fabric": "net.minecraft.world.MobSpawnerLogic"
+		},
+		{
+			"forge": "SPAWN_DATA_TAG",
+			"fabric": "SPAWN_DATA_KEY"
+		},
+		{
+			"forge": "SPAWN_DATA_TAG",
+			"fabric": "SPAWN_DATA_KEY"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "EVENT_SPAWN",
+			"fabric": "field_30951"
+		},
+		{
+			"forge": "spawnDelay",
+			"fabric": "spawnDelay"
+		},
+		{
+			"forge": "spawnPotentials",
+			"fabric": "spawnPotentials"
+		},
+		{
+			"forge": "nextSpawnData",
+			"fabric": "spawnEntry"
+		},
+		{
+			"forge": "spin",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "oSpin",
+			"fabric": "lastRotation"
+		},
+		{
+			"forge": "minSpawnDelay",
+			"fabric": "minSpawnDelay"
+		},
+		{
+			"forge": "maxSpawnDelay",
+			"fabric": "maxSpawnDelay"
+		},
+		{
+			"forge": "spawnCount",
+			"fabric": "spawnCount"
+		},
+		{
+			"forge": "displayEntity",
+			"fabric": "renderedEntity"
+		},
+		{
+			"forge": "maxNearbyEntities",
+			"fabric": "maxNearbyEntities"
+		},
+		{
+			"forge": "requiredPlayerRange",
+			"fabric": "requiredPlayerRange"
+		},
+		{
+			"forge": "spawnRange",
+			"fabric": "spawnRange"
+		},
+		{
+			"forge": "setEntityId(EntityType<?> arg0, Level arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "setEntityId(EntityType<?> type, World world, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "setEntityId(EntityType<?> arg0, Level arg1, RandomSource arg2, BlockPos arg3)",
+			"fabric": "setEntityId(EntityType<?> type, World world, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "isNearPlayer(Level arg0, BlockPos arg1)",
+			"fabric": "isPlayerInRange(World world, BlockPos pos)"
+		},
+		{
+			"forge": "clientTick(Level arg0, BlockPos arg1)",
+			"fabric": "clientTick(World world, BlockPos pos)"
+		},
+		{
+			"forge": "serverTick(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "serverTick(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "delay(Level arg0, BlockPos arg1)",
+			"fabric": "updateSpawns(World world, BlockPos pos)"
+		},
+		{
+			"forge": "load(Level arg0, BlockPos arg1, CompoundTag arg2)",
+			"fabric": "readNbt(World world, BlockPos pos, NbtCompound nbt)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "getOrCreateDisplayEntity(Level arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "getRenderedEntity(World world, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "onEventTriggered(Level arg0, int arg1)",
+			"fabric": "handleStatus(World world, int status)"
+		},
+		{
+			"forge": "setNextSpawnData(Level arg0, BlockPos arg1, SpawnData arg2)",
+			"fabric": "setSpawnEntry(World world, BlockPos pos, MobSpawnerEntry spawnEntry)"
+		},
+		{
+			"forge": "getOrCreateNextSpawnData(Level arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "getSpawnEntry(World world, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "broadcastEvent(Level arg0, BlockPos arg1, int arg2)",
+			"fabric": "sendStatus(World world, BlockPos pos, int status)"
+		},
+		{
+			"forge": "getSpin()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "getoSpin()",
+			"fabric": "getLastRotation()"
+		}
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootDataType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootDataType",
+			"fabric": "net.minecraft.loot.LootDataType"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "PREDICATE",
+			"fabric": "PREDICATES"
+		},
+		{
+			"forge": "MODIFIER",
+			"fabric": "ITEM_MODIFIERS"
+		},
+		{
+			"forge": "TABLE",
+			"fabric": "LOOT_TABLES"
+		},
+		{
+			"forge": "parser",
+			"fabric": "gson"
+		},
+		{
+			"forge": "topDeserializer",
+			"fabric": "parser"
+		},
+		{
+			"forge": "directory",
+			"fabric": "id"
+		},
+		{
+			"forge": "validator",
+			"fabric": "validator"
+		},
+		{
+			"forge": "parser()",
+			"fabric": "getGson()"
+		},
+		{
+			"forge": "parser()",
+			"fabric": "getGson()"
+		},
+		{
+			"forge": "directory()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "runValidation(ValidationContext arg0, LootDataId<T> arg1, T arg2)",
+			"fabric": "validate(LootTableReporter reporter, LootDataKey<T> key, T value)"
+		},
+		{
+			"forge": "deserialize(ResourceLocation arg0, com.google.gson.JsonElement arg1)",
+			"fabric": "parse(Identifier id, com.google.gson.JsonElement json)"
+		},
+		{
+			"forge": "values()",
+			"fabric": "stream()"
+		},
+		{
+			"forge": "createSingleDeserialiser(Class<T> arg0)",
+			"fabric": "parserFactory(Class<T> clazz)"
+		},
+		{
+			"forge": "createSingleOrMultipleDeserialiser(Class<T> arg0, Function<T[], T> arg1)",
+			"fabric": "parserFactory(Class<T> clazz, Function<T[], T> combiner)"
+		},
+		{
+			"forge": "createSimpleValidator()",
+			"fabric": "validator()"
+		},
+		{
+			"forge": "createLootTableValidator()",
+			"fabric": "tableValidator()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.stats.GcHeapStat$Timing",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.stats.GcHeapStat$Timing",
+			"fabric": "net.minecraft.util.profiling.jfr.sample.GcHeapSummarySample$SummaryType"
+		},
+		{
+			"forge": "BEFORE_GC",
+			"fabric": "BEFORE_GC"
+		},
+		{
+			"forge": "BEFORE_GC",
+			"fabric": "BEFORE_GC"
+		},
+		{
+			"forge": "AFTER_GC",
+			"fabric": "AFTER_GC"
+		}
+	]
+}

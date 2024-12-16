@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.world.level.portal.PortalShape",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.portal.PortalShape",
+			"fabric": "net.minecraft.world.dimension.NetherPortal"
+		},
+		{
+			"forge": "MIN_WIDTH",
+			"fabric": "MIN_WIDTH"
+		},
+		{
+			"forge": "MIN_WIDTH",
+			"fabric": "MIN_WIDTH"
+		},
+		{
+			"forge": "MAX_WIDTH",
+			"fabric": "MAX_WIDTH"
+		},
+		{
+			"forge": "MIN_HEIGHT",
+			"fabric": "MIN_HEIGHT"
+		},
+		{
+			"forge": "MAX_HEIGHT",
+			"fabric": "MAX_HEIGHT"
+		},
+		{
+			"forge": "FRAME",
+			"fabric": "IS_VALID_FRAME_BLOCK"
+		},
+		{
+			"forge": "SAFE_TRAVEL_MAX_ENTITY_XY",
+			"fabric": "FALLBACK_THRESHOLD"
+		},
+		{
+			"forge": "SAFE_TRAVEL_MAX_VERTICAL_DELTA",
+			"fabric": "HEIGHT_STRETCH"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "axis",
+			"fabric": "axis"
+		},
+		{
+			"forge": "rightDir",
+			"fabric": "negativeDir"
+		},
+		{
+			"forge": "numPortalBlocks",
+			"fabric": "foundPortalBlocks"
+		},
+		{
+			"forge": "bottomLeft",
+			"fabric": "lowerCorner"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "findEmptyPortalShape(LevelAccessor arg0, BlockPos arg1, Direction$Axis arg2)",
+			"fabric": "getNewPortal(WorldAccess world, BlockPos pos, Direction$Axis axis)"
+		},
+		{
+			"forge": "findEmptyPortalShape(LevelAccessor arg0, BlockPos arg1, Direction$Axis arg2)",
+			"fabric": "getNewPortal(WorldAccess world, BlockPos pos, Direction$Axis axis)"
+		},
+		{
+			"forge": "findPortalShape(LevelAccessor arg0, BlockPos arg1, Predicate<PortalShape> arg2, Direction$Axis arg3)",
+			"fabric": "getOrEmpty(WorldAccess world, BlockPos pos, Predicate<NetherPortal> validator, Direction$Axis axis)"
+		},
+		{
+			"forge": "calculateBottomLeft(BlockPos arg0)",
+			"fabric": "getLowerCorner(BlockPos pos)"
+		},
+		{
+			"forge": "calculateWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getDistanceUntilEdgeAboveFrame(BlockPos arg0, Direction arg1)",
+			"fabric": "getWidth(BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "calculateHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "hasTopFrame(BlockPos$MutableBlockPos arg0, int arg1)",
+			"fabric": "isHorizontalFrameValid(BlockPos$Mutable pos, int height)"
+		},
+		{
+			"forge": "getDistanceUntilTop(BlockPos$MutableBlockPos arg0)",
+			"fabric": "getPotentialHeight(BlockPos$Mutable pos)"
+		},
+		{
+			"forge": "isEmpty(BlockState arg0)",
+			"fabric": "validStateInsidePortal(BlockState state)"
+		},
+		{
+			"forge": "isValid()",
+			"fabric": "isValid()"
+		},
+		{
+			"forge": "createPortalBlocks()",
+			"fabric": "createPortal()"
+		},
+		{
+			"forge": "isComplete()",
+			"fabric": "wasAlreadyValid()"
+		},
+		{
+			"forge": "getRelativePosition(BlockUtil$FoundRectangle arg0, Direction$Axis arg1, Vec3 arg2, EntityDimensions arg3)",
+			"fabric": "entityPosInPortal(BlockLocating$Rectangle portalRect, Direction$Axis portalAxis, Vec3d entityPos, EntityDimensions entityDimensions)"
+		},
+		{
+			"forge": "createPortalInfo(ServerLevel arg0, BlockUtil$FoundRectangle arg1, Direction$Axis arg2, Vec3 arg3, Entity arg4, Vec3 arg5, float arg6, float arg7)",
+			"fabric": "getNetherTeleportTarget(ServerWorld destination, BlockLocating$Rectangle portalRect, Direction$Axis portalAxis, Vec3d offset, Entity entity, Vec3d velocity, float yaw, float pitch)"
+		},
+		{
+			"forge": "findCollisionFreePosition(Vec3 arg0, ServerLevel arg1, Entity arg2, EntityDimensions arg3)",
+			"fabric": "findOpenPosition(Vec3d fallback, ServerWorld world, Entity entity, EntityDimensions dimensions)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.phys.HitResult$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.HitResult$Type",
+			"fabric": "net.minecraft.util.hit.HitResult$Type"
+		},
+		{
+			"forge": "MISS",
+			"fabric": "MISS"
+		},
+		{
+			"forge": "MISS",
+			"fabric": "MISS"
+		},
+		{
+			"forge": "BLOCK",
+			"fabric": "BLOCK"
+		},
+		{
+			"forge": "ENTITY",
+			"fabric": "ENTITY"
+		}
+	]
+}

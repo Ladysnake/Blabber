@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.gui.MinecraftServerGui$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.gui.MinecraftServerGui$1",
+			"fabric": "net.minecraft.server.dedicated.gui.DedicatedServerGui$1"
+		},
+		{
+			"forge": "windowClosing(WindowEvent arg0)",
+			"fabric": "windowClosing(WindowEvent event)"
+		},
+		{
+			"forge": "windowClosing(WindowEvent arg0)",
+			"fabric": "windowClosing(WindowEvent event)"
+		}
+	]
+}

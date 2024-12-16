@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blockpredicates.MatchingBlocksPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blockpredicates.MatchingBlocksPredicate",
+			"fabric": "net.minecraft.world.gen.blockpredicate.MatchingBlocksBlockPredicate"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "test(BlockState arg0)",
+			"fabric": "test(BlockState arg0)"
+		},
+		{
+			"forge": "test(BlockState arg0)",
+			"fabric": "test(BlockState arg0)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

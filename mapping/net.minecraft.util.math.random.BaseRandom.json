@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.BitRandomSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.BitRandomSource",
+			"fabric": "net.minecraft.util.math.random.BaseRandom"
+		},
+		{
+			"forge": "FLOAT_MULTIPLIER",
+			"fabric": "FLOAT_MULTIPLIER"
+		},
+		{
+			"forge": "FLOAT_MULTIPLIER",
+			"fabric": "FLOAT_MULTIPLIER"
+		},
+		{
+			"forge": "DOUBLE_MULTIPLIER",
+			"fabric": "DOUBLE_MULTIPLIER"
+		},
+		{
+			"forge": "next(int arg0)",
+			"fabric": "next(int bits)"
+		},
+		{
+			"forge": "next(int arg0)",
+			"fabric": "next(int bits)"
+		},
+		{
+			"forge": "nextInt()",
+			"fabric": "nextInt()"
+		},
+		{
+			"forge": "nextInt(int arg0)",
+			"fabric": "nextInt(int arg0)"
+		},
+		{
+			"forge": "nextLong()",
+			"fabric": "nextLong()"
+		},
+		{
+			"forge": "nextBoolean()",
+			"fabric": "nextBoolean()"
+		},
+		{
+			"forge": "nextFloat()",
+			"fabric": "nextFloat()"
+		},
+		{
+			"forge": "nextDouble()",
+			"fabric": "nextDouble()"
+		}
+	]
+}

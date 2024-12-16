@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.LlamaFollowCaravanGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.LlamaFollowCaravanGoal",
+			"fabric": "net.minecraft.entity.ai.goal.FormCaravanGoal"
+		},
+		{
+			"forge": "llama",
+			"fabric": "llama"
+		},
+		{
+			"forge": "llama",
+			"fabric": "llama"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "CARAVAN_LIMIT",
+			"fabric": "MAX_CARAVAN_LENGTH"
+		},
+		{
+			"forge": "distCheckCounter",
+			"fabric": "counter"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "firstIsLeashed(Llama arg0, int arg1)",
+			"fabric": "canFollow(LlamaEntity llama, int length)"
+		}
+	]
+}

@@ -1,0 +1,145 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceSystem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceSystem",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.SurfaceBuilder"
+		},
+		{
+			"forge": "WHITE_TERRACOTTA",
+			"fabric": "WHITE_TERRACOTTA"
+		},
+		{
+			"forge": "WHITE_TERRACOTTA",
+			"fabric": "WHITE_TERRACOTTA"
+		},
+		{
+			"forge": "ORANGE_TERRACOTTA",
+			"fabric": "ORANGE_TERRACOTTA"
+		},
+		{
+			"forge": "TERRACOTTA",
+			"fabric": "TERRACOTTA"
+		},
+		{
+			"forge": "YELLOW_TERRACOTTA",
+			"fabric": "YELLOW_TERRACOTTA"
+		},
+		{
+			"forge": "BROWN_TERRACOTTA",
+			"fabric": "BROWN_TERRACOTTA"
+		},
+		{
+			"forge": "RED_TERRACOTTA",
+			"fabric": "RED_TERRACOTTA"
+		},
+		{
+			"forge": "LIGHT_GRAY_TERRACOTTA",
+			"fabric": "LIGHT_GRAY_TERRACOTTA"
+		},
+		{
+			"forge": "PACKED_ICE",
+			"fabric": "PACKED_ICE"
+		},
+		{
+			"forge": "SNOW_BLOCK",
+			"fabric": "SNOW_BLOCK"
+		},
+		{
+			"forge": "defaultBlock",
+			"fabric": "defaultState"
+		},
+		{
+			"forge": "seaLevel",
+			"fabric": "seaLevel"
+		},
+		{
+			"forge": "clayBands",
+			"fabric": "terracottaBands"
+		},
+		{
+			"forge": "clayBandsOffsetNoise",
+			"fabric": "terracottaBandsOffsetNoise"
+		},
+		{
+			"forge": "badlandsPillarNoise",
+			"fabric": "badlandsPillarNoise"
+		},
+		{
+			"forge": "badlandsPillarRoofNoise",
+			"fabric": "badlandsPillarRoofNoise"
+		},
+		{
+			"forge": "badlandsSurfaceNoise",
+			"fabric": "badlandsSurfaceNoise"
+		},
+		{
+			"forge": "icebergPillarNoise",
+			"fabric": "icebergPillarNoise"
+		},
+		{
+			"forge": "icebergPillarRoofNoise",
+			"fabric": "icebergPillarRoofNoise"
+		},
+		{
+			"forge": "icebergSurfaceNoise",
+			"fabric": "icebergSurfaceNoise"
+		},
+		{
+			"forge": "noiseRandom",
+			"fabric": "randomDeriver"
+		},
+		{
+			"forge": "surfaceNoise",
+			"fabric": "surfaceNoise"
+		},
+		{
+			"forge": "surfaceSecondaryNoise",
+			"fabric": "surfaceSecondaryNoise"
+		},
+		{
+			"forge": "buildSurface(RandomState arg0, BiomeManager arg1, Registry<Biome> arg2, boolean arg3, WorldGenerationContext arg4, ChunkAccess arg5, NoiseChunk arg6, SurfaceRules$RuleSource arg7)",
+			"fabric": "buildSurface(NoiseConfig noiseConfig, BiomeAccess biomeAccess, Registry<Biome> biomeRegistry, boolean useLegacyRandom, HeightContext heightContext, Chunk chunk, ChunkNoiseSampler chunkNoiseSampler, MaterialRules$MaterialRule materialRule)"
+		},
+		{
+			"forge": "buildSurface(RandomState arg0, BiomeManager arg1, Registry<Biome> arg2, boolean arg3, WorldGenerationContext arg4, ChunkAccess arg5, NoiseChunk arg6, SurfaceRules$RuleSource arg7)",
+			"fabric": "buildSurface(NoiseConfig noiseConfig, BiomeAccess biomeAccess, Registry<Biome> biomeRegistry, boolean useLegacyRandom, HeightContext heightContext, Chunk chunk, ChunkNoiseSampler chunkNoiseSampler, MaterialRules$MaterialRule materialRule)"
+		},
+		{
+			"forge": "getSurfaceDepth(int arg0, int arg1)",
+			"fabric": "sampleRunDepth(int blockX, int blockZ)"
+		},
+		{
+			"forge": "getSurfaceSecondary(int arg0, int arg1)",
+			"fabric": "sampleSecondaryDepth(int blockX, int blockZ)"
+		},
+		{
+			"forge": "isStone(BlockState arg0)",
+			"fabric": "isDefaultBlock(BlockState state)"
+		},
+		{
+			"forge": "topMaterial(SurfaceRules$RuleSource arg0, CarvingContext arg1, Function<BlockPos, Holder<Biome>> arg2, ChunkAccess arg3, NoiseChunk arg4, BlockPos arg5, boolean arg6)",
+			"fabric": "applyMaterialRule(MaterialRules$MaterialRule rule, CarverContext context, Function<BlockPos, RegistryEntry<Biome>> posToBiome, Chunk chunk, ChunkNoiseSampler chunkNoiseSampler, BlockPos pos, boolean hasFluid)"
+		},
+		{
+			"forge": "erodedBadlandsExtension(BlockColumn arg0, int arg1, int arg2, int arg3, LevelHeightAccessor arg4)",
+			"fabric": "placeBadlandsPillar(BlockColumn column, int x, int z, int surfaceY, HeightLimitView chunk)"
+		},
+		{
+			"forge": "frozenOceanExtension(int arg0, Biome arg1, BlockColumn arg2, BlockPos$MutableBlockPos arg3, int arg4, int arg5, int arg6)",
+			"fabric": "placeIceberg(int minY, Biome biome, BlockColumn column, BlockPos$Mutable mutablePos, int x, int z, int surfaceY)"
+		},
+		{
+			"forge": "generateBands(RandomSource arg0)",
+			"fabric": "createTerracottaBands(Random random)"
+		},
+		{
+			"forge": "makeBands(RandomSource arg0, BlockState[] arg1, int arg2, BlockState arg3)",
+			"fabric": "addTerracottaBands(Random random, BlockState[] terracottaBands, int minBandSize, BlockState state)"
+		},
+		{
+			"forge": "getBand(int arg0, int arg1, int arg2)",
+			"fabric": "getTerracottaBlock(int x, int y, int z)"
+		}
+	]
+}

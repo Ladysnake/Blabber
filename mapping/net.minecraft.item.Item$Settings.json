@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.item.Item$Properties",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.Item$Properties",
+			"fabric": "net.minecraft.item.Item$Settings"
+		},
+		{
+			"forge": "maxStackSize",
+			"fabric": "maxCount"
+		},
+		{
+			"forge": "maxStackSize",
+			"fabric": "maxCount"
+		},
+		{
+			"forge": "maxDamage",
+			"fabric": "maxDamage"
+		},
+		{
+			"forge": "craftingRemainingItem",
+			"fabric": "recipeRemainder"
+		},
+		{
+			"forge": "rarity",
+			"fabric": "rarity"
+		},
+		{
+			"forge": "foodProperties",
+			"fabric": "foodComponent"
+		},
+		{
+			"forge": "isFireResistant",
+			"fabric": "fireproof"
+		},
+		{
+			"forge": "requiredFeatures",
+			"fabric": "requiredFeatures"
+		},
+		{
+			"forge": "food(FoodProperties arg0)",
+			"fabric": "food(FoodComponent foodComponent)"
+		},
+		{
+			"forge": "food(FoodProperties arg0)",
+			"fabric": "food(FoodComponent foodComponent)"
+		},
+		{
+			"forge": "stacksTo(int arg0)",
+			"fabric": "maxCount(int maxCount)"
+		},
+		{
+			"forge": "defaultDurability(int arg0)",
+			"fabric": "maxDamageIfAbsent(int maxDamage)"
+		},
+		{
+			"forge": "durability(int arg0)",
+			"fabric": "maxDamage(int maxDamage)"
+		},
+		{
+			"forge": "craftRemainder(Item arg0)",
+			"fabric": "recipeRemainder(Item recipeRemainder)"
+		},
+		{
+			"forge": "rarity(Rarity arg0)",
+			"fabric": "rarity(Rarity rarity)"
+		},
+		{
+			"forge": "fireResistant()",
+			"fabric": "fireproof()"
+		},
+		{
+			"forge": "requiredFeatures(FeatureFlag... arg0)",
+			"fabric": "requires(FeatureFlag... features)"
+		}
+	]
+}

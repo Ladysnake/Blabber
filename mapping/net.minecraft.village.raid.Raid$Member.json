@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.raid.Raid$RaiderType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.raid.Raid$RaiderType",
+			"fabric": "net.minecraft.village.raid.Raid$Member"
+		},
+		{
+			"forge": "VINDICATOR",
+			"fabric": "VINDICATOR"
+		},
+		{
+			"forge": "VINDICATOR",
+			"fabric": "VINDICATOR"
+		},
+		{
+			"forge": "EVOKER",
+			"fabric": "EVOKER"
+		},
+		{
+			"forge": "PILLAGER",
+			"fabric": "PILLAGER"
+		},
+		{
+			"forge": "WITCH",
+			"fabric": "WITCH"
+		},
+		{
+			"forge": "RAVAGER",
+			"fabric": "RAVAGER"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "entityType",
+			"fabric": "type"
+		},
+		{
+			"forge": "spawnsPerWaveBeforeBonus",
+			"fabric": "countInWave"
+		}
+	]
+}

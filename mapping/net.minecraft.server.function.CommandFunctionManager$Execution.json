@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.server.ServerFunctionManager$ExecutionContext",
+	"items": [
+		{
+			"forge": "net.minecraft.server.ServerFunctionManager$ExecutionContext",
+			"fabric": "net.minecraft.server.function.CommandFunctionManager$Execution"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "tracer",
+			"fabric": "tracer"
+		},
+		{
+			"forge": "commandQueue",
+			"fabric": "queue"
+		},
+		{
+			"forge": "nestedCalls",
+			"fabric": "waitlist"
+		},
+		{
+			"forge": "abortCurrentDepth",
+			"fabric": "returned"
+		},
+		{
+			"forge": "delayFunctionCall(CommandFunction arg0, CommandSourceStack arg1)",
+			"fabric": "recursiveRun(CommandFunction function, ServerCommandSource source)"
+		},
+		{
+			"forge": "delayFunctionCall(CommandFunction arg0, CommandSourceStack arg1)",
+			"fabric": "recursiveRun(CommandFunction function, ServerCommandSource source)"
+		},
+		{
+			"forge": "wrapSender(CommandSourceStack arg0)",
+			"fabric": "addReturnConsumer(ServerCommandSource source)"
+		},
+		{
+			"forge": "runTopCommand(CommandFunction arg0, CommandSourceStack arg1)",
+			"fabric": "run(CommandFunction function, ServerCommandSource source)"
+		},
+		{
+			"forge": "reportError(String arg0)",
+			"fabric": "reportError(String message)"
+		}
+	]
+}

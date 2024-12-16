@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.animation.AnimationDefinition$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.animation.AnimationDefinition$Builder",
+			"fabric": "net.minecraft.client.render.entity.animation.Animation$Builder"
+		},
+		{
+			"forge": "length",
+			"fabric": "lengthInSeconds"
+		},
+		{
+			"forge": "length",
+			"fabric": "lengthInSeconds"
+		},
+		{
+			"forge": "animationByBone",
+			"fabric": "transformations"
+		},
+		{
+			"forge": "looping",
+			"fabric": "looping"
+		},
+		{
+			"forge": "withLength(float arg0)",
+			"fabric": "create(float lengthInSeconds)"
+		},
+		{
+			"forge": "withLength(float arg0)",
+			"fabric": "create(float lengthInSeconds)"
+		},
+		{
+			"forge": "looping()",
+			"fabric": "looping()"
+		},
+		{
+			"forge": "addAnimation(String arg0, AnimationChannel arg1)",
+			"fabric": "addBoneAnimation(String name, Transformation transformation)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

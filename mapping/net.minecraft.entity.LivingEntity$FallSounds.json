@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.LivingEntity$Fallsounds",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.LivingEntity$Fallsounds",
+			"fabric": "net.minecraft.entity.LivingEntity$FallSounds"
+		},
+		{
+			"forge": "small",
+			"fabric": "small"
+		},
+		{
+			"forge": "small",
+			"fabric": "small"
+		},
+		{
+			"forge": "big",
+			"fabric": "big"
+		},
+		{
+			"forge": "small()",
+			"fabric": "small()"
+		},
+		{
+			"forge": "small()",
+			"fabric": "small()"
+		},
+		{
+			"forge": "big()",
+			"fabric": "big()"
+		}
+	]
+}

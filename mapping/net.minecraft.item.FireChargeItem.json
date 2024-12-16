@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.FireChargeItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.FireChargeItem",
+			"fabric": "net.minecraft.item.FireChargeItem"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "playSound(Level arg0, BlockPos arg1)",
+			"fabric": "playUseSound(World world, BlockPos pos)"
+		}
+	]
+}

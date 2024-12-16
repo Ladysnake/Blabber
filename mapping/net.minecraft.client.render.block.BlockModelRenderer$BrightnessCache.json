@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.renderer.block.ModelBlockRenderer$Cache",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.ModelBlockRenderer$Cache",
+			"fabric": "net.minecraft.client.render.block.BlockModelRenderer$BrightnessCache"
+		},
+		{
+			"forge": "enabled",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "enabled",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "colorCache",
+			"fabric": "intCache"
+		},
+		{
+			"forge": "brightnessCache",
+			"fabric": "floatCache"
+		},
+		{
+			"forge": "enable()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "enable()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "disable()",
+			"fabric": "disable()"
+		},
+		{
+			"forge": "getLightColor(BlockState arg0, BlockAndTintGetter arg1, BlockPos arg2)",
+			"fabric": "getInt(BlockState state, BlockRenderView world, BlockPos pos)"
+		},
+		{
+			"forge": "getShadeBrightness(BlockState arg0, BlockAndTintGetter arg1, BlockPos arg2)",
+			"fabric": "getFloat(BlockState state, BlockRenderView blockView, BlockPos pos)"
+		}
+	]
+}

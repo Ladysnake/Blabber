@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundPlaceRecipePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundPlaceRecipePacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.CraftRequestC2SPacket"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "recipe",
+			"fabric": "recipe"
+		},
+		{
+			"forge": "shiftDown",
+			"fabric": "craftAll"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getContainerId()",
+			"fabric": "getSyncId()"
+		},
+		{
+			"forge": "getRecipe()",
+			"fabric": "getRecipe()"
+		},
+		{
+			"forge": "isShiftDown()",
+			"fabric": "shouldCraftAll()"
+		}
+	]
+}

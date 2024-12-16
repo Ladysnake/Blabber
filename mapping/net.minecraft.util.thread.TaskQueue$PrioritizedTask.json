@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.thread.StrictQueue$IntRunnable",
+	"items": [
+		{
+			"forge": "net.minecraft.util.thread.StrictQueue$IntRunnable",
+			"fabric": "net.minecraft.util.thread.TaskQueue$PrioritizedTask"
+		},
+		{
+			"forge": "priority",
+			"fabric": "priority"
+		},
+		{
+			"forge": "priority",
+			"fabric": "priority"
+		},
+		{
+			"forge": "task",
+			"fabric": "runnable"
+		},
+		{
+			"forge": "run()",
+			"fabric": "getPriority()"
+		},
+		{
+			"forge": "getPriority()",
+			"fabric": "getPriority()"
+		}
+	]
+}

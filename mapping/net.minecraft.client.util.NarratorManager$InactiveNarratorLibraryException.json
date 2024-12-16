@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.GameNarrator$NarratorInitException",
+	"items": [
+		{
+			"forge": "net.minecraft.client.GameNarrator$NarratorInitException",
+			"fabric": "net.minecraft.client.util.NarratorManager$InactiveNarratorLibraryException"
+		}
+	]
+}

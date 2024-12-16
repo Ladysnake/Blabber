@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.ticks.LevelTicks$PosAndContainerConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.ticks.LevelTicks$PosAndContainerConsumer",
+			"fabric": "net.minecraft.world.tick.WorldTickScheduler$ChunkVisitor"
+		},
+		{
+			"forge": "accept(long arg0, LevelChunkTicks<T> arg1)",
+			"fabric": "accept(long chunkPos, ChunkTickScheduler<T> chunkTickScheduler)"
+		},
+		{
+			"forge": "accept(long arg0, LevelChunkTicks<T> arg1)",
+			"fabric": "accept(long chunkPos, ChunkTickScheduler<T> chunkTickScheduler)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.resources.RegistryOps$RegistryInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.resources.RegistryOps$RegistryInfo",
+			"fabric": "net.minecraft.registry.RegistryOps$RegistryInfo"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "getter",
+			"fabric": "entryLookup"
+		},
+		{
+			"forge": "elementsLifecycle",
+			"fabric": "elementsLifecycle"
+		},
+		{
+			"forge": "owner()",
+			"fabric": "owner()"
+		},
+		{
+			"forge": "owner()",
+			"fabric": "owner()"
+		},
+		{
+			"forge": "getter()",
+			"fabric": "entryLookup()"
+		},
+		{
+			"forge": "elementsLifecycle()",
+			"fabric": "elementsLifecycle()"
+		}
+	]
+}

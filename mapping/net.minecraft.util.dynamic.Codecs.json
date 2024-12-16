@@ -1,0 +1,201 @@
+{
+	"title": "net.minecraft.util.ExtraCodecs",
+	"items": [
+		{
+			"forge": "net.minecraft.util.ExtraCodecs",
+			"fabric": "net.minecraft.util.dynamic.Codecs"
+		},
+		{
+			"forge": "JSON",
+			"fabric": "JSON_ELEMENT"
+		},
+		{
+			"forge": "JSON",
+			"fabric": "JSON_ELEMENT"
+		},
+		{
+			"forge": "COMPONENT",
+			"fabric": "TEXT"
+		},
+		{
+			"forge": "FLAT_COMPONENT",
+			"fabric": "STRINGIFIED_TEXT"
+		},
+		{
+			"forge": "VECTOR3F",
+			"fabric": "VECTOR_3F"
+		},
+		{
+			"forge": "QUATERNIONF_COMPONENTS",
+			"fabric": "QUATERNIONF"
+		},
+		{
+			"forge": "AXISANGLE4F",
+			"fabric": "AXIS_ANGLE4F"
+		},
+		{
+			"forge": "QUATERNIONF",
+			"fabric": "ROTATION"
+		},
+		{
+			"forge": "MATRIX4F",
+			"fabric": "MATRIX4F"
+		},
+		{
+			"forge": "NON_NEGATIVE_INT",
+			"fabric": "NONNEGATIVE_INT"
+		},
+		{
+			"forge": "POSITIVE_INT",
+			"fabric": "POSITIVE_INT"
+		},
+		{
+			"forge": "POSITIVE_FLOAT",
+			"fabric": "POSITIVE_FLOAT"
+		},
+		{
+			"forge": "PATTERN",
+			"fabric": "REGULAR_EXPRESSION"
+		},
+		{
+			"forge": "INSTANT_ISO8601",
+			"fabric": "INSTANT"
+		},
+		{
+			"forge": "BASE64_STRING",
+			"fabric": "BASE_64"
+		},
+		{
+			"forge": "TAG_OR_ELEMENT_ID",
+			"fabric": "TAG_ENTRY_ID"
+		},
+		{
+			"forge": "toOptionalLong",
+			"fabric": "OPTIONAL_OF_LONG_TO_OPTIONAL_LONG"
+		},
+		{
+			"forge": "fromOptionalLong",
+			"fabric": "OPTIONAL_LONG_TO_OPTIONAL_OF_LONG"
+		},
+		{
+			"forge": "BIT_SET",
+			"fabric": "BIT_SET"
+		},
+		{
+			"forge": "PROPERTY",
+			"fabric": "GAME_PROFILE_PROPERTY"
+		},
+		{
+			"forge": "PROPERTY_MAP",
+			"fabric": "GAME_PROFILE_PROPERTY_MAP"
+		},
+		{
+			"forge": "GAME_PROFILE",
+			"fabric": "GAME_PROFILE"
+		},
+		{
+			"forge": "NON_EMPTY_STRING",
+			"fabric": "NON_EMPTY_STRING"
+		},
+		{
+			"forge": "CODEPOINT",
+			"fabric": "CODEPOINT"
+		},
+		{
+			"forge": "xor(com.mojang.serialization.Codec<F> arg0, com.mojang.serialization.Codec<S> arg1)",
+			"fabric": "xor(com.mojang.serialization.Codec<F> first, com.mojang.serialization.Codec<S> second)"
+		},
+		{
+			"forge": "xor(com.mojang.serialization.Codec<F> arg0, com.mojang.serialization.Codec<S> arg1)",
+			"fabric": "xor(com.mojang.serialization.Codec<F> first, com.mojang.serialization.Codec<S> second)"
+		},
+		{
+			"forge": "intervalCodec(com.mojang.serialization.Codec<P> arg0, String arg1, String arg2, BiFunction<P, P, com.mojang.serialization.DataResult<I>> arg3, Function<I, P> arg4, Function<I, P> arg5)",
+			"fabric": "createCodecForPairObject(com.mojang.serialization.Codec<P> codec, String leftFieldName, String rightFieldName, BiFunction<P, P, com.mojang.serialization.DataResult<I>> combineFunction, Function<I, P> leftFunction, Function<I, P> rightFunction)"
+		},
+		{
+			"forge": "orElsePartial(A arg0)",
+			"fabric": "orElsePartial(A object)"
+		},
+		{
+			"forge": "idResolverCodec(ToIntFunction<E> arg0, IntFunction<E> arg1, int arg2)",
+			"fabric": "rawIdChecked(ToIntFunction<E> elementToRawId, IntFunction<E> rawIdToElement, int errorRawId)"
+		},
+		{
+			"forge": "stringResolverCodec(Function<E, String> arg0, Function<String, E> arg1)",
+			"fabric": "idChecked(Function<E, String> elementToId, Function<String, E> idToElement)"
+		},
+		{
+			"forge": "orCompressed(com.mojang.serialization.Codec<E> arg0, com.mojang.serialization.Codec<E> arg1)",
+			"fabric": "orCompressed(com.mojang.serialization.Codec<E> uncompressedCodec, com.mojang.serialization.Codec<E> compressedCodec)"
+		},
+		{
+			"forge": "overrideLifecycle(com.mojang.serialization.Codec<E> arg0, Function<E, com.mojang.serialization.Lifecycle> arg1, Function<E, com.mojang.serialization.Lifecycle> arg2)",
+			"fabric": "withLifecycle(com.mojang.serialization.Codec<E> originalCodec, Function<E, com.mojang.serialization.Lifecycle> entryLifecycleGetter, Function<E, com.mojang.serialization.Lifecycle> lifecycleGetter)"
+		},
+		{
+			"forge": "validate(com.mojang.serialization.Codec<T> arg0, Function<T, com.mojang.serialization.DataResult<T>> arg1)",
+			"fabric": "validate(com.mojang.serialization.Codec<T> codec, Function<T, com.mojang.serialization.DataResult<T>> validator)"
+		},
+		{
+			"forge": "validate(com.mojang.serialization.MapCodec<T> arg0, Function<T, com.mojang.serialization.DataResult<T>> arg1)",
+			"fabric": "validate(com.mojang.serialization.MapCodec<T> codec, Function<T, com.mojang.serialization.DataResult<T>> validator)"
+		},
+		{
+			"forge": "intRangeWithMessage(int arg0, int arg1, Function<Integer, String> arg2)",
+			"fabric": "rangedInt(int min, int max, Function<Integer, String> messageFactory)"
+		},
+		{
+			"forge": "intRange(int arg0, int arg1)",
+			"fabric": "rangedInt(int min, int max)"
+		},
+		{
+			"forge": "floatRangeMinExclusiveWithMessage(float arg0, float arg1, Function<Float, String> arg2)",
+			"fabric": "rangedFloat(float min, float max, Function<Float, String> messageFactory)"
+		},
+		{
+			"forge": "nonEmptyList(com.mojang.serialization.Codec<List<T>> arg0)",
+			"fabric": "nonEmptyList(com.mojang.serialization.Codec<List<T>> originalCodec)"
+		},
+		{
+			"forge": "nonEmptyHolderSet(com.mojang.serialization.Codec<HolderSet<T>> arg0)",
+			"fabric": "nonEmptyEntryList(com.mojang.serialization.Codec<RegistryEntryList<T>> originalCodec)"
+		},
+		{
+			"forge": "lazyInitializedCodec(Supplier<com.mojang.serialization.Codec<A>> arg0)",
+			"fabric": "createLazy(Supplier<com.mojang.serialization.Codec<A>> supplier)"
+		},
+		{
+			"forge": "retrieveContext(Function<com.mojang.serialization.DynamicOps<?>, com.mojang.serialization.DataResult<E>> arg0)",
+			"fabric": "createContextRetrievalCodec(Function<com.mojang.serialization.DynamicOps<?>, com.mojang.serialization.DataResult<E>> retriever)"
+		},
+		{
+			"forge": "ensureHomogenous(Function<E, T> arg0)",
+			"fabric": "createEqualTypeChecker(Function<E, T> typeGetter)"
+		},
+		{
+			"forge": "catchDecoderException(com.mojang.serialization.Codec<A> arg0)",
+			"fabric": "exceptionCatching(com.mojang.serialization.Codec<A> codec)"
+		},
+		{
+			"forge": "instantCodec(DateTimeFormatter arg0)",
+			"fabric": "instant(DateTimeFormatter formatter)"
+		},
+		{
+			"forge": "asOptionalLong(com.mojang.serialization.MapCodec<Optional<Long>> arg0)",
+			"fabric": "optionalLong(com.mojang.serialization.MapCodec<Optional<Long>> codec)"
+		},
+		{
+			"forge": "mapIdNameToGameProfile(com.mojang.datafixers.util.Pair<Optional<UUID>, Optional<String>> arg0)",
+			"fabric": "createGameProfileFromPair(com.mojang.datafixers.util.Pair<Optional<UUID>, Optional<String>> pair)"
+		},
+		{
+			"forge": "mapGameProfileToIdName(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "createPairFromGameProfile(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "sizeLimitedString(int arg0, int arg1)",
+			"fabric": "string(int minLength, int maxLength)"
+		}
+	]
+}

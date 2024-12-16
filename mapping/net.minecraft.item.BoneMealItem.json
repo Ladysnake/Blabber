@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.item.BoneMealItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.BoneMealItem",
+			"fabric": "net.minecraft.item.BoneMealItem"
+		},
+		{
+			"forge": "GRASS_SPREAD_WIDTH",
+			"fabric": "field_30851"
+		},
+		{
+			"forge": "GRASS_SPREAD_WIDTH",
+			"fabric": "field_30851"
+		},
+		{
+			"forge": "GRASS_SPREAD_HEIGHT",
+			"fabric": "field_30852"
+		},
+		{
+			"forge": "GRASS_COUNT_MULTIPLIER",
+			"fabric": "field_30853"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "growCrop(ItemStack arg0, Level arg1, BlockPos arg2)",
+			"fabric": "useOnFertilizable(ItemStack stack, World world, BlockPos pos)"
+		},
+		{
+			"forge": "growWaterPlant(ItemStack arg0, Level arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "useOnGround(ItemStack stack, World world, BlockPos blockPos, Direction facing)"
+		},
+		{
+			"forge": "addGrowthParticles(LevelAccessor arg0, BlockPos arg1, int arg2)",
+			"fabric": "createParticles(WorldAccess world, BlockPos pos, int count)"
+		}
+	]
+}

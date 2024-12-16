@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.profiling.ServerMetricsSamplersProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.profiling.ServerMetricsSamplersProvider",
+			"fabric": "net.minecraft.util.profiler.ServerSamplerSource"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "samplers",
+			"fabric": "samplers"
+		},
+		{
+			"forge": "samplerFactory",
+			"fabric": "factory"
+		},
+		{
+			"forge": "runtimeIndependentSamplers()",
+			"fabric": "createSystemSamplers()"
+		},
+		{
+			"forge": "runtimeIndependentSamplers()",
+			"fabric": "createSystemSamplers()"
+		},
+		{
+			"forge": "samplers(Supplier<ProfileCollector> arg0)",
+			"fabric": "getSamplers(Supplier<ReadableProfiler> arg0)"
+		},
+		{
+			"forge": "tickTimeSampler(LongSupplier arg0)",
+			"fabric": "createTickTimeTracker(LongSupplier nanoTimeSupplier)"
+		}
+	]
+}

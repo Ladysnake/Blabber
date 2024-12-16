@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.chunk.ChunkAccess$TicksToSave",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.ChunkAccess$TicksToSave",
+			"fabric": "net.minecraft.world.chunk.Chunk$TickSchedulers"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "blocks",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "fluids",
+			"fabric": "fluids"
+		},
+		{
+			"forge": "blocks()",
+			"fabric": "blocks()"
+		},
+		{
+			"forge": "blocks()",
+			"fabric": "blocks()"
+		},
+		{
+			"forge": "fluids()",
+			"fabric": "fluids()"
+		}
+	]
+}

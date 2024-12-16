@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.entity.animal.WaterAnimal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.WaterAnimal",
+			"fabric": "net.minecraft.entity.mob.WaterCreatureEntity"
+		},
+		{
+			"forge": "canBreatheUnderwater()",
+			"fabric": "canBreatheInWater()"
+		},
+		{
+			"forge": "canBreatheUnderwater()",
+			"fabric": "canBreatheInWater()"
+		},
+		{
+			"forge": "getMobType()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "checkSpawnObstruction(LevelReader arg0)",
+			"fabric": "canSpawn(WorldView arg0)"
+		},
+		{
+			"forge": "getAmbientSoundInterval()",
+			"fabric": "getMinAmbientSoundDelay()"
+		},
+		{
+			"forge": "getExperienceReward()",
+			"fabric": "getXpToDrop()"
+		},
+		{
+			"forge": "handleAirSupply(int arg0)",
+			"fabric": "tickWaterBreathingAir(int air)"
+		},
+		{
+			"forge": "baseTick()",
+			"fabric": "baseTick()"
+		},
+		{
+			"forge": "isPushedByFluid()",
+			"fabric": "isPushedByFluids()"
+		},
+		{
+			"forge": "canBeLeashed(Player arg0)",
+			"fabric": "canBeLeashedBy(PlayerEntity arg0)"
+		},
+		{
+			"forge": "checkSurfaceWaterAnimalSpawnRules(EntityType<? extends WaterAnimal> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<? extends WaterCreatureEntity> type, WorldAccess world, SpawnReason reason, BlockPos pos, Random random)"
+		}
+	]
+}

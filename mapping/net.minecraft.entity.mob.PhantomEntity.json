@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.entity.monster.Phantom",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Phantom",
+			"fabric": "net.minecraft.entity.mob.PhantomEntity"
+		},
+		{
+			"forge": "FLAP_DEGREES_PER_TICK",
+			"fabric": "field_30475"
+		},
+		{
+			"forge": "FLAP_DEGREES_PER_TICK",
+			"fabric": "field_30475"
+		},
+		{
+			"forge": "TICKS_PER_FLAP",
+			"fabric": "WING_FLAP_TICKS"
+		},
+		{
+			"forge": "ID_SIZE",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "moveTargetPoint",
+			"fabric": "targetPosition"
+		},
+		{
+			"forge": "anchorPoint",
+			"fabric": "circlingCenter"
+		},
+		{
+			"forge": "attackPhase",
+			"fabric": "movementType"
+		},
+		{
+			"forge": "isFlapping()",
+			"fabric": "isFlappingWings()"
+		},
+		{
+			"forge": "isFlapping()",
+			"fabric": "isFlappingWings()"
+		},
+		{
+			"forge": "createBodyControl()",
+			"fabric": "createBodyControl()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "setPhantomSize(int arg0)",
+			"fabric": "setPhantomSize(int size)"
+		},
+		{
+			"forge": "updatePhantomSizeInfo()",
+			"fabric": "onSizeChanged()"
+		},
+		{
+			"forge": "getPhantomSize()",
+			"fabric": "getPhantomSize()"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "onSyncedDataUpdated(EntityDataAccessor<?> arg0)",
+			"fabric": "onTrackedDataSet(TrackedData<?> arg0)"
+		},
+		{
+			"forge": "getUniqueFlapTickOffset()",
+			"fabric": "getWingFlapTickOffset()"
+		},
+		{
+			"forge": "shouldDespawnInPeaceful()",
+			"fabric": "isDisallowedInPeaceful()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "getSoundSource()",
+			"fabric": "getSoundCategory()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getMobType()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "getSoundVolume()",
+			"fabric": "getSoundVolume()"
+		},
+		{
+			"forge": "canAttackType(EntityType<?> arg0)",
+			"fabric": "canTarget(EntityType<?> arg0)"
+		},
+		{
+			"forge": "getDimensions(Pose arg0)",
+			"fabric": "getDimensions(EntityPose arg0)"
+		},
+		{
+			"forge": "getPassengersRidingOffset()",
+			"fabric": "getMountedHeightOffset()"
+		}
+	]
+}

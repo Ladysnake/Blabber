@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.axolotl.PlayDead",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.axolotl.PlayDead",
+			"fabric": "net.minecraft.entity.ai.brain.task.PlayDeadTask"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Axolotl arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, AxolotlEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Axolotl arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, AxolotlEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Axolotl arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, AxolotlEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Axolotl arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, AxolotlEntity arg1, long arg2)"
+		}
+	]
+}

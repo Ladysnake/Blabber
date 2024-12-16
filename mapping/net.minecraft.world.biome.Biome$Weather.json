@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.biome.Biome$ClimateSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.Biome$ClimateSettings",
+			"fabric": "net.minecraft.world.biome.Biome$Weather"
+		},
+		{
+			"forge": "hasPrecipitation",
+			"fabric": "hasPrecipitation"
+		},
+		{
+			"forge": "hasPrecipitation",
+			"fabric": "hasPrecipitation"
+		},
+		{
+			"forge": "temperature",
+			"fabric": "temperature"
+		},
+		{
+			"forge": "temperatureModifier",
+			"fabric": "temperatureModifier"
+		},
+		{
+			"forge": "downfall",
+			"fabric": "downfall"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "hasPrecipitation()",
+			"fabric": "hasPrecipitation()"
+		},
+		{
+			"forge": "hasPrecipitation()",
+			"fabric": "hasPrecipitation()"
+		},
+		{
+			"forge": "temperature()",
+			"fabric": "temperature()"
+		},
+		{
+			"forge": "temperatureModifier()",
+			"fabric": "temperatureModifier()"
+		},
+		{
+			"forge": "downfall()",
+			"fabric": "downfall()"
+		}
+	]
+}

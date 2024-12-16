@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.player.inventory.Hotbar",
+	"items": [
+		{
+			"forge": "net.minecraft.client.player.inventory.Hotbar",
+			"fabric": "net.minecraft.client.option.HotbarStorageEntry"
+		},
+		{
+			"forge": "items",
+			"fabric": "delegate"
+		},
+		{
+			"forge": "items",
+			"fabric": "delegate"
+		},
+		{
+			"forge": "delegate()",
+			"fabric": "delegate()"
+		},
+		{
+			"forge": "delegate()",
+			"fabric": "delegate()"
+		},
+		{
+			"forge": "createTag()",
+			"fabric": "toNbtList()"
+		},
+		{
+			"forge": "fromTag(ListTag arg0)",
+			"fabric": "readNbtList(NbtList list)"
+		}
+	]
+}

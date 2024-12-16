@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.stats.FileIOStat$Summary",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.stats.FileIOStat$Summary",
+			"fabric": "net.minecraft.util.profiling.jfr.sample.FileIoSample$Statistics"
+		},
+		{
+			"forge": "totalBytes",
+			"fabric": "totalBytes"
+		},
+		{
+			"forge": "totalBytes",
+			"fabric": "totalBytes"
+		},
+		{
+			"forge": "bytesPerSecond",
+			"fabric": "bytesPerSecond"
+		},
+		{
+			"forge": "counts",
+			"fabric": "count"
+		},
+		{
+			"forge": "countsPerSecond",
+			"fabric": "countPerSecond"
+		},
+		{
+			"forge": "timeSpentInIO",
+			"fabric": "totalDuration"
+		},
+		{
+			"forge": "topTenContributorsByTotalBytes",
+			"fabric": "topContributors"
+		},
+		{
+			"forge": "totalBytes()",
+			"fabric": "totalBytes()"
+		},
+		{
+			"forge": "totalBytes()",
+			"fabric": "totalBytes()"
+		},
+		{
+			"forge": "bytesPerSecond()",
+			"fabric": "bytesPerSecond()"
+		},
+		{
+			"forge": "counts()",
+			"fabric": "count()"
+		},
+		{
+			"forge": "countsPerSecond()",
+			"fabric": "countPerSecond()"
+		},
+		{
+			"forge": "timeSpentInIO()",
+			"fabric": "totalDuration()"
+		},
+		{
+			"forge": "topTenContributorsByTotalBytes()",
+			"fabric": "topContributors()"
+		}
+	]
+}

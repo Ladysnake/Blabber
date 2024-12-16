@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.UseBonemeal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.UseBonemeal",
+			"fabric": "net.minecraft.entity.ai.brain.task.BoneMealTask"
+		},
+		{
+			"forge": "BONEMEALING_DURATION",
+			"fabric": "MAX_DURATION"
+		},
+		{
+			"forge": "BONEMEALING_DURATION",
+			"fabric": "MAX_DURATION"
+		},
+		{
+			"forge": "nextWorkCycleTime",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "lastBonemealingSession",
+			"fabric": "lastEndEntityAge"
+		},
+		{
+			"forge": "timeWorkedSoFar",
+			"fabric": "duration"
+		},
+		{
+			"forge": "cropPos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "pickNextTarget(ServerLevel arg0, Villager arg1)",
+			"fabric": "findBoneMealPos(ServerWorld world, VillagerEntity entity)"
+		},
+		{
+			"forge": "validPos(BlockPos arg0, ServerLevel arg1)",
+			"fabric": "canBoneMeal(BlockPos pos, ServerWorld world)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "setCurrentCropAsTarget(Villager arg0)",
+			"fabric": "addLookWalkTargets(VillagerEntity villager)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		}
+	]
+}

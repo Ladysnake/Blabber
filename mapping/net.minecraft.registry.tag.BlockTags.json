@@ -1,0 +1,701 @@
+{
+	"title": "net.minecraft.tags.BlockTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.BlockTags",
+			"fabric": "net.minecraft.registry.tag.BlockTags"
+		},
+		{
+			"forge": "WOOL",
+			"fabric": "WOOL"
+		},
+		{
+			"forge": "WOOL",
+			"fabric": "WOOL"
+		},
+		{
+			"forge": "PLANKS",
+			"fabric": "PLANKS"
+		},
+		{
+			"forge": "STONE_BRICKS",
+			"fabric": "STONE_BRICKS"
+		},
+		{
+			"forge": "WOODEN_BUTTONS",
+			"fabric": "WOODEN_BUTTONS"
+		},
+		{
+			"forge": "STONE_BUTTONS",
+			"fabric": "STONE_BUTTONS"
+		},
+		{
+			"forge": "BUTTONS",
+			"fabric": "BUTTONS"
+		},
+		{
+			"forge": "WOOL_CARPETS",
+			"fabric": "WOOL_CARPETS"
+		},
+		{
+			"forge": "WOODEN_DOORS",
+			"fabric": "WOODEN_DOORS"
+		},
+		{
+			"forge": "WOODEN_STAIRS",
+			"fabric": "WOODEN_STAIRS"
+		},
+		{
+			"forge": "WOODEN_SLABS",
+			"fabric": "WOODEN_SLABS"
+		},
+		{
+			"forge": "WOODEN_FENCES",
+			"fabric": "WOODEN_FENCES"
+		},
+		{
+			"forge": "PRESSURE_PLATES",
+			"fabric": "PRESSURE_PLATES"
+		},
+		{
+			"forge": "WOODEN_PRESSURE_PLATES",
+			"fabric": "WOODEN_PRESSURE_PLATES"
+		},
+		{
+			"forge": "STONE_PRESSURE_PLATES",
+			"fabric": "STONE_PRESSURE_PLATES"
+		},
+		{
+			"forge": "WOODEN_TRAPDOORS",
+			"fabric": "WOODEN_TRAPDOORS"
+		},
+		{
+			"forge": "DOORS",
+			"fabric": "DOORS"
+		},
+		{
+			"forge": "SAPLINGS",
+			"fabric": "SAPLINGS"
+		},
+		{
+			"forge": "LOGS_THAT_BURN",
+			"fabric": "LOGS_THAT_BURN"
+		},
+		{
+			"forge": "OVERWORLD_NATURAL_LOGS",
+			"fabric": "OVERWORLD_NATURAL_LOGS"
+		},
+		{
+			"forge": "LOGS",
+			"fabric": "LOGS"
+		},
+		{
+			"forge": "DARK_OAK_LOGS",
+			"fabric": "DARK_OAK_LOGS"
+		},
+		{
+			"forge": "OAK_LOGS",
+			"fabric": "OAK_LOGS"
+		},
+		{
+			"forge": "BIRCH_LOGS",
+			"fabric": "BIRCH_LOGS"
+		},
+		{
+			"forge": "ACACIA_LOGS",
+			"fabric": "ACACIA_LOGS"
+		},
+		{
+			"forge": "CHERRY_LOGS",
+			"fabric": "CHERRY_LOGS"
+		},
+		{
+			"forge": "JUNGLE_LOGS",
+			"fabric": "JUNGLE_LOGS"
+		},
+		{
+			"forge": "SPRUCE_LOGS",
+			"fabric": "SPRUCE_LOGS"
+		},
+		{
+			"forge": "MANGROVE_LOGS",
+			"fabric": "MANGROVE_LOGS"
+		},
+		{
+			"forge": "CRIMSON_STEMS",
+			"fabric": "CRIMSON_STEMS"
+		},
+		{
+			"forge": "WARPED_STEMS",
+			"fabric": "WARPED_STEMS"
+		},
+		{
+			"forge": "BAMBOO_BLOCKS",
+			"fabric": "BAMBOO_BLOCKS"
+		},
+		{
+			"forge": "WART_BLOCKS",
+			"fabric": "WART_BLOCKS"
+		},
+		{
+			"forge": "BANNERS",
+			"fabric": "BANNERS"
+		},
+		{
+			"forge": "SAND",
+			"fabric": "SAND"
+		},
+		{
+			"forge": "SMELTS_TO_GLASS",
+			"fabric": "SMELTS_TO_GLASS"
+		},
+		{
+			"forge": "STAIRS",
+			"fabric": "STAIRS"
+		},
+		{
+			"forge": "SLABS",
+			"fabric": "SLABS"
+		},
+		{
+			"forge": "WALLS",
+			"fabric": "WALLS"
+		},
+		{
+			"forge": "ANVIL",
+			"fabric": "ANVIL"
+		},
+		{
+			"forge": "RAILS",
+			"fabric": "RAILS"
+		},
+		{
+			"forge": "LEAVES",
+			"fabric": "LEAVES"
+		},
+		{
+			"forge": "TRAPDOORS",
+			"fabric": "TRAPDOORS"
+		},
+		{
+			"forge": "SMALL_FLOWERS",
+			"fabric": "SMALL_FLOWERS"
+		},
+		{
+			"forge": "BEDS",
+			"fabric": "BEDS"
+		},
+		{
+			"forge": "FENCES",
+			"fabric": "FENCES"
+		},
+		{
+			"forge": "TALL_FLOWERS",
+			"fabric": "TALL_FLOWERS"
+		},
+		{
+			"forge": "FLOWERS",
+			"fabric": "FLOWERS"
+		},
+		{
+			"forge": "PIGLIN_REPELLENTS",
+			"fabric": "PIGLIN_REPELLENTS"
+		},
+		{
+			"forge": "GOLD_ORES",
+			"fabric": "GOLD_ORES"
+		},
+		{
+			"forge": "IRON_ORES",
+			"fabric": "IRON_ORES"
+		},
+		{
+			"forge": "DIAMOND_ORES",
+			"fabric": "DIAMOND_ORES"
+		},
+		{
+			"forge": "REDSTONE_ORES",
+			"fabric": "REDSTONE_ORES"
+		},
+		{
+			"forge": "LAPIS_ORES",
+			"fabric": "LAPIS_ORES"
+		},
+		{
+			"forge": "COAL_ORES",
+			"fabric": "COAL_ORES"
+		},
+		{
+			"forge": "EMERALD_ORES",
+			"fabric": "EMERALD_ORES"
+		},
+		{
+			"forge": "COPPER_ORES",
+			"fabric": "COPPER_ORES"
+		},
+		{
+			"forge": "CANDLES",
+			"fabric": "CANDLES"
+		},
+		{
+			"forge": "DIRT",
+			"fabric": "DIRT"
+		},
+		{
+			"forge": "TERRACOTTA",
+			"fabric": "TERRACOTTA"
+		},
+		{
+			"forge": "COMPLETES_FIND_TREE_TUTORIAL",
+			"fabric": "COMPLETES_FIND_TREE_TUTORIAL"
+		},
+		{
+			"forge": "FLOWER_POTS",
+			"fabric": "FLOWER_POTS"
+		},
+		{
+			"forge": "ENDERMAN_HOLDABLE",
+			"fabric": "ENDERMAN_HOLDABLE"
+		},
+		{
+			"forge": "ICE",
+			"fabric": "ICE"
+		},
+		{
+			"forge": "VALID_SPAWN",
+			"fabric": "VALID_SPAWN"
+		},
+		{
+			"forge": "IMPERMEABLE",
+			"fabric": "IMPERMEABLE"
+		},
+		{
+			"forge": "UNDERWATER_BONEMEALS",
+			"fabric": "UNDERWATER_BONEMEALS"
+		},
+		{
+			"forge": "CORAL_BLOCKS",
+			"fabric": "CORAL_BLOCKS"
+		},
+		{
+			"forge": "WALL_CORALS",
+			"fabric": "WALL_CORALS"
+		},
+		{
+			"forge": "CORAL_PLANTS",
+			"fabric": "CORAL_PLANTS"
+		},
+		{
+			"forge": "CORALS",
+			"fabric": "CORALS"
+		},
+		{
+			"forge": "BAMBOO_PLANTABLE_ON",
+			"fabric": "BAMBOO_PLANTABLE_ON"
+		},
+		{
+			"forge": "STANDING_SIGNS",
+			"fabric": "STANDING_SIGNS"
+		},
+		{
+			"forge": "WALL_SIGNS",
+			"fabric": "WALL_SIGNS"
+		},
+		{
+			"forge": "SIGNS",
+			"fabric": "SIGNS"
+		},
+		{
+			"forge": "CEILING_HANGING_SIGNS",
+			"fabric": "CEILING_HANGING_SIGNS"
+		},
+		{
+			"forge": "WALL_HANGING_SIGNS",
+			"fabric": "WALL_HANGING_SIGNS"
+		},
+		{
+			"forge": "ALL_HANGING_SIGNS",
+			"fabric": "ALL_HANGING_SIGNS"
+		},
+		{
+			"forge": "ALL_SIGNS",
+			"fabric": "ALL_SIGNS"
+		},
+		{
+			"forge": "DRAGON_IMMUNE",
+			"fabric": "DRAGON_IMMUNE"
+		},
+		{
+			"forge": "DRAGON_TRANSPARENT",
+			"fabric": "DRAGON_TRANSPARENT"
+		},
+		{
+			"forge": "WITHER_IMMUNE",
+			"fabric": "WITHER_IMMUNE"
+		},
+		{
+			"forge": "WITHER_SUMMON_BASE_BLOCKS",
+			"fabric": "WITHER_SUMMON_BASE_BLOCKS"
+		},
+		{
+			"forge": "BEEHIVES",
+			"fabric": "BEEHIVES"
+		},
+		{
+			"forge": "CROPS",
+			"fabric": "CROPS"
+		},
+		{
+			"forge": "BEE_GROWABLES",
+			"fabric": "BEE_GROWABLES"
+		},
+		{
+			"forge": "PORTALS",
+			"fabric": "PORTALS"
+		},
+		{
+			"forge": "FIRE",
+			"fabric": "FIRE"
+		},
+		{
+			"forge": "NYLIUM",
+			"fabric": "NYLIUM"
+		},
+		{
+			"forge": "BEACON_BASE_BLOCKS",
+			"fabric": "BEACON_BASE_BLOCKS"
+		},
+		{
+			"forge": "SOUL_SPEED_BLOCKS",
+			"fabric": "SOUL_SPEED_BLOCKS"
+		},
+		{
+			"forge": "WALL_POST_OVERRIDE",
+			"fabric": "WALL_POST_OVERRIDE"
+		},
+		{
+			"forge": "CLIMBABLE",
+			"fabric": "CLIMBABLE"
+		},
+		{
+			"forge": "FALL_DAMAGE_RESETTING",
+			"fabric": "FALL_DAMAGE_RESETTING"
+		},
+		{
+			"forge": "SHULKER_BOXES",
+			"fabric": "SHULKER_BOXES"
+		},
+		{
+			"forge": "HOGLIN_REPELLENTS",
+			"fabric": "HOGLIN_REPELLENTS"
+		},
+		{
+			"forge": "SOUL_FIRE_BASE_BLOCKS",
+			"fabric": "SOUL_FIRE_BASE_BLOCKS"
+		},
+		{
+			"forge": "STRIDER_WARM_BLOCKS",
+			"fabric": "STRIDER_WARM_BLOCKS"
+		},
+		{
+			"forge": "CAMPFIRES",
+			"fabric": "CAMPFIRES"
+		},
+		{
+			"forge": "GUARDED_BY_PIGLINS",
+			"fabric": "GUARDED_BY_PIGLINS"
+		},
+		{
+			"forge": "PREVENT_MOB_SPAWNING_INSIDE",
+			"fabric": "PREVENT_MOB_SPAWNING_INSIDE"
+		},
+		{
+			"forge": "FENCE_GATES",
+			"fabric": "FENCE_GATES"
+		},
+		{
+			"forge": "UNSTABLE_BOTTOM_CENTER",
+			"fabric": "UNSTABLE_BOTTOM_CENTER"
+		},
+		{
+			"forge": "MUSHROOM_GROW_BLOCK",
+			"fabric": "MUSHROOM_GROW_BLOCK"
+		},
+		{
+			"forge": "INFINIBURN_OVERWORLD",
+			"fabric": "INFINIBURN_OVERWORLD"
+		},
+		{
+			"forge": "INFINIBURN_NETHER",
+			"fabric": "INFINIBURN_NETHER"
+		},
+		{
+			"forge": "INFINIBURN_END",
+			"fabric": "INFINIBURN_END"
+		},
+		{
+			"forge": "BASE_STONE_OVERWORLD",
+			"fabric": "BASE_STONE_OVERWORLD"
+		},
+		{
+			"forge": "STONE_ORE_REPLACEABLES",
+			"fabric": "STONE_ORE_REPLACEABLES"
+		},
+		{
+			"forge": "DEEPSLATE_ORE_REPLACEABLES",
+			"fabric": "DEEPSLATE_ORE_REPLACEABLES"
+		},
+		{
+			"forge": "BASE_STONE_NETHER",
+			"fabric": "BASE_STONE_NETHER"
+		},
+		{
+			"forge": "OVERWORLD_CARVER_REPLACEABLES",
+			"fabric": "OVERWORLD_CARVER_REPLACEABLES"
+		},
+		{
+			"forge": "NETHER_CARVER_REPLACEABLES",
+			"fabric": "NETHER_CARVER_REPLACEABLES"
+		},
+		{
+			"forge": "CANDLE_CAKES",
+			"fabric": "CANDLE_CAKES"
+		},
+		{
+			"forge": "CAULDRONS",
+			"fabric": "CAULDRONS"
+		},
+		{
+			"forge": "CRYSTAL_SOUND_BLOCKS",
+			"fabric": "CRYSTAL_SOUND_BLOCKS"
+		},
+		{
+			"forge": "INSIDE_STEP_SOUND_BLOCKS",
+			"fabric": "INSIDE_STEP_SOUND_BLOCKS"
+		},
+		{
+			"forge": "COMBINATION_STEP_SOUND_BLOCKS",
+			"fabric": "COMBINATION_STEP_SOUND_BLOCKS"
+		},
+		{
+			"forge": "OCCLUDES_VIBRATION_SIGNALS",
+			"fabric": "OCCLUDES_VIBRATION_SIGNALS"
+		},
+		{
+			"forge": "DAMPENS_VIBRATIONS",
+			"fabric": "DAMPENS_VIBRATIONS"
+		},
+		{
+			"forge": "DRIPSTONE_REPLACEABLE",
+			"fabric": "DRIPSTONE_REPLACEABLE_BLOCKS"
+		},
+		{
+			"forge": "CAVE_VINES",
+			"fabric": "CAVE_VINES"
+		},
+		{
+			"forge": "MOSS_REPLACEABLE",
+			"fabric": "MOSS_REPLACEABLE"
+		},
+		{
+			"forge": "LUSH_GROUND_REPLACEABLE",
+			"fabric": "LUSH_GROUND_REPLACEABLE"
+		},
+		{
+			"forge": "AZALEA_ROOT_REPLACEABLE",
+			"fabric": "AZALEA_ROOT_REPLACEABLE"
+		},
+		{
+			"forge": "SMALL_DRIPLEAF_PLACEABLE",
+			"fabric": "SMALL_DRIPLEAF_PLACEABLE"
+		},
+		{
+			"forge": "BIG_DRIPLEAF_PLACEABLE",
+			"fabric": "BIG_DRIPLEAF_PLACEABLE"
+		},
+		{
+			"forge": "SNOW",
+			"fabric": "SNOW"
+		},
+		{
+			"forge": "MINEABLE_WITH_AXE",
+			"fabric": "AXE_MINEABLE"
+		},
+		{
+			"forge": "MINEABLE_WITH_HOE",
+			"fabric": "HOE_MINEABLE"
+		},
+		{
+			"forge": "MINEABLE_WITH_PICKAXE",
+			"fabric": "PICKAXE_MINEABLE"
+		},
+		{
+			"forge": "MINEABLE_WITH_SHOVEL",
+			"fabric": "SHOVEL_MINEABLE"
+		},
+		{
+			"forge": "SWORD_EFFICIENT",
+			"fabric": "SWORD_EFFICIENT"
+		},
+		{
+			"forge": "NEEDS_DIAMOND_TOOL",
+			"fabric": "NEEDS_DIAMOND_TOOL"
+		},
+		{
+			"forge": "NEEDS_IRON_TOOL",
+			"fabric": "NEEDS_IRON_TOOL"
+		},
+		{
+			"forge": "NEEDS_STONE_TOOL",
+			"fabric": "NEEDS_STONE_TOOL"
+		},
+		{
+			"forge": "FEATURES_CANNOT_REPLACE",
+			"fabric": "FEATURES_CANNOT_REPLACE"
+		},
+		{
+			"forge": "LAVA_POOL_STONE_CANNOT_REPLACE",
+			"fabric": "LAVA_POOL_STONE_CANNOT_REPLACE"
+		},
+		{
+			"forge": "GEODE_INVALID_BLOCKS",
+			"fabric": "GEODE_INVALID_BLOCKS"
+		},
+		{
+			"forge": "FROG_PREFER_JUMP_TO",
+			"fabric": "FROG_PREFER_JUMP_TO"
+		},
+		{
+			"forge": "SCULK_REPLACEABLE",
+			"fabric": "SCULK_REPLACEABLE"
+		},
+		{
+			"forge": "SCULK_REPLACEABLE_WORLD_GEN",
+			"fabric": "SCULK_REPLACEABLE_WORLD_GEN"
+		},
+		{
+			"forge": "ANCIENT_CITY_REPLACEABLE",
+			"fabric": "ANCIENT_CITY_REPLACEABLE"
+		},
+		{
+			"forge": "VIBRATION_RESONATORS",
+			"fabric": "VIBRATION_RESONATORS"
+		},
+		{
+			"forge": "ANIMALS_SPAWNABLE_ON",
+			"fabric": "ANIMALS_SPAWNABLE_ON"
+		},
+		{
+			"forge": "AXOLOTLS_SPAWNABLE_ON",
+			"fabric": "AXOLOTLS_SPAWNABLE_ON"
+		},
+		{
+			"forge": "GOATS_SPAWNABLE_ON",
+			"fabric": "GOATS_SPAWNABLE_ON"
+		},
+		{
+			"forge": "MOOSHROOMS_SPAWNABLE_ON",
+			"fabric": "MOOSHROOMS_SPAWNABLE_ON"
+		},
+		{
+			"forge": "PARROTS_SPAWNABLE_ON",
+			"fabric": "PARROTS_SPAWNABLE_ON"
+		},
+		{
+			"forge": "POLAR_BEARS_SPAWNABLE_ON_ALTERNATE",
+			"fabric": "POLAR_BEARS_SPAWNABLE_ON_ALTERNATE"
+		},
+		{
+			"forge": "RABBITS_SPAWNABLE_ON",
+			"fabric": "RABBITS_SPAWNABLE_ON"
+		},
+		{
+			"forge": "FOXES_SPAWNABLE_ON",
+			"fabric": "FOXES_SPAWNABLE_ON"
+		},
+		{
+			"forge": "WOLVES_SPAWNABLE_ON",
+			"fabric": "WOLVES_SPAWNABLE_ON"
+		},
+		{
+			"forge": "FROGS_SPAWNABLE_ON",
+			"fabric": "FROGS_SPAWNABLE_ON"
+		},
+		{
+			"forge": "AZALEA_GROWS_ON",
+			"fabric": "AZALEA_GROWS_ON"
+		},
+		{
+			"forge": "CONVERTABLE_TO_MUD",
+			"fabric": "CONVERTABLE_TO_MUD"
+		},
+		{
+			"forge": "MANGROVE_LOGS_CAN_GROW_THROUGH",
+			"fabric": "MANGROVE_LOGS_CAN_GROW_THROUGH"
+		},
+		{
+			"forge": "MANGROVE_ROOTS_CAN_GROW_THROUGH",
+			"fabric": "MANGROVE_ROOTS_CAN_GROW_THROUGH"
+		},
+		{
+			"forge": "DEAD_BUSH_MAY_PLACE_ON",
+			"fabric": "DEAD_BUSH_MAY_PLACE_ON"
+		},
+		{
+			"forge": "SNAPS_GOAT_HORN",
+			"fabric": "SNAPS_GOAT_HORN"
+		},
+		{
+			"forge": "REPLACEABLE_BY_TREES",
+			"fabric": "REPLACEABLE_BY_TREES"
+		},
+		{
+			"forge": "SNOW_LAYER_CANNOT_SURVIVE_ON",
+			"fabric": "SNOW_LAYER_CANNOT_SURVIVE_ON"
+		},
+		{
+			"forge": "SNOW_LAYER_CAN_SURVIVE_ON",
+			"fabric": "SNOW_LAYER_CAN_SURVIVE_ON"
+		},
+		{
+			"forge": "INVALID_SPAWN_INSIDE",
+			"fabric": "INVALID_SPAWN_INSIDE"
+		},
+		{
+			"forge": "SNIFFER_DIGGABLE_BLOCK",
+			"fabric": "SNIFFER_DIGGABLE_BLOCK"
+		},
+		{
+			"forge": "SNIFFER_EGG_HATCH_BOOST",
+			"fabric": "SNIFFER_EGG_HATCH_BOOST"
+		},
+		{
+			"forge": "TRAIL_RUINS_REPLACEABLE",
+			"fabric": "TRAIL_RUINS_REPLACEABLE"
+		},
+		{
+			"forge": "REPLACEABLE",
+			"fabric": "REPLACEABLE"
+		},
+		{
+			"forge": "ENCHANTMENT_POWER_PROVIDER",
+			"fabric": "ENCHANTMENT_POWER_PROVIDER"
+		},
+		{
+			"forge": "ENCHANTMENT_POWER_TRANSMITTER",
+			"fabric": "ENCHANTMENT_POWER_TRANSMITTER"
+		},
+		{
+			"forge": "MAINTAINS_FARMLAND",
+			"fabric": "MAINTAINS_FARMLAND"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

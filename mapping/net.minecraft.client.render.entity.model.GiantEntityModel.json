@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.model.GiantZombieModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.GiantZombieModel",
+			"fabric": "net.minecraft.client.render.entity.model.GiantEntityModel"
+		},
+		{
+			"forge": "isAggressive(Giant arg0)",
+			"fabric": "isAttacking(GiantEntity arg0)"
+		},
+		{
+			"forge": "isAggressive(Giant arg0)",
+			"fabric": "isAttacking(GiantEntity arg0)"
+		}
+	]
+}

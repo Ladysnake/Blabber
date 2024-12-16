@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetInstrumentFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetInstrumentFunction",
+			"fabric": "net.minecraft.loot.function.SetInstrumentLootFunction"
+		},
+		{
+			"forge": "options",
+			"fabric": "options"
+		},
+		{
+			"forge": "options",
+			"fabric": "options"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "setInstrumentOptions(TagKey<Instrument> arg0)",
+			"fabric": "builder(TagKey<Instrument> options)"
+		}
+	]
+}

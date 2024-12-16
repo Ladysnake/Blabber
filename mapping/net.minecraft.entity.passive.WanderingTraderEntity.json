@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.entity.npc.WanderingTrader",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.WanderingTrader",
+			"fabric": "net.minecraft.entity.passive.WanderingTraderEntity"
+		},
+		{
+			"forge": "NUMBER_OF_TRADE_OFFERS",
+			"fabric": "field_30629"
+		},
+		{
+			"forge": "NUMBER_OF_TRADE_OFFERS",
+			"fabric": "field_30629"
+		},
+		{
+			"forge": "wanderTarget",
+			"fabric": "wanderTarget"
+		},
+		{
+			"forge": "despawnDelay",
+			"fabric": "despawnDelay"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "showProgressBar()",
+			"fabric": "isLeveledMerchant()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "updateTrades()",
+			"fabric": "fillRecipes()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "removeWhenFarAway(double arg0)",
+			"fabric": "canImmediatelyDespawn(double arg0)"
+		},
+		{
+			"forge": "rewardTradeXp(MerchantOffer arg0)",
+			"fabric": "afterUsing(TradeOffer arg0)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getDrinkingSound(ItemStack arg0)",
+			"fabric": "getDrinkSound(ItemStack arg0)"
+		},
+		{
+			"forge": "getTradeUpdatedSound(boolean arg0)",
+			"fabric": "getTradingSound(boolean arg0)"
+		},
+		{
+			"forge": "getNotifyTradeSound()",
+			"fabric": "getYesSound()"
+		},
+		{
+			"forge": "setDespawnDelay(int arg0)",
+			"fabric": "setDespawnDelay(int despawnDelay)"
+		},
+		{
+			"forge": "getDespawnDelay()",
+			"fabric": "getDespawnDelay()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "maybeDespawn()",
+			"fabric": "tickDespawnDelay()"
+		},
+		{
+			"forge": "setWanderTarget(BlockPos arg0)",
+			"fabric": "setWanderTarget(BlockPos wanderTarget)"
+		},
+		{
+			"forge": "getWanderTarget()",
+			"fabric": "getWanderTarget()"
+		}
+	]
+}

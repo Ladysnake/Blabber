@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.AbuseReportSender",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.AbuseReportSender",
+			"fabric": "net.minecraft.client.report.AbuseReportSender"
+		},
+		{
+			"forge": "create(ReportEnvironment arg0, com.mojang.authlib.minecraft.UserApiService arg1)",
+			"fabric": "create(ReporterEnvironment environment, com.mojang.authlib.minecraft.UserApiService userApiService)"
+		},
+		{
+			"forge": "create(ReportEnvironment arg0, com.mojang.authlib.minecraft.UserApiService arg1)",
+			"fabric": "create(ReporterEnvironment environment, com.mojang.authlib.minecraft.UserApiService userApiService)"
+		},
+		{
+			"forge": "send(UUID arg0, com.mojang.authlib.minecraft.report.AbuseReport arg1)",
+			"fabric": "send(UUID id, com.mojang.authlib.minecraft.report.AbuseReport report)"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "canSendReports()"
+		},
+		{
+			"forge": "reportLimits()",
+			"fabric": "getLimits()"
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.level.block.AbstractCauldronBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.AbstractCauldronBlock",
+			"fabric": "net.minecraft.block.AbstractCauldronBlock"
+		},
+		{
+			"forge": "SIDE_THICKNESS",
+			"fabric": "field_30989"
+		},
+		{
+			"forge": "SIDE_THICKNESS",
+			"fabric": "field_30989"
+		},
+		{
+			"forge": "LEG_WIDTH",
+			"fabric": "field_30990"
+		},
+		{
+			"forge": "LEG_HEIGHT",
+			"fabric": "field_30991"
+		},
+		{
+			"forge": "LEG_DEPTH",
+			"fabric": "field_30992"
+		},
+		{
+			"forge": "FLOOR_LEVEL",
+			"fabric": "field_30988"
+		},
+		{
+			"forge": "INSIDE",
+			"fabric": "RAYCAST_SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "OUTLINE_SHAPE"
+		},
+		{
+			"forge": "interactions",
+			"fabric": "behaviorMap"
+		},
+		{
+			"forge": "getContentHeight(BlockState arg0)",
+			"fabric": "getFluidHeight(BlockState state)"
+		},
+		{
+			"forge": "getContentHeight(BlockState arg0)",
+			"fabric": "getFluidHeight(BlockState state)"
+		},
+		{
+			"forge": "isEntityInsideContent(BlockState arg0, BlockPos arg1, Entity arg2)",
+			"fabric": "isEntityTouchingFluid(BlockState state, BlockPos pos, Entity entity)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getInteractionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getRaycastShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "hasAnalogOutputSignal(BlockState arg0)",
+			"fabric": "hasComparatorOutput(BlockState arg0)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "isFull(BlockState arg0)",
+			"fabric": "isFull(BlockState state)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "canReceiveStalactiteDrip(Fluid arg0)",
+			"fabric": "canBeFilledByDripstone(Fluid fluid)"
+		},
+		{
+			"forge": "receiveStalactiteDrip(BlockState arg0, Level arg1, BlockPos arg2, Fluid arg3)",
+			"fabric": "fillFromDripstone(BlockState state, World world, BlockPos pos, Fluid fluid)"
+		}
+	]
+}

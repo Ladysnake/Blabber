@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.block.SculkBehaviour",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SculkBehaviour",
+			"fabric": "net.minecraft.block.SculkSpreadable"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "VEIN_ONLY_SPREADER"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "VEIN_ONLY_SPREADER"
+		},
+		{
+			"forge": "getSculkSpreadDelay()",
+			"fabric": "getUpdate()"
+		},
+		{
+			"forge": "getSculkSpreadDelay()",
+			"fabric": "getUpdate()"
+		},
+		{
+			"forge": "onDischarged(LevelAccessor arg0, BlockState arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "spreadAtSamePosition(WorldAccess world, BlockState state, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "depositCharge(LevelAccessor arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "method_41470(WorldAccess world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "attemptSpreadVein(LevelAccessor arg0, BlockPos arg1, BlockState arg2, Collection<Direction> arg3, boolean arg4)",
+			"fabric": "spread(WorldAccess world, BlockPos pos, BlockState state, Collection<Direction> directions, boolean markForPostProcessing)"
+		},
+		{
+			"forge": "canChangeBlockStateOnSpread()",
+			"fabric": "shouldConvertToSpreadable()"
+		},
+		{
+			"forge": "updateDecayDelay(int arg0)",
+			"fabric": "getDecay(int oldDecay)"
+		},
+		{
+			"forge": "attemptUseCharge(SculkSpreader$ChargeCursor arg0, LevelAccessor arg1, BlockPos arg2, RandomSource arg3, SculkSpreader arg4, boolean arg5)",
+			"fabric": "spread(SculkSpreadManager$Cursor cursor, WorldAccess world, BlockPos catalystPos, Random random, SculkSpreadManager spreadManager, boolean shouldConvertToBlock)"
+		}
+	]
+}

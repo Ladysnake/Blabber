@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$OceanMonumentEntryRoom",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$OceanMonumentEntryRoom",
+			"fabric": "net.minecraft.structure.OceanMonumentGenerator$Entry"
+		},
+		{
+			"forge": "postProcess(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, ChunkPos arg5, BlockPos arg6)",
+			"fabric": "generate(StructureWorldAccess arg0, StructureAccessor arg1, ChunkGenerator arg2, Random arg3, BlockBox arg4, ChunkPos arg5, BlockPos arg6)"
+		},
+		{
+			"forge": "postProcess(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, ChunkPos arg5, BlockPos arg6)",
+			"fabric": "generate(StructureWorldAccess arg0, StructureAccessor arg1, ChunkGenerator arg2, Random arg3, BlockBox arg4, ChunkPos arg5, BlockPos arg6)"
+		}
+	]
+}

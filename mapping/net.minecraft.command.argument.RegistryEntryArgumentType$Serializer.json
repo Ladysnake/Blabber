@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.commands.arguments.ResourceArgument$Info",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.ResourceArgument$Info",
+			"fabric": "net.minecraft.command.argument.RegistryEntryArgumentType$Serializer"
+		},
+		{
+			"forge": "serializeToNetwork(ResourceArgument$Info<T>.Template arg0, FriendlyByteBuf arg1)",
+			"fabric": "writePacket(RegistryEntryArgumentType$Serializer<T>.Properties arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "serializeToNetwork(ResourceArgument$Info<T>.Template arg0, FriendlyByteBuf arg1)",
+			"fabric": "writePacket(RegistryEntryArgumentType$Serializer<T>.Properties arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "deserializeFromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "serializeToJson(ResourceArgument$Info<T>.Template arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "writeJson(RegistryEntryArgumentType$Serializer<T>.Properties arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "unpack(ResourceArgument<T> arg0)",
+			"fabric": "getArgumentTypeProperties(RegistryEntryArgumentType<T> arg0)"
+		}
+	]
+}

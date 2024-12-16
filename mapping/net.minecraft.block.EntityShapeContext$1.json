@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.phys.shapes.EntityCollisionContext$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.EntityCollisionContext$1",
+			"fabric": "net.minecraft.block.EntityShapeContext$1"
+		},
+		{
+			"forge": "isAbove(VoxelShape arg0, BlockPos arg1, boolean arg2)",
+			"fabric": "isAbove(VoxelShape arg0, BlockPos arg1, boolean arg2)"
+		},
+		{
+			"forge": "isAbove(VoxelShape arg0, BlockPos arg1, boolean arg2)",
+			"fabric": "isAbove(VoxelShape arg0, BlockPos arg1, boolean arg2)"
+		}
+	]
+}

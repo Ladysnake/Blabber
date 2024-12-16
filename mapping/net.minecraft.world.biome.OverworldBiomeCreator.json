@@ -1,0 +1,189 @@
+{
+	"title": "net.minecraft.data.worldgen.biome.OverworldBiomes",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.biome.OverworldBiomes",
+			"fabric": "net.minecraft.world.biome.OverworldBiomeCreator"
+		},
+		{
+			"forge": "NORMAL_WATER_COLOR",
+			"fabric": "DEFAULT_WATER_COLOR"
+		},
+		{
+			"forge": "NORMAL_WATER_COLOR",
+			"fabric": "DEFAULT_WATER_COLOR"
+		},
+		{
+			"forge": "NORMAL_WATER_FOG_COLOR",
+			"fabric": "DEFAULT_WATER_FOG_COLOR"
+		},
+		{
+			"forge": "OVERWORLD_FOG_COLOR",
+			"fabric": "DEFAULT_FOG_COLOR"
+		},
+		{
+			"forge": "NORMAL_MUSIC",
+			"fabric": "DEFAULT_MUSIC"
+		},
+		{
+			"forge": "calculateSkyColor(float arg0)",
+			"fabric": "getSkyColor(float temperature)"
+		},
+		{
+			"forge": "calculateSkyColor(float arg0)",
+			"fabric": "getSkyColor(float temperature)"
+		},
+		{
+			"forge": "biome(boolean arg0, float arg1, float arg2, MobSpawnSettings$Builder arg3, BiomeGenerationSettings$Builder arg4, Music arg5)",
+			"fabric": "createBiome(boolean precipitation, float temperature, float downfall, SpawnSettings$Builder spawnSettings, GenerationSettings$LookupBackedBuilder generationSettings, MusicSound music)"
+		},
+		{
+			"forge": "biome(boolean arg0, float arg1, float arg2, int arg3, int arg4, Integer arg5, Integer arg6, MobSpawnSettings$Builder arg7, BiomeGenerationSettings$Builder arg8, Music arg9)",
+			"fabric": "createBiome(boolean precipitation, float temperature, float downfall, int waterColor, int waterFogColor, Integer grassColor, Integer foliageColor, SpawnSettings$Builder spawnSettings, GenerationSettings$LookupBackedBuilder generationSettings, MusicSound music)"
+		},
+		{
+			"forge": "globalOverworldGeneration(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addBasicFeatures(GenerationSettings$LookupBackedBuilder generationSettings)"
+		},
+		{
+			"forge": "oldGrowthTaiga(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createOldGrowthTaiga(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean spruce)"
+		},
+		{
+			"forge": "sparseJungle(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createSparseJungle(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "jungle(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createJungle(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "bambooJungle(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createNormalBambooJungle(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "baseJungle(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, float arg2, boolean arg3, boolean arg4, boolean arg5, MobSpawnSettings$Builder arg6, Music arg7)",
+			"fabric": "createJungleFeatures(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, float depth, boolean bamboo, boolean sparse, boolean unmodified, SpawnSettings$Builder spawnSettings, MusicSound music)"
+		},
+		{
+			"forge": "windsweptHills(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createWindsweptHills(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean forest)"
+		},
+		{
+			"forge": "desert(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createDesert(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "plains(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2, boolean arg3, boolean arg4)",
+			"fabric": "createPlains(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean sunflower, boolean snowy, boolean iceSpikes)"
+		},
+		{
+			"forge": "mushroomFields(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createMushroomFields(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "savanna(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2, boolean arg3)",
+			"fabric": "createSavanna(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean windswept, boolean plateau)"
+		},
+		{
+			"forge": "badlands(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createBadlands(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean plateau)"
+		},
+		{
+			"forge": "baseOcean(MobSpawnSettings$Builder arg0, int arg1, int arg2, BiomeGenerationSettings$Builder arg3)",
+			"fabric": "createOcean(SpawnSettings$Builder spawnSettings, int waterColor, int waterFogColor, GenerationSettings$LookupBackedBuilder generationSettings)"
+		},
+		{
+			"forge": "baseOceanGeneration(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createOceanGenerationSettings(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "coldOcean(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createColdOcean(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean deep)"
+		},
+		{
+			"forge": "ocean(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createNormalOcean(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean deep)"
+		},
+		{
+			"forge": "lukeWarmOcean(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createLukewarmOcean(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean deep)"
+		},
+		{
+			"forge": "warmOcean(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createWarmOcean(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "frozenOcean(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createFrozenOcean(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean deep)"
+		},
+		{
+			"forge": "forest(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2, boolean arg3, boolean arg4)",
+			"fabric": "createNormalForest(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean birch, boolean oldGrowth, boolean flower)"
+		},
+		{
+			"forge": "taiga(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createTaiga(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean snowy)"
+		},
+		{
+			"forge": "darkForest(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createDarkForest(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "swamp(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createSwamp(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "mangroveSwamp(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createMangroveSwamp(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "river(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createRiver(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean frozen)"
+		},
+		{
+			"forge": "beach(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2, boolean arg3)",
+			"fabric": "createBeach(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean snowy, boolean stony)"
+		},
+		{
+			"forge": "theVoid(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createTheVoid(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "meadowOrCherryGrove(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1, boolean arg2)",
+			"fabric": "createMeadow(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup, boolean cherryGrove)"
+		},
+		{
+			"forge": "frozenPeaks(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createFrozenPeaks(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "jaggedPeaks(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createJaggedPeaks(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "stonyPeaks(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createStonyPeaks(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "snowySlopes(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createSnowySlopes(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "grove(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createGrove(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "lushCaves(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createLushCaves(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "dripstoneCaves(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createDripstoneCaves(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		},
+		{
+			"forge": "deepDark(HolderGetter<PlacedFeature> arg0, HolderGetter<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "createDeepDark(RegistryEntryLookup<PlacedFeature> featureLookup, RegistryEntryLookup<ConfiguredCarver<?>> carverLookup)"
+		}
+	]
+}

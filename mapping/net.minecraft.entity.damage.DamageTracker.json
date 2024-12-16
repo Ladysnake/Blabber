@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.damagesource.CombatTracker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.damagesource.CombatTracker",
+			"fabric": "net.minecraft.entity.damage.DamageTracker"
+		},
+		{
+			"forge": "RESET_DAMAGE_STATUS_TIME",
+			"fabric": "DAMAGE_COOLDOWN"
+		},
+		{
+			"forge": "RESET_DAMAGE_STATUS_TIME",
+			"fabric": "DAMAGE_COOLDOWN"
+		},
+		{
+			"forge": "RESET_COMBAT_STATUS_TIME",
+			"fabric": "ATTACK_DAMAGE_COOLDOWN"
+		},
+		{
+			"forge": "INTENTIONAL_GAME_DESIGN_STYLE",
+			"fabric": "INTENTIONAL_GAME_DESIGN_ISSUE_LINK_STYLE"
+		},
+		{
+			"forge": "entries",
+			"fabric": "recentDamage"
+		},
+		{
+			"forge": "mob",
+			"fabric": "entity"
+		},
+		{
+			"forge": "lastDamageTime",
+			"fabric": "ageOnLastDamage"
+		},
+		{
+			"forge": "combatStartTime",
+			"fabric": "ageOnLastAttacked"
+		},
+		{
+			"forge": "combatEndTime",
+			"fabric": "ageOnLastUpdate"
+		},
+		{
+			"forge": "inCombat",
+			"fabric": "recentlyAttacked"
+		},
+		{
+			"forge": "takingDamage",
+			"fabric": "hasDamage"
+		},
+		{
+			"forge": "recordDamage(DamageSource arg0, float arg1)",
+			"fabric": "onDamage(DamageSource damageSource, float damage)"
+		},
+		{
+			"forge": "recordDamage(DamageSource arg0, float arg1)",
+			"fabric": "onDamage(DamageSource damageSource, float damage)"
+		},
+		{
+			"forge": "shouldEnterCombat(DamageSource arg0)",
+			"fabric": "isAttackerLiving(DamageSource damageSource)"
+		},
+		{
+			"forge": "getMessageForAssistedFall(Entity arg0, Component arg1, String arg2, String arg3)",
+			"fabric": "getAttackedFallDeathMessage(Entity attacker, Text attackerDisplayName, String itemDeathTranslationKey, String deathTranslationKey)"
+		},
+		{
+			"forge": "getFallMessage(CombatEntry arg0, Entity arg1)",
+			"fabric": "getFallDeathMessage(DamageRecord damageRecord, Entity attacker)"
+		},
+		{
+			"forge": "getDisplayName(Entity arg0)",
+			"fabric": "getDisplayName(Entity entity)"
+		},
+		{
+			"forge": "getDeathMessage()",
+			"fabric": "getDeathMessage()"
+		},
+		{
+			"forge": "getMostSignificantFall()",
+			"fabric": "getBiggestFall()"
+		},
+		{
+			"forge": "getCombatDuration()",
+			"fabric": "getTimeSinceLastAttack()"
+		},
+		{
+			"forge": "recheckStatus()",
+			"fabric": "update()"
+		}
+	]
+}

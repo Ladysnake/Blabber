@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.scores.criteria.ObjectiveCriteria$RenderType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.scores.criteria.ObjectiveCriteria$RenderType",
+			"fabric": "net.minecraft.scoreboard.ScoreboardCriterion$RenderType"
+		},
+		{
+			"forge": "INTEGER",
+			"fabric": "INTEGER"
+		},
+		{
+			"forge": "INTEGER",
+			"fabric": "INTEGER"
+		},
+		{
+			"forge": "HEARTS",
+			"fabric": "HEARTS"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "byId(String arg0)",
+			"fabric": "getType(String name)"
+		}
+	]
+}

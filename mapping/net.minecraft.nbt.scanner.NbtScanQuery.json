@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.nbt.visitors.FieldSelector",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.visitors.FieldSelector",
+			"fabric": "net.minecraft.nbt.scanner.NbtScanQuery"
+		},
+		{
+			"forge": "path",
+			"fabric": "path"
+		},
+		{
+			"forge": "path",
+			"fabric": "path"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "name",
+			"fabric": "key"
+		},
+		{
+			"forge": "path()",
+			"fabric": "path()"
+		},
+		{
+			"forge": "path()",
+			"fabric": "path()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "key()"
+		}
+	]
+}

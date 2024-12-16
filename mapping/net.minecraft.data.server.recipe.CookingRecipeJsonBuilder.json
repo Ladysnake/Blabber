@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.data.recipes.SimpleCookingRecipeBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.SimpleCookingRecipeBuilder",
+			"fabric": "net.minecraft.data.server.recipe.CookingRecipeJsonBuilder"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "bookCategory",
+			"fabric": "cookingCategory"
+		},
+		{
+			"forge": "result",
+			"fabric": "output"
+		},
+		{
+			"forge": "ingredient",
+			"fabric": "input"
+		},
+		{
+			"forge": "experience",
+			"fabric": "experience"
+		},
+		{
+			"forge": "cookingTime",
+			"fabric": "cookingTime"
+		},
+		{
+			"forge": "advancement",
+			"fabric": "advancementBuilder"
+		},
+		{
+			"forge": "group",
+			"fabric": "group"
+		},
+		{
+			"forge": "serializer",
+			"fabric": "serializer"
+		},
+		{
+			"forge": "generic(Ingredient arg0, RecipeCategory arg1, ItemLike arg2, float arg3, int arg4, RecipeSerializer<? extends AbstractCookingRecipe> arg5)",
+			"fabric": "create(Ingredient input, RecipeCategory category, ItemConvertible output, float experience, int cookingTime, RecipeSerializer<? extends AbstractCookingRecipe> serializer)"
+		},
+		{
+			"forge": "generic(Ingredient arg0, RecipeCategory arg1, ItemLike arg2, float arg3, int arg4, RecipeSerializer<? extends AbstractCookingRecipe> arg5)",
+			"fabric": "create(Ingredient input, RecipeCategory category, ItemConvertible output, float experience, int cookingTime, RecipeSerializer<? extends AbstractCookingRecipe> serializer)"
+		},
+		{
+			"forge": "campfireCooking(Ingredient arg0, RecipeCategory arg1, ItemLike arg2, float arg3, int arg4)",
+			"fabric": "createCampfireCooking(Ingredient input, RecipeCategory category, ItemConvertible output, float experience, int cookingTime)"
+		},
+		{
+			"forge": "blasting(Ingredient arg0, RecipeCategory arg1, ItemLike arg2, float arg3, int arg4)",
+			"fabric": "createBlasting(Ingredient input, RecipeCategory category, ItemConvertible output, float experience, int cookingTime)"
+		},
+		{
+			"forge": "smelting(Ingredient arg0, RecipeCategory arg1, ItemLike arg2, float arg3, int arg4)",
+			"fabric": "createSmelting(Ingredient input, RecipeCategory category, ItemConvertible output, float experience, int cookingTime)"
+		},
+		{
+			"forge": "smoking(Ingredient arg0, RecipeCategory arg1, ItemLike arg2, float arg3, int arg4)",
+			"fabric": "createSmoking(Ingredient input, RecipeCategory category, ItemConvertible output, float experience, int cookingTime)"
+		},
+		{
+			"forge": "unlockedBy(String arg0, CriterionTriggerInstance arg1)",
+			"fabric": "criterion(String arg0, CriterionConditions arg1)"
+		},
+		{
+			"forge": "group(String arg0)",
+			"fabric": "group(String arg0)"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getOutputItem()"
+		},
+		{
+			"forge": "save(Consumer<FinishedRecipe> arg0, ResourceLocation arg1)",
+			"fabric": "offerTo(Consumer<RecipeJsonProvider> arg0, Identifier arg1)"
+		},
+		{
+			"forge": "determineSmeltingRecipeCategory(ItemLike arg0)",
+			"fabric": "getSmeltingRecipeCategory(ItemConvertible output)"
+		},
+		{
+			"forge": "determineBlastingRecipeCategory(ItemLike arg0)",
+			"fabric": "getBlastingRecipeCategory(ItemConvertible output)"
+		},
+		{
+			"forge": "determineRecipeCategory(RecipeSerializer<? extends AbstractCookingRecipe> arg0, ItemLike arg1)",
+			"fabric": "getCookingRecipeCategory(RecipeSerializer<? extends AbstractCookingRecipe> serializer, ItemConvertible output)"
+		},
+		{
+			"forge": "ensureValid(ResourceLocation arg0)",
+			"fabric": "validate(Identifier recipeId)"
+		}
+	]
+}

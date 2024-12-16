@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.client.RealmsError",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.client.RealmsError",
+			"fabric": "net.minecraft.client.realms.RealmsError"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "errorMessage",
+			"fabric": "errorMessage"
+		},
+		{
+			"forge": "errorCode",
+			"fabric": "errorCode"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "create(String error)"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "create(String error)"
+		},
+		{
+			"forge": "getErrorMessage()",
+			"fabric": "getErrorMessage()"
+		},
+		{
+			"forge": "getErrorCode()",
+			"fabric": "getErrorCode()"
+		}
+	]
+}

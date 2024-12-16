@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.packs.repository.PackCompatibility",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.repository.PackCompatibility",
+			"fabric": "net.minecraft.resource.ResourcePackCompatibility"
+		},
+		{
+			"forge": "TOO_OLD",
+			"fabric": "TOO_OLD"
+		},
+		{
+			"forge": "TOO_OLD",
+			"fabric": "TOO_OLD"
+		},
+		{
+			"forge": "TOO_NEW",
+			"fabric": "TOO_NEW"
+		},
+		{
+			"forge": "COMPATIBLE",
+			"fabric": "COMPATIBLE"
+		},
+		{
+			"forge": "description",
+			"fabric": "notification"
+		},
+		{
+			"forge": "description",
+			"fabric": "notification"
+		},
+		{
+			"forge": "confirmation",
+			"fabric": "confirmMessage"
+		},
+		{
+			"forge": "isCompatible()",
+			"fabric": "isCompatible()"
+		},
+		{
+			"forge": "isCompatible()",
+			"fabric": "isCompatible()"
+		},
+		{
+			"forge": "forFormat(int arg0, PackType arg1)",
+			"fabric": "from(int packVersion, ResourceType type)"
+		},
+		{
+			"forge": "getDescription()",
+			"fabric": "getNotification()"
+		},
+		{
+			"forge": "getConfirmation()",
+			"fabric": "getConfirmMessage()"
+		}
+	]
+}

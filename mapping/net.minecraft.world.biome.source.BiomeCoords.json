@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.core.QuartPos",
+	"items": [
+		{
+			"forge": "net.minecraft.core.QuartPos",
+			"fabric": "net.minecraft.world.biome.source.BiomeCoords"
+		},
+		{
+			"forge": "BITS",
+			"fabric": "field_33089"
+		},
+		{
+			"forge": "BITS",
+			"fabric": "field_33089"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "field_33090"
+		},
+		{
+			"forge": "MASK",
+			"fabric": "field_34830"
+		},
+		{
+			"forge": "SECTION_TO_QUARTS_BITS",
+			"fabric": "field_33091"
+		},
+		{
+			"forge": "fromBlock(int arg0)",
+			"fabric": "fromBlock(int blockCoord)"
+		},
+		{
+			"forge": "fromBlock(int arg0)",
+			"fabric": "fromBlock(int blockCoord)"
+		},
+		{
+			"forge": "quartLocal(int arg0)",
+			"fabric": "method_39920(int arg0)"
+		},
+		{
+			"forge": "toBlock(int arg0)",
+			"fabric": "toBlock(int biomeCoord)"
+		},
+		{
+			"forge": "fromSection(int arg0)",
+			"fabric": "fromChunk(int chunkCoord)"
+		},
+		{
+			"forge": "toSection(int arg0)",
+			"fabric": "toChunk(int biomeCoord)"
+		}
+	]
+}

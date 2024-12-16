@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.entity.PandaRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.PandaRenderer",
+			"fabric": "net.minecraft.client.render.entity.PandaEntityRenderer"
+		},
+		{
+			"forge": "TEXTURES",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "TEXTURES",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "getTextureLocation(Panda arg0)",
+			"fabric": "getTexture(PandaEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Panda arg0)",
+			"fabric": "getTexture(PandaEntity arg0)"
+		},
+		{
+			"forge": "setupRotations(Panda arg0, PoseStack arg1, float arg2, float arg3, float arg4)",
+			"fabric": "setupTransforms(PandaEntity arg0, MatrixStack arg1, float arg2, float arg3, float arg4)"
+		},
+		{
+			"forge": "getAngle(float arg0, float arg1, int arg2, float arg3, float arg4)",
+			"fabric": "getAngle(float arg0, float arg1, int arg2, float arg3, float arg4)"
+		}
+	]
+}

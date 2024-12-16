@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket$AttributeSnapshot",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket$AttributeSnapshot",
+			"fabric": "net.minecraft.network.packet.s2c.play.EntityAttributesS2CPacket$Entry"
+		},
+		{
+			"forge": "attribute",
+			"fabric": "attribute"
+		},
+		{
+			"forge": "attribute",
+			"fabric": "attribute"
+		},
+		{
+			"forge": "base",
+			"fabric": "baseValue"
+		},
+		{
+			"forge": "modifiers",
+			"fabric": "modifiers"
+		},
+		{
+			"forge": "getAttribute()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getAttribute()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getBase()",
+			"fabric": "getBaseValue()"
+		},
+		{
+			"forge": "getModifiers()",
+			"fabric": "getModifiers()"
+		}
+	]
+}

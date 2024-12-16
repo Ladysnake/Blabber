@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.biome.BiomeManager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.BiomeManager",
+			"fabric": "net.minecraft.world.biome.source.BiomeAccess"
+		},
+		{
+			"forge": "CHUNK_CENTER_QUART",
+			"fabric": "CHUNK_CENTER_OFFSET"
+		},
+		{
+			"forge": "CHUNK_CENTER_QUART",
+			"fabric": "CHUNK_CENTER_OFFSET"
+		},
+		{
+			"forge": "ZOOM_BITS",
+			"fabric": "field_34466"
+		},
+		{
+			"forge": "ZOOM",
+			"fabric": "field_34467"
+		},
+		{
+			"forge": "ZOOM_MASK",
+			"fabric": "field_34468"
+		},
+		{
+			"forge": "noiseBiomeSource",
+			"fabric": "storage"
+		},
+		{
+			"forge": "biomeZoomSeed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "obfuscateSeed(long arg0)",
+			"fabric": "hashSeed(long seed)"
+		},
+		{
+			"forge": "obfuscateSeed(long arg0)",
+			"fabric": "hashSeed(long seed)"
+		},
+		{
+			"forge": "withDifferentSource(BiomeManager$NoiseBiomeSource arg0)",
+			"fabric": "withSource(BiomeAccess$Storage storage)"
+		},
+		{
+			"forge": "getBiome(BlockPos arg0)",
+			"fabric": "getBiome(BlockPos pos)"
+		},
+		{
+			"forge": "getNoiseBiomeAtPosition(double arg0, double arg1, double arg2)",
+			"fabric": "getBiomeForNoiseGen(double x, double y, double z)"
+		},
+		{
+			"forge": "getNoiseBiomeAtPosition(BlockPos arg0)",
+			"fabric": "getBiomeForNoiseGen(BlockPos pos)"
+		},
+		{
+			"forge": "getNoiseBiomeAtQuart(int arg0, int arg1, int arg2)",
+			"fabric": "getBiomeForNoiseGen(int biomeX, int biomeY, int biomeZ)"
+		},
+		{
+			"forge": "getFiddledDistance(long arg0, int arg1, int arg2, int arg3, double arg4, double arg5, double arg6)",
+			"fabric": "method_38106(long arg0, int arg1, int arg2, int arg3, double arg4, double arg5, double arg6)"
+		},
+		{
+			"forge": "getFiddle(long arg0)",
+			"fabric": "method_38108(long arg0)"
+		}
+	]
+}

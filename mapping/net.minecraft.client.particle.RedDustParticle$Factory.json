@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.particle.DustParticle$Provider",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.DustParticle$Provider",
+			"fabric": "net.minecraft.client.particle.RedDustParticle$Factory"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "createParticle(DustParticleOptions arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createParticle(DustParticleEffect arg0, ClientWorld arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)"
+		},
+		{
+			"forge": "createParticle(DustParticleOptions arg0, ClientLevel arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "createParticle(DustParticleEffect arg0, ClientWorld arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)"
+		}
+	]
+}

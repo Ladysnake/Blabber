@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.animal.Sheep$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Sheep$1",
+			"fabric": "net.minecraft.entity.passive.SheepEntity$1"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		}
+	]
+}

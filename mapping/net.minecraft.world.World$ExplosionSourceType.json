@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.Level$ExplosionInteraction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.Level$ExplosionInteraction",
+			"fabric": "net.minecraft.world.World$ExplosionSourceType"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "BLOCK",
+			"fabric": "BLOCK"
+		},
+		{
+			"forge": "MOB",
+			"fabric": "MOB"
+		},
+		{
+			"forge": "TNT",
+			"fabric": "TNT"
+		}
+	]
+}

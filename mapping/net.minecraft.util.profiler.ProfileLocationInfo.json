@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.profiling.ProfilerPathEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.ProfilerPathEntry",
+			"fabric": "net.minecraft.util.profiler.ProfileLocationInfo"
+		},
+		{
+			"forge": "getDuration()",
+			"fabric": "getTotalTime()"
+		},
+		{
+			"forge": "getDuration()",
+			"fabric": "getTotalTime()"
+		},
+		{
+			"forge": "getMaxDuration()",
+			"fabric": "getMaxTime()"
+		},
+		{
+			"forge": "getCount()",
+			"fabric": "getVisitCount()"
+		},
+		{
+			"forge": "getCounters()",
+			"fabric": "getCounts()"
+		}
+	]
+}

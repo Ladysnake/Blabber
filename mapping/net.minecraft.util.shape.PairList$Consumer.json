@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.phys.shapes.IndexMerger$IndexConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.IndexMerger$IndexConsumer",
+			"fabric": "net.minecraft.util.shape.PairList$Consumer"
+		},
+		{
+			"forge": "merge(int arg0, int arg1, int arg2)",
+			"fabric": "merge(int x, int y, int index)"
+		},
+		{
+			"forge": "merge(int arg0, int arg1, int arg2)",
+			"fabric": "merge(int x, int y, int index)"
+		}
+	]
+}

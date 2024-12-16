@@ -1,0 +1,17 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$TextureState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$TextureState",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$Texture2DState"
+		},
+		{
+			"forge": "binding",
+			"fabric": "boundTexture"
+		},
+		{
+			"forge": "binding",
+			"fabric": "boundTexture"
+		}
+	]
+}

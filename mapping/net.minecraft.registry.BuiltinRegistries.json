@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.data.registries.VanillaRegistries",
+	"items": [
+		{
+			"forge": "net.minecraft.data.registries.VanillaRegistries",
+			"fabric": "net.minecraft.registry.BuiltinRegistries"
+		},
+		{
+			"forge": "BUILDER",
+			"fabric": "REGISTRY_BUILDER"
+		},
+		{
+			"forge": "BUILDER",
+			"fabric": "REGISTRY_BUILDER"
+		},
+		{
+			"forge": "validateThatAllBiomeFeaturesHaveBiomeFilter(HolderLookup$Provider arg0)",
+			"fabric": "validate(RegistryWrapper$WrapperLookup wrapperLookup)"
+		},
+		{
+			"forge": "validateThatAllBiomeFeaturesHaveBiomeFilter(HolderLookup$Provider arg0)",
+			"fabric": "validate(RegistryWrapper$WrapperLookup wrapperLookup)"
+		},
+		{
+			"forge": "validateThatAllBiomeFeaturesHaveBiomeFilter(HolderGetter<PlacedFeature> arg0, HolderLookup<Biome> arg1)",
+			"fabric": "validate(RegistryEntryLookup<PlacedFeature> placedFeatureLookup, RegistryWrapper<Biome> biomeLookup)"
+		},
+		{
+			"forge": "validatePlacedFeature(PlacedFeature arg0)",
+			"fabric": "hasBiomePlacementModifier(PlacedFeature placedFeature)"
+		},
+		{
+			"forge": "createLookup()",
+			"fabric": "createWrapperLookup()"
+		}
+	]
+}

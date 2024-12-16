@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetPotionFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetPotionFunction",
+			"fabric": "net.minecraft.loot.function.SetPotionLootFunction"
+		},
+		{
+			"forge": "potion",
+			"fabric": "potion"
+		},
+		{
+			"forge": "potion",
+			"fabric": "potion"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "setPotion(Potion arg0)",
+			"fabric": "builder(Potion potion)"
+		}
+	]
+}

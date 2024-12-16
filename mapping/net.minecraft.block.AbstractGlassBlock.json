@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.AbstractGlassBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.AbstractGlassBlock",
+			"fabric": "net.minecraft.block.AbstractGlassBlock"
+		},
+		{
+			"forge": "getVisualShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCameraCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getVisualShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCameraCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShadeBrightness(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getAmbientOcclusionLightLevel(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "propagatesSkylightDown(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "isTransparent(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		}
+	]
+}

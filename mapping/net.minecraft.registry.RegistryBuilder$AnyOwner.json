@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.core.RegistrySetBuilder$CompositeOwner",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistrySetBuilder$CompositeOwner",
+			"fabric": "net.minecraft.registry.RegistryBuilder$AnyOwner"
+		},
+		{
+			"forge": "owners",
+			"fabric": "owners"
+		},
+		{
+			"forge": "owners",
+			"fabric": "owners"
+		},
+		{
+			"forge": "canSerializeIn(HolderOwner<Object> arg0)",
+			"fabric": "ownerEquals(RegistryEntryOwner<Object> arg0)"
+		},
+		{
+			"forge": "canSerializeIn(HolderOwner<Object> arg0)",
+			"fabric": "ownerEquals(RegistryEntryOwner<Object> arg0)"
+		},
+		{
+			"forge": "add(HolderOwner<?> arg0)",
+			"fabric": "addOwner(RegistryEntryOwner<?> owner)"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.saveddata.maps.MapBanner",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.saveddata.maps.MapBanner",
+			"fabric": "net.minecraft.item.map.MapBannerMarker"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "fromWorld(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "fromWorldBlock(BlockView blockView, BlockPos blockPos)"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "getDecoration()",
+			"fabric": "getIconType()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "save()",
+			"fabric": "getNbt()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getKey()"
+		}
+	]
+}

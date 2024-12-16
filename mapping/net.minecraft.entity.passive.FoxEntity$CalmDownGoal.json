@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.animal.Fox$FoxBehaviorGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Fox$FoxBehaviorGoal",
+			"fabric": "net.minecraft.entity.passive.FoxEntity$CalmDownGoal"
+		},
+		{
+			"forge": "alertableTargeting",
+			"fabric": "WORRIABLE_ENTITY_PREDICATE"
+		},
+		{
+			"forge": "alertableTargeting",
+			"fabric": "WORRIABLE_ENTITY_PREDICATE"
+		},
+		{
+			"forge": "hasShelter()",
+			"fabric": "isAtFavoredLocation()"
+		},
+		{
+			"forge": "hasShelter()",
+			"fabric": "isAtFavoredLocation()"
+		},
+		{
+			"forge": "alertable()",
+			"fabric": "canCalmDown()"
+		}
+	]
+}

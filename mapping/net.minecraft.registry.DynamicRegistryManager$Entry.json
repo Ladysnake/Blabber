@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.core.RegistryAccess$RegistryEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistryAccess$RegistryEntry",
+			"fabric": "net.minecraft.registry.DynamicRegistryManager$Entry"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "fromMapEntry(Map$Entry<? extends ResourceKey<? extends Registry<?>>, R> arg0)",
+			"fabric": "of(Map$Entry<? extends RegistryKey<? extends Registry<?>>, R> entry)"
+		},
+		{
+			"forge": "fromMapEntry(Map$Entry<? extends ResourceKey<? extends Registry<?>>, R> arg0)",
+			"fabric": "of(Map$Entry<? extends RegistryKey<? extends Registry<?>>, R> entry)"
+		},
+		{
+			"forge": "fromUntyped(ResourceKey<? extends Registry<?>> arg0, Registry<?> arg1)",
+			"fabric": "of(RegistryKey<? extends Registry<?>> key, Registry<?> value)"
+		},
+		{
+			"forge": "freeze()",
+			"fabric": "freeze()"
+		},
+		{
+			"forge": "key()",
+			"fabric": "key()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		}
+	]
+}

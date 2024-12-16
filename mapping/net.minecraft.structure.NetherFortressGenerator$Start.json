@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.NetherFortressPieces$StartPiece",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.NetherFortressPieces$StartPiece",
+			"fabric": "net.minecraft.structure.NetherFortressGenerator$Start"
+		},
+		{
+			"forge": "previousPiece",
+			"fabric": "lastPiece"
+		},
+		{
+			"forge": "previousPiece",
+			"fabric": "lastPiece"
+		},
+		{
+			"forge": "availableBridgePieces",
+			"fabric": "bridgePieces"
+		},
+		{
+			"forge": "availableCastlePieces",
+			"fabric": "corridorPieces"
+		},
+		{
+			"forge": "pendingChildren",
+			"fabric": "pieces"
+		}
+	]
+}

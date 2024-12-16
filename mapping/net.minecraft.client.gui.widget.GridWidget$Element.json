@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.layouts.GridLayout$CellInhabitant",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.layouts.GridLayout$CellInhabitant",
+			"fabric": "net.minecraft.client.gui.widget.GridWidget$Element"
+		},
+		{
+			"forge": "row",
+			"fabric": "row"
+		},
+		{
+			"forge": "row",
+			"fabric": "row"
+		},
+		{
+			"forge": "column",
+			"fabric": "column"
+		},
+		{
+			"forge": "occupiedRows",
+			"fabric": "occupiedRows"
+		},
+		{
+			"forge": "occupiedColumns",
+			"fabric": "occupiedColumns"
+		},
+		{
+			"forge": "getLastOccupiedRow()",
+			"fabric": "getRowEnd()"
+		},
+		{
+			"forge": "getLastOccupiedRow()",
+			"fabric": "getRowEnd()"
+		},
+		{
+			"forge": "getLastOccupiedColumn()",
+			"fabric": "getColumnEnd()"
+		}
+	]
+}

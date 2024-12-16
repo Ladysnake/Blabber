@@ -1,0 +1,217 @@
+{
+	"title": "net.minecraft.world.item.SmithingTemplateItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.SmithingTemplateItem",
+			"fabric": "net.minecraft.item.SmithingTemplateItem"
+		},
+		{
+			"forge": "TITLE_FORMAT",
+			"fabric": "TITLE_FORMATTING"
+		},
+		{
+			"forge": "TITLE_FORMAT",
+			"fabric": "TITLE_FORMATTING"
+		},
+		{
+			"forge": "DESCRIPTION_FORMAT",
+			"fabric": "DESCRIPTION_FORMATTING"
+		},
+		{
+			"forge": "DESCRIPTION_ID",
+			"fabric": "TRANSLATION_KEY"
+		},
+		{
+			"forge": "INGREDIENTS_TITLE",
+			"fabric": "INGREDIENTS_TEXT"
+		},
+		{
+			"forge": "APPLIES_TO_TITLE",
+			"fabric": "APPLIES_TO_TEXT"
+		},
+		{
+			"forge": "NETHERITE_UPGRADE",
+			"fabric": "NETHERITE_UPGRADE_TEXT"
+		},
+		{
+			"forge": "ARMOR_TRIM_APPLIES_TO",
+			"fabric": "ARMOR_TRIM_APPLIES_TO_TEXT"
+		},
+		{
+			"forge": "ARMOR_TRIM_INGREDIENTS",
+			"fabric": "ARMOR_TRIM_INGREDIENTS_TEXT"
+		},
+		{
+			"forge": "ARMOR_TRIM_BASE_SLOT_DESCRIPTION",
+			"fabric": "ARMOR_TRIM_BASE_SLOT_DESCRIPTION_TEXT"
+		},
+		{
+			"forge": "ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION",
+			"fabric": "ARMOR_TRIM_ADDITIONS_SLOT_DESCRIPTION_TEXT"
+		},
+		{
+			"forge": "NETHERITE_UPGRADE_APPLIES_TO",
+			"fabric": "NETHERITE_UPGRADE_APPLIES_TO_TEXT"
+		},
+		{
+			"forge": "NETHERITE_UPGRADE_INGREDIENTS",
+			"fabric": "NETHERITE_UPGRADE_INGREDIENTS_TEXT"
+		},
+		{
+			"forge": "NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION",
+			"fabric": "NETHERITE_UPGRADE_BASE_SLOT_DESCRIPTION_TEXT"
+		},
+		{
+			"forge": "NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION",
+			"fabric": "NETHERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT"
+		},
+		{
+			"forge": "EMPTY_SLOT_HELMET",
+			"fabric": "EMPTY_ARMOR_SLOT_HELMET_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_CHESTPLATE",
+			"fabric": "EMPTY_ARMOR_SLOT_CHESTPLATE_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_LEGGINGS",
+			"fabric": "EMPTY_ARMOR_SLOT_LEGGINGS_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_BOOTS",
+			"fabric": "EMPTY_ARMOR_SLOT_BOOTS_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_HOE",
+			"fabric": "EMPTY_SLOT_HOE_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_AXE",
+			"fabric": "EMPTY_SLOT_AXE_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_SWORD",
+			"fabric": "EMPTY_SLOT_SWORD_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_SHOVEL",
+			"fabric": "EMPTY_SLOT_SHOVEL_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_PICKAXE",
+			"fabric": "EMPTY_SLOT_PICKAXE_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_INGOT",
+			"fabric": "EMPTY_SLOT_INGOT_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_REDSTONE_DUST",
+			"fabric": "EMPTY_SLOT_REDSTONE_DUST_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_QUARTZ",
+			"fabric": "EMPTY_SLOT_QUARTZ_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_EMERALD",
+			"fabric": "EMPTY_SLOT_EMERALD_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_DIAMOND",
+			"fabric": "EMPTY_SLOT_DIAMOND_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_LAPIS_LAZULI",
+			"fabric": "EMPTY_SLOT_LAPIS_LAZULI_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_AMETHYST_SHARD",
+			"fabric": "EMPTY_SLOT_AMETHYST_SHARD_TEXTURE"
+		},
+		{
+			"forge": "appliesTo",
+			"fabric": "appliesToText"
+		},
+		{
+			"forge": "ingredients",
+			"fabric": "ingredientsText"
+		},
+		{
+			"forge": "upgradeDescription",
+			"fabric": "titleText"
+		},
+		{
+			"forge": "baseSlotDescription",
+			"fabric": "baseSlotDescriptionText"
+		},
+		{
+			"forge": "additionsSlotDescription",
+			"fabric": "additionsSlotDescriptionText"
+		},
+		{
+			"forge": "baseSlotEmptyIcons",
+			"fabric": "emptyBaseSlotTextures"
+		},
+		{
+			"forge": "additionalSlotEmptyIcons",
+			"fabric": "emptyAdditionsSlotTextures"
+		},
+		{
+			"forge": "createArmorTrimTemplate(ResourceKey<TrimPattern> arg0)",
+			"fabric": "of(RegistryKey<ArmorTrimPattern> trimPattern)"
+		},
+		{
+			"forge": "createArmorTrimTemplate(ResourceKey<TrimPattern> arg0)",
+			"fabric": "of(RegistryKey<ArmorTrimPattern> trimPattern)"
+		},
+		{
+			"forge": "createArmorTrimTemplate(ResourceLocation arg0)",
+			"fabric": "of(Identifier trimPatternIn)"
+		},
+		{
+			"forge": "createNetheriteUpgradeTemplate()",
+			"fabric": "createNetheriteUpgrade()"
+		},
+		{
+			"forge": "createTrimmableArmorIconList()",
+			"fabric": "getArmorTrimEmptyBaseSlotTextures()"
+		},
+		{
+			"forge": "createTrimmableMaterialIconList()",
+			"fabric": "getArmorTrimEmptyAdditionsSlotTextures()"
+		},
+		{
+			"forge": "createNetheriteUpgradeIconList()",
+			"fabric": "getNetheriteUpgradeEmptyBaseSlotTextures()"
+		},
+		{
+			"forge": "createNetheriteUpgradeMaterialList()",
+			"fabric": "getNetheriteUpgradeEmptyAdditionsSlotTextures()"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		},
+		{
+			"forge": "getBaseSlotDescription()",
+			"fabric": "getBaseSlotDescription()"
+		},
+		{
+			"forge": "getAdditionSlotDescription()",
+			"fabric": "getAdditionsSlotDescription()"
+		},
+		{
+			"forge": "getBaseSlotEmptyIcons()",
+			"fabric": "getEmptyBaseSlotTextures()"
+		},
+		{
+			"forge": "getAdditionalSlotEmptyIcons()",
+			"fabric": "getEmptyAdditionsSlotTextures()"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getTranslationKey()"
+		}
+	]
+}

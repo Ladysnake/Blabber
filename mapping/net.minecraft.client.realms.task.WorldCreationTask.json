@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.realmsclient.util.task.WorldCreationTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.WorldCreationTask",
+			"fabric": "net.minecraft.client.realms.task.WorldCreationTask"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "motd",
+			"fabric": "motd"
+		},
+		{
+			"forge": "worldId",
+			"fabric": "worldId"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "lastScreen"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.commands.PardonIpCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.PardonIpCommand",
+			"fabric": "net.minecraft.server.dedicated.command.PardonIpCommand"
+		},
+		{
+			"forge": "ERROR_INVALID",
+			"fabric": "INVALID_IP_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INVALID",
+			"fabric": "INVALID_IP_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NOT_BANNED",
+			"fabric": "ALREADY_UNBANNED_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "unban(CommandSourceStack arg0, String arg1)",
+			"fabric": "pardonIp(ServerCommandSource source, String target)"
+		}
+	]
+}

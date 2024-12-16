@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.PanicGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.PanicGoal",
+			"fabric": "net.minecraft.entity.ai.goal.EscapeDangerGoal"
+		},
+		{
+			"forge": "WATER_CHECK_DISTANCE_VERTICAL",
+			"fabric": "RANGE_Y"
+		},
+		{
+			"forge": "WATER_CHECK_DISTANCE_VERTICAL",
+			"fabric": "RANGE_Y"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "posX",
+			"fabric": "targetX"
+		},
+		{
+			"forge": "posY",
+			"fabric": "targetY"
+		},
+		{
+			"forge": "posZ",
+			"fabric": "targetZ"
+		},
+		{
+			"forge": "isRunning",
+			"fabric": "active"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "shouldPanic()",
+			"fabric": "isInDanger()"
+		},
+		{
+			"forge": "findRandomPosition()",
+			"fabric": "findTarget()"
+		},
+		{
+			"forge": "isRunning()",
+			"fabric": "isActive()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "lookForWater(BlockGetter arg0, Entity arg1, int arg2)",
+			"fabric": "locateClosestWater(BlockView world, Entity entity, int rangeX)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.model.SkullModelBase",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.SkullModelBase",
+			"fabric": "net.minecraft.client.render.block.entity.SkullBlockEntityModel"
+		},
+		{
+			"forge": "setupAnim(float arg0, float arg1, float arg2)",
+			"fabric": "setHeadRotation(float animationProgress, float yaw, float pitch)"
+		},
+		{
+			"forge": "setupAnim(float arg0, float arg1, float arg2)",
+			"fabric": "setHeadRotation(float animationProgress, float yaw, float pitch)"
+		}
+	]
+}

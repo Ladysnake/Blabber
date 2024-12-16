@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.server.packs.repository.FolderRepositorySource",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.repository.FolderRepositorySource",
+			"fabric": "net.minecraft.resource.FileResourcePackProvider"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "folder",
+			"fabric": "packsDir"
+		},
+		{
+			"forge": "packType",
+			"fabric": "type"
+		},
+		{
+			"forge": "packSource",
+			"fabric": "source"
+		},
+		{
+			"forge": "nameFromPath(Path arg0)",
+			"fabric": "getFileName(Path path)"
+		},
+		{
+			"forge": "nameFromPath(Path arg0)",
+			"fabric": "getFileName(Path path)"
+		},
+		{
+			"forge": "loadPacks(Consumer<Pack> arg0)",
+			"fabric": "register(Consumer<ResourcePackProfile> arg0)"
+		},
+		{
+			"forge": "discoverPacks(Path arg0, boolean arg1, BiConsumer<Path, Pack$ResourcesSupplier> arg2)",
+			"fabric": "forEachProfile(Path packsDir, boolean alwaysStable, BiConsumer<Path, ResourcePackProfile$PackFactory> consumer)"
+		},
+		{
+			"forge": "detectPackResources(Path arg0, boolean arg1)",
+			"fabric": "getFactory(Path path, boolean alwaysStable)"
+		}
+	]
+}

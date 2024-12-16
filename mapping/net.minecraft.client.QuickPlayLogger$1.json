@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.quickplay.QuickPlayLog$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.quickplay.QuickPlayLog$1",
+			"fabric": "net.minecraft.client.QuickPlayLogger$1"
+		},
+		{
+			"forge": "log(Minecraft arg0)",
+			"fabric": "save(MinecraftClient arg0)"
+		},
+		{
+			"forge": "log(Minecraft arg0)",
+			"fabric": "save(MinecraftClient arg0)"
+		},
+		{
+			"forge": "setWorldData(QuickPlayLog$Type arg0, String arg1, String arg2)",
+			"fabric": "setWorld(QuickPlayLogger$WorldType arg0, String arg1, String arg2)"
+		}
+	]
+}

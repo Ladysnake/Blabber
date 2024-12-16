@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.ticks.TickContainerAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.world.ticks.TickContainerAccess",
+			"fabric": "net.minecraft.world.tick.BasicTickScheduler"
+		}
+	]
+}

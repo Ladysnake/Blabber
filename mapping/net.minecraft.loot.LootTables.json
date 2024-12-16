@@ -1,0 +1,381 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.BuiltInLootTables",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.BuiltInLootTables",
+			"fabric": "net.minecraft.loot.LootTables"
+		},
+		{
+			"forge": "LOCATIONS",
+			"fabric": "LOOT_TABLES"
+		},
+		{
+			"forge": "LOCATIONS",
+			"fabric": "LOOT_TABLES"
+		},
+		{
+			"forge": "IMMUTABLE_LOCATIONS",
+			"fabric": "LOOT_TABLES_READ_ONLY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "SPAWN_BONUS_CHEST",
+			"fabric": "SPAWN_BONUS_CHEST"
+		},
+		{
+			"forge": "END_CITY_TREASURE",
+			"fabric": "END_CITY_TREASURE_CHEST"
+		},
+		{
+			"forge": "SIMPLE_DUNGEON",
+			"fabric": "SIMPLE_DUNGEON_CHEST"
+		},
+		{
+			"forge": "VILLAGE_WEAPONSMITH",
+			"fabric": "VILLAGE_WEAPONSMITH_CHEST"
+		},
+		{
+			"forge": "VILLAGE_TOOLSMITH",
+			"fabric": "VILLAGE_TOOLSMITH_CHEST"
+		},
+		{
+			"forge": "VILLAGE_ARMORER",
+			"fabric": "VILLAGE_ARMORER_CHEST"
+		},
+		{
+			"forge": "VILLAGE_CARTOGRAPHER",
+			"fabric": "VILLAGE_CARTOGRAPHER_CHEST"
+		},
+		{
+			"forge": "VILLAGE_MASON",
+			"fabric": "VILLAGE_MASON_CHEST"
+		},
+		{
+			"forge": "VILLAGE_SHEPHERD",
+			"fabric": "VILLAGE_SHEPARD_CHEST"
+		},
+		{
+			"forge": "VILLAGE_BUTCHER",
+			"fabric": "VILLAGE_BUTCHER_CHEST"
+		},
+		{
+			"forge": "VILLAGE_FLETCHER",
+			"fabric": "VILLAGE_FLETCHER_CHEST"
+		},
+		{
+			"forge": "VILLAGE_FISHER",
+			"fabric": "VILLAGE_FISHER_CHEST"
+		},
+		{
+			"forge": "VILLAGE_TANNERY",
+			"fabric": "VILLAGE_TANNERY_CHEST"
+		},
+		{
+			"forge": "VILLAGE_TEMPLE",
+			"fabric": "VILLAGE_TEMPLE_CHEST"
+		},
+		{
+			"forge": "VILLAGE_DESERT_HOUSE",
+			"fabric": "VILLAGE_DESERT_HOUSE_CHEST"
+		},
+		{
+			"forge": "VILLAGE_PLAINS_HOUSE",
+			"fabric": "VILLAGE_PLAINS_CHEST"
+		},
+		{
+			"forge": "VILLAGE_TAIGA_HOUSE",
+			"fabric": "VILLAGE_TAIGA_HOUSE_CHEST"
+		},
+		{
+			"forge": "VILLAGE_SNOWY_HOUSE",
+			"fabric": "VILLAGE_SNOWY_HOUSE_CHEST"
+		},
+		{
+			"forge": "VILLAGE_SAVANNA_HOUSE",
+			"fabric": "VILLAGE_SAVANNA_HOUSE_CHEST"
+		},
+		{
+			"forge": "ABANDONED_MINESHAFT",
+			"fabric": "ABANDONED_MINESHAFT_CHEST"
+		},
+		{
+			"forge": "NETHER_BRIDGE",
+			"fabric": "NETHER_BRIDGE_CHEST"
+		},
+		{
+			"forge": "STRONGHOLD_LIBRARY",
+			"fabric": "STRONGHOLD_LIBRARY_CHEST"
+		},
+		{
+			"forge": "STRONGHOLD_CROSSING",
+			"fabric": "STRONGHOLD_CROSSING_CHEST"
+		},
+		{
+			"forge": "STRONGHOLD_CORRIDOR",
+			"fabric": "STRONGHOLD_CORRIDOR_CHEST"
+		},
+		{
+			"forge": "DESERT_PYRAMID",
+			"fabric": "DESERT_PYRAMID_CHEST"
+		},
+		{
+			"forge": "JUNGLE_TEMPLE",
+			"fabric": "JUNGLE_TEMPLE_CHEST"
+		},
+		{
+			"forge": "JUNGLE_TEMPLE_DISPENSER",
+			"fabric": "JUNGLE_TEMPLE_DISPENSER_CHEST"
+		},
+		{
+			"forge": "IGLOO_CHEST",
+			"fabric": "IGLOO_CHEST_CHEST"
+		},
+		{
+			"forge": "WOODLAND_MANSION",
+			"fabric": "WOODLAND_MANSION_CHEST"
+		},
+		{
+			"forge": "UNDERWATER_RUIN_SMALL",
+			"fabric": "UNDERWATER_RUIN_SMALL_CHEST"
+		},
+		{
+			"forge": "UNDERWATER_RUIN_BIG",
+			"fabric": "UNDERWATER_RUIN_BIG_CHEST"
+		},
+		{
+			"forge": "BURIED_TREASURE",
+			"fabric": "BURIED_TREASURE_CHEST"
+		},
+		{
+			"forge": "SHIPWRECK_MAP",
+			"fabric": "SHIPWRECK_MAP_CHEST"
+		},
+		{
+			"forge": "SHIPWRECK_SUPPLY",
+			"fabric": "SHIPWRECK_SUPPLY_CHEST"
+		},
+		{
+			"forge": "SHIPWRECK_TREASURE",
+			"fabric": "SHIPWRECK_TREASURE_CHEST"
+		},
+		{
+			"forge": "PILLAGER_OUTPOST",
+			"fabric": "PILLAGER_OUTPOST_CHEST"
+		},
+		{
+			"forge": "BASTION_TREASURE",
+			"fabric": "BASTION_TREASURE_CHEST"
+		},
+		{
+			"forge": "BASTION_OTHER",
+			"fabric": "BASTION_OTHER_CHEST"
+		},
+		{
+			"forge": "BASTION_BRIDGE",
+			"fabric": "BASTION_BRIDGE_CHEST"
+		},
+		{
+			"forge": "BASTION_HOGLIN_STABLE",
+			"fabric": "BASTION_HOGLIN_STABLE_CHEST"
+		},
+		{
+			"forge": "ANCIENT_CITY",
+			"fabric": "ANCIENT_CITY_CHEST"
+		},
+		{
+			"forge": "ANCIENT_CITY_ICE_BOX",
+			"fabric": "ANCIENT_CITY_ICE_BOX_CHEST"
+		},
+		{
+			"forge": "RUINED_PORTAL",
+			"fabric": "RUINED_PORTAL_CHEST"
+		},
+		{
+			"forge": "SHEEP_WHITE",
+			"fabric": "WHITE_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_ORANGE",
+			"fabric": "ORANGE_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_MAGENTA",
+			"fabric": "MAGENTA_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_LIGHT_BLUE",
+			"fabric": "LIGHT_BLUE_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_YELLOW",
+			"fabric": "YELLOW_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_LIME",
+			"fabric": "LIME_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_PINK",
+			"fabric": "PINK_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_GRAY",
+			"fabric": "GRAY_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_LIGHT_GRAY",
+			"fabric": "LIGHT_GRAY_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_CYAN",
+			"fabric": "CYAN_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_PURPLE",
+			"fabric": "PURPLE_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_BLUE",
+			"fabric": "BLUE_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_BROWN",
+			"fabric": "BROWN_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_GREEN",
+			"fabric": "GREEN_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_RED",
+			"fabric": "RED_SHEEP_ENTITY"
+		},
+		{
+			"forge": "SHEEP_BLACK",
+			"fabric": "BLACK_SHEEP_ENTITY"
+		},
+		{
+			"forge": "FISHING",
+			"fabric": "FISHING_GAMEPLAY"
+		},
+		{
+			"forge": "FISHING_JUNK",
+			"fabric": "FISHING_JUNK_GAMEPLAY"
+		},
+		{
+			"forge": "FISHING_TREASURE",
+			"fabric": "FISHING_TREASURE_GAMEPLAY"
+		},
+		{
+			"forge": "FISHING_FISH",
+			"fabric": "FISHING_FISH_GAMEPLAY"
+		},
+		{
+			"forge": "CAT_MORNING_GIFT",
+			"fabric": "CAT_MORNING_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "ARMORER_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_ARMORER_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "BUTCHER_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_BUTCHER_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "CARTOGRAPHER_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_CARTOGRAPHER_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "CLERIC_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_CLERIC_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "FARMER_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_FARMER_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "FISHERMAN_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_FISHERMAN_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "FLETCHER_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_FLETCHER_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "LEATHERWORKER_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_LEATHERWORKER_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "LIBRARIAN_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_LIBRARIAN_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "MASON_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_MASON_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "SHEPHERD_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_SHEPHERD_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "TOOLSMITH_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_TOOLSMITH_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "WEAPONSMITH_GIFT",
+			"fabric": "HERO_OF_THE_VILLAGE_WEAPONSMITH_GIFT_GAMEPLAY"
+		},
+		{
+			"forge": "SNIFFER_DIGGING",
+			"fabric": "SNIFFER_DIGGING_GAMEPLAY"
+		},
+		{
+			"forge": "PIGLIN_BARTERING",
+			"fabric": "PIGLIN_BARTERING_GAMEPLAY"
+		},
+		{
+			"forge": "DESERT_WELL_ARCHAEOLOGY",
+			"fabric": "DESERT_WELL_ARCHAEOLOGY"
+		},
+		{
+			"forge": "DESERT_PYRAMID_ARCHAEOLOGY",
+			"fabric": "DESERT_PYRAMID_ARCHAEOLOGY"
+		},
+		{
+			"forge": "TRAIL_RUINS_ARCHAEOLOGY_COMMON",
+			"fabric": "TRAIL_RUINS_COMMON_ARCHAEOLOGY"
+		},
+		{
+			"forge": "TRAIL_RUINS_ARCHAEOLOGY_RARE",
+			"fabric": "TRAIL_RUINS_RARE_ARCHAEOLOGY"
+		},
+		{
+			"forge": "OCEAN_RUIN_WARM_ARCHAEOLOGY",
+			"fabric": "OCEAN_RUIN_WARM_ARCHAEOLOGY"
+		},
+		{
+			"forge": "OCEAN_RUIN_COLD_ARCHAEOLOGY",
+			"fabric": "OCEAN_RUIN_COLD_ARCHAEOLOGY"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "register(String id)"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "register(String id)"
+		},
+		{
+			"forge": "register(ResourceLocation arg0)",
+			"fabric": "registerLootTable(Identifier id)"
+		},
+		{
+			"forge": "all()",
+			"fabric": "getAll()"
+		}
+	]
+}

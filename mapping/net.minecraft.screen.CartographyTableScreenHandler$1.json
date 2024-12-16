@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.inventory.CartographyTableMenu$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.CartographyTableMenu$1",
+			"fabric": "net.minecraft.screen.CartographyTableScreenHandler$1"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		}
+	]
+}

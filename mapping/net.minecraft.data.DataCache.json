@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.data.HashCache",
+	"items": [
+		{
+			"forge": "net.minecraft.data.HashCache",
+			"fabric": "net.minecraft.data.DataCache"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "HEADER_MARKER",
+			"fabric": "HEADER"
+		},
+		{
+			"forge": "rootDir",
+			"fabric": "root"
+		},
+		{
+			"forge": "cacheDir",
+			"fabric": "cachePath"
+		},
+		{
+			"forge": "versionId",
+			"fabric": "versionName"
+		},
+		{
+			"forge": "caches",
+			"fabric": "cachedDatas"
+		},
+		{
+			"forge": "cachesToWrite",
+			"fabric": "dataWriters"
+		},
+		{
+			"forge": "cachePaths",
+			"fabric": "paths"
+		},
+		{
+			"forge": "initialCount",
+			"fabric": "totalSize"
+		},
+		{
+			"forge": "writes",
+			"fabric": "totalCacheMissCount"
+		},
+		{
+			"forge": "getProviderCachePath(String arg0)",
+			"fabric": "getPath(String providerName)"
+		},
+		{
+			"forge": "getProviderCachePath(String arg0)",
+			"fabric": "getPath(String providerName)"
+		},
+		{
+			"forge": "readCache(Path arg0, Path arg1)",
+			"fabric": "parseOrCreateCache(Path root, Path dataProviderPath)"
+		},
+		{
+			"forge": "shouldRunInThisVersion(String arg0)",
+			"fabric": "isVersionDifferent(String providerName)"
+		},
+		{
+			"forge": "generateUpdate(String arg0, HashCache$UpdateFunction arg1)",
+			"fabric": "run(String providerName, DataCache$Runner runner)"
+		},
+		{
+			"forge": "applyUpdate(HashCache$UpdateResult arg0)",
+			"fabric": "store(DataCache$RunResult runResult)"
+		},
+		{
+			"forge": "purgeStaleAndWrite()",
+			"fabric": "write()"
+		}
+	]
+}

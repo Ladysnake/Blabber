@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.commands.arguments.OperationArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.OperationArgument",
+			"fabric": "net.minecraft.command.argument.OperationArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_INVALID_OPERATION",
+			"fabric": "INVALID_OPERATION"
+		},
+		{
+			"forge": "ERROR_DIVIDE_BY_ZERO",
+			"fabric": "DIVISION_ZERO_EXCEPTION"
+		},
+		{
+			"forge": "operation()",
+			"fabric": "operation()"
+		},
+		{
+			"forge": "operation()",
+			"fabric": "operation()"
+		},
+		{
+			"forge": "getOperation(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getOperation(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "getOperation(String arg0)",
+			"fabric": "getOperator(String operator)"
+		},
+		{
+			"forge": "getSimpleOperation(String arg0)",
+			"fabric": "getIntOperator(String operator)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.util.HoverRandomPos",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.util.HoverRandomPos",
+			"fabric": "net.minecraft.entity.ai.AboveGroundTargeting"
+		},
+		{
+			"forge": "getPos(PathfinderMob arg0, int arg1, int arg2, double arg3, double arg4, float arg5, int arg6, int arg7)",
+			"fabric": "find(PathAwareEntity entity, int horizontalRange, int verticalRange, double x, double z, float angle, int maxAboveSolid, int minAboveSolid)"
+		},
+		{
+			"forge": "getPos(PathfinderMob arg0, int arg1, int arg2, double arg3, double arg4, float arg5, int arg6, int arg7)",
+			"fabric": "find(PathAwareEntity entity, int horizontalRange, int verticalRange, double x, double z, float angle, int maxAboveSolid, int minAboveSolid)"
+		}
+	]
+}

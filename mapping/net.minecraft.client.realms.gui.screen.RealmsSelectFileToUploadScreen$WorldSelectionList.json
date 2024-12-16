@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSelectFileToUploadScreen$WorldSelectionList",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSelectFileToUploadScreen$WorldSelectionList",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSelectFileToUploadScreen$WorldSelectionList"
+		},
+		{
+			"forge": "addEntry(LevelSummary arg0)",
+			"fabric": "addEntry(LevelSummary summary)"
+		},
+		{
+			"forge": "addEntry(LevelSummary arg0)",
+			"fabric": "addEntry(LevelSummary summary)"
+		},
+		{
+			"forge": "getMaxPosition()",
+			"fabric": "getMaxPosition()"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext arg0)"
+		},
+		{
+			"forge": "setSelected(RealmsSelectFileToUploadScreen$Entry arg0)",
+			"fabric": "setSelected(RealmsSelectFileToUploadScreen$WorldListEntry arg0)"
+		}
+	]
+}

@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.world.level.block.entity.JigsawBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.JigsawBlockEntity",
+			"fabric": "net.minecraft.block.entity.JigsawBlockEntity"
+		},
+		{
+			"forge": "TARGET",
+			"fabric": "TARGET_KEY"
+		},
+		{
+			"forge": "TARGET",
+			"fabric": "TARGET_KEY"
+		},
+		{
+			"forge": "POOL",
+			"fabric": "POOL_KEY"
+		},
+		{
+			"forge": "JOINT",
+			"fabric": "JOINT_KEY"
+		},
+		{
+			"forge": "NAME",
+			"fabric": "NAME_KEY"
+		},
+		{
+			"forge": "FINAL_STATE",
+			"fabric": "FINAL_STATE_KEY"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "pool",
+			"fabric": "pool"
+		},
+		{
+			"forge": "joint",
+			"fabric": "joint"
+		},
+		{
+			"forge": "finalState",
+			"fabric": "finalState"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getTarget()",
+			"fabric": "getTarget()"
+		},
+		{
+			"forge": "getPool()",
+			"fabric": "getPool()"
+		},
+		{
+			"forge": "getFinalState()",
+			"fabric": "getFinalState()"
+		},
+		{
+			"forge": "getJoint()",
+			"fabric": "getJoint()"
+		},
+		{
+			"forge": "setName(ResourceLocation arg0)",
+			"fabric": "setName(Identifier name)"
+		},
+		{
+			"forge": "setTarget(ResourceLocation arg0)",
+			"fabric": "setTarget(Identifier target)"
+		},
+		{
+			"forge": "setPool(ResourceKey<StructureTemplatePool> arg0)",
+			"fabric": "setPool(RegistryKey<StructurePool> pool)"
+		},
+		{
+			"forge": "setFinalState(String arg0)",
+			"fabric": "setFinalState(String finalState)"
+		},
+		{
+			"forge": "setJoint(JigsawBlockEntity$JointType arg0)",
+			"fabric": "setJoint(JigsawBlockEntity$Joint joint)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getUpdatePacket()",
+			"fabric": "toUpdatePacket()"
+		},
+		{
+			"forge": "getUpdateTag()",
+			"fabric": "toInitialChunkDataNbt()"
+		},
+		{
+			"forge": "generate(ServerLevel arg0, int arg1, boolean arg2)",
+			"fabric": "generate(ServerWorld world, int maxDepth, boolean keepJigsaws)"
+		}
+	]
+}

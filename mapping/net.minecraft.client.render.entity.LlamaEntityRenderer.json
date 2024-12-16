@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.entity.LlamaRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.LlamaRenderer",
+			"fabric": "net.minecraft.client.render.entity.LlamaEntityRenderer"
+		},
+		{
+			"forge": "CREAMY",
+			"fabric": "CREAMY_TEXTURE"
+		},
+		{
+			"forge": "CREAMY",
+			"fabric": "CREAMY_TEXTURE"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE_TEXTURE"
+		},
+		{
+			"forge": "BROWN",
+			"fabric": "BROWN_TEXTURE"
+		},
+		{
+			"forge": "GRAY",
+			"fabric": "GRAY_TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Llama arg0)",
+			"fabric": "getTexture(LlamaEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Llama arg0)",
+			"fabric": "getTexture(LlamaEntity arg0)"
+		}
+	]
+}

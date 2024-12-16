@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.StrollAroundPoi",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.StrollAroundPoi",
+			"fabric": "net.minecraft.entity.ai.brain.task.GoToIfNearbyTask"
+		},
+		{
+			"forge": "MIN_TIME_BETWEEN_STROLLS",
+			"fabric": "UPDATE_INTERVAL"
+		},
+		{
+			"forge": "MIN_TIME_BETWEEN_STROLLS",
+			"fabric": "UPDATE_INTERVAL"
+		},
+		{
+			"forge": "STROLL_MAX_XZ_DIST",
+			"fabric": "HORIZONTAL_RANGE"
+		},
+		{
+			"forge": "STROLL_MAX_Y_DIST",
+			"fabric": "VERTICAL_RANGE"
+		},
+		{
+			"forge": "create(MemoryModuleType<GlobalPos> arg0, float arg1, int arg2)",
+			"fabric": "create(MemoryModuleType<GlobalPos> posModule, float walkSpeed, int maxDistance)"
+		},
+		{
+			"forge": "create(MemoryModuleType<GlobalPos> arg0, float arg1, int arg2)",
+			"fabric": "create(MemoryModuleType<GlobalPos> posModule, float walkSpeed, int maxDistance)"
+		}
+	]
+}

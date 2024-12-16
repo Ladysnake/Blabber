@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.entity.ChunkStatusUpdateListener",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.entity.ChunkStatusUpdateListener",
+			"fabric": "net.minecraft.world.chunk.ChunkStatusChangeListener"
+		},
+		{
+			"forge": "onChunkStatusChange(ChunkPos arg0, FullChunkStatus arg1)",
+			"fabric": "onChunkStatusChange(ChunkPos pos, ChunkLevelType levelType)"
+		},
+		{
+			"forge": "onChunkStatusChange(ChunkPos arg0, FullChunkStatus arg1)",
+			"fabric": "onChunkStatusChange(ChunkPos pos, ChunkLevelType levelType)"
+		}
+	]
+}

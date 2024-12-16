@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.item.enchantment.DamageEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.DamageEnchantment",
+			"fabric": "net.minecraft.enchantment.DamageEnchantment"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "ALL_INDEX"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "ALL_INDEX"
+		},
+		{
+			"forge": "UNDEAD",
+			"fabric": "UNDEAD_INDEX"
+		},
+		{
+			"forge": "ARTHROPODS",
+			"fabric": "ARTHROPODS_INDEX"
+		},
+		{
+			"forge": "NAMES",
+			"fabric": "TYPE_NAMES"
+		},
+		{
+			"forge": "MIN_COST",
+			"fabric": "BASE_POWERS"
+		},
+		{
+			"forge": "LEVEL_COST",
+			"fabric": "POWERS_PER_LEVEL"
+		},
+		{
+			"forge": "LEVEL_COST_SPAN",
+			"fabric": "MIN_MAX_POWER_DIFFERENCES"
+		},
+		{
+			"forge": "type",
+			"fabric": "typeIndex"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "getMaxLevel()",
+			"fabric": "getMaxLevel()"
+		},
+		{
+			"forge": "getDamageBonus(int arg0, MobType arg1)",
+			"fabric": "getAttackDamage(int arg0, EntityGroup arg1)"
+		},
+		{
+			"forge": "checkCompatibility(Enchantment arg0)",
+			"fabric": "canAccept(Enchantment arg0)"
+		},
+		{
+			"forge": "canEnchant(ItemStack arg0)",
+			"fabric": "isAcceptableItem(ItemStack arg0)"
+		},
+		{
+			"forge": "doPostAttack(LivingEntity arg0, Entity arg1, int arg2)",
+			"fabric": "onTargetDamaged(LivingEntity arg0, Entity arg1, int arg2)"
+		}
+	]
+}

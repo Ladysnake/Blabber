@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.DoorHingeSide",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.DoorHingeSide",
+			"fabric": "net.minecraft.block.enums.DoorHinge"
+		},
+		{
+			"forge": "LEFT",
+			"fabric": "LEFT"
+		},
+		{
+			"forge": "LEFT",
+			"fabric": "LEFT"
+		},
+		{
+			"forge": "RIGHT",
+			"fabric": "RIGHT"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

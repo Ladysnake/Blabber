@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.world.item.trading.MerchantOffer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.trading.MerchantOffer",
+			"fabric": "net.minecraft.village.TradeOffer"
+		},
+		{
+			"forge": "baseCostA",
+			"fabric": "firstBuyItem"
+		},
+		{
+			"forge": "baseCostA",
+			"fabric": "firstBuyItem"
+		},
+		{
+			"forge": "costB",
+			"fabric": "secondBuyItem"
+		},
+		{
+			"forge": "result",
+			"fabric": "sellItem"
+		},
+		{
+			"forge": "uses",
+			"fabric": "uses"
+		},
+		{
+			"forge": "maxUses",
+			"fabric": "maxUses"
+		},
+		{
+			"forge": "rewardExp",
+			"fabric": "rewardingPlayerExperience"
+		},
+		{
+			"forge": "specialPriceDiff",
+			"fabric": "specialPrice"
+		},
+		{
+			"forge": "demand",
+			"fabric": "demandBonus"
+		},
+		{
+			"forge": "priceMultiplier",
+			"fabric": "priceMultiplier"
+		},
+		{
+			"forge": "xp",
+			"fabric": "merchantExperience"
+		},
+		{
+			"forge": "getBaseCostA()",
+			"fabric": "getOriginalFirstBuyItem()"
+		},
+		{
+			"forge": "getBaseCostA()",
+			"fabric": "getOriginalFirstBuyItem()"
+		},
+		{
+			"forge": "getCostA()",
+			"fabric": "getAdjustedFirstBuyItem()"
+		},
+		{
+			"forge": "getCostB()",
+			"fabric": "getSecondBuyItem()"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getSellItem()"
+		},
+		{
+			"forge": "updateDemand()",
+			"fabric": "updateDemandBonus()"
+		},
+		{
+			"forge": "assemble()",
+			"fabric": "copySellItem()"
+		},
+		{
+			"forge": "getUses()",
+			"fabric": "getUses()"
+		},
+		{
+			"forge": "resetUses()",
+			"fabric": "resetUses()"
+		},
+		{
+			"forge": "getMaxUses()",
+			"fabric": "getMaxUses()"
+		},
+		{
+			"forge": "increaseUses()",
+			"fabric": "use()"
+		},
+		{
+			"forge": "getDemand()",
+			"fabric": "getDemandBonus()"
+		},
+		{
+			"forge": "addToSpecialPriceDiff(int arg0)",
+			"fabric": "increaseSpecialPrice(int increment)"
+		},
+		{
+			"forge": "resetSpecialPriceDiff()",
+			"fabric": "clearSpecialPrice()"
+		},
+		{
+			"forge": "getSpecialPriceDiff()",
+			"fabric": "getSpecialPrice()"
+		},
+		{
+			"forge": "setSpecialPriceDiff(int arg0)",
+			"fabric": "setSpecialPrice(int specialPrice)"
+		},
+		{
+			"forge": "getPriceMultiplier()",
+			"fabric": "getPriceMultiplier()"
+		},
+		{
+			"forge": "getXp()",
+			"fabric": "getMerchantExperience()"
+		},
+		{
+			"forge": "isOutOfStock()",
+			"fabric": "isDisabled()"
+		},
+		{
+			"forge": "setToOutOfStock()",
+			"fabric": "disable()"
+		},
+		{
+			"forge": "needsRestock()",
+			"fabric": "hasBeenUsed()"
+		},
+		{
+			"forge": "shouldRewardExp()",
+			"fabric": "shouldRewardPlayerExperience()"
+		},
+		{
+			"forge": "createTag()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "satisfiedBy(ItemStack arg0, ItemStack arg1)",
+			"fabric": "matchesBuyItems(ItemStack first, ItemStack second)"
+		},
+		{
+			"forge": "isRequiredItem(ItemStack arg0, ItemStack arg1)",
+			"fabric": "acceptsBuy(ItemStack given, ItemStack sample)"
+		},
+		{
+			"forge": "take(ItemStack arg0, ItemStack arg1)",
+			"fabric": "depleteBuyItems(ItemStack firstBuyStack, ItemStack secondBuyStack)"
+		}
+	]
+}

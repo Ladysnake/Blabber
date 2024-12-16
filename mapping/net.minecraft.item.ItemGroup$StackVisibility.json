@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.item.CreativeModeTab$TabVisibility",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.CreativeModeTab$TabVisibility",
+			"fabric": "net.minecraft.item.ItemGroup$StackVisibility"
+		},
+		{
+			"forge": "PARENT_AND_SEARCH_TABS",
+			"fabric": "PARENT_AND_SEARCH_TABS"
+		},
+		{
+			"forge": "PARENT_AND_SEARCH_TABS",
+			"fabric": "PARENT_AND_SEARCH_TABS"
+		},
+		{
+			"forge": "PARENT_TAB_ONLY",
+			"fabric": "PARENT_TAB_ONLY"
+		},
+		{
+			"forge": "SEARCH_TAB_ONLY",
+			"fabric": "SEARCH_TAB_ONLY"
+		}
+	]
+}

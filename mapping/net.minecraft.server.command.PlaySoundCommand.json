@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.commands.PlaySoundCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.PlaySoundCommand",
+			"fabric": "net.minecraft.server.command.PlaySoundCommand"
+		},
+		{
+			"forge": "ERROR_TOO_FAR",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_TOO_FAR",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "source(SoundSource arg0)",
+			"fabric": "makeArgumentsForCategory(SoundCategory category)"
+		},
+		{
+			"forge": "playSound(CommandSourceStack arg0, Collection<ServerPlayer> arg1, ResourceLocation arg2, SoundSource arg3, Vec3 arg4, float arg5, float arg6, float arg7)",
+			"fabric": "execute(ServerCommandSource source, Collection<ServerPlayerEntity> targets, Identifier sound, SoundCategory category, Vec3d pos, float volume, float pitch, float minVolume)"
+		}
+	]
+}

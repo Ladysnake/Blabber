@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.resources.ResourceLocation$Dummy",
+	"items": [
+		{
+			"forge": "net.minecraft.resources.ResourceLocation$Dummy",
+			"fabric": "net.minecraft.util.Identifier$ExtraData"
+		}
+	]
+}

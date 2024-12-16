@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.advancements.critereon.ConstructBeaconTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.ConstructBeaconTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.ConstructBeaconCriterion$Conditions"
+		},
+		{
+			"forge": "level",
+			"fabric": "level"
+		},
+		{
+			"forge": "level",
+			"fabric": "level"
+		},
+		{
+			"forge": "constructedBeacon()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "constructedBeacon()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "constructedBeacon(MinMaxBounds$Ints arg0)",
+			"fabric": "level(NumberRange$IntRange level)"
+		},
+		{
+			"forge": "matches(int arg0)",
+			"fabric": "matches(int level)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

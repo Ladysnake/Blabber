@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.LightningBoltRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.LightningBoltRenderer",
+			"fabric": "net.minecraft.client.render.entity.LightningEntityRenderer"
+		},
+		{
+			"forge": "render(LightningBolt arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(LightningEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "render(LightningBolt arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(LightningEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "quad(org.joml.Matrix4f arg0, VertexConsumer arg1, float arg2, float arg3, int arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, boolean arg12, boolean arg13, boolean arg14, boolean arg15)",
+			"fabric": "drawBranch(org.joml.Matrix4f matrix, VertexConsumer buffer, float x1, float z1, int y, float x2, float z2, float red, float green, float blue, float offset2, float offset1, boolean shiftEast1, boolean shiftSouth1, boolean shiftEast2, boolean shiftSouth2)"
+		},
+		{
+			"forge": "getTextureLocation(LightningBolt arg0)",
+			"fabric": "getTexture(LightningEntity arg0)"
+		}
+	]
+}

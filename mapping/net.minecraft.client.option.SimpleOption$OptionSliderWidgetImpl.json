@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.OptionInstance$OptionInstanceSliderButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$OptionInstanceSliderButton",
+			"fabric": "net.minecraft.client.option.SimpleOption$OptionSliderWidgetImpl"
+		},
+		{
+			"forge": "instance",
+			"fabric": "option"
+		},
+		{
+			"forge": "instance",
+			"fabric": "option"
+		},
+		{
+			"forge": "values",
+			"fabric": "callbacks"
+		},
+		{
+			"forge": "tooltipSupplier",
+			"fabric": "tooltipFactory"
+		},
+		{
+			"forge": "onValueChanged",
+			"fabric": "changeCallback"
+		},
+		{
+			"forge": "updateMessage()",
+			"fabric": "updateMessage()"
+		},
+		{
+			"forge": "updateMessage()",
+			"fabric": "updateMessage()"
+		},
+		{
+			"forge": "applyValue()",
+			"fabric": "applyValue()"
+		}
+	]
+}

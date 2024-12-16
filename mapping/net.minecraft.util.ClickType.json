@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.inventory.ClickAction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ClickAction",
+			"fabric": "net.minecraft.util.ClickType"
+		},
+		{
+			"forge": "PRIMARY",
+			"fabric": "LEFT"
+		},
+		{
+			"forge": "PRIMARY",
+			"fabric": "LEFT"
+		},
+		{
+			"forge": "SECONDARY",
+			"fabric": "RIGHT"
+		}
+	]
+}

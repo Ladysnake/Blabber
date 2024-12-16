@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.world.level.block.ComposterBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.ComposterBlock",
+			"fabric": "net.minecraft.block.ComposterBlock"
+		},
+		{
+			"forge": "READY",
+			"fabric": "NUM_LEVELS"
+		},
+		{
+			"forge": "READY",
+			"fabric": "NUM_LEVELS"
+		},
+		{
+			"forge": "MIN_LEVEL",
+			"fabric": "MIN_LEVEL"
+		},
+		{
+			"forge": "MAX_LEVEL",
+			"fabric": "MAX_LEVEL"
+		},
+		{
+			"forge": "LEVEL",
+			"fabric": "LEVEL"
+		},
+		{
+			"forge": "COMPOSTABLES",
+			"fabric": "ITEM_TO_LEVEL_INCREASE_CHANCE"
+		},
+		{
+			"forge": "AABB_SIDE_THICKNESS",
+			"fabric": "field_31074"
+		},
+		{
+			"forge": "OUTER_SHAPE",
+			"fabric": "RAYCAST_SHAPE"
+		},
+		{
+			"forge": "SHAPES",
+			"fabric": "LEVEL_TO_COLLISION_SHAPE"
+		},
+		{
+			"forge": "bootStrap()",
+			"fabric": "registerDefaultCompostableItems()"
+		},
+		{
+			"forge": "bootStrap()",
+			"fabric": "registerDefaultCompostableItems()"
+		},
+		{
+			"forge": "add(float arg0, ItemLike arg1)",
+			"fabric": "registerCompostableItem(float levelIncreaseChance, ItemConvertible item)"
+		},
+		{
+			"forge": "handleFill(Level arg0, BlockPos arg1, boolean arg2)",
+			"fabric": "playEffects(World world, BlockPos pos, boolean fill)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getInteractionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getRaycastShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "insertItem(Entity arg0, BlockState arg1, ServerLevel arg2, ItemStack arg3, BlockPos arg4)",
+			"fabric": "compost(Entity user, BlockState state, ServerWorld world, ItemStack stack, BlockPos pos)"
+		},
+		{
+			"forge": "extractProduce(Entity arg0, BlockState arg1, Level arg2, BlockPos arg3)",
+			"fabric": "emptyFullComposter(Entity user, BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "empty(Entity arg0, BlockState arg1, LevelAccessor arg2, BlockPos arg3)",
+			"fabric": "emptyComposter(Entity user, BlockState state, WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "addItem(Entity arg0, BlockState arg1, LevelAccessor arg2, BlockPos arg3, ItemStack arg4)",
+			"fabric": "addToComposter(Entity user, BlockState state, WorldAccess world, BlockPos pos, ItemStack stack)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "hasAnalogOutputSignal(BlockState arg0)",
+			"fabric": "hasComparatorOutput(BlockState arg0)"
+		},
+		{
+			"forge": "getAnalogOutputSignal(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "getComparatorOutput(BlockState arg0, World arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "getContainer(BlockState arg0, LevelAccessor arg1, BlockPos arg2)",
+			"fabric": "getInventory(BlockState arg0, WorldAccess arg1, BlockPos arg2)"
+		}
+	]
+}

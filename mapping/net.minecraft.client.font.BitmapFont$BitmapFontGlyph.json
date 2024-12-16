@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.BitmapProvider$Glyph",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.BitmapProvider$Glyph",
+			"fabric": "net.minecraft.client.font.BitmapFont$BitmapFontGlyph"
+		},
+		{
+			"forge": "scale",
+			"fabric": "scaleFactor"
+		},
+		{
+			"forge": "scale",
+			"fabric": "scaleFactor"
+		},
+		{
+			"forge": "image",
+			"fabric": "image"
+		},
+		{
+			"forge": "offsetX",
+			"fabric": "x"
+		},
+		{
+			"forge": "offsetY",
+			"fabric": "y"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "advance",
+			"fabric": "advance"
+		},
+		{
+			"forge": "ascent",
+			"fabric": "ascent"
+		},
+		{
+			"forge": "getAdvance()",
+			"fabric": "bake(Function<RenderableGlyph, GlyphRenderer> arg0)"
+		},
+		{
+			"forge": "bake(Function<SheetGlyphInfo, BakedGlyph> arg0)",
+			"fabric": "bake(Function<RenderableGlyph, GlyphRenderer> arg0)"
+		},
+		{
+			"forge": "scale()",
+			"fabric": "scaleFactor()"
+		},
+		{
+			"forge": "image()",
+			"fabric": "image()"
+		},
+		{
+			"forge": "offsetX()",
+			"fabric": "x()"
+		},
+		{
+			"forge": "offsetY()",
+			"fabric": "y()"
+		},
+		{
+			"forge": "width()",
+			"fabric": "width()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "height()"
+		},
+		{
+			"forge": "advance()",
+			"fabric": "advance()"
+		},
+		{
+			"forge": "ascent()",
+			"fabric": "ascent()"
+		}
+	]
+}

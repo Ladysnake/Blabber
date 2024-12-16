@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.entity.animal.CatVariant",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.CatVariant",
+			"fabric": "net.minecraft.entity.passive.CatVariant"
+		},
+		{
+			"forge": "texture",
+			"fabric": "texture"
+		},
+		{
+			"forge": "texture",
+			"fabric": "texture"
+		},
+		{
+			"forge": "TABBY",
+			"fabric": "TABBY"
+		},
+		{
+			"forge": "BLACK",
+			"fabric": "BLACK"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "SIAMESE",
+			"fabric": "SIAMESE"
+		},
+		{
+			"forge": "BRITISH_SHORTHAIR",
+			"fabric": "BRITISH_SHORTHAIR"
+		},
+		{
+			"forge": "CALICO",
+			"fabric": "CALICO"
+		},
+		{
+			"forge": "PERSIAN",
+			"fabric": "PERSIAN"
+		},
+		{
+			"forge": "RAGDOLL",
+			"fabric": "RAGDOLL"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "JELLIE",
+			"fabric": "JELLIE"
+		},
+		{
+			"forge": "ALL_BLACK",
+			"fabric": "ALL_BLACK"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "bootstrap(Registry<CatVariant> arg0)",
+			"fabric": "registerAndGetDefault(Registry<CatVariant> registry)"
+		},
+		{
+			"forge": "register(Registry<CatVariant> arg0, ResourceKey<CatVariant> arg1, String arg2)",
+			"fabric": "register(Registry<CatVariant> registry, RegistryKey<CatVariant> key, String textureId)"
+		},
+		{
+			"forge": "texture()",
+			"fabric": "texture()"
+		}
+	]
+}

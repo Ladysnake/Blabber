@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.border.BorderStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.border.BorderStatus",
+			"fabric": "net.minecraft.world.border.WorldBorderStage"
+		},
+		{
+			"forge": "GROWING",
+			"fabric": "GROWING"
+		},
+		{
+			"forge": "GROWING",
+			"fabric": "GROWING"
+		},
+		{
+			"forge": "SHRINKING",
+			"fabric": "SHRINKING"
+		},
+		{
+			"forge": "STATIONARY",
+			"fabric": "STATIONARY"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		}
+	]
+}

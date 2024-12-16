@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.DimensionSpecialEffects$SkyType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.DimensionSpecialEffects$SkyType",
+			"fabric": "net.minecraft.client.render.DimensionEffects$SkyType"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "END",
+			"fabric": "END"
+		}
+	]
+}

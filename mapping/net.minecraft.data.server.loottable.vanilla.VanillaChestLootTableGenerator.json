@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.data.loot.packs.VanillaChestLoot",
+	"items": [
+		{
+			"forge": "net.minecraft.data.loot.packs.VanillaChestLoot",
+			"fabric": "net.minecraft.data.server.loottable.vanilla.VanillaChestLootTableGenerator"
+		},
+		{
+			"forge": "generate(BiConsumer<ResourceLocation, LootTable$Builder> arg0)",
+			"fabric": "accept(BiConsumer<Identifier, LootTable$Builder> arg0)"
+		},
+		{
+			"forge": "generate(BiConsumer<ResourceLocation, LootTable$Builder> arg0)",
+			"fabric": "accept(BiConsumer<Identifier, LootTable$Builder> arg0)"
+		},
+		{
+			"forge": "shipwreckSupplyLootTable()",
+			"fabric": "createShipwreckSupplyChestTableBuilder()"
+		},
+		{
+			"forge": "shipwreckMapLootTable()",
+			"fabric": "createShipwreckMapChestTableBuilder()"
+		},
+		{
+			"forge": "bastionHoglinStableLootTable()",
+			"fabric": "createBastionHoglinStableChestTableBuilder()"
+		},
+		{
+			"forge": "bastionBridgeLootTable()",
+			"fabric": "createBastionBridgeChestTableBuilder()"
+		},
+		{
+			"forge": "endCityTreasureLootTable()",
+			"fabric": "createEndCityTreasureChestTableBuilder()"
+		},
+		{
+			"forge": "netherBridgeLootTable()",
+			"fabric": "createNetherBridgeChestTableBuilder()"
+		},
+		{
+			"forge": "bastionTreasureLootTable()",
+			"fabric": "createBastionTreasureChestTableBuilder()"
+		},
+		{
+			"forge": "bastionOtherLootTable()",
+			"fabric": "createBastionOtherChestTableBuilder()"
+		},
+		{
+			"forge": "woodlandMansionLootTable()",
+			"fabric": "createWoodlandMansionChestTableBuilder()"
+		},
+		{
+			"forge": "strongholdLibraryLootTable()",
+			"fabric": "createStrongholdLibraryChestTableBuilder()"
+		},
+		{
+			"forge": "strongholdCorridorLootTable()",
+			"fabric": "createStrongholdCorridorChestTableBuilder()"
+		},
+		{
+			"forge": "ancientCityLootTable()",
+			"fabric": "createAncientCityChestTableBuilder()"
+		},
+		{
+			"forge": "jungleTempleLootTable()",
+			"fabric": "createJungleTempleChestTableBuilder()"
+		},
+		{
+			"forge": "shipwreckTreasureLootTable()",
+			"fabric": "createShipwreckTreasureChestTableBuilder()"
+		},
+		{
+			"forge": "pillagerOutpostLootTable()",
+			"fabric": "createPillagerOutpostChestTableBuilder()"
+		},
+		{
+			"forge": "desertPyramidLootTable()",
+			"fabric": "createDesertPyramidChestTableBuilder()"
+		}
+	]
+}

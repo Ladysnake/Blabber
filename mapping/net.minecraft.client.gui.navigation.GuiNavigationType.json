@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.InputType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.InputType",
+			"fabric": "net.minecraft.client.gui.navigation.GuiNavigationType"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "MOUSE",
+			"fabric": "MOUSE"
+		},
+		{
+			"forge": "KEYBOARD_ARROW",
+			"fabric": "KEYBOARD_ARROW"
+		},
+		{
+			"forge": "KEYBOARD_TAB",
+			"fabric": "KEYBOARD_TAB"
+		},
+		{
+			"forge": "isMouse()",
+			"fabric": "isMouse()"
+		},
+		{
+			"forge": "isMouse()",
+			"fabric": "isMouse()"
+		},
+		{
+			"forge": "isKeyboard()",
+			"fabric": "isKeyboard()"
+		}
+	]
+}

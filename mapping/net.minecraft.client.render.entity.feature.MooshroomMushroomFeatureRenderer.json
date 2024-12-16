@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.MushroomCowMushroomLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.MushroomCowMushroomLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.MooshroomMushroomFeatureRenderer"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "blockRenderManager"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "blockRenderManager"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, T arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		},
+		{
+			"forge": "renderMushroomBlock(PoseStack arg0, MultiBufferSource arg1, int arg2, boolean arg3, BlockState arg4, int arg5, BakedModel arg6)",
+			"fabric": "renderMushroom(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, boolean renderAsModel, BlockState mushroomState, int overlay, BakedModel mushroomModel)"
+		}
+	]
+}

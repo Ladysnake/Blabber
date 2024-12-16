@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext",
+			"fabric": "net.minecraft.structure.StructureContext"
+		},
+		{
+			"forge": "resourceManager",
+			"fabric": "resourceManager"
+		},
+		{
+			"forge": "resourceManager",
+			"fabric": "resourceManager"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "structureTemplateManager",
+			"fabric": "structureTemplateManager"
+		},
+		{
+			"forge": "fromLevel(ServerLevel arg0)",
+			"fabric": "from(ServerWorld world)"
+		},
+		{
+			"forge": "fromLevel(ServerLevel arg0)",
+			"fabric": "from(ServerWorld world)"
+		},
+		{
+			"forge": "resourceManager()",
+			"fabric": "resourceManager()"
+		},
+		{
+			"forge": "registryAccess()",
+			"fabric": "registryManager()"
+		},
+		{
+			"forge": "structureTemplateManager()",
+			"fabric": "structureTemplateManager()"
+		}
+	]
+}

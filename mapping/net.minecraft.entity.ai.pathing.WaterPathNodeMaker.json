@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.pathfinder.SwimNodeEvaluator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.pathfinder.SwimNodeEvaluator",
+			"fabric": "net.minecraft.entity.ai.pathing.WaterPathNodeMaker"
+		},
+		{
+			"forge": "allowBreaching",
+			"fabric": "canJumpOutOfWater"
+		},
+		{
+			"forge": "allowBreaching",
+			"fabric": "canJumpOutOfWater"
+		},
+		{
+			"forge": "pathTypesByPosCache",
+			"fabric": "nodePosToType"
+		},
+		{
+			"forge": "prepare(PathNavigationRegion arg0, Mob arg1)",
+			"fabric": "init(ChunkCache arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "prepare(PathNavigationRegion arg0, Mob arg1)",
+			"fabric": "init(ChunkCache arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "done()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getStart()",
+			"fabric": "getStart()"
+		},
+		{
+			"forge": "getGoal(double arg0, double arg1, double arg2)",
+			"fabric": "getNode(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "getNeighbors(Node[] arg0, Node arg1)",
+			"fabric": "getSuccessors(PathNode[] arg0, PathNode arg1)"
+		},
+		{
+			"forge": "isNodeValid(Node arg0)",
+			"fabric": "hasNotVisited(PathNode node)"
+		},
+		{
+			"forge": "isDiagonalNodeValid(Node arg0, Node arg1, Node arg2)",
+			"fabric": "canPathThrough(PathNode diagonalNode, PathNode node1, PathNode node2)"
+		},
+		{
+			"forge": "findAcceptedNode(int arg0, int arg1, int arg2)",
+			"fabric": "getPassableNode(int x, int y, int z)"
+		},
+		{
+			"forge": "getCachedBlockType(int arg0, int arg1, int arg2)",
+			"fabric": "addPathNodePos(int x, int y, int z)"
+		},
+		{
+			"forge": "getBlockPathType(BlockGetter arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getDefaultNodeType(BlockView arg0, int arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "getBlockPathType(BlockGetter arg0, int arg1, int arg2, int arg3, Mob arg4)",
+			"fabric": "getNodeType(BlockView arg0, int arg1, int arg2, int arg3, MobEntity arg4)"
+		}
+	]
+}

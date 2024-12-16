@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemTransform$Deserializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemTransform$Deserializer",
+			"fabric": "net.minecraft.client.render.model.json.Transformation$Deserializer"
+		},
+		{
+			"forge": "DEFAULT_ROTATION",
+			"fabric": "DEFAULT_ROTATION"
+		},
+		{
+			"forge": "DEFAULT_ROTATION",
+			"fabric": "DEFAULT_ROTATION"
+		},
+		{
+			"forge": "DEFAULT_TRANSLATION",
+			"fabric": "DEFAULT_TRANSLATION"
+		},
+		{
+			"forge": "DEFAULT_SCALE",
+			"fabric": "DEFAULT_SCALE"
+		},
+		{
+			"forge": "MAX_TRANSLATION",
+			"fabric": "field_32808"
+		},
+		{
+			"forge": "MAX_SCALE",
+			"fabric": "field_32809"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "getVector3f(com.google.gson.JsonObject arg0, String arg1, org.joml.Vector3f arg2)",
+			"fabric": "parseVector3f(com.google.gson.JsonObject json, String key, org.joml.Vector3f fallback)"
+		}
+	]
+}

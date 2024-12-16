@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.WeepingVinesPlantBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.WeepingVinesPlantBlock",
+			"fabric": "net.minecraft.block.WeepingVinesPlantBlock"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "getHeadBlock()",
+			"fabric": "getStem()"
+		},
+		{
+			"forge": "getHeadBlock()",
+			"fabric": "getStem()"
+		}
+	]
+}

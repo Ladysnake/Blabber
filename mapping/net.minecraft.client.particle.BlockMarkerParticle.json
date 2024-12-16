@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.particle.BlockMarker",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.BlockMarker",
+			"fabric": "net.minecraft.client.particle.BlockMarkerParticle"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getQuadSize(float arg0)",
+			"fabric": "getSize(float arg0)"
+		}
+	]
+}

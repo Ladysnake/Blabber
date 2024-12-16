@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.network.chat.MutableComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.MutableComponent",
+			"fabric": "net.minecraft.text.MutableText"
+		},
+		{
+			"forge": "contents",
+			"fabric": "content"
+		},
+		{
+			"forge": "contents",
+			"fabric": "content"
+		},
+		{
+			"forge": "siblings",
+			"fabric": "siblings"
+		},
+		{
+			"forge": "style",
+			"fabric": "style"
+		},
+		{
+			"forge": "visualOrderText",
+			"fabric": "ordered"
+		},
+		{
+			"forge": "decomposedWith",
+			"fabric": "language"
+		},
+		{
+			"forge": "create(ComponentContents arg0)",
+			"fabric": "of(TextContent content)"
+		},
+		{
+			"forge": "create(ComponentContents arg0)",
+			"fabric": "of(TextContent content)"
+		},
+		{
+			"forge": "getContents()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "getSiblings()",
+			"fabric": "getSiblings()"
+		},
+		{
+			"forge": "setStyle(Style arg0)",
+			"fabric": "setStyle(Style style)"
+		},
+		{
+			"forge": "getStyle()",
+			"fabric": "getStyle()"
+		},
+		{
+			"forge": "append(String arg0)",
+			"fabric": "append(String text)"
+		},
+		{
+			"forge": "append(Component arg0)",
+			"fabric": "append(Text text)"
+		},
+		{
+			"forge": "withStyle(UnaryOperator<Style> arg0)",
+			"fabric": "styled(UnaryOperator<Style> styleUpdater)"
+		},
+		{
+			"forge": "withStyle(Style arg0)",
+			"fabric": "fillStyle(Style styleOverride)"
+		},
+		{
+			"forge": "withStyle(ChatFormatting... arg0)",
+			"fabric": "formatted(Formatting... formattings)"
+		},
+		{
+			"forge": "withStyle(ChatFormatting arg0)",
+			"fabric": "formatted(Formatting formatting)"
+		},
+		{
+			"forge": "getVisualOrderText()",
+			"fabric": "asOrderedText()"
+		}
+	]
+}

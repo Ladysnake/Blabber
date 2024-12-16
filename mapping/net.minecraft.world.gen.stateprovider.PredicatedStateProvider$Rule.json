@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.stateproviders.RuleBasedBlockStateProvider$Rule",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.stateproviders.RuleBasedBlockStateProvider$Rule",
+			"fabric": "net.minecraft.world.gen.stateprovider.PredicatedStateProvider$Rule"
+		},
+		{
+			"forge": "ifTrue",
+			"fabric": "ifTrue"
+		},
+		{
+			"forge": "ifTrue",
+			"fabric": "ifTrue"
+		},
+		{
+			"forge": "then",
+			"fabric": "then"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "ifTrue()",
+			"fabric": "ifTrue()"
+		},
+		{
+			"forge": "ifTrue()",
+			"fabric": "ifTrue()"
+		},
+		{
+			"forge": "then()",
+			"fabric": "then()"
+		}
+	]
+}

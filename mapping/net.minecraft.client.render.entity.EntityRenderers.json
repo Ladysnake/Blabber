@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.renderer.entity.EntityRenderers",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.EntityRenderers",
+			"fabric": "net.minecraft.client.render.entity.EntityRenderers"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DEFAULT_PLAYER_MODEL",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "PROVIDERS",
+			"fabric": "RENDERER_FACTORIES"
+		},
+		{
+			"forge": "PLAYER_PROVIDERS",
+			"fabric": "PLAYER_RENDERER_FACTORIES"
+		},
+		{
+			"forge": "register(EntityType<? extends T> arg0, EntityRendererProvider<T> arg1)",
+			"fabric": "register(EntityType<? extends T> type, EntityRendererFactory<T> factory)"
+		},
+		{
+			"forge": "register(EntityType<? extends T> arg0, EntityRendererProvider<T> arg1)",
+			"fabric": "register(EntityType<? extends T> type, EntityRendererFactory<T> factory)"
+		},
+		{
+			"forge": "createEntityRenderers(EntityRendererProvider$Context arg0)",
+			"fabric": "reloadEntityRenderers(EntityRendererFactory$Context ctx)"
+		},
+		{
+			"forge": "createPlayerRenderers(EntityRendererProvider$Context arg0)",
+			"fabric": "reloadPlayerRenderers(EntityRendererFactory$Context ctx)"
+		},
+		{
+			"forge": "validateRegistrations()",
+			"fabric": "isMissingRendererFactories()"
+		}
+	]
+}

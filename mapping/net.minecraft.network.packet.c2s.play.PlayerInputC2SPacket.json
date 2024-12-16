@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundPlayerInputPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundPlayerInputPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.PlayerInputC2SPacket"
+		},
+		{
+			"forge": "FLAG_JUMPING",
+			"fabric": "JUMPING_MASK"
+		},
+		{
+			"forge": "FLAG_JUMPING",
+			"fabric": "JUMPING_MASK"
+		},
+		{
+			"forge": "FLAG_SHIFT_KEY_DOWN",
+			"fabric": "SNEAKING_MASK"
+		},
+		{
+			"forge": "xxa",
+			"fabric": "sideways"
+		},
+		{
+			"forge": "zza",
+			"fabric": "forward"
+		},
+		{
+			"forge": "isJumping",
+			"fabric": "jumping"
+		},
+		{
+			"forge": "isShiftKeyDown",
+			"fabric": "sneaking"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getXxa()",
+			"fabric": "getSideways()"
+		},
+		{
+			"forge": "getZza()",
+			"fabric": "getForward()"
+		},
+		{
+			"forge": "isJumping()",
+			"fabric": "isJumping()"
+		},
+		{
+			"forge": "isShiftKeyDown()",
+			"fabric": "isSneaking()"
+		}
+	]
+}

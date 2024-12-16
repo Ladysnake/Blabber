@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.core.DefaultedRegistry",
+	"items": [
+		{
+			"forge": "net.minecraft.core.DefaultedRegistry",
+			"fabric": "net.minecraft.registry.DefaultedRegistry"
+		},
+		{
+			"forge": "getKey(T arg0)",
+			"fabric": "getId(T arg0)"
+		},
+		{
+			"forge": "getKey(T arg0)",
+			"fabric": "getId(T arg0)"
+		},
+		{
+			"forge": "get(ResourceLocation arg0)",
+			"fabric": "get(Identifier arg0)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "getDefaultKey()",
+			"fabric": "getDefaultId()"
+		}
+	]
+}

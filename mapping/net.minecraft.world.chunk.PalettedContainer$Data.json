@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.chunk.PalettedContainer$Data",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.PalettedContainer$Data",
+			"fabric": "net.minecraft.world.chunk.PalettedContainer$Data"
+		},
+		{
+			"forge": "configuration",
+			"fabric": "configuration"
+		},
+		{
+			"forge": "configuration",
+			"fabric": "configuration"
+		},
+		{
+			"forge": "storage",
+			"fabric": "storage"
+		},
+		{
+			"forge": "palette",
+			"fabric": "palette"
+		},
+		{
+			"forge": "copyFrom(Palette<T> arg0, BitStorage arg1)",
+			"fabric": "importFrom(Palette<T> palette, PaletteStorage storage)"
+		},
+		{
+			"forge": "copyFrom(Palette<T> arg0, BitStorage arg1)",
+			"fabric": "importFrom(Palette<T> palette, PaletteStorage storage)"
+		},
+		{
+			"forge": "getSerializedSize()",
+			"fabric": "getPacketSize()"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "writePacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "configuration()",
+			"fabric": "configuration()"
+		},
+		{
+			"forge": "storage()",
+			"fabric": "storage()"
+		},
+		{
+			"forge": "palette()",
+			"fabric": "palette()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.screens.reporting.ChatSelectionScreen$ChatSelectionList$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.reporting.ChatSelectionScreen$ChatSelectionList$Entry",
+			"fabric": "net.minecraft.client.gui.screen.report.ChatSelectionScreen$SelectionListWidget$Entry"
+		},
+		{
+			"forge": "getNarration()",
+			"fabric": "getNarration()"
+		},
+		{
+			"forge": "getNarration()",
+			"fabric": "getNarration()"
+		},
+		{
+			"forge": "isSelected()",
+			"fabric": "isSelected()"
+		},
+		{
+			"forge": "canSelect()",
+			"fabric": "canSelect()"
+		},
+		{
+			"forge": "canReport()",
+			"fabric": "isHighlightedOnHover()"
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.client.gui.screens.telemetry.TelemetryEventWidget",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.telemetry.TelemetryEventWidget",
+			"fabric": "net.minecraft.client.gui.screen.option.TelemetryEventWidget"
+		},
+		{
+			"forge": "HEADER_HORIZONTAL_PADDING",
+			"fabric": "MARGIN_X"
+		},
+		{
+			"forge": "HEADER_HORIZONTAL_PADDING",
+			"fabric": "MARGIN_X"
+		},
+		{
+			"forge": "TELEMETRY_REQUIRED_TRANSLATION_KEY",
+			"fabric": "REQUIRED_TRANSLATION_KEY"
+		},
+		{
+			"forge": "TELEMETRY_OPTIONAL_TRANSLATION_KEY",
+			"fabric": "OPTIONAL_TRANSLATION_KEY"
+		},
+		{
+			"forge": "PROPERTY_TITLE",
+			"fabric": "PROPERTY_TITLE_TEXT"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "content",
+			"fabric": "contents"
+		},
+		{
+			"forge": "onScrolledListener",
+			"fabric": "scrollConsumer"
+		},
+		{
+			"forge": "onOptInChanged(boolean arg0)",
+			"fabric": "refresh(boolean optionalTelemetryEnabled)"
+		},
+		{
+			"forge": "onOptInChanged(boolean arg0)",
+			"fabric": "refresh(boolean optionalTelemetryEnabled)"
+		},
+		{
+			"forge": "buildContent(boolean arg0)",
+			"fabric": "collectContents(boolean optionalTelemetryEnabled)"
+		},
+		{
+			"forge": "setOnScrolledListener(DoubleConsumer arg0)",
+			"fabric": "setScrollConsumer(DoubleConsumer scrollConsumer)"
+		},
+		{
+			"forge": "setScrollAmount(double arg0)",
+			"fabric": "setScrollY(double arg0)"
+		},
+		{
+			"forge": "getInnerHeight()",
+			"fabric": "getContentsHeight()"
+		},
+		{
+			"forge": "scrollRate()",
+			"fabric": "getDeltaYPerScroll()"
+		},
+		{
+			"forge": "renderContents(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderContents(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "addEventType(TelemetryEventWidget$ContentBuilder arg0, TelemetryEventType arg1)",
+			"fabric": "appendEventInfo(TelemetryEventWidget$ContentsBuilder builder, TelemetryEventType eventType)"
+		},
+		{
+			"forge": "addEventTypeProperties(TelemetryEventType arg0, TelemetryEventWidget$ContentBuilder arg1)",
+			"fabric": "appendProperties(TelemetryEventType eventType, TelemetryEventWidget$ContentsBuilder builder)"
+		},
+		{
+			"forge": "containerWidth()",
+			"fabric": "getGridWidth()"
+		}
+	]
+}

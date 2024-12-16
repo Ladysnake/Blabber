@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.FogRenderer$FogMode",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.FogRenderer$FogMode",
+			"fabric": "net.minecraft.client.render.BackgroundRenderer$FogType"
+		},
+		{
+			"forge": "FOG_SKY",
+			"fabric": "FOG_SKY"
+		},
+		{
+			"forge": "FOG_SKY",
+			"fabric": "FOG_SKY"
+		},
+		{
+			"forge": "FOG_TERRAIN",
+			"fabric": "FOG_TERRAIN"
+		}
+	]
+}

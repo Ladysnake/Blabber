@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.BlockPileFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.BlockPileFeature",
+			"fabric": "net.minecraft.world.gen.feature.BlockPileFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<BlockPileConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<BlockPileFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<BlockPileConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<BlockPileFeatureConfig> arg0)"
+		},
+		{
+			"forge": "mayPlaceOn(LevelAccessor arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "canPlace(WorldAccess world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "tryPlaceBlock(LevelAccessor arg0, BlockPos arg1, RandomSource arg2, BlockPileConfiguration arg3)",
+			"fabric": "addPileBlock(WorldAccess world, BlockPos pos, Random random, BlockPileFeatureConfig config)"
+		}
+	]
+}

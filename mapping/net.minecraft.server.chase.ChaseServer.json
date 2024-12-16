@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.server.chase.ChaseServer",
+	"items": [
+		{
+			"forge": "net.minecraft.server.chase.ChaseServer",
+			"fabric": "net.minecraft.server.chase.ChaseServer"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "serverBindAddress",
+			"fabric": "ip"
+		},
+		{
+			"forge": "serverPort",
+			"fabric": "port"
+		},
+		{
+			"forge": "playerList",
+			"fabric": "playerManager"
+		},
+		{
+			"forge": "broadcastIntervalMs",
+			"fabric": "interval"
+		},
+		{
+			"forge": "wantsToRun",
+			"fabric": "running"
+		},
+		{
+			"forge": "serverSocket",
+			"fabric": "socket"
+		},
+		{
+			"forge": "clientSockets",
+			"fabric": "clientSockets"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "runSender()",
+			"fabric": "runSender()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "runAcceptor()",
+			"fabric": "runAcceptor()"
+		},
+		{
+			"forge": "getPlayerPosition()",
+			"fabric": "getTeleportPosition()"
+		}
+	]
+}

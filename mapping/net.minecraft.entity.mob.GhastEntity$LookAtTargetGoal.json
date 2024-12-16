@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.monster.Ghast$GhastLookGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Ghast$GhastLookGoal",
+			"fabric": "net.minecraft.entity.mob.GhastEntity$LookAtTargetGoal"
+		},
+		{
+			"forge": "ghast",
+			"fabric": "ghast"
+		},
+		{
+			"forge": "ghast",
+			"fabric": "ghast"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "requiresUpdateEveryTick()",
+			"fabric": "shouldRunEveryTick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

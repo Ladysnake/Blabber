@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.valueproviders.SampledFloat",
+	"items": [
+		{
+			"forge": "net.minecraft.util.valueproviders.SampledFloat",
+			"fabric": "net.minecraft.util.math.floatprovider.FloatSupplier"
+		},
+		{
+			"forge": "sample(RandomSource arg0)",
+			"fabric": "get(Random random)"
+		},
+		{
+			"forge": "sample(RandomSource arg0)",
+			"fabric": "get(Random random)"
+		}
+	]
+}

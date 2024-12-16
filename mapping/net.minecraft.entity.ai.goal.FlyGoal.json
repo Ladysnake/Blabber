@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.WaterAvoidingRandomFlyingGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.WaterAvoidingRandomFlyingGoal",
+			"fabric": "net.minecraft.entity.ai.goal.FlyGoal"
+		},
+		{
+			"forge": "getPosition()",
+			"fabric": "getWanderTarget()"
+		},
+		{
+			"forge": "getPosition()",
+			"fabric": "getWanderTarget()"
+		}
+	]
+}

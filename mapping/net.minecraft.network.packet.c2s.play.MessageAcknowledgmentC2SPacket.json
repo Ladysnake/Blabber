@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundChatAckPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundChatAckPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.MessageAcknowledgmentC2SPacket"
+		},
+		{
+			"forge": "offset",
+			"fabric": "offset"
+		},
+		{
+			"forge": "offset",
+			"fabric": "offset"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "offset()",
+			"fabric": "offset()"
+		}
+	]
+}

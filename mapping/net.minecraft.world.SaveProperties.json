@@ -1,0 +1,153 @@
+{
+	"title": "net.minecraft.world.level.storage.WorldData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.WorldData",
+			"fabric": "net.minecraft.world.SaveProperties"
+		},
+		{
+			"forge": "ANVIL_VERSION_ID",
+			"fabric": "ANVIL_FORMAT_ID"
+		},
+		{
+			"forge": "ANVIL_VERSION_ID",
+			"fabric": "ANVIL_FORMAT_ID"
+		},
+		{
+			"forge": "MCREGION_VERSION_ID",
+			"fabric": "MCREGION_FORMAT_ID"
+		},
+		{
+			"forge": "getDataConfiguration()",
+			"fabric": "getDataConfiguration()"
+		},
+		{
+			"forge": "getDataConfiguration()",
+			"fabric": "getDataConfiguration()"
+		},
+		{
+			"forge": "setDataConfiguration(WorldDataConfiguration arg0)",
+			"fabric": "updateLevelInfo(DataConfiguration dataConfiguration)"
+		},
+		{
+			"forge": "wasModded()",
+			"fabric": "isModded()"
+		},
+		{
+			"forge": "getKnownServerBrands()",
+			"fabric": "getServerBrands()"
+		},
+		{
+			"forge": "getRemovedFeatureFlags()",
+			"fabric": "getRemovedFeatures()"
+		},
+		{
+			"forge": "setModdedInfo(String arg0, boolean arg1)",
+			"fabric": "addServerBrand(String brand, boolean modded)"
+		},
+		{
+			"forge": "fillCrashReportCategory(CrashReportCategory arg0)",
+			"fabric": "populateCrashReport(CrashReportSection section)"
+		},
+		{
+			"forge": "getStorageVersionName(int arg0)",
+			"fabric": "getFormatName(int id)"
+		},
+		{
+			"forge": "getCustomBossEvents()",
+			"fabric": "getCustomBossEvents()"
+		},
+		{
+			"forge": "setCustomBossEvents(CompoundTag arg0)",
+			"fabric": "setCustomBossEvents(NbtCompound customBossEvents)"
+		},
+		{
+			"forge": "overworldData()",
+			"fabric": "getMainWorldProperties()"
+		},
+		{
+			"forge": "getLevelSettings()",
+			"fabric": "getLevelInfo()"
+		},
+		{
+			"forge": "createTag(RegistryAccess arg0, CompoundTag arg1)",
+			"fabric": "cloneWorldNbt(DynamicRegistryManager registryManager, NbtCompound playerNbt)"
+		},
+		{
+			"forge": "isHardcore()",
+			"fabric": "isHardcore()"
+		},
+		{
+			"forge": "getVersion()",
+			"fabric": "getVersion()"
+		},
+		{
+			"forge": "getLevelName()",
+			"fabric": "getLevelName()"
+		},
+		{
+			"forge": "getGameType()",
+			"fabric": "getGameMode()"
+		},
+		{
+			"forge": "setGameType(GameType arg0)",
+			"fabric": "setGameMode(GameMode gameMode)"
+		},
+		{
+			"forge": "getAllowCommands()",
+			"fabric": "areCommandsAllowed()"
+		},
+		{
+			"forge": "getDifficulty()",
+			"fabric": "getDifficulty()"
+		},
+		{
+			"forge": "setDifficulty(Difficulty arg0)",
+			"fabric": "setDifficulty(Difficulty difficulty)"
+		},
+		{
+			"forge": "isDifficultyLocked()",
+			"fabric": "isDifficultyLocked()"
+		},
+		{
+			"forge": "setDifficultyLocked(boolean arg0)",
+			"fabric": "setDifficultyLocked(boolean difficultyLocked)"
+		},
+		{
+			"forge": "getGameRules()",
+			"fabric": "getGameRules()"
+		},
+		{
+			"forge": "getLoadedPlayerTag()",
+			"fabric": "getPlayerData()"
+		},
+		{
+			"forge": "endDragonFightData()",
+			"fabric": "getDragonFight()"
+		},
+		{
+			"forge": "setEndDragonFightData(EndDragonFight$Data arg0)",
+			"fabric": "setDragonFight(EnderDragonFight$Data dragonFight)"
+		},
+		{
+			"forge": "worldGenOptions()",
+			"fabric": "getGeneratorOptions()"
+		},
+		{
+			"forge": "isFlatWorld()",
+			"fabric": "isFlatWorld()"
+		},
+		{
+			"forge": "isDebugWorld()",
+			"fabric": "isDebugWorld()"
+		},
+		{
+			"forge": "worldGenSettingsLifecycle()",
+			"fabric": "getLifecycle()"
+		},
+		{
+			"forge": "enabledFeatures()",
+			"fabric": "getEnabledFeatures()"
+		}
+	]
+}

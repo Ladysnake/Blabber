@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.resources.language.LanguageManager",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.language.LanguageManager",
+			"fabric": "net.minecraft.client.resource.language.LanguageManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DEFAULT_LANGUAGE_CODE",
+			"fabric": "DEFAULT_LANGUAGE_CODE"
+		},
+		{
+			"forge": "DEFAULT_LANGUAGE",
+			"fabric": "ENGLISH_US"
+		},
+		{
+			"forge": "languages",
+			"fabric": "languageDefs"
+		},
+		{
+			"forge": "currentCode",
+			"fabric": "currentLanguageCode"
+		},
+		{
+			"forge": "extractLanguages(Stream<PackResources> arg0)",
+			"fabric": "loadAvailableLanguages(Stream<ResourcePack> packs)"
+		},
+		{
+			"forge": "extractLanguages(Stream<PackResources> arg0)",
+			"fabric": "loadAvailableLanguages(Stream<ResourcePack> packs)"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		},
+		{
+			"forge": "setSelected(String arg0)",
+			"fabric": "setLanguage(String languageCode)"
+		},
+		{
+			"forge": "getSelected()",
+			"fabric": "getLanguage()"
+		},
+		{
+			"forge": "getLanguages()",
+			"fabric": "getAllLanguages()"
+		},
+		{
+			"forge": "getLanguage(String arg0)",
+			"fabric": "getLanguage(String code)"
+		}
+	]
+}

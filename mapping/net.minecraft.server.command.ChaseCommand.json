@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.server.commands.ChaseCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.ChaseCommand",
+			"fabric": "net.minecraft.server.command.ChaseCommand"
+		},
+		{
+			"forge": "DEFAULT_CONNECT_HOST",
+			"fabric": "LOCALHOST"
+		},
+		{
+			"forge": "DEFAULT_CONNECT_HOST",
+			"fabric": "LOCALHOST"
+		},
+		{
+			"forge": "DEFAULT_BIND_ADDRESS",
+			"fabric": "BIND_ALL"
+		},
+		{
+			"forge": "DEFAULT_PORT",
+			"fabric": "DEFAULT_PORT"
+		},
+		{
+			"forge": "BROADCAST_INTERVAL_MS",
+			"fabric": "INTERVAL"
+		},
+		{
+			"forge": "DIMENSION_NAMES",
+			"fabric": "DIMENSIONS"
+		},
+		{
+			"forge": "chaseServer",
+			"fabric": "server"
+		},
+		{
+			"forge": "chaseClient",
+			"fabric": "client"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "stop(CommandSourceStack arg0)",
+			"fabric": "stop(ServerCommandSource source)"
+		},
+		{
+			"forge": "alreadyRunning(CommandSourceStack arg0)",
+			"fabric": "isRunning(ServerCommandSource source)"
+		},
+		{
+			"forge": "lead(CommandSourceStack arg0, String arg1, int arg2)",
+			"fabric": "startServer(ServerCommandSource source, String ip, int port)"
+		},
+		{
+			"forge": "follow(CommandSourceStack arg0, String arg1, int arg2)",
+			"fabric": "startClient(ServerCommandSource source, String ip, int port)"
+		}
+	]
+}

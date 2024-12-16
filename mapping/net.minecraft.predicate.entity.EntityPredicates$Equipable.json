@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.EntitySelector$MobCanWearArmorEntitySelector",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.EntitySelector$MobCanWearArmorEntitySelector",
+			"fabric": "net.minecraft.predicate.entity.EntityPredicates$Equipable"
+		},
+		{
+			"forge": "itemStack",
+			"fabric": "stack"
+		},
+		{
+			"forge": "itemStack",
+			"fabric": "stack"
+		},
+		{
+			"forge": "test(Entity arg0)",
+			"fabric": "test(Entity arg0)"
+		},
+		{
+			"forge": "test(Entity arg0)",
+			"fabric": "test(Entity arg0)"
+		}
+	]
+}

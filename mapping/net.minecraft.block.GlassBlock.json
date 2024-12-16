@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.level.block.GlassBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.GlassBlock",
+			"fabric": "net.minecraft.block.GlassBlock"
+		}
+	]
+}

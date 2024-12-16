@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.block.ModelBlockRenderer$Cache$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.ModelBlockRenderer$Cache$1",
+			"fabric": "net.minecraft.client.render.block.BlockModelRenderer$BrightnessCache$1"
+		},
+		{
+			"forge": "rehash(int arg0)",
+			"fabric": "rehash(int newN)"
+		},
+		{
+			"forge": "rehash(int arg0)",
+			"fabric": "rehash(int newN)"
+		}
+	]
+}

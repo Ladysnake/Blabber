@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.BellAttachType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.BellAttachType",
+			"fabric": "net.minecraft.block.enums.Attachment"
+		},
+		{
+			"forge": "FLOOR",
+			"fabric": "FLOOR"
+		},
+		{
+			"forge": "FLOOR",
+			"fabric": "FLOOR"
+		},
+		{
+			"forge": "CEILING",
+			"fabric": "CEILING"
+		},
+		{
+			"forge": "SINGLE_WALL",
+			"fabric": "SINGLE_WALL"
+		},
+		{
+			"forge": "DOUBLE_WALL",
+			"fabric": "DOUBLE_WALL"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

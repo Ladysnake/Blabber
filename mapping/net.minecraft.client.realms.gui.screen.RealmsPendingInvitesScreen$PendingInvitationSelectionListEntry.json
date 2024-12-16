@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsPendingInvitesScreen$Entry",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsPendingInvitesScreen$Entry",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsPendingInvitesScreen$PendingInvitationSelectionListEntry"
+		},
+		{
+			"forge": "TEXT_LEFT",
+			"fabric": "field_32123"
+		},
+		{
+			"forge": "TEXT_LEFT",
+			"fabric": "field_32123"
+		},
+		{
+			"forge": "pendingInvite",
+			"fabric": "mPendingInvite"
+		},
+		{
+			"forge": "rowButtons",
+			"fabric": "buttons"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "renderPendingInvitationItem(GuiGraphics arg0, PendingInvite arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "renderPendingInvitationItem(DrawContext context, PendingInvite invite, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "getNarration()",
+			"fabric": "getNarration()"
+		}
+	]
+}

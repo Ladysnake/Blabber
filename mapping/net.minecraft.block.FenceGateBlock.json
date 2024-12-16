@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.world.level.block.FenceGateBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.FenceGateBlock",
+			"fabric": "net.minecraft.block.FenceGateBlock"
+		},
+		{
+			"forge": "OPEN",
+			"fabric": "OPEN"
+		},
+		{
+			"forge": "OPEN",
+			"fabric": "OPEN"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "IN_WALL",
+			"fabric": "IN_WALL"
+		},
+		{
+			"forge": "Z_SHAPE",
+			"fabric": "Z_AXIS_SHAPE"
+		},
+		{
+			"forge": "X_SHAPE",
+			"fabric": "X_AXIS_SHAPE"
+		},
+		{
+			"forge": "Z_SHAPE_LOW",
+			"fabric": "IN_WALL_Z_AXIS_SHAPE"
+		},
+		{
+			"forge": "X_SHAPE_LOW",
+			"fabric": "IN_WALL_X_AXIS_SHAPE"
+		},
+		{
+			"forge": "Z_COLLISION_SHAPE",
+			"fabric": "Z_AXIS_COLLISION_SHAPE"
+		},
+		{
+			"forge": "X_COLLISION_SHAPE",
+			"fabric": "X_AXIS_COLLISION_SHAPE"
+		},
+		{
+			"forge": "Z_SUPPORT_SHAPE",
+			"fabric": "Z_AXIS_SIDES_SHAPE"
+		},
+		{
+			"forge": "X_SUPPORT_SHAPE",
+			"fabric": "X_AXIS_SIDES_SHAPE"
+		},
+		{
+			"forge": "Z_OCCLUSION_SHAPE",
+			"fabric": "Z_AXIS_CULL_SHAPE"
+		},
+		{
+			"forge": "X_OCCLUSION_SHAPE",
+			"fabric": "X_AXIS_CULL_SHAPE"
+		},
+		{
+			"forge": "Z_OCCLUSION_SHAPE_LOW",
+			"fabric": "IN_WALL_Z_AXIS_CULL_SHAPE"
+		},
+		{
+			"forge": "X_OCCLUSION_SHAPE_LOW",
+			"fabric": "IN_WALL_X_AXIS_CULL_SHAPE"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getBlockSupportShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getSidesShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getOcclusionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getCullingShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "isWall(BlockState arg0)",
+			"fabric": "isWall(BlockState state)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "connectsToDirection(BlockState arg0, Direction arg1)",
+			"fabric": "canWallConnect(BlockState state, Direction side)"
+		}
+	]
+}

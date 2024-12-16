@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.core.Position",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Position",
+			"fabric": "net.minecraft.util.math.Position"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "y()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "z()",
+			"fabric": "getZ()"
+		}
+	]
+}

@@ -1,0 +1,185 @@
+{
+	"title": "net.minecraft.world.level.entity.PersistentEntitySectionManager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.entity.PersistentEntitySectionManager",
+			"fabric": "net.minecraft.server.world.ServerEntityManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "knownUuids",
+			"fabric": "entityUuids"
+		},
+		{
+			"forge": "callbacks",
+			"fabric": "handler"
+		},
+		{
+			"forge": "permanentStorage",
+			"fabric": "dataAccess"
+		},
+		{
+			"forge": "visibleEntityStorage",
+			"fabric": "index"
+		},
+		{
+			"forge": "sectionStorage",
+			"fabric": "cache"
+		},
+		{
+			"forge": "entityGetter",
+			"fabric": "lookup"
+		},
+		{
+			"forge": "chunkVisibility",
+			"fabric": "trackingStatuses"
+		},
+		{
+			"forge": "chunkLoadStatuses",
+			"fabric": "managedStatuses"
+		},
+		{
+			"forge": "chunksToUnload",
+			"fabric": "pendingUnloads"
+		},
+		{
+			"forge": "loadingInbox",
+			"fabric": "loadingQueue"
+		},
+		{
+			"forge": "removeSectionIfEmpty(long arg0, EntitySection<T> arg1)",
+			"fabric": "entityLeftSection(long sectionPos, EntityTrackingSection<T> section)"
+		},
+		{
+			"forge": "removeSectionIfEmpty(long arg0, EntitySection<T> arg1)",
+			"fabric": "entityLeftSection(long sectionPos, EntityTrackingSection<T> section)"
+		},
+		{
+			"forge": "addEntityUuid(T arg0)",
+			"fabric": "addEntityUuid(T entity)"
+		},
+		{
+			"forge": "addNewEntity(T arg0)",
+			"fabric": "addEntity(T entity)"
+		},
+		{
+			"forge": "addEntity(T arg0, boolean arg1)",
+			"fabric": "addEntity(T entity, boolean existing)"
+		},
+		{
+			"forge": "getEffectiveStatus(T arg0, Visibility arg1)",
+			"fabric": "getNeededLoadStatus(T entity, EntityTrackingStatus current)"
+		},
+		{
+			"forge": "addLegacyChunkEntities(Stream<T> arg0)",
+			"fabric": "loadEntities(Stream<T> entities)"
+		},
+		{
+			"forge": "addWorldGenChunkEntities(Stream<T> arg0)",
+			"fabric": "addEntities(Stream<T> entities)"
+		},
+		{
+			"forge": "startTicking(T arg0)",
+			"fabric": "startTicking(T entity)"
+		},
+		{
+			"forge": "stopTicking(T arg0)",
+			"fabric": "stopTicking(T entity)"
+		},
+		{
+			"forge": "startTracking(T arg0)",
+			"fabric": "startTracking(T entity)"
+		},
+		{
+			"forge": "stopTracking(T arg0)",
+			"fabric": "stopTracking(T entity)"
+		},
+		{
+			"forge": "updateChunkStatus(ChunkPos arg0, FullChunkStatus arg1)",
+			"fabric": "updateTrackingStatus(ChunkPos chunkPos, ChunkLevelType levelType)"
+		},
+		{
+			"forge": "updateChunkStatus(ChunkPos arg0, Visibility arg1)",
+			"fabric": "updateTrackingStatus(ChunkPos chunkPos, EntityTrackingStatus trackingStatus)"
+		},
+		{
+			"forge": "ensureChunkQueuedForLoad(long arg0)",
+			"fabric": "readIfFresh(long chunkPos)"
+		},
+		{
+			"forge": "storeChunkSections(long arg0, Consumer<T> arg1)",
+			"fabric": "trySave(long chunkPos, Consumer<T> action)"
+		},
+		{
+			"forge": "requestChunkLoad(long arg0)",
+			"fabric": "scheduleRead(long chunkPos)"
+		},
+		{
+			"forge": "processChunkUnload(long arg0)",
+			"fabric": "unload(long chunkPos)"
+		},
+		{
+			"forge": "unloadEntity(EntityAccess arg0)",
+			"fabric": "unload(EntityLike entity)"
+		},
+		{
+			"forge": "processUnloads()",
+			"fabric": "unloadChunks()"
+		},
+		{
+			"forge": "processPendingLoads()",
+			"fabric": "loadChunks()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getAllChunksToSave()",
+			"fabric": "getLoadedChunks()"
+		},
+		{
+			"forge": "autoSave()",
+			"fabric": "save()"
+		},
+		{
+			"forge": "saveAll()",
+			"fabric": "flush()"
+		},
+		{
+			"forge": "isLoaded(UUID arg0)",
+			"fabric": "has(UUID uuid)"
+		},
+		{
+			"forge": "getEntityGetter()",
+			"fabric": "getLookup()"
+		},
+		{
+			"forge": "canPositionTick(BlockPos arg0)",
+			"fabric": "shouldTick(BlockPos pos)"
+		},
+		{
+			"forge": "canPositionTick(ChunkPos arg0)",
+			"fabric": "shouldTick(ChunkPos pos)"
+		},
+		{
+			"forge": "areEntitiesLoaded(long arg0)",
+			"fabric": "isLoaded(long chunkPos)"
+		},
+		{
+			"forge": "dumpSections(Writer arg0)",
+			"fabric": "dump(Writer writer)"
+		},
+		{
+			"forge": "gatherStats()",
+			"fabric": "getDebugString()"
+		}
+	]
+}

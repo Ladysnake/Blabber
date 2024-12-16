@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.state.BlockState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.BlockState",
+			"fabric": "net.minecraft.block.BlockState"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "asState()",
+			"fabric": "asBlockState()"
+		},
+		{
+			"forge": "asState()",
+			"fabric": "asBlockState()"
+		}
+	]
+}

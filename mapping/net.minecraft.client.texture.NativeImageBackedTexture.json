@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.renderer.texture.DynamicTexture",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.DynamicTexture",
+			"fabric": "net.minecraft.client.texture.NativeImageBackedTexture"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "pixels",
+			"fabric": "image"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "upload()",
+			"fabric": "upload()"
+		},
+		{
+			"forge": "getPixels()",
+			"fabric": "getImage()"
+		},
+		{
+			"forge": "setPixels(NativeImage arg0)",
+			"fabric": "setImage(NativeImage image)"
+		},
+		{
+			"forge": "dumpContents(ResourceLocation arg0, Path arg1)",
+			"fabric": "save(Identifier arg0, Path arg1)"
+		}
+	]
+}

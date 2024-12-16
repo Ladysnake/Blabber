@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.protocol.BundlerInfo$2$1",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.BundlerInfo$2$1",
+			"fabric": "net.minecraft.network.PacketBundleHandler$2$1"
+		},
+		{
+			"forge": "bundlePackets",
+			"fabric": "packets"
+		},
+		{
+			"forge": "bundlePackets",
+			"fabric": "packets"
+		},
+		{
+			"forge": "addPacket(Packet<?> arg0)",
+			"fabric": "add(Packet<?> arg0)"
+		},
+		{
+			"forge": "addPacket(Packet<?> arg0)",
+			"fabric": "add(Packet<?> arg0)"
+		}
+	]
+}

@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.server.level.ServerPlayerGameMode",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ServerPlayerGameMode",
+			"fabric": "net.minecraft.server.network.ServerPlayerInteractionManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "gameModeForPlayer",
+			"fabric": "gameMode"
+		},
+		{
+			"forge": "previousGameModeForPlayer",
+			"fabric": "previousGameMode"
+		},
+		{
+			"forge": "isDestroyingBlock",
+			"fabric": "mining"
+		},
+		{
+			"forge": "destroyProgressStart",
+			"fabric": "startMiningTime"
+		},
+		{
+			"forge": "destroyPos",
+			"fabric": "miningPos"
+		},
+		{
+			"forge": "gameTicks",
+			"fabric": "tickCounter"
+		},
+		{
+			"forge": "hasDelayedDestroy",
+			"fabric": "failedToMine"
+		},
+		{
+			"forge": "delayedDestroyPos",
+			"fabric": "failedMiningPos"
+		},
+		{
+			"forge": "delayedTickStart",
+			"fabric": "failedStartMiningTime"
+		},
+		{
+			"forge": "lastSentState",
+			"fabric": "blockBreakingProgress"
+		},
+		{
+			"forge": "changeGameModeForPlayer(GameType arg0)",
+			"fabric": "changeGameMode(GameMode gameMode)"
+		},
+		{
+			"forge": "changeGameModeForPlayer(GameType arg0)",
+			"fabric": "changeGameMode(GameMode gameMode)"
+		},
+		{
+			"forge": "setGameModeForPlayer(GameType arg0, GameType arg1)",
+			"fabric": "setGameMode(GameMode gameMode, GameMode previousGameMode)"
+		},
+		{
+			"forge": "getGameModeForPlayer()",
+			"fabric": "getGameMode()"
+		},
+		{
+			"forge": "getPreviousGameModeForPlayer()",
+			"fabric": "getPreviousGameMode()"
+		},
+		{
+			"forge": "isSurvival()",
+			"fabric": "isSurvivalLike()"
+		},
+		{
+			"forge": "isCreative()",
+			"fabric": "isCreative()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "update()"
+		},
+		{
+			"forge": "incrementDestroyProgress(BlockState arg0, BlockPos arg1, int arg2)",
+			"fabric": "continueMining(BlockState state, BlockPos pos, int failedStartMiningTime)"
+		},
+		{
+			"forge": "debugLogging(BlockPos arg0, boolean arg1, int arg2, String arg3)",
+			"fabric": "method_41250(BlockPos pos, boolean success, int sequence, String reason)"
+		},
+		{
+			"forge": "handleBlockBreakAction(BlockPos arg0, ServerboundPlayerActionPacket$Action arg1, Direction arg2, int arg3, int arg4)",
+			"fabric": "processBlockBreakingAction(BlockPos pos, PlayerActionC2SPacket$Action action, Direction direction, int worldHeight, int sequence)"
+		},
+		{
+			"forge": "destroyAndAck(BlockPos arg0, int arg1, String arg2)",
+			"fabric": "finishMining(BlockPos pos, int sequence, String reason)"
+		},
+		{
+			"forge": "destroyBlock(BlockPos arg0)",
+			"fabric": "tryBreakBlock(BlockPos pos)"
+		},
+		{
+			"forge": "useItem(ServerPlayer arg0, Level arg1, ItemStack arg2, InteractionHand arg3)",
+			"fabric": "interactItem(ServerPlayerEntity player, World world, ItemStack stack, Hand hand)"
+		},
+		{
+			"forge": "useItemOn(ServerPlayer arg0, Level arg1, ItemStack arg2, InteractionHand arg3, BlockHitResult arg4)",
+			"fabric": "interactBlock(ServerPlayerEntity player, World world, ItemStack stack, Hand hand, BlockHitResult hitResult)"
+		},
+		{
+			"forge": "setLevel(ServerLevel arg0)",
+			"fabric": "setWorld(ServerWorld world)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.CriteriaRenameFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.CriteriaRenameFix",
+			"fabric": "net.minecraft.datafixer.fix.AdvancementCriteriaRenameFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "description"
+		},
+		{
+			"forge": "name",
+			"fabric": "description"
+		},
+		{
+			"forge": "advancementId",
+			"fabric": "advancementId"
+		},
+		{
+			"forge": "conversions",
+			"fabric": "renamer"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "update(com.mojang.serialization.Dynamic<?> advancements)"
+		},
+		{
+			"forge": "fixAdvancements(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "update(com.mojang.serialization.Dynamic<?> advancements)"
+		}
+	]
+}

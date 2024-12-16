@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.village.poi.PoiType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.village.poi.PoiType",
+			"fabric": "net.minecraft.world.poi.PointOfInterestType"
+		},
+		{
+			"forge": "matchingStates",
+			"fabric": "blockStates"
+		},
+		{
+			"forge": "matchingStates",
+			"fabric": "blockStates"
+		},
+		{
+			"forge": "maxTickets",
+			"fabric": "ticketCount"
+		},
+		{
+			"forge": "validRange",
+			"fabric": "searchDistance"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "is(BlockState arg0)",
+			"fabric": "contains(BlockState state)"
+		},
+		{
+			"forge": "is(BlockState arg0)",
+			"fabric": "contains(BlockState state)"
+		},
+		{
+			"forge": "matchingStates()",
+			"fabric": "blockStates()"
+		},
+		{
+			"forge": "maxTickets()",
+			"fabric": "ticketCount()"
+		},
+		{
+			"forge": "validRange()",
+			"fabric": "searchDistance()"
+		}
+	]
+}

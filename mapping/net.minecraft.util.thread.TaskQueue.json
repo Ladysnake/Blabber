@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.thread.StrictQueue",
+	"items": [
+		{
+			"forge": "net.minecraft.util.thread.StrictQueue",
+			"fabric": "net.minecraft.util.thread.TaskQueue"
+		},
+		{
+			"forge": "pop()",
+			"fabric": "poll()"
+		},
+		{
+			"forge": "pop()",
+			"fabric": "poll()"
+		},
+		{
+			"forge": "push(T arg0)",
+			"fabric": "add(T message)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "size()",
+			"fabric": "getSize()"
+		}
+	]
+}

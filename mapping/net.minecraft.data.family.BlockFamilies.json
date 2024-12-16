@@ -1,0 +1,293 @@
+{
+	"title": "net.minecraft.data.BlockFamilies",
+	"items": [
+		{
+			"forge": "net.minecraft.data.BlockFamilies",
+			"fabric": "net.minecraft.data.family.BlockFamilies"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "BASE_BLOCKS_TO_FAMILIES"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "BASE_BLOCKS_TO_FAMILIES"
+		},
+		{
+			"forge": "RECIPE_GROUP_PREFIX_WOODEN",
+			"fabric": "WOODEN_GROUP"
+		},
+		{
+			"forge": "RECIPE_UNLOCKED_BY_HAS_PLANKS",
+			"fabric": "WOODEN_UNLOCK_CRITERION_NAME"
+		},
+		{
+			"forge": "ACACIA_PLANKS",
+			"fabric": "ACACIA"
+		},
+		{
+			"forge": "CHERRY_PLANKS",
+			"fabric": "CHERRY"
+		},
+		{
+			"forge": "BIRCH_PLANKS",
+			"fabric": "BIRCH"
+		},
+		{
+			"forge": "CRIMSON_PLANKS",
+			"fabric": "CRIMSON"
+		},
+		{
+			"forge": "JUNGLE_PLANKS",
+			"fabric": "JUNGLE"
+		},
+		{
+			"forge": "OAK_PLANKS",
+			"fabric": "OAK"
+		},
+		{
+			"forge": "DARK_OAK_PLANKS",
+			"fabric": "DARK_OAK"
+		},
+		{
+			"forge": "SPRUCE_PLANKS",
+			"fabric": "SPRUCE"
+		},
+		{
+			"forge": "WARPED_PLANKS",
+			"fabric": "WARPED"
+		},
+		{
+			"forge": "MANGROVE_PLANKS",
+			"fabric": "MANGROVE"
+		},
+		{
+			"forge": "BAMBOO_PLANKS",
+			"fabric": "BAMBOO"
+		},
+		{
+			"forge": "BAMBOO_MOSAIC",
+			"fabric": "BAMBOO_MOSAIC"
+		},
+		{
+			"forge": "MUD_BRICKS",
+			"fabric": "MUD_BRICK"
+		},
+		{
+			"forge": "ANDESITE",
+			"fabric": "ANDESITE"
+		},
+		{
+			"forge": "POLISHED_ANDESITE",
+			"fabric": "POLISHED_ANDESITE"
+		},
+		{
+			"forge": "BLACKSTONE",
+			"fabric": "BLACKSTONE"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE",
+			"fabric": "POLISHED_BLACKSTONE"
+		},
+		{
+			"forge": "POLISHED_BLACKSTONE_BRICKS",
+			"fabric": "POLISHED_BLACKSTONE_BRICK"
+		},
+		{
+			"forge": "BRICKS",
+			"fabric": "BRICK"
+		},
+		{
+			"forge": "END_STONE_BRICKS",
+			"fabric": "END_STONE_BRICK"
+		},
+		{
+			"forge": "MOSSY_STONE_BRICKS",
+			"fabric": "MOSSY_STONE_BRICK"
+		},
+		{
+			"forge": "COPPER_BLOCK",
+			"fabric": "COPPER_BLOCK"
+		},
+		{
+			"forge": "CUT_COPPER",
+			"fabric": "CUT_COPPER"
+		},
+		{
+			"forge": "WAXED_COPPER_BLOCK",
+			"fabric": "WAXED_COPPER_BLOCK"
+		},
+		{
+			"forge": "WAXED_CUT_COPPER",
+			"fabric": "WAXED_CUT_COPPER"
+		},
+		{
+			"forge": "EXPOSED_COPPER",
+			"fabric": "EXPOSED_COPPER"
+		},
+		{
+			"forge": "EXPOSED_CUT_COPPER",
+			"fabric": "EXPOSED_CUT_COPPER"
+		},
+		{
+			"forge": "WAXED_EXPOSED_COPPER",
+			"fabric": "WAXED_EXPOSED_COPPER"
+		},
+		{
+			"forge": "WAXED_EXPOSED_CUT_COPPER",
+			"fabric": "WAXED_EXPOSED_CUT_COPPER"
+		},
+		{
+			"forge": "WEATHERED_COPPER",
+			"fabric": "WEATHERED_COPPER"
+		},
+		{
+			"forge": "WEATHERED_CUT_COPPER",
+			"fabric": "WEATHERED_CUT_COPPER"
+		},
+		{
+			"forge": "WAXED_WEATHERED_COPPER",
+			"fabric": "WAXED_WEATHERED_COPPER"
+		},
+		{
+			"forge": "WAXED_WEATHERED_CUT_COPPER",
+			"fabric": "WAXED_WEATHERED_CUT_COPPER"
+		},
+		{
+			"forge": "OXIDIZED_COPPER",
+			"fabric": "OXIDIZED_COPPER"
+		},
+		{
+			"forge": "OXIDIZED_CUT_COPPER",
+			"fabric": "OXIDIZED_CUT_COPPER"
+		},
+		{
+			"forge": "WAXED_OXIDIZED_COPPER",
+			"fabric": "WAXED_OXIDIZED_COPPER"
+		},
+		{
+			"forge": "WAXED_OXIDIZED_CUT_COPPER",
+			"fabric": "WAXED_OXIDIZED_CUT_COPPER"
+		},
+		{
+			"forge": "COBBLESTONE",
+			"fabric": "COBBLESTONE"
+		},
+		{
+			"forge": "MOSSY_COBBLESTONE",
+			"fabric": "MOSSY_COBBLESTONE"
+		},
+		{
+			"forge": "DIORITE",
+			"fabric": "DIORITE"
+		},
+		{
+			"forge": "POLISHED_DIORITE",
+			"fabric": "POLISHED_DIORITE"
+		},
+		{
+			"forge": "GRANITE",
+			"fabric": "GRANITE"
+		},
+		{
+			"forge": "POLISHED_GRANITE",
+			"fabric": "POLISHED_GRANITE"
+		},
+		{
+			"forge": "NETHER_BRICKS",
+			"fabric": "NETHER_BRICK"
+		},
+		{
+			"forge": "RED_NETHER_BRICKS",
+			"fabric": "RED_NETHER_BRICK"
+		},
+		{
+			"forge": "PRISMARINE",
+			"fabric": "PRISMARINE"
+		},
+		{
+			"forge": "PURPUR",
+			"fabric": "PURPUR"
+		},
+		{
+			"forge": "PRISMARINE_BRICKS",
+			"fabric": "PRISMARINE_BRICK"
+		},
+		{
+			"forge": "DARK_PRISMARINE",
+			"fabric": "DARK_PRISMARINE"
+		},
+		{
+			"forge": "QUARTZ",
+			"fabric": "QUARTZ_BLOCK"
+		},
+		{
+			"forge": "SMOOTH_QUARTZ",
+			"fabric": "SMOOTH_QUARTZ"
+		},
+		{
+			"forge": "SANDSTONE",
+			"fabric": "SANDSTONE"
+		},
+		{
+			"forge": "CUT_SANDSTONE",
+			"fabric": "CUT_SANDSTONE"
+		},
+		{
+			"forge": "SMOOTH_SANDSTONE",
+			"fabric": "SMOOTH_SANDSTONE"
+		},
+		{
+			"forge": "RED_SANDSTONE",
+			"fabric": "RED_SANDSTONE"
+		},
+		{
+			"forge": "CUT_RED_SANDSTONE",
+			"fabric": "CUT_RED_SANDSTONE"
+		},
+		{
+			"forge": "SMOOTH_RED_SANDSTONE",
+			"fabric": "SMOOTH_RED_SANDSTONE"
+		},
+		{
+			"forge": "STONE",
+			"fabric": "STONE"
+		},
+		{
+			"forge": "STONE_BRICK",
+			"fabric": "STONE_BRICK"
+		},
+		{
+			"forge": "DEEPSLATE",
+			"fabric": "DEEPSLATE"
+		},
+		{
+			"forge": "COBBLED_DEEPSLATE",
+			"fabric": "COBBLED_DEEPSLATE"
+		},
+		{
+			"forge": "POLISHED_DEEPSLATE",
+			"fabric": "POLISHED_DEEPSLATE"
+		},
+		{
+			"forge": "DEEPSLATE_BRICKS",
+			"fabric": "DEEPSLATE_BRICK"
+		},
+		{
+			"forge": "DEEPSLATE_TILES",
+			"fabric": "DEEPSLATE_TILE"
+		},
+		{
+			"forge": "familyBuilder(Block arg0)",
+			"fabric": "register(Block baseBlock)"
+		},
+		{
+			"forge": "familyBuilder(Block arg0)",
+			"fabric": "register(Block baseBlock)"
+		},
+		{
+			"forge": "getAllFamilies()",
+			"fabric": "getFamilies()"
+		}
+	]
+}

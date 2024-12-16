@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.network.Varint21FrameDecoder",
+	"items": [
+		{
+			"forge": "net.minecraft.network.Varint21FrameDecoder",
+			"fabric": "net.minecraft.network.SplitterHandler"
+		},
+		{
+			"forge": "decode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, List<Object> arg2)",
+			"fabric": "decode(io.netty.channel.ChannelHandlerContext ctx, io.netty.buffer.ByteBuf buf, List<Object> objects)"
+		},
+		{
+			"forge": "decode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, List<Object> arg2)",
+			"fabric": "decode(io.netty.channel.ChannelHandlerContext ctx, io.netty.buffer.ByteBuf buf, List<Object> objects)"
+		}
+	]
+}

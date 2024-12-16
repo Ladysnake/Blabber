@@ -1,0 +1,221 @@
+{
+	"title": "net.minecraft.world.level.dimension.DimensionType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.dimension.DimensionType",
+			"fabric": "net.minecraft.world.dimension.DimensionType"
+		},
+		{
+			"forge": "fixedTime",
+			"fabric": "fixedTime"
+		},
+		{
+			"forge": "fixedTime",
+			"fabric": "fixedTime"
+		},
+		{
+			"forge": "hasSkyLight",
+			"fabric": "hasSkyLight"
+		},
+		{
+			"forge": "hasCeiling",
+			"fabric": "hasCeiling"
+		},
+		{
+			"forge": "ultraWarm",
+			"fabric": "ultrawarm"
+		},
+		{
+			"forge": "natural",
+			"fabric": "natural"
+		},
+		{
+			"forge": "coordinateScale",
+			"fabric": "coordinateScale"
+		},
+		{
+			"forge": "bedWorks",
+			"fabric": "bedWorks"
+		},
+		{
+			"forge": "respawnAnchorWorks",
+			"fabric": "respawnAnchorWorks"
+		},
+		{
+			"forge": "minY",
+			"fabric": "minY"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "logicalHeight",
+			"fabric": "logicalHeight"
+		},
+		{
+			"forge": "infiniburn",
+			"fabric": "infiniburn"
+		},
+		{
+			"forge": "effectsLocation",
+			"fabric": "effects"
+		},
+		{
+			"forge": "ambientLight",
+			"fabric": "ambientLight"
+		},
+		{
+			"forge": "monsterSettings",
+			"fabric": "monsterSettings"
+		},
+		{
+			"forge": "BITS_FOR_Y",
+			"fabric": "SIZE_BITS_Y"
+		},
+		{
+			"forge": "MIN_HEIGHT",
+			"fabric": "field_33411"
+		},
+		{
+			"forge": "Y_SIZE",
+			"fabric": "MAX_HEIGHT"
+		},
+		{
+			"forge": "MAX_Y",
+			"fabric": "MAX_COLUMN_HEIGHT"
+		},
+		{
+			"forge": "MIN_Y",
+			"fabric": "MIN_HEIGHT"
+		},
+		{
+			"forge": "WAY_ABOVE_MAX_Y",
+			"fabric": "field_35478"
+		},
+		{
+			"forge": "WAY_BELOW_MIN_Y",
+			"fabric": "field_35479"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "MOON_PHASES",
+			"fabric": "field_31440"
+		},
+		{
+			"forge": "MOON_BRIGHTNESS_PER_PHASE",
+			"fabric": "MOON_SIZES"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "REGISTRY_CODEC"
+		},
+		{
+			"forge": "parseLegacy(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "worldFromDimensionNbt(com.mojang.serialization.Dynamic<?> nbt)"
+		},
+		{
+			"forge": "parseLegacy(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "worldFromDimensionNbt(com.mojang.serialization.Dynamic<?> nbt)"
+		},
+		{
+			"forge": "getTeleportationScale(DimensionType arg0, DimensionType arg1)",
+			"fabric": "getCoordinateScaleFactor(DimensionType fromDimension, DimensionType toDimension)"
+		},
+		{
+			"forge": "getStorageFolder(ResourceKey<Level> arg0, Path arg1)",
+			"fabric": "getSaveDirectory(RegistryKey<World> worldRef, Path worldDirectory)"
+		},
+		{
+			"forge": "hasFixedTime()",
+			"fabric": "hasFixedTime()"
+		},
+		{
+			"forge": "timeOfDay(long arg0)",
+			"fabric": "getSkyAngle(long time)"
+		},
+		{
+			"forge": "moonPhase(long arg0)",
+			"fabric": "getMoonPhase(long time)"
+		},
+		{
+			"forge": "piglinSafe()",
+			"fabric": "piglinSafe()"
+		},
+		{
+			"forge": "hasRaids()",
+			"fabric": "hasRaids()"
+		},
+		{
+			"forge": "monsterSpawnLightTest()",
+			"fabric": "monsterSpawnLightTest()"
+		},
+		{
+			"forge": "monsterSpawnBlockLightLimit()",
+			"fabric": "monsterSpawnBlockLightLimit()"
+		},
+		{
+			"forge": "fixedTime()",
+			"fabric": "fixedTime()"
+		},
+		{
+			"forge": "hasSkyLight()",
+			"fabric": "hasSkyLight()"
+		},
+		{
+			"forge": "hasCeiling()",
+			"fabric": "hasCeiling()"
+		},
+		{
+			"forge": "ultraWarm()",
+			"fabric": "ultrawarm()"
+		},
+		{
+			"forge": "natural()",
+			"fabric": "natural()"
+		},
+		{
+			"forge": "coordinateScale()",
+			"fabric": "coordinateScale()"
+		},
+		{
+			"forge": "bedWorks()",
+			"fabric": "bedWorks()"
+		},
+		{
+			"forge": "respawnAnchorWorks()",
+			"fabric": "respawnAnchorWorks()"
+		},
+		{
+			"forge": "minY()",
+			"fabric": "minY()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "height()"
+		},
+		{
+			"forge": "logicalHeight()",
+			"fabric": "logicalHeight()"
+		},
+		{
+			"forge": "infiniburn()",
+			"fabric": "infiniburn()"
+		},
+		{
+			"forge": "effectsLocation()",
+			"fabric": "effects()"
+		},
+		{
+			"forge": "ambientLight()",
+			"fabric": "ambientLight()"
+		},
+		{
+			"forge": "monsterSettings()",
+			"fabric": "monsterSettings()"
+		}
+	]
+}

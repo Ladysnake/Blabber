@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.nbt.StringTag",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.StringTag",
+			"fabric": "net.minecraft.nbt.NbtString"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "TYPE"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "DOUBLE_QUOTE",
+			"fabric": "DOUBLE_QUOTE"
+		},
+		{
+			"forge": "SINGLE_QUOTE",
+			"fabric": "SINGLE_QUOTE"
+		},
+		{
+			"forge": "ESCAPE",
+			"fabric": "BACKSLASH"
+		},
+		{
+			"forge": "NOT_SET",
+			"fabric": "NULL"
+		},
+		{
+			"forge": "data",
+			"fabric": "value"
+		},
+		{
+			"forge": "skipString(DataInput arg0)",
+			"fabric": "skip(DataInput input)"
+		},
+		{
+			"forge": "skipString(DataInput arg0)",
+			"fabric": "skip(DataInput input)"
+		},
+		{
+			"forge": "valueOf(String arg0)",
+			"fabric": "of(String value)"
+		},
+		{
+			"forge": "write(DataOutput arg0)",
+			"fabric": "write(DataOutput arg0)"
+		},
+		{
+			"forge": "sizeInBytes()",
+			"fabric": "getSizeInBytes()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getNbtType()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "getAsString()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "accept(TagVisitor arg0)",
+			"fabric": "accept(NbtElementVisitor arg0)"
+		},
+		{
+			"forge": "quoteAndEscape(String arg0)",
+			"fabric": "escape(String value)"
+		},
+		{
+			"forge": "accept(StreamTagVisitor arg0)",
+			"fabric": "doAccept(NbtScanner arg0)"
+		}
+	]
+}

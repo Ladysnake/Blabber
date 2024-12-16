@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.resources.sounds.SoundInstance$Attenuation",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.SoundInstance$Attenuation",
+			"fabric": "net.minecraft.client.sound.SoundInstance$AttenuationType"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "LINEAR",
+			"fabric": "LINEAR"
+		}
+	]
+}

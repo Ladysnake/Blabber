@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.GoalSelector$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.GoalSelector$1",
+			"fabric": "net.minecraft.entity.ai.goal.GoalSelector$1"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

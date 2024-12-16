@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.placement.StructurePlacement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.placement.StructurePlacement",
+			"fabric": "net.minecraft.world.gen.chunk.placement.StructurePlacement"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "TYPE_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "TYPE_CODEC"
+		},
+		{
+			"forge": "HIGHLY_ARBITRARY_RANDOM_SALT",
+			"fabric": "ARBITRARY_SALT"
+		},
+		{
+			"forge": "locateOffset",
+			"fabric": "locateOffset"
+		},
+		{
+			"forge": "frequencyReductionMethod",
+			"fabric": "frequencyReductionMethod"
+		},
+		{
+			"forge": "frequency",
+			"fabric": "frequency"
+		},
+		{
+			"forge": "salt",
+			"fabric": "salt"
+		},
+		{
+			"forge": "exclusionZone",
+			"fabric": "exclusionZone"
+		},
+		{
+			"forge": "placementCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<S> arg0)",
+			"fabric": "buildCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<S> instance)"
+		},
+		{
+			"forge": "placementCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<S> arg0)",
+			"fabric": "buildCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<S> instance)"
+		},
+		{
+			"forge": "locateOffset()",
+			"fabric": "getLocateOffset()"
+		},
+		{
+			"forge": "frequencyReductionMethod()",
+			"fabric": "getFrequencyReductionMethod()"
+		},
+		{
+			"forge": "frequency()",
+			"fabric": "getFrequency()"
+		},
+		{
+			"forge": "salt()",
+			"fabric": "getSalt()"
+		},
+		{
+			"forge": "exclusionZone()",
+			"fabric": "getExclusionZone()"
+		},
+		{
+			"forge": "isStructureChunk(ChunkGeneratorStructureState arg0, int arg1, int arg2)",
+			"fabric": "shouldGenerate(StructurePlacementCalculator calculator, int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "isPlacementChunk(ChunkGeneratorStructureState arg0, int arg1, int arg2)",
+			"fabric": "isStartChunk(StructurePlacementCalculator calculator, int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "getLocatePos(ChunkPos arg0)",
+			"fabric": "getLocatePos(ChunkPos chunkPos)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "probabilityReducer(long arg0, int arg1, int arg2, int arg3, float arg4)",
+			"fabric": "defaultShouldGenerate(long seed, int salt, int chunkX, int chunkZ, float frequency)"
+		},
+		{
+			"forge": "legacyProbabilityReducerWithDouble(long arg0, int arg1, int arg2, int arg3, float arg4)",
+			"fabric": "legacyType3ShouldGenerate(long seed, int salt, int chunkX, int chunkZ, float frequency)"
+		},
+		{
+			"forge": "legacyArbitrarySaltProbabilityReducer(long arg0, int arg1, int arg2, int arg3, float arg4)",
+			"fabric": "legacyType2ShouldGenerate(long seed, int salt, int chunkX, int chunkZ, float frequency)"
+		},
+		{
+			"forge": "legacyPillagerOutpostReducer(long arg0, int arg1, int arg2, int arg3, float arg4)",
+			"fabric": "legacyType1ShouldGenerate(long seed, int salt, int chunkX, int chunkZ, float frequency)"
+		}
+	]
+}

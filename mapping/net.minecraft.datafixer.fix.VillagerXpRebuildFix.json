@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.VillagerRebuildLevelAndXpFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.VillagerRebuildLevelAndXpFix",
+			"fabric": "net.minecraft.datafixer.fix.VillagerXpRebuildFix"
+		},
+		{
+			"forge": "TRADES_PER_LEVEL",
+			"fabric": "field_29914"
+		},
+		{
+			"forge": "TRADES_PER_LEVEL",
+			"fabric": "field_29914"
+		},
+		{
+			"forge": "LEVEL_XP_THRESHOLDS",
+			"fabric": "LEVEL_TO_XP"
+		},
+		{
+			"forge": "getMinXpPerLevel(int arg0)",
+			"fabric": "levelToXp(int level)"
+		},
+		{
+			"forge": "getMinXpPerLevel(int arg0)",
+			"fabric": "levelToXp(int level)"
+		},
+		{
+			"forge": "addLevel(com.mojang.datafixers.Typed<?> arg0, int arg1)",
+			"fabric": "fixLevel(com.mojang.datafixers.Typed<?> arg0, int level)"
+		},
+		{
+			"forge": "addXpFromLevel(com.mojang.datafixers.Typed<?> arg0, int arg1)",
+			"fabric": "fixXp(com.mojang.datafixers.Typed<?> arg0, int level)"
+		}
+	]
+}

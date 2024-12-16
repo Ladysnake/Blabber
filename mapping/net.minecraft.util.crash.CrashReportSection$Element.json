@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.CrashReportCategory$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.CrashReportCategory$Entry",
+			"fabric": "net.minecraft.util.crash.CrashReportSection$Element"
+		},
+		{
+			"forge": "key",
+			"fabric": "name"
+		},
+		{
+			"forge": "key",
+			"fabric": "name"
+		},
+		{
+			"forge": "value",
+			"fabric": "detail"
+		},
+		{
+			"forge": "getKey()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getKey()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getDetail()"
+		}
+	]
+}

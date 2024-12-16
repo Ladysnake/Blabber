@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.entity.animal.frog.ShootTongue",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.frog.ShootTongue",
+			"fabric": "net.minecraft.entity.ai.brain.task.FrogEatEntityTask"
+		},
+		{
+			"forge": "TIME_OUT_DURATION",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "TIME_OUT_DURATION",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "CATCH_ANIMATION_DURATION",
+			"fabric": "CATCH_DURATION"
+		},
+		{
+			"forge": "TONGUE_ANIMATION_DURATION",
+			"fabric": "EAT_DURATION"
+		},
+		{
+			"forge": "EATING_DISTANCE",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "EATING_MOVEMENT_FACTOR",
+			"fabric": "VELOCITY_MULTIPLIER"
+		},
+		{
+			"forge": "UNREACHABLE_TONGUE_TARGETS_COOLDOWN_DURATION",
+			"fabric": "UNREACHABLE_TONGUE_TARGETS_START_TIME"
+		},
+		{
+			"forge": "MAX_UNREACHBLE_TONGUE_TARGETS_IN_MEMORY",
+			"fabric": "MAX_UNREACHABLE_TONGUE_TARGETS"
+		},
+		{
+			"forge": "eatAnimationTimer",
+			"fabric": "eatTick"
+		},
+		{
+			"forge": "calculatePathCounter",
+			"fabric": "moveToTargetTick"
+		},
+		{
+			"forge": "tongueSound",
+			"fabric": "tongueSound"
+		},
+		{
+			"forge": "eatSound",
+			"fabric": "eatSound"
+		},
+		{
+			"forge": "itemSpawnPos",
+			"fabric": "targetPos"
+		},
+		{
+			"forge": "state",
+			"fabric": "phase"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Frog arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, FrogEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Frog arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, FrogEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Frog arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, FrogEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Frog arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, FrogEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Frog arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, FrogEntity arg1, long arg2)"
+		},
+		{
+			"forge": "eatEntity(ServerLevel arg0, Frog arg1)",
+			"fabric": "eat(ServerWorld world, FrogEntity frog)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Frog arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, FrogEntity arg1, long arg2)"
+		},
+		{
+			"forge": "canPathfindToTarget(Frog arg0, LivingEntity arg1)",
+			"fabric": "isTargetReachable(FrogEntity entity, LivingEntity target)"
+		},
+		{
+			"forge": "addUnreachableTargetToMemory(Frog arg0, LivingEntity arg1)",
+			"fabric": "markTargetAsUnreachable(FrogEntity entity, LivingEntity target)"
+		}
+	]
+}

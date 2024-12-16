@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.components.TabOrderedElement",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.TabOrderedElement",
+			"fabric": "net.minecraft.client.gui.navigation.Navigable"
+		},
+		{
+			"forge": "getTabOrderGroup()",
+			"fabric": "getNavigationOrder()"
+		},
+		{
+			"forge": "getTabOrderGroup()",
+			"fabric": "getNavigationOrder()"
+		}
+	]
+}

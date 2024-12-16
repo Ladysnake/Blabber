@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.HorseRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.HorseRenderer",
+			"fabric": "net.minecraft.client.render.entity.HorseEntityRenderer"
+		},
+		{
+			"forge": "LOCATION_BY_VARIANT",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "LOCATION_BY_VARIANT",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "getTextureLocation(Horse arg0)",
+			"fabric": "getTexture(HorseEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Horse arg0)",
+			"fabric": "getTexture(HorseEntity arg0)"
+		}
+	]
+}

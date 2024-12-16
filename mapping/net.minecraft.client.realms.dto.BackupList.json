@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.realmsclient.dto.BackupList",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.BackupList",
+			"fabric": "net.minecraft.client.realms.dto.BackupList"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "backups",
+			"fabric": "backups"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		}
+	]
+}

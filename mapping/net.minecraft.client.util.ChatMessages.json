@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.components.ComponentRenderUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.ComponentRenderUtils",
+			"fabric": "net.minecraft.client.util.ChatMessages"
+		},
+		{
+			"forge": "INDENT",
+			"fabric": "SPACES"
+		},
+		{
+			"forge": "INDENT",
+			"fabric": "SPACES"
+		},
+		{
+			"forge": "stripColor(String arg0)",
+			"fabric": "getRenderedChatMessage(String message)"
+		},
+		{
+			"forge": "stripColor(String arg0)",
+			"fabric": "getRenderedChatMessage(String message)"
+		},
+		{
+			"forge": "wrapComponents(FormattedText arg0, int arg1, Font arg2)",
+			"fabric": "breakRenderedChatMessageLines(StringVisitable message, int width, TextRenderer textRenderer)"
+		}
+	]
+}

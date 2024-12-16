@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.PacketListener",
+	"items": [
+		{
+			"forge": "net.minecraft.network.PacketListener",
+			"fabric": "net.minecraft.network.listener.PacketListener"
+		},
+		{
+			"forge": "onDisconnect(Component arg0)",
+			"fabric": "onDisconnected(Text reason)"
+		},
+		{
+			"forge": "onDisconnect(Component arg0)",
+			"fabric": "onDisconnected(Text reason)"
+		},
+		{
+			"forge": "isAcceptingMessages()",
+			"fabric": "isConnectionOpen()"
+		},
+		{
+			"forge": "shouldPropagateHandlingExceptions()",
+			"fabric": "shouldCrashOnException()"
+		}
+	]
+}

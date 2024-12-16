@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.CavesAndCliffsRenames",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.CavesAndCliffsRenames",
+			"fabric": "net.minecraft.datafixer.mapping.LegacyBiomeMapping"
+		},
+		{
+			"forge": "RENAMES",
+			"fabric": "MAP"
+		},
+		{
+			"forge": "RENAMES",
+			"fabric": "MAP"
+		}
+	]
+}

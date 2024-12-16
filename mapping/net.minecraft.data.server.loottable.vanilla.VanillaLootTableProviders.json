@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.data.loot.packs.VanillaLootTableProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.loot.packs.VanillaLootTableProvider",
+			"fabric": "net.minecraft.data.server.loottable.vanilla.VanillaLootTableProviders"
+		},
+		{
+			"forge": "create(PackOutput arg0)",
+			"fabric": "createVanillaProvider(DataOutput output)"
+		},
+		{
+			"forge": "create(PackOutput arg0)",
+			"fabric": "createVanillaProvider(DataOutput output)"
+		}
+	]
+}

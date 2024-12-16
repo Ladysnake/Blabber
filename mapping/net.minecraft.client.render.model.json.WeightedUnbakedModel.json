@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.MultiVariant",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.MultiVariant",
+			"fabric": "net.minecraft.client.render.model.json.WeightedUnbakedModel"
+		},
+		{
+			"forge": "variants",
+			"fabric": "variants"
+		},
+		{
+			"forge": "variants",
+			"fabric": "variants"
+		},
+		{
+			"forge": "getVariants()",
+			"fabric": "getVariants()"
+		},
+		{
+			"forge": "getVariants()",
+			"fabric": "getVariants()"
+		},
+		{
+			"forge": "getDependencies()",
+			"fabric": "getModelDependencies()"
+		},
+		{
+			"forge": "resolveParents(Function<ResourceLocation, UnbakedModel> arg0)",
+			"fabric": "setParents(Function<Identifier, UnbakedModel> arg0)"
+		},
+		{
+			"forge": "bake(ModelBaker arg0, Function<Material, TextureAtlasSprite> arg1, ModelState arg2, ResourceLocation arg3)",
+			"fabric": "bake(Baker arg0, Function<SpriteIdentifier, Sprite> arg1, ModelBakeSettings arg2, Identifier arg3)"
+		}
+	]
+}

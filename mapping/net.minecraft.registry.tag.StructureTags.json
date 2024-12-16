@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.tags.StructureTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.StructureTags",
+			"fabric": "net.minecraft.registry.tag.StructureTags"
+		},
+		{
+			"forge": "EYE_OF_ENDER_LOCATED",
+			"fabric": "EYE_OF_ENDER_LOCATED"
+		},
+		{
+			"forge": "EYE_OF_ENDER_LOCATED",
+			"fabric": "EYE_OF_ENDER_LOCATED"
+		},
+		{
+			"forge": "DOLPHIN_LOCATED",
+			"fabric": "DOLPHIN_LOCATED"
+		},
+		{
+			"forge": "ON_WOODLAND_EXPLORER_MAPS",
+			"fabric": "ON_WOODLAND_EXPLORER_MAPS"
+		},
+		{
+			"forge": "ON_OCEAN_EXPLORER_MAPS",
+			"fabric": "ON_OCEAN_EXPLORER_MAPS"
+		},
+		{
+			"forge": "ON_TREASURE_MAPS",
+			"fabric": "ON_TREASURE_MAPS"
+		},
+		{
+			"forge": "CATS_SPAWN_IN",
+			"fabric": "CATS_SPAWN_IN"
+		},
+		{
+			"forge": "CATS_SPAWN_AS_BLACK",
+			"fabric": "CATS_SPAWN_AS_BLACK"
+		},
+		{
+			"forge": "VILLAGE",
+			"fabric": "VILLAGE"
+		},
+		{
+			"forge": "MINESHAFT",
+			"fabric": "MINESHAFT"
+		},
+		{
+			"forge": "SHIPWRECK",
+			"fabric": "SHIPWRECK"
+		},
+		{
+			"forge": "RUINED_PORTAL",
+			"fabric": "RUINED_PORTAL"
+		},
+		{
+			"forge": "OCEAN_RUIN",
+			"fabric": "OCEAN_RUIN"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

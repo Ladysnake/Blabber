@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.entity.VexRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.VexRenderer",
+			"fabric": "net.minecraft.client.render.entity.VexEntityRenderer"
+		},
+		{
+			"forge": "VEX_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "VEX_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "VEX_CHARGING_LOCATION",
+			"fabric": "CHARGING_TEXTURE"
+		},
+		{
+			"forge": "getBlockLightLevel(Vex arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(VexEntity arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "getBlockLightLevel(Vex arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(VexEntity arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "getTextureLocation(Vex arg0)",
+			"fabric": "getTexture(VexEntity arg0)"
+		}
+	]
+}

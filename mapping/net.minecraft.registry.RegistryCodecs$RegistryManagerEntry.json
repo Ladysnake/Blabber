@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.core.RegistryCodecs$RegistryEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistryCodecs$RegistryEntry",
+			"fabric": "net.minecraft.registry.RegistryCodecs$RegistryManagerEntry"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "id",
+			"fabric": "rawId"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "key()",
+			"fabric": "key()"
+		},
+		{
+			"forge": "key()",
+			"fabric": "key()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "rawId()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.commands.TeamMsgCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.TeamMsgCommand",
+			"fabric": "net.minecraft.server.command.TeamMsgCommand"
+		},
+		{
+			"forge": "SUGGEST_STYLE",
+			"fabric": "STYLE"
+		},
+		{
+			"forge": "SUGGEST_STYLE",
+			"fabric": "STYLE"
+		},
+		{
+			"forge": "ERROR_NOT_ON_TEAM",
+			"fabric": "NO_TEAM_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "sendMessage(CommandSourceStack arg0, Entity arg1, PlayerTeam arg2, List<ServerPlayer> arg3, PlayerChatMessage arg4)",
+			"fabric": "execute(ServerCommandSource source, Entity entity, Team team, List<ServerPlayerEntity> recipients, SignedMessage message)"
+		}
+	]
+}

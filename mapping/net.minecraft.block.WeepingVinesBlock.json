@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.WeepingVinesBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.WeepingVinesBlock",
+			"fabric": "net.minecraft.block.WeepingVinesBlock"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "getBlocksToGrowWhenBonemealed(RandomSource arg0)",
+			"fabric": "getGrowthLength(Random arg0)"
+		},
+		{
+			"forge": "getBlocksToGrowWhenBonemealed(RandomSource arg0)",
+			"fabric": "getGrowthLength(Random arg0)"
+		},
+		{
+			"forge": "getBodyBlock()",
+			"fabric": "getPlant()"
+		},
+		{
+			"forge": "canGrowInto(BlockState arg0)",
+			"fabric": "chooseStemState(BlockState arg0)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.screens.recipebook.SmokingRecipeBookComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.recipebook.SmokingRecipeBookComponent",
+			"fabric": "net.minecraft.client.gui.screen.recipebook.SmokerRecipeBookScreen"
+		},
+		{
+			"forge": "FILTER_NAME",
+			"fabric": "TOGGLE_SMOKABLE_RECIPES_TEXT"
+		},
+		{
+			"forge": "FILTER_NAME",
+			"fabric": "TOGGLE_SMOKABLE_RECIPES_TEXT"
+		},
+		{
+			"forge": "getRecipeFilterName()",
+			"fabric": "getToggleCraftableButtonText()"
+		},
+		{
+			"forge": "getRecipeFilterName()",
+			"fabric": "getToggleCraftableButtonText()"
+		},
+		{
+			"forge": "getFuelItems()",
+			"fabric": "getAllowedFuels()"
+		}
+	]
+}

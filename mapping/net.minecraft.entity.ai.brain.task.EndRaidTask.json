@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.ResetRaidStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.ResetRaidStatus",
+			"fabric": "net.minecraft.entity.ai.brain.task.EndRaidTask"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		}
+	]
+}

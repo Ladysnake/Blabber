@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.advancements.critereon.LightPredicate$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.LightPredicate$Builder",
+			"fabric": "net.minecraft.predicate.LightPredicate$Builder"
+		},
+		{
+			"forge": "composite",
+			"fabric": "light"
+		},
+		{
+			"forge": "composite",
+			"fabric": "light"
+		},
+		{
+			"forge": "light()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "light()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "setComposite(MinMaxBounds$Ints arg0)",
+			"fabric": "light(NumberRange$IntRange light)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

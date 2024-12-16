@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.arguments.StringRepresentableArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.StringRepresentableArgument",
+			"fabric": "net.minecraft.command.argument.EnumArgumentType"
+		},
+		{
+			"forge": "ERROR_INVALID_VALUE",
+			"fabric": "INVALID_ENUM_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INVALID_VALUE",
+			"fabric": "INVALID_ENUM_EXCEPTION"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "values",
+			"fabric": "valuesSupplier"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "convertId(String arg0)",
+			"fabric": "transformValueName(String name)"
+		}
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.inventory.BrewingStandMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.BrewingStandMenu",
+			"fabric": "net.minecraft.screen.BrewingStandScreenHandler"
+		},
+		{
+			"forge": "BOTTLE_SLOT_START",
+			"fabric": "field_30763"
+		},
+		{
+			"forge": "BOTTLE_SLOT_START",
+			"fabric": "field_30763"
+		},
+		{
+			"forge": "BOTTLE_SLOT_END",
+			"fabric": "field_30764"
+		},
+		{
+			"forge": "INGREDIENT_SLOT",
+			"fabric": "INGREDIENT_SLOT_ID"
+		},
+		{
+			"forge": "FUEL_SLOT",
+			"fabric": "FUEL_SLOT_ID"
+		},
+		{
+			"forge": "SLOT_COUNT",
+			"fabric": "BREWING_STAND_INVENTORY_SIZE"
+		},
+		{
+			"forge": "DATA_COUNT",
+			"fabric": "PROPERTY_COUNT"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "INVENTORY_START"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "INVENTORY_END"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "HOTBAR_START"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "HOTBAR_END"
+		},
+		{
+			"forge": "brewingStand",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "brewingStandData",
+			"fabric": "propertyDelegate"
+		},
+		{
+			"forge": "ingredientSlot",
+			"fabric": "ingredientSlot"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "getFuel()",
+			"fabric": "getFuel()"
+		},
+		{
+			"forge": "getBrewingTicks()",
+			"fabric": "getBrewTime()"
+		}
+	]
+}

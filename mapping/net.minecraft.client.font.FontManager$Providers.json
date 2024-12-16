@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.font.FontManager$FontDefinitionFile",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.FontManager$FontDefinitionFile",
+			"fabric": "net.minecraft.client.font.FontManager$Providers"
+		},
+		{
+			"forge": "providers",
+			"fabric": "providers"
+		},
+		{
+			"forge": "providers",
+			"fabric": "providers"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "providers()",
+			"fabric": "providers()"
+		},
+		{
+			"forge": "providers()",
+			"fabric": "providers()"
+		}
+	]
+}

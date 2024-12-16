@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.MeleeAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.MeleeAttackGoal",
+			"fabric": "net.minecraft.entity.ai.goal.MeleeAttackGoal"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "followingTargetEvenIfNotSeen",
+			"fabric": "pauseWhenMobIdle"
+		},
+		{
+			"forge": "path",
+			"fabric": "path"
+		},
+		{
+			"forge": "pathedTargetX",
+			"fabric": "targetX"
+		},
+		{
+			"forge": "pathedTargetY",
+			"fabric": "targetY"
+		},
+		{
+			"forge": "pathedTargetZ",
+			"fabric": "targetZ"
+		},
+		{
+			"forge": "ticksUntilNextPathRecalculation",
+			"fabric": "updateCountdownTicks"
+		},
+		{
+			"forge": "ticksUntilNextAttack",
+			"fabric": "cooldown"
+		},
+		{
+			"forge": "attackInterval",
+			"fabric": "attackIntervalTicks"
+		},
+		{
+			"forge": "lastCanUseCheck",
+			"fabric": "lastUpdateTime"
+		},
+		{
+			"forge": "COOLDOWN_BETWEEN_CAN_USE_CHECKS",
+			"fabric": "MAX_ATTACK_TIME"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "requiresUpdateEveryTick()",
+			"fabric": "shouldRunEveryTick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "checkAndPerformAttack(LivingEntity arg0, double arg1)",
+			"fabric": "attack(LivingEntity target, double squaredDistance)"
+		},
+		{
+			"forge": "resetAttackCooldown()",
+			"fabric": "resetCooldown()"
+		},
+		{
+			"forge": "isTimeToAttack()",
+			"fabric": "isCooledDown()"
+		},
+		{
+			"forge": "getTicksUntilNextAttack()",
+			"fabric": "getCooldown()"
+		},
+		{
+			"forge": "getAttackInterval()",
+			"fabric": "getMaxCooldown()"
+		},
+		{
+			"forge": "getAttackReachSqr(LivingEntity arg0)",
+			"fabric": "getSquaredMaxAttackDistance(LivingEntity entity)"
+		}
+	]
+}

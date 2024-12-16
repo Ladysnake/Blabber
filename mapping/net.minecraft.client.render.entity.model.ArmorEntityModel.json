@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.model.HumanoidArmorModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.HumanoidArmorModel",
+			"fabric": "net.minecraft.client.render.entity.model.ArmorEntityModel"
+		},
+		{
+			"forge": "createBodyLayer(CubeDeformation arg0)",
+			"fabric": "getModelData(Dilation dilation)"
+		},
+		{
+			"forge": "createBodyLayer(CubeDeformation arg0)",
+			"fabric": "getModelData(Dilation dilation)"
+		}
+	]
+}

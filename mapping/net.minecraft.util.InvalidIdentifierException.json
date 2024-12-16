@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.ResourceLocationException",
+	"items": [
+		{
+			"forge": "net.minecraft.ResourceLocationException",
+			"fabric": "net.minecraft.util.InvalidIdentifierException"
+		}
+	]
+}

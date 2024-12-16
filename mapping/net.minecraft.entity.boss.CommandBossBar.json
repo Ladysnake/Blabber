@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.server.bossevents.CustomBossEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.server.bossevents.CustomBossEvent",
+			"fabric": "net.minecraft.entity.boss.CommandBossBar"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "players",
+			"fabric": "playerUuids"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "max",
+			"fabric": "maxValue"
+		},
+		{
+			"forge": "getTextId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getTextId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "addPlayer(ServerPlayer arg0)",
+			"fabric": "addPlayer(ServerPlayerEntity arg0)"
+		},
+		{
+			"forge": "addOfflinePlayer(UUID arg0)",
+			"fabric": "addPlayer(UUID uuid)"
+		},
+		{
+			"forge": "removePlayer(ServerPlayer arg0)",
+			"fabric": "removePlayer(ServerPlayerEntity arg0)"
+		},
+		{
+			"forge": "removeAllPlayers()",
+			"fabric": "clearPlayers()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "getMax()",
+			"fabric": "getMaxValue()"
+		},
+		{
+			"forge": "setValue(int arg0)",
+			"fabric": "setValue(int value)"
+		},
+		{
+			"forge": "setMax(int arg0)",
+			"fabric": "setMaxValue(int maxValue)"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "toHoverableText()"
+		},
+		{
+			"forge": "setPlayers(Collection<ServerPlayer> arg0)",
+			"fabric": "addPlayers(Collection<ServerPlayerEntity> players)"
+		},
+		{
+			"forge": "save()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "load(CompoundTag arg0, ResourceLocation arg1)",
+			"fabric": "fromNbt(NbtCompound nbt, Identifier id)"
+		},
+		{
+			"forge": "onPlayerConnect(ServerPlayer arg0)",
+			"fabric": "onPlayerConnect(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "onPlayerDisconnect(ServerPlayer arg0)",
+			"fabric": "onPlayerDisconnect(ServerPlayerEntity player)"
+		}
+	]
+}

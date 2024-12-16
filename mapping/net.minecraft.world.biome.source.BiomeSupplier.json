@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.biome.BiomeResolver",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.BiomeResolver",
+			"fabric": "net.minecraft.world.biome.source.BiomeSupplier"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2, Climate$Sampler arg3)",
+			"fabric": "getBiome(int x, int y, int z, MultiNoiseUtil$MultiNoiseSampler noise)"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2, Climate$Sampler arg3)",
+			"fabric": "getBiome(int x, int y, int z, MultiNoiseUtil$MultiNoiseSampler noise)"
+		}
+	]
+}

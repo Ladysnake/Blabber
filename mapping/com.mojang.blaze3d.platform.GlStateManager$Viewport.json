@@ -1,0 +1,57 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$Viewport",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$Viewport",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$Viewport"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "y()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "width()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "getHeight()"
+		}
+	]
+}

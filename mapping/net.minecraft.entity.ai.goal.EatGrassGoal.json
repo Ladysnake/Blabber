@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.EatBlockGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.EatBlockGoal",
+			"fabric": "net.minecraft.entity.ai.goal.EatGrassGoal"
+		},
+		{
+			"forge": "EAT_ANIMATION_TICKS",
+			"fabric": "MAX_TIMER"
+		},
+		{
+			"forge": "EAT_ANIMATION_TICKS",
+			"fabric": "MAX_TIMER"
+		},
+		{
+			"forge": "IS_TALL_GRASS",
+			"fabric": "GRASS_PREDICATE"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "eatAnimationTick",
+			"fabric": "timer"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "getEatAnimationTick()",
+			"fabric": "getTimer()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

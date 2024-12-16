@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsPendingInvitesScreen$2",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsPendingInvitesScreen$2",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsPendingInvitesScreen$2"
+		}
+	]
+}

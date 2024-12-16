@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.parse.JfrStatsParser$MutableCountAndSize",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.parse.JfrStatsParser$MutableCountAndSize",
+			"fabric": "net.minecraft.util.profiling.jfr.JfrProfileRecorder$PacketCounter"
+		},
+		{
+			"forge": "count",
+			"fabric": "totalCount"
+		},
+		{
+			"forge": "count",
+			"fabric": "totalCount"
+		},
+		{
+			"forge": "totalSize",
+			"fabric": "totalBytes"
+		},
+		{
+			"forge": "increment(int arg0)",
+			"fabric": "add(int bytes)"
+		},
+		{
+			"forge": "increment(int arg0)",
+			"fabric": "add(int bytes)"
+		},
+		{
+			"forge": "toCountAndSize()",
+			"fabric": "toStatistics()"
+		}
+	]
+}

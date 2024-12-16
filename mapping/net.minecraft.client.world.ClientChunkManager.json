@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientChunkCache",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientChunkCache",
+			"fabric": "net.minecraft.client.world.ClientChunkManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "emptyChunk",
+			"fabric": "emptyChunk"
+		},
+		{
+			"forge": "lightEngine",
+			"fabric": "lightingProvider"
+		},
+		{
+			"forge": "storage",
+			"fabric": "chunks"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "getLightEngine()",
+			"fabric": "getLightingProvider()"
+		},
+		{
+			"forge": "getLightEngine()",
+			"fabric": "getLightingProvider()"
+		},
+		{
+			"forge": "isValidChunk(LevelChunk arg0, int arg1, int arg2)",
+			"fabric": "positionEquals(WorldChunk chunk, int x, int z)"
+		},
+		{
+			"forge": "drop(int arg0, int arg1)",
+			"fabric": "unload(int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "getChunk(int arg0, int arg1, ChunkStatus arg2, boolean arg3)",
+			"fabric": "getChunk(int arg0, int arg1, ChunkStatus arg2, boolean arg3)"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "replaceBiomes(int arg0, int arg1, FriendlyByteBuf arg2)",
+			"fabric": "onChunkBiomeData(int x, int z, PacketByteBuf buf)"
+		},
+		{
+			"forge": "replaceWithPacketData(int arg0, int arg1, FriendlyByteBuf arg2, CompoundTag arg3, Consumer<ClientboundLevelChunkPacketData$BlockEntityTagOutput> arg4)",
+			"fabric": "loadChunkFromPacket(int x, int z, PacketByteBuf buf, NbtCompound nbt, Consumer<ChunkData$BlockEntityVisitor> arg4)"
+		},
+		{
+			"forge": "tick(BooleanSupplier arg0, boolean arg1)",
+			"fabric": "tick(BooleanSupplier arg0, boolean arg1)"
+		},
+		{
+			"forge": "updateViewCenter(int arg0, int arg1)",
+			"fabric": "setChunkMapCenter(int x, int z)"
+		},
+		{
+			"forge": "updateViewRadius(int arg0)",
+			"fabric": "updateLoadDistance(int loadDistance)"
+		},
+		{
+			"forge": "calculateStorageRange(int arg0)",
+			"fabric": "getChunkMapRadius(int loadDistance)"
+		},
+		{
+			"forge": "gatherStats()",
+			"fabric": "getDebugString()"
+		},
+		{
+			"forge": "getLoadedChunksCount()",
+			"fabric": "getLoadedChunkCount()"
+		},
+		{
+			"forge": "onLightUpdate(LightLayer arg0, SectionPos arg1)",
+			"fabric": "onLightUpdate(LightType arg0, ChunkSectionPos arg1)"
+		}
+	]
+}

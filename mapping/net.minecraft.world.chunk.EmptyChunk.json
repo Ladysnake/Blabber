@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.chunk.EmptyLevelChunk",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.EmptyLevelChunk",
+			"fabric": "net.minecraft.world.chunk.EmptyChunk"
+		},
+		{
+			"forge": "biome",
+			"fabric": "biomeEntry"
+		},
+		{
+			"forge": "biome",
+			"fabric": "biomeEntry"
+		},
+		{
+			"forge": "getBlockState(BlockPos arg0)",
+			"fabric": "getBlockState(BlockPos arg0)"
+		},
+		{
+			"forge": "getBlockState(BlockPos arg0)",
+			"fabric": "getBlockState(BlockPos arg0)"
+		},
+		{
+			"forge": "setBlockState(BlockPos arg0, BlockState arg1, boolean arg2)",
+			"fabric": "setBlockState(BlockPos arg0, BlockState arg1, boolean arg2)"
+		},
+		{
+			"forge": "getFluidState(BlockPos arg0)",
+			"fabric": "getFluidState(BlockPos arg0)"
+		},
+		{
+			"forge": "getLightEmission(BlockPos arg0)",
+			"fabric": "getLuminance(BlockPos arg0)"
+		},
+		{
+			"forge": "getBlockEntity(BlockPos arg0, LevelChunk$EntityCreationType arg1)",
+			"fabric": "getBlockEntity(BlockPos arg0, WorldChunk$CreationType arg1)"
+		},
+		{
+			"forge": "addAndRegisterBlockEntity(BlockEntity arg0)",
+			"fabric": "addBlockEntity(BlockEntity arg0)"
+		},
+		{
+			"forge": "setBlockEntity(BlockEntity arg0)",
+			"fabric": "setBlockEntity(BlockEntity arg0)"
+		},
+		{
+			"forge": "removeBlockEntity(BlockPos arg0)",
+			"fabric": "removeBlockEntity(BlockPos arg0)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "isYSpaceEmpty(int arg0, int arg1)",
+			"fabric": "areSectionsEmptyBetween(int arg0, int arg1)"
+		},
+		{
+			"forge": "getFullStatus()",
+			"fabric": "getLevelType()"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2)",
+			"fabric": "getBiomeForNoiseGen(int arg0, int arg1, int arg2)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.spectator.SpectatorMenu$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.spectator.SpectatorMenu$1",
+			"fabric": "net.minecraft.client.gui.hud.spectator.SpectatorMenu$1"
+		},
+		{
+			"forge": "selectItem(SpectatorMenu arg0)",
+			"fabric": "use(SpectatorMenu arg0)"
+		},
+		{
+			"forge": "selectItem(SpectatorMenu arg0)",
+			"fabric": "use(SpectatorMenu arg0)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "renderIcon(GuiGraphics arg0, float arg1, int arg2)",
+			"fabric": "renderIcon(DrawContext arg0, float arg1, int arg2)"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "isEnabled()"
+		}
+	]
+}

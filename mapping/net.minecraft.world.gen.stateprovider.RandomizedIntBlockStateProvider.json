@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider",
+			"fabric": "net.minecraft.world.gen.stateprovider.RandomizedIntBlockStateProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "source",
+			"fabric": "source"
+		},
+		{
+			"forge": "propertyName",
+			"fabric": "propertyName"
+		},
+		{
+			"forge": "property",
+			"fabric": "property"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getState(RandomSource arg0, BlockPos arg1)",
+			"fabric": "get(Random arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "findProperty(BlockState arg0, String arg1)",
+			"fabric": "getIntPropertyByName(BlockState state, String propertyName)"
+		}
+	]
+}

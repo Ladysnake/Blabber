@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Aquifer$FluidStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Aquifer$FluidStatus",
+			"fabric": "net.minecraft.world.gen.chunk.AquiferSampler$FluidLevel"
+		},
+		{
+			"forge": "fluidLevel",
+			"fabric": "y"
+		},
+		{
+			"forge": "fluidLevel",
+			"fabric": "y"
+		},
+		{
+			"forge": "fluidType",
+			"fabric": "state"
+		},
+		{
+			"forge": "at(int arg0)",
+			"fabric": "getBlockState(int y)"
+		},
+		{
+			"forge": "at(int arg0)",
+			"fabric": "getBlockState(int y)"
+		}
+	]
+}

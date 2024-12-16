@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.gametest.framework.ReportGameListener",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.ReportGameListener",
+			"fabric": "net.minecraft.test.StructureTestListener"
+		},
+		{
+			"forge": "originalTestInfo",
+			"fabric": "test"
+		},
+		{
+			"forge": "originalTestInfo",
+			"fabric": "test"
+		},
+		{
+			"forge": "testTicker",
+			"fabric": "testManager"
+		},
+		{
+			"forge": "structurePos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "attempts",
+			"fabric": "attempt"
+		},
+		{
+			"forge": "successes",
+			"fabric": "successes"
+		},
+		{
+			"forge": "testStructureLoaded(GameTestInfo arg0)",
+			"fabric": "onStarted(GameTestState arg0)"
+		},
+		{
+			"forge": "testStructureLoaded(GameTestInfo arg0)",
+			"fabric": "onStarted(GameTestState arg0)"
+		},
+		{
+			"forge": "testPassed(GameTestInfo arg0)",
+			"fabric": "onPassed(GameTestState arg0)"
+		},
+		{
+			"forge": "testFailed(GameTestInfo arg0)",
+			"fabric": "onFailed(GameTestState arg0)"
+		},
+		{
+			"forge": "reportPassed(GameTestInfo arg0, String arg1)",
+			"fabric": "passTest(GameTestState test, String output)"
+		},
+		{
+			"forge": "visualizePassedTest(GameTestInfo arg0, String arg1)",
+			"fabric": "finishPassedTest(GameTestState test, String output)"
+		},
+		{
+			"forge": "reportFailure(GameTestInfo arg0, Throwable arg1)",
+			"fabric": "failTest(GameTestState test, Throwable output)"
+		},
+		{
+			"forge": "visualizeFailedTest(GameTestInfo arg0, Throwable arg1)",
+			"fabric": "finishFailedTest(GameTestState test, Throwable output)"
+		},
+		{
+			"forge": "rerunTest()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "spawnBeacon(GameTestInfo arg0, Block arg1)",
+			"fabric": "visualizeTest(GameTestState test, Block block)"
+		},
+		{
+			"forge": "spawnLectern(GameTestInfo arg0, String arg1)",
+			"fabric": "createTestOutputLectern(GameTestState test, String output)"
+		},
+		{
+			"forge": "createBook(String arg0, boolean arg1, String arg2)",
+			"fabric": "createBookWithText(String text, boolean required, String output)"
+		},
+		{
+			"forge": "say(ServerLevel arg0, ChatFormatting arg1, String arg2)",
+			"fabric": "sendMessageToAllPlayers(ServerWorld world, Formatting formatting, String message)"
+		},
+		{
+			"forge": "showRedBox(ServerLevel arg0, BlockPos arg1, String arg2)",
+			"fabric": "addGameTestMarker(ServerWorld world, BlockPos pos, String message)"
+		}
+	]
+}

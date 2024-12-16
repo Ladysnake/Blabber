@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.realmsclient.util.task.OpenServerTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.OpenServerTask",
+			"fabric": "net.minecraft.client.realms.task.OpenServerTask"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "serverData"
+		},
+		{
+			"forge": "returnScreen",
+			"fabric": "returnScreen"
+		},
+		{
+			"forge": "join",
+			"fabric": "join"
+		},
+		{
+			"forge": "mainScreen",
+			"fabric": "mainScreen"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.EntityBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.EntityBlock",
+			"fabric": "net.minecraft.block.BlockEntityProvider"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "getTicker(Level arg0, BlockState arg1, BlockEntityType<T> arg2)",
+			"fabric": "getTicker(World world, BlockState state, BlockEntityType<T> type)"
+		},
+		{
+			"forge": "getListener(ServerLevel arg0, T arg1)",
+			"fabric": "getGameEventListener(ServerWorld world, T blockEntity)"
+		}
+	]
+}

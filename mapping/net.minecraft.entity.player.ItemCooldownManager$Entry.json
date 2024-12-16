@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.ItemCooldowns$CooldownInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ItemCooldowns$CooldownInstance",
+			"fabric": "net.minecraft.entity.player.ItemCooldownManager$Entry"
+		},
+		{
+			"forge": "startTime",
+			"fabric": "startTick"
+		},
+		{
+			"forge": "startTime",
+			"fabric": "startTick"
+		},
+		{
+			"forge": "endTime",
+			"fabric": "endTick"
+		}
+	]
+}

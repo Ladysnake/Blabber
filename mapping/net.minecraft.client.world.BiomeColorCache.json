@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.color.block.BlockTintCache",
+	"items": [
+		{
+			"forge": "net.minecraft.client.color.block.BlockTintCache",
+			"fabric": "net.minecraft.client.world.BiomeColorCache"
+		},
+		{
+			"forge": "MAX_CACHE_ENTRIES",
+			"fabric": "MAX_ENTRY_SIZE"
+		},
+		{
+			"forge": "MAX_CACHE_ENTRIES",
+			"fabric": "MAX_ENTRY_SIZE"
+		},
+		{
+			"forge": "latestChunkOnThread",
+			"fabric": "last"
+		},
+		{
+			"forge": "cache",
+			"fabric": "colors"
+		},
+		{
+			"forge": "lock",
+			"fabric": "lock"
+		},
+		{
+			"forge": "source",
+			"fabric": "colorFactory"
+		},
+		{
+			"forge": "getColor(BlockPos arg0)",
+			"fabric": "getBiomeColor(BlockPos pos)"
+		},
+		{
+			"forge": "getColor(BlockPos arg0)",
+			"fabric": "getBiomeColor(BlockPos pos)"
+		},
+		{
+			"forge": "invalidateForChunk(int arg0, int arg1)",
+			"fabric": "reset(int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "invalidateAll()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "findOrCreateChunkCache(int arg0, int arg1)",
+			"fabric": "getColorArray(int chunkX, int chunkZ)"
+		}
+	]
+}

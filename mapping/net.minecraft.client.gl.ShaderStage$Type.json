@@ -1,0 +1,61 @@
+{
+	"title": "com.mojang.blaze3d.shaders.Program$Type",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.shaders.Program$Type",
+			"fabric": "net.minecraft.client.gl.ShaderStage$Type"
+		},
+		{
+			"forge": "VERTEX",
+			"fabric": "VERTEX"
+		},
+		{
+			"forge": "VERTEX",
+			"fabric": "VERTEX"
+		},
+		{
+			"forge": "FRAGMENT",
+			"fabric": "FRAGMENT"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "extension",
+			"fabric": "fileExtension"
+		},
+		{
+			"forge": "glType",
+			"fabric": "glType"
+		},
+		{
+			"forge": "programs",
+			"fabric": "loadedShaders"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getExtension()",
+			"fabric": "getFileExtension()"
+		},
+		{
+			"forge": "getGlType()",
+			"fabric": "getGlType()"
+		},
+		{
+			"forge": "getPrograms()",
+			"fabric": "getLoadedShaders()"
+		}
+	]
+}

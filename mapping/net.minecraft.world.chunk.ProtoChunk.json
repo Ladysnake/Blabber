@@ -1,0 +1,177 @@
+{
+	"title": "net.minecraft.world.level.chunk.ProtoChunk",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.ProtoChunk",
+			"fabric": "net.minecraft.world.chunk.ProtoChunk"
+		},
+		{
+			"forge": "lightEngine",
+			"fabric": "lightingProvider"
+		},
+		{
+			"forge": "lightEngine",
+			"fabric": "lightingProvider"
+		},
+		{
+			"forge": "status",
+			"fabric": "status"
+		},
+		{
+			"forge": "entities",
+			"fabric": "entities"
+		},
+		{
+			"forge": "carvingMasks",
+			"fabric": "carvingMasks"
+		},
+		{
+			"forge": "belowZeroRetrogen",
+			"fabric": "belowZeroRetrogen"
+		},
+		{
+			"forge": "blockTicks",
+			"fabric": "blockTickScheduler"
+		},
+		{
+			"forge": "fluidTicks",
+			"fabric": "fluidTickScheduler"
+		},
+		{
+			"forge": "getBlockTicks()",
+			"fabric": "getBlockTickScheduler()"
+		},
+		{
+			"forge": "getBlockTicks()",
+			"fabric": "getBlockTickScheduler()"
+		},
+		{
+			"forge": "getFluidTicks()",
+			"fabric": "getFluidTickScheduler()"
+		},
+		{
+			"forge": "getTicksForSerialization()",
+			"fabric": "getTickSchedulers()"
+		},
+		{
+			"forge": "getBlockState(BlockPos arg0)",
+			"fabric": "getBlockState(BlockPos arg0)"
+		},
+		{
+			"forge": "getFluidState(BlockPos arg0)",
+			"fabric": "getFluidState(BlockPos arg0)"
+		},
+		{
+			"forge": "setBlockState(BlockPos arg0, BlockState arg1, boolean arg2)",
+			"fabric": "setBlockState(BlockPos arg0, BlockState arg1, boolean arg2)"
+		},
+		{
+			"forge": "setBlockEntity(BlockEntity arg0)",
+			"fabric": "setBlockEntity(BlockEntity arg0)"
+		},
+		{
+			"forge": "getBlockEntity(BlockPos arg0)",
+			"fabric": "getBlockEntity(BlockPos arg0)"
+		},
+		{
+			"forge": "getBlockEntities()",
+			"fabric": "getBlockEntities()"
+		},
+		{
+			"forge": "addEntity(CompoundTag arg0)",
+			"fabric": "addEntity(NbtCompound entityNbt)"
+		},
+		{
+			"forge": "addEntity(Entity arg0)",
+			"fabric": "addEntity(Entity arg0)"
+		},
+		{
+			"forge": "setStartForStructure(Structure arg0, StructureStart arg1)",
+			"fabric": "setStructureStart(Structure arg0, StructureStart arg1)"
+		},
+		{
+			"forge": "getEntities()",
+			"fabric": "getEntities()"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "getStatus()"
+		},
+		{
+			"forge": "setStatus(ChunkStatus arg0)",
+			"fabric": "setStatus(ChunkStatus status)"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2)",
+			"fabric": "getBiomeForNoiseGen(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "packOffsetCoordinates(BlockPos arg0)",
+			"fabric": "getPackedSectionRelative(BlockPos pos)"
+		},
+		{
+			"forge": "unpackOffsetCoordinates(short arg0, int arg1, ChunkPos arg2)",
+			"fabric": "joinBlockPos(short sectionRel, int sectionY, ChunkPos chunkPos)"
+		},
+		{
+			"forge": "markPosForPostprocessing(BlockPos arg0)",
+			"fabric": "markBlockForPostProcessing(BlockPos arg0)"
+		},
+		{
+			"forge": "addPackedPostProcess(short arg0, int arg1)",
+			"fabric": "markBlockForPostProcessing(short arg0, int arg1)"
+		},
+		{
+			"forge": "getBlockEntityNbts()",
+			"fabric": "getBlockEntityNbts()"
+		},
+		{
+			"forge": "getBlockEntityNbtForSaving(BlockPos arg0)",
+			"fabric": "getPackedBlockEntityNbt(BlockPos arg0)"
+		},
+		{
+			"forge": "removeBlockEntity(BlockPos arg0)",
+			"fabric": "removeBlockEntity(BlockPos arg0)"
+		},
+		{
+			"forge": "getCarvingMask(GenerationStep$Carving arg0)",
+			"fabric": "getCarvingMask(GenerationStep$Carver step)"
+		},
+		{
+			"forge": "getOrCreateCarvingMask(GenerationStep$Carving arg0)",
+			"fabric": "getOrCreateCarvingMask(GenerationStep$Carver step)"
+		},
+		{
+			"forge": "setCarvingMask(GenerationStep$Carving arg0, CarvingMask arg1)",
+			"fabric": "setCarvingMask(GenerationStep$Carver step, CarvingMask carvingMask)"
+		},
+		{
+			"forge": "setLightEngine(LevelLightEngine arg0)",
+			"fabric": "setLightingProvider(LightingProvider lightingProvider)"
+		},
+		{
+			"forge": "setBelowZeroRetrogen(BelowZeroRetrogen arg0)",
+			"fabric": "setBelowZeroRetrogen(BelowZeroRetrogen belowZeroRetrogen)"
+		},
+		{
+			"forge": "getBelowZeroRetrogen()",
+			"fabric": "getBelowZeroRetrogen()"
+		},
+		{
+			"forge": "unpackTicks(ProtoChunkTicks<T> arg0)",
+			"fabric": "createProtoTickScheduler(SimpleTickScheduler<T> tickScheduler)"
+		},
+		{
+			"forge": "unpackBlockTicks()",
+			"fabric": "getBlockProtoTickScheduler()"
+		},
+		{
+			"forge": "unpackFluidTicks()",
+			"fabric": "getFluidProtoTickScheduler()"
+		},
+		{
+			"forge": "getHeightAccessorForGeneration()",
+			"fabric": "getHeightLimitView()"
+		}
+	]
+}

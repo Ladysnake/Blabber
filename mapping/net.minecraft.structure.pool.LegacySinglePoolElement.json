@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pools.LegacySinglePoolElement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pools.LegacySinglePoolElement",
+			"fabric": "net.minecraft.structure.pool.LegacySinglePoolElement"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "getSettings(Rotation arg0, BoundingBox arg1, boolean arg2)",
+			"fabric": "createPlacementData(BlockRotation arg0, BlockBox arg1, boolean arg2)"
+		},
+		{
+			"forge": "getSettings(Rotation arg0, BoundingBox arg1, boolean arg2)",
+			"fabric": "createPlacementData(BlockRotation arg0, BlockBox arg1, boolean arg2)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

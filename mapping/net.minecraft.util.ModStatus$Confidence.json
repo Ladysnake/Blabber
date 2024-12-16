@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.ModCheck$Confidence",
+	"items": [
+		{
+			"forge": "net.minecraft.util.ModCheck$Confidence",
+			"fabric": "net.minecraft.util.ModStatus$Confidence"
+		},
+		{
+			"forge": "PROBABLY_NOT",
+			"fabric": "PROBABLY_NOT"
+		},
+		{
+			"forge": "PROBABLY_NOT",
+			"fabric": "PROBABLY_NOT"
+		},
+		{
+			"forge": "VERY_LIKELY",
+			"fabric": "VERY_LIKELY"
+		},
+		{
+			"forge": "DEFINITELY",
+			"fabric": "DEFINITELY"
+		},
+		{
+			"forge": "description",
+			"fabric": "description"
+		},
+		{
+			"forge": "description",
+			"fabric": "description"
+		},
+		{
+			"forge": "shouldReportAsModified",
+			"fabric": "modded"
+		}
+	]
+}

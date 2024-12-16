@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.UnihexProvider$Glyph$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.UnihexProvider$Glyph$1",
+			"fabric": "net.minecraft.client.font.UnihexFont$UnicodeTextureGlyph$1"
+		},
+		{
+			"forge": "getOversample()",
+			"fabric": "getOversample()"
+		},
+		{
+			"forge": "getOversample()",
+			"fabric": "getOversample()"
+		},
+		{
+			"forge": "getPixelWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getPixelHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "upload(int arg0, int arg1)",
+			"fabric": "upload(int arg0, int arg1)"
+		},
+		{
+			"forge": "isColored()",
+			"fabric": "hasColor()"
+		}
+	]
+}

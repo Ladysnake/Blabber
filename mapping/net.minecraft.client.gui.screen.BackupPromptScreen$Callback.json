@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.BackupConfirmScreen$Listener",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.BackupConfirmScreen$Listener",
+			"fabric": "net.minecraft.client.gui.screen.BackupPromptScreen$Callback"
+		},
+		{
+			"forge": "proceed(boolean arg0, boolean arg1)",
+			"fabric": "proceed(boolean backup, boolean eraseCache)"
+		},
+		{
+			"forge": "proceed(boolean arg0, boolean arg1)",
+			"fabric": "proceed(boolean backup, boolean eraseCache)"
+		}
+	]
+}

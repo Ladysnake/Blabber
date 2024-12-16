@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.searchtree.FullTextSearchTree",
+	"items": [
+		{
+			"forge": "net.minecraft.client.searchtree.FullTextSearchTree",
+			"fabric": "net.minecraft.client.search.TextSearchProvider"
+		},
+		{
+			"forge": "contents",
+			"fabric": "values"
+		},
+		{
+			"forge": "contents",
+			"fabric": "values"
+		},
+		{
+			"forge": "filler",
+			"fabric": "textsGetter"
+		},
+		{
+			"forge": "plainTextSearchTree",
+			"fabric": "textSearcher"
+		},
+		{
+			"forge": "refresh()",
+			"fabric": "reload()"
+		},
+		{
+			"forge": "refresh()",
+			"fabric": "reload()"
+		},
+		{
+			"forge": "searchPlainText(String arg0)",
+			"fabric": "search(String arg0)"
+		},
+		{
+			"forge": "searchResourceLocation(String arg0, String arg1)",
+			"fabric": "search(String arg0, String arg1)"
+		}
+	]
+}

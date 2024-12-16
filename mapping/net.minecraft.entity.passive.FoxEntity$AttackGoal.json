@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.Fox$FoxMeleeAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Fox$FoxMeleeAttackGoal",
+			"fabric": "net.minecraft.entity.passive.FoxEntity$AttackGoal"
+		},
+		{
+			"forge": "checkAndPerformAttack(LivingEntity arg0, double arg1)",
+			"fabric": "attack(LivingEntity arg0, double arg1)"
+		},
+		{
+			"forge": "checkAndPerformAttack(LivingEntity arg0, double arg1)",
+			"fabric": "attack(LivingEntity arg0, double arg1)"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

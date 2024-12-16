@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.packs.BuiltInMetadata",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.BuiltInMetadata",
+			"fabric": "net.minecraft.resource.metadata.ResourceMetadataMap"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "get(MetadataSectionSerializer<T> arg0)",
+			"fabric": "get(ResourceMetadataReader<T> reader)"
+		},
+		{
+			"forge": "get(MetadataSectionSerializer<T> arg0)",
+			"fabric": "get(ResourceMetadataReader<T> reader)"
+		},
+		{
+			"forge": "of()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "of(MetadataSectionSerializer<T> arg0, T arg1)",
+			"fabric": "of(ResourceMetadataReader<T> reader, T value)"
+		},
+		{
+			"forge": "of(MetadataSectionSerializer<T1> arg0, T1 arg1, MetadataSectionSerializer<T2> arg2, T2 arg3)",
+			"fabric": "of(ResourceMetadataReader<T1> reader, T1 value, ResourceMetadataReader<T2> reader2, T2 value2)"
+		}
+	]
+}

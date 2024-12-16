@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.CommandFunction$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandFunction$Entry",
+			"fabric": "net.minecraft.server.function.CommandFunction$Element"
+		},
+		{
+			"forge": "execute(ServerFunctionManager arg0, CommandSourceStack arg1, Deque<ServerFunctionManager$QueuedCommand> arg2, int arg3, int arg4, ServerFunctionManager$TraceCallbacks arg5)",
+			"fabric": "execute(CommandFunctionManager manager, ServerCommandSource source, Deque<CommandFunctionManager$Entry> entries, int maxChainLength, int depth, CommandFunctionManager$Tracer tracer)"
+		},
+		{
+			"forge": "execute(ServerFunctionManager arg0, CommandSourceStack arg1, Deque<ServerFunctionManager$QueuedCommand> arg2, int arg3, int arg4, ServerFunctionManager$TraceCallbacks arg5)",
+			"fabric": "execute(CommandFunctionManager manager, ServerCommandSource source, Deque<CommandFunctionManager$Entry> entries, int maxChainLength, int depth, CommandFunctionManager$Tracer tracer)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.arguments.OperationArgument$Operation",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.OperationArgument$Operation",
+			"fabric": "net.minecraft.command.argument.OperationArgumentType$Operation"
+		},
+		{
+			"forge": "apply(Score arg0, Score arg1)",
+			"fabric": "apply(ScoreboardPlayerScore a, ScoreboardPlayerScore b)"
+		},
+		{
+			"forge": "apply(Score arg0, Score arg1)",
+			"fabric": "apply(ScoreboardPlayerScore a, ScoreboardPlayerScore b)"
+		}
+	]
+}

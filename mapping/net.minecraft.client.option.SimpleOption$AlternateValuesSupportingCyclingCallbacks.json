@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.client.OptionInstance$AltEnum",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$AltEnum",
+			"fabric": "net.minecraft.client.option.SimpleOption$AlternateValuesSupportingCyclingCallbacks"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "values",
+			"fabric": "values"
+		},
+		{
+			"forge": "altValues",
+			"fabric": "altValues"
+		},
+		{
+			"forge": "altCondition",
+			"fabric": "altCondition"
+		},
+		{
+			"forge": "valueSetter",
+			"fabric": "valueSetter"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "valueListSupplier()",
+			"fabric": "getValues()"
+		},
+		{
+			"forge": "valueListSupplier()",
+			"fabric": "getValues()"
+		},
+		{
+			"forge": "validateValue(T arg0)",
+			"fabric": "validate(T arg0)"
+		},
+		{
+			"forge": "values()",
+			"fabric": "values()"
+		},
+		{
+			"forge": "altValues()",
+			"fabric": "altValues()"
+		},
+		{
+			"forge": "altCondition()",
+			"fabric": "altCondition()"
+		},
+		{
+			"forge": "valueSetter()",
+			"fabric": "valueSetter()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.core.particles.BlockParticleOption",
+	"items": [
+		{
+			"forge": "net.minecraft.core.particles.BlockParticleOption",
+			"fabric": "net.minecraft.particle.BlockStateParticleEffect"
+		},
+		{
+			"forge": "DESERIALIZER",
+			"fabric": "PARAMETERS_FACTORY"
+		},
+		{
+			"forge": "DESERIALIZER",
+			"fabric": "PARAMETERS_FACTORY"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "state",
+			"fabric": "blockState"
+		},
+		{
+			"forge": "codec(ParticleType<BlockParticleOption> arg0)",
+			"fabric": "createCodec(ParticleType<BlockStateParticleEffect> type)"
+		},
+		{
+			"forge": "codec(ParticleType<BlockParticleOption> arg0)",
+			"fabric": "createCodec(ParticleType<BlockStateParticleEffect> type)"
+		},
+		{
+			"forge": "writeToNetwork(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "writeToString()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getState()",
+			"fabric": "getBlockState()"
+		}
+	]
+}

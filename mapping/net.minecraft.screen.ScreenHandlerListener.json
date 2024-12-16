@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.inventory.ContainerListener",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ContainerListener",
+			"fabric": "net.minecraft.screen.ScreenHandlerListener"
+		},
+		{
+			"forge": "slotChanged(AbstractContainerMenu arg0, int arg1, ItemStack arg2)",
+			"fabric": "onSlotUpdate(ScreenHandler handler, int slotId, ItemStack stack)"
+		},
+		{
+			"forge": "slotChanged(AbstractContainerMenu arg0, int arg1, ItemStack arg2)",
+			"fabric": "onSlotUpdate(ScreenHandler handler, int slotId, ItemStack stack)"
+		},
+		{
+			"forge": "dataChanged(AbstractContainerMenu arg0, int arg1, int arg2)",
+			"fabric": "onPropertyUpdate(ScreenHandler handler, int property, int value)"
+		}
+	]
+}

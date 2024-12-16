@@ -1,0 +1,177 @@
+{
+	"title": "net.minecraft.client.KeyMapping",
+	"items": [
+		{
+			"forge": "net.minecraft.client.KeyMapping",
+			"fabric": "net.minecraft.client.option.KeyBinding"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "KEYS_BY_ID"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "KEYS_BY_ID"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "KEY_TO_BINDINGS"
+		},
+		{
+			"forge": "CATEGORIES",
+			"fabric": "KEY_CATEGORIES"
+		},
+		{
+			"forge": "CATEGORY_MOVEMENT",
+			"fabric": "MOVEMENT_CATEGORY"
+		},
+		{
+			"forge": "CATEGORY_MISC",
+			"fabric": "MISC_CATEGORY"
+		},
+		{
+			"forge": "CATEGORY_MULTIPLAYER",
+			"fabric": "MULTIPLAYER_CATEGORY"
+		},
+		{
+			"forge": "CATEGORY_GAMEPLAY",
+			"fabric": "GAMEPLAY_CATEGORY"
+		},
+		{
+			"forge": "CATEGORY_INVENTORY",
+			"fabric": "INVENTORY_CATEGORY"
+		},
+		{
+			"forge": "CATEGORY_INTERFACE",
+			"fabric": "UI_CATEGORY"
+		},
+		{
+			"forge": "CATEGORY_CREATIVE",
+			"fabric": "CREATIVE_CATEGORY"
+		},
+		{
+			"forge": "CATEGORY_SORT_ORDER",
+			"fabric": "CATEGORY_ORDER_MAP"
+		},
+		{
+			"forge": "name",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "defaultKey",
+			"fabric": "defaultKey"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "key",
+			"fabric": "boundKey"
+		},
+		{
+			"forge": "isDown",
+			"fabric": "pressed"
+		},
+		{
+			"forge": "clickCount",
+			"fabric": "timesPressed"
+		},
+		{
+			"forge": "click(InputConstants$Key arg0)",
+			"fabric": "onKeyPressed(InputUtil$Key key)"
+		},
+		{
+			"forge": "click(InputConstants$Key arg0)",
+			"fabric": "onKeyPressed(InputUtil$Key key)"
+		},
+		{
+			"forge": "set(InputConstants$Key arg0, boolean arg1)",
+			"fabric": "setKeyPressed(InputUtil$Key key, boolean pressed)"
+		},
+		{
+			"forge": "setAll()",
+			"fabric": "updatePressedStates()"
+		},
+		{
+			"forge": "releaseAll()",
+			"fabric": "unpressAll()"
+		},
+		{
+			"forge": "resetToggleKeys()",
+			"fabric": "untoggleStickyKeys()"
+		},
+		{
+			"forge": "resetMapping()",
+			"fabric": "updateKeysByCode()"
+		},
+		{
+			"forge": "isDown()",
+			"fabric": "isPressed()"
+		},
+		{
+			"forge": "getCategory()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "consumeClick()",
+			"fabric": "wasPressed()"
+		},
+		{
+			"forge": "release()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "getDefaultKey()",
+			"fabric": "getDefaultKey()"
+		},
+		{
+			"forge": "setKey(InputConstants$Key arg0)",
+			"fabric": "setBoundKey(InputUtil$Key boundKey)"
+		},
+		{
+			"forge": "compareTo(KeyMapping arg0)",
+			"fabric": "compareTo(KeyBinding arg0)"
+		},
+		{
+			"forge": "createNameSupplier(String arg0)",
+			"fabric": "getLocalizedName(String id)"
+		},
+		{
+			"forge": "same(KeyMapping arg0)",
+			"fabric": "equals(KeyBinding other)"
+		},
+		{
+			"forge": "isUnbound()",
+			"fabric": "isUnbound()"
+		},
+		{
+			"forge": "matches(int arg0, int arg1)",
+			"fabric": "matchesKey(int keyCode, int scanCode)"
+		},
+		{
+			"forge": "matchesMouse(int arg0)",
+			"fabric": "matchesMouse(int code)"
+		},
+		{
+			"forge": "getTranslatedKeyMessage()",
+			"fabric": "getBoundKeyLocalizedText()"
+		},
+		{
+			"forge": "isDefault()",
+			"fabric": "isDefault()"
+		},
+		{
+			"forge": "saveString()",
+			"fabric": "getBoundKeyTranslationKey()"
+		},
+		{
+			"forge": "setDown(boolean arg0)",
+			"fabric": "setPressed(boolean pressed)"
+		}
+	]
+}

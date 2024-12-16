@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.LocalMobCapCalculator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.LocalMobCapCalculator",
+			"fabric": "net.minecraft.world.SpawnDensityCapper"
+		},
+		{
+			"forge": "playersNearChunk",
+			"fabric": "chunkPosToMobSpawnablePlayers"
+		},
+		{
+			"forge": "playersNearChunk",
+			"fabric": "chunkPosToMobSpawnablePlayers"
+		},
+		{
+			"forge": "playerMobCounts",
+			"fabric": "playersToDensityCap"
+		},
+		{
+			"forge": "chunkMap",
+			"fabric": "threadedAnvilChunkStorage"
+		},
+		{
+			"forge": "getPlayersNear(ChunkPos arg0)",
+			"fabric": "getMobSpawnablePlayers(ChunkPos chunkPos)"
+		},
+		{
+			"forge": "getPlayersNear(ChunkPos arg0)",
+			"fabric": "getMobSpawnablePlayers(ChunkPos chunkPos)"
+		},
+		{
+			"forge": "addMob(ChunkPos arg0, MobCategory arg1)",
+			"fabric": "increaseDensity(ChunkPos chunkPos, SpawnGroup spawnGroup)"
+		},
+		{
+			"forge": "canSpawn(MobCategory arg0, ChunkPos arg1)",
+			"fabric": "canSpawn(SpawnGroup spawnGroup, ChunkPos chunkPos)"
+		}
+	]
+}

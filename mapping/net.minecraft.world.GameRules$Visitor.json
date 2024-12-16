@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.GameRules$GameRuleTypeVisitor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.GameRules$GameRuleTypeVisitor",
+			"fabric": "net.minecraft.world.GameRules$Visitor"
+		},
+		{
+			"forge": "visit(GameRules$Key<T> arg0, GameRules$Type<T> arg1)",
+			"fabric": "visit(GameRules$Key<T> key, GameRules$Type<T> type)"
+		},
+		{
+			"forge": "visit(GameRules$Key<T> arg0, GameRules$Type<T> arg1)",
+			"fabric": "visit(GameRules$Key<T> key, GameRules$Type<T> type)"
+		},
+		{
+			"forge": "visitBoolean(GameRules$Key<GameRules$BooleanValue> arg0, GameRules$Type<GameRules$BooleanValue> arg1)",
+			"fabric": "visitBoolean(GameRules$Key<GameRules$BooleanRule> key, GameRules$Type<GameRules$BooleanRule> type)"
+		},
+		{
+			"forge": "visitInteger(GameRules$Key<GameRules$IntegerValue> arg0, GameRules$Type<GameRules$IntegerValue> arg1)",
+			"fabric": "visitInt(GameRules$Key<GameRules$IntRule> key, GameRules$Type<GameRules$IntRule> type)"
+		}
+	]
+}

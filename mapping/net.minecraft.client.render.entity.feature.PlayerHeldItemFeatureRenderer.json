@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.PlayerItemInHandLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.PlayerItemInHandLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.PlayerHeldItemFeatureRenderer"
+		},
+		{
+			"forge": "itemInHandRenderer",
+			"fabric": "playerHeldItemRenderer"
+		},
+		{
+			"forge": "itemInHandRenderer",
+			"fabric": "playerHeldItemRenderer"
+		},
+		{
+			"forge": "X_ROT_MIN",
+			"fabric": "HEAD_YAW"
+		},
+		{
+			"forge": "X_ROT_MAX",
+			"fabric": "HEAD_ROLL"
+		},
+		{
+			"forge": "renderArmWithItem(LivingEntity arg0, ItemStack arg1, ItemDisplayContext arg2, HumanoidArm arg3, PoseStack arg4, MultiBufferSource arg5, int arg6)",
+			"fabric": "renderItem(LivingEntity arg0, ItemStack arg1, ModelTransformationMode arg2, Arm arg3, MatrixStack arg4, VertexConsumerProvider arg5, int arg6)"
+		},
+		{
+			"forge": "renderArmWithItem(LivingEntity arg0, ItemStack arg1, ItemDisplayContext arg2, HumanoidArm arg3, PoseStack arg4, MultiBufferSource arg5, int arg6)",
+			"fabric": "renderItem(LivingEntity arg0, ItemStack arg1, ModelTransformationMode arg2, Arm arg3, MatrixStack arg4, VertexConsumerProvider arg5, int arg6)"
+		},
+		{
+			"forge": "renderArmWithSpyglass(LivingEntity arg0, ItemStack arg1, HumanoidArm arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "renderSpyglass(LivingEntity entity, ItemStack stack, Arm arm, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light)"
+		}
+	]
+}

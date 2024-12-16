@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.world.level.storage.LevelSummary",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.LevelSummary",
+			"fabric": "net.minecraft.world.level.storage.LevelSummary"
+		},
+		{
+			"forge": "settings",
+			"fabric": "levelInfo"
+		},
+		{
+			"forge": "settings",
+			"fabric": "levelInfo"
+		},
+		{
+			"forge": "levelVersion",
+			"fabric": "versionInfo"
+		},
+		{
+			"forge": "levelId",
+			"fabric": "name"
+		},
+		{
+			"forge": "requiresManualConversion",
+			"fabric": "requiresConversion"
+		},
+		{
+			"forge": "locked",
+			"fabric": "locked"
+		},
+		{
+			"forge": "experimental",
+			"fabric": "experimental"
+		},
+		{
+			"forge": "icon",
+			"fabric": "iconPath"
+		},
+		{
+			"forge": "info",
+			"fabric": "details"
+		},
+		{
+			"forge": "getLevelId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getLevelId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getLevelName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getIcon()",
+			"fabric": "getIconPath()"
+		},
+		{
+			"forge": "requiresManualConversion()",
+			"fabric": "requiresConversion()"
+		},
+		{
+			"forge": "isExperimental()",
+			"fabric": "isExperimental()"
+		},
+		{
+			"forge": "getLastPlayed()",
+			"fabric": "getLastPlayed()"
+		},
+		{
+			"forge": "compareTo(LevelSummary arg0)",
+			"fabric": "compareTo(LevelSummary arg0)"
+		},
+		{
+			"forge": "getSettings()",
+			"fabric": "getLevelInfo()"
+		},
+		{
+			"forge": "getGameMode()",
+			"fabric": "getGameMode()"
+		},
+		{
+			"forge": "isHardcore()",
+			"fabric": "isHardcore()"
+		},
+		{
+			"forge": "hasCheats()",
+			"fabric": "hasCheats()"
+		},
+		{
+			"forge": "getWorldVersionName()",
+			"fabric": "getVersion()"
+		},
+		{
+			"forge": "levelVersion()",
+			"fabric": "getVersionInfo()"
+		},
+		{
+			"forge": "markVersionInList()",
+			"fabric": "isDifferentVersion()"
+		},
+		{
+			"forge": "askToOpenWorld()",
+			"fabric": "isFutureLevel()"
+		},
+		{
+			"forge": "backupStatus()",
+			"fabric": "getConversionWarning()"
+		},
+		{
+			"forge": "isLocked()",
+			"fabric": "isLocked()"
+		},
+		{
+			"forge": "isDisabled()",
+			"fabric": "isUnavailable()"
+		},
+		{
+			"forge": "isCompatible()",
+			"fabric": "isVersionAvailable()"
+		},
+		{
+			"forge": "getInfo()",
+			"fabric": "getDetails()"
+		},
+		{
+			"forge": "createInfo()",
+			"fabric": "createDetails()"
+		}
+	]
+}

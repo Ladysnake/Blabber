@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.commands.LootCommand$DropConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.LootCommand$DropConsumer",
+			"fabric": "net.minecraft.server.command.LootCommand$Target"
+		},
+		{
+			"forge": "accept(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, List<ItemStack> arg1, LootCommand$Callback arg2)",
+			"fabric": "accept(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, List<ItemStack> items, LootCommand$FeedbackMessage messageSender)"
+		},
+		{
+			"forge": "accept(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, List<ItemStack> arg1, LootCommand$Callback arg2)",
+			"fabric": "accept(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, List<ItemStack> items, LootCommand$FeedbackMessage messageSender)"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundPlayerActionPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundPlayerActionPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "direction",
+			"fabric": "direction"
+		},
+		{
+			"forge": "action",
+			"fabric": "action"
+		},
+		{
+			"forge": "sequence",
+			"fabric": "sequence"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getDirection()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "getAction()",
+			"fabric": "getAction()"
+		},
+		{
+			"forge": "getSequence()",
+			"fabric": "getSequence()"
+		}
+	]
+}

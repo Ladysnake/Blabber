@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.valueproviders.MultipliedFloats",
+	"items": [
+		{
+			"forge": "net.minecraft.util.valueproviders.MultipliedFloats",
+			"fabric": "net.minecraft.util.math.floatprovider.MultipliedFloatSupplier"
+		},
+		{
+			"forge": "values",
+			"fabric": "multipliers"
+		},
+		{
+			"forge": "values",
+			"fabric": "multipliers"
+		},
+		{
+			"forge": "sample(RandomSource arg0)",
+			"fabric": "get(Random arg0)"
+		},
+		{
+			"forge": "sample(RandomSource arg0)",
+			"fabric": "get(Random arg0)"
+		}
+	]
+}

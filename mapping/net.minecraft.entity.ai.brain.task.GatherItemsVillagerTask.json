@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.TradeWithVillager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.TradeWithVillager",
+			"fabric": "net.minecraft.entity.ai.brain.task.GatherItemsVillagerTask"
+		},
+		{
+			"forge": "INTERACT_DIST_SQR",
+			"fabric": "MAX_RANGE"
+		},
+		{
+			"forge": "INTERACT_DIST_SQR",
+			"fabric": "MAX_RANGE"
+		},
+		{
+			"forge": "SPEED_MODIFIER",
+			"fabric": "WALK_TOGETHER_SPEED"
+		},
+		{
+			"forge": "trades",
+			"fabric": "items"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "figureOutWhatIAmWillingToTrade(Villager arg0, Villager arg1)",
+			"fabric": "getGatherableItems(VillagerEntity entity, VillagerEntity target)"
+		},
+		{
+			"forge": "throwHalfStack(Villager arg0, Set<Item> arg1, LivingEntity arg2)",
+			"fabric": "giveHalfOfStack(VillagerEntity villager, Set<Item> validItems, LivingEntity target)"
+		}
+	]
+}

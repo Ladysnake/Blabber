@@ -1,0 +1,201 @@
+{
+	"title": "net.minecraft.world.phys.Vec3",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.Vec3",
+			"fabric": "net.minecraft.util.math.Vec3d"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "ZERO",
+			"fabric": "ZERO"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "fromRGB24(int arg0)",
+			"fabric": "unpackRgb(int rgb)"
+		},
+		{
+			"forge": "fromRGB24(int arg0)",
+			"fabric": "unpackRgb(int rgb)"
+		},
+		{
+			"forge": "atLowerCornerOf(Vec3i arg0)",
+			"fabric": "of(Vec3i vec)"
+		},
+		{
+			"forge": "atLowerCornerWithOffset(Vec3i arg0, double arg1, double arg2, double arg3)",
+			"fabric": "add(Vec3i vec, double deltaX, double deltaY, double deltaZ)"
+		},
+		{
+			"forge": "atCenterOf(Vec3i arg0)",
+			"fabric": "ofCenter(Vec3i vec)"
+		},
+		{
+			"forge": "atBottomCenterOf(Vec3i arg0)",
+			"fabric": "ofBottomCenter(Vec3i vec)"
+		},
+		{
+			"forge": "upFromBottomCenterOf(Vec3i arg0, double arg1)",
+			"fabric": "ofCenter(Vec3i vec, double deltaY)"
+		},
+		{
+			"forge": "vectorTo(Vec3 arg0)",
+			"fabric": "relativize(Vec3d vec)"
+		},
+		{
+			"forge": "normalize()",
+			"fabric": "normalize()"
+		},
+		{
+			"forge": "dot(Vec3 arg0)",
+			"fabric": "dotProduct(Vec3d vec)"
+		},
+		{
+			"forge": "cross(Vec3 arg0)",
+			"fabric": "crossProduct(Vec3d vec)"
+		},
+		{
+			"forge": "subtract(Vec3 arg0)",
+			"fabric": "subtract(Vec3d vec)"
+		},
+		{
+			"forge": "subtract(double arg0, double arg1, double arg2)",
+			"fabric": "subtract(double x, double y, double z)"
+		},
+		{
+			"forge": "add(Vec3 arg0)",
+			"fabric": "add(Vec3d vec)"
+		},
+		{
+			"forge": "add(double arg0, double arg1, double arg2)",
+			"fabric": "add(double x, double y, double z)"
+		},
+		{
+			"forge": "closerThan(Position arg0, double arg1)",
+			"fabric": "isInRange(Position pos, double radius)"
+		},
+		{
+			"forge": "distanceTo(Vec3 arg0)",
+			"fabric": "distanceTo(Vec3d vec)"
+		},
+		{
+			"forge": "distanceToSqr(Vec3 arg0)",
+			"fabric": "squaredDistanceTo(Vec3d vec)"
+		},
+		{
+			"forge": "distanceToSqr(double arg0, double arg1, double arg2)",
+			"fabric": "squaredDistanceTo(double x, double y, double z)"
+		},
+		{
+			"forge": "scale(double arg0)",
+			"fabric": "multiply(double value)"
+		},
+		{
+			"forge": "reverse()",
+			"fabric": "negate()"
+		},
+		{
+			"forge": "multiply(Vec3 arg0)",
+			"fabric": "multiply(Vec3d vec)"
+		},
+		{
+			"forge": "multiply(double arg0, double arg1, double arg2)",
+			"fabric": "multiply(double x, double y, double z)"
+		},
+		{
+			"forge": "offsetRandom(RandomSource arg0, float arg1)",
+			"fabric": "addRandom(Random random, float multiplier)"
+		},
+		{
+			"forge": "length()",
+			"fabric": "length()"
+		},
+		{
+			"forge": "lengthSqr()",
+			"fabric": "lengthSquared()"
+		},
+		{
+			"forge": "horizontalDistance()",
+			"fabric": "horizontalLength()"
+		},
+		{
+			"forge": "horizontalDistanceSqr()",
+			"fabric": "horizontalLengthSquared()"
+		},
+		{
+			"forge": "lerp(Vec3 arg0, double arg1)",
+			"fabric": "lerp(Vec3d to, double delta)"
+		},
+		{
+			"forge": "xRot(float arg0)",
+			"fabric": "rotateX(float angle)"
+		},
+		{
+			"forge": "yRot(float arg0)",
+			"fabric": "rotateY(float angle)"
+		},
+		{
+			"forge": "zRot(float arg0)",
+			"fabric": "rotateZ(float angle)"
+		},
+		{
+			"forge": "directionFromRotation(Vec2 arg0)",
+			"fabric": "fromPolar(Vec2f polar)"
+		},
+		{
+			"forge": "directionFromRotation(float arg0, float arg1)",
+			"fabric": "fromPolar(float pitch, float yaw)"
+		},
+		{
+			"forge": "align(EnumSet<Direction$Axis> arg0)",
+			"fabric": "floorAlongAxes(EnumSet<Direction$Axis> axes)"
+		},
+		{
+			"forge": "get(Direction$Axis arg0)",
+			"fabric": "getComponentAlongAxis(Direction$Axis axis)"
+		},
+		{
+			"forge": "with(Direction$Axis arg0, double arg1)",
+			"fabric": "withAxis(Direction$Axis axis, double value)"
+		},
+		{
+			"forge": "relative(Direction arg0, double arg1)",
+			"fabric": "offset(Direction direction, double value)"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "y()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "z()",
+			"fabric": "getZ()"
+		},
+		{
+			"forge": "toVector3f()",
+			"fabric": "toVector3f()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.sources.SourceFilter",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.sources.SourceFilter",
+			"fabric": "net.minecraft.client.texture.atlas.FilterAtlasSource"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "filter",
+			"fabric": "pattern"
+		},
+		{
+			"forge": "run(ResourceManager arg0, SpriteSource$Output arg1)",
+			"fabric": "load(ResourceManager arg0, AtlasSource$SpriteRegions arg1)"
+		},
+		{
+			"forge": "run(ResourceManager arg0, SpriteSource$Output arg1)",
+			"fabric": "load(ResourceManager arg0, AtlasSource$SpriteRegions arg1)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

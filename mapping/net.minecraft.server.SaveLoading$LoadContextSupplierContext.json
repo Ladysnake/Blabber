@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.server.WorldLoader$DataLoadContext",
+	"items": [
+		{
+			"forge": "net.minecraft.server.WorldLoader$DataLoadContext",
+			"fabric": "net.minecraft.server.SaveLoading$LoadContextSupplierContext"
+		},
+		{
+			"forge": "resources",
+			"fabric": "resourceManager"
+		},
+		{
+			"forge": "resources",
+			"fabric": "resourceManager"
+		},
+		{
+			"forge": "dataConfiguration",
+			"fabric": "dataConfiguration"
+		},
+		{
+			"forge": "datapackWorldgen",
+			"fabric": "worldGenRegistryManager"
+		},
+		{
+			"forge": "datapackDimensions",
+			"fabric": "dimensionsRegistryManager"
+		},
+		{
+			"forge": "resources()",
+			"fabric": "resourceManager()"
+		},
+		{
+			"forge": "resources()",
+			"fabric": "resourceManager()"
+		},
+		{
+			"forge": "dataConfiguration()",
+			"fabric": "dataConfiguration()"
+		},
+		{
+			"forge": "datapackWorldgen()",
+			"fabric": "worldGenRegistryManager()"
+		},
+		{
+			"forge": "datapackDimensions()",
+			"fabric": "dimensionsRegistryManager()"
+		}
+	]
+}

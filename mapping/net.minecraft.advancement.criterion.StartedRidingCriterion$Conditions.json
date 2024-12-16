@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.advancements.critereon.StartRidingTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.StartRidingTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.StartedRidingCriterion$Conditions"
+		},
+		{
+			"forge": "playerStartsRiding(EntityPredicate$Builder arg0)",
+			"fabric": "create(EntityPredicate$Builder player)"
+		},
+		{
+			"forge": "playerStartsRiding(EntityPredicate$Builder arg0)",
+			"fabric": "create(EntityPredicate$Builder player)"
+		}
+	]
+}

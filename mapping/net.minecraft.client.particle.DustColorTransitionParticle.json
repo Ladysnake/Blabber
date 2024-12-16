@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.particle.DustColorTransitionParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.DustColorTransitionParticle",
+			"fabric": "net.minecraft.client.particle.DustColorTransitionParticle"
+		},
+		{
+			"forge": "fromColor",
+			"fabric": "startColor"
+		},
+		{
+			"forge": "fromColor",
+			"fabric": "startColor"
+		},
+		{
+			"forge": "toColor",
+			"fabric": "endColor"
+		},
+		{
+			"forge": "randomizeColor(org.joml.Vector3f arg0, float arg1)",
+			"fabric": "darken(org.joml.Vector3f color, float multiplier)"
+		},
+		{
+			"forge": "randomizeColor(org.joml.Vector3f arg0, float arg1)",
+			"fabric": "darken(org.joml.Vector3f color, float multiplier)"
+		},
+		{
+			"forge": "lerpColors(float arg0)",
+			"fabric": "updateColor(float tickDelta)"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		}
+	]
+}

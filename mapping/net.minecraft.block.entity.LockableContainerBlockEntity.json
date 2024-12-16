@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BaseContainerBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BaseContainerBlockEntity",
+			"fabric": "net.minecraft.block.entity.LockableContainerBlockEntity"
+		},
+		{
+			"forge": "lockKey",
+			"fabric": "lock"
+		},
+		{
+			"forge": "lockKey",
+			"fabric": "lock"
+		},
+		{
+			"forge": "name",
+			"fabric": "customName"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "setCustomName(Component arg0)",
+			"fabric": "setCustomName(Text customName)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getCustomName()",
+			"fabric": "getCustomName()"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "canOpen(Player arg0)",
+			"fabric": "checkUnlocked(PlayerEntity player)"
+		},
+		{
+			"forge": "canUnlock(Player arg0, LockCode arg1, Component arg2)",
+			"fabric": "checkUnlocked(PlayerEntity player, ContainerLock lock, Text containerName)"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1, Player arg2)",
+			"fabric": "createMenu(int arg0, PlayerInventory arg1, PlayerEntity arg2)"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1)",
+			"fabric": "createScreenHandler(int syncId, PlayerInventory playerInventory)"
+		}
+	]
+}

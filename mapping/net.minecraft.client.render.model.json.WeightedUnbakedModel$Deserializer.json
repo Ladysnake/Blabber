@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.MultiVariant$Deserializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.MultiVariant$Deserializer",
+			"fabric": "net.minecraft.client.render.model.json.WeightedUnbakedModel$Deserializer"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		}
+	]
+}

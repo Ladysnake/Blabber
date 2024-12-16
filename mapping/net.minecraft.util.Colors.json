@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.CommonColors",
+	"items": [
+		{
+			"forge": "net.minecraft.util.CommonColors",
+			"fabric": "net.minecraft.util.Colors"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "BLACK",
+			"fabric": "BLACK"
+		},
+		{
+			"forge": "GRAY",
+			"fabric": "GRAY"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		}
+	]
+}

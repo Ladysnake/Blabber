@@ -1,0 +1,197 @@
+{
+	"title": "net.minecraft.world.damagesource.DamageTypes",
+	"items": [
+		{
+			"forge": "net.minecraft.world.damagesource.DamageTypes",
+			"fabric": "net.minecraft.entity.damage.DamageTypes"
+		},
+		{
+			"forge": "IN_FIRE",
+			"fabric": "IN_FIRE"
+		},
+		{
+			"forge": "IN_FIRE",
+			"fabric": "IN_FIRE"
+		},
+		{
+			"forge": "LIGHTNING_BOLT",
+			"fabric": "LIGHTNING_BOLT"
+		},
+		{
+			"forge": "ON_FIRE",
+			"fabric": "ON_FIRE"
+		},
+		{
+			"forge": "LAVA",
+			"fabric": "LAVA"
+		},
+		{
+			"forge": "HOT_FLOOR",
+			"fabric": "HOT_FLOOR"
+		},
+		{
+			"forge": "IN_WALL",
+			"fabric": "IN_WALL"
+		},
+		{
+			"forge": "CRAMMING",
+			"fabric": "CRAMMING"
+		},
+		{
+			"forge": "DROWN",
+			"fabric": "DROWN"
+		},
+		{
+			"forge": "STARVE",
+			"fabric": "STARVE"
+		},
+		{
+			"forge": "CACTUS",
+			"fabric": "CACTUS"
+		},
+		{
+			"forge": "FALL",
+			"fabric": "FALL"
+		},
+		{
+			"forge": "FLY_INTO_WALL",
+			"fabric": "FLY_INTO_WALL"
+		},
+		{
+			"forge": "FELL_OUT_OF_WORLD",
+			"fabric": "OUT_OF_WORLD"
+		},
+		{
+			"forge": "GENERIC",
+			"fabric": "GENERIC"
+		},
+		{
+			"forge": "MAGIC",
+			"fabric": "MAGIC"
+		},
+		{
+			"forge": "WITHER",
+			"fabric": "WITHER"
+		},
+		{
+			"forge": "DRAGON_BREATH",
+			"fabric": "DRAGON_BREATH"
+		},
+		{
+			"forge": "DRY_OUT",
+			"fabric": "DRY_OUT"
+		},
+		{
+			"forge": "SWEET_BERRY_BUSH",
+			"fabric": "SWEET_BERRY_BUSH"
+		},
+		{
+			"forge": "FREEZE",
+			"fabric": "FREEZE"
+		},
+		{
+			"forge": "STALAGMITE",
+			"fabric": "STALAGMITE"
+		},
+		{
+			"forge": "FALLING_BLOCK",
+			"fabric": "FALLING_BLOCK"
+		},
+		{
+			"forge": "FALLING_ANVIL",
+			"fabric": "FALLING_ANVIL"
+		},
+		{
+			"forge": "FALLING_STALACTITE",
+			"fabric": "FALLING_STALACTITE"
+		},
+		{
+			"forge": "STING",
+			"fabric": "STING"
+		},
+		{
+			"forge": "MOB_ATTACK",
+			"fabric": "MOB_ATTACK"
+		},
+		{
+			"forge": "MOB_ATTACK_NO_AGGRO",
+			"fabric": "MOB_ATTACK_NO_AGGRO"
+		},
+		{
+			"forge": "PLAYER_ATTACK",
+			"fabric": "PLAYER_ATTACK"
+		},
+		{
+			"forge": "ARROW",
+			"fabric": "ARROW"
+		},
+		{
+			"forge": "TRIDENT",
+			"fabric": "TRIDENT"
+		},
+		{
+			"forge": "MOB_PROJECTILE",
+			"fabric": "MOB_PROJECTILE"
+		},
+		{
+			"forge": "FIREWORKS",
+			"fabric": "FIREWORKS"
+		},
+		{
+			"forge": "FIREBALL",
+			"fabric": "FIREBALL"
+		},
+		{
+			"forge": "UNATTRIBUTED_FIREBALL",
+			"fabric": "UNATTRIBUTED_FIREBALL"
+		},
+		{
+			"forge": "WITHER_SKULL",
+			"fabric": "WITHER_SKULL"
+		},
+		{
+			"forge": "THROWN",
+			"fabric": "THROWN"
+		},
+		{
+			"forge": "INDIRECT_MAGIC",
+			"fabric": "INDIRECT_MAGIC"
+		},
+		{
+			"forge": "THORNS",
+			"fabric": "THORNS"
+		},
+		{
+			"forge": "EXPLOSION",
+			"fabric": "EXPLOSION"
+		},
+		{
+			"forge": "PLAYER_EXPLOSION",
+			"fabric": "PLAYER_EXPLOSION"
+		},
+		{
+			"forge": "SONIC_BOOM",
+			"fabric": "SONIC_BOOM"
+		},
+		{
+			"forge": "BAD_RESPAWN_POINT",
+			"fabric": "BAD_RESPAWN_POINT"
+		},
+		{
+			"forge": "OUTSIDE_BORDER",
+			"fabric": "OUTSIDE_BORDER"
+		},
+		{
+			"forge": "GENERIC_KILL",
+			"fabric": "GENERIC_KILL"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<DamageType> arg0)",
+			"fabric": "bootstrap(Registerable<DamageType> damageTypeRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<DamageType> arg0)",
+			"fabric": "bootstrap(Registerable<DamageType> damageTypeRegisterable)"
+		}
+	]
+}

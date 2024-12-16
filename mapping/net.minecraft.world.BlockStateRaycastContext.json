@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.ClipBlockStateContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.ClipBlockStateContext",
+			"fabric": "net.minecraft.world.BlockStateRaycastContext"
+		},
+		{
+			"forge": "from",
+			"fabric": "start"
+		},
+		{
+			"forge": "from",
+			"fabric": "start"
+		},
+		{
+			"forge": "to",
+			"fabric": "end"
+		},
+		{
+			"forge": "block",
+			"fabric": "statePredicate"
+		},
+		{
+			"forge": "getTo()",
+			"fabric": "getEnd()"
+		},
+		{
+			"forge": "getTo()",
+			"fabric": "getEnd()"
+		},
+		{
+			"forge": "getFrom()",
+			"fabric": "getStart()"
+		},
+		{
+			"forge": "isTargetBlock()",
+			"fabric": "getStatePredicate()"
+		}
+	]
+}

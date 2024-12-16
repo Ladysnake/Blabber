@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.FeatureCountTracker$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.FeatureCountTracker$1",
+			"fabric": "net.minecraft.world.gen.feature.util.FeatureDebugLogger$1"
+		},
+		{
+			"forge": "load(ServerLevel arg0)",
+			"fabric": "load(ServerWorld arg0)"
+		},
+		{
+			"forge": "load(ServerLevel arg0)",
+			"fabric": "load(ServerWorld arg0)"
+		}
+	]
+}

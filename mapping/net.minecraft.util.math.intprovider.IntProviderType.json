@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.util.valueproviders.IntProviderType",
+	"items": [
+		{
+			"forge": "net.minecraft.util.valueproviders.IntProviderType",
+			"fabric": "net.minecraft.util.math.intprovider.IntProviderType"
+		},
+		{
+			"forge": "CONSTANT",
+			"fabric": "CONSTANT"
+		},
+		{
+			"forge": "CONSTANT",
+			"fabric": "CONSTANT"
+		},
+		{
+			"forge": "UNIFORM",
+			"fabric": "UNIFORM"
+		},
+		{
+			"forge": "BIASED_TO_BOTTOM",
+			"fabric": "BIASED_TO_BOTTOM"
+		},
+		{
+			"forge": "CLAMPED",
+			"fabric": "CLAMPED"
+		},
+		{
+			"forge": "WEIGHTED_LIST",
+			"fabric": "WEIGHTED_LIST"
+		},
+		{
+			"forge": "CLAMPED_NORMAL",
+			"fabric": "CLAMPED_NORMAL"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		}
+	]
+}

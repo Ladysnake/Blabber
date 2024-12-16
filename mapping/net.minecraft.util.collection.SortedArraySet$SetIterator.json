@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.SortedArraySet$ArrayIterator",
+	"items": [
+		{
+			"forge": "net.minecraft.util.SortedArraySet$ArrayIterator",
+			"fabric": "net.minecraft.util.collection.SortedArraySet$SetIterator"
+		},
+		{
+			"forge": "index",
+			"fabric": "nextIndex"
+		},
+		{
+			"forge": "index",
+			"fabric": "nextIndex"
+		},
+		{
+			"forge": "last",
+			"fabric": "lastIndex"
+		}
+	]
+}

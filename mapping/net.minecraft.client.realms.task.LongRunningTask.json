@@ -1,0 +1,65 @@
+{
+	"title": "com.mojang.realmsclient.util.task.LongRunningTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.LongRunningTask",
+			"fabric": "net.minecraft.client.realms.task.LongRunningTask"
+		},
+		{
+			"forge": "NUMBER_OF_RETRIES",
+			"fabric": "MAX_RETRIES"
+		},
+		{
+			"forge": "NUMBER_OF_RETRIES",
+			"fabric": "MAX_RETRIES"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "longRunningMcoTaskScreen",
+			"fabric": "screen"
+		},
+		{
+			"forge": "pause(long arg0)",
+			"fabric": "pause(long seconds)"
+		},
+		{
+			"forge": "pause(long arg0)",
+			"fabric": "pause(long seconds)"
+		},
+		{
+			"forge": "setScreen(Screen arg0)",
+			"fabric": "setScreen(Screen screen)"
+		},
+		{
+			"forge": "setScreen(RealmsLongRunningMcoTaskScreen arg0)",
+			"fabric": "setScreen(RealmsLongRunningMcoTaskScreen screen)"
+		},
+		{
+			"forge": "error(Component arg0)",
+			"fabric": "error(Text arg0)"
+		},
+		{
+			"forge": "setTitle(Component arg0)",
+			"fabric": "setTitle(Text title)"
+		},
+		{
+			"forge": "aborted()",
+			"fabric": "aborted()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "abortTask()",
+			"fabric": "abortTask()"
+		}
+	]
+}

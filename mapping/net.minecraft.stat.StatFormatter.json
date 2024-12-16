@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.stats.StatFormatter",
+	"items": [
+		{
+			"forge": "net.minecraft.stats.StatFormatter",
+			"fabric": "net.minecraft.stat.StatFormatter"
+		},
+		{
+			"forge": "DECIMAL_FORMAT",
+			"fabric": "DECIMAL_FORMAT"
+		},
+		{
+			"forge": "DECIMAL_FORMAT",
+			"fabric": "DECIMAL_FORMAT"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "DIVIDE_BY_TEN",
+			"fabric": "DIVIDE_BY_TEN"
+		},
+		{
+			"forge": "DISTANCE",
+			"fabric": "DISTANCE"
+		},
+		{
+			"forge": "TIME",
+			"fabric": "TIME"
+		},
+		{
+			"forge": "format(int arg0)",
+			"fabric": "format(int value)"
+		},
+		{
+			"forge": "format(int arg0)",
+			"fabric": "format(int value)"
+		}
+	]
+}

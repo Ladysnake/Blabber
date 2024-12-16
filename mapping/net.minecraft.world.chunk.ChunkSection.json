@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.world.level.chunk.LevelChunkSection",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.LevelChunkSection",
+			"fabric": "net.minecraft.world.chunk.ChunkSection"
+		},
+		{
+			"forge": "SECTION_WIDTH",
+			"fabric": "field_31406"
+		},
+		{
+			"forge": "SECTION_WIDTH",
+			"fabric": "field_31406"
+		},
+		{
+			"forge": "SECTION_HEIGHT",
+			"fabric": "field_31407"
+		},
+		{
+			"forge": "SECTION_SIZE",
+			"fabric": "field_31408"
+		},
+		{
+			"forge": "BIOME_CONTAINER_BITS",
+			"fabric": "field_34555"
+		},
+		{
+			"forge": "nonEmptyBlockCount",
+			"fabric": "nonEmptyBlockCount"
+		},
+		{
+			"forge": "tickingBlockCount",
+			"fabric": "randomTickableBlockCount"
+		},
+		{
+			"forge": "tickingFluidCount",
+			"fabric": "nonEmptyFluidCount"
+		},
+		{
+			"forge": "states",
+			"fabric": "blockStateContainer"
+		},
+		{
+			"forge": "biomes",
+			"fabric": "biomeContainer"
+		},
+		{
+			"forge": "getBlockState(int arg0, int arg1, int arg2)",
+			"fabric": "getBlockState(int x, int y, int z)"
+		},
+		{
+			"forge": "getBlockState(int arg0, int arg1, int arg2)",
+			"fabric": "getBlockState(int x, int y, int z)"
+		},
+		{
+			"forge": "getFluidState(int arg0, int arg1, int arg2)",
+			"fabric": "getFluidState(int x, int y, int z)"
+		},
+		{
+			"forge": "acquire()",
+			"fabric": "lock()"
+		},
+		{
+			"forge": "release()",
+			"fabric": "unlock()"
+		},
+		{
+			"forge": "setBlockState(int arg0, int arg1, int arg2, BlockState arg3)",
+			"fabric": "setBlockState(int x, int y, int z, BlockState state)"
+		},
+		{
+			"forge": "setBlockState(int arg0, int arg1, int arg2, BlockState arg3, boolean arg4)",
+			"fabric": "setBlockState(int x, int y, int z, BlockState state, boolean lock)"
+		},
+		{
+			"forge": "hasOnlyAir()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "isRandomlyTicking()",
+			"fabric": "hasRandomTicks()"
+		},
+		{
+			"forge": "isRandomlyTickingBlocks()",
+			"fabric": "hasRandomBlockTicks()"
+		},
+		{
+			"forge": "isRandomlyTickingFluids()",
+			"fabric": "hasRandomFluidTicks()"
+		},
+		{
+			"forge": "recalcBlockCounts()",
+			"fabric": "calculateCounts()"
+		},
+		{
+			"forge": "getStates()",
+			"fabric": "getBlockStateContainer()"
+		},
+		{
+			"forge": "getBiomes()",
+			"fabric": "getBiomeContainer()"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "readDataPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "readBiomes(FriendlyByteBuf arg0)",
+			"fabric": "readBiomePacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "toPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "getSerializedSize()",
+			"fabric": "getPacketSize()"
+		},
+		{
+			"forge": "maybeHas(Predicate<BlockState> arg0)",
+			"fabric": "hasAny(Predicate<BlockState> predicate)"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2)",
+			"fabric": "getBiome(int x, int y, int z)"
+		},
+		{
+			"forge": "fillBiomesFromNoise(BiomeResolver arg0, Climate$Sampler arg1, int arg2, int arg3, int arg4)",
+			"fabric": "populateBiomes(BiomeSupplier biomeSupplier, MultiNoiseUtil$MultiNoiseSampler sampler, int x, int y, int z)"
+		}
+	]
+}

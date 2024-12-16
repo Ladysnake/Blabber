@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.monster.EnderMan$EndermanTakeBlockGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.EnderMan$EndermanTakeBlockGoal",
+			"fabric": "net.minecraft.entity.mob.EndermanEntity$PickUpBlockGoal"
+		},
+		{
+			"forge": "enderman",
+			"fabric": "enderman"
+		},
+		{
+			"forge": "enderman",
+			"fabric": "enderman"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.world.level.pathfinder.BlockPathTypes",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.pathfinder.BlockPathTypes",
+			"fabric": "net.minecraft.entity.ai.pathing.PathNodeType"
+		},
+		{
+			"forge": "BLOCKED",
+			"fabric": "BLOCKED"
+		},
+		{
+			"forge": "BLOCKED",
+			"fabric": "BLOCKED"
+		},
+		{
+			"forge": "OPEN",
+			"fabric": "OPEN"
+		},
+		{
+			"forge": "WALKABLE",
+			"fabric": "WALKABLE"
+		},
+		{
+			"forge": "WALKABLE_DOOR",
+			"fabric": "WALKABLE_DOOR"
+		},
+		{
+			"forge": "TRAPDOOR",
+			"fabric": "TRAPDOOR"
+		},
+		{
+			"forge": "POWDER_SNOW",
+			"fabric": "POWDER_SNOW"
+		},
+		{
+			"forge": "DANGER_POWDER_SNOW",
+			"fabric": "DANGER_POWDER_SNOW"
+		},
+		{
+			"forge": "FENCE",
+			"fabric": "FENCE"
+		},
+		{
+			"forge": "LAVA",
+			"fabric": "LAVA"
+		},
+		{
+			"forge": "WATER",
+			"fabric": "WATER"
+		},
+		{
+			"forge": "WATER_BORDER",
+			"fabric": "WATER_BORDER"
+		},
+		{
+			"forge": "RAIL",
+			"fabric": "RAIL"
+		},
+		{
+			"forge": "UNPASSABLE_RAIL",
+			"fabric": "UNPASSABLE_RAIL"
+		},
+		{
+			"forge": "DANGER_FIRE",
+			"fabric": "DANGER_FIRE"
+		},
+		{
+			"forge": "DAMAGE_FIRE",
+			"fabric": "DAMAGE_FIRE"
+		},
+		{
+			"forge": "DANGER_OTHER",
+			"fabric": "DANGER_OTHER"
+		},
+		{
+			"forge": "DAMAGE_OTHER",
+			"fabric": "DAMAGE_OTHER"
+		},
+		{
+			"forge": "DOOR_OPEN",
+			"fabric": "DOOR_OPEN"
+		},
+		{
+			"forge": "DOOR_WOOD_CLOSED",
+			"fabric": "DOOR_WOOD_CLOSED"
+		},
+		{
+			"forge": "DOOR_IRON_CLOSED",
+			"fabric": "DOOR_IRON_CLOSED"
+		},
+		{
+			"forge": "BREACH",
+			"fabric": "BREACH"
+		},
+		{
+			"forge": "LEAVES",
+			"fabric": "LEAVES"
+		},
+		{
+			"forge": "STICKY_HONEY",
+			"fabric": "STICKY_HONEY"
+		},
+		{
+			"forge": "COCOA",
+			"fabric": "COCOA"
+		},
+		{
+			"forge": "DAMAGE_CAUTIOUS",
+			"fabric": "DAMAGE_CAUTIOUS"
+		},
+		{
+			"forge": "malus",
+			"fabric": "defaultPenalty"
+		},
+		{
+			"forge": "malus",
+			"fabric": "defaultPenalty"
+		},
+		{
+			"forge": "getMalus()",
+			"fabric": "getDefaultPenalty()"
+		},
+		{
+			"forge": "getMalus()",
+			"fabric": "getDefaultPenalty()"
+		}
+	]
+}

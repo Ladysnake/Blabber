@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.state.BlockBehaviour$StateArgumentPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.BlockBehaviour$StateArgumentPredicate",
+			"fabric": "net.minecraft.block.AbstractBlock$TypedContextPredicate"
+		},
+		{
+			"forge": "test(BlockState arg0, BlockGetter arg1, BlockPos arg2, A arg3)",
+			"fabric": "test(BlockState state, BlockView world, BlockPos pos, A type)"
+		},
+		{
+			"forge": "test(BlockState arg0, BlockGetter arg1, BlockPos arg2, A arg3)",
+			"fabric": "test(BlockState state, BlockView world, BlockPos pos, A type)"
+		}
+	]
+}

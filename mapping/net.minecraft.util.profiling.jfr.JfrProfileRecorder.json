@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.parse.JfrStatsParser",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.parse.JfrStatsParser",
+			"fabric": "net.minecraft.util.profiling.jfr.JfrProfileRecorder"
+		},
+		{
+			"forge": "recordingStarted",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "recordingStarted",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "recordingEnded",
+			"fabric": "endTime"
+		},
+		{
+			"forge": "chunkGenStats",
+			"fabric": "chunkGenerationSamples"
+		},
+		{
+			"forge": "cpuLoadStat",
+			"fabric": "cpuLoadSamples"
+		},
+		{
+			"forge": "receivedPackets",
+			"fabric": "receivedPacketsToCounter"
+		},
+		{
+			"forge": "sentPackets",
+			"fabric": "sentPacketsToCounter"
+		},
+		{
+			"forge": "fileWrites",
+			"fabric": "fileWriteSamples"
+		},
+		{
+			"forge": "fileReads",
+			"fabric": "fileReadSamples"
+		},
+		{
+			"forge": "garbageCollections",
+			"fabric": "gcCount"
+		},
+		{
+			"forge": "gcTotalDuration",
+			"fabric": "gcDuration"
+		},
+		{
+			"forge": "gcHeapStats",
+			"fabric": "gcHeapSummarySamples"
+		},
+		{
+			"forge": "threadAllocationStats",
+			"fabric": "threadAllocationStatisticsSamples"
+		},
+		{
+			"forge": "tickTimes",
+			"fabric": "serverTickTimeSamples"
+		},
+		{
+			"forge": "worldCreationDuration",
+			"fabric": "worldGenDuration"
+		},
+		{
+			"forge": "parse(Path arg0)",
+			"fabric": "readProfile(Path path)"
+		},
+		{
+			"forge": "parse(Path arg0)",
+			"fabric": "readProfile(Path path)"
+		},
+		{
+			"forge": "results()",
+			"fabric": "createProfile()"
+		},
+		{
+			"forge": "capture(Stream<RecordedEvent> arg0)",
+			"fabric": "handleEvents(Stream<RecordedEvent> events)"
+		},
+		{
+			"forge": "incrementPacket(RecordedEvent arg0, int arg1, Map<NetworkPacketSummary$PacketIdentification, JfrStatsParser$MutableCountAndSize> arg2)",
+			"fabric": "addPacket(RecordedEvent event, int bytes, Map<NetworkIoStatistics$Packet, JfrProfileRecorder$PacketCounter> packetsToCounter)"
+		},
+		{
+			"forge": "appendFileIO(RecordedEvent arg0, List<FileIOStat> arg1, String arg2)",
+			"fabric": "addFileIoSample(RecordedEvent event, List<FileIoSample> samples, String bytesKey)"
+		},
+		{
+			"forge": "collectPacketStats(Duration arg0, Map<NetworkPacketSummary$PacketIdentification, JfrStatsParser$MutableCountAndSize> arg1)",
+			"fabric": "createNetworkIoStatistics(Duration duration, Map<NetworkIoStatistics$Packet, JfrProfileRecorder$PacketCounter> packetsToCounter)"
+		}
+	]
+}

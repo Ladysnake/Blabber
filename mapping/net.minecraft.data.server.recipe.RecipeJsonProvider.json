@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.data.recipes.FinishedRecipe",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.FinishedRecipe",
+			"fabric": "net.minecraft.data.server.recipe.RecipeJsonProvider"
+		},
+		{
+			"forge": "serializeRecipeData(com.google.gson.JsonObject arg0)",
+			"fabric": "serialize(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "serializeRecipeData(com.google.gson.JsonObject arg0)",
+			"fabric": "serialize(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "serializeRecipe()",
+			"fabric": "toJson()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getRecipeId()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "serializeAdvancement()",
+			"fabric": "toAdvancementJson()"
+		},
+		{
+			"forge": "getAdvancementId()",
+			"fabric": "getAdvancementId()"
+		}
+	]
+}

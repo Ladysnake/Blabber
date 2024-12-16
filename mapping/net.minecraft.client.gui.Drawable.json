@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.components.Renderable",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.Renderable",
+			"fabric": "net.minecraft.client.gui.Drawable"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext context, int mouseX, int mouseY, float delta)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext context, int mouseX, int mouseY, float delta)"
+		}
+	]
+}

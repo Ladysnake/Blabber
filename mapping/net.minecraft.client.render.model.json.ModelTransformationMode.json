@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.item.ItemDisplayContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ItemDisplayContext",
+			"fabric": "net.minecraft.client.render.model.json.ModelTransformationMode"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "THIRD_PERSON_LEFT_HAND",
+			"fabric": "THIRD_PERSON_LEFT_HAND"
+		},
+		{
+			"forge": "THIRD_PERSON_RIGHT_HAND",
+			"fabric": "THIRD_PERSON_RIGHT_HAND"
+		},
+		{
+			"forge": "FIRST_PERSON_LEFT_HAND",
+			"fabric": "FIRST_PERSON_LEFT_HAND"
+		},
+		{
+			"forge": "FIRST_PERSON_RIGHT_HAND",
+			"fabric": "FIRST_PERSON_RIGHT_HAND"
+		},
+		{
+			"forge": "HEAD",
+			"fabric": "HEAD"
+		},
+		{
+			"forge": "GUI",
+			"fabric": "GUI"
+		},
+		{
+			"forge": "GROUND",
+			"fabric": "GROUND"
+		},
+		{
+			"forge": "FIXED",
+			"fabric": "FIXED"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "FROM_INDEX"
+		},
+		{
+			"forge": "id",
+			"fabric": "index"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getIndex()"
+		},
+		{
+			"forge": "firstPerson()",
+			"fabric": "isFirstPerson()"
+		}
+	]
+}

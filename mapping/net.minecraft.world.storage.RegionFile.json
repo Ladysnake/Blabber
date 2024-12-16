@@ -1,0 +1,181 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.RegionFile",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.RegionFile",
+			"fabric": "net.minecraft.world.storage.RegionFile"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SECTOR_BYTES",
+			"fabric": "field_31418"
+		},
+		{
+			"forge": "SECTOR_INTS",
+			"fabric": "SECTOR_DATA_LIMIT"
+		},
+		{
+			"forge": "CHUNK_HEADER_SIZE",
+			"fabric": "field_31419"
+		},
+		{
+			"forge": "HEADER_OFFSET",
+			"fabric": "field_31420"
+		},
+		{
+			"forge": "PADDING_BUFFER",
+			"fabric": "ZERO"
+		},
+		{
+			"forge": "EXTERNAL_FILE_EXTENSION",
+			"fabric": "FILE_EXTENSION"
+		},
+		{
+			"forge": "EXTERNAL_STREAM_FLAG",
+			"fabric": "field_31422"
+		},
+		{
+			"forge": "EXTERNAL_CHUNK_THRESHOLD",
+			"fabric": "field_31423"
+		},
+		{
+			"forge": "CHUNK_NOT_PRESENT",
+			"fabric": "field_31424"
+		},
+		{
+			"forge": "file",
+			"fabric": "channel"
+		},
+		{
+			"forge": "externalFileDir",
+			"fabric": "directory"
+		},
+		{
+			"forge": "version",
+			"fabric": "outputChunkStreamVersion"
+		},
+		{
+			"forge": "header",
+			"fabric": "header"
+		},
+		{
+			"forge": "offsets",
+			"fabric": "sectorData"
+		},
+		{
+			"forge": "timestamps",
+			"fabric": "saveTimes"
+		},
+		{
+			"forge": "usedSectors",
+			"fabric": "sectors"
+		},
+		{
+			"forge": "getExternalChunkPath(ChunkPos arg0)",
+			"fabric": "getExternalChunkPath(ChunkPos chunkPos)"
+		},
+		{
+			"forge": "getExternalChunkPath(ChunkPos arg0)",
+			"fabric": "getExternalChunkPath(ChunkPos chunkPos)"
+		},
+		{
+			"forge": "getChunkDataInputStream(ChunkPos arg0)",
+			"fabric": "getChunkInputStream(ChunkPos pos)"
+		},
+		{
+			"forge": "getTimestamp()",
+			"fabric": "getEpochTimeSeconds()"
+		},
+		{
+			"forge": "isExternalStreamChunk(byte arg0)",
+			"fabric": "hasChunkStreamVersionId(byte flags)"
+		},
+		{
+			"forge": "getExternalChunkVersion(byte arg0)",
+			"fabric": "getChunkStreamVersionId(byte flags)"
+		},
+		{
+			"forge": "createChunkInputStream(ChunkPos arg0, byte arg1, InputStream arg2)",
+			"fabric": "decompress(ChunkPos pos, byte flags, InputStream stream)"
+		},
+		{
+			"forge": "createExternalChunkInputStream(ChunkPos arg0, byte arg1)",
+			"fabric": "getInputStream(ChunkPos pos, byte flags)"
+		},
+		{
+			"forge": "createStream(ByteBuffer arg0, int arg1)",
+			"fabric": "getInputStream(ByteBuffer buffer, int length)"
+		},
+		{
+			"forge": "packSectorOffset(int arg0, int arg1)",
+			"fabric": "packSectorData(int offset, int size)"
+		},
+		{
+			"forge": "getNumSectors(int arg0)",
+			"fabric": "getSize(int sectorData)"
+		},
+		{
+			"forge": "getSectorNumber(int arg0)",
+			"fabric": "getOffset(int sectorData)"
+		},
+		{
+			"forge": "sizeToSectors(int arg0)",
+			"fabric": "getSectorCount(int byteCount)"
+		},
+		{
+			"forge": "doesChunkExist(ChunkPos arg0)",
+			"fabric": "isChunkValid(ChunkPos pos)"
+		},
+		{
+			"forge": "getChunkDataOutputStream(ChunkPos arg0)",
+			"fabric": "getChunkOutputStream(ChunkPos pos)"
+		},
+		{
+			"forge": "flush()",
+			"fabric": "sync()"
+		},
+		{
+			"forge": "clear(ChunkPos arg0)",
+			"fabric": "delete(ChunkPos pos)"
+		},
+		{
+			"forge": "write(ChunkPos arg0, ByteBuffer arg1)",
+			"fabric": "writeChunk(ChunkPos pos, ByteBuffer buf)"
+		},
+		{
+			"forge": "createExternalStub()",
+			"fabric": "getHeaderBuf()"
+		},
+		{
+			"forge": "writeToExternalFile(Path arg0, ByteBuffer arg1)",
+			"fabric": "writeSafely(Path path, ByteBuffer buf)"
+		},
+		{
+			"forge": "writeHeader()",
+			"fabric": "writeHeader()"
+		},
+		{
+			"forge": "getOffset(ChunkPos arg0)",
+			"fabric": "getSectorData(ChunkPos pos)"
+		},
+		{
+			"forge": "hasChunk(ChunkPos arg0)",
+			"fabric": "hasChunk(ChunkPos pos)"
+		},
+		{
+			"forge": "getOffsetIndex(ChunkPos arg0)",
+			"fabric": "getIndex(ChunkPos pos)"
+		},
+		{
+			"forge": "padToFullSector()",
+			"fabric": "fillLastSector()"
+		}
+	]
+}

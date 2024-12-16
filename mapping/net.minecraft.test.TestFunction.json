@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.gametest.framework.TestFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.TestFunction",
+			"fabric": "net.minecraft.test.TestFunction"
+		},
+		{
+			"forge": "batchName",
+			"fabric": "batchId"
+		},
+		{
+			"forge": "batchName",
+			"fabric": "batchId"
+		},
+		{
+			"forge": "testName",
+			"fabric": "templatePath"
+		},
+		{
+			"forge": "structureName",
+			"fabric": "templateName"
+		},
+		{
+			"forge": "required",
+			"fabric": "required"
+		},
+		{
+			"forge": "maxAttempts",
+			"fabric": "maxAttempts"
+		},
+		{
+			"forge": "requiredSuccesses",
+			"fabric": "requiredSuccesses"
+		},
+		{
+			"forge": "function",
+			"fabric": "starter"
+		},
+		{
+			"forge": "maxTicks",
+			"fabric": "tickLimit"
+		},
+		{
+			"forge": "setupTicks",
+			"fabric": "duration"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "run(GameTestHelper arg0)",
+			"fabric": "start(TestContext context)"
+		},
+		{
+			"forge": "run(GameTestHelper arg0)",
+			"fabric": "start(TestContext context)"
+		},
+		{
+			"forge": "getTestName()",
+			"fabric": "getTemplatePath()"
+		},
+		{
+			"forge": "getStructureName()",
+			"fabric": "getTemplateName()"
+		},
+		{
+			"forge": "getMaxTicks()",
+			"fabric": "getTickLimit()"
+		},
+		{
+			"forge": "isRequired()",
+			"fabric": "isRequired()"
+		},
+		{
+			"forge": "getBatchName()",
+			"fabric": "getBatchId()"
+		},
+		{
+			"forge": "getSetupTicks()",
+			"fabric": "getDuration()"
+		},
+		{
+			"forge": "getRotation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "isFlaky()",
+			"fabric": "isFlaky()"
+		},
+		{
+			"forge": "getMaxAttempts()",
+			"fabric": "getMaxAttempts()"
+		},
+		{
+			"forge": "getRequiredSuccesses()",
+			"fabric": "getRequiredSuccesses()"
+		}
+	]
+}

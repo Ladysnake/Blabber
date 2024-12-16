@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.network.chat.Component",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.Component",
+			"fabric": "net.minecraft.text.Text"
+		},
+		{
+			"forge": "getStyle()",
+			"fabric": "getStyle()"
+		},
+		{
+			"forge": "getStyle()",
+			"fabric": "getStyle()"
+		},
+		{
+			"forge": "getContents()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "getString(int arg0)",
+			"fabric": "asTruncatedString(int length)"
+		},
+		{
+			"forge": "getSiblings()",
+			"fabric": "getSiblings()"
+		},
+		{
+			"forge": "plainCopy()",
+			"fabric": "copyContentOnly()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "getVisualOrderText()",
+			"fabric": "asOrderedText()"
+		},
+		{
+			"forge": "visit(FormattedText$StyledContentConsumer<T> arg0, Style arg1)",
+			"fabric": "visit(StringVisitable$StyledVisitor<T> arg0, Style arg1)"
+		},
+		{
+			"forge": "visit(FormattedText$ContentConsumer<T> arg0)",
+			"fabric": "visit(StringVisitable$Visitor<T> arg0)"
+		},
+		{
+			"forge": "toFlatList()",
+			"fabric": "withoutStyle()"
+		},
+		{
+			"forge": "toFlatList(Style arg0)",
+			"fabric": "getWithStyle(Style style)"
+		},
+		{
+			"forge": "contains(Component arg0)",
+			"fabric": "contains(Text text)"
+		},
+		{
+			"forge": "nullToEmpty(String arg0)",
+			"fabric": "of(String string)"
+		},
+		{
+			"forge": "literal(String arg0)",
+			"fabric": "literal(String string)"
+		},
+		{
+			"forge": "translatable(String arg0)",
+			"fabric": "translatable(String key)"
+		},
+		{
+			"forge": "translatable(String arg0, Object... arg1)",
+			"fabric": "translatable(String key, Object... args)"
+		},
+		{
+			"forge": "translatableWithFallback(String arg0, String arg1)",
+			"fabric": "translatableWithFallback(String key, String fallback)"
+		},
+		{
+			"forge": "translatableWithFallback(String arg0, String arg1, Object... arg2)",
+			"fabric": "translatableWithFallback(String key, String fallback, Object... args)"
+		},
+		{
+			"forge": "empty()",
+			"fabric": "empty()"
+		},
+		{
+			"forge": "keybind(String arg0)",
+			"fabric": "keybind(String string)"
+		},
+		{
+			"forge": "nbt(String arg0, boolean arg1, Optional<Component> arg2, DataSource arg3)",
+			"fabric": "nbt(String rawPath, boolean interpret, Optional<Text> separator, NbtDataSource dataSource)"
+		},
+		{
+			"forge": "score(String arg0, String arg1)",
+			"fabric": "score(String name, String objective)"
+		},
+		{
+			"forge": "selector(String arg0, Optional<Component> arg1)",
+			"fabric": "selector(String pattern, Optional<Text> separator)"
+		}
+	]
+}

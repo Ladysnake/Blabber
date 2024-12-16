@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.narration.NarratedElementType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.narration.NarratedElementType",
+			"fabric": "net.minecraft.client.gui.screen.narration.NarrationPart"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "POSITION",
+			"fabric": "POSITION"
+		},
+		{
+			"forge": "HINT",
+			"fabric": "HINT"
+		},
+		{
+			"forge": "USAGE",
+			"fabric": "USAGE"
+		}
+	]
+}

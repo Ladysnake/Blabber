@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.EndGatewayConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.EndGatewayConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.EndGatewayFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "exit",
+			"fabric": "exitPos"
+		},
+		{
+			"forge": "exact",
+			"fabric": "exact"
+		},
+		{
+			"forge": "knownExit(BlockPos arg0, boolean arg1)",
+			"fabric": "createConfig(BlockPos exitPortalPosition, boolean exitsAtSpawn)"
+		},
+		{
+			"forge": "knownExit(BlockPos arg0, boolean arg1)",
+			"fabric": "createConfig(BlockPos exitPortalPosition, boolean exitsAtSpawn)"
+		},
+		{
+			"forge": "delayedExitSearch()",
+			"fabric": "createConfig()"
+		},
+		{
+			"forge": "getExit()",
+			"fabric": "getExitPos()"
+		},
+		{
+			"forge": "isExitExact()",
+			"fabric": "isExact()"
+		}
+	]
+}

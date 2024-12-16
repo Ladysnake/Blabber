@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$ConditionSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$ConditionSource",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$MaterialCondition"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "bootstrap(Registry<com.mojang.serialization.Codec<? extends SurfaceRules$ConditionSource>> arg0)",
+			"fabric": "registerAndGetDefault(Registry<com.mojang.serialization.Codec<? extends MaterialRules$MaterialCondition>> registry)"
+		},
+		{
+			"forge": "bootstrap(Registry<com.mojang.serialization.Codec<? extends SurfaceRules$ConditionSource>> arg0)",
+			"fabric": "registerAndGetDefault(Registry<com.mojang.serialization.Codec<? extends MaterialRules$MaterialCondition>> registry)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		}
+	]
+}

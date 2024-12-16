@@ -1,0 +1,429 @@
+{
+	"title": "net.minecraft.world.level.storage.PrimaryLevelData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.PrimaryLevelData",
+			"fabric": "net.minecraft.world.level.LevelProperties"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER_KEY"
+		},
+		{
+			"forge": "WORLD_GEN_SETTINGS",
+			"fabric": "WORLD_GEN_SETTINGS_KEY"
+		},
+		{
+			"forge": "settings",
+			"fabric": "levelInfo"
+		},
+		{
+			"forge": "worldOptions",
+			"fabric": "generatorOptions"
+		},
+		{
+			"forge": "specialWorldProperty",
+			"fabric": "specialProperty"
+		},
+		{
+			"forge": "worldGenSettingsLifecycle",
+			"fabric": "lifecycle"
+		},
+		{
+			"forge": "xSpawn",
+			"fabric": "spawnX"
+		},
+		{
+			"forge": "ySpawn",
+			"fabric": "spawnY"
+		},
+		{
+			"forge": "zSpawn",
+			"fabric": "spawnZ"
+		},
+		{
+			"forge": "spawnAngle",
+			"fabric": "spawnAngle"
+		},
+		{
+			"forge": "gameTime",
+			"fabric": "time"
+		},
+		{
+			"forge": "dayTime",
+			"fabric": "timeOfDay"
+		},
+		{
+			"forge": "fixerUpper",
+			"fabric": "dataFixer"
+		},
+		{
+			"forge": "playerDataVersion",
+			"fabric": "dataVersion"
+		},
+		{
+			"forge": "upgradedPlayerTag",
+			"fabric": "playerDataLoaded"
+		},
+		{
+			"forge": "loadedPlayerTag",
+			"fabric": "playerData"
+		},
+		{
+			"forge": "version",
+			"fabric": "version"
+		},
+		{
+			"forge": "clearWeatherTime",
+			"fabric": "clearWeatherTime"
+		},
+		{
+			"forge": "raining",
+			"fabric": "raining"
+		},
+		{
+			"forge": "rainTime",
+			"fabric": "rainTime"
+		},
+		{
+			"forge": "thundering",
+			"fabric": "thundering"
+		},
+		{
+			"forge": "thunderTime",
+			"fabric": "thunderTime"
+		},
+		{
+			"forge": "initialized",
+			"fabric": "initialized"
+		},
+		{
+			"forge": "difficultyLocked",
+			"fabric": "difficultyLocked"
+		},
+		{
+			"forge": "worldBorder",
+			"fabric": "worldBorder"
+		},
+		{
+			"forge": "endDragonFightData",
+			"fabric": "dragonFight"
+		},
+		{
+			"forge": "customBossEvents",
+			"fabric": "customBossEvents"
+		},
+		{
+			"forge": "wanderingTraderSpawnDelay",
+			"fabric": "wanderingTraderSpawnDelay"
+		},
+		{
+			"forge": "wanderingTraderSpawnChance",
+			"fabric": "wanderingTraderSpawnChance"
+		},
+		{
+			"forge": "wanderingTraderId",
+			"fabric": "wanderingTraderId"
+		},
+		{
+			"forge": "knownServerBrands",
+			"fabric": "serverBrands"
+		},
+		{
+			"forge": "wasModded",
+			"fabric": "modded"
+		},
+		{
+			"forge": "removedFeatureFlags",
+			"fabric": "removedFeatures"
+		},
+		{
+			"forge": "scheduledEvents",
+			"fabric": "scheduledEvents"
+		},
+		{
+			"forge": "parse(com.mojang.serialization.Dynamic<T> arg0, com.mojang.datafixers.DataFixer arg1, int arg2, CompoundTag arg3, LevelSettings arg4, LevelVersion arg5, PrimaryLevelData$SpecialWorldProperty arg6, WorldOptions arg7, com.mojang.serialization.Lifecycle arg8)",
+			"fabric": "readProperties(com.mojang.serialization.Dynamic<T> dynamic, com.mojang.datafixers.DataFixer dataFixer, int dataVersion, NbtCompound playerData, LevelInfo levelInfo, SaveVersionInfo saveVersionInfo, LevelProperties$SpecialProperty specialProperty, GeneratorOptions generatorOptions, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "parse(com.mojang.serialization.Dynamic<T> arg0, com.mojang.datafixers.DataFixer arg1, int arg2, CompoundTag arg3, LevelSettings arg4, LevelVersion arg5, PrimaryLevelData$SpecialWorldProperty arg6, WorldOptions arg7, com.mojang.serialization.Lifecycle arg8)",
+			"fabric": "readProperties(com.mojang.serialization.Dynamic<T> dynamic, com.mojang.datafixers.DataFixer dataFixer, int dataVersion, NbtCompound playerData, LevelInfo levelInfo, SaveVersionInfo saveVersionInfo, LevelProperties$SpecialProperty specialProperty, GeneratorOptions generatorOptions, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "createTag(RegistryAccess arg0, CompoundTag arg1)",
+			"fabric": "cloneWorldNbt(DynamicRegistryManager arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "setTagData(RegistryAccess arg0, CompoundTag arg1, CompoundTag arg2)",
+			"fabric": "updateProperties(DynamicRegistryManager registryManager, NbtCompound levelNbt, NbtCompound playerNbt)"
+		},
+		{
+			"forge": "stringCollectionToTag(Set<String> arg0)",
+			"fabric": "createStringList(Set<String> strings)"
+		},
+		{
+			"forge": "getXSpawn()",
+			"fabric": "getSpawnX()"
+		},
+		{
+			"forge": "getYSpawn()",
+			"fabric": "getSpawnY()"
+		},
+		{
+			"forge": "getZSpawn()",
+			"fabric": "getSpawnZ()"
+		},
+		{
+			"forge": "getSpawnAngle()",
+			"fabric": "getSpawnAngle()"
+		},
+		{
+			"forge": "getGameTime()",
+			"fabric": "getTime()"
+		},
+		{
+			"forge": "getDayTime()",
+			"fabric": "getTimeOfDay()"
+		},
+		{
+			"forge": "updatePlayerTag()",
+			"fabric": "loadPlayerData()"
+		},
+		{
+			"forge": "getLoadedPlayerTag()",
+			"fabric": "getPlayerData()"
+		},
+		{
+			"forge": "setXSpawn(int arg0)",
+			"fabric": "setSpawnX(int arg0)"
+		},
+		{
+			"forge": "setYSpawn(int arg0)",
+			"fabric": "setSpawnY(int arg0)"
+		},
+		{
+			"forge": "setZSpawn(int arg0)",
+			"fabric": "setSpawnZ(int arg0)"
+		},
+		{
+			"forge": "setSpawnAngle(float arg0)",
+			"fabric": "setSpawnAngle(float arg0)"
+		},
+		{
+			"forge": "setGameTime(long arg0)",
+			"fabric": "setTime(long arg0)"
+		},
+		{
+			"forge": "setDayTime(long arg0)",
+			"fabric": "setTimeOfDay(long arg0)"
+		},
+		{
+			"forge": "setSpawn(BlockPos arg0, float arg1)",
+			"fabric": "setSpawnPos(BlockPos arg0, float arg1)"
+		},
+		{
+			"forge": "getLevelName()",
+			"fabric": "getLevelName()"
+		},
+		{
+			"forge": "getVersion()",
+			"fabric": "getVersion()"
+		},
+		{
+			"forge": "getClearWeatherTime()",
+			"fabric": "getClearWeatherTime()"
+		},
+		{
+			"forge": "setClearWeatherTime(int arg0)",
+			"fabric": "setClearWeatherTime(int arg0)"
+		},
+		{
+			"forge": "isThundering()",
+			"fabric": "isThundering()"
+		},
+		{
+			"forge": "setThundering(boolean arg0)",
+			"fabric": "setThundering(boolean arg0)"
+		},
+		{
+			"forge": "getThunderTime()",
+			"fabric": "getThunderTime()"
+		},
+		{
+			"forge": "setThunderTime(int arg0)",
+			"fabric": "setThunderTime(int arg0)"
+		},
+		{
+			"forge": "isRaining()",
+			"fabric": "isRaining()"
+		},
+		{
+			"forge": "setRaining(boolean arg0)",
+			"fabric": "setRaining(boolean arg0)"
+		},
+		{
+			"forge": "getRainTime()",
+			"fabric": "getRainTime()"
+		},
+		{
+			"forge": "setRainTime(int arg0)",
+			"fabric": "setRainTime(int arg0)"
+		},
+		{
+			"forge": "getGameType()",
+			"fabric": "getGameMode()"
+		},
+		{
+			"forge": "setGameType(GameType arg0)",
+			"fabric": "setGameMode(GameMode arg0)"
+		},
+		{
+			"forge": "isHardcore()",
+			"fabric": "isHardcore()"
+		},
+		{
+			"forge": "getAllowCommands()",
+			"fabric": "areCommandsAllowed()"
+		},
+		{
+			"forge": "isInitialized()",
+			"fabric": "isInitialized()"
+		},
+		{
+			"forge": "setInitialized(boolean arg0)",
+			"fabric": "setInitialized(boolean arg0)"
+		},
+		{
+			"forge": "getGameRules()",
+			"fabric": "getGameRules()"
+		},
+		{
+			"forge": "getWorldBorder()",
+			"fabric": "getWorldBorder()"
+		},
+		{
+			"forge": "setWorldBorder(WorldBorder$Settings arg0)",
+			"fabric": "setWorldBorder(WorldBorder$Properties arg0)"
+		},
+		{
+			"forge": "getDifficulty()",
+			"fabric": "getDifficulty()"
+		},
+		{
+			"forge": "setDifficulty(Difficulty arg0)",
+			"fabric": "setDifficulty(Difficulty arg0)"
+		},
+		{
+			"forge": "isDifficultyLocked()",
+			"fabric": "isDifficultyLocked()"
+		},
+		{
+			"forge": "setDifficultyLocked(boolean arg0)",
+			"fabric": "setDifficultyLocked(boolean arg0)"
+		},
+		{
+			"forge": "getScheduledEvents()",
+			"fabric": "getScheduledEvents()"
+		},
+		{
+			"forge": "fillCrashReportCategory(CrashReportCategory arg0, LevelHeightAccessor arg1)",
+			"fabric": "populateCrashReport(CrashReportSection arg0, HeightLimitView arg1)"
+		},
+		{
+			"forge": "worldGenOptions()",
+			"fabric": "getGeneratorOptions()"
+		},
+		{
+			"forge": "isFlatWorld()",
+			"fabric": "isFlatWorld()"
+		},
+		{
+			"forge": "isDebugWorld()",
+			"fabric": "isDebugWorld()"
+		},
+		{
+			"forge": "worldGenSettingsLifecycle()",
+			"fabric": "getLifecycle()"
+		},
+		{
+			"forge": "endDragonFightData()",
+			"fabric": "getDragonFight()"
+		},
+		{
+			"forge": "setEndDragonFightData(EndDragonFight$Data arg0)",
+			"fabric": "setDragonFight(EnderDragonFight$Data arg0)"
+		},
+		{
+			"forge": "getDataConfiguration()",
+			"fabric": "getDataConfiguration()"
+		},
+		{
+			"forge": "setDataConfiguration(WorldDataConfiguration arg0)",
+			"fabric": "updateLevelInfo(DataConfiguration arg0)"
+		},
+		{
+			"forge": "getCustomBossEvents()",
+			"fabric": "getCustomBossEvents()"
+		},
+		{
+			"forge": "setCustomBossEvents(CompoundTag arg0)",
+			"fabric": "setCustomBossEvents(NbtCompound arg0)"
+		},
+		{
+			"forge": "getWanderingTraderSpawnDelay()",
+			"fabric": "getWanderingTraderSpawnDelay()"
+		},
+		{
+			"forge": "setWanderingTraderSpawnDelay(int arg0)",
+			"fabric": "setWanderingTraderSpawnDelay(int arg0)"
+		},
+		{
+			"forge": "getWanderingTraderSpawnChance()",
+			"fabric": "getWanderingTraderSpawnChance()"
+		},
+		{
+			"forge": "setWanderingTraderSpawnChance(int arg0)",
+			"fabric": "setWanderingTraderSpawnChance(int arg0)"
+		},
+		{
+			"forge": "getWanderingTraderId()",
+			"fabric": "getWanderingTraderId()"
+		},
+		{
+			"forge": "setWanderingTraderId(UUID arg0)",
+			"fabric": "setWanderingTraderId(UUID arg0)"
+		},
+		{
+			"forge": "setModdedInfo(String arg0, boolean arg1)",
+			"fabric": "addServerBrand(String arg0, boolean arg1)"
+		},
+		{
+			"forge": "wasModded()",
+			"fabric": "isModded()"
+		},
+		{
+			"forge": "getKnownServerBrands()",
+			"fabric": "getServerBrands()"
+		},
+		{
+			"forge": "getRemovedFeatureFlags()",
+			"fabric": "getRemovedFeatures()"
+		},
+		{
+			"forge": "overworldData()",
+			"fabric": "getMainWorldProperties()"
+		},
+		{
+			"forge": "getLevelSettings()",
+			"fabric": "getLevelInfo()"
+		}
+	]
+}

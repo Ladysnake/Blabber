@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.PointedDripstoneConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.PointedDripstoneConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.SmallDripstoneFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "chanceOfTallerDripstone",
+			"fabric": "chanceOfTallerDripstone"
+		},
+		{
+			"forge": "chanceOfDirectionalSpread",
+			"fabric": "chanceOfDirectionalSpread"
+		},
+		{
+			"forge": "chanceOfSpreadRadius2",
+			"fabric": "chanceOfSpreadRadius2"
+		},
+		{
+			"forge": "chanceOfSpreadRadius3",
+			"fabric": "chanceOfSpreadRadius3"
+		}
+	]
+}

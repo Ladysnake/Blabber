@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.projectile.AbstractHurtingProjectile",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.AbstractHurtingProjectile",
+			"fabric": "net.minecraft.entity.projectile.ExplosiveProjectileEntity"
+		},
+		{
+			"forge": "xPower",
+			"fabric": "powerX"
+		},
+		{
+			"forge": "xPower",
+			"fabric": "powerX"
+		},
+		{
+			"forge": "yPower",
+			"fabric": "powerY"
+		},
+		{
+			"forge": "zPower",
+			"fabric": "powerZ"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "canHitEntity(Entity arg0)",
+			"fabric": "canHit(Entity arg0)"
+		},
+		{
+			"forge": "shouldBurn()",
+			"fabric": "isBurning()"
+		},
+		{
+			"forge": "getTrailParticle()",
+			"fabric": "getParticleType()"
+		},
+		{
+			"forge": "getInertia()",
+			"fabric": "getDrag()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "isPickable()",
+			"fabric": "canHit()"
+		},
+		{
+			"forge": "getPickRadius()",
+			"fabric": "getTargetingMargin()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "getLightLevelDependentMagicValue()",
+			"fabric": "getBrightnessAtEyes()"
+		},
+		{
+			"forge": "getAddEntityPacket()",
+			"fabric": "createSpawnPacket()"
+		},
+		{
+			"forge": "recreateFromPacket(ClientboundAddEntityPacket arg0)",
+			"fabric": "onSpawnPacket(EntitySpawnS2CPacket arg0)"
+		}
+	]
+}

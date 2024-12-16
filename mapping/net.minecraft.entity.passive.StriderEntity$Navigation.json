@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.monster.Strider$StriderPathNavigation",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Strider$StriderPathNavigation",
+			"fabric": "net.minecraft.entity.passive.StriderEntity$Navigation"
+		},
+		{
+			"forge": "createPathFinder(int arg0)",
+			"fabric": "createPathNodeNavigator(int arg0)"
+		},
+		{
+			"forge": "createPathFinder(int arg0)",
+			"fabric": "createPathNodeNavigator(int arg0)"
+		},
+		{
+			"forge": "hasValidPathType(BlockPathTypes arg0)",
+			"fabric": "canWalkOnPath(PathNodeType arg0)"
+		},
+		{
+			"forge": "isStableDestination(BlockPos arg0)",
+			"fabric": "isValidPosition(BlockPos arg0)"
+		}
+	]
+}

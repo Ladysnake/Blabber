@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.data.recipes.RecipeCategory",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.RecipeCategory",
+			"fabric": "net.minecraft.recipe.book.RecipeCategory"
+		},
+		{
+			"forge": "BUILDING_BLOCKS",
+			"fabric": "BUILDING_BLOCKS"
+		},
+		{
+			"forge": "BUILDING_BLOCKS",
+			"fabric": "BUILDING_BLOCKS"
+		},
+		{
+			"forge": "DECORATIONS",
+			"fabric": "DECORATIONS"
+		},
+		{
+			"forge": "REDSTONE",
+			"fabric": "REDSTONE"
+		},
+		{
+			"forge": "TRANSPORTATION",
+			"fabric": "TRANSPORTATION"
+		},
+		{
+			"forge": "TOOLS",
+			"fabric": "TOOLS"
+		},
+		{
+			"forge": "COMBAT",
+			"fabric": "COMBAT"
+		},
+		{
+			"forge": "FOOD",
+			"fabric": "FOOD"
+		},
+		{
+			"forge": "BREWING",
+			"fabric": "BREWING"
+		},
+		{
+			"forge": "MISC",
+			"fabric": "MISC"
+		},
+		{
+			"forge": "recipeFolderName",
+			"fabric": "name"
+		},
+		{
+			"forge": "recipeFolderName",
+			"fabric": "name"
+		},
+		{
+			"forge": "getFolderName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getFolderName()",
+			"fabric": "getName()"
+		}
+	]
+}

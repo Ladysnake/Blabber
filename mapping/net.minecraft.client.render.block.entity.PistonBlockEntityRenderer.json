@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.PistonHeadRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.PistonHeadRenderer",
+			"fabric": "net.minecraft.client.render.block.entity.PistonBlockEntityRenderer"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "manager"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "manager"
+		},
+		{
+			"forge": "render(PistonMovingBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(PistonBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "render(PistonMovingBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(PistonBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "renderBlock(BlockPos arg0, BlockState arg1, PoseStack arg2, MultiBufferSource arg3, Level arg4, boolean arg5, int arg6)",
+			"fabric": "renderModel(BlockPos pos, BlockState state, MatrixStack matrices, VertexConsumerProvider vertexConsumers, World world, boolean cull, int overlay)"
+		},
+		{
+			"forge": "getViewDistance()",
+			"fabric": "getRenderDistance()"
+		}
+	]
+}

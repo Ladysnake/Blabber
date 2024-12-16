@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.font.glyphs.BakedGlyph$Effect",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.glyphs.BakedGlyph$Effect",
+			"fabric": "net.minecraft.client.font.GlyphRenderer$Rectangle"
+		},
+		{
+			"forge": "x0",
+			"fabric": "minX"
+		},
+		{
+			"forge": "x0",
+			"fabric": "minX"
+		},
+		{
+			"forge": "y0",
+			"fabric": "minY"
+		},
+		{
+			"forge": "x1",
+			"fabric": "maxX"
+		},
+		{
+			"forge": "y1",
+			"fabric": "maxY"
+		},
+		{
+			"forge": "depth",
+			"fabric": "zIndex"
+		},
+		{
+			"forge": "r",
+			"fabric": "red"
+		},
+		{
+			"forge": "g",
+			"fabric": "green"
+		},
+		{
+			"forge": "b",
+			"fabric": "blue"
+		},
+		{
+			"forge": "a",
+			"fabric": "alpha"
+		}
+	]
+}

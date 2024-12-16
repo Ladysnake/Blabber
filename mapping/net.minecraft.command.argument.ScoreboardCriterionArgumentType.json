@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.commands.arguments.ObjectiveCriteriaArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.ObjectiveCriteriaArgument",
+			"fabric": "net.minecraft.command.argument.ScoreboardCriterionArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_INVALID_VALUE",
+			"fabric": "INVALID_CRITERION_EXCEPTION"
+		},
+		{
+			"forge": "criteria()",
+			"fabric": "scoreboardCriterion()"
+		},
+		{
+			"forge": "criteria()",
+			"fabric": "scoreboardCriterion()"
+		},
+		{
+			"forge": "getCriteria(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getCriterion(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		},
+		{
+			"forge": "getName(StatType<T> arg0, Object arg1)",
+			"fabric": "getStatName(StatType<T> stat, Object value)"
+		}
+	]
+}

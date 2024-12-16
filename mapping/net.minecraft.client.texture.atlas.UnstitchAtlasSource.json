@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.sources.Unstitcher",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.sources.Unstitcher",
+			"fabric": "net.minecraft.client.texture.atlas.UnstitchAtlasSource"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "resource",
+			"fabric": "resource"
+		},
+		{
+			"forge": "regions",
+			"fabric": "regions"
+		},
+		{
+			"forge": "xDivisor",
+			"fabric": "divisorX"
+		},
+		{
+			"forge": "yDivisor",
+			"fabric": "divisorY"
+		},
+		{
+			"forge": "run(ResourceManager arg0, SpriteSource$Output arg1)",
+			"fabric": "load(ResourceManager arg0, AtlasSource$SpriteRegions arg1)"
+		},
+		{
+			"forge": "run(ResourceManager arg0, SpriteSource$Output arg1)",
+			"fabric": "load(ResourceManager arg0, AtlasSource$SpriteRegions arg1)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.crafting.RecipeManager$CachedCheck",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.RecipeManager$CachedCheck",
+			"fabric": "net.minecraft.recipe.RecipeManager$MatchGetter"
+		},
+		{
+			"forge": "getRecipeFor(C arg0, Level arg1)",
+			"fabric": "getFirstMatch(C inventory, World world)"
+		},
+		{
+			"forge": "getRecipeFor(C arg0, Level arg1)",
+			"fabric": "getFirstMatch(C inventory, World world)"
+		}
+	]
+}

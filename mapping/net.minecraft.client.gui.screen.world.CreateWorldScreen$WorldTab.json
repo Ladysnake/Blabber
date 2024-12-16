@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$WorldTab",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$WorldTab",
+			"fabric": "net.minecraft.client.gui.screen.world.CreateWorldScreen$WorldTab"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "WORLD_TAB_TITLE_TEXT"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "WORLD_TAB_TITLE_TEXT"
+		},
+		{
+			"forge": "AMPLIFIED_HELP_TEXT",
+			"fabric": "AMPLIFIED_GENERATOR_INFO_TEXT"
+		},
+		{
+			"forge": "GENERATE_STRUCTURES",
+			"fabric": "MAP_FEATURES_TEXT"
+		},
+		{
+			"forge": "GENERATE_STRUCTURES_INFO",
+			"fabric": "MAP_FEATURES_INFO_TEXT"
+		},
+		{
+			"forge": "BONUS_CHEST",
+			"fabric": "BONUS_ITEMS_TEXT"
+		},
+		{
+			"forge": "SEED_LABEL",
+			"fabric": "ENTER_SEED_TEXT"
+		},
+		{
+			"forge": "SEED_EMPTY_HINT",
+			"fabric": "SEED_INFO_TEXT"
+		},
+		{
+			"forge": "WORLD_TAB_WIDTH",
+			"fabric": "field_42190"
+		},
+		{
+			"forge": "seedEdit",
+			"fabric": "seedField"
+		},
+		{
+			"forge": "customizeTypeButton",
+			"fabric": "customizeButton"
+		},
+		{
+			"forge": "openPresetEditor()",
+			"fabric": "openCustomizeScreen()"
+		},
+		{
+			"forge": "openPresetEditor()",
+			"fabric": "openCustomizeScreen()"
+		},
+		{
+			"forge": "createWorldTypeValueSupplier()",
+			"fabric": "getWorldTypes()"
+		},
+		{
+			"forge": "createTypeButtonNarration(CycleButton<WorldCreationUiState$WorldTypeEntry> arg0)",
+			"fabric": "getWorldTypeNarrationMessage(CyclingButtonWidget<WorldCreator$WorldType> worldTypeButton)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

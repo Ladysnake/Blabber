@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.data.structures.SnbtToNbt$TaskResult",
+	"items": [
+		{
+			"forge": "net.minecraft.data.structures.SnbtToNbt$TaskResult",
+			"fabric": "net.minecraft.data.SnbtProvider$CompressedData"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "payload",
+			"fabric": "bytes"
+		},
+		{
+			"forge": "snbtPayload",
+			"fabric": "snbtContent"
+		},
+		{
+			"forge": "hash",
+			"fabric": "sha1"
+		},
+		{
+			"forge": "name()",
+			"fabric": "name()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "name()"
+		},
+		{
+			"forge": "payload()",
+			"fabric": "bytes()"
+		},
+		{
+			"forge": "snbtPayload()",
+			"fabric": "snbtContent()"
+		},
+		{
+			"forge": "hash()",
+			"fabric": "sha1()"
+		}
+	]
+}

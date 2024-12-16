@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundAddExperienceOrbPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundAddExperienceOrbPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.ExperienceOrbSpawnS2CPacket"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "value",
+			"fabric": "experience"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "getZ()",
+			"fabric": "getZ()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getExperience()"
+		}
+	]
+}

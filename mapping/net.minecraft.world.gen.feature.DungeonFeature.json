@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.MonsterRoomFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.MonsterRoomFeature",
+			"fabric": "net.minecraft.world.gen.feature.DungeonFeature"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MOBS",
+			"fabric": "MOB_SPAWNER_ENTITIES"
+		},
+		{
+			"forge": "AIR",
+			"fabric": "AIR"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "randomEntityId(RandomSource arg0)",
+			"fabric": "getMobSpawnerEntity(Random random)"
+		}
+	]
+}

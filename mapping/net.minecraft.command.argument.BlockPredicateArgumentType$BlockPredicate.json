@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.arguments.blocks.BlockPredicateArgument$Result",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.blocks.BlockPredicateArgument$Result",
+			"fabric": "net.minecraft.command.argument.BlockPredicateArgumentType$BlockPredicate"
+		},
+		{
+			"forge": "requiresNbt()",
+			"fabric": "hasNbt()"
+		},
+		{
+			"forge": "requiresNbt()",
+			"fabric": "hasNbt()"
+		}
+	]
+}

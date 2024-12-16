@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.data.worldgen.BastionHoglinStablePools",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.BastionHoglinStablePools",
+			"fabric": "net.minecraft.structure.BastionHoglinStableData"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<StructureTemplatePool> arg0)",
+			"fabric": "bootstrap(Registerable<StructurePool> poolRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<StructureTemplatePool> arg0)",
+			"fabric": "bootstrap(Registerable<StructurePool> poolRegisterable)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.biome.BiomeGenerationSettings$PlainBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.BiomeGenerationSettings$PlainBuilder",
+			"fabric": "net.minecraft.world.biome.GenerationSettings$Builder"
+		},
+		{
+			"forge": "carvers",
+			"fabric": "carverStepsToCarvers"
+		},
+		{
+			"forge": "carvers",
+			"fabric": "carverStepsToCarvers"
+		},
+		{
+			"forge": "features",
+			"fabric": "indexedFeaturesList"
+		},
+		{
+			"forge": "addFeature(GenerationStep$Decoration arg0, Holder<PlacedFeature> arg1)",
+			"fabric": "feature(GenerationStep$Feature featureStep, RegistryEntry<PlacedFeature> featureEntry)"
+		},
+		{
+			"forge": "addFeature(GenerationStep$Decoration arg0, Holder<PlacedFeature> arg1)",
+			"fabric": "feature(GenerationStep$Feature featureStep, RegistryEntry<PlacedFeature> featureEntry)"
+		},
+		{
+			"forge": "addFeature(int arg0, Holder<PlacedFeature> arg1)",
+			"fabric": "addFeature(int ordinal, RegistryEntry<PlacedFeature> featureEntry)"
+		},
+		{
+			"forge": "addCarver(GenerationStep$Carving arg0, Holder<ConfiguredWorldCarver<?>> arg1)",
+			"fabric": "carver(GenerationStep$Carver carverStep, RegistryEntry<ConfiguredCarver<?>> carverEntry)"
+		},
+		{
+			"forge": "addFeatureStepsUpTo(int arg0)",
+			"fabric": "fillFeaturesList(int size)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

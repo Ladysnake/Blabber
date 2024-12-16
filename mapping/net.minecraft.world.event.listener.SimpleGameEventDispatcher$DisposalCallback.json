@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.gameevent.EuclideanGameEventListenerRegistry$OnEmptyAction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.EuclideanGameEventListenerRegistry$OnEmptyAction",
+			"fabric": "net.minecraft.world.event.listener.SimpleGameEventDispatcher$DisposalCallback"
+		},
+		{
+			"forge": "apply(int arg0)",
+			"fabric": "apply(int ySectionCoord)"
+		},
+		{
+			"forge": "apply(int arg0)",
+			"fabric": "apply(int ySectionCoord)"
+		}
+	]
+}

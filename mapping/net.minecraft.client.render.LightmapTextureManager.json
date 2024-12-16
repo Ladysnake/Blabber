@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.client.renderer.LightTexture",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.LightTexture",
+			"fabric": "net.minecraft.client.render.LightmapTextureManager"
+		},
+		{
+			"forge": "FULL_BRIGHT",
+			"fabric": "MAX_LIGHT_COORDINATE"
+		},
+		{
+			"forge": "FULL_BRIGHT",
+			"fabric": "MAX_LIGHT_COORDINATE"
+		},
+		{
+			"forge": "FULL_SKY",
+			"fabric": "MAX_SKY_LIGHT_COORDINATE"
+		},
+		{
+			"forge": "FULL_BLOCK",
+			"fabric": "MAX_BLOCK_LIGHT_COORDINATE"
+		},
+		{
+			"forge": "lightTexture",
+			"fabric": "texture"
+		},
+		{
+			"forge": "lightPixels",
+			"fabric": "image"
+		},
+		{
+			"forge": "lightTextureLocation",
+			"fabric": "textureIdentifier"
+		},
+		{
+			"forge": "updateLightTexture",
+			"fabric": "dirty"
+		},
+		{
+			"forge": "blockLightRedFlicker",
+			"fabric": "flickerIntensity"
+		},
+		{
+			"forge": "renderer",
+			"fabric": "renderer"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "close()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "turnOffLightLayer()",
+			"fabric": "disable()"
+		},
+		{
+			"forge": "turnOnLightLayer()",
+			"fabric": "enable()"
+		},
+		{
+			"forge": "getDarknessGamma(float arg0)",
+			"fabric": "getDarknessFactor(float delta)"
+		},
+		{
+			"forge": "calculateDarknessScale(LivingEntity arg0, float arg1, float arg2)",
+			"fabric": "getDarkness(LivingEntity entity, float factor, float delta)"
+		},
+		{
+			"forge": "updateLightTexture(float arg0)",
+			"fabric": "update(float delta)"
+		},
+		{
+			"forge": "clampColor(org.joml.Vector3f arg0)",
+			"fabric": "clamp(org.joml.Vector3f vec)"
+		},
+		{
+			"forge": "notGamma(float arg0)",
+			"fabric": "easeOutQuart(float x)"
+		},
+		{
+			"forge": "getBrightness(DimensionType arg0, int arg1)",
+			"fabric": "getBrightness(DimensionType type, int lightLevel)"
+		},
+		{
+			"forge": "pack(int arg0, int arg1)",
+			"fabric": "pack(int block, int sky)"
+		},
+		{
+			"forge": "block(int arg0)",
+			"fabric": "getBlockLightCoordinates(int light)"
+		},
+		{
+			"forge": "sky(int arg0)",
+			"fabric": "getSkyLightCoordinates(int light)"
+		}
+	]
+}

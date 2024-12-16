@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.tags.PaintingVariantTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.PaintingVariantTags",
+			"fabric": "net.minecraft.registry.tag.PaintingVariantTags"
+		},
+		{
+			"forge": "PLACEABLE",
+			"fabric": "PLACEABLE"
+		},
+		{
+			"forge": "PLACEABLE",
+			"fabric": "PLACEABLE"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

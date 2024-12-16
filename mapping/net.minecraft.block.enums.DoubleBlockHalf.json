@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.DoubleBlockHalf",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.DoubleBlockHalf",
+			"fabric": "net.minecraft.block.enums.DoubleBlockHalf"
+		},
+		{
+			"forge": "UPPER",
+			"fabric": "UPPER"
+		},
+		{
+			"forge": "UPPER",
+			"fabric": "UPPER"
+		},
+		{
+			"forge": "LOWER",
+			"fabric": "LOWER"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.resources.model.ModelBakery$BakedCacheKey",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.ModelBakery$BakedCacheKey",
+			"fabric": "net.minecraft.client.render.model.ModelLoader$BakedModelCacheKey"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "transformation",
+			"fabric": "transformation"
+		},
+		{
+			"forge": "isUvLocked",
+			"fabric": "isUvLocked"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "transformation()",
+			"fabric": "transformation()"
+		},
+		{
+			"forge": "isUvLocked()",
+			"fabric": "isUvLocked()"
+		}
+	]
+}

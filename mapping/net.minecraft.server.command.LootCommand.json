@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.server.commands.LootCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.LootCommand",
+			"fabric": "net.minecraft.server.command.LootCommand"
+		},
+		{
+			"forge": "SUGGEST_LOOT_TABLE",
+			"fabric": "SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "SUGGEST_LOOT_TABLE",
+			"fabric": "SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "ERROR_NO_HELD_ITEMS",
+			"fabric": "NO_HELD_ITEMS_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_LOOT_TABLE",
+			"fabric": "NO_LOOT_TABLE_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "addTargets(T arg0, LootCommand$TailProvider arg1)",
+			"fabric": "addTargetArguments(T rootArgument, LootCommand$SourceConstructor sourceConstructor)"
+		},
+		{
+			"forge": "getContainer(CommandSourceStack arg0, BlockPos arg1)",
+			"fabric": "getBlockInventory(ServerCommandSource source, BlockPos pos)"
+		},
+		{
+			"forge": "blockDistribute(CommandSourceStack arg0, BlockPos arg1, List<ItemStack> arg2, LootCommand$Callback arg3)",
+			"fabric": "executeInsert(ServerCommandSource source, BlockPos targetPos, List<ItemStack> stacks, LootCommand$FeedbackMessage messageSender)"
+		},
+		{
+			"forge": "distributeToContainer(Container arg0, ItemStack arg1)",
+			"fabric": "insert(Inventory inventory, ItemStack stack)"
+		},
+		{
+			"forge": "blockReplace(CommandSourceStack arg0, BlockPos arg1, int arg2, int arg3, List<ItemStack> arg4, LootCommand$Callback arg5)",
+			"fabric": "executeBlock(ServerCommandSource source, BlockPos targetPos, int slot, int stackCount, List<ItemStack> stacks, LootCommand$FeedbackMessage messageSender)"
+		},
+		{
+			"forge": "canMergeItems(ItemStack arg0, ItemStack arg1)",
+			"fabric": "itemsMatch(ItemStack first, ItemStack second)"
+		},
+		{
+			"forge": "playerGive(Collection<ServerPlayer> arg0, List<ItemStack> arg1, LootCommand$Callback arg2)",
+			"fabric": "executeGive(Collection<ServerPlayerEntity> players, List<ItemStack> stacks, LootCommand$FeedbackMessage messageSender)"
+		},
+		{
+			"forge": "setSlots(Entity arg0, List<ItemStack> arg1, int arg2, int arg3, List<ItemStack> arg4)",
+			"fabric": "replace(Entity entity, List<ItemStack> stacks, int slot, int stackCount, List<ItemStack> addedStacks)"
+		},
+		{
+			"forge": "entityReplace(Collection<? extends Entity> arg0, int arg1, int arg2, List<ItemStack> arg3, LootCommand$Callback arg4)",
+			"fabric": "executeReplace(Collection<? extends Entity> targets, int slot, int stackCount, List<ItemStack> stacks, LootCommand$FeedbackMessage messageSender)"
+		},
+		{
+			"forge": "dropInWorld(CommandSourceStack arg0, Vec3 arg1, List<ItemStack> arg2, LootCommand$Callback arg3)",
+			"fabric": "executeSpawn(ServerCommandSource source, Vec3d pos, List<ItemStack> stacks, LootCommand$FeedbackMessage messageSender)"
+		},
+		{
+			"forge": "callback(CommandSourceStack arg0, List<ItemStack> arg1)",
+			"fabric": "sendDroppedFeedback(ServerCommandSource source, List<ItemStack> stacks)"
+		},
+		{
+			"forge": "callback(CommandSourceStack arg0, List<ItemStack> arg1, ResourceLocation arg2)",
+			"fabric": "sendDroppedFeedback(ServerCommandSource source, List<ItemStack> stacks, Identifier lootTable)"
+		},
+		{
+			"forge": "getSourceHandItem(CommandSourceStack arg0, EquipmentSlot arg1)",
+			"fabric": "getHeldItem(ServerCommandSource source, EquipmentSlot slot)"
+		},
+		{
+			"forge": "dropBlockLoot(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, BlockPos arg1, ItemStack arg2, LootCommand$DropConsumer arg3)",
+			"fabric": "executeMine(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, BlockPos pos, ItemStack stack, LootCommand$Target constructor)"
+		},
+		{
+			"forge": "dropKillLoot(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, Entity arg1, LootCommand$DropConsumer arg2)",
+			"fabric": "executeKill(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, Entity entity, LootCommand$Target constructor)"
+		},
+		{
+			"forge": "dropChestLoot(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, ResourceLocation arg1, LootCommand$DropConsumer arg2)",
+			"fabric": "executeLoot(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, Identifier lootTable, LootCommand$Target constructor)"
+		},
+		{
+			"forge": "dropFishingLoot(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, ResourceLocation arg1, BlockPos arg2, ItemStack arg3, LootCommand$DropConsumer arg4)",
+			"fabric": "executeFish(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, Identifier lootTable, BlockPos pos, ItemStack stack, LootCommand$Target constructor)"
+		},
+		{
+			"forge": "drop(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, ResourceLocation arg1, LootParams arg2, LootCommand$DropConsumer arg3)",
+			"fabric": "getFeedbackMessageSingle(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, Identifier lootTable, LootContextParameterSet lootContextParameters, LootCommand$Target constructor)"
+		}
+	]
+}

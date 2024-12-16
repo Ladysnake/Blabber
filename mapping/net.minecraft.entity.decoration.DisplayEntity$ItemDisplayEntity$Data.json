@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.Display$ItemDisplay$ItemRenderState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Display$ItemDisplay$ItemRenderState",
+			"fabric": "net.minecraft.entity.decoration.DisplayEntity$ItemDisplayEntity$Data"
+		},
+		{
+			"forge": "itemStack",
+			"fabric": "itemStack"
+		},
+		{
+			"forge": "itemStack",
+			"fabric": "itemStack"
+		},
+		{
+			"forge": "itemTransform",
+			"fabric": "itemTransform"
+		},
+		{
+			"forge": "itemStack()",
+			"fabric": "itemStack()"
+		},
+		{
+			"forge": "itemStack()",
+			"fabric": "itemStack()"
+		},
+		{
+			"forge": "itemTransform()",
+			"fabric": "itemTransform()"
+		}
+	]
+}

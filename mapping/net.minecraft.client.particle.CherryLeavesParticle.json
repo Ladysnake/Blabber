@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.particle.CherryParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.CherryParticle",
+			"fabric": "net.minecraft.client.particle.CherryLeavesParticle"
+		},
+		{
+			"forge": "ACCELERATION_SCALE",
+			"fabric": "field_43372"
+		},
+		{
+			"forge": "ACCELERATION_SCALE",
+			"fabric": "field_43372"
+		},
+		{
+			"forge": "INITIAL_LIFETIME",
+			"fabric": "field_43373"
+		},
+		{
+			"forge": "CURVE_ENDPOINT_TIME",
+			"fabric": "field_43366"
+		},
+		{
+			"forge": "FALL_ACC",
+			"fabric": "field_43367"
+		},
+		{
+			"forge": "WIND_BIG",
+			"fabric": "field_43368"
+		},
+		{
+			"forge": "rotSpeed",
+			"fabric": "field_43369"
+		},
+		{
+			"forge": "particleRandom",
+			"fabric": "field_43370"
+		},
+		{
+			"forge": "spinAcceleration",
+			"fabric": "field_43371"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.npc.CatSpawner",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.CatSpawner",
+			"fabric": "net.minecraft.world.spawner.CatSpawner"
+		},
+		{
+			"forge": "TICK_DELAY",
+			"fabric": "SPAWN_INTERVAL"
+		},
+		{
+			"forge": "TICK_DELAY",
+			"fabric": "SPAWN_INTERVAL"
+		},
+		{
+			"forge": "nextTick",
+			"fabric": "cooldown"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, boolean arg1, boolean arg2)",
+			"fabric": "spawn(ServerWorld arg0, boolean arg1, boolean arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, boolean arg1, boolean arg2)",
+			"fabric": "spawn(ServerWorld arg0, boolean arg1, boolean arg2)"
+		},
+		{
+			"forge": "spawnInVillage(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "spawnInHouse(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "spawnInHut(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "spawnInSwampHut(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "spawnCat(BlockPos arg0, ServerLevel arg1)",
+			"fabric": "spawn(BlockPos pos, ServerWorld world)"
+		}
+	]
+}

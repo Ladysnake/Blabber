@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.server.network.ServerLoginPacketListenerImpl",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.ServerLoginPacketListenerImpl",
+			"fabric": "net.minecraft.server.network.ServerLoginNetworkHandler"
+		},
+		{
+			"forge": "UNIQUE_THREAD_ID",
+			"fabric": "NEXT_AUTHENTICATOR_THREAD_ID"
+		},
+		{
+			"forge": "UNIQUE_THREAD_ID",
+			"fabric": "NEXT_AUTHENTICATOR_THREAD_ID"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MAX_TICKS_BEFORE_LOGIN",
+			"fabric": "TIMEOUT_TICKS"
+		},
+		{
+			"forge": "RANDOM",
+			"fabric": "RANDOM"
+		},
+		{
+			"forge": "challenge",
+			"fabric": "nonce"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "connection",
+			"fabric": "connection"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "tick",
+			"fabric": "loginTicks"
+		},
+		{
+			"forge": "gameProfile",
+			"fabric": "profile"
+		},
+		{
+			"forge": "serverId",
+			"fabric": "serverId"
+		},
+		{
+			"forge": "delayedAcceptPlayer",
+			"fabric": "delayedPlayer"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isAcceptingMessages()",
+			"fabric": "isConnectionOpen()"
+		},
+		{
+			"forge": "disconnect(Component arg0)",
+			"fabric": "disconnect(Text reason)"
+		},
+		{
+			"forge": "handleAcceptedLogin()",
+			"fabric": "acceptPlayer()"
+		},
+		{
+			"forge": "placeNewPlayer(ServerPlayer arg0)",
+			"fabric": "addToServer(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "onDisconnect(Component arg0)",
+			"fabric": "onDisconnected(Text arg0)"
+		},
+		{
+			"forge": "getUserName()",
+			"fabric": "getConnectionInfo()"
+		},
+		{
+			"forge": "handleHello(ServerboundHelloPacket arg0)",
+			"fabric": "onHello(LoginHelloC2SPacket arg0)"
+		},
+		{
+			"forge": "isValidUsername(String arg0)",
+			"fabric": "isValidName(String name)"
+		},
+		{
+			"forge": "handleKey(ServerboundKeyPacket arg0)",
+			"fabric": "onKey(LoginKeyC2SPacket arg0)"
+		},
+		{
+			"forge": "handleCustomQueryPacket(ServerboundCustomQueryPacket arg0)",
+			"fabric": "onQueryResponse(LoginQueryResponseC2SPacket arg0)"
+		},
+		{
+			"forge": "createFakeProfile(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "toOfflineProfile(com.mojang.authlib.GameProfile profile)"
+		}
+	]
+}

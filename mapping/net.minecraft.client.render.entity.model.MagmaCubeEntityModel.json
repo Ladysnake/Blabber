@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.model.LavaSlimeModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.LavaSlimeModel",
+			"fabric": "net.minecraft.client.render.entity.model.MagmaCubeEntityModel"
+		},
+		{
+			"forge": "SEGMENT_COUNT",
+			"fabric": "SLICES_COUNT"
+		},
+		{
+			"forge": "SEGMENT_COUNT",
+			"fabric": "SLICES_COUNT"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "bodyCubes",
+			"fabric": "slices"
+		},
+		{
+			"forge": "getSegmentName(int arg0)",
+			"fabric": "getSliceName(int index)"
+		},
+		{
+			"forge": "getSegmentName(int arg0)",
+			"fabric": "getSliceName(int index)"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		},
+		{
+			"forge": "prepareMobModel(T arg0, float arg1, float arg2, float arg3)",
+			"fabric": "animateModel(T arg0, float arg1, float arg2, float arg3)"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.achievement.StatsScreen$MobsStatisticsList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.achievement.StatsScreen$MobsStatisticsList",
+			"fabric": "net.minecraft.client.gui.screen.StatsScreen$EntityStatsListWidget"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext arg0)"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext arg0)"
+		}
+	]
+}

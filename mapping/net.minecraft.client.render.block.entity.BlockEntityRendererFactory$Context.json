@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider$Context",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider$Context",
+			"fabric": "net.minecraft.client.render.block.entity.BlockEntityRendererFactory$Context"
+		},
+		{
+			"forge": "blockEntityRenderDispatcher",
+			"fabric": "renderDispatcher"
+		},
+		{
+			"forge": "blockEntityRenderDispatcher",
+			"fabric": "renderDispatcher"
+		},
+		{
+			"forge": "blockRenderDispatcher",
+			"fabric": "renderManager"
+		},
+		{
+			"forge": "itemRenderer",
+			"fabric": "itemRenderer"
+		},
+		{
+			"forge": "entityRenderer",
+			"fabric": "entityRenderDispatcher"
+		},
+		{
+			"forge": "modelSet",
+			"fabric": "layerRenderDispatcher"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "getBlockEntityRenderDispatcher()",
+			"fabric": "getRenderDispatcher()"
+		},
+		{
+			"forge": "getBlockEntityRenderDispatcher()",
+			"fabric": "getRenderDispatcher()"
+		},
+		{
+			"forge": "getBlockRenderDispatcher()",
+			"fabric": "getRenderManager()"
+		},
+		{
+			"forge": "getEntityRenderer()",
+			"fabric": "getEntityRenderDispatcher()"
+		},
+		{
+			"forge": "getItemRenderer()",
+			"fabric": "getItemRenderer()"
+		},
+		{
+			"forge": "getModelSet()",
+			"fabric": "getLayerRenderDispatcher()"
+		},
+		{
+			"forge": "bakeLayer(ModelLayerLocation arg0)",
+			"fabric": "getLayerModelPart(EntityModelLayer modelLayer)"
+		},
+		{
+			"forge": "getFont()",
+			"fabric": "getTextRenderer()"
+		}
+	]
+}

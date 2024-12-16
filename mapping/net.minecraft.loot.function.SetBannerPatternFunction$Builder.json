@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetBannerPatternFunction$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetBannerPatternFunction$Builder",
+			"fabric": "net.minecraft.loot.function.SetBannerPatternFunction$Builder"
+		},
+		{
+			"forge": "patterns",
+			"fabric": "patterns"
+		},
+		{
+			"forge": "patterns",
+			"fabric": "patterns"
+		},
+		{
+			"forge": "append",
+			"fabric": "append"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "addPattern(ResourceKey<BannerPattern> arg0, DyeColor arg1)",
+			"fabric": "pattern(RegistryKey<BannerPattern> pattern, DyeColor color)"
+		},
+		{
+			"forge": "addPattern(Holder<BannerPattern> arg0, DyeColor arg1)",
+			"fabric": "pattern(RegistryEntry<BannerPattern> pattern, DyeColor color)"
+		}
+	]
+}

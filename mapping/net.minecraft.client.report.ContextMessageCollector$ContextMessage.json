@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.ChatReportContextBuilder$Collector",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.ChatReportContextBuilder$Collector",
+			"fabric": "net.minecraft.client.report.ContextMessageCollector$ContextMessage"
+		},
+		{
+			"forge": "lastSeenSignatures",
+			"fabric": "lastSeenEntries"
+		},
+		{
+			"forge": "lastSeenSignatures",
+			"fabric": "lastSeenEntries"
+		},
+		{
+			"forge": "lastChainMessage",
+			"fabric": "message"
+		},
+		{
+			"forge": "collectingChain",
+			"fabric": "linkSuccessful"
+		},
+		{
+			"forge": "count",
+			"fabric": "count"
+		},
+		{
+			"forge": "accept(PlayerChatMessage arg0)",
+			"fabric": "linkTo(SignedMessage message)"
+		},
+		{
+			"forge": "accept(PlayerChatMessage arg0)",
+			"fabric": "linkTo(SignedMessage message)"
+		},
+		{
+			"forge": "isComplete()",
+			"fabric": "isInvalid()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.realms.RepeatedNarrator",
+	"items": [
+		{
+			"forge": "net.minecraft.realms.RepeatedNarrator",
+			"fabric": "net.minecraft.client.realms.RepeatedNarrator"
+		},
+		{
+			"forge": "permitsPerSecond",
+			"fabric": "permitsPerSecond"
+		},
+		{
+			"forge": "permitsPerSecond",
+			"fabric": "permitsPerSecond"
+		},
+		{
+			"forge": "params",
+			"fabric": "params"
+		},
+		{
+			"forge": "narrate(GameNarrator arg0, Component arg1)",
+			"fabric": "narrate(NarratorManager narratorManager, Text text)"
+		},
+		{
+			"forge": "narrate(GameNarrator arg0, Component arg1)",
+			"fabric": "narrate(NarratorManager narratorManager, Text text)"
+		}
+	]
+}

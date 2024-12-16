@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.SimpleWaterloggedBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SimpleWaterloggedBlock",
+			"fabric": "net.minecraft.block.Waterloggable"
+		},
+		{
+			"forge": "canPlaceLiquid(BlockGetter arg0, BlockPos arg1, BlockState arg2, Fluid arg3)",
+			"fabric": "canFillWithFluid(BlockView arg0, BlockPos arg1, BlockState arg2, Fluid arg3)"
+		},
+		{
+			"forge": "canPlaceLiquid(BlockGetter arg0, BlockPos arg1, BlockState arg2, Fluid arg3)",
+			"fabric": "canFillWithFluid(BlockView arg0, BlockPos arg1, BlockState arg2, Fluid arg3)"
+		},
+		{
+			"forge": "placeLiquid(LevelAccessor arg0, BlockPos arg1, BlockState arg2, FluidState arg3)",
+			"fabric": "tryFillWithFluid(WorldAccess arg0, BlockPos arg1, BlockState arg2, FluidState arg3)"
+		},
+		{
+			"forge": "pickupBlock(LevelAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "tryDrainFluid(WorldAccess arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "getPickupSound()",
+			"fabric": "getBucketFillSound()"
+		}
+	]
+}

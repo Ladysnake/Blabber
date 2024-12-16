@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.advancements.critereon.LevitationTrigger",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.LevitationTrigger",
+			"fabric": "net.minecraft.advancement.criterion.LevitationCriterion"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "ID",
+			"fabric": "ID"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "createInstance(com.google.gson.JsonObject arg0, ContextAwarePredicate arg1, DeserializationContext arg2)",
+			"fabric": "conditionsFromJson(com.google.gson.JsonObject arg0, LootContextPredicate arg1, AdvancementEntityPredicateDeserializer arg2)"
+		},
+		{
+			"forge": "trigger(ServerPlayer arg0, Vec3 arg1, int arg2)",
+			"fabric": "trigger(ServerPlayerEntity player, Vec3d startPos, int duration)"
+		}
+	]
+}

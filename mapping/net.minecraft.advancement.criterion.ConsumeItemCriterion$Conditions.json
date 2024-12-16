@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.advancements.critereon.ConsumeItemTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.ConsumeItemTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.ConsumeItemCriterion$Conditions"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "usedItem()",
+			"fabric": "any()"
+		},
+		{
+			"forge": "usedItem()",
+			"fabric": "any()"
+		},
+		{
+			"forge": "usedItem(ItemPredicate arg0)",
+			"fabric": "predicate(ItemPredicate predicate)"
+		},
+		{
+			"forge": "usedItem(ItemLike arg0)",
+			"fabric": "item(ItemConvertible item)"
+		},
+		{
+			"forge": "matches(ItemStack arg0)",
+			"fabric": "matches(ItemStack stack)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.commands.arguments.item.ItemParser$TagResult",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.item.ItemParser$TagResult",
+			"fabric": "net.minecraft.command.argument.ItemStringReader$TagResult"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tag"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tag"
+		},
+		{
+			"forge": "nbt",
+			"fabric": "nbt"
+		},
+		{
+			"forge": "tag()",
+			"fabric": "tag()"
+		},
+		{
+			"forge": "tag()",
+			"fabric": "tag()"
+		},
+		{
+			"forge": "nbt()",
+			"fabric": "nbt()"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.sounds.WeighedSoundEvents",
+	"items": [
+		{
+			"forge": "net.minecraft.client.sounds.WeighedSoundEvents",
+			"fabric": "net.minecraft.client.sound.WeightedSoundSet"
+		},
+		{
+			"forge": "list",
+			"fabric": "sounds"
+		},
+		{
+			"forge": "list",
+			"fabric": "sounds"
+		},
+		{
+			"forge": "subtitle",
+			"fabric": "subtitle"
+		},
+		{
+			"forge": "getWeight()",
+			"fabric": "getWeight()"
+		},
+		{
+			"forge": "getWeight()",
+			"fabric": "getWeight()"
+		},
+		{
+			"forge": "getSound(RandomSource arg0)",
+			"fabric": "getSound(Random arg0)"
+		},
+		{
+			"forge": "addSound(Weighted<Sound> arg0)",
+			"fabric": "add(SoundContainer<Sound> container)"
+		},
+		{
+			"forge": "getSubtitle()",
+			"fabric": "getSubtitle()"
+		},
+		{
+			"forge": "preloadIfRequired(SoundEngine arg0)",
+			"fabric": "preload(SoundSystem arg0)"
+		}
+	]
+}

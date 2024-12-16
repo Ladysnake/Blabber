@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.BlockEventData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.BlockEventData",
+			"fabric": "net.minecraft.server.world.BlockEvent"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "paramA",
+			"fabric": "type"
+		},
+		{
+			"forge": "paramB",
+			"fabric": "data"
+		},
+		{
+			"forge": "pos()",
+			"fabric": "pos()"
+		},
+		{
+			"forge": "pos()",
+			"fabric": "pos()"
+		},
+		{
+			"forge": "block()",
+			"fabric": "block()"
+		},
+		{
+			"forge": "paramA()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "paramB()",
+			"fabric": "data()"
+		}
+	]
+}

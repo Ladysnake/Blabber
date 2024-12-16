@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.BossEvent$BossBarColor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.BossEvent$BossBarColor",
+			"fabric": "net.minecraft.entity.boss.BossBar$Color"
+		},
+		{
+			"forge": "PINK",
+			"fabric": "PINK"
+		},
+		{
+			"forge": "PINK",
+			"fabric": "PINK"
+		},
+		{
+			"forge": "BLUE",
+			"fabric": "BLUE"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "GREEN",
+			"fabric": "GREEN"
+		},
+		{
+			"forge": "YELLOW",
+			"fabric": "YELLOW"
+		},
+		{
+			"forge": "PURPLE",
+			"fabric": "PURPLE"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "formatting",
+			"fabric": "format"
+		},
+		{
+			"forge": "getFormatting()",
+			"fabric": "getTextFormat()"
+		},
+		{
+			"forge": "getFormatting()",
+			"fabric": "getTextFormat()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "byName(String name)"
+		}
+	]
+}

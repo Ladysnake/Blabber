@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.world.entity.animal.allay.AllayAi",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.allay.AllayAi",
+			"fabric": "net.minecraft.entity.passive.AllayBrain"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_IDLING",
+			"fabric": "field_38406"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_IDLING",
+			"fabric": "field_38406"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_FOLLOWING_DEPOSIT_TARGET",
+			"fabric": "field_38407"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_RETRIEVING_ITEM",
+			"fabric": "WALK_TO_ITEM_SPEED"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_PANICKING",
+			"fabric": "FLEE_SPEED"
+		},
+		{
+			"forge": "CLOSE_ENOUGH_TO_TARGET",
+			"fabric": "field_38938"
+		},
+		{
+			"forge": "TOO_FAR_FROM_TARGET",
+			"fabric": "field_38939"
+		},
+		{
+			"forge": "MAX_LOOK_DISTANCE",
+			"fabric": "field_38410"
+		},
+		{
+			"forge": "MIN_WAIT_DURATION",
+			"fabric": "field_38411"
+		},
+		{
+			"forge": "MAX_WAIT_DURATION",
+			"fabric": "field_38412"
+		},
+		{
+			"forge": "TIME_TO_FORGET_NOTEBLOCK",
+			"fabric": "LIKED_NOTEBLOCK_COOLDOWN_TICKS_EXPIRY"
+		},
+		{
+			"forge": "DISTANCE_TO_WANTED_ITEM",
+			"fabric": "WALK_TO_ITEM_RADIUS"
+		},
+		{
+			"forge": "GIVE_ITEM_TIMEOUT_DURATION",
+			"fabric": "GIVE_INVENTORY_RUN_TIME"
+		},
+		{
+			"forge": "makeBrain(Brain<Allay> arg0)",
+			"fabric": "create(Brain<AllayEntity> brain)"
+		},
+		{
+			"forge": "makeBrain(Brain<Allay> arg0)",
+			"fabric": "create(Brain<AllayEntity> brain)"
+		},
+		{
+			"forge": "initCoreActivity(Brain<Allay> arg0)",
+			"fabric": "addCoreActivities(Brain<AllayEntity> brain)"
+		},
+		{
+			"forge": "initIdleActivity(Brain<Allay> arg0)",
+			"fabric": "addIdleActivities(Brain<AllayEntity> brain)"
+		},
+		{
+			"forge": "updateActivity(Allay arg0)",
+			"fabric": "updateActivities(AllayEntity allay)"
+		},
+		{
+			"forge": "hearNoteblock(LivingEntity arg0, BlockPos arg1)",
+			"fabric": "rememberNoteBlock(LivingEntity allay, BlockPos pos)"
+		},
+		{
+			"forge": "getItemDepositPosition(LivingEntity arg0)",
+			"fabric": "getLookTarget(LivingEntity allay)"
+		},
+		{
+			"forge": "hasWantedItem(LivingEntity arg0)",
+			"fabric": "hasNearestVisibleWantedItem(LivingEntity entity)"
+		},
+		{
+			"forge": "shouldDepositItemsAtLikedNoteblock(LivingEntity arg0, Brain<?> arg1, GlobalPos arg2)",
+			"fabric": "shouldGoTowardsNoteBlock(LivingEntity allay, Brain<?> brain, GlobalPos pos)"
+		},
+		{
+			"forge": "getLikedPlayerPositionTracker(LivingEntity arg0)",
+			"fabric": "getLikedLookTarget(LivingEntity allay)"
+		},
+		{
+			"forge": "getLikedPlayer(LivingEntity arg0)",
+			"fabric": "getLikedPlayer(LivingEntity allay)"
+		}
+	]
+}

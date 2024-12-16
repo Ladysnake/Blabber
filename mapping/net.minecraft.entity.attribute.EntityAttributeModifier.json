@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.ai.attributes.AttributeModifier",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.attributes.AttributeModifier",
+			"fabric": "net.minecraft.entity.attribute.EntityAttributeModifier"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "amount",
+			"fabric": "value"
+		},
+		{
+			"forge": "operation",
+			"fabric": "operation"
+		},
+		{
+			"forge": "nameGetter",
+			"fabric": "nameGetter"
+		},
+		{
+			"forge": "id",
+			"fabric": "uuid"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getOperation()",
+			"fabric": "getOperation()"
+		},
+		{
+			"forge": "getAmount()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "save()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		}
+	]
+}

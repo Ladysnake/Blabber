@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.BlockColumnFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.BlockColumnFeature",
+			"fabric": "net.minecraft.world.gen.feature.BlockColumnFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<BlockColumnConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<BlockColumnFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<BlockColumnConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<BlockColumnFeatureConfig> arg0)"
+		},
+		{
+			"forge": "truncate(int[] arg0, int arg1, int arg2, boolean arg3)",
+			"fabric": "adjustLayerHeights(int[] layerHeights, int expectedHeight, int actualHeight, boolean prioritizeTip)"
+		}
+	]
+}

@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.entity.ai.targeting.TargetingConditions",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.targeting.TargetingConditions",
+			"fabric": "net.minecraft.entity.ai.TargetPredicate"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "MIN_VISIBILITY_DISTANCE_FOR_INVISIBLE_TARGET",
+			"fabric": "MIN_DISTANCE"
+		},
+		{
+			"forge": "isCombat",
+			"fabric": "attackable"
+		},
+		{
+			"forge": "range",
+			"fabric": "baseMaxDistance"
+		},
+		{
+			"forge": "checkLineOfSight",
+			"fabric": "respectsVisibility"
+		},
+		{
+			"forge": "testInvisible",
+			"fabric": "useDistanceScalingFactor"
+		},
+		{
+			"forge": "selector",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "forCombat()",
+			"fabric": "createAttackable()"
+		},
+		{
+			"forge": "forCombat()",
+			"fabric": "createAttackable()"
+		},
+		{
+			"forge": "forNonCombat()",
+			"fabric": "createNonAttackable()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "range(double arg0)",
+			"fabric": "setBaseMaxDistance(double baseMaxDistance)"
+		},
+		{
+			"forge": "ignoreLineOfSight()",
+			"fabric": "ignoreVisibility()"
+		},
+		{
+			"forge": "ignoreInvisibilityTesting()",
+			"fabric": "ignoreDistanceScalingFactor()"
+		},
+		{
+			"forge": "selector(Predicate<LivingEntity> arg0)",
+			"fabric": "setPredicate(Predicate<LivingEntity> predicate)"
+		},
+		{
+			"forge": "test(LivingEntity arg0, LivingEntity arg1)",
+			"fabric": "test(LivingEntity baseEntity, LivingEntity targetEntity)"
+		}
+	]
+}

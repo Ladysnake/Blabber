@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.block.BaseFireBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BaseFireBlock",
+			"fabric": "net.minecraft.block.AbstractFireBlock"
+		},
+		{
+			"forge": "SECONDS_ON_FIRE",
+			"fabric": "SET_ON_FIRE_SECONDS"
+		},
+		{
+			"forge": "SECONDS_ON_FIRE",
+			"fabric": "SET_ON_FIRE_SECONDS"
+		},
+		{
+			"forge": "fireDamage",
+			"fabric": "damage"
+		},
+		{
+			"forge": "AABB_OFFSET",
+			"fabric": "BASE_SOUND_VOLUME"
+		},
+		{
+			"forge": "DOWN_AABB",
+			"fabric": "BASE_SHAPE"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getState(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getState(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "canBurn(BlockState arg0)",
+			"fabric": "isFlammable(BlockState state)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "inPortalDimension(Level arg0)",
+			"fabric": "isOverworldOrNether(World world)"
+		},
+		{
+			"forge": "spawnDestroyParticles(Level arg0, Player arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "spawnBreakParticles(World arg0, PlayerEntity arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "playerWillDestroy(Level arg0, BlockPos arg1, BlockState arg2, Player arg3)",
+			"fabric": "onBreak(World arg0, BlockPos arg1, BlockState arg2, PlayerEntity arg3)"
+		},
+		{
+			"forge": "canBePlacedAt(Level arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "canPlaceAt(World world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "isPortal(Level arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "shouldLightPortalAt(World world, BlockPos pos, Direction direction)"
+		}
+	]
+}

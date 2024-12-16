@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.chunk.PalettedContainer$CountConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.PalettedContainer$CountConsumer",
+			"fabric": "net.minecraft.world.chunk.PalettedContainer$Counter"
+		},
+		{
+			"forge": "accept(T arg0, int arg1)",
+			"fabric": "accept(T object, int count)"
+		},
+		{
+			"forge": "accept(T arg0, int arg1)",
+			"fabric": "accept(T object, int count)"
+		}
+	]
+}

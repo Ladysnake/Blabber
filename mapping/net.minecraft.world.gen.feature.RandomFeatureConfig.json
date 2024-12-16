@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.RandomFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "features",
+			"fabric": "features"
+		},
+		{
+			"forge": "defaultFeature",
+			"fabric": "defaultFeature"
+		},
+		{
+			"forge": "getFeatures()",
+			"fabric": "getDecoratedFeatures()"
+		},
+		{
+			"forge": "getFeatures()",
+			"fabric": "getDecoratedFeatures()"
+		}
+	]
+}

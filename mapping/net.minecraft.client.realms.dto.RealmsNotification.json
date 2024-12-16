@@ -1,0 +1,77 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsNotification",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsNotification",
+			"fabric": "net.minecraft.client.realms.dto.RealmsNotification"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "NOTIFICATION_UUID",
+			"fabric": "NOTIFICATION_UUID_KEY"
+		},
+		{
+			"forge": "DISMISSABLE",
+			"fabric": "DISMISSABLE_KEY"
+		},
+		{
+			"forge": "SEEN",
+			"fabric": "SEEN_KEY"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "TYPE_KEY"
+		},
+		{
+			"forge": "VISIT_URL",
+			"fabric": "VISIT_URL_TYPE"
+		},
+		{
+			"forge": "uuid",
+			"fabric": "uuid"
+		},
+		{
+			"forge": "dismissable",
+			"fabric": "dismissable"
+		},
+		{
+			"forge": "seen",
+			"fabric": "seen"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "seen()",
+			"fabric": "isSeen()"
+		},
+		{
+			"forge": "seen()",
+			"fabric": "isSeen()"
+		},
+		{
+			"forge": "dismissable()",
+			"fabric": "isDismissable()"
+		},
+		{
+			"forge": "uuid()",
+			"fabric": "getUuid()"
+		},
+		{
+			"forge": "parseList(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "parse(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject json)"
+		}
+	]
+}

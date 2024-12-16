@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix",
+			"fabric": "net.minecraft.datafixer.fix.AddFlagIfNotPresentFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "description"
+		},
+		{
+			"forge": "name",
+			"fabric": "description"
+		},
+		{
+			"forge": "flagValue",
+			"fabric": "value"
+		},
+		{
+			"forge": "flagKey",
+			"fabric": "key"
+		},
+		{
+			"forge": "typeReference",
+			"fabric": "typeReference"
+		}
+	]
+}

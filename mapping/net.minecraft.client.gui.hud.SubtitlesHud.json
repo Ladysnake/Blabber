@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.components.SubtitleOverlay",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.SubtitleOverlay",
+			"fabric": "net.minecraft.client.gui.hud.SubtitlesHud"
+		},
+		{
+			"forge": "DISPLAY_TIME",
+			"fabric": "REMOVE_DELAY"
+		},
+		{
+			"forge": "DISPLAY_TIME",
+			"fabric": "REMOVE_DELAY"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "subtitles",
+			"fabric": "entries"
+		},
+		{
+			"forge": "isListening",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "render(GuiGraphics arg0)",
+			"fabric": "render(DrawContext context)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0)",
+			"fabric": "render(DrawContext context)"
+		},
+		{
+			"forge": "onPlaySound(SoundInstance arg0, WeighedSoundEvents arg1)",
+			"fabric": "onSoundPlayed(SoundInstance arg0, WeightedSoundSet arg1)"
+		}
+	]
+}

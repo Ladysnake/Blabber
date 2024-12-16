@@ -1,0 +1,57 @@
+{
+	"title": "com.mojang.blaze3d.font.SheetGlyphInfo",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.font.SheetGlyphInfo",
+			"fabric": "net.minecraft.client.font.RenderableGlyph"
+		},
+		{
+			"forge": "getPixelWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getPixelWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getPixelHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "upload(int arg0, int arg1)",
+			"fabric": "upload(int x, int y)"
+		},
+		{
+			"forge": "isColored()",
+			"fabric": "hasColor()"
+		},
+		{
+			"forge": "getOversample()",
+			"fabric": "getOversample()"
+		},
+		{
+			"forge": "getLeft()",
+			"fabric": "getXMin()"
+		},
+		{
+			"forge": "getRight()",
+			"fabric": "getXMax()"
+		},
+		{
+			"forge": "getUp()",
+			"fabric": "getYMin()"
+		},
+		{
+			"forge": "getDown()",
+			"fabric": "getYMax()"
+		},
+		{
+			"forge": "getBearingX()",
+			"fabric": "getBearingX()"
+		},
+		{
+			"forge": "getBearingY()",
+			"fabric": "getAscent()"
+		}
+	]
+}

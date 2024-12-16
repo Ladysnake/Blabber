@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.screens.reporting.ChatSelectionLogFiller$Output",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.reporting.ChatSelectionLogFiller$Output",
+			"fabric": "net.minecraft.client.report.MessagesListAdder$MessagesList"
+		},
+		{
+			"forge": "acceptMessage(int arg0, LoggedChatMessage$Player arg1)",
+			"fabric": "addMessage(int index, ReceivedMessage$ChatMessage message)"
+		},
+		{
+			"forge": "acceptMessage(int arg0, LoggedChatMessage$Player arg1)",
+			"fabric": "addMessage(int index, ReceivedMessage$ChatMessage message)"
+		},
+		{
+			"forge": "acceptDivider(Component arg0)",
+			"fabric": "addText(Text text)"
+		}
+	]
+}

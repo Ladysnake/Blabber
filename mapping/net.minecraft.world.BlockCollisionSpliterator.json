@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.BlockCollisions",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.BlockCollisions",
+			"fabric": "net.minecraft.world.BlockCollisionSpliterator"
+		},
+		{
+			"forge": "box",
+			"fabric": "box"
+		},
+		{
+			"forge": "box",
+			"fabric": "box"
+		},
+		{
+			"forge": "context",
+			"fabric": "context"
+		},
+		{
+			"forge": "cursor",
+			"fabric": "blockIterator"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "entityShape",
+			"fabric": "boxShape"
+		},
+		{
+			"forge": "collisionGetter",
+			"fabric": "world"
+		},
+		{
+			"forge": "onlySuffocatingBlocks",
+			"fabric": "forEntity"
+		},
+		{
+			"forge": "cachedBlockGetter",
+			"fabric": "chunk"
+		},
+		{
+			"forge": "cachedBlockGetterPos",
+			"fabric": "chunkPos"
+		},
+		{
+			"forge": "resultProvider",
+			"fabric": "resultFunction"
+		},
+		{
+			"forge": "getChunk(int arg0, int arg1)",
+			"fabric": "getChunk(int x, int z)"
+		},
+		{
+			"forge": "getChunk(int arg0, int arg1)",
+			"fabric": "getChunk(int x, int z)"
+		}
+	]
+}

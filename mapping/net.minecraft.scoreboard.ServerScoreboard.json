@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.server.ServerScoreboard",
+	"items": [
+		{
+			"forge": "net.minecraft.server.ServerScoreboard",
+			"fabric": "net.minecraft.scoreboard.ServerScoreboard"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "trackedObjectives",
+			"fabric": "objectives"
+		},
+		{
+			"forge": "dirtyListeners",
+			"fabric": "updateListeners"
+		},
+		{
+			"forge": "onScoreChanged(Score arg0)",
+			"fabric": "updateScore(ScoreboardPlayerScore arg0)"
+		},
+		{
+			"forge": "onScoreChanged(Score arg0)",
+			"fabric": "updateScore(ScoreboardPlayerScore arg0)"
+		},
+		{
+			"forge": "onPlayerRemoved(String arg0)",
+			"fabric": "updatePlayerScore(String arg0)"
+		},
+		{
+			"forge": "onPlayerScoreRemoved(String arg0, Objective arg1)",
+			"fabric": "updatePlayerScore(String arg0, ScoreboardObjective arg1)"
+		},
+		{
+			"forge": "setDisplayObjective(int arg0, Objective arg1)",
+			"fabric": "setObjectiveSlot(int arg0, ScoreboardObjective arg1)"
+		},
+		{
+			"forge": "addPlayerToTeam(String arg0, PlayerTeam arg1)",
+			"fabric": "addPlayerToTeam(String arg0, Team arg1)"
+		},
+		{
+			"forge": "removePlayerFromTeam(String arg0, PlayerTeam arg1)",
+			"fabric": "removePlayerFromTeam(String arg0, Team arg1)"
+		},
+		{
+			"forge": "onObjectiveAdded(Objective arg0)",
+			"fabric": "updateObjective(ScoreboardObjective arg0)"
+		},
+		{
+			"forge": "onObjectiveChanged(Objective arg0)",
+			"fabric": "updateExistingObjective(ScoreboardObjective arg0)"
+		},
+		{
+			"forge": "onObjectiveRemoved(Objective arg0)",
+			"fabric": "updateRemovedObjective(ScoreboardObjective arg0)"
+		},
+		{
+			"forge": "onTeamAdded(PlayerTeam arg0)",
+			"fabric": "updateScoreboardTeamAndPlayers(Team arg0)"
+		},
+		{
+			"forge": "onTeamChanged(PlayerTeam arg0)",
+			"fabric": "updateScoreboardTeam(Team arg0)"
+		},
+		{
+			"forge": "onTeamRemoved(PlayerTeam arg0)",
+			"fabric": "updateRemovedTeam(Team arg0)"
+		},
+		{
+			"forge": "addDirtyListener(Runnable arg0)",
+			"fabric": "addUpdateListener(Runnable listener)"
+		},
+		{
+			"forge": "setDirty()",
+			"fabric": "runUpdateListeners()"
+		},
+		{
+			"forge": "getStartTrackingPackets(Objective arg0)",
+			"fabric": "createChangePackets(ScoreboardObjective objective)"
+		},
+		{
+			"forge": "startTrackingObjective(Objective arg0)",
+			"fabric": "addScoreboardObjective(ScoreboardObjective objective)"
+		},
+		{
+			"forge": "getStopTrackingPackets(Objective arg0)",
+			"fabric": "createRemovePackets(ScoreboardObjective objective)"
+		},
+		{
+			"forge": "stopTrackingObjective(Objective arg0)",
+			"fabric": "removeScoreboardObjective(ScoreboardObjective objective)"
+		},
+		{
+			"forge": "getObjectiveDisplaySlotCount(Objective arg0)",
+			"fabric": "getSlot(ScoreboardObjective objective)"
+		},
+		{
+			"forge": "createData()",
+			"fabric": "createState()"
+		},
+		{
+			"forge": "createData(CompoundTag arg0)",
+			"fabric": "stateFromNbt(NbtCompound nbt)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.item.ItemCooldowns",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ItemCooldowns",
+			"fabric": "net.minecraft.entity.player.ItemCooldownManager"
+		},
+		{
+			"forge": "cooldowns",
+			"fabric": "entries"
+		},
+		{
+			"forge": "cooldowns",
+			"fabric": "entries"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "tick"
+		},
+		{
+			"forge": "isOnCooldown(Item arg0)",
+			"fabric": "isCoolingDown(Item item)"
+		},
+		{
+			"forge": "isOnCooldown(Item arg0)",
+			"fabric": "isCoolingDown(Item item)"
+		},
+		{
+			"forge": "getCooldownPercent(Item arg0, float arg1)",
+			"fabric": "getCooldownProgress(Item item, float tickDelta)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "update()"
+		},
+		{
+			"forge": "addCooldown(Item arg0, int arg1)",
+			"fabric": "set(Item item, int duration)"
+		},
+		{
+			"forge": "removeCooldown(Item arg0)",
+			"fabric": "remove(Item item)"
+		},
+		{
+			"forge": "onCooldownStarted(Item arg0, int arg1)",
+			"fabric": "onCooldownUpdate(Item item, int duration)"
+		},
+		{
+			"forge": "onCooldownEnded(Item arg0)",
+			"fabric": "onCooldownUpdate(Item item)"
+		}
+	]
+}

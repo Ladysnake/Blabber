@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.util.StringDecomposer",
+	"items": [
+		{
+			"forge": "net.minecraft.util.StringDecomposer",
+			"fabric": "net.minecraft.text.TextVisitFactory"
+		},
+		{
+			"forge": "REPLACEMENT_CHAR",
+			"fabric": "REPLACEMENT_CHARACTER"
+		},
+		{
+			"forge": "REPLACEMENT_CHAR",
+			"fabric": "REPLACEMENT_CHARACTER"
+		},
+		{
+			"forge": "STOP_ITERATION",
+			"fabric": "VISIT_TERMINATED"
+		},
+		{
+			"forge": "feedChar(Style arg0, FormattedCharSink arg1, int arg2, char arg3)",
+			"fabric": "visitRegularCharacter(Style style, CharacterVisitor visitor, int index, char c)"
+		},
+		{
+			"forge": "feedChar(Style arg0, FormattedCharSink arg1, int arg2, char arg3)",
+			"fabric": "visitRegularCharacter(Style style, CharacterVisitor visitor, int index, char c)"
+		},
+		{
+			"forge": "iterate(String arg0, Style arg1, FormattedCharSink arg2)",
+			"fabric": "visitForwards(String text, Style style, CharacterVisitor visitor)"
+		},
+		{
+			"forge": "iterateBackwards(String arg0, Style arg1, FormattedCharSink arg2)",
+			"fabric": "visitBackwards(String text, Style style, CharacterVisitor visitor)"
+		},
+		{
+			"forge": "iterateFormatted(String arg0, Style arg1, FormattedCharSink arg2)",
+			"fabric": "visitFormatted(String text, Style style, CharacterVisitor visitor)"
+		},
+		{
+			"forge": "iterateFormatted(String arg0, int arg1, Style arg2, FormattedCharSink arg3)",
+			"fabric": "visitFormatted(String text, int startIndex, Style style, CharacterVisitor visitor)"
+		},
+		{
+			"forge": "iterateFormatted(String arg0, int arg1, Style arg2, Style arg3, FormattedCharSink arg4)",
+			"fabric": "visitFormatted(String text, int startIndex, Style startingStyle, Style resetStyle, CharacterVisitor visitor)"
+		},
+		{
+			"forge": "iterateFormatted(FormattedText arg0, Style arg1, FormattedCharSink arg2)",
+			"fabric": "visitFormatted(StringVisitable text, Style style, CharacterVisitor visitor)"
+		},
+		{
+			"forge": "filterBrokenSurrogates(String arg0)",
+			"fabric": "validateSurrogates(String text)"
+		},
+		{
+			"forge": "getPlainText(FormattedText arg0)",
+			"fabric": "removeFormattingCodes(StringVisitable text)"
+		}
+	]
+}

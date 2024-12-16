@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.AbstractSchoolingFish$SchoolSpawnGroupData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.AbstractSchoolingFish$SchoolSpawnGroupData",
+			"fabric": "net.minecraft.entity.passive.SchoolingFishEntity$FishData"
+		},
+		{
+			"forge": "leader",
+			"fabric": "leader"
+		},
+		{
+			"forge": "leader",
+			"fabric": "leader"
+		}
+	]
+}

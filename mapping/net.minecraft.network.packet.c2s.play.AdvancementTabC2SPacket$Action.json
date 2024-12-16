@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundSeenAdvancementsPacket$Action",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundSeenAdvancementsPacket$Action",
+			"fabric": "net.minecraft.network.packet.c2s.play.AdvancementTabC2SPacket$Action"
+		},
+		{
+			"forge": "OPENED_TAB",
+			"fabric": "OPENED_TAB"
+		},
+		{
+			"forge": "OPENED_TAB",
+			"fabric": "OPENED_TAB"
+		},
+		{
+			"forge": "CLOSED_SCREEN",
+			"fabric": "CLOSED_SCREEN"
+		}
+	]
+}

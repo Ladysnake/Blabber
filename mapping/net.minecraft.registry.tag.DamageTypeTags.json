@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.tags.DamageTypeTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.DamageTypeTags",
+			"fabric": "net.minecraft.registry.tag.DamageTypeTags"
+		},
+		{
+			"forge": "DAMAGES_HELMET",
+			"fabric": "DAMAGES_HELMET"
+		},
+		{
+			"forge": "DAMAGES_HELMET",
+			"fabric": "DAMAGES_HELMET"
+		},
+		{
+			"forge": "BYPASSES_ARMOR",
+			"fabric": "BYPASSES_ARMOR"
+		},
+		{
+			"forge": "BYPASSES_SHIELD",
+			"fabric": "BYPASSES_SHIELD"
+		},
+		{
+			"forge": "BYPASSES_INVULNERABILITY",
+			"fabric": "BYPASSES_INVULNERABILITY"
+		},
+		{
+			"forge": "BYPASSES_COOLDOWN",
+			"fabric": "BYPASSES_COOLDOWN"
+		},
+		{
+			"forge": "BYPASSES_EFFECTS",
+			"fabric": "BYPASSES_EFFECTS"
+		},
+		{
+			"forge": "BYPASSES_RESISTANCE",
+			"fabric": "BYPASSES_RESISTANCE"
+		},
+		{
+			"forge": "BYPASSES_ENCHANTMENTS",
+			"fabric": "BYPASSES_ENCHANTMENTS"
+		},
+		{
+			"forge": "IS_FIRE",
+			"fabric": "IS_FIRE"
+		},
+		{
+			"forge": "IS_PROJECTILE",
+			"fabric": "IS_PROJECTILE"
+		},
+		{
+			"forge": "WITCH_RESISTANT_TO",
+			"fabric": "WITCH_RESISTANT_TO"
+		},
+		{
+			"forge": "IS_EXPLOSION",
+			"fabric": "IS_EXPLOSION"
+		},
+		{
+			"forge": "IS_FALL",
+			"fabric": "IS_FALL"
+		},
+		{
+			"forge": "IS_DROWNING",
+			"fabric": "IS_DROWNING"
+		},
+		{
+			"forge": "IS_FREEZING",
+			"fabric": "IS_FREEZING"
+		},
+		{
+			"forge": "IS_LIGHTNING",
+			"fabric": "IS_LIGHTNING"
+		},
+		{
+			"forge": "NO_ANGER",
+			"fabric": "NO_ANGER"
+		},
+		{
+			"forge": "NO_IMPACT",
+			"fabric": "NO_IMPACT"
+		},
+		{
+			"forge": "ALWAYS_MOST_SIGNIFICANT_FALL",
+			"fabric": "ALWAYS_MOST_SIGNIFICANT_FALL"
+		},
+		{
+			"forge": "WITHER_IMMUNE_TO",
+			"fabric": "WITHER_IMMUNE_TO"
+		},
+		{
+			"forge": "IGNITES_ARMOR_STANDS",
+			"fabric": "IGNITES_ARMOR_STANDS"
+		},
+		{
+			"forge": "BURNS_ARMOR_STANDS",
+			"fabric": "BURNS_ARMOR_STANDS"
+		},
+		{
+			"forge": "AVOIDS_GUARDIAN_THORNS",
+			"fabric": "AVOIDS_GUARDIAN_THORNS"
+		},
+		{
+			"forge": "ALWAYS_TRIGGERS_SILVERFISH",
+			"fabric": "ALWAYS_TRIGGERS_SILVERFISH"
+		},
+		{
+			"forge": "ALWAYS_HURTS_ENDER_DRAGONS",
+			"fabric": "ALWAYS_HURTS_ENDER_DRAGONS"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

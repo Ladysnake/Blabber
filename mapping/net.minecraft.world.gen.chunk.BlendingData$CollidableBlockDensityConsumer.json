@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blending.BlendingData$DensityConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blending.BlendingData$DensityConsumer",
+			"fabric": "net.minecraft.world.gen.chunk.BlendingData$CollidableBlockDensityConsumer"
+		},
+		{
+			"forge": "consume(int arg0, int arg1, int arg2, double arg3)",
+			"fabric": "consume(int biomeX, int halfSectionY, int biomeZ, double collidableBlockDensity)"
+		},
+		{
+			"forge": "consume(int arg0, int arg1, int arg2, double arg3)",
+			"fabric": "consume(int biomeX, int halfSectionY, int biomeZ, double collidableBlockDensity)"
+		}
+	]
+}

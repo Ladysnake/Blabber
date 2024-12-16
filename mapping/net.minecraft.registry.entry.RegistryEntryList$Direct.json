@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.core.HolderSet$Direct",
+	"items": [
+		{
+			"forge": "net.minecraft.core.HolderSet$Direct",
+			"fabric": "net.minecraft.registry.entry.RegistryEntryList$Direct"
+		},
+		{
+			"forge": "contents",
+			"fabric": "entries"
+		},
+		{
+			"forge": "contents",
+			"fabric": "entries"
+		},
+		{
+			"forge": "contentsSet",
+			"fabric": "entrySet"
+		},
+		{
+			"forge": "contents()",
+			"fabric": "getEntries()"
+		},
+		{
+			"forge": "contents()",
+			"fabric": "getEntries()"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getStorage()"
+		},
+		{
+			"forge": "unwrapKey()",
+			"fabric": "getTagKey()"
+		},
+		{
+			"forge": "contains(Holder<T> arg0)",
+			"fabric": "contains(RegistryEntry<T> arg0)"
+		}
+	]
+}

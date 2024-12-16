@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.levelgen.ThreadSafeLegacyRandomSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.ThreadSafeLegacyRandomSource",
+			"fabric": "net.minecraft.util.math.random.ThreadSafeRandom"
+		},
+		{
+			"forge": "MODULUS_BITS",
+			"fabric": "INT_BITS"
+		},
+		{
+			"forge": "MODULUS_BITS",
+			"fabric": "INT_BITS"
+		},
+		{
+			"forge": "MODULUS_MASK",
+			"fabric": "SEED_MASK"
+		},
+		{
+			"forge": "MULTIPLIER",
+			"fabric": "MULTIPLIER"
+		},
+		{
+			"forge": "INCREMENT",
+			"fabric": "INCREMENT"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "gaussianSource",
+			"fabric": "gaussianGenerator"
+		},
+		{
+			"forge": "fork()",
+			"fabric": "split()"
+		},
+		{
+			"forge": "fork()",
+			"fabric": "split()"
+		},
+		{
+			"forge": "forkPositional()",
+			"fabric": "nextSplitter()"
+		},
+		{
+			"forge": "setSeed(long arg0)",
+			"fabric": "setSeed(long arg0)"
+		},
+		{
+			"forge": "next(int arg0)",
+			"fabric": "next(int arg0)"
+		},
+		{
+			"forge": "nextGaussian()",
+			"fabric": "nextGaussian()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemOverride$Deserializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemOverride$Deserializer",
+			"fabric": "net.minecraft.client.render.model.json.ModelOverride$Deserializer"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "getPredicates(com.google.gson.JsonObject arg0)",
+			"fabric": "deserializeMinPropertyValues(com.google.gson.JsonObject object)"
+		}
+	]
+}

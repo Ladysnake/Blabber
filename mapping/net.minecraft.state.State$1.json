@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.block.state.StateHolder$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.StateHolder$1",
+			"fabric": "net.minecraft.state.State$1"
+		},
+		{
+			"forge": "apply(Map$Entry<Property<?>, Comparable<?>> arg0)",
+			"fabric": "apply(Map$Entry<Property<?>, Comparable<?>> arg0)"
+		},
+		{
+			"forge": "apply(Map$Entry<Property<?>, Comparable<?>> arg0)",
+			"fabric": "apply(Map$Entry<Property<?>, Comparable<?>> arg0)"
+		},
+		{
+			"forge": "getName(Property<T> arg0, Comparable<?> arg1)",
+			"fabric": "nameValue(Property<T> property, Comparable<?> value)"
+		}
+	]
+}

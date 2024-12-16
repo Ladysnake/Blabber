@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.Nameable",
+	"items": [
+		{
+			"forge": "net.minecraft.world.Nameable",
+			"fabric": "net.minecraft.util.Nameable"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "hasCustomName()",
+			"fabric": "hasCustomName()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getCustomName()",
+			"fabric": "getCustomName()"
+		}
+	]
+}

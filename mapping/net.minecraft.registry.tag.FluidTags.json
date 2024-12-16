@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.tags.FluidTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.FluidTags",
+			"fabric": "net.minecraft.registry.tag.FluidTags"
+		},
+		{
+			"forge": "WATER",
+			"fabric": "WATER"
+		},
+		{
+			"forge": "WATER",
+			"fabric": "WATER"
+		},
+		{
+			"forge": "LAVA",
+			"fabric": "LAVA"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

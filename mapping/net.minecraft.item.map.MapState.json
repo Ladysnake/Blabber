@@ -1,0 +1,189 @@
+{
+	"title": "net.minecraft.world.level.saveddata.maps.MapItemSavedData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.saveddata.maps.MapItemSavedData",
+			"fabric": "net.minecraft.item.map.MapState"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MAP_SIZE",
+			"fabric": "field_31832"
+		},
+		{
+			"forge": "HALF_MAP_SIZE",
+			"fabric": "field_31833"
+		},
+		{
+			"forge": "MAX_SCALE",
+			"fabric": "MAX_SCALE"
+		},
+		{
+			"forge": "TRACKED_DECORATION_LIMIT",
+			"fabric": "MAX_ICONS"
+		},
+		{
+			"forge": "centerX",
+			"fabric": "centerX"
+		},
+		{
+			"forge": "centerZ",
+			"fabric": "centerZ"
+		},
+		{
+			"forge": "dimension",
+			"fabric": "dimension"
+		},
+		{
+			"forge": "trackingPosition",
+			"fabric": "showIcons"
+		},
+		{
+			"forge": "unlimitedTracking",
+			"fabric": "unlimitedTracking"
+		},
+		{
+			"forge": "scale",
+			"fabric": "scale"
+		},
+		{
+			"forge": "colors",
+			"fabric": "colors"
+		},
+		{
+			"forge": "locked",
+			"fabric": "locked"
+		},
+		{
+			"forge": "carriedBy",
+			"fabric": "updateTrackers"
+		},
+		{
+			"forge": "carriedByPlayers",
+			"fabric": "updateTrackersByPlayer"
+		},
+		{
+			"forge": "bannerMarkers",
+			"fabric": "banners"
+		},
+		{
+			"forge": "decorations",
+			"fabric": "icons"
+		},
+		{
+			"forge": "frameMarkers",
+			"fabric": "frames"
+		},
+		{
+			"forge": "trackedDecorationCount",
+			"fabric": "iconCount"
+		},
+		{
+			"forge": "createFresh(double arg0, double arg1, byte arg2, boolean arg3, boolean arg4, ResourceKey<Level> arg5)",
+			"fabric": "of(double centerX, double centerZ, byte scale, boolean showIcons, boolean unlimitedTracking, RegistryKey<World> dimension)"
+		},
+		{
+			"forge": "createFresh(double arg0, double arg1, byte arg2, boolean arg3, boolean arg4, ResourceKey<Level> arg5)",
+			"fabric": "of(double centerX, double centerZ, byte scale, boolean showIcons, boolean unlimitedTracking, RegistryKey<World> dimension)"
+		},
+		{
+			"forge": "createForClient(byte arg0, boolean arg1, ResourceKey<Level> arg2)",
+			"fabric": "of(byte scale, boolean locked, RegistryKey<World> dimension)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "locked()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "scaled(int arg0)",
+			"fabric": "zoomOut(int zoomOutScale)"
+		},
+		{
+			"forge": "tickCarriedBy(Player arg0, ItemStack arg1)",
+			"fabric": "update(PlayerEntity player, ItemStack stack)"
+		},
+		{
+			"forge": "removeDecoration(String arg0)",
+			"fabric": "removeIcon(String id)"
+		},
+		{
+			"forge": "addTargetDecoration(ItemStack arg0, BlockPos arg1, String arg2, MapDecoration$Type arg3)",
+			"fabric": "addDecorationsNbt(ItemStack stack, BlockPos pos, String id, MapIcon$Type type)"
+		},
+		{
+			"forge": "addDecoration(MapDecoration$Type arg0, LevelAccessor arg1, String arg2, double arg3, double arg4, double arg5, Component arg6)",
+			"fabric": "addIcon(MapIcon$Type type, WorldAccess world, String key, double x, double z, double rotation, Text text)"
+		},
+		{
+			"forge": "getUpdatePacket(int arg0, Player arg1)",
+			"fabric": "getPlayerMarkerPacket(int id, PlayerEntity player)"
+		},
+		{
+			"forge": "setColorsDirty(int arg0, int arg1)",
+			"fabric": "markDirty(int x, int z)"
+		},
+		{
+			"forge": "setDecorationsDirty()",
+			"fabric": "markIconsDirty()"
+		},
+		{
+			"forge": "getHoldingPlayer(Player arg0)",
+			"fabric": "getPlayerSyncData(PlayerEntity player)"
+		},
+		{
+			"forge": "toggleBanner(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "addBanner(WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "checkBanners(BlockGetter arg0, int arg1, int arg2)",
+			"fabric": "removeBanner(BlockView world, int x, int z)"
+		},
+		{
+			"forge": "getBanners()",
+			"fabric": "getBanners()"
+		},
+		{
+			"forge": "removedFromFrame(BlockPos arg0, int arg1)",
+			"fabric": "removeFrame(BlockPos pos, int id)"
+		},
+		{
+			"forge": "updateColor(int arg0, int arg1, byte arg2)",
+			"fabric": "putColor(int x, int z, byte color)"
+		},
+		{
+			"forge": "setColor(int arg0, int arg1, byte arg2)",
+			"fabric": "setColor(int x, int z, byte color)"
+		},
+		{
+			"forge": "isExplorationMap()",
+			"fabric": "hasMonumentIcon()"
+		},
+		{
+			"forge": "addClientSideDecorations(List<MapDecoration> arg0)",
+			"fabric": "replaceIcons(List<MapIcon> icons)"
+		},
+		{
+			"forge": "getDecorations()",
+			"fabric": "getIcons()"
+		},
+		{
+			"forge": "isTrackedCountOverLimit(int arg0)",
+			"fabric": "iconCountNotLessThan(int iconCount)"
+		}
+	]
+}

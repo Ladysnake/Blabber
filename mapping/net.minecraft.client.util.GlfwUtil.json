@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.blaze3d.Blaze3D",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.Blaze3D",
+			"fabric": "net.minecraft.client.util.GlfwUtil"
+		},
+		{
+			"forge": "process(RenderPipeline arg0, float arg1)",
+			"fabric": "accessRecordingQueue(RenderCallStorage storage, float arg1)"
+		},
+		{
+			"forge": "process(RenderPipeline arg0, float arg1)",
+			"fabric": "accessRecordingQueue(RenderCallStorage storage, float arg1)"
+		},
+		{
+			"forge": "render(RenderPipeline arg0, float arg1)",
+			"fabric": "accessProcessingQueue(RenderCallStorage storage, float arg1)"
+		},
+		{
+			"forge": "youJustLostTheGame()",
+			"fabric": "makeJvmCrash()"
+		},
+		{
+			"forge": "getTime()",
+			"fabric": "getTime()"
+		}
+	]
+}

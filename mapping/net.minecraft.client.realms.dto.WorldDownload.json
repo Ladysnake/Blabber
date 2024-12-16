@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.realmsclient.dto.WorldDownload",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.WorldDownload",
+			"fabric": "net.minecraft.client.realms.dto.WorldDownload"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "downloadLink",
+			"fabric": "downloadLink"
+		},
+		{
+			"forge": "resourcePackUrl",
+			"fabric": "resourcePackUrl"
+		},
+		{
+			"forge": "resourcePackHash",
+			"fabric": "resourcePackHash"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		}
+	]
+}

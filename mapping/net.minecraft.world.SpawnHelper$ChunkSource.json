@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.NaturalSpawner$ChunkGetter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.NaturalSpawner$ChunkGetter",
+			"fabric": "net.minecraft.world.SpawnHelper$ChunkSource"
+		},
+		{
+			"forge": "query(long arg0, Consumer<LevelChunk> arg1)",
+			"fabric": "query(long pos, Consumer<WorldChunk> chunkConsumer)"
+		},
+		{
+			"forge": "query(long arg0, Consumer<LevelChunk> arg1)",
+			"fabric": "query(long pos, Consumer<WorldChunk> chunkConsumer)"
+		}
+	]
+}

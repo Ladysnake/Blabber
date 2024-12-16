@@ -1,0 +1,97 @@
+{
+	"title": "com.mojang.blaze3d.vertex.VertexBuffer",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.VertexBuffer",
+			"fabric": "net.minecraft.client.gl.VertexBuffer"
+		},
+		{
+			"forge": "usage",
+			"fabric": "usage"
+		},
+		{
+			"forge": "usage",
+			"fabric": "usage"
+		},
+		{
+			"forge": "vertexBufferId",
+			"fabric": "vertexBufferId"
+		},
+		{
+			"forge": "indexBufferId",
+			"fabric": "indexBufferId"
+		},
+		{
+			"forge": "arrayObjectId",
+			"fabric": "vertexArrayId"
+		},
+		{
+			"forge": "format",
+			"fabric": "vertexFormat"
+		},
+		{
+			"forge": "sequentialIndices",
+			"fabric": "sharedSequentialIndexBuffer"
+		},
+		{
+			"forge": "indexType",
+			"fabric": "indexType"
+		},
+		{
+			"forge": "indexCount",
+			"fabric": "indexCount"
+		},
+		{
+			"forge": "mode",
+			"fabric": "drawMode"
+		},
+		{
+			"forge": "upload(BufferBuilder$RenderedBuffer arg0)",
+			"fabric": "upload(BufferBuilder$BuiltBuffer buffer)"
+		},
+		{
+			"forge": "upload(BufferBuilder$RenderedBuffer arg0)",
+			"fabric": "upload(BufferBuilder$BuiltBuffer buffer)"
+		},
+		{
+			"forge": "uploadVertexBuffer(BufferBuilder$DrawState arg0, ByteBuffer arg1)",
+			"fabric": "uploadVertexBuffer(BufferBuilder$DrawParameters parameters, ByteBuffer vertexBuffer)"
+		},
+		{
+			"forge": "uploadIndexBuffer(BufferBuilder$DrawState arg0, ByteBuffer arg1)",
+			"fabric": "uploadIndexBuffer(BufferBuilder$DrawParameters parameters, ByteBuffer indexBuffer)"
+		},
+		{
+			"forge": "bind()",
+			"fabric": "bind()"
+		},
+		{
+			"forge": "unbind()",
+			"fabric": "unbind()"
+		},
+		{
+			"forge": "draw()",
+			"fabric": "draw()"
+		},
+		{
+			"forge": "getIndexType()",
+			"fabric": "getIndexType()"
+		},
+		{
+			"forge": "drawWithShader(org.joml.Matrix4f arg0, org.joml.Matrix4f arg1, ShaderInstance arg2)",
+			"fabric": "draw(org.joml.Matrix4f viewMatrix, org.joml.Matrix4f projectionMatrix, ShaderProgram program)"
+		},
+		{
+			"forge": "_drawWithShader(org.joml.Matrix4f arg0, org.joml.Matrix4f arg1, ShaderInstance arg2)",
+			"fabric": "drawInternal(org.joml.Matrix4f viewMatrix, org.joml.Matrix4f projectionMatrix, ShaderProgram program)"
+		},
+		{
+			"forge": "getFormat()",
+			"fabric": "getVertexFormat()"
+		},
+		{
+			"forge": "isInvalid()",
+			"fabric": "isClosed()"
+		}
+	]
+}

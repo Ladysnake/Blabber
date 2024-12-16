@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.particle.BreakingItemParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.BreakingItemParticle",
+			"fabric": "net.minecraft.client.particle.CrackParticle"
+		},
+		{
+			"forge": "uo",
+			"fabric": "sampleU"
+		},
+		{
+			"forge": "uo",
+			"fabric": "sampleU"
+		},
+		{
+			"forge": "vo",
+			"fabric": "sampleV"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getU0()",
+			"fabric": "getMinU()"
+		},
+		{
+			"forge": "getU1()",
+			"fabric": "getMaxU()"
+		},
+		{
+			"forge": "getV0()",
+			"fabric": "getMinV()"
+		},
+		{
+			"forge": "getV1()",
+			"fabric": "getMaxV()"
+		}
+	]
+}

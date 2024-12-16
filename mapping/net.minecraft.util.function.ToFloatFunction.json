@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.util.ToFloatFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.util.ToFloatFunction",
+			"fabric": "net.minecraft.util.function.ToFloatFunction"
+		},
+		{
+			"forge": "IDENTITY",
+			"fabric": "IDENTITY"
+		},
+		{
+			"forge": "IDENTITY",
+			"fabric": "IDENTITY"
+		},
+		{
+			"forge": "apply(C arg0)",
+			"fabric": "apply(C x)"
+		},
+		{
+			"forge": "apply(C arg0)",
+			"fabric": "apply(C x)"
+		},
+		{
+			"forge": "minValue()",
+			"fabric": "min()"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "max()"
+		},
+		{
+			"forge": "createUnlimited(it.unimi.dsi.fastutil.floats.Float2FloatFunction arg0)",
+			"fabric": "fromFloat(it.unimi.dsi.fastutil.floats.Float2FloatFunction delegate)"
+		},
+		{
+			"forge": "comap(Function<C2, C> arg0)",
+			"fabric": "compose(Function<C2, C> before)"
+		}
+	]
+}

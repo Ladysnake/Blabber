@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.UploadResult",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.UploadResult",
+			"fabric": "net.minecraft.client.realms.gui.screen.UploadResult"
+		},
+		{
+			"forge": "statusCode",
+			"fabric": "statusCode"
+		},
+		{
+			"forge": "statusCode",
+			"fabric": "statusCode"
+		},
+		{
+			"forge": "errorMessage",
+			"fabric": "errorMessage"
+		}
+	]
+}

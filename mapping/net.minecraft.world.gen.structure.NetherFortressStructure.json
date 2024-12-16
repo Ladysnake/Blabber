@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure",
+			"fabric": "net.minecraft.world.gen.structure.NetherFortressStructure"
+		},
+		{
+			"forge": "FORTRESS_ENEMIES",
+			"fabric": "MONSTER_SPAWNS"
+		},
+		{
+			"forge": "FORTRESS_ENEMIES",
+			"fabric": "MONSTER_SPAWNS"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "findGenerationPoint(Structure$GenerationContext arg0)",
+			"fabric": "getStructurePosition(Structure$Context arg0)"
+		},
+		{
+			"forge": "generatePieces(StructurePiecesBuilder arg0, Structure$GenerationContext arg1)",
+			"fabric": "addPieces(StructurePiecesCollector collector, Structure$Context context)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

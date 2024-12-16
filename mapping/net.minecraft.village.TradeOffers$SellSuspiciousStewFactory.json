@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.npc.VillagerTrades$SuspiciousStewForEmerald",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.VillagerTrades$SuspiciousStewForEmerald",
+			"fabric": "net.minecraft.village.TradeOffers$SellSuspiciousStewFactory"
+		},
+		{
+			"forge": "effect",
+			"fabric": "effect"
+		},
+		{
+			"forge": "effect",
+			"fabric": "effect"
+		},
+		{
+			"forge": "duration",
+			"fabric": "duration"
+		},
+		{
+			"forge": "xp",
+			"fabric": "experience"
+		},
+		{
+			"forge": "priceMultiplier",
+			"fabric": "multiplier"
+		},
+		{
+			"forge": "getOffer(Entity arg0, RandomSource arg1)",
+			"fabric": "create(Entity arg0, Random arg1)"
+		},
+		{
+			"forge": "getOffer(Entity arg0, RandomSource arg1)",
+			"fabric": "create(Entity arg0, Random arg1)"
+		}
+	]
+}

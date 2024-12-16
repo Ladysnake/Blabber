@@ -1,0 +1,113 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsBrokenWorldScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsBrokenWorldScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsBrokenWorldScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DEFAULT_BUTTON_WIDTH",
+			"fabric": "field_32120"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "mainScreen",
+			"fabric": "mainScreen"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "serverData"
+		},
+		{
+			"forge": "serverId",
+			"fabric": "serverId"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "leftX",
+			"fabric": "left_x"
+		},
+		{
+			"forge": "rightX",
+			"fabric": "right_x"
+		},
+		{
+			"forge": "slotsThatHasBeenDownloaded",
+			"fabric": "slotsThatHasBeenDownloaded"
+		},
+		{
+			"forge": "animTick",
+			"fabric": "animTick"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "addButtons()",
+			"fabric": "addButtons()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "getFramePositionX(int arg0)",
+			"fabric": "getFramePositionX(int i)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "backButtonClicked()",
+			"fabric": "backButtonClicked()"
+		},
+		{
+			"forge": "fetchServerData(long arg0)",
+			"fabric": "fetchServerData(long worldId)"
+		},
+		{
+			"forge": "doSwitchOrReset()",
+			"fabric": "play()"
+		},
+		{
+			"forge": "downloadWorld(int arg0)",
+			"fabric": "downloadWorld(int slotId)"
+		},
+		{
+			"forge": "isMinigame()",
+			"fabric": "isMinigame()"
+		},
+		{
+			"forge": "drawSlotFrame(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, boolean arg5, String arg6, int arg7, long arg8, String arg9, boolean arg10)",
+			"fabric": "drawSlotFrame(DrawContext context, int x, int y, int mouseX, int mouseY, boolean activeSlot, String slotName, int slotId, long templateId, String templateImage, boolean empty)"
+		}
+	]
+}

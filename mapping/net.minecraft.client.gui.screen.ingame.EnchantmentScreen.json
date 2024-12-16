@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.EnchantmentScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.EnchantmentScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.EnchantmentScreen"
+		},
+		{
+			"forge": "ENCHANTING_TABLE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "ENCHANTING_TABLE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "ENCHANTING_BOOK_LOCATION",
+			"fabric": "BOOK_TEXTURE"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "bookModel",
+			"fabric": "BOOK_MODEL"
+		},
+		{
+			"forge": "time",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "flip",
+			"fabric": "nextPageAngle"
+		},
+		{
+			"forge": "oFlip",
+			"fabric": "pageAngle"
+		},
+		{
+			"forge": "flipT",
+			"fabric": "approximatePageAngle"
+		},
+		{
+			"forge": "flipA",
+			"fabric": "pageRotationSpeed"
+		},
+		{
+			"forge": "open",
+			"fabric": "nextPageTurningSpeed"
+		},
+		{
+			"forge": "oOpen",
+			"fabric": "pageTurningSpeed"
+		},
+		{
+			"forge": "last",
+			"fabric": "stack"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "containerTick()",
+			"fabric": "handledScreenTick()"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "renderBg(GuiGraphics arg0, float arg1, int arg2, int arg3)",
+			"fabric": "drawBackground(DrawContext arg0, float arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "renderBook(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "drawBook(DrawContext context, int x, int y, float delta)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "tickBook()",
+			"fabric": "doTick()"
+		}
+	]
+}

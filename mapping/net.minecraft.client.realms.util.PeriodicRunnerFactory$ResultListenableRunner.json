@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.realmsclient.gui.task.DataFetcher$SubscribedTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.task.DataFetcher$SubscribedTask",
+			"fabric": "net.minecraft.client.realms.util.PeriodicRunnerFactory$ResultListenableRunner"
+		},
+		{
+			"forge": "task",
+			"fabric": "runner"
+		},
+		{
+			"forge": "task",
+			"fabric": "runner"
+		},
+		{
+			"forge": "output",
+			"fabric": "resultListener"
+		},
+		{
+			"forge": "lastCheckTime",
+			"fabric": "lastRunTime"
+		},
+		{
+			"forge": "update(long arg0)",
+			"fabric": "run(long currentTime)"
+		},
+		{
+			"forge": "update(long arg0)",
+			"fabric": "run(long currentTime)"
+		},
+		{
+			"forge": "runCallbackIfNeeded()",
+			"fabric": "runListener()"
+		},
+		{
+			"forge": "runCallback()",
+			"fabric": "forceRunListener()"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "reset()"
+		}
+	]
+}

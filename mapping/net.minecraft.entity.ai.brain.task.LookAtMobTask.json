@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.SetEntityLookTarget",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.SetEntityLookTarget",
+			"fabric": "net.minecraft.entity.ai.brain.task.LookAtMobTask"
+		},
+		{
+			"forge": "create(MobCategory arg0, float arg1)",
+			"fabric": "create(SpawnGroup spawnGroup, float maxDistance)"
+		},
+		{
+			"forge": "create(MobCategory arg0, float arg1)",
+			"fabric": "create(SpawnGroup spawnGroup, float maxDistance)"
+		},
+		{
+			"forge": "create(EntityType<?> arg0, float arg1)",
+			"fabric": "create(EntityType<?> type, float maxDistance)"
+		},
+		{
+			"forge": "create(float arg0)",
+			"fabric": "create(float maxDistance)"
+		},
+		{
+			"forge": "create(Predicate<LivingEntity> arg0, float arg1)",
+			"fabric": "create(Predicate<LivingEntity> predicate, float maxDistance)"
+		}
+	]
+}

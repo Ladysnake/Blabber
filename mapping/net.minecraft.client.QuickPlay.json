@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.quickplay.QuickPlay",
+	"items": [
+		{
+			"forge": "net.minecraft.client.quickplay.QuickPlay",
+			"fabric": "net.minecraft.client.QuickPlay"
+		},
+		{
+			"forge": "ERROR_TITLE",
+			"fabric": "ERROR_TITLE"
+		},
+		{
+			"forge": "ERROR_TITLE",
+			"fabric": "ERROR_TITLE"
+		},
+		{
+			"forge": "INVALID_IDENTIFIER",
+			"fabric": "ERROR_INVALID_IDENTIFIER"
+		},
+		{
+			"forge": "REALM_CONNECT",
+			"fabric": "ERROR_REALM_CONNECT"
+		},
+		{
+			"forge": "REALM_PERMISSION",
+			"fabric": "ERROR_REALM_PERMISSION"
+		},
+		{
+			"forge": "TO_TITLE",
+			"fabric": "TO_TITLE"
+		},
+		{
+			"forge": "TO_WORLD_LIST",
+			"fabric": "TO_WORLD"
+		},
+		{
+			"forge": "TO_REALMS_LIST",
+			"fabric": "TO_REALMS"
+		},
+		{
+			"forge": "connect(Minecraft arg0, GameConfig$QuickPlayData arg1, ReloadInstance arg2, RealmsClient arg3)",
+			"fabric": "startQuickPlay(MinecraftClient client, RunArgs$QuickPlay quickPlay, ResourceReload resourceReload, RealmsClient realmsClient)"
+		},
+		{
+			"forge": "connect(Minecraft arg0, GameConfig$QuickPlayData arg1, ReloadInstance arg2, RealmsClient arg3)",
+			"fabric": "startQuickPlay(MinecraftClient client, RunArgs$QuickPlay quickPlay, ResourceReload resourceReload, RealmsClient realmsClient)"
+		},
+		{
+			"forge": "joinSingleplayerWorld(Minecraft arg0, String arg1)",
+			"fabric": "startSingleplayer(MinecraftClient client, String levelName)"
+		},
+		{
+			"forge": "joinMultiplayerWorld(Minecraft arg0, String arg1)",
+			"fabric": "startMultiplayer(MinecraftClient client, String serverAddress)"
+		},
+		{
+			"forge": "joinRealmsWorld(Minecraft arg0, RealmsClient arg1, String arg2)",
+			"fabric": "startRealms(MinecraftClient client, RealmsClient realmsClient, String realmId)"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.ai.village.poi.PoiRecord",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.village.poi.PoiRecord",
+			"fabric": "net.minecraft.world.poi.PointOfInterest"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "poiType",
+			"fabric": "type"
+		},
+		{
+			"forge": "freeTickets",
+			"fabric": "freeTickets"
+		},
+		{
+			"forge": "setDirty",
+			"fabric": "updateListener"
+		},
+		{
+			"forge": "codec(Runnable arg0)",
+			"fabric": "createCodec(Runnable updateListener)"
+		},
+		{
+			"forge": "codec(Runnable arg0)",
+			"fabric": "createCodec(Runnable updateListener)"
+		},
+		{
+			"forge": "getFreeTickets()",
+			"fabric": "getFreeTickets()"
+		},
+		{
+			"forge": "acquireTicket()",
+			"fabric": "reserveTicket()"
+		},
+		{
+			"forge": "releaseTicket()",
+			"fabric": "releaseTicket()"
+		},
+		{
+			"forge": "hasSpace()",
+			"fabric": "hasSpace()"
+		},
+		{
+			"forge": "isOccupied()",
+			"fabric": "isOccupied()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getPoiType()",
+			"fabric": "getType()"
+		}
+	]
+}

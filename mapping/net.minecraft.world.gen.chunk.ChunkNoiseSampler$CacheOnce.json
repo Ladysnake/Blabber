@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.NoiseChunk$CacheOnce",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.NoiseChunk$CacheOnce",
+			"fabric": "net.minecraft.world.gen.chunk.ChunkNoiseSampler$CacheOnce"
+		},
+		{
+			"forge": "function",
+			"fabric": "delegate"
+		},
+		{
+			"forge": "function",
+			"fabric": "delegate"
+		},
+		{
+			"forge": "lastCounter",
+			"fabric": "sampleUniqueIndex"
+		},
+		{
+			"forge": "lastArrayCounter",
+			"fabric": "cacheOnceUniqueIndex"
+		},
+		{
+			"forge": "lastValue",
+			"fabric": "lastSamplingResult"
+		},
+		{
+			"forge": "lastArray",
+			"fabric": "cache"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "fillArray(double[] arg0, DensityFunction$ContextProvider arg1)",
+			"fabric": "fill(double[] arg0, DensityFunction$EachApplier arg1)"
+		},
+		{
+			"forge": "wrapped()",
+			"fabric": "wrapped()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.network.ServerConnectionListener$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.ServerConnectionListener$1",
+			"fabric": "net.minecraft.server.ServerNetworkIo$1"
+		},
+		{
+			"forge": "initChannel(io.netty.channel.Channel arg0)",
+			"fabric": "initChannel(io.netty.channel.Channel channel)"
+		},
+		{
+			"forge": "initChannel(io.netty.channel.Channel arg0)",
+			"fabric": "initChannel(io.netty.channel.Channel channel)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.IglooPieces",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.IglooPieces",
+			"fabric": "net.minecraft.structure.IglooGenerator"
+		},
+		{
+			"forge": "GENERATION_HEIGHT",
+			"fabric": "OFFSET_Y"
+		},
+		{
+			"forge": "GENERATION_HEIGHT",
+			"fabric": "OFFSET_Y"
+		},
+		{
+			"forge": "STRUCTURE_LOCATION_IGLOO",
+			"fabric": "TOP_TEMPLATE"
+		},
+		{
+			"forge": "STRUCTURE_LOCATION_LADDER",
+			"fabric": "MIDDLE_TEMPLATE"
+		},
+		{
+			"forge": "STRUCTURE_LOCATION_LABORATORY",
+			"fabric": "BOTTOM_TEMPLATE"
+		},
+		{
+			"forge": "PIVOTS",
+			"fabric": "OFFSETS"
+		},
+		{
+			"forge": "OFFSETS",
+			"fabric": "OFFSETS_FROM_TOP"
+		},
+		{
+			"forge": "addPieces(StructureTemplateManager arg0, BlockPos arg1, Rotation arg2, StructurePieceAccessor arg3, RandomSource arg4)",
+			"fabric": "addPieces(StructureTemplateManager manager, BlockPos pos, BlockRotation rotation, StructurePiecesHolder holder, Random random)"
+		},
+		{
+			"forge": "addPieces(StructureTemplateManager arg0, BlockPos arg1, Rotation arg2, StructurePieceAccessor arg3, RandomSource arg4)",
+			"fabric": "addPieces(StructureTemplateManager manager, BlockPos pos, BlockRotation rotation, StructurePiecesHolder holder, Random random)"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.phys.Vec2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.Vec2",
+			"fabric": "net.minecraft.util.math.Vec2f"
+		},
+		{
+			"forge": "ZERO",
+			"fabric": "ZERO"
+		},
+		{
+			"forge": "ZERO",
+			"fabric": "ZERO"
+		},
+		{
+			"forge": "ONE",
+			"fabric": "SOUTH_EAST_UNIT"
+		},
+		{
+			"forge": "UNIT_X",
+			"fabric": "EAST_UNIT"
+		},
+		{
+			"forge": "NEG_UNIT_X",
+			"fabric": "WEST_UNIT"
+		},
+		{
+			"forge": "UNIT_Y",
+			"fabric": "SOUTH_UNIT"
+		},
+		{
+			"forge": "NEG_UNIT_Y",
+			"fabric": "NORTH_UNIT"
+		},
+		{
+			"forge": "MAX",
+			"fabric": "MAX_SOUTH_EAST"
+		},
+		{
+			"forge": "MIN",
+			"fabric": "MIN_SOUTH_EAST"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "scale(float arg0)",
+			"fabric": "multiply(float value)"
+		},
+		{
+			"forge": "scale(float arg0)",
+			"fabric": "multiply(float value)"
+		},
+		{
+			"forge": "dot(Vec2 arg0)",
+			"fabric": "dot(Vec2f vec)"
+		},
+		{
+			"forge": "add(Vec2 arg0)",
+			"fabric": "add(Vec2f vec)"
+		},
+		{
+			"forge": "add(float arg0)",
+			"fabric": "add(float value)"
+		},
+		{
+			"forge": "equals(Vec2 arg0)",
+			"fabric": "equals(Vec2f other)"
+		},
+		{
+			"forge": "normalized()",
+			"fabric": "normalize()"
+		},
+		{
+			"forge": "length()",
+			"fabric": "length()"
+		},
+		{
+			"forge": "lengthSquared()",
+			"fabric": "lengthSquared()"
+		},
+		{
+			"forge": "distanceToSqr(Vec2 arg0)",
+			"fabric": "distanceSquared(Vec2f vec)"
+		},
+		{
+			"forge": "negated()",
+			"fabric": "negate()"
+		}
+	]
+}

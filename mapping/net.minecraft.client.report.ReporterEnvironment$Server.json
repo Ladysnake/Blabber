@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.ReportEnvironment$Server",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.ReportEnvironment$Server",
+			"fabric": "net.minecraft.client.report.ReporterEnvironment$Server"
+		}
+	]
+}

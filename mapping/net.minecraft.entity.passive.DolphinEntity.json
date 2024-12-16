@@ -1,0 +1,189 @@
+{
+	"title": "net.minecraft.world.entity.animal.Dolphin",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Dolphin",
+			"fabric": "net.minecraft.entity.passive.DolphinEntity"
+		},
+		{
+			"forge": "TREASURE_POS",
+			"fabric": "TREASURE_POS"
+		},
+		{
+			"forge": "TREASURE_POS",
+			"fabric": "TREASURE_POS"
+		},
+		{
+			"forge": "GOT_FISH",
+			"fabric": "HAS_FISH"
+		},
+		{
+			"forge": "MOISTNESS_LEVEL",
+			"fabric": "MOISTNESS"
+		},
+		{
+			"forge": "SWIM_WITH_PLAYER_TARGETING",
+			"fabric": "CLOSE_PLAYER_PREDICATE"
+		},
+		{
+			"forge": "TOTAL_AIR_SUPPLY",
+			"fabric": "MAX_AIR"
+		},
+		{
+			"forge": "TOTAL_MOISTNESS_LEVEL",
+			"fabric": "MAX_MOISTNESS"
+		},
+		{
+			"forge": "ALLOWED_ITEMS",
+			"fabric": "CAN_TAKE"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "canBreatheUnderwater()",
+			"fabric": "canBreatheInWater()"
+		},
+		{
+			"forge": "handleAirSupply(int arg0)",
+			"fabric": "tickWaterBreathingAir(int arg0)"
+		},
+		{
+			"forge": "setTreasurePos(BlockPos arg0)",
+			"fabric": "setTreasurePos(BlockPos treasurePos)"
+		},
+		{
+			"forge": "getTreasurePos()",
+			"fabric": "getTreasurePos()"
+		},
+		{
+			"forge": "gotFish()",
+			"fabric": "hasFish()"
+		},
+		{
+			"forge": "setGotFish(boolean arg0)",
+			"fabric": "setHasFish(boolean hasFish)"
+		},
+		{
+			"forge": "getMoistnessLevel()",
+			"fabric": "getMoistness()"
+		},
+		{
+			"forge": "setMoisntessLevel(int arg0)",
+			"fabric": "setMoistness(int moistness)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createDolphinAttributes()"
+		},
+		{
+			"forge": "createNavigation(Level arg0)",
+			"fabric": "createNavigation(World arg0)"
+		},
+		{
+			"forge": "doHurtTarget(Entity arg0)",
+			"fabric": "tryAttack(Entity arg0)"
+		},
+		{
+			"forge": "getMaxAirSupply()",
+			"fabric": "getMaxAir()"
+		},
+		{
+			"forge": "increaseAirSupply(int arg0)",
+			"fabric": "getNextAirOnLand(int arg0)"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "getMaxHeadXRot()",
+			"fabric": "getMaxLookPitchChange()"
+		},
+		{
+			"forge": "getMaxHeadYRot()",
+			"fabric": "getMaxHeadRotation()"
+		},
+		{
+			"forge": "canRide(Entity arg0)",
+			"fabric": "canStartRiding(Entity arg0)"
+		},
+		{
+			"forge": "canTakeItem(ItemStack arg0)",
+			"fabric": "canEquip(ItemStack arg0)"
+		},
+		{
+			"forge": "pickUpItem(ItemEntity arg0)",
+			"fabric": "loot(ItemEntity arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "addParticlesAroundSelf(ParticleOptions arg0)",
+			"fabric": "spawnParticlesAround(ParticleEffect parameters)"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getSwimSplashSound()",
+			"fabric": "getSplashSound()"
+		},
+		{
+			"forge": "getSwimSound()",
+			"fabric": "getSwimSound()"
+		},
+		{
+			"forge": "closeToNextPos()",
+			"fabric": "isNearTarget()"
+		},
+		{
+			"forge": "travel(Vec3 arg0)",
+			"fabric": "travel(Vec3d arg0)"
+		},
+		{
+			"forge": "canBeLeashed(Player arg0)",
+			"fabric": "canBeLeashedBy(PlayerEntity arg0)"
+		}
+	]
+}

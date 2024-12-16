@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.particle.SpellParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.SpellParticle",
+			"fabric": "net.minecraft.client.particle.SpellParticle"
+		},
+		{
+			"forge": "RANDOM",
+			"fabric": "RANDOM"
+		},
+		{
+			"forge": "RANDOM",
+			"fabric": "RANDOM"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isCloseToScopingPlayer()",
+			"fabric": "isInvisible()"
+		}
+	]
+}

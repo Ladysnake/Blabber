@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.network.chat.ChatTypeDecoration$Parameter$Selector",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.ChatTypeDecoration$Parameter$Selector",
+			"fabric": "net.minecraft.text.Decoration$Parameter$Selector"
+		},
+		{
+			"forge": "select(Component arg0, ChatType$Bound arg1)",
+			"fabric": "select(Text content, MessageType$Parameters params)"
+		},
+		{
+			"forge": "select(Component arg0, ChatType$Bound arg1)",
+			"fabric": "select(Text content, MessageType$Parameters params)"
+		}
+	]
+}

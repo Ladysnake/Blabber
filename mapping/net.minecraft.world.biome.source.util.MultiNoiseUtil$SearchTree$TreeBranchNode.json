@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.biome.Climate$RTree$SubTree",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.Climate$RTree$SubTree",
+			"fabric": "net.minecraft.world.biome.source.util.MultiNoiseUtil$SearchTree$TreeBranchNode"
+		},
+		{
+			"forge": "children",
+			"fabric": "subTree"
+		},
+		{
+			"forge": "children",
+			"fabric": "subTree"
+		},
+		{
+			"forge": "search(long[] arg0, Climate$RTree$Leaf<T> arg1, Climate$DistanceMetric<T> arg2)",
+			"fabric": "getResultingNode(long[] arg0, MultiNoiseUtil$SearchTree$TreeLeafNode<T> arg1, MultiNoiseUtil$NodeDistanceFunction<T> arg2)"
+		},
+		{
+			"forge": "search(long[] arg0, Climate$RTree$Leaf<T> arg1, Climate$DistanceMetric<T> arg2)",
+			"fabric": "getResultingNode(long[] arg0, MultiNoiseUtil$SearchTree$TreeLeafNode<T> arg1, MultiNoiseUtil$NodeDistanceFunction<T> arg2)"
+		}
+	]
+}

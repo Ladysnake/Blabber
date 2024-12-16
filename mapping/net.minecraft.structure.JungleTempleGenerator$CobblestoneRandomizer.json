@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece$MossStoneSelector",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece$MossStoneSelector",
+			"fabric": "net.minecraft.structure.JungleTempleGenerator$CobblestoneRandomizer"
+		},
+		{
+			"forge": "next(RandomSource arg0, int arg1, int arg2, int arg3, boolean arg4)",
+			"fabric": "setBlock(Random arg0, int arg1, int arg2, int arg3, boolean arg4)"
+		},
+		{
+			"forge": "next(RandomSource arg0, int arg1, int arg2, int arg3, boolean arg4)",
+			"fabric": "setBlock(Random arg0, int arg1, int arg2, int arg3, boolean arg4)"
+		}
+	]
+}

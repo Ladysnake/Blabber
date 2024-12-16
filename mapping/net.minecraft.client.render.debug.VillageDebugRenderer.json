@@ -1,0 +1,273 @@
+{
+	"title": "net.minecraft.client.renderer.debug.BrainDebugRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.BrainDebugRenderer",
+			"fabric": "net.minecraft.client.render.debug.VillageDebugRenderer"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SHOW_NAME_FOR_ALL",
+			"fabric": "field_32874"
+		},
+		{
+			"forge": "SHOW_PROFESSION_FOR_ALL",
+			"fabric": "field_32875"
+		},
+		{
+			"forge": "SHOW_BEHAVIORS_FOR_ALL",
+			"fabric": "field_32876"
+		},
+		{
+			"forge": "SHOW_ACTIVITIES_FOR_ALL",
+			"fabric": "field_32877"
+		},
+		{
+			"forge": "SHOW_INVENTORY_FOR_ALL",
+			"fabric": "field_32878"
+		},
+		{
+			"forge": "SHOW_GOSSIPS_FOR_ALL",
+			"fabric": "field_32879"
+		},
+		{
+			"forge": "SHOW_PATH_FOR_ALL",
+			"fabric": "field_32880"
+		},
+		{
+			"forge": "SHOW_HEALTH_FOR_ALL",
+			"fabric": "field_32881"
+		},
+		{
+			"forge": "SHOW_WANTS_GOLEM_FOR_ALL",
+			"fabric": "field_32882"
+		},
+		{
+			"forge": "SHOW_ANGER_LEVEL_FOR_ALL",
+			"fabric": "field_38346"
+		},
+		{
+			"forge": "SHOW_NAME_FOR_SELECTED",
+			"fabric": "field_32883"
+		},
+		{
+			"forge": "SHOW_PROFESSION_FOR_SELECTED",
+			"fabric": "field_32884"
+		},
+		{
+			"forge": "SHOW_BEHAVIORS_FOR_SELECTED",
+			"fabric": "field_32885"
+		},
+		{
+			"forge": "SHOW_ACTIVITIES_FOR_SELECTED",
+			"fabric": "field_32886"
+		},
+		{
+			"forge": "SHOW_MEMORIES_FOR_SELECTED",
+			"fabric": "field_32887"
+		},
+		{
+			"forge": "SHOW_INVENTORY_FOR_SELECTED",
+			"fabric": "field_32888"
+		},
+		{
+			"forge": "SHOW_GOSSIPS_FOR_SELECTED",
+			"fabric": "field_32889"
+		},
+		{
+			"forge": "SHOW_PATH_FOR_SELECTED",
+			"fabric": "field_32890"
+		},
+		{
+			"forge": "SHOW_HEALTH_FOR_SELECTED",
+			"fabric": "field_32891"
+		},
+		{
+			"forge": "SHOW_WANTS_GOLEM_FOR_SELECTED",
+			"fabric": "field_32892"
+		},
+		{
+			"forge": "SHOW_ANGER_LEVEL_FOR_SELECTED",
+			"fabric": "field_38347"
+		},
+		{
+			"forge": "SHOW_POI_INFO",
+			"fabric": "field_32893"
+		},
+		{
+			"forge": "MAX_RENDER_DIST_FOR_BRAIN_INFO",
+			"fabric": "POI_RANGE"
+		},
+		{
+			"forge": "MAX_RENDER_DIST_FOR_POI_INFO",
+			"fabric": "BRAIN_RANGE"
+		},
+		{
+			"forge": "MAX_TARGETING_DIST",
+			"fabric": "TARGET_ENTITY_RANGE"
+		},
+		{
+			"forge": "TEXT_SCALE",
+			"fabric": "DEFAULT_DRAWN_STRING_SIZE"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "YELLOW",
+			"fabric": "YELLOW"
+		},
+		{
+			"forge": "CYAN",
+			"fabric": "AQUA"
+		},
+		{
+			"forge": "GREEN",
+			"fabric": "GREEN"
+		},
+		{
+			"forge": "GRAY",
+			"fabric": "GRAY"
+		},
+		{
+			"forge": "PINK",
+			"fabric": "PINK"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "ORANGE",
+			"fabric": "ORANGE"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "pois",
+			"fabric": "pointsOfInterest"
+		},
+		{
+			"forge": "brainDumpsPerEntity",
+			"fabric": "brains"
+		},
+		{
+			"forge": "lastLookedAtUuid",
+			"fabric": "targetedEntity"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "addPoi(BrainDebugRenderer$PoiInfo arg0)",
+			"fabric": "addPointOfInterest(VillageDebugRenderer$PointOfInterest poi)"
+		},
+		{
+			"forge": "removePoi(BlockPos arg0)",
+			"fabric": "removePointOfInterest(BlockPos pos)"
+		},
+		{
+			"forge": "setFreeTicketCount(BlockPos arg0, int arg1)",
+			"fabric": "setFreeTicketCount(BlockPos pos, int freeTicketCount)"
+		},
+		{
+			"forge": "addOrUpdateBrainDump(BrainDebugRenderer$BrainDump arg0)",
+			"fabric": "addBrain(VillageDebugRenderer$Brain brain)"
+		},
+		{
+			"forge": "removeBrainDump(int arg0)",
+			"fabric": "removeBrain(int entityId)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, double arg2, double arg3, double arg4)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, double arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "clearRemovedEntities()",
+			"fabric": "removeRemovedBrains()"
+		},
+		{
+			"forge": "doRender(PoseStack arg0, MultiBufferSource arg1, double arg2, double arg3, double arg4)",
+			"fabric": "draw(MatrixStack matrices, VertexConsumerProvider vertexConsumers, double x, double y, double z)"
+		},
+		{
+			"forge": "highlightPoi(PoseStack arg0, MultiBufferSource arg1, BlockPos arg2)",
+			"fabric": "drawPointOfInterest(MatrixStack matrices, VertexConsumerProvider vertexConsumers, BlockPos pos)"
+		},
+		{
+			"forge": "renderGhostPoi(PoseStack arg0, MultiBufferSource arg1, BlockPos arg2, List<String> arg3)",
+			"fabric": "drawGhostPointOfInterest(MatrixStack matrices, VertexConsumerProvider vertexConsumers, BlockPos pos, List<String> brains)"
+		},
+		{
+			"forge": "renderPoiInfo(PoseStack arg0, MultiBufferSource arg1, BrainDebugRenderer$PoiInfo arg2)",
+			"fabric": "drawPointOfInterestInfo(MatrixStack matrices, VertexConsumerProvider vertexConsumers, VillageDebugRenderer$PointOfInterest pointOfInterest)"
+		},
+		{
+			"forge": "renderPath(PoseStack arg0, MultiBufferSource arg1, BrainDebugRenderer$BrainDump arg2, double arg3, double arg4, double arg5)",
+			"fabric": "drawPath(MatrixStack matrices, VertexConsumerProvider vertexConsumers, VillageDebugRenderer$Brain brain, double cameraX, double cameraY, double cameraZ)"
+		},
+		{
+			"forge": "renderBrainInfo(PoseStack arg0, MultiBufferSource arg1, BrainDebugRenderer$BrainDump arg2, double arg3, double arg4, double arg5)",
+			"fabric": "drawBrain(MatrixStack matrices, VertexConsumerProvider vertexConsumers, VillageDebugRenderer$Brain brain, double cameraX, double cameraY, double cameraZ)"
+		},
+		{
+			"forge": "renderTextOverPoi(PoseStack arg0, MultiBufferSource arg1, String arg2, BrainDebugRenderer$PoiInfo arg3, int arg4, int arg5)",
+			"fabric": "drawString(MatrixStack matrices, VertexConsumerProvider vertexConsumers, String string, VillageDebugRenderer$PointOfInterest pointOfInterest, int offsetY, int color)"
+		},
+		{
+			"forge": "renderTextOverPos(PoseStack arg0, MultiBufferSource arg1, String arg2, BlockPos arg3, int arg4, int arg5)",
+			"fabric": "drawString(MatrixStack matrices, VertexConsumerProvider vertexConsumers, String string, BlockPos pos, int offsetY, int color)"
+		},
+		{
+			"forge": "renderTextOverMob(PoseStack arg0, MultiBufferSource arg1, Position arg2, int arg3, String arg4, int arg5, float arg6)",
+			"fabric": "drawString(MatrixStack matrices, VertexConsumerProvider vertexConsumers, Position pos, int offsetY, String string, int color, float size)"
+		},
+		{
+			"forge": "getTicketHolderNames(BrainDebugRenderer$PoiInfo arg0)",
+			"fabric": "getNamesOfPointOfInterestTicketHolders(VillageDebugRenderer$PointOfInterest pointOfInterest)"
+		},
+		{
+			"forge": "getPotentialTicketHolderNames(BrainDebugRenderer$PoiInfo arg0)",
+			"fabric": "getNamesOfJobSitePotentialOwners(VillageDebugRenderer$PointOfInterest potentialJobSite)"
+		},
+		{
+			"forge": "isMobSelected(BrainDebugRenderer$BrainDump arg0)",
+			"fabric": "isTargeted(VillageDebugRenderer$Brain brain)"
+		},
+		{
+			"forge": "isPlayerCloseEnoughToMob(BrainDebugRenderer$BrainDump arg0)",
+			"fabric": "isClose(VillageDebugRenderer$Brain brain)"
+		},
+		{
+			"forge": "getTicketHolders(BlockPos arg0)",
+			"fabric": "getBrainsContainingPointOfInterest(BlockPos pointOfInterest)"
+		},
+		{
+			"forge": "getPotentialTicketHolders(BlockPos arg0)",
+			"fabric": "getBrainsContainingPotentialJobSite(BlockPos potentialJobSite)"
+		},
+		{
+			"forge": "getGhostPois()",
+			"fabric": "getGhostPointsOfInterest()"
+		},
+		{
+			"forge": "updateLastLookedAtUuid()",
+			"fabric": "updateTargetedEntity()"
+		}
+	]
+}

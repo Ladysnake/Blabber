@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.biome.MultiNoiseBiomeSourceParameterList$Preset$2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.MultiNoiseBiomeSourceParameterList$Preset$2",
+			"fabric": "net.minecraft.world.biome.source.MultiNoiseBiomeSourceParameterList$Preset$2"
+		},
+		{
+			"forge": "apply(Function<ResourceKey<Biome>, T> arg0)",
+			"fabric": "apply(Function<RegistryKey<Biome>, T> arg0)"
+		},
+		{
+			"forge": "apply(Function<ResourceKey<Biome>, T> arg0)",
+			"fabric": "apply(Function<RegistryKey<Biome>, T> arg0)"
+		}
+	]
+}

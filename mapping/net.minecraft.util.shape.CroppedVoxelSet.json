@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.phys.shapes.SubShape",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.SubShape",
+			"fabric": "net.minecraft.util.shape.CroppedVoxelSet"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "startX",
+			"fabric": "minX"
+		},
+		{
+			"forge": "startY",
+			"fabric": "minY"
+		},
+		{
+			"forge": "startZ",
+			"fabric": "minZ"
+		},
+		{
+			"forge": "endX",
+			"fabric": "maxX"
+		},
+		{
+			"forge": "endY",
+			"fabric": "maxY"
+		},
+		{
+			"forge": "endZ",
+			"fabric": "maxZ"
+		},
+		{
+			"forge": "isFull(int arg0, int arg1, int arg2)",
+			"fabric": "contains(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "isFull(int arg0, int arg1, int arg2)",
+			"fabric": "contains(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "fill(int arg0, int arg1, int arg2)",
+			"fabric": "set(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "firstFull(Direction$Axis arg0)",
+			"fabric": "getMin(Direction$Axis arg0)"
+		},
+		{
+			"forge": "lastFull(Direction$Axis arg0)",
+			"fabric": "getMax(Direction$Axis arg0)"
+		},
+		{
+			"forge": "clampToShape(Direction$Axis arg0, int arg1)",
+			"fabric": "clamp(Direction$Axis axis, int value)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.PiglinWallSkullBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.PiglinWallSkullBlock",
+			"fabric": "net.minecraft.block.WallPiglinHeadBlock"
+		},
+		{
+			"forge": "AABBS",
+			"fabric": "SHAPES"
+		},
+		{
+			"forge": "AABBS",
+			"fabric": "SHAPES"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.inventory.DispenserMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.DispenserMenu",
+			"fabric": "net.minecraft.screen.Generic3x3ContainerScreenHandler"
+		},
+		{
+			"forge": "SLOT_COUNT",
+			"fabric": "CONTAINER_SIZE"
+		},
+		{
+			"forge": "SLOT_COUNT",
+			"fabric": "CONTAINER_SIZE"
+		},
+		{
+			"forge": "INV_SLOT_START",
+			"fabric": "INVENTORY_START"
+		},
+		{
+			"forge": "INV_SLOT_END",
+			"fabric": "INVENTORY_END"
+		},
+		{
+			"forge": "USE_ROW_SLOT_START",
+			"fabric": "HOTBAR_START"
+		},
+		{
+			"forge": "USE_ROW_SLOT_END",
+			"fabric": "HOTBAR_END"
+		},
+		{
+			"forge": "dispenser",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		}
+	]
+}

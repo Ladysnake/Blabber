@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.DirectoryLock$LockException",
+	"items": [
+		{
+			"forge": "net.minecraft.util.DirectoryLock$LockException",
+			"fabric": "net.minecraft.world.level.storage.SessionLock$AlreadyLockedException"
+		},
+		{
+			"forge": "alreadyLocked(Path arg0)",
+			"fabric": "create(Path path)"
+		},
+		{
+			"forge": "alreadyLocked(Path arg0)",
+			"fabric": "create(Path path)"
+		}
+	]
+}

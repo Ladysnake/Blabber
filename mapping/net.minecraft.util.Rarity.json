@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.item.Rarity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.Rarity",
+			"fabric": "net.minecraft.util.Rarity"
+		},
+		{
+			"forge": "COMMON",
+			"fabric": "COMMON"
+		},
+		{
+			"forge": "COMMON",
+			"fabric": "COMMON"
+		},
+		{
+			"forge": "UNCOMMON",
+			"fabric": "UNCOMMON"
+		},
+		{
+			"forge": "RARE",
+			"fabric": "RARE"
+		},
+		{
+			"forge": "EPIC",
+			"fabric": "EPIC"
+		},
+		{
+			"forge": "color",
+			"fabric": "formatting"
+		},
+		{
+			"forge": "color",
+			"fabric": "formatting"
+		}
+	]
+}

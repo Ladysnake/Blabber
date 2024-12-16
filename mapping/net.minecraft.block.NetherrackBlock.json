@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.NetherrackBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.NetherrackBlock",
+			"fabric": "net.minecraft.block.NetherrackBlock"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.npc.WanderingTrader$WanderToPositionGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.WanderingTrader$WanderToPositionGoal",
+			"fabric": "net.minecraft.entity.passive.WanderingTraderEntity$WanderToTargetGoal"
+		},
+		{
+			"forge": "trader",
+			"fabric": "trader"
+		},
+		{
+			"forge": "trader",
+			"fabric": "trader"
+		},
+		{
+			"forge": "stopDistance",
+			"fabric": "proximityDistance"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isTooFarAway(BlockPos arg0, double arg1)",
+			"fabric": "isTooFarFrom(BlockPos pos, double proximityDistance)"
+		}
+	]
+}

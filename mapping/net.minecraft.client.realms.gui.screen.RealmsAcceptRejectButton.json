@@ -1,0 +1,61 @@
+{
+	"title": "com.mojang.realmsclient.gui.RowButton",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.RowButton",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsAcceptRejectButton"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "xOffset",
+			"fabric": "x"
+		},
+		{
+			"forge": "yOffset",
+			"fabric": "y"
+		},
+		{
+			"forge": "drawForRowAt(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "render(DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "drawForRowAt(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "render(DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "draw(GuiGraphics arg0, int arg1, int arg2, boolean arg3)",
+			"fabric": "render(DrawContext context, int x, int y, boolean showTooltip)"
+		},
+		{
+			"forge": "getRight()",
+			"fabric": "getRight()"
+		},
+		{
+			"forge": "getBottom()",
+			"fabric": "getBottom()"
+		},
+		{
+			"forge": "onClick(int arg0)",
+			"fabric": "handleClick(int index)"
+		},
+		{
+			"forge": "drawButtonsInRow(GuiGraphics arg0, List<RowButton> arg1, RealmsObjectSelectionList<?> arg2, int arg3, int arg4, int arg5, int arg6)",
+			"fabric": "render(DrawContext context, List<RealmsAcceptRejectButton> buttons, RealmsObjectSelectionList<?> selectionList, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "rowButtonMouseClicked(RealmsObjectSelectionList<?> arg0, ObjectSelectionList$Entry<?> arg1, List<RowButton> arg2, int arg3, double arg4, double arg5)",
+			"fabric": "handleClick(RealmsObjectSelectionList<?> selectionList, AlwaysSelectedEntryListWidget$Entry<?> entry, List<RealmsAcceptRejectButton> buttons, int button, double mouseX, double mouseY)"
+		}
+	]
+}

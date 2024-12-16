@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.effect.AbsoptionMobEffect",
+	"items": [
+		{
+			"forge": "net.minecraft.world.effect.AbsoptionMobEffect",
+			"fabric": "net.minecraft.entity.effect.AbsorptionStatusEffect"
+		},
+		{
+			"forge": "removeAttributeModifiers(LivingEntity arg0, AttributeMap arg1, int arg2)",
+			"fabric": "onRemoved(LivingEntity arg0, AttributeContainer arg1, int arg2)"
+		},
+		{
+			"forge": "removeAttributeModifiers(LivingEntity arg0, AttributeMap arg1, int arg2)",
+			"fabric": "onRemoved(LivingEntity arg0, AttributeContainer arg1, int arg2)"
+		},
+		{
+			"forge": "addAttributeModifiers(LivingEntity arg0, AttributeMap arg1, int arg2)",
+			"fabric": "onApplied(LivingEntity arg0, AttributeContainer arg1, int arg2)"
+		}
+	]
+}

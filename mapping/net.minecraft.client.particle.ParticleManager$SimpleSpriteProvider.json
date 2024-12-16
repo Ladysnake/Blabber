@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.particle.ParticleEngine$MutableSpriteSet",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.ParticleEngine$MutableSpriteSet",
+			"fabric": "net.minecraft.client.particle.ParticleManager$SimpleSpriteProvider"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "sprites"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "sprites"
+		},
+		{
+			"forge": "get(int arg0, int arg1)",
+			"fabric": "getSprite(int arg0, int arg1)"
+		},
+		{
+			"forge": "get(int arg0, int arg1)",
+			"fabric": "getSprite(int arg0, int arg1)"
+		},
+		{
+			"forge": "get(RandomSource arg0)",
+			"fabric": "getSprite(Random arg0)"
+		},
+		{
+			"forge": "rebind(List<TextureAtlasSprite> arg0)",
+			"fabric": "setSprites(List<Sprite> sprites)"
+		}
+	]
+}

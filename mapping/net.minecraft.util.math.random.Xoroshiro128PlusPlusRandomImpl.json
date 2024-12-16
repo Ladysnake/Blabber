@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus",
+			"fabric": "net.minecraft.util.math.random.Xoroshiro128PlusPlusRandomImpl"
+		},
+		{
+			"forge": "seedLo",
+			"fabric": "seedLo"
+		},
+		{
+			"forge": "seedLo",
+			"fabric": "seedLo"
+		},
+		{
+			"forge": "seedHi",
+			"fabric": "seedHi"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "nextLong()",
+			"fabric": "next()"
+		},
+		{
+			"forge": "nextLong()",
+			"fabric": "next()"
+		}
+	]
+}

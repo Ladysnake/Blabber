@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.block.LadderBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.LadderBlock",
+			"fabric": "net.minecraft.block.LadderBlock"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "AABB_OFFSET",
+			"fabric": "field_31106"
+		},
+		{
+			"forge": "EAST_AABB",
+			"fabric": "EAST_SHAPE"
+		},
+		{
+			"forge": "WEST_AABB",
+			"fabric": "WEST_SHAPE"
+		},
+		{
+			"forge": "SOUTH_AABB",
+			"fabric": "SOUTH_SHAPE"
+		},
+		{
+			"forge": "NORTH_AABB",
+			"fabric": "NORTH_SHAPE"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "canAttachTo(BlockGetter arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "canPlaceOn(BlockView world, BlockPos pos, Direction side)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		}
+	]
+}

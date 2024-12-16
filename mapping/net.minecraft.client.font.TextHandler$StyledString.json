@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.StringSplitter$LineComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.StringSplitter$LineComponent",
+			"fabric": "net.minecraft.client.font.TextHandler$StyledString"
+		},
+		{
+			"forge": "contents",
+			"fabric": "literal"
+		},
+		{
+			"forge": "contents",
+			"fabric": "literal"
+		},
+		{
+			"forge": "style",
+			"fabric": "style"
+		},
+		{
+			"forge": "visit(FormattedText$ContentConsumer<T> arg0)",
+			"fabric": "visit(StringVisitable$Visitor<T> arg0)"
+		},
+		{
+			"forge": "visit(FormattedText$ContentConsumer<T> arg0)",
+			"fabric": "visit(StringVisitable$Visitor<T> arg0)"
+		},
+		{
+			"forge": "visit(FormattedText$StyledContentConsumer<T> arg0, Style arg1)",
+			"fabric": "visit(StringVisitable$StyledVisitor<T> arg0, Style arg1)"
+		}
+	]
+}

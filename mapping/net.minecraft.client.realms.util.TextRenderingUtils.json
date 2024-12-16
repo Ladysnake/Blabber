@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.realmsclient.util.TextRenderingUtils",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.TextRenderingUtils",
+			"fabric": "net.minecraft.client.realms.util.TextRenderingUtils"
+		},
+		{
+			"forge": "lineBreak(String arg0)",
+			"fabric": "lineBreak(String text)"
+		},
+		{
+			"forge": "lineBreak(String arg0)",
+			"fabric": "lineBreak(String text)"
+		},
+		{
+			"forge": "decompose(String arg0, TextRenderingUtils$LineSegment... arg1)",
+			"fabric": "decompose(String text, TextRenderingUtils$LineSegment... links)"
+		},
+		{
+			"forge": "decompose(String arg0, List<TextRenderingUtils$LineSegment> arg1)",
+			"fabric": "decompose(String text, List<TextRenderingUtils$LineSegment> links)"
+		},
+		{
+			"forge": "insertLinks(List<String> arg0, List<TextRenderingUtils$LineSegment> arg1)",
+			"fabric": "insertLinks(List<String> lines, List<TextRenderingUtils$LineSegment> links)"
+		},
+		{
+			"forge": "split(String arg0, String arg1)",
+			"fabric": "split(String line, String delimiter)"
+		}
+	]
+}

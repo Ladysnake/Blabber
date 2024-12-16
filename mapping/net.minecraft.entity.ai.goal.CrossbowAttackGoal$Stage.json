@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.RangedCrossbowAttackGoal$CrossbowState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.RangedCrossbowAttackGoal$CrossbowState",
+			"fabric": "net.minecraft.entity.ai.goal.CrossbowAttackGoal$Stage"
+		},
+		{
+			"forge": "UNCHARGED",
+			"fabric": "UNCHARGED"
+		},
+		{
+			"forge": "UNCHARGED",
+			"fabric": "UNCHARGED"
+		},
+		{
+			"forge": "CHARGING",
+			"fabric": "CHARGING"
+		},
+		{
+			"forge": "CHARGED",
+			"fabric": "CHARGED"
+		},
+		{
+			"forge": "READY_TO_ATTACK",
+			"fabric": "READY_TO_ATTACK"
+		}
+	]
+}

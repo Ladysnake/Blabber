@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.util.profiling.FilledProfileResults",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.FilledProfileResults",
+			"fabric": "net.minecraft.util.profiler.ProfileResultImpl"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY_INFO"
+		},
+		{
+			"forge": "SPLITTER",
+			"fabric": "SPLITTER"
+		},
+		{
+			"forge": "COUNTER_ENTRY_COMPARATOR",
+			"fabric": "COMPARATOR"
+		},
+		{
+			"forge": "entries",
+			"fabric": "locationInfos"
+		},
+		{
+			"forge": "startTimeNano",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "startTimeTicks",
+			"fabric": "startTick"
+		},
+		{
+			"forge": "endTimeNano",
+			"fabric": "endTime"
+		},
+		{
+			"forge": "endTimeTicks",
+			"fabric": "endTick"
+		},
+		{
+			"forge": "tickDuration",
+			"fabric": "tickDuration"
+		},
+		{
+			"forge": "getEntry(String arg0)",
+			"fabric": "getInfo(String path)"
+		},
+		{
+			"forge": "getEntry(String arg0)",
+			"fabric": "getInfo(String path)"
+		},
+		{
+			"forge": "getTimes(String arg0)",
+			"fabric": "getTimings(String arg0)"
+		},
+		{
+			"forge": "isDirectChild(String arg0, String arg1)",
+			"fabric": "isSubpath(String parent, String path)"
+		},
+		{
+			"forge": "getCounterValues()",
+			"fabric": "setupCounters()"
+		},
+		{
+			"forge": "getStartTimeNano()",
+			"fabric": "getStartTime()"
+		},
+		{
+			"forge": "getStartTimeTicks()",
+			"fabric": "getStartTick()"
+		},
+		{
+			"forge": "getEndTimeNano()",
+			"fabric": "getEndTime()"
+		},
+		{
+			"forge": "getEndTimeTicks()",
+			"fabric": "getEndTick()"
+		},
+		{
+			"forge": "saveResults(Path arg0)",
+			"fabric": "save(Path arg0)"
+		},
+		{
+			"forge": "getProfilerResults(long arg0, int arg1)",
+			"fabric": "asString(long timeSpan, int tickSpan)"
+		},
+		{
+			"forge": "getProfilerResults()",
+			"fabric": "getRootTimings()"
+		},
+		{
+			"forge": "indentLine(StringBuilder arg0, int arg1)",
+			"fabric": "indent(StringBuilder sb, int size)"
+		},
+		{
+			"forge": "appendProfilerResults(int arg0, String arg1, StringBuilder arg2)",
+			"fabric": "appendTiming(int level, String name, StringBuilder sb)"
+		},
+		{
+			"forge": "appendCounterResults(int arg0, String arg1, FilledProfileResults$CounterCollector arg2, int arg3, StringBuilder arg4)",
+			"fabric": "appendCounter(int depth, String name, ProfileResultImpl$CounterInfo info, int tickSpan, StringBuilder sb)"
+		},
+		{
+			"forge": "appendCounters(Map<String, FilledProfileResults$CounterCollector> arg0, StringBuilder arg1, int arg2)",
+			"fabric": "appendCounterDump(Map<String, ProfileResultImpl$CounterInfo> counters, StringBuilder sb, int tickSpan)"
+		},
+		{
+			"forge": "getComment()",
+			"fabric": "generateWittyComment()"
+		},
+		{
+			"forge": "getTickDuration()",
+			"fabric": "getTickSpan()"
+		}
+	]
+}

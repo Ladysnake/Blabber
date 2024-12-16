@@ -1,0 +1,417 @@
+{
+	"title": "net.minecraft.tags.ItemTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.ItemTags",
+			"fabric": "net.minecraft.registry.tag.ItemTags"
+		},
+		{
+			"forge": "WOOL",
+			"fabric": "WOOL"
+		},
+		{
+			"forge": "WOOL",
+			"fabric": "WOOL"
+		},
+		{
+			"forge": "PLANKS",
+			"fabric": "PLANKS"
+		},
+		{
+			"forge": "STONE_BRICKS",
+			"fabric": "STONE_BRICKS"
+		},
+		{
+			"forge": "WOODEN_BUTTONS",
+			"fabric": "WOODEN_BUTTONS"
+		},
+		{
+			"forge": "STONE_BUTTONS",
+			"fabric": "STONE_BUTTONS"
+		},
+		{
+			"forge": "BUTTONS",
+			"fabric": "BUTTONS"
+		},
+		{
+			"forge": "WOOL_CARPETS",
+			"fabric": "WOOL_CARPETS"
+		},
+		{
+			"forge": "WOODEN_DOORS",
+			"fabric": "WOODEN_DOORS"
+		},
+		{
+			"forge": "WOODEN_STAIRS",
+			"fabric": "WOODEN_STAIRS"
+		},
+		{
+			"forge": "WOODEN_SLABS",
+			"fabric": "WOODEN_SLABS"
+		},
+		{
+			"forge": "WOODEN_FENCES",
+			"fabric": "WOODEN_FENCES"
+		},
+		{
+			"forge": "FENCE_GATES",
+			"fabric": "FENCE_GATES"
+		},
+		{
+			"forge": "WOODEN_PRESSURE_PLATES",
+			"fabric": "WOODEN_PRESSURE_PLATES"
+		},
+		{
+			"forge": "WOODEN_TRAPDOORS",
+			"fabric": "WOODEN_TRAPDOORS"
+		},
+		{
+			"forge": "DOORS",
+			"fabric": "DOORS"
+		},
+		{
+			"forge": "SAPLINGS",
+			"fabric": "SAPLINGS"
+		},
+		{
+			"forge": "LOGS_THAT_BURN",
+			"fabric": "LOGS_THAT_BURN"
+		},
+		{
+			"forge": "LOGS",
+			"fabric": "LOGS"
+		},
+		{
+			"forge": "DARK_OAK_LOGS",
+			"fabric": "DARK_OAK_LOGS"
+		},
+		{
+			"forge": "OAK_LOGS",
+			"fabric": "OAK_LOGS"
+		},
+		{
+			"forge": "BIRCH_LOGS",
+			"fabric": "BIRCH_LOGS"
+		},
+		{
+			"forge": "ACACIA_LOGS",
+			"fabric": "ACACIA_LOGS"
+		},
+		{
+			"forge": "CHERRY_LOGS",
+			"fabric": "CHERRY_LOGS"
+		},
+		{
+			"forge": "JUNGLE_LOGS",
+			"fabric": "JUNGLE_LOGS"
+		},
+		{
+			"forge": "SPRUCE_LOGS",
+			"fabric": "SPRUCE_LOGS"
+		},
+		{
+			"forge": "MANGROVE_LOGS",
+			"fabric": "MANGROVE_LOGS"
+		},
+		{
+			"forge": "CRIMSON_STEMS",
+			"fabric": "CRIMSON_STEMS"
+		},
+		{
+			"forge": "WARPED_STEMS",
+			"fabric": "WARPED_STEMS"
+		},
+		{
+			"forge": "BAMBOO_BLOCKS",
+			"fabric": "BAMBOO_BLOCKS"
+		},
+		{
+			"forge": "WART_BLOCKS",
+			"fabric": "WART_BLOCKS"
+		},
+		{
+			"forge": "BANNERS",
+			"fabric": "BANNERS"
+		},
+		{
+			"forge": "SAND",
+			"fabric": "SAND"
+		},
+		{
+			"forge": "SMELTS_TO_GLASS",
+			"fabric": "SMELTS_TO_GLASS"
+		},
+		{
+			"forge": "STAIRS",
+			"fabric": "STAIRS"
+		},
+		{
+			"forge": "SLABS",
+			"fabric": "SLABS"
+		},
+		{
+			"forge": "WALLS",
+			"fabric": "WALLS"
+		},
+		{
+			"forge": "ANVIL",
+			"fabric": "ANVIL"
+		},
+		{
+			"forge": "RAILS",
+			"fabric": "RAILS"
+		},
+		{
+			"forge": "LEAVES",
+			"fabric": "LEAVES"
+		},
+		{
+			"forge": "TRAPDOORS",
+			"fabric": "TRAPDOORS"
+		},
+		{
+			"forge": "SMALL_FLOWERS",
+			"fabric": "SMALL_FLOWERS"
+		},
+		{
+			"forge": "BEDS",
+			"fabric": "BEDS"
+		},
+		{
+			"forge": "FENCES",
+			"fabric": "FENCES"
+		},
+		{
+			"forge": "TALL_FLOWERS",
+			"fabric": "TALL_FLOWERS"
+		},
+		{
+			"forge": "FLOWERS",
+			"fabric": "FLOWERS"
+		},
+		{
+			"forge": "PIGLIN_REPELLENTS",
+			"fabric": "PIGLIN_REPELLENTS"
+		},
+		{
+			"forge": "PIGLIN_LOVED",
+			"fabric": "PIGLIN_LOVED"
+		},
+		{
+			"forge": "IGNORED_BY_PIGLIN_BABIES",
+			"fabric": "IGNORED_BY_PIGLIN_BABIES"
+		},
+		{
+			"forge": "PIGLIN_FOOD",
+			"fabric": "PIGLIN_FOOD"
+		},
+		{
+			"forge": "FOX_FOOD",
+			"fabric": "FOX_FOOD"
+		},
+		{
+			"forge": "GOLD_ORES",
+			"fabric": "GOLD_ORES"
+		},
+		{
+			"forge": "IRON_ORES",
+			"fabric": "IRON_ORES"
+		},
+		{
+			"forge": "DIAMOND_ORES",
+			"fabric": "DIAMOND_ORES"
+		},
+		{
+			"forge": "REDSTONE_ORES",
+			"fabric": "REDSTONE_ORES"
+		},
+		{
+			"forge": "LAPIS_ORES",
+			"fabric": "LAPIS_ORES"
+		},
+		{
+			"forge": "COAL_ORES",
+			"fabric": "COAL_ORES"
+		},
+		{
+			"forge": "EMERALD_ORES",
+			"fabric": "EMERALD_ORES"
+		},
+		{
+			"forge": "COPPER_ORES",
+			"fabric": "COPPER_ORES"
+		},
+		{
+			"forge": "NON_FLAMMABLE_WOOD",
+			"fabric": "NON_FLAMMABLE_WOOD"
+		},
+		{
+			"forge": "SOUL_FIRE_BASE_BLOCKS",
+			"fabric": "SOUL_FIRE_BASE_BLOCKS"
+		},
+		{
+			"forge": "CANDLES",
+			"fabric": "CANDLES"
+		},
+		{
+			"forge": "DIRT",
+			"fabric": "DIRT"
+		},
+		{
+			"forge": "TERRACOTTA",
+			"fabric": "TERRACOTTA"
+		},
+		{
+			"forge": "COMPLETES_FIND_TREE_TUTORIAL",
+			"fabric": "COMPLETES_FIND_TREE_TUTORIAL"
+		},
+		{
+			"forge": "BOATS",
+			"fabric": "BOATS"
+		},
+		{
+			"forge": "CHEST_BOATS",
+			"fabric": "CHEST_BOATS"
+		},
+		{
+			"forge": "FISHES",
+			"fabric": "FISHES"
+		},
+		{
+			"forge": "SIGNS",
+			"fabric": "SIGNS"
+		},
+		{
+			"forge": "MUSIC_DISCS",
+			"fabric": "MUSIC_DISCS"
+		},
+		{
+			"forge": "CREEPER_DROP_MUSIC_DISCS",
+			"fabric": "CREEPER_DROP_MUSIC_DISCS"
+		},
+		{
+			"forge": "COALS",
+			"fabric": "COALS"
+		},
+		{
+			"forge": "ARROWS",
+			"fabric": "ARROWS"
+		},
+		{
+			"forge": "LECTERN_BOOKS",
+			"fabric": "LECTERN_BOOKS"
+		},
+		{
+			"forge": "BOOKSHELF_BOOKS",
+			"fabric": "BOOKSHELF_BOOKS"
+		},
+		{
+			"forge": "BEACON_PAYMENT_ITEMS",
+			"fabric": "BEACON_PAYMENT_ITEMS"
+		},
+		{
+			"forge": "STONE_TOOL_MATERIALS",
+			"fabric": "STONE_TOOL_MATERIALS"
+		},
+		{
+			"forge": "STONE_CRAFTING_MATERIALS",
+			"fabric": "STONE_CRAFTING_MATERIALS"
+		},
+		{
+			"forge": "FREEZE_IMMUNE_WEARABLES",
+			"fabric": "FREEZE_IMMUNE_WEARABLES"
+		},
+		{
+			"forge": "AXOLOTL_TEMPT_ITEMS",
+			"fabric": "AXOLOTL_TEMPT_ITEMS"
+		},
+		{
+			"forge": "DAMPENS_VIBRATIONS",
+			"fabric": "DAMPENS_VIBRATIONS"
+		},
+		{
+			"forge": "CLUSTER_MAX_HARVESTABLES",
+			"fabric": "CLUSTER_MAX_HARVESTABLES"
+		},
+		{
+			"forge": "COMPASSES",
+			"fabric": "COMPASSES"
+		},
+		{
+			"forge": "HANGING_SIGNS",
+			"fabric": "HANGING_SIGNS"
+		},
+		{
+			"forge": "CREEPER_IGNITERS",
+			"fabric": "CREEPER_IGNITERS"
+		},
+		{
+			"forge": "NOTE_BLOCK_TOP_INSTRUMENTS",
+			"fabric": "NOTEBLOCK_TOP_INSTRUMENTS"
+		},
+		{
+			"forge": "TRIMMABLE_ARMOR",
+			"fabric": "TRIMMABLE_ARMOR"
+		},
+		{
+			"forge": "TRIM_MATERIALS",
+			"fabric": "TRIM_MATERIALS"
+		},
+		{
+			"forge": "TRIM_TEMPLATES",
+			"fabric": "TRIM_TEMPLATES"
+		},
+		{
+			"forge": "SNIFFER_FOOD",
+			"fabric": "SNIFFER_FOOD"
+		},
+		{
+			"forge": "DECORATED_POT_SHERDS",
+			"fabric": "DECORATED_POT_SHERDS"
+		},
+		{
+			"forge": "DECORATED_POT_INGREDIENTS",
+			"fabric": "DECORATED_POT_INGREDIENTS"
+		},
+		{
+			"forge": "SWORDS",
+			"fabric": "SWORDS"
+		},
+		{
+			"forge": "AXES",
+			"fabric": "AXES"
+		},
+		{
+			"forge": "HOES",
+			"fabric": "HOES"
+		},
+		{
+			"forge": "PICKAXES",
+			"fabric": "PICKAXES"
+		},
+		{
+			"forge": "SHOVELS",
+			"fabric": "SHOVELS"
+		},
+		{
+			"forge": "TOOLS",
+			"fabric": "TOOLS"
+		},
+		{
+			"forge": "BREAKS_DECORATED_POTS",
+			"fabric": "BREAKS_DECORATED_POTS"
+		},
+		{
+			"forge": "VILLAGER_PLANTABLE_SEEDS",
+			"fabric": "VILLAGER_PLANTABLE_SEEDS"
+		},
+		{
+			"forge": "bind(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "bind(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

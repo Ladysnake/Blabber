@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.RamTarget",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.RamTarget",
+			"fabric": "net.minecraft.entity.ai.brain.task.RamImpactTask"
+		},
+		{
+			"forge": "TIME_OUT_DURATION",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "TIME_OUT_DURATION",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "RAM_SPEED_FORCE_FACTOR",
+			"fabric": "SPEED_STRENGTH_MULTIPLIER"
+		},
+		{
+			"forge": "getTimeBetweenRams",
+			"fabric": "cooldownRangeFactory"
+		},
+		{
+			"forge": "ramTargeting",
+			"fabric": "targetPredicate"
+		},
+		{
+			"forge": "speed",
+			"fabric": "speed"
+		},
+		{
+			"forge": "getKnockbackForce",
+			"fabric": "strengthMultiplierFactory"
+		},
+		{
+			"forge": "ramDirection",
+			"fabric": "direction"
+		},
+		{
+			"forge": "getImpactSound",
+			"fabric": "impactSoundFactory"
+		},
+		{
+			"forge": "getHornBreakSound",
+			"fabric": "hornBreakSoundFactory"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Goat arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, GoatEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Goat arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, GoatEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Goat arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, GoatEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Goat arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, GoatEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Goat arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, GoatEntity arg1, long arg2)"
+		},
+		{
+			"forge": "hasRammedHornBreakingBlock(ServerLevel arg0, Goat arg1)",
+			"fabric": "shouldSnapHorn(ServerWorld world, GoatEntity goat)"
+		},
+		{
+			"forge": "finishRam(ServerLevel arg0, Goat arg1)",
+			"fabric": "finishRam(ServerWorld world, GoatEntity goat)"
+		}
+	]
+}

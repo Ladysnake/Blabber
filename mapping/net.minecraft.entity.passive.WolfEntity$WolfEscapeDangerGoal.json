@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.Wolf$WolfPanicGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Wolf$WolfPanicGoal",
+			"fabric": "net.minecraft.entity.passive.WolfEntity$WolfEscapeDangerGoal"
+		},
+		{
+			"forge": "shouldPanic()",
+			"fabric": "isInDanger()"
+		},
+		{
+			"forge": "shouldPanic()",
+			"fabric": "isInDanger()"
+		}
+	]
+}

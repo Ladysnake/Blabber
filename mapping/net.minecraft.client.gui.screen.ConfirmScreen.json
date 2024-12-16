@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.gui.screens.ConfirmScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.ConfirmScreen",
+			"fabric": "net.minecraft.client.gui.screen.ConfirmScreen"
+		},
+		{
+			"forge": "MARGIN",
+			"fabric": "TITLE_BOTTOM_MARGIN"
+		},
+		{
+			"forge": "MARGIN",
+			"fabric": "TITLE_BOTTOM_MARGIN"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "multilineMessage",
+			"fabric": "messageSplit"
+		},
+		{
+			"forge": "yesButton",
+			"fabric": "yesText"
+		},
+		{
+			"forge": "noButton",
+			"fabric": "noText"
+		},
+		{
+			"forge": "delayTicker",
+			"fabric": "buttonEnableTimer"
+		},
+		{
+			"forge": "callback",
+			"fabric": "callback"
+		},
+		{
+			"forge": "exitButtons",
+			"fabric": "buttons"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "addButtons(int arg0)",
+			"fabric": "addButtons(int y)"
+		},
+		{
+			"forge": "addExitButton(Button arg0)",
+			"fabric": "addButton(ButtonWidget button)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "titleTop()",
+			"fabric": "getTitleY()"
+		},
+		{
+			"forge": "messageTop()",
+			"fabric": "getMessageY()"
+		},
+		{
+			"forge": "messageHeight()",
+			"fabric": "getMessagesHeight()"
+		},
+		{
+			"forge": "setDelay(int arg0)",
+			"fabric": "disableButtons(int ticks)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "shouldCloseOnEsc()",
+			"fabric": "shouldCloseOnEsc()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		}
+	]
+}

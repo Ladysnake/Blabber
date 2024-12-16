@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkBiomeFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkBiomeFix",
+			"fabric": "net.minecraft.datafixer.fix.BiomeFormatFix"
+		}
+	]
+}

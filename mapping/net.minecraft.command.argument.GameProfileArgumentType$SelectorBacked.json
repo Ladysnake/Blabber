@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.commands.arguments.GameProfileArgument$SelectorResult",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.GameProfileArgument$SelectorResult",
+			"fabric": "net.minecraft.command.argument.GameProfileArgumentType$SelectorBacked"
+		},
+		{
+			"forge": "selector",
+			"fabric": "selector"
+		},
+		{
+			"forge": "selector",
+			"fabric": "selector"
+		},
+		{
+			"forge": "getNames(CommandSourceStack arg0)",
+			"fabric": "getNames(ServerCommandSource arg0)"
+		},
+		{
+			"forge": "getNames(CommandSourceStack arg0)",
+			"fabric": "getNames(ServerCommandSource arg0)"
+		}
+	]
+}

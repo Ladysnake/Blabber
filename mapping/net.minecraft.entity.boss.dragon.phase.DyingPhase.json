@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.boss.enderdragon.phases.DragonDeathPhase",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.enderdragon.phases.DragonDeathPhase",
+			"fabric": "net.minecraft.entity.boss.dragon.phase.DyingPhase"
+		},
+		{
+			"forge": "targetLocation",
+			"fabric": "target"
+		},
+		{
+			"forge": "targetLocation",
+			"fabric": "target"
+		},
+		{
+			"forge": "time",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "doClientTick()",
+			"fabric": "clientTick()"
+		},
+		{
+			"forge": "doClientTick()",
+			"fabric": "clientTick()"
+		},
+		{
+			"forge": "doServerTick()",
+			"fabric": "serverTick()"
+		},
+		{
+			"forge": "begin()",
+			"fabric": "beginPhase()"
+		},
+		{
+			"forge": "getFlySpeed()",
+			"fabric": "getMaxYAcceleration()"
+		},
+		{
+			"forge": "getFlyTargetLocation()",
+			"fabric": "getPathTarget()"
+		},
+		{
+			"forge": "getPhase()",
+			"fabric": "getType()"
+		}
+	]
+}

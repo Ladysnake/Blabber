@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.damagesource.DamageSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.damagesource.DamageSource",
+			"fabric": "net.minecraft.entity.damage.DamageSource"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "causingEntity",
+			"fabric": "attacker"
+		},
+		{
+			"forge": "directEntity",
+			"fabric": "source"
+		},
+		{
+			"forge": "damageSourcePosition",
+			"fabric": "position"
+		},
+		{
+			"forge": "getFoodExhaustion()",
+			"fabric": "getExhaustion()"
+		},
+		{
+			"forge": "getFoodExhaustion()",
+			"fabric": "getExhaustion()"
+		},
+		{
+			"forge": "isIndirect()",
+			"fabric": "isIndirect()"
+		},
+		{
+			"forge": "getDirectEntity()",
+			"fabric": "getSource()"
+		},
+		{
+			"forge": "getEntity()",
+			"fabric": "getAttacker()"
+		},
+		{
+			"forge": "getLocalizedDeathMessage(LivingEntity arg0)",
+			"fabric": "getDeathMessage(LivingEntity killed)"
+		},
+		{
+			"forge": "getMsgId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "scalesWithDifficulty()",
+			"fabric": "isScaledWithDifficulty()"
+		},
+		{
+			"forge": "isCreativePlayer()",
+			"fabric": "isSourceCreativePlayer()"
+		},
+		{
+			"forge": "getSourcePosition()",
+			"fabric": "getPosition()"
+		},
+		{
+			"forge": "sourcePositionRaw()",
+			"fabric": "getStoredPosition()"
+		},
+		{
+			"forge": "is(TagKey<DamageType> arg0)",
+			"fabric": "isIn(TagKey<DamageType> tag)"
+		},
+		{
+			"forge": "is(ResourceKey<DamageType> arg0)",
+			"fabric": "isOf(RegistryKey<DamageType> typeKey)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "typeHolder()",
+			"fabric": "getTypeRegistryEntry()"
+		}
+	]
+}

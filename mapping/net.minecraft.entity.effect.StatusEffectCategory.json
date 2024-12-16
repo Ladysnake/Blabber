@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.effect.MobEffectCategory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.effect.MobEffectCategory",
+			"fabric": "net.minecraft.entity.effect.StatusEffectCategory"
+		},
+		{
+			"forge": "BENEFICIAL",
+			"fabric": "BENEFICIAL"
+		},
+		{
+			"forge": "BENEFICIAL",
+			"fabric": "BENEFICIAL"
+		},
+		{
+			"forge": "HARMFUL",
+			"fabric": "HARMFUL"
+		},
+		{
+			"forge": "NEUTRAL",
+			"fabric": "NEUTRAL"
+		},
+		{
+			"forge": "tooltipFormatting",
+			"fabric": "formatting"
+		},
+		{
+			"forge": "tooltipFormatting",
+			"fabric": "formatting"
+		},
+		{
+			"forge": "getTooltipFormatting()",
+			"fabric": "getFormatting()"
+		},
+		{
+			"forge": "getTooltipFormatting()",
+			"fabric": "getFormatting()"
+		}
+	]
+}

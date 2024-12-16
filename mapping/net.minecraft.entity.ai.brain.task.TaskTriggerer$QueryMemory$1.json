@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$PureMemory$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$PureMemory$1",
+			"fabric": "net.minecraft.entity.ai.brain.task.TaskTriggerer$QueryMemory$1"
+		},
+		{
+			"forge": "tryTrigger(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "tryTrigger(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "debugString()",
+			"fabric": "asString()"
+		}
+	]
+}

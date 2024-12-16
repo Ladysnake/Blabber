@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.advancements.critereon.PlayerPredicate$AdvancementCriterionsPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.PlayerPredicate$AdvancementCriterionsPredicate",
+			"fabric": "net.minecraft.predicate.entity.PlayerPredicate$AdvancementCriteriaPredicate"
+		},
+		{
+			"forge": "criterions",
+			"fabric": "criteria"
+		},
+		{
+			"forge": "criterions",
+			"fabric": "criteria"
+		},
+		{
+			"forge": "toJson()",
+			"fabric": "toJson()"
+		},
+		{
+			"forge": "toJson()",
+			"fabric": "toJson()"
+		},
+		{
+			"forge": "test(AdvancementProgress arg0)",
+			"fabric": "test(AdvancementProgress arg0)"
+		}
+	]
+}

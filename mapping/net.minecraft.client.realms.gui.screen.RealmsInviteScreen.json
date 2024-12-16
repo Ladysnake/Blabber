@@ -1,0 +1,81 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsInviteScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsInviteScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsInviteScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "NAME_LABEL",
+			"fabric": "INVITE_PROFILE_NAME_TEXT"
+		},
+		{
+			"forge": "INVITING_PLAYER_TEXT",
+			"fabric": "INVITING_TEXT"
+		},
+		{
+			"forge": "NO_SUCH_PLAYER_ERROR_TEXT",
+			"fabric": "PLAYER_ERROR_TEXT"
+		},
+		{
+			"forge": "profileName",
+			"fabric": "nameWidget"
+		},
+		{
+			"forge": "inviteButton",
+			"fabric": "inviteButton"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "serverData"
+		},
+		{
+			"forge": "configureScreen",
+			"fabric": "configureScreen"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "message",
+			"fabric": "errorMessage"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "onInvite()",
+			"fabric": "onInvite()"
+		},
+		{
+			"forge": "showMessage(Component arg0)",
+			"fabric": "showError(Text errorMessage)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

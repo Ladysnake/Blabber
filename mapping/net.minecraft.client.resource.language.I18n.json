@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.resources.language.I18n",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.language.I18n",
+			"fabric": "net.minecraft.client.resource.language.I18n"
+		},
+		{
+			"forge": "language",
+			"fabric": "language"
+		},
+		{
+			"forge": "language",
+			"fabric": "language"
+		},
+		{
+			"forge": "setLanguage(Language arg0)",
+			"fabric": "setLanguage(Language language)"
+		},
+		{
+			"forge": "setLanguage(Language arg0)",
+			"fabric": "setLanguage(Language language)"
+		},
+		{
+			"forge": "get(String arg0, Object... arg1)",
+			"fabric": "translate(String key, Object... args)"
+		},
+		{
+			"forge": "exists(String arg0)",
+			"fabric": "hasTranslation(String key)"
+		}
+	]
+}

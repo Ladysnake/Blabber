@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.Panda$PandaMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Panda$PandaMoveControl",
+			"fabric": "net.minecraft.entity.passive.PandaEntity$PandaMoveControl"
+		},
+		{
+			"forge": "panda",
+			"fabric": "panda"
+		},
+		{
+			"forge": "panda",
+			"fabric": "panda"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

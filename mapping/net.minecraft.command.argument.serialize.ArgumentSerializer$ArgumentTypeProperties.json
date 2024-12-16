@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.commands.synchronization.ArgumentTypeInfo$Template",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.synchronization.ArgumentTypeInfo$Template",
+			"fabric": "net.minecraft.command.argument.serialize.ArgumentSerializer$ArgumentTypeProperties"
+		},
+		{
+			"forge": "instantiate(CommandBuildContext arg0)",
+			"fabric": "createType(CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "instantiate(CommandBuildContext arg0)",
+			"fabric": "createType(CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getSerializer()"
+		}
+	]
+}

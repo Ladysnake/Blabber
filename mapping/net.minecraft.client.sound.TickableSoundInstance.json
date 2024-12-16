@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.resources.sounds.TickableSoundInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.TickableSoundInstance",
+			"fabric": "net.minecraft.client.sound.TickableSoundInstance"
+		},
+		{
+			"forge": "isStopped()",
+			"fabric": "isDone()"
+		},
+		{
+			"forge": "isStopped()",
+			"fabric": "isDone()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

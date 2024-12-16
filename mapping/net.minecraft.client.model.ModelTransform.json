@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.model.geom.PartPose",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.geom.PartPose",
+			"fabric": "net.minecraft.client.model.ModelTransform"
+		},
+		{
+			"forge": "ZERO",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "ZERO",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "x",
+			"fabric": "pivotX"
+		},
+		{
+			"forge": "y",
+			"fabric": "pivotY"
+		},
+		{
+			"forge": "z",
+			"fabric": "pivotZ"
+		},
+		{
+			"forge": "xRot",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "yRot",
+			"fabric": "yaw"
+		},
+		{
+			"forge": "zRot",
+			"fabric": "roll"
+		},
+		{
+			"forge": "offset(float arg0, float arg1, float arg2)",
+			"fabric": "pivot(float pivotX, float pivotY, float pivotZ)"
+		},
+		{
+			"forge": "offset(float arg0, float arg1, float arg2)",
+			"fabric": "pivot(float pivotX, float pivotY, float pivotZ)"
+		},
+		{
+			"forge": "rotation(float arg0, float arg1, float arg2)",
+			"fabric": "rotation(float pitch, float yaw, float roll)"
+		},
+		{
+			"forge": "offsetAndRotation(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "of(float pivotX, float pivotY, float pivotZ, float pitch, float yaw, float roll)"
+		}
+	]
+}

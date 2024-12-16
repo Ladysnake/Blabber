@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.model.CowModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.CowModel",
+			"fabric": "net.minecraft.client.render.entity.model.CowEntityModel"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "getHead()",
+			"fabric": "getHead()"
+		}
+	]
+}

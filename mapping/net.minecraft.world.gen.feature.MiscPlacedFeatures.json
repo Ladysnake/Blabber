@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.data.worldgen.placement.MiscOverworldPlacements",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.placement.MiscOverworldPlacements",
+			"fabric": "net.minecraft.world.gen.feature.MiscPlacedFeatures"
+		},
+		{
+			"forge": "ICE_SPIKE",
+			"fabric": "ICE_SPIKE"
+		},
+		{
+			"forge": "ICE_SPIKE",
+			"fabric": "ICE_SPIKE"
+		},
+		{
+			"forge": "ICE_PATCH",
+			"fabric": "ICE_PATCH"
+		},
+		{
+			"forge": "FOREST_ROCK",
+			"fabric": "FOREST_ROCK"
+		},
+		{
+			"forge": "ICEBERG_PACKED",
+			"fabric": "ICEBERG_PACKED"
+		},
+		{
+			"forge": "ICEBERG_BLUE",
+			"fabric": "ICEBERG_BLUE"
+		},
+		{
+			"forge": "BLUE_ICE",
+			"fabric": "BLUE_ICE"
+		},
+		{
+			"forge": "LAKE_LAVA_UNDERGROUND",
+			"fabric": "LAKE_LAVA_UNDERGROUND"
+		},
+		{
+			"forge": "LAKE_LAVA_SURFACE",
+			"fabric": "LAKE_LAVA_SURFACE"
+		},
+		{
+			"forge": "DISK_CLAY",
+			"fabric": "DISK_CLAY"
+		},
+		{
+			"forge": "DISK_GRAVEL",
+			"fabric": "DISK_GRAVEL"
+		},
+		{
+			"forge": "DISK_SAND",
+			"fabric": "DISK_SAND"
+		},
+		{
+			"forge": "DISK_GRASS",
+			"fabric": "DISK_GRASS"
+		},
+		{
+			"forge": "FREEZE_TOP_LAYER",
+			"fabric": "FREEZE_TOP_LAYER"
+		},
+		{
+			"forge": "VOID_START_PLATFORM",
+			"fabric": "VOID_START_PLATFORM"
+		},
+		{
+			"forge": "DESERT_WELL",
+			"fabric": "DESERT_WELL"
+		},
+		{
+			"forge": "SPRING_LAVA",
+			"fabric": "SPRING_LAVA"
+		},
+		{
+			"forge": "SPRING_LAVA_FROZEN",
+			"fabric": "SPRING_LAVA_FROZEN"
+		},
+		{
+			"forge": "SPRING_WATER",
+			"fabric": "SPRING_WATER"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		}
+	]
+}

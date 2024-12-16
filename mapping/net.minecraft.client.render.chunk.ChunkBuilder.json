@@ -1,0 +1,153 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher",
+			"fabric": "net.minecraft.client.render.chunk.ChunkBuilder"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MAX_WORKERS_32_BIT",
+			"fabric": "field_32831"
+		},
+		{
+			"forge": "VERTEX_FORMAT",
+			"fabric": "POSITION_COLOR_TEXTURE_LIGHT_NORMAL"
+		},
+		{
+			"forge": "MAX_HIGH_PRIORITY_QUOTA",
+			"fabric": "field_35300"
+		},
+		{
+			"forge": "toBatchHighPriority",
+			"fabric": "prioritizedTaskQueue"
+		},
+		{
+			"forge": "toBatchLowPriority",
+			"fabric": "taskQueue"
+		},
+		{
+			"forge": "highPriorityQuota",
+			"fabric": "processablePrioritizedTaskCount"
+		},
+		{
+			"forge": "freeBuffers",
+			"fabric": "threadBuffers"
+		},
+		{
+			"forge": "toUpload",
+			"fabric": "uploadQueue"
+		},
+		{
+			"forge": "toBatchCount",
+			"fabric": "queuedTaskCount"
+		},
+		{
+			"forge": "freeBufferCount",
+			"fabric": "bufferCount"
+		},
+		{
+			"forge": "fixedBuffers",
+			"fabric": "buffers"
+		},
+		{
+			"forge": "mailbox",
+			"fabric": "mailbox"
+		},
+		{
+			"forge": "executor",
+			"fabric": "executor"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "renderer",
+			"fabric": "worldRenderer"
+		},
+		{
+			"forge": "camera",
+			"fabric": "cameraPosition"
+		},
+		{
+			"forge": "setLevel(ClientLevel arg0)",
+			"fabric": "setWorld(ClientWorld world)"
+		},
+		{
+			"forge": "setLevel(ClientLevel arg0)",
+			"fabric": "setWorld(ClientWorld world)"
+		},
+		{
+			"forge": "runTask()",
+			"fabric": "scheduleRunTasks()"
+		},
+		{
+			"forge": "pollTask()",
+			"fabric": "pollTask()"
+		},
+		{
+			"forge": "getStats()",
+			"fabric": "getDebugString()"
+		},
+		{
+			"forge": "getToBatchCount()",
+			"fabric": "getToBatchCount()"
+		},
+		{
+			"forge": "getToUpload()",
+			"fabric": "getChunksToUpload()"
+		},
+		{
+			"forge": "getFreeBufferCount()",
+			"fabric": "getFreeBufferCount()"
+		},
+		{
+			"forge": "setCamera(Vec3 arg0)",
+			"fabric": "setCameraPosition(Vec3d cameraPosition)"
+		},
+		{
+			"forge": "getCameraPosition()",
+			"fabric": "getCameraPosition()"
+		},
+		{
+			"forge": "uploadAllPendingUploads()",
+			"fabric": "upload()"
+		},
+		{
+			"forge": "rebuildChunkSync(ChunkRenderDispatcher$RenderChunk arg0, RenderRegionCache arg1)",
+			"fabric": "rebuild(ChunkBuilder$BuiltChunk chunk, ChunkRendererRegionBuilder builder)"
+		},
+		{
+			"forge": "blockUntilClear()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "schedule(ChunkRenderDispatcher$RenderChunk$ChunkCompileTask arg0)",
+			"fabric": "send(ChunkBuilder$BuiltChunk$Task task)"
+		},
+		{
+			"forge": "uploadChunkLayer(BufferBuilder$RenderedBuffer arg0, VertexBuffer arg1)",
+			"fabric": "scheduleUpload(BufferBuilder$BuiltBuffer builtBuffer, VertexBuffer glBuffer)"
+		},
+		{
+			"forge": "clearBatchQueue()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "isQueueEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "dispose()",
+			"fabric": "stop()"
+		}
+	]
+}

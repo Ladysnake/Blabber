@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.TurtleRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.TurtleRenderer",
+			"fabric": "net.minecraft.client.render.entity.TurtleEntityRenderer"
+		},
+		{
+			"forge": "TURTLE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TURTLE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "render(Turtle arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(TurtleEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "render(Turtle arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(TurtleEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "getTextureLocation(Turtle arg0)",
+			"fabric": "getTexture(TurtleEntity arg0)"
+		}
+	]
+}

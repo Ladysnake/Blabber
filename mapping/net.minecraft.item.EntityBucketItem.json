@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.item.MobBucketItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.MobBucketItem",
+			"fabric": "net.minecraft.item.EntityBucketItem"
+		},
+		{
+			"forge": "type",
+			"fabric": "entityType"
+		},
+		{
+			"forge": "type",
+			"fabric": "entityType"
+		},
+		{
+			"forge": "emptySound",
+			"fabric": "emptyingSound"
+		},
+		{
+			"forge": "checkExtraContent(Player arg0, Level arg1, ItemStack arg2, BlockPos arg3)",
+			"fabric": "onEmptied(PlayerEntity arg0, World arg1, ItemStack arg2, BlockPos arg3)"
+		},
+		{
+			"forge": "checkExtraContent(Player arg0, Level arg1, ItemStack arg2, BlockPos arg3)",
+			"fabric": "onEmptied(PlayerEntity arg0, World arg1, ItemStack arg2, BlockPos arg3)"
+		},
+		{
+			"forge": "playEmptySound(Player arg0, LevelAccessor arg1, BlockPos arg2)",
+			"fabric": "playEmptyingSound(PlayerEntity arg0, WorldAccess arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "spawn(ServerLevel arg0, ItemStack arg1, BlockPos arg2)",
+			"fabric": "spawnEntity(ServerWorld world, ItemStack stack, BlockPos pos)"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		}
+	]
+}

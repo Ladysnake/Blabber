@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.StatsCounterFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.StatsCounterFix",
+			"fabric": "net.minecraft.datafixer.fix.StatsCounterFix"
+		},
+		{
+			"forge": "SKIP",
+			"fabric": "SKIP"
+		},
+		{
+			"forge": "SKIP",
+			"fabric": "SKIP"
+		},
+		{
+			"forge": "CUSTOM_MAP",
+			"fabric": "RENAMED_GENERAL_STATS"
+		},
+		{
+			"forge": "BLOCK_KEY",
+			"fabric": "OLD_MINE_BLOCK_ID"
+		},
+		{
+			"forge": "NEW_BLOCK_KEY",
+			"fabric": "NEW_MINE_BLOCK_ID"
+		},
+		{
+			"forge": "ITEM_KEYS",
+			"fabric": "RENAMED_ITEM_STATS"
+		},
+		{
+			"forge": "ENTITY_KEYS",
+			"fabric": "RENAMED_ENTITY_STATS"
+		},
+		{
+			"forge": "ENTITIES",
+			"fabric": "RENAMED_ENTITIES"
+		},
+		{
+			"forge": "NEW_CUSTOM_KEY",
+			"fabric": "CUSTOM"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "getItem(String arg0)"
+		},
+		{
+			"forge": "upgradeItem(String arg0)",
+			"fabric": "getItem(String arg0)"
+		},
+		{
+			"forge": "upgradeBlock(String arg0)",
+			"fabric": "getBlock(String arg0)"
+		}
+	]
+}

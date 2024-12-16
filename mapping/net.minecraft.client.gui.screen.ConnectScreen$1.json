@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.gui.screens.ConnectScreen$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.ConnectScreen$1",
+			"fabric": "net.minecraft.client.gui.screen.ConnectScreen$1"
+		}
+	]
+}

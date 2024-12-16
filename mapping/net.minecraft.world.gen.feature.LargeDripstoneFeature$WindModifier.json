@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature$WindOffsetter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature$WindOffsetter",
+			"fabric": "net.minecraft.world.gen.feature.LargeDripstoneFeature$WindModifier"
+		},
+		{
+			"forge": "originY",
+			"fabric": "y"
+		},
+		{
+			"forge": "originY",
+			"fabric": "y"
+		},
+		{
+			"forge": "windSpeed",
+			"fabric": "wind"
+		},
+		{
+			"forge": "noWind()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "noWind()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "offset(BlockPos arg0)",
+			"fabric": "modify(BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.Display$GenericInterpolator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Display$GenericInterpolator",
+			"fabric": "net.minecraft.entity.decoration.DisplayEntity$AbstractInterpolator"
+		},
+		{
+			"forge": "constant(T arg0)",
+			"fabric": "constant(T value)"
+		},
+		{
+			"forge": "constant(T arg0)",
+			"fabric": "constant(T value)"
+		},
+		{
+			"forge": "get(float arg0)",
+			"fabric": "interpolate(float delta)"
+		}
+	]
+}

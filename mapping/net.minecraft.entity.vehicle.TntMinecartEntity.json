@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.MinecartTNT",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.MinecartTNT",
+			"fabric": "net.minecraft.entity.vehicle.TntMinecartEntity"
+		},
+		{
+			"forge": "EVENT_PRIME",
+			"fabric": "PRIME_TNT_STATUS"
+		},
+		{
+			"forge": "EVENT_PRIME",
+			"fabric": "PRIME_TNT_STATUS"
+		},
+		{
+			"forge": "fuse",
+			"fabric": "fuseTicks"
+		},
+		{
+			"forge": "getMinecartType()",
+			"fabric": "getMinecartType()"
+		},
+		{
+			"forge": "getMinecartType()",
+			"fabric": "getMinecartType()"
+		},
+		{
+			"forge": "getDefaultDisplayBlockState()",
+			"fabric": "getDefaultContainedBlock()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "destroy(DamageSource arg0)",
+			"fabric": "dropItems(DamageSource arg0)"
+		},
+		{
+			"forge": "getDropItem()",
+			"fabric": "getItem()"
+		},
+		{
+			"forge": "explode(double arg0)",
+			"fabric": "explode(double power)"
+		},
+		{
+			"forge": "explode(DamageSource arg0, double arg1)",
+			"fabric": "explode(DamageSource damageSource, double power)"
+		},
+		{
+			"forge": "causeFallDamage(float arg0, float arg1, DamageSource arg2)",
+			"fabric": "handleFallDamage(float arg0, float arg1, DamageSource arg2)"
+		},
+		{
+			"forge": "activateMinecart(int arg0, int arg1, int arg2, boolean arg3)",
+			"fabric": "onActivatorRail(int arg0, int arg1, int arg2, boolean arg3)"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "primeFuse()",
+			"fabric": "prime()"
+		},
+		{
+			"forge": "getFuse()",
+			"fabric": "getFuseTicks()"
+		},
+		{
+			"forge": "isPrimed()",
+			"fabric": "isPrimed()"
+		},
+		{
+			"forge": "getBlockExplosionResistance(Explosion arg0, BlockGetter arg1, BlockPos arg2, BlockState arg3, FluidState arg4, float arg5)",
+			"fabric": "getEffectiveExplosionResistance(Explosion arg0, BlockView arg1, BlockPos arg2, BlockState arg3, FluidState arg4, float arg5)"
+		},
+		{
+			"forge": "shouldBlockExplode(Explosion arg0, BlockGetter arg1, BlockPos arg2, BlockState arg3, float arg4)",
+			"fabric": "canExplosionDestroyBlock(Explosion arg0, BlockView arg1, BlockPos arg2, BlockState arg3, float arg4)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		}
+	]
+}

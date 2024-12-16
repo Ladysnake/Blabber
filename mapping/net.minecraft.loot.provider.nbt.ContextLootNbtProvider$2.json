@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider$2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider$2",
+			"fabric": "net.minecraft.loot.provider.nbt.ContextLootNbtProvider$2"
+		},
+		{
+			"forge": "get(LootContext arg0)",
+			"fabric": "getNbt(LootContext arg0)"
+		},
+		{
+			"forge": "get(LootContext arg0)",
+			"fabric": "getNbt(LootContext arg0)"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		}
+	]
+}

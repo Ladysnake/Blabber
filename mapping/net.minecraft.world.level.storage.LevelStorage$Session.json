@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess",
+			"fabric": "net.minecraft.world.level.storage.LevelStorage$Session"
+		},
+		{
+			"forge": "lock",
+			"fabric": "lock"
+		},
+		{
+			"forge": "lock",
+			"fabric": "lock"
+		},
+		{
+			"forge": "levelDirectory",
+			"fabric": "directory"
+		},
+		{
+			"forge": "levelId",
+			"fabric": "directoryName"
+		},
+		{
+			"forge": "resources",
+			"fabric": "paths"
+		},
+		{
+			"forge": "getLevelId()",
+			"fabric": "getDirectoryName()"
+		},
+		{
+			"forge": "getLevelId()",
+			"fabric": "getDirectoryName()"
+		},
+		{
+			"forge": "getLevelPath(LevelResource arg0)",
+			"fabric": "getDirectory(WorldSavePath savePath)"
+		},
+		{
+			"forge": "getDimensionPath(ResourceKey<Level> arg0)",
+			"fabric": "getWorldDirectory(RegistryKey<World> key)"
+		},
+		{
+			"forge": "checkLock()",
+			"fabric": "checkValid()"
+		},
+		{
+			"forge": "createPlayerStorage()",
+			"fabric": "createSaveHandler()"
+		},
+		{
+			"forge": "getSummary()",
+			"fabric": "getLevelSummary()"
+		},
+		{
+			"forge": "getDataTag(com.mojang.serialization.DynamicOps<Tag> arg0, WorldDataConfiguration arg1, Registry<LevelStem> arg2, com.mojang.serialization.Lifecycle arg3)",
+			"fabric": "readLevelProperties(com.mojang.serialization.DynamicOps<NbtElement> ops, DataConfiguration dataConfiguration, Registry<DimensionOptions> dimensionOptionsRegistry, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "getDataConfiguration()",
+			"fabric": "getDataPackSettings()"
+		},
+		{
+			"forge": "saveDataTag(RegistryAccess arg0, WorldData arg1)",
+			"fabric": "backupLevelDataFile(DynamicRegistryManager registryManager, SaveProperties saveProperties)"
+		},
+		{
+			"forge": "saveDataTag(RegistryAccess arg0, WorldData arg1, CompoundTag arg2)",
+			"fabric": "backupLevelDataFile(DynamicRegistryManager registryManager, SaveProperties saveProperties, NbtCompound nbt)"
+		},
+		{
+			"forge": "getIconFile()",
+			"fabric": "getIconFile()"
+		},
+		{
+			"forge": "deleteLevel()",
+			"fabric": "deleteSessionLock()"
+		},
+		{
+			"forge": "renameLevel(String arg0)",
+			"fabric": "save(String name)"
+		},
+		{
+			"forge": "makeWorldBackup()",
+			"fabric": "createBackup()"
+		}
+	]
+}

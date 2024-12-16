@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.ChunkSerializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.ChunkSerializer",
+			"fabric": "net.minecraft.world.ChunkSerializer"
+		},
+		{
+			"forge": "BLOCK_STATE_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BLOCK_STATE_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "TAG_UPGRADE_DATA",
+			"fabric": "UPGRADE_DATA_KEY"
+		},
+		{
+			"forge": "BLOCK_TICKS_TAG",
+			"fabric": "BLOCK_TICKS"
+		},
+		{
+			"forge": "FLUID_TICKS_TAG",
+			"fabric": "FLUID_TICKS"
+		},
+		{
+			"forge": "X_POS_TAG",
+			"fabric": "X_POS_KEY"
+		},
+		{
+			"forge": "Z_POS_TAG",
+			"fabric": "Z_POS_KEY"
+		},
+		{
+			"forge": "HEIGHTMAPS_TAG",
+			"fabric": "HEIGHTMAPS_KEY"
+		},
+		{
+			"forge": "IS_LIGHT_ON_TAG",
+			"fabric": "IS_LIGHT_ON_KEY"
+		},
+		{
+			"forge": "SECTIONS_TAG",
+			"fabric": "SECTIONS_KEY"
+		},
+		{
+			"forge": "BLOCK_LIGHT_TAG",
+			"fabric": "BLOCK_LIGHT_KEY"
+		},
+		{
+			"forge": "SKY_LIGHT_TAG",
+			"fabric": "SKY_LIGHT_KEY"
+		},
+		{
+			"forge": "read(ServerLevel arg0, PoiManager arg1, ChunkPos arg2, CompoundTag arg3)",
+			"fabric": "deserialize(ServerWorld world, PointOfInterestStorage poiStorage, ChunkPos chunkPos, NbtCompound nbt)"
+		},
+		{
+			"forge": "read(ServerLevel arg0, PoiManager arg1, ChunkPos arg2, CompoundTag arg3)",
+			"fabric": "deserialize(ServerWorld world, PointOfInterestStorage poiStorage, ChunkPos chunkPos, NbtCompound nbt)"
+		},
+		{
+			"forge": "logErrors(ChunkPos arg0, int arg1, String arg2)",
+			"fabric": "logRecoverableError(ChunkPos chunkPos, int y, String message)"
+		},
+		{
+			"forge": "makeBiomeCodec(Registry<Biome> arg0)",
+			"fabric": "createCodec(Registry<Biome> biomeRegistry)"
+		},
+		{
+			"forge": "write(ServerLevel arg0, ChunkAccess arg1)",
+			"fabric": "serialize(ServerWorld world, Chunk chunk)"
+		},
+		{
+			"forge": "saveTicks(ServerLevel arg0, CompoundTag arg1, ChunkAccess$TicksToSave arg2)",
+			"fabric": "serializeTicks(ServerWorld world, NbtCompound nbt, Chunk$TickSchedulers tickSchedulers)"
+		},
+		{
+			"forge": "getChunkTypeFromTag(CompoundTag arg0)",
+			"fabric": "getChunkType(NbtCompound nbt)"
+		},
+		{
+			"forge": "postLoadChunk(ServerLevel arg0, CompoundTag arg1)",
+			"fabric": "getEntityLoadingCallback(ServerWorld world, NbtCompound nbt)"
+		},
+		{
+			"forge": "getListOfCompoundsOrNull(CompoundTag arg0, String arg1)",
+			"fabric": "getList(NbtCompound nbt, String key)"
+		},
+		{
+			"forge": "packStructureData(StructurePieceSerializationContext arg0, ChunkPos arg1, Map<Structure, StructureStart> arg2, Map<Structure, it.unimi.dsi.fastutil.longs.LongSet> arg3)",
+			"fabric": "writeStructures(StructureContext context, ChunkPos pos, Map<Structure, StructureStart> starts, Map<Structure, it.unimi.dsi.fastutil.longs.LongSet> references)"
+		},
+		{
+			"forge": "unpackStructureStart(StructurePieceSerializationContext arg0, CompoundTag arg1, long arg2)",
+			"fabric": "readStructureStarts(StructureContext context, NbtCompound nbt, long worldSeed)"
+		},
+		{
+			"forge": "unpackStructureReferences(RegistryAccess arg0, ChunkPos arg1, CompoundTag arg2)",
+			"fabric": "readStructureReferences(DynamicRegistryManager registryManager, ChunkPos pos, NbtCompound nbt)"
+		},
+		{
+			"forge": "packOffsets(it.unimi.dsi.fastutil.shorts.ShortList[] arg0)",
+			"fabric": "toNbt(it.unimi.dsi.fastutil.shorts.ShortList[] lists)"
+		}
+	]
+}

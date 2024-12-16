@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.block.BeetrootBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BeetrootBlock",
+			"fabric": "net.minecraft.block.BeetrootsBlock"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "BEETROOTS_MAX_AGE"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "BEETROOTS_MAX_AGE"
+		},
+		{
+			"forge": "AGE",
+			"fabric": "AGE"
+		},
+		{
+			"forge": "SHAPE_BY_AGE",
+			"fabric": "AGE_TO_SHAPE"
+		},
+		{
+			"forge": "getAgeProperty()",
+			"fabric": "getAgeProperty()"
+		},
+		{
+			"forge": "getAgeProperty()",
+			"fabric": "getAgeProperty()"
+		},
+		{
+			"forge": "getMaxAge()",
+			"fabric": "getMaxAge()"
+		},
+		{
+			"forge": "getBaseSeedId()",
+			"fabric": "getSeedsItem()"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "getBonemealAgeIncrease(Level arg0)",
+			"fabric": "getGrowthAmount(World arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		}
+	]
+}

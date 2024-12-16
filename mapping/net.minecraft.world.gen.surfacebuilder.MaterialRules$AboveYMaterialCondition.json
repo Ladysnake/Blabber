@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$YConditionSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$YConditionSource",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$AboveYMaterialCondition"
+		},
+		{
+			"forge": "anchor",
+			"fabric": "anchor"
+		},
+		{
+			"forge": "anchor",
+			"fabric": "anchor"
+		},
+		{
+			"forge": "surfaceDepthMultiplier",
+			"fabric": "surfaceDepthMultiplier"
+		},
+		{
+			"forge": "addStoneDepth",
+			"fabric": "addStoneDepth"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		},
+		{
+			"forge": "apply(SurfaceRules$Context arg0)",
+			"fabric": "apply(MaterialRules$MaterialRuleContext arg0)"
+		},
+		{
+			"forge": "anchor()",
+			"fabric": "anchor()"
+		},
+		{
+			"forge": "surfaceDepthMultiplier()",
+			"fabric": "surfaceDepthMultiplier()"
+		},
+		{
+			"forge": "addStoneDepth()",
+			"fabric": "addStoneDepth()"
+		}
+	]
+}

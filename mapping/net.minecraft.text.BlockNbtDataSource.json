@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.chat.contents.BlockDataSource",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.contents.BlockDataSource",
+			"fabric": "net.minecraft.text.BlockNbtDataSource"
+		},
+		{
+			"forge": "posPattern",
+			"fabric": "rawPos"
+		},
+		{
+			"forge": "posPattern",
+			"fabric": "rawPos"
+		},
+		{
+			"forge": "compiledPos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "compilePos(String arg0)",
+			"fabric": "parsePos(String string)"
+		},
+		{
+			"forge": "compilePos(String arg0)",
+			"fabric": "parsePos(String string)"
+		},
+		{
+			"forge": "getData(CommandSourceStack arg0)",
+			"fabric": "get(ServerCommandSource arg0)"
+		},
+		{
+			"forge": "posPattern()",
+			"fabric": "rawPos()"
+		},
+		{
+			"forge": "compiledPos()",
+			"fabric": "pos()"
+		}
+	]
+}

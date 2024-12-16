@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.item.ClampedItemPropertyFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.item.ClampedItemPropertyFunction",
+			"fabric": "net.minecraft.client.item.ClampedModelPredicateProvider"
+		},
+		{
+			"forge": "call(ItemStack arg0, ClientLevel arg1, LivingEntity arg2, int arg3)",
+			"fabric": "call(ItemStack arg0, ClientWorld arg1, LivingEntity arg2, int arg3)"
+		},
+		{
+			"forge": "call(ItemStack arg0, ClientLevel arg1, LivingEntity arg2, int arg3)",
+			"fabric": "call(ItemStack arg0, ClientWorld arg1, LivingEntity arg2, int arg3)"
+		},
+		{
+			"forge": "unclampedCall(ItemStack arg0, ClientLevel arg1, LivingEntity arg2, int arg3)",
+			"fabric": "unclampedCall(ItemStack stack, ClientWorld world, LivingEntity entity, int seed)"
+		}
+	]
+}

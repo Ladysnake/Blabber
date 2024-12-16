@@ -1,0 +1,181 @@
+{
+	"title": "net.minecraft.client.gui.components.CommandSuggestions",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.CommandSuggestions",
+			"fabric": "net.minecraft.client.gui.screen.ChatInputSuggestor"
+		},
+		{
+			"forge": "WHITESPACE_PATTERN",
+			"fabric": "WHITESPACE_PATTERN"
+		},
+		{
+			"forge": "WHITESPACE_PATTERN",
+			"fabric": "WHITESPACE_PATTERN"
+		},
+		{
+			"forge": "UNPARSED_STYLE",
+			"fabric": "ERROR_STYLE"
+		},
+		{
+			"forge": "LITERAL_STYLE",
+			"fabric": "INFO_STYLE"
+		},
+		{
+			"forge": "ARGUMENT_STYLES",
+			"fabric": "HIGHLIGHT_STYLES"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "screen",
+			"fabric": "owner"
+		},
+		{
+			"forge": "input",
+			"fabric": "textField"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "commandsOnly",
+			"fabric": "slashOptional"
+		},
+		{
+			"forge": "onlyShowIfCursorPastError",
+			"fabric": "suggestingWhenEmpty"
+		},
+		{
+			"forge": "lineStartOffset",
+			"fabric": "inWindowIndexOffset"
+		},
+		{
+			"forge": "suggestionLineLimit",
+			"fabric": "maxSuggestionSize"
+		},
+		{
+			"forge": "anchorToBottom",
+			"fabric": "chatScreenSized"
+		},
+		{
+			"forge": "fillColor",
+			"fabric": "color"
+		},
+		{
+			"forge": "commandUsage",
+			"fabric": "messages"
+		},
+		{
+			"forge": "commandUsagePosition",
+			"fabric": "x"
+		},
+		{
+			"forge": "commandUsageWidth",
+			"fabric": "width"
+		},
+		{
+			"forge": "currentParse",
+			"fabric": "parse"
+		},
+		{
+			"forge": "pendingSuggestions",
+			"fabric": "pendingSuggestions"
+		},
+		{
+			"forge": "suggestions",
+			"fabric": "window"
+		},
+		{
+			"forge": "allowSuggestions",
+			"fabric": "windowActive"
+		},
+		{
+			"forge": "keepSuggestions",
+			"fabric": "completingSuggestions"
+		},
+		{
+			"forge": "setAllowSuggestions(boolean arg0)",
+			"fabric": "setWindowActive(boolean windowActive)"
+		},
+		{
+			"forge": "setAllowSuggestions(boolean arg0)",
+			"fabric": "setWindowActive(boolean windowActive)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int keyCode, int scanCode, int modifiers)"
+		},
+		{
+			"forge": "mouseScrolled(double arg0)",
+			"fabric": "mouseScrolled(double amount)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double mouseX, double mouseY, int button)"
+		},
+		{
+			"forge": "showSuggestions(boolean arg0)",
+			"fabric": "show(boolean narrateFirstSuggestion)"
+		},
+		{
+			"forge": "hide()",
+			"fabric": "clearWindow()"
+		},
+		{
+			"forge": "sortSuggestions(com.mojang.brigadier.suggestion.Suggestions arg0)",
+			"fabric": "sortSuggestions(com.mojang.brigadier.suggestion.Suggestions suggestions)"
+		},
+		{
+			"forge": "updateCommandInfo()",
+			"fabric": "refresh()"
+		},
+		{
+			"forge": "getLastWordIndex(String arg0)",
+			"fabric": "getStartOfCurrentWord(String input)"
+		},
+		{
+			"forge": "getExceptionMessage(com.mojang.brigadier.exceptions.CommandSyntaxException arg0)",
+			"fabric": "formatException(com.mojang.brigadier.exceptions.CommandSyntaxException exception)"
+		},
+		{
+			"forge": "updateUsageInfo()",
+			"fabric": "showCommandSuggestions()"
+		},
+		{
+			"forge": "fillNodeUsage(ChatFormatting arg0)",
+			"fabric": "showUsages(Formatting formatting)"
+		},
+		{
+			"forge": "formatChat(String arg0, int arg1)",
+			"fabric": "provideRenderText(String original, int firstCharacterIndex)"
+		},
+		{
+			"forge": "calculateSuggestionSuffix(String arg0, String arg1)",
+			"fabric": "getSuggestionSuffix(String original, String suggestion)"
+		},
+		{
+			"forge": "formatText(com.mojang.brigadier.ParseResults<SharedSuggestionProvider> arg0, String arg1, int arg2)",
+			"fabric": "highlight(com.mojang.brigadier.ParseResults<CommandSource> parse, String original, int firstCharacterIndex)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "render(DrawContext context, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "renderSuggestions(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "tryRenderWindow(DrawContext context, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "renderUsage(GuiGraphics arg0)",
+			"fabric": "renderMessages(DrawContext context)"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarration()"
+		}
+	]
+}

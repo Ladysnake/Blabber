@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootTable",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootTable",
+			"fabric": "net.minecraft.loot.LootTable"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "DEFAULT_PARAM_SET",
+			"fabric": "GENERIC"
+		},
+		{
+			"forge": "paramSet",
+			"fabric": "type"
+		},
+		{
+			"forge": "randomSequence",
+			"fabric": "randomSequenceId"
+		},
+		{
+			"forge": "pools",
+			"fabric": "pools"
+		},
+		{
+			"forge": "functions",
+			"fabric": "functions"
+		},
+		{
+			"forge": "compositeFunction",
+			"fabric": "combinedFunction"
+		},
+		{
+			"forge": "createStackSplitter(ServerLevel arg0, Consumer<ItemStack> arg1)",
+			"fabric": "processStacks(ServerWorld world, Consumer<ItemStack> consumer)"
+		},
+		{
+			"forge": "createStackSplitter(ServerLevel arg0, Consumer<ItemStack> arg1)",
+			"fabric": "processStacks(ServerWorld world, Consumer<ItemStack> consumer)"
+		},
+		{
+			"forge": "getRandomItemsRaw(LootParams arg0, Consumer<ItemStack> arg1)",
+			"fabric": "generateUnprocessedLoot(LootContextParameterSet parameters, Consumer<ItemStack> lootConsumer)"
+		},
+		{
+			"forge": "getRandomItemsRaw(LootContext arg0, Consumer<ItemStack> arg1)",
+			"fabric": "generateUnprocessedLoot(LootContext context, Consumer<ItemStack> lootConsumer)"
+		},
+		{
+			"forge": "getRandomItems(LootParams arg0, long arg1, Consumer<ItemStack> arg2)",
+			"fabric": "generateLoot(LootContextParameterSet parameters, long seed, Consumer<ItemStack> lootConsumer)"
+		},
+		{
+			"forge": "getRandomItems(LootParams arg0, Consumer<ItemStack> arg1)",
+			"fabric": "generateLoot(LootContextParameterSet parameters, Consumer<ItemStack> lootConsumer)"
+		},
+		{
+			"forge": "getRandomItems(LootContext arg0, Consumer<ItemStack> arg1)",
+			"fabric": "generateLoot(LootContext context, Consumer<ItemStack> lootConsumer)"
+		},
+		{
+			"forge": "getRandomItems(LootParams arg0, long arg1)",
+			"fabric": "generateLoot(LootContextParameterSet parameters, long seed)"
+		},
+		{
+			"forge": "getRandomItems(LootParams arg0)",
+			"fabric": "generateLoot(LootContextParameterSet parameters)"
+		},
+		{
+			"forge": "getRandomItems(LootContext arg0)",
+			"fabric": "generateLoot(LootContext context)"
+		},
+		{
+			"forge": "getParamSet()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "validate(ValidationContext arg0)",
+			"fabric": "validate(LootTableReporter reporter)"
+		},
+		{
+			"forge": "fill(Container arg0, LootParams arg1, long arg2)",
+			"fabric": "supplyInventory(Inventory inventory, LootContextParameterSet parameters, long seed)"
+		},
+		{
+			"forge": "shuffleAndSplitItems(it.unimi.dsi.fastutil.objects.ObjectArrayList<ItemStack> arg0, int arg1, RandomSource arg2)",
+			"fabric": "shuffle(it.unimi.dsi.fastutil.objects.ObjectArrayList<ItemStack> drops, int freeSlots, Random random)"
+		},
+		{
+			"forge": "getAvailableSlots(Container arg0, RandomSource arg1)",
+			"fabric": "getFreeSlots(Inventory inventory, Random random)"
+		},
+		{
+			"forge": "lootTable()",
+			"fabric": "builder()"
+		}
+	]
+}

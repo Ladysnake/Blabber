@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.social.PlayerEntry$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.social.PlayerEntry$1",
+			"fabric": "net.minecraft.client.gui.screen.multiplayer.SocialInteractionsPlayerListEntry$1"
+		},
+		{
+			"forge": "createNarrationMessage()",
+			"fabric": "getNarrationMessage()"
+		},
+		{
+			"forge": "createNarrationMessage()",
+			"fabric": "getNarrationMessage()"
+		}
+	]
+}

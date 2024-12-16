@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.player.ProfilePublicKey$Data",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.player.ProfilePublicKey$Data",
+			"fabric": "net.minecraft.network.encryption.PlayerPublicKey$PublicKeyData"
+		},
+		{
+			"forge": "expiresAt",
+			"fabric": "expiresAt"
+		},
+		{
+			"forge": "expiresAt",
+			"fabric": "expiresAt"
+		},
+		{
+			"forge": "key",
+			"fabric": "key"
+		},
+		{
+			"forge": "keySignature",
+			"fabric": "keySignature"
+		},
+		{
+			"forge": "MAX_KEY_SIGNATURE_SIZE",
+			"fabric": "KEY_SIGNATURE_MAX_SIZE"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf buf)"
+		},
+		{
+			"forge": "validateSignature(SignatureValidator arg0, UUID arg1)",
+			"fabric": "verifyKey(SignatureVerifier servicesSignatureVerifier, UUID playerUuid)"
+		},
+		{
+			"forge": "signedPayload(UUID arg0)",
+			"fabric": "toSerializedString(UUID playerUuid)"
+		},
+		{
+			"forge": "hasExpired()",
+			"fabric": "isExpired()"
+		},
+		{
+			"forge": "hasExpired(Duration arg0)",
+			"fabric": "isExpired(Duration gracePeriod)"
+		},
+		{
+			"forge": "expiresAt()",
+			"fabric": "expiresAt()"
+		},
+		{
+			"forge": "key()",
+			"fabric": "key()"
+		},
+		{
+			"forge": "keySignature()",
+			"fabric": "keySignature()"
+		}
+	]
+}

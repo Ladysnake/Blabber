@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.core.WritableRegistry",
+	"items": [
+		{
+			"forge": "net.minecraft.core.WritableRegistry",
+			"fabric": "net.minecraft.registry.MutableRegistry"
+		},
+		{
+			"forge": "registerMapping(int arg0, ResourceKey<T> arg1, T arg2, com.mojang.serialization.Lifecycle arg3)",
+			"fabric": "set(int rawId, RegistryKey<T> key, T value, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "registerMapping(int arg0, ResourceKey<T> arg1, T arg2, com.mojang.serialization.Lifecycle arg3)",
+			"fabric": "set(int rawId, RegistryKey<T> key, T value, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "register(ResourceKey<T> arg0, T arg1, com.mojang.serialization.Lifecycle arg2)",
+			"fabric": "add(RegistryKey<T> key, T entry, com.mojang.serialization.Lifecycle lifecycle)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "createRegistrationLookup()",
+			"fabric": "createMutableEntryLookup()"
+		}
+	]
+}

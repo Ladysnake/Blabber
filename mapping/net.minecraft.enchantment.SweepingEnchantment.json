@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.item.enchantment.SweepingEdgeEnchantment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.SweepingEdgeEnchantment",
+			"fabric": "net.minecraft.enchantment.SweepingEnchantment"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMinCost(int arg0)",
+			"fabric": "getMinPower(int arg0)"
+		},
+		{
+			"forge": "getMaxCost(int arg0)",
+			"fabric": "getMaxPower(int arg0)"
+		},
+		{
+			"forge": "getMaxLevel()",
+			"fabric": "getMaxLevel()"
+		},
+		{
+			"forge": "getSweepingDamageRatio(int arg0)",
+			"fabric": "getMultiplier(int level)"
+		}
+	]
+}

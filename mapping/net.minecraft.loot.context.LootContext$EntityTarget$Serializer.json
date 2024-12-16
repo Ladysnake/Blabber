@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootContext$EntityTarget$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootContext$EntityTarget$Serializer",
+			"fabric": "net.minecraft.loot.context.LootContext$EntityTarget$Serializer"
+		},
+		{
+			"forge": "write(com.google.gson.stream.JsonWriter arg0, LootContext$EntityTarget arg1)",
+			"fabric": "write(com.google.gson.stream.JsonWriter arg0, LootContext$EntityTarget arg1)"
+		},
+		{
+			"forge": "write(com.google.gson.stream.JsonWriter arg0, LootContext$EntityTarget arg1)",
+			"fabric": "write(com.google.gson.stream.JsonWriter arg0, LootContext$EntityTarget arg1)"
+		},
+		{
+			"forge": "read(com.google.gson.stream.JsonReader arg0)",
+			"fabric": "read(com.google.gson.stream.JsonReader arg0)"
+		}
+	]
+}

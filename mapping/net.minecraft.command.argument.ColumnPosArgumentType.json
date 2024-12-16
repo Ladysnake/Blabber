@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.arguments.coordinates.ColumnPosArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.coordinates.ColumnPosArgument",
+			"fabric": "net.minecraft.command.argument.ColumnPosArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_NOT_COMPLETE",
+			"fabric": "INCOMPLETE_EXCEPTION"
+		},
+		{
+			"forge": "columnPos()",
+			"fabric": "columnPos()"
+		},
+		{
+			"forge": "columnPos()",
+			"fabric": "columnPos()"
+		},
+		{
+			"forge": "getColumnPos(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getColumnPos(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		}
+	]
+}

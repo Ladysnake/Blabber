@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.ConfirmExperimentalFeaturesScreen$DetailsScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.ConfirmExperimentalFeaturesScreen$DetailsScreen",
+			"fabric": "net.minecraft.client.gui.screen.pack.ExperimentalWarningScreen$DetailsScreen"
+		},
+		{
+			"forge": "packList",
+			"fabric": "packList"
+		},
+		{
+			"forge": "packList",
+			"fabric": "packList"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

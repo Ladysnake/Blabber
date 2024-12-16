@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix",
+			"fabric": "net.minecraft.datafixer.fix.BedBlockEntityFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fix(com.mojang.datafixers.types.Type<?> level, com.mojang.datafixers.types.templates.List$ListType<TE> blockEntities)"
+		},
+		{
+			"forge": "cap(com.mojang.datafixers.types.Type<?> arg0, com.mojang.datafixers.types.templates.List$ListType<TE> arg1)",
+			"fabric": "fix(com.mojang.datafixers.types.Type<?> level, com.mojang.datafixers.types.templates.List$ListType<TE> blockEntities)"
+		}
+	]
+}

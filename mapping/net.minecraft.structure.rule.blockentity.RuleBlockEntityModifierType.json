@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.RuleBlockEntityModifierType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.RuleBlockEntityModifierType",
+			"fabric": "net.minecraft.structure.rule.blockentity.RuleBlockEntityModifierType"
+		},
+		{
+			"forge": "CLEAR",
+			"fabric": "CLEAR"
+		},
+		{
+			"forge": "CLEAR",
+			"fabric": "CLEAR"
+		},
+		{
+			"forge": "PASSTHROUGH",
+			"fabric": "PASSTHROUGH"
+		},
+		{
+			"forge": "APPEND_STATIC",
+			"fabric": "APPEND_STATIC"
+		},
+		{
+			"forge": "APPEND_LOOT",
+			"fabric": "APPEND_LOOT"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		}
+	]
+}

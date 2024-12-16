@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.phys.shapes.CubePointRange",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.CubePointRange",
+			"fabric": "net.minecraft.util.shape.FractionalDoubleList"
+		},
+		{
+			"forge": "parts",
+			"fabric": "sectionCount"
+		},
+		{
+			"forge": "parts",
+			"fabric": "sectionCount"
+		},
+		{
+			"forge": "getDouble(int arg0)",
+			"fabric": "getDouble(int position)"
+		},
+		{
+			"forge": "getDouble(int arg0)",
+			"fabric": "getDouble(int position)"
+		}
+	]
+}

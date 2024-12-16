@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.ConnectionProtocol$ProtocolBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.network.ConnectionProtocol$ProtocolBuilder",
+			"fabric": "net.minecraft.network.NetworkState$PacketHandlerInitializer"
+		},
+		{
+			"forge": "flows",
+			"fabric": "packetHandlers"
+		},
+		{
+			"forge": "flows",
+			"fabric": "packetHandlers"
+		},
+		{
+			"forge": "addFlow(PacketFlow arg0, ConnectionProtocol$PacketSet<T> arg1)",
+			"fabric": "setup(NetworkSide side, NetworkState$PacketHandler<T> handler)"
+		},
+		{
+			"forge": "addFlow(PacketFlow arg0, ConnectionProtocol$PacketSet<T> arg1)",
+			"fabric": "setup(NetworkSide side, NetworkState$PacketHandler<T> handler)"
+		}
+	]
+}

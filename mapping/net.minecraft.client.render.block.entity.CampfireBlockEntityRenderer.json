@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.CampfireRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.CampfireRenderer",
+			"fabric": "net.minecraft.client.render.block.entity.CampfireBlockEntityRenderer"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "SCALE"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "SCALE"
+		},
+		{
+			"forge": "itemRenderer",
+			"fabric": "itemRenderer"
+		},
+		{
+			"forge": "render(CampfireBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(CampfireBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "render(CampfireBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(CampfireBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		}
+	]
+}

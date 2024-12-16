@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.blaze3d.FieldsAreNonnullByDefault",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.FieldsAreNonnullByDefault",
+			"fabric": "net.minecraft.util.annotation.ClientFieldsAreNonnullByDefault"
+		}
+	]
+}

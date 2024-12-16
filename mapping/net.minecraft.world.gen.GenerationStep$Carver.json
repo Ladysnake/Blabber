@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.GenerationStep$Carving",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.GenerationStep$Carving",
+			"fabric": "net.minecraft.world.gen.GenerationStep$Carver"
+		},
+		{
+			"forge": "AIR",
+			"fabric": "AIR"
+		},
+		{
+			"forge": "AIR",
+			"fabric": "AIR"
+		},
+		{
+			"forge": "LIQUID",
+			"fabric": "LIQUID"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

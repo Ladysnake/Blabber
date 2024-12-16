@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.packs.resources.FallbackResourceManager$LeakedResourceWarningInputStream",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.FallbackResourceManager$LeakedResourceWarningInputStream",
+			"fabric": "net.minecraft.resource.NamespaceResourceManager$DebugInputStream"
+		},
+		{
+			"forge": "message",
+			"fabric": "leakMessage"
+		},
+		{
+			"forge": "message",
+			"fabric": "leakMessage"
+		},
+		{
+			"forge": "closed",
+			"fabric": "closed"
+		}
+	]
+}

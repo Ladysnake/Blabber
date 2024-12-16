@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.WinScreen$CreditsReader",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.WinScreen$CreditsReader",
+			"fabric": "net.minecraft.client.gui.screen.CreditsScreen$CreditsReader"
+		},
+		{
+			"forge": "read(Reader arg0)",
+			"fabric": "read(Reader reader)"
+		},
+		{
+			"forge": "read(Reader arg0)",
+			"fabric": "read(Reader reader)"
+		}
+	]
+}

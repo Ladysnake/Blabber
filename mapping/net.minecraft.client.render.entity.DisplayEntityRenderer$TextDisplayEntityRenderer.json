@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.entity.DisplayRenderer$TextDisplayRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.DisplayRenderer$TextDisplayRenderer",
+			"fabric": "net.minecraft.client.render.entity.DisplayEntityRenderer$TextDisplayEntityRenderer"
+		},
+		{
+			"forge": "font",
+			"fabric": "displayTextRenderer"
+		},
+		{
+			"forge": "font",
+			"fabric": "displayTextRenderer"
+		},
+		{
+			"forge": "splitLines(Component arg0, int arg1)",
+			"fabric": "getLines(Text text, int width)"
+		},
+		{
+			"forge": "splitLines(Component arg0, int arg1)",
+			"fabric": "getLines(Text text, int width)"
+		},
+		{
+			"forge": "getSubState(Display$TextDisplay arg0)",
+			"fabric": "getData(DisplayEntity$TextDisplayEntity arg0)"
+		},
+		{
+			"forge": "renderInner(Display$TextDisplay arg0, Display$TextDisplay$TextRenderState arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, float arg5)",
+			"fabric": "render(DisplayEntity$TextDisplayEntity arg0, DisplayEntity$TextDisplayEntity$Data arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, float arg5)"
+		}
+	]
+}

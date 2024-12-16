@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.realms.RealmsObjectSelectionList",
+	"items": [
+		{
+			"forge": "net.minecraft.realms.RealmsObjectSelectionList",
+			"fabric": "net.minecraft.client.realms.RealmsObjectSelectionList"
+		},
+		{
+			"forge": "setSelectedItem(int arg0)",
+			"fabric": "setSelectedItem(int index)"
+		},
+		{
+			"forge": "setSelectedItem(int arg0)",
+			"fabric": "setSelectedItem(int index)"
+		},
+		{
+			"forge": "selectItem(int arg0)",
+			"fabric": "setSelected(int index)"
+		},
+		{
+			"forge": "itemClicked(int arg0, int arg1, double arg2, double arg3, int arg4, int arg5)",
+			"fabric": "itemClicked(int cursorY, int selectionIndex, double mouseX, double mouseY, int listWidth, int arg5)"
+		},
+		{
+			"forge": "getMaxPosition()",
+			"fabric": "getMaxPosition()"
+		},
+		{
+			"forge": "getScrollbarPosition()",
+			"fabric": "getScrollbarPositionX()"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		},
+		{
+			"forge": "replaceEntries(Collection<E> arg0)",
+			"fabric": "replaceEntries(Collection<E> arg0)"
+		},
+		{
+			"forge": "getItemCount()",
+			"fabric": "getEntryCount()"
+		},
+		{
+			"forge": "getRowTop(int arg0)",
+			"fabric": "getRowTop(int arg0)"
+		},
+		{
+			"forge": "getRowLeft()",
+			"fabric": "getRowLeft()"
+		},
+		{
+			"forge": "addEntry(E arg0)",
+			"fabric": "addEntry(E arg0)"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		}
+	]
+}

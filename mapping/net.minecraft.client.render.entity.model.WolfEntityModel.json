@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.client.model.WolfModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.WolfModel",
+			"fabric": "net.minecraft.client.render.entity.model.WolfEntityModel"
+		},
+		{
+			"forge": "REAL_HEAD",
+			"fabric": "REAL_HEAD"
+		},
+		{
+			"forge": "REAL_HEAD",
+			"fabric": "REAL_HEAD"
+		},
+		{
+			"forge": "UPPER_BODY",
+			"fabric": "UPPER_BODY"
+		},
+		{
+			"forge": "REAL_TAIL",
+			"fabric": "REAL_TAIL"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "realHead",
+			"fabric": "realHead"
+		},
+		{
+			"forge": "body",
+			"fabric": "torso"
+		},
+		{
+			"forge": "rightHindLeg",
+			"fabric": "rightHindLeg"
+		},
+		{
+			"forge": "leftHindLeg",
+			"fabric": "leftHindLeg"
+		},
+		{
+			"forge": "rightFrontLeg",
+			"fabric": "rightFrontLeg"
+		},
+		{
+			"forge": "leftFrontLeg",
+			"fabric": "leftFrontLeg"
+		},
+		{
+			"forge": "tail",
+			"fabric": "tail"
+		},
+		{
+			"forge": "realTail",
+			"fabric": "realTail"
+		},
+		{
+			"forge": "upperBody",
+			"fabric": "neck"
+		},
+		{
+			"forge": "LEG_SIZE",
+			"fabric": "field_32580"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "headParts()",
+			"fabric": "getHeadParts()"
+		},
+		{
+			"forge": "bodyParts()",
+			"fabric": "getBodyParts()"
+		},
+		{
+			"forge": "prepareMobModel(T arg0, float arg1, float arg2, float arg3)",
+			"fabric": "animateModel(T arg0, float arg1, float arg2, float arg3)"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

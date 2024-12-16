@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.saveddata.maps.MapIndex",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.saveddata.maps.MapIndex",
+			"fabric": "net.minecraft.world.IdCountsState"
+		},
+		{
+			"forge": "FILE_NAME",
+			"fabric": "IDCOUNTS_KEY"
+		},
+		{
+			"forge": "FILE_NAME",
+			"fabric": "IDCOUNTS_KEY"
+		},
+		{
+			"forge": "usedAuxIds",
+			"fabric": "idCounts"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getFreeAuxValueForMap()",
+			"fabric": "getNextMapId()"
+		}
+	]
+}

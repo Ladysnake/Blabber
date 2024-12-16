@@ -1,0 +1,149 @@
+{
+	"title": "com.mojang.blaze3d.pipeline.RenderTarget",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.pipeline.RenderTarget",
+			"fabric": "net.minecraft.client.gl.Framebuffer"
+		},
+		{
+			"forge": "RED_CHANNEL",
+			"fabric": "field_31901"
+		},
+		{
+			"forge": "RED_CHANNEL",
+			"fabric": "field_31901"
+		},
+		{
+			"forge": "GREEN_CHANNEL",
+			"fabric": "field_31902"
+		},
+		{
+			"forge": "BLUE_CHANNEL",
+			"fabric": "field_31903"
+		},
+		{
+			"forge": "ALPHA_CHANNEL",
+			"fabric": "field_31904"
+		},
+		{
+			"forge": "width",
+			"fabric": "textureWidth"
+		},
+		{
+			"forge": "height",
+			"fabric": "textureHeight"
+		},
+		{
+			"forge": "viewWidth",
+			"fabric": "viewportWidth"
+		},
+		{
+			"forge": "viewHeight",
+			"fabric": "viewportHeight"
+		},
+		{
+			"forge": "useDepth",
+			"fabric": "useDepthAttachment"
+		},
+		{
+			"forge": "frameBufferId",
+			"fabric": "fbo"
+		},
+		{
+			"forge": "colorTextureId",
+			"fabric": "colorAttachment"
+		},
+		{
+			"forge": "depthBufferId",
+			"fabric": "depthAttachment"
+		},
+		{
+			"forge": "clearChannels",
+			"fabric": "clearColor"
+		},
+		{
+			"forge": "filterMode",
+			"fabric": "texFilter"
+		},
+		{
+			"forge": "resize(int arg0, int arg1, boolean arg2)",
+			"fabric": "resize(int width, int height, boolean getError)"
+		},
+		{
+			"forge": "resize(int arg0, int arg1, boolean arg2)",
+			"fabric": "resize(int width, int height, boolean getError)"
+		},
+		{
+			"forge": "_resize(int arg0, int arg1, boolean arg2)",
+			"fabric": "resizeInternal(int width, int height, boolean getError)"
+		},
+		{
+			"forge": "destroyBuffers()",
+			"fabric": "delete()"
+		},
+		{
+			"forge": "copyDepthFrom(RenderTarget arg0)",
+			"fabric": "copyDepthFrom(Framebuffer framebuffer)"
+		},
+		{
+			"forge": "createBuffers(int arg0, int arg1, boolean arg2)",
+			"fabric": "initFbo(int width, int height, boolean getError)"
+		},
+		{
+			"forge": "setFilterMode(int arg0)",
+			"fabric": "setTexFilter(int texFilter)"
+		},
+		{
+			"forge": "checkStatus()",
+			"fabric": "checkFramebufferStatus()"
+		},
+		{
+			"forge": "bindRead()",
+			"fabric": "beginRead()"
+		},
+		{
+			"forge": "unbindRead()",
+			"fabric": "endRead()"
+		},
+		{
+			"forge": "bindWrite(boolean arg0)",
+			"fabric": "beginWrite(boolean setViewport)"
+		},
+		{
+			"forge": "_bindWrite(boolean arg0)",
+			"fabric": "bind(boolean updateViewport)"
+		},
+		{
+			"forge": "unbindWrite()",
+			"fabric": "endWrite()"
+		},
+		{
+			"forge": "setClearColor(float arg0, float arg1, float arg2, float arg3)",
+			"fabric": "setClearColor(float r, float g, float b, float a)"
+		},
+		{
+			"forge": "blitToScreen(int arg0, int arg1)",
+			"fabric": "draw(int width, int height)"
+		},
+		{
+			"forge": "blitToScreen(int arg0, int arg1, boolean arg2)",
+			"fabric": "draw(int width, int height, boolean disableBlend)"
+		},
+		{
+			"forge": "_blitToScreen(int arg0, int arg1, boolean arg2)",
+			"fabric": "drawInternal(int width, int height, boolean disableBlend)"
+		},
+		{
+			"forge": "clear(boolean arg0)",
+			"fabric": "clear(boolean getError)"
+		},
+		{
+			"forge": "getColorTextureId()",
+			"fabric": "getColorAttachment()"
+		},
+		{
+			"forge": "getDepthTextureId()",
+			"fabric": "getDepthAttachment()"
+		}
+	]
+}

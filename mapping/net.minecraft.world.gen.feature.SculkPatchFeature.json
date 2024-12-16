@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
+			"fabric": "net.minecraft.world.gen.feature.SculkPatchFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<SculkPatchConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SculkPatchFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<SculkPatchConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SculkPatchFeatureConfig> arg0)"
+		},
+		{
+			"forge": "canSpreadFrom(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "canGenerate(WorldAccess world, BlockPos pos)"
+		}
+	]
+}

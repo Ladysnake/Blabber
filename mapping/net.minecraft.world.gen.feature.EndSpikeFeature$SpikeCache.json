@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.SpikeFeature$SpikeCacheLoader",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.SpikeFeature$SpikeCacheLoader",
+			"fabric": "net.minecraft.world.gen.feature.EndSpikeFeature$SpikeCache"
+		},
+		{
+			"forge": "load(Long arg0)",
+			"fabric": "load(Long arg0)"
+		},
+		{
+			"forge": "load(Long arg0)",
+			"fabric": "load(Long arg0)"
+		}
+	]
+}

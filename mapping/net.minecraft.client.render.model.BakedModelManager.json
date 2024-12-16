@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.resources.model.ModelManager",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.ModelManager",
+			"fabric": "net.minecraft.client.render.model.BakedModelManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "VANILLA_ATLASES",
+			"fabric": "LAYERS_TO_LOADERS"
+		},
+		{
+			"forge": "bakedRegistry",
+			"fabric": "models"
+		},
+		{
+			"forge": "atlases",
+			"fabric": "atlasManager"
+		},
+		{
+			"forge": "blockModelShaper",
+			"fabric": "blockModelCache"
+		},
+		{
+			"forge": "blockColors",
+			"fabric": "colorMap"
+		},
+		{
+			"forge": "maxMipmapLevels",
+			"fabric": "mipmapLevels"
+		},
+		{
+			"forge": "missingModel",
+			"fabric": "missingModel"
+		},
+		{
+			"forge": "modelGroups",
+			"fabric": "stateLookup"
+		},
+		{
+			"forge": "getModel(ModelResourceLocation arg0)",
+			"fabric": "getModel(ModelIdentifier id)"
+		},
+		{
+			"forge": "getModel(ModelResourceLocation arg0)",
+			"fabric": "getModel(ModelIdentifier id)"
+		},
+		{
+			"forge": "getMissingModel()",
+			"fabric": "getMissingModel()"
+		},
+		{
+			"forge": "getBlockModelShaper()",
+			"fabric": "getBlockModels()"
+		},
+		{
+			"forge": "reload(PreparableReloadListener$PreparationBarrier arg0, ResourceManager arg1, ProfilerFiller arg2, ProfilerFiller arg3, Executor arg4, Executor arg5)",
+			"fabric": "reload(ResourceReloader$Synchronizer arg0, ResourceManager arg1, Profiler arg2, Profiler arg3, Executor arg4, Executor arg5)"
+		},
+		{
+			"forge": "loadBlockModels(ResourceManager arg0, Executor arg1)",
+			"fabric": "reloadModels(ResourceManager resourceManager, Executor executor)"
+		},
+		{
+			"forge": "loadBlockStates(ResourceManager arg0, Executor arg1)",
+			"fabric": "reloadBlockStates(ResourceManager resourceManager, Executor executor)"
+		},
+		{
+			"forge": "loadModels(ProfilerFiller arg0, Map<ResourceLocation, AtlasSet$StitchResult> arg1, ModelBakery arg2)",
+			"fabric": "bake(Profiler profiler, Map<Identifier, SpriteAtlasManager$AtlasPreparation> preparations, ModelLoader modelLoader)"
+		},
+		{
+			"forge": "apply(ModelManager$ReloadState arg0, ProfilerFiller arg1)",
+			"fabric": "upload(BakedModelManager$BakingResult bakingResult, Profiler profiler)"
+		},
+		{
+			"forge": "requiresRender(BlockState arg0, BlockState arg1)",
+			"fabric": "shouldRerender(BlockState from, BlockState to)"
+		},
+		{
+			"forge": "getAtlas(ResourceLocation arg0)",
+			"fabric": "getAtlas(Identifier id)"
+		},
+		{
+			"forge": "updateMaxMipLevel(int arg0)",
+			"fabric": "setMipmapLevels(int mipmapLevels)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.MobType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.MobType",
+			"fabric": "net.minecraft.entity.EntityGroup"
+		},
+		{
+			"forge": "UNDEFINED",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "UNDEFINED",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "UNDEAD",
+			"fabric": "UNDEAD"
+		},
+		{
+			"forge": "ARTHROPOD",
+			"fabric": "ARTHROPOD"
+		},
+		{
+			"forge": "ILLAGER",
+			"fabric": "ILLAGER"
+		},
+		{
+			"forge": "WATER",
+			"fabric": "AQUATIC"
+		}
+	]
+}

@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.client.gui.screens.reporting.ChatSelectionScreen$ChatSelectionList$MessageEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.reporting.ChatSelectionScreen$ChatSelectionList$MessageEntry",
+			"fabric": "net.minecraft.client.gui.screen.report.ChatSelectionScreen$SelectionListWidget$MessageEntry"
+		},
+		{
+			"forge": "CHECKMARK_TEXTURE",
+			"fabric": "CHECKMARK"
+		},
+		{
+			"forge": "CHECKMARK_TEXTURE",
+			"fabric": "CHECKMARK"
+		},
+		{
+			"forge": "CHECKMARK_WIDTH",
+			"fabric": "CHECKMARK_WIDTH"
+		},
+		{
+			"forge": "CHECKMARK_HEIGHT",
+			"fabric": "CHECKMARK_HEIGHT"
+		},
+		{
+			"forge": "INDENT_AMOUNT",
+			"fabric": "CHAT_MESSAGE_LEFT_MARGIN"
+		},
+		{
+			"forge": "TAG_MARGIN_LEFT",
+			"fabric": "INDICATOR_LEFT_MARGIN"
+		},
+		{
+			"forge": "chatId",
+			"fabric": "index"
+		},
+		{
+			"forge": "text",
+			"fabric": "truncatedContent"
+		},
+		{
+			"forge": "narration",
+			"fabric": "narration"
+		},
+		{
+			"forge": "hoverText",
+			"fabric": "fullContent"
+		},
+		{
+			"forge": "tagIcon",
+			"fabric": "indicatorIcon"
+		},
+		{
+			"forge": "tagHoverText",
+			"fabric": "originalContent"
+		},
+		{
+			"forge": "canReport",
+			"fabric": "fromReportedPlayer"
+		},
+		{
+			"forge": "playerMessage",
+			"fabric": "isChatMessage"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "renderTag(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "renderIndicator(DrawContext context, int x, int y, int entryHeight, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "renderSelectedCheckmark(GuiGraphics arg0, int arg1, int arg2, int arg3)",
+			"fabric": "drawCheckmark(DrawContext context, int y, int x, int entryHeight)"
+		},
+		{
+			"forge": "getMaximumTextWidth()",
+			"fabric": "getTextWidth()"
+		},
+		{
+			"forge": "getTextIndent()",
+			"fabric": "getIndent()"
+		},
+		{
+			"forge": "getNarration()",
+			"fabric": "getNarration()"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "isSelected()",
+			"fabric": "isSelected()"
+		},
+		{
+			"forge": "canSelect()",
+			"fabric": "canSelect()"
+		},
+		{
+			"forge": "canReport()",
+			"fabric": "isHighlightedOnHover()"
+		},
+		{
+			"forge": "toggleReport()",
+			"fabric": "toggle()"
+		}
+	]
+}

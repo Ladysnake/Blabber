@@ -1,0 +1,241 @@
+{
+	"title": "net.minecraft.world.entity.monster.Strider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Strider",
+			"fabric": "net.minecraft.entity.passive.StriderEntity"
+		},
+		{
+			"forge": "SUFFOCATING_MODIFIER_UUID",
+			"fabric": "SUFFOCATING_MODIFIER_ID"
+		},
+		{
+			"forge": "SUFFOCATING_MODIFIER_UUID",
+			"fabric": "SUFFOCATING_MODIFIER_ID"
+		},
+		{
+			"forge": "SUFFOCATING_MODIFIER",
+			"fabric": "SUFFOCATING_MODIFIER"
+		},
+		{
+			"forge": "SUFFOCATE_STEERING_MODIFIER",
+			"fabric": "COLD_SADDLED_SPEED"
+		},
+		{
+			"forge": "STEERING_MODIFIER",
+			"fabric": "DEFAULT_SADDLED_SPEED"
+		},
+		{
+			"forge": "FOOD_ITEMS",
+			"fabric": "BREEDING_INGREDIENT"
+		},
+		{
+			"forge": "TEMPT_ITEMS",
+			"fabric": "ATTRACTING_INGREDIENT"
+		},
+		{
+			"forge": "DATA_BOOST_TIME",
+			"fabric": "BOOST_TIME"
+		},
+		{
+			"forge": "DATA_SUFFOCATING",
+			"fabric": "COLD"
+		},
+		{
+			"forge": "DATA_SADDLE_ID",
+			"fabric": "SADDLED"
+		},
+		{
+			"forge": "steering",
+			"fabric": "saddledComponent"
+		},
+		{
+			"forge": "temptGoal",
+			"fabric": "temptGoal"
+		},
+		{
+			"forge": "panicGoal",
+			"fabric": "escapeDangerGoal"
+		},
+		{
+			"forge": "checkStriderSpawnRules(EntityType<Strider> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<StriderEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "checkStriderSpawnRules(EntityType<Strider> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<StriderEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "onSyncedDataUpdated(EntityDataAccessor<?> arg0)",
+			"fabric": "onTrackedDataSet(TrackedData<?> arg0)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "isSaddled()",
+			"fabric": "isSaddled()"
+		},
+		{
+			"forge": "isSaddleable()",
+			"fabric": "canBeSaddled()"
+		},
+		{
+			"forge": "equipSaddle(SoundSource arg0)",
+			"fabric": "saddle(SoundCategory arg0)"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "setSuffocating(boolean arg0)",
+			"fabric": "setCold(boolean cold)"
+		},
+		{
+			"forge": "isSuffocating()",
+			"fabric": "isCold()"
+		},
+		{
+			"forge": "canStandOnFluid(FluidState arg0)",
+			"fabric": "canWalkOnFluid(FluidState arg0)"
+		},
+		{
+			"forge": "getPassengersRidingOffset()",
+			"fabric": "getMountedHeightOffset()"
+		},
+		{
+			"forge": "checkSpawnObstruction(LevelReader arg0)",
+			"fabric": "canSpawn(WorldView arg0)"
+		},
+		{
+			"forge": "getControllingPassenger()",
+			"fabric": "getControllingPassenger()"
+		},
+		{
+			"forge": "getDismountLocationForPassenger(LivingEntity arg0)",
+			"fabric": "updatePassengerForDismount(LivingEntity arg0)"
+		},
+		{
+			"forge": "tickRidden(Player arg0, Vec3 arg1)",
+			"fabric": "tickControlled(PlayerEntity arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "getRiddenInput(Player arg0, Vec3 arg1)",
+			"fabric": "getControlledMovementInput(PlayerEntity arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "getRiddenSpeed(Player arg0)",
+			"fabric": "getSaddledSpeed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "nextStep()",
+			"fabric": "calculateNextStepSoundDistance()"
+		},
+		{
+			"forge": "playStepSound(BlockPos arg0, BlockState arg1)",
+			"fabric": "playStepSound(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "boost()",
+			"fabric": "consumeOnAStickItem()"
+		},
+		{
+			"forge": "checkFallDamage(double arg0, boolean arg1, BlockState arg2, BlockPos arg3)",
+			"fabric": "fall(double arg0, boolean arg1, BlockState arg2, BlockPos arg3)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isPanicking()",
+			"fabric": "isEscapingDanger()"
+		},
+		{
+			"forge": "isBeingTempted()",
+			"fabric": "isBeingTempted()"
+		},
+		{
+			"forge": "shouldPassengersInheritMalus()",
+			"fabric": "movesIndependently()"
+		},
+		{
+			"forge": "floatStrider()",
+			"fabric": "updateFloating()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createStriderAttributes()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "canAddPassenger(Entity arg0)",
+			"fabric": "canAddPassenger(Entity arg0)"
+		},
+		{
+			"forge": "isSensitiveToWater()",
+			"fabric": "hurtByWater()"
+		},
+		{
+			"forge": "isOnFire()",
+			"fabric": "isOnFire()"
+		},
+		{
+			"forge": "createNavigation(Level arg0)",
+			"fabric": "createNavigation(World arg0)"
+		},
+		{
+			"forge": "getWalkTargetValue(BlockPos arg0, LevelReader arg1)",
+			"fabric": "getPathfindingFavor(BlockPos arg0, WorldView arg1)"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "isFood(ItemStack arg0)",
+			"fabric": "isBreedingItem(ItemStack arg0)"
+		},
+		{
+			"forge": "dropEquipment()",
+			"fabric": "dropInventory()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "getLeashOffset()",
+			"fabric": "getLeashOffset()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "spawnJockey(ServerLevelAccessor arg0, DifficultyInstance arg1, Mob arg2, SpawnGroupData arg3)",
+			"fabric": "initializeRider(ServerWorldAccess world, LocalDifficulty difficulty, MobEntity rider, EntityData entityData)"
+		}
+	]
+}

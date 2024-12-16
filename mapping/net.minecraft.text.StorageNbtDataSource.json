@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.network.chat.contents.StorageDataSource",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.contents.StorageDataSource",
+			"fabric": "net.minecraft.text.StorageNbtDataSource"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "getData(CommandSourceStack arg0)",
+			"fabric": "get(ServerCommandSource arg0)"
+		},
+		{
+			"forge": "getData(CommandSourceStack arg0)",
+			"fabric": "get(ServerCommandSource arg0)"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		}
+	]
+}

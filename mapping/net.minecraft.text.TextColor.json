@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.chat.TextColor",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.TextColor",
+			"fabric": "net.minecraft.text.TextColor"
+		},
+		{
+			"forge": "CUSTOM_COLOR_PREFIX",
+			"fabric": "RGB_PREFIX"
+		},
+		{
+			"forge": "CUSTOM_COLOR_PREFIX",
+			"fabric": "RGB_PREFIX"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "LEGACY_FORMAT_TO_COLOR",
+			"fabric": "FORMATTING_TO_COLOR"
+		},
+		{
+			"forge": "NAMED_COLORS",
+			"fabric": "BY_NAME"
+		},
+		{
+			"forge": "value",
+			"fabric": "rgb"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getRgb()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getRgb()"
+		},
+		{
+			"forge": "serialize()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "formatValue()",
+			"fabric": "getHexCode()"
+		},
+		{
+			"forge": "fromLegacyFormat(ChatFormatting arg0)",
+			"fabric": "fromFormatting(Formatting formatting)"
+		},
+		{
+			"forge": "fromRgb(int arg0)",
+			"fabric": "fromRgb(int rgb)"
+		},
+		{
+			"forge": "parseColor(String arg0)",
+			"fabric": "parse(String name)"
+		}
+	]
+}

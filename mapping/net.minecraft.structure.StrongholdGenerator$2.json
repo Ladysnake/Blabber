@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces$2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces$2",
+			"fabric": "net.minecraft.structure.StrongholdGenerator$2"
+		},
+		{
+			"forge": "doPlace(int arg0)",
+			"fabric": "canGenerate(int arg0)"
+		},
+		{
+			"forge": "doPlace(int arg0)",
+			"fabric": "canGenerate(int arg0)"
+		}
+	]
+}

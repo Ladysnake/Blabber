@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.monster.Enemy",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Enemy",
+			"fabric": "net.minecraft.entity.mob.Monster"
+		},
+		{
+			"forge": "XP_REWARD_NONE",
+			"fabric": "ZERO_XP"
+		},
+		{
+			"forge": "XP_REWARD_NONE",
+			"fabric": "ZERO_XP"
+		},
+		{
+			"forge": "XP_REWARD_SMALL",
+			"fabric": "SMALL_MONSTER_XP"
+		},
+		{
+			"forge": "XP_REWARD_MEDIUM",
+			"fabric": "NORMAL_MONSTER_XP"
+		},
+		{
+			"forge": "XP_REWARD_LARGE",
+			"fabric": "STRONG_MONSTER_XP"
+		},
+		{
+			"forge": "XP_REWARD_HUGE",
+			"fabric": "STRONGER_MONSTER_XP"
+		},
+		{
+			"forge": "XP_REWARD_BOSS",
+			"fabric": "WITHER_XP"
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType",
+			"fabric": "net.minecraft.world.gen.foliage.FoliagePlacerType"
+		},
+		{
+			"forge": "BLOB_FOLIAGE_PLACER",
+			"fabric": "BLOB_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "BLOB_FOLIAGE_PLACER",
+			"fabric": "BLOB_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "SPRUCE_FOLIAGE_PLACER",
+			"fabric": "SPRUCE_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "PINE_FOLIAGE_PLACER",
+			"fabric": "PINE_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "ACACIA_FOLIAGE_PLACER",
+			"fabric": "ACACIA_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "BUSH_FOLIAGE_PLACER",
+			"fabric": "BUSH_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "FANCY_FOLIAGE_PLACER",
+			"fabric": "FANCY_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "MEGA_JUNGLE_FOLIAGE_PLACER",
+			"fabric": "JUNGLE_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "MEGA_PINE_FOLIAGE_PLACER",
+			"fabric": "MEGA_PINE_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "DARK_OAK_FOLIAGE_PLACER",
+			"fabric": "DARK_OAK_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "RANDOM_SPREAD_FOLIAGE_PLACER",
+			"fabric": "RANDOM_SPREAD_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "CHERRY_FOLIAGE_PLACER",
+			"fabric": "CHERRY_FOLIAGE_PLACER"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		}
+	]
+}

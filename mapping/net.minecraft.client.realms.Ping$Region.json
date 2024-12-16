@@ -1,0 +1,57 @@
+{
+	"title": "com.mojang.realmsclient.client.Ping$Region",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.client.Ping$Region",
+			"fabric": "net.minecraft.client.realms.Ping$Region"
+		},
+		{
+			"forge": "US_EAST_1",
+			"fabric": "US_EAST_1"
+		},
+		{
+			"forge": "US_EAST_1",
+			"fabric": "US_EAST_1"
+		},
+		{
+			"forge": "US_WEST_2",
+			"fabric": "US_WEST_2"
+		},
+		{
+			"forge": "US_WEST_1",
+			"fabric": "US_WEST_1"
+		},
+		{
+			"forge": "EU_WEST_1",
+			"fabric": "EU_WEST_1"
+		},
+		{
+			"forge": "AP_SOUTHEAST_1",
+			"fabric": "AP_SOUTHEAST_1"
+		},
+		{
+			"forge": "AP_SOUTHEAST_2",
+			"fabric": "AP_SOUTHEAST_2"
+		},
+		{
+			"forge": "AP_NORTHEAST_1",
+			"fabric": "AP_NORTHEAST_1"
+		},
+		{
+			"forge": "SA_EAST_1",
+			"fabric": "SA_EAST_1"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "endpoint",
+			"fabric": "endpoint"
+		}
+	]
+}

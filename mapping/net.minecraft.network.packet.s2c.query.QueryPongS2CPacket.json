@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.status.ClientboundPongResponsePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.status.ClientboundPongResponsePacket",
+			"fabric": "net.minecraft.network.packet.s2c.query.QueryPongS2CPacket"
+		},
+		{
+			"forge": "time",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "time",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientStatusPacketListener arg0)",
+			"fabric": "apply(ClientQueryPacketListener arg0)"
+		},
+		{
+			"forge": "getTime()",
+			"fabric": "getStartTime()"
+		}
+	]
+}

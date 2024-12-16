@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.model.ArmedModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.ArmedModel",
+			"fabric": "net.minecraft.client.render.entity.model.ModelWithArms"
+		},
+		{
+			"forge": "translateToHand(HumanoidArm arg0, PoseStack arg1)",
+			"fabric": "setArmAngle(Arm arm, MatrixStack matrices)"
+		},
+		{
+			"forge": "translateToHand(HumanoidArm arg0, PoseStack arg1)",
+			"fabric": "setArmAngle(Arm arm, MatrixStack matrices)"
+		}
+	]
+}

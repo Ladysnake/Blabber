@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.CreeperPowerLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.CreeperPowerLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.CreeperChargeFeatureRenderer"
+		},
+		{
+			"forge": "POWER_LOCATION",
+			"fabric": "SKIN"
+		},
+		{
+			"forge": "POWER_LOCATION",
+			"fabric": "SKIN"
+		},
+		{
+			"forge": "model",
+			"fabric": "model"
+		},
+		{
+			"forge": "xOffset(float arg0)",
+			"fabric": "getEnergySwirlX(float arg0)"
+		},
+		{
+			"forge": "xOffset(float arg0)",
+			"fabric": "getEnergySwirlX(float arg0)"
+		},
+		{
+			"forge": "getTextureLocation()",
+			"fabric": "getEnergySwirlTexture()"
+		},
+		{
+			"forge": "model()",
+			"fabric": "getEnergySwirlModel()"
+		}
+	]
+}

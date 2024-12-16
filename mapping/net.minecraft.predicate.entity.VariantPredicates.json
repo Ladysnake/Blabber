@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.advancements.critereon.EntityVariantPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.EntityVariantPredicate",
+			"fabric": "net.minecraft.predicate.entity.VariantPredicates"
+		},
+		{
+			"forge": "VARIANT_KEY",
+			"fabric": "VARIANT_KEY"
+		},
+		{
+			"forge": "VARIANT_KEY",
+			"fabric": "VARIANT_KEY"
+		},
+		{
+			"forge": "variantCodec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "getter",
+			"fabric": "variantGetter"
+		},
+		{
+			"forge": "type",
+			"fabric": "deserializer"
+		},
+		{
+			"forge": "create(Registry<V> arg0, Function<Entity, Optional<V>> arg1)",
+			"fabric": "create(Registry<V> registry, Function<Entity, Optional<V>> variantGetter)"
+		},
+		{
+			"forge": "create(Registry<V> arg0, Function<Entity, Optional<V>> arg1)",
+			"fabric": "create(Registry<V> registry, Function<Entity, Optional<V>> variantGetter)"
+		},
+		{
+			"forge": "create(com.mojang.serialization.Codec<V> arg0, Function<Entity, Optional<V>> arg1)",
+			"fabric": "create(com.mojang.serialization.Codec<V> codec, Function<Entity, Optional<V>> variantGetter)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getDeserializer()"
+		},
+		{
+			"forge": "createPredicate(V arg0)",
+			"fabric": "createPredicate(V variant)"
+		}
+	]
+}

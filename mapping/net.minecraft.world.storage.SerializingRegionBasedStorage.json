@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.SectionStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.SectionStorage",
+			"fabric": "net.minecraft.world.storage.SerializingRegionBasedStorage"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SECTIONS_TAG",
+			"fabric": "SECTIONS_KEY"
+		},
+		{
+			"forge": "worker",
+			"fabric": "worker"
+		},
+		{
+			"forge": "storage",
+			"fabric": "loadedElements"
+		},
+		{
+			"forge": "dirty",
+			"fabric": "unsavedElements"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codecFactory"
+		},
+		{
+			"forge": "factory",
+			"fabric": "factory"
+		},
+		{
+			"forge": "fixerUpper",
+			"fabric": "dataFixer"
+		},
+		{
+			"forge": "type",
+			"fabric": "dataFixTypes"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "dynamicRegistryManager"
+		},
+		{
+			"forge": "levelHeightAccessor",
+			"fabric": "world"
+		},
+		{
+			"forge": "tick(BooleanSupplier arg0)",
+			"fabric": "tick(BooleanSupplier shouldKeepTicking)"
+		},
+		{
+			"forge": "tick(BooleanSupplier arg0)",
+			"fabric": "tick(BooleanSupplier shouldKeepTicking)"
+		},
+		{
+			"forge": "hasWork()",
+			"fabric": "hasUnsavedElements()"
+		},
+		{
+			"forge": "get(long arg0)",
+			"fabric": "getIfLoaded(long pos)"
+		},
+		{
+			"forge": "getOrLoad(long arg0)",
+			"fabric": "get(long pos)"
+		},
+		{
+			"forge": "outsideStoredRange(long arg0)",
+			"fabric": "isPosInvalid(long pos)"
+		},
+		{
+			"forge": "getOrCreate(long arg0)",
+			"fabric": "getOrCreate(long pos)"
+		},
+		{
+			"forge": "readColumn(ChunkPos arg0)",
+			"fabric": "loadDataAt(ChunkPos pos)"
+		},
+		{
+			"forge": "tryRead(ChunkPos arg0)",
+			"fabric": "loadNbt(ChunkPos pos)"
+		},
+		{
+			"forge": "readColumn(ChunkPos arg0, com.mojang.serialization.DynamicOps<T> arg1, T arg2)",
+			"fabric": "update(ChunkPos pos, com.mojang.serialization.DynamicOps<T> ops, T data)"
+		},
+		{
+			"forge": "writeColumn(ChunkPos arg0)",
+			"fabric": "save(ChunkPos pos)"
+		},
+		{
+			"forge": "writeColumn(ChunkPos arg0, com.mojang.serialization.DynamicOps<T> arg1)",
+			"fabric": "serialize(ChunkPos chunkPos, com.mojang.serialization.DynamicOps<T> ops)"
+		},
+		{
+			"forge": "getKey(ChunkPos arg0, int arg1)",
+			"fabric": "chunkSectionPosAsLong(ChunkPos chunkPos, int y)"
+		},
+		{
+			"forge": "onSectionLoad(long arg0)",
+			"fabric": "onLoad(long pos)"
+		},
+		{
+			"forge": "setDirty(long arg0)",
+			"fabric": "onUpdate(long pos)"
+		},
+		{
+			"forge": "getVersion(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "getDataVersion(com.mojang.serialization.Dynamic<?> dynamic)"
+		},
+		{
+			"forge": "flush(ChunkPos arg0)",
+			"fabric": "saveChunk(ChunkPos pos)"
+		}
+	]
+}

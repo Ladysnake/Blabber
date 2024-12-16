@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.renderer.Rect2i",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.Rect2i",
+			"fabric": "net.minecraft.client.util.math.Rect2i"
+		},
+		{
+			"forge": "xPos",
+			"fabric": "x"
+		},
+		{
+			"forge": "xPos",
+			"fabric": "x"
+		},
+		{
+			"forge": "yPos",
+			"fabric": "y"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "intersect(Rect2i arg0)",
+			"fabric": "intersection(Rect2i rect)"
+		},
+		{
+			"forge": "intersect(Rect2i arg0)",
+			"fabric": "intersection(Rect2i rect)"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "setX(int arg0)",
+			"fabric": "setX(int x)"
+		},
+		{
+			"forge": "setY(int arg0)",
+			"fabric": "setY(int y)"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "setWidth(int arg0)",
+			"fabric": "setWidth(int width)"
+		},
+		{
+			"forge": "setHeight(int arg0)",
+			"fabric": "setHeight(int height)"
+		},
+		{
+			"forge": "setPosition(int arg0, int arg1)",
+			"fabric": "setStartPos(int x, int y)"
+		},
+		{
+			"forge": "contains(int arg0, int arg1)",
+			"fabric": "contains(int x, int y)"
+		}
+	]
+}

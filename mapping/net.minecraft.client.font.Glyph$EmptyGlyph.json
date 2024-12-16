@@ -1,0 +1,17 @@
+{
+	"title": "com.mojang.blaze3d.font.GlyphInfo$SpaceGlyphInfo",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.font.GlyphInfo$SpaceGlyphInfo",
+			"fabric": "net.minecraft.client.font.Glyph$EmptyGlyph"
+		},
+		{
+			"forge": "bake(Function<SheetGlyphInfo, BakedGlyph> arg0)",
+			"fabric": "bake(Function<RenderableGlyph, GlyphRenderer> arg0)"
+		},
+		{
+			"forge": "bake(Function<SheetGlyphInfo, BakedGlyph> arg0)",
+			"fabric": "bake(Function<RenderableGlyph, GlyphRenderer> arg0)"
+		}
+	]
+}

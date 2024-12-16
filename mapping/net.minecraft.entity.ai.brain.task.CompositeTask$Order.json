@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.GateBehavior$OrderPolicy",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.GateBehavior$OrderPolicy",
+			"fabric": "net.minecraft.entity.ai.brain.task.CompositeTask$Order"
+		},
+		{
+			"forge": "ORDERED",
+			"fabric": "ORDERED"
+		},
+		{
+			"forge": "ORDERED",
+			"fabric": "ORDERED"
+		},
+		{
+			"forge": "SHUFFLED",
+			"fabric": "SHUFFLED"
+		},
+		{
+			"forge": "consumer",
+			"fabric": "listModifier"
+		},
+		{
+			"forge": "consumer",
+			"fabric": "listModifier"
+		},
+		{
+			"forge": "apply(ShufflingList<?> arg0)",
+			"fabric": "apply(WeightedList<?> list)"
+		},
+		{
+			"forge": "apply(ShufflingList<?> arg0)",
+			"fabric": "apply(WeightedList<?> list)"
+		}
+	]
+}

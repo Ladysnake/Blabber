@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece",
+			"fabric": "net.minecraft.structure.PoolStructurePiece"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "element",
+			"fabric": "poolElement"
+		},
+		{
+			"forge": "position",
+			"fabric": "pos"
+		},
+		{
+			"forge": "groundLevelDelta",
+			"fabric": "groundLevelDelta"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "junctions",
+			"fabric": "junctions"
+		},
+		{
+			"forge": "structureTemplateManager",
+			"fabric": "structureTemplateManager"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "postProcess(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, ChunkPos arg5, BlockPos arg6)",
+			"fabric": "generate(StructureWorldAccess arg0, StructureAccessor arg1, ChunkGenerator arg2, Random arg3, BlockBox arg4, ChunkPos arg5, BlockPos arg6)"
+		},
+		{
+			"forge": "place(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, BlockPos arg5, boolean arg6)",
+			"fabric": "generate(StructureWorldAccess world, StructureAccessor structureAccessor, ChunkGenerator chunkGenerator, Random random, BlockBox boundingBox, BlockPos pivot, boolean keepJigsaws)"
+		},
+		{
+			"forge": "move(int arg0, int arg1, int arg2)",
+			"fabric": "translate(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "getRotation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "getElement()",
+			"fabric": "getPoolElement()"
+		},
+		{
+			"forge": "getPosition()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getGroundLevelDelta()",
+			"fabric": "getGroundLevelDelta()"
+		},
+		{
+			"forge": "addJunction(JigsawJunction arg0)",
+			"fabric": "addJunction(JigsawJunction junction)"
+		},
+		{
+			"forge": "getJunctions()",
+			"fabric": "getJunctions()"
+		}
+	]
+}

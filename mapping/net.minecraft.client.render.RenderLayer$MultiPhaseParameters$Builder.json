@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.client.renderer.RenderType$CompositeState$CompositeStateBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderType$CompositeState$CompositeStateBuilder",
+			"fabric": "net.minecraft.client.render.RenderLayer$MultiPhaseParameters$Builder"
+		},
+		{
+			"forge": "textureState",
+			"fabric": "texture"
+		},
+		{
+			"forge": "textureState",
+			"fabric": "texture"
+		},
+		{
+			"forge": "shaderState",
+			"fabric": "program"
+		},
+		{
+			"forge": "transparencyState",
+			"fabric": "transparency"
+		},
+		{
+			"forge": "depthTestState",
+			"fabric": "depthTest"
+		},
+		{
+			"forge": "cullState",
+			"fabric": "cull"
+		},
+		{
+			"forge": "lightmapState",
+			"fabric": "lightmap"
+		},
+		{
+			"forge": "overlayState",
+			"fabric": "overlay"
+		},
+		{
+			"forge": "layeringState",
+			"fabric": "layering"
+		},
+		{
+			"forge": "outputState",
+			"fabric": "target"
+		},
+		{
+			"forge": "texturingState",
+			"fabric": "texturing"
+		},
+		{
+			"forge": "writeMaskState",
+			"fabric": "writeMaskState"
+		},
+		{
+			"forge": "lineState",
+			"fabric": "lineWidth"
+		},
+		{
+			"forge": "colorLogicState",
+			"fabric": "colorLogic"
+		},
+		{
+			"forge": "setTextureState(RenderStateShard$EmptyTextureStateShard arg0)",
+			"fabric": "texture(RenderPhase$TextureBase texture)"
+		},
+		{
+			"forge": "setTextureState(RenderStateShard$EmptyTextureStateShard arg0)",
+			"fabric": "texture(RenderPhase$TextureBase texture)"
+		},
+		{
+			"forge": "setShaderState(RenderStateShard$ShaderStateShard arg0)",
+			"fabric": "program(RenderPhase$ShaderProgram program)"
+		},
+		{
+			"forge": "setTransparencyState(RenderStateShard$TransparencyStateShard arg0)",
+			"fabric": "transparency(RenderPhase$Transparency transparency)"
+		},
+		{
+			"forge": "setDepthTestState(RenderStateShard$DepthTestStateShard arg0)",
+			"fabric": "depthTest(RenderPhase$DepthTest depthTest)"
+		},
+		{
+			"forge": "setCullState(RenderStateShard$CullStateShard arg0)",
+			"fabric": "cull(RenderPhase$Cull cull)"
+		},
+		{
+			"forge": "setLightmapState(RenderStateShard$LightmapStateShard arg0)",
+			"fabric": "lightmap(RenderPhase$Lightmap lightmap)"
+		},
+		{
+			"forge": "setOverlayState(RenderStateShard$OverlayStateShard arg0)",
+			"fabric": "overlay(RenderPhase$Overlay overlay)"
+		},
+		{
+			"forge": "setLayeringState(RenderStateShard$LayeringStateShard arg0)",
+			"fabric": "layering(RenderPhase$Layering layering)"
+		},
+		{
+			"forge": "setOutputState(RenderStateShard$OutputStateShard arg0)",
+			"fabric": "target(RenderPhase$Target target)"
+		},
+		{
+			"forge": "setTexturingState(RenderStateShard$TexturingStateShard arg0)",
+			"fabric": "texturing(RenderPhase$Texturing texturing)"
+		},
+		{
+			"forge": "setWriteMaskState(RenderStateShard$WriteMaskStateShard arg0)",
+			"fabric": "writeMaskState(RenderPhase$WriteMaskState writeMaskState)"
+		},
+		{
+			"forge": "setLineState(RenderStateShard$LineStateShard arg0)",
+			"fabric": "lineWidth(RenderPhase$LineWidth lineWidth)"
+		},
+		{
+			"forge": "setColorLogicState(RenderStateShard$ColorLogicStateShard arg0)",
+			"fabric": "colorLogic(RenderPhase$ColorLogic colorLogic)"
+		},
+		{
+			"forge": "createCompositeState(boolean arg0)",
+			"fabric": "build(boolean affectsOutline)"
+		},
+		{
+			"forge": "createCompositeState(RenderType$OutlineProperty arg0)",
+			"fabric": "build(RenderLayer$OutlineMode outlineMode)"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.redstone.CollectingNeighborUpdater$FullNeighborUpdate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.redstone.CollectingNeighborUpdater$FullNeighborUpdate",
+			"fabric": "net.minecraft.world.block.ChainRestrictedNeighborUpdater$StatefulEntry"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "block",
+			"fabric": "sourceBlock"
+		},
+		{
+			"forge": "neighborPos",
+			"fabric": "sourcePos"
+		},
+		{
+			"forge": "movedByPiston",
+			"fabric": "movedByPiston"
+		},
+		{
+			"forge": "runNext(Level arg0)",
+			"fabric": "update(World arg0)"
+		},
+		{
+			"forge": "runNext(Level arg0)",
+			"fabric": "update(World arg0)"
+		},
+		{
+			"forge": "state()",
+			"fabric": "state()"
+		},
+		{
+			"forge": "pos()",
+			"fabric": "pos()"
+		},
+		{
+			"forge": "block()",
+			"fabric": "sourceBlock()"
+		},
+		{
+			"forge": "neighborPos()",
+			"fabric": "sourcePos()"
+		},
+		{
+			"forge": "movedByPiston()",
+			"fabric": "movedByPiston()"
+		}
+	]
+}

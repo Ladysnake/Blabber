@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.chat.FormattedText",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.FormattedText",
+			"fabric": "net.minecraft.text.StringVisitable"
+		},
+		{
+			"forge": "STOP_ITERATION",
+			"fabric": "TERMINATE_VISIT"
+		},
+		{
+			"forge": "STOP_ITERATION",
+			"fabric": "TERMINATE_VISIT"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "visit(FormattedText$ContentConsumer<T> arg0)",
+			"fabric": "visit(StringVisitable$Visitor<T> visitor)"
+		},
+		{
+			"forge": "visit(FormattedText$ContentConsumer<T> arg0)",
+			"fabric": "visit(StringVisitable$Visitor<T> visitor)"
+		},
+		{
+			"forge": "visit(FormattedText$StyledContentConsumer<T> arg0, Style arg1)",
+			"fabric": "visit(StringVisitable$StyledVisitor<T> styledVisitor, Style style)"
+		},
+		{
+			"forge": "of(String arg0)",
+			"fabric": "plain(String string)"
+		},
+		{
+			"forge": "of(String arg0, Style arg1)",
+			"fabric": "styled(String string, Style style)"
+		},
+		{
+			"forge": "composite(FormattedText... arg0)",
+			"fabric": "concat(StringVisitable... visitables)"
+		},
+		{
+			"forge": "composite(List<? extends FormattedText> arg0)",
+			"fabric": "concat(List<? extends StringVisitable> visitables)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.nbt.NumericTag",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.NumericTag",
+			"fabric": "net.minecraft.nbt.AbstractNbtNumber"
+		},
+		{
+			"forge": "getAsLong()",
+			"fabric": "longValue()"
+		},
+		{
+			"forge": "getAsLong()",
+			"fabric": "longValue()"
+		},
+		{
+			"forge": "getAsInt()",
+			"fabric": "intValue()"
+		},
+		{
+			"forge": "getAsShort()",
+			"fabric": "shortValue()"
+		},
+		{
+			"forge": "getAsByte()",
+			"fabric": "byteValue()"
+		},
+		{
+			"forge": "getAsDouble()",
+			"fabric": "doubleValue()"
+		},
+		{
+			"forge": "getAsFloat()",
+			"fabric": "floatValue()"
+		},
+		{
+			"forge": "getAsNumber()",
+			"fabric": "numberValue()"
+		}
+	]
+}

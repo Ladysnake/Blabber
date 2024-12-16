@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor",
+			"fabric": "net.minecraft.structure.processor.BlockIgnoreStructureProcessor"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "STRUCTURE_BLOCK",
+			"fabric": "IGNORE_STRUCTURE_BLOCKS"
+		},
+		{
+			"forge": "AIR",
+			"fabric": "IGNORE_AIR"
+		},
+		{
+			"forge": "STRUCTURE_AND_AIR",
+			"fabric": "IGNORE_AIR_AND_STRUCTURE_BLOCKS"
+		},
+		{
+			"forge": "toIgnore",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "processBlock(LevelReader arg0, BlockPos arg1, BlockPos arg2, StructureTemplate$StructureBlockInfo arg3, StructureTemplate$StructureBlockInfo arg4, StructurePlaceSettings arg5)",
+			"fabric": "process(WorldView arg0, BlockPos arg1, BlockPos arg2, StructureTemplate$StructureBlockInfo arg3, StructureTemplate$StructureBlockInfo arg4, StructurePlacementData arg5)"
+		},
+		{
+			"forge": "processBlock(LevelReader arg0, BlockPos arg1, BlockPos arg2, StructureTemplate$StructureBlockInfo arg3, StructureTemplate$StructureBlockInfo arg4, StructurePlaceSettings arg5)",
+			"fabric": "process(WorldView arg0, BlockPos arg1, BlockPos arg2, StructureTemplate$StructureBlockInfo arg3, StructureTemplate$StructureBlockInfo arg4, StructurePlacementData arg5)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

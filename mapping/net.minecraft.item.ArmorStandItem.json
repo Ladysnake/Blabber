@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.ArmorStandItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ArmorStandItem",
+			"fabric": "net.minecraft.item.ArmorStandItem"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		}
+	]
+}

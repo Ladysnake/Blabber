@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.advancements.critereon.ItemUsedOnLocationTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.ItemUsedOnLocationTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.ItemCriterion$Conditions"
+		},
+		{
+			"forge": "location",
+			"fabric": "location"
+		},
+		{
+			"forge": "location",
+			"fabric": "location"
+		},
+		{
+			"forge": "placedBlock(Block arg0)",
+			"fabric": "createPlacedBlock(Block block)"
+		},
+		{
+			"forge": "placedBlock(Block arg0)",
+			"fabric": "createPlacedBlock(Block block)"
+		},
+		{
+			"forge": "placedBlock(LootItemCondition$Builder... arg0)",
+			"fabric": "createPlacedBlock(LootCondition$Builder... locationConditions)"
+		},
+		{
+			"forge": "itemUsedOnLocation(LocationPredicate$Builder arg0, ItemPredicate$Builder arg1, ResourceLocation arg2)",
+			"fabric": "create(LocationPredicate$Builder location, ItemPredicate$Builder item, Identifier id)"
+		},
+		{
+			"forge": "itemUsedOnBlock(LocationPredicate$Builder arg0, ItemPredicate$Builder arg1)",
+			"fabric": "createItemUsedOnBlock(LocationPredicate$Builder location, ItemPredicate$Builder item)"
+		},
+		{
+			"forge": "allayDropItemOnBlock(LocationPredicate$Builder arg0, ItemPredicate$Builder arg1)",
+			"fabric": "createAllayDropItemOnBlock(LocationPredicate$Builder location, ItemPredicate$Builder item)"
+		},
+		{
+			"forge": "matches(LootContext arg0)",
+			"fabric": "test(LootContext context)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

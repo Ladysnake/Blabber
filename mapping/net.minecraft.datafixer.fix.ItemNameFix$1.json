@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ItemRenameFix$1",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ItemRenameFix$1",
+			"fabric": "net.minecraft.datafixer.fix.ItemNameFix$1"
+		},
+		{
+			"forge": "fixItem(String arg0)",
+			"fabric": "rename(String arg0)"
+		},
+		{
+			"forge": "fixItem(String arg0)",
+			"fabric": "rename(String arg0)"
+		}
+	]
+}

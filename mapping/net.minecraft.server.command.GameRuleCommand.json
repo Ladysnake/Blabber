@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.commands.GameRuleCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.GameRuleCommand",
+			"fabric": "net.minecraft.server.command.GameRuleCommand"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "setRule(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, GameRules$Key<T> arg1)",
+			"fabric": "executeSet(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, GameRules$Key<T> key)"
+		},
+		{
+			"forge": "queryRule(CommandSourceStack arg0, GameRules$Key<T> arg1)",
+			"fabric": "executeQuery(ServerCommandSource source, GameRules$Key<T> key)"
+		}
+	]
+}

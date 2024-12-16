@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement",
+			"fabric": "net.minecraft.world.gen.root.MangroveRootPlacement"
+		},
+		{
+			"forge": "canGrowThrough",
+			"fabric": "canGrowThrough"
+		},
+		{
+			"forge": "canGrowThrough",
+			"fabric": "canGrowThrough"
+		},
+		{
+			"forge": "muddyRootsIn",
+			"fabric": "muddyRootsIn"
+		},
+		{
+			"forge": "muddyRootsProvider",
+			"fabric": "muddyRootsProvider"
+		},
+		{
+			"forge": "maxRootWidth",
+			"fabric": "maxRootWidth"
+		},
+		{
+			"forge": "maxRootLength",
+			"fabric": "maxRootLength"
+		},
+		{
+			"forge": "randomSkewChance",
+			"fabric": "randomSkewChance"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "canGrowThrough()",
+			"fabric": "canGrowThrough()"
+		},
+		{
+			"forge": "canGrowThrough()",
+			"fabric": "canGrowThrough()"
+		},
+		{
+			"forge": "muddyRootsIn()",
+			"fabric": "muddyRootsIn()"
+		},
+		{
+			"forge": "muddyRootsProvider()",
+			"fabric": "muddyRootsProvider()"
+		},
+		{
+			"forge": "maxRootWidth()",
+			"fabric": "maxRootWidth()"
+		},
+		{
+			"forge": "maxRootLength()",
+			"fabric": "maxRootLength()"
+		},
+		{
+			"forge": "randomSkewChance()",
+			"fabric": "randomSkewChance()"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.ZombieHorse",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.ZombieHorse",
+			"fabric": "net.minecraft.entity.mob.ZombieHorseEntity"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createZombieHorseAttributes()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createZombieHorseAttributes()"
+		},
+		{
+			"forge": "randomizeAttributes(RandomSource arg0)",
+			"fabric": "initAttributes(Random arg0)"
+		},
+		{
+			"forge": "getMobType()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "addBehaviourGoals()",
+			"fabric": "initCustomGoals()"
+		}
+	]
+}

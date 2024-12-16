@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.block.AirBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.AirBlock",
+			"fabric": "net.minecraft.block.AirBlock"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		}
+	]
+}

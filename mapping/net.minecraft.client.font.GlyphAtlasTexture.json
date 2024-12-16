@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.font.FontTexture",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.FontTexture",
+			"fabric": "net.minecraft.client.font.GlyphAtlasTexture"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "SLOT_LENGTH"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "SLOT_LENGTH"
+		},
+		{
+			"forge": "renderTypes",
+			"fabric": "textRenderLayers"
+		},
+		{
+			"forge": "colored",
+			"fabric": "hasColor"
+		},
+		{
+			"forge": "root",
+			"fabric": "rootSlot"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "add(SheetGlyphInfo arg0)",
+			"fabric": "getGlyphRenderer(RenderableGlyph glyph)"
+		},
+		{
+			"forge": "dumpContents(ResourceLocation arg0, Path arg1)",
+			"fabric": "save(Identifier arg0, Path arg1)"
+		}
+	]
+}

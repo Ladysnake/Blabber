@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.tutorial.Tutorial$TimedToast",
+	"items": [
+		{
+			"forge": "net.minecraft.client.tutorial.Tutorial$TimedToast",
+			"fabric": "net.minecraft.client.tutorial.TutorialManager$Entry"
+		},
+		{
+			"forge": "toast",
+			"fabric": "toast"
+		},
+		{
+			"forge": "toast",
+			"fabric": "toast"
+		},
+		{
+			"forge": "durationTicks",
+			"fabric": "expiry"
+		},
+		{
+			"forge": "progress",
+			"fabric": "age"
+		},
+		{
+			"forge": "updateProgress()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "updateProgress()",
+			"fabric": "tick()"
+		}
+	]
+}

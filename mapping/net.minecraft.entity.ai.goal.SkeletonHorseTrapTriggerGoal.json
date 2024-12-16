@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.SkeletonTrapGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.SkeletonTrapGoal",
+			"fabric": "net.minecraft.entity.ai.goal.SkeletonHorseTrapTriggerGoal"
+		},
+		{
+			"forge": "horse",
+			"fabric": "skeletonHorse"
+		},
+		{
+			"forge": "horse",
+			"fabric": "skeletonHorse"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "createHorse(DifficultyInstance arg0)",
+			"fabric": "getHorse(LocalDifficulty localDifficulty)"
+		},
+		{
+			"forge": "createSkeleton(DifficultyInstance arg0, AbstractHorse arg1)",
+			"fabric": "getSkeleton(LocalDifficulty localDifficulty, AbstractHorseEntity vehicle)"
+		},
+		{
+			"forge": "disenchant(ItemStack arg0)",
+			"fabric": "removeEnchantments(ItemStack stack)"
+		}
+	]
+}

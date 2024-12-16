@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.server.LanServerDetection$LanServerList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.server.LanServerDetection$LanServerList",
+			"fabric": "net.minecraft.client.network.LanServerQueryManager$LanServerEntryList"
+		},
+		{
+			"forge": "servers",
+			"fabric": "serverEntries"
+		},
+		{
+			"forge": "servers",
+			"fabric": "serverEntries"
+		},
+		{
+			"forge": "isDirty",
+			"fabric": "dirty"
+		},
+		{
+			"forge": "takeDirtyServers()",
+			"fabric": "getEntriesIfUpdated()"
+		},
+		{
+			"forge": "takeDirtyServers()",
+			"fabric": "getEntriesIfUpdated()"
+		},
+		{
+			"forge": "addServer(String arg0, InetAddress arg1)",
+			"fabric": "addServer(String announcement, InetAddress address)"
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.client.model.ParrotModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.ParrotModel",
+			"fabric": "net.minecraft.client.render.entity.model.ParrotEntityModel"
+		},
+		{
+			"forge": "FEATHER",
+			"fabric": "FEATHER"
+		},
+		{
+			"forge": "FEATHER",
+			"fabric": "FEATHER"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "body",
+			"fabric": "body"
+		},
+		{
+			"forge": "tail",
+			"fabric": "tail"
+		},
+		{
+			"forge": "leftWing",
+			"fabric": "leftWing"
+		},
+		{
+			"forge": "rightWing",
+			"fabric": "rightWing"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "feather",
+			"fabric": "feather"
+		},
+		{
+			"forge": "leftLeg",
+			"fabric": "leftLeg"
+		},
+		{
+			"forge": "rightLeg",
+			"fabric": "rightLeg"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		},
+		{
+			"forge": "setupAnim(Parrot arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(ParrotEntity arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		},
+		{
+			"forge": "prepareMobModel(Parrot arg0, float arg1, float arg2, float arg3)",
+			"fabric": "animateModel(ParrotEntity arg0, float arg1, float arg2, float arg3)"
+		},
+		{
+			"forge": "renderOnShoulder(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7, int arg8)",
+			"fabric": "poseOnShoulder(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float limbAngle, float limbDistance, float headYaw, float headPitch, int danceAngle)"
+		},
+		{
+			"forge": "setupAnim(ParrotModel$State arg0, int arg1, float arg2, float arg3, float arg4, float arg5, float arg6)",
+			"fabric": "setAngles(ParrotEntityModel$Pose pose, int danceAngle, float limbAngle, float limbDistance, float age, float headYaw, float headPitch)"
+		},
+		{
+			"forge": "prepare(ParrotModel$State arg0)",
+			"fabric": "animateModel(ParrotEntityModel$Pose pose)"
+		},
+		{
+			"forge": "getState(Parrot arg0)",
+			"fabric": "getPose(ParrotEntity parrot)"
+		}
+	]
+}

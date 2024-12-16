@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.CopyBlockState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.CopyBlockState",
+			"fabric": "net.minecraft.loot.function.CopyStateFunction"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "properties",
+			"fabric": "properties"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "copyState(Block arg0)",
+			"fabric": "builder(Block block)"
+		},
+		{
+			"forge": "serialize(BlockState arg0, Property<T> arg1)",
+			"fabric": "getPropertyName(BlockState state, Property<T> property)"
+		}
+	]
+}

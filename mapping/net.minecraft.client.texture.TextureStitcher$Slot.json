@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.renderer.texture.Stitcher$Region",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.Stitcher$Region",
+			"fabric": "net.minecraft.client.texture.TextureStitcher$Slot"
+		},
+		{
+			"forge": "originX",
+			"fabric": "x"
+		},
+		{
+			"forge": "originX",
+			"fabric": "x"
+		},
+		{
+			"forge": "originY",
+			"fabric": "y"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "subSlots",
+			"fabric": "subSlots"
+		},
+		{
+			"forge": "holder",
+			"fabric": "texture"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "add(Stitcher$Holder<T> arg0)",
+			"fabric": "fit(TextureStitcher$Holder<T> holder)"
+		},
+		{
+			"forge": "walk(Stitcher$SpriteLoader<T> arg0)",
+			"fabric": "addAllFilledSlots(TextureStitcher$SpriteConsumer<T> consumer)"
+		}
+	]
+}

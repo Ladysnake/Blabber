@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.NarratorStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.client.NarratorStatus",
+			"fabric": "net.minecraft.client.option.NarratorMode"
+		},
+		{
+			"forge": "OFF",
+			"fabric": "OFF"
+		},
+		{
+			"forge": "OFF",
+			"fabric": "OFF"
+		},
+		{
+			"forge": "ALL",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "CHAT",
+			"fabric": "CHAT"
+		},
+		{
+			"forge": "SYSTEM",
+			"fabric": "SYSTEM"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "shouldNarrateChat()",
+			"fabric": "shouldNarrateChat()"
+		},
+		{
+			"forge": "shouldNarrateSystem()",
+			"fabric": "shouldNarrateSystem()"
+		}
+	]
+}

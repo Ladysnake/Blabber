@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.data.recipes.SpecialRecipeBuilder$1",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.SpecialRecipeBuilder$1",
+			"fabric": "net.minecraft.data.server.recipe.ComplexRecipeJsonBuilder$1"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getRecipeId()"
+		},
+		{
+			"forge": "serializeAdvancement()",
+			"fabric": "toAdvancementJson()"
+		},
+		{
+			"forge": "getAdvancementId()",
+			"fabric": "getAdvancementId()"
+		}
+	]
+}

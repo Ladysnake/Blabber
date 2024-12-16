@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.model.geom.ModelPart$Vertex",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.geom.ModelPart$Vertex",
+			"fabric": "net.minecraft.client.model.ModelPart$Vertex"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "u",
+			"fabric": "u"
+		},
+		{
+			"forge": "v",
+			"fabric": "v"
+		},
+		{
+			"forge": "remap(float arg0, float arg1)",
+			"fabric": "remap(float u, float v)"
+		},
+		{
+			"forge": "remap(float arg0, float arg1)",
+			"fabric": "remap(float u, float v)"
+		}
+	]
+}

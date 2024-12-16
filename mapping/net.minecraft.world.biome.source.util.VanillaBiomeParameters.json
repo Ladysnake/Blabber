@@ -1,0 +1,305 @@
+{
+	"title": "net.minecraft.world.level.biome.OverworldBiomeBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.OverworldBiomeBuilder",
+			"fabric": "net.minecraft.world.biome.source.util.VanillaBiomeParameters"
+		},
+		{
+			"forge": "VALLEY_SIZE",
+			"fabric": "MAX_VALLEY_WEIRDNESS"
+		},
+		{
+			"forge": "VALLEY_SIZE",
+			"fabric": "MAX_VALLEY_WEIRDNESS"
+		},
+		{
+			"forge": "LOW_START",
+			"fabric": "MAX_LOW_WEIRDNESS"
+		},
+		{
+			"forge": "HIGH_START",
+			"fabric": "MAX_MID_WEIRDNESS"
+		},
+		{
+			"forge": "HIGH_END",
+			"fabric": "MAX_SECOND_HIGH_WEIRDNESS"
+		},
+		{
+			"forge": "PEAK_SIZE",
+			"fabric": "field_34501"
+		},
+		{
+			"forge": "PEAK_START",
+			"fabric": "MAX_HIGH_WEIRDNESS"
+		},
+		{
+			"forge": "PEAK_END",
+			"fabric": "MAX_PEAK_WEIRDNESS"
+		},
+		{
+			"forge": "NEAR_INLAND_START",
+			"fabric": "field_35042"
+		},
+		{
+			"forge": "MID_INLAND_START",
+			"fabric": "field_35043"
+		},
+		{
+			"forge": "FAR_INLAND_START",
+			"fabric": "field_35044"
+		},
+		{
+			"forge": "EROSION_INDEX_1_START",
+			"fabric": "field_35045"
+		},
+		{
+			"forge": "EROSION_INDEX_2_START",
+			"fabric": "field_35046"
+		},
+		{
+			"forge": "EROSION_DEEP_DARK_DRYNESS_THRESHOLD",
+			"fabric": "field_39134"
+		},
+		{
+			"forge": "DEPTH_DEEP_DARK_DRYNESS_THRESHOLD",
+			"fabric": "field_39135"
+		},
+		{
+			"forge": "FULL_RANGE",
+			"fabric": "defaultParameter"
+		},
+		{
+			"forge": "temperatures",
+			"fabric": "temperatureParameters"
+		},
+		{
+			"forge": "humidities",
+			"fabric": "humidityParameters"
+		},
+		{
+			"forge": "erosions",
+			"fabric": "erosionParameters"
+		},
+		{
+			"forge": "FROZEN_RANGE",
+			"fabric": "frozenTemperature"
+		},
+		{
+			"forge": "UNFROZEN_RANGE",
+			"fabric": "nonFrozenTemperatureParameters"
+		},
+		{
+			"forge": "mushroomFieldsContinentalness",
+			"fabric": "mushroomFieldsContinentalness"
+		},
+		{
+			"forge": "deepOceanContinentalness",
+			"fabric": "deepOceanContinentalness"
+		},
+		{
+			"forge": "oceanContinentalness",
+			"fabric": "oceanContinentalness"
+		},
+		{
+			"forge": "coastContinentalness",
+			"fabric": "coastContinentalness"
+		},
+		{
+			"forge": "inlandContinentalness",
+			"fabric": "riverContinentalness"
+		},
+		{
+			"forge": "nearInlandContinentalness",
+			"fabric": "nearInlandContinentalness"
+		},
+		{
+			"forge": "midInlandContinentalness",
+			"fabric": "midInlandContinentalness"
+		},
+		{
+			"forge": "farInlandContinentalness",
+			"fabric": "farInlandContinentalness"
+		},
+		{
+			"forge": "OCEANS",
+			"fabric": "oceanBiomes"
+		},
+		{
+			"forge": "MIDDLE_BIOMES",
+			"fabric": "commonBiomes"
+		},
+		{
+			"forge": "MIDDLE_BIOMES_VARIANT",
+			"fabric": "uncommonBiomes"
+		},
+		{
+			"forge": "PLATEAU_BIOMES",
+			"fabric": "nearMountainBiomes"
+		},
+		{
+			"forge": "PLATEAU_BIOMES_VARIANT",
+			"fabric": "specialNearMountainBiomes"
+		},
+		{
+			"forge": "SHATTERED_BIOMES",
+			"fabric": "windsweptBiomes"
+		},
+		{
+			"forge": "spawnTarget()",
+			"fabric": "getSpawnSuitabilityNoises()"
+		},
+		{
+			"forge": "spawnTarget()",
+			"fabric": "getSpawnSuitabilityNoises()"
+		},
+		{
+			"forge": "addBiomes(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0)",
+			"fabric": "writeOverworldBiomeParameters(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters)"
+		},
+		{
+			"forge": "addDebugBiomes(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0)",
+			"fabric": "writeDebug(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters)"
+		},
+		{
+			"forge": "addOffCoastBiomes(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0)",
+			"fabric": "writeOceanBiomes(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters)"
+		},
+		{
+			"forge": "addInlandBiomes(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0)",
+			"fabric": "writeLandBiomes(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters)"
+		},
+		{
+			"forge": "addPeaks(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0, Climate$Parameter arg1)",
+			"fabric": "writePeakBiomes(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "addHighSlice(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0, Climate$Parameter arg1)",
+			"fabric": "writeHighBiomes(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "addMidSlice(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0, Climate$Parameter arg1)",
+			"fabric": "writeMidBiomes(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "addLowSlice(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0, Climate$Parameter arg1)",
+			"fabric": "writeLowBiomes(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "addValleys(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0, Climate$Parameter arg1)",
+			"fabric": "writeValleyBiomes(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "addUndergroundBiomes(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0)",
+			"fabric": "writeCaveBiomes(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters)"
+		},
+		{
+			"forge": "pickMiddleBiome(int arg0, int arg1, Climate$Parameter arg2)",
+			"fabric": "getRegularBiome(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "pickMiddleBiomeOrBadlandsIfHot(int arg0, int arg1, Climate$Parameter arg2)",
+			"fabric": "getBadlandsOrRegularBiome(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "pickMiddleBiomeOrBadlandsIfHotOrSlopeIfCold(int arg0, int arg1, Climate$Parameter arg2)",
+			"fabric": "getMountainStartBiome(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "maybePickWindsweptSavannaBiome(int arg0, int arg1, Climate$Parameter arg2, ResourceKey<Biome> arg3)",
+			"fabric": "getBiomeOrWindsweptSavanna(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness, RegistryKey<Biome> biomeKey)"
+		},
+		{
+			"forge": "pickShatteredCoastBiome(int arg0, int arg1, Climate$Parameter arg2)",
+			"fabric": "getErodedShoreBiome(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "pickBeachBiome(int arg0, int arg1)",
+			"fabric": "getShoreBiome(int temperature, int humidity)"
+		},
+		{
+			"forge": "pickBadlandsBiome(int arg0, Climate$Parameter arg1)",
+			"fabric": "getBadlandsBiome(int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "pickPlateauBiome(int arg0, int arg1, Climate$Parameter arg2)",
+			"fabric": "getNearMountainBiome(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "pickPeakBiome(int arg0, int arg1, Climate$Parameter arg2)",
+			"fabric": "getPeakBiome(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "pickSlopeBiome(int arg0, int arg1, Climate$Parameter arg2)",
+			"fabric": "getMountainSlopeBiome(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "pickShatteredBiome(int arg0, int arg1, Climate$Parameter arg2)",
+			"fabric": "getWindsweptOrRegularBiome(int temperature, int humidity, MultiNoiseUtil$ParameterRange weirdness)"
+		},
+		{
+			"forge": "addSurfaceBiome(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0, Climate$Parameter arg1, Climate$Parameter arg2, Climate$Parameter arg3, Climate$Parameter arg4, Climate$Parameter arg5, float arg6, ResourceKey<Biome> arg7)",
+			"fabric": "writeBiomeParameters(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters, MultiNoiseUtil$ParameterRange temperature, MultiNoiseUtil$ParameterRange humidity, MultiNoiseUtil$ParameterRange continentalness, MultiNoiseUtil$ParameterRange erosion, MultiNoiseUtil$ParameterRange weirdness, float offset, RegistryKey<Biome> biome)"
+		},
+		{
+			"forge": "addUndergroundBiome(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0, Climate$Parameter arg1, Climate$Parameter arg2, Climate$Parameter arg3, Climate$Parameter arg4, Climate$Parameter arg5, float arg6, ResourceKey<Biome> arg7)",
+			"fabric": "writeCaveBiomeParameters(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters, MultiNoiseUtil$ParameterRange temperature, MultiNoiseUtil$ParameterRange humidity, MultiNoiseUtil$ParameterRange continentalness, MultiNoiseUtil$ParameterRange erosion, MultiNoiseUtil$ParameterRange weirdness, float offset, RegistryKey<Biome> biome)"
+		},
+		{
+			"forge": "addBottomBiome(Consumer<com.mojang.datafixers.util.Pair<Climate$ParameterPoint, ResourceKey<Biome>>> arg0, Climate$Parameter arg1, Climate$Parameter arg2, Climate$Parameter arg3, Climate$Parameter arg4, Climate$Parameter arg5, float arg6, ResourceKey<Biome> arg7)",
+			"fabric": "writeDeepDarkParameters(Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil$NoiseHypercube, RegistryKey<Biome>>> parameters, MultiNoiseUtil$ParameterRange temperature, MultiNoiseUtil$ParameterRange humidity, MultiNoiseUtil$ParameterRange continentalness, MultiNoiseUtil$ParameterRange erosion, MultiNoiseUtil$ParameterRange weirdness, float offset, RegistryKey<Biome> biome)"
+		},
+		{
+			"forge": "isDeepDarkRegion(DensityFunction arg0, DensityFunction arg1, DensityFunction$FunctionContext arg2)",
+			"fabric": "method_43718(DensityFunction arg0, DensityFunction arg1, DensityFunction$NoisePos arg2)"
+		},
+		{
+			"forge": "getDebugStringForPeaksAndValleys(double arg0)",
+			"fabric": "getPeaksValleysDescription(double weirdness)"
+		},
+		{
+			"forge": "getDebugStringForContinentalness(double arg0)",
+			"fabric": "getContinentalnessDescription(double continentalness)"
+		},
+		{
+			"forge": "getDebugStringForErosion(double arg0)",
+			"fabric": "getErosionDescription(double erosion)"
+		},
+		{
+			"forge": "getDebugStringForTemperature(double arg0)",
+			"fabric": "getTemperatureDescription(double temperature)"
+		},
+		{
+			"forge": "getDebugStringForHumidity(double arg0)",
+			"fabric": "getHumidityDescription(double humidity)"
+		},
+		{
+			"forge": "getDebugStringForNoiseValue(double arg0, Climate$Parameter[] arg1)",
+			"fabric": "getNoiseRangeIndex(double noisePoint, MultiNoiseUtil$ParameterRange[] noiseRanges)"
+		},
+		{
+			"forge": "getTemperatureThresholds()",
+			"fabric": "getTemperatureParameters()"
+		},
+		{
+			"forge": "getHumidityThresholds()",
+			"fabric": "getHumidityParameters()"
+		},
+		{
+			"forge": "getErosionThresholds()",
+			"fabric": "getErosionParameters()"
+		},
+		{
+			"forge": "getContinentalnessThresholds()",
+			"fabric": "getContinentalnessParameters()"
+		},
+		{
+			"forge": "getPeaksAndValleysThresholds()",
+			"fabric": "getWeirdnessParameters()"
+		},
+		{
+			"forge": "getWeirdnessThresholds()",
+			"fabric": "method_40015()"
+		}
+	]
+}

@@ -1,0 +1,201 @@
+{
+	"title": "net.minecraft.world.level.block.StairBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.StairBlock",
+			"fabric": "net.minecraft.block.StairsBlock"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "HALF",
+			"fabric": "HALF"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "TOP_AABB",
+			"fabric": "TOP_SHAPE"
+		},
+		{
+			"forge": "BOTTOM_AABB",
+			"fabric": "BOTTOM_SHAPE"
+		},
+		{
+			"forge": "OCTET_NNN",
+			"fabric": "BOTTOM_NORTH_WEST_CORNER_SHAPE"
+		},
+		{
+			"forge": "OCTET_NNP",
+			"fabric": "BOTTOM_SOUTH_WEST_CORNER_SHAPE"
+		},
+		{
+			"forge": "OCTET_NPN",
+			"fabric": "TOP_NORTH_WEST_CORNER_SHAPE"
+		},
+		{
+			"forge": "OCTET_NPP",
+			"fabric": "TOP_SOUTH_WEST_CORNER_SHAPE"
+		},
+		{
+			"forge": "OCTET_PNN",
+			"fabric": "BOTTOM_NORTH_EAST_CORNER_SHAPE"
+		},
+		{
+			"forge": "OCTET_PNP",
+			"fabric": "BOTTOM_SOUTH_EAST_CORNER_SHAPE"
+		},
+		{
+			"forge": "OCTET_PPN",
+			"fabric": "TOP_NORTH_EAST_CORNER_SHAPE"
+		},
+		{
+			"forge": "OCTET_PPP",
+			"fabric": "TOP_SOUTH_EAST_CORNER_SHAPE"
+		},
+		{
+			"forge": "TOP_SHAPES",
+			"fabric": "TOP_SHAPES"
+		},
+		{
+			"forge": "BOTTOM_SHAPES",
+			"fabric": "BOTTOM_SHAPES"
+		},
+		{
+			"forge": "SHAPE_BY_STATE",
+			"fabric": "SHAPE_INDICES"
+		},
+		{
+			"forge": "base",
+			"fabric": "baseBlock"
+		},
+		{
+			"forge": "baseState",
+			"fabric": "baseBlockState"
+		},
+		{
+			"forge": "makeShapes(VoxelShape arg0, VoxelShape arg1, VoxelShape arg2, VoxelShape arg3, VoxelShape arg4)",
+			"fabric": "composeShapes(VoxelShape base, VoxelShape northWest, VoxelShape northEast, VoxelShape southWest, VoxelShape southEast)"
+		},
+		{
+			"forge": "makeShapes(VoxelShape arg0, VoxelShape arg1, VoxelShape arg2, VoxelShape arg3, VoxelShape arg4)",
+			"fabric": "composeShapes(VoxelShape base, VoxelShape northWest, VoxelShape northEast, VoxelShape southWest, VoxelShape southEast)"
+		},
+		{
+			"forge": "makeStairShape(int arg0, VoxelShape arg1, VoxelShape arg2, VoxelShape arg3, VoxelShape arg4, VoxelShape arg5)",
+			"fabric": "composeShape(int i, VoxelShape base, VoxelShape northWest, VoxelShape northEast, VoxelShape southWest, VoxelShape southEast)"
+		},
+		{
+			"forge": "useShapeForLightOcclusion(BlockState arg0)",
+			"fabric": "hasSidedTransparency(BlockState arg0)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShapeIndex(BlockState arg0)",
+			"fabric": "getShapeIndexIndex(BlockState state)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "attack(BlockState arg0, Level arg1, BlockPos arg2, Player arg3)",
+			"fabric": "onBlockBreakStart(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3)"
+		},
+		{
+			"forge": "destroy(LevelAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "onBroken(WorldAccess arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "getExplosionResistance()",
+			"fabric": "getBlastResistance()"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "onRemove(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onStateReplaced(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "stepOn(Level arg0, BlockPos arg1, BlockState arg2, Entity arg3)",
+			"fabric": "onSteppedOn(World arg0, BlockPos arg1, BlockState arg2, Entity arg3)"
+		},
+		{
+			"forge": "isRandomlyTicking(BlockState arg0)",
+			"fabric": "hasRandomTicks(BlockState arg0)"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "wasExploded(Level arg0, BlockPos arg1, Explosion arg2)",
+			"fabric": "onDestroyedByExplosion(World arg0, BlockPos arg1, Explosion arg2)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getStairsShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getStairShape(BlockState state, BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "canTakeShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "isDifferentOrientation(BlockState state, BlockView world, BlockPos pos, Direction dir)"
+		},
+		{
+			"forge": "isStairs(BlockState arg0)",
+			"fabric": "isStairs(BlockState state)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		}
+	]
+}

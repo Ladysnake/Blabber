@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.level.block.BubbleColumnBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BubbleColumnBlock",
+			"fabric": "net.minecraft.block.BubbleColumnBlock"
+		},
+		{
+			"forge": "DRAG_DOWN",
+			"fabric": "DRAG"
+		},
+		{
+			"forge": "DRAG_DOWN",
+			"fabric": "DRAG"
+		},
+		{
+			"forge": "CHECK_PERIOD",
+			"fabric": "SCHEDULED_TICK_DELAY"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "updateColumn(LevelAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "update(WorldAccess world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "updateColumn(LevelAccessor arg0, BlockPos arg1, BlockState arg2, BlockState arg3)",
+			"fabric": "update(WorldAccess world, BlockPos pos, BlockState water, BlockState bubbleSource)"
+		},
+		{
+			"forge": "canExistIn(BlockState arg0)",
+			"fabric": "isStillWater(BlockState state)"
+		},
+		{
+			"forge": "getColumnState(BlockState arg0)",
+			"fabric": "getBubbleState(BlockState state)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "pickupBlock(LevelAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "tryDrainFluid(WorldAccess arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "getPickupSound()",
+			"fabric": "getBucketFillSound()"
+		}
+	]
+}

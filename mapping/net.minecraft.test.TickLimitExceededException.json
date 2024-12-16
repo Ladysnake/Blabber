@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.gametest.framework.GameTestTimeoutException",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.GameTestTimeoutException",
+			"fabric": "net.minecraft.test.TickLimitExceededException"
+		}
+	]
+}

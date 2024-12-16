@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.Turtle$TurtlePathNavigation",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Turtle$TurtlePathNavigation",
+			"fabric": "net.minecraft.entity.passive.TurtleEntity$TurtleSwimNavigation"
+		},
+		{
+			"forge": "isStableDestination(BlockPos arg0)",
+			"fabric": "isValidPosition(BlockPos arg0)"
+		},
+		{
+			"forge": "isStableDestination(BlockPos arg0)",
+			"fabric": "isValidPosition(BlockPos arg0)"
+		}
+	]
+}

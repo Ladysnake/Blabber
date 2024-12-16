@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.ArmorItem$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ArmorItem$1",
+			"fabric": "net.minecraft.item.ArmorItem$1"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		}
+	]
+}

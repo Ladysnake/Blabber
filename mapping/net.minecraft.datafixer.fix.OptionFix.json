@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.OptionsRenameFieldFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.OptionsRenameFieldFix",
+			"fabric": "net.minecraft.datafixer.fix.OptionFix"
+		},
+		{
+			"forge": "fixName",
+			"fabric": "name"
+		},
+		{
+			"forge": "fixName",
+			"fabric": "name"
+		},
+		{
+			"forge": "fieldFrom",
+			"fabric": "oldName"
+		},
+		{
+			"forge": "fieldTo",
+			"fabric": "newName"
+		}
+	]
+}

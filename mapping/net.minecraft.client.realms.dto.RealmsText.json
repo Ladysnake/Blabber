@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsText",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsText",
+			"fabric": "net.minecraft.client.realms.dto.RealmsText"
+		},
+		{
+			"forge": "TRANSLATION_KEY",
+			"fabric": "TRANSLATION_KEY_KEY"
+		},
+		{
+			"forge": "TRANSLATION_KEY",
+			"fabric": "TRANSLATION_KEY_KEY"
+		},
+		{
+			"forge": "ARGS",
+			"fabric": "ARGS_KEY"
+		},
+		{
+			"forge": "translationKey",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "args",
+			"fabric": "args"
+		},
+		{
+			"forge": "createComponent(Component arg0)",
+			"fabric": "toText(Text fallback)"
+		},
+		{
+			"forge": "createComponent(Component arg0)",
+			"fabric": "toText(Text fallback)"
+		},
+		{
+			"forge": "parse(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject json)"
+		}
+	]
+}

@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.data.models.BlockModelGenerators$BlockFamilyProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.BlockModelGenerators$BlockFamilyProvider",
+			"fabric": "net.minecraft.data.client.BlockStateModelGenerator$BlockTexturePool"
+		},
+		{
+			"forge": "mapping",
+			"fabric": "textures"
+		},
+		{
+			"forge": "mapping",
+			"fabric": "textures"
+		},
+		{
+			"forge": "models",
+			"fabric": "knownModels"
+		},
+		{
+			"forge": "family",
+			"fabric": "family"
+		},
+		{
+			"forge": "fullBlock",
+			"fabric": "baseModelId"
+		},
+		{
+			"forge": "fullBlock(Block arg0, ModelTemplate arg1)",
+			"fabric": "base(Block block, Model model)"
+		},
+		{
+			"forge": "fullBlock(Block arg0, ModelTemplate arg1)",
+			"fabric": "base(Block block, Model model)"
+		},
+		{
+			"forge": "fullBlockCopies(Block... arg0)",
+			"fabric": "same(Block... blocks)"
+		},
+		{
+			"forge": "button(Block arg0)",
+			"fabric": "button(Block buttonBlock)"
+		},
+		{
+			"forge": "wall(Block arg0)",
+			"fabric": "wall(Block wallBlock)"
+		},
+		{
+			"forge": "customFence(Block arg0)",
+			"fabric": "customFence(Block customFenceBlock)"
+		},
+		{
+			"forge": "fence(Block arg0)",
+			"fabric": "fence(Block fenceBlock)"
+		},
+		{
+			"forge": "customFenceGate(Block arg0)",
+			"fabric": "customFenceGate(Block customFenceGateBlock)"
+		},
+		{
+			"forge": "fenceGate(Block arg0)",
+			"fabric": "fenceGate(Block fenceGateBlock)"
+		},
+		{
+			"forge": "pressurePlate(Block arg0)",
+			"fabric": "pressurePlate(Block pressurePlateBlock)"
+		},
+		{
+			"forge": "sign(Block arg0)",
+			"fabric": "sign(Block signBlock)"
+		},
+		{
+			"forge": "slab(Block arg0)",
+			"fabric": "slab(Block block)"
+		},
+		{
+			"forge": "stairs(Block arg0)",
+			"fabric": "stairs(Block block)"
+		},
+		{
+			"forge": "fullBlockVariant(Block arg0)",
+			"fabric": "block(Block block)"
+		},
+		{
+			"forge": "door(Block arg0)",
+			"fabric": "door(Block block)"
+		},
+		{
+			"forge": "trapdoor(Block arg0)",
+			"fabric": "registerTrapdoor(Block block)"
+		},
+		{
+			"forge": "getOrCreateModel(ModelTemplate arg0, Block arg1)",
+			"fabric": "ensureModel(Model model, Block block)"
+		},
+		{
+			"forge": "generateFor(BlockFamily arg0)",
+			"fabric": "family(BlockFamily family)"
+		}
+	]
+}

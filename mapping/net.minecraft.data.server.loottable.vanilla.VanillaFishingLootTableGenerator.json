@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.data.loot.packs.VanillaFishingLoot",
+	"items": [
+		{
+			"forge": "net.minecraft.data.loot.packs.VanillaFishingLoot",
+			"fabric": "net.minecraft.data.server.loottable.vanilla.VanillaFishingLootTableGenerator"
+		},
+		{
+			"forge": "IN_JUNGLE",
+			"fabric": "NEEDS_JUNGLE_BIOME"
+		},
+		{
+			"forge": "IN_JUNGLE",
+			"fabric": "NEEDS_JUNGLE_BIOME"
+		},
+		{
+			"forge": "IN_SPARSE_JUNGLE",
+			"fabric": "NEEDS_SPARSE_JUNGLE_BIOME"
+		},
+		{
+			"forge": "IN_BAMBOO_JUNGLE",
+			"fabric": "NEEDS_BAMBOO_JUNGLE_BIOME"
+		},
+		{
+			"forge": "generate(BiConsumer<ResourceLocation, LootTable$Builder> arg0)",
+			"fabric": "accept(BiConsumer<Identifier, LootTable$Builder> arg0)"
+		},
+		{
+			"forge": "generate(BiConsumer<ResourceLocation, LootTable$Builder> arg0)",
+			"fabric": "accept(BiConsumer<Identifier, LootTable$Builder> arg0)"
+		},
+		{
+			"forge": "fishingFishLootTable()",
+			"fabric": "createFishTableBuilder()"
+		}
+	]
+}

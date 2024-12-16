@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.ExceptionCollector",
+	"items": [
+		{
+			"forge": "net.minecraft.util.ExceptionCollector",
+			"fabric": "net.minecraft.util.ThrowableDeliverer"
+		},
+		{
+			"forge": "result",
+			"fabric": "throwable"
+		},
+		{
+			"forge": "result",
+			"fabric": "throwable"
+		},
+		{
+			"forge": "add(T arg0)",
+			"fabric": "add(T throwable)"
+		},
+		{
+			"forge": "add(T arg0)",
+			"fabric": "add(T throwable)"
+		},
+		{
+			"forge": "throwIfPresent() throws T",
+			"fabric": "deliver() throws T"
+		}
+	]
+}

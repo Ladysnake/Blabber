@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.quickplay.QuickPlayLog",
+	"items": [
+		{
+			"forge": "net.minecraft.client.quickplay.QuickPlayLog",
+			"fabric": "net.minecraft.client.QuickPlayLogger"
+		},
+		{
+			"forge": "INACTIVE",
+			"fabric": "NOOP"
+		},
+		{
+			"forge": "INACTIVE",
+			"fabric": "NOOP"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "path",
+			"fabric": "path"
+		},
+		{
+			"forge": "worldData",
+			"fabric": "world"
+		},
+		{
+			"forge": "of(String arg0)",
+			"fabric": "create(String relativePath)"
+		},
+		{
+			"forge": "of(String arg0)",
+			"fabric": "create(String relativePath)"
+		},
+		{
+			"forge": "setWorldData(QuickPlayLog$Type arg0, String arg1, String arg2)",
+			"fabric": "setWorld(QuickPlayLogger$WorldType worldType, String id, String name)"
+		},
+		{
+			"forge": "log(Minecraft arg0)",
+			"fabric": "save(MinecraftClient client)"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.data.recipes.packs.VanillaRecipeProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.packs.VanillaRecipeProvider",
+			"fabric": "net.minecraft.data.server.recipe.VanillaRecipeProvider"
+		},
+		{
+			"forge": "COAL_SMELTABLES",
+			"fabric": "COAL_ORES"
+		},
+		{
+			"forge": "COAL_SMELTABLES",
+			"fabric": "COAL_ORES"
+		},
+		{
+			"forge": "IRON_SMELTABLES",
+			"fabric": "IRON_ORES"
+		},
+		{
+			"forge": "COPPER_SMELTABLES",
+			"fabric": "COPPER_ORES"
+		},
+		{
+			"forge": "GOLD_SMELTABLES",
+			"fabric": "GOLD_ORES"
+		},
+		{
+			"forge": "DIAMOND_SMELTABLES",
+			"fabric": "DIAMOND_ORES"
+		},
+		{
+			"forge": "LAPIS_SMELTABLES",
+			"fabric": "LAPIS_ORES"
+		},
+		{
+			"forge": "REDSTONE_SMELTABLES",
+			"fabric": "REDSTONE_ORES"
+		},
+		{
+			"forge": "EMERALD_SMELTABLES",
+			"fabric": "EMERALD_ORES"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "buildRecipes(Consumer<FinishedRecipe> arg0)",
+			"fabric": "generate(Consumer<RecipeJsonProvider> arg0)"
+		},
+		{
+			"forge": "smithingTrims()",
+			"fabric": "getTrimSmithingTemplateMap()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.animation.AnimationChannel$Target",
+	"items": [
+		{
+			"forge": "net.minecraft.client.animation.AnimationChannel$Target",
+			"fabric": "net.minecraft.client.render.entity.animation.Transformation$Target"
+		},
+		{
+			"forge": "apply(ModelPart arg0, org.joml.Vector3f arg1)",
+			"fabric": "apply(ModelPart modelPart, org.joml.Vector3f vec)"
+		},
+		{
+			"forge": "apply(ModelPart arg0, org.joml.Vector3f arg1)",
+			"fabric": "apply(ModelPart modelPart, org.joml.Vector3f vec)"
+		}
+	]
+}

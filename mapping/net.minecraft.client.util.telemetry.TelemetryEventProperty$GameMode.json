@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.telemetry.TelemetryProperty$GameMode",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.TelemetryProperty$GameMode",
+			"fabric": "net.minecraft.client.util.telemetry.TelemetryEventProperty$GameMode"
+		},
+		{
+			"forge": "SURVIVAL",
+			"fabric": "SURVIVAL"
+		},
+		{
+			"forge": "SURVIVAL",
+			"fabric": "SURVIVAL"
+		},
+		{
+			"forge": "CREATIVE",
+			"fabric": "CREATIVE"
+		},
+		{
+			"forge": "ADVENTURE",
+			"fabric": "ADVENTURE"
+		},
+		{
+			"forge": "SPECTATOR",
+			"fabric": "SPECTATOR"
+		},
+		{
+			"forge": "HARDCORE",
+			"fabric": "HARDCORE"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "key",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "rawId"
+		},
+		{
+			"forge": "id()",
+			"fabric": "getRawId()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "getRawId()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

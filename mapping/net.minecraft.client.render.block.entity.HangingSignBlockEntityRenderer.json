@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.HangingSignRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.HangingSignRenderer",
+			"fabric": "net.minecraft.client.render.block.entity.HangingSignBlockEntityRenderer"
+		},
+		{
+			"forge": "PLANK",
+			"fabric": "PLANK"
+		},
+		{
+			"forge": "PLANK",
+			"fabric": "PLANK"
+		},
+		{
+			"forge": "V_CHAINS",
+			"fabric": "V_CHAINS"
+		},
+		{
+			"forge": "NORMAL_CHAINS",
+			"fabric": "NORMAL_CHAINS"
+		},
+		{
+			"forge": "CHAIN_L_1",
+			"fabric": "CHAIN_L1"
+		},
+		{
+			"forge": "CHAIN_L_2",
+			"fabric": "CHAIN_L2"
+		},
+		{
+			"forge": "CHAIN_R_1",
+			"fabric": "CHAIN_R1"
+		},
+		{
+			"forge": "CHAIN_R_2",
+			"fabric": "CHAIN_R2"
+		},
+		{
+			"forge": "BOARD",
+			"fabric": "BOARD"
+		},
+		{
+			"forge": "MODEL_RENDER_SCALE",
+			"fabric": "MODEL_SCALE"
+		},
+		{
+			"forge": "TEXT_RENDER_SCALE",
+			"fabric": "TEXT_SCALE"
+		},
+		{
+			"forge": "TEXT_OFFSET",
+			"fabric": "TEXT_OFFSET"
+		},
+		{
+			"forge": "hangingSignModels",
+			"fabric": "MODELS"
+		},
+		{
+			"forge": "getSignModelRenderScale()",
+			"fabric": "getSignScale()"
+		},
+		{
+			"forge": "getSignModelRenderScale()",
+			"fabric": "getSignScale()"
+		},
+		{
+			"forge": "getSignTextRenderScale()",
+			"fabric": "getTextScale()"
+		},
+		{
+			"forge": "render(SignBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(SignBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "translateSign(PoseStack arg0, float arg1, BlockState arg2)",
+			"fabric": "setAngles(MatrixStack arg0, float arg1, BlockState arg2)"
+		},
+		{
+			"forge": "renderSignModel(PoseStack arg0, int arg1, int arg2, Model arg3, VertexConsumer arg4)",
+			"fabric": "renderSignModel(MatrixStack arg0, int arg1, int arg2, Model arg3, VertexConsumer arg4)"
+		},
+		{
+			"forge": "getSignMaterial(WoodType arg0)",
+			"fabric": "getTextureId(WoodType arg0)"
+		},
+		{
+			"forge": "getTextOffset()",
+			"fabric": "getTextOffset()"
+		},
+		{
+			"forge": "createHangingSignLayer()",
+			"fabric": "getTexturedModelData()"
+		}
+	]
+}

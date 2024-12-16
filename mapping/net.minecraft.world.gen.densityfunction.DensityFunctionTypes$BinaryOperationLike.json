@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$TwoArgumentSimpleFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$TwoArgumentSimpleFunction",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$BinaryOperationLike"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "create(DensityFunctions$TwoArgumentSimpleFunction$Type arg0, DensityFunction arg1, DensityFunction arg2)",
+			"fabric": "create(DensityFunctionTypes$BinaryOperationLike$Type type, DensityFunction argument1, DensityFunction argument2)"
+		},
+		{
+			"forge": "create(DensityFunctions$TwoArgumentSimpleFunction$Type arg0, DensityFunction arg1, DensityFunction arg2)",
+			"fabric": "create(DensityFunctionTypes$BinaryOperationLike$Type type, DensityFunction argument1, DensityFunction argument2)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "argument1()",
+			"fabric": "argument1()"
+		},
+		{
+			"forge": "argument2()",
+			"fabric": "argument2()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodecHolder()"
+		}
+	]
+}

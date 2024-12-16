@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.LoomBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.LoomBlock",
+			"fabric": "net.minecraft.block.LoomBlock"
+		},
+		{
+			"forge": "CONTAINER_TITLE",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "CONTAINER_TITLE",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "getMenuProvider(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "createScreenHandlerFactory(BlockState arg0, World arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

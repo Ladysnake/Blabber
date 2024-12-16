@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pieces.PieceGeneratorSupplier$Context",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pieces.PieceGeneratorSupplier$Context",
+			"fabric": "net.minecraft.structure.StructureGeneratorFactory$Context"
+		},
+		{
+			"forge": "chunkGenerator",
+			"fabric": "chunkGenerator"
+		},
+		{
+			"forge": "chunkGenerator",
+			"fabric": "chunkGenerator"
+		},
+		{
+			"forge": "biomeSource",
+			"fabric": "biomeSource"
+		},
+		{
+			"forge": "randomState",
+			"fabric": "noiseConfig"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "chunkPos",
+			"fabric": "chunkPos"
+		},
+		{
+			"forge": "config",
+			"fabric": "config"
+		},
+		{
+			"forge": "heightAccessor",
+			"fabric": "world"
+		},
+		{
+			"forge": "validBiome",
+			"fabric": "validBiome"
+		},
+		{
+			"forge": "structureTemplateManager",
+			"fabric": "structureTemplateManager"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "validBiomeOnTop(Heightmap$Types arg0)",
+			"fabric": "isBiomeValid(Heightmap$Type heightmapType)"
+		},
+		{
+			"forge": "validBiomeOnTop(Heightmap$Types arg0)",
+			"fabric": "isBiomeValid(Heightmap$Type heightmapType)"
+		},
+		{
+			"forge": "chunkGenerator()",
+			"fabric": "chunkGenerator()"
+		},
+		{
+			"forge": "biomeSource()",
+			"fabric": "biomeSource()"
+		},
+		{
+			"forge": "randomState()",
+			"fabric": "noiseConfig()"
+		},
+		{
+			"forge": "seed()",
+			"fabric": "seed()"
+		},
+		{
+			"forge": "chunkPos()",
+			"fabric": "chunkPos()"
+		},
+		{
+			"forge": "config()",
+			"fabric": "config()"
+		},
+		{
+			"forge": "heightAccessor()",
+			"fabric": "world()"
+		},
+		{
+			"forge": "validBiome()",
+			"fabric": "validBiome()"
+		},
+		{
+			"forge": "structureTemplateManager()",
+			"fabric": "structureTemplateManager()"
+		},
+		{
+			"forge": "registryAccess()",
+			"fabric": "registryManager()"
+		}
+	]
+}

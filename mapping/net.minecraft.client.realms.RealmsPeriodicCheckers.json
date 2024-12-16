@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.realmsclient.gui.RealmsDataFetcher",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.RealmsDataFetcher",
+			"fabric": "net.minecraft.client.realms.RealmsPeriodicCheckers"
+		},
+		{
+			"forge": "dataFetcher",
+			"fabric": "runnerFactory"
+		},
+		{
+			"forge": "dataFetcher",
+			"fabric": "runnerFactory"
+		},
+		{
+			"forge": "notificationsTask",
+			"fabric": "notifications"
+		},
+		{
+			"forge": "serverListUpdateTask",
+			"fabric": "serverList"
+		},
+		{
+			"forge": "liveStatsTask",
+			"fabric": "liveStats"
+		},
+		{
+			"forge": "pendingInvitesTask",
+			"fabric": "pendingInvitesCount"
+		},
+		{
+			"forge": "trialAvailabilityTask",
+			"fabric": "trialAvailability"
+		},
+		{
+			"forge": "newsTask",
+			"fabric": "news"
+		},
+		{
+			"forge": "newsManager",
+			"fabric": "newsUpdater"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BlockEntityType$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BlockEntityType$Builder",
+			"fabric": "net.minecraft.block.entity.BlockEntityType$Builder"
+		},
+		{
+			"forge": "factory",
+			"fabric": "factory"
+		},
+		{
+			"forge": "factory",
+			"fabric": "factory"
+		},
+		{
+			"forge": "validBlocks",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "of(BlockEntityType$BlockEntitySupplier<? extends T> arg0, Block... arg1)",
+			"fabric": "create(BlockEntityType$BlockEntityFactory<? extends T> factory, Block... blocks)"
+		},
+		{
+			"forge": "of(BlockEntityType$BlockEntitySupplier<? extends T> arg0, Block... arg1)",
+			"fabric": "create(BlockEntityType$BlockEntityFactory<? extends T> factory, Block... blocks)"
+		},
+		{
+			"forge": "build(com.mojang.datafixers.types.Type<?> arg0)",
+			"fabric": "build(com.mojang.datafixers.types.Type<?> type)"
+		}
+	]
+}

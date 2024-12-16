@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.TraceableEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.TraceableEntity",
+			"fabric": "net.minecraft.entity.Ownable"
+		},
+		{
+			"forge": "getOwner()",
+			"fabric": "getOwner()"
+		},
+		{
+			"forge": "getOwner()",
+			"fabric": "getOwner()"
+		}
+	]
+}

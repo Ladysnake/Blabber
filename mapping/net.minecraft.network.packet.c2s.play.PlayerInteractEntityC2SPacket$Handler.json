@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundInteractPacket$Handler",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundInteractPacket$Handler",
+			"fabric": "net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket$Handler"
+		},
+		{
+			"forge": "onInteraction(InteractionHand arg0)",
+			"fabric": "interact(Hand hand)"
+		},
+		{
+			"forge": "onInteraction(InteractionHand arg0)",
+			"fabric": "interact(Hand hand)"
+		},
+		{
+			"forge": "onInteraction(InteractionHand arg0, Vec3 arg1)",
+			"fabric": "interactAt(Hand hand, Vec3d pos)"
+		},
+		{
+			"forge": "onAttack()",
+			"fabric": "attack()"
+		}
+	]
+}

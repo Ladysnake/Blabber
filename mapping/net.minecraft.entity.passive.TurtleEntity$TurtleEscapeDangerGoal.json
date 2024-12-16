@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.Turtle$TurtlePanicGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Turtle$TurtlePanicGoal",
+			"fabric": "net.minecraft.entity.passive.TurtleEntity$TurtleEscapeDangerGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces$PortalRoom",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces$PortalRoom",
+			"fabric": "net.minecraft.structure.StrongholdGenerator$PortalRoom"
+		},
+		{
+			"forge": "WIDTH",
+			"fabric": "SIZE_X"
+		},
+		{
+			"forge": "WIDTH",
+			"fabric": "SIZE_X"
+		},
+		{
+			"forge": "HEIGHT",
+			"fabric": "SIZE_Y"
+		},
+		{
+			"forge": "DEPTH",
+			"fabric": "SIZE_Z"
+		},
+		{
+			"forge": "hasPlacedSpawner",
+			"fabric": "spawnerPlaced"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "addChildren(StructurePiece arg0, StructurePieceAccessor arg1, RandomSource arg2)",
+			"fabric": "fillOpenings(StructurePiece arg0, StructurePiecesHolder arg1, Random arg2)"
+		},
+		{
+			"forge": "createPiece(StructurePieceAccessor arg0, int arg1, int arg2, int arg3, Direction arg4, int arg5)",
+			"fabric": "create(StructurePiecesHolder holder, int x, int y, int z, Direction orientation, int chainLength)"
+		},
+		{
+			"forge": "postProcess(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, ChunkPos arg5, BlockPos arg6)",
+			"fabric": "generate(StructureWorldAccess arg0, StructureAccessor arg1, ChunkGenerator arg2, Random arg3, BlockBox arg4, ChunkPos arg5, BlockPos arg6)"
+		}
+	]
+}

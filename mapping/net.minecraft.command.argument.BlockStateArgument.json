@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.commands.arguments.blocks.BlockInput",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.blocks.BlockInput",
+			"fabric": "net.minecraft.command.argument.BlockStateArgument"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "properties",
+			"fabric": "properties"
+		},
+		{
+			"forge": "tag",
+			"fabric": "data"
+		},
+		{
+			"forge": "getState()",
+			"fabric": "getBlockState()"
+		},
+		{
+			"forge": "getState()",
+			"fabric": "getBlockState()"
+		},
+		{
+			"forge": "getDefinedProperties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "test(BlockInWorld arg0)",
+			"fabric": "test(CachedBlockPosition arg0)"
+		},
+		{
+			"forge": "test(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "test(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "place(ServerLevel arg0, BlockPos arg1, int arg2)",
+			"fabric": "setBlockState(ServerWorld world, BlockPos pos, int flags)"
+		}
+	]
+}

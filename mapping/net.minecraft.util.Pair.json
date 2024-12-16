@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.util.Tuple",
+	"items": [
+		{
+			"forge": "net.minecraft.util.Tuple",
+			"fabric": "net.minecraft.util.Pair"
+		},
+		{
+			"forge": "a",
+			"fabric": "left"
+		},
+		{
+			"forge": "a",
+			"fabric": "left"
+		},
+		{
+			"forge": "b",
+			"fabric": "right"
+		},
+		{
+			"forge": "getA()",
+			"fabric": "getLeft()"
+		},
+		{
+			"forge": "getA()",
+			"fabric": "getLeft()"
+		},
+		{
+			"forge": "setA(A arg0)",
+			"fabric": "setLeft(A left)"
+		},
+		{
+			"forge": "getB()",
+			"fabric": "getRight()"
+		},
+		{
+			"forge": "setB(B arg0)",
+			"fabric": "setRight(B right)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.resources.metadata.language.LanguageMetadataSection",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.metadata.language.LanguageMetadataSection",
+			"fabric": "net.minecraft.client.resource.metadata.LanguageResourceMetadata"
+		},
+		{
+			"forge": "languages",
+			"fabric": "definitions"
+		},
+		{
+			"forge": "languages",
+			"fabric": "definitions"
+		},
+		{
+			"forge": "LANGUAGE_CODE_CODEC",
+			"fabric": "LANGUAGE_CODE_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "SERIALIZER"
+		},
+		{
+			"forge": "languages()",
+			"fabric": "definitions()"
+		},
+		{
+			"forge": "languages()",
+			"fabric": "definitions()"
+		}
+	]
+}

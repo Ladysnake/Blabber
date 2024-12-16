@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.biome.AmbientParticleSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.AmbientParticleSettings",
+			"fabric": "net.minecraft.world.biome.BiomeParticleConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "options",
+			"fabric": "particle"
+		},
+		{
+			"forge": "probability",
+			"fabric": "probability"
+		},
+		{
+			"forge": "getOptions()",
+			"fabric": "getParticle()"
+		},
+		{
+			"forge": "getOptions()",
+			"fabric": "getParticle()"
+		},
+		{
+			"forge": "canSpawn(RandomSource arg0)",
+			"fabric": "shouldAddParticle(Random random)"
+		}
+	]
+}

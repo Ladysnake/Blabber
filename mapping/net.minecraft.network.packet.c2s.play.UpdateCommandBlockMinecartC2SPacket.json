@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundSetCommandMinecartPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundSetCommandMinecartPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.UpdateCommandBlockMinecartC2SPacket"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "command",
+			"fabric": "command"
+		},
+		{
+			"forge": "trackOutput",
+			"fabric": "trackOutput"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getCommandBlock(Level arg0)",
+			"fabric": "getMinecartCommandExecutor(World world)"
+		},
+		{
+			"forge": "getCommand()",
+			"fabric": "getCommand()"
+		},
+		{
+			"forge": "isTrackOutput()",
+			"fabric": "shouldTrackOutput()"
+		}
+	]
+}

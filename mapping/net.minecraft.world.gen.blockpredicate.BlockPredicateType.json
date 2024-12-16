@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blockpredicates.BlockPredicateType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blockpredicates.BlockPredicateType",
+			"fabric": "net.minecraft.world.gen.blockpredicate.BlockPredicateType"
+		},
+		{
+			"forge": "MATCHING_BLOCKS",
+			"fabric": "MATCHING_BLOCKS"
+		},
+		{
+			"forge": "MATCHING_BLOCKS",
+			"fabric": "MATCHING_BLOCKS"
+		},
+		{
+			"forge": "MATCHING_BLOCK_TAG",
+			"fabric": "MATCHING_BLOCK_TAG"
+		},
+		{
+			"forge": "MATCHING_FLUIDS",
+			"fabric": "MATCHING_FLUIDS"
+		},
+		{
+			"forge": "HAS_STURDY_FACE",
+			"fabric": "HAS_STURDY_FACE"
+		},
+		{
+			"forge": "SOLID",
+			"fabric": "SOLID"
+		},
+		{
+			"forge": "REPLACEABLE",
+			"fabric": "REPLACEABLE"
+		},
+		{
+			"forge": "WOULD_SURVIVE",
+			"fabric": "WOULD_SURVIVE"
+		},
+		{
+			"forge": "INSIDE_WORLD_BOUNDS",
+			"fabric": "INSIDE_WORLD_BOUNDS"
+		},
+		{
+			"forge": "ANY_OF",
+			"fabric": "ANY_OF"
+		},
+		{
+			"forge": "ALL_OF",
+			"fabric": "ALL_OF"
+		},
+		{
+			"forge": "NOT",
+			"fabric": "NOT"
+		},
+		{
+			"forge": "TRUE",
+			"fabric": "TRUE"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		}
+	]
+}

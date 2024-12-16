@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.server.packs.resources.CloseableResourceManager",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.CloseableResourceManager",
+			"fabric": "net.minecraft.resource.LifecycledResourceManager"
+		}
+	]
+}

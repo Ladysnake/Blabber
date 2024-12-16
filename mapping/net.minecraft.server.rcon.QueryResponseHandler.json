@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.server.rcon.thread.QueryThreadGs4",
+	"items": [
+		{
+			"forge": "net.minecraft.server.rcon.thread.QueryThreadGs4",
+			"fabric": "net.minecraft.server.rcon.QueryResponseHandler"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GAME_TYPE",
+			"fabric": "GAME_TYPE"
+		},
+		{
+			"forge": "GAME_ID",
+			"fabric": "GAME_ID"
+		},
+		{
+			"forge": "CHALLENGE_CHECK_INTERVAL",
+			"fabric": "CLEAN_UP_THRESHOLD"
+		},
+		{
+			"forge": "RESPONSE_CACHE_TIME",
+			"fabric": "field_29798"
+		},
+		{
+			"forge": "lastChallengeCheck",
+			"fabric": "lastQueryTime"
+		},
+		{
+			"forge": "port",
+			"fabric": "queryPort"
+		},
+		{
+			"forge": "serverPort",
+			"fabric": "port"
+		},
+		{
+			"forge": "maxPlayers",
+			"fabric": "maxPlayerCount"
+		},
+		{
+			"forge": "serverName",
+			"fabric": "motd"
+		},
+		{
+			"forge": "worldName",
+			"fabric": "levelName"
+		},
+		{
+			"forge": "socket",
+			"fabric": "socket"
+		},
+		{
+			"forge": "buffer",
+			"fabric": "packetBuffer"
+		},
+		{
+			"forge": "hostIp",
+			"fabric": "ip"
+		},
+		{
+			"forge": "serverIp",
+			"fabric": "hostname"
+		},
+		{
+			"forge": "validChallenges",
+			"fabric": "queries"
+		},
+		{
+			"forge": "rulesResponse",
+			"fabric": "data"
+		},
+		{
+			"forge": "lastRulesResponse",
+			"fabric": "lastResponseTime"
+		},
+		{
+			"forge": "serverInterface",
+			"fabric": "server"
+		},
+		{
+			"forge": "create(ServerInterface arg0)",
+			"fabric": "create(DedicatedServer server)"
+		},
+		{
+			"forge": "create(ServerInterface arg0)",
+			"fabric": "create(DedicatedServer server)"
+		},
+		{
+			"forge": "sendTo(byte[] arg0, DatagramPacket arg1)",
+			"fabric": "reply(byte[] buf, DatagramPacket packet)"
+		},
+		{
+			"forge": "processPacket(DatagramPacket arg0)",
+			"fabric": "handle(DatagramPacket packet)"
+		},
+		{
+			"forge": "buildRuleResponse(DatagramPacket arg0)",
+			"fabric": "createRulesReply(DatagramPacket packet)"
+		},
+		{
+			"forge": "getIdentBytes(SocketAddress arg0)",
+			"fabric": "getMessageBytes(SocketAddress address)"
+		},
+		{
+			"forge": "validChallenge(DatagramPacket arg0)",
+			"fabric": "isValidQuery(DatagramPacket packet)"
+		},
+		{
+			"forge": "sendChallenge(DatagramPacket arg0)",
+			"fabric": "createQuery(DatagramPacket packet)"
+		},
+		{
+			"forge": "pruneChallenges()",
+			"fabric": "cleanUp()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "recoverSocketError(Exception arg0)",
+			"fabric": "handleIoException(Exception e)"
+		},
+		{
+			"forge": "initSocket()",
+			"fabric": "initialize()"
+		}
+	]
+}

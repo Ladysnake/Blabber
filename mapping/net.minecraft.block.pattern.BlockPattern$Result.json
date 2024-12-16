@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.block.state.pattern.BlockPattern$BlockPatternMatch",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.pattern.BlockPattern$BlockPatternMatch",
+			"fabric": "net.minecraft.block.pattern.BlockPattern$Result"
+		},
+		{
+			"forge": "frontTopLeft",
+			"fabric": "frontTopLeft"
+		},
+		{
+			"forge": "frontTopLeft",
+			"fabric": "frontTopLeft"
+		},
+		{
+			"forge": "forwards",
+			"fabric": "forwards"
+		},
+		{
+			"forge": "up",
+			"fabric": "up"
+		},
+		{
+			"forge": "cache",
+			"fabric": "cache"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "getFrontTopLeft()",
+			"fabric": "getFrontTopLeft()"
+		},
+		{
+			"forge": "getFrontTopLeft()",
+			"fabric": "getFrontTopLeft()"
+		},
+		{
+			"forge": "getForwards()",
+			"fabric": "getForwards()"
+		},
+		{
+			"forge": "getUp()",
+			"fabric": "getUp()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getDepth()",
+			"fabric": "getDepth()"
+		},
+		{
+			"forge": "getBlock(int arg0, int arg1, int arg2)",
+			"fabric": "translate(int offsetLeft, int offsetDown, int offsetForwards)"
+		}
+	]
+}

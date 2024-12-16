@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.data.models.model.DelegatedModel",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.model.DelegatedModel",
+			"fabric": "net.minecraft.data.client.SimpleModelSupplier"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		}
+	]
+}

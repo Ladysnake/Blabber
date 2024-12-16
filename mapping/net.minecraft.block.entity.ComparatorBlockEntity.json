@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.entity.ComparatorBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.ComparatorBlockEntity",
+			"fabric": "net.minecraft.block.entity.ComparatorBlockEntity"
+		},
+		{
+			"forge": "output",
+			"fabric": "outputSignal"
+		},
+		{
+			"forge": "output",
+			"fabric": "outputSignal"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getOutputSignal()",
+			"fabric": "getOutputSignal()"
+		},
+		{
+			"forge": "setOutputSignal(int arg0)",
+			"fabric": "setOutputSignal(int outputSignal)"
+		}
+	]
+}

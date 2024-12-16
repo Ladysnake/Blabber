@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.util.SimpleBitStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.util.SimpleBitStorage",
+			"fabric": "net.minecraft.util.collection.PackedIntegerArray"
+		},
+		{
+			"forge": "MAGIC",
+			"fabric": "INDEX_PARAMETERS"
+		},
+		{
+			"forge": "MAGIC",
+			"fabric": "INDEX_PARAMETERS"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "bits",
+			"fabric": "elementBits"
+		},
+		{
+			"forge": "mask",
+			"fabric": "maxValue"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "valuesPerLong",
+			"fabric": "elementsPerLong"
+		},
+		{
+			"forge": "divideMul",
+			"fabric": "indexScale"
+		},
+		{
+			"forge": "divideAdd",
+			"fabric": "indexOffset"
+		},
+		{
+			"forge": "divideShift",
+			"fabric": "indexShift"
+		},
+		{
+			"forge": "cellIndex(int arg0)",
+			"fabric": "getStorageIndex(int index)"
+		},
+		{
+			"forge": "cellIndex(int arg0)",
+			"fabric": "getStorageIndex(int index)"
+		},
+		{
+			"forge": "getAndSet(int arg0, int arg1)",
+			"fabric": "swap(int arg0, int arg1)"
+		},
+		{
+			"forge": "set(int arg0, int arg1)",
+			"fabric": "set(int arg0, int arg1)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "getRaw()",
+			"fabric": "getData()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getBits()",
+			"fabric": "getElementBits()"
+		},
+		{
+			"forge": "getAll(IntConsumer arg0)",
+			"fabric": "forEach(IntConsumer arg0)"
+		},
+		{
+			"forge": "unpack(int[] arg0)",
+			"fabric": "writePaletteIndices(int[] arg0)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		}
+	]
+}

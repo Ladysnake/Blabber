@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsServerPing",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsServerPing",
+			"fabric": "net.minecraft.client.realms.dto.RealmsServerPing"
+		},
+		{
+			"forge": "nrOfPlayers",
+			"fabric": "nrOfPlayers"
+		},
+		{
+			"forge": "nrOfPlayers",
+			"fabric": "nrOfPlayers"
+		},
+		{
+			"forge": "playerList",
+			"fabric": "playerList"
+		}
+	]
+}

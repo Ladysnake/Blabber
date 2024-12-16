@@ -1,0 +1,141 @@
+{
+	"title": "net.minecraft.world.level.block.DoorBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.DoorBlock",
+			"fabric": "net.minecraft.block.DoorBlock"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "OPEN",
+			"fabric": "OPEN"
+		},
+		{
+			"forge": "HINGE",
+			"fabric": "HINGE"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "HALF",
+			"fabric": "HALF"
+		},
+		{
+			"forge": "AABB_DOOR_THICKNESS",
+			"fabric": "field_31083"
+		},
+		{
+			"forge": "SOUTH_AABB",
+			"fabric": "NORTH_SHAPE"
+		},
+		{
+			"forge": "NORTH_AABB",
+			"fabric": "SOUTH_SHAPE"
+		},
+		{
+			"forge": "WEST_AABB",
+			"fabric": "EAST_SHAPE"
+		},
+		{
+			"forge": "EAST_AABB",
+			"fabric": "WEST_SHAPE"
+		},
+		{
+			"forge": "type",
+			"fabric": "blockSetType"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getBlockSetType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getBlockSetType()"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "playerWillDestroy(Level arg0, BlockPos arg1, BlockState arg2, Player arg3)",
+			"fabric": "onBreak(World arg0, BlockPos arg1, BlockState arg2, PlayerEntity arg3)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "setPlacedBy(Level arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)",
+			"fabric": "onPlaced(World arg0, BlockPos arg1, BlockState arg2, LivingEntity arg3, ItemStack arg4)"
+		},
+		{
+			"forge": "getHinge(BlockPlaceContext arg0)",
+			"fabric": "getHinge(ItemPlacementContext ctx)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "isOpen(BlockState arg0)",
+			"fabric": "isOpen(BlockState state)"
+		},
+		{
+			"forge": "setOpen(Entity arg0, Level arg1, BlockState arg2, BlockPos arg3, boolean arg4)",
+			"fabric": "setOpen(Entity entity, World world, BlockState state, BlockPos pos, boolean open)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "playSound(Entity arg0, Level arg1, BlockPos arg2, boolean arg3)",
+			"fabric": "playOpenCloseSound(Entity entity, World world, BlockPos pos, boolean open)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "getSeed(BlockState arg0, BlockPos arg1)",
+			"fabric": "getRenderingSeed(BlockState arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "isWoodenDoor(Level arg0, BlockPos arg1)",
+			"fabric": "canOpenByHand(World world, BlockPos pos)"
+		},
+		{
+			"forge": "isWoodenDoor(BlockState arg0)",
+			"fabric": "canOpenByHand(BlockState state)"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.item.FireworkRocketItem$Shape",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.FireworkRocketItem$Shape",
+			"fabric": "net.minecraft.item.FireworkRocketItem$Type"
+		},
+		{
+			"forge": "SMALL_BALL",
+			"fabric": "SMALL_BALL"
+		},
+		{
+			"forge": "SMALL_BALL",
+			"fabric": "SMALL_BALL"
+		},
+		{
+			"forge": "LARGE_BALL",
+			"fabric": "LARGE_BALL"
+		},
+		{
+			"forge": "STAR",
+			"fabric": "STAR"
+		},
+		{
+			"forge": "CREEPER",
+			"fabric": "CREEPER"
+		},
+		{
+			"forge": "BURST",
+			"fabric": "BURST"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		}
+	]
+}

@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.LootItemFunctions",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.LootItemFunctions",
+			"fabric": "net.minecraft.loot.function.LootFunctionTypes"
+		},
+		{
+			"forge": "IDENTITY",
+			"fabric": "NOOP"
+		},
+		{
+			"forge": "IDENTITY",
+			"fabric": "NOOP"
+		},
+		{
+			"forge": "SET_COUNT",
+			"fabric": "SET_COUNT"
+		},
+		{
+			"forge": "ENCHANT_WITH_LEVELS",
+			"fabric": "ENCHANT_WITH_LEVELS"
+		},
+		{
+			"forge": "ENCHANT_RANDOMLY",
+			"fabric": "ENCHANT_RANDOMLY"
+		},
+		{
+			"forge": "SET_ENCHANTMENTS",
+			"fabric": "SET_ENCHANTMENTS"
+		},
+		{
+			"forge": "SET_NBT",
+			"fabric": "SET_NBT"
+		},
+		{
+			"forge": "FURNACE_SMELT",
+			"fabric": "FURNACE_SMELT"
+		},
+		{
+			"forge": "LOOTING_ENCHANT",
+			"fabric": "LOOTING_ENCHANT"
+		},
+		{
+			"forge": "SET_DAMAGE",
+			"fabric": "SET_DAMAGE"
+		},
+		{
+			"forge": "SET_ATTRIBUTES",
+			"fabric": "SET_ATTRIBUTES"
+		},
+		{
+			"forge": "SET_NAME",
+			"fabric": "SET_NAME"
+		},
+		{
+			"forge": "EXPLORATION_MAP",
+			"fabric": "EXPLORATION_MAP"
+		},
+		{
+			"forge": "SET_STEW_EFFECT",
+			"fabric": "SET_STEW_EFFECT"
+		},
+		{
+			"forge": "COPY_NAME",
+			"fabric": "COPY_NAME"
+		},
+		{
+			"forge": "SET_CONTENTS",
+			"fabric": "SET_CONTENTS"
+		},
+		{
+			"forge": "LIMIT_COUNT",
+			"fabric": "LIMIT_COUNT"
+		},
+		{
+			"forge": "APPLY_BONUS",
+			"fabric": "APPLY_BONUS"
+		},
+		{
+			"forge": "SET_LOOT_TABLE",
+			"fabric": "SET_LOOT_TABLE"
+		},
+		{
+			"forge": "EXPLOSION_DECAY",
+			"fabric": "EXPLOSION_DECAY"
+		},
+		{
+			"forge": "SET_LORE",
+			"fabric": "SET_LORE"
+		},
+		{
+			"forge": "FILL_PLAYER_HEAD",
+			"fabric": "FILL_PLAYER_HEAD"
+		},
+		{
+			"forge": "COPY_NBT",
+			"fabric": "COPY_NBT"
+		},
+		{
+			"forge": "COPY_STATE",
+			"fabric": "COPY_STATE"
+		},
+		{
+			"forge": "SET_BANNER_PATTERN",
+			"fabric": "SET_BANNER_PATTERN"
+		},
+		{
+			"forge": "SET_POTION",
+			"fabric": "SET_POTION"
+		},
+		{
+			"forge": "SET_INSTRUMENT",
+			"fabric": "SET_INSTRUMENT"
+		},
+		{
+			"forge": "REFERENCE",
+			"fabric": "REFERENCE"
+		},
+		{
+			"forge": "register(String arg0, Serializer<? extends LootItemFunction> arg1)",
+			"fabric": "register(String id, JsonSerializer<? extends LootFunction> jsonSerializer)"
+		},
+		{
+			"forge": "register(String arg0, Serializer<? extends LootItemFunction> arg1)",
+			"fabric": "register(String id, JsonSerializer<? extends LootFunction> jsonSerializer)"
+		},
+		{
+			"forge": "createGsonAdapter()",
+			"fabric": "createGsonSerializer()"
+		},
+		{
+			"forge": "compose(BiFunction<ItemStack, LootContext, ItemStack>[] arg0)",
+			"fabric": "join(BiFunction<ItemStack, LootContext, ItemStack>[] lootFunctions)"
+		}
+	]
+}

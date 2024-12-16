@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.LinearCongruentialGenerator",
+	"items": [
+		{
+			"forge": "net.minecraft.util.LinearCongruentialGenerator",
+			"fabric": "net.minecraft.world.biome.source.SeedMixer"
+		},
+		{
+			"forge": "MULTIPLIER",
+			"fabric": "field_29842"
+		},
+		{
+			"forge": "MULTIPLIER",
+			"fabric": "field_29842"
+		},
+		{
+			"forge": "INCREMENT",
+			"fabric": "field_29843"
+		},
+		{
+			"forge": "next(long arg0, long arg1)",
+			"fabric": "mixSeed(long seed, long salt)"
+		},
+		{
+			"forge": "next(long arg0, long arg1)",
+			"fabric": "mixSeed(long seed, long salt)"
+		}
+	]
+}

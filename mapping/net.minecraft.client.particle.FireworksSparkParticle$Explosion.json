@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.particle.FireworkParticles$SparkParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.FireworkParticles$SparkParticle",
+			"fabric": "net.minecraft.client.particle.FireworksSparkParticle$Explosion"
+		},
+		{
+			"forge": "trail",
+			"fabric": "trail"
+		},
+		{
+			"forge": "trail",
+			"fabric": "trail"
+		},
+		{
+			"forge": "flicker",
+			"fabric": "flicker"
+		},
+		{
+			"forge": "engine",
+			"fabric": "particleManager"
+		},
+		{
+			"forge": "fadeR",
+			"fabric": "field_3801"
+		},
+		{
+			"forge": "fadeG",
+			"fabric": "field_3800"
+		},
+		{
+			"forge": "fadeB",
+			"fabric": "field_3799"
+		},
+		{
+			"forge": "hasFade",
+			"fabric": "field_3802"
+		},
+		{
+			"forge": "setTrail(boolean arg0)",
+			"fabric": "setTrail(boolean trail)"
+		},
+		{
+			"forge": "setTrail(boolean arg0)",
+			"fabric": "setTrail(boolean trail)"
+		},
+		{
+			"forge": "setFlicker(boolean arg0)",
+			"fabric": "setFlicker(boolean flicker)"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemOverrides$BakedOverride",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemOverrides$BakedOverride",
+			"fabric": "net.minecraft.client.render.model.json.ModelOverrideList$BakedOverride"
+		},
+		{
+			"forge": "matchers",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "matchers",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "model",
+			"fabric": "model"
+		},
+		{
+			"forge": "test(float[] arg0)",
+			"fabric": "test(float[] values)"
+		},
+		{
+			"forge": "test(float[] arg0)",
+			"fabric": "test(float[] values)"
+		}
+	]
+}

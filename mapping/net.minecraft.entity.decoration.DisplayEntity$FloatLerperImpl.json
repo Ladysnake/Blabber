@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.Display$LinearFloatInterpolator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Display$LinearFloatInterpolator",
+			"fabric": "net.minecraft.entity.decoration.DisplayEntity$FloatLerperImpl"
+		},
+		{
+			"forge": "previous",
+			"fabric": "previous"
+		},
+		{
+			"forge": "previous",
+			"fabric": "previous"
+		},
+		{
+			"forge": "current",
+			"fabric": "current"
+		},
+		{
+			"forge": "get(float arg0)",
+			"fabric": "lerp(float arg0)"
+		},
+		{
+			"forge": "get(float arg0)",
+			"fabric": "lerp(float arg0)"
+		},
+		{
+			"forge": "previous()",
+			"fabric": "previous()"
+		},
+		{
+			"forge": "current()",
+			"fabric": "current()"
+		}
+	]
+}

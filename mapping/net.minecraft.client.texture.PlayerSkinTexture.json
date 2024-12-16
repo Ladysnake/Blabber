@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.renderer.texture.HttpTexture",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.HttpTexture",
+			"fabric": "net.minecraft.client.texture.PlayerSkinTexture"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SKIN_WIDTH",
+			"fabric": "WIDTH"
+		},
+		{
+			"forge": "SKIN_HEIGHT",
+			"fabric": "HEIGHT"
+		},
+		{
+			"forge": "LEGACY_SKIN_HEIGHT",
+			"fabric": "OLD_HEIGHT"
+		},
+		{
+			"forge": "file",
+			"fabric": "cacheFile"
+		},
+		{
+			"forge": "urlString",
+			"fabric": "url"
+		},
+		{
+			"forge": "processLegacySkin",
+			"fabric": "convertLegacy"
+		},
+		{
+			"forge": "onDownloaded",
+			"fabric": "loadedCallback"
+		},
+		{
+			"forge": "future",
+			"fabric": "loader"
+		},
+		{
+			"forge": "uploaded",
+			"fabric": "loaded"
+		},
+		{
+			"forge": "loadCallback(NativeImage arg0)",
+			"fabric": "onTextureLoaded(NativeImage image)"
+		},
+		{
+			"forge": "loadCallback(NativeImage arg0)",
+			"fabric": "onTextureLoaded(NativeImage image)"
+		},
+		{
+			"forge": "upload(NativeImage arg0)",
+			"fabric": "uploadTexture(NativeImage image)"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager arg0)"
+		},
+		{
+			"forge": "load(InputStream arg0)",
+			"fabric": "loadTexture(InputStream stream)"
+		},
+		{
+			"forge": "processLegacySkin(NativeImage arg0)",
+			"fabric": "remapTexture(NativeImage image)"
+		},
+		{
+			"forge": "doNotchTransparencyHack(NativeImage arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "stripColor(NativeImage image, int x1, int y1, int x2, int y2)"
+		},
+		{
+			"forge": "setNoAlpha(NativeImage arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "stripAlpha(NativeImage image, int x1, int y1, int x2, int y2)"
+		}
+	]
+}

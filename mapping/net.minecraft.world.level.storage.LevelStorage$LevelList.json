@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.storage.LevelStorageSource$LevelCandidates",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.LevelStorageSource$LevelCandidates",
+			"fabric": "net.minecraft.world.level.storage.LevelStorage$LevelList"
+		},
+		{
+			"forge": "levels",
+			"fabric": "levels"
+		},
+		{
+			"forge": "levels",
+			"fabric": "levels"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "levels()",
+			"fabric": "levels()"
+		}
+	]
+}

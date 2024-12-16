@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.entity.animal.Rabbit$Variant",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Rabbit$Variant",
+			"fabric": "net.minecraft.entity.passive.RabbitEntity$RabbitType"
+		},
+		{
+			"forge": "BROWN",
+			"fabric": "BROWN"
+		},
+		{
+			"forge": "BROWN",
+			"fabric": "BROWN"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "BLACK",
+			"fabric": "BLACK"
+		},
+		{
+			"forge": "WHITE_SPLOTCHED",
+			"fabric": "WHITE_SPLOTCHED"
+		},
+		{
+			"forge": "GOLD",
+			"fabric": "GOLD"
+		},
+		{
+			"forge": "SALT",
+			"fabric": "SALT"
+		},
+		{
+			"forge": "EVIL",
+			"fabric": "EVIL"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		}
+	]
+}

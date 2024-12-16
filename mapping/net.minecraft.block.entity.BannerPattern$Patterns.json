@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BannerPattern$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BannerPattern$Builder",
+			"fabric": "net.minecraft.block.entity.BannerPattern$Patterns"
+		},
+		{
+			"forge": "patterns",
+			"fabric": "entries"
+		},
+		{
+			"forge": "patterns",
+			"fabric": "entries"
+		},
+		{
+			"forge": "addPattern(ResourceKey<BannerPattern> arg0, DyeColor arg1)",
+			"fabric": "add(RegistryKey<BannerPattern> pattern, DyeColor color)"
+		},
+		{
+			"forge": "addPattern(ResourceKey<BannerPattern> arg0, DyeColor arg1)",
+			"fabric": "add(RegistryKey<BannerPattern> pattern, DyeColor color)"
+		},
+		{
+			"forge": "addPattern(Holder<BannerPattern> arg0, DyeColor arg1)",
+			"fabric": "add(RegistryEntry<BannerPattern> pattern, DyeColor color)"
+		},
+		{
+			"forge": "addPattern(com.mojang.datafixers.util.Pair<Holder<BannerPattern>, DyeColor> arg0)",
+			"fabric": "add(com.mojang.datafixers.util.Pair<RegistryEntry<BannerPattern>, DyeColor> pattern)"
+		},
+		{
+			"forge": "toListTag()",
+			"fabric": "toNbt()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.core.dispenser.BoatDispenseItemBehavior",
+	"items": [
+		{
+			"forge": "net.minecraft.core.dispenser.BoatDispenseItemBehavior",
+			"fabric": "net.minecraft.block.dispenser.BoatDispenserBehavior"
+		},
+		{
+			"forge": "defaultDispenseItemBehavior",
+			"fabric": "itemDispenser"
+		},
+		{
+			"forge": "defaultDispenseItemBehavior",
+			"fabric": "itemDispenser"
+		},
+		{
+			"forge": "type",
+			"fabric": "boatType"
+		},
+		{
+			"forge": "isChestBoat",
+			"fabric": "chest"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "playSound(BlockSource arg0)",
+			"fabric": "playSound(BlockPointer arg0)"
+		}
+	]
+}

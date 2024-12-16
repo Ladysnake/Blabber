@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.dto.Subscription",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.Subscription",
+			"fabric": "net.minecraft.client.realms.dto.Subscription"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "startDate",
+			"fabric": "startDate"
+		},
+		{
+			"forge": "daysLeft",
+			"fabric": "daysLeft"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "typeFrom(String arg0)",
+			"fabric": "typeFrom(String subscriptionType)"
+		}
+	]
+}

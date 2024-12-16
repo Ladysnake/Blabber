@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.EraseMemoryIf",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.EraseMemoryIf",
+			"fabric": "net.minecraft.entity.ai.brain.task.ForgetTask"
+		},
+		{
+			"forge": "create(Predicate<E> arg0, MemoryModuleType<?> arg1)",
+			"fabric": "create(Predicate<E> condition, MemoryModuleType<?> memory)"
+		},
+		{
+			"forge": "create(Predicate<E> arg0, MemoryModuleType<?> arg1)",
+			"fabric": "create(Predicate<E> condition, MemoryModuleType<?> memory)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.monster.Spider$SpiderEffectsGroupData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Spider$SpiderEffectsGroupData",
+			"fabric": "net.minecraft.entity.mob.SpiderEntity$SpiderData"
+		},
+		{
+			"forge": "effect",
+			"fabric": "effect"
+		},
+		{
+			"forge": "effect",
+			"fabric": "effect"
+		},
+		{
+			"forge": "setRandomEffect(RandomSource arg0)",
+			"fabric": "setEffect(Random random)"
+		},
+		{
+			"forge": "setRandomEffect(RandomSource arg0)",
+			"fabric": "setEffect(Random random)"
+		}
+	]
+}

@@ -1,0 +1,201 @@
+{
+	"title": "net.minecraft.world.item.enchantment.EnchantmentHelper",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.enchantment.EnchantmentHelper",
+			"fabric": "net.minecraft.enchantment.EnchantmentHelper"
+		},
+		{
+			"forge": "TAG_ENCH_ID",
+			"fabric": "ID_KEY"
+		},
+		{
+			"forge": "TAG_ENCH_ID",
+			"fabric": "ID_KEY"
+		},
+		{
+			"forge": "TAG_ENCH_LEVEL",
+			"fabric": "LEVEL_KEY"
+		},
+		{
+			"forge": "SWIFT_SNEAK_EXTRA_FACTOR",
+			"fabric": "field_38222"
+		},
+		{
+			"forge": "storeEnchantment(ResourceLocation arg0, int arg1)",
+			"fabric": "createNbt(Identifier id, int lvl)"
+		},
+		{
+			"forge": "storeEnchantment(ResourceLocation arg0, int arg1)",
+			"fabric": "createNbt(Identifier id, int lvl)"
+		},
+		{
+			"forge": "setEnchantmentLevel(CompoundTag arg0, int arg1)",
+			"fabric": "writeLevelToNbt(NbtCompound nbt, int lvl)"
+		},
+		{
+			"forge": "getEnchantmentLevel(CompoundTag arg0)",
+			"fabric": "getLevelFromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "getEnchantmentId(CompoundTag arg0)",
+			"fabric": "getIdFromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "getEnchantmentId(Enchantment arg0)",
+			"fabric": "getEnchantmentId(Enchantment enchantment)"
+		},
+		{
+			"forge": "getItemEnchantmentLevel(Enchantment arg0, ItemStack arg1)",
+			"fabric": "getLevel(Enchantment enchantment, ItemStack stack)"
+		},
+		{
+			"forge": "getEnchantments(ItemStack arg0)",
+			"fabric": "get(ItemStack stack)"
+		},
+		{
+			"forge": "deserializeEnchantments(ListTag arg0)",
+			"fabric": "fromNbt(NbtList list)"
+		},
+		{
+			"forge": "setEnchantments(Map<Enchantment, Integer> arg0, ItemStack arg1)",
+			"fabric": "set(Map<Enchantment, Integer> enchantments, ItemStack stack)"
+		},
+		{
+			"forge": "runIterationOnItem(EnchantmentHelper$EnchantmentVisitor arg0, ItemStack arg1)",
+			"fabric": "forEachEnchantment(EnchantmentHelper$Consumer consumer, ItemStack stack)"
+		},
+		{
+			"forge": "runIterationOnInventory(EnchantmentHelper$EnchantmentVisitor arg0, Iterable<ItemStack> arg1)",
+			"fabric": "forEachEnchantment(EnchantmentHelper$Consumer consumer, Iterable<ItemStack> stacks)"
+		},
+		{
+			"forge": "getDamageProtection(Iterable<ItemStack> arg0, DamageSource arg1)",
+			"fabric": "getProtectionAmount(Iterable<ItemStack> equipment, DamageSource source)"
+		},
+		{
+			"forge": "getDamageBonus(ItemStack arg0, MobType arg1)",
+			"fabric": "getAttackDamage(ItemStack stack, EntityGroup group)"
+		},
+		{
+			"forge": "getSweepingDamageRatio(LivingEntity arg0)",
+			"fabric": "getSweepingMultiplier(LivingEntity entity)"
+		},
+		{
+			"forge": "doPostHurtEffects(LivingEntity arg0, Entity arg1)",
+			"fabric": "onUserDamaged(LivingEntity user, Entity attacker)"
+		},
+		{
+			"forge": "doPostDamageEffects(LivingEntity arg0, Entity arg1)",
+			"fabric": "onTargetDamaged(LivingEntity user, Entity target)"
+		},
+		{
+			"forge": "getEnchantmentLevel(Enchantment arg0, LivingEntity arg1)",
+			"fabric": "getEquipmentLevel(Enchantment enchantment, LivingEntity entity)"
+		},
+		{
+			"forge": "getSneakingSpeedBonus(LivingEntity arg0)",
+			"fabric": "getSwiftSneakSpeedBoost(LivingEntity entity)"
+		},
+		{
+			"forge": "getKnockbackBonus(LivingEntity arg0)",
+			"fabric": "getKnockback(LivingEntity entity)"
+		},
+		{
+			"forge": "getFireAspect(LivingEntity arg0)",
+			"fabric": "getFireAspect(LivingEntity entity)"
+		},
+		{
+			"forge": "getRespiration(LivingEntity arg0)",
+			"fabric": "getRespiration(LivingEntity entity)"
+		},
+		{
+			"forge": "getDepthStrider(LivingEntity arg0)",
+			"fabric": "getDepthStrider(LivingEntity entity)"
+		},
+		{
+			"forge": "getBlockEfficiency(LivingEntity arg0)",
+			"fabric": "getEfficiency(LivingEntity entity)"
+		},
+		{
+			"forge": "getFishingLuckBonus(ItemStack arg0)",
+			"fabric": "getLuckOfTheSea(ItemStack stack)"
+		},
+		{
+			"forge": "getFishingSpeedBonus(ItemStack arg0)",
+			"fabric": "getLure(ItemStack stack)"
+		},
+		{
+			"forge": "getMobLooting(LivingEntity arg0)",
+			"fabric": "getLooting(LivingEntity entity)"
+		},
+		{
+			"forge": "hasAquaAffinity(LivingEntity arg0)",
+			"fabric": "hasAquaAffinity(LivingEntity entity)"
+		},
+		{
+			"forge": "hasFrostWalker(LivingEntity arg0)",
+			"fabric": "hasFrostWalker(LivingEntity entity)"
+		},
+		{
+			"forge": "hasSoulSpeed(LivingEntity arg0)",
+			"fabric": "hasSoulSpeed(LivingEntity entity)"
+		},
+		{
+			"forge": "hasBindingCurse(ItemStack arg0)",
+			"fabric": "hasBindingCurse(ItemStack stack)"
+		},
+		{
+			"forge": "hasVanishingCurse(ItemStack arg0)",
+			"fabric": "hasVanishingCurse(ItemStack stack)"
+		},
+		{
+			"forge": "hasSilkTouch(ItemStack arg0)",
+			"fabric": "hasSilkTouch(ItemStack stack)"
+		},
+		{
+			"forge": "getLoyalty(ItemStack arg0)",
+			"fabric": "getLoyalty(ItemStack stack)"
+		},
+		{
+			"forge": "getRiptide(ItemStack arg0)",
+			"fabric": "getRiptide(ItemStack stack)"
+		},
+		{
+			"forge": "hasChanneling(ItemStack arg0)",
+			"fabric": "hasChanneling(ItemStack stack)"
+		},
+		{
+			"forge": "getRandomItemWith(Enchantment arg0, LivingEntity arg1)",
+			"fabric": "chooseEquipmentWith(Enchantment enchantment, LivingEntity entity)"
+		},
+		{
+			"forge": "getRandomItemWith(Enchantment arg0, LivingEntity arg1, Predicate<ItemStack> arg2)",
+			"fabric": "chooseEquipmentWith(Enchantment enchantment, LivingEntity entity, Predicate<ItemStack> condition)"
+		},
+		{
+			"forge": "getEnchantmentCost(RandomSource arg0, int arg1, int arg2, ItemStack arg3)",
+			"fabric": "calculateRequiredExperienceLevel(Random random, int slotIndex, int bookshelfCount, ItemStack stack)"
+		},
+		{
+			"forge": "enchantItem(RandomSource arg0, ItemStack arg1, int arg2, boolean arg3)",
+			"fabric": "enchant(Random random, ItemStack target, int level, boolean treasureAllowed)"
+		},
+		{
+			"forge": "selectEnchantment(RandomSource arg0, ItemStack arg1, int arg2, boolean arg3)",
+			"fabric": "generateEnchantments(Random random, ItemStack stack, int level, boolean treasureAllowed)"
+		},
+		{
+			"forge": "filterCompatibleEnchantments(List<EnchantmentInstance> arg0, EnchantmentInstance arg1)",
+			"fabric": "removeConflicts(List<EnchantmentLevelEntry> possibleEntries, EnchantmentLevelEntry pickedEntry)"
+		},
+		{
+			"forge": "isEnchantmentCompatible(Collection<Enchantment> arg0, Enchantment arg1)",
+			"fabric": "isCompatible(Collection<Enchantment> existing, Enchantment candidate)"
+		},
+		{
+			"forge": "getAvailableEnchantmentResults(int arg0, ItemStack arg1, boolean arg2)",
+			"fabric": "getPossibleEntries(int power, ItemStack stack, boolean treasureAllowed)"
+		}
+	]
+}

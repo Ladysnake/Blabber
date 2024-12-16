@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.texture.Dumpable",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.Dumpable",
+			"fabric": "net.minecraft.client.texture.DynamicTexture"
+		},
+		{
+			"forge": "dumpContents(ResourceLocation arg0, Path arg1)",
+			"fabric": "save(Identifier id, Path path)"
+		},
+		{
+			"forge": "dumpContents(ResourceLocation arg0, Path arg1)",
+			"fabric": "save(Identifier id, Path path)"
+		}
+	]
+}

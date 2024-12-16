@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.ai.control.SmoothSwimmingLookControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.control.SmoothSwimmingLookControl",
+			"fabric": "net.minecraft.entity.ai.control.YawAdjustingLookControl"
+		},
+		{
+			"forge": "maxYRotFromCenter",
+			"fabric": "yawAdjustThreshold"
+		},
+		{
+			"forge": "maxYRotFromCenter",
+			"fabric": "yawAdjustThreshold"
+		},
+		{
+			"forge": "HEAD_TILT_X",
+			"fabric": "ADDED_PITCH"
+		},
+		{
+			"forge": "HEAD_TILT_Y",
+			"fabric": "ADDED_YAW"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

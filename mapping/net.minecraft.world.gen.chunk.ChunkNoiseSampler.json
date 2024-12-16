@@ -1,0 +1,265 @@
+{
+	"title": "net.minecraft.world.level.levelgen.NoiseChunk",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.NoiseChunk",
+			"fabric": "net.minecraft.world.gen.chunk.ChunkNoiseSampler"
+		},
+		{
+			"forge": "noiseSettings",
+			"fabric": "generationShapeConfig"
+		},
+		{
+			"forge": "noiseSettings",
+			"fabric": "generationShapeConfig"
+		},
+		{
+			"forge": "cellCountXZ",
+			"fabric": "horizontalCellCount"
+		},
+		{
+			"forge": "cellCountY",
+			"fabric": "verticalCellCount"
+		},
+		{
+			"forge": "cellNoiseMinY",
+			"fabric": "minimumCellY"
+		},
+		{
+			"forge": "firstCellX",
+			"fabric": "startCellX"
+		},
+		{
+			"forge": "firstCellZ",
+			"fabric": "startCellZ"
+		},
+		{
+			"forge": "firstNoiseX",
+			"fabric": "startBiomeX"
+		},
+		{
+			"forge": "firstNoiseZ",
+			"fabric": "startBiomeZ"
+		},
+		{
+			"forge": "interpolators",
+			"fabric": "interpolators"
+		},
+		{
+			"forge": "cellCaches",
+			"fabric": "caches"
+		},
+		{
+			"forge": "wrapped",
+			"fabric": "actualDensityFunctionCache"
+		},
+		{
+			"forge": "preliminarySurfaceLevel",
+			"fabric": "surfaceHeightEstimateCache"
+		},
+		{
+			"forge": "aquifer",
+			"fabric": "aquiferSampler"
+		},
+		{
+			"forge": "initialDensityNoJaggedness",
+			"fabric": "initialDensityWithoutJaggedness"
+		},
+		{
+			"forge": "blockStateRule",
+			"fabric": "blockStateSampler"
+		},
+		{
+			"forge": "blender",
+			"fabric": "blender"
+		},
+		{
+			"forge": "blendAlpha",
+			"fabric": "cachedBlendAlphaDensityFunction"
+		},
+		{
+			"forge": "blendOffset",
+			"fabric": "cachedBlendOffsetDensityFunction"
+		},
+		{
+			"forge": "beardifier",
+			"fabric": "beardifying"
+		},
+		{
+			"forge": "lastBlendingDataPos",
+			"fabric": "lastBlendingColumnPos"
+		},
+		{
+			"forge": "lastBlendingOutput",
+			"fabric": "lastBlendingResult"
+		},
+		{
+			"forge": "noiseSizeXZ",
+			"fabric": "horizontalBiomeEnd"
+		},
+		{
+			"forge": "cellWidth",
+			"fabric": "horizontalCellBlockCount"
+		},
+		{
+			"forge": "cellHeight",
+			"fabric": "verticalCellBlockCount"
+		},
+		{
+			"forge": "interpolating",
+			"fabric": "isInInterpolationLoop"
+		},
+		{
+			"forge": "fillingCell",
+			"fabric": "isSamplingForCaches"
+		},
+		{
+			"forge": "cellStartBlockX",
+			"fabric": "startBlockX"
+		},
+		{
+			"forge": "cellStartBlockY",
+			"fabric": "startBlockY"
+		},
+		{
+			"forge": "cellStartBlockZ",
+			"fabric": "startBlockZ"
+		},
+		{
+			"forge": "inCellX",
+			"fabric": "cellBlockX"
+		},
+		{
+			"forge": "inCellY",
+			"fabric": "cellBlockY"
+		},
+		{
+			"forge": "inCellZ",
+			"fabric": "cellBlockZ"
+		},
+		{
+			"forge": "interpolationCounter",
+			"fabric": "sampleUniqueIndex"
+		},
+		{
+			"forge": "arrayInterpolationCounter",
+			"fabric": "cacheOnceUniqueIndex"
+		},
+		{
+			"forge": "arrayIndex",
+			"fabric": "index"
+		},
+		{
+			"forge": "sliceFillingContextProvider",
+			"fabric": "interpolationEachApplier"
+		},
+		{
+			"forge": "forChunk(ChunkAccess arg0, RandomState arg1, DensityFunctions$BeardifierOrMarker arg2, NoiseGeneratorSettings arg3, Aquifer$FluidPicker arg4, Blender arg5)",
+			"fabric": "create(Chunk chunk, NoiseConfig noiseConfig, DensityFunctionTypes$Beardifying beardifying, ChunkGeneratorSettings chunkGeneratorSettings, AquiferSampler$FluidLevelSampler fluidLevelSampler, Blender blender)"
+		},
+		{
+			"forge": "forChunk(ChunkAccess arg0, RandomState arg1, DensityFunctions$BeardifierOrMarker arg2, NoiseGeneratorSettings arg3, Aquifer$FluidPicker arg4, Blender arg5)",
+			"fabric": "create(Chunk chunk, NoiseConfig noiseConfig, DensityFunctionTypes$Beardifying beardifying, ChunkGeneratorSettings chunkGeneratorSettings, AquiferSampler$FluidLevelSampler fluidLevelSampler, Blender blender)"
+		},
+		{
+			"forge": "cachedClimateSampler(NoiseRouter arg0, List<Climate$ParameterPoint> arg1)",
+			"fabric": "createMultiNoiseSampler(NoiseRouter noiseRouter, List<MultiNoiseUtil$NoiseHypercube> spawnTarget)"
+		},
+		{
+			"forge": "getInterpolatedState()",
+			"fabric": "sampleBlockState()"
+		},
+		{
+			"forge": "blockX()",
+			"fabric": "blockX()"
+		},
+		{
+			"forge": "blockY()",
+			"fabric": "blockY()"
+		},
+		{
+			"forge": "blockZ()",
+			"fabric": "blockZ()"
+		},
+		{
+			"forge": "preliminarySurfaceLevel(int arg0, int arg1)",
+			"fabric": "estimateSurfaceHeight(int blockX, int blockZ)"
+		},
+		{
+			"forge": "computePreliminarySurfaceLevel(long arg0)",
+			"fabric": "calculateSurfaceHeightEstimate(long columnPos)"
+		},
+		{
+			"forge": "getBlender()",
+			"fabric": "getBlender()"
+		},
+		{
+			"forge": "fillSlice(boolean arg0, int arg1)",
+			"fabric": "sampleDensity(boolean start, int cellX)"
+		},
+		{
+			"forge": "initializeForFirstCellX()",
+			"fabric": "sampleStartDensity()"
+		},
+		{
+			"forge": "advanceCellX(int arg0)",
+			"fabric": "sampleEndDensity(int cellX)"
+		},
+		{
+			"forge": "forIndex(int arg0)",
+			"fabric": "at(int arg0)"
+		},
+		{
+			"forge": "fillAllDirectly(double[] arg0, DensityFunction arg1)",
+			"fabric": "fill(double[] arg0, DensityFunction arg1)"
+		},
+		{
+			"forge": "selectCellYZ(int arg0, int arg1)",
+			"fabric": "onSampledCellCorners(int cellY, int cellZ)"
+		},
+		{
+			"forge": "updateForY(int arg0, double arg1)",
+			"fabric": "interpolateY(int blockY, double deltaY)"
+		},
+		{
+			"forge": "updateForX(int arg0, double arg1)",
+			"fabric": "interpolateX(int blockX, double deltaX)"
+		},
+		{
+			"forge": "updateForZ(int arg0, double arg1)",
+			"fabric": "interpolateZ(int blockZ, double deltaZ)"
+		},
+		{
+			"forge": "stopInterpolation()",
+			"fabric": "stopInterpolation()"
+		},
+		{
+			"forge": "swapSlices()",
+			"fabric": "swapBuffers()"
+		},
+		{
+			"forge": "aquifer()",
+			"fabric": "getAquiferSampler()"
+		},
+		{
+			"forge": "cellWidth()",
+			"fabric": "getHorizontalCellBlockCount()"
+		},
+		{
+			"forge": "cellHeight()",
+			"fabric": "getVerticalCellBlockCount()"
+		},
+		{
+			"forge": "getOrComputeBlendingOutput(int arg0, int arg1)",
+			"fabric": "calculateBlendResult(int blockX, int blockZ)"
+		},
+		{
+			"forge": "wrap(DensityFunction arg0)",
+			"fabric": "getActualDensityFunction(DensityFunction function)"
+		},
+		{
+			"forge": "wrapNew(DensityFunction arg0)",
+			"fabric": "getActualDensityFunctionImpl(DensityFunction function)"
+		}
+	]
+}

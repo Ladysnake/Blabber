@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.arguments.ArgumentSignatures$Signer",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.ArgumentSignatures$Signer",
+			"fabric": "net.minecraft.network.message.ArgumentSignatureDataMap$ArgumentSigner"
+		},
+		{
+			"forge": "sign(String arg0)",
+			"fabric": "sign(String value)"
+		},
+		{
+			"forge": "sign(String arg0)",
+			"fabric": "sign(String value)"
+		}
+	]
+}

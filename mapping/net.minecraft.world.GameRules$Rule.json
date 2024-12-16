@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.GameRules$Value",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.GameRules$Value",
+			"fabric": "net.minecraft.world.GameRules$Rule"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "updateFromArgument(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "setFromArgument(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "updateFromArgument(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "setFromArgument(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "setFromArgument(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "set(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "onChanged(MinecraftServer arg0)",
+			"fabric": "changed(MinecraftServer server)"
+		},
+		{
+			"forge": "deserialize(String arg0)",
+			"fabric": "deserialize(String value)"
+		},
+		{
+			"forge": "serialize()",
+			"fabric": "serialize()"
+		},
+		{
+			"forge": "getCommandResult()",
+			"fabric": "getCommandResult()"
+		},
+		{
+			"forge": "getSelf()",
+			"fabric": "getThis()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "setFrom(T arg0, MinecraftServer arg1)",
+			"fabric": "setValue(T rule, MinecraftServer server)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.MushroomCowRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.MushroomCowRenderer",
+			"fabric": "net.minecraft.client.render.entity.MooshroomEntityRenderer"
+		},
+		{
+			"forge": "TEXTURES",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "TEXTURES",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "getTextureLocation(MushroomCow arg0)",
+			"fabric": "getTexture(MooshroomEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(MushroomCow arg0)",
+			"fabric": "getTexture(MooshroomEntity arg0)"
+		}
+	]
+}

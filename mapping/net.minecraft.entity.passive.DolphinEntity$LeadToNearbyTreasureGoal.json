@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.animal.Dolphin$DolphinSwimToTreasureGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Dolphin$DolphinSwimToTreasureGoal",
+			"fabric": "net.minecraft.entity.passive.DolphinEntity$LeadToNearbyTreasureGoal"
+		},
+		{
+			"forge": "dolphin",
+			"fabric": "dolphin"
+		},
+		{
+			"forge": "dolphin",
+			"fabric": "dolphin"
+		},
+		{
+			"forge": "stuck",
+			"fabric": "noPathToStructure"
+		},
+		{
+			"forge": "isInterruptable()",
+			"fabric": "canStop()"
+		},
+		{
+			"forge": "isInterruptable()",
+			"fabric": "canStop()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

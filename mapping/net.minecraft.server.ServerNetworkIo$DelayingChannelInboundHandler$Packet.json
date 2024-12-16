@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.network.ServerConnectionListener$LatencySimulator$DelayedMessage",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.ServerConnectionListener$LatencySimulator$DelayedMessage",
+			"fabric": "net.minecraft.server.ServerNetworkIo$DelayingChannelInboundHandler$Packet"
+		},
+		{
+			"forge": "ctx",
+			"fabric": "context"
+		},
+		{
+			"forge": "ctx",
+			"fabric": "context"
+		},
+		{
+			"forge": "msg",
+			"fabric": "message"
+		}
+	]
+}

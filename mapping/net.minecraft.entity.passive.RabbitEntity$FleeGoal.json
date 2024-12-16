@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.Rabbit$RabbitAvoidEntityGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Rabbit$RabbitAvoidEntityGoal",
+			"fabric": "net.minecraft.entity.passive.RabbitEntity$FleeGoal"
+		},
+		{
+			"forge": "rabbit",
+			"fabric": "rabbit"
+		},
+		{
+			"forge": "rabbit",
+			"fabric": "rabbit"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

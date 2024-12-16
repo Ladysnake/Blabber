@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.server.network.TextFilterClient",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.TextFilterClient",
+			"fabric": "net.minecraft.server.filter.TextFilterer"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "WORKER_COUNT",
+			"fabric": "NEXT_WORKER_ID"
+		},
+		{
+			"forge": "THREAD_FACTORY",
+			"fabric": "THREAD_FACTORY"
+		},
+		{
+			"forge": "DEFAULT_ENDPOINT",
+			"fabric": "CHAT_ENDPOINT"
+		},
+		{
+			"forge": "chatEndpoint",
+			"fabric": "chatEndpoint"
+		},
+		{
+			"forge": "chatEncoder",
+			"fabric": "messageEncoder"
+		},
+		{
+			"forge": "joinEndpoint",
+			"fabric": "joinEndpoint"
+		},
+		{
+			"forge": "joinEncoder",
+			"fabric": "joinEncoder"
+		},
+		{
+			"forge": "leaveEndpoint",
+			"fabric": "leaveEndpoint"
+		},
+		{
+			"forge": "leaveEncoder",
+			"fabric": "leaveEncoder"
+		},
+		{
+			"forge": "authKey",
+			"fabric": "apiKey"
+		},
+		{
+			"forge": "chatIgnoreStrategy",
+			"fabric": "ignorer"
+		},
+		{
+			"forge": "workerPool",
+			"fabric": "executor"
+		},
+		{
+			"forge": "getEndpoint(URI arg0, com.google.gson.JsonObject arg1, String arg2, String arg3)",
+			"fabric": "getEndpoint(URI root, com.google.gson.JsonObject endpoints, String key, String fallback)"
+		},
+		{
+			"forge": "getEndpoint(URI arg0, com.google.gson.JsonObject arg1, String arg2, String arg3)",
+			"fabric": "getEndpoint(URI root, com.google.gson.JsonObject endpoints, String key, String fallback)"
+		},
+		{
+			"forge": "getEndpointFromConfig(com.google.gson.JsonObject arg0, String arg1, String arg2)",
+			"fabric": "getValue(com.google.gson.JsonObject json, String key, String fallback)"
+		},
+		{
+			"forge": "createFromConfig(String arg0)",
+			"fabric": "load(String config)"
+		},
+		{
+			"forge": "processJoinOrLeave(com.mojang.authlib.GameProfile arg0, URL arg1, TextFilterClient$JoinOrLeaveEncoder arg2, Executor arg3)",
+			"fabric": "sendJoinOrLeaveRequest(com.mojang.authlib.GameProfile gameProfile, URL endpoint, TextFilterer$ProfileEncoder profileEncoder, Executor executor)"
+		},
+		{
+			"forge": "requestMessageProcessing(com.mojang.authlib.GameProfile arg0, String arg1, TextFilterClient$IgnoreStrategy arg2, Executor arg3)",
+			"fabric": "filterMessage(com.mojang.authlib.GameProfile gameProfile, String message, TextFilterer$HashIgnorer ignorer, Executor executor)"
+		},
+		{
+			"forge": "parseMask(String arg0, com.google.gson.JsonArray arg1, TextFilterClient$IgnoreStrategy arg2)",
+			"fabric": "getMask(String message, com.google.gson.JsonArray mask, TextFilterer$HashIgnorer ignorer)"
+		},
+		{
+			"forge": "drainStream(InputStream arg0)",
+			"fabric": "consumeFully(InputStream inputStream)"
+		},
+		{
+			"forge": "processRequestResponse(com.google.gson.JsonObject arg0, URL arg1)",
+			"fabric": "sendJsonRequest(com.google.gson.JsonObject payload, URL endpoint)"
+		},
+		{
+			"forge": "processRequest(com.google.gson.JsonObject arg0, URL arg1)",
+			"fabric": "sendRequest(com.google.gson.JsonObject payload, URL endpoint)"
+		},
+		{
+			"forge": "makeRequest(com.google.gson.JsonObject arg0, URL arg1)",
+			"fabric": "createConnection(com.google.gson.JsonObject payload, URL endpoint)"
+		},
+		{
+			"forge": "createContext(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "createFilterer(com.mojang.authlib.GameProfile gameProfile)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.projectile.AbstractArrow$Pickup",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.AbstractArrow$Pickup",
+			"fabric": "net.minecraft.entity.projectile.PersistentProjectileEntity$PickupPermission"
+		},
+		{
+			"forge": "DISALLOWED",
+			"fabric": "DISALLOWED"
+		},
+		{
+			"forge": "DISALLOWED",
+			"fabric": "DISALLOWED"
+		},
+		{
+			"forge": "ALLOWED",
+			"fabric": "ALLOWED"
+		},
+		{
+			"forge": "CREATIVE_ONLY",
+			"fabric": "CREATIVE_ONLY"
+		},
+		{
+			"forge": "byOrdinal(int arg0)",
+			"fabric": "fromOrdinal(int ordinal)"
+		},
+		{
+			"forge": "byOrdinal(int arg0)",
+			"fabric": "fromOrdinal(int ordinal)"
+		}
+	]
+}

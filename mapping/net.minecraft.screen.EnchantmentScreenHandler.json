@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.inventory.EnchantmentMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.EnchantmentMenu",
+			"fabric": "net.minecraft.screen.EnchantmentScreenHandler"
+		},
+		{
+			"forge": "enchantSlots",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "enchantSlots",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "access",
+			"fabric": "context"
+		},
+		{
+			"forge": "random",
+			"fabric": "random"
+		},
+		{
+			"forge": "enchantmentSeed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "costs",
+			"fabric": "enchantmentPower"
+		},
+		{
+			"forge": "enchantClue",
+			"fabric": "enchantmentId"
+		},
+		{
+			"forge": "levelClue",
+			"fabric": "enchantmentLevel"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "slotsChanged(Container arg0)",
+			"fabric": "onContentChanged(Inventory arg0)"
+		},
+		{
+			"forge": "clickMenuButton(Player arg0, int arg1)",
+			"fabric": "onButtonClick(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "getEnchantmentList(ItemStack arg0, int arg1, int arg2)",
+			"fabric": "generateEnchantments(ItemStack stack, int slot, int level)"
+		},
+		{
+			"forge": "getGoldCount()",
+			"fabric": "getLapisCount()"
+		},
+		{
+			"forge": "getEnchantmentSeed()",
+			"fabric": "getSeed()"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		}
+	]
+}

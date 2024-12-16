@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.SystemReport",
+	"items": [
+		{
+			"forge": "net.minecraft.SystemReport",
+			"fabric": "net.minecraft.util.SystemDetails"
+		},
+		{
+			"forge": "BYTES_PER_MEBIBYTE",
+			"fabric": "MEBI"
+		},
+		{
+			"forge": "BYTES_PER_MEBIBYTE",
+			"fabric": "MEBI"
+		},
+		{
+			"forge": "ONE_GIGA",
+			"fabric": "GIGA"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "OPERATING_SYSTEM",
+			"fabric": "OPERATING_SYSTEM"
+		},
+		{
+			"forge": "JAVA_VERSION",
+			"fabric": "JAVA_VERSION"
+		},
+		{
+			"forge": "JAVA_VM_VERSION",
+			"fabric": "JVM_VERSION"
+		},
+		{
+			"forge": "entries",
+			"fabric": "sections"
+		},
+		{
+			"forge": "setDetail(String arg0, String arg1)",
+			"fabric": "addSection(String name, String value)"
+		},
+		{
+			"forge": "setDetail(String arg0, String arg1)",
+			"fabric": "addSection(String name, String value)"
+		},
+		{
+			"forge": "setDetail(String arg0, Supplier<String> arg1)",
+			"fabric": "addSection(String name, Supplier<String> valueSupplier)"
+		},
+		{
+			"forge": "putHardware(oshi.SystemInfo arg0)",
+			"fabric": "addHardwareGroup(oshi.SystemInfo systemInfo)"
+		},
+		{
+			"forge": "ignoreErrors(String arg0, Runnable arg1)",
+			"fabric": "tryAddGroup(String name, Runnable adder)"
+		},
+		{
+			"forge": "putPhysicalMemory(List<oshi.hardware.PhysicalMemory> arg0)",
+			"fabric": "addPhysicalMemoryGroup(List<oshi.hardware.PhysicalMemory> memories)"
+		},
+		{
+			"forge": "putVirtualMemory(oshi.hardware.VirtualMemory arg0)",
+			"fabric": "addVirtualMemoryGroup(oshi.hardware.VirtualMemory virtualMemory)"
+		},
+		{
+			"forge": "putMemory(oshi.hardware.GlobalMemory arg0)",
+			"fabric": "addGlobalMemoryGroup(oshi.hardware.GlobalMemory globalMemory)"
+		},
+		{
+			"forge": "putGraphics(List<oshi.hardware.GraphicsCard> arg0)",
+			"fabric": "addGraphicsCardGroup(List<oshi.hardware.GraphicsCard> graphicsCards)"
+		},
+		{
+			"forge": "putProcessor(oshi.hardware.CentralProcessor arg0)",
+			"fabric": "addProcessorGroup(oshi.hardware.CentralProcessor centralProcessor)"
+		},
+		{
+			"forge": "appendToCrashReportString(StringBuilder arg0)",
+			"fabric": "writeTo(StringBuilder stringBuilder)"
+		},
+		{
+			"forge": "toLineSeparatedString()",
+			"fabric": "collect()"
+		}
+	]
+}

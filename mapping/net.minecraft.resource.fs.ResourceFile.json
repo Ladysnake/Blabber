@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.packs.linkfs.PathContents",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.linkfs.PathContents",
+			"fabric": "net.minecraft.resource.fs.ResourceFile"
+		},
+		{
+			"forge": "MISSING",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "MISSING",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "RELATIVE",
+			"fabric": "RELATIVE"
+		}
+	]
+}

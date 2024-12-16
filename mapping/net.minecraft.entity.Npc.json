@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.entity.npc.Npc",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.Npc",
+			"fabric": "net.minecraft.entity.Npc"
+		}
+	]
+}

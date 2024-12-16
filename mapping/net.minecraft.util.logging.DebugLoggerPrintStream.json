@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.DebugLoggedPrintStream",
+	"items": [
+		{
+			"forge": "net.minecraft.server.DebugLoggedPrintStream",
+			"fabric": "net.minecraft.util.logging.DebugLoggerPrintStream"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "logLine(String arg0)",
+			"fabric": "log(String arg0)"
+		},
+		{
+			"forge": "logLine(String arg0)",
+			"fabric": "log(String arg0)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.chunk.UpgradeData$BlockFixers",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.UpgradeData$BlockFixers",
+			"fabric": "net.minecraft.world.chunk.UpgradeData$BuiltinLogic"
+		},
+		{
+			"forge": "BLACKLIST",
+			"fabric": "BLACKLIST"
+		},
+		{
+			"forge": "BLACKLIST",
+			"fabric": "BLACKLIST"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "CHEST",
+			"fabric": "CHEST"
+		},
+		{
+			"forge": "LEAVES",
+			"fabric": "LEAVES"
+		},
+		{
+			"forge": "STEM_BLOCK",
+			"fabric": "STEM_BLOCK"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "DIRECTIONS"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "DIRECTIONS"
+		}
+	]
+}

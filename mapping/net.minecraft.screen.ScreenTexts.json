@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.network.chat.CommonComponents",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.CommonComponents",
+			"fabric": "net.minecraft.screen.ScreenTexts"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "OPTION_ON",
+			"fabric": "ON"
+		},
+		{
+			"forge": "OPTION_OFF",
+			"fabric": "OFF"
+		},
+		{
+			"forge": "GUI_DONE",
+			"fabric": "DONE"
+		},
+		{
+			"forge": "GUI_CANCEL",
+			"fabric": "CANCEL"
+		},
+		{
+			"forge": "GUI_YES",
+			"fabric": "YES"
+		},
+		{
+			"forge": "GUI_NO",
+			"fabric": "NO"
+		},
+		{
+			"forge": "GUI_OK",
+			"fabric": "OK"
+		},
+		{
+			"forge": "GUI_PROCEED",
+			"fabric": "PROCEED"
+		},
+		{
+			"forge": "GUI_CONTINUE",
+			"fabric": "CONTINUE"
+		},
+		{
+			"forge": "GUI_BACK",
+			"fabric": "BACK"
+		},
+		{
+			"forge": "GUI_TO_TITLE",
+			"fabric": "TO_TITLE"
+		},
+		{
+			"forge": "GUI_ACKNOWLEDGE",
+			"fabric": "ACKNOWLEDGE"
+		},
+		{
+			"forge": "GUI_OPEN_IN_BROWSER",
+			"fabric": "OPEN_LINK"
+		},
+		{
+			"forge": "GUI_COPY_LINK_TO_CLIPBOARD",
+			"fabric": "COPY_LINK_TO_CLIPBOARD"
+		},
+		{
+			"forge": "CONNECT_FAILED",
+			"fabric": "CONNECT_FAILED"
+		},
+		{
+			"forge": "NEW_LINE",
+			"fabric": "LINE_BREAK"
+		},
+		{
+			"forge": "NARRATION_SEPARATOR",
+			"fabric": "SENTENCE_SEPARATOR"
+		},
+		{
+			"forge": "ELLIPSIS",
+			"fabric": "ELLIPSIS"
+		},
+		{
+			"forge": "SPACE",
+			"fabric": "SPACE"
+		},
+		{
+			"forge": "space()",
+			"fabric": "space()"
+		},
+		{
+			"forge": "space()",
+			"fabric": "space()"
+		},
+		{
+			"forge": "days(long arg0)",
+			"fabric": "days(long days)"
+		},
+		{
+			"forge": "hours(long arg0)",
+			"fabric": "hours(long hours)"
+		},
+		{
+			"forge": "minutes(long arg0)",
+			"fabric": "minutes(long minutes)"
+		},
+		{
+			"forge": "optionStatus(boolean arg0)",
+			"fabric": "onOrOff(boolean on)"
+		},
+		{
+			"forge": "optionStatus(Component arg0, boolean arg1)",
+			"fabric": "composeToggleText(Text text, boolean value)"
+		},
+		{
+			"forge": "optionNameValue(Component arg0, Component arg1)",
+			"fabric": "composeGenericOptionText(Text text, Text value)"
+		},
+		{
+			"forge": "joinForNarration(Component... arg0)",
+			"fabric": "joinSentences(Text... sentences)"
+		},
+		{
+			"forge": "joinLines(Component... arg0)",
+			"fabric": "joinLines(Text... texts)"
+		},
+		{
+			"forge": "joinLines(Collection<? extends Component> arg0)",
+			"fabric": "joinLines(Collection<? extends Text> texts)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.gameevent.GameEventDispatcher",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.GameEventDispatcher",
+			"fabric": "net.minecraft.world.event.listener.GameEventDispatchManager"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "post(GameEvent arg0, Vec3 arg1, GameEvent$Context arg2)",
+			"fabric": "dispatch(GameEvent event, Vec3d emitterPos, GameEvent$Emitter emitter)"
+		},
+		{
+			"forge": "post(GameEvent arg0, Vec3 arg1, GameEvent$Context arg2)",
+			"fabric": "dispatch(GameEvent event, Vec3d emitterPos, GameEvent$Emitter emitter)"
+		},
+		{
+			"forge": "handleGameEventMessagesInQueue(List<GameEvent$ListenerInfo> arg0)",
+			"fabric": "dispatchListenersByDistance(List<GameEvent$Message> messages)"
+		}
+	]
+}

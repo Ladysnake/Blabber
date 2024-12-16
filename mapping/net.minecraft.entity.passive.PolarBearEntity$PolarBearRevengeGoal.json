@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.animal.PolarBear$PolarBearHurtByTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.PolarBear$PolarBearHurtByTargetGoal",
+			"fabric": "net.minecraft.entity.passive.PolarBearEntity$PolarBearRevengeGoal"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "alertOther(Mob arg0, LivingEntity arg1)",
+			"fabric": "setMobEntityTarget(MobEntity arg0, LivingEntity arg1)"
+		}
+	]
+}

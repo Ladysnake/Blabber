@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.server.commands.TagCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.TagCommand",
+			"fabric": "net.minecraft.server.command.TagCommand"
+		},
+		{
+			"forge": "ERROR_ADD_FAILED",
+			"fabric": "ADD_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_ADD_FAILED",
+			"fabric": "ADD_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_REMOVE_FAILED",
+			"fabric": "REMOVE_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "getTags(Collection<? extends Entity> arg0)",
+			"fabric": "getTags(Collection<? extends Entity> entities)"
+		},
+		{
+			"forge": "addTag(CommandSourceStack arg0, Collection<? extends Entity> arg1, String arg2)",
+			"fabric": "executeAdd(ServerCommandSource source, Collection<? extends Entity> targets, String tag)"
+		},
+		{
+			"forge": "removeTag(CommandSourceStack arg0, Collection<? extends Entity> arg1, String arg2)",
+			"fabric": "executeRemove(ServerCommandSource source, Collection<? extends Entity> targets, String tag)"
+		},
+		{
+			"forge": "listTags(CommandSourceStack arg0, Collection<? extends Entity> arg1)",
+			"fabric": "executeList(ServerCommandSource source, Collection<? extends Entity> targets)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.main.GameConfig$FolderData",
+	"items": [
+		{
+			"forge": "net.minecraft.client.main.GameConfig$FolderData",
+			"fabric": "net.minecraft.client.RunArgs$Directories"
+		},
+		{
+			"forge": "gameDirectory",
+			"fabric": "runDir"
+		},
+		{
+			"forge": "gameDirectory",
+			"fabric": "runDir"
+		},
+		{
+			"forge": "resourcePackDirectory",
+			"fabric": "resourcePackDir"
+		},
+		{
+			"forge": "assetDirectory",
+			"fabric": "assetDir"
+		},
+		{
+			"forge": "assetIndex",
+			"fabric": "assetIndex"
+		},
+		{
+			"forge": "getExternalAssetSource()",
+			"fabric": "getAssetDir()"
+		},
+		{
+			"forge": "getExternalAssetSource()",
+			"fabric": "getAssetDir()"
+		}
+	]
+}

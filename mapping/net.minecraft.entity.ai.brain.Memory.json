@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.ai.memory.ExpirableValue",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.memory.ExpirableValue",
+			"fabric": "net.minecraft.entity.ai.brain.Memory"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "timeToLive",
+			"fabric": "expiry"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "of(T arg0)",
+			"fabric": "permanent(T value)"
+		},
+		{
+			"forge": "of(T arg0, long arg1)",
+			"fabric": "timed(T value, long expiry)"
+		},
+		{
+			"forge": "getTimeToLive()",
+			"fabric": "getExpiry()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "hasExpired()",
+			"fabric": "isExpired()"
+		},
+		{
+			"forge": "canExpire()",
+			"fabric": "isTimed()"
+		},
+		{
+			"forge": "codec(com.mojang.serialization.Codec<T> arg0)",
+			"fabric": "createCodec(com.mojang.serialization.Codec<T> codec)"
+		}
+	]
+}

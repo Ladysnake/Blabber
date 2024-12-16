@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.navigation.FocusNavigationEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.navigation.FocusNavigationEvent",
+			"fabric": "net.minecraft.client.gui.navigation.GuiNavigation"
+		},
+		{
+			"forge": "getVerticalDirectionForInitialFocus()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "getVerticalDirectionForInitialFocus()",
+			"fabric": "getDirection()"
+		}
+	]
+}

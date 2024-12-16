@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.advancements.CriterionTrigger$Listener",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.CriterionTrigger$Listener",
+			"fabric": "net.minecraft.advancement.criterion.Criterion$ConditionsContainer"
+		},
+		{
+			"forge": "trigger",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "trigger",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "advancement",
+			"fabric": "advancement"
+		},
+		{
+			"forge": "criterion",
+			"fabric": "id"
+		},
+		{
+			"forge": "getTriggerInstance()",
+			"fabric": "getConditions()"
+		},
+		{
+			"forge": "getTriggerInstance()",
+			"fabric": "getConditions()"
+		},
+		{
+			"forge": "run(PlayerAdvancements arg0)",
+			"fabric": "grant(PlayerAdvancementTracker tracker)"
+		}
+	]
+}

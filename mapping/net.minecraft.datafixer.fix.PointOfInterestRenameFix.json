@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.PoiTypeRenameFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.PoiTypeRenameFix",
+			"fabric": "net.minecraft.datafixer.fix.PointOfInterestRenameFix"
+		},
+		{
+			"forge": "renamer",
+			"fabric": "renamer"
+		},
+		{
+			"forge": "renamer",
+			"fabric": "renamer"
+		},
+		{
+			"forge": "processRecords(Stream<com.mojang.serialization.Dynamic<T>> arg0)",
+			"fabric": "update(Stream<com.mojang.serialization.Dynamic<T>> arg0)"
+		},
+		{
+			"forge": "processRecords(Stream<com.mojang.serialization.Dynamic<T>> arg0)",
+			"fabric": "update(Stream<com.mojang.serialization.Dynamic<T>> arg0)"
+		}
+	]
+}

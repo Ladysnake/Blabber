@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.animal.Fox$SleepGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Fox$SleepGoal",
+			"fabric": "net.minecraft.entity.passive.FoxEntity$DelayedCalmDownGoal"
+		},
+		{
+			"forge": "WAIT_TIME_BEFORE_SLEEP",
+			"fabric": "MAX_CALM_DOWN_TIME"
+		},
+		{
+			"forge": "WAIT_TIME_BEFORE_SLEEP",
+			"fabric": "MAX_CALM_DOWN_TIME"
+		},
+		{
+			"forge": "countdown",
+			"fabric": "timer"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "canSleep()",
+			"fabric": "canNotCalmDown()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		}
+	]
+}

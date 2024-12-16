@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator",
+			"fabric": "net.minecraft.world.gen.treedecorator.CocoaBeansTreeDecorator"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "probability",
+			"fabric": "probability"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "place(TreeDecorator$Context arg0)",
+			"fabric": "generate(TreeDecorator$Generator arg0)"
+		}
+	]
+}

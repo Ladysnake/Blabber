@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.UnihexProvider$Definition",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.UnihexProvider$Definition",
+			"fabric": "net.minecraft.client.font.UnihexFont$Loader"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "hexFile",
+			"fabric": "sizes"
+		},
+		{
+			"forge": "sizeOverrides",
+			"fabric": "overrides"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "unpack()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "load(ResourceManager arg0)",
+			"fabric": "load(ResourceManager resourceManager)"
+		},
+		{
+			"forge": "loadData(InputStream arg0)",
+			"fabric": "loadHexFile(InputStream stream)"
+		}
+	]
+}

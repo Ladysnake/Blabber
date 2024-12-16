@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.layouts.LayoutElement",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.layouts.LayoutElement",
+			"fabric": "net.minecraft.client.gui.widget.Widget"
+		},
+		{
+			"forge": "setX(int arg0)",
+			"fabric": "setX(int x)"
+		},
+		{
+			"forge": "setX(int arg0)",
+			"fabric": "setX(int x)"
+		},
+		{
+			"forge": "setY(int arg0)",
+			"fabric": "setY(int y)"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getRectangle()",
+			"fabric": "getNavigationFocus()"
+		},
+		{
+			"forge": "setPosition(int arg0, int arg1)",
+			"fabric": "setPosition(int x, int y)"
+		},
+		{
+			"forge": "visitWidgets(Consumer<AbstractWidget> arg0)",
+			"fabric": "forEachChild(Consumer<ClickableWidget> consumer)"
+		}
+	]
+}

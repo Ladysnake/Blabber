@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.SingleKeyCache",
+	"items": [
+		{
+			"forge": "net.minecraft.util.SingleKeyCache",
+			"fabric": "net.minecraft.util.CachedMapper"
+		},
+		{
+			"forge": "computeValue",
+			"fabric": "mapper"
+		},
+		{
+			"forge": "computeValue",
+			"fabric": "mapper"
+		},
+		{
+			"forge": "cacheKey",
+			"fabric": "cachedInput"
+		},
+		{
+			"forge": "cachedValue",
+			"fabric": "cachedOutput"
+		},
+		{
+			"forge": "getValue(K arg0)",
+			"fabric": "map(K input)"
+		},
+		{
+			"forge": "getValue(K arg0)",
+			"fabric": "map(K input)"
+		}
+	]
+}

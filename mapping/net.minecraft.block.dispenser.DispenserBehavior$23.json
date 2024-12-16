@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.core.dispenser.DispenseItemBehavior$5",
+	"items": [
+		{
+			"forge": "net.minecraft.core.dispenser.DispenseItemBehavior$5",
+			"fabric": "net.minecraft.block.dispenser.DispenserBehavior$23"
+		},
+		{
+			"forge": "getProjectile(Level arg0, Position arg1, ItemStack arg2)",
+			"fabric": "createProjectile(World arg0, Position arg1, ItemStack arg2)"
+		},
+		{
+			"forge": "getProjectile(Level arg0, Position arg1, ItemStack arg2)",
+			"fabric": "createProjectile(World arg0, Position arg1, ItemStack arg2)"
+		}
+	]
+}

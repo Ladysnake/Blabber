@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.EndCityPieces",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.EndCityPieces",
+			"fabric": "net.minecraft.structure.EndCityGenerator"
+		},
+		{
+			"forge": "MAX_GEN_DEPTH",
+			"fabric": "MAX_DEPTH"
+		},
+		{
+			"forge": "MAX_GEN_DEPTH",
+			"fabric": "MAX_DEPTH"
+		},
+		{
+			"forge": "HOUSE_TOWER_GENERATOR",
+			"fabric": "BUILDING"
+		},
+		{
+			"forge": "TOWER_BRIDGES",
+			"fabric": "SMALL_TOWER_BRIDGE_ATTACHMENTS"
+		},
+		{
+			"forge": "TOWER_GENERATOR",
+			"fabric": "SMALL_TOWER"
+		},
+		{
+			"forge": "TOWER_BRIDGE_GENERATOR",
+			"fabric": "BRIDGE_PIECE"
+		},
+		{
+			"forge": "FAT_TOWER_BRIDGES",
+			"fabric": "FAT_TOWER_BRIDGE_ATTACHMENTS"
+		},
+		{
+			"forge": "FAT_TOWER_GENERATOR",
+			"fabric": "FAT_TOWER"
+		},
+		{
+			"forge": "addPiece(StructureTemplateManager arg0, EndCityPieces$EndCityPiece arg1, BlockPos arg2, String arg3, Rotation arg4, boolean arg5)",
+			"fabric": "createPiece(StructureTemplateManager structureTemplateManager, EndCityGenerator$Piece lastPiece, BlockPos relativePosition, String template, BlockRotation rotation, boolean ignoreAir)"
+		},
+		{
+			"forge": "addPiece(StructureTemplateManager arg0, EndCityPieces$EndCityPiece arg1, BlockPos arg2, String arg3, Rotation arg4, boolean arg5)",
+			"fabric": "createPiece(StructureTemplateManager structureTemplateManager, EndCityGenerator$Piece lastPiece, BlockPos relativePosition, String template, BlockRotation rotation, boolean ignoreAir)"
+		},
+		{
+			"forge": "startHouseTower(StructureTemplateManager arg0, BlockPos arg1, Rotation arg2, List<StructurePiece> arg3, RandomSource arg4)",
+			"fabric": "addPieces(StructureTemplateManager structureTemplateManager, BlockPos pos, BlockRotation rotation, List<StructurePiece> pieces, Random random)"
+		},
+		{
+			"forge": "addHelper(List<StructurePiece> arg0, EndCityPieces$EndCityPiece arg1)",
+			"fabric": "addPiece(List<StructurePiece> pieces, EndCityGenerator$Piece piece)"
+		},
+		{
+			"forge": "recursiveChildren(StructureTemplateManager arg0, EndCityPieces$SectionGenerator arg1, int arg2, EndCityPieces$EndCityPiece arg3, BlockPos arg4, List<StructurePiece> arg5, RandomSource arg6)",
+			"fabric": "createPart(StructureTemplateManager manager, EndCityGenerator$Part piece, int depth, EndCityGenerator$Piece parent, BlockPos pos, List<StructurePiece> pieces, Random random)"
+		}
+	]
+}

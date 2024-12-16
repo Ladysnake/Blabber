@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.phys.shapes.DiscreteVoxelShape$IntFaceConsumer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.DiscreteVoxelShape$IntFaceConsumer",
+			"fabric": "net.minecraft.util.shape.VoxelSet$PositionConsumer"
+		},
+		{
+			"forge": "consume(Direction arg0, int arg1, int arg2, int arg3)",
+			"fabric": "consume(Direction direction, int x, int y, int z)"
+		},
+		{
+			"forge": "consume(Direction arg0, int arg1, int arg2, int arg3)",
+			"fabric": "consume(Direction direction, int x, int y, int z)"
+		}
+	]
+}

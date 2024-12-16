@@ -1,0 +1,485 @@
+{
+	"title": "net.minecraft.world.level.block.SoundType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SoundType",
+			"fabric": "net.minecraft.sound.BlockSoundGroup"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "INTENTIONALLY_EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "INTENTIONALLY_EMPTY"
+		},
+		{
+			"forge": "WOOD",
+			"fabric": "WOOD"
+		},
+		{
+			"forge": "GRAVEL",
+			"fabric": "GRAVEL"
+		},
+		{
+			"forge": "GRASS",
+			"fabric": "GRASS"
+		},
+		{
+			"forge": "LILY_PAD",
+			"fabric": "LILY_PAD"
+		},
+		{
+			"forge": "STONE",
+			"fabric": "STONE"
+		},
+		{
+			"forge": "METAL",
+			"fabric": "METAL"
+		},
+		{
+			"forge": "GLASS",
+			"fabric": "GLASS"
+		},
+		{
+			"forge": "WOOL",
+			"fabric": "WOOL"
+		},
+		{
+			"forge": "SAND",
+			"fabric": "SAND"
+		},
+		{
+			"forge": "SNOW",
+			"fabric": "SNOW"
+		},
+		{
+			"forge": "POWDER_SNOW",
+			"fabric": "POWDER_SNOW"
+		},
+		{
+			"forge": "LADDER",
+			"fabric": "LADDER"
+		},
+		{
+			"forge": "ANVIL",
+			"fabric": "ANVIL"
+		},
+		{
+			"forge": "SLIME_BLOCK",
+			"fabric": "SLIME"
+		},
+		{
+			"forge": "HONEY_BLOCK",
+			"fabric": "HONEY"
+		},
+		{
+			"forge": "WET_GRASS",
+			"fabric": "WET_GRASS"
+		},
+		{
+			"forge": "CORAL_BLOCK",
+			"fabric": "CORAL"
+		},
+		{
+			"forge": "BAMBOO",
+			"fabric": "BAMBOO"
+		},
+		{
+			"forge": "BAMBOO_SAPLING",
+			"fabric": "BAMBOO_SAPLING"
+		},
+		{
+			"forge": "SCAFFOLDING",
+			"fabric": "SCAFFOLDING"
+		},
+		{
+			"forge": "SWEET_BERRY_BUSH",
+			"fabric": "SWEET_BERRY_BUSH"
+		},
+		{
+			"forge": "CROP",
+			"fabric": "CROP"
+		},
+		{
+			"forge": "HARD_CROP",
+			"fabric": "STEM"
+		},
+		{
+			"forge": "VINE",
+			"fabric": "VINE"
+		},
+		{
+			"forge": "NETHER_WART",
+			"fabric": "NETHER_WART"
+		},
+		{
+			"forge": "LANTERN",
+			"fabric": "LANTERN"
+		},
+		{
+			"forge": "STEM",
+			"fabric": "NETHER_STEM"
+		},
+		{
+			"forge": "NYLIUM",
+			"fabric": "NYLIUM"
+		},
+		{
+			"forge": "FUNGUS",
+			"fabric": "FUNGUS"
+		},
+		{
+			"forge": "ROOTS",
+			"fabric": "ROOTS"
+		},
+		{
+			"forge": "SHROOMLIGHT",
+			"fabric": "SHROOMLIGHT"
+		},
+		{
+			"forge": "WEEPING_VINES",
+			"fabric": "WEEPING_VINES"
+		},
+		{
+			"forge": "TWISTING_VINES",
+			"fabric": "WEEPING_VINES_LOW_PITCH"
+		},
+		{
+			"forge": "SOUL_SAND",
+			"fabric": "SOUL_SAND"
+		},
+		{
+			"forge": "SOUL_SOIL",
+			"fabric": "SOUL_SOIL"
+		},
+		{
+			"forge": "BASALT",
+			"fabric": "BASALT"
+		},
+		{
+			"forge": "WART_BLOCK",
+			"fabric": "WART_BLOCK"
+		},
+		{
+			"forge": "NETHERRACK",
+			"fabric": "NETHERRACK"
+		},
+		{
+			"forge": "NETHER_BRICKS",
+			"fabric": "NETHER_BRICKS"
+		},
+		{
+			"forge": "NETHER_SPROUTS",
+			"fabric": "NETHER_SPROUTS"
+		},
+		{
+			"forge": "NETHER_ORE",
+			"fabric": "NETHER_ORE"
+		},
+		{
+			"forge": "BONE_BLOCK",
+			"fabric": "BONE"
+		},
+		{
+			"forge": "NETHERITE_BLOCK",
+			"fabric": "NETHERITE"
+		},
+		{
+			"forge": "ANCIENT_DEBRIS",
+			"fabric": "ANCIENT_DEBRIS"
+		},
+		{
+			"forge": "LODESTONE",
+			"fabric": "LODESTONE"
+		},
+		{
+			"forge": "CHAIN",
+			"fabric": "CHAIN"
+		},
+		{
+			"forge": "NETHER_GOLD_ORE",
+			"fabric": "NETHER_GOLD_ORE"
+		},
+		{
+			"forge": "GILDED_BLACKSTONE",
+			"fabric": "GILDED_BLACKSTONE"
+		},
+		{
+			"forge": "CANDLE",
+			"fabric": "CANDLE"
+		},
+		{
+			"forge": "AMETHYST",
+			"fabric": "AMETHYST_BLOCK"
+		},
+		{
+			"forge": "AMETHYST_CLUSTER",
+			"fabric": "AMETHYST_CLUSTER"
+		},
+		{
+			"forge": "SMALL_AMETHYST_BUD",
+			"fabric": "SMALL_AMETHYST_BUD"
+		},
+		{
+			"forge": "MEDIUM_AMETHYST_BUD",
+			"fabric": "MEDIUM_AMETHYST_BUD"
+		},
+		{
+			"forge": "LARGE_AMETHYST_BUD",
+			"fabric": "LARGE_AMETHYST_BUD"
+		},
+		{
+			"forge": "TUFF",
+			"fabric": "TUFF"
+		},
+		{
+			"forge": "CALCITE",
+			"fabric": "CALCITE"
+		},
+		{
+			"forge": "DRIPSTONE_BLOCK",
+			"fabric": "DRIPSTONE_BLOCK"
+		},
+		{
+			"forge": "POINTED_DRIPSTONE",
+			"fabric": "POINTED_DRIPSTONE"
+		},
+		{
+			"forge": "COPPER",
+			"fabric": "COPPER"
+		},
+		{
+			"forge": "CAVE_VINES",
+			"fabric": "CAVE_VINES"
+		},
+		{
+			"forge": "SPORE_BLOSSOM",
+			"fabric": "SPORE_BLOSSOM"
+		},
+		{
+			"forge": "AZALEA",
+			"fabric": "AZALEA"
+		},
+		{
+			"forge": "FLOWERING_AZALEA",
+			"fabric": "FLOWERING_AZALEA"
+		},
+		{
+			"forge": "MOSS_CARPET",
+			"fabric": "MOSS_CARPET"
+		},
+		{
+			"forge": "PINK_PETALS",
+			"fabric": "PINK_PETALS"
+		},
+		{
+			"forge": "MOSS",
+			"fabric": "MOSS_BLOCK"
+		},
+		{
+			"forge": "BIG_DRIPLEAF",
+			"fabric": "BIG_DRIPLEAF"
+		},
+		{
+			"forge": "SMALL_DRIPLEAF",
+			"fabric": "SMALL_DRIPLEAF"
+		},
+		{
+			"forge": "ROOTED_DIRT",
+			"fabric": "ROOTED_DIRT"
+		},
+		{
+			"forge": "HANGING_ROOTS",
+			"fabric": "HANGING_ROOTS"
+		},
+		{
+			"forge": "AZALEA_LEAVES",
+			"fabric": "AZALEA_LEAVES"
+		},
+		{
+			"forge": "SCULK_SENSOR",
+			"fabric": "SCULK_SENSOR"
+		},
+		{
+			"forge": "SCULK_CATALYST",
+			"fabric": "SCULK_CATALYST"
+		},
+		{
+			"forge": "SCULK",
+			"fabric": "SCULK"
+		},
+		{
+			"forge": "SCULK_VEIN",
+			"fabric": "SCULK_VEIN"
+		},
+		{
+			"forge": "SCULK_SHRIEKER",
+			"fabric": "SCULK_SHRIEKER"
+		},
+		{
+			"forge": "GLOW_LICHEN",
+			"fabric": "GLOW_LICHEN"
+		},
+		{
+			"forge": "DEEPSLATE",
+			"fabric": "DEEPSLATE"
+		},
+		{
+			"forge": "DEEPSLATE_BRICKS",
+			"fabric": "DEEPSLATE_BRICKS"
+		},
+		{
+			"forge": "DEEPSLATE_TILES",
+			"fabric": "DEEPSLATE_TILES"
+		},
+		{
+			"forge": "POLISHED_DEEPSLATE",
+			"fabric": "POLISHED_DEEPSLATE"
+		},
+		{
+			"forge": "FROGLIGHT",
+			"fabric": "FROGLIGHT"
+		},
+		{
+			"forge": "FROGSPAWN",
+			"fabric": "FROGSPAWN"
+		},
+		{
+			"forge": "MANGROVE_ROOTS",
+			"fabric": "MANGROVE_ROOTS"
+		},
+		{
+			"forge": "MUDDY_MANGROVE_ROOTS",
+			"fabric": "MUDDY_MANGROVE_ROOTS"
+		},
+		{
+			"forge": "MUD",
+			"fabric": "MUD"
+		},
+		{
+			"forge": "MUD_BRICKS",
+			"fabric": "MUD_BRICKS"
+		},
+		{
+			"forge": "PACKED_MUD",
+			"fabric": "PACKED_MUD"
+		},
+		{
+			"forge": "HANGING_SIGN",
+			"fabric": "HANGING_SIGN"
+		},
+		{
+			"forge": "NETHER_WOOD_HANGING_SIGN",
+			"fabric": "NETHER_WOOD_HANGING_SIGN"
+		},
+		{
+			"forge": "BAMBOO_WOOD_HANGING_SIGN",
+			"fabric": "BAMBOO_WOOD_HANGING_SIGN"
+		},
+		{
+			"forge": "BAMBOO_WOOD",
+			"fabric": "BAMBOO_WOOD"
+		},
+		{
+			"forge": "NETHER_WOOD",
+			"fabric": "NETHER_WOOD"
+		},
+		{
+			"forge": "CHERRY_WOOD",
+			"fabric": "CHERRY_WOOD"
+		},
+		{
+			"forge": "CHERRY_SAPLING",
+			"fabric": "CHERRY_SAPLING"
+		},
+		{
+			"forge": "CHERRY_LEAVES",
+			"fabric": "CHERRY_LEAVES"
+		},
+		{
+			"forge": "CHERRY_WOOD_HANGING_SIGN",
+			"fabric": "CHERRY_WOOD_HANGING_SIGN"
+		},
+		{
+			"forge": "CHISELED_BOOKSHELF",
+			"fabric": "CHISELED_BOOKSHELF"
+		},
+		{
+			"forge": "SUSPICIOUS_SAND",
+			"fabric": "SUSPICIOUS_SAND"
+		},
+		{
+			"forge": "SUSPICIOUS_GRAVEL",
+			"fabric": "SUSPICIOUS_GRAVEL"
+		},
+		{
+			"forge": "DECORATED_POT",
+			"fabric": "DECORATED_POT"
+		},
+		{
+			"forge": "DECORATED_POT_CRACKED",
+			"fabric": "DECORATED_POT_SHATTER"
+		},
+		{
+			"forge": "volume",
+			"fabric": "volume"
+		},
+		{
+			"forge": "pitch",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "breakSound",
+			"fabric": "breakSound"
+		},
+		{
+			"forge": "stepSound",
+			"fabric": "stepSound"
+		},
+		{
+			"forge": "placeSound",
+			"fabric": "placeSound"
+		},
+		{
+			"forge": "hitSound",
+			"fabric": "hitSound"
+		},
+		{
+			"forge": "fallSound",
+			"fabric": "fallSound"
+		},
+		{
+			"forge": "getVolume()",
+			"fabric": "getVolume()"
+		},
+		{
+			"forge": "getVolume()",
+			"fabric": "getVolume()"
+		},
+		{
+			"forge": "getPitch()",
+			"fabric": "getPitch()"
+		},
+		{
+			"forge": "getBreakSound()",
+			"fabric": "getBreakSound()"
+		},
+		{
+			"forge": "getStepSound()",
+			"fabric": "getStepSound()"
+		},
+		{
+			"forge": "getPlaceSound()",
+			"fabric": "getPlaceSound()"
+		},
+		{
+			"forge": "getHitSound()",
+			"fabric": "getHitSound()"
+		},
+		{
+			"forge": "getFallSound()",
+			"fabric": "getFallSound()"
+		}
+	]
+}

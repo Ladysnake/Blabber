@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.projectile.SmallFireball",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.SmallFireball",
+			"fabric": "net.minecraft.entity.projectile.SmallFireballEntity"
+		},
+		{
+			"forge": "onHitEntity(EntityHitResult arg0)",
+			"fabric": "onEntityHit(EntityHitResult arg0)"
+		},
+		{
+			"forge": "onHitEntity(EntityHitResult arg0)",
+			"fabric": "onEntityHit(EntityHitResult arg0)"
+		},
+		{
+			"forge": "onHitBlock(BlockHitResult arg0)",
+			"fabric": "onBlockHit(BlockHitResult arg0)"
+		},
+		{
+			"forge": "onHit(HitResult arg0)",
+			"fabric": "onCollision(HitResult arg0)"
+		},
+		{
+			"forge": "isPickable()",
+			"fabric": "canHit()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		}
+	]
+}

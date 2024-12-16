@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.block.state.pattern.BlockInWorld",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.pattern.BlockInWorld",
+			"fabric": "net.minecraft.block.pattern.CachedBlockPosition"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "loadChunks",
+			"fabric": "forceLoad"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "entity",
+			"fabric": "blockEntity"
+		},
+		{
+			"forge": "cachedEntity",
+			"fabric": "cachedEntity"
+		},
+		{
+			"forge": "getState()",
+			"fabric": "getBlockState()"
+		},
+		{
+			"forge": "getState()",
+			"fabric": "getBlockState()"
+		},
+		{
+			"forge": "getEntity()",
+			"fabric": "getBlockEntity()"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getBlockPos()"
+		},
+		{
+			"forge": "hasState(Predicate<BlockState> arg0)",
+			"fabric": "matchesBlockState(Predicate<BlockState> state)"
+		}
+	]
+}

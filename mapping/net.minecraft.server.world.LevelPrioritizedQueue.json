@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.server.level.ChunkTaskPriorityQueue",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ChunkTaskPriorityQueue",
+			"fabric": "net.minecraft.server.world.LevelPrioritizedQueue"
+		},
+		{
+			"forge": "PRIORITY_LEVEL_COUNT",
+			"fabric": "LEVEL_COUNT"
+		},
+		{
+			"forge": "PRIORITY_LEVEL_COUNT",
+			"fabric": "LEVEL_COUNT"
+		},
+		{
+			"forge": "taskQueue",
+			"fabric": "levelToPosToElements"
+		},
+		{
+			"forge": "firstQueue",
+			"fabric": "firstNonEmptyLevel"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "acquired",
+			"fabric": "blockingChunks"
+		},
+		{
+			"forge": "maxTasks",
+			"fabric": "maxBlocking"
+		},
+		{
+			"forge": "resortChunkTasks(int arg0, ChunkPos arg1, int arg2)",
+			"fabric": "updateLevel(int fromLevel, ChunkPos pos, int toLevel)"
+		},
+		{
+			"forge": "resortChunkTasks(int arg0, ChunkPos arg1, int arg2)",
+			"fabric": "updateLevel(int fromLevel, ChunkPos pos, int toLevel)"
+		},
+		{
+			"forge": "submit(Optional<T> arg0, long arg1, int arg2)",
+			"fabric": "add(Optional<T> element, long pos, int level)"
+		},
+		{
+			"forge": "release(long arg0, boolean arg1)",
+			"fabric": "remove(long pos, boolean removeElement)"
+		},
+		{
+			"forge": "acquire(long arg0)",
+			"fabric": "createBlockingAdder(long pos)"
+		},
+		{
+			"forge": "pop()",
+			"fabric": "poll()"
+		},
+		{
+			"forge": "hasWork()",
+			"fabric": "hasQueuedElement()"
+		},
+		{
+			"forge": "getAcquired()",
+			"fabric": "getBlockingChunks()"
+		}
+	]
+}

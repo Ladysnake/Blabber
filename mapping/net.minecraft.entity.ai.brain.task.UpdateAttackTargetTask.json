@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.StartAttacking",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.StartAttacking",
+			"fabric": "net.minecraft.entity.ai.brain.task.UpdateAttackTargetTask"
+		},
+		{
+			"forge": "create(Function<E, Optional<? extends LivingEntity>> arg0)",
+			"fabric": "create(Function<E, Optional<? extends LivingEntity>> targetGetter)"
+		},
+		{
+			"forge": "create(Function<E, Optional<? extends LivingEntity>> arg0)",
+			"fabric": "create(Function<E, Optional<? extends LivingEntity>> targetGetter)"
+		},
+		{
+			"forge": "create(Predicate<E> arg0, Function<E, Optional<? extends LivingEntity>> arg1)",
+			"fabric": "create(Predicate<E> startCondition, Function<E, Optional<? extends LivingEntity>> targetGetter)"
+		}
+	]
+}

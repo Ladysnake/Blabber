@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.block.SpongeBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SpongeBlock",
+			"fabric": "net.minecraft.block.SpongeBlock"
+		},
+		{
+			"forge": "MAX_DEPTH",
+			"fabric": "field_31250"
+		},
+		{
+			"forge": "MAX_DEPTH",
+			"fabric": "field_31250"
+		},
+		{
+			"forge": "MAX_COUNT",
+			"fabric": "field_31251"
+		},
+		{
+			"forge": "ALL_DIRECTIONS",
+			"fabric": "field_43257"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "tryAbsorbWater(Level arg0, BlockPos arg1)",
+			"fabric": "update(World world, BlockPos pos)"
+		},
+		{
+			"forge": "removeWaterBreadthFirstSearch(Level arg0, BlockPos arg1)",
+			"fabric": "absorbWater(World world, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.data.loot.EntityLootSubProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.loot.EntityLootSubProvider",
+			"fabric": "net.minecraft.data.server.loottable.EntityLootTableGenerator"
+		},
+		{
+			"forge": "ENTITY_ON_FIRE",
+			"fabric": "NEEDS_ENTITY_ON_FIRE"
+		},
+		{
+			"forge": "ENTITY_ON_FIRE",
+			"fabric": "NEEDS_ENTITY_ON_FIRE"
+		},
+		{
+			"forge": "SPECIAL_LOOT_TABLE_TYPES",
+			"fabric": "ENTITY_TYPES_IN_MISC_GROUP_TO_CHECK"
+		},
+		{
+			"forge": "allowed",
+			"fabric": "requiredFeatures"
+		},
+		{
+			"forge": "required",
+			"fabric": "featureSet"
+		},
+		{
+			"forge": "map",
+			"fabric": "lootTables"
+		},
+		{
+			"forge": "createSheepTable(ItemLike arg0)",
+			"fabric": "createForSheep(ItemConvertible item)"
+		},
+		{
+			"forge": "createSheepTable(ItemLike arg0)",
+			"fabric": "createForSheep(ItemConvertible item)"
+		},
+		{
+			"forge": "generate()",
+			"fabric": "generate()"
+		},
+		{
+			"forge": "generate(BiConsumer<ResourceLocation, LootTable$Builder> arg0)",
+			"fabric": "accept(BiConsumer<Identifier, LootTable$Builder> arg0)"
+		},
+		{
+			"forge": "canHaveLootTable(EntityType<?> arg0)",
+			"fabric": "shouldCheck(EntityType<?> entityType)"
+		},
+		{
+			"forge": "killedByFrog()",
+			"fabric": "killedByFrog()"
+		},
+		{
+			"forge": "killedByFrogVariant(FrogVariant arg0)",
+			"fabric": "killedByFrog(FrogVariant variant)"
+		},
+		{
+			"forge": "add(EntityType<?> arg0, LootTable$Builder arg1)",
+			"fabric": "register(EntityType<?> entityType, LootTable$Builder lootTable)"
+		},
+		{
+			"forge": "add(EntityType<?> arg0, ResourceLocation arg1, LootTable$Builder arg2)",
+			"fabric": "register(EntityType<?> entityType, Identifier entityId, LootTable$Builder lootTable)"
+		}
+	]
+}

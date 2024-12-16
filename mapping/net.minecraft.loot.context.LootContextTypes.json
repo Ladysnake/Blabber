@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSets",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSets",
+			"fabric": "net.minecraft.loot.context.LootContextTypes"
+		},
+		{
+			"forge": "REGISTRY",
+			"fabric": "MAP"
+		},
+		{
+			"forge": "REGISTRY",
+			"fabric": "MAP"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "CHEST",
+			"fabric": "CHEST"
+		},
+		{
+			"forge": "COMMAND",
+			"fabric": "COMMAND"
+		},
+		{
+			"forge": "SELECTOR",
+			"fabric": "SELECTOR"
+		},
+		{
+			"forge": "FISHING",
+			"fabric": "FISHING"
+		},
+		{
+			"forge": "ENTITY",
+			"fabric": "ENTITY"
+		},
+		{
+			"forge": "ARCHAEOLOGY",
+			"fabric": "ARCHAEOLOGY"
+		},
+		{
+			"forge": "GIFT",
+			"fabric": "GIFT"
+		},
+		{
+			"forge": "PIGLIN_BARTER",
+			"fabric": "BARTER"
+		},
+		{
+			"forge": "ADVANCEMENT_REWARD",
+			"fabric": "ADVANCEMENT_REWARD"
+		},
+		{
+			"forge": "ADVANCEMENT_ENTITY",
+			"fabric": "ADVANCEMENT_ENTITY"
+		},
+		{
+			"forge": "ADVANCEMENT_LOCATION",
+			"fabric": "ADVANCEMENT_LOCATION"
+		},
+		{
+			"forge": "ALL_PARAMS",
+			"fabric": "GENERIC"
+		},
+		{
+			"forge": "BLOCK",
+			"fabric": "BLOCK"
+		},
+		{
+			"forge": "register(String arg0, Consumer<LootContextParamSet$Builder> arg1)",
+			"fabric": "register(String name, Consumer<LootContextType$Builder> type)"
+		},
+		{
+			"forge": "register(String arg0, Consumer<LootContextParamSet$Builder> arg1)",
+			"fabric": "register(String name, Consumer<LootContextType$Builder> type)"
+		},
+		{
+			"forge": "get(ResourceLocation arg0)",
+			"fabric": "get(Identifier id)"
+		},
+		{
+			"forge": "getKey(LootContextParamSet arg0)",
+			"fabric": "getId(LootContextType type)"
+		}
+	]
+}

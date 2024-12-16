@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.flag.FeatureFlagRegistry",
+	"items": [
+		{
+			"forge": "net.minecraft.world.flag.FeatureFlagRegistry",
+			"fabric": "net.minecraft.resource.featuretoggle.FeatureManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "universe",
+			"fabric": "universe"
+		},
+		{
+			"forge": "names",
+			"fabric": "featureFlags"
+		},
+		{
+			"forge": "allFlags",
+			"fabric": "featureSet"
+		},
+		{
+			"forge": "isSubset(FeatureFlagSet arg0)",
+			"fabric": "contains(FeatureSet features)"
+		},
+		{
+			"forge": "isSubset(FeatureFlagSet arg0)",
+			"fabric": "contains(FeatureSet features)"
+		},
+		{
+			"forge": "allFlags()",
+			"fabric": "getFeatureSet()"
+		},
+		{
+			"forge": "fromNames(Iterable<ResourceLocation> arg0)",
+			"fabric": "featureSetOf(Iterable<Identifier> features)"
+		},
+		{
+			"forge": "subset(FeatureFlag... arg0)",
+			"fabric": "featureSetOf(FeatureFlag... features)"
+		},
+		{
+			"forge": "fromNames(Iterable<ResourceLocation> arg0, Consumer<ResourceLocation> arg1)",
+			"fabric": "featureSetOf(Iterable<Identifier> features, Consumer<Identifier> unknownFlagConsumer)"
+		},
+		{
+			"forge": "toNames(FeatureFlagSet arg0)",
+			"fabric": "toId(FeatureSet features)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		}
+	]
+}

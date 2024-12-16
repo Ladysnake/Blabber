@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityMinecartIdentifiersFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityMinecartIdentifiersFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityMinecartIdentifiersFix"
+		},
+		{
+			"forge": "MINECART_BY_ID",
+			"fabric": "MINECARTS"
+		},
+		{
+			"forge": "MINECART_BY_ID",
+			"fabric": "MINECARTS"
+		}
+	]
+}

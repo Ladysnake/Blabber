@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.screens.PresetFlatWorldScreen$PresetsList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.PresetFlatWorldScreen$PresetsList",
+			"fabric": "net.minecraft.client.gui.screen.PresetsScreen$SuperflatPresetsListWidget"
+		},
+		{
+			"forge": "setSelected(PresetFlatWorldScreen$PresetsList$Entry arg0)",
+			"fabric": "setSelected(PresetsScreen$SuperflatPresetsListWidget$SuperflatPresetEntry arg0)"
+		},
+		{
+			"forge": "setSelected(PresetFlatWorldScreen$PresetsList$Entry arg0)",
+			"fabric": "setSelected(PresetsScreen$SuperflatPresetsListWidget$SuperflatPresetEntry arg0)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		}
+	]
+}

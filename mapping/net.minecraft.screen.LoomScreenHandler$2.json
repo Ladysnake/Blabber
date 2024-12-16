@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.inventory.LoomMenu$2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.LoomMenu$2",
+			"fabric": "net.minecraft.screen.LoomScreenHandler$2"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		}
+	]
+}

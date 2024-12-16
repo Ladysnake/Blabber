@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure$Type",
+			"fabric": "net.minecraft.world.gen.structure.MineshaftStructure$Type"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "MESA",
+			"fabric": "MESA"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "woodState",
+			"fabric": "log"
+		},
+		{
+			"forge": "planksState",
+			"fabric": "planks"
+		},
+		{
+			"forge": "fenceState",
+			"fabric": "fence"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "getWoodState()",
+			"fabric": "getLog()"
+		},
+		{
+			"forge": "getPlanksState()",
+			"fabric": "getPlanks()"
+		},
+		{
+			"forge": "getFenceState()",
+			"fabric": "getFence()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

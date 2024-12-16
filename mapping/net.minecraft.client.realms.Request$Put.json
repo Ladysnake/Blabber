@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.realmsclient.client.Request$Put",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.client.Request$Put",
+			"fabric": "net.minecraft.client.realms.Request$Put"
+		},
+		{
+			"forge": "content",
+			"fabric": "content"
+		},
+		{
+			"forge": "content",
+			"fabric": "content"
+		},
+		{
+			"forge": "doConnect()",
+			"fabric": "doConnect()"
+		},
+		{
+			"forge": "doConnect()",
+			"fabric": "doConnect()"
+		}
+	]
+}

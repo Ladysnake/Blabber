@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.SimpleMenuProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.SimpleMenuProvider",
+			"fabric": "net.minecraft.screen.SimpleNamedScreenHandlerFactory"
+		},
+		{
+			"forge": "title",
+			"fabric": "name"
+		},
+		{
+			"forge": "title",
+			"fabric": "name"
+		},
+		{
+			"forge": "menuConstructor",
+			"fabric": "baseFactory"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1, Player arg2)",
+			"fabric": "createMenu(int arg0, PlayerInventory arg1, PlayerEntity arg2)"
+		}
+	]
+}

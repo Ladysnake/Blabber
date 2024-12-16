@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.Clear",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.Clear",
+			"fabric": "net.minecraft.structure.rule.blockentity.ClearRuleBlockEntityModifier"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "apply(RandomSource arg0, CompoundTag arg1)",
+			"fabric": "modifyBlockEntityNbt(Random arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "apply(RandomSource arg0, CompoundTag arg1)",
+			"fabric": "modifyBlockEntityNbt(Random arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

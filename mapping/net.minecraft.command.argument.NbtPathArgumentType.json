@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.commands.arguments.NbtPathArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.NbtPathArgument",
+			"fabric": "net.minecraft.command.argument.NbtPathArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_INVALID_NODE",
+			"fabric": "INVALID_PATH_NODE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_DATA_TOO_DEEP",
+			"fabric": "TOO_DEEP_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NOTHING_FOUND",
+			"fabric": "NOTHING_FOUND_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_EXPECTED_LIST",
+			"fabric": "EXPECTED_LIST_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INVALID_INDEX",
+			"fabric": "INVALID_INDEX_EXCEPTION"
+		},
+		{
+			"forge": "INDEX_MATCH_START",
+			"fabric": "LEFT_SQUARE_BRACKET"
+		},
+		{
+			"forge": "INDEX_MATCH_END",
+			"fabric": "RIGHT_SQUARE_BRACKET"
+		},
+		{
+			"forge": "KEY_MATCH_START",
+			"fabric": "LEFT_CURLY_BRACKET"
+		},
+		{
+			"forge": "KEY_MATCH_END",
+			"fabric": "RIGHT_CURLY_BRACKET"
+		},
+		{
+			"forge": "QUOTED_KEY_START",
+			"fabric": "DOUBLE_QUOTE"
+		},
+		{
+			"forge": "SINGLE_QUOTED_KEY_START",
+			"fabric": "SINGLE_QUOTE"
+		},
+		{
+			"forge": "nbtPath()",
+			"fabric": "nbtPath()"
+		},
+		{
+			"forge": "nbtPath()",
+			"fabric": "nbtPath()"
+		},
+		{
+			"forge": "getPath(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getNbtPath(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "parseNode(com.mojang.brigadier.StringReader arg0, boolean arg1)",
+			"fabric": "parseNode(com.mojang.brigadier.StringReader reader, boolean root)"
+		},
+		{
+			"forge": "readObjectNode(com.mojang.brigadier.StringReader arg0, String arg1)",
+			"fabric": "readCompoundChildNode(com.mojang.brigadier.StringReader reader, String name)"
+		},
+		{
+			"forge": "readUnquotedName(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "readName(com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "isAllowedInUnquotedName(char arg0)",
+			"fabric": "isNameCharacter(char c)"
+		},
+		{
+			"forge": "createTagPredicate(CompoundTag arg0)",
+			"fabric": "getPredicate(NbtCompound filter)"
+		}
+	]
+}

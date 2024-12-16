@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.level.block.PowderSnowBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.PowderSnowBlock",
+			"fabric": "net.minecraft.block.PowderSnowBlock"
+		},
+		{
+			"forge": "HORIZONTAL_PARTICLE_MOMENTUM_FACTOR",
+			"fabric": "field_31216"
+		},
+		{
+			"forge": "HORIZONTAL_PARTICLE_MOMENTUM_FACTOR",
+			"fabric": "field_31216"
+		},
+		{
+			"forge": "IN_BLOCK_HORIZONTAL_SPEED_MULTIPLIER",
+			"fabric": "HORIZONTAL_MOVEMENT_MULTIPLIER"
+		},
+		{
+			"forge": "IN_BLOCK_VERTICAL_SPEED_MULTIPLIER",
+			"fabric": "VERTICAL_MOVEMENT_MULTIPLIER"
+		},
+		{
+			"forge": "NUM_BLOCKS_TO_FALL_INTO_BLOCK",
+			"fabric": "field_31219"
+		},
+		{
+			"forge": "FALLING_COLLISION_SHAPE",
+			"fabric": "FALLING_SHAPE"
+		},
+		{
+			"forge": "MINIMUM_FALL_DISTANCE_FOR_SOUND",
+			"fabric": "field_36189"
+		},
+		{
+			"forge": "MINIMUM_FALL_DISTANCE_FOR_BIG_SOUND",
+			"fabric": "SMALL_FALL_SOUND_MAX_DISTANCE"
+		},
+		{
+			"forge": "skipRendering(BlockState arg0, BlockState arg1, Direction arg2)",
+			"fabric": "isSideInvisible(BlockState arg0, BlockState arg1, Direction arg2)"
+		},
+		{
+			"forge": "skipRendering(BlockState arg0, BlockState arg1, Direction arg2)",
+			"fabric": "isSideInvisible(BlockState arg0, BlockState arg1, Direction arg2)"
+		},
+		{
+			"forge": "getOcclusionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getCullingShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "fallOn(Level arg0, BlockState arg1, BlockPos arg2, Entity arg3, float arg4)",
+			"fabric": "onLandedUpon(World arg0, BlockState arg1, BlockPos arg2, Entity arg3, float arg4)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getVisualShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCameraCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "canEntityWalkOnPowderSnow(Entity arg0)",
+			"fabric": "canWalkOnPowderSnow(Entity entity)"
+		},
+		{
+			"forge": "pickupBlock(LevelAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "tryDrainFluid(WorldAccess arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "getPickupSound()",
+			"fabric": "getBucketFillSound()"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		}
+	]
+}

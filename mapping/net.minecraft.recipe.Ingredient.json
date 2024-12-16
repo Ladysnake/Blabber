@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.item.crafting.Ingredient",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.Ingredient",
+			"fabric": "net.minecraft.recipe.Ingredient"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "values",
+			"fabric": "entries"
+		},
+		{
+			"forge": "itemStacks",
+			"fabric": "matchingStacks"
+		},
+		{
+			"forge": "stackingIds",
+			"fabric": "ids"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getMatchingStacks()"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getMatchingStacks()"
+		},
+		{
+			"forge": "test(ItemStack arg0)",
+			"fabric": "test(ItemStack arg0)"
+		},
+		{
+			"forge": "getStackingIds()",
+			"fabric": "getMatchingItemIds()"
+		},
+		{
+			"forge": "toNetwork(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf buf)"
+		},
+		{
+			"forge": "toJson()",
+			"fabric": "toJson()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "fromValues(Stream<? extends Ingredient$Value> arg0)",
+			"fabric": "ofEntries(Stream<? extends Ingredient$Entry> entries)"
+		},
+		{
+			"forge": "of()",
+			"fabric": "empty()"
+		},
+		{
+			"forge": "of(ItemLike... arg0)",
+			"fabric": "ofItems(ItemConvertible... items)"
+		},
+		{
+			"forge": "of(ItemStack... arg0)",
+			"fabric": "ofStacks(ItemStack... stacks)"
+		},
+		{
+			"forge": "of(Stream<ItemStack> arg0)",
+			"fabric": "ofStacks(Stream<ItemStack> stacks)"
+		},
+		{
+			"forge": "of(TagKey<Item> arg0)",
+			"fabric": "fromTag(TagKey<Item> tag)"
+		},
+		{
+			"forge": "fromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonElement arg0)",
+			"fabric": "fromJson(com.google.gson.JsonElement json)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonElement arg0, boolean arg1)",
+			"fabric": "fromJson(com.google.gson.JsonElement json, boolean allowAir)"
+		},
+		{
+			"forge": "valueFromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "entryFromJson(com.google.gson.JsonObject json)"
+		}
+	]
+}

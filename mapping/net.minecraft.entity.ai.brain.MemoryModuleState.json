@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.ai.memory.MemoryStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.memory.MemoryStatus",
+			"fabric": "net.minecraft.entity.ai.brain.MemoryModuleState"
+		},
+		{
+			"forge": "VALUE_PRESENT",
+			"fabric": "VALUE_PRESENT"
+		},
+		{
+			"forge": "VALUE_PRESENT",
+			"fabric": "VALUE_PRESENT"
+		},
+		{
+			"forge": "VALUE_ABSENT",
+			"fabric": "VALUE_ABSENT"
+		},
+		{
+			"forge": "REGISTERED",
+			"fabric": "REGISTERED"
+		}
+	]
+}

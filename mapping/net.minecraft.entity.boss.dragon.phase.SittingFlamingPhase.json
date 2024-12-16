@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.boss.enderdragon.phases.DragonSittingFlamingPhase",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.enderdragon.phases.DragonSittingFlamingPhase",
+			"fabric": "net.minecraft.entity.boss.dragon.phase.SittingFlamingPhase"
+		},
+		{
+			"forge": "FLAME_DURATION",
+			"fabric": "DURATION"
+		},
+		{
+			"forge": "FLAME_DURATION",
+			"fabric": "DURATION"
+		},
+		{
+			"forge": "SITTING_FLAME_ATTACKS_COUNT",
+			"fabric": "MAX_TIMES_RUN"
+		},
+		{
+			"forge": "WARMUP_TIME",
+			"fabric": "DRAGON_BREATH_MAX_TICK"
+		},
+		{
+			"forge": "flameTicks",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "flameCount",
+			"fabric": "timesRun"
+		},
+		{
+			"forge": "flame",
+			"fabric": "dragonBreathEntity"
+		},
+		{
+			"forge": "doClientTick()",
+			"fabric": "clientTick()"
+		},
+		{
+			"forge": "doClientTick()",
+			"fabric": "clientTick()"
+		},
+		{
+			"forge": "doServerTick()",
+			"fabric": "serverTick()"
+		},
+		{
+			"forge": "begin()",
+			"fabric": "beginPhase()"
+		},
+		{
+			"forge": "end()",
+			"fabric": "endPhase()"
+		},
+		{
+			"forge": "getPhase()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "resetFlameCount()",
+			"fabric": "reset()"
+		}
+	]
+}

@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.entity.animal.TropicalFish$Pattern",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.TropicalFish$Pattern",
+			"fabric": "net.minecraft.entity.passive.TropicalFishEntity$Variety"
+		},
+		{
+			"forge": "KOB",
+			"fabric": "KOB"
+		},
+		{
+			"forge": "KOB",
+			"fabric": "KOB"
+		},
+		{
+			"forge": "SUNSTREAK",
+			"fabric": "SUNSTREAK"
+		},
+		{
+			"forge": "SNOOPER",
+			"fabric": "SNOOPER"
+		},
+		{
+			"forge": "DASHER",
+			"fabric": "DASHER"
+		},
+		{
+			"forge": "BRINELY",
+			"fabric": "BRINELY"
+		},
+		{
+			"forge": "SPOTTY",
+			"fabric": "SPOTTY"
+		},
+		{
+			"forge": "FLOPPER",
+			"fabric": "FLOPPER"
+		},
+		{
+			"forge": "STRIPEY",
+			"fabric": "STRIPEY"
+		},
+		{
+			"forge": "GLITTER",
+			"fabric": "GLITTER"
+		},
+		{
+			"forge": "BLOCKFISH",
+			"fabric": "BLOCKFISH"
+		},
+		{
+			"forge": "BETTY",
+			"fabric": "BETTY"
+		},
+		{
+			"forge": "CLAYFISH",
+			"fabric": "CLAYFISH"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "displayName",
+			"fabric": "text"
+		},
+		{
+			"forge": "base",
+			"fabric": "size"
+		},
+		{
+			"forge": "packedId",
+			"fabric": "id"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "fromId(int id)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "fromId(int id)"
+		},
+		{
+			"forge": "base()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getPackedId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "displayName()",
+			"fabric": "getText()"
+		}
+	]
+}

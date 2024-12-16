@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.block.FlowerPotBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.FlowerPotBlock",
+			"fabric": "net.minecraft.block.FlowerPotBlock"
+		},
+		{
+			"forge": "POTTED_BY_CONTENT",
+			"fabric": "CONTENT_TO_POTTED"
+		},
+		{
+			"forge": "POTTED_BY_CONTENT",
+			"fabric": "CONTENT_TO_POTTED"
+		},
+		{
+			"forge": "AABB_SIZE",
+			"fabric": "field_31095"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "content",
+			"fabric": "content"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "getCloneItemStack(BlockGetter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getPickStack(BlockView arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getContent()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		}
+	]
+}

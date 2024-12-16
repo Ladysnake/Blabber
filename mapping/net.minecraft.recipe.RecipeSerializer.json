@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.world.item.crafting.RecipeSerializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.RecipeSerializer",
+			"fabric": "net.minecraft.recipe.RecipeSerializer"
+		},
+		{
+			"forge": "SHAPED_RECIPE",
+			"fabric": "SHAPED"
+		},
+		{
+			"forge": "SHAPED_RECIPE",
+			"fabric": "SHAPED"
+		},
+		{
+			"forge": "SHAPELESS_RECIPE",
+			"fabric": "SHAPELESS"
+		},
+		{
+			"forge": "ARMOR_DYE",
+			"fabric": "ARMOR_DYE"
+		},
+		{
+			"forge": "BOOK_CLONING",
+			"fabric": "BOOK_CLONING"
+		},
+		{
+			"forge": "MAP_CLONING",
+			"fabric": "MAP_CLONING"
+		},
+		{
+			"forge": "MAP_EXTENDING",
+			"fabric": "MAP_EXTENDING"
+		},
+		{
+			"forge": "FIREWORK_ROCKET",
+			"fabric": "FIREWORK_ROCKET"
+		},
+		{
+			"forge": "FIREWORK_STAR",
+			"fabric": "FIREWORK_STAR"
+		},
+		{
+			"forge": "FIREWORK_STAR_FADE",
+			"fabric": "FIREWORK_STAR_FADE"
+		},
+		{
+			"forge": "TIPPED_ARROW",
+			"fabric": "TIPPED_ARROW"
+		},
+		{
+			"forge": "BANNER_DUPLICATE",
+			"fabric": "BANNER_DUPLICATE"
+		},
+		{
+			"forge": "SHIELD_DECORATION",
+			"fabric": "SHIELD_DECORATION"
+		},
+		{
+			"forge": "SHULKER_BOX_COLORING",
+			"fabric": "SHULKER_BOX"
+		},
+		{
+			"forge": "SUSPICIOUS_STEW",
+			"fabric": "SUSPICIOUS_STEW"
+		},
+		{
+			"forge": "REPAIR_ITEM",
+			"fabric": "REPAIR_ITEM"
+		},
+		{
+			"forge": "SMELTING_RECIPE",
+			"fabric": "SMELTING"
+		},
+		{
+			"forge": "BLASTING_RECIPE",
+			"fabric": "BLASTING"
+		},
+		{
+			"forge": "SMOKING_RECIPE",
+			"fabric": "SMOKING"
+		},
+		{
+			"forge": "CAMPFIRE_COOKING_RECIPE",
+			"fabric": "CAMPFIRE_COOKING"
+		},
+		{
+			"forge": "STONECUTTER",
+			"fabric": "STONECUTTING"
+		},
+		{
+			"forge": "SMITHING_TRANSFORM",
+			"fabric": "SMITHING_TRANSFORM"
+		},
+		{
+			"forge": "SMITHING_TRIM",
+			"fabric": "SMITHING_TRIM"
+		},
+		{
+			"forge": "DECORATED_POT_RECIPE",
+			"fabric": "CRAFTING_DECORATED_POT"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "read(Identifier id, com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "read(Identifier id, com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "fromNetwork(ResourceLocation arg0, FriendlyByteBuf arg1)",
+			"fabric": "read(Identifier id, PacketByteBuf buf)"
+		},
+		{
+			"forge": "toNetwork(FriendlyByteBuf arg0, T arg1)",
+			"fabric": "write(PacketByteBuf buf, T recipe)"
+		},
+		{
+			"forge": "register(String arg0, S arg1)",
+			"fabric": "register(String id, S serializer)"
+		}
+	]
+}

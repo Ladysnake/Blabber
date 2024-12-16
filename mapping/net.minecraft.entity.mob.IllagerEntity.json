@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.monster.AbstractIllager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.AbstractIllager",
+			"fabric": "net.minecraft.entity.mob.IllagerEntity"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "getMobType()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "getArmPose()",
+			"fabric": "getState()"
+		},
+		{
+			"forge": "canAttack(LivingEntity arg0)",
+			"fabric": "canTarget(LivingEntity arg0)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.phys.shapes.CubeVoxelShape",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.CubeVoxelShape",
+			"fabric": "net.minecraft.util.shape.SimpleVoxelShape"
+		},
+		{
+			"forge": "getCoords(Direction$Axis arg0)",
+			"fabric": "getPointPositions(Direction$Axis arg0)"
+		},
+		{
+			"forge": "getCoords(Direction$Axis arg0)",
+			"fabric": "getPointPositions(Direction$Axis arg0)"
+		},
+		{
+			"forge": "findIndex(Direction$Axis arg0, double arg1)",
+			"fabric": "getCoordIndex(Direction$Axis arg0, double arg1)"
+		}
+	]
+}

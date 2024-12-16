@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.material.MaterialRuleList",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.material.MaterialRuleList",
+			"fabric": "net.minecraft.world.gen.ChainedBlockSource"
+		},
+		{
+			"forge": "materialRuleList",
+			"fabric": "samplers"
+		},
+		{
+			"forge": "materialRuleList",
+			"fabric": "samplers"
+		},
+		{
+			"forge": "calculate(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "calculate(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "materialRuleList()",
+			"fabric": "samplers()"
+		}
+	]
+}

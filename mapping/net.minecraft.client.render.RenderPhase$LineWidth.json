@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.RenderStateShard$LineStateShard",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderStateShard$LineStateShard",
+			"fabric": "net.minecraft.client.render.RenderPhase$LineWidth"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		}
+	]
+}

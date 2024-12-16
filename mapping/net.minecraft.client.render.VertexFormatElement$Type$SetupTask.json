@@ -1,0 +1,17 @@
+{
+	"title": "com.mojang.blaze3d.vertex.VertexFormatElement$Usage$SetupState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.VertexFormatElement$Usage$SetupState",
+			"fabric": "net.minecraft.client.render.VertexFormatElement$Type$SetupTask"
+		},
+		{
+			"forge": "setupBufferState(int arg0, int arg1, int arg2, long arg3, int arg4, int arg5)",
+			"fabric": "setupBufferState(int componentCount, int componentType, int stride, long offset, int uvIndex, int elementIndex)"
+		},
+		{
+			"forge": "setupBufferState(int arg0, int arg1, int arg2, long arg3, int arg4, int arg5)",
+			"fabric": "setupBufferState(int componentCount, int componentType, int stride, long offset, int uvIndex, int elementIndex)"
+		}
+	]
+}

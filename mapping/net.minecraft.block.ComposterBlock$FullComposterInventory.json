@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.block.ComposterBlock$OutputContainer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.ComposterBlock$OutputContainer",
+			"fabric": "net.minecraft.block.ComposterBlock$FullComposterInventory"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "changed",
+			"fabric": "dirty"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxCountPerStack()"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxCountPerStack()"
+		},
+		{
+			"forge": "getSlotsForFace(Direction arg0)",
+			"fabric": "getAvailableSlots(Direction arg0)"
+		},
+		{
+			"forge": "canPlaceItemThroughFace(int arg0, ItemStack arg1, Direction arg2)",
+			"fabric": "canInsert(int arg0, ItemStack arg1, Direction arg2)"
+		},
+		{
+			"forge": "canTakeItemThroughFace(int arg0, ItemStack arg1, Direction arg2)",
+			"fabric": "canExtract(int arg0, ItemStack arg1, Direction arg2)"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		}
+	]
+}

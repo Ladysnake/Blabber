@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityWolfColorFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityWolfColorFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityWolfColorFix"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixCollarColor(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixCollarColor(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> arg0)"
+		}
+	]
+}

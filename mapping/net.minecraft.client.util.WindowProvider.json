@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.VirtualScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.VirtualScreen",
+			"fabric": "net.minecraft.client.util.WindowProvider"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "screenManager",
+			"fabric": "monitorTracker"
+		},
+		{
+			"forge": "newWindow(DisplayData arg0, String arg1, String arg2)",
+			"fabric": "createWindow(WindowSettings settings, String videoMode, String title)"
+		},
+		{
+			"forge": "newWindow(DisplayData arg0, String arg1, String arg2)",
+			"fabric": "createWindow(WindowSettings settings, String videoMode, String title)"
+		}
+	]
+}

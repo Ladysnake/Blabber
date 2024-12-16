@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.commands.arguments.ResourceOrTagArgument$Result",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.ResourceOrTagArgument$Result",
+			"fabric": "net.minecraft.command.argument.RegistryEntryPredicateArgumentType$EntryPredicate"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getEntry()"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getEntry()"
+		},
+		{
+			"forge": "cast(ResourceKey<? extends Registry<E>> arg0)",
+			"fabric": "tryCast(RegistryKey<? extends Registry<E>> registryRef)"
+		},
+		{
+			"forge": "asPrintable()",
+			"fabric": "asString()"
+		}
+	]
+}

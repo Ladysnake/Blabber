@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.Variant",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.Variant",
+			"fabric": "net.minecraft.entity.passive.HorseColor"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "CREAMY",
+			"fabric": "CREAMY"
+		},
+		{
+			"forge": "CHESTNUT",
+			"fabric": "CHESTNUT"
+		},
+		{
+			"forge": "BROWN",
+			"fabric": "BROWN"
+		},
+		{
+			"forge": "BLACK",
+			"fabric": "BLACK"
+		},
+		{
+			"forge": "GRAY",
+			"fabric": "GRAY"
+		},
+		{
+			"forge": "DARK_BROWN",
+			"fabric": "DARK_BROWN"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

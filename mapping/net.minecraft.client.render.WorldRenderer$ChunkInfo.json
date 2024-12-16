@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.renderer.LevelRenderer$RenderChunkInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.LevelRenderer$RenderChunkInfo",
+			"fabric": "net.minecraft.client.render.WorldRenderer$ChunkInfo"
+		},
+		{
+			"forge": "chunk",
+			"fabric": "chunk"
+		},
+		{
+			"forge": "chunk",
+			"fabric": "chunk"
+		},
+		{
+			"forge": "sourceDirections",
+			"fabric": "direction"
+		},
+		{
+			"forge": "directions",
+			"fabric": "cullingState"
+		},
+		{
+			"forge": "step",
+			"fabric": "propagationLevel"
+		},
+		{
+			"forge": "setDirections(byte arg0, Direction arg1)",
+			"fabric": "updateCullingState(byte parentCullingState, Direction from)"
+		},
+		{
+			"forge": "setDirections(byte arg0, Direction arg1)",
+			"fabric": "updateCullingState(byte parentCullingState, Direction from)"
+		},
+		{
+			"forge": "hasDirection(Direction arg0)",
+			"fabric": "canCull(Direction from)"
+		},
+		{
+			"forge": "addSourceDirection(Direction arg0)",
+			"fabric": "addDirection(Direction direction)"
+		},
+		{
+			"forge": "hasSourceDirection(int arg0)",
+			"fabric": "hasDirection(int ordinal)"
+		},
+		{
+			"forge": "hasSourceDirections()",
+			"fabric": "hasAnyDirection()"
+		},
+		{
+			"forge": "isAxisAlignedWith(int arg0, int arg1, int arg2)",
+			"fabric": "isOriginInSection(int sectionX, int sectionY, int sectionZ)"
+		}
+	]
+}

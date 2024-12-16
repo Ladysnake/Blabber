@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.RandomStrollGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.RandomStrollGoal",
+			"fabric": "net.minecraft.entity.ai.goal.WanderAroundGoal"
+		},
+		{
+			"forge": "DEFAULT_INTERVAL",
+			"fabric": "DEFAULT_CHANCE"
+		},
+		{
+			"forge": "DEFAULT_INTERVAL",
+			"fabric": "DEFAULT_CHANCE"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "wantedX",
+			"fabric": "targetX"
+		},
+		{
+			"forge": "wantedY",
+			"fabric": "targetY"
+		},
+		{
+			"forge": "wantedZ",
+			"fabric": "targetZ"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "speed"
+		},
+		{
+			"forge": "interval",
+			"fabric": "chance"
+		},
+		{
+			"forge": "forceTrigger",
+			"fabric": "ignoringChance"
+		},
+		{
+			"forge": "checkNoActionTime",
+			"fabric": "canDespawn"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "getPosition()",
+			"fabric": "getWanderTarget()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "trigger()",
+			"fabric": "ignoreChanceOnce()"
+		},
+		{
+			"forge": "setInterval(int arg0)",
+			"fabric": "setChance(int chance)"
+		}
+	]
+}

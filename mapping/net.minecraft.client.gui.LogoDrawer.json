@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.gui.components.LogoRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.LogoRenderer",
+			"fabric": "net.minecraft.client.gui.LogoDrawer"
+		},
+		{
+			"forge": "MINECRAFT_LOGO",
+			"fabric": "LOGO_TEXTURE"
+		},
+		{
+			"forge": "MINECRAFT_LOGO",
+			"fabric": "LOGO_TEXTURE"
+		},
+		{
+			"forge": "EASTER_EGG_LOGO",
+			"fabric": "MINCERAFT_TEXTURE"
+		},
+		{
+			"forge": "MINECRAFT_EDITION",
+			"fabric": "EDITION_TEXTURE"
+		},
+		{
+			"forge": "LOGO_WIDTH",
+			"fabric": "LOGO_REGION_WIDTH"
+		},
+		{
+			"forge": "LOGO_HEIGHT",
+			"fabric": "LOGO_REGION_HEIGHT"
+		},
+		{
+			"forge": "LOGO_TEXTURE_WIDTH",
+			"fabric": "LOGO_TEXTURE_WIDTH"
+		},
+		{
+			"forge": "LOGO_TEXTURE_HEIGHT",
+			"fabric": "LOGO_TEXTURE_HEIGHT"
+		},
+		{
+			"forge": "EDITION_WIDTH",
+			"fabric": "EDITION_REGION_WIDTH"
+		},
+		{
+			"forge": "EDITION_HEIGHT",
+			"fabric": "EDITION_REGION_HEIGHT"
+		},
+		{
+			"forge": "EDITION_TEXTURE_WIDTH",
+			"fabric": "EDITION_TEXTURE_WIDTH"
+		},
+		{
+			"forge": "EDITION_TEXTURE_HEIGHT",
+			"fabric": "EDITION_TEXTURE_HEIGHT"
+		},
+		{
+			"forge": "DEFAULT_HEIGHT_OFFSET",
+			"fabric": "LOGO_BASE_Y"
+		},
+		{
+			"forge": "EDITION_LOGO_OVERLAP",
+			"fabric": "LOGO_AND_EDITION_OVERLAP"
+		},
+		{
+			"forge": "showEasterEgg",
+			"fabric": "minceraft"
+		},
+		{
+			"forge": "keepLogoThroughFade",
+			"fabric": "ignoreAlpha"
+		},
+		{
+			"forge": "renderLogo(GuiGraphics arg0, int arg1, float arg2)",
+			"fabric": "draw(DrawContext context, int screenWidth, float alpha)"
+		},
+		{
+			"forge": "renderLogo(GuiGraphics arg0, int arg1, float arg2)",
+			"fabric": "draw(DrawContext context, int screenWidth, float alpha)"
+		},
+		{
+			"forge": "renderLogo(GuiGraphics arg0, int arg1, float arg2, int arg3)",
+			"fabric": "draw(DrawContext context, int screenWidth, float alpha, int y)"
+		}
+	]
+}

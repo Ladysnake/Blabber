@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.Clearable",
+	"items": [
+		{
+			"forge": "net.minecraft.world.Clearable",
+			"fabric": "net.minecraft.util.Clearable"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "tryClear(Object arg0)",
+			"fabric": "clear(Object o)"
+		}
+	]
+}

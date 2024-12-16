@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.level.levelgen.NoiseRouter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.NoiseRouter",
+			"fabric": "net.minecraft.world.gen.noise.NoiseRouter"
+		},
+		{
+			"forge": "barrierNoise",
+			"fabric": "barrierNoise"
+		},
+		{
+			"forge": "barrierNoise",
+			"fabric": "barrierNoise"
+		},
+		{
+			"forge": "fluidLevelFloodednessNoise",
+			"fabric": "fluidLevelFloodednessNoise"
+		},
+		{
+			"forge": "fluidLevelSpreadNoise",
+			"fabric": "fluidLevelSpreadNoise"
+		},
+		{
+			"forge": "lavaNoise",
+			"fabric": "lavaNoise"
+		},
+		{
+			"forge": "temperature",
+			"fabric": "temperature"
+		},
+		{
+			"forge": "vegetation",
+			"fabric": "vegetation"
+		},
+		{
+			"forge": "continents",
+			"fabric": "continents"
+		},
+		{
+			"forge": "erosion",
+			"fabric": "erosion"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "ridges",
+			"fabric": "ridges"
+		},
+		{
+			"forge": "initialDensityWithoutJaggedness",
+			"fabric": "initialDensityWithoutJaggedness"
+		},
+		{
+			"forge": "finalDensity",
+			"fabric": "finalDensity"
+		},
+		{
+			"forge": "veinToggle",
+			"fabric": "veinToggle"
+		},
+		{
+			"forge": "veinRidged",
+			"fabric": "veinRidged"
+		},
+		{
+			"forge": "veinGap",
+			"fabric": "veinGap"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "field(String arg0, Function<NoiseRouter, DensityFunction> arg1)",
+			"fabric": "field(String name, Function<NoiseRouter, DensityFunction> getter)"
+		},
+		{
+			"forge": "field(String arg0, Function<NoiseRouter, DensityFunction> arg1)",
+			"fabric": "field(String name, Function<NoiseRouter, DensityFunction> getter)"
+		},
+		{
+			"forge": "mapAll(DensityFunction$Visitor arg0)",
+			"fabric": "apply(DensityFunction$DensityFunctionVisitor visitor)"
+		},
+		{
+			"forge": "barrierNoise()",
+			"fabric": "barrierNoise()"
+		},
+		{
+			"forge": "fluidLevelFloodednessNoise()",
+			"fabric": "fluidLevelFloodednessNoise()"
+		},
+		{
+			"forge": "fluidLevelSpreadNoise()",
+			"fabric": "fluidLevelSpreadNoise()"
+		},
+		{
+			"forge": "lavaNoise()",
+			"fabric": "lavaNoise()"
+		},
+		{
+			"forge": "temperature()",
+			"fabric": "temperature()"
+		},
+		{
+			"forge": "vegetation()",
+			"fabric": "vegetation()"
+		},
+		{
+			"forge": "continents()",
+			"fabric": "continents()"
+		},
+		{
+			"forge": "erosion()",
+			"fabric": "erosion()"
+		},
+		{
+			"forge": "depth()",
+			"fabric": "depth()"
+		},
+		{
+			"forge": "ridges()",
+			"fabric": "ridges()"
+		},
+		{
+			"forge": "initialDensityWithoutJaggedness()",
+			"fabric": "initialDensityWithoutJaggedness()"
+		},
+		{
+			"forge": "finalDensity()",
+			"fabric": "finalDensity()"
+		},
+		{
+			"forge": "veinToggle()",
+			"fabric": "veinToggle()"
+		},
+		{
+			"forge": "veinRidged()",
+			"fabric": "veinRidged()"
+		},
+		{
+			"forge": "veinGap()",
+			"fabric": "veinGap()"
+		}
+	]
+}

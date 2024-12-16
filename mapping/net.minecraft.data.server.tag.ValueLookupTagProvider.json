@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.data.tags.IntrinsicHolderTagsProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.tags.IntrinsicHolderTagsProvider",
+			"fabric": "net.minecraft.data.server.tag.ValueLookupTagProvider"
+		},
+		{
+			"forge": "keyExtractor",
+			"fabric": "valueToKey"
+		},
+		{
+			"forge": "keyExtractor",
+			"fabric": "valueToKey"
+		},
+		{
+			"forge": "tag(TagKey<T> arg0)",
+			"fabric": "getOrCreateTagBuilder(TagKey<T> arg0)"
+		},
+		{
+			"forge": "tag(TagKey<T> arg0)",
+			"fabric": "getOrCreateTagBuilder(TagKey<T> arg0)"
+		}
+	]
+}

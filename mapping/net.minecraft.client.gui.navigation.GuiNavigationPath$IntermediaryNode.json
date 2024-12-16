@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.ComponentPath$Path",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.ComponentPath$Path",
+			"fabric": "net.minecraft.client.gui.navigation.GuiNavigationPath$IntermediaryNode"
+		},
+		{
+			"forge": "component",
+			"fabric": "component"
+		},
+		{
+			"forge": "component",
+			"fabric": "component"
+		},
+		{
+			"forge": "childPath",
+			"fabric": "childPath"
+		},
+		{
+			"forge": "applyFocus(boolean arg0)",
+			"fabric": "setFocused(boolean arg0)"
+		},
+		{
+			"forge": "applyFocus(boolean arg0)",
+			"fabric": "setFocused(boolean arg0)"
+		},
+		{
+			"forge": "component()",
+			"fabric": "component()"
+		},
+		{
+			"forge": "childPath()",
+			"fabric": "childPath()"
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.commands.arguments.ResourceKeyArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.ResourceKeyArgument",
+			"fabric": "net.minecraft.command.argument.RegistryKeyArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_INVALID_FEATURE",
+			"fabric": "INVALID_FEATURE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INVALID_STRUCTURE",
+			"fabric": "INVALID_STRUCTURE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INVALID_TEMPLATE_POOL",
+			"fabric": "INVALID_JIGSAW_EXCEPTION"
+		},
+		{
+			"forge": "registryKey",
+			"fabric": "registryRef"
+		},
+		{
+			"forge": "key(ResourceKey<? extends Registry<T>> arg0)",
+			"fabric": "registryKey(RegistryKey<? extends Registry<T>> registryRef)"
+		},
+		{
+			"forge": "key(ResourceKey<? extends Registry<T>> arg0)",
+			"fabric": "registryKey(RegistryKey<? extends Registry<T>> registryRef)"
+		},
+		{
+			"forge": "getRegistryKey(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1, ResourceKey<Registry<T>> arg2, com.mojang.brigadier.exceptions.DynamicCommandExceptionType arg3)",
+			"fabric": "getKey(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name, RegistryKey<Registry<T>> registryRef, com.mojang.brigadier.exceptions.DynamicCommandExceptionType invalidException)"
+		},
+		{
+			"forge": "getRegistry(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, ResourceKey<? extends Registry<T>> arg1)",
+			"fabric": "getRegistry(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, RegistryKey<? extends Registry<T>> registryRef)"
+		},
+		{
+			"forge": "resolveKey(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1, ResourceKey<Registry<T>> arg2, com.mojang.brigadier.exceptions.DynamicCommandExceptionType arg3)",
+			"fabric": "getRegistryEntry(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name, RegistryKey<Registry<T>> registryRef, com.mojang.brigadier.exceptions.DynamicCommandExceptionType invalidException)"
+		},
+		{
+			"forge": "getConfiguredFeature(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getConfiguredFeatureEntry(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getStructure(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getStructureEntry(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getStructureTemplatePool(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getStructurePoolEntry(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		}
+	]
+}

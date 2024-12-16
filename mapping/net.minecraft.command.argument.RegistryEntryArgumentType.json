@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.commands.arguments.ResourceArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.ResourceArgument",
+			"fabric": "net.minecraft.command.argument.RegistryEntryArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ERROR_NOT_SUMMONABLE_ENTITY",
+			"fabric": "NOT_SUMMONABLE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_UNKNOWN_RESOURCE",
+			"fabric": "NOT_FOUND_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INVALID_RESOURCE_TYPE",
+			"fabric": "INVALID_TYPE_EXCEPTION"
+		},
+		{
+			"forge": "registryKey",
+			"fabric": "registryRef"
+		},
+		{
+			"forge": "registryLookup",
+			"fabric": "registryWrapper"
+		},
+		{
+			"forge": "resource(CommandBuildContext arg0, ResourceKey<? extends Registry<T>> arg1)",
+			"fabric": "registryEntry(CommandRegistryAccess registryAccess, RegistryKey<? extends Registry<T>> registryRef)"
+		},
+		{
+			"forge": "resource(CommandBuildContext arg0, ResourceKey<? extends Registry<T>> arg1)",
+			"fabric": "registryEntry(CommandRegistryAccess registryAccess, RegistryKey<? extends Registry<T>> registryRef)"
+		},
+		{
+			"forge": "getResource(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1, ResourceKey<Registry<T>> arg2)",
+			"fabric": "getRegistryEntry(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name, RegistryKey<Registry<T>> registryRef)"
+		},
+		{
+			"forge": "getAttribute(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getEntityAttribute(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getConfiguredFeature(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getConfiguredFeature(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getStructure(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getStructure(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getEntityType(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getEntityType(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getSummonableEntityType(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getSummonableEntityType(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getMobEffect(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getStatusEffect(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getEnchantment(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getEnchantment(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		}
+	]
+}

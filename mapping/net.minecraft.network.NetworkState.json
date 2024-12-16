@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.network.ConnectionProtocol",
+	"items": [
+		{
+			"forge": "net.minecraft.network.ConnectionProtocol",
+			"fabric": "net.minecraft.network.NetworkState"
+		},
+		{
+			"forge": "HANDSHAKING",
+			"fabric": "HANDSHAKING"
+		},
+		{
+			"forge": "HANDSHAKING",
+			"fabric": "HANDSHAKING"
+		},
+		{
+			"forge": "PLAY",
+			"fabric": "PLAY"
+		},
+		{
+			"forge": "STATUS",
+			"fabric": "STATUS"
+		},
+		{
+			"forge": "LOGIN",
+			"fabric": "LOGIN"
+		},
+		{
+			"forge": "NOT_REGISTERED",
+			"fabric": "field_41866"
+		},
+		{
+			"forge": "NOT_REGISTERED",
+			"fabric": "field_41866"
+		},
+		{
+			"forge": "MIN_PROTOCOL_ID",
+			"fabric": "NULL_PACKET_ID_OR_MIN_STATE_ID"
+		},
+		{
+			"forge": "MAX_PROTOCOL_ID",
+			"fabric": "MAX_STATE_ID"
+		},
+		{
+			"forge": "LOOKUP",
+			"fabric": "STATES"
+		},
+		{
+			"forge": "PROTOCOL_BY_PACKET",
+			"fabric": "HANDLER_STATE_MAP"
+		},
+		{
+			"forge": "id",
+			"fabric": "stateId"
+		},
+		{
+			"forge": "flows",
+			"fabric": "packetHandlers"
+		},
+		{
+			"forge": "protocol()",
+			"fabric": "createPacketHandlerInitializer()"
+		},
+		{
+			"forge": "protocol()",
+			"fabric": "createPacketHandlerInitializer()"
+		},
+		{
+			"forge": "getPacketId(PacketFlow arg0, Packet<?> arg1)",
+			"fabric": "getPacketId(NetworkSide side, Packet<?> packet)"
+		},
+		{
+			"forge": "getBundlerInfo(PacketFlow arg0)",
+			"fabric": "getBundler(NetworkSide arg0)"
+		},
+		{
+			"forge": "getPacketsByIds(PacketFlow arg0)",
+			"fabric": "getPacketIdToPacketMap(NetworkSide side)"
+		},
+		{
+			"forge": "createPacket(PacketFlow arg0, int arg1, FriendlyByteBuf arg2)",
+			"fabric": "getPacketHandler(NetworkSide side, int packetId, PacketByteBuf buf)"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getById(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "getProtocolForPacket(Packet<?> arg0)",
+			"fabric": "getPacketHandlerState(Packet<?> handler)"
+		}
+	]
+}

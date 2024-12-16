@@ -1,0 +1,261 @@
+{
+	"title": "net.minecraft.server.level.ServerChunkCache",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ServerChunkCache",
+			"fabric": "net.minecraft.server.world.ServerChunkManager"
+		},
+		{
+			"forge": "CHUNK_STATUSES",
+			"fabric": "CHUNK_STATUSES"
+		},
+		{
+			"forge": "CHUNK_STATUSES",
+			"fabric": "CHUNK_STATUSES"
+		},
+		{
+			"forge": "distanceManager",
+			"fabric": "ticketManager"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "mainThread",
+			"fabric": "serverThread"
+		},
+		{
+			"forge": "lightEngine",
+			"fabric": "lightingProvider"
+		},
+		{
+			"forge": "mainThreadProcessor",
+			"fabric": "mainThreadExecutor"
+		},
+		{
+			"forge": "chunkMap",
+			"fabric": "threadedAnvilChunkStorage"
+		},
+		{
+			"forge": "dataStorage",
+			"fabric": "persistentStateManager"
+		},
+		{
+			"forge": "lastInhabitedUpdate",
+			"fabric": "lastMobSpawningTime"
+		},
+		{
+			"forge": "spawnEnemies",
+			"fabric": "spawnMonsters"
+		},
+		{
+			"forge": "spawnFriendlies",
+			"fabric": "spawnAnimals"
+		},
+		{
+			"forge": "CACHE_SIZE",
+			"fabric": "CACHE_SIZE"
+		},
+		{
+			"forge": "lastChunkPos",
+			"fabric": "chunkPosCache"
+		},
+		{
+			"forge": "lastChunkStatus",
+			"fabric": "chunkStatusCache"
+		},
+		{
+			"forge": "lastChunk",
+			"fabric": "chunkCache"
+		},
+		{
+			"forge": "lastSpawnState",
+			"fabric": "spawnInfo"
+		},
+		{
+			"forge": "getLightEngine()",
+			"fabric": "getLightingProvider()"
+		},
+		{
+			"forge": "getLightEngine()",
+			"fabric": "getLightingProvider()"
+		},
+		{
+			"forge": "getVisibleChunkIfPresent(long arg0)",
+			"fabric": "getChunkHolder(long pos)"
+		},
+		{
+			"forge": "getTickingGenerated()",
+			"fabric": "getTotalChunksLoadedCount()"
+		},
+		{
+			"forge": "storeInCache(long arg0, ChunkAccess arg1, ChunkStatus arg2)",
+			"fabric": "putInCache(long pos, Chunk chunk, ChunkStatus status)"
+		},
+		{
+			"forge": "getChunk(int arg0, int arg1, ChunkStatus arg2, boolean arg3)",
+			"fabric": "getChunk(int arg0, int arg1, ChunkStatus arg2, boolean arg3)"
+		},
+		{
+			"forge": "getChunkNow(int arg0, int arg1)",
+			"fabric": "getWorldChunk(int arg0, int arg1)"
+		},
+		{
+			"forge": "clearCache()",
+			"fabric": "initChunkCaches()"
+		},
+		{
+			"forge": "getChunkFuture(int arg0, int arg1, ChunkStatus arg2, boolean arg3)",
+			"fabric": "getChunkFutureSyncOnMainThread(int chunkX, int chunkZ, ChunkStatus leastStatus, boolean create)"
+		},
+		{
+			"forge": "getChunkFutureMainThread(int arg0, int arg1, ChunkStatus arg2, boolean arg3)",
+			"fabric": "getChunkFuture(int chunkX, int chunkZ, ChunkStatus leastStatus, boolean create)"
+		},
+		{
+			"forge": "chunkAbsent(ChunkHolder arg0, int arg1)",
+			"fabric": "isMissingForLevel(ChunkHolder holder, int maxLevel)"
+		},
+		{
+			"forge": "hasChunk(int arg0, int arg1)",
+			"fabric": "isChunkLoaded(int arg0, int arg1)"
+		},
+		{
+			"forge": "getChunkForLighting(int arg0, int arg1)",
+			"fabric": "getChunk(int arg0, int arg1)"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "pollTask()",
+			"fabric": "executeQueuedTasks()"
+		},
+		{
+			"forge": "runDistanceManagerUpdates()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isPositionTicking(long arg0)",
+			"fabric": "isTickingFutureReady(long pos)"
+		},
+		{
+			"forge": "save(boolean arg0)",
+			"fabric": "save(boolean flush)"
+		},
+		{
+			"forge": "tick(BooleanSupplier arg0, boolean arg1)",
+			"fabric": "tick(BooleanSupplier arg0, boolean arg1)"
+		},
+		{
+			"forge": "tickChunks()",
+			"fabric": "tickChunks()"
+		},
+		{
+			"forge": "getFullChunk(long arg0, Consumer<LevelChunk> arg1)",
+			"fabric": "ifChunkLoaded(long pos, Consumer<WorldChunk> chunkConsumer)"
+		},
+		{
+			"forge": "gatherStats()",
+			"fabric": "getDebugString()"
+		},
+		{
+			"forge": "getPendingTasksCount()",
+			"fabric": "getPendingTasks()"
+		},
+		{
+			"forge": "getGenerator()",
+			"fabric": "getChunkGenerator()"
+		},
+		{
+			"forge": "getGeneratorState()",
+			"fabric": "getStructurePlacementCalculator()"
+		},
+		{
+			"forge": "randomState()",
+			"fabric": "getNoiseConfig()"
+		},
+		{
+			"forge": "getLoadedChunksCount()",
+			"fabric": "getLoadedChunkCount()"
+		},
+		{
+			"forge": "blockChanged(BlockPos arg0)",
+			"fabric": "markForUpdate(BlockPos pos)"
+		},
+		{
+			"forge": "onLightUpdate(LightLayer arg0, SectionPos arg1)",
+			"fabric": "onLightUpdate(LightType arg0, ChunkSectionPos arg1)"
+		},
+		{
+			"forge": "addRegionTicket(TicketType<T> arg0, ChunkPos arg1, int arg2, T arg3)",
+			"fabric": "addTicket(ChunkTicketType<T> ticketType, ChunkPos pos, int radius, T argument)"
+		},
+		{
+			"forge": "removeRegionTicket(TicketType<T> arg0, ChunkPos arg1, int arg2, T arg3)",
+			"fabric": "removeTicket(ChunkTicketType<T> ticketType, ChunkPos pos, int radius, T argument)"
+		},
+		{
+			"forge": "updateChunkForced(ChunkPos arg0, boolean arg1)",
+			"fabric": "setChunkForced(ChunkPos arg0, boolean arg1)"
+		},
+		{
+			"forge": "move(ServerPlayer arg0)",
+			"fabric": "updatePosition(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "removeEntity(Entity arg0)",
+			"fabric": "unloadEntity(Entity entity)"
+		},
+		{
+			"forge": "addEntity(Entity arg0)",
+			"fabric": "loadEntity(Entity entity)"
+		},
+		{
+			"forge": "broadcastAndSend(Entity arg0, Packet<?> arg1)",
+			"fabric": "sendToNearbyPlayers(Entity entity, Packet<?> packet)"
+		},
+		{
+			"forge": "broadcast(Entity arg0, Packet<?> arg1)",
+			"fabric": "sendToOtherNearbyPlayers(Entity entity, Packet<?> packet)"
+		},
+		{
+			"forge": "setViewDistance(int arg0)",
+			"fabric": "applyViewDistance(int watchDistance)"
+		},
+		{
+			"forge": "setSimulationDistance(int arg0)",
+			"fabric": "applySimulationDistance(int simulationDistance)"
+		},
+		{
+			"forge": "setSpawnSettings(boolean arg0, boolean arg1)",
+			"fabric": "setMobSpawnOptions(boolean arg0, boolean arg1)"
+		},
+		{
+			"forge": "getChunkDebugData(ChunkPos arg0)",
+			"fabric": "getChunkLoadingDebugInfo(ChunkPos pos)"
+		},
+		{
+			"forge": "getDataStorage()",
+			"fabric": "getPersistentStateManager()"
+		},
+		{
+			"forge": "getPoiManager()",
+			"fabric": "getPointOfInterestStorage()"
+		},
+		{
+			"forge": "chunkScanner()",
+			"fabric": "getChunkIoWorker()"
+		},
+		{
+			"forge": "getLastSpawnState()",
+			"fabric": "getSpawnInfo()"
+		},
+		{
+			"forge": "removeTicketsOnClosing()",
+			"fabric": "removePersistentTickets()"
+		}
+	]
+}

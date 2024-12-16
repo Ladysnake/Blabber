@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.RedstoneWireConnectionsFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.RedstoneWireConnectionsFix",
+			"fabric": "net.minecraft.datafixer.fix.RedstoneConnectionsFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "updateBlockState(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "updateRedstoneConnections(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "updateBlockState(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "isConnected(String arg0)",
+			"fabric": "hasObsoleteValue(String arg0)"
+		}
+	]
+}

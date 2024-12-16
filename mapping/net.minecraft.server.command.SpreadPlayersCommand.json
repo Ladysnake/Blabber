@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.commands.SpreadPlayersCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.SpreadPlayersCommand",
+			"fabric": "net.minecraft.server.command.SpreadPlayersCommand"
+		},
+		{
+			"forge": "MAX_ITERATION_COUNT",
+			"fabric": "MAX_ATTEMPTS"
+		},
+		{
+			"forge": "MAX_ITERATION_COUNT",
+			"fabric": "MAX_ATTEMPTS"
+		},
+		{
+			"forge": "ERROR_FAILED_TO_SPREAD_TEAMS",
+			"fabric": "FAILED_TEAMS_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_FAILED_TO_SPREAD_ENTITIES",
+			"fabric": "FAILED_ENTITIES_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INVALID_MAX_HEIGHT",
+			"fabric": "INVALID_HEIGHT_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "spreadPlayers(CommandSourceStack arg0, Vec2 arg1, float arg2, float arg3, int arg4, boolean arg5, Collection<? extends Entity> arg6)",
+			"fabric": "execute(ServerCommandSource source, Vec2f center, float spreadDistance, float maxRange, int maxY, boolean respectTeams, Collection<? extends Entity> players)"
+		},
+		{
+			"forge": "getNumberOfTeams(Collection<? extends Entity> arg0)",
+			"fabric": "getPileCountRespectingTeams(Collection<? extends Entity> entities)"
+		},
+		{
+			"forge": "spreadPositions(Vec2 arg0, double arg1, ServerLevel arg2, RandomSource arg3, double arg4, double arg5, double arg6, double arg7, int arg8, SpreadPlayersCommand$Position[] arg9, boolean arg10)",
+			"fabric": "spread(Vec2f center, double spreadDistance, ServerWorld world, Random random, double minX, double minZ, double maxX, double maxZ, int maxY, SpreadPlayersCommand$Pile[] piles, boolean respectTeams)"
+		},
+		{
+			"forge": "setPlayerPositions(Collection<? extends Entity> arg0, ServerLevel arg1, SpreadPlayersCommand$Position[] arg2, int arg3, boolean arg4)",
+			"fabric": "getMinDistance(Collection<? extends Entity> entities, ServerWorld world, SpreadPlayersCommand$Pile[] piles, int maxY, boolean respectTeams)"
+		},
+		{
+			"forge": "createInitialPositions(RandomSource arg0, int arg1, double arg2, double arg3, double arg4, double arg5)",
+			"fabric": "makePiles(Random random, int count, double minX, double minZ, double maxX, double maxZ)"
+		}
+	]
+}

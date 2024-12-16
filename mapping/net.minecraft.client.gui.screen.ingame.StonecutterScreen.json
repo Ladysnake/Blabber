@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.StonecutterScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.StonecutterScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.StonecutterScreen"
+		},
+		{
+			"forge": "BG_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "BG_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SCROLLER_WIDTH",
+			"fabric": "SCROLLBAR_WIDTH"
+		},
+		{
+			"forge": "SCROLLER_HEIGHT",
+			"fabric": "SCROLLBAR_HEIGHT"
+		},
+		{
+			"forge": "RECIPES_COLUMNS",
+			"fabric": "RECIPE_LIST_COLUMNS"
+		},
+		{
+			"forge": "RECIPES_ROWS",
+			"fabric": "RECIPE_LIST_ROWS"
+		},
+		{
+			"forge": "RECIPES_IMAGE_SIZE_WIDTH",
+			"fabric": "RECIPE_ENTRY_WIDTH"
+		},
+		{
+			"forge": "RECIPES_IMAGE_SIZE_HEIGHT",
+			"fabric": "RECIPE_ENTRY_HEIGHT"
+		},
+		{
+			"forge": "SCROLLER_FULL_HEIGHT",
+			"fabric": "SCROLLBAR_AREA_HEIGHT"
+		},
+		{
+			"forge": "RECIPES_X",
+			"fabric": "RECIPE_LIST_OFFSET_X"
+		},
+		{
+			"forge": "RECIPES_Y",
+			"fabric": "RECIPE_LIST_OFFSET_Y"
+		},
+		{
+			"forge": "scrollOffs",
+			"fabric": "scrollAmount"
+		},
+		{
+			"forge": "scrolling",
+			"fabric": "mouseClicked"
+		},
+		{
+			"forge": "startIndex",
+			"fabric": "scrollOffset"
+		},
+		{
+			"forge": "displayRecipes",
+			"fabric": "canCraft"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderBg(GuiGraphics arg0, float arg1, int arg2, int arg3)",
+			"fabric": "drawBackground(DrawContext arg0, float arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "renderTooltip(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawMouseoverTooltip(DrawContext arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "renderButtons(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "renderRecipeBackground(DrawContext context, int mouseX, int mouseY, int x, int y, int scrollOffset)"
+		},
+		{
+			"forge": "renderRecipes(GuiGraphics arg0, int arg1, int arg2, int arg3)",
+			"fabric": "renderRecipeIcons(DrawContext context, int x, int y, int scrollOffset)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)",
+			"fabric": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "mouseScrolled(double arg0, double arg1, double arg2)",
+			"fabric": "mouseScrolled(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "isScrollBarActive()",
+			"fabric": "shouldScroll()"
+		},
+		{
+			"forge": "getOffscreenRows()",
+			"fabric": "getMaxScroll()"
+		},
+		{
+			"forge": "containerChanged()",
+			"fabric": "onInventoryChange()"
+		}
+	]
+}

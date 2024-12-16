@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.schedule.Keyframe",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.schedule.Keyframe",
+			"fabric": "net.minecraft.entity.ai.brain.ScheduleRuleEntry"
+		},
+		{
+			"forge": "timeStamp",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "timeStamp",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "value",
+			"fabric": "priority"
+		},
+		{
+			"forge": "getTimeStamp()",
+			"fabric": "getStartTime()"
+		},
+		{
+			"forge": "getTimeStamp()",
+			"fabric": "getStartTime()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getPriority()"
+		}
+	]
+}

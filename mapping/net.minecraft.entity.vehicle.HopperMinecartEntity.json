@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.MinecartHopper",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.MinecartHopper",
+			"fabric": "net.minecraft.entity.vehicle.HopperMinecartEntity"
+		},
+		{
+			"forge": "enabled",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "enabled",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "getMinecartType()",
+			"fabric": "getMinecartType()"
+		},
+		{
+			"forge": "getMinecartType()",
+			"fabric": "getMinecartType()"
+		},
+		{
+			"forge": "getDefaultDisplayBlockState()",
+			"fabric": "getDefaultContainedBlock()"
+		},
+		{
+			"forge": "getDefaultDisplayOffset()",
+			"fabric": "getDefaultBlockOffset()"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "activateMinecart(int arg0, int arg1, int arg2, boolean arg3)",
+			"fabric": "onActivatorRail(int arg0, int arg1, int arg2, boolean arg3)"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "isEnabled()"
+		},
+		{
+			"forge": "setEnabled(boolean arg0)",
+			"fabric": "setEnabled(boolean enabled)"
+		},
+		{
+			"forge": "getLevelX()",
+			"fabric": "getHopperX()"
+		},
+		{
+			"forge": "getLevelY()",
+			"fabric": "getHopperY()"
+		},
+		{
+			"forge": "getLevelZ()",
+			"fabric": "getHopperZ()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "suckInItems()",
+			"fabric": "canOperate()"
+		},
+		{
+			"forge": "getDropItem()",
+			"fabric": "getItem()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1)",
+			"fabric": "getScreenHandler(int arg0, PlayerInventory arg1)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.OptionInstance$IntRange",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$IntRange",
+			"fabric": "net.minecraft.client.option.SimpleOption$ValidatingIntSliderCallbacks"
+		},
+		{
+			"forge": "minInclusive",
+			"fabric": "minInclusive"
+		},
+		{
+			"forge": "minInclusive",
+			"fabric": "minInclusive"
+		},
+		{
+			"forge": "maxInclusive",
+			"fabric": "maxInclusive"
+		},
+		{
+			"forge": "validateValue(Integer arg0)",
+			"fabric": "validate(Integer arg0)"
+		},
+		{
+			"forge": "validateValue(Integer arg0)",
+			"fabric": "validate(Integer arg0)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "codec()"
+		},
+		{
+			"forge": "minInclusive()",
+			"fabric": "minInclusive()"
+		},
+		{
+			"forge": "maxInclusive()",
+			"fabric": "maxInclusive()"
+		}
+	]
+}

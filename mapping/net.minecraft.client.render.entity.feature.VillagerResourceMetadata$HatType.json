@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.resources.metadata.animation.VillagerMetaDataSection$Hat",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.metadata.animation.VillagerMetaDataSection$Hat",
+			"fabric": "net.minecraft.client.render.entity.feature.VillagerResourceMetadata$HatType"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "PARTIAL",
+			"fabric": "PARTIAL"
+		},
+		{
+			"forge": "FULL",
+			"fabric": "FULL"
+		},
+		{
+			"forge": "BY_NAME",
+			"fabric": "BY_NAME"
+		},
+		{
+			"forge": "BY_NAME",
+			"fabric": "BY_NAME"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getByName(String arg0)",
+			"fabric": "from(String name)"
+		}
+	]
+}

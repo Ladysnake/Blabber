@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.RotationSegment",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.RotationSegment",
+			"fabric": "net.minecraft.util.math.RotationPropertyHelper"
+		},
+		{
+			"forge": "SEGMENTED_ANGLE16",
+			"fabric": "CALCULATOR"
+		},
+		{
+			"forge": "SEGMENTED_ANGLE16",
+			"fabric": "CALCULATOR"
+		},
+		{
+			"forge": "MAX_SEGMENT_INDEX",
+			"fabric": "MAX"
+		},
+		{
+			"forge": "NORTH_0",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "EAST_90",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "SOUTH_180",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "WEST_270",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "getMaxSegmentIndex()",
+			"fabric": "getMax()"
+		},
+		{
+			"forge": "getMaxSegmentIndex()",
+			"fabric": "getMax()"
+		},
+		{
+			"forge": "convertToSegment(Direction arg0)",
+			"fabric": "fromDirection(Direction direction)"
+		},
+		{
+			"forge": "convertToSegment(float arg0)",
+			"fabric": "fromYaw(float yaw)"
+		},
+		{
+			"forge": "convertToDirection(int arg0)",
+			"fabric": "toDirection(int rotation)"
+		},
+		{
+			"forge": "convertToDegrees(int arg0)",
+			"fabric": "toDegrees(int rotation)"
+		}
+	]
+}

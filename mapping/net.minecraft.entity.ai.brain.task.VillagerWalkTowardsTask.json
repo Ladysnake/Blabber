@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.SetWalkTargetFromBlockMemory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.SetWalkTargetFromBlockMemory",
+			"fabric": "net.minecraft.entity.ai.brain.task.VillagerWalkTowardsTask"
+		},
+		{
+			"forge": "create(MemoryModuleType<GlobalPos> arg0, float arg1, int arg2, int arg3, int arg4)",
+			"fabric": "create(MemoryModuleType<GlobalPos> destination, float speed, int completionRange, int maxDistance, int maxRunTime)"
+		},
+		{
+			"forge": "create(MemoryModuleType<GlobalPos> arg0, float arg1, int arg2, int arg3, int arg4)",
+			"fabric": "create(MemoryModuleType<GlobalPos> destination, float speed, int completionRange, int maxDistance, int maxRunTime)"
+		}
+	]
+}

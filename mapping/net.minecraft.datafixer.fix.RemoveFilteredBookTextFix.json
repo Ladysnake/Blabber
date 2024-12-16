@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.FilteredBooksFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.FilteredBooksFix",
+			"fabric": "net.minecraft.datafixer.fix.RemoveFilteredBookTextFix"
+		},
+		{
+			"forge": "fixItemStackTag(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixNbt(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "fixItemStackTag(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixNbt(com.mojang.serialization.Dynamic<T> arg0)"
+		}
+	]
+}

@@ -1,0 +1,161 @@
+{
+	"title": "net.minecraft.world.item.DyeColor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.DyeColor",
+			"fabric": "net.minecraft.util.DyeColor"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "WHITE",
+			"fabric": "WHITE"
+		},
+		{
+			"forge": "ORANGE",
+			"fabric": "ORANGE"
+		},
+		{
+			"forge": "MAGENTA",
+			"fabric": "MAGENTA"
+		},
+		{
+			"forge": "LIGHT_BLUE",
+			"fabric": "LIGHT_BLUE"
+		},
+		{
+			"forge": "YELLOW",
+			"fabric": "YELLOW"
+		},
+		{
+			"forge": "LIME",
+			"fabric": "LIME"
+		},
+		{
+			"forge": "PINK",
+			"fabric": "PINK"
+		},
+		{
+			"forge": "GRAY",
+			"fabric": "GRAY"
+		},
+		{
+			"forge": "LIGHT_GRAY",
+			"fabric": "LIGHT_GRAY"
+		},
+		{
+			"forge": "CYAN",
+			"fabric": "CYAN"
+		},
+		{
+			"forge": "PURPLE",
+			"fabric": "PURPLE"
+		},
+		{
+			"forge": "BLUE",
+			"fabric": "BLUE"
+		},
+		{
+			"forge": "BROWN",
+			"fabric": "BROWN"
+		},
+		{
+			"forge": "GREEN",
+			"fabric": "GREEN"
+		},
+		{
+			"forge": "RED",
+			"fabric": "RED"
+		},
+		{
+			"forge": "BLACK",
+			"fabric": "BLACK"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_FIREWORK_COLOR",
+			"fabric": "BY_FIREWORK_COLOR"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "mapColor",
+			"fabric": "mapColor"
+		},
+		{
+			"forge": "textureDiffuseColors",
+			"fabric": "colorComponents"
+		},
+		{
+			"forge": "fireworkColor",
+			"fabric": "fireworkColor"
+		},
+		{
+			"forge": "textColor",
+			"fabric": "signColor"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getTextureDiffuseColors()",
+			"fabric": "getColorComponents()"
+		},
+		{
+			"forge": "getMapColor()",
+			"fabric": "getMapColor()"
+		},
+		{
+			"forge": "getFireworkColor()",
+			"fabric": "getFireworkColor()"
+		},
+		{
+			"forge": "getTextColor()",
+			"fabric": "getSignColor()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "byName(String arg0, DyeColor arg1)",
+			"fabric": "byName(String name, DyeColor defaultColor)"
+		},
+		{
+			"forge": "byFireworkColor(int arg0)",
+			"fabric": "byFireworkColor(int color)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

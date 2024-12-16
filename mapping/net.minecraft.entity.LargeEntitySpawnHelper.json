@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.SpawnUtil",
+	"items": [
+		{
+			"forge": "net.minecraft.util.SpawnUtil",
+			"fabric": "net.minecraft.entity.LargeEntitySpawnHelper"
+		},
+		{
+			"forge": "trySpawnMob(EntityType<T> arg0, MobSpawnType arg1, ServerLevel arg2, BlockPos arg3, int arg4, int arg5, int arg6, SpawnUtil$Strategy arg7)",
+			"fabric": "trySpawnAt(EntityType<T> entityType, SpawnReason reason, ServerWorld world, BlockPos pos, int tries, int horizontalRange, int verticalRange, LargeEntitySpawnHelper$Requirements requirements)"
+		},
+		{
+			"forge": "trySpawnMob(EntityType<T> arg0, MobSpawnType arg1, ServerLevel arg2, BlockPos arg3, int arg4, int arg5, int arg6, SpawnUtil$Strategy arg7)",
+			"fabric": "trySpawnAt(EntityType<T> entityType, SpawnReason reason, ServerWorld world, BlockPos pos, int tries, int horizontalRange, int verticalRange, LargeEntitySpawnHelper$Requirements requirements)"
+		},
+		{
+			"forge": "moveToPossibleSpawnPosition(ServerLevel arg0, int arg1, BlockPos$MutableBlockPos arg2, SpawnUtil$Strategy arg3)",
+			"fabric": "findSpawnPos(ServerWorld world, int verticalRange, BlockPos$Mutable pos, LargeEntitySpawnHelper$Requirements requirements)"
+		}
+	]
+}

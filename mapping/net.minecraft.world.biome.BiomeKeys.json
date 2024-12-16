@@ -1,0 +1,277 @@
+{
+	"title": "net.minecraft.world.level.biome.Biomes",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.Biomes",
+			"fabric": "net.minecraft.world.biome.BiomeKeys"
+		},
+		{
+			"forge": "THE_VOID",
+			"fabric": "THE_VOID"
+		},
+		{
+			"forge": "THE_VOID",
+			"fabric": "THE_VOID"
+		},
+		{
+			"forge": "PLAINS",
+			"fabric": "PLAINS"
+		},
+		{
+			"forge": "SUNFLOWER_PLAINS",
+			"fabric": "SUNFLOWER_PLAINS"
+		},
+		{
+			"forge": "SNOWY_PLAINS",
+			"fabric": "SNOWY_PLAINS"
+		},
+		{
+			"forge": "ICE_SPIKES",
+			"fabric": "ICE_SPIKES"
+		},
+		{
+			"forge": "DESERT",
+			"fabric": "DESERT"
+		},
+		{
+			"forge": "SWAMP",
+			"fabric": "SWAMP"
+		},
+		{
+			"forge": "MANGROVE_SWAMP",
+			"fabric": "MANGROVE_SWAMP"
+		},
+		{
+			"forge": "FOREST",
+			"fabric": "FOREST"
+		},
+		{
+			"forge": "FLOWER_FOREST",
+			"fabric": "FLOWER_FOREST"
+		},
+		{
+			"forge": "BIRCH_FOREST",
+			"fabric": "BIRCH_FOREST"
+		},
+		{
+			"forge": "DARK_FOREST",
+			"fabric": "DARK_FOREST"
+		},
+		{
+			"forge": "OLD_GROWTH_BIRCH_FOREST",
+			"fabric": "OLD_GROWTH_BIRCH_FOREST"
+		},
+		{
+			"forge": "OLD_GROWTH_PINE_TAIGA",
+			"fabric": "OLD_GROWTH_PINE_TAIGA"
+		},
+		{
+			"forge": "OLD_GROWTH_SPRUCE_TAIGA",
+			"fabric": "OLD_GROWTH_SPRUCE_TAIGA"
+		},
+		{
+			"forge": "TAIGA",
+			"fabric": "TAIGA"
+		},
+		{
+			"forge": "SNOWY_TAIGA",
+			"fabric": "SNOWY_TAIGA"
+		},
+		{
+			"forge": "SAVANNA",
+			"fabric": "SAVANNA"
+		},
+		{
+			"forge": "SAVANNA_PLATEAU",
+			"fabric": "SAVANNA_PLATEAU"
+		},
+		{
+			"forge": "WINDSWEPT_HILLS",
+			"fabric": "WINDSWEPT_HILLS"
+		},
+		{
+			"forge": "WINDSWEPT_GRAVELLY_HILLS",
+			"fabric": "WINDSWEPT_GRAVELLY_HILLS"
+		},
+		{
+			"forge": "WINDSWEPT_FOREST",
+			"fabric": "WINDSWEPT_FOREST"
+		},
+		{
+			"forge": "WINDSWEPT_SAVANNA",
+			"fabric": "WINDSWEPT_SAVANNA"
+		},
+		{
+			"forge": "JUNGLE",
+			"fabric": "JUNGLE"
+		},
+		{
+			"forge": "SPARSE_JUNGLE",
+			"fabric": "SPARSE_JUNGLE"
+		},
+		{
+			"forge": "BAMBOO_JUNGLE",
+			"fabric": "BAMBOO_JUNGLE"
+		},
+		{
+			"forge": "BADLANDS",
+			"fabric": "BADLANDS"
+		},
+		{
+			"forge": "ERODED_BADLANDS",
+			"fabric": "ERODED_BADLANDS"
+		},
+		{
+			"forge": "WOODED_BADLANDS",
+			"fabric": "WOODED_BADLANDS"
+		},
+		{
+			"forge": "MEADOW",
+			"fabric": "MEADOW"
+		},
+		{
+			"forge": "CHERRY_GROVE",
+			"fabric": "CHERRY_GROVE"
+		},
+		{
+			"forge": "GROVE",
+			"fabric": "GROVE"
+		},
+		{
+			"forge": "SNOWY_SLOPES",
+			"fabric": "SNOWY_SLOPES"
+		},
+		{
+			"forge": "FROZEN_PEAKS",
+			"fabric": "FROZEN_PEAKS"
+		},
+		{
+			"forge": "JAGGED_PEAKS",
+			"fabric": "JAGGED_PEAKS"
+		},
+		{
+			"forge": "STONY_PEAKS",
+			"fabric": "STONY_PEAKS"
+		},
+		{
+			"forge": "RIVER",
+			"fabric": "RIVER"
+		},
+		{
+			"forge": "FROZEN_RIVER",
+			"fabric": "FROZEN_RIVER"
+		},
+		{
+			"forge": "BEACH",
+			"fabric": "BEACH"
+		},
+		{
+			"forge": "SNOWY_BEACH",
+			"fabric": "SNOWY_BEACH"
+		},
+		{
+			"forge": "STONY_SHORE",
+			"fabric": "STONY_SHORE"
+		},
+		{
+			"forge": "WARM_OCEAN",
+			"fabric": "WARM_OCEAN"
+		},
+		{
+			"forge": "LUKEWARM_OCEAN",
+			"fabric": "LUKEWARM_OCEAN"
+		},
+		{
+			"forge": "DEEP_LUKEWARM_OCEAN",
+			"fabric": "DEEP_LUKEWARM_OCEAN"
+		},
+		{
+			"forge": "OCEAN",
+			"fabric": "OCEAN"
+		},
+		{
+			"forge": "DEEP_OCEAN",
+			"fabric": "DEEP_OCEAN"
+		},
+		{
+			"forge": "COLD_OCEAN",
+			"fabric": "COLD_OCEAN"
+		},
+		{
+			"forge": "DEEP_COLD_OCEAN",
+			"fabric": "DEEP_COLD_OCEAN"
+		},
+		{
+			"forge": "FROZEN_OCEAN",
+			"fabric": "FROZEN_OCEAN"
+		},
+		{
+			"forge": "DEEP_FROZEN_OCEAN",
+			"fabric": "DEEP_FROZEN_OCEAN"
+		},
+		{
+			"forge": "MUSHROOM_FIELDS",
+			"fabric": "MUSHROOM_FIELDS"
+		},
+		{
+			"forge": "DRIPSTONE_CAVES",
+			"fabric": "DRIPSTONE_CAVES"
+		},
+		{
+			"forge": "LUSH_CAVES",
+			"fabric": "LUSH_CAVES"
+		},
+		{
+			"forge": "DEEP_DARK",
+			"fabric": "DEEP_DARK"
+		},
+		{
+			"forge": "NETHER_WASTES",
+			"fabric": "NETHER_WASTES"
+		},
+		{
+			"forge": "WARPED_FOREST",
+			"fabric": "WARPED_FOREST"
+		},
+		{
+			"forge": "CRIMSON_FOREST",
+			"fabric": "CRIMSON_FOREST"
+		},
+		{
+			"forge": "SOUL_SAND_VALLEY",
+			"fabric": "SOUL_SAND_VALLEY"
+		},
+		{
+			"forge": "BASALT_DELTAS",
+			"fabric": "BASALT_DELTAS"
+		},
+		{
+			"forge": "THE_END",
+			"fabric": "THE_END"
+		},
+		{
+			"forge": "END_HIGHLANDS",
+			"fabric": "END_HIGHLANDS"
+		},
+		{
+			"forge": "END_MIDLANDS",
+			"fabric": "END_MIDLANDS"
+		},
+		{
+			"forge": "SMALL_END_ISLANDS",
+			"fabric": "SMALL_END_ISLANDS"
+		},
+		{
+			"forge": "END_BARRENS",
+			"fabric": "END_BARRENS"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "register(String name)"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "register(String name)"
+		}
+	]
+}

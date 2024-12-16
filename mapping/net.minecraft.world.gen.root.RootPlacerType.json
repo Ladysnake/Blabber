@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType",
+			"fabric": "net.minecraft.world.gen.root.RootPlacerType"
+		},
+		{
+			"forge": "MANGROVE_ROOT_PLACER",
+			"fabric": "MANGROVE_ROOT_PLACER"
+		},
+		{
+			"forge": "MANGROVE_ROOT_PLACER",
+			"fabric": "MANGROVE_ROOT_PLACER"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		}
+	]
+}

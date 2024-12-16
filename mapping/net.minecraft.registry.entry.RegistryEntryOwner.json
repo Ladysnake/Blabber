@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.core.HolderOwner",
+	"items": [
+		{
+			"forge": "net.minecraft.core.HolderOwner",
+			"fabric": "net.minecraft.registry.entry.RegistryEntryOwner"
+		},
+		{
+			"forge": "canSerializeIn(HolderOwner<T> arg0)",
+			"fabric": "ownerEquals(RegistryEntryOwner<T> other)"
+		},
+		{
+			"forge": "canSerializeIn(HolderOwner<T> arg0)",
+			"fabric": "ownerEquals(RegistryEntryOwner<T> other)"
+		}
+	]
+}

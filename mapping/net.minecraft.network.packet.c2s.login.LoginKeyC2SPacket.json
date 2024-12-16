@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.protocol.login.ServerboundKeyPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.login.ServerboundKeyPacket",
+			"fabric": "net.minecraft.network.packet.c2s.login.LoginKeyC2SPacket"
+		},
+		{
+			"forge": "keybytes",
+			"fabric": "encryptedSecretKey"
+		},
+		{
+			"forge": "keybytes",
+			"fabric": "encryptedSecretKey"
+		},
+		{
+			"forge": "encryptedChallenge",
+			"fabric": "nonce"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerLoginPacketListener arg0)",
+			"fabric": "apply(ServerLoginPacketListener arg0)"
+		},
+		{
+			"forge": "getSecretKey(PrivateKey arg0)",
+			"fabric": "decryptSecretKey(PrivateKey privateKey)"
+		},
+		{
+			"forge": "isChallengeValid(byte[] arg0, PrivateKey arg1)",
+			"fabric": "verifySignedNonce(byte[] nonce, PrivateKey privateKey)"
+		}
+	]
+}

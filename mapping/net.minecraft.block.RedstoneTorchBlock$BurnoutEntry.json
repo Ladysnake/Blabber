@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.block.RedstoneTorchBlock$Toggle",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.RedstoneTorchBlock$Toggle",
+			"fabric": "net.minecraft.block.RedstoneTorchBlock$BurnoutEntry"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "when",
+			"fabric": "time"
+		}
+	]
+}

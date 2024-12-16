@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.monster.Slime$SlimeMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Slime$SlimeMoveControl",
+			"fabric": "net.minecraft.entity.mob.SlimeEntity$SlimeMoveControl"
+		},
+		{
+			"forge": "yRot",
+			"fabric": "targetYaw"
+		},
+		{
+			"forge": "yRot",
+			"fabric": "targetYaw"
+		},
+		{
+			"forge": "jumpDelay",
+			"fabric": "ticksUntilJump"
+		},
+		{
+			"forge": "slime",
+			"fabric": "slime"
+		},
+		{
+			"forge": "isAggressive",
+			"fabric": "jumpOften"
+		},
+		{
+			"forge": "setDirection(float arg0, boolean arg1)",
+			"fabric": "look(float targetYaw, boolean jumpOften)"
+		},
+		{
+			"forge": "setDirection(float arg0, boolean arg1)",
+			"fabric": "look(float targetYaw, boolean jumpOften)"
+		},
+		{
+			"forge": "setWantedMovement(double arg0)",
+			"fabric": "move(double speed)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.warden.SonicBoom",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.warden.SonicBoom",
+			"fabric": "net.minecraft.entity.ai.brain.task.SonicBoomTask"
+		},
+		{
+			"forge": "DISTANCE_XZ",
+			"fabric": "HORIZONTAL_RANGE"
+		},
+		{
+			"forge": "DISTANCE_XZ",
+			"fabric": "HORIZONTAL_RANGE"
+		},
+		{
+			"forge": "DISTANCE_Y",
+			"fabric": "VERTICAL_RANGE"
+		},
+		{
+			"forge": "KNOCKBACK_VERTICAL",
+			"fabric": "field_38852"
+		},
+		{
+			"forge": "KNOCKBACK_HORIZONTAL",
+			"fabric": "field_38853"
+		},
+		{
+			"forge": "COOLDOWN",
+			"fabric": "COOLDOWN"
+		},
+		{
+			"forge": "TICKS_BEFORE_PLAYING_SOUND",
+			"fabric": "SOUND_DELAY"
+		},
+		{
+			"forge": "DURATION",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Warden arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, WardenEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Warden arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, WardenEntity arg1)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		},
+		{
+			"forge": "setCooldown(LivingEntity arg0, int arg1)",
+			"fabric": "cooldown(LivingEntity warden, int cooldown)"
+		}
+	]
+}

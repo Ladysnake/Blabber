@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.ApplyBonusCount",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.ApplyBonusCount",
+			"fabric": "net.minecraft.loot.function.ApplyBonusLootFunction"
+		},
+		{
+			"forge": "FORMULAS",
+			"fabric": "FACTORIES"
+		},
+		{
+			"forge": "FORMULAS",
+			"fabric": "FACTORIES"
+		},
+		{
+			"forge": "enchantment",
+			"fabric": "enchantment"
+		},
+		{
+			"forge": "formula",
+			"fabric": "formula"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "addBonusBinomialDistributionCount(Enchantment arg0, float arg1, int arg2)",
+			"fabric": "binomialWithBonusCount(Enchantment enchantment, float probability, int extra)"
+		},
+		{
+			"forge": "addOreBonusCount(Enchantment arg0)",
+			"fabric": "oreDrops(Enchantment enchantment)"
+		},
+		{
+			"forge": "addUniformBonusCount(Enchantment arg0)",
+			"fabric": "uniformBonusCount(Enchantment enchantment)"
+		},
+		{
+			"forge": "addUniformBonusCount(Enchantment arg0, int arg1)",
+			"fabric": "uniformBonusCount(Enchantment enchantment, int bonusMultiplier)"
+		}
+	]
+}

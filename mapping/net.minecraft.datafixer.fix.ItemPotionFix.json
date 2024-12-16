@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ItemPotionFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ItemPotionFix",
+			"fabric": "net.minecraft.datafixer.fix.ItemPotionFix"
+		},
+		{
+			"forge": "SPLASH",
+			"fabric": "field_29885"
+		},
+		{
+			"forge": "SPLASH",
+			"fabric": "field_29885"
+		},
+		{
+			"forge": "POTIONS",
+			"fabric": "ID_TO_POTIONS"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "WATER"
+		}
+	]
+}

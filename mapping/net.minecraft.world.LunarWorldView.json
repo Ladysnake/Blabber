@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.LevelTimeAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.LevelTimeAccess",
+			"fabric": "net.minecraft.world.LunarWorldView"
+		},
+		{
+			"forge": "dayTime()",
+			"fabric": "getLunarTime()"
+		},
+		{
+			"forge": "dayTime()",
+			"fabric": "getLunarTime()"
+		},
+		{
+			"forge": "getMoonBrightness()",
+			"fabric": "getMoonSize()"
+		},
+		{
+			"forge": "getTimeOfDay(float arg0)",
+			"fabric": "getSkyAngle(float tickDelta)"
+		},
+		{
+			"forge": "getMoonPhase()",
+			"fabric": "getMoonPhase()"
+		}
+	]
+}

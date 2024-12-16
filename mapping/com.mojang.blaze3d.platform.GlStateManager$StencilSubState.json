@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$StencilFunc",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$StencilFunc",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$StencilSubState"
+		},
+		{
+			"forge": "func",
+			"fabric": "func"
+		},
+		{
+			"forge": "func",
+			"fabric": "func"
+		},
+		{
+			"forge": "ref",
+			"fabric": "ref"
+		},
+		{
+			"forge": "mask",
+			"fabric": "mask"
+		}
+	]
+}

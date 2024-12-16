@@ -1,0 +1,165 @@
+{
+	"title": "net.minecraft.server.packs.linkfs.LinkFSPath",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.linkfs.LinkFSPath",
+			"fabric": "net.minecraft.resource.fs.ResourcePath"
+		},
+		{
+			"forge": "DIRECTORY_ATTRIBUTES",
+			"fabric": "DIRECTORY_ATTRIBUTES"
+		},
+		{
+			"forge": "DIRECTORY_ATTRIBUTES",
+			"fabric": "DIRECTORY_ATTRIBUTES"
+		},
+		{
+			"forge": "FILE_ATTRIBUTES",
+			"fabric": "FILE_ATTRIBUTES"
+		},
+		{
+			"forge": "PATH_COMPARATOR",
+			"fabric": "COMPARATOR"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "fileSystem",
+			"fabric": "fileSystem"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "pathToRoot",
+			"fabric": "names"
+		},
+		{
+			"forge": "pathString",
+			"fabric": "pathString"
+		},
+		{
+			"forge": "pathContents",
+			"fabric": "file"
+		},
+		{
+			"forge": "createRelativePath(LinkFSPath arg0, String arg1)",
+			"fabric": "relativize(ResourcePath path, String name)"
+		},
+		{
+			"forge": "createRelativePath(LinkFSPath arg0, String arg1)",
+			"fabric": "relativize(ResourcePath path, String name)"
+		},
+		{
+			"forge": "getFileSystem()",
+			"fabric": "getFileSystem()"
+		},
+		{
+			"forge": "getRoot()",
+			"fabric": "getRoot()"
+		},
+		{
+			"forge": "getFileName()",
+			"fabric": "getFileName()"
+		},
+		{
+			"forge": "getParent()",
+			"fabric": "getParent()"
+		},
+		{
+			"forge": "pathToRoot()",
+			"fabric": "getNames()"
+		},
+		{
+			"forge": "getName(int arg0)",
+			"fabric": "getName(int arg0)"
+		},
+		{
+			"forge": "subpath(int arg0, int arg1)",
+			"fabric": "subpath(int arg0, int arg1)"
+		},
+		{
+			"forge": "startsWith(Path arg0)",
+			"fabric": "startsWith(Path other)"
+		},
+		{
+			"forge": "endsWith(Path arg0)",
+			"fabric": "endsWith(Path other)"
+		},
+		{
+			"forge": "normalize()",
+			"fabric": "normalize()"
+		},
+		{
+			"forge": "resolve(Path arg0)",
+			"fabric": "resolve(Path arg0)"
+		},
+		{
+			"forge": "resolve(List<String> arg0)",
+			"fabric": "get(List<String> paths)"
+		},
+		{
+			"forge": "resolveName(String arg0)",
+			"fabric": "get(String name)"
+		},
+		{
+			"forge": "isRelativeOrMissing(PathContents arg0)",
+			"fabric": "isSpecial(ResourceFile file)"
+		},
+		{
+			"forge": "relativize(Path arg0)",
+			"fabric": "relativize(Path arg0)"
+		},
+		{
+			"forge": "toAbsolutePath()",
+			"fabric": "toAbsolutePath()"
+		},
+		{
+			"forge": "toRealPath(LinkOption... arg0)",
+			"fabric": "toRealPath(LinkOption... arg0)"
+		},
+		{
+			"forge": "register(WatchService arg0, WatchEvent$Kind<?>[] arg1, WatchEvent$Modifier... arg2)",
+			"fabric": "register(WatchService watcher, WatchEvent$Kind<?>[] events, WatchEvent$Modifier... modifiers)"
+		},
+		{
+			"forge": "compareTo(Path arg0)",
+			"fabric": "compareTo(Path arg0)"
+		},
+		{
+			"forge": "hasRealContents()",
+			"fabric": "isNormal()"
+		},
+		{
+			"forge": "pathToString()",
+			"fabric": "getPathString()"
+		},
+		{
+			"forge": "toLinkPath(Path arg0)",
+			"fabric": "toResourcePath(Path path)"
+		},
+		{
+			"forge": "exists()",
+			"fabric": "isReadable()"
+		},
+		{
+			"forge": "getTargetPath()",
+			"fabric": "toPath()"
+		},
+		{
+			"forge": "getDirectoryContents()",
+			"fabric": "toDirectory()"
+		},
+		{
+			"forge": "getBasicAttributeView()",
+			"fabric": "getAttributeView()"
+		},
+		{
+			"forge": "getBasicAttributes()",
+			"fabric": "getAttributes()"
+		}
+	]
+}

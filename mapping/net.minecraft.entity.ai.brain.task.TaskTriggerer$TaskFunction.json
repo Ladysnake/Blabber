@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$TriggerWithResult",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$TriggerWithResult",
+			"fabric": "net.minecraft.entity.ai.brain.task.TaskTriggerer$TaskFunction"
+		},
+		{
+			"forge": "tryTrigger(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "run(ServerWorld world, E entity, long time)"
+		},
+		{
+			"forge": "tryTrigger(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "run(ServerWorld world, E entity, long time)"
+		},
+		{
+			"forge": "debugString()",
+			"fabric": "asString()"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.storage.DataVersion",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.DataVersion",
+			"fabric": "net.minecraft.SaveVersion"
+		},
+		{
+			"forge": "version",
+			"fabric": "id"
+		},
+		{
+			"forge": "version",
+			"fabric": "id"
+		},
+		{
+			"forge": "series",
+			"fabric": "series"
+		},
+		{
+			"forge": "MAIN_SERIES",
+			"fabric": "MAIN_SERIES"
+		},
+		{
+			"forge": "isSideSeries()",
+			"fabric": "isNotMainSeries()"
+		},
+		{
+			"forge": "isSideSeries()",
+			"fabric": "isNotMainSeries()"
+		},
+		{
+			"forge": "getSeries()",
+			"fabric": "getSeries()"
+		},
+		{
+			"forge": "getVersion()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "isCompatible(DataVersion arg0)",
+			"fabric": "isAvailableTo(SaveVersion other)"
+		}
+	]
+}

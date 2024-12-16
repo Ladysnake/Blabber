@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundCommandsPacket$NodeStub",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundCommandsPacket$NodeStub",
+			"fabric": "net.minecraft.network.packet.s2c.play.CommandTreeS2CPacket$SuggestableNode"
+		},
+		{
+			"forge": "build(CommandBuildContext arg0)",
+			"fabric": "createArgumentBuilder(CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "build(CommandBuildContext arg0)",
+			"fabric": "createArgumentBuilder(CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf buf)"
+		}
+	]
+}

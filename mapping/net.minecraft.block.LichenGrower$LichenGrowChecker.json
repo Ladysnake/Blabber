@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.MultifaceSpreader$DefaultSpreaderConfig",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.MultifaceSpreader$DefaultSpreaderConfig",
+			"fabric": "net.minecraft.block.LichenGrower$LichenGrowChecker"
+		},
+		{
+			"forge": "block",
+			"fabric": "lichen"
+		},
+		{
+			"forge": "block",
+			"fabric": "lichen"
+		},
+		{
+			"forge": "getStateForPlacement(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStateWithDirection(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStateWithDirection(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "stateCanBeReplaced(BlockGetter arg0, BlockPos arg1, BlockPos arg2, Direction arg3, BlockState arg4)",
+			"fabric": "canGrow(BlockView world, BlockPos pos, BlockPos growPos, Direction direction, BlockState state)"
+		},
+		{
+			"forge": "canSpreadInto(BlockGetter arg0, BlockPos arg1, MultifaceSpreader$SpreadPos arg2)",
+			"fabric": "canGrow(BlockView arg0, BlockPos arg1, LichenGrower$GrowPos arg2)"
+		}
+	]
+}

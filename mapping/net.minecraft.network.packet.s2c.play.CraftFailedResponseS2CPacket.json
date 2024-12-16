@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundPlaceGhostRecipePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundPlaceGhostRecipePacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.CraftFailedResponseS2CPacket"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "containerId",
+			"fabric": "syncId"
+		},
+		{
+			"forge": "recipe",
+			"fabric": "recipeId"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getRecipe()",
+			"fabric": "getRecipeId()"
+		},
+		{
+			"forge": "getContainerId()",
+			"fabric": "getSyncId()"
+		}
+	]
+}

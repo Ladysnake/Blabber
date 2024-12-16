@@ -1,0 +1,61 @@
+{
+	"title": "com.mojang.blaze3d.font.TrueTypeGlyphProvider",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.font.TrueTypeGlyphProvider",
+			"fabric": "net.minecraft.client.font.TrueTypeFont"
+		},
+		{
+			"forge": "fontMemory",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "fontMemory",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "font",
+			"fabric": "info"
+		},
+		{
+			"forge": "oversample",
+			"fabric": "oversample"
+		},
+		{
+			"forge": "skip",
+			"fabric": "excludedCharacters"
+		},
+		{
+			"forge": "shiftX",
+			"fabric": "shiftX"
+		},
+		{
+			"forge": "shiftY",
+			"fabric": "shiftY"
+		},
+		{
+			"forge": "pointScale",
+			"fabric": "scaleFactor"
+		},
+		{
+			"forge": "ascent",
+			"fabric": "ascent"
+		},
+		{
+			"forge": "getGlyph(int arg0)",
+			"fabric": "getGlyph(int arg0)"
+		},
+		{
+			"forge": "getGlyph(int arg0)",
+			"fabric": "getGlyph(int arg0)"
+		},
+		{
+			"forge": "validateFontOpen()",
+			"fabric": "getInfo()"
+		},
+		{
+			"forge": "getSupportedGlyphs()",
+			"fabric": "getProvidedGlyphs()"
+		}
+	]
+}

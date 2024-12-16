@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.advancements.critereon.EntitySubPredicate$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.EntitySubPredicate$Type",
+			"fabric": "net.minecraft.predicate.entity.TypeSpecificPredicate$Deserializer"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0)",
+			"fabric": "deserialize(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0)",
+			"fabric": "deserialize(com.google.gson.JsonObject json)"
+		}
+	]
+}

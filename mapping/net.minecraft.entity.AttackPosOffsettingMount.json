@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.RiderShieldingMount",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.RiderShieldingMount",
+			"fabric": "net.minecraft.entity.AttackPosOffsettingMount"
+		},
+		{
+			"forge": "getRiderShieldingHeight()",
+			"fabric": "getPassengerAttackYOffset()"
+		},
+		{
+			"forge": "getRiderShieldingHeight()",
+			"fabric": "getPassengerAttackYOffset()"
+		}
+	]
+}

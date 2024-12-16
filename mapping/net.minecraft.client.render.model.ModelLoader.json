@@ -1,0 +1,229 @@
+{
+	"title": "net.minecraft.client.resources.model.ModelBakery",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.ModelBakery",
+			"fabric": "net.minecraft.client.render.model.ModelLoader"
+		},
+		{
+			"forge": "FIRE_0",
+			"fabric": "FIRE_0"
+		},
+		{
+			"forge": "FIRE_0",
+			"fabric": "FIRE_0"
+		},
+		{
+			"forge": "FIRE_1",
+			"fabric": "FIRE_1"
+		},
+		{
+			"forge": "LAVA_FLOW",
+			"fabric": "LAVA_FLOW"
+		},
+		{
+			"forge": "WATER_FLOW",
+			"fabric": "WATER_FLOW"
+		},
+		{
+			"forge": "WATER_OVERLAY",
+			"fabric": "WATER_OVERLAY"
+		},
+		{
+			"forge": "BANNER_BASE",
+			"fabric": "BANNER_BASE"
+		},
+		{
+			"forge": "SHIELD_BASE",
+			"fabric": "SHIELD_BASE"
+		},
+		{
+			"forge": "NO_PATTERN_SHIELD",
+			"fabric": "SHIELD_BASE_NO_PATTERN"
+		},
+		{
+			"forge": "DESTROY_STAGE_COUNT",
+			"fabric": "field_32983"
+		},
+		{
+			"forge": "DESTROY_STAGES",
+			"fabric": "BLOCK_DESTRUCTION_STAGES"
+		},
+		{
+			"forge": "BREAKING_LOCATIONS",
+			"fabric": "BLOCK_DESTRUCTION_STAGE_TEXTURES"
+		},
+		{
+			"forge": "DESTROY_TYPES",
+			"fabric": "BLOCK_DESTRUCTION_RENDER_LAYERS"
+		},
+		{
+			"forge": "SINGLETON_MODEL_GROUP",
+			"fabric": "field_32984"
+		},
+		{
+			"forge": "INVISIBLE_MODEL_GROUP",
+			"fabric": "field_32985"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "BUILTIN_SLASH",
+			"fabric": "BUILTIN"
+		},
+		{
+			"forge": "BUILTIN_SLASH_GENERATED",
+			"fabric": "BUILTIN_GENERATED"
+		},
+		{
+			"forge": "BUILTIN_BLOCK_ENTITY",
+			"fabric": "BUILTIN_ENTITY"
+		},
+		{
+			"forge": "MISSING_MODEL_NAME",
+			"fabric": "MISSING"
+		},
+		{
+			"forge": "MISSING_MODEL_LOCATION",
+			"fabric": "MISSING_ID"
+		},
+		{
+			"forge": "BLOCKSTATE_LISTER",
+			"fabric": "BLOCK_STATES_FINDER"
+		},
+		{
+			"forge": "MODEL_LISTER",
+			"fabric": "MODELS_FINDER"
+		},
+		{
+			"forge": "MISSING_MODEL_MESH",
+			"fabric": "MISSING_DEFINITION"
+		},
+		{
+			"forge": "BUILTIN_MODELS",
+			"fabric": "BUILTIN_MODEL_DEFINITIONS"
+		},
+		{
+			"forge": "COMMA_SPLITTER",
+			"fabric": "COMMA_SPLITTER"
+		},
+		{
+			"forge": "EQUAL_SPLITTER",
+			"fabric": "KEY_VALUE_SPLITTER"
+		},
+		{
+			"forge": "GENERATION_MARKER",
+			"fabric": "GENERATION_MARKER"
+		},
+		{
+			"forge": "BLOCK_ENTITY_MARKER",
+			"fabric": "BLOCK_ENTITY_MARKER"
+		},
+		{
+			"forge": "ITEM_FRAME_FAKE_DEFINITION",
+			"fabric": "ITEM_FRAME_STATE_FACTORY"
+		},
+		{
+			"forge": "ITEM_MODEL_GENERATOR",
+			"fabric": "ITEM_MODEL_GENERATOR"
+		},
+		{
+			"forge": "STATIC_DEFINITIONS",
+			"fabric": "STATIC_DEFINITIONS"
+		},
+		{
+			"forge": "blockColors",
+			"fabric": "blockColors"
+		},
+		{
+			"forge": "modelResources",
+			"fabric": "jsonUnbakedModels"
+		},
+		{
+			"forge": "blockStateResources",
+			"fabric": "blockStates"
+		},
+		{
+			"forge": "loadingStack",
+			"fabric": "modelsToLoad"
+		},
+		{
+			"forge": "context",
+			"fabric": "variantMapDeserializationContext"
+		},
+		{
+			"forge": "unbakedCache",
+			"fabric": "unbakedModels"
+		},
+		{
+			"forge": "bakedCache",
+			"fabric": "bakedModelCache"
+		},
+		{
+			"forge": "topLevelModels",
+			"fabric": "modelsToBake"
+		},
+		{
+			"forge": "bakedTopLevelModels",
+			"fabric": "bakedModels"
+		},
+		{
+			"forge": "nextModelGroup",
+			"fabric": "nextStateId"
+		},
+		{
+			"forge": "modelGroups",
+			"fabric": "stateLookup"
+		},
+		{
+			"forge": "bakeModels(BiFunction<ResourceLocation, Material, TextureAtlasSprite> arg0)",
+			"fabric": "bake(BiFunction<Identifier, SpriteIdentifier, Sprite> spriteLoader)"
+		},
+		{
+			"forge": "bakeModels(BiFunction<ResourceLocation, Material, TextureAtlasSprite> arg0)",
+			"fabric": "bake(BiFunction<Identifier, SpriteIdentifier, Sprite> spriteLoader)"
+		},
+		{
+			"forge": "predicate(StateDefinition<Block, BlockState> arg0, String arg1)",
+			"fabric": "stateKeyToPredicate(StateManager<Block, BlockState> stateFactory, String key)"
+		},
+		{
+			"forge": "getValueHelper(Property<T> arg0, String arg1)",
+			"fabric": "getPropertyValue(Property<T> property, String string)"
+		},
+		{
+			"forge": "getModel(ResourceLocation arg0)",
+			"fabric": "getOrLoadModel(Identifier id)"
+		},
+		{
+			"forge": "loadModel(ResourceLocation arg0)",
+			"fabric": "loadModel(Identifier id)"
+		},
+		{
+			"forge": "cacheAndQueueDependencies(ResourceLocation arg0, UnbakedModel arg1)",
+			"fabric": "putModel(Identifier id, UnbakedModel unbakedModel)"
+		},
+		{
+			"forge": "loadTopLevel(ModelResourceLocation arg0)",
+			"fabric": "addModel(ModelIdentifier modelId)"
+		},
+		{
+			"forge": "registerModelGroup(Iterable<BlockState> arg0)",
+			"fabric": "addStates(Iterable<BlockState> states)"
+		},
+		{
+			"forge": "loadBlockModel(ResourceLocation arg0)",
+			"fabric": "loadModelFromJson(Identifier id)"
+		},
+		{
+			"forge": "getBakedTopLevelModels()",
+			"fabric": "getBakedModelMap()"
+		},
+		{
+			"forge": "getModelGroups()",
+			"fabric": "getStateLookup()"
+		}
+	]
+}

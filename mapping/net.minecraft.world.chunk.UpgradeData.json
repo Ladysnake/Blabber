@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.level.chunk.UpgradeData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.UpgradeData",
+			"fabric": "net.minecraft.world.chunk.UpgradeData"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "NO_UPGRADE_DATA"
+		},
+		{
+			"forge": "TAG_INDICES",
+			"fabric": "INDICES_KEY"
+		},
+		{
+			"forge": "DIRECTIONS",
+			"fabric": "EIGHT_WAYS"
+		},
+		{
+			"forge": "sides",
+			"fabric": "sidesToUpgrade"
+		},
+		{
+			"forge": "neighborBlockTicks",
+			"fabric": "blockTicks"
+		},
+		{
+			"forge": "neighborFluidTicks",
+			"fabric": "fluidTicks"
+		},
+		{
+			"forge": "index",
+			"fabric": "centerIndicesToUpgrade"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "BLOCK_TO_LOGIC"
+		},
+		{
+			"forge": "CHUNKY_FIXERS",
+			"fabric": "CALLBACK_LOGICS"
+		},
+		{
+			"forge": "loadTicks(CompoundTag arg0, String arg1, Function<String, Optional<T>> arg2, List<SavedTick<T>> arg3)",
+			"fabric": "addNeighborTicks(NbtCompound nbt, String key, Function<String, Optional<T>> nameToType, List<Tick<T>> ticks)"
+		},
+		{
+			"forge": "loadTicks(CompoundTag arg0, String arg1, Function<String, Optional<T>> arg2, List<SavedTick<T>> arg3)",
+			"fabric": "addNeighborTicks(NbtCompound nbt, String key, Function<String, Optional<T>> nameToType, List<Tick<T>> ticks)"
+		},
+		{
+			"forge": "upgrade(LevelChunk arg0)",
+			"fabric": "upgrade(WorldChunk chunk)"
+		},
+		{
+			"forge": "upgradeSides(LevelChunk arg0, Direction8 arg1)",
+			"fabric": "upgradeSide(WorldChunk chunk, EightWayDirection side)"
+		},
+		{
+			"forge": "updateState(BlockState arg0, Direction arg1, LevelAccessor arg2, BlockPos arg3, BlockPos arg4)",
+			"fabric": "applyAdjacentBlock(BlockState oldState, Direction dir, WorldAccess world, BlockPos currentPos, BlockPos otherPos)"
+		},
+		{
+			"forge": "upgradeInside(LevelChunk arg0)",
+			"fabric": "upgradeCenter(WorldChunk chunk)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isDone()"
+		},
+		{
+			"forge": "write()",
+			"fabric": "toNbt()"
+		}
+	]
+}

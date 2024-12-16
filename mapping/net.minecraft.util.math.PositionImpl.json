@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.core.PositionImpl",
+	"items": [
+		{
+			"forge": "net.minecraft.core.PositionImpl",
+			"fabric": "net.minecraft.util.math.PositionImpl"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "x()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "y()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "z()",
+			"fabric": "getZ()"
+		}
+	]
+}

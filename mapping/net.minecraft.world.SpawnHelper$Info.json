@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.NaturalSpawner$SpawnState",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.NaturalSpawner$SpawnState",
+			"fabric": "net.minecraft.world.SpawnHelper$Info"
+		},
+		{
+			"forge": "spawnableChunkCount",
+			"fabric": "spawningChunkCount"
+		},
+		{
+			"forge": "spawnableChunkCount",
+			"fabric": "spawningChunkCount"
+		},
+		{
+			"forge": "mobCategoryCounts",
+			"fabric": "groupToCount"
+		},
+		{
+			"forge": "spawnPotential",
+			"fabric": "densityField"
+		},
+		{
+			"forge": "unmodifiableMobCategoryCounts",
+			"fabric": "groupToCountView"
+		},
+		{
+			"forge": "localMobCapCalculator",
+			"fabric": "densityCapper"
+		},
+		{
+			"forge": "lastCheckedPos",
+			"fabric": "cachedPos"
+		},
+		{
+			"forge": "lastCheckedType",
+			"fabric": "cachedEntityType"
+		},
+		{
+			"forge": "lastCharge",
+			"fabric": "cachedDensityMass"
+		},
+		{
+			"forge": "canSpawn(EntityType<?> arg0, BlockPos arg1, ChunkAccess arg2)",
+			"fabric": "test(EntityType<?> type, BlockPos pos, Chunk chunk)"
+		},
+		{
+			"forge": "canSpawn(EntityType<?> arg0, BlockPos arg1, ChunkAccess arg2)",
+			"fabric": "test(EntityType<?> type, BlockPos pos, Chunk chunk)"
+		},
+		{
+			"forge": "afterSpawn(Mob arg0, ChunkAccess arg1)",
+			"fabric": "run(MobEntity entity, Chunk chunk)"
+		},
+		{
+			"forge": "getSpawnableChunkCount()",
+			"fabric": "getSpawningChunkCount()"
+		},
+		{
+			"forge": "getMobCategoryCounts()",
+			"fabric": "getGroupToCount()"
+		},
+		{
+			"forge": "canSpawnForCategory(MobCategory arg0, ChunkPos arg1)",
+			"fabric": "isBelowCap(SpawnGroup group, ChunkPos chunkPos)"
+		}
+	]
+}

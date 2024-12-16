@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.gui.Gui$HeartType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.Gui$HeartType",
+			"fabric": "net.minecraft.client.gui.hud.InGameHud$HeartType"
+		},
+		{
+			"forge": "CONTAINER",
+			"fabric": "CONTAINER"
+		},
+		{
+			"forge": "CONTAINER",
+			"fabric": "CONTAINER"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "POISIONED",
+			"fabric": "POISONED"
+		},
+		{
+			"forge": "WITHERED",
+			"fabric": "WITHERED"
+		},
+		{
+			"forge": "ABSORBING",
+			"fabric": "ABSORBING"
+		},
+		{
+			"forge": "FROZEN",
+			"fabric": "FROZEN"
+		},
+		{
+			"forge": "index",
+			"fabric": "textureIndex"
+		},
+		{
+			"forge": "index",
+			"fabric": "textureIndex"
+		},
+		{
+			"forge": "canBlink",
+			"fabric": "hasBlinkingTexture"
+		},
+		{
+			"forge": "getX(boolean arg0, boolean arg1)",
+			"fabric": "getU(boolean halfHeart, boolean blinking)"
+		},
+		{
+			"forge": "getX(boolean arg0, boolean arg1)",
+			"fabric": "getU(boolean halfHeart, boolean blinking)"
+		},
+		{
+			"forge": "forPlayer(Player arg0)",
+			"fabric": "fromPlayerState(PlayerEntity player)"
+		}
+	]
+}

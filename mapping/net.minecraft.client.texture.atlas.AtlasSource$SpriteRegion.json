@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.SpriteSource$SpriteSupplier",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.SpriteSource$SpriteSupplier",
+			"fabric": "net.minecraft.client.texture.atlas.AtlasSource$SpriteRegion"
+		},
+		{
+			"forge": "discard()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "discard()",
+			"fabric": "close()"
+		}
+	]
+}

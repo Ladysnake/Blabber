@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.SpawnPlacements",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.SpawnPlacements",
+			"fabric": "net.minecraft.entity.SpawnRestriction"
+		},
+		{
+			"forge": "DATA_BY_TYPE",
+			"fabric": "RESTRICTIONS"
+		},
+		{
+			"forge": "DATA_BY_TYPE",
+			"fabric": "RESTRICTIONS"
+		},
+		{
+			"forge": "register(EntityType<T> arg0, SpawnPlacements$Type arg1, Heightmap$Types arg2, SpawnPlacements$SpawnPredicate<T> arg3)",
+			"fabric": "register(EntityType<T> type, SpawnRestriction$Location location, Heightmap$Type heightmapType, SpawnRestriction$SpawnPredicate<T> predicate)"
+		},
+		{
+			"forge": "register(EntityType<T> arg0, SpawnPlacements$Type arg1, Heightmap$Types arg2, SpawnPlacements$SpawnPredicate<T> arg3)",
+			"fabric": "register(EntityType<T> type, SpawnRestriction$Location location, Heightmap$Type heightmapType, SpawnRestriction$SpawnPredicate<T> predicate)"
+		},
+		{
+			"forge": "getPlacementType(EntityType<?> arg0)",
+			"fabric": "getLocation(EntityType<?> type)"
+		},
+		{
+			"forge": "getHeightmapType(EntityType<?> arg0)",
+			"fabric": "getHeightmapType(EntityType<?> type)"
+		},
+		{
+			"forge": "checkSpawnRules(EntityType<T> arg0, ServerLevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<T> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		}
+	]
+}

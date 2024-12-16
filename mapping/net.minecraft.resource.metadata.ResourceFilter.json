@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.server.packs.resources.ResourceFilterSection",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.ResourceFilterSection",
+			"fabric": "net.minecraft.resource.metadata.ResourceFilter"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "SERIALIZER"
+		},
+		{
+			"forge": "blockList",
+			"fabric": "blocks"
+		},
+		{
+			"forge": "isNamespaceFiltered(String arg0)",
+			"fabric": "isNamespaceBlocked(String namespace)"
+		},
+		{
+			"forge": "isNamespaceFiltered(String arg0)",
+			"fabric": "isNamespaceBlocked(String namespace)"
+		},
+		{
+			"forge": "isPathFiltered(String arg0)",
+			"fabric": "isPathBlocked(String namespace)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.advancements.critereon.FishingHookPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.FishingHookPredicate",
+			"fabric": "net.minecraft.predicate.entity.FishingHookPredicate"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "IN_OPEN_WATER_KEY",
+			"fabric": "IN_OPEN_WATER"
+		},
+		{
+			"forge": "inOpenWater",
+			"fabric": "inOpenWater"
+		},
+		{
+			"forge": "inOpenWater(boolean arg0)",
+			"fabric": "of(boolean inOpenWater)"
+		},
+		{
+			"forge": "inOpenWater(boolean arg0)",
+			"fabric": "of(boolean inOpenWater)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "serializeCustomData()",
+			"fabric": "typeSpecificToJson()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getDeserializer()"
+		},
+		{
+			"forge": "matches(Entity arg0, ServerLevel arg1, Vec3 arg2)",
+			"fabric": "test(Entity arg0, ServerWorld arg1, Vec3d arg2)"
+		}
+	]
+}

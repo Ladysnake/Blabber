@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.commands.arguments.coordinates.Coordinates",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.coordinates.Coordinates",
+			"fabric": "net.minecraft.command.argument.PosArgument"
+		},
+		{
+			"forge": "getPosition(CommandSourceStack arg0)",
+			"fabric": "toAbsolutePos(ServerCommandSource source)"
+		},
+		{
+			"forge": "getPosition(CommandSourceStack arg0)",
+			"fabric": "toAbsolutePos(ServerCommandSource source)"
+		},
+		{
+			"forge": "getRotation(CommandSourceStack arg0)",
+			"fabric": "toAbsoluteRotation(ServerCommandSource source)"
+		},
+		{
+			"forge": "getBlockPos(CommandSourceStack arg0)",
+			"fabric": "toAbsoluteBlockPos(ServerCommandSource source)"
+		},
+		{
+			"forge": "isXRelative()",
+			"fabric": "isXRelative()"
+		},
+		{
+			"forge": "isYRelative()",
+			"fabric": "isYRelative()"
+		},
+		{
+			"forge": "isZRelative()",
+			"fabric": "isZRelative()"
+		}
+	]
+}

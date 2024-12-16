@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.entity.Interaction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Interaction",
+			"fabric": "net.minecraft.entity.decoration.InteractionEntity"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "field_42624"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "field_42624"
+		},
+		{
+			"forge": "DATA_WIDTH_ID",
+			"fabric": "WIDTH"
+		},
+		{
+			"forge": "DATA_HEIGHT_ID",
+			"fabric": "HEIGHT"
+		},
+		{
+			"forge": "DATA_RESPONSE_ID",
+			"fabric": "RESPONSE"
+		},
+		{
+			"forge": "TAG_WIDTH",
+			"fabric": "WIDTH_KEY"
+		},
+		{
+			"forge": "TAG_HEIGHT",
+			"fabric": "HEIGHT_KEY"
+		},
+		{
+			"forge": "TAG_ATTACK",
+			"fabric": "ATTACK_KEY"
+		},
+		{
+			"forge": "TAG_INTERACTION",
+			"fabric": "INTERACTION_KEY"
+		},
+		{
+			"forge": "TAG_RESPONSE",
+			"fabric": "RESPONSE_KEY"
+		},
+		{
+			"forge": "attack",
+			"fabric": "attack"
+		},
+		{
+			"forge": "interaction",
+			"fabric": "interaction"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "onSyncedDataUpdated(EntityDataAccessor<?> arg0)",
+			"fabric": "onTrackedDataSet(TrackedData<?> arg0)"
+		},
+		{
+			"forge": "canBeHitByProjectile()",
+			"fabric": "canBeHitByProjectile()"
+		},
+		{
+			"forge": "isPickable()",
+			"fabric": "canHit()"
+		},
+		{
+			"forge": "getPistonPushReaction()",
+			"fabric": "getPistonBehavior()"
+		},
+		{
+			"forge": "isIgnoringBlockTriggers()",
+			"fabric": "canAvoidTraps()"
+		},
+		{
+			"forge": "skipAttackInteraction(Entity arg0)",
+			"fabric": "handleAttack(Entity arg0)"
+		},
+		{
+			"forge": "interact(Player arg0, InteractionHand arg1)",
+			"fabric": "interact(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getLastAttacker()",
+			"fabric": "getLastAttacker()"
+		},
+		{
+			"forge": "getTarget()",
+			"fabric": "getTarget()"
+		},
+		{
+			"forge": "setWidth(float arg0)",
+			"fabric": "setInteractionWidth(float width)"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getInteractionWidth()"
+		},
+		{
+			"forge": "setHeight(float arg0)",
+			"fabric": "setInteractionHeight(float height)"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getInteractionHeight()"
+		},
+		{
+			"forge": "setResponse(boolean arg0)",
+			"fabric": "setResponse(boolean response)"
+		},
+		{
+			"forge": "getResponse()",
+			"fabric": "shouldRespond()"
+		},
+		{
+			"forge": "getDimensions()",
+			"fabric": "getDimensions()"
+		},
+		{
+			"forge": "getDimensions(Pose arg0)",
+			"fabric": "getDimensions(EntityPose arg0)"
+		},
+		{
+			"forge": "makeBoundingBox()",
+			"fabric": "calculateBoundingBox()"
+		}
+	]
+}

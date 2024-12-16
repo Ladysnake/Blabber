@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.util.thread.ProcessorMailbox",
+	"items": [
+		{
+			"forge": "net.minecraft.util.thread.ProcessorMailbox",
+			"fabric": "net.minecraft.util.thread.TaskExecutor"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "CLOSED_BIT",
+			"fabric": "field_29940"
+		},
+		{
+			"forge": "SCHEDULED_BIT",
+			"fabric": "field_29941"
+		},
+		{
+			"forge": "status",
+			"fabric": "stateFlags"
+		},
+		{
+			"forge": "queue",
+			"fabric": "queue"
+		},
+		{
+			"forge": "dispatcher",
+			"fabric": "executor"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "create(Executor arg0, String arg1)",
+			"fabric": "create(Executor executor, String name)"
+		},
+		{
+			"forge": "create(Executor arg0, String arg1)",
+			"fabric": "create(Executor executor, String name)"
+		},
+		{
+			"forge": "setAsScheduled()",
+			"fabric": "unpause()"
+		},
+		{
+			"forge": "setAsIdle()",
+			"fabric": "pause()"
+		},
+		{
+			"forge": "canBeScheduled()",
+			"fabric": "hasMessages()"
+		},
+		{
+			"forge": "shouldProcess()",
+			"fabric": "isUnpaused()"
+		},
+		{
+			"forge": "pollTask()",
+			"fabric": "runNext()"
+		},
+		{
+			"forge": "runAll()",
+			"fabric": "awaitAll()"
+		},
+		{
+			"forge": "tell(T arg0)",
+			"fabric": "send(T arg0)"
+		},
+		{
+			"forge": "registerForExecution()",
+			"fabric": "execute()"
+		},
+		{
+			"forge": "pollUntil(it.unimi.dsi.fastutil.ints.Int2BooleanFunction arg0)",
+			"fabric": "runWhile(it.unimi.dsi.fastutil.ints.Int2BooleanFunction condition)"
+		},
+		{
+			"forge": "size()",
+			"fabric": "getQueueSize()"
+		},
+		{
+			"forge": "hasWork()",
+			"fabric": "hasQueuedTasks()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "profiledMetrics()",
+			"fabric": "createSamplers()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.commands.CommandBuildContext$1",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandBuildContext$1",
+			"fabric": "net.minecraft.command.CommandRegistryAccess$1"
+		},
+		{
+			"forge": "holderLookup(ResourceKey<? extends Registry<T>> arg0)",
+			"fabric": "createWrapper(RegistryKey<? extends Registry<T>> arg0)"
+		},
+		{
+			"forge": "holderLookup(ResourceKey<? extends Registry<T>> arg0)",
+			"fabric": "createWrapper(RegistryKey<? extends Registry<T>> arg0)"
+		}
+	]
+}

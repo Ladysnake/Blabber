@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.VillagerCalmDown",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.VillagerCalmDown",
+			"fabric": "net.minecraft.entity.ai.brain.task.StopPanickingTask"
+		},
+		{
+			"forge": "SAFE_DISTANCE_FROM_DANGER",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "SAFE_DISTANCE_FROM_DANGER",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		}
+	]
+}

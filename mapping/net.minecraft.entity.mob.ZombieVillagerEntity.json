@@ -1,0 +1,165 @@
+{
+	"title": "net.minecraft.world.entity.monster.ZombieVillager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.ZombieVillager",
+			"fabric": "net.minecraft.entity.mob.ZombieVillagerEntity"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DATA_CONVERTING_ID",
+			"fabric": "CONVERTING"
+		},
+		{
+			"forge": "DATA_VILLAGER_DATA",
+			"fabric": "VILLAGER_DATA"
+		},
+		{
+			"forge": "VILLAGER_CONVERSION_WAIT_MIN",
+			"fabric": "BASE_CONVERTION_DELAY"
+		},
+		{
+			"forge": "VILLAGER_CONVERSION_WAIT_MAX",
+			"fabric": "field_30520"
+		},
+		{
+			"forge": "MAX_SPECIAL_BLOCKS_COUNT",
+			"fabric": "field_30521"
+		},
+		{
+			"forge": "SPECIAL_BLOCK_RADIUS",
+			"fabric": "field_30522"
+		},
+		{
+			"forge": "villagerConversionTime",
+			"fabric": "conversionTimer"
+		},
+		{
+			"forge": "conversionStarter",
+			"fabric": "converter"
+		},
+		{
+			"forge": "gossips",
+			"fabric": "gossipData"
+		},
+		{
+			"forge": "tradeOffers",
+			"fabric": "offerData"
+		},
+		{
+			"forge": "villagerXp",
+			"fabric": "xp"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "convertsInWater()",
+			"fabric": "canConvertInWater()"
+		},
+		{
+			"forge": "removeWhenFarAway(double arg0)",
+			"fabric": "canImmediatelyDespawn(double arg0)"
+		},
+		{
+			"forge": "isConverting()",
+			"fabric": "isConverting()"
+		},
+		{
+			"forge": "startConverting(UUID arg0, int arg1)",
+			"fabric": "setConverting(UUID uuid, int delay)"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "finishConversion(ServerLevel arg0)",
+			"fabric": "finishConversion(ServerWorld world)"
+		},
+		{
+			"forge": "getConversionProgress()",
+			"fabric": "getConversionRate()"
+		},
+		{
+			"forge": "getVoicePitch()",
+			"fabric": "getSoundPitch()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getStepSound()",
+			"fabric": "getStepSound()"
+		},
+		{
+			"forge": "getSkull()",
+			"fabric": "getSkull()"
+		},
+		{
+			"forge": "setTradeOffers(CompoundTag arg0)",
+			"fabric": "setOfferData(NbtCompound offerData)"
+		},
+		{
+			"forge": "setGossips(Tag arg0)",
+			"fabric": "setGossipData(NbtElement gossipData)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "setVillagerData(VillagerData arg0)",
+			"fabric": "setVillagerData(VillagerData arg0)"
+		},
+		{
+			"forge": "getVillagerData()",
+			"fabric": "getVillagerData()"
+		},
+		{
+			"forge": "getVillagerXp()",
+			"fabric": "getXp()"
+		},
+		{
+			"forge": "setVillagerXp(int arg0)",
+			"fabric": "setXp(int xp)"
+		}
+	]
+}

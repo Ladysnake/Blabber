@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.AbstractCommandBlockEditScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.AbstractCommandBlockEditScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.AbstractCommandBlockScreen"
+		},
+		{
+			"forge": "SET_COMMAND_LABEL",
+			"fabric": "SET_COMMAND_TEXT"
+		},
+		{
+			"forge": "SET_COMMAND_LABEL",
+			"fabric": "SET_COMMAND_TEXT"
+		},
+		{
+			"forge": "COMMAND_LABEL",
+			"fabric": "COMMAND_TEXT"
+		},
+		{
+			"forge": "PREVIOUS_OUTPUT_LABEL",
+			"fabric": "PREVIOUS_OUTPUT_TEXT"
+		},
+		{
+			"forge": "commandEdit",
+			"fabric": "consoleCommandTextField"
+		},
+		{
+			"forge": "previousEdit",
+			"fabric": "previousOutputTextField"
+		},
+		{
+			"forge": "doneButton",
+			"fabric": "doneButton"
+		},
+		{
+			"forge": "cancelButton",
+			"fabric": "cancelButton"
+		},
+		{
+			"forge": "outputButton",
+			"fabric": "toggleTrackingOutputButton"
+		},
+		{
+			"forge": "commandSuggestions",
+			"fabric": "commandSuggestor"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getCommandBlock()",
+			"fabric": "getCommandExecutor()"
+		},
+		{
+			"forge": "getPreviousY()",
+			"fabric": "getTrackOutputButtonHeight()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "resize(Minecraft arg0, int arg1, int arg2)",
+			"fabric": "resize(MinecraftClient arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "updatePreviousOutput(boolean arg0)",
+			"fabric": "setPreviousOutputText(boolean trackOutput)"
+		},
+		{
+			"forge": "onDone()",
+			"fabric": "commitAndClose()"
+		},
+		{
+			"forge": "populateAndSendPacket(BaseCommandBlock arg0)",
+			"fabric": "syncSettingsToServer(CommandBlockExecutor commandExecutor)"
+		},
+		{
+			"forge": "onEdited(String arg0)",
+			"fabric": "onCommandChanged(String text)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "mouseScrolled(double arg0, double arg1, double arg2)",
+			"fabric": "mouseScrolled(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

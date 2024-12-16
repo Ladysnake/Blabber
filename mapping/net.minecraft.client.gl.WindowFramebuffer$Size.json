@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.blaze3d.pipeline.MainTarget$Dimension",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.pipeline.MainTarget$Dimension",
+			"fabric": "net.minecraft.client.gl.WindowFramebuffer$Size"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "listWithFallback(int arg0, int arg1)",
+			"fabric": "findCompatible(int width, int height)"
+		},
+		{
+			"forge": "listWithFallback(int arg0, int arg1)",
+			"fabric": "findCompatible(int width, int height)"
+		}
+	]
+}

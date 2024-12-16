@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.biome.MobSpawnSettings$SpawnerData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.MobSpawnSettings$SpawnerData",
+			"fabric": "net.minecraft.world.biome.SpawnSettings$SpawnEntry"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "minCount",
+			"fabric": "minGroupSize"
+		},
+		{
+			"forge": "maxCount",
+			"fabric": "maxGroupSize"
+		}
+	]
+}

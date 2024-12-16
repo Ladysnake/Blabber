@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.level.block.RedstoneTorchBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.RedstoneTorchBlock",
+			"fabric": "net.minecraft.block.RedstoneTorchBlock"
+		},
+		{
+			"forge": "LIT",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "LIT",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "RECENT_TOGGLES",
+			"fabric": "BURNOUT_MAP"
+		},
+		{
+			"forge": "RECENT_TOGGLE_TIMER",
+			"fabric": "field_31227"
+		},
+		{
+			"forge": "MAX_RECENT_TOGGLES",
+			"fabric": "field_31228"
+		},
+		{
+			"forge": "RESTART_DELAY",
+			"fabric": "field_31229"
+		},
+		{
+			"forge": "TOGGLE_DELAY",
+			"fabric": "SCHEDULED_TICK_DELAY"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "onRemove(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onStateReplaced(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "hasNeighborSignal(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "shouldUnpower(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "getDirectSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStrongRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "isToggledTooFrequently(Level arg0, BlockPos arg1, boolean arg2)",
+			"fabric": "isBurnedOut(World world, BlockPos pos, boolean addNew)"
+		}
+	]
+}

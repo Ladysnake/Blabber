@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ItemIdFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ItemIdFix",
+			"fabric": "net.minecraft.datafixer.fix.ItemIdFix"
+		},
+		{
+			"forge": "ITEM_NAMES",
+			"fabric": "NUMERICAL_ID_TO_STRING_ID_MAP"
+		},
+		{
+			"forge": "ITEM_NAMES",
+			"fabric": "NUMERICAL_ID_TO_STRING_ID_MAP"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "fromId(int id)"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "fromId(int id)"
+		}
+	]
+}

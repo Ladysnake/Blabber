@@ -1,0 +1,413 @@
+{
+	"title": "net.minecraft.client.renderer.ItemInHandRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.ItemInHandRenderer",
+			"fabric": "net.minecraft.client.render.item.HeldItemRenderer"
+		},
+		{
+			"forge": "MAP_BACKGROUND",
+			"fabric": "MAP_BACKGROUND"
+		},
+		{
+			"forge": "MAP_BACKGROUND",
+			"fabric": "MAP_BACKGROUND"
+		},
+		{
+			"forge": "MAP_BACKGROUND_CHECKERBOARD",
+			"fabric": "MAP_BACKGROUND_CHECKERBOARD"
+		},
+		{
+			"forge": "ITEM_SWING_X_POS_SCALE",
+			"fabric": "field_32735"
+		},
+		{
+			"forge": "ITEM_SWING_Y_POS_SCALE",
+			"fabric": "field_32736"
+		},
+		{
+			"forge": "ITEM_SWING_Z_POS_SCALE",
+			"fabric": "field_32737"
+		},
+		{
+			"forge": "ITEM_HEIGHT_SCALE",
+			"fabric": "field_32738"
+		},
+		{
+			"forge": "ITEM_POS_X",
+			"fabric": "EQUIP_OFFSET_TRANSLATE_X"
+		},
+		{
+			"forge": "ITEM_POS_Y",
+			"fabric": "EQUIP_OFFSET_TRANSLATE_Y"
+		},
+		{
+			"forge": "ITEM_POS_Z",
+			"fabric": "EQUIP_OFFSET_TRANSLATE_Z"
+		},
+		{
+			"forge": "ITEM_PRESWING_ROT_Y",
+			"fabric": "field_32742"
+		},
+		{
+			"forge": "ITEM_SWING_X_ROT_AMOUNT",
+			"fabric": "field_32743"
+		},
+		{
+			"forge": "ITEM_SWING_Y_ROT_AMOUNT",
+			"fabric": "field_32744"
+		},
+		{
+			"forge": "ITEM_SWING_Z_ROT_AMOUNT",
+			"fabric": "field_32745"
+		},
+		{
+			"forge": "EAT_JIGGLE_X_ROT_AMOUNT",
+			"fabric": "EAT_OR_DRINK_X_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "EAT_JIGGLE_Y_ROT_AMOUNT",
+			"fabric": "EAT_OR_DRINK_Y_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "EAT_JIGGLE_Z_ROT_AMOUNT",
+			"fabric": "EAT_OR_DRINK_Z_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "EAT_JIGGLE_X_POS_SCALE",
+			"fabric": "field_32749"
+		},
+		{
+			"forge": "EAT_JIGGLE_Y_POS_SCALE",
+			"fabric": "field_32750"
+		},
+		{
+			"forge": "EAT_JIGGLE_Z_POS_SCALE",
+			"fabric": "field_32751"
+		},
+		{
+			"forge": "EAT_JIGGLE_EXPONENT",
+			"fabric": "field_32752"
+		},
+		{
+			"forge": "EAT_EXTRA_JIGGLE_CUTOFF",
+			"fabric": "field_32753"
+		},
+		{
+			"forge": "EAT_EXTRA_JIGGLE_SCALE",
+			"fabric": "field_32754"
+		},
+		{
+			"forge": "ARM_SWING_X_POS_SCALE",
+			"fabric": "field_32755"
+		},
+		{
+			"forge": "ARM_SWING_Y_POS_SCALE",
+			"fabric": "field_32756"
+		},
+		{
+			"forge": "ARM_SWING_Z_POS_SCALE",
+			"fabric": "field_32757"
+		},
+		{
+			"forge": "ARM_SWING_Y_ROT_AMOUNT",
+			"fabric": "ARM_HOLDING_ITEM_SECOND_Y_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "ARM_SWING_Z_ROT_AMOUNT",
+			"fabric": "ARM_HOLDING_ITEM_FIRST_Z_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "ARM_HEIGHT_SCALE",
+			"fabric": "field_32690"
+		},
+		{
+			"forge": "ARM_POS_SCALE",
+			"fabric": "field_32691"
+		},
+		{
+			"forge": "ARM_POS_X",
+			"fabric": "field_32692"
+		},
+		{
+			"forge": "ARM_POS_Y",
+			"fabric": "field_32693"
+		},
+		{
+			"forge": "ARM_POS_Z",
+			"fabric": "field_32694"
+		},
+		{
+			"forge": "ARM_PRESWING_ROT_Y",
+			"fabric": "field_32695"
+		},
+		{
+			"forge": "ARM_PREROTATION_X_OFFSET",
+			"fabric": "field_32696"
+		},
+		{
+			"forge": "ARM_PREROTATION_Y_OFFSET",
+			"fabric": "field_32697"
+		},
+		{
+			"forge": "ARM_PREROTATION_Z_OFFSET",
+			"fabric": "field_32698"
+		},
+		{
+			"forge": "ARM_POSTROTATION_X_OFFSET",
+			"fabric": "ARM_HOLDING_ITEM_TRANSLATE_X"
+		},
+		{
+			"forge": "ARM_ROT_X",
+			"fabric": "ARM_HOLDING_ITEM_X_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "ARM_ROT_Y",
+			"fabric": "ARM_HOLDING_ITEM_THIRD_Y_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "ARM_ROT_Z",
+			"fabric": "ARM_HOLDING_ITEM_SECOND_Z_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "MAP_SWING_X_POS_SCALE",
+			"fabric": "field_32703"
+		},
+		{
+			"forge": "MAP_SWING_Z_POS_SCALE",
+			"fabric": "field_32704"
+		},
+		{
+			"forge": "MAP_HANDS_POS_X",
+			"fabric": "field_32705"
+		},
+		{
+			"forge": "MAP_HANDS_POS_Y",
+			"fabric": "field_32706"
+		},
+		{
+			"forge": "MAP_HANDS_POS_Z",
+			"fabric": "field_32707"
+		},
+		{
+			"forge": "MAP_HANDS_HEIGHT_SCALE",
+			"fabric": "field_32708"
+		},
+		{
+			"forge": "MAP_HANDS_TILT_SCALE",
+			"fabric": "field_32709"
+		},
+		{
+			"forge": "MAP_PLAYER_PITCH_SCALE",
+			"fabric": "field_32710"
+		},
+		{
+			"forge": "MAP_HANDS_Z_ROT_AMOUNT",
+			"fabric": "field_32711"
+		},
+		{
+			"forge": "MAPHAND_X_ROT_AMOUNT",
+			"fabric": "ARM_X_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "MAPHAND_Y_ROT_AMOUNT",
+			"fabric": "ARM_Y_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "MAPHAND_Z_ROT_AMOUNT",
+			"fabric": "ARM_Z_ANGLE_MULTIPLIER"
+		},
+		{
+			"forge": "MAP_HAND_X_POS",
+			"fabric": "ARM_TRANSLATE_X"
+		},
+		{
+			"forge": "MAP_HAND_Y_POS",
+			"fabric": "ARM_TRANSLATE_Y"
+		},
+		{
+			"forge": "MAP_HAND_Z_POS",
+			"fabric": "ARM_TRANSLATE_Z"
+		},
+		{
+			"forge": "MAP_SWING_X_ROT_AMOUNT",
+			"fabric": "field_32718"
+		},
+		{
+			"forge": "MAP_PRE_ROT_SCALE",
+			"fabric": "FIRST_PERSON_MAP_FIRST_SCALE"
+		},
+		{
+			"forge": "MAP_GLOBAL_X_POS",
+			"fabric": "FIRST_PERSON_MAP_TRANSLATE_X"
+		},
+		{
+			"forge": "MAP_GLOBAL_Y_POS",
+			"fabric": "FIRST_PERSON_MAP_TRANSLATE_Y"
+		},
+		{
+			"forge": "MAP_GLOBAL_Z_POS",
+			"fabric": "FIRST_PERSON_MAP_TRANSLATE_Z"
+		},
+		{
+			"forge": "MAP_FINAL_SCALE",
+			"fabric": "FIRST_PERSON_MAP_SECOND_SCALE"
+		},
+		{
+			"forge": "MAP_BORDER",
+			"fabric": "field_32724"
+		},
+		{
+			"forge": "MAP_HEIGHT",
+			"fabric": "field_32725"
+		},
+		{
+			"forge": "MAP_WIDTH",
+			"fabric": "field_32726"
+		},
+		{
+			"forge": "BOW_CHARGE_X_POS_SCALE",
+			"fabric": "field_32727"
+		},
+		{
+			"forge": "BOW_CHARGE_Y_POS_SCALE",
+			"fabric": "field_32728"
+		},
+		{
+			"forge": "BOW_CHARGE_Z_POS_SCALE",
+			"fabric": "field_32729"
+		},
+		{
+			"forge": "BOW_CHARGE_SHAKE_X_SCALE",
+			"fabric": "field_32730"
+		},
+		{
+			"forge": "BOW_CHARGE_SHAKE_Y_SCALE",
+			"fabric": "field_32731"
+		},
+		{
+			"forge": "BOW_CHARGE_SHAKE_Z_SCALE",
+			"fabric": "field_32732"
+		},
+		{
+			"forge": "BOW_CHARGE_Z_SCALE",
+			"fabric": "field_32733"
+		},
+		{
+			"forge": "BOW_MIN_SHAKE_CHARGE",
+			"fabric": "field_32734"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "mainHandItem",
+			"fabric": "mainHand"
+		},
+		{
+			"forge": "offHandItem",
+			"fabric": "offHand"
+		},
+		{
+			"forge": "mainHandHeight",
+			"fabric": "equipProgressMainHand"
+		},
+		{
+			"forge": "oMainHandHeight",
+			"fabric": "prevEquipProgressMainHand"
+		},
+		{
+			"forge": "offHandHeight",
+			"fabric": "equipProgressOffHand"
+		},
+		{
+			"forge": "oOffHandHeight",
+			"fabric": "prevEquipProgressOffHand"
+		},
+		{
+			"forge": "entityRenderDispatcher",
+			"fabric": "entityRenderDispatcher"
+		},
+		{
+			"forge": "itemRenderer",
+			"fabric": "itemRenderer"
+		},
+		{
+			"forge": "renderItem(LivingEntity arg0, ItemStack arg1, ItemDisplayContext arg2, boolean arg3, PoseStack arg4, MultiBufferSource arg5, int arg6)",
+			"fabric": "renderItem(LivingEntity entity, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light)"
+		},
+		{
+			"forge": "renderItem(LivingEntity arg0, ItemStack arg1, ItemDisplayContext arg2, boolean arg3, PoseStack arg4, MultiBufferSource arg5, int arg6)",
+			"fabric": "renderItem(LivingEntity entity, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light)"
+		},
+		{
+			"forge": "calculateMapTilt(float arg0)",
+			"fabric": "getMapAngle(float tickDelta)"
+		},
+		{
+			"forge": "renderMapHand(PoseStack arg0, MultiBufferSource arg1, int arg2, HumanoidArm arg3)",
+			"fabric": "renderArm(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, Arm arm)"
+		},
+		{
+			"forge": "renderOneHandedMap(PoseStack arg0, MultiBufferSource arg1, int arg2, float arg3, HumanoidArm arg4, float arg5, ItemStack arg6)",
+			"fabric": "renderMapInOneHand(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, float equipProgress, Arm arm, float swingProgress, ItemStack stack)"
+		},
+		{
+			"forge": "renderTwoHandedMap(PoseStack arg0, MultiBufferSource arg1, int arg2, float arg3, float arg4, float arg5)",
+			"fabric": "renderMapInBothHands(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, float pitch, float equipProgress, float swingProgress)"
+		},
+		{
+			"forge": "renderMap(PoseStack arg0, MultiBufferSource arg1, int arg2, ItemStack arg3)",
+			"fabric": "renderFirstPersonMap(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int swingProgress, ItemStack stack)"
+		},
+		{
+			"forge": "renderPlayerArm(PoseStack arg0, MultiBufferSource arg1, int arg2, float arg3, float arg4, HumanoidArm arg5)",
+			"fabric": "renderArmHoldingItem(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, float equipProgress, float swingProgress, Arm arm)"
+		},
+		{
+			"forge": "applyEatTransform(PoseStack arg0, float arg1, HumanoidArm arg2, ItemStack arg3)",
+			"fabric": "applyEatOrDrinkTransformation(MatrixStack matrices, float tickDelta, Arm arm, ItemStack stack)"
+		},
+		{
+			"forge": "applyBrushTransform(PoseStack arg0, float arg1, HumanoidArm arg2, ItemStack arg3, float arg4)",
+			"fabric": "applyBrushTransformation(MatrixStack matrices, float tickDelta, Arm arm, ItemStack stack, float equipProgress)"
+		},
+		{
+			"forge": "applyItemArmAttackTransform(PoseStack arg0, HumanoidArm arg1, float arg2)",
+			"fabric": "applySwingOffset(MatrixStack matrices, Arm arm, float swingProgress)"
+		},
+		{
+			"forge": "applyItemArmTransform(PoseStack arg0, HumanoidArm arg1, float arg2)",
+			"fabric": "applyEquipOffset(MatrixStack matrices, Arm arm, float equipProgress)"
+		},
+		{
+			"forge": "renderHandsWithItems(float arg0, PoseStack arg1, MultiBufferSource$BufferSource arg2, LocalPlayer arg3, int arg4)",
+			"fabric": "renderItem(float tickDelta, MatrixStack matrices, VertexConsumerProvider$Immediate vertexConsumers, ClientPlayerEntity player, int light)"
+		},
+		{
+			"forge": "evaluateWhichHandsToRender(LocalPlayer arg0)",
+			"fabric": "getHandRenderType(ClientPlayerEntity player)"
+		},
+		{
+			"forge": "selectionUsingItemWhileHoldingBowLike(LocalPlayer arg0)",
+			"fabric": "getUsingItemHandRenderType(ClientPlayerEntity player)"
+		},
+		{
+			"forge": "isChargedCrossbow(ItemStack arg0)",
+			"fabric": "isChargedCrossbow(ItemStack stack)"
+		},
+		{
+			"forge": "renderArmWithItem(AbstractClientPlayer arg0, float arg1, float arg2, InteractionHand arg3, float arg4, ItemStack arg5, float arg6, PoseStack arg7, MultiBufferSource arg8, int arg9)",
+			"fabric": "renderFirstPersonItem(AbstractClientPlayerEntity player, float tickDelta, float pitch, Hand hand, float swingProgress, ItemStack item, float equipProgress, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "updateHeldItems()"
+		},
+		{
+			"forge": "itemUsed(InteractionHand arg0)",
+			"fabric": "resetEquipProgress(Hand hand)"
+		}
+	]
+}

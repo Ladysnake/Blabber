@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.AttackIndicatorStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.client.AttackIndicatorStatus",
+			"fabric": "net.minecraft.client.option.AttackIndicator"
+		},
+		{
+			"forge": "OFF",
+			"fabric": "OFF"
+		},
+		{
+			"forge": "OFF",
+			"fabric": "OFF"
+		},
+		{
+			"forge": "CROSSHAIR",
+			"fabric": "CROSSHAIR"
+		},
+		{
+			"forge": "HOTBAR",
+			"fabric": "HOTBAR"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "key",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getKey()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		}
+	]
+}

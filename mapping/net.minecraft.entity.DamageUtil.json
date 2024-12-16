@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.damagesource.CombatRules",
+	"items": [
+		{
+			"forge": "net.minecraft.world.damagesource.CombatRules",
+			"fabric": "net.minecraft.entity.DamageUtil"
+		},
+		{
+			"forge": "MAX_ARMOR",
+			"fabric": "field_29962"
+		},
+		{
+			"forge": "MAX_ARMOR",
+			"fabric": "field_29962"
+		},
+		{
+			"forge": "ARMOR_PROTECTION_DIVIDER",
+			"fabric": "field_29963"
+		},
+		{
+			"forge": "BASE_ARMOR_TOUGHNESS",
+			"fabric": "field_29964"
+		},
+		{
+			"forge": "MIN_ARMOR_RATIO",
+			"fabric": "field_29965"
+		},
+		{
+			"forge": "NUM_ARMOR_ITEMS",
+			"fabric": "field_29966"
+		},
+		{
+			"forge": "getDamageAfterAbsorb(float arg0, float arg1, float arg2)",
+			"fabric": "getDamageLeft(float damage, float armor, float armorToughness)"
+		},
+		{
+			"forge": "getDamageAfterAbsorb(float arg0, float arg1, float arg2)",
+			"fabric": "getDamageLeft(float damage, float armor, float armorToughness)"
+		},
+		{
+			"forge": "getDamageAfterMagicAbsorb(float arg0, float arg1)",
+			"fabric": "getInflictedDamage(float damageDealt, float protection)"
+		}
+	]
+}

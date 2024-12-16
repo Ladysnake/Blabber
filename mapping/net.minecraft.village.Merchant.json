@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.item.trading.Merchant",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.trading.Merchant",
+			"fabric": "net.minecraft.village.Merchant"
+		},
+		{
+			"forge": "setTradingPlayer(Player arg0)",
+			"fabric": "setCustomer(PlayerEntity customer)"
+		},
+		{
+			"forge": "setTradingPlayer(Player arg0)",
+			"fabric": "setCustomer(PlayerEntity customer)"
+		},
+		{
+			"forge": "getTradingPlayer()",
+			"fabric": "getCustomer()"
+		},
+		{
+			"forge": "getOffers()",
+			"fabric": "getOffers()"
+		},
+		{
+			"forge": "overrideOffers(MerchantOffers arg0)",
+			"fabric": "setOffersFromServer(TradeOfferList offers)"
+		},
+		{
+			"forge": "notifyTrade(MerchantOffer arg0)",
+			"fabric": "trade(TradeOffer offer)"
+		},
+		{
+			"forge": "notifyTradeUpdated(ItemStack arg0)",
+			"fabric": "onSellingItem(ItemStack stack)"
+		},
+		{
+			"forge": "getVillagerXp()",
+			"fabric": "getExperience()"
+		},
+		{
+			"forge": "overrideXp(int arg0)",
+			"fabric": "setExperienceFromServer(int experience)"
+		},
+		{
+			"forge": "showProgressBar()",
+			"fabric": "isLeveledMerchant()"
+		},
+		{
+			"forge": "getNotifyTradeSound()",
+			"fabric": "getYesSound()"
+		},
+		{
+			"forge": "canRestock()",
+			"fabric": "canRefreshTrades()"
+		},
+		{
+			"forge": "openTradingScreen(Player arg0, Component arg1, int arg2)",
+			"fabric": "sendOffers(PlayerEntity player, Text test, int levelProgress)"
+		},
+		{
+			"forge": "isClientSide()",
+			"fabric": "isClient()"
+		}
+	]
+}

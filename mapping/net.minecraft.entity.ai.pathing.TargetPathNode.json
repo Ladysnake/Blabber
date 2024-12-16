@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.pathfinder.Target",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.pathfinder.Target",
+			"fabric": "net.minecraft.entity.ai.pathing.TargetPathNode"
+		},
+		{
+			"forge": "bestHeuristic",
+			"fabric": "nearestNodeDistance"
+		},
+		{
+			"forge": "bestHeuristic",
+			"fabric": "nearestNodeDistance"
+		},
+		{
+			"forge": "bestNode",
+			"fabric": "nearestNode"
+		},
+		{
+			"forge": "reached",
+			"fabric": "reached"
+		},
+		{
+			"forge": "updateBest(float arg0, Node arg1)",
+			"fabric": "updateNearestNode(float distance, PathNode node)"
+		},
+		{
+			"forge": "updateBest(float arg0, Node arg1)",
+			"fabric": "updateNearestNode(float distance, PathNode node)"
+		},
+		{
+			"forge": "getBestNode()",
+			"fabric": "getNearestNode()"
+		},
+		{
+			"forge": "setReached()",
+			"fabric": "markReached()"
+		},
+		{
+			"forge": "isReached()",
+			"fabric": "isReached()"
+		},
+		{
+			"forge": "createFromStream(FriendlyByteBuf arg0)",
+			"fabric": "fromBuffer(PacketByteBuf buffer)"
+		}
+	]
+}

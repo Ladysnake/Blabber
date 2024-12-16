@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.nbt.visitors.SkipFields",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.visitors.SkipFields",
+			"fabric": "net.minecraft.nbt.scanner.ExclusiveNbtCollector"
+		},
+		{
+			"forge": "stack",
+			"fabric": "treeStack"
+		},
+		{
+			"forge": "stack",
+			"fabric": "treeStack"
+		},
+		{
+			"forge": "visitEntry(TagType<?> arg0, String arg1)",
+			"fabric": "startSubNbt(NbtType<?> arg0, String arg1)"
+		},
+		{
+			"forge": "visitEntry(TagType<?> arg0, String arg1)",
+			"fabric": "startSubNbt(NbtType<?> arg0, String arg1)"
+		},
+		{
+			"forge": "visitContainerEnd()",
+			"fabric": "endNested()"
+		}
+	]
+}

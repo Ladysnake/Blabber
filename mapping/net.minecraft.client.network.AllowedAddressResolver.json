@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.multiplayer.resolver.ServerNameResolver",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.resolver.ServerNameResolver",
+			"fabric": "net.minecraft.client.network.AllowedAddressResolver"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "resolver",
+			"fabric": "addressResolver"
+		},
+		{
+			"forge": "redirectHandler",
+			"fabric": "redirectResolver"
+		},
+		{
+			"forge": "addressCheck",
+			"fabric": "blockListChecker"
+		},
+		{
+			"forge": "resolveAddress(ServerAddress arg0)",
+			"fabric": "resolve(ServerAddress address)"
+		},
+		{
+			"forge": "resolveAddress(ServerAddress arg0)",
+			"fabric": "resolve(ServerAddress address)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.blaze3d.audio.Library$Pool",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.audio.Library$Pool",
+			"fabric": "net.minecraft.client.sound.SoundEngine$RunMode"
+		},
+		{
+			"forge": "STATIC",
+			"fabric": "STATIC"
+		},
+		{
+			"forge": "STATIC",
+			"fabric": "STATIC"
+		},
+		{
+			"forge": "STREAMING",
+			"fabric": "STREAMING"
+		}
+	]
+}

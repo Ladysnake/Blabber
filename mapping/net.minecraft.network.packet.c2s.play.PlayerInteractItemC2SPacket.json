@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundUseItemPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundUseItemPacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket"
+		},
+		{
+			"forge": "hand",
+			"fabric": "hand"
+		},
+		{
+			"forge": "hand",
+			"fabric": "hand"
+		},
+		{
+			"forge": "sequence",
+			"fabric": "sequence"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getHand()",
+			"fabric": "getHand()"
+		},
+		{
+			"forge": "getSequence()",
+			"fabric": "getSequence()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.texture.Stitcher$SpriteLoader",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.Stitcher$SpriteLoader",
+			"fabric": "net.minecraft.client.texture.TextureStitcher$SpriteConsumer"
+		},
+		{
+			"forge": "load(T arg0, int arg1, int arg2)",
+			"fabric": "load(T info, int x, int y)"
+		},
+		{
+			"forge": "load(T arg0, int arg1, int arg2)",
+			"fabric": "load(T info, int x, int y)"
+		}
+	]
+}

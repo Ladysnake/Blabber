@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$WeirdScaledSampler$RarityValueMapper",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$WeirdScaledSampler$RarityValueMapper"
+		},
+		{
+			"forge": "TYPE1",
+			"fabric": "TYPE1"
+		},
+		{
+			"forge": "TYPE1",
+			"fabric": "TYPE1"
+		},
+		{
+			"forge": "TYPE2",
+			"fabric": "TYPE2"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "mapper",
+			"fabric": "scaleFunction"
+		},
+		{
+			"forge": "maxRarity",
+			"fabric": "maxValueMultiplier"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

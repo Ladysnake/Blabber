@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.SpringFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.SpringFeature",
+			"fabric": "net.minecraft.world.gen.feature.SpringFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<SpringConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SpringFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<SpringConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SpringFeatureConfig> arg0)"
+		}
+	]
+}

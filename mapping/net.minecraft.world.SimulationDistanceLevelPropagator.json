@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.server.level.TickingTracker",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.TickingTracker",
+			"fabric": "net.minecraft.world.SimulationDistanceLevelPropagator"
+		},
+		{
+			"forge": "MAX_LEVEL",
+			"fabric": "field_44858"
+		},
+		{
+			"forge": "MAX_LEVEL",
+			"fabric": "field_44858"
+		},
+		{
+			"forge": "INITIAL_TICKET_LIST_CAPACITY",
+			"fabric": "field_34889"
+		},
+		{
+			"forge": "chunks",
+			"fabric": "levels"
+		},
+		{
+			"forge": "tickets",
+			"fabric": "tickets"
+		},
+		{
+			"forge": "getTickets(long arg0)",
+			"fabric": "getTickets(long pos)"
+		},
+		{
+			"forge": "getTickets(long arg0)",
+			"fabric": "getTickets(long pos)"
+		},
+		{
+			"forge": "getTicketLevelAt(SortedArraySet<Ticket<?>> arg0)",
+			"fabric": "getLevel(SortedArraySet<ChunkTicket<?>> ticket)"
+		},
+		{
+			"forge": "addTicket(long arg0, Ticket<?> arg1)",
+			"fabric": "add(long pos, ChunkTicket<?> ticket)"
+		},
+		{
+			"forge": "removeTicket(long arg0, Ticket<?> arg1)",
+			"fabric": "remove(long pos, ChunkTicket<?> ticket)"
+		},
+		{
+			"forge": "addTicket(TicketType<T> arg0, ChunkPos arg1, int arg2, T arg3)",
+			"fabric": "add(ChunkTicketType<T> type, ChunkPos pos, int level, T argument)"
+		},
+		{
+			"forge": "removeTicket(TicketType<T> arg0, ChunkPos arg1, int arg2, T arg3)",
+			"fabric": "remove(ChunkTicketType<T> type, ChunkPos pos, int level, T argument)"
+		},
+		{
+			"forge": "replacePlayerTicketsLevel(int arg0)",
+			"fabric": "updatePlayerTickets(int level)"
+		},
+		{
+			"forge": "getLevelFromSource(long arg0)",
+			"fabric": "getInitialLevel(long arg0)"
+		},
+		{
+			"forge": "getLevel(ChunkPos arg0)",
+			"fabric": "getLevel(ChunkPos pos)"
+		},
+		{
+			"forge": "getLevel(long arg0)",
+			"fabric": "getLevel(long arg0)"
+		},
+		{
+			"forge": "setLevel(long arg0, int arg1)",
+			"fabric": "setLevel(long arg0, int arg1)"
+		},
+		{
+			"forge": "runAllUpdates()",
+			"fabric": "updateLevels()"
+		},
+		{
+			"forge": "getTicketDebugString(long arg0)",
+			"fabric": "getTickingTicket(long pos)"
+		}
+	]
+}

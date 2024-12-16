@@ -1,0 +1,17 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$ScissorState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$ScissorState",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$ScissorTestState"
+		},
+		{
+			"forge": "mode",
+			"fabric": "capState"
+		},
+		{
+			"forge": "mode",
+			"fabric": "capState"
+		}
+	]
+}

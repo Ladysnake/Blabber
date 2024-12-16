@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BellBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BellBlockEntity",
+			"fabric": "net.minecraft.block.entity.BellBlockEntity"
+		},
+		{
+			"forge": "DURATION",
+			"fabric": "MAX_RINGING_TICKS"
+		},
+		{
+			"forge": "DURATION",
+			"fabric": "MAX_RINGING_TICKS"
+		},
+		{
+			"forge": "GLOW_DURATION",
+			"fabric": "field_31317"
+		},
+		{
+			"forge": "MIN_TICKS_BETWEEN_SEARCHES",
+			"fabric": "field_31318"
+		},
+		{
+			"forge": "MAX_RESONATION_TICKS",
+			"fabric": "MAX_RESONATING_TICKS"
+		},
+		{
+			"forge": "TICKS_BEFORE_RESONATION",
+			"fabric": "field_31320"
+		},
+		{
+			"forge": "SEARCH_RADIUS",
+			"fabric": "field_31321"
+		},
+		{
+			"forge": "HEAR_BELL_RADIUS",
+			"fabric": "MAX_BELL_HEARING_DISTANCE"
+		},
+		{
+			"forge": "HIGHLIGHT_RAIDERS_RADIUS",
+			"fabric": "field_31323"
+		},
+		{
+			"forge": "lastRingTimestamp",
+			"fabric": "lastRingTime"
+		},
+		{
+			"forge": "ticks",
+			"fabric": "ringTicks"
+		},
+		{
+			"forge": "shaking",
+			"fabric": "ringing"
+		},
+		{
+			"forge": "clickDirection",
+			"fabric": "lastSideHit"
+		},
+		{
+			"forge": "nearbyEntities",
+			"fabric": "hearingEntities"
+		},
+		{
+			"forge": "resonating",
+			"fabric": "resonating"
+		},
+		{
+			"forge": "resonationTicks",
+			"fabric": "resonateTime"
+		},
+		{
+			"forge": "triggerEvent(int arg0, int arg1)",
+			"fabric": "onSyncedBlockEvent(int arg0, int arg1)"
+		},
+		{
+			"forge": "triggerEvent(int arg0, int arg1)",
+			"fabric": "onSyncedBlockEvent(int arg0, int arg1)"
+		},
+		{
+			"forge": "tick(Level arg0, BlockPos arg1, BlockState arg2, BellBlockEntity arg3, BellBlockEntity$ResonationEndAction arg4)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, BellBlockEntity blockEntity, BellBlockEntity$Effect bellEffect)"
+		},
+		{
+			"forge": "clientTick(Level arg0, BlockPos arg1, BlockState arg2, BellBlockEntity arg3)",
+			"fabric": "clientTick(World world, BlockPos pos, BlockState state, BellBlockEntity blockEntity)"
+		},
+		{
+			"forge": "serverTick(Level arg0, BlockPos arg1, BlockState arg2, BellBlockEntity arg3)",
+			"fabric": "serverTick(World world, BlockPos pos, BlockState state, BellBlockEntity blockEntity)"
+		},
+		{
+			"forge": "onHit(Direction arg0)",
+			"fabric": "activate(Direction direction)"
+		},
+		{
+			"forge": "updateEntities()",
+			"fabric": "notifyMemoriesOfBell()"
+		},
+		{
+			"forge": "areRaidersNearby(BlockPos arg0, List<LivingEntity> arg1)",
+			"fabric": "raidersHearBell(BlockPos pos, List<LivingEntity> hearingEntities)"
+		},
+		{
+			"forge": "makeRaidersGlow(Level arg0, BlockPos arg1, List<LivingEntity> arg2)",
+			"fabric": "applyGlowToRaiders(World world, BlockPos pos, List<LivingEntity> hearingEntities)"
+		},
+		{
+			"forge": "showBellParticles(Level arg0, BlockPos arg1, List<LivingEntity> arg2)",
+			"fabric": "applyParticlesToRaiders(World world, BlockPos pos, List<LivingEntity> hearingEntities)"
+		},
+		{
+			"forge": "isRaiderWithinRange(BlockPos arg0, LivingEntity arg1)",
+			"fabric": "isRaiderEntity(BlockPos pos, LivingEntity entity)"
+		},
+		{
+			"forge": "glow(LivingEntity arg0)",
+			"fabric": "applyGlowToEntity(LivingEntity entity)"
+		}
+	]
+}

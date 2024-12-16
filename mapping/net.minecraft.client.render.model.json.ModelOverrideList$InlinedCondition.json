@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemOverrides$PropertyMatcher",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemOverrides$PropertyMatcher",
+			"fabric": "net.minecraft.client.render.model.json.ModelOverrideList$InlinedCondition"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "value",
+			"fabric": "threshold"
+		}
+	]
+}

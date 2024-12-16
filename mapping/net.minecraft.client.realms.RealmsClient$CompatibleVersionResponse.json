@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.realmsclient.client.RealmsClient$CompatibleVersionResponse",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.client.RealmsClient$CompatibleVersionResponse",
+			"fabric": "net.minecraft.client.realms.RealmsClient$CompatibleVersionResponse"
+		},
+		{
+			"forge": "COMPATIBLE",
+			"fabric": "COMPATIBLE"
+		},
+		{
+			"forge": "COMPATIBLE",
+			"fabric": "COMPATIBLE"
+		},
+		{
+			"forge": "OUTDATED",
+			"fabric": "OUTDATED"
+		},
+		{
+			"forge": "OTHER",
+			"fabric": "OTHER"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsDescriptionDto",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsDescriptionDto",
+			"fabric": "net.minecraft.client.realms.dto.RealmsDescriptionDto"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "description",
+			"fabric": "description"
+		}
+	]
+}

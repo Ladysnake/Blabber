@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.village.poi.PoiManager$Occupancy",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.village.poi.PoiManager$Occupancy",
+			"fabric": "net.minecraft.world.poi.PointOfInterestStorage$OccupationStatus"
+		},
+		{
+			"forge": "HAS_SPACE",
+			"fabric": "HAS_SPACE"
+		},
+		{
+			"forge": "HAS_SPACE",
+			"fabric": "HAS_SPACE"
+		},
+		{
+			"forge": "IS_OCCUPIED",
+			"fabric": "IS_OCCUPIED"
+		},
+		{
+			"forge": "ANY",
+			"fabric": "ANY"
+		},
+		{
+			"forge": "test",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "test",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "getTest()",
+			"fabric": "getPredicate()"
+		},
+		{
+			"forge": "getTest()",
+			"fabric": "getPredicate()"
+		}
+	]
+}

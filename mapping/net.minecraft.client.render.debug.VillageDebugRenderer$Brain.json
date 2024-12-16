@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.client.renderer.debug.BrainDebugRenderer$BrainDump",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.BrainDebugRenderer$BrainDump",
+			"fabric": "net.minecraft.client.render.debug.VillageDebugRenderer$Brain"
+		},
+		{
+			"forge": "uuid",
+			"fabric": "uuid"
+		},
+		{
+			"forge": "uuid",
+			"fabric": "uuid"
+		},
+		{
+			"forge": "id",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "profession",
+			"fabric": "profession"
+		},
+		{
+			"forge": "xp",
+			"fabric": "xp"
+		},
+		{
+			"forge": "health",
+			"fabric": "health"
+		},
+		{
+			"forge": "maxHealth",
+			"fabric": "maxHealth"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "inventory",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "path",
+			"fabric": "path"
+		},
+		{
+			"forge": "wantsGolem",
+			"fabric": "wantsGolem"
+		},
+		{
+			"forge": "angerLevel",
+			"fabric": "angerLevel"
+		},
+		{
+			"forge": "activities",
+			"fabric": "possibleActivities"
+		},
+		{
+			"forge": "behaviors",
+			"fabric": "runningTasks"
+		},
+		{
+			"forge": "memories",
+			"fabric": "memories"
+		},
+		{
+			"forge": "gossips",
+			"fabric": "gossips"
+		},
+		{
+			"forge": "pois",
+			"fabric": "pointsOfInterest"
+		},
+		{
+			"forge": "potentialPois",
+			"fabric": "potentialJobSites"
+		},
+		{
+			"forge": "hasPoi(BlockPos arg0)",
+			"fabric": "isPointOfInterest(BlockPos pos)"
+		},
+		{
+			"forge": "hasPoi(BlockPos arg0)",
+			"fabric": "isPointOfInterest(BlockPos pos)"
+		},
+		{
+			"forge": "hasPotentialPoi(BlockPos arg0)",
+			"fabric": "isPotentialJobSite(BlockPos pos)"
+		},
+		{
+			"forge": "getUuid()",
+			"fabric": "getUuid()"
+		}
+	]
+}

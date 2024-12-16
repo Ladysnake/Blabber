@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.commands.BanListCommands",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.BanListCommands",
+			"fabric": "net.minecraft.server.dedicated.command.BanListCommand"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "showList(CommandSourceStack arg0, Collection<? extends BanListEntry<?>> arg1)",
+			"fabric": "execute(ServerCommandSource source, Collection<? extends BanEntry<?>> targets)"
+		}
+	]
+}

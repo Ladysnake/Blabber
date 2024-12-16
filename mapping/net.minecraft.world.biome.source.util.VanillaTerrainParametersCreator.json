@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.data.worldgen.TerrainProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.TerrainProvider",
+			"fabric": "net.minecraft.world.biome.source.util.VanillaTerrainParametersCreator"
+		},
+		{
+			"forge": "DEEP_OCEAN_CONTINENTALNESS",
+			"fabric": "field_38024"
+		},
+		{
+			"forge": "DEEP_OCEAN_CONTINENTALNESS",
+			"fabric": "field_38024"
+		},
+		{
+			"forge": "OCEAN_CONTINENTALNESS",
+			"fabric": "field_38025"
+		},
+		{
+			"forge": "PLAINS_CONTINENTALNESS",
+			"fabric": "field_38026"
+		},
+		{
+			"forge": "BEACH_CONTINENTALNESS",
+			"fabric": "field_38027"
+		},
+		{
+			"forge": "NO_TRANSFORM",
+			"fabric": "IDENTITY"
+		},
+		{
+			"forge": "AMPLIFIED_OFFSET",
+			"fabric": "OFFSET_AMPLIFIER"
+		},
+		{
+			"forge": "AMPLIFIED_FACTOR",
+			"fabric": "FACTOR_AMPLIFIER"
+		},
+		{
+			"forge": "AMPLIFIED_JAGGEDNESS",
+			"fabric": "JAGGEDNESS_AMPLIFIER"
+		},
+		{
+			"forge": "overworldOffset(I arg0, I arg1, I arg2, boolean arg3)",
+			"fabric": "createOffsetSpline(I continents, I erosion, I ridgesFolded, boolean amplified)"
+		},
+		{
+			"forge": "overworldOffset(I arg0, I arg1, I arg2, boolean arg3)",
+			"fabric": "createOffsetSpline(I continents, I erosion, I ridgesFolded, boolean amplified)"
+		},
+		{
+			"forge": "overworldFactor(I arg0, I arg1, I arg2, I arg3, boolean arg4)",
+			"fabric": "createFactorSpline(I continents, I erosion, I ridges, I ridgesFolded, boolean amplified)"
+		},
+		{
+			"forge": "overworldJaggedness(I arg0, I arg1, I arg2, I arg3, boolean arg4)",
+			"fabric": "createJaggednessSpline(I continents, I erosion, I ridges, I ridgesFolded, boolean amplified)"
+		},
+		{
+			"forge": "buildErosionJaggednessSpline(I arg0, I arg1, I arg2, float arg3, float arg4, float arg5, float arg6, ToFloatFunction<Float> arg7)",
+			"fabric": "method_42053(I erosion, I ridges, I ridgesFolded, float arg3, float arg4, float arg5, float arg6, ToFloatFunction<Float> amplifier)"
+		},
+		{
+			"forge": "buildRidgeJaggednessSpline(I arg0, I arg1, float arg2, float arg3, ToFloatFunction<Float> arg4)",
+			"fabric": "method_42052(I ridges, I ridgesFolded, float arg2, float arg3, ToFloatFunction<Float> amplifier)"
+		},
+		{
+			"forge": "buildWeirdnessJaggednessSpline(I arg0, float arg1, ToFloatFunction<Float> arg2)",
+			"fabric": "method_42049(I ridges, float arg1, ToFloatFunction<Float> amplifier)"
+		},
+		{
+			"forge": "getErosionFactor(I arg0, I arg1, I arg2, float arg3, boolean arg4, ToFloatFunction<Float> arg5)",
+			"fabric": "method_42054(I erosion, I ridges, I ridgesFolded, float arg3, boolean arg4, ToFloatFunction<Float> amplifier)"
+		},
+		{
+			"forge": "calculateSlope(float arg0, float arg1, float arg2, float arg3)",
+			"fabric": "method_42047(float arg0, float arg1, float arg2, float arg3)"
+		},
+		{
+			"forge": "buildMountainRidgeSplineWithPoints(I arg0, float arg1, boolean arg2, ToFloatFunction<Float> arg3)",
+			"fabric": "method_42050(I ridgesFolded, float arg1, boolean arg2, ToFloatFunction<Float> amplifier)"
+		},
+		{
+			"forge": "mountainContinentalness(float arg0, float arg1, float arg2)",
+			"fabric": "getOffsetValue(float arg0, float arg1, float arg2)"
+		},
+		{
+			"forge": "calculateMountainRidgeZeroContinentalnessPoint(float arg0)",
+			"fabric": "method_42045(float arg0)"
+		},
+		{
+			"forge": "buildErosionOffsetSpline(I arg0, I arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, boolean arg8, boolean arg9, ToFloatFunction<Float> arg10)",
+			"fabric": "createContinentalOffsetSpline(I erosion, I ridgesFolded, float continentalness, float arg3, float arg4, float arg5, float arg6, float arg7, boolean arg8, boolean arg9, ToFloatFunction<Float> amplifier)"
+		},
+		{
+			"forge": "ridgeSpline(I arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, ToFloatFunction<Float> arg7)",
+			"fabric": "method_42048(I ridgesFolded, float continentalness, float arg2, float arg3, float arg4, float arg5, float arg6, ToFloatFunction<Float> amplifier)"
+		}
+	]
+}

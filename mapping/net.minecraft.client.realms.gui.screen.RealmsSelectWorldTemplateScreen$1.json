@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSelectWorldTemplateScreen$1",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSelectWorldTemplateScreen$1",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSelectWorldTemplateScreen$1"
+		}
+	]
+}

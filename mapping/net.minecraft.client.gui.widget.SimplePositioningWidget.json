@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.client.gui.layouts.FrameLayout",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.layouts.FrameLayout",
+			"fabric": "net.minecraft.client.gui.widget.SimplePositioningWidget"
+		},
+		{
+			"forge": "children",
+			"fabric": "elements"
+		},
+		{
+			"forge": "children",
+			"fabric": "elements"
+		},
+		{
+			"forge": "minWidth",
+			"fabric": "minHeight"
+		},
+		{
+			"forge": "minHeight",
+			"fabric": "minWidth"
+		},
+		{
+			"forge": "defaultChildLayoutSettings",
+			"fabric": "mainPositioner"
+		},
+		{
+			"forge": "setMinDimensions(int arg0, int arg1)",
+			"fabric": "setDimensions(int minWidth, int minHeight)"
+		},
+		{
+			"forge": "setMinDimensions(int arg0, int arg1)",
+			"fabric": "setDimensions(int minWidth, int minHeight)"
+		},
+		{
+			"forge": "setMinHeight(int arg0)",
+			"fabric": "setMinHeight(int minWidth)"
+		},
+		{
+			"forge": "setMinWidth(int arg0)",
+			"fabric": "setMinWidth(int minHeight)"
+		},
+		{
+			"forge": "newChildLayoutSettings()",
+			"fabric": "copyPositioner()"
+		},
+		{
+			"forge": "defaultChildLayoutSetting()",
+			"fabric": "getMainPositioner()"
+		},
+		{
+			"forge": "arrangeElements()",
+			"fabric": "refreshPositions()"
+		},
+		{
+			"forge": "addChild(T arg0)",
+			"fabric": "add(T widget)"
+		},
+		{
+			"forge": "addChild(T arg0, LayoutSettings arg1)",
+			"fabric": "add(T widget, Positioner positioner)"
+		},
+		{
+			"forge": "visitChildren(Consumer<LayoutElement> arg0)",
+			"fabric": "forEachElement(Consumer<Widget> arg0)"
+		},
+		{
+			"forge": "centerInRectangle(LayoutElement arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "setPos(Widget widget, int left, int top, int right, int bottom)"
+		},
+		{
+			"forge": "centerInRectangle(LayoutElement arg0, ScreenRectangle arg1)",
+			"fabric": "setPos(Widget widget, ScreenRect rect)"
+		},
+		{
+			"forge": "alignInRectangle(LayoutElement arg0, ScreenRectangle arg1, float arg2, float arg3)",
+			"fabric": "setPos(Widget widget, ScreenRect rect, float relativeX, float relativeY)"
+		},
+		{
+			"forge": "alignInRectangle(LayoutElement arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6)",
+			"fabric": "setPos(Widget widget, int left, int top, int right, int bottom, float relativeX, float relativeY)"
+		},
+		{
+			"forge": "alignInDimension(int arg0, int arg1, int arg2, Consumer<Integer> arg3, float arg4)",
+			"fabric": "setPos(int low, int high, int length, Consumer<Integer> setter, float relative)"
+		}
+	]
+}

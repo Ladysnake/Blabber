@@ -1,0 +1,313 @@
+{
+	"title": "net.minecraft.client.gui.GuiGraphics",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.GuiGraphics",
+			"fabric": "net.minecraft.client.gui.DrawContext"
+		},
+		{
+			"forge": "MAX_GUI_Z",
+			"fabric": "field_44931"
+		},
+		{
+			"forge": "MAX_GUI_Z",
+			"fabric": "field_44931"
+		},
+		{
+			"forge": "MIN_GUI_Z",
+			"fabric": "field_44932"
+		},
+		{
+			"forge": "EXTRA_SPACE_AFTER_FIRST_TOOLTIP_LINE",
+			"fabric": "field_44655"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "pose",
+			"fabric": "matrices"
+		},
+		{
+			"forge": "bufferSource",
+			"fabric": "vertexConsumers"
+		},
+		{
+			"forge": "scissorStack",
+			"fabric": "scissorStack"
+		},
+		{
+			"forge": "managed",
+			"fabric": "runningDrawCallback"
+		},
+		{
+			"forge": "drawManaged(Runnable arg0)",
+			"fabric": "draw(Runnable drawCallback)"
+		},
+		{
+			"forge": "drawManaged(Runnable arg0)",
+			"fabric": "draw(Runnable drawCallback)"
+		},
+		{
+			"forge": "flushIfUnmanaged()",
+			"fabric": "tryDraw()"
+		},
+		{
+			"forge": "flushIfManaged()",
+			"fabric": "drawIfRunning()"
+		},
+		{
+			"forge": "guiWidth()",
+			"fabric": "getScaledWindowWidth()"
+		},
+		{
+			"forge": "guiHeight()",
+			"fabric": "getScaledWindowHeight()"
+		},
+		{
+			"forge": "pose()",
+			"fabric": "getMatrices()"
+		},
+		{
+			"forge": "bufferSource()",
+			"fabric": "getVertexConsumers()"
+		},
+		{
+			"forge": "flush()",
+			"fabric": "draw()"
+		},
+		{
+			"forge": "hLine(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "drawHorizontalLine(int x1, int x2, int y, int color)"
+		},
+		{
+			"forge": "hLine(RenderType arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawHorizontalLine(RenderLayer layer, int x1, int x2, int y, int color)"
+		},
+		{
+			"forge": "vLine(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "drawVerticalLine(int x, int y1, int y2, int color)"
+		},
+		{
+			"forge": "vLine(RenderType arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawVerticalLine(RenderLayer layer, int x, int y1, int y2, int color)"
+		},
+		{
+			"forge": "enableScissor(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "enableScissor(int x1, int y1, int x2, int y2)"
+		},
+		{
+			"forge": "disableScissor()",
+			"fabric": "disableScissor()"
+		},
+		{
+			"forge": "applyScissor(ScreenRectangle arg0)",
+			"fabric": "setScissor(ScreenRect rect)"
+		},
+		{
+			"forge": "setColor(float arg0, float arg1, float arg2, float arg3)",
+			"fabric": "setShaderColor(float red, float green, float blue, float alpha)"
+		},
+		{
+			"forge": "fill(int arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "fill(int x1, int y1, int x2, int y2, int color)"
+		},
+		{
+			"forge": "fill(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "fill(int x1, int y1, int x2, int y2, int z, int color)"
+		},
+		{
+			"forge": "fill(RenderType arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "fill(RenderLayer layer, int x1, int y1, int x2, int y2, int color)"
+		},
+		{
+			"forge": "fill(RenderType arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)",
+			"fabric": "fill(RenderLayer layer, int x1, int y1, int x2, int y2, int z, int color)"
+		},
+		{
+			"forge": "fillGradient(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "fillGradient(int startX, int startY, int endX, int endY, int colorStart, int colorEnd)"
+		},
+		{
+			"forge": "fillGradient(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)",
+			"fabric": "fillGradient(int startX, int startY, int endX, int endY, int z, int colorStart, int colorEnd)"
+		},
+		{
+			"forge": "fillGradient(RenderType arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)",
+			"fabric": "fillGradient(RenderLayer layer, int startX, int startY, int endX, int endY, int colorStart, int colorEnd, int z)"
+		},
+		{
+			"forge": "fillGradient(VertexConsumer arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)",
+			"fabric": "fillGradient(VertexConsumer vertexConsumer, int startX, int startY, int endX, int endY, int z, int colorStart, int colorEnd)"
+		},
+		{
+			"forge": "drawCenteredString(Font arg0, String arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawCenteredTextWithShadow(TextRenderer textRenderer, String text, int centerX, int y, int color)"
+		},
+		{
+			"forge": "drawCenteredString(Font arg0, Component arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawCenteredTextWithShadow(TextRenderer textRenderer, Text text, int centerX, int y, int color)"
+		},
+		{
+			"forge": "drawCenteredString(Font arg0, FormattedCharSequence arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawCenteredTextWithShadow(TextRenderer textRenderer, OrderedText text, int centerX, int y, int color)"
+		},
+		{
+			"forge": "drawString(Font arg0, String arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawTextWithShadow(TextRenderer textRenderer, String text, int x, int y, int color)"
+		},
+		{
+			"forge": "drawString(Font arg0, String arg1, int arg2, int arg3, int arg4, boolean arg5)",
+			"fabric": "drawText(TextRenderer textRenderer, String text, int x, int y, int color, boolean shadow)"
+		},
+		{
+			"forge": "drawString(Font arg0, FormattedCharSequence arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawTextWithShadow(TextRenderer textRenderer, OrderedText text, int x, int y, int color)"
+		},
+		{
+			"forge": "drawString(Font arg0, FormattedCharSequence arg1, int arg2, int arg3, int arg4, boolean arg5)",
+			"fabric": "drawText(TextRenderer textRenderer, OrderedText text, int x, int y, int color, boolean shadow)"
+		},
+		{
+			"forge": "drawString(Font arg0, Component arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawTextWithShadow(TextRenderer textRenderer, Text text, int x, int y, int color)"
+		},
+		{
+			"forge": "drawString(Font arg0, Component arg1, int arg2, int arg3, int arg4, boolean arg5)",
+			"fabric": "drawText(TextRenderer textRenderer, Text text, int x, int y, int color, boolean shadow)"
+		},
+		{
+			"forge": "drawWordWrap(Font arg0, FormattedText arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "drawTextWrapped(TextRenderer textRenderer, StringVisitable text, int x, int y, int width, int color)"
+		},
+		{
+			"forge": "blit(int arg0, int arg1, int arg2, int arg3, int arg4, TextureAtlasSprite arg5)",
+			"fabric": "drawSprite(int x, int y, int z, int width, int height, Sprite sprite)"
+		},
+		{
+			"forge": "blit(int arg0, int arg1, int arg2, int arg3, int arg4, TextureAtlasSprite arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "drawSprite(int x, int y, int z, int width, int height, Sprite sprite, float red, float green, float blue, float alpha)"
+		},
+		{
+			"forge": "renderOutline(int arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawBorder(int x, int y, int width, int height, int color)"
+		},
+		{
+			"forge": "blit(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)",
+			"fabric": "drawTexture(Identifier texture, int x, int y, int u, int v, int width, int height)"
+		},
+		{
+			"forge": "blit(ResourceLocation arg0, int arg1, int arg2, int arg3, float arg4, float arg5, int arg6, int arg7, int arg8, int arg9)",
+			"fabric": "drawTexture(Identifier texture, int x, int y, int z, float u, float v, int width, int height, int textureWidth, int textureHeight)"
+		},
+		{
+			"forge": "blit(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, int arg7, int arg8, int arg9, int arg10)",
+			"fabric": "drawTexture(Identifier texture, int x, int y, int width, int height, float u, float v, int regionWidth, int regionHeight, int textureWidth, int textureHeight)"
+		},
+		{
+			"forge": "blit(ResourceLocation arg0, int arg1, int arg2, float arg3, float arg4, int arg5, int arg6, int arg7, int arg8)",
+			"fabric": "drawTexture(Identifier texture, int x, int y, float u, float v, int width, int height, int textureWidth, int textureHeight)"
+		},
+		{
+			"forge": "blit(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, float arg8, float arg9, int arg10, int arg11)",
+			"fabric": "drawTexture(Identifier texture, int x1, int x2, int y1, int y2, int z, int regionWidth, int regionHeight, float u, float v, int textureWidth, int textureHeight)"
+		},
+		{
+			"forge": "innerBlit(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, int arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "drawTexturedQuad(Identifier texture, int x1, int x2, int y1, int y2, int z, float u1, float u2, float v1, float v2)"
+		},
+		{
+			"forge": "innerBlit(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, int arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13)",
+			"fabric": "drawTexturedQuad(Identifier texture, int x1, int x2, int y1, int y2, int z, float u1, float u2, float v1, float v2, float red, float green, float blue, float alpha)"
+		},
+		{
+			"forge": "blitNineSliced(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)",
+			"fabric": "drawNineSlicedTexture(Identifier texture, int x, int y, int width, int height, int outerSliceSize, int centerSliceWidth, int centerSliceHeight, int u, int v)"
+		},
+		{
+			"forge": "blitNineSliced(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10)",
+			"fabric": "drawNineSlicedTexture(Identifier texture, int x, int y, int width, int height, int outerSliceWidth, int outerSliceHeight, int centerSliceWidth, int centerSliceHeight, int u, int v)"
+		},
+		{
+			"forge": "blitNineSliced(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12)",
+			"fabric": "drawNineSlicedTexture(Identifier texture, int x, int y, int width, int height, int leftSliceWidth, int topSliceHeight, int rightSliceWidth, int bottomSliceHeight, int centerSliceWidth, int centerSliceHeight, int u, int v)"
+		},
+		{
+			"forge": "blitRepeating(ResourceLocation arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8)",
+			"fabric": "drawRepeatingTexture(Identifier texture, int x, int y, int width, int height, int u, int v, int textureWidth, int textureHeight)"
+		},
+		{
+			"forge": "slices(int arg0, int arg1)",
+			"fabric": "createDivider(int sideLength, int textureSideLength)"
+		},
+		{
+			"forge": "renderItem(ItemStack arg0, int arg1, int arg2)",
+			"fabric": "drawItem(ItemStack item, int x, int y)"
+		},
+		{
+			"forge": "renderItem(ItemStack arg0, int arg1, int arg2, int arg3)",
+			"fabric": "drawItem(ItemStack stack, int x, int y, int seed)"
+		},
+		{
+			"forge": "renderItem(ItemStack arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawItem(ItemStack stack, int x, int y, int seed, int z)"
+		},
+		{
+			"forge": "renderFakeItem(ItemStack arg0, int arg1, int arg2)",
+			"fabric": "drawItemWithoutEntity(ItemStack stack, int x, int y)"
+		},
+		{
+			"forge": "renderItem(LivingEntity arg0, ItemStack arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawItem(LivingEntity entity, ItemStack stack, int x, int y, int seed)"
+		},
+		{
+			"forge": "renderItem(LivingEntity arg0, Level arg1, ItemStack arg2, int arg3, int arg4, int arg5)",
+			"fabric": "drawItem(LivingEntity entity, World world, ItemStack stack, int x, int y, int seed)"
+		},
+		{
+			"forge": "renderItem(LivingEntity arg0, Level arg1, ItemStack arg2, int arg3, int arg4, int arg5, int arg6)",
+			"fabric": "drawItem(LivingEntity entity, World world, ItemStack stack, int x, int y, int seed, int z)"
+		},
+		{
+			"forge": "renderItemDecorations(Font arg0, ItemStack arg1, int arg2, int arg3)",
+			"fabric": "drawItemInSlot(TextRenderer textRenderer, ItemStack stack, int x, int y)"
+		},
+		{
+			"forge": "renderItemDecorations(Font arg0, ItemStack arg1, int arg2, int arg3, String arg4)",
+			"fabric": "drawItemInSlot(TextRenderer textRenderer, ItemStack stack, int x, int y, String countOverride)"
+		},
+		{
+			"forge": "renderTooltip(Font arg0, ItemStack arg1, int arg2, int arg3)",
+			"fabric": "drawItemTooltip(TextRenderer textRenderer, ItemStack stack, int x, int y)"
+		},
+		{
+			"forge": "renderTooltip(Font arg0, List<Component> arg1, Optional<TooltipComponent> arg2, int arg3, int arg4)",
+			"fabric": "drawTooltip(TextRenderer textRenderer, List<Text> text, Optional<TooltipData> data, int x, int y)"
+		},
+		{
+			"forge": "renderTooltip(Font arg0, Component arg1, int arg2, int arg3)",
+			"fabric": "drawTooltip(TextRenderer textRenderer, Text text, int x, int y)"
+		},
+		{
+			"forge": "renderComponentTooltip(Font arg0, List<Component> arg1, int arg2, int arg3)",
+			"fabric": "drawTooltip(TextRenderer textRenderer, List<Text> text, int x, int y)"
+		},
+		{
+			"forge": "renderTooltip(Font arg0, List<? extends FormattedCharSequence> arg1, int arg2, int arg3)",
+			"fabric": "drawOrderedTooltip(TextRenderer textRenderer, List<? extends OrderedText> text, int x, int y)"
+		},
+		{
+			"forge": "renderTooltip(Font arg0, List<FormattedCharSequence> arg1, ClientTooltipPositioner arg2, int arg3, int arg4)",
+			"fabric": "drawTooltip(TextRenderer textRenderer, List<OrderedText> text, TooltipPositioner positioner, int x, int y)"
+		},
+		{
+			"forge": "renderTooltipInternal(Font arg0, List<ClientTooltipComponent> arg1, int arg2, int arg3, ClientTooltipPositioner arg4)",
+			"fabric": "drawTooltip(TextRenderer textRenderer, List<TooltipComponent> components, int x, int y, TooltipPositioner positioner)"
+		},
+		{
+			"forge": "renderComponentHoverEffect(Font arg0, Style arg1, int arg2, int arg3)",
+			"fabric": "drawHoverEvent(TextRenderer textRenderer, Style style, int x, int y)"
+		}
+	]
+}

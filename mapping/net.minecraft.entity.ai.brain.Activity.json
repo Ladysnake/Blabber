@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.world.entity.schedule.Activity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.schedule.Activity",
+			"fabric": "net.minecraft.entity.ai.brain.Activity"
+		},
+		{
+			"forge": "CORE",
+			"fabric": "CORE"
+		},
+		{
+			"forge": "CORE",
+			"fabric": "CORE"
+		},
+		{
+			"forge": "IDLE",
+			"fabric": "IDLE"
+		},
+		{
+			"forge": "WORK",
+			"fabric": "WORK"
+		},
+		{
+			"forge": "PLAY",
+			"fabric": "PLAY"
+		},
+		{
+			"forge": "REST",
+			"fabric": "REST"
+		},
+		{
+			"forge": "MEET",
+			"fabric": "MEET"
+		},
+		{
+			"forge": "PANIC",
+			"fabric": "PANIC"
+		},
+		{
+			"forge": "RAID",
+			"fabric": "RAID"
+		},
+		{
+			"forge": "PRE_RAID",
+			"fabric": "PRE_RAID"
+		},
+		{
+			"forge": "HIDE",
+			"fabric": "HIDE"
+		},
+		{
+			"forge": "FIGHT",
+			"fabric": "FIGHT"
+		},
+		{
+			"forge": "CELEBRATE",
+			"fabric": "CELEBRATE"
+		},
+		{
+			"forge": "ADMIRE_ITEM",
+			"fabric": "ADMIRE_ITEM"
+		},
+		{
+			"forge": "AVOID",
+			"fabric": "AVOID"
+		},
+		{
+			"forge": "RIDE",
+			"fabric": "RIDE"
+		},
+		{
+			"forge": "PLAY_DEAD",
+			"fabric": "PLAY_DEAD"
+		},
+		{
+			"forge": "LONG_JUMP",
+			"fabric": "LONG_JUMP"
+		},
+		{
+			"forge": "RAM",
+			"fabric": "RAM"
+		},
+		{
+			"forge": "TONGUE",
+			"fabric": "TONGUE"
+		},
+		{
+			"forge": "SWIM",
+			"fabric": "SWIM"
+		},
+		{
+			"forge": "LAY_SPAWN",
+			"fabric": "LAY_SPAWN"
+		},
+		{
+			"forge": "SNIFF",
+			"fabric": "SNIFF"
+		},
+		{
+			"forge": "INVESTIGATE",
+			"fabric": "INVESTIGATE"
+		},
+		{
+			"forge": "ROAR",
+			"fabric": "ROAR"
+		},
+		{
+			"forge": "EMERGE",
+			"fabric": "EMERGE"
+		},
+		{
+			"forge": "DIG",
+			"fabric": "DIG"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "hashCode",
+			"fabric": "hashCode"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "register(String arg0)",
+			"fabric": "register(String id)"
+		}
+	]
+}

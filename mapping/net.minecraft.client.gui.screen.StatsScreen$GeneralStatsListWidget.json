@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.achievement.StatsScreen$GeneralStatisticsList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.achievement.StatsScreen$GeneralStatisticsList",
+			"fabric": "net.minecraft.client.gui.screen.StatsScreen$GeneralStatsListWidget"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext arg0)"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext arg0)"
+		}
+	]
+}

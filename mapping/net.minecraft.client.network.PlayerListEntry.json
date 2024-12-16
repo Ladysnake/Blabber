@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.client.multiplayer.PlayerInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.PlayerInfo",
+			"fabric": "net.minecraft.client.network.PlayerListEntry"
+		},
+		{
+			"forge": "profile",
+			"fabric": "profile"
+		},
+		{
+			"forge": "profile",
+			"fabric": "profile"
+		},
+		{
+			"forge": "textureLocations",
+			"fabric": "textures"
+		},
+		{
+			"forge": "gameMode",
+			"fabric": "gameMode"
+		},
+		{
+			"forge": "latency",
+			"fabric": "latency"
+		},
+		{
+			"forge": "pendingTextures",
+			"fabric": "texturesLoaded"
+		},
+		{
+			"forge": "skinModel",
+			"fabric": "model"
+		},
+		{
+			"forge": "tabListDisplayName",
+			"fabric": "displayName"
+		},
+		{
+			"forge": "chatSession",
+			"fabric": "session"
+		},
+		{
+			"forge": "messageValidator",
+			"fabric": "messageVerifier"
+		},
+		{
+			"forge": "getProfile()",
+			"fabric": "getProfile()"
+		},
+		{
+			"forge": "getProfile()",
+			"fabric": "getProfile()"
+		},
+		{
+			"forge": "getChatSession()",
+			"fabric": "getSession()"
+		},
+		{
+			"forge": "getMessageValidator()",
+			"fabric": "getMessageVerifier()"
+		},
+		{
+			"forge": "hasVerifiableChat()",
+			"fabric": "hasPublicKey()"
+		},
+		{
+			"forge": "setChatSession(RemoteChatSession arg0)",
+			"fabric": "setSession(PublicPlayerSession session)"
+		},
+		{
+			"forge": "clearChatSession(boolean arg0)",
+			"fabric": "resetSession(boolean secureChatEnforced)"
+		},
+		{
+			"forge": "fallbackMessageValidator(boolean arg0)",
+			"fabric": "getInitialVerifier(boolean secureChatEnforced)"
+		},
+		{
+			"forge": "getGameMode()",
+			"fabric": "getGameMode()"
+		},
+		{
+			"forge": "setGameMode(GameType arg0)",
+			"fabric": "setGameMode(GameMode gameMode)"
+		},
+		{
+			"forge": "getLatency()",
+			"fabric": "getLatency()"
+		},
+		{
+			"forge": "setLatency(int arg0)",
+			"fabric": "setLatency(int latency)"
+		},
+		{
+			"forge": "isCapeLoaded()",
+			"fabric": "hasCape()"
+		},
+		{
+			"forge": "isSkinLoaded()",
+			"fabric": "hasSkinTexture()"
+		},
+		{
+			"forge": "getModelName()",
+			"fabric": "getModel()"
+		},
+		{
+			"forge": "getSkinLocation()",
+			"fabric": "getSkinTexture()"
+		},
+		{
+			"forge": "getCapeLocation()",
+			"fabric": "getCapeTexture()"
+		},
+		{
+			"forge": "getElytraLocation()",
+			"fabric": "getElytraTexture()"
+		},
+		{
+			"forge": "getTeam()",
+			"fabric": "getScoreboardTeam()"
+		},
+		{
+			"forge": "registerTextures()",
+			"fabric": "loadTextures()"
+		},
+		{
+			"forge": "setTabListDisplayName(Component arg0)",
+			"fabric": "setDisplayName(Text displayName)"
+		},
+		{
+			"forge": "getTabListDisplayName()",
+			"fabric": "getDisplayName()"
+		}
+	]
+}

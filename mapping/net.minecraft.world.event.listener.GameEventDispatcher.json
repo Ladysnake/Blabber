@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.gameevent.GameEventListenerRegistry",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.GameEventListenerRegistry",
+			"fabric": "net.minecraft.world.event.listener.GameEventDispatcher"
+		},
+		{
+			"forge": "NOOP",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "NOOP",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "register(GameEventListener arg0)",
+			"fabric": "addListener(GameEventListener listener)"
+		},
+		{
+			"forge": "unregister(GameEventListener arg0)",
+			"fabric": "removeListener(GameEventListener listener)"
+		},
+		{
+			"forge": "visitInRangeListeners(GameEvent arg0, Vec3 arg1, GameEvent$Context arg2, GameEventListenerRegistry$ListenerVisitor arg3)",
+			"fabric": "dispatch(GameEvent event, Vec3d pos, GameEvent$Emitter emitter, GameEventDispatcher$DispatchCallback callback)"
+		}
+	]
+}

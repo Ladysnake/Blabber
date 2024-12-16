@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.data.DataProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.DataProvider",
+			"fabric": "net.minecraft.data.DataProvider"
+		},
+		{
+			"forge": "FIXED_ORDER_FIELDS",
+			"fabric": "JSON_KEY_SORT_ORDER"
+		},
+		{
+			"forge": "FIXED_ORDER_FIELDS",
+			"fabric": "JSON_KEY_SORT_ORDER"
+		},
+		{
+			"forge": "KEY_COMPARATOR",
+			"fabric": "JSON_KEY_SORTING_COMPARATOR"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter writer)"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter writer)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "saveStable(CachedOutput arg0, com.google.gson.JsonElement arg1, Path arg2)",
+			"fabric": "writeToPath(DataWriter writer, com.google.gson.JsonElement json, Path path)"
+		}
+	]
+}

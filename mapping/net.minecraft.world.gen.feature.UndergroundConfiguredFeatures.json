@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.data.worldgen.features.CaveFeatures",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.features.CaveFeatures",
+			"fabric": "net.minecraft.world.gen.feature.UndergroundConfiguredFeatures"
+		},
+		{
+			"forge": "MONSTER_ROOM",
+			"fabric": "MONSTER_ROOM"
+		},
+		{
+			"forge": "MONSTER_ROOM",
+			"fabric": "MONSTER_ROOM"
+		},
+		{
+			"forge": "FOSSIL_COAL",
+			"fabric": "FOSSIL_COAL"
+		},
+		{
+			"forge": "FOSSIL_DIAMONDS",
+			"fabric": "FOSSIL_DIAMONDS"
+		},
+		{
+			"forge": "DRIPSTONE_CLUSTER",
+			"fabric": "DRIPSTONE_CLUSTER"
+		},
+		{
+			"forge": "LARGE_DRIPSTONE",
+			"fabric": "LARGE_DRIPSTONE"
+		},
+		{
+			"forge": "POINTED_DRIPSTONE",
+			"fabric": "POINTED_DRIPSTONE"
+		},
+		{
+			"forge": "UNDERWATER_MAGMA",
+			"fabric": "UNDERWATER_MAGMA"
+		},
+		{
+			"forge": "GLOW_LICHEN",
+			"fabric": "GLOW_LICHEN"
+		},
+		{
+			"forge": "ROOTED_AZALEA_TREE",
+			"fabric": "ROOTED_AZALEA_TREE"
+		},
+		{
+			"forge": "CAVE_VINE",
+			"fabric": "CAVE_VINE"
+		},
+		{
+			"forge": "CAVE_VINE_IN_MOSS",
+			"fabric": "CAVE_VINE_IN_MOSS"
+		},
+		{
+			"forge": "MOSS_VEGETATION",
+			"fabric": "MOSS_VEGETATION"
+		},
+		{
+			"forge": "MOSS_PATCH",
+			"fabric": "MOSS_PATCH"
+		},
+		{
+			"forge": "MOSS_PATCH_BONEMEAL",
+			"fabric": "MOSS_PATCH_BONEMEAL"
+		},
+		{
+			"forge": "DRIPLEAF",
+			"fabric": "DRIPLEAF"
+		},
+		{
+			"forge": "CLAY_WITH_DRIPLEAVES",
+			"fabric": "CLAY_WITH_DRIPLEAVES"
+		},
+		{
+			"forge": "CLAY_POOL_WITH_DRIPLEAVES",
+			"fabric": "CLAY_POOL_WITH_DRIPLEAVES"
+		},
+		{
+			"forge": "LUSH_CAVES_CLAY",
+			"fabric": "LUSH_CAVES_CLAY"
+		},
+		{
+			"forge": "MOSS_PATCH_CEILING",
+			"fabric": "MOSS_PATCH_CEILING"
+		},
+		{
+			"forge": "SPORE_BLOSSOM",
+			"fabric": "SPORE_BLOSSOM"
+		},
+		{
+			"forge": "AMETHYST_GEODE",
+			"fabric": "AMETHYST_GEODE"
+		},
+		{
+			"forge": "SCULK_PATCH_DEEP_DARK",
+			"fabric": "SCULK_PATCH_DEEP_DARK"
+		},
+		{
+			"forge": "SCULK_PATCH_ANCIENT_CITY",
+			"fabric": "SCULK_PATCH_ANCIENT_CITY"
+		},
+		{
+			"forge": "SCULK_VEIN",
+			"fabric": "SCULK_VEIN"
+		},
+		{
+			"forge": "makeDripleaf(Direction arg0)",
+			"fabric": "createBigDripleafFeature(Direction direction)"
+		},
+		{
+			"forge": "makeDripleaf(Direction arg0)",
+			"fabric": "createBigDripleafFeature(Direction direction)"
+		},
+		{
+			"forge": "makeSmallDripleaf()",
+			"fabric": "createSmallDripleafFeature()"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		}
+	]
+}

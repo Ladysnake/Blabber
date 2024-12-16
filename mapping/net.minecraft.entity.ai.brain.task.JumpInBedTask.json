@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.JumpOnBed",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.JumpOnBed",
+			"fabric": "net.minecraft.entity.ai.brain.task.JumpInBedTask"
+		},
+		{
+			"forge": "MAX_TIME_TO_REACH_BED",
+			"fabric": "MAX_TICKS_OUT_OF_BED"
+		},
+		{
+			"forge": "MAX_TIME_TO_REACH_BED",
+			"fabric": "MAX_TICKS_OUT_OF_BED"
+		},
+		{
+			"forge": "MIN_JUMPS",
+			"fabric": "MIN_JUMP_TICKS"
+		},
+		{
+			"forge": "MAX_JUMPS",
+			"fabric": "JUMP_TIME_VARIANCE"
+		},
+		{
+			"forge": "COOLDOWN_BETWEEN_JUMPS",
+			"fabric": "TICKS_TO_NEXT_JUMP"
+		},
+		{
+			"forge": "speedModifier",
+			"fabric": "walkSpeed"
+		},
+		{
+			"forge": "targetBed",
+			"fabric": "bedPos"
+		},
+		{
+			"forge": "remainingTimeToReachBed",
+			"fabric": "ticksOutOfBedUntilStopped"
+		},
+		{
+			"forge": "remainingJumps",
+			"fabric": "jumpsRemaining"
+		},
+		{
+			"forge": "remainingCooldownUntilNextJump",
+			"fabric": "ticksToNextJump"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Mob arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Mob arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Mob arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, MobEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Mob arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, MobEntity arg1, long arg2)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Mob arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, MobEntity arg1, long arg2)"
+		},
+		{
+			"forge": "timedOut(long arg0)",
+			"fabric": "isTimeLimitExceeded(long arg0)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Mob arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, MobEntity arg1, long arg2)"
+		},
+		{
+			"forge": "startWalkingTowardsBed(Mob arg0, BlockPos arg1)",
+			"fabric": "setWalkTarget(MobEntity mob, BlockPos pos)"
+		},
+		{
+			"forge": "nearBed(ServerLevel arg0, Mob arg1)",
+			"fabric": "shouldStartJumping(ServerWorld world, MobEntity mob)"
+		},
+		{
+			"forge": "onOrOverBed(ServerLevel arg0, Mob arg1)",
+			"fabric": "isAboveBed(ServerWorld world, MobEntity mob)"
+		},
+		{
+			"forge": "onBedSurface(ServerLevel arg0, Mob arg1)",
+			"fabric": "isOnBed(ServerWorld world, MobEntity mob)"
+		},
+		{
+			"forge": "isBed(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "isBedAt(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "getNearestBed(Mob arg0)",
+			"fabric": "getNearestBed(MobEntity mob)"
+		},
+		{
+			"forge": "tiredOfWalking(ServerLevel arg0, Mob arg1)",
+			"fabric": "isBedGoneTooLong(ServerWorld world, MobEntity mob)"
+		},
+		{
+			"forge": "tiredOfJumping(ServerLevel arg0, Mob arg1)",
+			"fabric": "isDoneJumping(ServerWorld world, MobEntity mob)"
+		}
+	]
+}

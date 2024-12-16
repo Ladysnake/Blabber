@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.IcebergFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.IcebergFeature",
+			"fabric": "net.minecraft.world.gen.feature.IcebergFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<BlockStateConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SingleStateFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<BlockStateConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SingleStateFeatureConfig> arg0)"
+		},
+		{
+			"forge": "generateCutOut(RandomSource arg0, LevelAccessor arg1, int arg2, int arg3, BlockPos arg4, boolean arg5, int arg6, double arg7, int arg8)",
+			"fabric": "method_13428(Random random, WorldAccess world, int arg2, int arg3, BlockPos pos, boolean arg5, int arg6, double arg7, int arg8)"
+		},
+		{
+			"forge": "carve(int arg0, int arg1, BlockPos arg2, LevelAccessor arg3, boolean arg4, double arg5, BlockPos arg6, int arg7, int arg8)",
+			"fabric": "method_13415(int arg0, int y, BlockPos pos, WorldAccess world, boolean placeWater, double arg5, BlockPos arg6, int arg7, int arg8)"
+		},
+		{
+			"forge": "removeFloatingSnowLayer(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "clearSnowAbove(WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "generateIcebergBlock(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, boolean arg9, int arg10, double arg11, boolean arg12, BlockState arg13)",
+			"fabric": "placeAt(WorldAccess world, Random random, BlockPos pos, int height, int offsetX, int offsetY, int offsetZ, int arg7, int arg8, boolean arg9, int arg10, double randomSine, boolean placeSnow, BlockState state)"
+		},
+		{
+			"forge": "setIcebergBlock(BlockPos arg0, LevelAccessor arg1, RandomSource arg2, int arg3, int arg4, boolean arg5, boolean arg6, BlockState arg7)",
+			"fabric": "placeBlockOrSnow(BlockPos pos, WorldAccess world, Random random, int heightRemaining, int height, boolean lessSnow, boolean placeSnow, BlockState state)"
+		},
+		{
+			"forge": "getEllipseC(int arg0, int arg1, int arg2)",
+			"fabric": "decreaseValueNearTop(int y, int height, int value)"
+		},
+		{
+			"forge": "signedDistanceCircle(int arg0, int arg1, BlockPos arg2, int arg3, RandomSource arg4)",
+			"fabric": "method_13421(int x, int z, BlockPos pos, int arg3, Random random)"
+		},
+		{
+			"forge": "signedDistanceEllipse(int arg0, int arg1, BlockPos arg2, int arg3, int arg4, double arg5)",
+			"fabric": "getDistance(int x, int z, BlockPos pos, int divisor1, int divisor2, double randomSine)"
+		},
+		{
+			"forge": "heightDependentRadiusRound(RandomSource arg0, int arg1, int arg2, int arg3)",
+			"fabric": "method_13419(Random random, int y, int height, int factor)"
+		},
+		{
+			"forge": "heightDependentRadiusEllipse(int arg0, int arg1, int arg2)",
+			"fabric": "method_13417(int y, int height, int factor)"
+		},
+		{
+			"forge": "heightDependentRadiusSteep(RandomSource arg0, int arg1, int arg2, int arg3)",
+			"fabric": "method_13427(Random random, int y, int height, int factor)"
+		},
+		{
+			"forge": "isIcebergState(BlockState arg0)",
+			"fabric": "isSnowOrIce(BlockState state)"
+		},
+		{
+			"forge": "belowIsAir(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "isAirBelow(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "smooth(LevelAccessor arg0, BlockPos arg1, int arg2, int arg3, boolean arg4, int arg5)",
+			"fabric": "method_13418(WorldAccess world, BlockPos pos, int arg2, int height, boolean arg4, int arg5)"
+		}
+	]
+}

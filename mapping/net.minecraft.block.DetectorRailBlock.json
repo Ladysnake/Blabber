@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.level.block.DetectorRailBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.DetectorRailBlock",
+			"fabric": "net.minecraft.block.DetectorRailBlock"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "PRESSED_CHECK_PERIOD",
+			"fabric": "SCHEDULED_TICK_DELAY"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "getDirectSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStrongRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "checkPressed(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "updatePoweredStatus(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "updatePowerToConnected(Level arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "updateNearbyRails(World world, BlockPos pos, BlockState state, boolean unpowering)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "getShapeProperty()",
+			"fabric": "getShapeProperty()"
+		},
+		{
+			"forge": "hasAnalogOutputSignal(BlockState arg0)",
+			"fabric": "hasComparatorOutput(BlockState arg0)"
+		},
+		{
+			"forge": "getAnalogOutputSignal(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "getComparatorOutput(BlockState arg0, World arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getInteractingMinecartOfType(Level arg0, BlockPos arg1, Class<T> arg2, Predicate<Entity> arg3)",
+			"fabric": "getCarts(World world, BlockPos pos, Class<T> entityClass, Predicate<Entity> entityPredicate)"
+		},
+		{
+			"forge": "getSearchBB(BlockPos arg0)",
+			"fabric": "getCartDetectionBox(BlockPos pos)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

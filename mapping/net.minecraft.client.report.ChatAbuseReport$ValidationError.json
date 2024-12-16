@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.ChatReportBuilder$CannotBuildReason",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.ChatReportBuilder$CannotBuildReason",
+			"fabric": "net.minecraft.client.report.ChatAbuseReport$ValidationError"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "NO_REASON",
+			"fabric": "NO_REASON"
+		},
+		{
+			"forge": "NO_REPORTED_MESSAGES",
+			"fabric": "NO_REPORTED_MESSAGES"
+		},
+		{
+			"forge": "TOO_MANY_MESSAGES",
+			"fabric": "TOO_MANY_MESSAGES"
+		},
+		{
+			"forge": "COMMENTS_TOO_LONG",
+			"fabric": "COMMENTS_TOO_LONG"
+		},
+		{
+			"forge": "message()",
+			"fabric": "message()"
+		},
+		{
+			"forge": "message()",
+			"fabric": "message()"
+		}
+	]
+}

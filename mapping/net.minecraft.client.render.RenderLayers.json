@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.renderer.ItemBlockRenderTypes",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.ItemBlockRenderTypes",
+			"fabric": "net.minecraft.client.render.RenderLayers"
+		},
+		{
+			"forge": "TYPE_BY_BLOCK",
+			"fabric": "BLOCKS"
+		},
+		{
+			"forge": "TYPE_BY_BLOCK",
+			"fabric": "BLOCKS"
+		},
+		{
+			"forge": "TYPE_BY_FLUID",
+			"fabric": "FLUIDS"
+		},
+		{
+			"forge": "renderCutout",
+			"fabric": "fancyGraphicsOrBetter"
+		},
+		{
+			"forge": "getChunkRenderType(BlockState arg0)",
+			"fabric": "getBlockLayer(BlockState state)"
+		},
+		{
+			"forge": "getChunkRenderType(BlockState arg0)",
+			"fabric": "getBlockLayer(BlockState state)"
+		},
+		{
+			"forge": "getMovingBlockRenderType(BlockState arg0)",
+			"fabric": "getMovingBlockLayer(BlockState state)"
+		},
+		{
+			"forge": "getRenderType(BlockState arg0, boolean arg1)",
+			"fabric": "getEntityBlockLayer(BlockState state, boolean direct)"
+		},
+		{
+			"forge": "getRenderType(ItemStack arg0, boolean arg1)",
+			"fabric": "getItemLayer(ItemStack stack, boolean direct)"
+		},
+		{
+			"forge": "getRenderLayer(FluidState arg0)",
+			"fabric": "getFluidLayer(FluidState state)"
+		},
+		{
+			"forge": "setFancy(boolean arg0)",
+			"fabric": "setFancyGraphicsOrBetter(boolean fancyGraphicsOrBetter)"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.locale.Language",
+	"items": [
+		{
+			"forge": "net.minecraft.locale.Language",
+			"fabric": "net.minecraft.util.Language"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "UNSUPPORTED_FORMAT_PATTERN",
+			"fabric": "TOKEN_PATTERN"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT_LANGUAGE"
+		},
+		{
+			"forge": "instance",
+			"fabric": "instance"
+		},
+		{
+			"forge": "loadDefault()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "loadDefault()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "parseTranslations(BiConsumer<String, String> arg0, String arg1)",
+			"fabric": "load(BiConsumer<String, String> entryConsumer, String path)"
+		},
+		{
+			"forge": "loadFromJson(InputStream arg0, BiConsumer<String, String> arg1)",
+			"fabric": "load(InputStream inputStream, BiConsumer<String, String> entryConsumer)"
+		},
+		{
+			"forge": "getInstance()",
+			"fabric": "getInstance()"
+		},
+		{
+			"forge": "inject(Language arg0)",
+			"fabric": "setInstance(Language language)"
+		},
+		{
+			"forge": "getOrDefault(String arg0)",
+			"fabric": "get(String key)"
+		},
+		{
+			"forge": "getOrDefault(String arg0, String arg1)",
+			"fabric": "get(String key, String fallback)"
+		},
+		{
+			"forge": "has(String arg0)",
+			"fabric": "hasTranslation(String key)"
+		},
+		{
+			"forge": "isDefaultRightToLeft()",
+			"fabric": "isRightToLeft()"
+		},
+		{
+			"forge": "getVisualOrder(FormattedText arg0)",
+			"fabric": "reorder(StringVisitable text)"
+		},
+		{
+			"forge": "getVisualOrder(List<FormattedText> arg0)",
+			"fabric": "reorder(List<StringVisitable> texts)"
+		}
+	]
+}

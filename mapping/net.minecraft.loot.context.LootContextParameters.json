@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.parameters.LootContextParams",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.parameters.LootContextParams",
+			"fabric": "net.minecraft.loot.context.LootContextParameters"
+		},
+		{
+			"forge": "THIS_ENTITY",
+			"fabric": "THIS_ENTITY"
+		},
+		{
+			"forge": "THIS_ENTITY",
+			"fabric": "THIS_ENTITY"
+		},
+		{
+			"forge": "LAST_DAMAGE_PLAYER",
+			"fabric": "LAST_DAMAGE_PLAYER"
+		},
+		{
+			"forge": "DAMAGE_SOURCE",
+			"fabric": "DAMAGE_SOURCE"
+		},
+		{
+			"forge": "KILLER_ENTITY",
+			"fabric": "KILLER_ENTITY"
+		},
+		{
+			"forge": "DIRECT_KILLER_ENTITY",
+			"fabric": "DIRECT_KILLER_ENTITY"
+		},
+		{
+			"forge": "ORIGIN",
+			"fabric": "ORIGIN"
+		},
+		{
+			"forge": "BLOCK_STATE",
+			"fabric": "BLOCK_STATE"
+		},
+		{
+			"forge": "BLOCK_ENTITY",
+			"fabric": "BLOCK_ENTITY"
+		},
+		{
+			"forge": "TOOL",
+			"fabric": "TOOL"
+		},
+		{
+			"forge": "EXPLOSION_RADIUS",
+			"fabric": "EXPLOSION_RADIUS"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "register(String name)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "register(String name)"
+		}
+	]
+}

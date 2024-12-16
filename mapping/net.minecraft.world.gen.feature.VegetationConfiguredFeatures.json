@@ -1,0 +1,201 @@
+{
+	"title": "net.minecraft.data.worldgen.features.VegetationFeatures",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.features.VegetationFeatures",
+			"fabric": "net.minecraft.world.gen.feature.VegetationConfiguredFeatures"
+		},
+		{
+			"forge": "BAMBOO_NO_PODZOL",
+			"fabric": "BAMBOO_NO_PODZOL"
+		},
+		{
+			"forge": "BAMBOO_NO_PODZOL",
+			"fabric": "BAMBOO_NO_PODZOL"
+		},
+		{
+			"forge": "BAMBOO_SOME_PODZOL",
+			"fabric": "BAMBOO_SOME_PODZOL"
+		},
+		{
+			"forge": "VINES",
+			"fabric": "VINES"
+		},
+		{
+			"forge": "PATCH_BROWN_MUSHROOM",
+			"fabric": "PATCH_BROWN_MUSHROOM"
+		},
+		{
+			"forge": "PATCH_RED_MUSHROOM",
+			"fabric": "PATCH_RED_MUSHROOM"
+		},
+		{
+			"forge": "PATCH_SUNFLOWER",
+			"fabric": "PATCH_SUNFLOWER"
+		},
+		{
+			"forge": "PATCH_PUMPKIN",
+			"fabric": "PATCH_PUMPKIN"
+		},
+		{
+			"forge": "PATCH_BERRY_BUSH",
+			"fabric": "PATCH_BERRY_BUSH"
+		},
+		{
+			"forge": "PATCH_TAIGA_GRASS",
+			"fabric": "PATCH_TAIGA_GRASS"
+		},
+		{
+			"forge": "PATCH_GRASS",
+			"fabric": "PATCH_GRASS"
+		},
+		{
+			"forge": "PATCH_GRASS_JUNGLE",
+			"fabric": "PATCH_GRASS_JUNGLE"
+		},
+		{
+			"forge": "SINGLE_PIECE_OF_GRASS",
+			"fabric": "SINGLE_PIECE_OF_GRASS"
+		},
+		{
+			"forge": "PATCH_DEAD_BUSH",
+			"fabric": "PATCH_DEAD_BUSH"
+		},
+		{
+			"forge": "PATCH_MELON",
+			"fabric": "PATCH_MELON"
+		},
+		{
+			"forge": "PATCH_WATERLILY",
+			"fabric": "PATCH_WATERLILY"
+		},
+		{
+			"forge": "PATCH_TALL_GRASS",
+			"fabric": "PATCH_TALL_GRASS"
+		},
+		{
+			"forge": "PATCH_LARGE_FERN",
+			"fabric": "PATCH_LARGE_FERN"
+		},
+		{
+			"forge": "PATCH_CACTUS",
+			"fabric": "PATCH_CACTUS"
+		},
+		{
+			"forge": "PATCH_SUGAR_CANE",
+			"fabric": "PATCH_SUGAR_CANE"
+		},
+		{
+			"forge": "FLOWER_DEFAULT",
+			"fabric": "FLOWER_DEFAULT"
+		},
+		{
+			"forge": "FLOWER_FLOWER_FOREST",
+			"fabric": "FLOWER_FLOWER_FOREST"
+		},
+		{
+			"forge": "FLOWER_SWAMP",
+			"fabric": "FLOWER_SWAMP"
+		},
+		{
+			"forge": "FLOWER_PLAIN",
+			"fabric": "FLOWER_PLAIN"
+		},
+		{
+			"forge": "FLOWER_MEADOW",
+			"fabric": "FLOWER_MEADOW"
+		},
+		{
+			"forge": "FLOWER_CHERRY",
+			"fabric": "FLOWER_CHERRY"
+		},
+		{
+			"forge": "FOREST_FLOWERS",
+			"fabric": "FOREST_FLOWERS"
+		},
+		{
+			"forge": "DARK_FOREST_VEGETATION",
+			"fabric": "DARK_FOREST_VEGETATION"
+		},
+		{
+			"forge": "TREES_FLOWER_FOREST",
+			"fabric": "TREES_FLOWER_FOREST"
+		},
+		{
+			"forge": "MEADOW_TREES",
+			"fabric": "MEADOW_TREES"
+		},
+		{
+			"forge": "TREES_TAIGA",
+			"fabric": "TREES_TAIGA"
+		},
+		{
+			"forge": "TREES_GROVE",
+			"fabric": "TREES_GROVE"
+		},
+		{
+			"forge": "TREES_SAVANNA",
+			"fabric": "TREES_SAVANNA"
+		},
+		{
+			"forge": "BIRCH_TALL",
+			"fabric": "BIRCH_TALL"
+		},
+		{
+			"forge": "TREES_WINDSWEPT_HILLS",
+			"fabric": "TREES_WINDSWEPT_HILLS"
+		},
+		{
+			"forge": "TREES_WATER",
+			"fabric": "TREES_WATER"
+		},
+		{
+			"forge": "TREES_BIRCH_AND_OAK",
+			"fabric": "TREES_BIRCH_AND_OAK"
+		},
+		{
+			"forge": "TREES_PLAINS",
+			"fabric": "TREES_PLAINS"
+		},
+		{
+			"forge": "TREES_SPARSE_JUNGLE",
+			"fabric": "TREES_SPARSE_JUNGLE"
+		},
+		{
+			"forge": "TREES_OLD_GROWTH_SPRUCE_TAIGA",
+			"fabric": "TREES_OLD_GROWTH_SPRUCE_TAIGA"
+		},
+		{
+			"forge": "TREES_OLD_GROWTH_PINE_TAIGA",
+			"fabric": "TREES_OLD_GROWTH_PINE_TAIGA"
+		},
+		{
+			"forge": "TREES_JUNGLE",
+			"fabric": "TREES_JUNGLE"
+		},
+		{
+			"forge": "BAMBOO_VEGETATION",
+			"fabric": "BAMBOO_VEGETATION"
+		},
+		{
+			"forge": "MUSHROOM_ISLAND_VEGETATION",
+			"fabric": "MUSHROOM_ISLAND_VEGETATION"
+		},
+		{
+			"forge": "MANGROVE_VEGETATION",
+			"fabric": "MANGROVE_VEGETATION"
+		},
+		{
+			"forge": "grassPatch(BlockStateProvider arg0, int arg1)",
+			"fabric": "createRandomPatchFeatureConfig(BlockStateProvider block, int tries)"
+		},
+		{
+			"forge": "grassPatch(BlockStateProvider arg0, int arg1)",
+			"fabric": "createRandomPatchFeatureConfig(BlockStateProvider block, int tries)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer",
+			"fabric": "net.minecraft.world.gen.foliage.FoliagePlacer"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "TYPE_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "TYPE_CODEC"
+		},
+		{
+			"forge": "radius",
+			"fabric": "radius"
+		},
+		{
+			"forge": "offset",
+			"fabric": "offset"
+		},
+		{
+			"forge": "foliagePlacerParts(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> arg0)",
+			"fabric": "fillFoliagePlacerFields(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> instance)"
+		},
+		{
+			"forge": "foliagePlacerParts(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> arg0)",
+			"fabric": "fillFoliagePlacerFields(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> instance)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "createFoliage(LevelSimulatedReader arg0, FoliagePlacer$FoliageSetter arg1, RandomSource arg2, TreeConfiguration arg3, int arg4, FoliagePlacer$FoliageAttachment arg5, int arg6, int arg7)",
+			"fabric": "generate(TestableWorld world, FoliagePlacer$BlockPlacer placer, Random random, TreeFeatureConfig config, int trunkHeight, FoliagePlacer$TreeNode treeNode, int foliageHeight, int radius)"
+		},
+		{
+			"forge": "createFoliage(LevelSimulatedReader arg0, FoliagePlacer$FoliageSetter arg1, RandomSource arg2, TreeConfiguration arg3, int arg4, FoliagePlacer$FoliageAttachment arg5, int arg6, int arg7, int arg8)",
+			"fabric": "generate(TestableWorld world, FoliagePlacer$BlockPlacer placer, Random random, TreeFeatureConfig config, int trunkHeight, FoliagePlacer$TreeNode treeNode, int foliageHeight, int radius, int offset)"
+		},
+		{
+			"forge": "foliageHeight(RandomSource arg0, int arg1, TreeConfiguration arg2)",
+			"fabric": "getRandomHeight(Random random, int trunkHeight, TreeFeatureConfig config)"
+		},
+		{
+			"forge": "foliageRadius(RandomSource arg0, int arg1)",
+			"fabric": "getRandomRadius(Random random, int baseHeight)"
+		},
+		{
+			"forge": "offset(RandomSource arg0)",
+			"fabric": "getRandomOffset(Random random)"
+		},
+		{
+			"forge": "shouldSkipLocation(RandomSource arg0, int arg1, int arg2, int arg3, int arg4, boolean arg5)",
+			"fabric": "isInvalidForLeaves(Random random, int dx, int y, int dz, int radius, boolean giantTrunk)"
+		},
+		{
+			"forge": "shouldSkipLocationSigned(RandomSource arg0, int arg1, int arg2, int arg3, int arg4, boolean arg5)",
+			"fabric": "isPositionInvalid(Random random, int dx, int y, int dz, int radius, boolean giantTrunk)"
+		},
+		{
+			"forge": "placeLeavesRow(LevelSimulatedReader arg0, FoliagePlacer$FoliageSetter arg1, RandomSource arg2, TreeConfiguration arg3, BlockPos arg4, int arg5, int arg6, boolean arg7)",
+			"fabric": "generateSquare(TestableWorld world, FoliagePlacer$BlockPlacer placer, Random random, TreeFeatureConfig config, BlockPos centerPos, int radius, int y, boolean giantTrunk)"
+		},
+		{
+			"forge": "placeLeavesRowWithHangingLeavesBelow(LevelSimulatedReader arg0, FoliagePlacer$FoliageSetter arg1, RandomSource arg2, TreeConfiguration arg3, BlockPos arg4, int arg5, int arg6, boolean arg7, float arg8, float arg9)",
+			"fabric": "generateSquareWithHangingLeaves(TestableWorld world, FoliagePlacer$BlockPlacer placer, Random random, TreeFeatureConfig config, BlockPos centerPos, int radius, int y, boolean giantTrunk, float hangingLeavesChance, float hangingLeavesExtensionChance)"
+		},
+		{
+			"forge": "tryPlaceExtension(LevelSimulatedReader arg0, FoliagePlacer$FoliageSetter arg1, RandomSource arg2, TreeConfiguration arg3, float arg4, BlockPos arg5, BlockPos$MutableBlockPos arg6)",
+			"fabric": "placeFoliageBlock(TestableWorld world, FoliagePlacer$BlockPlacer placer, Random random, TreeFeatureConfig config, float chance, BlockPos origin, BlockPos$Mutable pos)"
+		},
+		{
+			"forge": "tryPlaceLeaf(LevelSimulatedReader arg0, FoliagePlacer$FoliageSetter arg1, RandomSource arg2, TreeConfiguration arg3, BlockPos arg4)",
+			"fabric": "placeFoliageBlock(TestableWorld world, FoliagePlacer$BlockPlacer placer, Random random, TreeFeatureConfig config, BlockPos pos)"
+		}
+	]
+}

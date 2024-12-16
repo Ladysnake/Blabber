@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.ExperienceBottleItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ExperienceBottleItem",
+			"fabric": "net.minecraft.item.ExperienceBottleItem"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack arg0)"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack arg0)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		}
+	]
+}

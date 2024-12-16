@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.entity.LevelEntityGetterAdapter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.entity.LevelEntityGetterAdapter",
+			"fabric": "net.minecraft.world.entity.SimpleEntityLookup"
+		},
+		{
+			"forge": "visibleEntities",
+			"fabric": "index"
+		},
+		{
+			"forge": "visibleEntities",
+			"fabric": "index"
+		},
+		{
+			"forge": "sectionStorage",
+			"fabric": "cache"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "get(UUID arg0)",
+			"fabric": "get(UUID arg0)"
+		},
+		{
+			"forge": "getAll()",
+			"fabric": "iterate()"
+		},
+		{
+			"forge": "get(EntityTypeTest<T, U> arg0, AbortableIterationConsumer<U> arg1)",
+			"fabric": "forEach(TypeFilter<T, U> arg0, LazyIterationConsumer<U> arg1)"
+		},
+		{
+			"forge": "get(AABB arg0, Consumer<T> arg1)",
+			"fabric": "forEachIntersects(Box arg0, Consumer<T> arg1)"
+		},
+		{
+			"forge": "get(EntityTypeTest<T, U> arg0, AABB arg1, AbortableIterationConsumer<U> arg2)",
+			"fabric": "forEachIntersects(TypeFilter<T, U> arg0, Box arg1, LazyIterationConsumer<U> arg2)"
+		}
+	]
+}

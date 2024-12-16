@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.CrashReportCategory",
+	"items": [
+		{
+			"forge": "net.minecraft.CrashReportCategory",
+			"fabric": "net.minecraft.util.crash.CrashReportSection"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "title",
+			"fabric": "title"
+		},
+		{
+			"forge": "entries",
+			"fabric": "elements"
+		},
+		{
+			"forge": "stackTrace",
+			"fabric": "stackTrace"
+		},
+		{
+			"forge": "formatLocation(LevelHeightAccessor arg0, double arg1, double arg2, double arg3)",
+			"fabric": "createPositionString(HeightLimitView world, double x, double y, double z)"
+		},
+		{
+			"forge": "formatLocation(LevelHeightAccessor arg0, double arg1, double arg2, double arg3)",
+			"fabric": "createPositionString(HeightLimitView world, double x, double y, double z)"
+		},
+		{
+			"forge": "formatLocation(LevelHeightAccessor arg0, BlockPos arg1)",
+			"fabric": "createPositionString(HeightLimitView world, BlockPos pos)"
+		},
+		{
+			"forge": "formatLocation(LevelHeightAccessor arg0, int arg1, int arg2, int arg3)",
+			"fabric": "createPositionString(HeightLimitView world, int x, int y, int z)"
+		},
+		{
+			"forge": "setDetail(String arg0, CrashReportDetail<String> arg1)",
+			"fabric": "add(String name, CrashCallable<String> callable)"
+		},
+		{
+			"forge": "setDetail(String arg0, Object arg1)",
+			"fabric": "add(String name, Object detail)"
+		},
+		{
+			"forge": "setDetailError(String arg0, Throwable arg1)",
+			"fabric": "add(String name, Throwable throwable)"
+		},
+		{
+			"forge": "fillInStackTrace(int arg0)",
+			"fabric": "initStackTrace(int ignoredCallCount)"
+		},
+		{
+			"forge": "validateStackTrace(StackTraceElement arg0, StackTraceElement arg1)",
+			"fabric": "shouldGenerateStackTrace(StackTraceElement prev, StackTraceElement next)"
+		},
+		{
+			"forge": "trimStacktrace(int arg0)",
+			"fabric": "trimStackTraceEnd(int callCount)"
+		},
+		{
+			"forge": "getDetails(StringBuilder arg0)",
+			"fabric": "addStackTrace(StringBuilder crashReportBuilder)"
+		},
+		{
+			"forge": "getStacktrace()",
+			"fabric": "getStackTrace()"
+		},
+		{
+			"forge": "populateBlockDetails(CrashReportCategory arg0, LevelHeightAccessor arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "addBlockInfo(CrashReportSection element, HeightLimitView world, BlockPos pos, BlockState state)"
+		}
+	]
+}

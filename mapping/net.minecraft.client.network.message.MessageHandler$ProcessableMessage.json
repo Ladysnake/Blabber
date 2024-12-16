@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.ChatListener$Message",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.ChatListener$Message",
+			"fabric": "net.minecraft.client.network.message.MessageHandler$ProcessableMessage"
+		},
+		{
+			"forge": "signature",
+			"fabric": "signature"
+		},
+		{
+			"forge": "signature",
+			"fabric": "signature"
+		},
+		{
+			"forge": "handler",
+			"fabric": "handler"
+		},
+		{
+			"forge": "accept()",
+			"fabric": "accept()"
+		},
+		{
+			"forge": "accept()",
+			"fabric": "accept()"
+		},
+		{
+			"forge": "signature()",
+			"fabric": "signature()"
+		},
+		{
+			"forge": "handler()",
+			"fabric": "handler()"
+		}
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.inventory.TransientCraftingContainer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.TransientCraftingContainer",
+			"fabric": "net.minecraft.inventory.CraftingInventory"
+		},
+		{
+			"forge": "items",
+			"fabric": "stacks"
+		},
+		{
+			"forge": "items",
+			"fabric": "stacks"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "menu",
+			"fabric": "handler"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getInputStacks()"
+		},
+		{
+			"forge": "fillStackedContents(StackedContents arg0)",
+			"fabric": "provideRecipeInputs(RecipeMatcher arg0)"
+		}
+	]
+}

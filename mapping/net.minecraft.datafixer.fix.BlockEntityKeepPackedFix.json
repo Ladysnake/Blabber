@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlockEntityKeepPacked",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlockEntityKeepPacked",
+			"fabric": "net.minecraft.datafixer.fix.BlockEntityKeepPackedFix"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "keepPacked(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "keepPacked(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> arg0)"
+		}
+	]
+}

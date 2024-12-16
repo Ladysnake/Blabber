@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.renderer.debug.RaidDebugRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.RaidDebugRenderer",
+			"fabric": "net.minecraft.client.render.debug.RaidCenterDebugRenderer"
+		},
+		{
+			"forge": "MAX_RENDER_DIST",
+			"fabric": "RANGE"
+		},
+		{
+			"forge": "MAX_RENDER_DIST",
+			"fabric": "RANGE"
+		},
+		{
+			"forge": "TEXT_SCALE",
+			"fabric": "DRAWN_STRING_SIZE"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "raidCenters",
+			"fabric": "raidCenters"
+		},
+		{
+			"forge": "setRaidCenters(Collection<BlockPos> arg0)",
+			"fabric": "setRaidCenters(Collection<BlockPos> raidCenters)"
+		},
+		{
+			"forge": "setRaidCenters(Collection<BlockPos> arg0)",
+			"fabric": "setRaidCenters(Collection<BlockPos> raidCenters)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, double arg2, double arg3, double arg4)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, double arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "highlightRaidCenter(PoseStack arg0, MultiBufferSource arg1, BlockPos arg2)",
+			"fabric": "drawRaidCenter(MatrixStack matrices, VertexConsumerProvider vertexConsumers, BlockPos pos)"
+		},
+		{
+			"forge": "renderTextOverBlock(PoseStack arg0, MultiBufferSource arg1, String arg2, BlockPos arg3, int arg4)",
+			"fabric": "drawString(MatrixStack matrices, VertexConsumerProvider vertexConsumers, String string, BlockPos pos, int color)"
+		},
+		{
+			"forge": "getCamera()",
+			"fabric": "getCamera()"
+		}
+	]
+}

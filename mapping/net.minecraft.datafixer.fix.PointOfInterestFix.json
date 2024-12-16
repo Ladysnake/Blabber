@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.AbstractPoiSectionFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.AbstractPoiSectionFix",
+			"fabric": "net.minecraft.datafixer.fix.PointOfInterestFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixSections(com.mojang.serialization.Dynamic<T> dynamic)"
+		},
+		{
+			"forge": "cap(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixSections(com.mojang.serialization.Dynamic<T> dynamic)"
+		},
+		{
+			"forge": "processSection(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixRecords(com.mojang.serialization.Dynamic<?> dynamic)"
+		},
+		{
+			"forge": "processSectionRecords(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixRecord(com.mojang.serialization.Dynamic<T> dynamic)"
+		},
+		{
+			"forge": "processRecords(Stream<com.mojang.serialization.Dynamic<T>> arg0)",
+			"fabric": "update(Stream<com.mojang.serialization.Dynamic<T>> dynamics)"
+		}
+	]
+}

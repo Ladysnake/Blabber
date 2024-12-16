@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.searchtree.IdSearchTree",
+	"items": [
+		{
+			"forge": "net.minecraft.client.searchtree.IdSearchTree",
+			"fabric": "net.minecraft.client.search.IdentifierSearchProvider"
+		},
+		{
+			"forge": "additionOrder",
+			"fabric": "lastIndexComparator"
+		},
+		{
+			"forge": "additionOrder",
+			"fabric": "lastIndexComparator"
+		},
+		{
+			"forge": "resourceLocationSearchTree",
+			"fabric": "idSearcher"
+		},
+		{
+			"forge": "search(String arg0)",
+			"fabric": "findAll(String arg0)"
+		},
+		{
+			"forge": "search(String arg0)",
+			"fabric": "findAll(String arg0)"
+		},
+		{
+			"forge": "searchPlainText(String arg0)",
+			"fabric": "search(String text)"
+		},
+		{
+			"forge": "searchResourceLocation(String arg0, String arg1)",
+			"fabric": "search(String namespace, String path)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlockRenameFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlockRenameFix",
+			"fabric": "net.minecraft.datafixer.fix.BlockNameFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "rename(String oldName)"
+		},
+		{
+			"forge": "fixBlock(String arg0)",
+			"fabric": "rename(String oldName)"
+		},
+		{
+			"forge": "create(com.mojang.datafixers.schemas.Schema arg0, String arg1, Function<String, String> arg2)",
+			"fabric": "create(com.mojang.datafixers.schemas.Schema outputSchema, String name, Function<String, String> rename)"
+		}
+	]
+}

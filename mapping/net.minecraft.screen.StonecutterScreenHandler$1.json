@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.inventory.StonecutterMenu$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.StonecutterMenu$1",
+			"fabric": "net.minecraft.screen.StonecutterScreenHandler$1"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		}
+	]
+}

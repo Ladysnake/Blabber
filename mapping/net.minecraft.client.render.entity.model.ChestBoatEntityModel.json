@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.model.ChestBoatModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.ChestBoatModel",
+			"fabric": "net.minecraft.client.render.entity.model.ChestBoatEntityModel"
+		},
+		{
+			"forge": "CHEST_BOTTOM",
+			"fabric": "CHEST_BOTTOM"
+		},
+		{
+			"forge": "CHEST_BOTTOM",
+			"fabric": "CHEST_BOTTOM"
+		},
+		{
+			"forge": "CHEST_LID",
+			"fabric": "CHEST_LID"
+		},
+		{
+			"forge": "CHEST_LOCK",
+			"fabric": "CHEST_LOCK"
+		},
+		{
+			"forge": "createPartsBuilder(ModelPart arg0)",
+			"fabric": "getParts(ModelPart arg0)"
+		},
+		{
+			"forge": "createPartsBuilder(ModelPart arg0)",
+			"fabric": "getParts(ModelPart arg0)"
+		},
+		{
+			"forge": "createBodyModel()",
+			"fabric": "getTexturedModelData()"
+		}
+	]
+}

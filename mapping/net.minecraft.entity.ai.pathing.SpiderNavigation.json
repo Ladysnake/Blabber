@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.ai.navigation.WallClimberNavigation",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.navigation.WallClimberNavigation",
+			"fabric": "net.minecraft.entity.ai.pathing.SpiderNavigation"
+		},
+		{
+			"forge": "pathToPosition",
+			"fabric": "targetPos"
+		},
+		{
+			"forge": "pathToPosition",
+			"fabric": "targetPos"
+		},
+		{
+			"forge": "createPath(BlockPos arg0, int arg1)",
+			"fabric": "findPathTo(BlockPos arg0, int arg1)"
+		},
+		{
+			"forge": "createPath(BlockPos arg0, int arg1)",
+			"fabric": "findPathTo(BlockPos arg0, int arg1)"
+		},
+		{
+			"forge": "createPath(Entity arg0, int arg1)",
+			"fabric": "findPathTo(Entity arg0, int arg1)"
+		},
+		{
+			"forge": "moveTo(Entity arg0, double arg1)",
+			"fabric": "startMovingTo(Entity arg0, double arg1)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

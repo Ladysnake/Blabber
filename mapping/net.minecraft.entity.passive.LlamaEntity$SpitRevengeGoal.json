@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.Llama$LlamaHurtByTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.Llama$LlamaHurtByTargetGoal",
+			"fabric": "net.minecraft.entity.passive.LlamaEntity$SpitRevengeGoal"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		}
+	]
+}

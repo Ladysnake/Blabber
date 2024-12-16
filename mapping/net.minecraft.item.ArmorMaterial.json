@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.item.ArmorMaterial",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ArmorMaterial",
+			"fabric": "net.minecraft.item.ArmorMaterial"
+		},
+		{
+			"forge": "getDurabilityForType(ArmorItem$Type arg0)",
+			"fabric": "getDurability(ArmorItem$Type type)"
+		},
+		{
+			"forge": "getDurabilityForType(ArmorItem$Type arg0)",
+			"fabric": "getDurability(ArmorItem$Type type)"
+		},
+		{
+			"forge": "getDefenseForType(ArmorItem$Type arg0)",
+			"fabric": "getProtection(ArmorItem$Type type)"
+		},
+		{
+			"forge": "getEnchantmentValue()",
+			"fabric": "getEnchantability()"
+		},
+		{
+			"forge": "getEquipSound()",
+			"fabric": "getEquipSound()"
+		},
+		{
+			"forge": "getRepairIngredient()",
+			"fabric": "getRepairIngredient()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getToughness()",
+			"fabric": "getToughness()"
+		},
+		{
+			"forge": "getKnockbackResistance()",
+			"fabric": "getKnockbackResistance()"
+		}
+	]
+}

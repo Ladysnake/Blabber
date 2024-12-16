@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.world.level.block.LeverBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.LeverBlock",
+			"fabric": "net.minecraft.block.LeverBlock"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "DEPTH",
+			"fabric": "field_31184"
+		},
+		{
+			"forge": "WIDTH",
+			"fabric": "field_31185"
+		},
+		{
+			"forge": "HEIGHT",
+			"fabric": "field_31186"
+		},
+		{
+			"forge": "NORTH_AABB",
+			"fabric": "NORTH_WALL_SHAPE"
+		},
+		{
+			"forge": "SOUTH_AABB",
+			"fabric": "SOUTH_WALL_SHAPE"
+		},
+		{
+			"forge": "WEST_AABB",
+			"fabric": "WEST_WALL_SHAPE"
+		},
+		{
+			"forge": "EAST_AABB",
+			"fabric": "EAST_WALL_SHAPE"
+		},
+		{
+			"forge": "UP_AABB_Z",
+			"fabric": "FLOOR_Z_AXIS_SHAPE"
+		},
+		{
+			"forge": "UP_AABB_X",
+			"fabric": "FLOOR_X_AXIS_SHAPE"
+		},
+		{
+			"forge": "DOWN_AABB_Z",
+			"fabric": "CEILING_Z_AXIS_SHAPE"
+		},
+		{
+			"forge": "DOWN_AABB_X",
+			"fabric": "CEILING_X_AXIS_SHAPE"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "pull(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "togglePower(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "makeParticle(BlockState arg0, LevelAccessor arg1, BlockPos arg2, float arg3)",
+			"fabric": "spawnParticles(BlockState state, WorldAccess world, BlockPos pos, float alpha)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "onRemove(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onStateReplaced(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "getDirectSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStrongRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "updateNeighbours(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "updateNeighbors(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

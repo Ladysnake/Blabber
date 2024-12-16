@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.data.worldgen.features.NetherFeatures",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.features.NetherFeatures",
+			"fabric": "net.minecraft.world.gen.feature.NetherConfiguredFeatures"
+		},
+		{
+			"forge": "DELTA",
+			"fabric": "DELTA"
+		},
+		{
+			"forge": "DELTA",
+			"fabric": "DELTA"
+		},
+		{
+			"forge": "SMALL_BASALT_COLUMNS",
+			"fabric": "SMALL_BASALT_COLUMNS"
+		},
+		{
+			"forge": "LARGE_BASALT_COLUMNS",
+			"fabric": "SMALL_BASALT_COLUMNS_TEMP"
+		},
+		{
+			"forge": "BASALT_BLOBS",
+			"fabric": "BASALT_BLOBS"
+		},
+		{
+			"forge": "BLACKSTONE_BLOBS",
+			"fabric": "BLACKSTONE_BLOBS"
+		},
+		{
+			"forge": "GLOWSTONE_EXTRA",
+			"fabric": "GLOWSTONE_EXTRA"
+		},
+		{
+			"forge": "CRIMSON_FOREST_VEGETATION",
+			"fabric": "CRIMSON_FOREST_VEGETATION"
+		},
+		{
+			"forge": "CRIMSON_FOREST_VEGETATION_BONEMEAL",
+			"fabric": "CRIMSON_FOREST_VEGETATION_BONEMEAL"
+		},
+		{
+			"forge": "WARPED_FOREST_VEGETION",
+			"fabric": "WARPED_FOREST_VEGETATION"
+		},
+		{
+			"forge": "WARPED_FOREST_VEGETATION_BONEMEAL",
+			"fabric": "WARPED_FOREST_VEGETATION_BONEMEAL"
+		},
+		{
+			"forge": "NETHER_SPROUTS",
+			"fabric": "NETHER_SPROUTS"
+		},
+		{
+			"forge": "NETHER_SPROUTS_BONEMEAL",
+			"fabric": "NETHER_SPROUTS_BONEMEAL"
+		},
+		{
+			"forge": "TWISTING_VINES",
+			"fabric": "TWISTING_VINES"
+		},
+		{
+			"forge": "TWISTING_VINES_BONEMEAL",
+			"fabric": "TWISTING_VINES_BONEMEAL"
+		},
+		{
+			"forge": "WEEPING_VINES",
+			"fabric": "WEEPING_VINES"
+		},
+		{
+			"forge": "PATCH_CRIMSON_ROOTS",
+			"fabric": "PATCH_CRIMSON_ROOTS"
+		},
+		{
+			"forge": "BASALT_PILLAR",
+			"fabric": "BASALT_PILLAR"
+		},
+		{
+			"forge": "SPRING_LAVA_NETHER",
+			"fabric": "SPRING_LAVA_NETHER"
+		},
+		{
+			"forge": "SPRING_NETHER_CLOSED",
+			"fabric": "SPRING_NETHER_CLOSED"
+		},
+		{
+			"forge": "SPRING_NETHER_OPEN",
+			"fabric": "SPRING_NETHER_OPEN"
+		},
+		{
+			"forge": "PATCH_FIRE",
+			"fabric": "PATCH_FIRE"
+		},
+		{
+			"forge": "PATCH_SOUL_FIRE",
+			"fabric": "PATCH_SOUL_FIRE"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		}
+	]
+}

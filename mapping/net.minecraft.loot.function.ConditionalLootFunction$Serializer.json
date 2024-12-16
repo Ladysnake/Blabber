@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$Serializer",
+			"fabric": "net.minecraft.loot.function.ConditionalLootFunction$Serializer"
+		},
+		{
+			"forge": "serialize(com.google.gson.JsonObject arg0, T arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "toJson(com.google.gson.JsonObject arg0, T arg1, com.google.gson.JsonSerializationContext arg2)"
+		},
+		{
+			"forge": "serialize(com.google.gson.JsonObject arg0, T arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "toJson(com.google.gson.JsonObject arg0, T arg1, com.google.gson.JsonSerializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1, LootItemCondition[] arg2)",
+			"fabric": "fromJson(com.google.gson.JsonObject json, com.google.gson.JsonDeserializationContext context, LootCondition[] conditions)"
+		}
+	]
+}

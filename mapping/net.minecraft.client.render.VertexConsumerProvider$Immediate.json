@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.renderer.MultiBufferSource$BufferSource",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.MultiBufferSource$BufferSource",
+			"fabric": "net.minecraft.client.render.VertexConsumerProvider$Immediate"
+		},
+		{
+			"forge": "builder",
+			"fabric": "fallbackBuffer"
+		},
+		{
+			"forge": "builder",
+			"fabric": "fallbackBuffer"
+		},
+		{
+			"forge": "fixedBuffers",
+			"fabric": "layerBuffers"
+		},
+		{
+			"forge": "lastState",
+			"fabric": "currentLayer"
+		},
+		{
+			"forge": "startedBuffers",
+			"fabric": "activeConsumers"
+		},
+		{
+			"forge": "getBuffer(RenderType arg0)",
+			"fabric": "getBuffer(RenderLayer arg0)"
+		},
+		{
+			"forge": "getBuffer(RenderType arg0)",
+			"fabric": "getBuffer(RenderLayer arg0)"
+		},
+		{
+			"forge": "getBuilderRaw(RenderType arg0)",
+			"fabric": "getBufferInternal(RenderLayer layer)"
+		},
+		{
+			"forge": "endLastBatch()",
+			"fabric": "drawCurrentLayer()"
+		},
+		{
+			"forge": "endBatch()",
+			"fabric": "draw()"
+		},
+		{
+			"forge": "endBatch(RenderType arg0)",
+			"fabric": "draw(RenderLayer layer)"
+		}
+	]
+}

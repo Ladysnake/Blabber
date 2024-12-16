@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.gui.layouts.Layout",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.layouts.Layout",
+			"fabric": "net.minecraft.client.gui.widget.LayoutWidget"
+		},
+		{
+			"forge": "visitChildren(Consumer<LayoutElement> arg0)",
+			"fabric": "forEachElement(Consumer<Widget> consumer)"
+		},
+		{
+			"forge": "visitChildren(Consumer<LayoutElement> arg0)",
+			"fabric": "forEachElement(Consumer<Widget> consumer)"
+		},
+		{
+			"forge": "visitWidgets(Consumer<AbstractWidget> arg0)",
+			"fabric": "forEachChild(Consumer<ClickableWidget> arg0)"
+		},
+		{
+			"forge": "arrangeElements()",
+			"fabric": "refreshPositions()"
+		}
+	]
+}

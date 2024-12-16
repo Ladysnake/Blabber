@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.level.material.WaterFluid",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.material.WaterFluid",
+			"fabric": "net.minecraft.fluid.WaterFluid"
+		},
+		{
+			"forge": "getFlowing()",
+			"fabric": "getFlowing()"
+		},
+		{
+			"forge": "getFlowing()",
+			"fabric": "getFlowing()"
+		},
+		{
+			"forge": "getSource()",
+			"fabric": "getStill()"
+		},
+		{
+			"forge": "getBucket()",
+			"fabric": "getBucketItem()"
+		},
+		{
+			"forge": "animateTick(Level arg0, BlockPos arg1, FluidState arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(World arg0, BlockPos arg1, FluidState arg2, Random arg3)"
+		},
+		{
+			"forge": "getDripParticle()",
+			"fabric": "getParticle()"
+		},
+		{
+			"forge": "canConvertToSource(Level arg0)",
+			"fabric": "isInfinite(World arg0)"
+		},
+		{
+			"forge": "beforeDestroyingBlock(LevelAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "beforeBreakingBlock(WorldAccess arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "getSlopeFindDistance(LevelReader arg0)",
+			"fabric": "getFlowSpeed(WorldView arg0)"
+		},
+		{
+			"forge": "createLegacyBlock(FluidState arg0)",
+			"fabric": "toBlockState(FluidState arg0)"
+		},
+		{
+			"forge": "isSame(Fluid arg0)",
+			"fabric": "matchesType(Fluid arg0)"
+		},
+		{
+			"forge": "getDropOff(LevelReader arg0)",
+			"fabric": "getLevelDecreasePerBlock(WorldView arg0)"
+		},
+		{
+			"forge": "getTickDelay(LevelReader arg0)",
+			"fabric": "getTickRate(WorldView arg0)"
+		},
+		{
+			"forge": "canBeReplacedWith(FluidState arg0, BlockGetter arg1, BlockPos arg2, Fluid arg3, Direction arg4)",
+			"fabric": "canBeReplacedWith(FluidState arg0, BlockView arg1, BlockPos arg2, Fluid arg3, Direction arg4)"
+		},
+		{
+			"forge": "getExplosionResistance()",
+			"fabric": "getBlastResistance()"
+		},
+		{
+			"forge": "getPickupSound()",
+			"fabric": "getBucketFillSound()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.data.PackOutput$Target",
+	"items": [
+		{
+			"forge": "net.minecraft.data.PackOutput$Target",
+			"fabric": "net.minecraft.data.DataOutput$OutputType"
+		},
+		{
+			"forge": "DATA_PACK",
+			"fabric": "DATA_PACK"
+		},
+		{
+			"forge": "DATA_PACK",
+			"fabric": "DATA_PACK"
+		},
+		{
+			"forge": "RESOURCE_PACK",
+			"fabric": "RESOURCE_PACK"
+		},
+		{
+			"forge": "REPORTS",
+			"fabric": "REPORTS"
+		},
+		{
+			"forge": "directory",
+			"fabric": "path"
+		},
+		{
+			"forge": "directory",
+			"fabric": "path"
+		}
+	]
+}

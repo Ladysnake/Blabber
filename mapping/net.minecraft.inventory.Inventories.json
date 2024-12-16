@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.ContainerHelper",
+	"items": [
+		{
+			"forge": "net.minecraft.world.ContainerHelper",
+			"fabric": "net.minecraft.inventory.Inventories"
+		},
+		{
+			"forge": "removeItem(List<ItemStack> arg0, int arg1, int arg2)",
+			"fabric": "splitStack(List<ItemStack> stacks, int slot, int amount)"
+		},
+		{
+			"forge": "removeItem(List<ItemStack> arg0, int arg1, int arg2)",
+			"fabric": "splitStack(List<ItemStack> stacks, int slot, int amount)"
+		},
+		{
+			"forge": "takeItem(List<ItemStack> arg0, int arg1)",
+			"fabric": "removeStack(List<ItemStack> stacks, int slot)"
+		},
+		{
+			"forge": "saveAllItems(CompoundTag arg0, NonNullList<ItemStack> arg1)",
+			"fabric": "writeNbt(NbtCompound nbt, DefaultedList<ItemStack> stacks)"
+		},
+		{
+			"forge": "saveAllItems(CompoundTag arg0, NonNullList<ItemStack> arg1, boolean arg2)",
+			"fabric": "writeNbt(NbtCompound nbt, DefaultedList<ItemStack> stacks, boolean setIfEmpty)"
+		},
+		{
+			"forge": "loadAllItems(CompoundTag arg0, NonNullList<ItemStack> arg1)",
+			"fabric": "readNbt(NbtCompound nbt, DefaultedList<ItemStack> stacks)"
+		},
+		{
+			"forge": "clearOrCountMatchingItems(Container arg0, Predicate<ItemStack> arg1, int arg2, boolean arg3)",
+			"fabric": "remove(Inventory inventory, Predicate<ItemStack> shouldRemove, int maxCount, boolean dryRun)"
+		},
+		{
+			"forge": "clearOrCountMatchingItems(ItemStack arg0, Predicate<ItemStack> arg1, int arg2, boolean arg3)",
+			"fabric": "remove(ItemStack stack, Predicate<ItemStack> shouldRemove, int maxCount, boolean dryRun)"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.util.FrameTimer",
+	"items": [
+		{
+			"forge": "net.minecraft.util.FrameTimer",
+			"fabric": "net.minecraft.util.MetricsData"
+		},
+		{
+			"forge": "LOGGING_LENGTH",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "LOGGING_LENGTH",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "loggedTimes",
+			"fabric": "samples"
+		},
+		{
+			"forge": "logStart",
+			"fabric": "startIndex"
+		},
+		{
+			"forge": "logLength",
+			"fabric": "sampleCount"
+		},
+		{
+			"forge": "logEnd",
+			"fabric": "writeIndex"
+		},
+		{
+			"forge": "logFrameDuration(long arg0)",
+			"fabric": "pushSample(long time)"
+		},
+		{
+			"forge": "logFrameDuration(long arg0)",
+			"fabric": "pushSample(long time)"
+		},
+		{
+			"forge": "getAverageDuration(int arg0)",
+			"fabric": "average(int offset)"
+		},
+		{
+			"forge": "scaleAverageDurationTo(int arg0, int arg1)",
+			"fabric": "method_34913(int offset, int arg1)"
+		},
+		{
+			"forge": "scaleSampleTo(long arg0, int arg1, int arg2)",
+			"fabric": "scaleSample(long sample, int destScale, int srcScale)"
+		},
+		{
+			"forge": "getLogStart()",
+			"fabric": "getStartIndex()"
+		},
+		{
+			"forge": "getLogEnd()",
+			"fabric": "getCurrentIndex()"
+		},
+		{
+			"forge": "wrapIndex(int arg0)",
+			"fabric": "wrapIndex(int index)"
+		},
+		{
+			"forge": "getLog()",
+			"fabric": "getSamples()"
+		}
+	]
+}

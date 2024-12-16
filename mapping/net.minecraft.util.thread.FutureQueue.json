@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.util.TaskChainer",
+	"items": [
+		{
+			"forge": "net.minecraft.util.TaskChainer",
+			"fabric": "net.minecraft.util.thread.FutureQueue"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "immediate(Executor arg0)",
+			"fabric": "immediate(Executor executor)"
+		},
+		{
+			"forge": "immediate(Executor arg0)",
+			"fabric": "immediate(Executor executor)"
+		},
+		{
+			"forge": "append(TaskChainer$DelayedTask arg0)",
+			"fabric": "append(FutureQueue$FutureSupplier future)"
+		}
+	]
+}

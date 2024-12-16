@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.SignEditScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.SignEditScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.SignEditScreen"
+		},
+		{
+			"forge": "MAGIC_SCALE_NUMBER",
+			"fabric": "BACKGROUND_SCALE"
+		},
+		{
+			"forge": "MAGIC_SCALE_NUMBER",
+			"fabric": "BACKGROUND_SCALE"
+		},
+		{
+			"forge": "MAGIC_TEXT_SCALE",
+			"fabric": "TEXT_SCALE_MULTIPLIER"
+		},
+		{
+			"forge": "TEXT_SCALE",
+			"fabric": "TEXT_SCALE"
+		},
+		{
+			"forge": "signModel",
+			"fabric": "model"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "offsetSign(GuiGraphics arg0, BlockState arg1)",
+			"fabric": "translateForRender(DrawContext arg0, BlockState arg1)"
+		},
+		{
+			"forge": "renderSignBackground(GuiGraphics arg0, BlockState arg1)",
+			"fabric": "renderSignBackground(DrawContext arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getSignTextScale()",
+			"fabric": "getTextScale()"
+		}
+	]
+}

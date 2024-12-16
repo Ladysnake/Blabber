@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.data.tags.TagsProvider$1CombinedData",
+	"items": [
+		{
+			"forge": "net.minecraft.data.tags.TagsProvider$1CombinedData",
+			"fabric": "net.minecraft.data.server.tag.TagProvider$RegistryInfo"
+		},
+		{
+			"forge": "contents",
+			"fabric": "contents"
+		},
+		{
+			"forge": "contents",
+			"fabric": "contents"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "contents()",
+			"fabric": "contents()"
+		},
+		{
+			"forge": "contents()",
+			"fabric": "contents()"
+		},
+		{
+			"forge": "parent()",
+			"fabric": "parent()"
+		}
+	]
+}

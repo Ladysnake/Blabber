@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.level.EntityGetter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.EntityGetter",
+			"fabric": "net.minecraft.world.EntityView"
+		},
+		{
+			"forge": "getEntities(Entity arg0, AABB arg1, Predicate<? super Entity> arg2)",
+			"fabric": "getOtherEntities(Entity except, Box box, Predicate<? super Entity> predicate)"
+		},
+		{
+			"forge": "getEntities(Entity arg0, AABB arg1, Predicate<? super Entity> arg2)",
+			"fabric": "getOtherEntities(Entity except, Box box, Predicate<? super Entity> predicate)"
+		},
+		{
+			"forge": "getEntities(EntityTypeTest<Entity, T> arg0, AABB arg1, Predicate<? super T> arg2)",
+			"fabric": "getEntitiesByType(TypeFilter<Entity, T> filter, Box box, Predicate<? super T> predicate)"
+		},
+		{
+			"forge": "getEntitiesOfClass(Class<T> arg0, AABB arg1, Predicate<? super T> arg2)",
+			"fabric": "getEntitiesByClass(Class<T> entityClass, Box box, Predicate<? super T> predicate)"
+		},
+		{
+			"forge": "players()",
+			"fabric": "getPlayers()"
+		},
+		{
+			"forge": "getEntities(Entity arg0, AABB arg1)",
+			"fabric": "getOtherEntities(Entity except, Box box)"
+		},
+		{
+			"forge": "isUnobstructed(Entity arg0, VoxelShape arg1)",
+			"fabric": "doesNotIntersectEntities(Entity except, VoxelShape shape)"
+		},
+		{
+			"forge": "getEntitiesOfClass(Class<T> arg0, AABB arg1)",
+			"fabric": "getNonSpectatingEntities(Class<T> entityClass, Box box)"
+		},
+		{
+			"forge": "getEntityCollisions(Entity arg0, AABB arg1)",
+			"fabric": "getEntityCollisions(Entity entity, Box box)"
+		},
+		{
+			"forge": "getNearestPlayer(double arg0, double arg1, double arg2, double arg3, Predicate<Entity> arg4)",
+			"fabric": "getClosestPlayer(double x, double y, double z, double maxDistance, Predicate<Entity> targetPredicate)"
+		},
+		{
+			"forge": "getNearestPlayer(Entity arg0, double arg1)",
+			"fabric": "getClosestPlayer(Entity entity, double maxDistance)"
+		},
+		{
+			"forge": "getNearestPlayer(double arg0, double arg1, double arg2, double arg3, boolean arg4)",
+			"fabric": "getClosestPlayer(double x, double y, double z, double maxDistance, boolean ignoreCreative)"
+		},
+		{
+			"forge": "hasNearbyAlivePlayer(double arg0, double arg1, double arg2, double arg3)",
+			"fabric": "isPlayerInRange(double x, double y, double z, double range)"
+		},
+		{
+			"forge": "getNearestPlayer(TargetingConditions arg0, LivingEntity arg1)",
+			"fabric": "getClosestPlayer(TargetPredicate targetPredicate, LivingEntity entity)"
+		},
+		{
+			"forge": "getNearestPlayer(TargetingConditions arg0, LivingEntity arg1, double arg2, double arg3, double arg4)",
+			"fabric": "getClosestPlayer(TargetPredicate targetPredicate, LivingEntity entity, double x, double y, double z)"
+		},
+		{
+			"forge": "getNearestPlayer(TargetingConditions arg0, double arg1, double arg2, double arg3)",
+			"fabric": "getClosestPlayer(TargetPredicate targetPredicate, double x, double y, double z)"
+		},
+		{
+			"forge": "getNearestEntity(Class<? extends T> arg0, TargetingConditions arg1, LivingEntity arg2, double arg3, double arg4, double arg5, AABB arg6)",
+			"fabric": "getClosestEntity(Class<? extends T> entityClass, TargetPredicate targetPredicate, LivingEntity entity, double x, double y, double z, Box box)"
+		},
+		{
+			"forge": "getNearestEntity(List<? extends T> arg0, TargetingConditions arg1, LivingEntity arg2, double arg3, double arg4, double arg5)",
+			"fabric": "getClosestEntity(List<? extends T> entityList, TargetPredicate targetPredicate, LivingEntity entity, double x, double y, double z)"
+		},
+		{
+			"forge": "getNearbyPlayers(TargetingConditions arg0, LivingEntity arg1, AABB arg2)",
+			"fabric": "getPlayers(TargetPredicate targetPredicate, LivingEntity entity, Box box)"
+		},
+		{
+			"forge": "getNearbyEntities(Class<T> arg0, TargetingConditions arg1, LivingEntity arg2, AABB arg3)",
+			"fabric": "getTargets(Class<T> entityClass, TargetPredicate targetPredicate, LivingEntity targetingEntity, Box box)"
+		},
+		{
+			"forge": "getPlayerByUUID(UUID arg0)",
+			"fabric": "getPlayerByUuid(UUID uuid)"
+		}
+	]
+}

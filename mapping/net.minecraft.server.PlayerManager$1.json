@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.players.PlayerList$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.PlayerList$1",
+			"fabric": "net.minecraft.server.PlayerManager$1"
+		},
+		{
+			"forge": "onBorderSizeSet(WorldBorder arg0, double arg1)",
+			"fabric": "onSizeChange(WorldBorder arg0, double arg1)"
+		},
+		{
+			"forge": "onBorderSizeSet(WorldBorder arg0, double arg1)",
+			"fabric": "onSizeChange(WorldBorder arg0, double arg1)"
+		},
+		{
+			"forge": "onBorderSizeLerping(WorldBorder arg0, double arg1, double arg2, long arg3)",
+			"fabric": "onInterpolateSize(WorldBorder arg0, double arg1, double arg2, long arg3)"
+		},
+		{
+			"forge": "onBorderCenterSet(WorldBorder arg0, double arg1, double arg2)",
+			"fabric": "onCenterChanged(WorldBorder arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "onBorderSetWarningTime(WorldBorder arg0, int arg1)",
+			"fabric": "onWarningTimeChanged(WorldBorder arg0, int arg1)"
+		},
+		{
+			"forge": "onBorderSetWarningBlocks(WorldBorder arg0, int arg1)",
+			"fabric": "onWarningBlocksChanged(WorldBorder arg0, int arg1)"
+		},
+		{
+			"forge": "onBorderSetDamagePerBlock(WorldBorder arg0, double arg1)",
+			"fabric": "onDamagePerBlockChanged(WorldBorder arg0, double arg1)"
+		},
+		{
+			"forge": "onBorderSetDamageSafeZOne(WorldBorder arg0, double arg1)",
+			"fabric": "onSafeZoneChanged(WorldBorder arg0, double arg1)"
+		}
+	]
+}

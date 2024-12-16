@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.renderer.debug.GameEventListenerRenderer$TrackedGameEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.GameEventListenerRenderer$TrackedGameEvent",
+			"fabric": "net.minecraft.client.render.debug.GameEventDebugRenderer$Entry"
+		},
+		{
+			"forge": "timeStamp",
+			"fabric": "startingMs"
+		},
+		{
+			"forge": "timeStamp",
+			"fabric": "startingMs"
+		},
+		{
+			"forge": "gameEvent",
+			"fabric": "event"
+		},
+		{
+			"forge": "position",
+			"fabric": "pos"
+		},
+		{
+			"forge": "isExpired()",
+			"fabric": "hasExpired()"
+		},
+		{
+			"forge": "isExpired()",
+			"fabric": "hasExpired()"
+		},
+		{
+			"forge": "timeStamp()",
+			"fabric": "startingMs()"
+		},
+		{
+			"forge": "gameEvent()",
+			"fabric": "event()"
+		},
+		{
+			"forge": "position()",
+			"fabric": "pos()"
+		}
+	]
+}

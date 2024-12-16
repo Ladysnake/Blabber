@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.animal.AbstractSchoolingFish",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.AbstractSchoolingFish",
+			"fabric": "net.minecraft.entity.passive.SchoolingFishEntity"
+		},
+		{
+			"forge": "leader",
+			"fabric": "leader"
+		},
+		{
+			"forge": "leader",
+			"fabric": "leader"
+		},
+		{
+			"forge": "schoolSize",
+			"fabric": "groupSize"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "getMaxSpawnClusterSize()",
+			"fabric": "getLimitPerChunk()"
+		},
+		{
+			"forge": "getMaxSchoolSize()",
+			"fabric": "getMaxGroupSize()"
+		},
+		{
+			"forge": "canRandomSwim()",
+			"fabric": "hasSelfControl()"
+		},
+		{
+			"forge": "isFollower()",
+			"fabric": "hasLeader()"
+		},
+		{
+			"forge": "startFollowing(AbstractSchoolingFish arg0)",
+			"fabric": "joinGroupOf(SchoolingFishEntity groupLeader)"
+		},
+		{
+			"forge": "stopFollowing()",
+			"fabric": "leaveGroup()"
+		},
+		{
+			"forge": "addFollower()",
+			"fabric": "increaseGroupSize()"
+		},
+		{
+			"forge": "removeFollower()",
+			"fabric": "decreaseGroupSize()"
+		},
+		{
+			"forge": "canBeFollowed()",
+			"fabric": "canHaveMoreFishInGroup()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "hasFollowers()",
+			"fabric": "hasOtherFishInGroup()"
+		},
+		{
+			"forge": "inRangeOfLeader()",
+			"fabric": "isCloseEnoughToLeader()"
+		},
+		{
+			"forge": "pathToLeader()",
+			"fabric": "moveTowardLeader()"
+		},
+		{
+			"forge": "addFollowers(Stream<? extends AbstractSchoolingFish> arg0)",
+			"fabric": "pullInOtherFish(Stream<? extends SchoolingFishEntity> fish)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		}
+	]
+}

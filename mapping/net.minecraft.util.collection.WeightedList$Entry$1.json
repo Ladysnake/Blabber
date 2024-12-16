@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.ShufflingList$WeightedEntry$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.ShufflingList$WeightedEntry$1",
+			"fabric": "net.minecraft.util.collection.WeightedList$Entry$1"
+		},
+		{
+			"forge": "decode(com.mojang.serialization.DynamicOps<T> arg0, T arg1)",
+			"fabric": "decode(com.mojang.serialization.DynamicOps<T> ops, T data)"
+		},
+		{
+			"forge": "decode(com.mojang.serialization.DynamicOps<T> arg0, T arg1)",
+			"fabric": "decode(com.mojang.serialization.DynamicOps<T> ops, T data)"
+		},
+		{
+			"forge": "encode(ShufflingList$WeightedEntry<E> arg0, com.mojang.serialization.DynamicOps<T> arg1, T arg2)",
+			"fabric": "encode(WeightedList$Entry<E> arg0, com.mojang.serialization.DynamicOps<T> arg1, T arg2)"
+		}
+	]
+}

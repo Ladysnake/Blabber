@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.client.renderer.GpuWarnlistManager",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.GpuWarnlistManager",
+			"fabric": "net.minecraft.client.resource.VideoWarningManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GPU_WARNLIST_LOCATION",
+			"fabric": "GPU_WARNLIST_ID"
+		},
+		{
+			"forge": "warnings",
+			"fabric": "warnings"
+		},
+		{
+			"forge": "showWarning",
+			"fabric": "warningScheduled"
+		},
+		{
+			"forge": "warningDismissed",
+			"fabric": "warned"
+		},
+		{
+			"forge": "skipFabulous",
+			"fabric": "cancelledAfterWarning"
+		},
+		{
+			"forge": "hasWarnings()",
+			"fabric": "hasWarning()"
+		},
+		{
+			"forge": "hasWarnings()",
+			"fabric": "hasWarning()"
+		},
+		{
+			"forge": "willShowWarning()",
+			"fabric": "canWarn()"
+		},
+		{
+			"forge": "showWarning()",
+			"fabric": "scheduleWarning()"
+		},
+		{
+			"forge": "dismissWarning()",
+			"fabric": "acceptAfterWarnings()"
+		},
+		{
+			"forge": "dismissWarningAndSkipFabulous()",
+			"fabric": "cancelAfterWarnings()"
+		},
+		{
+			"forge": "isShowingWarning()",
+			"fabric": "shouldWarn()"
+		},
+		{
+			"forge": "isSkippingFabulous()",
+			"fabric": "hasCancelledAfterWarning()"
+		},
+		{
+			"forge": "resetWarnings()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "getRendererWarnings()",
+			"fabric": "getRendererWarning()"
+		},
+		{
+			"forge": "getVersionWarnings()",
+			"fabric": "getVersionWarning()"
+		},
+		{
+			"forge": "getVendorWarnings()",
+			"fabric": "getVendorWarning()"
+		},
+		{
+			"forge": "getAllWarnings()",
+			"fabric": "getWarningsAsString()"
+		},
+		{
+			"forge": "prepare(ResourceManager arg0, ProfilerFiller arg1)",
+			"fabric": "prepare(ResourceManager arg0, Profiler arg1)"
+		},
+		{
+			"forge": "apply(GpuWarnlistManager$Preparations arg0, ResourceManager arg1, ProfilerFiller arg2)",
+			"fabric": "apply(VideoWarningManager$WarningPatternLoader arg0, ResourceManager arg1, Profiler arg2)"
+		},
+		{
+			"forge": "compilePatterns(com.google.gson.JsonArray arg0, List<Pattern> arg1)",
+			"fabric": "compilePatterns(com.google.gson.JsonArray array, List<Pattern> patterns)"
+		},
+		{
+			"forge": "parseJson(ResourceManager arg0, ProfilerFiller arg1)",
+			"fabric": "loadWarnlist(ResourceManager resourceManager, Profiler profiler)"
+		}
+	]
+}

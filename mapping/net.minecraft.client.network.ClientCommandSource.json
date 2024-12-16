@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientSuggestionProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientSuggestionProvider",
+			"fabric": "net.minecraft.client.network.ClientCommandSource"
+		},
+		{
+			"forge": "connection",
+			"fabric": "networkHandler"
+		},
+		{
+			"forge": "connection",
+			"fabric": "networkHandler"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "pendingSuggestionsId",
+			"fabric": "completionId"
+		},
+		{
+			"forge": "pendingSuggestionsFuture",
+			"fabric": "pendingCommandCompletion"
+		},
+		{
+			"forge": "customCompletionSuggestions",
+			"fabric": "chatSuggestions"
+		},
+		{
+			"forge": "getOnlinePlayerNames()",
+			"fabric": "getPlayerNames()"
+		},
+		{
+			"forge": "getOnlinePlayerNames()",
+			"fabric": "getPlayerNames()"
+		},
+		{
+			"forge": "getCustomTabSugggestions()",
+			"fabric": "getChatSuggestions()"
+		},
+		{
+			"forge": "getSelectedEntities()",
+			"fabric": "getEntitySuggestions()"
+		},
+		{
+			"forge": "getAllTeams()",
+			"fabric": "getTeamNames()"
+		},
+		{
+			"forge": "getAvailableSounds()",
+			"fabric": "getSoundIds()"
+		},
+		{
+			"forge": "getRecipeNames()",
+			"fabric": "getRecipeIds()"
+		},
+		{
+			"forge": "hasPermission(int arg0)",
+			"fabric": "hasPermissionLevel(int arg0)"
+		},
+		{
+			"forge": "suggestRegistryElements(ResourceKey<? extends Registry<?>> arg0, SharedSuggestionProvider$ElementSuggestionType arg1, com.mojang.brigadier.suggestion.SuggestionsBuilder arg2, com.mojang.brigadier.context.CommandContext<?> arg3)",
+			"fabric": "listIdSuggestions(RegistryKey<? extends Registry<?>> arg0, CommandSource$SuggestedIdType arg1, com.mojang.brigadier.suggestion.SuggestionsBuilder arg2, com.mojang.brigadier.context.CommandContext<?> arg3)"
+		},
+		{
+			"forge": "customSuggestion(com.mojang.brigadier.context.CommandContext<?> arg0)",
+			"fabric": "getCompletions(com.mojang.brigadier.context.CommandContext<?> arg0)"
+		},
+		{
+			"forge": "prettyPrint(double arg0)",
+			"fabric": "format(double d)"
+		},
+		{
+			"forge": "prettyPrint(int arg0)",
+			"fabric": "format(int i)"
+		},
+		{
+			"forge": "getRelevantCoordinates()",
+			"fabric": "getBlockPositionSuggestions()"
+		},
+		{
+			"forge": "getAbsoluteCoordinates()",
+			"fabric": "getPositionSuggestions()"
+		},
+		{
+			"forge": "levels()",
+			"fabric": "getWorldKeys()"
+		},
+		{
+			"forge": "registryAccess()",
+			"fabric": "getRegistryManager()"
+		},
+		{
+			"forge": "enabledFeatures()",
+			"fabric": "getEnabledFeatures()"
+		},
+		{
+			"forge": "completeCustomSuggestions(int arg0, com.mojang.brigadier.suggestion.Suggestions arg1)",
+			"fabric": "onCommandSuggestions(int completionId, com.mojang.brigadier.suggestion.Suggestions suggestions)"
+		},
+		{
+			"forge": "modifyCustomCompletions(ClientboundCustomChatCompletionsPacket$Action arg0, List<String> arg1)",
+			"fabric": "onChatSuggestions(ChatSuggestionsS2CPacket$Action action, List<String> suggestions)"
+		}
+	]
+}

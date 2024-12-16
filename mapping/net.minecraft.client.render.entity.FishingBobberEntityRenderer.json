@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.renderer.entity.FishingHookRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.FishingHookRenderer",
+			"fabric": "net.minecraft.client.render.entity.FishingBobberEntityRenderer"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "RENDER_TYPE",
+			"fabric": "LAYER"
+		},
+		{
+			"forge": "VIEW_BOBBING_SCALE",
+			"fabric": "field_33632"
+		},
+		{
+			"forge": "render(FishingHook arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(FishingBobberEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "render(FishingHook arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(FishingBobberEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "fraction(int arg0, int arg1)",
+			"fabric": "percentage(int value, int max)"
+		},
+		{
+			"forge": "vertex(VertexConsumer arg0, org.joml.Matrix4f arg1, org.joml.Matrix3f arg2, int arg3, float arg4, int arg5, int arg6, int arg7)",
+			"fabric": "vertex(VertexConsumer buffer, org.joml.Matrix4f matrix, org.joml.Matrix3f normalMatrix, int light, float x, int y, int u, int v)"
+		},
+		{
+			"forge": "stringVertex(float arg0, float arg1, float arg2, VertexConsumer arg3, PoseStack$Pose arg4, float arg5, float arg6)",
+			"fabric": "renderFishingLine(float x, float y, float z, VertexConsumer buffer, MatrixStack$Entry matrices, float segmentStart, float segmentEnd)"
+		},
+		{
+			"forge": "getTextureLocation(FishingHook arg0)",
+			"fabric": "getTexture(FishingBobberEntity arg0)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.gui.screens.achievement.StatsUpdateListener",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.achievement.StatsUpdateListener",
+			"fabric": "net.minecraft.client.gui.screen.StatsListener"
+		},
+		{
+			"forge": "LOADING_SYMBOLS",
+			"fabric": "PROGRESS_BAR_STAGES"
+		},
+		{
+			"forge": "LOADING_SYMBOLS",
+			"fabric": "PROGRESS_BAR_STAGES"
+		},
+		{
+			"forge": "onStatsUpdated()",
+			"fabric": "onStatsReady()"
+		},
+		{
+			"forge": "onStatsUpdated()",
+			"fabric": "onStatsReady()"
+		}
+	]
+}

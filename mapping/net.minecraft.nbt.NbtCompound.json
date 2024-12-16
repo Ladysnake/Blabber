@@ -1,0 +1,249 @@
+{
+	"title": "net.minecraft.nbt.CompoundTag",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.CompoundTag",
+			"fabric": "net.minecraft.nbt.NbtCompound"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "MAP_ENTRY_SIZE_IN_BYTES",
+			"fabric": "field_41719"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "TYPE"
+		},
+		{
+			"forge": "tags",
+			"fabric": "entries"
+		},
+		{
+			"forge": "write(DataOutput arg0)",
+			"fabric": "write(DataOutput arg0)"
+		},
+		{
+			"forge": "write(DataOutput arg0)",
+			"fabric": "write(DataOutput arg0)"
+		},
+		{
+			"forge": "sizeInBytes()",
+			"fabric": "getSizeInBytes()"
+		},
+		{
+			"forge": "getAllKeys()",
+			"fabric": "getKeys()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getNbtType()"
+		},
+		{
+			"forge": "size()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "put(String arg0, Tag arg1)",
+			"fabric": "put(String key, NbtElement element)"
+		},
+		{
+			"forge": "putByte(String arg0, byte arg1)",
+			"fabric": "putByte(String key, byte value)"
+		},
+		{
+			"forge": "putShort(String arg0, short arg1)",
+			"fabric": "putShort(String key, short value)"
+		},
+		{
+			"forge": "putInt(String arg0, int arg1)",
+			"fabric": "putInt(String key, int value)"
+		},
+		{
+			"forge": "putLong(String arg0, long arg1)",
+			"fabric": "putLong(String key, long value)"
+		},
+		{
+			"forge": "putUUID(String arg0, UUID arg1)",
+			"fabric": "putUuid(String key, UUID value)"
+		},
+		{
+			"forge": "getUUID(String arg0)",
+			"fabric": "getUuid(String key)"
+		},
+		{
+			"forge": "hasUUID(String arg0)",
+			"fabric": "containsUuid(String key)"
+		},
+		{
+			"forge": "putFloat(String arg0, float arg1)",
+			"fabric": "putFloat(String key, float value)"
+		},
+		{
+			"forge": "putDouble(String arg0, double arg1)",
+			"fabric": "putDouble(String key, double value)"
+		},
+		{
+			"forge": "putString(String arg0, String arg1)",
+			"fabric": "putString(String key, String value)"
+		},
+		{
+			"forge": "putByteArray(String arg0, byte[] arg1)",
+			"fabric": "putByteArray(String key, byte[] value)"
+		},
+		{
+			"forge": "putByteArray(String arg0, List<Byte> arg1)",
+			"fabric": "putByteArray(String key, List<Byte> value)"
+		},
+		{
+			"forge": "putIntArray(String arg0, int[] arg1)",
+			"fabric": "putIntArray(String key, int[] value)"
+		},
+		{
+			"forge": "putIntArray(String arg0, List<Integer> arg1)",
+			"fabric": "putIntArray(String key, List<Integer> value)"
+		},
+		{
+			"forge": "putLongArray(String arg0, long[] arg1)",
+			"fabric": "putLongArray(String key, long[] value)"
+		},
+		{
+			"forge": "putLongArray(String arg0, List<Long> arg1)",
+			"fabric": "putLongArray(String key, List<Long> value)"
+		},
+		{
+			"forge": "putBoolean(String arg0, boolean arg1)",
+			"fabric": "putBoolean(String key, boolean value)"
+		},
+		{
+			"forge": "get(String arg0)",
+			"fabric": "get(String key)"
+		},
+		{
+			"forge": "getTagType(String arg0)",
+			"fabric": "getType(String key)"
+		},
+		{
+			"forge": "contains(String arg0)",
+			"fabric": "contains(String key)"
+		},
+		{
+			"forge": "contains(String arg0, int arg1)",
+			"fabric": "contains(String key, int type)"
+		},
+		{
+			"forge": "getByte(String arg0)",
+			"fabric": "getByte(String key)"
+		},
+		{
+			"forge": "getShort(String arg0)",
+			"fabric": "getShort(String key)"
+		},
+		{
+			"forge": "getInt(String arg0)",
+			"fabric": "getInt(String key)"
+		},
+		{
+			"forge": "getLong(String arg0)",
+			"fabric": "getLong(String key)"
+		},
+		{
+			"forge": "getFloat(String arg0)",
+			"fabric": "getFloat(String key)"
+		},
+		{
+			"forge": "getDouble(String arg0)",
+			"fabric": "getDouble(String key)"
+		},
+		{
+			"forge": "getString(String arg0)",
+			"fabric": "getString(String key)"
+		},
+		{
+			"forge": "getByteArray(String arg0)",
+			"fabric": "getByteArray(String key)"
+		},
+		{
+			"forge": "getIntArray(String arg0)",
+			"fabric": "getIntArray(String key)"
+		},
+		{
+			"forge": "getLongArray(String arg0)",
+			"fabric": "getLongArray(String key)"
+		},
+		{
+			"forge": "getCompound(String arg0)",
+			"fabric": "getCompound(String key)"
+		},
+		{
+			"forge": "getList(String arg0, int arg1)",
+			"fabric": "getList(String key, int type)"
+		},
+		{
+			"forge": "getBoolean(String arg0)",
+			"fabric": "getBoolean(String key)"
+		},
+		{
+			"forge": "remove(String arg0)",
+			"fabric": "remove(String key)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "createReport(String arg0, TagType<?> arg1, ClassCastException arg2)",
+			"fabric": "createCrashReport(String key, NbtType<?> reader, ClassCastException exception)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "writeNamedTag(String arg0, Tag arg1, DataOutput arg2)",
+			"fabric": "write(String key, NbtElement element, DataOutput output)"
+		},
+		{
+			"forge": "readNamedTagType(DataInput arg0, NbtAccounter arg1)",
+			"fabric": "readByte(DataInput input, NbtTagSizeTracker tracker)"
+		},
+		{
+			"forge": "readNamedTagName(DataInput arg0, NbtAccounter arg1)",
+			"fabric": "readString(DataInput input, NbtTagSizeTracker tracker)"
+		},
+		{
+			"forge": "readNamedTagData(TagType<?> arg0, String arg1, DataInput arg2, int arg3, NbtAccounter arg4)",
+			"fabric": "read(NbtType<?> reader, String key, DataInput input, int depth, NbtTagSizeTracker tracker)"
+		},
+		{
+			"forge": "merge(CompoundTag arg0)",
+			"fabric": "copyFrom(NbtCompound source)"
+		},
+		{
+			"forge": "accept(TagVisitor arg0)",
+			"fabric": "accept(NbtElementVisitor arg0)"
+		},
+		{
+			"forge": "entries()",
+			"fabric": "toMap()"
+		},
+		{
+			"forge": "accept(StreamTagVisitor arg0)",
+			"fabric": "doAccept(NbtScanner arg0)"
+		}
+	]
+}

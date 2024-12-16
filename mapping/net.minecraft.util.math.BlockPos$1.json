@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.core.BlockPos$1",
+	"items": [
+		{
+			"forge": "net.minecraft.core.BlockPos$1",
+			"fabric": "net.minecraft.util.math.BlockPos$1"
+		},
+		{
+			"forge": "nextPos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "nextPos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "counter",
+			"fabric": "remaining"
+		},
+		{
+			"forge": "computeNext()",
+			"fabric": "computeNext()"
+		},
+		{
+			"forge": "computeNext()",
+			"fabric": "computeNext()"
+		}
+	]
+}

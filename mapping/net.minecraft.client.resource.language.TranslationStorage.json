@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.resources.language.ClientLanguage",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.language.ClientLanguage",
+			"fabric": "net.minecraft.client.resource.language.TranslationStorage"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "storage",
+			"fabric": "translations"
+		},
+		{
+			"forge": "defaultRightToLeft",
+			"fabric": "rightToLeft"
+		},
+		{
+			"forge": "loadFrom(ResourceManager arg0, List<String> arg1, boolean arg2)",
+			"fabric": "load(ResourceManager resourceManager, List<String> definitions, boolean rightToLeft)"
+		},
+		{
+			"forge": "loadFrom(ResourceManager arg0, List<String> arg1, boolean arg2)",
+			"fabric": "load(ResourceManager resourceManager, List<String> definitions, boolean rightToLeft)"
+		},
+		{
+			"forge": "appendFrom(String arg0, List<Resource> arg1, Map<String, String> arg2)",
+			"fabric": "load(String langCode, List<Resource> resourceRefs, Map<String, String> translations)"
+		},
+		{
+			"forge": "getOrDefault(String arg0, String arg1)",
+			"fabric": "get(String arg0, String arg1)"
+		},
+		{
+			"forge": "has(String arg0)",
+			"fabric": "hasTranslation(String arg0)"
+		},
+		{
+			"forge": "isDefaultRightToLeft()",
+			"fabric": "isRightToLeft()"
+		},
+		{
+			"forge": "getVisualOrder(FormattedText arg0)",
+			"fabric": "reorder(StringVisitable arg0)"
+		}
+	]
+}

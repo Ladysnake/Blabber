@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.LavaSubmergedBlockProcessor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.LavaSubmergedBlockProcessor",
+			"fabric": "net.minecraft.structure.processor.LavaSubmergedBlockStructureProcessor"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "processBlock(LevelReader arg0, BlockPos arg1, BlockPos arg2, StructureTemplate$StructureBlockInfo arg3, StructureTemplate$StructureBlockInfo arg4, StructurePlaceSettings arg5)",
+			"fabric": "process(WorldView arg0, BlockPos arg1, BlockPos arg2, StructureTemplate$StructureBlockInfo arg3, StructureTemplate$StructureBlockInfo arg4, StructurePlacementData arg5)"
+		},
+		{
+			"forge": "processBlock(LevelReader arg0, BlockPos arg1, BlockPos arg2, StructureTemplate$StructureBlockInfo arg3, StructureTemplate$StructureBlockInfo arg4, StructurePlaceSettings arg5)",
+			"fabric": "process(WorldView arg0, BlockPos arg1, BlockPos arg2, StructureTemplate$StructureBlockInfo arg3, StructureTemplate$StructureBlockInfo arg4, StructurePlacementData arg5)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

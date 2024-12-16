@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.core.BlockMath",
+	"items": [
+		{
+			"forge": "net.minecraft.core.BlockMath",
+			"fabric": "net.minecraft.util.math.AffineTransformations"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "VANILLA_UV_TRANSFORM_LOCAL_TO_GLOBAL",
+			"fabric": "DIRECTION_ROTATIONS"
+		},
+		{
+			"forge": "VANILLA_UV_TRANSFORM_GLOBAL_TO_LOCAL",
+			"fabric": "INVERTED_DIRECTION_ROTATIONS"
+		},
+		{
+			"forge": "blockCenterToCorner(Transformation arg0)",
+			"fabric": "setupUvLock(AffineTransformation transformation)"
+		},
+		{
+			"forge": "blockCenterToCorner(Transformation arg0)",
+			"fabric": "setupUvLock(AffineTransformation transformation)"
+		},
+		{
+			"forge": "blockCornerToCenter(Transformation arg0)",
+			"fabric": "method_35829(AffineTransformation transformation)"
+		},
+		{
+			"forge": "getUVLockTransform(Transformation arg0, Direction arg1, Supplier<String> arg2)",
+			"fabric": "uvLock(AffineTransformation transformation, Direction dir, Supplier<String> warning)"
+		}
+	]
+}

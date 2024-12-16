@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.GeodeBlockSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.GeodeBlockSettings",
+			"fabric": "net.minecraft.world.gen.feature.GeodeLayerConfig"
+		},
+		{
+			"forge": "fillingProvider",
+			"fabric": "fillingProvider"
+		},
+		{
+			"forge": "fillingProvider",
+			"fabric": "fillingProvider"
+		},
+		{
+			"forge": "innerLayerProvider",
+			"fabric": "innerLayerProvider"
+		},
+		{
+			"forge": "alternateInnerLayerProvider",
+			"fabric": "alternateInnerLayerProvider"
+		},
+		{
+			"forge": "middleLayerProvider",
+			"fabric": "middleLayerProvider"
+		},
+		{
+			"forge": "outerLayerProvider",
+			"fabric": "outerLayerProvider"
+		},
+		{
+			"forge": "innerPlacements",
+			"fabric": "innerBlocks"
+		},
+		{
+			"forge": "cannotReplace",
+			"fabric": "cannotReplace"
+		},
+		{
+			"forge": "invalidBlocks",
+			"fabric": "invalidBlocks"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		}
+	]
+}

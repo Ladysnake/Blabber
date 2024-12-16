@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.gametest.framework.GameTestAssertException",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.GameTestAssertException",
+			"fabric": "net.minecraft.test.GameTestException"
+		}
+	]
+}

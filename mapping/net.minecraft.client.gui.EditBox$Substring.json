@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.components.MultilineTextField$StringView",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.MultilineTextField$StringView",
+			"fabric": "net.minecraft.client.gui.EditBox$Substring"
+		},
+		{
+			"forge": "beginIndex",
+			"fabric": "beginIndex"
+		},
+		{
+			"forge": "beginIndex",
+			"fabric": "beginIndex"
+		},
+		{
+			"forge": "endIndex",
+			"fabric": "endIndex"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "beginIndex()",
+			"fabric": "beginIndex()"
+		},
+		{
+			"forge": "beginIndex()",
+			"fabric": "beginIndex()"
+		},
+		{
+			"forge": "endIndex()",
+			"fabric": "endIndex()"
+		}
+	]
+}

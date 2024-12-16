@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece$VerticalPlacement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece$VerticalPlacement",
+			"fabric": "net.minecraft.structure.RuinedPortalStructurePiece$VerticalPlacement"
+		},
+		{
+			"forge": "ON_LAND_SURFACE",
+			"fabric": "ON_LAND_SURFACE"
+		},
+		{
+			"forge": "ON_LAND_SURFACE",
+			"fabric": "ON_LAND_SURFACE"
+		},
+		{
+			"forge": "PARTLY_BURIED",
+			"fabric": "PARTLY_BURIED"
+		},
+		{
+			"forge": "ON_OCEAN_FLOOR",
+			"fabric": "ON_OCEAN_FLOOR"
+		},
+		{
+			"forge": "IN_MOUNTAIN",
+			"fabric": "IN_MOUNTAIN"
+		},
+		{
+			"forge": "UNDERGROUND",
+			"fabric": "UNDERGROUND"
+		},
+		{
+			"forge": "IN_NETHER",
+			"fabric": "IN_NETHER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "getFromId(String id)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

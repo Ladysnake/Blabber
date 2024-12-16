@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.ticks.LevelChunkTicks",
+	"items": [
+		{
+			"forge": "net.minecraft.world.ticks.LevelChunkTicks",
+			"fabric": "net.minecraft.world.tick.ChunkTickScheduler"
+		},
+		{
+			"forge": "tickQueue",
+			"fabric": "tickQueue"
+		},
+		{
+			"forge": "tickQueue",
+			"fabric": "tickQueue"
+		},
+		{
+			"forge": "pendingTicks",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "ticksPerPosition",
+			"fabric": "queuedTicks"
+		},
+		{
+			"forge": "onTickAdded",
+			"fabric": "tickConsumer"
+		},
+		{
+			"forge": "setOnTickAdded(BiConsumer<LevelChunkTicks<T>, ScheduledTick<T>> arg0)",
+			"fabric": "setTickConsumer(BiConsumer<ChunkTickScheduler<T>, OrderedTick<T>> tickConsumer)"
+		},
+		{
+			"forge": "setOnTickAdded(BiConsumer<LevelChunkTicks<T>, ScheduledTick<T>> arg0)",
+			"fabric": "setTickConsumer(BiConsumer<ChunkTickScheduler<T>, OrderedTick<T>> tickConsumer)"
+		},
+		{
+			"forge": "peek()",
+			"fabric": "peekNextTick()"
+		},
+		{
+			"forge": "poll()",
+			"fabric": "pollNextTick()"
+		},
+		{
+			"forge": "schedule(ScheduledTick<T> arg0)",
+			"fabric": "scheduleTick(OrderedTick<T> arg0)"
+		},
+		{
+			"forge": "scheduleUnchecked(ScheduledTick<T> arg0)",
+			"fabric": "queueTick(OrderedTick<T> orderedTick)"
+		},
+		{
+			"forge": "hasScheduledTick(BlockPos arg0, T arg1)",
+			"fabric": "isQueued(BlockPos arg0, T arg1)"
+		},
+		{
+			"forge": "removeIf(Predicate<ScheduledTick<T>> arg0)",
+			"fabric": "removeTicksIf(Predicate<OrderedTick<T>> predicate)"
+		},
+		{
+			"forge": "getAll()",
+			"fabric": "getQueueAsStream()"
+		},
+		{
+			"forge": "count()",
+			"fabric": "getTickCount()"
+		},
+		{
+			"forge": "save(long arg0, Function<T, String> arg1)",
+			"fabric": "toNbt(long arg0, Function<T, String> arg1)"
+		},
+		{
+			"forge": "unpack(long arg0)",
+			"fabric": "disable(long time)"
+		},
+		{
+			"forge": "load(ListTag arg0, Function<String, Optional<T>> arg1, ChunkPos arg2)",
+			"fabric": "create(NbtList tickQueue, Function<String, Optional<T>> nameToTypeFunction, ChunkPos pos)"
+		}
+	]
+}

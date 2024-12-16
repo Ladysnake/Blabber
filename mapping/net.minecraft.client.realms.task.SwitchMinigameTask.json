@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.realmsclient.util.task.SwitchMinigameTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.SwitchMinigameTask",
+			"fabric": "net.minecraft.client.realms.task.SwitchMinigameTask"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "worldId",
+			"fabric": "worldId"
+		},
+		{
+			"forge": "worldTemplate",
+			"fabric": "worldTemplate"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "lastScreen"
+		}
+	]
+}

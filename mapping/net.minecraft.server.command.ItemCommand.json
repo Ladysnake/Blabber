@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.server.commands.ItemCommands",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.ItemCommands",
+			"fabric": "net.minecraft.server.command.ItemCommand"
+		},
+		{
+			"forge": "ERROR_TARGET_NOT_A_CONTAINER",
+			"fabric": "NOT_A_CONTAINER_TARGET_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_TARGET_NOT_A_CONTAINER",
+			"fabric": "NOT_A_CONTAINER_TARGET_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_SOURCE_NOT_A_CONTAINER",
+			"fabric": "NOT_A_CONTAINER_SOURCE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_TARGET_INAPPLICABLE_SLOT",
+			"fabric": "NO_SUCH_SLOT_TARGET_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_SOURCE_INAPPLICABLE_SLOT",
+			"fabric": "NO_SUCH_SLOT_SOURCE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_TARGET_NO_CHANGES",
+			"fabric": "NO_CHANGES_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_TARGET_NO_CHANGES_KNOWN_ITEM",
+			"fabric": "KNOWN_ITEM_EXCEPTION"
+		},
+		{
+			"forge": "SUGGEST_MODIFIER",
+			"fabric": "MODIFIER_SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "modifyBlockItem(CommandSourceStack arg0, BlockPos arg1, int arg2, LootItemFunction arg3)",
+			"fabric": "executeBlockModify(ServerCommandSource source, BlockPos pos, int slot, LootFunction modifier)"
+		},
+		{
+			"forge": "modifyEntityItem(CommandSourceStack arg0, Collection<? extends Entity> arg1, int arg2, LootItemFunction arg3)",
+			"fabric": "executeEntityModify(ServerCommandSource source, Collection<? extends Entity> targets, int slot, LootFunction modifier)"
+		},
+		{
+			"forge": "setBlockItem(CommandSourceStack arg0, BlockPos arg1, int arg2, ItemStack arg3)",
+			"fabric": "executeBlockReplace(ServerCommandSource source, BlockPos pos, int slot, ItemStack stack)"
+		},
+		{
+			"forge": "getContainer(CommandSourceStack arg0, BlockPos arg1, com.mojang.brigadier.exceptions.Dynamic3CommandExceptionType arg2)",
+			"fabric": "getInventoryAtPos(ServerCommandSource source, BlockPos pos, com.mojang.brigadier.exceptions.Dynamic3CommandExceptionType exception)"
+		},
+		{
+			"forge": "setEntityItem(CommandSourceStack arg0, Collection<? extends Entity> arg1, int arg2, ItemStack arg3)",
+			"fabric": "executeEntityReplace(ServerCommandSource source, Collection<? extends Entity> targets, int slot, ItemStack stack)"
+		},
+		{
+			"forge": "blockToEntities(CommandSourceStack arg0, BlockPos arg1, int arg2, Collection<? extends Entity> arg3, int arg4)",
+			"fabric": "executeEntityCopyBlock(ServerCommandSource source, BlockPos sourcePos, int sourceSlot, Collection<? extends Entity> targets, int slot)"
+		},
+		{
+			"forge": "blockToEntities(CommandSourceStack arg0, BlockPos arg1, int arg2, Collection<? extends Entity> arg3, int arg4, LootItemFunction arg5)",
+			"fabric": "executeEntityCopyBlock(ServerCommandSource source, BlockPos sourcePos, int sourceSlot, Collection<? extends Entity> targets, int slot, LootFunction modifier)"
+		},
+		{
+			"forge": "blockToBlock(CommandSourceStack arg0, BlockPos arg1, int arg2, BlockPos arg3, int arg4)",
+			"fabric": "executeBlockCopyBlock(ServerCommandSource source, BlockPos sourcePos, int sourceSlot, BlockPos pos, int slot)"
+		},
+		{
+			"forge": "blockToBlock(CommandSourceStack arg0, BlockPos arg1, int arg2, BlockPos arg3, int arg4, LootItemFunction arg5)",
+			"fabric": "executeBlockCopyBlock(ServerCommandSource source, BlockPos sourcePos, int sourceSlot, BlockPos pos, int slot, LootFunction modifier)"
+		},
+		{
+			"forge": "entityToBlock(CommandSourceStack arg0, Entity arg1, int arg2, BlockPos arg3, int arg4)",
+			"fabric": "executeBlockCopyEntity(ServerCommandSource source, Entity sourceEntity, int sourceSlot, BlockPos pos, int slot)"
+		},
+		{
+			"forge": "entityToBlock(CommandSourceStack arg0, Entity arg1, int arg2, BlockPos arg3, int arg4, LootItemFunction arg5)",
+			"fabric": "executeBlockCopyEntity(ServerCommandSource source, Entity sourceEntity, int sourceSlot, BlockPos pos, int slot, LootFunction modifier)"
+		},
+		{
+			"forge": "entityToEntities(CommandSourceStack arg0, Entity arg1, int arg2, Collection<? extends Entity> arg3, int arg4)",
+			"fabric": "executeEntityCopyEntity(ServerCommandSource source, Entity sourceEntity, int sourceSlot, Collection<? extends Entity> targets, int slot)"
+		},
+		{
+			"forge": "entityToEntities(CommandSourceStack arg0, Entity arg1, int arg2, Collection<? extends Entity> arg3, int arg4, LootItemFunction arg5)",
+			"fabric": "executeEntityCopyEntity(ServerCommandSource source, Entity sourceEntity, int sourceSlot, Collection<? extends Entity> targets, int slot, LootFunction modifier)"
+		},
+		{
+			"forge": "applyModifier(CommandSourceStack arg0, LootItemFunction arg1, ItemStack arg2)",
+			"fabric": "getStackWithModifier(ServerCommandSource source, LootFunction modifier, ItemStack stack)"
+		},
+		{
+			"forge": "getEntityItem(Entity arg0, int arg1)",
+			"fabric": "getStackInSlot(Entity entity, int slotId)"
+		},
+		{
+			"forge": "getBlockItem(CommandSourceStack arg0, BlockPos arg1, int arg2)",
+			"fabric": "getStackInSlotFromInventoryAt(ServerCommandSource source, BlockPos pos, int slotId)"
+		}
+	]
+}

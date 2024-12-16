@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.advancements.critereon.MinMaxBounds$BoundsFromReaderFactory",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.MinMaxBounds$BoundsFromReaderFactory",
+			"fabric": "net.minecraft.predicate.NumberRange$CommandFactory"
+		},
+		{
+			"forge": "create(com.mojang.brigadier.StringReader arg0, T arg1, T arg2)",
+			"fabric": "create(com.mojang.brigadier.StringReader reader, T min, T max)"
+		},
+		{
+			"forge": "create(com.mojang.brigadier.StringReader arg0, T arg1, T arg2)",
+			"fabric": "create(com.mojang.brigadier.StringReader reader, T min, T max)"
+		}
+	]
+}

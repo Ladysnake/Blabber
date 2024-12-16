@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.BegGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.BegGoal",
+			"fabric": "net.minecraft.entity.ai.goal.WolfBegGoal"
+		},
+		{
+			"forge": "wolf",
+			"fabric": "wolf"
+		},
+		{
+			"forge": "wolf",
+			"fabric": "wolf"
+		},
+		{
+			"forge": "player",
+			"fabric": "begFrom"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "lookDistance",
+			"fabric": "begDistance"
+		},
+		{
+			"forge": "lookTime",
+			"fabric": "timer"
+		},
+		{
+			"forge": "begTargeting",
+			"fabric": "validPlayerPredicate"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "playerHoldingInteresting(Player arg0)",
+			"fabric": "isAttractive(PlayerEntity player)"
+		}
+	]
+}

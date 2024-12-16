@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.resources.model.ModelState",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.ModelState",
+			"fabric": "net.minecraft.client.render.model.ModelBakeSettings"
+		},
+		{
+			"forge": "getRotation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "getRotation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "isUvLocked()",
+			"fabric": "isUvLocked()"
+		}
+	]
+}

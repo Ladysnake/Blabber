@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.CreativeInventoryListener",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.CreativeInventoryListener",
+			"fabric": "net.minecraft.client.gui.screen.ingame.CreativeInventoryListener"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "slotChanged(AbstractContainerMenu arg0, int arg1, ItemStack arg2)",
+			"fabric": "onSlotUpdate(ScreenHandler arg0, int arg1, ItemStack arg2)"
+		},
+		{
+			"forge": "slotChanged(AbstractContainerMenu arg0, int arg1, ItemStack arg2)",
+			"fabric": "onSlotUpdate(ScreenHandler arg0, int arg1, ItemStack arg2)"
+		},
+		{
+			"forge": "dataChanged(AbstractContainerMenu arg0, int arg1, int arg2)",
+			"fabric": "onPropertyUpdate(ScreenHandler arg0, int arg1, int arg2)"
+		}
+	]
+}

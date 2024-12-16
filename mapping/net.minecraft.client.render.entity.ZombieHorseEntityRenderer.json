@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.UndeadHorseRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.UndeadHorseRenderer",
+			"fabric": "net.minecraft.client.render.entity.ZombieHorseEntityRenderer"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "getTextureLocation(AbstractHorse arg0)",
+			"fabric": "getTexture(AbstractHorseEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(AbstractHorse arg0)",
+			"fabric": "getTexture(AbstractHorseEntity arg0)"
+		}
+	]
+}

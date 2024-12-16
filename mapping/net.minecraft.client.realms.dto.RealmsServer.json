@@ -1,0 +1,165 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsServer",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsServer",
+			"fabric": "net.minecraft.client.realms.dto.RealmsServer"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "remoteSubscriptionId",
+			"fabric": "remoteSubscriptionId"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "motd",
+			"fabric": "description"
+		},
+		{
+			"forge": "state",
+			"fabric": "state"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "ownerUUID",
+			"fabric": "ownerUUID"
+		},
+		{
+			"forge": "players",
+			"fabric": "players"
+		},
+		{
+			"forge": "slots",
+			"fabric": "slots"
+		},
+		{
+			"forge": "expired",
+			"fabric": "expired"
+		},
+		{
+			"forge": "expiredTrial",
+			"fabric": "expiredTrial"
+		},
+		{
+			"forge": "daysLeft",
+			"fabric": "daysLeft"
+		},
+		{
+			"forge": "worldType",
+			"fabric": "worldType"
+		},
+		{
+			"forge": "activeSlot",
+			"fabric": "activeSlot"
+		},
+		{
+			"forge": "minigameName",
+			"fabric": "minigameName"
+		},
+		{
+			"forge": "minigameId",
+			"fabric": "minigameId"
+		},
+		{
+			"forge": "minigameImage",
+			"fabric": "minigameImage"
+		},
+		{
+			"forge": "serverPing",
+			"fabric": "serverPing"
+		},
+		{
+			"forge": "getDescription()",
+			"fabric": "getDescription()"
+		},
+		{
+			"forge": "getDescription()",
+			"fabric": "getDescription()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getMinigameName()",
+			"fabric": "getMinigameName()"
+		},
+		{
+			"forge": "setName(String arg0)",
+			"fabric": "setName(String name)"
+		},
+		{
+			"forge": "setDescription(String arg0)",
+			"fabric": "setDescription(String description)"
+		},
+		{
+			"forge": "updateServerPing(RealmsServerPlayerList arg0)",
+			"fabric": "updateServerPing(RealmsServerPlayerList serverPlayerList)"
+		},
+		{
+			"forge": "parse(com.google.gson.JsonObject arg0)",
+			"fabric": "parse(com.google.gson.JsonObject node)"
+		},
+		{
+			"forge": "sortInvited(RealmsServer arg0)",
+			"fabric": "sortInvited(RealmsServer server)"
+		},
+		{
+			"forge": "parseInvited(com.google.gson.JsonArray arg0)",
+			"fabric": "parseInvited(com.google.gson.JsonArray jsonArray)"
+		},
+		{
+			"forge": "parseSlots(com.google.gson.JsonArray arg0)",
+			"fabric": "parseSlots(com.google.gson.JsonArray json)"
+		},
+		{
+			"forge": "createEmptySlots()",
+			"fabric": "getEmptySlots()"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "getState(String arg0)",
+			"fabric": "getState(String state)"
+		},
+		{
+			"forge": "getWorldType(String arg0)",
+			"fabric": "getWorldType(String state)"
+		},
+		{
+			"forge": "clone()",
+			"fabric": "clone()"
+		},
+		{
+			"forge": "cloneSlots(Map<Integer, RealmsWorldOptions> arg0)",
+			"fabric": "cloneSlots(Map<Integer, RealmsWorldOptions> slots)"
+		},
+		{
+			"forge": "getWorldName(int arg0)",
+			"fabric": "getWorldName(int slotId)"
+		},
+		{
+			"forge": "toServerData(String arg0)",
+			"fabric": "createServerInfo(String address)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.gameevent.DynamicGameEventListener",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.gameevent.DynamicGameEventListener",
+			"fabric": "net.minecraft.world.event.listener.EntityGameEventHandler"
+		},
+		{
+			"forge": "listener",
+			"fabric": "listener"
+		},
+		{
+			"forge": "listener",
+			"fabric": "listener"
+		},
+		{
+			"forge": "lastSection",
+			"fabric": "sectionPos"
+		},
+		{
+			"forge": "add(ServerLevel arg0)",
+			"fabric": "onEntitySetPosCallback(ServerWorld world)"
+		},
+		{
+			"forge": "add(ServerLevel arg0)",
+			"fabric": "onEntitySetPosCallback(ServerWorld world)"
+		},
+		{
+			"forge": "getListener()",
+			"fabric": "getListener()"
+		},
+		{
+			"forge": "remove(ServerLevel arg0)",
+			"fabric": "onEntityRemoval(ServerWorld world)"
+		},
+		{
+			"forge": "move(ServerLevel arg0)",
+			"fabric": "onEntitySetPos(ServerWorld world)"
+		},
+		{
+			"forge": "ifChunkExists(LevelReader arg0, SectionPos arg1, Consumer<GameEventListenerRegistry> arg2)",
+			"fabric": "updateDispatcher(WorldView world, ChunkSectionPos sectionPos, Consumer<GameEventDispatcher> dispatcherConsumer)"
+		}
+	]
+}

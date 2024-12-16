@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.renderer.blockentity.BannerRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.blockentity.BannerRenderer",
+			"fabric": "net.minecraft.client.render.block.entity.BannerBlockEntityRenderer"
+		},
+		{
+			"forge": "BANNER_WIDTH",
+			"fabric": "WIDTH"
+		},
+		{
+			"forge": "BANNER_WIDTH",
+			"fabric": "WIDTH"
+		},
+		{
+			"forge": "BANNER_HEIGHT",
+			"fabric": "HEIGHT"
+		},
+		{
+			"forge": "MAX_PATTERNS",
+			"fabric": "ROTATIONS"
+		},
+		{
+			"forge": "FLAG",
+			"fabric": "BANNER"
+		},
+		{
+			"forge": "POLE",
+			"fabric": "PILLAR"
+		},
+		{
+			"forge": "BAR",
+			"fabric": "CROSSBAR"
+		},
+		{
+			"forge": "flag",
+			"fabric": "banner"
+		},
+		{
+			"forge": "pole",
+			"fabric": "pillar"
+		},
+		{
+			"forge": "bar",
+			"fabric": "crossbar"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "render(BannerBlockEntity arg0, float arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, int arg5)",
+			"fabric": "render(BannerBlockEntity arg0, float arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, int arg5)"
+		},
+		{
+			"forge": "renderPatterns(PoseStack arg0, MultiBufferSource arg1, int arg2, int arg3, ModelPart arg4, Material arg5, boolean arg6, List<com.mojang.datafixers.util.Pair<Holder<BannerPattern>, DyeColor>> arg7)",
+			"fabric": "renderCanvas(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay, ModelPart canvas, SpriteIdentifier baseSprite, boolean isBanner, List<com.mojang.datafixers.util.Pair<RegistryEntry<BannerPattern>, DyeColor>> patterns)"
+		},
+		{
+			"forge": "renderPatterns(PoseStack arg0, MultiBufferSource arg1, int arg2, int arg3, ModelPart arg4, Material arg5, boolean arg6, List<com.mojang.datafixers.util.Pair<Holder<BannerPattern>, DyeColor>> arg7, boolean arg8)",
+			"fabric": "renderCanvas(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay, ModelPart canvas, SpriteIdentifier baseSprite, boolean isBanner, List<com.mojang.datafixers.util.Pair<RegistryEntry<BannerPattern>, DyeColor>> patterns, boolean glint)"
+		}
+	]
+}

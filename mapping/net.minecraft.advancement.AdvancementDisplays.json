@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.server.advancements.AdvancementVisibilityEvaluator",
+	"items": [
+		{
+			"forge": "net.minecraft.server.advancements.AdvancementVisibilityEvaluator",
+			"fabric": "net.minecraft.advancement.AdvancementDisplays"
+		},
+		{
+			"forge": "VISIBILITY_DEPTH",
+			"fabric": "DISPLAY_DEPTH"
+		},
+		{
+			"forge": "VISIBILITY_DEPTH",
+			"fabric": "DISPLAY_DEPTH"
+		},
+		{
+			"forge": "evaluateVisibilityRule(Advancement arg0, boolean arg1)",
+			"fabric": "getStatus(Advancement advancement, boolean force)"
+		},
+		{
+			"forge": "evaluateVisibilityRule(Advancement arg0, boolean arg1)",
+			"fabric": "getStatus(Advancement advancement, boolean force)"
+		},
+		{
+			"forge": "evaluateVisiblityForUnfinishedNode(it.unimi.dsi.fastutil.Stack<AdvancementVisibilityEvaluator$VisibilityRule> arg0)",
+			"fabric": "shouldDisplay(it.unimi.dsi.fastutil.Stack<AdvancementDisplays$Status> statuses)"
+		},
+		{
+			"forge": "evaluateVisibility(Advancement arg0, it.unimi.dsi.fastutil.Stack<AdvancementVisibilityEvaluator$VisibilityRule> arg1, Predicate<Advancement> arg2, AdvancementVisibilityEvaluator$Output arg3)",
+			"fabric": "shouldDisplay(Advancement advancement, it.unimi.dsi.fastutil.Stack<AdvancementDisplays$Status> statuses, Predicate<Advancement> donePredicate, AdvancementDisplays$ResultConsumer consumer)"
+		},
+		{
+			"forge": "evaluateVisibility(Advancement arg0, Predicate<Advancement> arg1, AdvancementVisibilityEvaluator$Output arg2)",
+			"fabric": "calculateDisplay(Advancement advancement, Predicate<Advancement> donePredicate, AdvancementDisplays$ResultConsumer consumer)"
+		}
+	]
+}

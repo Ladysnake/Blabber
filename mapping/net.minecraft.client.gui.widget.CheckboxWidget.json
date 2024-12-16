@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.components.Checkbox",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.Checkbox",
+			"fabric": "net.minecraft.client.gui.widget.CheckboxWidget"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXT_COLOR",
+			"fabric": "TEXT_COLOR"
+		},
+		{
+			"forge": "selected",
+			"fabric": "checked"
+		},
+		{
+			"forge": "showLabel",
+			"fabric": "showMessage"
+		},
+		{
+			"forge": "onPress()",
+			"fabric": "onPress()"
+		},
+		{
+			"forge": "onPress()",
+			"fabric": "onPress()"
+		},
+		{
+			"forge": "selected()",
+			"fabric": "isChecked()"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.renderer.entity.SquidRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.SquidRenderer",
+			"fabric": "net.minecraft.client.render.entity.SquidEntityRenderer"
+		},
+		{
+			"forge": "SQUID_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SQUID_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(T arg0)",
+			"fabric": "getTexture(T arg0)"
+		},
+		{
+			"forge": "getTextureLocation(T arg0)",
+			"fabric": "getTexture(T arg0)"
+		},
+		{
+			"forge": "setupRotations(T arg0, PoseStack arg1, float arg2, float arg3, float arg4)",
+			"fabric": "setupTransforms(T arg0, MatrixStack arg1, float arg2, float arg3, float arg4)"
+		},
+		{
+			"forge": "getBob(T arg0, float arg1)",
+			"fabric": "getAnimationProgress(T arg0, float arg1)"
+		}
+	]
+}

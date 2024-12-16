@@ -1,0 +1,369 @@
+{
+	"title": "net.minecraft.data.worldgen.BiomeDefaultFeatures",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.BiomeDefaultFeatures",
+			"fabric": "net.minecraft.world.gen.feature.DefaultBiomeFeatures"
+		},
+		{
+			"forge": "addDefaultCarversAndLakes(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addLandCarvers(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultCarversAndLakes(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addLandCarvers(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultMonsterRoom(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDungeons(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultUndergroundVariety(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addMineables(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDripstone(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDripstone(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSculk(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSculk(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultOres(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDefaultOres(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultOres(BiomeGenerationSettings$Builder arg0, boolean arg1)",
+			"fabric": "addDefaultOres(GenerationSettings$LookupBackedBuilder builder, boolean largeCopperOreBlob)"
+		},
+		{
+			"forge": "addExtraGold(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addExtraGoldOre(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addExtraEmeralds(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addEmeraldOre(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addInfestedStone(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addInfestedStone(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultSoftDisks(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDefaultDisks(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSwampClayDisk(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addClayDisk(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addMangroveSwampDisks(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addGrassAndClayDisks(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addMossyStoneBlock(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addMossyRocks(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addFerns(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addLargeFerns(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addRareBerryBushes(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSweetBerryBushesSnowy(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addCommonBerryBushes(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSweetBerryBushes(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addLightBambooVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addBamboo(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addBambooVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addBambooJungleTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addTaigaTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addTaigaTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addGroveTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addGroveTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addWaterTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addWaterBiomeOakTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addBirchTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addBirchTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addOtherBirchTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addForestTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addTallBirchTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addTallBirchTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSavannaTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSavannaTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addShatteredSavannaTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addExtraSavannaTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addLushCavesVegetationFeatures(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addLushCavesDecoration(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addLushCavesSpecialOres(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addClayOre(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addMountainTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addWindsweptHillsTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addMountainForestTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addWindsweptForestTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addJungleTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addJungleTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSparseJungleTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSparseJungleTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addBadlandsTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addBadlandsPlateauTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSnowyTrees(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSnowySpruceTrees(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addJungleGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addJungleGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSavannaGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSavannaTallGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addShatteredSavannaGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addWindsweptSavannaGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSavannaExtraGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSavannaGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addBadlandGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addBadlandsGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addForestFlowers(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addForestFlowers(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addForestGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addForestGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSwampVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSwampFeatures(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addMangroveSwampVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addMangroveSwampFeatures(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addMushroomFieldVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addMushroomFieldsFeatures(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addPlainVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addPlainsFeatures(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDesertVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDesertDeadBushes(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addGiantTaigaVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addGiantTaigaGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultFlowers(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDefaultFlowers(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addCherryGroveVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addCherryGroveFeatures(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addMeadowVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addMeadowFlowers(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addWarmFlowers(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addExtraDefaultFlowers(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDefaultGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addTaigaGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addTaigaGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addPlainGrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addPlainsTallGrass(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultMushrooms(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDefaultMushrooms(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultExtraVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDefaultVegetation(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addBadlandExtraVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addBadlandsVegetation(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addJungleMelons(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addMelons(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSparseJungleMelons(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSparseMelons(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addJungleVines(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addVines(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDesertExtraVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDesertVegetation(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSwampExtraVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSwampVegetation(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDesertExtraDecoration(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addDesertFeatures(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addFossilDecoration(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addFossils(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addColdOceanExtraVegetation(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addKelp(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultSeagrass(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSeagrassOnStone(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addLukeWarmKelp(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addLessKelp(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultSprings(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addSprings(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addFrozenSprings(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addFrozenLavaSpring(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addIcebergs(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addIcebergs(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addBlueIce(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addBlueIce(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addSurfaceFreezing(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addFrozenTopLayer(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addNetherDefaultOres(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addNetherMineables(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addAncientDebris(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addAncientDebris(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "addDefaultCrystalFormations(BiomeGenerationSettings$Builder arg0)",
+			"fabric": "addAmethystGeodes(GenerationSettings$LookupBackedBuilder builder)"
+		},
+		{
+			"forge": "farmAnimals(MobSpawnSettings$Builder arg0)",
+			"fabric": "addFarmAnimals(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "caveSpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addCaveMobs(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "commonSpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addBatsAndMonsters(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "oceanSpawns(MobSpawnSettings$Builder arg0, int arg1, int arg2, int arg3)",
+			"fabric": "addOceanMobs(SpawnSettings$Builder builder, int squidWeight, int squidMaxGroupSize, int codWeight)"
+		},
+		{
+			"forge": "warmOceanSpawns(MobSpawnSettings$Builder arg0, int arg1, int arg2)",
+			"fabric": "addWarmOceanMobs(SpawnSettings$Builder builder, int squidWeight, int squidMinGroupSize)"
+		},
+		{
+			"forge": "plainsSpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addPlainsMobs(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "snowySpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addSnowyMobs(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "desertSpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addDesertMobs(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "dripstoneCavesSpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addDripstoneCaveMobs(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "monsters(MobSpawnSettings$Builder arg0, int arg1, int arg2, int arg3, boolean arg4)",
+			"fabric": "addMonsters(SpawnSettings$Builder builder, int zombieWeight, int zombieVillagerWeight, int skeletonWeight, boolean drowned)"
+		},
+		{
+			"forge": "mooshroomSpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addMushroomMobs(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "baseJungleSpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addJungleMobs(SpawnSettings$Builder builder)"
+		},
+		{
+			"forge": "endSpawns(MobSpawnSettings$Builder arg0)",
+			"fabric": "addEndMobs(SpawnSettings$Builder builder)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.AbstractIllager$RaiderOpenDoorGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.AbstractIllager$RaiderOpenDoorGoal",
+			"fabric": "net.minecraft.entity.mob.IllagerEntity$LongDoorInteractGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

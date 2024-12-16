@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.phys.HitResult",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.HitResult",
+			"fabric": "net.minecraft.util.hit.HitResult"
+		},
+		{
+			"forge": "location",
+			"fabric": "pos"
+		},
+		{
+			"forge": "location",
+			"fabric": "pos"
+		},
+		{
+			"forge": "distanceTo(Entity arg0)",
+			"fabric": "squaredDistanceTo(Entity entity)"
+		},
+		{
+			"forge": "distanceTo(Entity arg0)",
+			"fabric": "squaredDistanceTo(Entity entity)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getLocation()",
+			"fabric": "getPos()"
+		}
+	]
+}

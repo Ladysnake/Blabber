@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.Block$2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.Block$2",
+			"fabric": "net.minecraft.block.Block$2"
+		},
+		{
+			"forge": "rehash(int arg0)",
+			"fabric": "rehash(int newN)"
+		},
+		{
+			"forge": "rehash(int arg0)",
+			"fabric": "rehash(int newN)"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.Marker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Marker",
+			"fabric": "net.minecraft.entity.MarkerEntity"
+		},
+		{
+			"forge": "DATA_TAG",
+			"fabric": "DATA_KEY"
+		},
+		{
+			"forge": "DATA_TAG",
+			"fabric": "DATA_KEY"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getAddEntityPacket()",
+			"fabric": "createSpawnPacket()"
+		},
+		{
+			"forge": "canAddPassenger(Entity arg0)",
+			"fabric": "canAddPassenger(Entity arg0)"
+		},
+		{
+			"forge": "couldAcceptPassenger()",
+			"fabric": "couldAcceptPassenger()"
+		},
+		{
+			"forge": "addPassenger(Entity arg0)",
+			"fabric": "addPassenger(Entity arg0)"
+		},
+		{
+			"forge": "getPistonPushReaction()",
+			"fabric": "getPistonBehavior()"
+		},
+		{
+			"forge": "isIgnoringBlockTriggers()",
+			"fabric": "canAvoidTraps()"
+		}
+	]
+}

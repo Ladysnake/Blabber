@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.model.LeashKnotModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.LeashKnotModel",
+			"fabric": "net.minecraft.client.render.entity.model.LeashKnotEntityModel"
+		},
+		{
+			"forge": "KNOT",
+			"fabric": "KNOT"
+		},
+		{
+			"forge": "KNOT",
+			"fabric": "KNOT"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "knot",
+			"fabric": "knot"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

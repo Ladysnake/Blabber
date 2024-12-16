@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.TraderLlama$TraderLlamaDefendWanderingTraderGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.TraderLlama$TraderLlamaDefendWanderingTraderGoal",
+			"fabric": "net.minecraft.entity.passive.TraderLlamaEntity$DefendTraderGoal"
+		},
+		{
+			"forge": "llama",
+			"fabric": "llama"
+		},
+		{
+			"forge": "llama",
+			"fabric": "llama"
+		},
+		{
+			"forge": "ownerLastHurtBy",
+			"fabric": "offender"
+		},
+		{
+			"forge": "timestamp",
+			"fabric": "traderLastAttackedTime"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		}
+	]
+}

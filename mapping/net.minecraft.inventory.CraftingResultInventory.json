@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.inventory.ResultContainer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ResultContainer",
+			"fabric": "net.minecraft.inventory.CraftingResultInventory"
+		},
+		{
+			"forge": "itemStacks",
+			"fabric": "stacks"
+		},
+		{
+			"forge": "itemStacks",
+			"fabric": "stacks"
+		},
+		{
+			"forge": "recipeUsed",
+			"fabric": "lastRecipe"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "setRecipeUsed(Recipe<?> arg0)",
+			"fabric": "setLastRecipe(Recipe<?> arg0)"
+		},
+		{
+			"forge": "getRecipeUsed()",
+			"fabric": "getLastRecipe()"
+		}
+	]
+}

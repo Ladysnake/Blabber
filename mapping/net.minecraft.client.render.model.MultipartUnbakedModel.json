@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.multipart.MultiPart",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.multipart.MultiPart",
+			"fabric": "net.minecraft.client.render.model.MultipartUnbakedModel"
+		},
+		{
+			"forge": "definition",
+			"fabric": "stateFactory"
+		},
+		{
+			"forge": "definition",
+			"fabric": "stateFactory"
+		},
+		{
+			"forge": "selectors",
+			"fabric": "components"
+		},
+		{
+			"forge": "getSelectors()",
+			"fabric": "getComponents()"
+		},
+		{
+			"forge": "getSelectors()",
+			"fabric": "getComponents()"
+		},
+		{
+			"forge": "getMultiVariants()",
+			"fabric": "getModels()"
+		},
+		{
+			"forge": "getDependencies()",
+			"fabric": "getModelDependencies()"
+		},
+		{
+			"forge": "resolveParents(Function<ResourceLocation, UnbakedModel> arg0)",
+			"fabric": "setParents(Function<Identifier, UnbakedModel> arg0)"
+		},
+		{
+			"forge": "bake(ModelBaker arg0, Function<Material, TextureAtlasSprite> arg1, ModelState arg2, ResourceLocation arg3)",
+			"fabric": "bake(Baker arg0, Function<SpriteIdentifier, Sprite> arg1, ModelBakeSettings arg2, Identifier arg3)"
+		}
+	]
+}

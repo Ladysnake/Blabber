@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.commands.data.StorageDataAccessor",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.data.StorageDataAccessor",
+			"fabric": "net.minecraft.command.StorageDataObject"
+		},
+		{
+			"forge": "SUGGEST_STORAGE",
+			"fabric": "SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "SUGGEST_STORAGE",
+			"fabric": "SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "PROVIDER",
+			"fabric": "TYPE_FACTORY"
+		},
+		{
+			"forge": "storage",
+			"fabric": "storage"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "getGlobalTags(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0)",
+			"fabric": "of(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context)"
+		},
+		{
+			"forge": "getGlobalTags(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0)",
+			"fabric": "of(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context)"
+		},
+		{
+			"forge": "setData(CompoundTag arg0)",
+			"fabric": "setNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getNbt()"
+		},
+		{
+			"forge": "getModifiedSuccess()",
+			"fabric": "feedbackModify()"
+		},
+		{
+			"forge": "getPrintSuccess(Tag arg0)",
+			"fabric": "feedbackQuery(NbtElement arg0)"
+		},
+		{
+			"forge": "getPrintSuccess(NbtPathArgument$NbtPath arg0, double arg1, int arg2)",
+			"fabric": "feedbackGet(NbtPathArgumentType$NbtPath arg0, double arg1, int arg2)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.chunk.ChunkGenerators",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.ChunkGenerators",
+			"fabric": "net.minecraft.world.gen.chunk.ChunkGenerators"
+		},
+		{
+			"forge": "bootstrap(Registry<com.mojang.serialization.Codec<? extends ChunkGenerator>> arg0)",
+			"fabric": "registerAndGetDefault(Registry<com.mojang.serialization.Codec<? extends ChunkGenerator>> registry)"
+		},
+		{
+			"forge": "bootstrap(Registry<com.mojang.serialization.Codec<? extends ChunkGenerator>> arg0)",
+			"fabric": "registerAndGetDefault(Registry<com.mojang.serialization.Codec<? extends ChunkGenerator>> registry)"
+		}
+	]
+}

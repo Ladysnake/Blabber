@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.renderer.texture.SpriteLoader$Preparations",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.SpriteLoader$Preparations",
+			"fabric": "net.minecraft.client.texture.SpriteLoader$StitchResult"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "mipLevel",
+			"fabric": "mipLevel"
+		},
+		{
+			"forge": "missing",
+			"fabric": "missing"
+		},
+		{
+			"forge": "regions",
+			"fabric": "regions"
+		},
+		{
+			"forge": "readyForUpload",
+			"fabric": "readyForUpload"
+		},
+		{
+			"forge": "waitForUpload()",
+			"fabric": "whenComplete()"
+		},
+		{
+			"forge": "waitForUpload()",
+			"fabric": "whenComplete()"
+		},
+		{
+			"forge": "width()",
+			"fabric": "width()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "height()"
+		},
+		{
+			"forge": "mipLevel()",
+			"fabric": "mipLevel()"
+		},
+		{
+			"forge": "missing()",
+			"fabric": "missing()"
+		},
+		{
+			"forge": "regions()",
+			"fabric": "regions()"
+		},
+		{
+			"forge": "readyForUpload()",
+			"fabric": "readyForUpload()"
+		}
+	]
+}

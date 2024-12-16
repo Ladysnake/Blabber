@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.Spider$SpiderTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Spider$SpiderTargetGoal",
+			"fabric": "net.minecraft.entity.mob.SpiderEntity$TargetGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

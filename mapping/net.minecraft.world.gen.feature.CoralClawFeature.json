@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.CoralClawFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.CoralClawFeature",
+			"fabric": "net.minecraft.world.gen.feature.CoralClawFeature"
+		},
+		{
+			"forge": "placeFeature(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "generateCoral(WorldAccess arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "placeFeature(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "generateCoral(WorldAccess arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		}
+	]
+}

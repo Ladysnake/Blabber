@@ -1,0 +1,61 @@
+{
+	"title": "com.mojang.blaze3d.systems.RenderSystem$AutoStorageIndexBuffer",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.systems.RenderSystem$AutoStorageIndexBuffer",
+			"fabric": "com.mojang.blaze3d.systems.RenderSystem$ShapeIndexBuffer"
+		},
+		{
+			"forge": "vertexStride",
+			"fabric": "vertexCountInShape"
+		},
+		{
+			"forge": "vertexStride",
+			"fabric": "vertexCountInShape"
+		},
+		{
+			"forge": "indexStride",
+			"fabric": "vertexCountInTriangulated"
+		},
+		{
+			"forge": "generator",
+			"fabric": "triangulator"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "type",
+			"fabric": "indexType"
+		},
+		{
+			"forge": "indexCount",
+			"fabric": "size"
+		},
+		{
+			"forge": "hasStorage(int arg0)",
+			"fabric": "isLargeEnough(int requiredSize)"
+		},
+		{
+			"forge": "hasStorage(int arg0)",
+			"fabric": "isLargeEnough(int requiredSize)"
+		},
+		{
+			"forge": "bind(int arg0)",
+			"fabric": "bindAndGrow(int requiredSize)"
+		},
+		{
+			"forge": "ensureStorage(int arg0)",
+			"fabric": "grow(int requiredSize)"
+		},
+		{
+			"forge": "intConsumer(ByteBuffer arg0)",
+			"fabric": "getIndexConsumer(ByteBuffer indexBuffer)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getIndexType()"
+		}
+	]
+}

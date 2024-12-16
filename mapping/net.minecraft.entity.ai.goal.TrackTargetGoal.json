@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.target.TargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.target.TargetGoal",
+			"fabric": "net.minecraft.entity.ai.goal.TrackTargetGoal"
+		},
+		{
+			"forge": "EMPTY_REACH_CACHE",
+			"fabric": "UNSET"
+		},
+		{
+			"forge": "EMPTY_REACH_CACHE",
+			"fabric": "UNSET"
+		},
+		{
+			"forge": "CAN_REACH_CACHE",
+			"fabric": "CAN_TRACK"
+		},
+		{
+			"forge": "CANT_REACH_CACHE",
+			"fabric": "CANNOT_TRACK"
+		},
+		{
+			"forge": "mob",
+			"fabric": "mob"
+		},
+		{
+			"forge": "mustSee",
+			"fabric": "checkVisibility"
+		},
+		{
+			"forge": "mustReach",
+			"fabric": "checkCanNavigate"
+		},
+		{
+			"forge": "reachCache",
+			"fabric": "canNavigateFlag"
+		},
+		{
+			"forge": "reachCacheTime",
+			"fabric": "checkCanNavigateCooldown"
+		},
+		{
+			"forge": "unseenTicks",
+			"fabric": "timeWithoutVisibility"
+		},
+		{
+			"forge": "targetMob",
+			"fabric": "target"
+		},
+		{
+			"forge": "unseenMemoryTicks",
+			"fabric": "maxTimeWithoutVisibility"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "getFollowDistance()",
+			"fabric": "getFollowRange()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "canAttack(LivingEntity arg0, TargetingConditions arg1)",
+			"fabric": "canTrack(LivingEntity target, TargetPredicate targetPredicate)"
+		},
+		{
+			"forge": "canReach(LivingEntity arg0)",
+			"fabric": "canNavigateToEntity(LivingEntity entity)"
+		},
+		{
+			"forge": "setUnseenMemoryTicks(int arg0)",
+			"fabric": "setMaxTimeWithoutVisibility(int time)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.NoiseChunk$NoiseChunkDensityFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.NoiseChunk$NoiseChunkDensityFunction",
+			"fabric": "net.minecraft.world.gen.chunk.ChunkNoiseSampler$ParentedNoiseType"
+		},
+		{
+			"forge": "wrapped()",
+			"fabric": "wrapped()"
+		},
+		{
+			"forge": "wrapped()",
+			"fabric": "wrapped()"
+		},
+		{
+			"forge": "minValue()",
+			"fabric": "minValue()"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "maxValue()"
+		}
+	]
+}

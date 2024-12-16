@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.item.TooltipFlag",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.TooltipFlag",
+			"fabric": "net.minecraft.client.item.TooltipContext"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "BASIC"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "BASIC"
+		},
+		{
+			"forge": "ADVANCED",
+			"fabric": "ADVANCED"
+		},
+		{
+			"forge": "isAdvanced()",
+			"fabric": "isAdvanced()"
+		},
+		{
+			"forge": "isAdvanced()",
+			"fabric": "isAdvanced()"
+		},
+		{
+			"forge": "isCreative()",
+			"fabric": "isCreative()"
+		}
+	]
+}

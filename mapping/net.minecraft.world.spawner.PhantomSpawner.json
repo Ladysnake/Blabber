@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.levelgen.PhantomSpawner",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.PhantomSpawner",
+			"fabric": "net.minecraft.world.spawner.PhantomSpawner"
+		},
+		{
+			"forge": "nextTick",
+			"fabric": "cooldown"
+		},
+		{
+			"forge": "nextTick",
+			"fabric": "cooldown"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, boolean arg1, boolean arg2)",
+			"fabric": "spawn(ServerWorld arg0, boolean arg1, boolean arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, boolean arg1, boolean arg2)",
+			"fabric": "spawn(ServerWorld arg0, boolean arg1, boolean arg2)"
+		}
+	]
+}

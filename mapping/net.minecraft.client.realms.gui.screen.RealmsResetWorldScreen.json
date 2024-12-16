@@ -1,0 +1,153 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsResetWorldScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsResetWorldScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsResetWorldScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "serverData"
+		},
+		{
+			"forge": "subtitle",
+			"fabric": "subtitle"
+		},
+		{
+			"forge": "buttonTitle",
+			"fabric": "buttonTitle"
+		},
+		{
+			"forge": "subtitleColor",
+			"fabric": "subtitleColor"
+		},
+		{
+			"forge": "SLOT_FRAME_LOCATION",
+			"fabric": "SLOT_FRAME_TEXTURE"
+		},
+		{
+			"forge": "UPLOAD_LOCATION",
+			"fabric": "UPLOAD_TEXTURE"
+		},
+		{
+			"forge": "ADVENTURE_MAP_LOCATION",
+			"fabric": "ADVENTURE_TEXTURE"
+		},
+		{
+			"forge": "SURVIVAL_SPAWN_LOCATION",
+			"fabric": "SURVIVAL_SPAWN_TEXTURE"
+		},
+		{
+			"forge": "NEW_WORLD_LOCATION",
+			"fabric": "NEW_WORLD_TEXTURE"
+		},
+		{
+			"forge": "EXPERIENCE_LOCATION",
+			"fabric": "EXPERIENCE_TEXTURE"
+		},
+		{
+			"forge": "INSPIRATION_LOCATION",
+			"fabric": "INSPIRATION_TEXTURE"
+		},
+		{
+			"forge": "templates",
+			"fabric": "normalWorldTemplates"
+		},
+		{
+			"forge": "adventuremaps",
+			"fabric": "adventureWorldTemplates"
+		},
+		{
+			"forge": "experiences",
+			"fabric": "experienceWorldTemplates"
+		},
+		{
+			"forge": "inspirations",
+			"fabric": "inspirationWorldTemplates"
+		},
+		{
+			"forge": "slot",
+			"fabric": "slot"
+		},
+		{
+			"forge": "resetTitle",
+			"fabric": "resetTitle"
+		},
+		{
+			"forge": "resetWorldRunnable",
+			"fabric": "resetCallback"
+		},
+		{
+			"forge": "callback",
+			"fabric": "selectFileUploadCallback"
+		},
+		{
+			"forge": "setSlot(int arg0)",
+			"fabric": "setSlot(int slot)"
+		},
+		{
+			"forge": "setSlot(int arg0)",
+			"fabric": "setSlot(int slot)"
+		},
+		{
+			"forge": "setResetTitle(Component arg0)",
+			"fabric": "setResetTitle(Text resetTitle)"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "frame(int arg0)",
+			"fabric": "frame(int i)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "drawFrame(GuiGraphics arg0, int arg1, int arg2, Component arg3, ResourceLocation arg4, boolean arg5, boolean arg6)",
+			"fabric": "drawFrame(DrawContext context, int x, int y, Text text, Identifier texture, boolean hovered, boolean mouseOver)"
+		},
+		{
+			"forge": "startTask(LongRunningTask arg0)",
+			"fabric": "executeLongRunningTask(LongRunningTask task)"
+		},
+		{
+			"forge": "switchSlot(Runnable arg0)",
+			"fabric": "switchSlot(Runnable callback)"
+		},
+		{
+			"forge": "templateSelectionCallback(WorldTemplate arg0)",
+			"fabric": "onSelectWorldTemplate(WorldTemplate template)"
+		},
+		{
+			"forge": "generationSelectionCallback(WorldGenerationInfo arg0)",
+			"fabric": "onResetNormalWorld(ResetWorldInfo info)"
+		},
+		{
+			"forge": "resetWorld(Runnable arg0)",
+			"fabric": "switchSlotAndResetWorld(Runnable resetter)"
+		}
+	]
+}

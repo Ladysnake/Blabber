@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.RandomPatchFeatureConfig"
+		},
+		{
+			"forge": "tries",
+			"fabric": "tries"
+		},
+		{
+			"forge": "tries",
+			"fabric": "tries"
+		},
+		{
+			"forge": "xzSpread",
+			"fabric": "xzSpread"
+		},
+		{
+			"forge": "ySpread",
+			"fabric": "ySpread"
+		},
+		{
+			"forge": "feature",
+			"fabric": "feature"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "tries()",
+			"fabric": "tries()"
+		},
+		{
+			"forge": "tries()",
+			"fabric": "tries()"
+		},
+		{
+			"forge": "xzSpread()",
+			"fabric": "xzSpread()"
+		},
+		{
+			"forge": "ySpread()",
+			"fabric": "ySpread()"
+		},
+		{
+			"forge": "feature()",
+			"fabric": "feature()"
+		}
+	]
+}

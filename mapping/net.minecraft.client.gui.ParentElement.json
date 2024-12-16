@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.client.gui.components.events.ContainerEventHandler",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.events.ContainerEventHandler",
+			"fabric": "net.minecraft.client.gui.ParentElement"
+		},
+		{
+			"forge": "children()",
+			"fabric": "children()"
+		},
+		{
+			"forge": "children()",
+			"fabric": "children()"
+		},
+		{
+			"forge": "getChildAt(double arg0, double arg1)",
+			"fabric": "hoveredElement(double mouseX, double mouseY)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseReleased(double arg0, double arg1, int arg2)",
+			"fabric": "mouseReleased(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)",
+			"fabric": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "isDragging()",
+			"fabric": "isDragging()"
+		},
+		{
+			"forge": "setDragging(boolean arg0)",
+			"fabric": "setDragging(boolean dragging)"
+		},
+		{
+			"forge": "mouseScrolled(double arg0, double arg1, double arg2)",
+			"fabric": "mouseScrolled(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "keyReleased(int arg0, int arg1, int arg2)",
+			"fabric": "keyReleased(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "charTyped(char arg0, int arg1)",
+			"fabric": "charTyped(char arg0, int arg1)"
+		},
+		{
+			"forge": "getFocused()",
+			"fabric": "getFocused()"
+		},
+		{
+			"forge": "setFocused(GuiEventListener arg0)",
+			"fabric": "setFocused(Element focused)"
+		},
+		{
+			"forge": "setFocused(boolean arg0)",
+			"fabric": "setFocused(boolean arg0)"
+		},
+		{
+			"forge": "isFocused()",
+			"fabric": "isFocused()"
+		},
+		{
+			"forge": "getCurrentFocusPath()",
+			"fabric": "getFocusedPath()"
+		},
+		{
+			"forge": "magicalSpecialHackyFocus(GuiEventListener arg0)",
+			"fabric": "focusOn(Element element)"
+		},
+		{
+			"forge": "nextFocusPath(FocusNavigationEvent arg0)",
+			"fabric": "getNavigationPath(GuiNavigation arg0)"
+		},
+		{
+			"forge": "handleTabNavigation(FocusNavigationEvent$TabNavigation arg0)",
+			"fabric": "computeNavigationPath(GuiNavigation$Tab navigation)"
+		},
+		{
+			"forge": "handleArrowNavigation(FocusNavigationEvent$ArrowNavigation arg0)",
+			"fabric": "computeNavigationPath(GuiNavigation$Arrow navigation)"
+		},
+		{
+			"forge": "nextFocusPathInDirection(ScreenRectangle arg0, ScreenDirection arg1, GuiEventListener arg2, FocusNavigationEvent arg3)",
+			"fabric": "computeChildPath(ScreenRect focus, NavigationDirection direction, Element focused, GuiNavigation navigation)"
+		},
+		{
+			"forge": "nextFocusPathVaguelyInDirection(ScreenRectangle arg0, ScreenDirection arg1, GuiEventListener arg2, FocusNavigationEvent arg3)",
+			"fabric": "computeInitialChildPath(ScreenRect focus, NavigationDirection direction, Element focused, GuiNavigation navigation)"
+		}
+	]
+}

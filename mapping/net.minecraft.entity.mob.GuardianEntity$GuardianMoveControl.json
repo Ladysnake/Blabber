@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.monster.Guardian$GuardianMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Guardian$GuardianMoveControl",
+			"fabric": "net.minecraft.entity.mob.GuardianEntity$GuardianMoveControl"
+		},
+		{
+			"forge": "guardian",
+			"fabric": "guardian"
+		},
+		{
+			"forge": "guardian",
+			"fabric": "guardian"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

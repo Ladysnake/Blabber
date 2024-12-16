@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction",
+			"fabric": "net.minecraft.loot.function.EnchantWithLevelsLootFunction"
+		},
+		{
+			"forge": "levels",
+			"fabric": "range"
+		},
+		{
+			"forge": "levels",
+			"fabric": "range"
+		},
+		{
+			"forge": "treasure",
+			"fabric": "treasureEnchantmentsAllowed"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "enchantWithLevels(NumberProvider arg0)",
+			"fabric": "builder(LootNumberProvider range)"
+		}
+	]
+}

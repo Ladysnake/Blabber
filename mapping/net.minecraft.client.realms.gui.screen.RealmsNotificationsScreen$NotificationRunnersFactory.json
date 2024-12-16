@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsNotificationsScreen$DataFetcherConfiguration",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsNotificationsScreen$DataFetcherConfiguration",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsNotificationsScreen$NotificationRunnersFactory"
+		},
+		{
+			"forge": "initDataFetcher(RealmsDataFetcher arg0)",
+			"fabric": "createPeriodicRunnersManager(RealmsPeriodicCheckers checkers)"
+		},
+		{
+			"forge": "initDataFetcher(RealmsDataFetcher arg0)",
+			"fabric": "createPeriodicRunnersManager(RealmsPeriodicCheckers checkers)"
+		},
+		{
+			"forge": "showOldNotifications()",
+			"fabric": "isNews()"
+		}
+	]
+}

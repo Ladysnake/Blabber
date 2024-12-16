@@ -1,0 +1,181 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSelectWorldTemplateScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSelectWorldTemplateScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSelectWorldTemplateScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LINK_ICON",
+			"fabric": "LINK_ICONS"
+		},
+		{
+			"forge": "TRAILER_ICON",
+			"fabric": "TRAILER_ICONS"
+		},
+		{
+			"forge": "SLOT_FRAME_LOCATION",
+			"fabric": "SLOT_FRAME"
+		},
+		{
+			"forge": "PUBLISHER_LINK_TOOLTIP",
+			"fabric": "INFO_TOOLTIP"
+		},
+		{
+			"forge": "TRAILER_LINK_TOOLTIP",
+			"fabric": "TRAILER_TOOLTIP"
+		},
+		{
+			"forge": "callback",
+			"fabric": "callback"
+		},
+		{
+			"forge": "worldTemplateObjectSelectionList",
+			"fabric": "templateList"
+		},
+		{
+			"forge": "selectedTemplate",
+			"fabric": "selectedTemplate"
+		},
+		{
+			"forge": "selectButton",
+			"fabric": "selectButton"
+		},
+		{
+			"forge": "trailerButton",
+			"fabric": "trailerButton"
+		},
+		{
+			"forge": "publisherButton",
+			"fabric": "publisherButton"
+		},
+		{
+			"forge": "toolTip",
+			"fabric": "tooltip"
+		},
+		{
+			"forge": "currentLink",
+			"fabric": "currentLink"
+		},
+		{
+			"forge": "worldType",
+			"fabric": "worldType"
+		},
+		{
+			"forge": "clicks",
+			"fabric": "clicks"
+		},
+		{
+			"forge": "warning",
+			"fabric": "warning"
+		},
+		{
+			"forge": "warningURL",
+			"fabric": "warningURL"
+		},
+		{
+			"forge": "displayWarning",
+			"fabric": "displayWarning"
+		},
+		{
+			"forge": "hoverWarning",
+			"fabric": "hoverWarning"
+		},
+		{
+			"forge": "noTemplatesMessage",
+			"fabric": "noTemplatesMessage"
+		},
+		{
+			"forge": "setWarning(Component... arg0)",
+			"fabric": "setWarning(Text... warning)"
+		},
+		{
+			"forge": "setWarning(Component... arg0)",
+			"fabric": "setWarning(Text... warning)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "updateButtonStates()",
+			"fabric": "updateButtonStates()"
+		},
+		{
+			"forge": "shouldSelectButtonBeActive()",
+			"fabric": "shouldSelectButtonBeActive()"
+		},
+		{
+			"forge": "shouldPublisherBeVisible()",
+			"fabric": "shouldPublisherBeVisible()"
+		},
+		{
+			"forge": "getSelectedTemplate()",
+			"fabric": "getSelectedTemplate()"
+		},
+		{
+			"forge": "shouldTrailerBeVisible()",
+			"fabric": "shouldTrailerBeVisible()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "selectTemplate()",
+			"fabric": "selectTemplate()"
+		},
+		{
+			"forge": "hasValidTemplate()",
+			"fabric": "isSelectionValid()"
+		},
+		{
+			"forge": "onTrailer()",
+			"fabric": "onTrailer()"
+		},
+		{
+			"forge": "onPublish()",
+			"fabric": "onPublish()"
+		},
+		{
+			"forge": "fetchTemplatesAsync(WorldTemplatePaginatedList arg0)",
+			"fabric": "setPagination(WorldTemplatePaginatedList templateList)"
+		},
+		{
+			"forge": "fetchTemplates(WorldTemplatePaginatedList arg0, RealmsClient arg1)",
+			"fabric": "fetchWorldTemplates(WorldTemplatePaginatedList templateList, RealmsClient realms)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderMultilineMessage(GuiGraphics arg0, int arg1, int arg2, List<TextRenderingUtils$Line> arg3)",
+			"fabric": "renderMessages(DrawContext context, int x, int y, List<TextRenderingUtils$Line> messages)"
+		},
+		{
+			"forge": "renderMousehoverTooltip(GuiGraphics arg0, Component arg1, int arg2, int arg3)",
+			"fabric": "renderMousehoverTooltip(DrawContext context, Text tooltip, int mouseX, int mouseY)"
+		}
+	]
+}

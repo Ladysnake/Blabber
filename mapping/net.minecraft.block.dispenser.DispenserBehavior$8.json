@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.core.dispenser.DispenseItemBehavior$16",
+	"items": [
+		{
+			"forge": "net.minecraft.core.dispenser.DispenseItemBehavior$16",
+			"fabric": "net.minecraft.block.dispenser.DispenserBehavior$8"
+		},
+		{
+			"forge": "defaultDispenseItemBehavior",
+			"fabric": "fallbackBehavior"
+		},
+		{
+			"forge": "defaultDispenseItemBehavior",
+			"fabric": "fallbackBehavior"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		}
+	]
+}

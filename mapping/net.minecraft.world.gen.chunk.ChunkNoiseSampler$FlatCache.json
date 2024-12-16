@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.NoiseChunk$FlatCache",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.NoiseChunk$FlatCache",
+			"fabric": "net.minecraft.world.gen.chunk.ChunkNoiseSampler$FlatCache"
+		},
+		{
+			"forge": "noiseFiller",
+			"fabric": "delegate"
+		},
+		{
+			"forge": "noiseFiller",
+			"fabric": "delegate"
+		},
+		{
+			"forge": "values",
+			"fabric": "cache"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "compute(DensityFunction$FunctionContext arg0)",
+			"fabric": "sample(DensityFunction$NoisePos arg0)"
+		},
+		{
+			"forge": "fillArray(double[] arg0, DensityFunction$ContextProvider arg1)",
+			"fabric": "fill(double[] arg0, DensityFunction$EachApplier arg1)"
+		},
+		{
+			"forge": "wrapped()",
+			"fabric": "wrapped()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "type()"
+		}
+	]
+}

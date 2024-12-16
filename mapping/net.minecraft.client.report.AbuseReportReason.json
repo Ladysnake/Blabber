@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.ReportReason",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.ReportReason",
+			"fabric": "net.minecraft.client.report.AbuseReportReason"
+		},
+		{
+			"forge": "HATE_SPEECH",
+			"fabric": "HATE_SPEECH"
+		},
+		{
+			"forge": "HATE_SPEECH",
+			"fabric": "HATE_SPEECH"
+		},
+		{
+			"forge": "TERRORISM_OR_VIOLENT_EXTREMISM",
+			"fabric": "TERRORISM_OR_VIOLENT_EXTREMISM"
+		},
+		{
+			"forge": "CHILD_SEXUAL_EXPLOITATION_OR_ABUSE",
+			"fabric": "CHILD_SEXUAL_EXPLOITATION_OR_ABUSE"
+		},
+		{
+			"forge": "IMMINENT_HARM",
+			"fabric": "IMMINENT_HARM"
+		},
+		{
+			"forge": "NON_CONSENSUAL_INTIMATE_IMAGERY",
+			"fabric": "NON_CONSENSUAL_INTIMATE_IMAGERY"
+		},
+		{
+			"forge": "HARASSMENT_OR_BULLYING",
+			"fabric": "HARASSMENT_OR_BULLYING"
+		},
+		{
+			"forge": "DEFAMATION_IMPERSONATION_FALSE_INFORMATION",
+			"fabric": "DEFAMATION_IMPERSONATION_FALSE_INFORMATION"
+		},
+		{
+			"forge": "SELF_HARM_OR_SUICIDE",
+			"fabric": "SELF_HARM_OR_SUICIDE"
+		},
+		{
+			"forge": "ALCOHOL_TOBACCO_DRUGS",
+			"fabric": "ALCOHOL_TOBACCO_DRUGS"
+		},
+		{
+			"forge": "backendName",
+			"fabric": "id"
+		},
+		{
+			"forge": "backendName",
+			"fabric": "id"
+		},
+		{
+			"forge": "title",
+			"fabric": "text"
+		},
+		{
+			"forge": "description",
+			"fabric": "description"
+		},
+		{
+			"forge": "backendName()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "backendName()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "title()",
+			"fabric": "getText()"
+		},
+		{
+			"forge": "description()",
+			"fabric": "getDescription()"
+		}
+	]
+}

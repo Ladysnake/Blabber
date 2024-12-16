@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.food.FoodConstants",
+	"items": [
+		{
+			"forge": "net.minecraft.world.food.FoodConstants",
+			"fabric": "net.minecraft.entity.player.HungerConstants"
+		},
+		{
+			"forge": "MAX_FOOD",
+			"fabric": "FULL_FOOD_LEVEL"
+		},
+		{
+			"forge": "MAX_FOOD",
+			"fabric": "FULL_FOOD_LEVEL"
+		},
+		{
+			"forge": "MAX_SATURATION",
+			"fabric": "field_30705"
+		},
+		{
+			"forge": "START_SATURATION",
+			"fabric": "INITIAL_SATURATION_LEVEL"
+		},
+		{
+			"forge": "SATURATION_FLOOR",
+			"fabric": "field_30707"
+		},
+		{
+			"forge": "EXHAUSTION_DROP",
+			"fabric": "EXHAUSTION_UNIT"
+		},
+		{
+			"forge": "HEALTH_TICK_COUNT",
+			"fabric": "SLOW_HEALING_STARVING_INTERVAL"
+		},
+		{
+			"forge": "HEALTH_TICK_COUNT_SATURATED",
+			"fabric": "FAST_HEALING_INTERVAL"
+		},
+		{
+			"forge": "HEAL_LEVEL",
+			"fabric": "SLOW_HEALING_FOOD_LEVEL"
+		},
+		{
+			"forge": "SPRINT_LEVEL",
+			"fabric": "EXHAUSTION_PER_HITPOINT"
+		},
+		{
+			"forge": "STARVE_LEVEL",
+			"fabric": "STARVING_FOOD_LEVEL"
+		},
+		{
+			"forge": "FOOD_SATURATION_POOR",
+			"fabric": "field_30714"
+		},
+		{
+			"forge": "FOOD_SATURATION_LOW",
+			"fabric": "field_30715"
+		},
+		{
+			"forge": "FOOD_SATURATION_NORMAL",
+			"fabric": "field_30716"
+		},
+		{
+			"forge": "FOOD_SATURATION_GOOD",
+			"fabric": "field_30717"
+		},
+		{
+			"forge": "FOOD_SATURATION_MAX",
+			"fabric": "field_30718"
+		},
+		{
+			"forge": "FOOD_SATURATION_SUPERNATURAL",
+			"fabric": "field_30719"
+		},
+		{
+			"forge": "EXHAUSTION_HEAL",
+			"fabric": "field_30720"
+		},
+		{
+			"forge": "EXHAUSTION_JUMP",
+			"fabric": "field_30721"
+		},
+		{
+			"forge": "EXHAUSTION_SPRINT_JUMP",
+			"fabric": "field_30722"
+		},
+		{
+			"forge": "EXHAUSTION_MINE",
+			"fabric": "field_30723"
+		},
+		{
+			"forge": "EXHAUSTION_ATTACK",
+			"fabric": "field_30724"
+		},
+		{
+			"forge": "EXHAUSTION_WALK",
+			"fabric": "field_30726"
+		},
+		{
+			"forge": "EXHAUSTION_CROUCH",
+			"fabric": "field_30727"
+		},
+		{
+			"forge": "EXHAUSTION_SPRINT",
+			"fabric": "field_30728"
+		},
+		{
+			"forge": "EXHAUSTION_SWIM",
+			"fabric": "field_30729"
+		}
+	]
+}

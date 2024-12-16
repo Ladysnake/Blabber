@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.entity.monster.warden.AngerManagement",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.warden.AngerManagement",
+			"fabric": "net.minecraft.entity.ai.WardenAngerManager"
+		},
+		{
+			"forge": "CONVERSION_DELAY",
+			"fabric": "field_38733"
+		},
+		{
+			"forge": "CONVERSION_DELAY",
+			"fabric": "field_38733"
+		},
+		{
+			"forge": "MAX_ANGER",
+			"fabric": "maxAnger"
+		},
+		{
+			"forge": "DEFAULT_ANGER_DECREASE",
+			"fabric": "angerDecreasePerTick"
+		},
+		{
+			"forge": "conversionDelay",
+			"fabric": "updateTimer"
+		},
+		{
+			"forge": "highestAnger",
+			"fabric": "primeAnger"
+		},
+		{
+			"forge": "SUSPECT_ANGER_PAIR",
+			"fabric": "SUSPECT_CODEC"
+		},
+		{
+			"forge": "filter",
+			"fabric": "suspectPredicate"
+		},
+		{
+			"forge": "suspects",
+			"fabric": "suspects"
+		},
+		{
+			"forge": "suspectSorter",
+			"fabric": "suspectComparator"
+		},
+		{
+			"forge": "angerBySuspect",
+			"fabric": "suspectsToAngerLevel"
+		},
+		{
+			"forge": "angerByUuid",
+			"fabric": "suspectUuidsToAngerLevel"
+		},
+		{
+			"forge": "codec(Predicate<Entity> arg0)",
+			"fabric": "createCodec(Predicate<Entity> suspectPredicate)"
+		},
+		{
+			"forge": "codec(Predicate<Entity> arg0)",
+			"fabric": "createCodec(Predicate<Entity> suspectPredicate)"
+		},
+		{
+			"forge": "createUuidAngerPairs()",
+			"fabric": "getSuspects()"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Predicate<Entity> arg1)",
+			"fabric": "tick(ServerWorld world, Predicate<Entity> suspectPredicate)"
+		},
+		{
+			"forge": "sortAndUpdateHighestAnger()",
+			"fabric": "updatePrimeAnger()"
+		},
+		{
+			"forge": "convertFromUuids(ServerLevel arg0)",
+			"fabric": "updateSuspectsMap(ServerWorld world)"
+		},
+		{
+			"forge": "increaseAnger(Entity arg0, int arg1)",
+			"fabric": "increaseAngerAt(Entity entity, int amount)"
+		},
+		{
+			"forge": "clearAnger(Entity arg0)",
+			"fabric": "removeSuspect(Entity entity)"
+		},
+		{
+			"forge": "getTopSuspect()",
+			"fabric": "getPrimeSuspectInternal()"
+		},
+		{
+			"forge": "getActiveAnger(Entity arg0)",
+			"fabric": "getAngerFor(Entity entity)"
+		},
+		{
+			"forge": "getActiveEntity()",
+			"fabric": "getPrimeSuspect()"
+		}
+	]
+}

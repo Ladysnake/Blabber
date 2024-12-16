@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.redstone.CollectingNeighborUpdater$NeighborUpdates",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.redstone.CollectingNeighborUpdater$NeighborUpdates",
+			"fabric": "net.minecraft.world.block.ChainRestrictedNeighborUpdater$Entry"
+		},
+		{
+			"forge": "runNext(Level arg0)",
+			"fabric": "update(World world)"
+		},
+		{
+			"forge": "runNext(Level arg0)",
+			"fabric": "update(World world)"
+		}
+	]
+}

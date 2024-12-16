@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.data.advancements.packs.VanillaAdventureAdvancements",
+	"items": [
+		{
+			"forge": "net.minecraft.data.advancements.packs.VanillaAdventureAdvancements",
+			"fabric": "net.minecraft.data.server.advancement.vanilla.VanillaAdventureTabAdvancementGenerator"
+		},
+		{
+			"forge": "DISTANCE_FROM_BOTTOM_TO_TOP",
+			"fabric": "OVERWORLD_HEIGHT"
+		},
+		{
+			"forge": "DISTANCE_FROM_BOTTOM_TO_TOP",
+			"fabric": "OVERWORLD_HEIGHT"
+		},
+		{
+			"forge": "Y_COORDINATE_AT_TOP",
+			"fabric": "OVERWORLD_MAX_Y"
+		},
+		{
+			"forge": "Y_COORDINATE_AT_BOTTOM",
+			"fabric": "OVERWORLD_MIN_Y"
+		},
+		{
+			"forge": "BEDROCK_THICKNESS",
+			"fabric": "OVERWORLD_BEDROCK_LAYER_HEIGHT"
+		},
+		{
+			"forge": "MOBS_TO_KILL",
+			"fabric": "MONSTERS"
+		},
+		{
+			"forge": "fireCountAndBystander(MinMaxBounds$Ints arg0, EntityPredicate arg1)",
+			"fabric": "createLightningStrike(NumberRange$IntRange range, EntityPredicate entity)"
+		},
+		{
+			"forge": "fireCountAndBystander(MinMaxBounds$Ints arg0, EntityPredicate arg1)",
+			"fabric": "createLightningStrike(NumberRange$IntRange range, EntityPredicate entity)"
+		},
+		{
+			"forge": "lookAtThroughItem(EntityType<?> arg0, Item arg1)",
+			"fabric": "createLookingAtEntityUsing(EntityType<?> entity, Item item)"
+		},
+		{
+			"forge": "generate(HolderLookup$Provider arg0, Consumer<Advancement> arg1)",
+			"fabric": "accept(RegistryWrapper$WrapperLookup arg0, Consumer<Advancement> arg1)"
+		},
+		{
+			"forge": "placedBlockReadByComparator(Block arg0)",
+			"fabric": "requirePlacedBlockReadByComparator(Block block)"
+		},
+		{
+			"forge": "placedComparatorReadingBlock(Block arg0)",
+			"fabric": "requirePlacedComparatorReadingBlock(Block block)"
+		},
+		{
+			"forge": "smithingWithStyle(Advancement$Builder arg0)",
+			"fabric": "requireAllExclusiveTrimmedArmor(Advancement$Builder builder)"
+		},
+		{
+			"forge": "craftingANewLook(Advancement$Builder arg0)",
+			"fabric": "requireTrimmedArmor(Advancement$Builder builder)"
+		},
+		{
+			"forge": "respectingTheRemnantsCriterions(Advancement$Builder arg0)",
+			"fabric": "requireSalvagedSherd(Advancement$Builder builder)"
+		},
+		{
+			"forge": "createAdventuringTime(Consumer<Advancement> arg0, Advancement arg1, MultiNoiseBiomeSourceParameterList$Preset arg2)",
+			"fabric": "buildAdventuringTime(Consumer<Advancement> exporter, Advancement parent, MultiNoiseBiomeSourceParameterList$Preset preset)"
+		},
+		{
+			"forge": "addMobsToKill(Advancement$Builder arg0)",
+			"fabric": "requireListedMobsKilled(Advancement$Builder builder)"
+		},
+		{
+			"forge": "addBiomes(Advancement$Builder arg0, List<ResourceKey<Biome>> arg1)",
+			"fabric": "requireListedBiomesVisited(Advancement$Builder builder, List<RegistryKey<Biome>> biomes)"
+		}
+	]
+}

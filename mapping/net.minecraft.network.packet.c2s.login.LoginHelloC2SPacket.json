@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.protocol.login.ServerboundHelloPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.login.ServerboundHelloPacket",
+			"fabric": "net.minecraft.network.packet.c2s.login.LoginHelloC2SPacket"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "profileId",
+			"fabric": "profileId"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerLoginPacketListener arg0)",
+			"fabric": "apply(ServerLoginPacketListener arg0)"
+		},
+		{
+			"forge": "name()",
+			"fabric": "name()"
+		},
+		{
+			"forge": "profileId()",
+			"fabric": "profileId()"
+		}
+	]
+}

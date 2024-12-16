@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.projectile.Snowball",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.Snowball",
+			"fabric": "net.minecraft.entity.projectile.thrown.SnowballEntity"
+		},
+		{
+			"forge": "getDefaultItem()",
+			"fabric": "getDefaultItem()"
+		},
+		{
+			"forge": "getDefaultItem()",
+			"fabric": "getDefaultItem()"
+		},
+		{
+			"forge": "getParticle()",
+			"fabric": "getParticleParameters()"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "onHitEntity(EntityHitResult arg0)",
+			"fabric": "onEntityHit(EntityHitResult arg0)"
+		},
+		{
+			"forge": "onHit(HitResult arg0)",
+			"fabric": "onCollision(HitResult arg0)"
+		}
+	]
+}

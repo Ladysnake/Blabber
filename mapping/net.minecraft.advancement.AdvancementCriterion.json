@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.advancements.Criterion",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.Criterion",
+			"fabric": "net.minecraft.advancement.AdvancementCriterion"
+		},
+		{
+			"forge": "trigger",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "trigger",
+			"fabric": "conditions"
+		},
+		{
+			"forge": "serializeToNetwork(FriendlyByteBuf arg0)",
+			"fabric": "toPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "serializeToNetwork(FriendlyByteBuf arg0)",
+			"fabric": "toPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "criterionFromJson(com.google.gson.JsonObject arg0, DeserializationContext arg1)",
+			"fabric": "fromJson(com.google.gson.JsonObject obj, AdvancementEntityPredicateDeserializer predicateDeserializer)"
+		},
+		{
+			"forge": "criterionFromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "criteriaFromJson(com.google.gson.JsonObject arg0, DeserializationContext arg1)",
+			"fabric": "criteriaFromJson(com.google.gson.JsonObject obj, AdvancementEntityPredicateDeserializer predicateDeserializer)"
+		},
+		{
+			"forge": "criteriaFromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "criteriaFromPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "serializeToNetwork(Map<String, Criterion> arg0, FriendlyByteBuf arg1)",
+			"fabric": "criteriaToPacket(Map<String, AdvancementCriterion> criteria, PacketByteBuf buf)"
+		},
+		{
+			"forge": "getTrigger()",
+			"fabric": "getConditions()"
+		},
+		{
+			"forge": "serializeToJson()",
+			"fabric": "toJson()"
+		}
+	]
+}

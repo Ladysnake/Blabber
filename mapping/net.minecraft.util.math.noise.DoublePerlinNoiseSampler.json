@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.level.levelgen.synth.NormalNoise",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.synth.NormalNoise",
+			"fabric": "net.minecraft.util.math.noise.DoublePerlinNoiseSampler"
+		},
+		{
+			"forge": "INPUT_FACTOR",
+			"fabric": "DOMAIN_SCALE"
+		},
+		{
+			"forge": "INPUT_FACTOR",
+			"fabric": "DOMAIN_SCALE"
+		},
+		{
+			"forge": "TARGET_DEVIATION",
+			"fabric": "field_31703"
+		},
+		{
+			"forge": "valueFactor",
+			"fabric": "amplitude"
+		},
+		{
+			"forge": "first",
+			"fabric": "firstSampler"
+		},
+		{
+			"forge": "second",
+			"fabric": "secondSampler"
+		},
+		{
+			"forge": "maxValue",
+			"fabric": "maxValue"
+		},
+		{
+			"forge": "parameters",
+			"fabric": "parameters"
+		},
+		{
+			"forge": "createLegacyNetherBiome(RandomSource arg0, NormalNoise$NoiseParameters arg1)",
+			"fabric": "createLegacy(Random random, DoublePerlinNoiseSampler$NoiseParameters parameters)"
+		},
+		{
+			"forge": "createLegacyNetherBiome(RandomSource arg0, NormalNoise$NoiseParameters arg1)",
+			"fabric": "createLegacy(Random random, DoublePerlinNoiseSampler$NoiseParameters parameters)"
+		},
+		{
+			"forge": "create(RandomSource arg0, int arg1, double... arg2)",
+			"fabric": "create(Random random, int offset, double... octaves)"
+		},
+		{
+			"forge": "create(RandomSource arg0, NormalNoise$NoiseParameters arg1)",
+			"fabric": "create(Random random, DoublePerlinNoiseSampler$NoiseParameters parameters)"
+		},
+		{
+			"forge": "maxValue()",
+			"fabric": "getMaxValue()"
+		},
+		{
+			"forge": "expectedDeviation(int arg0)",
+			"fabric": "createAmplitude(int octaves)"
+		},
+		{
+			"forge": "getValue(double arg0, double arg1, double arg2)",
+			"fabric": "sample(double x, double y, double z)"
+		},
+		{
+			"forge": "parameters()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "parityConfigString(StringBuilder arg0)",
+			"fabric": "addDebugInfo(StringBuilder info)"
+		}
+	]
+}

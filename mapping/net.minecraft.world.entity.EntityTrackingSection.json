@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.entity.EntitySection",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.entity.EntitySection",
+			"fabric": "net.minecraft.world.entity.EntityTrackingSection"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "storage",
+			"fabric": "collection"
+		},
+		{
+			"forge": "chunkStatus",
+			"fabric": "status"
+		},
+		{
+			"forge": "add(T arg0)",
+			"fabric": "add(T entity)"
+		},
+		{
+			"forge": "add(T arg0)",
+			"fabric": "add(T entity)"
+		},
+		{
+			"forge": "remove(T arg0)",
+			"fabric": "remove(T entity)"
+		},
+		{
+			"forge": "getEntities(AABB arg0, AbortableIterationConsumer<T> arg1)",
+			"fabric": "forEach(Box box, LazyIterationConsumer<T> consumer)"
+		},
+		{
+			"forge": "getEntities(EntityTypeTest<T, U> arg0, AABB arg1, AbortableIterationConsumer<? super U> arg2)",
+			"fabric": "forEach(TypeFilter<T, U> type, Box box, LazyIterationConsumer<? super U> consumer)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getEntities()",
+			"fabric": "stream()"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "getStatus()"
+		},
+		{
+			"forge": "updateChunkStatus(Visibility arg0)",
+			"fabric": "swapStatus(EntityTrackingStatus status)"
+		},
+		{
+			"forge": "size()",
+			"fabric": "size()"
+		}
+	]
+}

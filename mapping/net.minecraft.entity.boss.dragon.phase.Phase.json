@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.boss.enderdragon.phases.DragonPhaseInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.enderdragon.phases.DragonPhaseInstance",
+			"fabric": "net.minecraft.entity.boss.dragon.phase.Phase"
+		},
+		{
+			"forge": "isSitting()",
+			"fabric": "isSittingOrHovering()"
+		},
+		{
+			"forge": "isSitting()",
+			"fabric": "isSittingOrHovering()"
+		},
+		{
+			"forge": "doClientTick()",
+			"fabric": "clientTick()"
+		},
+		{
+			"forge": "doServerTick()",
+			"fabric": "serverTick()"
+		},
+		{
+			"forge": "onCrystalDestroyed(EndCrystal arg0, BlockPos arg1, DamageSource arg2, Player arg3)",
+			"fabric": "crystalDestroyed(EndCrystalEntity crystal, BlockPos pos, DamageSource source, PlayerEntity player)"
+		},
+		{
+			"forge": "begin()",
+			"fabric": "beginPhase()"
+		},
+		{
+			"forge": "end()",
+			"fabric": "endPhase()"
+		},
+		{
+			"forge": "getFlySpeed()",
+			"fabric": "getMaxYAcceleration()"
+		},
+		{
+			"forge": "getTurnSpeed()",
+			"fabric": "getYawAcceleration()"
+		},
+		{
+			"forge": "getPhase()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getFlyTargetLocation()",
+			"fabric": "getPathTarget()"
+		},
+		{
+			"forge": "onHurt(DamageSource arg0, float arg1)",
+			"fabric": "modifyDamageTaken(DamageSource damageSource, float damage)"
+		}
+	]
+}

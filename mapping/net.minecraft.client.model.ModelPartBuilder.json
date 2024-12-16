@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.client.model.geom.builders.CubeListBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.geom.builders.CubeListBuilder",
+			"fabric": "net.minecraft.client.model.ModelPartBuilder"
+		},
+		{
+			"forge": "ALL_VISIBLE",
+			"fabric": "ALL_DIRECTIONS"
+		},
+		{
+			"forge": "ALL_VISIBLE",
+			"fabric": "ALL_DIRECTIONS"
+		},
+		{
+			"forge": "cubes",
+			"fabric": "cuboidData"
+		},
+		{
+			"forge": "xTexOffs",
+			"fabric": "textureX"
+		},
+		{
+			"forge": "yTexOffs",
+			"fabric": "textureY"
+		},
+		{
+			"forge": "mirror",
+			"fabric": "mirror"
+		},
+		{
+			"forge": "texOffs(int arg0, int arg1)",
+			"fabric": "uv(int textureX, int textureY)"
+		},
+		{
+			"forge": "texOffs(int arg0, int arg1)",
+			"fabric": "uv(int textureX, int textureY)"
+		},
+		{
+			"forge": "mirror()",
+			"fabric": "mirrored()"
+		},
+		{
+			"forge": "mirror(boolean arg0)",
+			"fabric": "mirrored(boolean mirror)"
+		},
+		{
+			"forge": "addBox(String arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, CubeDeformation arg7, int arg8, int arg9)",
+			"fabric": "cuboid(String name, float offsetX, float offsetY, float offsetZ, int sizeX, int sizeY, int sizeZ, Dilation extra, int textureX, int textureY)"
+		},
+		{
+			"forge": "addBox(String arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7, int arg8)",
+			"fabric": "cuboid(String name, float offsetX, float offsetY, float offsetZ, int sizeX, int sizeY, int sizeZ, int textureX, int textureY)"
+		},
+		{
+			"forge": "addBox(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "cuboid(float offsetX, float offsetY, float offsetZ, float sizeX, float sizeY, float sizeZ)"
+		},
+		{
+			"forge": "addBox(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, Set<Direction> arg6)",
+			"fabric": "cuboid(float offsetX, float offsetY, float offsetZ, float sizeX, float sizeY, float sizeZ, Set<Direction> directions)"
+		},
+		{
+			"forge": "addBox(String arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6)",
+			"fabric": "cuboid(String name, float offsetX, float offsetY, float offsetZ, float sizeX, float sizeY, float sizeZ)"
+		},
+		{
+			"forge": "addBox(String arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, CubeDeformation arg7)",
+			"fabric": "cuboid(String name, float offsetX, float offsetY, float offsetZ, float sizeX, float sizeY, float sizeZ, Dilation extra)"
+		},
+		{
+			"forge": "addBox(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, boolean arg6)",
+			"fabric": "cuboid(float offsetX, float offsetY, float offsetZ, float sizeX, float sizeY, float sizeZ, boolean mirror)"
+		},
+		{
+			"forge": "addBox(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, CubeDeformation arg6, float arg7, float arg8)",
+			"fabric": "cuboid(float offsetX, float offsetY, float offsetZ, float sizeX, float sizeY, float sizeZ, Dilation extra, float textureScaleX, float textureScaleY)"
+		},
+		{
+			"forge": "addBox(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, CubeDeformation arg6)",
+			"fabric": "cuboid(float offsetX, float offsetY, float offsetZ, float sizeX, float sizeY, float sizeZ, Dilation extra)"
+		},
+		{
+			"forge": "getCubes()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		}
+	]
+}

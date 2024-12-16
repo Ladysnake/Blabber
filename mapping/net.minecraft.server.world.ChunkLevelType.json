@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.server.level.FullChunkStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.FullChunkStatus",
+			"fabric": "net.minecraft.server.world.ChunkLevelType"
+		},
+		{
+			"forge": "INACCESSIBLE",
+			"fabric": "INACCESSIBLE"
+		},
+		{
+			"forge": "INACCESSIBLE",
+			"fabric": "INACCESSIBLE"
+		},
+		{
+			"forge": "FULL",
+			"fabric": "FULL"
+		},
+		{
+			"forge": "BLOCK_TICKING",
+			"fabric": "BLOCK_TICKING"
+		},
+		{
+			"forge": "ENTITY_TICKING",
+			"fabric": "ENTITY_TICKING"
+		},
+		{
+			"forge": "isOrAfter(FullChunkStatus arg0)",
+			"fabric": "isAfter(ChunkLevelType levelType)"
+		},
+		{
+			"forge": "isOrAfter(FullChunkStatus arg0)",
+			"fabric": "isAfter(ChunkLevelType levelType)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.lighting.BlockLightSectionStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.BlockLightSectionStorage",
+			"fabric": "net.minecraft.world.chunk.light.BlockLightStorage"
+		},
+		{
+			"forge": "getLightValue(long arg0)",
+			"fabric": "getLight(long arg0)"
+		},
+		{
+			"forge": "getLightValue(long arg0)",
+			"fabric": "getLight(long arg0)"
+		}
+	]
+}

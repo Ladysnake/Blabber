@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.inventory.tooltip.BundleTooltip",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.tooltip.BundleTooltip",
+			"fabric": "net.minecraft.client.item.BundleTooltipData"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "weight",
+			"fabric": "bundleOccupancy"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "getWeight()",
+			"fabric": "getBundleOccupancy()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.PigRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.PigRenderer",
+			"fabric": "net.minecraft.client.render.entity.PigEntityRenderer"
+		},
+		{
+			"forge": "PIG_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "PIG_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Pig arg0)",
+			"fabric": "getTexture(PigEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Pig arg0)",
+			"fabric": "getTexture(PigEntity arg0)"
+		}
+	]
+}

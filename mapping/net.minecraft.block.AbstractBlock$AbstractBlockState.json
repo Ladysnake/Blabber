@@ -1,0 +1,469 @@
+{
+	"title": "net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase",
+			"fabric": "net.minecraft.block.AbstractBlock$AbstractBlockState"
+		},
+		{
+			"forge": "lightEmission",
+			"fabric": "luminance"
+		},
+		{
+			"forge": "lightEmission",
+			"fabric": "luminance"
+		},
+		{
+			"forge": "useShapeForLightOcclusion",
+			"fabric": "hasSidedTransparency"
+		},
+		{
+			"forge": "isAir",
+			"fabric": "isAir"
+		},
+		{
+			"forge": "ignitedByLava",
+			"fabric": "burnable"
+		},
+		{
+			"forge": "liquid",
+			"fabric": "liquid"
+		},
+		{
+			"forge": "legacySolid",
+			"fabric": "solid"
+		},
+		{
+			"forge": "pushReaction",
+			"fabric": "pistonBehavior"
+		},
+		{
+			"forge": "mapColor",
+			"fabric": "mapColor"
+		},
+		{
+			"forge": "destroySpeed",
+			"fabric": "hardness"
+		},
+		{
+			"forge": "requiresCorrectToolForDrops",
+			"fabric": "toolRequired"
+		},
+		{
+			"forge": "canOcclude",
+			"fabric": "opaque"
+		},
+		{
+			"forge": "isRedstoneConductor",
+			"fabric": "solidBlockPredicate"
+		},
+		{
+			"forge": "isSuffocating",
+			"fabric": "suffocationPredicate"
+		},
+		{
+			"forge": "isViewBlocking",
+			"fabric": "blockVisionPredicate"
+		},
+		{
+			"forge": "hasPostProcess",
+			"fabric": "postProcessPredicate"
+		},
+		{
+			"forge": "emissiveRendering",
+			"fabric": "emissiveLightingPredicate"
+		},
+		{
+			"forge": "offsetFunction",
+			"fabric": "offsetter"
+		},
+		{
+			"forge": "spawnParticlesOnBreak",
+			"fabric": "blockBreakParticles"
+		},
+		{
+			"forge": "instrument",
+			"fabric": "instrument"
+		},
+		{
+			"forge": "replaceable",
+			"fabric": "replaceable"
+		},
+		{
+			"forge": "cache",
+			"fabric": "shapeCache"
+		},
+		{
+			"forge": "fluidState",
+			"fabric": "fluidState"
+		},
+		{
+			"forge": "isRandomlyTicking",
+			"fabric": "ticksRandomly"
+		},
+		{
+			"forge": "calculateSolid()",
+			"fabric": "shouldBeSolid()"
+		},
+		{
+			"forge": "calculateSolid()",
+			"fabric": "shouldBeSolid()"
+		},
+		{
+			"forge": "initCache()",
+			"fabric": "initShapeCache()"
+		},
+		{
+			"forge": "getBlock()",
+			"fabric": "getBlock()"
+		},
+		{
+			"forge": "getBlockHolder()",
+			"fabric": "getRegistryEntry()"
+		},
+		{
+			"forge": "blocksMotion()",
+			"fabric": "blocksMovement()"
+		},
+		{
+			"forge": "isSolid()",
+			"fabric": "isSolid()"
+		},
+		{
+			"forge": "isValidSpawn(BlockGetter arg0, BlockPos arg1, EntityType<?> arg2)",
+			"fabric": "allowsSpawning(BlockView world, BlockPos pos, EntityType<?> type)"
+		},
+		{
+			"forge": "propagatesSkylightDown(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "isTransparent(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getLightBlock(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getOpacity(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getFaceOcclusionShape(BlockGetter arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "getCullingFace(BlockView world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "getOcclusionShape(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getCullingShape(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "hasLargeCollisionShape()",
+			"fabric": "exceedsCube()"
+		},
+		{
+			"forge": "useShapeForLightOcclusion()",
+			"fabric": "hasSidedTransparency()"
+		},
+		{
+			"forge": "getLightEmission()",
+			"fabric": "getLuminance()"
+		},
+		{
+			"forge": "isAir()",
+			"fabric": "isAir()"
+		},
+		{
+			"forge": "ignitedByLava()",
+			"fabric": "isBurnable()"
+		},
+		{
+			"forge": "liquid()",
+			"fabric": "isLiquid()"
+		},
+		{
+			"forge": "getMapColor(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getMapColor(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "rotate(Rotation arg0)",
+			"fabric": "rotate(BlockRotation rotation)"
+		},
+		{
+			"forge": "mirror(Mirror arg0)",
+			"fabric": "mirror(BlockMirror mirror)"
+		},
+		{
+			"forge": "getRenderShape()",
+			"fabric": "getRenderType()"
+		},
+		{
+			"forge": "emissiveRendering(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "hasEmissiveLighting(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getShadeBrightness(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getAmbientOcclusionLightLevel(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "isRedstoneConductor(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "isSolidBlock(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "isSignalSource()",
+			"fabric": "emitsRedstonePower()"
+		},
+		{
+			"forge": "getSignal(BlockGetter arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "getWeakRedstonePower(BlockView world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "hasAnalogOutputSignal()",
+			"fabric": "hasComparatorOutput()"
+		},
+		{
+			"forge": "getAnalogOutputSignal(Level arg0, BlockPos arg1)",
+			"fabric": "getComparatorOutput(World world, BlockPos pos)"
+		},
+		{
+			"forge": "getDestroySpeed(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getHardness(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getDestroyProgress(Player arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "calcBlockBreakingDelta(PlayerEntity player, BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getDirectSignal(BlockGetter arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "getStrongRedstonePower(BlockView world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "getPistonPushReaction()",
+			"fabric": "getPistonBehavior()"
+		},
+		{
+			"forge": "isSolidRender(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "isOpaqueFullCube(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "canOcclude()",
+			"fabric": "isOpaque()"
+		},
+		{
+			"forge": "skipRendering(BlockState arg0, Direction arg1)",
+			"fabric": "isSideInvisible(BlockState state, Direction direction)"
+		},
+		{
+			"forge": "getShape(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getOutlineShape(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getShape(BlockGetter arg0, BlockPos arg1, CollisionContext arg2)",
+			"fabric": "getOutlineShape(BlockView world, BlockPos pos, ShapeContext context)"
+		},
+		{
+			"forge": "getCollisionShape(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getCollisionShape(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getCollisionShape(BlockGetter arg0, BlockPos arg1, CollisionContext arg2)",
+			"fabric": "getCollisionShape(BlockView world, BlockPos pos, ShapeContext context)"
+		},
+		{
+			"forge": "getBlockSupportShape(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getSidesShape(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getVisualShape(BlockGetter arg0, BlockPos arg1, CollisionContext arg2)",
+			"fabric": "getCameraCollisionShape(BlockView world, BlockPos pos, ShapeContext context)"
+		},
+		{
+			"forge": "getInteractionShape(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getRaycastShape(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "entityCanStandOn(BlockGetter arg0, BlockPos arg1, Entity arg2)",
+			"fabric": "hasSolidTopSurface(BlockView world, BlockPos pos, Entity entity)"
+		},
+		{
+			"forge": "entityCanStandOnFace(BlockGetter arg0, BlockPos arg1, Entity arg2, Direction arg3)",
+			"fabric": "isSolidSurface(BlockView world, BlockPos pos, Entity entity, Direction direction)"
+		},
+		{
+			"forge": "getOffset(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getModelOffset(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "hasOffsetFunction()",
+			"fabric": "hasModelOffset()"
+		},
+		{
+			"forge": "triggerEvent(Level arg0, BlockPos arg1, int arg2, int arg3)",
+			"fabric": "onSyncedBlockEvent(World world, BlockPos pos, int type, int data)"
+		},
+		{
+			"forge": "neighborChanged(Level arg0, BlockPos arg1, Block arg2, BlockPos arg3, boolean arg4)",
+			"fabric": "neighborUpdate(World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify)"
+		},
+		{
+			"forge": "updateNeighbourShapes(LevelAccessor arg0, BlockPos arg1, int arg2)",
+			"fabric": "updateNeighbors(WorldAccess world, BlockPos pos, int flags)"
+		},
+		{
+			"forge": "updateNeighbourShapes(LevelAccessor arg0, BlockPos arg1, int arg2, int arg3)",
+			"fabric": "updateNeighbors(WorldAccess world, BlockPos pos, int flags, int maxUpdateDepth)"
+		},
+		{
+			"forge": "updateIndirectNeighbourShapes(LevelAccessor arg0, BlockPos arg1, int arg2)",
+			"fabric": "prepare(WorldAccess world, BlockPos pos, int flags)"
+		},
+		{
+			"forge": "updateIndirectNeighbourShapes(LevelAccessor arg0, BlockPos arg1, int arg2, int arg3)",
+			"fabric": "prepare(WorldAccess world, BlockPos pos, int flags, int maxUpdateDepth)"
+		},
+		{
+			"forge": "onPlace(Level arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "onBlockAdded(World world, BlockPos pos, BlockState state, boolean notify)"
+		},
+		{
+			"forge": "onRemove(Level arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "onStateReplaced(World world, BlockPos pos, BlockState state, boolean moved)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "scheduledTick(ServerWorld world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "randomTick(ServerLevel arg0, BlockPos arg1, RandomSource arg2)",
+			"fabric": "randomTick(ServerWorld world, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "entityInside(Level arg0, BlockPos arg1, Entity arg2)",
+			"fabric": "onEntityCollision(World world, BlockPos pos, Entity entity)"
+		},
+		{
+			"forge": "spawnAfterBreak(ServerLevel arg0, BlockPos arg1, ItemStack arg2, boolean arg3)",
+			"fabric": "onStacksDropped(ServerWorld world, BlockPos pos, ItemStack tool, boolean dropExperience)"
+		},
+		{
+			"forge": "getDrops(LootParams$Builder arg0)",
+			"fabric": "getDroppedStacks(LootContextParameterSet$Builder builder)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2, BlockHitResult arg3)",
+			"fabric": "onUse(World world, PlayerEntity player, Hand hand, BlockHitResult hit)"
+		},
+		{
+			"forge": "attack(Level arg0, BlockPos arg1, Player arg2)",
+			"fabric": "onBlockBreakStart(World world, BlockPos pos, PlayerEntity player)"
+		},
+		{
+			"forge": "isSuffocating(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "shouldSuffocate(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "isViewBlocking(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "shouldBlockVision(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "updateShape(Direction arg0, BlockState arg1, LevelAccessor arg2, BlockPos arg3, BlockPos arg4)",
+			"fabric": "getStateForNeighborUpdate(Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos)"
+		},
+		{
+			"forge": "isPathfindable(BlockGetter arg0, BlockPos arg1, PathComputationType arg2)",
+			"fabric": "canPathfindThrough(BlockView world, BlockPos pos, NavigationType type)"
+		},
+		{
+			"forge": "canBeReplaced(BlockPlaceContext arg0)",
+			"fabric": "canReplace(ItemPlacementContext context)"
+		},
+		{
+			"forge": "canBeReplaced(Fluid arg0)",
+			"fabric": "canBucketPlace(Fluid fluid)"
+		},
+		{
+			"forge": "canBeReplaced()",
+			"fabric": "isReplaceable()"
+		},
+		{
+			"forge": "canSurvive(LevelReader arg0, BlockPos arg1)",
+			"fabric": "canPlaceAt(WorldView world, BlockPos pos)"
+		},
+		{
+			"forge": "hasPostProcess(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "shouldPostProcess(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getMenuProvider(Level arg0, BlockPos arg1)",
+			"fabric": "createScreenHandlerFactory(World world, BlockPos pos)"
+		},
+		{
+			"forge": "is(TagKey<Block> arg0)",
+			"fabric": "isIn(TagKey<Block> tag)"
+		},
+		{
+			"forge": "is(TagKey<Block> arg0, Predicate<BlockBehaviour$BlockStateBase> arg1)",
+			"fabric": "isIn(TagKey<Block> tag, Predicate<AbstractBlock$AbstractBlockState> predicate)"
+		},
+		{
+			"forge": "is(HolderSet<Block> arg0)",
+			"fabric": "isIn(RegistryEntryList<Block> blocks)"
+		},
+		{
+			"forge": "getTags()",
+			"fabric": "streamTags()"
+		},
+		{
+			"forge": "hasBlockEntity()",
+			"fabric": "hasBlockEntity()"
+		},
+		{
+			"forge": "getTicker(Level arg0, BlockEntityType<T> arg1)",
+			"fabric": "getBlockEntityTicker(World world, BlockEntityType<T> blockEntityType)"
+		},
+		{
+			"forge": "is(Block arg0)",
+			"fabric": "isOf(Block block)"
+		},
+		{
+			"forge": "getFluidState()",
+			"fabric": "getFluidState()"
+		},
+		{
+			"forge": "isRandomlyTicking()",
+			"fabric": "hasRandomTicks()"
+		},
+		{
+			"forge": "getSeed(BlockPos arg0)",
+			"fabric": "getRenderingSeed(BlockPos pos)"
+		},
+		{
+			"forge": "getSoundType()",
+			"fabric": "getSoundGroup()"
+		},
+		{
+			"forge": "onProjectileHit(Level arg0, BlockState arg1, BlockHitResult arg2, Projectile arg3)",
+			"fabric": "onProjectileHit(World world, BlockState state, BlockHitResult hit, ProjectileEntity projectile)"
+		},
+		{
+			"forge": "isFaceSturdy(BlockGetter arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "isSideSolidFullSquare(BlockView world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "isFaceSturdy(BlockGetter arg0, BlockPos arg1, Direction arg2, SupportType arg3)",
+			"fabric": "isSideSolid(BlockView world, BlockPos pos, Direction direction, SideShapeType shapeType)"
+		},
+		{
+			"forge": "isCollisionShapeFullBlock(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "isFullCube(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "asState()",
+			"fabric": "asBlockState()"
+		},
+		{
+			"forge": "requiresCorrectToolForDrops()",
+			"fabric": "isToolRequired()"
+		},
+		{
+			"forge": "shouldSpawnParticlesOnBreak()",
+			"fabric": "hasBlockBreakParticles()"
+		},
+		{
+			"forge": "instrument()",
+			"fabric": "getInstrument()"
+		}
+	]
+}

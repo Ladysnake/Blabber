@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.entity.PersistentEntitySectionManager$Callback",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.entity.PersistentEntitySectionManager$Callback",
+			"fabric": "net.minecraft.server.world.ServerEntityManager$Listener"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "entity",
+			"fabric": "entity"
+		},
+		{
+			"forge": "currentSectionKey",
+			"fabric": "sectionPos"
+		},
+		{
+			"forge": "currentSection",
+			"fabric": "section"
+		},
+		{
+			"forge": "onMove()",
+			"fabric": "updateEntityPosition()"
+		},
+		{
+			"forge": "onMove()",
+			"fabric": "updateEntityPosition()"
+		},
+		{
+			"forge": "updateStatus(Visibility arg0, Visibility arg1)",
+			"fabric": "updateLoadStatus(EntityTrackingStatus oldStatus, EntityTrackingStatus newStatus)"
+		},
+		{
+			"forge": "onRemove(Entity$RemovalReason arg0)",
+			"fabric": "remove(Entity$RemovalReason arg0)"
+		}
+	]
+}

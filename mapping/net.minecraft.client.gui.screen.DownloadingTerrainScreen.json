@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.client.gui.screens.ReceivingLevelScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.ReceivingLevelScreen",
+			"fabric": "net.minecraft.client.gui.screen.DownloadingTerrainScreen"
+		},
+		{
+			"forge": "DOWNLOADING_TERRAIN_TEXT",
+			"fabric": "TEXT"
+		},
+		{
+			"forge": "DOWNLOADING_TERRAIN_TEXT",
+			"fabric": "TEXT"
+		},
+		{
+			"forge": "CHUNK_LOADING_START_WAIT_LIMIT_MS",
+			"fabric": "MIN_LOAD_TIME_MS"
+		},
+		{
+			"forge": "loadingPacketsReceived",
+			"fabric": "ready"
+		},
+		{
+			"forge": "oneTickSkipped",
+			"fabric": "closeOnNextTick"
+		},
+		{
+			"forge": "createdAt",
+			"fabric": "loadStartTime"
+		},
+		{
+			"forge": "shouldCloseOnEsc()",
+			"fabric": "shouldCloseOnEsc()"
+		},
+		{
+			"forge": "shouldCloseOnEsc()",
+			"fabric": "shouldCloseOnEsc()"
+		},
+		{
+			"forge": "shouldNarrateNavigation()",
+			"fabric": "hasUsageText()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "loadingPacketsReceived()",
+			"fabric": "setReady()"
+		},
+		{
+			"forge": "isPauseScreen()",
+			"fabric": "shouldPause()"
+		}
+	]
+}

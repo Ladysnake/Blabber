@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.entity.EntityTickList",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.entity.EntityTickList",
+			"fabric": "net.minecraft.world.EntityList"
+		},
+		{
+			"forge": "active",
+			"fabric": "entities"
+		},
+		{
+			"forge": "active",
+			"fabric": "entities"
+		},
+		{
+			"forge": "passive",
+			"fabric": "temp"
+		},
+		{
+			"forge": "iterated",
+			"fabric": "iterating"
+		},
+		{
+			"forge": "ensureActiveIsNotIterated()",
+			"fabric": "ensureSafe()"
+		},
+		{
+			"forge": "ensureActiveIsNotIterated()",
+			"fabric": "ensureSafe()"
+		},
+		{
+			"forge": "add(Entity arg0)",
+			"fabric": "add(Entity entity)"
+		},
+		{
+			"forge": "remove(Entity arg0)",
+			"fabric": "remove(Entity entity)"
+		},
+		{
+			"forge": "contains(Entity arg0)",
+			"fabric": "has(Entity entity)"
+		},
+		{
+			"forge": "forEach(Consumer<Entity> arg0)",
+			"fabric": "forEach(Consumer<Entity> action)"
+		}
+	]
+}

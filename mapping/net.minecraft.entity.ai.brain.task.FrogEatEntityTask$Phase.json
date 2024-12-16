@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.animal.frog.ShootTongue$State",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.frog.ShootTongue$State",
+			"fabric": "net.minecraft.entity.ai.brain.task.FrogEatEntityTask$Phase"
+		},
+		{
+			"forge": "MOVE_TO_TARGET",
+			"fabric": "MOVE_TO_TARGET"
+		},
+		{
+			"forge": "MOVE_TO_TARGET",
+			"fabric": "MOVE_TO_TARGET"
+		},
+		{
+			"forge": "CATCH_ANIMATION",
+			"fabric": "CATCH_ANIMATION"
+		},
+		{
+			"forge": "EAT_ANIMATION",
+			"fabric": "EAT_ANIMATION"
+		},
+		{
+			"forge": "DONE",
+			"fabric": "DONE"
+		}
+	]
+}

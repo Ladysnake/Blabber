@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.OptionsAmbientOcclusionFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.OptionsAmbientOcclusionFix",
+			"fabric": "net.minecraft.datafixer.fix.OptionsAmbientOcclusionFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixValue(String oldValue)"
+		},
+		{
+			"forge": "updateValue(String arg0)",
+			"fabric": "fixValue(String oldValue)"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.entity.SpawnGroupData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.SpawnGroupData",
+			"fabric": "net.minecraft.entity.EntityData"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.server.rcon.RconConsoleSource",
+	"items": [
+		{
+			"forge": "net.minecraft.server.rcon.RconConsoleSource",
+			"fabric": "net.minecraft.server.rcon.RconCommandOutput"
+		},
+		{
+			"forge": "RCON",
+			"fabric": "RCON_NAME"
+		},
+		{
+			"forge": "RCON",
+			"fabric": "RCON_NAME"
+		},
+		{
+			"forge": "RCON_COMPONENT",
+			"fabric": "RCON_NAME_TEXT"
+		},
+		{
+			"forge": "buffer",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "prepareForCommand()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "prepareForCommand()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getCommandResponse()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "createCommandSourceStack()",
+			"fabric": "createRconCommandSource()"
+		},
+		{
+			"forge": "sendSystemMessage(Component arg0)",
+			"fabric": "sendMessage(Text arg0)"
+		},
+		{
+			"forge": "acceptsSuccess()",
+			"fabric": "shouldReceiveFeedback()"
+		},
+		{
+			"forge": "acceptsFailure()",
+			"fabric": "shouldTrackOutput()"
+		},
+		{
+			"forge": "shouldInformAdmins()",
+			"fabric": "shouldBroadcastConsoleToOps()"
+		}
+	]
+}

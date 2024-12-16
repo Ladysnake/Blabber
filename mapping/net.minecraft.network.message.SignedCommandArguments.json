@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.commands.CommandSigningContext",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandSigningContext",
+			"fabric": "net.minecraft.network.message.SignedCommandArguments"
+		},
+		{
+			"forge": "ANONYMOUS",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "ANONYMOUS",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "getArgument(String arg0)",
+			"fabric": "getMessage(String argumentName)"
+		},
+		{
+			"forge": "getArgument(String arg0)",
+			"fabric": "getMessage(String argumentName)"
+		}
+	]
+}

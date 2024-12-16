@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.util.CsvOutput",
+	"items": [
+		{
+			"forge": "net.minecraft.util.CsvOutput",
+			"fabric": "net.minecraft.util.CsvWriter"
+		},
+		{
+			"forge": "LINE_SEPARATOR",
+			"fabric": "CRLF"
+		},
+		{
+			"forge": "LINE_SEPARATOR",
+			"fabric": "CRLF"
+		},
+		{
+			"forge": "FIELD_SEPARATOR",
+			"fabric": "COMMA"
+		},
+		{
+			"forge": "output",
+			"fabric": "writer"
+		},
+		{
+			"forge": "columnCount",
+			"fabric": "column"
+		},
+		{
+			"forge": "builder()",
+			"fabric": "makeHeader()"
+		},
+		{
+			"forge": "builder()",
+			"fabric": "makeHeader()"
+		},
+		{
+			"forge": "writeRow(Object... arg0)",
+			"fabric": "printRow(Object... columns)"
+		},
+		{
+			"forge": "writeLine(Stream<?> arg0)",
+			"fabric": "printRow(Stream<?> columns)"
+		},
+		{
+			"forge": "getStringValue(Object arg0)",
+			"fabric": "escape(Object o)"
+		}
+	]
+}

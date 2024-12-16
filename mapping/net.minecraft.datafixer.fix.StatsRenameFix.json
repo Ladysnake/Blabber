@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.StatsRenameFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.StatsRenameFix",
+			"fabric": "net.minecraft.datafixer.fix.StatsRenameFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "renames",
+			"fabric": "replacements"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "renameObjectives()"
+		},
+		{
+			"forge": "createCriteriaRule()",
+			"fabric": "renameObjectives()"
+		},
+		{
+			"forge": "createStatRule()",
+			"fabric": "renameStats()"
+		}
+	]
+}

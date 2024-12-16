@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.nbt.StreamTagVisitor$ValueResult",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.StreamTagVisitor$ValueResult",
+			"fabric": "net.minecraft.nbt.scanner.NbtScanner$Result"
+		},
+		{
+			"forge": "CONTINUE",
+			"fabric": "CONTINUE"
+		},
+		{
+			"forge": "CONTINUE",
+			"fabric": "CONTINUE"
+		},
+		{
+			"forge": "BREAK",
+			"fabric": "BREAK"
+		},
+		{
+			"forge": "HALT",
+			"fabric": "HALT"
+		}
+	]
+}

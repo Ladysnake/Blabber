@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundSetCameraPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundSetCameraPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.SetCameraEntityS2CPacket"
+		},
+		{
+			"forge": "cameraId",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "cameraId",
+			"fabric": "entityId"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getEntity(Level arg0)",
+			"fabric": "getEntity(World world)"
+		}
+	]
+}

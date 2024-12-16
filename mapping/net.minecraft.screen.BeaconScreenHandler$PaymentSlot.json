@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.inventory.BeaconMenu$PaymentSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.BeaconMenu$PaymentSlot",
+			"fabric": "net.minecraft.screen.BeaconScreenHandler$PaymentSlot"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxItemCount()"
+		}
+	]
+}

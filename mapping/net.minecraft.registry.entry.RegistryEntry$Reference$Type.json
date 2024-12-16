@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.core.Holder$Reference$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Holder$Reference$Type",
+			"fabric": "net.minecraft.registry.entry.RegistryEntry$Reference$Type"
+		},
+		{
+			"forge": "STAND_ALONE",
+			"fabric": "STAND_ALONE"
+		},
+		{
+			"forge": "STAND_ALONE",
+			"fabric": "STAND_ALONE"
+		},
+		{
+			"forge": "INTRUSIVE",
+			"fabric": "INTRUSIVE"
+		}
+	]
+}

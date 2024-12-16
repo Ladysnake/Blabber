@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.nbt.CollectionTag",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.CollectionTag",
+			"fabric": "net.minecraft.nbt.AbstractNbtList"
+		},
+		{
+			"forge": "set(int arg0, T arg1)",
+			"fabric": "set(int arg0, T arg1)"
+		},
+		{
+			"forge": "set(int arg0, T arg1)",
+			"fabric": "set(int arg0, T arg1)"
+		},
+		{
+			"forge": "add(int arg0, T arg1)",
+			"fabric": "add(int arg0, T arg1)"
+		},
+		{
+			"forge": "remove(int arg0)",
+			"fabric": "remove(int arg0)"
+		},
+		{
+			"forge": "setTag(int arg0, Tag arg1)",
+			"fabric": "setElement(int index, NbtElement element)"
+		},
+		{
+			"forge": "addTag(int arg0, Tag arg1)",
+			"fabric": "addElement(int index, NbtElement element)"
+		},
+		{
+			"forge": "getElementType()",
+			"fabric": "getHeldType()"
+		}
+	]
+}

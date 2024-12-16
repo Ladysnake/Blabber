@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.core.dispenser.ShearsDispenseItemBehavior",
+	"items": [
+		{
+			"forge": "net.minecraft.core.dispenser.ShearsDispenseItemBehavior",
+			"fabric": "net.minecraft.block.dispenser.ShearsDispenserBehavior"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "tryShearBeehive(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "tryShearBlock(ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "tryShearLivingEntity(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "tryShearEntity(ServerWorld world, BlockPos pos)"
+		}
+	]
+}

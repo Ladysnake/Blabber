@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.inventory.ShulkerBoxSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ShulkerBoxSlot",
+			"fabric": "net.minecraft.screen.slot.ShulkerBoxSlot"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.PositionalRandomFactory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.PositionalRandomFactory",
+			"fabric": "net.minecraft.util.math.random.RandomSplitter"
+		},
+		{
+			"forge": "at(BlockPos arg0)",
+			"fabric": "split(BlockPos pos)"
+		},
+		{
+			"forge": "at(BlockPos arg0)",
+			"fabric": "split(BlockPos pos)"
+		},
+		{
+			"forge": "fromHashOf(ResourceLocation arg0)",
+			"fabric": "split(Identifier seed)"
+		},
+		{
+			"forge": "fromHashOf(String arg0)",
+			"fabric": "split(String seed)"
+		},
+		{
+			"forge": "at(int arg0, int arg1, int arg2)",
+			"fabric": "split(int x, int y, int z)"
+		},
+		{
+			"forge": "parityConfigString(StringBuilder arg0)",
+			"fabric": "addDebugInfo(StringBuilder info)"
+		}
+	]
+}

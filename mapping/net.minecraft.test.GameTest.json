@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.gametest.framework.GameTest",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.GameTest",
+			"fabric": "net.minecraft.test.GameTest"
+		},
+		{
+			"forge": "timeoutTicks()",
+			"fabric": "tickLimit()"
+		},
+		{
+			"forge": "timeoutTicks()",
+			"fabric": "tickLimit()"
+		},
+		{
+			"forge": "batch()",
+			"fabric": "batchId()"
+		},
+		{
+			"forge": "rotationSteps()",
+			"fabric": "rotation()"
+		},
+		{
+			"forge": "required()",
+			"fabric": "required()"
+		},
+		{
+			"forge": "template()",
+			"fabric": "templateName()"
+		},
+		{
+			"forge": "setupTicks()",
+			"fabric": "duration()"
+		},
+		{
+			"forge": "attempts()",
+			"fabric": "maxAttempts()"
+		},
+		{
+			"forge": "requiredSuccesses()",
+			"fabric": "requiredSuccesses()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.redstone.CollectingNeighborUpdater$MultiNeighborUpdate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.redstone.CollectingNeighborUpdater$MultiNeighborUpdate",
+			"fabric": "net.minecraft.world.block.ChainRestrictedNeighborUpdater$SixWayEntry"
+		},
+		{
+			"forge": "sourcePos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "sourcePos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "sourceBlock",
+			"fabric": "sourceBlock"
+		},
+		{
+			"forge": "skipDirection",
+			"fabric": "except"
+		},
+		{
+			"forge": "idx",
+			"fabric": "currentDirectionIndex"
+		},
+		{
+			"forge": "runNext(Level arg0)",
+			"fabric": "update(World arg0)"
+		},
+		{
+			"forge": "runNext(Level arg0)",
+			"fabric": "update(World arg0)"
+		}
+	]
+}

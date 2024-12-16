@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.client.gui.font.FontSet",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.FontSet",
+			"fabric": "net.minecraft.client.font.FontStorage"
+		},
+		{
+			"forge": "RANDOM",
+			"fabric": "RANDOM"
+		},
+		{
+			"forge": "RANDOM",
+			"fabric": "RANDOM"
+		},
+		{
+			"forge": "LARGE_FORWARD_ADVANCE",
+			"fabric": "MAX_ADVANCE"
+		},
+		{
+			"forge": "textureManager",
+			"fabric": "textureManager"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "missingGlyph",
+			"fabric": "blankGlyphRenderer"
+		},
+		{
+			"forge": "whiteGlyph",
+			"fabric": "whiteRectangleGlyphRenderer"
+		},
+		{
+			"forge": "providers",
+			"fabric": "fonts"
+		},
+		{
+			"forge": "glyphs",
+			"fabric": "glyphRendererCache"
+		},
+		{
+			"forge": "glyphInfos",
+			"fabric": "glyphCache"
+		},
+		{
+			"forge": "glyphsByWidth",
+			"fabric": "charactersByWidth"
+		},
+		{
+			"forge": "textures",
+			"fabric": "glyphAtlases"
+		},
+		{
+			"forge": "reload(List<GlyphProvider> arg0)",
+			"fabric": "setFonts(List<Font> fonts)"
+		},
+		{
+			"forge": "reload(List<GlyphProvider> arg0)",
+			"fabric": "setFonts(List<Font> fonts)"
+		},
+		{
+			"forge": "closeProviders()",
+			"fabric": "closeFonts()"
+		},
+		{
+			"forge": "closeTextures()",
+			"fabric": "closeGlyphAtlases()"
+		},
+		{
+			"forge": "hasFishyAdvance(GlyphInfo arg0)",
+			"fabric": "isAdvanceInvalid(Glyph glyph)"
+		},
+		{
+			"forge": "computeGlyphInfo(int arg0)",
+			"fabric": "findGlyph(int codePoint)"
+		},
+		{
+			"forge": "getGlyphInfo(int arg0, boolean arg1)",
+			"fabric": "getGlyph(int codePoint, boolean validateAdvance)"
+		},
+		{
+			"forge": "computeBakedGlyph(int arg0)",
+			"fabric": "findGlyphRenderer(int codePoint)"
+		},
+		{
+			"forge": "getGlyph(int arg0)",
+			"fabric": "getGlyphRenderer(int codePoint)"
+		},
+		{
+			"forge": "stitch(SheetGlyphInfo arg0)",
+			"fabric": "getGlyphRenderer(RenderableGlyph c)"
+		},
+		{
+			"forge": "getRandomGlyph(GlyphInfo arg0)",
+			"fabric": "getObfuscatedGlyphRenderer(Glyph glyph)"
+		},
+		{
+			"forge": "whiteGlyph()",
+			"fabric": "getRectangleRenderer()"
+		}
+	]
+}

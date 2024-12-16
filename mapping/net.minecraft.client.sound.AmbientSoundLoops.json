@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.resources.sounds.UnderwaterAmbientSoundInstances",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.UnderwaterAmbientSoundInstances",
+			"fabric": "net.minecraft.client.sound.AmbientSoundLoops"
+		}
+	]
+}

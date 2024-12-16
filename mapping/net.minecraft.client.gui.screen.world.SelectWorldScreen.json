@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.SelectWorldScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.SelectWorldScreen",
+			"fabric": "net.minecraft.client.gui.screen.world.SelectWorldScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "TEST_OPTIONS",
+			"fabric": "DEBUG_GENERATOR_OPTIONS"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "deleteButton",
+			"fabric": "deleteButton"
+		},
+		{
+			"forge": "selectButton",
+			"fabric": "selectButton"
+		},
+		{
+			"forge": "renameButton",
+			"fabric": "editButton"
+		},
+		{
+			"forge": "copyButton",
+			"fabric": "recreateButton"
+		},
+		{
+			"forge": "searchBox",
+			"fabric": "searchBox"
+		},
+		{
+			"forge": "list",
+			"fabric": "levelList"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "charTyped(char arg0, int arg1)",
+			"fabric": "charTyped(char arg0, int arg1)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "updateButtonStatus(boolean arg0, boolean arg1)",
+			"fabric": "worldSelected(boolean buttonsActive, boolean deleteButtonActive)"
+		},
+		{
+			"forge": "removed()",
+			"fabric": "removed()"
+		}
+	]
+}

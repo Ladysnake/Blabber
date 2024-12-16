@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.model.WaterPatchModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.WaterPatchModel",
+			"fabric": "net.minecraft.client.render.entity.model.ModelWithWaterPatch"
+		},
+		{
+			"forge": "waterPatch()",
+			"fabric": "getWaterPatch()"
+		},
+		{
+			"forge": "waterPatch()",
+			"fabric": "getWaterPatch()"
+		}
+	]
+}

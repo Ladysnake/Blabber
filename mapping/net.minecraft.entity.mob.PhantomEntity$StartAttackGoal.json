@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.monster.Phantom$PhantomAttackStrategyGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Phantom$PhantomAttackStrategyGoal",
+			"fabric": "net.minecraft.entity.mob.PhantomEntity$StartAttackGoal"
+		},
+		{
+			"forge": "nextSweepTick",
+			"fabric": "cooldown"
+		},
+		{
+			"forge": "nextSweepTick",
+			"fabric": "cooldown"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "setAnchorAboveTarget()",
+			"fabric": "startSwoop()"
+		}
+	]
+}

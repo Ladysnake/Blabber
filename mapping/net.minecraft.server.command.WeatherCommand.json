@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.commands.WeatherCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.WeatherCommand",
+			"fabric": "net.minecraft.server.command.WeatherCommand"
+		},
+		{
+			"forge": "DEFAULT_TIME",
+			"fabric": "DEFAULT_DURATION"
+		},
+		{
+			"forge": "DEFAULT_TIME",
+			"fabric": "DEFAULT_DURATION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "getDuration(CommandSourceStack arg0, int arg1, IntProvider arg2)",
+			"fabric": "processDuration(ServerCommandSource source, int duration, IntProvider provider)"
+		},
+		{
+			"forge": "setClear(CommandSourceStack arg0, int arg1)",
+			"fabric": "executeClear(ServerCommandSource source, int duration)"
+		},
+		{
+			"forge": "setRain(CommandSourceStack arg0, int arg1)",
+			"fabric": "executeRain(ServerCommandSource source, int duration)"
+		},
+		{
+			"forge": "setThunder(CommandSourceStack arg0, int arg1)",
+			"fabric": "executeThunder(ServerCommandSource source, int duration)"
+		}
+	]
+}

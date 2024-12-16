@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.core.RegistrySetBuilder$BuildState$1",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistrySetBuilder$BuildState$1",
+			"fabric": "net.minecraft.registry.RegistryBuilder$Registries$1"
+		},
+		{
+			"forge": "register(ResourceKey<T> arg0, T arg1, com.mojang.serialization.Lifecycle arg2)",
+			"fabric": "register(RegistryKey<T> arg0, T arg1, com.mojang.serialization.Lifecycle arg2)"
+		},
+		{
+			"forge": "register(ResourceKey<T> arg0, T arg1, com.mojang.serialization.Lifecycle arg2)",
+			"fabric": "register(RegistryKey<T> arg0, T arg1, com.mojang.serialization.Lifecycle arg2)"
+		},
+		{
+			"forge": "lookup(ResourceKey<? extends Registry<? extends S>> arg0)",
+			"fabric": "getRegistryLookup(RegistryKey<? extends Registry<? extends S>> arg0)"
+		}
+	]
+}

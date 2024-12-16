@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.components.AbstractStringWidget",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.AbstractStringWidget",
+			"fabric": "net.minecraft.client.gui.widget.AbstractTextWidget"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "color",
+			"fabric": "textColor"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "updateWidgetNarration(NarrationElementOutput arg0)",
+			"fabric": "appendClickableNarrations(NarrationMessageBuilder arg0)"
+		},
+		{
+			"forge": "setColor(int arg0)",
+			"fabric": "setTextColor(int textColor)"
+		},
+		{
+			"forge": "getFont()",
+			"fabric": "getTextRenderer()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getTextColor()"
+		}
+	]
+}

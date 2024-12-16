@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.screens.DatapackLoadFailureScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.DatapackLoadFailureScreen",
+			"fabric": "net.minecraft.client.gui.screen.DatapackFailureScreen"
+		},
+		{
+			"forge": "message",
+			"fabric": "wrappedText"
+		},
+		{
+			"forge": "message",
+			"fabric": "wrappedText"
+		},
+		{
+			"forge": "callback",
+			"fabric": "runServerInSafeMode"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "shouldCloseOnEsc()",
+			"fabric": "shouldCloseOnEsc()"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.pathfinder.AmphibiousNodeEvaluator",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.pathfinder.AmphibiousNodeEvaluator",
+			"fabric": "net.minecraft.entity.ai.pathing.AmphibiousPathNodeMaker"
+		},
+		{
+			"forge": "prefersShallowSwimming",
+			"fabric": "penalizeDeepWater"
+		},
+		{
+			"forge": "prefersShallowSwimming",
+			"fabric": "penalizeDeepWater"
+		},
+		{
+			"forge": "oldWalkableCost",
+			"fabric": "oldWalkablePenalty"
+		},
+		{
+			"forge": "oldWaterBorderCost",
+			"fabric": "oldWaterBorderPenalty"
+		},
+		{
+			"forge": "prepare(PathNavigationRegion arg0, Mob arg1)",
+			"fabric": "init(ChunkCache arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "prepare(PathNavigationRegion arg0, Mob arg1)",
+			"fabric": "init(ChunkCache arg0, MobEntity arg1)"
+		},
+		{
+			"forge": "done()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getStart()",
+			"fabric": "getStart()"
+		},
+		{
+			"forge": "getGoal(double arg0, double arg1, double arg2)",
+			"fabric": "getNode(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "getNeighbors(Node[] arg0, Node arg1)",
+			"fabric": "getSuccessors(PathNode[] arg0, PathNode arg1)"
+		},
+		{
+			"forge": "isVerticalNeighborValid(Node arg0, Node arg1)",
+			"fabric": "isValidAquaticAdjacentSuccessor(PathNode node, PathNode successor)"
+		},
+		{
+			"forge": "isAmphibious()",
+			"fabric": "isAmphibious()"
+		},
+		{
+			"forge": "getBlockPathType(BlockGetter arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getDefaultNodeType(BlockView arg0, int arg1, int arg2, int arg3)"
+		}
+	]
+}

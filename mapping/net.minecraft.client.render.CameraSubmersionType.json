@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.material.FogType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.material.FogType",
+			"fabric": "net.minecraft.client.render.CameraSubmersionType"
+		},
+		{
+			"forge": "LAVA",
+			"fabric": "LAVA"
+		},
+		{
+			"forge": "LAVA",
+			"fabric": "LAVA"
+		},
+		{
+			"forge": "WATER",
+			"fabric": "WATER"
+		},
+		{
+			"forge": "POWDER_SNOW",
+			"fabric": "POWDER_SNOW"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		}
+	]
+}

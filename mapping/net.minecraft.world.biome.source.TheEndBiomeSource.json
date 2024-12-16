@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.biome.TheEndBiomeSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.TheEndBiomeSource",
+			"fabric": "net.minecraft.world.biome.source.TheEndBiomeSource"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "end",
+			"fabric": "centerBiome"
+		},
+		{
+			"forge": "highlands",
+			"fabric": "highlandsBiome"
+		},
+		{
+			"forge": "midlands",
+			"fabric": "midlandsBiome"
+		},
+		{
+			"forge": "islands",
+			"fabric": "smallIslandsBiome"
+		},
+		{
+			"forge": "barrens",
+			"fabric": "barrensBiome"
+		},
+		{
+			"forge": "create(HolderGetter<Biome> arg0)",
+			"fabric": "createVanilla(RegistryEntryLookup<Biome> biomeLookup)"
+		},
+		{
+			"forge": "create(HolderGetter<Biome> arg0)",
+			"fabric": "createVanilla(RegistryEntryLookup<Biome> biomeLookup)"
+		},
+		{
+			"forge": "collectPossibleBiomes()",
+			"fabric": "biomeStream()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2, Climate$Sampler arg3)",
+			"fabric": "getBiome(int arg0, int arg1, int arg2, MultiNoiseUtil$MultiNoiseSampler arg3)"
+		}
+	]
+}

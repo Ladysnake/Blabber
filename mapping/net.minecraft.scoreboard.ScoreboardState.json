@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.scores.ScoreboardSaveData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.scores.ScoreboardSaveData",
+			"fabric": "net.minecraft.scoreboard.ScoreboardState"
+		},
+		{
+			"forge": "FILE_ID",
+			"fabric": "SCOREBOARD_KEY"
+		},
+		{
+			"forge": "FILE_ID",
+			"fabric": "SCOREBOARD_KEY"
+		},
+		{
+			"forge": "scoreboard",
+			"fabric": "scoreboard"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "loadTeams(ListTag arg0)",
+			"fabric": "readTeamsNbt(NbtList nbt)"
+		},
+		{
+			"forge": "loadTeamPlayers(PlayerTeam arg0, ListTag arg1)",
+			"fabric": "readTeamPlayersNbt(Team team, NbtList nbt)"
+		},
+		{
+			"forge": "loadDisplaySlots(CompoundTag arg0)",
+			"fabric": "readDisplaySlotsNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "loadObjectives(ListTag arg0)",
+			"fabric": "readObjectivesNbt(NbtList nbt)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveTeams()",
+			"fabric": "teamsToNbt()"
+		},
+		{
+			"forge": "saveDisplaySlots(CompoundTag arg0)",
+			"fabric": "writeDisplaySlotsNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "saveObjectives()",
+			"fabric": "objectivesToNbt()"
+		}
+	]
+}

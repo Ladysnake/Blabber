@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.status.ServerStatus$Favicon",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.status.ServerStatus$Favicon",
+			"fabric": "net.minecraft.server.ServerMetadata$Favicon"
+		},
+		{
+			"forge": "iconBytes",
+			"fabric": "iconBytes"
+		},
+		{
+			"forge": "iconBytes",
+			"fabric": "iconBytes"
+		},
+		{
+			"forge": "PREFIX",
+			"fabric": "DATA_URI_PREFIX"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "iconBytes()",
+			"fabric": "iconBytes()"
+		},
+		{
+			"forge": "iconBytes()",
+			"fabric": "iconBytes()"
+		}
+	]
+}

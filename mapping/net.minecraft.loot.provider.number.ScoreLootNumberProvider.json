@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue",
+			"fabric": "net.minecraft.loot.provider.number.ScoreLootNumberProvider"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "score",
+			"fabric": "score"
+		},
+		{
+			"forge": "scale",
+			"fabric": "scale"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "fromScoreboard(LootContext$EntityTarget arg0, String arg1)",
+			"fabric": "create(LootContext$EntityTarget target, String score)"
+		},
+		{
+			"forge": "fromScoreboard(LootContext$EntityTarget arg0, String arg1, float arg2)",
+			"fabric": "create(LootContext$EntityTarget target, String score, float scale)"
+		},
+		{
+			"forge": "getFloat(LootContext arg0)",
+			"fabric": "nextFloat(LootContext arg0)"
+		}
+	]
+}

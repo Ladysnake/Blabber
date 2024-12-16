@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.resources.model.AtlasSet$AtlasEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.AtlasSet$AtlasEntry",
+			"fabric": "net.minecraft.client.render.model.SpriteAtlasManager$Atlas"
+		},
+		{
+			"forge": "atlas",
+			"fabric": "atlas"
+		},
+		{
+			"forge": "atlas",
+			"fabric": "atlas"
+		},
+		{
+			"forge": "atlasInfoLocation",
+			"fabric": "atlasInfoLocation"
+		},
+		{
+			"forge": "close()",
+			"fabric": "atlas()"
+		},
+		{
+			"forge": "atlas()",
+			"fabric": "atlas()"
+		},
+		{
+			"forge": "atlasInfoLocation()",
+			"fabric": "atlasInfoLocation()"
+		}
+	]
+}

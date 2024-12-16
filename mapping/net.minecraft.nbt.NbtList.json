@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.nbt.ListTag",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.ListTag",
+			"fabric": "net.minecraft.nbt.NbtList"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "TYPE"
+		},
+		{
+			"forge": "list",
+			"fabric": "value"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "write(DataOutput arg0)",
+			"fabric": "write(DataOutput arg0)"
+		},
+		{
+			"forge": "write(DataOutput arg0)",
+			"fabric": "write(DataOutput arg0)"
+		},
+		{
+			"forge": "sizeInBytes()",
+			"fabric": "getSizeInBytes()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getNbtType()"
+		},
+		{
+			"forge": "updateTypeAfterRemove()",
+			"fabric": "forgetTypeIfEmpty()"
+		},
+		{
+			"forge": "remove(int arg0)",
+			"fabric": "remove(int arg0)"
+		},
+		{
+			"forge": "getCompound(int arg0)",
+			"fabric": "getCompound(int index)"
+		},
+		{
+			"forge": "getList(int arg0)",
+			"fabric": "getList(int index)"
+		},
+		{
+			"forge": "getShort(int arg0)",
+			"fabric": "getShort(int index)"
+		},
+		{
+			"forge": "getInt(int arg0)",
+			"fabric": "getInt(int index)"
+		},
+		{
+			"forge": "getIntArray(int arg0)",
+			"fabric": "getIntArray(int index)"
+		},
+		{
+			"forge": "getLongArray(int arg0)",
+			"fabric": "getLongArray(int index)"
+		},
+		{
+			"forge": "getDouble(int arg0)",
+			"fabric": "getDouble(int index)"
+		},
+		{
+			"forge": "getFloat(int arg0)",
+			"fabric": "getFloat(int index)"
+		},
+		{
+			"forge": "getString(int arg0)",
+			"fabric": "getString(int index)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int arg0)"
+		},
+		{
+			"forge": "set(int arg0, Tag arg1)",
+			"fabric": "set(int arg0, NbtElement arg1)"
+		},
+		{
+			"forge": "add(int arg0, Tag arg1)",
+			"fabric": "add(int arg0, NbtElement arg1)"
+		},
+		{
+			"forge": "setTag(int arg0, Tag arg1)",
+			"fabric": "setElement(int arg0, NbtElement arg1)"
+		},
+		{
+			"forge": "addTag(int arg0, Tag arg1)",
+			"fabric": "addElement(int arg0, NbtElement arg1)"
+		},
+		{
+			"forge": "updateType(Tag arg0)",
+			"fabric": "canAdd(NbtElement element)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "accept(TagVisitor arg0)",
+			"fabric": "accept(NbtElementVisitor arg0)"
+		},
+		{
+			"forge": "getElementType()",
+			"fabric": "getHeldType()"
+		},
+		{
+			"forge": "accept(StreamTagVisitor arg0)",
+			"fabric": "doAccept(NbtScanner arg0)"
+		}
+	]
+}

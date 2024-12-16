@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.components.MultiLineTextWidget$CacheKey",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.MultiLineTextWidget$CacheKey",
+			"fabric": "net.minecraft.client.gui.widget.MultilineTextWidget$CacheKey"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "maxWidth",
+			"fabric": "maxWidth"
+		},
+		{
+			"forge": "maxRows",
+			"fabric": "maxRows"
+		},
+		{
+			"forge": "message()",
+			"fabric": "message()"
+		},
+		{
+			"forge": "message()",
+			"fabric": "message()"
+		},
+		{
+			"forge": "maxWidth()",
+			"fabric": "maxWidth()"
+		},
+		{
+			"forge": "maxRows()",
+			"fabric": "maxRows()"
+		}
+	]
+}

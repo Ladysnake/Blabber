@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.ArrowLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.ArrowLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.StuckArrowsFeatureRenderer"
+		},
+		{
+			"forge": "dispatcher",
+			"fabric": "dispatcher"
+		},
+		{
+			"forge": "dispatcher",
+			"fabric": "dispatcher"
+		},
+		{
+			"forge": "numStuck(T arg0)",
+			"fabric": "getObjectCount(T arg0)"
+		},
+		{
+			"forge": "numStuck(T arg0)",
+			"fabric": "getObjectCount(T arg0)"
+		},
+		{
+			"forge": "renderStuckItem(PoseStack arg0, MultiBufferSource arg1, int arg2, Entity arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "renderObject(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, Entity arg3, float arg4, float arg5, float arg6, float arg7)"
+		}
+	]
+}

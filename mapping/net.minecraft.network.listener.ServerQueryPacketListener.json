@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.network.protocol.status.ServerStatusPacketListener",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.status.ServerStatusPacketListener",
+			"fabric": "net.minecraft.network.listener.ServerQueryPacketListener"
+		},
+		{
+			"forge": "handlePingRequest(ServerboundPingRequestPacket arg0)",
+			"fabric": "onPing(QueryPingC2SPacket packet)"
+		},
+		{
+			"forge": "handlePingRequest(ServerboundPingRequestPacket arg0)",
+			"fabric": "onPing(QueryPingC2SPacket packet)"
+		},
+		{
+			"forge": "handleStatusRequest(ServerboundStatusRequestPacket arg0)",
+			"fabric": "onRequest(QueryRequestC2SPacket packet)"
+		}
+	]
+}

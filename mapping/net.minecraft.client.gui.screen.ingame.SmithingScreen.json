@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.SmithingScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.SmithingScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.SmithingScreen"
+		},
+		{
+			"forge": "SMITHING_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SMITHING_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_SMITHING_TEMPLATE_ARMOR_TRIM",
+			"fabric": "EMPTY_SLOT_SMITHING_TEMPLATE_ARMOR_TRIM_TEXTURE"
+		},
+		{
+			"forge": "EMPTY_SLOT_SMITHING_TEMPLATE_NETHERITE_UPGRADE",
+			"fabric": "EMPTY_SLOT_SMITHING_TEMPLATE_NETHERITE_UPGRADE_TEXTURE"
+		},
+		{
+			"forge": "MISSING_TEMPLATE_TOOLTIP",
+			"fabric": "MISSING_TEMPLATE_TOOLTIP"
+		},
+		{
+			"forge": "ERROR_TOOLTIP",
+			"fabric": "ERROR_TOOLTIP"
+		},
+		{
+			"forge": "EMPTY_SLOT_SMITHING_TEMPLATES",
+			"fabric": "EMPTY_SLOT_TEXTURES"
+		},
+		{
+			"forge": "TITLE_LABEL_X",
+			"fabric": "field_42057"
+		},
+		{
+			"forge": "TITLE_LABEL_Y",
+			"fabric": "field_42058"
+		},
+		{
+			"forge": "ERROR_ICON_WIDTH",
+			"fabric": "field_42059"
+		},
+		{
+			"forge": "ERROR_ICON_HEIGHT",
+			"fabric": "field_42060"
+		},
+		{
+			"forge": "ERROR_ICON_X",
+			"fabric": "field_42061"
+		},
+		{
+			"forge": "ERROR_ICON_Y",
+			"fabric": "field_42062"
+		},
+		{
+			"forge": "TOOLTIP_WIDTH",
+			"fabric": "field_42063"
+		},
+		{
+			"forge": "ARMOR_STAND_Y_ROT",
+			"fabric": "field_42068"
+		},
+		{
+			"forge": "ARMOR_STAND_X_ROT",
+			"fabric": "field_42047"
+		},
+		{
+			"forge": "ARMOR_STAND_ANGLE",
+			"fabric": "ARMOR_STAND_ROTATION"
+		},
+		{
+			"forge": "ARMOR_STAND_SCALE",
+			"fabric": "field_42049"
+		},
+		{
+			"forge": "ARMOR_STAND_OFFSET_Y",
+			"fabric": "field_42050"
+		},
+		{
+			"forge": "ARMOR_STAND_OFFSET_X",
+			"fabric": "field_42051"
+		},
+		{
+			"forge": "templateIcon",
+			"fabric": "templateSlotIcon"
+		},
+		{
+			"forge": "baseIcon",
+			"fabric": "baseSlotIcon"
+		},
+		{
+			"forge": "additionalIcon",
+			"fabric": "additionsSlotIcon"
+		},
+		{
+			"forge": "armorStandPreview",
+			"fabric": "armorStand"
+		},
+		{
+			"forge": "subInit()",
+			"fabric": "setup()"
+		},
+		{
+			"forge": "subInit()",
+			"fabric": "setup()"
+		},
+		{
+			"forge": "containerTick()",
+			"fabric": "handledScreenTick()"
+		},
+		{
+			"forge": "getTemplateItem()",
+			"fabric": "getSmithingTemplate()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderBg(GuiGraphics arg0, float arg1, int arg2, int arg3)",
+			"fabric": "drawBackground(DrawContext arg0, float arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "slotChanged(AbstractContainerMenu arg0, int arg1, ItemStack arg2)",
+			"fabric": "onSlotUpdate(ScreenHandler arg0, int arg1, ItemStack arg2)"
+		},
+		{
+			"forge": "updateArmorStandPreview(ItemStack arg0)",
+			"fabric": "equipArmorStand(ItemStack stack)"
+		},
+		{
+			"forge": "renderErrorIcon(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "drawInvalidRecipeArrow(DrawContext arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "renderOnboardingTooltips(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "renderSlotTooltip(DrawContext context, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "hasRecipeError()",
+			"fabric": "hasInvalidRecipe()"
+		}
+	]
+}

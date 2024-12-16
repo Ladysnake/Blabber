@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.block.entity.DecoratedPotBlockEntity$Decorations",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.DecoratedPotBlockEntity$Decorations",
+			"fabric": "net.minecraft.block.entity.DecoratedPotBlockEntity$Sherds"
+		},
+		{
+			"forge": "back",
+			"fabric": "back"
+		},
+		{
+			"forge": "back",
+			"fabric": "back"
+		},
+		{
+			"forge": "left",
+			"fabric": "left"
+		},
+		{
+			"forge": "right",
+			"fabric": "right"
+		},
+		{
+			"forge": "front",
+			"fabric": "front"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "toNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "save(CompoundTag arg0)",
+			"fabric": "toNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "sorted()",
+			"fabric": "stream()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "fromNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "itemFromTag(ListTag arg0, int arg1)",
+			"fabric": "getSherd(NbtList list, int index)"
+		},
+		{
+			"forge": "back()",
+			"fabric": "back()"
+		},
+		{
+			"forge": "left()",
+			"fabric": "left()"
+		},
+		{
+			"forge": "right()",
+			"fabric": "right()"
+		},
+		{
+			"forge": "front()",
+			"fabric": "front()"
+		}
+	]
+}

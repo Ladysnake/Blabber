@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.resources.sounds.UnderwaterAmbientSoundInstances$UnderwaterAmbientSoundInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.UnderwaterAmbientSoundInstances$UnderwaterAmbientSoundInstance",
+			"fabric": "net.minecraft.client.sound.AmbientSoundLoops$Underwater"
+		},
+		{
+			"forge": "FADE_DURATION",
+			"fabric": "MAX_TRANSITION_TIMER"
+		},
+		{
+			"forge": "FADE_DURATION",
+			"fabric": "MAX_TRANSITION_TIMER"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "fade",
+			"fabric": "transitionTimer"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

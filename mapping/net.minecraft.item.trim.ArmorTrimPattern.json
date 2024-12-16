@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.item.armortrim.TrimPattern",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.armortrim.TrimPattern",
+			"fabric": "net.minecraft.item.trim.ArmorTrimPattern"
+		},
+		{
+			"forge": "assetId",
+			"fabric": "assetId"
+		},
+		{
+			"forge": "assetId",
+			"fabric": "assetId"
+		},
+		{
+			"forge": "templateItem",
+			"fabric": "templateItem"
+		},
+		{
+			"forge": "description",
+			"fabric": "description"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "ENTRY_CODEC"
+		},
+		{
+			"forge": "copyWithStyle(Holder<TrimMaterial> arg0)",
+			"fabric": "getDescription(RegistryEntry<ArmorTrimMaterial> material)"
+		},
+		{
+			"forge": "copyWithStyle(Holder<TrimMaterial> arg0)",
+			"fabric": "getDescription(RegistryEntry<ArmorTrimMaterial> material)"
+		},
+		{
+			"forge": "assetId()",
+			"fabric": "assetId()"
+		},
+		{
+			"forge": "templateItem()",
+			"fabric": "templateItem()"
+		},
+		{
+			"forge": "description()",
+			"fabric": "description()"
+		}
+	]
+}

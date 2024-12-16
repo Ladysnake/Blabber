@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.nbt.EndTag",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.EndTag",
+			"fabric": "net.minecraft.nbt.NbtEnd"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "SELF_SIZE_IN_BYTES",
+			"fabric": "SIZE"
+		},
+		{
+			"forge": "TYPE",
+			"fabric": "TYPE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "write(DataOutput arg0)",
+			"fabric": "write(DataOutput arg0)"
+		},
+		{
+			"forge": "write(DataOutput arg0)",
+			"fabric": "write(DataOutput arg0)"
+		},
+		{
+			"forge": "sizeInBytes()",
+			"fabric": "getSizeInBytes()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getNbtType()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "accept(TagVisitor arg0)",
+			"fabric": "accept(NbtElementVisitor arg0)"
+		},
+		{
+			"forge": "accept(StreamTagVisitor arg0)",
+			"fabric": "doAccept(NbtScanner arg0)"
+		}
+	]
+}

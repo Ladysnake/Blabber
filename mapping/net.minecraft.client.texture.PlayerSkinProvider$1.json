@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.resources.SkinManager$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.SkinManager$1",
+			"fabric": "net.minecraft.client.texture.PlayerSkinProvider$1"
+		},
+		{
+			"forge": "load(String arg0)",
+			"fabric": "load(String arg0)"
+		},
+		{
+			"forge": "load(String arg0)",
+			"fabric": "load(String arg0)"
+		}
+	]
+}

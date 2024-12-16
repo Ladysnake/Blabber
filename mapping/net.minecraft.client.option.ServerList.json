@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.client.multiplayer.ServerList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ServerList",
+			"fabric": "net.minecraft.client.option.ServerList"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "IO_MAILBOX",
+			"fabric": "IO_EXECUTOR"
+		},
+		{
+			"forge": "MAX_HIDDEN_SERVERS",
+			"fabric": "MAX_HIDDEN_ENTRIES"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "serverList",
+			"fabric": "servers"
+		},
+		{
+			"forge": "hiddenServerList",
+			"fabric": "hiddenServers"
+		},
+		{
+			"forge": "load()",
+			"fabric": "loadFile()"
+		},
+		{
+			"forge": "load()",
+			"fabric": "loadFile()"
+		},
+		{
+			"forge": "save()",
+			"fabric": "saveFile()"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int index)"
+		},
+		{
+			"forge": "get(String arg0)",
+			"fabric": "get(String address)"
+		},
+		{
+			"forge": "unhide(String arg0)",
+			"fabric": "tryUnhide(String address)"
+		},
+		{
+			"forge": "remove(ServerData arg0)",
+			"fabric": "remove(ServerInfo serverInfo)"
+		},
+		{
+			"forge": "add(ServerData arg0, boolean arg1)",
+			"fabric": "add(ServerInfo serverInfo, boolean hidden)"
+		},
+		{
+			"forge": "size()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "swap(int arg0, int arg1)",
+			"fabric": "swapEntries(int index1, int index2)"
+		},
+		{
+			"forge": "replace(int arg0, ServerData arg1)",
+			"fabric": "set(int index, ServerInfo serverInfo)"
+		},
+		{
+			"forge": "set(ServerData arg0, List<ServerData> arg1)",
+			"fabric": "replace(ServerInfo serverInfo, List<ServerInfo> serverInfos)"
+		},
+		{
+			"forge": "saveSingleServer(ServerData arg0)",
+			"fabric": "updateServerListEntry(ServerInfo serverInfo)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.inventory.LoomMenu$6",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.LoomMenu$6",
+			"fabric": "net.minecraft.screen.LoomScreenHandler$6"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeItem(PlayerEntity arg0, ItemStack arg1)"
+		}
+	]
+}

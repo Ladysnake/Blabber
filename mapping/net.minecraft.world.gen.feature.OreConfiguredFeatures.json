@@ -1,0 +1,145 @@
+{
+	"title": "net.minecraft.data.worldgen.features.OreFeatures",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.features.OreFeatures",
+			"fabric": "net.minecraft.world.gen.feature.OreConfiguredFeatures"
+		},
+		{
+			"forge": "ORE_MAGMA",
+			"fabric": "ORE_MAGMA"
+		},
+		{
+			"forge": "ORE_MAGMA",
+			"fabric": "ORE_MAGMA"
+		},
+		{
+			"forge": "ORE_SOUL_SAND",
+			"fabric": "ORE_SOUL_SAND"
+		},
+		{
+			"forge": "ORE_NETHER_GOLD",
+			"fabric": "ORE_NETHER_GOLD"
+		},
+		{
+			"forge": "ORE_QUARTZ",
+			"fabric": "ORE_QUARTZ"
+		},
+		{
+			"forge": "ORE_GRAVEL_NETHER",
+			"fabric": "ORE_GRAVEL_NETHER"
+		},
+		{
+			"forge": "ORE_BLACKSTONE",
+			"fabric": "ORE_BLACKSTONE"
+		},
+		{
+			"forge": "ORE_DIRT",
+			"fabric": "ORE_DIRT"
+		},
+		{
+			"forge": "ORE_GRAVEL",
+			"fabric": "ORE_GRAVEL"
+		},
+		{
+			"forge": "ORE_GRANITE",
+			"fabric": "ORE_GRANITE"
+		},
+		{
+			"forge": "ORE_DIORITE",
+			"fabric": "ORE_DIORITE"
+		},
+		{
+			"forge": "ORE_ANDESITE",
+			"fabric": "ORE_ANDESITE"
+		},
+		{
+			"forge": "ORE_TUFF",
+			"fabric": "ORE_TUFF"
+		},
+		{
+			"forge": "ORE_COAL",
+			"fabric": "ORE_COAL"
+		},
+		{
+			"forge": "ORE_COAL_BURIED",
+			"fabric": "ORE_COAL_BURIED"
+		},
+		{
+			"forge": "ORE_IRON",
+			"fabric": "ORE_IRON"
+		},
+		{
+			"forge": "ORE_IRON_SMALL",
+			"fabric": "ORE_IRON_SMALL"
+		},
+		{
+			"forge": "ORE_GOLD",
+			"fabric": "ORE_GOLD"
+		},
+		{
+			"forge": "ORE_GOLD_BURIED",
+			"fabric": "ORE_GOLD_BURIED"
+		},
+		{
+			"forge": "ORE_REDSTONE",
+			"fabric": "ORE_REDSTONE"
+		},
+		{
+			"forge": "ORE_DIAMOND_SMALL",
+			"fabric": "ORE_DIAMOND_SMALL"
+		},
+		{
+			"forge": "ORE_DIAMOND_LARGE",
+			"fabric": "ORE_DIAMOND_LARGE"
+		},
+		{
+			"forge": "ORE_DIAMOND_BURIED",
+			"fabric": "ORE_DIAMOND_BURIED"
+		},
+		{
+			"forge": "ORE_LAPIS",
+			"fabric": "ORE_LAPIS"
+		},
+		{
+			"forge": "ORE_LAPIS_BURIED",
+			"fabric": "ORE_LAPIS_BURIED"
+		},
+		{
+			"forge": "ORE_INFESTED",
+			"fabric": "ORE_INFESTED"
+		},
+		{
+			"forge": "ORE_EMERALD",
+			"fabric": "ORE_EMERALD"
+		},
+		{
+			"forge": "ORE_ANCIENT_DEBRIS_LARGE",
+			"fabric": "ORE_ANCIENT_DEBRIS_LARGE"
+		},
+		{
+			"forge": "ORE_ANCIENT_DEBRIS_SMALL",
+			"fabric": "ORE_ANCIENT_DEBRIS_SMALL"
+		},
+		{
+			"forge": "ORE_COPPPER_SMALL",
+			"fabric": "ORE_COPPER_SMALL"
+		},
+		{
+			"forge": "ORE_COPPER_LARGE",
+			"fabric": "ORE_COPPER_LARGE"
+		},
+		{
+			"forge": "ORE_CLAY",
+			"fabric": "ORE_CLAY"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<ConfiguredFeature<?, ?>> arg0)",
+			"fabric": "bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable)"
+		}
+	]
+}

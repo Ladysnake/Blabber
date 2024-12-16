@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityHealthFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityHealthFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityHealthFix"
+		},
+		{
+			"forge": "ENTITIES",
+			"fabric": "ENTITIES"
+		},
+		{
+			"forge": "ENTITIES",
+			"fabric": "ENTITIES"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixHealth(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixHealth(com.mojang.serialization.Dynamic<?> arg0)"
+		}
+	]
+}

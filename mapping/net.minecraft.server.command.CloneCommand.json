@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.commands.CloneCommands",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.CloneCommands",
+			"fabric": "net.minecraft.server.command.CloneCommand"
+		},
+		{
+			"forge": "ERROR_OVERLAP",
+			"fabric": "OVERLAP_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_OVERLAP",
+			"fabric": "OVERLAP_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_AREA_TOO_LARGE",
+			"fabric": "TOO_BIG_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "FILTER_AIR",
+			"fabric": "IS_AIR_PREDICATE"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "beginEndDestinationAndModeSuffix(CommandBuildContext arg0, CloneCommands$CommandFunction<com.mojang.brigadier.context.CommandContext<CommandSourceStack>, ServerLevel> arg1)",
+			"fabric": "createSourceArgs(CommandRegistryAccess commandRegistryAccess, CloneCommand$ArgumentGetter<com.mojang.brigadier.context.CommandContext<ServerCommandSource>, ServerWorld> worldGetter)"
+		},
+		{
+			"forge": "getLoadedDimensionAndPosition(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, ServerLevel arg1, String arg2)",
+			"fabric": "createDimensionalPos(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, ServerWorld world, String name)"
+		},
+		{
+			"forge": "destinationAndModeSuffix(CommandBuildContext arg0, CloneCommands$CommandFunction<com.mojang.brigadier.context.CommandContext<CommandSourceStack>, ServerLevel> arg1, CloneCommands$CommandFunction<com.mojang.brigadier.context.CommandContext<CommandSourceStack>, ServerLevel> arg2)",
+			"fabric": "createDestinationArgs(CommandRegistryAccess commandRegistryAccess, CloneCommand$ArgumentGetter<com.mojang.brigadier.context.CommandContext<ServerCommandSource>, ServerWorld> sourceWorldGetter, CloneCommand$ArgumentGetter<com.mojang.brigadier.context.CommandContext<ServerCommandSource>, ServerWorld> targetWorldGetter)"
+		},
+		{
+			"forge": "wrapWithCloneMode(CloneCommands$CommandFunction<com.mojang.brigadier.context.CommandContext<CommandSourceStack>, CloneCommands$DimensionAndPosition> arg0, CloneCommands$CommandFunction<com.mojang.brigadier.context.CommandContext<CommandSourceStack>, CloneCommands$DimensionAndPosition> arg1, CloneCommands$CommandFunction<com.mojang.brigadier.context.CommandContext<CommandSourceStack>, CloneCommands$DimensionAndPosition> arg2, CloneCommands$CommandFunction<com.mojang.brigadier.context.CommandContext<CommandSourceStack>, Predicate<BlockInWorld>> arg3, com.mojang.brigadier.builder.ArgumentBuilder<CommandSourceStack, ?> arg4)",
+			"fabric": "createModeArgs(CloneCommand$ArgumentGetter<com.mojang.brigadier.context.CommandContext<ServerCommandSource>, CloneCommand$DimensionalPos> beginPosGetter, CloneCommand$ArgumentGetter<com.mojang.brigadier.context.CommandContext<ServerCommandSource>, CloneCommand$DimensionalPos> endPosGetter, CloneCommand$ArgumentGetter<com.mojang.brigadier.context.CommandContext<ServerCommandSource>, CloneCommand$DimensionalPos> destinationPosGetter, CloneCommand$ArgumentGetter<com.mojang.brigadier.context.CommandContext<ServerCommandSource>, Predicate<CachedBlockPosition>> filterGetter, com.mojang.brigadier.builder.ArgumentBuilder<ServerCommandSource, ?> builder)"
+		},
+		{
+			"forge": "clone(CommandSourceStack arg0, CloneCommands$DimensionAndPosition arg1, CloneCommands$DimensionAndPosition arg2, CloneCommands$DimensionAndPosition arg3, Predicate<BlockInWorld> arg4, CloneCommands$Mode arg5)",
+			"fabric": "execute(ServerCommandSource source, CloneCommand$DimensionalPos begin, CloneCommand$DimensionalPos end, CloneCommand$DimensionalPos destination, Predicate<CachedBlockPosition> filter, CloneCommand$Mode mode)"
+		}
+	]
+}

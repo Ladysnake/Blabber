@@ -1,0 +1,141 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.ChestBoat",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.ChestBoat",
+			"fabric": "net.minecraft.entity.vehicle.ChestBoatEntity"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "itemStacks",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "lootTable",
+			"fabric": "lootTableId"
+		},
+		{
+			"forge": "lootTableSeed",
+			"fabric": "lootTableSeed"
+		},
+		{
+			"forge": "getSinglePassengerXOffset()",
+			"fabric": "getPassengerHorizontalOffset()"
+		},
+		{
+			"forge": "getSinglePassengerXOffset()",
+			"fabric": "getPassengerHorizontalOffset()"
+		},
+		{
+			"forge": "getMaxPassengers()",
+			"fabric": "getMaxPassengers()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "destroy(DamageSource arg0)",
+			"fabric": "dropItems(DamageSource arg0)"
+		},
+		{
+			"forge": "remove(Entity$RemovalReason arg0)",
+			"fabric": "remove(Entity$RemovalReason arg0)"
+		},
+		{
+			"forge": "interact(Player arg0, InteractionHand arg1)",
+			"fabric": "interact(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "openCustomInventoryScreen(Player arg0)",
+			"fabric": "openInventory(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getDropItem()",
+			"fabric": "asItem()"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "getSlot(int arg0)",
+			"fabric": "getStackReference(int arg0)"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1, Player arg2)",
+			"fabric": "createMenu(int arg0, PlayerInventory arg1, PlayerEntity arg2)"
+		},
+		{
+			"forge": "unpackLootTable(Player arg0)",
+			"fabric": "generateLoot(PlayerEntity player)"
+		},
+		{
+			"forge": "getLootTable()",
+			"fabric": "getLootTableId()"
+		},
+		{
+			"forge": "setLootTable(ResourceLocation arg0)",
+			"fabric": "setLootTableId(Identifier arg0)"
+		},
+		{
+			"forge": "getLootTableSeed()",
+			"fabric": "getLootTableSeed()"
+		},
+		{
+			"forge": "setLootTableSeed(long arg0)",
+			"fabric": "setLootTableSeed(long arg0)"
+		},
+		{
+			"forge": "getItemStacks()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "clearItemStacks()",
+			"fabric": "resetInventory()"
+		},
+		{
+			"forge": "stopOpen(Player arg0)",
+			"fabric": "onClose(PlayerEntity arg0)"
+		}
+	]
+}

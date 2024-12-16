@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.color.item.ItemColor",
+	"items": [
+		{
+			"forge": "net.minecraft.client.color.item.ItemColor",
+			"fabric": "net.minecraft.client.color.item.ItemColorProvider"
+		},
+		{
+			"forge": "getColor(ItemStack arg0, int arg1)",
+			"fabric": "getColor(ItemStack stack, int tintIndex)"
+		},
+		{
+			"forge": "getColor(ItemStack arg0, int arg1)",
+			"fabric": "getColor(ItemStack stack, int tintIndex)"
+		}
+	]
+}

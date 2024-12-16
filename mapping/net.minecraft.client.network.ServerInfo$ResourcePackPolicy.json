@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.multiplayer.ServerData$ServerPackStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ServerData$ServerPackStatus",
+			"fabric": "net.minecraft.client.network.ServerInfo$ResourcePackPolicy"
+		},
+		{
+			"forge": "ENABLED",
+			"fabric": "ENABLED"
+		},
+		{
+			"forge": "ENABLED",
+			"fabric": "ENABLED"
+		},
+		{
+			"forge": "DISABLED",
+			"fabric": "DISABLED"
+		},
+		{
+			"forge": "PROMPT",
+			"fabric": "PROMPT"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		}
+	]
+}

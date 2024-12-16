@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.player.ChatVisiblity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.player.ChatVisiblity",
+			"fabric": "net.minecraft.client.option.ChatVisibility"
+		},
+		{
+			"forge": "FULL",
+			"fabric": "FULL"
+		},
+		{
+			"forge": "FULL",
+			"fabric": "FULL"
+		},
+		{
+			"forge": "SYSTEM",
+			"fabric": "SYSTEM"
+		},
+		{
+			"forge": "HIDDEN",
+			"fabric": "HIDDEN"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "key",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getKey()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		}
+	]
+}

@@ -1,0 +1,205 @@
+{
+	"title": "com.mojang.blaze3d.vertex.BufferBuilder",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.BufferBuilder",
+			"fabric": "net.minecraft.client.render.BufferBuilder"
+		},
+		{
+			"forge": "GROWTH_SIZE",
+			"fabric": "ROUND_SIZE_CHANGE"
+		},
+		{
+			"forge": "GROWTH_SIZE",
+			"fabric": "ROUND_SIZE_CHANGE"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "buffer",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "renderedBufferCount",
+			"fabric": "builtBufferCount"
+		},
+		{
+			"forge": "renderedBufferPointer",
+			"fabric": "batchOffset"
+		},
+		{
+			"forge": "nextElementByte",
+			"fabric": "elementOffset"
+		},
+		{
+			"forge": "vertices",
+			"fabric": "vertexCount"
+		},
+		{
+			"forge": "currentElement",
+			"fabric": "currentElement"
+		},
+		{
+			"forge": "elementIndex",
+			"fabric": "currentElementId"
+		},
+		{
+			"forge": "format",
+			"fabric": "format"
+		},
+		{
+			"forge": "mode",
+			"fabric": "drawMode"
+		},
+		{
+			"forge": "fastFormat",
+			"fabric": "canSkipElementChecks"
+		},
+		{
+			"forge": "fullFormat",
+			"fabric": "hasOverlay"
+		},
+		{
+			"forge": "building",
+			"fabric": "building"
+		},
+		{
+			"forge": "sortingPoints",
+			"fabric": "sortingPrimitiveCenters"
+		},
+		{
+			"forge": "sorting",
+			"fabric": "sorter"
+		},
+		{
+			"forge": "indexOnly",
+			"fabric": "hasNoVertexBuffer"
+		},
+		{
+			"forge": "ensureVertexCapacity()",
+			"fabric": "grow()"
+		},
+		{
+			"forge": "ensureVertexCapacity()",
+			"fabric": "grow()"
+		},
+		{
+			"forge": "ensureCapacity(int arg0)",
+			"fabric": "grow(int size)"
+		},
+		{
+			"forge": "roundUp(int arg0)",
+			"fabric": "roundBufferSize(int amount)"
+		},
+		{
+			"forge": "setQuadSorting(VertexSorting arg0)",
+			"fabric": "setSorter(VertexSorter sorter)"
+		},
+		{
+			"forge": "getSortState()",
+			"fabric": "getSortingData()"
+		},
+		{
+			"forge": "restoreSortState(BufferBuilder$SortState arg0)",
+			"fabric": "beginSortedIndexBuffer(BufferBuilder$TransparentSortingData state)"
+		},
+		{
+			"forge": "begin(VertexFormat$Mode arg0, VertexFormat arg1)",
+			"fabric": "begin(VertexFormat$DrawMode drawMode, VertexFormat format)"
+		},
+		{
+			"forge": "switchFormat(VertexFormat arg0)",
+			"fabric": "setFormat(VertexFormat format)"
+		},
+		{
+			"forge": "intConsumer(int arg0, VertexFormat$IndexType arg1)",
+			"fabric": "getIndexConsumer(int offset, VertexFormat$IndexType indexType)"
+		},
+		{
+			"forge": "makeQuadSortingPoints()",
+			"fabric": "buildPrimitiveCenters()"
+		},
+		{
+			"forge": "putSortedQuadIndices(VertexFormat$IndexType arg0)",
+			"fabric": "writeSortedIndices(VertexFormat$IndexType indexType)"
+		},
+		{
+			"forge": "isCurrentBatchEmpty()",
+			"fabric": "isBatchEmpty()"
+		},
+		{
+			"forge": "endOrDiscardIfEmpty()",
+			"fabric": "endNullable()"
+		},
+		{
+			"forge": "end()",
+			"fabric": "end()"
+		},
+		{
+			"forge": "ensureDrawing()",
+			"fabric": "ensureBuilding()"
+		},
+		{
+			"forge": "storeRenderedBuffer()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "reset()",
+			"fabric": "resetBuilding()"
+		},
+		{
+			"forge": "putByte(int arg0, byte arg1)",
+			"fabric": "putByte(int arg0, byte arg1)"
+		},
+		{
+			"forge": "putShort(int arg0, short arg1)",
+			"fabric": "putShort(int arg0, short arg1)"
+		},
+		{
+			"forge": "putFloat(int arg0, float arg1)",
+			"fabric": "putFloat(int arg0, float arg1)"
+		},
+		{
+			"forge": "endVertex()",
+			"fabric": "next()"
+		},
+		{
+			"forge": "nextElement()",
+			"fabric": "nextElement()"
+		},
+		{
+			"forge": "color(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "color(int arg0, int arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "vertex(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9, int arg10, float arg11, float arg12, float arg13)",
+			"fabric": "vertex(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9, int arg10, float arg11, float arg12, float arg13)"
+		},
+		{
+			"forge": "releaseRenderedBuffer()",
+			"fabric": "releaseBuiltBuffer()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "discard()",
+			"fabric": "reset()"
+		},
+		{
+			"forge": "currentElement()",
+			"fabric": "getCurrentElement()"
+		},
+		{
+			"forge": "building()",
+			"fabric": "isBuilding()"
+		},
+		{
+			"forge": "bufferSlice(int arg0, int arg1)",
+			"fabric": "slice(int start, int end)"
+		}
+	]
+}

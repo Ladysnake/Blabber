@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.server.rcon.PktUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.server.rcon.PktUtils",
+			"fabric": "net.minecraft.server.rcon.BufferHelper"
+		},
+		{
+			"forge": "MAX_PACKET_SIZE",
+			"fabric": "field_29792"
+		},
+		{
+			"forge": "MAX_PACKET_SIZE",
+			"fabric": "field_29792"
+		},
+		{
+			"forge": "HEX_CHAR",
+			"fabric": "HEX_CHARS_LOOKUP"
+		},
+		{
+			"forge": "stringFromByteArray(byte[] arg0, int arg1, int arg2)",
+			"fabric": "getString(byte[] buf, int arg1, int arg2)"
+		},
+		{
+			"forge": "stringFromByteArray(byte[] arg0, int arg1, int arg2)",
+			"fabric": "getString(byte[] buf, int arg1, int arg2)"
+		},
+		{
+			"forge": "intFromByteArray(byte[] arg0, int arg1)",
+			"fabric": "getIntLE(byte[] buf, int start)"
+		},
+		{
+			"forge": "intFromByteArray(byte[] arg0, int arg1, int arg2)",
+			"fabric": "getIntLE(byte[] buf, int start, int limit)"
+		},
+		{
+			"forge": "intFromNetworkByteArray(byte[] arg0, int arg1, int arg2)",
+			"fabric": "getIntBE(byte[] buf, int start, int limit)"
+		},
+		{
+			"forge": "toHexString(byte arg0)",
+			"fabric": "toHex(byte b)"
+		}
+	]
+}

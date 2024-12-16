@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.LongJumpToPreferredBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.LongJumpToPreferredBlock",
+			"fabric": "net.minecraft.entity.ai.brain.task.BiasedLongJumpTask"
+		},
+		{
+			"forge": "preferredBlockTag",
+			"fabric": "favoredBlocks"
+		},
+		{
+			"forge": "preferredBlockTag",
+			"fabric": "favoredBlocks"
+		},
+		{
+			"forge": "preferredBlocksChance",
+			"fabric": "biasChance"
+		},
+		{
+			"forge": "notPrefferedJumpCandidates",
+			"fabric": "unfavoredTargets"
+		},
+		{
+			"forge": "currentlyWantingPreferredOnes",
+			"fabric": "useBias"
+		},
+		{
+			"forge": "start(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "getJumpCandidate(ServerLevel arg0)",
+			"fabric": "getTarget(ServerWorld arg0)"
+		}
+	]
+}

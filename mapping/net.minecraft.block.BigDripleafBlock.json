@@ -1,0 +1,161 @@
+{
+	"title": "net.minecraft.world.level.block.BigDripleafBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BigDripleafBlock",
+			"fabric": "net.minecraft.block.BigDripleafBlock"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "TILT",
+			"fabric": "TILT"
+		},
+		{
+			"forge": "NO_TICK",
+			"fabric": "field_31015"
+		},
+		{
+			"forge": "DELAY_UNTIL_NEXT_TILT_STATE",
+			"fabric": "NEXT_TILT_DELAYS"
+		},
+		{
+			"forge": "MAX_GEN_HEIGHT",
+			"fabric": "field_31016"
+		},
+		{
+			"forge": "STEM_WIDTH",
+			"fabric": "field_31017"
+		},
+		{
+			"forge": "ENTITY_DETECTION_MIN_Y",
+			"fabric": "field_31018"
+		},
+		{
+			"forge": "LOWEST_LEAF_TOP",
+			"fabric": "field_31019"
+		},
+		{
+			"forge": "LEAF_SHAPES",
+			"fabric": "SHAPES_FOR_TILT"
+		},
+		{
+			"forge": "STEM_SLICER",
+			"fabric": "BASE_SHAPE"
+		},
+		{
+			"forge": "STEM_SHAPES",
+			"fabric": "SHAPES_FOR_DIRECTION"
+		},
+		{
+			"forge": "shapesCache",
+			"fabric": "shapes"
+		},
+		{
+			"forge": "calculateShape(BlockState arg0)",
+			"fabric": "getShapeForState(BlockState state)"
+		},
+		{
+			"forge": "calculateShape(BlockState arg0)",
+			"fabric": "getShapeForState(BlockState state)"
+		},
+		{
+			"forge": "placeWithRandomHeight(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "grow(WorldAccess world, Random random, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "canReplace(BlockState arg0)",
+			"fabric": "canGrowInto(BlockState state)"
+		},
+		{
+			"forge": "canPlaceAt(LevelHeightAccessor arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "canGrowInto(HeightLimitView world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "place(LevelAccessor arg0, BlockPos arg1, FluidState arg2, Direction arg3)",
+			"fabric": "placeDripleafAt(WorldAccess world, BlockPos pos, FluidState fluidState, Direction direction)"
+		},
+		{
+			"forge": "onProjectileHit(Level arg0, BlockState arg1, BlockHitResult arg2, Projectile arg3)",
+			"fabric": "onProjectileHit(World arg0, BlockState arg1, BlockHitResult arg2, ProjectileEntity arg3)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "playTiltSound(Level arg0, BlockPos arg1, SoundEvent arg2)",
+			"fabric": "playTiltSound(World world, BlockPos pos, SoundEvent soundEvent)"
+		},
+		{
+			"forge": "canEntityTilt(BlockPos arg0, Entity arg1)",
+			"fabric": "isEntityAbove(BlockPos pos, Entity entity)"
+		},
+		{
+			"forge": "setTiltAndScheduleTick(BlockState arg0, Level arg1, BlockPos arg2, Tilt arg3, SoundEvent arg4)",
+			"fabric": "changeTilt(BlockState state, World world, BlockPos pos, Tilt tilt, SoundEvent sound)"
+		},
+		{
+			"forge": "resetTilt(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "resetTilt(BlockState state, World world, BlockPos pos)"
+		},
+		{
+			"forge": "setTilt(BlockState arg0, Level arg1, BlockPos arg2, Tilt arg3)",
+			"fabric": "changeTilt(BlockState state, World world, BlockPos pos, Tilt tilt)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.crafting.StonecutterRecipe",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.StonecutterRecipe",
+			"fabric": "net.minecraft.recipe.StonecuttingRecipe"
+		},
+		{
+			"forge": "matches(Container arg0, Level arg1)",
+			"fabric": "matches(Inventory arg0, World arg1)"
+		},
+		{
+			"forge": "matches(Container arg0, Level arg1)",
+			"fabric": "matches(Inventory arg0, World arg1)"
+		},
+		{
+			"forge": "getToastSymbol()",
+			"fabric": "createIcon()"
+		}
+	]
+}

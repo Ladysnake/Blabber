@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemTransform",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemTransform",
+			"fabric": "net.minecraft.client.render.model.json.Transformation"
+		},
+		{
+			"forge": "NO_TRANSFORM",
+			"fabric": "IDENTITY"
+		},
+		{
+			"forge": "NO_TRANSFORM",
+			"fabric": "IDENTITY"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "translation",
+			"fabric": "translation"
+		},
+		{
+			"forge": "scale",
+			"fabric": "scale"
+		},
+		{
+			"forge": "apply(boolean arg0, PoseStack arg1)",
+			"fabric": "apply(boolean leftHanded, MatrixStack matrices)"
+		},
+		{
+			"forge": "apply(boolean arg0, PoseStack arg1)",
+			"fabric": "apply(boolean leftHanded, MatrixStack matrices)"
+		}
+	]
+}

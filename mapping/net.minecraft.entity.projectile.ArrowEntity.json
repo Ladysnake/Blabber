@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.entity.projectile.Arrow",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.Arrow",
+			"fabric": "net.minecraft.entity.projectile.ArrowEntity"
+		},
+		{
+			"forge": "EXPOSED_POTION_DECAY_TIME",
+			"fabric": "MAX_POTION_DURATION_TICKS"
+		},
+		{
+			"forge": "EXPOSED_POTION_DECAY_TIME",
+			"fabric": "MAX_POTION_DURATION_TICKS"
+		},
+		{
+			"forge": "NO_EFFECT_COLOR",
+			"fabric": "NO_POTION_COLOR"
+		},
+		{
+			"forge": "ID_EFFECT_COLOR",
+			"fabric": "COLOR"
+		},
+		{
+			"forge": "EVENT_POTION_PUFF",
+			"fabric": "PARTICLE_EFFECT_STATUS"
+		},
+		{
+			"forge": "potion",
+			"fabric": "potion"
+		},
+		{
+			"forge": "effects",
+			"fabric": "effects"
+		},
+		{
+			"forge": "fixedColor",
+			"fabric": "colorSet"
+		},
+		{
+			"forge": "setEffectsFromItem(ItemStack arg0)",
+			"fabric": "initFromStack(ItemStack stack)"
+		},
+		{
+			"forge": "setEffectsFromItem(ItemStack arg0)",
+			"fabric": "initFromStack(ItemStack stack)"
+		},
+		{
+			"forge": "getCustomColor(ItemStack arg0)",
+			"fabric": "getCustomPotionColor(ItemStack stack)"
+		},
+		{
+			"forge": "updateColor()",
+			"fabric": "initColor()"
+		},
+		{
+			"forge": "addEffect(MobEffectInstance arg0)",
+			"fabric": "addEffect(StatusEffectInstance effect)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "makeParticle(int arg0)",
+			"fabric": "spawnParticles(int amount)"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "setFixedColor(int arg0)",
+			"fabric": "setColor(int color)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "doPostHurtEffects(LivingEntity arg0)",
+			"fabric": "onHit(LivingEntity arg0)"
+		},
+		{
+			"forge": "getPickupItem()",
+			"fabric": "asItemStack()"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		}
+	]
+}

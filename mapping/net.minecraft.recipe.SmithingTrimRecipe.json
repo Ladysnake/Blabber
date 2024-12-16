@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.item.crafting.SmithingTrimRecipe",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.SmithingTrimRecipe",
+			"fabric": "net.minecraft.recipe.SmithingTrimRecipe"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "template",
+			"fabric": "template"
+		},
+		{
+			"forge": "base",
+			"fabric": "base"
+		},
+		{
+			"forge": "addition",
+			"fabric": "addition"
+		},
+		{
+			"forge": "matches(Container arg0, Level arg1)",
+			"fabric": "matches(Inventory arg0, World arg1)"
+		},
+		{
+			"forge": "matches(Container arg0, Level arg1)",
+			"fabric": "matches(Inventory arg0, World arg1)"
+		},
+		{
+			"forge": "assemble(Container arg0, RegistryAccess arg1)",
+			"fabric": "craft(Inventory arg0, DynamicRegistryManager arg1)"
+		},
+		{
+			"forge": "getResultItem(RegistryAccess arg0)",
+			"fabric": "getOutput(DynamicRegistryManager arg0)"
+		},
+		{
+			"forge": "isTemplateIngredient(ItemStack arg0)",
+			"fabric": "testTemplate(ItemStack arg0)"
+		},
+		{
+			"forge": "isBaseIngredient(ItemStack arg0)",
+			"fabric": "testBase(ItemStack arg0)"
+		},
+		{
+			"forge": "isAdditionIngredient(ItemStack arg0)",
+			"fabric": "testAddition(ItemStack arg0)"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getSerializer()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "isIncomplete()",
+			"fabric": "isEmpty()"
+		}
+	]
+}

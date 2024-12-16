@@ -1,0 +1,193 @@
+{
+	"title": "net.minecraft.world.level.block.FireBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.FireBlock",
+			"fabric": "net.minecraft.block.FireBlock"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "field_31093"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "field_31093"
+		},
+		{
+			"forge": "AGE",
+			"fabric": "AGE"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "UP",
+			"fabric": "UP"
+		},
+		{
+			"forge": "PROPERTY_BY_DIRECTION",
+			"fabric": "DIRECTION_PROPERTIES"
+		},
+		{
+			"forge": "UP_AABB",
+			"fabric": "UP_SHAPE"
+		},
+		{
+			"forge": "WEST_AABB",
+			"fabric": "WEST_SHAPE"
+		},
+		{
+			"forge": "EAST_AABB",
+			"fabric": "EAST_SHAPE"
+		},
+		{
+			"forge": "NORTH_AABB",
+			"fabric": "NORTH_SHAPE"
+		},
+		{
+			"forge": "SOUTH_AABB",
+			"fabric": "SOUTH_SHAPE"
+		},
+		{
+			"forge": "shapesCache",
+			"fabric": "shapesByState"
+		},
+		{
+			"forge": "IGNITE_INSTANT",
+			"fabric": "field_31085"
+		},
+		{
+			"forge": "IGNITE_EASY",
+			"fabric": "field_31086"
+		},
+		{
+			"forge": "IGNITE_MEDIUM",
+			"fabric": "field_31087"
+		},
+		{
+			"forge": "IGNITE_HARD",
+			"fabric": "field_31088"
+		},
+		{
+			"forge": "BURN_INSTANT",
+			"fabric": "field_31089"
+		},
+		{
+			"forge": "BURN_EASY",
+			"fabric": "field_31090"
+		},
+		{
+			"forge": "BURN_MEDIUM",
+			"fabric": "field_31091"
+		},
+		{
+			"forge": "BURN_HARD",
+			"fabric": "field_31092"
+		},
+		{
+			"forge": "igniteOdds",
+			"fabric": "burnChances"
+		},
+		{
+			"forge": "burnOdds",
+			"fabric": "spreadChances"
+		},
+		{
+			"forge": "calculateShape(BlockState arg0)",
+			"fabric": "getShapeForState(BlockState state)"
+		},
+		{
+			"forge": "calculateShape(BlockState arg0)",
+			"fabric": "getShapeForState(BlockState state)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "getStateForPosition(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "isNearRain(Level arg0, BlockPos arg1)",
+			"fabric": "isRainingAround(World world, BlockPos pos)"
+		},
+		{
+			"forge": "getBurnOdds(BlockState arg0)",
+			"fabric": "getSpreadChance(BlockState state)"
+		},
+		{
+			"forge": "getIgniteOdds(BlockState arg0)",
+			"fabric": "getBurnChance(BlockState state)"
+		},
+		{
+			"forge": "checkBurnOut(Level arg0, BlockPos arg1, int arg2, RandomSource arg3, int arg4)",
+			"fabric": "trySpreadingFire(World world, BlockPos pos, int spreadFactor, Random random, int currentAge)"
+		},
+		{
+			"forge": "getStateWithAge(LevelAccessor arg0, BlockPos arg1, int arg2)",
+			"fabric": "getStateWithAge(WorldAccess world, BlockPos pos, int age)"
+		},
+		{
+			"forge": "isValidFireLocation(BlockGetter arg0, BlockPos arg1)",
+			"fabric": "areBlocksAroundFlammable(BlockView world, BlockPos pos)"
+		},
+		{
+			"forge": "getIgniteOdds(LevelReader arg0, BlockPos arg1)",
+			"fabric": "getBurnChance(WorldView world, BlockPos pos)"
+		},
+		{
+			"forge": "canBurn(BlockState arg0)",
+			"fabric": "isFlammable(BlockState arg0)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "getFireTickDelay(RandomSource arg0)",
+			"fabric": "getFireTickDelay(Random random)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "setFlammable(Block arg0, int arg1, int arg2)",
+			"fabric": "registerFlammableBlock(Block block, int burnChance, int spreadChance)"
+		},
+		{
+			"forge": "bootStrap()",
+			"fabric": "registerDefaultFlammables()"
+		}
+	]
+}

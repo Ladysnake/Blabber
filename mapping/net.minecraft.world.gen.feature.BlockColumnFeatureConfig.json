@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.BlockColumnFeatureConfig"
+		},
+		{
+			"forge": "layers",
+			"fabric": "layers"
+		},
+		{
+			"forge": "layers",
+			"fabric": "layers"
+		},
+		{
+			"forge": "direction",
+			"fabric": "direction"
+		},
+		{
+			"forge": "allowedPlacement",
+			"fabric": "allowedPlacement"
+		},
+		{
+			"forge": "prioritizeTip",
+			"fabric": "prioritizeTip"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "layer(IntProvider arg0, BlockStateProvider arg1)",
+			"fabric": "createLayer(IntProvider height, BlockStateProvider state)"
+		},
+		{
+			"forge": "layer(IntProvider arg0, BlockStateProvider arg1)",
+			"fabric": "createLayer(IntProvider height, BlockStateProvider state)"
+		},
+		{
+			"forge": "simple(IntProvider arg0, BlockStateProvider arg1)",
+			"fabric": "create(IntProvider height, BlockStateProvider state)"
+		},
+		{
+			"forge": "layers()",
+			"fabric": "layers()"
+		},
+		{
+			"forge": "direction()",
+			"fabric": "direction()"
+		},
+		{
+			"forge": "allowedPlacement()",
+			"fabric": "allowedPlacement()"
+		},
+		{
+			"forge": "prioritizeTip()",
+			"fabric": "prioritizeTip()"
+		}
+	]
+}

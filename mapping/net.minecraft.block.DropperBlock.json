@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.DropperBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.DropperBlock",
+			"fabric": "net.minecraft.block.DropperBlock"
+		},
+		{
+			"forge": "DISPENSE_BEHAVIOUR",
+			"fabric": "BEHAVIOR"
+		},
+		{
+			"forge": "DISPENSE_BEHAVIOUR",
+			"fabric": "BEHAVIOR"
+		},
+		{
+			"forge": "getDispenseMethod(ItemStack arg0)",
+			"fabric": "getBehaviorForItem(ItemStack arg0)"
+		},
+		{
+			"forge": "getDispenseMethod(ItemStack arg0)",
+			"fabric": "getBehaviorForItem(ItemStack arg0)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "dispenseFrom(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "dispense(ServerWorld arg0, BlockPos arg1)"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.renderer.RenderStateShard$ColorLogicStateShard",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderStateShard$ColorLogicStateShard",
+			"fabric": "net.minecraft.client.render.RenderPhase$ColorLogic"
+		}
+	]
+}

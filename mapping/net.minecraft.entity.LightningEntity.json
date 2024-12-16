@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.world.entity.LightningBolt",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.LightningBolt",
+			"fabric": "net.minecraft.entity.LightningEntity"
+		},
+		{
+			"forge": "START_LIFE",
+			"fabric": "field_30062"
+		},
+		{
+			"forge": "START_LIFE",
+			"fabric": "field_30062"
+		},
+		{
+			"forge": "DAMAGE_RADIUS",
+			"fabric": "field_33906"
+		},
+		{
+			"forge": "DETECTION_RADIUS",
+			"fabric": "field_33907"
+		},
+		{
+			"forge": "life",
+			"fabric": "ambientTick"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "flashes",
+			"fabric": "remainingActions"
+		},
+		{
+			"forge": "visualOnly",
+			"fabric": "cosmetic"
+		},
+		{
+			"forge": "cause",
+			"fabric": "channeler"
+		},
+		{
+			"forge": "hitEntities",
+			"fabric": "struckEntities"
+		},
+		{
+			"forge": "blocksSetOnFire",
+			"fabric": "blocksSetOnFire"
+		},
+		{
+			"forge": "setVisualOnly(boolean arg0)",
+			"fabric": "setCosmetic(boolean cosmetic)"
+		},
+		{
+			"forge": "setVisualOnly(boolean arg0)",
+			"fabric": "setCosmetic(boolean cosmetic)"
+		},
+		{
+			"forge": "getSoundSource()",
+			"fabric": "getSoundCategory()"
+		},
+		{
+			"forge": "getCause()",
+			"fabric": "getChanneler()"
+		},
+		{
+			"forge": "setCause(ServerPlayer arg0)",
+			"fabric": "setChanneler(ServerPlayerEntity channeler)"
+		},
+		{
+			"forge": "powerLightningRod()",
+			"fabric": "powerLightningRod()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getStrikePosition()",
+			"fabric": "getAffectedBlockPos()"
+		},
+		{
+			"forge": "spawnFire(int arg0)",
+			"fabric": "spawnFire(int spreadAttempts)"
+		},
+		{
+			"forge": "clearCopperOnLightningStrike(Level arg0, BlockPos arg1)",
+			"fabric": "cleanOxidation(World world, BlockPos pos)"
+		},
+		{
+			"forge": "randomWalkCleaningCopper(Level arg0, BlockPos arg1, BlockPos$MutableBlockPos arg2, int arg3)",
+			"fabric": "cleanOxidationAround(World world, BlockPos pos, BlockPos$Mutable mutablePos, int count)"
+		},
+		{
+			"forge": "randomStepCleaningCopper(Level arg0, BlockPos arg1)",
+			"fabric": "cleanOxidationAround(World world, BlockPos pos)"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getBlocksSetOnFire()",
+			"fabric": "getBlocksSetOnFire()"
+		},
+		{
+			"forge": "getHitEntities()",
+			"fabric": "getStruckEntities()"
+		}
+	]
+}

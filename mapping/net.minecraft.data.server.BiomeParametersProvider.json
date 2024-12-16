@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.data.info.BiomeParametersDumpReport",
+	"items": [
+		{
+			"forge": "net.minecraft.data.info.BiomeParametersDumpReport",
+			"fabric": "net.minecraft.data.server.BiomeParametersProvider"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "topPath",
+			"fabric": "path"
+		},
+		{
+			"forge": "registries",
+			"fabric": "registryLookupFuture"
+		},
+		{
+			"forge": "ENTRY_CODEC",
+			"fabric": "BIOME_KEY_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "BIOME_ENTRY_CODEC"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "dumpValue(Path arg0, CachedOutput arg1, com.mojang.serialization.DynamicOps<com.google.gson.JsonElement> arg2, com.mojang.serialization.Encoder<E> arg3, E arg4)",
+			"fabric": "write(Path path, DataWriter writer, com.mojang.serialization.DynamicOps<com.google.gson.JsonElement> ops, com.mojang.serialization.Encoder<E> codec, E biomeSource)"
+		},
+		{
+			"forge": "createPath(ResourceLocation arg0)",
+			"fabric": "resolvePath(Identifier id)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		}
+	]
+}

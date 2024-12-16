@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.network.protocol.login.ServerboundCustomQueryPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.login.ServerboundCustomQueryPacket",
+			"fabric": "net.minecraft.network.packet.c2s.login.LoginQueryResponseC2SPacket"
+		},
+		{
+			"forge": "MAX_PAYLOAD_SIZE",
+			"fabric": "MAX_PAYLOAD_SIZE"
+		},
+		{
+			"forge": "MAX_PAYLOAD_SIZE",
+			"fabric": "MAX_PAYLOAD_SIZE"
+		},
+		{
+			"forge": "transactionId",
+			"fabric": "queryId"
+		},
+		{
+			"forge": "data",
+			"fabric": "response"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerLoginPacketListener arg0)",
+			"fabric": "apply(ServerLoginPacketListener arg0)"
+		},
+		{
+			"forge": "getTransactionId()",
+			"fabric": "getQueryId()"
+		},
+		{
+			"forge": "getData()",
+			"fabric": "getResponse()"
+		}
+	]
+}

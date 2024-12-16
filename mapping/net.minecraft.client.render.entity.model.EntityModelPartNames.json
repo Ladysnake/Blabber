@@ -1,0 +1,305 @@
+{
+	"title": "net.minecraft.client.model.geom.PartNames",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.geom.PartNames",
+			"fabric": "net.minecraft.client.render.entity.model.EntityModelPartNames"
+		},
+		{
+			"forge": "LEFT_FIN",
+			"fabric": "LEFT_FIN"
+		},
+		{
+			"forge": "LEFT_FIN",
+			"fabric": "LEFT_FIN"
+		},
+		{
+			"forge": "RIGHT_FIN",
+			"fabric": "RIGHT_FIN"
+		},
+		{
+			"forge": "TOP_FIN",
+			"fabric": "TOP_FIN"
+		},
+		{
+			"forge": "BOTTOM_FIN",
+			"fabric": "BOTTOM_FIN"
+		},
+		{
+			"forge": "TAIL_FIN",
+			"fabric": "TAIL_FIN"
+		},
+		{
+			"forge": "LEFT_BLUE_FIN",
+			"fabric": "LEFT_BLUE_FIN"
+		},
+		{
+			"forge": "RIGHT_BLUE_FIN",
+			"fabric": "RIGHT_BLUE_FIN"
+		},
+		{
+			"forge": "LEFT_ARM",
+			"fabric": "LEFT_ARM"
+		},
+		{
+			"forge": "RIGHT_ARM",
+			"fabric": "RIGHT_ARM"
+		},
+		{
+			"forge": "LEFT_WING",
+			"fabric": "LEFT_WING"
+		},
+		{
+			"forge": "RIGHT_WING",
+			"fabric": "RIGHT_WING"
+		},
+		{
+			"forge": "LEFT_WING_BASE",
+			"fabric": "LEFT_WING_BASE"
+		},
+		{
+			"forge": "RIGHT_WING_BASE",
+			"fabric": "RIGHT_WING_BASE"
+		},
+		{
+			"forge": "LEFT_WING_TIP",
+			"fabric": "LEFT_WING_TIP"
+		},
+		{
+			"forge": "RIGHT_WING_TIP",
+			"fabric": "RIGHT_WING_TIP"
+		},
+		{
+			"forge": "LEFT_EAR",
+			"fabric": "LEFT_EAR"
+		},
+		{
+			"forge": "RIGHT_EAR",
+			"fabric": "RIGHT_EAR"
+		},
+		{
+			"forge": "LEFT_LEG",
+			"fabric": "LEFT_LEG"
+		},
+		{
+			"forge": "RIGHT_LEG",
+			"fabric": "RIGHT_LEG"
+		},
+		{
+			"forge": "LEFT_HIND_LEG",
+			"fabric": "LEFT_HIND_LEG"
+		},
+		{
+			"forge": "RIGHT_HIND_LEG",
+			"fabric": "RIGHT_HIND_LEG"
+		},
+		{
+			"forge": "LEFT_MID_LEG",
+			"fabric": "LEFT_MID_LEG"
+		},
+		{
+			"forge": "RIGHT_MID_LEG",
+			"fabric": "RIGHT_MID_LEG"
+		},
+		{
+			"forge": "LEFT_FRONT_LEG",
+			"fabric": "LEFT_FRONT_LEG"
+		},
+		{
+			"forge": "RIGHT_FRONT_LEG",
+			"fabric": "RIGHT_FRONT_LEG"
+		},
+		{
+			"forge": "LEFT_HIND_FOOT",
+			"fabric": "LEFT_HIND_FOOT"
+		},
+		{
+			"forge": "RIGHT_HIND_FOOT",
+			"fabric": "RIGHT_HIND_FOOT"
+		},
+		{
+			"forge": "LEFT_FRONT_FOOT",
+			"fabric": "LEFT_FRONT_FOOT"
+		},
+		{
+			"forge": "RIGHT_FRONT_FOOT",
+			"fabric": "RIGHT_FRONT_FOOT"
+		},
+		{
+			"forge": "LEFT_HIND_LEG_TIP",
+			"fabric": "LEFT_HIND_LEG_TIP"
+		},
+		{
+			"forge": "RIGHT_HIND_LEG_TIP",
+			"fabric": "RIGHT_HIND_LEG_TIP"
+		},
+		{
+			"forge": "LEFT_FRONT_LEG_TIP",
+			"fabric": "LEFT_FRONT_LEG_TIP"
+		},
+		{
+			"forge": "RIGHT_FRONT_LEG_TIP",
+			"fabric": "RIGHT_FRONT_LEG_TIP"
+		},
+		{
+			"forge": "LEFT_LID",
+			"fabric": "LEFT_LID"
+		},
+		{
+			"forge": "RIGHT_LID",
+			"fabric": "RIGHT_LID"
+		},
+		{
+			"forge": "LEFT_CHEST",
+			"fabric": "LEFT_CHEST"
+		},
+		{
+			"forge": "RIGHT_CHEST",
+			"fabric": "RIGHT_CHEST"
+		},
+		{
+			"forge": "LEFT_HORN",
+			"fabric": "LEFT_HORN"
+		},
+		{
+			"forge": "RIGHT_HORN",
+			"fabric": "RIGHT_HORN"
+		},
+		{
+			"forge": "LEFT_EYE",
+			"fabric": "LEFT_EYE"
+		},
+		{
+			"forge": "RIGHT_EYE",
+			"fabric": "RIGHT_EYE"
+		},
+		{
+			"forge": "JAW",
+			"fabric": "JAW"
+		},
+		{
+			"forge": "NOSE",
+			"fabric": "NOSE"
+		},
+		{
+			"forge": "ARMS",
+			"fabric": "ARMS"
+		},
+		{
+			"forge": "TAIL",
+			"fabric": "TAIL"
+		},
+		{
+			"forge": "CUBE",
+			"fabric": "CUBE"
+		},
+		{
+			"forge": "BEAK",
+			"fabric": "BEAK"
+		},
+		{
+			"forge": "BACK_FIN",
+			"fabric": "BACK_FIN"
+		},
+		{
+			"forge": "MANE",
+			"fabric": "MANE"
+		},
+		{
+			"forge": "NECK",
+			"fabric": "NECK"
+		},
+		{
+			"forge": "MOUTH",
+			"fabric": "MOUTH"
+		},
+		{
+			"forge": "HEAD",
+			"fabric": "HEAD"
+		},
+		{
+			"forge": "HAT",
+			"fabric": "HAT"
+		},
+		{
+			"forge": "BODY",
+			"fabric": "BODY"
+		},
+		{
+			"forge": "HAT_RIM",
+			"fabric": "HAT_RIM"
+		},
+		{
+			"forge": "JACKET",
+			"fabric": "JACKET"
+		},
+		{
+			"forge": "TOP_GILLS",
+			"fabric": "TOP_GILLS"
+		},
+		{
+			"forge": "LEFT_GILLS",
+			"fabric": "LEFT_GILLS"
+		},
+		{
+			"forge": "RIGHT_GILLS",
+			"fabric": "RIGHT_GILLS"
+		},
+		{
+			"forge": "ROOT",
+			"fabric": "ROOT"
+		},
+		{
+			"forge": "CROAKING_BODY",
+			"fabric": "CROAKING_BODY"
+		},
+		{
+			"forge": "TONGUE",
+			"fabric": "TONGUE"
+		},
+		{
+			"forge": "TONGUE_R1",
+			"fabric": "TONGUE_RL"
+		},
+		{
+			"forge": "LEFT_HAND",
+			"fabric": "LEFT_HAND"
+		},
+		{
+			"forge": "RIGHT_HAND",
+			"fabric": "RIGHT_HAND"
+		},
+		{
+			"forge": "LEFT_FOOT",
+			"fabric": "LEFT_FOOT"
+		},
+		{
+			"forge": "RIGHT_FOOT",
+			"fabric": "RIGHT_FOOT"
+		},
+		{
+			"forge": "EYES",
+			"fabric": "EYES"
+		},
+		{
+			"forge": "RIGHT_TENDRIL",
+			"fabric": "RIGHT_TENDRIL"
+		},
+		{
+			"forge": "LEFT_TENDRIL",
+			"fabric": "LEFT_TENDRIL"
+		},
+		{
+			"forge": "RIGHT_RIBCAGE",
+			"fabric": "RIGHT_RIBCAGE"
+		},
+		{
+			"forge": "LEFT_RIBCAGE",
+			"fabric": "LEFT_RIBCAGE"
+		},
+		{
+			"forge": "BONE",
+			"fabric": "BONE"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.data.HashCache$ProviderCacheBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.data.HashCache$ProviderCacheBuilder",
+			"fabric": "net.minecraft.data.DataCache$IntermediaryCache"
+		},
+		{
+			"forge": "version",
+			"fabric": "version"
+		},
+		{
+			"forge": "version",
+			"fabric": "version"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "put(Path arg0, com.google.common.hash.HashCode arg1)",
+			"fabric": "put(Path path, com.google.common.hash.HashCode hashCode)"
+		},
+		{
+			"forge": "put(Path arg0, com.google.common.hash.HashCode arg1)",
+			"fabric": "put(Path path, com.google.common.hash.HashCode hashCode)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "toCachedData()"
+		},
+		{
+			"forge": "version()",
+			"fabric": "version()"
+		},
+		{
+			"forge": "data()",
+			"fabric": "data()"
+		}
+	]
+}

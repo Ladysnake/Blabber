@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.GoalSelector",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.GoalSelector",
+			"fabric": "net.minecraft.entity.ai.goal.GoalSelector"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "NO_GOAL",
+			"fabric": "REPLACEABLE_GOAL"
+		},
+		{
+			"forge": "lockedFlags",
+			"fabric": "goalsByControl"
+		},
+		{
+			"forge": "availableGoals",
+			"fabric": "goals"
+		},
+		{
+			"forge": "profiler",
+			"fabric": "profiler"
+		},
+		{
+			"forge": "disabledFlags",
+			"fabric": "disabledControls"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "field_30212"
+		},
+		{
+			"forge": "newGoalRate",
+			"fabric": "timeInterval"
+		},
+		{
+			"forge": "addGoal(int arg0, Goal arg1)",
+			"fabric": "add(int priority, Goal goal)"
+		},
+		{
+			"forge": "addGoal(int arg0, Goal arg1)",
+			"fabric": "add(int priority, Goal goal)"
+		},
+		{
+			"forge": "removeAllGoals(Predicate<Goal> arg0)",
+			"fabric": "clear(Predicate<Goal> predicate)"
+		},
+		{
+			"forge": "removeGoal(Goal arg0)",
+			"fabric": "remove(Goal goal)"
+		},
+		{
+			"forge": "goalContainsAnyFlags(WrappedGoal arg0, EnumSet<Goal$Flag> arg1)",
+			"fabric": "usesAny(PrioritizedGoal goal, EnumSet<Goal$Control> controls)"
+		},
+		{
+			"forge": "goalCanBeReplacedForAllFlags(WrappedGoal arg0, Map<Goal$Flag, WrappedGoal> arg1)",
+			"fabric": "canReplaceAll(PrioritizedGoal goal, Map<Goal$Control, PrioritizedGoal> goalsByControl)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tickRunningGoals(boolean arg0)",
+			"fabric": "tickGoals(boolean tickAll)"
+		},
+		{
+			"forge": "getAvailableGoals()",
+			"fabric": "getGoals()"
+		},
+		{
+			"forge": "getRunningGoals()",
+			"fabric": "getRunningGoals()"
+		},
+		{
+			"forge": "setNewGoalRate(int arg0)",
+			"fabric": "setTimeInterval(int timeInterval)"
+		},
+		{
+			"forge": "disableControlFlag(Goal$Flag arg0)",
+			"fabric": "disableControl(Goal$Control control)"
+		},
+		{
+			"forge": "enableControlFlag(Goal$Flag arg0)",
+			"fabric": "enableControl(Goal$Control control)"
+		},
+		{
+			"forge": "setControlFlag(Goal$Flag arg0, boolean arg1)",
+			"fabric": "setControlEnabled(Goal$Control control, boolean enabled)"
+		}
+	]
+}

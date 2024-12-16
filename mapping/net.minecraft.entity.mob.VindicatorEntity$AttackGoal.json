@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.Vindicator$VindicatorMeleeAttackGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Vindicator$VindicatorMeleeAttackGoal",
+			"fabric": "net.minecraft.entity.mob.VindicatorEntity$AttackGoal"
+		},
+		{
+			"forge": "getAttackReachSqr(LivingEntity arg0)",
+			"fabric": "getSquaredMaxAttackDistance(LivingEntity arg0)"
+		},
+		{
+			"forge": "getAttackReachSqr(LivingEntity arg0)",
+			"fabric": "getSquaredMaxAttackDistance(LivingEntity arg0)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.entity.SmokerBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.SmokerBlockEntity",
+			"fabric": "net.minecraft.block.entity.SmokerBlockEntity"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "getBurnDuration(ItemStack arg0)",
+			"fabric": "getFuelTime(ItemStack arg0)"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1)",
+			"fabric": "createScreenHandler(int arg0, PlayerInventory arg1)"
+		}
+	]
+}

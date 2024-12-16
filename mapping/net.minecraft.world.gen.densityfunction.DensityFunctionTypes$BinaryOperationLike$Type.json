@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$TwoArgumentSimpleFunction$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$TwoArgumentSimpleFunction$Type",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$BinaryOperationLike$Type"
+		},
+		{
+			"forge": "ADD",
+			"fabric": "ADD"
+		},
+		{
+			"forge": "ADD",
+			"fabric": "ADD"
+		},
+		{
+			"forge": "MUL",
+			"fabric": "MUL"
+		},
+		{
+			"forge": "MIN",
+			"fabric": "MIN"
+		},
+		{
+			"forge": "MAX",
+			"fabric": "MAX"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codecHolder"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codecHolder"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

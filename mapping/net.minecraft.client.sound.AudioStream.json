@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.sounds.AudioStream",
+	"items": [
+		{
+			"forge": "net.minecraft.client.sounds.AudioStream",
+			"fabric": "net.minecraft.client.sound.AudioStream"
+		},
+		{
+			"forge": "getFormat()",
+			"fabric": "getFormat()"
+		},
+		{
+			"forge": "getFormat()",
+			"fabric": "getFormat()"
+		},
+		{
+			"forge": "read(int arg0)",
+			"fabric": "getBuffer(int size)"
+		}
+	]
+}

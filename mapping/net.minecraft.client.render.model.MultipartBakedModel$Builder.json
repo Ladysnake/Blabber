@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.resources.model.MultiPartBakedModel$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.model.MultiPartBakedModel$Builder",
+			"fabric": "net.minecraft.client.render.model.MultipartBakedModel$Builder"
+		},
+		{
+			"forge": "selectors",
+			"fabric": "components"
+		},
+		{
+			"forge": "selectors",
+			"fabric": "components"
+		},
+		{
+			"forge": "add(Predicate<BlockState> arg0, BakedModel arg1)",
+			"fabric": "addComponent(Predicate<BlockState> predicate, BakedModel model)"
+		},
+		{
+			"forge": "add(Predicate<BlockState> arg0, BakedModel arg1)",
+			"fabric": "addComponent(Predicate<BlockState> predicate, BakedModel model)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

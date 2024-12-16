@@ -1,0 +1,53 @@
+{
+	"title": "com.mojang.realmsclient.util.LevelType",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.LevelType",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsWorldGeneratorType"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "FLAT",
+			"fabric": "FLAT"
+		},
+		{
+			"forge": "LARGE_BIOMES",
+			"fabric": "LARGE_BIOMES"
+		},
+		{
+			"forge": "AMPLIFIED",
+			"fabric": "AMPLIFIED"
+		},
+		{
+			"forge": "index",
+			"fabric": "id"
+		},
+		{
+			"forge": "index",
+			"fabric": "id"
+		},
+		{
+			"forge": "name",
+			"fabric": "text"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getText()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getText()"
+		},
+		{
+			"forge": "getDtoIndex()",
+			"fabric": "getId()"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EffectDurationFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EffectDurationFix",
+			"fabric": "net.minecraft.datafixer.fix.StatusEffectDurationFix"
+		},
+		{
+			"forge": "ITEM_TYPES",
+			"fabric": "POTION_ITEM_IDS"
+		},
+		{
+			"forge": "ITEM_TYPES",
+			"fabric": "POTION_ITEM_IDS"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixPotionEffect(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixEffect(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixPotionEffect(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fix(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixPotionEffects(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateEntity(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixEntityStatusEffects(com.mojang.serialization.Dynamic<?> arg0)"
+		}
+	]
+}

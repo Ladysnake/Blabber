@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BannerPattern",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BannerPattern",
+			"fabric": "net.minecraft.block.entity.BannerPattern"
+		},
+		{
+			"forge": "hashname",
+			"fabric": "id"
+		},
+		{
+			"forge": "hashname",
+			"fabric": "id"
+		},
+		{
+			"forge": "location(ResourceKey<BannerPattern> arg0, boolean arg1)",
+			"fabric": "getSpriteId(RegistryKey<BannerPattern> pattern, boolean banner)"
+		},
+		{
+			"forge": "location(ResourceKey<BannerPattern> arg0, boolean arg1)",
+			"fabric": "getSpriteId(RegistryKey<BannerPattern> pattern, boolean banner)"
+		},
+		{
+			"forge": "getHashname()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "byHash(String arg0)",
+			"fabric": "byId(String id)"
+		}
+	]
+}

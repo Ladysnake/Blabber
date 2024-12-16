@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.particle.PlayerCloudParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.PlayerCloudParticle",
+			"fabric": "net.minecraft.client.particle.CloudParticle"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getQuadSize(float arg0)",
+			"fabric": "getSize(float arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

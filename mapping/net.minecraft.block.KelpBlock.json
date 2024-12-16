@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.block.KelpBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.KelpBlock",
+			"fabric": "net.minecraft.block.KelpBlock"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "GROW_PER_TICK_PROBABILITY",
+			"fabric": "GROWTH_CHANCE"
+		},
+		{
+			"forge": "canGrowInto(BlockState arg0)",
+			"fabric": "chooseStemState(BlockState arg0)"
+		},
+		{
+			"forge": "canGrowInto(BlockState arg0)",
+			"fabric": "chooseStemState(BlockState arg0)"
+		},
+		{
+			"forge": "getBodyBlock()",
+			"fabric": "getPlant()"
+		},
+		{
+			"forge": "canAttachTo(BlockState arg0)",
+			"fabric": "canAttachTo(BlockState arg0)"
+		},
+		{
+			"forge": "canPlaceLiquid(BlockGetter arg0, BlockPos arg1, BlockState arg2, Fluid arg3)",
+			"fabric": "canFillWithFluid(BlockView arg0, BlockPos arg1, BlockState arg2, Fluid arg3)"
+		},
+		{
+			"forge": "placeLiquid(LevelAccessor arg0, BlockPos arg1, BlockState arg2, FluidState arg3)",
+			"fabric": "tryFillWithFluid(WorldAccess arg0, BlockPos arg1, BlockState arg2, FluidState arg3)"
+		},
+		{
+			"forge": "getBlocksToGrowWhenBonemealed(RandomSource arg0)",
+			"fabric": "getGrowthLength(Random arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		}
+	]
+}

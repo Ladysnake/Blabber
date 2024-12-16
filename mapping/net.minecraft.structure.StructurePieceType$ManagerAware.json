@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType$StructureTemplateType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType$StructureTemplateType",
+			"fabric": "net.minecraft.structure.StructurePieceType$ManagerAware"
+		},
+		{
+			"forge": "load(StructureTemplateManager arg0, CompoundTag arg1)",
+			"fabric": "load(StructureTemplateManager structureTemplateManager, NbtCompound nbt)"
+		},
+		{
+			"forge": "load(StructureTemplateManager arg0, CompoundTag arg1)",
+			"fabric": "load(StructureTemplateManager structureTemplateManager, NbtCompound nbt)"
+		},
+		{
+			"forge": "load(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "load(StructureContext arg0, NbtCompound arg1)"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.stats.Stat",
+	"items": [
+		{
+			"forge": "net.minecraft.stats.Stat",
+			"fabric": "net.minecraft.stat.Stat"
+		},
+		{
+			"forge": "formatter",
+			"fabric": "formatter"
+		},
+		{
+			"forge": "formatter",
+			"fabric": "formatter"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "buildName(StatType<T> arg0, T arg1)",
+			"fabric": "getName(StatType<T> type, T value)"
+		},
+		{
+			"forge": "buildName(StatType<T> arg0, T arg1)",
+			"fabric": "getName(StatType<T> type, T value)"
+		},
+		{
+			"forge": "locationToKey(ResourceLocation arg0)",
+			"fabric": "getName(Identifier id)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getValue()"
+		},
+		{
+			"forge": "format(int arg0)",
+			"fabric": "format(int value)"
+		}
+	]
+}

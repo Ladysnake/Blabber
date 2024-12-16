@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.server.level.ThreadedLevelLightEngine$TaskType",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ThreadedLevelLightEngine$TaskType",
+			"fabric": "net.minecraft.server.world.ServerLightingProvider$Stage"
+		},
+		{
+			"forge": "PRE_UPDATE",
+			"fabric": "PRE_UPDATE"
+		},
+		{
+			"forge": "PRE_UPDATE",
+			"fabric": "PRE_UPDATE"
+		},
+		{
+			"forge": "POST_UPDATE",
+			"fabric": "POST_UPDATE"
+		}
+	]
+}

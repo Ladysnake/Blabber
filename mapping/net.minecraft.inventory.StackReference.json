@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.SlotAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.SlotAccess",
+			"fabric": "net.minecraft.inventory.StackReference"
+		},
+		{
+			"forge": "NULL",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "NULL",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "forContainer(Container arg0, int arg1, Predicate<ItemStack> arg2)",
+			"fabric": "of(Inventory inventory, int index, Predicate<ItemStack> stackFilter)"
+		},
+		{
+			"forge": "forContainer(Container arg0, int arg1, Predicate<ItemStack> arg2)",
+			"fabric": "of(Inventory inventory, int index, Predicate<ItemStack> stackFilter)"
+		},
+		{
+			"forge": "forContainer(Container arg0, int arg1)",
+			"fabric": "of(Inventory inventory, int index)"
+		},
+		{
+			"forge": "forEquipmentSlot(LivingEntity arg0, EquipmentSlot arg1, Predicate<ItemStack> arg2)",
+			"fabric": "of(LivingEntity entity, EquipmentSlot slot, Predicate<ItemStack> filter)"
+		},
+		{
+			"forge": "forEquipmentSlot(LivingEntity arg0, EquipmentSlot arg1)",
+			"fabric": "of(LivingEntity entity, EquipmentSlot slot)"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "set(ItemStack arg0)",
+			"fabric": "set(ItemStack stack)"
+		}
+	]
+}

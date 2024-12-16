@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.AbstractFish$FishMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.AbstractFish$FishMoveControl",
+			"fabric": "net.minecraft.entity.passive.FishEntity$FishMoveControl"
+		},
+		{
+			"forge": "fish",
+			"fabric": "fish"
+		},
+		{
+			"forge": "fish",
+			"fabric": "fish"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

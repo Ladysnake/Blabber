@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.renderer.debug.ChunkDebugRenderer$ChunkData",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.ChunkDebugRenderer$ChunkData",
+			"fabric": "net.minecraft.client.render.debug.ChunkLoadingDebugRenderer$ChunkLoadingStatus"
+		},
+		{
+			"forge": "clientData",
+			"fabric": "clientStates"
+		},
+		{
+			"forge": "clientData",
+			"fabric": "clientStates"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "serverStates"
+		}
+	]
+}

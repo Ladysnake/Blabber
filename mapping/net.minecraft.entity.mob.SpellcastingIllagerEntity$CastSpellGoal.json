@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.monster.SpellcasterIllager$SpellcasterUseSpellGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.SpellcasterIllager$SpellcasterUseSpellGoal",
+			"fabric": "net.minecraft.entity.mob.SpellcastingIllagerEntity$CastSpellGoal"
+		},
+		{
+			"forge": "attackWarmupDelay",
+			"fabric": "spellCooldown"
+		},
+		{
+			"forge": "attackWarmupDelay",
+			"fabric": "spellCooldown"
+		},
+		{
+			"forge": "nextAttackTickCount",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "performSpellCasting()",
+			"fabric": "castSpell()"
+		},
+		{
+			"forge": "getCastWarmupTime()",
+			"fabric": "getInitialCooldown()"
+		},
+		{
+			"forge": "getCastingTime()",
+			"fabric": "getSpellTicks()"
+		},
+		{
+			"forge": "getCastingInterval()",
+			"fabric": "startTimeDelay()"
+		},
+		{
+			"forge": "getSpellPrepareSound()",
+			"fabric": "getSoundPrepare()"
+		},
+		{
+			"forge": "getSpell()",
+			"fabric": "getSpell()"
+		}
+	]
+}

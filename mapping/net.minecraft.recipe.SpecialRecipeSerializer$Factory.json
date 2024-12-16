@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer$Factory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer$Factory",
+			"fabric": "net.minecraft.recipe.SpecialRecipeSerializer$Factory"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, CraftingBookCategory arg1)",
+			"fabric": "create(Identifier id, CraftingRecipeCategory category)"
+		},
+		{
+			"forge": "create(ResourceLocation arg0, CraftingBookCategory arg1)",
+			"fabric": "create(Identifier id, CraftingRecipeCategory category)"
+		}
+	]
+}

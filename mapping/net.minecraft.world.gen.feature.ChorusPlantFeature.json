@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.ChorusPlantFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.ChorusPlantFeature",
+			"fabric": "net.minecraft.world.gen.feature.ChorusPlantFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NoneFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<DefaultFeatureConfig> arg0)"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.tutorial.Tutorial",
+	"items": [
+		{
+			"forge": "net.minecraft.client.tutorial.Tutorial",
+			"fabric": "net.minecraft.client.tutorial.TutorialManager"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "instance",
+			"fabric": "currentHandler"
+		},
+		{
+			"forge": "timedToasts",
+			"fabric": "entries"
+		},
+		{
+			"forge": "bundleTutorial",
+			"fabric": "bundleTutorial"
+		},
+		{
+			"forge": "onInput(Input arg0)",
+			"fabric": "onMovement(Input input)"
+		},
+		{
+			"forge": "onInput(Input arg0)",
+			"fabric": "onMovement(Input input)"
+		},
+		{
+			"forge": "onMouse(double arg0, double arg1)",
+			"fabric": "onUpdateMouse(double deltaX, double deltaY)"
+		},
+		{
+			"forge": "onLookAt(ClientLevel arg0, HitResult arg1)",
+			"fabric": "tick(ClientWorld world, HitResult hitResult)"
+		},
+		{
+			"forge": "onDestroyBlock(ClientLevel arg0, BlockPos arg1, BlockState arg2, float arg3)",
+			"fabric": "onBlockBreaking(ClientWorld world, BlockPos pos, BlockState state, float progress)"
+		},
+		{
+			"forge": "onOpenInventory()",
+			"fabric": "onInventoryOpened()"
+		},
+		{
+			"forge": "onGetItem(ItemStack arg0)",
+			"fabric": "onSlotUpdate(ItemStack stack)"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "destroyHandler()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "createHandler()"
+		},
+		{
+			"forge": "addTimedToast(TutorialToast arg0, int arg1)",
+			"fabric": "add(TutorialToast toast, int ticks)"
+		},
+		{
+			"forge": "removeTimedToast(TutorialToast arg0)",
+			"fabric": "remove(TutorialToast toast)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "setStep(TutorialSteps arg0)",
+			"fabric": "setStep(TutorialStep step)"
+		},
+		{
+			"forge": "getMinecraft()",
+			"fabric": "getClient()"
+		},
+		{
+			"forge": "isSurvival()",
+			"fabric": "isInSurvival()"
+		},
+		{
+			"forge": "key(String arg0)",
+			"fabric": "keyToText(String name)"
+		},
+		{
+			"forge": "onInventoryAction(ItemStack arg0, ItemStack arg1, ClickAction arg2)",
+			"fabric": "onPickupSlotClick(ItemStack cursorStack, ItemStack slotStack, ClickType clickType)"
+		}
+	]
+}

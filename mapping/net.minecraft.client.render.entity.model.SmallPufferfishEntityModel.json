@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.model.PufferfishSmallModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.PufferfishSmallModel",
+			"fabric": "net.minecraft.client.render.entity.model.SmallPufferfishEntityModel"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "leftFin",
+			"fabric": "leftFin"
+		},
+		{
+			"forge": "rightFin",
+			"fabric": "rightFin"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		},
+		{
+			"forge": "setupAnim(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(T arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		}
+	]
+}

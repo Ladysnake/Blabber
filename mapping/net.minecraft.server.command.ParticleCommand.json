@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.commands.ParticleCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.ParticleCommand",
+			"fabric": "net.minecraft.server.command.ParticleCommand"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess)"
+		},
+		{
+			"forge": "sendParticles(CommandSourceStack arg0, ParticleOptions arg1, Vec3 arg2, Vec3 arg3, float arg4, int arg5, boolean arg6, Collection<ServerPlayer> arg7)",
+			"fabric": "execute(ServerCommandSource source, ParticleEffect parameters, Vec3d pos, Vec3d delta, float speed, int count, boolean force, Collection<ServerPlayerEntity> viewers)"
+		}
+	]
+}

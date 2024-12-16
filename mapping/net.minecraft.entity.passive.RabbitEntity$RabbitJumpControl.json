@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.animal.Rabbit$RabbitJumpControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Rabbit$RabbitJumpControl",
+			"fabric": "net.minecraft.entity.passive.RabbitEntity$RabbitJumpControl"
+		},
+		{
+			"forge": "rabbit",
+			"fabric": "rabbit"
+		},
+		{
+			"forge": "rabbit",
+			"fabric": "rabbit"
+		},
+		{
+			"forge": "canJump",
+			"fabric": "canJump"
+		},
+		{
+			"forge": "wantJump()",
+			"fabric": "isActive()"
+		},
+		{
+			"forge": "wantJump()",
+			"fabric": "isActive()"
+		},
+		{
+			"forge": "canJump()",
+			"fabric": "canJump()"
+		},
+		{
+			"forge": "setCanJump(boolean arg0)",
+			"fabric": "setCanJump(boolean canJump)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

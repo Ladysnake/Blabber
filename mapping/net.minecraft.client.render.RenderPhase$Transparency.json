@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.renderer.RenderStateShard$TransparencyStateShard",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderStateShard$TransparencyStateShard",
+			"fabric": "net.minecraft.client.render.RenderPhase$Transparency"
+		}
+	]
+}

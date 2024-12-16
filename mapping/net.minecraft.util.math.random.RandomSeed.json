@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.RandomSupport",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.RandomSupport",
+			"fabric": "net.minecraft.util.math.random.RandomSeed"
+		},
+		{
+			"forge": "GOLDEN_RATIO_64",
+			"fabric": "GOLDEN_RATIO_64"
+		},
+		{
+			"forge": "GOLDEN_RATIO_64",
+			"fabric": "GOLDEN_RATIO_64"
+		},
+		{
+			"forge": "SILVER_RATIO_64",
+			"fabric": "SILVER_RATIO_64"
+		},
+		{
+			"forge": "MD5_128",
+			"fabric": "MD5_HASH"
+		},
+		{
+			"forge": "SEED_UNIQUIFIER",
+			"fabric": "SEED_UNIQUIFIER"
+		},
+		{
+			"forge": "mixStafford13(long arg0)",
+			"fabric": "mixStafford13(long seed)"
+		},
+		{
+			"forge": "mixStafford13(long arg0)",
+			"fabric": "mixStafford13(long seed)"
+		},
+		{
+			"forge": "upgradeSeedTo128bitUnmixed(long arg0)",
+			"fabric": "createUnmixedXoroshiroSeed(long seed)"
+		},
+		{
+			"forge": "upgradeSeedTo128bit(long arg0)",
+			"fabric": "createXoroshiroSeed(long seed)"
+		},
+		{
+			"forge": "seedFromHashOf(String arg0)",
+			"fabric": "createXoroshiroSeed(String seed)"
+		},
+		{
+			"forge": "generateUniqueSeed()",
+			"fabric": "getSeed()"
+		}
+	]
+}

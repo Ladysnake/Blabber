@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.ClientBrandRetriever",
+	"items": [
+		{
+			"forge": "net.minecraft.client.ClientBrandRetriever",
+			"fabric": "net.minecraft.client.ClientBrandRetriever"
+		},
+		{
+			"forge": "VANILLA_NAME",
+			"fabric": "VANILLA"
+		},
+		{
+			"forge": "VANILLA_NAME",
+			"fabric": "VANILLA"
+		}
+	]
+}

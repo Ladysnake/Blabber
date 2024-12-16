@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.NetherForestVegetationFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.NetherForestVegetationFeature",
+			"fabric": "net.minecraft.world.gen.feature.NetherForestVegetationFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NetherForestVegetationConfig> arg0)",
+			"fabric": "generate(FeatureContext<NetherForestVegetationFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<NetherForestVegetationConfig> arg0)",
+			"fabric": "generate(FeatureContext<NetherForestVegetationFeatureConfig> arg0)"
+		}
+	]
+}

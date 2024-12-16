@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.util.worldupdate.WorldUpgrader",
+	"items": [
+		{
+			"forge": "net.minecraft.util.worldupdate.WorldUpgrader",
+			"fabric": "net.minecraft.world.updater.WorldUpdater"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "THREAD_FACTORY",
+			"fabric": "UPDATE_THREAD_FACTORY"
+		},
+		{
+			"forge": "dimensions",
+			"fabric": "dimensionOptionsRegistry"
+		},
+		{
+			"forge": "levels",
+			"fabric": "worldKeys"
+		},
+		{
+			"forge": "eraseCache",
+			"fabric": "eraseCache"
+		},
+		{
+			"forge": "levelStorage",
+			"fabric": "session"
+		},
+		{
+			"forge": "thread",
+			"fabric": "updateThread"
+		},
+		{
+			"forge": "dataFixer",
+			"fabric": "dataFixer"
+		},
+		{
+			"forge": "running",
+			"fabric": "keepUpgradingChunks"
+		},
+		{
+			"forge": "finished",
+			"fabric": "done"
+		},
+		{
+			"forge": "progress",
+			"fabric": "progress"
+		},
+		{
+			"forge": "totalChunks",
+			"fabric": "totalChunkCount"
+		},
+		{
+			"forge": "converted",
+			"fabric": "upgradedChunkCount"
+		},
+		{
+			"forge": "skipped",
+			"fabric": "skippedChunkCount"
+		},
+		{
+			"forge": "progressMap",
+			"fabric": "dimensionProgress"
+		},
+		{
+			"forge": "status",
+			"fabric": "status"
+		},
+		{
+			"forge": "REGEX",
+			"fabric": "REGION_FILE_PATTERN"
+		},
+		{
+			"forge": "overworldDataStorage",
+			"fabric": "persistentStateManager"
+		},
+		{
+			"forge": "cancel()",
+			"fabric": "cancel()"
+		},
+		{
+			"forge": "cancel()",
+			"fabric": "cancel()"
+		},
+		{
+			"forge": "work()",
+			"fabric": "updateWorld()"
+		},
+		{
+			"forge": "getAllChunkPos(ResourceKey<Level> arg0)",
+			"fabric": "getChunkPositions(RegistryKey<World> world)"
+		},
+		{
+			"forge": "isFinished()",
+			"fabric": "isDone()"
+		},
+		{
+			"forge": "levels()",
+			"fabric": "getWorlds()"
+		},
+		{
+			"forge": "dimensionProgress(ResourceKey<Level> arg0)",
+			"fabric": "getProgress(RegistryKey<World> world)"
+		},
+		{
+			"forge": "getProgress()",
+			"fabric": "getProgress()"
+		},
+		{
+			"forge": "getTotalChunks()",
+			"fabric": "getTotalChunkCount()"
+		},
+		{
+			"forge": "getConverted()",
+			"fabric": "getUpgradedChunkCount()"
+		},
+		{
+			"forge": "getSkipped()",
+			"fabric": "getSkippedChunkCount()"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "getStatus()"
+		}
+	]
+}

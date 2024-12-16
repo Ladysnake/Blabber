@@ -1,0 +1,69 @@
+{
+	"title": "com.mojang.blaze3d.vertex.VertexFormatElement$Usage",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.vertex.VertexFormatElement$Usage",
+			"fabric": "net.minecraft.client.render.VertexFormatElement$Type"
+		},
+		{
+			"forge": "POSITION",
+			"fabric": "POSITION"
+		},
+		{
+			"forge": "POSITION",
+			"fabric": "POSITION"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "COLOR",
+			"fabric": "COLOR"
+		},
+		{
+			"forge": "UV",
+			"fabric": "UV"
+		},
+		{
+			"forge": "PADDING",
+			"fabric": "PADDING"
+		},
+		{
+			"forge": "GENERIC",
+			"fabric": "GENERIC"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "setupState",
+			"fabric": "setupTask"
+		},
+		{
+			"forge": "clearState",
+			"fabric": "clearTask"
+		},
+		{
+			"forge": "setupBufferState(int arg0, int arg1, int arg2, long arg3, int arg4, int arg5)",
+			"fabric": "setupState(int componentCount, int componentType, int stride, long offset, int uvIndex, int elementIndex)"
+		},
+		{
+			"forge": "setupBufferState(int arg0, int arg1, int arg2, long arg3, int arg4, int arg5)",
+			"fabric": "setupState(int componentCount, int componentType, int stride, long offset, int uvIndex, int elementIndex)"
+		},
+		{
+			"forge": "clearBufferState(int arg0, int arg1)",
+			"fabric": "clearState(int uvIndex, int elementIndex)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		}
+	]
+}

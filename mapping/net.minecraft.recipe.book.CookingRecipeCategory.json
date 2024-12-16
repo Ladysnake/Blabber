@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.item.crafting.CookingBookCategory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.CookingBookCategory",
+			"fabric": "net.minecraft.recipe.book.CookingRecipeCategory"
+		},
+		{
+			"forge": "FOOD",
+			"fabric": "FOOD"
+		},
+		{
+			"forge": "FOOD",
+			"fabric": "FOOD"
+		},
+		{
+			"forge": "BLOCKS",
+			"fabric": "BLOCKS"
+		},
+		{
+			"forge": "MISC",
+			"fabric": "MISC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

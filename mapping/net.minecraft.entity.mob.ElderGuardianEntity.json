@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.monster.ElderGuardian",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.ElderGuardian",
+			"fabric": "net.minecraft.entity.mob.ElderGuardianEntity"
+		},
+		{
+			"forge": "ELDER_SIZE_SCALE",
+			"fabric": "SCALE"
+		},
+		{
+			"forge": "ELDER_SIZE_SCALE",
+			"fabric": "SCALE"
+		},
+		{
+			"forge": "EFFECT_INTERVAL",
+			"fabric": "field_38119"
+		},
+		{
+			"forge": "EFFECT_RADIUS",
+			"fabric": "AFFECTED_PLAYER_RANGE"
+		},
+		{
+			"forge": "EFFECT_DURATION",
+			"fabric": "MINING_FATIGUE_DURATION"
+		},
+		{
+			"forge": "EFFECT_AMPLIFIER",
+			"fabric": "MINING_FATIGUE_AMPLIFIER"
+		},
+		{
+			"forge": "EFFECT_DISPLAY_LIMIT",
+			"fabric": "field_38118"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createElderGuardianAttributes()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createElderGuardianAttributes()"
+		},
+		{
+			"forge": "getAttackDuration()",
+			"fabric": "getWarmupTime()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getFlopSound()",
+			"fabric": "getFlopSound()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		}
+	]
+}

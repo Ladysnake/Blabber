@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.RavagerRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.RavagerRenderer",
+			"fabric": "net.minecraft.client.render.entity.RavagerEntityRenderer"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "TEXTURE_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Ravager arg0)",
+			"fabric": "getTexture(RavagerEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Ravager arg0)",
+			"fabric": "getTexture(RavagerEntity arg0)"
+		}
+	]
+}

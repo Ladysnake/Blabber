@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.nbt.NbtOps",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.NbtOps",
+			"fabric": "net.minecraft.nbt.NbtOps"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "WRAPPER_MARKER",
+			"fabric": "MARKER_KEY"
+		},
+		{
+			"forge": "empty()",
+			"fabric": "empty()"
+		},
+		{
+			"forge": "empty()",
+			"fabric": "empty()"
+		},
+		{
+			"forge": "convertTo(com.mojang.serialization.DynamicOps<U> arg0, Tag arg1)",
+			"fabric": "convertTo(com.mojang.serialization.DynamicOps<U> arg0, NbtElement arg1)"
+		},
+		{
+			"forge": "getNumberValue(Tag arg0)",
+			"fabric": "getNumberValue(NbtElement arg0)"
+		},
+		{
+			"forge": "createNumeric(Number arg0)",
+			"fabric": "createNumeric(Number arg0)"
+		},
+		{
+			"forge": "createByte(byte arg0)",
+			"fabric": "createByte(byte arg0)"
+		},
+		{
+			"forge": "createShort(short arg0)",
+			"fabric": "createShort(short arg0)"
+		},
+		{
+			"forge": "createInt(int arg0)",
+			"fabric": "createInt(int arg0)"
+		},
+		{
+			"forge": "createLong(long arg0)",
+			"fabric": "createLong(long arg0)"
+		},
+		{
+			"forge": "createFloat(float arg0)",
+			"fabric": "createFloat(float arg0)"
+		},
+		{
+			"forge": "createDouble(double arg0)",
+			"fabric": "createDouble(double arg0)"
+		},
+		{
+			"forge": "createBoolean(boolean arg0)",
+			"fabric": "createBoolean(boolean arg0)"
+		},
+		{
+			"forge": "getStringValue(Tag arg0)",
+			"fabric": "getStringValue(NbtElement arg0)"
+		},
+		{
+			"forge": "createString(String arg0)",
+			"fabric": "createString(String arg0)"
+		},
+		{
+			"forge": "mergeToList(Tag arg0, Tag arg1)",
+			"fabric": "mergeToList(NbtElement arg0, NbtElement arg1)"
+		},
+		{
+			"forge": "mergeToList(Tag arg0, List<Tag> arg1)",
+			"fabric": "mergeToList(NbtElement arg0, List<NbtElement> arg1)"
+		},
+		{
+			"forge": "mergeToMap(Tag arg0, Tag arg1, Tag arg2)",
+			"fabric": "mergeToMap(NbtElement arg0, NbtElement arg1, NbtElement arg2)"
+		},
+		{
+			"forge": "mergeToMap(Tag arg0, com.mojang.serialization.MapLike<Tag> arg1)",
+			"fabric": "mergeToMap(NbtElement arg0, com.mojang.serialization.MapLike<NbtElement> arg1)"
+		},
+		{
+			"forge": "getMapValues(Tag arg0)",
+			"fabric": "getMapValues(NbtElement arg0)"
+		},
+		{
+			"forge": "getMapEntries(Tag arg0)",
+			"fabric": "getMapEntries(NbtElement arg0)"
+		},
+		{
+			"forge": "getMap(Tag arg0)",
+			"fabric": "getMap(NbtElement arg0)"
+		},
+		{
+			"forge": "createMap(Stream<com.mojang.datafixers.util.Pair<Tag, Tag>> arg0)",
+			"fabric": "createMap(Stream<com.mojang.datafixers.util.Pair<NbtElement, NbtElement>> arg0)"
+		},
+		{
+			"forge": "tryUnwrap(CompoundTag arg0)",
+			"fabric": "unpackMarker(NbtCompound nbt)"
+		},
+		{
+			"forge": "getStream(Tag arg0)",
+			"fabric": "getStream(NbtElement arg0)"
+		},
+		{
+			"forge": "getList(Tag arg0)",
+			"fabric": "getList(NbtElement arg0)"
+		},
+		{
+			"forge": "getByteBuffer(Tag arg0)",
+			"fabric": "getByteBuffer(NbtElement arg0)"
+		},
+		{
+			"forge": "createByteList(ByteBuffer arg0)",
+			"fabric": "createByteList(ByteBuffer arg0)"
+		},
+		{
+			"forge": "getIntStream(Tag arg0)",
+			"fabric": "getIntStream(NbtElement arg0)"
+		},
+		{
+			"forge": "createIntList(IntStream arg0)",
+			"fabric": "createIntList(IntStream arg0)"
+		},
+		{
+			"forge": "getLongStream(Tag arg0)",
+			"fabric": "getLongStream(NbtElement arg0)"
+		},
+		{
+			"forge": "createLongList(LongStream arg0)",
+			"fabric": "createLongList(LongStream arg0)"
+		},
+		{
+			"forge": "createList(Stream<Tag> arg0)",
+			"fabric": "createList(Stream<NbtElement> arg0)"
+		},
+		{
+			"forge": "remove(Tag arg0, String arg1)",
+			"fabric": "remove(NbtElement arg0, String arg1)"
+		},
+		{
+			"forge": "createCollector(Tag arg0)",
+			"fabric": "createMerger(NbtElement nbt)"
+		}
+	]
+}

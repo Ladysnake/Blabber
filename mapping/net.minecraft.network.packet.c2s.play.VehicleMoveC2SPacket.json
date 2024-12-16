@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundMoveVehiclePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundMoveVehiclePacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.VehicleMoveC2SPacket"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "yRot",
+			"fabric": "yaw"
+		},
+		{
+			"forge": "xRot",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getX()",
+			"fabric": "getX()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getY()"
+		},
+		{
+			"forge": "getZ()",
+			"fabric": "getZ()"
+		},
+		{
+			"forge": "getYRot()",
+			"fabric": "getYaw()"
+		},
+		{
+			"forge": "getXRot()",
+			"fabric": "getPitch()"
+		}
+	]
+}

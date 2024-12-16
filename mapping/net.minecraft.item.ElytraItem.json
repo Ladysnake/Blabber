@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.item.ElytraItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ElytraItem",
+			"fabric": "net.minecraft.item.ElytraItem"
+		},
+		{
+			"forge": "isFlyEnabled(ItemStack arg0)",
+			"fabric": "isUsable(ItemStack stack)"
+		},
+		{
+			"forge": "isFlyEnabled(ItemStack arg0)",
+			"fabric": "isUsable(ItemStack stack)"
+		},
+		{
+			"forge": "isValidRepairItem(ItemStack arg0, ItemStack arg1)",
+			"fabric": "canRepair(ItemStack arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "getEquipSound()",
+			"fabric": "getEquipSound()"
+		},
+		{
+			"forge": "getEquipmentSlot()",
+			"fabric": "getSlotType()"
+		}
+	]
+}

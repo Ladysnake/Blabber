@@ -1,0 +1,217 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blending.BlendingData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blending.BlendingData",
+			"fabric": "net.minecraft.world.gen.chunk.BlendingData"
+		},
+		{
+			"forge": "BLENDING_DENSITY_FACTOR",
+			"fabric": "field_35514"
+		},
+		{
+			"forge": "BLENDING_DENSITY_FACTOR",
+			"fabric": "field_35514"
+		},
+		{
+			"forge": "CELL_WIDTH",
+			"fabric": "field_36280"
+		},
+		{
+			"forge": "CELL_HEIGHT",
+			"fabric": "field_35511"
+		},
+		{
+			"forge": "CELL_RATIO",
+			"fabric": "field_36281"
+		},
+		{
+			"forge": "SOLID_DENSITY",
+			"fabric": "field_37704"
+		},
+		{
+			"forge": "AIR_DENSITY",
+			"fabric": "field_37705"
+		},
+		{
+			"forge": "CELLS_PER_SECTION_Y",
+			"fabric": "field_35516"
+		},
+		{
+			"forge": "QUARTS_PER_SECTION",
+			"fabric": "BIOMES_PER_CHUNK"
+		},
+		{
+			"forge": "CELL_HORIZONTAL_MAX_INDEX_INSIDE",
+			"fabric": "LAST_CHUNK_BIOME_INDEX"
+		},
+		{
+			"forge": "CELL_HORIZONTAL_MAX_INDEX_OUTSIDE",
+			"fabric": "CHUNK_BIOME_END_INDEX"
+		},
+		{
+			"forge": "CELL_COLUMN_INSIDE_COUNT",
+			"fabric": "NORTH_WEST_END_INDEX"
+		},
+		{
+			"forge": "CELL_COLUMN_OUTSIDE_COUNT",
+			"fabric": "SOUTH_EAST_END_INDEX_PART"
+		},
+		{
+			"forge": "CELL_COLUMN_COUNT",
+			"fabric": "HORIZONTAL_BIOME_COUNT"
+		},
+		{
+			"forge": "areaWithOldGeneration",
+			"fabric": "oldHeightLimit"
+		},
+		{
+			"forge": "SURFACE_BLOCKS",
+			"fabric": "SURFACE_BLOCKS"
+		},
+		{
+			"forge": "NO_VALUE",
+			"fabric": "field_35513"
+		},
+		{
+			"forge": "hasCalculatedData",
+			"fabric": "initializedBlendingData"
+		},
+		{
+			"forge": "heights",
+			"fabric": "surfaceHeights"
+		},
+		{
+			"forge": "biomes",
+			"fabric": "biomes"
+		},
+		{
+			"forge": "densities",
+			"fabric": "collidableBlockDensities"
+		},
+		{
+			"forge": "DOUBLE_ARRAY_CODEC",
+			"fabric": "DOUBLE_ARRAY_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "validateArraySize(BlendingData arg0)",
+			"fabric": "validate(BlendingData data)"
+		},
+		{
+			"forge": "validateArraySize(BlendingData arg0)",
+			"fabric": "validate(BlendingData data)"
+		},
+		{
+			"forge": "getOrUpdateBlendingData(WorldGenRegion arg0, int arg1, int arg2)",
+			"fabric": "getBlendingData(ChunkRegion chunkRegion, int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "sideByGenerationAge(WorldGenLevel arg0, int arg1, int arg2, boolean arg3)",
+			"fabric": "getAdjacentChunksWithNoise(StructureWorldAccess access, int chunkX, int chunkZ, boolean oldNoise)"
+		},
+		{
+			"forge": "calculateData(ChunkAccess arg0, Set<Direction8> arg1)",
+			"fabric": "initChunkBlendingData(Chunk chunk, Set<EightWayDirection> newNoiseChunkDirections)"
+		},
+		{
+			"forge": "addValuesForColumn(int arg0, ChunkAccess arg1, int arg2, int arg3)",
+			"fabric": "initBlockColumn(int index, Chunk chunk, int chunkBlockX, int chunkBlockZ)"
+		},
+		{
+			"forge": "getHeightAtXZ(ChunkAccess arg0, int arg1, int arg2)",
+			"fabric": "getSurfaceBlockY(Chunk chunk, int blockX, int blockZ)"
+		},
+		{
+			"forge": "read1(ChunkAccess arg0, BlockPos$MutableBlockPos arg1)",
+			"fabric": "getAboveCollidableBlockValue(Chunk chunk, BlockPos$Mutable mutablePos)"
+		},
+		{
+			"forge": "read7(ChunkAccess arg0, BlockPos$MutableBlockPos arg1)",
+			"fabric": "getCollidableBlockDensityBelow(Chunk chunk, BlockPos$Mutable mutablePos)"
+		},
+		{
+			"forge": "getDensityColumn(ChunkAccess arg0, int arg1, int arg2, int arg3)",
+			"fabric": "calculateCollidableBlockDensityColumn(Chunk chunk, int chunkBlockX, int chunkBlockZ, int surfaceHeight)"
+		},
+		{
+			"forge": "getBiomeColumn(ChunkAccess arg0, int arg1, int arg2)",
+			"fabric": "getVerticalBiomeSections(Chunk chunk, int chunkBlockX, int chunkBlockZ)"
+		},
+		{
+			"forge": "isGround(ChunkAccess arg0, BlockPos arg1)",
+			"fabric": "isCollidableAndNotTreeAt(Chunk chunk, BlockPos pos)"
+		},
+		{
+			"forge": "getHeight(int arg0, int arg1, int arg2)",
+			"fabric": "getHeight(int biomeX, int biomeY, int biomeZ)"
+		},
+		{
+			"forge": "getDensity(double[] arg0, int arg1)",
+			"fabric": "getCollidableBlockDensity(double[] collidableBlockDensityColumn, int halfSectionY)"
+		},
+		{
+			"forge": "getDensity(int arg0, int arg1, int arg2)",
+			"fabric": "getCollidableBlockDensity(int chunkBiomeX, int halfSectionY, int chunkBiomeZ)"
+		},
+		{
+			"forge": "iterateBiomes(int arg0, int arg1, int arg2, BlendingData$BiomeConsumer arg3)",
+			"fabric": "acceptBiomes(int biomeX, int biomeY, int biomeZ, BlendingData$BiomeConsumer consumer)"
+		},
+		{
+			"forge": "iterateHeights(int arg0, int arg1, BlendingData$HeightConsumer arg2)",
+			"fabric": "acceptHeights(int biomeX, int biomeZ, BlendingData$HeightConsumer consumer)"
+		},
+		{
+			"forge": "iterateDensities(int arg0, int arg1, int arg2, int arg3, BlendingData$DensityConsumer arg4)",
+			"fabric": "acceptCollidableBlockDensities(int biomeX, int biomeZ, int minHalfSectionY, int maxHalfSectionY, BlendingData$CollidableBlockDensityConsumer consumer)"
+		},
+		{
+			"forge": "cellCountPerColumn()",
+			"fabric": "getVerticalHalfSectionCount()"
+		},
+		{
+			"forge": "quartCountPerColumn()",
+			"fabric": "getVerticalBiomeCount()"
+		},
+		{
+			"forge": "getColumnMinY()",
+			"fabric": "getOneAboveBottomHalfSectionY()"
+		},
+		{
+			"forge": "getMinY()",
+			"fabric": "getBottomHalfSectionY()"
+		},
+		{
+			"forge": "getCellYIndex(int arg0)",
+			"fabric": "getHalfSectionHeight(int halfSectionY)"
+		},
+		{
+			"forge": "getInsideIndex(int arg0, int arg1)",
+			"fabric": "getNorthWestIndex(int chunkBiomeX, int chunkBiomeZ)"
+		},
+		{
+			"forge": "getOutsideIndex(int arg0, int arg1)",
+			"fabric": "getSouthEastIndex(int chunkBiomeX, int chunkBiomeZ)"
+		},
+		{
+			"forge": "getX(int arg0)",
+			"fabric": "getX(int index)"
+		},
+		{
+			"forge": "getZ(int arg0)",
+			"fabric": "getZ(int index)"
+		},
+		{
+			"forge": "zeroIfNegative(int arg0)",
+			"fabric": "method_39355(int arg0)"
+		},
+		{
+			"forge": "getAreaWithOldGeneration()",
+			"fabric": "getOldHeightLimit()"
+		}
+	]
+}

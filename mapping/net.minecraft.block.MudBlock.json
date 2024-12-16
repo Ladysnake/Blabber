@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.MudBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.MudBlock",
+			"fabric": "net.minecraft.block.MudBlock"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "COLLISION_SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "COLLISION_SHAPE"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getBlockSupportShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getSidesShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getVisualShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCameraCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "getShadeBrightness(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getAmbientOcclusionLightLevel(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		}
+	]
+}

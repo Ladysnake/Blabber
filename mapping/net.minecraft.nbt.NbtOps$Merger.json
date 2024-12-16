@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.nbt.NbtOps$ListCollector",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.NbtOps$ListCollector",
+			"fabric": "net.minecraft.nbt.NbtOps$Merger"
+		},
+		{
+			"forge": "accept(Tag arg0)",
+			"fabric": "merge(NbtElement nbt)"
+		},
+		{
+			"forge": "accept(Tag arg0)",
+			"fabric": "merge(NbtElement nbt)"
+		},
+		{
+			"forge": "acceptAll(Iterable<Tag> arg0)",
+			"fabric": "merge(Iterable<NbtElement> nbts)"
+		},
+		{
+			"forge": "acceptAll(Stream<Tag> arg0)",
+			"fabric": "merge(Stream<NbtElement> nbts)"
+		},
+		{
+			"forge": "result()",
+			"fabric": "getResult()"
+		}
+	]
+}

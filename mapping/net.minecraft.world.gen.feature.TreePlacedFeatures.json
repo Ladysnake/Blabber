@@ -1,0 +1,137 @@
+{
+	"title": "net.minecraft.data.worldgen.placement.TreePlacements",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.placement.TreePlacements",
+			"fabric": "net.minecraft.world.gen.feature.TreePlacedFeatures"
+		},
+		{
+			"forge": "CRIMSON_FUNGI",
+			"fabric": "CRIMSON_FUNGI"
+		},
+		{
+			"forge": "CRIMSON_FUNGI",
+			"fabric": "CRIMSON_FUNGI"
+		},
+		{
+			"forge": "WARPED_FUNGI",
+			"fabric": "WARPED_FUNGI"
+		},
+		{
+			"forge": "OAK_CHECKED",
+			"fabric": "OAK_CHECKED"
+		},
+		{
+			"forge": "DARK_OAK_CHECKED",
+			"fabric": "DARK_OAK_CHECKED"
+		},
+		{
+			"forge": "BIRCH_CHECKED",
+			"fabric": "BIRCH_CHECKED"
+		},
+		{
+			"forge": "ACACIA_CHECKED",
+			"fabric": "ACACIA_CHECKED"
+		},
+		{
+			"forge": "SPRUCE_CHECKED",
+			"fabric": "SPRUCE_CHECKED"
+		},
+		{
+			"forge": "MANGROVE_CHECKED",
+			"fabric": "MANGROVE_CHECKED"
+		},
+		{
+			"forge": "CHERRY_CHECKED",
+			"fabric": "CHERRY_CHECKED"
+		},
+		{
+			"forge": "PINE_ON_SNOW",
+			"fabric": "PINE_ON_SNOW"
+		},
+		{
+			"forge": "SPRUCE_ON_SNOW",
+			"fabric": "SPRUCE_ON_SNOW"
+		},
+		{
+			"forge": "PINE_CHECKED",
+			"fabric": "PINE_CHECKED"
+		},
+		{
+			"forge": "JUNGLE_TREE_CHECKED",
+			"fabric": "JUNGLE_TREE"
+		},
+		{
+			"forge": "FANCY_OAK_CHECKED",
+			"fabric": "FANCY_OAK_CHECKED"
+		},
+		{
+			"forge": "MEGA_JUNGLE_TREE_CHECKED",
+			"fabric": "MEGA_JUNGLE_TREE_CHECKED"
+		},
+		{
+			"forge": "MEGA_SPRUCE_CHECKED",
+			"fabric": "MEGA_SPRUCE_CHECKED"
+		},
+		{
+			"forge": "MEGA_PINE_CHECKED",
+			"fabric": "MEGA_PINE_CHECKED"
+		},
+		{
+			"forge": "TALL_MANGROVE_CHECKED",
+			"fabric": "TALL_MANGROVE_CHECKED"
+		},
+		{
+			"forge": "JUNGLE_BUSH",
+			"fabric": "JUNGLE_BUSH"
+		},
+		{
+			"forge": "SUPER_BIRCH_BEES_0002",
+			"fabric": "SUPER_BIRCH_BEES_0002"
+		},
+		{
+			"forge": "SUPER_BIRCH_BEES",
+			"fabric": "SUPER_BIRCH_BEES"
+		},
+		{
+			"forge": "OAK_BEES_0002",
+			"fabric": "OAK_BEES_0002"
+		},
+		{
+			"forge": "OAK_BEES_002",
+			"fabric": "OAK_BEES_002"
+		},
+		{
+			"forge": "BIRCH_BEES_0002_PLACED",
+			"fabric": "BIRCH_BEES_0002"
+		},
+		{
+			"forge": "BIRCH_BEES_002",
+			"fabric": "BIRCH_BEES_002"
+		},
+		{
+			"forge": "FANCY_OAK_BEES_0002",
+			"fabric": "FANCY_OAK_BEES_0002"
+		},
+		{
+			"forge": "FANCY_OAK_BEES_002",
+			"fabric": "FANCY_OAK_BEES_002"
+		},
+		{
+			"forge": "FANCY_OAK_BEES",
+			"fabric": "FANCY_OAK_BEES"
+		},
+		{
+			"forge": "CHERRY_BEES_005",
+			"fabric": "CHERRY_BEES_005"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		}
+	]
+}

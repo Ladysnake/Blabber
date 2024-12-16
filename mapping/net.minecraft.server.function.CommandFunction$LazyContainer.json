@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.CommandFunction$CacheableFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandFunction$CacheableFunction",
+			"fabric": "net.minecraft.server.function.CommandFunction$LazyContainer"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "resolved",
+			"fabric": "initialized"
+		},
+		{
+			"forge": "function",
+			"fabric": "function"
+		},
+		{
+			"forge": "get(ServerFunctionManager arg0)",
+			"fabric": "get(CommandFunctionManager manager)"
+		},
+		{
+			"forge": "get(ServerFunctionManager arg0)",
+			"fabric": "get(CommandFunctionManager manager)"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		}
+	]
+}

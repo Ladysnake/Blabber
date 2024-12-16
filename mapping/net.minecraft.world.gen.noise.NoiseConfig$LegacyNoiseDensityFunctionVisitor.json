@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.RandomState$1NoiseWiringHelper",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.RandomState$1NoiseWiringHelper",
+			"fabric": "net.minecraft.world.gen.noise.NoiseConfig$LegacyNoiseDensityFunctionVisitor"
+		},
+		{
+			"forge": "wrapped",
+			"fabric": "cache"
+		},
+		{
+			"forge": "wrapped",
+			"fabric": "cache"
+		},
+		{
+			"forge": "newLegacyInstance(long arg0)",
+			"fabric": "createRandom(long seed)"
+		},
+		{
+			"forge": "newLegacyInstance(long arg0)",
+			"fabric": "createRandom(long seed)"
+		},
+		{
+			"forge": "visitNoise(DensityFunction$NoiseHolder arg0)",
+			"fabric": "apply(DensityFunction$Noise arg0)"
+		},
+		{
+			"forge": "wrapNew(DensityFunction arg0)",
+			"fabric": "applyNotCached(DensityFunction densityFunction)"
+		},
+		{
+			"forge": "apply(DensityFunction arg0)",
+			"fabric": "apply(DensityFunction arg0)"
+		}
+	]
+}

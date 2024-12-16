@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.arguments.ResourceOrTagKeyArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.ResourceOrTagKeyArgument",
+			"fabric": "net.minecraft.command.argument.RegistryPredicateArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "registryKey",
+			"fabric": "registryRef"
+		},
+		{
+			"forge": "resourceOrTagKey(ResourceKey<? extends Registry<T>> arg0)",
+			"fabric": "registryPredicate(RegistryKey<? extends Registry<T>> registryRef)"
+		},
+		{
+			"forge": "resourceOrTagKey(ResourceKey<? extends Registry<T>> arg0)",
+			"fabric": "registryPredicate(RegistryKey<? extends Registry<T>> registryRef)"
+		},
+		{
+			"forge": "getResourceOrTagKey(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1, ResourceKey<Registry<T>> arg2, com.mojang.brigadier.exceptions.DynamicCommandExceptionType arg3)",
+			"fabric": "getPredicate(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name, RegistryKey<Registry<T>> registryRef, com.mojang.brigadier.exceptions.DynamicCommandExceptionType invalidException)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		}
+	]
+}

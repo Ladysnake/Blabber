@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.inventory.tooltip.TooltipComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.tooltip.TooltipComponent",
+			"fabric": "net.minecraft.client.item.TooltipData"
+		}
+	]
+}

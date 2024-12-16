@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.entity.EntityPersistentStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.entity.EntityPersistentStorage",
+			"fabric": "net.minecraft.world.storage.ChunkDataAccess"
+		},
+		{
+			"forge": "loadEntities(ChunkPos arg0)",
+			"fabric": "readChunkData(ChunkPos pos)"
+		},
+		{
+			"forge": "loadEntities(ChunkPos arg0)",
+			"fabric": "readChunkData(ChunkPos pos)"
+		},
+		{
+			"forge": "storeEntities(ChunkEntities<T> arg0)",
+			"fabric": "writeChunkData(ChunkDataList<T> dataList)"
+		},
+		{
+			"forge": "flush(boolean arg0)",
+			"fabric": "awaitAll(boolean sync)"
+		}
+	]
+}

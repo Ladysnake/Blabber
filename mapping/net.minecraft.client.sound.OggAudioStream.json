@@ -1,0 +1,69 @@
+{
+	"title": "com.mojang.blaze3d.audio.OggAudioStream",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.audio.OggAudioStream",
+			"fabric": "net.minecraft.client.sound.OggAudioStream"
+		},
+		{
+			"forge": "EXPECTED_MAX_FRAME_SIZE",
+			"fabric": "BUFFER_SIZE"
+		},
+		{
+			"forge": "EXPECTED_MAX_FRAME_SIZE",
+			"fabric": "BUFFER_SIZE"
+		},
+		{
+			"forge": "handle",
+			"fabric": "pointer"
+		},
+		{
+			"forge": "audioFormat",
+			"fabric": "format"
+		},
+		{
+			"forge": "input",
+			"fabric": "inputStream"
+		},
+		{
+			"forge": "buffer",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "refillFromStream()",
+			"fabric": "readHeader()"
+		},
+		{
+			"forge": "refillFromStream()",
+			"fabric": "readHeader()"
+		},
+		{
+			"forge": "forwardBuffer()",
+			"fabric": "increaseBufferSize()"
+		},
+		{
+			"forge": "readFrame(OggAudioStream$OutputConcat arg0)",
+			"fabric": "readOggFile(OggAudioStream$ChannelList channelList)"
+		},
+		{
+			"forge": "convertMono(FloatBuffer arg0, OggAudioStream$OutputConcat arg1)",
+			"fabric": "readChannels(FloatBuffer buf, OggAudioStream$ChannelList channelList)"
+		},
+		{
+			"forge": "convertStereo(FloatBuffer arg0, FloatBuffer arg1, OggAudioStream$OutputConcat arg2)",
+			"fabric": "readChannels(FloatBuffer buf, FloatBuffer buf2, OggAudioStream$ChannelList channelList)"
+		},
+		{
+			"forge": "getFormat()",
+			"fabric": "getFormat()"
+		},
+		{
+			"forge": "read(int arg0)",
+			"fabric": "getBuffer(int arg0)"
+		},
+		{
+			"forge": "readAll()",
+			"fabric": "getBuffer()"
+		}
+	]
+}

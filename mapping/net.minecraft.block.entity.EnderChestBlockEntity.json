@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.block.entity.EnderChestBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.EnderChestBlockEntity",
+			"fabric": "net.minecraft.block.entity.EnderChestBlockEntity"
+		},
+		{
+			"forge": "chestLidController",
+			"fabric": "lidAnimator"
+		},
+		{
+			"forge": "chestLidController",
+			"fabric": "lidAnimator"
+		},
+		{
+			"forge": "openersCounter",
+			"fabric": "stateManager"
+		},
+		{
+			"forge": "lidAnimateTick(Level arg0, BlockPos arg1, BlockState arg2, EnderChestBlockEntity arg3)",
+			"fabric": "clientTick(World world, BlockPos pos, BlockState state, EnderChestBlockEntity blockEntity)"
+		},
+		{
+			"forge": "lidAnimateTick(Level arg0, BlockPos arg1, BlockState arg2, EnderChestBlockEntity arg3)",
+			"fabric": "clientTick(World world, BlockPos pos, BlockState state, EnderChestBlockEntity blockEntity)"
+		},
+		{
+			"forge": "triggerEvent(int arg0, int arg1)",
+			"fabric": "onSyncedBlockEvent(int arg0, int arg1)"
+		},
+		{
+			"forge": "startOpen(Player arg0)",
+			"fabric": "onOpen(PlayerEntity player)"
+		},
+		{
+			"forge": "stopOpen(Player arg0)",
+			"fabric": "onClose(PlayerEntity player)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity player)"
+		},
+		{
+			"forge": "recheckOpen()",
+			"fabric": "onScheduledTick()"
+		},
+		{
+			"forge": "getOpenNess(float arg0)",
+			"fabric": "getAnimationProgress(float arg0)"
+		}
+	]
+}

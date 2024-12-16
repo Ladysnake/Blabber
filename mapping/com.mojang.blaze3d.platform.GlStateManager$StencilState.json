@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$StencilState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$StencilState",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$StencilState"
+		},
+		{
+			"forge": "func",
+			"fabric": "subState"
+		},
+		{
+			"forge": "func",
+			"fabric": "subState"
+		},
+		{
+			"forge": "mask",
+			"fabric": "mask"
+		},
+		{
+			"forge": "fail",
+			"fabric": "sfail"
+		},
+		{
+			"forge": "zfail",
+			"fabric": "dpfail"
+		},
+		{
+			"forge": "zpass",
+			"fabric": "dppass"
+		}
+	]
+}

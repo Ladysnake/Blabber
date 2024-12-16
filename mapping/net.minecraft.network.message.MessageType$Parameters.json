@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.network.chat.ChatType$Bound",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.ChatType$Bound",
+			"fabric": "net.minecraft.network.message.MessageType$Parameters"
+		},
+		{
+			"forge": "chatType",
+			"fabric": "type"
+		},
+		{
+			"forge": "chatType",
+			"fabric": "type"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "targetName",
+			"fabric": "targetName"
+		},
+		{
+			"forge": "decorate(Component arg0)",
+			"fabric": "applyChatDecoration(Text content)"
+		},
+		{
+			"forge": "decorate(Component arg0)",
+			"fabric": "applyChatDecoration(Text content)"
+		},
+		{
+			"forge": "decorateNarration(Component arg0)",
+			"fabric": "applyNarrationDecoration(Text content)"
+		},
+		{
+			"forge": "withTargetName(Component arg0)",
+			"fabric": "withTargetName(Text targetName)"
+		},
+		{
+			"forge": "toNetwork(RegistryAccess arg0)",
+			"fabric": "toSerialized(DynamicRegistryManager registryManager)"
+		},
+		{
+			"forge": "chatType()",
+			"fabric": "type()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "name()"
+		},
+		{
+			"forge": "targetName()",
+			"fabric": "targetName()"
+		}
+	]
+}

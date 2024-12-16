@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.LinearPosTest",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.LinearPosTest",
+			"fabric": "net.minecraft.structure.rule.LinearPosRuleTest"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "minChance",
+			"fabric": "minChance"
+		},
+		{
+			"forge": "maxChance",
+			"fabric": "maxChance"
+		},
+		{
+			"forge": "minDist",
+			"fabric": "minDistance"
+		},
+		{
+			"forge": "maxDist",
+			"fabric": "maxDistance"
+		},
+		{
+			"forge": "test(BlockPos arg0, BlockPos arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "test(BlockPos arg0, BlockPos arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "test(BlockPos arg0, BlockPos arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "test(BlockPos arg0, BlockPos arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

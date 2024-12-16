@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.data.recipes.SimpleCookingRecipeBuilder$Result",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.SimpleCookingRecipeBuilder$Result",
+			"fabric": "net.minecraft.data.server.recipe.CookingRecipeJsonBuilder$CookingRecipeJsonProvider"
+		},
+		{
+			"forge": "id",
+			"fabric": "recipeId"
+		},
+		{
+			"forge": "id",
+			"fabric": "recipeId"
+		},
+		{
+			"forge": "group",
+			"fabric": "group"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "ingredient",
+			"fabric": "input"
+		},
+		{
+			"forge": "result",
+			"fabric": "result"
+		},
+		{
+			"forge": "experience",
+			"fabric": "experience"
+		},
+		{
+			"forge": "cookingTime",
+			"fabric": "cookingTime"
+		},
+		{
+			"forge": "advancement",
+			"fabric": "advancementBuilder"
+		},
+		{
+			"forge": "advancementId",
+			"fabric": "advancementId"
+		},
+		{
+			"forge": "serializer",
+			"fabric": "serializer"
+		},
+		{
+			"forge": "serializeRecipeData(com.google.gson.JsonObject arg0)",
+			"fabric": "serialize(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "serializeRecipeData(com.google.gson.JsonObject arg0)",
+			"fabric": "serialize(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getRecipeId()"
+		},
+		{
+			"forge": "serializeAdvancement()",
+			"fabric": "toAdvancementJson()"
+		},
+		{
+			"forge": "getAdvancementId()",
+			"fabric": "getAdvancementId()"
+		}
+	]
+}

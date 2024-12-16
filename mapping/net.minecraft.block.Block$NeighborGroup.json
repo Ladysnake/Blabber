@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.Block$BlockStatePairKey",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.Block$BlockStatePairKey",
+			"fabric": "net.minecraft.block.Block$NeighborGroup"
+		},
+		{
+			"forge": "first",
+			"fabric": "self"
+		},
+		{
+			"forge": "first",
+			"fabric": "self"
+		},
+		{
+			"forge": "second",
+			"fabric": "other"
+		},
+		{
+			"forge": "direction",
+			"fabric": "facing"
+		}
+	]
+}

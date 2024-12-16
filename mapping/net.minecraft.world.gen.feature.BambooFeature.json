@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.BambooFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.BambooFeature",
+			"fabric": "net.minecraft.world.gen.feature.BambooFeature"
+		},
+		{
+			"forge": "BAMBOO_TRUNK",
+			"fabric": "BAMBOO"
+		},
+		{
+			"forge": "BAMBOO_TRUNK",
+			"fabric": "BAMBOO"
+		},
+		{
+			"forge": "BAMBOO_FINAL_LARGE",
+			"fabric": "BAMBOO_TOP_1"
+		},
+		{
+			"forge": "BAMBOO_TOP_LARGE",
+			"fabric": "BAMBOO_TOP_2"
+		},
+		{
+			"forge": "BAMBOO_TOP_SMALL",
+			"fabric": "BAMBOO_TOP_3"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<ProbabilityFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<ProbabilityConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<ProbabilityFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<ProbabilityConfig> arg0)"
+		}
+	]
+}

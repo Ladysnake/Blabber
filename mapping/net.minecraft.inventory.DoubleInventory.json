@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.CompoundContainer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.CompoundContainer",
+			"fabric": "net.minecraft.inventory.DoubleInventory"
+		},
+		{
+			"forge": "container1",
+			"fabric": "first"
+		},
+		{
+			"forge": "container1",
+			"fabric": "first"
+		},
+		{
+			"forge": "container2",
+			"fabric": "second"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "contains(Container arg0)",
+			"fabric": "isPart(Inventory inventory)"
+		},
+		{
+			"forge": "getItem(int arg0)",
+			"fabric": "getStack(int arg0)"
+		},
+		{
+			"forge": "removeItem(int arg0, int arg1)",
+			"fabric": "removeStack(int arg0, int arg1)"
+		},
+		{
+			"forge": "removeItemNoUpdate(int arg0)",
+			"fabric": "removeStack(int arg0)"
+		},
+		{
+			"forge": "setItem(int arg0, ItemStack arg1)",
+			"fabric": "setStack(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxCountPerStack()"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canPlayerUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "startOpen(Player arg0)",
+			"fabric": "onOpen(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stopOpen(Player arg0)",
+			"fabric": "onClose(PlayerEntity arg0)"
+		},
+		{
+			"forge": "canPlaceItem(int arg0, ItemStack arg1)",
+			"fabric": "isValid(int arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "clearContent()",
+			"fabric": "clear()"
+		}
+	]
+}

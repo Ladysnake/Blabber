@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.data.worldgen.placement.VillagePlacements",
+	"items": [
+		{
+			"forge": "net.minecraft.data.worldgen.placement.VillagePlacements",
+			"fabric": "net.minecraft.world.gen.feature.VillagePlacedFeatures"
+		},
+		{
+			"forge": "PILE_HAY_VILLAGE",
+			"fabric": "PILE_HAY"
+		},
+		{
+			"forge": "PILE_HAY_VILLAGE",
+			"fabric": "PILE_HAY"
+		},
+		{
+			"forge": "PILE_MELON_VILLAGE",
+			"fabric": "PILE_MELON"
+		},
+		{
+			"forge": "PILE_SNOW_VILLAGE",
+			"fabric": "PILE_SNOW"
+		},
+		{
+			"forge": "PILE_ICE_VILLAGE",
+			"fabric": "PILE_ICE"
+		},
+		{
+			"forge": "PILE_PUMPKIN_VILLAGE",
+			"fabric": "PILE_PUMPKIN"
+		},
+		{
+			"forge": "OAK_VILLAGE",
+			"fabric": "OAK"
+		},
+		{
+			"forge": "ACACIA_VILLAGE",
+			"fabric": "ACACIA"
+		},
+		{
+			"forge": "SPRUCE_VILLAGE",
+			"fabric": "SPRUCE"
+		},
+		{
+			"forge": "PINE_VILLAGE",
+			"fabric": "PINE"
+		},
+		{
+			"forge": "PATCH_CACTUS_VILLAGE",
+			"fabric": "PATCH_CACTUS"
+		},
+		{
+			"forge": "FLOWER_PLAIN_VILLAGE",
+			"fabric": "FLOWER_PLAIN"
+		},
+		{
+			"forge": "PATCH_TAIGA_GRASS_VILLAGE",
+			"fabric": "PATCH_TAIGA_GRASS"
+		},
+		{
+			"forge": "PATCH_BERRY_BUSH_VILLAGE",
+			"fabric": "PATCH_BERRY_BUSH"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<PlacedFeature> arg0)",
+			"fabric": "bootstrap(Registerable<PlacedFeature> featureRegisterable)"
+		}
+	]
+}

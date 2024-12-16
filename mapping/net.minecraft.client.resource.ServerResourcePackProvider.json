@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.client.resources.DownloadedPackSource",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.DownloadedPackSource",
+			"fabric": "net.minecraft.client.resource.ServerResourcePackProvider"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SHA1",
+			"fabric": "SHA1_PATTERN"
+		},
+		{
+			"forge": "MAX_PACK_SIZE_BYTES",
+			"fabric": "MAX_FILE_SIZE"
+		},
+		{
+			"forge": "MAX_KEPT_PACKS",
+			"fabric": "MAX_SAVED_PACKS"
+		},
+		{
+			"forge": "SERVER_ID",
+			"fabric": "SERVER"
+		},
+		{
+			"forge": "SERVER_NAME",
+			"fabric": "SERVER_NAME_TEXT"
+		},
+		{
+			"forge": "APPLYING_PACK_TEXT",
+			"fabric": "APPLYING_PACK_TEXT"
+		},
+		{
+			"forge": "serverPackDir",
+			"fabric": "serverPacksRoot"
+		},
+		{
+			"forge": "downloadLock",
+			"fabric": "lock"
+		},
+		{
+			"forge": "currentDownload",
+			"fabric": "downloadTask"
+		},
+		{
+			"forge": "serverPack",
+			"fabric": "serverContainer"
+		},
+		{
+			"forge": "loadPacks(Consumer<Pack> arg0)",
+			"fabric": "register(Consumer<ResourcePackProfile> arg0)"
+		},
+		{
+			"forge": "loadPacks(Consumer<Pack> arg0)",
+			"fabric": "register(Consumer<ResourcePackProfile> arg0)"
+		},
+		{
+			"forge": "getDownloadHeaders()",
+			"fabric": "getDownloadHeaders()"
+		},
+		{
+			"forge": "downloadAndSelectResourcePack(URL arg0, String arg1, boolean arg2)",
+			"fabric": "download(URL url, String packSha1, boolean closeAfterDownload)"
+		},
+		{
+			"forge": "deleteQuietly(File arg0)",
+			"fabric": "delete(File file)"
+		},
+		{
+			"forge": "clearServerPack()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "checkHash(String arg0, File arg1)",
+			"fabric": "verifyFile(String expectedSha1, File file)"
+		},
+		{
+			"forge": "clearOldDownloads()",
+			"fabric": "deleteOldServerPack()"
+		},
+		{
+			"forge": "setServerPack(File arg0, PackSource arg1)",
+			"fabric": "loadServerPack(File packZip, ResourcePackSource packSource)"
+		},
+		{
+			"forge": "loadBundledResourcePack(LevelStorageSource$LevelStorageAccess arg0)",
+			"fabric": "loadServerPack(LevelStorage$Session session)"
+		}
+	]
+}

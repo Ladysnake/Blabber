@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.network.chat.contents.ScoreContents",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.contents.ScoreContents",
+			"fabric": "net.minecraft.text.ScoreTextContent"
+		},
+		{
+			"forge": "SCORER_PLACEHOLDER",
+			"fabric": "SENDER_PLACEHOLDER"
+		},
+		{
+			"forge": "SCORER_PLACEHOLDER",
+			"fabric": "SENDER_PLACEHOLDER"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "selector",
+			"fabric": "selector"
+		},
+		{
+			"forge": "objective",
+			"fabric": "objective"
+		},
+		{
+			"forge": "parseSelector(String arg0)",
+			"fabric": "parseEntitySelector(String name)"
+		},
+		{
+			"forge": "parseSelector(String arg0)",
+			"fabric": "parseEntitySelector(String name)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getSelector()",
+			"fabric": "getSelector()"
+		},
+		{
+			"forge": "getObjective()",
+			"fabric": "getObjective()"
+		},
+		{
+			"forge": "findTargetName(CommandSourceStack arg0)",
+			"fabric": "getPlayerName(ServerCommandSource source)"
+		},
+		{
+			"forge": "getScore(String arg0, CommandSourceStack arg1)",
+			"fabric": "getScore(String playerName, ServerCommandSource source)"
+		},
+		{
+			"forge": "resolve(CommandSourceStack arg0, Entity arg1, int arg2)",
+			"fabric": "parse(ServerCommandSource arg0, Entity arg1, int arg2)"
+		}
+	]
+}

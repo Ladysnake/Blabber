@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.server.packs.FilePackResources",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.FilePackResources",
+			"fabric": "net.minecraft.resource.ZipResourcePack"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SPLITTER",
+			"fabric": "TYPE_NAMESPACE_SPLITTER"
+		},
+		{
+			"forge": "file",
+			"fabric": "backingZipFile"
+		},
+		{
+			"forge": "zipFile",
+			"fabric": "file"
+		},
+		{
+			"forge": "failedToLoad",
+			"fabric": "failedToOpen"
+		},
+		{
+			"forge": "getOrCreateZipFile()",
+			"fabric": "getZipFile()"
+		},
+		{
+			"forge": "getOrCreateZipFile()",
+			"fabric": "getZipFile()"
+		},
+		{
+			"forge": "getPathFromLocation(PackType arg0, ResourceLocation arg1)",
+			"fabric": "toPath(ResourceType type, Identifier id)"
+		},
+		{
+			"forge": "getRootResource(String... arg0)",
+			"fabric": "openRoot(String... arg0)"
+		},
+		{
+			"forge": "getResource(PackType arg0, ResourceLocation arg1)",
+			"fabric": "open(ResourceType arg0, Identifier arg1)"
+		},
+		{
+			"forge": "getResource(String arg0)",
+			"fabric": "openFile(String path)"
+		},
+		{
+			"forge": "getNamespaces(PackType arg0)",
+			"fabric": "getNamespaces(ResourceType arg0)"
+		},
+		{
+			"forge": "listResources(PackType arg0, String arg1, String arg2, PackResources$ResourceOutput arg3)",
+			"fabric": "findResources(ResourceType arg0, String arg1, String arg2, ResourcePack$ResultConsumer arg3)"
+		}
+	]
+}

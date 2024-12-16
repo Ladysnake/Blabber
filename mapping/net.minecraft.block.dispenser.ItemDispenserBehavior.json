@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.core.dispenser.DefaultDispenseItemBehavior",
+	"items": [
+		{
+			"forge": "net.minecraft.core.dispenser.DefaultDispenseItemBehavior",
+			"fabric": "net.minecraft.block.dispenser.ItemDispenserBehavior"
+		},
+		{
+			"forge": "dispense(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispense(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "dispense(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispense(BlockPointer arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "execute(BlockSource arg0, ItemStack arg1)",
+			"fabric": "dispenseSilently(BlockPointer pointer, ItemStack stack)"
+		},
+		{
+			"forge": "spawnItem(Level arg0, ItemStack arg1, int arg2, Direction arg3, Position arg4)",
+			"fabric": "spawnItem(World world, ItemStack stack, int speed, Direction side, Position pos)"
+		},
+		{
+			"forge": "playSound(BlockSource arg0)",
+			"fabric": "playSound(BlockPointer pointer)"
+		},
+		{
+			"forge": "playAnimation(BlockSource arg0, Direction arg1)",
+			"fabric": "spawnParticles(BlockPointer pointer, Direction side)"
+		}
+	]
+}

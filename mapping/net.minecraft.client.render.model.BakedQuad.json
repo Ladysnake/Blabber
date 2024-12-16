@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.BakedQuad",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.BakedQuad",
+			"fabric": "net.minecraft.client.render.model.BakedQuad"
+		},
+		{
+			"forge": "vertices",
+			"fabric": "vertexData"
+		},
+		{
+			"forge": "vertices",
+			"fabric": "vertexData"
+		},
+		{
+			"forge": "tintIndex",
+			"fabric": "colorIndex"
+		},
+		{
+			"forge": "direction",
+			"fabric": "face"
+		},
+		{
+			"forge": "sprite",
+			"fabric": "sprite"
+		},
+		{
+			"forge": "shade",
+			"fabric": "shade"
+		},
+		{
+			"forge": "getSprite()",
+			"fabric": "getSprite()"
+		},
+		{
+			"forge": "getSprite()",
+			"fabric": "getSprite()"
+		},
+		{
+			"forge": "getVertices()",
+			"fabric": "getVertexData()"
+		},
+		{
+			"forge": "isTinted()",
+			"fabric": "hasColor()"
+		},
+		{
+			"forge": "getTintIndex()",
+			"fabric": "getColorIndex()"
+		},
+		{
+			"forge": "getDirection()",
+			"fabric": "getFace()"
+		},
+		{
+			"forge": "isShade()",
+			"fabric": "hasShade()"
+		}
+	]
+}

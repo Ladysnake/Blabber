@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.model.AgeableHierarchicalModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.AgeableHierarchicalModel",
+			"fabric": "net.minecraft.client.render.entity.model.SinglePartEntityModelWithChildTransform"
+		},
+		{
+			"forge": "youngScaleFactor",
+			"fabric": "childScale"
+		},
+		{
+			"forge": "youngScaleFactor",
+			"fabric": "childScale"
+		},
+		{
+			"forge": "bodyYOffset",
+			"fabric": "childTranslation"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		}
+	]
+}

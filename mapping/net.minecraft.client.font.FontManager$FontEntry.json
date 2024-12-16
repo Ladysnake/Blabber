@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.client.gui.font.FontManager$UnresolvedBuilderBundle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.FontManager$UnresolvedBuilderBundle",
+			"fabric": "net.minecraft.client.font.FontManager$FontEntry"
+		},
+		{
+			"forge": "fontId",
+			"fabric": "fontId"
+		},
+		{
+			"forge": "fontId",
+			"fabric": "fontId"
+		},
+		{
+			"forge": "builders",
+			"fabric": "builders"
+		},
+		{
+			"forge": "dependencies",
+			"fabric": "dependencies"
+		},
+		{
+			"forge": "add(FontManager$BuilderId arg0, GlyphProviderDefinition$Reference arg1)",
+			"fabric": "addReferenceBuilder(FontManager$FontKey key, FontLoader$Reference reference)"
+		},
+		{
+			"forge": "add(FontManager$BuilderId arg0, GlyphProviderDefinition$Reference arg1)",
+			"fabric": "addReferenceBuilder(FontManager$FontKey key, FontLoader$Reference reference)"
+		},
+		{
+			"forge": "add(FontManager$BuilderId arg0, CompletableFuture<Optional<GlyphProvider>> arg1)",
+			"fabric": "addBuilder(FontManager$FontKey key, CompletableFuture<Optional<Font>> provider)"
+		},
+		{
+			"forge": "listBuilders()",
+			"fabric": "getImmediateProviders()"
+		},
+		{
+			"forge": "resolve(Function<ResourceLocation, List<GlyphProvider>> arg0)",
+			"fabric": "getRequiredFontProviders(Function<Identifier, List<Font>> fontRetriever)"
+		},
+		{
+			"forge": "visitRequiredDependencies(Consumer<ResourceLocation> arg0)",
+			"fabric": "forDependencies(Consumer<Identifier> arg0)"
+		},
+		{
+			"forge": "visitOptionalDependencies(Consumer<ResourceLocation> arg0)",
+			"fabric": "forOptionalDependencies(Consumer<Identifier> arg0)"
+		},
+		{
+			"forge": "fontId()",
+			"fabric": "fontId()"
+		},
+		{
+			"forge": "builders()",
+			"fabric": "builders()"
+		},
+		{
+			"forge": "dependencies()",
+			"fabric": "dependencies()"
+		}
+	]
+}

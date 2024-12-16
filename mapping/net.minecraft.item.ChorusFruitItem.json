@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.ChorusFruitItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ChorusFruitItem",
+			"fabric": "net.minecraft.item.ChorusFruitItem"
+		},
+		{
+			"forge": "finishUsingItem(ItemStack arg0, Level arg1, LivingEntity arg2)",
+			"fabric": "finishUsing(ItemStack arg0, World arg1, LivingEntity arg2)"
+		},
+		{
+			"forge": "finishUsingItem(ItemStack arg0, Level arg1, LivingEntity arg2)",
+			"fabric": "finishUsing(ItemStack arg0, World arg1, LivingEntity arg2)"
+		}
+	]
+}

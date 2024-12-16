@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.network.chat.RemoteChatSession$Data",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.RemoteChatSession$Data",
+			"fabric": "net.minecraft.network.encryption.PublicPlayerSession$Serialized"
+		},
+		{
+			"forge": "sessionId",
+			"fabric": "sessionId"
+		},
+		{
+			"forge": "sessionId",
+			"fabric": "sessionId"
+		},
+		{
+			"forge": "profilePublicKey",
+			"fabric": "publicKeyData"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "fromBuf(PacketByteBuf buf)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "fromBuf(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0, RemoteChatSession$Data arg1)",
+			"fabric": "write(PacketByteBuf buf, PublicPlayerSession$Serialized serialized)"
+		},
+		{
+			"forge": "validate(com.mojang.authlib.GameProfile arg0, SignatureValidator arg1, Duration arg2)",
+			"fabric": "toSession(com.mojang.authlib.GameProfile gameProfile, SignatureVerifier servicesSignatureVerifier, Duration gracePeriod)"
+		},
+		{
+			"forge": "sessionId()",
+			"fabric": "sessionId()"
+		},
+		{
+			"forge": "profilePublicKey()",
+			"fabric": "publicKeyData()"
+		}
+	]
+}

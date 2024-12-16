@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration",
+			"fabric": "net.minecraft.world.gen.feature.OreFeatureConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "targetStates",
+			"fabric": "targets"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "discardChanceOnAirExposure",
+			"fabric": "discardOnAirChance"
+		},
+		{
+			"forge": "target(RuleTest arg0, BlockState arg1)",
+			"fabric": "createTarget(RuleTest test, BlockState state)"
+		},
+		{
+			"forge": "target(RuleTest arg0, BlockState arg1)",
+			"fabric": "createTarget(RuleTest test, BlockState state)"
+		}
+	]
+}

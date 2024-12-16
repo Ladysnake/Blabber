@@ -1,0 +1,585 @@
+{
+	"title": "net.minecraft.client.renderer.RenderType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.RenderType",
+			"fabric": "net.minecraft.client.render.RenderLayer"
+		},
+		{
+			"forge": "BYTES_IN_INT",
+			"fabric": "field_32776"
+		},
+		{
+			"forge": "BYTES_IN_INT",
+			"fabric": "field_32776"
+		},
+		{
+			"forge": "MEGABYTE",
+			"fabric": "field_32777"
+		},
+		{
+			"forge": "BIG_BUFFER_SIZE",
+			"fabric": "SOLID_BUFFER_SIZE"
+		},
+		{
+			"forge": "MEDIUM_BUFFER_SIZE",
+			"fabric": "TRANSLUCENT_BUFFER_SIZE"
+		},
+		{
+			"forge": "SMALL_BUFFER_SIZE",
+			"fabric": "CUTOUT_BUFFER_SIZE"
+		},
+		{
+			"forge": "TRANSIENT_BUFFER_SIZE",
+			"fabric": "DEFAULT_BUFFER_SIZE"
+		},
+		{
+			"forge": "SOLID",
+			"fabric": "SOLID"
+		},
+		{
+			"forge": "CUTOUT_MIPPED",
+			"fabric": "CUTOUT_MIPPED"
+		},
+		{
+			"forge": "CUTOUT",
+			"fabric": "CUTOUT"
+		},
+		{
+			"forge": "TRANSLUCENT",
+			"fabric": "TRANSLUCENT"
+		},
+		{
+			"forge": "TRANSLUCENT_MOVING_BLOCK",
+			"fabric": "TRANSLUCENT_MOVING_BLOCK"
+		},
+		{
+			"forge": "TRANSLUCENT_NO_CRUMBLING",
+			"fabric": "TRANSLUCENT_NO_CRUMBLING"
+		},
+		{
+			"forge": "ARMOR_CUTOUT_NO_CULL",
+			"fabric": "ARMOR_CUTOUT_NO_CULL"
+		},
+		{
+			"forge": "ENTITY_SOLID",
+			"fabric": "ENTITY_SOLID"
+		},
+		{
+			"forge": "ENTITY_CUTOUT",
+			"fabric": "ENTITY_CUTOUT"
+		},
+		{
+			"forge": "ENTITY_CUTOUT_NO_CULL",
+			"fabric": "ENTITY_CUTOUT_NO_CULL"
+		},
+		{
+			"forge": "ENTITY_CUTOUT_NO_CULL_Z_OFFSET",
+			"fabric": "ENTITY_CUTOUT_NO_CULL_Z_OFFSET"
+		},
+		{
+			"forge": "ITEM_ENTITY_TRANSLUCENT_CULL",
+			"fabric": "ITEM_ENTITY_TRANSLUCENT_CULL"
+		},
+		{
+			"forge": "ENTITY_TRANSLUCENT_CULL",
+			"fabric": "ENTITY_TRANSLUCENT_CULL"
+		},
+		{
+			"forge": "ENTITY_TRANSLUCENT",
+			"fabric": "ENTITY_TRANSLUCENT"
+		},
+		{
+			"forge": "ENTITY_TRANSLUCENT_EMISSIVE",
+			"fabric": "ENTITY_TRANSLUCENT_EMISSIVE"
+		},
+		{
+			"forge": "ENTITY_SMOOTH_CUTOUT",
+			"fabric": "ENTITY_SMOOTH_CUTOUT"
+		},
+		{
+			"forge": "BEACON_BEAM",
+			"fabric": "BEACON_BEAM"
+		},
+		{
+			"forge": "ENTITY_DECAL",
+			"fabric": "ENTITY_DECAL"
+		},
+		{
+			"forge": "ENTITY_NO_OUTLINE",
+			"fabric": "ENTITY_NO_OUTLINE"
+		},
+		{
+			"forge": "ENTITY_SHADOW",
+			"fabric": "ENTITY_SHADOW"
+		},
+		{
+			"forge": "DRAGON_EXPLOSION_ALPHA",
+			"fabric": "ENTITY_ALPHA"
+		},
+		{
+			"forge": "EYES",
+			"fabric": "EYES"
+		},
+		{
+			"forge": "LEASH",
+			"fabric": "LEASH"
+		},
+		{
+			"forge": "WATER_MASK",
+			"fabric": "WATER_MASK"
+		},
+		{
+			"forge": "ARMOR_GLINT",
+			"fabric": "ARMOR_GLINT"
+		},
+		{
+			"forge": "ARMOR_ENTITY_GLINT",
+			"fabric": "ARMOR_ENTITY_GLINT"
+		},
+		{
+			"forge": "GLINT_TRANSLUCENT",
+			"fabric": "GLINT_TRANSLUCENT"
+		},
+		{
+			"forge": "GLINT",
+			"fabric": "GLINT"
+		},
+		{
+			"forge": "GLINT_DIRECT",
+			"fabric": "DIRECT_GLINT"
+		},
+		{
+			"forge": "ENTITY_GLINT",
+			"fabric": "ENTITY_GLINT"
+		},
+		{
+			"forge": "ENTITY_GLINT_DIRECT",
+			"fabric": "DIRECT_ENTITY_GLINT"
+		},
+		{
+			"forge": "CRUMBLING",
+			"fabric": "CRUMBLING"
+		},
+		{
+			"forge": "TEXT",
+			"fabric": "TEXT"
+		},
+		{
+			"forge": "TEXT_BACKGROUND",
+			"fabric": "TEXT_BACKGROUND"
+		},
+		{
+			"forge": "TEXT_INTENSITY",
+			"fabric": "TEXT_INTENSITY"
+		},
+		{
+			"forge": "TEXT_POLYGON_OFFSET",
+			"fabric": "TEXT_POLYGON_OFFSET"
+		},
+		{
+			"forge": "TEXT_INTENSITY_POLYGON_OFFSET",
+			"fabric": "TEXT_INTENSITY_POLYGON_OFFSET"
+		},
+		{
+			"forge": "TEXT_SEE_THROUGH",
+			"fabric": "TEXT_SEE_THROUGH"
+		},
+		{
+			"forge": "TEXT_BACKGROUND_SEE_THROUGH",
+			"fabric": "TEXT_BACKGROUND_SEE_THROUGH"
+		},
+		{
+			"forge": "TEXT_INTENSITY_SEE_THROUGH",
+			"fabric": "TEXT_INTENSITY_SEE_THROUGH"
+		},
+		{
+			"forge": "LIGHTNING",
+			"fabric": "LIGHTNING"
+		},
+		{
+			"forge": "TRIPWIRE",
+			"fabric": "TRIPWIRE"
+		},
+		{
+			"forge": "END_PORTAL",
+			"fabric": "END_PORTAL"
+		},
+		{
+			"forge": "END_GATEWAY",
+			"fabric": "END_GATEWAY"
+		},
+		{
+			"forge": "LINES",
+			"fabric": "LINES"
+		},
+		{
+			"forge": "LINE_STRIP",
+			"fabric": "LINE_STRIP"
+		},
+		{
+			"forge": "DEBUG_LINE_STRIP",
+			"fabric": "DEBUG_LINE_STRIP"
+		},
+		{
+			"forge": "DEBUG_FILLED_BOX",
+			"fabric": "DEBUG_FILLED_BOX"
+		},
+		{
+			"forge": "DEBUG_QUADS",
+			"fabric": "DEBUG_QUADS"
+		},
+		{
+			"forge": "DEBUG_SECTION_QUADS",
+			"fabric": "DEBUG_SECTION_QUADS"
+		},
+		{
+			"forge": "GUI",
+			"fabric": "GUI"
+		},
+		{
+			"forge": "GUI_OVERLAY",
+			"fabric": "GUI_OVERLAY"
+		},
+		{
+			"forge": "GUI_TEXT_HIGHLIGHT",
+			"fabric": "GUI_TEXT_HIGHLIGHT"
+		},
+		{
+			"forge": "GUI_GHOST_RECIPE_OVERLAY",
+			"fabric": "GUI_GHOST_RECIPE_OVERLAY"
+		},
+		{
+			"forge": "CHUNK_BUFFER_LAYERS",
+			"fabric": "BLOCK_LAYERS"
+		},
+		{
+			"forge": "format",
+			"fabric": "vertexFormat"
+		},
+		{
+			"forge": "mode",
+			"fabric": "drawMode"
+		},
+		{
+			"forge": "bufferSize",
+			"fabric": "expectedBufferSize"
+		},
+		{
+			"forge": "affectsCrumbling",
+			"fabric": "hasCrumbling"
+		},
+		{
+			"forge": "sortOnUpload",
+			"fabric": "translucent"
+		},
+		{
+			"forge": "asOptional",
+			"fabric": "optionalThis"
+		},
+		{
+			"forge": "solid()",
+			"fabric": "getSolid()"
+		},
+		{
+			"forge": "solid()",
+			"fabric": "getSolid()"
+		},
+		{
+			"forge": "cutoutMipped()",
+			"fabric": "getCutoutMipped()"
+		},
+		{
+			"forge": "cutout()",
+			"fabric": "getCutout()"
+		},
+		{
+			"forge": "translucentState(RenderStateShard$ShaderStateShard arg0)",
+			"fabric": "of(RenderPhase$ShaderProgram program)"
+		},
+		{
+			"forge": "translucent()",
+			"fabric": "getTranslucent()"
+		},
+		{
+			"forge": "translucentMovingBlockState()",
+			"fabric": "getItemPhaseData()"
+		},
+		{
+			"forge": "translucentMovingBlock()",
+			"fabric": "getTranslucentMovingBlock()"
+		},
+		{
+			"forge": "translucentNoCrumbling()",
+			"fabric": "getTranslucentNoCrumbling()"
+		},
+		{
+			"forge": "armorCutoutNoCull(ResourceLocation arg0)",
+			"fabric": "getArmorCutoutNoCull(Identifier texture)"
+		},
+		{
+			"forge": "entitySolid(ResourceLocation arg0)",
+			"fabric": "getEntitySolid(Identifier texture)"
+		},
+		{
+			"forge": "entityCutout(ResourceLocation arg0)",
+			"fabric": "getEntityCutout(Identifier texture)"
+		},
+		{
+			"forge": "entityCutoutNoCull(ResourceLocation arg0, boolean arg1)",
+			"fabric": "getEntityCutoutNoCull(Identifier texture, boolean affectsOutline)"
+		},
+		{
+			"forge": "entityCutoutNoCull(ResourceLocation arg0)",
+			"fabric": "getEntityCutoutNoCull(Identifier texture)"
+		},
+		{
+			"forge": "entityCutoutNoCullZOffset(ResourceLocation arg0, boolean arg1)",
+			"fabric": "getEntityCutoutNoCullZOffset(Identifier texture, boolean affectsOutline)"
+		},
+		{
+			"forge": "entityCutoutNoCullZOffset(ResourceLocation arg0)",
+			"fabric": "getEntityCutoutNoCullZOffset(Identifier texture)"
+		},
+		{
+			"forge": "itemEntityTranslucentCull(ResourceLocation arg0)",
+			"fabric": "getItemEntityTranslucentCull(Identifier texture)"
+		},
+		{
+			"forge": "entityTranslucentCull(ResourceLocation arg0)",
+			"fabric": "getEntityTranslucentCull(Identifier texture)"
+		},
+		{
+			"forge": "entityTranslucent(ResourceLocation arg0, boolean arg1)",
+			"fabric": "getEntityTranslucent(Identifier texture, boolean affectsOutline)"
+		},
+		{
+			"forge": "entityTranslucent(ResourceLocation arg0)",
+			"fabric": "getEntityTranslucent(Identifier texture)"
+		},
+		{
+			"forge": "entityTranslucentEmissive(ResourceLocation arg0, boolean arg1)",
+			"fabric": "getEntityTranslucentEmissive(Identifier texture, boolean affectsOutline)"
+		},
+		{
+			"forge": "entityTranslucentEmissive(ResourceLocation arg0)",
+			"fabric": "getEntityTranslucentEmissive(Identifier texture)"
+		},
+		{
+			"forge": "entitySmoothCutout(ResourceLocation arg0)",
+			"fabric": "getEntitySmoothCutout(Identifier texture)"
+		},
+		{
+			"forge": "beaconBeam(ResourceLocation arg0, boolean arg1)",
+			"fabric": "getBeaconBeam(Identifier texture, boolean translucent)"
+		},
+		{
+			"forge": "entityDecal(ResourceLocation arg0)",
+			"fabric": "getEntityDecal(Identifier texture)"
+		},
+		{
+			"forge": "entityNoOutline(ResourceLocation arg0)",
+			"fabric": "getEntityNoOutline(Identifier texture)"
+		},
+		{
+			"forge": "entityShadow(ResourceLocation arg0)",
+			"fabric": "getEntityShadow(Identifier texture)"
+		},
+		{
+			"forge": "dragonExplosionAlpha(ResourceLocation arg0)",
+			"fabric": "getEntityAlpha(Identifier texture)"
+		},
+		{
+			"forge": "eyes(ResourceLocation arg0)",
+			"fabric": "getEyes(Identifier texture)"
+		},
+		{
+			"forge": "energySwirl(ResourceLocation arg0, float arg1, float arg2)",
+			"fabric": "getEnergySwirl(Identifier texture, float x, float y)"
+		},
+		{
+			"forge": "leash()",
+			"fabric": "getLeash()"
+		},
+		{
+			"forge": "waterMask()",
+			"fabric": "getWaterMask()"
+		},
+		{
+			"forge": "outline(ResourceLocation arg0)",
+			"fabric": "getOutline(Identifier texture)"
+		},
+		{
+			"forge": "armorGlint()",
+			"fabric": "getArmorGlint()"
+		},
+		{
+			"forge": "armorEntityGlint()",
+			"fabric": "getArmorEntityGlint()"
+		},
+		{
+			"forge": "glintTranslucent()",
+			"fabric": "getGlintTranslucent()"
+		},
+		{
+			"forge": "glint()",
+			"fabric": "getGlint()"
+		},
+		{
+			"forge": "glintDirect()",
+			"fabric": "getDirectGlint()"
+		},
+		{
+			"forge": "entityGlint()",
+			"fabric": "getEntityGlint()"
+		},
+		{
+			"forge": "entityGlintDirect()",
+			"fabric": "getDirectEntityGlint()"
+		},
+		{
+			"forge": "crumbling(ResourceLocation arg0)",
+			"fabric": "getBlockBreaking(Identifier texture)"
+		},
+		{
+			"forge": "text(ResourceLocation arg0)",
+			"fabric": "getText(Identifier texture)"
+		},
+		{
+			"forge": "textBackground()",
+			"fabric": "getTextBackground()"
+		},
+		{
+			"forge": "textIntensity(ResourceLocation arg0)",
+			"fabric": "getTextIntensity(Identifier texture)"
+		},
+		{
+			"forge": "textPolygonOffset(ResourceLocation arg0)",
+			"fabric": "getTextPolygonOffset(Identifier texture)"
+		},
+		{
+			"forge": "textIntensityPolygonOffset(ResourceLocation arg0)",
+			"fabric": "getTextIntensityPolygonOffset(Identifier texture)"
+		},
+		{
+			"forge": "textSeeThrough(ResourceLocation arg0)",
+			"fabric": "getTextSeeThrough(Identifier texture)"
+		},
+		{
+			"forge": "textBackgroundSeeThrough()",
+			"fabric": "getTextBackgroundSeeThrough()"
+		},
+		{
+			"forge": "textIntensitySeeThrough(ResourceLocation arg0)",
+			"fabric": "getTextIntensitySeeThrough(Identifier texture)"
+		},
+		{
+			"forge": "lightning()",
+			"fabric": "getLightning()"
+		},
+		{
+			"forge": "tripwireState()",
+			"fabric": "getTripwirePhaseData()"
+		},
+		{
+			"forge": "tripwire()",
+			"fabric": "getTripwire()"
+		},
+		{
+			"forge": "endPortal()",
+			"fabric": "getEndPortal()"
+		},
+		{
+			"forge": "endGateway()",
+			"fabric": "getEndGateway()"
+		},
+		{
+			"forge": "lines()",
+			"fabric": "getLines()"
+		},
+		{
+			"forge": "lineStrip()",
+			"fabric": "getLineStrip()"
+		},
+		{
+			"forge": "debugLineStrip(double arg0)",
+			"fabric": "getDebugLineStrip(double lineWidth)"
+		},
+		{
+			"forge": "debugFilledBox()",
+			"fabric": "getDebugFilledBox()"
+		},
+		{
+			"forge": "debugQuads()",
+			"fabric": "getDebugQuads()"
+		},
+		{
+			"forge": "debugSectionQuads()",
+			"fabric": "getDebugSectionQuads()"
+		},
+		{
+			"forge": "gui()",
+			"fabric": "getGui()"
+		},
+		{
+			"forge": "guiOverlay()",
+			"fabric": "getGuiOverlay()"
+		},
+		{
+			"forge": "guiTextHighlight()",
+			"fabric": "getGuiTextHighlight()"
+		},
+		{
+			"forge": "guiGhostRecipeOverlay()",
+			"fabric": "getGuiGhostRecipeOverlay()"
+		},
+		{
+			"forge": "create(String arg0, VertexFormat arg1, VertexFormat$Mode arg2, int arg3, RenderType$CompositeState arg4)",
+			"fabric": "of(String name, VertexFormat vertexFormat, VertexFormat$DrawMode drawMode, int expectedBufferSize, RenderLayer$MultiPhaseParameters phaseData)"
+		},
+		{
+			"forge": "create(String arg0, VertexFormat arg1, VertexFormat$Mode arg2, int arg3, boolean arg4, boolean arg5, RenderType$CompositeState arg6)",
+			"fabric": "of(String name, VertexFormat vertexFormat, VertexFormat$DrawMode drawMode, int expectedBufferSize, boolean hasCrumbling, boolean translucent, RenderLayer$MultiPhaseParameters phases)"
+		},
+		{
+			"forge": "end(BufferBuilder arg0, VertexSorting arg1)",
+			"fabric": "draw(BufferBuilder buffer, VertexSorter sorter)"
+		},
+		{
+			"forge": "chunkBufferLayers()",
+			"fabric": "getBlockLayers()"
+		},
+		{
+			"forge": "bufferSize()",
+			"fabric": "getExpectedBufferSize()"
+		},
+		{
+			"forge": "format()",
+			"fabric": "getVertexFormat()"
+		},
+		{
+			"forge": "mode()",
+			"fabric": "getDrawMode()"
+		},
+		{
+			"forge": "outline()",
+			"fabric": "getAffectedOutline()"
+		},
+		{
+			"forge": "isOutline()",
+			"fabric": "isOutline()"
+		},
+		{
+			"forge": "affectsCrumbling()",
+			"fabric": "hasCrumbling()"
+		},
+		{
+			"forge": "canConsolidateConsecutiveGeometry()",
+			"fabric": "areVerticesNotShared()"
+		},
+		{
+			"forge": "asOptional()",
+			"fabric": "asOptional()"
+		}
+	]
+}

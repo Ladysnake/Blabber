@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.chat.OutgoingChatMessage$Player",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.OutgoingChatMessage$Player",
+			"fabric": "net.minecraft.network.message.SentMessage$Chat"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "content()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "content()",
+			"fabric": "getContent()"
+		},
+		{
+			"forge": "sendToPlayer(ServerPlayer arg0, boolean arg1, ChatType$Bound arg2)",
+			"fabric": "send(ServerPlayerEntity arg0, boolean arg1, MessageType$Parameters arg2)"
+		},
+		{
+			"forge": "message()",
+			"fabric": "message()"
+		}
+	]
+}

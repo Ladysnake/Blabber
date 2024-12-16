@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.world.level.block.CocoaBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.CocoaBlock",
+			"fabric": "net.minecraft.block.CocoaBlock"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "MAX_AGE"
+		},
+		{
+			"forge": "MAX_AGE",
+			"fabric": "MAX_AGE"
+		},
+		{
+			"forge": "AGE",
+			"fabric": "AGE"
+		},
+		{
+			"forge": "AGE_0_WIDTH",
+			"fabric": "field_31062"
+		},
+		{
+			"forge": "AGE_0_HEIGHT",
+			"fabric": "field_31063"
+		},
+		{
+			"forge": "AGE_0_HALFWIDTH",
+			"fabric": "field_31064"
+		},
+		{
+			"forge": "AGE_1_WIDTH",
+			"fabric": "field_31065"
+		},
+		{
+			"forge": "AGE_1_HEIGHT",
+			"fabric": "field_31066"
+		},
+		{
+			"forge": "AGE_1_HALFWIDTH",
+			"fabric": "field_31067"
+		},
+		{
+			"forge": "AGE_2_WIDTH",
+			"fabric": "field_31068"
+		},
+		{
+			"forge": "AGE_2_HEIGHT",
+			"fabric": "field_31069"
+		},
+		{
+			"forge": "AGE_2_HALFWIDTH",
+			"fabric": "field_31070"
+		},
+		{
+			"forge": "EAST_AABB",
+			"fabric": "AGE_TO_EAST_SHAPE"
+		},
+		{
+			"forge": "WEST_AABB",
+			"fabric": "AGE_TO_WEST_SHAPE"
+		},
+		{
+			"forge": "NORTH_AABB",
+			"fabric": "AGE_TO_NORTH_SHAPE"
+		},
+		{
+			"forge": "SOUTH_AABB",
+			"fabric": "AGE_TO_SOUTH_SHAPE"
+		},
+		{
+			"forge": "isRandomlyTicking(BlockState arg0)",
+			"fabric": "hasRandomTicks(BlockState arg0)"
+		},
+		{
+			"forge": "isRandomlyTicking(BlockState arg0)",
+			"fabric": "hasRandomTicks(BlockState arg0)"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		}
+	]
+}

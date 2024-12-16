@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.UnihexProvider$IntContents",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.UnihexProvider$IntContents",
+			"fabric": "net.minecraft.client.font.UnihexFont$FontImage32x16"
+		},
+		{
+			"forge": "contents",
+			"fabric": "contents"
+		},
+		{
+			"forge": "contents",
+			"fabric": "contents"
+		},
+		{
+			"forge": "bitWidth",
+			"fabric": "bitWidth"
+		},
+		{
+			"forge": "SIZE_24",
+			"fabric": "field_44775"
+		},
+		{
+			"forge": "line(int arg0)",
+			"fabric": "getPixels(int arg0)"
+		},
+		{
+			"forge": "line(int arg0)",
+			"fabric": "getPixels(int arg0)"
+		},
+		{
+			"forge": "read24(int arg0, it.unimi.dsi.fastutil.bytes.ByteList arg1)",
+			"fabric": "read24x16(int lineNum, it.unimi.dsi.fastutil.bytes.ByteList data)"
+		},
+		{
+			"forge": "read32(int arg0, it.unimi.dsi.fastutil.bytes.ByteList arg1)",
+			"fabric": "read32x16(int lineNum, it.unimi.dsi.fastutil.bytes.ByteList data)"
+		},
+		{
+			"forge": "contents()",
+			"fabric": "contents()"
+		},
+		{
+			"forge": "bitWidth()",
+			"fabric": "bitWidth()"
+		}
+	]
+}

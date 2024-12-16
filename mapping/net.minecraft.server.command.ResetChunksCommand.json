@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.commands.ResetChunksCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.ResetChunksCommand",
+			"fabric": "net.minecraft.server.command.ResetChunksCommand"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "resetChunks(CommandSourceStack arg0, int arg1, boolean arg2)",
+			"fabric": "executeResetChunks(ServerCommandSource source, int radius, boolean skipOldChunks)"
+		}
+	]
+}

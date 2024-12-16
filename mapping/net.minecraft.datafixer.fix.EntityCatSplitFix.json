@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityCatSplitFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityCatSplitFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityCatSplitFix"
+		},
+		{
+			"forge": "getNewNameAndTag(String arg0, com.mojang.serialization.Dynamic<?> arg1)",
+			"fabric": "transform(String arg0, com.mojang.serialization.Dynamic<?> arg1)"
+		},
+		{
+			"forge": "getNewNameAndTag(String arg0, com.mojang.serialization.Dynamic<?> arg1)",
+			"fabric": "transform(String arg0, com.mojang.serialization.Dynamic<?> arg1)"
+		}
+	]
+}

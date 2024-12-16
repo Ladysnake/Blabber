@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.main.GameConfig$UserData",
+	"items": [
+		{
+			"forge": "net.minecraft.client.main.GameConfig$UserData",
+			"fabric": "net.minecraft.client.RunArgs$Network"
+		},
+		{
+			"forge": "user",
+			"fabric": "session"
+		},
+		{
+			"forge": "user",
+			"fabric": "session"
+		},
+		{
+			"forge": "userProperties",
+			"fabric": "userProperties"
+		},
+		{
+			"forge": "profileProperties",
+			"fabric": "profileProperties"
+		},
+		{
+			"forge": "proxy",
+			"fabric": "netProxy"
+		}
+	]
+}

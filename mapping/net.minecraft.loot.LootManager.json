@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootDataManager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootDataManager",
+			"fabric": "net.minecraft.loot.LootManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "EMPTY_LOOT_TABLE_KEY",
+			"fabric": "EMPTY_LOOT_TABLE"
+		},
+		{
+			"forge": "elements",
+			"fabric": "keyToValue"
+		},
+		{
+			"forge": "typeKeys",
+			"fabric": "typeToIds"
+		},
+		{
+			"forge": "reload(PreparableReloadListener$PreparationBarrier arg0, ResourceManager arg1, ProfilerFiller arg2, ProfilerFiller arg3, Executor arg4, Executor arg5)",
+			"fabric": "reload(ResourceReloader$Synchronizer arg0, ResourceManager arg1, Profiler arg2, Profiler arg3, Executor arg4, Executor arg5)"
+		},
+		{
+			"forge": "reload(PreparableReloadListener$PreparationBarrier arg0, ResourceManager arg1, ProfilerFiller arg2, ProfilerFiller arg3, Executor arg4, Executor arg5)",
+			"fabric": "reload(ResourceReloader$Synchronizer arg0, ResourceManager arg1, Profiler arg2, Profiler arg3, Executor arg4, Executor arg5)"
+		},
+		{
+			"forge": "scheduleElementParse(LootDataType<T> arg0, ResourceManager arg1, Executor arg2, Map<LootDataType<?>, Map<ResourceLocation, ?>> arg3)",
+			"fabric": "load(LootDataType<T> type, ResourceManager resourceManager, Executor executor, Map<LootDataType<?>, Map<Identifier, ?>> results)"
+		},
+		{
+			"forge": "apply(Map<LootDataType<?>, Map<ResourceLocation, ?>> arg0)",
+			"fabric": "validate(Map<LootDataType<?>, Map<Identifier, ?>> lootData)"
+		},
+		{
+			"forge": "castAndValidate(ValidationContext arg0, LootDataId<T> arg1, Object arg2)",
+			"fabric": "validate(LootTableReporter reporter, LootDataKey<T> key, Object value)"
+		},
+		{
+			"forge": "getElement(LootDataId<T> arg0)",
+			"fabric": "getElement(LootDataKey<T> arg0)"
+		},
+		{
+			"forge": "getKeys(LootDataType<?> arg0)",
+			"fabric": "getIds(LootDataType<?> type)"
+		},
+		{
+			"forge": "createComposite(LootItemCondition[] arg0)",
+			"fabric": "and(LootCondition[] predicates)"
+		},
+		{
+			"forge": "createComposite(LootItemFunction[] arg0)",
+			"fabric": "and(LootFunction[] modifiers)"
+		}
+	]
+}

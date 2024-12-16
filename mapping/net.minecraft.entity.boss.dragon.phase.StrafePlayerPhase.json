@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.entity.boss.enderdragon.phases.DragonStrafePlayerPhase",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.enderdragon.phases.DragonStrafePlayerPhase",
+			"fabric": "net.minecraft.entity.boss.dragon.phase.StrafePlayerPhase"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "FIREBALL_CHARGE_AMOUNT",
+			"fabric": "MINIMUM_TARGET_SPOT_AMOUNT"
+		},
+		{
+			"forge": "fireballCharge",
+			"fabric": "seenTargetTimes"
+		},
+		{
+			"forge": "currentPath",
+			"fabric": "path"
+		},
+		{
+			"forge": "targetLocation",
+			"fabric": "pathTarget"
+		},
+		{
+			"forge": "attackTarget",
+			"fabric": "target"
+		},
+		{
+			"forge": "holdingPatternClockwise",
+			"fabric": "shouldFindNewPath"
+		},
+		{
+			"forge": "doServerTick()",
+			"fabric": "serverTick()"
+		},
+		{
+			"forge": "doServerTick()",
+			"fabric": "serverTick()"
+		},
+		{
+			"forge": "findNewTarget()",
+			"fabric": "updatePath()"
+		},
+		{
+			"forge": "navigateToNextPathNode()",
+			"fabric": "followPath()"
+		},
+		{
+			"forge": "begin()",
+			"fabric": "beginPhase()"
+		},
+		{
+			"forge": "setTarget(LivingEntity arg0)",
+			"fabric": "setTargetEntity(LivingEntity targetEntity)"
+		},
+		{
+			"forge": "getFlyTargetLocation()",
+			"fabric": "getPathTarget()"
+		},
+		{
+			"forge": "getPhase()",
+			"fabric": "getType()"
+		}
+	]
+}

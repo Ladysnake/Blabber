@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.telemetry.events.GameLoadTimesEvent$Measurement",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.events.GameLoadTimesEvent$Measurement",
+			"fabric": "net.minecraft.client.util.telemetry.GameLoadTimeEvent$Measurement"
+		},
+		{
+			"forge": "millis",
+			"fabric": "millis"
+		},
+		{
+			"forge": "millis",
+			"fabric": "millis"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "millis()",
+			"fabric": "millis()"
+		},
+		{
+			"forge": "millis()",
+			"fabric": "millis()"
+		}
+	]
+}

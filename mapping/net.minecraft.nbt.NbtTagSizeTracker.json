@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.nbt.NbtAccounter",
+	"items": [
+		{
+			"forge": "net.minecraft.nbt.NbtAccounter",
+			"fabric": "net.minecraft.nbt.NbtTagSizeTracker"
+		},
+		{
+			"forge": "UNLIMITED",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "UNLIMITED",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "quota",
+			"fabric": "maxBytes"
+		},
+		{
+			"forge": "usage",
+			"fabric": "allocatedBytes"
+		},
+		{
+			"forge": "accountBytes(long arg0)",
+			"fabric": "add(long bytes)"
+		},
+		{
+			"forge": "accountBytes(long arg0)",
+			"fabric": "add(long bytes)"
+		},
+		{
+			"forge": "getUsage()",
+			"fabric": "getAllocatedBytes()"
+		}
+	]
+}

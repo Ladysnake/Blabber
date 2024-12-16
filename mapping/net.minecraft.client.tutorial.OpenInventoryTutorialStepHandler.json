@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.tutorial.OpenInventoryTutorialStep",
+	"items": [
+		{
+			"forge": "net.minecraft.client.tutorial.OpenInventoryTutorialStep",
+			"fabric": "net.minecraft.client.tutorial.OpenInventoryTutorialStepHandler"
+		},
+		{
+			"forge": "HINT_DELAY",
+			"fabric": "DELAY"
+		},
+		{
+			"forge": "HINT_DELAY",
+			"fabric": "DELAY"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "DESCRIPTION",
+			"fabric": "DESCRIPTION"
+		},
+		{
+			"forge": "tutorial",
+			"fabric": "manager"
+		},
+		{
+			"forge": "toast",
+			"fabric": "toast"
+		},
+		{
+			"forge": "timeWaiting",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "destroy()"
+		},
+		{
+			"forge": "onOpenInventory()",
+			"fabric": "onInventoryOpened()"
+		}
+	]
+}

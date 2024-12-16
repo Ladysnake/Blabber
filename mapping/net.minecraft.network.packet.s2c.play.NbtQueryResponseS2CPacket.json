@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundTagQueryPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundTagQueryPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.NbtQueryResponseS2CPacket"
+		},
+		{
+			"forge": "transactionId",
+			"fabric": "transactionId"
+		},
+		{
+			"forge": "transactionId",
+			"fabric": "transactionId"
+		},
+		{
+			"forge": "tag",
+			"fabric": "nbt"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getTransactionId()",
+			"fabric": "getTransactionId()"
+		},
+		{
+			"forge": "getTag()",
+			"fabric": "getNbt()"
+		},
+		{
+			"forge": "isSkippable()",
+			"fabric": "isWritingErrorSkippable()"
+		}
+	]
+}

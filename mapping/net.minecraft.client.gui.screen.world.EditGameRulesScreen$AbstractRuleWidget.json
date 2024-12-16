@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen$RuleEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen$RuleEntry",
+			"fabric": "net.minecraft.client.gui.screen.world.EditGameRulesScreen$AbstractRuleWidget"
+		},
+		{
+			"forge": "tooltip",
+			"fabric": "description"
+		},
+		{
+			"forge": "tooltip",
+			"fabric": "description"
+		}
+	]
+}

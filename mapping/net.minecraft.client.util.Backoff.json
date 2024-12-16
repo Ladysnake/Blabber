@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.realmsclient.gui.task.RepeatedDelayStrategy",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.task.RepeatedDelayStrategy",
+			"fabric": "net.minecraft.client.util.Backoff"
+		},
+		{
+			"forge": "CONSTANT",
+			"fabric": "ONE_CYCLE"
+		},
+		{
+			"forge": "CONSTANT",
+			"fabric": "ONE_CYCLE"
+		},
+		{
+			"forge": "delayCyclesAfterSuccess()",
+			"fabric": "success()"
+		},
+		{
+			"forge": "delayCyclesAfterSuccess()",
+			"fabric": "success()"
+		},
+		{
+			"forge": "delayCyclesAfterFailure()",
+			"fabric": "fail()"
+		},
+		{
+			"forge": "exponentialBackoff(int arg0)",
+			"fabric": "exponential(int maxSkippableCycles)"
+		}
+	]
+}

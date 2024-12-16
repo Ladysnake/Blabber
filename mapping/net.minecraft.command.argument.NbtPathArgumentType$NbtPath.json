@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.commands.arguments.NbtPathArgument$NbtPath",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.NbtPathArgument$NbtPath",
+			"fabric": "net.minecraft.command.argument.NbtPathArgumentType$NbtPath"
+		},
+		{
+			"forge": "original",
+			"fabric": "string"
+		},
+		{
+			"forge": "original",
+			"fabric": "string"
+		},
+		{
+			"forge": "nodeToOriginalPosition",
+			"fabric": "nodeEndIndices"
+		},
+		{
+			"forge": "nodes",
+			"fabric": "nodes"
+		},
+		{
+			"forge": "get(Tag arg0)",
+			"fabric": "get(NbtElement element)"
+		},
+		{
+			"forge": "get(Tag arg0)",
+			"fabric": "get(NbtElement element)"
+		},
+		{
+			"forge": "countMatching(Tag arg0)",
+			"fabric": "count(NbtElement element)"
+		},
+		{
+			"forge": "getOrCreateParents(Tag arg0)",
+			"fabric": "getTerminals(NbtElement start)"
+		},
+		{
+			"forge": "getOrCreate(Tag arg0, Supplier<Tag> arg1)",
+			"fabric": "getOrInit(NbtElement element, Supplier<NbtElement> source)"
+		},
+		{
+			"forge": "apply(List<Tag> arg0, Function<Tag, Integer> arg1)",
+			"fabric": "forEach(List<NbtElement> elements, Function<NbtElement, Integer> operation)"
+		},
+		{
+			"forge": "isTooDeep(Tag arg0, int arg1)",
+			"fabric": "isTooDeep(NbtElement element, int depth)"
+		},
+		{
+			"forge": "set(Tag arg0, Tag arg1)",
+			"fabric": "put(NbtElement element, NbtElement source)"
+		},
+		{
+			"forge": "estimatePathDepth()",
+			"fabric": "getDepth()"
+		},
+		{
+			"forge": "insert(int arg0, CompoundTag arg1, List<Tag> arg2)",
+			"fabric": "insert(int index, NbtCompound compound, List<NbtElement> elements)"
+		},
+		{
+			"forge": "remove(Tag arg0)",
+			"fabric": "remove(NbtElement element)"
+		},
+		{
+			"forge": "createNotFoundException(NbtPathArgument$Node arg0)",
+			"fabric": "createNothingFoundException(NbtPathArgumentType$PathNode node)"
+		}
+	]
+}

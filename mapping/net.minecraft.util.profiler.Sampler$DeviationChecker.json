@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.MetricSampler$ThresholdTest",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.MetricSampler$ThresholdTest",
+			"fabric": "net.minecraft.util.profiler.Sampler$DeviationChecker"
+		},
+		{
+			"forge": "test(double arg0)",
+			"fabric": "check(double value)"
+		},
+		{
+			"forge": "test(double arg0)",
+			"fabric": "check(double value)"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.server.commands.LocateCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.LocateCommand",
+			"fabric": "net.minecraft.server.command.LocateCommand"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ERROR_STRUCTURE_NOT_FOUND",
+			"fabric": "STRUCTURE_NOT_FOUND_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_STRUCTURE_INVALID",
+			"fabric": "STRUCTURE_INVALID_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_BIOME_NOT_FOUND",
+			"fabric": "BIOME_NOT_FOUND_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_POI_NOT_FOUND",
+			"fabric": "POI_NOT_FOUND_EXCEPTION"
+		},
+		{
+			"forge": "MAX_STRUCTURE_SEARCH_RADIUS",
+			"fabric": "LOCATE_STRUCTURE_RADIUS"
+		},
+		{
+			"forge": "MAX_BIOME_SEARCH_RADIUS",
+			"fabric": "LOCATE_BIOME_RADIUS"
+		},
+		{
+			"forge": "BIOME_SAMPLE_RESOLUTION_HORIZONTAL",
+			"fabric": "LOCATE_BIOME_HORIZONTAL_BLOCK_CHECK_INTERVAL"
+		},
+		{
+			"forge": "BIOME_SAMPLE_RESOLUTION_VERTICAL",
+			"fabric": "LOCATE_BIOME_VERTICAL_BLOCK_CHECK_INTERVAL"
+		},
+		{
+			"forge": "POI_SEARCH_RADIUS",
+			"fabric": "LOCATE_POI_RADIUS"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess)"
+		},
+		{
+			"forge": "getHolders(ResourceOrTagKeyArgument$Result<Structure> arg0, Registry<Structure> arg1)",
+			"fabric": "getStructureListForPredicate(RegistryPredicateArgumentType$RegistryPredicate<Structure> predicate, Registry<Structure> structureRegistry)"
+		},
+		{
+			"forge": "locateStructure(CommandSourceStack arg0, ResourceOrTagKeyArgument$Result<Structure> arg1)",
+			"fabric": "executeLocateStructure(ServerCommandSource source, RegistryPredicateArgumentType$RegistryPredicate<Structure> predicate)"
+		},
+		{
+			"forge": "locateBiome(CommandSourceStack arg0, ResourceOrTagArgument$Result<Biome> arg1)",
+			"fabric": "executeLocateBiome(ServerCommandSource source, RegistryEntryPredicateArgumentType$EntryPredicate<Biome> predicate)"
+		},
+		{
+			"forge": "locatePoi(CommandSourceStack arg0, ResourceOrTagArgument$Result<PoiType> arg1)",
+			"fabric": "executeLocatePoi(ServerCommandSource source, RegistryEntryPredicateArgumentType$EntryPredicate<PointOfInterestType> predicate)"
+		},
+		{
+			"forge": "getElementName(com.mojang.datafixers.util.Pair<BlockPos, ? extends Holder<?>> arg0)",
+			"fabric": "getKeyString(com.mojang.datafixers.util.Pair<BlockPos, ? extends RegistryEntry<?>> result)"
+		},
+		{
+			"forge": "showLocateResult(CommandSourceStack arg0, ResourceOrTagArgument$Result<?> arg1, BlockPos arg2, com.mojang.datafixers.util.Pair<BlockPos, ? extends Holder<?>> arg3, String arg4, boolean arg5, Duration arg6)",
+			"fabric": "sendCoordinates(ServerCommandSource source, RegistryEntryPredicateArgumentType$EntryPredicate<?> predicate, BlockPos currentPos, com.mojang.datafixers.util.Pair<BlockPos, ? extends RegistryEntry<?>> result, String successMessage, boolean includeY, Duration timeTaken)"
+		},
+		{
+			"forge": "showLocateResult(CommandSourceStack arg0, ResourceOrTagKeyArgument$Result<?> arg1, BlockPos arg2, com.mojang.datafixers.util.Pair<BlockPos, ? extends Holder<?>> arg3, String arg4, boolean arg5, Duration arg6)",
+			"fabric": "sendCoordinates(ServerCommandSource source, RegistryPredicateArgumentType$RegistryPredicate<?> structure, BlockPos currentPos, com.mojang.datafixers.util.Pair<BlockPos, ? extends RegistryEntry<?>> result, String successMessage, boolean includeY, Duration timeTaken)"
+		},
+		{
+			"forge": "showLocateResult(CommandSourceStack arg0, BlockPos arg1, com.mojang.datafixers.util.Pair<BlockPos, ? extends Holder<?>> arg2, String arg3, boolean arg4, String arg5, Duration arg6)",
+			"fabric": "sendCoordinates(ServerCommandSource source, BlockPos currentPos, com.mojang.datafixers.util.Pair<BlockPos, ? extends RegistryEntry<?>> result, String successMessage, boolean includeY, String entryString, Duration timeTaken)"
+		},
+		{
+			"forge": "dist(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getDistance(int x1, int y1, int x2, int y2)"
+		}
+	]
+}

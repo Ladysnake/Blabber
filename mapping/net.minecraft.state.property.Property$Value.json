@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.Property$Value",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.Property$Value",
+			"fabric": "net.minecraft.state.property.Property$Value"
+		},
+		{
+			"forge": "property",
+			"fabric": "property"
+		},
+		{
+			"forge": "property",
+			"fabric": "property"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "property()",
+			"fabric": "property()"
+		},
+		{
+			"forge": "property()",
+			"fabric": "property()"
+		},
+		{
+			"forge": "value()",
+			"fabric": "value()"
+		}
+	]
+}

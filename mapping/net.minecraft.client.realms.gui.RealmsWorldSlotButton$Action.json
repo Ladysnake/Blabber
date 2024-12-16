@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.realmsclient.gui.RealmsWorldSlotButton$Action",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.RealmsWorldSlotButton$Action",
+			"fabric": "net.minecraft.client.realms.gui.RealmsWorldSlotButton$Action"
+		},
+		{
+			"forge": "NOTHING",
+			"fabric": "NOTHING"
+		},
+		{
+			"forge": "NOTHING",
+			"fabric": "NOTHING"
+		},
+		{
+			"forge": "SWITCH_SLOT",
+			"fabric": "SWITCH_SLOT"
+		},
+		{
+			"forge": "JOIN",
+			"fabric": "JOIN"
+		}
+	]
+}

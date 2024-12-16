@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.commands.arguments.MessageArgument$Message",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.MessageArgument$Message",
+			"fabric": "net.minecraft.command.argument.MessageArgumentType$MessageFormat"
+		},
+		{
+			"forge": "text",
+			"fabric": "contents"
+		},
+		{
+			"forge": "text",
+			"fabric": "contents"
+		},
+		{
+			"forge": "parts",
+			"fabric": "selectors"
+		},
+		{
+			"forge": "getText()",
+			"fabric": "getContents()"
+		},
+		{
+			"forge": "getText()",
+			"fabric": "getContents()"
+		},
+		{
+			"forge": "getParts()",
+			"fabric": "getSelectors()"
+		},
+		{
+			"forge": "resolveComponent(CommandSourceStack arg0)",
+			"fabric": "format(ServerCommandSource source)"
+		},
+		{
+			"forge": "toComponent(CommandSourceStack arg0, boolean arg1)",
+			"fabric": "format(ServerCommandSource source, boolean canUseSelectors)"
+		},
+		{
+			"forge": "parseText(com.mojang.brigadier.StringReader arg0, boolean arg1)",
+			"fabric": "parse(com.mojang.brigadier.StringReader reader, boolean canUseSelectors)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.server.IntegratedPlayerList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.server.IntegratedPlayerList",
+			"fabric": "net.minecraft.server.integrated.IntegratedPlayerManager"
+		},
+		{
+			"forge": "playerData",
+			"fabric": "userData"
+		},
+		{
+			"forge": "playerData",
+			"fabric": "userData"
+		},
+		{
+			"forge": "save(ServerPlayer arg0)",
+			"fabric": "savePlayerData(ServerPlayerEntity arg0)"
+		},
+		{
+			"forge": "save(ServerPlayer arg0)",
+			"fabric": "savePlayerData(ServerPlayerEntity arg0)"
+		},
+		{
+			"forge": "canPlayerLogin(SocketAddress arg0, com.mojang.authlib.GameProfile arg1)",
+			"fabric": "checkCanJoin(SocketAddress arg0, com.mojang.authlib.GameProfile arg1)"
+		},
+		{
+			"forge": "getServer()",
+			"fabric": "getServer()"
+		},
+		{
+			"forge": "getSingleplayerData()",
+			"fabric": "getUserData()"
+		}
+	]
+}

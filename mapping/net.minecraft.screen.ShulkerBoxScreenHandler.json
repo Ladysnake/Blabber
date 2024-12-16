@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.inventory.ShulkerBoxMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ShulkerBoxMenu",
+			"fabric": "net.minecraft.screen.ShulkerBoxScreenHandler"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "container",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "removed(Player arg0)",
+			"fabric": "onClosed(PlayerEntity arg0)"
+		}
+	]
+}

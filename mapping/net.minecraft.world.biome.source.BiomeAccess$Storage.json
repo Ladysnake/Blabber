@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.biome.BiomeManager$NoiseBiomeSource",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.BiomeManager$NoiseBiomeSource",
+			"fabric": "net.minecraft.world.biome.source.BiomeAccess$Storage"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2)",
+			"fabric": "getBiomeForNoiseGen(int biomeX, int biomeY, int biomeZ)"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2)",
+			"fabric": "getBiomeForNoiseGen(int biomeX, int biomeY, int biomeZ)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.item.crafting.RecipeManager$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.RecipeManager$1",
+			"fabric": "net.minecraft.recipe.RecipeManager$1"
+		},
+		{
+			"forge": "lastRecipe",
+			"fabric": "id"
+		},
+		{
+			"forge": "lastRecipe",
+			"fabric": "id"
+		},
+		{
+			"forge": "getRecipeFor(C arg0, Level arg1)",
+			"fabric": "getFirstMatch(C arg0, World arg1)"
+		},
+		{
+			"forge": "getRecipeFor(C arg0, Level arg1)",
+			"fabric": "getFirstMatch(C arg0, World arg1)"
+		}
+	]
+}

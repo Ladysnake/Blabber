@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.LootItemFunction$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.LootItemFunction$Builder",
+			"fabric": "net.minecraft.loot.function.LootFunction$Builder"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

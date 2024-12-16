@@ -1,0 +1,25 @@
+{
+	"title": "com.mojang.realmsclient.util.task.CloseServerTask",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.util.task.CloseServerTask",
+			"fabric": "net.minecraft.client.realms.task.CloseServerTask"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "serverData"
+		},
+		{
+			"forge": "configureScreen",
+			"fabric": "configureScreen"
+		}
+	]
+}

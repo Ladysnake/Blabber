@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.world.level.block.LeavesBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.LeavesBlock",
+			"fabric": "net.minecraft.block.LeavesBlock"
+		},
+		{
+			"forge": "DECAY_DISTANCE",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "DECAY_DISTANCE",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "DISTANCE",
+			"fabric": "DISTANCE"
+		},
+		{
+			"forge": "PERSISTENT",
+			"fabric": "PERSISTENT"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "TICK_DELAY",
+			"fabric": "field_31112"
+		},
+		{
+			"forge": "getBlockSupportShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getSidesShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getBlockSupportShape(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getSidesShape(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "isRandomlyTicking(BlockState arg0)",
+			"fabric": "hasRandomTicks(BlockState arg0)"
+		},
+		{
+			"forge": "randomTick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "decaying(BlockState arg0)",
+			"fabric": "shouldDecay(BlockState state)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "getLightBlock(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getOpacity(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "updateDistance(BlockState arg0, LevelAccessor arg1, BlockPos arg2)",
+			"fabric": "updateDistanceFromLogs(BlockState state, WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "getDistanceAt(BlockState arg0)",
+			"fabric": "getDistanceFromLog(BlockState state)"
+		},
+		{
+			"forge": "getOptionalDistanceAt(BlockState arg0)",
+			"fabric": "getOptionalDistanceFromLog(BlockState state)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		}
+	]
+}

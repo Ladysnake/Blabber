@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.model.ArmorStandModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.ArmorStandModel",
+			"fabric": "net.minecraft.client.render.entity.model.ArmorStandEntityModel"
+		},
+		{
+			"forge": "RIGHT_BODY_STICK",
+			"fabric": "RIGHT_BODY_STICK"
+		},
+		{
+			"forge": "RIGHT_BODY_STICK",
+			"fabric": "RIGHT_BODY_STICK"
+		},
+		{
+			"forge": "LEFT_BODY_STICK",
+			"fabric": "LEFT_BODY_STICK"
+		},
+		{
+			"forge": "SHOULDER_STICK",
+			"fabric": "SHOULDER_STICK"
+		},
+		{
+			"forge": "BASE_PLATE",
+			"fabric": "BASE_PLATE"
+		},
+		{
+			"forge": "rightBodyStick",
+			"fabric": "rightBodyStick"
+		},
+		{
+			"forge": "leftBodyStick",
+			"fabric": "leftBodyStick"
+		},
+		{
+			"forge": "shoulderStick",
+			"fabric": "shoulderStick"
+		},
+		{
+			"forge": "basePlate",
+			"fabric": "basePlate"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "prepareMobModel(ArmorStand arg0, float arg1, float arg2, float arg3)",
+			"fabric": "animateModel(ArmorStandEntity arg0, float arg1, float arg2, float arg3)"
+		},
+		{
+			"forge": "setupAnim(ArmorStand arg0, float arg1, float arg2, float arg3, float arg4, float arg5)",
+			"fabric": "setAngles(ArmorStandEntity arg0, float arg1, float arg2, float arg3, float arg4, float arg5)"
+		},
+		{
+			"forge": "bodyParts()",
+			"fabric": "getBodyParts()"
+		},
+		{
+			"forge": "translateToHand(HumanoidArm arg0, PoseStack arg1)",
+			"fabric": "setArmAngle(Arm arg0, MatrixStack arg1)"
+		}
+	]
+}

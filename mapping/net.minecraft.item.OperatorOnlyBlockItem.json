@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.GameMasterBlockItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.GameMasterBlockItem",
+			"fabric": "net.minecraft.item.OperatorOnlyBlockItem"
+		},
+		{
+			"forge": "getPlacementState(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getPlacementState(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		}
+	]
+}

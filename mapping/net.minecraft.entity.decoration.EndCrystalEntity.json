@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.boss.enderdragon.EndCrystal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.enderdragon.EndCrystal",
+			"fabric": "net.minecraft.entity.decoration.EndCrystalEntity"
+		},
+		{
+			"forge": "DATA_BEAM_TARGET",
+			"fabric": "BEAM_TARGET"
+		},
+		{
+			"forge": "DATA_BEAM_TARGET",
+			"fabric": "BEAM_TARGET"
+		},
+		{
+			"forge": "DATA_SHOW_BOTTOM",
+			"fabric": "SHOW_BOTTOM"
+		},
+		{
+			"forge": "time",
+			"fabric": "endCrystalAge"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "isPickable()",
+			"fabric": "canHit()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "kill()",
+			"fabric": "kill()"
+		},
+		{
+			"forge": "onDestroyedBy(DamageSource arg0)",
+			"fabric": "crystalDestroyed(DamageSource source)"
+		},
+		{
+			"forge": "setBeamTarget(BlockPos arg0)",
+			"fabric": "setBeamTarget(BlockPos beamTarget)"
+		},
+		{
+			"forge": "getBeamTarget()",
+			"fabric": "getBeamTarget()"
+		},
+		{
+			"forge": "setShowBottom(boolean arg0)",
+			"fabric": "setShowBottom(boolean showBottom)"
+		},
+		{
+			"forge": "showsBottom()",
+			"fabric": "shouldShowBottom()"
+		},
+		{
+			"forge": "shouldRenderAtSqrDistance(double arg0)",
+			"fabric": "shouldRender(double arg0)"
+		},
+		{
+			"forge": "getPickResult()",
+			"fabric": "getPickBlockStack()"
+		}
+	]
+}

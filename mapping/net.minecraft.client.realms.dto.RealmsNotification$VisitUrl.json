@@ -1,0 +1,53 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsNotification$VisitUrl",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsNotification$VisitUrl",
+			"fabric": "net.minecraft.client.realms.dto.RealmsNotification$VisitUrl"
+		},
+		{
+			"forge": "URL",
+			"fabric": "URL_KEY"
+		},
+		{
+			"forge": "URL",
+			"fabric": "URL_KEY"
+		},
+		{
+			"forge": "BUTTON_TEXT",
+			"fabric": "BUTTON_TEXT_KEY"
+		},
+		{
+			"forge": "MESSAGE",
+			"fabric": "MESSAGE_KEY"
+		},
+		{
+			"forge": "url",
+			"fabric": "url"
+		},
+		{
+			"forge": "buttonText",
+			"fabric": "buttonText"
+		},
+		{
+			"forge": "message",
+			"fabric": "message"
+		},
+		{
+			"forge": "parse(RealmsNotification arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "fromJson(RealmsNotification parent, com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "parse(RealmsNotification arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "fromJson(RealmsNotification parent, com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "getMessage()",
+			"fabric": "getDefaultMessage()"
+		},
+		{
+			"forge": "buildOpenLinkButton(Screen arg0)",
+			"fabric": "createButton(Screen currentScreen)"
+		}
+	]
+}

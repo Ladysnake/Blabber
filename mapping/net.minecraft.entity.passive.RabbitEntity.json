@@ -1,0 +1,221 @@
+{
+	"title": "net.minecraft.world.entity.animal.Rabbit",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Rabbit",
+			"fabric": "net.minecraft.entity.passive.RabbitEntity"
+		},
+		{
+			"forge": "STROLL_SPEED_MOD",
+			"fabric": "field_30356"
+		},
+		{
+			"forge": "STROLL_SPEED_MOD",
+			"fabric": "field_30356"
+		},
+		{
+			"forge": "BREED_SPEED_MOD",
+			"fabric": "field_30357"
+		},
+		{
+			"forge": "FOLLOW_SPEED_MOD",
+			"fabric": "field_30358"
+		},
+		{
+			"forge": "FLEE_SPEED_MOD",
+			"fabric": "ESCAPE_DANGER_SPEED"
+		},
+		{
+			"forge": "ATTACK_SPEED_MOD",
+			"fabric": "MELEE_ATTACK_SPEED"
+		},
+		{
+			"forge": "DATA_TYPE_ID",
+			"fabric": "RABBIT_TYPE"
+		},
+		{
+			"forge": "KILLER_BUNNY",
+			"fabric": "KILLER_BUNNY"
+		},
+		{
+			"forge": "EVIL_ATTACK_POWER",
+			"fabric": "field_30368"
+		},
+		{
+			"forge": "EVIL_ARMOR_VALUE",
+			"fabric": "field_30369"
+		},
+		{
+			"forge": "MORE_CARROTS_DELAY",
+			"fabric": "field_30370"
+		},
+		{
+			"forge": "jumpTicks",
+			"fabric": "jumpTicks"
+		},
+		{
+			"forge": "jumpDuration",
+			"fabric": "jumpDuration"
+		},
+		{
+			"forge": "wasOnGround",
+			"fabric": "lastOnGround"
+		},
+		{
+			"forge": "jumpDelayTicks",
+			"fabric": "ticksUntilJump"
+		},
+		{
+			"forge": "moreCarrotTicks",
+			"fabric": "moreCarrotTicks"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "getJumpPower()",
+			"fabric": "getJumpVelocity()"
+		},
+		{
+			"forge": "jumpFromGround()",
+			"fabric": "jump()"
+		},
+		{
+			"forge": "getJumpCompletion(float arg0)",
+			"fabric": "getJumpProgress(float delta)"
+		},
+		{
+			"forge": "setSpeedModifier(double arg0)",
+			"fabric": "setSpeed(double speed)"
+		},
+		{
+			"forge": "setJumping(boolean arg0)",
+			"fabric": "setJumping(boolean arg0)"
+		},
+		{
+			"forge": "startJumping()",
+			"fabric": "startJump()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "canSpawnSprintParticle()",
+			"fabric": "shouldSpawnSprintingParticles()"
+		},
+		{
+			"forge": "facePoint(double arg0, double arg1)",
+			"fabric": "lookTowards(double x, double z)"
+		},
+		{
+			"forge": "enableJumpControl()",
+			"fabric": "enableJump()"
+		},
+		{
+			"forge": "disableJumpControl()",
+			"fabric": "disableJump()"
+		},
+		{
+			"forge": "setLandingDelay()",
+			"fabric": "doScheduleJump()"
+		},
+		{
+			"forge": "checkLandingDelay()",
+			"fabric": "scheduleJump()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createRabbitAttributes()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getJumpSound()",
+			"fabric": "getJumpSound()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "doHurtTarget(Entity arg0)",
+			"fabric": "tryAttack(Entity arg0)"
+		},
+		{
+			"forge": "getSoundSource()",
+			"fabric": "getSoundCategory()"
+		},
+		{
+			"forge": "isTemptingItem(ItemStack arg0)",
+			"fabric": "isTempting(ItemStack stack)"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "isFood(ItemStack arg0)",
+			"fabric": "isBreedingItem(ItemStack arg0)"
+		},
+		{
+			"forge": "getVariant()",
+			"fabric": "getVariant()"
+		},
+		{
+			"forge": "setVariant(Rabbit$Variant arg0)",
+			"fabric": "setVariant(RabbitEntity$RabbitType arg0)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "getRandomRabbitVariant(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "getTypeFromPos(WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "checkRabbitSpawnRules(EntityType<Rabbit> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<RabbitEntity> entity, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "wantsMoreFood()",
+			"fabric": "wantsCarrots()"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "getLeashOffset()",
+			"fabric": "getLeashOffset()"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.util.FastColor$ABGR32",
+	"items": [
+		{
+			"forge": "net.minecraft.util.FastColor$ABGR32",
+			"fabric": "net.minecraft.util.math.ColorHelper$Abgr"
+		},
+		{
+			"forge": "alpha(int arg0)",
+			"fabric": "getAlpha(int abgr)"
+		},
+		{
+			"forge": "alpha(int arg0)",
+			"fabric": "getAlpha(int abgr)"
+		},
+		{
+			"forge": "red(int arg0)",
+			"fabric": "getRed(int abgr)"
+		},
+		{
+			"forge": "green(int arg0)",
+			"fabric": "getGreen(int abgr)"
+		},
+		{
+			"forge": "blue(int arg0)",
+			"fabric": "getBlue(int abgr)"
+		},
+		{
+			"forge": "transparent(int arg0)",
+			"fabric": "getBgr(int abgr)"
+		},
+		{
+			"forge": "opaque(int arg0)",
+			"fabric": "toOpaque(int abgr)"
+		},
+		{
+			"forge": "color(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "getAbgr(int a, int b, int g, int r)"
+		},
+		{
+			"forge": "color(int arg0, int arg1)",
+			"fabric": "withAlpha(int alpha, int bgr)"
+		}
+	]
+}

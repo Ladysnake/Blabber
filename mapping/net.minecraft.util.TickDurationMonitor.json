@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.util.profiling.SingleTickProfiler",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.SingleTickProfiler",
+			"fabric": "net.minecraft.util.TickDurationMonitor"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "realTime",
+			"fabric": "timeGetter"
+		},
+		{
+			"forge": "saveThreshold",
+			"fabric": "overtime"
+		},
+		{
+			"forge": "tick",
+			"fabric": "tickCount"
+		},
+		{
+			"forge": "location",
+			"fabric": "tickResultsDirectory"
+		},
+		{
+			"forge": "profiler",
+			"fabric": "profiler"
+		},
+		{
+			"forge": "startTick()",
+			"fabric": "nextProfiler()"
+		},
+		{
+			"forge": "startTick()",
+			"fabric": "nextProfiler()"
+		},
+		{
+			"forge": "endTick()",
+			"fabric": "endTick()"
+		},
+		{
+			"forge": "createTickProfiler(String arg0)",
+			"fabric": "create(String name)"
+		},
+		{
+			"forge": "decorateFiller(ProfilerFiller arg0, SingleTickProfiler arg1)",
+			"fabric": "tickProfiler(Profiler profiler, TickDurationMonitor monitor)"
+		}
+	]
+}

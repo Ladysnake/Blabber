@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.resources.metadata.animation.VillagerMetadataSectionSerializer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.metadata.animation.VillagerMetadataSectionSerializer",
+			"fabric": "net.minecraft.client.render.entity.feature.VillagerResourceMetadataReader"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "getMetadataSectionName()",
+			"fabric": "getKey()"
+		}
+	]
+}

@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.AbstractFurnaceScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.AbstractFurnaceScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.AbstractFurnaceScreen"
+		},
+		{
+			"forge": "RECIPE_BUTTON_LOCATION",
+			"fabric": "RECIPE_BUTTON_TEXTURE"
+		},
+		{
+			"forge": "RECIPE_BUTTON_LOCATION",
+			"fabric": "RECIPE_BUTTON_TEXTURE"
+		},
+		{
+			"forge": "recipeBookComponent",
+			"fabric": "recipeBook"
+		},
+		{
+			"forge": "widthTooNarrow",
+			"fabric": "narrow"
+		},
+		{
+			"forge": "texture",
+			"fabric": "background"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "containerTick()",
+			"fabric": "handledScreenTick()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderBg(GuiGraphics arg0, float arg1, int arg2, int arg3)",
+			"fabric": "drawBackground(DrawContext arg0, float arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "slotClicked(Slot arg0, int arg1, int arg2, ClickType arg3)",
+			"fabric": "onMouseClick(Slot arg0, int arg1, int arg2, SlotActionType arg3)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "hasClickedOutside(double arg0, double arg1, int arg2, int arg3, int arg4)",
+			"fabric": "isClickOutsideBounds(double arg0, double arg1, int arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "charTyped(char arg0, int arg1)",
+			"fabric": "charTyped(char arg0, int arg1)"
+		},
+		{
+			"forge": "recipesUpdated()",
+			"fabric": "refreshRecipeBook()"
+		},
+		{
+			"forge": "getRecipeBookComponent()",
+			"fabric": "getRecipeBookWidget()"
+		}
+	]
+}

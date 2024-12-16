@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.DropExperienceBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.DropExperienceBlock",
+			"fabric": "net.minecraft.block.ExperienceDroppingBlock"
+		},
+		{
+			"forge": "xpRange",
+			"fabric": "experienceDropped"
+		},
+		{
+			"forge": "xpRange",
+			"fabric": "experienceDropped"
+		},
+		{
+			"forge": "spawnAfterBreak(BlockState arg0, ServerLevel arg1, BlockPos arg2, ItemStack arg3, boolean arg4)",
+			"fabric": "onStacksDropped(BlockState arg0, ServerWorld arg1, BlockPos arg2, ItemStack arg3, boolean arg4)"
+		},
+		{
+			"forge": "spawnAfterBreak(BlockState arg0, ServerLevel arg1, BlockPos arg2, ItemStack arg3, boolean arg4)",
+			"fabric": "onStacksDropped(BlockState arg0, ServerWorld arg1, BlockPos arg2, ItemStack arg3, boolean arg4)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.ArrowItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ArrowItem",
+			"fabric": "net.minecraft.item.ArrowItem"
+		},
+		{
+			"forge": "createArrow(Level arg0, ItemStack arg1, LivingEntity arg2)",
+			"fabric": "createArrow(World world, ItemStack stack, LivingEntity shooter)"
+		},
+		{
+			"forge": "createArrow(Level arg0, ItemStack arg1, LivingEntity arg2)",
+			"fabric": "createArrow(World world, ItemStack stack, LivingEntity shooter)"
+		}
+	]
+}

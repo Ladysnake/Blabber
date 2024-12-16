@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.schemas.V1451_6",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.schemas.V1451_6",
+			"fabric": "net.minecraft.datafixer.schema.Schema1451v6"
+		},
+		{
+			"forge": "SPECIAL_OBJECTIVE_MARKER",
+			"fabric": "SPECIAL_TYPE"
+		},
+		{
+			"forge": "SPECIAL_OBJECTIVE_MARKER",
+			"fabric": "SPECIAL_TYPE"
+		},
+		{
+			"forge": "UNPACK_OBJECTIVE_ID",
+			"fabric": "field_34014"
+		},
+		{
+			"forge": "REPACK_OBJECTIVE_ID",
+			"fabric": "field_34015"
+		},
+		{
+			"forge": "registerTypes(com.mojang.datafixers.schemas.Schema arg0, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg1, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg2)",
+			"fabric": "registerTypes(com.mojang.datafixers.schemas.Schema schema, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> entityTypes, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> blockEntityTypes)"
+		},
+		{
+			"forge": "registerTypes(com.mojang.datafixers.schemas.Schema arg0, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg1, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> arg2)",
+			"fabric": "registerTypes(com.mojang.datafixers.schemas.Schema schema, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> entityTypes, Map<String, Supplier<com.mojang.datafixers.types.templates.TypeTemplate>> blockEntityTypes)"
+		},
+		{
+			"forge": "createCriterionTypes(com.mojang.datafixers.schemas.Schema arg0)",
+			"fabric": "method_37389(com.mojang.datafixers.schemas.Schema schema)"
+		}
+	]
+}

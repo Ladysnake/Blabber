@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.core.Direction$Axis$1",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Direction$Axis$1",
+			"fabric": "net.minecraft.util.math.Direction$Axis$1"
+		},
+		{
+			"forge": "choose(int arg0, int arg1, int arg2)",
+			"fabric": "choose(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "choose(int arg0, int arg1, int arg2)",
+			"fabric": "choose(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "choose(double arg0, double arg1, double arg2)",
+			"fabric": "choose(double arg0, double arg1, double arg2)"
+		}
+	]
+}

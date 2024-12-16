@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.world.level.PathNavigationRegion",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.PathNavigationRegion",
+			"fabric": "net.minecraft.world.chunk.ChunkCache"
+		},
+		{
+			"forge": "centerX",
+			"fabric": "minX"
+		},
+		{
+			"forge": "centerX",
+			"fabric": "minX"
+		},
+		{
+			"forge": "centerZ",
+			"fabric": "minZ"
+		},
+		{
+			"forge": "chunks",
+			"fabric": "chunks"
+		},
+		{
+			"forge": "allEmpty",
+			"fabric": "empty"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "plains",
+			"fabric": "plainsEntryGetter"
+		},
+		{
+			"forge": "getChunk(BlockPos arg0)",
+			"fabric": "getChunk(BlockPos pos)"
+		},
+		{
+			"forge": "getChunk(BlockPos arg0)",
+			"fabric": "getChunk(BlockPos pos)"
+		},
+		{
+			"forge": "getChunk(int arg0, int arg1)",
+			"fabric": "getChunk(int chunkX, int chunkZ)"
+		},
+		{
+			"forge": "getWorldBorder()",
+			"fabric": "getWorldBorder()"
+		},
+		{
+			"forge": "getChunkForCollisions(int arg0, int arg1)",
+			"fabric": "getChunkAsView(int arg0, int arg1)"
+		},
+		{
+			"forge": "getEntityCollisions(Entity arg0, AABB arg1)",
+			"fabric": "getEntityCollisions(Entity arg0, Box arg1)"
+		},
+		{
+			"forge": "getBlockEntity(BlockPos arg0)",
+			"fabric": "getBlockEntity(BlockPos arg0)"
+		},
+		{
+			"forge": "getBlockState(BlockPos arg0)",
+			"fabric": "getBlockState(BlockPos arg0)"
+		},
+		{
+			"forge": "getFluidState(BlockPos arg0)",
+			"fabric": "getFluidState(BlockPos arg0)"
+		},
+		{
+			"forge": "getMinBuildHeight()",
+			"fabric": "getBottomY()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getProfiler()",
+			"fabric": "getProfiler()"
+		}
+	]
+}

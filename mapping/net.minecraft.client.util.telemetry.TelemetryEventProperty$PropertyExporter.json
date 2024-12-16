@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.telemetry.TelemetryProperty$Exporter",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.TelemetryProperty$Exporter",
+			"fabric": "net.minecraft.client.util.telemetry.TelemetryEventProperty$PropertyExporter"
+		},
+		{
+			"forge": "apply(com.mojang.authlib.minecraft.TelemetryPropertyContainer arg0, String arg1, T arg2)",
+			"fabric": "apply(com.mojang.authlib.minecraft.TelemetryPropertyContainer container, String key, T value)"
+		},
+		{
+			"forge": "apply(com.mojang.authlib.minecraft.TelemetryPropertyContainer arg0, String arg1, T arg2)",
+			"fabric": "apply(com.mojang.authlib.minecraft.TelemetryPropertyContainer container, String key, T value)"
+		}
+	]
+}

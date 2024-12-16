@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.advancements.critereon.BeeNestDestroyedTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.BeeNestDestroyedTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.BeeNestDestroyedCriterion$Conditions"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "block",
+			"fabric": "block"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "numBees",
+			"fabric": "beeCount"
+		},
+		{
+			"forge": "destroyedBeeNest(Block arg0, ItemPredicate$Builder arg1, MinMaxBounds$Ints arg2)",
+			"fabric": "create(Block block, ItemPredicate$Builder itemPredicateBuilder, NumberRange$IntRange beeCountRange)"
+		},
+		{
+			"forge": "destroyedBeeNest(Block arg0, ItemPredicate$Builder arg1, MinMaxBounds$Ints arg2)",
+			"fabric": "create(Block block, ItemPredicate$Builder itemPredicateBuilder, NumberRange$IntRange beeCountRange)"
+		},
+		{
+			"forge": "matches(BlockState arg0, ItemStack arg1, int arg2)",
+			"fabric": "test(BlockState state, ItemStack stack, int count)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

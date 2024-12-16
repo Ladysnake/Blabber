@@ -1,0 +1,333 @@
+{
+	"title": "net.minecraft.client.gui.components.AbstractSelectionList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.AbstractSelectionList",
+			"fabric": "net.minecraft.client.gui.widget.EntryListWidget"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "itemHeight",
+			"fabric": "itemHeight"
+		},
+		{
+			"forge": "children",
+			"fabric": "children"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "y0",
+			"fabric": "top"
+		},
+		{
+			"forge": "y1",
+			"fabric": "bottom"
+		},
+		{
+			"forge": "x1",
+			"fabric": "right"
+		},
+		{
+			"forge": "x0",
+			"fabric": "left"
+		},
+		{
+			"forge": "centerListVertically",
+			"fabric": "centerListVertically"
+		},
+		{
+			"forge": "scrollAmount",
+			"fabric": "scrollAmount"
+		},
+		{
+			"forge": "renderSelection",
+			"fabric": "renderSelection"
+		},
+		{
+			"forge": "renderHeader",
+			"fabric": "renderHeader"
+		},
+		{
+			"forge": "headerHeight",
+			"fabric": "headerHeight"
+		},
+		{
+			"forge": "scrolling",
+			"fabric": "scrolling"
+		},
+		{
+			"forge": "selected",
+			"fabric": "selected"
+		},
+		{
+			"forge": "renderBackground",
+			"fabric": "renderBackground"
+		},
+		{
+			"forge": "renderTopAndBottom",
+			"fabric": "renderHorizontalShadows"
+		},
+		{
+			"forge": "hovered",
+			"fabric": "hoveredEntry"
+		},
+		{
+			"forge": "setRenderSelection(boolean arg0)",
+			"fabric": "setRenderSelection(boolean renderSelection)"
+		},
+		{
+			"forge": "setRenderSelection(boolean arg0)",
+			"fabric": "setRenderSelection(boolean renderSelection)"
+		},
+		{
+			"forge": "setRenderHeader(boolean arg0, int arg1)",
+			"fabric": "setRenderHeader(boolean renderHeader, int headerHeight)"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		},
+		{
+			"forge": "getSelected()",
+			"fabric": "getSelectedOrNull()"
+		},
+		{
+			"forge": "setSelected(E arg0)",
+			"fabric": "setSelected(E entry)"
+		},
+		{
+			"forge": "getFirstElement()",
+			"fabric": "getFirst()"
+		},
+		{
+			"forge": "setRenderBackground(boolean arg0)",
+			"fabric": "setRenderBackground(boolean renderBackground)"
+		},
+		{
+			"forge": "setRenderTopAndBottom(boolean arg0)",
+			"fabric": "setRenderHorizontalShadows(boolean renderHorizontalShadows)"
+		},
+		{
+			"forge": "getFocused()",
+			"fabric": "getFocused()"
+		},
+		{
+			"forge": "children()",
+			"fabric": "children()"
+		},
+		{
+			"forge": "clearEntries()",
+			"fabric": "clearEntries()"
+		},
+		{
+			"forge": "replaceEntries(Collection<E> arg0)",
+			"fabric": "replaceEntries(Collection<E> newEntries)"
+		},
+		{
+			"forge": "getEntry(int arg0)",
+			"fabric": "getEntry(int index)"
+		},
+		{
+			"forge": "addEntry(E arg0)",
+			"fabric": "addEntry(E entry)"
+		},
+		{
+			"forge": "addEntryToTop(E arg0)",
+			"fabric": "addEntryToTop(E entry)"
+		},
+		{
+			"forge": "removeEntryFromTop(E arg0)",
+			"fabric": "removeEntryWithoutScrolling(E entry)"
+		},
+		{
+			"forge": "getItemCount()",
+			"fabric": "getEntryCount()"
+		},
+		{
+			"forge": "isSelectedItem(int arg0)",
+			"fabric": "isSelectedEntry(int index)"
+		},
+		{
+			"forge": "getEntryAtPosition(double arg0, double arg1)",
+			"fabric": "getEntryAtPosition(double x, double y)"
+		},
+		{
+			"forge": "updateSize(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "updateSize(int width, int height, int top, int bottom)"
+		},
+		{
+			"forge": "setLeftPos(int arg0)",
+			"fabric": "setLeftPos(int left)"
+		},
+		{
+			"forge": "getMaxPosition()",
+			"fabric": "getMaxPosition()"
+		},
+		{
+			"forge": "clickedHeader(int arg0, int arg1)",
+			"fabric": "clickedHeader(int x, int y)"
+		},
+		{
+			"forge": "renderHeader(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "renderHeader(DrawContext context, int x, int y)"
+		},
+		{
+			"forge": "renderBackground(GuiGraphics arg0)",
+			"fabric": "renderBackground(DrawContext context)"
+		},
+		{
+			"forge": "renderDecorations(GuiGraphics arg0, int arg1, int arg2)",
+			"fabric": "renderDecorations(DrawContext context, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "enableScissor(GuiGraphics arg0)",
+			"fabric": "enableScissor(DrawContext context)"
+		},
+		{
+			"forge": "centerScrollOn(E arg0)",
+			"fabric": "centerScrollOn(E entry)"
+		},
+		{
+			"forge": "ensureVisible(E arg0)",
+			"fabric": "ensureVisible(E entry)"
+		},
+		{
+			"forge": "scroll(int arg0)",
+			"fabric": "scroll(int amount)"
+		},
+		{
+			"forge": "getScrollAmount()",
+			"fabric": "getScrollAmount()"
+		},
+		{
+			"forge": "setScrollAmount(double arg0)",
+			"fabric": "setScrollAmount(double amount)"
+		},
+		{
+			"forge": "getMaxScroll()",
+			"fabric": "getMaxScroll()"
+		},
+		{
+			"forge": "getScrollBottom()",
+			"fabric": "method_35721()"
+		},
+		{
+			"forge": "updateScrollingState(double arg0, double arg1, int arg2)",
+			"fabric": "updateScrollingState(double mouseX, double mouseY, int button)"
+		},
+		{
+			"forge": "getScrollbarPosition()",
+			"fabric": "getScrollbarPositionX()"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseReleased(double arg0, double arg1, int arg2)",
+			"fabric": "mouseReleased(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)",
+			"fabric": "mouseDragged(double arg0, double arg1, int arg2, double arg3, double arg4)"
+		},
+		{
+			"forge": "mouseScrolled(double arg0, double arg1, double arg2)",
+			"fabric": "mouseScrolled(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "setFocused(GuiEventListener arg0)",
+			"fabric": "setFocused(Element arg0)"
+		},
+		{
+			"forge": "nextEntry(ScreenDirection arg0)",
+			"fabric": "getNeighboringEntry(NavigationDirection direction)"
+		},
+		{
+			"forge": "nextEntry(ScreenDirection arg0, Predicate<E> arg1)",
+			"fabric": "getNeighboringEntry(NavigationDirection direction, Predicate<E> predicate)"
+		},
+		{
+			"forge": "nextEntry(ScreenDirection arg0, Predicate<E> arg1, E arg2)",
+			"fabric": "getNeighboringEntry(NavigationDirection direction, Predicate<E> predicate, E selected)"
+		},
+		{
+			"forge": "isMouseOver(double arg0, double arg1)",
+			"fabric": "isMouseOver(double arg0, double arg1)"
+		},
+		{
+			"forge": "renderList(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderList(DrawContext context, int mouseX, int mouseY, float delta)"
+		},
+		{
+			"forge": "renderItem(GuiGraphics arg0, int arg1, int arg2, float arg3, int arg4, int arg5, int arg6, int arg7, int arg8)",
+			"fabric": "renderEntry(DrawContext context, int mouseX, int mouseY, float delta, int index, int x, int y, int entryWidth, int entryHeight)"
+		},
+		{
+			"forge": "renderSelection(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "drawSelectionHighlight(DrawContext context, int y, int entryWidth, int entryHeight, int borderColor, int fillColor)"
+		},
+		{
+			"forge": "getRowLeft()",
+			"fabric": "getRowLeft()"
+		},
+		{
+			"forge": "getRowRight()",
+			"fabric": "getRowRight()"
+		},
+		{
+			"forge": "getRowTop(int arg0)",
+			"fabric": "getRowTop(int index)"
+		},
+		{
+			"forge": "getRowBottom(int arg0)",
+			"fabric": "getRowBottom(int index)"
+		},
+		{
+			"forge": "narrationPriority()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "remove(int arg0)",
+			"fabric": "remove(int index)"
+		},
+		{
+			"forge": "removeEntry(E arg0)",
+			"fabric": "removeEntry(E entry)"
+		},
+		{
+			"forge": "getHovered()",
+			"fabric": "getHoveredEntry()"
+		},
+		{
+			"forge": "bindEntryToSelf(AbstractSelectionList$Entry<E> arg0)",
+			"fabric": "setEntryParentList(EntryListWidget$Entry<E> entry)"
+		},
+		{
+			"forge": "narrateListElementPosition(NarrationElementOutput arg0, E arg1)",
+			"fabric": "appendNarrations(NarrationMessageBuilder builder, E entry)"
+		},
+		{
+			"forge": "getRectangle()",
+			"fabric": "getNavigationFocus()"
+		}
+	]
+}

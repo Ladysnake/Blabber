@@ -1,0 +1,37 @@
+{
+	"title": "com.mojang.blaze3d.font.SpaceProvider$Definition",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.font.SpaceProvider$Definition",
+			"fabric": "net.minecraft.client.font.SpaceFont$Loader"
+		},
+		{
+			"forge": "advances",
+			"fabric": "advances"
+		},
+		{
+			"forge": "advances",
+			"fabric": "advances"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "unpack()",
+			"fabric": "build()"
+		},
+		{
+			"forge": "advances()",
+			"fabric": "advances()"
+		}
+	]
+}

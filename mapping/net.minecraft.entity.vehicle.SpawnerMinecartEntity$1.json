@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.MinecartSpawner$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.MinecartSpawner$1",
+			"fabric": "net.minecraft.entity.vehicle.SpawnerMinecartEntity$1"
+		},
+		{
+			"forge": "broadcastEvent(Level arg0, BlockPos arg1, int arg2)",
+			"fabric": "sendStatus(World arg0, BlockPos arg1, int arg2)"
+		},
+		{
+			"forge": "broadcastEvent(Level arg0, BlockPos arg1, int arg2)",
+			"fabric": "sendStatus(World arg0, BlockPos arg1, int arg2)"
+		}
+	]
+}

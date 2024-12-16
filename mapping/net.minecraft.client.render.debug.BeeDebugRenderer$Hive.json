@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.debug.BeeDebugRenderer$HiveInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.BeeDebugRenderer$HiveInfo",
+			"fabric": "net.minecraft.client.render.debug.BeeDebugRenderer$Hive"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "hiveType",
+			"fabric": "label"
+		},
+		{
+			"forge": "occupantCount",
+			"fabric": "beeCount"
+		},
+		{
+			"forge": "honeyLevel",
+			"fabric": "honeyLevel"
+		},
+		{
+			"forge": "sedated",
+			"fabric": "sedated"
+		},
+		{
+			"forge": "lastSeen",
+			"fabric": "time"
+		}
+	]
+}

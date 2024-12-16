@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.advancements.AdvancementVisibilityEvaluator$VisibilityRule",
+	"items": [
+		{
+			"forge": "net.minecraft.server.advancements.AdvancementVisibilityEvaluator$VisibilityRule",
+			"fabric": "net.minecraft.advancement.AdvancementDisplays$Status"
+		},
+		{
+			"forge": "SHOW",
+			"fabric": "SHOW"
+		},
+		{
+			"forge": "SHOW",
+			"fabric": "SHOW"
+		},
+		{
+			"forge": "HIDE",
+			"fabric": "HIDE"
+		},
+		{
+			"forge": "NO_CHANGE",
+			"fabric": "NO_CHANGE"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.chunk.LevelChunk$PostLoadProcessor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.LevelChunk$PostLoadProcessor",
+			"fabric": "net.minecraft.world.chunk.WorldChunk$EntityLoader"
+		},
+		{
+			"forge": "run(LevelChunk arg0)",
+			"fabric": "run(WorldChunk chunk)"
+		},
+		{
+			"forge": "run(LevelChunk arg0)",
+			"fabric": "run(WorldChunk chunk)"
+		}
+	]
+}

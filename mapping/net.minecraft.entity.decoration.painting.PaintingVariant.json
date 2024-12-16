@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.decoration.PaintingVariant",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.decoration.PaintingVariant",
+			"fabric": "net.minecraft.entity.decoration.painting.PaintingVariant"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.gui.components.CommonButtons",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.CommonButtons",
+			"fabric": "net.minecraft.client.gui.screen.AccessibilityOnboardingButtons"
+		},
+		{
+			"forge": "languageTextAndImage(Button$OnPress arg0)",
+			"fabric": "createLanguageButton(ButtonWidget$PressAction action)"
+		},
+		{
+			"forge": "languageTextAndImage(Button$OnPress arg0)",
+			"fabric": "createLanguageButton(ButtonWidget$PressAction action)"
+		},
+		{
+			"forge": "accessibilityTextAndImage(Button$OnPress arg0)",
+			"fabric": "createAccessibilityButton(ButtonWidget$PressAction action)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.data.tags.GameEventTagsProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.tags.GameEventTagsProvider",
+			"fabric": "net.minecraft.data.server.tag.vanilla.VanillaGameEventTagProvider"
+		},
+		{
+			"forge": "VIBRATIONS_EXCEPT_FLAP",
+			"fabric": "BASIC_GAME_EVENTS"
+		},
+		{
+			"forge": "VIBRATIONS_EXCEPT_FLAP",
+			"fabric": "BASIC_GAME_EVENTS"
+		},
+		{
+			"forge": "addTags(HolderLookup$Provider arg0)",
+			"fabric": "configure(RegistryWrapper$WrapperLookup arg0)"
+		},
+		{
+			"forge": "addTags(HolderLookup$Provider arg0)",
+			"fabric": "configure(RegistryWrapper$WrapperLookup arg0)"
+		}
+	]
+}

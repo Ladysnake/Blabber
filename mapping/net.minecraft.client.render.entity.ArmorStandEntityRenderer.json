@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.entity.ArmorStandRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.ArmorStandRenderer",
+			"fabric": "net.minecraft.client.render.entity.ArmorStandEntityRenderer"
+		},
+		{
+			"forge": "DEFAULT_SKIN_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "DEFAULT_SKIN_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(ArmorStand arg0)",
+			"fabric": "getTexture(ArmorStandEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(ArmorStand arg0)",
+			"fabric": "getTexture(ArmorStandEntity arg0)"
+		},
+		{
+			"forge": "setupRotations(ArmorStand arg0, PoseStack arg1, float arg2, float arg3, float arg4)",
+			"fabric": "setupTransforms(ArmorStandEntity arg0, MatrixStack arg1, float arg2, float arg3, float arg4)"
+		},
+		{
+			"forge": "shouldShowName(ArmorStand arg0)",
+			"fabric": "hasLabel(ArmorStandEntity arg0)"
+		},
+		{
+			"forge": "getRenderType(ArmorStand arg0, boolean arg1, boolean arg2, boolean arg3)",
+			"fabric": "getRenderLayer(ArmorStandEntity arg0, boolean arg1, boolean arg2, boolean arg3)"
+		}
+	]
+}

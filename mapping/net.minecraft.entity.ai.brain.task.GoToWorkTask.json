@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.AssignProfessionFromJobSite",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.AssignProfessionFromJobSite",
+			"fabric": "net.minecraft.entity.ai.brain.task.GoToWorkTask"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		}
+	]
+}

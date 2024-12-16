@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.client.multiplayer.chat.report.AbuseReportSender$Services",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.chat.report.AbuseReportSender$Services",
+			"fabric": "net.minecraft.client.report.AbuseReportSender$Impl"
+		},
+		{
+			"forge": "environment",
+			"fabric": "environment"
+		},
+		{
+			"forge": "environment",
+			"fabric": "environment"
+		},
+		{
+			"forge": "userApiService",
+			"fabric": "userApiService"
+		},
+		{
+			"forge": "SERVICE_UNAVAILABLE_TEXT",
+			"fabric": "SERVICE_UNAVAILABLE_ERROR_TEXT"
+		},
+		{
+			"forge": "HTTP_ERROR_TEXT",
+			"fabric": "HTTP_ERROR_TEXT"
+		},
+		{
+			"forge": "JSON_ERROR_TEXT",
+			"fabric": "JSON_ERROR_TEXT"
+		},
+		{
+			"forge": "send(UUID arg0, com.mojang.authlib.minecraft.report.AbuseReport arg1)",
+			"fabric": "send(UUID arg0, com.mojang.authlib.minecraft.report.AbuseReport arg1)"
+		},
+		{
+			"forge": "send(UUID arg0, com.mojang.authlib.minecraft.report.AbuseReport arg1)",
+			"fabric": "send(UUID arg0, com.mojang.authlib.minecraft.report.AbuseReport arg1)"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "canSendReports()"
+		},
+		{
+			"forge": "getHttpErrorDescription(com.mojang.authlib.exceptions.MinecraftClientHttpException arg0)",
+			"fabric": "getErrorText(com.mojang.authlib.exceptions.MinecraftClientHttpException exception)"
+		},
+		{
+			"forge": "getErrorDescription(com.mojang.authlib.exceptions.MinecraftClientException arg0)",
+			"fabric": "getErrorText(com.mojang.authlib.exceptions.MinecraftClientException exception)"
+		},
+		{
+			"forge": "reportLimits()",
+			"fabric": "getLimits()"
+		},
+		{
+			"forge": "environment()",
+			"fabric": "environment()"
+		},
+		{
+			"forge": "userApiService()",
+			"fabric": "userApiService()"
+		}
+	]
+}

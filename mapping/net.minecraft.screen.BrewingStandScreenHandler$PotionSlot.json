@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.inventory.BrewingStandMenu$PotionSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.BrewingStandMenu$PotionSlot",
+			"fabric": "net.minecraft.screen.BrewingStandScreenHandler$PotionSlot"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxItemCount()"
+		},
+		{
+			"forge": "onTake(Player arg0, ItemStack arg1)",
+			"fabric": "onTakeItem(PlayerEntity arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "mayPlaceItem(ItemStack arg0)",
+			"fabric": "matches(ItemStack stack)"
+		}
+	]
+}

@@ -1,0 +1,265 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Noises",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Noises",
+			"fabric": "net.minecraft.world.gen.noise.NoiseParametersKeys"
+		},
+		{
+			"forge": "TEMPERATURE",
+			"fabric": "TEMPERATURE"
+		},
+		{
+			"forge": "TEMPERATURE",
+			"fabric": "TEMPERATURE"
+		},
+		{
+			"forge": "VEGETATION",
+			"fabric": "VEGETATION"
+		},
+		{
+			"forge": "CONTINENTALNESS",
+			"fabric": "CONTINENTALNESS"
+		},
+		{
+			"forge": "EROSION",
+			"fabric": "EROSION"
+		},
+		{
+			"forge": "TEMPERATURE_LARGE",
+			"fabric": "TEMPERATURE_LARGE"
+		},
+		{
+			"forge": "VEGETATION_LARGE",
+			"fabric": "VEGETATION_LARGE"
+		},
+		{
+			"forge": "CONTINENTALNESS_LARGE",
+			"fabric": "CONTINENTALNESS_LARGE"
+		},
+		{
+			"forge": "EROSION_LARGE",
+			"fabric": "EROSION_LARGE"
+		},
+		{
+			"forge": "RIDGE",
+			"fabric": "RIDGE"
+		},
+		{
+			"forge": "SHIFT",
+			"fabric": "OFFSET"
+		},
+		{
+			"forge": "AQUIFER_BARRIER",
+			"fabric": "AQUIFER_BARRIER"
+		},
+		{
+			"forge": "AQUIFER_FLUID_LEVEL_FLOODEDNESS",
+			"fabric": "AQUIFER_FLUID_LEVEL_FLOODEDNESS"
+		},
+		{
+			"forge": "AQUIFER_LAVA",
+			"fabric": "AQUIFER_LAVA"
+		},
+		{
+			"forge": "AQUIFER_FLUID_LEVEL_SPREAD",
+			"fabric": "AQUIFER_FLUID_LEVEL_SPREAD"
+		},
+		{
+			"forge": "PILLAR",
+			"fabric": "PILLAR"
+		},
+		{
+			"forge": "PILLAR_RARENESS",
+			"fabric": "PILLAR_RARENESS"
+		},
+		{
+			"forge": "PILLAR_THICKNESS",
+			"fabric": "PILLAR_THICKNESS"
+		},
+		{
+			"forge": "SPAGHETTI_2D",
+			"fabric": "SPAGHETTI_2D"
+		},
+		{
+			"forge": "SPAGHETTI_2D_ELEVATION",
+			"fabric": "SPAGHETTI_2D_ELEVATION"
+		},
+		{
+			"forge": "SPAGHETTI_2D_MODULATOR",
+			"fabric": "SPAGHETTI_2D_MODULATOR"
+		},
+		{
+			"forge": "SPAGHETTI_2D_THICKNESS",
+			"fabric": "SPAGHETTI_2D_THICKNESS"
+		},
+		{
+			"forge": "SPAGHETTI_3D_1",
+			"fabric": "SPAGHETTI_3D_1"
+		},
+		{
+			"forge": "SPAGHETTI_3D_2",
+			"fabric": "SPAGHETTI_3D_2"
+		},
+		{
+			"forge": "SPAGHETTI_3D_RARITY",
+			"fabric": "SPAGHETTI_3D_RARITY"
+		},
+		{
+			"forge": "SPAGHETTI_3D_THICKNESS",
+			"fabric": "SPAGHETTI_3D_THICKNESS"
+		},
+		{
+			"forge": "SPAGHETTI_ROUGHNESS",
+			"fabric": "SPAGHETTI_ROUGHNESS"
+		},
+		{
+			"forge": "SPAGHETTI_ROUGHNESS_MODULATOR",
+			"fabric": "SPAGHETTI_ROUGHNESS_MODULATOR"
+		},
+		{
+			"forge": "CAVE_ENTRANCE",
+			"fabric": "CAVE_ENTRANCE"
+		},
+		{
+			"forge": "CAVE_LAYER",
+			"fabric": "CAVE_LAYER"
+		},
+		{
+			"forge": "CAVE_CHEESE",
+			"fabric": "CAVE_CHEESE"
+		},
+		{
+			"forge": "ORE_VEININESS",
+			"fabric": "ORE_VEININESS"
+		},
+		{
+			"forge": "ORE_VEIN_A",
+			"fabric": "ORE_VEIN_A"
+		},
+		{
+			"forge": "ORE_VEIN_B",
+			"fabric": "ORE_VEIN_B"
+		},
+		{
+			"forge": "ORE_GAP",
+			"fabric": "ORE_GAP"
+		},
+		{
+			"forge": "NOODLE",
+			"fabric": "NOODLE"
+		},
+		{
+			"forge": "NOODLE_THICKNESS",
+			"fabric": "NOODLE_THICKNESS"
+		},
+		{
+			"forge": "NOODLE_RIDGE_A",
+			"fabric": "NOODLE_RIDGE_A"
+		},
+		{
+			"forge": "NOODLE_RIDGE_B",
+			"fabric": "NOODLE_RIDGE_B"
+		},
+		{
+			"forge": "JAGGED",
+			"fabric": "JAGGED"
+		},
+		{
+			"forge": "SURFACE",
+			"fabric": "SURFACE"
+		},
+		{
+			"forge": "SURFACE_SECONDARY",
+			"fabric": "SURFACE_SECONDARY"
+		},
+		{
+			"forge": "CLAY_BANDS_OFFSET",
+			"fabric": "CLAY_BANDS_OFFSET"
+		},
+		{
+			"forge": "BADLANDS_PILLAR",
+			"fabric": "BADLANDS_PILLAR"
+		},
+		{
+			"forge": "BADLANDS_PILLAR_ROOF",
+			"fabric": "BADLANDS_PILLAR_ROOF"
+		},
+		{
+			"forge": "BADLANDS_SURFACE",
+			"fabric": "BADLANDS_SURFACE"
+		},
+		{
+			"forge": "ICEBERG_PILLAR",
+			"fabric": "ICEBERG_PILLAR"
+		},
+		{
+			"forge": "ICEBERG_PILLAR_ROOF",
+			"fabric": "ICEBERG_PILLAR_ROOF"
+		},
+		{
+			"forge": "ICEBERG_SURFACE",
+			"fabric": "ICEBERG_SURFACE"
+		},
+		{
+			"forge": "SWAMP",
+			"fabric": "SURFACE_SWAMP"
+		},
+		{
+			"forge": "CALCITE",
+			"fabric": "CALCITE"
+		},
+		{
+			"forge": "GRAVEL",
+			"fabric": "GRAVEL"
+		},
+		{
+			"forge": "POWDER_SNOW",
+			"fabric": "POWDER_SNOW"
+		},
+		{
+			"forge": "PACKED_ICE",
+			"fabric": "PACKED_ICE"
+		},
+		{
+			"forge": "ICE",
+			"fabric": "ICE"
+		},
+		{
+			"forge": "SOUL_SAND_LAYER",
+			"fabric": "SOUL_SAND_LAYER"
+		},
+		{
+			"forge": "GRAVEL_LAYER",
+			"fabric": "GRAVEL_LAYER"
+		},
+		{
+			"forge": "PATCH",
+			"fabric": "PATCH"
+		},
+		{
+			"forge": "NETHERRACK",
+			"fabric": "NETHERRACK"
+		},
+		{
+			"forge": "NETHER_WART",
+			"fabric": "NETHER_WART"
+		},
+		{
+			"forge": "NETHER_STATE_SELECTOR",
+			"fabric": "NETHER_STATE_SELECTOR"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "createKey(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "instantiate(HolderGetter<NormalNoise$NoiseParameters> arg0, PositionalRandomFactory arg1, ResourceKey<NormalNoise$NoiseParameters> arg2)",
+			"fabric": "createNoiseSampler(RegistryEntryLookup<DoublePerlinNoiseSampler$NoiseParameters> noiseParametersLookup, RandomSplitter splitter, RegistryKey<DoublePerlinNoiseSampler$NoiseParameters> key)"
+		}
+	]
+}

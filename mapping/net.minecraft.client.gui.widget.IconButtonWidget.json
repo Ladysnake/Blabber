@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.gui.components.TextAndImageButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.TextAndImageButton",
+			"fabric": "net.minecraft.client.gui.widget.IconButtonWidget"
+		},
+		{
+			"forge": "resourceLocation",
+			"fabric": "iconTexture"
+		},
+		{
+			"forge": "resourceLocation",
+			"fabric": "iconTexture"
+		},
+		{
+			"forge": "xTexStart",
+			"fabric": "iconU"
+		},
+		{
+			"forge": "yTexStart",
+			"fabric": "iconV"
+		},
+		{
+			"forge": "yDiffTex",
+			"fabric": "iconHoveredVOffset"
+		},
+		{
+			"forge": "textureWidth",
+			"fabric": "iconTextureWidth"
+		},
+		{
+			"forge": "textureHeight",
+			"fabric": "iconTextureHeight"
+		},
+		{
+			"forge": "xOffset",
+			"fabric": "iconXOffset"
+		},
+		{
+			"forge": "yOffset",
+			"fabric": "iconYOffset"
+		},
+		{
+			"forge": "usedTextureWidth",
+			"fabric": "iconWidth"
+		},
+		{
+			"forge": "usedTextureHeight",
+			"fabric": "iconHeight"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderString(GuiGraphics arg0, Font arg1, int arg2)",
+			"fabric": "drawMessage(DrawContext arg0, TextRenderer arg1, int arg2)"
+		},
+		{
+			"forge": "getXOffset()",
+			"fabric": "getIconX()"
+		},
+		{
+			"forge": "getYOffset()",
+			"fabric": "getIconY()"
+		},
+		{
+			"forge": "builder(Component arg0, ResourceLocation arg1, Button$OnPress arg2)",
+			"fabric": "builder(Text message, Identifier texture, ButtonWidget$PressAction pressAction)"
+		}
+	]
+}

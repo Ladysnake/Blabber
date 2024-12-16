@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.network.TextFilter$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.network.TextFilter$1",
+			"fabric": "net.minecraft.server.filter.TextStream$1"
+		},
+		{
+			"forge": "join()",
+			"fabric": "onConnect()"
+		},
+		{
+			"forge": "join()",
+			"fabric": "onConnect()"
+		},
+		{
+			"forge": "leave()",
+			"fabric": "onDisconnect()"
+		},
+		{
+			"forge": "processStreamMessage(String arg0)",
+			"fabric": "filterText(String arg0)"
+		},
+		{
+			"forge": "processMessageBundle(List<String> arg0)",
+			"fabric": "filterTexts(List<String> arg0)"
+		}
+	]
+}

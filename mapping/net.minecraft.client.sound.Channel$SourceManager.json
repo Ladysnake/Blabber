@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.sounds.ChannelAccess$ChannelHandle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.sounds.ChannelAccess$ChannelHandle",
+			"fabric": "net.minecraft.client.sound.Channel$SourceManager"
+		},
+		{
+			"forge": "channel",
+			"fabric": "source"
+		},
+		{
+			"forge": "channel",
+			"fabric": "source"
+		},
+		{
+			"forge": "stopped",
+			"fabric": "stopped"
+		},
+		{
+			"forge": "isStopped()",
+			"fabric": "isStopped()"
+		},
+		{
+			"forge": "isStopped()",
+			"fabric": "isStopped()"
+		},
+		{
+			"forge": "execute(Consumer<Channel> arg0)",
+			"fabric": "run(Consumer<Source> action)"
+		},
+		{
+			"forge": "release()",
+			"fabric": "close()"
+		}
+	]
+}

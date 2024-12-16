@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.gametest.framework.TestCommand$TestSummaryDisplayer",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.TestCommand$TestSummaryDisplayer",
+			"fabric": "net.minecraft.server.command.TestCommand$Listener"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "tracker",
+			"fabric": "tests"
+		},
+		{
+			"forge": "testStructureLoaded(GameTestInfo arg0)",
+			"fabric": "onStarted(GameTestState arg0)"
+		},
+		{
+			"forge": "testStructureLoaded(GameTestInfo arg0)",
+			"fabric": "onStarted(GameTestState arg0)"
+		},
+		{
+			"forge": "testPassed(GameTestInfo arg0)",
+			"fabric": "onPassed(GameTestState arg0)"
+		},
+		{
+			"forge": "testFailed(GameTestInfo arg0)",
+			"fabric": "onFailed(GameTestState arg0)"
+		}
+	]
+}

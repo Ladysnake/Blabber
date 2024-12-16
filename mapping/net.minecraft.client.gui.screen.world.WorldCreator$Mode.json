@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.WorldCreationUiState$SelectedGameMode",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.WorldCreationUiState$SelectedGameMode",
+			"fabric": "net.minecraft.client.gui.screen.world.WorldCreator$Mode"
+		},
+		{
+			"forge": "SURVIVAL",
+			"fabric": "SURVIVAL"
+		},
+		{
+			"forge": "SURVIVAL",
+			"fabric": "SURVIVAL"
+		},
+		{
+			"forge": "HARDCORE",
+			"fabric": "HARDCORE"
+		},
+		{
+			"forge": "CREATIVE",
+			"fabric": "CREATIVE"
+		},
+		{
+			"forge": "DEBUG",
+			"fabric": "DEBUG"
+		},
+		{
+			"forge": "gameType",
+			"fabric": "defaultGameMode"
+		},
+		{
+			"forge": "gameType",
+			"fabric": "defaultGameMode"
+		},
+		{
+			"forge": "displayName",
+			"fabric": "name"
+		},
+		{
+			"forge": "info",
+			"fabric": "info"
+		},
+		{
+			"forge": "getInfo()",
+			"fabric": "getInfo()"
+		},
+		{
+			"forge": "getInfo()",
+			"fabric": "getInfo()"
+		}
+	]
+}

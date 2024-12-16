@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.gui.font.providers.GlyphProviderDefinition$Reference",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.providers.GlyphProviderDefinition$Reference",
+			"fabric": "net.minecraft.client.font.FontLoader$Reference"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		}
+	]
+}

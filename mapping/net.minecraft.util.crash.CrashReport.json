@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.CrashReport",
+	"items": [
+		{
+			"forge": "net.minecraft.CrashReport",
+			"fabric": "net.minecraft.util.crash.CrashReport"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "DATE_TIME_FORMATTER",
+			"fabric": "DATE_TIME_FORMATTER"
+		},
+		{
+			"forge": "title",
+			"fabric": "message"
+		},
+		{
+			"forge": "exception",
+			"fabric": "cause"
+		},
+		{
+			"forge": "details",
+			"fabric": "otherSections"
+		},
+		{
+			"forge": "saveFile",
+			"fabric": "file"
+		},
+		{
+			"forge": "trackingStackTrace",
+			"fabric": "hasStackTrace"
+		},
+		{
+			"forge": "uncategorizedStackTrace",
+			"fabric": "stackTrace"
+		},
+		{
+			"forge": "systemReport",
+			"fabric": "systemDetailsSection"
+		},
+		{
+			"forge": "getTitle()",
+			"fabric": "getMessage()"
+		},
+		{
+			"forge": "getTitle()",
+			"fabric": "getMessage()"
+		},
+		{
+			"forge": "getException()",
+			"fabric": "getCause()"
+		},
+		{
+			"forge": "getDetails()",
+			"fabric": "getStackTrace()"
+		},
+		{
+			"forge": "getDetails(StringBuilder arg0)",
+			"fabric": "addStackTrace(StringBuilder crashReportBuilder)"
+		},
+		{
+			"forge": "getExceptionMessage()",
+			"fabric": "getCauseAsString()"
+		},
+		{
+			"forge": "getFriendlyReport()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSaveFile()",
+			"fabric": "getFile()"
+		},
+		{
+			"forge": "saveToFile(File arg0)",
+			"fabric": "writeToFile(File file)"
+		},
+		{
+			"forge": "getSystemReport()",
+			"fabric": "getSystemDetailsSection()"
+		},
+		{
+			"forge": "addCategory(String arg0)",
+			"fabric": "addElement(String name)"
+		},
+		{
+			"forge": "addCategory(String arg0, int arg1)",
+			"fabric": "addElement(String name, int ignoredStackTraceCallCount)"
+		},
+		{
+			"forge": "getErrorComment()",
+			"fabric": "generateWittyComment()"
+		},
+		{
+			"forge": "forThrowable(Throwable arg0, String arg1)",
+			"fabric": "create(Throwable cause, String title)"
+		},
+		{
+			"forge": "preload()",
+			"fabric": "initCrashReport()"
+		}
+	]
+}

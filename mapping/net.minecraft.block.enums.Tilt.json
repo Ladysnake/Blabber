@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.Tilt",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.Tilt",
+			"fabric": "net.minecraft.block.enums.Tilt"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "UNSTABLE",
+			"fabric": "UNSTABLE"
+		},
+		{
+			"forge": "PARTIAL",
+			"fabric": "PARTIAL"
+		},
+		{
+			"forge": "FULL",
+			"fabric": "FULL"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "causesVibration",
+			"fabric": "stable"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "causesVibration()",
+			"fabric": "isStable()"
+		}
+	]
+}

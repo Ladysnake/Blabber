@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.network.chat.ComponentUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.ComponentUtils",
+			"fabric": "net.minecraft.text.Texts"
+		},
+		{
+			"forge": "DEFAULT_SEPARATOR_TEXT",
+			"fabric": "DEFAULT_SEPARATOR"
+		},
+		{
+			"forge": "DEFAULT_SEPARATOR_TEXT",
+			"fabric": "DEFAULT_SEPARATOR"
+		},
+		{
+			"forge": "DEFAULT_SEPARATOR",
+			"fabric": "GRAY_DEFAULT_SEPARATOR_TEXT"
+		},
+		{
+			"forge": "DEFAULT_NO_STYLE_SEPARATOR",
+			"fabric": "DEFAULT_SEPARATOR_TEXT"
+		},
+		{
+			"forge": "mergeStyles(MutableComponent arg0, Style arg1)",
+			"fabric": "setStyleIfAbsent(MutableText text, Style style)"
+		},
+		{
+			"forge": "mergeStyles(MutableComponent arg0, Style arg1)",
+			"fabric": "setStyleIfAbsent(MutableText text, Style style)"
+		},
+		{
+			"forge": "updateForEntity(CommandSourceStack arg0, Optional<Component> arg1, Entity arg2, int arg3)",
+			"fabric": "parse(ServerCommandSource source, Optional<Text> text, Entity sender, int depth)"
+		},
+		{
+			"forge": "updateForEntity(CommandSourceStack arg0, Component arg1, Entity arg2, int arg3)",
+			"fabric": "parse(ServerCommandSource source, Text text, Entity sender, int depth)"
+		},
+		{
+			"forge": "resolveStyle(CommandSourceStack arg0, Style arg1, Entity arg2, int arg3)",
+			"fabric": "parseStyle(ServerCommandSource source, Style style, Entity sender, int depth)"
+		},
+		{
+			"forge": "getDisplayName(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "toText(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "formatList(Collection<String> arg0)",
+			"fabric": "joinOrdered(Collection<String> strings)"
+		},
+		{
+			"forge": "formatAndSortList(Collection<T> arg0, Function<T, Component> arg1)",
+			"fabric": "joinOrdered(Collection<T> elements, Function<T, Text> transformer)"
+		},
+		{
+			"forge": "formatList(Collection<? extends T> arg0, Function<T, Component> arg1)",
+			"fabric": "join(Collection<? extends T> elements, Function<T, Text> transformer)"
+		},
+		{
+			"forge": "formatList(Collection<? extends T> arg0, Optional<? extends Component> arg1, Function<T, Component> arg2)",
+			"fabric": "join(Collection<? extends T> elements, Optional<? extends Text> separator, Function<T, Text> transformer)"
+		},
+		{
+			"forge": "formatList(Collection<? extends Component> arg0, Component arg1)",
+			"fabric": "join(Collection<? extends Text> texts, Text separator)"
+		},
+		{
+			"forge": "formatList(Collection<? extends T> arg0, Component arg1, Function<T, Component> arg2)",
+			"fabric": "join(Collection<? extends T> elements, Text separator, Function<T, Text> transformer)"
+		},
+		{
+			"forge": "wrapInSquareBrackets(Component arg0)",
+			"fabric": "bracketed(Text text)"
+		},
+		{
+			"forge": "fromMessage(com.mojang.brigadier.Message arg0)",
+			"fabric": "toText(com.mojang.brigadier.Message message)"
+		},
+		{
+			"forge": "isTranslationResolvable(Component arg0)",
+			"fabric": "hasTranslation(Text text)"
+		},
+		{
+			"forge": "copyOnClickText(String arg0)",
+			"fabric": "bracketedCopyable(String string)"
+		}
+	]
+}

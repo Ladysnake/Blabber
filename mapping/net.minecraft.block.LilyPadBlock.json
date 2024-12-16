@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.block.WaterlilyBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.WaterlilyBlock",
+			"fabric": "net.minecraft.block.LilyPadBlock"
+		},
+		{
+			"forge": "AABB",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "AABB",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "entityInside(BlockState arg0, Level arg1, BlockPos arg2, Entity arg3)",
+			"fabric": "onEntityCollision(BlockState arg0, World arg1, BlockPos arg2, Entity arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "mayPlaceOn(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "canPlantOnTop(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		}
+	]
+}

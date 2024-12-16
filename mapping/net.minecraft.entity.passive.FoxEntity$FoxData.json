@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.animal.Fox$FoxGroupData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Fox$FoxGroupData",
+			"fabric": "net.minecraft.entity.passive.FoxEntity$FoxData"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		}
+	]
+}

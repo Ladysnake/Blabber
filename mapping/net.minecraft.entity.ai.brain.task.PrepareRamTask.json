@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.PrepareRamNearestTarget",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.PrepareRamNearestTarget",
+			"fabric": "net.minecraft.entity.ai.brain.task.PrepareRamTask"
+		},
+		{
+			"forge": "TIME_OUT_DURATION",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "TIME_OUT_DURATION",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "getCooldownOnFail",
+			"fabric": "cooldownFactory"
+		},
+		{
+			"forge": "minRamDistance",
+			"fabric": "minRamDistance"
+		},
+		{
+			"forge": "maxRamDistance",
+			"fabric": "maxRamDistance"
+		},
+		{
+			"forge": "walkSpeed",
+			"fabric": "speed"
+		},
+		{
+			"forge": "ramTargeting",
+			"fabric": "targetPredicate"
+		},
+		{
+			"forge": "ramPrepareTime",
+			"fabric": "prepareTime"
+		},
+		{
+			"forge": "getPrepareRamSound",
+			"fabric": "soundFactory"
+		},
+		{
+			"forge": "reachedRamPositionTimestamp",
+			"fabric": "prepareStartTime"
+		},
+		{
+			"forge": "ramCandidate",
+			"fabric": "ram"
+		},
+		{
+			"forge": "start(ServerLevel arg0, PathfinderMob arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, PathAwareEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, PathfinderMob arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, PathAwareEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, PathfinderMob arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, PathAwareEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, E arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, E arg1, long arg2)"
+		},
+		{
+			"forge": "getEdgeOfBlock(BlockPos arg0, BlockPos arg1)",
+			"fabric": "calculateRamTarget(BlockPos start, BlockPos end)"
+		},
+		{
+			"forge": "calculateRammingStartPosition(PathfinderMob arg0, LivingEntity arg1)",
+			"fabric": "findRamStart(PathAwareEntity entity, LivingEntity target)"
+		},
+		{
+			"forge": "isWalkableBlock(PathfinderMob arg0, BlockPos arg1)",
+			"fabric": "canReach(PathAwareEntity entity, BlockPos target)"
+		},
+		{
+			"forge": "chooseRamPosition(PathfinderMob arg0, LivingEntity arg1)",
+			"fabric": "findRam(PathAwareEntity entity, LivingEntity target)"
+		}
+	]
+}

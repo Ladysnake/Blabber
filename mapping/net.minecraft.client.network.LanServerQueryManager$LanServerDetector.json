@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.server.LanServerDetection$LanServerDetector",
+	"items": [
+		{
+			"forge": "net.minecraft.client.server.LanServerDetection$LanServerDetector",
+			"fabric": "net.minecraft.client.network.LanServerQueryManager$LanServerDetector"
+		},
+		{
+			"forge": "serverList",
+			"fabric": "entryList"
+		},
+		{
+			"forge": "serverList",
+			"fabric": "entryList"
+		},
+		{
+			"forge": "pingGroup",
+			"fabric": "multicastAddress"
+		},
+		{
+			"forge": "socket",
+			"fabric": "socket"
+		}
+	]
+}

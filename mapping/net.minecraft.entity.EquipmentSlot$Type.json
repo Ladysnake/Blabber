@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.EquipmentSlot$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.EquipmentSlot$Type",
+			"fabric": "net.minecraft.entity.EquipmentSlot$Type"
+		},
+		{
+			"forge": "HAND",
+			"fabric": "HAND"
+		},
+		{
+			"forge": "HAND",
+			"fabric": "HAND"
+		},
+		{
+			"forge": "ARMOR",
+			"fabric": "ARMOR"
+		}
+	]
+}

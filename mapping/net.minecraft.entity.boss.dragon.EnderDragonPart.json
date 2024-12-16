@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.boss.EnderDragonPart",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.EnderDragonPart",
+			"fabric": "net.minecraft.entity.boss.dragon.EnderDragonPart"
+		},
+		{
+			"forge": "parentMob",
+			"fabric": "owner"
+		},
+		{
+			"forge": "parentMob",
+			"fabric": "owner"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "size",
+			"fabric": "partDimensions"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "isPickable()",
+			"fabric": "canHit()"
+		},
+		{
+			"forge": "getPickResult()",
+			"fabric": "getPickBlockStack()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "is(Entity arg0)",
+			"fabric": "isPartOf(Entity arg0)"
+		},
+		{
+			"forge": "getAddEntityPacket()",
+			"fabric": "createSpawnPacket()"
+		},
+		{
+			"forge": "getDimensions(Pose arg0)",
+			"fabric": "getDimensions(EntityPose arg0)"
+		},
+		{
+			"forge": "shouldBeSaved()",
+			"fabric": "shouldSave()"
+		}
+	]
+}

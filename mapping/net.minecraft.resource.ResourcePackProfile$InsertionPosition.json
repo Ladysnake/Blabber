@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.packs.repository.Pack$Position",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.repository.Pack$Position",
+			"fabric": "net.minecraft.resource.ResourcePackProfile$InsertionPosition"
+		},
+		{
+			"forge": "TOP",
+			"fabric": "TOP"
+		},
+		{
+			"forge": "TOP",
+			"fabric": "TOP"
+		},
+		{
+			"forge": "BOTTOM",
+			"fabric": "BOTTOM"
+		},
+		{
+			"forge": "insert(List<T> arg0, T arg1, Function<T, Pack> arg2, boolean arg3)",
+			"fabric": "insert(List<T> items, T item, Function<T, ResourcePackProfile> profileGetter, boolean listInverted)"
+		},
+		{
+			"forge": "insert(List<T> arg0, T arg1, Function<T, Pack> arg2, boolean arg3)",
+			"fabric": "insert(List<T> items, T item, Function<T, ResourcePackProfile> profileGetter, boolean listInverted)"
+		},
+		{
+			"forge": "opposite()",
+			"fabric": "inverse()"
+		}
+	]
+}

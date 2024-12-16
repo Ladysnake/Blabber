@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.server.commands.BossBarCommands",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.BossBarCommands",
+			"fabric": "net.minecraft.server.command.BossBarCommand"
+		},
+		{
+			"forge": "ERROR_ALREADY_EXISTS",
+			"fabric": "CREATE_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_ALREADY_EXISTS",
+			"fabric": "CREATE_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_DOESNT_EXIST",
+			"fabric": "UNKNOWN_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_PLAYER_CHANGE",
+			"fabric": "SET_PLAYERS_UNCHANGED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_NAME_CHANGE",
+			"fabric": "SET_NAME_UNCHANGED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_COLOR_CHANGE",
+			"fabric": "SET_COLOR_UNCHANGED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_STYLE_CHANGE",
+			"fabric": "SET_STYLE_UNCHANGED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_VALUE_CHANGE",
+			"fabric": "SET_VALUE_UNCHANGED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_NO_MAX_CHANGE",
+			"fabric": "SET_MAX_UNCHANGED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_ALREADY_HIDDEN",
+			"fabric": "SET_VISIBILITY_UNCHANGED_HIDDEN_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_ALREADY_VISIBLE",
+			"fabric": "SET_VISIBILITY_UNCHANGED_VISIBLE_EXCEPTION"
+		},
+		{
+			"forge": "SUGGEST_BOSS_BAR",
+			"fabric": "SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "getValue(CommandSourceStack arg0, CustomBossEvent arg1)",
+			"fabric": "getValue(ServerCommandSource source, CommandBossBar bossBar)"
+		},
+		{
+			"forge": "getMax(CommandSourceStack arg0, CustomBossEvent arg1)",
+			"fabric": "getMaxValue(ServerCommandSource source, CommandBossBar bossBar)"
+		},
+		{
+			"forge": "getVisible(CommandSourceStack arg0, CustomBossEvent arg1)",
+			"fabric": "isVisible(ServerCommandSource source, CommandBossBar bossBar)"
+		},
+		{
+			"forge": "getPlayers(CommandSourceStack arg0, CustomBossEvent arg1)",
+			"fabric": "getPlayers(ServerCommandSource source, CommandBossBar bossBar)"
+		},
+		{
+			"forge": "setVisible(CommandSourceStack arg0, CustomBossEvent arg1, boolean arg2)",
+			"fabric": "setVisible(ServerCommandSource source, CommandBossBar bossBar, boolean visible)"
+		},
+		{
+			"forge": "setValue(CommandSourceStack arg0, CustomBossEvent arg1, int arg2)",
+			"fabric": "setValue(ServerCommandSource source, CommandBossBar bossBar, int value)"
+		},
+		{
+			"forge": "setMax(CommandSourceStack arg0, CustomBossEvent arg1, int arg2)",
+			"fabric": "setMaxValue(ServerCommandSource source, CommandBossBar bossBar, int value)"
+		},
+		{
+			"forge": "setColor(CommandSourceStack arg0, CustomBossEvent arg1, BossEvent$BossBarColor arg2)",
+			"fabric": "setColor(ServerCommandSource source, CommandBossBar bossBar, BossBar$Color color)"
+		},
+		{
+			"forge": "setStyle(CommandSourceStack arg0, CustomBossEvent arg1, BossEvent$BossBarOverlay arg2)",
+			"fabric": "setStyle(ServerCommandSource source, CommandBossBar bossBar, BossBar$Style style)"
+		},
+		{
+			"forge": "setName(CommandSourceStack arg0, CustomBossEvent arg1, Component arg2)",
+			"fabric": "setName(ServerCommandSource source, CommandBossBar bossBar, Text name)"
+		},
+		{
+			"forge": "setPlayers(CommandSourceStack arg0, CustomBossEvent arg1, Collection<ServerPlayer> arg2)",
+			"fabric": "setPlayers(ServerCommandSource source, CommandBossBar bossBar, Collection<ServerPlayerEntity> players)"
+		},
+		{
+			"forge": "listBars(CommandSourceStack arg0)",
+			"fabric": "listBossBars(ServerCommandSource source)"
+		},
+		{
+			"forge": "createBar(CommandSourceStack arg0, ResourceLocation arg1, Component arg2)",
+			"fabric": "addBossBar(ServerCommandSource source, Identifier name, Text displayName)"
+		},
+		{
+			"forge": "removeBar(CommandSourceStack arg0, CustomBossEvent arg1)",
+			"fabric": "removeBossBar(ServerCommandSource source, CommandBossBar bossBar)"
+		},
+		{
+			"forge": "getBossBar(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0)",
+			"fabric": "getBossBar(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context)"
+		}
+	]
+}

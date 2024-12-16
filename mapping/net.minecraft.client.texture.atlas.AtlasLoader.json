@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.texture.atlas.SpriteResourceLoader",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.atlas.SpriteResourceLoader",
+			"fabric": "net.minecraft.client.texture.atlas.AtlasLoader"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ATLAS_INFO_CONVERTER",
+			"fabric": "FINDER"
+		},
+		{
+			"forge": "sources",
+			"fabric": "sources"
+		},
+		{
+			"forge": "list(ResourceManager arg0)",
+			"fabric": "loadSources(ResourceManager resourceManager)"
+		},
+		{
+			"forge": "list(ResourceManager arg0)",
+			"fabric": "loadSources(ResourceManager resourceManager)"
+		},
+		{
+			"forge": "load(ResourceManager arg0, ResourceLocation arg1)",
+			"fabric": "of(ResourceManager resourceManager, Identifier id)"
+		}
+	]
+}

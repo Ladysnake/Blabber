@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.state.StateDefinition$Factory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.StateDefinition$Factory",
+			"fabric": "net.minecraft.state.StateManager$Factory"
+		},
+		{
+			"forge": "create(O arg0, com.google.common.collect.ImmutableMap<Property<?>, Comparable<?>> arg1, com.mojang.serialization.MapCodec<S> arg2)",
+			"fabric": "create(O owner, com.google.common.collect.ImmutableMap<Property<?>, Comparable<?>> entries, com.mojang.serialization.MapCodec<S> codec)"
+		},
+		{
+			"forge": "create(O arg0, com.google.common.collect.ImmutableMap<Property<?>, Comparable<?>> arg1, com.mojang.serialization.MapCodec<S> arg2)",
+			"fabric": "create(O owner, com.google.common.collect.ImmutableMap<Property<?>, Comparable<?>> entries, com.mojang.serialization.MapCodec<S> codec)"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.server.rcon.thread.RconClient",
+	"items": [
+		{
+			"forge": "net.minecraft.server.rcon.thread.RconClient",
+			"fabric": "net.minecraft.server.rcon.RconClient"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SERVERDATA_AUTH",
+			"fabric": "field_29799"
+		},
+		{
+			"forge": "SERVERDATA_EXECCOMMAND",
+			"fabric": "field_29800"
+		},
+		{
+			"forge": "SERVERDATA_RESPONSE_VALUE",
+			"fabric": "field_29801"
+		},
+		{
+			"forge": "SERVERDATA_AUTH_RESPONSE",
+			"fabric": "field_29802"
+		},
+		{
+			"forge": "SERVERDATA_AUTH_FAILURE",
+			"fabric": "field_29803"
+		},
+		{
+			"forge": "authed",
+			"fabric": "authenticated"
+		},
+		{
+			"forge": "client",
+			"fabric": "socket"
+		},
+		{
+			"forge": "buf",
+			"fabric": "packetBuffer"
+		},
+		{
+			"forge": "rconPassword",
+			"fabric": "password"
+		},
+		{
+			"forge": "serverInterface",
+			"fabric": "server"
+		},
+		{
+			"forge": "run()",
+			"fabric": "respond(int sessionToken, int responseType, String message)"
+		},
+		{
+			"forge": "send(int arg0, int arg1, String arg2)",
+			"fabric": "respond(int sessionToken, int responseType, String message)"
+		},
+		{
+			"forge": "sendAuthFailure()",
+			"fabric": "fail()"
+		},
+		{
+			"forge": "sendCmdResponse(int arg0, String arg1)",
+			"fabric": "respond(int sessionToken, String message)"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "closeSocket()",
+			"fabric": "close()"
+		}
+	]
+}

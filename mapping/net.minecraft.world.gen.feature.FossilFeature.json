@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.FossilFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.FossilFeature",
+			"fabric": "net.minecraft.world.gen.feature.FossilFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<FossilFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<FossilFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<FossilFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<FossilFeatureConfig> arg0)"
+		},
+		{
+			"forge": "countEmptyCorners(WorldGenLevel arg0, BoundingBox arg1)",
+			"fabric": "getEmptyCorners(StructureWorldAccess world, BlockBox box)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.components.Button$CreateNarration",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.Button$CreateNarration",
+			"fabric": "net.minecraft.client.gui.widget.ButtonWidget$NarrationSupplier"
+		},
+		{
+			"forge": "createNarrationMessage(Supplier<MutableComponent> arg0)",
+			"fabric": "createNarrationMessage(Supplier<MutableText> textSupplier)"
+		},
+		{
+			"forge": "createNarrationMessage(Supplier<MutableComponent> arg0)",
+			"fabric": "createNarrationMessage(Supplier<MutableText> textSupplier)"
+		}
+	]
+}

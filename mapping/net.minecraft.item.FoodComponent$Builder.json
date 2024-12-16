@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.food.FoodProperties$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.food.FoodProperties$Builder",
+			"fabric": "net.minecraft.item.FoodComponent$Builder"
+		},
+		{
+			"forge": "nutrition",
+			"fabric": "hunger"
+		},
+		{
+			"forge": "nutrition",
+			"fabric": "hunger"
+		},
+		{
+			"forge": "saturationModifier",
+			"fabric": "saturationModifier"
+		},
+		{
+			"forge": "isMeat",
+			"fabric": "meat"
+		},
+		{
+			"forge": "canAlwaysEat",
+			"fabric": "alwaysEdible"
+		},
+		{
+			"forge": "fastFood",
+			"fabric": "snack"
+		},
+		{
+			"forge": "effects",
+			"fabric": "statusEffects"
+		},
+		{
+			"forge": "nutrition(int arg0)",
+			"fabric": "hunger(int hunger)"
+		},
+		{
+			"forge": "nutrition(int arg0)",
+			"fabric": "hunger(int hunger)"
+		},
+		{
+			"forge": "saturationMod(float arg0)",
+			"fabric": "saturationModifier(float saturationModifier)"
+		},
+		{
+			"forge": "meat()",
+			"fabric": "meat()"
+		},
+		{
+			"forge": "alwaysEat()",
+			"fabric": "alwaysEdible()"
+		},
+		{
+			"forge": "fast()",
+			"fabric": "snack()"
+		},
+		{
+			"forge": "effect(MobEffectInstance arg0, float arg1)",
+			"fabric": "statusEffect(StatusEffectInstance effect, float chance)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

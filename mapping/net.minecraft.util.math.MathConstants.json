@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.math.Constants",
+	"items": [
+		{
+			"forge": "com.mojang.math.Constants",
+			"fabric": "net.minecraft.util.math.MathConstants"
+		},
+		{
+			"forge": "PI",
+			"fabric": "PI"
+		},
+		{
+			"forge": "PI",
+			"fabric": "PI"
+		},
+		{
+			"forge": "RAD_TO_DEG",
+			"fabric": "DEGREES_PER_RADIAN"
+		},
+		{
+			"forge": "DEG_TO_RAD",
+			"fabric": "RADIANS_PER_DEGREE"
+		},
+		{
+			"forge": "EPSILON",
+			"fabric": "EPSILON"
+		}
+	]
+}

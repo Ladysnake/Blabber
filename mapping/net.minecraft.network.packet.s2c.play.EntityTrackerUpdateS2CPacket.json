@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundSetEntityDataPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundSetEntityDataPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.EntityTrackerUpdateS2CPacket"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "packedItems",
+			"fabric": "trackedValues"
+		},
+		{
+			"forge": "EOF_MARKER",
+			"fabric": "MARKER_ID"
+		},
+		{
+			"forge": "pack(List<SynchedEntityData$DataValue<?>> arg0, FriendlyByteBuf arg1)",
+			"fabric": "write(List<DataTracker$SerializedEntry<?>> trackedValues, PacketByteBuf buf)"
+		},
+		{
+			"forge": "pack(List<SynchedEntityData$DataValue<?>> arg0, FriendlyByteBuf arg1)",
+			"fabric": "write(List<DataTracker$SerializedEntry<?>> trackedValues, PacketByteBuf buf)"
+		},
+		{
+			"forge": "unpack(FriendlyByteBuf arg0)",
+			"fabric": "read(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "packedItems()",
+			"fabric": "trackedValues()"
+		}
+	]
+}

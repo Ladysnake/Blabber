@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.advancements.critereon.EntityVariantPredicate$1",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.EntityVariantPredicate$1",
+			"fabric": "net.minecraft.predicate.entity.VariantPredicates$1"
+		},
+		{
+			"forge": "matches(Entity arg0, ServerLevel arg1, Vec3 arg2)",
+			"fabric": "test(Entity arg0, ServerWorld arg1, Vec3d arg2)"
+		},
+		{
+			"forge": "matches(Entity arg0, ServerLevel arg1, Vec3 arg2)",
+			"fabric": "test(Entity arg0, ServerWorld arg1, Vec3d arg2)"
+		},
+		{
+			"forge": "serializeCustomData()",
+			"fabric": "typeSpecificToJson()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getDeserializer()"
+		}
+	]
+}

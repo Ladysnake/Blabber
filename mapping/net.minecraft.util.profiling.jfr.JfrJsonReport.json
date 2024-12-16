@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer",
+			"fabric": "net.minecraft.util.profiling.jfr.JfrJsonReport"
+		},
+		{
+			"forge": "BYTES_PER_SECOND",
+			"fabric": "BYTES_PER_SECOND"
+		},
+		{
+			"forge": "BYTES_PER_SECOND",
+			"fabric": "BYTES_PER_SECOND"
+		},
+		{
+			"forge": "COUNT",
+			"fabric": "COUNT"
+		},
+		{
+			"forge": "DURATION_NANOS_TOTAL",
+			"fabric": "DURATION_NANOS_TOTAL"
+		},
+		{
+			"forge": "TOTAL_BYTES",
+			"fabric": "TOTAL_BYTES"
+		},
+		{
+			"forge": "COUNT_PER_SECOND",
+			"fabric": "COUNT_PER_SECOND"
+		},
+		{
+			"forge": "gson",
+			"fabric": "gson"
+		},
+		{
+			"forge": "format(JfrStatsResult arg0)",
+			"fabric": "toString(JfrProfile profile)"
+		},
+		{
+			"forge": "format(JfrStatsResult arg0)",
+			"fabric": "toString(JfrProfile profile)"
+		},
+		{
+			"forge": "heap(GcHeapStat$Summary arg0)",
+			"fabric": "collectHeapSection(GcHeapSummarySample$Statistics statistics)"
+		},
+		{
+			"forge": "chunkGen(List<com.mojang.datafixers.util.Pair<ChunkStatus, TimedStatSummary<ChunkGenStat>>> arg0)",
+			"fabric": "collectChunkGenSection(List<com.mojang.datafixers.util.Pair<ChunkStatus, LongRunningSampleStatistics<ChunkGenerationSample>>> statistics)"
+		},
+		{
+			"forge": "threadAllocations(ThreadAllocationStat$Summary arg0)",
+			"fabric": "collectThreadAllocationSection(ThreadAllocationStatisticsSample$AllocationMap statistics)"
+		},
+		{
+			"forge": "serverTicks(List<TickTimeStat> arg0)",
+			"fabric": "collectServerTickSection(List<ServerTickTimeSample> samples)"
+		},
+		{
+			"forge": "fileIO(JfrStatsResult arg0)",
+			"fabric": "collectFileIoSection(JfrProfile profile)"
+		},
+		{
+			"forge": "fileIoSummary(FileIOStat$Summary arg0)",
+			"fabric": "collectFileIoSection(FileIoSample$Statistics statistics)"
+		},
+		{
+			"forge": "network(JfrStatsResult arg0)",
+			"fabric": "collectNetworkSection(JfrProfile profile)"
+		},
+		{
+			"forge": "packets(NetworkPacketSummary arg0)",
+			"fabric": "collectPacketSection(NetworkIoStatistics statistics)"
+		},
+		{
+			"forge": "cpu(List<CpuLoadStat> arg0)",
+			"fabric": "collectCpuPercentSection(List<CpuLoadSample> samples)"
+		}
+	]
+}

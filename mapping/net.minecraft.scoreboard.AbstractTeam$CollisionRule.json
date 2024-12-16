@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.scores.Team$CollisionRule",
+	"items": [
+		{
+			"forge": "net.minecraft.world.scores.Team$CollisionRule",
+			"fabric": "net.minecraft.scoreboard.AbstractTeam$CollisionRule"
+		},
+		{
+			"forge": "ALWAYS",
+			"fabric": "ALWAYS"
+		},
+		{
+			"forge": "ALWAYS",
+			"fabric": "ALWAYS"
+		},
+		{
+			"forge": "NEVER",
+			"fabric": "NEVER"
+		},
+		{
+			"forge": "PUSH_OTHER_TEAMS",
+			"fabric": "PUSH_OTHER_TEAMS"
+		},
+		{
+			"forge": "PUSH_OWN_TEAM",
+			"fabric": "PUSH_OWN_TEAM"
+		},
+		{
+			"forge": "BY_NAME",
+			"fabric": "COLLISION_RULES"
+		},
+		{
+			"forge": "BY_NAME",
+			"fabric": "COLLISION_RULES"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "id",
+			"fabric": "value"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "getRule(String name)"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "getRule(String name)"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		}
+	]
+}

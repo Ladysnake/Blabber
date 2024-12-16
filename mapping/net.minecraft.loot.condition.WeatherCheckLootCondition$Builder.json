@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.WeatherCheck$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.WeatherCheck$Builder",
+			"fabric": "net.minecraft.loot.condition.WeatherCheckLootCondition$Builder"
+		},
+		{
+			"forge": "isRaining",
+			"fabric": "raining"
+		},
+		{
+			"forge": "isRaining",
+			"fabric": "raining"
+		},
+		{
+			"forge": "isThundering",
+			"fabric": "thundering"
+		},
+		{
+			"forge": "setRaining(Boolean arg0)",
+			"fabric": "raining(Boolean raining)"
+		},
+		{
+			"forge": "setRaining(Boolean arg0)",
+			"fabric": "raining(Boolean raining)"
+		},
+		{
+			"forge": "setThundering(Boolean arg0)",
+			"fabric": "thundering(Boolean thundering)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

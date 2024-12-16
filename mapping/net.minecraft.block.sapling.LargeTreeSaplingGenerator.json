@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.grower.AbstractMegaTreeGrower",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.grower.AbstractMegaTreeGrower",
+			"fabric": "net.minecraft.block.sapling.LargeTreeSaplingGenerator"
+		},
+		{
+			"forge": "growTree(ServerLevel arg0, ChunkGenerator arg1, BlockPos arg2, BlockState arg3, RandomSource arg4)",
+			"fabric": "generate(ServerWorld arg0, ChunkGenerator arg1, BlockPos arg2, BlockState arg3, Random arg4)"
+		},
+		{
+			"forge": "growTree(ServerLevel arg0, ChunkGenerator arg1, BlockPos arg2, BlockState arg3, RandomSource arg4)",
+			"fabric": "generate(ServerWorld arg0, ChunkGenerator arg1, BlockPos arg2, BlockState arg3, Random arg4)"
+		},
+		{
+			"forge": "getConfiguredMegaFeature(RandomSource arg0)",
+			"fabric": "getLargeTreeFeature(Random random)"
+		},
+		{
+			"forge": "placeMega(ServerLevel arg0, ChunkGenerator arg1, BlockPos arg2, BlockState arg3, RandomSource arg4, int arg5, int arg6)",
+			"fabric": "generateLargeTree(ServerWorld world, ChunkGenerator chunkGenerator, BlockPos pos, BlockState state, Random random, int x, int z)"
+		},
+		{
+			"forge": "isTwoByTwoSapling(BlockState arg0, BlockGetter arg1, BlockPos arg2, int arg3, int arg4)",
+			"fabric": "canGenerateLargeTree(BlockState state, BlockView world, BlockPos pos, int x, int z)"
+		}
+	]
+}

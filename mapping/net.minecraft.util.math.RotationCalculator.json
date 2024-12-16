@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.util.SegmentedAnglePrecision",
+	"items": [
+		{
+			"forge": "net.minecraft.util.SegmentedAnglePrecision",
+			"fabric": "net.minecraft.util.math.RotationCalculator"
+		},
+		{
+			"forge": "mask",
+			"fabric": "max"
+		},
+		{
+			"forge": "mask",
+			"fabric": "max"
+		},
+		{
+			"forge": "precision",
+			"fabric": "precision"
+		},
+		{
+			"forge": "degreeToAngle",
+			"fabric": "rotationPerDegrees"
+		},
+		{
+			"forge": "angleToDegree",
+			"fabric": "degreesPerRotation"
+		},
+		{
+			"forge": "isSameAxis(int arg0, int arg1)",
+			"fabric": "areRotationsParallel(int alpha, int beta)"
+		},
+		{
+			"forge": "isSameAxis(int arg0, int arg1)",
+			"fabric": "areRotationsParallel(int alpha, int beta)"
+		},
+		{
+			"forge": "fromDirection(Direction arg0)",
+			"fabric": "toRotation(Direction direction)"
+		},
+		{
+			"forge": "fromDegreesWithTurns(float arg0)",
+			"fabric": "toRotation(float degrees)"
+		},
+		{
+			"forge": "fromDegrees(float arg0)",
+			"fabric": "toClampedRotation(float degrees)"
+		},
+		{
+			"forge": "toDegreesWithTurns(int arg0)",
+			"fabric": "toDegrees(int rotation)"
+		},
+		{
+			"forge": "toDegrees(int arg0)",
+			"fabric": "toWrappedDegrees(int rotation)"
+		},
+		{
+			"forge": "normalize(int arg0)",
+			"fabric": "clamp(int rotationBits)"
+		},
+		{
+			"forge": "getMask()",
+			"fabric": "getMax()"
+		}
+	]
+}

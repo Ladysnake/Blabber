@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.saveddata.maps.MapItemSavedData$MapPatch",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.saveddata.maps.MapItemSavedData$MapPatch",
+			"fabric": "net.minecraft.item.map.MapState$UpdateData"
+		},
+		{
+			"forge": "startX",
+			"fabric": "startX"
+		},
+		{
+			"forge": "startX",
+			"fabric": "startX"
+		},
+		{
+			"forge": "startY",
+			"fabric": "startZ"
+		},
+		{
+			"forge": "width",
+			"fabric": "width"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "mapColors",
+			"fabric": "colors"
+		},
+		{
+			"forge": "applyToMap(MapItemSavedData arg0)",
+			"fabric": "setColorsTo(MapState mapState)"
+		},
+		{
+			"forge": "applyToMap(MapItemSavedData arg0)",
+			"fabric": "setColorsTo(MapState mapState)"
+		}
+	]
+}

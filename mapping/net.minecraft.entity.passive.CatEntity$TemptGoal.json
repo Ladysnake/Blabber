@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.animal.Cat$CatTemptGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Cat$CatTemptGoal",
+			"fabric": "net.minecraft.entity.passive.CatEntity$TemptGoal"
+		},
+		{
+			"forge": "selectedPlayer",
+			"fabric": "player"
+		},
+		{
+			"forge": "selectedPlayer",
+			"fabric": "player"
+		},
+		{
+			"forge": "cat",
+			"fabric": "cat"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "canScare()",
+			"fabric": "canBeScared()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

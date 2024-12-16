@@ -1,0 +1,41 @@
+{
+	"title": "com.mojang.realmsclient.gui.task.DataFetcher",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.task.DataFetcher",
+			"fabric": "net.minecraft.client.realms.util.PeriodicRunnerFactory"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "executor",
+			"fabric": "executor"
+		},
+		{
+			"forge": "resolution",
+			"fabric": "timeUnit"
+		},
+		{
+			"forge": "timeSource",
+			"fabric": "timeSupplier"
+		},
+		{
+			"forge": "createTask(String arg0, Callable<T> arg1, Duration arg2, RepeatedDelayStrategy arg3)",
+			"fabric": "create(String name, Callable<T> task, Duration cycle, Backoff backoff)"
+		},
+		{
+			"forge": "createTask(String arg0, Callable<T> arg1, Duration arg2, RepeatedDelayStrategy arg3)",
+			"fabric": "create(String name, Callable<T> task, Duration cycle, Backoff backoff)"
+		},
+		{
+			"forge": "createSubscription()",
+			"fabric": "create()"
+		}
+	]
+}

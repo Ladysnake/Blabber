@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.arguments.UuidArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.UuidArgument",
+			"fabric": "net.minecraft.command.argument.UuidArgumentType"
+		},
+		{
+			"forge": "ERROR_INVALID_UUID",
+			"fabric": "INVALID_UUID"
+		},
+		{
+			"forge": "ERROR_INVALID_UUID",
+			"fabric": "INVALID_UUID"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "ALLOWED_CHARACTERS",
+			"fabric": "VALID_CHARACTERS"
+		},
+		{
+			"forge": "getUuid(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getUuid(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getUuid(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getUuid(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "uuid()",
+			"fabric": "uuid()"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		}
+	]
+}

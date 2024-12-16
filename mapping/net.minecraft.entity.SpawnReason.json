@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.world.entity.MobSpawnType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.MobSpawnType",
+			"fabric": "net.minecraft.entity.SpawnReason"
+		},
+		{
+			"forge": "NATURAL",
+			"fabric": "NATURAL"
+		},
+		{
+			"forge": "NATURAL",
+			"fabric": "NATURAL"
+		},
+		{
+			"forge": "CHUNK_GENERATION",
+			"fabric": "CHUNK_GENERATION"
+		},
+		{
+			"forge": "SPAWNER",
+			"fabric": "SPAWNER"
+		},
+		{
+			"forge": "STRUCTURE",
+			"fabric": "STRUCTURE"
+		},
+		{
+			"forge": "BREEDING",
+			"fabric": "BREEDING"
+		},
+		{
+			"forge": "MOB_SUMMONED",
+			"fabric": "MOB_SUMMONED"
+		},
+		{
+			"forge": "JOCKEY",
+			"fabric": "JOCKEY"
+		},
+		{
+			"forge": "EVENT",
+			"fabric": "EVENT"
+		},
+		{
+			"forge": "CONVERSION",
+			"fabric": "CONVERSION"
+		},
+		{
+			"forge": "REINFORCEMENT",
+			"fabric": "REINFORCEMENT"
+		},
+		{
+			"forge": "TRIGGERED",
+			"fabric": "TRIGGERED"
+		},
+		{
+			"forge": "BUCKET",
+			"fabric": "BUCKET"
+		},
+		{
+			"forge": "SPAWN_EGG",
+			"fabric": "SPAWN_EGG"
+		},
+		{
+			"forge": "COMMAND",
+			"fabric": "COMMAND"
+		},
+		{
+			"forge": "DISPENSER",
+			"fabric": "DISPENSER"
+		},
+		{
+			"forge": "PATROL",
+			"fabric": "PATROL"
+		}
+	]
+}

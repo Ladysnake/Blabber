@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.ai.control.JumpControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.control.JumpControl",
+			"fabric": "net.minecraft.entity.ai.control.JumpControl"
+		},
+		{
+			"forge": "mob",
+			"fabric": "entity"
+		},
+		{
+			"forge": "mob",
+			"fabric": "entity"
+		},
+		{
+			"forge": "jump",
+			"fabric": "active"
+		},
+		{
+			"forge": "jump()",
+			"fabric": "setActive()"
+		},
+		{
+			"forge": "jump()",
+			"fabric": "setActive()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

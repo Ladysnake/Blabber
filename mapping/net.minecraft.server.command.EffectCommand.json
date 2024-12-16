@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.server.commands.EffectCommands",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.EffectCommands",
+			"fabric": "net.minecraft.server.command.EffectCommand"
+		},
+		{
+			"forge": "ERROR_GIVE_FAILED",
+			"fabric": "GIVE_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_GIVE_FAILED",
+			"fabric": "GIVE_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_CLEAR_EVERYTHING_FAILED",
+			"fabric": "CLEAR_EVERYTHING_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_CLEAR_SPECIFIC_FAILED",
+			"fabric": "CLEAR_SPECIFIC_FAILED_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess)"
+		},
+		{
+			"forge": "giveEffect(CommandSourceStack arg0, Collection<? extends Entity> arg1, Holder<MobEffect> arg2, Integer arg3, int arg4, boolean arg5)",
+			"fabric": "executeGive(ServerCommandSource source, Collection<? extends Entity> targets, RegistryEntry<StatusEffect> statusEffect, Integer seconds, int amplifier, boolean showParticles)"
+		},
+		{
+			"forge": "clearEffects(CommandSourceStack arg0, Collection<? extends Entity> arg1)",
+			"fabric": "executeClear(ServerCommandSource source, Collection<? extends Entity> targets)"
+		},
+		{
+			"forge": "clearEffect(CommandSourceStack arg0, Collection<? extends Entity> arg1, Holder<MobEffect> arg2)",
+			"fabric": "executeClear(ServerCommandSource source, Collection<? extends Entity> targets, RegistryEntry<StatusEffect> statusEffect)"
+		}
+	]
+}

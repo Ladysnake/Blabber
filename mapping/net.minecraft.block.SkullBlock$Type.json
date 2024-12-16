@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.block.SkullBlock$Types",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SkullBlock$Types",
+			"fabric": "net.minecraft.block.SkullBlock$Type"
+		},
+		{
+			"forge": "SKELETON",
+			"fabric": "SKELETON"
+		},
+		{
+			"forge": "SKELETON",
+			"fabric": "SKELETON"
+		},
+		{
+			"forge": "WITHER_SKELETON",
+			"fabric": "WITHER_SKELETON"
+		},
+		{
+			"forge": "PLAYER",
+			"fabric": "PLAYER"
+		},
+		{
+			"forge": "ZOMBIE",
+			"fabric": "ZOMBIE"
+		},
+		{
+			"forge": "CREEPER",
+			"fabric": "CREEPER"
+		},
+		{
+			"forge": "PIGLIN",
+			"fabric": "PIGLIN"
+		},
+		{
+			"forge": "DRAGON",
+			"fabric": "DRAGON"
+		}
+	]
+}

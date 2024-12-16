@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.data.models.model.TexturedModel$Provider",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.model.TexturedModel$Provider",
+			"fabric": "net.minecraft.data.client.TexturedModel$Factory"
+		},
+		{
+			"forge": "get(Block arg0)",
+			"fabric": "get(Block block)"
+		},
+		{
+			"forge": "get(Block arg0)",
+			"fabric": "get(Block block)"
+		},
+		{
+			"forge": "create(Block arg0, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg1)",
+			"fabric": "upload(Block block, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> writer)"
+		},
+		{
+			"forge": "createWithSuffix(Block arg0, String arg1, BiConsumer<ResourceLocation, Supplier<com.google.gson.JsonElement>> arg2)",
+			"fabric": "upload(Block block, String suffix, BiConsumer<Identifier, Supplier<com.google.gson.JsonElement>> writer)"
+		},
+		{
+			"forge": "updateTexture(Consumer<TextureMapping> arg0)",
+			"fabric": "andThen(Consumer<TextureMap> consumer)"
+		}
+	]
+}

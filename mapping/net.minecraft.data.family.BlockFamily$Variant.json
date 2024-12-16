@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.data.BlockFamily$Variant",
+	"items": [
+		{
+			"forge": "net.minecraft.data.BlockFamily$Variant",
+			"fabric": "net.minecraft.data.family.BlockFamily$Variant"
+		},
+		{
+			"forge": "BUTTON",
+			"fabric": "BUTTON"
+		},
+		{
+			"forge": "BUTTON",
+			"fabric": "BUTTON"
+		},
+		{
+			"forge": "CHISELED",
+			"fabric": "CHISELED"
+		},
+		{
+			"forge": "CRACKED",
+			"fabric": "CRACKED"
+		},
+		{
+			"forge": "CUT",
+			"fabric": "CUT"
+		},
+		{
+			"forge": "DOOR",
+			"fabric": "DOOR"
+		},
+		{
+			"forge": "CUSTOM_FENCE",
+			"fabric": "CUSTOM_FENCE"
+		},
+		{
+			"forge": "FENCE",
+			"fabric": "FENCE"
+		},
+		{
+			"forge": "CUSTOM_FENCE_GATE",
+			"fabric": "CUSTOM_FENCE_GATE"
+		},
+		{
+			"forge": "FENCE_GATE",
+			"fabric": "FENCE_GATE"
+		},
+		{
+			"forge": "MOSAIC",
+			"fabric": "MOSAIC"
+		},
+		{
+			"forge": "SIGN",
+			"fabric": "SIGN"
+		},
+		{
+			"forge": "SLAB",
+			"fabric": "SLAB"
+		},
+		{
+			"forge": "STAIRS",
+			"fabric": "STAIRS"
+		},
+		{
+			"forge": "PRESSURE_PLATE",
+			"fabric": "PRESSURE_PLATE"
+		},
+		{
+			"forge": "POLISHED",
+			"fabric": "POLISHED"
+		},
+		{
+			"forge": "TRAPDOOR",
+			"fabric": "TRAPDOOR"
+		},
+		{
+			"forge": "WALL",
+			"fabric": "WALL"
+		},
+		{
+			"forge": "WALL_SIGN",
+			"fabric": "WALL_SIGN"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.PlayTagWithOtherKids",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.PlayTagWithOtherKids",
+			"fabric": "net.minecraft.entity.ai.brain.task.PlayWithVillagerBabiesTask"
+		},
+		{
+			"forge": "MAX_FLEE_XZ_DIST",
+			"fabric": "HORIZONTAL_RANGE"
+		},
+		{
+			"forge": "MAX_FLEE_XZ_DIST",
+			"fabric": "HORIZONTAL_RANGE"
+		},
+		{
+			"forge": "MAX_FLEE_Y_DIST",
+			"fabric": "VERTICAL_RANGE"
+		},
+		{
+			"forge": "FLEE_SPEED_MODIFIER",
+			"fabric": "WALK_SPEED"
+		},
+		{
+			"forge": "CHASE_SPEED_MODIFIER",
+			"fabric": "PLAYING_WALK_SPEED"
+		},
+		{
+			"forge": "MAX_CHASERS_PER_TARGET",
+			"fabric": "MAX_BABY_INTERACTION_COUNT"
+		},
+		{
+			"forge": "AVERAGE_WAIT_TIME_BETWEEN_RUNS",
+			"fabric": "RUN_CHANCE"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "chaseKid(MemoryAccessor<?, LivingEntity> arg0, MemoryAccessor<?, PositionTracker> arg1, MemoryAccessor<?, WalkTarget> arg2, LivingEntity arg3)",
+			"fabric": "setPlayTarget(MemoryQueryResult<?, LivingEntity> interactionTarget, MemoryQueryResult<?, LookTarget> lookTarget, MemoryQueryResult<?, WalkTarget> walkTarget, LivingEntity baby)"
+		},
+		{
+			"forge": "findSomeoneBeingChased(List<LivingEntity> arg0)",
+			"fabric": "getLeastPopularBabyInteractionTarget(List<LivingEntity> babies)"
+		},
+		{
+			"forge": "checkHowManyChasersEachFriendHas(List<LivingEntity> arg0)",
+			"fabric": "getBabyInteractionTargetCounts(List<LivingEntity> babies)"
+		},
+		{
+			"forge": "whoAreYouChasing(LivingEntity arg0)",
+			"fabric": "getInteractionTarget(LivingEntity baby)"
+		},
+		{
+			"forge": "isChasingSomeone(LivingEntity arg0)",
+			"fabric": "hasInteractionTarget(LivingEntity baby)"
+		},
+		{
+			"forge": "isFriendChasingMe(LivingEntity arg0, LivingEntity arg1)",
+			"fabric": "isInteractionTargetOf(LivingEntity entity, LivingEntity baby)"
+		}
+	]
+}

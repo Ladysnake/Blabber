@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.SavedDataUUIDFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.SavedDataUUIDFix",
+			"fabric": "net.minecraft.datafixer.fix.PersistentStateUuidFix"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		}
+	]
+}

@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.world.entity.ai.attributes.AttributeMap",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.attributes.AttributeMap",
+			"fabric": "net.minecraft.entity.attribute.AttributeContainer"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "attributes",
+			"fabric": "custom"
+		},
+		{
+			"forge": "dirtyAttributes",
+			"fabric": "tracked"
+		},
+		{
+			"forge": "supplier",
+			"fabric": "fallback"
+		},
+		{
+			"forge": "onAttributeModified(AttributeInstance arg0)",
+			"fabric": "updateTrackedStatus(EntityAttributeInstance instance)"
+		},
+		{
+			"forge": "onAttributeModified(AttributeInstance arg0)",
+			"fabric": "updateTrackedStatus(EntityAttributeInstance instance)"
+		},
+		{
+			"forge": "getDirtyAttributes()",
+			"fabric": "getTracked()"
+		},
+		{
+			"forge": "getSyncableAttributes()",
+			"fabric": "getAttributesToSend()"
+		},
+		{
+			"forge": "getInstance(Attribute arg0)",
+			"fabric": "getCustomInstance(EntityAttribute attribute)"
+		},
+		{
+			"forge": "getInstance(Holder<Attribute> arg0)",
+			"fabric": "getCustomInstance(RegistryEntry<EntityAttribute> attribute)"
+		},
+		{
+			"forge": "hasAttribute(Attribute arg0)",
+			"fabric": "hasAttribute(EntityAttribute attribute)"
+		},
+		{
+			"forge": "hasAttribute(Holder<Attribute> arg0)",
+			"fabric": "hasAttribute(RegistryEntry<EntityAttribute> attribute)"
+		},
+		{
+			"forge": "hasModifier(Attribute arg0, UUID arg1)",
+			"fabric": "hasModifierForAttribute(EntityAttribute attribute, UUID uuid)"
+		},
+		{
+			"forge": "hasModifier(Holder<Attribute> arg0, UUID arg1)",
+			"fabric": "hasModifierForAttribute(RegistryEntry<EntityAttribute> attribute, UUID uuid)"
+		},
+		{
+			"forge": "getValue(Attribute arg0)",
+			"fabric": "getValue(EntityAttribute attribute)"
+		},
+		{
+			"forge": "getBaseValue(Attribute arg0)",
+			"fabric": "getBaseValue(EntityAttribute attribute)"
+		},
+		{
+			"forge": "getModifierValue(Attribute arg0, UUID arg1)",
+			"fabric": "getModifierValue(EntityAttribute attribute, UUID uuid)"
+		},
+		{
+			"forge": "getModifierValue(Holder<Attribute> arg0, UUID arg1)",
+			"fabric": "getModifierValue(RegistryEntry<EntityAttribute> attribute, UUID uuid)"
+		},
+		{
+			"forge": "removeAttributeModifiers(com.google.common.collect.Multimap<Attribute, AttributeModifier> arg0)",
+			"fabric": "removeModifiers(com.google.common.collect.Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers)"
+		},
+		{
+			"forge": "addTransientAttributeModifiers(com.google.common.collect.Multimap<Attribute, AttributeModifier> arg0)",
+			"fabric": "addTemporaryModifiers(com.google.common.collect.Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers)"
+		},
+		{
+			"forge": "assignValues(AttributeMap arg0)",
+			"fabric": "setFrom(AttributeContainer other)"
+		},
+		{
+			"forge": "save()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "load(ListTag arg0)",
+			"fabric": "readNbt(NbtList nbt)"
+		}
+	]
+}

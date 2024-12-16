@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.block.entity.SculkCatalystBlockEntity$CatalystListener",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.SculkCatalystBlockEntity$CatalystListener",
+			"fabric": "net.minecraft.block.entity.SculkCatalystBlockEntity$Listener"
+		},
+		{
+			"forge": "PULSE_TICKS",
+			"fabric": "RANGE"
+		},
+		{
+			"forge": "PULSE_TICKS",
+			"fabric": "RANGE"
+		},
+		{
+			"forge": "sculkSpreader",
+			"fabric": "spreadManager"
+		},
+		{
+			"forge": "blockState",
+			"fabric": "state"
+		},
+		{
+			"forge": "positionSource",
+			"fabric": "positionSource"
+		},
+		{
+			"forge": "getListenerSource()",
+			"fabric": "getPositionSource()"
+		},
+		{
+			"forge": "getListenerSource()",
+			"fabric": "getPositionSource()"
+		},
+		{
+			"forge": "getListenerRadius()",
+			"fabric": "getRange()"
+		},
+		{
+			"forge": "getDeliveryMode()",
+			"fabric": "getTriggerOrder()"
+		},
+		{
+			"forge": "handleGameEvent(ServerLevel arg0, GameEvent arg1, GameEvent$Context arg2, Vec3 arg3)",
+			"fabric": "listen(ServerWorld arg0, GameEvent arg1, GameEvent$Emitter arg2, Vec3d arg3)"
+		},
+		{
+			"forge": "getSculkSpreader()",
+			"fabric": "getSpreadManager()"
+		},
+		{
+			"forge": "bloom(ServerLevel arg0, BlockPos arg1, BlockState arg2, RandomSource arg3)",
+			"fabric": "bloom(ServerWorld world, BlockPos pos, BlockState state, Random random)"
+		},
+		{
+			"forge": "tryAwardItSpreadsAdvancement(Level arg0, LivingEntity arg1)",
+			"fabric": "triggerCriteria(World world, LivingEntity deadEntity)"
+		}
+	]
+}

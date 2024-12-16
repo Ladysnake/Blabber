@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.LandOnOwnersShoulderGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.LandOnOwnersShoulderGoal",
+			"fabric": "net.minecraft.entity.ai.goal.SitOnOwnerShoulderGoal"
+		},
+		{
+			"forge": "entity",
+			"fabric": "tameable"
+		},
+		{
+			"forge": "entity",
+			"fabric": "tameable"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "isSittingOnShoulder",
+			"fabric": "mounted"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "isInterruptable()",
+			"fabric": "canStop()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

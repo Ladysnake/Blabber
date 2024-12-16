@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.advancements.critereon.LootTableTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.LootTableTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.PlayerGeneratesContainerLootCriterion$Conditions"
+		},
+		{
+			"forge": "lootTable",
+			"fabric": "lootTable"
+		},
+		{
+			"forge": "lootTable",
+			"fabric": "lootTable"
+		},
+		{
+			"forge": "lootTableUsed(ResourceLocation arg0)",
+			"fabric": "create(Identifier lootTable)"
+		},
+		{
+			"forge": "lootTableUsed(ResourceLocation arg0)",
+			"fabric": "create(Identifier lootTable)"
+		},
+		{
+			"forge": "matches(ResourceLocation arg0)",
+			"fabric": "test(Identifier lootTable)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.item.BundleItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.BundleItem",
+			"fabric": "net.minecraft.item.BundleItem"
+		},
+		{
+			"forge": "TAG_ITEMS",
+			"fabric": "ITEMS_KEY"
+		},
+		{
+			"forge": "TAG_ITEMS",
+			"fabric": "ITEMS_KEY"
+		},
+		{
+			"forge": "MAX_WEIGHT",
+			"fabric": "MAX_STORAGE"
+		},
+		{
+			"forge": "BUNDLE_IN_BUNDLE_WEIGHT",
+			"fabric": "BUNDLE_ITEM_OCCUPANCY"
+		},
+		{
+			"forge": "BAR_COLOR",
+			"fabric": "ITEM_BAR_COLOR"
+		},
+		{
+			"forge": "getFullnessDisplay(ItemStack arg0)",
+			"fabric": "getAmountFilled(ItemStack stack)"
+		},
+		{
+			"forge": "getFullnessDisplay(ItemStack arg0)",
+			"fabric": "getAmountFilled(ItemStack stack)"
+		},
+		{
+			"forge": "overrideStackedOnOther(ItemStack arg0, Slot arg1, ClickAction arg2, Player arg3)",
+			"fabric": "onStackClicked(ItemStack arg0, Slot arg1, ClickType arg2, PlayerEntity arg3)"
+		},
+		{
+			"forge": "overrideOtherStackedOnMe(ItemStack arg0, ItemStack arg1, Slot arg2, ClickAction arg3, Player arg4, SlotAccess arg5)",
+			"fabric": "onClicked(ItemStack arg0, ItemStack arg1, Slot arg2, ClickType arg3, PlayerEntity arg4, StackReference arg5)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "isBarVisible(ItemStack arg0)",
+			"fabric": "isItemBarVisible(ItemStack arg0)"
+		},
+		{
+			"forge": "getBarWidth(ItemStack arg0)",
+			"fabric": "getItemBarStep(ItemStack arg0)"
+		},
+		{
+			"forge": "getBarColor(ItemStack arg0)",
+			"fabric": "getItemBarColor(ItemStack arg0)"
+		},
+		{
+			"forge": "add(ItemStack arg0, ItemStack arg1)",
+			"fabric": "addToBundle(ItemStack bundle, ItemStack stack)"
+		},
+		{
+			"forge": "getMatchingItem(ItemStack arg0, ListTag arg1)",
+			"fabric": "canMergeStack(ItemStack stack, NbtList items)"
+		},
+		{
+			"forge": "getWeight(ItemStack arg0)",
+			"fabric": "getItemOccupancy(ItemStack stack)"
+		},
+		{
+			"forge": "getContentWeight(ItemStack arg0)",
+			"fabric": "getBundleOccupancy(ItemStack stack)"
+		},
+		{
+			"forge": "removeOne(ItemStack arg0)",
+			"fabric": "removeFirstStack(ItemStack stack)"
+		},
+		{
+			"forge": "dropContents(ItemStack arg0, Player arg1)",
+			"fabric": "dropAllBundledItems(ItemStack stack, PlayerEntity player)"
+		},
+		{
+			"forge": "getContents(ItemStack arg0)",
+			"fabric": "getBundledStacks(ItemStack stack)"
+		},
+		{
+			"forge": "getTooltipImage(ItemStack arg0)",
+			"fabric": "getTooltipData(ItemStack arg0)"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack arg0, World arg1, List<Text> arg2, TooltipContext arg3)"
+		},
+		{
+			"forge": "onDestroyed(ItemEntity arg0)",
+			"fabric": "onItemEntityDestroyed(ItemEntity arg0)"
+		},
+		{
+			"forge": "playRemoveOneSound(Entity arg0)",
+			"fabric": "playRemoveOneSound(Entity entity)"
+		},
+		{
+			"forge": "playInsertSound(Entity arg0)",
+			"fabric": "playInsertSound(Entity entity)"
+		},
+		{
+			"forge": "playDropContentsSound(Entity arg0)",
+			"fabric": "playDropContentsSound(Entity entity)"
+		}
+	]
+}

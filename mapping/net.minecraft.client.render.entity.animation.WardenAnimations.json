@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.animation.definitions.WardenAnimation",
+	"items": [
+		{
+			"forge": "net.minecraft.client.animation.definitions.WardenAnimation",
+			"fabric": "net.minecraft.client.render.entity.animation.WardenAnimations"
+		},
+		{
+			"forge": "WARDEN_EMERGE",
+			"fabric": "EMERGING"
+		},
+		{
+			"forge": "WARDEN_EMERGE",
+			"fabric": "EMERGING"
+		},
+		{
+			"forge": "WARDEN_DIG",
+			"fabric": "DIGGING"
+		},
+		{
+			"forge": "WARDEN_ROAR",
+			"fabric": "ROARING"
+		},
+		{
+			"forge": "WARDEN_SNIFF",
+			"fabric": "SNIFFING"
+		},
+		{
+			"forge": "WARDEN_ATTACK",
+			"fabric": "ATTACKING"
+		},
+		{
+			"forge": "WARDEN_SONIC_BOOM",
+			"fabric": "CHARGING_SONIC_BOOM"
+		}
+	]
+}

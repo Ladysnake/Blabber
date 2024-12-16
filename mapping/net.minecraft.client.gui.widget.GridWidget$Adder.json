@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.gui.layouts.GridLayout$RowHelper",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.layouts.GridLayout$RowHelper",
+			"fabric": "net.minecraft.client.gui.widget.GridWidget$Adder"
+		},
+		{
+			"forge": "columns",
+			"fabric": "columns"
+		},
+		{
+			"forge": "columns",
+			"fabric": "columns"
+		},
+		{
+			"forge": "index",
+			"fabric": "totalOccupiedColumns"
+		},
+		{
+			"forge": "addChild(T arg0)",
+			"fabric": "add(T widget)"
+		},
+		{
+			"forge": "addChild(T arg0)",
+			"fabric": "add(T widget)"
+		},
+		{
+			"forge": "addChild(T arg0, int arg1)",
+			"fabric": "add(T widget, int occupiedColumns)"
+		},
+		{
+			"forge": "addChild(T arg0, LayoutSettings arg1)",
+			"fabric": "add(T widget, Positioner positioner)"
+		},
+		{
+			"forge": "addChild(T arg0, int arg1, LayoutSettings arg2)",
+			"fabric": "add(T widget, int occupiedColumns, Positioner positioner)"
+		},
+		{
+			"forge": "getGrid()",
+			"fabric": "getGridWidget()"
+		},
+		{
+			"forge": "newCellSettings()",
+			"fabric": "copyPositioner()"
+		},
+		{
+			"forge": "defaultCellSetting()",
+			"fabric": "getMainPositioner()"
+		}
+	]
+}

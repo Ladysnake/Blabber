@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.advancements.AdvancementProgress",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.AdvancementProgress",
+			"fabric": "net.minecraft.advancement.AdvancementProgress"
+		},
+		{
+			"forge": "criteria",
+			"fabric": "criteriaProgresses"
+		},
+		{
+			"forge": "criteria",
+			"fabric": "criteriaProgresses"
+		},
+		{
+			"forge": "requirements",
+			"fabric": "requirements"
+		},
+		{
+			"forge": "update(Map<String, Criterion> arg0, String[][] arg1)",
+			"fabric": "init(Map<String, AdvancementCriterion> criteria, String[][] requirements)"
+		},
+		{
+			"forge": "update(Map<String, Criterion> arg0, String[][] arg1)",
+			"fabric": "init(Map<String, AdvancementCriterion> criteria, String[][] requirements)"
+		},
+		{
+			"forge": "isDone()",
+			"fabric": "isDone()"
+		},
+		{
+			"forge": "hasProgress()",
+			"fabric": "isAnyObtained()"
+		},
+		{
+			"forge": "grantProgress(String arg0)",
+			"fabric": "obtain(String name)"
+		},
+		{
+			"forge": "revokeProgress(String arg0)",
+			"fabric": "reset(String name)"
+		},
+		{
+			"forge": "serializeToNetwork(FriendlyByteBuf arg0)",
+			"fabric": "toPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "fromNetwork(FriendlyByteBuf arg0)",
+			"fabric": "fromPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "getCriterion(String arg0)",
+			"fabric": "getCriterionProgress(String name)"
+		},
+		{
+			"forge": "getPercent()",
+			"fabric": "getProgressBarPercentage()"
+		},
+		{
+			"forge": "getProgressText()",
+			"fabric": "getProgressBarFraction()"
+		},
+		{
+			"forge": "countCompletedRequirements()",
+			"fabric": "countObtainedRequirements()"
+		},
+		{
+			"forge": "getRemainingCriteria()",
+			"fabric": "getUnobtainedCriteria()"
+		},
+		{
+			"forge": "getCompletedCriteria()",
+			"fabric": "getObtainedCriteria()"
+		},
+		{
+			"forge": "getFirstProgressDate()",
+			"fabric": "getEarliestProgressObtainDate()"
+		},
+		{
+			"forge": "compareTo(AdvancementProgress arg0)",
+			"fabric": "compareTo(AdvancementProgress arg0)"
+		}
+	]
+}

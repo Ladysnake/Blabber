@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.gui.components.toasts.RecipeToast",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.toasts.RecipeToast",
+			"fabric": "net.minecraft.client.toast.RecipeToast"
+		},
+		{
+			"forge": "DISPLAY_TIME",
+			"fabric": "DEFAULT_DURATION_MS"
+		},
+		{
+			"forge": "DISPLAY_TIME",
+			"fabric": "DEFAULT_DURATION_MS"
+		},
+		{
+			"forge": "TITLE_TEXT",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "DESCRIPTION_TEXT",
+			"fabric": "DESCRIPTION"
+		},
+		{
+			"forge": "recipes",
+			"fabric": "recipes"
+		},
+		{
+			"forge": "lastChanged",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "changed",
+			"fabric": "justUpdated"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, ToastComponent arg1, long arg2)",
+			"fabric": "draw(DrawContext arg0, ToastManager arg1, long arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, ToastComponent arg1, long arg2)",
+			"fabric": "draw(DrawContext arg0, ToastManager arg1, long arg2)"
+		},
+		{
+			"forge": "addItem(Recipe<?> arg0)",
+			"fabric": "addRecipes(Recipe<?> recipes)"
+		},
+		{
+			"forge": "addOrUpdate(ToastComponent arg0, Recipe<?> arg1)",
+			"fabric": "show(ToastManager manager, Recipe<?> recipes)"
+		}
+	]
+}

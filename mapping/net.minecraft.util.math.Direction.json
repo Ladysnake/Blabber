@@ -1,0 +1,253 @@
+{
+	"title": "net.minecraft.core.Direction",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Direction",
+			"fabric": "net.minecraft.util.math.Direction"
+		},
+		{
+			"forge": "DOWN",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "DOWN",
+			"fabric": "DOWN"
+		},
+		{
+			"forge": "UP",
+			"fabric": "UP"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "NORTH"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "SOUTH"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WEST"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "EAST"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "VERTICAL_CODEC",
+			"fabric": "VERTICAL_CODEC"
+		},
+		{
+			"forge": "data3d",
+			"fabric": "id"
+		},
+		{
+			"forge": "oppositeIndex",
+			"fabric": "idOpposite"
+		},
+		{
+			"forge": "data2d",
+			"fabric": "idHorizontal"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "axis",
+			"fabric": "axis"
+		},
+		{
+			"forge": "axisDirection",
+			"fabric": "direction"
+		},
+		{
+			"forge": "normal",
+			"fabric": "vector"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "ALL"
+		},
+		{
+			"forge": "BY_3D_DATA",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "BY_2D_DATA",
+			"fabric": "HORIZONTAL"
+		},
+		{
+			"forge": "orderedByNearest(Entity arg0)",
+			"fabric": "getEntityFacingOrder(Entity entity)"
+		},
+		{
+			"forge": "orderedByNearest(Entity arg0)",
+			"fabric": "getEntityFacingOrder(Entity entity)"
+		},
+		{
+			"forge": "makeDirectionArray(Direction arg0, Direction arg1, Direction arg2)",
+			"fabric": "listClosest(Direction first, Direction second, Direction third)"
+		},
+		{
+			"forge": "rotate(org.joml.Matrix4f arg0, Direction arg1)",
+			"fabric": "transform(org.joml.Matrix4f matrix, Direction direction)"
+		},
+		{
+			"forge": "allShuffled(RandomSource arg0)",
+			"fabric": "shuffle(Random random)"
+		},
+		{
+			"forge": "stream()",
+			"fabric": "stream()"
+		},
+		{
+			"forge": "getRotation()",
+			"fabric": "getRotationQuaternion()"
+		},
+		{
+			"forge": "get3DDataValue()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "get2DDataValue()",
+			"fabric": "getHorizontal()"
+		},
+		{
+			"forge": "getAxisDirection()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "getFacingAxis(Entity arg0, Direction$Axis arg1)",
+			"fabric": "getLookDirectionForAxis(Entity entity, Direction$Axis axis)"
+		},
+		{
+			"forge": "getOpposite()",
+			"fabric": "getOpposite()"
+		},
+		{
+			"forge": "getClockWise(Direction$Axis arg0)",
+			"fabric": "rotateClockwise(Direction$Axis axis)"
+		},
+		{
+			"forge": "getCounterClockWise(Direction$Axis arg0)",
+			"fabric": "rotateCounterclockwise(Direction$Axis axis)"
+		},
+		{
+			"forge": "getClockWise()",
+			"fabric": "rotateYClockwise()"
+		},
+		{
+			"forge": "getClockWiseX()",
+			"fabric": "rotateXClockwise()"
+		},
+		{
+			"forge": "getCounterClockWiseX()",
+			"fabric": "rotateXCounterclockwise()"
+		},
+		{
+			"forge": "getClockWiseZ()",
+			"fabric": "rotateZClockwise()"
+		},
+		{
+			"forge": "getCounterClockWiseZ()",
+			"fabric": "rotateZCounterclockwise()"
+		},
+		{
+			"forge": "getCounterClockWise()",
+			"fabric": "rotateYCounterclockwise()"
+		},
+		{
+			"forge": "getStepX()",
+			"fabric": "getOffsetX()"
+		},
+		{
+			"forge": "getStepY()",
+			"fabric": "getOffsetY()"
+		},
+		{
+			"forge": "getStepZ()",
+			"fabric": "getOffsetZ()"
+		},
+		{
+			"forge": "step()",
+			"fabric": "getUnitVector()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getAxis()",
+			"fabric": "getAxis()"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "byName(String name)"
+		},
+		{
+			"forge": "from3DDataValue(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "from2DDataValue(int arg0)",
+			"fabric": "fromHorizontal(int value)"
+		},
+		{
+			"forge": "fromDelta(int arg0, int arg1, int arg2)",
+			"fabric": "fromVector(int x, int y, int z)"
+		},
+		{
+			"forge": "fromYRot(double arg0)",
+			"fabric": "fromRotation(double rotation)"
+		},
+		{
+			"forge": "fromAxisAndDirection(Direction$Axis arg0, Direction$AxisDirection arg1)",
+			"fabric": "from(Direction$Axis axis, Direction$AxisDirection direction)"
+		},
+		{
+			"forge": "toYRot()",
+			"fabric": "asRotation()"
+		},
+		{
+			"forge": "getRandom(RandomSource arg0)",
+			"fabric": "random(Random random)"
+		},
+		{
+			"forge": "getNearest(double arg0, double arg1, double arg2)",
+			"fabric": "getFacing(double x, double y, double z)"
+		},
+		{
+			"forge": "getNearest(float arg0, float arg1, float arg2)",
+			"fabric": "getFacing(float x, float y, float z)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "verifyVertical(Direction arg0)",
+			"fabric": "validateVertical(Direction direction)"
+		},
+		{
+			"forge": "get(Direction$AxisDirection arg0, Direction$Axis arg1)",
+			"fabric": "get(Direction$AxisDirection direction, Direction$Axis axis)"
+		},
+		{
+			"forge": "getNormal()",
+			"fabric": "getVector()"
+		},
+		{
+			"forge": "isFacingAngle(float arg0)",
+			"fabric": "pointsTo(float yaw)"
+		}
+	]
+}

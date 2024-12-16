@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.item.HorseArmorItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.HorseArmorItem",
+			"fabric": "net.minecraft.item.HorseArmorItem"
+		},
+		{
+			"forge": "TEX_FOLDER",
+			"fabric": "ENTITY_TEXTURE_PREFIX"
+		},
+		{
+			"forge": "TEX_FOLDER",
+			"fabric": "ENTITY_TEXTURE_PREFIX"
+		},
+		{
+			"forge": "protection",
+			"fabric": "bonus"
+		},
+		{
+			"forge": "texture",
+			"fabric": "entityTexture"
+		},
+		{
+			"forge": "getTexture()",
+			"fabric": "getEntityTexture()"
+		},
+		{
+			"forge": "getTexture()",
+			"fabric": "getEntityTexture()"
+		},
+		{
+			"forge": "getProtection()",
+			"fabric": "getBonus()"
+		}
+	]
+}

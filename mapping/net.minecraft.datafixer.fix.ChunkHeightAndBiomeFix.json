@@ -1,0 +1,153 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix",
+			"fabric": "net.minecraft.datafixer.fix.ChunkHeightAndBiomeFix"
+		},
+		{
+			"forge": "DATAFIXER_CONTEXT_TAG",
+			"fabric": "CONTEXT"
+		},
+		{
+			"forge": "DATAFIXER_CONTEXT_TAG",
+			"fabric": "CONTEXT"
+		},
+		{
+			"forge": "NAME",
+			"fabric": "NAME"
+		},
+		{
+			"forge": "OLD_SECTION_COUNT",
+			"fabric": "CHUNK_SECTIONS_IN_OLD_CHUNK"
+		},
+		{
+			"forge": "NEW_SECTION_COUNT",
+			"fabric": "CHUNK_SECTIONS_IN_NEW_CHUNK"
+		},
+		{
+			"forge": "NEW_MIN_SECTION_Y",
+			"fabric": "MIN_CHUNK_SECTION_Y"
+		},
+		{
+			"forge": "BLOCKS_PER_SECTION",
+			"fabric": "field_36214"
+		},
+		{
+			"forge": "LONGS_PER_SECTION",
+			"fabric": "field_36215"
+		},
+		{
+			"forge": "HEIGHTMAP_BITS",
+			"fabric": "field_35022"
+		},
+		{
+			"forge": "HEIGHTMAP_MASK",
+			"fabric": "field_35023"
+		},
+		{
+			"forge": "HEIGHTMAP_OFFSET",
+			"fabric": "field_35024"
+		},
+		{
+			"forge": "HEIGHTMAP_TYPES",
+			"fabric": "HEIGHTMAP_KEYS"
+		},
+		{
+			"forge": "STATUS_IS_OR_AFTER_SURFACE",
+			"fabric": "STATUSES_TO_SKIP_UPDATE"
+		},
+		{
+			"forge": "STATUS_IS_OR_AFTER_NOISE",
+			"fabric": "field_35668"
+		},
+		{
+			"forge": "BLOCKS_BEFORE_FEATURE_STATUS",
+			"fabric": "SURFACE_BLOCKS"
+		},
+		{
+			"forge": "BIOME_CONTAINER_LAYER_SIZE",
+			"fabric": "field_35026"
+		},
+		{
+			"forge": "BIOME_CONTAINER_SIZE",
+			"fabric": "field_35027"
+		},
+		{
+			"forge": "BIOME_CONTAINER_TOP_LAYER_OFFSET",
+			"fabric": "field_35028"
+		},
+		{
+			"forge": "DEFAULT_BIOME",
+			"fabric": "PLAINS_ID"
+		},
+		{
+			"forge": "BIOMES_BY_ID",
+			"fabric": "RAW_BIOME_IDS"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixStatus(com.mojang.serialization.Dynamic<?> level, Set<String> blocks)"
+		},
+		{
+			"forge": "predictChunkStatusBeforeSurface(com.mojang.serialization.Dynamic<?> arg0, Set<String> arg1)",
+			"fabric": "fixStatus(com.mojang.serialization.Dynamic<?> level, Set<String> blocks)"
+		},
+		{
+			"forge": "getBiomeContainers(com.mojang.serialization.Dynamic<?> arg0, boolean arg1, int arg2, org.apache.commons.lang3.mutable.MutableBoolean arg3)",
+			"fabric": "fixBiomes(com.mojang.serialization.Dynamic<?> level, boolean overworld, int arg2, org.apache.commons.lang3.mutable.MutableBoolean heightAlreadyUpdated)"
+		},
+		{
+			"forge": "getOldBiome(int[] arg0, int arg1)",
+			"fabric": "getClamped(int[] is, int index)"
+		},
+		{
+			"forge": "updateChunkTag(com.mojang.serialization.Dynamic<?> arg0, boolean arg1, boolean arg2, boolean arg3, Supplier<ChunkProtoTickListFix$PoorMansPalettedContainer> arg4)",
+			"fabric": "fixLevel(com.mojang.serialization.Dynamic<?> level, boolean overworld, boolean heightAlreadyUpdated, boolean atNoiseStatus, Supplier<ProtoChunkTickListFix$class_6741> arg4)"
+		},
+		{
+			"forge": "shiftUpgradeData(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "fixUpgradeData(com.mojang.serialization.Dynamic<T> upgradeData)"
+		},
+		{
+			"forge": "updateCarvingMasks(com.mojang.serialization.Dynamic<?> arg0, int arg1, int arg2)",
+			"fabric": "fixCarvingMasks(com.mojang.serialization.Dynamic<?> level, int sectionsPerChunk, int oldBottomSectionY)"
+		},
+		{
+			"forge": "addPaddingEntries(com.mojang.serialization.Dynamic<?> arg0, String arg1)",
+			"fabric": "fixChunkSectionList(com.mojang.serialization.Dynamic<?> level, String key)"
+		},
+		{
+			"forge": "updateHeightmaps(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixHeightmaps(com.mojang.serialization.Dynamic<?> level)"
+		},
+		{
+			"forge": "getFixedHeightmap(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixHeightmap(com.mojang.serialization.Dynamic<?> heightmap)"
+		},
+		{
+			"forge": "makeBiomeContainer(com.mojang.serialization.Dynamic<?> arg0, it.unimi.dsi.fastutil.ints.Int2IntFunction arg1)",
+			"fabric": "fixBiomes(com.mojang.serialization.Dynamic<?> level, it.unimi.dsi.fastutil.ints.Int2IntFunction biomeGetter)"
+		},
+		{
+			"forge": "makePalettedContainer(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixPalette(com.mojang.serialization.Dynamic<?> palette)"
+		},
+		{
+			"forge": "makePalettedContainer(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.Dynamic<?> arg1)",
+			"fabric": "fixPaletteWithData(com.mojang.serialization.Dynamic<?> palette, com.mojang.serialization.Dynamic<?> data)"
+		},
+		{
+			"forge": "makeOptimizedPalettedContainer(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.Dynamic<?> arg1)",
+			"fabric": "fixPalette(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.Dynamic<?> arg1)"
+		},
+		{
+			"forge": "padPaletteEntries(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.Dynamic<?> arg1, List<com.mojang.serialization.Dynamic<?>> arg2)",
+			"fabric": "method_39781(com.mojang.serialization.Dynamic<?> arg0, com.mojang.serialization.Dynamic<?> arg1, List<com.mojang.serialization.Dynamic<?>> arg2)"
+		},
+		{
+			"forge": "ceillog2(int arg0)",
+			"fabric": "ceilLog2(int value)"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityBlockStateFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityBlockStateFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityBlockStateFix"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "BLOCK_NAME_TO_ID"
+		},
+		{
+			"forge": "MAP",
+			"fabric": "BLOCK_NAME_TO_ID"
+		},
+		{
+			"forge": "getBlockId(String arg0)",
+			"fabric": "getNumericalBlockId(String blockId)"
+		},
+		{
+			"forge": "getBlockId(String arg0)",
+			"fabric": "getNumericalBlockId(String blockId)"
+		},
+		{
+			"forge": "updateFallingBlock(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "fixFallingBlock(com.mojang.datafixers.Typed<?> fallingBlock)"
+		},
+		{
+			"forge": "updateBlockToBlockState(com.mojang.datafixers.Typed<?> arg0, String arg1, String arg2, String arg3)",
+			"fabric": "mergeIdAndData(com.mojang.datafixers.Typed<?> entity, String oldIdKey, String oldDataKey, String newStateKey)"
+		},
+		{
+			"forge": "updateEntity(com.mojang.datafixers.Typed<?> arg0, String arg1, Function<com.mojang.datafixers.Typed<?>, com.mojang.datafixers.Typed<?>> arg2)",
+			"fabric": "useFunction(com.mojang.datafixers.Typed<?> entity, String entityId, Function<com.mojang.datafixers.Typed<?>, com.mojang.datafixers.Typed<?>> function)"
+		}
+	]
+}

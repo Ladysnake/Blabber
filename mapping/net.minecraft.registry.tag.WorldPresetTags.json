@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.tags.WorldPresetTags",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.WorldPresetTags",
+			"fabric": "net.minecraft.registry.tag.WorldPresetTags"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "EXTENDED",
+			"fabric": "EXTENDED"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		},
+		{
+			"forge": "create(String arg0)",
+			"fabric": "of(String id)"
+		}
+	]
+}

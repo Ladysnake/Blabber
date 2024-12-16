@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.HorseInventoryScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.HorseInventoryScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.HorseScreen"
+		},
+		{
+			"forge": "HORSE_INVENTORY_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "HORSE_INVENTORY_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "horse",
+			"fabric": "entity"
+		},
+		{
+			"forge": "xMouse",
+			"fabric": "mouseX"
+		},
+		{
+			"forge": "yMouse",
+			"fabric": "mouseY"
+		},
+		{
+			"forge": "renderBg(GuiGraphics arg0, float arg1, int arg2, int arg3)",
+			"fabric": "drawBackground(DrawContext arg0, float arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "renderBg(GuiGraphics arg0, float arg1, int arg2, int arg3)",
+			"fabric": "drawBackground(DrawContext arg0, float arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

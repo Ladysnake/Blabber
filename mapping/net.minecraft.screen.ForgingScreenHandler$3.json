@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.inventory.ItemCombinerMenu$3",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.ItemCombinerMenu$3",
+			"fabric": "net.minecraft.screen.ForgingScreenHandler$3"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "setChanged()",
+			"fabric": "markDirty()"
+		}
+	]
+}

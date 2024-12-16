@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.stats.ChunkGenStat",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.stats.ChunkGenStat",
+			"fabric": "net.minecraft.util.profiling.jfr.sample.ChunkGenerationSample"
+		},
+		{
+			"forge": "duration",
+			"fabric": "duration"
+		},
+		{
+			"forge": "duration",
+			"fabric": "duration"
+		},
+		{
+			"forge": "chunkPos",
+			"fabric": "chunkPos"
+		},
+		{
+			"forge": "worldPos",
+			"fabric": "centerPos"
+		},
+		{
+			"forge": "status",
+			"fabric": "chunkStatus"
+		},
+		{
+			"forge": "level",
+			"fabric": "worldKey"
+		},
+		{
+			"forge": "from(RecordedEvent arg0)",
+			"fabric": "fromEvent(RecordedEvent event)"
+		},
+		{
+			"forge": "from(RecordedEvent arg0)",
+			"fabric": "fromEvent(RecordedEvent event)"
+		},
+		{
+			"forge": "duration()",
+			"fabric": "duration()"
+		},
+		{
+			"forge": "chunkPos()",
+			"fabric": "chunkPos()"
+		},
+		{
+			"forge": "worldPos()",
+			"fabric": "centerPos()"
+		},
+		{
+			"forge": "status()",
+			"fabric": "chunkStatus()"
+		},
+		{
+			"forge": "level()",
+			"fabric": "worldKey()"
+		}
+	]
+}

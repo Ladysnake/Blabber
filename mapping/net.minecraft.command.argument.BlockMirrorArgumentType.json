@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.commands.arguments.TemplateMirrorArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.TemplateMirrorArgument",
+			"fabric": "net.minecraft.command.argument.BlockMirrorArgumentType"
+		},
+		{
+			"forge": "templateMirror()",
+			"fabric": "blockMirror()"
+		},
+		{
+			"forge": "templateMirror()",
+			"fabric": "blockMirror()"
+		},
+		{
+			"forge": "getMirror(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getBlockMirror(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String id)"
+		}
+	]
+}

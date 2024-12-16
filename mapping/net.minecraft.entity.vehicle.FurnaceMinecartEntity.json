@@ -1,0 +1,89 @@
+{
+	"title": "net.minecraft.world.entity.vehicle.MinecartFurnace",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.vehicle.MinecartFurnace",
+			"fabric": "net.minecraft.entity.vehicle.FurnaceMinecartEntity"
+		},
+		{
+			"forge": "DATA_ID_FUEL",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "DATA_ID_FUEL",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "fuel",
+			"fabric": "fuel"
+		},
+		{
+			"forge": "xPush",
+			"fabric": "pushX"
+		},
+		{
+			"forge": "zPush",
+			"fabric": "pushZ"
+		},
+		{
+			"forge": "INGREDIENT",
+			"fabric": "ACCEPTABLE_FUEL"
+		},
+		{
+			"forge": "getMinecartType()",
+			"fabric": "getMinecartType()"
+		},
+		{
+			"forge": "getMinecartType()",
+			"fabric": "getMinecartType()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getMaxSpeed()",
+			"fabric": "getMaxSpeed()"
+		},
+		{
+			"forge": "getDropItem()",
+			"fabric": "getItem()"
+		},
+		{
+			"forge": "moveAlongTrack(BlockPos arg0, BlockState arg1)",
+			"fabric": "moveOnRail(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "applyNaturalSlowdown()",
+			"fabric": "applySlowdown()"
+		},
+		{
+			"forge": "interact(Player arg0, InteractionHand arg1)",
+			"fabric": "interact(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "hasFuel()",
+			"fabric": "isLit()"
+		},
+		{
+			"forge": "setHasFuel(boolean arg0)",
+			"fabric": "setLit(boolean lit)"
+		},
+		{
+			"forge": "getDefaultDisplayBlockState()",
+			"fabric": "getDefaultContainedBlock()"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.state.properties.BedPart",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.state.properties.BedPart",
+			"fabric": "net.minecraft.block.enums.BedPart"
+		},
+		{
+			"forge": "HEAD",
+			"fabric": "HEAD"
+		},
+		{
+			"forge": "HEAD",
+			"fabric": "HEAD"
+		},
+		{
+			"forge": "FOOT",
+			"fabric": "FOOT"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

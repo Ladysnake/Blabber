@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.sounds.Weighted",
+	"items": [
+		{
+			"forge": "net.minecraft.client.sounds.Weighted",
+			"fabric": "net.minecraft.client.sound.SoundContainer"
+		},
+		{
+			"forge": "getWeight()",
+			"fabric": "getWeight()"
+		},
+		{
+			"forge": "getWeight()",
+			"fabric": "getWeight()"
+		},
+		{
+			"forge": "getSound(RandomSource arg0)",
+			"fabric": "getSound(Random random)"
+		},
+		{
+			"forge": "preloadIfRequired(SoundEngine arg0)",
+			"fabric": "preload(SoundSystem soundSystem)"
+		}
+	]
+}

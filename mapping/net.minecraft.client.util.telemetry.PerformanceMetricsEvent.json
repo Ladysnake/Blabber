@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.telemetry.events.PerformanceMetricsEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.events.PerformanceMetricsEvent",
+			"fabric": "net.minecraft.client.util.telemetry.PerformanceMetricsEvent"
+		},
+		{
+			"forge": "DEDICATED_MEMORY_KB",
+			"fabric": "MAX_MEMORY_KB"
+		},
+		{
+			"forge": "DEDICATED_MEMORY_KB",
+			"fabric": "MAX_MEMORY_KB"
+		},
+		{
+			"forge": "fpsSamples",
+			"fabric": "frameRateSamples"
+		},
+		{
+			"forge": "frameTimeSamples",
+			"fabric": "renderTimeSamples"
+		},
+		{
+			"forge": "usedMemorySamples",
+			"fabric": "usedMemorySamples"
+		},
+		{
+			"forge": "tick(TelemetryEventSender arg0)",
+			"fabric": "tick(TelemetrySender arg0)"
+		},
+		{
+			"forge": "tick(TelemetryEventSender arg0)",
+			"fabric": "tick(TelemetrySender arg0)"
+		},
+		{
+			"forge": "resetValues()",
+			"fabric": "clearSamples()"
+		},
+		{
+			"forge": "takeSample()",
+			"fabric": "sample()"
+		},
+		{
+			"forge": "takeUsedMemorySample()",
+			"fabric": "sampleUsedMemory()"
+		},
+		{
+			"forge": "sendEvent(TelemetryEventSender arg0)",
+			"fabric": "send(TelemetrySender arg0)"
+		},
+		{
+			"forge": "toKilobytes(long arg0)",
+			"fabric": "toKilos(long bytes)"
+		}
+	]
+}

@@ -1,0 +1,229 @@
+{
+	"title": "net.minecraft.world.level.block.RedStoneWireBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.RedStoneWireBlock",
+			"fabric": "net.minecraft.block.RedstoneWireBlock"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "WIRE_CONNECTION_NORTH"
+		},
+		{
+			"forge": "NORTH",
+			"fabric": "WIRE_CONNECTION_NORTH"
+		},
+		{
+			"forge": "EAST",
+			"fabric": "WIRE_CONNECTION_EAST"
+		},
+		{
+			"forge": "SOUTH",
+			"fabric": "WIRE_CONNECTION_SOUTH"
+		},
+		{
+			"forge": "WEST",
+			"fabric": "WIRE_CONNECTION_WEST"
+		},
+		{
+			"forge": "POWER",
+			"fabric": "POWER"
+		},
+		{
+			"forge": "PROPERTY_BY_DIRECTION",
+			"fabric": "DIRECTION_TO_WIRE_CONNECTION_PROPERTY"
+		},
+		{
+			"forge": "H",
+			"fabric": "field_31222"
+		},
+		{
+			"forge": "W",
+			"fabric": "field_31223"
+		},
+		{
+			"forge": "E",
+			"fabric": "field_31224"
+		},
+		{
+			"forge": "N",
+			"fabric": "field_31225"
+		},
+		{
+			"forge": "S",
+			"fabric": "field_31226"
+		},
+		{
+			"forge": "SHAPE_DOT",
+			"fabric": "DOT_SHAPE"
+		},
+		{
+			"forge": "SHAPES_FLOOR",
+			"fabric": "DIRECTION_TO_SIDE_SHAPE"
+		},
+		{
+			"forge": "SHAPES_UP",
+			"fabric": "DIRECTION_TO_UP_SHAPE"
+		},
+		{
+			"forge": "SHAPES_CACHE",
+			"fabric": "SHAPES"
+		},
+		{
+			"forge": "COLORS",
+			"fabric": "COLORS"
+		},
+		{
+			"forge": "PARTICLE_DENSITY",
+			"fabric": "field_31221"
+		},
+		{
+			"forge": "crossState",
+			"fabric": "dotState"
+		},
+		{
+			"forge": "shouldSignal",
+			"fabric": "wiresGivePower"
+		},
+		{
+			"forge": "calculateShape(BlockState arg0)",
+			"fabric": "getShapeForState(BlockState state)"
+		},
+		{
+			"forge": "calculateShape(BlockState arg0)",
+			"fabric": "getShapeForState(BlockState state)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "getConnectionState(BlockGetter arg0, BlockState arg1, BlockPos arg2)",
+			"fabric": "getPlacementState(BlockView world, BlockState state, BlockPos pos)"
+		},
+		{
+			"forge": "getMissingConnections(BlockGetter arg0, BlockState arg1, BlockPos arg2)",
+			"fabric": "getDefaultWireState(BlockView world, BlockState state, BlockPos pos)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "isCross(BlockState arg0)",
+			"fabric": "isFullyConnected(BlockState state)"
+		},
+		{
+			"forge": "isDot(BlockState arg0)",
+			"fabric": "isNotConnected(BlockState state)"
+		},
+		{
+			"forge": "updateIndirectNeighbourShapes(BlockState arg0, LevelAccessor arg1, BlockPos arg2, int arg3, int arg4)",
+			"fabric": "prepare(BlockState arg0, WorldAccess arg1, BlockPos arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "getConnectingSide(BlockGetter arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "getRenderConnectionType(BlockView world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "getConnectingSide(BlockGetter arg0, BlockPos arg1, Direction arg2, boolean arg3)",
+			"fabric": "getRenderConnectionType(BlockView world, BlockPos pos, Direction direction, boolean arg3)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "canSurviveOn(BlockGetter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "canRunOnTop(BlockView world, BlockPos pos, BlockState floor)"
+		},
+		{
+			"forge": "updatePowerStrength(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "update(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "calculateTargetStrength(Level arg0, BlockPos arg1)",
+			"fabric": "getReceivedRedstonePower(World world, BlockPos pos)"
+		},
+		{
+			"forge": "getWireSignal(BlockState arg0)",
+			"fabric": "increasePower(BlockState state)"
+		},
+		{
+			"forge": "checkCornerChangeAt(Level arg0, BlockPos arg1)",
+			"fabric": "updateNeighbors(World world, BlockPos pos)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "onRemove(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onStateReplaced(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "updateNeighborsOfNeighboringWires(Level arg0, BlockPos arg1)",
+			"fabric": "updateOffsetNeighbors(World world, BlockPos pos)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "getDirectSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getStrongRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "shouldConnectTo(BlockState arg0)",
+			"fabric": "connectsTo(BlockState state)"
+		},
+		{
+			"forge": "shouldConnectTo(BlockState arg0, Direction arg1)",
+			"fabric": "connectsTo(BlockState state, Direction dir)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "getColorForPower(int arg0)",
+			"fabric": "getWireColor(int powerLevel)"
+		},
+		{
+			"forge": "spawnParticlesAlongLine(Level arg0, RandomSource arg1, BlockPos arg2, Vec3 arg3, Direction arg4, Direction arg5, float arg6, float arg7)",
+			"fabric": "addPoweredParticles(World world, Random random, BlockPos pos, Vec3d color, Direction arg4, Direction arg5, float arg6, float arg7)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "rotate(BlockState arg0, Rotation arg1)",
+			"fabric": "rotate(BlockState arg0, BlockRotation arg1)"
+		},
+		{
+			"forge": "mirror(BlockState arg0, Mirror arg1)",
+			"fabric": "mirror(BlockState arg0, BlockMirror arg1)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "updatesOnShapeChange(Level arg0, BlockPos arg1, BlockState arg2, BlockState arg3)",
+			"fabric": "updateForNewState(World world, BlockPos pos, BlockState oldState, BlockState newState)"
+		}
+	]
+}

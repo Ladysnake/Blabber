@@ -1,0 +1,157 @@
+{
+	"title": "net.minecraft.world.level.block.BellBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BellBlock",
+			"fabric": "net.minecraft.block.BellBlock"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "FACING",
+			"fabric": "FACING"
+		},
+		{
+			"forge": "ATTACHMENT",
+			"fabric": "ATTACHMENT"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "NORTH_SOUTH_FLOOR_SHAPE",
+			"fabric": "NORTH_SOUTH_SHAPE"
+		},
+		{
+			"forge": "EAST_WEST_FLOOR_SHAPE",
+			"fabric": "EAST_WEST_SHAPE"
+		},
+		{
+			"forge": "BELL_TOP_SHAPE",
+			"fabric": "BELL_WAIST_SHAPE"
+		},
+		{
+			"forge": "BELL_BOTTOM_SHAPE",
+			"fabric": "BELL_LIP_SHAPE"
+		},
+		{
+			"forge": "BELL_SHAPE",
+			"fabric": "BELL_SHAPE"
+		},
+		{
+			"forge": "NORTH_SOUTH_BETWEEN",
+			"fabric": "NORTH_SOUTH_WALLS_SHAPE"
+		},
+		{
+			"forge": "EAST_WEST_BETWEEN",
+			"fabric": "EAST_WEST_WALLS_SHAPE"
+		},
+		{
+			"forge": "TO_WEST",
+			"fabric": "WEST_WALL_SHAPE"
+		},
+		{
+			"forge": "TO_EAST",
+			"fabric": "EAST_WALL_SHAPE"
+		},
+		{
+			"forge": "TO_NORTH",
+			"fabric": "NORTH_WALL_SHAPE"
+		},
+		{
+			"forge": "TO_SOUTH",
+			"fabric": "SOUTH_WALL_SHAPE"
+		},
+		{
+			"forge": "CEILING_SHAPE",
+			"fabric": "HANGING_SHAPE"
+		},
+		{
+			"forge": "EVENT_BELL_RING",
+			"fabric": "field_31014"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "onProjectileHit(Level arg0, BlockState arg1, BlockHitResult arg2, Projectile arg3)",
+			"fabric": "onProjectileHit(World arg0, BlockState arg1, BlockHitResult arg2, ProjectileEntity arg3)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "onHit(Level arg0, BlockState arg1, BlockHitResult arg2, Player arg3, boolean arg4)",
+			"fabric": "ring(World world, BlockState state, BlockHitResult hitResult, PlayerEntity player, boolean checkHitPos)"
+		},
+		{
+			"forge": "isProperHit(BlockState arg0, Direction arg1, double arg2)",
+			"fabric": "isPointOnBell(BlockState state, Direction side, double y)"
+		},
+		{
+			"forge": "attemptToRing(Level arg0, BlockPos arg1, Direction arg2)",
+			"fabric": "ring(World world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "attemptToRing(Entity arg0, Level arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "ring(Entity entity, World world, BlockPos pos, Direction direction)"
+		},
+		{
+			"forge": "getVoxelShape(BlockState arg0)",
+			"fabric": "getShape(BlockState state)"
+		},
+		{
+			"forge": "getCollisionShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getCollisionShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getConnectedDirection(BlockState arg0)",
+			"fabric": "getPlacementSide(BlockState state)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getTicker(Level arg0, BlockState arg1, BlockEntityType<T> arg2)",
+			"fabric": "getTicker(World arg0, BlockState arg1, BlockEntityType<T> arg2)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		}
+	]
+}

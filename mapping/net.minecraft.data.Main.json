@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.data.Main",
+	"items": [
+		{
+			"forge": "net.minecraft.data.Main",
+			"fabric": "net.minecraft.data.Main"
+		},
+		{
+			"forge": "main(String[] arg0)",
+			"fabric": "main(String[] args)"
+		},
+		{
+			"forge": "main(String[] arg0)",
+			"fabric": "main(String[] args)"
+		},
+		{
+			"forge": "bindRegistries(BiFunction<PackOutput, CompletableFuture<HolderLookup$Provider>, T> arg0, CompletableFuture<HolderLookup$Provider> arg1)",
+			"fabric": "toFactory(BiFunction<DataOutput, CompletableFuture<RegistryWrapper$WrapperLookup>, T> baseFactory, CompletableFuture<RegistryWrapper$WrapperLookup> registryLookupFuture)"
+		},
+		{
+			"forge": "createStandardGenerator(Path arg0, Collection<Path> arg1, boolean arg2, boolean arg3, boolean arg4, boolean arg5, boolean arg6, WorldVersion arg7, boolean arg8)",
+			"fabric": "create(Path output, Collection<Path> inputs, boolean includeClient, boolean includeServer, boolean includeDev, boolean includeReports, boolean validate, GameVersion gameVersion, boolean ignoreCache)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.commands.SetBlockCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.SetBlockCommand",
+			"fabric": "net.minecraft.server.command.SetBlockCommand"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_FAILED",
+			"fabric": "FAILED_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "setBlock(CommandSourceStack arg0, BlockPos arg1, BlockInput arg2, SetBlockCommand$Mode arg3, Predicate<BlockInWorld> arg4)",
+			"fabric": "execute(ServerCommandSource source, BlockPos pos, BlockStateArgument block, SetBlockCommand$Mode mode, Predicate<CachedBlockPosition> condition)"
+		}
+	]
+}

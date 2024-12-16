@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.EndCrystalItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.EndCrystalItem",
+			"fabric": "net.minecraft.item.EndCrystalItem"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack arg0)"
+		}
+	]
+}

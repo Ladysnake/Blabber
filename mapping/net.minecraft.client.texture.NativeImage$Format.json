@@ -1,0 +1,185 @@
+{
+	"title": "com.mojang.blaze3d.platform.NativeImage$Format",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.NativeImage$Format",
+			"fabric": "net.minecraft.client.texture.NativeImage$Format"
+		},
+		{
+			"forge": "RGBA",
+			"fabric": "RGBA"
+		},
+		{
+			"forge": "RGBA",
+			"fabric": "RGBA"
+		},
+		{
+			"forge": "RGB",
+			"fabric": "RGB"
+		},
+		{
+			"forge": "LUMINANCE_ALPHA",
+			"fabric": "LUMINANCE_ALPHA"
+		},
+		{
+			"forge": "LUMINANCE",
+			"fabric": "LUMINANCE"
+		},
+		{
+			"forge": "components",
+			"fabric": "channelCount"
+		},
+		{
+			"forge": "components",
+			"fabric": "channelCount"
+		},
+		{
+			"forge": "glFormat",
+			"fabric": "glFormat"
+		},
+		{
+			"forge": "hasRed",
+			"fabric": "hasRed"
+		},
+		{
+			"forge": "hasGreen",
+			"fabric": "hasGreen"
+		},
+		{
+			"forge": "hasBlue",
+			"fabric": "hasBlue"
+		},
+		{
+			"forge": "hasLuminance",
+			"fabric": "hasLuminance"
+		},
+		{
+			"forge": "hasAlpha",
+			"fabric": "hasAlpha"
+		},
+		{
+			"forge": "redOffset",
+			"fabric": "redOffset"
+		},
+		{
+			"forge": "greenOffset",
+			"fabric": "greenOffset"
+		},
+		{
+			"forge": "blueOffset",
+			"fabric": "blueOffset"
+		},
+		{
+			"forge": "luminanceOffset",
+			"fabric": "luminanceOffset"
+		},
+		{
+			"forge": "alphaOffset",
+			"fabric": "alphaOffset"
+		},
+		{
+			"forge": "supportedByStb",
+			"fabric": "writeable"
+		},
+		{
+			"forge": "components()",
+			"fabric": "getChannelCount()"
+		},
+		{
+			"forge": "components()",
+			"fabric": "getChannelCount()"
+		},
+		{
+			"forge": "setPackPixelStoreState()",
+			"fabric": "setPackAlignment()"
+		},
+		{
+			"forge": "setUnpackPixelStoreState()",
+			"fabric": "setUnpackAlignment()"
+		},
+		{
+			"forge": "glFormat()",
+			"fabric": "toGl()"
+		},
+		{
+			"forge": "hasRed()",
+			"fabric": "hasRed()"
+		},
+		{
+			"forge": "hasGreen()",
+			"fabric": "hasGreen()"
+		},
+		{
+			"forge": "hasBlue()",
+			"fabric": "hasBlue()"
+		},
+		{
+			"forge": "hasLuminance()",
+			"fabric": "hasLuminance()"
+		},
+		{
+			"forge": "hasAlpha()",
+			"fabric": "hasAlpha()"
+		},
+		{
+			"forge": "redOffset()",
+			"fabric": "getRedOffset()"
+		},
+		{
+			"forge": "greenOffset()",
+			"fabric": "getGreenOffset()"
+		},
+		{
+			"forge": "blueOffset()",
+			"fabric": "getBlueOffset()"
+		},
+		{
+			"forge": "luminanceOffset()",
+			"fabric": "getLuminanceOffset()"
+		},
+		{
+			"forge": "alphaOffset()",
+			"fabric": "getAlphaOffset()"
+		},
+		{
+			"forge": "hasLuminanceOrRed()",
+			"fabric": "hasRedChannel()"
+		},
+		{
+			"forge": "hasLuminanceOrGreen()",
+			"fabric": "hasGreenChannel()"
+		},
+		{
+			"forge": "hasLuminanceOrBlue()",
+			"fabric": "hasBlueChannel()"
+		},
+		{
+			"forge": "hasLuminanceOrAlpha()",
+			"fabric": "hasOpacityChannel()"
+		},
+		{
+			"forge": "luminanceOrRedOffset()",
+			"fabric": "getRedChannelOffset()"
+		},
+		{
+			"forge": "luminanceOrGreenOffset()",
+			"fabric": "getGreenChannelOffset()"
+		},
+		{
+			"forge": "luminanceOrBlueOffset()",
+			"fabric": "getBlueChannelOffset()"
+		},
+		{
+			"forge": "luminanceOrAlphaOffset()",
+			"fabric": "getOpacityChannelOffset()"
+		},
+		{
+			"forge": "supportedByStb()",
+			"fabric": "isWriteable()"
+		},
+		{
+			"forge": "getStbFormat(int arg0)",
+			"fabric": "fromChannelCount(int glFormat)"
+		}
+	]
+}

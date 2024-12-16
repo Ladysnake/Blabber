@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.gui.screens.CreateBuffetWorldScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.CreateBuffetWorldScreen",
+			"fabric": "net.minecraft.client.gui.screen.CustomizeBuffetLevelScreen"
+		},
+		{
+			"forge": "BIOME_SELECT_INFO",
+			"fabric": "BUFFET_BIOME_TEXT"
+		},
+		{
+			"forge": "BIOME_SELECT_INFO",
+			"fabric": "BUFFET_BIOME_TEXT"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "applySettings",
+			"fabric": "onDone"
+		},
+		{
+			"forge": "biomes",
+			"fabric": "biomeRegistry"
+		},
+		{
+			"forge": "list",
+			"fabric": "biomeSelectionList"
+		},
+		{
+			"forge": "biome",
+			"fabric": "biome"
+		},
+		{
+			"forge": "doneButton",
+			"fabric": "confirmButton"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "updateButtonValidity()",
+			"fabric": "refreshConfirmButton()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

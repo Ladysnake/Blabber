@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.commands.arguments.blocks.BlockPredicateArgument$TagPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.blocks.BlockPredicateArgument$TagPredicate",
+			"fabric": "net.minecraft.command.argument.BlockPredicateArgumentType$TagPredicate"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tag"
+		},
+		{
+			"forge": "tag",
+			"fabric": "tag"
+		},
+		{
+			"forge": "nbt",
+			"fabric": "nbt"
+		},
+		{
+			"forge": "vagueProperties",
+			"fabric": "properties"
+		},
+		{
+			"forge": "test(BlockInWorld arg0)",
+			"fabric": "test(CachedBlockPosition arg0)"
+		},
+		{
+			"forge": "test(BlockInWorld arg0)",
+			"fabric": "test(CachedBlockPosition arg0)"
+		},
+		{
+			"forge": "requiresNbt()",
+			"fabric": "hasNbt()"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.TrappedChestBlockEntityFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.TrappedChestBlockEntityFix",
+			"fabric": "net.minecraft.datafixer.fix.AddTrappedChestFix"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "SIZE",
+			"fabric": "field_29910"
+		},
+		{
+			"forge": "SIZE_BITS",
+			"fabric": "field_29911"
+		}
+	]
+}

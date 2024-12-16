@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.entity.TheEndPortalBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.TheEndPortalBlockEntity",
+			"fabric": "net.minecraft.block.entity.EndPortalBlockEntity"
+		},
+		{
+			"forge": "shouldRenderFace(Direction arg0)",
+			"fabric": "shouldDrawSide(Direction direction)"
+		},
+		{
+			"forge": "shouldRenderFace(Direction arg0)",
+			"fabric": "shouldDrawSide(Direction direction)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.CatLieOnBedGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.CatLieOnBedGoal",
+			"fabric": "net.minecraft.entity.ai.goal.GoToBedAndSleepGoal"
+		},
+		{
+			"forge": "cat",
+			"fabric": "cat"
+		},
+		{
+			"forge": "cat",
+			"fabric": "cat"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "nextStartTick(PathfinderMob arg0)",
+			"fabric": "getInterval(PathAwareEntity arg0)"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isValidTarget(LevelReader arg0, BlockPos arg1)",
+			"fabric": "isTargetPos(WorldView arg0, BlockPos arg1)"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.data.recipes.ShapelessRecipeBuilder$Result",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.ShapelessRecipeBuilder$Result",
+			"fabric": "net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder$ShapelessRecipeJsonProvider"
+		},
+		{
+			"forge": "id",
+			"fabric": "recipeId"
+		},
+		{
+			"forge": "id",
+			"fabric": "recipeId"
+		},
+		{
+			"forge": "result",
+			"fabric": "output"
+		},
+		{
+			"forge": "count",
+			"fabric": "count"
+		},
+		{
+			"forge": "group",
+			"fabric": "group"
+		},
+		{
+			"forge": "ingredients",
+			"fabric": "inputs"
+		},
+		{
+			"forge": "advancement",
+			"fabric": "advancementBuilder"
+		},
+		{
+			"forge": "advancementId",
+			"fabric": "advancementId"
+		},
+		{
+			"forge": "serializeRecipeData(com.google.gson.JsonObject arg0)",
+			"fabric": "serialize(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "serializeRecipeData(com.google.gson.JsonObject arg0)",
+			"fabric": "serialize(com.google.gson.JsonObject arg0)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getRecipeId()"
+		},
+		{
+			"forge": "serializeAdvancement()",
+			"fabric": "toAdvancementJson()"
+		},
+		{
+			"forge": "getAdvancementId()",
+			"fabric": "getAdvancementId()"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"title": "com.mojang.blaze3d.pipeline.RenderCall",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.pipeline.RenderCall",
+			"fabric": "com.mojang.blaze3d.systems.RenderCall"
+		}
+	]
+}

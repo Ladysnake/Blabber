@@ -1,0 +1,77 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlDebug",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlDebug",
+			"fabric": "net.minecraft.client.gl.GlDebug"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "CIRCULAR_LOG_SIZE",
+			"fabric": "DEBUG_MESSAGE_QUEUE_SIZE"
+		},
+		{
+			"forge": "MESSAGE_BUFFER",
+			"fabric": "DEBUG_MESSAGES"
+		},
+		{
+			"forge": "lastEntry",
+			"fabric": "lastDebugMessage"
+		},
+		{
+			"forge": "DEBUG_LEVELS",
+			"fabric": "KHR_VERBOSITY_LEVELS"
+		},
+		{
+			"forge": "DEBUG_LEVELS_ARB",
+			"fabric": "ARB_VERBOSITY_LEVELS"
+		},
+		{
+			"forge": "debugEnabled",
+			"fabric": "debugMessageEnabled"
+		},
+		{
+			"forge": "printUnknownToken(int arg0)",
+			"fabric": "unknown(int opcode)"
+		},
+		{
+			"forge": "printUnknownToken(int arg0)",
+			"fabric": "unknown(int opcode)"
+		},
+		{
+			"forge": "sourceToString(int arg0)",
+			"fabric": "getSource(int opcode)"
+		},
+		{
+			"forge": "typeToString(int arg0)",
+			"fabric": "getType(int opcode)"
+		},
+		{
+			"forge": "severityToString(int arg0)",
+			"fabric": "getSeverity(int opcode)"
+		},
+		{
+			"forge": "printDebugLog(int arg0, int arg1, int arg2, int arg3, int arg4, long arg5, long arg6)",
+			"fabric": "info(int source, int type, int id, int severity, int messageLength, long message, long arg6)"
+		},
+		{
+			"forge": "getLastOpenGlDebugMessages()",
+			"fabric": "collectDebugMessages()"
+		},
+		{
+			"forge": "isDebugEnabled()",
+			"fabric": "isDebugMessageEnabled()"
+		},
+		{
+			"forge": "enableDebugCallback(int arg0, boolean arg1)",
+			"fabric": "enableDebug(int verbosity, boolean sync)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlockRenameFixWithJigsaw",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlockRenameFixWithJigsaw",
+			"fabric": "net.minecraft.datafixer.fix.JigsawBlockNameFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "create(com.mojang.datafixers.schemas.Schema oldSchema, String name, Function<String, String> rename)"
+		},
+		{
+			"forge": "create(com.mojang.datafixers.schemas.Schema arg0, String arg1, Function<String, String> arg2)",
+			"fabric": "create(com.mojang.datafixers.schemas.Schema oldSchema, String name, Function<String, String> rename)"
+		}
+	]
+}

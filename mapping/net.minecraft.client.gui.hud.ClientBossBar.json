@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.components.LerpingBossEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.LerpingBossEvent",
+			"fabric": "net.minecraft.client.gui.hud.ClientBossBar"
+		},
+		{
+			"forge": "LERP_MILLISECONDS",
+			"fabric": "HEALTH_CHANGE_ANIMATION_MS"
+		},
+		{
+			"forge": "LERP_MILLISECONDS",
+			"fabric": "HEALTH_CHANGE_ANIMATION_MS"
+		},
+		{
+			"forge": "targetPercent",
+			"fabric": "healthLatest"
+		},
+		{
+			"forge": "setTime",
+			"fabric": "timeHealthSet"
+		},
+		{
+			"forge": "setProgress(float arg0)",
+			"fabric": "setPercent(float arg0)"
+		},
+		{
+			"forge": "setProgress(float arg0)",
+			"fabric": "setPercent(float arg0)"
+		},
+		{
+			"forge": "getProgress()",
+			"fabric": "getPercent()"
+		}
+	]
+}

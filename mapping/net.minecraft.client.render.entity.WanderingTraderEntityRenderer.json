@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.WanderingTraderRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.WanderingTraderRenderer",
+			"fabric": "net.minecraft.client.render.entity.WanderingTraderEntityRenderer"
+		},
+		{
+			"forge": "VILLAGER_BASE_SKIN",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "VILLAGER_BASE_SKIN",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(WanderingTrader arg0)",
+			"fabric": "getTexture(WanderingTraderEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(WanderingTrader arg0)",
+			"fabric": "getTexture(WanderingTraderEntity arg0)"
+		},
+		{
+			"forge": "scale(WanderingTrader arg0, PoseStack arg1, float arg2)",
+			"fabric": "scale(WanderingTraderEntity arg0, MatrixStack arg1, float arg2)"
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.WorldGenSettingsFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.WorldGenSettingsFix",
+			"fabric": "net.minecraft.datafixer.fix.StructureSeparationDataFix"
+		},
+		{
+			"forge": "VILLAGE",
+			"fabric": "VILLAGE_STRUCTURE_ID"
+		},
+		{
+			"forge": "VILLAGE",
+			"fabric": "VILLAGE_STRUCTURE_ID"
+		},
+		{
+			"forge": "DESERT_PYRAMID",
+			"fabric": "DESERT_PYRAMID_STRUCTURE_ID"
+		},
+		{
+			"forge": "IGLOO",
+			"fabric": "IGLOO_STRUCTURE_ID"
+		},
+		{
+			"forge": "JUNGLE_TEMPLE",
+			"fabric": "JUNGLE_PYRAMID_STRUCTURE_ID"
+		},
+		{
+			"forge": "SWAMP_HUT",
+			"fabric": "SWAMP_HUT_STRUCTURE_ID"
+		},
+		{
+			"forge": "PILLAGER_OUTPOST",
+			"fabric": "PILLAGER_OUTPOST_STRUCTURE_ID"
+		},
+		{
+			"forge": "END_CITY",
+			"fabric": "END_CITY_STRUCTURE_ID"
+		},
+		{
+			"forge": "WOODLAND_MANSION",
+			"fabric": "MANSION_STRUCTURE_ID"
+		},
+		{
+			"forge": "OCEAN_MONUMENT",
+			"fabric": "MONUMENT_STRUCTURE_ID"
+		},
+		{
+			"forge": "DEFAULTS",
+			"fabric": "STRUCTURE_SPACING"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "method_28268(long arg0, com.mojang.serialization.DynamicLike<T> arg1, com.mojang.serialization.Dynamic<T> arg2, com.mojang.serialization.Dynamic<T> arg3)"
+		},
+		{
+			"forge": "noise(long arg0, com.mojang.serialization.DynamicLike<T> arg1, com.mojang.serialization.Dynamic<T> arg2, com.mojang.serialization.Dynamic<T> arg3)",
+			"fabric": "method_28268(long arg0, com.mojang.serialization.DynamicLike<T> arg1, com.mojang.serialization.Dynamic<T> arg2, com.mojang.serialization.Dynamic<T> arg3)"
+		},
+		{
+			"forge": "vanillaBiomeSource(com.mojang.serialization.Dynamic<T> arg0, long arg1, boolean arg2, boolean arg3)",
+			"fabric": "method_28272(com.mojang.serialization.Dynamic<T> arg0, long arg1, boolean arg2, boolean arg3)"
+		},
+		{
+			"forge": "fix(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "method_28271(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "defaultOverworld(com.mojang.serialization.Dynamic<T> arg0, long arg1)",
+			"fabric": "method_29916(com.mojang.serialization.Dynamic<T> arg0, long arg1)"
+		},
+		{
+			"forge": "vanillaLevels(com.mojang.serialization.Dynamic<T> arg0, long arg1, com.mojang.serialization.Dynamic<T> arg2, boolean arg3)",
+			"fabric": "method_29917(com.mojang.serialization.Dynamic<T> arg0, long arg1, com.mojang.serialization.Dynamic<T> arg2, boolean arg3)"
+		},
+		{
+			"forge": "fixFlatStructures(com.mojang.serialization.DynamicOps<T> arg0, com.mojang.serialization.OptionalDynamic<T> arg1)",
+			"fabric": "method_28275(com.mojang.serialization.DynamicOps<T> arg0, com.mojang.serialization.OptionalDynamic<T> arg1)"
+		},
+		{
+			"forge": "getInt(String arg0, int arg1)",
+			"fabric": "method_28279(String arg0, int arg1)"
+		},
+		{
+			"forge": "getInt(String arg0, int arg1, int arg2)",
+			"fabric": "method_28280(String arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "setSpacing(Map<String, WorldGenSettingsFix$StructureFeatureConfiguration> arg0, String arg1, String arg2, int arg3)",
+			"fabric": "method_28281(Map<String, StructureSeparationDataFix$Information> arg0, String arg1, String arg2, int arg3)"
+		}
+	]
+}

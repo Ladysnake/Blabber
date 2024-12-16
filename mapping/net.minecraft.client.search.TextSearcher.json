@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.searchtree.PlainTextSearchTree",
+	"items": [
+		{
+			"forge": "net.minecraft.client.searchtree.PlainTextSearchTree",
+			"fabric": "net.minecraft.client.search.TextSearcher"
+		},
+		{
+			"forge": "empty()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "empty()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "create(List<T> arg0, Function<T, Stream<String>> arg1)",
+			"fabric": "of(List<T> values, Function<T, Stream<String>> textsGetter)"
+		},
+		{
+			"forge": "search(String arg0)",
+			"fabric": "search(String text)"
+		}
+	]
+}

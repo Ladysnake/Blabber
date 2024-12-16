@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.AllayRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.AllayRenderer",
+			"fabric": "net.minecraft.client.render.entity.AllayEntityRenderer"
+		},
+		{
+			"forge": "ALLAY_TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "ALLAY_TEXTURE",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Allay arg0)",
+			"fabric": "getTexture(AllayEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Allay arg0)",
+			"fabric": "getTexture(AllayEntity arg0)"
+		},
+		{
+			"forge": "getBlockLightLevel(Allay arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(AllayEntity arg0, BlockPos arg1)"
+		}
+	]
+}

@@ -1,0 +1,173 @@
+{
+	"title": "net.minecraft.client.renderer.entity.EntityRenderDispatcher",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.EntityRenderDispatcher",
+			"fabric": "net.minecraft.client.render.entity.EntityRenderDispatcher"
+		},
+		{
+			"forge": "SHADOW_RENDER_TYPE",
+			"fabric": "SHADOW_LAYER"
+		},
+		{
+			"forge": "SHADOW_RENDER_TYPE",
+			"fabric": "SHADOW_LAYER"
+		},
+		{
+			"forge": "MAX_SHADOW_RADIUS",
+			"fabric": "field_43377"
+		},
+		{
+			"forge": "SHADOW_POWER_FALLOFF_Y",
+			"fabric": "field_43378"
+		},
+		{
+			"forge": "renderers",
+			"fabric": "renderers"
+		},
+		{
+			"forge": "playerRenderers",
+			"fabric": "modelRenderers"
+		},
+		{
+			"forge": "textureManager",
+			"fabric": "textureManager"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "camera",
+			"fabric": "camera"
+		},
+		{
+			"forge": "cameraOrientation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "crosshairPickEntity",
+			"fabric": "targetedEntity"
+		},
+		{
+			"forge": "itemRenderer",
+			"fabric": "itemRenderer"
+		},
+		{
+			"forge": "blockRenderDispatcher",
+			"fabric": "blockRenderManager"
+		},
+		{
+			"forge": "itemInHandRenderer",
+			"fabric": "heldItemRenderer"
+		},
+		{
+			"forge": "font",
+			"fabric": "textRenderer"
+		},
+		{
+			"forge": "options",
+			"fabric": "gameOptions"
+		},
+		{
+			"forge": "entityModels",
+			"fabric": "modelLoader"
+		},
+		{
+			"forge": "shouldRenderShadow",
+			"fabric": "renderShadows"
+		},
+		{
+			"forge": "renderHitBoxes",
+			"fabric": "renderHitboxes"
+		},
+		{
+			"forge": "getPackedLightCoords(E arg0, float arg1)",
+			"fabric": "getLight(E entity, float tickDelta)"
+		},
+		{
+			"forge": "getPackedLightCoords(E arg0, float arg1)",
+			"fabric": "getLight(E entity, float tickDelta)"
+		},
+		{
+			"forge": "getRenderer(T arg0)",
+			"fabric": "getRenderer(T entity)"
+		},
+		{
+			"forge": "prepare(Level arg0, Camera arg1, Entity arg2)",
+			"fabric": "configure(World world, Camera camera, Entity target)"
+		},
+		{
+			"forge": "overrideCameraOrientation(org.joml.Quaternionf arg0)",
+			"fabric": "setRotation(org.joml.Quaternionf rotation)"
+		},
+		{
+			"forge": "setRenderShadow(boolean arg0)",
+			"fabric": "setRenderShadows(boolean renderShadows)"
+		},
+		{
+			"forge": "setRenderHitBoxes(boolean arg0)",
+			"fabric": "setRenderHitboxes(boolean renderHitboxes)"
+		},
+		{
+			"forge": "shouldRenderHitBoxes()",
+			"fabric": "shouldRenderHitboxes()"
+		},
+		{
+			"forge": "shouldRender(E arg0, Frustum arg1, double arg2, double arg3, double arg4)",
+			"fabric": "shouldRender(E entity, Frustum frustum, double x, double y, double z)"
+		},
+		{
+			"forge": "render(E arg0, double arg1, double arg2, double arg3, float arg4, float arg5, PoseStack arg6, MultiBufferSource arg7, int arg8)",
+			"fabric": "render(E entity, double x, double y, double z, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light)"
+		},
+		{
+			"forge": "renderHitbox(PoseStack arg0, VertexConsumer arg1, Entity arg2, float arg3)",
+			"fabric": "renderHitbox(MatrixStack matrices, VertexConsumer vertices, Entity entity, float tickDelta)"
+		},
+		{
+			"forge": "renderFlame(PoseStack arg0, MultiBufferSource arg1, Entity arg2)",
+			"fabric": "renderFire(MatrixStack matrices, VertexConsumerProvider vertexConsumers, Entity entity)"
+		},
+		{
+			"forge": "fireVertex(PoseStack$Pose arg0, VertexConsumer arg1, float arg2, float arg3, float arg4, float arg5, float arg6)",
+			"fabric": "drawFireVertex(MatrixStack$Entry entry, VertexConsumer vertices, float x, float y, float z, float u, float v)"
+		},
+		{
+			"forge": "renderShadow(PoseStack arg0, MultiBufferSource arg1, Entity arg2, float arg3, float arg4, LevelReader arg5, float arg6)",
+			"fabric": "renderShadow(MatrixStack matrices, VertexConsumerProvider vertexConsumers, Entity entity, float opacity, float tickDelta, WorldView world, float radius)"
+		},
+		{
+			"forge": "renderBlockShadow(PoseStack$Pose arg0, VertexConsumer arg1, ChunkAccess arg2, LevelReader arg3, BlockPos arg4, double arg5, double arg6, double arg7, float arg8, float arg9)",
+			"fabric": "renderShadowPart(MatrixStack$Entry entry, VertexConsumer vertices, Chunk chunk, WorldView world, BlockPos pos, double x, double y, double z, float radius, float opacity)"
+		},
+		{
+			"forge": "shadowVertex(PoseStack$Pose arg0, VertexConsumer arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "drawShadowVertex(MatrixStack$Entry entry, VertexConsumer vertices, float alpha, float x, float y, float z, float u, float v)"
+		},
+		{
+			"forge": "setLevel(Level arg0)",
+			"fabric": "setWorld(World world)"
+		},
+		{
+			"forge": "distanceToSqr(Entity arg0)",
+			"fabric": "getSquaredDistanceToCamera(Entity entity)"
+		},
+		{
+			"forge": "distanceToSqr(double arg0, double arg1, double arg2)",
+			"fabric": "getSquaredDistanceToCamera(double x, double y, double z)"
+		},
+		{
+			"forge": "cameraOrientation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "getItemInHandRenderer()",
+			"fabric": "getHeldItemRenderer()"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen$ItemPickerMenu",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen$ItemPickerMenu",
+			"fabric": "net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen$CreativeScreenHandler"
+		},
+		{
+			"forge": "items",
+			"fabric": "itemList"
+		},
+		{
+			"forge": "items",
+			"fabric": "itemList"
+		},
+		{
+			"forge": "inventoryMenu",
+			"fabric": "parent"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stillValid(Player arg0)",
+			"fabric": "canUse(PlayerEntity arg0)"
+		},
+		{
+			"forge": "calculateRowCount()",
+			"fabric": "getOverflowRows()"
+		},
+		{
+			"forge": "getRowIndexForScroll(float arg0)",
+			"fabric": "getRow(float scroll)"
+		},
+		{
+			"forge": "getScrollForRowIndex(int arg0)",
+			"fabric": "getScrollPosition(int row)"
+		},
+		{
+			"forge": "subtractInputFromScroll(float arg0, double arg1)",
+			"fabric": "getScrollPosition(float current, double amount)"
+		},
+		{
+			"forge": "scrollTo(float arg0)",
+			"fabric": "scrollItems(float position)"
+		},
+		{
+			"forge": "canScroll()",
+			"fabric": "shouldShowScrollbar()"
+		},
+		{
+			"forge": "quickMoveStack(Player arg0, int arg1)",
+			"fabric": "quickMove(PlayerEntity arg0, int arg1)"
+		},
+		{
+			"forge": "canTakeItemForPickAll(ItemStack arg0, Slot arg1)",
+			"fabric": "canInsertIntoSlot(ItemStack arg0, Slot arg1)"
+		},
+		{
+			"forge": "canDragTo(Slot arg0)",
+			"fabric": "canInsertIntoSlot(Slot arg0)"
+		},
+		{
+			"forge": "getCarried()",
+			"fabric": "getCursorStack()"
+		},
+		{
+			"forge": "setCarried(ItemStack arg0)",
+			"fabric": "setCursorStack(ItemStack arg0)"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.chunk.storage.RegionFileStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.storage.RegionFileStorage",
+			"fabric": "net.minecraft.world.storage.RegionBasedStorage"
+		},
+		{
+			"forge": "ANVIL_EXTENSION",
+			"fabric": "MCA_EXTENSION"
+		},
+		{
+			"forge": "ANVIL_EXTENSION",
+			"fabric": "MCA_EXTENSION"
+		},
+		{
+			"forge": "MAX_CACHE_SIZE",
+			"fabric": "MAX_CACHE_SIZE"
+		},
+		{
+			"forge": "regionCache",
+			"fabric": "cachedRegionFiles"
+		},
+		{
+			"forge": "folder",
+			"fabric": "directory"
+		},
+		{
+			"forge": "sync",
+			"fabric": "dsync"
+		},
+		{
+			"forge": "getRegionFile(ChunkPos arg0)",
+			"fabric": "getRegionFile(ChunkPos pos)"
+		},
+		{
+			"forge": "getRegionFile(ChunkPos arg0)",
+			"fabric": "getRegionFile(ChunkPos pos)"
+		},
+		{
+			"forge": "read(ChunkPos arg0)",
+			"fabric": "getTagAt(ChunkPos pos)"
+		},
+		{
+			"forge": "scanChunk(ChunkPos arg0, StreamTagVisitor arg1)",
+			"fabric": "scanChunk(ChunkPos chunkPos, NbtScanner scanner)"
+		},
+		{
+			"forge": "write(ChunkPos arg0, CompoundTag arg1)",
+			"fabric": "write(ChunkPos pos, NbtCompound nbt)"
+		},
+		{
+			"forge": "flush()",
+			"fabric": "sync()"
+		}
+	]
+}

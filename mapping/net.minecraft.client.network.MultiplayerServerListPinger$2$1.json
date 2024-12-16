@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.multiplayer.ServerStatusPinger$2$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ServerStatusPinger$2$1",
+			"fabric": "net.minecraft.client.network.MultiplayerServerListPinger$2$1"
+		},
+		{
+			"forge": "channelActive(io.netty.channel.ChannelHandlerContext arg0)",
+			"fabric": "channelActive(io.netty.channel.ChannelHandlerContext context)"
+		},
+		{
+			"forge": "channelActive(io.netty.channel.ChannelHandlerContext arg0)",
+			"fabric": "channelActive(io.netty.channel.ChannelHandlerContext context)"
+		},
+		{
+			"forge": "channelRead0(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1)",
+			"fabric": "channelRead0(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1)"
+		},
+		{
+			"forge": "exceptionCaught(io.netty.channel.ChannelHandlerContext arg0, Throwable arg1)",
+			"fabric": "exceptionCaught(io.netty.channel.ChannelHandlerContext context, Throwable throwable)"
+		}
+	]
+}

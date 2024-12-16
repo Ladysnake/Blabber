@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.network.syncher.SynchedEntityData",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.SynchedEntityData",
+			"fabric": "net.minecraft.entity.data.DataTracker"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ENTITY_ID_POOL",
+			"fabric": "TRACKED_ENTITIES"
+		},
+		{
+			"forge": "MAX_ID_VALUE",
+			"fabric": "MAX_DATA_VALUE_ID"
+		},
+		{
+			"forge": "entity",
+			"fabric": "trackedEntity"
+		},
+		{
+			"forge": "itemsById",
+			"fabric": "entries"
+		},
+		{
+			"forge": "lock",
+			"fabric": "lock"
+		},
+		{
+			"forge": "isDirty",
+			"fabric": "dirty"
+		},
+		{
+			"forge": "defineId(Class<? extends Entity> arg0, EntityDataSerializer<T> arg1)",
+			"fabric": "registerData(Class<? extends Entity> entityClass, TrackedDataHandler<T> dataHandler)"
+		},
+		{
+			"forge": "defineId(Class<? extends Entity> arg0, EntityDataSerializer<T> arg1)",
+			"fabric": "registerData(Class<? extends Entity> entityClass, TrackedDataHandler<T> dataHandler)"
+		},
+		{
+			"forge": "define(EntityDataAccessor<T> arg0, T arg1)",
+			"fabric": "startTracking(TrackedData<T> key, T initialValue)"
+		},
+		{
+			"forge": "createDataItem(EntityDataAccessor<T> arg0, T arg1)",
+			"fabric": "addTrackedData(TrackedData<T> key, T value)"
+		},
+		{
+			"forge": "hasItem(EntityDataAccessor<T> arg0)",
+			"fabric": "containsKey(TrackedData<T> key)"
+		},
+		{
+			"forge": "getItem(EntityDataAccessor<T> arg0)",
+			"fabric": "getEntry(TrackedData<T> key)"
+		},
+		{
+			"forge": "get(EntityDataAccessor<T> arg0)",
+			"fabric": "get(TrackedData<T> data)"
+		},
+		{
+			"forge": "set(EntityDataAccessor<T> arg0, T arg1)",
+			"fabric": "set(TrackedData<T> key, T value)"
+		},
+		{
+			"forge": "set(EntityDataAccessor<T> arg0, T arg1, boolean arg2)",
+			"fabric": "set(TrackedData<T> key, T value, boolean force)"
+		},
+		{
+			"forge": "isDirty()",
+			"fabric": "isDirty()"
+		},
+		{
+			"forge": "packDirty()",
+			"fabric": "getDirtyEntries()"
+		},
+		{
+			"forge": "getNonDefaultValues()",
+			"fabric": "getChangedEntries()"
+		},
+		{
+			"forge": "assignValues(List<SynchedEntityData$DataValue<?>> arg0)",
+			"fabric": "writeUpdatedEntries(List<DataTracker$SerializedEntry<?>> entries)"
+		},
+		{
+			"forge": "assignValue(SynchedEntityData$DataItem<T> arg0, SynchedEntityData$DataValue<?> arg1)",
+			"fabric": "copyToFrom(DataTracker$Entry<T> to, DataTracker$SerializedEntry<?> from)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		}
+	]
+}

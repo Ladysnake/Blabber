@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.flag.FeatureFlagSet",
+	"items": [
+		{
+			"forge": "net.minecraft.world.flag.FeatureFlagSet",
+			"fabric": "net.minecraft.resource.featuretoggle.FeatureSet"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "MAX_CONTAINER_SIZE",
+			"fabric": "MAX_FEATURE_FLAGS"
+		},
+		{
+			"forge": "universe",
+			"fabric": "universe"
+		},
+		{
+			"forge": "mask",
+			"fabric": "featuresMask"
+		},
+		{
+			"forge": "create(FeatureFlagUniverse arg0, Collection<FeatureFlag> arg1)",
+			"fabric": "of(FeatureUniverse universe, Collection<FeatureFlag> features)"
+		},
+		{
+			"forge": "create(FeatureFlagUniverse arg0, Collection<FeatureFlag> arg1)",
+			"fabric": "of(FeatureUniverse universe, Collection<FeatureFlag> features)"
+		},
+		{
+			"forge": "of()",
+			"fabric": "empty()"
+		},
+		{
+			"forge": "of(FeatureFlag arg0)",
+			"fabric": "of(FeatureFlag feature)"
+		},
+		{
+			"forge": "of(FeatureFlag arg0, FeatureFlag... arg1)",
+			"fabric": "of(FeatureFlag feature1, FeatureFlag... features)"
+		},
+		{
+			"forge": "computeMask(FeatureFlagUniverse arg0, long arg1, Iterable<FeatureFlag> arg2)",
+			"fabric": "combineMask(FeatureUniverse universe, long featuresMask, Iterable<FeatureFlag> newFeatures)"
+		},
+		{
+			"forge": "contains(FeatureFlag arg0)",
+			"fabric": "contains(FeatureFlag feature)"
+		},
+		{
+			"forge": "isSubsetOf(FeatureFlagSet arg0)",
+			"fabric": "isSubsetOf(FeatureSet features)"
+		},
+		{
+			"forge": "join(FeatureFlagSet arg0)",
+			"fabric": "combine(FeatureSet features)"
+		}
+	]
+}

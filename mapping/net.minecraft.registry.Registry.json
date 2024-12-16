@@ -1,0 +1,193 @@
+{
+	"title": "net.minecraft.core.Registry",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Registry",
+			"fabric": "net.minecraft.registry.Registry"
+		},
+		{
+			"forge": "key()",
+			"fabric": "getKey()"
+		},
+		{
+			"forge": "key()",
+			"fabric": "getKey()"
+		},
+		{
+			"forge": "byNameCodec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "holderByNameCodec()",
+			"fabric": "createEntryCodec()"
+		},
+		{
+			"forge": "keys(com.mojang.serialization.DynamicOps<U> arg0)",
+			"fabric": "keys(com.mojang.serialization.DynamicOps<U> ops)"
+		},
+		{
+			"forge": "getKey(T arg0)",
+			"fabric": "getId(T value)"
+		},
+		{
+			"forge": "getResourceKey(T arg0)",
+			"fabric": "getKey(T entry)"
+		},
+		{
+			"forge": "getId(T arg0)",
+			"fabric": "getRawId(T arg0)"
+		},
+		{
+			"forge": "get(ResourceKey<T> arg0)",
+			"fabric": "get(RegistryKey<T> key)"
+		},
+		{
+			"forge": "get(ResourceLocation arg0)",
+			"fabric": "get(Identifier id)"
+		},
+		{
+			"forge": "lifecycle(T arg0)",
+			"fabric": "getEntryLifecycle(T entry)"
+		},
+		{
+			"forge": "registryLifecycle()",
+			"fabric": "getLifecycle()"
+		},
+		{
+			"forge": "getOptional(ResourceLocation arg0)",
+			"fabric": "getOrEmpty(Identifier id)"
+		},
+		{
+			"forge": "getOptional(ResourceKey<T> arg0)",
+			"fabric": "getOrEmpty(RegistryKey<T> key)"
+		},
+		{
+			"forge": "getOrThrow(ResourceKey<T> arg0)",
+			"fabric": "getOrThrow(RegistryKey<T> key)"
+		},
+		{
+			"forge": "keySet()",
+			"fabric": "getIds()"
+		},
+		{
+			"forge": "entrySet()",
+			"fabric": "getEntrySet()"
+		},
+		{
+			"forge": "registryKeySet()",
+			"fabric": "getKeys()"
+		},
+		{
+			"forge": "getRandom(RandomSource arg0)",
+			"fabric": "getRandom(Random random)"
+		},
+		{
+			"forge": "stream()",
+			"fabric": "stream()"
+		},
+		{
+			"forge": "containsKey(ResourceLocation arg0)",
+			"fabric": "containsId(Identifier id)"
+		},
+		{
+			"forge": "containsKey(ResourceKey<T> arg0)",
+			"fabric": "contains(RegistryKey<T> key)"
+		},
+		{
+			"forge": "register(Registry<? super T> arg0, String arg1, T arg2)",
+			"fabric": "register(Registry<? super T> registry, String id, T entry)"
+		},
+		{
+			"forge": "register(Registry<V> arg0, ResourceLocation arg1, T arg2)",
+			"fabric": "register(Registry<V> registry, Identifier id, T entry)"
+		},
+		{
+			"forge": "register(Registry<V> arg0, ResourceKey<V> arg1, T arg2)",
+			"fabric": "register(Registry<V> registry, RegistryKey<V> key, T entry)"
+		},
+		{
+			"forge": "registerForHolder(Registry<T> arg0, ResourceKey<T> arg1, T arg2)",
+			"fabric": "registerReference(Registry<T> registry, RegistryKey<T> key, T entry)"
+		},
+		{
+			"forge": "registerForHolder(Registry<T> arg0, ResourceLocation arg1, T arg2)",
+			"fabric": "registerReference(Registry<T> registry, Identifier id, T entry)"
+		},
+		{
+			"forge": "registerMapping(Registry<V> arg0, int arg1, String arg2, T arg3)",
+			"fabric": "register(Registry<V> registry, int rawId, String id, T entry)"
+		},
+		{
+			"forge": "freeze()",
+			"fabric": "freeze()"
+		},
+		{
+			"forge": "createIntrusiveHolder(T arg0)",
+			"fabric": "createEntry(T value)"
+		},
+		{
+			"forge": "getHolder(int arg0)",
+			"fabric": "getEntry(int rawId)"
+		},
+		{
+			"forge": "getHolder(ResourceKey<T> arg0)",
+			"fabric": "getEntry(RegistryKey<T> key)"
+		},
+		{
+			"forge": "wrapAsHolder(T arg0)",
+			"fabric": "getEntry(T value)"
+		},
+		{
+			"forge": "getHolderOrThrow(ResourceKey<T> arg0)",
+			"fabric": "entryOf(RegistryKey<T> key)"
+		},
+		{
+			"forge": "holders()",
+			"fabric": "streamEntries()"
+		},
+		{
+			"forge": "getTag(TagKey<T> arg0)",
+			"fabric": "getEntryList(TagKey<T> tag)"
+		},
+		{
+			"forge": "getTagOrEmpty(TagKey<T> arg0)",
+			"fabric": "iterateEntries(TagKey<T> tag)"
+		},
+		{
+			"forge": "getOrCreateTag(TagKey<T> arg0)",
+			"fabric": "getOrCreateEntryList(TagKey<T> tag)"
+		},
+		{
+			"forge": "getTags()",
+			"fabric": "streamTagsAndEntries()"
+		},
+		{
+			"forge": "getTagNames()",
+			"fabric": "streamTags()"
+		},
+		{
+			"forge": "resetTags()",
+			"fabric": "clearTags()"
+		},
+		{
+			"forge": "bindTags(Map<TagKey<T>, List<Holder<T>>> arg0)",
+			"fabric": "populateTags(Map<TagKey<T>, List<RegistryEntry<T>>> tagEntries)"
+		},
+		{
+			"forge": "asHolderIdMap()",
+			"fabric": "getIndexedEntries()"
+		},
+		{
+			"forge": "holderOwner()",
+			"fabric": "getEntryOwner()"
+		},
+		{
+			"forge": "asLookup()",
+			"fabric": "getReadOnlyWrapper()"
+		},
+		{
+			"forge": "asTagAddingLookup()",
+			"fabric": "getTagCreatingWrapper()"
+		}
+	]
+}

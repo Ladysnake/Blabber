@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.ai.sensing.NearestBedSensor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.sensing.NearestBedSensor",
+			"fabric": "net.minecraft.entity.ai.brain.sensor.NearestBedSensor"
+		},
+		{
+			"forge": "CACHE_TIMEOUT",
+			"fabric": "REMEMBER_TIME"
+		},
+		{
+			"forge": "CACHE_TIMEOUT",
+			"fabric": "REMEMBER_TIME"
+		},
+		{
+			"forge": "BATCH_SIZE",
+			"fabric": "MAX_TRIES"
+		},
+		{
+			"forge": "RATE",
+			"fabric": "MAX_EXPIRY_TIME"
+		},
+		{
+			"forge": "batchCache",
+			"fabric": "positionToExpiryTime"
+		},
+		{
+			"forge": "triedCount",
+			"fabric": "tries"
+		},
+		{
+			"forge": "lastUpdate",
+			"fabric": "expiryTime"
+		},
+		{
+			"forge": "requires()",
+			"fabric": "getOutputMemoryModules()"
+		},
+		{
+			"forge": "requires()",
+			"fabric": "getOutputMemoryModules()"
+		},
+		{
+			"forge": "doTick(ServerLevel arg0, Mob arg1)",
+			"fabric": "sense(ServerWorld arg0, MobEntity arg1)"
+		}
+	]
+}

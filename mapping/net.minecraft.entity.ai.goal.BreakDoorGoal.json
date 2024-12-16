@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.BreakDoorGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.BreakDoorGoal",
+			"fabric": "net.minecraft.entity.ai.goal.BreakDoorGoal"
+		},
+		{
+			"forge": "DEFAULT_DOOR_BREAK_TIME",
+			"fabric": "MIN_MAX_PROGRESS"
+		},
+		{
+			"forge": "DEFAULT_DOOR_BREAK_TIME",
+			"fabric": "MIN_MAX_PROGRESS"
+		},
+		{
+			"forge": "validDifficulties",
+			"fabric": "difficultySufficientPredicate"
+		},
+		{
+			"forge": "breakTime",
+			"fabric": "breakProgress"
+		},
+		{
+			"forge": "lastBreakProgress",
+			"fabric": "prevBreakProgress"
+		},
+		{
+			"forge": "doorBreakTime",
+			"fabric": "maxProgress"
+		},
+		{
+			"forge": "getDoorBreakTime()",
+			"fabric": "getMaxProgress()"
+		},
+		{
+			"forge": "getDoorBreakTime()",
+			"fabric": "getMaxProgress()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isValidDifficulty(Difficulty arg0)",
+			"fabric": "isDifficultySufficient(Difficulty difficulty)"
+		}
+	]
+}

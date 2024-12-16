@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.RandomSupport$Seed128bit",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.RandomSupport$Seed128bit",
+			"fabric": "net.minecraft.util.math.random.RandomSeed$XoroshiroSeed"
+		},
+		{
+			"forge": "seedLo",
+			"fabric": "seedLo"
+		},
+		{
+			"forge": "seedLo",
+			"fabric": "seedLo"
+		},
+		{
+			"forge": "seedHi",
+			"fabric": "seedHi"
+		},
+		{
+			"forge": "xor(long arg0, long arg1)",
+			"fabric": "split(long seedLo, long seedHi)"
+		},
+		{
+			"forge": "xor(long arg0, long arg1)",
+			"fabric": "split(long seedLo, long seedHi)"
+		},
+		{
+			"forge": "xor(RandomSupport$Seed128bit arg0)",
+			"fabric": "split(RandomSeed$XoroshiroSeed seed)"
+		},
+		{
+			"forge": "mixed()",
+			"fabric": "mix()"
+		},
+		{
+			"forge": "seedLo()",
+			"fabric": "seedLo()"
+		},
+		{
+			"forge": "seedHi()",
+			"fabric": "seedHi()"
+		}
+	]
+}

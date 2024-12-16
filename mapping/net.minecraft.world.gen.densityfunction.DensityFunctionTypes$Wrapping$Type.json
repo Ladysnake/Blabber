@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.DensityFunctions$Marker$Type",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.DensityFunctions$Marker$Type",
+			"fabric": "net.minecraft.world.gen.densityfunction.DensityFunctionTypes$Wrapping$Type"
+		},
+		{
+			"forge": "Interpolated",
+			"fabric": "INTERPOLATED"
+		},
+		{
+			"forge": "Interpolated",
+			"fabric": "INTERPOLATED"
+		},
+		{
+			"forge": "FlatCache",
+			"fabric": "FLAT_CACHE"
+		},
+		{
+			"forge": "Cache2D",
+			"fabric": "CACHE2D"
+		},
+		{
+			"forge": "CacheOnce",
+			"fabric": "CACHE_ONCE"
+		},
+		{
+			"forge": "CacheAllInCell",
+			"fabric": "CACHE_ALL_IN_CELL"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

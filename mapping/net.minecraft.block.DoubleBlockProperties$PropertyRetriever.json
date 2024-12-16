@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.DoubleBlockCombiner$Combiner",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.DoubleBlockCombiner$Combiner",
+			"fabric": "net.minecraft.block.DoubleBlockProperties$PropertyRetriever"
+		},
+		{
+			"forge": "acceptDouble(S arg0, S arg1)",
+			"fabric": "getFromBoth(S first, S second)"
+		},
+		{
+			"forge": "acceptDouble(S arg0, S arg1)",
+			"fabric": "getFromBoth(S first, S second)"
+		},
+		{
+			"forge": "acceptSingle(S arg0)",
+			"fabric": "getFrom(S single)"
+		},
+		{
+			"forge": "acceptNone()",
+			"fabric": "getFallback()"
+		}
+	]
+}

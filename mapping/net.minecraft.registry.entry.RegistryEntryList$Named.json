@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.core.HolderSet$Named",
+	"items": [
+		{
+			"forge": "net.minecraft.core.HolderSet$Named",
+			"fabric": "net.minecraft.registry.entry.RegistryEntryList$Named"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "owner",
+			"fabric": "owner"
+		},
+		{
+			"forge": "key",
+			"fabric": "tag"
+		},
+		{
+			"forge": "contents",
+			"fabric": "entries"
+		},
+		{
+			"forge": "bind(List<Holder<T>> arg0)",
+			"fabric": "copyOf(List<RegistryEntry<T>> entries)"
+		},
+		{
+			"forge": "bind(List<Holder<T>> arg0)",
+			"fabric": "copyOf(List<RegistryEntry<T>> entries)"
+		},
+		{
+			"forge": "key()",
+			"fabric": "getTag()"
+		},
+		{
+			"forge": "contents()",
+			"fabric": "getEntries()"
+		},
+		{
+			"forge": "unwrap()",
+			"fabric": "getStorage()"
+		},
+		{
+			"forge": "unwrapKey()",
+			"fabric": "getTagKey()"
+		},
+		{
+			"forge": "contains(Holder<T> arg0)",
+			"fabric": "contains(RegistryEntry<T> arg0)"
+		},
+		{
+			"forge": "canSerializeIn(HolderOwner<T> arg0)",
+			"fabric": "ownerEquals(RegistryEntryOwner<T> arg0)"
+		}
+	]
+}

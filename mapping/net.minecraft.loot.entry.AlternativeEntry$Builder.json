@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.entries.AlternativesEntry$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.entries.AlternativesEntry$Builder",
+			"fabric": "net.minecraft.loot.entry.AlternativeEntry$Builder"
+		},
+		{
+			"forge": "entries",
+			"fabric": "children"
+		},
+		{
+			"forge": "entries",
+			"fabric": "children"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "otherwise(LootPoolEntryContainer$Builder<?> arg0)",
+			"fabric": "alternatively(LootPoolEntry$Builder<?> arg0)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

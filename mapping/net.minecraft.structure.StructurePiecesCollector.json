@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder",
+			"fabric": "net.minecraft.structure.StructurePiecesCollector"
+		},
+		{
+			"forge": "pieces",
+			"fabric": "pieces"
+		},
+		{
+			"forge": "pieces",
+			"fabric": "pieces"
+		},
+		{
+			"forge": "addPiece(StructurePiece arg0)",
+			"fabric": "addPiece(StructurePiece arg0)"
+		},
+		{
+			"forge": "addPiece(StructurePiece arg0)",
+			"fabric": "addPiece(StructurePiece arg0)"
+		},
+		{
+			"forge": "findCollisionPiece(BoundingBox arg0)",
+			"fabric": "getIntersecting(BlockBox arg0)"
+		},
+		{
+			"forge": "offsetPiecesVertically(int arg0)",
+			"fabric": "shift(int y)"
+		},
+		{
+			"forge": "moveBelowSeaLevel(int arg0, int arg1, RandomSource arg2, int arg3)",
+			"fabric": "shiftInto(int topY, int bottomY, Random random, int topPenalty)"
+		},
+		{
+			"forge": "moveInsideHeights(RandomSource arg0, int arg1, int arg2)",
+			"fabric": "shiftInto(Random random, int baseY, int topY)"
+		},
+		{
+			"forge": "build()",
+			"fabric": "toList()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "getBoundingBox()",
+			"fabric": "getBoundingBox()"
+		}
+	]
+}

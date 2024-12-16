@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.core.Direction$Axis",
+	"items": [
+		{
+			"forge": "net.minecraft.core.Direction$Axis",
+			"fabric": "net.minecraft.util.math.Direction$Axis"
+		},
+		{
+			"forge": "X",
+			"fabric": "X"
+		},
+		{
+			"forge": "X",
+			"fabric": "X"
+		},
+		{
+			"forge": "Y",
+			"fabric": "Y"
+		},
+		{
+			"forge": "Z",
+			"fabric": "Z"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "fromName(String name)"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "fromName(String name)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "isVertical()",
+			"fabric": "isVertical()"
+		},
+		{
+			"forge": "isHorizontal()",
+			"fabric": "isHorizontal()"
+		},
+		{
+			"forge": "getRandom(RandomSource arg0)",
+			"fabric": "pickRandomAxis(Random random)"
+		},
+		{
+			"forge": "test(Direction arg0)",
+			"fabric": "test(Direction arg0)"
+		},
+		{
+			"forge": "getPlane()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "choose(int arg0, int arg1, int arg2)",
+			"fabric": "choose(int x, int y, int z)"
+		},
+		{
+			"forge": "choose(double arg0, double arg1, double arg2)",
+			"fabric": "choose(double x, double y, double z)"
+		}
+	]
+}

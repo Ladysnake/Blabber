@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.TimeSource",
+	"items": [
+		{
+			"forge": "net.minecraft.util.TimeSource",
+			"fabric": "net.minecraft.util.TimeSupplier"
+		},
+		{
+			"forge": "get(TimeUnit arg0)",
+			"fabric": "get(TimeUnit timeUnit)"
+		},
+		{
+			"forge": "get(TimeUnit arg0)",
+			"fabric": "get(TimeUnit timeUnit)"
+		}
+	]
+}

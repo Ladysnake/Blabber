@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.texture.Stitcher$Entry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.texture.Stitcher$Entry",
+			"fabric": "net.minecraft.client.texture.TextureStitcher$Stitchable"
+		},
+		{
+			"forge": "width()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "width()",
+			"fabric": "getWidth()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "name()",
+			"fabric": "getId()"
+		}
+	]
+}

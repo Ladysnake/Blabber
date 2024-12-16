@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.network.Varint21LengthFieldPrepender",
+	"items": [
+		{
+			"forge": "net.minecraft.network.Varint21LengthFieldPrepender",
+			"fabric": "net.minecraft.network.SizePrepender"
+		},
+		{
+			"forge": "MAX_BYTES",
+			"fabric": "MAX_PREPEND_LENGTH"
+		},
+		{
+			"forge": "MAX_BYTES",
+			"fabric": "MAX_PREPEND_LENGTH"
+		},
+		{
+			"forge": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)",
+			"fabric": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)"
+		},
+		{
+			"forge": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)",
+			"fabric": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)"
+		}
+	]
+}

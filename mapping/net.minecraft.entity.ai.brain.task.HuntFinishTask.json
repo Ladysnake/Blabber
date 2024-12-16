@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.monster.piglin.RememberIfHoglinWasKilled",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.piglin.RememberIfHoglinWasKilled",
+			"fabric": "net.minecraft.entity.ai.brain.task.HuntFinishTask"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		}
+	]
+}

@@ -1,0 +1,177 @@
+{
+	"title": "net.minecraft.world.level.levelgen.NoiseGeneratorSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.NoiseGeneratorSettings",
+			"fabric": "net.minecraft.world.gen.chunk.ChunkGeneratorSettings"
+		},
+		{
+			"forge": "noiseSettings",
+			"fabric": "generationShapeConfig"
+		},
+		{
+			"forge": "noiseSettings",
+			"fabric": "generationShapeConfig"
+		},
+		{
+			"forge": "defaultBlock",
+			"fabric": "defaultBlock"
+		},
+		{
+			"forge": "defaultFluid",
+			"fabric": "defaultFluid"
+		},
+		{
+			"forge": "noiseRouter",
+			"fabric": "noiseRouter"
+		},
+		{
+			"forge": "surfaceRule",
+			"fabric": "surfaceRule"
+		},
+		{
+			"forge": "spawnTarget",
+			"fabric": "spawnTarget"
+		},
+		{
+			"forge": "seaLevel",
+			"fabric": "seaLevel"
+		},
+		{
+			"forge": "disableMobGeneration",
+			"fabric": "mobGenerationDisabled"
+		},
+		{
+			"forge": "aquifersEnabled",
+			"fabric": "aquifers"
+		},
+		{
+			"forge": "oreVeinsEnabled",
+			"fabric": "oreVeins"
+		},
+		{
+			"forge": "useLegacyRandomSource",
+			"fabric": "usesLegacyRandom"
+		},
+		{
+			"forge": "DIRECT_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "REGISTRY_CODEC"
+		},
+		{
+			"forge": "OVERWORLD",
+			"fabric": "OVERWORLD"
+		},
+		{
+			"forge": "LARGE_BIOMES",
+			"fabric": "LARGE_BIOMES"
+		},
+		{
+			"forge": "AMPLIFIED",
+			"fabric": "AMPLIFIED"
+		},
+		{
+			"forge": "NETHER",
+			"fabric": "NETHER"
+		},
+		{
+			"forge": "END",
+			"fabric": "END"
+		},
+		{
+			"forge": "CAVES",
+			"fabric": "CAVES"
+		},
+		{
+			"forge": "FLOATING_ISLANDS",
+			"fabric": "FLOATING_ISLANDS"
+		},
+		{
+			"forge": "disableMobGeneration()",
+			"fabric": "mobGenerationDisabled()"
+		},
+		{
+			"forge": "disableMobGeneration()",
+			"fabric": "mobGenerationDisabled()"
+		},
+		{
+			"forge": "isAquifersEnabled()",
+			"fabric": "hasAquifers()"
+		},
+		{
+			"forge": "oreVeinsEnabled()",
+			"fabric": "oreVeins()"
+		},
+		{
+			"forge": "getRandomSource()",
+			"fabric": "getRandomProvider()"
+		},
+		{
+			"forge": "bootstrap(BootstapContext<NoiseGeneratorSettings> arg0)",
+			"fabric": "bootstrap(Registerable<ChunkGeneratorSettings> chunkGenerationSettingsRegisterable)"
+		},
+		{
+			"forge": "end(BootstapContext<?> arg0)",
+			"fabric": "createEndSettings(Registerable<?> registerable)"
+		},
+		{
+			"forge": "nether(BootstapContext<?> arg0)",
+			"fabric": "createNetherSettings(Registerable<?> registerable)"
+		},
+		{
+			"forge": "overworld(BootstapContext<?> arg0, boolean arg1, boolean arg2)",
+			"fabric": "createSurfaceSettings(Registerable<?> registerable, boolean amplified, boolean largeBiomes)"
+		},
+		{
+			"forge": "caves(BootstapContext<?> arg0)",
+			"fabric": "createCavesSettings(Registerable<?> registerable)"
+		},
+		{
+			"forge": "floatingIslands(BootstapContext<?> arg0)",
+			"fabric": "createFloatingIslandsSettings(Registerable<?> registerable)"
+		},
+		{
+			"forge": "dummy()",
+			"fabric": "createMissingSettings()"
+		},
+		{
+			"forge": "noiseSettings()",
+			"fabric": "generationShapeConfig()"
+		},
+		{
+			"forge": "defaultBlock()",
+			"fabric": "defaultBlock()"
+		},
+		{
+			"forge": "defaultFluid()",
+			"fabric": "defaultFluid()"
+		},
+		{
+			"forge": "noiseRouter()",
+			"fabric": "noiseRouter()"
+		},
+		{
+			"forge": "surfaceRule()",
+			"fabric": "surfaceRule()"
+		},
+		{
+			"forge": "spawnTarget()",
+			"fabric": "spawnTarget()"
+		},
+		{
+			"forge": "seaLevel()",
+			"fabric": "seaLevel()"
+		},
+		{
+			"forge": "aquifersEnabled()",
+			"fabric": "aquifers()"
+		},
+		{
+			"forge": "useLegacyRandomSource()",
+			"fabric": "usesLegacyRandom()"
+		}
+	]
+}

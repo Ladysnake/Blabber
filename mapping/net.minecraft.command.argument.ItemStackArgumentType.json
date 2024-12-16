@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.commands.arguments.item.ItemArgument",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.item.ItemArgument",
+			"fabric": "net.minecraft.command.argument.ItemStackArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "items",
+			"fabric": "registryWrapper"
+		},
+		{
+			"forge": "item(CommandBuildContext arg0)",
+			"fabric": "itemStack(CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "item(CommandBuildContext arg0)",
+			"fabric": "itemStack(CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		},
+		{
+			"forge": "getItem(com.mojang.brigadier.context.CommandContext<S> arg0, String arg1)",
+			"fabric": "getItemStackArgument(com.mojang.brigadier.context.CommandContext<S> context, String name)"
+		},
+		{
+			"forge": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "listSuggestions(com.mojang.brigadier.context.CommandContext<S> context, com.mojang.brigadier.suggestion.SuggestionsBuilder builder)"
+		}
+	]
+}

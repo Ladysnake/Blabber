@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blockpredicates.StateTestingPredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blockpredicates.StateTestingPredicate",
+			"fabric": "net.minecraft.world.gen.blockpredicate.OffsetPredicate"
+		},
+		{
+			"forge": "offset",
+			"fabric": "offset"
+		},
+		{
+			"forge": "offset",
+			"fabric": "offset"
+		},
+		{
+			"forge": "stateTestingCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> arg0)",
+			"fabric": "registerOffsetField(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> instance)"
+		},
+		{
+			"forge": "stateTestingCodec(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> arg0)",
+			"fabric": "registerOffsetField(com.mojang.serialization.codecs.RecordCodecBuilder$Instance<P> instance)"
+		},
+		{
+			"forge": "test(WorldGenLevel arg0, BlockPos arg1)",
+			"fabric": "test(StructureWorldAccess arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "test(BlockState arg0)",
+			"fabric": "test(BlockState state)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.core.RegistryAccess$1",
+	"items": [
+		{
+			"forge": "net.minecraft.core.RegistryAccess$1",
+			"fabric": "net.minecraft.registry.DynamicRegistryManager$1"
+		},
+		{
+			"forge": "registry(ResourceKey<? extends Registry<? extends T>> arg0)",
+			"fabric": "getOptional(RegistryKey<? extends Registry<? extends T>> arg0)"
+		},
+		{
+			"forge": "registry(ResourceKey<? extends Registry<? extends T>> arg0)",
+			"fabric": "getOptional(RegistryKey<? extends Registry<? extends T>> arg0)"
+		},
+		{
+			"forge": "registries()",
+			"fabric": "streamAllRegistries()"
+		},
+		{
+			"forge": "freeze()",
+			"fabric": "toImmutable()"
+		}
+	]
+}

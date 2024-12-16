@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.util.profiling.jfr.stats.TickTimeStat",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.jfr.stats.TickTimeStat",
+			"fabric": "net.minecraft.util.profiling.jfr.sample.ServerTickTimeSample"
+		},
+		{
+			"forge": "timestamp",
+			"fabric": "time"
+		},
+		{
+			"forge": "timestamp",
+			"fabric": "time"
+		},
+		{
+			"forge": "currentAverage",
+			"fabric": "averageTickMs"
+		},
+		{
+			"forge": "from(RecordedEvent arg0)",
+			"fabric": "fromEvent(RecordedEvent event)"
+		},
+		{
+			"forge": "from(RecordedEvent arg0)",
+			"fabric": "fromEvent(RecordedEvent event)"
+		},
+		{
+			"forge": "timestamp()",
+			"fabric": "time()"
+		},
+		{
+			"forge": "currentAverage()",
+			"fabric": "averageTickMs()"
+		}
+	]
+}

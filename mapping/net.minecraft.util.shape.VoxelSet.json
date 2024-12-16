@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.world.phys.shapes.DiscreteVoxelShape",
+	"items": [
+		{
+			"forge": "net.minecraft.world.phys.shapes.DiscreteVoxelShape",
+			"fabric": "net.minecraft.util.shape.VoxelSet"
+		},
+		{
+			"forge": "AXIS_VALUES",
+			"fabric": "AXES"
+		},
+		{
+			"forge": "AXIS_VALUES",
+			"fabric": "AXES"
+		},
+		{
+			"forge": "xSize",
+			"fabric": "sizeX"
+		},
+		{
+			"forge": "ySize",
+			"fabric": "sizeY"
+		},
+		{
+			"forge": "zSize",
+			"fabric": "sizeZ"
+		},
+		{
+			"forge": "isFullWide(AxisCycle arg0, int arg1, int arg2, int arg3)",
+			"fabric": "inBoundsAndContains(AxisCycleDirection cycle, int x, int y, int z)"
+		},
+		{
+			"forge": "isFullWide(AxisCycle arg0, int arg1, int arg2, int arg3)",
+			"fabric": "inBoundsAndContains(AxisCycleDirection cycle, int x, int y, int z)"
+		},
+		{
+			"forge": "isFullWide(int arg0, int arg1, int arg2)",
+			"fabric": "inBoundsAndContains(int x, int y, int z)"
+		},
+		{
+			"forge": "isFull(AxisCycle arg0, int arg1, int arg2, int arg3)",
+			"fabric": "contains(AxisCycleDirection cycle, int x, int y, int z)"
+		},
+		{
+			"forge": "isFull(int arg0, int arg1, int arg2)",
+			"fabric": "contains(int x, int y, int z)"
+		},
+		{
+			"forge": "fill(int arg0, int arg1, int arg2)",
+			"fabric": "set(int x, int y, int z)"
+		},
+		{
+			"forge": "isEmpty()",
+			"fabric": "isEmpty()"
+		},
+		{
+			"forge": "firstFull(Direction$Axis arg0)",
+			"fabric": "getMin(Direction$Axis axis)"
+		},
+		{
+			"forge": "lastFull(Direction$Axis arg0)",
+			"fabric": "getMax(Direction$Axis axis)"
+		},
+		{
+			"forge": "firstFull(Direction$Axis arg0, int arg1, int arg2)",
+			"fabric": "getStartingAxisCoord(Direction$Axis axis, int from, int to)"
+		},
+		{
+			"forge": "lastFull(Direction$Axis arg0, int arg1, int arg2)",
+			"fabric": "getEndingAxisCoord(Direction$Axis axis, int from, int to)"
+		},
+		{
+			"forge": "getSize(Direction$Axis arg0)",
+			"fabric": "getSize(Direction$Axis axis)"
+		},
+		{
+			"forge": "getXSize()",
+			"fabric": "getXSize()"
+		},
+		{
+			"forge": "getYSize()",
+			"fabric": "getYSize()"
+		},
+		{
+			"forge": "getZSize()",
+			"fabric": "getZSize()"
+		},
+		{
+			"forge": "forAllEdges(DiscreteVoxelShape$IntLineConsumer arg0, boolean arg1)",
+			"fabric": "forEachEdge(VoxelSet$PositionBiConsumer callback, boolean coalesce)"
+		},
+		{
+			"forge": "forAllAxisEdges(DiscreteVoxelShape$IntLineConsumer arg0, AxisCycle arg1, boolean arg2)",
+			"fabric": "forEachEdge(VoxelSet$PositionBiConsumer callback, AxisCycleDirection direction, boolean coalesce)"
+		},
+		{
+			"forge": "forAllBoxes(DiscreteVoxelShape$IntLineConsumer arg0, boolean arg1)",
+			"fabric": "forEachBox(VoxelSet$PositionBiConsumer consumer, boolean coalesce)"
+		},
+		{
+			"forge": "forAllFaces(DiscreteVoxelShape$IntFaceConsumer arg0)",
+			"fabric": "forEachDirection(VoxelSet$PositionConsumer arg0)"
+		},
+		{
+			"forge": "forAllAxisFaces(DiscreteVoxelShape$IntFaceConsumer arg0, AxisCycle arg1)",
+			"fabric": "forEachDirection(VoxelSet$PositionConsumer arg0, AxisCycleDirection direction)"
+		}
+	]
+}

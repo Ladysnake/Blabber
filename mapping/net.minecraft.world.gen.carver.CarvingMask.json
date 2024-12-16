@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.chunk.CarvingMask",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.CarvingMask",
+			"fabric": "net.minecraft.world.gen.carver.CarvingMask"
+		},
+		{
+			"forge": "minY",
+			"fabric": "bottomY"
+		},
+		{
+			"forge": "minY",
+			"fabric": "bottomY"
+		},
+		{
+			"forge": "mask",
+			"fabric": "mask"
+		},
+		{
+			"forge": "additionalMask",
+			"fabric": "maskPredicate"
+		},
+		{
+			"forge": "setAdditionalMask(CarvingMask$Mask arg0)",
+			"fabric": "setMaskPredicate(CarvingMask$MaskPredicate maskPredicate)"
+		},
+		{
+			"forge": "setAdditionalMask(CarvingMask$Mask arg0)",
+			"fabric": "setMaskPredicate(CarvingMask$MaskPredicate maskPredicate)"
+		},
+		{
+			"forge": "getIndex(int arg0, int arg1, int arg2)",
+			"fabric": "getIndex(int offsetX, int y, int offsetZ)"
+		},
+		{
+			"forge": "set(int arg0, int arg1, int arg2)",
+			"fabric": "set(int offsetX, int y, int offsetZ)"
+		},
+		{
+			"forge": "get(int arg0, int arg1, int arg2)",
+			"fabric": "get(int offsetX, int y, int offsetZ)"
+		},
+		{
+			"forge": "stream(ChunkPos arg0)",
+			"fabric": "streamBlockPos(ChunkPos chunkPos)"
+		},
+		{
+			"forge": "toArray()",
+			"fabric": "getMask()"
+		}
+	]
+}

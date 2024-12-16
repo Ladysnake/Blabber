@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.featuresize.FeatureSizeType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.featuresize.FeatureSizeType",
+			"fabric": "net.minecraft.world.gen.feature.size.FeatureSizeType"
+		},
+		{
+			"forge": "TWO_LAYERS_FEATURE_SIZE",
+			"fabric": "TWO_LAYERS_FEATURE_SIZE"
+		},
+		{
+			"forge": "TWO_LAYERS_FEATURE_SIZE",
+			"fabric": "TWO_LAYERS_FEATURE_SIZE"
+		},
+		{
+			"forge": "THREE_LAYERS_FEATURE_SIZE",
+			"fabric": "THREE_LAYERS_FEATURE_SIZE"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		}
+	]
+}

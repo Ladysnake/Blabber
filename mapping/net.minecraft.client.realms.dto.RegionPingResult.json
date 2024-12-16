@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.realmsclient.dto.RegionPingResult",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RegionPingResult",
+			"fabric": "net.minecraft.client.realms.dto.RegionPingResult"
+		},
+		{
+			"forge": "regionName",
+			"fabric": "regionName"
+		},
+		{
+			"forge": "regionName",
+			"fabric": "regionName"
+		},
+		{
+			"forge": "ping",
+			"fabric": "ping"
+		},
+		{
+			"forge": "ping()",
+			"fabric": "getPing()"
+		},
+		{
+			"forge": "ping()",
+			"fabric": "getPing()"
+		}
+	]
+}

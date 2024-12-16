@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.client.searchtree.SearchRegistry$TreeBuilderSupplier",
+	"items": [
+		{
+			"forge": "net.minecraft.client.searchtree.SearchRegistry$TreeBuilderSupplier",
+			"fabric": "net.minecraft.client.search.SearchManager$ProviderGetter"
+		}
+	]
+}

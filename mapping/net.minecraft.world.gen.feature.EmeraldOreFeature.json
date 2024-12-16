@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature",
+			"fabric": "net.minecraft.world.gen.feature.EmeraldOreFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<ReplaceBlockConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<EmeraldOreFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<ReplaceBlockConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<EmeraldOreFeatureConfig> arg0)"
+		}
+	]
+}

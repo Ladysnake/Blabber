@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.IntRange$IntLimiter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.IntRange$IntLimiter",
+			"fabric": "net.minecraft.loot.operator.BoundedIntUnaryOperator$Applier"
+		},
+		{
+			"forge": "apply(LootContext arg0, int arg1)",
+			"fabric": "apply(LootContext context, int value)"
+		},
+		{
+			"forge": "apply(LootContext arg0, int arg1)",
+			"fabric": "apply(LootContext context, int value)"
+		}
+	]
+}

@@ -1,0 +1,141 @@
+{
+	"title": "net.minecraft.world.entity.decoration.HangingEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.decoration.HangingEntity",
+			"fabric": "net.minecraft.entity.decoration.AbstractDecorationEntity"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "HANGING_ENTITY",
+			"fabric": "PREDICATE"
+		},
+		{
+			"forge": "checkInterval",
+			"fabric": "obstructionCheckCounter"
+		},
+		{
+			"forge": "pos",
+			"fabric": "attachmentPos"
+		},
+		{
+			"forge": "direction",
+			"fabric": "facing"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "setDirection(Direction arg0)",
+			"fabric": "setFacing(Direction facing)"
+		},
+		{
+			"forge": "recalculateBoundingBox()",
+			"fabric": "updateAttachmentPosition()"
+		},
+		{
+			"forge": "offs(int arg0)",
+			"fabric": "method_6893(int arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "survives()",
+			"fabric": "canStayAttached()"
+		},
+		{
+			"forge": "isPickable()",
+			"fabric": "canHit()"
+		},
+		{
+			"forge": "skipAttackInteraction(Entity arg0)",
+			"fabric": "handleAttack(Entity arg0)"
+		},
+		{
+			"forge": "getDirection()",
+			"fabric": "getHorizontalFacing()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "move(MoverType arg0, Vec3 arg1)",
+			"fabric": "move(MovementType arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "push(double arg0, double arg1, double arg2)",
+			"fabric": "addVelocity(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getWidth()",
+			"fabric": "getWidthPixels()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeightPixels()"
+		},
+		{
+			"forge": "dropItem(Entity arg0)",
+			"fabric": "onBreak(Entity entity)"
+		},
+		{
+			"forge": "playPlacementSound()",
+			"fabric": "onPlace()"
+		},
+		{
+			"forge": "spawnAtLocation(ItemStack arg0, float arg1)",
+			"fabric": "dropStack(ItemStack arg0, float arg1)"
+		},
+		{
+			"forge": "repositionEntityAfterLoad()",
+			"fabric": "shouldSetPositionOnLoad()"
+		},
+		{
+			"forge": "setPos(double arg0, double arg1, double arg2)",
+			"fabric": "setPosition(double arg0, double arg1, double arg2)"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getDecorationBlockPos()"
+		},
+		{
+			"forge": "rotate(Rotation arg0)",
+			"fabric": "applyRotation(BlockRotation arg0)"
+		},
+		{
+			"forge": "mirror(Mirror arg0)",
+			"fabric": "applyMirror(BlockMirror arg0)"
+		},
+		{
+			"forge": "thunderHit(ServerLevel arg0, LightningBolt arg1)",
+			"fabric": "onStruckByLightning(ServerWorld arg0, LightningEntity arg1)"
+		},
+		{
+			"forge": "refreshDimensions()",
+			"fabric": "calculateDimensions()"
+		}
+	]
+}

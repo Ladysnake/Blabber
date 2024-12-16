@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.Graph",
+	"items": [
+		{
+			"forge": "net.minecraft.util.Graph",
+			"fabric": "net.minecraft.util.TopologicalSorts"
+		},
+		{
+			"forge": "depthFirstSearch(Map<T, Set<T>> arg0, Set<T> arg1, Set<T> arg2, Consumer<T> arg3, T arg4)",
+			"fabric": "sort(Map<T, Set<T>> successors, Set<T> visited, Set<T> visiting, Consumer<T> reversedOrderConsumer, T now)"
+		},
+		{
+			"forge": "depthFirstSearch(Map<T, Set<T>> arg0, Set<T> arg1, Set<T> arg2, Consumer<T> arg3, T arg4)",
+			"fabric": "sort(Map<T, Set<T>> successors, Set<T> visited, Set<T> visiting, Consumer<T> reversedOrderConsumer, T now)"
+		}
+	]
+}

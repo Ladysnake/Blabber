@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.GpuWarnlistManager$Preparations",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.GpuWarnlistManager$Preparations",
+			"fabric": "net.minecraft.client.resource.VideoWarningManager$WarningPatternLoader"
+		},
+		{
+			"forge": "rendererPatterns",
+			"fabric": "rendererPatterns"
+		},
+		{
+			"forge": "rendererPatterns",
+			"fabric": "rendererPatterns"
+		},
+		{
+			"forge": "versionPatterns",
+			"fabric": "versionPatterns"
+		},
+		{
+			"forge": "vendorPatterns",
+			"fabric": "vendorPatterns"
+		},
+		{
+			"forge": "matchAny(List<Pattern> arg0, String arg1)",
+			"fabric": "buildWarning(List<Pattern> warningPattern, String info)"
+		},
+		{
+			"forge": "matchAny(List<Pattern> arg0, String arg1)",
+			"fabric": "buildWarning(List<Pattern> warningPattern, String info)"
+		},
+		{
+			"forge": "apply()",
+			"fabric": "buildWarnings()"
+		}
+	]
+}

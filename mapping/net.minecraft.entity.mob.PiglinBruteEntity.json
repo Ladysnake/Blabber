@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.world.entity.monster.piglin.PiglinBrute",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.piglin.PiglinBrute",
+			"fabric": "net.minecraft.entity.mob.PiglinBruteEntity"
+		},
+		{
+			"forge": "MAX_HEALTH",
+			"fabric": "MAX_HEALTH"
+		},
+		{
+			"forge": "MAX_HEALTH",
+			"fabric": "MAX_HEALTH"
+		},
+		{
+			"forge": "MOVEMENT_SPEED_WHEN_FIGHTING",
+			"fabric": "MOVEMENT_SPEED"
+		},
+		{
+			"forge": "ATTACK_DAMAGE",
+			"fabric": "ATTACK_DAMAGE"
+		},
+		{
+			"forge": "SENSOR_TYPES",
+			"fabric": "SENSOR_TYPES"
+		},
+		{
+			"forge": "MEMORY_TYPES",
+			"fabric": "MEMORY_MODULE_TYPES"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createPiglinBruteAttributes()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createPiglinBruteAttributes()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "populateDefaultEquipmentSlots(RandomSource arg0, DifficultyInstance arg1)",
+			"fabric": "initEquipment(Random arg0, LocalDifficulty arg1)"
+		},
+		{
+			"forge": "brainProvider()",
+			"fabric": "createBrainProfile()"
+		},
+		{
+			"forge": "makeBrain(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "deserializeBrain(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "getBrain()",
+			"fabric": "getBrain()"
+		},
+		{
+			"forge": "canHunt()",
+			"fabric": "canHunt()"
+		},
+		{
+			"forge": "wantsToPickUp(ItemStack arg0)",
+			"fabric": "canGather(ItemStack arg0)"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "getArmPose()",
+			"fabric": "getActivity()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "playStepSound(BlockPos arg0, BlockState arg1)",
+			"fabric": "playStepSound(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "playAngrySound()",
+			"fabric": "playAngrySound()"
+		},
+		{
+			"forge": "playConvertedSound()",
+			"fabric": "playZombificationSound()"
+		}
+	]
+}

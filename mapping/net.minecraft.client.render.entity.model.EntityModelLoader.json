@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.model.geom.EntityModelSet",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.geom.EntityModelSet",
+			"fabric": "net.minecraft.client.render.entity.model.EntityModelLoader"
+		},
+		{
+			"forge": "roots",
+			"fabric": "modelParts"
+		},
+		{
+			"forge": "roots",
+			"fabric": "modelParts"
+		},
+		{
+			"forge": "bakeLayer(ModelLayerLocation arg0)",
+			"fabric": "getModelPart(EntityModelLayer layer)"
+		},
+		{
+			"forge": "bakeLayer(ModelLayerLocation arg0)",
+			"fabric": "getModelPart(EntityModelLayer layer)"
+		},
+		{
+			"forge": "onResourceManagerReload(ResourceManager arg0)",
+			"fabric": "reload(ResourceManager arg0)"
+		}
+	]
+}

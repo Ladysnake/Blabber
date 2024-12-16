@@ -1,0 +1,113 @@
+{
+	"title": "net.minecraft.world.level.storage.ServerLevelData",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.ServerLevelData",
+			"fabric": "net.minecraft.world.level.ServerWorldProperties"
+		},
+		{
+			"forge": "getLevelName()",
+			"fabric": "getLevelName()"
+		},
+		{
+			"forge": "getLevelName()",
+			"fabric": "getLevelName()"
+		},
+		{
+			"forge": "setThundering(boolean arg0)",
+			"fabric": "setThundering(boolean thundering)"
+		},
+		{
+			"forge": "getRainTime()",
+			"fabric": "getRainTime()"
+		},
+		{
+			"forge": "setRainTime(int arg0)",
+			"fabric": "setRainTime(int rainTime)"
+		},
+		{
+			"forge": "setThunderTime(int arg0)",
+			"fabric": "setThunderTime(int thunderTime)"
+		},
+		{
+			"forge": "getThunderTime()",
+			"fabric": "getThunderTime()"
+		},
+		{
+			"forge": "fillCrashReportCategory(CrashReportCategory arg0, LevelHeightAccessor arg1)",
+			"fabric": "populateCrashReport(CrashReportSection arg0, HeightLimitView arg1)"
+		},
+		{
+			"forge": "getClearWeatherTime()",
+			"fabric": "getClearWeatherTime()"
+		},
+		{
+			"forge": "setClearWeatherTime(int arg0)",
+			"fabric": "setClearWeatherTime(int clearWeatherTime)"
+		},
+		{
+			"forge": "getWanderingTraderSpawnDelay()",
+			"fabric": "getWanderingTraderSpawnDelay()"
+		},
+		{
+			"forge": "setWanderingTraderSpawnDelay(int arg0)",
+			"fabric": "setWanderingTraderSpawnDelay(int wanderingTraderSpawnDelay)"
+		},
+		{
+			"forge": "getWanderingTraderSpawnChance()",
+			"fabric": "getWanderingTraderSpawnChance()"
+		},
+		{
+			"forge": "setWanderingTraderSpawnChance(int arg0)",
+			"fabric": "setWanderingTraderSpawnChance(int wanderingTraderSpawnChance)"
+		},
+		{
+			"forge": "getWanderingTraderId()",
+			"fabric": "getWanderingTraderId()"
+		},
+		{
+			"forge": "setWanderingTraderId(UUID arg0)",
+			"fabric": "setWanderingTraderId(UUID wanderingTraderId)"
+		},
+		{
+			"forge": "getGameType()",
+			"fabric": "getGameMode()"
+		},
+		{
+			"forge": "setWorldBorder(WorldBorder$Settings arg0)",
+			"fabric": "setWorldBorder(WorldBorder$Properties worldBorder)"
+		},
+		{
+			"forge": "getWorldBorder()",
+			"fabric": "getWorldBorder()"
+		},
+		{
+			"forge": "isInitialized()",
+			"fabric": "isInitialized()"
+		},
+		{
+			"forge": "setInitialized(boolean arg0)",
+			"fabric": "setInitialized(boolean initialized)"
+		},
+		{
+			"forge": "getAllowCommands()",
+			"fabric": "areCommandsAllowed()"
+		},
+		{
+			"forge": "setGameType(GameType arg0)",
+			"fabric": "setGameMode(GameMode gameMode)"
+		},
+		{
+			"forge": "getScheduledEvents()",
+			"fabric": "getScheduledEvents()"
+		},
+		{
+			"forge": "setGameTime(long arg0)",
+			"fabric": "setTime(long time)"
+		},
+		{
+			"forge": "setDayTime(long arg0)",
+			"fabric": "setTimeOfDay(long timeOfDay)"
+		}
+	]
+}

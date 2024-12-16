@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.HorseMarkingLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.HorseMarkingLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.HorseMarkingFeatureRenderer"
+		},
+		{
+			"forge": "LOCATION_BY_MARKINGS",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "LOCATION_BY_MARKINGS",
+			"fabric": "TEXTURES"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, Horse arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, HorseEntity arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, Horse arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, HorseEntity arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		}
+	]
+}

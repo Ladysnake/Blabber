@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.entity.monster.Ghast$GhastMoveControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Ghast$GhastMoveControl",
+			"fabric": "net.minecraft.entity.mob.GhastEntity$GhastMoveControl"
+		},
+		{
+			"forge": "ghast",
+			"fabric": "ghast"
+		},
+		{
+			"forge": "ghast",
+			"fabric": "ghast"
+		},
+		{
+			"forge": "floatDuration",
+			"fabric": "collisionCheckCooldown"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "canReach(Vec3 arg0, int arg1)",
+			"fabric": "willCollide(Vec3d direction, int steps)"
+		}
+	]
+}

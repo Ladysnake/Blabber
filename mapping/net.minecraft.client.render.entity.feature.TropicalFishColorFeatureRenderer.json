@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.renderer.entity.layers.TropicalFishPatternLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.layers.TropicalFishPatternLayer",
+			"fabric": "net.minecraft.client.render.entity.feature.TropicalFishColorFeatureRenderer"
+		},
+		{
+			"forge": "KOB_TEXTURE",
+			"fabric": "KOB_TEXTURE"
+		},
+		{
+			"forge": "KOB_TEXTURE",
+			"fabric": "KOB_TEXTURE"
+		},
+		{
+			"forge": "SUNSTREAK_TEXTURE",
+			"fabric": "SUNSTREAK_TEXTURE"
+		},
+		{
+			"forge": "SNOOPER_TEXTURE",
+			"fabric": "SNOOPER_TEXTURE"
+		},
+		{
+			"forge": "DASHER_TEXTURE",
+			"fabric": "DASHER_TEXTURE"
+		},
+		{
+			"forge": "BRINELY_TEXTURE",
+			"fabric": "BRINELY_TEXTURE"
+		},
+		{
+			"forge": "SPOTTY_TEXTURE",
+			"fabric": "SPOTTY_TEXTURE"
+		},
+		{
+			"forge": "FLOPPER_TEXTURE",
+			"fabric": "FLOPPER_TEXTURE"
+		},
+		{
+			"forge": "STRIPEY_TEXTURE",
+			"fabric": "STRIPEY_TEXTURE"
+		},
+		{
+			"forge": "GLITTER_TEXTURE",
+			"fabric": "GLITTER_TEXTURE"
+		},
+		{
+			"forge": "BLOCKFISH_TEXTURE",
+			"fabric": "BLOCKFISH_TEXTURE"
+		},
+		{
+			"forge": "BETTY_TEXTURE",
+			"fabric": "BETTY_TEXTURE"
+		},
+		{
+			"forge": "CLAYFISH_TEXTURE",
+			"fabric": "CLAYFISH_TEXTURE"
+		},
+		{
+			"forge": "modelA",
+			"fabric": "smallModel"
+		},
+		{
+			"forge": "modelB",
+			"fabric": "largeModel"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, TropicalFish arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, TropicalFishEntity arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		},
+		{
+			"forge": "render(PoseStack arg0, MultiBufferSource arg1, int arg2, TropicalFish arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)",
+			"fabric": "render(MatrixStack arg0, VertexConsumerProvider arg1, int arg2, TropicalFishEntity arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)"
+		}
+	]
+}

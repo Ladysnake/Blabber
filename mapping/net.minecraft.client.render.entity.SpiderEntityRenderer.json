@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.SpiderRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.SpiderRenderer",
+			"fabric": "net.minecraft.client.render.entity.SpiderEntityRenderer"
+		},
+		{
+			"forge": "SPIDER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "SPIDER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getFlipDegrees(T arg0)",
+			"fabric": "getLyingAngle(T arg0)"
+		},
+		{
+			"forge": "getFlipDegrees(T arg0)",
+			"fabric": "getLyingAngle(T arg0)"
+		},
+		{
+			"forge": "getTextureLocation(T arg0)",
+			"fabric": "getTexture(T arg0)"
+		}
+	]
+}

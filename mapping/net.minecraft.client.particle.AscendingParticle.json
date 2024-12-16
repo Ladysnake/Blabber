@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.particle.BaseAshSmokeParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.BaseAshSmokeParticle",
+			"fabric": "net.minecraft.client.particle.AscendingParticle"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getQuadSize(float arg0)",
+			"fabric": "getSize(float arg0)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

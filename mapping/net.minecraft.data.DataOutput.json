@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.data.PackOutput",
+	"items": [
+		{
+			"forge": "net.minecraft.data.PackOutput",
+			"fabric": "net.minecraft.data.DataOutput"
+		},
+		{
+			"forge": "outputFolder",
+			"fabric": "path"
+		},
+		{
+			"forge": "outputFolder",
+			"fabric": "path"
+		},
+		{
+			"forge": "getOutputFolder()",
+			"fabric": "getPath()"
+		},
+		{
+			"forge": "getOutputFolder()",
+			"fabric": "getPath()"
+		},
+		{
+			"forge": "getOutputFolder(PackOutput$Target arg0)",
+			"fabric": "resolvePath(DataOutput$OutputType outputType)"
+		},
+		{
+			"forge": "createPathProvider(PackOutput$Target arg0, String arg1)",
+			"fabric": "getResolver(DataOutput$OutputType outputType, String directoryName)"
+		}
+	]
+}

@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.StructureCheck",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.StructureCheck",
+			"fabric": "net.minecraft.world.StructureLocator"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "NO_STRUCTURE",
+			"fabric": "START_NOT_PRESENT_REFERENCE"
+		},
+		{
+			"forge": "storageAccess",
+			"fabric": "chunkIoWorker"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "biomes",
+			"fabric": "biomeRegistry"
+		},
+		{
+			"forge": "structureConfigs",
+			"fabric": "structureRegistry"
+		},
+		{
+			"forge": "structureTemplateManager",
+			"fabric": "structureTemplateManager"
+		},
+		{
+			"forge": "dimension",
+			"fabric": "worldKey"
+		},
+		{
+			"forge": "chunkGenerator",
+			"fabric": "chunkGenerator"
+		},
+		{
+			"forge": "randomState",
+			"fabric": "noiseConfig"
+		},
+		{
+			"forge": "heightAccessor",
+			"fabric": "world"
+		},
+		{
+			"forge": "biomeSource",
+			"fabric": "biomeSource"
+		},
+		{
+			"forge": "seed",
+			"fabric": "seed"
+		},
+		{
+			"forge": "fixerUpper",
+			"fabric": "dataFixer"
+		},
+		{
+			"forge": "loadedChunks",
+			"fabric": "cachedStructuresByChunkPos"
+		},
+		{
+			"forge": "featureChecks",
+			"fabric": "generationPossibilityByStructure"
+		},
+		{
+			"forge": "checkStart(ChunkPos arg0, Structure arg1, boolean arg2)",
+			"fabric": "getStructurePresence(ChunkPos pos, Structure type, boolean skipReferencedStructures)"
+		},
+		{
+			"forge": "checkStart(ChunkPos arg0, Structure arg1, boolean arg2)",
+			"fabric": "getStructurePresence(ChunkPos pos, Structure type, boolean skipReferencedStructures)"
+		},
+		{
+			"forge": "canCreateStructure(ChunkPos arg0, Structure arg1)",
+			"fabric": "isGenerationPossible(ChunkPos pos, Structure structure)"
+		},
+		{
+			"forge": "tryLoadFromStorage(ChunkPos arg0, Structure arg1, boolean arg2, long arg3)",
+			"fabric": "getStructurePresence(ChunkPos pos, Structure structure, boolean skipReferencedStructures, long posLong)"
+		},
+		{
+			"forge": "loadStructures(CompoundTag arg0)",
+			"fabric": "collectStructuresAndReferences(NbtCompound nbt)"
+		},
+		{
+			"forge": "deduplicateEmptyMap(it.unimi.dsi.fastutil.objects.Object2IntMap<Structure> arg0)",
+			"fabric": "createMapIfEmpty(it.unimi.dsi.fastutil.objects.Object2IntMap<Structure> map)"
+		},
+		{
+			"forge": "checkStructureInfo(it.unimi.dsi.fastutil.objects.Object2IntMap<Structure> arg0, Structure arg1, boolean arg2)",
+			"fabric": "getStructurePresence(it.unimi.dsi.fastutil.objects.Object2IntMap<Structure> referencesByStructure, Structure structure, boolean skipReferencedStructures)"
+		},
+		{
+			"forge": "onStructureLoad(ChunkPos arg0, Map<Structure, StructureStart> arg1)",
+			"fabric": "cache(ChunkPos pos, Map<Structure, StructureStart> structureStarts)"
+		},
+		{
+			"forge": "storeFullResults(long arg0, it.unimi.dsi.fastutil.objects.Object2IntMap<Structure> arg1)",
+			"fabric": "cache(long pos, it.unimi.dsi.fastutil.objects.Object2IntMap<Structure> referencesByStructure)"
+		},
+		{
+			"forge": "incrementReference(ChunkPos arg0, Structure arg1)",
+			"fabric": "incrementReferences(ChunkPos pos, Structure structure)"
+		}
+	]
+}

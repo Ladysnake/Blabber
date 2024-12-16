@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.SupportType$3",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.SupportType$3",
+			"fabric": "net.minecraft.block.SideShapeType$3"
+		},
+		{
+			"forge": "RIGID_SUPPORT_WIDTH",
+			"fabric": "ringWidth"
+		},
+		{
+			"forge": "RIGID_SUPPORT_WIDTH",
+			"fabric": "ringWidth"
+		},
+		{
+			"forge": "RIGID_SUPPORT_SHAPE",
+			"fabric": "hollowSquareCuboid"
+		},
+		{
+			"forge": "isSupporting(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "matches(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "isSupporting(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "matches(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		}
+	]
+}

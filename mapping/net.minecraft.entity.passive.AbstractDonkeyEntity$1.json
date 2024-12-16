@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.entity.animal.horse.AbstractChestedHorse$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.horse.AbstractChestedHorse$1",
+			"fabric": "net.minecraft.entity.passive.AbstractDonkeyEntity$1"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "set(ItemStack arg0)",
+			"fabric": "set(ItemStack arg0)"
+		}
+	]
+}

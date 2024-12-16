@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.model.HierarchicalModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.HierarchicalModel",
+			"fabric": "net.minecraft.client.render.entity.model.SinglePartEntityModel"
+		},
+		{
+			"forge": "ANIMATION_VECTOR_CACHE",
+			"fabric": "TEMP"
+		},
+		{
+			"forge": "ANIMATION_VECTOR_CACHE",
+			"fabric": "TEMP"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		},
+		{
+			"forge": "root()",
+			"fabric": "getPart()"
+		},
+		{
+			"forge": "getAnyDescendantWithName(String arg0)",
+			"fabric": "getChild(String name)"
+		},
+		{
+			"forge": "animate(AnimationState arg0, AnimationDefinition arg1, float arg2)",
+			"fabric": "updateAnimation(AnimationState animationState, Animation animation, float animationProgress)"
+		},
+		{
+			"forge": "animateWalk(AnimationDefinition arg0, float arg1, float arg2, float arg3, float arg4)",
+			"fabric": "animateMovement(Animation animation, float limbAngle, float limbDistance, float limbAngleScale, float limbDistanceScale)"
+		},
+		{
+			"forge": "animate(AnimationState arg0, AnimationDefinition arg1, float arg2, float arg3)",
+			"fabric": "updateAnimation(AnimationState animationState, Animation animation, float animationProgress, float speedMultiplier)"
+		},
+		{
+			"forge": "applyStatic(AnimationDefinition arg0)",
+			"fabric": "animate(Animation animation)"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.block.entity.DispenserBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.DispenserBlockEntity",
+			"fabric": "net.minecraft.block.entity.DispenserBlockEntity"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "items",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "getRandomSlot(RandomSource arg0)",
+			"fabric": "chooseNonEmptySlot(Random random)"
+		},
+		{
+			"forge": "addItem(ItemStack arg0)",
+			"fabric": "addToFirstFreeSlot(ItemStack stack)"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getInvStackList()"
+		},
+		{
+			"forge": "setItems(NonNullList<ItemStack> arg0)",
+			"fabric": "setInvStackList(DefaultedList<ItemStack> arg0)"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1)",
+			"fabric": "createScreenHandler(int arg0, PlayerInventory arg1)"
+		}
+	]
+}

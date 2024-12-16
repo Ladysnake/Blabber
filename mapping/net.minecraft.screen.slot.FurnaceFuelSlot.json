@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.inventory.FurnaceFuelSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.FurnaceFuelSlot",
+			"fabric": "net.minecraft.screen.slot.FurnaceFuelSlot"
+		},
+		{
+			"forge": "menu",
+			"fabric": "handler"
+		},
+		{
+			"forge": "menu",
+			"fabric": "handler"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "mayPlace(ItemStack arg0)",
+			"fabric": "canInsert(ItemStack arg0)"
+		},
+		{
+			"forge": "getMaxStackSize(ItemStack arg0)",
+			"fabric": "getMaxItemCount(ItemStack arg0)"
+		},
+		{
+			"forge": "isBucket(ItemStack arg0)",
+			"fabric": "isBucket(ItemStack stack)"
+		}
+	]
+}

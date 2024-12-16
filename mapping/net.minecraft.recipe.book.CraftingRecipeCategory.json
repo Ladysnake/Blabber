@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.item.crafting.CraftingBookCategory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.CraftingBookCategory",
+			"fabric": "net.minecraft.recipe.book.CraftingRecipeCategory"
+		},
+		{
+			"forge": "BUILDING",
+			"fabric": "BUILDING"
+		},
+		{
+			"forge": "BUILDING",
+			"fabric": "BUILDING"
+		},
+		{
+			"forge": "REDSTONE",
+			"fabric": "REDSTONE"
+		},
+		{
+			"forge": "EQUIPMENT",
+			"fabric": "EQUIPMENT"
+		},
+		{
+			"forge": "MISC",
+			"fabric": "MISC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "name",
+			"fabric": "id"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.network.chat.SignedMessageBody",
+	"items": [
+		{
+			"forge": "net.minecraft.network.chat.SignedMessageBody",
+			"fabric": "net.minecraft.network.message.MessageBody"
+		},
+		{
+			"forge": "content",
+			"fabric": "content"
+		},
+		{
+			"forge": "content",
+			"fabric": "content"
+		},
+		{
+			"forge": "timeStamp",
+			"fabric": "timestamp"
+		},
+		{
+			"forge": "salt",
+			"fabric": "salt"
+		},
+		{
+			"forge": "lastSeen",
+			"fabric": "lastSeenMessages"
+		},
+		{
+			"forge": "MAP_CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "unsigned(String arg0)",
+			"fabric": "ofUnsigned(String content)"
+		},
+		{
+			"forge": "unsigned(String arg0)",
+			"fabric": "ofUnsigned(String content)"
+		},
+		{
+			"forge": "updateSignature(SignatureUpdater$Output arg0)",
+			"fabric": "update(SignatureUpdatable$SignatureUpdater updater)"
+		},
+		{
+			"forge": "pack(MessageSignatureCache arg0)",
+			"fabric": "toSerialized(MessageSignatureStorage storage)"
+		},
+		{
+			"forge": "content()",
+			"fabric": "content()"
+		},
+		{
+			"forge": "timeStamp()",
+			"fabric": "timestamp()"
+		},
+		{
+			"forge": "salt()",
+			"fabric": "salt()"
+		},
+		{
+			"forge": "lastSeen()",
+			"fabric": "lastSeenMessages()"
+		}
+	]
+}

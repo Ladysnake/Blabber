@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.GiveGiftToHero",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.GiveGiftToHero",
+			"fabric": "net.minecraft.entity.ai.brain.task.GiveGiftsToHeroTask"
+		},
+		{
+			"forge": "THROW_GIFT_AT_DISTANCE",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "THROW_GIFT_AT_DISTANCE",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "MIN_TIME_BETWEEN_GIFTS",
+			"fabric": "DEFAULT_DURATION"
+		},
+		{
+			"forge": "MAX_TIME_BETWEEN_GIFTS",
+			"fabric": "MAX_NEXT_GIFT_DELAY"
+		},
+		{
+			"forge": "TIME_TO_DELAY_FOR_HEAD_TO_FINISH_TURNING",
+			"fabric": "RUN_TIME"
+		},
+		{
+			"forge": "GIFTS",
+			"fabric": "GIFTS"
+		},
+		{
+			"forge": "SPEED_MODIFIER",
+			"fabric": "WALK_SPEED"
+		},
+		{
+			"forge": "timeUntilNextGift",
+			"fabric": "ticksLeft"
+		},
+		{
+			"forge": "giftGivenDuringThisRun",
+			"fabric": "done"
+		},
+		{
+			"forge": "timeSinceStart",
+			"fabric": "startTime"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "checkExtraStartConditions(ServerLevel arg0, Villager arg1)",
+			"fabric": "shouldRun(ServerWorld arg0, VillagerEntity arg1)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Villager arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, VillagerEntity arg1, long arg2)"
+		},
+		{
+			"forge": "throwGift(Villager arg0, LivingEntity arg1)",
+			"fabric": "giveGifts(VillagerEntity villager, LivingEntity recipient)"
+		},
+		{
+			"forge": "getItemToThrow(Villager arg0)",
+			"fabric": "getGifts(VillagerEntity villager)"
+		},
+		{
+			"forge": "isHeroVisible(Villager arg0)",
+			"fabric": "isNearestPlayerHero(VillagerEntity villager)"
+		},
+		{
+			"forge": "getNearestTargetableHero(Villager arg0)",
+			"fabric": "getNearestPlayerIfHero(VillagerEntity villager)"
+		},
+		{
+			"forge": "isHero(Player arg0)",
+			"fabric": "isHero(PlayerEntity player)"
+		},
+		{
+			"forge": "isWithinThrowingDistance(Villager arg0, Player arg1)",
+			"fabric": "isCloseEnough(VillagerEntity villager, PlayerEntity player)"
+		},
+		{
+			"forge": "calculateTimeUntilNextGift(ServerLevel arg0)",
+			"fabric": "getNextGiftDelay(ServerWorld world)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.commands.arguments.RangeArgument$Ints",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.RangeArgument$Ints",
+			"fabric": "net.minecraft.command.argument.NumberRangeArgumentType$IntRangeArgumentType"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "EXAMPLES",
+			"fabric": "EXAMPLES"
+		},
+		{
+			"forge": "getRange(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getRangeArgument(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "getRange(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "getRangeArgument(com.mojang.brigadier.context.CommandContext<ServerCommandSource> context, String name)"
+		},
+		{
+			"forge": "parse(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader arg0)"
+		}
+	]
+}

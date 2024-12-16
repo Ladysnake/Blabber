@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.Minecraft$ChatStatus$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.Minecraft$ChatStatus$1",
+			"fabric": "net.minecraft.client.MinecraftClient$ChatRestriction$1"
+		},
+		{
+			"forge": "isChatAllowed(boolean arg0)",
+			"fabric": "allowsChat(boolean arg0)"
+		},
+		{
+			"forge": "isChatAllowed(boolean arg0)",
+			"fabric": "allowsChat(boolean arg0)"
+		}
+	]
+}

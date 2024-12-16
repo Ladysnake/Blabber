@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.server.ServerFunctionManager",
+	"items": [
+		{
+			"forge": "net.minecraft.server.ServerFunctionManager",
+			"fabric": "net.minecraft.server.function.CommandFunctionManager"
+		},
+		{
+			"forge": "NO_RECURSIVE_TRACES",
+			"fabric": "NO_TRACE_IN_FUNCTION_TEXT"
+		},
+		{
+			"forge": "NO_RECURSIVE_TRACES",
+			"fabric": "NO_TRACE_IN_FUNCTION_TEXT"
+		},
+		{
+			"forge": "TICK_FUNCTION_TAG",
+			"fabric": "TICK_TAG_ID"
+		},
+		{
+			"forge": "LOAD_FUNCTION_TAG",
+			"fabric": "LOAD_TAG_ID"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "context",
+			"fabric": "execution"
+		},
+		{
+			"forge": "ticking",
+			"fabric": "tickFunctions"
+		},
+		{
+			"forge": "postReload",
+			"fabric": "justLoaded"
+		},
+		{
+			"forge": "library",
+			"fabric": "loader"
+		},
+		{
+			"forge": "getCommandLimit()",
+			"fabric": "getMaxCommandChainLength()"
+		},
+		{
+			"forge": "getCommandLimit()",
+			"fabric": "getMaxCommandChainLength()"
+		},
+		{
+			"forge": "getDispatcher()",
+			"fabric": "getDispatcher()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "executeTagFunctions(Collection<CommandFunction> arg0, ResourceLocation arg1)",
+			"fabric": "executeAll(Collection<CommandFunction> functions, Identifier label)"
+		},
+		{
+			"forge": "execute(CommandFunction arg0, CommandSourceStack arg1)",
+			"fabric": "execute(CommandFunction function, ServerCommandSource source)"
+		},
+		{
+			"forge": "execute(CommandFunction arg0, CommandSourceStack arg1, ServerFunctionManager$TraceCallbacks arg2)",
+			"fabric": "execute(CommandFunction function, ServerCommandSource source, CommandFunctionManager$Tracer tracer)"
+		},
+		{
+			"forge": "replaceLibrary(ServerFunctionLibrary arg0)",
+			"fabric": "setFunctions(FunctionLoader loader)"
+		},
+		{
+			"forge": "postReload(ServerFunctionLibrary arg0)",
+			"fabric": "load(FunctionLoader loader)"
+		},
+		{
+			"forge": "getGameLoopSender()",
+			"fabric": "getScheduledCommandSource()"
+		},
+		{
+			"forge": "get(ResourceLocation arg0)",
+			"fabric": "getFunction(Identifier id)"
+		},
+		{
+			"forge": "getTag(ResourceLocation arg0)",
+			"fabric": "getTag(Identifier id)"
+		},
+		{
+			"forge": "getFunctionNames()",
+			"fabric": "getAllFunctions()"
+		},
+		{
+			"forge": "getTagNames()",
+			"fabric": "getFunctionTags()"
+		}
+	]
+}

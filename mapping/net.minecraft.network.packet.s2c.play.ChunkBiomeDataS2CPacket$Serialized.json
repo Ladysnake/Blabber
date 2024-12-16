@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundChunksBiomesPacket$ChunkBiomeData",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundChunksBiomesPacket$ChunkBiomeData",
+			"fabric": "net.minecraft.network.packet.s2c.play.ChunkBiomeDataS2CPacket$Serialized"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "buffer",
+			"fabric": "buffer"
+		},
+		{
+			"forge": "calculateChunkSize(LevelChunk arg0)",
+			"fabric": "getTotalPacketSize(WorldChunk chunk)"
+		},
+		{
+			"forge": "calculateChunkSize(LevelChunk arg0)",
+			"fabric": "getTotalPacketSize(WorldChunk chunk)"
+		},
+		{
+			"forge": "getReadBuffer()",
+			"fabric": "toReadingBuf()"
+		},
+		{
+			"forge": "getWriteBuffer()",
+			"fabric": "toWritingBuf()"
+		},
+		{
+			"forge": "extractChunkData(FriendlyByteBuf arg0, LevelChunk arg1)",
+			"fabric": "write(PacketByteBuf buf, WorldChunk chunk)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf buf)"
+		},
+		{
+			"forge": "pos()",
+			"fabric": "pos()"
+		},
+		{
+			"forge": "buffer()",
+			"fabric": "buffer()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.ConfirmExperimentalFeaturesScreen$DetailsScreen$PackList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.ConfirmExperimentalFeaturesScreen$DetailsScreen$PackList",
+			"fabric": "net.minecraft.client.gui.screen.pack.ExperimentalWarningScreen$DetailsScreen$PackListWidget"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		}
+	]
+}

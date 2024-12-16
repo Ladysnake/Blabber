@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.data.models.ItemModelGenerators$TrimModelData",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.ItemModelGenerators$TrimModelData",
+			"fabric": "net.minecraft.data.client.ItemModelGenerator$TrimMaterial"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "itemModelIndex",
+			"fabric": "itemModelIndex"
+		},
+		{
+			"forge": "overrideArmorMaterials",
+			"fabric": "overrideArmorMaterials"
+		},
+		{
+			"forge": "name(ArmorMaterial arg0)",
+			"fabric": "getAppliedName(ArmorMaterial armorMaterial)"
+		},
+		{
+			"forge": "name(ArmorMaterial arg0)",
+			"fabric": "getAppliedName(ArmorMaterial armorMaterial)"
+		},
+		{
+			"forge": "name()",
+			"fabric": "name()"
+		},
+		{
+			"forge": "itemModelIndex()",
+			"fabric": "itemModelIndex()"
+		},
+		{
+			"forge": "overrideArmorMaterials()",
+			"fabric": "overrideArmorMaterials()"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.AbstractUUIDFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.AbstractUUIDFix",
+			"fabric": "net.minecraft.datafixer.fix.AbstractUuidFix"
+		},
+		{
+			"forge": "typeReference",
+			"fabric": "typeReference"
+		},
+		{
+			"forge": "typeReference",
+			"fabric": "typeReference"
+		},
+		{
+			"forge": "updateNamedChoice(com.mojang.datafixers.Typed<?> arg0, String arg1, Function<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> arg2)",
+			"fabric": "updateTyped(com.mojang.datafixers.Typed<?> typed, String name, Function<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> updater)"
+		},
+		{
+			"forge": "updateNamedChoice(com.mojang.datafixers.Typed<?> arg0, String arg1, Function<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> arg2)",
+			"fabric": "updateTyped(com.mojang.datafixers.Typed<?> typed, String name, Function<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> updater)"
+		},
+		{
+			"forge": "replaceUUIDString(com.mojang.serialization.Dynamic<?> arg0, String arg1, String arg2)",
+			"fabric": "updateStringUuid(com.mojang.serialization.Dynamic<?> arg0, String oldKey, String newKey)"
+		},
+		{
+			"forge": "replaceUUIDMLTag(com.mojang.serialization.Dynamic<?> arg0, String arg1, String arg2)",
+			"fabric": "updateCompoundUuid(com.mojang.serialization.Dynamic<?> arg0, String oldKey, String newKey)"
+		},
+		{
+			"forge": "replaceUUIDLeastMost(com.mojang.serialization.Dynamic<?> arg0, String arg1, String arg2)",
+			"fabric": "updateRegularMostLeast(com.mojang.serialization.Dynamic<?> arg0, String oldKey, String newKey)"
+		},
+		{
+			"forge": "createUUIDFromString(com.mojang.serialization.Dynamic<?> arg0, String arg1)",
+			"fabric": "createArrayFromStringUuid(com.mojang.serialization.Dynamic<?> arg0, String key)"
+		},
+		{
+			"forge": "createUUIDFromML(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "createArrayFromCompoundUuid(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "createUUIDFromLongs(com.mojang.serialization.Dynamic<?> arg0, String arg1, String arg2)",
+			"fabric": "createArrayFromMostLeastTags(com.mojang.serialization.Dynamic<?> arg0, String mostBitsKey, String leastBitsKey)"
+		},
+		{
+			"forge": "createUUIDTag(com.mojang.serialization.Dynamic<?> arg0, long arg1, long arg2)",
+			"fabric": "createArray(com.mojang.serialization.Dynamic<?> arg0, long mostBits, long leastBits)"
+		}
+	]
+}

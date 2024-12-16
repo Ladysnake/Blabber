@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType",
+			"fabric": "net.minecraft.world.gen.trunk.TrunkPlacerType"
+		},
+		{
+			"forge": "STRAIGHT_TRUNK_PLACER",
+			"fabric": "STRAIGHT_TRUNK_PLACER"
+		},
+		{
+			"forge": "STRAIGHT_TRUNK_PLACER",
+			"fabric": "STRAIGHT_TRUNK_PLACER"
+		},
+		{
+			"forge": "FORKING_TRUNK_PLACER",
+			"fabric": "FORKING_TRUNK_PLACER"
+		},
+		{
+			"forge": "GIANT_TRUNK_PLACER",
+			"fabric": "GIANT_TRUNK_PLACER"
+		},
+		{
+			"forge": "MEGA_JUNGLE_TRUNK_PLACER",
+			"fabric": "MEGA_JUNGLE_TRUNK_PLACER"
+		},
+		{
+			"forge": "DARK_OAK_TRUNK_PLACER",
+			"fabric": "DARK_OAK_TRUNK_PLACER"
+		},
+		{
+			"forge": "FANCY_TRUNK_PLACER",
+			"fabric": "FANCY_TRUNK_PLACER"
+		},
+		{
+			"forge": "BENDING_TRUNK_PLACER",
+			"fabric": "BENDING_TRUNK_PLACER"
+		},
+		{
+			"forge": "UPWARDS_BRANCHING_TRUNK_PLACER",
+			"fabric": "UPWARDS_BRANCHING_TRUNK_PLACER"
+		},
+		{
+			"forge": "CHERRY_TRUNK_PLACER",
+			"fabric": "CHERRY_TRUNK_PLACER"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		}
+	]
+}

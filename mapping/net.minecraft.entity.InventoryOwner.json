@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.npc.InventoryCarrier",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.InventoryCarrier",
+			"fabric": "net.minecraft.entity.InventoryOwner"
+		},
+		{
+			"forge": "TAG_INVENTORY",
+			"fabric": "INVENTORY_KEY"
+		},
+		{
+			"forge": "TAG_INVENTORY",
+			"fabric": "INVENTORY_KEY"
+		},
+		{
+			"forge": "getInventory()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "getInventory()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "pickUpItem(Mob arg0, InventoryCarrier arg1, ItemEntity arg2)",
+			"fabric": "pickUpItem(MobEntity entity, InventoryOwner inventoryOwner, ItemEntity item)"
+		},
+		{
+			"forge": "readInventoryFromTag(CompoundTag arg0)",
+			"fabric": "readInventory(NbtCompound nbt)"
+		},
+		{
+			"forge": "writeInventoryToTag(CompoundTag arg0)",
+			"fabric": "writeInventory(NbtCompound nbt)"
+		}
+	]
+}

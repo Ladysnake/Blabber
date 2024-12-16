@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.IntRange$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.IntRange$Serializer",
+			"fabric": "net.minecraft.loot.operator.BoundedIntUnaryOperator$Serializer"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		},
+		{
+			"forge": "serialize(IntRange arg0, Type arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "serialize(BoundedIntUnaryOperator arg0, Type arg1, com.google.gson.JsonSerializationContext arg2)"
+		}
+	]
+}

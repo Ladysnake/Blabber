@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.server.commands.PerfCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.PerfCommand",
+			"fabric": "net.minecraft.server.dedicated.command.PerfCommand"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ERROR_NOT_RUNNING",
+			"fabric": "NOT_RUNNING_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_ALREADY_RUNNING",
+			"fabric": "ALREADY_RUNNING_EXCEPTION"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "startProfilingDedicatedServer(CommandSourceStack arg0)",
+			"fabric": "executeStart(ServerCommandSource source)"
+		},
+		{
+			"forge": "stopProfilingDedicatedServer(CommandSourceStack arg0)",
+			"fabric": "executeStop(ServerCommandSource source)"
+		},
+		{
+			"forge": "saveResults(CommandSourceStack arg0, Path arg1, MinecraftServer arg2)",
+			"fabric": "saveReport(ServerCommandSource source, Path tempProfilingDirectory, MinecraftServer server)"
+		},
+		{
+			"forge": "whenStopped(CommandSourceStack arg0, ProfileResults arg1)",
+			"fabric": "sendProfilingStoppedMessage(ServerCommandSource source, ProfileResult result)"
+		}
+	]
+}

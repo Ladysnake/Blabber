@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.server.commands.AdvancementCommands",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.AdvancementCommands",
+			"fabric": "net.minecraft.server.command.AdvancementCommand"
+		},
+		{
+			"forge": "SUGGEST_ADVANCEMENTS",
+			"fabric": "SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "SUGGEST_ADVANCEMENTS",
+			"fabric": "SUGGESTION_PROVIDER"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "perform(CommandSourceStack arg0, Collection<ServerPlayer> arg1, AdvancementCommands$Action arg2, Collection<Advancement> arg3)",
+			"fabric": "executeAdvancement(ServerCommandSource source, Collection<ServerPlayerEntity> targets, AdvancementCommand$Operation operation, Collection<Advancement> selection)"
+		},
+		{
+			"forge": "performCriterion(CommandSourceStack arg0, Collection<ServerPlayer> arg1, AdvancementCommands$Action arg2, Advancement arg3, String arg4)",
+			"fabric": "executeCriterion(ServerCommandSource source, Collection<ServerPlayerEntity> targets, AdvancementCommand$Operation operation, Advancement advancement, String criterion)"
+		},
+		{
+			"forge": "getAdvancements(Advancement arg0, AdvancementCommands$Mode arg1)",
+			"fabric": "select(Advancement advancement, AdvancementCommand$Selection selection)"
+		},
+		{
+			"forge": "addChildren(Advancement arg0, List<Advancement> arg1)",
+			"fabric": "addChildrenRecursivelyToList(Advancement parent, List<Advancement> childList)"
+		}
+	]
+}

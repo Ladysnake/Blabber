@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.RarityFilter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.RarityFilter",
+			"fabric": "net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "MODIFIER_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "MODIFIER_CODEC"
+		},
+		{
+			"forge": "chance",
+			"fabric": "chance"
+		},
+		{
+			"forge": "onAverageOnceEvery(int arg0)",
+			"fabric": "of(int chance)"
+		},
+		{
+			"forge": "onAverageOnceEvery(int arg0)",
+			"fabric": "of(int chance)"
+		},
+		{
+			"forge": "shouldPlace(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "shouldPlace(FeaturePlacementContext arg0, Random arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

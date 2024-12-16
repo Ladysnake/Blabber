@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.particle.VibrationSignalParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.VibrationSignalParticle",
+			"fabric": "net.minecraft.client.particle.VibrationParticle"
+		},
+		{
+			"forge": "target",
+			"fabric": "vibration"
+		},
+		{
+			"forge": "target",
+			"fabric": "vibration"
+		},
+		{
+			"forge": "rot",
+			"fabric": "field_28250"
+		},
+		{
+			"forge": "rotO",
+			"fabric": "field_28248"
+		},
+		{
+			"forge": "pitch",
+			"fabric": "field_40507"
+		},
+		{
+			"forge": "pitchO",
+			"fabric": "field_40508"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		},
+		{
+			"forge": "renderSignal(VertexConsumer arg0, Camera arg1, float arg2, Consumer<org.joml.Quaternionf> arg3)",
+			"fabric": "render(VertexConsumer vertexConsumer, Camera camera, float tickDelta, Consumer<org.joml.Quaternionf> transforms)"
+		},
+		{
+			"forge": "getLightColor(float arg0)",
+			"fabric": "getBrightness(float arg0)"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

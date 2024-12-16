@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.commands.arguments.coordinates.WorldCoordinate",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.coordinates.WorldCoordinate",
+			"fabric": "net.minecraft.command.argument.CoordinateArgument"
+		},
+		{
+			"forge": "PREFIX_RELATIVE",
+			"fabric": "TILDE"
+		},
+		{
+			"forge": "PREFIX_RELATIVE",
+			"fabric": "TILDE"
+		},
+		{
+			"forge": "ERROR_EXPECTED_DOUBLE",
+			"fabric": "MISSING_COORDINATE"
+		},
+		{
+			"forge": "ERROR_EXPECTED_INT",
+			"fabric": "MISSING_BLOCK_POSITION"
+		},
+		{
+			"forge": "relative",
+			"fabric": "relative"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "get(double arg0)",
+			"fabric": "toAbsoluteCoordinate(double offset)"
+		},
+		{
+			"forge": "get(double arg0)",
+			"fabric": "toAbsoluteCoordinate(double offset)"
+		},
+		{
+			"forge": "parseDouble(com.mojang.brigadier.StringReader arg0, boolean arg1)",
+			"fabric": "parse(com.mojang.brigadier.StringReader reader, boolean centerIntegers)"
+		},
+		{
+			"forge": "parseInt(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "parse(com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "isRelative(com.mojang.brigadier.StringReader arg0)",
+			"fabric": "isRelative(com.mojang.brigadier.StringReader reader)"
+		},
+		{
+			"forge": "isRelative()",
+			"fabric": "isRelative()"
+		}
+	]
+}

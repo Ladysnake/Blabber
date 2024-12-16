@@ -1,0 +1,281 @@
+{
+	"title": "com.mojang.math.OctahedralGroup",
+	"items": [
+		{
+			"forge": "com.mojang.math.OctahedralGroup",
+			"fabric": "net.minecraft.util.math.DirectionTransformation"
+		},
+		{
+			"forge": "IDENTITY",
+			"fabric": "IDENTITY"
+		},
+		{
+			"forge": "IDENTITY",
+			"fabric": "IDENTITY"
+		},
+		{
+			"forge": "ROT_180_FACE_XY",
+			"fabric": "ROT_180_FACE_XY"
+		},
+		{
+			"forge": "ROT_180_FACE_XZ",
+			"fabric": "ROT_180_FACE_XZ"
+		},
+		{
+			"forge": "ROT_180_FACE_YZ",
+			"fabric": "ROT_180_FACE_YZ"
+		},
+		{
+			"forge": "ROT_120_NNN",
+			"fabric": "ROT_120_NNN"
+		},
+		{
+			"forge": "ROT_120_NNP",
+			"fabric": "ROT_120_NNP"
+		},
+		{
+			"forge": "ROT_120_NPN",
+			"fabric": "ROT_120_NPN"
+		},
+		{
+			"forge": "ROT_120_NPP",
+			"fabric": "ROT_120_NPP"
+		},
+		{
+			"forge": "ROT_120_PNN",
+			"fabric": "ROT_120_PNN"
+		},
+		{
+			"forge": "ROT_120_PNP",
+			"fabric": "ROT_120_PNP"
+		},
+		{
+			"forge": "ROT_120_PPN",
+			"fabric": "ROT_120_PPN"
+		},
+		{
+			"forge": "ROT_120_PPP",
+			"fabric": "ROT_120_PPP"
+		},
+		{
+			"forge": "ROT_180_EDGE_XY_NEG",
+			"fabric": "ROT_180_EDGE_XY_NEG"
+		},
+		{
+			"forge": "ROT_180_EDGE_XY_POS",
+			"fabric": "ROT_180_EDGE_XY_POS"
+		},
+		{
+			"forge": "ROT_180_EDGE_XZ_NEG",
+			"fabric": "ROT_180_EDGE_XZ_NEG"
+		},
+		{
+			"forge": "ROT_180_EDGE_XZ_POS",
+			"fabric": "ROT_180_EDGE_XZ_POS"
+		},
+		{
+			"forge": "ROT_180_EDGE_YZ_NEG",
+			"fabric": "ROT_180_EDGE_YZ_NEG"
+		},
+		{
+			"forge": "ROT_180_EDGE_YZ_POS",
+			"fabric": "ROT_180_EDGE_YZ_POS"
+		},
+		{
+			"forge": "ROT_90_X_NEG",
+			"fabric": "ROT_90_X_NEG"
+		},
+		{
+			"forge": "ROT_90_X_POS",
+			"fabric": "ROT_90_X_POS"
+		},
+		{
+			"forge": "ROT_90_Y_NEG",
+			"fabric": "ROT_90_Y_NEG"
+		},
+		{
+			"forge": "ROT_90_Y_POS",
+			"fabric": "ROT_90_Y_POS"
+		},
+		{
+			"forge": "ROT_90_Z_NEG",
+			"fabric": "ROT_90_Z_NEG"
+		},
+		{
+			"forge": "ROT_90_Z_POS",
+			"fabric": "ROT_90_Z_POS"
+		},
+		{
+			"forge": "INVERSION",
+			"fabric": "INVERSION"
+		},
+		{
+			"forge": "INVERT_X",
+			"fabric": "INVERT_X"
+		},
+		{
+			"forge": "INVERT_Y",
+			"fabric": "INVERT_Y"
+		},
+		{
+			"forge": "INVERT_Z",
+			"fabric": "INVERT_Z"
+		},
+		{
+			"forge": "ROT_60_REF_NNN",
+			"fabric": "ROT_60_REF_NNN"
+		},
+		{
+			"forge": "ROT_60_REF_NNP",
+			"fabric": "ROT_60_REF_NNP"
+		},
+		{
+			"forge": "ROT_60_REF_NPN",
+			"fabric": "ROT_60_REF_NPN"
+		},
+		{
+			"forge": "ROT_60_REF_NPP",
+			"fabric": "ROT_60_REF_NPP"
+		},
+		{
+			"forge": "ROT_60_REF_PNN",
+			"fabric": "ROT_60_REF_PNN"
+		},
+		{
+			"forge": "ROT_60_REF_PNP",
+			"fabric": "ROT_60_REF_PNP"
+		},
+		{
+			"forge": "ROT_60_REF_PPN",
+			"fabric": "ROT_60_REF_PPN"
+		},
+		{
+			"forge": "ROT_60_REF_PPP",
+			"fabric": "ROT_60_REF_PPP"
+		},
+		{
+			"forge": "SWAP_XY",
+			"fabric": "SWAP_XY"
+		},
+		{
+			"forge": "SWAP_YZ",
+			"fabric": "SWAP_YZ"
+		},
+		{
+			"forge": "SWAP_XZ",
+			"fabric": "SWAP_XZ"
+		},
+		{
+			"forge": "SWAP_NEG_XY",
+			"fabric": "SWAP_NEG_XY"
+		},
+		{
+			"forge": "SWAP_NEG_YZ",
+			"fabric": "SWAP_NEG_YZ"
+		},
+		{
+			"forge": "SWAP_NEG_XZ",
+			"fabric": "SWAP_NEG_XZ"
+		},
+		{
+			"forge": "ROT_90_REF_X_NEG",
+			"fabric": "ROT_90_REF_X_NEG"
+		},
+		{
+			"forge": "ROT_90_REF_X_POS",
+			"fabric": "ROT_90_REF_X_POS"
+		},
+		{
+			"forge": "ROT_90_REF_Y_NEG",
+			"fabric": "ROT_90_REF_Y_NEG"
+		},
+		{
+			"forge": "ROT_90_REF_Y_POS",
+			"fabric": "ROT_90_REF_Y_POS"
+		},
+		{
+			"forge": "ROT_90_REF_Z_NEG",
+			"fabric": "ROT_90_REF_Z_NEG"
+		},
+		{
+			"forge": "ROT_90_REF_Z_POS",
+			"fabric": "ROT_90_REF_Z_POS"
+		},
+		{
+			"forge": "transformation",
+			"fabric": "matrix"
+		},
+		{
+			"forge": "transformation",
+			"fabric": "matrix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "rotatedDirections",
+			"fabric": "mappings"
+		},
+		{
+			"forge": "invertX",
+			"fabric": "flipX"
+		},
+		{
+			"forge": "invertY",
+			"fabric": "flipY"
+		},
+		{
+			"forge": "invertZ",
+			"fabric": "flipZ"
+		},
+		{
+			"forge": "permutation",
+			"fabric": "axisTransformation"
+		},
+		{
+			"forge": "cayleyTable",
+			"fabric": "COMBINATIONS"
+		},
+		{
+			"forge": "inverseTable",
+			"fabric": "INVERSES"
+		},
+		{
+			"forge": "packInversions()",
+			"fabric": "getAxisFlips()"
+		},
+		{
+			"forge": "packInversions()",
+			"fabric": "getAxisFlips()"
+		},
+		{
+			"forge": "compose(OctahedralGroup arg0)",
+			"fabric": "prepend(DirectionTransformation transformation)"
+		},
+		{
+			"forge": "inverse()",
+			"fabric": "inverse()"
+		},
+		{
+			"forge": "transformation()",
+			"fabric": "getMatrix()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "rotate(Direction arg0)",
+			"fabric": "map(Direction direction)"
+		},
+		{
+			"forge": "inverts(Direction$Axis arg0)",
+			"fabric": "shouldFlipDirection(Direction$Axis axis)"
+		},
+		{
+			"forge": "rotate(FrontAndTop arg0)",
+			"fabric": "mapJigsawOrientation(JigsawOrientation orientation)"
+		}
+	]
+}

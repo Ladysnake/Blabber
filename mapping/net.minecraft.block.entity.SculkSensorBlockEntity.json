@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.world.level.block.entity.SculkSensorBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.SculkSensorBlockEntity",
+			"fabric": "net.minecraft.block.entity.SculkSensorBlockEntity"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "vibrationData",
+			"fabric": "listenerData"
+		},
+		{
+			"forge": "vibrationListener",
+			"fabric": "listener"
+		},
+		{
+			"forge": "vibrationUser",
+			"fabric": "callback"
+		},
+		{
+			"forge": "lastVibrationFrequency",
+			"fabric": "lastVibrationFrequency"
+		},
+		{
+			"forge": "createVibrationUser()",
+			"fabric": "createCallback()"
+		},
+		{
+			"forge": "createVibrationUser()",
+			"fabric": "createCallback()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getVibrationData()",
+			"fabric": "getVibrationListenerData()"
+		},
+		{
+			"forge": "getVibrationUser()",
+			"fabric": "getVibrationCallback()"
+		},
+		{
+			"forge": "getLastVibrationFrequency()",
+			"fabric": "getLastVibrationFrequency()"
+		},
+		{
+			"forge": "setLastVibrationFrequency(int arg0)",
+			"fabric": "setLastVibrationFrequency(int lastVibrationFrequency)"
+		},
+		{
+			"forge": "getListener()",
+			"fabric": "getEventListener()"
+		}
+	]
+}

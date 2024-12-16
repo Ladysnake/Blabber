@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.resources.language.FormattedBidiReorder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.language.FormattedBidiReorder",
+			"fabric": "net.minecraft.client.resource.language.ReorderingUtil"
+		},
+		{
+			"forge": "reorder(FormattedText arg0, boolean arg1)",
+			"fabric": "reorder(StringVisitable text, boolean rightToLeft)"
+		},
+		{
+			"forge": "reorder(FormattedText arg0, boolean arg1)",
+			"fabric": "reorder(StringVisitable text, boolean rightToLeft)"
+		},
+		{
+			"forge": "shape(String arg0)",
+			"fabric": "shapeArabic(String string)"
+		}
+	]
+}

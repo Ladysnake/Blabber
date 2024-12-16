@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.particle.FireworkParticles$OverlayParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.FireworkParticles$OverlayParticle",
+			"fabric": "net.minecraft.client.particle.FireworksSparkParticle$Flash"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "render(VertexConsumer arg0, Camera arg1, float arg2)",
+			"fabric": "buildGeometry(VertexConsumer arg0, Camera arg1, float arg2)"
+		},
+		{
+			"forge": "getQuadSize(float arg0)",
+			"fabric": "getSize(float arg0)"
+		}
+	]
+}

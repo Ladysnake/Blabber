@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.util.StringRepresentable$EnumCodec",
+	"items": [
+		{
+			"forge": "net.minecraft.util.StringRepresentable$EnumCodec",
+			"fabric": "net.minecraft.util.StringIdentifiable$Codec"
+		},
+		{
+			"forge": "codec",
+			"fabric": "base"
+		},
+		{
+			"forge": "codec",
+			"fabric": "base"
+		},
+		{
+			"forge": "resolver",
+			"fabric": "idToIdentifiable"
+		},
+		{
+			"forge": "decode(com.mojang.serialization.DynamicOps<T> arg0, T arg1)",
+			"fabric": "decode(com.mojang.serialization.DynamicOps<T> ops, T input)"
+		},
+		{
+			"forge": "decode(com.mojang.serialization.DynamicOps<T> arg0, T arg1)",
+			"fabric": "decode(com.mojang.serialization.DynamicOps<T> ops, T input)"
+		},
+		{
+			"forge": "encode(E arg0, com.mojang.serialization.DynamicOps<T> arg1, T arg2)",
+			"fabric": "encode(E arg0, com.mojang.serialization.DynamicOps<T> arg1, T arg2)"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "byId(String id)"
+		},
+		{
+			"forge": "byName(String arg0, E arg1)",
+			"fabric": "byId(String id, E fallback)"
+		}
+	]
+}

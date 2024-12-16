@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.debug.BrainDebugRenderer$PoiInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.debug.BrainDebugRenderer$PoiInfo",
+			"fabric": "net.minecraft.client.render.debug.VillageDebugRenderer$PointOfInterest"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "type",
+			"fabric": "field_18932"
+		},
+		{
+			"forge": "freeTicketCount",
+			"fabric": "freeTicketCount"
+		}
+	]
+}

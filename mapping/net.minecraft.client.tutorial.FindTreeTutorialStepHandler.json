@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.client.tutorial.FindTreeTutorialStepInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.client.tutorial.FindTreeTutorialStepInstance",
+			"fabric": "net.minecraft.client.tutorial.FindTreeTutorialStepHandler"
+		},
+		{
+			"forge": "HINT_DELAY",
+			"fabric": "DELAY"
+		},
+		{
+			"forge": "HINT_DELAY",
+			"fabric": "DELAY"
+		},
+		{
+			"forge": "TITLE",
+			"fabric": "TITLE"
+		},
+		{
+			"forge": "DESCRIPTION",
+			"fabric": "DESCRIPTION"
+		},
+		{
+			"forge": "tutorial",
+			"fabric": "manager"
+		},
+		{
+			"forge": "toast",
+			"fabric": "toast"
+		},
+		{
+			"forge": "timeWaiting",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "destroy()"
+		},
+		{
+			"forge": "onLookAt(ClientLevel arg0, HitResult arg1)",
+			"fabric": "onTarget(ClientWorld arg0, HitResult arg1)"
+		},
+		{
+			"forge": "onGetItem(ItemStack arg0)",
+			"fabric": "onSlotUpdate(ItemStack arg0)"
+		},
+		{
+			"forge": "hasCollectedTreeItems(LocalPlayer arg0)",
+			"fabric": "hasItem(ClientPlayerEntity player)"
+		},
+		{
+			"forge": "hasPunchedTreesPreviously(LocalPlayer arg0)",
+			"fabric": "hasBrokenTreeBlocks(ClientPlayerEntity player)"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.scores.Team",
+	"items": [
+		{
+			"forge": "net.minecraft.world.scores.Team",
+			"fabric": "net.minecraft.scoreboard.AbstractTeam"
+		},
+		{
+			"forge": "isAlliedTo(Team arg0)",
+			"fabric": "isEqual(AbstractTeam team)"
+		},
+		{
+			"forge": "isAlliedTo(Team arg0)",
+			"fabric": "isEqual(AbstractTeam team)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getFormattedName(Component arg0)",
+			"fabric": "decorateName(Text name)"
+		},
+		{
+			"forge": "canSeeFriendlyInvisibles()",
+			"fabric": "shouldShowFriendlyInvisibles()"
+		},
+		{
+			"forge": "isAllowFriendlyFire()",
+			"fabric": "isFriendlyFireAllowed()"
+		},
+		{
+			"forge": "getNameTagVisibility()",
+			"fabric": "getNameTagVisibilityRule()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "getPlayers()",
+			"fabric": "getPlayerList()"
+		},
+		{
+			"forge": "getDeathMessageVisibility()",
+			"fabric": "getDeathMessageVisibilityRule()"
+		},
+		{
+			"forge": "getCollisionRule()",
+			"fabric": "getCollisionRule()"
+		}
+	]
+}

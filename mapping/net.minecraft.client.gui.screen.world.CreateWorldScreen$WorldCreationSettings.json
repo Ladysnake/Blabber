@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$DataPackReloadCookie",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen$DataPackReloadCookie",
+			"fabric": "net.minecraft.client.gui.screen.world.CreateWorldScreen$WorldCreationSettings"
+		},
+		{
+			"forge": "worldGenSettings",
+			"fabric": "worldGenSettings"
+		},
+		{
+			"forge": "worldGenSettings",
+			"fabric": "worldGenSettings"
+		},
+		{
+			"forge": "dataConfiguration",
+			"fabric": "dataConfiguration"
+		},
+		{
+			"forge": "worldGenSettings()",
+			"fabric": "worldGenSettings()"
+		},
+		{
+			"forge": "worldGenSettings()",
+			"fabric": "worldGenSettings()"
+		},
+		{
+			"forge": "dataConfiguration()",
+			"fabric": "dataConfiguration()"
+		}
+	]
+}

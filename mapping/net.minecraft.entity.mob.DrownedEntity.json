@@ -1,0 +1,129 @@
+{
+	"title": "net.minecraft.world.entity.monster.Drowned",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Drowned",
+			"fabric": "net.minecraft.entity.mob.DrownedEntity"
+		},
+		{
+			"forge": "NAUTILUS_SHELL_CHANCE",
+			"fabric": "field_30460"
+		},
+		{
+			"forge": "NAUTILUS_SHELL_CHANCE",
+			"fabric": "field_30460"
+		},
+		{
+			"forge": "searchingForLand",
+			"fabric": "targetingUnderwater"
+		},
+		{
+			"forge": "waterNavigation",
+			"fabric": "waterNavigation"
+		},
+		{
+			"forge": "groundNavigation",
+			"fabric": "landNavigation"
+		},
+		{
+			"forge": "addBehaviourGoals()",
+			"fabric": "initCustomGoals()"
+		},
+		{
+			"forge": "addBehaviourGoals()",
+			"fabric": "initCustomGoals()"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "checkDrownedSpawnRules(EntityType<Drowned> arg0, ServerLevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<DrownedEntity> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "isDeepEnoughToSpawn(LevelAccessor arg0, BlockPos arg1)",
+			"fabric": "isValidSpawnDepth(WorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "supportsBreakDoorGoal()",
+			"fabric": "shouldBreakDoors()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getStepSound()",
+			"fabric": "getStepSound()"
+		},
+		{
+			"forge": "getSwimSound()",
+			"fabric": "getSwimSound()"
+		},
+		{
+			"forge": "getSkull()",
+			"fabric": "getSkull()"
+		},
+		{
+			"forge": "populateDefaultEquipmentSlots(RandomSource arg0, DifficultyInstance arg1)",
+			"fabric": "initEquipment(Random arg0, LocalDifficulty arg1)"
+		},
+		{
+			"forge": "canReplaceCurrentItem(ItemStack arg0, ItemStack arg1)",
+			"fabric": "prefersNewEquipment(ItemStack arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "convertsInWater()",
+			"fabric": "canConvertInWater()"
+		},
+		{
+			"forge": "checkSpawnObstruction(LevelReader arg0)",
+			"fabric": "canSpawn(WorldView arg0)"
+		},
+		{
+			"forge": "okTarget(LivingEntity arg0)",
+			"fabric": "canDrownedAttackTarget(LivingEntity target)"
+		},
+		{
+			"forge": "isPushedByFluid()",
+			"fabric": "isPushedByFluids()"
+		},
+		{
+			"forge": "wantsToSwim()",
+			"fabric": "isTargetingUnderwater()"
+		},
+		{
+			"forge": "travel(Vec3 arg0)",
+			"fabric": "travel(Vec3d arg0)"
+		},
+		{
+			"forge": "updateSwimming()",
+			"fabric": "updateSwimming()"
+		},
+		{
+			"forge": "isVisuallySwimming()",
+			"fabric": "isInSwimmingPose()"
+		},
+		{
+			"forge": "closeToNextPos()",
+			"fabric": "hasFinishedCurrentPath()"
+		},
+		{
+			"forge": "performRangedAttack(LivingEntity arg0, float arg1)",
+			"fabric": "attack(LivingEntity arg0, float arg1)"
+		},
+		{
+			"forge": "setSearchingForLand(boolean arg0)",
+			"fabric": "setTargetingUnderwater(boolean targetingUnderwater)"
+		}
+	]
+}

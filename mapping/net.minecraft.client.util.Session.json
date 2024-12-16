@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.User",
+	"items": [
+		{
+			"forge": "net.minecraft.client.User",
+			"fabric": "net.minecraft.client.util.Session"
+		},
+		{
+			"forge": "name",
+			"fabric": "username"
+		},
+		{
+			"forge": "name",
+			"fabric": "username"
+		},
+		{
+			"forge": "uuid",
+			"fabric": "uuid"
+		},
+		{
+			"forge": "accessToken",
+			"fabric": "accessToken"
+		},
+		{
+			"forge": "xuid",
+			"fabric": "xuid"
+		},
+		{
+			"forge": "clientId",
+			"fabric": "clientId"
+		},
+		{
+			"forge": "type",
+			"fabric": "accountType"
+		},
+		{
+			"forge": "getSessionId()",
+			"fabric": "getSessionId()"
+		},
+		{
+			"forge": "getSessionId()",
+			"fabric": "getSessionId()"
+		},
+		{
+			"forge": "getUuid()",
+			"fabric": "getUuid()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getUsername()"
+		},
+		{
+			"forge": "getAccessToken()",
+			"fabric": "getAccessToken()"
+		},
+		{
+			"forge": "getClientId()",
+			"fabric": "getClientId()"
+		},
+		{
+			"forge": "getXuid()",
+			"fabric": "getXuid()"
+		},
+		{
+			"forge": "getProfileId()",
+			"fabric": "getUuidOrNull()"
+		},
+		{
+			"forge": "getGameProfile()",
+			"fabric": "getProfile()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getAccountType()"
+		}
+	]
+}

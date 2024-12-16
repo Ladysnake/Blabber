@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen$CustomCreativeSlot",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen$CustomCreativeSlot",
+			"fabric": "net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen$LockableSlot"
+		},
+		{
+			"forge": "mayPickup(Player arg0)",
+			"fabric": "canTakeItems(PlayerEntity arg0)"
+		},
+		{
+			"forge": "mayPickup(Player arg0)",
+			"fabric": "canTakeItems(PlayerEntity arg0)"
+		}
+	]
+}

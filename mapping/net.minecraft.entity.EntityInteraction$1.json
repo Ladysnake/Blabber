@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.entity.ai.village.ReputationEventType$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.village.ReputationEventType$1",
+			"fabric": "net.minecraft.entity.EntityInteraction$1"
+		}
+	]
+}

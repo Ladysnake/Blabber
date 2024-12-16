@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsNews",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsNews",
+			"fabric": "net.minecraft.client.realms.dto.RealmsNews"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "newsLink",
+			"fabric": "newsLink"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "parse(String json)"
+		}
+	]
+}

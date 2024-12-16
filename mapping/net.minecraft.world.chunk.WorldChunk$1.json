@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.chunk.LevelChunk$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.LevelChunk$1",
+			"fabric": "net.minecraft.world.chunk.WorldChunk$1"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isRemoved()",
+			"fabric": "isRemoved()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getName()"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.BookViewScreen$BookAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.BookViewScreen$BookAccess",
+			"fabric": "net.minecraft.client.gui.screen.ingame.BookScreen$Contents"
+		},
+		{
+			"forge": "getPageCount()",
+			"fabric": "getPageCount()"
+		},
+		{
+			"forge": "getPageCount()",
+			"fabric": "getPageCount()"
+		},
+		{
+			"forge": "getPageRaw(int arg0)",
+			"fabric": "getPageUnchecked(int index)"
+		},
+		{
+			"forge": "getPage(int arg0)",
+			"fabric": "getPage(int index)"
+		},
+		{
+			"forge": "fromItem(ItemStack arg0)",
+			"fabric": "create(ItemStack stack)"
+		}
+	]
+}

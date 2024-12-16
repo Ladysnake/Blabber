@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.SurfaceRules$Context$TemperatureHelperCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.SurfaceRules$Context$TemperatureHelperCondition",
+			"fabric": "net.minecraft.world.gen.surfacebuilder.MaterialRules$MaterialRuleContext$BiomeTemperaturePredicate"
+		},
+		{
+			"forge": "compute()",
+			"fabric": "test()"
+		},
+		{
+			"forge": "compute()",
+			"fabric": "test()"
+		}
+	]
+}

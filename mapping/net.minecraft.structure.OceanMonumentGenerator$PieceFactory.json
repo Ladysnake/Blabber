@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$MonumentRoomFitter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$MonumentRoomFitter",
+			"fabric": "net.minecraft.structure.OceanMonumentGenerator$PieceFactory"
+		},
+		{
+			"forge": "fits(OceanMonumentPieces$RoomDefinition arg0)",
+			"fabric": "canGenerate(OceanMonumentGenerator$PieceSetting setting)"
+		},
+		{
+			"forge": "fits(OceanMonumentPieces$RoomDefinition arg0)",
+			"fabric": "canGenerate(OceanMonumentGenerator$PieceSetting setting)"
+		},
+		{
+			"forge": "create(Direction arg0, OceanMonumentPieces$RoomDefinition arg1, RandomSource arg2)",
+			"fabric": "generate(Direction direction, OceanMonumentGenerator$PieceSetting setting, Random random)"
+		}
+	]
+}

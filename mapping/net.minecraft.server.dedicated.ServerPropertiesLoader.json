@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.server.dedicated.DedicatedServerSettings",
+	"items": [
+		{
+			"forge": "net.minecraft.server.dedicated.DedicatedServerSettings",
+			"fabric": "net.minecraft.server.dedicated.ServerPropertiesLoader"
+		},
+		{
+			"forge": "source",
+			"fabric": "path"
+		},
+		{
+			"forge": "source",
+			"fabric": "path"
+		},
+		{
+			"forge": "properties",
+			"fabric": "propertiesHandler"
+		},
+		{
+			"forge": "getProperties()",
+			"fabric": "getPropertiesHandler()"
+		},
+		{
+			"forge": "getProperties()",
+			"fabric": "getPropertiesHandler()"
+		},
+		{
+			"forge": "forceSave()",
+			"fabric": "store()"
+		},
+		{
+			"forge": "update(UnaryOperator<DedicatedServerProperties> arg0)",
+			"fabric": "apply(UnaryOperator<ServerPropertiesHandler> applier)"
+		}
+	]
+}

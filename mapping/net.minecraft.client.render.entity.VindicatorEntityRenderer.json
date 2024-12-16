@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.client.renderer.entity.VindicatorRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.VindicatorRenderer",
+			"fabric": "net.minecraft.client.render.entity.VindicatorEntityRenderer"
+		},
+		{
+			"forge": "VINDICATOR",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "VINDICATOR",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(Vindicator arg0)",
+			"fabric": "getTexture(VindicatorEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(Vindicator arg0)",
+			"fabric": "getTexture(VindicatorEntity arg0)"
+		}
+	]
+}

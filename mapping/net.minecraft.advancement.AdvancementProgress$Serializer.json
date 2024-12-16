@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.advancements.AdvancementProgress$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.AdvancementProgress$Serializer",
+			"fabric": "net.minecraft.advancement.AdvancementProgress$Serializer"
+		},
+		{
+			"forge": "serialize(AdvancementProgress arg0, Type arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "serialize(AdvancementProgress arg0, Type arg1, com.google.gson.JsonSerializationContext arg2)"
+		},
+		{
+			"forge": "serialize(AdvancementProgress arg0, Type arg1, com.google.gson.JsonSerializationContext arg2)",
+			"fabric": "serialize(AdvancementProgress arg0, Type arg1, com.google.gson.JsonSerializationContext arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)",
+			"fabric": "deserialize(com.google.gson.JsonElement arg0, Type arg1, com.google.gson.JsonDeserializationContext arg2)"
+		}
+	]
+}

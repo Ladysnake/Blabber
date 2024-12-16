@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootParams$DynamicDrop",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootParams$DynamicDrop",
+			"fabric": "net.minecraft.loot.context.LootContextParameterSet$DynamicDrop"
+		},
+		{
+			"forge": "add(Consumer<ItemStack> arg0)",
+			"fabric": "add(Consumer<ItemStack> lootConsumer)"
+		},
+		{
+			"forge": "add(Consumer<ItemStack> arg0)",
+			"fabric": "add(Consumer<ItemStack> lootConsumer)"
+		}
+	]
+}

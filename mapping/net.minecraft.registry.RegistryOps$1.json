@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.resources.RegistryOps$1",
+	"items": [
+		{
+			"forge": "net.minecraft.resources.RegistryOps$1",
+			"fabric": "net.minecraft.registry.RegistryOps$1"
+		},
+		{
+			"forge": "lookups",
+			"fabric": "registryRefToInfo"
+		},
+		{
+			"forge": "lookups",
+			"fabric": "registryRefToInfo"
+		},
+		{
+			"forge": "lookup(ResourceKey<? extends Registry<? extends T>> arg0)",
+			"fabric": "getRegistryInfo(RegistryKey<? extends Registry<? extends T>> arg0)"
+		},
+		{
+			"forge": "lookup(ResourceKey<? extends Registry<? extends T>> arg0)",
+			"fabric": "getRegistryInfo(RegistryKey<? extends Registry<? extends T>> arg0)"
+		}
+	]
+}

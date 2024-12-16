@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.blending.Blender$DistanceGetter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.blending.Blender$DistanceGetter",
+			"fabric": "net.minecraft.world.gen.chunk.Blender$DistanceFunction"
+		},
+		{
+			"forge": "getDistance(double arg0, double arg1, double arg2)",
+			"fabric": "getDistance(double offsetX, double y, double offsetZ)"
+		},
+		{
+			"forge": "getDistance(double arg0, double arg1, double arg2)",
+			"fabric": "getDistance(double offsetX, double y, double offsetZ)"
+		}
+	]
+}

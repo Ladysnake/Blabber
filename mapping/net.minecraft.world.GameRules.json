@@ -1,0 +1,257 @@
+{
+	"title": "net.minecraft.world.level.GameRules",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.GameRules",
+			"fabric": "net.minecraft.world.GameRules"
+		},
+		{
+			"forge": "DEFAULT_RANDOM_TICK_SPEED",
+			"fabric": "DEFAULT_RANDOM_TICK_SPEED"
+		},
+		{
+			"forge": "DEFAULT_RANDOM_TICK_SPEED",
+			"fabric": "DEFAULT_RANDOM_TICK_SPEED"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GAME_RULE_TYPES",
+			"fabric": "RULE_TYPES"
+		},
+		{
+			"forge": "RULE_DOFIRETICK",
+			"fabric": "DO_FIRE_TICK"
+		},
+		{
+			"forge": "RULE_MOBGRIEFING",
+			"fabric": "DO_MOB_GRIEFING"
+		},
+		{
+			"forge": "RULE_KEEPINVENTORY",
+			"fabric": "KEEP_INVENTORY"
+		},
+		{
+			"forge": "RULE_DOMOBSPAWNING",
+			"fabric": "DO_MOB_SPAWNING"
+		},
+		{
+			"forge": "RULE_DOMOBLOOT",
+			"fabric": "DO_MOB_LOOT"
+		},
+		{
+			"forge": "RULE_DOBLOCKDROPS",
+			"fabric": "DO_TILE_DROPS"
+		},
+		{
+			"forge": "RULE_DOENTITYDROPS",
+			"fabric": "DO_ENTITY_DROPS"
+		},
+		{
+			"forge": "RULE_COMMANDBLOCKOUTPUT",
+			"fabric": "COMMAND_BLOCK_OUTPUT"
+		},
+		{
+			"forge": "RULE_NATURAL_REGENERATION",
+			"fabric": "NATURAL_REGENERATION"
+		},
+		{
+			"forge": "RULE_DAYLIGHT",
+			"fabric": "DO_DAYLIGHT_CYCLE"
+		},
+		{
+			"forge": "RULE_LOGADMINCOMMANDS",
+			"fabric": "LOG_ADMIN_COMMANDS"
+		},
+		{
+			"forge": "RULE_SHOWDEATHMESSAGES",
+			"fabric": "SHOW_DEATH_MESSAGES"
+		},
+		{
+			"forge": "RULE_RANDOMTICKING",
+			"fabric": "RANDOM_TICK_SPEED"
+		},
+		{
+			"forge": "RULE_SENDCOMMANDFEEDBACK",
+			"fabric": "SEND_COMMAND_FEEDBACK"
+		},
+		{
+			"forge": "RULE_REDUCEDDEBUGINFO",
+			"fabric": "REDUCED_DEBUG_INFO"
+		},
+		{
+			"forge": "RULE_SPECTATORSGENERATECHUNKS",
+			"fabric": "SPECTATORS_GENERATE_CHUNKS"
+		},
+		{
+			"forge": "RULE_SPAWN_RADIUS",
+			"fabric": "SPAWN_RADIUS"
+		},
+		{
+			"forge": "RULE_DISABLE_ELYTRA_MOVEMENT_CHECK",
+			"fabric": "DISABLE_ELYTRA_MOVEMENT_CHECK"
+		},
+		{
+			"forge": "RULE_MAX_ENTITY_CRAMMING",
+			"fabric": "MAX_ENTITY_CRAMMING"
+		},
+		{
+			"forge": "RULE_WEATHER_CYCLE",
+			"fabric": "DO_WEATHER_CYCLE"
+		},
+		{
+			"forge": "RULE_LIMITED_CRAFTING",
+			"fabric": "DO_LIMITED_CRAFTING"
+		},
+		{
+			"forge": "RULE_MAX_COMMAND_CHAIN_LENGTH",
+			"fabric": "MAX_COMMAND_CHAIN_LENGTH"
+		},
+		{
+			"forge": "RULE_COMMAND_MODIFICATION_BLOCK_LIMIT",
+			"fabric": "COMMAND_MODIFICATION_BLOCK_LIMIT"
+		},
+		{
+			"forge": "RULE_ANNOUNCE_ADVANCEMENTS",
+			"fabric": "ANNOUNCE_ADVANCEMENTS"
+		},
+		{
+			"forge": "RULE_DISABLE_RAIDS",
+			"fabric": "DISABLE_RAIDS"
+		},
+		{
+			"forge": "RULE_DOINSOMNIA",
+			"fabric": "DO_INSOMNIA"
+		},
+		{
+			"forge": "RULE_DO_IMMEDIATE_RESPAWN",
+			"fabric": "DO_IMMEDIATE_RESPAWN"
+		},
+		{
+			"forge": "RULE_DROWNING_DAMAGE",
+			"fabric": "DROWNING_DAMAGE"
+		},
+		{
+			"forge": "RULE_FALL_DAMAGE",
+			"fabric": "FALL_DAMAGE"
+		},
+		{
+			"forge": "RULE_FIRE_DAMAGE",
+			"fabric": "FIRE_DAMAGE"
+		},
+		{
+			"forge": "RULE_FREEZE_DAMAGE",
+			"fabric": "FREEZE_DAMAGE"
+		},
+		{
+			"forge": "RULE_DO_PATROL_SPAWNING",
+			"fabric": "DO_PATROL_SPAWNING"
+		},
+		{
+			"forge": "RULE_DO_TRADER_SPAWNING",
+			"fabric": "DO_TRADER_SPAWNING"
+		},
+		{
+			"forge": "RULE_DO_WARDEN_SPAWNING",
+			"fabric": "DO_WARDEN_SPAWNING"
+		},
+		{
+			"forge": "RULE_FORGIVE_DEAD_PLAYERS",
+			"fabric": "FORGIVE_DEAD_PLAYERS"
+		},
+		{
+			"forge": "RULE_UNIVERSAL_ANGER",
+			"fabric": "UNIVERSAL_ANGER"
+		},
+		{
+			"forge": "RULE_PLAYERS_SLEEPING_PERCENTAGE",
+			"fabric": "PLAYERS_SLEEPING_PERCENTAGE"
+		},
+		{
+			"forge": "RULE_BLOCK_EXPLOSION_DROP_DECAY",
+			"fabric": "BLOCK_EXPLOSION_DROP_DECAY"
+		},
+		{
+			"forge": "RULE_MOB_EXPLOSION_DROP_DECAY",
+			"fabric": "MOB_EXPLOSION_DROP_DECAY"
+		},
+		{
+			"forge": "RULE_TNT_EXPLOSION_DROP_DECAY",
+			"fabric": "TNT_EXPLOSION_DROP_DECAY"
+		},
+		{
+			"forge": "RULE_SNOW_ACCUMULATION_HEIGHT",
+			"fabric": "SNOW_ACCUMULATION_HEIGHT"
+		},
+		{
+			"forge": "RULE_WATER_SOURCE_CONVERSION",
+			"fabric": "WATER_SOURCE_CONVERSION"
+		},
+		{
+			"forge": "RULE_LAVA_SOURCE_CONVERSION",
+			"fabric": "LAVA_SOURCE_CONVERSION"
+		},
+		{
+			"forge": "RULE_GLOBAL_SOUND_EVENTS",
+			"fabric": "GLOBAL_SOUND_EVENTS"
+		},
+		{
+			"forge": "RULE_DO_VINES_SPREAD",
+			"fabric": "DO_VINES_SPREAD"
+		},
+		{
+			"forge": "rules",
+			"fabric": "rules"
+		},
+		{
+			"forge": "register(String arg0, GameRules$Category arg1, GameRules$Type<T> arg2)",
+			"fabric": "register(String name, GameRules$Category category, GameRules$Type<T> type)"
+		},
+		{
+			"forge": "register(String arg0, GameRules$Category arg1, GameRules$Type<T> arg2)",
+			"fabric": "register(String name, GameRules$Category category, GameRules$Type<T> type)"
+		},
+		{
+			"forge": "getRule(GameRules$Key<T> arg0)",
+			"fabric": "get(GameRules$Key<T> key)"
+		},
+		{
+			"forge": "createTag()",
+			"fabric": "toNbt()"
+		},
+		{
+			"forge": "loadFromTag(com.mojang.serialization.DynamicLike<?> arg0)",
+			"fabric": "load(com.mojang.serialization.DynamicLike<?> dynamic)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "visitGameRuleTypes(GameRules$GameRuleTypeVisitor arg0)",
+			"fabric": "accept(GameRules$Visitor visitor)"
+		},
+		{
+			"forge": "callVisitorCap(GameRules$GameRuleTypeVisitor arg0, GameRules$Key<?> arg1, GameRules$Type<?> arg2)",
+			"fabric": "accept(GameRules$Visitor consumer, GameRules$Key<?> key, GameRules$Type<?> type)"
+		},
+		{
+			"forge": "assignFrom(GameRules arg0, MinecraftServer arg1)",
+			"fabric": "setAllValues(GameRules rules, MinecraftServer server)"
+		},
+		{
+			"forge": "assignCap(GameRules$Key<T> arg0, GameRules arg1, MinecraftServer arg2)",
+			"fabric": "setValue(GameRules$Key<T> key, GameRules rules, MinecraftServer server)"
+		},
+		{
+			"forge": "getBoolean(GameRules$Key<GameRules$BooleanValue> arg0)",
+			"fabric": "getBoolean(GameRules$Key<GameRules$BooleanRule> rule)"
+		},
+		{
+			"forge": "getInt(GameRules$Key<GameRules$IntegerValue> arg0)",
+			"fabric": "getInt(GameRules$Key<GameRules$IntRule> rule)"
+		}
+	]
+}

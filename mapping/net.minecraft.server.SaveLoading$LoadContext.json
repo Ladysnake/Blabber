@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.WorldLoader$DataLoadOutput",
+	"items": [
+		{
+			"forge": "net.minecraft.server.WorldLoader$DataLoadOutput",
+			"fabric": "net.minecraft.server.SaveLoading$LoadContext"
+		},
+		{
+			"forge": "cookie",
+			"fabric": "extraData"
+		},
+		{
+			"forge": "cookie",
+			"fabric": "extraData"
+		},
+		{
+			"forge": "finalDimensions",
+			"fabric": "dimensionsRegistryManager"
+		},
+		{
+			"forge": "cookie()",
+			"fabric": "extraData()"
+		},
+		{
+			"forge": "cookie()",
+			"fabric": "extraData()"
+		},
+		{
+			"forge": "finalDimensions()",
+			"fabric": "dimensionsRegistryManager()"
+		}
+	]
+}

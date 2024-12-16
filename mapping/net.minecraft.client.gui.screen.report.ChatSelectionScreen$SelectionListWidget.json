@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.client.gui.screens.reporting.ChatSelectionScreen$ChatSelectionList",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.reporting.ChatSelectionScreen$ChatSelectionList",
+			"fabric": "net.minecraft.client.gui.screen.report.ChatSelectionScreen$SelectionListWidget"
+		},
+		{
+			"forge": "previousHeading",
+			"fabric": "lastSenderEntryPair"
+		},
+		{
+			"forge": "previousHeading",
+			"fabric": "lastSenderEntryPair"
+		},
+		{
+			"forge": "setScrollAmount(double arg0)",
+			"fabric": "setScrollAmount(double arg0)"
+		},
+		{
+			"forge": "setScrollAmount(double arg0)",
+			"fabric": "setScrollAmount(double arg0)"
+		},
+		{
+			"forge": "acceptMessage(int arg0, LoggedChatMessage$Player arg1)",
+			"fabric": "addMessage(int arg0, ReceivedMessage$ChatMessage arg1)"
+		},
+		{
+			"forge": "updateHeading(LoggedChatMessage$Player arg0, boolean arg1)",
+			"fabric": "addSenderEntry(ReceivedMessage$ChatMessage message, boolean fromReportedPlayer)"
+		},
+		{
+			"forge": "acceptDivider(Component arg0)",
+			"fabric": "addText(Text arg0)"
+		},
+		{
+			"forge": "getScrollbarPosition()",
+			"fabric": "getScrollbarPositionX()"
+		},
+		{
+			"forge": "getRowWidth()",
+			"fabric": "getRowWidth()"
+		},
+		{
+			"forge": "getMaxVisibleEntries()",
+			"fabric": "getDisplayedItemCount()"
+		},
+		{
+			"forge": "renderItem(GuiGraphics arg0, int arg1, int arg2, float arg3, int arg4, int arg5, int arg6, int arg7, int arg8)",
+			"fabric": "renderEntry(DrawContext arg0, int arg1, int arg2, float arg3, int arg4, int arg5, int arg6, int arg7, int arg8)"
+		},
+		{
+			"forge": "shouldHighlightEntry(ChatSelectionScreen$ChatSelectionList$Entry arg0)",
+			"fabric": "shouldHighlight(ChatSelectionScreen$SelectionListWidget$Entry entry)"
+		},
+		{
+			"forge": "nextEntry(ScreenDirection arg0)",
+			"fabric": "getNeighboringEntry(NavigationDirection arg0)"
+		},
+		{
+			"forge": "setSelected(ChatSelectionScreen$ChatSelectionList$Entry arg0)",
+			"fabric": "setSelected(ChatSelectionScreen$SelectionListWidget$Entry arg0)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "getFooterTop()",
+			"fabric": "getContextMessageY()"
+		}
+	]
+}

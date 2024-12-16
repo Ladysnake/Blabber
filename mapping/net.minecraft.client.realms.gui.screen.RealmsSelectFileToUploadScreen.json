@@ -1,0 +1,105 @@
+{
+	"title": "com.mojang.realmsclient.gui.screens.RealmsSelectFileToUploadScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.gui.screens.RealmsSelectFileToUploadScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsSelectFileToUploadScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "UNABLE_TO_LOAD_WORLD",
+			"fabric": "LOADING_ERROR_TEXT"
+		},
+		{
+			"forge": "WORLD_TEXT",
+			"fabric": "WORLD_LANG"
+		},
+		{
+			"forge": "HARDCORE_TEXT",
+			"fabric": "HARDCORE_TEXT"
+		},
+		{
+			"forge": "CHEATS_TEXT",
+			"fabric": "CHEATS_TEXT"
+		},
+		{
+			"forge": "DATE_FORMAT",
+			"fabric": "DATE_FORMAT"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "worldId",
+			"fabric": "worldId"
+		},
+		{
+			"forge": "slotId",
+			"fabric": "slotId"
+		},
+		{
+			"forge": "uploadButton",
+			"fabric": "uploadButton"
+		},
+		{
+			"forge": "levelList",
+			"fabric": "levelList"
+		},
+		{
+			"forge": "selectedWorld",
+			"fabric": "selectedWorld"
+		},
+		{
+			"forge": "worldSelectionList",
+			"fabric": "worldSelectionList"
+		},
+		{
+			"forge": "callback",
+			"fabric": "onBack"
+		},
+		{
+			"forge": "loadLevelList()",
+			"fabric": "loadLevelList()"
+		},
+		{
+			"forge": "loadLevelList()",
+			"fabric": "loadLevelList()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "getNarrationMessage()",
+			"fabric": "getNarratedTitle()"
+		},
+		{
+			"forge": "upload()",
+			"fabric": "upload()"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "gameModeName(LevelSummary arg0)",
+			"fabric": "getGameModeName(LevelSummary summary)"
+		},
+		{
+			"forge": "formatLastPlayed(LevelSummary arg0)",
+			"fabric": "getLastPlayed(LevelSummary summary)"
+		}
+	]
+}

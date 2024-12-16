@@ -1,0 +1,85 @@
+{
+	"title": "net.minecraft.server.level.ServerBossEvent",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ServerBossEvent",
+			"fabric": "net.minecraft.entity.boss.ServerBossBar"
+		},
+		{
+			"forge": "players",
+			"fabric": "players"
+		},
+		{
+			"forge": "players",
+			"fabric": "players"
+		},
+		{
+			"forge": "unmodifiablePlayers",
+			"fabric": "unmodifiablePlayers"
+		},
+		{
+			"forge": "visible",
+			"fabric": "visible"
+		},
+		{
+			"forge": "setProgress(float arg0)",
+			"fabric": "setPercent(float arg0)"
+		},
+		{
+			"forge": "setProgress(float arg0)",
+			"fabric": "setPercent(float arg0)"
+		},
+		{
+			"forge": "setColor(BossEvent$BossBarColor arg0)",
+			"fabric": "setColor(BossBar$Color arg0)"
+		},
+		{
+			"forge": "setOverlay(BossEvent$BossBarOverlay arg0)",
+			"fabric": "setStyle(BossBar$Style arg0)"
+		},
+		{
+			"forge": "setDarkenScreen(boolean arg0)",
+			"fabric": "setDarkenSky(boolean arg0)"
+		},
+		{
+			"forge": "setPlayBossMusic(boolean arg0)",
+			"fabric": "setDragonMusic(boolean arg0)"
+		},
+		{
+			"forge": "setCreateWorldFog(boolean arg0)",
+			"fabric": "setThickenFog(boolean arg0)"
+		},
+		{
+			"forge": "setName(Component arg0)",
+			"fabric": "setName(Text arg0)"
+		},
+		{
+			"forge": "broadcast(Function<BossEvent, ClientboundBossEventPacket> arg0)",
+			"fabric": "sendPacket(Function<BossBar, BossBarS2CPacket> bossBarToPacketFunction)"
+		},
+		{
+			"forge": "addPlayer(ServerPlayer arg0)",
+			"fabric": "addPlayer(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "removePlayer(ServerPlayer arg0)",
+			"fabric": "removePlayer(ServerPlayerEntity player)"
+		},
+		{
+			"forge": "removeAllPlayers()",
+			"fabric": "clearPlayers()"
+		},
+		{
+			"forge": "isVisible()",
+			"fabric": "isVisible()"
+		},
+		{
+			"forge": "setVisible(boolean arg0)",
+			"fabric": "setVisible(boolean visible)"
+		},
+		{
+			"forge": "getPlayers()",
+			"fabric": "getPlayers()"
+		}
+	]
+}

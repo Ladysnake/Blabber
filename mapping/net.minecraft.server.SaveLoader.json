@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.server.WorldStem",
+	"items": [
+		{
+			"forge": "net.minecraft.server.WorldStem",
+			"fabric": "net.minecraft.server.SaveLoader"
+		},
+		{
+			"forge": "resourceManager",
+			"fabric": "resourceManager"
+		},
+		{
+			"forge": "resourceManager",
+			"fabric": "resourceManager"
+		},
+		{
+			"forge": "dataPackResources",
+			"fabric": "dataPackContents"
+		},
+		{
+			"forge": "registries",
+			"fabric": "combinedDynamicRegistries"
+		},
+		{
+			"forge": "worldData",
+			"fabric": "saveProperties"
+		},
+		{
+			"forge": "close()",
+			"fabric": "resourceManager()"
+		},
+		{
+			"forge": "resourceManager()",
+			"fabric": "resourceManager()"
+		},
+		{
+			"forge": "dataPackResources()",
+			"fabric": "dataPackContents()"
+		},
+		{
+			"forge": "registries()",
+			"fabric": "combinedDynamicRegistries()"
+		},
+		{
+			"forge": "worldData()",
+			"fabric": "saveProperties()"
+		}
+	]
+}

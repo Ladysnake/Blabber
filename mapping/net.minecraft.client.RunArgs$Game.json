@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.main.GameConfig$GameData",
+	"items": [
+		{
+			"forge": "net.minecraft.client.main.GameConfig$GameData",
+			"fabric": "net.minecraft.client.RunArgs$Game"
+		},
+		{
+			"forge": "demo",
+			"fabric": "demo"
+		},
+		{
+			"forge": "demo",
+			"fabric": "demo"
+		},
+		{
+			"forge": "launchVersion",
+			"fabric": "version"
+		},
+		{
+			"forge": "versionType",
+			"fabric": "versionType"
+		},
+		{
+			"forge": "disableMultiplayer",
+			"fabric": "multiplayerDisabled"
+		},
+		{
+			"forge": "disableChat",
+			"fabric": "onlineChatDisabled"
+		}
+	]
+}

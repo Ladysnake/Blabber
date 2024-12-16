@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.block.BrushableBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BrushableBlock",
+			"fabric": "net.minecraft.block.BrushableBlock"
+		},
+		{
+			"forge": "DUSTED",
+			"fabric": "DUSTED"
+		},
+		{
+			"forge": "DUSTED",
+			"fabric": "DUSTED"
+		},
+		{
+			"forge": "TICK_DELAY",
+			"fabric": "field_42773"
+		},
+		{
+			"forge": "turnsInto",
+			"fabric": "baseBlock"
+		},
+		{
+			"forge": "brushSound",
+			"fabric": "brushingSound"
+		},
+		{
+			"forge": "brushCompletedSound",
+			"fabric": "brushingCompleteSound"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "onBrokenAfterFall(Level arg0, BlockPos arg1, FallingBlockEntity arg2)",
+			"fabric": "onDestroyedOnLanding(World arg0, BlockPos arg1, FallingBlockEntity arg2)"
+		},
+		{
+			"forge": "animateTick(BlockState arg0, Level arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "randomDisplayTick(BlockState arg0, World arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "newBlockEntity(BlockPos arg0, BlockState arg1)",
+			"fabric": "createBlockEntity(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getTurnsInto()",
+			"fabric": "getBaseBlock()"
+		},
+		{
+			"forge": "getBrushSound()",
+			"fabric": "getBrushingSound()"
+		},
+		{
+			"forge": "getBrushCompletedSound()",
+			"fabric": "getBrushingCompleteSound()"
+		}
+	]
+}

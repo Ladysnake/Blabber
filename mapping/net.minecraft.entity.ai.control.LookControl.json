@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.world.entity.ai.control.LookControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.control.LookControl",
+			"fabric": "net.minecraft.entity.ai.control.LookControl"
+		},
+		{
+			"forge": "mob",
+			"fabric": "entity"
+		},
+		{
+			"forge": "mob",
+			"fabric": "entity"
+		},
+		{
+			"forge": "yMaxRotSpeed",
+			"fabric": "maxYawChange"
+		},
+		{
+			"forge": "xMaxRotAngle",
+			"fabric": "maxPitchChange"
+		},
+		{
+			"forge": "lookAtCooldown",
+			"fabric": "lookAtTimer"
+		},
+		{
+			"forge": "wantedX",
+			"fabric": "x"
+		},
+		{
+			"forge": "wantedY",
+			"fabric": "y"
+		},
+		{
+			"forge": "wantedZ",
+			"fabric": "z"
+		},
+		{
+			"forge": "setLookAt(Vec3 arg0)",
+			"fabric": "lookAt(Vec3d direction)"
+		},
+		{
+			"forge": "setLookAt(Vec3 arg0)",
+			"fabric": "lookAt(Vec3d direction)"
+		},
+		{
+			"forge": "setLookAt(Entity arg0)",
+			"fabric": "lookAt(Entity entity)"
+		},
+		{
+			"forge": "setLookAt(Entity arg0, float arg1, float arg2)",
+			"fabric": "lookAt(Entity entity, float maxYawChange, float maxPitchChange)"
+		},
+		{
+			"forge": "setLookAt(double arg0, double arg1, double arg2)",
+			"fabric": "lookAt(double x, double y, double z)"
+		},
+		{
+			"forge": "setLookAt(double arg0, double arg1, double arg2, float arg3, float arg4)",
+			"fabric": "lookAt(double x, double y, double z, float maxYawChange, float maxPitchChange)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "clampHeadRotationToBody()",
+			"fabric": "clampHeadYaw()"
+		},
+		{
+			"forge": "resetXRotOnTick()",
+			"fabric": "shouldStayHorizontal()"
+		},
+		{
+			"forge": "isLookingAtTarget()",
+			"fabric": "isLookingAtSpecificPosition()"
+		},
+		{
+			"forge": "getWantedX()",
+			"fabric": "getLookX()"
+		},
+		{
+			"forge": "getWantedY()",
+			"fabric": "getLookY()"
+		},
+		{
+			"forge": "getWantedZ()",
+			"fabric": "getLookZ()"
+		},
+		{
+			"forge": "getXRotD()",
+			"fabric": "getTargetPitch()"
+		},
+		{
+			"forge": "getYRotD()",
+			"fabric": "getTargetYaw()"
+		},
+		{
+			"forge": "rotateTowards(float arg0, float arg1, float arg2)",
+			"fabric": "changeAngle(float from, float to, float max)"
+		},
+		{
+			"forge": "getWantedY(Entity arg0)",
+			"fabric": "getLookingHeightFor(Entity entity)"
+		}
+	]
+}

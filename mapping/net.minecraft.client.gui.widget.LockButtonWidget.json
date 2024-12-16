@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.components.LockIconButton",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.LockIconButton",
+			"fabric": "net.minecraft.client.gui.widget.LockButtonWidget"
+		},
+		{
+			"forge": "locked",
+			"fabric": "locked"
+		},
+		{
+			"forge": "locked",
+			"fabric": "locked"
+		},
+		{
+			"forge": "createNarrationMessage()",
+			"fabric": "getNarrationMessage()"
+		},
+		{
+			"forge": "createNarrationMessage()",
+			"fabric": "getNarrationMessage()"
+		},
+		{
+			"forge": "isLocked()",
+			"fabric": "isLocked()"
+		},
+		{
+			"forge": "setLocked(boolean arg0)",
+			"fabric": "setLocked(boolean locked)"
+		},
+		{
+			"forge": "renderWidget(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "renderButton(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

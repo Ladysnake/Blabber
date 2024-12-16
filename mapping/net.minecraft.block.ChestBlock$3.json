@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.block.ChestBlock$3",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.ChestBlock$3",
+			"fabric": "net.minecraft.block.ChestBlock$3"
+		},
+		{
+			"forge": "acceptDouble(ChestBlockEntity arg0, ChestBlockEntity arg1)",
+			"fabric": "getFromBoth(ChestBlockEntity arg0, ChestBlockEntity arg1)"
+		},
+		{
+			"forge": "acceptDouble(ChestBlockEntity arg0, ChestBlockEntity arg1)",
+			"fabric": "getFromBoth(ChestBlockEntity arg0, ChestBlockEntity arg1)"
+		},
+		{
+			"forge": "acceptSingle(ChestBlockEntity arg0)",
+			"fabric": "getFrom(ChestBlockEntity arg0)"
+		},
+		{
+			"forge": "acceptNone()",
+			"fabric": "getFallback()"
+		}
+	]
+}

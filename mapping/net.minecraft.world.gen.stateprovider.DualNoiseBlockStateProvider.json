@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.stateproviders.DualNoiseProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.stateproviders.DualNoiseProvider",
+			"fabric": "net.minecraft.world.gen.stateprovider.DualNoiseBlockStateProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "DUAL_CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "DUAL_CODEC"
+		},
+		{
+			"forge": "variety",
+			"fabric": "variety"
+		},
+		{
+			"forge": "slowNoiseParameters",
+			"fabric": "slowNoiseParameters"
+		},
+		{
+			"forge": "slowScale",
+			"fabric": "slowScale"
+		},
+		{
+			"forge": "slowNoise",
+			"fabric": "slowNoiseSampler"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getState(RandomSource arg0, BlockPos arg1)",
+			"fabric": "get(Random arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "getSlowNoiseValue(BlockPos arg0)",
+			"fabric": "getSlowNoiseValue(BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.screens.achievement.StatsScreen$ItemStatisticsList$ItemRowComparator",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.achievement.StatsScreen$ItemStatisticsList$ItemRowComparator",
+			"fabric": "net.minecraft.client.gui.screen.StatsScreen$ItemStatsListWidget$ItemComparator"
+		},
+		{
+			"forge": "compare(StatsScreen$ItemStatisticsList$ItemRow arg0, StatsScreen$ItemStatisticsList$ItemRow arg1)",
+			"fabric": "compare(StatsScreen$ItemStatsListWidget$Entry arg0, StatsScreen$ItemStatsListWidget$Entry arg1)"
+		},
+		{
+			"forge": "compare(StatsScreen$ItemStatisticsList$ItemRow arg0, StatsScreen$ItemStatisticsList$ItemRow arg1)",
+			"fabric": "compare(StatsScreen$ItemStatsListWidget$Entry arg0, StatsScreen$ItemStatsListWidget$Entry arg1)"
+		}
+	]
+}

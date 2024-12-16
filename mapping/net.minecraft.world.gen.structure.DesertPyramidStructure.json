@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
+			"fabric": "net.minecraft.world.gen.structure.DesertPyramidStructure"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "afterPlace(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, ChunkPos arg5, PiecesContainer arg6)",
+			"fabric": "postPlace(StructureWorldAccess arg0, StructureAccessor arg1, ChunkGenerator arg2, Random arg3, BlockBox arg4, ChunkPos arg5, StructurePiecesList arg6)"
+		},
+		{
+			"forge": "afterPlace(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, ChunkPos arg5, PiecesContainer arg6)",
+			"fabric": "postPlace(StructureWorldAccess arg0, StructureAccessor arg1, ChunkGenerator arg2, Random arg3, BlockBox arg4, ChunkPos arg5, StructurePiecesList arg6)"
+		},
+		{
+			"forge": "placeSuspiciousSand(BoundingBox arg0, WorldGenLevel arg1, BlockPos arg2)",
+			"fabric": "placeSuspiciousSand(BlockBox box, StructureWorldAccess world, BlockPos pos)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

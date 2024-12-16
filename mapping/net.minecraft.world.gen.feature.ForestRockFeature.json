@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.BlockBlobFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.BlockBlobFeature",
+			"fabric": "net.minecraft.world.gen.feature.ForestRockFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<BlockStateConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SingleStateFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<BlockStateConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<SingleStateFeatureConfig> arg0)"
+		}
+	]
+}

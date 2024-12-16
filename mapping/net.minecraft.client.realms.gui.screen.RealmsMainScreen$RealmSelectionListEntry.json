@@ -1,0 +1,57 @@
+{
+	"title": "com.mojang.realmsclient.RealmsMainScreen$ServerEntry",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.RealmsMainScreen$ServerEntry",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsMainScreen$RealmSelectionListEntry"
+		},
+		{
+			"forge": "SKIN_HEAD_LARGE_WIDTH",
+			"fabric": "field_32054"
+		},
+		{
+			"forge": "SKIN_HEAD_LARGE_WIDTH",
+			"fabric": "field_32054"
+		},
+		{
+			"forge": "serverData",
+			"fabric": "server"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "renderMcoServerItem(RealmsServer arg0, GuiGraphics arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "render(RealmsServer server, DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "renderLegacy(RealmsServer arg0, GuiGraphics arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "renderRealmsServerItem(RealmsServer server, DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "renderStatusLights(RealmsServer arg0, GuiGraphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)",
+			"fabric": "drawServerState(RealmsServer server, DrawContext context, int x, int y, int mouseX, int mouseY, int xOffset, int yOffset)"
+		},
+		{
+			"forge": "getNarration()",
+			"fabric": "getNarration()"
+		},
+		{
+			"forge": "getServer()",
+			"fabric": "getRealmsServer()"
+		}
+	]
+}

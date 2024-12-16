@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType",
+			"fabric": "net.minecraft.structure.rule.RuleTestType"
+		},
+		{
+			"forge": "ALWAYS_TRUE_TEST",
+			"fabric": "ALWAYS_TRUE"
+		},
+		{
+			"forge": "ALWAYS_TRUE_TEST",
+			"fabric": "ALWAYS_TRUE"
+		},
+		{
+			"forge": "BLOCK_TEST",
+			"fabric": "BLOCK_MATCH"
+		},
+		{
+			"forge": "BLOCKSTATE_TEST",
+			"fabric": "BLOCKSTATE_MATCH"
+		},
+		{
+			"forge": "TAG_TEST",
+			"fabric": "TAG_MATCH"
+		},
+		{
+			"forge": "RANDOM_BLOCK_TEST",
+			"fabric": "RANDOM_BLOCK_MATCH"
+		},
+		{
+			"forge": "RANDOM_BLOCKSTATE_TEST",
+			"fabric": "RANDOM_BLOCKSTATE_MATCH"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		},
+		{
+			"forge": "register(String arg0, com.mojang.serialization.Codec<P> arg1)",
+			"fabric": "register(String id, com.mojang.serialization.Codec<P> codec)"
+		}
+	]
+}

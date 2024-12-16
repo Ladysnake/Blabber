@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.BlockStateStructureTemplateFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.BlockStateStructureTemplateFix",
+			"fabric": "net.minecraft.datafixer.fix.BlockStateStructureTemplateFix"
+		}
+	]
+}

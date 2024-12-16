@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.StringSplitter$LineBreakFinder",
+	"items": [
+		{
+			"forge": "net.minecraft.client.StringSplitter$LineBreakFinder",
+			"fabric": "net.minecraft.client.font.TextHandler$LineBreakingVisitor"
+		},
+		{
+			"forge": "maxWidth",
+			"fabric": "maxWidth"
+		},
+		{
+			"forge": "maxWidth",
+			"fabric": "maxWidth"
+		},
+		{
+			"forge": "lineBreak",
+			"fabric": "endIndex"
+		},
+		{
+			"forge": "lineBreakStyle",
+			"fabric": "endStyle"
+		},
+		{
+			"forge": "hadNonZeroWidthChar",
+			"fabric": "nonEmpty"
+		},
+		{
+			"forge": "width",
+			"fabric": "totalWidth"
+		},
+		{
+			"forge": "lastSpace",
+			"fabric": "lastSpaceBreak"
+		},
+		{
+			"forge": "lastSpaceStyle",
+			"fabric": "lastSpaceStyle"
+		},
+		{
+			"forge": "nextChar",
+			"fabric": "count"
+		},
+		{
+			"forge": "offset",
+			"fabric": "startOffset"
+		},
+		{
+			"forge": "accept(int arg0, Style arg1, int arg2)",
+			"fabric": "accept(int arg0, Style arg1, int arg2)"
+		},
+		{
+			"forge": "accept(int arg0, Style arg1, int arg2)",
+			"fabric": "accept(int arg0, Style arg1, int arg2)"
+		},
+		{
+			"forge": "finishIteration(int arg0, Style arg1)",
+			"fabric": "breakLine(int finishIndex, Style finishStyle)"
+		},
+		{
+			"forge": "lineBreakFound()",
+			"fabric": "hasLineBreak()"
+		},
+		{
+			"forge": "getSplitPosition()",
+			"fabric": "getEndingIndex()"
+		},
+		{
+			"forge": "getSplitStyle()",
+			"fabric": "getEndingStyle()"
+		},
+		{
+			"forge": "addToOffset(int arg0)",
+			"fabric": "offset(int extraOffset)"
+		}
+	]
+}

@@ -1,0 +1,313 @@
+{
+	"title": "net.minecraft.world.item.Item",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.Item",
+			"fabric": "net.minecraft.item.Item"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "BY_BLOCK",
+			"fabric": "BLOCK_ITEMS"
+		},
+		{
+			"forge": "BASE_ATTACK_DAMAGE_UUID",
+			"fabric": "ATTACK_DAMAGE_MODIFIER_ID"
+		},
+		{
+			"forge": "BASE_ATTACK_SPEED_UUID",
+			"fabric": "ATTACK_SPEED_MODIFIER_ID"
+		},
+		{
+			"forge": "MAX_STACK_SIZE",
+			"fabric": "DEFAULT_MAX_COUNT"
+		},
+		{
+			"forge": "EAT_DURATION",
+			"fabric": "DEFAULT_MAX_USE_TIME"
+		},
+		{
+			"forge": "MAX_BAR_WIDTH",
+			"fabric": "ITEM_BAR_STEPS"
+		},
+		{
+			"forge": "builtInRegistryHolder",
+			"fabric": "registryEntry"
+		},
+		{
+			"forge": "rarity",
+			"fabric": "rarity"
+		},
+		{
+			"forge": "maxStackSize",
+			"fabric": "maxCount"
+		},
+		{
+			"forge": "maxDamage",
+			"fabric": "maxDamage"
+		},
+		{
+			"forge": "isFireResistant",
+			"fabric": "fireproof"
+		},
+		{
+			"forge": "craftingRemainingItem",
+			"fabric": "recipeRemainder"
+		},
+		{
+			"forge": "descriptionId",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "foodProperties",
+			"fabric": "foodComponent"
+		},
+		{
+			"forge": "requiredFeatures",
+			"fabric": "requiredFeatures"
+		},
+		{
+			"forge": "getId(Item arg0)",
+			"fabric": "getRawId(Item item)"
+		},
+		{
+			"forge": "getId(Item arg0)",
+			"fabric": "getRawId(Item item)"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byRawId(int id)"
+		},
+		{
+			"forge": "byBlock(Block arg0)",
+			"fabric": "fromBlock(Block block)"
+		},
+		{
+			"forge": "builtInRegistryHolder()",
+			"fabric": "getRegistryEntry()"
+		},
+		{
+			"forge": "onUseTick(Level arg0, LivingEntity arg1, ItemStack arg2, int arg3)",
+			"fabric": "usageTick(World world, LivingEntity user, ItemStack stack, int remainingUseTicks)"
+		},
+		{
+			"forge": "onDestroyed(ItemEntity arg0)",
+			"fabric": "onItemEntityDestroyed(ItemEntity entity)"
+		},
+		{
+			"forge": "verifyTagAfterLoad(CompoundTag arg0)",
+			"fabric": "postProcessNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "canAttackBlock(BlockState arg0, Level arg1, BlockPos arg2, Player arg3)",
+			"fabric": "canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner)"
+		},
+		{
+			"forge": "asItem()",
+			"fabric": "asItem()"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext context)"
+		},
+		{
+			"forge": "getDestroySpeed(ItemStack arg0, BlockState arg1)",
+			"fabric": "getMiningSpeedMultiplier(ItemStack stack, BlockState state)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World world, PlayerEntity user, Hand hand)"
+		},
+		{
+			"forge": "finishUsingItem(ItemStack arg0, Level arg1, LivingEntity arg2)",
+			"fabric": "finishUsing(ItemStack stack, World world, LivingEntity user)"
+		},
+		{
+			"forge": "getMaxStackSize()",
+			"fabric": "getMaxCount()"
+		},
+		{
+			"forge": "getMaxDamage()",
+			"fabric": "getMaxDamage()"
+		},
+		{
+			"forge": "canBeDepleted()",
+			"fabric": "isDamageable()"
+		},
+		{
+			"forge": "isBarVisible(ItemStack arg0)",
+			"fabric": "isItemBarVisible(ItemStack stack)"
+		},
+		{
+			"forge": "getBarWidth(ItemStack arg0)",
+			"fabric": "getItemBarStep(ItemStack stack)"
+		},
+		{
+			"forge": "getBarColor(ItemStack arg0)",
+			"fabric": "getItemBarColor(ItemStack stack)"
+		},
+		{
+			"forge": "overrideStackedOnOther(ItemStack arg0, Slot arg1, ClickAction arg2, Player arg3)",
+			"fabric": "onStackClicked(ItemStack stack, Slot slot, ClickType clickType, PlayerEntity player)"
+		},
+		{
+			"forge": "overrideOtherStackedOnMe(ItemStack arg0, ItemStack arg1, Slot arg2, ClickAction arg3, Player arg4, SlotAccess arg5)",
+			"fabric": "onClicked(ItemStack stack, ItemStack otherStack, Slot slot, ClickType clickType, PlayerEntity player, StackReference cursorStackReference)"
+		},
+		{
+			"forge": "hurtEnemy(ItemStack arg0, LivingEntity arg1, LivingEntity arg2)",
+			"fabric": "postHit(ItemStack stack, LivingEntity target, LivingEntity attacker)"
+		},
+		{
+			"forge": "mineBlock(ItemStack arg0, Level arg1, BlockState arg2, BlockPos arg3, LivingEntity arg4)",
+			"fabric": "postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner)"
+		},
+		{
+			"forge": "isCorrectToolForDrops(BlockState arg0)",
+			"fabric": "isSuitableFor(BlockState state)"
+		},
+		{
+			"forge": "interactLivingEntity(ItemStack arg0, Player arg1, LivingEntity arg2, InteractionHand arg3)",
+			"fabric": "useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand)"
+		},
+		{
+			"forge": "getDescription()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getOrCreateDescriptionId()",
+			"fabric": "getOrCreateTranslationKey()"
+		},
+		{
+			"forge": "getDescriptionId()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "getDescriptionId(ItemStack arg0)",
+			"fabric": "getTranslationKey(ItemStack stack)"
+		},
+		{
+			"forge": "shouldOverrideMultiplayerNbt()",
+			"fabric": "isNbtSynced()"
+		},
+		{
+			"forge": "getCraftingRemainingItem()",
+			"fabric": "getRecipeRemainder()"
+		},
+		{
+			"forge": "hasCraftingRemainingItem()",
+			"fabric": "hasRecipeRemainder()"
+		},
+		{
+			"forge": "inventoryTick(ItemStack arg0, Level arg1, Entity arg2, int arg3, boolean arg4)",
+			"fabric": "inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected)"
+		},
+		{
+			"forge": "onCraftedBy(ItemStack arg0, Level arg1, Player arg2)",
+			"fabric": "onCraft(ItemStack stack, World world, PlayerEntity player)"
+		},
+		{
+			"forge": "isComplex()",
+			"fabric": "isNetworkSynced()"
+		},
+		{
+			"forge": "getUseAnimation(ItemStack arg0)",
+			"fabric": "getUseAction(ItemStack stack)"
+		},
+		{
+			"forge": "getUseDuration(ItemStack arg0)",
+			"fabric": "getMaxUseTime(ItemStack stack)"
+		},
+		{
+			"forge": "releaseUsing(ItemStack arg0, Level arg1, LivingEntity arg2, int arg3)",
+			"fabric": "onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks)"
+		},
+		{
+			"forge": "appendHoverText(ItemStack arg0, Level arg1, List<Component> arg2, TooltipFlag arg3)",
+			"fabric": "appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context)"
+		},
+		{
+			"forge": "getTooltipImage(ItemStack arg0)",
+			"fabric": "getTooltipData(ItemStack stack)"
+		},
+		{
+			"forge": "getName(ItemStack arg0)",
+			"fabric": "getName(ItemStack stack)"
+		},
+		{
+			"forge": "isFoil(ItemStack arg0)",
+			"fabric": "hasGlint(ItemStack stack)"
+		},
+		{
+			"forge": "getRarity(ItemStack arg0)",
+			"fabric": "getRarity(ItemStack stack)"
+		},
+		{
+			"forge": "isEnchantable(ItemStack arg0)",
+			"fabric": "isEnchantable(ItemStack stack)"
+		},
+		{
+			"forge": "getPlayerPOVHitResult(Level arg0, Player arg1, ClipContext$Fluid arg2)",
+			"fabric": "raycast(World world, PlayerEntity player, RaycastContext$FluidHandling fluidHandling)"
+		},
+		{
+			"forge": "getEnchantmentValue()",
+			"fabric": "getEnchantability()"
+		},
+		{
+			"forge": "isValidRepairItem(ItemStack arg0, ItemStack arg1)",
+			"fabric": "canRepair(ItemStack stack, ItemStack ingredient)"
+		},
+		{
+			"forge": "getDefaultAttributeModifiers(EquipmentSlot arg0)",
+			"fabric": "getAttributeModifiers(EquipmentSlot slot)"
+		},
+		{
+			"forge": "useOnRelease(ItemStack arg0)",
+			"fabric": "isUsedOnRelease(ItemStack stack)"
+		},
+		{
+			"forge": "getDefaultInstance()",
+			"fabric": "getDefaultStack()"
+		},
+		{
+			"forge": "isEdible()",
+			"fabric": "isFood()"
+		},
+		{
+			"forge": "getFoodProperties()",
+			"fabric": "getFoodComponent()"
+		},
+		{
+			"forge": "getDrinkingSound()",
+			"fabric": "getDrinkSound()"
+		},
+		{
+			"forge": "getEatingSound()",
+			"fabric": "getEatSound()"
+		},
+		{
+			"forge": "isFireResistant()",
+			"fabric": "isFireproof()"
+		},
+		{
+			"forge": "canBeHurtBy(DamageSource arg0)",
+			"fabric": "damage(DamageSource source)"
+		},
+		{
+			"forge": "canFitInsideContainerItems()",
+			"fabric": "canBeNested()"
+		},
+		{
+			"forge": "requiredFeatures()",
+			"fabric": "getRequiredFeatures()"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.commands.CommandBuildContext$MissingTagAccessPolicy",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandBuildContext$MissingTagAccessPolicy",
+			"fabric": "net.minecraft.command.CommandRegistryAccess$EntryListCreationPolicy"
+		},
+		{
+			"forge": "CREATE_NEW",
+			"fabric": "CREATE_NEW"
+		},
+		{
+			"forge": "CREATE_NEW",
+			"fabric": "CREATE_NEW"
+		},
+		{
+			"forge": "FAIL",
+			"fabric": "FAIL"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.gui.font.glyphs.SpecialGlyphs$PixelProvider",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.glyphs.SpecialGlyphs$PixelProvider",
+			"fabric": "net.minecraft.client.font.BuiltinEmptyGlyph$ColorSupplier"
+		},
+		{
+			"forge": "getColor(int arg0, int arg1)",
+			"fabric": "getColor(int x, int y)"
+		},
+		{
+			"forge": "getColor(int arg0, int arg1)",
+			"fabric": "getColor(int x, int y)"
+		}
+	]
+}

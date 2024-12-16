@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.game.ServerboundRecipeBookSeenRecipePacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ServerboundRecipeBookSeenRecipePacket",
+			"fabric": "net.minecraft.network.packet.c2s.play.RecipeBookDataC2SPacket"
+		},
+		{
+			"forge": "recipe",
+			"fabric": "recipeId"
+		},
+		{
+			"forge": "recipe",
+			"fabric": "recipeId"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerGamePacketListener arg0)",
+			"fabric": "apply(ServerPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getRecipe()",
+			"fabric": "getRecipeId()"
+		}
+	]
+}

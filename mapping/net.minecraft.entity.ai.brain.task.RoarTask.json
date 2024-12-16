@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.warden.Roar",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.warden.Roar",
+			"fabric": "net.minecraft.entity.ai.brain.task.RoarTask"
+		},
+		{
+			"forge": "TICKS_BEFORE_PLAYING_ROAR_SOUND",
+			"fabric": "SOUND_DELAY"
+		},
+		{
+			"forge": "TICKS_BEFORE_PLAYING_ROAR_SOUND",
+			"fabric": "SOUND_DELAY"
+		},
+		{
+			"forge": "ROAR_ANGER_INCREASE",
+			"fabric": "ANGER_INCREASE"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		},
+		{
+			"forge": "start(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "run(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		},
+		{
+			"forge": "canStillUse(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "shouldKeepRunning(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "keepRunning(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		},
+		{
+			"forge": "stop(ServerLevel arg0, Warden arg1, long arg2)",
+			"fabric": "finishRunning(ServerWorld arg0, WardenEntity arg1, long arg2)"
+		}
+	]
+}

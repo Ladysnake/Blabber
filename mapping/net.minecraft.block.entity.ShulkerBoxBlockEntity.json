@@ -1,0 +1,169 @@
+{
+	"title": "net.minecraft.world.level.block.entity.ShulkerBoxBlockEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.ShulkerBoxBlockEntity",
+			"fabric": "net.minecraft.block.entity.ShulkerBoxBlockEntity"
+		},
+		{
+			"forge": "COLUMNS",
+			"fabric": "field_31354"
+		},
+		{
+			"forge": "COLUMNS",
+			"fabric": "field_31354"
+		},
+		{
+			"forge": "ROWS",
+			"fabric": "field_31355"
+		},
+		{
+			"forge": "CONTAINER_SIZE",
+			"fabric": "INVENTORY_SIZE"
+		},
+		{
+			"forge": "EVENT_SET_OPEN_COUNT",
+			"fabric": "field_31357"
+		},
+		{
+			"forge": "OPENING_TICK_LENGTH",
+			"fabric": "field_31358"
+		},
+		{
+			"forge": "MAX_LID_HEIGHT",
+			"fabric": "field_31359"
+		},
+		{
+			"forge": "MAX_LID_ROTATION",
+			"fabric": "field_31360"
+		},
+		{
+			"forge": "ITEMS_TAG",
+			"fabric": "ITEMS_KEY"
+		},
+		{
+			"forge": "SLOTS",
+			"fabric": "AVAILABLE_SLOTS"
+		},
+		{
+			"forge": "itemStacks",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "openCount",
+			"fabric": "viewerCount"
+		},
+		{
+			"forge": "animationStatus",
+			"fabric": "animationStage"
+		},
+		{
+			"forge": "progress",
+			"fabric": "animationProgress"
+		},
+		{
+			"forge": "progressOld",
+			"fabric": "prevAnimationProgress"
+		},
+		{
+			"forge": "color",
+			"fabric": "cachedColor"
+		},
+		{
+			"forge": "tick(Level arg0, BlockPos arg1, BlockState arg2, ShulkerBoxBlockEntity arg3)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, ShulkerBoxBlockEntity blockEntity)"
+		},
+		{
+			"forge": "tick(Level arg0, BlockPos arg1, BlockState arg2, ShulkerBoxBlockEntity arg3)",
+			"fabric": "tick(World world, BlockPos pos, BlockState state, ShulkerBoxBlockEntity blockEntity)"
+		},
+		{
+			"forge": "updateAnimation(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "updateAnimation(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "getAnimationStatus()",
+			"fabric": "getAnimationStage()"
+		},
+		{
+			"forge": "getBoundingBox(BlockState arg0)",
+			"fabric": "getBoundingBox(BlockState state)"
+		},
+		{
+			"forge": "moveCollidedEntities(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "pushEntities(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "getContainerSize()",
+			"fabric": "size()"
+		},
+		{
+			"forge": "triggerEvent(int arg0, int arg1)",
+			"fabric": "onSyncedBlockEvent(int arg0, int arg1)"
+		},
+		{
+			"forge": "doNeighborUpdates(Level arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "updateNeighborStates(World world, BlockPos pos, BlockState state)"
+		},
+		{
+			"forge": "startOpen(Player arg0)",
+			"fabric": "onOpen(PlayerEntity arg0)"
+		},
+		{
+			"forge": "stopOpen(Player arg0)",
+			"fabric": "onClose(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getDefaultName()",
+			"fabric": "getContainerName()"
+		},
+		{
+			"forge": "load(CompoundTag arg0)",
+			"fabric": "readNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "saveAdditional(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "loadFromTag(CompoundTag arg0)",
+			"fabric": "readInventoryNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "getItems()",
+			"fabric": "getInvStackList()"
+		},
+		{
+			"forge": "setItems(NonNullList<ItemStack> arg0)",
+			"fabric": "setInvStackList(DefaultedList<ItemStack> arg0)"
+		},
+		{
+			"forge": "getSlotsForFace(Direction arg0)",
+			"fabric": "getAvailableSlots(Direction arg0)"
+		},
+		{
+			"forge": "canPlaceItemThroughFace(int arg0, ItemStack arg1, Direction arg2)",
+			"fabric": "canInsert(int arg0, ItemStack arg1, Direction arg2)"
+		},
+		{
+			"forge": "canTakeItemThroughFace(int arg0, ItemStack arg1, Direction arg2)",
+			"fabric": "canExtract(int arg0, ItemStack arg1, Direction arg2)"
+		},
+		{
+			"forge": "getProgress(float arg0)",
+			"fabric": "getAnimationProgress(float delta)"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "createMenu(int arg0, Inventory arg1)",
+			"fabric": "createScreenHandler(int arg0, PlayerInventory arg1)"
+		},
+		{
+			"forge": "isClosed()",
+			"fabric": "suffocates()"
+		}
+	]
+}

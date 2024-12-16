@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.block.GrowingPlantBodyBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.GrowingPlantBodyBlock",
+			"fabric": "net.minecraft.block.AbstractPlantBlock"
+		},
+		{
+			"forge": "updateHeadAfterConvertedFromBody(BlockState arg0, BlockState arg1)",
+			"fabric": "copyState(BlockState from, BlockState to)"
+		},
+		{
+			"forge": "updateHeadAfterConvertedFromBody(BlockState arg0, BlockState arg1)",
+			"fabric": "copyState(BlockState from, BlockState to)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getCloneItemStack(BlockGetter arg0, BlockPos arg1, BlockState arg2)",
+			"fabric": "getPickStack(BlockView arg0, BlockPos arg1, BlockState arg2)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "getHeadPos(BlockGetter arg0, BlockPos arg1, Block arg2)",
+			"fabric": "getStemHeadPos(BlockView world, BlockPos pos, Block block)"
+		},
+		{
+			"forge": "canBeReplaced(BlockState arg0, BlockPlaceContext arg1)",
+			"fabric": "canReplace(BlockState arg0, ItemPlacementContext arg1)"
+		},
+		{
+			"forge": "getBodyBlock()",
+			"fabric": "getPlant()"
+		}
+	]
+}

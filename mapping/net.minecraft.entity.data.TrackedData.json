@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.syncher.EntityDataAccessor",
+	"items": [
+		{
+			"forge": "net.minecraft.network.syncher.EntityDataAccessor",
+			"fabric": "net.minecraft.entity.data.TrackedData"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "serializer",
+			"fabric": "dataType"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getSerializer()",
+			"fabric": "getType()"
+		}
+	]
+}

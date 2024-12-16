@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.core.NonNullList",
+	"items": [
+		{
+			"forge": "net.minecraft.core.NonNullList",
+			"fabric": "net.minecraft.util.collection.DefaultedList"
+		},
+		{
+			"forge": "list",
+			"fabric": "delegate"
+		},
+		{
+			"forge": "list",
+			"fabric": "delegate"
+		},
+		{
+			"forge": "defaultValue",
+			"fabric": "initialElement"
+		},
+		{
+			"forge": "create()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "createWithCapacity(int arg0)",
+			"fabric": "ofSize(int size)"
+		},
+		{
+			"forge": "withSize(int arg0, E arg1)",
+			"fabric": "ofSize(int size, E defaultValue)"
+		},
+		{
+			"forge": "of(E arg0, E... arg1)",
+			"fabric": "copyOf(E defaultValue, E... values)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int index)"
+		},
+		{
+			"forge": "set(int arg0, E arg1)",
+			"fabric": "set(int index, E element)"
+		},
+		{
+			"forge": "add(int arg0, E arg1)",
+			"fabric": "add(int index, E element)"
+		},
+		{
+			"forge": "remove(int arg0)",
+			"fabric": "remove(int index)"
+		}
+	]
+}

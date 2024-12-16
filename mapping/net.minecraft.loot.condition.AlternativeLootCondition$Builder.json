@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.CompositeLootItemCondition$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.CompositeLootItemCondition$Builder",
+			"fabric": "net.minecraft.loot.condition.AlternativeLootCondition$Builder"
+		},
+		{
+			"forge": "terms",
+			"fabric": "terms"
+		},
+		{
+			"forge": "terms",
+			"fabric": "terms"
+		},
+		{
+			"forge": "addTerm(LootItemCondition$Builder arg0)",
+			"fabric": "add(LootCondition$Builder builder)"
+		},
+		{
+			"forge": "addTerm(LootItemCondition$Builder arg0)",
+			"fabric": "add(LootCondition$Builder builder)"
+		},
+		{
+			"forge": "create(LootItemCondition[] arg0)",
+			"fabric": "build(LootCondition[] terms)"
+		}
+	]
+}

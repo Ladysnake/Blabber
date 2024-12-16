@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.telemetry.TelemetryLogManager",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.TelemetryLogManager",
+			"fabric": "net.minecraft.client.util.telemetry.TelemetryLogManager"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "RAW_EXTENSION",
+			"fabric": "FILE_EXTENSION"
+		},
+		{
+			"forge": "EXPIRY_DAYS",
+			"fabric": "RETENTION_DAYS"
+		},
+		{
+			"forge": "directory",
+			"fabric": "compressor"
+		},
+		{
+			"forge": "sessionLog",
+			"fabric": "writer"
+		},
+		{
+			"forge": "open(Path arg0)",
+			"fabric": "create(Path directory)"
+		},
+		{
+			"forge": "open(Path arg0)",
+			"fabric": "create(Path directory)"
+		},
+		{
+			"forge": "openLogger()",
+			"fabric": "getLogger()"
+		}
+	]
+}

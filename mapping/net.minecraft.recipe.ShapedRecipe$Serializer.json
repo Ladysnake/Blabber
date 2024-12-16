@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.item.crafting.ShapedRecipe$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.ShapedRecipe$Serializer",
+			"fabric": "net.minecraft.recipe.ShapedRecipe$Serializer"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "read(Identifier arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "read(Identifier arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "fromNetwork(ResourceLocation arg0, FriendlyByteBuf arg1)",
+			"fabric": "read(Identifier arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "toNetwork(FriendlyByteBuf arg0, ShapedRecipe arg1)",
+			"fabric": "write(PacketByteBuf arg0, ShapedRecipe arg1)"
+		}
+	]
+}

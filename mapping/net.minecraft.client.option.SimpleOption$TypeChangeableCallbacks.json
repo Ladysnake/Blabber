@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.OptionInstance$SliderableOrCyclableValueSet",
+	"items": [
+		{
+			"forge": "net.minecraft.client.OptionInstance$SliderableOrCyclableValueSet",
+			"fabric": "net.minecraft.client.option.SimpleOption$TypeChangeableCallbacks"
+		},
+		{
+			"forge": "createCycleButton()",
+			"fabric": "isCycling()"
+		},
+		{
+			"forge": "createCycleButton()",
+			"fabric": "isCycling()"
+		},
+		{
+			"forge": "createButton(OptionInstance$TooltipSupplier<T> arg0, Options arg1, int arg2, int arg3, int arg4, Consumer<T> arg5)",
+			"fabric": "getWidgetCreator(SimpleOption$TooltipFactory<T> arg0, GameOptions arg1, int arg2, int arg3, int arg4, Consumer<T> arg5)"
+		}
+	]
+}

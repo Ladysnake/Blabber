@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.item.MinecartItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.MinecartItem",
+			"fabric": "net.minecraft.item.MinecartItem"
+		},
+		{
+			"forge": "DISPENSE_ITEM_BEHAVIOR",
+			"fabric": "DISPENSER_BEHAVIOR"
+		},
+		{
+			"forge": "DISPENSE_ITEM_BEHAVIOR",
+			"fabric": "DISPENSER_BEHAVIOR"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		},
+		{
+			"forge": "useOn(UseOnContext arg0)",
+			"fabric": "useOnBlock(ItemUsageContext arg0)"
+		}
+	]
+}

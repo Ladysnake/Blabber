@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.commands.GameRuleCommand$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.GameRuleCommand$1",
+			"fabric": "net.minecraft.server.command.GameRuleCommand$1"
+		},
+		{
+			"forge": "visit(GameRules$Key<T> arg0, GameRules$Type<T> arg1)",
+			"fabric": "visit(GameRules$Key<T> arg0, GameRules$Type<T> arg1)"
+		},
+		{
+			"forge": "visit(GameRules$Key<T> arg0, GameRules$Type<T> arg1)",
+			"fabric": "visit(GameRules$Key<T> arg0, GameRules$Type<T> arg1)"
+		}
+	]
+}

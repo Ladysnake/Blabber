@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.SinglePieceStructure$PieceConstructor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.SinglePieceStructure$PieceConstructor",
+			"fabric": "net.minecraft.world.gen.structure.BasicTempleStructure$Constructor"
+		},
+		{
+			"forge": "construct(WorldgenRandom arg0, int arg1, int arg2)",
+			"fabric": "construct(ChunkRandom random, int startX, int startZ)"
+		},
+		{
+			"forge": "construct(WorldgenRandom arg0, int arg1, int arg2)",
+			"fabric": "construct(ChunkRandom random, int startX, int startZ)"
+		}
+	]
+}

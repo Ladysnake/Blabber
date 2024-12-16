@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.CaveSurface",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.CaveSurface",
+			"fabric": "net.minecraft.util.math.VerticalSurfaceType"
+		},
+		{
+			"forge": "CEILING",
+			"fabric": "CEILING"
+		},
+		{
+			"forge": "CEILING",
+			"fabric": "CEILING"
+		},
+		{
+			"forge": "FLOOR",
+			"fabric": "FLOOR"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "direction",
+			"fabric": "direction"
+		},
+		{
+			"forge": "y",
+			"fabric": "offset"
+		},
+		{
+			"forge": "id",
+			"fabric": "name"
+		},
+		{
+			"forge": "getDirection()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "getDirection()",
+			"fabric": "getDirection()"
+		},
+		{
+			"forge": "getY()",
+			"fabric": "getOffset()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

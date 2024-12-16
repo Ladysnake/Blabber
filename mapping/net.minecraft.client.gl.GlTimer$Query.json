@@ -1,0 +1,45 @@
+{
+	"title": "com.mojang.blaze3d.systems.TimerQuery$FrameProfile",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.systems.TimerQuery$FrameProfile",
+			"fabric": "net.minecraft.client.gl.GlTimer$Query"
+		},
+		{
+			"forge": "NO_RESULT",
+			"fabric": "MISSING"
+		},
+		{
+			"forge": "NO_RESULT",
+			"fabric": "MISSING"
+		},
+		{
+			"forge": "CANCELLED_RESULT",
+			"fabric": "CLOSED"
+		},
+		{
+			"forge": "queryName",
+			"fabric": "queryId"
+		},
+		{
+			"forge": "result",
+			"fabric": "result"
+		},
+		{
+			"forge": "cancel()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "cancel()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "isDone()",
+			"fabric": "isResultAvailable()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "queryResult()"
+		}
+	]
+}

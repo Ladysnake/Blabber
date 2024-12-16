@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.entity.Display$BillboardConstraints",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.Display$BillboardConstraints",
+			"fabric": "net.minecraft.entity.decoration.DisplayEntity$BillboardMode"
+		},
+		{
+			"forge": "FIXED",
+			"fabric": "FIXED"
+		},
+		{
+			"forge": "FIXED",
+			"fabric": "FIXED"
+		},
+		{
+			"forge": "VERTICAL",
+			"fabric": "VERTICAL"
+		},
+		{
+			"forge": "HORIZONTAL",
+			"fabric": "HORIZONTAL"
+		},
+		{
+			"forge": "CENTER",
+			"fabric": "CENTER"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "FROM_INDEX"
+		},
+		{
+			"forge": "id",
+			"fabric": "index"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getIndex()"
+		}
+	]
+}

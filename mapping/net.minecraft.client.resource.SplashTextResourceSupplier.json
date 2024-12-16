@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.resources.SplashManager",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.SplashManager",
+			"fabric": "net.minecraft.client.resource.SplashTextResourceSupplier"
+		},
+		{
+			"forge": "SPLASHES_LOCATION",
+			"fabric": "RESOURCE_ID"
+		},
+		{
+			"forge": "SPLASHES_LOCATION",
+			"fabric": "RESOURCE_ID"
+		},
+		{
+			"forge": "RANDOM",
+			"fabric": "RANDOM"
+		},
+		{
+			"forge": "splashes",
+			"fabric": "splashTexts"
+		},
+		{
+			"forge": "user",
+			"fabric": "session"
+		},
+		{
+			"forge": "prepare(ResourceManager arg0, ProfilerFiller arg1)",
+			"fabric": "prepare(ResourceManager arg0, Profiler arg1)"
+		},
+		{
+			"forge": "prepare(ResourceManager arg0, ProfilerFiller arg1)",
+			"fabric": "prepare(ResourceManager arg0, Profiler arg1)"
+		},
+		{
+			"forge": "apply(List<String> arg0, ResourceManager arg1, ProfilerFiller arg2)",
+			"fabric": "apply(List<String> arg0, ResourceManager arg1, Profiler arg2)"
+		},
+		{
+			"forge": "getSplash()",
+			"fabric": "get()"
+		}
+	]
+}

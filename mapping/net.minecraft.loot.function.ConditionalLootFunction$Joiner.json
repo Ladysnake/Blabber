@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$DummyBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$DummyBuilder",
+			"fabric": "net.minecraft.loot.function.ConditionalLootFunction$Joiner"
+		},
+		{
+			"forge": "constructor",
+			"fabric": "joiner"
+		},
+		{
+			"forge": "constructor",
+			"fabric": "joiner"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "getThis()",
+			"fabric": "getThisBuilder()"
+		},
+		{
+			"forge": "build()",
+			"fabric": "build()"
+		}
+	]
+}

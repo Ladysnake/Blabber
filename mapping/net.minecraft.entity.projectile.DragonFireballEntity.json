@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.projectile.DragonFireball",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.DragonFireball",
+			"fabric": "net.minecraft.entity.projectile.DragonFireballEntity"
+		},
+		{
+			"forge": "SPLASH_RANGE",
+			"fabric": "DAMAGE_RANGE"
+		},
+		{
+			"forge": "SPLASH_RANGE",
+			"fabric": "DAMAGE_RANGE"
+		},
+		{
+			"forge": "onHit(HitResult arg0)",
+			"fabric": "onCollision(HitResult arg0)"
+		},
+		{
+			"forge": "onHit(HitResult arg0)",
+			"fabric": "onCollision(HitResult arg0)"
+		},
+		{
+			"forge": "isPickable()",
+			"fabric": "canHit()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "getTrailParticle()",
+			"fabric": "getParticleType()"
+		},
+		{
+			"forge": "shouldBurn()",
+			"fabric": "isBurning()"
+		}
+	]
+}

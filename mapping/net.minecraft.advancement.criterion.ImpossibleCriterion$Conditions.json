@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.advancements.critereon.ImpossibleTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.ImpossibleTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.ImpossibleCriterion$Conditions"
+		},
+		{
+			"forge": "getCriterion()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getCriterion()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

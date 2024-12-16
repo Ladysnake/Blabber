@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.RandomSelectorFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.RandomSelectorFeature",
+			"fabric": "net.minecraft.world.gen.feature.RandomFeature"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<RandomFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<RandomFeatureConfig> arg0)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<RandomFeatureConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<RandomFeatureConfig> arg0)"
+		}
+	]
+}

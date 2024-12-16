@@ -1,0 +1,105 @@
+{
+	"title": "net.minecraft.core.FrontAndTop",
+	"items": [
+		{
+			"forge": "net.minecraft.core.FrontAndTop",
+			"fabric": "net.minecraft.block.enums.JigsawOrientation"
+		},
+		{
+			"forge": "DOWN_EAST",
+			"fabric": "DOWN_EAST"
+		},
+		{
+			"forge": "DOWN_EAST",
+			"fabric": "DOWN_EAST"
+		},
+		{
+			"forge": "DOWN_NORTH",
+			"fabric": "DOWN_NORTH"
+		},
+		{
+			"forge": "DOWN_SOUTH",
+			"fabric": "DOWN_SOUTH"
+		},
+		{
+			"forge": "DOWN_WEST",
+			"fabric": "DOWN_WEST"
+		},
+		{
+			"forge": "UP_EAST",
+			"fabric": "UP_EAST"
+		},
+		{
+			"forge": "UP_NORTH",
+			"fabric": "UP_NORTH"
+		},
+		{
+			"forge": "UP_SOUTH",
+			"fabric": "UP_SOUTH"
+		},
+		{
+			"forge": "UP_WEST",
+			"fabric": "UP_WEST"
+		},
+		{
+			"forge": "WEST_UP",
+			"fabric": "WEST_UP"
+		},
+		{
+			"forge": "EAST_UP",
+			"fabric": "EAST_UP"
+		},
+		{
+			"forge": "NORTH_UP",
+			"fabric": "NORTH_UP"
+		},
+		{
+			"forge": "SOUTH_UP",
+			"fabric": "SOUTH_UP"
+		},
+		{
+			"forge": "LOOKUP_TOP_FRONT",
+			"fabric": "BY_INDEX"
+		},
+		{
+			"forge": "LOOKUP_TOP_FRONT",
+			"fabric": "BY_INDEX"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "top",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "front",
+			"fabric": "facing"
+		},
+		{
+			"forge": "lookupKey(Direction arg0, Direction arg1)",
+			"fabric": "getIndex(Direction facing, Direction rotation)"
+		},
+		{
+			"forge": "lookupKey(Direction arg0, Direction arg1)",
+			"fabric": "getIndex(Direction facing, Direction rotation)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "fromFrontAndTop(Direction arg0, Direction arg1)",
+			"fabric": "byDirections(Direction facing, Direction rotation)"
+		},
+		{
+			"forge": "front()",
+			"fabric": "getFacing()"
+		},
+		{
+			"forge": "top()",
+			"fabric": "getRotation()"
+		}
+	]
+}

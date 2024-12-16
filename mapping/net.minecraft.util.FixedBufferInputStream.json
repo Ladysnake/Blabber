@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.util.FastBufferedInputStream",
+	"items": [
+		{
+			"forge": "net.minecraft.util.FastBufferedInputStream",
+			"fabric": "net.minecraft.util.FixedBufferInputStream"
+		},
+		{
+			"forge": "DEFAULT_BUFFER_SIZE",
+			"fabric": "DEFAULT_BUFFER_SIZE"
+		},
+		{
+			"forge": "DEFAULT_BUFFER_SIZE",
+			"fabric": "DEFAULT_BUFFER_SIZE"
+		},
+		{
+			"forge": "in",
+			"fabric": "stream"
+		},
+		{
+			"forge": "buffer",
+			"fabric": "buf"
+		},
+		{
+			"forge": "limit",
+			"fabric": "end"
+		},
+		{
+			"forge": "position",
+			"fabric": "start"
+		},
+		{
+			"forge": "read()",
+			"fabric": "read(byte[] buf, int offset, int length)"
+		},
+		{
+			"forge": "read(byte[] arg0, int arg1, int arg2)",
+			"fabric": "read(byte[] buf, int offset, int length)"
+		},
+		{
+			"forge": "skip(long arg0)",
+			"fabric": "skip(long n)"
+		},
+		{
+			"forge": "bytesInBuffer()",
+			"fabric": "getAvailableBuffer()"
+		},
+		{
+			"forge": "fill()",
+			"fabric": "fill()"
+		}
+	]
+}

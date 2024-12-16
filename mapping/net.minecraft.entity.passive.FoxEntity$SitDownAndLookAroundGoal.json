@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.entity.animal.Fox$PerchAndSearchGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Fox$PerchAndSearchGoal",
+			"fabric": "net.minecraft.entity.passive.FoxEntity$SitDownAndLookAroundGoal"
+		},
+		{
+			"forge": "relX",
+			"fabric": "lookX"
+		},
+		{
+			"forge": "relX",
+			"fabric": "lookX"
+		},
+		{
+			"forge": "relZ",
+			"fabric": "lookZ"
+		},
+		{
+			"forge": "lookTime",
+			"fabric": "timer"
+		},
+		{
+			"forge": "looksRemaining",
+			"fabric": "counter"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "resetLook()",
+			"fabric": "chooseNewAngle()"
+		}
+	]
+}

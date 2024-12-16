@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition$Builder",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.LootItemCondition$Builder",
+			"fabric": "net.minecraft.loot.condition.LootCondition$Builder"
+		},
+		{
+			"forge": "build()",
+			"fabric": "invert()"
+		},
+		{
+			"forge": "invert()",
+			"fabric": "invert()"
+		},
+		{
+			"forge": "or(LootItemCondition$Builder arg0)",
+			"fabric": "or(LootCondition$Builder condition)"
+		},
+		{
+			"forge": "and(LootItemCondition$Builder arg0)",
+			"fabric": "and(LootCondition$Builder condition)"
+		}
+	]
+}

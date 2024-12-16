@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.lighting.BlockLightSectionStorage$BlockDataLayerStorageMap",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.lighting.BlockLightSectionStorage$BlockDataLayerStorageMap",
+			"fabric": "net.minecraft.world.chunk.light.BlockLightStorage$Data"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		}
+	]
+}

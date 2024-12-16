@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.chunk.Palette$Factory",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.Palette$Factory",
+			"fabric": "net.minecraft.world.chunk.Palette$Factory"
+		},
+		{
+			"forge": "create(int arg0, IdMap<A> arg1, PaletteResize<A> arg2, List<A> arg3)",
+			"fabric": "create(int bits, IndexedIterable<A> idList, PaletteResizeListener<A> listener, List<A> arg3)"
+		},
+		{
+			"forge": "create(int arg0, IdMap<A> arg1, PaletteResize<A> arg2, List<A> arg3)",
+			"fabric": "create(int bits, IndexedIterable<A> idList, PaletteResizeListener<A> listener, List<A> arg3)"
+		}
+	]
+}

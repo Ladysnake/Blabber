@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.block.PressurePlateBlock$Sensitivity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.PressurePlateBlock$Sensitivity",
+			"fabric": "net.minecraft.block.PressurePlateBlock$ActivationRule"
+		},
+		{
+			"forge": "EVERYTHING",
+			"fabric": "EVERYTHING"
+		},
+		{
+			"forge": "EVERYTHING",
+			"fabric": "EVERYTHING"
+		},
+		{
+			"forge": "MOBS",
+			"fabric": "MOBS"
+		}
+	]
+}

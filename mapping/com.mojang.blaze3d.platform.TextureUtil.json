@@ -1,0 +1,57 @@
+{
+	"title": "com.mojang.blaze3d.platform.TextureUtil",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.TextureUtil",
+			"fabric": "com.mojang.blaze3d.platform.TextureUtil"
+		},
+		{
+			"forge": "generateTextureId()",
+			"fabric": "releaseTextureId(int id)"
+		},
+		{
+			"forge": "releaseTextureId(int arg0)",
+			"fabric": "releaseTextureId(int id)"
+		},
+		{
+			"forge": "prepareImage(int arg0, int arg1, int arg2)",
+			"fabric": "prepareImage(int id, int width, int height)"
+		},
+		{
+			"forge": "prepareImage(NativeImage$InternalGlFormat arg0, int arg1, int arg2, int arg3)",
+			"fabric": "prepareImage(NativeImage$InternalFormat internalFormat, int id, int width, int height)"
+		},
+		{
+			"forge": "prepareImage(int arg0, int arg1, int arg2, int arg3)",
+			"fabric": "prepareImage(int id, int maxLevel, int width, int height)"
+		},
+		{
+			"forge": "prepareImage(NativeImage$InternalGlFormat arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "prepareImage(NativeImage$InternalFormat internalFormat, int id, int maxLevel, int width, int height)"
+		},
+		{
+			"forge": "bind(int arg0)",
+			"fabric": "bind(int id)"
+		},
+		{
+			"forge": "readResource(InputStream arg0)",
+			"fabric": "readResource(InputStream inputStream)"
+		},
+		{
+			"forge": "readResource(ReadableByteChannel arg0, int arg1)",
+			"fabric": "readResource(ReadableByteChannel channel, int bufSize)"
+		},
+		{
+			"forge": "writeAsPNG(Path arg0, String arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "writeAsPNG(Path directory, String prefix, int textureId, int scales, int width, int height)"
+		},
+		{
+			"forge": "writeAsPNG(Path arg0, String arg1, int arg2, int arg3, int arg4, int arg5, IntUnaryOperator arg6)",
+			"fabric": "writeAsPNG(Path directory, String prefix, int textureId, int scales, int width, int height, IntUnaryOperator operator)"
+		},
+		{
+			"forge": "getDebugTexturePath(Path arg0)",
+			"fabric": "getDebugTexturePath(Path path)"
+		}
+	]
+}

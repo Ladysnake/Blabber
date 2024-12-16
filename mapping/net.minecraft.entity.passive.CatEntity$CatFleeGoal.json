@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.animal.Cat$CatAvoidEntityGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Cat$CatAvoidEntityGoal",
+			"fabric": "net.minecraft.entity.passive.CatEntity$CatFleeGoal"
+		},
+		{
+			"forge": "cat",
+			"fabric": "cat"
+		},
+		{
+			"forge": "cat",
+			"fabric": "cat"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientPacketListener$DeferredPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientPacketListener$DeferredPacket",
+			"fabric": "net.minecraft.client.network.ClientPlayNetworkHandler$QueuedPacket"
+		},
+		{
+			"forge": "packet",
+			"fabric": "packet"
+		},
+		{
+			"forge": "packet",
+			"fabric": "packet"
+		},
+		{
+			"forge": "sendCondition",
+			"fabric": "sendCondition"
+		},
+		{
+			"forge": "expirationTime",
+			"fabric": "expirationTime"
+		},
+		{
+			"forge": "packet()",
+			"fabric": "packet()"
+		},
+		{
+			"forge": "packet()",
+			"fabric": "packet()"
+		},
+		{
+			"forge": "sendCondition()",
+			"fabric": "sendCondition()"
+		},
+		{
+			"forge": "expirationTime()",
+			"fabric": "expirationTime()"
+		}
+	]
+}

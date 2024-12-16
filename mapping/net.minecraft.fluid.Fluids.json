@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.material.Fluids",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.material.Fluids",
+			"fabric": "net.minecraft.fluid.Fluids"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "EMPTY",
+			"fabric": "EMPTY"
+		},
+		{
+			"forge": "FLOWING_WATER",
+			"fabric": "FLOWING_WATER"
+		},
+		{
+			"forge": "WATER",
+			"fabric": "WATER"
+		},
+		{
+			"forge": "FLOWING_LAVA",
+			"fabric": "FLOWING_LAVA"
+		},
+		{
+			"forge": "LAVA",
+			"fabric": "LAVA"
+		},
+		{
+			"forge": "register(String arg0, T arg1)",
+			"fabric": "register(String id, T value)"
+		},
+		{
+			"forge": "register(String arg0, T arg1)",
+			"fabric": "register(String id, T value)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.level.Level$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.Level$1",
+			"fabric": "net.minecraft.world.World$1"
+		},
+		{
+			"forge": "getCenterX()",
+			"fabric": "getCenterX()"
+		},
+		{
+			"forge": "getCenterX()",
+			"fabric": "getCenterX()"
+		},
+		{
+			"forge": "getCenterZ()",
+			"fabric": "getCenterZ()"
+		}
+	]
+}

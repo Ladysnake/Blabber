@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.level.block.TrapDoorBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.TrapDoorBlock",
+			"fabric": "net.minecraft.block.TrapdoorBlock"
+		},
+		{
+			"forge": "OPEN",
+			"fabric": "OPEN"
+		},
+		{
+			"forge": "OPEN",
+			"fabric": "OPEN"
+		},
+		{
+			"forge": "HALF",
+			"fabric": "HALF"
+		},
+		{
+			"forge": "POWERED",
+			"fabric": "POWERED"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "AABB_THICKNESS",
+			"fabric": "field_31266"
+		},
+		{
+			"forge": "EAST_OPEN_AABB",
+			"fabric": "EAST_SHAPE"
+		},
+		{
+			"forge": "WEST_OPEN_AABB",
+			"fabric": "WEST_SHAPE"
+		},
+		{
+			"forge": "SOUTH_OPEN_AABB",
+			"fabric": "SOUTH_SHAPE"
+		},
+		{
+			"forge": "NORTH_OPEN_AABB",
+			"fabric": "NORTH_SHAPE"
+		},
+		{
+			"forge": "BOTTOM_AABB",
+			"fabric": "OPEN_BOTTOM_SHAPE"
+		},
+		{
+			"forge": "TOP_AABB",
+			"fabric": "OPEN_TOP_SHAPE"
+		},
+		{
+			"forge": "type",
+			"fabric": "blockSetType"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "isPathfindable(BlockState arg0, BlockGetter arg1, BlockPos arg2, PathComputationType arg3)",
+			"fabric": "canPathfindThrough(BlockState arg0, BlockView arg1, BlockPos arg2, NavigationType arg3)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "playSound(Player arg0, Level arg1, BlockPos arg2, boolean arg3)",
+			"fabric": "playToggleSound(PlayerEntity player, World world, BlockPos pos, boolean open)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		}
+	]
+}

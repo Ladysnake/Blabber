@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.block.TntBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.TntBlock",
+			"fabric": "net.minecraft.block.TntBlock"
+		},
+		{
+			"forge": "UNSTABLE",
+			"fabric": "UNSTABLE"
+		},
+		{
+			"forge": "UNSTABLE",
+			"fabric": "UNSTABLE"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		},
+		{
+			"forge": "neighborChanged(BlockState arg0, Level arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)",
+			"fabric": "neighborUpdate(BlockState arg0, World arg1, BlockPos arg2, Block arg3, BlockPos arg4, boolean arg5)"
+		},
+		{
+			"forge": "playerWillDestroy(Level arg0, BlockPos arg1, BlockState arg2, Player arg3)",
+			"fabric": "onBreak(World arg0, BlockPos arg1, BlockState arg2, PlayerEntity arg3)"
+		},
+		{
+			"forge": "wasExploded(Level arg0, BlockPos arg1, Explosion arg2)",
+			"fabric": "onDestroyedByExplosion(World arg0, BlockPos arg1, Explosion arg2)"
+		},
+		{
+			"forge": "explode(Level arg0, BlockPos arg1)",
+			"fabric": "primeTnt(World world, BlockPos pos)"
+		},
+		{
+			"forge": "explode(Level arg0, BlockPos arg1, LivingEntity arg2)",
+			"fabric": "primeTnt(World world, BlockPos pos, LivingEntity igniter)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "onProjectileHit(Level arg0, BlockState arg1, BlockHitResult arg2, Projectile arg3)",
+			"fabric": "onProjectileHit(World arg0, BlockState arg1, BlockHitResult arg2, ProjectileEntity arg3)"
+		},
+		{
+			"forge": "dropFromExplosion(Explosion arg0)",
+			"fabric": "shouldDropItemsOnExplosion(Explosion arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		}
+	]
+}

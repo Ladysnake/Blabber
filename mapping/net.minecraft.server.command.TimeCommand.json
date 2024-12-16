@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.server.commands.TimeCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.TimeCommand",
+			"fabric": "net.minecraft.server.command.TimeCommand"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher)"
+		},
+		{
+			"forge": "getDayTime(ServerLevel arg0)",
+			"fabric": "getDayTime(ServerWorld world)"
+		},
+		{
+			"forge": "queryTime(CommandSourceStack arg0, int arg1)",
+			"fabric": "executeQuery(ServerCommandSource source, int time)"
+		},
+		{
+			"forge": "setTime(CommandSourceStack arg0, int arg1)",
+			"fabric": "executeSet(ServerCommandSource source, int time)"
+		},
+		{
+			"forge": "addTime(CommandSourceStack arg0, int arg1)",
+			"fabric": "executeAdd(ServerCommandSource source, int time)"
+		}
+	]
+}

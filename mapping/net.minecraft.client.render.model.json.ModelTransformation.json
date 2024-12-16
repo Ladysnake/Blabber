@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.client.renderer.block.model.ItemTransforms",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.block.model.ItemTransforms",
+			"fabric": "net.minecraft.client.render.model.json.ModelTransformation"
+		},
+		{
+			"forge": "NO_TRANSFORMS",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NO_TRANSFORMS",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "thirdPersonLeftHand",
+			"fabric": "thirdPersonLeftHand"
+		},
+		{
+			"forge": "thirdPersonRightHand",
+			"fabric": "thirdPersonRightHand"
+		},
+		{
+			"forge": "firstPersonLeftHand",
+			"fabric": "firstPersonLeftHand"
+		},
+		{
+			"forge": "firstPersonRightHand",
+			"fabric": "firstPersonRightHand"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "gui",
+			"fabric": "gui"
+		},
+		{
+			"forge": "ground",
+			"fabric": "ground"
+		},
+		{
+			"forge": "fixed",
+			"fabric": "fixed"
+		},
+		{
+			"forge": "getTransform(ItemDisplayContext arg0)",
+			"fabric": "getTransformation(ModelTransformationMode renderMode)"
+		},
+		{
+			"forge": "getTransform(ItemDisplayContext arg0)",
+			"fabric": "getTransformation(ModelTransformationMode renderMode)"
+		},
+		{
+			"forge": "hasTransform(ItemDisplayContext arg0)",
+			"fabric": "isTransformationDefined(ModelTransformationMode renderMode)"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.util.monitoring.jmx.MinecraftServerStatistics",
+	"items": [
+		{
+			"forge": "net.minecraft.util.monitoring.jmx.MinecraftServerStatistics",
+			"fabric": "net.minecraft.server.dedicated.ServerMBean"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "mBeanInfo",
+			"fabric": "mBeanInfo"
+		},
+		{
+			"forge": "attributeDescriptionByName",
+			"fabric": "entries"
+		},
+		{
+			"forge": "registerJmxMonitoring(MinecraftServer arg0)",
+			"fabric": "register(MinecraftServer server)"
+		},
+		{
+			"forge": "registerJmxMonitoring(MinecraftServer arg0)",
+			"fabric": "register(MinecraftServer server)"
+		},
+		{
+			"forge": "getAverageTickTime()",
+			"fabric": "getAverageTickTime()"
+		},
+		{
+			"forge": "getTickTimes()",
+			"fabric": "getTickTimes()"
+		},
+		{
+			"forge": "getAttribute(String arg0)",
+			"fabric": "getAttribute(String attribute)"
+		},
+		{
+			"forge": "setAttribute(Attribute arg0)",
+			"fabric": "setAttribute(Attribute attribute)"
+		},
+		{
+			"forge": "getAttributes(String[] arg0)",
+			"fabric": "getAttributes(String[] attributes)"
+		},
+		{
+			"forge": "setAttributes(AttributeList arg0)",
+			"fabric": "setAttributes(AttributeList attributes)"
+		},
+		{
+			"forge": "invoke(String arg0, Object[] arg1, String[] arg2)",
+			"fabric": "invoke(String actionName, Object[] params, String[] signature)"
+		}
+	]
+}

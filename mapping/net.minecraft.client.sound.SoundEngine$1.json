@@ -1,0 +1,33 @@
+{
+	"title": "com.mojang.blaze3d.audio.Library$1",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.audio.Library$1",
+			"fabric": "net.minecraft.client.sound.SoundEngine$1"
+		},
+		{
+			"forge": "acquire()",
+			"fabric": "createSource()"
+		},
+		{
+			"forge": "acquire()",
+			"fabric": "createSource()"
+		},
+		{
+			"forge": "release(Channel arg0)",
+			"fabric": "release(Source arg0)"
+		},
+		{
+			"forge": "cleanup()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "getMaxCount()",
+			"fabric": "getMaxSourceCount()"
+		},
+		{
+			"forge": "getUsedCount()",
+			"fabric": "getSourceCount()"
+		}
+	]
+}

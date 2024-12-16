@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.PositionTracker",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.PositionTracker",
+			"fabric": "net.minecraft.entity.ai.brain.LookTarget"
+		},
+		{
+			"forge": "currentPosition()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "currentPosition()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "currentBlockPosition()",
+			"fabric": "getBlockPos()"
+		},
+		{
+			"forge": "isVisibleBy(LivingEntity arg0)",
+			"fabric": "isSeenBy(LivingEntity entity)"
+		}
+	]
+}

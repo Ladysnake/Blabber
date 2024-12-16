@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.block.MultifaceSpreader$SpreadType$2",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.MultifaceSpreader$SpreadType$2",
+			"fabric": "net.minecraft.block.LichenGrower$GrowType$2"
+		},
+		{
+			"forge": "getSpreadPos(BlockPos arg0, Direction arg1, Direction arg2)",
+			"fabric": "getGrowPos(BlockPos arg0, Direction arg1, Direction arg2)"
+		},
+		{
+			"forge": "getSpreadPos(BlockPos arg0, Direction arg1, Direction arg2)",
+			"fabric": "getGrowPos(BlockPos arg0, Direction arg1, Direction arg2)"
+		}
+	]
+}

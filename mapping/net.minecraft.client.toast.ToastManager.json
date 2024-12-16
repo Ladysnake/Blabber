@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.client.gui.components.toasts.ToastComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.components.toasts.ToastComponent",
+			"fabric": "net.minecraft.client.toast.ToastManager"
+		},
+		{
+			"forge": "SLOT_COUNT",
+			"fabric": "SPACES"
+		},
+		{
+			"forge": "SLOT_COUNT",
+			"fabric": "SPACES"
+		},
+		{
+			"forge": "NO_SPACE",
+			"fabric": "ALL_OCCUPIED"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "visible",
+			"fabric": "visibleEntries"
+		},
+		{
+			"forge": "occupiedSlots",
+			"fabric": "occupiedSpaces"
+		},
+		{
+			"forge": "queued",
+			"fabric": "toastQueue"
+		},
+		{
+			"forge": "render(GuiGraphics arg0)",
+			"fabric": "draw(DrawContext context)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0)",
+			"fabric": "draw(DrawContext context)"
+		},
+		{
+			"forge": "findFreeIndex(int arg0)",
+			"fabric": "getTopIndex(int requiredSpaces)"
+		},
+		{
+			"forge": "freeSlots()",
+			"fabric": "getEmptySpaceCount()"
+		},
+		{
+			"forge": "getToast(Class<? extends T> arg0, Object arg1)",
+			"fabric": "getToast(Class<? extends T> toastClass, Object type)"
+		},
+		{
+			"forge": "clear()",
+			"fabric": "clear()"
+		},
+		{
+			"forge": "addToast(Toast arg0)",
+			"fabric": "add(Toast toast)"
+		},
+		{
+			"forge": "getMinecraft()",
+			"fabric": "getClient()"
+		},
+		{
+			"forge": "getNotificationDisplayTimeMultiplier()",
+			"fabric": "getNotificationDisplayTimeMultiplier()"
+		}
+	]
+}

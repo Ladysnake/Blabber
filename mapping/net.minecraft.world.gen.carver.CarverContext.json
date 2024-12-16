@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.carver.CarvingContext",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.carver.CarvingContext",
+			"fabric": "net.minecraft.world.gen.carver.CarverContext"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "noiseChunk",
+			"fabric": "chunkNoiseSampler"
+		},
+		{
+			"forge": "randomState",
+			"fabric": "noiseConfig"
+		},
+		{
+			"forge": "surfaceRule",
+			"fabric": "materialRule"
+		},
+		{
+			"forge": "topMaterial(Function<BlockPos, Holder<Biome>> arg0, ChunkAccess arg1, BlockPos arg2, boolean arg3)",
+			"fabric": "applyMaterialRule(Function<BlockPos, RegistryEntry<Biome>> posToBiome, Chunk chunk, BlockPos pos, boolean hasFluid)"
+		},
+		{
+			"forge": "topMaterial(Function<BlockPos, Holder<Biome>> arg0, ChunkAccess arg1, BlockPos arg2, boolean arg3)",
+			"fabric": "applyMaterialRule(Function<BlockPos, RegistryEntry<Biome>> posToBiome, Chunk chunk, BlockPos pos, boolean hasFluid)"
+		},
+		{
+			"forge": "registryAccess()",
+			"fabric": "getRegistryManager()"
+		},
+		{
+			"forge": "randomState()",
+			"fabric": "getNoiseConfig()"
+		}
+	]
+}

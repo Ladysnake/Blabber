@@ -1,0 +1,125 @@
+{
+	"title": "net.minecraft.world.entity.monster.warden.WardenAi",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.warden.WardenAi",
+			"fabric": "net.minecraft.entity.mob.WardenBrain"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_IDLING",
+			"fabric": "STROLL_SPEED"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_IDLING",
+			"fabric": "STROLL_SPEED"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_INVESTIGATING",
+			"fabric": "CELEBRATE_TIME"
+		},
+		{
+			"forge": "SPEED_MULTIPLIER_WHEN_FIGHTING",
+			"fabric": "RANGED_APPROACH_SPEED"
+		},
+		{
+			"forge": "MELEE_ATTACK_COOLDOWN",
+			"fabric": "MELEE_ATTACK_INTERVAL"
+		},
+		{
+			"forge": "DIGGING_DURATION",
+			"fabric": "DIG_DURATION"
+		},
+		{
+			"forge": "EMERGE_DURATION",
+			"fabric": "EMERGE_DURATION"
+		},
+		{
+			"forge": "ROAR_DURATION",
+			"fabric": "ROAR_DURATION"
+		},
+		{
+			"forge": "SNIFFING_DURATION",
+			"fabric": "SNIFF_DURATION"
+		},
+		{
+			"forge": "DIGGING_COOLDOWN",
+			"fabric": "DIG_COOLDOWN"
+		},
+		{
+			"forge": "DISTURBANCE_LOCATION_EXPIRY_TIME",
+			"fabric": "field_38181"
+		},
+		{
+			"forge": "SENSOR_TYPES",
+			"fabric": "SENSORS"
+		},
+		{
+			"forge": "MEMORY_TYPES",
+			"fabric": "MEMORY_MODULES"
+		},
+		{
+			"forge": "DIG_COOLDOWN_SETTER",
+			"fabric": "RESET_DIG_COOLDOWN_TASK"
+		},
+		{
+			"forge": "updateActivity(Warden arg0)",
+			"fabric": "updateActivities(WardenEntity warden)"
+		},
+		{
+			"forge": "updateActivity(Warden arg0)",
+			"fabric": "updateActivities(WardenEntity warden)"
+		},
+		{
+			"forge": "makeBrain(Warden arg0, com.mojang.serialization.Dynamic<?> arg1)",
+			"fabric": "create(WardenEntity warden, com.mojang.serialization.Dynamic<?> dynamic)"
+		},
+		{
+			"forge": "initCoreActivity(Brain<Warden> arg0)",
+			"fabric": "addCoreActivities(Brain<WardenEntity> brain)"
+		},
+		{
+			"forge": "initEmergeActivity(Brain<Warden> arg0)",
+			"fabric": "addEmergeActivities(Brain<WardenEntity> brain)"
+		},
+		{
+			"forge": "initDiggingActivity(Brain<Warden> arg0)",
+			"fabric": "addDigActivities(Brain<WardenEntity> brain)"
+		},
+		{
+			"forge": "initIdleActivity(Brain<Warden> arg0)",
+			"fabric": "addIdleActivities(Brain<WardenEntity> brain)"
+		},
+		{
+			"forge": "initInvestigateActivity(Brain<Warden> arg0)",
+			"fabric": "addInvestigateActivities(Brain<WardenEntity> brain)"
+		},
+		{
+			"forge": "initSniffingActivity(Brain<Warden> arg0)",
+			"fabric": "addSniffActivities(Brain<WardenEntity> brain)"
+		},
+		{
+			"forge": "initRoarActivity(Brain<Warden> arg0)",
+			"fabric": "addRoarActivities(Brain<WardenEntity> brain)"
+		},
+		{
+			"forge": "initFightActivity(Warden arg0, Brain<Warden> arg1)",
+			"fabric": "addFightActivities(WardenEntity warden, Brain<WardenEntity> brain)"
+		},
+		{
+			"forge": "isTarget(Warden arg0, LivingEntity arg1)",
+			"fabric": "isTargeting(WardenEntity warden, LivingEntity entity)"
+		},
+		{
+			"forge": "onTargetInvalid(Warden arg0, LivingEntity arg1)",
+			"fabric": "removeDeadSuspect(WardenEntity warden, LivingEntity suspect)"
+		},
+		{
+			"forge": "setDigCooldown(LivingEntity arg0)",
+			"fabric": "resetDigCooldown(LivingEntity warden)"
+		},
+		{
+			"forge": "setDisturbanceLocation(Warden arg0, BlockPos arg1)",
+			"fabric": "lookAtDisturbance(WardenEntity warden, BlockPos pos)"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.MetricSampler$SamplerResult",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.MetricSampler$SamplerResult",
+			"fabric": "net.minecraft.util.profiler.Sampler$Data"
+		},
+		{
+			"forge": "recording",
+			"fabric": "values"
+		},
+		{
+			"forge": "recording",
+			"fabric": "values"
+		},
+		{
+			"forge": "firstTick",
+			"fabric": "startTick"
+		},
+		{
+			"forge": "lastTick",
+			"fabric": "endTick"
+		},
+		{
+			"forge": "valueAtTick(int arg0)",
+			"fabric": "getValue(int tick)"
+		},
+		{
+			"forge": "valueAtTick(int arg0)",
+			"fabric": "getValue(int tick)"
+		},
+		{
+			"forge": "getFirstTick()",
+			"fabric": "getStartTick()"
+		},
+		{
+			"forge": "getLastTick()",
+			"fabric": "getEndTick()"
+		}
+	]
+}

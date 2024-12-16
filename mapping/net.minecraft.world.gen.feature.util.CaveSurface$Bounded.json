@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.Column$Range",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.Column$Range",
+			"fabric": "net.minecraft.world.gen.feature.util.CaveSurface$Bounded"
+		},
+		{
+			"forge": "floor",
+			"fabric": "floor"
+		},
+		{
+			"forge": "floor",
+			"fabric": "floor"
+		},
+		{
+			"forge": "ceiling",
+			"fabric": "ceiling"
+		},
+		{
+			"forge": "getCeiling()",
+			"fabric": "getCeilingHeight()"
+		},
+		{
+			"forge": "getCeiling()",
+			"fabric": "getCeilingHeight()"
+		},
+		{
+			"forge": "getFloor()",
+			"fabric": "getFloorHeight()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getOptionalHeight()"
+		},
+		{
+			"forge": "ceiling()",
+			"fabric": "getCeiling()"
+		},
+		{
+			"forge": "floor()",
+			"fabric": "getFloor()"
+		},
+		{
+			"forge": "height()",
+			"fabric": "getHeight()"
+		}
+	]
+}

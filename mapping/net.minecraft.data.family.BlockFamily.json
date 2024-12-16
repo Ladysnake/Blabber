@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.data.BlockFamily",
+	"items": [
+		{
+			"forge": "net.minecraft.data.BlockFamily",
+			"fabric": "net.minecraft.data.family.BlockFamily"
+		},
+		{
+			"forge": "baseBlock",
+			"fabric": "baseBlock"
+		},
+		{
+			"forge": "baseBlock",
+			"fabric": "baseBlock"
+		},
+		{
+			"forge": "variants",
+			"fabric": "variants"
+		},
+		{
+			"forge": "requiredFeatures",
+			"fabric": "requiredFeatures"
+		},
+		{
+			"forge": "generateModel",
+			"fabric": "generateModels"
+		},
+		{
+			"forge": "generateRecipe",
+			"fabric": "generateRecipes"
+		},
+		{
+			"forge": "recipeGroupPrefix",
+			"fabric": "group"
+		},
+		{
+			"forge": "recipeUnlockedBy",
+			"fabric": "unlockCriterionName"
+		},
+		{
+			"forge": "getBaseBlock()",
+			"fabric": "getBaseBlock()"
+		},
+		{
+			"forge": "getBaseBlock()",
+			"fabric": "getBaseBlock()"
+		},
+		{
+			"forge": "getVariants()",
+			"fabric": "getVariants()"
+		},
+		{
+			"forge": "get(BlockFamily$Variant arg0)",
+			"fabric": "getVariant(BlockFamily$Variant variant)"
+		},
+		{
+			"forge": "shouldGenerateModel()",
+			"fabric": "shouldGenerateModels()"
+		},
+		{
+			"forge": "shouldGenerateRecipe(FeatureFlagSet arg0)",
+			"fabric": "shouldGenerateRecipes(FeatureSet enabledFeatures)"
+		},
+		{
+			"forge": "getRecipeGroupPrefix()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "getRecipeUnlockedBy()",
+			"fabric": "getUnlockCriterionName()"
+		}
+	]
+}

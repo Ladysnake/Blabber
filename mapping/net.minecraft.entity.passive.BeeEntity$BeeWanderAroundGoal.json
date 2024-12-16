@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.animal.Bee$BeeWanderGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Bee$BeeWanderGoal",
+			"fabric": "net.minecraft.entity.passive.BeeEntity$BeeWanderAroundGoal"
+		},
+		{
+			"forge": "WANDER_THRESHOLD",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "WANDER_THRESHOLD",
+			"fabric": "MAX_DISTANCE"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "findPos()",
+			"fabric": "getRandomLocation()"
+		}
+	]
+}

@@ -1,0 +1,217 @@
+{
+	"title": "net.minecraft.world.entity.animal.Turtle",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Turtle",
+			"fabric": "net.minecraft.entity.passive.TurtleEntity"
+		},
+		{
+			"forge": "HOME_POS",
+			"fabric": "HOME_POS"
+		},
+		{
+			"forge": "HOME_POS",
+			"fabric": "HOME_POS"
+		},
+		{
+			"forge": "HAS_EGG",
+			"fabric": "HAS_EGG"
+		},
+		{
+			"forge": "LAYING_EGG",
+			"fabric": "DIGGING_SAND"
+		},
+		{
+			"forge": "TRAVEL_POS",
+			"fabric": "TRAVEL_POS"
+		},
+		{
+			"forge": "GOING_HOME",
+			"fabric": "LAND_BOUND"
+		},
+		{
+			"forge": "TRAVELLING",
+			"fabric": "ACTIVELY_TRAVELING"
+		},
+		{
+			"forge": "FOOD_ITEMS",
+			"fabric": "BREEDING_ITEM"
+		},
+		{
+			"forge": "layEggCounter",
+			"fabric": "sandDiggingCounter"
+		},
+		{
+			"forge": "BABY_ON_LAND_SELECTOR",
+			"fabric": "BABY_TURTLE_ON_LAND_FILTER"
+		},
+		{
+			"forge": "setHomePos(BlockPos arg0)",
+			"fabric": "setHomePos(BlockPos pos)"
+		},
+		{
+			"forge": "setHomePos(BlockPos arg0)",
+			"fabric": "setHomePos(BlockPos pos)"
+		},
+		{
+			"forge": "getHomePos()",
+			"fabric": "getHomePos()"
+		},
+		{
+			"forge": "setTravelPos(BlockPos arg0)",
+			"fabric": "setTravelPos(BlockPos pos)"
+		},
+		{
+			"forge": "getTravelPos()",
+			"fabric": "getTravelPos()"
+		},
+		{
+			"forge": "hasEgg()",
+			"fabric": "hasEgg()"
+		},
+		{
+			"forge": "setHasEgg(boolean arg0)",
+			"fabric": "setHasEgg(boolean hasEgg)"
+		},
+		{
+			"forge": "isLayingEgg()",
+			"fabric": "isDiggingSand()"
+		},
+		{
+			"forge": "setLayingEgg(boolean arg0)",
+			"fabric": "setDiggingSand(boolean diggingSand)"
+		},
+		{
+			"forge": "isGoingHome()",
+			"fabric": "isLandBound()"
+		},
+		{
+			"forge": "setGoingHome(boolean arg0)",
+			"fabric": "setLandBound(boolean landBound)"
+		},
+		{
+			"forge": "isTravelling()",
+			"fabric": "isActivelyTraveling()"
+		},
+		{
+			"forge": "setTravelling(boolean arg0)",
+			"fabric": "setActivelyTraveling(boolean traveling)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "finalizeSpawn(ServerLevelAccessor arg0, DifficultyInstance arg1, MobSpawnType arg2, SpawnGroupData arg3, CompoundTag arg4)",
+			"fabric": "initialize(ServerWorldAccess arg0, LocalDifficulty arg1, SpawnReason arg2, EntityData arg3, NbtCompound arg4)"
+		},
+		{
+			"forge": "checkTurtleSpawnRules(EntityType<Turtle> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<TurtleEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createTurtleAttributes()"
+		},
+		{
+			"forge": "isPushedByFluid()",
+			"fabric": "isPushedByFluids()"
+		},
+		{
+			"forge": "canBreatheUnderwater()",
+			"fabric": "canBreatheInWater()"
+		},
+		{
+			"forge": "getMobType()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "getAmbientSoundInterval()",
+			"fabric": "getMinAmbientSoundDelay()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "playSwimSound(float arg0)",
+			"fabric": "playSwimSound(float arg0)"
+		},
+		{
+			"forge": "getSwimSound()",
+			"fabric": "getSwimSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "playStepSound(BlockPos arg0, BlockState arg1)",
+			"fabric": "playStepSound(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "canFallInLove()",
+			"fabric": "canEat()"
+		},
+		{
+			"forge": "nextStep()",
+			"fabric": "calculateNextStepSoundDistance()"
+		},
+		{
+			"forge": "getScale()",
+			"fabric": "getScaleFactor()"
+		},
+		{
+			"forge": "createNavigation(Level arg0)",
+			"fabric": "createNavigation(World arg0)"
+		},
+		{
+			"forge": "getBreedOffspring(ServerLevel arg0, AgeableMob arg1)",
+			"fabric": "createChild(ServerWorld arg0, PassiveEntity arg1)"
+		},
+		{
+			"forge": "isFood(ItemStack arg0)",
+			"fabric": "isBreedingItem(ItemStack arg0)"
+		},
+		{
+			"forge": "getWalkTargetValue(BlockPos arg0, LevelReader arg1)",
+			"fabric": "getPathfindingFavor(BlockPos arg0, WorldView arg1)"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "ageBoundaryReached()",
+			"fabric": "onGrowUp()"
+		},
+		{
+			"forge": "travel(Vec3 arg0)",
+			"fabric": "travel(Vec3d arg0)"
+		},
+		{
+			"forge": "canBeLeashed(Player arg0)",
+			"fabric": "canBeLeashedBy(PlayerEntity arg0)"
+		},
+		{
+			"forge": "thunderHit(ServerLevel arg0, LightningBolt arg1)",
+			"fabric": "onStruckByLightning(ServerWorld arg0, LightningEntity arg1)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.eventlog.JsonEventLogReader$1",
+	"items": [
+		{
+			"forge": "net.minecraft.util.eventlog.JsonEventLogReader$1",
+			"fabric": "net.minecraft.util.logging.LogReader$1"
+		},
+		{
+			"forge": "next()",
+			"fabric": "read()"
+		},
+		{
+			"forge": "next()",
+			"fabric": "read()"
+		}
+	]
+}

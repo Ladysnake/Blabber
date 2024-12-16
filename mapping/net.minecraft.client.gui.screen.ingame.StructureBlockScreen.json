@@ -1,0 +1,237 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.StructureBlockEditScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.StructureBlockEditScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.StructureBlockScreen"
+		},
+		{
+			"forge": "NAME_LABEL",
+			"fabric": "STRUCTURE_NAME_TEXT"
+		},
+		{
+			"forge": "NAME_LABEL",
+			"fabric": "STRUCTURE_NAME_TEXT"
+		},
+		{
+			"forge": "POSITION_LABEL",
+			"fabric": "POSITION_TEXT"
+		},
+		{
+			"forge": "SIZE_LABEL",
+			"fabric": "SIZE_TEXT"
+		},
+		{
+			"forge": "INTEGRITY_LABEL",
+			"fabric": "INTEGRITY_TEXT"
+		},
+		{
+			"forge": "CUSTOM_DATA_LABEL",
+			"fabric": "CUSTOM_DATA_TEXT"
+		},
+		{
+			"forge": "INCLUDE_ENTITIES_LABEL",
+			"fabric": "INCLUDE_ENTITIES_TEXT"
+		},
+		{
+			"forge": "DETECT_SIZE_LABEL",
+			"fabric": "DETECT_SIZE_TEXT"
+		},
+		{
+			"forge": "SHOW_AIR_LABEL",
+			"fabric": "SHOW_AIR_TEXT"
+		},
+		{
+			"forge": "SHOW_BOUNDING_BOX_LABEL",
+			"fabric": "SHOW_BOUNDING_BOX_TEXT"
+		},
+		{
+			"forge": "ALL_MODES",
+			"fabric": "MODES"
+		},
+		{
+			"forge": "DEFAULT_MODES",
+			"fabric": "MODES_EXCEPT_DATA"
+		},
+		{
+			"forge": "structure",
+			"fabric": "structureBlock"
+		},
+		{
+			"forge": "initialMirror",
+			"fabric": "mirror"
+		},
+		{
+			"forge": "initialRotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "initialMode",
+			"fabric": "mode"
+		},
+		{
+			"forge": "initialEntityIgnoring",
+			"fabric": "ignoreEntities"
+		},
+		{
+			"forge": "initialShowAir",
+			"fabric": "showAir"
+		},
+		{
+			"forge": "initialShowBoundingBox",
+			"fabric": "showBoundingBox"
+		},
+		{
+			"forge": "nameEdit",
+			"fabric": "inputName"
+		},
+		{
+			"forge": "posXEdit",
+			"fabric": "inputPosX"
+		},
+		{
+			"forge": "posYEdit",
+			"fabric": "inputPosY"
+		},
+		{
+			"forge": "posZEdit",
+			"fabric": "inputPosZ"
+		},
+		{
+			"forge": "sizeXEdit",
+			"fabric": "inputSizeX"
+		},
+		{
+			"forge": "sizeYEdit",
+			"fabric": "inputSizeY"
+		},
+		{
+			"forge": "sizeZEdit",
+			"fabric": "inputSizeZ"
+		},
+		{
+			"forge": "integrityEdit",
+			"fabric": "inputIntegrity"
+		},
+		{
+			"forge": "seedEdit",
+			"fabric": "inputSeed"
+		},
+		{
+			"forge": "dataEdit",
+			"fabric": "inputMetadata"
+		},
+		{
+			"forge": "saveButton",
+			"fabric": "buttonSave"
+		},
+		{
+			"forge": "loadButton",
+			"fabric": "buttonLoad"
+		},
+		{
+			"forge": "rot0Button",
+			"fabric": "buttonRotate0"
+		},
+		{
+			"forge": "rot90Button",
+			"fabric": "buttonRotate90"
+		},
+		{
+			"forge": "rot180Button",
+			"fabric": "buttonRotate180"
+		},
+		{
+			"forge": "rot270Button",
+			"fabric": "buttonRotate270"
+		},
+		{
+			"forge": "detectButton",
+			"fabric": "buttonDetect"
+		},
+		{
+			"forge": "includeEntitiesButton",
+			"fabric": "buttonEntities"
+		},
+		{
+			"forge": "mirrorButton",
+			"fabric": "buttonMirror"
+		},
+		{
+			"forge": "toggleAirButton",
+			"fabric": "buttonShowAir"
+		},
+		{
+			"forge": "toggleBoundingBox",
+			"fabric": "buttonShowBoundingBox"
+		},
+		{
+			"forge": "decimalFormat",
+			"fabric": "decimalFormat"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "onDone()",
+			"fabric": "done()"
+		},
+		{
+			"forge": "onCancel()",
+			"fabric": "cancel()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "resize(Minecraft arg0, int arg1, int arg2)",
+			"fabric": "resize(MinecraftClient arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "updateDirectionButtons()",
+			"fabric": "updateRotationButton()"
+		},
+		{
+			"forge": "updateMode(StructureMode arg0)",
+			"fabric": "updateWidgets(StructureBlockMode mode)"
+		},
+		{
+			"forge": "sendToServer(StructureBlockEntity$UpdateType arg0)",
+			"fabric": "updateStructureBlock(StructureBlockBlockEntity$Action action)"
+		},
+		{
+			"forge": "parseSeed(String arg0)",
+			"fabric": "parseLong(String string)"
+		},
+		{
+			"forge": "parseIntegrity(String arg0)",
+			"fabric": "parseFloat(String string)"
+		},
+		{
+			"forge": "parseCoordinate(String arg0)",
+			"fabric": "parseInt(String string)"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "isPauseScreen()",
+			"fabric": "shouldPause()"
+		}
+	]
+}

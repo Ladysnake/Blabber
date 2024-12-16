@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.server.chase.ChaseServer$PlayerPosition",
+	"items": [
+		{
+			"forge": "net.minecraft.server.chase.ChaseServer$PlayerPosition",
+			"fabric": "net.minecraft.server.chase.ChaseServer$TeleportPos"
+		},
+		{
+			"forge": "dimensionName",
+			"fabric": "dimensionName"
+		},
+		{
+			"forge": "dimensionName",
+			"fabric": "dimensionName"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "z",
+			"fabric": "z"
+		},
+		{
+			"forge": "yRot",
+			"fabric": "yaw"
+		},
+		{
+			"forge": "xRot",
+			"fabric": "pitch"
+		},
+		{
+			"forge": "format()",
+			"fabric": "getTeleportCommand()"
+		},
+		{
+			"forge": "format()",
+			"fabric": "getTeleportCommand()"
+		},
+		{
+			"forge": "dimensionName()",
+			"fabric": "dimensionName()"
+		},
+		{
+			"forge": "x()",
+			"fabric": "x()"
+		},
+		{
+			"forge": "y()",
+			"fabric": "y()"
+		},
+		{
+			"forge": "z()",
+			"fabric": "z()"
+		},
+		{
+			"forge": "yRot()",
+			"fabric": "yaw()"
+		},
+		{
+			"forge": "xRot()",
+			"fabric": "pitch()"
+		}
+	]
+}

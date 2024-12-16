@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration",
+			"fabric": "net.minecraft.world.gen.CountConfig"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "count",
+			"fabric": "count"
+		},
+		{
+			"forge": "count()",
+			"fabric": "getCount()"
+		},
+		{
+			"forge": "count()",
+			"fabric": "getCount()"
+		}
+	]
+}

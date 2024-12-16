@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.TryFindLandNearWater",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.TryFindLandNearWater",
+			"fabric": "net.minecraft.entity.ai.brain.task.WalkTowardsWaterTask"
+		},
+		{
+			"forge": "create(int arg0, float arg1)",
+			"fabric": "create(int range, float speed)"
+		},
+		{
+			"forge": "create(int arg0, float arg1)",
+			"fabric": "create(int range, float speed)"
+		}
+	]
+}

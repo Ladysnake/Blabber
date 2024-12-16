@@ -1,0 +1,141 @@
+{
+	"title": "net.minecraft.world.level.chunk.PalettedContainer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.PalettedContainer",
+			"fabric": "net.minecraft.world.chunk.PalettedContainer"
+		},
+		{
+			"forge": "MIN_PALETTE_BITS",
+			"fabric": "field_34557"
+		},
+		{
+			"forge": "MIN_PALETTE_BITS",
+			"fabric": "field_34557"
+		},
+		{
+			"forge": "dummyPaletteResize",
+			"fabric": "dummyListener"
+		},
+		{
+			"forge": "registry",
+			"fabric": "idList"
+		},
+		{
+			"forge": "data",
+			"fabric": "data"
+		},
+		{
+			"forge": "strategy",
+			"fabric": "paletteProvider"
+		},
+		{
+			"forge": "threadingDetector",
+			"fabric": "lockHelper"
+		},
+		{
+			"forge": "acquire()",
+			"fabric": "lock()"
+		},
+		{
+			"forge": "acquire()",
+			"fabric": "lock()"
+		},
+		{
+			"forge": "release()",
+			"fabric": "unlock()"
+		},
+		{
+			"forge": "codecRW(IdMap<T> arg0, com.mojang.serialization.Codec<T> arg1, PalettedContainer$Strategy arg2, T arg3)",
+			"fabric": "createPalettedContainerCodec(IndexedIterable<T> idList, com.mojang.serialization.Codec<T> entryCodec, PalettedContainer$PaletteProvider paletteProvider, T defaultValue)"
+		},
+		{
+			"forge": "codecRO(IdMap<T> arg0, com.mojang.serialization.Codec<T> arg1, PalettedContainer$Strategy arg2, T arg3)",
+			"fabric": "createReadableContainerCodec(IndexedIterable<T> idList, com.mojang.serialization.Codec<T> entryCodec, PalettedContainer$PaletteProvider paletteProvider, T defaultValue)"
+		},
+		{
+			"forge": "codec(IdMap<T> arg0, com.mojang.serialization.Codec<T> arg1, PalettedContainer$Strategy arg2, T arg3, PalettedContainerRO$Unpacker<T, C> arg4)",
+			"fabric": "createCodec(IndexedIterable<T> idList, com.mojang.serialization.Codec<T> entryCodec, PalettedContainer$PaletteProvider provider, T defaultValue, ReadableContainer$Reader<T, C> reader)"
+		},
+		{
+			"forge": "createOrReuseData(PalettedContainer$Data<T> arg0, int arg1)",
+			"fabric": "getCompatibleData(PalettedContainer$Data<T> previousData, int bits)"
+		},
+		{
+			"forge": "onResize(int arg0, T arg1)",
+			"fabric": "onResize(int arg0, T arg1)"
+		},
+		{
+			"forge": "getAndSet(int arg0, int arg1, int arg2, T arg3)",
+			"fabric": "swap(int x, int y, int z, T value)"
+		},
+		{
+			"forge": "getAndSetUnchecked(int arg0, int arg1, int arg2, T arg3)",
+			"fabric": "swapUnsafe(int x, int y, int z, T value)"
+		},
+		{
+			"forge": "getAndSet(int arg0, T arg1)",
+			"fabric": "swap(int index, T value)"
+		},
+		{
+			"forge": "set(int arg0, int arg1, int arg2, T arg3)",
+			"fabric": "set(int x, int y, int z, T value)"
+		},
+		{
+			"forge": "set(int arg0, T arg1)",
+			"fabric": "set(int index, T value)"
+		},
+		{
+			"forge": "get(int arg0, int arg1, int arg2)",
+			"fabric": "get(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int index)"
+		},
+		{
+			"forge": "getAll(Consumer<T> arg0)",
+			"fabric": "forEachValue(Consumer<T> arg0)"
+		},
+		{
+			"forge": "read(FriendlyByteBuf arg0)",
+			"fabric": "readPacket(PacketByteBuf buf)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "writePacket(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "unpack(IdMap<T> arg0, PalettedContainer$Strategy arg1, PalettedContainerRO$PackedData<T> arg2)",
+			"fabric": "read(IndexedIterable<T> idList, PalettedContainer$PaletteProvider paletteProvider, ReadableContainer$Serialized<T> serialized)"
+		},
+		{
+			"forge": "pack(IdMap<T> arg0, PalettedContainer$Strategy arg1)",
+			"fabric": "serialize(IndexedIterable<T> arg0, PalettedContainer$PaletteProvider arg1)"
+		},
+		{
+			"forge": "swapPalette(int[] arg0, IntUnaryOperator arg1)",
+			"fabric": "applyEach(int[] is, IntUnaryOperator applier)"
+		},
+		{
+			"forge": "getSerializedSize()",
+			"fabric": "getPacketSize()"
+		},
+		{
+			"forge": "maybeHas(Predicate<T> arg0)",
+			"fabric": "hasAny(Predicate<T> arg0)"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "recreate()",
+			"fabric": "slice()"
+		},
+		{
+			"forge": "count(PalettedContainer$CountConsumer<T> arg0)",
+			"fabric": "count(PalettedContainer$Counter<T> arg0)"
+		}
+	]
+}

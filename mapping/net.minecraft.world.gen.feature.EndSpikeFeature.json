@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.SpikeFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.SpikeFeature",
+			"fabric": "net.minecraft.world.gen.feature.EndSpikeFeature"
+		},
+		{
+			"forge": "NUMBER_OF_SPIKES",
+			"fabric": "COUNT"
+		},
+		{
+			"forge": "NUMBER_OF_SPIKES",
+			"fabric": "COUNT"
+		},
+		{
+			"forge": "SPIKE_DISTANCE",
+			"fabric": "DISTANCE_FROM_ORIGIN"
+		},
+		{
+			"forge": "SPIKE_CACHE",
+			"fabric": "CACHE"
+		},
+		{
+			"forge": "getSpikesForLevel(WorldGenLevel arg0)",
+			"fabric": "getSpikes(StructureWorldAccess world)"
+		},
+		{
+			"forge": "getSpikesForLevel(WorldGenLevel arg0)",
+			"fabric": "getSpikes(StructureWorldAccess world)"
+		},
+		{
+			"forge": "place(FeaturePlaceContext<SpikeConfiguration> arg0)",
+			"fabric": "generate(FeatureContext<EndSpikeFeatureConfig> arg0)"
+		},
+		{
+			"forge": "placeSpike(ServerLevelAccessor arg0, RandomSource arg1, SpikeConfiguration arg2, SpikeFeature$EndSpike arg3)",
+			"fabric": "generateSpike(ServerWorldAccess world, Random random, EndSpikeFeatureConfig config, EndSpikeFeature$Spike spike)"
+		}
+	]
+}

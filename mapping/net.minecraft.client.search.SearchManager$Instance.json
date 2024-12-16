@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.searchtree.SearchRegistry$TreeEntry",
+	"items": [
+		{
+			"forge": "net.minecraft.client.searchtree.SearchRegistry$TreeEntry",
+			"fabric": "net.minecraft.client.search.SearchManager$Instance"
+		},
+		{
+			"forge": "factory",
+			"fabric": "providerGetter"
+		},
+		{
+			"forge": "factory",
+			"fabric": "providerGetter"
+		},
+		{
+			"forge": "tree",
+			"fabric": "provider"
+		},
+		{
+			"forge": "populate(List<T> arg0)",
+			"fabric": "reload(List<T> values)"
+		},
+		{
+			"forge": "populate(List<T> arg0)",
+			"fabric": "reload(List<T> values)"
+		},
+		{
+			"forge": "refresh()",
+			"fabric": "reload()"
+		}
+	]
+}

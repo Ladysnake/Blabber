@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal",
+			"fabric": "net.minecraft.entity.ai.goal.AttackWithOwnerGoal"
+		},
+		{
+			"forge": "tameAnimal",
+			"fabric": "tameable"
+		},
+		{
+			"forge": "tameAnimal",
+			"fabric": "tameable"
+		},
+		{
+			"forge": "ownerLastHurt",
+			"fabric": "attacking"
+		},
+		{
+			"forge": "timestamp",
+			"fabric": "lastAttackTime"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		}
+	]
+}

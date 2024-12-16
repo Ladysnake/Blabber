@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets$Bootstrap",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets$Bootstrap",
+			"fabric": "net.minecraft.world.gen.FlatLevelGeneratorPresets$Registrar"
+		},
+		{
+			"forge": "context",
+			"fabric": "presetRegisterable"
+		},
+		{
+			"forge": "context",
+			"fabric": "presetRegisterable"
+		},
+		{
+			"forge": "register(ResourceKey<FlatLevelGeneratorPreset> arg0, ItemLike arg1, ResourceKey<Biome> arg2, Set<ResourceKey<StructureSet>> arg3, boolean arg4, boolean arg5, FlatLayerInfo... arg6)",
+			"fabric": "createAndRegister(RegistryKey<FlatLevelGeneratorPreset> registryKey, ItemConvertible icon, RegistryKey<Biome> biome, Set<RegistryKey<StructureSet>> structureSetKeys, boolean hasFeatures, boolean hasLakes, FlatChunkGeneratorLayer... layers)"
+		},
+		{
+			"forge": "register(ResourceKey<FlatLevelGeneratorPreset> arg0, ItemLike arg1, ResourceKey<Biome> arg2, Set<ResourceKey<StructureSet>> arg3, boolean arg4, boolean arg5, FlatLayerInfo... arg6)",
+			"fabric": "createAndRegister(RegistryKey<FlatLevelGeneratorPreset> registryKey, ItemConvertible icon, RegistryKey<Biome> biome, Set<RegistryKey<StructureSet>> structureSetKeys, boolean hasFeatures, boolean hasLakes, FlatChunkGeneratorLayer... layers)"
+		},
+		{
+			"forge": "run()",
+			"fabric": "bootstrap()"
+		}
+	]
+}

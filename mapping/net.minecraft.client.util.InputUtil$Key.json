@@ -1,0 +1,57 @@
+{
+	"title": "com.mojang.blaze3d.platform.InputConstants$Key",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.InputConstants$Key",
+			"fabric": "net.minecraft.client.util.InputUtil$Key"
+		},
+		{
+			"forge": "name",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "name",
+			"fabric": "translationKey"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "value",
+			"fabric": "code"
+		},
+		{
+			"forge": "displayName",
+			"fabric": "localizedText"
+		},
+		{
+			"forge": "NAME_MAP",
+			"fabric": "KEYS"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "getValue()",
+			"fabric": "getCode()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getTranslationKey()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getLocalizedText()"
+		},
+		{
+			"forge": "getNumericKeyValue()",
+			"fabric": "toInt()"
+		}
+	]
+}

@@ -1,0 +1,989 @@
+{
+	"title": "net.minecraft.world.entity.player.Player",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.player.Player",
+			"fabric": "net.minecraft.entity.player.PlayerEntity"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MAX_NAME_LENGTH",
+			"fabric": "field_30643"
+		},
+		{
+			"forge": "MAX_HEALTH",
+			"fabric": "field_30644"
+		},
+		{
+			"forge": "SLEEP_DURATION",
+			"fabric": "field_30645"
+		},
+		{
+			"forge": "WAKE_UP_DURATION",
+			"fabric": "field_30646"
+		},
+		{
+			"forge": "ENDER_SLOT_OFFSET",
+			"fabric": "field_30647"
+		},
+		{
+			"forge": "CROUCH_BB_HEIGHT",
+			"fabric": "field_30648"
+		},
+		{
+			"forge": "SWIMMING_BB_WIDTH",
+			"fabric": "field_30649"
+		},
+		{
+			"forge": "SWIMMING_BB_HEIGHT",
+			"fabric": "field_30650"
+		},
+		{
+			"forge": "DEFAULT_EYE_HEIGHT",
+			"fabric": "DEFAULT_EYE_HEIGHT"
+		},
+		{
+			"forge": "STANDING_DIMENSIONS",
+			"fabric": "STANDING_DIMENSIONS"
+		},
+		{
+			"forge": "POSES",
+			"fabric": "POSE_DIMENSIONS"
+		},
+		{
+			"forge": "FLY_ACHIEVEMENT_SPEED",
+			"fabric": "field_30652"
+		},
+		{
+			"forge": "DATA_PLAYER_ABSORPTION_ID",
+			"fabric": "ABSORPTION_AMOUNT"
+		},
+		{
+			"forge": "DATA_SCORE_ID",
+			"fabric": "SCORE"
+		},
+		{
+			"forge": "DATA_PLAYER_MODE_CUSTOMISATION",
+			"fabric": "PLAYER_MODEL_PARTS"
+		},
+		{
+			"forge": "DATA_PLAYER_MAIN_HAND",
+			"fabric": "MAIN_ARM"
+		},
+		{
+			"forge": "DATA_SHOULDER_LEFT",
+			"fabric": "LEFT_SHOULDER_ENTITY"
+		},
+		{
+			"forge": "DATA_SHOULDER_RIGHT",
+			"fabric": "RIGHT_SHOULDER_ENTITY"
+		},
+		{
+			"forge": "timeEntitySatOnShoulder",
+			"fabric": "shoulderEntityAddedTime"
+		},
+		{
+			"forge": "inventory",
+			"fabric": "inventory"
+		},
+		{
+			"forge": "enderChestInventory",
+			"fabric": "enderChestInventory"
+		},
+		{
+			"forge": "inventoryMenu",
+			"fabric": "playerScreenHandler"
+		},
+		{
+			"forge": "containerMenu",
+			"fabric": "currentScreenHandler"
+		},
+		{
+			"forge": "foodData",
+			"fabric": "hungerManager"
+		},
+		{
+			"forge": "jumpTriggerTime",
+			"fabric": "abilityResyncCountdown"
+		},
+		{
+			"forge": "oBob",
+			"fabric": "prevStrideDistance"
+		},
+		{
+			"forge": "bob",
+			"fabric": "strideDistance"
+		},
+		{
+			"forge": "takeXpDelay",
+			"fabric": "experiencePickUpDelay"
+		},
+		{
+			"forge": "xCloakO",
+			"fabric": "prevCapeX"
+		},
+		{
+			"forge": "yCloakO",
+			"fabric": "prevCapeY"
+		},
+		{
+			"forge": "zCloakO",
+			"fabric": "prevCapeZ"
+		},
+		{
+			"forge": "xCloak",
+			"fabric": "capeX"
+		},
+		{
+			"forge": "yCloak",
+			"fabric": "capeY"
+		},
+		{
+			"forge": "zCloak",
+			"fabric": "capeZ"
+		},
+		{
+			"forge": "sleepCounter",
+			"fabric": "sleepTimer"
+		},
+		{
+			"forge": "wasUnderwater",
+			"fabric": "isSubmergedInWater"
+		},
+		{
+			"forge": "abilities",
+			"fabric": "abilities"
+		},
+		{
+			"forge": "experienceLevel",
+			"fabric": "experienceLevel"
+		},
+		{
+			"forge": "totalExperience",
+			"fabric": "totalExperience"
+		},
+		{
+			"forge": "experienceProgress",
+			"fabric": "experienceProgress"
+		},
+		{
+			"forge": "enchantmentSeed",
+			"fabric": "enchantmentTableSeed"
+		},
+		{
+			"forge": "defaultFlySpeed",
+			"fabric": "field_7509"
+		},
+		{
+			"forge": "lastLevelUpTime",
+			"fabric": "lastPlayedLevelUpSoundTime"
+		},
+		{
+			"forge": "gameProfile",
+			"fabric": "gameProfile"
+		},
+		{
+			"forge": "reducedDebugInfo",
+			"fabric": "reducedDebugInfo"
+		},
+		{
+			"forge": "lastItemInMainHand",
+			"fabric": "selectedItem"
+		},
+		{
+			"forge": "cooldowns",
+			"fabric": "itemCooldownManager"
+		},
+		{
+			"forge": "lastDeathLocation",
+			"fabric": "lastDeathPos"
+		},
+		{
+			"forge": "fishing",
+			"fabric": "fishHook"
+		},
+		{
+			"forge": "hurtDir",
+			"fabric": "damageTiltYaw"
+		},
+		{
+			"forge": "blockActionRestricted(Level arg0, BlockPos arg1, GameType arg2)",
+			"fabric": "isBlockBreakingRestricted(World world, BlockPos pos, GameMode gameMode)"
+		},
+		{
+			"forge": "blockActionRestricted(Level arg0, BlockPos arg1, GameType arg2)",
+			"fabric": "isBlockBreakingRestricted(World world, BlockPos pos, GameMode gameMode)"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createPlayerAttributes()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "isSecondaryUseActive()",
+			"fabric": "shouldCancelInteraction()"
+		},
+		{
+			"forge": "wantsToStopRiding()",
+			"fabric": "shouldDismount()"
+		},
+		{
+			"forge": "isStayingOnGroundSurface()",
+			"fabric": "clipAtLedge()"
+		},
+		{
+			"forge": "updateIsUnderwater()",
+			"fabric": "updateWaterSubmersionState()"
+		},
+		{
+			"forge": "turtleHelmetTick()",
+			"fabric": "updateTurtleHelmet()"
+		},
+		{
+			"forge": "createItemCooldowns()",
+			"fabric": "createCooldownManager()"
+		},
+		{
+			"forge": "moveCloak()",
+			"fabric": "updateCapeAngles()"
+		},
+		{
+			"forge": "updatePlayerPose()",
+			"fabric": "updatePose()"
+		},
+		{
+			"forge": "getPortalWaitTime()",
+			"fabric": "getMaxNetherPortalTime()"
+		},
+		{
+			"forge": "getSwimSound()",
+			"fabric": "getSwimSound()"
+		},
+		{
+			"forge": "getSwimSplashSound()",
+			"fabric": "getSplashSound()"
+		},
+		{
+			"forge": "getSwimHighSpeedSplashSound()",
+			"fabric": "getHighSpeedSplashSound()"
+		},
+		{
+			"forge": "getDimensionChangingDelay()",
+			"fabric": "getDefaultPortalCooldown()"
+		},
+		{
+			"forge": "playSound(SoundEvent arg0, float arg1, float arg2)",
+			"fabric": "playSound(SoundEvent arg0, float arg1, float arg2)"
+		},
+		{
+			"forge": "playNotifySound(SoundEvent arg0, SoundSource arg1, float arg2, float arg3)",
+			"fabric": "playSound(SoundEvent event, SoundCategory category, float volume, float pitch)"
+		},
+		{
+			"forge": "getSoundSource()",
+			"fabric": "getSoundCategory()"
+		},
+		{
+			"forge": "getFireImmuneTicks()",
+			"fabric": "getBurningDuration()"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "addParticlesAroundSelf(ParticleOptions arg0)",
+			"fabric": "spawnParticles(ParticleEffect parameters)"
+		},
+		{
+			"forge": "closeContainer()",
+			"fabric": "closeHandledScreen()"
+		},
+		{
+			"forge": "doCloseContainer()",
+			"fabric": "onHandledScreenClosed()"
+		},
+		{
+			"forge": "rideTick()",
+			"fabric": "tickRiding()"
+		},
+		{
+			"forge": "serverAiStep()",
+			"fabric": "tickNewAi()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "playShoulderEntityAmbientSound(CompoundTag arg0)",
+			"fabric": "updateShoulderEntity(NbtCompound entityNbt)"
+		},
+		{
+			"forge": "touch(Entity arg0)",
+			"fabric": "collideWithEntity(Entity entity)"
+		},
+		{
+			"forge": "getScore()",
+			"fabric": "getScore()"
+		},
+		{
+			"forge": "setScore(int arg0)",
+			"fabric": "setScore(int score)"
+		},
+		{
+			"forge": "increaseScore(int arg0)",
+			"fabric": "addScore(int score)"
+		},
+		{
+			"forge": "startAutoSpinAttack(int arg0)",
+			"fabric": "useRiptide(int riptideTicks)"
+		},
+		{
+			"forge": "die(DamageSource arg0)",
+			"fabric": "onDeath(DamageSource arg0)"
+		},
+		{
+			"forge": "dropEquipment()",
+			"fabric": "dropInventory()"
+		},
+		{
+			"forge": "destroyVanishingCursedItems()",
+			"fabric": "vanishCursedItems()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "drop(ItemStack arg0, boolean arg1)",
+			"fabric": "dropItem(ItemStack stack, boolean retainOwnership)"
+		},
+		{
+			"forge": "drop(ItemStack arg0, boolean arg1, boolean arg2)",
+			"fabric": "dropItem(ItemStack stack, boolean throwRandomly, boolean retainOwnership)"
+		},
+		{
+			"forge": "getDestroySpeed(BlockState arg0)",
+			"fabric": "getBlockBreakingSpeed(BlockState block)"
+		},
+		{
+			"forge": "hasCorrectToolForDrops(BlockState arg0)",
+			"fabric": "canHarvest(BlockState state)"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "isInvulnerableTo(DamageSource arg0)",
+			"fabric": "isInvulnerableTo(DamageSource arg0)"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "blockUsingShield(LivingEntity arg0)",
+			"fabric": "takeShieldHit(LivingEntity arg0)"
+		},
+		{
+			"forge": "canBeSeenAsEnemy()",
+			"fabric": "canTakeDamage()"
+		},
+		{
+			"forge": "canHarmPlayer(Player arg0)",
+			"fabric": "shouldDamagePlayer(PlayerEntity player)"
+		},
+		{
+			"forge": "hurtArmor(DamageSource arg0, float arg1)",
+			"fabric": "damageArmor(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "hurtHelmet(DamageSource arg0, float arg1)",
+			"fabric": "damageHelmet(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "hurtCurrentlyUsedShield(float arg0)",
+			"fabric": "damageShield(float arg0)"
+		},
+		{
+			"forge": "actuallyHurt(DamageSource arg0, float arg1)",
+			"fabric": "applyDamage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "onSoulSpeedBlock()",
+			"fabric": "isOnSoulSpeedBlock()"
+		},
+		{
+			"forge": "isTextFilteringEnabled()",
+			"fabric": "shouldFilterText()"
+		},
+		{
+			"forge": "openTextEdit(SignBlockEntity arg0, boolean arg1)",
+			"fabric": "openEditSignScreen(SignBlockEntity sign, boolean front)"
+		},
+		{
+			"forge": "openMinecartCommandBlock(BaseCommandBlock arg0)",
+			"fabric": "openCommandBlockMinecartScreen(CommandBlockExecutor commandBlockExecutor)"
+		},
+		{
+			"forge": "openCommandBlock(CommandBlockEntity arg0)",
+			"fabric": "openCommandBlockScreen(CommandBlockBlockEntity commandBlock)"
+		},
+		{
+			"forge": "openStructureBlock(StructureBlockEntity arg0)",
+			"fabric": "openStructureBlockScreen(StructureBlockBlockEntity structureBlock)"
+		},
+		{
+			"forge": "openJigsawBlock(JigsawBlockEntity arg0)",
+			"fabric": "openJigsawScreen(JigsawBlockEntity jigsaw)"
+		},
+		{
+			"forge": "openHorseInventory(AbstractHorse arg0, Container arg1)",
+			"fabric": "openHorseInventory(AbstractHorseEntity horse, Inventory inventory)"
+		},
+		{
+			"forge": "openMenu(MenuProvider arg0)",
+			"fabric": "openHandledScreen(NamedScreenHandlerFactory factory)"
+		},
+		{
+			"forge": "sendMerchantOffers(int arg0, MerchantOffers arg1, int arg2, int arg3, boolean arg4, boolean arg5)",
+			"fabric": "sendTradeOffers(int syncId, TradeOfferList offers, int levelProgress, int experience, boolean leveled, boolean refreshable)"
+		},
+		{
+			"forge": "openItemGui(ItemStack arg0, InteractionHand arg1)",
+			"fabric": "useBook(ItemStack book, Hand hand)"
+		},
+		{
+			"forge": "interactOn(Entity arg0, InteractionHand arg1)",
+			"fabric": "interact(Entity entity, Hand hand)"
+		},
+		{
+			"forge": "getMyRidingOffset()",
+			"fabric": "getHeightOffset()"
+		},
+		{
+			"forge": "removeVehicle()",
+			"fabric": "dismountVehicle()"
+		},
+		{
+			"forge": "isImmobile()",
+			"fabric": "isImmobile()"
+		},
+		{
+			"forge": "isAffectedByFluids()",
+			"fabric": "shouldSwimInFluids()"
+		},
+		{
+			"forge": "maybeBackOffFromEdge(Vec3 arg0, MoverType arg1)",
+			"fabric": "adjustMovementForSneaking(Vec3d arg0, MovementType arg1)"
+		},
+		{
+			"forge": "isAboveGround()",
+			"fabric": "method_30263()"
+		},
+		{
+			"forge": "attack(Entity arg0)",
+			"fabric": "attack(Entity target)"
+		},
+		{
+			"forge": "doAutoAttackOnTouch(LivingEntity arg0)",
+			"fabric": "attackLivingEntity(LivingEntity arg0)"
+		},
+		{
+			"forge": "disableShield(boolean arg0)",
+			"fabric": "disableShield(boolean sprinting)"
+		},
+		{
+			"forge": "crit(Entity arg0)",
+			"fabric": "addCritParticles(Entity target)"
+		},
+		{
+			"forge": "magicCrit(Entity arg0)",
+			"fabric": "addEnchantedHitParticles(Entity target)"
+		},
+		{
+			"forge": "sweepAttack()",
+			"fabric": "spawnSweepAttackParticles()"
+		},
+		{
+			"forge": "respawn()",
+			"fabric": "requestRespawn()"
+		},
+		{
+			"forge": "remove(Entity$RemovalReason arg0)",
+			"fabric": "remove(Entity$RemovalReason arg0)"
+		},
+		{
+			"forge": "isLocalPlayer()",
+			"fabric": "isMainPlayer()"
+		},
+		{
+			"forge": "getGameProfile()",
+			"fabric": "getGameProfile()"
+		},
+		{
+			"forge": "getInventory()",
+			"fabric": "getInventory()"
+		},
+		{
+			"forge": "getAbilities()",
+			"fabric": "getAbilities()"
+		},
+		{
+			"forge": "updateTutorialInventoryAction(ItemStack arg0, ItemStack arg1, ClickAction arg2)",
+			"fabric": "onPickupSlotClick(ItemStack cursorStack, ItemStack slotStack, ClickType clickType)"
+		},
+		{
+			"forge": "hasContainerOpen()",
+			"fabric": "shouldCloseHandledScreenOnRespawn()"
+		},
+		{
+			"forge": "startSleepInBed(BlockPos arg0)",
+			"fabric": "trySleep(BlockPos pos)"
+		},
+		{
+			"forge": "stopSleepInBed(boolean arg0, boolean arg1)",
+			"fabric": "wakeUp(boolean skipSleepTimer, boolean updateSleepingPlayers)"
+		},
+		{
+			"forge": "stopSleeping()",
+			"fabric": "wakeUp()"
+		},
+		{
+			"forge": "findRespawnPositionAndUseSpawnBlock(ServerLevel arg0, BlockPos arg1, float arg2, boolean arg3, boolean arg4)",
+			"fabric": "findRespawnPosition(ServerWorld world, BlockPos pos, float angle, boolean forced, boolean alive)"
+		},
+		{
+			"forge": "isSleepingLongEnough()",
+			"fabric": "canResetTimeBySleeping()"
+		},
+		{
+			"forge": "getSleepTimer()",
+			"fabric": "getSleepTimer()"
+		},
+		{
+			"forge": "displayClientMessage(Component arg0, boolean arg1)",
+			"fabric": "sendMessage(Text message, boolean overlay)"
+		},
+		{
+			"forge": "awardStat(ResourceLocation arg0)",
+			"fabric": "incrementStat(Identifier stat)"
+		},
+		{
+			"forge": "awardStat(ResourceLocation arg0, int arg1)",
+			"fabric": "increaseStat(Identifier stat, int amount)"
+		},
+		{
+			"forge": "awardStat(Stat<?> arg0)",
+			"fabric": "incrementStat(Stat<?> stat)"
+		},
+		{
+			"forge": "awardStat(Stat<?> arg0, int arg1)",
+			"fabric": "increaseStat(Stat<?> stat, int amount)"
+		},
+		{
+			"forge": "resetStat(Stat<?> arg0)",
+			"fabric": "resetStat(Stat<?> stat)"
+		},
+		{
+			"forge": "awardRecipes(Collection<Recipe<?>> arg0)",
+			"fabric": "unlockRecipes(Collection<Recipe<?>> recipes)"
+		},
+		{
+			"forge": "triggerRecipeCrafted(Recipe<?> arg0, List<ItemStack> arg1)",
+			"fabric": "onRecipeCrafted(Recipe<?> recipe, List<ItemStack> ingredients)"
+		},
+		{
+			"forge": "awardRecipesByKey(ResourceLocation[] arg0)",
+			"fabric": "unlockRecipes(Identifier[] ids)"
+		},
+		{
+			"forge": "resetRecipes(Collection<Recipe<?>> arg0)",
+			"fabric": "lockRecipes(Collection<Recipe<?>> recipes)"
+		},
+		{
+			"forge": "jumpFromGround()",
+			"fabric": "jump()"
+		},
+		{
+			"forge": "travel(Vec3 arg0)",
+			"fabric": "travel(Vec3d arg0)"
+		},
+		{
+			"forge": "updateSwimming()",
+			"fabric": "updateSwimming()"
+		},
+		{
+			"forge": "freeAt(BlockPos arg0)",
+			"fabric": "doesNotSuffocate(BlockPos pos)"
+		},
+		{
+			"forge": "getSpeed()",
+			"fabric": "getMovementSpeed()"
+		},
+		{
+			"forge": "checkMovementStatistics(double arg0, double arg1, double arg2)",
+			"fabric": "increaseTravelMotionStats(double dx, double dy, double dz)"
+		},
+		{
+			"forge": "checkRidingStatistics(double arg0, double arg1, double arg2)",
+			"fabric": "increaseRidingMotionStats(double dx, double dy, double dz)"
+		},
+		{
+			"forge": "causeFallDamage(float arg0, float arg1, DamageSource arg2)",
+			"fabric": "handleFallDamage(float arg0, float arg1, DamageSource arg2)"
+		},
+		{
+			"forge": "tryToStartFallFlying()",
+			"fabric": "checkFallFlying()"
+		},
+		{
+			"forge": "startFallFlying()",
+			"fabric": "startFallFlying()"
+		},
+		{
+			"forge": "stopFallFlying()",
+			"fabric": "stopFallFlying()"
+		},
+		{
+			"forge": "doWaterSplashEffect()",
+			"fabric": "onSwimmingStart()"
+		},
+		{
+			"forge": "playStepSound(BlockPos arg0, BlockState arg1)",
+			"fabric": "playStepSound(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "getFallSounds()",
+			"fabric": "getFallSounds()"
+		},
+		{
+			"forge": "killedEntity(ServerLevel arg0, LivingEntity arg1)",
+			"fabric": "onKilledOther(ServerWorld arg0, LivingEntity arg1)"
+		},
+		{
+			"forge": "makeStuckInBlock(BlockState arg0, Vec3 arg1)",
+			"fabric": "slowMovement(BlockState arg0, Vec3d arg1)"
+		},
+		{
+			"forge": "giveExperiencePoints(int arg0)",
+			"fabric": "addExperience(int experience)"
+		},
+		{
+			"forge": "getEnchantmentSeed()",
+			"fabric": "getEnchantmentTableSeed()"
+		},
+		{
+			"forge": "onEnchantmentPerformed(ItemStack arg0, int arg1)",
+			"fabric": "applyEnchantmentCosts(ItemStack enchantedItem, int experienceLevels)"
+		},
+		{
+			"forge": "giveExperienceLevels(int arg0)",
+			"fabric": "addExperienceLevels(int levels)"
+		},
+		{
+			"forge": "getXpNeededForNextLevel()",
+			"fabric": "getNextLevelExperience()"
+		},
+		{
+			"forge": "causeFoodExhaustion(float arg0)",
+			"fabric": "addExhaustion(float exhaustion)"
+		},
+		{
+			"forge": "getWardenSpawnTracker()",
+			"fabric": "getSculkShriekerWarningManager()"
+		},
+		{
+			"forge": "getFoodData()",
+			"fabric": "getHungerManager()"
+		},
+		{
+			"forge": "canEat(boolean arg0)",
+			"fabric": "canConsume(boolean ignoreHunger)"
+		},
+		{
+			"forge": "isHurt()",
+			"fabric": "canFoodHeal()"
+		},
+		{
+			"forge": "mayBuild()",
+			"fabric": "canModifyBlocks()"
+		},
+		{
+			"forge": "mayUseItemAt(BlockPos arg0, Direction arg1, ItemStack arg2)",
+			"fabric": "canPlaceOn(BlockPos pos, Direction facing, ItemStack stack)"
+		},
+		{
+			"forge": "getExperienceReward()",
+			"fabric": "getXpToDrop()"
+		},
+		{
+			"forge": "isAlwaysExperienceDropper()",
+			"fabric": "shouldAlwaysDropXp()"
+		},
+		{
+			"forge": "shouldShowName()",
+			"fabric": "shouldRenderName()"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "onUpdateAbilities()",
+			"fabric": "sendAbilitiesUpdate()"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getEnderChestInventory()",
+			"fabric": "getEnderChestInventory()"
+		},
+		{
+			"forge": "getItemBySlot(EquipmentSlot arg0)",
+			"fabric": "getEquippedStack(EquipmentSlot arg0)"
+		},
+		{
+			"forge": "doesEmitEquipEvent(EquipmentSlot arg0)",
+			"fabric": "isArmorSlot(EquipmentSlot arg0)"
+		},
+		{
+			"forge": "setItemSlot(EquipmentSlot arg0, ItemStack arg1)",
+			"fabric": "equipStack(EquipmentSlot arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "addItem(ItemStack arg0)",
+			"fabric": "giveItemStack(ItemStack stack)"
+		},
+		{
+			"forge": "getHandSlots()",
+			"fabric": "getHandItems()"
+		},
+		{
+			"forge": "getArmorSlots()",
+			"fabric": "getArmorItems()"
+		},
+		{
+			"forge": "setEntityOnShoulder(CompoundTag arg0)",
+			"fabric": "addShoulderEntity(NbtCompound entityNbt)"
+		},
+		{
+			"forge": "removeEntitiesOnShoulder()",
+			"fabric": "dropShoulderEntities()"
+		},
+		{
+			"forge": "respawnEntityOnShoulder(CompoundTag arg0)",
+			"fabric": "dropShoulderEntity(NbtCompound entityNbt)"
+		},
+		{
+			"forge": "isSpectator()",
+			"fabric": "isSpectator()"
+		},
+		{
+			"forge": "canBeHitByProjectile()",
+			"fabric": "canBeHitByProjectile()"
+		},
+		{
+			"forge": "isSwimming()",
+			"fabric": "isSwimming()"
+		},
+		{
+			"forge": "isCreative()",
+			"fabric": "isCreative()"
+		},
+		{
+			"forge": "isPushedByFluid()",
+			"fabric": "isPushedByFluids()"
+		},
+		{
+			"forge": "getScoreboard()",
+			"fabric": "getScoreboard()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getDisplayName()"
+		},
+		{
+			"forge": "decorateDisplayNameComponent(MutableComponent arg0)",
+			"fabric": "addTellClickEvent(MutableText component)"
+		},
+		{
+			"forge": "getScoreboardName()",
+			"fabric": "getEntityName()"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "setAbsorptionAmount(float arg0)",
+			"fabric": "setAbsorptionAmount(float arg0)"
+		},
+		{
+			"forge": "getAbsorptionAmount()",
+			"fabric": "getAbsorptionAmount()"
+		},
+		{
+			"forge": "isModelPartShown(PlayerModelPart arg0)",
+			"fabric": "isPartVisible(PlayerModelPart modelPart)"
+		},
+		{
+			"forge": "getSlot(int arg0)",
+			"fabric": "getStackReference(int arg0)"
+		},
+		{
+			"forge": "isReducedDebugInfo()",
+			"fabric": "hasReducedDebugInfo()"
+		},
+		{
+			"forge": "setReducedDebugInfo(boolean arg0)",
+			"fabric": "setReducedDebugInfo(boolean reducedDebugInfo)"
+		},
+		{
+			"forge": "setRemainingFireTicks(int arg0)",
+			"fabric": "setFireTicks(int arg0)"
+		},
+		{
+			"forge": "getMainArm()",
+			"fabric": "getMainArm()"
+		},
+		{
+			"forge": "setMainArm(HumanoidArm arg0)",
+			"fabric": "setMainArm(Arm arm)"
+		},
+		{
+			"forge": "getShoulderEntityLeft()",
+			"fabric": "getShoulderEntityLeft()"
+		},
+		{
+			"forge": "setShoulderEntityLeft(CompoundTag arg0)",
+			"fabric": "setShoulderEntityLeft(NbtCompound entityNbt)"
+		},
+		{
+			"forge": "getShoulderEntityRight()",
+			"fabric": "getShoulderEntityRight()"
+		},
+		{
+			"forge": "setShoulderEntityRight(CompoundTag arg0)",
+			"fabric": "setShoulderEntityRight(NbtCompound entityNbt)"
+		},
+		{
+			"forge": "getCurrentItemAttackStrengthDelay()",
+			"fabric": "getAttackCooldownProgressPerTick()"
+		},
+		{
+			"forge": "getAttackStrengthScale(float arg0)",
+			"fabric": "getAttackCooldownProgress(float baseTime)"
+		},
+		{
+			"forge": "resetAttackStrengthTicker()",
+			"fabric": "resetLastAttackedTicks()"
+		},
+		{
+			"forge": "getCooldowns()",
+			"fabric": "getItemCooldownManager()"
+		},
+		{
+			"forge": "getBlockSpeedFactor()",
+			"fabric": "getVelocityMultiplier()"
+		},
+		{
+			"forge": "getLuck()",
+			"fabric": "getLuck()"
+		},
+		{
+			"forge": "canUseGameMasterBlocks()",
+			"fabric": "isCreativeLevelTwoOp()"
+		},
+		{
+			"forge": "canTakeItem(ItemStack arg0)",
+			"fabric": "canEquip(ItemStack arg0)"
+		},
+		{
+			"forge": "getDimensions(Pose arg0)",
+			"fabric": "getDimensions(EntityPose arg0)"
+		},
+		{
+			"forge": "getDismountPoses()",
+			"fabric": "getPoses()"
+		},
+		{
+			"forge": "getProjectile(ItemStack arg0)",
+			"fabric": "getProjectileType(ItemStack arg0)"
+		},
+		{
+			"forge": "eat(Level arg0, ItemStack arg1)",
+			"fabric": "eatFood(World arg0, ItemStack arg1)"
+		},
+		{
+			"forge": "shouldRemoveSoulSpeed(BlockState arg0)",
+			"fabric": "shouldRemoveSoulSpeedBoost(BlockState arg0)"
+		},
+		{
+			"forge": "getRopeHoldPosition(float arg0)",
+			"fabric": "getLeashPos(float arg0)"
+		},
+		{
+			"forge": "isAlwaysTicking()",
+			"fabric": "isPlayer()"
+		},
+		{
+			"forge": "isScoping()",
+			"fabric": "isUsingSpyglass()"
+		},
+		{
+			"forge": "shouldBeSaved()",
+			"fabric": "shouldSave()"
+		},
+		{
+			"forge": "getLastDeathLocation()",
+			"fabric": "getLastDeathPos()"
+		},
+		{
+			"forge": "setLastDeathLocation(Optional<GlobalPos> arg0)",
+			"fabric": "setLastDeathPos(Optional<GlobalPos> lastDeathPos)"
+		},
+		{
+			"forge": "getHurtDir()",
+			"fabric": "getDamageTiltYaw()"
+		},
+		{
+			"forge": "animateHurt(float arg0)",
+			"fabric": "animateDamage(float arg0)"
+		},
+		{
+			"forge": "canSprint()",
+			"fabric": "canSprintAsVehicle()"
+		},
+		{
+			"forge": "getFlyingSpeed()",
+			"fabric": "getOffGroundSpeed()"
+		}
+	]
+}

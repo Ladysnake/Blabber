@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.client.particle.DragonBreathParticle",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.DragonBreathParticle",
+			"fabric": "net.minecraft.client.particle.DragonBreathParticle"
+		},
+		{
+			"forge": "COLOR_MIN",
+			"fabric": "MIN_COLOR"
+		},
+		{
+			"forge": "COLOR_MIN",
+			"fabric": "MIN_COLOR"
+		},
+		{
+			"forge": "COLOR_MAX",
+			"fabric": "MAX_COLOR"
+		},
+		{
+			"forge": "COLOR_MIN_RED",
+			"fabric": "MIN_RED"
+		},
+		{
+			"forge": "COLOR_MIN_GREEN",
+			"fabric": "MIN_GREEN"
+		},
+		{
+			"forge": "COLOR_MIN_BLUE",
+			"fabric": "MIN_BLUE"
+		},
+		{
+			"forge": "COLOR_MAX_RED",
+			"fabric": "MAX_RED"
+		},
+		{
+			"forge": "COLOR_MAX_GREEN",
+			"fabric": "MAX_GREEN"
+		},
+		{
+			"forge": "COLOR_MAX_BLUE",
+			"fabric": "MAX_BLUE"
+		},
+		{
+			"forge": "hasHitGround",
+			"fabric": "reachedGround"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "spriteProvider"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "getRenderType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getQuadSize(float arg0)",
+			"fabric": "getSize(float arg0)"
+		}
+	]
+}

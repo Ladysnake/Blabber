@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.resources.sounds.UnderwaterAmbientSoundHandler",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.sounds.UnderwaterAmbientSoundHandler",
+			"fabric": "net.minecraft.client.sound.AmbientSoundPlayer"
+		},
+		{
+			"forge": "CHANCE_PER_TICK",
+			"fabric": "MAX_TICKS_FOR_BASE_SOUND_LOOP"
+		},
+		{
+			"forge": "CHANCE_PER_TICK",
+			"fabric": "MAX_TICKS_FOR_BASE_SOUND_LOOP"
+		},
+		{
+			"forge": "RARE_CHANCE_PER_TICK",
+			"fabric": "MAX_TICKS_FOR_RARE_SOUND_LOOP"
+		},
+		{
+			"forge": "ULTRA_RARE_CHANCE_PER_TICK",
+			"fabric": "MAX_TICKS_FOR_ULTRA_RARE_SOUND_LOOP"
+		},
+		{
+			"forge": "MINIMUM_TICK_DELAY",
+			"fabric": "DEFAULT_TICKS_UNTIL_PLAY"
+		},
+		{
+			"forge": "player",
+			"fabric": "player"
+		},
+		{
+			"forge": "soundManager",
+			"fabric": "soundManager"
+		},
+		{
+			"forge": "tickDelay",
+			"fabric": "ticksUntilPlay"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

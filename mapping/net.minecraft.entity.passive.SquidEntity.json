@@ -1,0 +1,149 @@
+{
+	"title": "net.minecraft.world.entity.animal.Squid",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Squid",
+			"fabric": "net.minecraft.entity.passive.SquidEntity"
+		},
+		{
+			"forge": "xBodyRot",
+			"fabric": "tiltAngle"
+		},
+		{
+			"forge": "xBodyRot",
+			"fabric": "tiltAngle"
+		},
+		{
+			"forge": "xBodyRotO",
+			"fabric": "prevTiltAngle"
+		},
+		{
+			"forge": "zBodyRot",
+			"fabric": "rollAngle"
+		},
+		{
+			"forge": "zBodyRotO",
+			"fabric": "prevRollAngle"
+		},
+		{
+			"forge": "tentacleMovement",
+			"fabric": "thrustTimer"
+		},
+		{
+			"forge": "oldTentacleMovement",
+			"fabric": "prevThrustTimer"
+		},
+		{
+			"forge": "tentacleAngle",
+			"fabric": "tentacleAngle"
+		},
+		{
+			"forge": "oldTentacleAngle",
+			"fabric": "prevTentacleAngle"
+		},
+		{
+			"forge": "speed",
+			"fabric": "swimVelocityScale"
+		},
+		{
+			"forge": "tentacleSpeed",
+			"fabric": "thrustTimerSpeed"
+		},
+		{
+			"forge": "rotateSpeed",
+			"fabric": "turningSpeed"
+		},
+		{
+			"forge": "tx",
+			"fabric": "swimX"
+		},
+		{
+			"forge": "ty",
+			"fabric": "swimY"
+		},
+		{
+			"forge": "tz",
+			"fabric": "swimZ"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createSquidAttributes()"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getSquirtSound()",
+			"fabric": "getSquirtSound()"
+		},
+		{
+			"forge": "canBeLeashed(Player arg0)",
+			"fabric": "canBeLeashedBy(PlayerEntity arg0)"
+		},
+		{
+			"forge": "getSoundVolume()",
+			"fabric": "getSoundVolume()"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "rotateVector(Vec3 arg0)",
+			"fabric": "applyBodyRotations(Vec3d shootVector)"
+		},
+		{
+			"forge": "spawnInk()",
+			"fabric": "squirt()"
+		},
+		{
+			"forge": "getInkParticle()",
+			"fabric": "getInkParticle()"
+		},
+		{
+			"forge": "travel(Vec3 arg0)",
+			"fabric": "travel(Vec3d arg0)"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		},
+		{
+			"forge": "setMovementVector(float arg0, float arg1, float arg2)",
+			"fabric": "setSwimmingVector(float x, float y, float z)"
+		},
+		{
+			"forge": "hasMovementVector()",
+			"fabric": "hasSwimmingVector()"
+		}
+	]
+}

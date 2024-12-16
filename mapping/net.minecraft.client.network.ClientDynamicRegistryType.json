@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientRegistryLayer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientRegistryLayer",
+			"fabric": "net.minecraft.client.network.ClientDynamicRegistryType"
+		},
+		{
+			"forge": "STATIC",
+			"fabric": "STATIC"
+		},
+		{
+			"forge": "STATIC",
+			"fabric": "STATIC"
+		},
+		{
+			"forge": "REMOTE",
+			"fabric": "REMOTE"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "VALUES",
+			"fabric": "VALUES"
+		},
+		{
+			"forge": "STATIC_ACCESS",
+			"fabric": "STATIC_REGISTRY_MANAGER"
+		},
+		{
+			"forge": "createRegistryAccess()",
+			"fabric": "createCombinedDynamicRegistries()"
+		},
+		{
+			"forge": "createRegistryAccess()",
+			"fabric": "createCombinedDynamicRegistries()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.realms.RealmsLabel",
+	"items": [
+		{
+			"forge": "net.minecraft.realms.RealmsLabel",
+			"fabric": "net.minecraft.client.realms.RealmsLabel"
+		},
+		{
+			"forge": "text",
+			"fabric": "text"
+		},
+		{
+			"forge": "text",
+			"fabric": "text"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "getText()",
+			"fabric": "getText()"
+		}
+	]
+}

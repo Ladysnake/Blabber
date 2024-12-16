@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.item.CreativeModeTab$Output",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.CreativeModeTab$Output",
+			"fabric": "net.minecraft.item.ItemGroup$Entries"
+		},
+		{
+			"forge": "accept(ItemStack arg0, CreativeModeTab$TabVisibility arg1)",
+			"fabric": "add(ItemStack stack, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "accept(ItemStack arg0, CreativeModeTab$TabVisibility arg1)",
+			"fabric": "add(ItemStack stack, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "accept(ItemStack arg0)",
+			"fabric": "add(ItemStack stack)"
+		},
+		{
+			"forge": "accept(ItemLike arg0, CreativeModeTab$TabVisibility arg1)",
+			"fabric": "add(ItemConvertible item, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "accept(ItemLike arg0)",
+			"fabric": "add(ItemConvertible item)"
+		},
+		{
+			"forge": "acceptAll(Collection<ItemStack> arg0, CreativeModeTab$TabVisibility arg1)",
+			"fabric": "addAll(Collection<ItemStack> stacks, ItemGroup$StackVisibility visibility)"
+		},
+		{
+			"forge": "acceptAll(Collection<ItemStack> arg0)",
+			"fabric": "addAll(Collection<ItemStack> stacks)"
+		}
+	]
+}

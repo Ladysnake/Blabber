@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.placement.StructurePlacement$FrequencyReductionMethod",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.placement.StructurePlacement$FrequencyReductionMethod",
+			"fabric": "net.minecraft.world.gen.chunk.placement.StructurePlacement$FrequencyReductionMethod"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "DEFAULT",
+			"fabric": "DEFAULT"
+		},
+		{
+			"forge": "LEGACY_TYPE_1",
+			"fabric": "LEGACY_TYPE_1"
+		},
+		{
+			"forge": "LEGACY_TYPE_2",
+			"fabric": "LEGACY_TYPE_2"
+		},
+		{
+			"forge": "LEGACY_TYPE_3",
+			"fabric": "LEGACY_TYPE_3"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "reducer",
+			"fabric": "generationPredicate"
+		},
+		{
+			"forge": "shouldGenerate(long arg0, int arg1, int arg2, int arg3, float arg4)",
+			"fabric": "shouldGenerate(long seed, int salt, int chunkX, int chunkZ, float chance)"
+		},
+		{
+			"forge": "shouldGenerate(long arg0, int arg1, int arg2, int arg3, float arg4)",
+			"fabric": "shouldGenerate(long seed, int salt, int chunkX, int chunkZ, float chance)"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

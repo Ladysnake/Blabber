@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.world.level.block.FungusBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.FungusBlock",
+			"fabric": "net.minecraft.block.FungusBlock"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "SHAPE",
+			"fabric": "SHAPE"
+		},
+		{
+			"forge": "BONEMEAL_SUCCESS_PROBABILITY",
+			"fabric": "GROW_CHANCE"
+		},
+		{
+			"forge": "requiredBlock",
+			"fabric": "nylium"
+		},
+		{
+			"forge": "feature",
+			"fabric": "featureKey"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "mayPlaceOn(BlockState arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "canPlantOnTop(BlockState arg0, BlockView arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "getFeature(LevelReader arg0)",
+			"fabric": "getFeatureEntry(WorldView world)"
+		},
+		{
+			"forge": "isValidBonemealTarget(LevelReader arg0, BlockPos arg1, BlockState arg2, boolean arg3)",
+			"fabric": "isFertilizable(WorldView arg0, BlockPos arg1, BlockState arg2, boolean arg3)"
+		},
+		{
+			"forge": "isBonemealSuccess(Level arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "canGrow(World arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "performBonemeal(ServerLevel arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "grow(ServerWorld arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		}
+	]
+}

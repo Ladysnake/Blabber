@@ -1,0 +1,229 @@
+{
+	"title": "net.minecraft.world.level.dimension.end.EndDragonFight",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.dimension.end.EndDragonFight",
+			"fabric": "net.minecraft.entity.boss.dragon.EnderDragonFight"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MAX_TICKS_BEFORE_DRAGON_RESPAWN",
+			"fabric": "CHECK_DRAGON_SEEN_INTERVAL"
+		},
+		{
+			"forge": "TIME_BETWEEN_CRYSTAL_SCANS",
+			"fabric": "CRYSTAL_COUNTING_INTERVAL"
+		},
+		{
+			"forge": "TIME_BETWEEN_PLAYER_SCANS",
+			"fabric": "field_31445"
+		},
+		{
+			"forge": "ARENA_SIZE_CHUNKS",
+			"fabric": "ISLAND_SIZE"
+		},
+		{
+			"forge": "ARENA_TICKET_LEVEL",
+			"fabric": "field_31441"
+		},
+		{
+			"forge": "GATEWAY_COUNT",
+			"fabric": "PLAYER_COUNTING_INTERVAL"
+		},
+		{
+			"forge": "GATEWAY_DISTANCE",
+			"fabric": "field_31448"
+		},
+		{
+			"forge": "DRAGON_SPAWN_Y",
+			"fabric": "SPAWN_Y"
+		},
+		{
+			"forge": "validPlayer",
+			"fabric": "showBossBarPredicate"
+		},
+		{
+			"forge": "dragonEvent",
+			"fabric": "bossBar"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "origin",
+			"fabric": "origin"
+		},
+		{
+			"forge": "gateways",
+			"fabric": "gateways"
+		},
+		{
+			"forge": "exitPortalPattern",
+			"fabric": "endPortalPattern"
+		},
+		{
+			"forge": "ticksSinceDragonSeen",
+			"fabric": "dragonSeenTimer"
+		},
+		{
+			"forge": "crystalsAlive",
+			"fabric": "endCrystalsAlive"
+		},
+		{
+			"forge": "ticksSinceCrystalsScanned",
+			"fabric": "crystalCountTimer"
+		},
+		{
+			"forge": "ticksSinceLastPlayerScan",
+			"fabric": "playerUpdateTimer"
+		},
+		{
+			"forge": "dragonKilled",
+			"fabric": "dragonKilled"
+		},
+		{
+			"forge": "previouslyKilled",
+			"fabric": "previouslyKilled"
+		},
+		{
+			"forge": "skipArenaLoadedCheck",
+			"fabric": "skipChunksLoadedCheck"
+		},
+		{
+			"forge": "dragonUUID",
+			"fabric": "dragonUuid"
+		},
+		{
+			"forge": "needsStateScanning",
+			"fabric": "doLegacyCheck"
+		},
+		{
+			"forge": "portalLocation",
+			"fabric": "exitPortalLocation"
+		},
+		{
+			"forge": "respawnStage",
+			"fabric": "dragonSpawnState"
+		},
+		{
+			"forge": "respawnTime",
+			"fabric": "spawnStateTimer"
+		},
+		{
+			"forge": "respawnCrystals",
+			"fabric": "crystals"
+		},
+		{
+			"forge": "skipArenaLoadedCheck()",
+			"fabric": "setSkipChunksLoadedCheck()"
+		},
+		{
+			"forge": "skipArenaLoadedCheck()",
+			"fabric": "setSkipChunksLoadedCheck()"
+		},
+		{
+			"forge": "saveData()",
+			"fabric": "toData()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "scanState()",
+			"fabric": "convertFromLegacy()"
+		},
+		{
+			"forge": "findOrCreateDragon()",
+			"fabric": "checkDragonSeen()"
+		},
+		{
+			"forge": "setRespawnStage(DragonRespawnAnimation arg0)",
+			"fabric": "setSpawnState(EnderDragonSpawnState spawnState)"
+		},
+		{
+			"forge": "hasActiveExitPortal()",
+			"fabric": "worldContainsEndPortal()"
+		},
+		{
+			"forge": "findExitPortal()",
+			"fabric": "findEndPortal()"
+		},
+		{
+			"forge": "isArenaLoaded()",
+			"fabric": "areChunksLoaded()"
+		},
+		{
+			"forge": "updatePlayers()",
+			"fabric": "updatePlayers()"
+		},
+		{
+			"forge": "updateCrystalCount()",
+			"fabric": "countAliveCrystals()"
+		},
+		{
+			"forge": "setDragonKilled(EnderDragon arg0)",
+			"fabric": "dragonKilled(EnderDragonEntity dragon)"
+		},
+		{
+			"forge": "removeAllGateways()",
+			"fabric": "clearGatewaysList()"
+		},
+		{
+			"forge": "spawnNewGateway()",
+			"fabric": "generateNewEndGateway()"
+		},
+		{
+			"forge": "spawnNewGateway(BlockPos arg0)",
+			"fabric": "generateEndGateway(BlockPos pos)"
+		},
+		{
+			"forge": "spawnExitPortal(boolean arg0)",
+			"fabric": "generateEndPortal(boolean previouslyKilled)"
+		},
+		{
+			"forge": "createNewDragon()",
+			"fabric": "createDragon()"
+		},
+		{
+			"forge": "updateDragon(EnderDragon arg0)",
+			"fabric": "updateFight(EnderDragonEntity dragon)"
+		},
+		{
+			"forge": "getCrystalsAlive()",
+			"fabric": "getAliveEndCrystals()"
+		},
+		{
+			"forge": "onCrystalDestroyed(EndCrystal arg0, DamageSource arg1)",
+			"fabric": "crystalDestroyed(EndCrystalEntity enderCrystal, DamageSource source)"
+		},
+		{
+			"forge": "hasPreviouslyKilledDragon()",
+			"fabric": "hasPreviouslyKilled()"
+		},
+		{
+			"forge": "tryRespawn()",
+			"fabric": "respawnDragon()"
+		},
+		{
+			"forge": "respawnDragon(List<EndCrystal> arg0)",
+			"fabric": "respawnDragon(List<EndCrystalEntity> crystals)"
+		},
+		{
+			"forge": "resetSpikeCrystals()",
+			"fabric": "resetEndCrystals()"
+		},
+		{
+			"forge": "getDragonUUID()",
+			"fabric": "getDragonUuid()"
+		}
+	]
+}

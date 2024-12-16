@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.ApplyBonusCount$FormulaDeserializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.ApplyBonusCount$FormulaDeserializer",
+			"fabric": "net.minecraft.loot.function.ApplyBonusLootFunction$FormulaFactory"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1)",
+			"fabric": "deserialize(com.google.gson.JsonObject functionJson, com.google.gson.JsonDeserializationContext context)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1)",
+			"fabric": "deserialize(com.google.gson.JsonObject functionJson, com.google.gson.JsonDeserializationContext context)"
+		}
+	]
+}

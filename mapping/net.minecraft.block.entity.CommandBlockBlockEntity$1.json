@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.entity.CommandBlockEntity$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.CommandBlockEntity$1",
+			"fabric": "net.minecraft.block.entity.CommandBlockBlockEntity$1"
+		},
+		{
+			"forge": "setCommand(String arg0)",
+			"fabric": "setCommand(String arg0)"
+		},
+		{
+			"forge": "setCommand(String arg0)",
+			"fabric": "setCommand(String arg0)"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "onUpdated()",
+			"fabric": "markDirty()"
+		},
+		{
+			"forge": "getPosition()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "createCommandSourceStack()",
+			"fabric": "getSource()"
+		},
+		{
+			"forge": "isValid()",
+			"fabric": "isEditable()"
+		}
+	]
+}

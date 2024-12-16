@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.BookEditScreen$LineInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.BookEditScreen$LineInfo",
+			"fabric": "net.minecraft.client.gui.screen.ingame.BookEditScreen$Line"
+		},
+		{
+			"forge": "style",
+			"fabric": "style"
+		},
+		{
+			"forge": "style",
+			"fabric": "style"
+		},
+		{
+			"forge": "contents",
+			"fabric": "content"
+		},
+		{
+			"forge": "asComponent",
+			"fabric": "text"
+		},
+		{
+			"forge": "x",
+			"fabric": "x"
+		},
+		{
+			"forge": "y",
+			"fabric": "y"
+		}
+	]
+}

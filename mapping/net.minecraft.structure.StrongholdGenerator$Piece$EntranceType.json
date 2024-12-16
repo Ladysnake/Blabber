@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces$StrongholdPiece$SmallDoorType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces$StrongholdPiece$SmallDoorType",
+			"fabric": "net.minecraft.structure.StrongholdGenerator$Piece$EntranceType"
+		},
+		{
+			"forge": "OPENING",
+			"fabric": "OPENING"
+		},
+		{
+			"forge": "OPENING",
+			"fabric": "OPENING"
+		},
+		{
+			"forge": "WOOD_DOOR",
+			"fabric": "WOOD_DOOR"
+		},
+		{
+			"forge": "GRATES",
+			"fabric": "GRATES"
+		},
+		{
+			"forge": "IRON_DOOR",
+			"fabric": "IRON_DOOR"
+		}
+	]
+}

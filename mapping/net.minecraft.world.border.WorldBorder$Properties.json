@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.world.level.border.WorldBorder$Settings",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.border.WorldBorder$Settings",
+			"fabric": "net.minecraft.world.border.WorldBorder$Properties"
+		},
+		{
+			"forge": "centerX",
+			"fabric": "centerX"
+		},
+		{
+			"forge": "centerX",
+			"fabric": "centerX"
+		},
+		{
+			"forge": "centerZ",
+			"fabric": "centerZ"
+		},
+		{
+			"forge": "damagePerBlock",
+			"fabric": "damagePerBlock"
+		},
+		{
+			"forge": "safeZone",
+			"fabric": "safeZone"
+		},
+		{
+			"forge": "warningBlocks",
+			"fabric": "warningBlocks"
+		},
+		{
+			"forge": "warningTime",
+			"fabric": "warningTime"
+		},
+		{
+			"forge": "size",
+			"fabric": "size"
+		},
+		{
+			"forge": "sizeLerpTime",
+			"fabric": "sizeLerpTime"
+		},
+		{
+			"forge": "sizeLerpTarget",
+			"fabric": "sizeLerpTarget"
+		},
+		{
+			"forge": "getCenterX()",
+			"fabric": "getCenterX()"
+		},
+		{
+			"forge": "getCenterX()",
+			"fabric": "getCenterX()"
+		},
+		{
+			"forge": "getCenterZ()",
+			"fabric": "getCenterZ()"
+		},
+		{
+			"forge": "getDamagePerBlock()",
+			"fabric": "getDamagePerBlock()"
+		},
+		{
+			"forge": "getSafeZone()",
+			"fabric": "getSafeZone()"
+		},
+		{
+			"forge": "getWarningBlocks()",
+			"fabric": "getWarningBlocks()"
+		},
+		{
+			"forge": "getWarningTime()",
+			"fabric": "getWarningTime()"
+		},
+		{
+			"forge": "getSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getSizeLerpTime()",
+			"fabric": "getSizeLerpTime()"
+		},
+		{
+			"forge": "getSizeLerpTarget()",
+			"fabric": "getSizeLerpTarget()"
+		},
+		{
+			"forge": "read(com.mojang.serialization.DynamicLike<?> arg0, WorldBorder$Settings arg1)",
+			"fabric": "fromDynamic(com.mojang.serialization.DynamicLike<?> dynamic, WorldBorder$Properties properties)"
+		},
+		{
+			"forge": "write(CompoundTag arg0)",
+			"fabric": "writeNbt(NbtCompound nbt)"
+		}
+	]
+}

@@ -1,0 +1,133 @@
+{
+	"title": "com.mojang.blaze3d.audio.Channel",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.audio.Channel",
+			"fabric": "net.minecraft.client.sound.Source"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "QUEUED_BUFFER_COUNT",
+			"fabric": "field_31895"
+		},
+		{
+			"forge": "BUFFER_DURATION_SECONDS",
+			"fabric": "field_31894"
+		},
+		{
+			"forge": "source",
+			"fabric": "pointer"
+		},
+		{
+			"forge": "initialized",
+			"fabric": "playing"
+		},
+		{
+			"forge": "streamingBufferSize",
+			"fabric": "bufferSize"
+		},
+		{
+			"forge": "stream",
+			"fabric": "stream"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "destroy()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "play()",
+			"fabric": "play()"
+		},
+		{
+			"forge": "getState()",
+			"fabric": "getSourceState()"
+		},
+		{
+			"forge": "pause()",
+			"fabric": "pause()"
+		},
+		{
+			"forge": "unpause()",
+			"fabric": "resume()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		},
+		{
+			"forge": "playing()",
+			"fabric": "isPlaying()"
+		},
+		{
+			"forge": "stopped()",
+			"fabric": "isStopped()"
+		},
+		{
+			"forge": "setSelfPosition(Vec3 arg0)",
+			"fabric": "setPosition(Vec3d pos)"
+		},
+		{
+			"forge": "setPitch(float arg0)",
+			"fabric": "setPitch(float pitch)"
+		},
+		{
+			"forge": "setLooping(boolean arg0)",
+			"fabric": "setLooping(boolean looping)"
+		},
+		{
+			"forge": "setVolume(float arg0)",
+			"fabric": "setVolume(float volume)"
+		},
+		{
+			"forge": "disableAttenuation()",
+			"fabric": "disableAttenuation()"
+		},
+		{
+			"forge": "linearAttenuation(float arg0)",
+			"fabric": "setAttenuation(float attenuation)"
+		},
+		{
+			"forge": "setRelative(boolean arg0)",
+			"fabric": "setRelative(boolean relative)"
+		},
+		{
+			"forge": "attachStaticBuffer(SoundBuffer arg0)",
+			"fabric": "setBuffer(StaticSound sound)"
+		},
+		{
+			"forge": "attachBufferStream(AudioStream arg0)",
+			"fabric": "setStream(AudioStream stream)"
+		},
+		{
+			"forge": "calculateBufferSize(AudioFormat arg0, int arg1)",
+			"fabric": "getBufferSize(AudioFormat format, int time)"
+		},
+		{
+			"forge": "pumpBuffers(int arg0)",
+			"fabric": "read(int count)"
+		},
+		{
+			"forge": "updateStream()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "removeProcessedBuffers()",
+			"fabric": "removeProcessedBuffers()"
+		}
+	]
+}

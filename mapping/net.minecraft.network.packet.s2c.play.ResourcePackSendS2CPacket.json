@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundResourcePackPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundResourcePackPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.ResourcePackSendS2CPacket"
+		},
+		{
+			"forge": "MAX_HASH_LENGTH",
+			"fabric": "MAX_HASH_LENGTH"
+		},
+		{
+			"forge": "MAX_HASH_LENGTH",
+			"fabric": "MAX_HASH_LENGTH"
+		},
+		{
+			"forge": "url",
+			"fabric": "url"
+		},
+		{
+			"forge": "hash",
+			"fabric": "hash"
+		},
+		{
+			"forge": "required",
+			"fabric": "required"
+		},
+		{
+			"forge": "prompt",
+			"fabric": "prompt"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getUrl()",
+			"fabric": "getURL()"
+		},
+		{
+			"forge": "getHash()",
+			"fabric": "getSHA1()"
+		},
+		{
+			"forge": "isRequired()",
+			"fabric": "isRequired()"
+		},
+		{
+			"forge": "getPrompt()",
+			"fabric": "getPrompt()"
+		}
+	]
+}

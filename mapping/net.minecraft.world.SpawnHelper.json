@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.world.level.NaturalSpawner",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.NaturalSpawner",
+			"fabric": "net.minecraft.world.SpawnHelper"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "MIN_SPAWN_DISTANCE",
+			"fabric": "MIN_SPAWN_DISTANCE"
+		},
+		{
+			"forge": "SPAWN_DISTANCE_CHUNK",
+			"fabric": "field_30972"
+		},
+		{
+			"forge": "SPAWN_DISTANCE_BLOCK",
+			"fabric": "field_30973"
+		},
+		{
+			"forge": "MAGIC_NUMBER",
+			"fabric": "CHUNK_AREA"
+		},
+		{
+			"forge": "SPAWNING_CATEGORIES",
+			"fabric": "SPAWNABLE_GROUPS"
+		},
+		{
+			"forge": "createState(int arg0, Iterable<Entity> arg1, NaturalSpawner$ChunkGetter arg2, LocalMobCapCalculator arg3)",
+			"fabric": "setupSpawn(int spawningChunkCount, Iterable<Entity> entities, SpawnHelper$ChunkSource chunkSource, SpawnDensityCapper densityCapper)"
+		},
+		{
+			"forge": "createState(int arg0, Iterable<Entity> arg1, NaturalSpawner$ChunkGetter arg2, LocalMobCapCalculator arg3)",
+			"fabric": "setupSpawn(int spawningChunkCount, Iterable<Entity> entities, SpawnHelper$ChunkSource chunkSource, SpawnDensityCapper densityCapper)"
+		},
+		{
+			"forge": "getRoughBiome(BlockPos arg0, ChunkAccess arg1)",
+			"fabric": "getBiomeDirectly(BlockPos pos, Chunk chunk)"
+		},
+		{
+			"forge": "spawnForChunk(ServerLevel arg0, LevelChunk arg1, NaturalSpawner$SpawnState arg2, boolean arg3, boolean arg4, boolean arg5)",
+			"fabric": "spawn(ServerWorld world, WorldChunk chunk, SpawnHelper$Info info, boolean spawnAnimals, boolean spawnMonsters, boolean rareSpawn)"
+		},
+		{
+			"forge": "spawnCategoryForChunk(MobCategory arg0, ServerLevel arg1, LevelChunk arg2, NaturalSpawner$SpawnPredicate arg3, NaturalSpawner$AfterSpawnCallback arg4)",
+			"fabric": "spawnEntitiesInChunk(SpawnGroup group, ServerWorld world, WorldChunk chunk, SpawnHelper$Checker checker, SpawnHelper$Runner runner)"
+		},
+		{
+			"forge": "spawnCategoryForPosition(MobCategory arg0, ServerLevel arg1, BlockPos arg2)",
+			"fabric": "spawnEntitiesInChunk(SpawnGroup group, ServerWorld world, BlockPos pos)"
+		},
+		{
+			"forge": "spawnCategoryForPosition(MobCategory arg0, ServerLevel arg1, ChunkAccess arg2, BlockPos arg3, NaturalSpawner$SpawnPredicate arg4, NaturalSpawner$AfterSpawnCallback arg5)",
+			"fabric": "spawnEntitiesInChunk(SpawnGroup group, ServerWorld world, Chunk chunk, BlockPos pos, SpawnHelper$Checker checker, SpawnHelper$Runner runner)"
+		},
+		{
+			"forge": "isRightDistanceToPlayerAndSpawnPoint(ServerLevel arg0, ChunkAccess arg1, BlockPos$MutableBlockPos arg2, double arg3)",
+			"fabric": "isAcceptableSpawnPosition(ServerWorld world, Chunk chunk, BlockPos$Mutable pos, double squaredDistance)"
+		},
+		{
+			"forge": "isValidSpawnPostitionForType(ServerLevel arg0, MobCategory arg1, StructureManager arg2, ChunkGenerator arg3, MobSpawnSettings$SpawnerData arg4, BlockPos$MutableBlockPos arg5, double arg6)",
+			"fabric": "canSpawn(ServerWorld world, SpawnGroup group, StructureAccessor structureAccessor, ChunkGenerator chunkGenerator, SpawnSettings$SpawnEntry spawnEntry, BlockPos$Mutable pos, double squaredDistance)"
+		},
+		{
+			"forge": "getMobForSpawn(ServerLevel arg0, EntityType<?> arg1)",
+			"fabric": "createMob(ServerWorld world, EntityType<?> type)"
+		},
+		{
+			"forge": "isValidPositionForMob(ServerLevel arg0, Mob arg1, double arg2)",
+			"fabric": "isValidSpawn(ServerWorld world, MobEntity entity, double squaredDistance)"
+		},
+		{
+			"forge": "getRandomSpawnMobAt(ServerLevel arg0, StructureManager arg1, ChunkGenerator arg2, MobCategory arg3, RandomSource arg4, BlockPos arg5)",
+			"fabric": "pickRandomSpawnEntry(ServerWorld world, StructureAccessor structureAccessor, ChunkGenerator chunkGenerator, SpawnGroup spawnGroup, Random random, BlockPos pos)"
+		},
+		{
+			"forge": "canSpawnMobAt(ServerLevel arg0, StructureManager arg1, ChunkGenerator arg2, MobCategory arg3, MobSpawnSettings$SpawnerData arg4, BlockPos arg5)",
+			"fabric": "containsSpawnEntry(ServerWorld world, StructureAccessor structureAccessor, ChunkGenerator chunkGenerator, SpawnGroup spawnGroup, SpawnSettings$SpawnEntry spawnEntry, BlockPos pos)"
+		},
+		{
+			"forge": "mobsAt(ServerLevel arg0, StructureManager arg1, ChunkGenerator arg2, MobCategory arg3, BlockPos arg4, Holder<Biome> arg5)",
+			"fabric": "getSpawnEntries(ServerWorld world, StructureAccessor structureAccessor, ChunkGenerator chunkGenerator, SpawnGroup spawnGroup, BlockPos pos, RegistryEntry<Biome> biomeEntry)"
+		},
+		{
+			"forge": "isInNetherFortressBounds(BlockPos arg0, ServerLevel arg1, MobCategory arg2, StructureManager arg3)",
+			"fabric": "shouldUseNetherFortressSpawns(BlockPos pos, ServerWorld world, SpawnGroup spawnGroup, StructureAccessor structureAccessor)"
+		},
+		{
+			"forge": "getRandomPosWithin(Level arg0, LevelChunk arg1)",
+			"fabric": "getRandomPosInChunkSection(World world, WorldChunk chunk)"
+		},
+		{
+			"forge": "isValidEmptySpawnBlock(BlockGetter arg0, BlockPos arg1, BlockState arg2, FluidState arg3, EntityType<?> arg4)",
+			"fabric": "isClearForSpawn(BlockView blockView, BlockPos pos, BlockState state, FluidState fluidState, EntityType<?> entityType)"
+		},
+		{
+			"forge": "isSpawnPositionOk(SpawnPlacements$Type arg0, LevelReader arg1, BlockPos arg2, EntityType<?> arg3)",
+			"fabric": "canSpawn(SpawnRestriction$Location location, WorldView world, BlockPos pos, EntityType<?> entityType)"
+		},
+		{
+			"forge": "spawnMobsForChunkGeneration(ServerLevelAccessor arg0, Holder<Biome> arg1, ChunkPos arg2, RandomSource arg3)",
+			"fabric": "populateEntities(ServerWorldAccess world, RegistryEntry<Biome> biomeEntry, ChunkPos chunkPos, Random random)"
+		},
+		{
+			"forge": "getTopNonCollidingPos(LevelReader arg0, EntityType<?> arg1, int arg2, int arg3)",
+			"fabric": "getEntitySpawnPos(WorldView world, EntityType<?> entityType, int x, int z)"
+		}
+	]
+}

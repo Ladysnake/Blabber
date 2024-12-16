@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.world.level.levelgen.OreVeinifier$VeinType",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.OreVeinifier$VeinType",
+			"fabric": "net.minecraft.world.gen.OreVeinSampler$VeinType"
+		},
+		{
+			"forge": "COPPER",
+			"fabric": "COPPER"
+		},
+		{
+			"forge": "COPPER",
+			"fabric": "COPPER"
+		},
+		{
+			"forge": "IRON",
+			"fabric": "IRON"
+		},
+		{
+			"forge": "ore",
+			"fabric": "ore"
+		},
+		{
+			"forge": "ore",
+			"fabric": "ore"
+		},
+		{
+			"forge": "rawOreBlock",
+			"fabric": "rawOreBlock"
+		},
+		{
+			"forge": "filler",
+			"fabric": "stone"
+		},
+		{
+			"forge": "minY",
+			"fabric": "minY"
+		},
+		{
+			"forge": "maxY",
+			"fabric": "maxY"
+		}
+	]
+}

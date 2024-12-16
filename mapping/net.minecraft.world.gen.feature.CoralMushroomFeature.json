@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.CoralMushroomFeature",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.CoralMushroomFeature",
+			"fabric": "net.minecraft.world.gen.feature.CoralMushroomFeature"
+		},
+		{
+			"forge": "placeFeature(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "generateCoral(WorldAccess arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		},
+		{
+			"forge": "placeFeature(LevelAccessor arg0, RandomSource arg1, BlockPos arg2, BlockState arg3)",
+			"fabric": "generateCoral(WorldAccess arg0, Random arg1, BlockPos arg2, BlockState arg3)"
+		}
+	]
+}

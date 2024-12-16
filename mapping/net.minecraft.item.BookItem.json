@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.item.BookItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.BookItem",
+			"fabric": "net.minecraft.item.BookItem"
+		},
+		{
+			"forge": "isEnchantable(ItemStack arg0)",
+			"fabric": "isEnchantable(ItemStack arg0)"
+		},
+		{
+			"forge": "isEnchantable(ItemStack arg0)",
+			"fabric": "isEnchantable(ItemStack arg0)"
+		},
+		{
+			"forge": "getEnchantmentValue()",
+			"fabric": "getEnchantability()"
+		}
+	]
+}

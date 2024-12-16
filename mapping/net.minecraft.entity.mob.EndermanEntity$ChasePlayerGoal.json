@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.monster.EnderMan$EndermanFreezeWhenLookedAt",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.EnderMan$EndermanFreezeWhenLookedAt",
+			"fabric": "net.minecraft.entity.mob.EndermanEntity$ChasePlayerGoal"
+		},
+		{
+			"forge": "enderman",
+			"fabric": "enderman"
+		},
+		{
+			"forge": "enderman",
+			"fabric": "enderman"
+		},
+		{
+			"forge": "target",
+			"fabric": "target"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.resources.SkinManager$SkinTextureCallback",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.SkinManager$SkinTextureCallback",
+			"fabric": "net.minecraft.client.texture.PlayerSkinProvider$SkinTextureAvailableCallback"
+		},
+		{
+			"forge": "onSkinTextureAvailable(com.mojang.authlib.minecraft.MinecraftProfileTexture$Type arg0, ResourceLocation arg1, com.mojang.authlib.minecraft.MinecraftProfileTexture arg2)",
+			"fabric": "onSkinTextureAvailable(com.mojang.authlib.minecraft.MinecraftProfileTexture$Type type, Identifier id, com.mojang.authlib.minecraft.MinecraftProfileTexture texture)"
+		},
+		{
+			"forge": "onSkinTextureAvailable(com.mojang.authlib.minecraft.MinecraftProfileTexture$Type arg0, ResourceLocation arg1, com.mojang.authlib.minecraft.MinecraftProfileTexture arg2)",
+			"fabric": "onSkinTextureAvailable(com.mojang.authlib.minecraft.MinecraftProfileTexture$Type type, Identifier id, com.mojang.authlib.minecraft.MinecraftProfileTexture texture)"
+		}
+	]
+}

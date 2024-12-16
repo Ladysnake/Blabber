@@ -1,0 +1,329 @@
+{
+	"title": "net.minecraft.util.GsonHelper",
+	"items": [
+		{
+			"forge": "net.minecraft.util.GsonHelper",
+			"fabric": "net.minecraft.util.JsonHelper"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "GSON",
+			"fabric": "GSON"
+		},
+		{
+			"forge": "isStringValue(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "hasString(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "isStringValue(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "hasString(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "isStringValue(com.google.gson.JsonElement arg0)",
+			"fabric": "isString(com.google.gson.JsonElement element)"
+		},
+		{
+			"forge": "isNumberValue(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "hasNumber(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "isNumberValue(com.google.gson.JsonElement arg0)",
+			"fabric": "isNumber(com.google.gson.JsonElement element)"
+		},
+		{
+			"forge": "isBooleanValue(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "hasBoolean(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "isBooleanValue(com.google.gson.JsonElement arg0)",
+			"fabric": "isBoolean(com.google.gson.JsonElement object)"
+		},
+		{
+			"forge": "isArrayNode(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "hasArray(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "isObjectNode(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "hasJsonObject(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "isValidPrimitive(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "hasPrimitive(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "isValidNode(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "hasElement(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getNonNull(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getElement(com.google.gson.JsonObject object, String name)"
+		},
+		{
+			"forge": "convertToString(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asString(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsString(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getString(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsString(com.google.gson.JsonObject arg0, String arg1, String arg2)",
+			"fabric": "getString(com.google.gson.JsonObject object, String element, String defaultStr)"
+		},
+		{
+			"forge": "convertToItem(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asItem(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsItem(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getItem(com.google.gson.JsonObject object, String key)"
+		},
+		{
+			"forge": "getAsItem(com.google.gson.JsonObject arg0, String arg1, Item arg2)",
+			"fabric": "getItem(com.google.gson.JsonObject object, String key, Item defaultItem)"
+		},
+		{
+			"forge": "convertToBoolean(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asBoolean(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsBoolean(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getBoolean(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsBoolean(com.google.gson.JsonObject arg0, String arg1, boolean arg2)",
+			"fabric": "getBoolean(com.google.gson.JsonObject object, String element, boolean defaultBoolean)"
+		},
+		{
+			"forge": "convertToDouble(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asDouble(com.google.gson.JsonElement object, String name)"
+		},
+		{
+			"forge": "getAsDouble(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getDouble(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsDouble(com.google.gson.JsonObject arg0, String arg1, double arg2)",
+			"fabric": "getDouble(com.google.gson.JsonObject object, String element, double defaultDouble)"
+		},
+		{
+			"forge": "convertToFloat(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asFloat(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsFloat(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getFloat(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsFloat(com.google.gson.JsonObject arg0, String arg1, float arg2)",
+			"fabric": "getFloat(com.google.gson.JsonObject object, String element, float defaultFloat)"
+		},
+		{
+			"forge": "convertToLong(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asLong(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsLong(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getLong(com.google.gson.JsonObject object, String name)"
+		},
+		{
+			"forge": "getAsLong(com.google.gson.JsonObject arg0, String arg1, long arg2)",
+			"fabric": "getLong(com.google.gson.JsonObject object, String element, long defaultLong)"
+		},
+		{
+			"forge": "convertToInt(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asInt(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsInt(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getInt(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsInt(com.google.gson.JsonObject arg0, String arg1, int arg2)",
+			"fabric": "getInt(com.google.gson.JsonObject object, String element, int defaultInt)"
+		},
+		{
+			"forge": "convertToByte(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asByte(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsByte(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getByte(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsByte(com.google.gson.JsonObject arg0, String arg1, byte arg2)",
+			"fabric": "getByte(com.google.gson.JsonObject object, String element, byte defaultByte)"
+		},
+		{
+			"forge": "convertToCharacter(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asChar(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsCharacter(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getChar(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsCharacter(com.google.gson.JsonObject arg0, String arg1, char arg2)",
+			"fabric": "getChar(com.google.gson.JsonObject object, String element, char defaultChar)"
+		},
+		{
+			"forge": "convertToBigDecimal(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asBigDecimal(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsBigDecimal(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getBigDecimal(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsBigDecimal(com.google.gson.JsonObject arg0, String arg1, BigDecimal arg2)",
+			"fabric": "getBigDecimal(com.google.gson.JsonObject object, String element, BigDecimal defaultBigDecimal)"
+		},
+		{
+			"forge": "convertToBigInteger(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asBigInteger(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsBigInteger(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getBigInteger(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsBigInteger(com.google.gson.JsonObject arg0, String arg1, BigInteger arg2)",
+			"fabric": "getBigInteger(com.google.gson.JsonObject object, String element, BigInteger defaultBigInteger)"
+		},
+		{
+			"forge": "convertToShort(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asShort(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsShort(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getShort(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsShort(com.google.gson.JsonObject arg0, String arg1, short arg2)",
+			"fabric": "getShort(com.google.gson.JsonObject object, String element, short defaultShort)"
+		},
+		{
+			"forge": "convertToJsonObject(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asObject(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsJsonObject(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getObject(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsJsonObject(com.google.gson.JsonObject arg0, String arg1, com.google.gson.JsonObject arg2)",
+			"fabric": "getObject(com.google.gson.JsonObject object, String element, com.google.gson.JsonObject defaultObject)"
+		},
+		{
+			"forge": "convertToJsonArray(com.google.gson.JsonElement arg0, String arg1)",
+			"fabric": "asArray(com.google.gson.JsonElement element, String name)"
+		},
+		{
+			"forge": "getAsJsonArray(com.google.gson.JsonObject arg0, String arg1)",
+			"fabric": "getArray(com.google.gson.JsonObject object, String element)"
+		},
+		{
+			"forge": "getAsJsonArray(com.google.gson.JsonObject arg0, String arg1, com.google.gson.JsonArray arg2)",
+			"fabric": "getArray(com.google.gson.JsonObject object, String name, com.google.gson.JsonArray defaultArray)"
+		},
+		{
+			"forge": "convertToObject(com.google.gson.JsonElement arg0, String arg1, com.google.gson.JsonDeserializationContext arg2, Class<? extends T> arg3)",
+			"fabric": "deserialize(com.google.gson.JsonElement element, String name, com.google.gson.JsonDeserializationContext context, Class<? extends T> type)"
+		},
+		{
+			"forge": "getAsObject(com.google.gson.JsonObject arg0, String arg1, com.google.gson.JsonDeserializationContext arg2, Class<? extends T> arg3)",
+			"fabric": "deserialize(com.google.gson.JsonObject object, String element, com.google.gson.JsonDeserializationContext context, Class<? extends T> type)"
+		},
+		{
+			"forge": "getAsObject(com.google.gson.JsonObject arg0, String arg1, T arg2, com.google.gson.JsonDeserializationContext arg3, Class<? extends T> arg4)",
+			"fabric": "deserialize(com.google.gson.JsonObject object, String element, T defaultValue, com.google.gson.JsonDeserializationContext context, Class<? extends T> type)"
+		},
+		{
+			"forge": "getType(com.google.gson.JsonElement arg0)",
+			"fabric": "getType(com.google.gson.JsonElement element)"
+		},
+		{
+			"forge": "fromNullableJson(com.google.gson.Gson arg0, Reader arg1, Class<T> arg2, boolean arg3)",
+			"fabric": "deserializeNullable(com.google.gson.Gson gson, Reader reader, Class<T> type, boolean lenient)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.Gson arg0, Reader arg1, Class<T> arg2, boolean arg3)",
+			"fabric": "deserialize(com.google.gson.Gson gson, Reader reader, Class<T> type, boolean lenient)"
+		},
+		{
+			"forge": "fromNullableJson(com.google.gson.Gson arg0, Reader arg1, com.google.gson.reflect.TypeToken<T> arg2, boolean arg3)",
+			"fabric": "deserializeNullable(com.google.gson.Gson gson, Reader reader, com.google.gson.reflect.TypeToken<T> typeToken, boolean lenient)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.Gson arg0, Reader arg1, com.google.gson.reflect.TypeToken<T> arg2, boolean arg3)",
+			"fabric": "deserialize(com.google.gson.Gson gson, Reader reader, com.google.gson.reflect.TypeToken<T> typeToken, boolean lenient)"
+		},
+		{
+			"forge": "fromNullableJson(com.google.gson.Gson arg0, String arg1, com.google.gson.reflect.TypeToken<T> arg2, boolean arg3)",
+			"fabric": "deserialize(com.google.gson.Gson gson, String content, com.google.gson.reflect.TypeToken<T> typeToken, boolean lenient)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.Gson arg0, String arg1, Class<T> arg2, boolean arg3)",
+			"fabric": "deserialize(com.google.gson.Gson gson, String content, Class<T> type, boolean lenient)"
+		},
+		{
+			"forge": "fromNullableJson(com.google.gson.Gson arg0, String arg1, Class<T> arg2, boolean arg3)",
+			"fabric": "deserializeNullable(com.google.gson.Gson gson, String content, Class<T> type, boolean lenient)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.Gson arg0, Reader arg1, com.google.gson.reflect.TypeToken<T> arg2)",
+			"fabric": "deserialize(com.google.gson.Gson gson, Reader reader, com.google.gson.reflect.TypeToken<T> typeToken)"
+		},
+		{
+			"forge": "fromNullableJson(com.google.gson.Gson arg0, String arg1, com.google.gson.reflect.TypeToken<T> arg2)",
+			"fabric": "deserialize(com.google.gson.Gson gson, String content, com.google.gson.reflect.TypeToken<T> typeToken)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.Gson arg0, Reader arg1, Class<T> arg2)",
+			"fabric": "deserialize(com.google.gson.Gson gson, Reader reader, Class<T> type)"
+		},
+		{
+			"forge": "fromJson(com.google.gson.Gson arg0, String arg1, Class<T> arg2)",
+			"fabric": "deserialize(com.google.gson.Gson gson, String content, Class<T> type)"
+		},
+		{
+			"forge": "parse(String arg0, boolean arg1)",
+			"fabric": "deserialize(String content, boolean lenient)"
+		},
+		{
+			"forge": "parse(Reader arg0, boolean arg1)",
+			"fabric": "deserialize(Reader reader, boolean lenient)"
+		},
+		{
+			"forge": "parse(String arg0)",
+			"fabric": "deserialize(String content)"
+		},
+		{
+			"forge": "parse(Reader arg0)",
+			"fabric": "deserialize(Reader reader)"
+		},
+		{
+			"forge": "parseArray(String arg0)",
+			"fabric": "deserializeArray(String content)"
+		},
+		{
+			"forge": "parseArray(Reader arg0)",
+			"fabric": "deserializeArray(Reader reader)"
+		},
+		{
+			"forge": "toStableString(com.google.gson.JsonElement arg0)",
+			"fabric": "toSortedString(com.google.gson.JsonElement json)"
+		},
+		{
+			"forge": "writeValue(com.google.gson.stream.JsonWriter arg0, com.google.gson.JsonElement arg1, Comparator<String> arg2)",
+			"fabric": "writeSorted(com.google.gson.stream.JsonWriter writer, com.google.gson.JsonElement json, Comparator<String> comparator)"
+		},
+		{
+			"forge": "sortByKeyIfNeeded(Collection<Map$Entry<String, com.google.gson.JsonElement>> arg0, Comparator<String> arg1)",
+			"fabric": "sort(Collection<Map$Entry<String, com.google.gson.JsonElement>> entries, Comparator<String> comparator)"
+		}
+	]
+}

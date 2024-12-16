@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.narration.ScreenNarrationCollector$Output",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.narration.ScreenNarrationCollector$Output",
+			"fabric": "net.minecraft.client.gui.screen.narration.ScreenNarrator$MessageBuilder"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "add(NarratedElementType arg0, NarrationThunk<?> arg1)",
+			"fabric": "put(NarrationPart arg0, Narration<?> arg1)"
+		},
+		{
+			"forge": "add(NarratedElementType arg0, NarrationThunk<?> arg1)",
+			"fabric": "put(NarrationPart arg0, Narration<?> arg1)"
+		},
+		{
+			"forge": "nest()",
+			"fabric": "nextMessage()"
+		}
+	]
+}

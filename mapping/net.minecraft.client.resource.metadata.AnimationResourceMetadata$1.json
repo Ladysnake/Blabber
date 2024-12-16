@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.resources.metadata.animation.AnimationMetadataSection$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.metadata.animation.AnimationMetadataSection$1",
+			"fabric": "net.minecraft.client.resource.metadata.AnimationResourceMetadata$1"
+		},
+		{
+			"forge": "calculateFrameSize(int arg0, int arg1)",
+			"fabric": "getSize(int arg0, int arg1)"
+		},
+		{
+			"forge": "calculateFrameSize(int arg0, int arg1)",
+			"fabric": "getSize(int arg0, int arg1)"
+		}
+	]
+}

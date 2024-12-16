@@ -1,0 +1,601 @@
+{
+	"title": "com.mojang.realmsclient.RealmsMainScreen",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.RealmsMainScreen",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsMainScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "ON_ICON_LOCATION",
+			"fabric": "ON_ICON"
+		},
+		{
+			"forge": "OFF_ICON_LOCATION",
+			"fabric": "OFF_ICON"
+		},
+		{
+			"forge": "EXPIRED_ICON_LOCATION",
+			"fabric": "EXPIRED_ICON"
+		},
+		{
+			"forge": "EXPIRES_SOON_ICON_LOCATION",
+			"fabric": "EXPIRES_SOON_ICON"
+		},
+		{
+			"forge": "INVITATION_ICONS_LOCATION",
+			"fabric": "INVITATION_ICON"
+		},
+		{
+			"forge": "INVITE_ICON_LOCATION",
+			"fabric": "INVITE_ICON"
+		},
+		{
+			"forge": "WORLDICON_LOCATION",
+			"fabric": "WORLD_ICON"
+		},
+		{
+			"forge": "LOGO_LOCATION",
+			"fabric": "REALMS"
+		},
+		{
+			"forge": "NEWS_LOCATION",
+			"fabric": "NEWS_ICON"
+		},
+		{
+			"forge": "POPUP_LOCATION",
+			"fabric": "POPUP"
+		},
+		{
+			"forge": "DARKEN_LOCATION",
+			"fabric": "DARKEN"
+		},
+		{
+			"forge": "CROSS_ICON_LOCATION",
+			"fabric": "CROSS_ICON"
+		},
+		{
+			"forge": "TRIAL_ICON_LOCATION",
+			"fabric": "TRIAL_ICON"
+		},
+		{
+			"forge": "INFO_ICON_LOCATION",
+			"fabric": "INFO_ICON"
+		},
+		{
+			"forge": "TRIAL_MESSAGE_LINES",
+			"fabric": "TRIAL_MESSAGE_LINES"
+		},
+		{
+			"forge": "SERVER_UNITIALIZED_TEXT",
+			"fabric": "UNINITIALIZED_TEXT"
+		},
+		{
+			"forge": "SUBSCRIPTION_EXPIRED_TEXT",
+			"fabric": "EXPIRED_LIST_TEXT"
+		},
+		{
+			"forge": "SUBSCRIPTION_RENEW_TEXT",
+			"fabric": "EXPIRED_RENEW_TEXT"
+		},
+		{
+			"forge": "TRIAL_EXPIRED_TEXT",
+			"fabric": "EXPIRED_TRIAL_TEXT"
+		},
+		{
+			"forge": "SELECT_MINIGAME_PREFIX",
+			"fabric": "MINIGAME_TEXT"
+		},
+		{
+			"forge": "POPUP_TEXT",
+			"fabric": "POPUP_TEXT"
+		},
+		{
+			"forge": "PLAY_TEXT",
+			"fabric": "PLAY_TEXT"
+		},
+		{
+			"forge": "LEAVE_SERVER_TEXT",
+			"fabric": "LEAVE_TEXT"
+		},
+		{
+			"forge": "CONFIGURE_SERVER_TEXT",
+			"fabric": "CONFIGURE_TEXT"
+		},
+		{
+			"forge": "SERVER_EXPIRED_TOOLTIP",
+			"fabric": "EXPIRED_TEXT"
+		},
+		{
+			"forge": "SERVER_EXPIRES_SOON_TOOLTIP",
+			"fabric": "EXPIRES_SOON_TEXT"
+		},
+		{
+			"forge": "SERVER_EXPIRES_IN_DAY_TOOLTIP",
+			"fabric": "EXPIRES_IN_A_DAY_TEXT"
+		},
+		{
+			"forge": "SERVER_OPEN_TOOLTIP",
+			"fabric": "OPEN_TEXT"
+		},
+		{
+			"forge": "SERVER_CLOSED_TOOLTIP",
+			"fabric": "CLOSED_TEXT"
+		},
+		{
+			"forge": "NEWS_TOOLTIP",
+			"fabric": "NEWS_TEXT"
+		},
+		{
+			"forge": "UNITIALIZED_WORLD_NARRATION",
+			"fabric": "UNINITIALIZED_BUTTON_NARRATION"
+		},
+		{
+			"forge": "TRIAL_TEXT",
+			"fabric": "TRIAL_NARRATION"
+		},
+		{
+			"forge": "BUTTON_WIDTH",
+			"fabric": "field_42862"
+		},
+		{
+			"forge": "BUTTON_TOP_ROW_WIDTH",
+			"fabric": "field_42863"
+		},
+		{
+			"forge": "BUTTON_BOTTOM_ROW_WIDTH",
+			"fabric": "field_42864"
+		},
+		{
+			"forge": "FOOTER_HEIGHT",
+			"fabric": "field_42865"
+		},
+		{
+			"forge": "LOGO_WIDTH",
+			"fabric": "field_44509"
+		},
+		{
+			"forge": "LOGO_HEIGHT",
+			"fabric": "field_44510"
+		},
+		{
+			"forge": "LOGO_TEXTURE_WIDTH",
+			"fabric": "field_44511"
+		},
+		{
+			"forge": "LOGO_TEXTURE_HEIGHT",
+			"fabric": "field_44512"
+		},
+		{
+			"forge": "LOGO_PADDING",
+			"fabric": "field_44513"
+		},
+		{
+			"forge": "HEADER_HEIGHT",
+			"fabric": "field_44514"
+		},
+		{
+			"forge": "teaserImages",
+			"fabric": "IMAGES"
+		},
+		{
+			"forge": "dataSubscription",
+			"fabric": "periodicRunnersManager"
+		},
+		{
+			"forge": "serverList",
+			"fabric": "serverFilterer"
+		},
+		{
+			"forge": "handledSeenNotifications",
+			"fabric": "seenNotifications"
+		},
+		{
+			"forge": "overrideConfigure",
+			"fabric": "overrideConfigure"
+		},
+		{
+			"forge": "lastScrollYPosition",
+			"fabric": "lastScrollYPosition"
+		},
+		{
+			"forge": "hasParentalConsent",
+			"fabric": "hasParentalConsent"
+		},
+		{
+			"forge": "checkedParentalConsent",
+			"fabric": "checkedParentalConsent"
+		},
+		{
+			"forge": "checkedClientCompatability",
+			"fabric": "checkedClientCompatibility"
+		},
+		{
+			"forge": "realmsGenericErrorScreen",
+			"fabric": "realmsGenericErrorScreen"
+		},
+		{
+			"forge": "regionsPinged",
+			"fabric": "regionsPinged"
+		},
+		{
+			"forge": "inviteNarrationLimiter",
+			"fabric": "rateLimiter"
+		},
+		{
+			"forge": "dontSetConnectedToRealms",
+			"fabric": "dontSetConnectedToRealms"
+		},
+		{
+			"forge": "lastScreen",
+			"fabric": "parent"
+		},
+		{
+			"forge": "realmSelectionList",
+			"fabric": "realmSelectionList"
+		},
+		{
+			"forge": "realmsSelectionListAdded",
+			"fabric": "hasSelectionList"
+		},
+		{
+			"forge": "playButton",
+			"fabric": "playButton"
+		},
+		{
+			"forge": "backButton",
+			"fabric": "backButton"
+		},
+		{
+			"forge": "renewButton",
+			"fabric": "renewButton"
+		},
+		{
+			"forge": "configureButton",
+			"fabric": "configureButton"
+		},
+		{
+			"forge": "leaveButton",
+			"fabric": "leaveButton"
+		},
+		{
+			"forge": "realmsServers",
+			"fabric": "realmsServers"
+		},
+		{
+			"forge": "numberOfPendingInvites",
+			"fabric": "pendingInvitesCount"
+		},
+		{
+			"forge": "animTick",
+			"fabric": "animTick"
+		},
+		{
+			"forge": "hasFetchedServers",
+			"fabric": "hasFetchedServers"
+		},
+		{
+			"forge": "popupOpenedByUser",
+			"fabric": "popupOpenedByUser"
+		},
+		{
+			"forge": "justClosedPopup",
+			"fabric": "justClosedPopup"
+		},
+		{
+			"forge": "trialsAvailable",
+			"fabric": "trialAvailable"
+		},
+		{
+			"forge": "createdTrial",
+			"fabric": "createdTrial"
+		},
+		{
+			"forge": "showingPopup",
+			"fabric": "showingPopup"
+		},
+		{
+			"forge": "hasUnreadNews",
+			"fabric": "hasUnreadNews"
+		},
+		{
+			"forge": "newsLink",
+			"fabric": "newsLink"
+		},
+		{
+			"forge": "carouselIndex",
+			"fabric": "carouselIndex"
+		},
+		{
+			"forge": "carouselTick",
+			"fabric": "carouselTick"
+		},
+		{
+			"forge": "hasSwitchedCarouselImage",
+			"fabric": "hasSwitchedCarouselImage"
+		},
+		{
+			"forge": "keyCombos",
+			"fabric": "keyCombos"
+		},
+		{
+			"forge": "lastClickTime",
+			"fabric": "lastPlayButtonClickTime"
+		},
+		{
+			"forge": "connectLock",
+			"fabric": "connectLock"
+		},
+		{
+			"forge": "formattedPopup",
+			"fabric": "popupText"
+		},
+		{
+			"forge": "notifications",
+			"fabric": "notifications"
+		},
+		{
+			"forge": "showPopupButton",
+			"fabric": "showPopupButton"
+		},
+		{
+			"forge": "pendingInvitesButton",
+			"fabric": "pendingInvitesButton"
+		},
+		{
+			"forge": "newsButton",
+			"fabric": "newsButton"
+		},
+		{
+			"forge": "createTrialButton",
+			"fabric": "createTrialButton"
+		},
+		{
+			"forge": "buyARealmButton",
+			"fabric": "buyARealmButton"
+		},
+		{
+			"forge": "closeButton",
+			"fabric": "closeButton"
+		},
+		{
+			"forge": "shouldShowMessageInList()",
+			"fabric": "shouldShowMessageInList()"
+		},
+		{
+			"forge": "shouldShowMessageInList()",
+			"fabric": "shouldShowMessageInList()"
+		},
+		{
+			"forge": "shouldShowPopup()",
+			"fabric": "shouldShowPopup()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "hasParentalConsent()",
+			"fabric": "hasParentalConsent()"
+		},
+		{
+			"forge": "addTopButtons()",
+			"fabric": "addInvitesAndNewsButtons()"
+		},
+		{
+			"forge": "addMiddleButtons()",
+			"fabric": "addPurchaseButtons()"
+		},
+		{
+			"forge": "addFooterButtons()",
+			"fabric": "addLowerButtons()"
+		},
+		{
+			"forge": "updateButtonStates(RealmsServer arg0)",
+			"fabric": "updateButtonStates(RealmsServer server)"
+		},
+		{
+			"forge": "shouldShowPopupButton()",
+			"fabric": "shouldShowPopupButton()"
+		},
+		{
+			"forge": "shouldPlayButtonBeActive(RealmsServer arg0)",
+			"fabric": "shouldPlayButtonBeActive(RealmsServer server)"
+		},
+		{
+			"forge": "shouldRenewButtonBeActive(RealmsServer arg0)",
+			"fabric": "shouldRenewButtonBeActive(RealmsServer server)"
+		},
+		{
+			"forge": "shouldConfigureButtonBeActive(RealmsServer arg0)",
+			"fabric": "shouldConfigureButtonBeActive(RealmsServer server)"
+		},
+		{
+			"forge": "shouldLeaveButtonBeActive(RealmsServer arg0)",
+			"fabric": "shouldLeaveButtonBeActive(RealmsServer server)"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "initDataFetcher(RealmsDataFetcher arg0)",
+			"fabric": "createPeriodicRunnersManager(RealmsPeriodicCheckers periodicCheckers)"
+		},
+		{
+			"forge": "callRealmsClient(RealmsMainScreen$RealmsCall<T> arg0, Consumer<T> arg1)",
+			"fabric": "request(RealmsMainScreen$Request<T> request, Consumer<T> resultConsumer)"
+		},
+		{
+			"forge": "refreshRealmsSelectionList()",
+			"fabric": "refresh()"
+		},
+		{
+			"forge": "addEntriesForNotification(RealmsMainScreen$RealmSelectionList arg0, RealmsNotification arg1)",
+			"fabric": "addNotificationEntry(RealmsMainScreen$RealmSelectionList selectionList, RealmsNotification notification)"
+		},
+		{
+			"forge": "refreshFetcher()",
+			"fabric": "resetPeriodicRunnersManager()"
+		},
+		{
+			"forge": "pingRegions()",
+			"fabric": "pingRegions()"
+		},
+		{
+			"forge": "getOwnedNonExpiredWorldIds()",
+			"fabric": "getOwnedNonExpiredWorldIds()"
+		},
+		{
+			"forge": "setCreatedTrial(boolean arg0)",
+			"fabric": "setCreatedTrial(boolean createdTrial)"
+		},
+		{
+			"forge": "onRenew(RealmsServer arg0)",
+			"fabric": "onRenew(RealmsServer realmsServer)"
+		},
+		{
+			"forge": "checkClientCompatability()",
+			"fabric": "checkClientCompatibility()"
+		},
+		{
+			"forge": "checkParentalConsent()",
+			"fabric": "checkParentalConsent()"
+		},
+		{
+			"forge": "switchToStage()",
+			"fabric": "switchToStage()"
+		},
+		{
+			"forge": "switchToLocal()",
+			"fabric": "switchToLocal()"
+		},
+		{
+			"forge": "switchToProd()",
+			"fabric": "switchToProd()"
+		},
+		{
+			"forge": "configureClicked(RealmsServer arg0)",
+			"fabric": "configureClicked(RealmsServer serverData)"
+		},
+		{
+			"forge": "leaveClicked(RealmsServer arg0)",
+			"fabric": "leaveClicked(RealmsServer selectedServer)"
+		},
+		{
+			"forge": "saveListScrollPosition()",
+			"fabric": "saveListScrollPosition()"
+		},
+		{
+			"forge": "getSelectedServer()",
+			"fabric": "findServer()"
+		},
+		{
+			"forge": "leaveServer(boolean arg0, RealmsServer arg1)",
+			"fabric": "leaveServer(boolean confirmed, RealmsServer realmsServer)"
+		},
+		{
+			"forge": "removeServer(RealmsServer arg0)",
+			"fabric": "removeServer(RealmsServer serverData)"
+		},
+		{
+			"forge": "dismissNotification(UUID arg0)",
+			"fabric": "dismissNotification(UUID notification)"
+		},
+		{
+			"forge": "resetScreen()",
+			"fabric": "removeSelection()"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "onClosePopup()",
+			"fabric": "onClosePopup()"
+		},
+		{
+			"forge": "charTyped(char arg0, int arg1)",
+			"fabric": "charTyped(char arg0, int arg1)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "isOutsidePopup(double arg0, double arg1)",
+			"fabric": "isOutsidePopup(double xm, double ym)"
+		},
+		{
+			"forge": "drawPopup(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "drawPopup(DrawContext context, int mouseX, int mouseY, float delta)"
+		},
+		{
+			"forge": "popupX0()",
+			"fabric": "popupX0()"
+		},
+		{
+			"forge": "popupY0()",
+			"fabric": "popupY0()"
+		},
+		{
+			"forge": "play(RealmsServer arg0, Screen arg1)",
+			"fabric": "play(RealmsServer serverData, Screen parent)"
+		},
+		{
+			"forge": "isSelfOwnedServer(RealmsServer arg0)",
+			"fabric": "isSelfOwnedServer(RealmsServer serverData)"
+		},
+		{
+			"forge": "isSelfOwnedNonExpiredServer(RealmsServer arg0)",
+			"fabric": "isOwnedNotExpired(RealmsServer serverData)"
+		},
+		{
+			"forge": "drawExpired(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawExpired(DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "drawExpiring(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "drawExpiring(DrawContext context, int x, int y, int mouseX, int mouseY, int remainingDays)"
+		},
+		{
+			"forge": "drawOpen(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawOpen(DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "drawClose(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "drawClose(DrawContext context, int x, int y, int mouseX, int mouseY)"
+		},
+		{
+			"forge": "renderNews(GuiGraphics arg0, int arg1, int arg2, boolean arg3, int arg4, int arg5, boolean arg6, boolean arg7)",
+			"fabric": "renderNews(DrawContext context, int mouseX, int mouseY, boolean hasUnread, int x, int y, boolean hovered, boolean active)"
+		},
+		{
+			"forge": "renderLocal(GuiGraphics arg0)",
+			"fabric": "renderLocal(DrawContext context)"
+		},
+		{
+			"forge": "renderStage(GuiGraphics arg0)",
+			"fabric": "renderStage(DrawContext context)"
+		},
+		{
+			"forge": "newScreen()",
+			"fabric": "newScreen()"
+		},
+		{
+			"forge": "updateTeaserImages(ResourceManager arg0)",
+			"fabric": "loadImages(ResourceManager manager)"
+		}
+	]
+}

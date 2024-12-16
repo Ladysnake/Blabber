@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityProjectileOwnerFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityProjectileOwnerFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityProjectileOwnerFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fixEntities(com.mojang.datafixers.Typed<?> arg0)"
+		},
+		{
+			"forge": "updateProjectiles(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "fixEntities(com.mojang.datafixers.Typed<?> arg0)"
+		},
+		{
+			"forge": "updateOwnerArrow(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "moveFlatOwnerMostLeastToArray(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateOwnerLlamaSpit(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "moveNestedOwnerMostLeastToArray(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateItemPotion(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "renamePotionToItem(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "updateOwnerThrowable(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "moveOwnerToArray(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "setUUID(com.mojang.serialization.Dynamic<?> arg0, long arg1, long arg2)",
+			"fabric": "insertOwnerUuidArray(com.mojang.serialization.Dynamic<?> arg0, long most, long least)"
+		},
+		{
+			"forge": "createUUIDArray(long arg0, long arg1)",
+			"fabric": "makeUuidArray(long most, long least)"
+		},
+		{
+			"forge": "updateEntity(com.mojang.datafixers.Typed<?> arg0, String arg1, Function<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> arg2)",
+			"fabric": "update(com.mojang.datafixers.Typed<?> arg0, String arg1, Function<com.mojang.serialization.Dynamic<?>, com.mojang.serialization.Dynamic<?>> arg2)"
+		}
+	]
+}

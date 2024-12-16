@@ -1,0 +1,189 @@
+{
+	"title": "net.minecraft.world.entity.monster.Guardian",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Guardian",
+			"fabric": "net.minecraft.entity.mob.GuardianEntity"
+		},
+		{
+			"forge": "ATTACK_TIME",
+			"fabric": "WARMUP_TIME"
+		},
+		{
+			"forge": "ATTACK_TIME",
+			"fabric": "WARMUP_TIME"
+		},
+		{
+			"forge": "DATA_ID_MOVING",
+			"fabric": "SPIKES_RETRACTED"
+		},
+		{
+			"forge": "DATA_ID_ATTACK_TARGET",
+			"fabric": "BEAM_TARGET_ID"
+		},
+		{
+			"forge": "clientSideTailAnimation",
+			"fabric": "tailAngle"
+		},
+		{
+			"forge": "clientSideTailAnimationO",
+			"fabric": "prevTailAngle"
+		},
+		{
+			"forge": "clientSideTailAnimationSpeed",
+			"fabric": "spikesExtensionRate"
+		},
+		{
+			"forge": "clientSideSpikesAnimation",
+			"fabric": "spikesExtension"
+		},
+		{
+			"forge": "clientSideSpikesAnimationO",
+			"fabric": "prevSpikesExtension"
+		},
+		{
+			"forge": "clientSideCachedAttackTarget",
+			"fabric": "cachedBeamTarget"
+		},
+		{
+			"forge": "clientSideAttackTime",
+			"fabric": "beamTicks"
+		},
+		{
+			"forge": "clientSideTouchedGround",
+			"fabric": "flopping"
+		},
+		{
+			"forge": "randomStrollGoal",
+			"fabric": "wanderGoal"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createGuardianAttributes()"
+		},
+		{
+			"forge": "createNavigation(Level arg0)",
+			"fabric": "createNavigation(World arg0)"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "canBreatheUnderwater()",
+			"fabric": "canBreatheInWater()"
+		},
+		{
+			"forge": "getMobType()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "isMoving()",
+			"fabric": "areSpikesRetracted()"
+		},
+		{
+			"forge": "setMoving(boolean arg0)",
+			"fabric": "setSpikesRetracted(boolean retracted)"
+		},
+		{
+			"forge": "getAttackDuration()",
+			"fabric": "getWarmupTime()"
+		},
+		{
+			"forge": "setActiveAttackTarget(int arg0)",
+			"fabric": "setBeamTarget(int entityId)"
+		},
+		{
+			"forge": "hasActiveAttackTarget()",
+			"fabric": "hasBeamTarget()"
+		},
+		{
+			"forge": "getActiveAttackTarget()",
+			"fabric": "getBeamTarget()"
+		},
+		{
+			"forge": "onSyncedDataUpdated(EntityDataAccessor<?> arg0)",
+			"fabric": "onTrackedDataSet(TrackedData<?> arg0)"
+		},
+		{
+			"forge": "getAmbientSoundInterval()",
+			"fabric": "getMinAmbientSoundDelay()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getMovementEmission()",
+			"fabric": "getMoveEffect()"
+		},
+		{
+			"forge": "getStandingEyeHeight(Pose arg0, EntityDimensions arg1)",
+			"fabric": "getActiveEyeHeight(EntityPose arg0, EntityDimensions arg1)"
+		},
+		{
+			"forge": "getWalkTargetValue(BlockPos arg0, LevelReader arg1)",
+			"fabric": "getPathfindingFavor(BlockPos arg0, WorldView arg1)"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "getFlopSound()",
+			"fabric": "getFlopSound()"
+		},
+		{
+			"forge": "getTailAnimation(float arg0)",
+			"fabric": "getTailAngle(float tickDelta)"
+		},
+		{
+			"forge": "getSpikesAnimation(float arg0)",
+			"fabric": "getSpikesExtension(float tickDelta)"
+		},
+		{
+			"forge": "getAttackAnimationScale(float arg0)",
+			"fabric": "getBeamProgress(float tickDelta)"
+		},
+		{
+			"forge": "getClientSideAttackTime()",
+			"fabric": "getBeamTicks()"
+		},
+		{
+			"forge": "checkSpawnObstruction(LevelReader arg0)",
+			"fabric": "canSpawn(WorldView arg0)"
+		},
+		{
+			"forge": "checkGuardianSpawnRules(EntityType<? extends Guardian> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "canSpawn(EntityType<? extends GuardianEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "getMaxHeadXRot()",
+			"fabric": "getMaxLookPitchChange()"
+		},
+		{
+			"forge": "travel(Vec3 arg0)",
+			"fabric": "travel(Vec3d arg0)"
+		}
+	]
+}

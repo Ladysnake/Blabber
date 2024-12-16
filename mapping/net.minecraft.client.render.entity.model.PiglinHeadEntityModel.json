@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.model.PiglinHeadModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.PiglinHeadModel",
+			"fabric": "net.minecraft.client.render.entity.model.PiglinHeadEntityModel"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "head",
+			"fabric": "head"
+		},
+		{
+			"forge": "leftEar",
+			"fabric": "leftEar"
+		},
+		{
+			"forge": "rightEar",
+			"fabric": "rightEar"
+		},
+		{
+			"forge": "createHeadModel()",
+			"fabric": "getModelData()"
+		},
+		{
+			"forge": "createHeadModel()",
+			"fabric": "getModelData()"
+		},
+		{
+			"forge": "setupAnim(float arg0, float arg1, float arg2)",
+			"fabric": "setHeadRotation(float arg0, float arg1, float arg2)"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		}
+	]
+}

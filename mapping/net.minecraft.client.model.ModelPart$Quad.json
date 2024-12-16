@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.client.model.geom.ModelPart$Polygon",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.geom.ModelPart$Polygon",
+			"fabric": "net.minecraft.client.model.ModelPart$Quad"
+		},
+		{
+			"forge": "vertices",
+			"fabric": "vertices"
+		},
+		{
+			"forge": "vertices",
+			"fabric": "vertices"
+		},
+		{
+			"forge": "normal",
+			"fabric": "direction"
+		}
+	]
+}

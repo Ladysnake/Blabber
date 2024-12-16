@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.model.BookModel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.model.BookModel",
+			"fabric": "net.minecraft.client.render.entity.model.BookModel"
+		},
+		{
+			"forge": "LEFT_PAGES",
+			"fabric": "LEFT_PAGES"
+		},
+		{
+			"forge": "LEFT_PAGES",
+			"fabric": "LEFT_PAGES"
+		},
+		{
+			"forge": "RIGHT_PAGES",
+			"fabric": "RIGHT_PAGES"
+		},
+		{
+			"forge": "FLIP_PAGE_1",
+			"fabric": "FLIP_PAGE1"
+		},
+		{
+			"forge": "FLIP_PAGE_2",
+			"fabric": "FLIP_PAGE2"
+		},
+		{
+			"forge": "root",
+			"fabric": "root"
+		},
+		{
+			"forge": "leftLid",
+			"fabric": "leftCover"
+		},
+		{
+			"forge": "rightLid",
+			"fabric": "rightCover"
+		},
+		{
+			"forge": "leftPages",
+			"fabric": "leftPages"
+		},
+		{
+			"forge": "rightPages",
+			"fabric": "rightPages"
+		},
+		{
+			"forge": "flipPage1",
+			"fabric": "leftFlippingPage"
+		},
+		{
+			"forge": "flipPage2",
+			"fabric": "rightFlippingPage"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "createBodyLayer()",
+			"fabric": "getTexturedModelData()"
+		},
+		{
+			"forge": "renderToBuffer(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "render(MatrixStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)"
+		},
+		{
+			"forge": "render(PoseStack arg0, VertexConsumer arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7)",
+			"fabric": "renderBook(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha)"
+		},
+		{
+			"forge": "setupAnim(float arg0, float arg1, float arg2, float arg3)",
+			"fabric": "setPageAngles(float pageTurnAmount, float leftFlipAmount, float rightFlipAmount, float pageTurnSpeed)"
+		}
+	]
+}

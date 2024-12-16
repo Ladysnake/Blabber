@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.client.renderer.entity.player.PlayerRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.player.PlayerRenderer",
+			"fabric": "net.minecraft.client.render.entity.PlayerEntityRenderer"
+		},
+		{
+			"forge": "render(AbstractClientPlayer arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(AbstractClientPlayerEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "render(AbstractClientPlayer arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(AbstractClientPlayerEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "getRenderOffset(AbstractClientPlayer arg0, float arg1)",
+			"fabric": "getPositionOffset(AbstractClientPlayerEntity arg0, float arg1)"
+		},
+		{
+			"forge": "setModelProperties(AbstractClientPlayer arg0)",
+			"fabric": "setModelPose(AbstractClientPlayerEntity player)"
+		},
+		{
+			"forge": "getArmPose(AbstractClientPlayer arg0, InteractionHand arg1)",
+			"fabric": "getArmPose(AbstractClientPlayerEntity player, Hand hand)"
+		},
+		{
+			"forge": "getTextureLocation(AbstractClientPlayer arg0)",
+			"fabric": "getTexture(AbstractClientPlayerEntity arg0)"
+		},
+		{
+			"forge": "scale(AbstractClientPlayer arg0, PoseStack arg1, float arg2)",
+			"fabric": "scale(AbstractClientPlayerEntity arg0, MatrixStack arg1, float arg2)"
+		},
+		{
+			"forge": "renderNameTag(AbstractClientPlayer arg0, Component arg1, PoseStack arg2, MultiBufferSource arg3, int arg4)",
+			"fabric": "renderLabelIfPresent(AbstractClientPlayerEntity arg0, Text arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4)"
+		},
+		{
+			"forge": "renderRightHand(PoseStack arg0, MultiBufferSource arg1, int arg2, AbstractClientPlayer arg3)",
+			"fabric": "renderRightArm(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, AbstractClientPlayerEntity player)"
+		},
+		{
+			"forge": "renderLeftHand(PoseStack arg0, MultiBufferSource arg1, int arg2, AbstractClientPlayer arg3)",
+			"fabric": "renderLeftArm(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, AbstractClientPlayerEntity player)"
+		},
+		{
+			"forge": "renderHand(PoseStack arg0, MultiBufferSource arg1, int arg2, AbstractClientPlayer arg3, ModelPart arg4, ModelPart arg5)",
+			"fabric": "renderArm(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, AbstractClientPlayerEntity player, ModelPart arm, ModelPart sleeve)"
+		},
+		{
+			"forge": "setupRotations(AbstractClientPlayer arg0, PoseStack arg1, float arg2, float arg3, float arg4)",
+			"fabric": "setupTransforms(AbstractClientPlayerEntity arg0, MatrixStack arg1, float arg2, float arg3, float arg4)"
+		}
+	]
+}

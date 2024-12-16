@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.server.level.DistanceManager$FixedPlayerDistanceChunkTracker",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.DistanceManager$FixedPlayerDistanceChunkTracker",
+			"fabric": "net.minecraft.server.world.ChunkTicketManager$DistanceFromNearestPlayerTracker"
+		},
+		{
+			"forge": "chunks",
+			"fabric": "distanceFromNearestPlayer"
+		},
+		{
+			"forge": "chunks",
+			"fabric": "distanceFromNearestPlayer"
+		},
+		{
+			"forge": "maxDistance",
+			"fabric": "maxDistance"
+		},
+		{
+			"forge": "getLevel(long arg0)",
+			"fabric": "getLevel(long arg0)"
+		},
+		{
+			"forge": "getLevel(long arg0)",
+			"fabric": "getLevel(long arg0)"
+		},
+		{
+			"forge": "setLevel(long arg0, int arg1)",
+			"fabric": "setLevel(long arg0, int arg1)"
+		},
+		{
+			"forge": "onLevelChange(long arg0, int arg1, int arg2)",
+			"fabric": "onDistanceChange(long pos, int oldDistance, int distance)"
+		},
+		{
+			"forge": "getLevelFromSource(long arg0)",
+			"fabric": "getInitialLevel(long arg0)"
+		},
+		{
+			"forge": "havePlayer(long arg0)",
+			"fabric": "isPlayerInChunk(long chunkPos)"
+		},
+		{
+			"forge": "runAllUpdates()",
+			"fabric": "updateLevels()"
+		},
+		{
+			"forge": "dumpChunks(String arg0)",
+			"fabric": "dump(String path)"
+		}
+	]
+}

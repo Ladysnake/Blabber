@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.particle.ParticleEngine$1ParticleDefinition",
+	"items": [
+		{
+			"forge": "net.minecraft.client.particle.ParticleEngine$1ParticleDefinition",
+			"fabric": "net.minecraft.client.particle.ParticleManager$ReloadResult"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "sprites",
+			"fabric": "sprites"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "id()",
+			"fabric": "id()"
+		},
+		{
+			"forge": "sprites()",
+			"fabric": "sprites()"
+		}
+	]
+}

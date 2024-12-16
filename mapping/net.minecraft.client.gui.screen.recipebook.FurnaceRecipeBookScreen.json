@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.gui.screens.recipebook.SmeltingRecipeBookComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.recipebook.SmeltingRecipeBookComponent",
+			"fabric": "net.minecraft.client.gui.screen.recipebook.FurnaceRecipeBookScreen"
+		},
+		{
+			"forge": "FILTER_NAME",
+			"fabric": "TOGGLE_SMELTABLE_RECIPES_TEXT"
+		},
+		{
+			"forge": "FILTER_NAME",
+			"fabric": "TOGGLE_SMELTABLE_RECIPES_TEXT"
+		},
+		{
+			"forge": "getRecipeFilterName()",
+			"fabric": "getToggleCraftableButtonText()"
+		},
+		{
+			"forge": "getRecipeFilterName()",
+			"fabric": "getToggleCraftableButtonText()"
+		},
+		{
+			"forge": "getFuelItems()",
+			"fabric": "getAllowedFuels()"
+		}
+	]
+}

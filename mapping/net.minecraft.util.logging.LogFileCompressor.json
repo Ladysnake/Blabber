@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.util.eventlog.EventLogDirectory",
+	"items": [
+		{
+			"forge": "net.minecraft.util.eventlog.EventLogDirectory",
+			"fabric": "net.minecraft.util.logging.LogFileCompressor"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "COMPRESS_BUFFER_SIZE",
+			"fabric": "COMPRESSION_BUFFER_SIZE"
+		},
+		{
+			"forge": "COMPRESSED_EXTENSION",
+			"fabric": "GZ_EXTENSION"
+		},
+		{
+			"forge": "root",
+			"fabric": "directory"
+		},
+		{
+			"forge": "extension",
+			"fabric": "extension"
+		},
+		{
+			"forge": "open(Path arg0, String arg1)",
+			"fabric": "create(Path directory, String extension)"
+		},
+		{
+			"forge": "open(Path arg0, String arg1)",
+			"fabric": "create(Path directory, String extension)"
+		},
+		{
+			"forge": "listFiles()",
+			"fabric": "getAll()"
+		},
+		{
+			"forge": "parseFile(Path arg0)",
+			"fabric": "get(Path path)"
+		},
+		{
+			"forge": "tryCompress(Path arg0, Path arg1)",
+			"fabric": "compress(Path from, Path to)"
+		},
+		{
+			"forge": "writeCompressed(ReadableByteChannel arg0, Path arg1)",
+			"fabric": "compress(ReadableByteChannel source, Path outputPath)"
+		},
+		{
+			"forge": "createNewFile(LocalDate arg0)",
+			"fabric": "createLogFile(LocalDate date)"
+		}
+	]
+}

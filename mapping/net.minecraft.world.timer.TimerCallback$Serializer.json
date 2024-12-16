@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.level.timers.TimerCallback$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.timers.TimerCallback$Serializer",
+			"fabric": "net.minecraft.world.timer.TimerCallback$Serializer"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "cls",
+			"fabric": "callbackClass"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getCls()",
+			"fabric": "getCallbackClass()"
+		},
+		{
+			"forge": "serialize(CompoundTag arg0, C arg1)",
+			"fabric": "serialize(NbtCompound nbt, C callback)"
+		},
+		{
+			"forge": "deserialize(CompoundTag arg0)",
+			"fabric": "deserialize(NbtCompound nbt)"
+		}
+	]
+}

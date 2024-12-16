@@ -1,0 +1,217 @@
+{
+	"title": "net.minecraft.gametest.framework.GameTestInfo",
+	"items": [
+		{
+			"forge": "net.minecraft.gametest.framework.GameTestInfo",
+			"fabric": "net.minecraft.test.GameTestState"
+		},
+		{
+			"forge": "testFunction",
+			"fabric": "testFunction"
+		},
+		{
+			"forge": "testFunction",
+			"fabric": "testFunction"
+		},
+		{
+			"forge": "structureBlockPos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "listeners",
+			"fabric": "listeners"
+		},
+		{
+			"forge": "timeoutTicks",
+			"fabric": "ticksLeft"
+		},
+		{
+			"forge": "sequences",
+			"fabric": "timedTaskRunners"
+		},
+		{
+			"forge": "runAtTickTimeMap",
+			"fabric": "ticksByRunnables"
+		},
+		{
+			"forge": "startTick",
+			"fabric": "expectedStopTime"
+		},
+		{
+			"forge": "tickCount",
+			"fabric": "tick"
+		},
+		{
+			"forge": "started",
+			"fabric": "started"
+		},
+		{
+			"forge": "timer",
+			"fabric": "stopwatch"
+		},
+		{
+			"forge": "done",
+			"fabric": "completed"
+		},
+		{
+			"forge": "rotation",
+			"fabric": "rotation"
+		},
+		{
+			"forge": "error",
+			"fabric": "throwable"
+		},
+		{
+			"forge": "structureBlockEntity",
+			"fabric": "structureBlockEntity"
+		},
+		{
+			"forge": "setStructureBlockPos(BlockPos arg0)",
+			"fabric": "setPos(BlockPos pos)"
+		},
+		{
+			"forge": "setStructureBlockPos(BlockPos arg0)",
+			"fabric": "setPos(BlockPos pos)"
+		},
+		{
+			"forge": "startExecution()",
+			"fabric": "startCountdown()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tickInternal()",
+			"fabric": "tickTests()"
+		},
+		{
+			"forge": "startTest()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "setRunAtTickTime(long arg0, Runnable arg1)",
+			"fabric": "runAtTick(long tick, Runnable runnable)"
+		},
+		{
+			"forge": "getTestName()",
+			"fabric": "getTemplatePath()"
+		},
+		{
+			"forge": "getStructureBlockPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getStructureSize()",
+			"fabric": "getSize()"
+		},
+		{
+			"forge": "getStructureBounds()",
+			"fabric": "getBoundingBox()"
+		},
+		{
+			"forge": "getStructureBlockEntity()",
+			"fabric": "getStructureBlockBlockEntity()"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "hasSucceeded()",
+			"fabric": "isPassed()"
+		},
+		{
+			"forge": "hasFailed()",
+			"fabric": "isFailed()"
+		},
+		{
+			"forge": "hasStarted()",
+			"fabric": "isStarted()"
+		},
+		{
+			"forge": "isDone()",
+			"fabric": "isCompleted()"
+		},
+		{
+			"forge": "getRunTime()",
+			"fabric": "getElapsedMilliseconds()"
+		},
+		{
+			"forge": "finish()",
+			"fabric": "complete()"
+		},
+		{
+			"forge": "succeed()",
+			"fabric": "completeIfSuccessful()"
+		},
+		{
+			"forge": "fail(Throwable arg0)",
+			"fabric": "fail(Throwable throwable)"
+		},
+		{
+			"forge": "getError()",
+			"fabric": "getThrowable()"
+		},
+		{
+			"forge": "addListener(GameTestListener arg0)",
+			"fabric": "addListener(TestListener listener)"
+		},
+		{
+			"forge": "spawnStructure(BlockPos arg0, int arg1)",
+			"fabric": "init(BlockPos pos, int arg1)"
+		},
+		{
+			"forge": "clearStructure()",
+			"fabric": "clearArea()"
+		},
+		{
+			"forge": "getTick()",
+			"fabric": "getTick()"
+		},
+		{
+			"forge": "createSequence()",
+			"fabric": "createTimedTaskRunner()"
+		},
+		{
+			"forge": "isRequired()",
+			"fabric": "isRequired()"
+		},
+		{
+			"forge": "isOptional()",
+			"fabric": "isOptional()"
+		},
+		{
+			"forge": "getStructureName()",
+			"fabric": "getTemplateName()"
+		},
+		{
+			"forge": "getRotation()",
+			"fabric": "getRotation()"
+		},
+		{
+			"forge": "getTestFunction()",
+			"fabric": "getTestFunction()"
+		},
+		{
+			"forge": "getTimeoutTicks()",
+			"fabric": "getTicksLeft()"
+		},
+		{
+			"forge": "isFlaky()",
+			"fabric": "isFlaky()"
+		},
+		{
+			"forge": "maxAttempts()",
+			"fabric": "getMaxAttempts()"
+		},
+		{
+			"forge": "requiredSuccesses()",
+			"fabric": "getRequiredSuccesses()"
+		}
+	]
+}

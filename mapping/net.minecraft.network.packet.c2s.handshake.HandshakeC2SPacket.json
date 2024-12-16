@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.network.protocol.handshake.ClientIntentionPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.handshake.ClientIntentionPacket",
+			"fabric": "net.minecraft.network.packet.c2s.handshake.HandshakeC2SPacket"
+		},
+		{
+			"forge": "MAX_HOST_LENGTH",
+			"fabric": "MAX_ADDRESS_LENGTH"
+		},
+		{
+			"forge": "MAX_HOST_LENGTH",
+			"fabric": "MAX_ADDRESS_LENGTH"
+		},
+		{
+			"forge": "protocolVersion",
+			"fabric": "protocolVersion"
+		},
+		{
+			"forge": "hostName",
+			"fabric": "address"
+		},
+		{
+			"forge": "port",
+			"fabric": "port"
+		},
+		{
+			"forge": "intention",
+			"fabric": "intendedState"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ServerHandshakePacketListener arg0)",
+			"fabric": "apply(ServerHandshakePacketListener arg0)"
+		},
+		{
+			"forge": "getIntention()",
+			"fabric": "getIntendedState()"
+		},
+		{
+			"forge": "getProtocolVersion()",
+			"fabric": "getProtocolVersion()"
+		},
+		{
+			"forge": "getHostName()",
+			"fabric": "getAddress()"
+		},
+		{
+			"forge": "getPort()",
+			"fabric": "getPort()"
+		}
+	]
+}

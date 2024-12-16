@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.telemetry.TelemetryPropertyMap$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.TelemetryPropertyMap$1",
+			"fabric": "net.minecraft.client.util.telemetry.PropertyMap$1"
+		},
+		{
+			"forge": "encode(TelemetryPropertyMap arg0, com.mojang.serialization.DynamicOps<T> arg1, com.mojang.serialization.RecordBuilder<T> arg2)",
+			"fabric": "encode(PropertyMap arg0, com.mojang.serialization.DynamicOps<T> arg1, com.mojang.serialization.RecordBuilder<T> arg2)"
+		},
+		{
+			"forge": "encode(TelemetryPropertyMap arg0, com.mojang.serialization.DynamicOps<T> arg1, com.mojang.serialization.RecordBuilder<T> arg2)",
+			"fabric": "encode(PropertyMap arg0, com.mojang.serialization.DynamicOps<T> arg1, com.mojang.serialization.RecordBuilder<T> arg2)"
+		},
+		{
+			"forge": "encodeProperty(TelemetryPropertyMap arg0, com.mojang.serialization.RecordBuilder<T> arg1, TelemetryProperty<V> arg2)",
+			"fabric": "encode(PropertyMap map, com.mojang.serialization.RecordBuilder<T> builder, TelemetryEventProperty<V> property)"
+		},
+		{
+			"forge": "decode(com.mojang.serialization.DynamicOps<T> arg0, com.mojang.serialization.MapLike<T> arg1)",
+			"fabric": "decode(com.mojang.serialization.DynamicOps<T> ops, com.mojang.serialization.MapLike<T> map)"
+		},
+		{
+			"forge": "decodeProperty(com.mojang.serialization.DataResult<TelemetryPropertyMap$Builder> arg0, com.mojang.serialization.DynamicOps<T> arg1, com.mojang.serialization.MapLike<T> arg2, TelemetryProperty<V> arg3)",
+			"fabric": "decode(com.mojang.serialization.DataResult<PropertyMap$Builder> result, com.mojang.serialization.DynamicOps<T> ops, com.mojang.serialization.MapLike<T> map, TelemetryEventProperty<V> property)"
+		},
+		{
+			"forge": "keys(com.mojang.serialization.DynamicOps<T> arg0)",
+			"fabric": "keys(com.mojang.serialization.DynamicOps<T> ops)"
+		}
+	]
+}

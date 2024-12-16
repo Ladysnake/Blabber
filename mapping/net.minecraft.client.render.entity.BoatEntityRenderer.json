@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.renderer.entity.BoatRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.BoatRenderer",
+			"fabric": "net.minecraft.client.render.entity.BoatEntityRenderer"
+		},
+		{
+			"forge": "boatResources",
+			"fabric": "texturesAndModels"
+		},
+		{
+			"forge": "boatResources",
+			"fabric": "texturesAndModels"
+		},
+		{
+			"forge": "createBoatModel(EntityRendererProvider$Context arg0, Boat$Type arg1, boolean arg2)",
+			"fabric": "createModel(EntityRendererFactory$Context ctx, BoatEntity$Type type, boolean chest)"
+		},
+		{
+			"forge": "createBoatModel(EntityRendererProvider$Context arg0, Boat$Type arg1, boolean arg2)",
+			"fabric": "createModel(EntityRendererFactory$Context ctx, BoatEntity$Type type, boolean chest)"
+		},
+		{
+			"forge": "getTextureLocation(Boat$Type arg0, boolean arg1)",
+			"fabric": "getTexture(BoatEntity$Type type, boolean chest)"
+		},
+		{
+			"forge": "render(Boat arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(BoatEntity arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "getTextureLocation(Boat arg0)",
+			"fabric": "getTexture(BoatEntity arg0)"
+		}
+	]
+}

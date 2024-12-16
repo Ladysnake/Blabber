@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.network.PacketDecoder",
+	"items": [
+		{
+			"forge": "net.minecraft.network.PacketDecoder",
+			"fabric": "net.minecraft.network.DecoderHandler"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "flow",
+			"fabric": "side"
+		},
+		{
+			"forge": "decode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, List<Object> arg2)",
+			"fabric": "decode(io.netty.channel.ChannelHandlerContext ctx, io.netty.buffer.ByteBuf buf, List<Object> objects)"
+		},
+		{
+			"forge": "decode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, List<Object> arg2)",
+			"fabric": "decode(io.netty.channel.ChannelHandlerContext ctx, io.netty.buffer.ByteBuf buf, List<Object> objects)"
+		}
+	]
+}

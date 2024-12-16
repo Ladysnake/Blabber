@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.util.LowerCaseEnumTypeAdapterFactory$1",
+	"items": [
+		{
+			"forge": "net.minecraft.util.LowerCaseEnumTypeAdapterFactory$1",
+			"fabric": "net.minecraft.util.LowercaseEnumTypeAdapterFactory$1"
+		},
+		{
+			"forge": "write(com.google.gson.stream.JsonWriter arg0, T arg1)",
+			"fabric": "write(com.google.gson.stream.JsonWriter writer, T o)"
+		},
+		{
+			"forge": "write(com.google.gson.stream.JsonWriter arg0, T arg1)",
+			"fabric": "write(com.google.gson.stream.JsonWriter writer, T o)"
+		},
+		{
+			"forge": "read(com.google.gson.stream.JsonReader arg0)",
+			"fabric": "read(com.google.gson.stream.JsonReader reader)"
+		}
+	]
+}

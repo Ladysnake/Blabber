@@ -1,0 +1,101 @@
+{
+	"title": "net.minecraft.world.level.StructureManager",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.StructureManager",
+			"fabric": "net.minecraft.world.gen.StructureAccessor"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "worldOptions",
+			"fabric": "options"
+		},
+		{
+			"forge": "structureCheck",
+			"fabric": "locator"
+		},
+		{
+			"forge": "forWorldGenRegion(WorldGenRegion arg0)",
+			"fabric": "forRegion(ChunkRegion region)"
+		},
+		{
+			"forge": "forWorldGenRegion(WorldGenRegion arg0)",
+			"fabric": "forRegion(ChunkRegion region)"
+		},
+		{
+			"forge": "startsForStructure(ChunkPos arg0, Predicate<Structure> arg1)",
+			"fabric": "getStructureStarts(ChunkPos pos, Predicate<Structure> predicate)"
+		},
+		{
+			"forge": "startsForStructure(SectionPos arg0, Structure arg1)",
+			"fabric": "getStructureStarts(ChunkSectionPos sectionPos, Structure structure)"
+		},
+		{
+			"forge": "fillStartsForStructure(Structure arg0, it.unimi.dsi.fastutil.longs.LongSet arg1, Consumer<StructureStart> arg2)",
+			"fabric": "acceptStructureStarts(Structure structure, it.unimi.dsi.fastutil.longs.LongSet structureStartPositions, Consumer<StructureStart> consumer)"
+		},
+		{
+			"forge": "getStartForStructure(SectionPos arg0, Structure arg1, StructureAccess arg2)",
+			"fabric": "getStructureStart(ChunkSectionPos pos, Structure structure, StructureHolder holder)"
+		},
+		{
+			"forge": "setStartForStructure(SectionPos arg0, Structure arg1, StructureStart arg2, StructureAccess arg3)",
+			"fabric": "setStructureStart(ChunkSectionPos pos, Structure structure, StructureStart structureStart, StructureHolder holder)"
+		},
+		{
+			"forge": "addReferenceForStructure(SectionPos arg0, Structure arg1, long arg2, StructureAccess arg3)",
+			"fabric": "addStructureReference(ChunkSectionPos pos, Structure structure, long reference, StructureHolder holder)"
+		},
+		{
+			"forge": "shouldGenerateStructures()",
+			"fabric": "shouldGenerateStructures()"
+		},
+		{
+			"forge": "getStructureAt(BlockPos arg0, Structure arg1)",
+			"fabric": "getStructureAt(BlockPos pos, Structure structure)"
+		},
+		{
+			"forge": "getStructureWithPieceAt(BlockPos arg0, ResourceKey<Structure> arg1)",
+			"fabric": "getStructureContaining(BlockPos pos, RegistryKey<Structure> structure)"
+		},
+		{
+			"forge": "getStructureWithPieceAt(BlockPos arg0, TagKey<Structure> arg1)",
+			"fabric": "getStructureContaining(BlockPos pos, TagKey<Structure> structureTag)"
+		},
+		{
+			"forge": "getStructureWithPieceAt(BlockPos arg0, Structure arg1)",
+			"fabric": "getStructureContaining(BlockPos pos, Structure structure)"
+		},
+		{
+			"forge": "structureHasPieceAt(BlockPos arg0, StructureStart arg1)",
+			"fabric": "structureContains(BlockPos pos, StructureStart structureStart)"
+		},
+		{
+			"forge": "hasAnyStructureAt(BlockPos arg0)",
+			"fabric": "hasStructureReferences(BlockPos pos)"
+		},
+		{
+			"forge": "getAllStructuresAt(BlockPos arg0)",
+			"fabric": "getStructureReferences(BlockPos pos)"
+		},
+		{
+			"forge": "checkStructurePresence(ChunkPos arg0, Structure arg1, boolean arg2)",
+			"fabric": "getStructurePresence(ChunkPos chunkPos, Structure structure, boolean skipExistingChunk)"
+		},
+		{
+			"forge": "addReference(StructureStart arg0)",
+			"fabric": "incrementReferences(StructureStart structureStart)"
+		},
+		{
+			"forge": "registryAccess()",
+			"fabric": "getRegistryManager()"
+		}
+	]
+}

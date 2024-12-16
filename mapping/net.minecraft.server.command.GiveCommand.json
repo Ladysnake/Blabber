@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.server.commands.GiveCommand",
+	"items": [
+		{
+			"forge": "net.minecraft.server.commands.GiveCommand",
+			"fabric": "net.minecraft.server.command.GiveCommand"
+		},
+		{
+			"forge": "MAX_ALLOWED_ITEMSTACKS",
+			"fabric": "MAX_STACKS"
+		},
+		{
+			"forge": "MAX_ALLOWED_ITEMSTACKS",
+			"fabric": "MAX_STACKS"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "register(com.mojang.brigadier.CommandDispatcher<CommandSourceStack> arg0, CommandBuildContext arg1)",
+			"fabric": "register(com.mojang.brigadier.CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess)"
+		},
+		{
+			"forge": "giveItem(CommandSourceStack arg0, ItemInput arg1, Collection<ServerPlayer> arg2, int arg3)",
+			"fabric": "execute(ServerCommandSource source, ItemStackArgument item, Collection<ServerPlayerEntity> targets, int count)"
+		}
+	]
+}

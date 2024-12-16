@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.animal.Rabbit$RabbitPanicGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Rabbit$RabbitPanicGoal",
+			"fabric": "net.minecraft.entity.passive.RabbitEntity$EscapeDangerGoal"
+		},
+		{
+			"forge": "rabbit",
+			"fabric": "rabbit"
+		},
+		{
+			"forge": "rabbit",
+			"fabric": "rabbit"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		}
+	]
+}

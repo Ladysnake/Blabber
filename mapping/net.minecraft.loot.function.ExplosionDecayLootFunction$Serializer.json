@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay$Serializer",
+			"fabric": "net.minecraft.loot.function.ExplosionDecayLootFunction$Serializer"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1, LootItemCondition[] arg2)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1, LootCondition[] arg2)"
+		},
+		{
+			"forge": "deserialize(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1, LootItemCondition[] arg2)",
+			"fabric": "fromJson(com.google.gson.JsonObject arg0, com.google.gson.JsonDeserializationContext arg1, LootCondition[] arg2)"
+		}
+	]
+}

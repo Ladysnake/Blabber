@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces$OceanRuinPiece",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces$OceanRuinPiece",
+			"fabric": "net.minecraft.structure.OceanRuinGenerator$Piece"
+		},
+		{
+			"forge": "biomeType",
+			"fabric": "biomeType"
+		},
+		{
+			"forge": "biomeType",
+			"fabric": "biomeType"
+		},
+		{
+			"forge": "integrity",
+			"fabric": "integrity"
+		},
+		{
+			"forge": "isLarge",
+			"fabric": "large"
+		},
+		{
+			"forge": "makeSettings(Rotation arg0, float arg1, OceanRuinStructure$Type arg2)",
+			"fabric": "createPlacementData(BlockRotation rotation, float integrity, OceanRuinStructure$BiomeTemperature temperature)"
+		},
+		{
+			"forge": "makeSettings(Rotation arg0, float arg1, OceanRuinStructure$Type arg2)",
+			"fabric": "createPlacementData(BlockRotation rotation, float integrity, OceanRuinStructure$BiomeTemperature temperature)"
+		},
+		{
+			"forge": "create(StructureTemplateManager arg0, CompoundTag arg1)",
+			"fabric": "fromNbt(StructureTemplateManager structureTemplateManager, NbtCompound nbt)"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "handleDataMarker(String arg0, BlockPos arg1, ServerLevelAccessor arg2, RandomSource arg3, BoundingBox arg4)",
+			"fabric": "handleMetadata(String arg0, BlockPos arg1, ServerWorldAccess arg2, Random arg3, BlockBox arg4)"
+		},
+		{
+			"forge": "postProcess(WorldGenLevel arg0, StructureManager arg1, ChunkGenerator arg2, RandomSource arg3, BoundingBox arg4, ChunkPos arg5, BlockPos arg6)",
+			"fabric": "generate(StructureWorldAccess arg0, StructureAccessor arg1, ChunkGenerator arg2, Random arg3, BlockBox arg4, ChunkPos arg5, BlockPos arg6)"
+		},
+		{
+			"forge": "getHeight(BlockPos arg0, BlockGetter arg1, BlockPos arg2)",
+			"fabric": "getGenerationY(BlockPos start, BlockView world, BlockPos end)"
+		}
+	]
+}

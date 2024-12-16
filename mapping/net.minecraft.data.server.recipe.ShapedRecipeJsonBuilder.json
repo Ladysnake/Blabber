@@ -1,0 +1,97 @@
+{
+	"title": "net.minecraft.data.recipes.ShapedRecipeBuilder",
+	"items": [
+		{
+			"forge": "net.minecraft.data.recipes.ShapedRecipeBuilder",
+			"fabric": "net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "result",
+			"fabric": "output"
+		},
+		{
+			"forge": "count",
+			"fabric": "count"
+		},
+		{
+			"forge": "rows",
+			"fabric": "pattern"
+		},
+		{
+			"forge": "key",
+			"fabric": "inputs"
+		},
+		{
+			"forge": "advancement",
+			"fabric": "advancementBuilder"
+		},
+		{
+			"forge": "group",
+			"fabric": "group"
+		},
+		{
+			"forge": "showNotification",
+			"fabric": "showNotification"
+		},
+		{
+			"forge": "shaped(RecipeCategory arg0, ItemLike arg1)",
+			"fabric": "create(RecipeCategory category, ItemConvertible output)"
+		},
+		{
+			"forge": "shaped(RecipeCategory arg0, ItemLike arg1)",
+			"fabric": "create(RecipeCategory category, ItemConvertible output)"
+		},
+		{
+			"forge": "shaped(RecipeCategory arg0, ItemLike arg1, int arg2)",
+			"fabric": "create(RecipeCategory category, ItemConvertible output, int count)"
+		},
+		{
+			"forge": "define(Character arg0, TagKey<Item> arg1)",
+			"fabric": "input(Character c, TagKey<Item> tag)"
+		},
+		{
+			"forge": "define(Character arg0, ItemLike arg1)",
+			"fabric": "input(Character c, ItemConvertible itemProvider)"
+		},
+		{
+			"forge": "define(Character arg0, Ingredient arg1)",
+			"fabric": "input(Character c, Ingredient ingredient)"
+		},
+		{
+			"forge": "pattern(String arg0)",
+			"fabric": "pattern(String patternStr)"
+		},
+		{
+			"forge": "unlockedBy(String arg0, CriterionTriggerInstance arg1)",
+			"fabric": "criterion(String arg0, CriterionConditions arg1)"
+		},
+		{
+			"forge": "group(String arg0)",
+			"fabric": "group(String arg0)"
+		},
+		{
+			"forge": "showNotification(boolean arg0)",
+			"fabric": "showNotification(boolean showNotification)"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getOutputItem()"
+		},
+		{
+			"forge": "save(Consumer<FinishedRecipe> arg0, ResourceLocation arg1)",
+			"fabric": "offerTo(Consumer<RecipeJsonProvider> arg0, Identifier arg1)"
+		},
+		{
+			"forge": "ensureValid(ResourceLocation arg0)",
+			"fabric": "validate(Identifier recipeId)"
+		}
+	]
+}

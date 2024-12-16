@@ -1,0 +1,69 @@
+{
+	"title": "net.minecraft.commands.arguments.selector.options.EntitySelectorOptions",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.selector.options.EntitySelectorOptions",
+			"fabric": "net.minecraft.command.EntitySelectorOptions"
+		},
+		{
+			"forge": "OPTIONS",
+			"fabric": "OPTIONS"
+		},
+		{
+			"forge": "OPTIONS",
+			"fabric": "OPTIONS"
+		},
+		{
+			"forge": "ERROR_UNKNOWN_OPTION",
+			"fabric": "UNKNOWN_OPTION_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_INAPPLICABLE_OPTION",
+			"fabric": "INAPPLICABLE_OPTION_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_RANGE_NEGATIVE",
+			"fabric": "NEGATIVE_DISTANCE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_LEVEL_NEGATIVE",
+			"fabric": "NEGATIVE_LEVEL_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_LIMIT_TOO_SMALL",
+			"fabric": "TOO_SMALL_LEVEL_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_SORT_UNKNOWN",
+			"fabric": "IRREVERSIBLE_SORT_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_GAME_MODE_INVALID",
+			"fabric": "INVALID_MODE_EXCEPTION"
+		},
+		{
+			"forge": "ERROR_ENTITY_TYPE_INVALID",
+			"fabric": "INVALID_TYPE_EXCEPTION"
+		},
+		{
+			"forge": "register(String arg0, EntitySelectorOptions$Modifier arg1, Predicate<EntitySelectorParser> arg2, Component arg3)",
+			"fabric": "putOption(String id, EntitySelectorOptions$SelectorHandler handler, Predicate<EntitySelectorReader> condition, Text description)"
+		},
+		{
+			"forge": "register(String arg0, EntitySelectorOptions$Modifier arg1, Predicate<EntitySelectorParser> arg2, Component arg3)",
+			"fabric": "putOption(String id, EntitySelectorOptions$SelectorHandler handler, Predicate<EntitySelectorReader> condition, Text description)"
+		},
+		{
+			"forge": "bootStrap()",
+			"fabric": "register()"
+		},
+		{
+			"forge": "get(EntitySelectorParser arg0, String arg1, int arg2)",
+			"fabric": "getHandler(EntitySelectorReader reader, String option, int restoreCursor)"
+		},
+		{
+			"forge": "suggestNames(EntitySelectorParser arg0, com.mojang.brigadier.suggestion.SuggestionsBuilder arg1)",
+			"fabric": "suggestOptions(EntitySelectorReader reader, com.mojang.brigadier.suggestion.SuggestionsBuilder suggestionBuilder)"
+		}
+	]
+}

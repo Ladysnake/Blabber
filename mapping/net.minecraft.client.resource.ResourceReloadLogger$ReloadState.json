@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.ResourceLoadStateTracker$ReloadState",
+	"items": [
+		{
+			"forge": "net.minecraft.client.ResourceLoadStateTracker$ReloadState",
+			"fabric": "net.minecraft.client.resource.ResourceReloadLogger$ReloadState"
+		},
+		{
+			"forge": "reloadReason",
+			"fabric": "reason"
+		},
+		{
+			"forge": "reloadReason",
+			"fabric": "reason"
+		},
+		{
+			"forge": "packs",
+			"fabric": "packs"
+		},
+		{
+			"forge": "recoveryReloadInfo",
+			"fabric": "recovery"
+		},
+		{
+			"forge": "finished",
+			"fabric": "finished"
+		},
+		{
+			"forge": "fillCrashInfo(CrashReportCategory arg0)",
+			"fabric": "addReloadSection(CrashReportSection section)"
+		},
+		{
+			"forge": "fillCrashInfo(CrashReportCategory arg0)",
+			"fabric": "addReloadSection(CrashReportSection section)"
+		}
+	]
+}

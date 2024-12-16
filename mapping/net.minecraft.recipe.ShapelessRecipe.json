@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.world.item.crafting.ShapelessRecipe",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.ShapelessRecipe",
+			"fabric": "net.minecraft.recipe.ShapelessRecipe"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "group",
+			"fabric": "group"
+		},
+		{
+			"forge": "category",
+			"fabric": "category"
+		},
+		{
+			"forge": "result",
+			"fabric": "output"
+		},
+		{
+			"forge": "ingredients",
+			"fabric": "input"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getSerializer()",
+			"fabric": "getSerializer()"
+		},
+		{
+			"forge": "getGroup()",
+			"fabric": "getGroup()"
+		},
+		{
+			"forge": "category()",
+			"fabric": "getCategory()"
+		},
+		{
+			"forge": "getResultItem(RegistryAccess arg0)",
+			"fabric": "getOutput(DynamicRegistryManager arg0)"
+		},
+		{
+			"forge": "getIngredients()",
+			"fabric": "getIngredients()"
+		},
+		{
+			"forge": "matches(CraftingContainer arg0, Level arg1)",
+			"fabric": "matches(RecipeInputInventory arg0, World arg1)"
+		},
+		{
+			"forge": "assemble(CraftingContainer arg0, RegistryAccess arg1)",
+			"fabric": "craft(RecipeInputInventory arg0, DynamicRegistryManager arg1)"
+		},
+		{
+			"forge": "canCraftInDimensions(int arg0, int arg1)",
+			"fabric": "fits(int arg0, int arg1)"
+		}
+	]
+}

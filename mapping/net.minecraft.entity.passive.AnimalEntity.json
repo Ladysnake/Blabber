@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.world.entity.animal.Animal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.animal.Animal",
+			"fabric": "net.minecraft.entity.passive.AnimalEntity"
+		},
+		{
+			"forge": "PARENT_AGE_AFTER_BREEDING",
+			"fabric": "BREEDING_COOLDOWN"
+		},
+		{
+			"forge": "PARENT_AGE_AFTER_BREEDING",
+			"fabric": "BREEDING_COOLDOWN"
+		},
+		{
+			"forge": "inLove",
+			"fabric": "loveTicks"
+		},
+		{
+			"forge": "loveCause",
+			"fabric": "lovingPlayer"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "hurt(DamageSource arg0, float arg1)",
+			"fabric": "damage(DamageSource arg0, float arg1)"
+		},
+		{
+			"forge": "getWalkTargetValue(BlockPos arg0, LevelReader arg1)",
+			"fabric": "getPathfindingFavor(BlockPos arg0, WorldView arg1)"
+		},
+		{
+			"forge": "addAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "writeCustomDataToNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "getMyRidingOffset()",
+			"fabric": "getHeightOffset()"
+		},
+		{
+			"forge": "readAdditionalSaveData(CompoundTag arg0)",
+			"fabric": "readCustomDataFromNbt(NbtCompound arg0)"
+		},
+		{
+			"forge": "checkAnimalSpawnRules(EntityType<? extends Animal> arg0, LevelAccessor arg1, MobSpawnType arg2, BlockPos arg3, RandomSource arg4)",
+			"fabric": "isValidNaturalSpawn(EntityType<? extends AnimalEntity> type, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random)"
+		},
+		{
+			"forge": "isBrightEnoughToSpawn(BlockAndTintGetter arg0, BlockPos arg1)",
+			"fabric": "isLightLevelValidForNaturalSpawn(BlockRenderView world, BlockPos pos)"
+		},
+		{
+			"forge": "getAmbientSoundInterval()",
+			"fabric": "getMinAmbientSoundDelay()"
+		},
+		{
+			"forge": "removeWhenFarAway(double arg0)",
+			"fabric": "canImmediatelyDespawn(double arg0)"
+		},
+		{
+			"forge": "getExperienceReward()",
+			"fabric": "getXpToDrop()"
+		},
+		{
+			"forge": "isFood(ItemStack arg0)",
+			"fabric": "isBreedingItem(ItemStack stack)"
+		},
+		{
+			"forge": "mobInteract(Player arg0, InteractionHand arg1)",
+			"fabric": "interactMob(PlayerEntity arg0, Hand arg1)"
+		},
+		{
+			"forge": "usePlayerItem(Player arg0, InteractionHand arg1, ItemStack arg2)",
+			"fabric": "eat(PlayerEntity player, Hand hand, ItemStack stack)"
+		},
+		{
+			"forge": "canFallInLove()",
+			"fabric": "canEat()"
+		},
+		{
+			"forge": "setInLove(Player arg0)",
+			"fabric": "lovePlayer(PlayerEntity player)"
+		},
+		{
+			"forge": "setInLoveTime(int arg0)",
+			"fabric": "setLoveTicks(int loveTicks)"
+		},
+		{
+			"forge": "getInLoveTime()",
+			"fabric": "getLoveTicks()"
+		},
+		{
+			"forge": "getLoveCause()",
+			"fabric": "getLovingPlayer()"
+		},
+		{
+			"forge": "isInLove()",
+			"fabric": "isInLove()"
+		},
+		{
+			"forge": "resetLove()",
+			"fabric": "resetLoveTicks()"
+		},
+		{
+			"forge": "canMate(Animal arg0)",
+			"fabric": "canBreedWith(AnimalEntity other)"
+		},
+		{
+			"forge": "spawnChildFromBreeding(ServerLevel arg0, Animal arg1)",
+			"fabric": "breed(ServerWorld world, AnimalEntity other)"
+		},
+		{
+			"forge": "finalizeSpawnChildFromBreeding(ServerLevel arg0, Animal arg1, AgeableMob arg2)",
+			"fabric": "breed(ServerWorld world, AnimalEntity other, PassiveEntity baby)"
+		},
+		{
+			"forge": "handleEntityEvent(byte arg0)",
+			"fabric": "handleStatus(byte arg0)"
+		}
+	]
+}

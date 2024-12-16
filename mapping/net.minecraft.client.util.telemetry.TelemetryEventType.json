@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.client.telemetry.TelemetryEventType",
+	"items": [
+		{
+			"forge": "net.minecraft.client.telemetry.TelemetryEventType",
+			"fabric": "net.minecraft.client.util.telemetry.TelemetryEventType"
+		},
+		{
+			"forge": "REGISTRY",
+			"fabric": "TYPES"
+		},
+		{
+			"forge": "REGISTRY",
+			"fabric": "TYPES"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "GLOBAL_PROPERTIES",
+			"fabric": "BASIC_PROPERTIES"
+		},
+		{
+			"forge": "WORLD_SESSION_PROPERTIES",
+			"fabric": "REQUIRED_PROPERTIES"
+		},
+		{
+			"forge": "WORLD_LOADED",
+			"fabric": "WORLD_LOADED"
+		},
+		{
+			"forge": "PERFORMANCE_METRICS",
+			"fabric": "PERFORMANCE_METRICS"
+		},
+		{
+			"forge": "WORLD_LOAD_TIMES",
+			"fabric": "WORLD_LOAD_TIMES"
+		},
+		{
+			"forge": "WORLD_UNLOADED",
+			"fabric": "WORLD_UNLOADED"
+		},
+		{
+			"forge": "ADVANCEMENT_MADE",
+			"fabric": "ADVANCEMENT_MADE"
+		},
+		{
+			"forge": "GAME_LOAD_TIMES",
+			"fabric": "GAME_LOAD_TIMES"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "exportKey",
+			"fabric": "exportKey"
+		},
+		{
+			"forge": "properties",
+			"fabric": "properties"
+		},
+		{
+			"forge": "isOptIn",
+			"fabric": "optional"
+		},
+		{
+			"forge": "codec",
+			"fabric": "codec"
+		},
+		{
+			"forge": "builder(String arg0, String arg1)",
+			"fabric": "builder(String id, String sentEventId)"
+		},
+		{
+			"forge": "builder(String arg0, String arg1)",
+			"fabric": "builder(String id, String sentEventId)"
+		},
+		{
+			"forge": "id()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "properties()",
+			"fabric": "getProperties()"
+		},
+		{
+			"forge": "codec()",
+			"fabric": "getCodec()"
+		},
+		{
+			"forge": "isOptIn()",
+			"fabric": "isOptional()"
+		},
+		{
+			"forge": "export(com.mojang.authlib.minecraft.TelemetrySession arg0, TelemetryPropertyMap arg1)",
+			"fabric": "createEvent(com.mojang.authlib.minecraft.TelemetrySession session, PropertyMap properties)"
+		},
+		{
+			"forge": "contains(TelemetryProperty<T> arg0)",
+			"fabric": "hasProperty(TelemetryEventProperty<T> property)"
+		},
+		{
+			"forge": "title()",
+			"fabric": "getTitle()"
+		},
+		{
+			"forge": "description()",
+			"fabric": "getDescription()"
+		},
+		{
+			"forge": "makeTranslation(String arg0)",
+			"fabric": "getText(String key)"
+		},
+		{
+			"forge": "values()",
+			"fabric": "getTypes()"
+		}
+	]
+}

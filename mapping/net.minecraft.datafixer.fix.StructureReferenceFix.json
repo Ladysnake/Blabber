@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.StructureReferenceCountFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.StructureReferenceCountFix",
+			"fabric": "net.minecraft.datafixer.fix.StructureReferenceFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "updateReferences(com.mojang.serialization.Dynamic<T> arg0)"
+		},
+		{
+			"forge": "setCountToAtLeastOne(com.mojang.serialization.Dynamic<T> arg0)",
+			"fabric": "updateReferences(com.mojang.serialization.Dynamic<T> arg0)"
+		}
+	]
+}

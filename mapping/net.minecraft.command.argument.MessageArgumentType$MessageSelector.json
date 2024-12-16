@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.commands.arguments.MessageArgument$Part",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.arguments.MessageArgument$Part",
+			"fabric": "net.minecraft.command.argument.MessageArgumentType$MessageSelector"
+		},
+		{
+			"forge": "start",
+			"fabric": "start"
+		},
+		{
+			"forge": "start",
+			"fabric": "start"
+		},
+		{
+			"forge": "end",
+			"fabric": "end"
+		},
+		{
+			"forge": "selector",
+			"fabric": "selector"
+		},
+		{
+			"forge": "getStart()",
+			"fabric": "getStart()"
+		},
+		{
+			"forge": "getStart()",
+			"fabric": "getStart()"
+		},
+		{
+			"forge": "getEnd()",
+			"fabric": "getEnd()"
+		},
+		{
+			"forge": "getSelector()",
+			"fabric": "getSelector()"
+		},
+		{
+			"forge": "toComponent(CommandSourceStack arg0)",
+			"fabric": "format(ServerCommandSource source)"
+		}
+	]
+}

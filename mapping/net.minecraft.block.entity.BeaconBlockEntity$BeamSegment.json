@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.block.entity.BeaconBlockEntity$BeaconBeamSection",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.entity.BeaconBlockEntity$BeaconBeamSection",
+			"fabric": "net.minecraft.block.entity.BeaconBlockEntity$BeamSegment"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "color",
+			"fabric": "color"
+		},
+		{
+			"forge": "height",
+			"fabric": "height"
+		},
+		{
+			"forge": "increaseHeight()",
+			"fabric": "increaseHeight()"
+		},
+		{
+			"forge": "increaseHeight()",
+			"fabric": "increaseHeight()"
+		},
+		{
+			"forge": "getColor()",
+			"fabric": "getColor()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		}
+	]
+}

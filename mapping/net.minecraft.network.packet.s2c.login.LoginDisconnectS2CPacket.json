@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.network.protocol.login.ClientboundLoginDisconnectPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.login.ClientboundLoginDisconnectPacket",
+			"fabric": "net.minecraft.network.packet.s2c.login.LoginDisconnectS2CPacket"
+		},
+		{
+			"forge": "reason",
+			"fabric": "reason"
+		},
+		{
+			"forge": "reason",
+			"fabric": "reason"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientLoginPacketListener arg0)",
+			"fabric": "apply(ClientLoginPacketListener arg0)"
+		},
+		{
+			"forge": "getReason()",
+			"fabric": "getReason()"
+		}
+	]
+}

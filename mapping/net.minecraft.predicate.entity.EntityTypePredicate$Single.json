@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.advancements.critereon.EntityTypePredicate$TypePredicate",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.EntityTypePredicate$TypePredicate",
+			"fabric": "net.minecraft.predicate.entity.EntityTypePredicate$Single"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "type",
+			"fabric": "type"
+		},
+		{
+			"forge": "matches(EntityType<?> arg0)",
+			"fabric": "matches(EntityType<?> arg0)"
+		},
+		{
+			"forge": "matches(EntityType<?> arg0)",
+			"fabric": "matches(EntityType<?> arg0)"
+		},
+		{
+			"forge": "serializeToJson()",
+			"fabric": "toJson()"
+		}
+	]
+}

@@ -1,0 +1,77 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil",
+			"fabric": "net.minecraft.client.gui.tooltip.TooltipBackgroundRenderer"
+		},
+		{
+			"forge": "MOUSE_OFFSET",
+			"fabric": "field_41688"
+		},
+		{
+			"forge": "MOUSE_OFFSET",
+			"fabric": "field_41688"
+		},
+		{
+			"forge": "PADDING",
+			"fabric": "field_41693"
+		},
+		{
+			"forge": "PADDING_LEFT",
+			"fabric": "field_41689"
+		},
+		{
+			"forge": "PADDING_RIGHT",
+			"fabric": "field_41690"
+		},
+		{
+			"forge": "PADDING_TOP",
+			"fabric": "field_41691"
+		},
+		{
+			"forge": "PADDING_BOTTOM",
+			"fabric": "field_41692"
+		},
+		{
+			"forge": "BACKGROUND_COLOR",
+			"fabric": "BACKGROUND_COLOR"
+		},
+		{
+			"forge": "BORDER_COLOR_TOP",
+			"fabric": "START_Y_BORDER_COLOR"
+		},
+		{
+			"forge": "BORDER_COLOR_BOTTOM",
+			"fabric": "END_Y_BORDER_COLOR"
+		},
+		{
+			"forge": "renderTooltipBackground(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "render(DrawContext context, int x, int y, int width, int height, int z)"
+		},
+		{
+			"forge": "renderTooltipBackground(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "render(DrawContext context, int x, int y, int width, int height, int z)"
+		},
+		{
+			"forge": "renderFrameGradient(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)",
+			"fabric": "renderBorder(DrawContext context, int x, int y, int width, int height, int z, int startColor, int endColor)"
+		},
+		{
+			"forge": "renderVerticalLine(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "renderVerticalLine(DrawContext context, int x, int y, int height, int z, int color)"
+		},
+		{
+			"forge": "renderVerticalLineGradient(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)",
+			"fabric": "renderVerticalLine(DrawContext context, int x, int y, int height, int z, int startColor, int endColor)"
+		},
+		{
+			"forge": "renderHorizontalLine(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5)",
+			"fabric": "renderHorizontalLine(DrawContext context, int x, int y, int width, int z, int color)"
+		},
+		{
+			"forge": "renderRectangle(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)",
+			"fabric": "renderRectangle(DrawContext context, int x, int y, int width, int height, int z, int color)"
+		}
+	]
+}

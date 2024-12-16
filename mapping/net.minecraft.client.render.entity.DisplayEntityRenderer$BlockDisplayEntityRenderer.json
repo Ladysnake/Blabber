@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.DisplayRenderer$BlockDisplayRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.DisplayRenderer$BlockDisplayRenderer",
+			"fabric": "net.minecraft.client.render.entity.DisplayEntityRenderer$BlockDisplayEntityRenderer"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "blockRenderManager"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "blockRenderManager"
+		},
+		{
+			"forge": "getSubState(Display$BlockDisplay arg0)",
+			"fabric": "getData(DisplayEntity$BlockDisplayEntity arg0)"
+		},
+		{
+			"forge": "getSubState(Display$BlockDisplay arg0)",
+			"fabric": "getData(DisplayEntity$BlockDisplayEntity arg0)"
+		},
+		{
+			"forge": "renderInner(Display$BlockDisplay arg0, Display$BlockDisplay$BlockRenderState arg1, PoseStack arg2, MultiBufferSource arg3, int arg4, float arg5)",
+			"fabric": "render(DisplayEntity$BlockDisplayEntity arg0, DisplayEntity$BlockDisplayEntity$Data arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4, float arg5)"
+		}
+	]
+}

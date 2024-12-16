@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.commands.CommandSource$1",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.CommandSource$1",
+			"fabric": "net.minecraft.server.command.CommandOutput$1"
+		},
+		{
+			"forge": "sendSystemMessage(Component arg0)",
+			"fabric": "sendMessage(Text arg0)"
+		},
+		{
+			"forge": "sendSystemMessage(Component arg0)",
+			"fabric": "sendMessage(Text arg0)"
+		},
+		{
+			"forge": "acceptsSuccess()",
+			"fabric": "shouldReceiveFeedback()"
+		},
+		{
+			"forge": "acceptsFailure()",
+			"fabric": "shouldTrackOutput()"
+		},
+		{
+			"forge": "shouldInformAdmins()",
+			"fabric": "shouldBroadcastConsoleToOps()"
+		}
+	]
+}

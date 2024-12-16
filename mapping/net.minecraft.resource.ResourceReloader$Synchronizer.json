@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.packs.resources.PreparableReloadListener$PreparationBarrier",
+	"items": [
+		{
+			"forge": "net.minecraft.server.packs.resources.PreparableReloadListener$PreparationBarrier",
+			"fabric": "net.minecraft.resource.ResourceReloader$Synchronizer"
+		},
+		{
+			"forge": "wait(T arg0)",
+			"fabric": "whenPrepared(T preparedObject)"
+		},
+		{
+			"forge": "wait(T arg0)",
+			"fabric": "whenPrepared(T preparedObject)"
+		}
+	]
+}

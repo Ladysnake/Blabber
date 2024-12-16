@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootParams",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootParams",
+			"fabric": "net.minecraft.loot.context.LootContextParameterSet"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "level",
+			"fabric": "world"
+		},
+		{
+			"forge": "params",
+			"fabric": "parameters"
+		},
+		{
+			"forge": "dynamicDrops",
+			"fabric": "dynamicDrops"
+		},
+		{
+			"forge": "luck",
+			"fabric": "luck"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "getLevel()",
+			"fabric": "getWorld()"
+		},
+		{
+			"forge": "hasParam(LootContextParam<?> arg0)",
+			"fabric": "contains(LootContextParameter<?> parameter)"
+		},
+		{
+			"forge": "getParameter(LootContextParam<T> arg0)",
+			"fabric": "get(LootContextParameter<T> parameter)"
+		},
+		{
+			"forge": "getOptionalParameter(LootContextParam<T> arg0)",
+			"fabric": "method_51868(LootContextParameter<T> parameter)"
+		},
+		{
+			"forge": "getParamOrNull(LootContextParam<T> arg0)",
+			"fabric": "getOptional(LootContextParameter<T> parameter)"
+		},
+		{
+			"forge": "addDynamicDrops(ResourceLocation arg0, Consumer<ItemStack> arg1)",
+			"fabric": "addDynamicDrops(Identifier id, Consumer<ItemStack> lootConsumer)"
+		},
+		{
+			"forge": "getLuck()",
+			"fabric": "getLuck()"
+		}
+	]
+}

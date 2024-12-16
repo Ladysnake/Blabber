@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.server.PlayerAdvancements$1",
+	"items": [
+		{
+			"forge": "net.minecraft.server.PlayerAdvancements$1",
+			"fabric": "net.minecraft.advancement.PlayerAdvancementTracker$1"
+		}
+	]
+}

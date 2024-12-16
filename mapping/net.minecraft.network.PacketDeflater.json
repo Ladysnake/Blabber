@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.network.CompressionEncoder",
+	"items": [
+		{
+			"forge": "net.minecraft.network.CompressionEncoder",
+			"fabric": "net.minecraft.network.PacketDeflater"
+		},
+		{
+			"forge": "encodeBuf",
+			"fabric": "deflateBuffer"
+		},
+		{
+			"forge": "encodeBuf",
+			"fabric": "deflateBuffer"
+		},
+		{
+			"forge": "deflater",
+			"fabric": "deflater"
+		},
+		{
+			"forge": "threshold",
+			"fabric": "compressionThreshold"
+		},
+		{
+			"forge": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)",
+			"fabric": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)"
+		},
+		{
+			"forge": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)",
+			"fabric": "encode(io.netty.channel.ChannelHandlerContext arg0, io.netty.buffer.ByteBuf arg1, io.netty.buffer.ByteBuf arg2)"
+		},
+		{
+			"forge": "getThreshold()",
+			"fabric": "getCompressionThreshold()"
+		},
+		{
+			"forge": "setThreshold(int arg0)",
+			"fabric": "setCompressionThreshold(int compressionThreshold)"
+		}
+	]
+}

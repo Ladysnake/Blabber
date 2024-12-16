@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.world.level.block.CandleBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.CandleBlock",
+			"fabric": "net.minecraft.block.CandleBlock"
+		},
+		{
+			"forge": "MIN_CANDLES",
+			"fabric": "field_31050"
+		},
+		{
+			"forge": "MIN_CANDLES",
+			"fabric": "field_31050"
+		},
+		{
+			"forge": "MAX_CANDLES",
+			"fabric": "MAX_CANDLE_AMOUNT"
+		},
+		{
+			"forge": "CANDLES",
+			"fabric": "CANDLES"
+		},
+		{
+			"forge": "LIT",
+			"fabric": "LIT"
+		},
+		{
+			"forge": "WATERLOGGED",
+			"fabric": "WATERLOGGED"
+		},
+		{
+			"forge": "LIGHT_EMISSION",
+			"fabric": "STATE_TO_LUMINANCE"
+		},
+		{
+			"forge": "PARTICLE_OFFSETS",
+			"fabric": "CANDLES_TO_PARTICLE_OFFSETS"
+		},
+		{
+			"forge": "ONE_AABB",
+			"fabric": "ONE_CANDLE_SHAPE"
+		},
+		{
+			"forge": "TWO_AABB",
+			"fabric": "TWO_CANDLES_SHAPE"
+		},
+		{
+			"forge": "THREE_AABB",
+			"fabric": "THREE_CANDLES_SHAPE"
+		},
+		{
+			"forge": "FOUR_AABB",
+			"fabric": "FOUR_CANDLES_SHAPE"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "use(BlockState arg0, Level arg1, BlockPos arg2, Player arg3, InteractionHand arg4, BlockHitResult arg5)",
+			"fabric": "onUse(BlockState arg0, World arg1, BlockPos arg2, PlayerEntity arg3, Hand arg4, BlockHitResult arg5)"
+		},
+		{
+			"forge": "canBeReplaced(BlockState arg0, BlockPlaceContext arg1)",
+			"fabric": "canReplace(BlockState arg0, ItemPlacementContext arg1)"
+		},
+		{
+			"forge": "getStateForPlacement(BlockPlaceContext arg0)",
+			"fabric": "getPlacementState(ItemPlacementContext arg0)"
+		},
+		{
+			"forge": "updateShape(BlockState arg0, Direction arg1, BlockState arg2, LevelAccessor arg3, BlockPos arg4, BlockPos arg5)",
+			"fabric": "getStateForNeighborUpdate(BlockState arg0, Direction arg1, BlockState arg2, WorldAccess arg3, BlockPos arg4, BlockPos arg5)"
+		},
+		{
+			"forge": "getFluidState(BlockState arg0)",
+			"fabric": "getFluidState(BlockState arg0)"
+		},
+		{
+			"forge": "getShape(BlockState arg0, BlockGetter arg1, BlockPos arg2, CollisionContext arg3)",
+			"fabric": "getOutlineShape(BlockState arg0, BlockView arg1, BlockPos arg2, ShapeContext arg3)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "placeLiquid(LevelAccessor arg0, BlockPos arg1, BlockState arg2, FluidState arg3)",
+			"fabric": "tryFillWithFluid(WorldAccess arg0, BlockPos arg1, BlockState arg2, FluidState arg3)"
+		},
+		{
+			"forge": "canLight(BlockState arg0)",
+			"fabric": "canBeLit(BlockState state)"
+		},
+		{
+			"forge": "getParticleOffsets(BlockState arg0)",
+			"fabric": "getParticleOffsets(BlockState arg0)"
+		},
+		{
+			"forge": "canBeLit(BlockState arg0)",
+			"fabric": "isNotLit(BlockState arg0)"
+		},
+		{
+			"forge": "canSurvive(BlockState arg0, LevelReader arg1, BlockPos arg2)",
+			"fabric": "canPlaceAt(BlockState arg0, WorldView arg1, BlockPos arg2)"
+		}
+	]
+}

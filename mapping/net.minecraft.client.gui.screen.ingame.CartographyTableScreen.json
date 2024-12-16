@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.gui.screens.inventory.CartographyTableScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.inventory.CartographyTableScreen",
+			"fabric": "net.minecraft.client.gui.screen.ingame.CartographyTableScreen"
+		},
+		{
+			"forge": "BG_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "BG_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		},
+		{
+			"forge": "renderBg(GuiGraphics arg0, float arg1, int arg2, int arg3)",
+			"fabric": "drawBackground(DrawContext arg0, float arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "renderResultingMap(GuiGraphics arg0, Integer arg1, MapItemSavedData arg2, boolean arg3, boolean arg4, boolean arg5, boolean arg6)",
+			"fabric": "drawMap(DrawContext context, Integer mapId, MapState mapState, boolean cloneMode, boolean expandMode, boolean lockMode, boolean cannotExpand)"
+		},
+		{
+			"forge": "renderMap(GuiGraphics arg0, Integer arg1, MapItemSavedData arg2, int arg3, int arg4, float arg5)",
+			"fabric": "drawMap(DrawContext context, Integer mapId, MapState mapState, int x, int y, float scale)"
+		}
+	]
+}

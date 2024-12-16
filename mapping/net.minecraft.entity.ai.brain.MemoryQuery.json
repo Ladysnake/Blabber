@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.declarative.MemoryCondition",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.declarative.MemoryCondition",
+			"fabric": "net.minecraft.entity.ai.brain.MemoryQuery"
+		},
+		{
+			"forge": "memory()",
+			"fabric": "memory()"
+		},
+		{
+			"forge": "memory()",
+			"fabric": "memory()"
+		},
+		{
+			"forge": "condition()",
+			"fabric": "getState()"
+		},
+		{
+			"forge": "createAccessor(Brain<?> arg0, Optional<Value> arg1)",
+			"fabric": "toQueryResult(Brain<?> brain, Optional<Value> value)"
+		}
+	]
+}

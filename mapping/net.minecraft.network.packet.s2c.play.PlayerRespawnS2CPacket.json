@@ -1,0 +1,117 @@
+{
+	"title": "net.minecraft.network.protocol.game.ClientboundRespawnPacket",
+	"items": [
+		{
+			"forge": "net.minecraft.network.protocol.game.ClientboundRespawnPacket",
+			"fabric": "net.minecraft.network.packet.s2c.play.PlayerRespawnS2CPacket"
+		},
+		{
+			"forge": "KEEP_ATTRIBUTES",
+			"fabric": "KEEP_ATTRIBUTES"
+		},
+		{
+			"forge": "KEEP_ATTRIBUTES",
+			"fabric": "KEEP_ATTRIBUTES"
+		},
+		{
+			"forge": "KEEP_ENTITY_DATA",
+			"fabric": "KEEP_TRACKED_DATA"
+		},
+		{
+			"forge": "KEEP_ALL_DATA",
+			"fabric": "KEEP_ALL"
+		},
+		{
+			"forge": "dimensionType",
+			"fabric": "dimensionType"
+		},
+		{
+			"forge": "dimension",
+			"fabric": "dimension"
+		},
+		{
+			"forge": "seed",
+			"fabric": "sha256Seed"
+		},
+		{
+			"forge": "playerGameType",
+			"fabric": "gameMode"
+		},
+		{
+			"forge": "previousPlayerGameType",
+			"fabric": "previousGameMode"
+		},
+		{
+			"forge": "isDebug",
+			"fabric": "debugWorld"
+		},
+		{
+			"forge": "isFlat",
+			"fabric": "flatWorld"
+		},
+		{
+			"forge": "dataToKeep",
+			"fabric": "flag"
+		},
+		{
+			"forge": "lastDeathLocation",
+			"fabric": "lastDeathPos"
+		},
+		{
+			"forge": "portalCooldown",
+			"fabric": "portalCooldown"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "write(FriendlyByteBuf arg0)",
+			"fabric": "write(PacketByteBuf arg0)"
+		},
+		{
+			"forge": "handle(ClientGamePacketListener arg0)",
+			"fabric": "apply(ClientPlayPacketListener arg0)"
+		},
+		{
+			"forge": "getDimensionType()",
+			"fabric": "getDimensionType()"
+		},
+		{
+			"forge": "getDimension()",
+			"fabric": "getDimension()"
+		},
+		{
+			"forge": "getSeed()",
+			"fabric": "getSha256Seed()"
+		},
+		{
+			"forge": "getPlayerGameType()",
+			"fabric": "getGameMode()"
+		},
+		{
+			"forge": "getPreviousPlayerGameType()",
+			"fabric": "getPreviousGameMode()"
+		},
+		{
+			"forge": "isDebug()",
+			"fabric": "isDebugWorld()"
+		},
+		{
+			"forge": "isFlat()",
+			"fabric": "isFlatWorld()"
+		},
+		{
+			"forge": "shouldKeep(byte arg0)",
+			"fabric": "hasFlag(byte flag)"
+		},
+		{
+			"forge": "getLastDeathLocation()",
+			"fabric": "getLastDeathPos()"
+		},
+		{
+			"forge": "getPortalCooldown()",
+			"fabric": "getPortalCooldown()"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.item.SpyglassItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.SpyglassItem",
+			"fabric": "net.minecraft.item.SpyglassItem"
+		},
+		{
+			"forge": "USE_DURATION",
+			"fabric": "MAX_USE_TIME"
+		},
+		{
+			"forge": "USE_DURATION",
+			"fabric": "MAX_USE_TIME"
+		},
+		{
+			"forge": "ZOOM_FOV_MODIFIER",
+			"fabric": "field_30922"
+		},
+		{
+			"forge": "getUseDuration(ItemStack arg0)",
+			"fabric": "getMaxUseTime(ItemStack arg0)"
+		},
+		{
+			"forge": "getUseDuration(ItemStack arg0)",
+			"fabric": "getMaxUseTime(ItemStack arg0)"
+		},
+		{
+			"forge": "getUseAnimation(ItemStack arg0)",
+			"fabric": "getUseAction(ItemStack arg0)"
+		},
+		{
+			"forge": "use(Level arg0, Player arg1, InteractionHand arg2)",
+			"fabric": "use(World arg0, PlayerEntity arg1, Hand arg2)"
+		},
+		{
+			"forge": "finishUsingItem(ItemStack arg0, Level arg1, LivingEntity arg2)",
+			"fabric": "finishUsing(ItemStack arg0, World arg1, LivingEntity arg2)"
+		},
+		{
+			"forge": "releaseUsing(ItemStack arg0, Level arg1, LivingEntity arg2, int arg3)",
+			"fabric": "onStoppedUsing(ItemStack arg0, World arg1, LivingEntity arg2, int arg3)"
+		},
+		{
+			"forge": "stopUsing(LivingEntity arg0)",
+			"fabric": "playStopUsingSound(LivingEntity user)"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.client.Realms32BitWarningStatus",
+	"items": [
+		{
+			"forge": "net.minecraft.client.Realms32BitWarningStatus",
+			"fabric": "net.minecraft.client.realms.util.Realms32BitWarningChecker"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "subscriptionCheck",
+			"fabric": "subscriptionRetrievalFuture"
+		},
+		{
+			"forge": "warningScreenShown",
+			"fabric": "skipDisplay"
+		},
+		{
+			"forge": "showRealms32BitWarningIfNeeded(Screen arg0)",
+			"fabric": "showWarningIfNeeded(Screen parent)"
+		},
+		{
+			"forge": "showRealms32BitWarningIfNeeded(Screen arg0)",
+			"fabric": "showWarningIfNeeded(Screen parent)"
+		},
+		{
+			"forge": "checkForRealmsSubscription()",
+			"fabric": "isSubscribed()"
+		},
+		{
+			"forge": "hasRealmsSubscription()",
+			"fabric": "isSubscribedInternal()"
+		}
+	]
+}

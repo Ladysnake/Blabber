@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.levelgen.feature.featuresize.ThreeLayersFeatureSize",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.feature.featuresize.ThreeLayersFeatureSize",
+			"fabric": "net.minecraft.world.gen.feature.size.ThreeLayersFeatureSize"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "limit",
+			"fabric": "limit"
+		},
+		{
+			"forge": "upperLimit",
+			"fabric": "upperLimit"
+		},
+		{
+			"forge": "lowerSize",
+			"fabric": "lowerSize"
+		},
+		{
+			"forge": "middleSize",
+			"fabric": "middleSize"
+		},
+		{
+			"forge": "upperSize",
+			"fabric": "upperSize"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getSizeAtHeight(int arg0, int arg1)",
+			"fabric": "getRadius(int arg0, int arg1)"
+		}
+	]
+}

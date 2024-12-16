@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces",
+			"fabric": "net.minecraft.structure.OceanMonumentGenerator"
+		}
+	]
+}

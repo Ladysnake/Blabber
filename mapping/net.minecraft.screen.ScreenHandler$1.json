@@ -1,0 +1,21 @@
+{
+	"title": "net.minecraft.world.inventory.AbstractContainerMenu$1",
+	"items": [
+		{
+			"forge": "net.minecraft.world.inventory.AbstractContainerMenu$1",
+			"fabric": "net.minecraft.screen.ScreenHandler$1"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "set(ItemStack arg0)",
+			"fabric": "set(ItemStack arg0)"
+		}
+	]
+}

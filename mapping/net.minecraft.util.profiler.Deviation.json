@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.storage.RecordedDeviation",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.storage.RecordedDeviation",
+			"fabric": "net.minecraft.util.profiler.Deviation"
+		},
+		{
+			"forge": "timestamp",
+			"fabric": "instant"
+		},
+		{
+			"forge": "timestamp",
+			"fabric": "instant"
+		},
+		{
+			"forge": "tick",
+			"fabric": "ticks"
+		},
+		{
+			"forge": "profilerResultAtTick",
+			"fabric": "result"
+		}
+	]
+}

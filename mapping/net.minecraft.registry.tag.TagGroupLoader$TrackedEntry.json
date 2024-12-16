@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.tags.TagLoader$EntryWithSource",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.TagLoader$EntryWithSource",
+			"fabric": "net.minecraft.registry.tag.TagGroupLoader$TrackedEntry"
+		},
+		{
+			"forge": "entry",
+			"fabric": "entry"
+		},
+		{
+			"forge": "entry",
+			"fabric": "entry"
+		},
+		{
+			"forge": "source",
+			"fabric": "source"
+		},
+		{
+			"forge": "entry()",
+			"fabric": "entry()"
+		},
+		{
+			"forge": "entry()",
+			"fabric": "entry()"
+		},
+		{
+			"forge": "source()",
+			"fabric": "source()"
+		}
+	]
+}

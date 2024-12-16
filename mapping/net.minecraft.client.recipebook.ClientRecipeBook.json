@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.client.ClientRecipeBook",
+	"items": [
+		{
+			"forge": "net.minecraft.client.ClientRecipeBook",
+			"fabric": "net.minecraft.client.recipebook.ClientRecipeBook"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "collectionsByTab",
+			"fabric": "resultsByGroup"
+		},
+		{
+			"forge": "allCollections",
+			"fabric": "orderedResults"
+		},
+		{
+			"forge": "setupCollections(Iterable<Recipe<?>> arg0, RegistryAccess arg1)",
+			"fabric": "reload(Iterable<Recipe<?>> recipes, DynamicRegistryManager registryManager)"
+		},
+		{
+			"forge": "setupCollections(Iterable<Recipe<?>> arg0, RegistryAccess arg1)",
+			"fabric": "reload(Iterable<Recipe<?>> recipes, DynamicRegistryManager registryManager)"
+		},
+		{
+			"forge": "categorizeAndGroupRecipes(Iterable<Recipe<?>> arg0)",
+			"fabric": "toGroupedMap(Iterable<Recipe<?>> recipes)"
+		},
+		{
+			"forge": "getCategory(Recipe<?> arg0)",
+			"fabric": "getGroupForRecipe(Recipe<?> recipe)"
+		},
+		{
+			"forge": "getCollections()",
+			"fabric": "getOrderedResults()"
+		},
+		{
+			"forge": "getCollection(RecipeBookCategories arg0)",
+			"fabric": "getResultsForGroup(RecipeBookGroup category)"
+		}
+	]
+}

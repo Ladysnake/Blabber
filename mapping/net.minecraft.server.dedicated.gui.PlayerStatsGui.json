@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.server.gui.StatsComponent",
+	"items": [
+		{
+			"forge": "net.minecraft.server.gui.StatsComponent",
+			"fabric": "net.minecraft.server.dedicated.gui.PlayerStatsGui"
+		},
+		{
+			"forge": "DECIMAL_FORMAT",
+			"fabric": "AVG_TICK_FORMAT"
+		},
+		{
+			"forge": "DECIMAL_FORMAT",
+			"fabric": "AVG_TICK_FORMAT"
+		},
+		{
+			"forge": "values",
+			"fabric": "memoryUsePercentage"
+		},
+		{
+			"forge": "vp",
+			"fabric": "memoryUsePercentagePos"
+		},
+		{
+			"forge": "msgs",
+			"fabric": "lines"
+		},
+		{
+			"forge": "server",
+			"fabric": "server"
+		},
+		{
+			"forge": "timer",
+			"fabric": "timer"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "update()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "update()"
+		},
+		{
+			"forge": "getAverage(long[] arg0)",
+			"fabric": "average(long[] values)"
+		},
+		{
+			"forge": "paint(Graphics arg0)",
+			"fabric": "paint(Graphics graphics)"
+		},
+		{
+			"forge": "close()",
+			"fabric": "stop()"
+		}
+	]
+}

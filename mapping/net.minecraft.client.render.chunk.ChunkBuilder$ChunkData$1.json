@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$CompiledChunk$1",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$CompiledChunk$1",
+			"fabric": "net.minecraft.client.render.chunk.ChunkBuilder$ChunkData$1"
+		},
+		{
+			"forge": "facesCanSeeEachother(Direction arg0, Direction arg1)",
+			"fabric": "isVisibleThrough(Direction arg0, Direction arg1)"
+		},
+		{
+			"forge": "facesCanSeeEachother(Direction arg0, Direction arg1)",
+			"fabric": "isVisibleThrough(Direction arg0, Direction arg1)"
+		}
+	]
+}

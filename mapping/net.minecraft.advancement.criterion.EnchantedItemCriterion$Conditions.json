@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.advancements.critereon.EnchantedItemTrigger$TriggerInstance",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.critereon.EnchantedItemTrigger$TriggerInstance",
+			"fabric": "net.minecraft.advancement.criterion.EnchantedItemCriterion$Conditions"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "item",
+			"fabric": "item"
+		},
+		{
+			"forge": "levels",
+			"fabric": "levels"
+		},
+		{
+			"forge": "enchantedItem()",
+			"fabric": "any()"
+		},
+		{
+			"forge": "enchantedItem()",
+			"fabric": "any()"
+		},
+		{
+			"forge": "matches(ItemStack arg0, int arg1)",
+			"fabric": "matches(ItemStack stack, int levels)"
+		},
+		{
+			"forge": "serializeToJson(SerializationContext arg0)",
+			"fabric": "toJson(AdvancementEntityPredicateSerializer arg0)"
+		}
+	]
+}

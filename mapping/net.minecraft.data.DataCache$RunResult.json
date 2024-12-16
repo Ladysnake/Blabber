@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.data.HashCache$UpdateResult",
+	"items": [
+		{
+			"forge": "net.minecraft.data.HashCache$UpdateResult",
+			"fabric": "net.minecraft.data.DataCache$RunResult"
+		},
+		{
+			"forge": "providerId",
+			"fabric": "providerName"
+		},
+		{
+			"forge": "providerId",
+			"fabric": "providerName"
+		},
+		{
+			"forge": "cache",
+			"fabric": "cache"
+		},
+		{
+			"forge": "writes",
+			"fabric": "cacheMissCount"
+		},
+		{
+			"forge": "providerId()",
+			"fabric": "providerName()"
+		},
+		{
+			"forge": "providerId()",
+			"fabric": "providerName()"
+		},
+		{
+			"forge": "cache()",
+			"fabric": "cache()"
+		},
+		{
+			"forge": "writes()",
+			"fabric": "cacheMissCount()"
+		}
+	]
+}

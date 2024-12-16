@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.util.valueproviders.TrapezoidFloat",
+	"items": [
+		{
+			"forge": "net.minecraft.util.valueproviders.TrapezoidFloat",
+			"fabric": "net.minecraft.util.math.floatprovider.TrapezoidFloatProvider"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "min",
+			"fabric": "min"
+		},
+		{
+			"forge": "max",
+			"fabric": "max"
+		},
+		{
+			"forge": "plateau",
+			"fabric": "plateau"
+		},
+		{
+			"forge": "of(float arg0, float arg1, float arg2)",
+			"fabric": "create(float min, float max, float plateau)"
+		},
+		{
+			"forge": "of(float arg0, float arg1, float arg2)",
+			"fabric": "create(float min, float max, float plateau)"
+		},
+		{
+			"forge": "sample(RandomSource arg0)",
+			"fabric": "get(Random arg0)"
+		},
+		{
+			"forge": "getMinValue()",
+			"fabric": "getMin()"
+		},
+		{
+			"forge": "getMaxValue()",
+			"fabric": "getMax()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

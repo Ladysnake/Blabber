@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.data.info.RegistryDumpReport",
+	"items": [
+		{
+			"forge": "net.minecraft.data.info.RegistryDumpReport",
+			"fabric": "net.minecraft.data.report.RegistryDumpProvider"
+		},
+		{
+			"forge": "output",
+			"fabric": "output"
+		},
+		{
+			"forge": "output",
+			"fabric": "output"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "run(CachedOutput arg0)",
+			"fabric": "run(DataWriter arg0)"
+		},
+		{
+			"forge": "dumpRegistry(Registry<T> arg0)",
+			"fabric": "toJson(Registry<T> registry)"
+		},
+		{
+			"forge": "getName()",
+			"fabric": "getName()"
+		}
+	]
+}

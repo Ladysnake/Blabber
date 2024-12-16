@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.LevelRenderer$RenderInfoMap",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.LevelRenderer$RenderInfoMap",
+			"fabric": "net.minecraft.client.render.WorldRenderer$ChunkInfoList"
+		},
+		{
+			"forge": "infos",
+			"fabric": "current"
+		},
+		{
+			"forge": "infos",
+			"fabric": "current"
+		},
+		{
+			"forge": "put(ChunkRenderDispatcher$RenderChunk arg0, LevelRenderer$RenderChunkInfo arg1)",
+			"fabric": "setInfo(ChunkBuilder$BuiltChunk chunk, WorldRenderer$ChunkInfo info)"
+		},
+		{
+			"forge": "put(ChunkRenderDispatcher$RenderChunk arg0, LevelRenderer$RenderChunkInfo arg1)",
+			"fabric": "setInfo(ChunkBuilder$BuiltChunk chunk, WorldRenderer$ChunkInfo info)"
+		},
+		{
+			"forge": "get(ChunkRenderDispatcher$RenderChunk arg0)",
+			"fabric": "getInfo(ChunkBuilder$BuiltChunk chunk)"
+		}
+	]
+}

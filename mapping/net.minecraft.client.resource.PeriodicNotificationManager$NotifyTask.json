@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.client.PeriodicNotificationManager$NotificationTask",
+	"items": [
+		{
+			"forge": "net.minecraft.client.PeriodicNotificationManager$NotificationTask",
+			"fabric": "net.minecraft.client.resource.PeriodicNotificationManager$NotifyTask"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "notifications",
+			"fabric": "entries"
+		},
+		{
+			"forge": "period",
+			"fabric": "periodMs"
+		},
+		{
+			"forge": "elapsed",
+			"fabric": "delayMs"
+		},
+		{
+			"forge": "reset(List<PeriodicNotificationManager$Notification> arg0, long arg1)",
+			"fabric": "reload(List<PeriodicNotificationManager$Entry> entries, long period)"
+		},
+		{
+			"forge": "reset(List<PeriodicNotificationManager$Notification> arg0, long arg1)",
+			"fabric": "reload(List<PeriodicNotificationManager$Entry> entries, long period)"
+		}
+	]
+}

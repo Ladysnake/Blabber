@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.levelgen.placement.BiomeFilter",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.placement.BiomeFilter",
+			"fabric": "net.minecraft.world.gen.placementmodifier.BiomePlacementModifier"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "INSTANCE",
+			"fabric": "INSTANCE"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "MODIFIER_CODEC"
+		},
+		{
+			"forge": "biome()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "biome()",
+			"fabric": "of()"
+		},
+		{
+			"forge": "shouldPlace(PlacementContext arg0, RandomSource arg1, BlockPos arg2)",
+			"fabric": "shouldPlace(FeaturePlacementContext arg0, Random arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "type()",
+			"fabric": "getType()"
+		}
+	]
+}

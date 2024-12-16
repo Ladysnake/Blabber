@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.server.level.ChunkHolder$LevelChangeListener",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ChunkHolder$LevelChangeListener",
+			"fabric": "net.minecraft.server.world.ChunkHolder$LevelUpdateListener"
+		},
+		{
+			"forge": "onLevelChange(ChunkPos arg0, IntSupplier arg1, int arg2, IntConsumer arg3)",
+			"fabric": "updateLevel(ChunkPos pos, IntSupplier levelGetter, int targetLevel, IntConsumer levelSetter)"
+		},
+		{
+			"forge": "onLevelChange(ChunkPos arg0, IntSupplier arg1, int arg2, IntConsumer arg3)",
+			"fabric": "updateLevel(ChunkPos pos, IntSupplier levelGetter, int targetLevel, IntConsumer levelSetter)"
+		}
+	]
+}

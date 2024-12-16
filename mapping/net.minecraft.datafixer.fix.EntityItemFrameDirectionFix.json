@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.EntityItemFrameDirectionFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.EntityItemFrameDirectionFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityItemFrameDirectionFix"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixDirection(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fixTag(com.mojang.serialization.Dynamic<?> arg0)",
+			"fabric": "fixDirection(com.mojang.serialization.Dynamic<?> arg0)"
+		},
+		{
+			"forge": "fix(com.mojang.datafixers.Typed<?> arg0)",
+			"fabric": "transform(com.mojang.datafixers.Typed<?> arg0)"
+		},
+		{
+			"forge": "direction2dTo3d(byte arg0)",
+			"fabric": "updateDirection(byte oldDirection)"
+		}
+	]
+}

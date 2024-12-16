@@ -1,0 +1,9 @@
+{
+	"title": "net.minecraft.util.profiling.metrics.profiling.ServerMetricsSamplersProvider$1",
+	"items": [
+		{
+			"forge": "net.minecraft.util.profiling.metrics.profiling.ServerMetricsSamplersProvider$1",
+			"fabric": "net.minecraft.util.profiler.ServerSamplerSource$1"
+		}
+	]
+}

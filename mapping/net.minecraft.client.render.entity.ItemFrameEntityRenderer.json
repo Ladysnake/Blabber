@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.client.renderer.entity.ItemFrameRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.ItemFrameRenderer",
+			"fabric": "net.minecraft.client.render.entity.ItemFrameEntityRenderer"
+		},
+		{
+			"forge": "FRAME_LOCATION",
+			"fabric": "NORMAL_FRAME"
+		},
+		{
+			"forge": "FRAME_LOCATION",
+			"fabric": "NORMAL_FRAME"
+		},
+		{
+			"forge": "MAP_FRAME_LOCATION",
+			"fabric": "MAP_FRAME"
+		},
+		{
+			"forge": "GLOW_FRAME_LOCATION",
+			"fabric": "GLOW_FRAME"
+		},
+		{
+			"forge": "GLOW_MAP_FRAME_LOCATION",
+			"fabric": "MAP_GLOW_FRAME"
+		},
+		{
+			"forge": "GLOW_FRAME_BRIGHTNESS",
+			"fabric": "GLOW_FRAME_BLOCK_LIGHT"
+		},
+		{
+			"forge": "BRIGHT_MAP_LIGHT_ADJUSTMENT",
+			"fabric": "field_32933"
+		},
+		{
+			"forge": "itemRenderer",
+			"fabric": "itemRenderer"
+		},
+		{
+			"forge": "blockRenderer",
+			"fabric": "blockRenderManager"
+		},
+		{
+			"forge": "getBlockLightLevel(T arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(T arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "getBlockLightLevel(T arg0, BlockPos arg1)",
+			"fabric": "getBlockLight(T arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "render(T arg0, float arg1, float arg2, PoseStack arg3, MultiBufferSource arg4, int arg5)",
+			"fabric": "render(T arg0, float arg1, float arg2, MatrixStack arg3, VertexConsumerProvider arg4, int arg5)"
+		},
+		{
+			"forge": "getLightVal(T arg0, int arg1, int arg2)",
+			"fabric": "getLight(T itemFrame, int glowLight, int regularLight)"
+		},
+		{
+			"forge": "getFrameModelResourceLoc(T arg0, ItemStack arg1)",
+			"fabric": "getModelId(T entity, ItemStack stack)"
+		},
+		{
+			"forge": "getRenderOffset(T arg0, float arg1)",
+			"fabric": "getPositionOffset(T arg0, float arg1)"
+		},
+		{
+			"forge": "getTextureLocation(T arg0)",
+			"fabric": "getTexture(T arg0)"
+		},
+		{
+			"forge": "shouldShowName(T arg0)",
+			"fabric": "hasLabel(T arg0)"
+		},
+		{
+			"forge": "renderNameTag(T arg0, Component arg1, PoseStack arg2, MultiBufferSource arg3, int arg4)",
+			"fabric": "renderLabelIfPresent(T arg0, Text arg1, MatrixStack arg2, VertexConsumerProvider arg3, int arg4)"
+		}
+	]
+}

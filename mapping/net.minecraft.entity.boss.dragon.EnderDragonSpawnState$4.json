@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.level.dimension.end.DragonRespawnAnimation$4",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.dimension.end.DragonRespawnAnimation$4",
+			"fabric": "net.minecraft.entity.boss.dragon.EnderDragonSpawnState$4"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, EndDragonFight arg1, List<EndCrystal> arg2, int arg3, BlockPos arg4)",
+			"fabric": "run(ServerWorld arg0, EnderDragonFight arg1, List<EndCrystalEntity> arg2, int arg3, BlockPos arg4)"
+		},
+		{
+			"forge": "tick(ServerLevel arg0, EndDragonFight arg1, List<EndCrystal> arg2, int arg3, BlockPos arg4)",
+			"fabric": "run(ServerWorld arg0, EnderDragonFight arg1, List<EndCrystalEntity> arg2, int arg3, BlockPos arg4)"
+		}
+	]
+}

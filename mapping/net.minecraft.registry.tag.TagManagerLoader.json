@@ -1,0 +1,45 @@
+{
+	"title": "net.minecraft.tags.TagManager",
+	"items": [
+		{
+			"forge": "net.minecraft.tags.TagManager",
+			"fabric": "net.minecraft.registry.tag.TagManagerLoader"
+		},
+		{
+			"forge": "CUSTOM_REGISTRY_DIRECTORIES",
+			"fabric": "DIRECTORIES"
+		},
+		{
+			"forge": "CUSTOM_REGISTRY_DIRECTORIES",
+			"fabric": "DIRECTORIES"
+		},
+		{
+			"forge": "registryAccess",
+			"fabric": "registryManager"
+		},
+		{
+			"forge": "results",
+			"fabric": "registryTags"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getRegistryTags()"
+		},
+		{
+			"forge": "getResult()",
+			"fabric": "getRegistryTags()"
+		},
+		{
+			"forge": "getTagDir(ResourceKey<? extends Registry<?>> arg0)",
+			"fabric": "getPath(RegistryKey<? extends Registry<?>> registry)"
+		},
+		{
+			"forge": "reload(PreparableReloadListener$PreparationBarrier arg0, ResourceManager arg1, ProfilerFiller arg2, ProfilerFiller arg3, Executor arg4, Executor arg5)",
+			"fabric": "reload(ResourceReloader$Synchronizer arg0, ResourceManager arg1, Profiler arg2, Profiler arg3, Executor arg4, Executor arg5)"
+		},
+		{
+			"forge": "createLoader(ResourceManager arg0, Executor arg1, RegistryAccess$RegistryEntry<T> arg2)",
+			"fabric": "buildRequiredGroup(ResourceManager resourceManager, Executor prepareExecutor, DynamicRegistryManager$Entry<T> requirement)"
+		}
+	]
+}

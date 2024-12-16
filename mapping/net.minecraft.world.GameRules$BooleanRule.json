@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.GameRules$BooleanValue",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.GameRules$BooleanValue",
+			"fabric": "net.minecraft.world.GameRules$BooleanRule"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "value",
+			"fabric": "value"
+		},
+		{
+			"forge": "create(boolean arg0, BiConsumer<MinecraftServer, GameRules$BooleanValue> arg1)",
+			"fabric": "create(boolean initialValue, BiConsumer<MinecraftServer, GameRules$BooleanRule> changeCallback)"
+		},
+		{
+			"forge": "create(boolean arg0, BiConsumer<MinecraftServer, GameRules$BooleanValue> arg1)",
+			"fabric": "create(boolean initialValue, BiConsumer<MinecraftServer, GameRules$BooleanRule> changeCallback)"
+		},
+		{
+			"forge": "create(boolean arg0)",
+			"fabric": "create(boolean initialValue)"
+		},
+		{
+			"forge": "updateFromArgument(com.mojang.brigadier.context.CommandContext<CommandSourceStack> arg0, String arg1)",
+			"fabric": "setFromArgument(com.mojang.brigadier.context.CommandContext<ServerCommandSource> arg0, String arg1)"
+		},
+		{
+			"forge": "get()",
+			"fabric": "get()"
+		},
+		{
+			"forge": "set(boolean arg0, MinecraftServer arg1)",
+			"fabric": "set(boolean value, MinecraftServer server)"
+		},
+		{
+			"forge": "serialize()",
+			"fabric": "serialize()"
+		},
+		{
+			"forge": "deserialize(String arg0)",
+			"fabric": "deserialize(String arg0)"
+		},
+		{
+			"forge": "getCommandResult()",
+			"fabric": "getCommandResult()"
+		},
+		{
+			"forge": "getSelf()",
+			"fabric": "getThis()"
+		},
+		{
+			"forge": "copy()",
+			"fabric": "copy()"
+		},
+		{
+			"forge": "setFrom(GameRules$BooleanValue arg0, MinecraftServer arg1)",
+			"fabric": "setValue(GameRules$BooleanRule arg0, MinecraftServer arg1)"
+		}
+	]
+}

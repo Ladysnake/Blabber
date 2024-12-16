@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.server.level.ChunkHolder$ChunkSaveDebug",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.ChunkHolder$ChunkSaveDebug",
+			"fabric": "net.minecraft.server.world.ChunkHolder$MultithreadAction"
+		},
+		{
+			"forge": "thread",
+			"fabric": "thread"
+		},
+		{
+			"forge": "thread",
+			"fabric": "thread"
+		},
+		{
+			"forge": "future",
+			"fabric": "action"
+		},
+		{
+			"forge": "source",
+			"fabric": "actionDesc"
+		}
+	]
+}

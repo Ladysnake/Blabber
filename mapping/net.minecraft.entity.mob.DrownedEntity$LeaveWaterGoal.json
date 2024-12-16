@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.monster.Drowned$DrownedGoToBeachGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Drowned$DrownedGoToBeachGoal",
+			"fabric": "net.minecraft.entity.mob.DrownedEntity$LeaveWaterGoal"
+		},
+		{
+			"forge": "drowned",
+			"fabric": "drowned"
+		},
+		{
+			"forge": "drowned",
+			"fabric": "drowned"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canContinueToUse()",
+			"fabric": "shouldContinue()"
+		},
+		{
+			"forge": "isValidTarget(LevelReader arg0, BlockPos arg1)",
+			"fabric": "isTargetPos(WorldView arg0, BlockPos arg1)"
+		},
+		{
+			"forge": "start()",
+			"fabric": "start()"
+		},
+		{
+			"forge": "stop()",
+			"fabric": "stop()"
+		}
+	]
+}

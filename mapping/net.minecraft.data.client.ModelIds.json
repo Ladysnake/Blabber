@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.data.models.model.ModelLocationUtils",
+	"items": [
+		{
+			"forge": "net.minecraft.data.models.model.ModelLocationUtils",
+			"fabric": "net.minecraft.data.client.ModelIds"
+		},
+		{
+			"forge": "decorateBlockModelLocation(String arg0)",
+			"fabric": "getMinecraftNamespacedBlock(String name)"
+		},
+		{
+			"forge": "decorateBlockModelLocation(String arg0)",
+			"fabric": "getMinecraftNamespacedBlock(String name)"
+		},
+		{
+			"forge": "decorateItemModelLocation(String arg0)",
+			"fabric": "getMinecraftNamespacedItem(String name)"
+		},
+		{
+			"forge": "getModelLocation(Block arg0, String arg1)",
+			"fabric": "getBlockSubModelId(Block block, String suffix)"
+		},
+		{
+			"forge": "getModelLocation(Block arg0)",
+			"fabric": "getBlockModelId(Block block)"
+		},
+		{
+			"forge": "getModelLocation(Item arg0)",
+			"fabric": "getItemModelId(Item item)"
+		},
+		{
+			"forge": "getModelLocation(Item arg0, String arg1)",
+			"fabric": "getItemSubModelId(Item item, String suffix)"
+		}
+	]
+}

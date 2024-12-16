@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.level.biome.Climate$Sampler",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.biome.Climate$Sampler",
+			"fabric": "net.minecraft.world.biome.source.util.MultiNoiseUtil$MultiNoiseSampler"
+		},
+		{
+			"forge": "temperature",
+			"fabric": "temperature"
+		},
+		{
+			"forge": "temperature",
+			"fabric": "temperature"
+		},
+		{
+			"forge": "humidity",
+			"fabric": "humidity"
+		},
+		{
+			"forge": "continentalness",
+			"fabric": "continentalness"
+		},
+		{
+			"forge": "erosion",
+			"fabric": "erosion"
+		},
+		{
+			"forge": "depth",
+			"fabric": "depth"
+		},
+		{
+			"forge": "weirdness",
+			"fabric": "weirdness"
+		},
+		{
+			"forge": "spawnTarget",
+			"fabric": "spawnTarget"
+		},
+		{
+			"forge": "sample(int arg0, int arg1, int arg2)",
+			"fabric": "sample(int x, int y, int z)"
+		},
+		{
+			"forge": "sample(int arg0, int arg1, int arg2)",
+			"fabric": "sample(int x, int y, int z)"
+		},
+		{
+			"forge": "findSpawnPosition()",
+			"fabric": "findBestSpawnPosition()"
+		},
+		{
+			"forge": "temperature()",
+			"fabric": "temperature()"
+		},
+		{
+			"forge": "humidity()",
+			"fabric": "humidity()"
+		},
+		{
+			"forge": "continentalness()",
+			"fabric": "continentalness()"
+		},
+		{
+			"forge": "erosion()",
+			"fabric": "erosion()"
+		},
+		{
+			"forge": "depth()",
+			"fabric": "depth()"
+		},
+		{
+			"forge": "weirdness()",
+			"fabric": "weirdness()"
+		},
+		{
+			"forge": "spawnTarget()",
+			"fabric": "spawnTarget()"
+		}
+	]
+}

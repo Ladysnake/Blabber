@@ -1,0 +1,109 @@
+{
+	"title": "net.minecraft.advancements.Advancement",
+	"items": [
+		{
+			"forge": "net.minecraft.advancements.Advancement",
+			"fabric": "net.minecraft.advancement.Advancement"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "parent",
+			"fabric": "parent"
+		},
+		{
+			"forge": "display",
+			"fabric": "display"
+		},
+		{
+			"forge": "rewards",
+			"fabric": "rewards"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "criteria",
+			"fabric": "criteria"
+		},
+		{
+			"forge": "requirements",
+			"fabric": "requirements"
+		},
+		{
+			"forge": "children",
+			"fabric": "children"
+		},
+		{
+			"forge": "chatComponent",
+			"fabric": "text"
+		},
+		{
+			"forge": "sendsTelemetryEvent",
+			"fabric": "sendsTelemetryEvent"
+		},
+		{
+			"forge": "deconstruct()",
+			"fabric": "createTask()"
+		},
+		{
+			"forge": "deconstruct()",
+			"fabric": "createTask()"
+		},
+		{
+			"forge": "getParent()",
+			"fabric": "getParent()"
+		},
+		{
+			"forge": "getRoot()",
+			"fabric": "getRoot()"
+		},
+		{
+			"forge": "getRoot(Advancement arg0)",
+			"fabric": "getRoot(Advancement advancement)"
+		},
+		{
+			"forge": "getDisplay()",
+			"fabric": "getDisplay()"
+		},
+		{
+			"forge": "sendsTelemetryEvent()",
+			"fabric": "sendsTelemetryEvent()"
+		},
+		{
+			"forge": "getRewards()",
+			"fabric": "getRewards()"
+		},
+		{
+			"forge": "getChildren()",
+			"fabric": "getChildren()"
+		},
+		{
+			"forge": "getCriteria()",
+			"fabric": "getCriteria()"
+		},
+		{
+			"forge": "getMaxCriteraRequired()",
+			"fabric": "getRequirementCount()"
+		},
+		{
+			"forge": "addChild(Advancement arg0)",
+			"fabric": "addChild(Advancement child)"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getRequirements()",
+			"fabric": "getRequirements()"
+		},
+		{
+			"forge": "getChatComponent()",
+			"fabric": "toHoverableText()"
+		}
+	]
+}

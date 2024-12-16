@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.OwnableEntity",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.OwnableEntity",
+			"fabric": "net.minecraft.entity.Tameable"
+		},
+		{
+			"forge": "getOwnerUUID()",
+			"fabric": "getOwnerUuid()"
+		},
+		{
+			"forge": "getOwnerUUID()",
+			"fabric": "getOwnerUuid()"
+		},
+		{
+			"forge": "level()",
+			"fabric": "method_48926()"
+		},
+		{
+			"forge": "getOwner()",
+			"fabric": "getOwner()"
+		}
+	]
+}

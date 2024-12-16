@@ -1,0 +1,133 @@
+{
+	"title": "net.minecraft.server.players.GameProfileCache",
+	"items": [
+		{
+			"forge": "net.minecraft.server.players.GameProfileCache",
+			"fabric": "net.minecraft.util.UserCache"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "GAMEPROFILES_MRU_LIMIT",
+			"fabric": "MAX_SAVED_ENTRIES"
+		},
+		{
+			"forge": "GAMEPROFILES_EXPIRATION_MONTHS",
+			"fabric": "field_29789"
+		},
+		{
+			"forge": "usesAuthentication",
+			"fabric": "useRemote"
+		},
+		{
+			"forge": "profilesByName",
+			"fabric": "byName"
+		},
+		{
+			"forge": "profilesByUUID",
+			"fabric": "byUuid"
+		},
+		{
+			"forge": "requests",
+			"fabric": "pendingRequests"
+		},
+		{
+			"forge": "profileRepository",
+			"fabric": "profileRepository"
+		},
+		{
+			"forge": "gson",
+			"fabric": "gson"
+		},
+		{
+			"forge": "file",
+			"fabric": "cacheFile"
+		},
+		{
+			"forge": "operationCount",
+			"fabric": "accessCount"
+		},
+		{
+			"forge": "executor",
+			"fabric": "executor"
+		},
+		{
+			"forge": "safeAdd(GameProfileCache$GameProfileInfo arg0)",
+			"fabric": "add(UserCache$Entry entry)"
+		},
+		{
+			"forge": "safeAdd(GameProfileCache$GameProfileInfo arg0)",
+			"fabric": "add(UserCache$Entry entry)"
+		},
+		{
+			"forge": "lookupGameProfile(com.mojang.authlib.GameProfileRepository arg0, String arg1)",
+			"fabric": "findProfileByName(com.mojang.authlib.GameProfileRepository repository, String name)"
+		},
+		{
+			"forge": "setUsesAuthentication(boolean arg0)",
+			"fabric": "setUseRemote(boolean value)"
+		},
+		{
+			"forge": "usesAuthentication()",
+			"fabric": "shouldUseRemote()"
+		},
+		{
+			"forge": "add(com.mojang.authlib.GameProfile arg0)",
+			"fabric": "add(com.mojang.authlib.GameProfile profile)"
+		},
+		{
+			"forge": "getNextOperation()",
+			"fabric": "incrementAndGetAccessCount()"
+		},
+		{
+			"forge": "get(String arg0)",
+			"fabric": "findByName(String name)"
+		},
+		{
+			"forge": "getAsync(String arg0, Consumer<Optional<com.mojang.authlib.GameProfile>> arg1)",
+			"fabric": "findByNameAsync(String username, Consumer<Optional<com.mojang.authlib.GameProfile>> consumer)"
+		},
+		{
+			"forge": "get(UUID arg0)",
+			"fabric": "getByUuid(UUID uuid)"
+		},
+		{
+			"forge": "setExecutor(Executor arg0)",
+			"fabric": "setExecutor(Executor executor)"
+		},
+		{
+			"forge": "clearExecutor()",
+			"fabric": "clearExecutor()"
+		},
+		{
+			"forge": "createDateFormat()",
+			"fabric": "getDateFormat()"
+		},
+		{
+			"forge": "load()",
+			"fabric": "load()"
+		},
+		{
+			"forge": "save()",
+			"fabric": "save()"
+		},
+		{
+			"forge": "getTopMRUProfiles(int arg0)",
+			"fabric": "getLastAccessedEntries(int limit)"
+		},
+		{
+			"forge": "writeGameProfile(GameProfileCache$GameProfileInfo arg0, DateFormat arg1)",
+			"fabric": "entryToJson(UserCache$Entry entry, DateFormat dateFormat)"
+		},
+		{
+			"forge": "readGameProfile(com.google.gson.JsonElement arg0, DateFormat arg1)",
+			"fabric": "entryFromJson(com.google.gson.JsonElement json, DateFormat dateFormat)"
+		}
+	]
+}

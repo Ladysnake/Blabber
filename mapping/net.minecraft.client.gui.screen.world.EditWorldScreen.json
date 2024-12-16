@@ -1,0 +1,73 @@
+{
+	"title": "net.minecraft.client.gui.screens.worldselection.EditWorldScreen",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.screens.worldselection.EditWorldScreen",
+			"fabric": "net.minecraft.client.gui.screen.world.EditWorldScreen"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "NAME_LABEL",
+			"fabric": "ENTER_NAME_TEXT"
+		},
+		{
+			"forge": "renameButton",
+			"fabric": "saveButton"
+		},
+		{
+			"forge": "callback",
+			"fabric": "callback"
+		},
+		{
+			"forge": "nameEdit",
+			"fabric": "levelNameTextField"
+		},
+		{
+			"forge": "levelAccess",
+			"fabric": "storageSession"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "tick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "init()",
+			"fabric": "init()"
+		},
+		{
+			"forge": "resize(Minecraft arg0, int arg1, int arg2)",
+			"fabric": "resize(MinecraftClient arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "onClose()",
+			"fabric": "close()"
+		},
+		{
+			"forge": "onRename()",
+			"fabric": "commit()"
+		},
+		{
+			"forge": "makeBackupAndShowToast(LevelStorageSource arg0, String arg1)",
+			"fabric": "onBackupConfirm(LevelStorage storage, String levelName)"
+		},
+		{
+			"forge": "makeBackupAndShowToast(LevelStorageSource$LevelStorageAccess arg0)",
+			"fabric": "backupLevel(LevelStorage$Session storageSession)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, float arg3)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, float arg3)"
+		}
+	]
+}

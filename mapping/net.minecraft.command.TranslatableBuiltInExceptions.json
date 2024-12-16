@@ -1,0 +1,121 @@
+{
+	"title": "net.minecraft.commands.BrigadierExceptions",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.BrigadierExceptions",
+			"fabric": "net.minecraft.command.TranslatableBuiltInExceptions"
+		},
+		{
+			"forge": "DOUBLE_TOO_SMALL",
+			"fabric": "DOUBLE_TOO_LOW"
+		},
+		{
+			"forge": "DOUBLE_TOO_SMALL",
+			"fabric": "DOUBLE_TOO_LOW"
+		},
+		{
+			"forge": "DOUBLE_TOO_BIG",
+			"fabric": "DOUBLE_TOO_HIGH"
+		},
+		{
+			"forge": "FLOAT_TOO_SMALL",
+			"fabric": "FLOAT_TOO_LOW"
+		},
+		{
+			"forge": "FLOAT_TOO_BIG",
+			"fabric": "FLOAT_TOO_HIGH"
+		},
+		{
+			"forge": "INTEGER_TOO_SMALL",
+			"fabric": "INTEGER_TOO_LOW"
+		},
+		{
+			"forge": "INTEGER_TOO_BIG",
+			"fabric": "INTEGER_TOO_HIGH"
+		},
+		{
+			"forge": "LONG_TOO_SMALL",
+			"fabric": "LONG_TOO_LOW"
+		},
+		{
+			"forge": "LONG_TOO_BIG",
+			"fabric": "LONG_TOO_HIGH"
+		},
+		{
+			"forge": "LITERAL_INCORRECT",
+			"fabric": "LITERAL_INCORRECT"
+		},
+		{
+			"forge": "READER_EXPECTED_START_OF_QUOTE",
+			"fabric": "READER_EXPECTED_START_QUOTE"
+		},
+		{
+			"forge": "READER_EXPECTED_END_OF_QUOTE",
+			"fabric": "READER_EXPECTED_END_QUOTE"
+		},
+		{
+			"forge": "READER_INVALID_ESCAPE",
+			"fabric": "READER_INVALID_ESCAPE"
+		},
+		{
+			"forge": "READER_INVALID_BOOL",
+			"fabric": "READER_INVALID_BOOL"
+		},
+		{
+			"forge": "READER_INVALID_INT",
+			"fabric": "READER_INVALID_INT"
+		},
+		{
+			"forge": "READER_EXPECTED_INT",
+			"fabric": "READER_EXPECTED_INT"
+		},
+		{
+			"forge": "READER_INVALID_LONG",
+			"fabric": "READER_INVALID_LONG"
+		},
+		{
+			"forge": "READER_EXPECTED_LONG",
+			"fabric": "READER_EXPECTED_LONG"
+		},
+		{
+			"forge": "READER_INVALID_DOUBLE",
+			"fabric": "READER_INVALID_DOUBLE"
+		},
+		{
+			"forge": "READER_EXPECTED_DOUBLE",
+			"fabric": "READER_EXPECTED_DOUBLE"
+		},
+		{
+			"forge": "READER_INVALID_FLOAT",
+			"fabric": "READER_INVALID_FLOAT"
+		},
+		{
+			"forge": "READER_EXPECTED_FLOAT",
+			"fabric": "READER_EXPECTED_FLOAT"
+		},
+		{
+			"forge": "READER_EXPECTED_BOOL",
+			"fabric": "READER_EXPECTED_BOOL"
+		},
+		{
+			"forge": "READER_EXPECTED_SYMBOL",
+			"fabric": "READER_EXPECTED_SYMBOL"
+		},
+		{
+			"forge": "DISPATCHER_UNKNOWN_COMMAND",
+			"fabric": "DISPATCHER_UNKNOWN_COMMAND"
+		},
+		{
+			"forge": "DISPATCHER_UNKNOWN_ARGUMENT",
+			"fabric": "DISPATCHER_UNKNOWN_ARGUMENT"
+		},
+		{
+			"forge": "DISPATCHER_EXPECTED_ARGUMENT_SEPARATOR",
+			"fabric": "DISPATCHER_EXPECTED_ARGUMENT_SEPARATOR"
+		},
+		{
+			"forge": "DISPATCHER_PARSE_EXCEPTION",
+			"fabric": "DISPATCHER_PARSE_EXCEPTION"
+		}
+	]
+}

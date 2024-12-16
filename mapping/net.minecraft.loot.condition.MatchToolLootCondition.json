@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.predicates.MatchTool",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.predicates.MatchTool",
+			"fabric": "net.minecraft.loot.condition.MatchToolLootCondition"
+		},
+		{
+			"forge": "predicate",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "predicate",
+			"fabric": "predicate"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "getReferencedContextParams()",
+			"fabric": "getRequiredParameters()"
+		},
+		{
+			"forge": "test(LootContext arg0)",
+			"fabric": "test(LootContext arg0)"
+		},
+		{
+			"forge": "toolMatches(ItemPredicate$Builder arg0)",
+			"fabric": "builder(ItemPredicate$Builder predicate)"
+		}
+	]
+}

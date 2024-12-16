@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.SetBannerPatternFunction",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.SetBannerPatternFunction",
+			"fabric": "net.minecraft.loot.function.SetBannerPatternFunction"
+		},
+		{
+			"forge": "patterns",
+			"fabric": "patterns"
+		},
+		{
+			"forge": "patterns",
+			"fabric": "patterns"
+		},
+		{
+			"forge": "append",
+			"fabric": "append"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "run(ItemStack arg0, LootContext arg1)",
+			"fabric": "process(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		},
+		{
+			"forge": "setBannerPattern(boolean arg0)",
+			"fabric": "builder(boolean append)"
+		}
+	]
+}

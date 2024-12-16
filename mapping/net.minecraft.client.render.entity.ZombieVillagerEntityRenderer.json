@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.client.renderer.entity.ZombieVillagerRenderer",
+	"items": [
+		{
+			"forge": "net.minecraft.client.renderer.entity.ZombieVillagerRenderer",
+			"fabric": "net.minecraft.client.render.entity.ZombieVillagerEntityRenderer"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "ZOMBIE_VILLAGER_LOCATION",
+			"fabric": "TEXTURE"
+		},
+		{
+			"forge": "getTextureLocation(ZombieVillager arg0)",
+			"fabric": "getTexture(ZombieVillagerEntity arg0)"
+		},
+		{
+			"forge": "getTextureLocation(ZombieVillager arg0)",
+			"fabric": "getTexture(ZombieVillagerEntity arg0)"
+		},
+		{
+			"forge": "isShaking(ZombieVillager arg0)",
+			"fabric": "isShaking(ZombieVillagerEntity arg0)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.entity.boss.wither.WitherBoss$WitherDoNothingGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.boss.wither.WitherBoss$WitherDoNothingGoal",
+			"fabric": "net.minecraft.entity.boss.WitherEntity$DescendAtHalfHealthGoal"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

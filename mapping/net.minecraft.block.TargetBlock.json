@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.level.block.TargetBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.TargetBlock",
+			"fabric": "net.minecraft.block.TargetBlock"
+		},
+		{
+			"forge": "OUTPUT_POWER",
+			"fabric": "POWER"
+		},
+		{
+			"forge": "OUTPUT_POWER",
+			"fabric": "POWER"
+		},
+		{
+			"forge": "ACTIVATION_TICKS_ARROWS",
+			"fabric": "RECOVERABLE_POWER_DELAY"
+		},
+		{
+			"forge": "ACTIVATION_TICKS_OTHER",
+			"fabric": "REGULAR_POWER_DELAY"
+		},
+		{
+			"forge": "onProjectileHit(Level arg0, BlockState arg1, BlockHitResult arg2, Projectile arg3)",
+			"fabric": "onProjectileHit(World arg0, BlockState arg1, BlockHitResult arg2, ProjectileEntity arg3)"
+		},
+		{
+			"forge": "onProjectileHit(Level arg0, BlockState arg1, BlockHitResult arg2, Projectile arg3)",
+			"fabric": "onProjectileHit(World arg0, BlockState arg1, BlockHitResult arg2, ProjectileEntity arg3)"
+		},
+		{
+			"forge": "updateRedstoneOutput(LevelAccessor arg0, BlockState arg1, BlockHitResult arg2, Entity arg3)",
+			"fabric": "trigger(WorldAccess world, BlockState state, BlockHitResult hitResult, Entity entity)"
+		},
+		{
+			"forge": "getRedstoneStrength(BlockHitResult arg0, Vec3 arg1)",
+			"fabric": "calculatePower(BlockHitResult hitResult, Vec3d pos)"
+		},
+		{
+			"forge": "setOutputPower(LevelAccessor arg0, BlockState arg1, int arg2, BlockPos arg3, int arg4)",
+			"fabric": "setPower(WorldAccess world, BlockState state, int power, BlockPos pos, int delay)"
+		},
+		{
+			"forge": "tick(BlockState arg0, ServerLevel arg1, BlockPos arg2, RandomSource arg3)",
+			"fabric": "scheduledTick(BlockState arg0, ServerWorld arg1, BlockPos arg2, Random arg3)"
+		},
+		{
+			"forge": "getSignal(BlockState arg0, BlockGetter arg1, BlockPos arg2, Direction arg3)",
+			"fabric": "getWeakRedstonePower(BlockState arg0, BlockView arg1, BlockPos arg2, Direction arg3)"
+		},
+		{
+			"forge": "isSignalSource(BlockState arg0)",
+			"fabric": "emitsRedstonePower(BlockState arg0)"
+		},
+		{
+			"forge": "createBlockStateDefinition(StateDefinition$Builder<Block, BlockState> arg0)",
+			"fabric": "appendProperties(StateManager$Builder<Block, BlockState> arg0)"
+		},
+		{
+			"forge": "onPlace(BlockState arg0, Level arg1, BlockPos arg2, BlockState arg3, boolean arg4)",
+			"fabric": "onBlockAdded(BlockState arg0, World arg1, BlockPos arg2, BlockState arg3, boolean arg4)"
+		}
+	]
+}

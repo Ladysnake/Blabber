@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.level.block.BaseEntityBlock",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.block.BaseEntityBlock",
+			"fabric": "net.minecraft.block.BlockWithEntity"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "getRenderShape(BlockState arg0)",
+			"fabric": "getRenderType(BlockState arg0)"
+		},
+		{
+			"forge": "triggerEvent(BlockState arg0, Level arg1, BlockPos arg2, int arg3, int arg4)",
+			"fabric": "onSyncedBlockEvent(BlockState arg0, World arg1, BlockPos arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "getMenuProvider(BlockState arg0, Level arg1, BlockPos arg2)",
+			"fabric": "createScreenHandlerFactory(BlockState arg0, World arg1, BlockPos arg2)"
+		},
+		{
+			"forge": "createTickerHelper(BlockEntityType<A> arg0, BlockEntityType<E> arg1, BlockEntityTicker<? super E> arg2)",
+			"fabric": "checkType(BlockEntityType<A> givenType, BlockEntityType<E> expectedType, BlockEntityTicker<? super E> ticker)"
+		}
+	]
+}

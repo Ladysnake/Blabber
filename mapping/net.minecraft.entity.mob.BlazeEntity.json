@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.entity.monster.Blaze",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.monster.Blaze",
+			"fabric": "net.minecraft.entity.mob.BlazeEntity"
+		},
+		{
+			"forge": "allowedHeightOffset",
+			"fabric": "eyeOffset"
+		},
+		{
+			"forge": "allowedHeightOffset",
+			"fabric": "eyeOffset"
+		},
+		{
+			"forge": "nextHeightOffsetChangeTick",
+			"fabric": "eyeOffsetCooldown"
+		},
+		{
+			"forge": "DATA_FLAGS_ID",
+			"fabric": "BLAZE_FLAGS"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "registerGoals()",
+			"fabric": "initGoals()"
+		},
+		{
+			"forge": "createAttributes()",
+			"fabric": "createBlazeAttributes()"
+		},
+		{
+			"forge": "defineSynchedData()",
+			"fabric": "initDataTracker()"
+		},
+		{
+			"forge": "getAmbientSound()",
+			"fabric": "getAmbientSound()"
+		},
+		{
+			"forge": "getHurtSound(DamageSource arg0)",
+			"fabric": "getHurtSound(DamageSource arg0)"
+		},
+		{
+			"forge": "getDeathSound()",
+			"fabric": "getDeathSound()"
+		},
+		{
+			"forge": "getLightLevelDependentMagicValue()",
+			"fabric": "getBrightnessAtEyes()"
+		},
+		{
+			"forge": "aiStep()",
+			"fabric": "tickMovement()"
+		},
+		{
+			"forge": "isSensitiveToWater()",
+			"fabric": "hurtByWater()"
+		},
+		{
+			"forge": "customServerAiStep()",
+			"fabric": "mobTick()"
+		},
+		{
+			"forge": "isOnFire()",
+			"fabric": "isOnFire()"
+		},
+		{
+			"forge": "isCharged()",
+			"fabric": "isFireActive()"
+		},
+		{
+			"forge": "setCharged(boolean arg0)",
+			"fabric": "setFireActive(boolean fireActive)"
+		}
+	]
+}

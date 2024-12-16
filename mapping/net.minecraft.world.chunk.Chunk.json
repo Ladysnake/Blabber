@@ -1,0 +1,349 @@
+{
+	"title": "net.minecraft.world.level.chunk.ChunkAccess",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.chunk.ChunkAccess",
+			"fabric": "net.minecraft.world.chunk.Chunk"
+		},
+		{
+			"forge": "NO_FILLED_SECTION",
+			"fabric": "MISSING_SECTION"
+		},
+		{
+			"forge": "NO_FILLED_SECTION",
+			"fabric": "MISSING_SECTION"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "EMPTY_REFERENCE_SET",
+			"fabric": "EMPTY_STRUCTURE_REFERENCES"
+		},
+		{
+			"forge": "postProcessing",
+			"fabric": "postProcessingLists"
+		},
+		{
+			"forge": "unsaved",
+			"fabric": "needsSaving"
+		},
+		{
+			"forge": "isLightCorrect",
+			"fabric": "lightOn"
+		},
+		{
+			"forge": "chunkPos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "inhabitedTime",
+			"fabric": "inhabitedTime"
+		},
+		{
+			"forge": "carverBiomeSettings",
+			"fabric": "generationSettings"
+		},
+		{
+			"forge": "noiseChunk",
+			"fabric": "chunkNoiseSampler"
+		},
+		{
+			"forge": "upgradeData",
+			"fabric": "upgradeData"
+		},
+		{
+			"forge": "blendingData",
+			"fabric": "blendingData"
+		},
+		{
+			"forge": "heightmaps",
+			"fabric": "heightmaps"
+		},
+		{
+			"forge": "skyLightSources",
+			"fabric": "chunkSkyLight"
+		},
+		{
+			"forge": "structureStarts",
+			"fabric": "structureStarts"
+		},
+		{
+			"forge": "structuresRefences",
+			"fabric": "structureReferences"
+		},
+		{
+			"forge": "pendingBlockEntities",
+			"fabric": "blockEntityNbts"
+		},
+		{
+			"forge": "blockEntities",
+			"fabric": "blockEntities"
+		},
+		{
+			"forge": "levelHeightAccessor",
+			"fabric": "heightLimitView"
+		},
+		{
+			"forge": "sections",
+			"fabric": "sectionArray"
+		},
+		{
+			"forge": "replaceMissingSections(Registry<Biome> arg0, LevelChunkSection[] arg1)",
+			"fabric": "fillSectionArray(Registry<Biome> biomeRegistry, ChunkSection[] sectionArray)"
+		},
+		{
+			"forge": "replaceMissingSections(Registry<Biome> arg0, LevelChunkSection[] arg1)",
+			"fabric": "fillSectionArray(Registry<Biome> biomeRegistry, ChunkSection[] sectionArray)"
+		},
+		{
+			"forge": "getListenerRegistry(int arg0)",
+			"fabric": "getGameEventDispatcher(int ySectionCoord)"
+		},
+		{
+			"forge": "setBlockState(BlockPos arg0, BlockState arg1, boolean arg2)",
+			"fabric": "setBlockState(BlockPos pos, BlockState state, boolean moved)"
+		},
+		{
+			"forge": "setBlockEntity(BlockEntity arg0)",
+			"fabric": "setBlockEntity(BlockEntity blockEntity)"
+		},
+		{
+			"forge": "addEntity(Entity arg0)",
+			"fabric": "addEntity(Entity entity)"
+		},
+		{
+			"forge": "getHighestFilledSectionIndex()",
+			"fabric": "getHighestNonEmptySection()"
+		},
+		{
+			"forge": "getHighestSectionPosition()",
+			"fabric": "getHighestNonEmptySectionYOffset()"
+		},
+		{
+			"forge": "getBlockEntitiesPos()",
+			"fabric": "getBlockEntityPositions()"
+		},
+		{
+			"forge": "getSections()",
+			"fabric": "getSectionArray()"
+		},
+		{
+			"forge": "getSection(int arg0)",
+			"fabric": "getSection(int yIndex)"
+		},
+		{
+			"forge": "getHeightmaps()",
+			"fabric": "getHeightmaps()"
+		},
+		{
+			"forge": "setHeightmap(Heightmap$Types arg0, long[] arg1)",
+			"fabric": "setHeightmap(Heightmap$Type type, long[] heightmap)"
+		},
+		{
+			"forge": "getOrCreateHeightmapUnprimed(Heightmap$Types arg0)",
+			"fabric": "getHeightmap(Heightmap$Type type)"
+		},
+		{
+			"forge": "hasPrimedHeightmap(Heightmap$Types arg0)",
+			"fabric": "hasHeightmap(Heightmap$Type type)"
+		},
+		{
+			"forge": "getHeight(Heightmap$Types arg0, int arg1, int arg2)",
+			"fabric": "sampleHeightmap(Heightmap$Type type, int x, int z)"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "getStartForStructure(Structure arg0)",
+			"fabric": "getStructureStart(Structure arg0)"
+		},
+		{
+			"forge": "setStartForStructure(Structure arg0, StructureStart arg1)",
+			"fabric": "setStructureStart(Structure arg0, StructureStart arg1)"
+		},
+		{
+			"forge": "getAllStarts()",
+			"fabric": "getStructureStarts()"
+		},
+		{
+			"forge": "setAllStarts(Map<Structure, StructureStart> arg0)",
+			"fabric": "setStructureStarts(Map<Structure, StructureStart> structureStarts)"
+		},
+		{
+			"forge": "getReferencesForStructure(Structure arg0)",
+			"fabric": "getStructureReferences(Structure arg0)"
+		},
+		{
+			"forge": "addReferenceForStructure(Structure arg0, long arg1)",
+			"fabric": "addStructureReference(Structure arg0, long arg1)"
+		},
+		{
+			"forge": "getAllReferences()",
+			"fabric": "getStructureReferences()"
+		},
+		{
+			"forge": "setAllReferences(Map<Structure, it.unimi.dsi.fastutil.longs.LongSet> arg0)",
+			"fabric": "setStructureReferences(Map<Structure, it.unimi.dsi.fastutil.longs.LongSet> arg0)"
+		},
+		{
+			"forge": "isYSpaceEmpty(int arg0, int arg1)",
+			"fabric": "areSectionsEmptyBetween(int lowerHeight, int upperHeight)"
+		},
+		{
+			"forge": "setUnsaved(boolean arg0)",
+			"fabric": "setNeedsSaving(boolean needsSaving)"
+		},
+		{
+			"forge": "isUnsaved()",
+			"fabric": "needsSaving()"
+		},
+		{
+			"forge": "getStatus()",
+			"fabric": "getStatus()"
+		},
+		{
+			"forge": "getHighestGeneratedStatus()",
+			"fabric": "method_51526()"
+		},
+		{
+			"forge": "removeBlockEntity(BlockPos arg0)",
+			"fabric": "removeBlockEntity(BlockPos pos)"
+		},
+		{
+			"forge": "markPosForPostprocessing(BlockPos arg0)",
+			"fabric": "markBlockForPostProcessing(BlockPos pos)"
+		},
+		{
+			"forge": "getPostProcessing()",
+			"fabric": "getPostProcessingLists()"
+		},
+		{
+			"forge": "addPackedPostProcess(short arg0, int arg1)",
+			"fabric": "markBlockForPostProcessing(short packedPos, int index)"
+		},
+		{
+			"forge": "setBlockEntityNbt(CompoundTag arg0)",
+			"fabric": "addPendingBlockEntityNbt(NbtCompound nbt)"
+		},
+		{
+			"forge": "getBlockEntityNbt(BlockPos arg0)",
+			"fabric": "getBlockEntityNbt(BlockPos pos)"
+		},
+		{
+			"forge": "getBlockEntityNbtForSaving(BlockPos arg0)",
+			"fabric": "getPackedBlockEntityNbt(BlockPos pos)"
+		},
+		{
+			"forge": "findBlockLightSources(BiConsumer<BlockPos, BlockState> arg0)",
+			"fabric": "forEachLightSource(BiConsumer<BlockPos, BlockState> arg0)"
+		},
+		{
+			"forge": "findBlocks(Predicate<BlockState> arg0, BiConsumer<BlockPos, BlockState> arg1)",
+			"fabric": "forEachBlockMatchingPredicate(Predicate<BlockState> predicate, BiConsumer<BlockPos, BlockState> consumer)"
+		},
+		{
+			"forge": "getBlockTicks()",
+			"fabric": "getBlockTickScheduler()"
+		},
+		{
+			"forge": "getFluidTicks()",
+			"fabric": "getFluidTickScheduler()"
+		},
+		{
+			"forge": "getTicksForSerialization()",
+			"fabric": "getTickSchedulers()"
+		},
+		{
+			"forge": "getUpgradeData()",
+			"fabric": "getUpgradeData()"
+		},
+		{
+			"forge": "isOldNoiseGeneration()",
+			"fabric": "usesOldNoise()"
+		},
+		{
+			"forge": "getBlendingData()",
+			"fabric": "getBlendingData()"
+		},
+		{
+			"forge": "setBlendingData(BlendingData arg0)",
+			"fabric": "setBlendingData(BlendingData blendingData)"
+		},
+		{
+			"forge": "getInhabitedTime()",
+			"fabric": "getInhabitedTime()"
+		},
+		{
+			"forge": "incrementInhabitedTime(long arg0)",
+			"fabric": "increaseInhabitedTime(long delta)"
+		},
+		{
+			"forge": "setInhabitedTime(long arg0)",
+			"fabric": "setInhabitedTime(long inhabitedTime)"
+		},
+		{
+			"forge": "getOrCreateOffsetList(it.unimi.dsi.fastutil.shorts.ShortList[] arg0, int arg1)",
+			"fabric": "getList(it.unimi.dsi.fastutil.shorts.ShortList[] lists, int index)"
+		},
+		{
+			"forge": "isLightCorrect()",
+			"fabric": "isLightOn()"
+		},
+		{
+			"forge": "setLightCorrect(boolean arg0)",
+			"fabric": "setLightOn(boolean lightOn)"
+		},
+		{
+			"forge": "getMinBuildHeight()",
+			"fabric": "getBottomY()"
+		},
+		{
+			"forge": "getHeight()",
+			"fabric": "getHeight()"
+		},
+		{
+			"forge": "getOrCreateNoiseChunk(Function<ChunkAccess, NoiseChunk> arg0)",
+			"fabric": "getOrCreateChunkNoiseSampler(Function<Chunk, ChunkNoiseSampler> chunkNoiseSamplerCreator)"
+		},
+		{
+			"forge": "carverBiome(Supplier<BiomeGenerationSettings> arg0)",
+			"fabric": "getOrCreateGenerationSettings(Supplier<GenerationSettings> generationSettingsCreator)"
+		},
+		{
+			"forge": "getNoiseBiome(int arg0, int arg1, int arg2)",
+			"fabric": "getBiomeForNoiseGen(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "fillBiomesFromNoise(BiomeResolver arg0, Climate$Sampler arg1)",
+			"fabric": "populateBiomes(BiomeSupplier biomeSupplier, MultiNoiseUtil$MultiNoiseSampler sampler)"
+		},
+		{
+			"forge": "hasAnyStructureReferences()",
+			"fabric": "hasStructureReferences()"
+		},
+		{
+			"forge": "getBelowZeroRetrogen()",
+			"fabric": "getBelowZeroRetrogen()"
+		},
+		{
+			"forge": "isUpgrading()",
+			"fabric": "hasBelowZeroRetrogen()"
+		},
+		{
+			"forge": "getHeightAccessorForGeneration()",
+			"fabric": "getHeightLimitView()"
+		},
+		{
+			"forge": "initializeLightSources()",
+			"fabric": "refreshSurfaceY()"
+		},
+		{
+			"forge": "getSkyLightSources()",
+			"fabric": "getChunkSkyLight()"
+		}
+	]
+}

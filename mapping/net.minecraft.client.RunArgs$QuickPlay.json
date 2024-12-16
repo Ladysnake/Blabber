@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.client.main.GameConfig$QuickPlayData",
+	"items": [
+		{
+			"forge": "net.minecraft.client.main.GameConfig$QuickPlayData",
+			"fabric": "net.minecraft.client.RunArgs$QuickPlay"
+		},
+		{
+			"forge": "path",
+			"fabric": "path"
+		},
+		{
+			"forge": "path",
+			"fabric": "path"
+		},
+		{
+			"forge": "singleplayer",
+			"fabric": "singleplayer"
+		},
+		{
+			"forge": "multiplayer",
+			"fabric": "multiplayer"
+		},
+		{
+			"forge": "realms",
+			"fabric": "realms"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "isEnabled()"
+		},
+		{
+			"forge": "isEnabled()",
+			"fabric": "isEnabled()"
+		},
+		{
+			"forge": "path()",
+			"fabric": "path()"
+		},
+		{
+			"forge": "singleplayer()",
+			"fabric": "singleplayer()"
+		},
+		{
+			"forge": "multiplayer()",
+			"fabric": "multiplayer()"
+		},
+		{
+			"forge": "realms()",
+			"fabric": "realms()"
+		}
+	]
+}

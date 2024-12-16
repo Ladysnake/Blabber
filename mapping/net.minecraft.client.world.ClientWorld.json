@@ -1,0 +1,441 @@
+{
+	"title": "net.minecraft.client.multiplayer.ClientLevel",
+	"items": [
+		{
+			"forge": "net.minecraft.client.multiplayer.ClientLevel",
+			"fabric": "net.minecraft.client.world.ClientWorld"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "LOGGER",
+			"fabric": "LOGGER"
+		},
+		{
+			"forge": "FLUID_PARTICLE_SPAWN_OFFSET",
+			"fabric": "PARTICLE_Y_OFFSET"
+		},
+		{
+			"forge": "NORMAL_LIGHT_UPDATES_PER_FRAME",
+			"fabric": "field_34805"
+		},
+		{
+			"forge": "LIGHT_UPDATE_QUEUE_SIZE_THRESHOLD",
+			"fabric": "field_34806"
+		},
+		{
+			"forge": "tickingEntities",
+			"fabric": "entityList"
+		},
+		{
+			"forge": "entityStorage",
+			"fabric": "entityManager"
+		},
+		{
+			"forge": "connection",
+			"fabric": "networkHandler"
+		},
+		{
+			"forge": "levelRenderer",
+			"fabric": "worldRenderer"
+		},
+		{
+			"forge": "clientLevelData",
+			"fabric": "clientWorldProperties"
+		},
+		{
+			"forge": "effects",
+			"fabric": "dimensionEffects"
+		},
+		{
+			"forge": "minecraft",
+			"fabric": "client"
+		},
+		{
+			"forge": "players",
+			"fabric": "players"
+		},
+		{
+			"forge": "scoreboard",
+			"fabric": "scoreboard"
+		},
+		{
+			"forge": "mapData",
+			"fabric": "mapStates"
+		},
+		{
+			"forge": "CLOUD_COLOR",
+			"fabric": "field_32640"
+		},
+		{
+			"forge": "skyFlashTime",
+			"fabric": "lightningTicksLeft"
+		},
+		{
+			"forge": "tintCaches",
+			"fabric": "colorCache"
+		},
+		{
+			"forge": "chunkSource",
+			"fabric": "chunkManager"
+		},
+		{
+			"forge": "lightUpdateQueue",
+			"fabric": "chunkUpdaters"
+		},
+		{
+			"forge": "serverSimulationDistance",
+			"fabric": "simulationDistance"
+		},
+		{
+			"forge": "blockStatePredictionHandler",
+			"fabric": "pendingUpdateManager"
+		},
+		{
+			"forge": "MARKER_PARTICLE_ITEMS",
+			"fabric": "BLOCK_MARKER_ITEMS"
+		},
+		{
+			"forge": "handleBlockChangedAck(int arg0)",
+			"fabric": "handlePlayerActionResponse(int sequence)"
+		},
+		{
+			"forge": "handleBlockChangedAck(int arg0)",
+			"fabric": "handlePlayerActionResponse(int sequence)"
+		},
+		{
+			"forge": "setServerVerifiedBlockState(BlockPos arg0, BlockState arg1, int arg2)",
+			"fabric": "handleBlockUpdate(BlockPos pos, BlockState state, int flags)"
+		},
+		{
+			"forge": "syncBlockState(BlockPos arg0, BlockState arg1, Vec3 arg2)",
+			"fabric": "processPendingUpdate(BlockPos pos, BlockState state, Vec3d playerPos)"
+		},
+		{
+			"forge": "getBlockStatePredictionHandler()",
+			"fabric": "getPendingUpdateManager()"
+		},
+		{
+			"forge": "setBlock(BlockPos arg0, BlockState arg1, int arg2, int arg3)",
+			"fabric": "setBlockState(BlockPos arg0, BlockState arg1, int arg2, int arg3)"
+		},
+		{
+			"forge": "queueLightUpdate(Runnable arg0)",
+			"fabric": "enqueueChunkUpdate(Runnable updater)"
+		},
+		{
+			"forge": "pollLightUpdates()",
+			"fabric": "runQueuedChunkUpdates()"
+		},
+		{
+			"forge": "isLightUpdateQueueEmpty()",
+			"fabric": "hasNoChunkUpdaters()"
+		},
+		{
+			"forge": "effects()",
+			"fabric": "getDimensionEffects()"
+		},
+		{
+			"forge": "tick(BooleanSupplier arg0)",
+			"fabric": "tick(BooleanSupplier shouldKeepTicking)"
+		},
+		{
+			"forge": "tickTime()",
+			"fabric": "tickTime()"
+		},
+		{
+			"forge": "setGameTime(long arg0)",
+			"fabric": "setTime(long time)"
+		},
+		{
+			"forge": "setDayTime(long arg0)",
+			"fabric": "setTimeOfDay(long timeOfDay)"
+		},
+		{
+			"forge": "entitiesForRendering()",
+			"fabric": "getEntities()"
+		},
+		{
+			"forge": "tickEntities()",
+			"fabric": "tickEntities()"
+		},
+		{
+			"forge": "shouldTickDeath(Entity arg0)",
+			"fabric": "shouldUpdatePostDeath(Entity arg0)"
+		},
+		{
+			"forge": "tickNonPassenger(Entity arg0)",
+			"fabric": "tickEntity(Entity entity)"
+		},
+		{
+			"forge": "tickPassenger(Entity arg0, Entity arg1)",
+			"fabric": "tickPassenger(Entity entity, Entity passenger)"
+		},
+		{
+			"forge": "unload(LevelChunk arg0)",
+			"fabric": "unloadBlockEntities(WorldChunk chunk)"
+		},
+		{
+			"forge": "onChunkLoaded(ChunkPos arg0)",
+			"fabric": "resetChunkColor(ChunkPos chunkPos)"
+		},
+		{
+			"forge": "clearTintCaches()",
+			"fabric": "reloadColor()"
+		},
+		{
+			"forge": "hasChunk(int arg0, int arg1)",
+			"fabric": "isChunkLoaded(int arg0, int arg1)"
+		},
+		{
+			"forge": "getEntityCount()",
+			"fabric": "getRegularEntityCount()"
+		},
+		{
+			"forge": "addPlayer(int arg0, AbstractClientPlayer arg1)",
+			"fabric": "addPlayer(int id, AbstractClientPlayerEntity player)"
+		},
+		{
+			"forge": "putNonPlayerEntity(int arg0, Entity arg1)",
+			"fabric": "addEntity(int id, Entity entity)"
+		},
+		{
+			"forge": "addEntity(int arg0, Entity arg1)",
+			"fabric": "addEntityPrivate(int id, Entity entity)"
+		},
+		{
+			"forge": "removeEntity(int arg0, Entity$RemovalReason arg1)",
+			"fabric": "removeEntity(int entityId, Entity$RemovalReason removalReason)"
+		},
+		{
+			"forge": "getEntity(int arg0)",
+			"fabric": "getEntityById(int arg0)"
+		},
+		{
+			"forge": "disconnect()",
+			"fabric": "disconnect()"
+		},
+		{
+			"forge": "animateTick(int arg0, int arg1, int arg2)",
+			"fabric": "doRandomBlockDisplayTicks(int centerX, int centerY, int centerZ)"
+		},
+		{
+			"forge": "getMarkerParticleTarget()",
+			"fabric": "getBlockParticle()"
+		},
+		{
+			"forge": "doAnimateTick(int arg0, int arg1, int arg2, int arg3, RandomSource arg4, Block arg5, BlockPos$MutableBlockPos arg6)",
+			"fabric": "randomBlockDisplayTick(int centerX, int centerY, int centerZ, int radius, Random random, Block block, BlockPos$Mutable pos)"
+		},
+		{
+			"forge": "trySpawnDripParticles(BlockPos arg0, BlockState arg1, ParticleOptions arg2, boolean arg3)",
+			"fabric": "addParticle(BlockPos pos, BlockState state, ParticleEffect parameters, boolean solidBelow)"
+		},
+		{
+			"forge": "spawnParticle(BlockPos arg0, ParticleOptions arg1, VoxelShape arg2, double arg3)",
+			"fabric": "addParticle(BlockPos pos, ParticleEffect parameters, VoxelShape shape, double y)"
+		},
+		{
+			"forge": "spawnFluidParticle(double arg0, double arg1, double arg2, double arg3, double arg4, ParticleOptions arg5)",
+			"fabric": "addParticle(double minX, double maxX, double minZ, double maxZ, double y, ParticleEffect parameters)"
+		},
+		{
+			"forge": "fillReportDetails(CrashReport arg0)",
+			"fabric": "addDetailsToCrashReport(CrashReport arg0)"
+		},
+		{
+			"forge": "playSeededSound(Player arg0, double arg1, double arg2, double arg3, Holder<SoundEvent> arg4, SoundSource arg5, float arg6, float arg7, long arg8)",
+			"fabric": "playSound(PlayerEntity arg0, double arg1, double arg2, double arg3, RegistryEntry<SoundEvent> arg4, SoundCategory arg5, float arg6, float arg7, long arg8)"
+		},
+		{
+			"forge": "playSeededSound(Player arg0, Entity arg1, Holder<SoundEvent> arg2, SoundSource arg3, float arg4, float arg5, long arg6)",
+			"fabric": "playSoundFromEntity(PlayerEntity arg0, Entity arg1, RegistryEntry<SoundEvent> arg2, SoundCategory arg3, float arg4, float arg5, long arg6)"
+		},
+		{
+			"forge": "playLocalSound(double arg0, double arg1, double arg2, SoundEvent arg3, SoundSource arg4, float arg5, float arg6, boolean arg7)",
+			"fabric": "playSound(double arg0, double arg1, double arg2, SoundEvent arg3, SoundCategory arg4, float arg5, float arg6, boolean arg7)"
+		},
+		{
+			"forge": "playSound(double arg0, double arg1, double arg2, SoundEvent arg3, SoundSource arg4, float arg5, float arg6, boolean arg7, long arg8)",
+			"fabric": "playSound(double x, double y, double z, SoundEvent event, SoundCategory category, float volume, float pitch, boolean useDistance, long seed)"
+		},
+		{
+			"forge": "createFireworks(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, CompoundTag arg6)",
+			"fabric": "addFireworkParticle(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, NbtCompound arg6)"
+		},
+		{
+			"forge": "sendPacketToServer(Packet<?> arg0)",
+			"fabric": "sendPacket(Packet<?> arg0)"
+		},
+		{
+			"forge": "getRecipeManager()",
+			"fabric": "getRecipeManager()"
+		},
+		{
+			"forge": "setScoreboard(Scoreboard arg0)",
+			"fabric": "setScoreboard(Scoreboard scoreboard)"
+		},
+		{
+			"forge": "getBlockTicks()",
+			"fabric": "getBlockTickScheduler()"
+		},
+		{
+			"forge": "getFluidTicks()",
+			"fabric": "getFluidTickScheduler()"
+		},
+		{
+			"forge": "getChunkSource()",
+			"fabric": "getChunkManager()"
+		},
+		{
+			"forge": "getMapData(String arg0)",
+			"fabric": "getMapState(String arg0)"
+		},
+		{
+			"forge": "overrideMapData(String arg0, MapItemSavedData arg1)",
+			"fabric": "putClientsideMapState(String id, MapState state)"
+		},
+		{
+			"forge": "setMapData(String arg0, MapItemSavedData arg1)",
+			"fabric": "putMapState(String arg0, MapState arg1)"
+		},
+		{
+			"forge": "getFreeMapId()",
+			"fabric": "getNextMapId()"
+		},
+		{
+			"forge": "getScoreboard()",
+			"fabric": "getScoreboard()"
+		},
+		{
+			"forge": "sendBlockUpdated(BlockPos arg0, BlockState arg1, BlockState arg2, int arg3)",
+			"fabric": "updateListeners(BlockPos arg0, BlockState arg1, BlockState arg2, int arg3)"
+		},
+		{
+			"forge": "setBlocksDirty(BlockPos arg0, BlockState arg1, BlockState arg2)",
+			"fabric": "scheduleBlockRerenderIfNeeded(BlockPos arg0, BlockState arg1, BlockState arg2)"
+		},
+		{
+			"forge": "setSectionDirtyWithNeighbors(int arg0, int arg1, int arg2)",
+			"fabric": "scheduleBlockRenders(int x, int y, int z)"
+		},
+		{
+			"forge": "destroyBlockProgress(int arg0, BlockPos arg1, int arg2)",
+			"fabric": "setBlockBreakingInfo(int arg0, BlockPos arg1, int arg2)"
+		},
+		{
+			"forge": "globalLevelEvent(int arg0, BlockPos arg1, int arg2)",
+			"fabric": "syncGlobalEvent(int arg0, BlockPos arg1, int arg2)"
+		},
+		{
+			"forge": "levelEvent(Player arg0, int arg1, BlockPos arg2, int arg3)",
+			"fabric": "syncWorldEvent(PlayerEntity arg0, int arg1, BlockPos arg2, int arg3)"
+		},
+		{
+			"forge": "addParticle(ParticleOptions arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6)",
+			"fabric": "addParticle(ParticleEffect arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6)"
+		},
+		{
+			"forge": "addParticle(ParticleOptions arg0, boolean arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "addParticle(ParticleEffect arg0, boolean arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)"
+		},
+		{
+			"forge": "addAlwaysVisibleParticle(ParticleOptions arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6)",
+			"fabric": "addImportantParticle(ParticleEffect arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6)"
+		},
+		{
+			"forge": "addAlwaysVisibleParticle(ParticleOptions arg0, boolean arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)",
+			"fabric": "addImportantParticle(ParticleEffect arg0, boolean arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)"
+		},
+		{
+			"forge": "players()",
+			"fabric": "getPlayers()"
+		},
+		{
+			"forge": "getUncachedNoiseBiome(int arg0, int arg1, int arg2)",
+			"fabric": "getGeneratorStoredBiome(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "getSkyDarken(float arg0)",
+			"fabric": "getSkyBrightness(float tickDelta)"
+		},
+		{
+			"forge": "getSkyColor(Vec3 arg0, float arg1)",
+			"fabric": "getSkyColor(Vec3d cameraPos, float tickDelta)"
+		},
+		{
+			"forge": "getCloudColor(float arg0)",
+			"fabric": "getCloudsColor(float tickDelta)"
+		},
+		{
+			"forge": "getStarBrightness(float arg0)",
+			"fabric": "method_23787(float arg0)"
+		},
+		{
+			"forge": "getSkyFlashTime()",
+			"fabric": "getLightningTicksLeft()"
+		},
+		{
+			"forge": "setSkyFlashTime(int arg0)",
+			"fabric": "setLightningTicksLeft(int arg0)"
+		},
+		{
+			"forge": "getShade(Direction arg0, boolean arg1)",
+			"fabric": "getBrightness(Direction arg0, boolean arg1)"
+		},
+		{
+			"forge": "getBlockTint(BlockPos arg0, ColorResolver arg1)",
+			"fabric": "getColor(BlockPos arg0, ColorResolver arg1)"
+		},
+		{
+			"forge": "calculateBlockTint(BlockPos arg0, ColorResolver arg1)",
+			"fabric": "calculateColor(BlockPos pos, ColorResolver colorResolver)"
+		},
+		{
+			"forge": "setDefaultSpawnPos(BlockPos arg0, float arg1)",
+			"fabric": "setSpawnPos(BlockPos pos, float angle)"
+		},
+		{
+			"forge": "getLevelData()",
+			"fabric": "getLevelProperties()"
+		},
+		{
+			"forge": "gameEvent(GameEvent arg0, Vec3 arg1, GameEvent$Context arg2)",
+			"fabric": "emitGameEvent(GameEvent arg0, Vec3d arg1, GameEvent$Emitter arg2)"
+		},
+		{
+			"forge": "getAllMapData()",
+			"fabric": "getMapStates()"
+		},
+		{
+			"forge": "addMapData(Map<String, MapItemSavedData> arg0)",
+			"fabric": "putMapStates(Map<String, MapState> mapStates)"
+		},
+		{
+			"forge": "getEntities()",
+			"fabric": "getEntityLookup()"
+		},
+		{
+			"forge": "gatherChunkSourceStats()",
+			"fabric": "asString()"
+		},
+		{
+			"forge": "addDestroyBlockEffect(BlockPos arg0, BlockState arg1)",
+			"fabric": "addBlockBreakParticles(BlockPos arg0, BlockState arg1)"
+		},
+		{
+			"forge": "setServerSimulationDistance(int arg0)",
+			"fabric": "setSimulationDistance(int simulationDistance)"
+		},
+		{
+			"forge": "getServerSimulationDistance()",
+			"fabric": "getSimulationDistance()"
+		},
+		{
+			"forge": "enabledFeatures()",
+			"fabric": "getEnabledFeatures()"
+		}
+	]
+}

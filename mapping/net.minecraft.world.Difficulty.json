@@ -1,0 +1,81 @@
+{
+	"title": "net.minecraft.world.Difficulty",
+	"items": [
+		{
+			"forge": "net.minecraft.world.Difficulty",
+			"fabric": "net.minecraft.world.Difficulty"
+		},
+		{
+			"forge": "PEACEFUL",
+			"fabric": "PEACEFUL"
+		},
+		{
+			"forge": "PEACEFUL",
+			"fabric": "PEACEFUL"
+		},
+		{
+			"forge": "EASY",
+			"fabric": "EASY"
+		},
+		{
+			"forge": "NORMAL",
+			"fabric": "NORMAL"
+		},
+		{
+			"forge": "HARD",
+			"fabric": "HARD"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "CODEC",
+			"fabric": "CODEC"
+		},
+		{
+			"forge": "BY_ID",
+			"fabric": "BY_ID"
+		},
+		{
+			"forge": "id",
+			"fabric": "id"
+		},
+		{
+			"forge": "key",
+			"fabric": "name"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getId()"
+		},
+		{
+			"forge": "getDisplayName()",
+			"fabric": "getTranslatableName()"
+		},
+		{
+			"forge": "getInfo()",
+			"fabric": "getInfo()"
+		},
+		{
+			"forge": "byId(int arg0)",
+			"fabric": "byId(int id)"
+		},
+		{
+			"forge": "byName(String arg0)",
+			"fabric": "byName(String name)"
+		},
+		{
+			"forge": "getKey()",
+			"fabric": "getName()"
+		},
+		{
+			"forge": "getSerializedName()",
+			"fabric": "asString()"
+		}
+	]
+}

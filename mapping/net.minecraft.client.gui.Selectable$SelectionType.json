@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.client.gui.narration.NarratableEntry$NarrationPriority",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.narration.NarratableEntry$NarrationPriority",
+			"fabric": "net.minecraft.client.gui.Selectable$SelectionType"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "NONE",
+			"fabric": "NONE"
+		},
+		{
+			"forge": "HOVERED",
+			"fabric": "HOVERED"
+		},
+		{
+			"forge": "FOCUSED",
+			"fabric": "FOCUSED"
+		},
+		{
+			"forge": "isTerminal()",
+			"fabric": "isFocused()"
+		},
+		{
+			"forge": "isTerminal()",
+			"fabric": "isFocused()"
+		}
+	]
+}

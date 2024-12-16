@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.functions.CopyNbtFunction$CopyOperation",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.functions.CopyNbtFunction$CopyOperation",
+			"fabric": "net.minecraft.loot.function.CopyNbtLootFunction$Operation"
+		},
+		{
+			"forge": "sourcePathText",
+			"fabric": "sourcePath"
+		},
+		{
+			"forge": "sourcePathText",
+			"fabric": "sourcePath"
+		},
+		{
+			"forge": "sourcePath",
+			"fabric": "parsedSourcePath"
+		},
+		{
+			"forge": "targetPathText",
+			"fabric": "targetPath"
+		},
+		{
+			"forge": "targetPath",
+			"fabric": "parsedTargetPath"
+		},
+		{
+			"forge": "op",
+			"fabric": "operator"
+		},
+		{
+			"forge": "apply(Supplier<Tag> arg0, Tag arg1)",
+			"fabric": "execute(Supplier<NbtElement> itemNbtGetter, NbtElement sourceEntityNbt)"
+		},
+		{
+			"forge": "apply(Supplier<Tag> arg0, Tag arg1)",
+			"fabric": "execute(Supplier<NbtElement> itemNbtGetter, NbtElement sourceEntityNbt)"
+		},
+		{
+			"forge": "toJson()",
+			"fabric": "toJson()"
+		},
+		{
+			"forge": "fromJson(com.google.gson.JsonObject arg0)",
+			"fabric": "fromJson(com.google.gson.JsonObject json)"
+		}
+	]
+}

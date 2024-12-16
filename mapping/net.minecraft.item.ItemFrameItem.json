@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.world.item.ItemFrameItem",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.ItemFrameItem",
+			"fabric": "net.minecraft.item.ItemFrameItem"
+		},
+		{
+			"forge": "mayPlace(Player arg0, Direction arg1, ItemStack arg2, BlockPos arg3)",
+			"fabric": "canPlaceOn(PlayerEntity arg0, Direction arg1, ItemStack arg2, BlockPos arg3)"
+		},
+		{
+			"forge": "mayPlace(Player arg0, Direction arg1, ItemStack arg2, BlockPos arg3)",
+			"fabric": "canPlaceOn(PlayerEntity arg0, Direction arg1, ItemStack arg2, BlockPos arg3)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"title": "net.minecraft.world.item.crafting.SingleItemRecipe$Serializer",
+	"items": [
+		{
+			"forge": "net.minecraft.world.item.crafting.SingleItemRecipe$Serializer",
+			"fabric": "net.minecraft.recipe.CuttingRecipe$Serializer"
+		},
+		{
+			"forge": "factory",
+			"fabric": "recipeFactory"
+		},
+		{
+			"forge": "factory",
+			"fabric": "recipeFactory"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "read(Identifier arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "fromJson(ResourceLocation arg0, com.google.gson.JsonObject arg1)",
+			"fabric": "read(Identifier arg0, com.google.gson.JsonObject arg1)"
+		},
+		{
+			"forge": "fromNetwork(ResourceLocation arg0, FriendlyByteBuf arg1)",
+			"fabric": "read(Identifier arg0, PacketByteBuf arg1)"
+		},
+		{
+			"forge": "toNetwork(FriendlyByteBuf arg0, T arg1)",
+			"fabric": "write(PacketByteBuf arg0, T arg1)"
+		}
+	]
+}

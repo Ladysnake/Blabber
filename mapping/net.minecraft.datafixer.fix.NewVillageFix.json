@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.NewVillageFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.NewVillageFix",
+			"fabric": "net.minecraft.datafixer.fix.NewVillageFix"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "fix(com.mojang.datafixers.types.templates.CompoundList$CompoundListType<String, SF> arg0)"
+		},
+		{
+			"forge": "cap(com.mojang.datafixers.types.templates.CompoundList$CompoundListType<String, SF> arg0)",
+			"fabric": "fix(com.mojang.datafixers.types.templates.CompoundList$CompoundListType<String, SF> arg0)"
+		}
+	]
+}

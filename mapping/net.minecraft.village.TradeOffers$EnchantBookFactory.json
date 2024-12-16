@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.world.entity.npc.VillagerTrades$EnchantBookForEmeralds",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.npc.VillagerTrades$EnchantBookForEmeralds",
+			"fabric": "net.minecraft.village.TradeOffers$EnchantBookFactory"
+		},
+		{
+			"forge": "villagerXp",
+			"fabric": "experience"
+		},
+		{
+			"forge": "villagerXp",
+			"fabric": "experience"
+		},
+		{
+			"forge": "getOffer(Entity arg0, RandomSource arg1)",
+			"fabric": "create(Entity arg0, Random arg1)"
+		},
+		{
+			"forge": "getOffer(Entity arg0, RandomSource arg1)",
+			"fabric": "create(Entity arg0, Random arg1)"
+		}
+	]
+}

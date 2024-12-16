@@ -1,0 +1,53 @@
+{
+	"title": "net.minecraft.util.datafix.PackedBitStorage",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.PackedBitStorage",
+			"fabric": "net.minecraft.util.math.WordPackedArray"
+		},
+		{
+			"forge": "BIT_TO_LONG_SHIFT",
+			"fabric": "field_29862"
+		},
+		{
+			"forge": "BIT_TO_LONG_SHIFT",
+			"fabric": "field_29862"
+		},
+		{
+			"forge": "data",
+			"fabric": "array"
+		},
+		{
+			"forge": "bits",
+			"fabric": "unitSize"
+		},
+		{
+			"forge": "mask",
+			"fabric": "maxValue"
+		},
+		{
+			"forge": "size",
+			"fabric": "length"
+		},
+		{
+			"forge": "set(int arg0, int arg1)",
+			"fabric": "set(int index, int value)"
+		},
+		{
+			"forge": "set(int arg0, int arg1)",
+			"fabric": "set(int index, int value)"
+		},
+		{
+			"forge": "get(int arg0)",
+			"fabric": "get(int index)"
+		},
+		{
+			"forge": "getRaw()",
+			"fabric": "getAlignedArray()"
+		},
+		{
+			"forge": "getBits()",
+			"fabric": "getUnitSize()"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.world.entity.ai.behavior.StopAttackingIfTargetInvalid",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.behavior.StopAttackingIfTargetInvalid",
+			"fabric": "net.minecraft.entity.ai.brain.task.ForgetAttackTargetTask"
+		},
+		{
+			"forge": "TIMEOUT_TO_GET_WITHIN_ATTACK_RANGE",
+			"fabric": "REMEMBER_TIME"
+		},
+		{
+			"forge": "TIMEOUT_TO_GET_WITHIN_ATTACK_RANGE",
+			"fabric": "REMEMBER_TIME"
+		},
+		{
+			"forge": "create(BiConsumer<E, LivingEntity> arg0)",
+			"fabric": "create(BiConsumer<E, LivingEntity> forgetCallback)"
+		},
+		{
+			"forge": "create(BiConsumer<E, LivingEntity> arg0)",
+			"fabric": "create(BiConsumer<E, LivingEntity> forgetCallback)"
+		},
+		{
+			"forge": "create(Predicate<LivingEntity> arg0)",
+			"fabric": "create(Predicate<LivingEntity> alternativeCondition)"
+		},
+		{
+			"forge": "create()",
+			"fabric": "create()"
+		},
+		{
+			"forge": "create(Predicate<LivingEntity> arg0, BiConsumer<E, LivingEntity> arg1, boolean arg2)",
+			"fabric": "create(Predicate<LivingEntity> alternativeCondition, BiConsumer<E, LivingEntity> forgetCallback, boolean shouldForgetIfTargetUnreachable)"
+		},
+		{
+			"forge": "isTiredOfTryingToReachTarget(LivingEntity arg0, Optional<Long> arg1)",
+			"fabric": "cannotReachTarget(LivingEntity arg0, Optional<Long> arg1)"
+		}
+	]
+}

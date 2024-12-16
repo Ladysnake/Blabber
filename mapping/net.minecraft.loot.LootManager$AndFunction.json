@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.level.storage.loot.LootDataManager$FunctionSequence",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.storage.loot.LootDataManager$FunctionSequence",
+			"fabric": "net.minecraft.loot.LootManager$AndFunction"
+		},
+		{
+			"forge": "functions",
+			"fabric": "functions"
+		},
+		{
+			"forge": "functions",
+			"fabric": "functions"
+		},
+		{
+			"forge": "compositeFunction",
+			"fabric": "applier"
+		},
+		{
+			"forge": "apply(ItemStack arg0, LootContext arg1)",
+			"fabric": "apply(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "apply(ItemStack arg0, LootContext arg1)",
+			"fabric": "apply(ItemStack arg0, LootContext arg1)"
+		},
+		{
+			"forge": "validate(ValidationContext arg0)",
+			"fabric": "validate(LootTableReporter arg0)"
+		},
+		{
+			"forge": "getType()",
+			"fabric": "getType()"
+		}
+	]
+}

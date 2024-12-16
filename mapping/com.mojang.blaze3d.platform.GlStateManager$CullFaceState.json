@@ -1,0 +1,21 @@
+{
+	"title": "com.mojang.blaze3d.platform.GlStateManager$CullState",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.platform.GlStateManager$CullState",
+			"fabric": "com.mojang.blaze3d.platform.GlStateManager$CullFaceState"
+		},
+		{
+			"forge": "enable",
+			"fabric": "capState"
+		},
+		{
+			"forge": "enable",
+			"fabric": "capState"
+		},
+		{
+			"forge": "mode",
+			"fabric": "mode"
+		}
+	]
+}

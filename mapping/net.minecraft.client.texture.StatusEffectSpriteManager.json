@@ -1,0 +1,17 @@
+{
+	"title": "net.minecraft.client.resources.MobEffectTextureManager",
+	"items": [
+		{
+			"forge": "net.minecraft.client.resources.MobEffectTextureManager",
+			"fabric": "net.minecraft.client.texture.StatusEffectSpriteManager"
+		},
+		{
+			"forge": "get(MobEffect arg0)",
+			"fabric": "getSprite(StatusEffect effect)"
+		},
+		{
+			"forge": "get(MobEffect arg0)",
+			"fabric": "getSprite(StatusEffect effect)"
+		}
+	]
+}

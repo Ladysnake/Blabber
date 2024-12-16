@@ -1,0 +1,57 @@
+{
+	"title": "net.minecraft.commands.synchronization.SuggestionProviders",
+	"items": [
+		{
+			"forge": "net.minecraft.commands.synchronization.SuggestionProviders",
+			"fabric": "net.minecraft.command.suggestion.SuggestionProviders"
+		},
+		{
+			"forge": "PROVIDERS_BY_NAME",
+			"fabric": "REGISTRY"
+		},
+		{
+			"forge": "PROVIDERS_BY_NAME",
+			"fabric": "REGISTRY"
+		},
+		{
+			"forge": "DEFAULT_NAME",
+			"fabric": "ASK_SERVER_NAME"
+		},
+		{
+			"forge": "ASK_SERVER",
+			"fabric": "ASK_SERVER"
+		},
+		{
+			"forge": "ALL_RECIPES",
+			"fabric": "ALL_RECIPES"
+		},
+		{
+			"forge": "AVAILABLE_SOUNDS",
+			"fabric": "AVAILABLE_SOUNDS"
+		},
+		{
+			"forge": "SUMMONABLE_ENTITIES",
+			"fabric": "SUMMONABLE_ENTITIES"
+		},
+		{
+			"forge": "register(ResourceLocation arg0, com.mojang.brigadier.suggestion.SuggestionProvider<SharedSuggestionProvider> arg1)",
+			"fabric": "register(Identifier id, com.mojang.brigadier.suggestion.SuggestionProvider<CommandSource> provider)"
+		},
+		{
+			"forge": "register(ResourceLocation arg0, com.mojang.brigadier.suggestion.SuggestionProvider<SharedSuggestionProvider> arg1)",
+			"fabric": "register(Identifier id, com.mojang.brigadier.suggestion.SuggestionProvider<CommandSource> provider)"
+		},
+		{
+			"forge": "getProvider(ResourceLocation arg0)",
+			"fabric": "byId(Identifier id)"
+		},
+		{
+			"forge": "getName(com.mojang.brigadier.suggestion.SuggestionProvider<SharedSuggestionProvider> arg0)",
+			"fabric": "computeId(com.mojang.brigadier.suggestion.SuggestionProvider<CommandSource> provider)"
+		},
+		{
+			"forge": "safelySwap(com.mojang.brigadier.suggestion.SuggestionProvider<SharedSuggestionProvider> arg0)",
+			"fabric": "getLocalProvider(com.mojang.brigadier.suggestion.SuggestionProvider<CommandSource> provider)"
+		}
+	]
+}

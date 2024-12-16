@@ -1,0 +1,49 @@
+{
+	"title": "net.minecraft.world.entity.projectile.ProjectileUtil",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.projectile.ProjectileUtil",
+			"fabric": "net.minecraft.entity.projectile.ProjectileUtil"
+		},
+		{
+			"forge": "getHitResultOnMoveVector(Entity arg0, Predicate<Entity> arg1)",
+			"fabric": "getCollision(Entity entity, Predicate<Entity> predicate)"
+		},
+		{
+			"forge": "getHitResultOnMoveVector(Entity arg0, Predicate<Entity> arg1)",
+			"fabric": "getCollision(Entity entity, Predicate<Entity> predicate)"
+		},
+		{
+			"forge": "getHitResultOnViewVector(Entity arg0, Predicate<Entity> arg1, double arg2)",
+			"fabric": "getCollision(Entity entity, Predicate<Entity> predicate, double range)"
+		},
+		{
+			"forge": "getHitResult(Vec3 arg0, Entity arg1, Predicate<Entity> arg2, Vec3 arg3, Level arg4)",
+			"fabric": "getCollision(Vec3d pos, Entity entity, Predicate<Entity> predicate, Vec3d velocity, World world)"
+		},
+		{
+			"forge": "getEntityHitResult(Entity arg0, Vec3 arg1, Vec3 arg2, AABB arg3, Predicate<Entity> arg4, double arg5)",
+			"fabric": "raycast(Entity entity, Vec3d min, Vec3d max, Box box, Predicate<Entity> predicate, double arg5)"
+		},
+		{
+			"forge": "getEntityHitResult(Level arg0, Entity arg1, Vec3 arg2, Vec3 arg3, AABB arg4, Predicate<Entity> arg5)",
+			"fabric": "getEntityCollision(World world, Entity entity, Vec3d min, Vec3d max, Box box, Predicate<Entity> predicate)"
+		},
+		{
+			"forge": "getEntityHitResult(Level arg0, Entity arg1, Vec3 arg2, Vec3 arg3, AABB arg4, Predicate<Entity> arg5, float arg6)",
+			"fabric": "getEntityCollision(World world, Entity entity, Vec3d min, Vec3d max, Box box, Predicate<Entity> predicate, float margin)"
+		},
+		{
+			"forge": "rotateTowardsMovement(Entity arg0, float arg1)",
+			"fabric": "setRotationFromVelocity(Entity entity, float delta)"
+		},
+		{
+			"forge": "getWeaponHoldingHand(LivingEntity arg0, Item arg1)",
+			"fabric": "getHandPossiblyHolding(LivingEntity entity, Item item)"
+		},
+		{
+			"forge": "getMobArrow(LivingEntity arg0, ItemStack arg1, float arg2)",
+			"fabric": "createArrowProjectile(LivingEntity entity, ItemStack stack, float damageModifier)"
+		}
+	]
+}

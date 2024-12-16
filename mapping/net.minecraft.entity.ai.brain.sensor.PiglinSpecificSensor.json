@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.sensing.PiglinSpecificSensor",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.sensing.PiglinSpecificSensor",
+			"fabric": "net.minecraft.entity.ai.brain.sensor.PiglinSpecificSensor"
+		},
+		{
+			"forge": "requires()",
+			"fabric": "getOutputMemoryModules()"
+		},
+		{
+			"forge": "requires()",
+			"fabric": "getOutputMemoryModules()"
+		},
+		{
+			"forge": "doTick(ServerLevel arg0, LivingEntity arg1)",
+			"fabric": "sense(ServerWorld arg0, LivingEntity arg1)"
+		},
+		{
+			"forge": "findNearestRepellent(ServerLevel arg0, LivingEntity arg1)",
+			"fabric": "findPiglinRepellent(ServerWorld world, LivingEntity entity)"
+		},
+		{
+			"forge": "isValidRepellent(ServerLevel arg0, BlockPos arg1)",
+			"fabric": "isPiglinRepellent(ServerWorld world, BlockPos pos)"
+		}
+	]
+}

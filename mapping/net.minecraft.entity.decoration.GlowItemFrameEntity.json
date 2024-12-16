@@ -1,0 +1,37 @@
+{
+	"title": "net.minecraft.world.entity.decoration.GlowItemFrame",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.decoration.GlowItemFrame",
+			"fabric": "net.minecraft.entity.decoration.GlowItemFrameEntity"
+		},
+		{
+			"forge": "getRemoveItemSound()",
+			"fabric": "getRemoveItemSound()"
+		},
+		{
+			"forge": "getRemoveItemSound()",
+			"fabric": "getRemoveItemSound()"
+		},
+		{
+			"forge": "getBreakSound()",
+			"fabric": "getBreakSound()"
+		},
+		{
+			"forge": "getPlaceSound()",
+			"fabric": "getPlaceSound()"
+		},
+		{
+			"forge": "getAddItemSound()",
+			"fabric": "getAddItemSound()"
+		},
+		{
+			"forge": "getRotateItemSound()",
+			"fabric": "getRotateItemSound()"
+		},
+		{
+			"forge": "getFrameItemStack()",
+			"fabric": "getAsItemStack()"
+		}
+	]
+}

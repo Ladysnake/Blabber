@@ -1,0 +1,41 @@
+{
+	"title": "net.minecraft.client.gui.font.FontManager$BuilderId",
+	"items": [
+		{
+			"forge": "net.minecraft.client.gui.font.FontManager$BuilderId",
+			"fabric": "net.minecraft.client.font.FontManager$FontKey"
+		},
+		{
+			"forge": "fontId",
+			"fabric": "fontId"
+		},
+		{
+			"forge": "fontId",
+			"fabric": "fontId"
+		},
+		{
+			"forge": "pack",
+			"fabric": "pack"
+		},
+		{
+			"forge": "index",
+			"fabric": "index"
+		},
+		{
+			"forge": "fontId()",
+			"fabric": "fontId()"
+		},
+		{
+			"forge": "fontId()",
+			"fabric": "fontId()"
+		},
+		{
+			"forge": "pack()",
+			"fabric": "pack()"
+		},
+		{
+			"forge": "index()",
+			"fabric": "index()"
+		}
+	]
+}

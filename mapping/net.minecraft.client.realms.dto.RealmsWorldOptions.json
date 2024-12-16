@@ -1,0 +1,149 @@
+{
+	"title": "com.mojang.realmsclient.dto.RealmsWorldOptions",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.dto.RealmsWorldOptions",
+			"fabric": "net.minecraft.client.realms.dto.RealmsWorldOptions"
+		},
+		{
+			"forge": "pvp",
+			"fabric": "pvp"
+		},
+		{
+			"forge": "pvp",
+			"fabric": "pvp"
+		},
+		{
+			"forge": "spawnAnimals",
+			"fabric": "spawnAnimals"
+		},
+		{
+			"forge": "spawnMonsters",
+			"fabric": "spawnMonsters"
+		},
+		{
+			"forge": "spawnNPCs",
+			"fabric": "spawnNpcs"
+		},
+		{
+			"forge": "spawnProtection",
+			"fabric": "spawnProtection"
+		},
+		{
+			"forge": "commandBlocks",
+			"fabric": "commandBlocks"
+		},
+		{
+			"forge": "forceGameMode",
+			"fabric": "forceGameMode"
+		},
+		{
+			"forge": "difficulty",
+			"fabric": "difficulty"
+		},
+		{
+			"forge": "gameMode",
+			"fabric": "gameMode"
+		},
+		{
+			"forge": "slotName",
+			"fabric": "slotName"
+		},
+		{
+			"forge": "templateId",
+			"fabric": "templateId"
+		},
+		{
+			"forge": "templateImage",
+			"fabric": "templateImage"
+		},
+		{
+			"forge": "empty",
+			"fabric": "empty"
+		},
+		{
+			"forge": "DEFAULT_FORCE_GAME_MODE",
+			"fabric": "field_32100"
+		},
+		{
+			"forge": "DEFAULT_PVP",
+			"fabric": "field_32101"
+		},
+		{
+			"forge": "DEFAULT_SPAWN_ANIMALS",
+			"fabric": "field_32102"
+		},
+		{
+			"forge": "DEFAULT_SPAWN_MONSTERS",
+			"fabric": "field_32103"
+		},
+		{
+			"forge": "DEFAULT_SPAWN_NPCS",
+			"fabric": "field_32104"
+		},
+		{
+			"forge": "DEFAULT_SPAWN_PROTECTION",
+			"fabric": "field_32105"
+		},
+		{
+			"forge": "DEFAULT_COMMAND_BLOCKS",
+			"fabric": "field_32106"
+		},
+		{
+			"forge": "DEFAULT_DIFFICULTY",
+			"fabric": "DEFAULT_DIFFICULTY"
+		},
+		{
+			"forge": "DEFAULT_GAME_MODE",
+			"fabric": "field_32108"
+		},
+		{
+			"forge": "DEFAULT_SLOT_NAME",
+			"fabric": "DEFAULT_SLOT_NAME"
+		},
+		{
+			"forge": "DEFAULT_TEMPLATE_ID",
+			"fabric": "DEFAULT_WORLD_TEMPLATE_ID"
+		},
+		{
+			"forge": "DEFAULT_TEMPLATE_IMAGE",
+			"fabric": "DEFAULT_WORLD_TEMPLATE_IMAGE"
+		},
+		{
+			"forge": "createDefaults()",
+			"fabric": "getDefaults()"
+		},
+		{
+			"forge": "createDefaults()",
+			"fabric": "getDefaults()"
+		},
+		{
+			"forge": "createEmptyDefaults()",
+			"fabric": "getEmptyDefaults()"
+		},
+		{
+			"forge": "setEmpty(boolean arg0)",
+			"fabric": "setEmpty(boolean empty)"
+		},
+		{
+			"forge": "parse(com.google.gson.JsonObject arg0)",
+			"fabric": "parse(com.google.gson.JsonObject json)"
+		},
+		{
+			"forge": "getSlotName(int arg0)",
+			"fabric": "getSlotName(int index)"
+		},
+		{
+			"forge": "getDefaultSlotName(int arg0)",
+			"fabric": "getDefaultSlotName(int index)"
+		},
+		{
+			"forge": "toJson()",
+			"fabric": "toJson()"
+		},
+		{
+			"forge": "clone()",
+			"fabric": "clone()"
+		}
+	]
+}

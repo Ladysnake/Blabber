@@ -1,0 +1,85 @@
+{
+	"title": "com.mojang.realmsclient.RealmsMainScreen$NotificationMessageEntry",
+	"items": [
+		{
+			"forge": "com.mojang.realmsclient.RealmsMainScreen$NotificationMessageEntry",
+			"fabric": "net.minecraft.client.realms.gui.screen.RealmsMainScreen$VisitUrlNotification"
+		},
+		{
+			"forge": "SIDE_MARGINS",
+			"fabric": "field_43002"
+		},
+		{
+			"forge": "SIDE_MARGINS",
+			"fabric": "field_43002"
+		},
+		{
+			"forge": "ITEM_HEIGHT",
+			"fabric": "field_43003"
+		},
+		{
+			"forge": "OUTLINE_COLOR",
+			"fabric": "field_43004"
+		},
+		{
+			"forge": "text",
+			"fabric": "message"
+		},
+		{
+			"forge": "children",
+			"fabric": "gridChildren"
+		},
+		{
+			"forge": "dismissButton",
+			"fabric": "dismissButton"
+		},
+		{
+			"forge": "textWidget",
+			"fabric": "textWidget"
+		},
+		{
+			"forge": "gridLayout",
+			"fabric": "grid"
+		},
+		{
+			"forge": "textFrame",
+			"fabric": "textGrid"
+		},
+		{
+			"forge": "lastEntryWidth",
+			"fabric": "width"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "keyPressed(int arg0, int arg1, int arg2)",
+			"fabric": "keyPressed(int arg0, int arg1, int arg2)"
+		},
+		{
+			"forge": "updateEntryWidth(int arg0)",
+			"fabric": "setWidth(int width)"
+		},
+		{
+			"forge": "refreshLayout(int arg0)",
+			"fabric": "updateWidth(int width)"
+		},
+		{
+			"forge": "renderBack(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "drawBorder(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "render(GuiGraphics arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)",
+			"fabric": "render(DrawContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, boolean arg8, float arg9)"
+		},
+		{
+			"forge": "mouseClicked(double arg0, double arg1, int arg2)",
+			"fabric": "mouseClicked(double arg0, double arg1, int arg2)"
+		},
+		{
+			"forge": "getNarration()",
+			"fabric": "getNarration()"
+		}
+	]
+}

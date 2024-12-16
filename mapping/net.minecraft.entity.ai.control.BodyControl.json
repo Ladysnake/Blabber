@@ -1,0 +1,65 @@
+{
+	"title": "net.minecraft.world.entity.ai.control.BodyRotationControl",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.control.BodyRotationControl",
+			"fabric": "net.minecraft.entity.ai.control.BodyControl"
+		},
+		{
+			"forge": "mob",
+			"fabric": "entity"
+		},
+		{
+			"forge": "mob",
+			"fabric": "entity"
+		},
+		{
+			"forge": "HEAD_STABLE_ANGLE",
+			"fabric": "BODY_KEEP_UP_THRESHOLD"
+		},
+		{
+			"forge": "DELAY_UNTIL_STARTING_TO_FACE_FORWARD",
+			"fabric": "ROTATE_BODY_START_TICK"
+		},
+		{
+			"forge": "HOW_LONG_IT_TAKES_TO_FACE_FORWARD",
+			"fabric": "ROTATION_INCREMENTS"
+		},
+		{
+			"forge": "headStableTime",
+			"fabric": "bodyAdjustTicks"
+		},
+		{
+			"forge": "lastStableYHeadRot",
+			"fabric": "lastHeadYaw"
+		},
+		{
+			"forge": "clientTick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "clientTick()",
+			"fabric": "tick()"
+		},
+		{
+			"forge": "rotateBodyIfNecessary()",
+			"fabric": "keepUpBody()"
+		},
+		{
+			"forge": "rotateHeadIfNecessary()",
+			"fabric": "keepUpHead()"
+		},
+		{
+			"forge": "rotateHeadTowardsFront()",
+			"fabric": "slowlyAdjustBody()"
+		},
+		{
+			"forge": "notCarryingMobPassengers()",
+			"fabric": "isIndependent()"
+		},
+		{
+			"forge": "isMoving()",
+			"fabric": "isMoving()"
+		}
+	]
+}

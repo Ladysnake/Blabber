@@ -1,0 +1,29 @@
+{
+	"title": "com.mojang.blaze3d.font.GlyphInfo",
+	"items": [
+		{
+			"forge": "com.mojang.blaze3d.font.GlyphInfo",
+			"fabric": "net.minecraft.client.font.Glyph"
+		},
+		{
+			"forge": "getAdvance()",
+			"fabric": "getAdvance(boolean bold)"
+		},
+		{
+			"forge": "getAdvance(boolean arg0)",
+			"fabric": "getAdvance(boolean bold)"
+		},
+		{
+			"forge": "getBoldOffset()",
+			"fabric": "getBoldOffset()"
+		},
+		{
+			"forge": "getShadowOffset()",
+			"fabric": "getShadowOffset()"
+		},
+		{
+			"forge": "bake(Function<SheetGlyphInfo, BakedGlyph> arg0)",
+			"fabric": "bake(Function<RenderableGlyph, GlyphRenderer> glyphRendererGetter)"
+		}
+	]
+}

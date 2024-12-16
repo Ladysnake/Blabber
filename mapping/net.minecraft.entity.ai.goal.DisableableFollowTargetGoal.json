@@ -1,0 +1,29 @@
+{
+	"title": "net.minecraft.world.entity.ai.goal.target.NearestAttackableWitchTargetGoal",
+	"items": [
+		{
+			"forge": "net.minecraft.world.entity.ai.goal.target.NearestAttackableWitchTargetGoal",
+			"fabric": "net.minecraft.entity.ai.goal.DisableableFollowTargetGoal"
+		},
+		{
+			"forge": "canAttack",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "canAttack",
+			"fabric": "enabled"
+		},
+		{
+			"forge": "setCanAttack(boolean arg0)",
+			"fabric": "setEnabled(boolean enabled)"
+		},
+		{
+			"forge": "setCanAttack(boolean arg0)",
+			"fabric": "setEnabled(boolean enabled)"
+		},
+		{
+			"forge": "canUse()",
+			"fabric": "canStart()"
+		}
+	]
+}

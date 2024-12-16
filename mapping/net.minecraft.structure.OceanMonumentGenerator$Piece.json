@@ -1,0 +1,145 @@
+{
+	"title": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$OceanMonumentPiece",
+	"items": [
+		{
+			"forge": "net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$OceanMonumentPiece",
+			"fabric": "net.minecraft.structure.OceanMonumentGenerator$Piece"
+		},
+		{
+			"forge": "BASE_GRAY",
+			"fabric": "PRISMARINE"
+		},
+		{
+			"forge": "BASE_GRAY",
+			"fabric": "PRISMARINE"
+		},
+		{
+			"forge": "BASE_LIGHT",
+			"fabric": "PRISMARINE_BRICKS"
+		},
+		{
+			"forge": "BASE_BLACK",
+			"fabric": "DARK_PRISMARINE"
+		},
+		{
+			"forge": "DOT_DECO_DATA",
+			"fabric": "ALSO_PRISMARINE_BRICKS"
+		},
+		{
+			"forge": "LAMP_BLOCK",
+			"fabric": "SEA_LANTERN"
+		},
+		{
+			"forge": "DO_FILL",
+			"fabric": "field_31607"
+		},
+		{
+			"forge": "FILL_BLOCK",
+			"fabric": "WATER"
+		},
+		{
+			"forge": "FILL_KEEP",
+			"fabric": "ICE_BLOCKS"
+		},
+		{
+			"forge": "GRIDROOM_WIDTH",
+			"fabric": "field_31608"
+		},
+		{
+			"forge": "GRIDROOM_DEPTH",
+			"fabric": "field_31609"
+		},
+		{
+			"forge": "GRIDROOM_HEIGHT",
+			"fabric": "field_31610"
+		},
+		{
+			"forge": "GRID_WIDTH",
+			"fabric": "field_31611"
+		},
+		{
+			"forge": "GRID_DEPTH",
+			"fabric": "field_31612"
+		},
+		{
+			"forge": "GRID_HEIGHT",
+			"fabric": "field_31613"
+		},
+		{
+			"forge": "GRID_FLOOR_COUNT",
+			"fabric": "field_31614"
+		},
+		{
+			"forge": "GRID_SIZE",
+			"fabric": "field_31615"
+		},
+		{
+			"forge": "GRIDROOM_SOURCE_INDEX",
+			"fabric": "TWO_ZERO_ZERO_INDEX"
+		},
+		{
+			"forge": "GRIDROOM_TOP_CONNECT_INDEX",
+			"fabric": "TWO_TWO_ZERO_INDEX"
+		},
+		{
+			"forge": "GRIDROOM_LEFTWING_CONNECT_INDEX",
+			"fabric": "ZERO_ONE_ZERO_INDEX"
+		},
+		{
+			"forge": "GRIDROOM_RIGHTWING_CONNECT_INDEX",
+			"fabric": "FOUR_ONE_ZERO_INDEX"
+		},
+		{
+			"forge": "LEFTWING_INDEX",
+			"fabric": "field_31616"
+		},
+		{
+			"forge": "RIGHTWING_INDEX",
+			"fabric": "field_31617"
+		},
+		{
+			"forge": "PENTHOUSE_INDEX",
+			"fabric": "field_31618"
+		},
+		{
+			"forge": "roomDefinition",
+			"fabric": "setting"
+		},
+		{
+			"forge": "getRoomIndex(int arg0, int arg1, int arg2)",
+			"fabric": "getIndex(int x, int y, int z)"
+		},
+		{
+			"forge": "getRoomIndex(int arg0, int arg1, int arg2)",
+			"fabric": "getIndex(int x, int y, int z)"
+		},
+		{
+			"forge": "makeBoundingBox(Direction arg0, OceanMonumentPieces$RoomDefinition arg1, int arg2, int arg3, int arg4)",
+			"fabric": "createBox(Direction orientation, OceanMonumentGenerator$PieceSetting setting, int arg2, int arg3, int arg4)"
+		},
+		{
+			"forge": "addAdditionalSaveData(StructurePieceSerializationContext arg0, CompoundTag arg1)",
+			"fabric": "writeNbt(StructureContext arg0, NbtCompound arg1)"
+		},
+		{
+			"forge": "generateWaterBox(WorldGenLevel arg0, BoundingBox arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)",
+			"fabric": "setAirAndWater(StructureWorldAccess world, BlockBox box, int x, int y, int z, int width, int height, int depth)"
+		},
+		{
+			"forge": "generateDefaultFloor(WorldGenLevel arg0, BoundingBox arg1, int arg2, int arg3, boolean arg4)",
+			"fabric": "method_14774(StructureWorldAccess world, BlockBox box, int x, int z, boolean arg4)"
+		},
+		{
+			"forge": "generateBoxOnFillOnly(WorldGenLevel arg0, BoundingBox arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, BlockState arg8)",
+			"fabric": "fillArea(StructureWorldAccess world, BlockBox box, int x, int y, int z, int width, int height, int depth, BlockState state)"
+		},
+		{
+			"forge": "chunkIntersects(BoundingBox arg0, int arg1, int arg2, int arg3, int arg4)",
+			"fabric": "boxIntersects(BlockBox box, int x1, int z1, int x2, int z2)"
+		},
+		{
+			"forge": "spawnElder(WorldGenLevel arg0, BoundingBox arg1, int arg2, int arg3, int arg4)",
+			"fabric": "spawnElderGuardian(StructureWorldAccess world, BlockBox box, int x, int y, int z)"
+		}
+	]
+}

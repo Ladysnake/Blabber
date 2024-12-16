@@ -1,0 +1,61 @@
+{
+	"title": "net.minecraft.server.level.BlockDestructionProgress",
+	"items": [
+		{
+			"forge": "net.minecraft.server.level.BlockDestructionProgress",
+			"fabric": "net.minecraft.client.render.BlockBreakingInfo"
+		},
+		{
+			"forge": "id",
+			"fabric": "actorNetworkId"
+		},
+		{
+			"forge": "id",
+			"fabric": "actorNetworkId"
+		},
+		{
+			"forge": "pos",
+			"fabric": "pos"
+		},
+		{
+			"forge": "progress",
+			"fabric": "stage"
+		},
+		{
+			"forge": "updatedRenderTick",
+			"fabric": "lastUpdateTick"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getActorId()"
+		},
+		{
+			"forge": "getId()",
+			"fabric": "getActorId()"
+		},
+		{
+			"forge": "getPos()",
+			"fabric": "getPos()"
+		},
+		{
+			"forge": "setProgress(int arg0)",
+			"fabric": "setStage(int stage)"
+		},
+		{
+			"forge": "getProgress()",
+			"fabric": "getStage()"
+		},
+		{
+			"forge": "updateTick(int arg0)",
+			"fabric": "setLastUpdateTick(int lastUpdateTick)"
+		},
+		{
+			"forge": "getUpdatedRenderTick()",
+			"fabric": "getLastUpdateTick()"
+		},
+		{
+			"forge": "compareTo(BlockDestructionProgress arg0)",
+			"fabric": "compareTo(BlockBreakingInfo arg0)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": "net.minecraft.util.datafix.fixes.SimplestEntityRenameFix",
+	"items": [
+		{
+			"forge": "net.minecraft.util.datafix.fixes.SimplestEntityRenameFix",
+			"fabric": "net.minecraft.datafixer.fix.EntityRenameFix"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "name",
+			"fabric": "name"
+		},
+		{
+			"forge": "makeRule()",
+			"fabric": "rename(String oldName)"
+		},
+		{
+			"forge": "rename(String arg0)",
+			"fabric": "rename(String oldName)"
+		}
+	]
+}
