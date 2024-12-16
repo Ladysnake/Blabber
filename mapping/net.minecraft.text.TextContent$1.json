@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.network.chat.ComponentContents$1",
-	"items": [
-		{
-			"forge": "net.minecraft.network.chat.ComponentContents$1",
-			"fabric": "net.minecraft.text.TextContent$1"
-		}
-	]
-}

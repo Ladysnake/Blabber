@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.obfuscate.DontObfuscate",
-	"items": [
-		{
-			"forge": "net.minecraft.obfuscate.DontObfuscate",
-			"fabric": "net.minecraft.obfuscate.DontObfuscate"
-		}
-	]
-}

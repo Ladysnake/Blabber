@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.particle.SpitParticle",
-	"items": [
-		{
-			"forge": "net.minecraft.client.particle.SpitParticle",
-			"fabric": "net.minecraft.client.particle.SpitParticle"
-		}
-	]
-}

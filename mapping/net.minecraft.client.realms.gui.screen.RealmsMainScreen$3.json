@@ -1,9 +1,0 @@
-{
-	"title": "com.mojang.realmsclient.RealmsMainScreen$3",
-	"items": [
-		{
-			"forge": "com.mojang.realmsclient.RealmsMainScreen$3",
-			"fabric": "net.minecraft.client.realms.gui.screen.RealmsMainScreen$3"
-		}
-	]
-}

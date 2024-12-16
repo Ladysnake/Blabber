@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.profiling.jfr.event.PacketEvent",
-	"items": [
-		{
-			"forge": "net.minecraft.util.profiling.jfr.event.PacketEvent",
-			"fabric": "net.minecraft.util.profiling.jfr.event.PacketEvent"
-		}
-	]
-}

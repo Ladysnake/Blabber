@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.storage.loot.entries.LootPoolEntryType",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.storage.loot.entries.LootPoolEntryType",
-			"fabric": "net.minecraft.loot.entry.LootPoolEntryType"
-		}
-	]
-}

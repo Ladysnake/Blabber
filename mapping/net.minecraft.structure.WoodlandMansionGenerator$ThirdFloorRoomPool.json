@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces$ThirdFloorRoomCollection",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces$ThirdFloorRoomCollection",
-			"fabric": "net.minecraft.structure.WoodlandMansionGenerator$ThirdFloorRoomPool"
-		}
-	]
-}

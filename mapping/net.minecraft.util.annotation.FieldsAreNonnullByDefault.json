@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.FieldsAreNonnullByDefault",
-	"items": [
-		{
-			"forge": "net.minecraft.FieldsAreNonnullByDefault",
-			"fabric": "net.minecraft.util.annotation.FieldsAreNonnullByDefault"
-		}
-	]
-}

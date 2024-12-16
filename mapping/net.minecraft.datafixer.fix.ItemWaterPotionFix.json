@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.ItemWaterPotionFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.ItemWaterPotionFix",
-			"fabric": "net.minecraft.datafixer.fix.ItemWaterPotionFix"
-		}
-	]
-}

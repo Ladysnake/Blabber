@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.searchtree.SearchRegistry$Key",
-	"items": [
-		{
-			"forge": "net.minecraft.client.searchtree.SearchRegistry$Key",
-			"fabric": "net.minecraft.client.search.SearchManager$Key"
-		}
-	]
-}

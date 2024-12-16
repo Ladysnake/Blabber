@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager$InputStreamOpener",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager$InputStreamOpener",
-			"fabric": "net.minecraft.structure.StructureTemplateManager$TemplateFileOpener"
-		}
-	]
-}

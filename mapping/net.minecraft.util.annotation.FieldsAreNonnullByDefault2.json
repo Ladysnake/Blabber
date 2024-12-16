@@ -1,9 +1,0 @@
-{
-	"title": "com.mojang.math.FieldsAreNonnullByDefault",
-	"items": [
-		{
-			"forge": "com.mojang.math.FieldsAreNonnullByDefault",
-			"fabric": "net.minecraft.util.annotation.FieldsAreNonnullByDefault2"
-		}
-	]
-}

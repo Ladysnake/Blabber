@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.LegacyDragonFightFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.LegacyDragonFightFix",
-			"fabric": "net.minecraft.datafixer.fix.LegacyDragonFightFix"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.network.chat.contents.TranslatableFormatException",
-	"items": [
-		{
-			"forge": "net.minecraft.network.chat.contents.TranslatableFormatException",
-			"fabric": "net.minecraft.text.TranslationException"
-		}
-	]
-}

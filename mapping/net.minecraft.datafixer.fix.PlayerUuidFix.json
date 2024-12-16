@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.PlayerUUIDFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.PlayerUUIDFix",
-			"fabric": "net.minecraft.datafixer.fix.PlayerUuidFix"
-		}
-	]
-}

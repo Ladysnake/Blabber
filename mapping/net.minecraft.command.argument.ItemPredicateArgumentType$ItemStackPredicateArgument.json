@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.commands.arguments.item.ItemPredicateArgument$Result",
-	"items": [
-		{
-			"forge": "net.minecraft.commands.arguments.item.ItemPredicateArgument$Result",
-			"fabric": "net.minecraft.command.argument.ItemPredicateArgumentType$ItemStackPredicateArgument"
-		}
-	]
-}

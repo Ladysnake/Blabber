@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.gui.screens.DeathScreen$TitleConfirmScreen",
-	"items": [
-		{
-			"forge": "net.minecraft.client.gui.screens.DeathScreen$TitleConfirmScreen",
-			"fabric": "net.minecraft.client.gui.screen.DeathScreen$TitleScreenConfirmScreen"
-		}
-	]
-}

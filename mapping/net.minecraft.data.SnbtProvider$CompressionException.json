@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.data.structures.SnbtToNbt$StructureConversionException",
-	"items": [
-		{
-			"forge": "net.minecraft.data.structures.SnbtToNbt$StructureConversionException",
-			"fabric": "net.minecraft.data.SnbtProvider$CompressionException"
-		}
-	]
-}

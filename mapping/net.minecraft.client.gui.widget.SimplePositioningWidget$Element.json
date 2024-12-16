@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.gui.layouts.FrameLayout$ChildContainer",
-	"items": [
-		{
-			"forge": "net.minecraft.client.gui.layouts.FrameLayout$ChildContainer",
-			"fabric": "net.minecraft.client.gui.widget.SimplePositioningWidget$Element"
-		}
-	]
-}

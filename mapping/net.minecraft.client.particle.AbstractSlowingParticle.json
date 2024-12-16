@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.particle.RisingParticle",
-	"items": [
-		{
-			"forge": "net.minecraft.client.particle.RisingParticle",
-			"fabric": "net.minecraft.client.particle.AbstractSlowingParticle"
-		}
-	]
-}

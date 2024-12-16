@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.gametest.framework.ExhaustedAttemptsException",
-	"items": [
-		{
-			"forge": "net.minecraft.gametest.framework.ExhaustedAttemptsException",
-			"fabric": "net.minecraft.test.NotEnoughSuccessesError"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "com.mojang.math.MethodsReturnNonnullByDefault",
-	"items": [
-		{
-			"forge": "com.mojang.math.MethodsReturnNonnullByDefault",
-			"fabric": "net.minecraft.util.annotation.MathMethodsReturnNonnullByDefault"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.OptionsAccessibilityOnboardFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.OptionsAccessibilityOnboardFix",
-			"fabric": "net.minecraft.datafixer.fix.OptionsAccessibilityOnboardFix"
-		}
-	]
-}

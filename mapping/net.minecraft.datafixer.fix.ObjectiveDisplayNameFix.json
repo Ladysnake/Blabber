@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.ObjectiveDisplayNameFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.ObjectiveDisplayNameFix",
-			"fabric": "net.minecraft.datafixer.fix.ObjectiveDisplayNameFix"
-		}
-	]
-}

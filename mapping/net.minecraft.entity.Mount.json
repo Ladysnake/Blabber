@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.entity.PlayerRideable",
-	"items": [
-		{
-			"forge": "net.minecraft.world.entity.PlayerRideable",
-			"fabric": "net.minecraft.entity.Mount"
-		}
-	]
-}

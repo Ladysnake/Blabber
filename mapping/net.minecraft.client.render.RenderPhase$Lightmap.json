@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.RenderStateShard$LightmapStateShard",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.RenderStateShard$LightmapStateShard",
-			"fabric": "net.minecraft.client.render.RenderPhase$Lightmap"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.EntityStringUuidFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.EntityStringUuidFix",
-			"fabric": "net.minecraft.datafixer.fix.EntityStringUuidFix"
-		}
-	]
-}

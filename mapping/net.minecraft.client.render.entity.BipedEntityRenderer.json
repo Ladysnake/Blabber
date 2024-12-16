@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.entity.HumanoidMobRenderer",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.entity.HumanoidMobRenderer",
-			"fabric": "net.minecraft.client.render.entity.BipedEntityRenderer"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.particle.SonicBoomParticle",
-	"items": [
-		{
-			"forge": "net.minecraft.client.particle.SonicBoomParticle",
-			"fabric": "net.minecraft.client.particle.SonicBoomParticle"
-		}
-	]
-}

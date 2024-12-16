@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.tutorial.CompletedTutorialStepInstance",
-	"items": [
-		{
-			"forge": "net.minecraft.client.tutorial.CompletedTutorialStepInstance",
-			"fabric": "net.minecraft.client.tutorial.NoneTutorialStepHandler"
-		}
-	]
-}

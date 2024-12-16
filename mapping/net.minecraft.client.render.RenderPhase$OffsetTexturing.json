@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.RenderStateShard$OffsetTexturingStateShard",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.RenderStateShard$OffsetTexturingStateShard",
-			"fabric": "net.minecraft.client.render.RenderPhase$OffsetTexturing"
-		}
-	]
-}

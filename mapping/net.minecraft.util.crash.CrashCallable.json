@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.CrashReportDetail",
-	"items": [
-		{
-			"forge": "net.minecraft.CrashReportDetail",
-			"fabric": "net.minecraft.util.crash.CrashCallable"
-		}
-	]
-}

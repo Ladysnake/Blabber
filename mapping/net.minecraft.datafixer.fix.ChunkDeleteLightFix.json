@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.ChunkDeleteLightFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.ChunkDeleteLightFix",
-			"fabric": "net.minecraft.datafixer.fix.ChunkDeleteLightFix"
-		}
-	]
-}

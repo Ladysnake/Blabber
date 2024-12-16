@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.item.Vanishable",
-	"items": [
-		{
-			"forge": "net.minecraft.world.item.Vanishable",
-			"fabric": "net.minecraft.item.Vanishable"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.material.FlowingFluid$1",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.material.FlowingFluid$1",
-			"fabric": "net.minecraft.fluid.FlowableFluid$1"
-		}
-	]
-}

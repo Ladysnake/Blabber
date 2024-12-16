@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.BlockEntityCustomNameToComponentFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.BlockEntityCustomNameToComponentFix",
-			"fabric": "net.minecraft.datafixer.fix.BlockEntityCustomNameToTextFix"
-		}
-	]
-}

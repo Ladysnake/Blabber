@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.LevelRenderer$TransparencyShaderException",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.LevelRenderer$TransparencyShaderException",
-			"fabric": "net.minecraft.client.render.WorldRenderer$ProgramInitException"
-		}
-	]
-}

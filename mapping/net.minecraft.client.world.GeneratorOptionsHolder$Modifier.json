@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.gui.screens.worldselection.WorldCreationContext$OptionsModifier",
-	"items": [
-		{
-			"forge": "net.minecraft.client.gui.screens.worldselection.WorldCreationContext$OptionsModifier",
-			"fabric": "net.minecraft.client.world.GeneratorOptionsHolder$Modifier"
-		}
-	]
-}

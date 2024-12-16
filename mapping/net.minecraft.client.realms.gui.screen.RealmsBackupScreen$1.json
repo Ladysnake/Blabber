@@ -1,9 +1,0 @@
-{
-	"title": "com.mojang.realmsclient.gui.screens.RealmsBackupScreen$1",
-	"items": [
-		{
-			"forge": "com.mojang.realmsclient.gui.screens.RealmsBackupScreen$1",
-			"fabric": "net.minecraft.client.realms.gui.screen.RealmsBackupScreen$1"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.storage.loot.predicates.LootItemConditionType",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.storage.loot.predicates.LootItemConditionType",
-			"fabric": "net.minecraft.loot.condition.LootConditionType"
-		}
-	]
-}

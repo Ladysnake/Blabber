@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.levelgen.GenerationStep",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.levelgen.GenerationStep",
-			"fabric": "net.minecraft.world.gen.GenerationStep"
-		}
-	]
-}

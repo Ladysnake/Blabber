@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.storage.loot.functions.LootItemFunctionType",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.storage.loot.functions.LootItemFunctionType",
-			"fabric": "net.minecraft.loot.function.LootFunctionType"
-		}
-	]
-}

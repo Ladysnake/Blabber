@@ -1,9 +1,0 @@
-{
-	"title": "com.mojang.blaze3d.shaders.Effect",
-	"items": [
-		{
-			"forge": "com.mojang.blaze3d.shaders.Effect",
-			"fabric": "net.minecraft.client.gl.EffectShaderProgram"
-		}
-	]
-}

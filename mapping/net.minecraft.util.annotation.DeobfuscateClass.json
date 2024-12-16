@@ -1,9 +1,0 @@
-{
-	"title": "com.mojang.blaze3d.DontObfuscate",
-	"items": [
-		{
-			"forge": "com.mojang.blaze3d.DontObfuscate",
-			"fabric": "net.minecraft.util.annotation.DeobfuscateClass"
-		}
-	]
-}

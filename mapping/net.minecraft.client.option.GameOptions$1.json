@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.Options$1",
-	"items": [
-		{
-			"forge": "net.minecraft.client.Options$1",
-			"fabric": "net.minecraft.client.option.GameOptions$1"
-		}
-	]
-}

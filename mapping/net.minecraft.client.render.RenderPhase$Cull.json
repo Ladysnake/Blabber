@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.RenderStateShard$CullStateShard",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.RenderStateShard$CullStateShard",
-			"fabric": "net.minecraft.client.render.RenderPhase$Cull"
-		}
-	]
-}

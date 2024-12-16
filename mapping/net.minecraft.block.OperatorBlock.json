@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.block.GameMasterBlock",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.block.GameMasterBlock",
-			"fabric": "net.minecraft.block.OperatorBlock"
-		}
-	]
-}

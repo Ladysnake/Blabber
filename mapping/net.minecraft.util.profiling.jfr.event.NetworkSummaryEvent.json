@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent",
-	"items": [
-		{
-			"forge": "net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent",
-			"fabric": "net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent"
-		}
-	]
-}

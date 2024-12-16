@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.VisibleForDebug",
-	"items": [
-		{
-			"forge": "net.minecraft.util.VisibleForDebug",
-			"fabric": "net.minecraft.util.annotation.Debug"
-		}
-	]
-}

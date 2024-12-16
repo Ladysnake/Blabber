@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.particle.DripParticle$DripLandParticle",
-	"items": [
-		{
-			"forge": "net.minecraft.client.particle.DripParticle$DripLandParticle",
-			"fabric": "net.minecraft.client.particle.BlockLeakParticle$Landing"
-		}
-	]
-}

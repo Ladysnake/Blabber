@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.gametest.framework.GameTestServer$1",
-	"items": [
-		{
-			"forge": "net.minecraft.gametest.framework.GameTestServer$1",
-			"fabric": "net.minecraft.test.TestServer$1"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.server.network.TextFilterClient$RequestFailedException",
-	"items": [
-		{
-			"forge": "net.minecraft.server.network.TextFilterClient$RequestFailedException",
-			"fabric": "net.minecraft.server.filter.TextFilterer$FailedHttpRequestException"
-		}
-	]
-}

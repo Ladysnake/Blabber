@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.server.dedicated.ServerWatchdog$1",
-	"items": [
-		{
-			"forge": "net.minecraft.server.dedicated.ServerWatchdog$1",
-			"fabric": "net.minecraft.server.dedicated.DedicatedServerWatchdog$1"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.item.crafting.RecipeType$1",
-	"items": [
-		{
-			"forge": "net.minecraft.world.item.crafting.RecipeType$1",
-			"fabric": "net.minecraft.recipe.RecipeType$1"
-		}
-	]
-}

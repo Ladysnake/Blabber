@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.block.entity.DaylightDetectorBlockEntity",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.block.entity.DaylightDetectorBlockEntity",
-			"fabric": "net.minecraft.block.entity.DaylightDetectorBlockEntity"
-		}
-	]
-}

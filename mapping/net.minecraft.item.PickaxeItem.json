@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.item.PickaxeItem",
-	"items": [
-		{
-			"forge": "net.minecraft.world.item.PickaxeItem",
-			"fabric": "net.minecraft.item.PickaxeItem"
-		}
-	]
-}

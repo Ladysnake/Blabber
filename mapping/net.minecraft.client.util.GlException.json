@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.main.SilentInitException",
-	"items": [
-		{
-			"forge": "net.minecraft.client.main.SilentInitException",
-			"fabric": "net.minecraft.client.util.GlException"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.TeamDisplayNameFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.TeamDisplayNameFix",
-			"fabric": "net.minecraft.datafixer.fix.TeamDisplayNameFix"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.entity.ai.goal.JumpGoal",
-	"items": [
-		{
-			"forge": "net.minecraft.world.entity.ai.goal.JumpGoal",
-			"fabric": "net.minecraft.entity.ai.goal.DiveJumpingGoal"
-		}
-	]
-}

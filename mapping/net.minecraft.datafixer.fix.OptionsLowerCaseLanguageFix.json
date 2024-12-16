@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.OptionsLowerCaseLanguageFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.OptionsLowerCaseLanguageFix",
-			"fabric": "net.minecraft.datafixer.fix.OptionsLowerCaseLanguageFix"
-		}
-	]
-}

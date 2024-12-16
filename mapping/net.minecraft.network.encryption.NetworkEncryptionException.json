@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.CryptException",
-	"items": [
-		{
-			"forge": "net.minecraft.util.CryptException",
-			"fabric": "net.minecraft.network.encryption.NetworkEncryptionException"
-		}
-	]
-}

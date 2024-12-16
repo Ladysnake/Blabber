@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.chunk.MissingPaletteEntryException",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.chunk.MissingPaletteEntryException",
-			"fabric": "net.minecraft.world.chunk.EntryMissingException"
-		}
-	]
-}

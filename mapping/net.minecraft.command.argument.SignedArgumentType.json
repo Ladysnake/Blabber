@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.commands.arguments.SignedArgument",
-	"items": [
-		{
-			"forge": "net.minecraft.commands.arguments.SignedArgument",
-			"fabric": "net.minecraft.command.argument.SignedArgumentType"
-		}
-	]
-}

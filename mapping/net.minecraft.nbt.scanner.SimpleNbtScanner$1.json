@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.nbt.visitors.SkipAll$1",
-	"items": [
-		{
-			"forge": "net.minecraft.nbt.visitors.SkipAll$1",
-			"fabric": "net.minecraft.nbt.scanner.SimpleNbtScanner$1"
-		}
-	]
-}

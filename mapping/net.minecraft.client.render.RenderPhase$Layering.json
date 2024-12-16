@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.RenderStateShard$LayeringStateShard",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.RenderStateShard$LayeringStateShard",
-			"fabric": "net.minecraft.client.render.RenderPhase$Layering"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.ItemStackMapIdFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.ItemStackMapIdFix",
-			"fabric": "net.minecraft.datafixer.fix.ItemInstanceMapIdFix"
-		}
-	]
-}

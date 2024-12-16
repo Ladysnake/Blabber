@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.item.DyeableHorseArmorItem",
-	"items": [
-		{
-			"forge": "net.minecraft.world.item.DyeableHorseArmorItem",
-			"fabric": "net.minecraft.item.DyeableHorseArmorItem"
-		}
-	]
-}

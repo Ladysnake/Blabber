@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.MapIdFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.MapIdFix",
-			"fabric": "net.minecraft.datafixer.fix.MapIdFix"
-		}
-	]
-}

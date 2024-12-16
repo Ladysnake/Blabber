@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.WorldGenSettingsDisallowOldCustomWorldsFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.WorldGenSettingsDisallowOldCustomWorldsFix",
-			"fabric": "net.minecraft.datafixer.fix.WorldGenSettingsDisallowOldCustomWorldsFix"
-		}
-	]
-}

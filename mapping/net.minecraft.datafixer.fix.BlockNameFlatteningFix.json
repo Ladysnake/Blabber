@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.BlockNameFlatteningFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.BlockNameFlatteningFix",
-			"fabric": "net.minecraft.datafixer.fix.BlockNameFlatteningFix"
-		}
-	]
-}

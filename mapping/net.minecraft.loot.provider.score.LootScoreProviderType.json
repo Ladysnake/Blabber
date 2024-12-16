@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.storage.loot.providers.score.LootScoreProviderType",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.storage.loot.providers.score.LootScoreProviderType",
-			"fabric": "net.minecraft.loot.provider.score.LootScoreProviderType"
-		}
-	]
-}

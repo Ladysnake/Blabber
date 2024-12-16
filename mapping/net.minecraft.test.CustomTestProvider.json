@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.gametest.framework.GameTestGenerator",
-	"items": [
-		{
-			"forge": "net.minecraft.gametest.framework.GameTestGenerator",
-			"fabric": "net.minecraft.test.CustomTestProvider"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.OptionsKeyTranslationFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.OptionsKeyTranslationFix",
-			"fabric": "net.minecraft.datafixer.fix.OptionsKeyTranslationFix"
-		}
-	]
-}

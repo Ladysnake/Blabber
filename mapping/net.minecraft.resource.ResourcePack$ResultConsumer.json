@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.server.packs.PackResources$ResourceOutput",
-	"items": [
-		{
-			"forge": "net.minecraft.server.packs.PackResources$ResourceOutput",
-			"fabric": "net.minecraft.resource.ResourcePack$ResultConsumer"
-		}
-	]
-}

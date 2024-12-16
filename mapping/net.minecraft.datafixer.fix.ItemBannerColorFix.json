@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.datafix.fixes.ItemBannerColorFix",
-	"items": [
-		{
-			"forge": "net.minecraft.util.datafix.fixes.ItemBannerColorFix",
-			"fabric": "net.minecraft.datafixer.fix.ItemBannerColorFix"
-		}
-	]
-}

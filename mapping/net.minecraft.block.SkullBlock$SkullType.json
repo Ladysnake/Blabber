@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.level.block.SkullBlock$Type",
-	"items": [
-		{
-			"forge": "net.minecraft.world.level.block.SkullBlock$Type",
-			"fabric": "net.minecraft.block.SkullBlock$SkullType"
-		}
-	]
-}

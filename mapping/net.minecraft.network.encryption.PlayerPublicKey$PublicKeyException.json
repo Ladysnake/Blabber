@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.world.entity.player.ProfilePublicKey$ValidationException",
-	"items": [
-		{
-			"forge": "net.minecraft.world.entity.player.ProfilePublicKey$ValidationException",
-			"fabric": "net.minecraft.network.encryption.PlayerPublicKey$PublicKeyException"
-		}
-	]
-}

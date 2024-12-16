@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.network.FriendlyByteBuf$Reader",
-	"items": [
-		{
-			"forge": "net.minecraft.network.FriendlyByteBuf$Reader",
-			"fabric": "net.minecraft.network.PacketByteBuf$PacketReader"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.util.profiling.jfr.callback.ProfiledDuration",
-	"items": [
-		{
-			"forge": "net.minecraft.util.profiling.jfr.callback.ProfiledDuration",
-			"fabric": "net.minecraft.util.profiling.jfr.Finishable"
-		}
-	]
-}

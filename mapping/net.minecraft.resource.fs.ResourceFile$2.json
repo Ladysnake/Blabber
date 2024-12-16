@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.server.packs.linkfs.PathContents$2",
-	"items": [
-		{
-			"forge": "net.minecraft.server.packs.linkfs.PathContents$2",
-			"fabric": "net.minecraft.resource.fs.ResourceFile$2"
-		}
-	]
-}

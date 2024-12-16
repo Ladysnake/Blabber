@@ -1,9 +1,0 @@
-{
-	"title": "com.mojang.realmsclient.dto.ReflectionBasedSerialization",
-	"items": [
-		{
-			"forge": "com.mojang.realmsclient.dto.ReflectionBasedSerialization",
-			"fabric": "net.minecraft.client.realms.RealmsSerializable"
-		}
-	]
-}

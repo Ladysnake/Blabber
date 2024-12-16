@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.RenderStateShard$OutputStateShard",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.RenderStateShard$OutputStateShard",
-			"fabric": "net.minecraft.client.render.RenderPhase$Target"
-		}
-	]
-}

@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.entity.ZombieRenderer",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.entity.ZombieRenderer",
-			"fabric": "net.minecraft.client.render.entity.ZombieEntityRenderer"
-		}
-	]
-}

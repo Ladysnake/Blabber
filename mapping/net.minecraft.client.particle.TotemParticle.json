@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.particle.TotemParticle",
-	"items": [
-		{
-			"forge": "net.minecraft.client.particle.TotemParticle",
-			"fabric": "net.minecraft.client.particle.TotemParticle"
-		}
-	]
-}

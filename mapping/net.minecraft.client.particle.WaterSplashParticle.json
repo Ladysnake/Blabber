@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.particle.SplashParticle",
-	"items": [
-		{
-			"forge": "net.minecraft.client.particle.SplashParticle",
-			"fabric": "net.minecraft.client.particle.WaterSplashParticle"
-		}
-	]
-}

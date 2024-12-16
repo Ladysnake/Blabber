@@ -1,9 +1,0 @@
-{
-	"title": "net.minecraft.client.renderer.block.model.BlockModelDefinition$MissingVariantException",
-	"items": [
-		{
-			"forge": "net.minecraft.client.renderer.block.model.BlockModelDefinition$MissingVariantException",
-			"fabric": "net.minecraft.client.render.model.json.ModelVariantMap$VariantAbsentException"
-		}
-	]
-}
