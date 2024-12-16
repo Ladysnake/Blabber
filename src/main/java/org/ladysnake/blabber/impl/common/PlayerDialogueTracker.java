@@ -19,10 +19,9 @@ package org.ladysnake.blabber.impl.common;
 
 import com.google.common.base.Preconditions;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import dev.onyxstudios.cca.api.v3.component.ComponentKey;
-import dev.onyxstudios.cca.api.v3.component.ComponentRegistry;
-import dev.onyxstudios.cca.api.v3.component.tick.ServerTickingComponent;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.CapabilityInject;
+import net.minecraftforge.network.PacketDistributor;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.loot.context.LootContext;
@@ -43,8 +42,9 @@ import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPacket;
 import java.util.Optional;
 import java.util.UUID;
 
-public final class PlayerDialogueTracker implements ServerTickingComponent {
-    public static final ComponentKey<PlayerDialogueTracker> KEY = ComponentRegistry.getOrCreate(Blabber.id("dialogue_tracker"), PlayerDialogueTracker.class);
+public final class PlayerDialogueTracker {
+    @CapabilityInject(PlayerDialogueTracker.class)
+    public static final Capability<PlayerDialogueTracker> KEY = null;
 
     private final PlayerEntity player;
     private @Nullable DialogueStateMachine currentDialogue;
@@ -57,7 +57,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     public static PlayerDialogueTracker get(PlayerEntity player) {
-        return KEY.get(player);
+        return player.getCapability(KEY).orElseThrow(() -> new IllegalStateException("Capability not present"));
     }
 
     public void startDialogue(Identifier id, @Nullable Entity interlocutor) throws CommandSyntaxException {
@@ -120,7 +120,6 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
     }
 
-    @Override
     public void readFromNbt(NbtCompound tag) {
         if (tag.contains("current_dialogue_id", NbtElement.STRING_TYPE)) {
             Identifier dialogueId = Identifier.tryParse(tag.getString("current_dialogue_id"));
@@ -135,7 +134,6 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
     }
 
-    @Override
     public void writeToNbt(NbtCompound tag) {
         if (this.currentDialogue != null) {
             tag.putString("current_dialogue_id", this.currentDialogue.getId().toString());
@@ -146,7 +144,6 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
     }
 
-    @Override
     public void serverTick() {
         DeserializedState saved = this.deserializedState;
         ServerPlayerEntity serverPlayer = (ServerPlayerEntity) this.player;
@@ -179,7 +176,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
                 ChoiceAvailabilityPacket update = this.updateConditions(serverPlayer, this.currentDialogue);
 
                 if (update != null) {
-                    ServerPlayNetworking.send(serverPlayer, update);
+                    PacketDistributor.PLAYER.with(() -> serverPlayer).send(update);
                 }
             } catch (CommandSyntaxException e) {
                 throw new IllegalStateException("Error while updating dialogue conditions", e);
