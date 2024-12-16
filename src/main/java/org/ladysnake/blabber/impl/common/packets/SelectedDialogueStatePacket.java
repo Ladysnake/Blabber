@@ -17,25 +17,34 @@
  */
 package org.ladysnake.blabber.impl.common.packets;
 
-import net.fabricmc.fabric.api.networking.v1.FabricPacket;
-import net.fabricmc.fabric.api.networking.v1.PacketType;
+import net.minecraftforge.network.NetworkEvent;
 import net.minecraft.network.PacketByteBuf;
-import org.ladysnake.blabber.Blabber;
+import java.util.function.Supplier;
 
-public record SelectedDialogueStatePacket(String stateKey) implements FabricPacket {
-    public static final PacketType<SelectedDialogueStatePacket> TYPE = PacketType.create(Blabber.id("selected_dialogue_state"), SelectedDialogueStatePacket::new);
+public class SelectedDialogueStatePacket {
+    private final String stateKey;
 
-    public SelectedDialogueStatePacket(PacketByteBuf buf) {
-        this(buf.readString());
+    public SelectedDialogueStatePacket(String stateKey) {
+        this.stateKey = stateKey;
     }
 
-    @Override
+    public SelectedDialogueStatePacket(PacketByteBuf buf) {
+        this.stateKey = buf.readString();
+    }
+
     public void write(PacketByteBuf buf) {
         buf.writeString(this.stateKey);
     }
 
-    @Override
-    public PacketType<?> getType() {
-        return TYPE;
+    public void handle(Supplier<NetworkEvent.Context> contextSupplier) {
+        NetworkEvent.Context context = contextSupplier.get();
+        context.enqueueWork(() -> {
+            // Handle the packet
+        });
+        context.setPacketHandled(true);
+    }
+
+    public String getStateKey() {
+        return stateKey;
     }
 }
