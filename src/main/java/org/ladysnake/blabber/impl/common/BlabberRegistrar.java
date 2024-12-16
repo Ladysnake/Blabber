@@ -20,14 +20,11 @@ package org.ladysnake.blabber.impl.common;
 import com.mojang.brigadier.suggestion.SuggestionProvider;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.Lifecycle;
-import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
-import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
-import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
-import net.fabricmc.fabric.api.command.v2.ArgumentTypeRegistry;
-import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.RegistryBuilder;
 import net.minecraft.command.CommandSource;
 import net.minecraft.command.argument.serialize.ConstantArgumentSerializer;
 import net.minecraft.command.suggestion.SuggestionProviders;
@@ -55,29 +52,31 @@ import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 import java.util.Optional;
 import java.util.Set;
 
-public final class BlabberRegistrar implements EntityComponentInitializer {
-    public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, buf) -> {
-        DialogueStateMachine dialogue = new DialogueStateMachine(buf);
-        Optional<Entity> interlocutor = buf.readOptional(PacketByteBuf::readVarInt).map(inventory.player.getWorld()::getEntityById);
-        ChoiceAvailabilityPacket choicesAvailability = new ChoiceAvailabilityPacket(buf);
-        dialogue.applyAvailabilityUpdate(choicesAvailability);
-        return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
-    }));
+@Mod.EventBusSubscriber(modid = Blabber.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+public final class BlabberRegistrar {
+    @ObjectHolder(Blabber.MOD_ID + ":dialogue")
+    public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = null;
     public static final Identifier DIALOGUE_ACTION = Blabber.id("dialogue_action");
     public static final RegistryKey<Registry<Codec<? extends DialogueActionV2>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
-    public static final Registry<Codec<? extends DialogueActionV2>> ACTION_REGISTRY = FabricRegistryBuilder.from(
-            new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
-    ).buildAndRegister();
+    public static final Registry<Codec<? extends DialogueActionV2>> ACTION_REGISTRY = new RegistryBuilder<Codec<? extends DialogueActionV2>>()
+            .setName(ACTION_REGISTRY_KEY.getValue())
+            .setType(Codec.class)
+            .setDefaultKey(ACTION_REGISTRY_KEY)
+            .create();
 
     public static final RegistryKey<Registry<DialogueIllustrationType<?>>> ILLUSTRATION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_illustrations"));
-    public static final Registry<DialogueIllustrationType<?>> ILLUSTRATION_REGISTRY = FabricRegistryBuilder.from(
-            new SimpleRegistry<>(ILLUSTRATION_REGISTRY_KEY, Lifecycle.stable(), false)
-    ).buildAndRegister();
+    public static final Registry<DialogueIllustrationType<?>> ILLUSTRATION_REGISTRY = new RegistryBuilder<DialogueIllustrationType<?>>()
+            .setName(ILLUSTRATION_REGISTRY_KEY.getValue())
+            .setType(DialogueIllustrationType.class)
+            .setDefaultKey(ILLUSTRATION_REGISTRY_KEY)
+            .create();
 
     public static final RegistryKey<Registry<DialogueLayoutType<?>>> LAYOUT_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_layouts"));
-    public static final Registry<DialogueLayoutType<?>> LAYOUT_REGISTRY = FabricRegistryBuilder.from(
-            new SimpleRegistry<>(LAYOUT_REGISTRY_KEY, Lifecycle.stable(), false)
-    ).buildAndRegister();
+    public static final Registry<DialogueLayoutType<?>> LAYOUT_REGISTRY = new RegistryBuilder<DialogueLayoutType<?>>()
+            .setName(LAYOUT_REGISTRY_KEY.getValue())
+            .setType(DialogueLayoutType.class)
+            .setDefaultKey(LAYOUT_REGISTRY_KEY)
+            .create();
     public static final DialogueLayoutType<DefaultLayoutParams> CLASSIC_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.DEFAULT, DefaultLayoutParams::new, DefaultLayoutParams::writeToPacket);
     public static final DialogueLayoutType<DefaultLayoutParams> RPG_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.DEFAULT, DefaultLayoutParams::new, DefaultLayoutParams::writeToPacket);
 
@@ -86,7 +85,8 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
             (context, builder) -> CommandSource.suggestIdentifiers(context.getSource() instanceof ServerCommandSource ? DialogueRegistry.getIds() : DialogueRegistry.getClientIds(), builder)
     );
 
-    public static void init() {
+    @SubscribeEvent
+    public static void onRegisterRegistries(RegistryEvent.NewRegistry event) {
         Registry.register(Registries.LOOT_CONDITION_TYPE, Blabber.id("interlocutor_properties"), InterlocutorPropertiesLootCondition.TYPE);
         ArgumentTypeRegistry.registerArgumentType(Blabber.id("setting"), SettingArgumentType.class, ConstantArgumentSerializer.of(SettingArgumentType::setting));
 
@@ -109,11 +109,5 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
                 Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getPlayer().getEntityName());
             }
         });
-    }
-
-    @Override
-    public void registerEntityComponentFactories(EntityComponentFactoryRegistry registry) {
-        registry.registerForPlayers(PlayerDialogueTracker.KEY, PlayerDialogueTracker::new, RespawnCopyStrategy.ALWAYS_COPY);
-        registry.registerForPlayers(BlabberSettingsComponent.KEY, BlabberSettingsComponent::new, RespawnCopyStrategy.ALWAYS_COPY);
     }
 }
