@@ -18,9 +18,8 @@
 package org.ladysnake.babblings.tests;
 
 import io.github.ladysnake.elmendorf.GameTestUtil;
-import net.fabricmc.fabric.api.gametest.v1.FabricGameTest;
+import net.minecraftforge.gametest.GameTest;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.test.GameTest;
 import net.minecraft.test.TestContext;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
@@ -29,7 +28,7 @@ import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 
 import java.util.Set;
 
-public final class BlabberTestSuite implements FabricGameTest {
+public final class BlabberTestSuite {
     @GameTest(templateName = EMPTY_STRUCTURE)
     public void nominal(TestContext ctx) {
         ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
