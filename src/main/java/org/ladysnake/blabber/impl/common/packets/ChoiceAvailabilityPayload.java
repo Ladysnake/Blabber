@@ -37,7 +37,7 @@ public record ChoiceAvailabilityPayload(Map<String, Int2BooleanMap> updatedChoic
     public static final PacketCodec<ByteBuf, ChoiceAvailabilityPayload> PACKET_CODEC = PacketCodecs.map(
             (IntFunction<Map<String, Int2BooleanMap>>) HashMap::new,
             PacketCodecs.STRING,
-            PacketCodecs.map(Int2BooleanOpenHashMap::new, PacketCodecs.VAR_INT, PacketCodecs.BOOL)
+            PacketCodecs.map(Int2BooleanOpenHashMap::new, PacketCodecs.VAR_INT, PacketCodecs.BOOLEAN)
     ).xmap(ChoiceAvailabilityPayload::new, ChoiceAvailabilityPayload::updatedChoices);
 
     public ChoiceAvailabilityPayload() {

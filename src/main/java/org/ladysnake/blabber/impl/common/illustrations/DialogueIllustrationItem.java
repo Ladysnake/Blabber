@@ -43,7 +43,7 @@ public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor ancho
             PacketCodecs.VAR_INT, DialogueIllustrationItem::x,
             PacketCodecs.VAR_INT, DialogueIllustrationItem::y,
             PacketCodecs.FLOAT, DialogueIllustrationItem::scale,
-            PacketCodecs.BOOL, DialogueIllustrationItem::showTooltip,
+            PacketCodecs.BOOLEAN, DialogueIllustrationItem::showTooltip,
             DialogueIllustrationItem::new
     );
 

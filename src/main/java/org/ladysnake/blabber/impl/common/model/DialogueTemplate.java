@@ -45,7 +45,7 @@ public record DialogueTemplate(String start, boolean unskippable, Map<String, Di
     ).apply(instance, DialogueTemplate::new));
     public static final PacketCodec<RegistryByteBuf, DialogueTemplate> PACKET_CODEC = PacketCodec.tuple(
             PacketCodecs.STRING, DialogueTemplate::start,
-            PacketCodecs.BOOL, DialogueTemplate::unskippable,
+            PacketCodecs.BOOLEAN, DialogueTemplate::unskippable,
             PacketCodecs.map(HashMap::new, PacketCodecs.STRING, DialogueState.PACKET_CODEC), DialogueTemplate::states,
             PacketCodecs.map(HashMap::new, PacketCodecs.STRING, DialogueIllustrationType.PACKET_CODEC), DialogueTemplate::illustrations,
             DialogueLayoutType.PACKET_CODEC, DialogueTemplate::layout,

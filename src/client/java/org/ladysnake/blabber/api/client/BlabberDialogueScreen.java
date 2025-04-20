@@ -75,8 +75,8 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     protected final Text instructions;
 
     // Things that could be constants but may be mutated by subclasses
-    protected Identifier selectionIconTexture = DIALOGUE_ARROWS.get(0);
-    protected Identifier lockIconTexture = DIALOGUE_LOCKS.get(0);
+    protected Identifier selectionIconTexture = DIALOGUE_ARROWS.getFirst();
+    protected Identifier lockIconTexture = DIALOGUE_LOCKS.getFirst();
     /**
      * Margin from the top of the screen to the dialogue's main text
      */
@@ -280,7 +280,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
         Text mainText = this.handler.getCurrentText();
 
-        context.drawTextWrapped(this.textRenderer, mainText, mainTextMinX, y, mainTextMaxWidth, mainTextColor);
+        context.drawWrappedText(this.textRenderer, mainText, mainTextMinX, y, mainTextMaxWidth, mainTextColor, false);
         y = this.choiceListMinY;
         ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
 
@@ -289,7 +289,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             int strHeight = this.textRenderer.getWrappedLinesHeight(choice.text(), choiceListMaxWidth);
             boolean selected = i == this.selectedChoice;
             int choiceColor = choice.unavailabilityMessage().isPresent() ? lockedChoiceColor : selected ? selectedChoiceColor : this.choiceColor;
-            context.drawTextWrapped(this.textRenderer, choice.text(), choiceListMinX, y, choiceListMaxWidth, choiceColor);
+            context.drawWrappedText(this.textRenderer, choice.text(), choiceListMinX, y, choiceListMaxWidth, choiceColor, false);
 
             positionTransform.setControlPoints(choiceListMinX, y, choiceListMinX + choiceListMaxWidth, y + strHeight);
 
@@ -308,7 +308,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             y += strHeight + choiceGap;
         }
 
-        context.drawTextWrapped(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0x808080);
+        context.drawWrappedText(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0x808080, false);
 
         BlabberSettingsComponent settings = BlabberSettingsComponent.get(client.player);
         if (settings.isDebugEnabled()) {
