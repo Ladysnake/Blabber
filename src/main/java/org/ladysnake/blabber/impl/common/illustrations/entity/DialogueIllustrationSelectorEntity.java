@@ -125,7 +125,7 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustrationE
     @Override
     public DialogueIllustrationSelectorEntity parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
         if (source != null) {
-            EntitySelector entitySelector = new EntitySelectorReader(new StringReader(spec().selector())).read();
+            EntitySelector entitySelector = new EntitySelectorReader(new StringReader(spec().selector()), true).read();
             Entity e = entitySelector.getEntity(source);
             if (e instanceof LivingEntity living) {
                 this.selectedEntityId = living.getId();

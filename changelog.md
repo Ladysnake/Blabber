@@ -1,4 +1,12 @@
 ------------------------------------------------------
+Version 1.8.0
+------------------------------------------------------
+Updated to MC 1.21.1
+
+**Fixes**
+- Fixed game crashing when a predicate referenced by a dialogue was missing (now the dialogue just won't start)
+
+------------------------------------------------------
 Version 1.7.1
 ------------------------------------------------------
 **Fixes**
