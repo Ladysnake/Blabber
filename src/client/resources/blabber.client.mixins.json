@@ -6,6 +6,7 @@
   "plugin": "org.ladysnake.blabber.impl.client.compat.BlabberClientMixinPlugin",
   "client": [
     "AbstractClientPlayerEntityAccessor",
+    "DrawContextAccessor",
     "DrawContextMixin",
     "compat.emi.EmiScreenManagerMixin"
   ],

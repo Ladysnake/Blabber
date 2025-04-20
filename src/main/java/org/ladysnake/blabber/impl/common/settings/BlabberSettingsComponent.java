@@ -48,7 +48,7 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     public boolean isDebugEnabled() {
-        if (!this.player.getWorld().isClient && !SettingsSubCommand.ALLOW_DEBUG.test(this.player.getCommandSource())) {
+        if (this.player instanceof ServerPlayerEntity serverPlayer && !SettingsSubCommand.ALLOW_DEBUG.test(serverPlayer.getCommandSource())) {
             return false;
         }
         return !this.enabledSettings.isEmpty();

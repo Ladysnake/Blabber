@@ -32,7 +32,6 @@ import net.minecraft.resource.ResourceType;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.profiler.Profiler;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.packets.DialogueListPayload;
@@ -63,7 +62,7 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
     }
 
     @Override
-    public CompletableFuture<Map<Identifier, DialogueTemplate>> load(ResourceManager manager, Profiler profiler, Executor executor) {
+    public CompletableFuture<Map<Identifier, DialogueTemplate>> load(ResourceManager manager, Executor executor) {
         return CompletableFuture.supplyAsync(() -> {
             Map<Identifier, DialogueTemplate> data = new HashMap<>();
             manager.findResources(BLABBER_DIALOGUES_PATH, (res) -> res.getPath().endsWith(".json")).forEach((location, resource) -> {
@@ -97,7 +96,7 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
     }
 
     @Override
-    public CompletableFuture<Void> apply(Map<Identifier, DialogueTemplate> data, ResourceManager manager, Profiler profiler, Executor executor) {
+    public CompletableFuture<Void> apply(Map<Identifier, DialogueTemplate> data, ResourceManager manager, Executor executor) {
         return CompletableFuture.runAsync(() -> DialogueRegistry.setEntries(data), executor);
     }
 

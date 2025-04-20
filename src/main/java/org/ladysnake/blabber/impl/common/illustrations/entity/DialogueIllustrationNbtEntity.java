@@ -20,11 +20,13 @@ package org.ladysnake.blabber.impl.common.illustrations.entity;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.entity.EntityType;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.util.Identifier;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.ladysnake.blabber.impl.common.serialization.EitherMapCodec;
@@ -33,9 +35,9 @@ import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
 
 import java.util.Optional;
 
-public record DialogueIllustrationNbtEntity(Identifier id, IllustrationAnchor anchor, int x, int y, int width, int height, int entitySize, float yOffset, StareTarget stareAt, Optional<NbtCompound> data) implements DialogueIllustrationEntity {
+public record DialogueIllustrationNbtEntity(RegistryKey<EntityType<?>> id, IllustrationAnchor anchor, int x, int y, int width, int height, int entitySize, float yOffset, StareTarget stareAt, Optional<NbtCompound> data) implements DialogueIllustrationEntity {
     private static final MapCodec<DialogueIllustrationNbtEntity> CODEC_V0 = RecordCodecBuilder.mapCodec(instance -> instance.group(
-            Identifier.CODEC.fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
+            RegistryKey.createCodec(RegistryKeys.ENTITY_TYPE).fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
             IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationNbtEntity::anchor),
             Codec.INT.fieldOf("x1").forGetter(DialogueIllustrationNbtEntity::x),
             Codec.INT.fieldOf("y1").forGetter(DialogueIllustrationNbtEntity::y),
@@ -54,7 +56,7 @@ public record DialogueIllustrationNbtEntity(Identifier id, IllustrationAnchor an
         return new DialogueIllustrationNbtEntity(id, anchor, minX, minY, maxX - minX, maxY - minY, size, yOff, new StareTarget(Optional.empty(), stareAtX, stareAtY), data);
     }));
     private static final MapCodec<DialogueIllustrationNbtEntity> CODEC_V1 = RecordCodecBuilder.mapCodec(instance -> instance.group(
-            Identifier.CODEC.fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
+            RegistryKey.createCodec(RegistryKeys.ENTITY_TYPE).fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
             IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationNbtEntity::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationNbtEntity::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationNbtEntity::y),
@@ -67,7 +69,7 @@ public record DialogueIllustrationNbtEntity(Identifier id, IllustrationAnchor an
     ).apply(instance, DialogueIllustrationNbtEntity::new));
     public static final MapCodec<DialogueIllustrationNbtEntity> CODEC = EitherMapCodec.alternatively(CODEC_V0, CODEC_V1);
     public static final PacketCodec<PacketByteBuf, DialogueIllustrationNbtEntity> PACKET_CODEC = MorePacketCodecs.tuple(
-            Identifier.PACKET_CODEC, DialogueIllustrationNbtEntity::id,
+            RegistryKey.createPacketCodec(RegistryKeys.ENTITY_TYPE), DialogueIllustrationNbtEntity::id,
             IllustrationAnchor.PACKET_CODEC, DialogueIllustrationNbtEntity::anchor,
             PacketCodecs.VAR_INT, DialogueIllustrationNbtEntity::x,
             PacketCodecs.VAR_INT, DialogueIllustrationNbtEntity::y,

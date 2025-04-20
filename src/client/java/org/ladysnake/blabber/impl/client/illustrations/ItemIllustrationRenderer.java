@@ -41,7 +41,7 @@ public class ItemIllustrationRenderer extends DialogueIllustrationRenderer<Dialo
             int originY = positionTransform.transformY(this.illustration.anchor(), this.illustration.y());
             context.drawItem(stack, originX + Math.round(8 * (scale - 1)), originY + Math.round(8 * (scale - 1)));
             if (scale == 1) {  // Not supporting rescaled stack decorations right now
-                context.drawItemInSlot(textRenderer, stack, originX, originY);
+                context.drawStackOverlay(textRenderer, stack, originX, originY);
             }
             if (this.illustration.showTooltip() &&
                     originX <= mouseX && originX + (16 * scale) + 4 > mouseX &&

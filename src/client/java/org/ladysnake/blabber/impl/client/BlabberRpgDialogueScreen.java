@@ -23,7 +23,6 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
-import net.minecraft.util.math.ColorHelper;
 import org.joml.Matrix4f;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.api.layout.DefaultLayoutParams;
@@ -31,6 +30,7 @@ import org.ladysnake.blabber.api.layout.Margins;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
+import org.ladysnake.blabber.impl.mixin.client.DrawContextAccessor;
 
 public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayoutParams> {
     public static final int INSTRUCTIONS_BOTTOM_MARGIN = 6;
@@ -107,29 +107,21 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
     public static void fillHorizontalGradient(DrawContext context, int startX, int startY, int endX, int endY, int colorStart, int colorEnd) {
         final int z = 0;
         final int verticalPadding = 2;
-        VertexConsumer vertexConsumer = context.getVertexConsumers().getBuffer(RenderLayer.getGui());
-        float a0 = (float) ColorHelper.Argb.getAlpha(colorStart) / 255.0F;
-        float r0 = (float) ColorHelper.Argb.getRed(colorStart) / 255.0F;
-        float g0 = (float) ColorHelper.Argb.getGreen(colorStart) / 255.0F;
-        float b0 = (float) ColorHelper.Argb.getBlue(colorStart) / 255.0F;
-        float a1 = (float) ColorHelper.Argb.getAlpha(colorEnd) / 255.0F;
-        float r1 = (float) ColorHelper.Argb.getRed(colorEnd) / 255.0F;
-        float g1 = (float) ColorHelper.Argb.getGreen(colorEnd) / 255.0F;
-        float b1 = (float) ColorHelper.Argb.getBlue(colorEnd) / 255.0F;
+        VertexConsumer vertexConsumer = ((DrawContextAccessor) context).getVertexConsumers().getBuffer(RenderLayer.getGui());
         Matrix4f matrix4f = context.getMatrices().peek().getPositionMatrix();
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY - verticalPadding, (float)z).color(r1, g1, b1, a1);
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(r0, g0, b0, a0);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(r1, g1, b1, a1);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY - verticalPadding, (float)z).color(r1, g1, b1, a1);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY - verticalPadding, (float)z).color(colorEnd);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(colorStart);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(colorEnd);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY - verticalPadding, (float)z).color(colorEnd);
 
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(r0, g0, b0, a0);
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(r0, g0, b0, a0);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(r1, g1, b1, a1);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(r1, g1, b1, a1);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(colorStart);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(colorStart);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(colorEnd);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(colorEnd);
 
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(r0, g0, b0, a0);
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY + verticalPadding, (float)z).color(r1, g1, b1, a1);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY + verticalPadding, (float)z).color(r1, g1, b1, a1);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(r1, g1, b1, a1);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(colorStart);
+        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY + verticalPadding, (float)z).color(colorEnd);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY + verticalPadding, (float)z).color(colorEnd);
+        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(colorEnd);
     }
 }

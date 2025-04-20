@@ -29,7 +29,6 @@ import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -38,19 +37,10 @@ import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
-import org.ladysnake.blabber.impl.common.model.DialogueChoice;
-import org.ladysnake.blabber.impl.common.model.DialogueChoiceCondition;
-import org.ladysnake.blabber.impl.common.model.DialogueState;
-import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
-import org.ladysnake.blabber.impl.common.model.UnavailableAction;
-import org.ladysnake.blabber.impl.common.model.UnavailableDisplay;
+import org.ladysnake.blabber.impl.common.model.*;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.IntStream;
 
 public final class DialogueStateMachine {
@@ -139,7 +129,7 @@ public final class DialogueStateMachine {
                 Optional<LootCondition> condition = context.getWorld().getServer()
                         .getReloadableRegistries()
                         .createRegistryLookup()
-                        .getOptionalEntry(RegistryKeys.PREDICATE, predicateId)
+                        .getOptionalEntry(predicateId)
                         .map(RegistryEntry::value);
                 if (condition.isEmpty()) throw INVALID_PREDICATE_EXCEPTION.create(predicateId);
                 boolean testResult = runTest(condition.get(), context);

@@ -19,6 +19,7 @@ package org.ladysnake.blabber.impl.client.illustrations;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.registry.Registries;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -31,10 +32,10 @@ public class NbtEntityIllustrationRenderer extends EntityIllustrationRenderer<Di
 
     @Override
     protected @Nullable LivingEntity getRenderedEntity(World world) {
-        EntityType<?> entityType = Registries.ENTITY_TYPE.getOrEmpty(illustration.id()).orElse(null);
+        EntityType<?> entityType = Registries.ENTITY_TYPE.getOptionalValue(illustration.id()).orElse(null);
         if (entityType == null) return null;
 
-        if (entityType.create(world) instanceof LivingEntity living) {
+        if (entityType.create(world, SpawnReason.COMMAND) instanceof LivingEntity living) {
             illustration.data().ifPresent(living::readNbt);
             living.prevBodyYaw = living.bodyYaw = 0.0f;
             living.prevHeadYaw = living.headYaw = 0.0f;

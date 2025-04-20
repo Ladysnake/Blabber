@@ -23,9 +23,9 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.loot.context.LootContext;
-import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.loot.context.LootContextTypes;
+import net.minecraft.loot.context.LootWorldContext;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
 import net.minecraft.registry.RegistryWrapper;
@@ -207,7 +207,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     private @Nullable ChoiceAvailabilityPayload updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) throws CommandSyntaxException {
         if (currentDialogue.hasConditions()) {
             return currentDialogue.updateConditions(new LootContext.Builder(
-                    new LootContextParameterSet.Builder(player.getServerWorld())
+                    new LootWorldContext.Builder(player.getServerWorld())
                             .add(LootContextParameters.ORIGIN, player.getPos())
                             .addOptional(LootContextParameters.THIS_ENTITY, player)
                             .build(LootContextTypes.COMMAND)

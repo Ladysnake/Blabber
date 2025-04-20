@@ -24,6 +24,7 @@ import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ConfirmScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.option.GameOptions;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
@@ -298,10 +299,10 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
             if (selected) {
                 if (choice.unavailabilityMessage().isPresent()) {
-                    context.drawGuiTexture(lockIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
+                    context.drawGuiTexture(RenderLayer::getGuiTextured, lockIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
                     context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : choiceListMaxWidth, this.hoveringChoice ? mouseY : y);
                 } else {
-                    context.drawGuiTexture(selectionIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
+                    context.drawGuiTexture(RenderLayer::getGuiTextured, selectionIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
                 }
             }
             y += strHeight + choiceGap;
