@@ -32,6 +32,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.actions.CommandDialogueAction;
@@ -75,18 +76,24 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     private DialogueStateMachine startDialogue0(Identifier id, DialogueTemplate template, @Nullable String start, @Nullable Entity interlocutor) throws CommandSyntaxException {
-        ServerPlayerEntity serverPlayer = ((ServerPlayerEntity) this.player);
-        this.interlocutor = interlocutor;
         try {
-            DialogueTemplate parsedTemplate = template.parseText(CommandDialogueAction.getSource(serverPlayer), serverPlayer);
-            this.currentDialogue = new DialogueStateMachine(id, parsedTemplate, start);
-            this.updateConditions(serverPlayer, this.currentDialogue);
-            this.openDialogueScreen();
-            return this.currentDialogue;
+            this.interlocutor = interlocutor;
+            this.currentDialogue = prepareDialogue(id, template, start);
         } catch (CommandSyntaxException e) {
             this.interlocutor = null;
+            this.currentDialogue = null;
             throw e;
         }
+        this.openDialogueScreen();
+        return this.currentDialogue;
+    }
+
+    private @NotNull DialogueStateMachine prepareDialogue(Identifier id, DialogueTemplate template, @Nullable String start) throws CommandSyntaxException {
+        ServerPlayerEntity serverPlayer = ((ServerPlayerEntity) this.player);
+        DialogueTemplate parsedTemplate = template.parseText(CommandDialogueAction.getSource(serverPlayer), serverPlayer);
+        DialogueStateMachine currentDialogue = new DialogueStateMachine(id, parsedTemplate, start);
+        this.updateConditions(serverPlayer, currentDialogue);
+        return currentDialogue;
     }
 
     public void endDialogue() {
