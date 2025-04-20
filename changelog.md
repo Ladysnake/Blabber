@@ -3,6 +3,9 @@ Version 1.8.0
 ------------------------------------------------------
 Updated to MC 1.21.1
 
+**Additions**
+- Added Korean translations (thanks sj-hub9796 !)
+
 **Fixes**
 - Fixed game crashing when a predicate referenced by a dialogue was missing (now the dialogue just won't start)
 
