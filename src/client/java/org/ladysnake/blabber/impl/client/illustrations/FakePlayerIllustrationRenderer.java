@@ -43,8 +43,8 @@ public class FakePlayerIllustrationRenderer extends EntityIllustrationRenderer<D
         OtherClientPlayerEntity fakePlayer = new OtherClientPlayerEntity((ClientWorld) world, profile);
         this.illustration.data().ifPresent(fakePlayer::readNbt);
         ((AbstractClientPlayerEntityAccessor) fakePlayer).setPlayerListEntry(new PlayerListEntry(profile, false));
-        fakePlayer.prevBodyYaw = fakePlayer.bodyYaw = 0.0f;
-        fakePlayer.prevHeadYaw = fakePlayer.headYaw = 0.0f;
+        fakePlayer.lastBodyYaw = fakePlayer.bodyYaw = 0.0f;
+        fakePlayer.lastHeadYaw = fakePlayer.headYaw = 0.0f;
         DialogueIllustrationFakePlayer.PlayerModelOptions playerModelOptions = this.illustration.modelOptionsOrDefault();
         fakePlayer.getDataTracker().set(PlayerEntityAccessor.getPlayerModelParts(), playerModelOptions.packVisibleParts());
         fakePlayer.setMainArm(playerModelOptions.mainHand());

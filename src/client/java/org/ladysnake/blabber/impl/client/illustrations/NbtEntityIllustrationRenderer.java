@@ -37,8 +37,8 @@ public class NbtEntityIllustrationRenderer extends EntityIllustrationRenderer<Di
 
         if (entityType.create(world, SpawnReason.COMMAND) instanceof LivingEntity living) {
             illustration.data().ifPresent(living::readNbt);
-            living.prevBodyYaw = living.bodyYaw = 0.0f;
-            living.prevHeadYaw = living.headYaw = 0.0f;
+            living.lastBodyYaw = living.bodyYaw = 0.0f;
+            living.lastHeadYaw = living.headYaw = 0.0f;
             return living;
         }
 

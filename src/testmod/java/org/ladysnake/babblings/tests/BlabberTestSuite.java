@@ -17,40 +17,38 @@
  */
 package org.ladysnake.babblings.tests;
 
-import net.fabricmc.fabric.api.gametest.v1.FabricGameTest;
+import net.fabricmc.fabric.api.gametest.v1.GameTest;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.test.GameTest;
 import net.minecraft.test.TestContext;
 import net.minecraft.util.Identifier;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.DialogueRegistry;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
-import org.ladysnake.elmendorf.GameTestUtil;
 
 import java.util.Set;
 
-public final class BlabberTestSuite implements FabricGameTest {
-    @GameTest(templateName = EMPTY_STRUCTURE)
+public final class BlabberTestSuite {
+    @GameTest
     public void nominal(TestContext ctx) {
         ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
         Blabber.startDialogue(player, Identifier.of("babblings:remnant_choice"));
-        GameTestUtil.assertTrue("startDialogue should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentStateKey().equals("introduction") && handler.getAvailableChoices().size() == 3);
+        ctx.assertTrue("startDialogue should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentStateKey().equals("introduction") && handler.getAvailableChoices().size() == 3);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        GameTestUtil.assertTrue("choice 0 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
+        ctx.assertTrue("choice 0 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 420);
-        GameTestUtil.assertTrue("choice 420 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
+        ctx.assertTrue("choice 420 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        GameTestUtil.assertTrue("choice 1 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("interested") && handler.getAvailableChoices().size() == 2);
+        ctx.assertTrue("choice 1 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("interested") && handler.getAvailableChoices().size() == 2);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
+        ctx.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
         ctx.complete();
     }
 
-    @GameTest(templateName = EMPTY_STRUCTURE)
+    @GameTest
     public void registryGetsPopulated(TestContext ctx) {
-        GameTestUtil.assertTrue("dialogue registry should match expected state (was " + DialogueRegistry.getIds() + ")",
+        ctx.assertTrue("dialogue registry should match expected state (was " + DialogueRegistry.getIds() + ")",
                 DialogueRegistry.getIds().equals(Set.of(
                         Identifier.of("babblings:illustration_tests"),
                         Identifier.of("babblings:mountain_king"),
@@ -61,27 +59,27 @@ public final class BlabberTestSuite implements FabricGameTest {
         ctx.complete();
     }
 
-    @GameTest(templateName = EMPTY_STRUCTURE)
+    @GameTest
     public void availableChoicesCanGetSelected(TestContext ctx) {
         ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
         Blabber.startDialogue(player, Identifier.of("babblings:mountain_king"), player);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        GameTestUtil.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
+        ctx.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
         ctx.complete();
     }
 
-    @GameTest(templateName = EMPTY_STRUCTURE)
+    @GameTest
     public void unavailableChoicesCannotGetSelected(TestContext ctx) {
         ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
         player.setHealth(10f);
         Blabber.startDialogue(player, Identifier.of("babblings:mountain_king"), player);
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        GameTestUtil.assertTrue("dialogue should be at state bargain", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
+        ctx.assertTrue("dialogue should be at state bargain", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        GameTestUtil.assertTrue("unavailable choice 0 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
+        ctx.assertTrue("unavailable choice 0 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
         ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 2);
-        GameTestUtil.assertTrue("dialogue should be at state friendship", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("friendship"));
+        ctx.assertTrue("dialogue should be at state friendship", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("friendship"));
         ctx.complete();
     }
 }

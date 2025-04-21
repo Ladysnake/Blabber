@@ -27,11 +27,11 @@ import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.loot.context.LootContextTypes;
 import net.minecraft.loot.context.LootWorldContext;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtElement;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Uuids;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
@@ -131,17 +131,13 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
 
     @Override
     public void readFromNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
-        if (tag.contains("current_dialogue_id", NbtElement.STRING_TYPE)) {
-            Identifier dialogueId = Identifier.tryParse(tag.getString("current_dialogue_id"));
-            if (dialogueId != null) {
-                Optional<DialogueTemplate> dialogueTemplate = DialogueRegistry.getOrEmpty(dialogueId);
-                if (dialogueTemplate.isPresent()) {
-                    UUID interlocutorUuid = tag.containsUuid("interlocutor") ? tag.getUuid("interlocutor") : null;
-                    String selectedState = tag.contains("current_dialogue_state", NbtElement.STRING_TYPE) ? tag.getString("current_dialogue_state") : null;
-                    this.deserializedState = new DeserializedState(dialogueId, dialogueTemplate.get(), selectedState, interlocutorUuid);
-                }
-            }
-        }
+        tag.getString("current_dialogue_id").map(Identifier::tryParse).ifPresent(dialogueId ->
+            DialogueRegistry.getOrEmpty(dialogueId).ifPresent(dialogueTemplate -> {
+                UUID interlocutorUuid = tag.get("interlocutor", Uuids.INT_STREAM_CODEC).orElse(null);
+                String selectedState = tag.getString("current_dialogue_state", null);
+                this.deserializedState = new DeserializedState(dialogueId, dialogueTemplate, selectedState, interlocutorUuid);
+            })
+        );
     }
 
     @Override
@@ -150,7 +146,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
             tag.putString("current_dialogue_id", this.currentDialogue.getId().toString());
             tag.putString("current_dialogue_state", this.currentDialogue.getCurrentStateKey());
             if (this.interlocutor != null) {
-                tag.putUuid("interlocutor", this.interlocutor.getUuid());
+                tag.put("interlocutor", Uuids.INT_STREAM_CODEC, this.interlocutor.getUuid());
             }
         }
     }

@@ -94,11 +94,8 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     @Override
     public void readFromNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
         this.enabledSettings = EnumSet.noneOf(BlabberSetting.class);
-        for (NbtElement featureId : tag.getList("enabled_features", NbtElement.STRING_TYPE)) {
-            BlabberSetting feature = BlabberSetting.getById(featureId.asString());
-            if (feature != null) {
-                this.enabledSettings.add(feature);
-            }
+        for (NbtElement featureId : tag.getListOrEmpty("enabled_features")) {
+            featureId.asString().map(BlabberSetting::getById).ifPresent(this.enabledSettings::add);
         }
     }
 
