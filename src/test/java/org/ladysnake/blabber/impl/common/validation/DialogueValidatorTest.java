@@ -22,13 +22,13 @@ import com.google.gson.JsonElement;
 import com.mojang.serialization.JsonOps;
 import net.minecraft.Bootstrap;
 import net.minecraft.SharedConstants;
-import net.minecraft.test.GameTestException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 
 import java.io.InputStreamReader;
+import java.util.List;
 import java.util.Objects;
 
 public class DialogueValidatorTest {
@@ -52,23 +52,25 @@ public class DialogueValidatorTest {
     public void validationLogsConditionalDialogues() {
         DialogueTemplate dialogue = loadDialogue("/conditional_dialogue.json");
         ValidationResult result = DialogueValidator.validateStructure(dialogue);
-        Assertions.assertTrue(result instanceof ValidationResult.Warnings warnings && warnings.warnings().get(0) instanceof ValidationResult.Warning.ConditionalSoftLock, "Dialogue validation should detect conditional softlocks in dialogues");
+        Assertions.assertTrue(result instanceof ValidationResult.Warnings(
+                List<ValidationResult.Warning> warnings
+        ) && warnings.getFirst() instanceof ValidationResult.Warning.ConditionalSoftLock, "Dialogue validation should detect conditional softlocks in dialogues");
         Assertions.assertEquals("bargain only has conditional paths to the end of the dialogue", ((ValidationResult.Warnings) result).message());
     }
 
     @Test
     public void validationFailsOnLoopingDialogue() {
         DialogueTemplate dialogue = loadDialogue("/looping_dialogue.json");
-        Assertions.assertTrue(DialogueValidator.validateStructure(dialogue) instanceof ValidationResult.Error.SoftLock, "Dialogue validation should detect looping dialogues");
+        Assertions.assertInstanceOf(ValidationResult.Error.SoftLock.class, DialogueValidator.validateStructure(dialogue), "Dialogue validation should detect looping dialogues");
     }
 
     @Test
     public void validationFailsOnInvalidReference() {
         DialogueTemplate dialogue = loadDialogue("/invalid_reference.json");
-        Assertions.assertTrue(DialogueValidator.validateStructure(dialogue) instanceof ValidationResult.Error.NonexistentIllustration, "Dialogue validation should detect invalid illustration reference");
+        Assertions.assertInstanceOf(ValidationResult.Error.NonexistentIllustration.class, DialogueValidator.validateStructure(dialogue), "Dialogue validation should detect invalid illustration reference");
     }
 
     private static DialogueTemplate loadDialogue(String name) {
-        return DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name))), JsonElement.class)).getOrThrow(GameTestException::new);
+        return DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name))), JsonElement.class)).getOrThrow();
     }
 }
