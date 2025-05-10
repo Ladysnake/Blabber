@@ -22,6 +22,7 @@ import com.mojang.serialization.Lifecycle;
 import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.command.v2.ArgumentTypeRegistry;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
+import net.fabricmc.fabric.api.event.registry.RegistryAttribute;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationNetworking;
@@ -62,17 +63,17 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final RegistryKey<Registry<MapCodec<? extends DialogueActionV2>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
     public static final Registry<MapCodec<? extends DialogueActionV2>> ACTION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
-    ).buildAndRegister();
+    ).attribute(RegistryAttribute.SYNCED).buildAndRegister();
 
     public static final RegistryKey<Registry<DialogueIllustrationType<?>>> ILLUSTRATION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_illustrations"));
     public static final Registry<DialogueIllustrationType<?>> ILLUSTRATION_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(ILLUSTRATION_REGISTRY_KEY, Lifecycle.stable(), false)
-    ).buildAndRegister();
+    ).attribute(RegistryAttribute.SYNCED).buildAndRegister();
 
     public static final RegistryKey<Registry<DialogueLayoutType<?>>> LAYOUT_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_layouts"));
     public static final Registry<DialogueLayoutType<?>> LAYOUT_REGISTRY = FabricRegistryBuilder.from(
             new SimpleRegistry<>(LAYOUT_REGISTRY_KEY, Lifecycle.stable(), false)
-    ).buildAndRegister();
+    ).attribute(RegistryAttribute.SYNCED).buildAndRegister();
     public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, data) -> {
         DialogueStateMachine dialogue = data.dialogue();
         dialogue.applyAvailabilityUpdate(data.availableChoices());
