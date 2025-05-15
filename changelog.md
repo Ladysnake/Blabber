@@ -1,4 +1,10 @@
 ------------------------------------------------------
+Version 1.6.2-mc1.20.1
+------------------------------------------------------
+**Fixes**
+- Fixed symbols from non-latin alphabets appearing inconsistently depending on the host machine's language
+
+------------------------------------------------------
 Version 1.6.1-mc1.20.1
 ------------------------------------------------------
 **Fixes**

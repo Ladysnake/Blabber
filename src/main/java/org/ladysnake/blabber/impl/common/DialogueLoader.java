@@ -44,6 +44,7 @@ import org.ladysnake.blabber.impl.common.validation.ValidationResult;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.nio.charset.StandardCharsets;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -68,7 +69,7 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
         return CompletableFuture.supplyAsync(() -> {
             Map<Identifier, DialogueTemplate> data = new HashMap<>();
             manager.findResources(BLABBER_DIALOGUES_PATH, (res) -> res.getPath().endsWith(".json")).forEach((location, resource) -> {
-                try (Reader in = new InputStreamReader(resource.getInputStream())) {
+                try (Reader in = new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8)) {
                     JsonObject jsonObject = GSON.fromJson(in, JsonObject.class);
                     Identifier id = new Identifier(location.getNamespace(), location.getPath().substring(BLABBER_DIALOGUES_PATH.length() + 1, location.getPath().length() - 5));
                     DialogueTemplate dialogue = DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, jsonObject).getOrThrow(false, message -> Blabber.LOGGER.error("(Blabber) Could not parse dialogue file from {}: {}", location, message));
