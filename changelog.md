@@ -3,6 +3,7 @@ Version 1.11.1
 ------------------------------------------------------
 **Fixes**
 - Fixed symbols from non-latin alphabets appearing inconsistently depending on the host machine's language
+- Fixed crash when using the mod with Sinytra Connector on 1.21+ NeoForge (thanks Prunoideae!)
 
 ------------------------------------------------------
 Version 1.11.0
