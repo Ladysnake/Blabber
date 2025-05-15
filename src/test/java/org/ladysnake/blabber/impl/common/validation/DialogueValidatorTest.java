@@ -28,6 +28,7 @@ import org.junit.jupiter.api.Test;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Objects;
 
@@ -71,6 +72,8 @@ public class DialogueValidatorTest {
     }
 
     private static DialogueTemplate loadDialogue(String name) {
-        return DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name))), JsonElement.class)).getOrThrow();
+        return DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(
+                Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name)), StandardCharsets.UTF_8
+        ), JsonElement.class)).getOrThrow();
     }
 }
