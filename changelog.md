@@ -1,6 +1,9 @@
 ------------------------------------------------------
 Version 1.6.2-mc1.20.1
 ------------------------------------------------------
+**Additions**
+- Added Korean translations (thanks sj-hub9796 !)
+
 **Fixes**
 - Fixed symbols from non-latin alphabets appearing inconsistently depending on the host machine's language
 
