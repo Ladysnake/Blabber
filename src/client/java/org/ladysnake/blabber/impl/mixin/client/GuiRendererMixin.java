@@ -17,13 +17,20 @@
  */
 package org.ladysnake.blabber.impl.mixin.client;
 
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.render.state.GuiRenderState;
+import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
+import net.minecraft.client.gui.render.GuiRenderer;
+import org.ladysnake.blabber.impl.client.illustrations.ItemIllustrationRenderer;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.gen.Accessor;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Coerce;
 
-@Mixin(DrawContext.class)
-public interface DrawContextAccessor {
-    @Accessor
-    GuiRenderState getState();
+@Mixin(GuiRenderer.class)
+public class GuiRendererMixin {
+    @ModifyExpressionValue(
+            method = "prepareItem",
+            at = @At(value = "CONSTANT", args = "intValue=16")
+    )
+    private int scaleItem(int original, @Coerce ItemIllustrationRenderer.RenderStateHooks renderState) {
+        return Math.round(original * renderState.blabber$getItemScale());
+    }
 }

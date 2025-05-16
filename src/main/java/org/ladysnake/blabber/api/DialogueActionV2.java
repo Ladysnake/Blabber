@@ -17,7 +17,6 @@
  */
 package org.ladysnake.blabber.api;
 
-import com.mojang.serialization.Codec;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
@@ -25,7 +24,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * @see org.ladysnake.blabber.Blabber#registerAction(Identifier, DialogueActionV2)
- * @see org.ladysnake.blabber.Blabber#registerAction(Identifier, Codec)
+ * @see org.ladysnake.blabber.Blabber#registerAction(Identifier, com.mojang.serialization.MapCodec)
  */
 @FunctionalInterface
 public interface DialogueActionV2 {

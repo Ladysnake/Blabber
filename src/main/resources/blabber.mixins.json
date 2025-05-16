@@ -6,6 +6,7 @@
   "mixins": [
     "EntitySelectorMixin",
     "EntitySelectorReaderMixin",
+    "FpaPermissionsMixin",
     "PlayerEntityAccessor",
     "PlayerManagerMixin"
   ],

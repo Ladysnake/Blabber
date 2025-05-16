@@ -20,15 +20,16 @@ package org.ladysnake.blabber.api.client;
 import com.google.common.collect.ImmutableList;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ConfirmScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.option.GameOptions;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.ColorHelper;
 import net.minecraft.util.math.MathHelper;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
@@ -280,7 +281,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
         Text mainText = this.handler.getCurrentText();
 
-        context.drawWrappedText(this.textRenderer, mainText, mainTextMinX, y, mainTextMaxWidth, mainTextColor, false);
+        context.drawWrappedText(this.textRenderer, mainText, mainTextMinX, y, mainTextMaxWidth, ColorHelper.fullAlpha(mainTextColor), false);
         y = this.choiceListMinY;
         ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
 
@@ -289,7 +290,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             int strHeight = this.textRenderer.getWrappedLinesHeight(choice.text(), choiceListMaxWidth);
             boolean selected = i == this.selectedChoice;
             int choiceColor = choice.unavailabilityMessage().isPresent() ? lockedChoiceColor : selected ? selectedChoiceColor : this.choiceColor;
-            context.drawWrappedText(this.textRenderer, choice.text(), choiceListMinX, y, choiceListMaxWidth, choiceColor, false);
+            context.drawWrappedText(this.textRenderer, choice.text(), choiceListMinX, y, choiceListMaxWidth, ColorHelper.fullAlpha(choiceColor), false);
 
             positionTransform.setControlPoints(choiceListMinX, y, choiceListMinX + choiceListMaxWidth, y + strHeight);
 
@@ -299,16 +300,16 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
             if (selected) {
                 if (choice.unavailabilityMessage().isPresent()) {
-                    context.drawGuiTexture(RenderLayer::getGuiTextured, lockIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
+                    context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, lockIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
                     context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : choiceListMaxWidth, this.hoveringChoice ? mouseY : y);
                 } else {
-                    context.drawGuiTexture(RenderLayer::getGuiTextured, selectionIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
+                    context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, selectionIconTexture, selectionIconMinX, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
                 }
             }
             y += strHeight + choiceGap;
         }
 
-        context.drawWrappedText(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0x808080, false);
+        context.drawWrappedText(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0xFF808080, false);
 
         BlabberSettingsComponent settings = BlabberSettingsComponent.get(client.player);
         if (settings.isDebugEnabled()) {

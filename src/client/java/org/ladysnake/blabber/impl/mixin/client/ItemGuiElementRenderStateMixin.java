@@ -17,30 +17,29 @@
  */
 package org.ladysnake.blabber.impl.mixin.client;
 
-import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.ScreenRect;
 import net.minecraft.client.gui.render.state.ItemGuiElementRenderState;
+import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.client.illustrations.ItemIllustrationRenderer;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Unique;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.ModifyArg;
+import org.spongepowered.asm.mixin.*;
 
-@Mixin(DrawContext.class)
-public abstract class DrawContextMixin implements ItemIllustrationRenderer.DrawContextHooks {
+@Mixin(ItemGuiElementRenderState.class)
+public class ItemGuiElementRenderStateMixin implements ItemIllustrationRenderer.RenderStateHooks {
+    @Shadow @Final @Mutable
+    private @Nullable ScreenRect bounds;
     @Unique
     private float blabber$itemScale = 1;
 
     @Override
     public void blabber$setItemScale(float itemScale) {
         this.blabber$itemScale = itemScale;
+        if (this.bounds != null) {
+            this.bounds = new ScreenRect(this.bounds.position(), Math.round(this.bounds.width() * itemScale), Math.round(this.bounds.height() * itemScale));
+        }
     }
 
-    @ModifyArg(
-            method = "drawItem(Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/world/World;Lnet/minecraft/item/ItemStack;III)V",
-            at = @At(value = "INVOKE", target = "net/minecraft/client/gui/render/state/GuiRenderState.addItem(Lnet/minecraft/client/gui/render/state/ItemGuiElementRenderState;)V")
-    )
-    private ItemGuiElementRenderState scaleItem(ItemGuiElementRenderState state) {
-        ((ItemIllustrationRenderer.RenderStateHooks)(Object) state).blabber$setItemScale(blabber$itemScale);
-        return state;
+    @Override
+    public float blabber$getItemScale() {
+        return blabber$itemScale;
     }
 }

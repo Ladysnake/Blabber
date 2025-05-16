@@ -18,13 +18,10 @@
 package org.ladysnake.blabber.impl.common.settings;
 
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtElement;
-import net.minecraft.nbt.NbtList;
-import net.minecraft.nbt.NbtString;
 import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.storage.ReadView;
+import net.minecraft.storage.WriteView;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.commands.SettingsSubCommand;
 import org.ladysnake.cca.api.v3.component.ComponentKey;
@@ -92,19 +89,18 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     @Override
-    public void readFromNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
+    public void readData(ReadView readView) {
         this.enabledSettings = EnumSet.noneOf(BlabberSetting.class);
-        for (NbtElement featureId : tag.getListOrEmpty("enabled_features")) {
-            featureId.asString().map(BlabberSetting::getById).ifPresent(this.enabledSettings::add);
+        for (BlabberSetting feature : readView.getTypedListView("enabled_features", BlabberSetting.CODEC)) {
+            this.enabledSettings.add(feature);
         }
     }
 
     @Override
-    public void writeToNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
-        NbtList list = new NbtList();
+    public void writeData(WriteView writeView) {
+        WriteView.ListAppender<BlabberSetting> listAppender = writeView.getListAppender("enabled_features", BlabberSetting.CODEC);
         for (BlabberSetting feature : this.enabledSettings) {
-            list.add(NbtString.of(feature.id()));
+            listAppender.add(feature);
         }
-        tag.put("enabled_features", list);
     }
 }

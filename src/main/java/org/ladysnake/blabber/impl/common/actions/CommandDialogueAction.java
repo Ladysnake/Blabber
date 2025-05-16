@@ -28,7 +28,7 @@ public record CommandDialogueAction(String command) implements DialogueAction {
 
     @Override
     public void handle(ServerPlayerEntity player) {
-        player.server.getCommandManager().executeWithPrefix(
+        player.getServer().getCommandManager().executeWithPrefix(
                 getSource(player),
                 this.command()
         );
@@ -36,7 +36,7 @@ public record CommandDialogueAction(String command) implements DialogueAction {
 
     public static ServerCommandSource getSource(ServerPlayerEntity player) {
         return player.getCommandSource()
-                .withOutput(player.server)
+                .withOutput(player.getServer())
                 .withLevel(2);
     }
 }

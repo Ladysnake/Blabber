@@ -8,6 +8,8 @@
     "AbstractClientPlayerEntityAccessor",
     "DrawContextAccessor",
     "DrawContextMixin",
+    "GuiRendererMixin",
+    "ItemGuiElementRenderStateMixin",
     "compat.emi.EmiScreenManagerMixin"
   ],
   "injectors": {

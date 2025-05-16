@@ -41,7 +41,7 @@ public class FakePlayerIllustrationRenderer extends EntityIllustrationRenderer<D
     protected @Nullable LivingEntity getRenderedEntity(World world) {
         GameProfile profile = this.illustration.profile();
         OtherClientPlayerEntity fakePlayer = new OtherClientPlayerEntity((ClientWorld) world, profile);
-        this.illustration.data().ifPresent(fakePlayer::readNbt);
+        this.illustration.data().ifPresent(nbt -> NbtEntityIllustrationRenderer.loadEntityData(world, fakePlayer, nbt));
         ((AbstractClientPlayerEntityAccessor) fakePlayer).setPlayerListEntry(new PlayerListEntry(profile, false));
         fakePlayer.lastBodyYaw = fakePlayer.bodyYaw = 0.0f;
         fakePlayer.lastHeadYaw = fakePlayer.headYaw = 0.0f;

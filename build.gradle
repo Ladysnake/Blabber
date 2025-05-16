@@ -61,6 +61,7 @@ repositories {
 			includeGroup("dev.architectury")
 		}
 	}
+	mavenLocal()
 }
 
 dependencies {
@@ -84,7 +85,7 @@ dependencies {
 
 	compileOnly(libs.mcAnnotations)
 
-	modLocalRuntime(libs.modmenu)
+//	modLocalImplementation(libs.modmenu)
 
 	// Test dependencies
 	modLocalImplementation(libs.elmendorf)

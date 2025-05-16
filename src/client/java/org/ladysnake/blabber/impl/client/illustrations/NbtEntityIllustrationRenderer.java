@@ -20,9 +20,13 @@ package org.ladysnake.blabber.impl.client.illustrations;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SpawnReason;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
+import net.minecraft.storage.NbtReadView;
+import net.minecraft.util.ErrorReporter;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationNbtEntity;
 
 public class NbtEntityIllustrationRenderer extends EntityIllustrationRenderer<DialogueIllustrationNbtEntity> {
@@ -36,12 +40,18 @@ public class NbtEntityIllustrationRenderer extends EntityIllustrationRenderer<Di
         if (entityType == null) return null;
 
         if (entityType.create(world, SpawnReason.COMMAND) instanceof LivingEntity living) {
-            illustration.data().ifPresent(living::readNbt);
+            this.illustration.data().ifPresent(nbt -> loadEntityData(world, living, nbt));
             living.lastBodyYaw = living.bodyYaw = 0.0f;
             living.lastHeadYaw = living.headYaw = 0.0f;
             return living;
         }
 
         return null;
+    }
+
+    public static void loadEntityData(World world, LivingEntity entity, NbtCompound nbt) {
+        try (ErrorReporter.Logging logging = new ErrorReporter.Logging(entity.getErrorReporterContext(), Blabber.LOGGER)) {
+            entity.readData(NbtReadView.create(logging, world.getRegistryManager(), nbt));
+        }
     }
 }

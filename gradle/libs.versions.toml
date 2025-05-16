@@ -1,8 +1,8 @@
 [versions]
-cca = "6.3.1"
+cca = "7.0.0-alpha.1+25w20a"
 elmendorf = "0.15.0"
 emi = "1.1.6+1.20.6"
-fpa = "0.2-SNAPSHOT"
+fpa = "0.3.3"
 mcAnnotations = "1.0"
 modmenu = "13.0.0"
 rei = "14.0.688"

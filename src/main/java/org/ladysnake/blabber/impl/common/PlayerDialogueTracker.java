@@ -26,9 +26,9 @@ import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.loot.context.LootContextTypes;
 import net.minecraft.loot.context.LootWorldContext;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.storage.ReadView;
+import net.minecraft.storage.WriteView;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Uuids;
@@ -130,23 +130,23 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     @Override
-    public void readFromNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
-        tag.getString("current_dialogue_id").map(Identifier::tryParse).ifPresent(dialogueId ->
+    public void readData(ReadView readView) {
+        readView.getOptionalString("current_dialogue_id").map(Identifier::tryParse).ifPresent(dialogueId ->
             DialogueRegistry.getOrEmpty(dialogueId).ifPresent(dialogueTemplate -> {
-                UUID interlocutorUuid = tag.get("interlocutor", Uuids.INT_STREAM_CODEC).orElse(null);
-                String selectedState = tag.getString("current_dialogue_state", null);
+                UUID interlocutorUuid = readView.read("interlocutor", Uuids.INT_STREAM_CODEC).orElse(null);
+                String selectedState = readView.getString("current_dialogue_state", null);
                 this.deserializedState = new DeserializedState(dialogueId, dialogueTemplate, selectedState, interlocutorUuid);
             })
         );
     }
 
     @Override
-    public void writeToNbt(NbtCompound tag, RegistryWrapper.WrapperLookup registryLookup) {
+    public void writeData(WriteView writeView) {
         if (this.currentDialogue != null) {
-            tag.putString("current_dialogue_id", this.currentDialogue.getId().toString());
-            tag.putString("current_dialogue_state", this.currentDialogue.getCurrentStateKey());
+            writeView.putString("current_dialogue_id", this.currentDialogue.getId().toString());
+            writeView.putString("current_dialogue_state", this.currentDialogue.getCurrentStateKey());
             if (this.interlocutor != null) {
-                tag.put("interlocutor", Uuids.INT_STREAM_CODEC, this.interlocutor.getUuid());
+                writeView.put("interlocutor", Uuids.INT_STREAM_CODEC, this.interlocutor.getUuid());
             }
         }
     }
@@ -159,7 +159,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
             if (resumptionAttempts++ < 200) {   // only try for like, 10 seconds after joining the world
                 Entity interlocutor;
                 if (saved.interlocutorUuid() != null) {
-                    interlocutor = serverPlayer.getServerWorld().getEntity(saved.interlocutorUuid());
+                    interlocutor = serverPlayer.getWorld().getEntity(saved.interlocutorUuid());
                     if (interlocutor == null) return;    // no one to talk to
                 } else {
                     interlocutor = null;
@@ -203,7 +203,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     private @Nullable ChoiceAvailabilityPayload updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) throws CommandSyntaxException {
         if (currentDialogue.hasConditions()) {
             return currentDialogue.updateConditions(new LootContext.Builder(
-                    new LootWorldContext.Builder(player.getServerWorld())
+                    new LootWorldContext.Builder(player.getWorld())
                             .add(LootContextParameters.ORIGIN, player.getPos())
                             .addOptional(LootContextParameters.THIS_ENTITY, player)
                             .build(LootContextTypes.COMMAND)

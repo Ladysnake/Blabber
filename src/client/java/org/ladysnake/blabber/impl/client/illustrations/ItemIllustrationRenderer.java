@@ -39,7 +39,7 @@ public class ItemIllustrationRenderer extends DialogueIllustrationRenderer<Dialo
             ((DrawContextHooks) context).blabber$setItemScale(scale);
             int originX = positionTransform.transformX(this.illustration.anchor(), this.illustration.x());
             int originY = positionTransform.transformY(this.illustration.anchor(), this.illustration.y());
-            context.drawItem(stack, originX + Math.round(8 * (scale - 1)), originY + Math.round(8 * (scale - 1)));
+            context.drawItem(stack, originX, originY);
             if (scale == 1) {  // Not supporting rescaled stack decorations right now
                 context.drawStackOverlay(textRenderer, stack, originX, originY);
             }
@@ -55,5 +55,10 @@ public class ItemIllustrationRenderer extends DialogueIllustrationRenderer<Dialo
 
     public interface DrawContextHooks {
         void blabber$setItemScale(float itemScale);
+    }
+
+    public interface RenderStateHooks {
+        void blabber$setItemScale(float itemScale);
+        float blabber$getItemScale();
     }
 }

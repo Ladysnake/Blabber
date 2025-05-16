@@ -18,12 +18,11 @@
 package org.ladysnake.blabber.impl.client;
 
 import com.google.common.collect.ImmutableList;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
-import org.joml.Matrix4f;
+import org.joml.Matrix3x2f;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.api.layout.DefaultLayoutParams;
 import org.ladysnake.blabber.api.layout.Margins;
@@ -98,30 +97,16 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
             if (i == selectedChoice) this.selectionIconMarginTop = ((strHeight - 9) / 2) - 4;
             y += strHeight + choiceGap;
         }
-        context.draw();
         // Bottom background
         context.fillGradient(0, this.mainTextMinY - 20, this.width, this.mainTextMinY - TEXT_TOP_MARGIN, 0x00101010, 0xc0101010);
         context.fillGradient(0, this.mainTextMinY - TEXT_TOP_MARGIN, this.width, this.height, 0xc0101010, 0xd0101010);
     }
 
     public static void fillHorizontalGradient(DrawContext context, int startX, int startY, int endX, int endY, int colorStart, int colorEnd) {
-        final int z = 0;
-        final int verticalPadding = 2;
-        VertexConsumer vertexConsumer = ((DrawContextAccessor) context).getVertexConsumers().getBuffer(RenderLayer.getGui());
-        Matrix4f matrix4f = context.getMatrices().peek().getPositionMatrix();
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY - verticalPadding, (float)z).color(colorEnd);
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(colorStart);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(colorEnd);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY - verticalPadding, (float)z).color(colorEnd);
-
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)startY, (float)z).color(colorStart);
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(colorStart);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(colorEnd);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)startY, (float)z).color(colorEnd);
-
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY, (float)z).color(colorStart);
-        vertexConsumer.vertex(matrix4f, (float)startX, (float)endY + verticalPadding, (float)z).color(colorEnd);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY + verticalPadding, (float)z).color(colorEnd);
-        vertexConsumer.vertex(matrix4f, (float)endX, (float)endY, (float)z).color(colorEnd);
+        ((DrawContextAccessor) context).getState().addSimpleElement(
+                new HorizontalGradientGuiElementRenderState(
+                        RenderPipelines.GUI, new Matrix3x2f(context.getMatrices()), startX, startY, endX, endY, colorStart, colorEnd, null
+                )
+        );
     }
 }
