@@ -39,6 +39,7 @@ import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.client.illustration.DialogueIllustrationRenderer;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.client.BlabberClient;
+import org.ladysnake.blabber.impl.client.widgets.DialogueTextWidget;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
@@ -61,6 +62,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("container/dialogue/dialogue_lock_" + i)).toList();
     public static final int DEFAULT_TITLE_GAP = 20;
     public static final int DEFAULT_TEXT_MAX_WIDTH = 300;
+    public static final int DEFAULT_TEXT_MAX_ROWS = 5;
     public static final int DEFAULT_INSTRUCTIONS_BOTTOM_MARGIN = 30;
     public static final int[] DEBUG_COLORS = new int[] {
             0x42b862,
@@ -89,6 +91,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     protected int mainTextMinX = 10;
     protected int instructionsMinY;
     protected int mainTextMaxWidth = DEFAULT_TEXT_MAX_WIDTH;
+    protected int mainTextMaxRows = DEFAULT_TEXT_MAX_ROWS;
     /**
      * Max width for the choice texts
      */
@@ -119,6 +122,9 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     protected int selectedChoice;
     protected boolean hoveringChoice;
 
+    // Widgets
+    protected DialogueTextWidget title;
+
     protected Map<String, DialogueIllustrationRenderer<?>> illustrations = new HashMap<>();
 
     public BlabberDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
@@ -139,6 +145,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     @Override
     protected void init() {
         super.init();
+        this.title = this.addDrawableChild(new DialogueTextWidget(0, 0, mainTextMaxWidth, mainTextMaxRows, Text.empty(), this.textRenderer));
         this.prepareLayout();
         this.illustrations.clear();
         this.handler.getIllustrations().forEach((key, illustration) -> this.illustrations.put(key, BlabberClient.createRenderer(illustration)));
@@ -147,6 +154,10 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     protected void prepareLayout() {
         this.computeMargins();
         this.layoutIllustrationAnchors();
+        this.title.setPosition(mainTextMinX, mainTextMinY);
+        this.title.setTextWidth(mainTextMaxWidth);
+        this.title.setTextColor(mainTextColor);
+        this.title.setMessage(handler.getCurrentText());
     }
 
     protected void computeMargins() {
@@ -168,6 +179,9 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
     @Override
     public boolean mouseClicked(double x, double y, int button) {
+        if (super.mouseClicked(x, y, button)) {
+            return true;
+        }
         if (hoveringChoice) {
             this.confirmChoice(this.selectedChoice);
         }
@@ -181,11 +195,9 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             this.confirmChoice(this.selectedChoice);
             return true;
         }
-        boolean tab = GLFW.GLFW_KEY_TAB == key;
         boolean down = options.backKey.matchesKey(key, scancode);
-        boolean shift = (GLFW.GLFW_MOD_SHIFT & modifiers) != 0;
-        if (tab || down || options.forwardKey.matchesKey(key, scancode)) {
-            scrollDialogueChoice(tab && !shift || down ? -1 : 1);
+        if (down || options.forwardKey.matchesKey(key, scancode)) {
+            scrollDialogueChoice(down ? -1 : 1);
             return true;
         }
         return super.keyPressed(key, scancode, modifiers);
@@ -230,6 +242,9 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
     @Override
     public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
+        if (this.hoveredElement(mouseX, mouseY).filter(element -> element.mouseScrolled(mouseX, mouseY, horizontalAmount, verticalAmount)).isPresent()) {
+            return true;
+        }
         this.scrollDialogueChoice(MathHelper.clamp(verticalAmount, -1.0, 1.0));
         return true;
     }
@@ -273,16 +288,11 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
         PositionTransform positionTransform = this.createPositionTransform();
         positionTransform.setControlPoints(0, 0, this.width, this.height);
 
-        int y = mainTextMinY;
-
         for (String illustrationName : this.handler.getCurrentIllustrations()) {
             this.getIllustrationRenderer(illustrationName).render(context, this.textRenderer, positionTransform, mouseX, mouseY, tickDelta);
         }
 
-        Text mainText = this.handler.getCurrentText();
-
-        context.drawWrappedText(this.textRenderer, mainText, mainTextMinX, y, mainTextMaxWidth, ColorHelper.fullAlpha(mainTextColor), false);
-        y = this.choiceListMinY;
+        int y = this.choiceListMinY;
         ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
 
         for (int i = 0; i < choices.size(); i++) {
