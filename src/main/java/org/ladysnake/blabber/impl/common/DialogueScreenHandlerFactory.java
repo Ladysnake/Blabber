@@ -34,19 +34,18 @@ import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 import java.util.Optional;
 
 public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory<DialogueScreenHandlerFactory.DialogueOpeningData> {
+    private static final Text DEFAULT_NAME = Text.translatable("blabber:container.dialogue");
     private final DialogueStateMachine dialogue;
-    private final Text displayName;
     private final @Nullable Entity interlocutor;
 
-    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, Text displayName, @Nullable Entity interlocutor) {
+    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
         this.dialogue = dialogue;
-        this.displayName = displayName;
         this.interlocutor = interlocutor;
     }
 
     @Override
     public Text getDisplayName() {
-        return this.displayName;
+        return this.dialogue.getName().orElseGet(() -> interlocutor == null ? DEFAULT_NAME : Text.translatable("blabber:container.dialogue_with_interlocutor", interlocutor.getName()));
     }
 
     @Nullable

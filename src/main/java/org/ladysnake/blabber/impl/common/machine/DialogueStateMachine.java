@@ -96,6 +96,10 @@ public final class DialogueStateMachine {
         return this.id;
     }
 
+    public Optional<Text> getName() {
+        return this.template.name();
+    }
+
     public DialogueLayout<?> getLayout() {
         return this.template.layout();
     }

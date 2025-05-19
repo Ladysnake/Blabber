@@ -25,6 +25,9 @@ import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.text.Text;
+import net.minecraft.text.TextCodecs;
+import net.minecraft.text.Texts;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
@@ -34,9 +37,18 @@ import org.ladysnake.blabber.api.layout.DialogueLayoutType;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
-public record DialogueTemplate(String start, boolean unskippable, Map<String, DialogueState> states, Map<String, DialogueIllustration> illustrations, DialogueLayout<?> layout) {
+public record DialogueTemplate(
+        Optional<Text> name,
+        String start,
+        boolean unskippable,
+        Map<String, DialogueState> states,
+        Map<String, DialogueIllustration> illustrations,
+        DialogueLayout<?> layout
+) {
     public static final Codec<DialogueTemplate> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+            TextCodecs.CODEC.optionalFieldOf("name").forGetter(DialogueTemplate::name),
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
             Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states),
@@ -44,6 +56,7 @@ public record DialogueTemplate(String start, boolean unskippable, Map<String, Di
             DialogueLayoutType.CODEC.optionalFieldOf("layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
     ).apply(instance, DialogueTemplate::new));
     public static final PacketCodec<RegistryByteBuf, DialogueTemplate> PACKET_CODEC = PacketCodec.tuple(
+            PacketCodecs.optional(TextCodecs.PACKET_CODEC), DialogueTemplate::name,
             PacketCodecs.STRING, DialogueTemplate::start,
             PacketCodecs.BOOLEAN, DialogueTemplate::unskippable,
             PacketCodecs.map(HashMap::new, PacketCodecs.STRING, DialogueState.PACKET_CODEC), DialogueTemplate::states,
@@ -64,7 +77,10 @@ public record DialogueTemplate(String start, boolean unskippable, Map<String, Di
             parsedIllustrations.put(illustration.getKey(), illustration.getValue().parseText(source, sender));
         }
 
+        @SuppressWarnings("unchecked") Optional<Text> parsedName = (Optional<Text>) (Optional<?>) Texts.parse(source, name, sender, 0);
+
         return new DialogueTemplate(
+                parsedName,
                 start(),
                 unskippable(),
                 parsedStates,

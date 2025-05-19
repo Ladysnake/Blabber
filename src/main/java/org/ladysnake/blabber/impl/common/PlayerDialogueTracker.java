@@ -29,7 +29,6 @@ import net.minecraft.loot.context.LootWorldContext;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.storage.ReadView;
 import net.minecraft.storage.WriteView;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Uuids;
 import org.jetbrains.annotations.NotNull;
@@ -214,7 +213,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
 
     private void openDialogueScreen() {
         Preconditions.checkState(this.currentDialogue != null);
-        this.player.openHandledScreen(new DialogueScreenHandlerFactory(this.currentDialogue, Text.of("Blabber Dialogue Screen"), this.interlocutor));
+        this.player.openHandledScreen(new DialogueScreenHandlerFactory(this.currentDialogue, this.interlocutor));
     }
 
     private record DeserializedState(Identifier dialogueId, DialogueTemplate template, String selectedState, @Nullable UUID interlocutorUuid) { }

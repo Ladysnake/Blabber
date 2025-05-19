@@ -1,4 +1,6 @@
 {
+  "blabber:container.dialogue": "Dialogue",
+  "blabber:container.dialogue_with_interlocutor": "Dialogue avec %s",
   "blabber:commands.dialogue.start.invalid": "Il n'y a pas de dialogue \"%s\"",
   "blabber:commands.dialogue.start.predicate.invalid": "Il n'y a pas de prédicat de type \"%s\"",
   "blabber:commands.dialogue.start.success": "Le dialogue \"%s\" a été initié pour %s",

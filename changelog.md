@@ -1,4 +1,14 @@
 ------------------------------------------------------
+Version 1.12.0
+------------------------------------------------------
+Updated to MC 1.21.6
+
+**Additions**
+- Dialogue screens now have a proper name, which will be narrated for players using this accessibility feature.
+This name can be changed with a new optional `name` property on dialogues. The default name in English is "Dialogue" when there is
+no interlocutor, and "Dialogue with {entity name}" when there is one.
+
+------------------------------------------------------
 Version 1.11.1
 ------------------------------------------------------
 **Fixes**
