@@ -107,7 +107,7 @@ public class DialogueTextWidget extends ScrollableWidget {
     }
 
     @Override
-    protected int getContentsHeightWithPadding() {
+    public int getContentsHeightWithPadding() {
         return this.getTypesetText().count() * LINE_HEIGHT;
     }
 
@@ -118,15 +118,13 @@ public class DialogueTextWidget extends ScrollableWidget {
 
     @Override
     protected void renderWidget(DrawContext context, int mouseX, int mouseY, float deltaTicks) {
-        if (this.visible) {
-            context.enableScissor(this.getX() + 1, this.getY() + 1, this.getX() + this.width - 1, this.getY() + this.height - 1);
-            context.getMatrices().pushMatrix();
-            context.getMatrices().translate(this.textMargin, (float)(this.textMargin - this.getScrollY()));
-            renderContents(context);
-            context.getMatrices().popMatrix();
-            context.disableScissor();
-            this.drawScrollbar(context);
-        }
+        context.enableScissor(this.getX() + 1, this.getY() + 1, this.getX() + this.width - 1, this.getY() + this.height - 1);
+        context.getMatrices().pushMatrix();
+        context.getMatrices().translate(this.textMargin, (float)(this.textMargin - this.getScrollY()));
+        renderContents(context);
+        context.getMatrices().popMatrix();
+        context.disableScissor();
+        this.drawScrollbar(context);
     }
 
     private void renderContents(DrawContext context) {

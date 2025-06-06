@@ -8,6 +8,7 @@ Updated to MC 1.21.6
 This name can be changed with a new optional `name` property on dialogues. The default name in English is "Dialogue" when there is
 no interlocutor, and "Dialogue with {entity name}" when there is one.
 - The main text in dialogues now gets a scrollbar when it gets too long, and can be narrated
+- The choices and the instructions in the dialogue screen can be narrated (kind of, not fully working yet)
 
 ------------------------------------------------------
 Version 1.11.1

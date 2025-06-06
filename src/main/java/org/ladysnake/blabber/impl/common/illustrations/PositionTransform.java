@@ -30,7 +30,7 @@ public class PositionTransform {
     }
 
     private Vector2i getPos(IllustrationAnchor anchor) {
-        return anchors.get(anchor);
+        return anchors.computeIfAbsent(anchor, a -> new Vector2i());
     }
 
     public int transformX(IllustrationAnchor anchor, int x) {
