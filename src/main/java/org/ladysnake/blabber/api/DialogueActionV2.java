@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2025 Ladysnake
+ * Copyright (C) 2022-2026 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,7 +17,7 @@
  */
 package org.ladysnake.blabber.api;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
@@ -25,7 +25,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * @see org.ladysnake.blabber.Blabber#registerAction(Identifier, DialogueActionV2)
- * @see org.ladysnake.blabber.Blabber#registerAction(Identifier, Codec)
+ * @see org.ladysnake.blabber.Blabber#registerAction(Identifier, MapCodec)
  */
 @FunctionalInterface
 public interface DialogueActionV2 {
