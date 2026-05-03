@@ -77,7 +77,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, data) -> {
         DialogueStateMachine dialogue = data.dialogue();
         dialogue.applyAvailabilityUpdate(data.availableChoices());
-        Optional<Entity> interlocutor = data.interlocutorId().map(inventory.player.getWorld()::getEntityById);
+        Optional<Entity> interlocutor = data.interlocutorId().map(inventory.player.getEntityWorld()::getEntityById);
         return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
     }, DialogueScreenHandlerFactory.DialogueOpeningData.PACKET_CODEC));
     public static final DialogueLayoutType<DefaultLayoutParams> CLASSIC_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.PACKET_CODEC, DefaultLayoutParams.DEFAULT);
@@ -114,7 +114,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
                 Set<Identifier> dialogueIds = DialogueRegistry.getIds();
                 ServerConfigurationNetworking.send(handler, new DialogueListPayload(dialogueIds));
             } else {
-                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getDebugProfile().getName());
+                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getDebugProfile().name());
             }
         });
     }

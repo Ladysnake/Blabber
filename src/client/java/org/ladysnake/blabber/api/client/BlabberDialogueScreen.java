@@ -20,11 +20,13 @@ package org.ladysnake.blabber.api.client;
 import com.google.common.collect.ImmutableList;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ConfirmScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
 import net.minecraft.client.gui.screen.narration.NarrationPart;
+import net.minecraft.client.input.KeyInput;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.MutableText;
@@ -156,12 +158,12 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     }
 
     @Override
-    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+    public boolean keyPressed(KeyInput input) {
         GameOptions options = MinecraftClient.getInstance().options;
-        if (options.forwardKey.matchesKey(keyCode, scanCode) || options.backKey.matchesKey(keyCode, scanCode) || options.inventoryKey.matchesKey(keyCode, scanCode)) {
+        if (options.forwardKey.matchesKey(input) || options.backKey.matchesKey(input) || options.inventoryKey.matchesKey(input)) {
             this.setFocused(this.choiceList);
         }
-        return super.keyPressed(keyCode, scanCode, modifiers);
+        return super.keyPressed(input);
     }
 
     @Override
@@ -215,8 +217,8 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     }
 
     @Override
-    public boolean mouseClicked(double mouseX, double mouseY, int button) {
-        return this.choiceList.mouseClicked(mouseX, mouseY, button);
+    public boolean mouseClicked(Click click, boolean doubled) {
+        return this.choiceList.mouseClicked(click, doubled);
     }
 
     @Override

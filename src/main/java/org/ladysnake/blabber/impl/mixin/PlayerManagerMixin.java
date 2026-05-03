@@ -27,8 +27,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerManager.class)
 public abstract class PlayerManagerMixin {
-    @Inject(method = "sendCommandTree(Lnet/minecraft/server/network/ServerPlayerEntity;I)V", at = @At("RETURN"))
-    private void updateDebugMode(ServerPlayerEntity player, int permissionLevel, CallbackInfo ci) {
+    @Inject(method = "sendCommandTree(Lnet/minecraft/server/network/ServerPlayerEntity;)V", at = @At("RETURN"))
+    private void updateDebugMode(ServerPlayerEntity player, CallbackInfo ci) {
         BlabberSettingsComponent.KEY.sync(player);
     }
 }

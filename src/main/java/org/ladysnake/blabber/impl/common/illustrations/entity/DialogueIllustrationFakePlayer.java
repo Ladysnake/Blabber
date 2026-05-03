@@ -51,7 +51,7 @@ public record DialogueIllustrationFakePlayer(GameProfile profile,
                                              Optional<PlayerModelOptions> modelOptions,
                                              Optional<NbtCompound> data) implements DialogueIllustrationEntity {
     private static final MapCodec<DialogueIllustrationFakePlayer> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-            Codecs.GAME_PROFILE_WITH_PROPERTIES.fieldOf("profile").forGetter(DialogueIllustrationFakePlayer::profile),
+            Codecs.GAME_PROFILE_CODEC.fieldOf("profile").forGetter(DialogueIllustrationFakePlayer::profile),
             IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationFakePlayer::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationFakePlayer::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationFakePlayer::y),

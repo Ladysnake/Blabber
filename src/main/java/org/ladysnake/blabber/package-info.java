@@ -18,9 +18,7 @@
 /**
  * Definitions of the dialogue system
  */
-@FieldsAreNonnullByDefault
-@MethodsReturnNonnullByDefault
+@NullMarked
 package org.ladysnake.blabber;
 
-import net.minecraft.util.annotation.FieldsAreNonnullByDefault;
-import net.minecraft.util.annotation.MethodsReturnNonnullByDefault;
+import org.jspecify.annotations.NullMarked;

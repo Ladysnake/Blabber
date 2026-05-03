@@ -19,18 +19,20 @@ package org.ladysnake.blabber.impl.client.widgets;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.client.font.Alignment;
 import net.minecraft.client.font.MultilineText;
 import net.minecraft.client.font.TextRenderer;
+import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
 import net.minecraft.client.gui.screen.narration.NarrationPart;
 import net.minecraft.client.gui.widget.ScrollableWidget;
+import net.minecraft.client.input.KeyInput;
 import net.minecraft.client.sound.SoundManager;
 import net.minecraft.text.Text;
 import net.minecraft.util.CachedMapper;
 import net.minecraft.util.Colors;
 import net.minecraft.util.Util;
-import net.minecraft.util.math.ColorHelper;
 import org.lwjgl.glfw.GLFW;
 
 /**
@@ -86,15 +88,15 @@ public class DialogueTextWidget extends ScrollableWidget {
     }
 
     @Override
-    public boolean mouseClicked(double mouseX, double mouseY, int button) {
-        boolean scrollbarDragged = this.checkScrollbarDragged(mouseX, mouseY, button);
-        return super.mouseClicked(mouseX, mouseY, button) || scrollbarDragged;
+    public boolean mouseClicked(Click click, boolean doubled) {
+        boolean scrollbarDragged = this.checkScrollbarDragged(click);
+        return super.mouseClicked(click, doubled) || scrollbarDragged;
     }
 
     @Override
-    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-        boolean up = keyCode == GLFW.GLFW_KEY_UP;
-        boolean down = keyCode == GLFW.GLFW_KEY_DOWN;
+    public boolean keyPressed(KeyInput input) {
+        boolean up = input.key() == GLFW.GLFW_KEY_UP;
+        boolean down = input.key() == GLFW.GLFW_KEY_DOWN;
         if (up || down) {
             double prevScrollY = this.getScrollY();
             this.setScrollY(prevScrollY + (up ? -1 : 1) * this.getDeltaYPerScroll());
@@ -103,12 +105,12 @@ public class DialogueTextWidget extends ScrollableWidget {
             }
         }
 
-        return super.keyPressed(keyCode, scanCode, modifiers);
+        return super.keyPressed(input);
     }
 
     @Override
     public int getContentsHeightWithPadding() {
-        return this.getTypesetText().count() * LINE_HEIGHT;
+        return this.getTypesetText().getLineCount() * LINE_HEIGHT;
     }
 
     @Override
@@ -124,15 +126,17 @@ public class DialogueTextWidget extends ScrollableWidget {
         renderContents(context);
         context.getMatrices().popMatrix();
         context.disableScissor();
-        this.drawScrollbar(context);
+        this.drawScrollbar(context, mouseX, mouseY);
     }
 
     private void renderContents(DrawContext context) {
         MultilineText multilineText = this.getTypesetText();
         int x = this.getX();
         int y = this.getY();
-        int l = ColorHelper.withAlpha(this.alpha, this.getTextColor());
-        multilineText.draw(context, x, y, LINE_HEIGHT, l);
+        multilineText.draw(Alignment.LEFT, x, y, LINE_HEIGHT, context.getTextConsumer(
+                DrawContext.HoverType.TOOLTIP_ONLY,
+                style -> style.withColor(this.getTextColor())
+        ));
     }
 
     @Override

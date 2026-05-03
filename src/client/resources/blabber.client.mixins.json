@@ -10,7 +10,6 @@
     "DrawContextMixin",
     "GuiRendererMixin",
     "ItemGuiElementRenderStateMixin",
-    "TestInventoryScreenMixin",
     "compat.emi.EmiScreenManagerMixin"
   ],
   "injectors": {

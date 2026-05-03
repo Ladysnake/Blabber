@@ -49,7 +49,7 @@ public record InterlocutorPropertiesLootCondition(EntityPredicate predicate) imp
 
     @Override
     public boolean test(LootContext lootContext) {
-        Entity entity = lootContext.get(LootContext.EntityTarget.THIS.getParameter());
+        Entity entity = lootContext.get(LootContext.EntityReference.THIS.contextParam());
         Vec3d origin = lootContext.get(LootContextParameters.ORIGIN);
         Optional<Entity> interlocutor = PlayerDialogueTracker.KEY.maybeGet(entity).flatMap(PlayerDialogueTracker::getInterlocutor);
         return interlocutor.isPresent() && this.predicate.test(lootContext.getWorld(), origin, interlocutor.get());

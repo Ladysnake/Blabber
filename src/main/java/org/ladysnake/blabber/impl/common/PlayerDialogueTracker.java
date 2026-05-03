@@ -158,7 +158,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
             if (resumptionAttempts++ < 200) {   // only try for like, 10 seconds after joining the world
                 Entity interlocutor;
                 if (saved.interlocutorUuid() != null) {
-                    interlocutor = serverPlayer.getWorld().getEntity(saved.interlocutorUuid());
+                    interlocutor = serverPlayer.getEntityWorld().getEntity(saved.interlocutorUuid());
                     if (interlocutor == null) return;    // no one to talk to
                 } else {
                     interlocutor = null;
@@ -202,8 +202,8 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     private @Nullable ChoiceAvailabilityPayload updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) throws CommandSyntaxException {
         if (currentDialogue.hasConditions()) {
             return currentDialogue.updateConditions(new LootContext.Builder(
-                    new LootWorldContext.Builder(player.getWorld())
-                            .add(LootContextParameters.ORIGIN, player.getPos())
+                    new LootWorldContext.Builder(player.getEntityWorld())
+                            .add(LootContextParameters.ORIGIN, player.getEntityPos())
                             .addOptional(LootContextParameters.THIS_ENTITY, player)
                             .build(LootContextTypes.COMMAND)
             ).build(Optional.empty()));

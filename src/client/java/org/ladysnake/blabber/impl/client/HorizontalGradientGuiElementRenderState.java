@@ -26,11 +26,12 @@ import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.texture.TextureSetup;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Matrix3x2f;
+import org.joml.Matrix3x2fc;
 
 @Environment(EnvType.CLIENT)
 public record HorizontalGradientGuiElementRenderState(
         RenderPipeline pipeline,
-        Matrix3x2f pose,
+        Matrix3x2fc pose,
         int startX,
         int startY,
         int endX,
@@ -52,31 +53,32 @@ public record HorizontalGradientGuiElementRenderState(
     }
 
     @Override
-    public void setupVertices(VertexConsumer vertices, float depth) {
-//        vertices.vertex(this.pose(), (float)this.startX(), (float)this.startY(), depth).color(this.colorStart());
-//        vertices.vertex(this.pose(), (float)this.startX(), (float)this.endY(), depth).color(this.colorEnd());
-//        vertices.vertex(this.pose(), (float)this.endX(), (float)this.endY(), depth).color(this.colorEnd());
-//        vertices.vertex(this.pose(), (float)this.endX(), (float)this.startY(), depth).color(this.colorStart());
+    public void setupVertices(VertexConsumer vertices) {
+//        vertices.vertex(this.pose(), (float)this.startX(), (float)this.startY()).color(this.colorStart());
+//        vertices.vertex(this.pose(), (float)this.startX(), (float)this.endY()).color(this.colorEnd());
+//        vertices.vertex(this.pose(), (float)this.endX(), (float)this.endY()).color(this.colorEnd());
+//        vertices.vertex(this.pose(), (float)this.endX(), (float)this.startY()).color(this.colorStart());
         final int verticalPadding = 2;
+        final float depth = 0;
 
-        vertices.vertex(this.pose(), (float) startX, (float) startY - verticalPadding, depth).color(colorEnd);
-        vertices.vertex(this.pose(), (float) startX, (float) startY, depth).color(colorStart);
-        vertices.vertex(this.pose(), (float) endX, (float) startY, depth).color(colorEnd);
-        vertices.vertex(this.pose(), (float) endX, (float) startY - verticalPadding, depth).color(colorEnd);
+        vertices.vertex(this.pose(), startX, startY - verticalPadding).color(colorEnd);
+        vertices.vertex(this.pose(), startX, startY).color(colorStart);
+        vertices.vertex(this.pose(), endX, startY).color(colorEnd);
+        vertices.vertex(this.pose(), endX, startY - verticalPadding).color(colorEnd);
 
-        vertices.vertex(this.pose(), (float) startX, (float) startY, depth).color(colorStart);
-        vertices.vertex(this.pose(), (float) startX, (float) endY, depth).color(colorStart);
-        vertices.vertex(this.pose(), (float) endX, (float) endY, depth).color(colorEnd);
-        vertices.vertex(this.pose(), (float) endX, (float) startY, depth).color(colorEnd);
+        vertices.vertex(this.pose(), startX, startY).color(colorStart);
+        vertices.vertex(this.pose(), startX, endY).color(colorStart);
+        vertices.vertex(this.pose(), endX, endY).color(colorEnd);
+        vertices.vertex(this.pose(), endX, startY).color(colorEnd);
 
-        vertices.vertex(this.pose(), (float) startX, (float) endY, depth).color(colorStart);
-        vertices.vertex(this.pose(), (float) startX, (float) endY + verticalPadding, depth).color(colorEnd);
-        vertices.vertex(this.pose(), (float) endX, (float) endY + verticalPadding, depth).color(colorEnd);
-        vertices.vertex(this.pose(), (float) endX, (float) endY, depth).color(colorEnd);
-//        vertices.vertex(this.pose(), (float) this.startX(), (float) this.startY(), depth).color(this.colorStart());
-//        vertices.vertex(this.pose(), (float) this.startX(), (float) this.endY(), depth).color(this.colorEnd());
-//        vertices.vertex(this.pose(), (float) this.endX(), (float) this.endY(), depth).color(this.colorEnd());
-//        vertices.vertex(this.pose(), (float) this.endX(), (float) this.startY(), depth).color(this.colorStart());
+        vertices.vertex(this.pose(), startX, endY).color(colorStart);
+        vertices.vertex(this.pose(), startX, endY + verticalPadding).color(colorEnd);
+        vertices.vertex(this.pose(), endX, endY + verticalPadding).color(colorEnd);
+        vertices.vertex(this.pose(), endX, endY).color(colorEnd);
+//        vertices.vertex(this.pose(), this.startX(), this.startY()).color(this.colorStart());
+//        vertices.vertex(this.pose(), this.startX(), this.endY()).color(this.colorEnd());
+//        vertices.vertex(this.pose(), this.endX(), this.endY()).color(this.colorEnd());
+//        vertices.vertex(this.pose(), this.endX(), this.startY()).color(this.colorStart());
     }
 
     @Nullable

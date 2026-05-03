@@ -1,10 +1,10 @@
 [versions]
-cca = "7.0.0-alpha.1+25w20a"
-elmendorf = "0.15.0"
+cca = "7.3.1"
+elmendorf = "0.16.1"
 emi = "1.1.6+1.20.6"
-fpa = "0.3.3"
+fpa = "0.6.1"
 mcAnnotations = "1.0"
-modmenu = "13.0.0"
+modmenu = "17.0.0"
 rei = "14.0.688"
 jei = "GE5LkM6l" # 18.0.0.62
 

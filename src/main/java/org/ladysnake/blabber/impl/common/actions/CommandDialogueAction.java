@@ -19,6 +19,7 @@ package org.ladysnake.blabber.impl.common.actions;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
+import net.minecraft.command.permission.LeveledPermissionPredicate;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.ladysnake.blabber.DialogueAction;
@@ -28,7 +29,7 @@ public record CommandDialogueAction(String command) implements DialogueAction {
 
     @Override
     public void handle(ServerPlayerEntity player) {
-        player.getServer().getCommandManager().executeWithPrefix(
+        player.getEntityWorld().getServer().getCommandManager().parseAndExecute(
                 getSource(player),
                 this.command()
         );
@@ -36,7 +37,7 @@ public record CommandDialogueAction(String command) implements DialogueAction {
 
     public static ServerCommandSource getSource(ServerPlayerEntity player) {
         return player.getCommandSource()
-                .withOutput(player.getServer())
-                .withLevel(2);
+                .withOutput(player.getEntityWorld().getServer())
+                .withAdditionalPermissions(LeveledPermissionPredicate.GAMEMASTERS);
     }
 }

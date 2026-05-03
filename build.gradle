@@ -1,8 +1,8 @@
 import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
-	id 'fabric-loom' version "1.10-SNAPSHOT"
-	id 'io.github.ladysnake.chenille' version '0.14.0'
+	id 'fabric-loom' version "1.15-SNAPSHOT"
+	id 'io.github.ladysnake.chenille' version '0.18.0'
 }
 
 version = project.mod_version
@@ -85,7 +85,7 @@ dependencies {
 
 	compileOnly(libs.mcAnnotations)
 
-//	modLocalImplementation(libs.modmenu)
+	modLocalImplementation(libs.modmenu)
 
 	// Test dependencies
 	modLocalImplementation(libs.elmendorf)

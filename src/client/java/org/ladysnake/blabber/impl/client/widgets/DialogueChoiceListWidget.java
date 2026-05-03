@@ -21,10 +21,12 @@ import com.google.common.collect.ImmutableList;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gl.RenderPipelines;
+import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
 import net.minecraft.client.gui.screen.narration.NarrationPart;
 import net.minecraft.client.gui.widget.ScrollableWidget;
+import net.minecraft.client.input.KeyInput;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -189,18 +191,18 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
     }
 
     @Override
-    public boolean keyPressed(int key, int scancode, int modifiers) {
+    public boolean keyPressed(KeyInput input) {
         GameOptions options = MinecraftClient.getInstance().options;
-        if (key == GLFW.GLFW_KEY_ENTER || options.inventoryKey.matchesKey(key, scancode)) {
+        if (input.key() == GLFW.GLFW_KEY_ENTER || options.inventoryKey.matchesKey(input)) {
             this.confirmChoice(this.selectedChoice);
             return true;
         }
-        boolean down = options.backKey.matchesKey(key, scancode);
-        if (down || options.forwardKey.matchesKey(key, scancode)) {
+        boolean down = options.backKey.matchesKey(input);
+        if (down || options.forwardKey.matchesKey(input)) {
             scrollDialogueChoice(down ? -1 : 1);
             return true;
         }
-        return super.keyPressed(key, scancode, modifiers);
+        return super.keyPressed(input);
     }
 
     protected void scrollDialogueChoice(double scrollAmount) {
@@ -211,12 +213,12 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
     }
 
     @Override
-    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+    public boolean mouseClicked(Click click, boolean doubled) {
         if (hoveringChoice) {
             this.confirmChoice(this.selectedChoice);
             return true;
         }
-        return super.mouseClicked(mouseX, mouseY, button);
+        return super.mouseClicked(click, doubled);
     }
 
     @Override
@@ -249,7 +251,7 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
         renderContents(context, mouseX, mouseY, deltaTicks);
         context.getMatrices().popMatrix();
         context.disableScissor();
-        this.drawScrollbar(context);
+        this.drawScrollbar(context, mouseX, mouseY);
     }
 
     protected void renderContents(DrawContext context, int mouseX, int mouseY, float deltaTicks) {

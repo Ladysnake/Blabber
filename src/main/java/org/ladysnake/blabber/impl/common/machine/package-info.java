@@ -18,11 +18,8 @@
 /**
  * Definitions of the dialogue system
  */
-@FieldsAreNonnullByDefault
-@MethodsReturnNonnullByDefault
-@ApiStatus.Internal
+@NullMarked@ApiStatus.Internal
 package org.ladysnake.blabber.impl.common.machine;
 
-import net.minecraft.util.annotation.FieldsAreNonnullByDefault;
-import net.minecraft.util.annotation.MethodsReturnNonnullByDefault;
 import org.jetbrains.annotations.ApiStatus;
+import org.jspecify.annotations.NullMarked;
