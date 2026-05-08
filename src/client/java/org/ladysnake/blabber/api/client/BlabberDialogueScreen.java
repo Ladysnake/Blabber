@@ -95,9 +95,6 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     protected EnumMap<IllustrationAnchor, Vector2i> illustrationSlots;
     protected int mainTextColor = 0xFFFFFF;
 
-    // Things that are mutated during state changes
-    protected int choiceListMinY;
-
     // Widgets
     protected DialogueTextWidget title;
     protected DialogueChoiceListWidget choiceList;
@@ -134,13 +131,13 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
     protected void prepareLayout() {
         this.computeMargins();
-        this.layoutIllustrationAnchors();
         this.title.setPosition(mainTextMinX, mainTextMinY);
         this.title.setTextWidth(mainTextMaxWidth);
         this.title.setTextColor(mainTextColor);
         this.title.setMessage(handler.getCurrentText());
         this.choiceList.setChoices(handler.getAvailableChoices());
         this.positionChoiceList();
+        this.layoutIllustrationAnchors();
     }
 
     protected void positionChoiceList() {

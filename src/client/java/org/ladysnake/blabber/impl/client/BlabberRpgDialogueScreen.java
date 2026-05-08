@@ -20,7 +20,6 @@ package org.ladysnake.blabber.impl.client;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
-import org.jetbrains.annotations.NotNull;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.api.layout.DefaultLayoutParams;
 import org.ladysnake.blabber.api.layout.Margins;
@@ -48,7 +47,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
     }
 
     @Override
-    protected @NotNull DialogueChoiceListWidget createChoiceList() {
+    protected DialogueChoiceListWidget createChoiceList() {
         return new RpgDialogueChoiceListWidget(0, 0, choiceListMaxWidth, 1000, Text.empty(), textRenderer, this::confirmChoice, illustrations);
     }
 
@@ -83,8 +82,8 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
                 this.mainTextMinY - TEXT_TOP_MARGIN
         );
         this.illustrationSlots.get(IllustrationAnchor.SPOT_2).set(
-                (this.choiceListMinX + this.width) / 2,
-                this.choiceListMinY * 3/4
+                (this.choiceList.getX() + this.width) / 2,
+                this.choiceList.getY() * 3/4
         );
     }
 
