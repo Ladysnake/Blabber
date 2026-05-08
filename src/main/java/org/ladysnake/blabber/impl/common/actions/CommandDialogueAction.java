@@ -38,6 +38,6 @@ public record CommandDialogueAction(String command) implements DialogueAction {
     public static ServerCommandSource getSource(ServerPlayerEntity player) {
         return player.getCommandSource()
                 .withOutput(player.getEntityWorld().getServer())
-                .withAdditionalPermissions(LeveledPermissionPredicate.GAMEMASTERS);
+                .withPermissions(LeveledPermissionPredicate.GAMEMASTERS);
     }
 }
