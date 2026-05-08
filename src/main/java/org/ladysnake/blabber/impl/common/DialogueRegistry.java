@@ -17,7 +17,7 @@
  */
 package org.ladysnake.blabber.impl.common;
 
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.Identifier;
 import org.jetbrains.annotations.ApiStatus;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 

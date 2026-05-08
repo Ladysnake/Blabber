@@ -18,17 +18,17 @@
 package org.ladysnake.blabber.impl.common.packets;
 
 import io.netty.buffer.ByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.network.packet.CustomPayload;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
-public record ChoiceSelectionPayload(byte selectedChoice) implements CustomPayload {
-    public static final CustomPayload.Id<ChoiceSelectionPayload> ID = BlabberRegistrar.payloadId("choice_selection");
-    public static final PacketCodec<ByteBuf, ChoiceSelectionPayload> PACKET_CODEC = PacketCodecs.BYTE.xmap(ChoiceSelectionPayload::new, ChoiceSelectionPayload::selectedChoice);
+public record ChoiceSelectionPayload(byte selectedChoice) implements CustomPacketPayload {
+    public static final CustomPacketPayload.Type<ChoiceSelectionPayload> ID = BlabberRegistrar.payloadId("choice_selection");
+    public static final StreamCodec<ByteBuf, ChoiceSelectionPayload> PACKET_CODEC = ByteBufCodecs.BYTE.map(ChoiceSelectionPayload::new, ChoiceSelectionPayload::selectedChoice);
 
     @Override
-    public Id<? extends CustomPayload> getId() {
+    public Type<? extends CustomPacketPayload> type() {
         return ID;
     }
 }

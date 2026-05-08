@@ -21,13 +21,13 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.MapCodec;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.registry.Registry;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.core.Registry;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.DialogueActionV2;
@@ -53,16 +53,16 @@ public final class Blabber implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID, path);
+		return Identifier.fromNamespaceAndPath(MOD_ID, path);
 	}
 
 	/**
 	 * Starts a dialogue
 	 *
-	 * <p>This operation closes the player's {@linkplain  PlayerEntity#currentScreenHandler current screen handler},
+	 * <p>This operation closes the player's {@linkplain  Player#containerMenu current screen handler},
 	 * if any, and opens a new dialogue screen instead.
 	 *
-	 * <p>A dialogue may fail to start if it contains malformed texts as per {@link net.minecraft.text.Texts#parse(ServerCommandSource, Text, Entity, int)}.
+	 * <p>A dialogue may fail to start if it contains malformed texts as per {@link net.minecraft.network.chat.ComponentUtils#updateForEntity(CommandSourceStack, Component, Entity, int)}.
 	 * In that case, this method will throw a {@link DialogueInitializationException}.
 	 *
 	 * @param player the player for whom to initiate a dialogue
@@ -70,17 +70,17 @@ public final class Blabber implements ModInitializer {
 	 * @throws IllegalArgumentException if {@code id} is not a valid dialogue in this game instance
 	 * @throws DialogueInitializationException if the dialogue failed to initialize
 	 */
-	public static void startDialogue(ServerPlayerEntity player, Identifier id) {
+	public static void startDialogue(ServerPlayer player, Identifier id) {
 		startDialogue(player, id, null);
 	}
 
 	/**
 	 * Starts a dialogue
 	 *
-	 * <p>This operation closes the player's {@linkplain  PlayerEntity#currentScreenHandler current screen handler},
+	 * <p>This operation closes the player's {@linkplain  Player#containerMenu current screen handler},
 	 * if any, and opens a new dialogue screen instead.
 	 *
-	 * <p>A dialogue may fail to start if it contains malformed texts as per {@link net.minecraft.text.Texts#parse(ServerCommandSource, Text, Entity, int)}.
+	 * <p>A dialogue may fail to start if it contains malformed texts as per {@link net.minecraft.network.chat.ComponentUtils#updateForEntity(CommandSourceStack, Component, Entity, int)}.
 	 * In that case, this method will throw a {@link DialogueInitializationException}.
 	 *
 	 * @param player the player for whom to initiate a dialogue
@@ -89,7 +89,7 @@ public final class Blabber implements ModInitializer {
 	 * @throws IllegalArgumentException if {@code id} is not a valid dialogue in this game instance
 	 * @throws DialogueInitializationException if the dialogue failed to initialize
 	 */
-	public static void startDialogue(ServerPlayerEntity player, Identifier id, @Nullable Entity interlocutor) {
+	public static void startDialogue(ServerPlayer player, Identifier id, @Nullable Entity interlocutor) {
 		try {
 			PlayerDialogueTracker.get(player).startDialogue(id, interlocutor);
 		} catch (CommandSyntaxException e) {
@@ -106,7 +106,7 @@ public final class Blabber implements ModInitializer {
 	 * @param player the player for whom to end the current dialogue
 	 * @param expectedDialogue the identifier being compared to the current dialogue, or {@code null} to end any ongoing dialogue
 	 */
-	public static void endDialogue(ServerPlayerEntity player, @Nullable Identifier expectedDialogue) {
+	public static void endDialogue(ServerPlayer player, @Nullable Identifier expectedDialogue) {
 		Identifier currentDialogueId = PlayerDialogueTracker.get(player).getCurrentDialogue().map(DialogueStateMachine::getId).orElse(null);
 		if (currentDialogueId != null && (expectedDialogue == null || expectedDialogue.equals(currentDialogueId))) {
 			PlayerDialogueTracker.get(player).endDialogue();

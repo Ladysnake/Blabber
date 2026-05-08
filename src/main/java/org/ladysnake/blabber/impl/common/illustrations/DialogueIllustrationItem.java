@@ -20,10 +20,10 @@ package org.ladysnake.blabber.impl.common.illustrations;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.item.ItemStack;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.world.item.ItemStack;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
@@ -37,13 +37,13 @@ public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor ancho
             Codec.FLOAT.optionalFieldOf("scale", 1f).forGetter(DialogueIllustrationItem::scale),
             Codec.BOOL.optionalFieldOf("show_tooltip", true).forGetter(DialogueIllustrationItem::showTooltip)
     ).apply(instance, DialogueIllustrationItem::new));
-    public static final PacketCodec<RegistryByteBuf, DialogueIllustrationItem> PACKET_CODEC = PacketCodec.tuple(
-            ItemStack.PACKET_CODEC, DialogueIllustrationItem::stack,
+    public static final StreamCodec<RegistryFriendlyByteBuf, DialogueIllustrationItem> PACKET_CODEC = StreamCodec.composite(
+            ItemStack.STREAM_CODEC, DialogueIllustrationItem::stack,
             IllustrationAnchor.PACKET_CODEC, DialogueIllustrationItem::anchor,
-            PacketCodecs.VAR_INT, DialogueIllustrationItem::x,
-            PacketCodecs.VAR_INT, DialogueIllustrationItem::y,
-            PacketCodecs.FLOAT, DialogueIllustrationItem::scale,
-            PacketCodecs.BOOLEAN, DialogueIllustrationItem::showTooltip,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationItem::x,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationItem::y,
+            ByteBufCodecs.FLOAT, DialogueIllustrationItem::scale,
+            ByteBufCodecs.BOOL, DialogueIllustrationItem::showTooltip,
             DialogueIllustrationItem::new
     );
 

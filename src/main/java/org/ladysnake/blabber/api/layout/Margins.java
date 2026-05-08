@@ -20,8 +20,8 @@ package org.ladysnake.blabber.api.layout;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.netty.buffer.ByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
 
 public record Margins(int top, int right, int bottom, int left) {
     public static final Codec<Margins> CODEC = RecordCodecBuilder.create(instance -> instance.group(
@@ -30,11 +30,11 @@ public record Margins(int top, int right, int bottom, int left) {
             Codec.INT.optionalFieldOf("bottom", 0).forGetter(Margins::bottom),
             Codec.INT.optionalFieldOf("left", 0).forGetter(Margins::left)
     ).apply(instance, Margins::new));
-    public static final PacketCodec<ByteBuf, Margins> PACKET_CODEC = PacketCodec.tuple(
-            PacketCodecs.VAR_INT, Margins::top,
-            PacketCodecs.VAR_INT, Margins::right,
-            PacketCodecs.VAR_INT, Margins::bottom,
-            PacketCodecs.VAR_INT, Margins::left,
+    public static final StreamCodec<ByteBuf, Margins> PACKET_CODEC = StreamCodec.composite(
+            ByteBufCodecs.VAR_INT, Margins::top,
+            ByteBufCodecs.VAR_INT, Margins::right,
+            ByteBufCodecs.VAR_INT, Margins::bottom,
+            ByteBufCodecs.VAR_INT, Margins::left,
             Margins::new
     );
     public static final Margins NONE = new Margins(0, 0, 0, 0);

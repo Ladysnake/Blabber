@@ -17,18 +17,18 @@
  */
 package org.ladysnake.blabber.impl.mixin;
 
-import net.minecraft.server.PlayerManager;
-import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.players.PlayerList;
 import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(PlayerManager.class)
-public abstract class PlayerManagerMixin {
-    @Inject(method = "sendCommandTree(Lnet/minecraft/server/network/ServerPlayerEntity;)V", at = @At("RETURN"))
-    private void updateDebugMode(ServerPlayerEntity player, CallbackInfo ci) {
+@Mixin(PlayerList.class)
+public abstract class PlayerListMixin {
+    @Inject(method = "sendPlayerPermissionLevel(Lnet/minecraft/server/level/ServerPlayer;)V", at = @At("RETURN"))
+    private void updateDebugMode(ServerPlayer player, CallbackInfo ci) {
         BlabberSettingsComponent.KEY.sync(player);
     }
 }

@@ -22,13 +22,13 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.player.PlayerModelPart;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.util.Arm;
-import net.minecraft.util.dynamic.Codecs;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.util.ExtraCodecs;
+import net.minecraft.world.entity.HumanoidArm;
+import net.minecraft.world.entity.player.PlayerModelPart;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.ladysnake.blabber.impl.common.serialization.MorePacketCodecs;
@@ -49,9 +49,9 @@ public record DialogueIllustrationFakePlayer(GameProfile profile,
                                              float yOffset,
                                              StareTarget stareAt,
                                              Optional<PlayerModelOptions> modelOptions,
-                                             Optional<NbtCompound> data) implements DialogueIllustrationEntity {
+                                             Optional<CompoundTag> data) implements DialogueIllustrationEntity {
     private static final MapCodec<DialogueIllustrationFakePlayer> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-            Codecs.GAME_PROFILE_CODEC.fieldOf("profile").forGetter(DialogueIllustrationFakePlayer::profile),
+            ExtraCodecs.AUTHLIB_GAME_PROFILE.fieldOf("profile").forGetter(DialogueIllustrationFakePlayer::profile),
             IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationFakePlayer::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationFakePlayer::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationFakePlayer::y),
@@ -61,20 +61,20 @@ public record DialogueIllustrationFakePlayer(GameProfile profile,
             Codec.FLOAT.optionalFieldOf("y_offset", 0.0f).forGetter(DialogueIllustrationFakePlayer::yOffset),
             StareTarget.CODEC.optionalFieldOf("stare_at", StareTarget.FOLLOW_MOUSE).forGetter(DialogueIllustrationFakePlayer::stareAt),
             PlayerModelOptions.CODEC.optionalFieldOf("model_customization").forGetter(DialogueIllustrationFakePlayer::modelOptions),
-            NbtCompound.CODEC.optionalFieldOf("data").forGetter(DialogueIllustrationFakePlayer::data)
+            CompoundTag.CODEC.optionalFieldOf("data").forGetter(DialogueIllustrationFakePlayer::data)
     ).apply(instance, DialogueIllustrationFakePlayer::new));
-    public static final PacketCodec<PacketByteBuf, DialogueIllustrationFakePlayer> PACKET_CODEC = MorePacketCodecs.tuple(
-            PacketCodecs.GAME_PROFILE, DialogueIllustrationFakePlayer::profile,
+    public static final StreamCodec<FriendlyByteBuf, DialogueIllustrationFakePlayer> PACKET_CODEC = MorePacketCodecs.tuple(
+            ByteBufCodecs.GAME_PROFILE, DialogueIllustrationFakePlayer::profile,
             IllustrationAnchor.PACKET_CODEC, DialogueIllustrationFakePlayer::anchor,
-            PacketCodecs.VAR_INT, DialogueIllustrationFakePlayer::x,
-            PacketCodecs.VAR_INT, DialogueIllustrationFakePlayer::y,
-            PacketCodecs.VAR_INT, DialogueIllustrationFakePlayer::width,
-            PacketCodecs.VAR_INT, DialogueIllustrationFakePlayer::height,
-            PacketCodecs.VAR_INT, DialogueIllustrationFakePlayer::entitySize,
-            PacketCodecs.FLOAT, DialogueIllustrationFakePlayer::yOffset,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationFakePlayer::x,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationFakePlayer::y,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationFakePlayer::width,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationFakePlayer::height,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationFakePlayer::entitySize,
+            ByteBufCodecs.FLOAT, DialogueIllustrationFakePlayer::yOffset,
             StareTarget.PACKET_CODEC, DialogueIllustrationFakePlayer::stareAt,
-            PlayerModelOptions.PACKET_CODEC.collect(PacketCodecs::optional), DialogueIllustrationFakePlayer::modelOptions,
-            PacketCodecs.NBT_COMPOUND.collect(PacketCodecs::optional), DialogueIllustrationFakePlayer::data,
+            PlayerModelOptions.PACKET_CODEC.apply(ByteBufCodecs::optional), DialogueIllustrationFakePlayer::modelOptions,
+            ByteBufCodecs.COMPOUND_TAG.apply(ByteBufCodecs::optional), DialogueIllustrationFakePlayer::data,
             DialogueIllustrationFakePlayer::new
     );
     public static final DialogueIllustrationType<DialogueIllustrationFakePlayer> TYPE = new DialogueIllustrationType<>(
@@ -90,14 +90,14 @@ public record DialogueIllustrationFakePlayer(GameProfile profile,
         return this.modelOptions().orElse(PlayerModelOptions.DEFAULT);
     }
 
-    public record PlayerModelOptions(Arm mainHand, EnumSet<PlayerModelPart> visibleParts) {
-        public static final PlayerModelOptions DEFAULT = new PlayerModelOptions(Arm.RIGHT, EnumSet.allOf(PlayerModelPart.class));
+    public record PlayerModelOptions(HumanoidArm mainHand, EnumSet<PlayerModelPart> visibleParts) {
+        public static final PlayerModelOptions DEFAULT = new PlayerModelOptions(HumanoidArm.RIGHT, EnumSet.allOf(PlayerModelPart.class));
         private static final Map<String, PlayerModelPart> partsByName;
 
         static {
             partsByName = new HashMap<>();
             for (PlayerModelPart part : PlayerModelPart.values()) {
-                partsByName.put(part.getName(), part);
+                partsByName.put(part.getId(), part);
             }
         }
 
@@ -109,7 +109,7 @@ public record DialogueIllustrationFakePlayer(GameProfile profile,
 
         public static final Codec<EnumSet<PlayerModelPart>> PLAYER_MODEL_PARTS_CODEC = Codec.list(Codec.STRING.comapFlatMap(
                 PlayerModelOptions::partFromString,
-                PlayerModelPart::getName
+                PlayerModelPart::getId
         )).xmap(l -> {
             EnumSet<PlayerModelPart> ret = EnumSet.noneOf(PlayerModelPart.class);
             ret.addAll(l);
@@ -118,19 +118,19 @@ public record DialogueIllustrationFakePlayer(GameProfile profile,
         public static final EnumSet<PlayerModelPart> DEFAULT_VISIBLE_PARTS = EnumSet.allOf(PlayerModelPart.class);
 
         public static final Codec<PlayerModelOptions> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-                Arm.CODEC.optionalFieldOf("main_hand", Arm.RIGHT).forGetter(PlayerModelOptions::mainHand),
+                HumanoidArm.CODEC.optionalFieldOf("main_hand", HumanoidArm.RIGHT).forGetter(PlayerModelOptions::mainHand),
                 PLAYER_MODEL_PARTS_CODEC.optionalFieldOf("visible_parts", DEFAULT_VISIBLE_PARTS).forGetter(PlayerModelOptions::visibleParts)
         ).apply(instance, PlayerModelOptions::new));
-        public static final PacketCodec<PacketByteBuf, PlayerModelOptions> PACKET_CODEC = PacketCodec.tuple(
+        public static final StreamCodec<FriendlyByteBuf, PlayerModelOptions> PACKET_CODEC = StreamCodec.composite(
                 MorePacketCodecs.ARM, PlayerModelOptions::mainHand,
-                PacketCodec.of((value, buf) -> buf.writeEnumSet(value, PlayerModelPart.class), buf -> buf.readEnumSet(PlayerModelPart.class)), PlayerModelOptions::visibleParts,
+                StreamCodec.ofMember((value, buf) -> buf.writeEnumSet(value, PlayerModelPart.class), buf -> buf.readEnumSet(PlayerModelPart.class)), PlayerModelOptions::visibleParts,
                 PlayerModelOptions::new
         );
 
         public byte packVisibleParts() {
             byte packed = 0;
             for (PlayerModelPart playerModelPart : this.visibleParts()) {
-                packed |= (byte) playerModelPart.getBitFlag();
+                packed |= (byte) playerModelPart.getBit();
             }
             return packed;
         }

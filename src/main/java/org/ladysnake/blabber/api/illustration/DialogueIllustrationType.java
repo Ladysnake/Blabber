@@ -19,9 +19,9 @@ package org.ladysnake.blabber.api.illustration;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationCollection;
 
@@ -32,14 +32,14 @@ import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationColle
  * @param codec a codec to serialize and deserialize this DialogueIllustration
  */
 public record DialogueIllustrationType<T extends DialogueIllustration>(MapCodec<T> codec,
-                                                                       PacketCodec<? super RegistryByteBuf, T> packetCodec) {
+                                                                       StreamCodec<? super RegistryFriendlyByteBuf, T> packetCodec) {
     public static final Codec<DialogueIllustration> CODEC = Codec.recursive("illustration_type", self ->
             Codec.withAlternative(
-                    BlabberRegistrar.ILLUSTRATION_REGISTRY.getCodec()
+                    BlabberRegistrar.ILLUSTRATION_REGISTRY.byNameCodec()
                             .dispatch("type", DialogueIllustration::getType, DialogueIllustrationType::codec),
                     Codec.list(self).xmap(DialogueIllustrationCollection::new, DialogueIllustrationCollection::elements)
             )
     );
-    public static final PacketCodec<RegistryByteBuf, DialogueIllustration> PACKET_CODEC = PacketCodecs.registryValue(BlabberRegistrar.ILLUSTRATION_REGISTRY_KEY)
+    public static final StreamCodec<RegistryFriendlyByteBuf, DialogueIllustration> PACKET_CODEC = ByteBufCodecs.registry(BlabberRegistrar.ILLUSTRATION_REGISTRY_KEY)
             .dispatch(DialogueIllustration::getType, DialogueIllustrationType::packetCodec);
 }

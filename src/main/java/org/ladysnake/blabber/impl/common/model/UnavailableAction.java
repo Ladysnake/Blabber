@@ -20,31 +20,31 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.text.Text;
-import net.minecraft.text.TextCodecs;
-import net.minecraft.text.Texts;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ComponentSerialization;
+import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.world.entity.Entity;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public record UnavailableAction(UnavailableDisplay display, Optional<Text> message) {
+public record UnavailableAction(UnavailableDisplay display, Optional<Component> message) {
     public static final Codec<UnavailableAction> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             UnavailableDisplay.CODEC.fieldOf("display").forGetter(UnavailableAction::display),
-            TextCodecs.CODEC.optionalFieldOf("message").forGetter(UnavailableAction::message)
+            ComponentSerialization.CODEC.optionalFieldOf("message").forGetter(UnavailableAction::message)
     ).apply(instance, UnavailableAction::new));
-    public static final PacketCodec<PacketByteBuf, UnavailableAction> PACKET_CODEC = PacketCodec.tuple(
+    public static final StreamCodec<FriendlyByteBuf, UnavailableAction> PACKET_CODEC = StreamCodec.composite(
             UnavailableDisplay.PACKET_CODEC, UnavailableAction::display,
-            PacketCodecs.optional(TextCodecs.PACKET_CODEC), UnavailableAction::message,
+            ByteBufCodecs.optional(ComponentSerialization.TRUSTED_CONTEXT_FREE_STREAM_CODEC), UnavailableAction::message,
             UnavailableAction::new
     );
 
-    public UnavailableAction parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
-        Optional<Text> parsedMessage = message().isEmpty() ? Optional.empty() : Optional.of(Texts.parse(source, message().get(), sender, 0));
+    public UnavailableAction parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
+        Optional<Component> parsedMessage = message().isEmpty() ? Optional.empty() : Optional.of(ComponentUtils.updateForEntity(source, message().get(), sender, 0));
         return new UnavailableAction(display(), parsedMessage);
     }
 }

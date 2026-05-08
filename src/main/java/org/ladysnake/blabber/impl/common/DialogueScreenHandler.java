@@ -20,13 +20,13 @@ package org.ladysnake.blabber.impl.common;
 import com.demonwav.mcdev.annotations.CheckEnv;
 import com.demonwav.mcdev.annotations.Env;
 import com.google.common.collect.ImmutableList;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.ScreenHandlerType;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.MenuType;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
@@ -40,7 +40,7 @@ import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 import java.util.List;
 import java.util.Map;
 
-public class DialogueScreenHandler extends ScreenHandler {
+public class DialogueScreenHandler extends AbstractContainerMenu {
     private final DialogueStateMachine dialogue;
     private final @Nullable Entity interlocutor;
 
@@ -48,7 +48,7 @@ public class DialogueScreenHandler extends ScreenHandler {
         this(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, dialogue, interlocutor);
     }
 
-    public DialogueScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId, DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
+    public DialogueScreenHandler(@Nullable MenuType<?> type, int syncId, DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
         super(type, syncId);
         this.dialogue = dialogue;
         this.interlocutor = interlocutor;
@@ -68,7 +68,7 @@ public class DialogueScreenHandler extends ScreenHandler {
         return this.dialogue.isUnskippable();
     }
 
-    public Text getCurrentText() {
+    public Component getCurrentText() {
         return this.dialogue.getCurrentText();
     }
 
@@ -93,12 +93,12 @@ public class DialogueScreenHandler extends ScreenHandler {
     }
 
     @Override
-    public ItemStack quickMove(PlayerEntity player, int index) {
+    public ItemStack quickMoveStack(Player player, int index) {
         return ItemStack.EMPTY;
     }
 
     @Override
-    public boolean canUse(PlayerEntity player) {
+    public boolean stillValid(Player player) {
         return true;
     }
 
@@ -111,20 +111,20 @@ public class DialogueScreenHandler extends ScreenHandler {
         return this.dialogue.choose(choice).type();
     }
 
-    public boolean makeChoice(ServerPlayerEntity player, int choice) {
+    public boolean makeChoice(ServerPlayer player, int choice) {
         try {  // Can't throw here, could cause trouble with a bad packet
             ChoiceResult result = this.dialogue.choose(choice);
 
             result.action().map(InstancedDialogueAction::action).ifPresent(action -> action.handle(player, this.interlocutor));
 
             // The action itself can close the dialogue or switch to a different one, so we need to check this one is still open
-            if (result.type() == StateType.END_DIALOGUE && player.currentScreenHandler == this) {
+            if (result.type() == StateType.END_DIALOGUE && player.containerMenu == this) {
                 PlayerDialogueTracker.get(player).endDialogue();
             }
 
             return true;
         } catch (IllegalStateException e) {
-            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getNameForScoreboard(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
+            Blabber.LOGGER.error("{} made invalid choice {} in {}#{}: {}", player.getScoreboardName(), choice, this.dialogue.getId(), this.getCurrentStateKey(), e.getMessage());
             return false;
         }
     }

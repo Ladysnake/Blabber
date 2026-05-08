@@ -20,14 +20,14 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.text.Text;
-import net.minecraft.text.TextCodecs;
-import net.minecraft.text.Texts;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ComponentSerialization;
+import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.world.entity.Entity;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 
@@ -36,24 +36,24 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-public record DialogueChoice(Text text, List<String> illustrations, String next, Optional<DialogueChoiceCondition> condition) {
+public record DialogueChoice(Component text, List<String> illustrations, String next, Optional<DialogueChoiceCondition> condition) {
     public static final Codec<DialogueChoice> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            TextCodecs.CODEC.fieldOf("text").forGetter(DialogueChoice::text),
+            ComponentSerialization.CODEC.fieldOf("text").forGetter(DialogueChoice::text),
             Codec.list(Codec.STRING).optionalFieldOf("illustrations", Collections.emptyList()).forGetter(DialogueChoice::illustrations),
             Codec.STRING.fieldOf("next").forGetter(DialogueChoice::next),
             DialogueChoiceCondition.CODEC.optionalFieldOf("only_if").forGetter(DialogueChoice::condition)
     ).apply(instance, DialogueChoice::new));
-    public static final PacketCodec<PacketByteBuf, DialogueChoice> PACKET_CODEC = PacketCodec.tuple(
-            TextCodecs.PACKET_CODEC, DialogueChoice::text,
-            PacketCodecs.collection(ArrayList::new, PacketCodecs.STRING), DialogueChoice::illustrations,
-            PacketCodecs.STRING, DialogueChoice::next,
-            PacketCodecs.optional(DialogueChoiceCondition.PACKET_CODEC), DialogueChoice::condition,
+    public static final StreamCodec<FriendlyByteBuf, DialogueChoice> PACKET_CODEC = StreamCodec.composite(
+            ComponentSerialization.TRUSTED_CONTEXT_FREE_STREAM_CODEC, DialogueChoice::text,
+            ByteBufCodecs.collection(ArrayList::new, ByteBufCodecs.STRING_UTF8), DialogueChoice::illustrations,
+            ByteBufCodecs.STRING_UTF8, DialogueChoice::next,
+            ByteBufCodecs.optional(DialogueChoiceCondition.PACKET_CODEC), DialogueChoice::condition,
             DialogueChoice::new
     );
 
-    public DialogueChoice parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueChoice parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
         Optional<DialogueChoiceCondition> parsedCondition = condition().isEmpty() ? Optional.empty() : Optional.of(condition().get().parseText(source, sender));
-        return new DialogueChoice(Texts.parse(source, text(), sender, 0), illustrations(), next(), parsedCondition);
+        return new DialogueChoice(ComponentUtils.updateForEntity(source, text(), sender, 0), illustrations(), next(), parsedCondition);
     }
 
     @Override

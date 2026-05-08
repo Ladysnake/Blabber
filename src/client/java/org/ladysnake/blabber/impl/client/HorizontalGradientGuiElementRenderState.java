@@ -18,12 +18,12 @@
 package org.ladysnake.blabber.impl.client;
 
 import com.mojang.blaze3d.pipeline.RenderPipeline;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.gui.ScreenRect;
-import net.minecraft.client.gui.render.state.SimpleGuiElementRenderState;
-import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.texture.TextureSetup;
+import net.minecraft.client.gui.navigation.ScreenRectangle;
+import net.minecraft.client.gui.render.TextureSetup;
+import net.minecraft.client.gui.render.state.GuiElementRenderState;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Matrix3x2f;
 import org.joml.Matrix3x2fc;
@@ -38,22 +38,22 @@ public record HorizontalGradientGuiElementRenderState(
         int endY,
         int colorStart,
         int colorEnd,
-        @Nullable ScreenRect scissorArea,
-        @Nullable ScreenRect bounds
-) implements SimpleGuiElementRenderState {
+        @Nullable ScreenRectangle scissorArea,
+        @Nullable ScreenRectangle bounds
+) implements GuiElementRenderState {
     public HorizontalGradientGuiElementRenderState(
-            RenderPipeline pipeline, Matrix3x2f pose, int x0, int y0, int x1, int y1, int col1, int col2, @Nullable ScreenRect scissorArea
+            RenderPipeline pipeline, Matrix3x2f pose, int x0, int y0, int x1, int y1, int col1, int col2, @Nullable ScreenRectangle scissorArea
     ) {
         this(pipeline, pose, x0, y0, x1, y1, col1, col2, scissorArea, createBounds(x0, y0, x1, y1, pose, scissorArea));
     }
 
     @Override
     public TextureSetup textureSetup() {
-        return TextureSetup.empty();
+        return TextureSetup.noTexture();
     }
 
     @Override
-    public void setupVertices(VertexConsumer vertices) {
+    public void buildVertices(VertexConsumer vertices) {
 //        vertices.vertex(this.pose(), (float)this.startX(), (float)this.startY()).color(this.colorStart());
 //        vertices.vertex(this.pose(), (float)this.startX(), (float)this.endY()).color(this.colorEnd());
 //        vertices.vertex(this.pose(), (float)this.endX(), (float)this.endY()).color(this.colorEnd());
@@ -61,20 +61,20 @@ public record HorizontalGradientGuiElementRenderState(
         final int verticalPadding = 2;
         final float depth = 0;
 
-        vertices.vertex(this.pose(), startX, startY - verticalPadding).color(colorEnd);
-        vertices.vertex(this.pose(), startX, startY).color(colorStart);
-        vertices.vertex(this.pose(), endX, startY).color(colorEnd);
-        vertices.vertex(this.pose(), endX, startY - verticalPadding).color(colorEnd);
+        vertices.addVertexWith2DPose(this.pose(), startX, startY - verticalPadding).setColor(colorEnd);
+        vertices.addVertexWith2DPose(this.pose(), startX, startY).setColor(colorStart);
+        vertices.addVertexWith2DPose(this.pose(), endX, startY).setColor(colorEnd);
+        vertices.addVertexWith2DPose(this.pose(), endX, startY - verticalPadding).setColor(colorEnd);
 
-        vertices.vertex(this.pose(), startX, startY).color(colorStart);
-        vertices.vertex(this.pose(), startX, endY).color(colorStart);
-        vertices.vertex(this.pose(), endX, endY).color(colorEnd);
-        vertices.vertex(this.pose(), endX, startY).color(colorEnd);
+        vertices.addVertexWith2DPose(this.pose(), startX, startY).setColor(colorStart);
+        vertices.addVertexWith2DPose(this.pose(), startX, endY).setColor(colorStart);
+        vertices.addVertexWith2DPose(this.pose(), endX, endY).setColor(colorEnd);
+        vertices.addVertexWith2DPose(this.pose(), endX, startY).setColor(colorEnd);
 
-        vertices.vertex(this.pose(), startX, endY).color(colorStart);
-        vertices.vertex(this.pose(), startX, endY + verticalPadding).color(colorEnd);
-        vertices.vertex(this.pose(), endX, endY + verticalPadding).color(colorEnd);
-        vertices.vertex(this.pose(), endX, endY).color(colorEnd);
+        vertices.addVertexWith2DPose(this.pose(), startX, endY).setColor(colorStart);
+        vertices.addVertexWith2DPose(this.pose(), startX, endY + verticalPadding).setColor(colorEnd);
+        vertices.addVertexWith2DPose(this.pose(), endX, endY + verticalPadding).setColor(colorEnd);
+        vertices.addVertexWith2DPose(this.pose(), endX, endY).setColor(colorEnd);
 //        vertices.vertex(this.pose(), this.startX(), this.startY()).color(this.colorStart());
 //        vertices.vertex(this.pose(), this.startX(), this.endY()).color(this.colorEnd());
 //        vertices.vertex(this.pose(), this.endX(), this.endY()).color(this.colorEnd());
@@ -82,8 +82,8 @@ public record HorizontalGradientGuiElementRenderState(
     }
 
     @Nullable
-    private static ScreenRect createBounds(int x0, int y0, int x1, int y1, Matrix3x2f pose, @Nullable ScreenRect scissorArea) {
-        ScreenRect screenRect = new ScreenRect(x0, y0, x1 - x0, y1 - y0).transformEachVertex(pose);
+    private static ScreenRectangle createBounds(int x0, int y0, int x1, int y1, Matrix3x2f pose, @Nullable ScreenRectangle scissorArea) {
+        ScreenRectangle screenRect = new ScreenRectangle(x0, y0, x1 - x0, y1 - y0).transformMaxBounds(pose);
         return scissorArea != null ? scissorArea.intersection(screenRect) : screenRect;
     }
 }

@@ -18,15 +18,15 @@
 package org.ladysnake.blabber.impl.common;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.screen.ScreenHandler;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.machine.DialogueStateMachine;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
@@ -34,7 +34,7 @@ import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 import java.util.Optional;
 
 public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory<DialogueScreenHandlerFactory.DialogueOpeningData> {
-    private static final Text DEFAULT_NAME = Text.translatable("blabber:container.dialogue");
+    private static final Component DEFAULT_NAME = Component.translatable("blabber:container.dialogue");
     private final DialogueStateMachine dialogue;
     private final @Nullable Entity interlocutor;
 
@@ -44,18 +44,18 @@ public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactor
     }
 
     @Override
-    public Text getDisplayName() {
-        return this.dialogue.getName().orElseGet(() -> interlocutor == null ? DEFAULT_NAME : Text.translatable("blabber:container.dialogue_with_interlocutor", interlocutor.getName()));
+    public Component getDisplayName() {
+        return this.dialogue.getName().orElseGet(() -> interlocutor == null ? DEFAULT_NAME : Component.translatable("blabber:container.dialogue_with_interlocutor", interlocutor.getName()));
     }
 
     @Nullable
     @Override
-    public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
+    public AbstractContainerMenu createMenu(int syncId, Inventory inv, Player player) {
         return new DialogueScreenHandler(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, syncId, this.dialogue, this.interlocutor);
     }
 
     @Override
-    public DialogueOpeningData getScreenOpeningData(ServerPlayerEntity player) {
+    public DialogueOpeningData getScreenOpeningData(ServerPlayer player) {
         return new DialogueOpeningData(
                 this.dialogue,
                 Optional.ofNullable(this.interlocutor).map(Entity::getId),
@@ -65,9 +65,9 @@ public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactor
 
     public record DialogueOpeningData(DialogueStateMachine dialogue, Optional<Integer> interlocutorId,
                                       ChoiceAvailabilityPayload availableChoices) {
-        public static final PacketCodec<RegistryByteBuf, DialogueOpeningData> PACKET_CODEC = PacketCodec.tuple(
+        public static final StreamCodec<RegistryFriendlyByteBuf, DialogueOpeningData> PACKET_CODEC = StreamCodec.composite(
                 DialogueStateMachine.PACKET_CODEC, DialogueOpeningData::dialogue,
-                PacketCodecs.VAR_INT.collect(PacketCodecs::optional), DialogueOpeningData::interlocutorId,
+                ByteBufCodecs.VAR_INT.apply(ByteBufCodecs::optional), DialogueOpeningData::interlocutorId,
                 ChoiceAvailabilityPayload.PACKET_CODEC, DialogueOpeningData::availableChoices,
                 DialogueOpeningData::new
         );

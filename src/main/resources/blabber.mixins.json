@@ -5,9 +5,9 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "EntitySelectorMixin",
-    "EntitySelectorReaderMixin",
+    "EntitySelectorParserMixin",
     "PlayerEntityAccessor",
-    "PlayerManagerMixin"
+    "PlayerListMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -18,22 +18,22 @@
 package org.ladysnake.blabber.impl.common.packets;
 
 import io.netty.buffer.ByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.network.packet.CustomPayload;
-import net.minecraft.util.Identifier;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.resources.Identifier;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.function.IntFunction;
 
-public record DialogueListPayload(Set<Identifier> dialogueIds) implements CustomPayload {
-    public static final CustomPayload.Id<DialogueListPayload> ID = BlabberRegistrar.payloadId("dialogue_list");
-    public static final PacketCodec<ByteBuf, DialogueListPayload> PACKET_CODEC = Identifier.PACKET_CODEC.collect(PacketCodecs.toCollection((IntFunction<Set<Identifier>>) HashSet::new)).xmap(DialogueListPayload::new, DialogueListPayload::dialogueIds);
+public record DialogueListPayload(Set<Identifier> dialogueIds) implements CustomPacketPayload {
+    public static final CustomPacketPayload.Type<DialogueListPayload> ID = BlabberRegistrar.payloadId("dialogue_list");
+    public static final StreamCodec<ByteBuf, DialogueListPayload> PACKET_CODEC = Identifier.STREAM_CODEC.apply(ByteBufCodecs.collection((IntFunction<Set<Identifier>>) HashSet::new)).map(DialogueListPayload::new, DialogueListPayload::dialogueIds);
 
     @Override
-    public Id<? extends CustomPayload> getId() {
+    public Type<? extends CustomPacketPayload> type() {
         return ID;
     }
 }

@@ -20,8 +20,8 @@ package org.ladysnake.blabber.api.layout;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.netty.buffer.ByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
 import org.jetbrains.annotations.ApiStatus;
 
 import java.util.Optional;
@@ -32,7 +32,7 @@ public record DefaultLayoutParams(Optional<Margins> mainTextMargins) implements 
     public static final Codec<DefaultLayoutParams> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Margins.CODEC.optionalFieldOf("main_text_margins").forGetter(DefaultLayoutParams::mainTextMargins)
     ).apply(instance, DefaultLayoutParams::new));
-    public static final PacketCodec<ByteBuf, DefaultLayoutParams> PACKET_CODEC = Margins.PACKET_CODEC.collect(PacketCodecs::optional).xmap(DefaultLayoutParams::new, DefaultLayoutParams::mainTextMargins);
+    public static final StreamCodec<ByteBuf, DefaultLayoutParams> PACKET_CODEC = Margins.PACKET_CODEC.apply(ByteBufCodecs::optional).map(DefaultLayoutParams::new, DefaultLayoutParams::mainTextMargins);
 
     public Margins getMainTextMargins() {
         return this.mainTextMargins.orElse(Margins.NONE);

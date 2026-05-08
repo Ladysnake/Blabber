@@ -20,37 +20,37 @@ package org.ladysnake.blabber.impl.common.commands;
 import com.mojang.brigadier.arguments.BoolArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import me.lucko.fabric.api.permissions.v0.Permissions;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import org.jetbrains.annotations.NotNull;
 import org.ladysnake.blabber.impl.common.settings.BlabberSetting;
 import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
 
 import java.util.function.Predicate;
 
-import static net.minecraft.server.command.CommandManager.argument;
-import static net.minecraft.server.command.CommandManager.literal;
+import static net.minecraft.commands.Commands.argument;
+import static net.minecraft.commands.Commands.literal;
 
 public final class SettingsSubCommand {
     public static final String SETTINGS_SUBCOMMAND = "settings";
     public static final String SETTINGS_SET_SUBCOMMAND = "set";
-    public static final @NotNull Predicate<ServerCommandSource> ALLOW_DEBUG = Permissions.require("dialogue.debug", 2);
+    public static final @NotNull Predicate<CommandSourceStack> ALLOW_DEBUG = Permissions.require("dialogue.debug", 2);
 
-    static LiteralArgumentBuilder<ServerCommandSource> settingsSubtree() {
+    static LiteralArgumentBuilder<CommandSourceStack> settingsSubtree() {
         return literal(SETTINGS_SUBCOMMAND)
                 .requires(ALLOW_DEBUG)
                 .then(literal(SETTINGS_SET_SUBCOMMAND).then(
                         argument("setting", SettingArgumentType.setting())
                                 .then(argument("value", BoolArgumentType.bool())
-                                        .executes(context -> setEnabled(context.getSource(), context.getSource().getPlayerOrThrow(), SettingArgumentType.getSetting(context, "setting"), BoolArgumentType.getBool(context, "value")))
+                                        .executes(context -> setEnabled(context.getSource(), context.getSource().getPlayerOrException(), SettingArgumentType.getSetting(context, "setting"), BoolArgumentType.getBool(context, "value")))
                                 )
                 ));
     }
 
-    private static int setEnabled(ServerCommandSource source, ServerPlayerEntity player, BlabberSetting setting, boolean enabled) {
+    private static int setEnabled(CommandSourceStack source, ServerPlayer player, BlabberSetting setting, boolean enabled) {
         BlabberSettingsComponent.get(player).setEnabled(setting, enabled);
-        source.sendFeedback(() -> Text.translatable(enabled ? "blabber:commands.setting.enabled" : "blabber:commands.setting.disabled", setting.id()), false);
+        source.sendSuccess(() -> Component.translatable(enabled ? "blabber:commands.setting.enabled" : "blabber:commands.setting.disabled", setting.id()), false);
         return 1;
     }
 }

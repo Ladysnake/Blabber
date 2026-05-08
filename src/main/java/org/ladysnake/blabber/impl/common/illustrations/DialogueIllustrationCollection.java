@@ -21,11 +21,11 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.world.entity.Entity;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
@@ -37,8 +37,8 @@ public record DialogueIllustrationCollection(List<DialogueIllustration> elements
     private static final MapCodec<DialogueIllustrationCollection> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
             Codec.list(DialogueIllustrationType.CODEC).fieldOf("elements").forGetter(DialogueIllustrationCollection::elements)
     ).apply(instance, DialogueIllustrationCollection::new));
-    public static final PacketCodec<RegistryByteBuf, DialogueIllustrationCollection> PACKET_CODEC = DialogueIllustrationType.PACKET_CODEC.collect(PacketCodecs.toList())
-            .xmap(DialogueIllustrationCollection::new, DialogueIllustrationCollection::elements);
+    public static final StreamCodec<RegistryFriendlyByteBuf, DialogueIllustrationCollection> PACKET_CODEC = DialogueIllustrationType.PACKET_CODEC.apply(ByteBufCodecs.list())
+            .map(DialogueIllustrationCollection::new, DialogueIllustrationCollection::elements);
 
     public static final DialogueIllustrationType<DialogueIllustrationCollection> TYPE = new DialogueIllustrationType<>(CODEC, PACKET_CODEC);
 
@@ -48,7 +48,7 @@ public record DialogueIllustrationCollection(List<DialogueIllustration> elements
     }
 
     @Override
-    public DialogueIllustration parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueIllustration parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
         List<DialogueIllustration> parsedSub = new ArrayList<>(elements.size());
         for (DialogueIllustration illustration : elements) {
             parsedSub.add(illustration.parseText(source, sender));

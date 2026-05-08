@@ -28,18 +28,18 @@ import net.fabricmc.fabric.api.networking.v1.ServerConfigurationConnectionEvents
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationNetworking;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
-import net.minecraft.command.CommandSource;
-import net.minecraft.command.argument.serialize.ConstantArgumentSerializer;
-import net.minecraft.command.suggestion.SuggestionProviders;
-import net.minecraft.entity.Entity;
-import net.minecraft.network.packet.CustomPayload;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.SimpleRegistry;
-import net.minecraft.screen.ScreenHandlerType;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.util.Identifier;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.SharedSuggestionProvider;
+import net.minecraft.commands.synchronization.SingletonArgumentInfo;
+import net.minecraft.commands.synchronization.SuggestionProviders;
+import net.minecraft.core.MappedRegistry;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.inventory.MenuType;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.DialogueActionV2;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
@@ -60,37 +60,37 @@ import java.util.Optional;
 import java.util.Set;
 
 public final class BlabberRegistrar implements EntityComponentInitializer {
-    public static final RegistryKey<Registry<MapCodec<? extends DialogueActionV2>>> ACTION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_actions"));
+    public static final ResourceKey<Registry<MapCodec<? extends DialogueActionV2>>> ACTION_REGISTRY_KEY = ResourceKey.createRegistryKey(Blabber.id("dialogue_actions"));
     public static final Registry<MapCodec<? extends DialogueActionV2>> ACTION_REGISTRY = FabricRegistryBuilder.from(
-            new SimpleRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
+            new MappedRegistry<>(ACTION_REGISTRY_KEY, Lifecycle.stable(), false)
     ).attribute(RegistryAttribute.SYNCED).buildAndRegister();
 
-    public static final RegistryKey<Registry<DialogueIllustrationType<?>>> ILLUSTRATION_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_illustrations"));
+    public static final ResourceKey<Registry<DialogueIllustrationType<?>>> ILLUSTRATION_REGISTRY_KEY = ResourceKey.createRegistryKey(Blabber.id("dialogue_illustrations"));
     public static final Registry<DialogueIllustrationType<?>> ILLUSTRATION_REGISTRY = FabricRegistryBuilder.from(
-            new SimpleRegistry<>(ILLUSTRATION_REGISTRY_KEY, Lifecycle.stable(), false)
+            new MappedRegistry<>(ILLUSTRATION_REGISTRY_KEY, Lifecycle.stable(), false)
     ).attribute(RegistryAttribute.SYNCED).buildAndRegister();
 
-    public static final RegistryKey<Registry<DialogueLayoutType<?>>> LAYOUT_REGISTRY_KEY = RegistryKey.ofRegistry(Blabber.id("dialogue_layouts"));
+    public static final ResourceKey<Registry<DialogueLayoutType<?>>> LAYOUT_REGISTRY_KEY = ResourceKey.createRegistryKey(Blabber.id("dialogue_layouts"));
     public static final Registry<DialogueLayoutType<?>> LAYOUT_REGISTRY = FabricRegistryBuilder.from(
-            new SimpleRegistry<>(LAYOUT_REGISTRY_KEY, Lifecycle.stable(), false)
+            new MappedRegistry<>(LAYOUT_REGISTRY_KEY, Lifecycle.stable(), false)
     ).attribute(RegistryAttribute.SYNCED).buildAndRegister();
-    public static final ScreenHandlerType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(Registries.SCREEN_HANDLER, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, data) -> {
+    public static final MenuType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(BuiltInRegistries.MENU, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, data) -> {
         DialogueStateMachine dialogue = data.dialogue();
         dialogue.applyAvailabilityUpdate(data.availableChoices());
-        Optional<Entity> interlocutor = data.interlocutorId().map(inventory.player.getEntityWorld()::getEntityById);
+        Optional<Entity> interlocutor = data.interlocutorId().map(inventory.player.level()::getEntity);
         return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
     }, DialogueScreenHandlerFactory.DialogueOpeningData.PACKET_CODEC));
     public static final DialogueLayoutType<DefaultLayoutParams> CLASSIC_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.PACKET_CODEC, DefaultLayoutParams.DEFAULT);
     public static final DialogueLayoutType<DefaultLayoutParams> RPG_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.PACKET_CODEC, DefaultLayoutParams.DEFAULT);
 
-    public static final SuggestionProvider<ServerCommandSource> ALL_DIALOGUES = SuggestionProviders.register(
+    public static final SuggestionProvider<CommandSourceStack> ALL_DIALOGUES = SuggestionProviders.register(
             Blabber.id("available_dialogues"),
-            (context, builder) -> CommandSource.suggestIdentifiers(context.getSource() instanceof ServerCommandSource ? DialogueRegistry.getIds() : DialogueRegistry.getClientIds(), builder)
+            (context, builder) -> SharedSuggestionProvider.suggestResource(context.getSource() instanceof CommandSourceStack ? DialogueRegistry.getIds() : DialogueRegistry.getClientIds(), builder)
     );
 
     public static void init() {
-        Registry.register(Registries.LOOT_CONDITION_TYPE, Blabber.id("interlocutor_properties"), InterlocutorPropertiesLootCondition.TYPE);
-        ArgumentTypeRegistry.registerArgumentType(Blabber.id("setting"), SettingArgumentType.class, ConstantArgumentSerializer.of(SettingArgumentType::setting));
+        Registry.register(BuiltInRegistries.LOOT_CONDITION_TYPE, Blabber.id("interlocutor_properties"), InterlocutorPropertiesLootCondition.TYPE);
+        ArgumentTypeRegistry.registerArgumentType(Blabber.id("setting"), SettingArgumentType.class, SingletonArgumentInfo.contextFree(SettingArgumentType::setting));
 
         DialogueLoader.init();
 
@@ -103,7 +103,7 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
         PayloadTypeRegistry.playC2S().register(ChoiceSelectionPayload.ID, ChoiceSelectionPayload.PACKET_CODEC);
 
         ServerPlayNetworking.registerGlobalReceiver(ChoiceSelectionPayload.ID, (payload, ctx) -> {
-            if (ctx.player().currentScreenHandler instanceof DialogueScreenHandler dialogueHandler) {
+            if (ctx.player().containerMenu instanceof DialogueScreenHandler dialogueHandler) {
                 if (!dialogueHandler.makeChoice(ctx.player(), payload.selectedChoice())) {
                     ctx.responseSender().sendPacket(new SelectedDialogueStatePayload(dialogueHandler.getCurrentStateKey()));
                 }
@@ -114,13 +114,13 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
                 Set<Identifier> dialogueIds = DialogueRegistry.getIds();
                 ServerConfigurationNetworking.send(handler, new DialogueListPayload(dialogueIds));
             } else {
-                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getDebugProfile().name());
+                Blabber.LOGGER.warn("{} does not have Blabber installed, this will cause issues if they trigger a dialogue", handler.getOwner().name());
             }
         });
     }
 
-    public static <T extends CustomPayload> CustomPayload.Id<T> payloadId(String name) {
-        return new CustomPayload.Id<>(Blabber.id(name));
+    public static <T extends CustomPacketPayload> CustomPacketPayload.Type<T> payloadId(String name) {
+        return new CustomPacketPayload.Type<>(Blabber.id(name));
     }
 
     @Override

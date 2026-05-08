@@ -19,12 +19,12 @@ package org.ladysnake.blabber.impl.common;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.Identifier;
 import org.ladysnake.blabber.api.DialogueActionV2;
 
 public record InstancedDialogueAction<A extends DialogueActionV2>(A action,
                                                                   MapCodec<A> codec) {
-    public static final Codec<InstancedDialogueAction<?>> CODEC = BlabberRegistrar.ACTION_REGISTRY.getCodec()
+    public static final Codec<InstancedDialogueAction<?>> CODEC = BlabberRegistrar.ACTION_REGISTRY.byNameCodec()
             .dispatch("type", InstancedDialogueAction::codec, InstancedDialogueAction::xmap);
 
     private static <A extends DialogueActionV2> MapCodec<InstancedDialogueAction<A>> xmap(MapCodec<A> c) {
@@ -33,7 +33,7 @@ public record InstancedDialogueAction<A extends DialogueActionV2>(A action,
 
     @Override
     public String toString() {
-        Identifier id = BlabberRegistrar.ACTION_REGISTRY.getId(this.codec);
+        Identifier id = BlabberRegistrar.ACTION_REGISTRY.getKey(this.codec);
         if (id == null) return "(unregistered action)";
         return id.toString();
     }

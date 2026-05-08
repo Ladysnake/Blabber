@@ -18,17 +18,17 @@
 package org.ladysnake.blabber.impl.common.model;
 
 import com.mojang.serialization.Codec;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.util.StringIdentifiable;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.util.StringRepresentable;
 
-public enum UnavailableDisplay implements StringIdentifiable {
+public enum UnavailableDisplay implements StringRepresentable {
     GRAYED_OUT("grayed_out"), HIDDEN("hidden");
 
-    public static final Codec<UnavailableDisplay> CODEC = StringIdentifiable.createCodec(UnavailableDisplay::values);
-    public static final PacketCodec<PacketByteBuf, UnavailableDisplay> PACKET_CODEC = PacketCodec.ofStatic(
-            PacketByteBuf::writeEnumConstant,
-            buf -> buf.readEnumConstant(UnavailableDisplay.class)
+    public static final Codec<UnavailableDisplay> CODEC = StringRepresentable.fromEnum(UnavailableDisplay::values);
+    public static final StreamCodec<FriendlyByteBuf, UnavailableDisplay> PACKET_CODEC = StreamCodec.of(
+            FriendlyByteBuf::writeEnum,
+            buf -> buf.readEnum(UnavailableDisplay.class)
     );
 
     private final String id;
@@ -38,7 +38,7 @@ public enum UnavailableDisplay implements StringIdentifiable {
     }
 
     @Override
-    public String asString() {
+    public String getSerializedName() {
         return this.id;
     }
 }

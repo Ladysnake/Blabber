@@ -18,11 +18,11 @@
 package org.ladysnake.blabber.impl.common.model;
 
 import com.mojang.serialization.Codec;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.util.StringIdentifiable;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.util.StringRepresentable;
 
-public enum IllustrationAnchor implements StringIdentifiable {
+public enum IllustrationAnchor implements StringRepresentable {
     /**
      * Starting at top-left, increasing towards bottom-right
      */
@@ -50,10 +50,10 @@ public enum IllustrationAnchor implements StringIdentifiable {
     SPOT_1("spot_1"),
     SPOT_2("spot_2");
 
-    public static final Codec<IllustrationAnchor> CODEC = StringIdentifiable.createBasicCodec(IllustrationAnchor::values);
-    public static final PacketCodec<PacketByteBuf, IllustrationAnchor> PACKET_CODEC = PacketCodec.ofStatic(
-            PacketByteBuf::writeEnumConstant,
-            buf -> buf.readEnumConstant(IllustrationAnchor.class)
+    public static final Codec<IllustrationAnchor> CODEC = StringRepresentable.fromValues(IllustrationAnchor::values);
+    public static final StreamCodec<FriendlyByteBuf, IllustrationAnchor> PACKET_CODEC = StreamCodec.of(
+            FriendlyByteBuf::writeEnum,
+            buf -> buf.readEnum(IllustrationAnchor.class)
     );
 
     private final String id;
@@ -63,7 +63,7 @@ public enum IllustrationAnchor implements StringIdentifiable {
     }
 
     @Override
-    public String asString() {
+    public String getSerializedName() {
         return this.id;
     }
 }

@@ -27,7 +27,7 @@ import org.spongepowered.asm.mixin.injection.Coerce;
 @Mixin(GuiRenderer.class)
 public class GuiRendererMixin {
     @ModifyExpressionValue(
-            method = "prepareItem",
+            method = "submitBlitFromItemAtlas",
             at = @At(value = "CONSTANT", args = "intValue=16")
     )
     private int scaleItem(int original, @Coerce ItemIllustrationRenderer.RenderStateHooks renderState) {

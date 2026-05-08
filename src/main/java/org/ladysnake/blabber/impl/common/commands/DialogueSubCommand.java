@@ -21,13 +21,13 @@ import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.exceptions.DynamicCommandExceptionType;
 import me.lucko.fabric.api.permissions.v0.Permissions;
-import net.minecraft.command.argument.EntityArgumentType;
-import net.minecraft.command.argument.IdentifierArgumentType;
-import net.minecraft.entity.Entity;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.arguments.EntityArgument;
+import net.minecraft.commands.arguments.IdentifierArgument;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 import org.ladysnake.blabber.impl.common.DialogueRegistry;
@@ -36,15 +36,15 @@ import org.ladysnake.blabber.impl.common.PlayerDialogueTracker;
 import java.util.Collection;
 import java.util.List;
 
-import static net.minecraft.server.command.CommandManager.argument;
-import static net.minecraft.server.command.CommandManager.literal;
+import static net.minecraft.commands.Commands.argument;
+import static net.minecraft.commands.Commands.literal;
 
 public final class DialogueSubCommand {
-    public static final DynamicCommandExceptionType INVALID_EXCEPTION = new DynamicCommandExceptionType(id -> Text.translatable("blabber:commands.dialogue.start.invalid", id.toString()));
+    public static final DynamicCommandExceptionType INVALID_EXCEPTION = new DynamicCommandExceptionType(id -> Component.translatable("blabber:commands.dialogue.start.invalid", id.toString()));
 
     public static final String DIALOGUE_SUBCOMMAND = "dialogue";
 
-    static LiteralArgumentBuilder<ServerCommandSource> dialogueSubtree() {
+    static LiteralArgumentBuilder<CommandSourceStack> dialogueSubtree() {
         return literal(DIALOGUE_SUBCOMMAND)
                 .then(dialogueStartCommand());
     }
@@ -52,29 +52,29 @@ public final class DialogueSubCommand {
     /**
      * /blabber dialogue start <dialogue> [players] [interlocutor]
      */
-    private static LiteralArgumentBuilder<ServerCommandSource> dialogueStartCommand() {
+    private static LiteralArgumentBuilder<CommandSourceStack> dialogueStartCommand() {
         return literal("start")
                 .requires(Permissions.require("dialogue.start", 2))
-                .then(argument("dialogue", IdentifierArgumentType.identifier()).suggests(BlabberRegistrar.ALL_DIALOGUES)
-                        .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), List.of(context.getSource().getPlayerOrThrow()), null))
-                        .then(argument("players", EntityArgumentType.players())
-                                .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), EntityArgumentType.getPlayers(context, "players"), null))
-                                .then(argument("interlocutor", EntityArgumentType.entity())
-                                        .executes(context -> startDialogue(context.getSource(), IdentifierArgumentType.getIdentifier(context, "dialogue"), EntityArgumentType.getPlayers(context, "players"), EntityArgumentType.getEntity(context, "interlocutor")))
+                .then(argument("dialogue", IdentifierArgument.id()).suggests(BlabberRegistrar.ALL_DIALOGUES)
+                        .executes(context -> startDialogue(context.getSource(), IdentifierArgument.getId(context, "dialogue"), List.of(context.getSource().getPlayerOrException()), null))
+                        .then(argument("players", EntityArgument.players())
+                                .executes(context -> startDialogue(context.getSource(), IdentifierArgument.getId(context, "dialogue"), EntityArgument.getPlayers(context, "players"), null))
+                                .then(argument("interlocutor", EntityArgument.entity())
+                                        .executes(context -> startDialogue(context.getSource(), IdentifierArgument.getId(context, "dialogue"), EntityArgument.getPlayers(context, "players"), EntityArgument.getEntity(context, "interlocutor")))
                                 )
                         )
                 );
     }
 
-    private static int startDialogue(ServerCommandSource source, Identifier dialogue, Collection<ServerPlayerEntity> players, @Nullable Entity interlocutor) throws CommandSyntaxException {
+    private static int startDialogue(CommandSourceStack source, Identifier dialogue, Collection<ServerPlayer> players, @Nullable Entity interlocutor) throws CommandSyntaxException {
         if (!DialogueRegistry.containsId(dialogue)) {
             throw INVALID_EXCEPTION.create(dialogue);
         }
 
         int count = 0;
-        for (ServerPlayerEntity player : players) {
+        for (ServerPlayer player : players) {
             PlayerDialogueTracker.get(player).startDialogue(dialogue, interlocutor);
-            source.sendFeedback(() -> Text.translatable("blabber:commands.dialogue.start.success", dialogue.toString(), player.getDisplayName()), true);
+            source.sendSuccess(() -> Component.translatable("blabber:commands.dialogue.start.success", dialogue.toString(), player.getDisplayName()), true);
             count++;
         }
 

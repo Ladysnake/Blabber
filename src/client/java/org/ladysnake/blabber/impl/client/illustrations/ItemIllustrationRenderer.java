@@ -17,9 +17,9 @@
  */
 package org.ladysnake.blabber.impl.client.illustrations;
 
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.item.ItemStack;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.world.item.ItemStack;
 import org.ladysnake.blabber.api.client.illustration.DialogueIllustrationRenderer;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationItem;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
@@ -30,7 +30,7 @@ public class ItemIllustrationRenderer extends DialogueIllustrationRenderer<Dialo
     }
 
     @Override
-    public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
+    public void render(GuiGraphics context, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         // We draw the actual item, then the count and bar and such.
         try {
             ItemStack stack = this.illustration.stack();
@@ -39,14 +39,14 @@ public class ItemIllustrationRenderer extends DialogueIllustrationRenderer<Dialo
             ((DrawContextHooks) context).blabber$setItemScale(scale);
             int originX = positionTransform.transformX(this.illustration.anchor(), this.illustration.x());
             int originY = positionTransform.transformY(this.illustration.anchor(), this.illustration.y());
-            context.drawItem(stack, originX, originY);
+            context.renderItem(stack, originX, originY);
             if (scale == 1) {  // Not supporting rescaled stack decorations right now
-                context.drawStackOverlay(textRenderer, stack, originX, originY);
+                context.renderItemDecorations(textRenderer, stack, originX, originY);
             }
             if (this.illustration.showTooltip() &&
                     originX <= mouseX && originX + (16 * scale) + 4 > mouseX &&
                     originY <= mouseY && originY + (16 * scale) + 4 > mouseY) {
-                context.drawItemTooltip(textRenderer, stack, mouseX, mouseY);
+                context.setTooltipForNextFrame(textRenderer, stack, mouseX, mouseY);
             }
         } finally {
             ((DrawContextHooks) context).blabber$setItemScale(1f);

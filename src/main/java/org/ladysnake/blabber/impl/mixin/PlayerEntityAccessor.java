@@ -17,15 +17,15 @@
  */
 package org.ladysnake.blabber.impl.mixin;
 
-import net.minecraft.entity.PlayerLikeEntity;
-import net.minecraft.entity.data.TrackedData;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.world.entity.Avatar;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-@Mixin(PlayerLikeEntity.class)
+@Mixin(Avatar.class)
 public interface PlayerEntityAccessor {
-    @Accessor("PLAYER_MODE_CUSTOMIZATION_ID")
-    static TrackedData<Byte> getPlayerModelParts() {
+    @Accessor("DATA_PLAYER_MODE_CUSTOMISATION")
+    static EntityDataAccessor<Byte> getPlayerModelParts() {
         throw new IllegalStateException();
     }
 }

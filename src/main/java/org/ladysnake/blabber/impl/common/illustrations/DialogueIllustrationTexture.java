@@ -20,10 +20,10 @@ package org.ladysnake.blabber.impl.common.illustrations;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.util.Identifier;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.resources.Identifier;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
@@ -60,13 +60,13 @@ public record DialogueIllustrationTexture(
             OptionalSerialization.optionalIntField("region_width").forGetter(DialogueIllustrationTexture::regionWidth),
             OptionalSerialization.optionalIntField("region_height").forGetter(DialogueIllustrationTexture::regionHeight)
     ).apply(instance, DialogueIllustrationTexture::new));
-    public static final PacketCodec<PacketByteBuf, DialogueIllustrationTexture> PACKET_CODEC = MorePacketCodecs.tuple(
-            Identifier.PACKET_CODEC, DialogueIllustrationTexture::texture,
+    public static final StreamCodec<FriendlyByteBuf, DialogueIllustrationTexture> PACKET_CODEC = MorePacketCodecs.tuple(
+            Identifier.STREAM_CODEC, DialogueIllustrationTexture::texture,
             IllustrationAnchor.PACKET_CODEC, DialogueIllustrationTexture::anchor,
-            PacketCodecs.VAR_INT, DialogueIllustrationTexture::x,
-            PacketCodecs.VAR_INT, DialogueIllustrationTexture::y,
-            PacketCodecs.VAR_INT, DialogueIllustrationTexture::width,
-            PacketCodecs.VAR_INT, DialogueIllustrationTexture::height,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationTexture::x,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationTexture::y,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationTexture::width,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationTexture::height,
             MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::u,
             MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::v,
             MorePacketCodecs.OPTIONAL_INT, DialogueIllustrationTexture::textureWidth,

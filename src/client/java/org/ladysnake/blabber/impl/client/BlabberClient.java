@@ -20,9 +20,9 @@ package org.ladysnake.blabber.impl.client;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientConfigurationNetworking;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.minecraft.client.gui.screen.ingame.HandledScreens;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.text.Text;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Inventory;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.api.client.BlabberScreenRegistry;
@@ -54,7 +54,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public final class BlabberClient implements ClientModInitializer {
-    private static final Map<DialogueLayoutType<?>, HandledScreens.Provider<?, ?>> screenRegistry = new LinkedHashMap<>();
+    private static final Map<DialogueLayoutType<?>, MenuScreens.ScreenConstructor<?, ?>> screenRegistry = new LinkedHashMap<>();
     private static final Map<DialogueIllustrationType<?>, DialogueIllustrationRenderer.Factory<?>> illustrationRenderers = new LinkedHashMap<>();
 
     @Override
@@ -67,16 +67,16 @@ public final class BlabberClient implements ClientModInitializer {
         DialogueIllustrationRenderer.register(DialogueIllustrationTexture.TYPE, TextureIllustrationRenderer::new);
         BlabberScreenRegistry.register(BlabberRegistrar.CLASSIC_LAYOUT, BlabberDialogueScreen::new);
         BlabberScreenRegistry.register(BlabberRegistrar.RPG_LAYOUT, BlabberRpgDialogueScreen::new);
-        HandledScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, (HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<?>>) BlabberClient::createDialogueScreen);
+        MenuScreens.register(BlabberRegistrar.DIALOGUE_SCREEN_HANDLER, (MenuScreens.ScreenConstructor<DialogueScreenHandler, BlabberDialogueScreen<?>>) BlabberClient::createDialogueScreen);
         ClientConfigurationNetworking.registerGlobalReceiver(DialogueListPayload.ID, (packet, ctx) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
         ClientPlayNetworking.registerGlobalReceiver(DialogueListPayload.ID, (packet, ctx) -> DialogueRegistry.setClientIds(packet.dialogueIds()));
         ClientPlayNetworking.registerGlobalReceiver(ChoiceAvailabilityPayload.ID, (packet, ctx) -> {
-            if (ctx.player().currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
+            if (ctx.player().containerMenu instanceof DialogueScreenHandler dialogueScreenHandler) {
                 dialogueScreenHandler.handleAvailabilityUpdate(packet);
             }
         });
         ClientPlayNetworking.registerGlobalReceiver(SelectedDialogueStatePayload.ID, (packet, ctx) -> {
-            if (ctx.player().currentScreenHandler instanceof DialogueScreenHandler dialogueScreenHandler) {
+            if (ctx.player().containerMenu instanceof DialogueScreenHandler dialogueScreenHandler) {
                 dialogueScreenHandler.setCurrentState(packet.stateKey());
             }
         });
@@ -84,7 +84,7 @@ public final class BlabberClient implements ClientModInitializer {
 
     public static <P extends DialogueLayout.Params> void registerLayoutScreen(
             DialogueLayoutType<P> layoutId,
-            HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<P>> screenProvider
+            MenuScreens.ScreenConstructor<DialogueScreenHandler, BlabberDialogueScreen<P>> screenProvider
     ) {
         screenRegistry.put(layoutId, screenProvider);
     }
@@ -98,10 +98,10 @@ public final class BlabberClient implements ClientModInitializer {
         return renderer.create(illustration);
     }
 
-    private static <P extends DialogueLayout.Params> BlabberDialogueScreen<P> createDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
+    private static <P extends DialogueLayout.Params> BlabberDialogueScreen<P> createDialogueScreen(DialogueScreenHandler handler, Inventory inventory, Component title) {
         @SuppressWarnings("unchecked") DialogueLayoutType<P> layoutType = (DialogueLayoutType<P>) handler.getLayout().type();
-        @SuppressWarnings("unchecked") HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<P>> provider =
-                (HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<P>>) screenRegistry.get(layoutType);
+        @SuppressWarnings("unchecked") MenuScreens.ScreenConstructor<DialogueScreenHandler, BlabberDialogueScreen<P>> provider =
+                (MenuScreens.ScreenConstructor<DialogueScreenHandler, BlabberDialogueScreen<P>>) screenRegistry.get(layoutType);
 
         if (provider != null) {
             return provider.create(handler, inventory, title);

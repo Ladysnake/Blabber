@@ -23,15 +23,15 @@ import com.mojang.brigadier.exceptions.DynamicCommandExceptionType;
 import it.unimi.dsi.fastutil.ints.Int2BooleanMap;
 import it.unimi.dsi.fastutil.ints.Int2BooleanMaps;
 import it.unimi.dsi.fastutil.ints.Int2BooleanOpenHashMap;
-import net.minecraft.loot.condition.LootCondition;
-import net.minecraft.loot.context.LootContext;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Holder;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
@@ -53,7 +53,7 @@ import java.util.Optional;
 import java.util.stream.IntStream;
 
 public final class DialogueStateMachine {
-    private static final DynamicCommandExceptionType INVALID_PREDICATE_EXCEPTION = new DynamicCommandExceptionType(id -> Text.translatable("blabber:commands.dialogue.start.predicate.invalid", String.valueOf(id)));
+    private static final DynamicCommandExceptionType INVALID_PREDICATE_EXCEPTION = new DynamicCommandExceptionType(id -> Component.translatable("blabber:commands.dialogue.start.predicate.invalid", String.valueOf(id)));
 
     private final Identifier id;
     private final DialogueTemplate template;
@@ -86,10 +86,10 @@ public final class DialogueStateMachine {
         return conditionalChoices;
     }
 
-    public static final PacketCodec<RegistryByteBuf, DialogueStateMachine> PACKET_CODEC = PacketCodec.tuple(
-            Identifier.PACKET_CODEC, DialogueStateMachine::getId,
+    public static final StreamCodec<RegistryFriendlyByteBuf, DialogueStateMachine> PACKET_CODEC = StreamCodec.composite(
+            Identifier.STREAM_CODEC, DialogueStateMachine::getId,
             DialogueTemplate.PACKET_CODEC, m -> m.template,
-            PacketCodecs.STRING, DialogueStateMachine::getCurrentStateKey,
+            ByteBufCodecs.STRING_UTF8, DialogueStateMachine::getCurrentStateKey,
             DialogueStateMachine::new
     );
 
@@ -105,7 +105,7 @@ public final class DialogueStateMachine {
         return this.id;
     }
 
-    public Optional<Text> getName() {
+    public Optional<Component> getName() {
         return this.template.name();
     }
 
@@ -113,7 +113,7 @@ public final class DialogueStateMachine {
         return this.template.layout();
     }
 
-    public Text getCurrentText() {
+    public Component getCurrentText() {
         return this.getCurrentState().text();
     }
 
@@ -138,12 +138,12 @@ public final class DialogueStateMachine {
         for (Map.Entry<String, Int2BooleanMap> conditionalState : this.conditionalChoices.entrySet()) {
             List<DialogueChoice> availableChoices = getStates().get(conditionalState.getKey()).choices();
             for (Int2BooleanMap.Entry conditionalChoice : conditionalState.getValue().int2BooleanEntrySet()) {
-                RegistryKey<LootCondition> predicateId = availableChoices.get(conditionalChoice.getIntKey()).condition().orElseThrow().predicate();
-                Optional<LootCondition> condition = context.getWorld().getServer()
-                        .getReloadableRegistries()
-                        .createRegistryLookup()
-                        .getOptionalEntry(predicateId)
-                        .map(RegistryEntry::value);
+                ResourceKey<LootItemCondition> predicateId = availableChoices.get(conditionalChoice.getIntKey()).condition().orElseThrow().predicate();
+                Optional<LootItemCondition> condition = context.getLevel().getServer()
+                        .reloadableRegistries()
+                        .lookup()
+                        .get(predicateId)
+                        .map(Holder::value);
                 if (condition.isEmpty()) throw INVALID_PREDICATE_EXCEPTION.create(predicateId);
                 boolean testResult = runTest(condition.get(), context);
                 if (testResult != conditionalChoice.setValue(testResult)) {
@@ -159,11 +159,11 @@ public final class DialogueStateMachine {
         return new ChoiceAvailabilityPayload(this.conditionalChoices);
     }
 
-    private static boolean runTest(LootCondition condition, LootContext context) {
-        LootContext.Entry<LootCondition> lootEntry = LootContext.predicate(condition);
-        context.markActive(lootEntry);
+    private static boolean runTest(LootItemCondition condition, LootContext context) {
+        LootContext.VisitedEntry<LootItemCondition> lootEntry = LootContext.createVisitedEntry(condition);
+        context.pushVisitedElement(lootEntry);
         boolean testResult = condition.test(context);
-        context.markInactive(lootEntry);
+        context.popVisitedElement(lootEntry);
         return testResult;
     }
 
@@ -241,8 +241,8 @@ public final class DialogueStateMachine {
         return newChoices.build();
     }
 
-    private static Optional<Text> defaultLockedMessage() {
-        return Optional.of(Text.translatable("blabber:dialogue.locked_choice"));
+    private static Optional<Component> defaultLockedMessage() {
+        return Optional.of(Component.translatable("blabber:dialogue.locked_choice"));
     }
 
     public String getCurrentStateKey() {

@@ -17,11 +17,11 @@
  */
 package org.ladysnake.blabber.impl.common.settings;
 
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.storage.ReadView;
-import net.minecraft.storage.WriteView;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.commands.SettingsSubCommand;
 import org.ladysnake.cca.api.v3.component.ComponentKey;
@@ -33,19 +33,19 @@ import java.util.EnumSet;
 public class BlabberSettingsComponent implements AutoSyncedComponent {
     public static final ComponentKey<BlabberSettingsComponent> KEY = ComponentRegistry.getOrCreate(Blabber.id("settings"), BlabberSettingsComponent.class);
 
-    public static BlabberSettingsComponent get(PlayerEntity player) {
+    public static BlabberSettingsComponent get(Player player) {
         return player.getComponent(KEY);
     }
 
     private EnumSet<BlabberSetting> enabledSettings = EnumSet.noneOf(BlabberSetting.class);
-    private final PlayerEntity player;
+    private final Player player;
 
-    public BlabberSettingsComponent(PlayerEntity player) {
+    public BlabberSettingsComponent(Player player) {
         this.player = player;
     }
 
     public boolean isDebugEnabled() {
-        if (this.player instanceof ServerPlayerEntity serverPlayer && !SettingsSubCommand.ALLOW_DEBUG.test(serverPlayer.getCommandSource())) {
+        if (this.player instanceof ServerPlayer serverPlayer && !SettingsSubCommand.ALLOW_DEBUG.test(serverPlayer.createCommandSourceStack())) {
             return false;
         }
         return !this.enabledSettings.isEmpty();
@@ -65,12 +65,12 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     @Override
-    public boolean shouldSyncWith(ServerPlayerEntity player) {
+    public boolean shouldSyncWith(ServerPlayer player) {
         return player == this.player;
     }
 
     @Override
-    public void writeSyncPacket(RegistryByteBuf buf, ServerPlayerEntity recipient) {
+    public void writeSyncPacket(RegistryFriendlyByteBuf buf, ServerPlayer recipient) {
         boolean enabled = this.isDebugEnabled();
         buf.writeBoolean(enabled);
         if (enabled) {
@@ -79,7 +79,7 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     @Override
-    public void applySyncPacket(RegistryByteBuf buf) {
+    public void applySyncPacket(RegistryFriendlyByteBuf buf) {
         boolean debugEnabled = buf.readBoolean();
         if (debugEnabled) {
             this.enabledSettings = buf.readEnumSet(BlabberSetting.class);
@@ -89,16 +89,16 @@ public class BlabberSettingsComponent implements AutoSyncedComponent {
     }
 
     @Override
-    public void readData(ReadView readView) {
+    public void readData(ValueInput readView) {
         this.enabledSettings = EnumSet.noneOf(BlabberSetting.class);
-        for (BlabberSetting feature : readView.getTypedListView("enabled_features", BlabberSetting.CODEC)) {
+        for (BlabberSetting feature : readView.listOrEmpty("enabled_features", BlabberSetting.CODEC)) {
             this.enabledSettings.add(feature);
         }
     }
 
     @Override
-    public void writeData(WriteView writeView) {
-        WriteView.ListAppender<BlabberSetting> listAppender = writeView.getListAppender("enabled_features", BlabberSetting.CODEC);
+    public void writeData(ValueOutput writeView) {
+        ValueOutput.TypedOutputList<BlabberSetting> listAppender = writeView.list("enabled_features", BlabberSetting.CODEC);
         for (BlabberSetting feature : this.enabledSettings) {
             listAppender.add(feature);
         }

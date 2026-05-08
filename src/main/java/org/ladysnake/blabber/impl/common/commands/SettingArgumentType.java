@@ -19,13 +19,13 @@ package org.ladysnake.blabber.impl.common.commands;
 
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.serialization.Codec;
-import net.minecraft.command.argument.EnumArgumentType;
-import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.arguments.StringRepresentableArgument;
 import org.ladysnake.blabber.impl.common.settings.BlabberSetting;
 
 import java.util.function.Supplier;
 
-public class SettingArgumentType extends EnumArgumentType<BlabberSetting> {
+public class SettingArgumentType extends StringRepresentableArgument<BlabberSetting> {
     protected SettingArgumentType(Codec<BlabberSetting> codec, Supplier<BlabberSetting[]> valuesSupplier) {
         super(codec, valuesSupplier);
     }
@@ -34,7 +34,7 @@ public class SettingArgumentType extends EnumArgumentType<BlabberSetting> {
         return new SettingArgumentType(BlabberSetting.CODEC, BlabberSetting::values);
     }
 
-    public static BlabberSetting getSetting(CommandContext<ServerCommandSource> context, String id) {
+    public static BlabberSetting getSetting(CommandContext<CommandSourceStack> context, String id) {
         return context.getArgument(id, BlabberSetting.class);
     }
 }

@@ -18,17 +18,17 @@
 package org.ladysnake.blabber.impl.common.packets;
 
 import io.netty.buffer.ByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.network.packet.CustomPayload;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
-public record SelectedDialogueStatePayload(String stateKey) implements CustomPayload {
-    public static final CustomPayload.Id<SelectedDialogueStatePayload> ID = BlabberRegistrar.payloadId("selected_dialogue_state");
-    public static final PacketCodec<ByteBuf, SelectedDialogueStatePayload> PACKET_CODEC = PacketCodecs.STRING.xmap(SelectedDialogueStatePayload::new, SelectedDialogueStatePayload::stateKey);
+public record SelectedDialogueStatePayload(String stateKey) implements CustomPacketPayload {
+    public static final CustomPacketPayload.Type<SelectedDialogueStatePayload> ID = BlabberRegistrar.payloadId("selected_dialogue_state");
+    public static final StreamCodec<ByteBuf, SelectedDialogueStatePayload> PACKET_CODEC = ByteBufCodecs.STRING_UTF8.map(SelectedDialogueStatePayload::new, SelectedDialogueStatePayload::stateKey);
 
     @Override
-    public Id<? extends CustomPayload> getId() {
+    public Type<? extends CustomPacketPayload> type() {
         return ID;
     }
 }

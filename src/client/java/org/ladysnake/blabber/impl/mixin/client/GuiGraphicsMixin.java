@@ -17,16 +17,16 @@
  */
 package org.ladysnake.blabber.impl.mixin.client;
 
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.render.state.ItemGuiElementRenderState;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.render.state.GuiItemRenderState;
 import org.ladysnake.blabber.impl.client.illustrations.ItemIllustrationRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
-@Mixin(DrawContext.class)
-public abstract class DrawContextMixin implements ItemIllustrationRenderer.DrawContextHooks {
+@Mixin(GuiGraphics.class)
+public abstract class GuiGraphicsMixin implements ItemIllustrationRenderer.DrawContextHooks {
     @Unique
     private float blabber$itemScale = 1;
 
@@ -36,10 +36,10 @@ public abstract class DrawContextMixin implements ItemIllustrationRenderer.DrawC
     }
 
     @ModifyArg(
-            method = "drawItem(Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/world/World;Lnet/minecraft/item/ItemStack;III)V",
-            at = @At(value = "INVOKE", target = "net/minecraft/client/gui/render/state/GuiRenderState.addItem(Lnet/minecraft/client/gui/render/state/ItemGuiElementRenderState;)V")
+            method = "renderItem(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;III)V",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/render/state/GuiRenderState;submitItem(Lnet/minecraft/client/gui/render/state/GuiItemRenderState;)V")
     )
-    private ItemGuiElementRenderState scaleItem(ItemGuiElementRenderState state) {
+    private GuiItemRenderState scaleItem(GuiItemRenderState state) {
         ((ItemIllustrationRenderer.RenderStateHooks)(Object) state).blabber$setItemScale(blabber$itemScale);
         return state;
     }

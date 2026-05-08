@@ -19,12 +19,12 @@ package org.ladysnake.blabber.impl.client.illustrations;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.ingame.InventoryScreen;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.world.World;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.screens.inventory.InventoryScreen;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.client.illustration.DialogueIllustrationRenderer;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
@@ -38,13 +38,13 @@ public abstract class EntityIllustrationRenderer<I extends DialogueIllustrationE
         super(illustration);
     }
 
-    protected abstract @Nullable LivingEntity getRenderedEntity(World world);
+    protected abstract @Nullable LivingEntity getRenderedEntity(Level world);
 
     @Override
     @Environment(EnvType.CLIENT)
-    public void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
+    public void render(GuiGraphics context, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         LivingEntity e = this.renderedEntity == null
-                ? this.renderedEntity = this.getRenderedEntity(MinecraftClient.getInstance().world)
+                ? this.renderedEntity = this.getRenderedEntity(Minecraft.getInstance().level)
                 : this.renderedEntity;
 
         if (e == null) return; // Something went wrong creating the entity, so don't render.
@@ -58,7 +58,7 @@ public abstract class EntityIllustrationRenderer<I extends DialogueIllustrationE
         int fakedMouseX = stareTarget.x().isPresent() ? stareTarget.anchor().isPresent() ? positionTransform.transformX(stareTarget.anchor().get(), stareTarget.x().getAsInt()) : stareTarget.x().getAsInt() + (x1 + x2) / 2 : mouseX;
         int fakedMouseY = stareTarget.y().isPresent() ? stareTarget.anchor().isPresent() ? positionTransform.transformY(stareTarget.anchor().get(), stareTarget.y().getAsInt()) : stareTarget.y().getAsInt() + (y1 + y2) / 2 : mouseY;
 
-        InventoryScreen.drawEntity(context,
+        InventoryScreen.renderEntityInInventoryFollowsMouse(context,
                 x1,
                 y1,
                 x2,

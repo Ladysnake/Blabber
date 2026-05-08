@@ -17,14 +17,14 @@
  */
 package org.ladysnake.blabber.impl.client.illustrations;
 
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.registry.Registries;
-import net.minecraft.storage.NbtReadView;
-import net.minecraft.util.ErrorReporter;
-import net.minecraft.world.World;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.util.ProblemReporter;
+import net.minecraft.world.entity.EntitySpawnReason;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.storage.TagValueInput;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationNbtEntity;
@@ -35,23 +35,23 @@ public class NbtEntityIllustrationRenderer extends EntityIllustrationRenderer<Di
     }
 
     @Override
-    protected @Nullable LivingEntity getRenderedEntity(World world) {
-        EntityType<?> entityType = Registries.ENTITY_TYPE.getOptionalValue(illustration.id()).orElse(null);
+    protected @Nullable LivingEntity getRenderedEntity(Level world) {
+        EntityType<?> entityType = BuiltInRegistries.ENTITY_TYPE.getOptional(illustration.id()).orElse(null);
         if (entityType == null) return null;
 
-        if (entityType.create(world, SpawnReason.COMMAND) instanceof LivingEntity living) {
+        if (entityType.create(world, EntitySpawnReason.COMMAND) instanceof LivingEntity living) {
             this.illustration.data().ifPresent(nbt -> loadEntityData(world, living, nbt));
-            living.lastBodyYaw = living.bodyYaw = 0.0f;
-            living.lastHeadYaw = living.headYaw = 0.0f;
+            living.yBodyRotO = living.yBodyRot = 0.0f;
+            living.yHeadRotO = living.yHeadRot = 0.0f;
             return living;
         }
 
         return null;
     }
 
-    public static void loadEntityData(World world, LivingEntity entity, NbtCompound nbt) {
-        try (ErrorReporter.Logging logging = new ErrorReporter.Logging(entity.getErrorReporterContext(), Blabber.LOGGER)) {
-            entity.readData(NbtReadView.create(logging, world.getRegistryManager(), nbt));
+    public static void loadEntityData(Level world, LivingEntity entity, CompoundTag nbt) {
+        try (ProblemReporter.ScopedCollector logging = new ProblemReporter.ScopedCollector(entity.problemPath(), Blabber.LOGGER)) {
+            entity.load(TagValueInput.create(logging, world.registryAccess(), nbt));
         }
     }
 }

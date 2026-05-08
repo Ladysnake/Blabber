@@ -17,8 +17,8 @@
  */
 package org.ladysnake.blabber.api.client.illustration;
 
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphics;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.client.BlabberClient;
@@ -45,7 +45,7 @@ public abstract class DialogueIllustrationRenderer<I extends DialogueIllustratio
      * @param mouseY           the current y mouse position
      * @param tickDelta        how much time has passed since last frame
      */
-    public abstract void render(DrawContext context, TextRenderer textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta);
+    public abstract void render(GuiGraphics context, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta);
 
     @FunctionalInterface
     public interface Factory<I extends DialogueIllustration> {

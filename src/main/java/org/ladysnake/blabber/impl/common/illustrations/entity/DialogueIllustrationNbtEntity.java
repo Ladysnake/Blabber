@@ -20,13 +20,13 @@ package org.ladysnake.blabber.impl.common.illustrations.entity;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.EntityType;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.entity.EntityType;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.ladysnake.blabber.impl.common.serialization.EitherMapCodec;
@@ -35,9 +35,9 @@ import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
 
 import java.util.Optional;
 
-public record DialogueIllustrationNbtEntity(RegistryKey<EntityType<?>> id, IllustrationAnchor anchor, int x, int y, int width, int height, int entitySize, float yOffset, StareTarget stareAt, Optional<NbtCompound> data) implements DialogueIllustrationEntity {
+public record DialogueIllustrationNbtEntity(ResourceKey<EntityType<?>> id, IllustrationAnchor anchor, int x, int y, int width, int height, int entitySize, float yOffset, StareTarget stareAt, Optional<CompoundTag> data) implements DialogueIllustrationEntity {
     private static final MapCodec<DialogueIllustrationNbtEntity> CODEC_V0 = RecordCodecBuilder.mapCodec(instance -> instance.group(
-            RegistryKey.createCodec(RegistryKeys.ENTITY_TYPE).fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
+            ResourceKey.codec(Registries.ENTITY_TYPE).fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
             IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationNbtEntity::anchor),
             Codec.INT.fieldOf("x1").forGetter(DialogueIllustrationNbtEntity::x),
             Codec.INT.fieldOf("y1").forGetter(DialogueIllustrationNbtEntity::y),
@@ -47,7 +47,7 @@ public record DialogueIllustrationNbtEntity(RegistryKey<EntityType<?>> id, Illus
             Codec.FLOAT.optionalFieldOf("y_offset", 0.0f).forGetter(DialogueIllustrationNbtEntity::yOffset),
             OptionalSerialization.optionalIntField("stare_at_x").forGetter(s -> s.stareAt().x()),
             OptionalSerialization.optionalIntField("stare_at_y").forGetter(s -> s.stareAt().y()),
-            NbtCompound.CODEC.optionalFieldOf("data").forGetter(DialogueIllustrationNbtEntity::data)
+            CompoundTag.CODEC.optionalFieldOf("data").forGetter(DialogueIllustrationNbtEntity::data)
     ).apply(instance, (id, anchor, x1, y1, x2, y2, size, yOff, stareAtX, stareAtY, data) -> {
         int minX = Math.min(x1, x2);
         int minY = Math.min(y1, y2);
@@ -56,7 +56,7 @@ public record DialogueIllustrationNbtEntity(RegistryKey<EntityType<?>> id, Illus
         return new DialogueIllustrationNbtEntity(id, anchor, minX, minY, maxX - minX, maxY - minY, size, yOff, new StareTarget(Optional.empty(), stareAtX, stareAtY), data);
     }));
     private static final MapCodec<DialogueIllustrationNbtEntity> CODEC_V1 = RecordCodecBuilder.mapCodec(instance -> instance.group(
-            RegistryKey.createCodec(RegistryKeys.ENTITY_TYPE).fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
+            ResourceKey.codec(Registries.ENTITY_TYPE).fieldOf("id").forGetter(DialogueIllustrationNbtEntity::id),
             IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationNbtEntity::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationNbtEntity::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationNbtEntity::y),
@@ -65,20 +65,20 @@ public record DialogueIllustrationNbtEntity(RegistryKey<EntityType<?>> id, Illus
             Codec.INT.fieldOf("entity_size").forGetter(DialogueIllustrationNbtEntity::entitySize),
             Codec.FLOAT.optionalFieldOf("y_offset", 0.0f).forGetter(DialogueIllustrationNbtEntity::yOffset),
             StareTarget.CODEC.optionalFieldOf("stare_at", StareTarget.FOLLOW_MOUSE).forGetter(DialogueIllustrationNbtEntity::stareAt),
-            NbtCompound.CODEC.optionalFieldOf("data").forGetter(DialogueIllustrationNbtEntity::data)
+            CompoundTag.CODEC.optionalFieldOf("data").forGetter(DialogueIllustrationNbtEntity::data)
     ).apply(instance, DialogueIllustrationNbtEntity::new));
     public static final MapCodec<DialogueIllustrationNbtEntity> CODEC = EitherMapCodec.alternatively(CODEC_V0, CODEC_V1);
-    public static final PacketCodec<PacketByteBuf, DialogueIllustrationNbtEntity> PACKET_CODEC = MorePacketCodecs.tuple(
-            RegistryKey.createPacketCodec(RegistryKeys.ENTITY_TYPE), DialogueIllustrationNbtEntity::id,
+    public static final StreamCodec<FriendlyByteBuf, DialogueIllustrationNbtEntity> PACKET_CODEC = MorePacketCodecs.tuple(
+            ResourceKey.streamCodec(Registries.ENTITY_TYPE), DialogueIllustrationNbtEntity::id,
             IllustrationAnchor.PACKET_CODEC, DialogueIllustrationNbtEntity::anchor,
-            PacketCodecs.VAR_INT, DialogueIllustrationNbtEntity::x,
-            PacketCodecs.VAR_INT, DialogueIllustrationNbtEntity::y,
-            PacketCodecs.VAR_INT, DialogueIllustrationNbtEntity::width,
-            PacketCodecs.VAR_INT, DialogueIllustrationNbtEntity::height,
-            PacketCodecs.VAR_INT, DialogueIllustrationNbtEntity::entitySize,
-            PacketCodecs.FLOAT, DialogueIllustrationNbtEntity::yOffset,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationNbtEntity::x,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationNbtEntity::y,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationNbtEntity::width,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationNbtEntity::height,
+            ByteBufCodecs.VAR_INT, DialogueIllustrationNbtEntity::entitySize,
+            ByteBufCodecs.FLOAT, DialogueIllustrationNbtEntity::yOffset,
             StareTarget.PACKET_CODEC, DialogueIllustrationNbtEntity::stareAt,
-            PacketCodecs.NBT_COMPOUND.collect(PacketCodecs::optional), DialogueIllustrationNbtEntity::data,
+            ByteBufCodecs.COMPOUND_TAG.apply(ByteBufCodecs::optional), DialogueIllustrationNbtEntity::data,
             DialogueIllustrationNbtEntity::new
     );
     public static final DialogueIllustrationType<DialogueIllustrationNbtEntity> TYPE = new DialogueIllustrationType<>(CODEC, PACKET_CODEC);

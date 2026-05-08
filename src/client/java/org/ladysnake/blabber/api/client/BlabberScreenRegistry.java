@@ -17,7 +17,7 @@
  */
 package org.ladysnake.blabber.api.client;
 
-import net.minecraft.client.gui.screen.ingame.HandledScreens;
+import net.minecraft.client.gui.screens.MenuScreens;
 import org.jetbrains.annotations.ApiStatus;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.api.layout.DialogueLayoutType;
@@ -31,7 +31,7 @@ public final class BlabberScreenRegistry {
      */
     public static <P extends DialogueLayout.Params> void register(
             DialogueLayoutType<P> layoutType,
-            HandledScreens.Provider<DialogueScreenHandler, BlabberDialogueScreen<P>> screenProvider
+            MenuScreens.ScreenConstructor<DialogueScreenHandler, BlabberDialogueScreen<P>> screenProvider
     ) {
         BlabberClient.registerLayoutScreen(layoutType, screenProvider);
     }

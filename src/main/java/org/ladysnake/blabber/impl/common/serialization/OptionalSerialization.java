@@ -19,7 +19,7 @@ package org.ladysnake.blabber.impl.common.serialization;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
-import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.FriendlyByteBuf;
 
 import java.util.Optional;
 import java.util.OptionalInt;
@@ -29,14 +29,14 @@ public class OptionalSerialization {
         return Codec.INT.optionalFieldOf(name).xmap(v -> v.map(OptionalInt::of).orElseGet(OptionalInt::empty), v -> v.isPresent() ? Optional.of(v.getAsInt()) : Optional.empty());
     }
 
-    public static OptionalInt readOptionalInt(PacketByteBuf buf) {
+    public static OptionalInt readOptionalInt(FriendlyByteBuf buf) {
         if (buf.readBoolean()) {
             return OptionalInt.of(buf.readVarInt());
         }
         return OptionalInt.empty();
     }
 
-    public static void writeOptionalInt(PacketByteBuf buf, OptionalInt value) {
+    public static void writeOptionalInt(FriendlyByteBuf buf, OptionalInt value) {
         if (value.isPresent()) {
             buf.writeBoolean(true);
             buf.writeVarInt(value.getAsInt());

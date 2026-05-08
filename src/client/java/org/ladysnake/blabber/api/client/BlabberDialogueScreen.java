@@ -19,19 +19,19 @@ package org.ladysnake.blabber.api.client;
 
 import com.google.common.collect.ImmutableList;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.Click;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.ConfirmScreen;
-import net.minecraft.client.gui.screen.ingame.HandledScreen;
-import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
-import net.minecraft.client.gui.screen.narration.NarrationPart;
-import net.minecraft.client.input.KeyInput;
-import net.minecraft.client.option.GameOptions;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.text.MutableText;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.Options;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.narration.NarratedElementType;
+import net.minecraft.client.gui.narration.NarrationElementOutput;
+import net.minecraft.client.gui.screens.ConfirmScreen;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.input.KeyEvent;
+import net.minecraft.client.input.MouseButtonEvent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.player.Inventory;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -55,7 +55,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @ApiStatus.Experimental // half internal, expect some things to change
-public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends HandledScreen<DialogueScreenHandler> {
+public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends AbstractContainerScreen<DialogueScreenHandler> {
     public static final List<Identifier> DIALOGUE_ARROWS = IntStream.range(1, 6).mapToObj(i -> Blabber.id("container/dialogue/dialogue_arrow_" + i)).toList();
     public static final List<Identifier> DIALOGUE_LOCKS = IntStream.range(1, 4).mapToObj(i -> Blabber.id("container/dialogue/dialogue_lock_" + i)).toList();
     public static final int DEFAULT_TITLE_GAP = 20;
@@ -73,7 +73,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
             0xb842b8,
     };
 
-    protected final Text instructions;
+    protected final Component instructions;
 
     // Things that could be constants but may be mutated by subclasses
     /**
@@ -101,10 +101,10 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
     protected final IllustrationContainer illustrations = new IllustrationContainer();
 
-    public BlabberDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
+    public BlabberDialogueScreen(DialogueScreenHandler handler, Inventory inventory, Component title) {
         super(handler, inventory, title);
-        GameOptions options = MinecraftClient.getInstance().options;
-        this.instructions = Text.translatable("blabber:dialogue.instructions", options.forwardKey.getBoundKeyLocalizedText(), options.backKey.getBoundKeyLocalizedText(), options.inventoryKey.getBoundKeyLocalizedText());
+        Options options = Minecraft.getInstance().options;
+        this.instructions = Component.translatable("blabber:dialogue.instructions", options.keyUp.getTranslatedKeyMessage(), options.keyDown.getTranslatedKeyMessage(), options.keyInventory.getTranslatedKeyMessage());
         this.illustrationSlots = new EnumMap<>(IllustrationAnchor.class);
         for (IllustrationAnchor anchor : IllustrationAnchor.values()) {
             this.illustrationSlots.put(anchor, new Vector2i(-999, -999));
@@ -113,20 +113,20 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
     @SuppressWarnings("unchecked")
     protected P params() {
-        return (P) this.handler.getLayout().params();
+        return (P) this.menu.getLayout().params();
     }
 
     @Override
     protected void init() {
         super.init();
-        this.title = this.addDrawableChild(new DialogueTextWidget(0, 0, mainTextMaxWidth, mainTextMaxRows, Text.empty(), this.textRenderer));
-        this.choiceList = this.addDrawableChild(createChoiceList());
+        this.title = this.addRenderableWidget(new DialogueTextWidget(0, 0, mainTextMaxWidth, mainTextMaxRows, Component.empty(), this.font));
+        this.choiceList = this.addRenderableWidget(createChoiceList());
         this.prepareLayout();
-        this.illustrations.setIllustrations(this.handler.getIllustrations());
+        this.illustrations.setIllustrations(this.menu.getIllustrations());
     }
 
     protected @NotNull DialogueChoiceListWidget createChoiceList() {
-        return new DialogueChoiceListWidget(0, 0, choiceListMaxWidth, 1000, Text.empty(), textRenderer, this::confirmChoice, illustrations);
+        return new DialogueChoiceListWidget(0, 0, choiceListMaxWidth, 1000, Component.empty(), font, this::confirmChoice, illustrations);
     }
 
     protected void prepareLayout() {
@@ -134,14 +134,14 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
         this.title.setPosition(mainTextMinX, mainTextMinY);
         this.title.setTextWidth(mainTextMaxWidth);
         this.title.setTextColor(mainTextColor);
-        this.title.setMessage(handler.getCurrentText());
-        this.choiceList.setChoices(handler.getAvailableChoices());
+        this.title.setMessage(menu.getCurrentText());
+        this.choiceList.setChoices(menu.getAvailableChoices());
         this.positionChoiceList();
         this.layoutIllustrationAnchors();
     }
 
     protected void positionChoiceList() {
-        this.choiceList.setPosition(choiceListMinX, this.title.getY() + Math.min(this.title.getContentsHeightWithPadding(), this.title.getHeight()) + DEFAULT_TITLE_GAP);
+        this.choiceList.setPosition(choiceListMinX, this.title.getY() + Math.min(this.title.contentHeight(), this.title.getHeight()) + DEFAULT_TITLE_GAP);
     }
 
     protected void computeMargins() {
@@ -155,9 +155,9 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     }
 
     @Override
-    public boolean keyPressed(KeyInput input) {
-        GameOptions options = MinecraftClient.getInstance().options;
-        if (options.forwardKey.matchesKey(input) || options.backKey.matchesKey(input) || options.inventoryKey.matchesKey(input)) {
+    public boolean keyPressed(KeyEvent input) {
+        Options options = Minecraft.getInstance().options;
+        if (options.keyUp.matches(input) || options.keyDown.matches(input) || options.keyInventory.matches(input)) {
             this.setFocused(this.choiceList);
         }
         return super.keyPressed(input);
@@ -165,25 +165,25 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
 
     @Override
     public boolean shouldCloseOnEsc() {
-        return !this.handler.isUnskippable();
+        return !this.menu.isUnskippable();
     }
 
     protected @Nullable StateType confirmChoice(int selectedChoice) {
-        assert this.client != null;
-        if (this.handler.getAvailableChoices().get(selectedChoice).unavailabilityMessage().isPresent()) {
+        assert this.minecraft != null;
+        if (this.menu.getAvailableChoices().get(selectedChoice).unavailabilityMessage().isPresent()) {
             return null;
         }
 
         StateType result = this.makeChoice(selectedChoice);
 
         switch (result) {
-            case END_DIALOGUE -> this.client.setScreen(null);
+            case END_DIALOGUE -> this.minecraft.setScreen(null);
             case ASK_CONFIRMATION -> {
-                ImmutableList<AvailableChoice> choices = this.handler.getAvailableChoices();
-                this.client.setScreen(new ConfirmScreen(
+                ImmutableList<AvailableChoice> choices = this.menu.getAvailableChoices();
+                this.minecraft.setScreen(new ConfirmScreen(
                         this::onBigChoiceMade,
-                        this.handler.getCurrentText(),
-                        Text.empty(),
+                        this.menu.getCurrentText(),
+                        Component.empty(),
                         choices.get(0).text(),
                         choices.get(1).text()
                 ));
@@ -197,15 +197,15 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     }
 
     private void onBigChoiceMade(boolean yes) {
-        assert client != null;
+        assert minecraft != null;
         if (this.confirmChoice(yes ? 0 : 1) == StateType.DEFAULT) {
-            this.client.setScreen(this);
+            this.minecraft.setScreen(this);
         }
     }
 
     @Override
     public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
-        return this.hoveredElement(mouseX, mouseY).filter(element -> element.mouseScrolled(mouseX, mouseY, horizontalAmount, verticalAmount)).isPresent();
+        return this.getChildAt(mouseX, mouseY).filter(element -> element.mouseScrolled(mouseX, mouseY, horizontalAmount, verticalAmount)).isPresent();
     }
 
     @Override
@@ -214,27 +214,27 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     }
 
     @Override
-    public boolean mouseClicked(Click click, boolean doubled) {
+    public boolean mouseClicked(MouseButtonEvent click, boolean doubled) {
         return this.choiceList.mouseClicked(click, doubled);
     }
 
     @Override
-    public void render(DrawContext context, int mouseX, int mouseY, float tickDelta) {
+    public void render(GuiGraphics context, int mouseX, int mouseY, float tickDelta) {
         super.render(context, mouseX, mouseY, tickDelta);
 
-        assert client != null;
-        assert client.player != null;
+        assert minecraft != null;
+        assert minecraft.player != null;
 
         PositionTransform positionTransform = this.createPositionTransform();
         positionTransform.setControlPoints(0, 0, this.width, this.height);
 
-        for (String illustrationName : this.handler.getCurrentIllustrations()) {
-            illustrations.getRenderer(illustrationName).render(context, this.textRenderer, positionTransform, mouseX, mouseY, tickDelta);
+        for (String illustrationName : this.menu.getCurrentIllustrations()) {
+            illustrations.getRenderer(illustrationName).render(context, this.font, positionTransform, mouseX, mouseY, tickDelta);
         }
 
-        context.drawWrappedText(this.textRenderer, instructions, Math.max((this.width - this.textRenderer.getWidth(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0xFF808080, false);
+        context.drawWordWrap(this.font, instructions, Math.max((this.width - this.font.width(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0xFF808080, false);
 
-        BlabberSettingsComponent settings = BlabberSettingsComponent.get(client.player);
+        BlabberSettingsComponent settings = BlabberSettingsComponent.get(minecraft.player);
         if (settings.isDebugEnabled()) {
             positionTransform.setControlPoints(0, 0, this.width, this.height);
             renderDebugInfo(settings, context, positionTransform, mouseX, mouseY);
@@ -245,27 +245,27 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
         return new PositionTransform(this.illustrationSlots);
     }
 
-    protected void renderDebugInfo(BlabberSettingsComponent settings, DrawContext context, PositionTransform positionTransform, int mouseX, int mouseY) {
+    protected void renderDebugInfo(BlabberSettingsComponent settings, GuiGraphics context, PositionTransform positionTransform, int mouseX, int mouseY) {
         if (settings.isEnabled(BlabberSetting.DEBUG_ANCHORS)) {
             this.renderAnchorDebugInfo(context, positionTransform, mouseX, mouseY);
         }
     }
 
-    protected void renderAnchorDebugInfo(DrawContext context, PositionTransform positionTransform, int mouseX, int mouseY) {
+    protected void renderAnchorDebugInfo(GuiGraphics context, PositionTransform positionTransform, int mouseX, int mouseY) {
         for (IllustrationAnchor anchor : IllustrationAnchor.values()) {
             int color = DEBUG_COLORS[anchor.ordinal() % DEBUG_COLORS.length];
-            context.drawText(this.textRenderer, "x", positionTransform.transformX(anchor, -3), positionTransform.transformY(anchor, -5), color, true);
-            MutableText text = Text.empty().append(Text.literal(anchor.asString()).styled(s -> s.withColor(color))).append(" > X: " + positionTransform.inverseTransformX(anchor, mouseX) + ", Y: " + positionTransform.inverseTransformY(anchor, mouseY));
+            context.drawString(this.font, "x", positionTransform.transformX(anchor, -3), positionTransform.transformY(anchor, -5), color, true);
+            MutableComponent text = Component.empty().append(Component.literal(anchor.getSerializedName()).withStyle(s -> s.withColor(color))).append(" > X: " + positionTransform.inverseTransformX(anchor, mouseX) + ", Y: " + positionTransform.inverseTransformY(anchor, mouseY));
             switch (anchor) {
-                case TOP_LEFT, TOP_RIGHT -> context.drawTooltip(
-                        this.textRenderer,
+                case TOP_LEFT, TOP_RIGHT -> context.setTooltipForNextFrame(
+                        this.font,
                         text,
                         positionTransform.transformX(anchor, 0),
                         15
                 );
 
-                default -> context.drawTooltip(
-                        this.textRenderer,
+                default -> context.setTooltipForNextFrame(
+                        this.font,
                         text,
                         positionTransform.transformX(anchor, 0),
                         positionTransform.transformY(anchor, 0)
@@ -275,30 +275,30 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Hand
     }
 
     @Override
-    protected void drawBackground(DrawContext matrices, float delta, int mouseX, int mouseY) {
+    protected void renderBg(GuiGraphics matrices, float delta, int mouseX, int mouseY) {
         // NO-OP
     }
 
     @Override
-    protected void drawForeground(DrawContext matrices, int mouseX, int mouseY) {
+    protected void renderLabels(GuiGraphics matrices, int mouseX, int mouseY) {
         // NO-OP
     }
 
     public StateType makeChoice(int choice) {
-        int originalChoiceIndex = this.handler.getAvailableChoices().get(choice).originalChoiceIndex();
-        StateType result = this.handler.makeChoice(originalChoiceIndex);
+        int originalChoiceIndex = this.menu.getAvailableChoices().get(choice).originalChoiceIndex();
+        StateType result = this.menu.makeChoice(originalChoiceIndex);
         ClientPlayNetworking.send(new ChoiceSelectionPayload((byte) originalChoiceIndex));
         return result;
     }
 
     @Override
-    protected void addScreenNarrations(NarrationMessageBuilder messageBuilder) {
-        super.addScreenNarrations(messageBuilder);
-        messageBuilder.put(NarrationPart.USAGE, instructions);
+    protected void updateNarrationState(NarrationElementOutput messageBuilder) {
+        super.updateNarrationState(messageBuilder);
+        messageBuilder.add(NarratedElementType.USAGE, instructions);
     }
 
     @Override
-    protected boolean hasUsageText() {
+    protected boolean shouldNarrateNavigation() {
         return false;
     }
 }

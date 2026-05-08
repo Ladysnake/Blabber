@@ -20,14 +20,14 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.text.Text;
-import net.minecraft.text.TextCodecs;
-import net.minecraft.text.Texts;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ComponentSerialization;
+import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.world.entity.Entity;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
@@ -40,7 +40,7 @@ import java.util.Map;
 import java.util.Optional;
 
 public record DialogueTemplate(
-        Optional<Text> name,
+        Optional<Component> name,
         String start,
         boolean unskippable,
         Map<String, DialogueState> states,
@@ -48,24 +48,24 @@ public record DialogueTemplate(
         DialogueLayout<?> layout
 ) {
     public static final Codec<DialogueTemplate> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            TextCodecs.CODEC.optionalFieldOf("name").forGetter(DialogueTemplate::name),
+            ComponentSerialization.CODEC.optionalFieldOf("name").forGetter(DialogueTemplate::name),
             Codec.STRING.fieldOf("start_at").forGetter(DialogueTemplate::start),
             Codec.BOOL.optionalFieldOf("unskippable", false).forGetter(DialogueTemplate::unskippable),
             Codec.unboundedMap(Codec.STRING, DialogueState.CODEC).fieldOf("states").forGetter(DialogueTemplate::states),
             Codec.unboundedMap(Codec.STRING, DialogueIllustrationType.CODEC).optionalFieldOf("illustrations", Collections.emptyMap()).forGetter(DialogueTemplate::illustrations),
             DialogueLayoutType.CODEC.optionalFieldOf("layout", DialogueLayout.DEFAULT).forGetter(DialogueTemplate::layout)
     ).apply(instance, DialogueTemplate::new));
-    public static final PacketCodec<RegistryByteBuf, DialogueTemplate> PACKET_CODEC = PacketCodec.tuple(
-            PacketCodecs.optional(TextCodecs.PACKET_CODEC), DialogueTemplate::name,
-            PacketCodecs.STRING, DialogueTemplate::start,
-            PacketCodecs.BOOLEAN, DialogueTemplate::unskippable,
-            PacketCodecs.map(HashMap::new, PacketCodecs.STRING, DialogueState.PACKET_CODEC), DialogueTemplate::states,
-            PacketCodecs.map(HashMap::new, PacketCodecs.STRING, DialogueIllustrationType.PACKET_CODEC), DialogueTemplate::illustrations,
+    public static final StreamCodec<RegistryFriendlyByteBuf, DialogueTemplate> PACKET_CODEC = StreamCodec.composite(
+            ByteBufCodecs.optional(ComponentSerialization.TRUSTED_CONTEXT_FREE_STREAM_CODEC), DialogueTemplate::name,
+            ByteBufCodecs.STRING_UTF8, DialogueTemplate::start,
+            ByteBufCodecs.BOOL, DialogueTemplate::unskippable,
+            ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, DialogueState.PACKET_CODEC), DialogueTemplate::states,
+            ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, DialogueIllustrationType.PACKET_CODEC), DialogueTemplate::illustrations,
             DialogueLayoutType.PACKET_CODEC, DialogueTemplate::layout,
             DialogueTemplate::new
     );
 
-    public DialogueTemplate parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueTemplate parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
         Map<String, DialogueState> parsedStates = new HashMap<>(states().size());
 
         for (Map.Entry<String, DialogueState> state : states().entrySet()) {
@@ -77,7 +77,7 @@ public record DialogueTemplate(
             parsedIllustrations.put(illustration.getKey(), illustration.getValue().parseText(source, sender));
         }
 
-        @SuppressWarnings("unchecked") Optional<Text> parsedName = (Optional<Text>) (Optional<?>) Texts.parse(source, name, sender, 0);
+        @SuppressWarnings("unchecked") Optional<Component> parsedName = (Optional<Component>) (Optional<?>) ComponentUtils.updateForEntity(source, name, sender, 0);
 
         return new DialogueTemplate(
                 parsedName,

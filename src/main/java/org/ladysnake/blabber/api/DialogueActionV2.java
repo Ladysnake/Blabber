@@ -17,9 +17,9 @@
  */
 package org.ladysnake.blabber.api;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -33,7 +33,7 @@ public interface DialogueActionV2 {
      *
      * @param player the player executing the action
      * @param interlocutor the entity with which the player is conversing, if any
-     * @see org.ladysnake.blabber.Blabber#startDialogue(ServerPlayerEntity, Identifier, Entity)
+     * @see org.ladysnake.blabber.Blabber#startDialogue(ServerPlayer, Identifier, Entity)
      */
-    void handle(ServerPlayerEntity player, @Nullable Entity interlocutor);
+    void handle(ServerPlayer player, @Nullable Entity interlocutor);
 }

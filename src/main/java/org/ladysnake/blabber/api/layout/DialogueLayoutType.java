@@ -20,29 +20,29 @@ package org.ladysnake.blabber.api.layout;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
 import org.jetbrains.annotations.ApiStatus;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
 
 @ApiStatus.Experimental
 public class DialogueLayoutType<P extends DialogueLayout.Params> {
-    public static final Codec<DialogueLayout<?>> CODEC = BlabberRegistrar.LAYOUT_REGISTRY.getCodec().dispatch(
+    public static final Codec<DialogueLayout<?>> CODEC = BlabberRegistrar.LAYOUT_REGISTRY.byNameCodec().dispatch(
             "type", DialogueLayout::type, DialogueLayoutType::getCodec
     );
-    public static final PacketCodec<RegistryByteBuf, DialogueLayout<?>> PACKET_CODEC = PacketCodecs.registryValue(BlabberRegistrar.LAYOUT_REGISTRY_KEY).dispatch(
+    public static final StreamCodec<RegistryFriendlyByteBuf, DialogueLayout<?>> PACKET_CODEC = ByteBufCodecs.registry(BlabberRegistrar.LAYOUT_REGISTRY_KEY).dispatch(
             DialogueLayout::type, DialogueLayoutType::getPacketCodec
     );
 
     private final MapCodec<DialogueLayout<P>> codec;
-    private final PacketCodec<? super RegistryByteBuf, DialogueLayout<P>> packetCodec;
+    private final StreamCodec<? super RegistryFriendlyByteBuf, DialogueLayout<P>> packetCodec;
 
-    public DialogueLayoutType(Codec<P> paramsCodec, PacketCodec<? super RegistryByteBuf, P> paramsPacketCodec, P defaultParams) {
+    public DialogueLayoutType(Codec<P> paramsCodec, StreamCodec<? super RegistryFriendlyByteBuf, P> paramsPacketCodec, P defaultParams) {
         this.codec = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 paramsCodec.optionalFieldOf("params", defaultParams).forGetter(DialogueLayout::params)
         ).apply(instance, p -> new DialogueLayout<>(this, p)));
-        this.packetCodec = paramsPacketCodec.xmap(p -> new DialogueLayout<>(this, p), DialogueLayout::params);
+        this.packetCodec = paramsPacketCodec.map(p -> new DialogueLayout<>(this, p), DialogueLayout::params);
     }
 
     /**
@@ -52,7 +52,7 @@ public class DialogueLayoutType<P extends DialogueLayout.Params> {
         return codec;
     }
 
-    public PacketCodec<? super RegistryByteBuf, DialogueLayout<P>> getPacketCodec() {
+    public StreamCodec<? super RegistryFriendlyByteBuf, DialogueLayout<P>> getPacketCodec() {
         return packetCodec;
     }
 }

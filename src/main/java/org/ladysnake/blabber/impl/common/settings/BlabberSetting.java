@@ -18,15 +18,15 @@
 package org.ladysnake.blabber.impl.common.settings;
 
 import com.mojang.serialization.Codec;
-import net.minecraft.util.StringIdentifiable;
+import net.minecraft.util.StringRepresentable;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public enum BlabberSetting implements StringIdentifiable {
+public enum BlabberSetting implements StringRepresentable {
     DEBUG_ANCHORS("debug.anchors");
-    public static final Codec<BlabberSetting> CODEC = StringIdentifiable.createBasicCodec(BlabberSetting::values);
+    public static final Codec<BlabberSetting> CODEC = StringRepresentable.fromValues(BlabberSetting::values);
     private static final Map<String, BlabberSetting> index = new HashMap<>();
 
     static {
@@ -50,7 +50,7 @@ public enum BlabberSetting implements StringIdentifiable {
     }
 
     @Override
-    public String asString() {
+    public String getSerializedName() {
         return this.id;
     }
 }

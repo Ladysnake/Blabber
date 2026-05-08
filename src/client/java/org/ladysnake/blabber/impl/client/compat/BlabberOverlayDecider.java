@@ -18,8 +18,8 @@
 package org.ladysnake.blabber.impl.client.compat;
 
 import me.shedaniel.rei.api.client.registry.screen.OverlayDecider;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.util.ActionResult;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.world.InteractionResult;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 
 public class BlabberOverlayDecider implements OverlayDecider {
@@ -29,7 +29,7 @@ public class BlabberOverlayDecider implements OverlayDecider {
     }
 
     @Override
-    public <R extends Screen> ActionResult shouldScreenBeOverlaid(R screen) {
-        return ActionResult.FAIL;
+    public <R extends Screen> InteractionResult shouldScreenBeOverlaid(R screen) {
+        return InteractionResult.FAIL;
     }
 }

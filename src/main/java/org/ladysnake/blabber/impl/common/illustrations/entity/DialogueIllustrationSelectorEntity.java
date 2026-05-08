@@ -22,15 +22,15 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.command.EntitySelector;
-import net.minecraft.command.EntitySelectorReader;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.world.World;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.arguments.selector.EntitySelector;
+import net.minecraft.commands.arguments.selector.EntitySelectorParser;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
@@ -42,9 +42,9 @@ import java.util.Optional;
 
 public class DialogueIllustrationSelectorEntity implements DialogueIllustrationEntity {
     public static final MapCodec<DialogueIllustrationSelectorEntity> CODEC = Spec.CODEC.xmap(DialogueIllustrationSelectorEntity::new, DialogueIllustrationSelectorEntity::spec);
-    public static final PacketCodec<PacketByteBuf, DialogueIllustrationSelectorEntity> PACKET_CODEC = PacketCodec.tuple(
+    public static final StreamCodec<FriendlyByteBuf, DialogueIllustrationSelectorEntity> PACKET_CODEC = StreamCodec.composite(
             Spec.PACKET_CODEC, DialogueIllustrationSelectorEntity::spec,
-            PacketCodecs.VAR_INT, i -> i.selectedEntityId,
+            ByteBufCodecs.VAR_INT, i -> i.selectedEntityId,
             DialogueIllustrationSelectorEntity::new
     );
 
@@ -67,9 +67,9 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustrationE
         this.selectedEntityId = selectedEntityId;
     }
 
-    public LivingEntity getSelectedEntity(World world) {
+    public LivingEntity getSelectedEntity(Level world) {
         if (this.selectedEntityId == -1) return null; // shortcut
-        Entity e = world.getEntityById(this.selectedEntityId);
+        Entity e = world.getEntity(this.selectedEntityId);
         return e instanceof LivingEntity living ? living : null;
     }
 
@@ -123,10 +123,10 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustrationE
     }
 
     @Override
-    public DialogueIllustrationSelectorEntity parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueIllustrationSelectorEntity parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
         if (source != null) {
-            EntitySelector entitySelector = new EntitySelectorReader(new StringReader(spec().selector()), true).read();
-            Entity e = entitySelector.getEntity(source);
+            EntitySelector entitySelector = new EntitySelectorParser(new StringReader(spec().selector()), true).parse();
+            Entity e = entitySelector.findSingleEntity(source);
             if (e instanceof LivingEntity living) {
                 this.selectedEntityId = living.getId();
             }
@@ -167,15 +167,15 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustrationE
                 StareTarget.CODEC.optionalFieldOf("stare_at", StareTarget.FOLLOW_MOUSE).forGetter(Spec::stareAt)
         ).apply(instance, Spec::new));
         public static final MapCodec<Spec> CODEC = EitherMapCodec.alternatively(CODEC_V0, CODEC_V1);
-        public static final PacketCodec<PacketByteBuf, Spec> PACKET_CODEC = MorePacketCodecs.tuple(
-                PacketCodecs.STRING, Spec::selector,
+        public static final StreamCodec<FriendlyByteBuf, Spec> PACKET_CODEC = MorePacketCodecs.tuple(
+                ByteBufCodecs.STRING_UTF8, Spec::selector,
                 IllustrationAnchor.PACKET_CODEC, Spec::anchor,
-                PacketCodecs.VAR_INT, Spec::x,
-                PacketCodecs.VAR_INT, Spec::y,
-                PacketCodecs.VAR_INT, Spec::width,
-                PacketCodecs.VAR_INT, Spec::height,
-                PacketCodecs.VAR_INT, Spec::entitySize,
-                PacketCodecs.FLOAT, Spec::yOffset,
+                ByteBufCodecs.VAR_INT, Spec::x,
+                ByteBufCodecs.VAR_INT, Spec::y,
+                ByteBufCodecs.VAR_INT, Spec::width,
+                ByteBufCodecs.VAR_INT, Spec::height,
+                ByteBufCodecs.VAR_INT, Spec::entitySize,
+                ByteBufCodecs.FLOAT, Spec::yOffset,
                 StareTarget.PACKET_CODEC, Spec::stareAt,
                 Spec::new
         );

@@ -17,9 +17,9 @@
  */
 package org.ladysnake.blabber.impl.client;
 
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.text.Text;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Inventory;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
 import org.ladysnake.blabber.api.layout.DefaultLayoutParams;
 import org.ladysnake.blabber.api.layout.Margins;
@@ -32,7 +32,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
     public static final int INSTRUCTIONS_BOTTOM_MARGIN = 6;
     public static final int TEXT_TOP_MARGIN = 12;
 
-    public BlabberRpgDialogueScreen(DialogueScreenHandler handler, PlayerInventory inventory, Text title) {
+    public BlabberRpgDialogueScreen(DialogueScreenHandler handler, Inventory inventory, Component title) {
         super(handler, inventory, title);
     }
 
@@ -48,7 +48,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
 
     @Override
     protected DialogueChoiceListWidget createChoiceList() {
-        return new RpgDialogueChoiceListWidget(0, 0, choiceListMaxWidth, 1000, Text.empty(), textRenderer, this::confirmChoice, illustrations);
+        return new RpgDialogueChoiceListWidget(0, 0, choiceListMaxWidth, 1000, Component.empty(), font, this::confirmChoice, illustrations);
     }
 
     @Override
@@ -57,9 +57,9 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
         Margins mainTextMargins = this.params().getMainTextMargins();
         this.choiceListMaxWidth = 170;
         this.mainTextMaxWidth = Math.min(400, this.width) - mainTextMargins.left() - mainTextMargins.right();
-        this.instructionsMinY = this.height - INSTRUCTIONS_BOTTOM_MARGIN - this.textRenderer.getWrappedLinesHeight(instructions, this.width - 5);
+        this.instructionsMinY = this.height - INSTRUCTIONS_BOTTOM_MARGIN - this.font.wordWrapHeight(instructions, this.width - 5);
         this.mainTextMinY = this.height - 60 - mainTextMargins.bottom();
-        this.mainTextMinX = Math.max(mainTextMargins.left(), (this.width / 2) - (Math.min(textRenderer.getWidth(handler.getCurrentText()), mainTextMaxWidth) / 2));
+        this.mainTextMinX = Math.max(mainTextMargins.left(), (this.width / 2) - (Math.min(font.width(menu.getCurrentText()), mainTextMaxWidth) / 2));
         this.illustrationSlots.get(IllustrationAnchor.BEFORE_MAIN_TEXT).set(
                 Math.max(mainTextMargins.left(), (this.width / 2) - (mainTextMaxWidth / 2)),
                 this.height - 60
@@ -88,7 +88,7 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
     }
 
     @Override
-    public void renderInGameBackground(DrawContext context) {
+    public void renderTransparentBackground(GuiGraphics context) {
         ((RpgDialogueChoiceListWidget) this.choiceList).renderWidgetBackground(context);
         // Bottom background
         context.fillGradient(0, this.mainTextMinY - 20, this.width, this.mainTextMinY - TEXT_TOP_MARGIN, 0x00101010, 0xc0101010);

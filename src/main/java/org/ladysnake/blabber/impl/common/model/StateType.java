@@ -17,15 +17,15 @@
  */
 package org.ladysnake.blabber.impl.common.model;
 
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
 
 public enum StateType {
     DEFAULT(true), END_DIALOGUE(false), ASK_CONFIRMATION(false);
 
-    public static final PacketCodec<PacketByteBuf, StateType> PACKET_CODEC = PacketCodec.ofStatic(
-            PacketByteBuf::writeEnumConstant,
-            buf -> buf.readEnumConstant(StateType.class)
+    public static final StreamCodec<FriendlyByteBuf, StateType> PACKET_CODEC = StreamCodec.of(
+            FriendlyByteBuf::writeEnum,
+            buf -> buf.readEnum(StateType.class)
     );
 
     private final boolean allowsIllustrations;

@@ -17,8 +17,8 @@
  */
 package org.ladysnake.blabber.impl.mixin.client;
 
-import net.minecraft.client.gui.ScreenRect;
-import net.minecraft.client.gui.render.state.ItemGuiElementRenderState;
+import net.minecraft.client.gui.navigation.ScreenRectangle;
+import net.minecraft.client.gui.render.state.GuiItemRenderState;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.client.illustrations.ItemIllustrationRenderer;
 import org.spongepowered.asm.mixin.Final;
@@ -27,10 +27,10 @@ import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 
-@Mixin(ItemGuiElementRenderState.class)
-public class ItemGuiElementRenderStateMixin implements ItemIllustrationRenderer.RenderStateHooks {
+@Mixin(GuiItemRenderState.class)
+public class GuiItemRenderStateMixin implements ItemIllustrationRenderer.RenderStateHooks {
     @Shadow @Final @Mutable
-    private @Nullable ScreenRect bounds;
+    private @Nullable ScreenRectangle bounds;
     @Unique
     private float blabber$itemScale = 1;
 
@@ -38,7 +38,7 @@ public class ItemGuiElementRenderStateMixin implements ItemIllustrationRenderer.
     public void blabber$setItemScale(float itemScale) {
         this.blabber$itemScale = itemScale;
         if (this.bounds != null) {
-            this.bounds = new ScreenRect(this.bounds.position(), Math.round(this.bounds.width() * itemScale), Math.round(this.bounds.height() * itemScale));
+            this.bounds = new ScreenRectangle(this.bounds.position(), Math.round(this.bounds.width() * itemScale), Math.round(this.bounds.height() * itemScale));
         }
     }
 

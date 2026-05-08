@@ -18,9 +18,9 @@
 package org.ladysnake.babblings.tests;
 
 import net.fabricmc.fabric.api.gametest.v1.GameTest;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.test.TestContext;
-import net.minecraft.util.Identifier;
+import net.minecraft.gametest.framework.GameTestHelper;
+import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerPlayer;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.DialogueRegistry;
 import org.ladysnake.blabber.impl.common.DialogueScreenHandler;
@@ -29,58 +29,58 @@ import java.util.Set;
 
 public final class BlabberTestSuite {
     @GameTest
-    public void nominal(TestContext ctx) {
-        ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
-        Blabber.startDialogue(player, Identifier.of("babblings:remnant_choice"));
-        ctx.assertTrue("startDialogue should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentStateKey().equals("introduction") && handler.getAvailableChoices().size() == 3);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        ctx.assertTrue("choice 0 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 420);
-        ctx.assertTrue("choice 420 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        ctx.assertTrue("choice 1 should work", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("interested") && handler.getAvailableChoices().size() == 2);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        ctx.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
-        ctx.complete();
+    public void nominal(GameTestHelper ctx) {
+        ServerPlayer player = ctx.spawnServerPlayer(2, 2, 2);
+        Blabber.startDialogue(player, Identifier.parse("babblings:remnant_choice"));
+        ctx.assertTrue("startDialogue should work", player.containerMenu instanceof DialogueScreenHandler handler && handler.isUnskippable() && handler.getCurrentStateKey().equals("introduction") && handler.getAvailableChoices().size() == 3);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 0);
+        ctx.assertTrue("choice 0 should work", player.containerMenu instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 420);
+        ctx.assertTrue("choice 420 should be ignored", player.containerMenu instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("explanation") && handler.getAvailableChoices().size() == 1);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 0);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 1);
+        ctx.assertTrue("choice 1 should work", player.containerMenu instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("interested") && handler.getAvailableChoices().size() == 2);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 1);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 1);
+        ctx.assertTrue("dialogue should end", player.containerMenu == player.inventoryMenu);
+        ctx.succeed();
     }
 
     @GameTest
-    public void registryGetsPopulated(TestContext ctx) {
+    public void registryGetsPopulated(GameTestHelper ctx) {
         ctx.assertTrue("dialogue registry should match expected state (was " + DialogueRegistry.getIds() + ")",
                 DialogueRegistry.getIds().equals(Set.of(
-                        Identifier.of("babblings:illustration_tests"),
-                        Identifier.of("babblings:mountain_king"),
-                        Identifier.of("babblings:perception_check"),
-                        Identifier.of("babblings:remnant_choice"),
-                        Identifier.of("babblings:rpg_layout_gametest")
+                        Identifier.parse("babblings:illustration_tests"),
+                        Identifier.parse("babblings:mountain_king"),
+                        Identifier.parse("babblings:perception_check"),
+                        Identifier.parse("babblings:remnant_choice"),
+                        Identifier.parse("babblings:rpg_layout_gametest")
                     )
                 ));
-        ctx.complete();
+        ctx.succeed();
     }
 
     @GameTest
-    public void availableChoicesCanGetSelected(TestContext ctx) {
-        ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
-        Blabber.startDialogue(player, Identifier.of("babblings:mountain_king"), player);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        ctx.assertTrue("dialogue should end", player.currentScreenHandler == player.playerScreenHandler);
-        ctx.complete();
+    public void availableChoicesCanGetSelected(GameTestHelper ctx) {
+        ServerPlayer player = ctx.spawnServerPlayer(2, 2, 2);
+        Blabber.startDialogue(player, Identifier.parse("babblings:mountain_king"), player);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 1);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 0);
+        ctx.assertTrue("dialogue should end", player.containerMenu == player.inventoryMenu);
+        ctx.succeed();
     }
 
     @GameTest
-    public void unavailableChoicesCannotGetSelected(TestContext ctx) {
-        ServerPlayerEntity player = ctx.spawnServerPlayer(2, 2, 2);
+    public void unavailableChoicesCannotGetSelected(GameTestHelper ctx) {
+        ServerPlayer player = ctx.spawnServerPlayer(2, 2, 2);
         player.setHealth(10f);
-        Blabber.startDialogue(player, Identifier.of("babblings:mountain_king"), player);
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 1);
-        ctx.assertTrue("dialogue should be at state bargain", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 0);
-        ctx.assertTrue("unavailable choice 0 should be ignored", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
-        ((DialogueScreenHandler) player.currentScreenHandler).makeChoice(player, 2);
-        ctx.assertTrue("dialogue should be at state friendship", player.currentScreenHandler instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("friendship"));
-        ctx.complete();
+        Blabber.startDialogue(player, Identifier.parse("babblings:mountain_king"), player);
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 1);
+        ctx.assertTrue("dialogue should be at state bargain", player.containerMenu instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 0);
+        ctx.assertTrue("unavailable choice 0 should be ignored", player.containerMenu instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("bargain"));
+        ((DialogueScreenHandler) player.containerMenu).makeChoice(player, 2);
+        ctx.assertTrue("dialogue should be at state friendship", player.containerMenu instanceof DialogueScreenHandler handler && handler.getCurrentStateKey().equals("friendship"));
+        ctx.succeed();
     }
 }

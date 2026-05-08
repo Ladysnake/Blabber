@@ -19,37 +19,37 @@ package org.ladysnake.blabber.impl.client.widgets;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.font.Alignment;
-import net.minecraft.client.font.MultilineText;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.Click;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
-import net.minecraft.client.gui.screen.narration.NarrationPart;
-import net.minecraft.client.gui.widget.ScrollableWidget;
-import net.minecraft.client.input.KeyInput;
-import net.minecraft.client.sound.SoundManager;
-import net.minecraft.text.Text;
-import net.minecraft.util.CachedMapper;
-import net.minecraft.util.Colors;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.TextAlignment;
+import net.minecraft.client.gui.components.AbstractScrollArea;
+import net.minecraft.client.gui.components.MultiLineLabel;
+import net.minecraft.client.gui.narration.NarratedElementType;
+import net.minecraft.client.gui.narration.NarrationElementOutput;
+import net.minecraft.client.input.KeyEvent;
+import net.minecraft.client.input.MouseButtonEvent;
+import net.minecraft.client.sounds.SoundManager;
+import net.minecraft.network.chat.Component;
+import net.minecraft.util.CommonColors;
+import net.minecraft.util.SingleKeyCache;
 import net.minecraft.util.Util;
 import org.lwjgl.glfw.GLFW;
 
 /**
  * A piece of text in a dialogue that can be scrolled through and narrated
  */
-public class DialogueTextWidget extends ScrollableWidget {
+public class DialogueTextWidget extends AbstractScrollArea {
     public static final int LINE_HEIGHT = 9;
     private int maxRows;
     private int textMargin = 1;
-    private int textColor = Colors.WHITE;
-    private final CachedMapper<CacheKey, MultilineText> typesetter;
+    private int textColor = CommonColors.WHITE;
+    private final SingleKeyCache<CacheKey, MultiLineLabel> typesetter;
 
-    public DialogueTextWidget(int x, int y, int width, int rows, Text message, TextRenderer textRenderer) {
+    public DialogueTextWidget(int x, int y, int width, int rows, Component message, Font textRenderer) {
         super(x, y, width, rows * LINE_HEIGHT, message);
         this.maxRows = rows;
-        this.typesetter = Util.cachedMapper(
-                cacheKey -> MultilineText.create(textRenderer, cacheKey.maxWidth, cacheKey.message)
+        this.typesetter = Util.singleKeyCache(
+                cacheKey -> MultiLineLabel.create(textRenderer, cacheKey.maxWidth, cacheKey.message)
         );
     }
 
@@ -58,9 +58,9 @@ public class DialogueTextWidget extends ScrollableWidget {
     }
 
     @Override
-    public void setMessage(Text message) {
+    public void setMessage(Component message) {
         super.setMessage(message);
-        this.setScrollY(this.getScrollY());
+        this.setScrollAmount(this.scrollAmount());
     }
 
     public int getTextColor() {
@@ -88,19 +88,19 @@ public class DialogueTextWidget extends ScrollableWidget {
     }
 
     @Override
-    public boolean mouseClicked(Click click, boolean doubled) {
-        boolean scrollbarDragged = this.checkScrollbarDragged(click);
+    public boolean mouseClicked(MouseButtonEvent click, boolean doubled) {
+        boolean scrollbarDragged = this.updateScrolling(click);
         return super.mouseClicked(click, doubled) || scrollbarDragged;
     }
 
     @Override
-    public boolean keyPressed(KeyInput input) {
+    public boolean keyPressed(KeyEvent input) {
         boolean up = input.key() == GLFW.GLFW_KEY_UP;
         boolean down = input.key() == GLFW.GLFW_KEY_DOWN;
         if (up || down) {
-            double prevScrollY = this.getScrollY();
-            this.setScrollY(prevScrollY + (up ? -1 : 1) * this.getDeltaYPerScroll());
-            if (prevScrollY != this.getScrollY()) {
+            double prevScrollY = this.scrollAmount();
+            this.setScrollAmount(prevScrollY + (up ? -1 : 1) * this.scrollRate());
+            if (prevScrollY != this.scrollAmount()) {
                 return true;
             }
         }
@@ -109,39 +109,39 @@ public class DialogueTextWidget extends ScrollableWidget {
     }
 
     @Override
-    public int getContentsHeightWithPadding() {
+    public int contentHeight() {
         return this.getTypesetText().getLineCount() * LINE_HEIGHT;
     }
 
     @Override
-    protected double getDeltaYPerScroll() {
+    protected double scrollRate() {
         return LINE_HEIGHT;
     }
 
     @Override
-    protected void renderWidget(DrawContext context, int mouseX, int mouseY, float deltaTicks) {
+    protected void renderWidget(GuiGraphics context, int mouseX, int mouseY, float deltaTicks) {
         context.enableScissor(this.getX() + 1, this.getY() + 1, this.getX() + this.width - 1, this.getY() + this.height - 1);
-        context.getMatrices().pushMatrix();
-        context.getMatrices().translate(this.textMargin, (float)(this.textMargin - this.getScrollY()));
+        context.pose().pushMatrix();
+        context.pose().translate(this.textMargin, (float)(this.textMargin - this.scrollAmount()));
         renderContents(context);
-        context.getMatrices().popMatrix();
+        context.pose().popMatrix();
         context.disableScissor();
-        this.drawScrollbar(context, mouseX, mouseY);
+        this.renderScrollbar(context, mouseX, mouseY);
     }
 
-    private void renderContents(DrawContext context) {
-        MultilineText multilineText = this.getTypesetText();
+    private void renderContents(GuiGraphics context) {
+        MultiLineLabel multilineText = this.getTypesetText();
         int x = this.getX();
         int y = this.getY();
-        multilineText.draw(Alignment.LEFT, x, y, LINE_HEIGHT, context.getTextConsumer(
-                DrawContext.HoverType.TOOLTIP_ONLY,
+        multilineText.visitLines(TextAlignment.LEFT, x, y, LINE_HEIGHT, context.textRenderer(
+                GuiGraphics.HoveredTextEffects.TOOLTIP_ONLY,
                 style -> style.withColor(this.getTextColor())
         ));
     }
 
     @Override
-    protected void appendClickableNarrations(NarrationMessageBuilder builder) {
-        builder.put(NarrationPart.TITLE, this.getMessage());
+    protected void updateWidgetNarration(NarrationElementOutput builder) {
+        builder.add(NarratedElementType.TITLE, this.getMessage());
     }
 
     @Override
@@ -149,10 +149,10 @@ public class DialogueTextWidget extends ScrollableWidget {
         // NO-OP
     }
 
-    private MultilineText getTypesetText() {
-        return this.typesetter.map(new CacheKey(this.getMessage(), this.width - this.textMargin - SCROLLBAR_WIDTH, this.maxRows));
+    private MultiLineLabel getTypesetText() {
+        return this.typesetter.getValue(new CacheKey(this.getMessage(), this.width - this.textMargin - SCROLLBAR_WIDTH, this.maxRows));
     }
 
     @Environment(EnvType.CLIENT)
-    record CacheKey(Text message, int maxWidth, int maxRows) { }
+    record CacheKey(Component message, int maxWidth, int maxRows) { }
 }

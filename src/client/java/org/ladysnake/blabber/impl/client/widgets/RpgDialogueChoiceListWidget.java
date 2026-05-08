@@ -18,22 +18,22 @@
 package org.ladysnake.blabber.impl.client.widgets;
 
 import com.google.common.collect.ImmutableList;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gl.RenderPipelines;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.text.Text;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Matrix3x2f;
 import org.ladysnake.blabber.api.client.illustration.IllustrationContainer;
 import org.ladysnake.blabber.impl.client.HorizontalGradientGuiElementRenderState;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.StateType;
-import org.ladysnake.blabber.impl.mixin.client.DrawContextAccessor;
+import org.ladysnake.blabber.impl.mixin.client.GuiGraphicsAccessor;
 
 import java.util.function.IntFunction;
 
 public class RpgDialogueChoiceListWidget extends DialogueChoiceListWidget {
-    public RpgDialogueChoiceListWidget(int x, int y, int width, int height, Text message, TextRenderer textRenderer, IntFunction<@Nullable StateType> confirmChoice, IllustrationContainer illustrations) {
+    public RpgDialogueChoiceListWidget(int x, int y, int width, int height, Component message, Font textRenderer, IntFunction<@Nullable StateType> confirmChoice, IllustrationContainer illustrations) {
         super(x, y, width, height, message, textRenderer, confirmChoice, illustrations);
     }
 
@@ -46,22 +46,22 @@ public class RpgDialogueChoiceListWidget extends DialogueChoiceListWidget {
         return mouseX >= this.getX() && mouseX < (this.getX() + this.getWidth()) && mouseY > choiceY && mouseY < choiceY + choiceHeight;
     }
 
-    public void renderWidgetBackground(DrawContext context) {
+    public void renderWidgetBackground(GuiGraphics context) {
         int y = this.getY() + this.topMargin / 2;
         ImmutableList<AvailableChoice> availableChoices = this.getChoices();
         for (int i = 0; i < availableChoices.size(); i++) {
             AvailableChoice choice = availableChoices.get(i);
-            int strHeight = this.textRenderer.getWrappedLinesHeight(choice.text(), this.computeTextWidth());
+            int strHeight = this.textRenderer.wordWrapHeight(choice.text(), this.computeTextWidth());
             fillHorizontalGradient(context, this.getX() + this.selectionIconSize + this.selectionIconGap - 2, y, this.getX() + this.width, y + strHeight, 0xc0101010, 0x80101010);
-            if (i == selectedChoice) this.selectionIconMarginTop = ((strHeight - textRenderer.fontHeight) / 2) - 4;
+            if (i == selectedChoice) this.selectionIconMarginTop = ((strHeight - textRenderer.lineHeight) / 2) - 4;
             y += strHeight + getGap();
         }
     }
 
-    public static void fillHorizontalGradient(DrawContext context, int startX, int startY, int endX, int endY, int colorStart, int colorEnd) {
-        ((DrawContextAccessor) context).getState().addSimpleElement(
+    public static void fillHorizontalGradient(GuiGraphics context, int startX, int startY, int endX, int endY, int colorStart, int colorEnd) {
+        ((GuiGraphicsAccessor) context).getGuiRenderState().submitGuiElement(
                 new HorizontalGradientGuiElementRenderState(
-                        RenderPipelines.GUI, new Matrix3x2f(context.getMatrices()), startX, startY, endX, endY, colorStart, colorEnd, null
+                        RenderPipelines.GUI, new Matrix3x2f(context.pose()), startX, startY, endX, endY, colorStart, colorEnd, null
                 )
         );
     }

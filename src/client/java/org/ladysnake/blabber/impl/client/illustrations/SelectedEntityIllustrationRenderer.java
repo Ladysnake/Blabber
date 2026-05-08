@@ -17,8 +17,8 @@
  */
 package org.ladysnake.blabber.impl.client.illustrations;
 
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.world.World;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.illustrations.entity.DialogueIllustrationSelectorEntity;
 
@@ -28,7 +28,7 @@ public class SelectedEntityIllustrationRenderer extends EntityIllustrationRender
     }
 
     @Override
-    protected @Nullable LivingEntity getRenderedEntity(World world) {
+    protected @Nullable LivingEntity getRenderedEntity(Level world) {
         return this.illustration.getSelectedEntity(world);
     }
 }

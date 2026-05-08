@@ -20,17 +20,16 @@ package org.ladysnake.blabber.impl.common;
 import com.google.common.base.Preconditions;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.loot.context.LootContext;
-import net.minecraft.loot.context.LootContextParameters;
-import net.minecraft.loot.context.LootContextTypes;
-import net.minecraft.loot.context.LootWorldContext;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.storage.ReadView;
-import net.minecraft.storage.WriteView;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.Uuids;
+import net.minecraft.core.UUIDUtil;
+import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.actions.CommandDialogueAction;
@@ -47,17 +46,17 @@ import java.util.UUID;
 public final class PlayerDialogueTracker implements ServerTickingComponent {
     public static final ComponentKey<PlayerDialogueTracker> KEY = ComponentRegistry.getOrCreate(Blabber.id("dialogue_tracker"), PlayerDialogueTracker.class);
 
-    private final PlayerEntity player;
+    private final Player player;
     private @Nullable DialogueStateMachine currentDialogue;
     private @Nullable Entity interlocutor;
     private @Nullable DeserializedState deserializedState;
     private int resumptionAttempts = 0;
 
-    public PlayerDialogueTracker(PlayerEntity player) {
+    public PlayerDialogueTracker(Player player) {
         this.player = player;
     }
 
-    public static PlayerDialogueTracker get(PlayerEntity player) {
+    public static PlayerDialogueTracker get(Player player) {
         return KEY.get(player);
     }
 
@@ -70,7 +69,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
                 template.start(),
                 interlocutor
         );
-        currentDialogue.getStartAction().ifPresent(a -> a.action().handle((ServerPlayerEntity) this.player, interlocutor));
+        currentDialogue.getStartAction().ifPresent(a -> a.action().handle((ServerPlayer) this.player, interlocutor));
     }
 
     private DialogueStateMachine startDialogue0(Identifier id, DialogueTemplate template, @Nullable String start, @Nullable Entity interlocutor) throws CommandSyntaxException {
@@ -87,7 +86,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     private DialogueStateMachine prepareDialogue(Identifier id, DialogueTemplate template, @Nullable String start) throws CommandSyntaxException {
-        ServerPlayerEntity serverPlayer = ((ServerPlayerEntity) this.player);
+        ServerPlayer serverPlayer = ((ServerPlayer) this.player);
         DialogueTemplate parsedTemplate = template.parseText(CommandDialogueAction.getSource(serverPlayer), serverPlayer);
         DialogueStateMachine currentDialogue = new DialogueStateMachine(id, parsedTemplate, start);
         this.updateConditions(serverPlayer, currentDialogue);
@@ -98,8 +97,8 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         this.currentDialogue = null;
         this.interlocutor = null;
 
-        if (this.player instanceof ServerPlayerEntity sp && this.player.currentScreenHandler instanceof DialogueScreenHandler) {
-            sp.closeHandledScreen();
+        if (this.player instanceof ServerPlayer sp && this.player.containerMenu instanceof DialogueScreenHandler) {
+            sp.closeContainer();
         }
     }
 
@@ -128,23 +127,23 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     }
 
     @Override
-    public void readData(ReadView readView) {
-        readView.getOptionalString("current_dialogue_id").map(Identifier::tryParse).ifPresent(dialogueId ->
+    public void readData(ValueInput readView) {
+        readView.getString("current_dialogue_id").map(Identifier::tryParse).ifPresent(dialogueId ->
             DialogueRegistry.getOrEmpty(dialogueId).ifPresent(dialogueTemplate -> {
-                UUID interlocutorUuid = readView.read("interlocutor", Uuids.INT_STREAM_CODEC).orElse(null);
-                String selectedState = readView.getString("current_dialogue_state", null);
+                UUID interlocutorUuid = readView.read("interlocutor", UUIDUtil.CODEC).orElse(null);
+                String selectedState = readView.getStringOr("current_dialogue_state", null);
                 this.deserializedState = new DeserializedState(dialogueId, dialogueTemplate, selectedState, interlocutorUuid);
             })
         );
     }
 
     @Override
-    public void writeData(WriteView writeView) {
+    public void writeData(ValueOutput writeView) {
         if (this.currentDialogue != null) {
             writeView.putString("current_dialogue_id", this.currentDialogue.getId().toString());
             writeView.putString("current_dialogue_state", this.currentDialogue.getCurrentStateKey());
             if (this.interlocutor != null) {
-                writeView.put("interlocutor", Uuids.INT_STREAM_CODEC, this.interlocutor.getUuid());
+                writeView.store("interlocutor", UUIDUtil.CODEC, this.interlocutor.getUUID());
             }
         }
     }
@@ -152,12 +151,12 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
     @Override
     public void serverTick() {
         DeserializedState saved = this.deserializedState;
-        ServerPlayerEntity serverPlayer = (ServerPlayerEntity) this.player;
+        ServerPlayer serverPlayer = (ServerPlayer) this.player;
         if (saved != null) {
             if (resumptionAttempts++ < 200) {   // only try for like, 10 seconds after joining the world
                 Entity interlocutor;
                 if (saved.interlocutorUuid() != null) {
-                    interlocutor = serverPlayer.getEntityWorld().getEntity(saved.interlocutorUuid());
+                    interlocutor = serverPlayer.level().getEntity(saved.interlocutorUuid());
                     if (interlocutor == null) return;    // no one to talk to
                 } else {
                     interlocutor = null;
@@ -169,7 +168,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
 
         if (this.currentDialogue != null) {
-            if (this.player.currentScreenHandler == this.player.playerScreenHandler) {
+            if (this.player.containerMenu == this.player.inventoryMenu) {
                 if (this.currentDialogue.isUnskippable()) {
                     this.openDialogueScreen();
                 } else {
@@ -198,21 +197,21 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         }
     }
 
-    private @Nullable ChoiceAvailabilityPayload updateConditions(ServerPlayerEntity player, DialogueStateMachine currentDialogue) throws CommandSyntaxException {
+    private @Nullable ChoiceAvailabilityPayload updateConditions(ServerPlayer player, DialogueStateMachine currentDialogue) throws CommandSyntaxException {
         if (currentDialogue.hasConditions()) {
             return currentDialogue.updateConditions(new LootContext.Builder(
-                    new LootWorldContext.Builder(player.getEntityWorld())
-                            .add(LootContextParameters.ORIGIN, player.getEntityPos())
-                            .addOptional(LootContextParameters.THIS_ENTITY, player)
-                            .build(LootContextTypes.COMMAND)
-            ).build(Optional.empty()));
+                    new net.minecraft.world.level.storage.loot.LootParams.Builder(player.level())
+                            .withParameter(LootContextParams.ORIGIN, player.position())
+                            .withOptionalParameter(LootContextParams.THIS_ENTITY, player)
+                            .create(LootContextParamSets.COMMAND)
+            ).create(Optional.empty()));
         }
         return null;
     }
 
     private void openDialogueScreen() {
         Preconditions.checkState(this.currentDialogue != null);
-        this.player.openHandledScreen(new DialogueScreenHandlerFactory(this.currentDialogue, this.interlocutor));
+        this.player.openMenu(new DialogueScreenHandlerFactory(this.currentDialogue, this.interlocutor));
     }
 
     private record DeserializedState(Identifier dialogueId, DialogueTemplate template, String selectedState, @Nullable UUID interlocutorUuid) { }

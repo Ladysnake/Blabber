@@ -20,30 +20,30 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.loot.condition.LootCondition;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 
-public record DialogueChoiceCondition(RegistryKey<LootCondition> predicate, UnavailableAction whenUnavailable) {
-    public static final RegistryKey<LootCondition> DUMMY_CONDITION = RegistryKey.of(RegistryKeys.PREDICATE, Blabber.id("client_dummy"));
+public record DialogueChoiceCondition(ResourceKey<LootItemCondition> predicate, UnavailableAction whenUnavailable) {
+    public static final ResourceKey<LootItemCondition> DUMMY_CONDITION = ResourceKey.create(Registries.PREDICATE, Blabber.id("client_dummy"));
     public static final Codec<DialogueChoiceCondition> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            RegistryKey.createCodec(RegistryKeys.PREDICATE).fieldOf("predicate").forGetter(DialogueChoiceCondition::predicate),
+            ResourceKey.codec(Registries.PREDICATE).fieldOf("predicate").forGetter(DialogueChoiceCondition::predicate),
             UnavailableAction.CODEC.fieldOf("when_unavailable").forGetter(DialogueChoiceCondition::whenUnavailable)
     ).apply(instance, DialogueChoiceCondition::new));
-    public static final PacketCodec<PacketByteBuf, DialogueChoiceCondition> PACKET_CODEC = PacketCodec.tuple(
+    public static final StreamCodec<FriendlyByteBuf, DialogueChoiceCondition> PACKET_CODEC = StreamCodec.composite(
             // Not writing the condition, it is handled serverside
-            PacketCodec.of((value, buf) -> {}, buf -> DUMMY_CONDITION), DialogueChoiceCondition::predicate,
+            StreamCodec.ofMember((value, buf) -> {}, buf -> DUMMY_CONDITION), DialogueChoiceCondition::predicate,
             UnavailableAction.PACKET_CODEC, DialogueChoiceCondition::whenUnavailable,
             DialogueChoiceCondition::new
     );
 
-    public DialogueChoiceCondition parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueChoiceCondition parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
         return new DialogueChoiceCondition(
                 predicate(),
                 whenUnavailable().parseText(source, sender)

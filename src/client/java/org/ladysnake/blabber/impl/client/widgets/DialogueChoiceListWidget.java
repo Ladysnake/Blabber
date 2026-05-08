@@ -18,20 +18,20 @@
 package org.ladysnake.blabber.impl.client.widgets;
 
 import com.google.common.collect.ImmutableList;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gl.RenderPipelines;
-import net.minecraft.client.gui.Click;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
-import net.minecraft.client.gui.screen.narration.NarrationPart;
-import net.minecraft.client.gui.widget.ScrollableWidget;
-import net.minecraft.client.input.KeyInput;
-import net.minecraft.client.option.GameOptions;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.math.ColorHelper;
-import net.minecraft.util.math.MathHelper;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.Options;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.AbstractScrollArea;
+import net.minecraft.client.gui.narration.NarratedElementType;
+import net.minecraft.client.gui.narration.NarrationElementOutput;
+import net.minecraft.client.input.KeyEvent;
+import net.minecraft.client.input.MouseButtonEvent;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.util.ARGB;
+import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.client.illustration.IllustrationContainer;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
@@ -46,8 +46,8 @@ import java.util.function.IntFunction;
 import static org.ladysnake.blabber.api.client.BlabberDialogueScreen.DIALOGUE_ARROWS;
 import static org.ladysnake.blabber.api.client.BlabberDialogueScreen.DIALOGUE_LOCKS;
 
-public class DialogueChoiceListWidget extends ScrollableWidget {
-    protected final TextRenderer textRenderer;
+public class DialogueChoiceListWidget extends AbstractScrollArea {
+    protected final Font textRenderer;
     private ImmutableList<AvailableChoice> choices = ImmutableList.of();
     private final IntFunction<@Nullable StateType> confirmChoice;
     protected int selectedChoice;
@@ -72,7 +72,7 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
     private final PositionTransform positionTransform = new PositionTransform(new EnumMap<>(IllustrationAnchor.class));
     protected final IllustrationContainer illustrations;
 
-    public DialogueChoiceListWidget(int x, int y, int width, int height, Text message, TextRenderer textRenderer, IntFunction<@Nullable StateType> confirmChoice, IllustrationContainer illustrations) {
+    public DialogueChoiceListWidget(int x, int y, int width, int height, Component message, Font textRenderer, IntFunction<@Nullable StateType> confirmChoice, IllustrationContainer illustrations) {
         super(x, y, width, height, message);
         this.textRenderer = textRenderer;
         this.confirmChoice = confirmChoice;
@@ -150,9 +150,9 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
     public void mouseMoved(double mouseX, double mouseY) {
         int y = this.getY() + this.topMargin;
         for (int i = 0; i < choices.size(); i++) {
-            Text choice = choices.get(i).text();
-            int strHeight = this.textRenderer.getWrappedLinesHeight(choice, this.computeTextWidth());
-            int strWidth = strHeight == textRenderer.fontHeight ? this.textRenderer.getWidth(choice) : this.computeTextWidth();
+            Component choice = choices.get(i).text();
+            int strHeight = this.textRenderer.wordWrapHeight(choice, this.computeTextWidth());
+            int strWidth = strHeight == textRenderer.lineHeight ? this.textRenderer.width(choice) : this.computeTextWidth();
             if (this.shouldSelectChoice(mouseX, mouseY, y, strHeight, strWidth)) {
                 this.selectedChoice = i;
                 this.hoveringChoice = true;
@@ -185,20 +185,20 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
         if (!this.visible) {
             return false;
         } else {
-            this.scrollDialogueChoice(MathHelper.clamp(verticalAmount, -1.0, 1.0));
+            this.scrollDialogueChoice(Mth.clamp(verticalAmount, -1.0, 1.0));
             return true;
         }
     }
 
     @Override
-    public boolean keyPressed(KeyInput input) {
-        GameOptions options = MinecraftClient.getInstance().options;
-        if (input.key() == GLFW.GLFW_KEY_ENTER || options.inventoryKey.matchesKey(input)) {
+    public boolean keyPressed(KeyEvent input) {
+        Options options = Minecraft.getInstance().options;
+        if (input.key() == GLFW.GLFW_KEY_ENTER || options.keyInventory.matches(input)) {
             this.confirmChoice(this.selectedChoice);
             return true;
         }
-        boolean down = options.backKey.matchesKey(input);
-        if (down || options.forwardKey.matchesKey(input)) {
+        boolean down = options.keyDown.matches(input);
+        if (down || options.keyUp.matches(input)) {
             scrollDialogueChoice(down ? -1 : 1);
             return true;
         }
@@ -213,7 +213,7 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
     }
 
     @Override
-    public boolean mouseClicked(Click click, boolean doubled) {
+    public boolean mouseClicked(MouseButtonEvent click, boolean doubled) {
         if (hoveringChoice) {
             this.confirmChoice(this.selectedChoice);
             return true;
@@ -222,14 +222,14 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
     }
 
     @Override
-    protected int getContentsHeightWithPadding() {
+    protected int contentHeight() {
         return computeContentHeight();
     }
 
     protected int computeContentHeight() {
         int y = 0;
         for (AvailableChoice choice : getChoices()) {
-            y += textRenderer.getWrappedLinesHeight(choice.text(), computeTextWidth()) + getGap();
+            y += textRenderer.wordWrapHeight(choice.text(), computeTextWidth()) + getGap();
         }
         return y;
     }
@@ -239,31 +239,31 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
     }
 
     @Override
-    protected double getDeltaYPerScroll() {
+    protected double scrollRate() {
         return 0;
     }
 
     @Override
-    protected void renderWidget(DrawContext context, int mouseX, int mouseY, float deltaTicks) {
+    protected void renderWidget(GuiGraphics context, int mouseX, int mouseY, float deltaTicks) {
         context.enableScissor(this.getX(), this.getY(), this.getX() + this.width, this.getY() + this.height);
-        context.getMatrices().pushMatrix();
-        context.getMatrices().translate(0, topMargin + (float)-this.getScrollY());
+        context.pose().pushMatrix();
+        context.pose().translate(0, topMargin + (float)-this.scrollAmount());
         renderContents(context, mouseX, mouseY, deltaTicks);
-        context.getMatrices().popMatrix();
+        context.pose().popMatrix();
         context.disableScissor();
-        this.drawScrollbar(context, mouseX, mouseY);
+        this.renderScrollbar(context, mouseX, mouseY);
     }
 
-    protected void renderContents(DrawContext context, int mouseX, int mouseY, float deltaTicks) {
+    protected void renderContents(GuiGraphics context, int mouseX, int mouseY, float deltaTicks) {
         int x = this.getX();
         int y = this.getY();
 
         for (int i = 0; i < choices.size(); i++) {
             AvailableChoice choice = choices.get(i);
-            int strHeight = this.textRenderer.getWrappedLinesHeight(choice.text(), computeTextWidth());
+            int strHeight = this.textRenderer.wordWrapHeight(choice.text(), computeTextWidth());
             boolean selected = i == this.selectedChoice;
             int choiceColor = choice.unavailabilityMessage().isPresent() ? lockedChoiceColor : selected ? selectedChoiceColor : this.choiceColor;
-            context.drawWrappedText(this.textRenderer, choice.text(), x + selectionIconSize + selectionIconGap, y, this.computeTextWidth(), ColorHelper.fullAlpha(choiceColor), false);
+            context.drawWordWrap(this.textRenderer, choice.text(), x + selectionIconSize + selectionIconGap, y, this.computeTextWidth(), ARGB.opaque(choiceColor), false);
 
             positionTransform.setControlPoints(x, y, x + this.getWidth(), y + strHeight);
 
@@ -273,10 +273,10 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
 
             if (selected) {
                 if (choice.unavailabilityMessage().isPresent()) {
-                    context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, lockIconTexture, x, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
-                    context.drawTooltip(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : x, this.hoveringChoice ? mouseY : y);
+                    context.blitSprite(RenderPipelines.GUI_TEXTURED, lockIconTexture, x, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
+                    context.setTooltipForNextFrame(this.textRenderer, choice.unavailabilityMessage().get(), this.hoveringChoice ? mouseX : x, this.hoveringChoice ? mouseY : y);
                 } else {
-                    context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, selectionIconTexture, x, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
+                    context.blitSprite(RenderPipelines.GUI_TEXTURED, selectionIconTexture, x, y + selectionIconMarginTop, selectionIconSize, selectionIconSize);
                 }
             }
             y += strHeight + getGap();
@@ -284,7 +284,7 @@ public class DialogueChoiceListWidget extends ScrollableWidget {
     }
 
     @Override
-    protected void appendClickableNarrations(NarrationMessageBuilder builder) {
-        builder.put(NarrationPart.TITLE, this.choices.get(this.selectedChoice).text());
+    protected void updateWidgetNarration(NarrationElementOutput builder) {
+        builder.add(NarratedElementType.TITLE, this.choices.get(this.selectedChoice).text());
     }
 }

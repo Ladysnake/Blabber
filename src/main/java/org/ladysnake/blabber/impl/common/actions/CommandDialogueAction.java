@@ -19,25 +19,25 @@ package org.ladysnake.blabber.impl.common.actions;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
-import net.minecraft.command.permission.LeveledPermissionPredicate;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.permissions.LevelBasedPermissionSet;
 import org.ladysnake.blabber.DialogueAction;
 
 public record CommandDialogueAction(String command) implements DialogueAction {
     public static final MapCodec<CommandDialogueAction> CODEC = Codec.STRING.xmap(CommandDialogueAction::new, CommandDialogueAction::command).fieldOf("value");
 
     @Override
-    public void handle(ServerPlayerEntity player) {
-        player.getEntityWorld().getServer().getCommandManager().parseAndExecute(
+    public void handle(ServerPlayer player) {
+        player.level().getServer().getCommands().performPrefixedCommand(
                 getSource(player),
                 this.command()
         );
     }
 
-    public static ServerCommandSource getSource(ServerPlayerEntity player) {
-        return player.getCommandSource()
-                .withOutput(player.getEntityWorld().getServer())
-                .withPermissions(LeveledPermissionPredicate.GAMEMASTERS);
+    public static CommandSourceStack getSource(ServerPlayer player) {
+        return player.createCommandSourceStack()
+                .withSource(player.level().getServer())
+                .withPermission(LevelBasedPermissionSet.GAMEMASTER);
     }
 }

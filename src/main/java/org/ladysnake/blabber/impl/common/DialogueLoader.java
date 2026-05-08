@@ -26,12 +26,12 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.SimpleResourceReloadListener;
-import net.minecraft.resource.LifecycledResourceManager;
-import net.minecraft.resource.ResourceManager;
-import net.minecraft.resource.ResourceType;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.util.Identifier;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.resources.CloseableResourceManager;
+import net.minecraft.server.packs.resources.ResourceManager;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 import org.ladysnake.blabber.impl.common.packets.DialogueListPayload;
@@ -58,7 +58,7 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
 
     public static void init() {
         DialogueLoader instance = new DialogueLoader();
-        ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(instance);
+        ResourceManagerHelper.get(PackType.SERVER_DATA).registerReloadListener(instance);
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register(instance);
     }
 
@@ -66,10 +66,10 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
     public CompletableFuture<Map<Identifier, DialogueTemplate>> load(ResourceManager manager, Executor executor) {
         return CompletableFuture.supplyAsync(() -> {
             Map<Identifier, DialogueTemplate> data = new HashMap<>();
-            manager.findResources(BLABBER_DIALOGUES_PATH, (res) -> res.getPath().endsWith(".json")).forEach((location, resource) -> {
-                try (Reader in = new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8)) {
+            manager.listResources(BLABBER_DIALOGUES_PATH, (res) -> res.getPath().endsWith(".json")).forEach((location, resource) -> {
+                try (Reader in = new InputStreamReader(resource.open(), StandardCharsets.UTF_8)) {
                     JsonObject jsonObject = GSON.fromJson(in, JsonObject.class);
-                    Identifier id = Identifier.of(location.getNamespace(), location.getPath().substring(BLABBER_DIALOGUES_PATH.length() + 1, location.getPath().length() - 5));
+                    Identifier id = Identifier.fromNamespaceAndPath(location.getNamespace(), location.getPath().substring(BLABBER_DIALOGUES_PATH.length() + 1, location.getPath().length() - 5));
                     DialogueTemplate dialogue = DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, jsonObject).getOrThrow(message -> {
                         Blabber.LOGGER.error("(Blabber) Could not parse dialogue file from {}: {}", location, message);
                         return new RuntimeException(message);
@@ -112,11 +112,11 @@ public final class DialogueLoader implements SimpleResourceReloadListener<Map<Id
     }
 
     @Override
-    public void endDataPackReload(MinecraftServer server, LifecycledResourceManager resourceManager, boolean success) {
+    public void endDataPackReload(MinecraftServer server, CloseableResourceManager resourceManager, boolean success) {
         if (success) {
             Set<Identifier> dialogueIds = DialogueRegistry.getIds();
             DialogueListPayload idSyncPacket = new DialogueListPayload(dialogueIds);
-            for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
+            for (ServerPlayer player : server.getPlayerList().getPlayers()) {
                 ServerPlayNetworking.send(player, idSyncPacket);
                 PlayerDialogueTracker.get(player).updateDialogue();
             }

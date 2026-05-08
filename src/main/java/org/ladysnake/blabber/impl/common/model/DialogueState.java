@@ -20,14 +20,14 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.text.Text;
-import net.minecraft.text.TextCodecs;
-import net.minecraft.text.Texts;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ComponentSerialization;
+import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.world.entity.Entity;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
@@ -40,25 +40,25 @@ import java.util.Locale;
 import java.util.Optional;
 
 public record DialogueState(
-        Text text,
+        Component text,
         List<String> illustrations,
         List<DialogueChoice> choices,
         Optional<InstancedDialogueAction<?>> action,
         StateType type
 ) implements ChoiceResult {
     public static final Codec<DialogueState> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            TextCodecs.CODEC.optionalFieldOf("text", Text.empty()).forGetter(DialogueState::text),
+            ComponentSerialization.CODEC.optionalFieldOf("text", Component.empty()).forGetter(DialogueState::text),
             Codec.list(Codec.STRING).optionalFieldOf("illustrations", Collections.emptyList()).forGetter(DialogueState::illustrations),
             Codec.list(DialogueChoice.CODEC).optionalFieldOf("choices", List.of()).forGetter(DialogueState::choices),
             InstancedDialogueAction.CODEC.optionalFieldOf("action").forGetter(DialogueState::action),
             Codec.STRING.xmap(s -> Enum.valueOf(StateType.class, s.toUpperCase(Locale.ROOT)), Enum::name).optionalFieldOf("type", StateType.DEFAULT).forGetter(DialogueState::type)
     ).apply(instance, DialogueState::new));
-    public static final PacketCodec<PacketByteBuf, DialogueState> PACKET_CODEC = PacketCodec.tuple(
-            TextCodecs.PACKET_CODEC, DialogueState::text,
-            PacketCodecs.collection(ArrayList::new, PacketCodecs.STRING), DialogueState::illustrations,
-            PacketCodecs.collection(ArrayList::new, DialogueChoice.PACKET_CODEC), DialogueState::choices,
+    public static final StreamCodec<FriendlyByteBuf, DialogueState> PACKET_CODEC = StreamCodec.composite(
+            ComponentSerialization.TRUSTED_CONTEXT_FREE_STREAM_CODEC, DialogueState::text,
+            ByteBufCodecs.collection(ArrayList::new, ByteBufCodecs.STRING_UTF8), DialogueState::illustrations,
+            ByteBufCodecs.collection(ArrayList::new, DialogueChoice.PACKET_CODEC), DialogueState::choices,
             // not writing the action, the client most likely does not need to know about it
-            PacketCodec.of((value, buf) -> {}, buf -> Optional.empty()), DialogueState::action,
+            StreamCodec.ofMember((value, buf) -> {}, buf -> Optional.empty()), DialogueState::action,
             StateType.PACKET_CODEC, DialogueState::type,
             DialogueState::new
     );
@@ -67,14 +67,14 @@ public record DialogueState(
         return this.choices.get(choice).next();
     }
 
-    public DialogueState parseText(@Nullable ServerCommandSource source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueState parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
         List<DialogueChoice> parsedChoices = new ArrayList<>(choices().size());
         for (DialogueChoice choice : choices()) {
             parsedChoices.add(choice.parseText(source, sender));
         }
 
         return new DialogueState(
-                Texts.parse(source, text(), sender, 0),
+                ComponentUtils.updateForEntity(source, text(), sender, 0),
                 illustrations(),
                 parsedChoices,
                 action(),

@@ -19,9 +19,9 @@ package org.ladysnake.blabber.impl.common.illustrations.entity;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.ladysnake.blabber.impl.common.serialization.MorePacketCodecs;
 import org.ladysnake.blabber.impl.common.serialization.OptionalSerialization;
@@ -36,24 +36,24 @@ public record StareTarget(Optional<IllustrationAnchor> anchor, OptionalInt x,
             OptionalSerialization.optionalIntField("x").forGetter(StareTarget::x),
             OptionalSerialization.optionalIntField("y").forGetter(StareTarget::y)
     ).apply(instance, StareTarget::new));
-    public static final PacketCodec<PacketByteBuf, StareTarget> PACKET_CODEC = PacketCodec.tuple(
-            IllustrationAnchor.PACKET_CODEC.collect(PacketCodecs::optional), StareTarget::anchor,
+    public static final StreamCodec<FriendlyByteBuf, StareTarget> PACKET_CODEC = StreamCodec.composite(
+            IllustrationAnchor.PACKET_CODEC.apply(ByteBufCodecs::optional), StareTarget::anchor,
             MorePacketCodecs.OPTIONAL_INT, StareTarget::x,
             MorePacketCodecs.OPTIONAL_INT, StareTarget::y,
             StareTarget::new
     );
     public static final StareTarget FOLLOW_MOUSE = new StareTarget(Optional.empty(), OptionalInt.empty(), OptionalInt.empty());
 
-    public StareTarget(PacketByteBuf buf) {
+    public StareTarget(FriendlyByteBuf buf) {
         this(
-                buf.readOptional(b -> b.readEnumConstant(IllustrationAnchor.class)),
+                buf.readOptional(b -> b.readEnum(IllustrationAnchor.class)),
                 OptionalSerialization.readOptionalInt(buf),
                 OptionalSerialization.readOptionalInt(buf)
         );
     }
 
-    public static void writeToPacket(PacketByteBuf buf, StareTarget stareTarget) {
-        buf.writeOptional(stareTarget.anchor(), PacketByteBuf::writeEnumConstant);
+    public static void writeToPacket(FriendlyByteBuf buf, StareTarget stareTarget) {
+        buf.writeOptional(stareTarget.anchor(), FriendlyByteBuf::writeEnum);
         OptionalSerialization.writeOptionalInt(buf, stareTarget.x());
         OptionalSerialization.writeOptionalInt(buf, stareTarget.y());
     }
