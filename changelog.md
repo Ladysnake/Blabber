@@ -1,7 +1,7 @@
 ------------------------------------------------------
 Version 1.12.0
 ------------------------------------------------------
-Updated to MC 1.21.6
+Updated to MC 1.21.11
 
 **Additions**
 - Dialogue screens now have a proper name, which will be narrated for players using this accessibility feature.
