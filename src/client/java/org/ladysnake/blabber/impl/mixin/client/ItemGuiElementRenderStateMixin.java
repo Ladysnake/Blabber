@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2025 Ladysnake
+ * Copyright (C) 2022-2026 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -21,7 +21,11 @@ import net.minecraft.client.gui.ScreenRect;
 import net.minecraft.client.gui.render.state.ItemGuiElementRenderState;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.client.illustrations.ItemIllustrationRenderer;
-import org.spongepowered.asm.mixin.*;
+import org.spongepowered.asm.mixin.Final;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Mutable;
+import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 
 @Mixin(ItemGuiElementRenderState.class)
 public class ItemGuiElementRenderStateMixin implements ItemIllustrationRenderer.RenderStateHooks {

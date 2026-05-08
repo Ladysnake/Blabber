@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2025 Ladysnake
+ * Copyright (C) 2022-2026 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -37,10 +37,19 @@ import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
-import org.ladysnake.blabber.impl.common.model.*;
+import org.ladysnake.blabber.impl.common.model.DialogueChoice;
+import org.ladysnake.blabber.impl.common.model.DialogueChoiceCondition;
+import org.ladysnake.blabber.impl.common.model.DialogueState;
+import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
+import org.ladysnake.blabber.impl.common.model.UnavailableAction;
+import org.ladysnake.blabber.impl.common.model.UnavailableDisplay;
 import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.IntStream;
 
 public final class DialogueStateMachine {

@@ -1,6 +1,6 @@
 /*
  * Blabber
- * Copyright (C) 2022-2025 Ladysnake
+ * Copyright (C) 2022-2026 Ladysnake
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -31,7 +31,6 @@ import net.minecraft.storage.ReadView;
 import net.minecraft.storage.WriteView;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Uuids;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 import org.ladysnake.blabber.impl.common.actions.CommandDialogueAction;
@@ -87,7 +86,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
         return this.currentDialogue;
     }
 
-    private @NotNull DialogueStateMachine prepareDialogue(Identifier id, DialogueTemplate template, @Nullable String start) throws CommandSyntaxException {
+    private DialogueStateMachine prepareDialogue(Identifier id, DialogueTemplate template, @Nullable String start) throws CommandSyntaxException {
         ServerPlayerEntity serverPlayer = ((ServerPlayerEntity) this.player);
         DialogueTemplate parsedTemplate = template.parseText(CommandDialogueAction.getSource(serverPlayer), serverPlayer);
         DialogueStateMachine currentDialogue = new DialogueStateMachine(id, parsedTemplate, start);

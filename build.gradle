@@ -129,7 +129,7 @@ processResources {
 
 jar {
 	from("COPYING.LESSER") {
-		rename { "LICENSE_${project.archivesBaseName}"}
+		rename { "LICENSE_${project.archives_base_name}"}
 	}
 }
 
