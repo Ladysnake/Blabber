@@ -21,6 +21,9 @@
     ],
     "fabric-gametest": [
       "org.ladysnake.babblings.tests.BlabberTestSuite"
+    ],
+    "fabric-client-gametest": [
+      "org.ladysnake.babblings.tests.BlabberClientTestSuite"
     ]
   },
   "depends": {

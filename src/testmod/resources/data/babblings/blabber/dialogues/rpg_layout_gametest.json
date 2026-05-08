@@ -1,0 +1,56 @@
+{
+  "$schema": "https://ladysnake.org/schemas/blabber/dialogue.schema.json",
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "start_at": "test",
+  "states": {
+    "test": {
+      "text": "RPG Layout Gametest",
+      "choices": [
+        {
+          "text": "Close",
+          "next": "end"
+        }
+      ],
+      "illustrations": ["spot1_icon", "spot2_icon", "villager"]
+    },
+    "end": {
+      "text": "",
+      "choices": [],
+      "type": "end_dialogue"
+    }
+  },
+  "illustrations": {
+    "villager": {
+      "type": "blabber:fake_entity",
+      "id": "minecraft:villager",
+      "anchor": "before_main_text",
+      "x1": -50,
+      "y1": -130,
+      "x2": 50,
+      "y2": 0,
+      "size": 60,
+      "stare_at_x": 50,
+      "stare_at_y": 10
+    },
+    "spot1_icon": {
+      "type": "blabber:texture",
+      "texture": "babblings:textures/dialogues/dummy_blabber_exclaim.png",
+      "anchor": "spot_1",
+      "x": -24,
+      "y": -24,
+      "width": 48,
+      "height": 48
+    },
+    "spot2_icon": {
+      "type": "blabber:texture",
+      "texture": "babblings:textures/dialogues/dummy_blabber_question.png",
+      "anchor": "spot_2",
+      "x": -24,
+      "y": -24,
+      "width": 48,
+      "height": 48
+    }
+  }
+}

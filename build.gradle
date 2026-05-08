@@ -38,6 +38,16 @@ loom {
 			sourceSet sourceSets.testmod
 		}
 	}
+
+	runs {
+		clientGametest {
+			inherit testmodClient
+			name "Client Game Test"
+			vmArg "-Dfabric.client.gametest"
+			vmArg "-Dfabric.client.gametest.testModResourcesPath=${sourceSets.testmod.resources.srcDirs.first()}"
+			runDir "build/clientgametest"
+		}
+	}
 }
 
 sourceSets {

@@ -53,7 +53,8 @@ public final class BlabberTestSuite {
                         Identifier.of("babblings:illustration_tests"),
                         Identifier.of("babblings:mountain_king"),
                         Identifier.of("babblings:perception_check"),
-                        Identifier.of("babblings:remnant_choice")
+                        Identifier.of("babblings:remnant_choice"),
+                        Identifier.of("babblings:rpg_layout_gametest")
                     )
                 ));
         ctx.complete();
