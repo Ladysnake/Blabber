@@ -48,6 +48,8 @@ loom {
 	}
 }
 
+check.dependsOn(tasks.runClientGametest)
+
 sourceSets {
 	reiDummy
 	testmod {
