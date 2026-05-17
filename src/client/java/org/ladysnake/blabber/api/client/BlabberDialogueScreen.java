@@ -271,11 +271,6 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Abst
     }
 
     @Override
-    public void extractBackground(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a) {
-        // NO-OP
-    }
-
-    @Override
     protected void extractLabels(GuiGraphicsExtractor graphics, int xm, int ym) {
         // NO-OP
     }
