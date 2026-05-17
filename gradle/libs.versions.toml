@@ -5,7 +5,6 @@ emi = "1.1.6+1.20.6"
 fpa = "0.7.0"
 mcAnnotations = "1.0"
 modmenu = "18.0.0-alpha.8"
-rei = "21.11.814"
 jei = "A7vaQAvf" # 29.5.0.28
 
 [libraries]
@@ -16,6 +15,5 @@ emi = { module = "dev.emi:emi-fabric", version.ref = "emi" }
 mcAnnotations = { module = "com.demonwav.mcdev:annotations", version.ref = "mcAnnotations" }
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu"}
 permissionsApi = { module = "me.lucko:fabric-permissions-api", version.ref = "fpa" }
-rei-api = { module = "me.shedaniel:RoughlyEnoughItems-api-fabric", version.ref = "rei" }
 # We cannot use the nice API jar because it is not getting remapped correctly
 jei = { module = "maven.modrinth:jei", version.ref = "jei" }

@@ -86,7 +86,6 @@ dependencies {
 	includeImplementation(libs.cca.base)
 	includeImplementation(libs.cca.entity)
 	includeImplementation(libs.permissionsApi)
-	localImplementation(libs.rei.api)
 	compileOnly(sourceSets.reiDummy.output)
     compileOnly(libs.emi)
 	compileOnly(libs.jei)
