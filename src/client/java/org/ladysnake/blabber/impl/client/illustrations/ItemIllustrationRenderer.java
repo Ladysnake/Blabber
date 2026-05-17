@@ -25,28 +25,30 @@ import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationItem;
 import org.ladysnake.blabber.impl.common.illustrations.PositionTransform;
 
 public class ItemIllustrationRenderer extends DialogueIllustrationRenderer<DialogueIllustrationItem> {
+    private final ItemStack renderedStack;
+
     public ItemIllustrationRenderer(DialogueIllustrationItem illustration) {
         super(illustration);
+        this.renderedStack = illustration.stack().create();
     }
 
     @Override
     public void extractRenderState(GuiGraphicsExtractor graphics, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         // We draw the actual item, then the count and bar and such.
         try {
-            ItemStack stack = this.illustration.stack();
             float scale = this.illustration.scale();
 
             ((DrawContextHooks) graphics).blabber$setItemScale(scale);
             int originX = positionTransform.transformX(this.illustration.anchor(), this.illustration.x());
             int originY = positionTransform.transformY(this.illustration.anchor(), this.illustration.y());
-            graphics.item(stack, originX, originY);
+            graphics.item(renderedStack, originX, originY);
             if (scale == 1) {  // Not supporting rescaled stack decorations right now
-                graphics.itemDecorations(textRenderer, stack, originX, originY);
+                graphics.itemDecorations(textRenderer, renderedStack, originX, originY);
             }
             if (this.illustration.showTooltip() &&
                     originX <= mouseX && originX + (16 * scale) + 4 > mouseX &&
                     originY <= mouseY && originY + (16 * scale) + 4 > mouseY) {
-                graphics.setTooltipForNextFrame(textRenderer, stack, mouseX, mouseY);
+                graphics.setTooltipForNextFrame(textRenderer, renderedStack, mouseX, mouseY);
             }
         } finally {
             ((DrawContextHooks) graphics).blabber$setItemScale(1f);

@@ -23,12 +23,11 @@ import net.fabricmc.fabric.api.client.gametest.v1.screenshot.TestScreenshotCompa
 import net.fabricmc.fabric.api.client.gametest.v1.screenshot.TestScreenshotComparisonOptions;
 import org.ladysnake.blabber.impl.client.BlabberRpgDialogueScreen;
 
-@SuppressWarnings("UnstableApiUsage")
 public final class BlabberClientTestSuite implements FabricClientGameTest {
     @Override
     public void runTest(ClientGameTestContext context) {
         try (var singleplayer = context.worldBuilder().create()) {
-            singleplayer.getClientWorld().waitForChunksDownload();
+            singleplayer.getClientLevel().waitForChunksDownload();
 
             singleplayer.getServer().runCommand("blabber dialogue start babblings:rpg_layout_gametest @p");
             context.waitForScreen(BlabberRpgDialogueScreen.class);

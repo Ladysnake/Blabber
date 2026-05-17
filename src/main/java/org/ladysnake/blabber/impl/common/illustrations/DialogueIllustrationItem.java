@@ -23,14 +23,14 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemStackTemplate;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 
-public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor anchor, int x, int y, float scale,
+public record DialogueIllustrationItem(ItemStackTemplate stack, IllustrationAnchor anchor, int x, int y, float scale,
                                        boolean showTooltip) implements SizedDialogueIllustration {
     private static final MapCodec<DialogueIllustrationItem> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-            ItemStack.CODEC.fieldOf("item").forGetter(DialogueIllustrationItem::stack),
+            ItemStackTemplate.CODEC.fieldOf("item").forGetter(DialogueIllustrationItem::stack),
             IllustrationAnchor.CODEC.optionalFieldOf("anchor", IllustrationAnchor.TOP_LEFT).forGetter(DialogueIllustrationItem::anchor),
             Codec.INT.fieldOf("x").forGetter(DialogueIllustrationItem::x),
             Codec.INT.fieldOf("y").forGetter(DialogueIllustrationItem::y),
@@ -38,7 +38,7 @@ public record DialogueIllustrationItem(ItemStack stack, IllustrationAnchor ancho
             Codec.BOOL.optionalFieldOf("show_tooltip", true).forGetter(DialogueIllustrationItem::showTooltip)
     ).apply(instance, DialogueIllustrationItem::new));
     public static final StreamCodec<RegistryFriendlyByteBuf, DialogueIllustrationItem> PACKET_CODEC = StreamCodec.composite(
-            ItemStack.STREAM_CODEC, DialogueIllustrationItem::stack,
+            ItemStackTemplate.STREAM_CODEC, DialogueIllustrationItem::stack,
             IllustrationAnchor.PACKET_CODEC, DialogueIllustrationItem::anchor,
             ByteBufCodecs.VAR_INT, DialogueIllustrationItem::x,
             ByteBufCodecs.VAR_INT, DialogueIllustrationItem::y,
