@@ -27,6 +27,7 @@ import net.minecraft.commands.arguments.IdentifierArgument;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.permissions.PermissionLevel;
 import net.minecraft.world.entity.Entity;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.BlabberRegistrar;
@@ -54,7 +55,7 @@ public final class DialogueSubCommand {
      */
     private static LiteralArgumentBuilder<CommandSourceStack> dialogueStartCommand() {
         return literal("start")
-                .requires(Permissions.require("dialogue.start", 2))
+                .requires(Permissions.require("dialogue.start", PermissionLevel.GAMEMASTERS))
                 .then(argument("dialogue", IdentifierArgument.id()).suggests(BlabberRegistrar.ALL_DIALOGUES)
                         .executes(context -> startDialogue(context.getSource(), IdentifierArgument.getId(context, "dialogue"), List.of(context.getSource().getPlayerOrException()), null))
                         .then(argument("players", EntityArgument.players())

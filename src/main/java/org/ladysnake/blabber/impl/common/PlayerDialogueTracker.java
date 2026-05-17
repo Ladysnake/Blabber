@@ -21,6 +21,7 @@ import com.google.common.base.Preconditions;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.core.UUIDUtil;
+import net.minecraft.network.chat.ResolutionContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -87,7 +88,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
 
     private DialogueStateMachine prepareDialogue(Identifier id, DialogueTemplate template, @Nullable String start) throws CommandSyntaxException {
         ServerPlayer serverPlayer = ((ServerPlayer) this.player);
-        DialogueTemplate parsedTemplate = template.parseText(CommandDialogueAction.getSource(serverPlayer), serverPlayer);
+        DialogueTemplate parsedTemplate = template.resolve(ResolutionContext.create(CommandDialogueAction.getSource(serverPlayer)));
         DialogueStateMachine currentDialogue = new DialogueStateMachine(id, parsedTemplate, start);
         this.updateConditions(serverPlayer, currentDialogue);
         return currentDialogue;
@@ -211,7 +212,7 @@ public final class PlayerDialogueTracker implements ServerTickingComponent {
 
     private void openDialogueScreen() {
         Preconditions.checkState(this.currentDialogue != null);
-        this.player.openMenu(new DialogueScreenHandlerFactory(this.currentDialogue, this.interlocutor));
+        this.player.openMenu(new DialogueMenuProvider(this.currentDialogue, this.interlocutor));
     }
 
     private record DeserializedState(Identifier dialogueId, DialogueTemplate template, String selectedState, @Nullable UUID interlocutorUuid) { }

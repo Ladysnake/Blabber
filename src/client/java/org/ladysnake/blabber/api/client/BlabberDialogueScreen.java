@@ -21,7 +21,7 @@ import com.google.common.collect.ImmutableList;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.narration.NarratedElementType;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.client.gui.screens.ConfirmScreen;
@@ -33,7 +33,6 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.player.Inventory;
 import org.jetbrains.annotations.ApiStatus;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector2i;
 import org.ladysnake.blabber.Blabber;
@@ -125,7 +124,7 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Abst
         this.illustrations.setIllustrations(this.menu.getIllustrations());
     }
 
-    protected @NotNull DialogueChoiceListWidget createChoiceList() {
+    protected DialogueChoiceListWidget createChoiceList() {
         return new DialogueChoiceListWidget(0, 0, choiceListMaxWidth, 1000, Component.empty(), font, this::confirmChoice, illustrations);
     }
 
@@ -169,7 +168,6 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Abst
     }
 
     protected @Nullable StateType confirmChoice(int selectedChoice) {
-        assert this.minecraft != null;
         if (this.menu.getAvailableChoices().get(selectedChoice).unavailabilityMessage().isPresent()) {
             return null;
         }
@@ -197,7 +195,6 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Abst
     }
 
     private void onBigChoiceMade(boolean yes) {
-        assert minecraft != null;
         if (this.confirmChoice(yes ? 0 : 1) == StateType.DEFAULT) {
             this.minecraft.setScreen(this);
         }
@@ -219,42 +216,41 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Abst
     }
 
     @Override
-    public void render(GuiGraphics context, int mouseX, int mouseY, float tickDelta) {
-        super.render(context, mouseX, mouseY, tickDelta);
+    public void extractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickDelta) {
+        super.extractRenderState(graphics, mouseX, mouseY, tickDelta);
 
-        assert minecraft != null;
         assert minecraft.player != null;
 
         PositionTransform positionTransform = this.createPositionTransform();
         positionTransform.setControlPoints(0, 0, this.width, this.height);
 
         for (String illustrationName : this.menu.getCurrentIllustrations()) {
-            illustrations.getRenderer(illustrationName).render(context, this.font, positionTransform, mouseX, mouseY, tickDelta);
+            illustrations.getRenderer(illustrationName).extractRenderState(graphics, this.font, positionTransform, mouseX, mouseY, tickDelta);
         }
 
-        context.drawWordWrap(this.font, instructions, Math.max((this.width - this.font.width(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0xFF808080, false);
+        graphics.textWithWordWrap(this.font, instructions, Math.max((this.width - this.font.width(instructions)) / 2, 5), instructionsMinY, this.width - 5, 0xFF808080, false);
 
         BlabberSettingsComponent settings = BlabberSettingsComponent.get(minecraft.player);
         if (settings.isDebugEnabled()) {
             positionTransform.setControlPoints(0, 0, this.width, this.height);
-            renderDebugInfo(settings, context, positionTransform, mouseX, mouseY);
+            renderDebugInfo(settings, graphics, positionTransform, mouseX, mouseY);
         }
     }
 
-    protected @NotNull PositionTransform createPositionTransform() {
+    protected PositionTransform createPositionTransform() {
         return new PositionTransform(this.illustrationSlots);
     }
 
-    protected void renderDebugInfo(BlabberSettingsComponent settings, GuiGraphics context, PositionTransform positionTransform, int mouseX, int mouseY) {
+    protected void renderDebugInfo(BlabberSettingsComponent settings, GuiGraphicsExtractor context, PositionTransform positionTransform, int mouseX, int mouseY) {
         if (settings.isEnabled(BlabberSetting.DEBUG_ANCHORS)) {
             this.renderAnchorDebugInfo(context, positionTransform, mouseX, mouseY);
         }
     }
 
-    protected void renderAnchorDebugInfo(GuiGraphics context, PositionTransform positionTransform, int mouseX, int mouseY) {
+    protected void renderAnchorDebugInfo(GuiGraphicsExtractor context, PositionTransform positionTransform, int mouseX, int mouseY) {
         for (IllustrationAnchor anchor : IllustrationAnchor.values()) {
             int color = DEBUG_COLORS[anchor.ordinal() % DEBUG_COLORS.length];
-            context.drawString(this.font, "x", positionTransform.transformX(anchor, -3), positionTransform.transformY(anchor, -5), color, true);
+            context.text(this.font, "x", positionTransform.transformX(anchor, -3), positionTransform.transformY(anchor, -5), color, true);
             MutableComponent text = Component.empty().append(Component.literal(anchor.getSerializedName()).withStyle(s -> s.withColor(color))).append(" > X: " + positionTransform.inverseTransformX(anchor, mouseX) + ", Y: " + positionTransform.inverseTransformY(anchor, mouseY));
             switch (anchor) {
                 case TOP_LEFT, TOP_RIGHT -> context.setTooltipForNextFrame(
@@ -275,12 +271,12 @@ public class BlabberDialogueScreen<P extends DialogueLayout.Params> extends Abst
     }
 
     @Override
-    protected void renderBg(GuiGraphics matrices, float delta, int mouseX, int mouseY) {
+    public void extractBackground(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a) {
         // NO-OP
     }
 
     @Override
-    protected void renderLabels(GuiGraphics matrices, int mouseX, int mouseY) {
+    protected void extractLabels(GuiGraphicsExtractor graphics, int xm, int ym) {
         // NO-OP
     }
 

@@ -21,7 +21,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
@@ -42,7 +42,7 @@ public abstract class EntityIllustrationRenderer<I extends DialogueIllustrationE
 
     @Override
     @Environment(EnvType.CLIENT)
-    public void render(GuiGraphics context, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
+    public void extractRenderState(GuiGraphicsExtractor graphics, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         LivingEntity e = this.renderedEntity == null
                 ? this.renderedEntity = this.getRenderedEntity(Minecraft.getInstance().level)
                 : this.renderedEntity;
@@ -58,7 +58,7 @@ public abstract class EntityIllustrationRenderer<I extends DialogueIllustrationE
         int fakedMouseX = stareTarget.x().isPresent() ? stareTarget.anchor().isPresent() ? positionTransform.transformX(stareTarget.anchor().get(), stareTarget.x().getAsInt()) : stareTarget.x().getAsInt() + (x1 + x2) / 2 : mouseX;
         int fakedMouseY = stareTarget.y().isPresent() ? stareTarget.anchor().isPresent() ? positionTransform.transformY(stareTarget.anchor().get(), stareTarget.y().getAsInt()) : stareTarget.y().getAsInt() + (y1 + y2) / 2 : mouseY;
 
-        InventoryScreen.renderEntityInInventoryFollowsMouse(context,
+        InventoryScreen.extractEntityInInventoryFollowsMouse(graphics,
                 x1,
                 y1,
                 x2,

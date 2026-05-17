@@ -18,10 +18,8 @@
 package org.ladysnake.blabber.api.illustration;
 
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.ResolutionContext;
 import org.jetbrains.annotations.ApiStatus;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * An illustration that can be rendered in dialogues, such as entities or items.
@@ -37,11 +35,11 @@ public interface DialogueIllustration {
 
     /**
      * If this illustration contains some text, this will be parsed *server-side*.
-     * @param source the context in which this is parsed
-     * @param sender the player that is going to dialogue
+     *
+     * @param context the player that is going to dialogue
      * @return a DialogueIllustration with the required text parsed (often, simply this)
      */
-    default DialogueIllustration parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
+    default DialogueIllustration resolve(ResolutionContext context) throws CommandSyntaxException {
         return this;
     }
 }

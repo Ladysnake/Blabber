@@ -20,15 +20,13 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentSerialization;
 import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.chat.ResolutionContext;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.world.entity.Entity;
-import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.api.layout.DialogueLayout;
@@ -65,22 +63,22 @@ public record DialogueTemplate(
             DialogueTemplate::new
     );
 
-    public DialogueTemplate parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueTemplate resolve(ResolutionContext context) throws CommandSyntaxException {
         Map<String, DialogueState> parsedStates = new HashMap<>(states().size());
 
         for (Map.Entry<String, DialogueState> state : states().entrySet()) {
-            parsedStates.put(state.getKey(), state.getValue().parseText(source, sender));
+            parsedStates.put(state.getKey(), state.getValue().resolve(context));
         }
 
         Map<String, DialogueIllustration> parsedIllustrations = new HashMap<>(illustrations().size());
         for (Map.Entry<String, DialogueIllustration> illustration : illustrations().entrySet()) {
-            parsedIllustrations.put(illustration.getKey(), illustration.getValue().parseText(source, sender));
+            parsedIllustrations.put(illustration.getKey(), illustration.getValue().resolve(context));
         }
 
-        @SuppressWarnings("unchecked") Optional<Component> parsedName = (Optional<Component>) (Optional<?>) ComponentUtils.updateForEntity(source, name, sender, 0);
+        Optional<Component> resolvedName = name.isPresent() ? Optional.of(ComponentUtils.resolve(context, name.get())) : Optional.empty();
 
         return new DialogueTemplate(
-                parsedName,
+                resolvedName,
                 start(),
                 unskippable(),
                 parsedStates,

@@ -21,7 +21,7 @@ import com.google.common.collect.ImmutableList;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.AbstractScrollArea;
 import net.minecraft.client.gui.narration.NarratedElementType;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
@@ -73,7 +73,7 @@ public class DialogueChoiceListWidget extends AbstractScrollArea {
     protected final IllustrationContainer illustrations;
 
     public DialogueChoiceListWidget(int x, int y, int width, int height, Component message, Font textRenderer, IntFunction<@Nullable StateType> confirmChoice, IllustrationContainer illustrations) {
-        super(x, y, width, height, message);
+        super(x, y, width, height, message, defaultSettings(9));
         this.textRenderer = textRenderer;
         this.confirmChoice = confirmChoice;
         this.illustrations = illustrations;
@@ -244,17 +244,17 @@ public class DialogueChoiceListWidget extends AbstractScrollArea {
     }
 
     @Override
-    protected void renderWidget(GuiGraphics context, int mouseX, int mouseY, float deltaTicks) {
+    protected void extractWidgetRenderState(GuiGraphicsExtractor context, int mouseX, int mouseY, float deltaTicks) {
         context.enableScissor(this.getX(), this.getY(), this.getX() + this.width, this.getY() + this.height);
         context.pose().pushMatrix();
         context.pose().translate(0, topMargin + (float)-this.scrollAmount());
-        renderContents(context, mouseX, mouseY, deltaTicks);
+        extractContents(context, mouseX, mouseY, deltaTicks);
         context.pose().popMatrix();
         context.disableScissor();
-        this.renderScrollbar(context, mouseX, mouseY);
+        this.extractScrollbar(context, mouseX, mouseY);
     }
 
-    protected void renderContents(GuiGraphics context, int mouseX, int mouseY, float deltaTicks) {
+    protected void extractContents(GuiGraphicsExtractor context, int mouseX, int mouseY, float deltaTicks) {
         int x = this.getX();
         int y = this.getY();
 
@@ -263,12 +263,12 @@ public class DialogueChoiceListWidget extends AbstractScrollArea {
             int strHeight = this.textRenderer.wordWrapHeight(choice.text(), computeTextWidth());
             boolean selected = i == this.selectedChoice;
             int choiceColor = choice.unavailabilityMessage().isPresent() ? lockedChoiceColor : selected ? selectedChoiceColor : this.choiceColor;
-            context.drawWordWrap(this.textRenderer, choice.text(), x + selectionIconSize + selectionIconGap, y, this.computeTextWidth(), ARGB.opaque(choiceColor), false);
+            context.textWithWordWrap(this.textRenderer, choice.text(), x + selectionIconSize + selectionIconGap, y, this.computeTextWidth(), ARGB.opaque(choiceColor), false);
 
             positionTransform.setControlPoints(x, y, x + this.getWidth(), y + strHeight);
 
             for (String illustrationName : choice.illustrations()) {
-                this.illustrations.getRenderer(illustrationName).render(context, this.textRenderer, positionTransform, mouseX, mouseY, deltaTicks);
+                this.illustrations.getRenderer(illustrationName).extractRenderState(context, this.textRenderer, positionTransform, mouseX, mouseY, deltaTicks);
             }
 
             if (selected) {

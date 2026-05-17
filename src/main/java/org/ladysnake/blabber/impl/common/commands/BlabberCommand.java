@@ -20,6 +20,7 @@ package org.ladysnake.blabber.impl.common.commands;
 import com.mojang.brigadier.CommandDispatcher;
 import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.server.permissions.PermissionLevel;
 import org.ladysnake.blabber.Blabber;
 
 import static net.minecraft.commands.Commands.literal;
@@ -27,7 +28,7 @@ import static net.minecraft.commands.Commands.literal;
 public final class BlabberCommand {
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(literal(Blabber.MOD_ID)
-            .requires(Permissions.require("dialogue.start", 2))
+            .requires(Permissions.require("dialogue.start", PermissionLevel.GAMEMASTERS))
             .then(DialogueSubCommand.dialogueSubtree())
             .then(SettingsSubCommand.settingsSubtree())
         );

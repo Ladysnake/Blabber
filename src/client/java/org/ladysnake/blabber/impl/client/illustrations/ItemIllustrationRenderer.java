@@ -18,7 +18,7 @@
 package org.ladysnake.blabber.impl.client.illustrations;
 
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.world.item.ItemStack;
 import org.ladysnake.blabber.api.client.illustration.DialogueIllustrationRenderer;
 import org.ladysnake.blabber.impl.common.illustrations.DialogueIllustrationItem;
@@ -30,26 +30,26 @@ public class ItemIllustrationRenderer extends DialogueIllustrationRenderer<Dialo
     }
 
     @Override
-    public void render(GuiGraphics context, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
+    public void extractRenderState(GuiGraphicsExtractor graphics, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         // We draw the actual item, then the count and bar and such.
         try {
             ItemStack stack = this.illustration.stack();
             float scale = this.illustration.scale();
 
-            ((DrawContextHooks) context).blabber$setItemScale(scale);
+            ((DrawContextHooks) graphics).blabber$setItemScale(scale);
             int originX = positionTransform.transformX(this.illustration.anchor(), this.illustration.x());
             int originY = positionTransform.transformY(this.illustration.anchor(), this.illustration.y());
-            context.renderItem(stack, originX, originY);
+            graphics.item(stack, originX, originY);
             if (scale == 1) {  // Not supporting rescaled stack decorations right now
-                context.renderItemDecorations(textRenderer, stack, originX, originY);
+                graphics.itemDecorations(textRenderer, stack, originX, originY);
             }
             if (this.illustration.showTooltip() &&
                     originX <= mouseX && originX + (16 * scale) + 4 > mouseX &&
                     originY <= mouseY && originY + (16 * scale) + 4 > mouseY) {
-                context.setTooltipForNextFrame(textRenderer, stack, mouseX, mouseY);
+                graphics.setTooltipForNextFrame(textRenderer, stack, mouseX, mouseY);
             }
         } finally {
-            ((DrawContextHooks) context).blabber$setItemScale(1f);
+            ((DrawContextHooks) graphics).blabber$setItemScale(1f);
         }
     }
 

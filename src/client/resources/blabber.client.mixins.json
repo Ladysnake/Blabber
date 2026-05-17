@@ -6,8 +6,8 @@
   "plugin": "org.ladysnake.blabber.impl.client.compat.BlabberClientMixinPlugin",
   "client": [
     "AbstractClientPlayerAccessor",
-    "GuiGraphicsAccessor",
-    "GuiGraphicsMixin",
+    "GuiGraphicsExtractorAccessor",
+    "GuiGraphicsExtractorMixin",
     "GuiItemRenderStateMixin",
     "GuiRendererMixin",
     "compat.emi.EmiScreenManagerMixin"

@@ -1,7 +1,7 @@
 import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
-	id 'fabric-loom' version "1.15-SNAPSHOT"
+	id 'net.fabricmc.fabric-loom' version "1.15-SNAPSHOT"
 	id 'io.github.ladysnake.chenille' version '0.18.0'
 }
 
@@ -15,7 +15,6 @@ base {
 chenille {
 	configureTestmod {
 		withBaseTestRuns()
-        withDependencyConfiguration()
 	}
 
 	license = project.license_header
@@ -79,26 +78,25 @@ dependencies {
 
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings loom.officialMojangMappings()
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modIncludeImplementation(libs.cca.base)
-	modIncludeImplementation(libs.cca.entity)
-	modIncludeImplementation(libs.permissionsApi)
-	modLocalImplementation(libs.rei.api)
+	includeImplementation(libs.cca.base)
+	includeImplementation(libs.cca.entity)
+	includeImplementation(libs.permissionsApi)
+	localImplementation(libs.rei.api)
 	compileOnly(sourceSets.reiDummy.output)
-    modCompileOnly(libs.emi)
-	modCompileOnly(libs.jei)
+    compileOnly(libs.emi)
+	compileOnly(libs.jei)
 
 	compileOnly(libs.mcAnnotations)
 
-	modLocalImplementation(libs.modmenu)
+	localImplementation(libs.modmenu)
 
 	// Test dependencies
-	modLocalImplementation(libs.elmendorf)
+	localImplementation(libs.elmendorf)
 
 	testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
 	testImplementation "net.fabricmc:fabric-loader-junit:${project.loader_version}"
@@ -133,25 +131,11 @@ jar {
 	}
 }
 
-remapJar {
-	addNestedDependencies.set(false)
+var mavenJar = tasks.register("mavenJar", Jar) {
+	archiveFileName.set("cardinal-components-api-${project.version}-maven.jar")
 }
 
-tasks.register("standaloneJar", Jar) {
-	from sourceSets.main.output
-	from sourceSets.client.output
-	archiveClassifier.set('standalone-dev')
-	dependsOn project.classes
-}
-
-tasks.register("remapStandaloneJar", RemapJarTask) {
-	archiveClassifier.set('standalone')
-	inputFile.set(standaloneJar.archiveFile)
-	addNestedDependencies.set(true)
-	dependsOn project.standaloneJar
-}
-
-assemble.dependsOn(remapStandaloneJar)
+assemble.dependsOn(mavenJar)
 
 
 var testmodJar = tasks.register('testmodJar', Jar) {
@@ -180,7 +164,7 @@ build.dependsOn(remapTestmodJar)
 
 chenille {
 	configurePublishing {
-		mainArtifact = remapStandaloneJar.archiveFile
+		mainArtifact = mavenJar.flatMap { it.archiveFile }
 		withLadysnakeMaven()
 		withCurseforgeRelease()
 		withGithubRelease()

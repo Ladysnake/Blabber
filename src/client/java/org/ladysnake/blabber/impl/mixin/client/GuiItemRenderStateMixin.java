@@ -18,7 +18,7 @@
 package org.ladysnake.blabber.impl.mixin.client;
 
 import net.minecraft.client.gui.navigation.ScreenRectangle;
-import net.minecraft.client.gui.render.state.GuiItemRenderState;
+import net.minecraft.client.renderer.state.gui.GuiItemRenderState;
 import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.client.illustrations.ItemIllustrationRenderer;
 import org.spongepowered.asm.mixin.Final;

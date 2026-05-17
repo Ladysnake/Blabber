@@ -15,15 +15,12 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; If not, see <https://www.gnu.org/licenses>.
  */
-package org.ladysnake.blabber.impl.mixin.client;
+/**
+ * Standard dialogue actions
+ */
+@NullMarked
+@ApiStatus.Internal
+package org.ladysnake.blabber.impl.common.actions;
 
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.render.state.GuiRenderState;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.gen.Accessor;
-
-@Mixin(GuiGraphics.class)
-public interface GuiGraphicsAccessor {
-    @Accessor
-    GuiRenderState getGuiRenderState();
-}
+import org.jetbrains.annotations.ApiStatus;
+import org.jspecify.annotations.NullMarked;

@@ -26,12 +26,13 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.arguments.selector.EntitySelector;
 import net.minecraft.commands.arguments.selector.EntitySelectorParser;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.ResolutionContext;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
+import org.jspecify.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.common.model.IllustrationAnchor;
 import org.ladysnake.blabber.impl.common.serialization.EitherMapCodec;
@@ -67,7 +68,7 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustrationE
         this.selectedEntityId = selectedEntityId;
     }
 
-    public LivingEntity getSelectedEntity(Level world) {
+    public @Nullable LivingEntity getSelectedEntity(Level world) {
         if (this.selectedEntityId == -1) return null; // shortcut
         Entity e = world.getEntity(this.selectedEntityId);
         return e instanceof LivingEntity living ? living : null;
@@ -123,7 +124,8 @@ public class DialogueIllustrationSelectorEntity implements DialogueIllustrationE
     }
 
     @Override
-    public DialogueIllustrationSelectorEntity parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueIllustrationSelectorEntity resolve(ResolutionContext context) throws CommandSyntaxException {
+        CommandSourceStack source = context.source();
         if (source != null) {
             EntitySelector entitySelector = new EntitySelectorParser(new StringReader(spec().selector()), true).parse();
             Entity e = entitySelector.findSingleEntity(source);

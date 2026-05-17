@@ -17,7 +17,7 @@
  */
 package org.ladysnake.blabber.impl.client;
 
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import org.ladysnake.blabber.api.client.BlabberDialogueScreen;
@@ -88,10 +88,10 @@ public class BlabberRpgDialogueScreen extends BlabberDialogueScreen<DefaultLayou
     }
 
     @Override
-    public void renderTransparentBackground(GuiGraphics context) {
-        ((RpgDialogueChoiceListWidget) this.choiceList).renderWidgetBackground(context);
+    public void extractTransparentBackground(GuiGraphicsExtractor graphics) {
+        ((RpgDialogueChoiceListWidget) this.choiceList).renderWidgetBackground(graphics);
         // Bottom background
-        context.fillGradient(0, this.mainTextMinY - 20, this.width, this.mainTextMinY - TEXT_TOP_MARGIN, 0x00101010, 0xc0101010);
-        context.fillGradient(0, this.mainTextMinY - TEXT_TOP_MARGIN, this.width, this.height, 0xc0101010, 0xd0101010);
+        graphics.fillGradient(0, this.mainTextMinY - 20, this.width, this.mainTextMinY - TEXT_TOP_MARGIN, 0x00101010, 0xc0101010);
+        graphics.fillGradient(0, this.mainTextMinY - TEXT_TOP_MARGIN, this.width, this.height, 0xc0101010, 0xd0101010);
     }
 }

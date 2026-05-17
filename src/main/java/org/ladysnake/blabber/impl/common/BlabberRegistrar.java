@@ -23,11 +23,11 @@ import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.command.v2.ArgumentTypeRegistry;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.event.registry.RegistryAttribute;
+import net.fabricmc.fabric.api.menu.v1.ExtendedMenuType;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationNetworking;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.SharedSuggestionProvider;
 import net.minecraft.commands.synchronization.SingletonArgumentInfo;
@@ -74,12 +74,12 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     public static final Registry<DialogueLayoutType<?>> LAYOUT_REGISTRY = FabricRegistryBuilder.from(
             new MappedRegistry<>(LAYOUT_REGISTRY_KEY, Lifecycle.stable(), false)
     ).attribute(RegistryAttribute.SYNCED).buildAndRegister();
-    public static final MenuType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(BuiltInRegistries.MENU, Blabber.id("dialogue"), new ExtendedScreenHandlerType<>((syncId, inventory, data) -> {
+    public static final MenuType<DialogueScreenHandler> DIALOGUE_SCREEN_HANDLER = Registry.register(BuiltInRegistries.MENU, Blabber.id("dialogue"), new ExtendedMenuType<>((syncId, inventory, data) -> {
         DialogueStateMachine dialogue = data.dialogue();
         dialogue.applyAvailabilityUpdate(data.availableChoices());
         Optional<Entity> interlocutor = data.interlocutorId().map(inventory.player.level()::getEntity);
         return new DialogueScreenHandler(syncId, dialogue, interlocutor.orElse(null));
-    }, DialogueScreenHandlerFactory.DialogueOpeningData.PACKET_CODEC));
+    }, DialogueMenuProvider.DialogueOpeningData.PACKET_CODEC));
     public static final DialogueLayoutType<DefaultLayoutParams> CLASSIC_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.PACKET_CODEC, DefaultLayoutParams.DEFAULT);
     public static final DialogueLayoutType<DefaultLayoutParams> RPG_LAYOUT = new DialogueLayoutType<>(DefaultLayoutParams.CODEC, DefaultLayoutParams.PACKET_CODEC, DefaultLayoutParams.DEFAULT);
 
@@ -89,18 +89,18 @@ public final class BlabberRegistrar implements EntityComponentInitializer {
     );
 
     public static void init() {
-        Registry.register(BuiltInRegistries.LOOT_CONDITION_TYPE, Blabber.id("interlocutor_properties"), InterlocutorPropertiesLootCondition.TYPE);
+        Registry.register(BuiltInRegistries.LOOT_CONDITION_TYPE, Blabber.id("interlocutor_properties"), InterlocutorPropertiesLootCondition.CODEC);
         ArgumentTypeRegistry.registerArgumentType(Blabber.id("setting"), SettingArgumentType.class, SingletonArgumentInfo.contextFree(SettingArgumentType::setting));
 
         DialogueLoader.init();
 
-        PayloadTypeRegistry.configurationS2C().register(DialogueListPayload.ID, DialogueListPayload.PACKET_CODEC);
+        PayloadTypeRegistry.clientboundConfiguration().register(DialogueListPayload.ID, DialogueListPayload.PACKET_CODEC);
 
-        PayloadTypeRegistry.playS2C().register(DialogueListPayload.ID, DialogueListPayload.PACKET_CODEC);
-        PayloadTypeRegistry.playS2C().register(ChoiceAvailabilityPayload.ID, ChoiceAvailabilityPayload.PACKET_CODEC);
-        PayloadTypeRegistry.playS2C().register(SelectedDialogueStatePayload.ID, SelectedDialogueStatePayload.PACKET_CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(DialogueListPayload.ID, DialogueListPayload.PACKET_CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(ChoiceAvailabilityPayload.ID, ChoiceAvailabilityPayload.PACKET_CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(SelectedDialogueStatePayload.ID, SelectedDialogueStatePayload.PACKET_CODEC);
 
-        PayloadTypeRegistry.playC2S().register(ChoiceSelectionPayload.ID, ChoiceSelectionPayload.PACKET_CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(ChoiceSelectionPayload.ID, ChoiceSelectionPayload.PACKET_CODEC);
 
         ServerPlayNetworking.registerGlobalReceiver(ChoiceSelectionPayload.ID, (payload, ctx) -> {
             if (ctx.player().containerMenu instanceof DialogueScreenHandler dialogueHandler) {

@@ -1,12 +1,12 @@
 [versions]
-cca = "7.3.1"
-elmendorf = "0.16.1"
+cca = "8.0.0"
+elmendorf = "0.17.0"
 emi = "1.1.6+1.20.6"
-fpa = "0.6.1"
+fpa = "0.7.0"
 mcAnnotations = "1.0"
-modmenu = "17.0.0"
-rei = "14.0.688"
-jei = "GE5LkM6l" # 18.0.0.62
+modmenu = "18.0.0-alpha.8"
+rei = "21.11.814"
+jei = "A7vaQAvf" # 29.5.0.28
 
 [libraries]
 cca-base = { module = "org.ladysnake.cardinal-components-api:cardinal-components-base", version.ref = "cca" }

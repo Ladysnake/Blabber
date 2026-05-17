@@ -20,16 +20,14 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentSerialization;
 import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.chat.ResolutionContext;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.world.entity.Entity;
 import org.apache.commons.lang3.StringUtils;
-import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.impl.common.InstancedDialogueAction;
 import org.ladysnake.blabber.impl.common.machine.ChoiceResult;
 
@@ -67,14 +65,14 @@ public record DialogueState(
         return this.choices.get(choice).next();
     }
 
-    public DialogueState parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueState resolve(ResolutionContext context) throws CommandSyntaxException {
         List<DialogueChoice> parsedChoices = new ArrayList<>(choices().size());
         for (DialogueChoice choice : choices()) {
-            parsedChoices.add(choice.parseText(source, sender));
+            parsedChoices.add(choice.resolve(context));
         }
 
         return new DialogueState(
-                ComponentUtils.updateForEntity(source, text(), sender, 0),
+                ComponentUtils.resolve(context, text()),
                 illustrations(),
                 parsedChoices,
                 action(),

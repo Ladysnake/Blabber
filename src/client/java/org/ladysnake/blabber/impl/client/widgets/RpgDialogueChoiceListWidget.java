@@ -19,7 +19,7 @@ package org.ladysnake.blabber.impl.client.widgets;
 
 import com.google.common.collect.ImmutableList;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.Nullable;
@@ -28,7 +28,7 @@ import org.ladysnake.blabber.api.client.illustration.IllustrationContainer;
 import org.ladysnake.blabber.impl.client.HorizontalGradientGuiElementRenderState;
 import org.ladysnake.blabber.impl.common.machine.AvailableChoice;
 import org.ladysnake.blabber.impl.common.model.StateType;
-import org.ladysnake.blabber.impl.mixin.client.GuiGraphicsAccessor;
+import org.ladysnake.blabber.impl.mixin.client.GuiGraphicsExtractorAccessor;
 
 import java.util.function.IntFunction;
 
@@ -46,7 +46,7 @@ public class RpgDialogueChoiceListWidget extends DialogueChoiceListWidget {
         return mouseX >= this.getX() && mouseX < (this.getX() + this.getWidth()) && mouseY > choiceY && mouseY < choiceY + choiceHeight;
     }
 
-    public void renderWidgetBackground(GuiGraphics context) {
+    public void renderWidgetBackground(GuiGraphicsExtractor context) {
         int y = this.getY() + this.topMargin / 2;
         ImmutableList<AvailableChoice> availableChoices = this.getChoices();
         for (int i = 0; i < availableChoices.size(); i++) {
@@ -58,8 +58,8 @@ public class RpgDialogueChoiceListWidget extends DialogueChoiceListWidget {
         }
     }
 
-    public static void fillHorizontalGradient(GuiGraphics context, int startX, int startY, int endX, int endY, int colorStart, int colorEnd) {
-        ((GuiGraphicsAccessor) context).getGuiRenderState().submitGuiElement(
+    public static void fillHorizontalGradient(GuiGraphicsExtractor context, int startX, int startY, int endX, int endY, int colorStart, int colorEnd) {
+        ((GuiGraphicsExtractorAccessor) context).getGuiRenderState().addGuiElement(
                 new HorizontalGradientGuiElementRenderState(
                         RenderPipelines.GUI, new Matrix3x2f(context.pose()), startX, startY, endX, endY, colorStart, colorEnd, null
                 )

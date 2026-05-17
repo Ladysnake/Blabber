@@ -20,14 +20,12 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.ResolutionContext;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.Blabber;
 
 public record DialogueChoiceCondition(ResourceKey<LootItemCondition> predicate, UnavailableAction whenUnavailable) {
@@ -43,10 +41,10 @@ public record DialogueChoiceCondition(ResourceKey<LootItemCondition> predicate, 
             DialogueChoiceCondition::new
     );
 
-    public DialogueChoiceCondition parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueChoiceCondition resolve(ResolutionContext context) throws CommandSyntaxException {
         return new DialogueChoiceCondition(
                 predicate(),
-                whenUnavailable().parseText(source, sender)
+                whenUnavailable().resolve(context)
         );
     }
 }

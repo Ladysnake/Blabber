@@ -20,7 +20,7 @@ package org.ladysnake.blabber.impl.client.widgets;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.TextAlignment;
 import net.minecraft.client.gui.components.AbstractScrollArea;
 import net.minecraft.client.gui.components.MultiLineLabel;
@@ -46,7 +46,7 @@ public class DialogueTextWidget extends AbstractScrollArea {
     private final SingleKeyCache<CacheKey, MultiLineLabel> typesetter;
 
     public DialogueTextWidget(int x, int y, int width, int rows, Component message, Font textRenderer) {
-        super(x, y, width, rows * LINE_HEIGHT, message);
+        super(x, y, width, rows * LINE_HEIGHT, message, defaultSettings(9));
         this.maxRows = rows;
         this.typesetter = Util.singleKeyCache(
                 cacheKey -> MultiLineLabel.create(textRenderer, cacheKey.maxWidth, cacheKey.message)
@@ -119,22 +119,22 @@ public class DialogueTextWidget extends AbstractScrollArea {
     }
 
     @Override
-    protected void renderWidget(GuiGraphics context, int mouseX, int mouseY, float deltaTicks) {
+    protected void extractWidgetRenderState(GuiGraphicsExtractor context, int mouseX, int mouseY, float deltaTicks) {
         context.enableScissor(this.getX() + 1, this.getY() + 1, this.getX() + this.width - 1, this.getY() + this.height - 1);
         context.pose().pushMatrix();
         context.pose().translate(this.textMargin, (float)(this.textMargin - this.scrollAmount()));
         renderContents(context);
         context.pose().popMatrix();
         context.disableScissor();
-        this.renderScrollbar(context, mouseX, mouseY);
+        this.extractScrollbar(context, mouseX, mouseY);
     }
 
-    private void renderContents(GuiGraphics context) {
+    private void renderContents(GuiGraphicsExtractor context) {
         MultiLineLabel multilineText = this.getTypesetText();
         int x = this.getX();
         int y = this.getY();
         multilineText.visitLines(TextAlignment.LEFT, x, y, LINE_HEIGHT, context.textRenderer(
-                GuiGraphics.HoveredTextEffects.TOOLTIP_ONLY,
+                GuiGraphicsExtractor.HoveredTextEffects.TOOLTIP_ONLY,
                 style -> style.withColor(this.getTextColor())
         ));
     }

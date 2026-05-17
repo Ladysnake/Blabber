@@ -25,7 +25,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.Optional;
@@ -35,11 +34,10 @@ public record InterlocutorPropertiesLootCondition(EntityPredicate predicate) imp
     public static final MapCodec<InterlocutorPropertiesLootCondition> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
             EntityPredicate.CODEC.fieldOf("predicate").forGetter(InterlocutorPropertiesLootCondition::predicate)
     ).apply(instance, InterlocutorPropertiesLootCondition::new));
-    public static final LootItemConditionType TYPE = new LootItemConditionType(CODEC);
 
     @Override
-    public LootItemConditionType getType() {
-        return TYPE;
+    public MapCodec<? extends LootItemCondition> codec() {
+        return CODEC;
     }
 
     @Override

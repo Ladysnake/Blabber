@@ -18,7 +18,7 @@
 package org.ladysnake.blabber.api.client.illustration;
 
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 import org.ladysnake.blabber.impl.client.BlabberClient;
@@ -38,14 +38,14 @@ public abstract class DialogueIllustrationRenderer<I extends DialogueIllustratio
     /**
      * Draw this illustration to the screen.
      *
-     * @param context          a context to draw in
+     * @param graphics         a graphics extractor to draw in
      * @param textRenderer     a text renderer
      * @param positionTransform an object that gives you real coordinates from illustration-local ones
      * @param mouseX           the current x mouse position
      * @param mouseY           the current y mouse position
      * @param tickDelta        how much time has passed since last frame
      */
-    public abstract void render(GuiGraphics context, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta);
+    public abstract void extractRenderState(GuiGraphicsExtractor graphics, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta);
 
     @FunctionalInterface
     public interface Factory<I extends DialogueIllustration> {

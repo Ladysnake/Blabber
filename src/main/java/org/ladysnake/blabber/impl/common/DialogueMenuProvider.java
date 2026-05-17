@@ -17,7 +17,7 @@
  */
 package org.ladysnake.blabber.impl.common;
 
-import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.fabricmc.fabric.api.menu.v1.ExtendedMenuProvider;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.ByteBufCodecs;
@@ -33,12 +33,12 @@ import org.ladysnake.blabber.impl.common.packets.ChoiceAvailabilityPayload;
 
 import java.util.Optional;
 
-public class DialogueScreenHandlerFactory implements ExtendedScreenHandlerFactory<DialogueScreenHandlerFactory.DialogueOpeningData> {
+public class DialogueMenuProvider implements ExtendedMenuProvider<DialogueMenuProvider.DialogueOpeningData> {
     private static final Component DEFAULT_NAME = Component.translatable("blabber:container.dialogue");
     private final DialogueStateMachine dialogue;
     private final @Nullable Entity interlocutor;
 
-    public DialogueScreenHandlerFactory(DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
+    public DialogueMenuProvider(DialogueStateMachine dialogue, @Nullable Entity interlocutor) {
         this.dialogue = dialogue;
         this.interlocutor = interlocutor;
     }

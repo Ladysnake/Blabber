@@ -21,12 +21,10 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.chat.ResolutionContext;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.world.entity.Entity;
-import org.jetbrains.annotations.Nullable;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.api.illustration.DialogueIllustrationType;
 
@@ -48,10 +46,10 @@ public record DialogueIllustrationCollection(List<DialogueIllustration> elements
     }
 
     @Override
-    public DialogueIllustration parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
+    public DialogueIllustration resolve(ResolutionContext context) throws CommandSyntaxException {
         List<DialogueIllustration> parsedSub = new ArrayList<>(elements.size());
         for (DialogueIllustration illustration : elements) {
-            parsedSub.add(illustration.parseText(source, sender));
+            parsedSub.add(illustration.resolve(context));
         }
         return new DialogueIllustrationCollection(parsedSub);
     }

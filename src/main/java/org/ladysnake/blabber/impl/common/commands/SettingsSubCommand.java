@@ -23,6 +23,7 @@ import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.permissions.PermissionLevel;
 import org.jetbrains.annotations.NotNull;
 import org.ladysnake.blabber.impl.common.settings.BlabberSetting;
 import org.ladysnake.blabber.impl.common.settings.BlabberSettingsComponent;
@@ -35,7 +36,7 @@ import static net.minecraft.commands.Commands.literal;
 public final class SettingsSubCommand {
     public static final String SETTINGS_SUBCOMMAND = "settings";
     public static final String SETTINGS_SET_SUBCOMMAND = "set";
-    public static final @NotNull Predicate<CommandSourceStack> ALLOW_DEBUG = Permissions.require("dialogue.debug", 2);
+    public static final @NotNull Predicate<CommandSourceStack> ALLOW_DEBUG = Permissions.require("dialogue.debug", PermissionLevel.GAMEMASTERS);
 
     static LiteralArgumentBuilder<CommandSourceStack> settingsSubtree() {
         return literal(SETTINGS_SUBCOMMAND)

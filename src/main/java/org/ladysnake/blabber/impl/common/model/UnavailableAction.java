@@ -20,15 +20,13 @@ package org.ladysnake.blabber.impl.common.model;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentSerialization;
 import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.chat.ResolutionContext;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.world.entity.Entity;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
@@ -43,8 +41,8 @@ public record UnavailableAction(UnavailableDisplay display, Optional<Component> 
             UnavailableAction::new
     );
 
-    public UnavailableAction parseText(@Nullable CommandSourceStack source, @Nullable Entity sender) throws CommandSyntaxException {
-        Optional<Component> parsedMessage = message().isEmpty() ? Optional.empty() : Optional.of(ComponentUtils.updateForEntity(source, message().get(), sender, 0));
+    public UnavailableAction resolve(ResolutionContext context) throws CommandSyntaxException {
+        Optional<Component> parsedMessage = message().isEmpty() ? Optional.empty() : Optional.of(ComponentUtils.resolve(context, message().get()));
         return new UnavailableAction(display(), parsedMessage);
     }
 }

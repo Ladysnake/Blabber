@@ -18,7 +18,7 @@
 package org.ladysnake.blabber.impl.client.illustrations;
 
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import org.ladysnake.blabber.api.client.illustration.DialogueIllustrationRenderer;
 import org.ladysnake.blabber.api.illustration.DialogueIllustration;
 import org.ladysnake.blabber.impl.client.BlabberClient;
@@ -40,9 +40,9 @@ public class IllustrationCollectionRenderer extends DialogueIllustrationRenderer
     }
 
     @Override
-    public void render(GuiGraphics context, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
+    public void extractRenderState(GuiGraphicsExtractor graphics, Font textRenderer, PositionTransform positionTransform, int mouseX, int mouseY, float tickDelta) {
         for (DialogueIllustrationRenderer<?> i : elements) {
-            i.render(context, textRenderer, positionTransform, mouseX, mouseY, tickDelta);
+            i.extractRenderState(graphics, textRenderer, positionTransform, mouseX, mouseY, tickDelta);
         }
     }
 }
