@@ -1,8 +1,7 @@
-import net.fabricmc.loom.task.RemapJarTask
-
 plugins {
 	id 'net.fabricmc.fabric-loom' version "1.15-SNAPSHOT"
 	id 'io.github.ladysnake.chenille' version '0.18.0'
+	id 'maven-publish'
 }
 
 version = project.mod_version
@@ -113,7 +112,7 @@ test {
 
 license {
 	exclude 'me/shedaniel/**/*'
-	exclude 'org/ladysnake/blabber/impl/common/validation/EitherCodecButGood.java'
+	exclude 'org/ladysnake/blabber/impl/common/serialization/EitherMapCodec.java'
 }
 
 processResources {
@@ -131,7 +130,9 @@ jar {
 }
 
 var mavenJar = tasks.register("mavenJar", Jar) {
-	archiveFileName.set("cardinal-components-api-${project.version}-maven.jar")
+	archiveFileName.set("blabber-${project.version}-maven.jar")
+	from sourceSets.main.output
+	from sourceSets.client.output
 }
 
 assemble.dependsOn(mavenJar)
@@ -141,7 +142,6 @@ var testmodJar = tasks.register('testmodJar', Jar) {
 	dependsOn testmodClasses
 
 	archiveBaseName.set('Babblings')
-	archiveClassifier.set('dev')
 	from(sourceSets.testmod.output) {
 		include 'fabric.mod.json'
 		expand 'version': project.version
@@ -151,28 +151,19 @@ var testmodJar = tasks.register('testmodJar', Jar) {
 	}
 }
 
-var remapTestmodJar = tasks.register('remapTestmodJar', RemapJarTask) {
-	dependsOn project.testmodJar
-
-	archiveBaseName.set('Babblings')
-	inputFile.set(testmodJar.get().archiveFile)
-	addNestedDependencies = false
-}
-
-build.dependsOn(remapTestmodJar)
-
-chenille {
-	configurePublishing {
-		mainArtifact = mavenJar.flatMap { it.archiveFile }
-		withLadysnakeMaven()
-		withCurseforgeRelease()
-		withGithubRelease()
-		withModrinthRelease()
-	}
-}
+build.dependsOn(testmodJar)
 
 publishing {
 	publications {
+		create("mavenJava", MavenPublication) {
+			artifact(tasks.mavenJar.archiveFile) {
+				builtBy(tasks.mavenJar)
+			}
+
+			artifact(tasks.sourcesJar) {
+				builtBy tasks.sourcesJar
+			}
+		}
 		create("relocation", MavenPublication) {
 			pom {
 				// Old artifact coordinates
@@ -187,5 +178,14 @@ publishing {
 				}
 			}
 		}
+	}
+}
+
+chenille {
+	configurePublishing {
+		withLadysnakeMaven()
+		withCurseforgeRelease()
+		withGithubRelease()
+		withModrinthRelease()
 	}
 }
