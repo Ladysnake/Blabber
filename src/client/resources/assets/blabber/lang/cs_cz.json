@@ -1,0 +1,12 @@
+{
+  "blabber:container.dialogue": "Dialog",
+  "blabber:container.dialogue_with_interlocutor": "Dialog s %s",
+  "blabber:commands.dialogue.start.invalid": "Žádný dialog neexistuje s typem \"%s\"",
+  "blabber:commands.dialogue.start.predicate.invalid": "Žádný predicate neexistuje s typem \"%s\"",
+  "blabber:commands.dialogue.start.success": "Inicializován dialog \"%s\" pro %s",
+  "blabber:commands.setting.disabled": "Vypnuto nastavení '%s'",
+  "blabber:commands.setting.enabled": "Zapnutu nastavení '%s'",
+  "blabber:dialogue.escape_hatch": "[Blabber] §5Vypadá to že někdo udělal chybičku a nemáš nic na výběr. §e§lMěl/a by jsi to oznámit,§r§5 ale mezitím, tady máš únikový východ.",
+  "blabber:dialogue.instructions": "Přejeď nebo zmáčkni [%s]/[%s] na vybrání možnosti, potom zmáčkni [%s] pro konfirmaci",
+  "blabber:dialogue.locked_choice": "Tato možnost nemá splněné podmínky"
+}
