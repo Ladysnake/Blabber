@@ -1,8 +1,18 @@
 ------------------------------------------------------
-Version 1.6.2-mc1.20.1
+Version 1.6.3-mc1.20.1
 ------------------------------------------------------
 **Fixes**
 - Fixed "No choice available in state..." being wrongly logged on every end state
+
+------------------------------------------------------
+Version 1.6.2-mc1.20.1
+------------------------------------------------------
+**Additions**
+- Added Korean translations (thanks sj-hub9796 !)
+
+**Fixes**
+- Fixed symbols from non-latin alphabets appearing inconsistently depending on the host machine's language
+>>>>>>> 27e465032735b7ee4896c74c46f573220ead7392
 
 ------------------------------------------------------
 Version 1.6.1-mc1.20.1

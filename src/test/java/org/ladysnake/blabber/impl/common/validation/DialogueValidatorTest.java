@@ -30,6 +30,7 @@ import org.junit.jupiter.api.Test;
 import org.ladysnake.blabber.impl.common.model.DialogueTemplate;
 
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 public class DialogueValidatorTest {
@@ -70,7 +71,9 @@ public class DialogueValidatorTest {
     }
 
     private static DialogueTemplate loadDialogue(String name) {
-        return Util.getResult(DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name))), JsonElement.class)), s -> {
+        return Util.getResult(DialogueTemplate.CODEC.parse(JsonOps.INSTANCE, new Gson().fromJson(new InputStreamReader(
+                Objects.requireNonNull(DialogueValidatorTest.class.getResourceAsStream(name)), StandardCharsets.UTF_8), JsonElement.class
+        )), s -> {
             throw new GameTestException(s);
         });
     }

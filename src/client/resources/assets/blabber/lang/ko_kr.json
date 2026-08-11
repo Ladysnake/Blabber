@@ -1,0 +1,10 @@
+{
+  "blabber:commands.dialogue.start.invalid": "\"%s\" 유형의 대화가 없습니다",
+  "blabber:commands.dialogue.start.predicate.invalid": "\"%s\" 유형의 조건이 없습니다",
+  "blabber:commands.dialogue.start.success": "%s에게 \"%s\" 대화를 시작했습니다",
+  "blabber:commands.setting.disabled": "설정 '%s'이(가) 비활성화되었습니다",
+  "blabber:commands.setting.enabled": "설정 '%s'이(가) 활성화되었습니다",
+  "blabber:dialogue.escape_hatch": "[Blabber] §5누군가 실수를 했고 이제 당신은 선택할 수 있는 옵션이 없습니다. §e§l이 문제를 보고해야 합니다,§r§5 하지만 그동안 여기에 비상 탈출구가 있습니다.",
+  "blabber:dialogue.instructions": "선택하려면 [%s]/[%s] 위로 마우스를 올리거나 누르고, 확인하려면 [%s]를 클릭하거나 누르세요",
+  "blabber:dialogue.locked_choice": "이 선택지는 충족되지 않은 전제 조건이 있습니다"
+}
